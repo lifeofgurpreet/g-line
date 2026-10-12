@@ -1,0 +1,31 @@
+{
+  "name": "glanceline",
+  "version": "0.1.0",
+  "description": "A live band above the prompt: context, 5-hour and weekly limits with pace, prompt-cache countdown and git, plus a heads-up before the cache goes cold or a limit runs out.",
+  "author": { "name": "Gurpreet" },
+  "license": "MIT",
+  "keywords": ["status line", "mod", "rate limits", "prompt cache", "context"],
+  "types": "./types/index.d.ts",
+  "userConfig": {
+    "preset": {
+      "type": "string",
+      "title": "Layout",
+      "description": "minimal, default or full (two lines with bars, cost and git)",
+      "options": ["default", "minimal", "full"],
+      "default": "default"
+    },
+    "icons": {
+      "type": "string",
+      "title": "Icons",
+      "description": "Nerd Font icons before each segment",
+      "options": ["none", "nerd"],
+      "default": "none"
+    },
+    "toasts": {
+      "type": "boolean",
+      "title": "Heads-up toasts",
+      "description": "Toast before the prompt cache goes cold or a usage limit is on pace to run out",
+      "default": true
+    }
+  }
+}
