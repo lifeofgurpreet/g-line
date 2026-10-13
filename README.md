@@ -1,26 +1,59 @@
 # glanceline
 
-**Your Claude Code session at a glance, plus a heads-up before you hit a wall.**
+**Your Claude Code session at a glance, without a single extra row on screen.**
 
-glanceline is a native Claude Code **mod**: one live line under the prompt that shows your
-context, your 5-hour and weekly limits (and when your current pace runs them out), how long
-the prompt cache stays warm, and your git branch. It rides at the end of Claude Code's own
-hint line, so it adds no rows to the screen. It also raises a toast *before* the cache goes
-cold or a limit runs out, not after.
+glanceline is a native Claude Code **mod**. It doesn't add a status bar: it writes onto the
+lines Claude Code already draws. Your limits, context and prompt-cache countdown ride at the
+end of the hint line under the prompt. Every turn's closing line becomes a receipt
+(`Baked for 1m 4s · $0.38 · 94% cached · 7 tools`). Agents at work and an upcoming
+compaction show in the footer's mode labels. And it tells you before you hit a wall, even
+when you're in another app.
 
-![glanceline in a Claude Code session: one line under the prompt, after the permission mode, saying the 5-hour window runs out at 17:59 at the current pace](docs/hero.png)
+![glanceline in a Claude Code session: a receipt on the line that closes the turn, and the limits, pace, context, cache countdown and branch at the end of the hint line under the prompt](docs/hero.png)
 
-- **It takes no room.** No band, no extra status row: the figures sit on the line Claude
-  Code already draws under the prompt, and the least important ones drop first when the
-  terminal narrows.
-- **It looks ahead.** `5h 88%, out at 14:24` means you'll hit the limit at 14:24 if you keep
-  going at this pace. A status line only says 88%.
-- **It's live.** Claude Code pushes usage to the mod as it changes, so there's nothing to
-  poll and no process starts on every refresh.
-- **It speaks up.** A toast arrives five minutes before a one-hour cache goes cold
-  (one minute for a five-minute cache), and when a limit is on pace to run out early.
-- **It's plain and honest.** Every figure comes from Claude Code itself. It doesn't parse
-  transcripts or estimate tokens, makes no network calls and needs no dependencies.
+## What only a mod can do
+
+Status line scripts print one line when Claude Code asks. A mod runs inside Claude Code,
+sees each turn, tool call, subagent and compaction as it happens, and can draw onto Claude
+Code's own lines. glanceline uses that for:
+
+- **A receipt for every turn.** The `Baked for 1m 4s` line that ends each turn also says
+  what the turn cost at API prices, how much of it the prompt cache served, and how many
+  tools it ran. Scroll back and you can see which prompt burned your limit.
+- **Zero extra rows.** The live figures sit on the hint line under the prompt, the agents
+  and compaction forecast in the footer's mode labels, the running turn's progress on the
+  spinner (`Thundering… · 2 tools`). Nothing goes above the prompt.
+- **Heads-ups that reach you away from the terminal.** A native notification five minutes
+  before a one-hour prompt cache goes cold, and when your 5-hour or weekly window resets
+  after you'd come close to its limit. Toasts when a limit is on pace to run out, a
+  background agent fails, the same tool call fails three times in a row, or the context is
+  about to compact.
+- **Subagents and background work.** `agents 2 running` in the footer while any are at
+  work, straight from Claude Code's own agent list, and each agent's type, model, status
+  and age in the pane.
+- **A compaction forecast and log.** Once the context passes 60% of the auto-compact
+  threshold, the footer says `compacts in ~3 turns`. Two turns out, a toast suggests
+  `/compact` with a note while you still choose what's kept, and Tab starts it. Each
+  compaction is logged with its before and after size.
+- **What fills your context.** The pane breaks the window down the way `/context` does,
+  counted locally with no API call, and names MCP servers whose tool definitions take room
+  but which you never called this session.
+- **Today and this week across sessions.** Each session adds its turns, tools and cost to a
+  small store on your machine, so the pane shows today's total over every session and a
+  seven-day sparkline.
+- **A share card.** `/glanceline card` sums up the session (turns, tool calls, agents, cache
+  hit rate, compactions, cost at API prices) with a button that copies it as text. It
+  leaves out your repository, branch, paths and account.
+- **A pace coach that only suggests.** When your 5-hour window is on pace to run out, the
+  toast says how much slower you'd need to go to last until the reset and puts
+  `/effort medium` (or `/model`) in the prompt box for Tab to take. It never changes your
+  model or effort itself.
+- **It keeps ticking while you're idle.** The cache countdown and window resets update on a
+  timer, so the line is right when you come back to it.
+
+Everything comes from figures Claude Code hands every mod. glanceline doesn't read your
+transcript, estimate tokens Claude Code already reports, make network calls, or write
+anything into the system prompt.
 
 ## Install
 
@@ -37,6 +70,8 @@ Older Claude Code? Use the [status line fallback](#works-everywhere-the-status-l
 
 ## What you see
 
+### The hint line under the prompt
+
 | Segment | Example | What it means |
 | --- | --- | --- |
 | model | `Opus 5.5 high` | The model, its reasoning effort, and `fast` when fast mode is on |
@@ -47,15 +82,8 @@ Older Claude Code? Use the [status line fallback](#works-everywhere-the-status-l
 | spend | `spend $416 of $500 monthly` | Shown behind a Claude gateway that sets a spend limit |
 | cache | `cache 59m` / `cache cold` | How long the prompt cache stays warm. When it's cold, the next turn rebuilds it |
 | git | `feat/checkout*` | Your branch. `*` means tracked files have changes |
-| cost, time | `$3.21 at API prices` · `1h 12m session` | In the `full` preset |
 
-The line is drawn dim, like the rest of Claude Code's footer, and its words carry the
-warnings (`out at 14:24`, `cache cold`); the toasts and the details pane add color:
-green for healthy, yellow when you're close, red when you're at the edge.
-
-### It fits any width
-
-Every segment has a wide, a medium and a short form. The whole line narrows together,
+The line narrows as the terminal does: every segment has a wide, a medium and a short form,
 and the least important segments drop first. The model, context and 5-hour window stay
 until the very end.
 
@@ -63,50 +91,80 @@ until the very end.
 ![The line at 100 columns](docs/line-100.png)
 ![The line at 76 columns](docs/line-76.png)
 
-### The details pane
+### The footer, the spinner and each turn's closing line
 
-`/glanceline` opens a pane with every figure spelled out: bars, reset times, what the
-cache will cost to rebuild, and any warning that's live. `/glanceline off` hides the line,
-and `/glanceline on` brings it back.
+![Two background agents at work: the footer's mode labels say agents 2 running, and the turn's closing line carries its receipt at the row's right end](docs/agents.png)
+
+- **Footer mode labels** (right of the hint line): `agents 2 running` while subagents or
+  teammates are at work, `compacts in ~3 turns` once a compaction is near. Each label is
+  there only while it has something to say.
+- **Spinner**: what the running turn has done so far, `· $0.12 · 3 tools · 1 agent`.
+- **Turn receipt**: `· $0.38 · 94% cached · 7 tools` after Claude Code's own words. When
+  background work is still running, Claude Code may add `· 1 shell still running` there,
+  so the receipt moves to the row's right end.
+
+![The spinner while a turn runs: Thundering… · 2 tools](docs/spinner.png)
+
+### The details pane and the share card
+
+`/glanceline` opens a pane with every figure spelled out: bars, reset times, any warning
+that's live, the agents, the last turns' receipts, what fills the context, the tools used
+and failed, and today's and this week's totals. `/glanceline card` shows the share card.
+`/glanceline off` hides everything glanceline draws on Claude Code's lines, and
+`/glanceline on` brings it back.
 
 ![The /glanceline details pane, docked beside the conversation](docs/details-pane.png)
 
+![The /glanceline card share card, with a Copy as text button](docs/card.png)
+
 ## Configure
 
-`/config` lists three settings: **layout** (`default`, `minimal` or `full`), **icons**
-(`none` or `nerd`, for Nerd Font glyphs) and **heads-up toasts** (on or off).
+`/config` lists five settings: **layout** (`default`, `minimal` or `full`), **icons**
+(`none` or `nerd`, for Nerd Font glyphs), **heads-up toasts** (on or off), **native
+notifications** (on or off) and **turn receipt** (`short`, `full` or `off`).
 
 For more control, add `~/.config/glanceline/config.json` (or put it under
 `$XDG_CONFIG_HOME`):
 
 ```json
 {
-  "preset": "full",
-  "segments": "model,context,five_hour,cache|git,cost",
-  "icons": "none",
-  "toasts": true,
-  "cache_ttl": "auto",
-  "account_command": ["sh", "-c", "echo account $(git config user.email)"]
+  "preset": "default",
+  "receipt": "cost,cache,context,tools",
+  "notify": { "cache": true, "reset": true, "long_turn": true, "agents": false },
+  "long_turn_seconds": 90,
+  "today_budget": 50
 }
 ```
 
 | Key | Values | Default |
 | --- | --- | --- |
-| `preset` | `minimal` (model, context, 5h, cache), `default` (adds week, spend, git), `full` (two lines, with bars, cost and time) | `default` |
-| `segments` | Your own layout. Keys: `model`, `context`, `five_hour`, `seven_day`, `spend`, `cache`, `git`, `pr`, `cost`, `time`, `lines`, `vim`. Separate them with `,` and start a new line with `\|` | the preset's |
-| `icons` | `none`, `nerd` | `none` |
+| `preset` | `minimal` (model, context, 5h, cache), `default` (adds week, spend, git), `full` (with bars, cost and time) | `default` |
+| `segments` | Your own layout for the hint line. Keys: `model`, `context`, `five_hour`, `seven_day`, `spend`, `cache`, `git`, `pr`, `cost`, `time`, `lines`, `vim`, and the mod-only `agents`, `compact` and `today`. Separate them with `,`. Naming `agents` or `compact` moves it from the footer to the hint line | the preset's |
+| `receipt` | `short` (cost, cache, tools), `full`, `off`, or a list of `cost`, `cache`, `context`, `tools`, `agents`, `output` | `short` |
 | `toasts` | `true`, `false` | `true` |
+| `notify` | `true`, `false`, or per kind: `cache` (prompt cache about to go cold), `reset` (a usage window reset after you passed `reset_threshold`), `long_turn` (a turn longer than `long_turn_seconds` finished), `agents` (a background agent finished; a failure always raises a toast) | `cache` and `reset` on, the rest off |
+| `reset_threshold` | Percent of a window you must have reached for its reset to notify | `80` |
+| `long_turn_seconds` | How long a turn runs before its end notifies (with `long_turn` on) | `60` |
+| `today_budget` | Dollars at API prices. Today's total across sessions joins the line at 80% of it, and a toast says when you pass it | none |
+| `spinner` | `true`, `false`: progress on the spinner | `true` |
+| `footer_labels` | `true`, `false`: agents and the compaction forecast in the footer | `true` |
+| `coach` | `true`, `false`: the pace coach's suggestion and the `/compact` suggestion | `true` |
+| `tool_streak` | Failures in a row of the same call before the toast; `0` turns it off | `3` |
+| `export_state` | `true` writes the figures as JSON to `~/.cache/glanceline/state/<session id>.json` for tmux, sketchybar and other bars | `false` |
+| `icons` | `none`, `nerd` | `none` |
 | `cache_ttl` | `auto`, `5m`, `1h` (see the FAQ) | `auto` |
-| `account_command` | A command, as an argv list, whose first output line is added at the end of the line (`account you@example.com (via CAAM)` shows as `you@example.com`). It runs at start and every ten minutes. Use it for which account or cluster you're on. Off unless you set it, so screenshots don't show who you are | none |
+| `account_command` | A command, as an argv list, whose first output line goes at the end of the line (`account you@example.com (via CAAM)` shows as `you@example.com`). It runs at start and every ten minutes. Off unless you set it, so screenshots don't show who you are | none |
 
 A `config.json` placed next to the plugin's `plugin.json` sets defaults for everyone who
-uses that copy, which is handy for a team.
+uses that copy, which is handy for a team. Notifications go through your own
+`preferredNotifChannel`; where your terminal has no channel, the heads-up shows as a toast.
 
 ## Works everywhere: the status line fallback
 
 The mod needs Claude Code 2.1.293 or later. On any version, `glanceline.py` runs as a
-classic `statusLine` command and prints the same segments with the same wording. It's a
-single standard-library Python file and works with Python 3.8 or later on macOS and Linux.
+classic `statusLine` command and prints the hint-line segments with the same wording. It's
+a single standard-library Python file and works with Python 3.8 or later on macOS and
+Linux. The receipts, footer labels, notifications, pane and card need the mod.
 
 ```sh
 curl -fsSL https://raw.githubusercontent.com/lifeofgurpreet/glanceline/main/install.sh | sh
@@ -136,7 +194,7 @@ The two share one core: `hooks/core.ts` for the mod and its line-for-line port i
 
 ## FAQ
 
-**What does "cache warm 59m" mean?**
+**What does "cache 59m" mean?**
 Claude Code keeps your conversation in Anthropic's prompt cache, so each turn re-reads it
 cheaply instead of processing it again. The cache lasts a set time after your last
 message: one hour on a Claude subscription within its limits, five minutes on an API key
@@ -158,8 +216,20 @@ you see the time. It stays quiet for the first 15 minutes of a 5-hour window and
 12 hours of a week, while the average still means little.
 
 **Is the dollar figure my bill?**
-No. It's Claude Code's estimate of the session at API list prices. On a subscription it's
-a sense of scale, not a charge.
+No. It's Claude Code's own cost ledger at API list prices: the session's in the pane, the
+growth during one turn in its receipt. On a subscription it's a sense of scale, not a
+charge.
+
+**How good is the compaction forecast?**
+It divides the room left before the auto-compact threshold by the average context growth of
+your last five turns, so it's a rough count that sharpens as you go. It appears only past 60%
+of the threshold, and only when compaction is under 30 turns away.
+
+**Where do the day and week totals live?**
+In glanceline's own store under your Claude Code configuration directory: one small entry per
+session per day with its cost, turns, tool calls, cold-cache rebuilds and agents. Numbers
+only, never conversation content. Entries older than 35 days are removed. Only sessions where
+glanceline ran on this machine are counted.
 
 **Does it read my conversation or send anything anywhere?**
 No. It reads the figures Claude Code hands every mod and runs `git status` in your project.
@@ -168,30 +238,32 @@ Nothing leaves your machine.
 **Something's missing.**
 Usage windows show up after the first response of a session, and only on a subscription.
 The cache segment appears once a response reports cache tokens. Lines added and removed
-come from the status line payload, so only the fallback shows them.
+come from the status line payload, so only the fallback shows them. The receipt rides on
+the terminal; other surfaces draw their own turn footer.
 
 ## How is this different from other status lines?
 
 Projects like ccstatusline, claude-powerline and claude-hud are `statusLine` commands. Claude
-Code starts them as a new process on every refresh, and several of them parse the session
-transcript to work out tokens and costs. glanceline is a mod: it runs inside Claude Code,
-receives usage as it changes, writes onto the line Claude Code already draws under the prompt
-instead of adding one, and can do what a status line can't, such as raising a toast, opening
-a pane or adding a command. It's also deliberately small: about 750 lines of
-TypeScript with no dependencies.
+Code starts them as a new process on every refresh, they freeze while the session is idle,
+and several of them parse the session transcript to work out tokens, costs and subagents.
+glanceline is a mod: it runs inside Claude Code, receives usage as it changes, sees turns,
+tool calls, subagents and compactions as they happen, writes onto lines Claude Code already
+draws instead of adding one, and can raise notifications, open a pane or add a command. It
+has no dependencies.
 
 ## Develop
 
 ```sh
 claude plugin validate .               # what the engine sees and would refuse
-claude plugin test .                   # mod tests, including the golden file
+claude plugin test .                   # mod tests: golden file, line, receipts, agents, forecast, ledger, card, heads-ups
 python3 tests/test_glanceline.py       # fallback tests: golden parity, install round trips, garbage input
 bun scripts/golden.ts                  # regenerate tests/cases.ts after changing hooks/core.ts
 claude --plugin-dir .                  # run a session with your working copy
 ```
 
-The screenshots are real captures (`tmux capture-pane -e`), rendered by `scripts/ansi2svg.py`
-and `scripts/ansi2png.py`.
+`hooks/core.ts` (shared with the fallback), `hooks/inline.ts` and `hooks/extras.ts` are pure
+functions; `hooks/register.tsx` wires them to Claude Code. The screenshots are real captures
+(`tmux capture-pane -e`), rendered by `scripts/ansi2svg.py` and `scripts/ansi2png.py`.
 
 ## License
 

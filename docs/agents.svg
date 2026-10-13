@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1300" height="660" viewBox="0 0 1300 660" role="img" aria-label="glanceline: agents at work in the footer, a receipt beside Claude Code&#x27;s own line">
+<style>text{font-family:"JetBrains Mono","SF Mono",Menlo,Consolas,monospace;font-size:14px;white-space:pre}</style>
+<rect width="100%" height="100%" rx="10" fill="#16181d"/>
+<circle cx="20" cy="17" r="6" fill="#ff5f57"/><circle cx="40" cy="17" r="6" fill="#febc2e"/><circle cx="60" cy="17" r="6" fill="#28c840"/>
+<text x="650" y="22" fill="#8a8f98" text-anchor="middle">glanceline: agents at work in the footer, a receipt beside Claude Code&#x27;s own line</text>
+<text x="18.0" y="48" fill="#ffffff" textLength="8.4" lengthAdjust="spacingAndGlyphs">⏺</text>
+<text x="34.9" y="48" fill="#afd7ff" textLength="59.0" lengthAdjust="spacingAndGlyphs">total()</text>
+<text x="93.9" y="48" fill="#d7dae0" textLength="33.7" lengthAdjust="spacingAndGlyphs"> in </text>
+<text x="127.6" y="48" fill="#afd7ff" textLength="92.7" lengthAdjust="spacingAndGlyphs">checkout.ts</text>
+<text x="220.3" y="48" fill="#d7dae0" textLength="193.9" lengthAdjust="spacingAndGlyphs"> now takes an optional </text>
+<text x="414.2" y="48" fill="#afd7ff" textLength="25.3" lengthAdjust="spacingAndGlyphs">tax</text>
+<text x="439.5" y="48" fill="#d7dae0" textLength="607.0" lengthAdjust="spacingAndGlyphs"> rate (default 0, so 0.08 means 8%) and returns the item subtotal times </text>
+<text x="1046.5" y="48" fill="#afd7ff" textLength="59.0" lengthAdjust="spacingAndGlyphs">1 + tax</text>
+<text x="1105.5" y="48" fill="#d7dae0" textLength="42.1" lengthAdjust="spacingAndGlyphs">, so </text>
+<text x="1147.6" y="48" fill="#afd7ff" textLength="59.0" lengthAdjust="spacingAndGlyphs">cart.ts</text>
+<text x="1206.6" y="48" fill="#d7dae0" textLength="16.9" lengthAdjust="spacingAndGlyphs">&#x27;s</text>
+<text x="18.0" y="67" fill="#d7dae0" textLength="92.7" lengthAdjust="spacingAndGlyphs">  existing </text>
+<text x="110.7" y="67" fill="#afd7ff" textLength="101.2" lengthAdjust="spacingAndGlyphs">total([...])</text>
+<text x="211.9" y="67" fill="#d7dae0" textLength="185.5" lengthAdjust="spacingAndGlyphs"> call still returns 6.</text>
+<text x="18.0" y="105" fill="#d7dae0" textLength="328.8" lengthAdjust="spacingAndGlyphs">  Your uncommitted change was only the </text>
+<text x="346.8" y="105" fill="#afd7ff" textLength="101.2" lengthAdjust="spacingAndGlyphs">// todo: tax</text>
+<text x="447.9" y="105" fill="#d7dae0" textLength="817.7" lengthAdjust="spacingAndGlyphs"> comment, and I removed it now that tax is handled. I couldn&#x27;t type-check this because TypeScript</text>
+<text x="18.0" y="124" fill="#d7dae0" textLength="286.6" lengthAdjust="spacingAndGlyphs">  isn&#x27;t installed in this project.</text>
+<text x="18.0" y="162" fill="#949494" textLength="8.4" lengthAdjust="spacingAndGlyphs">✻</text>
+<text x="34.9" y="162" fill="#949494" textLength="505.8" lengthAdjust="spacingAndGlyphs">Brewed for 16s · done 4:15 PM · $0.22 · 87% cached · 3 tools</text>
+<rect x="18.0" y="186.0" width="16.9" height="19" fill="#3a3a3a"/>
+<text x="18.0" y="200" fill="#949494" textLength="16.9" lengthAdjust="spacingAndGlyphs">❯ </text>
+<rect x="34.9" y="186.0" width="1239.2" height="19" fill="#3a3a3a"/>
+<text x="34.9" y="200" fill="#ffffff" textLength="1239.2" lengthAdjust="spacingAndGlyphs">Spawn two Explore subagents in the background: one reviews checkout.ts for rounding bugs, one reviews cart.ts for missing tests. Each should first </text>
+<rect x="18.0" y="205.0" width="16.9" height="19" fill="#3a3a3a"/>
+<rect x="34.9" y="205.0" width="640.7" height="19" fill="#3a3a3a"/>
+<text x="34.9" y="219" fill="#ffffff" textLength="640.7" lengthAdjust="spacingAndGlyphs">run python3 -c &#x27;import time; time.sleep(40)&#x27; with bash. Don&#x27;t wait for them.</text>
+<text x="18.0" y="257" fill="#87d787" textLength="8.4" lengthAdjust="spacingAndGlyphs">⏺</text>
+<text x="34.9" y="257" fill="#d7dae0" font-weight="700" textLength="8.4" lengthAdjust="spacingAndGlyphs">2</text>
+<text x="43.3" y="257" fill="#d7dae0" textLength="236.0" lengthAdjust="spacingAndGlyphs"> background agents launched </text>
+<text x="279.3" y="257" fill="#949494" textLength="109.6" lengthAdjust="spacingAndGlyphs">(↓ to manage)</text>
+<text x="43.3" y="276" fill="#949494" textLength="8.4" lengthAdjust="spacingAndGlyphs">├</text>
+<text x="60.1" y="276" fill="#d7dae0" font-weight="700" textLength="227.6" lengthAdjust="spacingAndGlyphs">Review checkout.ts rounding</text>
+<text x="43.3" y="295" fill="#949494" textLength="8.4" lengthAdjust="spacingAndGlyphs">└</text>
+<text x="60.1" y="295" fill="#d7dae0" font-weight="700" textLength="202.3" lengthAdjust="spacingAndGlyphs">Review cart.ts test gaps</text>
+<text x="18.0" y="333" fill="#ffffff" textLength="8.4" lengthAdjust="spacingAndGlyphs">⏺</text>
+<text x="26.4" y="333" fill="#d7dae0" textLength="902.0" lengthAdjust="spacingAndGlyphs"> I started two Explore agents in the background. Each runs the 40-second sleep first, then does its review:</text>
+<text x="18.0" y="371" fill="#d7dae0" textLength="33.7" lengthAdjust="spacingAndGlyphs">  - </text>
+<text x="51.7" y="371" fill="#d7dae0" font-weight="700" textLength="75.9" lengthAdjust="spacingAndGlyphs">Rounding:</text>
+<text x="127.6" y="371" fill="#d7dae0" textLength="75.9" lengthAdjust="spacingAndGlyphs"> reviews </text>
+<text x="203.5" y="371" fill="#afd7ff" textLength="92.7" lengthAdjust="spacingAndGlyphs">checkout.ts</text>
+<text x="296.2" y="371" fill="#d7dae0" textLength="421.5" lengthAdjust="spacingAndGlyphs"> for floating-point and cent-rounding problems in </text>
+<text x="717.7" y="371" fill="#afd7ff" textLength="59.0" lengthAdjust="spacingAndGlyphs">total()</text>
+<text x="776.7" y="371" fill="#d7dae0" textLength="8.4" lengthAdjust="spacingAndGlyphs">.</text>
+<text x="18.0" y="390" fill="#d7dae0" textLength="33.7" lengthAdjust="spacingAndGlyphs">  - </text>
+<text x="51.7" y="390" fill="#d7dae0" font-weight="700" textLength="50.6" lengthAdjust="spacingAndGlyphs">Tests:</text>
+<text x="102.3" y="390" fill="#d7dae0" textLength="75.9" lengthAdjust="spacingAndGlyphs"> reviews </text>
+<text x="178.2" y="390" fill="#afd7ff" textLength="59.0" lengthAdjust="spacingAndGlyphs">cart.ts</text>
+<text x="237.2" y="390" fill="#d7dae0" textLength="640.7" lengthAdjust="spacingAndGlyphs"> for missing tests and lists the cases it should have, with expected values.</text>
+<text x="18.0" y="428" fill="#d7dae0" textLength="607.0" lengthAdjust="spacingAndGlyphs">  Neither one edits files. I&#x27;ll pass on their findings when they finish.</text>
+<text x="18.0" y="466" fill="#949494" textLength="8.4" lengthAdjust="spacingAndGlyphs">✻</text>
+<text x="34.9" y="466" fill="#949494" textLength="101.2" lengthAdjust="spacingAndGlyphs">Waiting for </text>
+<text x="136.0" y="466" fill="#949494" font-weight="700" textLength="8.4" lengthAdjust="spacingAndGlyphs">2</text>
+<text x="144.4" y="466" fill="#949494" textLength="236.0" lengthAdjust="spacingAndGlyphs"> background agents to finish</text>
+<text x="1105.5" y="466" fill="#949494" textLength="177.0" lengthAdjust="spacingAndGlyphs"> · $0.14 · 97% cached</text>
+<text x="18.0" y="504" fill="#808080" textLength="1264.5" lengthAdjust="spacingAndGlyphs">──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────</text>
+<text x="18.0" y="523" fill="#d7dae0" textLength="16.9" lengthAdjust="spacingAndGlyphs">❯ </text>
+<text x="18.0" y="542" fill="#808080" textLength="1264.5" lengthAdjust="spacingAndGlyphs">──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────</text>
+<text x="34.9" y="561" fill="#ffd700" textLength="126.4" lengthAdjust="spacingAndGlyphs">⏵⏵ auto mode on</text>
+<text x="161.3" y="561" fill="#949494" textLength="716.5" lengthAdjust="spacingAndGlyphs"> (shift+tab to cycle) · ↓ to manage · Opus 5.5 · ctx 5% · 5h 64% · wk 50% · cache 59m</text>
+<text x="1130.8" y="561" fill="#949494" textLength="134.9" lengthAdjust="spacingAndGlyphs">agents 2 running</text>
+<text x="18.0" y="599" fill="#d7dae0" font-weight="700" textLength="67.4" lengthAdjust="spacingAndGlyphs">  ⏺ main</text>
+<text x="18.0" y="618" fill="#949494" textLength="92.7" lengthAdjust="spacingAndGlyphs">  ◯ Explore</text>
+<text x="127.6" y="618" fill="#949494" textLength="227.6" lengthAdjust="spacingAndGlyphs">Review checkout.ts rounding</text>
+<text x="1105.5" y="618" fill="#949494" textLength="160.2" lengthAdjust="spacingAndGlyphs">4s · ↓ 17.6k tokens</text>
+<text x="18.0" y="637" fill="#949494" textLength="92.7" lengthAdjust="spacingAndGlyphs">  ◯ Explore</text>
+<text x="127.6" y="637" fill="#949494" textLength="202.3" lengthAdjust="spacingAndGlyphs">Review cart.ts test gaps</text>
+<text x="1105.5" y="637" fill="#949494" textLength="160.2" lengthAdjust="spacingAndGlyphs">4s · ↓ 17.7k tokens</text>
+</svg>

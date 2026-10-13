@@ -1,5 +1,39 @@
 # Changelog
 
+## 0.3.0 (2026-10-13)
+
+Everything new rides on lines Claude Code already draws, so the screen still gains no row.
+
+- **A receipt for every turn.** The line that closes each turn (`Baked for 1m 4s`) adds what
+  the turn cost at API prices, how much the prompt cache served and how many tools it ran
+  (`receipt`: `short`, `full`, `off` or a field list; a `/config` row too).
+- **Native notifications** through your own notification channel: five minutes before a
+  one-hour cache goes cold, and when a usage window resets after you passed 80% of it. A
+  long turn finishing and a background agent finishing can notify too (off by default).
+  Where no channel takes it, the heads-up is a toast.
+- **Agents in the footer.** `agents 2 running` joins the footer's mode labels while
+  subagents or teammates are at work, from Claude Code's own agent list. A background agent
+  that fails raises a toast. The pane lists each agent with its type, model, status and age.
+- **Compaction forecast and log.** `compacts in ~3 turns` in the footer once the context
+  passes 60% of the auto-compact threshold; a toast two turns out suggests `/compact` with a
+  note (Tab starts it); each compaction is logged with its before and after size.
+- **Spinner progress**: the running turn's cost so far, tools and agents.
+- **Context breakdown** in the pane, counted locally like `/context`, naming MCP servers
+  whose tool definitions take room but went unused this session.
+- **Today and this week across sessions**, kept in the mod's own store (numbers only), with a
+  seven-day sparkline in the pane, an optional `today` segment and a `today_budget`.
+- **`/glanceline card`**: a share card of the session with a Copy as text button. It leaves
+  out repository, branch, paths and account.
+- **Repeated-failure warning**: one toast when the same tool call fails three times in a row
+  (`tool_streak`). Tool calls are observed only, never gated or rewritten.
+- **Pace coach**: when the 5-hour window is on pace to run out, the toast says how much
+  slower would last until the reset and offers `/effort` or `/model` for Tab to take. It
+  never changes the model or effort itself.
+- `export_state` writes the figures as JSON for tmux, sketchybar and other bars (off by
+  default). Usage windows of kinds glanceline doesn't know yet are listed in the pane.
+- After `/clear` the line refills at once instead of waiting for the next response.
+- The account (`account_command`) stays off unless configured, as before.
+
 ## 0.2.0 (2026-10-13)
 
 - **One line under the prompt, no extra rows.** The band above the prompt is gone. The

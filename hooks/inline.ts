@@ -2,7 +2,7 @@
 // then an optional account, fitted to the room left at the end of Claude
 // Code's own hint line. Pure, like core.ts, so tests can call it directly.
 
-import { SEP, fit, segments, width } from './core'
+import { SEP, fit, layoutKeys, segments, width } from './core'
 import type { Options, Payload, Placed, Segment } from './core'
 
 /**
@@ -36,17 +36,33 @@ export function tailRoom(columns: number | undefined, hint: string): number | un
   return columns - EDGES - mode - width(hint) - SEP.length
 }
 
+/** Keys only the mod can fill, placed where a custom `segments` layout names them. */
+export const MOD_KEYS = ['agents', 'compact', 'today'] as const
+
 /**
  * Every segment on one line, the account last, fitted to `room`: segments
- * narrow together and the least important go first. Empty under four
- * columns, where the engine would leave the tail out anyway.
+ * narrow together and the least important go first. Mod-only segments
+ * (`extras`) stand where the layout names them. Empty under four columns,
+ * where the engine would leave the tail out anyway.
  */
-export function inline(p: Payload, o: Options, account?: string | null, room?: number): Placed[] {
-  const items = segments(p, o).flat()
+export function inline(p: Payload, o: Options, account?: string | null, room?: number,
+  extras: Partial<Record<string, Segment | undefined>> = {}, trailing: Segment[] = []): Placed[] {
+  const core = new Map(segments(p, o).flat().map(segment => [segment.key, segment]))
+  const items: Segment[] = []
+  for (const key of layoutKeys(o).flat()) {
+    const segment = core.get(key) ?? extras[key]
+    if (segment) items.push(segment)
+  }
+  items.push(...trailing)
   const extra = accountSegment(account)
   if (extra) items.push(extra)
   if (!items.length || (room !== undefined && room < 4)) return []
   return fit(items, room)
+}
+
+/** Columns to keep free for the footer's mode labels at the right of the hint row, with a clear gap before them. */
+export function modesWidth(labels: readonly string[]): number {
+  return labels.length ? width(labels.join(' & ')) + 4 : 0
 }
 
 export function joined(parts: Placed[]): string {

@@ -23,7 +23,7 @@ import time
 
 sys.dont_write_bytecode = True
 
-VERSION = "0.2.0"
+VERSION = "0.3.0"
 LIMIT = 262144          # stdin bytes accepted; Claude Code sends a few KB
 RESERVE = 4             # columns Claude Code keeps for its own padding
 REFRESH = 15            # seconds; keeps countdowns moving while idle
