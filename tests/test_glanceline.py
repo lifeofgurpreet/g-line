@@ -29,9 +29,11 @@ def load_cases():
                       object_hook=lambda d: {k: float("nan") if v == "NaN" else v for k, v in d.items()})
 
 
+HOME = tempfile.mkdtemp(prefix="glanceline-home-")
+
+
 def run(payload, env=None, args=()):
-    full = dict(os.environ, COLUMNS="120", NO_COLOR="1")
-    full.pop("GLANCELINE_MOD", None)
+    full = dict(os.environ, COLUMNS="120", NO_COLOR="1", HOME=HOME)
     full.update(env or {})
     return subprocess.run([sys.executable, SCRIPT, *args], input=payload, capture_output=True, env=full,
                           timeout=10, check=False)
@@ -69,9 +71,22 @@ class Rendering(unittest.TestCase):
             self.assertTrue(done.stdout.strip(), sample[:40])
             self.assertNotIn(b"\x1b]", done.stdout)
 
-    def test_steps_aside_for_the_mod_of_the_same_session(self):
-        self.assertEqual(run(self.PAYLOAD, {"GLANCELINE_MOD": "s1"}).stdout, b"")
-        self.assertIn(b"Opus", run(self.PAYLOAD, {"GLANCELINE_MOD": "another"}).stdout)
+    def test_steps_aside_while_the_mod_draws_the_same_session(self):
+        home = tempfile.mkdtemp(prefix="glanceline-home-")
+        live = os.path.join(home, ".cache", "glanceline", "live")
+        os.makedirs(live)
+        self.assertIn(b"Opus", run(self.PAYLOAD, {"HOME": home}).stdout)
+        marker = os.path.join(live, "s1")
+        with open(marker, "w") as stream:
+            stream.write("1\n")
+        self.assertEqual(run(self.PAYLOAD, {"HOME": home}).stdout, b"")
+        other = json.dumps({"session_id": "s2", "model": {"display_name": "Opus 5.5"}}).encode()
+        self.assertIn(b"Opus", run(other, {"HOME": home}).stdout)
+        stale = os.stat(marker).st_mtime - 120
+        os.utime(marker, (stale, stale))
+        self.assertIn(b"Opus", run(self.PAYLOAD, {"HOME": home}).stdout)
+        sneaky = json.dumps({"session_id": "../live/s1", "model": {"display_name": "Opus 5.5"}}).encode()
+        self.assertIn(b"Opus", run(sneaky, {"HOME": home}).stdout)
 
     def test_colors_follow_no_color_and_theme(self):
         colored = run(self.PAYLOAD, {"NO_COLOR": ""}).stdout

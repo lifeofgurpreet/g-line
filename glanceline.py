@@ -23,7 +23,7 @@ import time
 
 sys.dont_write_bytecode = True
 
-VERSION = "0.1.0"
+VERSION = "0.2.0"
 LIMIT = 262144          # stdin bytes accepted; Claude Code sends a few KB
 RESERVE = 4             # columns Claude Code keeps for its own padding
 REFRESH = 15            # seconds; keeps countdowns moving while idle
@@ -492,10 +492,26 @@ def decode(payload):
     return data if isinstance(data, dict) else None
 
 
+LIVE_SECONDS = 60      # the mod rewrites its session file every 15 s
+
+
 def mod_is_drawing(data):
-    """True when the glanceline mod draws this session's band already."""
-    owner = os.environ.get("GLANCELINE_MOD")
-    return bool(owner) and owner == data.get("session_id")
+    """True when the glanceline mod draws this session's line already.
+
+    The mod keeps `~/.cache/glanceline/live/<session id>` fresh while it runs;
+    a file under a minute old for the session in the payload means it does.
+    """
+    session = data.get("session_id")
+    home = os.environ.get("HOME")
+    if not home or not isinstance(session, str) or not session or len(session) > 128:
+        return False
+    if not all(c.isalnum() or c in "-_" for c in session):
+        return False
+    try:
+        age = time.time() - os.stat(os.path.join(home, ".cache", "glanceline", "live", session)).st_mtime
+    except OSError:
+        return False
+    return -5 < age < LIVE_SECONDS
 
 
 def fit(value, columns, color=False, tone=None):

@@ -1,7 +1,7 @@
 {
   "name": "glanceline",
-  "version": "0.1.0",
-  "description": "A live band above the prompt: context, 5-hour and weekly limits with pace, prompt-cache countdown and git, plus a heads-up before the cache goes cold or a limit runs out.",
+  "version": "0.2.0",
+  "description": "One live line under the prompt, on Claude Code's own hint line: context, 5-hour and weekly limits with pace, prompt-cache countdown and git, plus a heads-up before the cache goes cold or a limit runs out.",
   "author": { "name": "Gurpreet" },
   "license": "MIT",
   "keywords": ["status line", "mod", "rate limits", "prompt cache", "context"],

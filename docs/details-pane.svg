@@ -1,147 +1,125 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1149" height="660" viewBox="0 0 1149 660" role="img" aria-label="/glanceline details pane">
+<svg xmlns="http://www.w3.org/2000/svg" width="1300" height="679" viewBox="0 0 1300 679" role="img" aria-label="/glanceline details pane">
 <style>text{font-family:"JetBrains Mono","SF Mono",Menlo,Consolas,monospace;font-size:14px;white-space:pre}</style>
 <rect width="100%" height="100%" rx="10" fill="#16181d"/>
 <circle cx="20" cy="17" r="6" fill="#ff5f57"/><circle cx="40" cy="17" r="6" fill="#febc2e"/><circle cx="60" cy="17" r="6" fill="#28c840"/>
-<text x="574" y="22" fill="#8a8f98" text-anchor="middle">/glanceline details pane</text>
-<rect x="633.4" y="34.0" width="8.4" height="19" fill="#262626"/>
-<text x="633.4" y="48" fill="#d7dae0" opacity="0.6" textLength="8.4" lengthAdjust="spacingAndGlyphs">│</text>
-<rect x="641.8" y="34.0" width="472.1" height="19" fill="#262626"/>
-<rect x="1113.9" y="34.0" width="8.4" height="19" fill="#262626"/>
-<text x="1113.9" y="48" fill="#949494" textLength="8.4" lengthAdjust="spacingAndGlyphs">✕</text>
-<text x="18.0" y="67" fill="#d78787" textLength="16.9" lengthAdjust="spacingAndGlyphs"> ▐</text>
-<rect x="34.9" y="53.0" width="50.6" height="19" fill="#000000"/>
-<text x="34.9" y="67" fill="#d78787" textLength="50.6" lengthAdjust="spacingAndGlyphs">▛███▛█</text>
-<text x="110.7" y="67" fill="#d7dae0" font-weight="700" textLength="92.7" lengthAdjust="spacingAndGlyphs">Claude Code</text>
-<text x="211.9" y="67" fill="#949494" textLength="67.4" lengthAdjust="spacingAndGlyphs">v2.1.296</text>
-<rect x="633.4" y="53.0" width="8.4" height="19" fill="#262626"/>
-<text x="633.4" y="67" fill="#d7dae0" opacity="0.6" textLength="8.4" lengthAdjust="spacingAndGlyphs">│</text>
-<rect x="641.8" y="53.0" width="185.5" height="19" fill="#262626"/>
-<text x="641.8" y="67" fill="#d78787" textLength="185.5" lengthAdjust="spacingAndGlyphs">Opus 5.5 (high effort)</text>
-<text x="18.0" y="86" fill="#d78787" textLength="16.9" lengthAdjust="spacingAndGlyphs">▝▜</text>
-<rect x="34.9" y="72.0" width="42.1" height="19" fill="#000000"/>
-<text x="34.9" y="86" fill="#d78787" textLength="42.1" lengthAdjust="spacingAndGlyphs">█████</text>
-<text x="77.0" y="86" fill="#d78787" textLength="16.9" lengthAdjust="spacingAndGlyphs">█▀</text>
-<text x="110.7" y="86" fill="#949494" textLength="320.3" lengthAdjust="spacingAndGlyphs">Opus 5.5 with high effort · Claude API</text>
-<rect x="633.4" y="72.0" width="8.4" height="19" fill="#262626"/>
-<text x="633.4" y="86" fill="#d7dae0" opacity="0.6" textLength="8.4" lengthAdjust="spacingAndGlyphs">│</text>
-<rect x="641.8" y="72.0" width="236.0" height="19" fill="#262626"/>
-<text x="641.8" y="86" fill="#d7dae0" textLength="236.0" lengthAdjust="spacingAndGlyphs">context ▱▱▱▱▱ 4% (957k left)</text>
-<text x="18.0" y="105" fill="#d78787" textLength="75.9" lengthAdjust="spacingAndGlyphs"> ▝▝   ▝▝ </text>
-<text x="110.7" y="105" fill="#949494" textLength="185.5" lengthAdjust="spacingAndGlyphs">~/code/acme-web       </text>
-<rect x="633.4" y="91.0" width="8.4" height="19" fill="#262626"/>
-<text x="633.4" y="105" fill="#d7dae0" opacity="0.6" textLength="8.4" lengthAdjust="spacingAndGlyphs">│</text>
-<rect x="641.8" y="91.0" width="472.1" height="19" fill="#262626"/>
-<text x="641.8" y="105" fill="#ff87af" textLength="472.1" lengthAdjust="spacingAndGlyphs">5h ▰▰▰▰▱ 87% (on pace to run out at 14:26, resets 16:00)</text>
-<rect x="633.4" y="110.0" width="8.4" height="19" fill="#262626"/>
-<text x="633.4" y="124" fill="#d7dae0" opacity="0.6" textLength="8.4" lengthAdjust="spacingAndGlyphs">│</text>
-<rect x="641.8" y="110.0" width="362.5" height="19" fill="#262626"/>
-<text x="641.8" y="124" fill="#d7dae0" textLength="362.5" lengthAdjust="spacingAndGlyphs">week ▰▰▱▱▱ 44% (resets in 1d 18h, on track)</text>
-<text x="18.0" y="143" fill="#d7dae0" textLength="547.9" lengthAdjust="spacingAndGlyphs">  Get to finished work sooner with Opus 5.5. Switch anytime with </text>
-<text x="565.9" y="143" fill="#afd7ff" textLength="50.6" lengthAdjust="spacingAndGlyphs">/model</text>
-<text x="616.5" y="143" fill="#d7dae0" textLength="16.9" lengthAdjust="spacingAndGlyphs">. </text>
-<rect x="633.4" y="129.0" width="8.4" height="19" fill="#262626"/>
-<text x="633.4" y="143" fill="#d7dae0" opacity="0.6" textLength="8.4" lengthAdjust="spacingAndGlyphs">│</text>
-<rect x="641.8" y="129.0" width="177.0" height="19" fill="#262626"/>
-<text x="641.8" y="143" fill="#87d787" textLength="177.0" lengthAdjust="spacingAndGlyphs">cache warm (59m left)</text>
-<rect x="633.4" y="148.0" width="8.4" height="19" fill="#262626"/>
-<text x="633.4" y="162" fill="#d7dae0" opacity="0.6" textLength="8.4" lengthAdjust="spacingAndGlyphs">│</text>
-<rect x="641.8" y="148.0" width="118.0" height="19" fill="#262626"/>
-<text x="641.8" y="162" fill="#d7dae0" textLength="118.0" lengthAdjust="spacingAndGlyphs">feat/checkout*</text>
+<text x="650" y="22" fill="#8a8f98" text-anchor="middle">/glanceline details pane</text>
+<text x="18.0" y="48" fill="#d78787" textLength="16.9" lengthAdjust="spacingAndGlyphs"> ▐</text>
+<rect x="34.9" y="34.0" width="50.6" height="19" fill="#000000"/>
+<text x="34.9" y="48" fill="#d78787" textLength="50.6" lengthAdjust="spacingAndGlyphs">▛███▛█</text>
+<text x="110.7" y="48" fill="#d7dae0" font-weight="700" textLength="92.7" lengthAdjust="spacingAndGlyphs">Claude Code</text>
+<text x="211.9" y="48" fill="#949494" textLength="67.4" lengthAdjust="spacingAndGlyphs">v2.1.296</text>
+<rect x="717.7" y="34.0" width="8.4" height="19" fill="#262626"/>
+<text x="717.7" y="48" fill="#d7dae0" opacity="0.6" textLength="8.4" lengthAdjust="spacingAndGlyphs">│</text>
+<rect x="726.1" y="34.0" width="185.5" height="19" fill="#262626"/>
+<text x="726.1" y="48" fill="#d78787" textLength="185.5" lengthAdjust="spacingAndGlyphs">Opus 5.5 (high effort)</text>
+<text x="18.0" y="67" fill="#d78787" textLength="16.9" lengthAdjust="spacingAndGlyphs">▝▜</text>
+<rect x="34.9" y="53.0" width="42.1" height="19" fill="#000000"/>
+<text x="34.9" y="67" fill="#d78787" textLength="42.1" lengthAdjust="spacingAndGlyphs">█████</text>
+<text x="77.0" y="67" fill="#d78787" textLength="16.9" lengthAdjust="spacingAndGlyphs">█▀</text>
+<text x="110.7" y="67" fill="#949494" textLength="320.3" lengthAdjust="spacingAndGlyphs">Opus 5.5 with high effort · Claude API</text>
+<rect x="717.7" y="53.0" width="8.4" height="19" fill="#262626"/>
+<text x="717.7" y="67" fill="#d7dae0" opacity="0.6" textLength="8.4" lengthAdjust="spacingAndGlyphs">│</text>
+<rect x="726.1" y="53.0" width="236.0" height="19" fill="#262626"/>
+<text x="726.1" y="67" fill="#d7dae0" textLength="236.0" lengthAdjust="spacingAndGlyphs">context ▱▱▱▱▱ 4% (958k left)</text>
+<text x="18.0" y="86" fill="#d78787" textLength="75.9" lengthAdjust="spacingAndGlyphs"> ▝▝   ▝▝ </text>
+<text x="110.7" y="86" fill="#949494" textLength="286.6" lengthAdjust="spacingAndGlyphs">/Users/gsplace/projects/glanceline</text>
+<rect x="717.7" y="72.0" width="8.4" height="19" fill="#262626"/>
+<text x="717.7" y="86" fill="#d7dae0" opacity="0.6" textLength="8.4" lengthAdjust="spacingAndGlyphs">│</text>
+<rect x="726.1" y="72.0" width="337.2" height="19" fill="#262626"/>
+<text x="726.1" y="86" fill="#d7dae0" textLength="337.2" lengthAdjust="spacingAndGlyphs">5h ▱▱▱▱▱ 9% (resets in 4h 29m, on track)</text>
+<rect x="717.7" y="91.0" width="8.4" height="19" fill="#262626"/>
+<text x="717.7" y="105" fill="#d7dae0" opacity="0.6" textLength="8.4" lengthAdjust="spacingAndGlyphs">│</text>
+<rect x="726.1" y="91.0" width="362.5" height="19" fill="#262626"/>
+<text x="726.1" y="105" fill="#d7dae0" textLength="362.5" lengthAdjust="spacingAndGlyphs">week ▰▰▱▱▱ 41% (resets in 3d 13h, on track)</text>
+<text x="18.0" y="124" fill="#d7dae0" textLength="699.7" lengthAdjust="spacingAndGlyphs">  Sonnet 5.5 is here, and it&#x27;s faster and excels at well-scoped tasks. Opus 5.5 is </text>
+<rect x="717.7" y="110.0" width="8.4" height="19" fill="#262626"/>
+<text x="717.7" y="124" fill="#d7dae0" opacity="0.6" textLength="8.4" lengthAdjust="spacingAndGlyphs">│</text>
+<rect x="726.1" y="110.0" width="177.0" height="19" fill="#262626"/>
+<text x="726.1" y="124" fill="#87d787" textLength="177.0" lengthAdjust="spacingAndGlyphs">cache warm (59m left)</text>
+<text x="18.0" y="143" fill="#d7dae0" textLength="286.6" lengthAdjust="spacingAndGlyphs">  still your default. Switch with </text>
+<text x="304.6" y="143" fill="#afd7ff" textLength="50.6" lengthAdjust="spacingAndGlyphs">/model</text>
+<text x="355.2" y="143" fill="#d7dae0" textLength="362.5" lengthAdjust="spacingAndGlyphs">.                                          </text>
+<rect x="717.7" y="129.0" width="8.4" height="19" fill="#262626"/>
+<text x="717.7" y="143" fill="#d7dae0" opacity="0.6" textLength="8.4" lengthAdjust="spacingAndGlyphs">│</text>
+<rect x="726.1" y="129.0" width="42.1" height="19" fill="#262626"/>
+<text x="726.1" y="143" fill="#d7dae0" textLength="42.1" lengthAdjust="spacingAndGlyphs">main*</text>
+<rect x="717.7" y="148.0" width="8.4" height="19" fill="#262626"/>
+<text x="717.7" y="162" fill="#d7dae0" opacity="0.6" textLength="8.4" lengthAdjust="spacingAndGlyphs">│</text>
+<rect x="726.1" y="148.0" width="160.2" height="19" fill="#262626"/>
+<text x="726.1" y="162" fill="#949494" textLength="160.2" lengthAdjust="spacingAndGlyphs">$0.17 at API prices</text>
 <rect x="18.0" y="167.0" width="16.9" height="19" fill="#3a3a3a"/>
 <text x="18.0" y="181" fill="#949494" textLength="16.9" lengthAdjust="spacingAndGlyphs">❯ </text>
-<rect x="34.9" y="167.0" width="354.1" height="19" fill="#3a3a3a"/>
-<text x="34.9" y="181" fill="#ffffff" textLength="354.1" lengthAdjust="spacingAndGlyphs">In one sentence: what does cart.js export?</text>
-<rect x="388.9" y="167.0" width="244.5" height="19" fill="#3a3a3a"/>
-<rect x="633.4" y="167.0" width="8.4" height="19" fill="#262626"/>
-<text x="633.4" y="181" fill="#d7dae0" opacity="0.6" textLength="8.4" lengthAdjust="spacingAndGlyphs">│</text>
-<rect x="641.8" y="167.0" width="160.2" height="19" fill="#262626"/>
-<text x="641.8" y="181" fill="#949494" textLength="160.2" lengthAdjust="spacingAndGlyphs">$0.20 at API prices</text>
-<rect x="633.4" y="186.0" width="8.4" height="19" fill="#262626"/>
-<text x="633.4" y="200" fill="#d7dae0" opacity="0.6" textLength="8.4" lengthAdjust="spacingAndGlyphs">│</text>
-<rect x="641.8" y="186.0" width="84.3" height="19" fill="#262626"/>
-<text x="641.8" y="200" fill="#949494" textLength="84.3" lengthAdjust="spacingAndGlyphs">1m session</text>
-<text x="34.9" y="219" fill="#949494" textLength="42.1" lengthAdjust="spacingAndGlyphs">Read </text>
-<text x="77.0" y="219" fill="#949494" font-weight="700" textLength="8.4" lengthAdjust="spacingAndGlyphs">1</text>
-<text x="85.4" y="219" fill="#949494" textLength="50.6" lengthAdjust="spacingAndGlyphs"> file </text>
-<rect x="633.4" y="205.0" width="8.4" height="19" fill="#262626"/>
-<text x="633.4" y="219" fill="#d7dae0" opacity="0.6" textLength="8.4" lengthAdjust="spacingAndGlyphs">│</text>
-<rect x="641.8" y="205.0" width="488.9" height="19" fill="#262626"/>
-<text x="641.8" y="219" fill="#ffd700" textLength="488.9" lengthAdjust="spacingAndGlyphs">At this pace you&#x27;ll hit your 5-hour limit around 14:26. It</text>
-<rect x="633.4" y="224.0" width="8.4" height="19" fill="#262626"/>
-<text x="633.4" y="238" fill="#d7dae0" opacity="0.6" textLength="8.4" lengthAdjust="spacingAndGlyphs">│</text>
-<rect x="641.8" y="224.0" width="109.6" height="19" fill="#262626"/>
-<text x="641.8" y="238" fill="#ffd700" textLength="109.6" lengthAdjust="spacingAndGlyphs">resets 16:00.</text>
-<text x="18.0" y="257" fill="#ffffff" textLength="8.4" lengthAdjust="spacingAndGlyphs">⏺</text>
-<text x="34.9" y="257" fill="#afd7ff" textLength="59.0" lengthAdjust="spacingAndGlyphs">cart.js</text>
-<text x="93.9" y="257" fill="#d7dae0" textLength="193.9" lengthAdjust="spacingAndGlyphs"> exports one function, </text>
-<text x="287.8" y="257" fill="#afd7ff" textLength="42.1" lengthAdjust="spacingAndGlyphs">total</text>
-<text x="329.9" y="257" fill="#d7dae0" textLength="303.5" lengthAdjust="spacingAndGlyphs">, which takes an array of numbers   </text>
-<rect x="633.4" y="243.0" width="8.4" height="19" fill="#262626"/>
-<text x="633.4" y="257" fill="#d7dae0" opacity="0.6" textLength="8.4" lengthAdjust="spacingAndGlyphs">│</text>
-<rect x="641.8" y="243.0" width="480.5" height="19" fill="#262626"/>
-<text x="641.8" y="257" fill="#949494" textLength="480.5" lengthAdjust="spacingAndGlyphs">Pace projects your average rate since each window opened.</text>
-<text x="18.0" y="276" fill="#d7dae0" textLength="236.0" lengthAdjust="spacingAndGlyphs">  and returns their sum (or </text>
-<text x="254.0" y="276" fill="#afd7ff" textLength="8.4" lengthAdjust="spacingAndGlyphs">0</text>
-<text x="262.5" y="276" fill="#d7dae0" textLength="370.9" lengthAdjust="spacingAndGlyphs"> if the array is empty).                    </text>
-<rect x="633.4" y="262.0" width="8.4" height="19" fill="#262626"/>
-<text x="633.4" y="276" fill="#d7dae0" opacity="0.6" textLength="8.4" lengthAdjust="spacingAndGlyphs">│</text>
-<rect x="641.8" y="262.0" width="488.9" height="19" fill="#262626"/>
-<text x="641.8" y="276" fill="#949494" textLength="488.9" lengthAdjust="spacingAndGlyphs">Layout: model,context,five_hour,seven_day,spend,cache,git.</text>
-<rect x="633.4" y="281.0" width="8.4" height="19" fill="#262626"/>
-<text x="633.4" y="295" fill="#d7dae0" opacity="0.6" textLength="8.4" lengthAdjust="spacingAndGlyphs">│</text>
+<rect x="34.9" y="167.0" width="429.9" height="19" fill="#3a3a3a"/>
+<text x="34.9" y="181" fill="#ffffff" textLength="429.9" lengthAdjust="spacingAndGlyphs">In one short sentence, what does a prompt cache do?</text>
+<rect x="464.8" y="167.0" width="252.9" height="19" fill="#3a3a3a"/>
+<rect x="717.7" y="167.0" width="8.4" height="19" fill="#262626"/>
+<text x="717.7" y="181" fill="#d7dae0" opacity="0.6" textLength="8.4" lengthAdjust="spacingAndGlyphs">│</text>
+<rect x="726.1" y="167.0" width="84.3" height="19" fill="#262626"/>
+<text x="726.1" y="181" fill="#949494" textLength="84.3" lengthAdjust="spacingAndGlyphs">1m session</text>
+<rect x="717.7" y="186.0" width="8.4" height="19" fill="#262626"/>
+<text x="717.7" y="200" fill="#d7dae0" opacity="0.6" textLength="8.4" lengthAdjust="spacingAndGlyphs">│</text>
+<rect x="726.1" y="186.0" width="547.9" height="19" fill="#262626"/>
+<text x="726.1" y="200" fill="#949494" textLength="547.9" lengthAdjust="spacingAndGlyphs">Pace projects your average rate since each window opened. Layout:</text>
+<text x="18.0" y="219" fill="#ffffff" textLength="8.4" lengthAdjust="spacingAndGlyphs">⏺</text>
+<text x="26.4" y="219" fill="#d7dae0" textLength="691.3" lengthAdjust="spacingAndGlyphs"> A prompt cache saves the already-processed start of a prompt, such as the system </text>
+<rect x="717.7" y="205.0" width="8.4" height="19" fill="#262626"/>
+<text x="717.7" y="219" fill="#d7dae0" opacity="0.6" textLength="8.4" lengthAdjust="spacingAndGlyphs">│</text>
+<rect x="726.1" y="205.0" width="421.5" height="19" fill="#262626"/>
+<text x="726.1" y="219" fill="#949494" textLength="421.5" lengthAdjust="spacingAndGlyphs">model,context,five_hour,seven_day,spend,cache,git.</text>
+<text x="18.0" y="238" fill="#d7dae0" textLength="699.7" lengthAdjust="spacingAndGlyphs">  prompt, tools or earlier conversation, so later requests that begin with the same</text>
+<rect x="717.7" y="224.0" width="8.4" height="19" fill="#262626"/>
+<text x="717.7" y="238" fill="#d7dae0" opacity="0.6" textLength="8.4" lengthAdjust="spacingAndGlyphs">│</text>
+<text x="18.0" y="257" fill="#d7dae0" textLength="699.7" lengthAdjust="spacingAndGlyphs">  text can reuse it. That makes those requests faster and cheaper, because the     </text>
+<rect x="717.7" y="243.0" width="8.4" height="19" fill="#262626"/>
+<text x="717.7" y="257" fill="#d7dae0" opacity="0.6" textLength="8.4" lengthAdjust="spacingAndGlyphs">│</text>
+<text x="18.0" y="276" fill="#d7dae0" textLength="699.7" lengthAdjust="spacingAndGlyphs">  shared part isn&#x27;t processed again.                                               </text>
+<rect x="717.7" y="262.0" width="8.4" height="19" fill="#262626"/>
+<text x="717.7" y="276" fill="#d7dae0" opacity="0.6" textLength="8.4" lengthAdjust="spacingAndGlyphs">│</text>
+<rect x="717.7" y="281.0" width="8.4" height="19" fill="#262626"/>
+<text x="717.7" y="295" fill="#d7dae0" opacity="0.6" textLength="8.4" lengthAdjust="spacingAndGlyphs">│</text>
 <text x="18.0" y="314" fill="#949494" textLength="8.4" lengthAdjust="spacingAndGlyphs">✻</text>
-<text x="34.9" y="314" fill="#949494" textLength="236.0" lengthAdjust="spacingAndGlyphs">Brewed for 6s · done 1:58 PM</text>
-<rect x="633.4" y="300.0" width="8.4" height="19" fill="#262626"/>
-<text x="633.4" y="314" fill="#d7dae0" opacity="0.6" textLength="8.4" lengthAdjust="spacingAndGlyphs">│</text>
-<rect x="633.4" y="319.0" width="8.4" height="19" fill="#262626"/>
-<text x="633.4" y="333" fill="#d7dae0" opacity="0.6" textLength="8.4" lengthAdjust="spacingAndGlyphs">│</text>
+<text x="34.9" y="314" fill="#949494" textLength="252.9" lengthAdjust="spacingAndGlyphs">Crunched for 2s · done 1:39 PM</text>
+<rect x="717.7" y="300.0" width="8.4" height="19" fill="#262626"/>
+<text x="717.7" y="314" fill="#d7dae0" opacity="0.6" textLength="8.4" lengthAdjust="spacingAndGlyphs">│</text>
+<rect x="717.7" y="319.0" width="8.4" height="19" fill="#262626"/>
+<text x="717.7" y="333" fill="#d7dae0" opacity="0.6" textLength="8.4" lengthAdjust="spacingAndGlyphs">│</text>
 <rect x="18.0" y="338.0" width="8.4" height="19" fill="#3a3a3a"/>
 <text x="18.0" y="352" fill="#949494" textLength="8.4" lengthAdjust="spacingAndGlyphs">❯</text>
 <rect x="26.4" y="338.0" width="8.4" height="19" fill="#3a3a3a"/>
 <rect x="34.9" y="338.0" width="92.7" height="19" fill="#3a3a3a"/>
 <text x="34.9" y="352" fill="#ffffff" textLength="92.7" lengthAdjust="spacingAndGlyphs">/glanceline</text>
 <rect x="127.6" y="338.0" width="8.4" height="19" fill="#3a3a3a"/>
-<rect x="633.4" y="338.0" width="8.4" height="19" fill="#262626"/>
-<text x="633.4" y="352" fill="#d7dae0" opacity="0.6" textLength="8.4" lengthAdjust="spacingAndGlyphs">│</text>
+<rect x="717.7" y="338.0" width="8.4" height="19" fill="#262626"/>
+<text x="717.7" y="352" fill="#d7dae0" opacity="0.6" textLength="8.4" lengthAdjust="spacingAndGlyphs">│</text>
 <text x="18.0" y="371" fill="#949494" textLength="42.1" lengthAdjust="spacingAndGlyphs">  ⎿  </text>
-<text x="60.1" y="371" fill="#d7dae0" textLength="573.2" lengthAdjust="spacingAndGlyphs">glanceline: glanceline details opened.                              </text>
-<rect x="633.4" y="357.0" width="8.4" height="19" fill="#262626"/>
-<text x="633.4" y="371" fill="#d7dae0" opacity="0.6" textLength="8.4" lengthAdjust="spacingAndGlyphs">│</text>
-<rect x="633.4" y="376.0" width="8.4" height="19" fill="#262626"/>
-<text x="633.4" y="390" fill="#d7dae0" opacity="0.6" textLength="8.4" lengthAdjust="spacingAndGlyphs">│</text>
-<rect x="633.4" y="395.0" width="8.4" height="19" fill="#262626"/>
-<text x="633.4" y="409" fill="#d7dae0" opacity="0.6" textLength="8.4" lengthAdjust="spacingAndGlyphs">│</text>
-<rect x="633.4" y="414.0" width="8.4" height="19" fill="#262626"/>
-<text x="633.4" y="428" fill="#d7dae0" opacity="0.6" textLength="8.4" lengthAdjust="spacingAndGlyphs">│</text>
-<rect x="633.4" y="433.0" width="8.4" height="19" fill="#262626"/>
-<text x="633.4" y="447" fill="#d7dae0" opacity="0.6" textLength="8.4" lengthAdjust="spacingAndGlyphs">│</text>
-<rect x="633.4" y="452.0" width="8.4" height="19" fill="#262626"/>
-<text x="633.4" y="466" fill="#d7dae0" opacity="0.6" textLength="8.4" lengthAdjust="spacingAndGlyphs">│</text>
-<rect x="633.4" y="471.0" width="8.4" height="19" fill="#262626"/>
-<text x="633.4" y="485" fill="#d7dae0" opacity="0.6" textLength="8.4" lengthAdjust="spacingAndGlyphs">│</text>
-<rect x="633.4" y="490.0" width="8.4" height="19" fill="#262626"/>
-<text x="633.4" y="504" fill="#d7dae0" opacity="0.6" textLength="8.4" lengthAdjust="spacingAndGlyphs">│</text>
-<rect x="633.4" y="509.0" width="8.4" height="19" fill="#262626"/>
-<text x="633.4" y="523" fill="#d7dae0" opacity="0.6" textLength="8.4" lengthAdjust="spacingAndGlyphs">│</text>
-<rect x="633.4" y="528.0" width="8.4" height="19" fill="#262626"/>
-<text x="633.4" y="542" fill="#d7dae0" opacity="0.6" textLength="8.4" lengthAdjust="spacingAndGlyphs">│</text>
-<text x="18.0" y="561" fill="#d78787" textLength="67.4" lengthAdjust="spacingAndGlyphs">Opus 5.5</text>
-<text x="85.4" y="561" fill="#949494" textLength="25.3" lengthAdjust="spacingAndGlyphs"> · </text>
-<text x="110.7" y="561" fill="#d7dae0" textLength="50.6" lengthAdjust="spacingAndGlyphs">ctx 4%</text>
-<text x="161.3" y="561" fill="#949494" textLength="25.3" lengthAdjust="spacingAndGlyphs"> · </text>
-<text x="186.6" y="561" fill="#ff87af" font-weight="700" textLength="50.6" lengthAdjust="spacingAndGlyphs">5h 87%</text>
-<text x="237.2" y="561" fill="#949494" textLength="25.3" lengthAdjust="spacingAndGlyphs"> · </text>
-<text x="262.5" y="561" fill="#d7dae0" textLength="50.6" lengthAdjust="spacingAndGlyphs">wk 44%</text>
-<text x="313.1" y="561" fill="#949494" textLength="25.3" lengthAdjust="spacingAndGlyphs"> · </text>
-<text x="338.3" y="561" fill="#87d787" textLength="75.9" lengthAdjust="spacingAndGlyphs">cache 59m</text>
-<text x="414.2" y="561" fill="#949494" textLength="25.3" lengthAdjust="spacingAndGlyphs"> · </text>
-<text x="439.5" y="561" fill="#d7dae0" textLength="160.2" lengthAdjust="spacingAndGlyphs">feat/checkout*     </text>
-<text x="599.7" y="561" fill="#949494" textLength="25.3" lengthAdjust="spacingAndGlyphs">[-]</text>
-<rect x="633.4" y="547.0" width="8.4" height="19" fill="#262626"/>
-<text x="633.4" y="561" fill="#d7dae0" opacity="0.6" textLength="8.4" lengthAdjust="spacingAndGlyphs">│</text>
-<rect x="633.4" y="566.0" width="8.4" height="19" fill="#262626"/>
-<text x="633.4" y="580" fill="#d7dae0" opacity="0.6" textLength="8.4" lengthAdjust="spacingAndGlyphs">│</text>
-<text x="18.0" y="599" fill="#808080" textLength="1112.8" lengthAdjust="spacingAndGlyphs">────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────</text>
+<text x="60.1" y="371" fill="#d7dae0" textLength="657.5" lengthAdjust="spacingAndGlyphs">glanceline: glanceline details opened.                                        </text>
+<rect x="717.7" y="357.0" width="8.4" height="19" fill="#262626"/>
+<text x="717.7" y="371" fill="#d7dae0" opacity="0.6" textLength="8.4" lengthAdjust="spacingAndGlyphs">│</text>
+<rect x="717.7" y="376.0" width="8.4" height="19" fill="#262626"/>
+<text x="717.7" y="390" fill="#d7dae0" opacity="0.6" textLength="8.4" lengthAdjust="spacingAndGlyphs">│</text>
+<rect x="717.7" y="395.0" width="8.4" height="19" fill="#262626"/>
+<text x="717.7" y="409" fill="#d7dae0" opacity="0.6" textLength="8.4" lengthAdjust="spacingAndGlyphs">│</text>
+<rect x="717.7" y="414.0" width="8.4" height="19" fill="#262626"/>
+<text x="717.7" y="428" fill="#d7dae0" opacity="0.6" textLength="8.4" lengthAdjust="spacingAndGlyphs">│</text>
+<rect x="717.7" y="433.0" width="8.4" height="19" fill="#262626"/>
+<text x="717.7" y="447" fill="#d7dae0" opacity="0.6" textLength="8.4" lengthAdjust="spacingAndGlyphs">│</text>
+<rect x="717.7" y="452.0" width="8.4" height="19" fill="#262626"/>
+<text x="717.7" y="466" fill="#d7dae0" opacity="0.6" textLength="8.4" lengthAdjust="spacingAndGlyphs">│</text>
+<rect x="717.7" y="471.0" width="8.4" height="19" fill="#262626"/>
+<text x="717.7" y="485" fill="#d7dae0" opacity="0.6" textLength="8.4" lengthAdjust="spacingAndGlyphs">│</text>
+<rect x="717.7" y="490.0" width="8.4" height="19" fill="#262626"/>
+<text x="717.7" y="504" fill="#d7dae0" opacity="0.6" textLength="8.4" lengthAdjust="spacingAndGlyphs">│</text>
+<rect x="717.7" y="509.0" width="8.4" height="19" fill="#262626"/>
+<text x="717.7" y="523" fill="#d7dae0" opacity="0.6" textLength="8.4" lengthAdjust="spacingAndGlyphs">│</text>
+<rect x="717.7" y="528.0" width="8.4" height="19" fill="#262626"/>
+<text x="717.7" y="542" fill="#d7dae0" opacity="0.6" textLength="8.4" lengthAdjust="spacingAndGlyphs">│</text>
+<rect x="717.7" y="547.0" width="8.4" height="19" fill="#262626"/>
+<text x="717.7" y="561" fill="#d7dae0" opacity="0.6" textLength="8.4" lengthAdjust="spacingAndGlyphs">│</text>
+<rect x="717.7" y="566.0" width="8.4" height="19" fill="#262626"/>
+<text x="717.7" y="580" fill="#d7dae0" opacity="0.6" textLength="8.4" lengthAdjust="spacingAndGlyphs">│</text>
+<text x="18.0" y="599" fill="#808080" textLength="1264.5" lengthAdjust="spacingAndGlyphs">──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────</text>
 <text x="18.0" y="618" fill="#d7dae0" textLength="16.9" lengthAdjust="spacingAndGlyphs">❯ </text>
-<text x="18.0" y="637" fill="#808080" textLength="1112.8" lengthAdjust="spacingAndGlyphs">────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────</text>
+<text x="18.0" y="637" fill="#808080" textLength="1264.5" lengthAdjust="spacingAndGlyphs">──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────</text>
+<text x="34.9" y="656" fill="#ff87af" textLength="202.3" lengthAdjust="spacingAndGlyphs">⏵⏵ bypass permissions on</text>
+<text x="237.2" y="656" fill="#949494" textLength="413.1" lengthAdjust="spacingAndGlyphs"> (shift+tab to cycle) · Opus 5.5 · ctx 4% · 5h 9%</text>
 </svg>

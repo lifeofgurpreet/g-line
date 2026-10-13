@@ -34,7 +34,7 @@ def font(paths, index=0):
 
 
 GLYPHS = {}
-STANDINS = {"\u23fa": "\u25cf"}  # record symbol: no common font has it; a filled circle reads the same
+STANDINS = {"\u23fa": "\u25cf", "\u23f5": "\u25b8"}  # record and play symbols: no common font has them; stand-ins read the same
 
 
 def ink(face, ch):

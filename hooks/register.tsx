@@ -1,6 +1,8 @@
-// glanceline, the mod: a live band above the prompt with your context, 5-hour
-// and weekly limits (and where your pace lands them), prompt-cache warmth and
-// git, plus a heads-up toast before the cache goes cold or a limit runs out.
+// glanceline, the mod: one live line under the prompt with your context,
+// 5-hour and weekly limits (and where your pace lands them), prompt-cache
+// warmth and git, plus a heads-up toast before the cache goes cold or a limit
+// runs out. The line rides at the end of Claude Code's own hint line, so it
+// costs no extra row.
 //
 // Everything shown is Claude Code's own figures (`$.session.usage()`, pushed
 // by `session.measure`) or what the mod watched happen (each main-loop request
@@ -10,8 +12,9 @@ import { atom, read, update } from 'claude-code'
 import type { EngineInterface, Register } from 'claude-code'
 
 import type { Snap } from '../types'
-import { SEP, alerts, fitExtra, layoutKeys, modelName, render, segments, str } from './core'
+import { alerts, layoutKeys, modelName, segments, str } from './core'
 import type { Options, Payload, Preset, Tone } from './core'
+import { inline, joined, tailRoom } from './inline'
 
 const snap = atom({ plugin: 'glanceline', key: 'snap' } as const, {})
 const tick = atom({ plugin: 'glanceline', key: 'tick' } as const, 0)
@@ -20,6 +23,8 @@ const hidden = atom({ plugin: 'glanceline', key: 'hidden' } as const, false)
 
 const PANE = 'glanceline'
 const TICK_MS = 15_000
+/** A statusLine fallback steps aside while this session's file is under a minute old. */
+const LIVE_DIR = '.cache/glanceline/live'
 
 type Config = {
   preset: Preset
@@ -148,6 +153,7 @@ export function payload(s: Snap, nowSeconds: number, ttl: '5m' | '1h' | undefine
 let config: Config = DEFAULTS
 let ttl: '5m' | '1h' | undefined
 let beats = 0
+let liveFile: string | undefined
 
 async function nowSeconds($: EngineInterface): Promise<number> {
   return (await $.clock.now()) / 1000
@@ -216,8 +222,38 @@ async function nudge($: EngineInterface): Promise<void> {
   await update($, seen, list => [...list, ...due.map(a => a.id).filter(id => !list.includes(id))].slice(-50))
 }
 
+/**
+ * Tells a glanceline (or CAAM) statusLine fallback in this session that the
+ * mod draws it, so the same figures never show twice: the fallback reads the
+ * file named after the session id it is handed, and steps aside while the
+ * file is under a minute old. Nothing else is in it.
+ */
+async function markLive($: EngineInterface): Promise<void> {
+  if (!liveFile) return
+  try {
+    await $.fs.write(liveFile, `${Math.floor(await nowSeconds($))}\n`)
+  } catch {
+    // unwritable home: the fallback keeps drawing, which is only redundant
+  }
+}
+
+async function setupLive($: EngineInterface): Promise<void> {
+  try {
+    const home = await $.env.get('HOME')
+    const id = await $.session.id()
+    if (!home || !/^[A-Za-z0-9_-]{1,128}$/.test(id)) return
+    liveFile = `${home}/${LIVE_DIR}/${id}`
+    await markLive($)
+    // Forget sessions that ended more than a day ago.
+    await $.process.run(['find', `${home}/${LIVE_DIR}`, '-type', 'f', '-mmin', '+1440', '-delete'], { timeoutMs: 2000 })
+  } catch {
+    // best effort
+  }
+}
+
 async function heartbeat($: EngineInterface): Promise<void> {
   beats += 1
+  await markLive($)
   await update($, tick, () => beats)
   await nudge($)
   if (beats % 2 === 0) await refreshGit($)
@@ -228,19 +264,14 @@ export const register: Register = (on, options) => {
   on('session.start', async ($, e, next) => {
     config = await loadConfig($, options as Record<string, unknown>)
     ttl = await explicitTtl($, config)
-    // Tell a glanceline statusLine fallback in this session that the band is on.
-    try {
-      await $.env.set('GLANCELINE_MOD', await $.session.id())
-    } catch {
-      // older engines: the fallback simply keeps drawing
-    }
+    await setupLive($)
     try {
       await $.command.register({
         name: 'glanceline',
-        description: 'Open the glanceline details pane; `/glanceline off` hides the band, `on` shows it',
+        description: 'Open the glanceline details pane; `/glanceline off` hides the line, `on` shows it',
       })
     } catch {
-      // the band and toasts work without the command
+      // the line and toasts work without the command
     }
     try {
       const id = await $.session.model()
@@ -298,37 +329,24 @@ export const register: Register = (on, options) => {
     const arg = e.args.trim().toLowerCase()
     if (arg === 'off' || arg === 'on') {
       await update($, hidden, () => arg === 'off')
-      return { text: arg === 'off' ? 'glanceline band hidden. `/glanceline on` brings it back.' : 'glanceline band shown.' }
+      return { text: arg === 'off' ? 'glanceline line hidden. `/glanceline on` brings it back.' : 'glanceline line shown.' }
     }
     const opened = await $.ui.open({ id: PANE, title: 'glanceline' })
     return { text: opened.isPlaced ? 'glanceline details opened.' : 'glanceline: widen the terminal to see the details pane.' }
   })
 
-  on('ui.render', { component: 'AbovePrompt' }, async ($, e, next) => {
-    if (e.props.hasSurvey || (await read($, hidden))) return next(e)
+  // The line under the prompt: Claude Code keeps its own hint line (its mode
+  // label and pills stay live) and draws this text, dim, at its end.
+  on('ui.render', { component: 'PromptHint' }, async ($, e, next) => {
+    if (await read($, hidden)) return next(e)
     await read($, tick)
     const seconds = await nowSeconds($)
     const s = await read($, snap)
-    const room = Math.max(20, e.props.bodyColumns)
-    const lines = render(payload(s, seconds, ttl), { ...optionsAt(seconds), columns: room })
-    if (!lines.length && !s.account) return next(e)
-    const { Box, Text } = $.ui.resolve(e)
-    return (
-      <Box flexDirection="column">
-        {lines.map((line, row) => (
-          <Box key={`line-${row}`} flexDirection="row">
-            {line.map((part, index) => (
-              <Text key={part.key} wrap="truncate">
-                {index > 0 ? <Text dimColor>{SEP}</Text> : null}
-                <Text color={part.tone ? COLORS[part.tone] : undefined} dimColor={part.tone === 'dim'}
-                  bold={part.tone === 'bad'}>{part.text}</Text>
-              </Text>
-            ))}
-          </Box>
-        ))}
-        {s.account ? <Text dimColor wrap="truncate">{fitExtra([s.account], room)}</Text> : null}
-      </Box>
-    )
+    const room = tailRoom(e.viewport?.columns, e.props.hint)
+    const text = joined(inline(payload(s, seconds, ttl), optionsAt(seconds), s.account, room))
+    if (!text) return next(e)
+    const tail = e.props.tail ? `${e.props.tail} · ${text}` : text
+    return next({ ...e, props: { ...e.props, tail } })
   })
 
   on('ui.render', { component: 'Pane', requestId: PANE }, async ($, e) => {
