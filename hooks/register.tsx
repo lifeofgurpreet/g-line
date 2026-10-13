@@ -322,6 +322,17 @@ async function once($: EngineInterface, id: string): Promise<boolean> {
   return true
 }
 
+/** True the first time any session asks about `key`; the store keeps it across sessions. */
+async function firstAcrossSessions($: EngineInterface, key: string): Promise<boolean> {
+  try {
+    if ((await $.store.get(key)) !== undefined) return false
+    await $.store.set(key, Math.floor(await nowSeconds($)))
+    return true
+  } catch {
+    return true
+  }
+}
+
 async function nudge($: EngineInterface): Promise<void> {
   const seconds = await nowSeconds($)
   const s = await read($, snap)
@@ -332,8 +343,10 @@ async function nudge($: EngineInterface): Promise<void> {
       await heads($, alert.text, 'Prompt cache', config.notify.cache)
       continue
     }
-    const kind = alert.id.startsWith('five_hour') ? 'five_hour' : 'seven_day'
-    const advice = config.coach ? coach(kind, p.rate_limits?.[kind], seconds, s.effort, offsetAt(seconds * 1000)) : undefined
+    // The coach speaks once per 5-hour window across every session, so a new
+    // session in a hot window doesn't offer the same command again.
+    const advice = config.coach && alert.id.startsWith('five_hour:') && (await firstAcrossSessions($, `coach:${alert.id}`))
+      ? coach('five_hour', p.rate_limits?.five_hour, seconds, s.effort, offsetAt(seconds * 1000)) : undefined
     if (config.toasts) $.ui.toast(advice ? advice.text : alert.text, { timeoutMs: 15_000 })
     if (advice) await $.prompt.suggest({ text: advice.suggest }).catch(() => undefined)
   }
@@ -533,7 +546,13 @@ async function refreshLedger($: EngineInterface, at: number): Promise<void> {
 async function pruneLedger($: EngineInterface): Promise<void> {
   try {
     const at = await nowMs($)
-    for (const key of staleKeys(await $.store.keys(), dayOf(at, offsetAt(at)))) await $.store.delete(key)
+    const keys = await $.store.keys()
+    for (const key of staleKeys(keys, dayOf(at, offsetAt(at)))) await $.store.delete(key)
+    // `coach:five_hour:<resets at>` marks outlive their window by a day at most.
+    for (const key of keys.filter(k => k.startsWith('coach:'))) {
+      const resets = Number(key.split(':').pop())
+      if (!Number.isFinite(resets) || resets * 1000 < at - 86_400_000) await $.store.delete(key)
+    }
     await refreshLedger($, at)
   } catch {
     // best effort

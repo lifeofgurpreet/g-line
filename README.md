@@ -46,8 +46,8 @@ Code's own lines. glanceline uses that for:
   leaves out your repository, branch, paths and account.
 - **A pace coach that only suggests.** When your 5-hour window is on pace to run out, the
   toast says how much slower you'd need to go to last until the reset and puts
-  `/effort medium` (or `/model`) in the prompt box for Tab to take. It never changes your
-  model or effort itself.
+  `/effort medium` (or `/model`) in the prompt box for Tab to take, once per window across
+  all your sessions. It never changes your model or effort itself.
 - **It keeps ticking while you're idle.** The cache countdown and window resets update on a
   timer, so the line is right when you come back to it.
 

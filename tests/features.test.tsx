@@ -293,6 +293,27 @@ test('the coach suggests a lower effort and never switches it', async ($, on) =>
   expect(switched).toBe(false)
 })
 
+test('the coach has spoken for this window in another session: only the plain heads-up', async ($, on) => {
+  const resets = NOW + 3 * 3600
+  const w = world(on, { [`coach:five_hour:${resets}`]: NOW - 600 })
+  await start($)
+  await $.session.measure({ context: { tokens: 1, window: 1_000_000, percent: 1 },
+    rateLimits: [{ kind: 'five_hour', percentUsed: 50, resetsAt: ISO(resets) }], cost: { usd: 1 }, changed: ['rateLimits'] })
+  await w.clock.settle()
+  expect(w.toasts.some(t => t.startsWith("At this pace you'll hit your 5-hour limit"))).toBe(true)
+  expect(w.suggested).toEqual([])
+})
+
+test('a weekly window on pace to run out gets the plain heads-up, no coaching', async ($, on) => {
+  const w = world(on)
+  await start($)
+  await $.session.measure({ context: { tokens: 1, window: 1_000_000, percent: 1 },
+    rateLimits: [{ kind: 'seven_day', percentUsed: 98, resetsAt: ISO(NOW + 86400) }], cost: { usd: 1 }, changed: ['rateLimits'] })
+  await w.clock.settle()
+  expect(w.toasts.some(t => t.startsWith("At this pace you'll hit your weekly limit"))).toBe(true)
+  expect(w.suggested).toEqual([])
+})
+
 test('today and this week add up across sessions in the store, and the pane says so', async ($, on) => {
   const day = new Date(NOW * 1000 - new Date(NOW * 1000).getTimezoneOffset() * 60_000).toISOString().slice(0, 10)
   const w = world(on, { [`d:${day}:other-session`]: { cost: 10, turns: 4, tools: 12, colds: 0, agents: 1 }, 'd:2020-01-01:gone': { cost: 1 } })
