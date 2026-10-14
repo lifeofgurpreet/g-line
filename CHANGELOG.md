@@ -41,6 +41,7 @@ Live status, and receipts on the turns. A mod only.
 - Commands answer through toasts and put nothing into the conversation (Claude reads a
   command's text). `today $` leaves the default line (it shows with `today_budget`). The
   window's headroom leaves line 1, because it isn't the room before auto-compact.
+- glanceline 0.3/0.4 installs update to a stub (`legacy/glanceline`) that keeps loading and says how to switch, instead of failing with "Plugin glanceline not found".
 - `AGENTS.md`, `.claude/CLAUDE.md` and a project skill (`.claude/skills/g-line-dev`) explain
   the mod API surfaces g-line uses, so an agent can extend it without inventing old
   `statusLine` APIs.

@@ -223,7 +223,9 @@ available.
 ## Upgrading from glanceline 0.3 or 0.4
 
 glanceline is now g-line. The repository moved to `lifeofgurpreet/g-line` (the old address
-redirects), and the plugin has a new name, so Claude Code treats it as a new plugin:
+redirects), and the plugin has a new name, so Claude Code treats it as a new plugin. An
+installed glanceline updates to a small stub that keeps loading and tells you, once per
+session, to switch:
 
 ```text
 /plugin uninstall glanceline

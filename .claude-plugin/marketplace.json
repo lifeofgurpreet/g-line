@@ -9,6 +9,11 @@
       "name": "g-line",
       "source": "./",
       "description": "Live status under the prompt. Receipts on the turns."
+    },
+    {
+      "name": "glanceline",
+      "source": "./legacy/glanceline",
+      "description": "Renamed to g-line. This stub keeps 0.3/0.4 installs loading and says how to switch."
     }
   ]
 }

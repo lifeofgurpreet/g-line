@@ -1,0 +1,9 @@
+{
+  "name": "glanceline",
+  "version": "0.5.0",
+  "description": "glanceline is now g-line. This stub keeps 0.3/0.4 installs loading and tells you how to switch: /plugin uninstall glanceline, then /plugin install g-line --marketplace lifeofgurpreet/g-line.",
+  "author": {
+    "name": "Gurpreet"
+  },
+  "license": "MIT"
+}
