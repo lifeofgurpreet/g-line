@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-14T19:00:57Z",
+ "generated_at": "2026-10-14T20:01:13Z",
  "items": [
   {
    "title": "Claude Code 2.1.300 released",
@@ -9,16 +9,16 @@
    "published_at": "2026-10-14T18:24:25Z"
   },
   {
+   "title": "Preparing for the 2026 US midterms",
+   "url": "https://www.anthropic.com/news/2026-us-midterms",
+   "source": "Anthropic",
+   "published_at": "2026-10-14T19:32:27Z"
+  },
+  {
    "title": "Singapore office and government MOU | Anthropic",
    "url": "https://www.anthropic.com/news/singapore-office-opening",
    "source": "Anthropic",
    "published_at": "2026-10-14T08:31:43Z"
-  },
-  {
-   "title": "Claude discovers a novel enzyme system",
-   "url": "https://www.anthropic.com/news/claude-discovers-novel-enzyme-system",
-   "source": "Anthropic",
-   "published_at": "2026-10-13T00:18:23Z"
   },
   {
    "title": "Redesigning source control at Anthropic",
