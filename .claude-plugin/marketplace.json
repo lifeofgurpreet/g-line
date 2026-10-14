@@ -1,14 +1,14 @@
 {
-  "name": "glanceline",
-  "description": "glanceline: a Claude Code mod that shows your session at a glance.",
+  "name": "g-line",
+  "description": "g-line: live status under the prompt and receipts on the turns, a Claude Code mod.",
   "owner": {
     "name": "Gurpreet"
   },
   "plugins": [
     {
-      "name": "glanceline",
+      "name": "g-line",
       "source": "./",
-      "description": "Your Claude Code session at a glance, with a heads-up before you hit a wall."
+      "description": "Live status under the prompt. Receipts on the turns."
     }
   ]
 }

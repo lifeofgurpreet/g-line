@@ -108,36 +108,47 @@ export function costRatio(cost: number | undefined, overlap: boolean, earlier: r
 }
 
 /**
- * The one thing about a turn worth reading, if any: failed calls, a
- * compaction, a big context jump, a large cache write that the context's
- * growth doesn't explain. Observations, never diagnoses.
+ * What about a turn is worth reading, at most two facts, most telling first:
+ * failed calls, a compaction, a cold cache the turn rebuilt, a big context
+ * jump, a large cache write that the context's growth doesn't explain.
+ * Observations, never diagnoses.
  */
-export function receiptEvent(r: Receipt): Part | undefined {
+export function receiptEvents(r: Receipt): Part[] {
+  const events: Part[] = []
   if (r.failures !== undefined && r.failures >= 2) {
-    return { tone: 'bad', text: r.failedTool ? `${r.failures} failed ${r.failedTool} calls` : `${r.failures} failed calls` }
+    events.push({ tone: 'bad', text: r.failedTool ? `${r.failures} failed ${r.failedTool} calls` : `${r.failures} failed calls` })
   }
   if (r.compacted) {
     const { before, after } = r.compacted
-    return { tone: 'accent', text: before && after !== undefined ? `compacted ${tokens(before)} → ${tokens(after)}` : 'compacted' }
+    events.push({ tone: 'accent', text: before && after !== undefined ? `compacted ${tokens(before)} → ${tokens(after)}` : 'compacted' })
   }
-  if (bigJump(r)) return { tone: 'accent', text: `+${tokens(r.context ?? 0)} context` }
   const write = r.cacheWrite ?? 0
-  if (r.warmBefore && write >= 20_000 && write >= Math.max(0, r.context ?? 0) + 10_000) {
-    return { tone: 'warn', text: `cache write ${tokens(write)}` }
+  // The turn's first request came after the cache's lifetime and rewrote most of it.
+  const cold = r.cold === true && write >= 10_000
+  if (cold) events.push({ tone: 'warn', text: `cache cold · rebuilt ${tokens(write)}` })
+  if (bigJump(r)) events.push({ tone: 'accent', text: `+${tokens(r.context ?? 0)} context` })
+  if (!cold && r.warmBefore && write >= 20_000 && write >= Math.max(0, r.context ?? 0) + 10_000) {
+    events.push({ tone: 'warn', text: `cache write ${tokens(write)}` })
   }
-  return undefined
+  return events.slice(0, 2)
+}
+
+/** The first of the turn's unusual facts, if any. */
+export function receiptEvent(r: Receipt): Part | undefined {
+  return receiptEvents(r)[0]
 }
 
 /**
  * The adaptive receipt: an ordinary turn says what it cost and how much the
- * cache served; an unusual one leads with what was unusual, then the cost.
- * A cost several times the recent median says so after the cost.
+ * cache served; an unusual one leads with what was unusual (at most two
+ * facts), then the cost. A cost several times the recent median says so
+ * after the cost.
  */
 export function adaptiveParts(r: Receipt): Part[] {
-  const event = receiptEvent(r)
+  const events = receiptEvents(r)
   const cost = costPart(r)
   const outlier = cost && r.ratio !== undefined ? { tone: 'accent' as Tone, text: `${Math.round(r.ratio)}x recent` } : undefined
-  if (event) return [event, cost, outlier].filter((p): p is Part => p !== undefined)
+  if (events.length) return [...events, cost, outlier].filter((p): p is Part => p !== undefined)
   if (outlier && cost) return [cost, outlier]
   return [cost, cachePart(r)].filter((p): p is Part => p !== undefined)
 }
@@ -163,13 +174,28 @@ export function receiptText(r: Receipt, spec: ReceiptSpec, room?: number): strin
 }
 
 /** The spinner's words for the running turn: cost so far, tools, agents, and failures once there are two. */
-export function spinnerParts(live: { tools: number; agents: number; failures?: number; failedTool?: string | null }, cost?: number): string[] {
+/**
+ * The spinner's words for the running turn: the burn so far (tools, agents,
+ * context added, the 5-hour window), and a warning once calls keep failing,
+ * naming the tool and what it failed on when they were all the same.
+ */
+export function spinnerParts(live: { tools: number; agents: number; failures?: number; failedTool?: string | null;
+  failedTarget?: string | null; contextGrowth?: number }, fiveHour?: number): string[] {
   const parts: string[] = []
-  if (cost !== undefined && cost >= 0.01) parts.push(`API ${money(cost)}`)
+  if (live.failures && live.failures >= 2) {
+    const on = live.failedTool && live.failedTarget && live.failedTarget !== live.failedTool ? ` on ${live.failedTarget}` : ''
+    parts.push(live.failedTool ? `⚠ ${live.failures}× ${live.failedTool} failures${on}` : `⚠ ${live.failures} failed calls`)
+  }
   if (live.tools) parts.push(plural(live.tools, 'tool'))
   if (live.agents) parts.push(plural(live.agents, 'agent'))
-  if (live.failures && live.failures >= 2) parts.push(live.failedTool ? `${live.failures} failed ${live.failedTool}` : `${live.failures} failed`)
+  if (live.contextGrowth !== undefined && live.contextGrowth >= 1000) parts.push(`+${tokensOne(live.contextGrowth)} ctx`)
+  if (fiveHour !== undefined) parts.push(`5h ${pct(fiveHour)}`)
   return parts
+}
+
+/** `4.1k` under ten thousand, `42k` above: a growth figure that moves visibly while a turn runs. */
+export function tokensOne(count: number): string {
+  return count >= 1000 && count < 10_000 ? `${(count / 1000).toFixed(1)}k` : tokens(count)
 }
 
 /** A turn's length as Claude Code writes it on that line: `11s`, `1m 4s`, `1h 2m 3s`. */
@@ -294,7 +320,7 @@ export function target(tool: string, input: Record<string, unknown>): string {
 /** The toast after the same call has failed `streak` times in a row. */
 export function loopWarning(tool: string, what: string, streak: number): string {
   const on = what && what !== tool ? ` on ${what}` : ''
-  return `${tool} failed ${streak}× in a row${on}. Worth a look before it burns more of your limit.`
+  return `⚠ ${streak}× ${tool} failures in a row${on}. Worth a look before it burns more of your limit.`
 }
 
 // ----------------------------------------------------------------- ledger
@@ -404,7 +430,7 @@ export function cardLines(c: CardInput): string[] {
     t.failures ? plural(t.failures, 'failed call') : undefined].filter(Boolean).join(SEP)
   const cache = [c.cacheHit !== undefined ? `cache read ${pct(c.cacheHit)}` : undefined,
     plural(t.compactions.length, 'compaction'), plural(t.colds, 'cold-cache rebuild')].filter(Boolean).join(SEP)
-  const lines = ['glanceline · session card', head, work, cache]
+  const lines = ['g-line · session card', head, work, cache]
   const money_ = [c.cost !== undefined ? `${money(c.cost)} at API prices` : undefined,
     t.peakContext ? `peak context ${pct(t.peakContext)}` : undefined,
     c.fiveHour !== undefined ? `5h window ${pct(c.fiveHour)}` : undefined].filter(Boolean).join(SEP)

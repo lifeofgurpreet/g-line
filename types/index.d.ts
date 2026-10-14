@@ -71,6 +71,10 @@ export type TurnLive = {
   failures?: number
   /** The tool that failed, while every failure was the same tool; null once they differ. */
   failedTool?: string | null
+  /** What the failing calls worked on (a file's name, a command's first words), while it was the same. */
+  failedTarget?: string | null
+  /** Context tokens the turn has added so far, from its latest request. */
+  contextGrowth?: number
   cacheWrite?: number
   warmBefore?: boolean
   cold?: boolean
@@ -132,9 +136,15 @@ export type Day = { day: string; cost: number; turns: number; tools: number; ses
 
 export type Ledger = { today: Day; week: Day[] }
 
+/** One headline from g-line's Pulse feed, cleaned. */
+export type PulseItem = { title: string; url: string; source: string; at?: string }
+
+/** The feed as last fetched. */
+export type PulseFeed = { fetchedAt: number; generatedAt?: string; items: PulseItem[] }
+
 declare module 'claude-code' {
   interface PluginState {
-    glanceline: {
+    'g-line': {
       snap: Snap
       tick: number
       seen: string[]
@@ -147,6 +157,7 @@ declare module 'claude-code' {
       context: ContextView | null
       ledger: Ledger | null
       view: 'details' | 'card'
+      pulse: PulseFeed | null
     }
   }
 }

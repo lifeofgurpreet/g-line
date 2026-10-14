@@ -52,6 +52,8 @@ test('the adaptive receipt stays quiet on an ordinary turn and leads with what w
   expect(texts({ ...quiet, failures: 2 })[0]).toBe('2 failed calls')
   expect(texts({ ...quiet, failures: 1, failedTool: 'Bash' })).toEqual(['API $0.38', 'cache read 94%'])
   expect(texts({ ...quiet, compacted: { before: 182_000, after: 31_000 }, context: -151_000 })[0]).toBe('compacted 182k → 31k')
+  // A cold cache, rebuilt by the turn's first request, is said as such.
+  expect(adaptiveParts({ ...quiet, cold: true, cacheWrite: 84_000, context: 3000, cacheHit: 12 })[0]).toEqual({ tone: 'warn', text: 'cache cold · rebuilt 84k' })
   // Background work makes the session's growth not the turn's own: no dollars then.
   expect(texts({ ...jump, overlap: true })).toEqual(['+84k context'])
   expect(texts({ ...quiet, overlap: true })).toEqual(['cache read 94%'])
@@ -72,11 +74,11 @@ test('a cost is an outlier only against enough attributable history, by ratio an
   expect(costRatio(0.12, false, [0.02, 0.03, 0.02, 0.03, 0.02])).toBeUndefined()
 })
 
-test('the spinner says what the turn has done, and failures once they repeat', async () => {
-  expect(spinnerParts({ tools: 3, agents: 0 }, 0.12)).toEqual(['API $0.12', '3 tools'])
-  expect(spinnerParts({ tools: 5, agents: 1, failures: 2, failedTool: 'Bash' })).toEqual(['5 tools', '1 agent', '2 failed Bash'])
-  expect(spinnerParts({ tools: 5, agents: 0, failures: 3, failedTool: null })).toEqual(['5 tools', '3 failed'])
-  expect(spinnerParts({ tools: 0, agents: 0, failures: 1, failedTool: 'Edit' }, 0.004)).toEqual([])
+test('the spinner says the burn so far, and names the tool and file once calls keep failing', async () => {
+  expect(spinnerParts({ tools: 3, agents: 0, contextGrowth: 4100 }, 74)).toEqual(['3 tools', '+4.1k ctx', '5h 74%'])
+  expect(spinnerParts({ tools: 5, agents: 1, failures: 3, failedTool: 'Edit', failedTarget: 'core.ts' })).toEqual(['⚠ 3× Edit failures on core.ts', '5 tools', '1 agent'])
+  expect(spinnerParts({ tools: 5, agents: 0, failures: 3, failedTool: null })).toEqual(['⚠ 3 failed calls', '5 tools'])
+  expect(spinnerParts({ tools: 0, agents: 0, failures: 1, failedTool: 'Edit', contextGrowth: 400 })).toEqual([])
 })
 
 test('turn lengths match the engine, so the receipt starts right after its words', async () => {
@@ -132,7 +134,7 @@ test('repeated failures name the target briefly', async () => {
   expect(target('Bash', { command: 'npm run test -- --watch=false' })).toBe('npm run test')
   expect(target('WebFetch', { url: 'https://example.com/x' })).toBe('https://example.com/x')
   expect(target('Mystery', {})).toBe('Mystery')
-  expect(loopWarning('Edit', 'core.ts', 3)).toBe('Edit failed 3× in a row on core.ts. Worth a look before it burns more of your limit.')
+  expect(loopWarning('Edit', 'core.ts', 3)).toBe('⚠ 3× Edit failures in a row on core.ts. Worth a look before it burns more of your limit.')
 })
 
 test('the day ledger sums every session per local day and forgets old days', async () => {
@@ -172,7 +174,7 @@ test('the share card leaves out branch, path and account', async () => {
       compactions: [{ at: 0, trigger: 'auto', before: 1, after: 1 }] },
     today: { day: '2026-10-13', cost: 41, turns: 80, tools: 300, sessions: 6, colds: 2, agents: 9 } })
   expect(lines).toEqual([
-    'glanceline · session card',
+    'g-line · session card',
     'Opus 5.5 · 1h 12m · 23 turns',
     '87 tool calls · 4 agents · 2 failed calls',
     'cache read 94% · 1 compaction · 1 cold-cache rebuild',

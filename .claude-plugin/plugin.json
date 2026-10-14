@@ -1,28 +1,40 @@
 {
-  "name": "glanceline",
-  "version": "0.4.0",
-  "description": "A status line that adds zero lines: limits with pace and context on Claude Code's hint line, a receipt on every turn that flags the unusual one (a context jump, a cache write, repeated failures), agents and compaction in the footer, heads-up notifications, a details pane.",
+  "name": "g-line",
+  "version": "0.5.0",
+  "description": "Live status under Claude Code's prompt, and receipts on the turns themselves: context jumps, cache rebuilds and tool failures marked on the turn's own closing line; model, effort, cache countdown and usage pace on the hint line plus one coloured row; heads-up notifications before the cache goes cold. A mod: no transcript parsing.",
   "author": {
     "name": "Gurpreet"
   },
+  "homepage": "https://github.com/lifeofgurpreet/g-line",
+  "repository": "https://github.com/lifeofgurpreet/g-line",
   "license": "MIT",
   "keywords": [
-    "status line",
     "mod",
+    "status line",
     "turn receipt",
-    "rate limits",
     "prompt cache",
+    "rate limits",
     "context",
-    "notifications",
-    "subagents",
-    "compaction"
+    "effort",
+    "notifications"
   ],
   "types": "./types/index.d.ts",
   "userConfig": {
+    "lines": {
+      "type": "string",
+      "title": "Layout",
+      "description": "2: figures at the end of the hint line plus one coloured row under it. 1: the hint line only. receipts: no footer, just receipts, spinner and heads-ups (keeps another status line you like)",
+      "options": [
+        "2",
+        "1",
+        "receipts"
+      ],
+      "default": "2"
+    },
     "preset": {
       "type": "string",
       "title": "Layout",
-      "description": "minimal, default or full (adds bars, cost, session time and git; still one line under the prompt)",
+      "description": "For the one-line layout: minimal, default or full (adds bars, git, cost and time)",
       "options": [
         "default",
         "minimal",

@@ -37,10 +37,33 @@ export function accountSegment(line?: string | null): Segment | undefined {
  * Columns left for glanceline after the engine's hint (which it joins to the
  * tail with ` · `), or undefined when the surface has not measured.
  */
-export function tailRoom(columns: number | undefined, hint: string): number | undefined {
+export function tailRoom(columns: number | undefined, hint: string, shown = hint): number | undefined {
   if (columns === undefined) return undefined
   const mode = /shift\+tab/i.test(hint) ? MODE_LABEL : QUIET_MODE_LABEL
-  return columns - EDGES - mode - width(hint) - SEP.length
+  return columns - EDGES - mode - width(shown) - SEP.length
+}
+
+/**
+ * Claude Code's two standing hints, shortened. Any other hint (`esc to
+ * interrupt`, a background shell's pill, a key to press twice) is left whole.
+ */
+export const SHORT_HINTS: Record<string, string> = { '(shift+tab to cycle)': '⇧⇥', '? for shortcuts': '?' }
+
+/**
+ * The hint line's props with glanceline's text added: after a shortened
+ * standing hint (a rewritten hint replaces the engine's tail, so only when
+ * there is none), else as the tail the engine draws after its own hint.
+ */
+export function withText<P extends { hint: string; tail?: string }>(props: P, text: string, short: boolean): P {
+  if (!text) return props
+  const brief = short && !props.tail ? SHORT_HINTS[props.hint] : undefined
+  if (brief !== undefined) return { ...props, hint: `${brief} · ${text}` }
+  return { ...props, tail: props.tail ? `${props.tail} · ${text}` : text }
+}
+
+/** The hint as it will show: shortened where `withText` would shorten it. */
+export function shownHint(hint: string, short: boolean): string {
+  return (short && SHORT_HINTS[hint]) || hint
 }
 
 /** Keys only the mod can fill, placed where a custom `segments` layout names them. */

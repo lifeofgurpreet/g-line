@@ -1,5 +1,50 @@
 # Changelog
 
+## 0.5.0 (2026-10-14): glanceline is now g-line
+
+Live status, and receipts on the turns. A mod only.
+
+- **New name.** The plugin, the marketplace and the command are now `g-line`
+  (`/plugin install g-line --marketplace lifeofgurpreet/g-line`). The repository moved to
+  `lifeofgurpreet/g-line`, and GitHub redirects the old address. `/glanceline` still answers
+  for this release, and `~/.config/glanceline/config.json` is still read. Day and week totals
+  start again under the new name. See the README's upgrade section.
+- **Two lines under the prompt (the new default).** Line 1, at the end of Claude Code's hint
+  line, holds the gauges (`ctx 13% · 5h 1% · wk 79%!`). Line 2, g-line's own coloured row,
+  holds the model and its **effort**, the **cache countdown** (back on screen, now `~59m`
+  because it's an estimate), and what happens next (`wk out ~Thu 19:00, resets Fri 16:00`;
+  projections are rounded). What line 1 can't fit moves to line 2 rather than vanishing. The
+  footer labels (agents, compaction) move onto line 2. `lines: 1` keeps everything on the hint
+  line, with `(shift+tab to cycle)` shortened to `⇧⇥` to make room. `lines: receipts` draws no
+  footer at all, for people who keep another status line.
+- **Receipts can say two things.** A turn whose first request rebuilt a cold cache says so
+  (`cache cold · rebuilt 42k · API $0.31` in the demo), and when it also grew the context a
+  lot, both facts show, for example `cache cold · rebuilt 42k · +45k context`.
+- **The spinner shows the burn.** `3 tools · +4.1k ctx · 5h 74%` while a turn runs. Once calls
+  keep failing, it leads with the tool and file: `⚠ 3× Edit failures on core.ts`. The toast
+  says the same.
+- **Pulse (opt-in).** `/g-line pulse` shows AI-dev headlines on turns that run past 15
+  seconds, after the burn, and lists five in the pane with links. It's one static file from
+  the repository's `pulse` branch, fetched at most every 45 minutes, with nothing sent.
+  Headline text is cleaned of escape and control characters, and there's a five-second
+  timeout. Off by default, so g-line makes no network requests unless you turn it on.
+- **Settings in the pane.** Buttons for the layout, notifications, Pulse and the receipt style.
+  Choices stick across sessions.
+- **The cache heads-up says what's at stake.** `Claude cache goes cold in 5m (148k of context at
+  risk)`.
+- **Claude can read the figures, if you let it** (`claude_reads: true`, off by default). A
+  `status` tool returns a JSON snapshot with scope and basis, `null` for anything unknown, and
+  no advice.
+- **No fallback.** The Python `statusLine` script (`glanceline.py`, `install.sh`) is gone;
+  g-line is a mod. If you installed the old script, `glanceline uninstall` restores your
+  previous `statusLine`.
+- Commands answer through toasts and put nothing into the conversation (Claude reads a
+  command's text). `today $` leaves the default line (it shows with `today_budget`). The
+  window's headroom leaves line 1, because it isn't the room before auto-compact.
+- `AGENTS.md`, `.claude/CLAUDE.md` and a project skill (`.claude/skills/g-line-dev`) explain
+  the mod API surfaces g-line uses, so an agent can extend it without inventing old
+  `statusLine` APIs.
+
 ## 0.4.0 (2026-10-14)
 
 The receipt flags the turn worth noticing. Still not one extra row.

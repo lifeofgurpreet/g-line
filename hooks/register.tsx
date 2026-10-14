@@ -1,4 +1,4 @@
-// glanceline, the mod: your session at a glance without a single extra row.
+// g-line, the mod: live status under the prompt, receipts on the turns.
 //
 // The live figures ride on lines Claude Code already draws: the hint line
 // under the prompt (context, 5-hour and weekly limits with pace, cache, git),
@@ -6,7 +6,7 @@
 // the working spinner (what the turn has cost so far) and the line that
 // closes each turn (`Baked for 1m 4s · $0.38 · 94% cached · 7 tools`).
 // Heads-ups arrive as toasts and native notifications; everything else is in
-// the `/glanceline` pane and its share card.
+// the `/g-line` pane and its share card.
 //
 // Every figure is Claude Code's own (`$.session.usage()`, `session.measure`,
 // `turn.complete`, `$.agent.list()`, `session.compact`, `tool.call`) or what
@@ -25,31 +25,50 @@ import {
   receiptText, spark, spinnerParts, staleKeys, target, todaySegment, turnLength, turnLineWidth, unusedServers,
 } from './extras'
 import type { ReceiptSpec } from './extras'
-import { MOD_KEYS, inline, joined, modesWidth, tailRoom } from './inline'
+import { MOD_KEYS, accountSegment, inline, joined, modesWidth, shownHint, tailRoom, withText } from './inline'
+import { deck, nextRoom } from './deck'
+import { STATUS_DESCRIPTION, STATUS_SCHEMA, STATUS_TOOL, statusJson } from './glance'
+import { PULSE_TTL_MS, PULSE_URL, parseFeed, tickerText } from './pulse'
+import { gitSegmentOf } from './core'
 
-const snap = atom({ plugin: 'glanceline', key: 'snap' } as const, {})
-const tick = atom({ plugin: 'glanceline', key: 'tick' } as const, 0)
-const seen = atom({ plugin: 'glanceline', key: 'seen' } as const, [])
-const hidden = atom({ plugin: 'glanceline', key: 'hidden' } as const, false)
-const receipts = atom({ plugin: 'glanceline', key: 'receipts' } as const, {})
-const turnNow = atom({ plugin: 'glanceline', key: 'turn' } as const, null)
-const agents = atom({ plugin: 'glanceline', key: 'agents' } as const, [])
-const totals = atom({ plugin: 'glanceline', key: 'totals' } as const, EMPTY_TOTALS)
-const outlook = atom({ plugin: 'glanceline', key: 'forecast' } as const, null)
-const contextAtom = atom({ plugin: 'glanceline', key: 'context' } as const, null)
-const ledgerAtom = atom({ plugin: 'glanceline', key: 'ledger' } as const, null)
-const view = atom({ plugin: 'glanceline', key: 'view' } as const, 'details')
+const snap = atom({ plugin: 'g-line', key: 'snap' } as const, {})
+const tick = atom({ plugin: 'g-line', key: 'tick' } as const, 0)
+const seen = atom({ plugin: 'g-line', key: 'seen' } as const, [])
+const hidden = atom({ plugin: 'g-line', key: 'hidden' } as const, false)
+const receipts = atom({ plugin: 'g-line', key: 'receipts' } as const, {})
+const turnNow = atom({ plugin: 'g-line', key: 'turn' } as const, null)
+const agents = atom({ plugin: 'g-line', key: 'agents' } as const, [])
+const totals = atom({ plugin: 'g-line', key: 'totals' } as const, EMPTY_TOTALS)
+const outlook = atom({ plugin: 'g-line', key: 'forecast' } as const, null)
+const contextAtom = atom({ plugin: 'g-line', key: 'context' } as const, null)
+const ledgerAtom = atom({ plugin: 'g-line', key: 'ledger' } as const, null)
+const view = atom({ plugin: 'g-line', key: 'view' } as const, 'details')
+const pulseAtom = atom({ plugin: 'g-line', key: 'pulse' } as const, null)
 
-const PANE = 'glanceline'
-const INSTALL = '/plugin install glanceline --marketplace lifeofgurpreet/glanceline'
+const PANE = 'g-line'
+const INSTALL = '/plugin install g-line --marketplace lifeofgurpreet/g-line'
+/** The command's name, and the 0.4 name it still answers to for one release. */
+const COMMAND = 'g-line'
+const OLD_COMMAND = 'glanceline'
 const TICK_MS = 15_000
-/** A statusLine fallback steps aside while this session's file is under a minute old. */
+/**
+ * A status line command steps aside while this session's file is under a
+ * minute old. The path keeps the 0.4 name: other tools read it.
+ */
 const LIVE_DIR = '.cache/glanceline/live'
-const STATE_DIR = '.cache/glanceline/state'
+const STATE_DIR = '.cache/g-line/state'
 
 type Notify = { cache: boolean; reset: boolean; longTurn: boolean; agents: boolean }
 
 type Config = {
+  /** 2: line 1 at the end of the hint line, line 2 under it; 1: the hint line only; 0: receipts, spinner and heads-ups, no footer. */
+  lines: 0 | 1 | 2
+  /** Headlines from g-line's feed on long turns' spinner and in the pane; fetches one static file. */
+  pulse: boolean
+  /** Shorten Claude Code's standing hints: `(shift+tab to cycle)` to `⇧⇥`, `? for shortcuts` to `?`. */
+  shortHints: boolean
+  /** The branch on line 2 (two lines; one line names `git` in `segments`). */
+  git: boolean
   preset: Preset
   segments?: string
   icons: 'none' | 'nerd'
@@ -63,16 +82,18 @@ type Config = {
   spinner: boolean
   footerLabels: boolean
   coach: boolean
+  /** Give Claude the `status` tool to read these figures when asked (off by default). */
+  claudeReads: boolean
   toolStreak: number
   budget?: number
   exportState: boolean
 }
 
 const DEFAULTS: Config = {
-  preset: 'default', icons: 'none', toasts: true, cacheTtl: 'auto',
+  lines: 2, pulse: false, shortHints: true, git: false, preset: 'default', icons: 'none', toasts: true, cacheTtl: 'auto',
   notify: { cache: true, reset: true, longTurn: false, agents: false },
   longTurnSeconds: 60, resetThreshold: 80, receipt: 'adaptive', spinner: true, footerLabels: true,
-  coach: false, toolStreak: 3, exportState: false,
+  coach: false, claudeReads: false, toolStreak: 3, exportState: false,
 }
 
 const COLORS: Record<Tone, string | undefined> = {
@@ -85,8 +106,17 @@ function merge(base: Config, raw: unknown): Config {
   if (!raw || typeof raw !== 'object') return base
   const r = raw as Record<string, unknown>
   const next = { ...base, notify: { ...base.notify } }
+  if ([0, 1, 2, '0', '1', '2'].includes(r.lines as number)) next.lines = Number(r.lines) as 0 | 1 | 2
+  if (r.lines === 'receipts') next.lines = 0
+  if (typeof r.pulse === 'boolean') next.pulse = r.pulse
+  if (typeof r.git === 'boolean') next.git = r.git
+  if (typeof r.short_hints === 'boolean') next.shortHints = r.short_hints
   if (r.preset === 'minimal' || r.preset === 'default' || r.preset === 'full') next.preset = r.preset
-  if (typeof r.segments === 'string' && r.segments.trim()) next.segments = r.segments
+  // A custom layout is one line's: naming segments picks the one-line layout.
+  if (typeof r.segments === 'string' && r.segments.trim()) {
+    next.segments = r.segments
+    if (r.lines === undefined) next.lines = 1
+  }
   if (r.icons === 'none' || r.icons === 'nerd') next.icons = r.icons
   if (typeof r.toasts === 'boolean') next.toasts = r.toasts
   if (r.cache_ttl === '5m' || r.cache_ttl === '1h' || r.cache_ttl === 'auto') next.cacheTtl = r.cache_ttl
@@ -110,6 +140,7 @@ function merge(base: Config, raw: unknown): Config {
   if (typeof r.spinner === 'boolean') next.spinner = r.spinner
   if (typeof r.footer_labels === 'boolean') next.footerLabels = r.footer_labels
   if (typeof r.coach === 'boolean') next.coach = r.coach
+  if (typeof r.claude_reads === 'boolean') next.claudeReads = r.claude_reads
   const streak = num(r.tool_streak)
   if (streak !== undefined && streak >= 0) next.toolStreak = Math.floor(streak)
   const budget = num(r.today_budget)
@@ -132,14 +163,38 @@ async function loadConfig($: EngineInterface, options: Record<string, unknown>):
   const xdg = await $.env.get('XDG_CONFIG_HOME')
   const home = await $.env.get('HOME')
   const base = xdg || (home ? `${home}/.config` : undefined)
-  if (base) config = merge(config, await readJson($, `${base}/glanceline/config.json`))
+  if (base) {
+    // The 0.4 name's file, then the new one: settings carry over across the rename.
+    config = merge(config, await readJson($, `${base}/glanceline/config.json`))
+    config = merge(config, await readJson($, `${base}/g-line/config.json`))
+  }
   const chosen: Record<string, unknown> = {}
+  if (options.lines !== undefined && options.lines !== '2') chosen.lines = options.lines
   if (options.preset !== undefined && options.preset !== 'default') chosen.preset = options.preset
   if (options.icons !== undefined && options.icons !== 'none') chosen.icons = options.icons
   if (options.toasts === false) chosen.toasts = false
   if (options.notifications === false) chosen.notify = false
   if (options.receipt !== undefined && options.receipt !== 'adaptive') chosen.receipt = options.receipt
-  return merge(config, chosen)
+  config = merge(config, chosen)
+  // Choices made in the pane win: they are the most recent.
+  try {
+    config = merge(config, await $.store.get(SETTINGS_KEY))
+  } catch {
+    // no store: the files and /config decide
+  }
+  return config
+}
+
+const SETTINGS_KEY = 'settings'
+
+/** Saves a choice made in the pane, so later sessions keep it. */
+async function saveSetting($: EngineInterface, key: string, value: unknown): Promise<void> {
+  try {
+    const saved = ((await $.store.get(SETTINGS_KEY)) ?? {}) as Record<string, unknown>
+    await $.store.set(SETTINGS_KEY, { ...saved, [key]: value })
+  } catch {
+    // the choice holds for this session
+  }
 }
 
 // ------------------------------------------------------------------ cache
@@ -226,6 +281,7 @@ let coldThisTurn = false
 /** Consecutive failures per agent, tool and target. */
 const streaks = new Map<string, number>()
 
+const UNREADABLE = JSON.stringify({ schema: 1, state: 'unavailable' })
 const BACKGROUND = /\b\d+ (?:shells?|monitors?|tasks?|agents?|workflows?|background)\b/i
 /** Columns a receipt leaves for Claude Code's own words on a closing line that reports background work. */
 const BACKGROUND_ROOM = 64
@@ -319,7 +375,7 @@ async function heads($: EngineInterface, text: string, title: string, notify: bo
   await toast($, text, 12_000)
 }
 
-/** A terminal toast, unless toasts are off or `/glanceline off` hid the mod. */
+/** A terminal toast, unless toasts are off or `/g-line off` hid the mod. */
 async function toast($: EngineInterface, text: string, timeoutMs: number): Promise<void> {
   if (config.toasts && !(await read($, hidden))) $.ui.toast(text, { timeoutMs })
 }
@@ -376,17 +432,17 @@ async function nudge($: EngineInterface): Promise<void> {
 }
 
 /**
- * Tells a glanceline (or CAAM) statusLine fallback in this session that the
- * mod draws it, so the same figures never show twice: the fallback reads the
- * file named after the session id it is handed, and steps aside while the
- * file is under a minute old. Nothing else is in it.
+ * Tells any status line command configured in this session (an older
+ * glanceline, a team's own) that the mod draws these figures, so they never
+ * show twice: such a command reads the file named after its session id and
+ * steps aside while it is under a minute old. Nothing else is in it.
  */
 async function markLive($: EngineInterface): Promise<void> {
   if (!liveFile) return
   try {
     await $.fs.write(liveFile, `${Math.floor(await nowSeconds($))}\n`)
   } catch {
-    // unwritable home: the fallback keeps drawing, which is only redundant
+    // unwritable home: such a command keeps drawing, which is only redundant
   }
 }
 
@@ -602,6 +658,7 @@ async function heartbeat($: EngineInterface): Promise<void> {
   await nudge($)
   if (beats % 2 === 0) await refreshGit($)
   if (beats % 40 === 0) await refreshAccount($)
+  if (beats % 20 === 0) void refreshPulse($)
   if ((await read($, agents)).some(row => isActive(row.status))) await refreshAgents($)
   await exportState($)
 }
@@ -609,6 +666,7 @@ async function heartbeat($: EngineInterface): Promise<void> {
 // ------------------------------------------------------------- the line
 
 function layoutHas(key: string): boolean {
+  if (key === 'git' && config.lines === 2) return config.git
   return layoutKeys({ now: 0, preset: config.preset, segments: config.segments }).flat().includes(key)
 }
 
@@ -623,9 +681,9 @@ async function extrasNow($: EngineInterface): Promise<Extras> {
   }
 }
 
-/** The labels glanceline adds to the footer's mode labels: what the layout doesn't place on the hint. */
+/** The labels g-line adds to the footer's mode labels: what the layout doesn't place on the hint. */
 function footerLabels(extras: Extras): string[] {
-  if (!config.footerLabels) return []
+  if (!config.footerLabels || config.lines === 2) return []
   return (['agents', 'compact'] as const)
     .filter(key => !layoutHas(key))
     .map(key => extras[key]?.forms[0])
@@ -713,7 +771,7 @@ async function detailRows($: EngineInterface, seconds: number, columns?: number)
     const week = l.week.reduce((sum, d) => sum + d.cost, 0)
     rows.push({ key: 'd-week', text: `7 days ${spark(l.week.map(d => d.cost))} ${money(week)}` })
   }
-  rows.push({ key: 'note', tone: 'dim', text: `Pace projects your average rate since each window opened. Totals count only sessions glanceline ran in. Layout: ${layoutKeys(optionsAt(seconds)).map(x => x.join(',')).join(' | ')}.` })
+  rows.push({ key: 'note', tone: 'dim', text: `Pace projects your average rate since each window opened. Totals count only sessions g-line ran in. Layout: ${layoutKeys(optionsAt(seconds)).map(x => x.join(',')).join(' | ')}.` })
   return rows
 }
 
@@ -733,7 +791,7 @@ async function cardText($: EngineInterface, seconds: number): Promise<string[]> 
   })
 }
 
-async function openPane($: EngineInterface, mode: 'details' | 'card'): Promise<{ text: string }> {
+async function openPane($: EngineInterface, mode: 'details' | 'card'): Promise<Record<string, never>> {
   await update($, view, () => mode)
   await Promise.all([pruneLedger($), refreshGit($, true)])
   try {
@@ -746,9 +804,66 @@ async function openPane($: EngineInterface, mode: 'details' | 'card'): Promise<{
   } catch {
     // the pane shows the rest
   }
-  const opened = await $.ui.open({ id: PANE, title: mode === 'card' ? 'glanceline card' : 'glanceline' })
-  if (!opened.isPlaced) return { text: 'glanceline: widen the terminal to see the pane.' }
-  return { text: mode === 'card' ? 'share card opened; [ Copy as text ] copies it.' : 'details opened.' }
+  void refreshPulse($)
+  const opened = await $.ui.open({ id: PANE, title: mode === 'card' ? 'g-line card' : 'g-line' })
+  if (!opened.isPlaced) $.ui.toast('g-line: widen the terminal to see the pane.', { timeoutMs: 5000 })
+  // Nothing goes back into the conversation: a command's text is read by Claude.
+  return {}
+}
+
+// ------------------------------------------------------------------ pulse
+
+/** Fetches g-line's static headline feed when it is on and the copy is old. Never on the drawing path. */
+async function refreshPulse($: EngineInterface, force = false): Promise<void> {
+  if (!config.pulse) return
+  try {
+    const at = await nowMs($)
+    const held = await read($, pulseAtom)
+    if (!force && held && at - held.fetchedAt < PULSE_TTL_MS) return
+    const stored = (await $.store.get('pulse')) as { fetchedAt?: number; raw?: string } | undefined
+    if (!force && stored?.raw && stored.fetchedAt && at - stored.fetchedAt < PULSE_TTL_MS) {
+      const feed = parseFeed(stored.raw, stored.fetchedAt)
+      if (feed) await update($, pulseAtom, () => feed)
+      return
+    }
+    // One GET of a static file, nothing sent; given up after five seconds.
+    const response = await Promise.race([$.http.fetch(PULSE_URL), $.clock.sleep(5000).then(() => undefined)])
+    if (!response || !response.ok || response.text.length > 65_536) return
+    const feed = parseFeed(response.text, at)
+    if (!feed) return
+    await $.store.set('pulse', { fetchedAt: at, raw: response.text })
+    await update($, pulseAtom, () => feed)
+  } catch {
+    // offline or refused: the spinner and pane go on without headlines
+  }
+}
+
+/** A setting changed from the pane or a command: applied now, kept for later sessions. */
+async function setSetting($: EngineInterface, key: 'lines' | 'pulse' | 'notify' | 'receipt', value: unknown): Promise<void> {
+  config = merge(config, { [key]: value })
+  await saveSetting($, key, value)
+  if (key === 'pulse' && value === true) await refreshPulse($, true)
+  await update($, tick, n => n + 1)
+}
+
+// ---------------------------------------------------------------- command
+
+/** `/g-line [card|pulse|off|on]`, and the 0.4 name for one release. Nothing goes back into the conversation. */
+async function runCommand($: EngineInterface, e: { command: string; args: string }): Promise<Record<string, never>> {
+  const arg = e.args.trim().toLowerCase()
+  if (e.command === OLD_COMMAND) $.ui.toast('glanceline is now g-line: use /g-line. /glanceline works until the next release.', { timeoutMs: 8000 })
+  if (arg === 'off' || arg === 'on') {
+    await update($, hidden, () => arg === 'off')
+    $.ui.toast(arg === 'off' ? 'g-line hidden, and quiet until /g-line on.' : 'g-line shown.', { timeoutMs: 5000 })
+    return {}
+  }
+  if (arg === 'pulse' || arg === 'pulse on' || arg === 'pulse off') {
+    const turnOn = arg === 'pulse' ? !config.pulse : arg === 'pulse on'
+    await setSetting($, 'pulse', turnOn)
+    $.ui.toast(turnOn ? 'Pulse on: headlines from g-line\'s feed on long turns and in /g-line. One static file, fetched every 45 minutes.' : 'Pulse off: no fetches.', { timeoutMs: 8000 })
+    return {}
+  }
+  return openPane($, arg === 'card' ? 'card' : 'details')
 }
 
 // -------------------------------------------------------------- register
@@ -757,15 +872,26 @@ export const register: Register = (on, options) => {
   on('session.start', async ($, e, next) => {
     config = await loadConfig($, options as Record<string, unknown>)
     ttl = await explicitTtl($, config)
-    try {
-      await $.command.register({
-        name: 'glanceline',
-        description: 'Open the glanceline pane; `card` for a share card, `off` hides the line, `on` shows it',
-        argumentHint: '[card|off|on]',
-      })
-    } catch {
-      // the line and toasts work without the command
+    if (config.claudeReads) {
+      try {
+        // Deferred where tool search is available: Claude sees the name and
+        // loads the description when it looks for such a tool.
+        await $.tool.register({ name: STATUS_TOOL, description: STATUS_DESCRIPTION, inputSchema: STATUS_SCHEMA, isDeferred: true })
+      } catch {
+        // the line and the rest work without the tool
+      }
     }
+    for (const [name, description] of [
+      [COMMAND, 'Open the g-line pane (settings, Pulse, details); `card` for a share card, `pulse` toggles headlines, `off` hides it, `on` shows it'],
+      [OLD_COMMAND, 'Renamed to /g-line; this name works until the next release'],
+    ] as const) {
+      try {
+        await $.command.register({ name, description, argumentHint: '[card|pulse|off|on]' })
+      } catch {
+        // the line and toasts work without the command
+      }
+    }
+    void refreshPulse($)
     await resync($)
     $.clock.every(TICK_MS, () => void heartbeat($))
     return next(e)
@@ -835,12 +961,27 @@ export const register: Register = (on, options) => {
       })
       const cold = coldThisTurn
       await update($, turnNow, live => (live ? { ...live, cold: live.cold || cold,
-        cacheWrite: Math.max(live.cacheWrite ?? 0, u.cache_creation_input_tokens) } : live))
+        cacheWrite: Math.max(live.cacheWrite ?? 0, u.cache_creation_input_tokens),
+        contextGrowth: live.contextAt !== undefined ? prefix - live.contextAt : live.contextGrowth } : live))
       await update($, totals, t => ({ ...t, cacheRead: (t.cacheRead ?? 0) + u.cache_read_input_tokens,
         inputTokens: (t.inputTokens ?? 0) + u.input_tokens + u.cache_read_input_tokens + u.cache_creation_input_tokens }))
     }
     return result
   })
+
+  // Claude's own read of the budget: the `glance` tool's answer.
+  on('tool.call', { tool: /^mcp__g-line__status$/ }, async ($, e) => {
+    const seconds = await nowSeconds($)
+    const s = await read($, snap)
+    const c = await read($, contextAtom)
+    const text = statusJson({
+      p: payload(s, seconds, ttl), now: seconds, observedAt: s.cache?.lastAt,
+      compactAt: c?.threshold, compactOn: c ? c.threshold !== undefined : undefined,
+      section: typeof (e as unknown as Record<string, unknown>).section === 'string' ? String((e as unknown as Record<string, unknown>).section) : undefined,
+      disabled: await read($, hidden),
+    })
+    return { result: text, text }
+  }).catch(() => ({ result: UNREADABLE, text: UNREADABLE }))
 
   // Observes every tool call (never gates or rewrites one): counts, failures,
   // and a toast when the same call fails several times in a row.
@@ -856,8 +997,10 @@ export const register: Register = (on, options) => {
         byTool: { ...t.byTool, [tool]: { calls: was.calls + 1, failures: was.failures + (failed ? 1 : 0) } } }
     })
     if (failed && e.agentId === undefined) {
+      const what = target(tool, e as unknown as Record<string, unknown>)
       await update($, turnNow, live => (live ? { ...live, failures: (live.failures ?? 0) + 1,
-        failedTool: live.failedTool === undefined || live.failedTool === tool ? tool : null } : live))
+        failedTool: live.failedTool === undefined || live.failedTool === tool ? tool : null,
+        failedTarget: live.failedTarget === undefined || live.failedTarget === what ? what : null } : live))
     }
     if (config.toolStreak > 0) {
       const what = target(tool, e as unknown as Record<string, unknown>)
@@ -929,14 +1072,8 @@ export const register: Register = (on, options) => {
     return result
   }).catch(($, e, next) => next(e))
 
-  on('command.run', { command: 'glanceline' }, async ($, e) => {
-    const arg = e.args.trim().toLowerCase()
-    if (arg === 'off' || arg === 'on') {
-      await update($, hidden, () => arg === 'off')
-      return { text: arg === 'off' ? 'hidden, and quiet until `/glanceline on`.' : 'shown.' }
-    }
-    return openPane($, arg === 'card' ? 'card' : 'details')
-  })
+  on('command.run', { command: COMMAND }, async ($, e) => runCommand($, e))
+  on('command.run', { command: OLD_COMMAND }, async ($, e) => runCommand($, e))
 
   // The line under the prompt: Claude Code keeps its own hint line (its mode
   // label and pills stay live) and draws this text, dim, at its end.
@@ -947,21 +1084,51 @@ export const register: Register = (on, options) => {
     const seconds = await nowSeconds($)
     const s = await read($, snap)
     const extras = await extrasNow($)
+    if (config.lines === 0) return next(e)
+    if (config.lines === 2) {
+      // Line 1 rides at the end of the hint line, drawn dim by the engine.
+      // Line 2 is the mod's own row directly under it, in colour. The mode
+      // label the engine draws before the hint is the engine's: a mod can
+      // shorten the hint's words but not that label.
+      const columns = e.viewport?.columns
+      const extra = [extras.agents, extras.compact, config.budget ? extras.today : undefined, config.git ? gitSegmentOf(s.git) : undefined, accountSegment(s.account)]
+        .filter((one): one is Segment => one !== undefined)
+      // The hint stays whole here: a rewritten hint has the engine draw its
+      // mode label in a column of its own, which would squeeze line 2 into
+      // the hint's column.
+      const d = deck(payload(s, seconds, ttl), optionsAt(seconds),
+        { now: tailRoom(columns, e.props.hint), next: nextRoom(columns) }, extra)
+      const engine = await next({ ...e, props: withText(e.props, joined(d.now), false) })
+      if (!d.next.length) return engine
+      const { Box, Text } = $.ui.resolve(e)
+      return (
+        <Box flexDirection="column">
+          {engine}
+          <Box flexDirection="row">
+            {d.next.map((part, index) => [
+              index ? <Text key={`s${index}`} dimColor>{' · '}</Text> : null,
+              <Text key={`p${index}`} wrap="truncate-end" dimColor={!part.tone || part.tone === 'dim'}
+                bold={part.tone === 'bad'} color={part.tone ? COLORS[part.tone] : undefined}>{part.text}</Text>,
+            ])}
+          </Box>
+        </Box>
+      )
+    }
     const labels = footerLabels(extras)
-    const base = tailRoom(e.viewport?.columns, e.props.hint)
+    const shown = e.props.tail ? e.props.hint : shownHint(e.props.hint, config.shortHints)
+    const base = tailRoom(e.viewport?.columns, e.props.hint, shown)
     const room = base === undefined ? undefined : base - modesWidth(labels)
     // With a budget set, today's spend joins the line once it nears the budget.
     const trailing = config.budget && extras.today && extras.today.tone !== 'dim' && !layoutHas('today') ? [extras.today] : []
     const text = joined(inline(payload(s, seconds, ttl), optionsAt(seconds), s.account, room, extras, trailing))
     if (!text) return next(e)
-    const tail = e.props.tail ? `${e.props.tail} · ${text}` : text
-    return next({ ...e, props: { ...e.props, tail } })
+    return next({ ...e, props: withText(e.props, text, config.shortHints) })
   })
 
   // The footer's mode labels: agents at work and when the context compacts,
   // each only while it has something to say.
   on('ui.render', { component: 'SessionMode' }, async ($, e, next) => {
-    if (await read($, hidden)) return next(e)
+    if (config.lines === 0 || (await read($, hidden))) return next(e)
     const labels = footerLabels(await extrasNow($))
     if (!labels.length) return next(e)
     return next({ ...e, props: { ...e.props, modes: [...e.props.modes, ...labels] } })
@@ -972,13 +1139,23 @@ export const register: Register = (on, options) => {
     if (!config.spinner || (await read($, hidden))) return next(e)
     const live = await read($, turnNow)
     if (!live) return next(e)
+    await read($, tick)
     const s = await read($, snap)
-    const cost = live.costAt !== undefined && s.costUsd !== undefined && !live.overlap ? s.costUsd - live.costAt : undefined
-    const parts = spinnerParts(live, cost)
-    if (!parts.length) return next(e)
+    const fiveHour = s.rateLimits?.find(l => l.kind === 'five_hour')?.percentUsed
+    const parts = spinnerParts(live, fiveHour)
     const shown = e.props.message ?? e.props.word
     const lead = shown.endsWith('…') || shown.endsWith('...') ? '' : e.props.suffix
-    return next({ ...e, props: { ...e.props, suffix: `${lead} · ${parts.join(' · ')}` } })
+    let suffix = parts.length ? `${lead} · ${parts.join(' · ')}` : ''
+    if (config.pulse) {
+      // The engine follows the suffix with its own `(38s · ↓ 1.2k tokens)`:
+      // the headline takes what is left after keeping room for that.
+      const columns = e.viewport?.columns ?? 0
+      const room = columns - 4 - width(shown) - width(suffix || lead) - 3 - 34
+      const ticker = tickerText(await read($, pulseAtom), (await nowMs($)) - live.startAt, room)
+      if (ticker) suffix = `${suffix || lead} │ ${ticker}`
+    }
+    if (!suffix) return next(e)
+    return next({ ...e, props: { ...e.props, suffix } })
   })
 
   // The line that closes each turn: Claude Code's own words, then the turn's
@@ -1051,8 +1228,34 @@ export const register: Register = (on, options) => {
     }
     const rows = await detailRows($, seconds, e.props.bodyColumns)
     const account = (await read($, snap)).account
+    const feed = config.pulse ? await read($, pulseAtom) : null
+    const { Link } = $.ui.resolve(e)
+    const layoutName = config.lines === 2 ? 'two lines' : config.lines === 1 ? 'one line' : 'receipts only'
+    const nextLines = config.lines === 2 ? 1 : config.lines === 1 ? 0 : 2
+    const notifyOn = config.notify.cache || config.notify.reset
+    const receiptName = config.receipt === 'adaptive' ? 'adaptive' : config.receipt.length ? 'fixed' : 'off'
+    const nextReceipt = receiptName === 'adaptive' ? 'short' : receiptName === 'fixed' ? 'off' : 'adaptive'
     return (
       <Box flexDirection="column">
+        <Text bold>Settings</Text>
+        <Box flexDirection="row" gap={1}>
+          <Button key="set-lines" label={`Layout: ${layoutName}`} hotkey="l" onPress={() => void setSetting($, 'lines', nextLines)} />
+          <Button key="set-notify" label={`Notifications: ${notifyOn ? 'on' : 'off'}`} hotkey="n" onPress={() => void setSetting($, 'notify', !notifyOn)} />
+          <Button key="set-pulse" label={`Pulse: ${config.pulse ? 'on' : 'off'}`} hotkey="p" onPress={() => void setSetting($, 'pulse', !config.pulse)} />
+          <Button key="set-receipt" label={`Receipt: ${receiptName}`} hotkey="r" onPress={() => void setSetting($, 'receipt', nextReceipt)} />
+        </Box>
+        {feed && feed.items.length ? <Text key="h-pulse" bold>Pulse: AI dev headlines from g-line's feed</Text> : null}
+        {feed ? feed.items.slice(0, 5).map((item, index) => (
+          <Box key={`pulse-${index}`} flexDirection="row" gap={1}>
+            <Button key={`pulse-copy-${index}`} label="copy" hotkey={String(index + 1)} plain
+              onPress={async () => {
+                const copied = await $.ui.copy({ text: item.url, surface: e.surface })
+                $.ui.toast(copied.isCopied ? 'Link copied.' : item.url, { timeoutMs: 4000 })
+              }} />
+            <Link href={item.url} label={item.title} />
+            <Text dimColor>{item.source}</Text>
+          </Box>
+        )) : null}
         {rows.map(row => (
           <Text key={row.key} bold={row.bold} color={row.tone ? COLORS[row.tone] : undefined} dimColor={row.tone === 'dim'}>
             {row.text}

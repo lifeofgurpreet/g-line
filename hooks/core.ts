@@ -1,10 +1,10 @@
 // glanceline core: turns Claude Code's own session figures into short,
 // width-aware segments, and spots what is about to go wrong.
 //
-// Pure functions only (no `$`, no clock, no I/O), so the mod, its tests and
-// the statusLine fallback (glanceline.py, a line-for-line port) agree. The
-// input is shaped like Claude Code's statusLine JSON; the mod builds the same
-// shape from `$.session.usage()` and the turns it watches.
+// Pure functions only (no `$`, no clock, no I/O), so the tests call them
+// directly against the golden file. The input is shaped like Claude Code's
+// session figures; the mod builds it from `$.session.usage()` and the turns
+// it watches.
 
 export type Tone = 'ok' | 'warn' | 'bad' | 'dim' | 'accent'
 
@@ -138,6 +138,16 @@ function pressure(percent: number): Tone | undefined {
 
 // ------------------------------------------------------------------ pace
 
+/**
+ * A projection rounded to the precision it deserves: to the hour when it is
+ * more than six hours off, to the quarter hour beyond ninety minutes.
+ */
+export function roundEta(eta: number, now: number): number {
+  const ahead = eta - now
+  const step = ahead > 6 * 3600 ? 3600 : ahead > 90 * 60 ? 900 : 60
+  return Math.round(eta / step) * step
+}
+
 export type Pace = { kind: 'full' } | { kind: 'hot'; eta: number } | { kind: 'ok' }
 
 const WINDOW_SECONDS: Record<string, number> = { five_hour: 5 * 3600, seven_day: 7 * 86400 }
@@ -168,7 +178,9 @@ function modelSegment(p: Payload): Segment | undefined {
   const level = str(p.effort?.level, 12)
   const fast = p.fast_mode === true
   const detail = [level ? `${level} effort` : '', fast ? 'fast' : ''].filter(Boolean).join(', ')
-  const forms = detail ? [`${name} (${detail})`, level ? `${name} ${level}` : name, name] : [name]
+  const family = name.split(' ')[0] ?? name
+  // The effort stays in every form: it is what you change most often.
+  const forms = detail ? [`${name} (${detail})`, level ? `${name} ${level}` : name, level ? `${family} ${level}` : family] : [name]
   return { key: 'model', priority: 82, forms, tone: 'accent' }
 }
 
@@ -202,7 +214,7 @@ function windowSegment(p: Payload, kind: 'five_hour' | 'seven_day', o: Options, 
   if (state?.kind === 'hot') {
     // `!` and `~` carry the meaning where the line is drawn dim: a warning, and
     // a projection rather than an appointment.
-    const at = clock(state.eta, o.now, o.utcOffsetMinutes)
+    const at = clock(roundEta(state.eta, o.now), o.now, o.utcOffsetMinutes)
     const reset = resets !== undefined ? ` (resets ${clock(resets, o.now, o.utcOffsetMinutes)})` : ''
     const soon = state.eta - o.now < 30 * 60
     return { key: kind, priority, tone: soon ? 'bad' : 'warn',
@@ -227,19 +239,15 @@ function spendSegment(p: Payload): Segment | undefined {
   return { key: 'spend', priority: 75, forms, tone: pressure(used) }
 }
 
-/** A warm cache stays off the line until this many seconds are left, except in the full layout. */
-export const CACHE_QUIET = 15 * 60
-
-function cacheSegment(p: Payload, now: number, full: boolean): Segment | undefined {
+function cacheSegment(p: Payload, now: number): Segment | undefined {
   const cache = p.prompt_cache
   if (!cache || cache.caching_observed !== true) return undefined
   const expires = num(cache.expires_at)
   if (cache.warm === true && expires !== undefined && expires > now) {
     const left = expires - now
-    if (!full && left > CACHE_QUIET) return undefined
     const soon = left <= (cache.ttl === '1h' ? 300 : 60)
     return { key: 'cache', priority: 80, tone: soon ? 'warn' : 'ok',
-      forms: [`cache warm (${duration(left)} left)`, `cache ${duration(left, true)}`] }
+      forms: left < 60 ? ['cache warm (<1m left)', 'cache <1m'] : [`cache warm (~${duration(left)} left)`, `cache ~${duration(left, true)}`] }
   }
   const recache = num(cache.recache_tokens_if_cold)
   const forms = recache && recache > 0 ? [`cache cold (next turn rebuilds ${tokens(recache)})`, 'cache cold'] : ['cache cold']
@@ -266,9 +274,14 @@ function linesSegment(p: Payload): Segment | undefined {
 }
 
 function gitSegment(p: Payload): Segment | undefined {
-  const branch = str(p.git?.branch, 40)
+  return gitSegmentOf(p.git)
+}
+
+/** The branch, `*` when tracked files have changes. */
+export function gitSegmentOf(git: Payload['git'] | undefined): Segment | undefined {
+  const branch = str(git?.branch, 40)
   if (!branch) return undefined
-  const mark = p.git?.dirty ? '*' : ''
+  const mark = git?.dirty ? '*' : ''
   return { key: 'git', priority: 60, forms: [`${branch}${mark}`, `${branch.slice(0, 16)}${mark}`] }
 }
 
@@ -300,7 +313,7 @@ export function segments(p: Payload, o: Options): Segment[][] {
     five_hour: () => windowSegment(p, 'five_hour', o, full),
     seven_day: () => windowSegment(p, 'seven_day', o, full),
     spend: () => spendSegment(p),
-    cache: () => cacheSegment(p, o.now, full),
+    cache: () => cacheSegment(p, o.now),
     cost: () => costSegment(p),
     time: () => timeSegment(p),
     lines: () => linesSegment(p),
@@ -355,7 +368,7 @@ export function fit(items: Segment[], room?: number): Placed[] {
   }
   while (width(forms().join(SEP)) > room) {
     if (calmTier < deepest - 1) calmTier += 1
-    else if (loudTier < deepest - 2) loudTier += 1
+    else if (loudTier < Math.max(1, deepest - 2)) loudTier += 1
     else if (live.length > 1 && live.some(item => !loud(item))) dropLowest()
     else if (loudTier < deepest - 1) loudTier += 1
     else if (live.length > 1) dropLowest()
@@ -392,9 +405,9 @@ export function alerts(p: Payload, o: Options): Alert[] {
     const left = expires - o.now
     if (left > 0 && left <= (cache.ttl === '1h' ? 300 : 60)) {
       const recache = num(cache.recache_tokens_if_cold)
-      const what = recache && recache > 0 ? `${tokens(recache)} tokens` : 'the conversation'
+      const stake = recache && recache > 0 ? ` (${tokens(recache)} of context at risk)` : ''
       found.push({ id: `cache:${Math.floor(expires)}`, tone: 'warn',
-        text: `Prompt cache goes cold in ${duration(left)}. Reply before then and ${what} stay cached; after, the next turn rebuilds them.` })
+        text: `Claude cache goes cold in ${duration(left)}${stake}. Reply before then to keep it cached; after, the next turn rebuilds it.` })
     }
   }
   for (const [kind, name] of [['five_hour', '5-hour'], ['seven_day', 'weekly']] as const) {
@@ -403,7 +416,7 @@ export function alerts(p: Payload, o: Options): Alert[] {
     const resets = num(window?.resets_at)
     if (state?.kind === 'hot' && resets !== undefined) {
       found.push({ id: `${kind}:${Math.floor(resets)}`, tone: 'warn',
-        text: `At this pace you'll hit your ${name} limit around ${clock(state.eta, o.now, o.utcOffsetMinutes)}. It resets ${clock(resets, o.now, o.utcOffsetMinutes)}.` })
+        text: `At this pace you'll hit your ${name} limit around ${clock(roundEta(state.eta, o.now), o.now, o.utcOffsetMinutes)}. It resets ${clock(resets, o.now, o.utcOffsetMinutes)}.` })
     }
   }
   return found

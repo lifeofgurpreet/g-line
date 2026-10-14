@@ -1,274 +1,254 @@
-# glanceline
+# g-line
 
-**A status line that adds zero lines.**
+**Live status. Receipts on the turns.**
 
-Every turn gets a receipt, and the unusual turn says what was unusual. The prompt stays
-where it is.
+g-line is a Claude Code mod that puts context jumps, cache rebuilds and tool failures on the
+turns where they happen, not just in a status bar. Model and effort, the prompt cache and your
+usage windows stay under the prompt.
 
 In Claude Code 2.1.293 or later, type at the prompt:
 
 ```text
-/plugin install glanceline --marketplace lifeofgurpreet/glanceline
+/plugin install g-line --marketplace lifeofgurpreet/g-line
 ```
 
-![A real Claude Code session with glanceline: an ordinary turn closes with "API $0.13 · cache read 82%", the next one reads three files and closes with "+86k context · API $0.75", the limits ride on the hint line under the prompt, and /glanceline off shows the same screen without them](docs/demo.gif)
+![A real Claude Code session with g-line: an ordinary turn closes with "API $0.22 · cache read 49%"; while it runs, the spinner shows its burn and a Pulse headline; over five idle minutes the cache countdown on the second line runs down, a heads-up warns before it goes cold, and it goes cold; the next turn compares two API schemas and closes with "cache cold · rebuilt 42k · API $0.31"](docs/demo.gif)
 
-glanceline is a native Claude Code **mod**. It doesn't add a status bar. It writes onto the
-lines Claude Code already draws:
+## What it does
 
-- **A receipt on every turn.** The line that closes each turn (`Worked for 20s · done
-  11:01 AM`) says what the turn cost at API prices and how much of its input the prompt
-  cache served. When something was out of the ordinary, that comes first instead, in colour:
-  `+86k context`, `cache write 84k`, `3 failed Bash calls`, `compacted 182k → 31k`, or a cost
-  several times your recent turns (`API $1.42 · 4x recent`). Scroll back and the turn that
-  ate your context is marked.
-- **Live limits on the hint line.** Context, your 5-hour and weekly windows, and the prompt
-  cache sit at the end of the hint line under the prompt. A window on pace to run out says
-  when: `wk 79% ! out ~Thu 17:35`. What warns keeps its words longest when the terminal is
-  narrow.
-- **Local observation.** Every figure is one Claude Code hands its mods. glanceline doesn't
-  parse your transcript, make network calls or write into the system prompt, and nothing
-  leaves your machine.
+- **The unusual turn identifies itself.** The line that closes each turn (`Worked for 20s ·
+  done 11:01 AM`) gets a receipt. An ordinary turn says what it cost at API prices and how
+  much of its input the prompt cache served: `API $0.22 · cache read 49%`. An unusual one
+  leads with up to two of these, in colour: `+86k context`, `cache cold · rebuilt 42k`,
+  `cache write 84k`, `3 failed Bash calls` or `compacted 182k → 31k`. A cost several times
+  your recent turns says so: `API $1.42 · 4x recent`. Scroll back to see which turn changed
+  things.
+- **The warning stays with the work.** While a turn runs, the spinner shows its burn
+  (`3 tools · +4.1k ctx · 5h 74%`). When calls keep failing, it names the tool and the file:
+  `⚠ 3× Edit failures on core.ts`. The receipt keeps that record after the turn ends.
+- **What matters stays visible.** Your gauges ride at the end of Claude Code's own hint line
+  (`ctx 13% · 5h 1% · wk 79%!`). One coloured line under it has the model and its effort, the
+  cache countdown and what happens next: `Opus 5.5 high · cache ~59m · wk out ~Thu 19:00,
+  resets Fri 16:00`. Nothing goes above the prompt.
+- **A heads-up before the cache goes cold.** A native notification five minutes before a
+  one-hour prompt cache expires, with what's at stake: `Claude cache goes cold in 5m (148k of
+  context at risk)`. Another tells you when a usage window resets after you came close to
+  its limit.
 
-![The payoff frame: the closing line reads "Worked for 20s · done 11:01 AM · +86k context · API $0.75", and the hint line under the prompt reads "ctx 13% · wk 79% ! out ~Thu 17:35"](docs/hero.png)
+![A schema comparison closes with "Baked for 43s · done 1:22 PM · cache cold · rebuilt 42k · API $0.31"; under the prompt, the hint line ends with "ctx 4% · 5h 1% · wk 80%!" and the coloured line reads "Opus 5.5 high · cache warm ~4m · 5h resets in 2h 47m · wk out ~Thu 19:00, resets Fri 16:00"](docs/hero.png)
 
-Answer `y` to add the marketplace and pick a scope (user is the usual choice). The line
-appears right away, with no restart. To remove it, run `/plugin uninstall glanceline`. Older
-Claude Code? Use the [status line fallback](#works-everywhere-the-status-line-fallback).
+Answer `y` to add the marketplace and pick a scope (user is the usual choice). The mod starts
+at once, with no restart. To remove it, run `/plugin uninstall g-line`.
+
+## Why a mod
+
+A `statusLine` command is a separate program. Claude Code runs it and prints what it prints
+in a status area under the prompt. A mod runs inside Claude Code and can draw on Claude
+Code's own lines. That is what makes g-line possible:
+
+- the receipt on each turn's own closing line, kept beside that turn in the terminal;
+- the burn and failures on the working spinner, while the turn runs;
+- the gauges at the end of the existing hint line, so the footer grows by one row, not two
+  or three;
+- each request's cache reads and writes, every tool call and its result, subagents, and
+  compactions, read from the engine as they happen rather than from the transcript file;
+- a `/g-line` command that runs without a Claude turn, a pane with buttons, and native
+  notifications through your own notification channel.
+
+## How it compares
+
+Read from each project's README on 2026-10-14. "Not documented" means not in its docs, not
+impossible.
+
+| | g-line | claude-hud | ccstatusline | claude-powerline | ccusage |
+| --- | --- | --- | --- | --- | --- |
+| What it is | Claude Code mod | Plugin that sets up a `statusLine` command | `statusLine` command | `statusLine` command | Usage-report CLI with a statusline command |
+| Where it draws | The hint line, one row under it, the spinner, each turn's closing line | Its status lines (two by default) | Its status lines, configurable | Its status lines, powerline style | Its status line, and separate reports |
+| Receipt on each turn's own line | Yes | Not documented | Not documented | Not documented | Not documented |
+| Model and effort | Yes | Yes (effort optional) | Yes (widget) | Yes | When Claude Code supplies it |
+| Prompt-cache countdown | Yes, an estimate | Optional | Yes (widget) | Optional | Not documented |
+| Limits with pace | Projected run-out time | Usage windows, pace colours | Usage and reset widgets | Usage with an even-spend pace marker | Block cost, time and burn rate |
+| History | Receipts in scrollback; today and this week in the pane | Optional cost ledger | Session and compaction widgets | Today and month budgets | Daily, monthly and session reports |
+| Where activity comes from | Engine events | Status data; optional lines read the transcript | Status data, transcript and usage API, by widget | Status data and local transcripts, by feature | Local usage records |
+| Pick it to | See which turn changed things, beside the work | Get a configurable session overview | Get extensive widget customisation | Get a styled layout with budgets | Get retrospective usage analysis |
+
+Already happy with one of those? Set `lines` to `receipts`: g-line then adds only the
+receipts, spinner and heads-ups, and leaves your status line alone.
 
 ## What you see
 
-### The receipt on each turn's closing line
-
-An ordinary turn gets two quiet facts: `· API $0.13 · cache read 82%`. A turn that did
-something unusual leads with it, then its cost:
+### The receipt
 
 | Receipt | When |
 | --- | --- |
-| `+86k context` | The turn grew the context by at least 8k tokens, or 2% of the window when that is more |
-| `cache write 84k` | One request wrote at least 20k tokens to the prompt cache, well beyond what the context grew, after the session already had a cache |
+| `API $0.22 · cache read 49%` | An ordinary turn: its cost at API prices and the share of its input the cache served |
+| `+86k context` | The turn grew the context by at least 8k tokens, or by 2% of the window when that is more |
+| `cache cold · rebuilt 42k` | The turn's first request came after the cache's lifetime and rewrote it |
+| `cache write 84k` | A request wrote at least 20k tokens to the cache, well beyond what the context grew |
 | `3 failed Bash calls` | Two or more tool calls failed in the turn (named when they were all one tool) |
 | `compacted 182k → 31k` | The context was compacted during the turn |
-| `API $1.42 · 4x recent` | The turn cost at least three times the median of your recent turns, and at least 20 cents more |
+| `API $1.42 · 4x recent` | At least three times the median of your recent turns, and at least 20 cents more |
 
-These are observations, not diagnoses: glanceline says a large cache write happened, not why.
-When a background agent ran alongside the turn, the session's cost growth isn't the turn's
-alone, so the dollar figure is left out. A narrow terminal drops the supporting facts first
-and keeps the lead. `receipt` in the config picks a fixed field list instead.
+These are observations, not diagnoses. g-line says a cold cache was rebuilt; it doesn't say
+whose fault that was. When a background agent ran alongside the turn, the session's cost
+growth isn't the turn's alone, so the dollar figure is left out. A narrow terminal drops the
+supporting facts first.
 
-### The hint line under the prompt
+### The two lines under the prompt
+
+Line 1, at the end of Claude Code's hint line, drawn dim by Claude Code:
 
 | Segment | Example | What it means |
 | --- | --- | --- |
-| model | `Opus 5.5 high` | The model, its reasoning effort, and `fast` when fast mode is on |
-| context | `ctx 41% (118k left)` | How full the context window is, from the last response |
-| 5h | `5h 23% (2h14m)` | Your 5-hour usage window and when it resets |
-| 5h, running hot | `5h 72% ! out ~10:03` | At your average rate since the window opened, you reach 100% around 10:03, before the reset |
-| week | `wk 41% (3d5h)` | Your weekly window, with the same pace check |
-| spend | `spend $416 of $500 monthly` | Shown behind a Claude gateway that sets a spend limit |
-| cache | `cache 4m` / `cache cold` | Shown once the prompt cache has under 15 minutes left, or has gone cold and the next turn rebuilds it |
+| context | `ctx 13%` | How full the context window is, from the last response |
+| 5h, week | `5h 1%`, `wk 79%!` | Your usage windows. `!` means on pace to run out before the reset |
+| spend | `spend 83%` | Behind a Claude gateway that sets a spend limit |
 
-The line narrows as the terminal does. Calm segments go to their short forms first, then
-drop, the model name before the context; a segment that warns keeps its projection the
-longest. The `!` and `~` carry the meaning without colour, since Claude Code draws this
-line dim. Your branch, cost and session time are a `segments` or `preset` away.
+Line 2, g-line's own row, in colour:
 
-![The hint line at 140 columns](docs/line-140.png)
-![The hint line at 100 columns](docs/line-100.png)
-![The hint line at 76 columns](docs/line-76.png)
+| Segment | Example | What it means |
+| --- | --- | --- |
+| model | `Opus 5.5 high` | The model and the effort of the last request (`fast` when fast mode is on) |
+| cache | `cache ~59m`, `cache cold` | How long the prompt cache stays warm, green, then amber in its last minutes. `~` because it's an estimate from when the last request ran and the cache's lifetime |
+| timing | `wk out ~Thu 19:00, resets Fri 16:00` | When a window on pace to run out gets there (rounded: it's a projection), else when it resets |
+| agents, compaction | `agents 2 running`, `compacts in ~3 turns` | While subagents work; when a compaction is near |
 
-### The footer and the spinner
+When the terminal narrows, line 2 shortens first (`Opus 5.5` to `Opus`, the effort kept), and
+what line 1 can't fit moves down rather than vanishing. A healthy window's reset time goes
+first; the warning keeps its projection the longest.
 
-- **Footer mode labels** (right of the hint line): `agents 2 running` while subagents or
-  teammates are at work, `compacts in ~3 turns` once a compaction is near. Each label is
-  there only while it has something to say.
-- **Spinner**: what the running turn has done so far, `· 6 tools`, and `· 2 failed Bash`
-  once a tool keeps failing.
+![Line 1 and line 2 at 100 columns](docs/line-100.png)
+![At 80 columns](docs/line-80.png)
 
-![The spinner while a turn runs: Philosophizing… · 3 tools](docs/spinner.png)
+Prefer one line? Set `lines` to `1`: everything rides on the hint line, and Claude Code's
+standing hint `(shift+tab to cycle)` shortens to `⇧⇥` to make room. Claude Code's own
+permission-mode label (`⏵⏵ bypass permissions on`) is drawn beside the hint where no mod can
+change it, so g-line leaves it as it is.
 
-### Heads-ups
+### The spinner
 
-A native notification five minutes before a one-hour prompt cache goes cold, and when your
-5-hour or weekly window resets after you'd come close to its limit. Toasts when a limit is
-on pace to run out, a background agent fails, the same tool call fails three times in a row,
-or the context is about to compact. `/glanceline off` hides everything glanceline draws and
-keeps it quiet too: no toasts, notifications or suggestions until `/glanceline on`.
+`Sautéing… · 3 tools · +4.1k ctx · 5h 74%` while a turn runs, and
+`⚠ 3× Edit failures on core.ts` first once calls keep failing.
 
-### The details pane and the share card
+![The spinner mid-turn: Sprouting… · 2 tools · +1.2k ctx · 5h 1%](docs/spinner.png)
 
-`/glanceline` opens a pane, docked beside the conversation on a wide terminal, with every
-figure spelled out: bars, reset times, any warning that's live, the agents, the last turns'
-receipts, what fills the context (counted locally, like `/context`), the tools used and
-failed, and today's and this week's totals across sessions. `/glanceline card` shows a share
-card of the session with a button that copies it as text. It leaves out your repository,
-branch, paths and account. The pane opens only when you ask for it.
+### Pulse (off unless you turn it on)
 
-![The /glanceline details pane, docked beside the conversation](docs/details-pane.png)
+`/g-line pulse` turns on **Pulse**: on a turn that runs longer than 15 seconds, the spinner
+shows one AI-dev headline at a time after its burn (`│ Claude Code 2.1.296 released (Claude
+Code releases)`), and the `/g-line` pane lists the day's top five, with links. Headlines come
+from g-line's own static feed: Claude Code releases, Anthropic's news pages, Hacker News
+stories about Claude, Simon Willison's AI posts, and a few items the maintainer picks. Each is
+labelled with where it came from.
 
-![The /glanceline card share card, with a Copy as text button](docs/card.png)
+When Pulse is on, g-line fetches one file,
+`raw.githubusercontent.com/lifeofgurpreet/g-line/pulse/pulse.json`, at most every 45 minutes.
+It sends nothing about you, it never fetches while drawing, and it gives up after five
+seconds. Headline text is stripped of escape and control characters before it reaches your
+terminal. With Pulse off (the default), g-line makes no network requests at all.
+
+![Pulse on a long turn: Scurrying… · 1 tool · 5h 1% │ Claude discovers a… (Anthropic)](docs/pulse.png)
+
+### The pane, settings and share card
+
+`/g-line` opens a pane with every figure spelled out: limits with bars and reset times,
+warnings, agents, the last turns' receipts, what fills the context (counted locally, like
+`/context`), tools used and failed, and today's and this week's totals across sessions. Its
+top row changes settings without editing JSON: **Layout** (two lines, one line, receipts
+only), **Notifications**, **Pulse** and **Receipt** (adaptive, fixed, off). Choices stick
+across sessions. `/g-line card` shows a share card of the session with a copy button; it
+leaves out your repository, branch, paths and account. `/g-line off` hides everything g-line
+draws and keeps it quiet until `/g-line on`.
+
+![The /g-line pane](docs/details-pane.png)
 
 ## Configure
 
-`/config` lists five settings: **layout** (`default`, `minimal` or `full`), **icons**
-(`none` or `nerd`, for Nerd Font glyphs), **heads-up toasts** (on or off), **native
-notifications** (on or off) and **turn receipt** (`adaptive`, `short`, `full` or `off`).
-
-For more control, add `~/.config/glanceline/config.json` (or put it under
+`/config` lists six settings: **Layout** (`2`, `1` or `receipts`), **One-line preset**,
+**Icons**, **Heads-up toasts**, **Native notifications** and **Turn receipt**. The pane's top
+row sets the common ones. For the rest, add `~/.config/g-line/config.json` (or put it under
 `$XDG_CONFIG_HOME`):
 
 ```json
 {
-  "segments": "model,context,five_hour,seven_day,cache,git",
-  "receipt": "adaptive",
-  "notify": { "cache": true, "reset": true, "long_turn": true, "agents": false },
-  "long_turn_seconds": 90,
+  "lines": 2,
+  "git": true,
+  "notify": { "cache": true, "reset": true, "long_turn": true },
   "today_budget": 50
 }
 ```
 
 | Key | Values | Default |
 | --- | --- | --- |
-| `preset` | `minimal` (model, context, 5h, cache), `default` (adds week and spend), `full` (adds bars, git, PR, cost, time; still one line under the prompt) | `default` |
-| `segments` | Your own layout for the hint line. Keys: `model`, `context`, `five_hour`, `seven_day`, `spend`, `cache`, `git`, `pr`, `cost`, `time`, `lines`, `vim`, and the mod-only `agents`, `compact` and `today`. Separate them with `,`. Naming `agents` or `compact` moves it from the footer to the hint line. `git` runs `git status` in your project; nothing else does | the preset's |
+| `lines` | `2`, `1`, or `receipts` (receipts, spinner and heads-ups only) | `2` |
 | `receipt` | `adaptive`, `short` (cost, cache, tools), `full`, `off`, or a list of `cost`, `cache`, `context`, `tools`, `agents`, `output` | `adaptive` |
+| `pulse` | `true` fetches the headline feed (see Pulse) | `false` |
+| `git` | `true` puts your branch on line 2; g-line then runs `git status` in your project | `false` |
+| `notify` | `true`, `false`, or per kind: `cache`, `reset`, `long_turn` (a turn longer than `long_turn_seconds` finished), `agents` (a background agent finished) | `cache` and `reset` on |
 | `toasts` | `true`, `false` | `true` |
-| `notify` | `true`, `false`, or per kind: `cache` (prompt cache about to go cold), `reset` (a usage window reset after you passed `reset_threshold`), `long_turn` (a turn longer than `long_turn_seconds` finished), `agents` (a background agent finished; a failure always raises a toast) | `cache` and `reset` on, the rest off |
-| `reset_threshold` | Percent of a window you must have reached for its reset to notify | `80` |
-| `long_turn_seconds` | How long a turn runs before its end notifies (with `long_turn` on) | `60` |
-| `today_budget` | Dollars at API prices. Today's total across sessions joins the line at 80% of it, and a toast says when you pass it | none |
-| `spinner` | `true`, `false`: progress on the spinner | `true` |
-| `footer_labels` | `true`, `false`: agents and the compaction forecast in the footer | `true` |
-| `coach` | `true` puts a suggestion in the prompt box for Tab to take: `/effort medium` or `/model` when the 5-hour window is on pace to run out (once per window, across sessions), `/compact keep ` two turns before a compaction. It never changes anything itself | `false` |
+| `spinner` | `true`, `false`: the burn on the spinner | `true` |
 | `tool_streak` | Failures in a row of the same call before the toast; `0` turns it off | `3` |
-| `export_state` | `true` writes the figures as JSON to `~/.cache/glanceline/state/<session id>.json` for tmux, sketchybar and other bars | `false` |
-| `icons` | `none`, `nerd` | `none` |
-| `cache_ttl` | `auto`, `5m`, `1h` (see the FAQ) | `auto` |
-| `account_command` | A command, as an argv list, whose first output line goes at the end of the line (`account you@example.com (via CAAM)` shows as `you@example.com`). It runs at start and every ten minutes. Off unless you set it, so screenshots don't show who you are | none |
+| `today_budget` | Dollars at API prices; today's total across sessions joins line 2 and a toast says when you pass it | none |
+| `coach` | `true` offers `/effort` or `/model` for Tab to take when the 5-hour window is on pace to run out, and `/compact keep ` before a compaction. It never changes anything itself | `false` |
+| `claude_reads` | `true` gives Claude a `status` tool to read these figures when you ask it to (see below) | `false` |
+| `reset_threshold`, `long_turn_seconds`, `cache_ttl`, `icons`, `segments`, `preset`, `short_hints`, `export_state`, `account_command` | See `hooks/register.tsx`. `account_command` runs a command you choose and shows its first line; off unless set | |
 
-A `config.json` placed next to the plugin's `plugin.json` sets defaults for everyone who
-uses that copy, which is handy for a team. Notifications go through your own
-`preferredNotifChannel`; where your terminal has no channel, the heads-up shows as a toast.
+`~/.config/glanceline/config.json` from 0.4 is still read, and `g-line/config.json` wins.
 
-## Works everywhere: the status line fallback
+### Let Claude read the figures (opt-in, experimental)
 
-The mod needs Claude Code 2.1.293 or later. On any version, `glanceline.py` runs as a
-classic `statusLine` command and prints the hint-line segments with the same wording. It's
-a single standard-library Python file and works with Python 3.8 or later on macOS and
-Linux. It is a compatibility tool: a configured status line keeps a row of its own, and the
-receipts, footer labels, notifications, pane and card need the mod.
+With `claude_reads: true`, g-line registers a tool, `status`, that returns a small JSON
+snapshot: context used and the room before auto-compact (when Claude Code reports it), the
+usage windows with projected run-out times, and the cache's estimated expiry, each with its
+scope. Unknown figures are `null`, and it gives no advice. Its description tells Claude to use
+it when you ask, and not to change model, effort or compaction on its own. Two honest notes:
+the result enters the conversation like any tool result, so it goes to your model provider
+with the rest of the conversation; and the tool is deferred only where tool search is
+available.
 
-```sh
-curl -fsSL https://raw.githubusercontent.com/lifeofgurpreet/glanceline/main/install.sh | sh
+## Privacy and what it runs
+
+- **Reads:** the figures Claude Code hands every mod (usage, turns, tool calls and their
+  results' success, subagents, compactions). It doesn't read the transcript file.
+- **Keeps:** per session per day, numbers only (cost at API prices, turns, tool calls, cold
+  rebuilds, agents) in Claude Code's plugin store, deleted after 35 days; your pane choices;
+  and, with Pulse on, the last feed.
+- **Runs:** `git status` only with `git: true` or while the pane is open; your
+  `account_command` only if you set one.
+- **Sends:** nothing, unless Pulse is on (one GET of a static file) or you enable
+  `claude_reads` (the snapshot goes into your conversation).
+- **Writes:** a one-line timestamp at `~/.cache/glanceline/live/<session id>` so an older
+  status line command can step aside, and with `export_state`, a JSON file for other bars.
+
+## Upgrading from glanceline 0.3 or 0.4
+
+glanceline is now g-line. The repository moved to `lifeofgurpreet/g-line` (the old address
+redirects), and the plugin has a new name, so Claude Code treats it as a new plugin:
+
+```text
+/plugin uninstall glanceline
+/plugin install g-line --marketplace lifeofgurpreet/g-line
 ```
 
-The installer copies the script to `~/.local/bin/glanceline` and changes one key in
-`~/.claude/settings.json`: `statusLine`. It saves a backup first and records the status
-line it replaced. To undo it, run:
-
-```sh
-glanceline uninstall     # puts your previous statusLine back, byte for byte when nothing else changed
-```
-
-- `glanceline demo` prints sample lines at four widths.
-- Settings come from the same `config.json` (`preset`, `segments`, `icons`, plus
-  `theme`: `color` or `mono`), or from `GLANCELINE_PRESET`, `GLANCELINE_SEGMENTS`,
-  `GLANCELINE_ICONS` and `GLANCELINE_THEME`. `NO_COLOR` is respected.
-- `--extra-command CMD` adds that command's output below the line.
-- When the mod is also installed, the fallback steps aside in that session, so you never
-  see the same figures twice: the mod keeps `~/.cache/glanceline/live/<session id>` fresh,
-  and the fallback prints nothing while that file is under a minute old. Claude Code still
-  keeps an empty row for a configured status line, so once the mod runs everywhere you
-  use, `glanceline uninstall` gives that row back.
-
-The two share one core: `hooks/core.ts` for the mod and its line-for-line port in
-`glanceline.py`. Both are tested against the same golden file, `tests/cases.ts`.
-
-## FAQ
-
-**Is the dollar figure my bill?**
-No. It's Claude Code's own cost ledger at API list prices: the session's in the pane, the
-growth during one turn in its receipt (`API $0.75`). On a subscription it's a sense of
-scale, not a charge.
-
-**What does "cache read 82%" mean?**
-The share of the turn's input tokens the prompt cache served. It isn't money saved, and it
-doesn't say the whole context is still warm.
-
-**What does "cache 4m" mean?**
-Claude Code keeps your conversation in Anthropic's prompt cache, so each turn re-reads it
-cheaply instead of processing it again. The cache lasts a set time after your last
-message: one hour on a Claude subscription within its limits, five minutes on an API key
-or a cloud provider. After that it goes **cold**, and your next message rebuilds all of it
-(`cache cold (next turn rebuilds 84k)`), which is slower and uses more of your limit. The
-line shows the countdown once under 15 minutes are left, and a notification comes five
-minutes before an hour-long cache goes cold. The `full` layout always shows it.
-
-**How does it know 1 hour vs 5 minutes?**
-It applies Claude Code's own rule: `FORCE_PROMPT_CACHING_5M`, `CLAUDE_CODE_PROMPT_CACHE_TTL`,
-the `promptCacheTtl` setting, `ENABLE_PROMPT_CACHING_1H`, and otherwise one hour on a
-subscription and five minutes elsewhere. If it later sees the cache hit or miss after a
-long pause, it corrects itself. You can also pin it with `cache_ttl`. (The fallback reads
-the exact expiry, because the status line gets it from Claude Code directly.)
-
-**What does "! out ~14:24" mean?**
-glanceline takes your usage so far in the window, divides it by the time since the window
-opened, and projects that rate forward. If the projection reaches 100% before the reset,
-you see roughly when. It's a projection, hence the `~`. It stays quiet for the first 15
-minutes of a 5-hour window and the first 12 hours of a week, while the average still means
-little.
-
-**How good is the compaction forecast?**
-It divides the room left before the auto-compact threshold by the average context growth of
-your last five turns, so it's a rough count that sharpens as you go. It appears only past 60%
-of the threshold, only when compaction is under 30 turns away, and says `soon` rather than
-`next turn`.
-
-**Where do the day and week totals live?**
-In glanceline's own store under your Claude Code configuration directory: one small entry per
-session per day with its cost, turns, tool calls, cold-cache rebuilds and agents. Numbers
-only, never conversation content. Entries older than 35 days are removed. Only sessions where
-glanceline ran on this machine are counted.
-
-**Does it read my conversation or send anything anywhere?**
-No. It reads the figures Claude Code hands every mod, and runs `git status` only when your
-layout shows the branch (or the pane is open). Nothing leaves your machine. It refreshes its
-countdowns on a 15-second timer while you're idle.
-
-**Is a mod sandboxed?**
-No more than any plugin: it runs with your permissions, and organisations can restrict
-plugins. `claude plugin validate .` in this repository lists every event glanceline hooks
-and every call it makes.
-
-**Something's missing.**
-Usage windows show up after the first response of a session, and only on a subscription.
-The cache segment appears once a response reports cache tokens and the countdown gets
-short. Lines added and removed come from the status line payload, so only the fallback
-shows them. The receipt rides on the terminal; other surfaces draw their own turn footer.
-
-## How is this different from other status lines?
-
-Projects like ccstatusline, claude-powerline and claude-hud are `statusLine` commands: a
-line of their own that Claude Code refreshes. glanceline is a mod. It adds no row, puts each
-fact on the line where the work happened (the receipt on the turn that did it, the limits on
-the hint line you already look at), sees turns, tool calls, subagents and compactions as they
-happen, and can raise notifications, open a pane or add a command. It has no dependencies.
+Your `~/.config/glanceline/config.json` keeps working. `/glanceline` still opens the pane until
+the next release. The day and week totals start again under the new name. If you used the old
+Python status line (`glanceline install`), run `glanceline uninstall` once to put your previous
+`statusLine` back. g-line no longer ships that fallback.
 
 ## Develop
 
+See [AGENTS.md](AGENTS.md): the rules g-line stands on, a map of the code, and recipes for
+adding a figure or a receipt event.
+
 ```sh
-claude plugin validate .               # what the engine sees and would refuse
-claude plugin test .                   # mod tests: golden file, line, receipts, agents, forecast, ledger, card, heads-ups
-python3 tests/test_glanceline.py       # fallback tests: golden parity, install round trips, garbage input
-bun scripts/golden.ts                  # regenerate tests/cases.ts after changing hooks/core.ts
-claude --plugin-dir .                  # run a session with your working copy
+claude --plugin-dir .        # a session with your working copy; saving reloads it
+claude plugin validate .     # what the engine reads, the hooks and calls, what it would refuse
+claude plugin test .         # the tests
 ```
 
-`hooks/core.ts` (shared with the fallback), `hooks/inline.ts` and `hooks/extras.ts` are pure
-functions; `hooks/register.tsx` wires them to Claude Code. The screenshots and the demo are
-real captures (`tmux capture-pane -e`), rendered by `scripts/ansi2svg.py`,
-`scripts/ansi2png.py` and `scripts/frames.py`, which records a pane as timed frames and
-cuts them into an MP4 and a GIF.
+The screenshots and the demo are real captures (`tmux capture-pane -e`), drawn by
+`scripts/ansi2png.py` and cut by `scripts/frames.py`. `tools/pulse/` builds the Pulse feed on
+the maintainer's machine; it isn't part of the mod.
 
 ## License
 
