@@ -1,10 +1,11 @@
 import { expect, test } from 'claude-code/testing'
 
 import {
-  EMPTY_TOTALS, agentsSegment, cacheHit, cardLines, coach, compactionText, contextView, dayOf, forecast,
-  forecastSegment, ledger, loopWarning, receiptFields, receiptParts, receiptText, spark, staleKeys, target,
-  todaySegment, turnLength, turnLineWidth, unusedServers,
+  EMPTY_TOTALS, adaptiveParts, agentsSegment, cacheHit, cardLines, coach, compactionText, contextView, costRatio, dayOf,
+  forecast, forecastSegment, ledger, loopWarning, receiptFields, receiptParts, receiptText, spark, spinnerParts,
+  staleKeys, target, todaySegment, turnLength, turnLineWidth, unusedServers,
 } from '../hooks/extras'
+import type { ReceiptField } from '../hooks/extras'
 import { inline, joined, modesWidth } from '../hooks/inline'
 import type { AgentRow, Receipt } from '../types'
 
@@ -12,21 +13,70 @@ const NOW = 1_760_000_000
 const RECEIPT: Receipt = { cost: 0.384, cacheHit: 94.6, context: 6200, tools: 7, agents: 2, output: 1200,
   endAt: NOW * 1000, durationMs: 64_000, background: false }
 
-test('a receipt reads like the line it rides on, and drops its last parts to fit', async () => {
-  expect(receiptText(RECEIPT, receiptFields('short'))).toBe(' · $0.38 · 94% cached · 7 tools')
-  expect(receiptText(RECEIPT, receiptFields('full'))).toBe(' · $0.38 · 94% cached · +6k context · 7 tools · 2 agents · 1k out')
-  expect(receiptText(RECEIPT, receiptFields('cost,tools'))).toBe(' · $0.38 · 7 tools')
-  expect(receiptText(RECEIPT, receiptFields('short'), 21)).toBe(' · $0.38 · 94% cached')
-  expect(receiptText(RECEIPT, receiptFields('short'), 5)).toBe('')
+const fields = (spec: string) => receiptFields(spec) as ReceiptField[]
+const texts = (r: Receipt) => adaptiveParts(r).map(p => p.text)
+
+test('a fixed receipt reads like the line it rides on, and drops its last parts to fit', async () => {
+  expect(receiptText(RECEIPT, fields('short'))).toBe(' · API $0.38 · cache read 94% · 7 tools')
+  expect(receiptText(RECEIPT, fields('full'))).toBe(' · API $0.38 · cache read 94% · +6k context · 7 tools · 2 agents · 1k out')
+  expect(receiptText(RECEIPT, fields('cost,tools'))).toBe(' · API $0.38 · 7 tools')
+  expect(receiptText(RECEIPT, fields('short'), 30)).toBe(' · API $0.38 · cache read 94%')
+  expect(receiptText(RECEIPT, fields('short'), 5)).toBe('')
   expect(receiptFields('off')).toEqual([])
-  expect(receiptFields('nonsense')).toEqual(['cost', 'cache', 'tools'])
+  expect(receiptFields('nonsense')).toBe('adaptive')
+  expect(receiptFields(undefined)).toBe('adaptive')
   // Zero and unknown figures are left out, never shown as 0.
-  expect(receiptParts({ ...RECEIPT, cost: 0, cacheHit: undefined, tools: 1 }, receiptFields('short'))).toEqual(['1 tool'])
-  expect(receiptParts({ ...RECEIPT, context: -40_000 }, ['context'])).toEqual(['−40k context'])
-  // 99.9% cached never rounds up to a perfect 100%.
-  expect(receiptParts({ ...RECEIPT, cacheHit: 99.9 }, ['cache'])).toEqual(['99% cached'])
+  expect(receiptParts({ ...RECEIPT, cost: 0, cacheHit: undefined, tools: 1 }, fields('short')).map(p => p.text)).toEqual(['1 tool'])
+  expect(receiptParts({ ...RECEIPT, context: -40_000 }, ['context']).map(p => p.text)).toEqual(['−40k context'])
+  // 99.9% never rounds up to a perfect 100%.
+  expect(receiptParts({ ...RECEIPT, cacheHit: 99.9 }, ['cache']).map(p => p.text)).toEqual(['cache read 99%'])
   expect(cacheHit({ input_tokens: 4, cache_read_input_tokens: 940, cache_creation_input_tokens: 56 })).toBe(94)
   expect(cacheHit({ input_tokens: 0, cache_read_input_tokens: 0, cache_creation_input_tokens: 0 })).toBeUndefined()
+})
+
+test('the adaptive receipt stays quiet on an ordinary turn and leads with what was unusual', async () => {
+  const quiet: Receipt = { ...RECEIPT, window: 200_000, warmBefore: true, cacheWrite: 6000 }
+  expect(texts(quiet)).toEqual(['API $0.38', 'cache read 94%'])
+  // A big context jump leads, loud, then the cost.
+  const jump = { ...quiet, context: 84_000, cacheWrite: 84_000, cost: 1.42 }
+  expect(adaptiveParts(jump)).toEqual([{ tone: 'accent', text: '+84k context' }, { text: 'API $1.42' }])
+  // Under 8k (or 2% of a big window) is no jump.
+  expect(texts({ ...quiet, context: 7999 })).toEqual(['API $0.38', 'cache read 94%'])
+  expect(texts({ ...quiet, context: 15_000, window: 1_000_000 })).toEqual(['API $0.38', 'cache read 94%'])
+  expect(texts({ ...quiet, context: 25_000, window: 1_000_000 })[0]).toBe('+25k context')
+  // A large cache write the context's growth doesn't explain; never on the session's first write.
+  expect(adaptiveParts({ ...quiet, cacheWrite: 84_000, context: 2000 })[0]).toEqual({ tone: 'warn', text: 'cache write 84k' })
+  expect(texts({ ...quiet, cacheWrite: 84_000, context: 2000, warmBefore: false })).toEqual(['API $0.38', 'cache read 94%'])
+  // Failures come first; one tool is named, mixed ones are counted.
+  expect(adaptiveParts({ ...quiet, failures: 3, failedTool: 'Bash' })[0]).toEqual({ tone: 'bad', text: '3 failed Bash calls' })
+  expect(texts({ ...quiet, failures: 2 })[0]).toBe('2 failed calls')
+  expect(texts({ ...quiet, failures: 1, failedTool: 'Bash' })).toEqual(['API $0.38', 'cache read 94%'])
+  expect(texts({ ...quiet, compacted: { before: 182_000, after: 31_000 }, context: -151_000 })[0]).toBe('compacted 182k → 31k')
+  // Background work makes the session's growth not the turn's own: no dollars then.
+  expect(texts({ ...jump, overlap: true })).toEqual(['+84k context'])
+  expect(texts({ ...quiet, overlap: true })).toEqual(['cache read 94%'])
+  // A cost several times the recent median says so, after the cost.
+  expect(adaptiveParts({ ...quiet, cost: 1.42, ratio: 4.1 })).toEqual([{ text: 'API $1.42' }, { tone: 'accent', text: '4x recent' }])
+  expect(texts({ ...jump, ratio: 4.1 })).toEqual(['+84k context', 'API $1.42', '4x recent'])
+  // Narrow rows drop the supporting facts first and keep the lead.
+  expect(receiptText(jump, 'adaptive', 17)).toBe(' · +84k context')
+})
+
+test('a cost is an outlier only against enough attributable history, by ratio and by dollars', async () => {
+  const history = [0.3, 0.2, 0.4, 0.3, 0.35]
+  expect(costRatio(1.2, false, history)).toBe(4)
+  expect(costRatio(1.2, false, history.slice(0, 4))).toBeUndefined()
+  expect(costRatio(1.2, true, history)).toBeUndefined()
+  expect(costRatio(0.6, false, history)).toBeUndefined()
+  // Cheap turns can be many times cheaper turns without being worth a word.
+  expect(costRatio(0.12, false, [0.02, 0.03, 0.02, 0.03, 0.02])).toBeUndefined()
+})
+
+test('the spinner says what the turn has done, and failures once they repeat', async () => {
+  expect(spinnerParts({ tools: 3, agents: 0 }, 0.12)).toEqual(['API $0.12', '3 tools'])
+  expect(spinnerParts({ tools: 5, agents: 1, failures: 2, failedTool: 'Bash' })).toEqual(['5 tools', '1 agent', '2 failed Bash'])
+  expect(spinnerParts({ tools: 5, agents: 0, failures: 3, failedTool: null })).toEqual(['5 tools', '3 failed'])
+  expect(spinnerParts({ tools: 0, agents: 0, failures: 1, failedTool: 'Edit' }, 0.004)).toEqual([])
 })
 
 test('turn lengths match the engine, so the receipt starts right after its words', async () => {
@@ -54,7 +104,7 @@ test('the compaction forecast waits for 60% and a trend, then counts turns', asy
   expect(forecast(900_000, 967_000, [100_000, 100_000])?.turns).toBe(1)
   expect(forecast(620_000, 967_000, [1000, 1000])).toBeUndefined()
   expect(forecastSegment({ turns: 3, percent: 78, threshold: 967_000 })?.forms[0]).toBe('compacts in ~3 turns')
-  expect(forecastSegment({ turns: 1, percent: 98, threshold: 967_000 })?.forms[0]).toBe('compacts next turn')
+  expect(forecastSegment({ turns: 1, percent: 98, threshold: 967_000 })?.forms[0]).toBe('compacts soon')
   expect(forecastSegment({ turns: 2, percent: 90, threshold: 967_000 })?.tone).toBe('warn')
   expect(compactionText({ trigger: 'auto', before: 182_000, after: 31_000 })).toBe('Context compacted automatically: 182k → 31k tokens.')
   expect(compactionText({ trigger: 'manual' })).toBe('Context compacted by /compact.')
@@ -125,7 +175,7 @@ test('the share card leaves out branch, path and account', async () => {
     'glanceline · session card',
     'Opus 5.5 · 1h 12m · 23 turns',
     '87 tool calls · 4 agents · 2 failed calls',
-    'cache hit 94% · 1 compaction · 1 cold-cache rebuild',
+    'cache read 94% · 1 compaction · 1 cold-cache rebuild',
     '$3.21 at API prices · peak context 61% · 5h window 72%',
     'today: $41.00 over 6 sessions on this machine',
   ])
@@ -135,10 +185,10 @@ test('mod-only segments stand where a custom layout names them, and the footer k
   const p = { model: { display_name: 'Opus 5.5' }, context_window: { used_percentage: 78 } }
   const extras = { compact: forecastSegment({ turns: 3, percent: 80, threshold: 1 }), agents: undefined }
   expect(joined(inline(p, { now: NOW, segments: 'model,context,compact,agents' }, undefined, undefined, extras)))
-    .toBe('Opus 5.5 · context 78% · compacts in ~3 turns')
-  expect(joined(inline(p, { now: NOW }, undefined, undefined, extras))).toBe('Opus 5.5 · context 78%')
+    .toBe('Opus 5.5 · ctx 78% · compacts in ~3 turns')
+  expect(joined(inline(p, { now: NOW }, undefined, undefined, extras))).toBe('Opus 5.5 · ctx 78%')
   expect(joined(inline(p, { now: NOW }, undefined, undefined, {}, [todaySegment({ day: 'x', cost: 45, turns: 1, tools: 0, sessions: 1, colds: 0, agents: 0 }, 50)!])))
-    .toBe('Opus 5.5 · context 78% · today $45.00 of $50.00')
+    .toBe('Opus 5.5 · ctx 78% · today $45.00 of $50.00')
   expect(modesWidth([])).toBe(0)
   expect(modesWidth(['agents 2 running', 'compacts in ~3 turns'])).toBe('agents 2 running & compacts in ~3 turns'.length + 4)
 })

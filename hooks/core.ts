@@ -61,9 +61,12 @@ export type Alert = { id: string; text: string; tone: Tone }
 
 export const SEP = ' · '
 
+/** Added to a segment's priority while it warns, so it outlasts the model name when space runs out. */
+export const URGENT = 50
+
 export const PRESETS: Record<Preset, string> = {
   minimal: 'model,context,five_hour,cache',
-  default: 'model,context,five_hour,seven_day,spend,cache,git',
+  default: 'model,context,five_hour,seven_day,spend,cache',
   full: 'model,context,five_hour,seven_day,spend,cache|git,pr,cost,time,lines,vim',
 }
 
@@ -166,7 +169,7 @@ function modelSegment(p: Payload): Segment | undefined {
   const fast = p.fast_mode === true
   const detail = [level ? `${level} effort` : '', fast ? 'fast' : ''].filter(Boolean).join(', ')
   const forms = detail ? [`${name} (${detail})`, level ? `${name} ${level}` : name, name] : [name]
-  return { key: 'model', priority: 100, forms, tone: 'accent' }
+  return { key: 'model', priority: 82, forms, tone: 'accent' }
 }
 
 function contextSegment(p: Payload, full: boolean): Segment | undefined {
@@ -176,8 +179,8 @@ function contextSegment(p: Payload, full: boolean): Segment | undefined {
   const size = num(w?.context_window_size)
   const inside = num(w?.total_input_tokens)
   const left = size !== undefined && inside !== undefined && size > inside ? size - inside : undefined
-  const forms = [`context ${pct(used)}`, `ctx ${pct(used)}`]
-  if (left !== undefined) forms.unshift(`context ${pct(used)} (${tokens(left)} left)`)
+  const forms = [`ctx ${pct(used)}`]
+  if (left !== undefined) forms.unshift(`ctx ${pct(used)} (${tokens(left)} left)`)
   if (full) forms.unshift(`context ${bar(used)} ${pct(used)}` + (left !== undefined ? ` (${tokens(left)} left)` : ''))
   return { key: 'context', priority: 90, forms, tone: pressure(used) }
 }
@@ -197,16 +200,17 @@ function windowSegment(p: Payload, kind: 'five_hour' | 'seven_day', o: Options, 
       forms: [`${name} limit reached${after}`, `${short} full` + (left !== undefined ? ` (${duration(left, true)})` : ''), `${short} full`] }
   }
   if (state?.kind === 'hot') {
+    // `!` and `~` carry the meaning where the line is drawn dim: a warning, and
+    // a projection rather than an appointment.
     const at = clock(state.eta, o.now, o.utcOffsetMinutes)
-    const reset = resets !== undefined ? `, resets ${clock(resets, o.now, o.utcOffsetMinutes)}` : ''
+    const reset = resets !== undefined ? ` (resets ${clock(resets, o.now, o.utcOffsetMinutes)})` : ''
     const soon = state.eta - o.now < 30 * 60
     return { key: kind, priority, tone: soon ? 'bad' : 'warn',
-      forms: [`${head} (on pace to run out at ${at}${reset})`, `${short} ${pct(used)}, out at ${at}`, `${short} ${pct(used)}→${at}`, `${short} ${pct(used)}`] }
+      forms: [`${head} ! out ~${at}${reset}`, `${short} ${pct(used)} ! out ~${at}`, `${short} ${pct(used)}!`] }
   }
-  const ok = state?.kind === 'ok' ? 'on track' : ''
-  if (left === undefined) return { key: kind, priority, tone: pressure(used), forms: [ok ? `${head} (${ok})` : head, `${short} ${pct(used)}`] }
+  if (left === undefined) return { key: kind, priority, tone: pressure(used), forms: [head, `${short} ${pct(used)}`] }
   return { key: kind, priority, tone: pressure(used),
-    forms: [`${head} (resets in ${duration(left)}${ok ? ', ' + ok : ''})`, `${short} ${pct(used)} (${duration(left, true)})`, `${short} ${pct(used)}`] }
+    forms: [`${head} (resets in ${duration(left)})`, `${short} ${pct(used)} (${duration(left, true)})`, `${short} ${pct(used)}`] }
 }
 
 function spendSegment(p: Payload): Segment | undefined {
@@ -223,12 +227,16 @@ function spendSegment(p: Payload): Segment | undefined {
   return { key: 'spend', priority: 75, forms, tone: pressure(used) }
 }
 
-function cacheSegment(p: Payload, now: number): Segment | undefined {
+/** A warm cache stays off the line until this many seconds are left, except in the full layout. */
+export const CACHE_QUIET = 15 * 60
+
+function cacheSegment(p: Payload, now: number, full: boolean): Segment | undefined {
   const cache = p.prompt_cache
   if (!cache || cache.caching_observed !== true) return undefined
   const expires = num(cache.expires_at)
   if (cache.warm === true && expires !== undefined && expires > now) {
     const left = expires - now
+    if (!full && left > CACHE_QUIET) return undefined
     const soon = left <= (cache.ttl === '1h' ? 300 : 60)
     return { key: 'cache', priority: 80, tone: soon ? 'warn' : 'ok',
       forms: [`cache warm (${duration(left)} left)`, `cache ${duration(left, true)}`] }
@@ -292,7 +300,7 @@ export function segments(p: Payload, o: Options): Segment[][] {
     five_hour: () => windowSegment(p, 'five_hour', o, full),
     seven_day: () => windowSegment(p, 'seven_day', o, full),
     spend: () => spendSegment(p),
-    cache: () => cacheSegment(p, o.now),
+    cache: () => cacheSegment(p, o.now, full),
     cost: () => costSegment(p),
     time: () => timeSegment(p),
     lines: () => linesSegment(p),
@@ -304,6 +312,8 @@ export function segments(p: Payload, o: Options): Segment[][] {
   return layoutKeys(o).map(keys => keys.flatMap(key => {
     const segment = build[key]?.()
     if (!segment) return []
+    // What is pressing outranks what is merely useful, so it survives a narrow terminal.
+    if (segment.tone === 'warn' || segment.tone === 'bad') segment.priority += URGENT
     if (icons && NERD[key]) segment.forms = segment.forms.map(form => NERD[key] + form)
     return [segment]
   })).filter(line => line.length)
@@ -323,24 +333,33 @@ export function truncate(text: string, room: number): string {
 }
 
 /**
- * One form per segment so the line fits `room` columns. All segments narrow
- * together, one tier at a time, so the line keeps one voice; when the
- * narrowest tier is still too wide the lowest-priority segments go, and the
- * last one left is cut.
+ * One form per segment so the line fits `room` columns. Calm segments narrow
+ * together, one tier at a time, so the line keeps one voice; a segment that
+ * warns keeps its words longer: it narrows to its middle form only once the
+ * calm ones are at their shortest, and to its shortest only after every calm
+ * segment that doesn't fit has gone, lowest priority first. The last one left
+ * is cut.
  */
 export function fit(items: Segment[], room?: number): Placed[] {
   if (room === undefined) return items.map(item => ({ key: item.key, text: item.forms[0] ?? '', tone: item.tone }))
   const live = [...items]
+  const loud = (item: Segment) => item.tone === 'warn' || item.tone === 'bad'
   const deepest = Math.max(1, ...live.map(item => item.forms.length))
-  let tier = 0
-  const forms = () => live.map(item => item.forms[Math.min(tier, item.forms.length - 1)] ?? '')
+  let calmTier = 0
+  let loudTier = 0
+  const forms = () => live.map(item => item.forms[Math.min(loud(item) ? loudTier : calmTier, item.forms.length - 1)] ?? '')
+  const dropLowest = () => {
+    let lowest = 0
+    live.forEach((item, index) => { if (item.priority < (live[lowest]?.priority ?? 0)) lowest = index })
+    live.splice(lowest, 1)
+  }
   while (width(forms().join(SEP)) > room) {
-    if (tier < deepest - 1) tier += 1
-    else if (live.length > 1) {
-      let lowest = 0
-      live.forEach((item, index) => { if (item.priority < (live[lowest]?.priority ?? 0)) lowest = index })
-      live.splice(lowest, 1)
-    } else break
+    if (calmTier < deepest - 1) calmTier += 1
+    else if (loudTier < deepest - 2) loudTier += 1
+    else if (live.length > 1 && live.some(item => !loud(item))) dropLowest()
+    else if (loudTier < deepest - 1) loudTier += 1
+    else if (live.length > 1) dropLowest()
+    else break
   }
   return live.map((item, index) => ({ key: item.key, text: truncate(forms()[index] ?? '', room), tone: item.tone }))
 }

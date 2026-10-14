@@ -58,7 +58,7 @@ class Rendering(unittest.TestCase):
     def test_prints_a_line_and_exits_zero(self):
         done = run(self.PAYLOAD)
         self.assertEqual(done.returncode, 0)
-        self.assertEqual(done.stdout.decode().strip(), "Opus 5.5 · context 19%")
+        self.assertEqual(done.stdout.decode().strip(), "Opus 5.5 · ctx 19%")
 
     def test_never_fails_on_garbage(self):
         rng = random.Random(7)
@@ -103,7 +103,7 @@ class Rendering(unittest.TestCase):
 
     def test_preset_from_environment(self):
         done = run(self.PAYLOAD, {"GLANCELINE_PRESET": "minimal"})
-        self.assertIn("context 19%", done.stdout.decode())
+        self.assertIn("ctx 19%", done.stdout.decode())
 
     def test_git_branch_from_the_working_directory(self):
         with tempfile.TemporaryDirectory() as folder:
@@ -111,7 +111,7 @@ class Rendering(unittest.TestCase):
                 self.skipTest("git unavailable")
             payload = json.dumps({"session_id": "git-test", "model": {"display_name": "M"},
                                   "workspace": {"current_dir": folder}}).encode()
-            self.assertIn("trunk", run(payload).stdout.decode())
+            self.assertIn("trunk", run(payload, {"GLANCELINE_SEGMENTS": "model,git"}).stdout.decode())
 
 
 class Install(unittest.TestCase):

@@ -53,8 +53,9 @@ test('one line rides the hint under the prompt, and a toast warns before the 5-h
     const ui = await $.ui.mount({ plugin: 'glanceline', surface, component: 'PromptHint', props: HINT,
       viewport: { columns: 160, rows: 40 } })
     const line = tails[tails.length - 1] ?? ''
-    expect(line).toMatch(/^Opus 5\.5 · context 41% \(118k left\) · 5h 72%/)
-    expect(line).toMatch(/main\*$/)
+    expect(line).toMatch(/^Opus 5\.5 · ctx 41% \(118k left\) · 5h 72% ! out ~/)
+    // The branch is opt-in (`segments`), so the default line says nothing about the repository.
+    expect(line).not.toMatch(/main/)
     expect(line.includes('\n')).toBe(false)
     expect(await ui.find({ type: 'Text', text: /\? for shortcuts · Opus 5\.5/ })).toBeDefined()
     await ui.unmount()
@@ -65,8 +66,9 @@ test('one line rides the hint under the prompt, and a toast warns before the 5-h
     props: { ...HINT, hint: '(shift+tab to cycle)' }, viewport: { columns: 90, rows: 40 } })
   const short = tails[tails.length - 1] ?? ''
   expect(short.length).toBeLessThanOrEqual(90 - 5 - 26 - 20 - 3)
-  expect(short).toMatch(/^Opus 5\.5/)
-  expect(short).toMatch(/5h 72%/)
+  // The model name goes before the context and the warning, which keeps its projection.
+  expect(short).toMatch(/^ctx 41%/)
+  expect(short).toMatch(/5h 72% ! out ~/)
   await narrow.unmount()
 
   await clock.advance(15_000)
@@ -89,7 +91,7 @@ test('the account folds in last, as just the address, and drops before the limit
   }
   const o = { now: NOW }
   const wide = joined(inline(p, o, 'account space@example.com (via CAAM)', tailRoom(150, '(shift+tab to cycle)')))
-  expect(wide).toBe('Opus 5.5 high · context 5% · 5h 1% (4h52m) · wk 40% (3d13h) · cache 59m · space@example.com')
+  expect(wide).toBe('Opus 5.5 high · ctx 5% · 5h 1% (4h52m) · wk 40% (3d13h) · space@example.com')
   const tight = joined(inline(p, o, 'account space@example.com (via CAAM)', 50))
   expect(tight.length).toBeLessThanOrEqual(50)
   expect(tight).not.toMatch(/space@/)

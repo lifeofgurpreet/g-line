@@ -116,18 +116,20 @@ test('each turn closes with its receipt, right after Claude Code\'s own words', 
   await turn($, w, 1, { tools: 7 })
   const ui = await $.ui.mount({ plugin: 'glanceline', surface: 'terminal', component: 'TurnDuration', requestId: 'line-1',
     props: { word: 'Baked', durationMs: 64_000 }, viewport: { columns: 120, rows: 40 } })
-  expect(await ui.find({ type: 'Text', text: ' · $0.38 · 94% cached · 7 tools' })).toBeDefined()
+  expect(await ui.find({ type: 'Text', text: 'API $0.38' })).toBeDefined()
+  expect(await ui.find({ type: 'Text', text: 'cache read 94%' })).toBeDefined()
   expect(await ui.find({ type: 'Text', text: /Baked for 1m 4s/ })).toBeDefined()
   await ui.unmount()
   // A line the mod has no receipt for is Claude Code's alone.
   const other = await $.ui.mount({ plugin: 'glanceline', surface: 'terminal', component: 'TurnDuration', requestId: 'old',
     props: { word: 'Baked', durationMs: 1000 }, viewport: { columns: 120, rows: 40 } })
-  expect(await other.find({ type: 'Text', text: /cached/ })).toBeUndefined()
+  expect(await other.find({ type: 'Text', text: /cache read/ })).toBeUndefined()
   await other.unmount()
   // Narrow: the receipt drops its last parts and never wraps the row.
   const narrow = await $.ui.mount({ plugin: 'glanceline', surface: 'terminal', component: 'TurnDuration', requestId: 'line-1',
     props: { word: 'Baked', durationMs: 64_000 }, viewport: { columns: 50, rows: 40 } })
-  expect(await narrow.find({ type: 'Text', text: ' · $0.38' })).toBeDefined()
+  expect(await narrow.find({ type: 'Text', text: 'API $0.38' })).toBeDefined()
+  expect(await narrow.find({ type: 'Text', text: 'cache read 94%' })).toBeUndefined()
   await narrow.unmount()
 })
 
@@ -141,7 +143,7 @@ test('the receipt can be switched off from /config', { options: { receipt: 'off'
   await turn($, w, 1)
   const ui = await $.ui.mount({ plugin: 'glanceline', surface: 'terminal', component: 'TurnDuration', requestId: 'line-1',
     props: { word: 'Baked', durationMs: 64_000 }, viewport: { columns: 120, rows: 40 } })
-  expect(await ui.find({ type: 'Text', text: /cached/ })).toBeUndefined()
+  expect(await ui.find({ type: 'Text', text: /cache read/ })).toBeUndefined()
 })
 
 test('the spinner says what the running turn has done so far', async ($, on) => {
@@ -241,6 +243,7 @@ test('agents at work show in the footer labels, and a failed one raises a heads-
 
 test('the compaction forecast counts down in the footer and suggests /compact; a compaction is logged', async ($, on) => {
   const w = world(on)
+  w.config = { coach: true }
   on('session.compact', () => ({ messages: SUMMARY, tokensBefore: 912_000, tokensAfter: 31_000 }) as never)
   const modes: string[][] = []
   on('ui.render', { component: 'SessionMode' }, ($, e) => {
@@ -279,6 +282,7 @@ test('the same call failing three times in a row raises one toast; the calls the
 
 test('the coach suggests a lower effort and never switches it', async ($, on) => {
   const w = world(on)
+  w.config = { coach: true }
   let switched = false
   on('config.set', () => {
     switched = true
@@ -381,5 +385,56 @@ test('export_state writes the figures as JSON for other bars, and only when aske
   expect(state.length).toBeGreaterThan(0)
   const body = JSON.parse(state[state.length - 1]?.text ?? '{}')
   expect(body.model).toBe('Opus 5.5')
-  expect(body.line).toMatch(/^Opus 5\.5 · context 60%/)
+  expect(body.line).toMatch(/^Opus 5\.5 · ctx 60%/)
+})
+
+test('the coach is off by default: a hot window gets the plain heads-up and nothing in the prompt box', async ($, on) => {
+  const w = world(on)
+  await start($)
+  await $.session.measure({ context: { tokens: 1, window: 1_000_000, percent: 1 },
+    rateLimits: [{ kind: 'five_hour', percentUsed: 50, resetsAt: ISO(NOW + 3 * 3600) }], cost: { usd: 1 }, changed: ['rateLimits'] })
+  await w.clock.settle()
+  expect(w.toasts.some(t => t.startsWith("At this pace you'll hit your 5-hour limit"))).toBe(true)
+  expect(w.suggested).toEqual([])
+})
+
+test('/glanceline off is silent: no toasts, notifications or suggestions while hidden', async ($, on) => {
+  const w = world(on)
+  w.config = { coach: true }
+  await start($)
+  await $.command.run({ command: 'glanceline', args: 'off' } as never)
+  await $.session.measure({ context: { tokens: 1, window: 1_000_000, percent: 1 },
+    rateLimits: [{ kind: 'five_hour', percentUsed: 50, resetsAt: ISO(NOW + 3 * 3600) }], cost: { usd: 1 }, changed: ['rateLimits'] })
+  w.toolError = true
+  for (let i = 0; i < 3; i++) await $.tool.call({ tool: 'Edit', file_path: '/work/a.ts', old_string: 'a', new_string: 'b' } as never)
+  await w.clock.settle()
+  expect(w.toasts).toEqual([])
+  expect(w.notes).toEqual([])
+  expect(w.suggested).toEqual([])
+})
+
+test('a turn that fails the same tool twice and jumps the context leads its receipt with the failures', async ($, on) => {
+  const w = world(on)
+  on('ui.render', { component: 'TurnDuration' }, ($, e) => {
+    const { Text } = $.ui.resolve(e)
+    return <Text>{`✻ ${e.props.word} for 1m 4s · done 3:45 PM`}</Text>
+  })
+  await start($)
+  await turn($, w, 1)
+  await $.turn.start({ text: 'go', turnId: 't2' })
+  w.toolError = true
+  await $.tool.call({ tool: 'Bash', command: 'npm test' } as never)
+  await $.tool.call({ tool: 'Bash', command: 'npm test -- --watch=false' } as never)
+  w.toolError = false
+  w.usage.cost += 0.5
+  w.usage.tokens += 90_000
+  await $.turn.complete({ answer: 'done', durationMs: 64_000, isAborted: false, turnId: 't2',
+    reason: 'answer', usage: { ...USAGE_ARGS, model: 'claude-opus-5-5' } })
+  await $.session.append({ message: { type: 'system', name: 'turn_duration', content: [] }, door: 'notice',
+    origin: { kind: 'engine' }, uuid: 'line-2' } as never)
+  const ui = await $.ui.mount({ plugin: 'glanceline', surface: 'terminal', component: 'TurnDuration', requestId: 'line-2',
+    props: { word: 'Baked', durationMs: 64_000 }, viewport: { columns: 140, rows: 40 } })
+  expect(await ui.find({ type: 'Text', text: '2 failed Bash calls' })).toBeDefined()
+  expect(await ui.find({ type: 'Text', text: 'API $0.50' })).toBeDefined()
+  await ui.unmount()
 })

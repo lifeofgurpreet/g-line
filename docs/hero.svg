@@ -1,130 +1,60 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1300" height="584" viewBox="0 0 1300 584" role="img" aria-label="glanceline: a receipt on every turn, live figures on the hint line, zero extra rows">
+<svg xmlns="http://www.w3.org/2000/svg" width="710" height="660" viewBox="0 0 710 660" role="img" aria-label="glanceline: a status line that adds zero lines">
 <style>text{font-family:"JetBrains Mono","SF Mono",Menlo,Consolas,monospace;font-size:14px;white-space:pre}</style>
 <rect width="100%" height="100%" rx="10" fill="#16181d"/>
 <circle cx="20" cy="17" r="6" fill="#ff5f57"/><circle cx="40" cy="17" r="6" fill="#febc2e"/><circle cx="60" cy="17" r="6" fill="#28c840"/>
-<text x="650" y="22" fill="#8a8f98" text-anchor="middle">glanceline: a receipt on every turn, live figures on the hint line, zero extra rows</text>
-<text x="18.0" y="48" fill="#949494" textLength="16.9" lengthAdjust="spacingAndGlyphs">❯ </text>
-<text x="34.9" y="48" fill="#ffffff" textLength="1104.3" lengthAdjust="spacingAndGlyphs">Read checkout.ts and cart.ts, check git diff, then add a tax parameter (default 0) to total() and say what changed in one sentence.</text>
-<text x="34.9" y="86" fill="#949494" textLength="33.7" lengthAdjust="spacingAndGlyphs">Ran </text>
-<text x="68.6" y="86" fill="#949494" font-weight="700" textLength="8.4" lengthAdjust="spacingAndGlyphs">1</text>
-<text x="77.0" y="86" fill="#949494" textLength="126.4" lengthAdjust="spacingAndGlyphs"> shell command </text>
-<text x="18.0" y="124" fill="#87d787" textLength="8.4" lengthAdjust="spacingAndGlyphs">⏺</text>
-<text x="34.9" y="124" fill="#d7dae0" font-weight="700" textLength="42.1" lengthAdjust="spacingAndGlyphs">Write</text>
-<text x="77.0" y="124" fill="#d7dae0" textLength="109.6" lengthAdjust="spacingAndGlyphs">(checkout.ts)</text>
-<text x="18.0" y="143" fill="#949494" textLength="42.1" lengthAdjust="spacingAndGlyphs">  ⎿  </text>
-<text x="60.1" y="143" fill="#d7dae0" textLength="50.6" lengthAdjust="spacingAndGlyphs">Added </text>
-<text x="110.7" y="143" fill="#d7dae0" font-weight="700" textLength="8.4" lengthAdjust="spacingAndGlyphs">3</text>
-<text x="119.2" y="143" fill="#d7dae0" textLength="134.9" lengthAdjust="spacingAndGlyphs"> lines, removed </text>
-<text x="254.0" y="143" fill="#d7dae0" font-weight="700" textLength="8.4" lengthAdjust="spacingAndGlyphs">3</text>
-<text x="262.5" y="143" fill="#d7dae0" textLength="50.6" lengthAdjust="spacingAndGlyphs"> lines</text>
-<rect x="60.1" y="148.0" width="33.7" height="19" fill="#5f0000"/>
-<text x="60.1" y="162" fill="#d75f5f" textLength="33.7" lengthAdjust="spacingAndGlyphs"> 1 -</text>
-<rect x="93.9" y="148.0" width="1129.6" height="19" fill="#5f0000"/>
-<text x="93.9" y="162" fill="#ffffff" textLength="1129.6" lengthAdjust="spacingAndGlyphs">export function total(items: { price: number; qty: number }[]): number {                                                              </text>
-<rect x="60.1" y="167.0" width="33.7" height="19" fill="#5f0000"/>
-<text x="60.1" y="181" fill="#d75f5f" textLength="33.7" lengthAdjust="spacingAndGlyphs"> 2 -</text>
-<rect x="93.9" y="167.0" width="1129.6" height="19" fill="#5f0000"/>
-<text x="93.9" y="181" fill="#ffffff" textLength="1129.6" lengthAdjust="spacingAndGlyphs">  return items.reduce((sum, item) =&gt; sum + item.price * item.qty, 0)                                                                  </text>
-<rect x="60.1" y="186.0" width="33.7" height="19" fill="#005f00"/>
-<text x="60.1" y="200" fill="#5fd75f" textLength="33.7" lengthAdjust="spacingAndGlyphs"> 1 +</text>
-<rect x="93.9" y="186.0" width="50.6" height="19" fill="#005f00"/>
-<text x="93.9" y="200" fill="#ff005f" textLength="50.6" lengthAdjust="spacingAndGlyphs">export</text>
-<rect x="144.4" y="186.0" width="8.4" height="19" fill="#005f00"/>
-<rect x="152.9" y="186.0" width="67.4" height="19" fill="#005f00"/>
-<text x="152.9" y="200" fill="#5fd7ff" textLength="67.4" lengthAdjust="spacingAndGlyphs">function</text>
-<rect x="220.3" y="186.0" width="8.4" height="19" fill="#005f00"/>
-<rect x="228.8" y="186.0" width="42.1" height="19" fill="#005f00"/>
-<text x="228.8" y="200" fill="#afd700" textLength="42.1" lengthAdjust="spacingAndGlyphs">total</text>
-<rect x="270.9" y="186.0" width="8.4" height="19" fill="#005f00"/>
-<text x="270.9" y="200" fill="#ffffff" textLength="8.4" lengthAdjust="spacingAndGlyphs">(</text>
-<rect x="279.3" y="186.0" width="42.1" height="19" fill="#005f00"/>
-<text x="279.3" y="200" fill="#afd700" textLength="42.1" lengthAdjust="spacingAndGlyphs">items</text>
-<rect x="321.5" y="186.0" width="92.7" height="19" fill="#005f00"/>
-<text x="321.5" y="200" fill="#ff8700" textLength="92.7" lengthAdjust="spacingAndGlyphs">: { price: </text>
-<rect x="414.2" y="186.0" width="50.6" height="19" fill="#005f00"/>
-<text x="414.2" y="200" fill="#afd700" textLength="50.6" lengthAdjust="spacingAndGlyphs">number</text>
-<rect x="464.8" y="186.0" width="59.0" height="19" fill="#005f00"/>
-<text x="464.8" y="200" fill="#ff8700" textLength="59.0" lengthAdjust="spacingAndGlyphs">; qty: </text>
-<rect x="523.8" y="186.0" width="50.6" height="19" fill="#005f00"/>
-<text x="523.8" y="200" fill="#afd700" textLength="50.6" lengthAdjust="spacingAndGlyphs">number</text>
-<rect x="574.4" y="186.0" width="33.7" height="19" fill="#005f00"/>
-<text x="574.4" y="200" fill="#ff8700" textLength="33.7" lengthAdjust="spacingAndGlyphs"> }[]</text>
-<rect x="608.1" y="186.0" width="67.4" height="19" fill="#008700"/>
-<text x="608.1" y="200" fill="#ff8700" textLength="67.4" lengthAdjust="spacingAndGlyphs">, tax = </text>
-<rect x="675.5" y="186.0" width="8.4" height="19" fill="#008700"/>
-<text x="675.5" y="200" fill="#af87ff" textLength="8.4" lengthAdjust="spacingAndGlyphs">0</text>
-<rect x="684.0" y="186.0" width="25.3" height="19" fill="#005f00"/>
-<text x="684.0" y="200" fill="#ffffff" textLength="25.3" lengthAdjust="spacingAndGlyphs">): </text>
-<rect x="709.3" y="186.0" width="50.6" height="19" fill="#005f00"/>
-<text x="709.3" y="200" fill="#afd700" textLength="50.6" lengthAdjust="spacingAndGlyphs">number</text>
-<rect x="759.8" y="186.0" width="463.6" height="19" fill="#005f00"/>
-<text x="759.8" y="200" fill="#ffffff" textLength="463.6" lengthAdjust="spacingAndGlyphs"> {                                                     </text>
-<rect x="60.1" y="205.0" width="33.7" height="19" fill="#005f00"/>
-<text x="60.1" y="219" fill="#5fd75f" textLength="33.7" lengthAdjust="spacingAndGlyphs"> 2 +</text>
-<rect x="93.9" y="205.0" width="16.9" height="19" fill="#005f00"/>
-<rect x="110.7" y="205.0" width="42.1" height="19" fill="#008700"/>
-<text x="110.7" y="219" fill="#5fd7ff" textLength="42.1" lengthAdjust="spacingAndGlyphs">const</text>
-<rect x="152.9" y="205.0" width="8.4" height="19" fill="#005f00"/>
-<rect x="161.3" y="205.0" width="92.7" height="19" fill="#008700"/>
-<text x="161.3" y="219" fill="#ffffff" textLength="92.7" lengthAdjust="spacingAndGlyphs">subtotal = </text>
-<rect x="254.0" y="205.0" width="50.6" height="19" fill="#005f00"/>
-<text x="254.0" y="219" fill="#ffffff" textLength="50.6" lengthAdjust="spacingAndGlyphs">items.</text>
-<rect x="304.6" y="205.0" width="50.6" height="19" fill="#005f00"/>
-<text x="304.6" y="219" fill="#afd700" textLength="50.6" lengthAdjust="spacingAndGlyphs">reduce</text>
-<rect x="355.2" y="205.0" width="16.9" height="19" fill="#005f00"/>
-<text x="355.2" y="219" fill="#ffffff" textLength="16.9" lengthAdjust="spacingAndGlyphs">((</text>
-<rect x="372.1" y="205.0" width="75.9" height="19" fill="#005f00"/>
-<text x="372.1" y="219" fill="#ff8700" textLength="75.9" lengthAdjust="spacingAndGlyphs">sum, item</text>
-<rect x="447.9" y="205.0" width="286.6" height="19" fill="#005f00"/>
-<text x="447.9" y="219" fill="#ffffff" textLength="286.6" lengthAdjust="spacingAndGlyphs">) =&gt; sum + item.price * item.qty, </text>
-<rect x="734.5" y="205.0" width="8.4" height="19" fill="#005f00"/>
-<text x="734.5" y="219" fill="#af87ff" textLength="8.4" lengthAdjust="spacingAndGlyphs">0</text>
-<rect x="743.0" y="205.0" width="480.5" height="19" fill="#005f00"/>
-<text x="743.0" y="219" fill="#ffffff" textLength="480.5" lengthAdjust="spacingAndGlyphs">)                                                        </text>
-<rect x="60.1" y="224.0" width="33.7" height="19" fill="#005f00"/>
-<text x="60.1" y="238" fill="#5fd75f" textLength="33.7" lengthAdjust="spacingAndGlyphs"> 3 +</text>
-<rect x="93.9" y="224.0" width="16.9" height="19" fill="#005f00"/>
-<rect x="110.7" y="224.0" width="50.6" height="19" fill="#005f00"/>
-<text x="110.7" y="238" fill="#ff005f" textLength="50.6" lengthAdjust="spacingAndGlyphs">return</text>
-<rect x="161.3" y="224.0" width="109.6" height="19" fill="#005f00"/>
-<text x="161.3" y="238" fill="#ffffff" textLength="109.6" lengthAdjust="spacingAndGlyphs"> subtotal * (</text>
-<rect x="270.9" y="224.0" width="8.4" height="19" fill="#005f00"/>
-<text x="270.9" y="238" fill="#af87ff" textLength="8.4" lengthAdjust="spacingAndGlyphs">1</text>
-<rect x="279.3" y="224.0" width="944.2" height="19" fill="#005f00"/>
-<text x="279.3" y="238" fill="#ffffff" textLength="944.2" lengthAdjust="spacingAndGlyphs"> + tax)                                                                                                         </text>
-<text x="60.1" y="257" fill="#ffffff" opacity="0.6" textLength="25.3" lengthAdjust="spacingAndGlyphs"> 4 </text>
-<text x="85.4" y="257" fill="#ffffff" textLength="16.9" lengthAdjust="spacingAndGlyphs"> }</text>
-<rect x="60.1" y="262.0" width="33.7" height="19" fill="#5f0000"/>
-<text x="60.1" y="276" fill="#d75f5f" textLength="33.7" lengthAdjust="spacingAndGlyphs"> 4 -</text>
-<rect x="93.9" y="262.0" width="1129.6" height="19" fill="#5f0000"/>
-<text x="93.9" y="276" fill="#ffffff" textLength="1129.6" lengthAdjust="spacingAndGlyphs">// todo: tax                                                                                                                          </text>
-<text x="34.9" y="314" fill="#949494" textLength="33.7" lengthAdjust="spacingAndGlyphs">Ran </text>
-<text x="68.6" y="314" fill="#949494" font-weight="700" textLength="8.4" lengthAdjust="spacingAndGlyphs">1</text>
-<text x="77.0" y="314" fill="#949494" textLength="126.4" lengthAdjust="spacingAndGlyphs"> shell command </text>
+<text x="355" y="22" fill="#8a8f98" text-anchor="middle">glanceline: a status line that adds zero lines</text>
+<text x="34.9" y="86" fill="#949494" textLength="42.1" lengthAdjust="spacingAndGlyphs">Read </text>
+<text x="77.0" y="86" fill="#949494" font-weight="700" textLength="8.4" lengthAdjust="spacingAndGlyphs">1</text>
+<text x="85.4" y="86" fill="#949494" textLength="50.6" lengthAdjust="spacingAndGlyphs"> file </text>
+<text x="18.0" y="124" fill="#ffffff" textLength="8.4" lengthAdjust="spacingAndGlyphs">⏺</text>
+<text x="34.9" y="124" fill="#afd7ff" textLength="59.0" lengthAdjust="spacingAndGlyphs">total()</text>
+<text x="93.9" y="124" fill="#d7dae0" textLength="168.6" lengthAdjust="spacingAndGlyphs"> returns the sum of </text>
+<text x="262.5" y="124" fill="#afd7ff" textLength="92.7" lengthAdjust="spacingAndGlyphs">price × qty</text>
+<text x="355.2" y="124" fill="#d7dae0" textLength="168.6" lengthAdjust="spacingAndGlyphs"> for every item, or </text>
+<text x="523.8" y="124" fill="#afd7ff" textLength="8.4" lengthAdjust="spacingAndGlyphs">0</text>
+<text x="532.2" y="124" fill="#d7dae0" textLength="151.7" lengthAdjust="spacingAndGlyphs"> for an empty list</text>
+<text x="18.0" y="143" fill="#d7dae0" textLength="25.3" lengthAdjust="spacingAndGlyphs">  (</text>
+<text x="43.3" y="143" fill="#afd7ff" textLength="143.3" lengthAdjust="spacingAndGlyphs">src/checkout.ts:2</text>
+<text x="186.6" y="143" fill="#d7dae0" textLength="109.6" lengthAdjust="spacingAndGlyphs">), and since </text>
+<text x="296.2" y="143" fill="#afd7ff" textLength="92.7" lengthAdjust="spacingAndGlyphs">formatPrice</text>
+<text x="388.9" y="143" fill="#d7dae0" textLength="303.5" lengthAdjust="spacingAndGlyphs"> treats its input as cents, that sum</text>
+<text x="18.0" y="162" fill="#d7dae0" textLength="252.9" lengthAdjust="spacingAndGlyphs">  is most likely in cents too.</text>
+<text x="18.0" y="200" fill="#949494" textLength="8.4" lengthAdjust="spacingAndGlyphs">✻</text>
+<text x="34.9" y="200" fill="#949494" textLength="522.7" lengthAdjust="spacingAndGlyphs">Cogitated for 10s · done 11:00 AM · API $0.13 · cache read 82%</text>
+<rect x="18.0" y="224.0" width="16.9" height="19" fill="#3a3a3a"/>
+<text x="18.0" y="238" fill="#949494" textLength="16.9" lengthAdjust="spacingAndGlyphs">❯ </text>
+<rect x="34.9" y="224.0" width="598.5" height="19" fill="#3a3a3a"/>
+<text x="34.9" y="238" fill="#ffffff" textLength="598.5" lengthAdjust="spacingAndGlyphs">Use the Read tool (not the shell) to read north.jsonl, south.jsonl and </text>
+<rect x="18.0" y="243.0" width="16.9" height="19" fill="#3a3a3a"/>
+<rect x="34.9" y="243.0" width="640.7" height="19" fill="#3a3a3a"/>
+<text x="34.9" y="257" fill="#ffffff" textLength="640.7" lengthAdjust="spacingAndGlyphs">east.jsonl in src/fixtures in full, then name the most expensive product in </text>
+<rect x="18.0" y="262.0" width="16.9" height="19" fill="#3a3a3a"/>
+<rect x="34.9" y="262.0" width="109.6" height="19" fill="#3a3a3a"/>
+<text x="34.9" y="276" fill="#ffffff" textLength="109.6" lengthAdjust="spacingAndGlyphs">one sentence.</text>
+<text x="34.9" y="314" fill="#949494" textLength="42.1" lengthAdjust="spacingAndGlyphs">Read </text>
+<text x="77.0" y="314" fill="#949494" font-weight="700" textLength="8.4" lengthAdjust="spacingAndGlyphs">3</text>
+<text x="85.4" y="314" fill="#949494" textLength="59.0" lengthAdjust="spacingAndGlyphs"> files </text>
 <text x="18.0" y="352" fill="#ffffff" textLength="8.4" lengthAdjust="spacingAndGlyphs">⏺</text>
-<text x="34.9" y="352" fill="#afd7ff" textLength="59.0" lengthAdjust="spacingAndGlyphs">total()</text>
-<text x="93.9" y="352" fill="#d7dae0" textLength="33.7" lengthAdjust="spacingAndGlyphs"> in </text>
-<text x="127.6" y="352" fill="#afd7ff" textLength="92.7" lengthAdjust="spacingAndGlyphs">checkout.ts</text>
-<text x="220.3" y="352" fill="#d7dae0" textLength="193.9" lengthAdjust="spacingAndGlyphs"> now takes an optional </text>
-<text x="414.2" y="352" fill="#afd7ff" textLength="25.3" lengthAdjust="spacingAndGlyphs">tax</text>
-<text x="439.5" y="352" fill="#d7dae0" textLength="607.0" lengthAdjust="spacingAndGlyphs"> rate (default 0, so 0.08 means 8%) and returns the item subtotal times </text>
-<text x="1046.5" y="352" fill="#afd7ff" textLength="59.0" lengthAdjust="spacingAndGlyphs">1 + tax</text>
-<text x="1105.5" y="352" fill="#d7dae0" textLength="42.1" lengthAdjust="spacingAndGlyphs">, so </text>
-<text x="1147.6" y="352" fill="#afd7ff" textLength="59.0" lengthAdjust="spacingAndGlyphs">cart.ts</text>
-<text x="1206.6" y="352" fill="#d7dae0" textLength="16.9" lengthAdjust="spacingAndGlyphs">&#x27;s</text>
-<text x="18.0" y="371" fill="#d7dae0" textLength="92.7" lengthAdjust="spacingAndGlyphs">  existing </text>
-<text x="110.7" y="371" fill="#afd7ff" textLength="101.2" lengthAdjust="spacingAndGlyphs">total([...])</text>
-<text x="211.9" y="371" fill="#d7dae0" textLength="185.5" lengthAdjust="spacingAndGlyphs"> call still returns 6.</text>
-<text x="18.0" y="409" fill="#d7dae0" textLength="328.8" lengthAdjust="spacingAndGlyphs">  Your uncommitted change was only the </text>
-<text x="346.8" y="409" fill="#afd7ff" textLength="101.2" lengthAdjust="spacingAndGlyphs">// todo: tax</text>
-<text x="447.9" y="409" fill="#d7dae0" textLength="817.7" lengthAdjust="spacingAndGlyphs"> comment, and I removed it now that tax is handled. I couldn&#x27;t type-check this because TypeScript</text>
-<text x="18.0" y="428" fill="#d7dae0" textLength="286.6" lengthAdjust="spacingAndGlyphs">  isn&#x27;t installed in this project.</text>
-<text x="18.0" y="466" fill="#949494" textLength="8.4" lengthAdjust="spacingAndGlyphs">✻</text>
-<text x="34.9" y="466" fill="#949494" textLength="505.8" lengthAdjust="spacingAndGlyphs">Brewed for 16s · done 4:15 PM · $0.22 · 87% cached · 3 tools</text>
-<text x="18.0" y="504" fill="#808080" textLength="1264.5" lengthAdjust="spacingAndGlyphs">──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────</text>
-<text x="18.0" y="523" fill="#d7dae0" textLength="16.9" lengthAdjust="spacingAndGlyphs">❯ </text>
-<text x="34.9" y="523" fill="#d7dae0" opacity="0.6" textLength="92.7" lengthAdjust="spacingAndGlyphs">commit this</text>
-<text x="18.0" y="542" fill="#808080" textLength="1264.5" lengthAdjust="spacingAndGlyphs">──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────</text>
-<text x="34.9" y="561" fill="#ffd700" textLength="126.4" lengthAdjust="spacingAndGlyphs">⏵⏵ auto mode on</text>
-<text x="161.3" y="561" fill="#949494" textLength="1003.2" lengthAdjust="spacingAndGlyphs"> (shift+tab to cycle) · Opus 5.5 high · context 4% · 5h 64%, out at 18:00 · wk 50% (3d10h) · cache 59m · feat/checkout*</text>
+<text x="26.4" y="352" fill="#d7dae0" textLength="657.5" lengthAdjust="spacingAndGlyphs"> All three files were cut off around line 350 of 451, so I&#x27;ll read the rest of</text>
+<text x="18.0" y="371" fill="#d7dae0" textLength="59.0" lengthAdjust="spacingAndGlyphs">  each.</text>
+<text x="34.9" y="409" fill="#949494" textLength="42.1" lengthAdjust="spacingAndGlyphs">Read </text>
+<text x="77.0" y="409" fill="#949494" font-weight="700" textLength="8.4" lengthAdjust="spacingAndGlyphs">3</text>
+<text x="85.4" y="409" fill="#949494" textLength="59.0" lengthAdjust="spacingAndGlyphs"> files </text>
+<text x="18.0" y="447" fill="#ffffff" textLength="8.4" lengthAdjust="spacingAndGlyphs">⏺</text>
+<text x="26.4" y="447" fill="#d7dae0" textLength="657.5" lengthAdjust="spacingAndGlyphs"> I read all 1,350 products across the three files. The first read of each file</text>
+<text x="18.0" y="466" fill="#d7dae0" textLength="649.1" lengthAdjust="spacingAndGlyphs">  was cut off around line 350 of 451, so I read the rest separately. The most</text>
+<text x="18.0" y="485" fill="#d7dae0" textLength="193.9" lengthAdjust="spacingAndGlyphs">  expensive product is </text>
+<text x="211.9" y="485" fill="#d7dae0" font-weight="700" textLength="160.2" lengthAdjust="spacingAndGlyphs">Classic Blender 715</text>
+<text x="372.1" y="485" fill="#d7dae0" textLength="126.4" lengthAdjust="spacingAndGlyphs"> (SKU-00715 in </text>
+<text x="498.5" y="485" fill="#afd7ff" textLength="92.7" lengthAdjust="spacingAndGlyphs">south.jsonl</text>
+<text x="591.2" y="485" fill="#d7dae0" textLength="92.7" lengthAdjust="spacingAndGlyphs">) at 24,976</text>
+<text x="18.0" y="504" fill="#d7dae0" textLength="607.0" lengthAdjust="spacingAndGlyphs">  cents, or $249.76, just ahead of north&#x27;s Deluxe Bottle 188 at $249.69.</text>
+<text x="18.0" y="542" fill="#949494" textLength="8.4" lengthAdjust="spacingAndGlyphs">✻</text>
+<text x="34.9" y="542" fill="#949494" textLength="278.2" lengthAdjust="spacingAndGlyphs">Worked for 20s · done 11:01 AM · </text>
+<text x="313.1" y="542" fill="#d78787" font-weight="700" textLength="101.2" lengthAdjust="spacingAndGlyphs">+86k context</text>
+<text x="414.2" y="542" fill="#949494" textLength="101.2" lengthAdjust="spacingAndGlyphs"> · API $0.75</text>
+<text x="18.0" y="580" fill="#808080" textLength="674.4" lengthAdjust="spacingAndGlyphs">────────────────────────────────────────────────────────────────────────────────</text>
+<text x="18.0" y="599" fill="#d7dae0" textLength="16.9" lengthAdjust="spacingAndGlyphs">❯ </text>
+<text x="18.0" y="618" fill="#808080" textLength="674.4" lengthAdjust="spacingAndGlyphs">────────────────────────────────────────────────────────────────────────────────</text>
+<text x="34.9" y="637" fill="#949494" textLength="590.1" lengthAdjust="spacingAndGlyphs">⏸ manual mode on · ? for shortcuts · ctx 13% · wk 79% ! out ~Thu 17:35</text>
 </svg>

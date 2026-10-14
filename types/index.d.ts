@@ -41,10 +41,42 @@ export type Receipt = {
   durationMs: number
   /** Background work was still running when the turn ended. */
   background: boolean
+  /** The largest prompt-cache write of one main-loop request in the turn. */
+  cacheWrite?: number
+  /** Whether the session had a cache before the turn, so a first write is no news. */
+  warmBefore?: boolean
+  /** Failed tool calls in the main loop; `tool` names the tool when they were all one. */
+  failures?: number
+  failedTool?: string
+  /** A background agent overlapped the turn, so the session's cost growth is not the turn's alone. */
+  overlap?: boolean
+  /** The turn's first request rebuilt a prompt cache that had gone cold. */
+  cold?: boolean
+  /** A compaction ran during the turn, with its size before and after. */
+  compacted?: { before?: number; after?: number }
+  /** The context window size, for what counts as a big jump. */
+  window?: number
+  /** The turn's cost over the median of the recent attributable turns, fixed when it closed. */
+  ratio?: number
 }
 
 /** The turn running now, for the spinner. */
-export type TurnLive = { id: string; startAt: number; costAt?: number; contextAt?: number; tools: number; agents: number }
+export type TurnLive = {
+  id: string
+  startAt: number
+  costAt?: number
+  contextAt?: number
+  tools: number
+  agents: number
+  failures?: number
+  /** The tool that failed, while every failure was the same tool; null once they differ. */
+  failedTool?: string | null
+  cacheWrite?: number
+  warmBefore?: boolean
+  cold?: boolean
+  overlap?: boolean
+  compacted?: { before?: number; after?: number }
+}
 
 export type AgentRow = {
   id: string
@@ -77,6 +109,9 @@ export type Totals = {
   compactions: Compaction[]
   /** Context growth of the last main-loop turns, for the forecast. */
   growth: number[]
+  /** Main-loop input tokens read from the cache, and all main-loop input tokens, for a weighted hit rate. */
+  cacheRead?: number
+  inputTokens?: number
 }
 
 /** The context window by category, as /context counts it locally. */

@@ -54,7 +54,7 @@ export const CASES: any[] = [
       "utcOffsetMinutes": 0
     },
     "lines": [
-      "Opus 5.5 (high effort) · context 41% (118k left) · 5h 23% (resets in 2h 14m, on track) · week 41% (resets in 3d 5h, on track) · cache warm (59m left) · main*"
+      "Opus 5.5 (high effort) · ctx 41% (118k left) · 5h 23% (resets in 2h 14m) · week 41% (resets in 3d 5h)"
     ]
   },
   {
@@ -111,7 +111,7 @@ export const CASES: any[] = [
       "utcOffsetMinutes": 0
     },
     "lines": [
-      "Opus 5.5 (high effort) · context 41% (118k left) · 5h 23% (resets in 2h 14m, on track) · week 41% (resets in 3d 5h, on track) · cache warm (59m left) · main*"
+      "Opus 5.5 (high effort) · ctx 41% (118k left) · 5h 23% (resets in 2h 14m) · week 41% (resets in 3d 5h)"
     ]
   },
   {
@@ -168,7 +168,7 @@ export const CASES: any[] = [
       "utcOffsetMinutes": 0
     },
     "lines": [
-      "Opus 5.5 high · context 41% · 5h 23% (2h14m) · wk 41% (3d5h) · cache 59m · main*"
+      "Opus 5.5 high · ctx 41% · 5h 23% (2h14m) · wk 41% (3d5h)"
     ]
   },
   {
@@ -225,7 +225,7 @@ export const CASES: any[] = [
       "utcOffsetMinutes": 0
     },
     "lines": [
-      "Opus 5.5 · ctx 41% · 5h 23% · wk 41% · cache 59m · main*"
+      "Opus 5.5 high · ctx 41% · 5h 23% (2h14m) · wk 41% (3d5h)"
     ]
   },
   {
@@ -282,7 +282,7 @@ export const CASES: any[] = [
       "utcOffsetMinutes": 0
     },
     "lines": [
-      "Opus 5.5 · ctx 41% · 5h 23% · wk 41% · cache 59m"
+      "Opus 5.5 · ctx 41% · 5h 23% · wk 41%"
     ]
   },
   {
@@ -395,7 +395,7 @@ export const CASES: any[] = [
       "utcOffsetMinutes": 0
     },
     "lines": [
-      "Opus 5.5 (high effort) · context 41% (118k left) · 5h 23% (resets in 2h 14m, on track) · cache warm (59m left)"
+      "Opus 5.5 (high effort) · ctx 41% (118k left) · 5h 23% (resets in 2h 14m)"
     ]
   },
   {
@@ -452,7 +452,7 @@ export const CASES: any[] = [
       "utcOffsetMinutes": 0
     },
     "lines": [
-      "Opus 5.5 (high effort) · context 41% (118k left) · 5h 23% (resets in 2h 14m, on track) · cache warm (59m left)"
+      "Opus 5.5 (high effort) · ctx 41% (118k left) · 5h 23% (resets in 2h 14m)"
     ]
   },
   {
@@ -509,7 +509,7 @@ export const CASES: any[] = [
       "utcOffsetMinutes": 0
     },
     "lines": [
-      "Opus 5.5 high · context 41% · 5h 23% (2h14m) · cache 59m"
+      "Opus 5.5 (high effort) · ctx 41% (118k left) · 5h 23% (resets in 2h 14m)"
     ]
   },
   {
@@ -566,7 +566,7 @@ export const CASES: any[] = [
       "utcOffsetMinutes": 0
     },
     "lines": [
-      "Opus 5.5 high · context 41% · 5h 23% (2h14m) · cache 59m"
+      "Opus 5.5 (high effort) · ctx 41% (118k left) · 5h 23% (resets in 2h 14m)"
     ]
   },
   {
@@ -623,7 +623,7 @@ export const CASES: any[] = [
       "utcOffsetMinutes": 0
     },
     "lines": [
-      "Opus 5.5 · ctx 41% · 5h 23% · cache 59m"
+      "Opus 5.5 high · ctx 41% · 5h 23% (2h14m)"
     ]
   },
   {
@@ -736,7 +736,7 @@ export const CASES: any[] = [
       "utcOffsetMinutes": 0
     },
     "lines": [
-      "Opus 5.5 (high effort) · context ▰▰▱▱▱ 41% (118k left) · 5h ▰▱▱▱▱ 23% (resets in 2h 14m, on track) · week ▰▰▱▱▱ 41% (resets in 3d 5h, on track) · cache warm (59m left)",
+      "Opus 5.5 (high effort) · context ▰▰▱▱▱ 41% (118k left) · 5h ▰▱▱▱▱ 23% (resets in 2h 14m) · week ▰▰▱▱▱ 41% (resets in 3d 5h) · cache warm (59m left)",
       "main* · PR #42 approved · $3.21 at API prices · 1h 12m session · +120 −14 lines"
     ]
   },
@@ -794,7 +794,7 @@ export const CASES: any[] = [
       "utcOffsetMinutes": 0
     },
     "lines": [
-      "Opus 5.5 high · context 41% (118k left) · 5h 23% (2h14m) · wk 41% (3d5h) · cache 59m",
+      "Opus 5.5 (high effort) · context ▰▰▱▱▱ 41% (118k left) · 5h ▰▱▱▱▱ 23% (resets in 2h 14m) · week ▰▰▱▱▱ 41% (resets in 3d 5h) · cache warm (59m left)",
       "main* · PR #42 approved · $3.21 at API prices · 1h 12m session · +120 −14 lines"
     ]
   },
@@ -852,7 +852,7 @@ export const CASES: any[] = [
       "utcOffsetMinutes": 0
     },
     "lines": [
-      "Opus 5.5 high · context 41% (118k left) · 5h 23% (2h14m) · wk 41% (3d5h) · cache 59m",
+      "Opus 5.5 high · ctx 41% (118k left) · 5h 23% (2h14m) · wk 41% (3d5h) · cache 59m",
       "main* · PR #42 approved · $3.21 at API prices · 1h 12m session · +120 −14 lines"
     ]
   },
@@ -910,7 +910,7 @@ export const CASES: any[] = [
       "utcOffsetMinutes": 0
     },
     "lines": [
-      "Opus 5.5 · context 41% · 5h 23% · wk 41% · cache 59m",
+      "Opus 5.5 · ctx 41% · 5h 23% · wk 41% · cache 59m",
       "main* · PR #42 · $3.21 · 1h12m · +120 −14"
     ]
   },
@@ -1125,7 +1125,7 @@ export const CASES: any[] = [
       "utcOffsetMinutes": 0
     },
     "lines": [
-      "Sonnet 5 (medium effort) · context 88% (24k left) · 5h 72% (on pace to run out at 10:03, resets 10:53) · week 64% (on pace to run out at Sat 14:53, resets Sun 08:53) · cache warm (<1m left) · feature/rate-limit-pace"
+      "Sonnet 5 (medium effort) · ctx 88% (24k left) · 5h 72% ! out ~10:03 (resets 10:53) · week 64% ! out ~Sat 14:53 (resets Sun 08:53) · cache warm (<1m left)"
     ]
   },
   {
@@ -1171,7 +1171,7 @@ export const CASES: any[] = [
       "utcOffsetMinutes": 0
     },
     "lines": [
-      "Sonnet 5 medium · context 88% · 5h 72%, out at 10:03 · wk 64%, out at Sat 14:53 · cache <1m · feature/rate-lim"
+      "Sonnet 5 (medium effort) · ctx 88% (24k left) · 5h 72% ! out ~10:03 (resets 10:53) · week 64% ! out ~Sat 14:53 (resets Sun 08:53) · cache warm (<1m left)"
     ]
   },
   {
@@ -1217,7 +1217,7 @@ export const CASES: any[] = [
       "utcOffsetMinutes": 0
     },
     "lines": [
-      "Sonnet 5 · ctx 88% · 5h 72%→10:03 · wk 64%→Sat 14:53 · cache <1m · feature/rate-lim"
+      "Sonnet 5 · ctx 88% · 5h 72% ! out ~10:03 · wk 64% ! out ~Sat 14:53 · cache <1m"
     ]
   },
   {
@@ -1263,7 +1263,7 @@ export const CASES: any[] = [
       "utcOffsetMinutes": 0
     },
     "lines": [
-      "Sonnet 5 · ctx 88% · 5h 72% · wk 64% · cache <1m · feature/rate-lim"
+      "ctx 88% · 5h 72% ! out ~10:03 · wk 64% ! out ~Sat 14:53 · cache <1m"
     ]
   },
   {
@@ -1309,7 +1309,7 @@ export const CASES: any[] = [
       "utcOffsetMinutes": 0
     },
     "lines": [
-      "Sonnet 5 · ctx 88% · 5h 72% · wk 64% · cache <1m"
+      "ctx 88% · 5h 72%! · wk 64%! · cache <1m"
     ]
   },
   {
@@ -1355,7 +1355,7 @@ export const CASES: any[] = [
       "utcOffsetMinutes": 0
     },
     "lines": [
-      "Sonnet 5 · ctx 88% · 5h 72%"
+      "ctx 88% · 5h 72%! · cache <1m"
     ]
   },
   {
@@ -1400,7 +1400,7 @@ export const CASES: any[] = [
       "utcOffsetMinutes": 0
     },
     "lines": [
-      "Sonnet 5 (medium effort) · context 88% (24k left) · 5h 72% (on pace to run out at 10:03, resets 10:53) · cache warm (<1m left)"
+      "Sonnet 5 (medium effort) · ctx 88% (24k left) · 5h 72% ! out ~10:03 (resets 10:53) · cache warm (<1m left)"
     ]
   },
   {
@@ -1446,7 +1446,7 @@ export const CASES: any[] = [
       "utcOffsetMinutes": 0
     },
     "lines": [
-      "Sonnet 5 (medium effort) · context 88% (24k left) · 5h 72% (on pace to run out at 10:03, resets 10:53) · cache warm (<1m left)"
+      "Sonnet 5 (medium effort) · ctx 88% (24k left) · 5h 72% ! out ~10:03 (resets 10:53) · cache warm (<1m left)"
     ]
   },
   {
@@ -1492,7 +1492,7 @@ export const CASES: any[] = [
       "utcOffsetMinutes": 0
     },
     "lines": [
-      "Sonnet 5 medium · context 88% · 5h 72%, out at 10:03 · cache <1m"
+      "Sonnet 5 medium · ctx 88% (24k left) · 5h 72% ! out ~10:03 (resets 10:53) · cache warm (<1m left)"
     ]
   },
   {
@@ -1538,7 +1538,7 @@ export const CASES: any[] = [
       "utcOffsetMinutes": 0
     },
     "lines": [
-      "Sonnet 5 medium · context 88% · 5h 72%, out at 10:03 · cache <1m"
+      "Sonnet 5 · ctx 88% · 5h 72% ! out ~10:03 · cache <1m"
     ]
   },
   {
@@ -1584,7 +1584,7 @@ export const CASES: any[] = [
       "utcOffsetMinutes": 0
     },
     "lines": [
-      "Sonnet 5 · ctx 88% · 5h 72%→10:03 · cache <1m"
+      "ctx 88% · 5h 72% ! out ~10:03 · cache <1m"
     ]
   },
   {
@@ -1630,7 +1630,7 @@ export const CASES: any[] = [
       "utcOffsetMinutes": 0
     },
     "lines": [
-      "Sonnet 5 · ctx 88% · 5h 72%"
+      "ctx 88% · 5h 72%! · cache <1m"
     ]
   },
   {
@@ -1675,7 +1675,7 @@ export const CASES: any[] = [
       "utcOffsetMinutes": 0
     },
     "lines": [
-      "Sonnet 5 (medium effort) · context ▰▰▰▰▱ 88% (24k left) · 5h ▰▰▰▰▱ 72% (on pace to run out at 10:03, resets 10:53) · week ▰▰▰▱▱ 64% (on pace to run out at Sat 14:53, resets Sun 08:53) · cache warm (<1m left)",
+      "Sonnet 5 (medium effort) · context ▰▰▰▰▱ 88% (24k left) · 5h ▰▰▰▰▱ 72% ! out ~10:03 (resets 10:53) · week ▰▰▰▱▱ 64% ! out ~Sat 14:53 (resets Sun 08:53) · cache warm (<1m left)",
       "feature/rate-limit-pace"
     ]
   },
@@ -1722,7 +1722,7 @@ export const CASES: any[] = [
       "utcOffsetMinutes": 0
     },
     "lines": [
-      "Sonnet 5 medium · context 88% (24k left) · 5h 72%, out at 10:03 · wk 64%, out at Sat 14:53 · cache <1m",
+      "Sonnet 5 · context ▰▰▰▰▱ 88% (24k left) · 5h ▰▰▰▰▱ 72% ! out ~10:03 (resets 10:53) · week ▰▰▰▱▱ 64% ! out ~Sat 14:53 (resets Sun 08:53) · cache warm (<1m left)",
       "feature/rate-limit-pace"
     ]
   },
@@ -1769,7 +1769,7 @@ export const CASES: any[] = [
       "utcOffsetMinutes": 0
     },
     "lines": [
-      "Sonnet 5 · context 88% · 5h 72%→10:03 · wk 64%→Sat 14:53 · cache <1m",
+      "Sonnet 5 · ctx 88% (24k left) · 5h 72% ! out ~10:03 · wk 64% ! out ~Sat 14:53 · cache <1m",
       "feature/rate-limit-pace"
     ]
   },
@@ -1816,7 +1816,7 @@ export const CASES: any[] = [
       "utcOffsetMinutes": 0
     },
     "lines": [
-      "Sonnet 5 · context 88% · 5h 72%→10:03 · wk 64%→Sat 14:53 · cache <1m",
+      "ctx 88% · 5h 72%! · wk 64%! · cache <1m",
       "feature/rate-limit-pace"
     ]
   },
@@ -1863,7 +1863,7 @@ export const CASES: any[] = [
       "utcOffsetMinutes": 0
     },
     "lines": [
-      "Sonnet 5 · ctx 88% · 5h 72% · wk 64% · cache <1m",
+      "ctx 88% · 5h 72%! · wk 64%! · cache <1m",
       "feature/rate-limit-pace"
     ]
   },
@@ -1910,7 +1910,7 @@ export const CASES: any[] = [
       "utcOffsetMinutes": 0
     },
     "lines": [
-      "Sonnet 5 · ctx 88% · 5h 72%",
+      "ctx 88% · 5h 72%! · cache <1m",
       "feature/rate-limit-pace"
     ]
   },
@@ -2007,7 +2007,7 @@ export const CASES: any[] = [
       "utcOffsetMinutes": 0
     },
     "lines": [
-      "Opus 5.5 (fast) · context 12% (880k left) · spend $416 of $500 monthly · cache cold (next turn rebuilds 84k)"
+      "Opus 5.5 (fast) · ctx 12% (880k left) · spend $416 of $500 monthly · cache cold (next turn rebuilds 84k)"
     ]
   },
   {
@@ -2046,7 +2046,7 @@ export const CASES: any[] = [
       "utcOffsetMinutes": 0
     },
     "lines": [
-      "Opus 5.5 (fast) · context 12% (880k left) · spend $416 of $500 monthly · cache cold (next turn rebuilds 84k)"
+      "Opus 5.5 (fast) · ctx 12% (880k left) · spend $416 of $500 monthly · cache cold (next turn rebuilds 84k)"
     ]
   },
   {
@@ -2085,7 +2085,7 @@ export const CASES: any[] = [
       "utcOffsetMinutes": 0
     },
     "lines": [
-      "Opus 5.5 · context 12% · spend 83% · cache cold"
+      "Opus 5.5 · ctx 12% · spend $416 of $500 monthly · cache cold (next turn rebuilds 84k)"
     ]
   },
   {
@@ -2124,7 +2124,7 @@ export const CASES: any[] = [
       "utcOffsetMinutes": 0
     },
     "lines": [
-      "Opus 5.5 · context 12% · spend 83% · cache cold"
+      "Opus 5.5 · ctx 12% · spend 83% · cache cold"
     ]
   },
   {
@@ -2163,7 +2163,7 @@ export const CASES: any[] = [
       "utcOffsetMinutes": 0
     },
     "lines": [
-      "Opus 5.5 · context 12% · spend 83% · cache cold"
+      "Opus 5.5 · ctx 12% · spend 83% · cache cold"
     ]
   },
   {
@@ -2202,7 +2202,7 @@ export const CASES: any[] = [
       "utcOffsetMinutes": 0
     },
     "lines": [
-      "Opus 5.5 · ctx 12%"
+      "spend 83% · cache cold"
     ]
   },
   {
@@ -2240,7 +2240,7 @@ export const CASES: any[] = [
       "utcOffsetMinutes": 0
     },
     "lines": [
-      "Opus 5.5 (fast) · context 12% (880k left) · cache cold (next turn rebuilds 84k)"
+      "Opus 5.5 (fast) · ctx 12% (880k left) · cache cold (next turn rebuilds 84k)"
     ]
   },
   {
@@ -2279,7 +2279,7 @@ export const CASES: any[] = [
       "utcOffsetMinutes": 0
     },
     "lines": [
-      "Opus 5.5 (fast) · context 12% (880k left) · cache cold (next turn rebuilds 84k)"
+      "Opus 5.5 (fast) · ctx 12% (880k left) · cache cold (next turn rebuilds 84k)"
     ]
   },
   {
@@ -2318,7 +2318,7 @@ export const CASES: any[] = [
       "utcOffsetMinutes": 0
     },
     "lines": [
-      "Opus 5.5 (fast) · context 12% (880k left) · cache cold (next turn rebuilds 84k)"
+      "Opus 5.5 (fast) · ctx 12% (880k left) · cache cold (next turn rebuilds 84k)"
     ]
   },
   {
@@ -2357,7 +2357,7 @@ export const CASES: any[] = [
       "utcOffsetMinutes": 0
     },
     "lines": [
-      "Opus 5.5 · context 12% · cache cold"
+      "Opus 5.5 · ctx 12% · cache cold (next turn rebuilds 84k)"
     ]
   },
   {
@@ -2396,7 +2396,7 @@ export const CASES: any[] = [
       "utcOffsetMinutes": 0
     },
     "lines": [
-      "Opus 5.5 · context 12% · cache cold"
+      "Opus 5.5 · ctx 12% · cache cold"
     ]
   },
   {
@@ -2435,7 +2435,7 @@ export const CASES: any[] = [
       "utcOffsetMinutes": 0
     },
     "lines": [
-      "Opus 5.5 · ctx 12%"
+      "ctx 12% · cache cold"
     ]
   },
   {
@@ -2551,7 +2551,7 @@ export const CASES: any[] = [
       "utcOffsetMinutes": 0
     },
     "lines": [
-      "Opus 5.5 · context 12% (880k left) · spend 83% · cache cold"
+      "Opus 5.5 · ctx 12% (880k left) · spend $416 of $500 monthly · cache cold (next turn rebuilds 84k)"
     ]
   },
   {
@@ -2590,7 +2590,7 @@ export const CASES: any[] = [
       "utcOffsetMinutes": 0
     },
     "lines": [
-      "Opus 5.5 · context 12% (880k left) · spend 83% · cache cold"
+      "Opus 5.5 · ctx 12% · spend 83% · cache cold"
     ]
   },
   {
@@ -2629,7 +2629,7 @@ export const CASES: any[] = [
       "utcOffsetMinutes": 0
     },
     "lines": [
-      "Opus 5.5 · context 12% · spend 83% · cache cold"
+      "Opus 5.5 · ctx 12% · spend 83% · cache cold"
     ]
   },
   {
@@ -2668,7 +2668,7 @@ export const CASES: any[] = [
       "utcOffsetMinutes": 0
     },
     "lines": [
-      "Opus 5.5 · ctx 12%"
+      "spend 83% · cache cold"
     ]
   },
   {
@@ -2731,7 +2731,7 @@ export const CASES: any[] = [
       "utcOffsetMinutes": 0
     },
     "lines": [
-      "Opus 5.5 (xhigh effort) · context 97% · 5h limit reached (resets in 41m)"
+      "Opus 5.5 (xhigh effort) · ctx 97% · 5h limit reached (resets in 41m)"
     ]
   },
   {
@@ -2760,7 +2760,7 @@ export const CASES: any[] = [
       "utcOffsetMinutes": 0
     },
     "lines": [
-      "Opus 5.5 (xhigh effort) · context 97% · 5h limit reached (resets in 41m)"
+      "Opus 5.5 (xhigh effort) · ctx 97% · 5h limit reached (resets in 41m)"
     ]
   },
   {
@@ -2789,7 +2789,7 @@ export const CASES: any[] = [
       "utcOffsetMinutes": 0
     },
     "lines": [
-      "Opus 5.5 (xhigh effort) · context 97% · 5h limit reached (resets in 41m)"
+      "Opus 5.5 (xhigh effort) · ctx 97% · 5h limit reached (resets in 41m)"
     ]
   },
   {
@@ -2818,7 +2818,7 @@ export const CASES: any[] = [
       "utcOffsetMinutes": 0
     },
     "lines": [
-      "Opus 5.5 (xhigh effort) · context 97% · 5h limit reached (resets in 41m)"
+      "Opus 5.5 (xhigh effort) · ctx 97% · 5h limit reached (resets in 41m)"
     ]
   },
   {
@@ -2847,7 +2847,7 @@ export const CASES: any[] = [
       "utcOffsetMinutes": 0
     },
     "lines": [
-      "Opus 5.5 xhigh · ctx 97% · 5h full (41m)"
+      "Opus 5.5 · ctx 97% · 5h full (41m)"
     ]
   },
   {
@@ -2876,7 +2876,7 @@ export const CASES: any[] = [
       "utcOffsetMinutes": 0
     },
     "lines": [
-      "Opus 5.5 · ctx 97% · 5h full"
+      "ctx 97% · 5h full (41m)"
     ]
   },
   {
@@ -2904,7 +2904,7 @@ export const CASES: any[] = [
       "utcOffsetMinutes": 0
     },
     "lines": [
-      "Opus 5.5 (xhigh effort) · context 97% · 5h limit reached (resets in 41m)"
+      "Opus 5.5 (xhigh effort) · ctx 97% · 5h limit reached (resets in 41m)"
     ]
   },
   {
@@ -2933,7 +2933,7 @@ export const CASES: any[] = [
       "utcOffsetMinutes": 0
     },
     "lines": [
-      "Opus 5.5 (xhigh effort) · context 97% · 5h limit reached (resets in 41m)"
+      "Opus 5.5 (xhigh effort) · ctx 97% · 5h limit reached (resets in 41m)"
     ]
   },
   {
@@ -2962,7 +2962,7 @@ export const CASES: any[] = [
       "utcOffsetMinutes": 0
     },
     "lines": [
-      "Opus 5.5 (xhigh effort) · context 97% · 5h limit reached (resets in 41m)"
+      "Opus 5.5 (xhigh effort) · ctx 97% · 5h limit reached (resets in 41m)"
     ]
   },
   {
@@ -2991,7 +2991,7 @@ export const CASES: any[] = [
       "utcOffsetMinutes": 0
     },
     "lines": [
-      "Opus 5.5 (xhigh effort) · context 97% · 5h limit reached (resets in 41m)"
+      "Opus 5.5 (xhigh effort) · ctx 97% · 5h limit reached (resets in 41m)"
     ]
   },
   {
@@ -3020,7 +3020,7 @@ export const CASES: any[] = [
       "utcOffsetMinutes": 0
     },
     "lines": [
-      "Opus 5.5 xhigh · ctx 97% · 5h full (41m)"
+      "Opus 5.5 · ctx 97% · 5h full (41m)"
     ]
   },
   {
@@ -3049,7 +3049,7 @@ export const CASES: any[] = [
       "utcOffsetMinutes": 0
     },
     "lines": [
-      "Opus 5.5 · ctx 97% · 5h full"
+      "ctx 97% · 5h full (41m)"
     ]
   },
   {
@@ -3164,7 +3164,7 @@ export const CASES: any[] = [
       "utcOffsetMinutes": 0
     },
     "lines": [
-      "Opus 5.5 xhigh · context 97% · 5h full (41m)"
+      "Opus 5.5 xhigh · context ▰▰▰▰▰ 97% · 5h limit reached (resets in 41m)"
     ]
   },
   {
@@ -3193,7 +3193,7 @@ export const CASES: any[] = [
       "utcOffsetMinutes": 0
     },
     "lines": [
-      "Opus 5.5 xhigh · context 97% · 5h full (41m)"
+      "Opus 5.5 · ctx 97% · 5h full (41m)"
     ]
   },
   {
@@ -3222,7 +3222,7 @@ export const CASES: any[] = [
       "utcOffsetMinutes": 0
     },
     "lines": [
-      "Opus 5.5 · ctx 97% · 5h full"
+      "ctx 97% · 5h full (41m)"
     ]
   },
   {
@@ -4053,8 +4053,7 @@ export const CASES: any[] = [
       "utcOffsetMinutes": 0
     },
     "lines": [
-      " main* · 󰚩 Opus 5.5 (high effort)",
-      "󰹗 cache warm (59m left)"
+      " main* · 󰚩 Opus 5.5 (high effort)"
     ]
   },
   {
@@ -4098,7 +4097,7 @@ export const CASES: any[] = [
       "utcOffsetMinutes": 330
     },
     "lines": [
-      "Sonnet 5 (medium effort) · context 88% (24k left) · 5h 72% (on pace to run out at 15:33, resets 16:23) · week 64% (on pace to run out at Sat 20:23, resets Sun 14:23) · cache warm (<1m left) · feature/rate-limit-pace"
+      "Sonnet 5 (medium effort) · ctx 88% (24k left) · 5h 72% ! out ~15:33 (resets 16:23) · week 64% ! out ~Sat 20:23 (resets Sun 14:23) · cache warm (<1m left)"
     ]
   },
   {
@@ -4142,7 +4141,7 @@ export const CASES: any[] = [
       "utcOffsetMinutes": 0
     },
     "lines": [
-      "Sonnet 5 (medium effort) · context 88% (24k left) · 5h 72% (on pace to run out at 10:04, resets 10:53) · week 64% (on pace to run out at Sat 14:54, resets Sun 08:53) · cache warm (<1m left) · feature/rate-limit-pace"
+      "Sonnet 5 (medium effort) · ctx 88% (24k left) · 5h 72% ! out ~10:04 (resets 10:53) · week 64% ! out ~Sat 14:54 (resets Sun 08:53) · cache warm (<1m left)"
     ]
   }
 ]

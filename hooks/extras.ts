@@ -10,6 +10,7 @@ import type { AgentRow, ContextView, Day, Forecast, Ledger, Receipt, Totals } fr
 
 export const EMPTY_TOTALS: Totals = {
   turns: 0, tools: 0, failures: 0, agents: 0, colds: 0, peakContext: 0, byTool: {}, compactions: [], growth: [],
+  cacheRead: 0, inputTokens: 0,
 }
 
 export function emptyDay(day: string): Day {
@@ -23,19 +24,23 @@ const plural = (n: number, one: string, many = `${one}s`) => `${n} ${n === 1 ? o
 /** The fields a receipt can show, in the order they are written. */
 export const RECEIPT_FIELDS = ['cost', 'cache', 'context', 'tools', 'agents', 'output'] as const
 export type ReceiptField = (typeof RECEIPT_FIELDS)[number]
+/** `adaptive` picks what the turn did that was out of the ordinary; a field list prints the same fields every time. */
+export type ReceiptSpec = 'adaptive' | ReceiptField[]
 export const RECEIPT_PRESETS: Record<string, ReceiptField[]> = {
   short: ['cost', 'cache', 'tools'],
   full: ['cost', 'cache', 'context', 'tools', 'agents', 'output'],
   off: [],
 }
 
-/** `short`, `full`, `off`, or a comma list of fields. */
-export function receiptFields(spec: unknown): ReceiptField[] {
-  if (typeof spec !== 'string') return RECEIPT_PRESETS.short ?? []
-  const preset = RECEIPT_PRESETS[spec.trim()]
+/** `adaptive`, `short`, `full`, `off`, or a comma list of fields. */
+export function receiptFields(spec: unknown): ReceiptSpec {
+  if (typeof spec !== 'string') return 'adaptive'
+  const name = spec.trim()
+  if (name === 'adaptive') return 'adaptive'
+  const preset = RECEIPT_PRESETS[name]
   if (preset) return preset
-  const picked = spec.split(',').map(s => s.trim()).filter((s): s is ReceiptField => (RECEIPT_FIELDS as readonly string[]).includes(s))
-  return picked.length ? picked : RECEIPT_PRESETS.short ?? []
+  const picked = name.split(',').map(s => s.trim()).filter((s): s is ReceiptField => (RECEIPT_FIELDS as readonly string[]).includes(s))
+  return picked.length ? picked : 'adaptive'
 }
 
 /** The share of a request's input the prompt cache served, 0 to 100. */
@@ -49,31 +54,122 @@ export function money(usd: number): string {
   return usd < 100 ? `$${usd.toFixed(2)}` : `$${Math.round(usd)}`
 }
 
-/** The receipt's parts, in field order; zero and unknown figures are left out. */
-export function receiptParts(r: Receipt, fields: readonly ReceiptField[]): string[] {
-  const parts: string[] = []
+/** One piece of a receipt: its words, and how loud it is (`accent` and up stand out). */
+export type Part = { text: string; tone?: Tone }
+
+/** The turn's cost at API prices, or nothing when background work makes it someone else's too. */
+function costPart(r: Receipt): Part | undefined {
+  return r.cost !== undefined && r.cost > 0 && !r.overlap ? { text: `API ${money(r.cost)}` } : undefined
+}
+
+function cachePart(r: Receipt): Part | undefined {
+  return r.cacheHit !== undefined ? { text: `cache read ${Math.floor(r.cacheHit)}%` } : undefined
+}
+
+/** The receipt's parts for a fixed field list, in field order; zero and unknown figures are left out. */
+export function receiptParts(r: Receipt, fields: readonly ReceiptField[]): Part[] {
+  const parts: Part[] = []
   for (const field of fields) {
-    if (field === 'cost' && r.cost !== undefined && r.cost > 0) parts.push(money(r.cost))
-    if (field === 'cache' && r.cacheHit !== undefined) parts.push(`${Math.floor(r.cacheHit)}% cached`)
-    if (field === 'context' && r.context !== undefined && r.context !== 0) {
-      parts.push(r.context > 0 ? `+${tokens(r.context)} context` : `−${tokens(-r.context)} context`)
-    }
-    if (field === 'tools' && r.tools > 0) parts.push(plural(r.tools, 'tool'))
-    if (field === 'agents' && r.agents > 0) parts.push(plural(r.agents, 'agent'))
-    if (field === 'output' && r.output) parts.push(`${tokens(r.output)} out`)
+    const part = field === 'cost' ? costPart(r)
+      : field === 'cache' ? cachePart(r)
+        : field === 'context' && r.context !== undefined && r.context !== 0
+          ? { text: r.context > 0 ? `+${tokens(r.context)} context` : `−${tokens(-r.context)} context` }
+          : field === 'tools' && r.tools > 0 ? { text: plural(r.tools, 'tool') }
+            : field === 'agents' && r.agents > 0 ? { text: plural(r.agents, 'agent') }
+              : field === 'output' && r.output ? { text: `${tokens(r.output)} out` } : undefined
+    if (part) parts.push(part)
   }
   return parts
 }
 
-/** ` · $0.38 · 94% cached · 7 tools`, the last parts dropped to fit `room`. */
-export function receiptText(r: Receipt, fields: readonly ReceiptField[], room?: number): string {
-  const parts = receiptParts(r, fields)
-  while (parts.length) {
-    const text = SEP + parts.join(SEP)
-    if (room === undefined || width(text) <= room) return text
-    parts.pop()
+/** A context jump worth a mention: 8k tokens, or 2% of the window when that is more. */
+export function bigJump(r: Receipt): boolean {
+  if (r.context === undefined || r.compacted) return false
+  return r.context >= Math.max(8000, 0.02 * (r.window ?? 0))
+}
+
+/** How much more than the recent median a turn has to cost, and by how many dollars, to be called out. */
+export const OUTLIER = { ratio: 3, dollars: 0.2, history: 5 }
+
+/**
+ * The turn's cost over the median of earlier attributable turns: undefined
+ * until there are `OUTLIER.history` of them, or when the turn's own cost is
+ * not attributable. Fixed when the turn closes, so an old receipt never
+ * changes its mind.
+ */
+export function costRatio(cost: number | undefined, overlap: boolean, earlier: readonly number[]): number | undefined {
+  if (cost === undefined || cost <= 0 || overlap || earlier.length < OUTLIER.history) return undefined
+  const sorted = [...earlier].sort((a, b) => a - b)
+  const middle = sorted.length / 2
+  const median = sorted.length % 2 ? sorted[Math.floor(middle)] ?? 0 : ((sorted[middle - 1] ?? 0) + (sorted[middle] ?? 0)) / 2
+  if (median <= 0 || cost - median < OUTLIER.dollars) return undefined
+  const ratio = cost / median
+  return ratio >= OUTLIER.ratio ? ratio : undefined
+}
+
+/**
+ * The one thing about a turn worth reading, if any: failed calls, a
+ * compaction, a big context jump, a large cache write that the context's
+ * growth doesn't explain. Observations, never diagnoses.
+ */
+export function receiptEvent(r: Receipt): Part | undefined {
+  if (r.failures !== undefined && r.failures >= 2) {
+    return { tone: 'bad', text: r.failedTool ? `${r.failures} failed ${r.failedTool} calls` : `${r.failures} failed calls` }
   }
-  return ''
+  if (r.compacted) {
+    const { before, after } = r.compacted
+    return { tone: 'accent', text: before && after !== undefined ? `compacted ${tokens(before)} → ${tokens(after)}` : 'compacted' }
+  }
+  if (bigJump(r)) return { tone: 'accent', text: `+${tokens(r.context ?? 0)} context` }
+  const write = r.cacheWrite ?? 0
+  if (r.warmBefore && write >= 20_000 && write >= Math.max(0, r.context ?? 0) + 10_000) {
+    return { tone: 'warn', text: `cache write ${tokens(write)}` }
+  }
+  return undefined
+}
+
+/**
+ * The adaptive receipt: an ordinary turn says what it cost and how much the
+ * cache served; an unusual one leads with what was unusual, then the cost.
+ * A cost several times the recent median says so after the cost.
+ */
+export function adaptiveParts(r: Receipt): Part[] {
+  const event = receiptEvent(r)
+  const cost = costPart(r)
+  const outlier = cost && r.ratio !== undefined ? { tone: 'accent' as Tone, text: `${Math.round(r.ratio)}x recent` } : undefined
+  if (event) return [event, cost, outlier].filter((p): p is Part => p !== undefined)
+  if (outlier && cost) return [cost, outlier]
+  return [cost, cachePart(r)].filter((p): p is Part => p !== undefined)
+}
+
+export function receiptSpec(r: Receipt, spec: ReceiptSpec): Part[] {
+  return spec === 'adaptive' ? adaptiveParts(r) : receiptParts(r, spec)
+}
+
+/** The parts that fit `room` (with their ` · ` leads), the last dropped first, so the lead fact stays. */
+export function fitParts(parts: readonly Part[], room?: number): Part[] {
+  const kept = [...parts]
+  while (kept.length) {
+    if (room === undefined || width(SEP + kept.map(p => p.text).join(SEP)) <= room) return kept
+    kept.pop()
+  }
+  return []
+}
+
+/** ` · API $0.38 · cache read 94%`, the last parts dropped to fit `room`. */
+export function receiptText(r: Receipt, spec: ReceiptSpec, room?: number): string {
+  const parts = fitParts(receiptSpec(r, spec), room)
+  return parts.length ? SEP + parts.map(p => p.text).join(SEP) : ''
+}
+
+/** The spinner's words for the running turn: cost so far, tools, agents, and failures once there are two. */
+export function spinnerParts(live: { tools: number; agents: number; failures?: number; failedTool?: string | null }, cost?: number): string[] {
+  const parts: string[] = []
+  if (cost !== undefined && cost >= 0.01) parts.push(`API ${money(cost)}`)
+  if (live.tools) parts.push(plural(live.tools, 'tool'))
+  if (live.agents) parts.push(plural(live.agents, 'agent'))
+  if (live.failures && live.failures >= 2) parts.push(live.failedTool ? `${live.failures} failed ${live.failedTool}` : `${live.failures} failed`)
+  return parts
 }
 
 /** A turn's length as Claude Code writes it on that line: `11s`, `1m 4s`, `1h 2m 3s`. */
@@ -131,9 +227,10 @@ export function forecast(contextTokens: number | undefined, threshold: number | 
 export function forecastSegment(f?: Forecast | null): Segment | undefined {
   if (!f) return undefined
   const tone: Tone | undefined = f.turns <= 2 ? 'warn' : undefined
-  const n = f.turns === 1 ? 'next turn' : `~${f.turns} turns`
+  // One turn out is said as "soon": the average of recent growth is rough.
+  if (f.turns <= 1) return { key: 'compact', priority: 72, tone, forms: ['compacts soon', 'compact soon', 'cmp soon'] }
   return { key: 'compact', priority: 72, tone,
-    forms: [f.turns === 1 ? 'compacts next turn' : `compacts in ~${f.turns} turns`, `compact ${n}`, `cmp ${f.turns}`] }
+    forms: [`compacts in ~${f.turns} turns`, `compact ~${f.turns} turns`, `cmp ~${f.turns}`] }
 }
 
 export function compactionText(c: { trigger: string; before?: number; after?: number }): string {
@@ -305,7 +402,7 @@ export function cardLines(c: CardInput): string[] {
     .filter(Boolean).join(SEP)
   const work = [plural(t.tools, 'tool call'), t.agents ? plural(t.agents, 'agent') : undefined,
     t.failures ? plural(t.failures, 'failed call') : undefined].filter(Boolean).join(SEP)
-  const cache = [c.cacheHit !== undefined ? `cache hit ${pct(c.cacheHit)}` : undefined,
+  const cache = [c.cacheHit !== undefined ? `cache read ${pct(c.cacheHit)}` : undefined,
     plural(t.compactions.length, 'compaction'), plural(t.colds, 'cold-cache rebuild')].filter(Boolean).join(SEP)
   const lines = ['glanceline · session card', head, work, cache]
   const money_ = [c.cost !== undefined ? `${money(c.cost)} at API prices` : undefined,

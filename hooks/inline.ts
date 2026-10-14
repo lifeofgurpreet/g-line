@@ -12,6 +12,13 @@ import type { Options, Payload, Placed, Segment } from './core'
  */
 export const MODE_LABEL = 26
 
+/**
+ * Columns of the label a quieter mode draws before the hint (`⏸ manual mode
+ * on · `). The hint the mod is handed leaves it out, and it stays while you
+ * type, so these columns are always kept free.
+ */
+export const QUIET_MODE_LABEL = 19
+
 /** The hint line's two-column indent, and the three columns the engine keeps free at its right end. */
 const EDGES = 5
 
@@ -32,7 +39,7 @@ export function accountSegment(line?: string | null): Segment | undefined {
  */
 export function tailRoom(columns: number | undefined, hint: string): number | undefined {
   if (columns === undefined) return undefined
-  const mode = /shift\+tab/i.test(hint) ? MODE_LABEL : 0
+  const mode = /shift\+tab/i.test(hint) ? MODE_LABEL : QUIET_MODE_LABEL
   return columns - EDGES - mode - width(hint) - SEP.length
 }
 

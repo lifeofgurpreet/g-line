@@ -1,7 +1,7 @@
 {
   "name": "glanceline",
-  "version": "0.3.0",
-  "description": "Your Claude Code session at a glance with zero extra rows: limits with pace, context, cache countdown and git on the hint line; a receipt on every turn's closing line; agents and compaction forecast in the footer; native heads-up notifications; a details pane and share card.",
+  "version": "0.4.0",
+  "description": "A status line that adds zero lines: limits with pace and context on Claude Code's hint line, a receipt on every turn that flags the unusual one (a context jump, a cache write, repeated failures), agents and compaction in the footer, heads-up notifications, a details pane.",
   "author": {
     "name": "Gurpreet"
   },
@@ -9,6 +9,7 @@
   "keywords": [
     "status line",
     "mod",
+    "turn receipt",
     "rate limits",
     "prompt cache",
     "context",
@@ -21,7 +22,7 @@
     "preset": {
       "type": "string",
       "title": "Layout",
-      "description": "minimal, default or full (two lines with bars, cost and git)",
+      "description": "minimal, default or full (adds bars, cost, session time and git; still one line under the prompt)",
       "options": [
         "default",
         "minimal",
@@ -54,13 +55,14 @@
     "receipt": {
       "type": "string",
       "title": "Turn receipt",
-      "description": "What each turn's closing line adds: short (cost, cache hit, tools), full (adds context, agents, output) or off",
+      "description": "What each turn's closing line adds: adaptive (the cost and cache reads, or what was unusual: a context jump, a large cache write, repeated failures), short (cost, cache, tools), full or off",
       "options": [
+        "adaptive",
         "short",
         "full",
         "off"
       ],
-      "default": "short"
+      "default": "adaptive"
     }
   }
 }

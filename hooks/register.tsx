@@ -17,14 +17,14 @@ import { atom, read, update } from 'claude-code'
 import type { EngineInterface, Register } from 'claude-code'
 
 import type { AgentRow, Receipt, Snap, Totals } from '../types'
-import { alerts, layoutKeys, modelName, num, pct, segments, str, tokens, width } from './core'
+import { SEP, alerts, layoutKeys, modelName, num, pct, segments, str, tokens, width } from './core'
 import type { Options, Payload, Preset, Segment, Tone } from './core'
 import {
-  EMPTY_TOTALS, RECEIPT_PRESETS, agentsSegment, cacheHit, cardLines, coach, compactionText, contextView, dayOf,
-  forecast, forecastSegment, isActive, isEnded, ledger, loopWarning, money, receiptFields, receiptText, spark,
-  staleKeys, target, todaySegment, turnLength, turnLineWidth, unusedServers,
+  EMPTY_TOTALS, RECEIPT_PRESETS, agentsSegment, cacheHit, cardLines, coach, compactionText, contextView, costRatio,
+  dayOf, fitParts, forecast, forecastSegment, isActive, isEnded, ledger, loopWarning, money, receiptFields, receiptSpec,
+  receiptText, spark, spinnerParts, staleKeys, target, todaySegment, turnLength, turnLineWidth, unusedServers,
 } from './extras'
-import type { ReceiptField } from './extras'
+import type { ReceiptSpec } from './extras'
 import { MOD_KEYS, inline, joined, modesWidth, tailRoom } from './inline'
 
 const snap = atom({ plugin: 'glanceline', key: 'snap' } as const, {})
@@ -59,7 +59,7 @@ type Config = {
   notify: Notify
   longTurnSeconds: number
   resetThreshold: number
-  receipt: ReceiptField[]
+  receipt: ReceiptSpec
   spinner: boolean
   footerLabels: boolean
   coach: boolean
@@ -71,8 +71,8 @@ type Config = {
 const DEFAULTS: Config = {
   preset: 'default', icons: 'none', toasts: true, cacheTtl: 'auto',
   notify: { cache: true, reset: true, longTurn: false, agents: false },
-  longTurnSeconds: 60, resetThreshold: 80, receipt: RECEIPT_PRESETS.short ?? [], spinner: true, footerLabels: true,
-  coach: true, toolStreak: 3, exportState: false,
+  longTurnSeconds: 60, resetThreshold: 80, receipt: 'adaptive', spinner: true, footerLabels: true,
+  coach: false, toolStreak: 3, exportState: false,
 }
 
 const COLORS: Record<Tone, string | undefined> = {
@@ -138,7 +138,7 @@ async function loadConfig($: EngineInterface, options: Record<string, unknown>):
   if (options.icons !== undefined && options.icons !== 'none') chosen.icons = options.icons
   if (options.toasts === false) chosen.toasts = false
   if (options.notifications === false) chosen.notify = false
-  if (options.receipt !== undefined && options.receipt !== 'short') chosen.receipt = options.receipt
+  if (options.receipt !== undefined && options.receipt !== 'adaptive') chosen.receipt = options.receipt
   return merge(config, chosen)
 }
 
@@ -227,6 +227,8 @@ let coldThisTurn = false
 const streaks = new Map<string, number>()
 
 const BACKGROUND = /\b\d+ (?:shells?|monitors?|tasks?|agents?|workflows?|background)\b/i
+/** Columns a receipt leaves for Claude Code's own words on a closing line that reports background work. */
+const BACKGROUND_ROOM = 64
 
 async function nowMs($: EngineInterface): Promise<number> {
   return $.clock.now()
@@ -268,7 +270,8 @@ async function measure($: EngineInterface): Promise<void> {
   }))
 }
 
-async function refreshGit($: EngineInterface): Promise<void> {
+async function refreshGit($: EngineInterface, force = false): Promise<void> {
+  if (!force && !layoutHas('git')) return
   try {
     const run = await $.process.run(
       ['git', '--no-optional-locks', 'status', '--porcelain=v1', '--branch', '--untracked-files=no'],
@@ -305,6 +308,7 @@ function optionsAt(seconds: number): Options {
 
 /** A heads-up that reaches you in another app, or a toast when no channel takes it. */
 async function heads($: EngineInterface, text: string, title: string, notify: boolean): Promise<void> {
+  if (await read($, hidden)) return
   if (notify) {
     try {
       if ((await $.ui.notify(text, { title })).isSent) return
@@ -312,7 +316,17 @@ async function heads($: EngineInterface, text: string, title: string, notify: bo
       // a hook refused it, or the write failed: fall back to the toast
     }
   }
-  if (config.toasts) $.ui.toast(text, { timeoutMs: 12_000 })
+  await toast($, text, 12_000)
+}
+
+/** A terminal toast, unless toasts are off or `/glanceline off` hid the mod. */
+async function toast($: EngineInterface, text: string, timeoutMs: number): Promise<void> {
+  if (config.toasts && !(await read($, hidden))) $.ui.toast(text, { timeoutMs })
+}
+
+/** Puts a command in the prompt box for Tab to take, unless the mod is hidden. */
+async function suggest($: EngineInterface, text: string): Promise<void> {
+  if (!(await read($, hidden))) await $.prompt.suggest({ text }).catch(() => undefined)
 }
 
 /** Marks an id as handled; true the first time. */
@@ -347,8 +361,8 @@ async function nudge($: EngineInterface): Promise<void> {
     // session in a hot window doesn't offer the same command again.
     const advice = config.coach && alert.id.startsWith('five_hour:') && (await firstAcrossSessions($, `coach:${alert.id}`))
       ? coach('five_hour', p.rate_limits?.five_hour, seconds, s.effort, offsetAt(seconds * 1000)) : undefined
-    if (config.toasts) $.ui.toast(advice ? advice.text : alert.text, { timeoutMs: 15_000 })
-    if (advice) await $.prompt.suggest({ text: advice.suggest }).catch(() => undefined)
+    await toast($, advice ? advice.text : alert.text, 15_000)
+    if (advice) await suggest($, advice.suggest)
   }
   // A window that reset while you were near or at its limit.
   for (const [key, peak] of Object.entries(s.peaks ?? {})) {
@@ -467,11 +481,24 @@ async function receiptOf($: EngineInterface, e: { durationMs: number; usage?: { 
   } catch {
     // no ledger: the receipt shows what the turn's usage says
   }
-  const active = (await read($, agents)).some(row => isActive(row.status))
+  const rows = await read($, agents)
+  const active = rows.some(row => isActive(row.status))
+  const overlap = (live?.overlap ?? false) || rows.some(row => row.background && isActive(row.status))
+  const earlier = Object.values(await read($, receipts)).sort((x, y) => x.endAt - y.endAt).slice(-20)
+    .filter(one => one.cost !== undefined && one.cost > 0 && !one.overlap).map(one => one.cost as number)
+  let window: number | undefined
+  try {
+    window = (await read($, snap)).context?.window
+  } catch {
+    window = undefined
+  }
   return {
     cost, context, cacheHit: e.usage ? cacheHit(e.usage) : undefined,
     tools: live?.tools ?? 0, agents: live?.agents ?? 0, output: e.usage?.output_tokens,
     endAt: await nowMs($), durationMs: e.durationMs, background: active || BACKGROUND.test(lastHint),
+    cacheWrite: live?.cacheWrite, warmBefore: live?.warmBefore, failures: live?.failures,
+    failedTool: live?.failedTool ?? undefined, overlap, cold: live?.cold, compacted: live?.compacted, window,
+    ratio: costRatio(cost, overlap, earlier),
   }
 }
 
@@ -490,8 +517,7 @@ async function afterTurn($: EngineInterface, r: Receipt, aborted: boolean): Prom
   } catch {
     // keep the last figures
   }
-  const cold = coldThisTurn
-  coldThisTurn = false
+  const cold = r.cold === true
   const t = await update($, totals, x => ({
     ...x, turns: x.turns + 1, colds: x.colds + (cold ? 1 : 0),
     peakContext: Math.max(x.peakContext, percent ?? 0),
@@ -502,10 +528,8 @@ async function afterTurn($: EngineInterface, r: Receipt, aborted: boolean): Prom
   const f = forecast(context, breakdown?.isAutoCompactEnabled ? breakdown.autoCompactThreshold : undefined, t.growth) ?? null
   await update($, outlook, () => f)
   if (f && f.turns <= 2 && (await once($, `compact:${t.compactions.length}`))) {
-    if (config.toasts) {
-      $.ui.toast(`Context compacts in ~${f.turns === 1 ? '1 turn' : `${f.turns} turns`}. To choose what's kept, run /compact with a note now${config.coach ? ' (Tab starts one)' : ''}.`, { timeoutMs: 15_000 })
-    }
-    if (config.coach) await $.prompt.suggest({ text: '/compact keep ' }).catch(() => undefined)
+    await toast($, `Context compacts ${f.turns <= 1 ? 'soon' : `in ~${f.turns} turns`}. To choose what's kept, run /compact with a note now${config.coach ? ' (Tab starts one)' : ''}.`, 15_000)
+    if (config.coach) await suggest($, '/compact keep ')
   }
   if (!aborted && r.durationMs >= config.longTurnSeconds * 1000 && config.notify.longTurn) {
     const cost = r.cost !== undefined && r.cost > 0 ? ` · ${money(r.cost)}` : ''
@@ -696,14 +720,13 @@ async function detailRows($: EngineInterface, seconds: number, columns?: number)
 async function cardText($: EngineInterface, seconds: number): Promise<string[]> {
   const s = await read($, snap)
   const t = await read($, totals)
-  const recent = Object.values(await read($, receipts))
-  const hits = recent.map(r => r.cacheHit).filter((n): n is number => n !== undefined)
   const p = payload(s, seconds, ttl)
   return cardLines({
     model: p.model?.display_name,
     elapsedSeconds: s.startedAt !== undefined ? seconds - s.startedAt / 1000 : undefined,
     totals: t, cost: s.costUsd,
-    cacheHit: hits.length ? hits.reduce((a, b) => a + b, 0) / hits.length : undefined,
+    // Weighted by tokens over the whole session, not an average of turns.
+    cacheHit: t.inputTokens ? ((t.cacheRead ?? 0) / t.inputTokens) * 100 : undefined,
     fiveHour: p.rate_limits?.five_hour?.used_percentage,
     agentsNow: (await read($, agents)).filter(row => isActive(row.status)).length,
     today: (await read($, ledgerAtom))?.today,
@@ -712,7 +735,7 @@ async function cardText($: EngineInterface, seconds: number): Promise<string[]> 
 
 async function openPane($: EngineInterface, mode: 'details' | 'card'): Promise<{ text: string }> {
   await update($, view, () => mode)
-  await pruneLedger($)
+  await Promise.all([pruneLedger($), refreshGit($, true)])
   try {
     const usage = await $.session.usage({ breakdown: 'summary' })
     const b = usage.context.breakdown
@@ -780,7 +803,10 @@ export const register: Register = (on, options) => {
     }
     coldThisTurn = false
     const startAt = await nowMs($)
-    await update($, turnNow, () => ({ id: e.turnId, startAt, costAt, contextAt, tools: 0, agents: 0 }))
+    const warmBefore = (await read($, snap)).cache?.cached === true
+    const overlap = (await read($, agents)).some(row => row.background && isActive(row.status))
+    await update($, turnNow, () => ({ id: e.turnId, startAt, costAt, contextAt, tools: 0, agents: 0, failures: 0,
+      cacheWrite: 0, warmBefore, overlap }))
     return next(e)
   })
 
@@ -807,6 +833,11 @@ export const register: Register = (on, options) => {
         return { ...s, model: e.model, effort: typeof e.effort === 'string' ? e.effort : s.effort,
           cache: { lastAt: started, cached, prefix, learned } }
       })
+      const cold = coldThisTurn
+      await update($, turnNow, live => (live ? { ...live, cold: live.cold || cold,
+        cacheWrite: Math.max(live.cacheWrite ?? 0, u.cache_creation_input_tokens) } : live))
+      await update($, totals, t => ({ ...t, cacheRead: (t.cacheRead ?? 0) + u.cache_read_input_tokens,
+        inputTokens: (t.inputTokens ?? 0) + u.input_tokens + u.cache_read_input_tokens + u.cache_creation_input_tokens }))
     }
     return result
   })
@@ -824,13 +855,17 @@ export const register: Register = (on, options) => {
       return { ...t, tools: t.tools + 1, failures: t.failures + (failed ? 1 : 0),
         byTool: { ...t.byTool, [tool]: { calls: was.calls + 1, failures: was.failures + (failed ? 1 : 0) } } }
     })
+    if (failed && e.agentId === undefined) {
+      await update($, turnNow, live => (live ? { ...live, failures: (live.failures ?? 0) + 1,
+        failedTool: live.failedTool === undefined || live.failedTool === tool ? tool : null } : live))
+    }
     if (config.toolStreak > 0) {
       const what = target(tool, e as unknown as Record<string, unknown>)
       const key = `${e.agentId ?? 'main'}|${tool}|${what}`
       const streak = failed ? (streaks.get(key) ?? 0) + 1 : 0
       if (failed) streaks.set(key, streak)
       else streaks.delete(key)
-      if (streak === config.toolStreak && config.toasts) $.ui.toast(loopWarning(tool, what, streak), { timeoutMs: 12_000 })
+      if (streak === config.toolStreak) await toast($, loopWarning(tool, what, streak), 12_000)
     }
     return result
   }).catch(($, e, next) => next(e))
@@ -843,7 +878,9 @@ export const register: Register = (on, options) => {
       status: 'running', background: e.background, teammate: e.isTeammate === true, startedAt: at }
     await update($, agents, list => [...list.filter(one => one.id !== row.id), row].slice(-50))
     await update($, totals, t => ({ ...t, agents: t.agents + 1 }))
-    if (e.parentAgentId === undefined) await update($, turnNow, live => (live ? { ...live, agents: live.agents + 1 } : live))
+    if (e.parentAgentId === undefined) {
+      await update($, turnNow, live => (live ? { ...live, agents: live.agents + 1, overlap: live.overlap || e.background === true } : live))
+    }
     return result
   }).catch(($, e, next) => next(e))
 
@@ -887,7 +924,8 @@ export const register: Register = (on, options) => {
     const c = { at: await nowMs($), trigger: e.trigger, before: result.tokensBefore, after: result.tokensAfter }
     await update($, totals, t => ({ ...t, compactions: [...t.compactions, c].slice(-20), growth: [] }))
     await update($, outlook, () => null)
-    if (config.toasts) $.ui.toast(compactionText(c), { timeoutMs: 8000 })
+    await update($, turnNow, live => (live ? { ...live, compacted: { before: c.before, after: c.after } } : live))
+    await toast($, compactionText(c), 8000)
     return result
   }).catch(($, e, next) => next(e))
 
@@ -895,7 +933,7 @@ export const register: Register = (on, options) => {
     const arg = e.args.trim().toLowerCase()
     if (arg === 'off' || arg === 'on') {
       await update($, hidden, () => arg === 'off')
-      return { text: arg === 'off' ? 'glanceline line hidden. `/glanceline on` brings it back.' : 'glanceline line shown.' }
+      return { text: arg === 'off' ? 'hidden, and quiet until `/glanceline on`.' : 'shown.' }
     }
     return openPane($, arg === 'card' ? 'card' : 'details')
   })
@@ -935,10 +973,8 @@ export const register: Register = (on, options) => {
     const live = await read($, turnNow)
     if (!live) return next(e)
     const s = await read($, snap)
-    const parts: string[] = []
-    if (live.costAt !== undefined && s.costUsd !== undefined && s.costUsd - live.costAt >= 0.01) parts.push(money(s.costUsd - live.costAt))
-    if (live.tools) parts.push(`${live.tools} ${live.tools === 1 ? 'tool' : 'tools'}`)
-    if (live.agents) parts.push(`${live.agents} ${live.agents === 1 ? 'agent' : 'agents'}`)
+    const cost = live.costAt !== undefined && s.costUsd !== undefined && !live.overlap ? s.costUsd - live.costAt : undefined
+    const parts = spinnerParts(live, cost)
     if (!parts.length) return next(e)
     const shown = e.props.message ?? e.props.word
     const lead = shown.endsWith('…') || shown.endsWith('...') ? '' : e.props.suffix
@@ -949,7 +985,7 @@ export const register: Register = (on, options) => {
   // receipt. The engine's drawing is kept whole; the receipt is laid over
   // the blank end of its row, starting where the engine's words stop.
   on('ui.render', { component: 'TurnDuration' }, async ($, e, next) => {
-    if (!config.receipt.length || e.surface !== 'terminal' || (await read($, hidden))) return next(e)
+    if (config.receipt.length === 0 || e.surface !== 'terminal' || (await read($, hidden))) return next(e)
     const r = (await read($, receipts))[e.requestId]
     if (!r) return next(e)
     const columns = e.viewport?.columns
@@ -960,18 +996,28 @@ export const register: Register = (on, options) => {
       done = undefined
     }
     const own = turnLineWidth(e.props.word, e.props.durationMs, done)
-    const text = receiptText(r, config.receipt, columns === undefined ? undefined : columns - own - 1)
-    if (!text) return next(e)
+    // Claude Code may add `· 1 shell still running` or `Waiting for 2
+    // background agents to finish` when background work is left, words whose
+    // width the mod is not told: then the receipt sits at the row's right end
+    // and keeps BACKGROUND_ROOM columns clear for them, or is left out.
+    const room = columns === undefined ? undefined : r.background ? columns - BACKGROUND_ROOM : columns - own - 1
+    const parts = fitParts(receiptSpec(r, config.receipt), room)
+    if (!parts.length) return next(e)
     const engine = await next(e)
     const { Box, Text } = $.ui.resolve(e)
-    // Claude Code may add `· 1 shell still running` when background work is
-    // left: then the receipt sits at the row's right end, clear of it.
     const place = r.background ? { right: 0 } : { left: own }
     return (
       <Box flexDirection="column">
         {engine}
-        <Box position="absolute" bottom={0} {...place}>
-          <Text dimColor wrap="truncate-end">{text}</Text>
+        <Box position="absolute" bottom={0} {...place} flexDirection="row">
+          {parts.map((part, index) => {
+            const loud = part.tone === 'accent' || part.tone === 'warn' || part.tone === 'bad'
+            return [
+              <Text key={`s${index}`} dimColor>{SEP}</Text>,
+              <Text key={`p${index}`} wrap="truncate-end" dimColor={!loud} bold={loud}
+                color={loud && part.tone ? COLORS[part.tone] : undefined}>{part.text}</Text>,
+            ]
+          })}
         </Box>
       </Box>
     )

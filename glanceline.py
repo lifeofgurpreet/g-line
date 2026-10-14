@@ -23,16 +23,18 @@ import time
 
 sys.dont_write_bytecode = True
 
-VERSION = "0.3.0"
+VERSION = "0.4.0"
 LIMIT = 262144          # stdin bytes accepted; Claude Code sends a few KB
 RESERVE = 4             # columns Claude Code keeps for its own padding
 REFRESH = 15            # seconds; keeps countdowns moving while idle
 SEP = " · "
+URGENT = 50             # priority a warning segment gains, so it outlasts the model name
+CACHE_QUIET = 15 * 60   # a warm cache stays off the line until this many seconds are left (not in full)
 GIT_TTL = 5             # seconds a git reading is reused within a session
 
 PRESETS = {
     "minimal": "model,context,five_hour,cache",
-    "default": "model,context,five_hour,seven_day,spend,cache,git",
+    "default": "model,context,five_hour,seven_day,spend,cache",
     "full": "model,context,five_hour,seven_day,spend,cache|git,pr,cost,time,lines,vim",
 }
 NERD = {
@@ -165,7 +167,7 @@ def model_segment(p, o):
     level = text(get(p, "effort", "level"), 12)
     detail = ", ".join(part for part in (f"{level} effort" if level else "", "fast" if p.get("fast_mode") is True else "") if part)
     forms = [f"{name} ({detail})", f"{name} {level}" if level else name, name] if detail else [name]
-    return Segment("model", 100, forms, "accent")
+    return Segment("model", 82, forms, "accent")
 
 
 def context_segment(p, o):
@@ -175,9 +177,9 @@ def context_segment(p, o):
     size = num(get(p, "context_window", "context_window_size"))
     inside = num(get(p, "context_window", "total_input_tokens"))
     left = size - inside if size is not None and inside is not None and size > inside else None
-    forms = [f"context {pct(used)}", f"ctx {pct(used)}"]
+    forms = [f"ctx {pct(used)}"]
     if left is not None:
-        forms.insert(0, f"context {pct(used)} ({tokens(left)} left)")
+        forms.insert(0, f"ctx {pct(used)} ({tokens(left)} left)")
     if o["full"]:
         forms.insert(0, f"context {bar(used)} {pct(used)}" + (f" ({tokens(left)} left)" if left is not None else ""))
     return Segment("context", 90, forms, pressure(used))
@@ -201,15 +203,14 @@ def window_segment(p, o, kind):
                                         f"{short} full"], "bad")
     if state and state[0] == "hot":
         at = clock(state[1], now, o["offset"])
-        reset = f", resets {clock(resets, now, o['offset'])}" if resets is not None else ""
+        reset = f" (resets {clock(resets, now, o['offset'])})" if resets is not None else ""
         tone = "bad" if state[1] - now < 30 * 60 else "warn"
-        return Segment(kind, priority, [f"{head} (on pace to run out at {at}{reset})",
-                                        f"{short} {pct(used)}, out at {at}",
-                                        f"{short} {pct(used)}→{at}", f"{short} {pct(used)}"], tone)
-    ok = "on track" if state and state[0] == "ok" else ""
+        return Segment(kind, priority, [f"{head} ! out ~{at}{reset}",
+                                        f"{short} {pct(used)} ! out ~{at}",
+                                        f"{short} {pct(used)}!"], tone)
     if left is None:
-        return Segment(kind, priority, [f"{head} ({ok})" if ok else head, f"{short} {pct(used)}"], pressure(used))
-    return Segment(kind, priority, [f"{head} (resets in {duration(left)}" + (f", {ok})" if ok else ")"),
+        return Segment(kind, priority, [head, f"{short} {pct(used)}"], pressure(used))
+    return Segment(kind, priority, [f"{head} (resets in {duration(left)})",
                                     f"{short} {pct(used)} ({duration(left, True)})", f"{short} {pct(used)}"],
                    pressure(used))
 
@@ -236,6 +237,8 @@ def cache_segment(p, o):
     expires = num(cache.get("expires_at"))
     if cache.get("warm") is True and expires is not None and expires > now:
         left = expires - now
+        if not o["full"] and left > CACHE_QUIET:
+            return None
         soon = left <= (300 if cache.get("ttl") == "1h" else 60)
         return Segment("cache", 80, [f"cache warm ({duration(left)} left)", f"cache {duration(left, True)}"],
                        "warn" if soon else "ok")
@@ -319,6 +322,8 @@ def segments(p, options):
             build = BUILDERS.get(key)
             segment = build(p, o) if build else None
             if segment:
+                if segment.tone in ("warn", "bad"):
+                    segment.priority += URGENT
                 if icons and key in NERD:
                     segment.forms = [NERD[key] + form for form in segment.forms]
                 line.append(segment)
@@ -340,25 +345,38 @@ def truncate(value, room):
 
 
 def fit_segments(items, room):
-    """One form per segment so the line fits `room` columns (see hooks/core.ts)."""
+    """One form per segment so the line fits `room` columns (see hooks/core.ts):
+    calm segments narrow first, warning ones keep their words longest."""
     if room is None:
         return [(item, item.forms[0]) for item in items]
     live = list(items)
     deepest = max([1] + [len(item.forms) for item in live])
-    tier = 0
+    tiers = {"calm": 0, "loud": 0}
+
+    def loud(item):
+        return item.tone in ("warn", "bad")
 
     def forms():
-        return [item.forms[min(tier, len(item.forms) - 1)] for item in live]
+        return [item.forms[min(tiers["loud"] if loud(item) else tiers["calm"], len(item.forms) - 1)] for item in live]
+
+    def drop_lowest():
+        lowest = 0
+        for index, item in enumerate(live):
+            if item.priority < live[lowest].priority:
+                lowest = index
+        live.pop(lowest)
 
     while width(SEP.join(forms())) > room:
-        if tier < deepest - 1:
-            tier += 1
+        if tiers["calm"] < deepest - 1:
+            tiers["calm"] += 1
+        elif tiers["loud"] < deepest - 2:
+            tiers["loud"] += 1
+        elif len(live) > 1 and any(not loud(item) for item in live):
+            drop_lowest()
+        elif tiers["loud"] < deepest - 1:
+            tiers["loud"] += 1
         elif len(live) > 1:
-            lowest = 0
-            for index, item in enumerate(live):
-                if item.priority < live[lowest].priority:
-                    lowest = index
-            live.pop(lowest)
+            drop_lowest()
         else:
             break
     return [(item, truncate(form, room)) for item, form in zip(live, forms())]
@@ -714,7 +732,7 @@ def demo():
                                        "recache_tokens_if_cold": 84213})
     theme = theme_from_env() if sys.stdout.isatty() else None
     offset = utc_offset_minutes(now)
-    for title, data, preset in (("on track", typical, "default"), ("running hot", hot, "default"),
+    for title, data, preset in (("typical", typical, "default"), ("running hot", hot, "default"),
                                 ("cache went cold", cold, "default"), ("full preset", typical, "full")):
         print(f"# {title}")
         for cols in (180, 110, 80, 50):

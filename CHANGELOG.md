@@ -1,5 +1,37 @@
 # Changelog
 
+## 0.4.0 (2026-10-14)
+
+The receipt flags the turn worth noticing. Still not one extra row.
+
+- **Adaptive receipts** (the new default, `receipt: adaptive`). An ordinary turn closes
+  with two quiet facts (`· API $0.13 · cache read 82%`). A turn that did something unusual
+  leads with it, bold and in colour: `+86k context` (at least 8k tokens, or 2% of the
+  window), `cache write 84k` (a large cache write the context's growth doesn't explain),
+  `3 failed Bash calls`, `compacted 182k → 31k`, or `API $1.42 · 4x recent` (three times the
+  median of the last attributable turns and 20 cents more). Each receipt is fixed when the
+  turn closes. `short`, `full` and field lists still work, worded the same way.
+- **Honest dollars.** When a background agent overlaps a turn, the session's cost growth
+  isn't the turn's alone, so the receipt and spinner leave the dollar figure out. Costs read
+  `API $0.75`. The share card's cache figure is now weighted by tokens over the whole session
+  instead of an average of turn percentages. A cold-cache rebuild is recorded on its own
+  turn, so a later turn can't take it.
+- **A quieter, smarter hint line.** The default layout drops the git branch (add `git` to
+  `segments` to keep it; glanceline then runs `git status` only when the branch is shown or
+  the pane is open). A warm prompt cache stays off the line until under 15 minutes are left;
+  `full` always shows it. `context` reads `ctx`, and "on track" is gone.
+- **What warns survives a narrow terminal.** A pace warning reads `5h 72% ! out ~10:03` (the
+  `!` and `~` work without colour, as the line is drawn dim), keeps its words while calm
+  segments narrow, and outlasts them, the model name first. The hint line now keeps room for
+  Claude Code's `⏸ manual mode on` label, so the engine no longer cuts the line's end.
+- **The spinner** says when a tool keeps failing: `· 5 tools · 2 failed Bash`.
+- **Quieter by default.** The pace coach and the `/compact` suggestion are off by default
+  (`coach: true` brings them back). `/glanceline off` now silences toasts, notifications and
+  suggestions too, not just the line. The compaction forecast says `compacts soon` instead
+  of promising the next turn.
+- `scripts/frames.py` records a tmux pane as timed frames and cuts them into the MP4 and GIF
+  in the README, from real captures. New screenshots throughout.
+
 ## 0.3.0 (2026-10-13)
 
 Everything new rides on lines Claude Code already draws, so the screen still gains no row.
