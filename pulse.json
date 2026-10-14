@@ -1,12 +1,18 @@
 {
  "schema": 1,
- "generated_at": "2026-10-14T02:58:35Z",
+ "generated_at": "2026-10-14T08:59:17Z",
  "items": [
   {
    "title": "Claude Code 2.1.299 released",
    "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.299",
    "source": "Claude Code releases",
    "published_at": "2026-10-14T02:49:42Z"
+  },
+  {
+   "title": "Singapore office and government MOU | Anthropic",
+   "url": "https://www.anthropic.com/news/singapore-office-opening",
+   "source": "Anthropic",
+   "published_at": "2026-10-14T08:31:43Z"
   },
   {
    "title": "Claude discovers a novel enzyme system",
