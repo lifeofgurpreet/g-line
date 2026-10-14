@@ -1,12 +1,12 @@
 {
  "schema": 1,
- "generated_at": "2026-10-14T01:57:20Z",
+ "generated_at": "2026-10-14T02:58:35Z",
  "items": [
   {
-   "title": "Claude Code 2.1.296 released",
-   "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.296",
+   "title": "Claude Code 2.1.299 released",
+   "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.299",
    "source": "Claude Code releases",
-   "published_at": "2026-10-09T19:28:59Z"
+   "published_at": "2026-10-14T02:49:42Z"
   },
   {
    "title": "Claude discovers a novel enzyme system",
