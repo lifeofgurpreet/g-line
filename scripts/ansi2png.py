@@ -22,6 +22,7 @@ MONO = ["/System/Library/Fonts/Menlo.ttc", "/usr/share/fonts/truetype/dejavu/Dej
 MONO_BOLD = [("/System/Library/Fonts/Menlo.ttc", 1), ("/usr/share/fonts/truetype/dejavu/DejaVuSansMono-Bold.ttf", 0)]
 SYMBOLS = ["/System/Library/Fonts/Apple Symbols.ttf", "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf"]
 UNICODE = ["/System/Library/Fonts/Supplemental/Arial Unicode.ttf", "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf"]
+MATH = ["/System/Library/Fonts/Supplemental/STIXGeneral.otf", "/usr/share/fonts/opentype/stix/STIXGeneral-Regular.otf"]  # 𝕏 and other math letters
 
 
 def font(paths, index=0):
@@ -68,7 +69,7 @@ def main():
     parser.add_argument("--out", required=True)
     args = parser.parse_args()
     rows = parse(sys.stdin.read().rstrip("\n").split("\n"))
-    regular, bold, symbols, wide = font(MONO), font(MONO_BOLD), font(SYMBOLS), font(UNICODE)
+    regular, bold, symbols, wide, math = font(MONO), font(MONO_BOLD), font(SYMBOLS), font(UNICODE), font(MATH)
     cw = regular.getlength("M")
     columns = args.columns or max(sum(len(t) for t, _ in runs) for runs in rows)
     width = int(columns * cw + 2 * PAD)
@@ -97,7 +98,7 @@ def main():
                 ch = STANDINS.get(ch, ch)
                 if ch != " ":
                     x = PAD + column * cw
-                    draw.text((x, top + LH / 2), ch, font=face_for(ch, (face, symbols, wide)) if ord(ch) > 0x7F else face, fill=colour, anchor="lm")
+                    draw.text((x, top + LH / 2), ch, font=face_for(ch, (face, symbols, wide, math)) if ord(ch) > 0x7F else face, fill=colour, anchor="lm")
                 column += 1
     image.save(args.out)
 
