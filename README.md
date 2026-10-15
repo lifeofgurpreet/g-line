@@ -150,7 +150,7 @@ It sends nothing about you, it never fetches while drawing, and it gives up afte
 seconds. Headline text is stripped of escape and control characters before it reaches your
 terminal. With Pulse off (the default), g-line makes no network requests at all.
 
-![Pulse on a long turn: Scurrying… · 1 tool · 5h 1% │ Claude discovers a… (Anthropic)](docs/pulse.png)
+![Pulse on a long turn: Churning… · 1 tool · 5h 9% │ 𝕏 @claudeai · 6d: Claude Dashboards and Claude Motion are in b…](docs/pulse.png)
 
 ### The pane, settings and share card
 
