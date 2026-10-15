@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-15T19:57:13Z",
+ "generated_at": "2026-10-15T22:10:23Z",
  "items": [
   {
    "title": "Claude Code 2.1.301 released",
@@ -9,34 +9,22 @@
    "published_at": "2026-10-15T19:22:06Z"
   },
   {
-   "title": "New on our Engineering blog: Creating in-house source control. In May, we merged around 2,500 code…",
-   "url": "https://x.com/AnthropicAI/status/2110047081414987957",
+   "title": "We’re beginning a process of publishing more frequent reports on model behavior, beyond what appear…",
+   "url": "https://x.com/AnthropicAI/status/2108680150556737819",
    "source": "𝕏 @AnthropicAI",
-   "published_at": "2026-10-13T16:36:41Z"
+   "published_at": "2026-10-09T22:04:59Z"
   },
   {
-   "title": "Applications are now open for two new Anthropic Fellowships. STEM Fellows (science and engineering)…",
-   "url": "https://x.com/AnthropicAI/status/2110720940665372825",
-   "source": "𝕏 @AnthropicAI",
-   "published_at": "2026-10-15T13:14:22Z"
-  },
-  {
-   "title": "Over the last few months, we’ve made significant progress in reducing the effectiveness of distilla…",
-   "url": "https://x.com/AnthropicAI/status/2109795898909950247",
-   "source": "𝕏 @AnthropicAI",
-   "published_at": "2026-10-12T23:58:35Z"
+   "title": "Offering expanded Claude access across all three branches of government",
+   "url": "https://www.anthropic.com/news/offering-expanded-claude-access-across-all-three-branches-of-government",
+   "source": "Anthropic",
+   "published_at": "2026-10-15T22:05:58Z"
   },
   {
    "title": "Anthropic update on independent evaluators",
    "url": "https://www.anthropic.com/news/an-update-on-independent-evaluators",
    "source": "Anthropic",
    "published_at": "2026-10-15T18:25:08Z"
-  },
-  {
-   "title": "Preparing for the 2026 US midterms",
-   "url": "https://www.anthropic.com/news/2026-us-midterms",
-   "source": "Anthropic",
-   "published_at": "2026-10-14T21:01:13Z"
   }
  ],
  "sources": "curated, Claude Code releases, X, Anthropic, Hacker News, Simon Willison"
