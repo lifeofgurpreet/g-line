@@ -1,12 +1,18 @@
 {
  "schema": 1,
- "generated_at": "2026-10-15T14:52:44Z",
+ "generated_at": "2026-10-15T15:53:59Z",
  "items": [
   {
    "title": "Claude Code 2.1.300 released",
    "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.300",
    "source": "Claude Code releases",
    "published_at": "2026-10-14T18:24:25Z"
+  },
+  {
+   "title": "Claude Dashboards and Claude Motion are in beta today. Ask Claude to turn your data into live dashb…",
+   "url": "https://x.com/claudeai/status/2108271552991252810",
+   "source": "𝕏 @claudeai",
+   "published_at": "2026-10-08T19:01:22Z"
   },
   {
    "title": "We’re beginning a process of publishing more frequent reports on model behavior, beyond what appear…",
@@ -21,12 +27,6 @@
    "published_at": "2026-10-08T20:16:15Z"
   },
   {
-   "title": "We're deepening our commitment to scientific research and technological discovery by committing $15…",
-   "url": "https://x.com/AnthropicAI/status/2108226292235809081",
-   "source": "𝕏 @AnthropicAI",
-   "published_at": "2026-10-08T16:01:31Z"
-  },
-  {
    "title": "Preparing for the 2026 US midterms",
    "url": "https://www.anthropic.com/news/2026-us-midterms",
    "source": "Anthropic",
@@ -37,12 +37,6 @@
    "url": "https://www.anthropic.com/news/singapore-office-opening",
    "source": "Anthropic",
    "published_at": "2026-10-14T08:31:43Z"
-  },
-  {
-   "title": "Redesigning source control at Anthropic",
-   "url": "https://www.anthropic.com/engineering/redesigning-source-control",
-   "source": "Hacker News",
-   "published_at": "2026-10-13T15:49:56Z"
   },
   {
    "title": "Hello Python 3.15, goodbye 3.10, and now I can use 3.11",
