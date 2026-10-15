@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-14T20:01:13Z",
+ "generated_at": "2026-10-15T10:16:19Z",
  "items": [
   {
    "title": "Claude Code 2.1.300 released",
@@ -9,10 +9,28 @@
    "published_at": "2026-10-14T18:24:25Z"
   },
   {
+   "title": "Claude Dashboards and Claude Motion are in beta today. Ask Claude to turn your data into live dashb…",
+   "url": "https://x.com/claudeai/status/2108271552991252810",
+   "source": "𝕏 @claudeai",
+   "published_at": "2026-10-08T19:01:22Z"
+  },
+  {
+   "title": "We’re beginning a process of publishing more frequent reports on model behavior, beyond what appear…",
+   "url": "https://x.com/AnthropicAI/status/2108680150556737819",
+   "source": "𝕏 @AnthropicAI",
+   "published_at": "2026-10-09T22:04:59Z"
+  },
+  {
+   "title": "An astrophysicist worked with Claude Science to create the first complete ultraviolet map of the sk…",
+   "url": "https://x.com/AnthropicAI/status/2108290395599667700",
+   "source": "𝕏 @AnthropicAI",
+   "published_at": "2026-10-08T20:16:15Z"
+  },
+  {
    "title": "Preparing for the 2026 US midterms",
    "url": "https://www.anthropic.com/news/2026-us-midterms",
    "source": "Anthropic",
-   "published_at": "2026-10-14T19:32:27Z"
+   "published_at": "2026-10-14T21:01:13Z"
   },
   {
    "title": "Singapore office and government MOU | Anthropic",
@@ -33,5 +51,5 @@
    "published_at": "2026-10-12T18:15:38Z"
   }
  ],
- "sources": "curated, Claude Code releases, Anthropic, Hacker News, Simon Willison"
+ "sources": "curated, Claude Code releases, X, Anthropic, Hacker News, Simon Willison"
 }
