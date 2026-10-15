@@ -11,11 +11,12 @@ and only when a person turns Pulse on.
 Sources, each labelled as what it is (no source is passed off as another):
   - curated.json on the `pulse` branch: items the operator adds by hand. An X post needs only its
     URL; its author and text are filled in. `x_accounts` there replaces the watched account list.
-  - X posts (no API key): recent post IDs of a few watched accounts come from X's embedded-timeline
-    page when it answers (it rate-limits hard, so a refusal is skipped) and from the Internet
-    Archive's index (complete but days behind). X's public embed endpoint then gives each post's
-    text, likes and reply status. Replies and other people's posts are left out; the best of the
-    last 7 days by likes, discounted by age, are kept. The mod shows the age of older posts.
+  - X posts (no API key), as fresh as X itself: links to posts are harvested from Techmeme's front
+    page, from the hot pages of AI subreddits (RSS) and, for the watched accounts, from the
+    Internet Archive's index. X's public embed endpoint then gives each post's author, text, time,
+    likes and reply status. A post has to be about AI itself, and fresh or strong: under 2 hours
+    with 10 likes, under a day while gaining 30 likes an hour, or under 3 days with 3,000. They
+    are ranked by likes over age, at most two per story; replies are left out. The mod shows ages.
   - Claude Code releases (GitHub API, anthropics/claude-code)
   - Anthropic news (anthropic.com sitemap, pages changed in the last 3 days, their own titles)
   - Hacker News (Algolia API): stories naming Claude, or linking Anthropic's news or engineering pages, with 80+ points in 2 days
@@ -33,6 +34,7 @@ import subprocess
 import sys
 import urllib.request
 import xml.etree.ElementTree as ET
+from concurrent.futures import ThreadPoolExecutor
 
 UA = 'g-line-pulse/1 (+https://github.com/lifeofgurpreet/g-line)'
 NOW = dt.datetime.now(dt.timezone.utc)
@@ -40,6 +42,11 @@ MAX_ITEMS = 10
 # Accounts watched for X posts: Claude, Anthropic and the Claude Code team.
 X_ACCOUNTS = ('claudeai', 'AnthropicAI', 'bcherny', '_catwu', 'alexalbert__')
 X_STATUS = re.compile(r'^https://(?:www\.)?(?:x|twitter)\.com/([A-Za-z0-9_]{1,15})/status/(\d{5,25})')
+X_LINK = re.compile(r'(?:x|twitter)\.com/([A-Za-z0-9_]{1,15})/status/(\d{15,25})')
+AI_WORDS = re.compile(r'\b(?:ai|a\.i\.|llms?|gpt[\w.-]*|claude|anthropic|openai|gemini|deepmind|chatgpt|codex|copilot|cursor|'
+                      r'mistral|llama|deepseek|qwen|grok|xai|nvidia|agents?|agentic|models?|mcp|inference|chatbots?|'
+                      r'superintelligence|agi|hugging ?face|perplexity|open[- ]weights?|neural|interpretability|alignment|'
+                      r'benchmarks?|tokens?|params|parameters|gguf|fine-?tun\w*|transformers?|evals?|vibe[- ]?cod\w*)\b', re.I)
 
 
 def get(url, timeout=20):
@@ -132,7 +139,8 @@ def x_post(post_id):
     start, end = (data.get('display_text_range') or [0, len(text)])[:2]
     text = re.sub(r'https://t\.co/\S+', '', text[start:end])
     return {'handle': data['user']['screen_name'], 'text': text, 'likes': data.get('favorite_count', 0),
-            'reply': bool(data.get('in_reply_to_status_id_str')), 'at': parse_time(data.get('created_at') or '')}
+            'reply': bool(data.get('in_reply_to_status_id_str')), 'sensitive': bool(data.get('possibly_sensitive')),
+            'at': parse_time(data.get('created_at') or '')}
 
 
 def x_item(post, post_id):
@@ -144,44 +152,89 @@ def x_posted_at(post_id):
     return dt.datetime.fromtimestamp(((int(post_id) >> 22) + 1288834974657) / 1000, dt.timezone.utc)
 
 
-def x_recent_ids(handle, days):
-    """Recent post IDs of one account: X's embedded timeline when it answers, plus the Archive's index."""
-    ids = set()
-    try:
-        page = get(f'https://syndication.twitter.com/srv/timeline-profile/screen-name/{handle}')
-        ids.update(re.findall(r'"id_str":"(\d{15,25})"', page))
-    except Exception:
-        pass  # usually a 429: the page allows very few requests per address
+def text_of(markup):
+    return re.sub(r'\s+', ' ', html.unescape(re.sub(r'<[^>]+>', ' ', markup)))
+
+
+def techmeme_x_ids():
+    """X posts linked from Techmeme's front page, each with the story cluster it sits in."""
+    page = get('https://www.techmeme.com/')
+    found = {}
+    for n, cluster in enumerate(re.split(r'<DIV CLASS="clus">', page, flags=re.I)[1:]):
+        for handle, post_id in X_LINK.findall(cluster):
+            if handle.lower() != 'techmeme':  # its own posts repeat the headline; the voices around it are the news
+                found.setdefault(post_id, f'techmeme#{n}')
+    return found
+
+
+def reddit_x_ids():
+    """X posts linked from the hot pages of AI subreddits (their public RSS)."""
+    feed = get('https://www.reddit.com/r/ClaudeAI+Anthropic+ClaudeCode+singularity+LocalLLaMA+OpenAI+ChatGPTCoding/hot/.rss?limit=100')
+    return {post_id: f'reddit:{post_id}' for _, post_id in X_LINK.findall(html.unescape(feed))}
+
+
+def archive_x_ids(handle, days=3):
+    """The watched account's post IDs in the Internet Archive's index (complete, but often days behind)."""
     since = (NOW - dt.timedelta(days=days)).strftime('%Y%m%d')
-    try:
-        rows = json.loads(get(f'https://web.archive.org/cdx/search/cdx?url=x.com/{handle}/status/&matchType=prefix'
-                              f'&from={since}&output=json&fl=original&collapse=urlkey&limit=300', timeout=40) or '[]')
-    except Exception:
-        rows = []
-    for (original,) in rows[1:]:
-        m = X_STATUS.match(original.replace('http://', 'https://'))
-        if m and m.group(1).lower() == handle.lower():
-            ids.add(m.group(2))
-    return {i for i in ids if NOW - x_posted_at(i) < dt.timedelta(days=days)}
+    rows = json.loads(get(f'https://web.archive.org/cdx/search/cdx?url=x.com/{handle}/status/&matchType=prefix'
+                          f'&from={since}&output=json&fl=original&collapse=urlkey&limit=300', timeout=40) or '[]')
+    return {m.group(2): f'archive:{m.group(2)}' for (original,) in rows[1:]
+            for m in [X_STATUS.match(original.replace('http://', 'https://'))] if m and m.group(1).lower() == handle.lower()}
 
 
-def x_posts(accounts=X_ACCOUNTS, days=7, keep=3):
-    """The best recent posts of the watched accounts: most likes, discounted by age."""
+def x_qualifies(likes, age_h, watched):
+    """Fresh, or strong enough to stay: under 2 h with 10 likes, under a day while gaining
+    30 an hour, under 3 days with 3,000. A watched account's likes count five times."""
+    likes *= 5 if watched else 1
+    return (age_h < 2 and likes >= 10) or (age_h < 24 and likes >= 30 * age_h) or (age_h < 72 and likes >= 3000)
+
+
+def x_posts(accounts=X_ACCOUNTS, keep=5, newest=2):
+    """X posts about AI: the strongest by likes over age, then the `newest` freshest of the rest
+    that qualify, so a quiet hour's new posts aren't crowded out by the day's big one. At most
+    two per story and per author."""
     watched = {a.lower() for a in accounts}
-    ids = set()
-    for handle in accounts:
-        ids |= x_recent_ids(handle, days)
-    found = []
-    for post_id in sorted(ids, reverse=True)[:40]:
+    story, notes = {}, []
+    for name, fn in [('techmeme', techmeme_x_ids), ('reddit', reddit_x_ids)] + \
+                    [(f'@{a}', lambda a=a: archive_x_ids(a)) for a in accounts]:
         try:
-            post = x_post(post_id)
+            for post_id, where in fn().items():
+                story.setdefault(post_id, where)
+        except Exception as exc:
+            notes.append(f'{name} {type(exc).__name__}')
+    ids = sorted((i for i in story if NOW - x_posted_at(i) < dt.timedelta(hours=72)), reverse=True)[:100]
+
+    def fetch(post_id):
+        try:
+            return post_id, x_post(post_id)
         except Exception:
+            return post_id, None
+
+    with ThreadPoolExecutor(8) as pool:
+        posts = list(pool.map(fetch, ids))
+    scored = []
+    for post_id, post in posts:
+        # A reply reads as half a sentence on its own.
+        if not post or post['reply'] or post['sensitive'] or not post['at'] or not clean(post['text']):
             continue
-        # A reply, even in their own thread, reads as half a sentence on its own; a timeline can also carry others' posts.
-        if post and not post['reply'] and post['at'] and post['handle'].lower() in watched and clean(post['text']):
-            age_days = max(0.0, (NOW - post['at']).total_seconds() / 86400)
-            found.append((post['likes'] / (1 + age_days), x_item(post, post_id)))
-    return [i for _, i in sorted(found, key=lambda x: -x[0])[:keep]]
+        age_h = max(0.0, (NOW - post['at']).total_seconds() / 3600)
+        is_watched = post['handle'].lower() in watched
+        # The post itself has to be about AI: a story about AI also gathers jokes and asides.
+        if (is_watched or AI_WORDS.search(post['text'])) and x_qualifies(post['likes'], age_h, is_watched):
+            scored.append(((post['likes'] * (5 if is_watched else 1) + 20) / (age_h + 2) ** 1.5, post, post_id))
+    out, taken = [], {}
+    strongest = sorted(scored, key=lambda x: -x[0])
+    freshest = sorted(scored, key=lambda x: -int(x[2]))  # IDs grow with time
+    for limit, ranked in ((keep - newest, strongest), (keep, freshest), (keep, strongest)):
+        for _, post, post_id in ranked:
+            keys = (f"@{post['handle'].lower()}", story[post_id])
+            if len(out) < limit and post_id not in taken and all(taken.get(k, 0) < 2 for k in keys):
+                for k in (*keys, post_id):
+                    taken[k] = taken.get(k, 0) + 1
+                out.append(x_item(post, post_id))
+    if notes:
+        print('x sources down:', ', '.join(notes), file=sys.stderr)
+    return out
 
 
 def curated_file(repo):
@@ -217,8 +270,8 @@ def build(repo):
     items, notes = [], []
     picked = curated_file(repo) if repo else {}
     accounts = tuple(a for a in picked.get('x_accounts', X_ACCOUNTS) if re.fullmatch(r'[A-Za-z0-9_]{1,15}', str(a)))
-    for name, fn in (('curated', lambda: curated(picked)), ('claude-code', claude_code_releases),
-                     ('x', lambda: x_posts(accounts)), ('anthropic', anthropic_news), ('hn', hacker_news),
+    for name, fn in (('curated', lambda: curated(picked)), ('x', lambda: x_posts(accounts)),
+                     ('claude-code', claude_code_releases), ('anthropic', anthropic_news), ('hn', hacker_news),
                      ('simonw', simon_willison)):
         try:
             got = fn()
@@ -232,7 +285,7 @@ def build(repo):
             seen.add(i['url'])
             unique.append(i)
     feed = {'schema': 1, 'generated_at': iso(NOW), 'items': unique[:MAX_ITEMS],
-            'sources': 'curated, Claude Code releases, X, Anthropic, Hacker News, Simon Willison'}
+            'sources': 'curated, X (found via Techmeme, Reddit, the Internet Archive), Claude Code releases, Anthropic, Hacker News, Simon Willison'}
     return feed, notes
 
 

@@ -69,12 +69,14 @@ export function parseFeed(raw: string, fetchedAt: number, limit = 8): PulseFeed 
   return { fetchedAt, generatedAt: clean(d.generated_at, 32) || undefined, items }
 }
 
-/** An X post leads with its author, and with its age once it is a day old: `𝕏 @claudeai · 3d`. Other items: nothing. */
+/** An X post leads with its author and age: `𝕏 @claudeai · 40m`, `· 3h`, `· 2d`. Other items: nothing. */
 export function xLead(item: PulseItem, nowMs?: number): string {
   if (!item.source.startsWith('𝕏 @')) return ''
   const at = item.at ? Date.parse(item.at) : Number.NaN
-  const days = nowMs !== undefined && Number.isFinite(at) ? Math.floor((nowMs - at) / 86_400_000) : 0
-  return days >= 1 ? `${item.source} · ${days}d` : item.source
+  if (nowMs === undefined || !Number.isFinite(at)) return item.source
+  const minutes = Math.max(1, Math.floor((nowMs - at) / 60_000))
+  const age = minutes < 60 ? `${minutes}m` : minutes < 1440 ? `${Math.floor(minutes / 60)}h` : `${Math.floor(minutes / 1440)}d`
+  return `${item.source} · ${age}`
 }
 
 /** The headline the spinner shows `elapsedMs` into a turn, cut to `room` columns, or nothing yet. */

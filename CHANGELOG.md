@@ -1,5 +1,15 @@
 # Changelog
 
+## 0.5.2 (2026-10-16): posts on 𝕏 from the last hours, not the last week
+
+- **Fresh posts on 𝕏.** Pulse now finds posts through the links Techmeme's front page and AI
+  subreddits carry, as well as the Internet Archive, so they can be minutes old. A post has to
+  be about AI itself, and either under 2 hours old, or gaining about 30 likes an hour (up to a
+  day), or past 3,000 likes (up to 3 days). The strongest lead; two of the five slots go to the
+  newest, so a quiet hour's posts aren't crowded out. At most two per story or author.
+- **Every post shows its age:** `𝕏 @AnthropicAI · 3h:`, `· 40m`, `· 2d`.
+- The feed rebuilds every 30 minutes.
+
 ## 0.5.1 (2026-10-15): posts on 𝕏 in Pulse
 
 - **Pulse carries posts on 𝕏.** The feed now picks the best recent posts from @claudeai,

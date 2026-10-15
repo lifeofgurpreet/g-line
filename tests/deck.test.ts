@@ -70,16 +70,18 @@ test('Pulse text is cleaned before it can reach the terminal, and links must be 
   expect(tickerText(feed, 16_000, 10)).toBe('')
 })
 
-test('An X post leads with its author, and its age once it is a day old', async () => {
+test('An X post leads with its author and its age', async () => {
   const at = Date.parse('2026-10-10T12:00:00Z')
   const feed = parseFeed(JSON.stringify({ schema: 1, items: [
     { title: 'Claude Dashboards are in beta today', url: 'https://x.com/claudeai/status/1', source: '𝕏 @claudeai', published_at: '2026-10-10T12:00:00Z' },
   ] }), 0)
   const post = feed!.items[0]!
-  expect(xLead(post, at + 3_600_000)).toBe('𝕏 @claudeai')
+  expect(xLead(post, at + 40 * 60_000)).toBe('𝕏 @claudeai · 40m')
+  expect(xLead(post, at + 3_600_000)).toBe('𝕏 @claudeai · 1h')
   expect(xLead(post, at + 3 * 86_400_000)).toBe('𝕏 @claudeai · 3d')
+  expect(xLead(post)).toBe('𝕏 @claudeai')
   expect(xLead({ title: 'Good', url: 'https://example.com/a', source: 'Simon Willison' }, at)).toBe('')
-  expect(tickerText(feed, 16_000, 80, at + 3_600_000)).toBe('𝕏 @claudeai: Claude Dashboards are in beta today')
+  expect(tickerText(feed, 16_000, 80, at + 3_600_000)).toBe('𝕏 @claudeai · 1h: Claude Dashboards are in beta today')
   expect(tickerText(feed, 16_000, 80, at + 3 * 86_400_000)).toBe('𝕏 @claudeai · 3d: Claude Dashboards are in beta today')
   expect(tickerText(feed, 16_000, 30, at)).toBe('Claude Dashboards are in beta…')
 })
