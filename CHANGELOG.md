@@ -1,5 +1,17 @@
 # Changelog
 
+## 0.5.1 (2026-10-15): posts on 𝕏 in Pulse
+
+- **Pulse carries posts on 𝕏.** The feed now picks the best recent posts from @claudeai,
+  @AnthropicAI and the Claude Code team (most likes, discounted by age; replies left out).
+  On the spinner and in the pane they lead with the author, and with their age once a day
+  old: `𝕏 @claudeai · 2d: Claude Dashboards and Claude Motion are in beta today…`. No X API
+  key is involved; the feed finds posts through X's public embed pages and the Internet
+  Archive's index, so it can trail X by a few days.
+- **Maintainer picks can be just a link.** An X post's URL in `curated.json` is enough; the
+  author and text are filled in.
+- Anthropic news titles no longer end in "| Anthropic".
+
 ## 0.5.0 (2026-10-14): glanceline is now g-line
 
 Live status, and receipts on the turns. A mod only.

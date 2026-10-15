@@ -9,7 +9,13 @@ and only when a person turns Pulse on.
   python3 tools/pulse/build_pulse.py --publish --repo /path/to/g-line   # build, commit to `pulse`, push
 
 Sources, each labelled as what it is (no source is passed off as another):
-  - curated.json on the `pulse` branch: items the operator adds by hand (his own posts by URL)
+  - curated.json on the `pulse` branch: items the operator adds by hand. An X post needs only its
+    URL; its author and text are filled in. `x_accounts` there replaces the watched account list.
+  - X posts (no API key): recent post IDs of a few watched accounts come from X's embedded-timeline
+    page when it answers (it rate-limits hard, so a refusal is skipped) and from the Internet
+    Archive's index (complete but days behind). X's public embed endpoint then gives each post's
+    text, likes and reply status. Replies and other people's posts are left out; the best of the
+    last 7 days by likes, discounted by age, are kept. The mod shows the age of older posts.
   - Claude Code releases (GitHub API, anthropics/claude-code)
   - Anthropic news (anthropic.com sitemap, pages changed in the last 3 days, their own titles)
   - Hacker News (Algolia API): stories naming Claude, or linking Anthropic's news or engineering pages, with 80+ points in 2 days
@@ -31,6 +37,9 @@ import xml.etree.ElementTree as ET
 UA = 'g-line-pulse/1 (+https://github.com/lifeofgurpreet/g-line)'
 NOW = dt.datetime.now(dt.timezone.utc)
 MAX_ITEMS = 10
+# Accounts watched for X posts: Claude, Anthropic and the Claude Code team.
+X_ACCOUNTS = ('claudeai', 'AnthropicAI', 'bcherny', '_catwu', 'alexalbert__')
+X_STATUS = re.compile(r'^https://(?:www\.)?(?:x|twitter)\.com/([A-Za-z0-9_]{1,15})/status/(\d{5,25})')
 
 
 def get(url, timeout=20):
@@ -79,7 +88,7 @@ def anthropic_news():
         page = get(url)
         title = re.search(r'<title>([^<]+)</title>', page)
         if title:
-            out.append(item(re.sub(r'\s*\\?\s*Anthropic\s*$', '', title.group(1)), url, 'Anthropic', at))
+            out.append(item(re.sub(r'\s*[|\\]\s*Anthropic\s*$', '', title.group(1)), url, 'Anthropic', at))
     return out
 
 
@@ -114,28 +123,103 @@ def simon_willison():
     return out[:2]
 
 
-def curated(repo):
-    """Hand-picked items from curated.json on the pulse branch; each needs title, url and source."""
+def x_post(post_id):
+    """One X post from the public embed endpoint (the one embedded posts use; no key), or None."""
+    data = json.loads(get(f'https://cdn.syndication.twimg.com/tweet-result?id={post_id}&lang=en&token=x'))
+    if data.get('__typename') != 'Tweet' or not data.get('user', {}).get('screen_name'):
+        return None
+    text = data.get('text', '')
+    start, end = (data.get('display_text_range') or [0, len(text)])[:2]
+    text = re.sub(r'https://t\.co/\S+', '', text[start:end])
+    return {'handle': data['user']['screen_name'], 'text': text, 'likes': data.get('favorite_count', 0),
+            'reply': bool(data.get('in_reply_to_status_id_str')), 'at': parse_time(data.get('created_at') or '')}
+
+
+def x_item(post, post_id):
+    return item(post['text'], f"https://x.com/{post['handle']}/status/{post_id}", f"𝕏 @{post['handle']}", post['at'])
+
+
+def x_posted_at(post_id):
+    """When an X post was made, from its ID (X's IDs carry a millisecond timestamp)."""
+    return dt.datetime.fromtimestamp(((int(post_id) >> 22) + 1288834974657) / 1000, dt.timezone.utc)
+
+
+def x_recent_ids(handle, days):
+    """Recent post IDs of one account: X's embedded timeline when it answers, plus the Archive's index."""
+    ids = set()
+    try:
+        page = get(f'https://syndication.twitter.com/srv/timeline-profile/screen-name/{handle}')
+        ids.update(re.findall(r'"id_str":"(\d{15,25})"', page))
+    except Exception:
+        pass  # usually a 429: the page allows very few requests per address
+    since = (NOW - dt.timedelta(days=days)).strftime('%Y%m%d')
+    try:
+        rows = json.loads(get(f'https://web.archive.org/cdx/search/cdx?url=x.com/{handle}/status/&matchType=prefix'
+                              f'&from={since}&output=json&fl=original&collapse=urlkey&limit=300', timeout=40) or '[]')
+    except Exception:
+        rows = []
+    for (original,) in rows[1:]:
+        m = X_STATUS.match(original.replace('http://', 'https://'))
+        if m and m.group(1).lower() == handle.lower():
+            ids.add(m.group(2))
+    return {i for i in ids if NOW - x_posted_at(i) < dt.timedelta(days=days)}
+
+
+def x_posts(accounts=X_ACCOUNTS, days=7, keep=3):
+    """The best recent posts of the watched accounts: most likes, discounted by age."""
+    watched = {a.lower() for a in accounts}
+    ids = set()
+    for handle in accounts:
+        ids |= x_recent_ids(handle, days)
+    found = []
+    for post_id in sorted(ids, reverse=True)[:40]:
+        try:
+            post = x_post(post_id)
+        except Exception:
+            continue
+        # A reply, even in their own thread, reads as half a sentence on its own; a timeline can also carry others' posts.
+        if post and not post['reply'] and post['at'] and post['handle'].lower() in watched and clean(post['text']):
+            age_days = max(0.0, (NOW - post['at']).total_seconds() / 86400)
+            found.append((post['likes'] / (1 + age_days), x_item(post, post_id)))
+    return [i for _, i in sorted(found, key=lambda x: -x[0])[:keep]]
+
+
+def curated_file(repo):
     try:
         raw = subprocess.run(['git', '-C', repo, 'show', 'origin/pulse:curated.json'], capture_output=True, text=True, check=True).stdout
-        data = json.loads(raw)
+        return json.loads(raw)
     except Exception:
-        return []
+        return {}
+
+
+def curated(data):
+    """Hand-picked items from curated.json: title, url and source, or just the URL of an X post."""
     out = []
     for c in data.get('items', []):
-        at = parse_time(c.get('published_at') or '') or NOW
         until = parse_time(c.get('until') or '')
         if until and until < NOW:
             continue
-        if c.get('title') and str(c.get('url', '')).startswith('https://') and c.get('source'):
-            out.append(item(c['title'], c['url'], clean(c['source'], 28), at))
+        url = str(c.get('url', ''))
+        x = X_STATUS.match(url)
+        if x and not c.get('title'):
+            try:
+                post = x_post(x.group(2))
+            except Exception:
+                post = None
+            if post:
+                out.append(x_item(post, x.group(2)))
+        elif c.get('title') and url.startswith('https://') and c.get('source'):
+            out.append(item(c['title'], url, clean(c['source'], 28), parse_time(c.get('published_at') or '') or NOW))
     return out
 
 
 def build(repo):
     items, notes = [], []
-    for name, fn in (('curated', lambda: curated(repo) if repo else []), ('claude-code', claude_code_releases),
-                     ('anthropic', anthropic_news), ('hn', hacker_news), ('simonw', simon_willison)):
+    picked = curated_file(repo) if repo else {}
+    accounts = tuple(a for a in picked.get('x_accounts', X_ACCOUNTS) if re.fullmatch(r'[A-Za-z0-9_]{1,15}', str(a)))
+    for name, fn in (('curated', lambda: curated(picked)), ('claude-code', claude_code_releases),
+                     ('x', lambda: x_posts(accounts)), ('anthropic', anthropic_news), ('hn', hacker_news),
+                     ('simonw', simon_willison)):
         try:
             got = fn()
             items += got
@@ -148,7 +232,7 @@ def build(repo):
             seen.add(i['url'])
             unique.append(i)
     feed = {'schema': 1, 'generated_at': iso(NOW), 'items': unique[:MAX_ITEMS],
-            'sources': 'curated, Claude Code releases, Anthropic, Hacker News, Simon Willison'}
+            'sources': 'curated, Claude Code releases, X, Anthropic, Hacker News, Simon Willison'}
     return feed, notes
 
 

@@ -137,9 +137,12 @@ change it, so g-line leaves it as it is.
 `/g-line pulse` turns on **Pulse**: on a turn that runs longer than 15 seconds, the spinner
 shows one AI-dev headline at a time after its burn (`│ Claude Code 2.1.296 released (Claude
 Code releases)`), and the `/g-line` pane lists the day's top five, with links. Headlines come
-from g-line's own static feed: Claude Code releases, Anthropic's news pages, Hacker News
-stories about Claude, Simon Willison's AI posts, and a few items the maintainer picks. Each is
-labelled with where it came from.
+from g-line's own static feed: Claude Code releases, posts on 𝕏 from @claudeai, @AnthropicAI
+and the Claude Code team, Anthropic's news pages, Hacker News stories about Claude, Simon
+Willison's AI posts, and a few items the maintainer picks. Each is labelled with where it came
+from. A post on 𝕏 leads with its author, and with its age once it is a day old
+(`│ 𝕏 @claudeai · 2d: Claude Dashboards and Claude Motion are in beta today…`). The feed
+finds those posts without an X API key, so it can run a few days behind X itself.
 
 When Pulse is on, g-line fetches one file,
 `raw.githubusercontent.com/lifeofgurpreet/g-line/pulse/pulse.json`, at most every 45 minutes.

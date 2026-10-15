@@ -69,12 +69,23 @@ export function parseFeed(raw: string, fetchedAt: number, limit = 8): PulseFeed 
   return { fetchedAt, generatedAt: clean(d.generated_at, 32) || undefined, items }
 }
 
+/** An X post leads with its author, and with its age once it is a day old: `𝕏 @claudeai · 3d`. Other items: nothing. */
+export function xLead(item: PulseItem, nowMs?: number): string {
+  if (!item.source.startsWith('𝕏 @')) return ''
+  const at = item.at ? Date.parse(item.at) : Number.NaN
+  const days = nowMs !== undefined && Number.isFinite(at) ? Math.floor((nowMs - at) / 86_400_000) : 0
+  return days >= 1 ? `${item.source} · ${days}d` : item.source
+}
+
 /** The headline the spinner shows `elapsedMs` into a turn, cut to `room` columns, or nothing yet. */
-export function tickerText(feed: PulseFeed | null | undefined, elapsedMs: number, room: number): string {
+export function tickerText(feed: PulseFeed | null | undefined, elapsedMs: number, room: number, nowMs?: number): string {
   if (!feed?.items.length || elapsedMs < PULSE_AFTER_MS || room < 24) return ''
   const item = feed.items[Math.floor((elapsedMs - PULSE_AFTER_MS) / PULSE_EVERY_MS) % feed.items.length]
   if (!item) return ''
   // A headline cut to a stub says nothing: drop the source before the title, and skip it if still too narrow.
+  const lead = xLead(item, nowMs)
+  if (lead && room - width(lead) - 2 >= 24) return `${lead}: ${clean(item.title, room - width(lead) - 2)}`
+  if (lead) return clean(item.title, room)
   const tail = ` (${item.source})`
   if (room - width(tail) >= 24) return `${clean(item.title, room - width(tail))}${tail}`
   return clean(item.title, room)

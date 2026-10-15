@@ -28,7 +28,7 @@ import type { ReceiptSpec } from './extras'
 import { MOD_KEYS, accountSegment, inline, joined, modesWidth, shownHint, tailRoom, withText } from './inline'
 import { deck, nextRoom } from './deck'
 import { STATUS_DESCRIPTION, STATUS_SCHEMA, STATUS_TOOL, statusJson } from './glance'
-import { PULSE_TTL_MS, PULSE_URL, parseFeed, tickerText } from './pulse'
+import { PULSE_TTL_MS, PULSE_URL, parseFeed, tickerText, xLead } from './pulse'
 import { gitSegmentOf } from './core'
 
 const snap = atom({ plugin: 'g-line', key: 'snap' } as const, {})
@@ -1151,7 +1151,8 @@ export const register: Register = (on, options) => {
       // the headline takes what is left after keeping room for that.
       const columns = e.viewport?.columns ?? 0
       const room = columns - 4 - width(shown) - width(suffix || lead) - 3 - 34
-      const ticker = tickerText(await read($, pulseAtom), (await nowMs($)) - live.startAt, room)
+      const now = await nowMs($)
+      const ticker = tickerText(await read($, pulseAtom), now - live.startAt, room, now)
       if (ticker) suffix = `${suffix || lead} │ ${ticker}`
     }
     if (!suffix) return next(e)
@@ -1229,6 +1230,7 @@ export const register: Register = (on, options) => {
     const rows = await detailRows($, seconds, e.props.bodyColumns)
     const account = (await read($, snap)).account
     const feed = config.pulse ? await read($, pulseAtom) : null
+    const now = await nowMs($)
     const { Link } = $.ui.resolve(e)
     const layoutName = config.lines === 2 ? 'two lines' : config.lines === 1 ? 'one line' : 'receipts only'
     const nextLines = config.lines === 2 ? 1 : config.lines === 1 ? 0 : 2
@@ -1253,7 +1255,7 @@ export const register: Register = (on, options) => {
                 $.ui.toast(copied.isCopied ? 'Link copied.' : item.url, { timeoutMs: 4000 })
               }} />
             <Link href={item.url} label={item.title} />
-            <Text dimColor>{item.source}</Text>
+            <Text dimColor>{xLead(item, now) || item.source}</Text>
           </Box>
         )) : null}
         {rows.map(row => (
