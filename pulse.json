@@ -1,13 +1,13 @@
 {
  "schema": 1,
- "generated_at": "2026-10-16T16:01:46Z",
+ "generated_at": "2026-10-16T16:32:38Z",
  "items": [
   {
-   "title": "Meta releases Muse Spark Open, saying it is the most capable US open-weight model, with 816B total…",
-   "url": "https://research.meta.ai/blog/muse-spark-open",
-   "source": "Meta AI Research",
-   "published_at": "2026-10-15T17:10:53Z",
-   "text": "Meta releases Muse Spark Open, saying it is the most capable US open-weight model, with 816B total and 42B active parameters and a 1M-token context window. Muse Spark Open is available today and brings leading agentic capabilities to your desktop for the first time on Apple M5 Ultra Mac Studios.",
+   "title": "Sources: some Anthropic investors discussed a ~$1.5T valuation for its IPO, down from ~$2T they had…",
+   "url": "https://www.reuters.com/business/finance/investors-temper-anthropic-ipo-valuation-expectations-over-revenue-growth-2026-10-15/",
+   "source": "Reuters",
+   "published_at": "2026-10-15T21:20:46Z",
+   "text": "Sources: some Anthropic investors discussed a ~$1.5T valuation for its IPO, down from ~$2T they had expected, after disclosures showed slowing Q3 revenue growth. Some current Anthropic investors and prospective investors in its upcoming initial public offering are weighing a lower valuation …",
    "via": "Techmeme"
   },
   {
@@ -17,8 +17,8 @@
    "published_at": "2026-10-15T17:27:34Z",
    "text": "We’ve committed to having evaluators assess our safety practices. We're in discussions with multiple organizations, and have now given employee-like access to a team from @METR_Evals. In this post, we describe how we work with third-party evaluators:",
    "author_name": "Anthropic",
-   "likes": 3539,
-   "story": "Microsoft unveils MAI-Base-2, a MoE model with 2.8T total and 80B active parameters, claiming 4x-12x more pretraining FLOPs-efficiency than DeepSeek-V4-Pro-Base",
+   "likes": 3555,
+   "story": "Netflix Chief Content Officer Bela Bajaria is leaving the company and will be replaced by former Disney and Fox executive Peter Rice, who starts October 26",
    "links": [
     "https://www.anthropic.com/news/an-update-on-independent-evaluators"
    ]
@@ -37,7 +37,7 @@
    "published_at": "2026-10-15T15:42:52Z",
    "text": "when nick told me that he had some interp breakthroughs, he was uh, underselling it. i think this may be remembered as a major moment in scientific history. news so good even eliezer will have to lower his pdoom. we can start making alignment into a 'normal science'",
    "author_name": "roon",
-   "likes": 6345,
+   "likes": 6359,
    "story": "A researcher says modern neural networks are far more interpretable than believed, with most neurons understandable in models up to trillions of parameters"
   },
   {
@@ -53,22 +53,9 @@
    "url": "https://machinelearning.apple.com/research/mlx-distributed-inference",
    "source": "Hacker News",
    "published_at": "2026-10-16T13:43:48Z",
-   "text": "61 points and 21 comments on Hacker News.",
-   "points": 61,
+   "text": "85 points and 40 comments on Hacker News.",
+   "points": 85,
    "discussion": "https://news.ycombinator.com/item?id=50118320"
-  },
-  {
-   "title": "\"Anthropic told investors on Wednesday distillation accounted for 5 per cent to 7 per cent of reven…",
-   "url": "https://x.com/simonw/status/2110721515130089787",
-   "source": "𝕏 @simonw",
-   "published_at": "2026-10-15T13:16:39Z",
-   "text": "\"Anthropic told investors on Wednesday distillation accounted for 5 per cent to 7 per cent of revenue\" If true, and Q2 revenue was $11.5B, then that's more than half a billion dollars spent by other labs to distill Anthropic's models!",
-   "author_name": "Simon Willison",
-   "likes": 751,
-   "story": "Sources: some Anthropic investors discussed a ~$1.5T valuation for its IPO, down from ~$2T they had expected, after disclosures showed slowing Q3 revenue growth",
-   "links": [
-    "https://www.ft.com/content/11632d03-358c-454b-af95-d06d4072932b?syn-25a6b1a6=1"
-   ]
   },
   {
    "title": "Offering expanded Claude access across all three branches of government",
@@ -86,13 +73,13 @@
    "via": "Techmeme"
   },
   {
-   "title": "AI-assisted PCB design for KiCad 10",
-   "url": "https://github.com/mixelpixx/Konnect",
+   "title": "Show HN: Gemini 4 Argon plays StarCraft",
+   "url": "https://starskirmish.com/bench/v0-2/",
    "source": "Hacker News",
-   "published_at": "2026-10-14T10:51:37Z",
-   "text": "83 points and 26 comments on Hacker News.",
-   "points": 83,
-   "discussion": "https://news.ycombinator.com/item?id=50085553"
+   "published_at": "2026-10-16T14:18:44Z",
+   "text": "60 points and 42 comments on Hacker News.",
+   "points": 60,
+   "discussion": "https://news.ycombinator.com/item?id=50118688"
   }
  ],
  "sources": "curated, Techmeme, X (found via Techmeme, Reddit, the Internet Archive), Claude Code releases, Anthropic, Hacker News, Simon Willison"
