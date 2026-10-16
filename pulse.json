@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-16T04:12:18Z",
+ "generated_at": "2026-10-16T04:43:16Z",
  "items": [
   {
    "title": "Meta releases Muse Spark Open, saying it is the most capable US open-weight model, with 816B total…",
@@ -17,7 +17,7 @@
    "published_at": "2026-10-15T17:27:34Z",
    "text": "We’ve committed to having evaluators assess our safety practices. We're in discussions with multiple organizations, and have now given employee-like access to a team from @METR_Evals. In this post, we describe how we work with third-party evaluators:",
    "author_name": "Anthropic",
-   "likes": 2956,
+   "likes": 3002,
    "story": "Anthropic says it is giving employee-like access to METR as part of its pledge to partner with evaluators for assessment of its models and safety practices",
    "links": [
     "https://www.anthropic.com/news/an-update-on-independent-evaluators"
@@ -37,7 +37,7 @@
    "published_at": "2026-10-15T15:09:11Z",
    "text": "Meet NVIDIA Nemotron 3.5 Super VL Our new open model combines reasoning and tool use with text, image, document, and video understanding for long-running AI agents. 120B total parameters with 12B active 🧵",
    "author_name": "NVIDIA AI",
-   "likes": 3822,
+   "likes": 3848,
    "story": "Nvidia launches Nemotron 3.5 Super VL, a 120B-parameter open model for enterprise agents, and says it outperforms frontier models on specialized benchmarks"
   },
   {
@@ -53,8 +53,8 @@
    "url": "https://www.krea.ai/krea-3",
    "source": "Hacker News",
    "published_at": "2026-10-15T16:04:05Z",
-   "text": "275 points and 86 comments on Hacker News.",
-   "points": 275,
+   "text": "279 points and 86 comments on Hacker News.",
+   "points": 279,
    "discussion": "https://news.ycombinator.com/item?id=50105648"
   },
   {
@@ -64,7 +64,7 @@
    "published_at": "2026-10-15T16:48:07Z",
    "text": "New: Accenture has told employees it will only fund $29 per month of Claude use. Meaning that employees who often spend as much as $1,000 a month are now scrambling to find ways to keep access to the tool. A sign of the continuing crack down of AI",
    "author_name": "Joseph Cox",
-   "likes": 6280,
+   "likes": 6368,
    "story": "Memo: Accenture has told many employees, some of whom had been spending as much as $1,000 monthly, that it will now only spend $29 a month per person on Claude",
    "links": [
     "https://www.404media.co/accenture-tells-employees-they-can-now-spend-only-29-on-claude-per-month/"
@@ -92,7 +92,7 @@
    "published_at": "2026-10-15T19:41:18Z",
    "text": "Amazon launched two new wearables that use artificial intelligence to record and analyze a person’s day, marking the company’s efforts to reshape Bee, a startup it acquired last year to compete in the hot AI hardware segment.",
    "author_name": "Mark Gurman",
-   "likes": 227,
+   "likes": 231,
    "story": "Amazon launches two AI wearables, the $75 Bee Frontier wristband and $100 Bee Eclipse magnetic phone-attachment recorder, with a $12/month Bee Pro subscription",
    "links": [
     "https://www.bloomberg.com/news/articles/2026-10-15/amazon-debuts-revamped-bee-ai-wearables-12-a-month-subscription-plan"
@@ -103,8 +103,8 @@
    "url": "https://blogs.gnome.org/uraeus/2026/10/15/aiandreverseengineerhardware/",
    "source": "Hacker News",
    "published_at": "2026-10-15T14:35:15Z",
-   "text": "140 points and 122 comments on Hacker News.",
-   "points": 140,
+   "text": "145 points and 124 comments on Hacker News.",
+   "points": 145,
    "discussion": "https://news.ycombinator.com/item?id=50104299"
   },
   {
@@ -114,7 +114,7 @@
    "published_at": "2026-10-16T00:29:35Z",
    "text": "Scoop: What the Super Intelligence task force did at its first meeting What's new: -It will commission a report from PCAST to evaluate AI risk for cyber and critical infrastructure protection, biosecurity and model control -It will make a working group to implement the accord…",
    "author_name": "Ashley Gold",
-   "likes": 59,
+   "likes": 61,
    "story": "The White House's AI task force begins its 120-day window to evaluate AI, including producing a risk report, implementing the White House Accord on SI, and more"
   }
  ],
