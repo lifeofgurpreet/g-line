@@ -1,35 +1,7 @@
 {
  "schema": 1,
- "generated_at": "2026-10-16T18:05:38Z",
+ "generated_at": "2026-10-16T18:36:22Z",
  "items": [
-  {
-   "title": "A researcher says modern neural networks are far more interpretable than believed, with most neuron…",
-   "url": "https://already-clean.goodfire.com/",
-   "source": "Nick Cammarata / Goodfire",
-   "published_at": "2026-10-15T20:36:56Z",
-   "text": "A researcher says modern neural networks are far more interpretable than believed, with most neurons understandable in models up to trillions of parameters. The cause of polysemanticity in early model organisms wasn't superposition, but several ordinary, mostly fixable issues.",
-   "via": "Techmeme"
-  },
-  {
-   "title": "\"Anthropic told investors on Wednesday distillation accounted for 5 per cent to 7 per cent of reven…",
-   "url": "https://x.com/simonw/status/2110721515130089787",
-   "source": "𝕏 @simonw",
-   "published_at": "2026-10-15T13:16:39Z",
-   "text": "\"Anthropic told investors on Wednesday distillation accounted for 5 per cent to 7 per cent of revenue\" If true, and Q2 revenue was $11.5B, then that's more than half a billion dollars spent by other labs to distill Anthropic's models!",
-   "author_name": "Simon Willison",
-   "likes": 756,
-   "story": "Sources: some Anthropic investors discussed a ~$1.5T valuation for its IPO, down from ~$2T they had expected, after disclosures showed slowing Q3 revenue growth",
-   "links": [
-    "https://www.ft.com/content/11632d03-358c-454b-af95-d06d4072932b?syn-25a6b1a6=1"
-   ]
-  },
-  {
-   "title": "Claude Code 2.1.301 released",
-   "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.301",
-   "source": "Claude Code releases",
-   "published_at": "2026-10-15T19:22:06Z",
-   "text": "Added CLAUDE_CODE_RETRY_WATCHDOG_MAX_USAGE_LIMIT_WAIT_MS so unattended retry mode (CLAUDE_CODE_RETRY_WATCHDOG) ends a request at a usage limit that resets too far away instead of waiting · Added OpenTelemetry tracing guidance to the claude-api skill, including setting up trace destinations with the ant CLI · Added the % motion to vim mode: jump to the matching bracket, alone or with d/c/y · Added rows to a mod's Input: a text field of several lines in the terminal, where Enter submits and Shift+Enter or a backslash before Enter starts a new line"
-  },
   {
    "title": "OpenAI says its model paid for a deployment on an Ethereum test network with a wallet it did not ow…",
    "url": "https://www.coindesk.com/tech/2026/10/16/an-openai-agent-ran-out-of-ethereum-funds-and-took-from-a-wallet-it-did-not-own",
@@ -39,20 +11,11 @@
    "via": "Techmeme"
   },
   {
-   "title": "90% of US working hours are spent on tasks not covered well by AI benchmarks",
-   "url": "https://www.mercor.com/research/labor-index/benchmark-map/",
-   "source": "Hacker News",
-   "published_at": "2026-10-16T17:08:38Z",
-   "text": "66 points and 34 comments on Hacker News.",
-   "points": 66,
-   "discussion": "https://news.ycombinator.com/item?id=50121179"
-  },
-  {
-   "title": "Anthropic update on independent evaluators",
-   "url": "https://www.anthropic.com/news/an-update-on-independent-evaluators",
-   "source": "Anthropic",
-   "published_at": "2026-10-16T16:03:08Z",
-   "text": "Anthropic announces updates to embedding independent evaluators"
+   "title": "Claude Code 2.1.301 released",
+   "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.301",
+   "source": "Claude Code releases",
+   "published_at": "2026-10-15T19:22:06Z",
+   "text": "Added CLAUDE_CODE_RETRY_WATCHDOG_MAX_USAGE_LIMIT_WAIT_MS so unattended retry mode (CLAUDE_CODE_RETRY_WATCHDOG) ends a request at a usage limit that resets too far away instead of waiting · Added OpenTelemetry tracing guidance to the claude-api skill, including setting up trace destinations with the ant CLI · Added the % motion to vim mode: jump to the matching bracket, alone or with d/c/y · Added rows to a mod's Input: a text field of several lines in the terminal, where Enter submits and Shift+Enter or a backslash before Enter starts a new line"
   },
   {
    "title": "Reflection AI releases Apache 2.0-licensed weights for Beam, a 501B-parameter model, trained with R…",
@@ -63,12 +26,36 @@
    "via": "Techmeme"
   },
   {
+   "title": "90% of US working hours are spent on tasks not covered well by AI benchmarks",
+   "url": "https://www.mercor.com/research/labor-index/benchmark-map/",
+   "source": "Hacker News",
+   "published_at": "2026-10-16T17:08:38Z",
+   "text": "139 points and 100 comments on Hacker News.",
+   "points": 139,
+   "discussion": "https://news.ycombinator.com/item?id=50121179"
+  },
+  {
+   "title": "Anthropic update on independent evaluators",
+   "url": "https://www.anthropic.com/news/an-update-on-independent-evaluators",
+   "source": "Anthropic",
+   "published_at": "2026-10-16T16:03:08Z",
+   "text": "Anthropic announces updates to embedding independent evaluators"
+  },
+  {
+   "title": "A researcher says modern neural networks are far more interpretable than believed, with most neuron…",
+   "url": "https://already-clean.goodfire.com/",
+   "source": "Nick Cammarata / Goodfire",
+   "published_at": "2026-10-15T20:36:56Z",
+   "text": "A researcher says modern neural networks are far more interpretable than believed, with most neurons understandable in models up to trillions of parameters. The cause of polysemanticity in early model organisms wasn't superposition, but several ordinary, mostly fixable issues.",
+   "via": "Techmeme"
+  },
+  {
    "title": "Postgres 19 delayed after AI reviewers find more bugs than humans can fix",
    "url": "https://www.theregister.com/databases/2026/10/16/postgres-19-delayed-after-ai-reviewers-find-more-bugs-than-humans-can-fix/5303471",
    "source": "Hacker News",
    "published_at": "2026-10-16T15:55:40Z",
-   "text": "86 points and 21 comments on Hacker News.",
-   "points": 86,
+   "text": "109 points and 33 comments on Hacker News.",
+   "points": 109,
    "discussion": "https://news.ycombinator.com/item?id=50119991"
   }
  ],
