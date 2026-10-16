@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-16T08:49:54Z",
+ "generated_at": "2026-10-16T09:20:39Z",
  "items": [
   {
    "title": "Meta releases Muse Spark Open, saying it is the most capable US open-weight model, with 816B total…",
@@ -17,7 +17,7 @@
    "published_at": "2026-10-15T17:27:34Z",
    "text": "We’ve committed to having evaluators assess our safety practices. We're in discussions with multiple organizations, and have now given employee-like access to a team from @METR_Evals. In this post, we describe how we work with third-party evaluators:",
    "author_name": "Anthropic",
-   "likes": 3255,
+   "likes": 3279,
    "story": "Anthropic says it is giving employee-like access to METR as part of its pledge to partner with evaluators for assessment of its models and safety practices",
    "links": [
     "https://www.anthropic.com/news/an-update-on-independent-evaluators"
@@ -37,8 +37,8 @@
    "published_at": "2026-10-15T15:09:11Z",
    "text": "Meet NVIDIA Nemotron 3.5 Super VL Our new open model combines reasoning and tool use with text, image, document, and video understanding for long-running AI agents. 120B total parameters with 12B active 🧵",
    "author_name": "NVIDIA AI",
-   "likes": 3992,
-   "story": "Memo: Accenture has told many employees, some of whom had been spending as much as $1,000 monthly, that it will now only spend $29 a month per person on Claude"
+   "likes": 4002,
+   "story": "Opsin, which helps companies show where AI agents are active, what data they access, and flag risky behavior, raised $21M led by SYN Ventures and Race Capital"
   },
   {
    "title": "A researcher says modern neural networks are far more interpretable than believed, with most neuron…",
@@ -53,8 +53,8 @@
    "url": "https://www.krea.ai/krea-3",
    "source": "Hacker News",
    "published_at": "2026-10-15T16:04:05Z",
-   "text": "303 points and 96 comments on Hacker News.",
-   "points": 303,
+   "text": "307 points and 97 comments on Hacker News.",
+   "points": 307,
    "discussion": "https://news.ycombinator.com/item?id=50105648"
   },
   {
@@ -64,7 +64,7 @@
    "published_at": "2026-10-15T13:16:39Z",
    "text": "\"Anthropic told investors on Wednesday distillation accounted for 5 per cent to 7 per cent of revenue\" If true, and Q2 revenue was $11.5B, then that's more than half a billion dollars spent by other labs to distill Anthropic's models!",
    "author_name": "Simon Willison",
-   "likes": 664,
+   "likes": 665,
    "story": "Sources: some Anthropic investors discussed a ~$1.5T valuation for its IPO, down from ~$2T they had expected, after disclosures showed slowing Q3 revenue growth",
    "links": [
     "https://www.ft.com/content/11632d03-358c-454b-af95-d06d4072932b?syn-25a6b1a6=1"
@@ -78,12 +78,34 @@
    "text": "We are removing barriers to government AI adoption by offering Claude for Enterprise and Claude for Government to all three branches of government, including federal civilian executive branch agencies, as well as legislative and judiciary branches of government, for $1."
   },
   {
-   "title": "Amazon launches two AI wearables, the $75 Bee Frontier wristband and $100 Bee Eclipse magnetic phon…",
-   "url": "https://www.bloomberg.com/news/articles/2026-10-15/amazon-debuts-revamped-bee-ai-wearables-12-a-month-subscription-plan",
-   "source": "Bloomberg",
-   "published_at": "2026-10-15T12:10:42Z",
-   "text": "Amazon launches two AI wearables, the $75 Bee Frontier wristband and $100 Bee Eclipse magnetic phone-attachment recorder, with a $12/month Bee Pro subscription. Amazon.com Inc. launched two new wearables that use artificial intelligence to record and analyze a person's day …",
+   "title": "Docs: Nvidia and Apple each committed $25M, the top amount, to Trump's White House ballroom; Micros…",
+   "url": "https://www.washingtonpost.com/investigations/2026/10/15/secret-documents-reveal-donors-behind-330-million-trumps-ballroom/?pwapi_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyZWFzb24iOiJnaWZ0IiwibmJmIjoxNzkyMDM2ODAwLCJpc3MiOiJzdWJzY3JpcHRpb25zIiwiZXhwIjoxNzkzNDE5MTk5LCJpYXQiOjE3OTIwMzY4MDAsImp0aSI6IjZiOTgyNjcxLWUwNWQtNDBjMi05MzJlLWYxNjg4ODgwN2I4YSIsInVybCI6Imh0dHBzOi8vd3d3Lndhc2hpbmd0b25wb3N0LmNvbS9pbnZlc3RpZ2F0aW9ucy8yMDI2LzEwLzE1L3NlY3JldC1kb2N1bWVudHMtcmV2ZWFsLWRvbm9ycy1iZWhpbmQtMzMwLW1pbGxpb24tdHJ1bXBzLWJhbGxyb29tLyJ9.bwQFjcPhaUaMyVgd-xm4T-gTGikZG8Y5qKSXJnffNqU&itid=gfta",
+   "source": "Washington Post",
+   "published_at": "2026-10-15T14:40:42Z",
+   "text": "Docs: Nvidia and Apple each committed $25M, the top amount, to Trump's White House ballroom; Microsoft and Palantir each committed $10M, and Meta and Amazon $5M. The records offer a panoramic view of a fundraising campaign that is extraordinary for its size and opacity. — Loading... $2.5M",
    "via": "Techmeme"
+  },
+  {
+   "title": "Amazon launched two new wearables that use artificial intelligence to record and analyze a person’s…",
+   "url": "https://x.com/markgurman/status/2110818315211784349",
+   "source": "𝕏 @markgurman",
+   "published_at": "2026-10-15T19:41:18Z",
+   "text": "Amazon launched two new wearables that use artificial intelligence to record and analyze a person’s day, marking the company’s efforts to reshape Bee, a startup it acquired last year to compete in the hot AI hardware segment.",
+   "author_name": "Mark Gurman",
+   "likes": 263,
+   "story": "Amazon launches two AI wearables, the $75 Bee Frontier wristband and $100 Bee Eclipse magnetic phone-attachment recorder, with a $12/month Bee Pro subscription",
+   "links": [
+    "https://www.bloomberg.com/news/articles/2026-10-15/amazon-debuts-revamped-bee-ai-wearables-12-a-month-subscription-plan"
+   ]
+  },
+  {
+   "title": "Using AI to reverse engineer hardware",
+   "url": "https://blogs.gnome.org/uraeus/2026/10/15/aiandreverseengineerhardware/",
+   "source": "Hacker News",
+   "published_at": "2026-10-15T14:35:15Z",
+   "text": "189 points and 172 comments on Hacker News.",
+   "points": 189,
+   "discussion": "https://news.ycombinator.com/item?id=50104299"
   }
  ],
  "sources": "curated, Techmeme, X (found via Techmeme, Reddit, the Internet Archive), Claude Code releases, Anthropic, Hacker News, Simon Willison"
