@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-16T07:17:35Z",
+ "generated_at": "2026-10-16T07:48:10Z",
  "items": [
   {
    "title": "Meta releases Muse Spark Open, saying it is the most capable US open-weight model, with 816B total…",
@@ -17,7 +17,7 @@
    "published_at": "2026-10-15T17:27:34Z",
    "text": "We’ve committed to having evaluators assess our safety practices. We're in discussions with multiple organizations, and have now given employee-like access to a team from @METR_Evals. In this post, we describe how we work with third-party evaluators:",
    "author_name": "Anthropic",
-   "likes": 3173,
+   "likes": 3214,
    "story": "Anthropic says it is giving employee-like access to METR as part of its pledge to partner with evaluators for assessment of its models and safety practices",
    "links": [
     "https://www.anthropic.com/news/an-update-on-independent-evaluators"
@@ -37,8 +37,8 @@
    "published_at": "2026-10-15T15:09:11Z",
    "text": "Meet NVIDIA Nemotron 3.5 Super VL Our new open model combines reasoning and tool use with text, image, document, and video understanding for long-running AI agents. 120B total parameters with 12B active 🧵",
    "author_name": "NVIDIA AI",
-   "likes": 3957,
-   "story": "Google says it has 400+ publications in its News AI pilot, which tests features like overviews; participants include Financial Times, CNN, and The Texas Tribune"
+   "likes": 3970,
+   "story": "Nvidia launches Nemotron 3.5 Super VL, a 120B-parameter open model for enterprise agents, and says it outperforms frontier models on specialized benchmarks"
   },
   {
    "title": "A researcher says modern neural networks are far more interpretable than believed, with most neuron…",
@@ -53,8 +53,8 @@
    "url": "https://www.krea.ai/krea-3",
    "source": "Hacker News",
    "published_at": "2026-10-15T16:04:05Z",
-   "text": "291 points and 93 comments on Hacker News.",
-   "points": 291,
+   "text": "294 points and 95 comments on Hacker News.",
+   "points": 294,
    "discussion": "https://news.ycombinator.com/item?id=50105648"
   },
   {
@@ -64,7 +64,7 @@
    "published_at": "2026-10-15T16:48:07Z",
    "text": "New: Accenture has told employees it will only fund $29 per month of Claude use. Meaning that employees who often spend as much as $1,000 a month are now scrambling to find ways to keep access to the tool. A sign of the continuing crack down of AI",
    "author_name": "Joseph Cox",
-   "likes": 6739,
+   "likes": 6797,
    "story": "Memo: Accenture has told many employees, some of whom had been spending as much as $1,000 monthly, that it will now only spend $29 a month per person on Claude",
    "links": [
     "https://www.404media.co/accenture-tells-employees-they-can-now-spend-only-29-on-claude-per-month/"
@@ -86,25 +86,12 @@
    "via": "Techmeme"
   },
   {
-   "title": "Amazon launched two new wearables that use artificial intelligence to record and analyze a person’s…",
-   "url": "https://x.com/markgurman/status/2110818315211784349",
-   "source": "𝕏 @markgurman",
-   "published_at": "2026-10-15T19:41:18Z",
-   "text": "Amazon launched two new wearables that use artificial intelligence to record and analyze a person’s day, marking the company’s efforts to reshape Bee, a startup it acquired last year to compete in the hot AI hardware segment.",
-   "author_name": "Mark Gurman",
-   "likes": 255,
-   "story": "Amazon launches two AI wearables, the $75 Bee Frontier wristband and $100 Bee Eclipse magnetic phone-attachment recorder, with a $12/month Bee Pro subscription",
-   "links": [
-    "https://www.bloomberg.com/news/articles/2026-10-15/amazon-debuts-revamped-bee-ai-wearables-12-a-month-subscription-plan"
-   ]
-  },
-  {
    "title": "Using AI to reverse engineer hardware",
    "url": "https://blogs.gnome.org/uraeus/2026/10/15/aiandreverseengineerhardware/",
    "source": "Hacker News",
    "published_at": "2026-10-15T14:35:15Z",
-   "text": "171 points and 150 comments on Hacker News.",
-   "points": 171,
+   "text": "175 points and 155 comments on Hacker News.",
+   "points": 175,
    "discussion": "https://news.ycombinator.com/item?id=50104299"
   }
  ],
