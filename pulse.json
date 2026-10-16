@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-16T12:56:35Z",
+ "generated_at": "2026-10-16T13:27:27Z",
  "items": [
   {
    "title": "Meta releases Muse Spark Open, saying it is the most capable US open-weight model, with 816B total…",
@@ -17,7 +17,7 @@
    "published_at": "2026-10-15T17:27:34Z",
    "text": "We’ve committed to having evaluators assess our safety practices. We're in discussions with multiple organizations, and have now given employee-like access to a team from @METR_Evals. In this post, we describe how we work with third-party evaluators:",
    "author_name": "Anthropic",
-   "likes": 3411,
+   "likes": 3426,
    "story": "Anthropic says it is giving employee-like access to METR as part of its pledge to partner with evaluators for assessment of its models and safety practices",
    "links": [
     "https://www.anthropic.com/news/an-update-on-independent-evaluators"
@@ -37,7 +37,7 @@
    "published_at": "2026-10-15T15:09:11Z",
    "text": "Meet NVIDIA Nemotron 3.5 Super VL Our new open model combines reasoning and tool use with text, image, document, and video understanding for long-running AI agents. 120B total parameters with 12B active 🧵",
    "author_name": "NVIDIA AI",
-   "likes": 4101,
+   "likes": 4110,
    "story": "Austin-based RapidCanvas, which uses agents to help businesses build custom AI tools, raised a ∼$29M Series B led by Vertex Ventures and Hitachi Ventures"
   },
   {
@@ -53,8 +53,8 @@
    "url": "https://www.krea.ai/krea-3",
    "source": "Hacker News",
    "published_at": "2026-10-15T16:04:05Z",
-   "text": "320 points and 103 comments on Hacker News.",
-   "points": 320,
+   "text": "324 points and 105 comments on Hacker News.",
+   "points": 324,
    "discussion": "https://news.ycombinator.com/item?id=50105648"
   },
   {
@@ -64,7 +64,7 @@
    "published_at": "2026-10-15T13:16:39Z",
    "text": "\"Anthropic told investors on Wednesday distillation accounted for 5 per cent to 7 per cent of revenue\" If true, and Q2 revenue was $11.5B, then that's more than half a billion dollars spent by other labs to distill Anthropic's models!",
    "author_name": "Simon Willison",
-   "likes": 714,
+   "likes": 728,
    "story": "Sources: some Anthropic investors discussed a ~$1.5T valuation for its IPO, down from ~$2T they had expected, after disclosures showed slowing Q3 revenue growth",
    "links": [
     "https://www.ft.com/content/11632d03-358c-454b-af95-d06d4072932b?syn-25a6b1a6=1"
@@ -90,8 +90,8 @@
    "url": "https://blogs.gnome.org/uraeus/2026/10/15/aiandreverseengineerhardware/",
    "source": "Hacker News",
    "published_at": "2026-10-15T14:35:15Z",
-   "text": "215 points and 193 comments on Hacker News.",
-   "points": 215,
+   "text": "219 points and 193 comments on Hacker News.",
+   "points": 219,
    "discussion": "https://news.ycombinator.com/item?id=50104299"
   }
  ],
