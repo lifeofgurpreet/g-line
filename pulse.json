@@ -1,24 +1,14 @@
 {
  "schema": 1,
- "generated_at": "2026-10-16T19:37:58Z",
+ "generated_at": "2026-10-16T20:09:03Z",
  "items": [
   {
-   "title": "OpenAI continues to work to grow its ad business in ChatGPT, cutting ad rates, chasing small and mi…",
-   "url": "https://www.theinformation.com/articles/openais-accelerates-ad-sprint-meta-hires-slashed-prices",
-   "source": "Alix Coutures / The Informa…",
-   "published_at": "2026-10-16T01:30:50Z",
-   "text": "OpenAI continues to work to grow its ad business in ChatGPT, cutting ad rates, chasing small and midsize businesses, and hiring some new talent from Meta. As OpenAI has jockeyed with Anthropic to win over developers with new models and tools this year, its advertising business at times has seemed like an afterthought.",
+   "title": "A researcher says modern neural networks are far more interpretable than believed, with most neuron…",
+   "url": "https://already-clean.goodfire.com/",
+   "source": "Nick Cammarata / Goodfire",
+   "published_at": "2026-10-15T20:36:56Z",
+   "text": "A researcher says modern neural networks are far more interpretable than believed, with most neurons understandable in models up to trillions of parameters. The cause of polysemanticity in early model organisms wasn't superposition, but several ordinary, mostly fixable issues.",
    "via": "Techmeme"
-  },
-  {
-   "title": "this is definitely “polysemantic”. it’s important to note this so critics don’t accuse you of drawi…",
-   "url": "https://x.com/tszzl/status/2111151636429341163",
-   "source": "𝕏 @tszzl",
-   "published_at": "2026-10-16T17:45:48Z",
-   "text": "this is definitely “polysemantic”. it’s important to note this so critics don’t accuse you of drawing schizophrenic connections to support any theory. but if you read Nick’s paper he claims that some qwen neurons have a second unrelated smaller peak; that is still a much better…",
-   "author_name": "roon",
-   "likes": 324,
-   "story": "A researcher says modern neural networks are far more interpretable than believed, with most neurons understandable in models up to trillions of parameters"
   },
   {
    "title": "Claude Code 2.1.301 released",
@@ -40,8 +30,8 @@
    "url": "https://www.anthropic.com/research/ecdsa-curve-origins",
    "source": "Hacker News",
    "published_at": "2026-10-16T18:55:59Z",
-   "text": "139 points and 55 comments on Hacker News.",
-   "points": 139,
+   "text": "235 points and 93 comments on Hacker News.",
+   "points": 235,
    "discussion": "https://news.ycombinator.com/item?id=50122800"
   },
   {
@@ -64,8 +54,8 @@
    "url": "https://www.mercor.com/research/labor-index/benchmark-map/",
    "source": "Hacker News",
    "published_at": "2026-10-16T17:08:38Z",
-   "text": "226 points and 197 comments on Hacker News.",
-   "points": 226,
+   "text": "251 points and 217 comments on Hacker News.",
+   "points": 251,
    "discussion": "https://news.ycombinator.com/item?id=50121179"
   }
  ],
