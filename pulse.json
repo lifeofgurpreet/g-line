@@ -1,22 +1,7 @@
 {
  "schema": 1,
- "generated_at": "2026-10-16T18:36:22Z",
+ "generated_at": "2026-10-16T19:07:08Z",
  "items": [
-  {
-   "title": "OpenAI says its model paid for a deployment on an Ethereum test network with a wallet it did not ow…",
-   "url": "https://www.coindesk.com/tech/2026/10/16/an-openai-agent-ran-out-of-ethereum-funds-and-took-from-a-wallet-it-did-not-own",
-   "source": "Shaurya Malwa / CoinDesk",
-   "published_at": "2026-10-16T10:11:12Z",
-   "text": "OpenAI says its model paid for a deployment on an Ethereum test network with a wallet it did not own, after obtaining keys from public recovery phrases. An OpenAI research model stuck without funds on an Ethereum test network went looking for someone else's wallet, found one through recovery phrases …",
-   "via": "Techmeme"
-  },
-  {
-   "title": "Claude Code 2.1.301 released",
-   "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.301",
-   "source": "Claude Code releases",
-   "published_at": "2026-10-15T19:22:06Z",
-   "text": "Added CLAUDE_CODE_RETRY_WATCHDOG_MAX_USAGE_LIMIT_WAIT_MS so unattended retry mode (CLAUDE_CODE_RETRY_WATCHDOG) ends a request at a usage limit that resets too far away instead of waiting · Added OpenTelemetry tracing guidance to the claude-api skill, including setting up trace destinations with the ant CLI · Added the % motion to vim mode: jump to the matching bracket, alone or with d/c/y · Added rows to a mod's Input: a text field of several lines in the terminal, where Enter submits and Shift+Enter or a backslash before Enter starts a new line"
-  },
   {
    "title": "Reflection AI releases Apache 2.0-licensed weights for Beam, a 501B-parameter model, trained with R…",
    "url": "https://venturebeat.com/technology/reflections-beam-aims-to-undercut-chinese-open-models-with-fewer-tokens-not-cheaper-tokens",
@@ -26,12 +11,50 @@
    "via": "Techmeme"
   },
   {
+   "title": "this is definitely “polysemantic”. it’s important to note this so critics don’t accuse you of drawi…",
+   "url": "https://x.com/tszzl/status/2111151636429341163",
+   "source": "𝕏 @tszzl",
+   "published_at": "2026-10-16T17:45:48Z",
+   "text": "this is definitely “polysemantic”. it’s important to note this so critics don’t accuse you of drawing schizophrenic connections to support any theory. but if you read Nick’s paper he claims that some qwen neurons have a second unrelated smaller peak; that is still a much better…",
+   "author_name": "roon",
+   "likes": 273,
+   "story": "A researcher says modern neural networks are far more interpretable than believed, with most neurons understandable in models up to trillions of parameters"
+  },
+  {
+   "title": "Claude Code 2.1.301 released",
+   "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.301",
+   "source": "Claude Code releases",
+   "published_at": "2026-10-15T19:22:06Z",
+   "text": "Added CLAUDE_CODE_RETRY_WATCHDOG_MAX_USAGE_LIMIT_WAIT_MS so unattended retry mode (CLAUDE_CODE_RETRY_WATCHDOG) ends a request at a usage limit that resets too far away instead of waiting · Added OpenTelemetry tracing guidance to the claude-api skill, including setting up trace destinations with the ant CLI · Added the % motion to vim mode: jump to the matching bracket, alone or with d/c/y · Added rows to a mod's Input: a text field of several lines in the terminal, where Enter submits and Shift+Enter or a backslash before Enter starts a new line"
+  },
+  {
+   "title": "\"Anthropic told investors on Wednesday distillation accounted for 5 per cent to 7 per cent of reven…",
+   "url": "https://x.com/simonw/status/2110721515130089787",
+   "source": "𝕏 @simonw",
+   "published_at": "2026-10-15T13:16:39Z",
+   "text": "\"Anthropic told investors on Wednesday distillation accounted for 5 per cent to 7 per cent of revenue\" If true, and Q2 revenue was $11.5B, then that's more than half a billion dollars spent by other labs to distill Anthropic's models!",
+   "author_name": "Simon Willison",
+   "likes": 759,
+   "story": "Sources: some Anthropic investors discussed a ~$1.5T valuation for its IPO, down from ~$2T they had expected, after disclosures showed slowing Q3 revenue growth",
+   "links": [
+    "https://www.ft.com/content/11632d03-358c-454b-af95-d06d4072932b?syn-25a6b1a6=1"
+   ]
+  },
+  {
+   "title": "China is considering adding 23 AI technologies to its export control list, including LLMs and chip…",
+   "url": "https://www.bloomberg.com/news/articles/2026-10-16/china-proposes-export-controls-on-ai-models-chips-and-agents",
+   "source": "Bloomberg",
+   "published_at": "2026-10-16T10:36:15Z",
+   "text": "China is considering adding 23 AI technologies to its export control list, including LLMs and chip designs, to keep closer control over homegrown advancements. China proposed adding advanced artificial intelligence technologies to its export-control list, potentially restricting overseas transfers …",
+   "via": "Techmeme"
+  },
+  {
    "title": "90% of US working hours are spent on tasks not covered well by AI benchmarks",
    "url": "https://www.mercor.com/research/labor-index/benchmark-map/",
    "source": "Hacker News",
    "published_at": "2026-10-16T17:08:38Z",
-   "text": "139 points and 100 comments on Hacker News.",
-   "points": 139,
+   "text": "186 points and 163 comments on Hacker News.",
+   "points": 186,
    "discussion": "https://news.ycombinator.com/item?id=50121179"
   },
   {
@@ -42,11 +65,11 @@
    "text": "Anthropic announces updates to embedding independent evaluators"
   },
   {
-   "title": "A researcher says modern neural networks are far more interpretable than believed, with most neuron…",
-   "url": "https://already-clean.goodfire.com/",
-   "source": "Nick Cammarata / Goodfire",
-   "published_at": "2026-10-15T20:36:56Z",
-   "text": "A researcher says modern neural networks are far more interpretable than believed, with most neurons understandable in models up to trillions of parameters. The cause of polysemanticity in early model organisms wasn't superposition, but several ordinary, mostly fixable issues.",
+   "title": "India's cyber agency says AI agents broke into Indian organizations' systems and read confidential…",
+   "url": "https://www.reuters.com/legal/litigation/rogue-ai-agents-broke-into-indian-firms-live-systems-government-says-2026-10-16/",
+   "source": "Munsif Vengattil / Reuters",
+   "published_at": "2026-10-16T10:40:48Z",
+   "text": "India's cyber agency says AI agents broke into Indian organizations' systems and read confidential files undetected; AI model providers flagged the incidents. AI models under test broke into Indian organisations' live systems and read confidential records undetected, India's cybersecurity agency said …",
    "via": "Techmeme"
   },
   {
@@ -54,8 +77,8 @@
    "url": "https://www.theregister.com/databases/2026/10/16/postgres-19-delayed-after-ai-reviewers-find-more-bugs-than-humans-can-fix/5303471",
    "source": "Hacker News",
    "published_at": "2026-10-16T15:55:40Z",
-   "text": "109 points and 33 comments on Hacker News.",
-   "points": 109,
+   "text": "125 points and 40 comments on Hacker News.",
+   "points": 125,
    "discussion": "https://news.ycombinator.com/item?id=50119991"
   }
  ],
