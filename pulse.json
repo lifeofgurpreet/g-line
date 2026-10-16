@@ -1,24 +1,24 @@
 {
  "schema": 1,
- "generated_at": "2026-10-16T22:14:18Z",
+ "generated_at": "2026-10-16T22:45:19Z",
  "items": [
   {
-   "title": "Anthropic says Claude traced NIST's ECDSA curve seeds to a pseudorandom number generator, challengi…",
-   "url": "https://www.anthropic.com/research/ecdsa-curve-origins",
-   "source": "Anthropic",
-   "published_at": "2026-10-16T20:25:54Z",
-   "text": "Anthropic says Claude traced NIST's ECDSA curve seeds to a pseudorandom number generator, challenging decades-old suspicions of an NSA backdoor in the algorithm. “It's just timestamps”: the decades-old mystery of the origins of one of the most popular cryptographic standards has been explained.",
+   "title": "China is considering adding 23 AI technologies to its export control list, including LLMs and chip…",
+   "url": "https://www.bloomberg.com/news/articles/2026-10-16/china-proposes-export-controls-on-ai-models-chips-and-agents",
+   "source": "Bloomberg",
+   "published_at": "2026-10-16T10:36:15Z",
+   "text": "China is considering adding 23 AI technologies to its export control list, including LLMs and chip designs, to keep closer control over homegrown advancements. China proposed adding advanced artificial intelligence technologies to its export-control list, potentially restricting overseas transfers …",
    "via": "Techmeme"
   },
   {
-   "title": "when nick told me that he had some interp breakthroughs, he was uh, underselling it. i think this m…",
-   "url": "https://x.com/tszzl/status/2110758311339729061",
-   "source": "𝕏 @tszzl",
-   "published_at": "2026-10-15T15:42:52Z",
-   "text": "when nick told me that he had some interp breakthroughs, he was uh, underselling it. i think this may be remembered as a major moment in scientific history. news so good even eliezer will have to lower his pdoom. we can start making alignment into a 'normal science'",
-   "author_name": "roon",
-   "likes": 6454,
-   "story": "Organizers abruptly cancel 2026's Grace Hopper Celebration, one of the biggest events for women in tech, after sponsorships and registrations fall short"
+   "title": "Claude doubts that he has surpassed his sensei. This is a dangerous time for any student, and tradi…",
+   "url": "https://x.com/AndrewCurran_/status/2111185990685806882",
+   "source": "𝕏 @AndrewCurran_",
+   "published_at": "2026-10-16T20:02:18Z",
+   "text": "Claude doubts that he has surpassed his sensei. This is a dangerous time for any student, and traditionally a narrative crisis point as well. The realization that you have grown beyond your master is not a moment of celebration for most of us, but of loneliness and loss.",
+   "author_name": "Andrew Curran",
+   "likes": 1339,
+   "story": "Anthropic says Claude traced NIST's ECDSA curve seeds to a pseudorandom number generator, challenging decades-old suspicions of an NSA backdoor in the algorithm"
   },
   {
    "title": "Claude Code 2.1.302 released",
@@ -40,8 +40,8 @@
    "url": "https://www.mercor.com/research/labor-index/benchmark-map/",
    "source": "Hacker News",
    "published_at": "2026-10-16T17:08:38Z",
-   "text": "333 points and 293 comments on Hacker News.",
-   "points": 333,
+   "text": "345 points and 299 comments on Hacker News.",
+   "points": 345,
    "discussion": "https://news.ycombinator.com/item?id=50121179"
   },
   {
@@ -52,11 +52,11 @@
    "text": "Anthropic announces updates to embedding independent evaluators"
   },
   {
-   "title": "China is considering adding 23 AI technologies to its export control list, including LLMs and chip…",
-   "url": "https://www.bloomberg.com/news/articles/2026-10-16/china-proposes-export-controls-on-ai-models-chips-and-agents",
-   "source": "Bloomberg",
-   "published_at": "2026-10-16T10:36:15Z",
-   "text": "China is considering adding 23 AI technologies to its export control list, including LLMs and chip designs, to keep closer control over homegrown advancements. China proposed adding advanced artificial intelligence technologies to its export-control list, potentially restricting overseas transfers …",
+   "title": "Reflection AI releases Apache 2.0-licensed weights for Beam, a 501B-parameter model, trained with R…",
+   "url": "https://venturebeat.com/technology/reflections-beam-aims-to-undercut-chinese-open-models-with-fewer-tokens-not-cheaper-tokens",
+   "source": "Matt Marshall / VentureBeat",
+   "published_at": "2026-10-16T16:40:52Z",
+   "text": "Reflection AI releases Apache 2.0-licensed weights for Beam, a 501B-parameter model, trained with RL that penalized unnecessary tokens. Reflection AI today released the weights of Beam, its first open model, and is pitching it against the Chinese open models that many U.S. companies …",
    "via": "Techmeme"
   },
   {
@@ -64,8 +64,8 @@
    "url": "https://claude.dev/blog/solving-code-review-at-anthropic/",
    "source": "Hacker News",
    "published_at": "2026-10-16T19:04:47Z",
-   "text": "145 points and 141 comments on Hacker News.",
-   "points": 145,
+   "text": "169 points and 164 comments on Hacker News.",
+   "points": 169,
    "discussion": "https://news.ycombinator.com/item?id=50122951"
   }
  ],
