@@ -8,19 +8,40 @@ and only when a person turns Pulse on.
   python3 tools/pulse/build_pulse.py --out /tmp/pulse.json            # build only
   python3 tools/pulse/build_pulse.py --publish --repo /path/to/g-line   # build, commit to `pulse`, push
 
+The feed reads like a front page: the best items first, at most one per story, and a mix of
+kinds (the day's big story, voices on X, Claude Code and Anthropic news, Hacker News, Simon
+Willison). 0.5.x readers show the first eight, so order is the ranking.
+
 Sources, each labelled as what it is (no source is passed off as another):
   - curated.json on the `pulse` branch: items the operator adds by hand. An X post needs only its
-    URL; its author and text are filled in. `x_accounts` there replaces the watched account list.
-  - X posts (no API key), as fresh as X itself: links to posts are harvested from Techmeme's front
-    page, from the hot pages of AI subreddits (RSS) and, for the watched accounts, from the
-    Internet Archive's index. X's public embed endpoint then gives each post's author, text, time,
-    likes and reply status. A post has to be about AI itself, and fresh or strong: under 2 hours
-    with 10 likes, under a day while gaining 30 likes an hour, or under 3 days with 3,000. They
-    are ranked by likes over age, at most two per story; replies are left out. The mod shows ages.
-  - Claude Code releases (GitHub API, anthropics/claude-code)
+    URL; its author and text are filled in. `x_accounts` there replaces the archive-watched list.
+  - Techmeme's front page: AI stories, ranked the way Techmeme ranks them (position on the page,
+    then how much coverage the story drew). The item is the publisher's article, labelled with the
+    publisher's name; `via` says Techmeme found it.
+  - X posts (no API key): links harvested from Techmeme's story clusters (the voices Techmeme
+    lists under a story), from the hot pages of AI subreddits (RSS) and, for the watched accounts,
+    from the Internet Archive's index. X's public embed endpoint gives author, text, time, likes and
+    reply status. A post has to be about AI itself, not a reply, and fresh or strong. Likes are
+    weighted by who posted: a short list of high-signal AI accounts (labs, their builders,
+    researchers, reporters; the AINews idea of a hand-kept list of people worth hearing) counts
+    five or three times, everyone else once and must clear a higher bar. Ranked like Hacker News:
+    weighted likes over (age + 2) ** 1.5. A post's `story` gives the headline it reacts to.
+  - Claude Code releases (GitHub API, anthropics/claude-code), with the release's first notes
   - Anthropic news (anthropic.com sitemap, pages changed in the last 3 days, their own titles)
-  - Hacker News (Algolia API): stories naming Claude, or linking Anthropic's news or engineering pages, with 80+ points in 2 days
+  - Hacker News (Algolia API): the front page's AI stories, plus stories naming Claude with 80+
+    points in 2 days; ranked by HN's own gravity, points over (age + 2) ** 1.8
   - Simon Willison's weblog (Atom feed), AI and LLM entries from the last 3 days
+
+Item fields (schema 1; everything past the first four is optional, for newer readers):
+  title, url, source, published_at   short headline (<= 100 chars), https link, label, ISO time
+  text          the full post or a one-paragraph summary, plain text, <= 600 chars
+  author_name   an X author's display name
+  likes         an X post's likes
+  story         for an X post, the headline of the story it is about (Techmeme or Reddit)
+  via           how the item was found when the source is the publisher (`Techmeme`)
+  points        Hacker News points
+  discussion    the Hacker News comments page
+  links         the https links an X post carries (its article, if any)
 
 Standard library only. Publishing never checks out or switches branches: it
 writes the commit with git plumbing and pushes it as the operator.
@@ -38,15 +59,35 @@ from concurrent.futures import ThreadPoolExecutor
 
 UA = 'g-line-pulse/1 (+https://github.com/lifeofgurpreet/g-line)'
 NOW = dt.datetime.now(dt.timezone.utc)
-MAX_ITEMS = 10
-# Accounts watched for X posts: Claude, Anthropic and the Claude Code team.
+MAX_ITEMS = 15
+# Accounts whose posts are also looked up in the Internet Archive: Claude, Anthropic, the Claude Code team.
 X_ACCOUNTS = ('claudeai', 'AnthropicAI', 'bcherny', '_catwu', 'alexalbert__')
+# Whose likes count more: a hand-kept list of high-signal AI voices. Five times: the labs and their
+# product accounts, and the people who ship or lead them. Three times: researchers, builders and
+# reporters whose posts tend to be news rather than reaction.
+X_WEIGHT = {**{h.lower(): 5 for h in (
+    'claudeai', 'AnthropicAI', 'bcherny', '_catwu', 'alexalbert__', 'DarioAmodei', 'jackclarkSF', 'mikeyk',
+    'OpenAI', 'OpenAIDevs', 'ChatGPTapp', 'sama', 'gdb', 'markchen90', 'kevinweil', 'GoogleDeepMind', 'GoogleAI',
+    'demishassabis', 'JeffDean', 'OfficialLoganK', 'sundarpichai', 'AIatMeta', 'alexandr_wang', 'xai', 'MistralAI',
+    'deepseek_ai', 'Alibaba_Qwen', 'huggingface', 'karpathy', 'simonw', 'swyx', 'AndrewYNg', 'ylecun', 'cursor_ai',
+    'github', 'satyanadella', 'NVIDIAAI', 'lmarena_ai', 'ArtificialAnlys', 'METR_Evals', 'EpochAIResearch')},
+    **{h.lower(): 3 for h in (
+    'NeelNanda5', 'ch402', 'janleike', 'AmandaAskell', 'sleepinyourhat', 'jaredkaplan', 'tszzl', 'natolambert',
+    'emollick', 'fchollet', 'hardmaru', 'goodside', 'hwchase17', 'jxnlco', 'mckaywrigley', 'amasad', 'rauchg',
+    'steipete', 'Teknium1', '_akhaliq', 'ClementDelangue', 'natfriedman', 'danielgross', 'paulg', 'garrytan',
+    'AndrewCurran_', 'kevinroose', 'CaseyNewton', 'steph_palazzolo', 'markgurman', 'ashleyrgold', 'btibor91',
+    'testingcatalog', 'NousResearch', 'GergelyOrosz', 'trq212', 'lennysan', 'yuchenj_uw', 'teortaxestex', 'xlr8harder', 'levie', 'finkd', 'polynoamchen', 'npew',
+    'joshwoodward', 'demi_guo', 'mervenoyann', 'reach_vb', 'Thom_Wolf', 'lilianweng', 'johnschulman2',
+    'ilyasut', 'miramurati', 'aidan_mclau', 'willdepue', 'sebastienbubeck', 'jeremyphoward', 'zachtratar')}}
 X_STATUS = re.compile(r'^https://(?:www\.)?(?:x|twitter)\.com/([A-Za-z0-9_]{1,15})/status/(\d{5,25})')
 X_LINK = re.compile(r'(?:x|twitter)\.com/([A-Za-z0-9_]{1,15})/status/(\d{15,25})')
 AI_WORDS = re.compile(r'\b(?:ai|a\.i\.|llms?|gpt[\w.-]*|claude|anthropic|openai|gemini|deepmind|chatgpt|codex|copilot|cursor|'
                       r'mistral|llama|deepseek|qwen|grok|xai|nvidia|agents?|agentic|models?|mcp|inference|chatbots?|'
                       r'superintelligence|agi|hugging ?face|perplexity|open[- ]weights?|neural|interpretability|alignment|'
-                      r'benchmarks?|tokens?|params|parameters|gguf|fine-?tun\w*|transformers?|evals?|vibe[- ]?cod\w*)\b', re.I)
+                      r'benchmarks?|tokens?|params|parameters|gguf|fine-?tun\w*|transformers?|evals?|vibe[- ]?cod\w*|'
+                      r'gpus?|data ?cent(?:er|re)s?|muse|sora|veo|copilots?|reasoning)\b', re.I)
+STOP = set('the a an of to in on for and or with by at from as is are be its it this that new says say said will has have'
+           ' after over about into than more most how why what who which their his her our your up out not now'.split())
 
 
 def get(url, timeout=20):
@@ -72,9 +113,46 @@ def clean(text, n=100):
     return text if len(text) <= n else text[: n - 1].rstrip() + '…'
 
 
-def item(title, url, source, at):
-    return {'title': clean(title), 'url': url, 'source': source, 'published_at': iso(at) if at else None}
+def text_of(markup):
+    return re.sub(r'\s+', ' ', html.unescape(re.sub(r'<[^>]+>', ' ', markup or ''))).strip()
 
+
+def summary(text, n=600):
+    """Plain text for an item's `text`: no markup, no bare links, whole sentences where they fit."""
+    text = clean(re.sub(r'https?://\S+', '', text_of(text)), 10_000)
+    if len(text) <= n:
+        return text
+    cut = text[:n]
+    end = max(cut.rfind('. '), cut.rfind('! '), cut.rfind('? '))
+    return cut[: end + 1] if end > n // 2 else clean(text, n)
+
+
+def item(title, url, source, at, **extra):
+    out = {'title': clean(title), 'url': url, 'source': source, 'published_at': iso(at) if at else None}
+    out.update({k: v for k, v in extra.items() if v not in (None, '', 0)})
+    return out
+
+
+def age_h(at):
+    return max(0.0, (NOW - at).total_seconds() / 3600) if at else 999.0
+
+
+def words(text):
+    return {w for w in re.findall(r'[a-z0-9]+', (text or '').lower()) if len(w) > 2 and w not in STOP}
+
+
+def same_story(a, b):
+    """Two headlines about one thing: most of the shorter one's words are in the other."""
+    wa, wb = words(a), words(b)
+    small = min(len(wa), len(wb))
+    return small >= 3 and len(wa & wb) / small >= 0.6
+
+
+def url_key(url):
+    return re.sub(r'^https?://(www\.)?|[?#].*$|/$', '', url or '').lower()
+
+
+# ------------------------------------------------------------------ sources
 
 def claude_code_releases():
     data = json.loads(get('https://api.github.com/repos/anthropics/claude-code/releases?per_page=3'))
@@ -82,8 +160,18 @@ def claude_code_releases():
     for r in data:
         at = parse_time(r.get('published_at') or '')
         if at and NOW - at < dt.timedelta(days=7):
-            out.append(item(f"Claude Code {r.get('tag_name', '').lstrip('v')} released", r.get('html_url'), 'Claude Code releases', at))
-    return out[:1]
+            notes = [clean(re.sub(r'^\s*[-*]\s*|`|\*\*', '', line), 200) for line in (r.get('body') or '').splitlines()
+                     if re.match(r'\s*[-*]\s+\S', line)]
+            text = ' · '.join(notes[:4])
+            out.append((age_h(at), item(f"Claude Code {r.get('tag_name', '').lstrip('v')} released", r.get('html_url'),
+                                        'Claude Code releases', at, text=summary(text) if text else None)))
+    return [i for _, i in out[:1]]
+
+
+def meta_description(page):
+    m = re.search(r'<meta[^>]+(?:name|property)="(?:og:)?description"[^>]+content="([^"]*)"', page, re.I) or \
+        re.search(r'<meta[^>]+content="([^"]*)"[^>]+(?:name|property)="(?:og:)?description"', page, re.I)
+    return summary(m.group(1)) if m else None
 
 
 def anthropic_news():
@@ -95,26 +183,34 @@ def anthropic_news():
         page = get(url)
         title = re.search(r'<title>([^<]+)</title>', page)
         if title:
-            out.append(item(re.sub(r'\s*[|\\]\s*Anthropic\s*$', '', title.group(1)), url, 'Anthropic', at))
+            out.append(item(re.sub(r'\s*[|\\]\s*Anthropic\s*$', '', title.group(1)), url, 'Anthropic', at,
+                            text=meta_description(page)))
     return out
 
 
 def hacker_news():
+    """The front page's AI stories and the last two days' Claude stories, by HN's own gravity."""
     since = int((NOW - dt.timedelta(days=2)).timestamp())
-    seen, out = set(), []
-    for q in ('claude', 'anthropic', 'claude code'):
-        data = json.loads(get(f'https://hn.algolia.com/api/v1/search_by_date?tags=story&query={urllib.request.quote(q)}'
-                              f'&numericFilters=points%3E80,created_at_i%3E{since}&hitsPerPage=10'))
-        for h in data.get('hits', []):
-            # Dev news: the title names Claude, or the link is Anthropic's own news or engineering page.
+    hits = json.loads(get('https://hn.algolia.com/api/v1/search?tags=front_page&hitsPerPage=60')).get('hits', [])
+    hits = [h for h in hits if AI_WORDS.search(h.get('title') or '')]
+    for q in ('claude', 'anthropic'):
+        for h in json.loads(get(f'https://hn.algolia.com/api/v1/search_by_date?tags=story&query={q}'
+                                f'&numericFilters=points%3E80,created_at_i%3E{since}&hitsPerPage=10')).get('hits', []):
             url = h.get('url') or ''
-            if h['objectID'] in seen or not (re.search(r'\bclaude\b', h.get('title', ''), re.I)
-                                             or re.match(r'https://www\.anthropic\.com/(news|engineering)/', url)):
-                continue
-            seen.add(h['objectID'])
-            url = h.get('url') or f"https://news.ycombinator.com/item?id={h['objectID']}"
-            out.append((h.get('points', 0), item(h.get('title'), url, 'Hacker News', dt.datetime.fromtimestamp(h['created_at_i'], dt.timezone.utc))))
-    return [i for _, i in sorted(out, key=lambda x: -x[0])[:3]]
+            if re.search(r'\bclaude\b', h.get('title', ''), re.I) or re.match(r'https://www\.anthropic\.com/(news|engineering)/', url):
+                hits.append(h)
+    seen, out = set(), []
+    for h in hits:
+        if h['objectID'] in seen or (h.get('points') or 0) < 60:
+            continue
+        seen.add(h['objectID'])
+        at = dt.datetime.fromtimestamp(h['created_at_i'], dt.timezone.utc)
+        url = h.get('url') or f"https://news.ycombinator.com/item?id={h['objectID']}"
+        points, comments = h.get('points') or 0, h.get('num_comments') or 0
+        text = f"{points} points and {comments} comments on Hacker News."
+        out.append((points / (age_h(at) + 2) ** 1.8, item(h.get('title'), url, 'Hacker News', at, text=text, points=points,
+                                                          discussion=f"https://news.ycombinator.com/item?id={h['objectID']}")))
+    return [i for _, i in sorted(out, key=lambda x: -x[0])[:4]]
 
 
 def simon_willison():
@@ -126,9 +222,51 @@ def simon_willison():
         link = e.find('a:link', ns)
         about = f"{e.findtext('a:title', '', ns)} {e.findtext('a:summary', '', ns)}"
         if at and NOW - at < dt.timedelta(days=3) and link is not None and re.search(r'claude|anthropic|llm|\bmodels?\b|\bagents?\b|\bai\b', about, re.I):
-            out.append(item(e.findtext('a:title', '', ns), link.get('href'), "Simon Willison's weblog", at))
+            body = e.findtext('a:summary', '', ns) or e.findtext('a:content', '', ns)
+            out.append(item(e.findtext('a:title', '', ns), link.get('href'), "Simon Willison's weblog", at,
+                            text=summary(body) or None))
     return out[:2]
 
+
+def techmeme():
+    """Techmeme's front page as (stories, x_ids). A story: its rank on the page, headline, publisher,
+    summary, how many outlets and voices it drew, and when Techmeme posted it. x_ids: each X post
+    Techmeme lists under a story, with that story's key and headline."""
+    page = get('https://www.techmeme.com/')
+    stories, x_ids = [], {}
+    for n, cluster in enumerate(re.split(r'<DIV CLASS="clus">', page, flags=re.I)[1:]):
+        head = re.search(r'<A CLASS="ourh" HREF="([^"]+)">(.*?)</A>', cluster, re.S)
+        if not head:
+            continue
+        cite = re.search(r'<CITE>(.*?)</CITE>', cluster, re.S)
+        blurb = re.search(r'</STRONG>\s*(?:&nbsp;)?\s*&mdash;(?:&nbsp;)?(.*?)</DIV>', cluster, re.S)
+        twid = re.search(r'twid="(\d+)"', cluster)
+        headline = text_of(head.group(2))
+        coverage = len(re.findall(r'<A HREF=', cluster, re.I))
+        stories.append({'rank': n, 'url': head.group(1), 'headline': headline,
+                        'publisher': clean(text_of(cite.group(1)).rstrip(':'), 28) if cite else 'Techmeme',
+                        'blurb': text_of(blurb.group(1)) if blurb else '', 'coverage': coverage,
+                        'at': x_posted_at(twid.group(1)) if twid else None,
+                        'ai': bool(AI_WORDS.search(headline))})
+        for handle, post_id in X_LINK.findall(cluster):
+            if handle.lower() != 'techmeme':  # its own posts repeat the headline; the voices around it are the news
+                x_ids.setdefault(post_id, (f'techmeme#{n}', headline, handle))
+    return stories, x_ids
+
+
+def techmeme_items(stories):
+    """Techmeme's AI stories, best first: higher on the page and wider coverage win, decayed by age."""
+    out = []
+    for s in stories:
+        if not s['ai'] or not s['url'].startswith('https://'):
+            continue
+        score = (s['coverage'] + 10) / (s['rank'] + 3) / (age_h(s['at']) + 4) ** 0.5
+        text = f"{s['headline']}. {s['blurb']}" if s['blurb'] else s['headline']
+        out.append((score, item(s['headline'], s['url'], s['publisher'], s['at'], text=summary(text), via='Techmeme')))
+    return [i for _, i in sorted(out, key=lambda x: -x[0])]
+
+
+# ------------------------------------------------------------------ X
 
 def x_post(post_id):
     """One X post from the public embed endpoint (the one embedded posts use; no key), or None."""
@@ -137,14 +275,25 @@ def x_post(post_id):
         return None
     text = data.get('text', '')
     start, end = (data.get('display_text_range') or [0, len(text)])[:2]
-    text = re.sub(r'https://t\.co/\S+', '', text[start:end])
-    return {'handle': data['user']['screen_name'], 'text': text, 'likes': data.get('favorite_count', 0),
+    text = re.sub(r'https://t\.co/\S+', '', text[start:end]).strip()
+    if data.get('note_tweet') and text and not text.endswith('…'):
+        text += '…'  # a long post: the embed carries its opening only
+    quoted = data.get('quoted_tweet') or {}
+    user = data['user']
+    links = [u.get('expanded_url') for u in (data.get('entities') or {}).get('urls', []) if u.get('expanded_url')]
+    return {'handle': user['screen_name'], 'name': user.get('name') or '', 'text': text, 'likes': data.get('favorite_count', 0),
+            'verified': bool(user.get('verified')) or user.get('verified_type') in ('Business', 'Government'),
             'reply': bool(data.get('in_reply_to_status_id_str')), 'sensitive': bool(data.get('possibly_sensitive')),
-            'at': parse_time(data.get('created_at') or '')}
+            'quoted': (f"@{quoted.get('user', {}).get('screen_name', '')}: {quoted.get('text', '')}" if quoted.get('text') else ''),
+            'links': links, 'at': parse_time(data.get('created_at') or '')}
 
 
-def x_item(post, post_id):
-    return item(post['text'], f"https://x.com/{post['handle']}/status/{post_id}", f"𝕏 @{post['handle']}", post['at'])
+def x_item(post, post_id, story=None):
+    quoted = re.sub(r'https://t\.co/\S+', '', post.get('quoted') or '').strip()
+    context = story or ('Quoting ' + quoted if quoted else None)
+    return item(post['text'], f"https://x.com/{post['handle']}/status/{post_id}", f"𝕏 @{post['handle']}", post['at'],
+                text=summary(post['text']), author_name=clean(post.get('name'), 50) or None, likes=post.get('likes') or None,
+                story=clean(context, 160) if context else None, links=[u for u in post.get('links', []) if u.startswith('https://')][:3] or None)
 
 
 def x_posted_at(post_id):
@@ -152,25 +301,15 @@ def x_posted_at(post_id):
     return dt.datetime.fromtimestamp(((int(post_id) >> 22) + 1288834974657) / 1000, dt.timezone.utc)
 
 
-def text_of(markup):
-    return re.sub(r'\s+', ' ', html.unescape(re.sub(r'<[^>]+>', ' ', markup)))
-
-
-def techmeme_x_ids():
-    """X posts linked from Techmeme's front page, each with the story cluster it sits in."""
-    page = get('https://www.techmeme.com/')
-    found = {}
-    for n, cluster in enumerate(re.split(r'<DIV CLASS="clus">', page, flags=re.I)[1:]):
-        for handle, post_id in X_LINK.findall(cluster):
-            if handle.lower() != 'techmeme':  # its own posts repeat the headline; the voices around it are the news
-                found.setdefault(post_id, f'techmeme#{n}')
-    return found
-
-
 def reddit_x_ids():
-    """X posts linked from the hot pages of AI subreddits (their public RSS)."""
+    """X posts linked from the hot pages of AI subreddits (their public RSS), with the thread's title."""
     feed = get('https://www.reddit.com/r/ClaudeAI+Anthropic+ClaudeCode+singularity+LocalLLaMA+OpenAI+ChatGPTCoding/hot/.rss?limit=100')
-    return {post_id: f'reddit:{post_id}' for _, post_id in X_LINK.findall(html.unescape(feed))}
+    found = {}
+    for entry in re.findall(r'<entry>(.*?)</entry>', feed, re.S):
+        title = re.search(r'<title>(.*?)</title>', entry, re.S)
+        for handle, post_id in X_LINK.findall(html.unescape(entry)):
+            found.setdefault(post_id, (f'reddit:{post_id}', text_of(title.group(1)) if title else None, handle))
+    return found
 
 
 def archive_x_ids(handle, days=3):
@@ -178,31 +317,46 @@ def archive_x_ids(handle, days=3):
     since = (NOW - dt.timedelta(days=days)).strftime('%Y%m%d')
     rows = json.loads(get(f'https://web.archive.org/cdx/search/cdx?url=x.com/{handle}/status/&matchType=prefix'
                           f'&from={since}&output=json&fl=original&collapse=urlkey&limit=300', timeout=40) or '[]')
-    return {m.group(2): f'archive:{m.group(2)}' for (original,) in rows[1:]
+    return {m.group(2): (f'archive:{m.group(2)}', None, handle) for (original,) in rows[1:]
             for m in [X_STATUS.match(original.replace('http://', 'https://'))] if m and m.group(1).lower() == handle.lower()}
 
 
-def x_qualifies(likes, age_h, watched):
-    """Fresh, or strong enough to stay: under 2 h with 10 likes, under a day while gaining
-    30 an hour, under 3 days with 3,000. A watched account's likes count five times."""
-    likes *= 5 if watched else 1
-    return (age_h < 2 and likes >= 10) or (age_h < 24 and likes >= 30 * age_h) or (age_h < 72 and likes >= 3000)
+def x_weight(post):
+    return X_WEIGHT.get(post['handle'].lower(), 1.5 if post.get('verified') else 1)
 
 
-def x_posts(accounts=X_ACCOUNTS, keep=5, newest=2):
-    """X posts about AI: the strongest by likes over age, then the `newest` freshest of the rest
-    that qualify, so a quiet hour's new posts aren't crowded out by the day's big one. At most
-    two per story and per author."""
-    watched = {a.lower() for a in accounts}
-    story, notes = {}, []
-    for name, fn in [('techmeme', techmeme_x_ids), ('reddit', reddit_x_ids)] + \
-                    [(f'@{a}', lambda a=a: archive_x_ids(a)) for a in accounts]:
+def x_qualifies(likes, age, weight):
+    """Fresh, or strong enough to stay. Likes count `weight` times (5 or 3 for the listed voices),
+    and the bar is set for an unlisted account: 40 within 2 hours, 40 an hour within a day, 3,000
+    within 3 days. A listed voice clears it with a fifth or a third of that."""
+    likes *= weight
+    return (age < 2 and likes >= 40) or (age < 24 and likes >= 40 * age) or (age < 72 and likes >= 3000)
+
+
+def x_score(post, from_techmeme_rank=None):
+    """Hacker News's gravity on weighted likes. A voice Techmeme lists under a top story is lifted;
+    one reacting to a story it isn't the source of (anyone but a lab or product account) gives way
+    to the primary source, as an editor would lead with the announcement."""
+    score = (post['likes'] * x_weight(post) + 20) / (age_h(post['at']) + 2) ** 1.5
+    if from_techmeme_rank is not None:
+        score *= (1 + 2 / (from_techmeme_rank + 2)) * (1 if x_weight(post) >= 5 else 0.6)
+    return score
+
+
+def x_posts(found, accounts=X_ACCOUNTS):
+    """X posts about AI, best first. `found` maps post ID to (story key, story headline, handle)."""
+    story = dict(found)
+    own = {a.lower() for a in X_ACCOUNTS}
+    notes = []
+    for a in accounts:
         try:
-            for post_id, where in fn().items():
+            for post_id, where in archive_x_ids(a).items():
                 story.setdefault(post_id, where)
         except Exception as exc:
-            notes.append(f'{name} {type(exc).__name__}')
-    ids = sorted((i for i in story if NOW - x_posted_at(i) < dt.timedelta(hours=72)), reverse=True)[:100]
+            notes.append(f'@{a} {type(exc).__name__}')
+    # The listed voices are looked up first whatever their age, then everyone else newest first.
+    recent = [i for i in story if NOW - x_posted_at(i) < dt.timedelta(hours=72)]
+    ids = sorted(recent, key=lambda i: (story[i][2].lower() not in X_WEIGHT, -int(i)))[:200]
 
     def fetch(post_id):
         try:
@@ -214,27 +368,66 @@ def x_posts(accounts=X_ACCOUNTS, keep=5, newest=2):
         posts = list(pool.map(fetch, ids))
     scored = []
     for post_id, post in posts:
-        # A reply reads as half a sentence on its own.
-        if not post or post['reply'] or post['sensitive'] or not post['at'] or not clean(post['text']):
+        # A reply reads as half a sentence on its own; a post of a few words says nothing.
+        if not post or post['reply'] or post['sensitive'] or not post['at'] or len(clean(post['text'], 1000)) < 30:
             continue
-        age_h = max(0.0, (NOW - post['at']).total_seconds() / 3600)
-        is_watched = post['handle'].lower() in watched
-        # The post itself has to be about AI: a story about AI also gathers jokes and asides.
-        if (is_watched or AI_WORDS.search(post['text'])) and x_qualifies(post['likes'], age_h, is_watched):
-            scored.append(((post['likes'] * (5 if is_watched else 1) + 20) / (age_h + 2) ** 1.5, post, post_id))
-    out, taken = [], {}
-    strongest = sorted(scored, key=lambda x: -x[0])
-    freshest = sorted(scored, key=lambda x: -int(x[2]))  # IDs grow with time
-    for limit, ranked in ((keep - newest, strongest), (keep, freshest), (keep, strongest)):
-        for _, post, post_id in ranked:
-            keys = (f"@{post['handle'].lower()}", story[post_id])
-            if len(out) < limit and post_id not in taken and all(taken.get(k, 0) < 2 for k in keys):
-                for k in (*keys, post_id):
-                    taken[k] = taken.get(k, 0) + 1
-                out.append(x_item(post, post_id))
+        weight = x_weight(post)
+        # The post itself has to be about AI (Claude's and Anthropic's own accounts excepted):
+        # a story about AI also gathers jokes and asides.
+        if not (post['handle'].lower() in own or AI_WORDS.search(post['text'])):
+            continue
+        if not x_qualifies(post['likes'], age_h(post['at']), weight):
+            continue
+        key, headline, _ = story[post_id]
+        rank = int(key.split('#')[1]) if key.startswith('techmeme#') else None
+        # An unlisted account's take on a Techmeme story is a reaction; the story itself is the
+        # news, and the Techmeme lane carries it. Only a huge post stands on its own.
+        if rank is not None and weight < 3 and post['likes'] < 5000:
+            continue
+        scored.append((x_score(post, rank), post, post_id, key, headline))
     if notes:
         print('x sources down:', ', '.join(notes), file=sys.stderr)
-    return out
+    return [(s, x_item(post, post_id, headline), key) for s, post, post_id, key, headline in sorted(scored, key=lambda x: -x[0])]
+
+
+# ------------------------------------------------------------------ the front page
+
+def front_page(lanes, limit=MAX_ITEMS):
+    """Lay the page out like an editor: take lanes in turn (the day's big story, a voice on X, a
+    Claude Code or Anthropic item, the newest post worth reading, Hacker News, ...), each lane's
+    best item that isn't a story or an author already on the page. Lanes that run dry are skipped;
+    then the rest fill in from X. 0.5.x readers show the first eight, so the first eight carry
+    every kind, a post from the last hours among them when there is one."""
+    pattern = ['curated', 'techmeme', 'x', 'dev', 'fresh', 'x', 'techmeme', 'hn', 'x', 'dev', 'fresh', 'simonw', 'techmeme', 'x', 'hn']
+    page, story_keys, urls, heads = [], set(), set(), []
+
+    def fits(entry):
+        it, key = entry
+        if {url_key(u) for u in [it['url'], *it.get('links', [])]} & urls or (key and key in story_keys):
+            return False
+        if it['source'].startswith('𝕏 @') and it['source'].lower() in story_keys:  # one post per author
+            return False
+        return not any(same_story(about, h) for about in filter(None, (it['title'], it.get('story'))) for h in heads)
+
+    def take(entry):
+        it, key = entry
+        page.append(it)
+        urls.update(url_key(u) for u in [it['url'], *it.get('links', [])])
+        if key:
+            story_keys.update((key, it['source'].lower()))
+        heads.extend(filter(None, (it['title'], it.get('story'))))
+
+    queues = {k: list(v) for k, v in lanes.items()}
+    for lane in pattern + ['x'] * limit:
+        if len(page) >= limit:
+            break
+        q = queues.get(lane, [])
+        while q:
+            entry = q.pop(0)
+            if fits(entry):
+                take(entry)
+                break
+    return page
 
 
 def curated_file(repo):
@@ -262,30 +455,44 @@ def curated(data):
             if post:
                 out.append(x_item(post, x.group(2)))
         elif c.get('title') and url.startswith('https://') and c.get('source'):
-            out.append(item(c['title'], url, clean(c['source'], 28), parse_time(c.get('published_at') or '') or NOW))
+            out.append(item(c['title'], url, clean(c['source'], 28), parse_time(c.get('published_at') or '') or NOW,
+                            text=summary(c.get('text') or '') or None))
     return out
 
 
 def build(repo):
-    items, notes = [], []
+    notes = []
     picked = curated_file(repo) if repo else {}
     accounts = tuple(a for a in picked.get('x_accounts', X_ACCOUNTS) if re.fullmatch(r'[A-Za-z0-9_]{1,15}', str(a)))
-    for name, fn in (('curated', lambda: curated(picked)), ('x', lambda: x_posts(accounts)),
-                     ('claude-code', claude_code_releases), ('anthropic', anthropic_news), ('hn', hacker_news),
-                     ('simonw', simon_willison)):
+
+    def run(name, fn, default):
         try:
             got = fn()
-            items += got
-            notes.append(f'{name}:{len(got)}')
+            notes.append(f'{name}:{len(got[0]) if name == "techmeme" else len(got)}')
+            return got
         except Exception as exc:  # one source down never stops the feed
             notes.append(f'{name}:error {type(exc).__name__}')
-    seen, unique = set(), []
-    for i in items:
-        if i['url'] and i['url'] not in seen and i['url'].startswith('https://'):
-            seen.add(i['url'])
-            unique.append(i)
-    feed = {'schema': 1, 'generated_at': iso(NOW), 'items': unique[:MAX_ITEMS],
-            'sources': 'curated, X (found via Techmeme, Reddit, the Internet Archive), Claude Code releases, Anthropic, Hacker News, Simon Willison'}
+            return default
+
+    stories, tm_x = run('techmeme', techmeme, ([], {}))
+    rd_x = run('reddit', reddit_x_ids, {})
+    found = {**rd_x, **tm_x}  # Techmeme's story context wins over Reddit's
+    lanes = {
+        'curated': [(i, None) for i in run('curated', lambda: curated(picked), [])],
+        'techmeme': [(i, None) for i in techmeme_items(stories)],
+        'x': [(i, key) for _, i, key in run('x', lambda: x_posts(found, accounts), [])],
+        'fresh': [],
+        'dev': [(i, None) for i in run('claude-code', claude_code_releases, []) + run('anthropic', anthropic_news, [])],
+        'hn': [(i, None) for i in run('hn', hacker_news, [])],
+        'simonw': [(i, None) for i in run('simonw', simon_willison, [])],
+    }
+    # The newest posts that cleared the bar, from the last three hours: things move fast.
+    lanes['fresh'] = sorted((e for e in lanes['x'] if age_h(parse_time(e[0]['published_at'] or '')) < 3),
+                            key=lambda e: e[0]['published_at'], reverse=True)
+    items = [i for i in front_page(lanes) if i['url'].startswith('https://')]
+    feed = {'schema': 1, 'generated_at': iso(NOW), 'items': items,
+            'sources': 'curated, Techmeme, X (found via Techmeme, Reddit, the Internet Archive), Claude Code releases, '
+                       'Anthropic, Hacker News, Simon Willison'}
     return feed, notes
 
 
@@ -297,8 +504,8 @@ def publish(repo, feed, push_cmd):
     git(repo, 'fetch', '-q', 'origin', 'pulse')
     parent = git(repo, 'rev-parse', 'origin/pulse')
     old = json.loads(git(repo, 'show', 'origin/pulse:pulse.json') or '{}')
-    if [i['url'] for i in old.get('items', [])] == [i['url'] for i in feed['items']] and \
-            [i['title'] for i in old.get('items', [])] == [i['title'] for i in feed['items']]:
+    if [(i['url'], i['title'], i.get('text')) for i in old.get('items', [])] == \
+            [(i['url'], i['title'], i.get('text')) for i in feed['items']]:
         print('unchanged; nothing published')
         return
     blob = git(repo, 'hash-object', '-w', '--stdin', data=json.dumps(feed, indent=1, ensure_ascii=False) + '\n')
