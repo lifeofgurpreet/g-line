@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-16T14:28:53Z",
+ "generated_at": "2026-10-16T14:59:48Z",
  "items": [
   {
    "title": "Meta releases Muse Spark Open, saying it is the most capable US open-weight model, with 816B total…",
@@ -17,8 +17,8 @@
    "published_at": "2026-10-15T15:09:11Z",
    "text": "Meet NVIDIA Nemotron 3.5 Super VL Our new open model combines reasoning and tool use with text, image, document, and video understanding for long-running AI agents. 120B total parameters with 12B active 🧵",
    "author_name": "NVIDIA AI",
-   "likes": 4136,
-   "story": "Waymo plans to launch its robotaxis in Toronto in 2028 in partnership with Element Fleet Management, the company's first deployment in Canada"
+   "likes": 4146,
+   "story": "A look at China's AI learning frenzy, as economic anxiety and fear of being left behind fuel a booming market for courses promising prosperity through AI"
   },
   {
    "title": "Claude Code 2.1.301 released",
@@ -34,7 +34,7 @@
    "published_at": "2026-10-15T15:42:52Z",
    "text": "when nick told me that he had some interp breakthroughs, he was uh, underselling it. i think this may be remembered as a major moment in scientific history. news so good even eliezer will have to lower his pdoom. we can start making alignment into a 'normal science'",
    "author_name": "roon",
-   "likes": 6276,
+   "likes": 6300,
    "story": "A researcher says modern neural networks are far more interpretable than believed, with most neurons understandable in models up to trillions of parameters"
   },
   {
@@ -46,13 +46,13 @@
    "via": "Techmeme"
   },
   {
-   "title": "Krea 3 – An image model built for editing at scale",
-   "url": "https://www.krea.ai/krea-3",
+   "title": "AI-assisted PCB design for KiCad 10",
+   "url": "https://github.com/mixelpixx/Konnect",
    "source": "Hacker News",
-   "published_at": "2026-10-15T16:04:05Z",
-   "text": "324 points and 105 comments on Hacker News.",
-   "points": 324,
-   "discussion": "https://news.ycombinator.com/item?id=50105648"
+   "published_at": "2026-10-14T10:51:37Z",
+   "text": "65 points and 22 comments on Hacker News.",
+   "points": 65,
+   "discussion": "https://news.ycombinator.com/item?id=50085553"
   },
   {
    "title": "\"Anthropic told investors on Wednesday distillation accounted for 5 per cent to 7 per cent of reven…",
@@ -61,7 +61,7 @@
    "published_at": "2026-10-15T13:16:39Z",
    "text": "\"Anthropic told investors on Wednesday distillation accounted for 5 per cent to 7 per cent of revenue\" If true, and Q2 revenue was $11.5B, then that's more than half a billion dollars spent by other labs to distill Anthropic's models!",
    "author_name": "Simon Willison",
-   "likes": 740,
+   "likes": 745,
    "story": "Sources: some Anthropic investors discussed a ~$1.5T valuation for its IPO, down from ~$2T they had expected, after disclosures showed slowing Q3 revenue growth",
    "links": [
     "https://www.ft.com/content/11632d03-358c-454b-af95-d06d4072932b?syn-25a6b1a6=1"
@@ -75,11 +75,11 @@
    "text": "Anthropic announces updates to embedding independent evaluators"
   },
   {
-   "title": "Taiwan plans US industrial parks costing $2B to $4B each, starting with a Texas complex costing up…",
-   "url": "https://www.bloomberg.com/news/articles/2026-10-16/taiwan-to-fund-4-billion-texas-complex-for-ai-nvidia-partners",
+   "title": "Taiwan plans to curb AI server and chip exports to China as part of a US trade deal and make shippi…",
+   "url": "https://www.bloomberg.com/news/articles/2026-10-16/taiwan-to-curb-ai-chip-exports-to-china-as-part-of-us-trade-deal",
    "source": "Bloomberg",
-   "published_at": "2026-10-16T04:56:05Z",
-   "text": "Taiwan plans US industrial parks costing $2B to $4B each, starting with a Texas complex costing up to $4B, to build a supply chain for Nvidia, TSMC, and Foxconn. Taiwan plans to raise billions of dollars to develop industrial parks in the US that would build a base for a comprehensive supply chain …",
+   "published_at": "2026-10-16T11:46:15Z",
+   "text": "Taiwan plans to curb AI server and chip exports to China as part of a US trade deal and make shipping restricted AI hardware to China a criminal offense. Taiwan is preparing to tighten export controls on AI chips to further align with US restrictions, according to a senior official in Taipei …",
    "via": "Techmeme"
   }
  ],
