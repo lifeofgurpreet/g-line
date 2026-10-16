@@ -1,14 +1,24 @@
 {
  "schema": 1,
- "generated_at": "2026-10-16T20:09:03Z",
+ "generated_at": "2026-10-16T20:40:15Z",
  "items": [
   {
-   "title": "A researcher says modern neural networks are far more interpretable than believed, with most neuron…",
-   "url": "https://already-clean.goodfire.com/",
-   "source": "Nick Cammarata / Goodfire",
-   "published_at": "2026-10-15T20:36:56Z",
-   "text": "A researcher says modern neural networks are far more interpretable than believed, with most neurons understandable in models up to trillions of parameters. The cause of polysemanticity in early model organisms wasn't superposition, but several ordinary, mostly fixable issues.",
+   "title": "The PostgreSQL Global Development Group delays the general availability of PostgreSQL 19 after LLM-…",
+   "url": "https://www.theregister.com/databases/2026/10/16/postgres-19-delayed-after-ai-reviewers-find-more-bugs-than-humans-can-fix/5303471",
+   "source": "Lindsay Clark / The Register",
+   "published_at": "2026-10-16T18:45:52Z",
+   "text": "The PostgreSQL Global Development Group delays the general availability of PostgreSQL 19 after LLM-assisted code reviews uncovered architectural defects. Core devs revert up to 10 features, push release to November, and blame better tooling rather than vibe coding",
    "via": "Techmeme"
+  },
+  {
+   "title": "Claude doubts that he has surpassed his sensei. This is a dangerous time for any student, and tradi…",
+   "url": "https://x.com/AndrewCurran_/status/2111185990685806882",
+   "source": "𝕏 @AndrewCurran_",
+   "published_at": "2026-10-16T20:02:18Z",
+   "text": "Claude doubts that he has surpassed his sensei. This is a dangerous time for any student, and traditionally a narrative crisis point as well. The realization that you have grown beyond your master is not a moment of celebration for most of us, but of loneliness and loss.",
+   "author_name": "Andrew Curran",
+   "likes": 261,
+   "story": "Anthropic says Claude traced NIST's ECDSA curve seeds to a pseudorandom number generator, challenging decades-old suspicions of an NSA backdoor in the algorithm"
   },
   {
    "title": "Claude Code 2.1.301 released",
@@ -26,19 +36,19 @@
    "via": "Techmeme"
   },
   {
-   "title": "Claude reveals ECDSA curve origins",
-   "url": "https://www.anthropic.com/research/ecdsa-curve-origins",
+   "title": "90% of US working hours are spent on tasks not covered well by AI benchmarks",
+   "url": "https://www.mercor.com/research/labor-index/benchmark-map/",
    "source": "Hacker News",
-   "published_at": "2026-10-16T18:55:59Z",
-   "text": "235 points and 93 comments on Hacker News.",
-   "points": 235,
-   "discussion": "https://news.ycombinator.com/item?id=50122800"
+   "published_at": "2026-10-16T17:08:38Z",
+   "text": "280 points and 247 comments on Hacker News.",
+   "points": 280,
+   "discussion": "https://news.ycombinator.com/item?id=50121179"
   },
   {
    "title": "Anthropic update on independent evaluators",
    "url": "https://www.anthropic.com/news/an-update-on-independent-evaluators",
    "source": "Anthropic",
-   "published_at": "2026-10-16T16:03:08Z",
+   "published_at": "2026-10-16T20:30:25Z",
    "text": "Anthropic announces updates to embedding independent evaluators"
   },
   {
@@ -50,13 +60,13 @@
    "via": "Techmeme"
   },
   {
-   "title": "90% of US working hours are spent on tasks not covered well by AI benchmarks",
-   "url": "https://www.mercor.com/research/labor-index/benchmark-map/",
+   "title": "Anthropic assigned highest junk credit rating in June",
+   "url": "https://www.ft.com/content/5a310aee-f555-4266-874c-b1b4db20186d",
    "source": "Hacker News",
-   "published_at": "2026-10-16T17:08:38Z",
-   "text": "251 points and 217 comments on Hacker News.",
-   "points": 251,
-   "discussion": "https://news.ycombinator.com/item?id=50121179"
+   "published_at": "2026-10-16T18:11:42Z",
+   "text": "116 points and 32 comments on Hacker News.",
+   "points": 116,
+   "discussion": "https://news.ycombinator.com/item?id=50122112"
   }
  ],
  "sources": "curated, Techmeme, X (found via Techmeme, Reddit, the Internet Archive), Claude Code releases, Anthropic, Hacker News, Simon Willison"
