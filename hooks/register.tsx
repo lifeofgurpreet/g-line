@@ -28,7 +28,7 @@ import type { ReceiptSpec } from './extras'
 import { MOD_KEYS, accountSegment, inline, joined, modesWidth, shownHint, tailRoom, withText } from './inline'
 import { deck, nextRoom } from './deck'
 import { STATUS_DESCRIPTION, STATUS_SCHEMA, STATUS_TOOL, statusJson } from './glance'
-import { PULSE_EVERY_MS, PULSE_TTL_MS, PULSE_URL, ageOf, clean, countOf, newestFirst, pageOf, parseFeed, pulseRow, safeUrl, tickerText, xLead } from './pulse'
+import { PULSE_EVERY_MS, PULSE_TTL_MS, PULSE_URL, ageOf, clean, countOf, pageOf, parseFeed, pulseRow, safeUrl, tickerText, xLead } from './pulse'
 import type { PulseItem } from './pulse'
 import { gitSegmentOf } from './core'
 import {
@@ -1401,7 +1401,8 @@ export const register: Register = (on, options) => {
     }
     if ((await read($, view)) === 'news') {
       const feed = await read($, pulseAtom)
-      const items = newestFirst(feed?.items ?? [])
+      // The feed's own order: best first, as its editor ranked it.
+      const items = feed?.items ?? []
       const now = await nowMs($)
       const { Link } = $.ui.resolve(e)
       const at = Math.min(await read($, newsAt), Math.max(0, items.length - 1))
@@ -1410,36 +1411,42 @@ export const register: Register = (on, options) => {
       const picked = items[at]
       // The picked item in full takes its wrapped text's rows and two more; each other takes three.
       const pickedRows = 2 + Math.ceil([...(picked?.text ?? picked?.title ?? '')].length / columns)
+        + (picked?.story ? Math.ceil(([...picked.story].length + 2) / columns) : 0) + (picked?.discussion ? 1 : 0)
       const [start, end] = pageOf(items.length, at, Math.max(3, 1 + Math.floor((rows - 6 - pickedRows) / 3)))
       const fresh = items.filter(item => isNew(item)).length
       const move = (to: number) => () => void update($, newsAt, () => Math.max(0, Math.min(items.length - 1, to)))
       const selected = picked
       const updated = feed?.generatedAt ? Date.parse(feed.generatedAt) : Number.NaN
       const header = [
-        items.length ? (end - start < items.length ? `${start + 1}–${end} of ${items.length}, newest first` : `${items.length} items, newest first`) : 'Nothing in the feed yet',
+        items.length ? (end - start < items.length ? `${start + 1}–${end} of ${items.length}, best first` : `${items.length} items, best first`) : 'Nothing in the feed yet',
         Number.isFinite(updated) ? `updated ${ageOf({ title: '', url: '', source: '', at: feed?.generatedAt }, now)} ago` : '',
         fresh ? `${fresh} new since you last looked` : '',
       ].filter(Boolean).join(' · ')
       return (
         <Box flexDirection="column">
           <Text dimColor>{clean(header, columns)}</Text>
-          <Box flexDirection="row" gap={2} marginBottom={1}>
+          <Box flexDirection="row" flexWrap="wrap" columnGap={2} marginBottom={1}>
             <Button key="open" label="Open" hotkey="o" plain onPress={() => void (selected && openLink($, selected.url, e.surface))} />
             <Button key="next" plain label="Next" hotkey="j" onPress={move(at + 1)} />
-            <Button key="previous" plain label="Previous" hotkey="k" onPress={move(at - 1)} />
-            <Button key="copy" plain label="Copy link" hotkey="c" onPress={async () => {
+            <Button key="previous" plain label="Prev" hotkey="k" onPress={move(at - 1)} />
+            <Button key="copy" plain label="Copy" hotkey="c" onPress={async () => {
               if (!selected) return
               const copied = await $.ui.copy({ text: selected.url, surface: e.surface })
               $.ui.toast(copied.isCopied ? 'Link copied.' : selected.url, { timeoutMs: 4000 })
             }} />
+            {selected?.discussion ? (
+              <Button key="discussion" plain label="Comments" hotkey="d" onPress={() => void (selected.discussion && openLink($, selected.discussion, e.surface))} />
+            ) : null}
             <Button key="refresh" plain label="Refresh" hotkey="r" onPress={() => void refreshPulse($, true)} />
             <Button key="close" plain label="Close" hotkey="q" onPress={() => void $.ui.close({ id: PANE })} />
           </Box>
           {items.slice(start, end).map((item, offset) => {
             const index = start + offset
             const chosen = index === at
-            const who = item.author && item.source.startsWith('𝕏 @') ? `𝕏 ${item.author} ${item.source.replace(/^𝕏 /, '')}` : item.source
-            const meta = [who, ageOf(item, now), item.likes !== undefined ? `♥ ${countOf(item.likes)}` : ''].filter(Boolean).join(' · ')
+            const who = item.author && item.source.startsWith('𝕏 @') ? `𝕏 ${clean(item.author, 24)} ${item.source.replace(/^𝕏 /, '')}`
+              : item.via ? `${item.source} via ${item.via}` : item.source
+            const meta = [who, ageOf(item, now), item.likes !== undefined ? `♥ ${countOf(item.likes)}` : '',
+              item.points !== undefined ? `▲ ${countOf(item.points)}` : ''].filter(Boolean).join(' · ')
             return (
               <Box key={`news-${index}`} flexDirection="column" marginTop={offset ? 1 : 0}>
                 <Button key={`item-${index}`} plain onPress={() => void (chosen ? openLink($, item.url, e.surface) : move(index)())}>
@@ -1449,8 +1456,11 @@ export const register: Register = (on, options) => {
                 </Button>
                 {chosen ? (
                   <Box flexDirection="column" paddingLeft={2}>
+                    {item.text && !item.text.startsWith(item.title.replace(/…$/, '')) ? <Text bold>{item.title}</Text> : null}
+                    {item.story ? <Text dimColor>{`↳ ${item.story}`}</Text> : null}
                     <Text>{item.text ?? item.title}</Text>
-                    <Link href={item.url} label={item.url.replace(/^https:\/\/(www\.)?/, '')} />
+                    <Link href={item.url} label={clean(item.url.replace(/^https:\/\/(www\.)?/, ''), columns - 2)} />
+                    {item.discussion ? <Link href={item.discussion} label="Comments on Hacker News" /> : null}
                   </Box>
                 ) : (
                   <Box paddingLeft={2}><Text dimColor>{clean(meta, columns - 2)}</Text></Box>

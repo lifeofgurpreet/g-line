@@ -10,7 +10,8 @@ coding agents and for people.
 1. **Never above the prompt, never more than two lines** (plus Pulse's one row, only while
    the person has Pulse on). Line 1 is the tail of Claude Code's own hint line. Line 2 is one
    row the mod draws directly under it (`lines: 2`, the default). With `lines: 1` it's the
-   hint line alone; with `lines: receipts`, no footer at all. Never draw in `AbovePrompt`, and never open a pane the person didn't ask for.
+   hint line alone; with `lines: receipts`, no footer at all. Never draw in `AbovePrompt`,
+   and never open a pane the person didn't ask for.
 2. **Write on the line where the thing happened.** A turn's facts go on that turn's closing
    line (`TurnDuration`). The running turn's facts go on the spinner. Agents and compaction
    go on line 2 (or the footer labels in the one-line layout).

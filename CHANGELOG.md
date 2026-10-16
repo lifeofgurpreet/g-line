@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.6.1 (2026-10-16): the reader reads like a front page
+
+- `/g-line news` keeps the feed's own order, best first, instead of re-sorting by time; items
+  since your last look are still marked new.
+- The picked item shows the story a post on 𝕏 is about (`↳ …`), Hacker News points (`▲ 290`)
+  and a link to the comments (`d` opens them), and a publisher's name with who found it
+  (`Reuters via Techmeme`). A headline the text doesn't repeat is shown above it.
+- The key row wraps instead of running off a narrow pane.
+
 ## 0.6.0 (2026-10-16): a settings manager, a news reader, and Pulse you can see
 
 - **`/g-line settings`.** Every setting on one screen: its key, its value, where the value
@@ -15,10 +24,10 @@
 - **Pulse under the prompt.** With Pulse on, a dim row under line 2 shows one headline at a
   time, `𝕏 @handle · 2h:` first, moving on every 8 seconds, and the headline is a link
   (cmd-click). Turning Pulse on shows it within seconds. `/g-line open` opens the one showing.
-- **`/g-line news`, the reader.** Every item, newest first, the picked one in full with its
-  author, age, likes and link; `j`/`k`, `o`, `c`, `r`, `q`; items since your last look marked
-  new. The feed's new optional `text`, `likes` and `author_name` fields are read when present
-  (0.5 readers ignore them, and 0.6 falls back to the title).
+- **`/g-line news`, the reader.** Every item, the picked one in full with its author, age,
+  likes and link; `j`/`k`, `o`, `c`, `r`, `q`; items since your last look marked new. The
+  feed's new optional fields are read when present: 0.5 readers ignore them, and 0.6 falls
+  back to the title.
 - **Borrowed, with thanks.** One table drives every setting, its toggle, its command name and
   its docs, like starship's per-module config; `/g-line toggle` is `starship toggle`. Showing
   where each value comes from is `git config --show-origin`; the `•` and per-setting reset are

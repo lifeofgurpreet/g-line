@@ -1,6 +1,6 @@
 import { expect, test } from 'claude-code/testing'
 
-import { countOf, newestFirst, pageOf, parseFeed, pulseRow } from '../hooks/pulse'
+import { countOf, pageOf, parseFeed, pulseRow } from '../hooks/pulse'
 
 const ESC = String.fromCharCode(27)
 const AT = Date.parse('2026-10-14T12:00:00Z')
@@ -11,8 +11,16 @@ test('the feed\'s optional text, likes and author are read and cleaned; a 0.5 fe
     { title: 'Short', url: 'https://x.com/a/status/1', source: '𝕏 @a', text: `${ESC}[31mRed${ESC}[0m and ${long}`, likes: 12.7, author_name: `A${ESC}[1m` },
     { title: 'Same', url: 'https://x.com/b/status/2', source: '𝕏 @b', text: 'Same', likes: -3 },
     { title: 'Plain', url: 'https://example.com', source: 'Anthropic' },
+    { title: 'HN', url: 'https://krea.ai', source: 'Hacker News', points: 254, discussion: 'https://news.ycombinator.com/item?id=1' },
+    { title: 'Wire', url: 'https://reuters.com/a', source: 'Reuters', via: 'Techmeme', discussion: 'javascript:alert(1)' },
+    { title: 'Post', url: 'https://x.com/c/status/3', source: '𝕏 @c', story: `Story ${ESC}[2Jhere` },
   ] }), 0)
-  const [a, b, c] = feed?.items ?? []
+  const [a, b, c, hn, wire, post] = feed?.items ?? []
+  expect(hn?.points).toBe(254)
+  expect(hn?.discussion).toBe('https://news.ycombinator.com/item?id=1')
+  expect(wire?.via).toBe('Techmeme')
+  expect(wire?.discussion).toBeUndefined()
+  expect(post?.story).toBe('Story here')
   expect(a?.text?.startsWith('Red and word')).toBe(true)
   expect([...(a?.text ?? '')].length).toBeLessThanOrEqual(600)
   expect(a?.likes).toBe(12)
@@ -35,16 +43,10 @@ test('Pulse\'s row: who and how long ago, the headline, and the reader\'s name w
   expect(pulseRow({ ...item, source: 'Anthropic', at: undefined }, 120, AT)?.lead).toBe('Anthropic')
 })
 
-test('the reader pages around the picked item, newest first, and counts read at a glance', () => {
+test('the reader pages around the picked item, and counts read at a glance', () => {
   expect(pageOf(3, 0)).toEqual([0, 3])
   expect(pageOf(20, 0)).toEqual([0, 5])
   expect(pageOf(20, 10)).toEqual([8, 13])
   expect(pageOf(20, 19)).toEqual([15, 20])
-  const items = [
-    { title: 'old', url: 'u', source: 's', at: '2026-10-12T00:00:00Z' },
-    { title: 'undated', url: 'u', source: 's' },
-    { title: 'new', url: 'u', source: 's', at: '2026-10-14T00:00:00Z' },
-  ]
-  expect(newestFirst(items).map(i => i.title)).toEqual(['new', 'old', 'undated'])
   expect([countOf(999), countOf(4200), countOf(4000), countOf(12_345), countOf(2_500_000)]).toEqual(['999', '4.2k', '4k', '12k', '2.5M'])
 })

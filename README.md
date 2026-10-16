@@ -147,10 +147,11 @@ in tmux, add `set -ga terminal-features "*:hyperlinks"`). `/g-line open` opens w
 headline is showing; over SSH, where there's no browser to open, it copies the link instead.
 On a turn that runs longer than 15 seconds, the spinner shows the headlines too.
 
-**`/g-line news` is the reader.** It lists every item in the feed, newest first. The picked
-one is shown in full (author, age, likes, the whole post, its link); the rest are one headline
-each. `j` and `k` move, `o` or Enter opens, `c` copies the link, `r` refreshes, `q` closes.
-Items posted since you last opened it are marked **new**.
+**`/g-line news` is the reader.** It lists every item in the feed, best first, as the feed
+ranks them. The picked one is shown in full: who and when, likes on 𝕏 or points on Hacker
+News, the story a post is about, the whole post, and its link. The rest are one headline each.
+`j` and `k` move, `o` or Enter opens, `d` opens a Hacker News item's comments, `c` copies the
+link, `r` refreshes, `q` closes. Items posted since you last opened it are marked **new**.
 
 Headlines come from g-line's own static feed: posts on 𝕏 about AI, Claude Code releases,
 Anthropic's news pages, Hacker News stories about Claude, Simon Willison's AI posts, and a few

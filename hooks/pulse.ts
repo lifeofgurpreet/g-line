@@ -48,6 +48,9 @@ export function safeUrl(value: unknown): string | undefined {
   }
 }
 
+const count = (value: unknown): number | undefined =>
+  (typeof value === 'number' && Number.isFinite(value) && value >= 0 ? Math.floor(value) : undefined)
+
 /** The feed's items, cleaned; anything malformed is left out. At most `limit`. */
 export function parseFeed(raw: string, fetchedAt: number, limit = 40): PulseFeed | undefined {
   let data: unknown
@@ -68,10 +71,16 @@ export function parseFeed(raw: string, fetchedAt: number, limit = 40): PulseFeed
     const source = clean(e.source, 28)
     if (!title || !url || !source) continue
     const text = clean(e.text, TEXT_MAX)
-    const likes = typeof e.likes === 'number' && Number.isFinite(e.likes) && e.likes >= 0 ? Math.floor(e.likes) : undefined
+    const likes = count(e.likes)
+    const points = count(e.points)
     const author = clean(e.author_name, 40)
+    const story = clean(e.story, 200)
+    const via = clean(e.via, 28)
+    const discussion = safeUrl(e.discussion)
     items.push({ title, url, source, at: clean(e.published_at, 32) || undefined,
-      ...(text && text !== title ? { text } : {}), ...(likes !== undefined ? { likes } : {}), ...(author ? { author } : {}) })
+      ...(text && text !== title ? { text } : {}), ...(likes !== undefined ? { likes } : {}), ...(author ? { author } : {}),
+      ...(story ? { story } : {}), ...(via ? { via } : {}), ...(points !== undefined ? { points } : {}),
+      ...(discussion ? { discussion } : {}) })
     if (items.length >= limit) break
   }
   return { fetchedAt, generatedAt: clean(d.generated_at, 32) || undefined, items }
@@ -138,17 +147,4 @@ export function pageOf(count: number, selected: number, size = READER_PAGE): [nu
   if (count <= size) return [0, count]
   const start = Math.min(Math.max(0, selected - Math.floor(size / 2)), count - size)
   return [start, start + size]
-}
-
-/** The feed's items newest first; items without a time keep their order after the dated ones. */
-export function newestFirst(items: readonly PulseItem[]): PulseItem[] {
-  const time = (item: PulseItem) => (item.at ? Date.parse(item.at) : Number.NaN)
-  return items.map((item, index) => ({ item, index })).sort((a, b) => {
-    const ta = time(a.item)
-    const tb = time(b.item)
-    if (Number.isFinite(ta) && Number.isFinite(tb)) return tb - ta || a.index - b.index
-    if (Number.isFinite(ta)) return -1
-    if (Number.isFinite(tb)) return 1
-    return a.index - b.index
-  }).map(entry => entry.item)
 }

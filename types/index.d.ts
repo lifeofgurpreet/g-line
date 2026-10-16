@@ -147,6 +147,13 @@ export type PulseItem = {
   likes?: number
   /** The author's display name on X (`Claude`), beside the handle in `source`. */
   author?: string
+  /** The story a post on X is about, or what it quotes. */
+  story?: string
+  /** Who found a publisher's item (`Techmeme`), when `source` is the publisher. */
+  via?: string
+  /** Hacker News points, and its comments page. */
+  points?: number
+  discussion?: string
 }
 
 /** The feed as last fetched. */

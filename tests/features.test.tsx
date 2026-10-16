@@ -619,10 +619,11 @@ const BEL = String.fromCharCode(7)
 const FEED = { schema: 1, generated_at: ISO(NOW - 3600), items: [
   { title: 'Claude Dashboards are in beta', url: 'https://x.com/claudeai/status/1', source: '𝕏 @claudeai', published_at: ISO(NOW - 7200),
     text: `Claude Dashboards are in beta today. ${ESC}]8;;https://evil.example${BEL}Build${ESC}]8;;${BEL} a live view of anything.`,
-    likes: 4200, author_name: 'Claude' },
+    likes: 4200, author_name: 'Claude', story: 'Anthropic ships Dashboards' },
   { title: 'Claude Code 2.1.301 released', url: 'https://github.com/anthropics/claude-code/releases', source: 'Claude Code releases',
     published_at: ISO(NOW - 4 * 3600) },
-  { title: 'Older news', url: 'https://example.com/old', source: 'Anthropic', published_at: ISO(NOW - 2 * 86_400) },
+  { title: 'Older news', url: 'https://example.com/old', source: 'Hacker News', published_at: ISO(NOW - 2 * 86_400),
+    points: 254, discussion: 'https://news.ycombinator.com/item?id=1' },
 ] }
 
 /** The feed's server, and the engine's hint line for Pulse's row to sit under. */
@@ -671,7 +672,7 @@ test('turned on, Pulse shows a headline under the prompt at once: who, how old, 
   expect(w.toasts[w.toasts.length - 1]).toMatch(/^Opened github\.com in your browser\.$/)
 })
 
-test('/g-line news lists every item newest first, the picked one in full; j moves on', { timeoutMs: 30_000 }, async ($, on) => {
+test('/g-line news lists every item in the feed\'s order, the picked one in full; j moves on', { timeoutMs: 30_000 }, async ($, on) => {
   const w = world(on)
   w.config = { pulse: true }
   feedServer(on)
@@ -680,7 +681,7 @@ test('/g-line news lists every item newest first, the picked one in full; j move
   expect(await $.command.run({ command: 'g-line', args: 'news' } as never)).toEqual({})
   const pane = await $.ui.mount({ plugin: 'g-line', surface: 'terminal', component: 'Pane', requestId: 'g-line',
     props: { bodyColumns: 90 } as never, viewport: { columns: 160, rows: 60 } })
-  expect(await pane.find({ type: 'Text', text: '3 items, newest first · updated 1h ago' })).toBeDefined()
+  expect(await pane.find({ type: 'Text', text: '3 items, best first · updated 1h ago' })).toBeDefined()
   // The picked item: who and when, then its whole text with the feed's escapes stripped, then its link.
   expect(await pane.find({ type: 'Text', text: '𝕏 Claude @claudeai · 2h · ♥ 4.2k' })).toBeDefined()
   expect(await pane.find({ type: 'Text', text: 'Claude Dashboards are in beta today. Build a live view of anything.' })).toBeDefined()
@@ -688,9 +689,14 @@ test('/g-line news lists every item newest first, the picked one in full; j move
   expect(await pane.find({ type: 'Link', text: 'x.com/claudeai/status/1' })).toBeDefined()
   // The others: the headline, then who and when.
   expect(await pane.find({ type: 'Text', text: 'Older news' })).toBeDefined()
-  expect(await pane.find({ type: 'Text', text: 'Anthropic · 2d' })).toBeDefined()
+  expect(await pane.find({ type: 'Text', text: 'Hacker News · 2d · ▲ 254' })).toBeDefined()
+  expect(await pane.find({ type: 'Text', text: '↳ Anthropic ships Dashboards' })).toBeDefined()
   await pane.press({ key: 'next' })
   expect(await pane.find({ type: 'Text', text: 'Claude Code releases · 4h' })).toBeDefined()
   expect(await pane.find({ type: 'Text', text: 'Claude Code 2.1.301 released' })).toBeDefined()
+  await pane.press({ key: 'next' })
+  expect(await pane.find({ type: 'Link', text: 'Comments on Hacker News' })).toBeDefined()
+  await pane.press({ key: 'discussion' })
+  expect(w.toasts[w.toasts.length - 1]).toBe('Opened news.ycombinator.com in your browser.')
   await pane.unmount()
 })
