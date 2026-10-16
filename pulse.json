@@ -1,55 +1,152 @@
 {
  "schema": 1,
- "generated_at": "2026-10-16T01:42:14Z",
+ "generated_at": "2026-10-16T02:09:01Z",
  "items": [
   {
-   "title": "This is interesting work, but I don't think it's a significant update to the big picture of interpr…",
-   "url": "https://x.com/NeelNanda5/status/2110875974296654062",
-   "source": "𝕏 @NeelNanda5",
-   "published_at": "2026-10-15T23:30:25Z"
+   "title": "Meta releases Muse Spark Open, saying it is the most capable US open-weight model, with 816B total…",
+   "url": "https://research.meta.ai/blog/muse-spark-open",
+   "source": "Meta AI Research",
+   "published_at": "2026-10-15T17:10:53Z",
+   "text": "Meta releases Muse Spark Open, saying it is the most capable US open-weight model, with 816B total and 42B active parameters and a 1M-token context window. Muse Spark Open is available today and brings leading agentic capabilities to your desktop for the first time on Apple M5 Ultra Mac Studios.",
+   "via": "Techmeme"
   },
   {
-   "title": "If consulting firms like Accenture whose entire business model is to generate smooth-sounding bulls…",
-   "url": "https://x.com/musharbash_b/status/2110831178227786111",
-   "source": "𝕏 @musharbash_b",
-   "published_at": "2026-10-15T20:32:24Z"
-  },
-  {
-   "title": "METR now has employee level access to Anthropic's frontier models. Also, this is exactly the type o…",
-   "url": "https://x.com/AndrewCurran_/status/2110786916966887802",
-   "source": "𝕏 @AndrewCurran_",
-   "published_at": "2026-10-15T17:36:32Z"
-  },
-  {
-   "title": "Scoop: What the Super Intelligence task force did at its first meeting What's new: -It will commiss…",
-   "url": "https://x.com/ashleyrgold/status/2110890863815528864",
-   "source": "𝕏 @ashleyrgold",
-   "published_at": "2026-10-16T00:29:35Z"
-  },
-  {
-   "title": "only 32 companies in US history have added more than $30 billion in revenue over 12 months (2026 do…",
-   "url": "https://x.com/wintonARK/status/2110874651232772318",
-   "source": "𝕏 @wintonARK",
-   "published_at": "2026-10-15T23:25:09Z"
+   "title": "We’ve committed to having evaluators assess our safety practices. We're in discussions with multipl…",
+   "url": "https://x.com/AnthropicAI/status/2110784662071398807",
+   "source": "𝕏 @AnthropicAI",
+   "published_at": "2026-10-15T17:27:34Z",
+   "text": "We’ve committed to having evaluators assess our safety practices. We're in discussions with multiple organizations, and have now given employee-like access to a team from @METR_Evals. In this post, we describe how we work with third-party evaluators:",
+   "author_name": "Anthropic",
+   "likes": 2667,
+   "story": "Anthropic says it is giving employee-like access to METR as part of its pledge to partner with evaluators for assessment of its models and safety practices",
+   "links": [
+    "https://www.anthropic.com/news/an-update-on-independent-evaluators"
+   ]
   },
   {
    "title": "Claude Code 2.1.301 released",
    "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.301",
    "source": "Claude Code releases",
-   "published_at": "2026-10-15T19:22:06Z"
+   "published_at": "2026-10-15T19:22:06Z",
+   "text": "Added CLAUDE_CODE_RETRY_WATCHDOG_MAX_USAGE_LIMIT_WAIT_MS so unattended retry mode (CLAUDE_CODE_RETRY_WATCHDOG) ends a request at a usage limit that resets too far away instead of waiting · Added OpenTelemetry tracing guidance to the claude-api skill, including setting up trace destinations with the ant CLI · Added the % motion to vim mode: jump to the matching bracket, alone or with d/c/y · Added rows to a mod's Input: a text field of several lines in the terminal, where Enter submits and Shift+Enter or a backslash before Enter starts a new line"
   },
   {
-   "title": "Anthropic update on independent evaluators",
-   "url": "https://www.anthropic.com/news/an-update-on-independent-evaluators",
-   "source": "Anthropic",
-   "published_at": "2026-10-15T23:35:48Z"
+   "title": "Very big if true, and a massive dunk on Anthropic's published and much-hyped Science of Interpretab…",
+   "url": "https://x.com/teortaxesTex/status/2110900090764181789",
+   "source": "𝕏 @teortaxesTex",
+   "published_at": "2026-10-16T01:06:14Z",
+   "text": "Very big if true, and a massive dunk on Anthropic's published and much-hyped Science of Interpretability (which Nick is also an author of. So cool of him to go further). Neurons are meaningfully monosemantic. My prediction for Goodfire is looking good.",
+   "author_name": "Teortaxes▶️ (DeepSeek 推特🐋铁粉 2023 – ∞)",
+   "likes": 42,
+   "story": "A researcher says modern neural networks are far more interpretable than believed, with most neurons understandable in models up to trillions of parameters"
+  },
+  {
+   "title": "Meet NVIDIA Nemotron 3.5 Super VL Our new open model combines reasoning and tool use with text, ima…",
+   "url": "https://x.com/NVIDIAAI/status/2110749836450713896",
+   "source": "𝕏 @NVIDIAAI",
+   "published_at": "2026-10-15T15:09:11Z",
+   "text": "Meet NVIDIA Nemotron 3.5 Super VL Our new open model combines reasoning and tool use with text, image, document, and video understanding for long-running AI agents. 120B total parameters with 12B active 🧵",
+   "author_name": "NVIDIA AI",
+   "likes": 3721,
+   "story": "Nvidia launches Nemotron 3.5 Super VL, a 120B-parameter open model for enterprise agents, and says it outperforms frontier models on specialized benchmarks"
+  },
+  {
+   "title": "Sources: some Anthropic investors discussed a ~$1.5T valuation for its IPO, down from ~$2T they had…",
+   "url": "https://www.reuters.com/business/finance/investors-temper-anthropic-ipo-valuation-expectations-over-revenue-growth-2026-10-15/",
+   "source": "Reuters",
+   "published_at": "2026-10-15T21:20:46Z",
+   "text": "Sources: some Anthropic investors discussed a ~$1.5T valuation for its IPO, down from ~$2T they had expected, after disclosures showed slowing Q3 revenue growth. Some current Anthropic investors and prospective investors in its upcoming initial public offering are weighing a lower valuation …",
+   "via": "Techmeme"
+  },
+  {
+   "title": "Steam Client is now faster than Epic's new vibe coded launcher",
+   "url": "https://respawnfirst.com/steam-client-is-now-faster-than-epics-new-vibe-coded-launcher/",
+   "source": "Hacker News",
+   "published_at": "2026-10-15T16:03:19Z",
+   "text": "290 points and 294 comments on Hacker News.",
+   "points": 290,
+   "discussion": "https://news.ycombinator.com/item?id=50105635"
+  },
+  {
+   "title": "New: Accenture has told employees it will only fund $29 per month of Claude use. Meaning that emplo…",
+   "url": "https://x.com/josephfcox/status/2110774735252435435",
+   "source": "𝕏 @josephfcox",
+   "published_at": "2026-10-15T16:48:07Z",
+   "text": "New: Accenture has told employees it will only fund $29 per month of Claude use. Meaning that employees who often spend as much as $1,000 a month are now scrambling to find ways to keep access to the tool. A sign of the continuing crack down of AI",
+   "author_name": "Joseph Cox",
+   "likes": 5802,
+   "story": "Memo: Accenture has told many employees, some of whom had been spending as much as $1,000 monthly, that it will now only spend $29 a month per person on Claude",
+   "links": [
+    "https://www.404media.co/accenture-tells-employees-they-can-now-spend-only-29-on-claude-per-month/"
+   ]
   },
   {
    "title": "Offering expanded Claude access across all three branches of government",
    "url": "https://www.anthropic.com/news/offering-expanded-claude-access-across-all-three-branches-of-government",
    "source": "Anthropic",
-   "published_at": "2026-10-15T22:05:58Z"
+   "published_at": "2026-10-15T22:05:58Z",
+   "text": "We are removing barriers to government AI adoption by offering Claude for Enterprise and Claude for Government to all three branches of government, including federal civilian executive branch agencies, as well as legislative and judiciary branches of government, for $1."
+  },
+  {
+   "title": "Scoop: What the Super Intelligence task force did at its first meeting What's new: -It will commiss…",
+   "url": "https://x.com/ashleyrgold/status/2110890863815528864",
+   "source": "𝕏 @ashleyrgold",
+   "published_at": "2026-10-16T00:29:35Z",
+   "text": "Scoop: What the Super Intelligence task force did at its first meeting What's new: -It will commission a report from PCAST to evaluate AI risk for cyber and critical infrastructure protection, biosecurity and model control -It will make a working group to implement the accord…",
+   "author_name": "Ashley Gold",
+   "likes": 35,
+   "story": "The White House's AI task force begins its 120-day window to evaluate AI, including producing a risk report, implementing the White House Accord on SI, and more"
+  },
+  {
+   "title": "Sources: OpenAI executives have warned staff over potential espionage like honey pots and insider t…",
+   "url": "https://www.wsj.com/tech/ai/ai-companies-play-cat-and-mouse-with-secret-stealing-spies-160eec6b?st=u9cuQu&reflink=desktopwebshare_permalink",
+   "source": "Wall Street Journal",
+   "published_at": "2026-10-15T12:01:26Z",
+   "text": "Sources: OpenAI executives have warned staff over potential espionage like honey pots and insider threats and told them to adopt operational security measures. From ‘honey pots’ to insider threats, Silicon Valley was on espionage alert even before the FBI's arrest of an OpenAI employee",
+   "via": "Techmeme"
+  },
+  {
+   "title": "Today we release 𝚍𝟷-𝚞𝚕𝚝𝚛𝚊, our most powerful decision model. > built for hard decision problems. >…",
+   "url": "https://x.com/liquidai/status/2110777964489285875",
+   "source": "𝕏 @liquidai",
+   "published_at": "2026-10-15T17:00:57Z",
+   "text": "Today we release 𝚍𝟷-𝚞𝚕𝚝𝚛𝚊, our most powerful decision model. > built for hard decision problems. > d1-ultra is multimodal > supports 44 languages > #1 on the @ArtificialAnlys Decision Index (65) > leads all eight categories of our 112-evaluation suite 1/ https:",
+   "author_name": "Liquid AI",
+   "likes": 1115,
+   "story": "Liquid AI's d1-ultra decision model takes a very strong place on the pareto front"
+  },
+  {
+   "title": "Krea 3 – An image model built for editing at scale",
+   "url": "https://www.krea.ai/krea-3",
+   "source": "Hacker News",
+   "published_at": "2026-10-15T16:04:05Z",
+   "text": "254 points and 83 comments on Hacker News.",
+   "points": 254,
+   "discussion": "https://news.ycombinator.com/item?id=50105648"
+  },
+  {
+   "title": "Amazon launched two new wearables that use artificial intelligence to record and analyze a person’s…",
+   "url": "https://x.com/markgurman/status/2110818315211784349",
+   "source": "𝕏 @markgurman",
+   "published_at": "2026-10-15T19:41:18Z",
+   "text": "Amazon launched two new wearables that use artificial intelligence to record and analyze a person’s day, marking the company’s efforts to reshape Bee, a startup it acquired last year to compete in the hot AI hardware segment.",
+   "author_name": "Mark Gurman",
+   "likes": 220,
+   "story": "Amazon launches two AI wearables, the $75 Bee Frontier wristband and $100 Bee Eclipse magnetic phone-attachment recorder, with a $12/month Bee Pro subscription",
+   "links": [
+    "https://www.bloomberg.com/news/articles/2026-10-15/amazon-debuts-revamped-bee-ai-wearables-12-a-month-subscription-plan"
+   ]
+  },
+  {
+   "title": "Dwarkesh Patel reveals an Anthropic employee told him two days ago they expect AIs to match humans…",
+   "url": "https://x.com/firesidealpha/status/2110767520542282054",
+   "source": "𝕏 @firesidealpha",
+   "published_at": "2026-10-15T16:19:27Z",
+   "text": "Dwarkesh Patel reveals an Anthropic employee told him two days ago they expect AIs to match humans at AI research within nine months based on inside information they can’t share, and says labs should make that evidence public “I think there’s a very frustrating element to the…",
+   "author_name": "Fireside Alpha",
+   "likes": 696,
+   "story": "Dwarkesh: Anthropic Insider Expects AI To Match Human AI Researchers Within 9 Months Based On Inside Information They Can't Share, Urges Labs To Make The Evide…"
   }
  ],
- "sources": "curated, X (found via Techmeme, Reddit, the Internet Archive), Claude Code releases, Anthropic, Hacker News, Simon Willison"
+ "sources": "curated, Techmeme, X (found via Techmeme, Reddit, the Internet Archive), Claude Code releases, Anthropic, Hacker News, Simon Willison"
 }
