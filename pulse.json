@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-16T13:58:12Z",
+ "generated_at": "2026-10-16T14:28:53Z",
  "items": [
   {
    "title": "Meta releases Muse Spark Open, saying it is the most capable US open-weight model, with 816B total…",
@@ -17,8 +17,8 @@
    "published_at": "2026-10-15T15:09:11Z",
    "text": "Meet NVIDIA Nemotron 3.5 Super VL Our new open model combines reasoning and tool use with text, image, document, and video understanding for long-running AI agents. 120B total parameters with 12B active 🧵",
    "author_name": "NVIDIA AI",
-   "likes": 4125,
-   "story": "Chinese state media: during an interview, Tim Cook says China has approved Apple Intelligence, and a test version will arrive in late October without Siri AI"
+   "likes": 4136,
+   "story": "Waymo plans to launch its robotaxis in Toronto in 2028 in partnership with Element Fleet Management, the company's first deployment in Canada"
   },
   {
    "title": "Claude Code 2.1.301 released",
@@ -28,24 +28,21 @@
    "text": "Added CLAUDE_CODE_RETRY_WATCHDOG_MAX_USAGE_LIMIT_WAIT_MS so unattended retry mode (CLAUDE_CODE_RETRY_WATCHDOG) ends a request at a usage limit that resets too far away instead of waiting · Added OpenTelemetry tracing guidance to the claude-api skill, including setting up trace destinations with the ant CLI · Added the % motion to vim mode: jump to the matching bracket, alone or with d/c/y · Added rows to a mod's Input: a text field of several lines in the terminal, where Enter submits and Shift+Enter or a backslash before Enter starts a new line"
   },
   {
-   "title": "We’ve committed to having evaluators assess our safety practices. We're in discussions with multipl…",
-   "url": "https://x.com/AnthropicAI/status/2110784662071398807",
-   "source": "𝕏 @AnthropicAI",
-   "published_at": "2026-10-15T17:27:34Z",
-   "text": "We’ve committed to having evaluators assess our safety practices. We're in discussions with multiple organizations, and have now given employee-like access to a team from @METR_Evals. In this post, we describe how we work with third-party evaluators:",
-   "author_name": "Anthropic",
-   "likes": 3450,
-   "story": "Anthropic says it is giving employee-like access to METR as part of its pledge to partner with evaluators for assessment of its models and safety practices",
-   "links": [
-    "https://www.anthropic.com/news/an-update-on-independent-evaluators"
-   ]
+   "title": "when nick told me that he had some interp breakthroughs, he was uh, underselling it. i think this m…",
+   "url": "https://x.com/tszzl/status/2110758311339729061",
+   "source": "𝕏 @tszzl",
+   "published_at": "2026-10-15T15:42:52Z",
+   "text": "when nick told me that he had some interp breakthroughs, he was uh, underselling it. i think this may be remembered as a major moment in scientific history. news so good even eliezer will have to lower his pdoom. we can start making alignment into a 'normal science'",
+   "author_name": "roon",
+   "likes": 6276,
+   "story": "A researcher says modern neural networks are far more interpretable than believed, with most neurons understandable in models up to trillions of parameters"
   },
   {
-   "title": "A researcher says modern neural networks are far more interpretable than believed, with most neuron…",
-   "url": "https://already-clean.goodfire.com/",
-   "source": "Nick Cammarata / Goodfire",
-   "published_at": "2026-10-15T20:36:56Z",
-   "text": "A researcher says modern neural networks are far more interpretable than believed, with most neurons understandable in models up to trillions of parameters. The cause of polysemanticity in early model organisms wasn't superposition, but several ordinary, mostly fixable issues.",
+   "title": "OpenAI says its model paid for a deployment on an Ethereum test network with a wallet it did not ow…",
+   "url": "https://www.coindesk.com/tech/2026/10/16/an-openai-agent-ran-out-of-ethereum-funds-and-took-from-a-wallet-it-did-not-own",
+   "source": "Shaurya Malwa / CoinDesk",
+   "published_at": "2026-10-16T10:11:12Z",
+   "text": "OpenAI says its model paid for a deployment on an Ethereum test network with a wallet it did not own, after obtaining keys from public recovery phrases. An OpenAI research model stuck without funds on an Ethereum test network went looking for someone else's wallet, found one through recovery phrases …",
    "via": "Techmeme"
   },
   {
@@ -64,25 +61,25 @@
    "published_at": "2026-10-15T13:16:39Z",
    "text": "\"Anthropic told investors on Wednesday distillation accounted for 5 per cent to 7 per cent of revenue\" If true, and Q2 revenue was $11.5B, then that's more than half a billion dollars spent by other labs to distill Anthropic's models!",
    "author_name": "Simon Willison",
-   "likes": 734,
+   "likes": 740,
    "story": "Sources: some Anthropic investors discussed a ~$1.5T valuation for its IPO, down from ~$2T they had expected, after disclosures showed slowing Q3 revenue growth",
    "links": [
     "https://www.ft.com/content/11632d03-358c-454b-af95-d06d4072932b?syn-25a6b1a6=1"
    ]
   },
   {
-   "title": "Offering expanded Claude access across all three branches of government",
-   "url": "https://www.anthropic.com/news/offering-expanded-claude-access-across-all-three-branches-of-government",
+   "title": "Anthropic update on independent evaluators",
+   "url": "https://www.anthropic.com/news/an-update-on-independent-evaluators",
    "source": "Anthropic",
-   "published_at": "2026-10-15T22:05:58Z",
-   "text": "We are removing barriers to government AI adoption by offering Claude for Enterprise and Claude for Government to all three branches of government, including federal civilian executive branch agencies, as well as legislative and judiciary branches of government, for $1."
+   "published_at": "2026-10-15T23:35:48Z",
+   "text": "Anthropic announces updates to embedding independent evaluators"
   },
   {
-   "title": "OpenAI says its model paid for a deployment on an Ethereum test network with a wallet it did not ow…",
-   "url": "https://www.coindesk.com/tech/2026/10/16/an-openai-agent-ran-out-of-ethereum-funds-and-took-from-a-wallet-it-did-not-own",
-   "source": "Shaurya Malwa / CoinDesk",
-   "published_at": "2026-10-16T10:11:12Z",
-   "text": "OpenAI says its model paid for a deployment on an Ethereum test network with a wallet it did not own, after obtaining keys from public recovery phrases. An OpenAI research model stuck without funds on an Ethereum test network went looking for someone else's wallet, found one through recovery phrases …",
+   "title": "Taiwan plans US industrial parks costing $2B to $4B each, starting with a Texas complex costing up…",
+   "url": "https://www.bloomberg.com/news/articles/2026-10-16/taiwan-to-fund-4-billion-texas-complex-for-ai-nvidia-partners",
+   "source": "Bloomberg",
+   "published_at": "2026-10-16T04:56:05Z",
+   "text": "Taiwan plans US industrial parks costing $2B to $4B each, starting with a Texas complex costing up to $4B, to build a supply chain for Nvidia, TSMC, and Foxconn. Taiwan plans to raise billions of dollars to develop industrial parks in the US that would build a base for a comprehensive supply chain …",
    "via": "Techmeme"
   }
  ],
