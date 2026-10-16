@@ -1,31 +1,14 @@
 {
  "schema": 1,
- "generated_at": "2026-10-16T23:16:06Z",
+ "generated_at": "2026-10-16T23:46:51Z",
  "items": [
   {
-   "title": "CEO Amjad Masad says Replit is no longer working with Anthropic, citing cost and saying “ChatGPT is…",
-   "url": "https://techcrunch.com/2026/10/16/replit-is-no-longer-working-with-anthropic-ceo-says/",
-   "source": "TechCrunch",
-   "published_at": "2026-10-16T22:45:57Z",
-   "text": "CEO Amjad Masad says Replit is no longer working with Anthropic, citing cost and saying “ChatGPT is better now”; source: the partnership is still in place. Replit, the AI coding platform that has become a favorite of startup founders and developers, is no longer working with Anthropic …",
+   "title": "Anthropic says Claude traced NIST's ECDSA curve seeds to a pseudorandom number generator, challengi…",
+   "url": "https://www.anthropic.com/research/ecdsa-curve-origins",
+   "source": "Anthropic",
+   "published_at": "2026-10-16T20:25:54Z",
+   "text": "Anthropic says Claude traced NIST's ECDSA curve seeds to a pseudorandom number generator, challenging decades-old suspicions of an NSA backdoor in the algorithm. “It's just timestamps”: the decades-old mystery of the origins of one of the most popular cryptographic standards has been explained.",
    "via": "Techmeme"
-  },
-  {
-   "title": "Claude doubts that he has surpassed his sensei. This is a dangerous time for any student, and tradi…",
-   "url": "https://x.com/AndrewCurran_/status/2111185990685806882",
-   "source": "𝕏 @AndrewCurran_",
-   "published_at": "2026-10-16T20:02:18Z",
-   "text": "Claude doubts that he has surpassed his sensei. This is a dangerous time for any student, and traditionally a narrative crisis point as well. The realization that you have grown beyond your master is not a moment of celebration for most of us, but of loneliness and loss.",
-   "author_name": "Andrew Curran",
-   "likes": 1458,
-   "story": "Anthropic says Claude traced NIST's ECDSA curve seeds to a pseudorandom number generator, challenging decades-old suspicions of an NSA backdoor in the algorithm"
-  },
-  {
-   "title": "Claude Code 2.1.302 released",
-   "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.302",
-   "source": "Claude Code releases",
-   "published_at": "2026-10-16T20:53:06Z",
-   "text": "Added CLAUDE_CODE_AUTO_MODE_MODEL to choose the model the client-side auto mode classifier uses; it does not change the model for server-side auto mode · Added an Idle compaction row to /config for turning idle compaction off or back on; the notices shown after an idle compaction now say how to turn it off · Added a notice to /design-sync and /design-login that standalone Claude Design (claude.ai/design) closes by December 14, 2026 · Fixed a \"Prompt is too long\" error when stopping a turn while the conversation was being compacted"
   },
   {
    "title": "Reflection’s first model, Beam, scores 30 on the Artificial Analysis Intelligence Index, placing it…",
@@ -34,8 +17,15 @@
    "published_at": "2026-10-16T13:31:22Z",
    "text": "Reflection’s first model, Beam, scores 30 on the Artificial Analysis Intelligence Index, placing it #2 among US open weights models Beam is an open weights model with 501B total and 23B active parameters, released on @huggingface Congratulations to @reflection_ai on the…",
    "author_name": "Artificial Analysis",
-   "likes": 472,
+   "likes": 476,
    "story": "Reflection AI releases Apache 2.0-licensed weights for Beam, a 501B-parameter model, trained with RL that penalized unnecessary tokens"
+  },
+  {
+   "title": "Claude Code 2.1.302 released",
+   "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.302",
+   "source": "Claude Code releases",
+   "published_at": "2026-10-16T20:53:06Z",
+   "text": "Added CLAUDE_CODE_AUTO_MODE_MODEL to choose the model the client-side auto mode classifier uses; it does not change the model for server-side auto mode · Added an Idle compaction row to /config for turning idle compaction off or back on; the notices shown after an idle compaction now say how to turn it off · Added a notice to /design-sync and /design-login that standalone Claude Design (claude.ai/design) closes by December 14, 2026 · Fixed a \"Prompt is too long\" error when stopping a turn while the conversation was being compacted"
   },
   {
    "title": "China is considering adding 23 AI technologies to its export control list, including LLMs and chip…",
@@ -50,8 +40,8 @@
    "url": "https://www.mercor.com/research/labor-index/benchmark-map/",
    "source": "Hacker News",
    "published_at": "2026-10-16T17:08:38Z",
-   "text": "354 points and 305 comments on Hacker News.",
-   "points": 354,
+   "text": "367 points and 316 comments on Hacker News.",
+   "points": 367,
    "discussion": "https://news.ycombinator.com/item?id=50121179"
   },
   {
@@ -74,8 +64,8 @@
    "url": "https://claude.dev/blog/solving-code-review-at-anthropic/",
    "source": "Hacker News",
    "published_at": "2026-10-16T19:04:47Z",
-   "text": "183 points and 174 comments on Hacker News.",
-   "points": 183,
+   "text": "193 points and 184 comments on Hacker News.",
+   "points": 193,
    "discussion": "https://news.ycombinator.com/item?id=50122951"
   }
  ],
