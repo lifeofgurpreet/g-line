@@ -1,31 +1,14 @@
 {
  "schema": 1,
- "generated_at": "2026-10-16T17:03:47Z",
+ "generated_at": "2026-10-16T17:34:38Z",
  "items": [
   {
-   "title": "Microsoft unveils MAI-Base-2, a MoE model with 2.8T total and 80B active parameters, claiming 4x-12…",
-   "url": "https://microsoft.ai/news/frontier-pre-training-at-microsoft-ai/",
-   "source": "Microsoft AI",
-   "published_at": "2026-10-16T02:20:47Z",
-   "text": "Microsoft unveils MAI-Base-2, a MoE model with 2.8T total and 80B active parameters, claiming 4x-12x more pretraining FLOPs-efficiency than DeepSeek-V4-Pro-Base. In June, we announced MAI-Thinking-1, a general-purpose foundation model post-trained on top of MAI-Base-1 with strong reasoning performance.",
+   "title": "A researcher says modern neural networks are far more interpretable than believed, with most neuron…",
+   "url": "https://already-clean.goodfire.com/",
+   "source": "Nick Cammarata / Goodfire",
+   "published_at": "2026-10-15T20:36:56Z",
+   "text": "A researcher says modern neural networks are far more interpretable than believed, with most neurons understandable in models up to trillions of parameters. The cause of polysemanticity in early model organisms wasn't superposition, but several ordinary, mostly fixable issues.",
    "via": "Techmeme"
-  },
-  {
-   "title": "when nick told me that he had some interp breakthroughs, he was uh, underselling it. i think this m…",
-   "url": "https://x.com/tszzl/status/2110758311339729061",
-   "source": "𝕏 @tszzl",
-   "published_at": "2026-10-15T15:42:52Z",
-   "text": "when nick told me that he had some interp breakthroughs, he was uh, underselling it. i think this may be remembered as a major moment in scientific history. news so good even eliezer will have to lower his pdoom. we can start making alignment into a 'normal science'",
-   "author_name": "roon",
-   "likes": 6371,
-   "story": "A researcher says modern neural networks are far more interpretable than believed, with most neurons understandable in models up to trillions of parameters"
-  },
-  {
-   "title": "Claude Code 2.1.301 released",
-   "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.301",
-   "source": "Claude Code releases",
-   "published_at": "2026-10-15T19:22:06Z",
-   "text": "Added CLAUDE_CODE_RETRY_WATCHDOG_MAX_USAGE_LIMIT_WAIT_MS so unattended retry mode (CLAUDE_CODE_RETRY_WATCHDOG) ends a request at a usage limit that resets too far away instead of waiting · Added OpenTelemetry tracing guidance to the claude-api skill, including setting up trace destinations with the ant CLI · Added the % motion to vim mode: jump to the matching bracket, alone or with d/c/y · Added rows to a mod's Input: a text field of several lines in the terminal, where Enter submits and Shift+Enter or a backslash before Enter starts a new line"
   },
   {
    "title": "\"Anthropic told investors on Wednesday distillation accounted for 5 per cent to 7 per cent of reven…",
@@ -34,11 +17,18 @@
    "published_at": "2026-10-15T13:16:39Z",
    "text": "\"Anthropic told investors on Wednesday distillation accounted for 5 per cent to 7 per cent of revenue\" If true, and Q2 revenue was $11.5B, then that's more than half a billion dollars spent by other labs to distill Anthropic's models!",
    "author_name": "Simon Willison",
-   "likes": 754,
+   "likes": 755,
    "story": "Sources: some Anthropic investors discussed a ~$1.5T valuation for its IPO, down from ~$2T they had expected, after disclosures showed slowing Q3 revenue growth",
    "links": [
     "https://www.ft.com/content/11632d03-358c-454b-af95-d06d4072932b?syn-25a6b1a6=1"
    ]
+  },
+  {
+   "title": "Claude Code 2.1.301 released",
+   "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.301",
+   "source": "Claude Code releases",
+   "published_at": "2026-10-15T19:22:06Z",
+   "text": "Added CLAUDE_CODE_RETRY_WATCHDOG_MAX_USAGE_LIMIT_WAIT_MS so unattended retry mode (CLAUDE_CODE_RETRY_WATCHDOG) ends a request at a usage limit that resets too far away instead of waiting · Added OpenTelemetry tracing guidance to the claude-api skill, including setting up trace destinations with the ant CLI · Added the % motion to vim mode: jump to the matching bracket, alone or with d/c/y · Added rows to a mod's Input: a text field of several lines in the terminal, where Enter submits and Shift+Enter or a backslash before Enter starts a new line"
   },
   {
    "title": "OpenAI says its model paid for a deployment on an Ethereum test network with a wallet it did not ow…",
@@ -53,8 +43,8 @@
    "url": "https://machinelearning.apple.com/research/mlx-distributed-inference",
    "source": "Hacker News",
    "published_at": "2026-10-16T13:43:48Z",
-   "text": "115 points and 56 comments on Hacker News.",
-   "points": 115,
+   "text": "144 points and 73 comments on Hacker News.",
+   "points": 144,
    "discussion": "https://news.ycombinator.com/item?id=50118320"
   },
   {
@@ -77,8 +67,8 @@
    "url": "https://starskirmish.com/bench/v0-2/",
    "source": "Hacker News",
    "published_at": "2026-10-16T14:18:44Z",
-   "text": "70 points and 42 comments on Hacker News.",
-   "points": 70,
+   "text": "86 points and 46 comments on Hacker News.",
+   "points": 86,
    "discussion": "https://news.ycombinator.com/item?id=50118688"
   }
  ],
