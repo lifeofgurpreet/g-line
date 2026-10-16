@@ -1,42 +1,7 @@
 {
  "schema": 1,
- "generated_at": "2026-10-16T14:59:48Z",
+ "generated_at": "2026-10-16T15:30:50Z",
  "items": [
-  {
-   "title": "Meta releases Muse Spark Open, saying it is the most capable US open-weight model, with 816B total…",
-   "url": "https://research.meta.ai/blog/muse-spark-open",
-   "source": "Meta AI Research",
-   "published_at": "2026-10-15T17:10:53Z",
-   "text": "Meta releases Muse Spark Open, saying it is the most capable US open-weight model, with 816B total and 42B active parameters and a 1M-token context window. Muse Spark Open is available today and brings leading agentic capabilities to your desktop for the first time on Apple M5 Ultra Mac Studios.",
-   "via": "Techmeme"
-  },
-  {
-   "title": "Meet NVIDIA Nemotron 3.5 Super VL Our new open model combines reasoning and tool use with text, ima…",
-   "url": "https://x.com/NVIDIAAI/status/2110749836450713896",
-   "source": "𝕏 @NVIDIAAI",
-   "published_at": "2026-10-15T15:09:11Z",
-   "text": "Meet NVIDIA Nemotron 3.5 Super VL Our new open model combines reasoning and tool use with text, image, document, and video understanding for long-running AI agents. 120B total parameters with 12B active 🧵",
-   "author_name": "NVIDIA AI",
-   "likes": 4146,
-   "story": "A look at China's AI learning frenzy, as economic anxiety and fear of being left behind fuel a booming market for courses promising prosperity through AI"
-  },
-  {
-   "title": "Claude Code 2.1.301 released",
-   "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.301",
-   "source": "Claude Code releases",
-   "published_at": "2026-10-15T19:22:06Z",
-   "text": "Added CLAUDE_CODE_RETRY_WATCHDOG_MAX_USAGE_LIMIT_WAIT_MS so unattended retry mode (CLAUDE_CODE_RETRY_WATCHDOG) ends a request at a usage limit that resets too far away instead of waiting · Added OpenTelemetry tracing guidance to the claude-api skill, including setting up trace destinations with the ant CLI · Added the % motion to vim mode: jump to the matching bracket, alone or with d/c/y · Added rows to a mod's Input: a text field of several lines in the terminal, where Enter submits and Shift+Enter or a backslash before Enter starts a new line"
-  },
-  {
-   "title": "when nick told me that he had some interp breakthroughs, he was uh, underselling it. i think this m…",
-   "url": "https://x.com/tszzl/status/2110758311339729061",
-   "source": "𝕏 @tszzl",
-   "published_at": "2026-10-15T15:42:52Z",
-   "text": "when nick told me that he had some interp breakthroughs, he was uh, underselling it. i think this may be remembered as a major moment in scientific history. news so good even eliezer will have to lower his pdoom. we can start making alignment into a 'normal science'",
-   "author_name": "roon",
-   "likes": 6300,
-   "story": "A researcher says modern neural networks are far more interpretable than believed, with most neurons understandable in models up to trillions of parameters"
-  },
   {
    "title": "OpenAI says its model paid for a deployment on an Ethereum test network with a wallet it did not ow…",
    "url": "https://www.coindesk.com/tech/2026/10/16/an-openai-agent-ran-out-of-ethereum-funds-and-took-from-a-wallet-it-did-not-own",
@@ -46,33 +11,34 @@
    "via": "Techmeme"
   },
   {
-   "title": "AI-assisted PCB design for KiCad 10",
-   "url": "https://github.com/mixelpixx/Konnect",
-   "source": "Hacker News",
-   "published_at": "2026-10-14T10:51:37Z",
-   "text": "65 points and 22 comments on Hacker News.",
-   "points": 65,
-   "discussion": "https://news.ycombinator.com/item?id=50085553"
+   "title": "Today we’re releasing Muse Spark Open, the most capable US open-weight model to date. Built for cod…",
+   "url": "https://x.com/AIatMeta/status/2110779754274292212",
+   "source": "𝕏 @AIatMeta",
+   "published_at": "2026-10-15T17:08:04Z",
+   "text": "Today we’re releasing Muse Spark Open, the most capable US open-weight model to date. Built for coding and agentic work, it excels at long-horizon tasks, complex software engineering, and multi-step reasoning. Key Model Specs: → 816B total / 42B active parameters → 1M token…",
+   "author_name": "AI at Meta",
+   "likes": 10773,
+   "story": "Meta releases Muse Spark Open, saying it is the most capable US open-weight model, with 816B total and 42B active parameters and a 1M-token context window"
   },
   {
-   "title": "\"Anthropic told investors on Wednesday distillation accounted for 5 per cent to 7 per cent of reven…",
-   "url": "https://x.com/simonw/status/2110721515130089787",
-   "source": "𝕏 @simonw",
-   "published_at": "2026-10-15T13:16:39Z",
-   "text": "\"Anthropic told investors on Wednesday distillation accounted for 5 per cent to 7 per cent of revenue\" If true, and Q2 revenue was $11.5B, then that's more than half a billion dollars spent by other labs to distill Anthropic's models!",
-   "author_name": "Simon Willison",
-   "likes": 745,
-   "story": "Sources: some Anthropic investors discussed a ~$1.5T valuation for its IPO, down from ~$2T they had expected, after disclosures showed slowing Q3 revenue growth",
+   "title": "Claude Code 2.1.301 released",
+   "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.301",
+   "source": "Claude Code releases",
+   "published_at": "2026-10-15T19:22:06Z",
+   "text": "Added CLAUDE_CODE_RETRY_WATCHDOG_MAX_USAGE_LIMIT_WAIT_MS so unattended retry mode (CLAUDE_CODE_RETRY_WATCHDOG) ends a request at a usage limit that resets too far away instead of waiting · Added OpenTelemetry tracing guidance to the claude-api skill, including setting up trace destinations with the ant CLI · Added the % motion to vim mode: jump to the matching bracket, alone or with d/c/y · Added rows to a mod's Input: a text field of several lines in the terminal, where Enter submits and Shift+Enter or a backslash before Enter starts a new line"
+  },
+  {
+   "title": "We’ve committed to having evaluators assess our safety practices. We're in discussions with multipl…",
+   "url": "https://x.com/AnthropicAI/status/2110784662071398807",
+   "source": "𝕏 @AnthropicAI",
+   "published_at": "2026-10-15T17:27:34Z",
+   "text": "We’ve committed to having evaluators assess our safety practices. We're in discussions with multiple organizations, and have now given employee-like access to a team from @METR_Evals. In this post, we describe how we work with third-party evaluators:",
+   "author_name": "Anthropic",
+   "likes": 3513,
+   "story": "Sources detail Nscale's setbacks ahead of an IPO at up to a $35B valuation, including a six-month delay in Norway and penalties owed to Microsoft and ByteDance",
    "links": [
-    "https://www.ft.com/content/11632d03-358c-454b-af95-d06d4072932b?syn-25a6b1a6=1"
+    "https://www.anthropic.com/news/an-update-on-independent-evaluators"
    ]
-  },
-  {
-   "title": "Anthropic update on independent evaluators",
-   "url": "https://www.anthropic.com/news/an-update-on-independent-evaluators",
-   "source": "Anthropic",
-   "published_at": "2026-10-15T23:35:48Z",
-   "text": "Anthropic announces updates to embedding independent evaluators"
   },
   {
    "title": "Taiwan plans to curb AI server and chip exports to China as part of a US trade deal and make shippi…",
@@ -81,6 +47,52 @@
    "published_at": "2026-10-16T11:46:15Z",
    "text": "Taiwan plans to curb AI server and chip exports to China as part of a US trade deal and make shipping restricted AI hardware to China a criminal offense. Taiwan is preparing to tighten export controls on AI chips to further align with US restrictions, according to a senior official in Taipei …",
    "via": "Techmeme"
+  },
+  {
+   "title": "Neural networks are clean",
+   "url": "https://already-clean.goodfire.com/",
+   "source": "Hacker News",
+   "published_at": "2026-10-15T16:04:01Z",
+   "text": "766 points and 300 comments on Hacker News.",
+   "points": 766,
+   "discussion": "https://news.ycombinator.com/item?id=50105647"
+  },
+  {
+   "title": "\"Anthropic told investors on Wednesday distillation accounted for 5 per cent to 7 per cent of reven…",
+   "url": "https://x.com/simonw/status/2110721515130089787",
+   "source": "𝕏 @simonw",
+   "published_at": "2026-10-15T13:16:39Z",
+   "text": "\"Anthropic told investors on Wednesday distillation accounted for 5 per cent to 7 per cent of revenue\" If true, and Q2 revenue was $11.5B, then that's more than half a billion dollars spent by other labs to distill Anthropic's models!",
+   "author_name": "Simon Willison",
+   "likes": 749,
+   "story": "Sources: some Anthropic investors discussed a ~$1.5T valuation for its IPO, down from ~$2T they had expected, after disclosures showed slowing Q3 revenue growth",
+   "links": [
+    "https://www.ft.com/content/11632d03-358c-454b-af95-d06d4072932b?syn-25a6b1a6=1"
+   ]
+  },
+  {
+   "title": "Offering expanded Claude access across all three branches of government",
+   "url": "https://www.anthropic.com/news/offering-expanded-claude-access-across-all-three-branches-of-government",
+   "source": "Anthropic",
+   "published_at": "2026-10-15T22:05:58Z",
+   "text": "We are removing barriers to government AI adoption by offering Claude for Enterprise and Claude for Government to all three branches of government, including federal civilian executive branch agencies, as well as legislative and judiciary branches of government, for $1."
+  },
+  {
+   "title": "China is considering adding 23 AI technologies to its export control list, including LLMs and chip…",
+   "url": "https://www.bloomberg.com/news/articles/2026-10-16/china-proposes-export-controls-on-ai-models-chips-and-agents",
+   "source": "Bloomberg",
+   "published_at": "2026-10-16T10:36:15Z",
+   "text": "China is considering adding 23 AI technologies to its export control list, including LLMs and chip designs, to keep closer control over homegrown advancements. China proposed adding advanced artificial intelligence technologies to its export-control list, potentially restricting overseas transfers …",
+   "via": "Techmeme"
+  },
+  {
+   "title": "AI-assisted PCB design for KiCad 10",
+   "url": "https://github.com/mixelpixx/Konnect",
+   "source": "Hacker News",
+   "published_at": "2026-10-14T10:51:37Z",
+   "text": "77 points and 22 comments on Hacker News.",
+   "points": 77,
+   "discussion": "https://news.ycombinator.com/item?id=50085553"
   }
  ],
  "sources": "curated, Techmeme, X (found via Techmeme, Reddit, the Internet Archive), Claude Code releases, Anthropic, Hacker News, Simon Willison"
