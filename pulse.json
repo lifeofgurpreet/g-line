@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-16T13:27:27Z",
+ "generated_at": "2026-10-16T13:58:12Z",
  "items": [
   {
    "title": "Meta releases Muse Spark Open, saying it is the most capable US open-weight model, with 816B total…",
@@ -11,17 +11,14 @@
    "via": "Techmeme"
   },
   {
-   "title": "We’ve committed to having evaluators assess our safety practices. We're in discussions with multipl…",
-   "url": "https://x.com/AnthropicAI/status/2110784662071398807",
-   "source": "𝕏 @AnthropicAI",
-   "published_at": "2026-10-15T17:27:34Z",
-   "text": "We’ve committed to having evaluators assess our safety practices. We're in discussions with multiple organizations, and have now given employee-like access to a team from @METR_Evals. In this post, we describe how we work with third-party evaluators:",
-   "author_name": "Anthropic",
-   "likes": 3426,
-   "story": "Anthropic says it is giving employee-like access to METR as part of its pledge to partner with evaluators for assessment of its models and safety practices",
-   "links": [
-    "https://www.anthropic.com/news/an-update-on-independent-evaluators"
-   ]
+   "title": "Meet NVIDIA Nemotron 3.5 Super VL Our new open model combines reasoning and tool use with text, ima…",
+   "url": "https://x.com/NVIDIAAI/status/2110749836450713896",
+   "source": "𝕏 @NVIDIAAI",
+   "published_at": "2026-10-15T15:09:11Z",
+   "text": "Meet NVIDIA Nemotron 3.5 Super VL Our new open model combines reasoning and tool use with text, image, document, and video understanding for long-running AI agents. 120B total parameters with 12B active 🧵",
+   "author_name": "NVIDIA AI",
+   "likes": 4125,
+   "story": "Chinese state media: during an interview, Tim Cook says China has approved Apple Intelligence, and a test version will arrive in late October without Siri AI"
   },
   {
    "title": "Claude Code 2.1.301 released",
@@ -31,14 +28,17 @@
    "text": "Added CLAUDE_CODE_RETRY_WATCHDOG_MAX_USAGE_LIMIT_WAIT_MS so unattended retry mode (CLAUDE_CODE_RETRY_WATCHDOG) ends a request at a usage limit that resets too far away instead of waiting · Added OpenTelemetry tracing guidance to the claude-api skill, including setting up trace destinations with the ant CLI · Added the % motion to vim mode: jump to the matching bracket, alone or with d/c/y · Added rows to a mod's Input: a text field of several lines in the terminal, where Enter submits and Shift+Enter or a backslash before Enter starts a new line"
   },
   {
-   "title": "Meet NVIDIA Nemotron 3.5 Super VL Our new open model combines reasoning and tool use with text, ima…",
-   "url": "https://x.com/NVIDIAAI/status/2110749836450713896",
-   "source": "𝕏 @NVIDIAAI",
-   "published_at": "2026-10-15T15:09:11Z",
-   "text": "Meet NVIDIA Nemotron 3.5 Super VL Our new open model combines reasoning and tool use with text, image, document, and video understanding for long-running AI agents. 120B total parameters with 12B active 🧵",
-   "author_name": "NVIDIA AI",
-   "likes": 4110,
-   "story": "Austin-based RapidCanvas, which uses agents to help businesses build custom AI tools, raised a ∼$29M Series B led by Vertex Ventures and Hitachi Ventures"
+   "title": "We’ve committed to having evaluators assess our safety practices. We're in discussions with multipl…",
+   "url": "https://x.com/AnthropicAI/status/2110784662071398807",
+   "source": "𝕏 @AnthropicAI",
+   "published_at": "2026-10-15T17:27:34Z",
+   "text": "We’ve committed to having evaluators assess our safety practices. We're in discussions with multiple organizations, and have now given employee-like access to a team from @METR_Evals. In this post, we describe how we work with third-party evaluators:",
+   "author_name": "Anthropic",
+   "likes": 3450,
+   "story": "Anthropic says it is giving employee-like access to METR as part of its pledge to partner with evaluators for assessment of its models and safety practices",
+   "links": [
+    "https://www.anthropic.com/news/an-update-on-independent-evaluators"
+   ]
   },
   {
    "title": "A researcher says modern neural networks are far more interpretable than believed, with most neuron…",
@@ -64,7 +64,7 @@
    "published_at": "2026-10-15T13:16:39Z",
    "text": "\"Anthropic told investors on Wednesday distillation accounted for 5 per cent to 7 per cent of revenue\" If true, and Q2 revenue was $11.5B, then that's more than half a billion dollars spent by other labs to distill Anthropic's models!",
    "author_name": "Simon Willison",
-   "likes": 728,
+   "likes": 734,
    "story": "Sources: some Anthropic investors discussed a ~$1.5T valuation for its IPO, down from ~$2T they had expected, after disclosures showed slowing Q3 revenue growth",
    "links": [
     "https://www.ft.com/content/11632d03-358c-454b-af95-d06d4072932b?syn-25a6b1a6=1"
@@ -84,15 +84,6 @@
    "published_at": "2026-10-16T10:11:12Z",
    "text": "OpenAI says its model paid for a deployment on an Ethereum test network with a wallet it did not own, after obtaining keys from public recovery phrases. An OpenAI research model stuck without funds on an Ethereum test network went looking for someone else's wallet, found one through recovery phrases …",
    "via": "Techmeme"
-  },
-  {
-   "title": "Using AI to reverse engineer hardware",
-   "url": "https://blogs.gnome.org/uraeus/2026/10/15/aiandreverseengineerhardware/",
-   "source": "Hacker News",
-   "published_at": "2026-10-15T14:35:15Z",
-   "text": "219 points and 193 comments on Hacker News.",
-   "points": 219,
-   "discussion": "https://news.ycombinator.com/item?id=50104299"
   }
  ],
  "sources": "curated, Techmeme, X (found via Techmeme, Reddit, the Internet Archive), Claude Code releases, Anthropic, Hacker News, Simon Willison"
