@@ -137,7 +137,17 @@ export type Day = { day: string; cost: number; turns: number; tools: number; ses
 export type Ledger = { today: Day; week: Day[] }
 
 /** One headline from g-line's Pulse feed, cleaned. */
-export type PulseItem = { title: string; url: string; source: string; at?: string }
+export type PulseItem = {
+  title: string
+  url: string
+  source: string
+  at?: string
+  /** The whole post or summary, for the reader; the title when the feed has none. */
+  text?: string
+  likes?: number
+  /** The author's display name on X (`Claude`), beside the handle in `source`. */
+  author?: string
+}
 
 /** The feed as last fetched. */
 export type PulseFeed = { fetchedAt: number; generatedAt?: string; items: PulseItem[] }
@@ -156,8 +166,12 @@ declare module 'claude-code' {
       forecast: Forecast | null
       context: ContextView | null
       ledger: Ledger | null
-      view: 'details' | 'card'
+      view: 'details' | 'card' | 'settings' | 'news'
       pulse: PulseFeed | null
+      /** Which headline Pulse's row under the prompt shows: it moves on every few seconds. */
+      turnover: number
+      /** The reader's selected item. */
+      newsAt: number
     }
   }
 }

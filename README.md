@@ -134,22 +134,38 @@ change it, so g-line leaves it as it is.
 
 ### Pulse (off unless you turn it on)
 
-`/g-line pulse` turns on **Pulse**: on a turn that runs longer than 15 seconds, the spinner
-shows one AI-dev headline at a time after its burn (`│ Claude Code 2.1.296 released (Claude
-Code releases)`), and the `/g-line` pane lists the day's top five, with links. Headlines come
-from g-line's own static feed: posts on 𝕏 about AI, Claude Code releases, Anthropic's news pages, Hacker News stories about Claude, Simon
-Willison's AI posts, and a few items the maintainer picks. Each is labelled with where it came
-from. Posts on 𝕏 are the freshest part: under two hours old, or gaining likes fast enough to
-stay up to a day, or big enough to stay up to three days, and always about AI. Each leads with
-its author and age (`│ 𝕏 @AnthropicAI · 3h: We've committed to having evaluators assess…`). No
-X API key is involved: the feed finds posts through the links Techmeme, AI subreddits and the
-Internet Archive carry, and rebuilds every 30 minutes.
+`/g-line set pulse on` (or `p` in `/g-line settings`) turns on **Pulse**, and a headline
+appears under the prompt within seconds, on a dim row of its own under line 2:
+
+```
+𝕏 @NeelNanda5 · 2h: This is interesting work, but I don't think it's a significant… · /g-line news
+```
+
+It moves to the next item every 8 seconds. The headline is a link: cmd-click (ctrl-click on
+Linux) opens it in terminals that draw OSC 8 links (iTerm2, Ghostty, WezTerm, kitty, VS Code;
+in tmux, add `set -ga terminal-features "*:hyperlinks"`). `/g-line open` opens whichever
+headline is showing; over SSH, where there's no browser to open, it copies the link instead.
+On a turn that runs longer than 15 seconds, the spinner shows the headlines too.
+
+**`/g-line news` is the reader.** It lists every item in the feed, newest first. The picked
+one is shown in full (author, age, likes, the whole post, its link); the rest are one headline
+each. `j` and `k` move, `o` or Enter opens, `c` copies the link, `r` refreshes, `q` closes.
+Items posted since you last opened it are marked **new**.
+
+Headlines come from g-line's own static feed: posts on 𝕏 about AI, Claude Code releases,
+Anthropic's news pages, Hacker News stories about Claude, Simon Willison's AI posts, and a few
+items the maintainer picks. Each is labelled with where it came from. Posts on 𝕏 are the
+freshest part: under two hours old, or gaining likes fast enough to stay up to a day, or big
+enough to stay up to three days, and always about AI. No X API key is involved: the feed finds
+posts through the links Techmeme, AI subreddits and the Internet Archive carry, and rebuilds
+every 30 minutes.
 
 When Pulse is on, g-line fetches one file,
 `raw.githubusercontent.com/lifeofgurpreet/g-line/pulse/pulse.json`, at most every 45 minutes.
 It sends nothing about you, it never fetches while drawing, and it gives up after five
 seconds. Headline text is stripped of escape and control characters before it reaches your
-terminal. With Pulse off (the default), g-line makes no network requests at all.
+terminal; the only escape g-line draws is its own link, to an `https` address it has checked.
+With Pulse off (the default), g-line makes no network requests at all.
 
 ![Pulse on a long turn: Churning… · 1 tool · 5h 9% │ 𝕏 @claudeai · 6d: Claude Dashboards and Claude Motion are in b…](docs/pulse.png)
 
@@ -158,20 +174,39 @@ terminal. With Pulse off (the default), g-line makes no network requests at all.
 `/g-line` opens a pane with every figure spelled out: limits with bars and reset times,
 warnings, agents, the last turns' receipts, what fills the context (counted locally, like
 `/context`), tools used and failed, and today's and this week's totals across sessions. Its
-top row changes settings without editing JSON: **Layout** (two lines, one line, receipts
-only), **Notifications**, **Pulse** and **Receipt** (adaptive, fixed, off). Choices stick
-across sessions. `/g-line card` shows a share card of the session with a copy button; it
-leaves out your repository, branch, paths and account. `/g-line off` hides everything g-line
-draws and keeps it quiet until `/g-line on`.
+top row flips the common settings with one key (`l` layout, `r` receipt, `p` Pulse), `s` opens
+all of them, and `n` opens the news reader. `/g-line card` shows a share card of the session
+with a copy button; it leaves out your repository, branch, paths and account. `/g-line off`
+hides everything g-line draws and keeps it quiet until `/g-line on`.
+
+**`/g-line settings` is the settings manager.** Every setting is one row: its key, its value,
+and where the value comes from (`default`, `config.json`, `/config`, or `your choice`), with
+`•` marking the ones that differ from a fresh install. Press the key and the setting flips,
+at once, in this session and in every other open one, with no restart. `z` clears the choices
+you made here, so your files and the defaults decide again.
+
+```
+Show
+l: Layout          two lines    default
+p: Pulse           on         • config.json
+x: Claude reads    on         • your choice
+```
+
+The same from the prompt: `/g-line set pulse on`, `/g-line set receipt short`,
+`/g-line toggle git`, `/g-line reset pulse` (back to what your files say), `/g-line reset`
+(all of them), and `/g-line set all on`. Names are forgiving: `cold cache`, `cache` and
+`notify.cache` are the same setting.
 
 ![The /g-line pane](docs/details-pane.png)
 
 ## Configure
 
-`/config` lists six settings: **Layout** (`2`, `1` or `receipts`), **One-line preset**,
-**Icons**, **Heads-up toasts**, **Native notifications** and **Turn receipt**. The pane's top
-row sets the common ones. For the rest, add `~/.config/g-line/config.json` (or put it under
-`$XDG_CONFIG_HOME`):
+`/g-line settings` sets every on/off and layout choice without editing anything (see above).
+`/config` lists six: **Layout** (`2`, `1` or `receipts`), **One-line preset**, **Icons**,
+**Heads-up toasts**, **Native notifications** and **Turn receipt**. To set them for every
+session on a machine, or every machine you manage, write `~/.config/g-line/config.json` (or
+put it under `$XDG_CONFIG_HOME`). Running sessions read it again within 15 seconds of an edit.
+Layers, lowest first: defaults, `config.json`, `/config`, then choices made with `/g-line`.
 
 ```json
 {
@@ -195,7 +230,10 @@ row sets the common ones. For the rest, add `~/.config/g-line/config.json` (or p
 | `today_budget` | Dollars at API prices; today's total across sessions joins line 2 and a toast says when you pass it | none |
 | `coach` | `true` offers `/effort` or `/model` for Tab to take when the 5-hour window is on pace to run out, and `/compact keep ` before a compaction. It never changes anything itself | `false` |
 | `claude_reads` | `true` gives Claude a `status` tool to read these figures when you ask it to (see below) | `false` |
-| `reset_threshold`, `long_turn_seconds`, `cache_ttl`, `icons`, `segments`, `preset`, `short_hints`, `export_state`, `account_command` | See `hooks/register.tsx`. `account_command` runs a command you choose and shows its first line; off unless set | |
+| `footer_labels` | `true`, `false`: agents and compaction in the footer (one-line layout) | `true` |
+| `short_hints` | `true` draws `(shift+tab to cycle)` as `⇧⇥` | `true` |
+| `export_state` | `true` writes the figures as JSON under `~/.cache/g-line/state/` for tmux and other bars | `false` |
+| `reset_threshold`, `long_turn_seconds`, `cache_ttl`, `icons`, `segments`, `preset`, `account_command` | See `hooks/settings.ts`. `account_command` runs a command you choose and shows its first line; off unless set | |
 
 `~/.config/glanceline/config.json` from 0.4 is still read, and `g-line/config.json` wins.
 
@@ -215,10 +253,11 @@ available.
 - **Reads:** the figures Claude Code hands every mod (usage, turns, tool calls and their
   results' success, subagents, compactions). It doesn't read the transcript file.
 - **Keeps:** per session per day, numbers only (cost at API prices, turns, tool calls, cold
-  rebuilds, agents) in Claude Code's plugin store, deleted after 35 days; your pane choices;
-  and, with Pulse on, the last feed.
+  rebuilds, agents) in Claude Code's plugin store, deleted after 35 days; your choices made
+  with `/g-line`; when you last opened the news reader; and, with Pulse on, the last feed.
 - **Runs:** `git status` only with `git: true` or while the pane is open; your
-  `account_command` only if you set one.
+  `account_command` only if you set one; `open` (or `xdg-open`) with a feed link when you
+  ask the reader to open one.
 - **Sends:** nothing, unless Pulse is on (one GET of a static file) or you enable
   `claude_reads` (the snapshot goes into your conversation).
 - **Writes:** a one-line timestamp at `~/.cache/glanceline/live/<session id>` so an older

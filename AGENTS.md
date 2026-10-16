@@ -7,10 +7,10 @@ coding agents and for people.
 
 ## The rules the product stands on
 
-1. **Never above the prompt, never more than two lines.** Line 1 is the tail of Claude Code's
-   own hint line. Line 2 is one row the mod draws directly under it (`lines: 2`, the
-   default). With `lines: 1` it's the hint line alone; with `lines: receipts`, no footer at
-   all. Never draw in `AbovePrompt`, and never open a pane the person didn't ask for.
+1. **Never above the prompt, never more than two lines** (plus Pulse's one row, only while
+   the person has Pulse on). Line 1 is the tail of Claude Code's own hint line. Line 2 is one
+   row the mod draws directly under it (`lines: 2`, the default). With `lines: 1` it's the
+   hint line alone; with `lines: receipts`, no footer at all. Never draw in `AbovePrompt`, and never open a pane the person didn't ask for.
 2. **Write on the line where the thing happened.** A turn's facts go on that turn's closing
    line (`TurnDuration`). The running turn's facts go on the spinner. Agents and compaction
    go on line 2 (or the footer labels in the one-line layout).
@@ -43,7 +43,8 @@ coding agents and for people.
 | `hooks/inline.ts` | Pure: the one-line layout, the hint's room, the shortened standing hints |
 | `hooks/extras.ts` | Pure: receipts (adaptive and fixed), agents, compaction forecast, the day ledger, the card, the coach |
 | `hooks/glance.ts` | Pure: the `status` tool's JSON snapshot |
-| `hooks/pulse.ts` | Pure: Pulse feed parsing, cleaning (escapes, controls, https only) and the spinner ticker |
+| `hooks/settings.ts` | Pure: the settings table (`SETTINGS`), defaults, `merge`, origins, and `/g-line`'s argument parser. Add a setting here and it gets a toggle, a command name and an origin |
+| `hooks/pulse.ts` | Pure: Pulse feed parsing, cleaning (escapes, controls, https only), the spinner ticker, the row under the prompt and the reader's paging |
 | `tools/pulse/build_pulse.py` | Operator tooling, not the mod: builds the Pulse feed and pushes it to the `pulse` branch |
 | `types/index.d.ts` | The `$.state` contract (`PluginState['g-line']`); self-contained, no imports |
 | `tests/*.test.ts(x)` | `claude plugin test .` runs them; `tests/cases.ts` is the golden file for `core.ts` |

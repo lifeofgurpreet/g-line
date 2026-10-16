@@ -17,19 +17,24 @@ import { atom, read, update } from 'claude-code'
 import type { EngineInterface, Register } from 'claude-code'
 
 import type { AgentRow, Receipt, Snap, Totals } from '../types'
-import { SEP, alerts, layoutKeys, modelName, num, pct, segments, str, tokens, width } from './core'
+import { SEP, alerts, layoutKeys, modelName, pct, segments, str, tokens, width } from './core'
 import type { Options, Payload, Preset, Segment, Tone } from './core'
 import {
   EMPTY_TOTALS, RECEIPT_PRESETS, agentsSegment, cacheHit, cardLines, coach, compactionText, contextView, costRatio,
-  dayOf, fitParts, forecast, forecastSegment, isActive, isEnded, ledger, loopWarning, money, receiptFields, receiptSpec,
+  dayOf, fitParts, forecast, forecastSegment, isActive, isEnded, ledger, loopWarning, money, receiptSpec,
   receiptText, spark, spinnerParts, staleKeys, target, todaySegment, turnLength, turnLineWidth, unusedServers,
 } from './extras'
 import type { ReceiptSpec } from './extras'
 import { MOD_KEYS, accountSegment, inline, joined, modesWidth, shownHint, tailRoom, withText } from './inline'
 import { deck, nextRoom } from './deck'
 import { STATUS_DESCRIPTION, STATUS_SCHEMA, STATUS_TOOL, statusJson } from './glance'
-import { PULSE_TTL_MS, PULSE_URL, parseFeed, tickerText, xLead } from './pulse'
+import { PULSE_EVERY_MS, PULSE_TTL_MS, PULSE_URL, ageOf, clean, countOf, newestFirst, pageOf, parseFeed, pulseRow, safeUrl, tickerText, xLead } from './pulse'
+import type { PulseItem } from './pulse'
 import { gitSegmentOf } from './core'
+import {
+  DEFAULTS, GROUPS, SETTINGS, changed, merge, nextValue, originOf, parseCommand, patchOf, said, withPatch, withoutSetting,
+} from './settings'
+import type { Config, Layer, Setting } from './settings'
 
 const snap = atom({ plugin: 'g-line', key: 'snap' } as const, {})
 const tick = atom({ plugin: 'g-line', key: 'tick' } as const, 0)
@@ -44,6 +49,8 @@ const contextAtom = atom({ plugin: 'g-line', key: 'context' } as const, null)
 const ledgerAtom = atom({ plugin: 'g-line', key: 'ledger' } as const, null)
 const view = atom({ plugin: 'g-line', key: 'view' } as const, 'details')
 const pulseAtom = atom({ plugin: 'g-line', key: 'pulse' } as const, null)
+const turnover = atom({ plugin: 'g-line', key: 'turnover' } as const, 0)
+const newsAt = atom({ plugin: 'g-line', key: 'newsAt' } as const, 0)
 
 const PANE = 'g-line'
 const INSTALL = '/plugin install g-line --marketplace lifeofgurpreet/g-line'
@@ -58,96 +65,11 @@ const TICK_MS = 15_000
 const LIVE_DIR = '.cache/glanceline/live'
 const STATE_DIR = '.cache/g-line/state'
 
-type Notify = { cache: boolean; reset: boolean; longTurn: boolean; agents: boolean }
-
-type Config = {
-  /** 2: line 1 at the end of the hint line, line 2 under it; 1: the hint line only; 0: receipts, spinner and heads-ups, no footer. */
-  lines: 0 | 1 | 2
-  /** Headlines from g-line's feed on long turns' spinner and in the pane; fetches one static file. */
-  pulse: boolean
-  /** Shorten Claude Code's standing hints: `(shift+tab to cycle)` to `⇧⇥`, `? for shortcuts` to `?`. */
-  shortHints: boolean
-  /** The branch on line 2 (two lines; one line names `git` in `segments`). */
-  git: boolean
-  preset: Preset
-  segments?: string
-  icons: 'none' | 'nerd'
-  toasts: boolean
-  cacheTtl: 'auto' | '5m' | '1h'
-  accountCommand?: string[]
-  notify: Notify
-  longTurnSeconds: number
-  resetThreshold: number
-  receipt: ReceiptSpec
-  spinner: boolean
-  footerLabels: boolean
-  coach: boolean
-  /** Give Claude the `status` tool to read these figures when asked (off by default). */
-  claudeReads: boolean
-  toolStreak: number
-  budget?: number
-  exportState: boolean
-}
-
-const DEFAULTS: Config = {
-  lines: 2, pulse: false, shortHints: true, git: false, preset: 'default', icons: 'none', toasts: true, cacheTtl: 'auto',
-  notify: { cache: true, reset: true, longTurn: false, agents: false },
-  longTurnSeconds: 60, resetThreshold: 80, receipt: 'adaptive', spinner: true, footerLabels: true,
-  coach: false, claudeReads: false, toolStreak: 3, exportState: false,
-}
-
 const COLORS: Record<Tone, string | undefined> = {
   ok: 'success', warn: 'warning', bad: 'error', accent: 'claude', dim: undefined,
 }
 
 // ----------------------------------------------------------------- config
-
-function merge(base: Config, raw: unknown): Config {
-  if (!raw || typeof raw !== 'object') return base
-  const r = raw as Record<string, unknown>
-  const next = { ...base, notify: { ...base.notify } }
-  if ([0, 1, 2, '0', '1', '2'].includes(r.lines as number)) next.lines = Number(r.lines) as 0 | 1 | 2
-  if (r.lines === 'receipts') next.lines = 0
-  if (typeof r.pulse === 'boolean') next.pulse = r.pulse
-  if (typeof r.git === 'boolean') next.git = r.git
-  if (typeof r.short_hints === 'boolean') next.shortHints = r.short_hints
-  if (r.preset === 'minimal' || r.preset === 'default' || r.preset === 'full') next.preset = r.preset
-  // A custom layout is one line's: naming segments picks the one-line layout.
-  if (typeof r.segments === 'string' && r.segments.trim()) {
-    next.segments = r.segments
-    if (r.lines === undefined) next.lines = 1
-  }
-  if (r.icons === 'none' || r.icons === 'nerd') next.icons = r.icons
-  if (typeof r.toasts === 'boolean') next.toasts = r.toasts
-  if (r.cache_ttl === '5m' || r.cache_ttl === '1h' || r.cache_ttl === 'auto') next.cacheTtl = r.cache_ttl
-  const command = r.account_command
-  if (Array.isArray(command) && command.length && command.every(word => typeof word === 'string')) {
-    next.accountCommand = command as string[]
-  }
-  if (typeof r.notify === 'boolean') next.notify = { cache: r.notify, reset: r.notify, longTurn: r.notify && base.notify.longTurn, agents: r.notify && base.notify.agents }
-  else if (r.notify && typeof r.notify === 'object') {
-    const n = r.notify as Record<string, unknown>
-    if (typeof n.cache === 'boolean') next.notify.cache = n.cache
-    if (typeof n.reset === 'boolean') next.notify.reset = n.reset
-    if (typeof n.long_turn === 'boolean') next.notify.longTurn = n.long_turn
-    if (typeof n.agents === 'boolean') next.notify.agents = n.agents
-  }
-  const seconds = num(r.long_turn_seconds)
-  if (seconds !== undefined && seconds >= 5) next.longTurnSeconds = seconds
-  const threshold = num(r.reset_threshold)
-  if (threshold !== undefined && threshold >= 0 && threshold <= 100) next.resetThreshold = threshold
-  if (r.receipt !== undefined) next.receipt = r.receipt === false ? [] : receiptFields(r.receipt)
-  if (typeof r.spinner === 'boolean') next.spinner = r.spinner
-  if (typeof r.footer_labels === 'boolean') next.footerLabels = r.footer_labels
-  if (typeof r.coach === 'boolean') next.coach = r.coach
-  if (typeof r.claude_reads === 'boolean') next.claudeReads = r.claude_reads
-  const streak = num(r.tool_streak)
-  if (streak !== undefined && streak >= 0) next.toolStreak = Math.floor(streak)
-  const budget = num(r.today_budget)
-  if (budget !== undefined && budget > 0) next.budget = budget
-  if (typeof r.export_state === 'boolean') next.exportState = r.export_state
-  return next
-}
 
 async function readJson($: EngineInterface, path: string): Promise<unknown> {
   try {
@@ -157,17 +79,22 @@ async function readJson($: EngineInterface, path: string): Promise<unknown> {
   }
 }
 
-/** Defaults, then the plugin's own config.json, the user's file, /config. */
-async function loadConfig($: EngineInterface, options: Record<string, unknown>): Promise<Config> {
-  let config = merge(DEFAULTS, await readJson($, `${$.plugin.root}/config.json`))
+/** The files config is read from, lowest first, each with the name `/g-line settings` gives it. */
+async function configFiles($: EngineInterface): Promise<{ name: string; path: string }[]> {
+  const files = [{ name: 'plugin', path: `${$.plugin.root}/config.json` }]
   const xdg = await $.env.get('XDG_CONFIG_HOME')
   const home = await $.env.get('HOME')
   const base = xdg || (home ? `${home}/.config` : undefined)
+  // The 0.4 name's file, then the new one: settings carry over across the rename.
   if (base) {
-    // The 0.4 name's file, then the new one: settings carry over across the rename.
-    config = merge(config, await readJson($, `${base}/glanceline/config.json`))
-    config = merge(config, await readJson($, `${base}/g-line/config.json`))
+    files.push({ name: 'glanceline/config.json', path: `${base}/glanceline/config.json` })
+    files.push({ name: 'config.json', path: `${base}/g-line/config.json` })
   }
+  return files
+}
+
+/** What /config sets; its rows left at their defaults say nothing. */
+function chosenOf(options: Record<string, unknown>): Record<string, unknown> {
   const chosen: Record<string, unknown> = {}
   if (options.lines !== undefined && options.lines !== '2') chosen.lines = options.lines
   if (options.preset !== undefined && options.preset !== 'default') chosen.preset = options.preset
@@ -175,26 +102,100 @@ async function loadConfig($: EngineInterface, options: Record<string, unknown>):
   if (options.toasts === false) chosen.toasts = false
   if (options.notifications === false) chosen.notify = false
   if (options.receipt !== undefined && options.receipt !== 'adaptive') chosen.receipt = options.receipt
-  config = merge(config, chosen)
-  // Choices made in the pane win: they are the most recent.
+  return chosen
+}
+
+/** The layer of choices made with /g-line, in the pane or by command. */
+const CHOSEN = 'your choice'
+
+/** Defaults, then the plugin's own config.json, the user's files, /config, then choices made with /g-line: the most recent. */
+async function loadConfig($: EngineInterface, options: Record<string, unknown>): Promise<{ config: Config; layers: Layer[] }> {
+  const found: Layer[] = []
+  for (const file of await configFiles($)) found.push({ name: file.name, raw: await readJson($, file.path) })
+  found.push({ name: '/config', raw: chosenOf(options) })
   try {
-    config = merge(config, await $.store.get(SETTINGS_KEY))
+    found.push({ name: CHOSEN, raw: (await $.store.get(SETTINGS_KEY)) ?? {} })
   } catch {
     // no store: the files and /config decide
   }
-  return config
+  return { config: found.reduce((c, layer) => merge(c, layer.raw), DEFAULTS), layers: found }
 }
 
 const SETTINGS_KEY = 'settings'
 
-/** Saves a choice made in the pane, so later sessions keep it. */
-async function saveSetting($: EngineInterface, key: string, value: unknown): Promise<void> {
+/**
+ * What changes when config is read again: the files' times and the saved
+ * choices (another session's pane writes them). Checked on the beat, so an
+ * edit to ~/.config/g-line/config.json reaches running sessions within 30 s.
+ */
+async function configStamp($: EngineInterface): Promise<string> {
+  const parts: string[] = []
+  for (const file of await configFiles($)) {
+    try {
+      parts.push(String((await $.fs.stat(file.path)).mtimeMs))
+    } catch {
+      parts.push('-')
+    }
+  }
   try {
-    const saved = ((await $.store.get(SETTINGS_KEY)) ?? {}) as Record<string, unknown>
-    await $.store.set(SETTINGS_KEY, { ...saved, [key]: value })
+    parts.push(JSON.stringify((await $.store.get(SETTINGS_KEY)) ?? null))
+  } catch {
+    parts.push('-')
+  }
+  return parts.join('|')
+}
+
+/** Reads every layer again and applies what changed. */
+async function reloadConfig($: EngineInterface): Promise<void> {
+  const before = config
+  ;({ config, layers } = await loadConfig($, startOptions))
+  stamp = await configStamp($)
+  await applied($, before)
+}
+
+/** Makes a change of settings take effect in this session, without a restart. */
+async function applied($: EngineInterface, before: Config): Promise<void> {
+  if (config.cacheTtl !== before.cacheTtl) ttl = await explicitTtl($, config)
+  if (config.exportState !== before.exportState) await setupLive($)
+  if (config.claudeReads && !statusRegistered) await registerStatus($)
+  if (config.pulse && !before.pulse) await refreshPulse($, true)
+  await update($, tick, n => n + 1)
+}
+
+/** Saves the choice for later sessions and applies it now. */
+async function choose($: EngineInterface, patch: Record<string, unknown>): Promise<void> {
+  const held = layers.find(layer => layer.name === CHOSEN)?.raw
+  let saved = (held && typeof held === 'object' ? held : {}) as Record<string, unknown>
+  try {
+    saved = ((await $.store.get(SETTINGS_KEY)) ?? {}) as Record<string, unknown>
   } catch {
     // the choice holds for this session
   }
+  await keep($, withPatch(saved, patch))
+}
+
+/** Replaces the saved choices: they now decide, over the files and /config. */
+async function keep($: EngineInterface, saved: Record<string, unknown>): Promise<void> {
+  try {
+    await $.store.set(SETTINGS_KEY, saved)
+  } catch {
+    // the choice holds for this session
+  }
+  const before = config
+  layers = [...layers.filter(layer => layer.name !== CHOSEN), { name: CHOSEN, raw: saved }]
+  config = layers.reduce((c, layer) => merge(c, layer.raw), DEFAULTS)
+  stamp = await configStamp($)
+  await applied($, before)
+}
+
+/** The toast after a setting changes: its new value, and when it takes effect if not at once. */
+function changedText(setting: Setting): string {
+  const value = said(setting, config)
+  const note = setting.key === 'claude_reads'
+    ? (config.claudeReads ? ' Claude can call g-line\'s status tool from your next message.' : ' The status tool now answers that it is off, and is gone in new sessions.')
+    : setting.key === 'pulse' && config.pulse ? ' Headlines from g-line\'s feed on long turns and in /g-line; one static file, fetched every 45 minutes.'
+      : setting.key === 'pulse' ? ' No fetches.' : ''
+  return `${setting.label}: ${value}.${note}`
 }
 
 // ------------------------------------------------------------------ cache
@@ -267,6 +268,12 @@ export function payload(s: Snap, nowSeconds: number, ttl: '5m' | '1h' | undefine
 // ------------------------------------------------------------------ mod
 
 let config: Config = DEFAULTS
+/** Where config came from, lowest first: `/g-line settings` names the layer each value is from. */
+let layers: Layer[] = []
+/** The config files' times and the saved choices when last read. */
+let stamp = ''
+let startOptions: Record<string, unknown> = {}
+let statusRegistered = false
 let ttl: '5m' | '1h' | undefined
 let beats = 0
 let liveFile: string | undefined
@@ -282,9 +289,12 @@ let coldThisTurn = false
 const streaks = new Map<string, number>()
 
 const UNREADABLE = JSON.stringify({ schema: 1, state: 'unavailable' })
+const STATUS_OFF = JSON.stringify({ schema: 1, state: 'disabled', note: 'The person turned this tool off (/g-line set claude_reads on turns it back on).' })
 const BACKGROUND = /\b\d+ (?:shells?|monitors?|tasks?|agents?|workflows?|background)\b/i
 /** Columns a receipt leaves for Claude Code's own words on a closing line that reports background work. */
 const BACKGROUND_ROOM = 64
+/** The settings the details view offers at once; the rest are a key away. */
+const QUICK = SETTINGS.filter(setting => ['lines', 'receipt', 'pulse'].includes(setting.key))
 
 async function nowMs($: EngineInterface): Promise<number> {
   return $.clock.now()
@@ -659,6 +669,7 @@ async function heartbeat($: EngineInterface): Promise<void> {
   if (beats % 2 === 0) await refreshGit($)
   if (beats % 40 === 0) await refreshAccount($)
   if (beats % 20 === 0) void refreshPulse($)
+  if ((await configStamp($)) !== stamp) await reloadConfig($)
   if ((await read($, agents)).some(row => isActive(row.status))) await refreshAgents($)
   await exportState($)
 }
@@ -791,7 +802,7 @@ async function cardText($: EngineInterface, seconds: number): Promise<string[]> 
   })
 }
 
-async function openPane($: EngineInterface, mode: 'details' | 'card'): Promise<Record<string, never>> {
+async function openPane($: EngineInterface, mode: 'details' | 'card' | 'settings' | 'news'): Promise<Record<string, never>> {
   await update($, view, () => mode)
   await Promise.all([pruneLedger($), refreshGit($, true)])
   try {
@@ -805,7 +816,9 @@ async function openPane($: EngineInterface, mode: 'details' | 'card'): Promise<R
     // the pane shows the rest
   }
   void refreshPulse($)
-  const opened = await $.ui.open({ id: PANE, title: mode === 'card' ? 'g-line card' : 'g-line' })
+  const title = mode === 'card' ? 'g-line card' : mode === 'settings' ? 'g-line settings' : mode === 'news' ? 'Pulse' : 'g-line'
+  // The reader and the settings answer keys: they take the keyboard, asked for by the command.
+  const opened = await $.ui.open({ id: PANE, title, ...(mode === 'news' || mode === 'settings' ? { focus: true as const, rows: 40 } : {}) })
   if (!opened.isPlaced) $.ui.toast('g-line: widen the terminal to see the pane.', { timeoutMs: 5000 })
   // Nothing goes back into the conversation: a command's text is read by Claude.
   return {}
@@ -828,65 +841,210 @@ async function refreshPulse($: EngineInterface, force = false): Promise<void> {
     }
     // One GET of a static file, nothing sent; given up after five seconds.
     const response = await Promise.race([$.http.fetch(PULSE_URL), $.clock.sleep(5000).then(() => undefined)])
-    if (!response || !response.ok || response.text.length > 65_536) return
-    const feed = parseFeed(response.text, at)
-    if (!feed) return
-    await $.store.set('pulse', { fetchedAt: at, raw: response.text })
-    await update($, pulseAtom, () => feed)
+    const feed = response && response.ok && response.text.length <= 262_144 ? parseFeed(response.text, at) : undefined
+    if (feed) {
+      await $.store.set('pulse', { fetchedAt: at, raw: response?.text })
+      await update($, pulseAtom, () => feed)
+    } else if (!held && stored?.raw && stored.fetchedAt) {
+      // Offline: the last copy fetched, rather than nothing.
+      const old = parseFeed(stored.raw, stored.fetchedAt)
+      if (old) await update($, pulseAtom, () => old)
+    }
   } catch {
     // offline or refused: the spinner and pane go on without headlines
   }
 }
 
+/** The item Pulse's row shows now. */
+async function shownItem($: EngineInterface): Promise<PulseItem | undefined> {
+  const feed = await read($, pulseAtom)
+  if (!feed?.items.length) return undefined
+  return feed.items[(await read($, turnover)) % feed.items.length]
+}
+
+/**
+ * Pulse's row under the prompt, while Pulse is on: whose post, how long ago,
+ * and the headline as a link (cmd-click or ctrl-click opens it where the
+ * terminal draws OSC 8 links). It moves to the next item every 8 seconds.
+ */
+async function pulseLine($: EngineInterface, e: Parameters<EngineInterface['ui']['resolve']>[0], columns: number | undefined): Promise<JSX.Element | null> {
+  if (!config.pulse || config.lines === 0 || columns === undefined) return null
+  const feed = await read($, pulseAtom)
+  if (!feed?.items.length) return null
+  const item = feed.items[(await read($, turnover)) % feed.items.length]
+  const row = pulseRow(item, columns - 4, await nowMs($))
+  if (!item || !row) return null
+  const { Box, Text, Link } = $.ui.resolve(e)
+  return (
+    <Box key="pulse" flexDirection="row">
+      {row.lead ? <Text dimColor>{`${row.lead}: `}</Text> : null}
+      <Link href={item.url} label={row.title} />
+      {row.tail ? <Text dimColor>{row.tail}</Text> : null}
+    </Box>
+  )
+}
+
+/** Moves Pulse's row on to the next item, while there is a row to move. */
+async function turnPulse($: EngineInterface): Promise<void> {
+  if (!config.pulse || config.lines === 0 || (await read($, hidden))) return
+  const feed = await read($, pulseAtom)
+  if (feed && feed.items.length > 1) await update($, turnover, n => n + 1)
+}
+
+/**
+ * Opens a link in the browser where the session runs on this machine: `open`
+ * on macOS, `xdg-open` elsewhere. Over SSH, or when neither works, the link
+ * is copied instead, which reaches the clipboard of the terminal in front of you.
+ */
+async function openLink($: EngineInterface, url: string, surface?: string): Promise<void> {
+  const safe = safeUrl(url)
+  if (!safe) return
+  const remote = !!((await $.env.get('SSH_CONNECTION')) || (await $.env.get('SSH_TTY')))
+  if (!remote) {
+    for (const opener of ['open', 'xdg-open']) {
+      try {
+        const ran = await $.process.run([opener, safe], { timeoutMs: 4000 })
+        if (ran.exitCode === 0) {
+          $.ui.toast(`Opened ${hostOf(safe)} in your browser.`, { timeoutMs: 3000 })
+          return
+        }
+      } catch {
+        // try the next opener
+      }
+    }
+  }
+  const copied = await $.ui.copy({ text: safe, ...(surface ? { surface } : {}) } as never)
+  $.ui.toast(copied.isCopied ? `Link copied (${remote ? 'this session runs over SSH' : 'no browser to open here'}): ${safe}` : safe, { timeoutMs: 8000 })
+}
+
+function hostOf(url: string): string {
+  try {
+    return new URL(url).host.replace(/^www\./, '')
+  } catch {
+    return url
+  }
+}
+
+/** When the reader was last opened, and what it held then: items newer are marked new. */
+const NEWS_SEEN = 'news_seen'
+let seenBefore = 0
+
+/** Posted after the reader was last opened. */
+function isNew(item: PulseItem): boolean {
+  if (!seenBefore || !item.at) return false
+  const at = Date.parse(item.at)
+  return Number.isFinite(at) && at > seenBefore
+}
+
+async function openNews($: EngineInterface): Promise<Record<string, never>> {
+  try {
+    seenBefore = Number((await $.store.get(NEWS_SEEN)) ?? 0) || 0
+    await $.store.set(NEWS_SEEN, await nowMs($))
+  } catch {
+    // every item reads as seen
+  }
+  await update($, newsAt, () => 0)
+  if (!config.pulse) {
+    $.ui.toast('Pulse is off, so there is no news yet. /g-line set pulse on turns it on.', { timeoutMs: 8000 })
+    return {}
+  }
+  await refreshPulse($)
+  return openPane($, 'news')
+}
+
 /** A setting changed from the pane or a command: applied now, kept for later sessions. */
-async function setSetting($: EngineInterface, key: 'lines' | 'pulse' | 'notify' | 'receipt', value: unknown): Promise<void> {
-  config = merge(config, { [key]: value })
-  await saveSetting($, key, value)
-  if (key === 'pulse' && value === true) await refreshPulse($, true)
-  await update($, tick, n => n + 1)
+async function setSetting($: EngineInterface, setting: Setting, value: boolean | string): Promise<void> {
+  await choose($, patchOf(setting, value))
+}
+
+/** Registers the `status` tool Claude can call; from the next prompt on. */
+async function registerStatus($: EngineInterface): Promise<void> {
+  try {
+    // Deferred where tool search is available: Claude sees the name and
+    // loads the description when it looks for such a tool.
+    await $.tool.register({ name: STATUS_TOOL, description: STATUS_DESCRIPTION, inputSchema: STATUS_SCHEMA, isDeferred: true })
+    statusRegistered = true
+  } catch {
+    // the line and the rest work without the tool
+  }
 }
 
 // ---------------------------------------------------------------- command
 
-/** `/g-line [card|pulse|off|on]`, and the 0.4 name for one release. Nothing goes back into the conversation. */
+const HELP = 'Open the g-line pane; `news` reads Pulse, `open` opens the headline shown, `settings` lists every setting, `set <name> on|off`, `reset [name]`, `card`, `off`/`on`'
+
+/** `/g-line [settings|set|reset|card|off|on]`, and the 0.4 name for one release. Nothing goes back into the conversation. */
 async function runCommand($: EngineInterface, e: { command: string; args: string }): Promise<Record<string, never>> {
-  const arg = e.args.trim().toLowerCase()
   if (e.command === OLD_COMMAND) $.ui.toast('glanceline is now g-line: use /g-line. /glanceline works until the next release.', { timeoutMs: 8000 })
-  if (arg === 'off' || arg === 'on') {
-    await update($, hidden, () => arg === 'off')
-    $.ui.toast(arg === 'off' ? 'g-line hidden, and quiet until /g-line on.' : 'g-line shown.', { timeoutMs: 5000 })
-    return {}
+  const asked = parseCommand(e.args)
+  switch (asked.kind) {
+    case 'show':
+    case 'hide':
+      await update($, hidden, () => asked.kind === 'hide')
+      $.ui.toast(asked.kind === 'hide' ? 'g-line hidden, and quiet until /g-line on.' : 'g-line shown.', { timeoutMs: 5000 })
+      return {}
+    case 'set': {
+      const value = asked.value === 'toggle' ? nextValue(asked.setting, config) : asked.value
+      await setSetting($, asked.setting, value)
+      $.ui.toast(changedText(asked.setting), { timeoutMs: 8000 })
+      return {}
+    }
+    case 'all': {
+      let patch: Record<string, unknown> = {}
+      for (const setting of SETTINGS) if (setting.kind === 'toggle') patch = withPatch(patch, patchOf(setting, asked.value))
+      await choose($, patch)
+      $.ui.toast(`Every g-line toggle is ${asked.value ? 'on' : 'off'}. /g-line reset goes back to your files and the defaults.`, { timeoutMs: 8000 })
+      return {}
+    }
+    case 'reset': {
+      const held = layers.find(layer => layer.name === CHOSEN)?.raw
+      let saved = (held && typeof held === 'object' ? held : {}) as Record<string, unknown>
+      try {
+        saved = ((await $.store.get(SETTINGS_KEY)) ?? {}) as Record<string, unknown>
+      } catch {
+        // what this session holds
+      }
+      await keep($, asked.setting ? withoutSetting(saved, asked.setting) : {})
+      $.ui.toast(asked.setting
+        ? `${asked.setting.label}: ${said(asked.setting, config)}, from ${originOf(asked.setting, layers)}.`
+        : 'Choices made with /g-line cleared: your config files, /config and the defaults decide again.', { timeoutMs: 8000 })
+      return {}
+    }
+    case 'error':
+      $.ui.toast(asked.text, { timeoutMs: 10_000 })
+      return {}
+    case 'settings':
+      return openPane($, 'settings')
+    case 'news':
+      return openNews($)
+    case 'open': {
+      const item = await shownItem($)
+      if (item) await openLink($, item.url)
+      else $.ui.toast(config.pulse ? 'No headline yet: the feed is still on its way.' : 'Pulse is off. /g-line set pulse on turns it on.', { timeoutMs: 6000 })
+      return {}
+    }
+    case 'card':
+      return openPane($, 'card')
+    default:
+      return openPane($, 'details')
   }
-  if (arg === 'pulse' || arg === 'pulse on' || arg === 'pulse off') {
-    const turnOn = arg === 'pulse' ? !config.pulse : arg === 'pulse on'
-    await setSetting($, 'pulse', turnOn)
-    $.ui.toast(turnOn ? 'Pulse on: headlines from g-line\'s feed on long turns and in /g-line. One static file, fetched every 45 minutes.' : 'Pulse off: no fetches.', { timeoutMs: 8000 })
-    return {}
-  }
-  return openPane($, arg === 'card' ? 'card' : 'details')
 }
 
 // -------------------------------------------------------------- register
 
 export const register: Register = (on, options) => {
   on('session.start', async ($, e, next) => {
-    config = await loadConfig($, options as Record<string, unknown>)
+    startOptions = options as Record<string, unknown>
+    ;({ config, layers } = await loadConfig($, startOptions))
+    stamp = await configStamp($)
     ttl = await explicitTtl($, config)
-    if (config.claudeReads) {
-      try {
-        // Deferred where tool search is available: Claude sees the name and
-        // loads the description when it looks for such a tool.
-        await $.tool.register({ name: STATUS_TOOL, description: STATUS_DESCRIPTION, inputSchema: STATUS_SCHEMA, isDeferred: true })
-      } catch {
-        // the line and the rest work without the tool
-      }
-    }
+    if (config.claudeReads) await registerStatus($)
     for (const [name, description] of [
-      [COMMAND, 'Open the g-line pane (settings, Pulse, details); `card` for a share card, `pulse` toggles headlines, `off` hides it, `on` shows it'],
+      [COMMAND, HELP],
       [OLD_COMMAND, 'Renamed to /g-line; this name works until the next release'],
     ] as const) {
       try {
-        await $.command.register({ name, description, argumentHint: '[card|pulse|off|on]' })
+        await $.command.register({ name, description, argumentHint: '[news|open|settings|set <name> on|off|reset|card|off|on]' })
       } catch {
         // the line and toasts work without the command
       }
@@ -894,6 +1052,7 @@ export const register: Register = (on, options) => {
     void refreshPulse($)
     await resync($)
     $.clock.every(TICK_MS, () => void heartbeat($))
+    $.clock.every(PULSE_EVERY_MS, () => void turnPulse($))
     return next(e)
   })
 
@@ -971,6 +1130,7 @@ export const register: Register = (on, options) => {
 
   // Claude's own read of the budget: the `glance` tool's answer.
   on('tool.call', { tool: /^mcp__g-line__status$/ }, async ($, e) => {
+    if (!config.claudeReads) return { result: STATUS_OFF, text: STATUS_OFF }
     const seconds = await nowSeconds($)
     const s = await read($, snap)
     const c = await read($, contextAtom)
@@ -1099,18 +1259,22 @@ export const register: Register = (on, options) => {
       const d = deck(payload(s, seconds, ttl), optionsAt(seconds),
         { now: tailRoom(columns, e.props.hint), next: nextRoom(columns) }, extra)
       const engine = await next({ ...e, props: withText(e.props, joined(d.now), false) })
-      if (!d.next.length) return engine
+      const pulse = await pulseLine($, e, columns)
+      if (!d.next.length && !pulse) return engine
       const { Box, Text } = $.ui.resolve(e)
       return (
         <Box flexDirection="column">
           {engine}
-          <Box flexDirection="row">
-            {d.next.map((part, index) => [
-              index ? <Text key={`s${index}`} dimColor>{' · '}</Text> : null,
-              <Text key={`p${index}`} wrap="truncate-end" dimColor={!part.tone || part.tone === 'dim'}
-                bold={part.tone === 'bad'} color={part.tone ? COLORS[part.tone] : undefined}>{part.text}</Text>,
-            ])}
-          </Box>
+          {d.next.length ? (
+            <Box flexDirection="row">
+              {d.next.map((part, index) => [
+                index ? <Text key={`s${index}`} dimColor>{' · '}</Text> : null,
+                <Text key={`p${index}`} wrap="truncate-end" dimColor={!part.tone || part.tone === 'dim'}
+                  bold={part.tone === 'bad'} color={part.tone ? COLORS[part.tone] : undefined}>{part.text}</Text>,
+              ])}
+            </Box>
+          ) : null}
+          {pulse}
         </Box>
       )
     }
@@ -1121,8 +1285,16 @@ export const register: Register = (on, options) => {
     // With a budget set, today's spend joins the line once it nears the budget.
     const trailing = config.budget && extras.today && extras.today.tone !== 'dim' && !layoutHas('today') ? [extras.today] : []
     const text = joined(inline(payload(s, seconds, ttl), optionsAt(seconds), s.account, room, extras, trailing))
-    if (!text) return next(e)
-    return next({ ...e, props: withText(e.props, text, config.shortHints) })
+    const engine = await next(text ? { ...e, props: withText(e.props, text, config.shortHints) } : e)
+    const pulse = await pulseLine($, e, e.viewport?.columns)
+    if (!pulse) return engine
+    const { Box } = $.ui.resolve(e)
+    return (
+      <Box flexDirection="column">
+        {engine}
+        {pulse}
+      </Box>
+    )
   })
 
   // The footer's mode labels: agents at work and when the context compacts,
@@ -1205,7 +1377,7 @@ export const register: Register = (on, options) => {
     await read($, tick)
     const seconds = await nowSeconds($)
     const { Box, Text, Button } = $.ui.resolve(e)
-    const show = (mode: 'details' | 'card') => () => void update($, view, () => mode)
+    const show = (mode: 'details' | 'card' | 'settings' | 'news') => () => void update($, view, () => mode)
     if ((await read($, view)) === 'card') {
       const lines = await cardText($, seconds)
       const copy = async () => {
@@ -1227,26 +1399,129 @@ export const register: Register = (on, options) => {
         </Box>
       )
     }
+    if ((await read($, view)) === 'news') {
+      const feed = await read($, pulseAtom)
+      const items = newestFirst(feed?.items ?? [])
+      const now = await nowMs($)
+      const { Link } = $.ui.resolve(e)
+      const at = Math.min(await read($, newsAt), Math.max(0, items.length - 1))
+      const columns = Math.max(20, (e.props.bodyColumns ?? 80) - 2)
+      const rows = e.props.scroll?.bodyRows ?? 30
+      const picked = items[at]
+      // The picked item in full takes its wrapped text's rows and two more; each other takes three.
+      const pickedRows = 2 + Math.ceil([...(picked?.text ?? picked?.title ?? '')].length / columns)
+      const [start, end] = pageOf(items.length, at, Math.max(3, 1 + Math.floor((rows - 6 - pickedRows) / 3)))
+      const fresh = items.filter(item => isNew(item)).length
+      const move = (to: number) => () => void update($, newsAt, () => Math.max(0, Math.min(items.length - 1, to)))
+      const selected = picked
+      const updated = feed?.generatedAt ? Date.parse(feed.generatedAt) : Number.NaN
+      const header = [
+        items.length ? (end - start < items.length ? `${start + 1}–${end} of ${items.length}, newest first` : `${items.length} items, newest first`) : 'Nothing in the feed yet',
+        Number.isFinite(updated) ? `updated ${ageOf({ title: '', url: '', source: '', at: feed?.generatedAt }, now)} ago` : '',
+        fresh ? `${fresh} new since you last looked` : '',
+      ].filter(Boolean).join(' · ')
+      return (
+        <Box flexDirection="column">
+          <Text dimColor>{clean(header, columns)}</Text>
+          <Box flexDirection="row" gap={2} marginBottom={1}>
+            <Button key="open" label="Open" hotkey="o" plain onPress={() => void (selected && openLink($, selected.url, e.surface))} />
+            <Button key="next" plain label="Next" hotkey="j" onPress={move(at + 1)} />
+            <Button key="previous" plain label="Previous" hotkey="k" onPress={move(at - 1)} />
+            <Button key="copy" plain label="Copy link" hotkey="c" onPress={async () => {
+              if (!selected) return
+              const copied = await $.ui.copy({ text: selected.url, surface: e.surface })
+              $.ui.toast(copied.isCopied ? 'Link copied.' : selected.url, { timeoutMs: 4000 })
+            }} />
+            <Button key="refresh" plain label="Refresh" hotkey="r" onPress={() => void refreshPulse($, true)} />
+            <Button key="close" plain label="Close" hotkey="q" onPress={() => void $.ui.close({ id: PANE })} />
+          </Box>
+          {items.slice(start, end).map((item, offset) => {
+            const index = start + offset
+            const chosen = index === at
+            const who = item.author && item.source.startsWith('𝕏 @') ? `𝕏 ${item.author} ${item.source.replace(/^𝕏 /, '')}` : item.source
+            const meta = [who, ageOf(item, now), item.likes !== undefined ? `♥ ${countOf(item.likes)}` : ''].filter(Boolean).join(' · ')
+            return (
+              <Box key={`news-${index}`} flexDirection="column" marginTop={offset ? 1 : 0}>
+                <Button key={`item-${index}`} plain onPress={() => void (chosen ? openLink($, item.url, e.surface) : move(index)())}>
+                  <Text color={chosen ? 'claude' : undefined}>{chosen ? '▸ ' : '  '}</Text>
+                  <Text bold={chosen}>{clean(chosen ? meta : item.title, columns - (isNew(item) ? 6 : 2))}</Text>
+                  {isNew(item) ? <Text color="claude">{' new'}</Text> : null}
+                </Button>
+                {chosen ? (
+                  <Box flexDirection="column" paddingLeft={2}>
+                    <Text>{item.text ?? item.title}</Text>
+                    <Link href={item.url} label={item.url.replace(/^https:\/\/(www\.)?/, '')} />
+                  </Box>
+                ) : (
+                  <Box paddingLeft={2}><Text dimColor>{clean(meta, columns - 2)}</Text></Box>
+                )}
+              </Box>
+            )
+          })}
+        </Box>
+      )
+    }
+    if ((await read($, view)) === 'settings') {
+      // A narrow pane keeps each setting to one row: its value and where it comes from.
+      const wide = (e.props.bodyColumns ?? 0) >= 110
+      // Room to breathe between groups when the pane is tall enough for every row and the gaps.
+      const airy = (e.props.scroll?.bodyRows ?? 0) >= SETTINGS.length + GROUPS.length * 2 + 5
+      const pad = Math.max(...SETTINGS.map(setting => setting.label.length))
+      const width = Math.max(...SETTINGS.map(setting => said(setting, config).length)) + 2
+      const button = (setting: Setting) => {
+        const value = said(setting, config)
+        const tone = value === 'on' ? 'success' : undefined
+        return (
+          <Box key={`row-${setting.key}`} flexDirection="row">
+            <Button key={`set-${setting.key}`} plain label={setting.label.padEnd(pad)} hotkey={setting.hotkey}
+              onPress={() => void setSetting($, setting, nextValue(setting, config))} />
+            <Text color={tone} dimColor={value === 'off'}>{`  ${value.padEnd(width)}`}</Text>
+            <Text dimColor wrap="truncate-end">{`${changed(setting, config) ? '• ' : '  '}${originOf(setting, layers)}${wide ? ` · ${setting.help}` : ''}`}</Text>
+          </Box>
+        )
+      }
+      return (
+        <Box flexDirection="column">
+          <Text dimColor>{clean('A key flips a setting now, in every open session. • = not the default', Math.max(20, (e.props.bodyColumns ?? 80) - 1))}</Text>
+          {GROUPS.map(group => (
+            <Box key={`group-${group}`} flexDirection="column" marginTop={airy ? 1 : 0}>
+              <Text bold>{group}</Text>
+              {SETTINGS.filter(setting => setting.group === group).map(button)}
+            </Box>
+          ))}
+          <Box flexDirection="row" gap={2} marginTop={airy ? 1 : 0}>
+            <Button key="details" plain label="Back" hotkey="d" onPress={show('details')} />
+            <Button key="reset" plain label="Clear my choices" hotkey="z"
+              onPress={async () => {
+                await keep($, {})
+                $.ui.toast('Choices made with /g-line cleared: your config files, /config and the defaults decide again.', { timeoutMs: 8000 })
+              }} />
+            <Button key="close" plain label="Close" hotkey="q" onPress={() => void $.ui.close({ id: PANE })} />
+          </Box>
+          <Text dimColor>Or type /g-line set pulse on. config.json is ~/.config/g-line/config.json, read again within 15 s of an edit.</Text>
+        </Box>
+      )
+    }
     const rows = await detailRows($, seconds, e.props.bodyColumns)
     const account = (await read($, snap)).account
     const feed = config.pulse ? await read($, pulseAtom) : null
     const now = await nowMs($)
     const { Link } = $.ui.resolve(e)
-    const layoutName = config.lines === 2 ? 'two lines' : config.lines === 1 ? 'one line' : 'receipts only'
-    const nextLines = config.lines === 2 ? 1 : config.lines === 1 ? 0 : 2
-    const notifyOn = config.notify.cache || config.notify.reset
-    const receiptName = config.receipt === 'adaptive' ? 'adaptive' : config.receipt.length ? 'fixed' : 'off'
-    const nextReceipt = receiptName === 'adaptive' ? 'short' : receiptName === 'fixed' ? 'off' : 'adaptive'
     return (
       <Box flexDirection="column">
-        <Text bold>Settings</Text>
-        <Box flexDirection="row" gap={1}>
-          <Button key="set-lines" label={`Layout: ${layoutName}`} hotkey="l" onPress={() => void setSetting($, 'lines', nextLines)} />
-          <Button key="set-notify" label={`Notifications: ${notifyOn ? 'on' : 'off'}`} hotkey="n" onPress={() => void setSetting($, 'notify', !notifyOn)} />
-          <Button key="set-pulse" label={`Pulse: ${config.pulse ? 'on' : 'off'}`} hotkey="p" onPress={() => void setSetting($, 'pulse', !config.pulse)} />
-          <Button key="set-receipt" label={`Receipt: ${receiptName}`} hotkey="r" onPress={() => void setSetting($, 'receipt', nextReceipt)} />
+        <Box flexDirection="row" gap={2}>
+          {QUICK.map(setting => (
+            <Button key={`set-${setting.key}`} plain label={`${setting.label} ${said(setting, config)}`} hotkey={setting.hotkey}
+              onPress={() => void setSetting($, setting, nextValue(setting, config))} />
+          ))}
+          <Button key="settings" plain label="All settings" hotkey="s" onPress={show('settings')} />
         </Box>
-        {feed && feed.items.length ? <Text key="h-pulse" bold>Pulse: AI dev headlines from g-line's feed</Text> : null}
+        {feed && feed.items.length ? (
+          <Box key="h-pulse" flexDirection="row" gap={1}>
+            <Text bold>Pulse</Text>
+            <Button key="news" plain label={`Read all ${feed.items.length}`} hotkey="n" onPress={() => void openNews($)} />
+          </Box>
+        ) : null}
         {feed ? feed.items.slice(0, 5).map((item, index) => (
           <Box key={`pulse-${index}`} flexDirection="row" gap={1}>
             <Button key={`pulse-copy-${index}`} label="copy" hotkey={String(index + 1)} plain

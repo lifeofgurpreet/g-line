@@ -17,8 +17,12 @@ export const PULSE_URL = 'https://raw.githubusercontent.com/lifeofgurpreet/g-lin
 export const PULSE_TTL_MS = 45 * 60_000
 /** How long a turn runs before the spinner starts showing headlines. */
 export const PULSE_AFTER_MS = 15_000
-/** How long each headline stays on the spinner. */
+/** How long each headline stays on the spinner and on Pulse's row. */
 export const PULSE_EVERY_MS = 8_000
+/** The longest text the reader shows for one item. */
+export const TEXT_MAX = 600
+/** How many items the reader shows at once. */
+export const READER_PAGE = 5
 
 // CSI and OSC escape sequences, then any C0/C1 control, then bidi and zero-width controls.
 const ESCAPES = /\u001b\[[0-?]*[ -/]*[@-~]|\u001b\][^\u0007\u001b]*(?:\u0007|\u001b\\)|\u001b[@-_]/g
@@ -45,7 +49,7 @@ export function safeUrl(value: unknown): string | undefined {
 }
 
 /** The feed's items, cleaned; anything malformed is left out. At most `limit`. */
-export function parseFeed(raw: string, fetchedAt: number, limit = 8): PulseFeed | undefined {
+export function parseFeed(raw: string, fetchedAt: number, limit = 40): PulseFeed | undefined {
   let data: unknown
   try {
     data = JSON.parse(raw)
@@ -63,7 +67,11 @@ export function parseFeed(raw: string, fetchedAt: number, limit = 8): PulseFeed 
     const url = safeUrl(e.url)
     const source = clean(e.source, 28)
     if (!title || !url || !source) continue
-    items.push({ title, url, source, at: clean(e.published_at, 32) || undefined })
+    const text = clean(e.text, TEXT_MAX)
+    const likes = typeof e.likes === 'number' && Number.isFinite(e.likes) && e.likes >= 0 ? Math.floor(e.likes) : undefined
+    const author = clean(e.author_name, 40)
+    items.push({ title, url, source, at: clean(e.published_at, 32) || undefined,
+      ...(text && text !== title ? { text } : {}), ...(likes !== undefined ? { likes } : {}), ...(author ? { author } : {}) })
     if (items.length >= limit) break
   }
   return { fetchedAt, generatedAt: clean(d.generated_at, 32) || undefined, items }
@@ -91,4 +99,56 @@ export function tickerText(feed: PulseFeed | null | undefined, elapsedMs: number
   const tail = ` (${item.source})`
   if (room - width(tail) >= 24) return `${clean(item.title, room - width(tail))}${tail}`
   return clean(item.title, room)
+}
+
+/** An item's age: `40m`, `3h`, `2d`; nothing when the feed gave no time. */
+export function ageOf(item: PulseItem, nowMs: number): string {
+  const at = item.at ? Date.parse(item.at) : Number.NaN
+  if (!Number.isFinite(at)) return ''
+  const minutes = Math.max(1, Math.floor((nowMs - at) / 60_000))
+  return minutes < 60 ? `${minutes}m` : minutes < 1440 ? `${Math.floor(minutes / 60)}h` : `${Math.floor(minutes / 1440)}d`
+}
+
+/** `1.2k` likes and the like: a count a glance can take in. */
+export function countOf(n: number): string {
+  if (n < 1000) return String(n)
+  if (n < 10_000) return `${(n / 1000).toFixed(1).replace(/\.0$/, '')}k`
+  return n < 1_000_000 ? `${Math.round(n / 1000)}k` : `${(n / 1_000_000).toFixed(1).replace(/\.0$/, '')}M`
+}
+
+/**
+ * Pulse's row under the prompt: who, how long ago, the headline, and a dim
+ * pointer to the reader when there is room. Each part is plain text: the
+ * headline is drawn as a link by the caller. Nothing when too narrow.
+ */
+export function pulseRow(item: PulseItem | undefined, room: number, nowMs: number):
+  { lead: string; title: string; tail: string } | undefined {
+  if (!item || room < 30) return undefined
+  const age = ageOf(item, nowMs)
+  const lead = `${item.source}${age ? ` · ${age}` : ''}`
+  const tailText = ' · /g-line news'
+  const tail = room - width(lead) - 2 - width(tailText) >= 40 ? tailText : ''
+  const titleRoom = room - width(lead) - 2 - width(tail)
+  if (titleRoom < 24) return { lead: '', title: clean(item.title, room), tail: '' }
+  return { lead, title: clean(item.title, titleRoom), tail }
+}
+
+/** The items the reader shows around the selected one: `[start, end)`, at most `size`. */
+export function pageOf(count: number, selected: number, size = READER_PAGE): [number, number] {
+  if (count <= size) return [0, count]
+  const start = Math.min(Math.max(0, selected - Math.floor(size / 2)), count - size)
+  return [start, start + size]
+}
+
+/** The feed's items newest first; items without a time keep their order after the dated ones. */
+export function newestFirst(items: readonly PulseItem[]): PulseItem[] {
+  const time = (item: PulseItem) => (item.at ? Date.parse(item.at) : Number.NaN)
+  return items.map((item, index) => ({ item, index })).sort((a, b) => {
+    const ta = time(a.item)
+    const tb = time(b.item)
+    if (Number.isFinite(ta) && Number.isFinite(tb)) return tb - ta || a.index - b.index
+    if (Number.isFinite(ta)) return -1
+    if (Number.isFinite(tb)) return 1
+    return a.index - b.index
+  }).map(entry => entry.item)
 }

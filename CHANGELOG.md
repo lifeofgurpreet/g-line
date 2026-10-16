@@ -1,5 +1,33 @@
 # Changelog
 
+## 0.6.0 (2026-10-16): a settings manager, a news reader, and Pulse you can see
+
+- **`/g-line settings`.** Every setting on one screen: its key, its value, where the value
+  comes from (`default`, `config.json`, `/config`, `your choice`) and a `•` where it differs
+  from a fresh install. One key flips it. `/g-line set <name> on|off`, `/g-line toggle <name>`,
+  `/g-line reset [name]` and `/g-line set all on` do the same from the prompt.
+- **Everything applies at once, everywhere.** A change made in the pane or by command takes
+  effect in the running session and reaches every other open session within 15 seconds, and
+  so does an edit to `~/.config/g-line/config.json`: no restart. Turning on `claude_reads`
+  registers the `status` tool for your next message; turning it off makes the tool answer
+  that it's off (Claude Code can't take a tool back mid-session, so it's gone from the next
+  session).
+- **Pulse under the prompt.** With Pulse on, a dim row under line 2 shows one headline at a
+  time, `𝕏 @handle · 2h:` first, moving on every 8 seconds, and the headline is a link
+  (cmd-click). Turning Pulse on shows it within seconds. `/g-line open` opens the one showing.
+- **`/g-line news`, the reader.** Every item, newest first, the picked one in full with its
+  author, age, likes and link; `j`/`k`, `o`, `c`, `r`, `q`; items since your last look marked
+  new. The feed's new optional `text`, `likes` and `author_name` fields are read when present
+  (0.5 readers ignore them, and 0.6 falls back to the title).
+- **Borrowed, with thanks.** One table drives every setting, its toggle, its command name and
+  its docs, like starship's per-module config; `/g-line toggle` is `starship toggle`. Showing
+  where each value comes from is `git config --show-origin`; the `•` and per-setting reset are
+  VS Code's "Modified" marker and "Reset Setting". Instant apply and the line itself as the
+  preview come from ccstatusline's and p10k's live configurators, without their wizard; the
+  hot reload of the config file is starship reading its config on every prompt. The reader's
+  `j`/`k`/`o`/`r`/`q`, the expanded picked item and "new since last look" are newsboat's and
+  circumflex's, in a pane that sizes itself to the room it gets.
+
 ## 0.5.2 (2026-10-16): posts on 𝕏 from the last hours, not the last week
 
 - **Fresh posts on 𝕏.** Pulse now finds posts through the links Techmeme's front page and AI

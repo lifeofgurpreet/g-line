@@ -24,13 +24,25 @@ type World = {
 }
 
 /** Claude Code beneath the mod, with what each test needs to steer it. */
-function world(on: On, stored: Record<string, unknown> = {}): World {
+function world(on: On, stored: Record<string, unknown> = {}, kept?: Record<string, unknown>): World {
   const w: World = {
     clock: mock.clock(on, { now: NOW * 1000 }), toasts: [], notes: [], suggested: [], copied: [],
     usage: { cost: 1, tokens: 600_000, percent: 60, limits: [] }, agents: [], notifySent: true, toolError: false, writes: [],
   }
   mock.env(on, { HOME: '/home/someone' })
-  mock.store(on, stored)
+  if (kept) {
+    // A store the test reads back: what the mod saved, as it saved it.
+    on('store.get', ($, e) => ({ value: kept[e.key] }) as never)
+    on('store.set', ($, e) => {
+      kept[e.key] = e.value
+      return { value: undefined } as never
+    })
+    on('store.delete', ($, e) => {
+      delete kept[(e as unknown as { key: string }).key]
+      return { value: undefined } as never
+    })
+    on('store.keys', () => ({ value: Object.keys(kept) }) as never)
+  } else mock.store(on, stored)
   on('tool.call', () => (w.toolError
     ? { isError: true, result: 'old_string not found', text: 'old_string not found' }
     : { result: 'ok', text: 'ok' }) as never)
@@ -502,4 +514,183 @@ test('Claude can read the figures only when claude_reads is on, as a JSON snapsh
   expect(body.schema).toBe(1)
   expect(body.context.scope).toBe('main_session')
   expect(body.limits).toBeUndefined()
+})
+
+test('the settings view lists every setting with its origin; a key press applies it now and keeps it', { timeoutMs: 30_000 }, async ($, on) => {
+  const store: Record<string, unknown> = {}
+  const w = world(on, {}, store)
+  w.config = { git: true }
+  await start($)
+  await $.command.run({ command: 'g-line', args: 'settings' } as never)
+  const pane = await $.ui.mount({ plugin: 'g-line', surface: 'terminal', component: 'Pane', requestId: 'g-line',
+    props: { bodyColumns: 130 } as never, viewport: { columns: 160, rows: 60 } })
+  expect(await pane.find({ type: 'Text', text: /^• config\.json · the branch on line 2$/ })).toBeDefined()
+  expect(await pane.find({ type: 'Text', text: /^  default · a notification when a background agent ends$/ })).toBeDefined()
+  await pane.press({ key: 'set-notify.agents' })
+  await w.clock.settle()
+  expect(await pane.find({ type: 'Text', text: /^• your choice · a notification when a background agent ends$/ })).toBeDefined()
+  // Kept for later sessions, in the same spelling as config.json.
+  expect(store.settings).toEqual({ notify: { agents: true } })
+  await pane.unmount()
+})
+
+test('/g-line set changes a setting at once and says so; reset hands it back to the files', { timeoutMs: 30_000 }, async ($, on) => {
+  const w = world(on)
+  w.config = { spinner: true }
+  const suffixes: string[] = []
+  on('ui.render', { component: 'Spinner' }, ($, e) => {
+    suffixes.push(e.props.suffix)
+    const { Text } = $.ui.resolve(e)
+    return <Text>x</Text>
+  })
+  const spin = async () => {
+    const m = await $.ui.mount({ plugin: 'g-line', surface: 'terminal', component: 'Spinner', requestId: 'main',
+      props: { word: 'Sauteing', message: null, suffix: '…', mode: 'thinking' }, viewport: { columns: 160, rows: 40 } })
+    const last = suffixes[suffixes.length - 1] ?? ''
+    await m.unmount()
+    return last
+  }
+  await start($)
+  await $.turn.start({ text: 'go', turnId: 't1' })
+  await $.tool.call({ tool: 'Read', file_path: '/work/a.ts' } as never)
+  expect(await spin()).toMatch(/1 tool/)
+  expect(await $.command.run({ command: 'g-line', args: 'set spinner off' } as never)).toEqual({})
+  expect(w.toasts[w.toasts.length - 1]).toBe('Spinner extras: off.')
+  expect(await spin()).not.toMatch(/tool/)
+  await $.command.run({ command: 'g-line', args: 'reset spinner' } as never)
+  expect(w.toasts[w.toasts.length - 1]).toBe('Spinner extras: on, from config.json.')
+  expect(await spin()).toMatch(/1 tool/)
+  await $.command.run({ command: 'g-line', args: 'set warp on' } as never)
+  expect(w.toasts[w.toasts.length - 1]).toMatch(/^g-line has no setting "warp"/)
+})
+
+test('an edit to ~/.config/g-line/config.json reaches a running session on the beat', { timeoutMs: 30_000 }, async ($, on) => {
+  const w = world(on)
+  let mtime = 1
+  on('fs.stat', () => ({ value: { kind: 'file', size: 10, mtimeMs: mtime, isLink: false } }) as never)
+  const fetched: string[] = []
+  on('http.fetch', ($, e) => {
+    fetched.push(e.url)
+    return { value: { status: 200, ok: true, headers: {}, text: '{"schema":1,"items":[]}' } } as never
+  })
+  await start($)
+  await w.clock.settle()
+  expect(fetched).toEqual([])
+  w.config = { pulse: true }
+  mtime = 2
+  await w.clock.advance(31_000)
+  await w.clock.settle()
+  expect(fetched).toEqual(['https://raw.githubusercontent.com/lifeofgurpreet/g-line/pulse/pulse.json'])
+})
+
+test('claude_reads turned on mid-session registers the status tool; turned off, the tool says so', { timeoutMs: 30_000 }, async ($, on) => {
+  const w = world(on)
+  const registered: string[] = []
+  on('tool.register', ($, e) => {
+    registered.push(e.name)
+    return { value: { tool: `mcp__g-line__${e.name}` } } as never
+  })
+  await start($)
+  expect(registered).toEqual([])
+  await $.command.run({ command: 'g-line', args: 'set claude_reads on' } as never)
+  expect(registered).toEqual(['status'])
+  expect(w.toasts[w.toasts.length - 1]).toMatch(/^Claude reads: on\. Claude can call/)
+  await $.command.run({ command: 'g-line', args: 'set status off' } as never)
+  const answer = await $.tool.call({ tool: 'mcp__g-line__status' } as never) as unknown as { text: string }
+  expect(JSON.parse(answer.text).state).toBe('disabled')
+})
+
+test('/g-line set all on turns every toggle on; reset clears the choices', { timeoutMs: 30_000 }, async ($, on) => {
+  const store: Record<string, unknown> = {}
+  const w = world(on, {}, store)
+  on('tool.register', ($, e) => ({ value: { tool: `mcp__g-line__${e.name}` } }) as never)
+  on('http.fetch', () => ({ value: { status: 200, ok: true, headers: {}, text: '{"schema":1,"items":[]}' } }) as never)
+  await start($)
+  await $.command.run({ command: 'g-line', args: 'set all on' } as never)
+  expect(store.settings).toEqual({ spinner: true, footer_labels: true, short_hints: true, git: true, toasts: true,
+    notify: { cache: true, reset: true, long_turn: true, agents: true }, pulse: true, coach: true, claude_reads: true, export_state: true })
+  await $.command.run({ command: 'g-line', args: 'reset' } as never)
+  expect(store.settings).toEqual({})
+  expect(w.toasts[w.toasts.length - 1]).toMatch(/^Choices made with \/g-line cleared/)
+})
+
+const ESC = String.fromCharCode(27)
+const BEL = String.fromCharCode(7)
+const FEED = { schema: 1, generated_at: ISO(NOW - 3600), items: [
+  { title: 'Claude Dashboards are in beta', url: 'https://x.com/claudeai/status/1', source: '𝕏 @claudeai', published_at: ISO(NOW - 7200),
+    text: `Claude Dashboards are in beta today. ${ESC}]8;;https://evil.example${BEL}Build${ESC}]8;;${BEL} a live view of anything.`,
+    likes: 4200, author_name: 'Claude' },
+  { title: 'Claude Code 2.1.301 released', url: 'https://github.com/anthropics/claude-code/releases', source: 'Claude Code releases',
+    published_at: ISO(NOW - 4 * 3600) },
+  { title: 'Older news', url: 'https://example.com/old', source: 'Anthropic', published_at: ISO(NOW - 2 * 86_400) },
+] }
+
+/** The feed's server, and the engine's hint line for Pulse's row to sit under. */
+function feedServer(on: On) {
+  const fetched: string[] = []
+  on('http.fetch', ($, e) => {
+    fetched.push(e.url)
+    return { value: { status: 200, ok: true, headers: {}, text: JSON.stringify(FEED) } } as never
+  })
+  on('ui.render', { component: 'PromptHint' }, ($, e) => {
+    const { Text } = $.ui.resolve(e)
+    return <Text>{e.props.hint}</Text>
+  })
+  return fetched
+}
+
+const HINT_PROPS = { isDraft: false, isWorking: false, hint: '? for shortcuts' }
+
+test('turned on, Pulse shows a headline under the prompt at once: who, how old, and the headline as a link', { timeoutMs: 30_000 }, async ($, on) => {
+  const w = world(on)
+  feedServer(on)
+  await start($)
+  const hint = async (columns: number) => $.ui.mount({ plugin: 'g-line', surface: 'terminal', component: 'PromptHint',
+    props: HINT_PROPS as never, viewport: { columns, rows: 40 } })
+  let ui = await hint(160)
+  expect(await ui.find({ type: 'Link' })).toBeUndefined()
+  await ui.unmount()
+  await $.command.run({ command: 'g-line', args: 'set pulse on' } as never)
+  await w.clock.settle()
+  ui = await hint(160)
+  expect(await ui.find({ type: 'Text', text: '𝕏 @claudeai · 2h: ' })).toBeDefined()
+  expect(await ui.find({ type: 'Link', text: 'Claude Dashboards are in beta' })).toBeDefined()
+  expect(await ui.find({ type: 'Text', text: ' · /g-line news' })).toBeDefined()
+  await ui.unmount()
+  // Every 8 seconds, the next item.
+  await w.clock.advance(8_000)
+  ui = await hint(160)
+  expect(await ui.find({ type: 'Link', text: 'Claude Code 2.1.301 released' })).toBeDefined()
+  await ui.unmount()
+  // Too narrow for a headline worth reading: no row.
+  ui = await hint(30)
+  expect(await ui.find({ type: 'Link' })).toBeUndefined()
+  await ui.unmount()
+  // `/g-line open` opens the one shown, or copies it where no browser can open.
+  await $.command.run({ command: 'g-line', args: 'open' } as never)
+  expect(w.toasts[w.toasts.length - 1]).toMatch(/^Opened github\.com in your browser\.$/)
+})
+
+test('/g-line news lists every item newest first, the picked one in full; j moves on', { timeoutMs: 30_000 }, async ($, on) => {
+  const w = world(on)
+  w.config = { pulse: true }
+  feedServer(on)
+  await start($)
+  await w.clock.settle()
+  expect(await $.command.run({ command: 'g-line', args: 'news' } as never)).toEqual({})
+  const pane = await $.ui.mount({ plugin: 'g-line', surface: 'terminal', component: 'Pane', requestId: 'g-line',
+    props: { bodyColumns: 90 } as never, viewport: { columns: 160, rows: 60 } })
+  expect(await pane.find({ type: 'Text', text: '3 items, newest first · updated 1h ago' })).toBeDefined()
+  // The picked item: who and when, then its whole text with the feed's escapes stripped, then its link.
+  expect(await pane.find({ type: 'Text', text: '𝕏 Claude @claudeai · 2h · ♥ 4.2k' })).toBeDefined()
+  expect(await pane.find({ type: 'Text', text: 'Claude Dashboards are in beta today. Build a live view of anything.' })).toBeDefined()
+  expect(await pane.find({ type: 'Text', text: new RegExp(ESC) })).toBeUndefined()
+  expect(await pane.find({ type: 'Link', text: 'x.com/claudeai/status/1' })).toBeDefined()
+  // The others: the headline, then who and when.
+  expect(await pane.find({ type: 'Text', text: 'Older news' })).toBeDefined()
+  expect(await pane.find({ type: 'Text', text: 'Anthropic · 2d' })).toBeDefined()
+  await pane.press({ key: 'next' })
+  expect(await pane.find({ type: 'Text', text: 'Claude Code releases · 4h' })).toBeDefined()
+  expect(await pane.find({ type: 'Text', text: 'Claude Code 2.1.301 released' })).toBeDefined()
+  await pane.unmount()
 })
