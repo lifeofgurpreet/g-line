@@ -1,13 +1,13 @@
 {
  "schema": 1,
- "generated_at": "2026-10-17T12:11:24Z",
+ "generated_at": "2026-10-17T12:43:21Z",
  "items": [
   {
-   "title": "Sources: Anthropic pitched its own AI safety bill to US lawmakers; the bill would limit the circums…",
-   "url": "https://www.politico.com/news/2026/10/16/anthropic-ai-safety-01124654",
-   "source": "Owen Dahlkamp / Politico",
-   "published_at": "2026-10-16T23:01:32Z",
-   "text": "Sources: Anthropic pitched its own AI safety bill to US lawmakers; the bill would limit the circumstances in which the government could block a model's release. Representatives for the artificial intelligence giant Anthropic have quietly pitched Capitol Hill lawmakers on a draft bill …",
+   "title": "Anthropic report on how AI is changing employment at the startup: decline of entry-level technical…",
+   "url": "https://www.anthropic.com/research/employment-at-anthropic",
+   "source": "Anthropic",
+   "published_at": "2026-10-17T01:45:55Z",
+   "text": "Anthropic report on how AI is changing employment at the startup: decline of entry-level technical hiring, productivity boom across departments, and more. How has AI restructured work and employment at Anthropic? As a company at the frontier of AI adoption, Anthropic could be a leading indicator …",
    "via": "Techmeme"
   },
   {
@@ -17,7 +17,7 @@
    "published_at": "2026-10-16T23:26:59Z",
    "text": "after an exciting week of launches (muse wonder [full] & muse spark open), i want to write a note of appreciation to the amazing research teams at meta superintelligence labs on reaching such a special milestone ♥️ we started MSL and TBD a little more than a year ago and set a…",
    "author_name": "Alexandr Wang",
-   "likes": 3090,
+   "likes": 3134,
    "story": "A profile of Alexandr Wang, who sources say is “an operator”, had “all” of Zuckerberg's support during Meta's AI revamp, and is being touted as his successor"
   },
   {
@@ -28,21 +28,21 @@
    "text": "Added CLAUDE_CODE_AUTO_MODE_MODEL to choose the model the client-side auto mode classifier uses; it does not change the model for server-side auto mode · Added an Idle compaction row to /config for turning idle compaction off or back on; the notices shown after an idle compaction now say how to turn it off · Added a notice to /design-sync and /design-login that standalone Claude Design (claude.ai/design) closes by December 14, 2026 · Fixed a \"Prompt is too long\" error when stopping a turn while the conversation was being compacted"
   },
   {
-   "title": "why would this not be >95%? alphafold made a nobel prize winning discovery in 2018. openai made sev…",
-   "url": "https://x.com/tszzl/status/2111215889094001017",
-   "source": "𝕏 @tszzl",
-   "published_at": "2026-10-16T22:01:07Z",
-   "text": "why would this not be >95%? alphafold made a nobel prize winning discovery in 2018. openai made several fields medal level discoveries just this year",
-   "author_name": "roon",
-   "likes": 2875,
-   "story": "Anthropic report on how AI is changing employment at the startup: decline of entry-level technical hiring, productivity boom across departments, and more"
+   "title": "INSANE. An internal Anthropic research model's chain of thought after cracking the 26-year-old NSA…",
+   "url": "https://x.com/choblin29/status/2111189885168112017",
+   "source": "𝕏 @choblin29",
+   "published_at": "2026-10-16T20:17:47Z",
+   "text": "INSANE. An internal Anthropic research model's chain of thought after cracking the 26-year-old NSA elliptic curve seed mystery in under 30 minutes: 'Hmm wait. Let me be skeptical: am I in some sort of simulated/test environment? ... All top bits clear - 20 bits, chance 1e-6. So…",
+   "author_name": "Choblin",
+   "likes": 9809,
+   "story": "Anthropic says Claude traced NIST's ECDSA curve seeds to a pseudorandom number generator, challenging decades-old suspicions of an NSA backdoor in the algorithm"
   },
   {
-   "title": "Anthropic says Claude traced NIST's ECDSA curve seeds to a pseudorandom number generator, challengi…",
-   "url": "https://www.anthropic.com/research/ecdsa-curve-origins",
-   "source": "Anthropic",
-   "published_at": "2026-10-16T20:25:54Z",
-   "text": "Anthropic says Claude traced NIST's ECDSA curve seeds to a pseudorandom number generator, challenging decades-old suspicions of an NSA backdoor in the algorithm. “It's just timestamps”: the decades-old mystery of the origins of one of the most popular cryptographic standards has been explained.",
+   "title": "Sources: Anthropic pitched its own AI safety bill to US lawmakers; the bill would limit the circums…",
+   "url": "https://www.politico.com/news/2026/10/16/anthropic-ai-safety-01124654",
+   "source": "Owen Dahlkamp / Politico",
+   "published_at": "2026-10-16T23:01:32Z",
+   "text": "Sources: Anthropic pitched its own AI safety bill to US lawmakers; the bill would limit the circumstances in which the government could block a model's release. Representatives for the artificial intelligence giant Anthropic have quietly pitched Capitol Hill lawmakers on a draft bill …",
    "via": "Techmeme"
   },
   {
@@ -50,8 +50,8 @@
    "url": "https://openrouter.ai/deepseek/deepseek-v4.1-flash-1017",
    "source": "Hacker News",
    "published_at": "2026-10-17T08:37:46Z",
-   "text": "244 points and 80 comments on Hacker News.",
-   "points": 244,
+   "text": "272 points and 100 comments on Hacker News.",
+   "points": 272,
    "discussion": "https://news.ycombinator.com/item?id=50129121"
   },
   {
@@ -61,7 +61,7 @@
    "published_at": "2026-10-16T13:31:22Z",
    "text": "Reflection’s first model, Beam, scores 30 on the Artificial Analysis Intelligence Index, placing it #2 among US open weights models Beam is an open weights model with 501B total and 23B active parameters, released on @huggingface Congratulations to @reflection_ai on the…",
    "author_name": "Artificial Analysis",
-   "likes": 562,
+   "likes": 564,
    "story": "Duvo, which develops tech to automate business processes across enterprise systems, including ERPs and legacy apps, raised a $32M Series A led by Balderton"
   },
   {
@@ -72,11 +72,11 @@
    "text": "Anthropic announces updates to embedding independent evaluators"
   },
   {
-   "title": "Apple updates App Review Guidelines to crack down on AI nudify apps and apps that reveal undocument…",
-   "url": "https://9to5mac.com/2026/10/16/apples-new-app-store-rules-crack-down-on-ai-nudification-and-bait-and-switch-apps/",
-   "source": "Marcus Mendes / 9to5Mac",
-   "published_at": "2026-10-16T23:46:13Z",
-   "text": "Apple updates App Review Guidelines to crack down on AI nudify apps and apps that reveal undocumented capabilities, like nudification, after app review. Apple updated its App Review Guidelines today with a series of changes meant to strengthen protections against harmful content and deceptive app review practices.",
+   "title": "A profile of Blackstone President Jon Gray, who is making AI his biggest bet, has built a $200B dat…",
+   "url": "https://www.bloomberg.com/news/articles/2026-10-15/blackstone-s-huge-ai-bet-runs-from-data-centers-to-google-and-nvidia-deals?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc5MjIxMjkwMywiZXhwIjoxNzkyODE3NzAzLCJhcnRpY2xlSWQiOiJUTVk1WldLR1pBS0UwMCIsImJjb25uZWN0SWQiOiIwNEFGQkMxQkYyMTA0NUVEODg3MzQxQkQwQzIyNzRBMCJ9.lrEYFQDuJpd9y4WsdMU9WF6koERaL7yVLSAh_CCOb1I",
+   "source": "Preeti Singh / Bloomberg",
+   "published_at": "2026-10-17T12:35:50Z",
+   "text": "A profile of Blackstone President Jon Gray, who is making AI his biggest bet, has built a $200B data center empire, and is building a cloud venture with Google. From data centers and chip financing to AI advice on potential deals, the technology is everywhere at the alternative-investment giant",
    "via": "Techmeme"
   },
   {
@@ -84,8 +84,8 @@
    "url": "https://www.mercor.com/research/labor-index/benchmark-map/",
    "source": "Hacker News",
    "published_at": "2026-10-16T17:08:38Z",
-   "text": "523 points and 443 comments on Hacker News.",
-   "points": 523,
+   "text": "532 points and 452 comments on Hacker News.",
+   "points": 532,
    "discussion": "https://news.ycombinator.com/item?id=50121179"
   }
  ],
