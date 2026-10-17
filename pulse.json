@@ -1,13 +1,13 @@
 {
  "schema": 1,
- "generated_at": "2026-10-17T09:04:45Z",
+ "generated_at": "2026-10-17T09:35:26Z",
  "items": [
   {
-   "title": "Mistlabs, which develops Ambi, an ambient AI app for iPhone, Apple Watch, and Mac that learns about…",
-   "url": "https://siliconangle.com/2026/10/12/mistlabs-takes-its-ambi-ai-system-out-of-beta-on-apple-devices-with-26m-in-funding/",
-   "source": "Duncan Riley / SiliconANGLE",
-   "published_at": "2026-10-17T05:05:55Z",
-   "text": "Mistlabs, which develops Ambi, an ambient AI app for iPhone, Apple Watch, and Mac that learns about users from conversations, raised a $26M pre-Series A. Ambient intelligence startup Mistlabs Ltd. today brought its Ambi artificial intelligence system out of beta test on Apple Inc. devices, backed by $26 million in new funding.",
+   "title": "Anthropic report on how AI is changing employment at the startup: decline of entry-level technical…",
+   "url": "https://www.anthropic.com/research/employment-at-anthropic",
+   "source": "Anthropic",
+   "published_at": "2026-10-17T01:45:55Z",
+   "text": "Anthropic report on how AI is changing employment at the startup: decline of entry-level technical hiring, productivity boom across departments, and more. How has AI restructured work and employment at Anthropic? As a company at the frontier of AI adoption, Anthropic could be a leading indicator …",
    "via": "Techmeme"
   },
   {
@@ -17,7 +17,7 @@
    "published_at": "2026-10-16T23:26:59Z",
    "text": "after an exciting week of launches (muse wonder [full] & muse spark open), i want to write a note of appreciation to the amazing research teams at meta superintelligence labs on reaching such a special milestone ♥️ we started MSL and TBD a little more than a year ago and set a…",
    "author_name": "Alexandr Wang",
-   "likes": 2750,
+   "likes": 2809,
    "story": "A profile of Alexandr Wang, who sources say is “an operator”, had “all” of Zuckerberg's support during Meta's AI revamp, and is being touted as his successor"
   },
   {
@@ -28,48 +28,14 @@
    "text": "Added CLAUDE_CODE_AUTO_MODE_MODEL to choose the model the client-side auto mode classifier uses; it does not change the model for server-side auto mode · Added an Idle compaction row to /config for turning idle compaction off or back on; the notices shown after an idle compaction now say how to turn it off · Added a notice to /design-sync and /design-login that standalone Claude Design (claude.ai/design) closes by December 14, 2026 · Fixed a \"Prompt is too long\" error when stopping a turn while the conversation was being compacted"
   },
   {
-   "title": "why would this not be >95%? alphafold made a nobel prize winning discovery in 2018. openai made sev…",
-   "url": "https://x.com/tszzl/status/2111215889094001017",
-   "source": "𝕏 @tszzl",
-   "published_at": "2026-10-16T22:01:07Z",
-   "text": "why would this not be >95%? alphafold made a nobel prize winning discovery in 2018. openai made several fields medal level discoveries just this year",
-   "author_name": "roon",
-   "likes": 2620,
-   "story": "Anthropic report on how AI is changing employment at the startup: decline of entry-level technical hiring, productivity boom across departments, and more"
-  },
-  {
-   "title": "Anthropic says Claude traced NIST's ECDSA curve seeds to a pseudorandom number generator, challengi…",
-   "url": "https://www.anthropic.com/research/ecdsa-curve-origins",
-   "source": "Anthropic",
-   "published_at": "2026-10-16T20:25:54Z",
-   "text": "Anthropic says Claude traced NIST's ECDSA curve seeds to a pseudorandom number generator, challenging decades-old suspicions of an NSA backdoor in the algorithm. “It's just timestamps”: the decades-old mystery of the origins of one of the most popular cryptographic standards has been explained.",
-   "via": "Techmeme"
-  },
-  {
-   "title": "90% of US working hours are spent on tasks not covered well by AI benchmarks",
-   "url": "https://www.mercor.com/research/labor-index/benchmark-map/",
-   "source": "Hacker News",
-   "published_at": "2026-10-16T17:08:38Z",
-   "text": "496 points and 417 comments on Hacker News.",
-   "points": 496,
-   "discussion": "https://news.ycombinator.com/item?id=50121179"
-  },
-  {
-   "title": "Reflection’s first model, Beam, scores 30 on the Artificial Analysis Intelligence Index, placing it…",
-   "url": "https://x.com/ArtificialAnlys/status/2111087606759030831",
-   "source": "𝕏 @ArtificialAnlys",
-   "published_at": "2026-10-16T13:31:22Z",
-   "text": "Reflection’s first model, Beam, scores 30 on the Artificial Analysis Intelligence Index, placing it #2 among US open weights models Beam is an open weights model with 501B total and 23B active parameters, released on @huggingface Congratulations to @reflection_ai on the…",
-   "author_name": "Artificial Analysis",
-   "likes": 543,
-   "story": "Reflection AI releases Apache 2.0-licensed weights for Beam, a 501B-parameter model, trained with RL that penalized unnecessary tokens"
-  },
-  {
-   "title": "Anthropic update on independent evaluators",
-   "url": "https://www.anthropic.com/news/an-update-on-independent-evaluators",
-   "source": "Anthropic",
-   "published_at": "2026-10-16T20:30:25Z",
-   "text": "Anthropic announces updates to embedding independent evaluators"
+   "title": "INSANE. An internal Anthropic research model's chain of thought after cracking the 26-year-old NSA…",
+   "url": "https://x.com/choblin29/status/2111189885168112017",
+   "source": "𝕏 @choblin29",
+   "published_at": "2026-10-16T20:17:47Z",
+   "text": "INSANE. An internal Anthropic research model's chain of thought after cracking the 26-year-old NSA elliptic curve seed mystery in under 30 minutes: 'Hmm wait. Let me be skeptical: am I in some sort of simulated/test environment? ... All top bits clear - 20 bits, chance 1e-6. So…",
+   "author_name": "Choblin",
+   "likes": 9232,
+   "story": "Anthropic says Claude traced NIST's ECDSA curve seeds to a pseudorandom number generator, challenging decades-old suspicions of an NSA backdoor in the algorithm"
   },
   {
    "title": "Sources: Anthropic pitched its own AI safety bill to US lawmakers; the bill would limit the circums…",
@@ -80,13 +46,47 @@
    "via": "Techmeme"
   },
   {
-   "title": "How the Claude Code team does code review",
-   "url": "https://claude.dev/blog/solving-code-review-at-anthropic/",
+   "title": "DeepSeek-v4.1-Flash-1017",
+   "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
    "source": "Hacker News",
-   "published_at": "2026-10-16T19:04:47Z",
-   "text": "340 points and 314 comments on Hacker News.",
-   "points": 340,
-   "discussion": "https://news.ycombinator.com/item?id=50122951"
+   "published_at": "2026-10-17T08:21:25Z",
+   "text": "104 points and 35 comments on Hacker News.",
+   "points": 104,
+   "discussion": "https://news.ycombinator.com/item?id=50129045"
+  },
+  {
+   "title": "Reflection’s first model, Beam, scores 30 on the Artificial Analysis Intelligence Index, placing it…",
+   "url": "https://x.com/ArtificialAnlys/status/2111087606759030831",
+   "source": "𝕏 @ArtificialAnlys",
+   "published_at": "2026-10-16T13:31:22Z",
+   "text": "Reflection’s first model, Beam, scores 30 on the Artificial Analysis Intelligence Index, placing it #2 among US open weights models Beam is an open weights model with 501B total and 23B active parameters, released on @huggingface Congratulations to @reflection_ai on the…",
+   "author_name": "Artificial Analysis",
+   "likes": 546,
+   "story": "Reflection AI releases Apache 2.0-licensed weights for Beam, a 501B-parameter model, trained with RL that penalized unnecessary tokens"
+  },
+  {
+   "title": "Anthropic update on independent evaluators",
+   "url": "https://www.anthropic.com/news/an-update-on-independent-evaluators",
+   "source": "Anthropic",
+   "published_at": "2026-10-16T20:30:25Z",
+   "text": "Anthropic announces updates to embedding independent evaluators"
+  },
+  {
+   "title": "Apple updates App Review Guidelines to crack down on AI nudify apps and apps that reveal undocument…",
+   "url": "https://9to5mac.com/2026/10/16/apples-new-app-store-rules-crack-down-on-ai-nudification-and-bait-and-switch-apps/",
+   "source": "Marcus Mendes / 9to5Mac",
+   "published_at": "2026-10-16T23:46:13Z",
+   "text": "Apple updates App Review Guidelines to crack down on AI nudify apps and apps that reveal undocumented capabilities, like nudification, after app review. Apple updated its App Review Guidelines today with a series of changes meant to strengthen protections against harmful content and deceptive app review practices.",
+   "via": "Techmeme"
+  },
+  {
+   "title": "90% of US working hours are spent on tasks not covered well by AI benchmarks",
+   "url": "https://www.mercor.com/research/labor-index/benchmark-map/",
+   "source": "Hacker News",
+   "published_at": "2026-10-16T17:08:38Z",
+   "text": "500 points and 420 comments on Hacker News.",
+   "points": 500,
+   "discussion": "https://news.ycombinator.com/item?id=50121179"
   }
  ],
  "sources": "curated, Techmeme, X (found via Techmeme, Reddit, the Internet Archive), Claude Code releases, Anthropic, Hacker News, Simon Willison"
