@@ -1,13 +1,13 @@
 {
  "schema": 1,
- "generated_at": "2026-10-17T11:39:29Z",
+ "generated_at": "2026-10-17T12:11:24Z",
  "items": [
   {
-   "title": "Reach Security, which develops AI-powered exposure management tools for securing enterprise systems…",
-   "url": "https://fintech.global/2026/10/15/reach-securitys-50m-bet-on-machine-speed-cyber-defence/",
-   "source": "FinTech Global",
-   "published_at": "2026-10-17T06:15:58Z",
-   "text": "Reach Security, which develops AI-powered exposure management tools for securing enterprise systems, raised a $50M+ Series B led by Top Tier Capital Partners. Reach Security has secured more than $50m in a Series B round led by Top Tier Capital Partners, while unveiling Reach Everywhere …",
+   "title": "Sources: Anthropic pitched its own AI safety bill to US lawmakers; the bill would limit the circums…",
+   "url": "https://www.politico.com/news/2026/10/16/anthropic-ai-safety-01124654",
+   "source": "Owen Dahlkamp / Politico",
+   "published_at": "2026-10-16T23:01:32Z",
+   "text": "Sources: Anthropic pitched its own AI safety bill to US lawmakers; the bill would limit the circumstances in which the government could block a model's release. Representatives for the artificial intelligence giant Anthropic have quietly pitched Capitol Hill lawmakers on a draft bill …",
    "via": "Techmeme"
   },
   {
@@ -17,7 +17,7 @@
    "published_at": "2026-10-16T23:26:59Z",
    "text": "after an exciting week of launches (muse wonder [full] & muse spark open), i want to write a note of appreciation to the amazing research teams at meta superintelligence labs on reaching such a special milestone ♥️ we started MSL and TBD a little more than a year ago and set a…",
    "author_name": "Alexandr Wang",
-   "likes": 3043,
+   "likes": 3090,
    "story": "A profile of Alexandr Wang, who sources say is “an operator”, had “all” of Zuckerberg's support during Meta's AI revamp, and is being touted as his successor"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-10-16T22:01:07Z",
    "text": "why would this not be >95%? alphafold made a nobel prize winning discovery in 2018. openai made several fields medal level discoveries just this year",
    "author_name": "roon",
-   "likes": 2841,
+   "likes": 2875,
    "story": "Anthropic report on how AI is changing employment at the startup: decline of entry-level technical hiring, productivity boom across departments, and more"
   },
   {
@@ -50,9 +50,19 @@
    "url": "https://openrouter.ai/deepseek/deepseek-v4.1-flash-1017",
    "source": "Hacker News",
    "published_at": "2026-10-17T08:37:46Z",
-   "text": "212 points and 56 comments on Hacker News.",
-   "points": 212,
+   "text": "244 points and 80 comments on Hacker News.",
+   "points": 244,
    "discussion": "https://news.ycombinator.com/item?id=50129121"
+  },
+  {
+   "title": "Reflection’s first model, Beam, scores 30 on the Artificial Analysis Intelligence Index, placing it…",
+   "url": "https://x.com/ArtificialAnlys/status/2111087606759030831",
+   "source": "𝕏 @ArtificialAnlys",
+   "published_at": "2026-10-16T13:31:22Z",
+   "text": "Reflection’s first model, Beam, scores 30 on the Artificial Analysis Intelligence Index, placing it #2 among US open weights models Beam is an open weights model with 501B total and 23B active parameters, released on @huggingface Congratulations to @reflection_ai on the…",
+   "author_name": "Artificial Analysis",
+   "likes": 562,
+   "story": "Duvo, which develops tech to automate business processes across enterprise systems, including ERPs and legacy apps, raised a $32M Series A led by Balderton"
   },
   {
    "title": "Anthropic update on independent evaluators",
@@ -62,11 +72,11 @@
    "text": "Anthropic announces updates to embedding independent evaluators"
   },
   {
-   "title": "Sources: Anthropic pitched its own AI safety bill to US lawmakers; the bill would limit the circums…",
-   "url": "https://www.politico.com/news/2026/10/16/anthropic-ai-safety-01124654",
-   "source": "Owen Dahlkamp / Politico",
-   "published_at": "2026-10-16T23:01:32Z",
-   "text": "Sources: Anthropic pitched its own AI safety bill to US lawmakers; the bill would limit the circumstances in which the government could block a model's release. Representatives for the artificial intelligence giant Anthropic have quietly pitched Capitol Hill lawmakers on a draft bill …",
+   "title": "Apple updates App Review Guidelines to crack down on AI nudify apps and apps that reveal undocument…",
+   "url": "https://9to5mac.com/2026/10/16/apples-new-app-store-rules-crack-down-on-ai-nudification-and-bait-and-switch-apps/",
+   "source": "Marcus Mendes / 9to5Mac",
+   "published_at": "2026-10-16T23:46:13Z",
+   "text": "Apple updates App Review Guidelines to crack down on AI nudify apps and apps that reveal undocumented capabilities, like nudification, after app review. Apple updated its App Review Guidelines today with a series of changes meant to strengthen protections against harmful content and deceptive app review practices.",
    "via": "Techmeme"
   },
   {
@@ -74,8 +84,8 @@
    "url": "https://www.mercor.com/research/labor-index/benchmark-map/",
    "source": "Hacker News",
    "published_at": "2026-10-16T17:08:38Z",
-   "text": "516 points and 440 comments on Hacker News.",
-   "points": 516,
+   "text": "523 points and 443 comments on Hacker News.",
+   "points": 523,
    "discussion": "https://news.ycombinator.com/item?id=50121179"
   }
  ],
