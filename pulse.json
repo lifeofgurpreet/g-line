@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-17T22:43:00Z",
+ "generated_at": "2026-10-17T23:15:22Z",
  "items": [
   {
    "title": "DeepSeek releases V4.1-Flash-1017, an update it says offers “stronger benchmark performance, faster…",
@@ -17,7 +17,7 @@
    "published_at": "2026-10-16T23:26:59Z",
    "text": "after an exciting week of launches (muse wonder [full] & muse spark open), i want to write a note of appreciation to the amazing research teams at meta superintelligence labs on reaching such a special milestone ♥️ we started MSL and TBD a little more than a year ago and set a…",
    "author_name": "Alexandr Wang",
-   "likes": 3866,
+   "likes": 3892,
    "story": "A profile of Alexandr Wang, who sources say is “an operator”, had “all” of Zuckerberg's support during Meta's AI revamp, and is being touted as his successor"
   },
   {
@@ -28,11 +28,11 @@
    "text": "Added CLAUDE_CODE_AUTO_MODE_MODEL to choose the model the client-side auto mode classifier uses; it does not change the model for server-side auto mode · Added an Idle compaction row to /config for turning idle compaction off or back on; the notices shown after an idle compaction now say how to turn it off · Added a notice to /design-sync and /design-login that standalone Claude Design (claude.ai/design) closes by December 14, 2026 · Fixed a \"Prompt is too long\" error when stopping a turn while the conversation was being compacted"
   },
   {
-   "title": "As AI giants rack up potential legal liabilities of tens of billions amid safety incidents, insurer…",
-   "url": "https://www.wsj.com/tech/ai/ai-runs-into-its-next-big-obstacle-insurance-8b2d4556?st=xPnTts",
-   "source": "Jean Eaglesham / Wall Stree…",
-   "published_at": "2026-10-17T13:45:53Z",
-   "text": "As AI giants rack up potential legal liabilities of tens of billions amid safety incidents, insurers worry claims may outpace limits on existing coverage. The artificial-intelligence industry's phenomenal rate of growth means claims have the potential to outpace the limits on existing coverage",
+   "title": "Anomaly Innovations, behind coding agent OpenCode, says a breach hit ~1.4% of OpenCode Console user…",
+   "url": "https://startupfortune.com/opencode-breach-exposes-stored-openai-and-anthropic-keys-prompts-urgent-key-rotation/",
+   "source": "Walter Schulze / Startup Fo…",
+   "published_at": "2026-10-17T20:50:55Z",
+   "text": "Anomaly Innovations, behind coding agent OpenCode, says a breach hit ~1.4% of OpenCode Console users and their API keys, in a “large scale distillation attack”. A large-scale distillation attack against the company behind the open-source coding agent OpenCode exposed stored OpenAI …",
    "via": "Techmeme"
   },
   {
@@ -40,8 +40,8 @@
    "url": "https://www.anthropic.com/research/ecdsa-curve-origins",
    "source": "Hacker News",
    "published_at": "2026-10-16T18:55:59Z",
-   "text": "1016 points and 373 comments on Hacker News.",
-   "points": 1016,
+   "text": "1018 points and 373 comments on Hacker News.",
+   "points": 1018,
    "discussion": "https://news.ycombinator.com/item?id=50122800"
   },
   {
@@ -52,11 +52,11 @@
    "text": "Anthropic announces updates to embedding independent evaluators"
   },
   {
-   "title": "Anomaly Innovations, behind coding agent OpenCode, says a breach hit ~1.4% of OpenCode Console user…",
-   "url": "https://startupfortune.com/opencode-breach-exposes-stored-openai-and-anthropic-keys-prompts-urgent-key-rotation/",
-   "source": "Walter Schulze / Startup Fo…",
-   "published_at": "2026-10-17T20:50:55Z",
-   "text": "Anomaly Innovations, behind coding agent OpenCode, says a breach hit ~1.4% of OpenCode Console users and their API keys, in a “large scale distillation attack”. A large-scale distillation attack against the company behind the open-source coding agent OpenCode exposed stored OpenAI …",
+   "title": "As AI giants rack up potential legal liabilities of tens of billions amid safety incidents, insurer…",
+   "url": "https://www.wsj.com/tech/ai/ai-runs-into-its-next-big-obstacle-insurance-8b2d4556?st=xPnTts",
+   "source": "Jean Eaglesham / Wall Stree…",
+   "published_at": "2026-10-17T13:45:53Z",
+   "text": "As AI giants rack up potential legal liabilities of tens of billions amid safety incidents, insurers worry claims may outpace limits on existing coverage. The artificial-intelligence industry's phenomenal rate of growth means claims have the potential to outpace the limits on existing coverage",
    "via": "Techmeme"
   },
   {
@@ -64,8 +64,8 @@
    "url": "https://alexwang.ai/posts/associative-memory/",
    "source": "Hacker News",
    "published_at": "2026-10-16T19:01:17Z",
-   "text": "473 points and 108 comments on Hacker News.",
-   "points": 473,
+   "text": "478 points and 112 comments on Hacker News.",
+   "points": 478,
    "discussion": "https://news.ycombinator.com/item?id=50122878"
   }
  ],
