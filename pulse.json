@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-17T22:10:54Z",
+ "generated_at": "2026-10-17T22:43:00Z",
  "items": [
   {
    "title": "DeepSeek releases V4.1-Flash-1017, an update it says offers “stronger benchmark performance, faster…",
@@ -17,7 +17,7 @@
    "published_at": "2026-10-16T23:26:59Z",
    "text": "after an exciting week of launches (muse wonder [full] & muse spark open), i want to write a note of appreciation to the amazing research teams at meta superintelligence labs on reaching such a special milestone ♥️ we started MSL and TBD a little more than a year ago and set a…",
    "author_name": "Alexandr Wang",
-   "likes": 3847,
+   "likes": 3866,
    "story": "A profile of Alexandr Wang, who sources say is “an operator”, had “all” of Zuckerberg's support during Meta's AI revamp, and is being touted as his successor"
   },
   {
@@ -40,8 +40,8 @@
    "url": "https://www.anthropic.com/research/ecdsa-curve-origins",
    "source": "Hacker News",
    "published_at": "2026-10-16T18:55:59Z",
-   "text": "1012 points and 372 comments on Hacker News.",
-   "points": 1012,
+   "text": "1016 points and 373 comments on Hacker News.",
+   "points": 1016,
    "discussion": "https://news.ycombinator.com/item?id=50122800"
   },
   {
@@ -60,13 +60,13 @@
    "via": "Techmeme"
   },
   {
-   "title": "Show HN: Llmspeed – feel how fast a local LLM runs before you buy the hardware",
-   "url": "https://llmspeed.dev/",
+   "title": "You could have invented transformers from memory",
+   "url": "https://alexwang.ai/posts/associative-memory/",
    "source": "Hacker News",
-   "published_at": "2026-10-17T04:36:53Z",
-   "text": "226 points and 75 comments on Hacker News.",
-   "points": 226,
-   "discussion": "https://news.ycombinator.com/item?id=50127979"
+   "published_at": "2026-10-16T19:01:17Z",
+   "text": "473 points and 108 comments on Hacker News.",
+   "points": 473,
+   "discussion": "https://news.ycombinator.com/item?id=50122878"
   }
  ],
  "sources": "curated, Techmeme, X (found via Techmeme, Reddit, the Internet Archive), Claude Code releases, Anthropic, Hacker News, Simon Willison"
