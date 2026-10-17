@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-17T15:20:25Z",
+ "generated_at": "2026-10-17T15:52:08Z",
  "items": [
   {
    "title": "DeepSeek releases V4.1-Flash-1017, an update it says offers “stronger benchmark performance, faster…",
@@ -17,7 +17,7 @@
    "published_at": "2026-10-16T23:26:59Z",
    "text": "after an exciting week of launches (muse wonder [full] & muse spark open), i want to write a note of appreciation to the amazing research teams at meta superintelligence labs on reaching such a special milestone ♥️ we started MSL and TBD a little more than a year ago and set a…",
    "author_name": "Alexandr Wang",
-   "likes": 3439,
+   "likes": 3496,
    "story": "A profile of Alexandr Wang, who sources say is “an operator”, had “all” of Zuckerberg's support during Meta's AI revamp, and is being touted as his successor"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-10-16T22:01:07Z",
    "text": "why would this not be >95%? alphafold made a nobel prize winning discovery in 2018. openai made several fields medal level discoveries just this year",
    "author_name": "roon",
-   "likes": 3113,
+   "likes": 3155,
    "story": "Anthropic report on how AI is changing employment at the startup: decline of entry-level technical hiring, productivity boom across departments, and more"
   },
   {
@@ -50,8 +50,8 @@
    "url": "https://www.anthropic.com/research/ecdsa-curve-origins",
    "source": "Hacker News",
    "published_at": "2026-10-16T18:55:59Z",
-   "text": "953 points and 343 comments on Hacker News.",
-   "points": 953,
+   "text": "962 points and 347 comments on Hacker News.",
+   "points": 962,
    "discussion": "https://news.ycombinator.com/item?id=50122800"
   },
   {
@@ -74,7 +74,7 @@
    "url": "https://www.mercor.com/research/labor-index/benchmark-map/",
    "source": "Hacker News",
    "published_at": "2026-10-16T17:08:38Z",
-   "text": "558 points and 495 comments on Hacker News.",
+   "text": "558 points and 498 comments on Hacker News.",
    "points": 558,
    "discussion": "https://news.ycombinator.com/item?id=50121179"
   }
