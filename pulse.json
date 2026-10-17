@@ -1,13 +1,13 @@
 {
  "schema": 1,
- "generated_at": "2026-10-17T17:27:41Z",
+ "generated_at": "2026-10-17T17:59:33Z",
  "items": [
   {
-   "title": "CEO Amjad Masad says Replit is no longer working with Anthropic, citing cost and saying “ChatGPT is…",
-   "url": "https://techcrunch.com/2026/10/16/replit-is-no-longer-working-with-anthropic-ceo-says/",
-   "source": "TechCrunch",
-   "published_at": "2026-10-16T22:45:57Z",
-   "text": "CEO Amjad Masad says Replit is no longer working with Anthropic, citing cost and saying “ChatGPT is better now”; source: the partnership is still in place. Replit, the AI coding platform that has become a favorite of startup founders and developers, is no longer working with Anthropic …",
+   "title": "Sources: Anthropic pitched its own AI safety bill to US lawmakers; the bill would limit the circums…",
+   "url": "https://www.politico.com/news/2026/10/16/anthropic-ai-safety-01124654",
+   "source": "Owen Dahlkamp / Politico",
+   "published_at": "2026-10-16T23:01:32Z",
+   "text": "Sources: Anthropic pitched its own AI safety bill to US lawmakers; the bill would limit the circumstances in which the government could block a model's release. Representatives for the artificial intelligence giant Anthropic have quietly pitched Capitol Hill lawmakers on a draft bill …",
    "via": "Techmeme"
   },
   {
@@ -17,7 +17,7 @@
    "published_at": "2026-10-17T08:35:54Z",
    "text": "🚀 DeepSeek-V4.1-Flash-1017 is here! Stronger benchmark performance, faster task completion, and shorter outputs than the previous version—a Pareto improvement in performance and cost. Now live on our website, app, and API. 🛠️ Optimized for @DeepSeekHarness, Tencent CodeBuddy, h…",
    "author_name": "DeepSeek",
-   "likes": 26171,
+   "likes": 26705,
    "story": "DeepSeek releases V4.1-Flash-1017, an update it says offers “stronger benchmark performance, faster task completion, and shorter outputs” than its predecessor"
   },
   {
@@ -34,42 +34,8 @@
    "published_at": "2026-10-16T23:26:59Z",
    "text": "after an exciting week of launches (muse wonder [full] & muse spark open), i want to write a note of appreciation to the amazing research teams at meta superintelligence labs on reaching such a special milestone ♥️ we started MSL and TBD a little more than a year ago and set a…",
    "author_name": "Alexandr Wang",
-   "likes": 3632,
+   "likes": 3666,
    "story": "A profile of Alexandr Wang, who sources say is “an operator”, had “all” of Zuckerberg's support during Meta's AI revamp, and is being touted as his successor"
-  },
-  {
-   "title": "Sources: Anthropic pitched its own AI safety bill to US lawmakers; the bill would limit the circums…",
-   "url": "https://www.politico.com/news/2026/10/16/anthropic-ai-safety-01124654",
-   "source": "Owen Dahlkamp / Politico",
-   "published_at": "2026-10-16T23:01:32Z",
-   "text": "Sources: Anthropic pitched its own AI safety bill to US lawmakers; the bill would limit the circumstances in which the government could block a model's release. Representatives for the artificial intelligence giant Anthropic have quietly pitched Capitol Hill lawmakers on a draft bill …",
-   "via": "Techmeme"
-  },
-  {
-   "title": "Claude reveals ECDSA curve origins",
-   "url": "https://www.anthropic.com/research/ecdsa-curve-origins",
-   "source": "Hacker News",
-   "published_at": "2026-10-16T18:55:59Z",
-   "text": "981 points and 358 comments on Hacker News.",
-   "points": 981,
-   "discussion": "https://news.ycombinator.com/item?id=50122800"
-  },
-  {
-   "title": "why would this not be >95%? alphafold made a nobel prize winning discovery in 2018. openai made sev…",
-   "url": "https://x.com/tszzl/status/2111215889094001017",
-   "source": "𝕏 @tszzl",
-   "published_at": "2026-10-16T22:01:07Z",
-   "text": "why would this not be >95%? alphafold made a nobel prize winning discovery in 2018. openai made several fields medal level discoveries just this year",
-   "author_name": "roon",
-   "likes": 3251,
-   "story": "Anthropic report on how AI is changing employment at the startup: decline of entry-level technical hiring, productivity boom across departments, and more"
-  },
-  {
-   "title": "Anthropic update on independent evaluators",
-   "url": "https://www.anthropic.com/news/an-update-on-independent-evaluators",
-   "source": "Anthropic",
-   "published_at": "2026-10-16T20:30:25Z",
-   "text": "Anthropic announces updates to embedding independent evaluators"
   },
   {
    "title": "As AI giants rack up potential legal liabilities of tens of billions amid safety incidents, insurer…",
@@ -80,13 +46,57 @@
    "via": "Techmeme"
   },
   {
-   "title": "Show HN: Llmspeed – feel how fast a local LLM runs before you buy the hardware",
-   "url": "https://llmspeed.dev/",
+   "title": "Amazon uses AI to monitor union risk in UK warehouses",
+   "url": "https://www.opendemocracy.net/amazon-ai-surveillance-monitor-union-activity-uk-warehouses-birmingham-coventry-atlas-sutton-coldfield/",
    "source": "Hacker News",
-   "published_at": "2026-10-17T04:36:53Z",
-   "text": "196 points and 65 comments on Hacker News.",
-   "points": 196,
-   "discussion": "https://news.ycombinator.com/item?id=50127979"
+   "published_at": "2026-10-17T16:04:23Z",
+   "text": "89 points and 18 comments on Hacker News.",
+   "points": 89,
+   "discussion": "https://news.ycombinator.com/item?id=50132278"
+  },
+  {
+   "title": "why would this not be >95%? alphafold made a nobel prize winning discovery in 2018. openai made sev…",
+   "url": "https://x.com/tszzl/status/2111215889094001017",
+   "source": "𝕏 @tszzl",
+   "published_at": "2026-10-16T22:01:07Z",
+   "text": "why would this not be >95%? alphafold made a nobel prize winning discovery in 2018. openai made several fields medal level discoveries just this year",
+   "author_name": "roon",
+   "likes": 3285,
+   "story": "Anthropic report on how AI is changing employment at the startup: decline of entry-level technical hiring, productivity boom across departments, and more"
+  },
+  {
+   "title": "Anthropic update on independent evaluators",
+   "url": "https://www.anthropic.com/news/an-update-on-independent-evaluators",
+   "source": "Anthropic",
+   "published_at": "2026-10-16T20:30:25Z",
+   "text": "Anthropic announces updates to embedding independent evaluators"
+  },
+  {
+   "title": "Apple updates App Review Guidelines to crack down on AI nudify apps and apps that reveal undocument…",
+   "url": "https://9to5mac.com/2026/10/16/apples-new-app-store-rules-crack-down-on-ai-nudification-and-bait-and-switch-apps/",
+   "source": "Marcus Mendes / 9to5Mac",
+   "published_at": "2026-10-16T23:46:13Z",
+   "text": "Apple updates App Review Guidelines to crack down on AI nudify apps and apps that reveal undocumented capabilities, like nudification, after app review. Apple updated its App Review Guidelines today with a series of changes meant to strengthen protections against harmful content and deceptive app review practices.",
+   "via": "Techmeme"
+  },
+  {
+   "title": "INSANE. An internal Anthropic research model's chain of thought after cracking the 26-year-old NSA…",
+   "url": "https://x.com/choblin29/status/2111189885168112017",
+   "source": "𝕏 @choblin29",
+   "published_at": "2026-10-16T20:17:47Z",
+   "text": "INSANE. An internal Anthropic research model's chain of thought after cracking the 26-year-old NSA elliptic curve seed mystery in under 30 minutes: 'Hmm wait. Let me be skeptical: am I in some sort of simulated/test environment? ... All top bits clear - 20 bits, chance 1e-6. So…",
+   "author_name": "Choblin",
+   "likes": 10572,
+   "story": "Montevideo, Uruguay-based Scanntech, which develops market intelligence tools using POS data, raised $180M in a Series F led by L Catterton and Partners Group"
+  },
+  {
+   "title": "Claude reveals ECDSA curve origins",
+   "url": "https://www.anthropic.com/research/ecdsa-curve-origins",
+   "source": "Hacker News",
+   "published_at": "2026-10-16T18:55:59Z",
+   "text": "987 points and 361 comments on Hacker News.",
+   "points": 987,
+   "discussion": "https://news.ycombinator.com/item?id=50122800"
   }
  ],
  "sources": "curated, Techmeme, X (found via Techmeme, Reddit, the Internet Archive), Claude Code releases, Anthropic, Hacker News, Simon Willison"
