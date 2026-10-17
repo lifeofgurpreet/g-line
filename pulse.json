@@ -1,13 +1,13 @@
 {
  "schema": 1,
- "generated_at": "2026-10-17T14:49:16Z",
+ "generated_at": "2026-10-17T15:20:25Z",
  "items": [
   {
-   "title": "Sources: Anthropic pitched its own AI safety bill to US lawmakers; the bill would limit the circums…",
-   "url": "https://www.politico.com/news/2026/10/16/anthropic-ai-safety-01124654",
-   "source": "Owen Dahlkamp / Politico",
-   "published_at": "2026-10-16T23:01:32Z",
-   "text": "Sources: Anthropic pitched its own AI safety bill to US lawmakers; the bill would limit the circumstances in which the government could block a model's release. Representatives for the artificial intelligence giant Anthropic have quietly pitched Capitol Hill lawmakers on a draft bill …",
+   "title": "DeepSeek releases V4.1-Flash-1017, an update it says offers “stronger benchmark performance, faster…",
+   "url": "https://www.bloomberg.com/news/articles/2026-10-17/deepseek-pushes-out-updated-ai-model-it-says-is-faster-leaner",
+   "source": "Saritha Rai / Bloomberg",
+   "published_at": "2026-10-17T15:01:27Z",
+   "text": "DeepSeek releases V4.1-Flash-1017, an update it says offers “stronger benchmark performance, faster task completion, and shorter outputs” than its predecessor. DeepSeek released an update of its AI model this weekend that it says is faster and leaner, ramping …",
    "via": "Techmeme"
   },
   {
@@ -17,7 +17,7 @@
    "published_at": "2026-10-16T23:26:59Z",
    "text": "after an exciting week of launches (muse wonder [full] & muse spark open), i want to write a note of appreciation to the amazing research teams at meta superintelligence labs on reaching such a special milestone ♥️ we started MSL and TBD a little more than a year ago and set a…",
    "author_name": "Alexandr Wang",
-   "likes": 3361,
+   "likes": 3439,
    "story": "A profile of Alexandr Wang, who sources say is “an operator”, had “all” of Zuckerberg's support during Meta's AI revamp, and is being touted as his successor"
   },
   {
@@ -34,25 +34,25 @@
    "published_at": "2026-10-16T22:01:07Z",
    "text": "why would this not be >95%? alphafold made a nobel prize winning discovery in 2018. openai made several fields medal level discoveries just this year",
    "author_name": "roon",
-   "likes": 3063,
+   "likes": 3113,
    "story": "Anthropic report on how AI is changing employment at the startup: decline of entry-level technical hiring, productivity boom across departments, and more"
   },
   {
-   "title": "Anthropic says Claude traced NIST's ECDSA curve seeds to a pseudorandom number generator, challengi…",
-   "url": "https://www.anthropic.com/research/ecdsa-curve-origins",
-   "source": "Anthropic",
-   "published_at": "2026-10-16T20:25:54Z",
-   "text": "Anthropic says Claude traced NIST's ECDSA curve seeds to a pseudorandom number generator, challenging decades-old suspicions of an NSA backdoor in the algorithm. “It's just timestamps”: the decades-old mystery of the origins of one of the most popular cryptographic standards has been explained.",
+   "title": "Sources: Anthropic pitched its own AI safety bill to US lawmakers; the bill would limit the circums…",
+   "url": "https://www.politico.com/news/2026/10/16/anthropic-ai-safety-01124654",
+   "source": "Owen Dahlkamp / Politico",
+   "published_at": "2026-10-16T23:01:32Z",
+   "text": "Sources: Anthropic pitched its own AI safety bill to US lawmakers; the bill would limit the circumstances in which the government could block a model's release. Representatives for the artificial intelligence giant Anthropic have quietly pitched Capitol Hill lawmakers on a draft bill …",
    "via": "Techmeme"
   },
   {
-   "title": "DeepSeek: DeepSeek v4.1 Flash 1017",
-   "url": "https://openrouter.ai/deepseek/deepseek-v4.1-flash-1017",
+   "title": "Claude reveals ECDSA curve origins",
+   "url": "https://www.anthropic.com/research/ecdsa-curve-origins",
    "source": "Hacker News",
-   "published_at": "2026-10-17T08:37:46Z",
-   "text": "408 points and 188 comments on Hacker News.",
-   "points": 408,
-   "discussion": "https://news.ycombinator.com/item?id=50129121"
+   "published_at": "2026-10-16T18:55:59Z",
+   "text": "953 points and 343 comments on Hacker News.",
+   "points": 953,
+   "discussion": "https://news.ycombinator.com/item?id=50122800"
   },
   {
    "title": "Anthropic update on independent evaluators",
@@ -74,8 +74,8 @@
    "url": "https://www.mercor.com/research/labor-index/benchmark-map/",
    "source": "Hacker News",
    "published_at": "2026-10-16T17:08:38Z",
-   "text": "552 points and 489 comments on Hacker News.",
-   "points": 552,
+   "text": "558 points and 495 comments on Hacker News.",
+   "points": 558,
    "discussion": "https://news.ycombinator.com/item?id=50121179"
   }
  ],
