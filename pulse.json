@@ -1,13 +1,13 @@
 {
  "schema": 1,
- "generated_at": "2026-10-17T08:33:44Z",
+ "generated_at": "2026-10-17T09:04:45Z",
  "items": [
   {
-   "title": "Workday agrees to acquire C1.ai, formerly known as ConductorOne, which develops enterprise software…",
-   "url": "https://www.bizjournals.com/portland/news/2026/10/13/c1-workday-acquisition.html?page=all",
-   "source": "Malia Spencer / Portland Bu…",
-   "published_at": "2026-10-17T04:50:55Z",
-   "text": "Workday agrees to acquire C1.ai, formerly known as ConductorOne, which develops enterprise software to manage human and AI agent identities and has raised $111M. Software company C1, whose headquarters has fluctuated between San Francisco and Portland, is being acquired by California-based Workday Inc. (Nasdaq: WDAY).",
+   "title": "Mistlabs, which develops Ambi, an ambient AI app for iPhone, Apple Watch, and Mac that learns about…",
+   "url": "https://siliconangle.com/2026/10/12/mistlabs-takes-its-ambi-ai-system-out-of-beta-on-apple-devices-with-26m-in-funding/",
+   "source": "Duncan Riley / SiliconANGLE",
+   "published_at": "2026-10-17T05:05:55Z",
+   "text": "Mistlabs, which develops Ambi, an ambient AI app for iPhone, Apple Watch, and Mac that learns about users from conversations, raised a $26M pre-Series A. Ambient intelligence startup Mistlabs Ltd. today brought its Ambi artificial intelligence system out of beta test on Apple Inc. devices, backed by $26 million in new funding.",
    "via": "Techmeme"
   },
   {
@@ -17,7 +17,7 @@
    "published_at": "2026-10-16T23:26:59Z",
    "text": "after an exciting week of launches (muse wonder [full] & muse spark open), i want to write a note of appreciation to the amazing research teams at meta superintelligence labs on reaching such a special milestone ♥️ we started MSL and TBD a little more than a year ago and set a…",
    "author_name": "Alexandr Wang",
-   "likes": 2693,
+   "likes": 2750,
    "story": "A profile of Alexandr Wang, who sources say is “an operator”, had “all” of Zuckerberg's support during Meta's AI revamp, and is being touted as his successor"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-10-16T22:01:07Z",
    "text": "why would this not be >95%? alphafold made a nobel prize winning discovery in 2018. openai made several fields medal level discoveries just this year",
    "author_name": "roon",
-   "likes": 2562,
+   "likes": 2620,
    "story": "Anthropic report on how AI is changing employment at the startup: decline of entry-level technical hiring, productivity boom across departments, and more"
   },
   {
@@ -50,8 +50,8 @@
    "url": "https://www.mercor.com/research/labor-index/benchmark-map/",
    "source": "Hacker News",
    "published_at": "2026-10-16T17:08:38Z",
-   "text": "491 points and 413 comments on Hacker News.",
-   "points": 491,
+   "text": "496 points and 417 comments on Hacker News.",
+   "points": 496,
    "discussion": "https://news.ycombinator.com/item?id=50121179"
   },
   {
@@ -61,7 +61,7 @@
    "published_at": "2026-10-16T13:31:22Z",
    "text": "Reflection’s first model, Beam, scores 30 on the Artificial Analysis Intelligence Index, placing it #2 among US open weights models Beam is an open weights model with 501B total and 23B active parameters, released on @huggingface Congratulations to @reflection_ai on the…",
    "author_name": "Artificial Analysis",
-   "likes": 539,
+   "likes": 543,
    "story": "Reflection AI releases Apache 2.0-licensed weights for Beam, a 501B-parameter model, trained with RL that penalized unnecessary tokens"
   },
   {
@@ -84,8 +84,8 @@
    "url": "https://claude.dev/blog/solving-code-review-at-anthropic/",
    "source": "Hacker News",
    "published_at": "2026-10-16T19:04:47Z",
-   "text": "333 points and 308 comments on Hacker News.",
-   "points": 333,
+   "text": "340 points and 314 comments on Hacker News.",
+   "points": 340,
    "discussion": "https://news.ycombinator.com/item?id=50122951"
   }
  ],
