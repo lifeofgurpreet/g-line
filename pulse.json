@@ -1,13 +1,13 @@
 {
  "schema": 1,
- "generated_at": "2026-10-17T10:37:24Z",
+ "generated_at": "2026-10-17T11:08:17Z",
  "items": [
   {
-   "title": "Anthropic says Claude traced NIST's ECDSA curve seeds to a pseudorandom number generator, challengi…",
-   "url": "https://www.anthropic.com/research/ecdsa-curve-origins",
-   "source": "Anthropic",
-   "published_at": "2026-10-16T20:25:54Z",
-   "text": "Anthropic says Claude traced NIST's ECDSA curve seeds to a pseudorandom number generator, challenging decades-old suspicions of an NSA backdoor in the algorithm. “It's just timestamps”: the decades-old mystery of the origins of one of the most popular cryptographic standards has been explained.",
+   "title": "Mistlabs, which develops Ambi, an ambient AI app for iPhone, Apple Watch, and Mac that learns about…",
+   "url": "https://siliconangle.com/2026/10/12/mistlabs-takes-its-ambi-ai-system-out-of-beta-on-apple-devices-with-26m-in-funding/",
+   "source": "Duncan Riley / SiliconANGLE",
+   "published_at": "2026-10-17T05:05:55Z",
+   "text": "Mistlabs, which develops Ambi, an ambient AI app for iPhone, Apple Watch, and Mac that learns about users from conversations, raised a $26M pre-Series A. Ambient intelligence startup Mistlabs Ltd. today brought its Ambi artificial intelligence system out of beta test on Apple Inc. devices, backed by $26 million in new funding.",
    "via": "Techmeme"
   },
   {
@@ -17,7 +17,7 @@
    "published_at": "2026-10-16T23:26:59Z",
    "text": "after an exciting week of launches (muse wonder [full] & muse spark open), i want to write a note of appreciation to the amazing research teams at meta superintelligence labs on reaching such a special milestone ♥️ we started MSL and TBD a little more than a year ago and set a…",
    "author_name": "Alexandr Wang",
-   "likes": 2914,
+   "likes": 2975,
    "story": "A profile of Alexandr Wang, who sources say is “an operator”, had “all” of Zuckerberg's support during Meta's AI revamp, and is being touted as his successor"
   },
   {
@@ -34,8 +34,32 @@
    "published_at": "2026-10-16T22:01:07Z",
    "text": "why would this not be >95%? alphafold made a nobel prize winning discovery in 2018. openai made several fields medal level discoveries just this year",
    "author_name": "roon",
-   "likes": 2765,
+   "likes": 2796,
    "story": "Anthropic report on how AI is changing employment at the startup: decline of entry-level technical hiring, productivity boom across departments, and more"
+  },
+  {
+   "title": "Anthropic says Claude traced NIST's ECDSA curve seeds to a pseudorandom number generator, challengi…",
+   "url": "https://www.anthropic.com/research/ecdsa-curve-origins",
+   "source": "Anthropic",
+   "published_at": "2026-10-16T20:25:54Z",
+   "text": "Anthropic says Claude traced NIST's ECDSA curve seeds to a pseudorandom number generator, challenging decades-old suspicions of an NSA backdoor in the algorithm. “It's just timestamps”: the decades-old mystery of the origins of one of the most popular cryptographic standards has been explained.",
+   "via": "Techmeme"
+  },
+  {
+   "title": "DeepSeek: DeepSeek v4.1 Flash 1017",
+   "url": "https://openrouter.ai/deepseek/deepseek-v4.1-flash-1017",
+   "source": "Hacker News",
+   "published_at": "2026-10-17T08:37:46Z",
+   "text": "166 points and 36 comments on Hacker News.",
+   "points": 166,
+   "discussion": "https://news.ycombinator.com/item?id=50129121"
+  },
+  {
+   "title": "Anthropic update on independent evaluators",
+   "url": "https://www.anthropic.com/news/an-update-on-independent-evaluators",
+   "source": "Anthropic",
+   "published_at": "2026-10-16T20:30:25Z",
+   "text": "Anthropic announces updates to embedding independent evaluators"
   },
   {
    "title": "Sources: Anthropic pitched its own AI safety bill to US lawmakers; the bill would limit the circums…",
@@ -46,46 +70,12 @@
    "via": "Techmeme"
   },
   {
-   "title": "DeepSeek-v4.1-Flash-1017",
-   "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
-   "source": "Hacker News",
-   "published_at": "2026-10-17T08:21:25Z",
-   "text": "160 points and 64 comments on Hacker News.",
-   "points": 160,
-   "discussion": "https://news.ycombinator.com/item?id=50129045"
-  },
-  {
-   "title": "Reflection’s first model, Beam, scores 30 on the Artificial Analysis Intelligence Index, placing it…",
-   "url": "https://x.com/ArtificialAnlys/status/2111087606759030831",
-   "source": "𝕏 @ArtificialAnlys",
-   "published_at": "2026-10-16T13:31:22Z",
-   "text": "Reflection’s first model, Beam, scores 30 on the Artificial Analysis Intelligence Index, placing it #2 among US open weights models Beam is an open weights model with 501B total and 23B active parameters, released on @huggingface Congratulations to @reflection_ai on the…",
-   "author_name": "Artificial Analysis",
-   "likes": 556,
-   "story": "Montevideo, Uruguay-based Scanntech, which develops market intelligence tools using POS data, raised $180M in a Series F led by L Catterton and Partners Group"
-  },
-  {
-   "title": "Anthropic update on independent evaluators",
-   "url": "https://www.anthropic.com/news/an-update-on-independent-evaluators",
-   "source": "Anthropic",
-   "published_at": "2026-10-16T20:30:25Z",
-   "text": "Anthropic announces updates to embedding independent evaluators"
-  },
-  {
-   "title": "Apple updates App Review Guidelines to crack down on AI nudify apps and apps that reveal undocument…",
-   "url": "https://9to5mac.com/2026/10/16/apples-new-app-store-rules-crack-down-on-ai-nudification-and-bait-and-switch-apps/",
-   "source": "Marcus Mendes / 9to5Mac",
-   "published_at": "2026-10-16T23:46:13Z",
-   "text": "Apple updates App Review Guidelines to crack down on AI nudify apps and apps that reveal undocumented capabilities, like nudification, after app review. Apple updated its App Review Guidelines today with a series of changes meant to strengthen protections against harmful content and deceptive app review practices.",
-   "via": "Techmeme"
-  },
-  {
    "title": "90% of US working hours are spent on tasks not covered well by AI benchmarks",
    "url": "https://www.mercor.com/research/labor-index/benchmark-map/",
    "source": "Hacker News",
    "published_at": "2026-10-16T17:08:38Z",
-   "text": "508 points and 431 comments on Hacker News.",
-   "points": 508,
+   "text": "511 points and 435 comments on Hacker News.",
+   "points": 511,
    "discussion": "https://news.ycombinator.com/item?id=50121179"
   }
  ],
