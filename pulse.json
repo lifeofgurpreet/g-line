@@ -1,24 +1,24 @@
 {
  "schema": 1,
- "generated_at": "2026-10-17T21:08:13Z",
+ "generated_at": "2026-10-17T21:38:50Z",
  "items": [
   {
-   "title": "Reach Security, which develops AI-powered exposure management tools for securing enterprise systems…",
-   "url": "https://fintech.global/2026/10/15/reach-securitys-50m-bet-on-machine-speed-cyber-defence/",
-   "source": "FinTech Global",
-   "published_at": "2026-10-17T06:15:58Z",
-   "text": "Reach Security, which develops AI-powered exposure management tools for securing enterprise systems, raised a $50M+ Series B led by Top Tier Capital Partners. Reach Security has secured more than $50m in a Series B round led by Top Tier Capital Partners, while unveiling Reach Everywhere …",
+   "title": "DeepSeek releases V4.1-Flash-1017, an update it says offers “stronger benchmark performance, faster…",
+   "url": "https://www.bloomberg.com/news/articles/2026-10-17/deepseek-pushes-out-updated-ai-model-it-says-is-faster-leaner",
+   "source": "Saritha Rai / Bloomberg",
+   "published_at": "2026-10-17T15:01:27Z",
+   "text": "DeepSeek releases V4.1-Flash-1017, an update it says offers “stronger benchmark performance, faster task completion, and shorter outputs” than its predecessor. DeepSeek released an update of its AI model this weekend that it says is faster and leaner, ramping …",
    "via": "Techmeme"
   },
   {
-   "title": "🚀 DeepSeek-V4.1-Flash-1017 is here! Stronger benchmark performance, faster task completion, and sho…",
-   "url": "https://x.com/deepseek_ai/status/2111375640717033777",
-   "source": "𝕏 @deepseek_ai",
-   "published_at": "2026-10-17T08:35:54Z",
-   "text": "🚀 DeepSeek-V4.1-Flash-1017 is here! Stronger benchmark performance, faster task completion, and shorter outputs than the previous version—a Pareto improvement in performance and cost. Now live on our website, app, and API. 🛠️ Optimized for @DeepSeekHarness, Tencent CodeBuddy, h…",
-   "author_name": "DeepSeek",
-   "likes": 28820,
-   "story": "DeepSeek releases V4.1-Flash-1017, an update it says offers “stronger benchmark performance, faster task completion, and shorter outputs” than its predecessor"
+   "title": "after an exciting week of launches (muse wonder [full] & muse spark open), i want to write a note o…",
+   "url": "https://x.com/alexandr_wang/status/2111237499083252185",
+   "source": "𝕏 @alexandr_wang",
+   "published_at": "2026-10-16T23:26:59Z",
+   "text": "after an exciting week of launches (muse wonder [full] & muse spark open), i want to write a note of appreciation to the amazing research teams at meta superintelligence labs on reaching such a special milestone ♥️ we started MSL and TBD a little more than a year ago and set a…",
+   "author_name": "Alexandr Wang",
+   "likes": 3824,
+   "story": "A profile of Alexandr Wang, who sources say is “an operator”, had “all” of Zuckerberg's support during Meta's AI revamp, and is being touted as his successor"
   },
   {
    "title": "Claude Code 2.1.302 released",
@@ -28,21 +28,11 @@
    "text": "Added CLAUDE_CODE_AUTO_MODE_MODEL to choose the model the client-side auto mode classifier uses; it does not change the model for server-side auto mode · Added an Idle compaction row to /config for turning idle compaction off or back on; the notices shown after an idle compaction now say how to turn it off · Added a notice to /design-sync and /design-login that standalone Claude Design (claude.ai/design) closes by December 14, 2026 · Fixed a \"Prompt is too long\" error when stopping a turn while the conversation was being compacted"
   },
   {
-   "title": "after an exciting week of launches (muse wonder [full] & muse spark open), i want to write a note o…",
-   "url": "https://x.com/alexandr_wang/status/2111237499083252185",
-   "source": "𝕏 @alexandr_wang",
-   "published_at": "2026-10-16T23:26:59Z",
-   "text": "after an exciting week of launches (muse wonder [full] & muse spark open), i want to write a note of appreciation to the amazing research teams at meta superintelligence labs on reaching such a special milestone ♥️ we started MSL and TBD a little more than a year ago and set a…",
-   "author_name": "Alexandr Wang",
-   "likes": 3805,
-   "story": "A profile of Alexandr Wang, who sources say is “an operator”, had “all” of Zuckerberg's support during Meta's AI revamp, and is being touted as his successor"
-  },
-  {
-   "title": "Anomaly Innovations, behind coding agent OpenCode, says a breach hit ~1.4% of OpenCode Console user…",
-   "url": "https://startupfortune.com/opencode-breach-exposes-stored-openai-and-anthropic-keys-prompts-urgent-key-rotation/",
-   "source": "Walter Schulze / Startup Fo…",
-   "published_at": "2026-10-17T20:50:55Z",
-   "text": "Anomaly Innovations, behind coding agent OpenCode, says a breach hit ~1.4% of OpenCode Console users and their API keys, in a “large scale distillation attack”. A large-scale distillation attack against the company behind the open-source coding agent OpenCode exposed stored OpenAI …",
+   "title": "Sources: Anthropic pitched its own AI safety bill to US lawmakers; the bill would limit the circums…",
+   "url": "https://www.politico.com/news/2026/10/16/anthropic-ai-safety-01124654",
+   "source": "Owen Dahlkamp / Politico",
+   "published_at": "2026-10-16T23:01:32Z",
+   "text": "Sources: Anthropic pitched its own AI safety bill to US lawmakers; the bill would limit the circumstances in which the government could block a model's release. Representatives for the artificial intelligence giant Anthropic have quietly pitched Capitol Hill lawmakers on a draft bill …",
    "via": "Techmeme"
   },
   {
@@ -50,8 +40,8 @@
    "url": "https://www.anthropic.com/research/ecdsa-curve-origins",
    "source": "Hacker News",
    "published_at": "2026-10-16T18:55:59Z",
-   "text": "1008 points and 373 comments on Hacker News.",
-   "points": 1008,
+   "text": "1010 points and 372 comments on Hacker News.",
+   "points": 1010,
    "discussion": "https://news.ycombinator.com/item?id=50122800"
   },
   {
@@ -62,11 +52,11 @@
    "text": "Anthropic announces updates to embedding independent evaluators"
   },
   {
-   "title": "As AI giants rack up potential legal liabilities of tens of billions amid safety incidents, insurer…",
-   "url": "https://www.wsj.com/tech/ai/ai-runs-into-its-next-big-obstacle-insurance-8b2d4556?st=xPnTts",
-   "source": "Jean Eaglesham / Wall Stree…",
-   "published_at": "2026-10-17T13:45:53Z",
-   "text": "As AI giants rack up potential legal liabilities of tens of billions amid safety incidents, insurers worry claims may outpace limits on existing coverage. The artificial-intelligence industry's phenomenal rate of growth means claims have the potential to outpace the limits on existing coverage",
+   "title": "Anomaly Innovations, behind coding agent OpenCode, says a breach hit ~1.4% of OpenCode Console user…",
+   "url": "https://startupfortune.com/opencode-breach-exposes-stored-openai-and-anthropic-keys-prompts-urgent-key-rotation/",
+   "source": "Walter Schulze / Startup Fo…",
+   "published_at": "2026-10-17T20:50:55Z",
+   "text": "Anomaly Innovations, behind coding agent OpenCode, says a breach hit ~1.4% of OpenCode Console users and their API keys, in a “large scale distillation attack”. A large-scale distillation attack against the company behind the open-source coding agent OpenCode exposed stored OpenAI …",
    "via": "Techmeme"
   },
   {
@@ -74,8 +64,8 @@
    "url": "https://llmspeed.dev/",
    "source": "Hacker News",
    "published_at": "2026-10-17T04:36:53Z",
-   "text": "220 points and 75 comments on Hacker News.",
-   "points": 220,
+   "text": "225 points and 75 comments on Hacker News.",
+   "points": 225,
    "discussion": "https://news.ycombinator.com/item?id=50127979"
   }
  ],
