@@ -1,31 +1,14 @@
 {
  "schema": 1,
- "generated_at": "2026-10-17T20:05:31Z",
+ "generated_at": "2026-10-17T20:36:27Z",
  "items": [
   {
-   "title": "Anthropic report on how AI is changing employment at the startup: decline of entry-level technical…",
-   "url": "https://www.anthropic.com/research/employment-at-anthropic",
-   "source": "Anthropic",
-   "published_at": "2026-10-17T01:45:55Z",
-   "text": "Anthropic report on how AI is changing employment at the startup: decline of entry-level technical hiring, productivity boom across departments, and more. How has AI restructured work and employment at Anthropic? As a company at the frontier of AI adoption, Anthropic could be a leading indicator …",
+   "title": "DeepSeek releases V4.1-Flash-1017, an update it says offers “stronger benchmark performance, faster…",
+   "url": "https://www.bloomberg.com/news/articles/2026-10-17/deepseek-pushes-out-updated-ai-model-it-says-is-faster-leaner",
+   "source": "Saritha Rai / Bloomberg",
+   "published_at": "2026-10-17T15:01:27Z",
+   "text": "DeepSeek releases V4.1-Flash-1017, an update it says offers “stronger benchmark performance, faster task completion, and shorter outputs” than its predecessor. DeepSeek released an update of its AI model this weekend that it says is faster and leaner, ramping …",
    "via": "Techmeme"
-  },
-  {
-   "title": "🚀 DeepSeek-V4.1-Flash-1017 is here! Stronger benchmark performance, faster task completion, and sho…",
-   "url": "https://x.com/deepseek_ai/status/2111375640717033777",
-   "source": "𝕏 @deepseek_ai",
-   "published_at": "2026-10-17T08:35:54Z",
-   "text": "🚀 DeepSeek-V4.1-Flash-1017 is here! Stronger benchmark performance, faster task completion, and shorter outputs than the previous version—a Pareto improvement in performance and cost. Now live on our website, app, and API. 🛠️ Optimized for @DeepSeekHarness, Tencent CodeBuddy, h…",
-   "author_name": "DeepSeek",
-   "likes": 28269,
-   "story": "DeepSeek releases V4.1-Flash-1017, an update it says offers “stronger benchmark performance, faster task completion, and shorter outputs” than its predecessor"
-  },
-  {
-   "title": "Claude Code 2.1.302 released",
-   "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.302",
-   "source": "Claude Code releases",
-   "published_at": "2026-10-16T20:53:06Z",
-   "text": "Added CLAUDE_CODE_AUTO_MODE_MODEL to choose the model the client-side auto mode classifier uses; it does not change the model for server-side auto mode · Added an Idle compaction row to /config for turning idle compaction off or back on; the notices shown after an idle compaction now say how to turn it off · Added a notice to /design-sync and /design-login that standalone Claude Design (claude.ai/design) closes by December 14, 2026 · Fixed a \"Prompt is too long\" error when stopping a turn while the conversation was being compacted"
   },
   {
    "title": "after an exciting week of launches (muse wonder [full] & muse spark open), i want to write a note o…",
@@ -34,32 +17,15 @@
    "published_at": "2026-10-16T23:26:59Z",
    "text": "after an exciting week of launches (muse wonder [full] & muse spark open), i want to write a note of appreciation to the amazing research teams at meta superintelligence labs on reaching such a special milestone ♥️ we started MSL and TBD a little more than a year ago and set a…",
    "author_name": "Alexandr Wang",
-   "likes": 3766,
+   "likes": 3787,
    "story": "A profile of Alexandr Wang, who sources say is “an operator”, had “all” of Zuckerberg's support during Meta's AI revamp, and is being touted as his successor"
   },
   {
-   "title": "Sources: Anthropic pitched its own AI safety bill to US lawmakers; the bill would limit the circums…",
-   "url": "https://www.politico.com/news/2026/10/16/anthropic-ai-safety-01124654",
-   "source": "Owen Dahlkamp / Politico",
-   "published_at": "2026-10-16T23:01:32Z",
-   "text": "Sources: Anthropic pitched its own AI safety bill to US lawmakers; the bill would limit the circumstances in which the government could block a model's release. Representatives for the artificial intelligence giant Anthropic have quietly pitched Capitol Hill lawmakers on a draft bill …",
-   "via": "Techmeme"
-  },
-  {
-   "title": "Claude reveals ECDSA curve origins",
-   "url": "https://www.anthropic.com/research/ecdsa-curve-origins",
-   "source": "Hacker News",
-   "published_at": "2026-10-16T18:55:59Z",
-   "text": "1007 points and 372 comments on Hacker News.",
-   "points": 1007,
-   "discussion": "https://news.ycombinator.com/item?id=50122800"
-  },
-  {
-   "title": "Anthropic update on independent evaluators",
-   "url": "https://www.anthropic.com/news/an-update-on-independent-evaluators",
-   "source": "Anthropic",
-   "published_at": "2026-10-16T20:30:25Z",
-   "text": "Anthropic announces updates to embedding independent evaluators"
+   "title": "Claude Code 2.1.302 released",
+   "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.302",
+   "source": "Claude Code releases",
+   "published_at": "2026-10-16T20:53:06Z",
+   "text": "Added CLAUDE_CODE_AUTO_MODE_MODEL to choose the model the client-side auto mode classifier uses; it does not change the model for server-side auto mode · Added an Idle compaction row to /config for turning idle compaction off or back on; the notices shown after an idle compaction now say how to turn it off · Added a notice to /design-sync and /design-login that standalone Claude Design (claude.ai/design) closes by December 14, 2026 · Fixed a \"Prompt is too long\" error when stopping a turn while the conversation was being compacted"
   },
   {
    "title": "As AI giants rack up potential legal liabilities of tens of billions amid safety incidents, insurer…",
@@ -70,12 +36,36 @@
    "via": "Techmeme"
   },
   {
+   "title": "Claude reveals ECDSA curve origins",
+   "url": "https://www.anthropic.com/research/ecdsa-curve-origins",
+   "source": "Hacker News",
+   "published_at": "2026-10-16T18:55:59Z",
+   "text": "1008 points and 372 comments on Hacker News.",
+   "points": 1008,
+   "discussion": "https://news.ycombinator.com/item?id=50122800"
+  },
+  {
+   "title": "Anthropic update on independent evaluators",
+   "url": "https://www.anthropic.com/news/an-update-on-independent-evaluators",
+   "source": "Anthropic",
+   "published_at": "2026-10-16T20:30:25Z",
+   "text": "Anthropic announces updates to embedding independent evaluators"
+  },
+  {
+   "title": "A profile of Blackstone President Jon Gray, who is making AI his biggest bet, has built a $200B dat…",
+   "url": "https://www.bloomberg.com/news/articles/2026-10-15/blackstone-s-huge-ai-bet-runs-from-data-centers-to-google-and-nvidia-deals?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc5MjIxMjkwMywiZXhwIjoxNzkyODE3NzAzLCJhcnRpY2xlSWQiOiJUTVk1WldLR1pBS0UwMCIsImJjb25uZWN0SWQiOiIwNEFGQkMxQkYyMTA0NUVEODg3MzQxQkQwQzIyNzRBMCJ9.lrEYFQDuJpd9y4WsdMU9WF6koERaL7yVLSAh_CCOb1I",
+   "source": "Preeti Singh / Bloomberg",
+   "published_at": "2026-10-17T12:35:50Z",
+   "text": "A profile of Blackstone President Jon Gray, who is making AI his biggest bet, has built a $200B data center empire, and is building a cloud venture with Google. From data centers and chip financing to AI advice on potential deals, the technology is everywhere at the alternative-investment giant",
+   "via": "Techmeme"
+  },
+  {
    "title": "Show HN: Llmspeed – feel how fast a local LLM runs before you buy the hardware",
    "url": "https://llmspeed.dev/",
    "source": "Hacker News",
    "published_at": "2026-10-17T04:36:53Z",
-   "text": "215 points and 69 comments on Hacker News.",
-   "points": 215,
+   "text": "218 points and 73 comments on Hacker News.",
+   "points": 218,
    "discussion": "https://news.ycombinator.com/item?id=50127979"
   }
  ],
