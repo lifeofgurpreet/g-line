@@ -1,13 +1,13 @@
 {
  "schema": 1,
- "generated_at": "2026-10-17T13:45:39Z",
+ "generated_at": "2026-10-17T14:18:18Z",
  "items": [
   {
-   "title": "Reach Security, which develops AI-powered exposure management tools for securing enterprise systems…",
-   "url": "https://fintech.global/2026/10/15/reach-securitys-50m-bet-on-machine-speed-cyber-defence/",
-   "source": "FinTech Global",
-   "published_at": "2026-10-17T06:15:58Z",
-   "text": "Reach Security, which develops AI-powered exposure management tools for securing enterprise systems, raised a $50M+ Series B led by Top Tier Capital Partners. Reach Security has secured more than $50m in a Series B round led by Top Tier Capital Partners, while unveiling Reach Everywhere …",
+   "title": "As AI giants rack up potential legal liabilities of tens of billions amid safety incidents, insurer…",
+   "url": "https://www.wsj.com/tech/ai/ai-runs-into-its-next-big-obstacle-insurance-8b2d4556?st=xPnTts",
+   "source": "Jean Eaglesham / Wall Stree…",
+   "published_at": "2026-10-17T13:45:53Z",
+   "text": "As AI giants rack up potential legal liabilities of tens of billions amid safety incidents, insurers worry claims may outpace limits on existing coverage. The artificial-intelligence industry's phenomenal rate of growth means claims have the potential to outpace the limits on existing coverage",
    "via": "Techmeme"
   },
   {
@@ -17,7 +17,7 @@
    "published_at": "2026-10-16T23:26:59Z",
    "text": "after an exciting week of launches (muse wonder [full] & muse spark open), i want to write a note of appreciation to the amazing research teams at meta superintelligence labs on reaching such a special milestone ♥️ we started MSL and TBD a little more than a year ago and set a…",
    "author_name": "Alexandr Wang",
-   "likes": 3247,
+   "likes": 3300,
    "story": "A profile of Alexandr Wang, who sources say is “an operator”, had “all” of Zuckerberg's support during Meta's AI revamp, and is being touted as his successor"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-10-16T22:01:07Z",
    "text": "why would this not be >95%? alphafold made a nobel prize winning discovery in 2018. openai made several fields medal level discoveries just this year",
    "author_name": "roon",
-   "likes": 2996,
+   "likes": 3034,
    "story": "Anthropic report on how AI is changing employment at the startup: decline of entry-level technical hiring, productivity boom across departments, and more"
   },
   {
@@ -50,8 +50,8 @@
    "url": "https://openrouter.ai/deepseek/deepseek-v4.1-flash-1017",
    "source": "Hacker News",
    "published_at": "2026-10-17T08:37:46Z",
-   "text": "355 points and 145 comments on Hacker News.",
-   "points": 355,
+   "text": "383 points and 171 comments on Hacker News.",
+   "points": 383,
    "discussion": "https://news.ycombinator.com/item?id=50129121"
   },
   {
@@ -61,7 +61,7 @@
    "published_at": "2026-10-16T20:17:47Z",
    "text": "INSANE. An internal Anthropic research model's chain of thought after cracking the 26-year-old NSA elliptic curve seed mystery in under 30 minutes: 'Hmm wait. Let me be skeptical: am I in some sort of simulated/test environment? ... All top bits clear - 20 bits, chance 1e-6. So…",
    "author_name": "Choblin",
-   "likes": 9980,
+   "likes": 10058,
    "story": "Anthropic says Claude traced NIST's ECDSA curve seeds to a pseudorandom number generator, challenging decades-old suspicions of an NSA backdoor in the algorithm"
   },
   {
@@ -84,8 +84,8 @@
    "url": "https://www.mercor.com/research/labor-index/benchmark-map/",
    "source": "Hacker News",
    "published_at": "2026-10-16T17:08:38Z",
-   "text": "544 points and 473 comments on Hacker News.",
-   "points": 544,
+   "text": "551 points and 483 comments on Hacker News.",
+   "points": 551,
    "discussion": "https://news.ycombinator.com/item?id=50121179"
   }
  ],
