@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-17T21:38:50Z",
+ "generated_at": "2026-10-17T22:10:54Z",
  "items": [
   {
    "title": "DeepSeek releases V4.1-Flash-1017, an update it says offers “stronger benchmark performance, faster…",
@@ -17,7 +17,7 @@
    "published_at": "2026-10-16T23:26:59Z",
    "text": "after an exciting week of launches (muse wonder [full] & muse spark open), i want to write a note of appreciation to the amazing research teams at meta superintelligence labs on reaching such a special milestone ♥️ we started MSL and TBD a little more than a year ago and set a…",
    "author_name": "Alexandr Wang",
-   "likes": 3824,
+   "likes": 3847,
    "story": "A profile of Alexandr Wang, who sources say is “an operator”, had “all” of Zuckerberg's support during Meta's AI revamp, and is being touted as his successor"
   },
   {
@@ -28,11 +28,11 @@
    "text": "Added CLAUDE_CODE_AUTO_MODE_MODEL to choose the model the client-side auto mode classifier uses; it does not change the model for server-side auto mode · Added an Idle compaction row to /config for turning idle compaction off or back on; the notices shown after an idle compaction now say how to turn it off · Added a notice to /design-sync and /design-login that standalone Claude Design (claude.ai/design) closes by December 14, 2026 · Fixed a \"Prompt is too long\" error when stopping a turn while the conversation was being compacted"
   },
   {
-   "title": "Sources: Anthropic pitched its own AI safety bill to US lawmakers; the bill would limit the circums…",
-   "url": "https://www.politico.com/news/2026/10/16/anthropic-ai-safety-01124654",
-   "source": "Owen Dahlkamp / Politico",
-   "published_at": "2026-10-16T23:01:32Z",
-   "text": "Sources: Anthropic pitched its own AI safety bill to US lawmakers; the bill would limit the circumstances in which the government could block a model's release. Representatives for the artificial intelligence giant Anthropic have quietly pitched Capitol Hill lawmakers on a draft bill …",
+   "title": "As AI giants rack up potential legal liabilities of tens of billions amid safety incidents, insurer…",
+   "url": "https://www.wsj.com/tech/ai/ai-runs-into-its-next-big-obstacle-insurance-8b2d4556?st=xPnTts",
+   "source": "Jean Eaglesham / Wall Stree…",
+   "published_at": "2026-10-17T13:45:53Z",
+   "text": "As AI giants rack up potential legal liabilities of tens of billions amid safety incidents, insurers worry claims may outpace limits on existing coverage. The artificial-intelligence industry's phenomenal rate of growth means claims have the potential to outpace the limits on existing coverage",
    "via": "Techmeme"
   },
   {
@@ -40,8 +40,8 @@
    "url": "https://www.anthropic.com/research/ecdsa-curve-origins",
    "source": "Hacker News",
    "published_at": "2026-10-16T18:55:59Z",
-   "text": "1010 points and 372 comments on Hacker News.",
-   "points": 1010,
+   "text": "1012 points and 372 comments on Hacker News.",
+   "points": 1012,
    "discussion": "https://news.ycombinator.com/item?id=50122800"
   },
   {
@@ -64,8 +64,8 @@
    "url": "https://llmspeed.dev/",
    "source": "Hacker News",
    "published_at": "2026-10-17T04:36:53Z",
-   "text": "225 points and 75 comments on Hacker News.",
-   "points": 225,
+   "text": "226 points and 75 comments on Hacker News.",
+   "points": 226,
    "discussion": "https://news.ycombinator.com/item?id=50127979"
   }
  ],
