@@ -1,13 +1,13 @@
 {
  "schema": 1,
- "generated_at": "2026-10-17T16:57:00Z",
+ "generated_at": "2026-10-17T17:27:41Z",
  "items": [
   {
-   "title": "Reach Security, which develops AI-powered exposure management tools for securing enterprise systems…",
-   "url": "https://fintech.global/2026/10/15/reach-securitys-50m-bet-on-machine-speed-cyber-defence/",
-   "source": "FinTech Global",
-   "published_at": "2026-10-17T06:15:58Z",
-   "text": "Reach Security, which develops AI-powered exposure management tools for securing enterprise systems, raised a $50M+ Series B led by Top Tier Capital Partners. Reach Security has secured more than $50m in a Series B round led by Top Tier Capital Partners, while unveiling Reach Everywhere …",
+   "title": "CEO Amjad Masad says Replit is no longer working with Anthropic, citing cost and saying “ChatGPT is…",
+   "url": "https://techcrunch.com/2026/10/16/replit-is-no-longer-working-with-anthropic-ceo-says/",
+   "source": "TechCrunch",
+   "published_at": "2026-10-16T22:45:57Z",
+   "text": "CEO Amjad Masad says Replit is no longer working with Anthropic, citing cost and saying “ChatGPT is better now”; source: the partnership is still in place. Replit, the AI coding platform that has become a favorite of startup founders and developers, is no longer working with Anthropic …",
    "via": "Techmeme"
   },
   {
@@ -17,7 +17,7 @@
    "published_at": "2026-10-17T08:35:54Z",
    "text": "🚀 DeepSeek-V4.1-Flash-1017 is here! Stronger benchmark performance, faster task completion, and shorter outputs than the previous version—a Pareto improvement in performance and cost. Now live on our website, app, and API. 🛠️ Optimized for @DeepSeekHarness, Tencent CodeBuddy, h…",
    "author_name": "DeepSeek",
-   "likes": 25529,
+   "likes": 26171,
    "story": "DeepSeek releases V4.1-Flash-1017, an update it says offers “stronger benchmark performance, faster task completion, and shorter outputs” than its predecessor"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-10-16T23:26:59Z",
    "text": "after an exciting week of launches (muse wonder [full] & muse spark open), i want to write a note of appreciation to the amazing research teams at meta superintelligence labs on reaching such a special milestone ♥️ we started MSL and TBD a little more than a year ago and set a…",
    "author_name": "Alexandr Wang",
-   "likes": 3594,
+   "likes": 3632,
    "story": "A profile of Alexandr Wang, who sources say is “an operator”, had “all” of Zuckerberg's support during Meta's AI revamp, and is being touted as his successor"
   },
   {
@@ -50,8 +50,8 @@
    "url": "https://www.anthropic.com/research/ecdsa-curve-origins",
    "source": "Hacker News",
    "published_at": "2026-10-16T18:55:59Z",
-   "text": "977 points and 355 comments on Hacker News.",
-   "points": 977,
+   "text": "981 points and 358 comments on Hacker News.",
+   "points": 981,
    "discussion": "https://news.ycombinator.com/item?id=50122800"
   },
   {
@@ -61,7 +61,7 @@
    "published_at": "2026-10-16T22:01:07Z",
    "text": "why would this not be >95%? alphafold made a nobel prize winning discovery in 2018. openai made several fields medal level discoveries just this year",
    "author_name": "roon",
-   "likes": 3218,
+   "likes": 3251,
    "story": "Anthropic report on how AI is changing employment at the startup: decline of entry-level technical hiring, productivity boom across departments, and more"
   },
   {
@@ -84,8 +84,8 @@
    "url": "https://llmspeed.dev/",
    "source": "Hacker News",
    "published_at": "2026-10-17T04:36:53Z",
-   "text": "192 points and 63 comments on Hacker News.",
-   "points": 192,
+   "text": "196 points and 65 comments on Hacker News.",
+   "points": 196,
    "discussion": "https://news.ycombinator.com/item?id=50127979"
   }
  ],
