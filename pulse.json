@@ -1,13 +1,13 @@
 {
  "schema": 1,
- "generated_at": "2026-10-17T14:18:18Z",
+ "generated_at": "2026-10-17T14:49:16Z",
  "items": [
   {
-   "title": "As AI giants rack up potential legal liabilities of tens of billions amid safety incidents, insurer…",
-   "url": "https://www.wsj.com/tech/ai/ai-runs-into-its-next-big-obstacle-insurance-8b2d4556?st=xPnTts",
-   "source": "Jean Eaglesham / Wall Stree…",
-   "published_at": "2026-10-17T13:45:53Z",
-   "text": "As AI giants rack up potential legal liabilities of tens of billions amid safety incidents, insurers worry claims may outpace limits on existing coverage. The artificial-intelligence industry's phenomenal rate of growth means claims have the potential to outpace the limits on existing coverage",
+   "title": "Sources: Anthropic pitched its own AI safety bill to US lawmakers; the bill would limit the circums…",
+   "url": "https://www.politico.com/news/2026/10/16/anthropic-ai-safety-01124654",
+   "source": "Owen Dahlkamp / Politico",
+   "published_at": "2026-10-16T23:01:32Z",
+   "text": "Sources: Anthropic pitched its own AI safety bill to US lawmakers; the bill would limit the circumstances in which the government could block a model's release. Representatives for the artificial intelligence giant Anthropic have quietly pitched Capitol Hill lawmakers on a draft bill …",
    "via": "Techmeme"
   },
   {
@@ -17,7 +17,7 @@
    "published_at": "2026-10-16T23:26:59Z",
    "text": "after an exciting week of launches (muse wonder [full] & muse spark open), i want to write a note of appreciation to the amazing research teams at meta superintelligence labs on reaching such a special milestone ♥️ we started MSL and TBD a little more than a year ago and set a…",
    "author_name": "Alexandr Wang",
-   "likes": 3300,
+   "likes": 3361,
    "story": "A profile of Alexandr Wang, who sources say is “an operator”, had “all” of Zuckerberg's support during Meta's AI revamp, and is being touted as his successor"
   },
   {
@@ -34,15 +34,15 @@
    "published_at": "2026-10-16T22:01:07Z",
    "text": "why would this not be >95%? alphafold made a nobel prize winning discovery in 2018. openai made several fields medal level discoveries just this year",
    "author_name": "roon",
-   "likes": 3034,
+   "likes": 3063,
    "story": "Anthropic report on how AI is changing employment at the startup: decline of entry-level technical hiring, productivity boom across departments, and more"
   },
   {
-   "title": "Sources: Anthropic pitched its own AI safety bill to US lawmakers; the bill would limit the circums…",
-   "url": "https://www.politico.com/news/2026/10/16/anthropic-ai-safety-01124654",
-   "source": "Owen Dahlkamp / Politico",
-   "published_at": "2026-10-16T23:01:32Z",
-   "text": "Sources: Anthropic pitched its own AI safety bill to US lawmakers; the bill would limit the circumstances in which the government could block a model's release. Representatives for the artificial intelligence giant Anthropic have quietly pitched Capitol Hill lawmakers on a draft bill …",
+   "title": "Anthropic says Claude traced NIST's ECDSA curve seeds to a pseudorandom number generator, challengi…",
+   "url": "https://www.anthropic.com/research/ecdsa-curve-origins",
+   "source": "Anthropic",
+   "published_at": "2026-10-16T20:25:54Z",
+   "text": "Anthropic says Claude traced NIST's ECDSA curve seeds to a pseudorandom number generator, challenging decades-old suspicions of an NSA backdoor in the algorithm. “It's just timestamps”: the decades-old mystery of the origins of one of the most popular cryptographic standards has been explained.",
    "via": "Techmeme"
   },
   {
@@ -50,19 +50,9 @@
    "url": "https://openrouter.ai/deepseek/deepseek-v4.1-flash-1017",
    "source": "Hacker News",
    "published_at": "2026-10-17T08:37:46Z",
-   "text": "383 points and 171 comments on Hacker News.",
-   "points": 383,
+   "text": "408 points and 188 comments on Hacker News.",
+   "points": 408,
    "discussion": "https://news.ycombinator.com/item?id=50129121"
-  },
-  {
-   "title": "INSANE. An internal Anthropic research model's chain of thought after cracking the 26-year-old NSA…",
-   "url": "https://x.com/choblin29/status/2111189885168112017",
-   "source": "𝕏 @choblin29",
-   "published_at": "2026-10-16T20:17:47Z",
-   "text": "INSANE. An internal Anthropic research model's chain of thought after cracking the 26-year-old NSA elliptic curve seed mystery in under 30 minutes: 'Hmm wait. Let me be skeptical: am I in some sort of simulated/test environment? ... All top bits clear - 20 bits, chance 1e-6. So…",
-   "author_name": "Choblin",
-   "likes": 10058,
-   "story": "Anthropic says Claude traced NIST's ECDSA curve seeds to a pseudorandom number generator, challenging decades-old suspicions of an NSA backdoor in the algorithm"
   },
   {
    "title": "Anthropic update on independent evaluators",
@@ -84,8 +74,8 @@
    "url": "https://www.mercor.com/research/labor-index/benchmark-map/",
    "source": "Hacker News",
    "published_at": "2026-10-16T17:08:38Z",
-   "text": "551 points and 483 comments on Hacker News.",
-   "points": 551,
+   "text": "552 points and 489 comments on Hacker News.",
+   "points": 552,
    "discussion": "https://news.ycombinator.com/item?id=50121179"
   }
  ],
