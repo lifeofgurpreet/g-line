@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-17T15:52:08Z",
+ "generated_at": "2026-10-17T16:24:22Z",
  "items": [
   {
    "title": "DeepSeek releases V4.1-Flash-1017, an update it says offers “stronger benchmark performance, faster…",
@@ -17,7 +17,7 @@
    "published_at": "2026-10-16T23:26:59Z",
    "text": "after an exciting week of launches (muse wonder [full] & muse spark open), i want to write a note of appreciation to the amazing research teams at meta superintelligence labs on reaching such a special milestone ♥️ we started MSL and TBD a little more than a year ago and set a…",
    "author_name": "Alexandr Wang",
-   "likes": 3496,
+   "likes": 3545,
    "story": "A profile of Alexandr Wang, who sources say is “an operator”, had “all” of Zuckerberg's support during Meta's AI revamp, and is being touted as his successor"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-10-16T22:01:07Z",
    "text": "why would this not be >95%? alphafold made a nobel prize winning discovery in 2018. openai made several fields medal level discoveries just this year",
    "author_name": "roon",
-   "likes": 3155,
+   "likes": 3190,
    "story": "Anthropic report on how AI is changing employment at the startup: decline of entry-level technical hiring, productivity boom across departments, and more"
   },
   {
@@ -50,8 +50,8 @@
    "url": "https://www.anthropic.com/research/ecdsa-curve-origins",
    "source": "Hacker News",
    "published_at": "2026-10-16T18:55:59Z",
-   "text": "962 points and 347 comments on Hacker News.",
-   "points": 962,
+   "text": "969 points and 351 comments on Hacker News.",
+   "points": 969,
    "discussion": "https://news.ycombinator.com/item?id=50122800"
   },
   {
@@ -62,21 +62,21 @@
    "text": "Anthropic announces updates to embedding independent evaluators"
   },
   {
-   "title": "Apple updates App Review Guidelines to crack down on AI nudify apps and apps that reveal undocument…",
-   "url": "https://9to5mac.com/2026/10/16/apples-new-app-store-rules-crack-down-on-ai-nudification-and-bait-and-switch-apps/",
-   "source": "Marcus Mendes / 9to5Mac",
-   "published_at": "2026-10-16T23:46:13Z",
-   "text": "Apple updates App Review Guidelines to crack down on AI nudify apps and apps that reveal undocumented capabilities, like nudification, after app review. Apple updated its App Review Guidelines today with a series of changes meant to strengthen protections against harmful content and deceptive app review practices.",
+   "title": "As AI giants rack up potential legal liabilities of tens of billions amid safety incidents, insurer…",
+   "url": "https://www.wsj.com/tech/ai/ai-runs-into-its-next-big-obstacle-insurance-8b2d4556?st=xPnTts",
+   "source": "Jean Eaglesham / Wall Stree…",
+   "published_at": "2026-10-17T13:45:53Z",
+   "text": "As AI giants rack up potential legal liabilities of tens of billions amid safety incidents, insurers worry claims may outpace limits on existing coverage. The artificial-intelligence industry's phenomenal rate of growth means claims have the potential to outpace the limits on existing coverage",
    "via": "Techmeme"
   },
   {
-   "title": "90% of US working hours are spent on tasks not covered well by AI benchmarks",
-   "url": "https://www.mercor.com/research/labor-index/benchmark-map/",
+   "title": "Show HN: Llmspeed – feel how fast a local LLM runs before you buy the hardware",
+   "url": "https://llmspeed.dev/",
    "source": "Hacker News",
-   "published_at": "2026-10-16T17:08:38Z",
-   "text": "558 points and 498 comments on Hacker News.",
-   "points": 558,
-   "discussion": "https://news.ycombinator.com/item?id=50121179"
+   "published_at": "2026-10-17T04:36:53Z",
+   "text": "183 points and 60 comments on Hacker News.",
+   "points": 183,
+   "discussion": "https://news.ycombinator.com/item?id=50127979"
   }
  ],
  "sources": "curated, Techmeme, X (found via Techmeme, Reddit, the Internet Archive), Claude Code releases, Anthropic, Hacker News, Simon Willison"
