@@ -1,24 +1,24 @@
 {
  "schema": 1,
- "generated_at": "2026-10-17T16:24:22Z",
+ "generated_at": "2026-10-17T16:57:00Z",
  "items": [
   {
-   "title": "DeepSeek releases V4.1-Flash-1017, an update it says offers “stronger benchmark performance, faster…",
-   "url": "https://www.bloomberg.com/news/articles/2026-10-17/deepseek-pushes-out-updated-ai-model-it-says-is-faster-leaner",
-   "source": "Saritha Rai / Bloomberg",
-   "published_at": "2026-10-17T15:01:27Z",
-   "text": "DeepSeek releases V4.1-Flash-1017, an update it says offers “stronger benchmark performance, faster task completion, and shorter outputs” than its predecessor. DeepSeek released an update of its AI model this weekend that it says is faster and leaner, ramping …",
+   "title": "Reach Security, which develops AI-powered exposure management tools for securing enterprise systems…",
+   "url": "https://fintech.global/2026/10/15/reach-securitys-50m-bet-on-machine-speed-cyber-defence/",
+   "source": "FinTech Global",
+   "published_at": "2026-10-17T06:15:58Z",
+   "text": "Reach Security, which develops AI-powered exposure management tools for securing enterprise systems, raised a $50M+ Series B led by Top Tier Capital Partners. Reach Security has secured more than $50m in a Series B round led by Top Tier Capital Partners, while unveiling Reach Everywhere …",
    "via": "Techmeme"
   },
   {
-   "title": "after an exciting week of launches (muse wonder [full] & muse spark open), i want to write a note o…",
-   "url": "https://x.com/alexandr_wang/status/2111237499083252185",
-   "source": "𝕏 @alexandr_wang",
-   "published_at": "2026-10-16T23:26:59Z",
-   "text": "after an exciting week of launches (muse wonder [full] & muse spark open), i want to write a note of appreciation to the amazing research teams at meta superintelligence labs on reaching such a special milestone ♥️ we started MSL and TBD a little more than a year ago and set a…",
-   "author_name": "Alexandr Wang",
-   "likes": 3545,
-   "story": "A profile of Alexandr Wang, who sources say is “an operator”, had “all” of Zuckerberg's support during Meta's AI revamp, and is being touted as his successor"
+   "title": "🚀 DeepSeek-V4.1-Flash-1017 is here! Stronger benchmark performance, faster task completion, and sho…",
+   "url": "https://x.com/deepseek_ai/status/2111375640717033777",
+   "source": "𝕏 @deepseek_ai",
+   "published_at": "2026-10-17T08:35:54Z",
+   "text": "🚀 DeepSeek-V4.1-Flash-1017 is here! Stronger benchmark performance, faster task completion, and shorter outputs than the previous version—a Pareto improvement in performance and cost. Now live on our website, app, and API. 🛠️ Optimized for @DeepSeekHarness, Tencent CodeBuddy, h…",
+   "author_name": "DeepSeek",
+   "likes": 25529,
+   "story": "DeepSeek releases V4.1-Flash-1017, an update it says offers “stronger benchmark performance, faster task completion, and shorter outputs” than its predecessor"
   },
   {
    "title": "Claude Code 2.1.302 released",
@@ -28,14 +28,14 @@
    "text": "Added CLAUDE_CODE_AUTO_MODE_MODEL to choose the model the client-side auto mode classifier uses; it does not change the model for server-side auto mode · Added an Idle compaction row to /config for turning idle compaction off or back on; the notices shown after an idle compaction now say how to turn it off · Added a notice to /design-sync and /design-login that standalone Claude Design (claude.ai/design) closes by December 14, 2026 · Fixed a \"Prompt is too long\" error when stopping a turn while the conversation was being compacted"
   },
   {
-   "title": "why would this not be >95%? alphafold made a nobel prize winning discovery in 2018. openai made sev…",
-   "url": "https://x.com/tszzl/status/2111215889094001017",
-   "source": "𝕏 @tszzl",
-   "published_at": "2026-10-16T22:01:07Z",
-   "text": "why would this not be >95%? alphafold made a nobel prize winning discovery in 2018. openai made several fields medal level discoveries just this year",
-   "author_name": "roon",
-   "likes": 3190,
-   "story": "Anthropic report on how AI is changing employment at the startup: decline of entry-level technical hiring, productivity boom across departments, and more"
+   "title": "after an exciting week of launches (muse wonder [full] & muse spark open), i want to write a note o…",
+   "url": "https://x.com/alexandr_wang/status/2111237499083252185",
+   "source": "𝕏 @alexandr_wang",
+   "published_at": "2026-10-16T23:26:59Z",
+   "text": "after an exciting week of launches (muse wonder [full] & muse spark open), i want to write a note of appreciation to the amazing research teams at meta superintelligence labs on reaching such a special milestone ♥️ we started MSL and TBD a little more than a year ago and set a…",
+   "author_name": "Alexandr Wang",
+   "likes": 3594,
+   "story": "A profile of Alexandr Wang, who sources say is “an operator”, had “all” of Zuckerberg's support during Meta's AI revamp, and is being touted as his successor"
   },
   {
    "title": "Sources: Anthropic pitched its own AI safety bill to US lawmakers; the bill would limit the circums…",
@@ -50,9 +50,19 @@
    "url": "https://www.anthropic.com/research/ecdsa-curve-origins",
    "source": "Hacker News",
    "published_at": "2026-10-16T18:55:59Z",
-   "text": "969 points and 351 comments on Hacker News.",
-   "points": 969,
+   "text": "977 points and 355 comments on Hacker News.",
+   "points": 977,
    "discussion": "https://news.ycombinator.com/item?id=50122800"
+  },
+  {
+   "title": "why would this not be >95%? alphafold made a nobel prize winning discovery in 2018. openai made sev…",
+   "url": "https://x.com/tszzl/status/2111215889094001017",
+   "source": "𝕏 @tszzl",
+   "published_at": "2026-10-16T22:01:07Z",
+   "text": "why would this not be >95%? alphafold made a nobel prize winning discovery in 2018. openai made several fields medal level discoveries just this year",
+   "author_name": "roon",
+   "likes": 3218,
+   "story": "Anthropic report on how AI is changing employment at the startup: decline of entry-level technical hiring, productivity boom across departments, and more"
   },
   {
    "title": "Anthropic update on independent evaluators",
@@ -74,8 +84,8 @@
    "url": "https://llmspeed.dev/",
    "source": "Hacker News",
    "published_at": "2026-10-17T04:36:53Z",
-   "text": "183 points and 60 comments on Hacker News.",
-   "points": 183,
+   "text": "192 points and 63 comments on Hacker News.",
+   "points": 192,
    "discussion": "https://news.ycombinator.com/item?id=50127979"
   }
  ],
