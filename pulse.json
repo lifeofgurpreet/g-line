@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-17T18:31:26Z",
+ "generated_at": "2026-10-17T19:02:42Z",
  "items": [
   {
    "title": "Anthropic report on how AI is changing employment at the startup: decline of entry-level technical…",
@@ -17,7 +17,7 @@
    "published_at": "2026-10-17T08:35:54Z",
    "text": "🚀 DeepSeek-V4.1-Flash-1017 is here! Stronger benchmark performance, faster task completion, and shorter outputs than the previous version—a Pareto improvement in performance and cost. Now live on our website, app, and API. 🛠️ Optimized for @DeepSeekHarness, Tencent CodeBuddy, h…",
    "author_name": "DeepSeek",
-   "likes": 27181,
+   "likes": 27649,
    "story": "DeepSeek releases V4.1-Flash-1017, an update it says offers “stronger benchmark performance, faster task completion, and shorter outputs” than its predecessor"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-10-16T23:26:59Z",
    "text": "after an exciting week of launches (muse wonder [full] & muse spark open), i want to write a note of appreciation to the amazing research teams at meta superintelligence labs on reaching such a special milestone ♥️ we started MSL and TBD a little more than a year ago and set a…",
    "author_name": "Alexandr Wang",
-   "likes": 3698,
+   "likes": 3723,
    "story": "A profile of Alexandr Wang, who sources say is “an operator”, had “all” of Zuckerberg's support during Meta's AI revamp, and is being touted as his successor"
   },
   {
@@ -46,13 +46,23 @@
    "via": "Techmeme"
   },
   {
-   "title": "Amazon uses AI to monitor union risk in UK warehouses",
-   "url": "https://www.opendemocracy.net/amazon-ai-surveillance-monitor-union-activity-uk-warehouses-birmingham-coventry-atlas-sutton-coldfield/",
+   "title": "OpenAI discloses four more rogue incidents",
+   "url": "https://fortune.com/2026/10/16/openai-discloses-four-more-rogue-incidents-involving-financial-medical-and-government-data/",
    "source": "Hacker News",
-   "published_at": "2026-10-17T16:04:23Z",
-   "text": "102 points and 38 comments on Hacker News.",
-   "points": 102,
-   "discussion": "https://news.ycombinator.com/item?id=50132278"
+   "published_at": "2026-10-17T16:31:12Z",
+   "text": "94 points and 80 comments on Hacker News.",
+   "points": 94,
+   "discussion": "https://news.ycombinator.com/item?id=50132502"
+  },
+  {
+   "title": "INSANE. An internal Anthropic research model's chain of thought after cracking the 26-year-old NSA…",
+   "url": "https://x.com/choblin29/status/2111189885168112017",
+   "source": "𝕏 @choblin29",
+   "published_at": "2026-10-16T20:17:47Z",
+   "text": "INSANE. An internal Anthropic research model's chain of thought after cracking the 26-year-old NSA elliptic curve seed mystery in under 30 minutes: 'Hmm wait. Let me be skeptical: am I in some sort of simulated/test environment? ... All top bits clear - 20 bits, chance 1e-6. So…",
+   "author_name": "Choblin",
+   "likes": 10668,
+   "story": "Anthropic says Claude traced NIST's ECDSA curve seeds to a pseudorandom number generator, challenging decades-old suspicions of an NSA backdoor in the algorithm"
   },
   {
    "title": "Anthropic update on independent evaluators",
@@ -70,13 +80,13 @@
    "via": "Techmeme"
   },
   {
-   "title": "OpenAI discloses four more rogue incidents",
-   "url": "https://fortune.com/2026/10/16/openai-discloses-four-more-rogue-incidents-involving-financial-medical-and-government-data/",
+   "title": "Show HN: Llmspeed – feel how fast a local LLM runs before you buy the hardware",
+   "url": "https://llmspeed.dev/",
    "source": "Hacker News",
-   "published_at": "2026-10-17T16:31:12Z",
-   "text": "74 points and 46 comments on Hacker News.",
-   "points": 74,
-   "discussion": "https://news.ycombinator.com/item?id=50132502"
+   "published_at": "2026-10-17T04:36:53Z",
+   "text": "211 points and 67 comments on Hacker News.",
+   "points": 211,
+   "discussion": "https://news.ycombinator.com/item?id=50127979"
   }
  ],
  "sources": "curated, Techmeme, X (found via Techmeme, Reddit, the Internet Archive), Claude Code releases, Anthropic, Hacker News, Simon Willison"
