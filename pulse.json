@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-17T12:43:21Z",
+ "generated_at": "2026-10-17T13:14:27Z",
  "items": [
   {
    "title": "Anthropic report on how AI is changing employment at the startup: decline of entry-level technical…",
@@ -17,7 +17,7 @@
    "published_at": "2026-10-16T23:26:59Z",
    "text": "after an exciting week of launches (muse wonder [full] & muse spark open), i want to write a note of appreciation to the amazing research teams at meta superintelligence labs on reaching such a special milestone ♥️ we started MSL and TBD a little more than a year ago and set a…",
    "author_name": "Alexandr Wang",
-   "likes": 3134,
+   "likes": 3192,
    "story": "A profile of Alexandr Wang, who sources say is “an operator”, had “all” of Zuckerberg's support during Meta's AI revamp, and is being touted as his successor"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-10-16T20:17:47Z",
    "text": "INSANE. An internal Anthropic research model's chain of thought after cracking the 26-year-old NSA elliptic curve seed mystery in under 30 minutes: 'Hmm wait. Let me be skeptical: am I in some sort of simulated/test environment? ... All top bits clear - 20 bits, chance 1e-6. So…",
    "author_name": "Choblin",
-   "likes": 9809,
+   "likes": 9883,
    "story": "Anthropic says Claude traced NIST's ECDSA curve seeds to a pseudorandom number generator, challenging decades-old suspicions of an NSA backdoor in the algorithm"
   },
   {
@@ -50,8 +50,8 @@
    "url": "https://openrouter.ai/deepseek/deepseek-v4.1-flash-1017",
    "source": "Hacker News",
    "published_at": "2026-10-17T08:37:46Z",
-   "text": "272 points and 100 comments on Hacker News.",
-   "points": 272,
+   "text": "308 points and 118 comments on Hacker News.",
+   "points": 308,
    "discussion": "https://news.ycombinator.com/item?id=50129121"
   },
   {
@@ -61,7 +61,7 @@
    "published_at": "2026-10-16T13:31:22Z",
    "text": "Reflection’s first model, Beam, scores 30 on the Artificial Analysis Intelligence Index, placing it #2 among US open weights models Beam is an open weights model with 501B total and 23B active parameters, released on @huggingface Congratulations to @reflection_ai on the…",
    "author_name": "Artificial Analysis",
-   "likes": 564,
+   "likes": 569,
    "story": "Duvo, which develops tech to automate business processes across enterprise systems, including ERPs and legacy apps, raised a $32M Series A led by Balderton"
   },
   {
@@ -72,11 +72,11 @@
    "text": "Anthropic announces updates to embedding independent evaluators"
   },
   {
-   "title": "A profile of Blackstone President Jon Gray, who is making AI his biggest bet, has built a $200B dat…",
-   "url": "https://www.bloomberg.com/news/articles/2026-10-15/blackstone-s-huge-ai-bet-runs-from-data-centers-to-google-and-nvidia-deals?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc5MjIxMjkwMywiZXhwIjoxNzkyODE3NzAzLCJhcnRpY2xlSWQiOiJUTVk1WldLR1pBS0UwMCIsImJjb25uZWN0SWQiOiIwNEFGQkMxQkYyMTA0NUVEODg3MzQxQkQwQzIyNzRBMCJ9.lrEYFQDuJpd9y4WsdMU9WF6koERaL7yVLSAh_CCOb1I",
-   "source": "Preeti Singh / Bloomberg",
-   "published_at": "2026-10-17T12:35:50Z",
-   "text": "A profile of Blackstone President Jon Gray, who is making AI his biggest bet, has built a $200B data center empire, and is building a cloud venture with Google. From data centers and chip financing to AI advice on potential deals, the technology is everywhere at the alternative-investment giant",
+   "title": "Apple updates App Review Guidelines to crack down on AI nudify apps and apps that reveal undocument…",
+   "url": "https://9to5mac.com/2026/10/16/apples-new-app-store-rules-crack-down-on-ai-nudification-and-bait-and-switch-apps/",
+   "source": "Marcus Mendes / 9to5Mac",
+   "published_at": "2026-10-16T23:46:13Z",
+   "text": "Apple updates App Review Guidelines to crack down on AI nudify apps and apps that reveal undocumented capabilities, like nudification, after app review. Apple updated its App Review Guidelines today with a series of changes meant to strengthen protections against harmful content and deceptive app review practices.",
    "via": "Techmeme"
   },
   {
@@ -84,8 +84,8 @@
    "url": "https://www.mercor.com/research/labor-index/benchmark-map/",
    "source": "Hacker News",
    "published_at": "2026-10-16T17:08:38Z",
-   "text": "532 points and 452 comments on Hacker News.",
-   "points": 532,
+   "text": "537 points and 456 comments on Hacker News.",
+   "points": 537,
    "discussion": "https://news.ycombinator.com/item?id=50121179"
   }
  ],
