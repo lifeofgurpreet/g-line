@@ -1,24 +1,24 @@
 {
  "schema": 1,
- "generated_at": "2026-10-17T05:28:33Z",
+ "generated_at": "2026-10-17T06:00:05Z",
  "items": [
   {
-   "title": "Anthropic says Claude traced NIST's ECDSA curve seeds to a pseudorandom number generator, challengi…",
-   "url": "https://www.anthropic.com/research/ecdsa-curve-origins",
-   "source": "Anthropic",
-   "published_at": "2026-10-16T20:25:54Z",
-   "text": "Anthropic says Claude traced NIST's ECDSA curve seeds to a pseudorandom number generator, challenging decades-old suspicions of an NSA backdoor in the algorithm. “It's just timestamps”: the decades-old mystery of the origins of one of the most popular cryptographic standards has been explained.",
+   "title": "Mistlabs, which develops Ambi, an ambient AI app for iPhone, Apple Watch, and Mac that learns about…",
+   "url": "https://siliconangle.com/2026/10/12/mistlabs-takes-its-ambi-ai-system-out-of-beta-on-apple-devices-with-26m-in-funding/",
+   "source": "Duncan Riley / SiliconANGLE",
+   "published_at": "2026-10-17T05:05:55Z",
+   "text": "Mistlabs, which develops Ambi, an ambient AI app for iPhone, Apple Watch, and Mac that learns about users from conversations, raised a $26M pre-Series A. Ambient intelligence startup Mistlabs Ltd. today brought its Ambi artificial intelligence system out of beta test on Apple Inc. devices, backed by $26 million in new funding.",
    "via": "Techmeme"
   },
   {
-   "title": "why would this not be >95%? alphafold made a nobel prize winning discovery in 2018. openai made sev…",
-   "url": "https://x.com/tszzl/status/2111215889094001017",
-   "source": "𝕏 @tszzl",
-   "published_at": "2026-10-16T22:01:07Z",
-   "text": "why would this not be >95%? alphafold made a nobel prize winning discovery in 2018. openai made several fields medal level discoveries just this year",
-   "author_name": "roon",
-   "likes": 2178,
-   "story": "Survey of Anthropic staffers and US adults: 39% of US adults vs. 91% of staffers expect AI will be able to make a Nobel-level discovery by 2030, and more"
+   "title": "INSANE. An internal Anthropic research model's chain of thought after cracking the 26-year-old NSA…",
+   "url": "https://x.com/choblin29/status/2111189885168112017",
+   "source": "𝕏 @choblin29",
+   "published_at": "2026-10-16T20:17:47Z",
+   "text": "INSANE. An internal Anthropic research model's chain of thought after cracking the 26-year-old NSA elliptic curve seed mystery in under 30 minutes: 'Hmm wait. Let me be skeptical: am I in some sort of simulated/test environment? ... All top bits clear - 20 bits, chance 1e-6. So…",
+   "author_name": "Choblin",
+   "likes": 8281,
+   "story": "Anthropic says Claude traced NIST's ECDSA curve seeds to a pseudorandom number generator, challenging decades-old suspicions of an NSA backdoor in the algorithm"
   },
   {
    "title": "Claude Code 2.1.302 released",
@@ -28,21 +28,21 @@
    "text": "Added CLAUDE_CODE_AUTO_MODE_MODEL to choose the model the client-side auto mode classifier uses; it does not change the model for server-side auto mode · Added an Idle compaction row to /config for turning idle compaction off or back on; the notices shown after an idle compaction now say how to turn it off · Added a notice to /design-sync and /design-login that standalone Claude Design (claude.ai/design) closes by December 14, 2026 · Fixed a \"Prompt is too long\" error when stopping a turn while the conversation was being compacted"
   },
   {
-   "title": "Reflection’s first model, Beam, scores 30 on the Artificial Analysis Intelligence Index, placing it…",
-   "url": "https://x.com/ArtificialAnlys/status/2111087606759030831",
-   "source": "𝕏 @ArtificialAnlys",
-   "published_at": "2026-10-16T13:31:22Z",
-   "text": "Reflection’s first model, Beam, scores 30 on the Artificial Analysis Intelligence Index, placing it #2 among US open weights models Beam is an open weights model with 501B total and 23B active parameters, released on @huggingface Congratulations to @reflection_ai on the…",
-   "author_name": "Artificial Analysis",
-   "likes": 516,
-   "story": "Reflection AI releases Apache 2.0-licensed weights for Beam, a 501B-parameter model, trained with RL that penalized unnecessary tokens"
+   "title": "why would this not be >95%? alphafold made a nobel prize winning discovery in 2018. openai made sev…",
+   "url": "https://x.com/tszzl/status/2111215889094001017",
+   "source": "𝕏 @tszzl",
+   "published_at": "2026-10-16T22:01:07Z",
+   "text": "why would this not be >95%? alphafold made a nobel prize winning discovery in 2018. openai made several fields medal level discoveries just this year",
+   "author_name": "roon",
+   "likes": 2250,
+   "story": "Survey of Anthropic staffers and US adults: 39% of US adults vs. 91% of staffers expect AI will be able to make a Nobel-level discovery by 2030, and more"
   },
   {
-   "title": "China is considering adding 23 AI technologies to its export control list, including LLMs and chip…",
-   "url": "https://www.bloomberg.com/news/articles/2026-10-16/china-proposes-export-controls-on-ai-models-chips-and-agents",
-   "source": "Bloomberg",
-   "published_at": "2026-10-16T10:36:15Z",
-   "text": "China is considering adding 23 AI technologies to its export control list, including LLMs and chip designs, to keep closer control over homegrown advancements. China proposed adding advanced artificial intelligence technologies to its export-control list, potentially restricting overseas transfers …",
+   "title": "Reflection AI releases Apache 2.0-licensed weights for Beam, a 501B-parameter model, trained with R…",
+   "url": "https://venturebeat.com/technology/reflections-beam-aims-to-undercut-chinese-open-models-with-fewer-tokens-not-cheaper-tokens",
+   "source": "Matt Marshall / VentureBeat",
+   "published_at": "2026-10-16T16:40:52Z",
+   "text": "Reflection AI releases Apache 2.0-licensed weights for Beam, a 501B-parameter model, trained with RL that penalized unnecessary tokens. Reflection AI today released the weights of Beam, its first open model, and is pitching it against the Chinese open models that many U.S. companies …",
    "via": "Techmeme"
   },
   {
@@ -50,8 +50,8 @@
    "url": "https://www.mercor.com/research/labor-index/benchmark-map/",
    "source": "Hacker News",
    "published_at": "2026-10-16T17:08:38Z",
-   "text": "453 points and 391 comments on Hacker News.",
-   "points": 453,
+   "text": "458 points and 397 comments on Hacker News.",
+   "points": 458,
    "discussion": "https://news.ycombinator.com/item?id=50121179"
   },
   {
@@ -62,11 +62,11 @@
    "text": "Anthropic announces updates to embedding independent evaluators"
   },
   {
-   "title": "Workday agrees to acquire C1.ai, formerly known as ConductorOne, which develops enterprise software…",
-   "url": "https://www.bizjournals.com/portland/news/2026/10/13/c1-workday-acquisition.html?page=all",
-   "source": "Malia Spencer / Portland Bu…",
-   "published_at": "2026-10-17T04:50:55Z",
-   "text": "Workday agrees to acquire C1.ai, formerly known as ConductorOne, which develops enterprise software to manage human and AI agent identities and has raised $111M. Software company C1, whose headquarters has fluctuated between San Francisco and Portland, is being acquired by California-based Workday Inc. (Nasdaq: WDAY).",
+   "title": "Sources: Anthropic pitched its own AI safety bill to US lawmakers; the bill would limit the circums…",
+   "url": "https://www.politico.com/news/2026/10/16/anthropic-ai-safety-01124654",
+   "source": "Owen Dahlkamp / Politico",
+   "published_at": "2026-10-16T23:01:32Z",
+   "text": "Sources: Anthropic pitched its own AI safety bill to US lawmakers; the bill would limit the circumstances in which the government could block a model's release. Representatives for the artificial intelligence giant Anthropic have quietly pitched Capitol Hill lawmakers on a draft bill …",
    "via": "Techmeme"
   },
   {
@@ -74,8 +74,8 @@
    "url": "https://claude.dev/blog/solving-code-review-at-anthropic/",
    "source": "Hacker News",
    "published_at": "2026-10-16T19:04:47Z",
-   "text": "288 points and 265 comments on Hacker News.",
-   "points": 288,
+   "text": "296 points and 277 comments on Hacker News.",
+   "points": 296,
    "discussion": "https://news.ycombinator.com/item?id=50122951"
   }
  ],
