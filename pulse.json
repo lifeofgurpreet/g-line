@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-18T00:19:30Z",
+ "generated_at": "2026-10-18T00:51:18Z",
  "items": [
   {
    "title": "Reach Security, which develops AI-powered exposure management tools for securing enterprise systems…",
@@ -17,7 +17,7 @@
    "published_at": "2026-10-17T08:35:54Z",
    "text": "🚀 DeepSeek-V4.1-Flash-1017 is here! Stronger benchmark performance, faster task completion, and shorter outputs than the previous version—a Pareto improvement in performance and cost. Now live on our website, app, and API. 🛠️ Optimized for @DeepSeekHarness, Tencent CodeBuddy, h…",
    "author_name": "DeepSeek",
-   "likes": 30126,
+   "likes": 30351,
    "story": "DeepSeek releases V4.1-Flash-1017, an update it says offers “stronger benchmark performance, faster task completion, and shorter outputs” than its predecessor"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-10-16T23:26:59Z",
    "text": "after an exciting week of launches (muse wonder [full] & muse spark open), i want to write a note of appreciation to the amazing research teams at meta superintelligence labs on reaching such a special milestone ♥️ we started MSL and TBD a little more than a year ago and set a…",
    "author_name": "Alexandr Wang",
-   "likes": 3940,
+   "likes": 3971,
    "story": "A profile of Alexandr Wang, who sources say is “an operator”, had “all” of Zuckerberg's support during Meta's AI revamp, and is being touted as his successor"
   },
   {
@@ -50,8 +50,8 @@
    "url": "https://www.anthropic.com/research/ecdsa-curve-origins",
    "source": "Hacker News",
    "published_at": "2026-10-16T18:55:59Z",
-   "text": "1020 points and 372 comments on Hacker News.",
-   "points": 1020,
+   "text": "1023 points and 372 comments on Hacker News.",
+   "points": 1023,
    "discussion": "https://news.ycombinator.com/item?id=50122800"
   },
   {
@@ -70,13 +70,13 @@
    "via": "Techmeme"
   },
   {
-   "title": "You could have invented transformers from memory",
-   "url": "https://alexwang.ai/posts/associative-memory/",
+   "title": "Codex Desktop continuously generates Crashpad pending dumps",
+   "url": "https://github.com/openai/codex/issues/25921",
    "source": "Hacker News",
-   "published_at": "2026-10-16T19:01:17Z",
-   "text": "495 points and 116 comments on Hacker News.",
-   "points": 495,
-   "discussion": "https://news.ycombinator.com/item?id=50122878"
+   "published_at": "2026-10-17T17:45:08Z",
+   "text": "63 points and 26 comments on Hacker News.",
+   "points": 63,
+   "discussion": "https://news.ycombinator.com/item?id=50133231"
   }
  ],
  "sources": "curated, Techmeme, X (found via Techmeme, Reddit, the Internet Archive), Claude Code releases, Anthropic, Hacker News, Simon Willison"
