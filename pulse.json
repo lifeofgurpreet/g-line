@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-18T21:47:24Z",
+ "generated_at": "2026-10-18T22:20:15Z",
  "items": [
   {
    "title": "Anthropic says it's committing 5% of its shares to a Public Benefit Fund, for a total of ~20% with…",
@@ -17,7 +17,7 @@
    "published_at": "2026-10-17T08:35:54Z",
    "text": "🚀 DeepSeek-V4.1-Flash-1017 is here! Stronger benchmark performance, faster task completion, and shorter outputs than the previous version—a Pareto improvement in performance and cost. Now live on our website, app, and API. 🛠️ Optimized for @DeepSeekHarness, Tencent CodeBuddy, h…",
    "author_name": "DeepSeek",
-   "likes": 35376,
+   "likes": 35396,
    "story": "DeepSeek releases V4.1-Flash-1017, an update it says offers “stronger benchmark performance, faster task completion, and shorter outputs” than its predecessor"
   },
   {
@@ -34,8 +34,8 @@
    "published_at": "2026-10-18T15:13:01Z",
    "text": "OpenCode is currently under a sustained cyberattack, and mid-incident they ran into the same problem Hugging Face did: the frontier models they were using for defense began refusing to help fight attacking agents because analyzing the attacks started triggering safety guardrails.",
    "author_name": "Andrew Curran",
-   "likes": 3503,
-   "story": "Filing: Disney agreed to hire 60+ staff from Character.AI and pay them ~$180M over three years, plus $30M for retention awards; a bankruptcy judge must approve"
+   "likes": 3585,
+   "story": "MapQuest adds a Surveillance Layer to its mobile app showing license plate readers and cameras from 10+ companies including Flock, using OpenStreetMap data"
   },
   {
    "title": "Microsoft cancels its deal to be the anchor tenant and rent 23K Nvidia AI chips at Nscale's Essex,…",
@@ -46,13 +46,13 @@
    "via": "Techmeme"
   },
   {
-   "title": "DeepSeek search and fetch – $0.75 per 1000 successful requests",
-   "url": "https://api-docs.deepseek.com/guides/search/",
+   "title": "Hybrid Reasoning Agents: LLM agents that think in latent space, act through text",
+   "url": "https://arxiv.org/abs/2610.18861",
    "source": "Hacker News",
-   "published_at": "2026-10-18T06:50:36Z",
-   "text": "503 points and 247 comments on Hacker News.",
-   "points": 503,
-   "discussion": "https://news.ycombinator.com/item?id=50138531"
+   "published_at": "2026-10-18T20:48:14Z",
+   "text": "78 points and 31 comments on Hacker News.",
+   "points": 78,
+   "discussion": "https://news.ycombinator.com/item?id=50145337"
   },
   {
    "title": "Anthropic update on independent evaluators",
@@ -70,13 +70,13 @@
    "via": "Techmeme"
   },
   {
-   "title": "Show HN: Sphinx – A hook that quizzes you on your AI's code before shipping",
-   "url": "https://sphinx-six-theta.vercel.app/",
+   "title": "DeepSeek search and fetch – $0.75 per 1000 successful requests",
+   "url": "https://api-docs.deepseek.com/guides/search/",
    "source": "Hacker News",
-   "published_at": "2026-10-18T04:33:49Z",
-   "text": "234 points and 76 comments on Hacker News.",
-   "points": 234,
-   "discussion": "https://news.ycombinator.com/item?id=50137950"
+   "published_at": "2026-10-18T06:50:36Z",
+   "text": "511 points and 251 comments on Hacker News.",
+   "points": 511,
+   "discussion": "https://news.ycombinator.com/item?id=50138531"
   }
  ],
  "sources": "curated, Techmeme, X (found via Techmeme, Reddit, the Internet Archive), Claude Code releases, Anthropic, Hacker News, Simon Willison"
