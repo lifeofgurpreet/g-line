@@ -1,13 +1,13 @@
 {
  "schema": 1,
- "generated_at": "2026-10-18T05:41:14Z",
+ "generated_at": "2026-10-18T06:14:09Z",
  "items": [
   {
-   "title": "A profile of Blackstone President Jon Gray, who is making AI his biggest bet, has built a $200B dat…",
-   "url": "https://www.bloomberg.com/news/articles/2026-10-15/blackstone-s-huge-ai-bet-runs-from-data-centers-to-google-and-nvidia-deals?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc5MjIxMjkwMywiZXhwIjoxNzkyODE3NzAzLCJhcnRpY2xlSWQiOiJUTVk1WldLR1pBS0UwMCIsImJjb25uZWN0SWQiOiIwNEFGQkMxQkYyMTA0NUVEODg3MzQxQkQwQzIyNzRBMCJ9.lrEYFQDuJpd9y4WsdMU9WF6koERaL7yVLSAh_CCOb1I",
-   "source": "Preeti Singh / Bloomberg",
-   "published_at": "2026-10-17T12:35:50Z",
-   "text": "A profile of Blackstone President Jon Gray, who is making AI his biggest bet, has built a $200B data center empire, and is building a cloud venture with Google. From data centers and chip financing to AI advice on potential deals, the technology is everywhere at the alternative-investment giant",
+   "title": "Holyvolt, which develops AI tools for making and testing new battery materials, raised $45M from Zo…",
+   "url": "https://fortune.com/2026/10/15/holyvolt-funding-45-million-battery-startup-ai-sweden-michigan-prast-ingvarsson/",
+   "source": "Nick Lichtenberg / Fortune",
+   "published_at": "2026-10-18T05:40:53Z",
+   "text": "Holyvolt, which develops AI tools for making and testing new battery materials, raised $45M from Zone II, CC.VC, and others, a source says at a $245M valuation. Steven Prast is old enough to remember when a mobile phone came in a bag. It was too heavy to carry around, so most people mounted it in the car.",
    "via": "Techmeme"
   },
   {
@@ -17,7 +17,7 @@
    "published_at": "2026-10-17T08:35:54Z",
    "text": "🚀 DeepSeek-V4.1-Flash-1017 is here! Stronger benchmark performance, faster task completion, and shorter outputs than the previous version—a Pareto improvement in performance and cost. Now live on our website, app, and API. 🛠️ Optimized for @DeepSeekHarness, Tencent CodeBuddy, h…",
    "author_name": "DeepSeek",
-   "likes": 32419,
+   "likes": 32570,
    "story": "DeepSeek releases V4.1-Flash-1017, an update it says offers “stronger benchmark performance, faster task completion, and shorter outputs” than its predecessor"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-10-17T19:15:31Z",
    "text": "OpenCode published an official statement regarding a recent distillation attack. > Earlier today, OpenAI, Anthropic and Google balances of some OpenCode users got drained. > Reportedly, only 1.4% of users were affected and these users were notified via an email. This is a…",
    "author_name": "🚨 AI News | TestingCatalog",
-   "likes": 356,
+   "likes": 364,
    "story": "Anomaly Innovations, behind coding agent OpenCode, says a breach hit ~1.4% of OpenCode Console users and their API keys, in a “large scale distillation attack”"
   },
   {
@@ -50,8 +50,8 @@
    "url": "https://www.anthropic.com/research/ecdsa-curve-origins",
    "source": "Hacker News",
    "published_at": "2026-10-16T18:55:59Z",
-   "text": "1029 points and 379 comments on Hacker News.",
-   "points": 1029,
+   "text": "1031 points and 380 comments on Hacker News.",
+   "points": 1031,
    "discussion": "https://news.ycombinator.com/item?id=50122800"
   },
   {
@@ -74,8 +74,8 @@
    "url": "https://github.com/openai/codex/issues/25921",
    "source": "Hacker News",
    "published_at": "2026-10-17T17:45:08Z",
-   "text": "111 points and 39 comments on Hacker News.",
-   "points": 111,
+   "text": "117 points and 41 comments on Hacker News.",
+   "points": 117,
    "discussion": "https://news.ycombinator.com/item?id=50133231"
   }
  ],
