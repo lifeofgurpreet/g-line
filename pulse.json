@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-18T18:00:54Z",
+ "generated_at": "2026-10-18T18:33:09Z",
  "items": [
   {
    "title": "Microsoft cancels its deal to be the anchor tenant and rent 23K Nvidia AI chips at Nscale's Essex,…",
@@ -17,7 +17,7 @@
    "published_at": "2026-10-17T08:35:54Z",
    "text": "🚀 DeepSeek-V4.1-Flash-1017 is here! Stronger benchmark performance, faster task completion, and shorter outputs than the previous version—a Pareto improvement in performance and cost. Now live on our website, app, and API. 🛠️ Optimized for @DeepSeekHarness, Tencent CodeBuddy, h…",
    "author_name": "DeepSeek",
-   "likes": 35080,
+   "likes": 35135,
    "story": "DeepSeek releases V4.1-Flash-1017, an update it says offers “stronger benchmark performance, faster task completion, and shorter outputs” than its predecessor"
   },
   {
@@ -34,32 +34,8 @@
    "published_at": "2026-10-18T15:13:01Z",
    "text": "OpenCode is currently under a sustained cyberattack, and mid-incident they ran into the same problem Hugging Face did: the frontier models they were using for defense began refusing to help fight attacking agents because analyzing the attacks started triggering safety guardrails.",
    "author_name": "Andrew Curran",
-   "likes": 2341,
-   "story": "Turkish police detained Hex and PulseChain founder Richard Heart on Oct. 14, seizing $7M+ in cash and six cold wallets; HEX fell nearly 50% on initial reports"
-  },
-  {
-   "title": "Sources: Anthropic is consulting law firms on deal negotiation tactics as it develops AI agents to…",
-   "url": "https://www.ft.com/content/f7c26ac0-f5f2-443a-86b2-39d62f7920a9",
-   "source": "Cristina Criddle / Financia…",
-   "published_at": "2026-10-18T05:11:12Z",
-   "text": "Sources: Anthropic is consulting law firms on deal negotiation tactics as it develops AI agents to negotiate on humans' behalf and interact with AI counterparts. Tech companies are being forced to confront the rules of negotiation when machines act on humans' behalf",
-   "via": "Techmeme"
-  },
-  {
-   "title": "DeepSeek search and fetch – $0.75 per 1000 successful requests",
-   "url": "https://api-docs.deepseek.com/guides/search/",
-   "source": "Hacker News",
-   "published_at": "2026-10-18T06:50:36Z",
-   "text": "441 points and 213 comments on Hacker News.",
-   "points": 441,
-   "discussion": "https://news.ycombinator.com/item?id=50138531"
-  },
-  {
-   "title": "Anthropic update on independent evaluators",
-   "url": "https://www.anthropic.com/news/an-update-on-independent-evaluators",
-   "source": "Anthropic",
-   "published_at": "2026-10-16T20:30:25Z",
-   "text": "Anthropic announces updates to embedding independent evaluators"
+   "likes": 2663,
+   "story": "Google says “magic state cultivation” works in practice on its Willow quantum processor, calling it a breakthrough that reduces errors by about 40x"
   },
   {
    "title": "RegLayer: 47+ large US data center projects were delayed, withdrawn, or blocked in 2026; Bernstein…",
@@ -70,12 +46,36 @@
    "via": "Techmeme"
   },
   {
+   "title": "DeepSeek search and fetch – $0.75 per 1000 successful requests",
+   "url": "https://api-docs.deepseek.com/guides/search/",
+   "source": "Hacker News",
+   "published_at": "2026-10-18T06:50:36Z",
+   "text": "453 points and 219 comments on Hacker News.",
+   "points": 453,
+   "discussion": "https://news.ycombinator.com/item?id=50138531"
+  },
+  {
+   "title": "Investing in the public benefit",
+   "url": "https://www.anthropic.com/news/public-benefit-fund",
+   "source": "Anthropic",
+   "published_at": "2026-10-18T18:05:05Z",
+   "text": "We’re committing a portion of Anthropic’s shares to the Anthropic Public Benefit Fund, a new entity with a structure that increases the stake as the company grows."
+  },
+  {
+   "title": "Sources: Anthropic is consulting law firms on deal negotiation tactics as it develops AI agents to…",
+   "url": "https://www.ft.com/content/f7c26ac0-f5f2-443a-86b2-39d62f7920a9",
+   "source": "Cristina Criddle / Financia…",
+   "published_at": "2026-10-18T05:11:12Z",
+   "text": "Sources: Anthropic is consulting law firms on deal negotiation tactics as it develops AI agents to negotiate on humans' behalf and interact with AI counterparts. Tech companies are being forced to confront the rules of negotiation when machines act on humans' behalf",
+   "via": "Techmeme"
+  },
+  {
    "title": "Show HN: Sphinx – A hook that quizzes you on your AI's code before shipping",
    "url": "https://sphinx-six-theta.vercel.app/",
    "source": "Hacker News",
    "published_at": "2026-10-18T04:33:49Z",
-   "text": "213 points and 73 comments on Hacker News.",
-   "points": 213,
+   "text": "219 points and 74 comments on Hacker News.",
+   "points": 219,
    "discussion": "https://news.ycombinator.com/item?id=50137950"
   }
  ],
