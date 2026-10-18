@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-18T12:06:23Z",
+ "generated_at": "2026-10-18T12:38:46Z",
  "items": [
   {
    "title": "AI debt worries mount as CoreWeave's bond yield tops 15%, insuring SoftBank debt gets pricier, and…",
@@ -17,7 +17,7 @@
    "published_at": "2026-10-17T08:35:54Z",
    "text": "🚀 DeepSeek-V4.1-Flash-1017 is here! Stronger benchmark performance, faster task completion, and shorter outputs than the previous version—a Pareto improvement in performance and cost. Now live on our website, app, and API. 🛠️ Optimized for @DeepSeekHarness, Tencent CodeBuddy, h…",
    "author_name": "DeepSeek",
-   "likes": 33982,
+   "likes": 34077,
    "story": "DeepSeek releases V4.1-Flash-1017, an update it says offers “stronger benchmark performance, faster task completion, and shorter outputs” than its predecessor"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-10-17T19:15:31Z",
    "text": "OpenCode published an official statement regarding a recent distillation attack. > Earlier today, OpenAI, Anthropic and Google balances of some OpenCode users got drained. > Reportedly, only 1.4% of users were affected and these users were notified via an email. This is a…",
    "author_name": "🚨 AI News | TestingCatalog",
-   "likes": 429,
+   "likes": 432,
    "story": "Anomaly Innovations, behind coding agent OpenCode, says a breach hit ~1.4% of OpenCode Console users and their API keys, in a “large scale distillation attack”"
   },
   {
@@ -50,8 +50,8 @@
    "url": "https://api-docs.deepseek.com/guides/search/",
    "source": "Hacker News",
    "published_at": "2026-10-18T06:50:36Z",
-   "text": "262 points and 119 comments on Hacker News.",
-   "points": 262,
+   "text": "282 points and 126 comments on Hacker News.",
+   "points": 282,
    "discussion": "https://news.ycombinator.com/item?id=50138531"
   },
   {
@@ -62,11 +62,11 @@
    "text": "Anthropic announces updates to embedding independent evaluators"
   },
   {
-   "title": "An interview with Microsoft CEO Satya Nadella on the Nvidia RTX Spark-powered Surface Laptop Ultra,…",
-   "url": "https://thenewthings.com/p/microsoft-ceo-on-rogue-ai-agents-super-laptops-and-clippy",
-   "source": "Joanna Stern / The New Thin…",
-   "published_at": "2026-10-18T01:20:52Z",
-   "text": "An interview with Microsoft CEO Satya Nadella on the Nvidia RTX Spark-powered Surface Laptop Ultra, plans to make Windows a safer OS to run AI agents, and more. My exclusive interview with Satya Nadella on the new Surface Laptop Ultra and Microsoft's plan to make Windows safer for AI agents",
+   "title": "Holyvolt, which develops AI tools for making and testing new battery materials, raised $45M from Zo…",
+   "url": "https://fortune.com/2026/10/15/holyvolt-funding-45-million-battery-startup-ai-sweden-michigan-prast-ingvarsson/",
+   "source": "Nick Lichtenberg / Fortune",
+   "published_at": "2026-10-18T05:40:53Z",
+   "text": "Holyvolt, which develops AI tools for making and testing new battery materials, raised $45M from Zone II, CC.VC, and others, a source says at a $245M valuation. Steven Prast is old enough to remember when a mobile phone came in a bag. It was too heavy to carry around, so most people mounted it in the car.",
    "via": "Techmeme"
   },
   {
@@ -74,8 +74,8 @@
    "url": "https://sphinx-six-theta.vercel.app/",
    "source": "Hacker News",
    "published_at": "2026-10-18T04:33:49Z",
-   "text": "154 points and 46 comments on Hacker News.",
-   "points": 154,
+   "text": "163 points and 48 comments on Hacker News.",
+   "points": 163,
    "discussion": "https://news.ycombinator.com/item?id=50137950"
   }
  ],
