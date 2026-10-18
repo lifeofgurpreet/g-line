@@ -1,13 +1,13 @@
 {
  "schema": 1,
- "generated_at": "2026-10-18T14:47:48Z",
+ "generated_at": "2026-10-18T15:20:22Z",
  "items": [
   {
-   "title": "Sources: Anthropic is consulting law firms on deal negotiation tactics as it develops AI agents to…",
-   "url": "https://www.ft.com/content/f7c26ac0-f5f2-443a-86b2-39d62f7920a9",
-   "source": "Cristina Criddle / Financia…",
-   "published_at": "2026-10-18T05:11:12Z",
-   "text": "Sources: Anthropic is consulting law firms on deal negotiation tactics as it develops AI agents to negotiate on humans' behalf and interact with AI counterparts. Tech companies are being forced to confront the rules of negotiation when machines act on humans' behalf",
+   "title": "RegLayer: 47+ large US data center projects were delayed, withdrawn, or blocked in 2026; Bernstein…",
+   "url": "https://www.ft.com/content/9ea5a37d-15c9-4d5b-94d6-719048c9cd3c",
+   "source": "Financial Times",
+   "published_at": "2026-10-18T06:15:51Z",
+   "text": "RegLayer: 47+ large US data center projects were delayed, withdrawn, or blocked in 2026; Bernstein says ~35% of the planned US data center pipeline is credible. A vast bet on the future of the technology is running into the unforgiving economics of the physical world",
    "via": "Techmeme"
   },
   {
@@ -17,7 +17,7 @@
    "published_at": "2026-10-17T08:35:54Z",
    "text": "🚀 DeepSeek-V4.1-Flash-1017 is here! Stronger benchmark performance, faster task completion, and shorter outputs than the previous version—a Pareto improvement in performance and cost. Now live on our website, app, and API. 🛠️ Optimized for @DeepSeekHarness, Tencent CodeBuddy, h…",
    "author_name": "DeepSeek",
-   "likes": 34504,
+   "likes": 34616,
    "story": "DeepSeek releases V4.1-Flash-1017, an update it says offers “stronger benchmark performance, faster task completion, and shorter outputs” than its predecessor"
   },
   {
@@ -34,32 +34,8 @@
    "published_at": "2026-10-17T19:15:31Z",
    "text": "OpenCode published an official statement regarding a recent distillation attack. > Earlier today, OpenAI, Anthropic and Google balances of some OpenCode users got drained. > Reportedly, only 1.4% of users were affected and these users were notified via an email. This is a…",
    "author_name": "🚨 AI News | TestingCatalog",
-   "likes": 438,
+   "likes": 443,
    "story": "Anomaly Innovations, behind coding agent OpenCode, says a breach hit ~1.4% of OpenCode Console users and their API keys, in a “large scale distillation attack”"
-  },
-  {
-   "title": "RegLayer: 47+ large US data center projects were delayed, withdrawn, or blocked in 2026; Bernstein…",
-   "url": "https://www.ft.com/content/9ea5a37d-15c9-4d5b-94d6-719048c9cd3c",
-   "source": "Financial Times",
-   "published_at": "2026-10-18T06:15:51Z",
-   "text": "RegLayer: 47+ large US data center projects were delayed, withdrawn, or blocked in 2026; Bernstein says ~35% of the planned US data center pipeline is credible. A vast bet on the future of the technology is running into the unforgiving economics of the physical world",
-   "via": "Techmeme"
-  },
-  {
-   "title": "DeepSeek search and fetch – $0.75 per 1000 successful requests",
-   "url": "https://api-docs.deepseek.com/guides/search/",
-   "source": "Hacker News",
-   "published_at": "2026-10-18T06:50:36Z",
-   "text": "363 points and 182 comments on Hacker News.",
-   "points": 363,
-   "discussion": "https://news.ycombinator.com/item?id=50138531"
-  },
-  {
-   "title": "Anthropic update on independent evaluators",
-   "url": "https://www.anthropic.com/news/an-update-on-independent-evaluators",
-   "source": "Anthropic",
-   "published_at": "2026-10-16T20:30:25Z",
-   "text": "Anthropic announces updates to embedding independent evaluators"
   },
   {
    "title": "Microsoft cancels its deal to be the anchor tenant and rent 23K Nvidia AI chips at Nscale's Essex,…",
@@ -70,12 +46,36 @@
    "via": "Techmeme"
   },
   {
+   "title": "DeepSeek search and fetch – $0.75 per 1000 successful requests",
+   "url": "https://api-docs.deepseek.com/guides/search/",
+   "source": "Hacker News",
+   "published_at": "2026-10-18T06:50:36Z",
+   "text": "381 points and 189 comments on Hacker News.",
+   "points": 381,
+   "discussion": "https://news.ycombinator.com/item?id=50138531"
+  },
+  {
+   "title": "Anthropic update on independent evaluators",
+   "url": "https://www.anthropic.com/news/an-update-on-independent-evaluators",
+   "source": "Anthropic",
+   "published_at": "2026-10-16T20:30:25Z",
+   "text": "Anthropic announces updates to embedding independent evaluators"
+  },
+  {
+   "title": "Sources: Anthropic is consulting law firms on deal negotiation tactics as it develops AI agents to…",
+   "url": "https://www.ft.com/content/f7c26ac0-f5f2-443a-86b2-39d62f7920a9",
+   "source": "Cristina Criddle / Financia…",
+   "published_at": "2026-10-18T05:11:12Z",
+   "text": "Sources: Anthropic is consulting law firms on deal negotiation tactics as it develops AI agents to negotiate on humans' behalf and interact with AI counterparts. Tech companies are being forced to confront the rules of negotiation when machines act on humans' behalf",
+   "via": "Techmeme"
+  },
+  {
    "title": "Show HN: Sphinx – A hook that quizzes you on your AI's code before shipping",
    "url": "https://sphinx-six-theta.vercel.app/",
    "source": "Hacker News",
    "published_at": "2026-10-18T04:33:49Z",
-   "text": "191 points and 60 comments on Hacker News.",
-   "points": 191,
+   "text": "198 points and 61 comments on Hacker News.",
+   "points": 198,
    "discussion": "https://news.ycombinator.com/item?id=50137950"
   }
  ],
