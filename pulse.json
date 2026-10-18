@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-18T15:52:52Z",
+ "generated_at": "2026-10-18T16:24:24Z",
  "items": [
   {
    "title": "Microsoft cancels its deal to be the anchor tenant and rent 23K Nvidia AI chips at Nscale's Essex,…",
@@ -17,7 +17,7 @@
    "published_at": "2026-10-17T08:35:54Z",
    "text": "🚀 DeepSeek-V4.1-Flash-1017 is here! Stronger benchmark performance, faster task completion, and shorter outputs than the previous version—a Pareto improvement in performance and cost. Now live on our website, app, and API. 🛠️ Optimized for @DeepSeekHarness, Tencent CodeBuddy, h…",
    "author_name": "DeepSeek",
-   "likes": 34728,
+   "likes": 34834,
    "story": "DeepSeek releases V4.1-Flash-1017, an update it says offers “stronger benchmark performance, faster task completion, and shorter outputs” than its predecessor"
   },
   {
@@ -28,14 +28,38 @@
    "text": "Added CLAUDE_CODE_AUTO_MODE_MODEL to choose the model the client-side auto mode classifier uses; it does not change the model for server-side auto mode · Added an Idle compaction row to /config for turning idle compaction off or back on; the notices shown after an idle compaction now say how to turn it off · Added a notice to /design-sync and /design-login that standalone Claude Design (claude.ai/design) closes by December 14, 2026 · Fixed a \"Prompt is too long\" error when stopping a turn while the conversation was being compacted"
   },
   {
-   "title": "OpenCode published an official statement regarding a recent distillation attack. > Earlier today, O…",
-   "url": "https://x.com/testingcatalog/status/2111536604351246541",
-   "source": "𝕏 @testingcatalog",
-   "published_at": "2026-10-17T19:15:31Z",
-   "text": "OpenCode published an official statement regarding a recent distillation attack. > Earlier today, OpenAI, Anthropic and Google balances of some OpenCode users got drained. > Reportedly, only 1.4% of users were affected and these users were notified via an email. This is a…",
-   "author_name": "🚨 AI News | TestingCatalog",
-   "likes": 443,
+   "title": "OpenCode is currently under a sustained cyberattack, and mid-incident they ran into the same proble…",
+   "url": "https://x.com/AndrewCurran_/status/2111837963214794940",
+   "source": "𝕏 @AndrewCurran_",
+   "published_at": "2026-10-18T15:13:01Z",
+   "text": "OpenCode is currently under a sustained cyberattack, and mid-incident they ran into the same problem Hugging Face did: the frontier models they were using for defense began refusing to help fight attacking agents because analyzing the attacks started triggering safety guardrails.",
+   "author_name": "Andrew Curran",
+   "likes": 1069,
    "story": "Anomaly Innovations, behind coding agent OpenCode, says a breach hit ~1.4% of OpenCode Console users and their API keys, in a “large scale distillation attack”"
+  },
+  {
+   "title": "Sources: Anthropic is consulting law firms on deal negotiation tactics as it develops AI agents to…",
+   "url": "https://www.ft.com/content/f7c26ac0-f5f2-443a-86b2-39d62f7920a9",
+   "source": "Cristina Criddle / Financia…",
+   "published_at": "2026-10-18T05:11:12Z",
+   "text": "Sources: Anthropic is consulting law firms on deal negotiation tactics as it develops AI agents to negotiate on humans' behalf and interact with AI counterparts. Tech companies are being forced to confront the rules of negotiation when machines act on humans' behalf",
+   "via": "Techmeme"
+  },
+  {
+   "title": "Websites are closing their doors to AI agents",
+   "url": "https://www.theverge.com/ai-artificial-intelligence/1013195/ai-agents-blocked-web",
+   "source": "Hacker News",
+   "published_at": "2026-10-18T14:58:10Z",
+   "text": "69 points and 47 comments on Hacker News.",
+   "points": 69,
+   "discussion": "https://news.ycombinator.com/item?id=50141657"
+  },
+  {
+   "title": "Anthropic update on independent evaluators",
+   "url": "https://www.anthropic.com/news/an-update-on-independent-evaluators",
+   "source": "Anthropic",
+   "published_at": "2026-10-16T20:30:25Z",
+   "text": "Anthropic announces updates to embedding independent evaluators"
   },
   {
    "title": "RegLayer: 47+ large US data center projects were delayed, withdrawn, or blocked in 2026; Bernstein…",
@@ -50,33 +74,9 @@
    "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/anthropics-proposed-ai-safety-bill-only-kicks-in-if-50-deaths-or-usd1-billion-in-damages-are-on-the-line-proposal-would-effectively-make-the-commerce-department-the-only-agency-capable-of-stopping-an-ai-model",
    "source": "Hacker News",
    "published_at": "2026-10-18T14:30:27Z",
-   "text": "69 points and 55 comments on Hacker News.",
-   "points": 69,
+   "text": "83 points and 82 comments on Hacker News.",
+   "points": 83,
    "discussion": "https://news.ycombinator.com/item?id=50141429"
-  },
-  {
-   "title": "Anthropic update on independent evaluators",
-   "url": "https://www.anthropic.com/news/an-update-on-independent-evaluators",
-   "source": "Anthropic",
-   "published_at": "2026-10-16T20:30:25Z",
-   "text": "Anthropic announces updates to embedding independent evaluators"
-  },
-  {
-   "title": "Sources: Anthropic is consulting law firms on deal negotiation tactics as it develops AI agents to…",
-   "url": "https://www.ft.com/content/f7c26ac0-f5f2-443a-86b2-39d62f7920a9",
-   "source": "Cristina Criddle / Financia…",
-   "published_at": "2026-10-18T05:11:12Z",
-   "text": "Sources: Anthropic is consulting law firms on deal negotiation tactics as it develops AI agents to negotiate on humans' behalf and interact with AI counterparts. Tech companies are being forced to confront the rules of negotiation when machines act on humans' behalf",
-   "via": "Techmeme"
-  },
-  {
-   "title": "DeepSeek search and fetch – $0.75 per 1000 successful requests",
-   "url": "https://api-docs.deepseek.com/guides/search/",
-   "source": "Hacker News",
-   "published_at": "2026-10-18T06:50:36Z",
-   "text": "390 points and 198 comments on Hacker News.",
-   "points": 390,
-   "discussion": "https://news.ycombinator.com/item?id=50138531"
   }
  ],
  "sources": "curated, Techmeme, X (found via Techmeme, Reddit, the Internet Archive), Claude Code releases, Anthropic, Hacker News, Simon Willison"
