@@ -1,13 +1,13 @@
 {
  "schema": 1,
- "generated_at": "2026-10-18T12:38:46Z",
+ "generated_at": "2026-10-18T13:10:58Z",
  "items": [
   {
-   "title": "AI debt worries mount as CoreWeave's bond yield tops 15%, insuring SoftBank debt gets pricier, and…",
-   "url": "https://www.nytimes.com/2026/10/17/business/ai-debt-coreweave-oracle-softbank.html?unlocked_article_code=1.JlE.Xgxf.QuEWFgfl8zJB&smid=url-share",
-   "source": "New York Times",
-   "published_at": "2026-10-18T06:10:57Z",
-   "text": "AI debt worries mount as CoreWeave's bond yield tops 15%, insuring SoftBank debt gets pricier, and some Oracle debt trades near 80 to 90 cents on the dollar. Debt trouble at CoreWeave, Oracle and SoftBank raises questions about whether there are broader problems with the data center build-out.",
+   "title": "Holyvolt, which develops AI tools for making and testing new battery materials, raised $45M from Zo…",
+   "url": "https://fortune.com/2026/10/15/holyvolt-funding-45-million-battery-startup-ai-sweden-michigan-prast-ingvarsson/",
+   "source": "Nick Lichtenberg / Fortune",
+   "published_at": "2026-10-18T05:40:53Z",
+   "text": "Holyvolt, which develops AI tools for making and testing new battery materials, raised $45M from Zone II, CC.VC, and others, a source says at a $245M valuation. Steven Prast is old enough to remember when a mobile phone came in a bag. It was too heavy to carry around, so most people mounted it in the car.",
    "via": "Techmeme"
   },
   {
@@ -17,7 +17,7 @@
    "published_at": "2026-10-17T08:35:54Z",
    "text": "🚀 DeepSeek-V4.1-Flash-1017 is here! Stronger benchmark performance, faster task completion, and shorter outputs than the previous version—a Pareto improvement in performance and cost. Now live on our website, app, and API. 🛠️ Optimized for @DeepSeekHarness, Tencent CodeBuddy, h…",
    "author_name": "DeepSeek",
-   "likes": 34077,
+   "likes": 34164,
    "story": "DeepSeek releases V4.1-Flash-1017, an update it says offers “stronger benchmark performance, faster task completion, and shorter outputs” than its predecessor"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-10-17T19:15:31Z",
    "text": "OpenCode published an official statement regarding a recent distillation attack. > Earlier today, OpenAI, Anthropic and Google balances of some OpenCode users got drained. > Reportedly, only 1.4% of users were affected and these users were notified via an email. This is a…",
    "author_name": "🚨 AI News | TestingCatalog",
-   "likes": 432,
+   "likes": 434,
    "story": "Anomaly Innovations, behind coding agent OpenCode, says a breach hit ~1.4% of OpenCode Console users and their API keys, in a “large scale distillation attack”"
   },
   {
@@ -50,8 +50,8 @@
    "url": "https://api-docs.deepseek.com/guides/search/",
    "source": "Hacker News",
    "published_at": "2026-10-18T06:50:36Z",
-   "text": "282 points and 126 comments on Hacker News.",
-   "points": 282,
+   "text": "295 points and 137 comments on Hacker News.",
+   "points": 295,
    "discussion": "https://news.ycombinator.com/item?id=50138531"
   },
   {
@@ -62,11 +62,11 @@
    "text": "Anthropic announces updates to embedding independent evaluators"
   },
   {
-   "title": "Holyvolt, which develops AI tools for making and testing new battery materials, raised $45M from Zo…",
-   "url": "https://fortune.com/2026/10/15/holyvolt-funding-45-million-battery-startup-ai-sweden-michigan-prast-ingvarsson/",
-   "source": "Nick Lichtenberg / Fortune",
-   "published_at": "2026-10-18T05:40:53Z",
-   "text": "Holyvolt, which develops AI tools for making and testing new battery materials, raised $45M from Zone II, CC.VC, and others, a source says at a $245M valuation. Steven Prast is old enough to remember when a mobile phone came in a bag. It was too heavy to carry around, so most people mounted it in the car.",
+   "title": "AI debt worries mount as CoreWeave's bond yield tops 15%, insuring SoftBank debt gets pricier, and…",
+   "url": "https://www.nytimes.com/2026/10/17/business/ai-debt-coreweave-oracle-softbank.html?unlocked_article_code=1.JlE.Xgxf.QuEWFgfl8zJB&smid=url-share",
+   "source": "New York Times",
+   "published_at": "2026-10-18T06:10:57Z",
+   "text": "AI debt worries mount as CoreWeave's bond yield tops 15%, insuring SoftBank debt gets pricier, and some Oracle debt trades near 80 to 90 cents on the dollar. Debt trouble at CoreWeave, Oracle and SoftBank raises questions about whether there are broader problems with the data center build-out.",
    "via": "Techmeme"
   },
   {
@@ -74,8 +74,8 @@
    "url": "https://sphinx-six-theta.vercel.app/",
    "source": "Hacker News",
    "published_at": "2026-10-18T04:33:49Z",
-   "text": "163 points and 48 comments on Hacker News.",
-   "points": 163,
+   "text": "169 points and 51 comments on Hacker News.",
+   "points": 169,
    "discussion": "https://news.ycombinator.com/item?id=50137950"
   }
  ],
