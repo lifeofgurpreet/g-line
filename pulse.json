@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-18T18:33:09Z",
+ "generated_at": "2026-10-18T19:05:19Z",
  "items": [
   {
    "title": "Microsoft cancels its deal to be the anchor tenant and rent 23K Nvidia AI chips at Nscale's Essex,…",
@@ -17,7 +17,7 @@
    "published_at": "2026-10-17T08:35:54Z",
    "text": "🚀 DeepSeek-V4.1-Flash-1017 is here! Stronger benchmark performance, faster task completion, and shorter outputs than the previous version—a Pareto improvement in performance and cost. Now live on our website, app, and API. 🛠️ Optimized for @DeepSeekHarness, Tencent CodeBuddy, h…",
    "author_name": "DeepSeek",
-   "likes": 35135,
+   "likes": 35184,
    "story": "DeepSeek releases V4.1-Flash-1017, an update it says offers “stronger benchmark performance, faster task completion, and shorter outputs” than its predecessor"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-10-18T15:13:01Z",
    "text": "OpenCode is currently under a sustained cyberattack, and mid-incident they ran into the same problem Hugging Face did: the frontier models they were using for defense began refusing to help fight attacking agents because analyzing the attacks started triggering safety guardrails.",
    "author_name": "Andrew Curran",
-   "likes": 2663,
+   "likes": 2840,
    "story": "Google says “magic state cultivation” works in practice on its Willow quantum processor, calling it a breakthrough that reduces errors by about 40x"
   },
   {
@@ -50,8 +50,8 @@
    "url": "https://api-docs.deepseek.com/guides/search/",
    "source": "Hacker News",
    "published_at": "2026-10-18T06:50:36Z",
-   "text": "453 points and 219 comments on Hacker News.",
-   "points": 453,
+   "text": "463 points and 225 comments on Hacker News.",
+   "points": 463,
    "discussion": "https://news.ycombinator.com/item?id=50138531"
   },
   {
@@ -74,8 +74,8 @@
    "url": "https://sphinx-six-theta.vercel.app/",
    "source": "Hacker News",
    "published_at": "2026-10-18T04:33:49Z",
-   "text": "219 points and 74 comments on Hacker News.",
-   "points": 219,
+   "text": "222 points and 75 comments on Hacker News.",
+   "points": 222,
    "discussion": "https://news.ycombinator.com/item?id=50137950"
   }
  ],
