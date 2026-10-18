@@ -1,24 +1,24 @@
 {
  "schema": 1,
- "generated_at": "2026-10-18T21:15:20Z",
+ "generated_at": "2026-10-18T21:47:24Z",
  "items": [
   {
-   "title": "Filing: Disney agreed to hire 60+ staff from Character.AI and pay them ~$180M over three years, plu…",
-   "url": "https://www.bloomberg.com/news/newsletters/2026-10-17/disney-offers-soft-landing-to-staff-at-troubled-character-ai",
-   "source": "Bloomberg",
-   "published_at": "2026-10-18T03:50:51Z",
-   "text": "Filing: Disney agreed to hire 60+ staff from Character.AI and pay them ~$180M over three years, plus $30M for retention awards; a bankruptcy judge must approve. More than 60 workers at Character.AI are being offered a lifeline from the media giant … Soft Landing — Layoffs are common in bankruptcy.",
+   "title": "Anthropic says it's committing 5% of its shares to a Public Benefit Fund, for a total of ~20% with…",
+   "url": "https://www.anthropic.com/news/public-benefit-fund",
+   "source": "Anthropic",
+   "published_at": "2026-10-18T19:10:56Z",
+   "text": "Anthropic says it's committing 5% of its shares to a Public Benefit Fund, for a total of ~20% with co-founder and staff pledges, plus 2% per 50% valuation rise. Today, we're committing a portion of Anthropic's shares to the Anthropic Public Benefit Fund, a new entity with a structure that increases the stake as the company grows.",
    "via": "Techmeme"
   },
   {
-   "title": "We’re committing a portion of Anthropic’s shares to the Anthropic Public Benefit Fund, a new wholly…",
-   "url": "https://x.com/AnthropicAI/status/2111881963657412903",
-   "source": "𝕏 @AnthropicAI",
-   "published_at": "2026-10-18T18:07:51Z",
-   "text": "We’re committing a portion of Anthropic’s shares to the Anthropic Public Benefit Fund, a new wholly owned entity dedicated entirely to the public benefit. It will start off with 5% of our shares. For every 50% increase in the company’s value over a set baseline, we can…",
-   "author_name": "Anthropic",
-   "likes": 7408,
-   "story": "Anthropic says it's committing 5% of its shares to a Public Benefit Fund, for a total of ~20% with co-founder and staff pledges, plus 2% per 50% valuation rise"
+   "title": "🚀 DeepSeek-V4.1-Flash-1017 is here! Stronger benchmark performance, faster task completion, and sho…",
+   "url": "https://x.com/deepseek_ai/status/2111375640717033777",
+   "source": "𝕏 @deepseek_ai",
+   "published_at": "2026-10-17T08:35:54Z",
+   "text": "🚀 DeepSeek-V4.1-Flash-1017 is here! Stronger benchmark performance, faster task completion, and shorter outputs than the previous version—a Pareto improvement in performance and cost. Now live on our website, app, and API. 🛠️ Optimized for @DeepSeekHarness, Tencent CodeBuddy, h…",
+   "author_name": "DeepSeek",
+   "likes": 35376,
+   "story": "DeepSeek releases V4.1-Flash-1017, an update it says offers “stronger benchmark performance, faster task completion, and shorter outputs” than its predecessor"
   },
   {
    "title": "Claude Code 2.1.302 released",
@@ -28,14 +28,14 @@
    "text": "Added CLAUDE_CODE_AUTO_MODE_MODEL to choose the model the client-side auto mode classifier uses; it does not change the model for server-side auto mode · Added an Idle compaction row to /config for turning idle compaction off or back on; the notices shown after an idle compaction now say how to turn it off · Added a notice to /design-sync and /design-login that standalone Claude Design (claude.ai/design) closes by December 14, 2026 · Fixed a \"Prompt is too long\" error when stopping a turn while the conversation was being compacted"
   },
   {
-   "title": "🚀 DeepSeek-V4.1-Flash-1017 is here! Stronger benchmark performance, faster task completion, and sho…",
-   "url": "https://x.com/deepseek_ai/status/2111375640717033777",
-   "source": "𝕏 @deepseek_ai",
-   "published_at": "2026-10-17T08:35:54Z",
-   "text": "🚀 DeepSeek-V4.1-Flash-1017 is here! Stronger benchmark performance, faster task completion, and shorter outputs than the previous version—a Pareto improvement in performance and cost. Now live on our website, app, and API. 🛠️ Optimized for @DeepSeekHarness, Tencent CodeBuddy, h…",
-   "author_name": "DeepSeek",
-   "likes": 35330,
-   "story": "DeepSeek releases V4.1-Flash-1017, an update it says offers “stronger benchmark performance, faster task completion, and shorter outputs” than its predecessor"
+   "title": "OpenCode is currently under a sustained cyberattack, and mid-incident they ran into the same proble…",
+   "url": "https://x.com/AndrewCurran_/status/2111837963214794940",
+   "source": "𝕏 @AndrewCurran_",
+   "published_at": "2026-10-18T15:13:01Z",
+   "text": "OpenCode is currently under a sustained cyberattack, and mid-incident they ran into the same problem Hugging Face did: the frontier models they were using for defense began refusing to help fight attacking agents because analyzing the attacks started triggering safety guardrails.",
+   "author_name": "Andrew Curran",
+   "likes": 3503,
+   "story": "Filing: Disney agreed to hire 60+ staff from Character.AI and pay them ~$180M over three years, plus $30M for retention awards; a bankruptcy judge must approve"
   },
   {
    "title": "Microsoft cancels its deal to be the anchor tenant and rent 23K Nvidia AI chips at Nscale's Essex,…",
@@ -50,8 +50,8 @@
    "url": "https://api-docs.deepseek.com/guides/search/",
    "source": "Hacker News",
    "published_at": "2026-10-18T06:50:36Z",
-   "text": "499 points and 242 comments on Hacker News.",
-   "points": 499,
+   "text": "503 points and 247 comments on Hacker News.",
+   "points": 503,
    "discussion": "https://news.ycombinator.com/item?id=50138531"
   },
   {
@@ -74,8 +74,8 @@
    "url": "https://sphinx-six-theta.vercel.app/",
    "source": "Hacker News",
    "published_at": "2026-10-18T04:33:49Z",
-   "text": "231 points and 76 comments on Hacker News.",
-   "points": 231,
+   "text": "234 points and 76 comments on Hacker News.",
+   "points": 234,
    "discussion": "https://news.ycombinator.com/item?id=50137950"
   }
  ],
