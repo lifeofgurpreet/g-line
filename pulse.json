@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-18T04:37:23Z",
+ "generated_at": "2026-10-18T05:09:23Z",
  "items": [
   {
    "title": "Filing: Disney agreed to hire 60+ staff from Character.AI and pay them ~$180M over three years, plu…",
@@ -17,7 +17,7 @@
    "published_at": "2026-10-17T08:35:54Z",
    "text": "🚀 DeepSeek-V4.1-Flash-1017 is here! Stronger benchmark performance, faster task completion, and shorter outputs than the previous version—a Pareto improvement in performance and cost. Now live on our website, app, and API. 🛠️ Optimized for @DeepSeekHarness, Tencent CodeBuddy, h…",
    "author_name": "DeepSeek",
-   "likes": 32015,
+   "likes": 32235,
    "story": "DeepSeek releases V4.1-Flash-1017, an update it says offers “stronger benchmark performance, faster task completion, and shorter outputs” than its predecessor"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-10-16T23:26:59Z",
    "text": "after an exciting week of launches (muse wonder [full] & muse spark open), i want to write a note of appreciation to the amazing research teams at meta superintelligence labs on reaching such a special milestone ♥️ we started MSL and TBD a little more than a year ago and set a…",
    "author_name": "Alexandr Wang",
-   "likes": 4149,
+   "likes": 4173,
    "story": "An interview with YouTuber Benn Jordan, who recently testified in Congress against license plate readers, on Flock, privacy, the surveillance backlash, and more"
   },
   {
@@ -50,8 +50,8 @@
    "url": "https://www.anthropic.com/research/ecdsa-curve-origins",
    "source": "Hacker News",
    "published_at": "2026-10-16T18:55:59Z",
-   "text": "1027 points and 379 comments on Hacker News.",
-   "points": 1027,
+   "text": "1028 points and 379 comments on Hacker News.",
+   "points": 1028,
    "discussion": "https://news.ycombinator.com/item?id=50122800"
   },
   {
@@ -74,8 +74,8 @@
    "url": "https://github.com/openai/codex/issues/25921",
    "source": "Hacker News",
    "published_at": "2026-10-17T17:45:08Z",
-   "text": "107 points and 34 comments on Hacker News.",
-   "points": 107,
+   "text": "110 points and 38 comments on Hacker News.",
+   "points": 110,
    "discussion": "https://news.ycombinator.com/item?id=50133231"
   }
  ],
