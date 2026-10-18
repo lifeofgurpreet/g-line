@@ -1,13 +1,13 @@
 {
  "schema": 1,
- "generated_at": "2026-10-18T10:30:31Z",
+ "generated_at": "2026-10-18T11:02:10Z",
  "items": [
   {
-   "title": "RegLayer: 47+ large US data center projects were delayed, withdrawn, or blocked in 2026; Bernstein…",
-   "url": "https://www.ft.com/content/9ea5a37d-15c9-4d5b-94d6-719048c9cd3c",
-   "source": "Financial Times",
-   "published_at": "2026-10-18T06:15:51Z",
-   "text": "RegLayer: 47+ large US data center projects were delayed, withdrawn, or blocked in 2026; Bernstein says ~35% of the planned US data center pipeline is credible. A vast bet on the future of the technology is running into the unforgiving economics of the physical world",
+   "title": "AI debt worries mount as CoreWeave's bond yield tops 15%, insuring SoftBank debt gets pricier, and…",
+   "url": "https://www.nytimes.com/2026/10/17/business/ai-debt-coreweave-oracle-softbank.html?unlocked_article_code=1.JlE.Xgxf.QuEWFgfl8zJB&smid=url-share",
+   "source": "New York Times",
+   "published_at": "2026-10-18T06:10:57Z",
+   "text": "AI debt worries mount as CoreWeave's bond yield tops 15%, insuring SoftBank debt gets pricier, and some Oracle debt trades near 80 to 90 cents on the dollar. Debt trouble at CoreWeave, Oracle and SoftBank raises questions about whether there are broader problems with the data center build-out.",
    "via": "Techmeme"
   },
   {
@@ -17,7 +17,7 @@
    "published_at": "2026-10-17T08:35:54Z",
    "text": "🚀 DeepSeek-V4.1-Flash-1017 is here! Stronger benchmark performance, faster task completion, and shorter outputs than the previous version—a Pareto improvement in performance and cost. Now live on our website, app, and API. 🛠️ Optimized for @DeepSeekHarness, Tencent CodeBuddy, h…",
    "author_name": "DeepSeek",
-   "likes": 33683,
+   "likes": 33780,
    "story": "DeepSeek releases V4.1-Flash-1017, an update it says offers “stronger benchmark performance, faster task completion, and shorter outputs” than its predecessor"
   },
   {
@@ -28,14 +28,14 @@
    "text": "Added CLAUDE_CODE_AUTO_MODE_MODEL to choose the model the client-side auto mode classifier uses; it does not change the model for server-side auto mode · Added an Idle compaction row to /config for turning idle compaction off or back on; the notices shown after an idle compaction now say how to turn it off · Added a notice to /design-sync and /design-login that standalone Claude Design (claude.ai/design) closes by December 14, 2026 · Fixed a \"Prompt is too long\" error when stopping a turn while the conversation was being compacted"
   },
   {
-   "title": "after an exciting week of launches (muse wonder [full] & muse spark open), i want to write a note o…",
-   "url": "https://x.com/alexandr_wang/status/2111237499083252185",
-   "source": "𝕏 @alexandr_wang",
-   "published_at": "2026-10-16T23:26:59Z",
-   "text": "after an exciting week of launches (muse wonder [full] & muse spark open), i want to write a note of appreciation to the amazing research teams at meta superintelligence labs on reaching such a special milestone ♥️ we started MSL and TBD a little more than a year ago and set a…",
-   "author_name": "Alexandr Wang",
-   "likes": 4345,
-   "story": "Turkish police detained Hex and PulseChain founder Richard Heart on Oct. 14, seizing $7M+ in cash and six cold wallets; HEX fell nearly 50% on initial reports"
+   "title": "OpenCode published an official statement regarding a recent distillation attack. > Earlier today, O…",
+   "url": "https://x.com/testingcatalog/status/2111536604351246541",
+   "source": "𝕏 @testingcatalog",
+   "published_at": "2026-10-17T19:15:31Z",
+   "text": "OpenCode published an official statement regarding a recent distillation attack. > Earlier today, OpenAI, Anthropic and Google balances of some OpenCode users got drained. > Reportedly, only 1.4% of users were affected and these users were notified via an email. This is a…",
+   "author_name": "🚨 AI News | TestingCatalog",
+   "likes": 424,
+   "story": "Anomaly Innovations, behind coding agent OpenCode, says a breach hit ~1.4% of OpenCode Console users and their API keys, in a “large scale distillation attack”"
   },
   {
    "title": "Sources: Anthropic is consulting law firms on deal negotiation tactics as it develops AI agents to…",
@@ -50,19 +50,9 @@
    "url": "https://api-docs.deepseek.com/guides/search/",
    "source": "Hacker News",
    "published_at": "2026-10-18T06:50:36Z",
-   "text": "199 points and 97 comments on Hacker News.",
-   "points": 199,
+   "text": "218 points and 102 comments on Hacker News.",
+   "points": 218,
    "discussion": "https://news.ycombinator.com/item?id=50138531"
-  },
-  {
-   "title": "OpenCode published an official statement regarding a recent distillation attack. > Earlier today, O…",
-   "url": "https://x.com/testingcatalog/status/2111536604351246541",
-   "source": "𝕏 @testingcatalog",
-   "published_at": "2026-10-17T19:15:31Z",
-   "text": "OpenCode published an official statement regarding a recent distillation attack. > Earlier today, OpenAI, Anthropic and Google balances of some OpenCode users got drained. > Reportedly, only 1.4% of users were affected and these users were notified via an email. This is a…",
-   "author_name": "🚨 AI News | TestingCatalog",
-   "likes": 417,
-   "story": "Anomaly Innovations, behind coding agent OpenCode, says a breach hit ~1.4% of OpenCode Console users and their API keys, in a “large scale distillation attack”"
   },
   {
    "title": "Anthropic update on independent evaluators",
@@ -72,11 +62,11 @@
    "text": "Anthropic announces updates to embedding independent evaluators"
   },
   {
-   "title": "Filing: Disney agreed to hire 60+ staff from Character.AI and pay them ~$180M over three years, plu…",
-   "url": "https://www.bloomberg.com/news/newsletters/2026-10-17/disney-offers-soft-landing-to-staff-at-troubled-character-ai",
-   "source": "Bloomberg",
-   "published_at": "2026-10-18T03:50:51Z",
-   "text": "Filing: Disney agreed to hire 60+ staff from Character.AI and pay them ~$180M over three years, plus $30M for retention awards; a bankruptcy judge must approve. More than 60 workers at Character.AI are being offered a lifeline from the media giant … Soft Landing — Layoffs are common in bankruptcy.",
+   "title": "An interview with Microsoft CEO Satya Nadella on the Nvidia RTX Spark-powered Surface Laptop Ultra,…",
+   "url": "https://thenewthings.com/p/microsoft-ceo-on-rogue-ai-agents-super-laptops-and-clippy",
+   "source": "Joanna Stern / The New Thin…",
+   "published_at": "2026-10-18T01:20:52Z",
+   "text": "An interview with Microsoft CEO Satya Nadella on the Nvidia RTX Spark-powered Surface Laptop Ultra, plans to make Windows a safer OS to run AI agents, and more. My exclusive interview with Satya Nadella on the new Surface Laptop Ultra and Microsoft's plan to make Windows safer for AI agents",
    "via": "Techmeme"
   },
   {
@@ -84,8 +74,8 @@
    "url": "https://sphinx-six-theta.vercel.app/",
    "source": "Hacker News",
    "published_at": "2026-10-18T04:33:49Z",
-   "text": "135 points and 35 comments on Hacker News.",
-   "points": 135,
+   "text": "141 points and 43 comments on Hacker News.",
+   "points": 141,
    "discussion": "https://news.ycombinator.com/item?id=50137950"
   }
  ],
