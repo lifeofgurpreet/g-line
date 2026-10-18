@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-18T16:56:12Z",
+ "generated_at": "2026-10-18T17:28:32Z",
  "items": [
   {
    "title": "Microsoft cancels its deal to be the anchor tenant and rent 23K Nvidia AI chips at Nscale's Essex,…",
@@ -17,7 +17,7 @@
    "published_at": "2026-10-17T08:35:54Z",
    "text": "🚀 DeepSeek-V4.1-Flash-1017 is here! Stronger benchmark performance, faster task completion, and shorter outputs than the previous version—a Pareto improvement in performance and cost. Now live on our website, app, and API. 🛠️ Optimized for @DeepSeekHarness, Tencent CodeBuddy, h…",
    "author_name": "DeepSeek",
-   "likes": 34932,
+   "likes": 35021,
    "story": "DeepSeek releases V4.1-Flash-1017, an update it says offers “stronger benchmark performance, faster task completion, and shorter outputs” than its predecessor"
   },
   {
@@ -40,8 +40,8 @@
    "url": "https://www.theverge.com/ai-artificial-intelligence/1013195/ai-agents-blocked-web",
    "source": "Hacker News",
    "published_at": "2026-10-18T14:58:10Z",
-   "text": "90 points and 68 comments on Hacker News.",
-   "points": 90,
+   "text": "105 points and 86 comments on Hacker News.",
+   "points": 105,
    "discussion": "https://news.ycombinator.com/item?id=50141657"
   },
   {
@@ -64,8 +64,8 @@
    "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/anthropics-proposed-ai-safety-bill-only-kicks-in-if-50-deaths-or-usd1-billion-in-damages-are-on-the-line-proposal-would-effectively-make-the-commerce-department-the-only-agency-capable-of-stopping-an-ai-model",
    "source": "Hacker News",
    "published_at": "2026-10-18T14:30:27Z",
-   "text": "101 points and 107 comments on Hacker News.",
-   "points": 101,
+   "text": "115 points and 129 comments on Hacker News.",
+   "points": 115,
    "discussion": "https://news.ycombinator.com/item?id=50141429"
   }
  ],
