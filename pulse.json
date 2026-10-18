@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-18T22:20:15Z",
+ "generated_at": "2026-10-18T22:53:21Z",
  "items": [
   {
    "title": "Anthropic says it's committing 5% of its shares to a Public Benefit Fund, for a total of ~20% with…",
@@ -17,15 +17,15 @@
    "published_at": "2026-10-17T08:35:54Z",
    "text": "🚀 DeepSeek-V4.1-Flash-1017 is here! Stronger benchmark performance, faster task completion, and shorter outputs than the previous version—a Pareto improvement in performance and cost. Now live on our website, app, and API. 🛠️ Optimized for @DeepSeekHarness, Tencent CodeBuddy, h…",
    "author_name": "DeepSeek",
-   "likes": 35396,
+   "likes": 35446,
    "story": "DeepSeek releases V4.1-Flash-1017, an update it says offers “stronger benchmark performance, faster task completion, and shorter outputs” than its predecessor"
   },
   {
-   "title": "Claude Code 2.1.302 released",
-   "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.302",
+   "title": "Claude Code 2.1.303 released",
+   "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.303",
    "source": "Claude Code releases",
-   "published_at": "2026-10-16T20:53:06Z",
-   "text": "Added CLAUDE_CODE_AUTO_MODE_MODEL to choose the model the client-side auto mode classifier uses; it does not change the model for server-side auto mode · Added an Idle compaction row to /config for turning idle compaction off or back on; the notices shown after an idle compaction now say how to turn it off · Added a notice to /design-sync and /design-login that standalone Claude Design (claude.ai/design) closes by December 14, 2026 · Fixed a \"Prompt is too long\" error when stopping a turn while the conversation was being compacted"
+   "published_at": "2026-10-18T22:26:54Z",
+   "text": "Bug fixes and reliability improvements"
   },
   {
    "title": "OpenCode is currently under a sustained cyberattack, and mid-incident they ran into the same proble…",
@@ -34,7 +34,7 @@
    "published_at": "2026-10-18T15:13:01Z",
    "text": "OpenCode is currently under a sustained cyberattack, and mid-incident they ran into the same problem Hugging Face did: the frontier models they were using for defense began refusing to help fight attacking agents because analyzing the attacks started triggering safety guardrails.",
    "author_name": "Andrew Curran",
-   "likes": 3585,
+   "likes": 3672,
    "story": "MapQuest adds a Surveillance Layer to its mobile app showing license plate readers and cameras from 10+ companies including Flock, using OpenStreetMap data"
   },
   {
@@ -50,8 +50,8 @@
    "url": "https://arxiv.org/abs/2610.18861",
    "source": "Hacker News",
    "published_at": "2026-10-18T20:48:14Z",
-   "text": "78 points and 31 comments on Hacker News.",
-   "points": 78,
+   "text": "109 points and 53 comments on Hacker News.",
+   "points": 109,
    "discussion": "https://news.ycombinator.com/item?id=50145337"
   },
   {
@@ -74,8 +74,8 @@
    "url": "https://api-docs.deepseek.com/guides/search/",
    "source": "Hacker News",
    "published_at": "2026-10-18T06:50:36Z",
-   "text": "511 points and 251 comments on Hacker News.",
-   "points": 511,
+   "text": "518 points and 249 comments on Hacker News.",
+   "points": 518,
    "discussion": "https://news.ycombinator.com/item?id=50138531"
   }
  ],
