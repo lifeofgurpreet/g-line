@@ -1,13 +1,13 @@
 {
  "schema": 1,
- "generated_at": "2026-10-18T03:31:42Z",
+ "generated_at": "2026-10-18T04:04:55Z",
  "items": [
   {
-   "title": "Anomaly Innovations, behind coding agent OpenCode, says a breach hit ~1.4% of OpenCode Console user…",
-   "url": "https://startupfortune.com/opencode-breach-exposes-stored-openai-and-anthropic-keys-prompts-urgent-key-rotation/",
-   "source": "Walter Schulze / Startup Fo…",
-   "published_at": "2026-10-17T20:50:55Z",
-   "text": "Anomaly Innovations, behind coding agent OpenCode, says a breach hit ~1.4% of OpenCode Console users and their API keys, in a “large scale distillation attack”. A large-scale distillation attack against the company behind the open-source coding agent OpenCode exposed stored OpenAI …",
+   "title": "A profile of Alexandr Wang, who sources say is “an operator”, had “all” of Zuckerberg's support dur…",
+   "url": "https://www.ft.com/content/7477e462-c899-4841-a5cf-c01706e23982?accessToken=zwAAAaFIyQ5dkc90d-RiyJlIQdOlz8AXBuI5gg.MEYCIQDunNb-ag1EE-tWY6MfhtnPpdpr1Yz6xf7d6aGMp351LgIhAMFU5tO6ZQsn6S5v-SjOZgS5Igb0J-QlFM0-o22bRyVU&sharetype=gift&token=1e1595e8-347b-4fb7-9ca6-635fe0e44468",
+   "source": "Rafe Rosner-Uddin / Financi…",
+   "published_at": "2026-10-17T06:36:16Z",
+   "text": "A profile of Alexandr Wang, who sources say is “an operator”, had “all” of Zuckerberg's support during Meta's AI revamp, and is being touted as his successor. The 29-year-old in charge of the company's Superintelligence Labs is being touted as a potential successor to Mark Zuckerberg",
    "via": "Techmeme"
   },
   {
@@ -17,7 +17,7 @@
    "published_at": "2026-10-17T08:35:54Z",
    "text": "🚀 DeepSeek-V4.1-Flash-1017 is here! Stronger benchmark performance, faster task completion, and shorter outputs than the previous version—a Pareto improvement in performance and cost. Now live on our website, app, and API. 🛠️ Optimized for @DeepSeekHarness, Tencent CodeBuddy, h…",
    "author_name": "DeepSeek",
-   "likes": 31543,
+   "likes": 31785,
    "story": "DeepSeek releases V4.1-Flash-1017, an update it says offers “stronger benchmark performance, faster task completion, and shorter outputs” than its predecessor"
   },
   {
@@ -28,21 +28,21 @@
    "text": "Added CLAUDE_CODE_AUTO_MODE_MODEL to choose the model the client-side auto mode classifier uses; it does not change the model for server-side auto mode · Added an Idle compaction row to /config for turning idle compaction off or back on; the notices shown after an idle compaction now say how to turn it off · Added a notice to /design-sync and /design-login that standalone Claude Design (claude.ai/design) closes by December 14, 2026 · Fixed a \"Prompt is too long\" error when stopping a turn while the conversation was being compacted"
   },
   {
-   "title": "after an exciting week of launches (muse wonder [full] & muse spark open), i want to write a note o…",
-   "url": "https://x.com/alexandr_wang/status/2111237499083252185",
-   "source": "𝕏 @alexandr_wang",
-   "published_at": "2026-10-16T23:26:59Z",
-   "text": "after an exciting week of launches (muse wonder [full] & muse spark open), i want to write a note of appreciation to the amazing research teams at meta superintelligence labs on reaching such a special milestone ♥️ we started MSL and TBD a little more than a year ago and set a…",
-   "author_name": "Alexandr Wang",
-   "likes": 4105,
-   "story": "A profile of Alexandr Wang, who sources say is “an operator”, had “all” of Zuckerberg's support during Meta's AI revamp, and is being touted as his successor"
+   "title": "OpenCode published an official statement regarding a recent distillation attack. > Earlier today, O…",
+   "url": "https://x.com/testingcatalog/status/2111536604351246541",
+   "source": "𝕏 @testingcatalog",
+   "published_at": "2026-10-17T19:15:31Z",
+   "text": "OpenCode published an official statement regarding a recent distillation attack. > Earlier today, OpenAI, Anthropic and Google balances of some OpenCode users got drained. > Reportedly, only 1.4% of users were affected and these users were notified via an email. This is a…",
+   "author_name": "🚨 AI News | TestingCatalog",
+   "likes": 329,
+   "story": "Anomaly Innovations, behind coding agent OpenCode, says a breach hit ~1.4% of OpenCode Console users and their API keys, in a “large scale distillation attack”"
   },
   {
-   "title": "An interview with Microsoft CEO Satya Nadella on the Nvidia RTX Spark-powered Surface Laptop Ultra,…",
-   "url": "https://thenewthings.com/p/microsoft-ceo-on-rogue-ai-agents-super-laptops-and-clippy",
-   "source": "Joanna Stern / The New Thin…",
-   "published_at": "2026-10-18T01:20:52Z",
-   "text": "An interview with Microsoft CEO Satya Nadella on the Nvidia RTX Spark-powered Surface Laptop Ultra, plans to make Windows a safer OS to run AI agents, and more. My exclusive interview with Satya Nadella on the new Surface Laptop Ultra and Microsoft's plan to make Windows safer for AI agents",
+   "title": "Filing: Disney agreed to hire 60+ staff from Character.AI and pay them ~$180M over three years, plu…",
+   "url": "https://www.bloomberg.com/news/newsletters/2026-10-17/disney-offers-soft-landing-to-staff-at-troubled-character-ai",
+   "source": "Bloomberg",
+   "published_at": "2026-10-18T03:50:51Z",
+   "text": "Filing: Disney agreed to hire 60+ staff from Character.AI and pay them ~$180M over three years, plus $30M for retention awards; a bankruptcy judge must approve. More than 60 workers at Character.AI are being offered a lifeline from the media giant … Soft Landing — Layoffs are common in bankruptcy.",
    "via": "Techmeme"
   },
   {
@@ -50,7 +50,7 @@
    "url": "https://www.anthropic.com/research/ecdsa-curve-origins",
    "source": "Hacker News",
    "published_at": "2026-10-16T18:55:59Z",
-   "text": "1027 points and 378 comments on Hacker News.",
+   "text": "1027 points and 379 comments on Hacker News.",
    "points": 1027,
    "discussion": "https://news.ycombinator.com/item?id=50122800"
   },
@@ -62,11 +62,11 @@
    "text": "Anthropic announces updates to embedding independent evaluators"
   },
   {
-   "title": "As AI giants rack up potential legal liabilities of tens of billions amid safety incidents, insurer…",
-   "url": "https://www.wsj.com/tech/ai/ai-runs-into-its-next-big-obstacle-insurance-8b2d4556?st=xPnTts",
-   "source": "Jean Eaglesham / Wall Stree…",
-   "published_at": "2026-10-17T13:45:53Z",
-   "text": "As AI giants rack up potential legal liabilities of tens of billions amid safety incidents, insurers worry claims may outpace limits on existing coverage. The artificial-intelligence industry's phenomenal rate of growth means claims have the potential to outpace the limits on existing coverage",
+   "title": "An interview with Microsoft CEO Satya Nadella on the Nvidia RTX Spark-powered Surface Laptop Ultra,…",
+   "url": "https://thenewthings.com/p/microsoft-ceo-on-rogue-ai-agents-super-laptops-and-clippy",
+   "source": "Joanna Stern / The New Thin…",
+   "published_at": "2026-10-18T01:20:52Z",
+   "text": "An interview with Microsoft CEO Satya Nadella on the Nvidia RTX Spark-powered Surface Laptop Ultra, plans to make Windows a safer OS to run AI agents, and more. My exclusive interview with Satya Nadella on the new Surface Laptop Ultra and Microsoft's plan to make Windows safer for AI agents",
    "via": "Techmeme"
   },
   {
@@ -74,8 +74,8 @@
    "url": "https://github.com/openai/codex/issues/25921",
    "source": "Hacker News",
    "published_at": "2026-10-17T17:45:08Z",
-   "text": "91 points and 33 comments on Hacker News.",
-   "points": 91,
+   "text": "103 points and 33 comments on Hacker News.",
+   "points": 103,
    "discussion": "https://news.ycombinator.com/item?id=50133231"
   }
  ],
