@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-18T20:10:11Z",
+ "generated_at": "2026-10-18T20:42:15Z",
  "items": [
   {
    "title": "Filing: Disney agreed to hire 60+ staff from Character.AI and pay them ~$180M over three years, plu…",
@@ -17,7 +17,7 @@
    "published_at": "2026-10-18T18:07:51Z",
    "text": "We’re committing a portion of Anthropic’s shares to the Anthropic Public Benefit Fund, a new wholly owned entity dedicated entirely to the public benefit. It will start off with 5% of our shares. For every 50% increase in the company’s value over a set baseline, we can…",
    "author_name": "Anthropic",
-   "likes": 4908,
+   "likes": 6227,
    "story": "Anthropic says it's committing 5% of its shares to a Public Benefit Fund, for a total of ~20% with co-founder and staff pledges, plus 2% per 50% valuation rise"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-10-17T08:35:54Z",
    "text": "🚀 DeepSeek-V4.1-Flash-1017 is here! Stronger benchmark performance, faster task completion, and shorter outputs than the previous version—a Pareto improvement in performance and cost. Now live on our website, app, and API. 🛠️ Optimized for @DeepSeekHarness, Tencent CodeBuddy, h…",
    "author_name": "DeepSeek",
-   "likes": 35260,
+   "likes": 35305,
    "story": "DeepSeek releases V4.1-Flash-1017, an update it says offers “stronger benchmark performance, faster task completion, and shorter outputs” than its predecessor"
   },
   {
@@ -50,8 +50,8 @@
    "url": "https://api-docs.deepseek.com/guides/search/",
    "source": "Hacker News",
    "published_at": "2026-10-18T06:50:36Z",
-   "text": "481 points and 234 comments on Hacker News.",
-   "points": 481,
+   "text": "493 points and 237 comments on Hacker News.",
+   "points": 493,
    "discussion": "https://news.ycombinator.com/item?id=50138531"
   },
   {
@@ -74,8 +74,8 @@
    "url": "https://sphinx-six-theta.vercel.app/",
    "source": "Hacker News",
    "published_at": "2026-10-18T04:33:49Z",
-   "text": "225 points and 76 comments on Hacker News.",
-   "points": 225,
+   "text": "228 points and 76 comments on Hacker News.",
+   "points": 228,
    "discussion": "https://news.ycombinator.com/item?id=50137950"
   }
  ],
