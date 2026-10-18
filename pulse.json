@@ -1,13 +1,13 @@
 {
  "schema": 1,
- "generated_at": "2026-10-18T01:55:33Z",
+ "generated_at": "2026-10-18T02:27:47Z",
  "items": [
   {
-   "title": "Anomaly Innovations, behind coding agent OpenCode, says a breach hit ~1.4% of OpenCode Console user…",
-   "url": "https://startupfortune.com/opencode-breach-exposes-stored-openai-and-anthropic-keys-prompts-urgent-key-rotation/",
-   "source": "Walter Schulze / Startup Fo…",
-   "published_at": "2026-10-17T20:50:55Z",
-   "text": "Anomaly Innovations, behind coding agent OpenCode, says a breach hit ~1.4% of OpenCode Console users and their API keys, in a “large scale distillation attack”. A large-scale distillation attack against the company behind the open-source coding agent OpenCode exposed stored OpenAI …",
+   "title": "Reach Security, which develops AI-powered exposure management tools for securing enterprise systems…",
+   "url": "https://fintech.global/2026/10/15/reach-securitys-50m-bet-on-machine-speed-cyber-defence/",
+   "source": "FinTech Global",
+   "published_at": "2026-10-17T06:15:58Z",
+   "text": "Reach Security, which develops AI-powered exposure management tools for securing enterprise systems, raised a $50M+ Series B led by Top Tier Capital Partners. Reach Security has secured more than $50m in a Series B round led by Top Tier Capital Partners, while unveiling Reach Everywhere …",
    "via": "Techmeme"
   },
   {
@@ -17,7 +17,7 @@
    "published_at": "2026-10-17T08:35:54Z",
    "text": "🚀 DeepSeek-V4.1-Flash-1017 is here! Stronger benchmark performance, faster task completion, and shorter outputs than the previous version—a Pareto improvement in performance and cost. Now live on our website, app, and API. 🛠️ Optimized for @DeepSeekHarness, Tencent CodeBuddy, h…",
    "author_name": "DeepSeek",
-   "likes": 30809,
+   "likes": 31054,
    "story": "DeepSeek releases V4.1-Flash-1017, an update it says offers “stronger benchmark performance, faster task completion, and shorter outputs” than its predecessor"
   },
   {
@@ -34,15 +34,15 @@
    "published_at": "2026-10-16T23:26:59Z",
    "text": "after an exciting week of launches (muse wonder [full] & muse spark open), i want to write a note of appreciation to the amazing research teams at meta superintelligence labs on reaching such a special milestone ♥️ we started MSL and TBD a little more than a year ago and set a…",
    "author_name": "Alexandr Wang",
-   "likes": 4021,
+   "likes": 4049,
    "story": "A profile of Alexandr Wang, who sources say is “an operator”, had “all” of Zuckerberg's support during Meta's AI revamp, and is being touted as his successor"
   },
   {
-   "title": "An interview with Microsoft CEO Satya Nadella on the Nvidia RTX Spark-powered Surface Laptop Ultra,…",
-   "url": "https://thenewthings.com/p/microsoft-ceo-on-rogue-ai-agents-super-laptops-and-clippy",
-   "source": "Joanna Stern / The New Thin…",
-   "published_at": "2026-10-18T01:20:52Z",
-   "text": "An interview with Microsoft CEO Satya Nadella on the Nvidia RTX Spark-powered Surface Laptop Ultra, plans to make Windows a safer OS to run AI agents, and more. My exclusive interview with Satya Nadella on the new Surface Laptop Ultra and Microsoft's plan to make Windows safer for AI agents",
+   "title": "Anomaly Innovations, behind coding agent OpenCode, says a breach hit ~1.4% of OpenCode Console user…",
+   "url": "https://startupfortune.com/opencode-breach-exposes-stored-openai-and-anthropic-keys-prompts-urgent-key-rotation/",
+   "source": "Walter Schulze / Startup Fo…",
+   "published_at": "2026-10-17T20:50:55Z",
+   "text": "Anomaly Innovations, behind coding agent OpenCode, says a breach hit ~1.4% of OpenCode Console users and their API keys, in a “large scale distillation attack”. A large-scale distillation attack against the company behind the open-source coding agent OpenCode exposed stored OpenAI …",
    "via": "Techmeme"
   },
   {
@@ -50,8 +50,8 @@
    "url": "https://www.anthropic.com/research/ecdsa-curve-origins",
    "source": "Hacker News",
    "published_at": "2026-10-16T18:55:59Z",
-   "text": "1023 points and 372 comments on Hacker News.",
-   "points": 1023,
+   "text": "1024 points and 372 comments on Hacker News.",
+   "points": 1024,
    "discussion": "https://news.ycombinator.com/item?id=50122800"
   },
   {
@@ -62,11 +62,11 @@
    "text": "Anthropic announces updates to embedding independent evaluators"
   },
   {
-   "title": "As AI giants rack up potential legal liabilities of tens of billions amid safety incidents, insurer…",
-   "url": "https://www.wsj.com/tech/ai/ai-runs-into-its-next-big-obstacle-insurance-8b2d4556?st=xPnTts",
-   "source": "Jean Eaglesham / Wall Stree…",
-   "published_at": "2026-10-17T13:45:53Z",
-   "text": "As AI giants rack up potential legal liabilities of tens of billions amid safety incidents, insurers worry claims may outpace limits on existing coverage. The artificial-intelligence industry's phenomenal rate of growth means claims have the potential to outpace the limits on existing coverage",
+   "title": "An interview with Microsoft CEO Satya Nadella on the Nvidia RTX Spark-powered Surface Laptop Ultra,…",
+   "url": "https://thenewthings.com/p/microsoft-ceo-on-rogue-ai-agents-super-laptops-and-clippy",
+   "source": "Joanna Stern / The New Thin…",
+   "published_at": "2026-10-18T01:20:52Z",
+   "text": "An interview with Microsoft CEO Satya Nadella on the Nvidia RTX Spark-powered Surface Laptop Ultra, plans to make Windows a safer OS to run AI agents, and more. My exclusive interview with Satya Nadella on the new Surface Laptop Ultra and Microsoft's plan to make Windows safer for AI agents",
    "via": "Techmeme"
   },
   {
@@ -74,8 +74,8 @@
    "url": "https://github.com/openai/codex/issues/25921",
    "source": "Hacker News",
    "published_at": "2026-10-17T17:45:08Z",
-   "text": "71 points and 30 comments on Hacker News.",
-   "points": 71,
+   "text": "78 points and 31 comments on Hacker News.",
+   "points": 78,
    "discussion": "https://news.ycombinator.com/item?id=50133231"
   }
  ],
