@@ -1,13 +1,13 @@
 {
  "schema": 1,
- "generated_at": "2026-10-18T19:05:19Z",
+ "generated_at": "2026-10-18T19:37:35Z",
  "items": [
   {
-   "title": "Microsoft cancels its deal to be the anchor tenant and rent 23K Nvidia AI chips at Nscale's Essex,…",
-   "url": "https://www.telegraph.co.uk/business/2026/10/18/microsoft-axes-ai-deal-setback-uk-data-centre-pioneer/",
-   "source": "James Titcomb / Telegraph",
-   "published_at": "2026-10-18T06:05:53Z",
-   "text": "Microsoft cancels its deal to be the anchor tenant and rent 23K Nvidia AI chips at Nscale's Essex, UK, data center, which may not get grid power until the 2030s. US tech giant pulls the plug on Nscale deal in threat to multibillion-dollar listing — Microsoft has pulled …",
+   "title": "Anthropic says it's committing 5% of its shares to a Public Benefit Fund, for a total of ~20% with…",
+   "url": "https://www.anthropic.com/news/public-benefit-fund",
+   "source": "Anthropic",
+   "published_at": "2026-10-18T19:10:56Z",
+   "text": "Anthropic says it's committing 5% of its shares to a Public Benefit Fund, for a total of ~20% with co-founder and staff pledges, plus 2% per 50% valuation rise. Today, we're committing a portion of Anthropic's shares to the Anthropic Public Benefit Fund, a new entity with a structure that increases the stake as the company grows.",
    "via": "Techmeme"
   },
   {
@@ -17,7 +17,7 @@
    "published_at": "2026-10-17T08:35:54Z",
    "text": "🚀 DeepSeek-V4.1-Flash-1017 is here! Stronger benchmark performance, faster task completion, and shorter outputs than the previous version—a Pareto improvement in performance and cost. Now live on our website, app, and API. 🛠️ Optimized for @DeepSeekHarness, Tencent CodeBuddy, h…",
    "author_name": "DeepSeek",
-   "likes": 35184,
+   "likes": 35218,
    "story": "DeepSeek releases V4.1-Flash-1017, an update it says offers “stronger benchmark performance, faster task completion, and shorter outputs” than its predecessor"
   },
   {
@@ -34,15 +34,15 @@
    "published_at": "2026-10-18T15:13:01Z",
    "text": "OpenCode is currently under a sustained cyberattack, and mid-incident they ran into the same problem Hugging Face did: the frontier models they were using for defense began refusing to help fight attacking agents because analyzing the attacks started triggering safety guardrails.",
    "author_name": "Andrew Curran",
-   "likes": 2840,
+   "likes": 2988,
    "story": "Google says “magic state cultivation” works in practice on its Willow quantum processor, calling it a breakthrough that reduces errors by about 40x"
   },
   {
-   "title": "RegLayer: 47+ large US data center projects were delayed, withdrawn, or blocked in 2026; Bernstein…",
-   "url": "https://www.ft.com/content/9ea5a37d-15c9-4d5b-94d6-719048c9cd3c",
-   "source": "Financial Times",
-   "published_at": "2026-10-18T06:15:51Z",
-   "text": "RegLayer: 47+ large US data center projects were delayed, withdrawn, or blocked in 2026; Bernstein says ~35% of the planned US data center pipeline is credible. A vast bet on the future of the technology is running into the unforgiving economics of the physical world",
+   "title": "Microsoft cancels its deal to be the anchor tenant and rent 23K Nvidia AI chips at Nscale's Essex,…",
+   "url": "https://www.telegraph.co.uk/business/2026/10/18/microsoft-axes-ai-deal-setback-uk-data-centre-pioneer/",
+   "source": "James Titcomb / Telegraph",
+   "published_at": "2026-10-18T06:05:53Z",
+   "text": "Microsoft cancels its deal to be the anchor tenant and rent 23K Nvidia AI chips at Nscale's Essex, UK, data center, which may not get grid power until the 2030s. US tech giant pulls the plug on Nscale deal in threat to multibillion-dollar listing — Microsoft has pulled …",
    "via": "Techmeme"
   },
   {
@@ -50,23 +50,23 @@
    "url": "https://api-docs.deepseek.com/guides/search/",
    "source": "Hacker News",
    "published_at": "2026-10-18T06:50:36Z",
-   "text": "463 points and 225 comments on Hacker News.",
-   "points": 463,
+   "text": "471 points and 227 comments on Hacker News.",
+   "points": 471,
    "discussion": "https://news.ycombinator.com/item?id=50138531"
   },
   {
-   "title": "Investing in the public benefit",
-   "url": "https://www.anthropic.com/news/public-benefit-fund",
+   "title": "Anthropic update on independent evaluators",
+   "url": "https://www.anthropic.com/news/an-update-on-independent-evaluators",
    "source": "Anthropic",
-   "published_at": "2026-10-18T18:05:05Z",
-   "text": "We’re committing a portion of Anthropic’s shares to the Anthropic Public Benefit Fund, a new entity with a structure that increases the stake as the company grows."
+   "published_at": "2026-10-16T20:30:25Z",
+   "text": "Anthropic announces updates to embedding independent evaluators"
   },
   {
-   "title": "Sources: Anthropic is consulting law firms on deal negotiation tactics as it develops AI agents to…",
-   "url": "https://www.ft.com/content/f7c26ac0-f5f2-443a-86b2-39d62f7920a9",
-   "source": "Cristina Criddle / Financia…",
-   "published_at": "2026-10-18T05:11:12Z",
-   "text": "Sources: Anthropic is consulting law firms on deal negotiation tactics as it develops AI agents to negotiate on humans' behalf and interact with AI counterparts. Tech companies are being forced to confront the rules of negotiation when machines act on humans' behalf",
+   "title": "RegLayer: 47+ large US data center projects were delayed, withdrawn, or blocked in 2026; Bernstein…",
+   "url": "https://www.ft.com/content/9ea5a37d-15c9-4d5b-94d6-719048c9cd3c",
+   "source": "Financial Times",
+   "published_at": "2026-10-18T06:15:51Z",
+   "text": "RegLayer: 47+ large US data center projects were delayed, withdrawn, or blocked in 2026; Bernstein says ~35% of the planned US data center pipeline is credible. A vast bet on the future of the technology is running into the unforgiving economics of the physical world",
    "via": "Techmeme"
   },
   {
