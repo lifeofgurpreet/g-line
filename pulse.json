@@ -1,42 +1,7 @@
 {
  "schema": 1,
- "generated_at": "2026-10-18T22:53:21Z",
+ "generated_at": "2026-10-18T23:11:35Z",
  "items": [
-  {
-   "title": "Anthropic says it's committing 5% of its shares to a Public Benefit Fund, for a total of ~20% with…",
-   "url": "https://www.anthropic.com/news/public-benefit-fund",
-   "source": "Anthropic",
-   "published_at": "2026-10-18T19:10:56Z",
-   "text": "Anthropic says it's committing 5% of its shares to a Public Benefit Fund, for a total of ~20% with co-founder and staff pledges, plus 2% per 50% valuation rise. Today, we're committing a portion of Anthropic's shares to the Anthropic Public Benefit Fund, a new entity with a structure that increases the stake as the company grows.",
-   "via": "Techmeme"
-  },
-  {
-   "title": "🚀 DeepSeek-V4.1-Flash-1017 is here! Stronger benchmark performance, faster task completion, and sho…",
-   "url": "https://x.com/deepseek_ai/status/2111375640717033777",
-   "source": "𝕏 @deepseek_ai",
-   "published_at": "2026-10-17T08:35:54Z",
-   "text": "🚀 DeepSeek-V4.1-Flash-1017 is here! Stronger benchmark performance, faster task completion, and shorter outputs than the previous version—a Pareto improvement in performance and cost. Now live on our website, app, and API. 🛠️ Optimized for @DeepSeekHarness, Tencent CodeBuddy, h…",
-   "author_name": "DeepSeek",
-   "likes": 35446,
-   "story": "DeepSeek releases V4.1-Flash-1017, an update it says offers “stronger benchmark performance, faster task completion, and shorter outputs” than its predecessor"
-  },
-  {
-   "title": "Claude Code 2.1.303 released",
-   "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.303",
-   "source": "Claude Code releases",
-   "published_at": "2026-10-18T22:26:54Z",
-   "text": "Bug fixes and reliability improvements"
-  },
-  {
-   "title": "OpenCode is currently under a sustained cyberattack, and mid-incident they ran into the same proble…",
-   "url": "https://x.com/AndrewCurran_/status/2111837963214794940",
-   "source": "𝕏 @AndrewCurran_",
-   "published_at": "2026-10-18T15:13:01Z",
-   "text": "OpenCode is currently under a sustained cyberattack, and mid-incident they ran into the same problem Hugging Face did: the frontier models they were using for defense began refusing to help fight attacking agents because analyzing the attacks started triggering safety guardrails.",
-   "author_name": "Andrew Curran",
-   "likes": 3672,
-   "story": "MapQuest adds a Surveillance Layer to its mobile app showing license plate readers and cameras from 10+ companies including Flock, using OpenStreetMap data"
-  },
   {
    "title": "Microsoft cancels its deal to be the anchor tenant and rent 23K Nvidia AI chips at Nscale's Essex,…",
    "url": "https://www.telegraph.co.uk/business/2026/10/18/microsoft-axes-ai-deal-setback-uk-data-centre-pioneer/",
@@ -46,20 +11,31 @@
    "via": "Techmeme"
   },
   {
-   "title": "Hybrid Reasoning Agents: LLM agents that think in latent space, act through text",
-   "url": "https://arxiv.org/abs/2610.18861",
-   "source": "Hacker News",
-   "published_at": "2026-10-18T20:48:14Z",
-   "text": "109 points and 53 comments on Hacker News.",
-   "points": 109,
-   "discussion": "https://news.ycombinator.com/item?id=50145337"
+   "title": "We’re committing a portion of Anthropic’s shares to the Anthropic Public Benefit Fund, a new wholly…",
+   "url": "https://x.com/AnthropicAI/status/2111881963657412903",
+   "source": "𝕏 @AnthropicAI",
+   "published_at": "2026-10-18T18:07:51Z",
+   "text": "We’re committing a portion of Anthropic’s shares to the Anthropic Public Benefit Fund, a new wholly owned entity dedicated entirely to the public benefit. It will start off with 5% of our shares. For every 50% increase in the company’s value over a set baseline, we can…",
+   "author_name": "Anthropic",
+   "likes": 10000,
+   "story": "Anthropic says it's committing 5% of its shares to a Public Benefit Fund, for a total of ~20% with co-founder and staff pledges, plus 2% per 50% valuation rise"
   },
   {
-   "title": "Anthropic update on independent evaluators",
-   "url": "https://www.anthropic.com/news/an-update-on-independent-evaluators",
-   "source": "Anthropic",
-   "published_at": "2026-10-16T20:30:25Z",
-   "text": "Anthropic announces updates to embedding independent evaluators"
+   "title": "Claude Code 2.1.303 released",
+   "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.303",
+   "source": "Claude Code releases",
+   "published_at": "2026-10-18T22:26:54Z",
+   "text": "Bug fixes and reliability improvements"
+  },
+  {
+   "title": "🚀 DeepSeek-V4.1-Flash-1017 is here! Stronger benchmark performance, faster task completion, and sho…",
+   "url": "https://x.com/deepseek_ai/status/2111375640717033777",
+   "source": "𝕏 @deepseek_ai",
+   "published_at": "2026-10-17T08:35:54Z",
+   "text": "🚀 DeepSeek-V4.1-Flash-1017 is here! Stronger benchmark performance, faster task completion, and shorter outputs than the previous version—a Pareto improvement in performance and cost. Now live on our website, app, and API. 🛠️ Optimized for @DeepSeekHarness, Tencent CodeBuddy, h…",
+   "author_name": "DeepSeek",
+   "likes": 35470,
+   "story": "MapQuest adds a Surveillance Layer to its mobile app showing license plate readers and cameras from 10+ companies including Flock, using OpenStreetMap data"
   },
   {
    "title": "RegLayer: 47+ large US data center projects were delayed, withdrawn, or blocked in 2026; Bernstein…",
@@ -70,12 +46,36 @@
    "via": "Techmeme"
   },
   {
+   "title": "Hybrid Reasoning Agents: LLM agents that think in latent space, act through text",
+   "url": "https://arxiv.org/abs/2610.18861",
+   "source": "Hacker News",
+   "published_at": "2026-10-18T20:48:14Z",
+   "text": "127 points and 69 comments on Hacker News.",
+   "points": 127,
+   "discussion": "https://news.ycombinator.com/item?id=50145337"
+  },
+  {
+   "title": "Anthropic update on independent evaluators",
+   "url": "https://www.anthropic.com/news/an-update-on-independent-evaluators",
+   "source": "Anthropic",
+   "published_at": "2026-10-16T20:30:25Z",
+   "text": "Anthropic announces updates to embedding independent evaluators"
+  },
+  {
+   "title": "Sources: Nvidia asked Samsung, SK Hynix, and Micron to make base dies for its custom NVHBM memory o…",
+   "url": "https://www.reuters.com/world/asia-pacific/samsung-use-tsmc-technology-nvidias-next-generation-memory-chips-seoul-newspaper-2026-10-18/",
+   "source": "Kyu-Seok Shim / Reuters",
+   "published_at": "2026-10-18T18:10:37Z",
+   "text": "Sources: Nvidia asked Samsung, SK Hynix, and Micron to make base dies for its custom NVHBM memory on TSMC's 3nm process; Samsung agreed, its first use of TSMC. Samsung Electronics (005930.KS) will use TSMC's (2330.TW) 3-nanometre process to produce base dies for Nvidia's (NVDA.O) …",
+   "via": "Techmeme"
+  },
+  {
    "title": "DeepSeek search and fetch – $0.75 per 1000 successful requests",
    "url": "https://api-docs.deepseek.com/guides/search/",
    "source": "Hacker News",
    "published_at": "2026-10-18T06:50:36Z",
-   "text": "518 points and 249 comments on Hacker News.",
-   "points": 518,
+   "text": "520 points and 251 comments on Hacker News.",
+   "points": 520,
    "discussion": "https://news.ycombinator.com/item?id=50138531"
   }
  ],
