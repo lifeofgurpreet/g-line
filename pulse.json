@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-18T17:28:32Z",
+ "generated_at": "2026-10-18T18:00:54Z",
  "items": [
   {
    "title": "Microsoft cancels its deal to be the anchor tenant and rent 23K Nvidia AI chips at Nscale's Essex,…",
@@ -17,7 +17,7 @@
    "published_at": "2026-10-17T08:35:54Z",
    "text": "🚀 DeepSeek-V4.1-Flash-1017 is here! Stronger benchmark performance, faster task completion, and shorter outputs than the previous version—a Pareto improvement in performance and cost. Now live on our website, app, and API. 🛠️ Optimized for @DeepSeekHarness, Tencent CodeBuddy, h…",
    "author_name": "DeepSeek",
-   "likes": 35021,
+   "likes": 35080,
    "story": "DeepSeek releases V4.1-Flash-1017, an update it says offers “stronger benchmark performance, faster task completion, and shorter outputs” than its predecessor"
   },
   {
@@ -28,6 +28,16 @@
    "text": "Added CLAUDE_CODE_AUTO_MODE_MODEL to choose the model the client-side auto mode classifier uses; it does not change the model for server-side auto mode · Added an Idle compaction row to /config for turning idle compaction off or back on; the notices shown after an idle compaction now say how to turn it off · Added a notice to /design-sync and /design-login that standalone Claude Design (claude.ai/design) closes by December 14, 2026 · Fixed a \"Prompt is too long\" error when stopping a turn while the conversation was being compacted"
   },
   {
+   "title": "OpenCode is currently under a sustained cyberattack, and mid-incident they ran into the same proble…",
+   "url": "https://x.com/AndrewCurran_/status/2111837963214794940",
+   "source": "𝕏 @AndrewCurran_",
+   "published_at": "2026-10-18T15:13:01Z",
+   "text": "OpenCode is currently under a sustained cyberattack, and mid-incident they ran into the same problem Hugging Face did: the frontier models they were using for defense began refusing to help fight attacking agents because analyzing the attacks started triggering safety guardrails.",
+   "author_name": "Andrew Curran",
+   "likes": 2341,
+   "story": "Turkish police detained Hex and PulseChain founder Richard Heart on Oct. 14, seizing $7M+ in cash and six cold wallets; HEX fell nearly 50% on initial reports"
+  },
+  {
    "title": "Sources: Anthropic is consulting law firms on deal negotiation tactics as it develops AI agents to…",
    "url": "https://www.ft.com/content/f7c26ac0-f5f2-443a-86b2-39d62f7920a9",
    "source": "Cristina Criddle / Financia…",
@@ -36,13 +46,13 @@
    "via": "Techmeme"
   },
   {
-   "title": "Websites are closing their doors to AI agents",
-   "url": "https://www.theverge.com/ai-artificial-intelligence/1013195/ai-agents-blocked-web",
+   "title": "DeepSeek search and fetch – $0.75 per 1000 successful requests",
+   "url": "https://api-docs.deepseek.com/guides/search/",
    "source": "Hacker News",
-   "published_at": "2026-10-18T14:58:10Z",
-   "text": "105 points and 86 comments on Hacker News.",
-   "points": 105,
-   "discussion": "https://news.ycombinator.com/item?id=50141657"
+   "published_at": "2026-10-18T06:50:36Z",
+   "text": "441 points and 213 comments on Hacker News.",
+   "points": 441,
+   "discussion": "https://news.ycombinator.com/item?id=50138531"
   },
   {
    "title": "Anthropic update on independent evaluators",
@@ -60,13 +70,13 @@
    "via": "Techmeme"
   },
   {
-   "title": "Anthropic's proposed AI safety bill only kicks in if 50 deaths or $1B in damages",
-   "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/anthropics-proposed-ai-safety-bill-only-kicks-in-if-50-deaths-or-usd1-billion-in-damages-are-on-the-line-proposal-would-effectively-make-the-commerce-department-the-only-agency-capable-of-stopping-an-ai-model",
+   "title": "Show HN: Sphinx – A hook that quizzes you on your AI's code before shipping",
+   "url": "https://sphinx-six-theta.vercel.app/",
    "source": "Hacker News",
-   "published_at": "2026-10-18T14:30:27Z",
-   "text": "115 points and 129 comments on Hacker News.",
-   "points": 115,
-   "discussion": "https://news.ycombinator.com/item?id=50141429"
+   "published_at": "2026-10-18T04:33:49Z",
+   "text": "213 points and 73 comments on Hacker News.",
+   "points": 213,
+   "discussion": "https://news.ycombinator.com/item?id=50137950"
   }
  ],
  "sources": "curated, Techmeme, X (found via Techmeme, Reddit, the Internet Archive), Claude Code releases, Anthropic, Hacker News, Simon Willison"
