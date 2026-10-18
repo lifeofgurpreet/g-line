@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-18T07:49:31Z",
+ "generated_at": "2026-10-18T08:21:27Z",
  "items": [
   {
    "title": "DeepSeek releases V4.1-Flash-1017, an update it says offers “stronger benchmark performance, faster…",
@@ -17,7 +17,7 @@
    "published_at": "2026-10-17T19:15:31Z",
    "text": "OpenCode published an official statement regarding a recent distillation attack. > Earlier today, OpenAI, Anthropic and Google balances of some OpenCode users got drained. > Reportedly, only 1.4% of users were affected and these users were notified via an email. This is a…",
    "author_name": "🚨 AI News | TestingCatalog",
-   "likes": 388,
+   "likes": 394,
    "story": "Anomaly Innovations, behind coding agent OpenCode, says a breach hit ~1.4% of OpenCode Console users and their API keys, in a “large scale distillation attack”"
   },
   {
@@ -40,8 +40,8 @@
    "url": "https://api-docs.deepseek.com/guides/search/",
    "source": "Hacker News",
    "published_at": "2026-10-18T06:50:36Z",
-   "text": "62 points and 16 comments on Hacker News.",
-   "points": 62,
+   "text": "93 points and 41 comments on Hacker News.",
+   "points": 93,
    "discussion": "https://news.ycombinator.com/item?id=50138531"
   },
   {
@@ -52,11 +52,11 @@
    "text": "Anthropic announces updates to embedding independent evaluators"
   },
   {
-   "title": "Filing: Disney agreed to hire 60+ staff from Character.AI and pay them ~$180M over three years, plu…",
-   "url": "https://www.bloomberg.com/news/newsletters/2026-10-17/disney-offers-soft-landing-to-staff-at-troubled-character-ai",
-   "source": "Bloomberg",
-   "published_at": "2026-10-18T03:50:51Z",
-   "text": "Filing: Disney agreed to hire 60+ staff from Character.AI and pay them ~$180M over three years, plus $30M for retention awards; a bankruptcy judge must approve. More than 60 workers at Character.AI are being offered a lifeline from the media giant … Soft Landing — Layoffs are common in bankruptcy.",
+   "title": "Sources: Anthropic is consulting law firms on deal negotiation tactics as it develops AI agents to…",
+   "url": "https://www.ft.com/content/f7c26ac0-f5f2-443a-86b2-39d62f7920a9",
+   "source": "Cristina Criddle / Financia…",
+   "published_at": "2026-10-18T05:11:12Z",
+   "text": "Sources: Anthropic is consulting law firms on deal negotiation tactics as it develops AI agents to negotiate on humans' behalf and interact with AI counterparts. Tech companies are being forced to confront the rules of negotiation when machines act on humans' behalf",
    "via": "Techmeme"
   },
   {
@@ -64,8 +64,8 @@
    "url": "https://sphinx-six-theta.vercel.app/",
    "source": "Hacker News",
    "published_at": "2026-10-18T04:33:49Z",
-   "text": "90 points and 25 comments on Hacker News.",
-   "points": 90,
+   "text": "99 points and 29 comments on Hacker News.",
+   "points": 99,
    "discussion": "https://news.ycombinator.com/item?id=50137950"
   }
  ],
