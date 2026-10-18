@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-18T06:46:23Z",
+ "generated_at": "2026-10-18T07:18:09Z",
  "items": [
   {
    "title": "DeepSeek releases V4.1-Flash-1017, an update it says offers “stronger benchmark performance, faster…",
@@ -17,7 +17,7 @@
    "published_at": "2026-10-17T19:15:31Z",
    "text": "OpenCode published an official statement regarding a recent distillation attack. > Earlier today, OpenAI, Anthropic and Google balances of some OpenCode users got drained. > Reportedly, only 1.4% of users were affected and these users were notified via an email. This is a…",
    "author_name": "🚨 AI News | TestingCatalog",
-   "likes": 371,
+   "likes": 381,
    "story": "Anomaly Innovations, behind coding agent OpenCode, says a breach hit ~1.4% of OpenCode Console users and their API keys, in a “large scale distillation attack”"
   },
   {
@@ -40,8 +40,8 @@
    "url": "https://sphinx-six-theta.vercel.app/",
    "source": "Hacker News",
    "published_at": "2026-10-18T04:33:49Z",
-   "text": "64 points and 17 comments on Hacker News.",
-   "points": 64,
+   "text": "82 points and 23 comments on Hacker News.",
+   "points": 82,
    "discussion": "https://news.ycombinator.com/item?id=50137950"
   },
   {
