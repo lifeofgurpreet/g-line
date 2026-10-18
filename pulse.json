@@ -1,24 +1,24 @@
 {
  "schema": 1,
- "generated_at": "2026-10-18T08:21:27Z",
+ "generated_at": "2026-10-18T08:53:17Z",
  "items": [
   {
-   "title": "DeepSeek releases V4.1-Flash-1017, an update it says offers “stronger benchmark performance, faster…",
-   "url": "https://www.bloomberg.com/news/articles/2026-10-17/deepseek-pushes-out-updated-ai-model-it-says-is-faster-leaner",
-   "source": "Saritha Rai / Bloomberg",
-   "published_at": "2026-10-17T15:01:27Z",
-   "text": "DeepSeek releases V4.1-Flash-1017, an update it says offers “stronger benchmark performance, faster task completion, and shorter outputs” than its predecessor. DeepSeek released an update of its AI model this weekend that it says is faster and leaner, ramping …",
+   "title": "AI debt worries mount as CoreWeave's bond yield tops 15%, insuring SoftBank debt gets pricier, and…",
+   "url": "https://www.nytimes.com/2026/10/17/business/ai-debt-coreweave-oracle-softbank.html?unlocked_article_code=1.JlE.Xgxf.QuEWFgfl8zJB&smid=url-share",
+   "source": "New York Times",
+   "published_at": "2026-10-18T06:10:57Z",
+   "text": "AI debt worries mount as CoreWeave's bond yield tops 15%, insuring SoftBank debt gets pricier, and some Oracle debt trades near 80 to 90 cents on the dollar. Debt trouble at CoreWeave, Oracle and SoftBank raises questions about whether there are broader problems with the data center build-out.",
    "via": "Techmeme"
   },
   {
-   "title": "OpenCode published an official statement regarding a recent distillation attack. > Earlier today, O…",
-   "url": "https://x.com/testingcatalog/status/2111536604351246541",
-   "source": "𝕏 @testingcatalog",
-   "published_at": "2026-10-17T19:15:31Z",
-   "text": "OpenCode published an official statement regarding a recent distillation attack. > Earlier today, OpenAI, Anthropic and Google balances of some OpenCode users got drained. > Reportedly, only 1.4% of users were affected and these users were notified via an email. This is a…",
-   "author_name": "🚨 AI News | TestingCatalog",
-   "likes": 394,
-   "story": "Anomaly Innovations, behind coding agent OpenCode, says a breach hit ~1.4% of OpenCode Console users and their API keys, in a “large scale distillation attack”"
+   "title": "🚀 DeepSeek-V4.1-Flash-1017 is here! Stronger benchmark performance, faster task completion, and sho…",
+   "url": "https://x.com/deepseek_ai/status/2111375640717033777",
+   "source": "𝕏 @deepseek_ai",
+   "published_at": "2026-10-17T08:35:54Z",
+   "text": "🚀 DeepSeek-V4.1-Flash-1017 is here! Stronger benchmark performance, faster task completion, and shorter outputs than the previous version—a Pareto improvement in performance and cost. Now live on our website, app, and API. 🛠️ Optimized for @DeepSeekHarness, Tencent CodeBuddy, h…",
+   "author_name": "DeepSeek",
+   "likes": 33350,
+   "story": "DeepSeek releases V4.1-Flash-1017, an update it says offers “stronger benchmark performance, faster task completion, and shorter outputs” than its predecessor"
   },
   {
    "title": "Claude Code 2.1.302 released",
@@ -28,28 +28,14 @@
    "text": "Added CLAUDE_CODE_AUTO_MODE_MODEL to choose the model the client-side auto mode classifier uses; it does not change the model for server-side auto mode · Added an Idle compaction row to /config for turning idle compaction off or back on; the notices shown after an idle compaction now say how to turn it off · Added a notice to /design-sync and /design-login that standalone Claude Design (claude.ai/design) closes by December 14, 2026 · Fixed a \"Prompt is too long\" error when stopping a turn while the conversation was being compacted"
   },
   {
-   "title": "Microsoft cancels its deal with Nscale to serve as the anchor tenant and rent 23K Nvidia AI chips a…",
-   "url": "https://www.telegraph.co.uk/business/2026/10/18/microsoft-axes-ai-deal-setback-uk-data-centre-pioneer/",
-   "source": "James Titcomb / Telegraph",
-   "published_at": "2026-10-18T06:05:53Z",
-   "text": "Microsoft cancels its deal with Nscale to serve as the anchor tenant and rent 23K Nvidia AI chips at a planned data center facing repeated delays in Essex, UK. US tech giant pulls the plug on Nscale deal in threat to multibillion-dollar listing — Microsoft has pulled …",
-   "via": "Techmeme"
-  },
-  {
-   "title": "DeepSeek search and fetch – $0.75 per 1000 successful requests",
-   "url": "https://api-docs.deepseek.com/guides/search/",
-   "source": "Hacker News",
-   "published_at": "2026-10-18T06:50:36Z",
-   "text": "93 points and 41 comments on Hacker News.",
-   "points": 93,
-   "discussion": "https://news.ycombinator.com/item?id=50138531"
-  },
-  {
-   "title": "Anthropic update on independent evaluators",
-   "url": "https://www.anthropic.com/news/an-update-on-independent-evaluators",
-   "source": "Anthropic",
-   "published_at": "2026-10-16T20:30:25Z",
-   "text": "Anthropic announces updates to embedding independent evaluators"
+   "title": "after an exciting week of launches (muse wonder [full] & muse spark open), i want to write a note o…",
+   "url": "https://x.com/alexandr_wang/status/2111237499083252185",
+   "source": "𝕏 @alexandr_wang",
+   "published_at": "2026-10-16T23:26:59Z",
+   "text": "after an exciting week of launches (muse wonder [full] & muse spark open), i want to write a note of appreciation to the amazing research teams at meta superintelligence labs on reaching such a special milestone ♥️ we started MSL and TBD a little more than a year ago and set a…",
+   "author_name": "Alexandr Wang",
+   "likes": 4293,
+   "story": "Turkish police detained Hex and PulseChain founder Richard Heart on Oct. 14, seizing $7M+ in cash and six cold wallets; HEX fell nearly 50% on initial reports"
   },
   {
    "title": "Sources: Anthropic is consulting law firms on deal negotiation tactics as it develops AI agents to…",
@@ -60,12 +46,46 @@
    "via": "Techmeme"
   },
   {
+   "title": "DeepSeek search and fetch – $0.75 per 1000 successful requests",
+   "url": "https://api-docs.deepseek.com/guides/search/",
+   "source": "Hacker News",
+   "published_at": "2026-10-18T06:50:36Z",
+   "text": "139 points and 56 comments on Hacker News.",
+   "points": 139,
+   "discussion": "https://news.ycombinator.com/item?id=50138531"
+  },
+  {
+   "title": "OpenCode published an official statement regarding a recent distillation attack. > Earlier today, O…",
+   "url": "https://x.com/testingcatalog/status/2111536604351246541",
+   "source": "𝕏 @testingcatalog",
+   "published_at": "2026-10-17T19:15:31Z",
+   "text": "OpenCode published an official statement regarding a recent distillation attack. > Earlier today, OpenAI, Anthropic and Google balances of some OpenCode users got drained. > Reportedly, only 1.4% of users were affected and these users were notified via an email. This is a…",
+   "author_name": "🚨 AI News | TestingCatalog",
+   "likes": 403,
+   "story": "Anomaly Innovations, behind coding agent OpenCode, says a breach hit ~1.4% of OpenCode Console users and their API keys, in a “large scale distillation attack”"
+  },
+  {
+   "title": "Anthropic update on independent evaluators",
+   "url": "https://www.anthropic.com/news/an-update-on-independent-evaluators",
+   "source": "Anthropic",
+   "published_at": "2026-10-16T20:30:25Z",
+   "text": "Anthropic announces updates to embedding independent evaluators"
+  },
+  {
+   "title": "Filing: Disney agreed to hire 60+ staff from Character.AI and pay them ~$180M over three years, plu…",
+   "url": "https://www.bloomberg.com/news/newsletters/2026-10-17/disney-offers-soft-landing-to-staff-at-troubled-character-ai",
+   "source": "Bloomberg",
+   "published_at": "2026-10-18T03:50:51Z",
+   "text": "Filing: Disney agreed to hire 60+ staff from Character.AI and pay them ~$180M over three years, plus $30M for retention awards; a bankruptcy judge must approve. More than 60 workers at Character.AI are being offered a lifeline from the media giant … Soft Landing — Layoffs are common in bankruptcy.",
+   "via": "Techmeme"
+  },
+  {
    "title": "Show HN: Sphinx – A hook that quizzes you on your AI's code before shipping",
    "url": "https://sphinx-six-theta.vercel.app/",
    "source": "Hacker News",
    "published_at": "2026-10-18T04:33:49Z",
-   "text": "99 points and 29 comments on Hacker News.",
-   "points": 99,
+   "text": "106 points and 30 comments on Hacker News.",
+   "points": 106,
    "discussion": "https://news.ycombinator.com/item?id=50137950"
   }
  ],
