@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-19T07:20:22Z",
+ "generated_at": "2026-10-19T07:53:50Z",
  "items": [
   {
    "title": "Anthropic says it's committing 5% of its shares to a Public Benefit Fund, for a total of ~20% with…",
@@ -9,16 +9,6 @@
    "published_at": "2026-10-18T19:10:56Z",
    "text": "Anthropic says it's committing 5% of its shares to a Public Benefit Fund, for a total of ~20% with co-founder and staff pledges, plus 2% per 50% valuation rise. Today, we're committing a portion of Anthropic's shares to the Anthropic Public Benefit Fund, a new entity with a structure that increases the stake as the company grows.",
    "via": "Techmeme"
-  },
-  {
-   "title": "🚀 DeepSeek-V4.1-Flash-1017 is here! Stronger benchmark performance, faster task completion, and sho…",
-   "url": "https://x.com/deepseek_ai/status/2111375640717033777",
-   "source": "𝕏 @deepseek_ai",
-   "published_at": "2026-10-17T08:35:54Z",
-   "text": "🚀 DeepSeek-V4.1-Flash-1017 is here! Stronger benchmark performance, faster task completion, and shorter outputs than the previous version—a Pareto improvement in performance and cost. Now live on our website, app, and API. 🛠️ Optimized for @DeepSeekHarness, Tencent CodeBuddy, h…",
-   "author_name": "DeepSeek",
-   "likes": 36176,
-   "story": "DeepSeek releases V4.1-Flash-1017, an update it says offers “stronger benchmark performance, faster task completion, and shorter outputs” than its predecessor"
   },
   {
    "title": "Claude Code 2.1.303 released",
@@ -36,13 +26,13 @@
    "via": "Techmeme"
   },
   {
-   "title": "Hybrid Reasoning Agents: LLM agents that think in latent space, act through text",
-   "url": "https://arxiv.org/abs/2610.18861",
+   "title": "DeepSeek V4.1 Flash 1017 (Max)",
+   "url": "https://artificialanalysis.ai/models/deepseek-v4-1-flash-1017",
    "source": "Hacker News",
-   "published_at": "2026-10-18T20:48:14Z",
-   "text": "348 points and 166 comments on Hacker News.",
-   "points": 348,
-   "discussion": "https://news.ycombinator.com/item?id=50145337"
+   "published_at": "2026-10-19T04:41:46Z",
+   "text": "113 points and 37 comments on Hacker News.",
+   "points": 113,
+   "discussion": "https://news.ycombinator.com/item?id=50148452"
   },
   {
    "title": "Anthropic update on independent evaluators",
@@ -52,21 +42,21 @@
    "text": "Anthropic announces updates to embedding independent evaluators"
   },
   {
-   "title": "Abby Care, which runs a clinically led, AI-powered platform to train and certify family caregivers,…",
-   "url": "https://fortune.com/2026/10/15/startup-abby-care-raises-82-million-to-turn-family-members-into-paid-caregivers/",
-   "source": "Allie Garfinkle / Fortune",
-   "published_at": "2026-10-19T04:40:40Z",
-   "text": "Abby Care, which runs a clinically led, AI-powered platform to train and certify family caregivers, raised an $82M Series C led by Transformation Capital. As a kid, Havi Nguyen sometimes missed school to translate at doctor's appointments, and was managing Medicaid paperwork for her family, who had recently immigrated from Vietnam.",
+   "title": "Sam Altman's World launches a World ID verification suite for banks, bundling tools to verify human…",
+   "url": "https://www.theblock.co/news/ecosystems/2026-10-18-world-launches-world-id-suite-banks-418869",
+   "source": "Zack Abrams / The Block",
+   "published_at": "2026-10-19T03:10:38Z",
+   "text": "Sam Altman's World launches a World ID verification suite for banks, bundling tools to verify human and agent identities, its first industry-specific offering. The identity project co-founded by OpenAI CEO Sam Altman named Bain Capital and VanEck Funds among its design partners but did not name …",
    "via": "Techmeme"
   },
   {
-   "title": "If you don't run your own LLM proxy, how do you know whats going on?",
-   "url": "https://jrdsgl.com/if-you-dont-run-your-own-llm-proxy-how-the-fuck-do-you-even-know-whats-going-on/",
+   "title": "Hybrid Reasoning Agents: LLM agents that think in latent space, act through text",
+   "url": "https://arxiv.org/abs/2610.18861",
    "source": "Hacker News",
-   "published_at": "2026-10-18T21:09:12Z",
-   "text": "118 points and 81 comments on Hacker News.",
-   "points": 118,
-   "discussion": "https://news.ycombinator.com/item?id=50145507"
+   "published_at": "2026-10-18T20:48:14Z",
+   "text": "366 points and 173 comments on Hacker News.",
+   "points": 366,
+   "discussion": "https://news.ycombinator.com/item?id=50145337"
   }
  ],
  "sources": "curated, Techmeme, X (found via Techmeme, Reddit, the Internet Archive), Claude Code releases, Anthropic, Hacker News, Simon Willison"
