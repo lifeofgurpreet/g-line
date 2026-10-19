@@ -24,12 +24,12 @@ type World = {
 }
 
 /** Claude Code beneath the mod, with what each test needs to steer it. */
-function world(on: On, stored: Record<string, unknown> = {}, kept?: Record<string, unknown>): World {
+function world(on: On, stored: Record<string, unknown> = {}, kept?: Record<string, unknown>, env: Record<string, string> = {}): World {
   const w: World = {
     clock: mock.clock(on, { now: NOW * 1000 }), toasts: [], notes: [], suggested: [], copied: [],
     usage: { cost: 1, tokens: 600_000, percent: 60, limits: [] }, agents: [], notifySent: true, toolError: false, writes: [],
   }
-  mock.env(on, { HOME: '/home/someone' })
+  mock.env(on, { HOME: '/home/someone', ...env })
   if (kept) {
     // A store the test reads back: what the mod saved, as it saved it.
     on('store.get', ($, e) => ({ value: kept[e.key] }) as never)
@@ -461,8 +461,9 @@ test('the 0.4 command still answers for one release, and says the new name', { t
   expect(w.toasts[0]).toMatch(/^glanceline is now g-line: use \/g-line/)
 })
 
-test('Pulse is off by default and fetches nothing; turned on, one static file feeds the spinner after 15 seconds', { timeoutMs: 30_000 }, async ($, on) => {
+test('Pulse is off by default and fetches nothing; turned on in the receipts-only layout, one static file feeds the spinner after 15 seconds', { timeoutMs: 30_000 }, async ($, on) => {
   const w = world(on)
+  w.config = { lines: 'receipts' }
   const fetched: string[] = []
   const feed = { schema: 1, generated_at: '2026-10-14T12:00:00Z', items: [
     { title: 'Claude Code 2.1.297 \u001b[31mreleased', url: 'https://github.com/anthropics/claude-code/releases', source: 'Claude Code releases' },
@@ -497,6 +498,26 @@ test('Pulse is off by default and fetches nothing; turned on, one static file fe
   expect(shown).toMatch(/│ Claude Code 2\.1\.297 released \(Claude Code releases\)$/)
   expect(shown).not.toMatch(/\u001b/)
   await later.unmount()
+})
+
+test('with a footer, Pulse keeps to its row: the spinner shows no headline, so only one moves at a time', { timeoutMs: 30_000 }, async ($, on) => {
+  const w = world(on)
+  w.config = { pulse: true }
+  feedServer(on)
+  const suffixes: string[] = []
+  on('ui.render', { component: 'Spinner' }, ($, e) => {
+    suffixes.push(e.props.suffix)
+    const { Text } = $.ui.resolve(e)
+    return <Text>x</Text>
+  })
+  await start($)
+  await w.clock.settle()
+  await $.turn.start({ text: 'go', turnId: 't1' })
+  await w.clock.advance(16_000)
+  const ui = await $.ui.mount({ plugin: 'g-line', surface: 'terminal', component: 'Spinner', requestId: 'main',
+    props: { word: 'Sauteing', message: null, suffix: '…', mode: 'thinking' }, viewport: { columns: 160, rows: 40 } })
+  expect(suffixes[suffixes.length - 1] ?? '').not.toMatch(/│/)
+  await ui.unmount()
 })
 
 test('Claude can read the figures only when claude_reads is on, as a JSON snapshot', { timeoutMs: 30_000 }, async ($, on) => {
@@ -643,7 +664,7 @@ function feedServer(on: On) {
 const HINT_PROPS = { isDraft: false, isWorking: false, hint: '? for shortcuts' }
 
 test('turned on, Pulse shows a headline under the prompt at once: who, how old, and the headline as a link', { timeoutMs: 30_000 }, async ($, on) => {
-  const w = world(on)
+  const w = world(on, {}, undefined, { TERM_PROGRAM: 'ghostty' })
   feedServer(on)
   await start($)
   const hint = async (columns: number) => $.ui.mount({ plugin: 'g-line', surface: 'terminal', component: 'PromptHint',
@@ -670,6 +691,19 @@ test('turned on, Pulse shows a headline under the prompt at once: who, how old, 
   // `/g-line open` opens the one shown, or copies it where no browser can open.
   await $.command.run({ command: 'g-line', args: 'open' } as never)
   expect(w.toasts[w.toasts.length - 1]).toMatch(/^Opened github\.com in your browser\.$/)
+})
+
+test('where the terminal draws no links, or inside tmux, the headline is plain text so the row stays one line', { timeoutMs: 30_000 }, async ($, on) => {
+  const w = world(on, {}, undefined, { TERM_PROGRAM: 'ghostty', TMUX: '/tmp/tmux-1/default,1,0' })
+  w.config = { pulse: true }
+  feedServer(on)
+  await start($)
+  await w.clock.settle()
+  const ui = await $.ui.mount({ plugin: 'g-line', surface: 'terminal', component: 'PromptHint',
+    props: HINT_PROPS as never, viewport: { columns: 160, rows: 40 } })
+  expect(await ui.find({ type: 'Link' })).toBeUndefined()
+  expect(await ui.find({ type: 'Text', text: 'Claude Dashboards are in beta' })).toBeDefined()
+  await ui.unmount()
 })
 
 test('/g-line news lists every item in the feed\'s order, the picked one in full; j moves on', { timeoutMs: 30_000 }, async ($, on) => {

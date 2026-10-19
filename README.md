@@ -141,11 +141,13 @@ appears under the prompt within seconds, on a dim row of its own under line 2:
 𝕏 @NeelNanda5 · 2h: This is interesting work, but I don't think it's a significant… · /g-line news
 ```
 
-It moves to the next item every 8 seconds. The headline is a link: cmd-click (ctrl-click on
-Linux) opens it in terminals that draw OSC 8 links (iTerm2, Ghostty, WezTerm, kitty, VS Code;
-in tmux, add `set -ga terminal-features "*:hyperlinks"`). `/g-line open` opens whichever
-headline is showing; over SSH, where there's no browser to open, it copies the link instead.
-On a turn that runs longer than 15 seconds, the spinner shows the headlines too.
+It moves to the next item every 8 seconds. In Ghostty, iTerm2, WezTerm and VS Code the
+headline is a link: cmd-click (ctrl-click on Linux) opens it. Elsewhere, and inside tmux, it's
+plain text, because a terminal without links would print the whole address after it and push
+the row onto a second line. `/g-line open` opens whichever headline is showing in any
+terminal; over SSH, where there's no browser to open, it copies the link instead. With the
+receipts-only layout there is no row, so the spinner shows the headlines on turns longer
+than 15 seconds instead. Only one of the two ever shows.
 
 ![Under the prompt, after a turn that closed with "API $0.17 · cache read 53%": the hint line ends with "ctx 4% · 5h 0% · wk 24%", line 2 reads "Opus high · cache ~57m · 5h resets 4h41m · wk resets 4d4h", and Pulse's row under it reads "𝕏 @deepseek_ai · 1d: 🚀 DeepSeek-V4.1-Flash-1017 is here! Stronger benchmark per… · /g-line news"](docs/pulse-row.png)
 
@@ -172,7 +174,7 @@ seconds. Headline text is stripped of escape and control characters before it re
 terminal; the only escape g-line draws is its own link, to an `https` address it has checked.
 With Pulse off (the default), g-line makes no network requests at all.
 
-![Pulse on the spinner during a long turn: Churning… · 1 tool · 5h 9% │ 𝕏 @claudeai · 6d: Claude Dashboards and Claude Motion are in b…](docs/pulse.png)
+![Pulse on the spinner during a long turn, in the receipts-only layout: Churning… · 1 tool · 5h 9% │ 𝕏 @claudeai · 6d: Claude Dashboards and Claude Motion are in b…](docs/pulse.png)
 
 ### The pane, settings and share card
 

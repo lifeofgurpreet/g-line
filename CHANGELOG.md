@@ -1,5 +1,15 @@
 # Changelog
 
+## 0.6.3 (2026-10-19): one headline at a time, on one row
+
+- With a footer, Pulse's headline shows only on its row under the prompt. The spinner no
+  longer carries a second, different headline at the same time; it does so only in the
+  receipts-only layout, where there is no row.
+- The row's headline is a link only in terminals known to draw OSC 8 links (Ghostty, iTerm2,
+  WezTerm, VS Code) and not inside tmux. Elsewhere Claude Code prints a link's whole address
+  after its text, which pushed the row onto a second line; there the headline is plain text,
+  and `/g-line open` opens it.
+
 ## 0.6.2 (2026-10-19): headlines with emoji stay on one row
 
 - Feed text is measured in terminal columns, not characters: an emoji or an East Asian wide

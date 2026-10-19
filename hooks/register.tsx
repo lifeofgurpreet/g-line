@@ -878,10 +878,22 @@ async function pulseLine($: EngineInterface, e: Parameters<EngineInterface['ui']
   return (
     <Box key="pulse" flexDirection="row">
       {row.lead ? <Text dimColor>{`${row.lead}: `}</Text> : null}
-      <Link href={item.url} label={row.title} />
+      {(await drawsLinks($)) ? <Link href={item.url} label={row.title} /> : <Text wrap="truncate-end">{row.title}</Text>}
       {row.tail ? <Text dimColor>{row.tail}</Text> : null}
     </Box>
   )
+}
+
+/**
+ * Whether the terminal draws OSC 8 links. Where it doesn't, the engine prints
+ * a link's URL after its text, which pushes Pulse's row onto a second line, so
+ * the headline is drawn as plain text there and `/g-line open` opens it.
+ * Inside tmux, links need a tmux setting, so plain text too.
+ */
+async function drawsLinks($: EngineInterface): Promise<boolean> {
+  if (await $.env.get('TMUX')) return false
+  const program = (await $.env.get('TERM_PROGRAM')) ?? ''
+  return ['ghostty', 'iTerm.app', 'WezTerm', 'vscode'].includes(program)
 }
 
 /** Moves Pulse's row on to the next item, while there is a row to move. */
@@ -1318,7 +1330,9 @@ export const register: Register = (on, options) => {
     const shown = e.props.message ?? e.props.word
     const lead = shown.endsWith('…') || shown.endsWith('...') ? '' : e.props.suffix
     let suffix = parts.length ? `${lead} · ${parts.join(' · ')}` : ''
-    if (config.pulse) {
+    // With a footer, Pulse has its own row under the prompt; the spinner
+    // carries a headline only in the receipts-only layout, so one shows at a time.
+    if (config.pulse && config.lines === 0) {
       // The engine follows the suffix with its own `(38s · ↓ 1.2k tokens)`:
       // the headline takes what is left after keeping room for that.
       const columns = e.viewport?.columns ?? 0
