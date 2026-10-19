@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-19T19:09:44Z",
+ "generated_at": "2026-10-19T19:41:45Z",
  "items": [
   {
    "title": "A look at Anthropic's opaque, five-member Long-Term Benefit Trust, where members own no Anthropic e…",
@@ -17,7 +17,7 @@
    "published_at": "2026-10-19T11:56:23Z",
    "text": "MiniMax M3.1 Flash: Space Performance + Bunny Speed 🚀🐰 Yes, Space Bunny - which has topped global leaderboards with 200T+ tokens - was an earlier version of M3.1 Flash. 💰Redefining the performance economics of agentic AI. M3.1 Flash achieves frontier-level intelligence ht…",
    "author_name": "MiniMax (official)",
-   "likes": 5993,
+   "likes": 6065,
    "story": "MiniMax launches M3.1 Flash, saying it delivers “a generational leap” in agentic tasks, coding, computer use, and cybersecurity, with weights due October 23"
   },
   {
@@ -28,13 +28,23 @@
    "text": "Bug fixes and reliability improvements"
   },
   {
+   "title": "From the US government's detention memo arguing that the former OpenAI engineer accused in the offi…",
+   "url": "https://x.com/AndrewCurran_/status/2112257195136225394",
+   "source": "𝕏 @AndrewCurran_",
+   "published_at": "2026-10-19T18:58:53Z",
+   "text": "From the US government's detention memo arguing that the former OpenAI engineer accused in the office bugging case should remain in custody:",
+   "author_name": "Andrew Curran",
+   "likes": 106,
+   "story": "Filing: US prosecutors say OpenAI suspect Abdulrahman Alfozan maintained frequent WhatsApp contact in 2025 and 2026 with an unnamed Saudi Royal Family member"
+  },
+  {
    "title": "I recently wrote about why we need to treat models as insider risks, with security controls sitting…",
    "url": "https://x.com/satyanadella/status/2112168320946634932",
    "source": "𝕏 @satyanadella",
    "published_at": "2026-10-19T13:05:44Z",
    "text": "I recently wrote about why we need to treat models as insider risks, with security controls sitting outside the model itself. Today, we're putting that principle into practice by expanding Project Perception with new capabilities to help continuously assess agent risk, adapt…",
    "author_name": "Satya Nadella",
-   "likes": 1063,
+   "likes": 1092,
    "story": "Microsoft debuts new security tools in Microsoft 365 E7 and its Project Perception system that treat AI agents as potential insider threats via risk assessments"
   },
   {
@@ -50,8 +60,8 @@
    "url": "https://home.cern/cern-and-mistral-join-forces-to-accelerate-ai-for-science/",
    "source": "Hacker News",
    "published_at": "2026-10-19T15:28:24Z",
-   "text": "226 points and 45 comments on Hacker News.",
-   "points": 226,
+   "text": "237 points and 44 comments on Hacker News.",
+   "points": 237,
    "discussion": "https://news.ycombinator.com/item?id=50153630"
   },
   {
@@ -61,7 +71,7 @@
    "published_at": "2026-10-19T14:07:54Z",
    "text": "Expect this month to be a busy one for new model releases. We have the scoop on a new Anthropic model, Google’s Gemini 4 Carbon, and a potential new Terra model from OpenAI.",
    "author_name": "Stephanie Palazzolo",
-   "likes": 584,
+   "likes": 598,
    "story": "Source: Anthropic is preparing a model with better intuition and reasoning that can discern underlying intentions and is better at thinking outside of the box",
    "links": [
     "https://www.theinformation.com/newsletters/ai-agenda/anthropic-readies-model-reads-users-intentions-better"
@@ -75,11 +85,11 @@
    "text": "Anthropic announces updates to embedding independent evaluators"
   },
   {
-   "title": "Filing: US prosecutors say OpenAI suspect Abdulrahman Alfozan maintained frequent WhatsApp contact…",
-   "url": "https://www.cnbc.com/2026/10/19/openai-bugging-suspect-alfozan-saudi-royal-family.html",
-   "source": "Dan Mangan / CNBC",
-   "published_at": "2026-10-19T14:25:43Z",
-   "text": "Filing: US prosecutors say OpenAI suspect Abdulrahman Alfozan maintained frequent WhatsApp contact in 2025 and 2026 with an unnamed Saudi Royal Family member. The Saudi national charged with planting a recording device in a sensitive OpenAI executive conference room in San Francisco was …",
+   "title": "Town, which develops enterprise AI assistants, raised a $108M Series B at a $1B valuation, after an…",
+   "url": "https://techcrunch.com/2026/10/19/ai-assistant-startup-town-nabs-unicorn-valuation-four-months-after-launch/",
+   "source": "Dominic-Madori Davis / Tech…",
+   "published_at": "2026-10-19T18:20:44Z",
+   "text": "Town, which develops enterprise AI assistants, raised a $108M Series B at a $1B valuation, after announcing a $55M Series A in June. Town, a two-year-old, San Francisco-based startup developing AI assistants, nabbed a unicorn valuation on Monday, announcing a $108 million Series B funding round co-led …",
    "via": "Techmeme"
   },
   {
@@ -89,7 +99,7 @@
    "published_at": "2026-10-17T08:51:31Z",
    "text": "Vibe coded my parents' TV this afternoon! It was showing a sponsored ad before you could even get to Netflix. Gave Claude Code the model number, it found the TV on wifi, removed 25 Xiaomi packages and wrote a new launcher. Looks like an Apple TV now lol",
    "author_name": "Gathin (Ø,G)",
-   "likes": 27763,
+   "likes": 27845,
    "story": "Developers and vibe coders are using AI tools like Claude Code to get rid of sponsored ads on their smart TVs, disable tracking features, and more"
   },
   {
@@ -97,8 +107,8 @@
    "url": "https://mistral.ai/news/timestral/",
    "source": "Hacker News",
    "published_at": "2026-10-19T09:59:32Z",
-   "text": "433 points and 83 comments on Hacker News.",
-   "points": 433,
+   "text": "450 points and 84 comments on Hacker News.",
+   "points": 450,
    "discussion": "https://news.ycombinator.com/item?id=50150434"
   }
  ],
