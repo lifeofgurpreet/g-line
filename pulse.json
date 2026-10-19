@@ -1,13 +1,13 @@
 {
  "schema": 1,
- "generated_at": "2026-10-19T15:26:23Z",
+ "generated_at": "2026-10-19T15:58:32Z",
  "items": [
   {
-   "title": "Elon Musk says “I will give one of my SpaceX shares to every kid in America” in 2027, a gift worth…",
-   "url": "https://www.cnbc.com/2026/10/19/elon-musk-spacex-shares-giveaway-kids.html",
-   "source": "Kai Nicol-Schwarz / CNBC",
-   "published_at": "2026-10-19T09:40:40Z",
-   "text": "Elon Musk says “I will give one of my SpaceX shares to every kid in America” in 2027, a gift worth ~$10.5B, after Anthropic committed 5% of its shares to APBF. Choose CNBC as your preferred source on Google and never miss a moment from the most trusted name in business news.",
+   "title": "Anthropic commits 5% of its shares to the Anthropic Public Benefit Fund, for a total of ~20% with c…",
+   "url": "https://www.anthropic.com/news/public-benefit-fund",
+   "source": "Anthropic",
+   "published_at": "2026-10-18T19:10:56Z",
+   "text": "Anthropic commits 5% of its shares to the Anthropic Public Benefit Fund, for a total of ~20% with co-founder and staff pledges, plus 2% per 50% valuation rise. Today, we're committing a portion of Anthropic's shares to the Anthropic Public Benefit Fund, a new entity with a structure that increases the stake as the company grows.",
    "via": "Techmeme"
   },
   {
@@ -17,7 +17,7 @@
    "published_at": "2026-10-19T13:05:44Z",
    "text": "I recently wrote about why we need to treat models as insider risks, with security controls sitting outside the model itself. Today, we're putting that principle into practice by expanding Project Perception with new capabilities to help continuously assess agent risk, adapt…",
    "author_name": "Satya Nadella",
-   "likes": 718,
+   "likes": 807,
    "story": "Microsoft debuts new security tools in Microsoft 365 E7 and its Project Perception system that treat AI agents as potential insider threats via risk assessments"
   },
   {
@@ -28,17 +28,14 @@
    "text": "Bug fixes and reliability improvements"
   },
   {
-   "title": "Four Gemini 4 Argon agents beat Minecraft from scratch in 27 hours. Operating in a sandbox using on…",
-   "url": "https://x.com/GoogleDeepMind/status/2111127991401247033",
-   "source": "𝕏 @GoogleDeepMind",
-   "published_at": "2026-10-16T16:11:50Z",
-   "text": "Four Gemini 4 Argon agents beat Minecraft from scratch in 27 hours. Operating in a sandbox using only code and text, they wrote 2,783 programs, divided up jobs over chat, shared notes, and debugged errors together - all with no human help ↓",
-   "author_name": "Google DeepMind",
-   "likes": 2529,
-   "story": "Google DeepMind says four Gemini 4 Argon agents beat Minecraft without any human help in 27 hours and 14 minutes, costing $1,620 at Argon's planned 2027 price",
-   "links": [
-    "https://x.com/maxencefaldor/status/2111023397106770026"
-   ]
+   "title": "MiniMax M3.1 Flash: Space Performance + Bunny Speed 🚀🐰 Yes, Space Bunny - which has topped global l…",
+   "url": "https://x.com/MiniMax_AI/status/2112150867868541221",
+   "source": "𝕏 @MiniMax_AI",
+   "published_at": "2026-10-19T11:56:23Z",
+   "text": "MiniMax M3.1 Flash: Space Performance + Bunny Speed 🚀🐰 Yes, Space Bunny - which has topped global leaderboards with 200T+ tokens - was an earlier version of M3.1 Flash. 💰Redefining the performance economics of agentic AI. M3.1 Flash achieves frontier-level intelligence ht…",
+   "author_name": "MiniMax (official)",
+   "likes": 5102,
+   "story": "MiniMax launches M3.1 Flash, saying it delivers “a generational leap” in agentic tasks, coding, computer use, and cybersecurity, with weights due October 23"
   },
   {
    "title": "Researcher: a Chinese-speaking hacker used AI agents to target 1,200+ websites and breach 100+ enti…",
@@ -53,9 +50,22 @@
    "url": "https://mistral.ai/news/timestral/",
    "source": "Hacker News",
    "published_at": "2026-10-19T09:59:32Z",
-   "text": "281 points and 45 comments on Hacker News.",
-   "points": 281,
+   "text": "309 points and 50 comments on Hacker News.",
+   "points": 309,
    "discussion": "https://news.ycombinator.com/item?id=50150434"
+  },
+  {
+   "title": "Four Gemini 4 Argon agents beat Minecraft from scratch in 27 hours. Operating in a sandbox using on…",
+   "url": "https://x.com/GoogleDeepMind/status/2111127991401247033",
+   "source": "𝕏 @GoogleDeepMind",
+   "published_at": "2026-10-16T16:11:50Z",
+   "text": "Four Gemini 4 Argon agents beat Minecraft from scratch in 27 hours. Operating in a sandbox using only code and text, they wrote 2,783 programs, divided up jobs over chat, shared notes, and debugged errors together - all with no human help ↓",
+   "author_name": "Google DeepMind",
+   "likes": 2529,
+   "story": "Google DeepMind says four Gemini 4 Argon agents beat Minecraft without any human help in 27 hours and 14 minutes, costing $1,620 at Argon's planned 2027 price",
+   "links": [
+    "https://x.com/maxencefaldor/status/2111023397106770026"
+   ]
   },
   {
    "title": "Anthropic update on independent evaluators",
@@ -77,8 +87,8 @@
    "url": "https://100toolkit.com/blog/deslop-model/",
    "source": "Hacker News",
    "published_at": "2026-10-19T13:00:47Z",
-   "text": "90 points and 62 comments on Hacker News.",
-   "points": 90,
+   "text": "98 points and 77 comments on Hacker News.",
+   "points": 98,
    "discussion": "https://news.ycombinator.com/item?id=50151928"
   }
  ],
