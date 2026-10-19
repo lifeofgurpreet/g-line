@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-19T18:37:24Z",
+ "generated_at": "2026-10-19T19:09:44Z",
  "items": [
   {
    "title": "A look at Anthropic's opaque, five-member Long-Term Benefit Trust, where members own no Anthropic e…",
@@ -17,7 +17,7 @@
    "published_at": "2026-10-19T11:56:23Z",
    "text": "MiniMax M3.1 Flash: Space Performance + Bunny Speed 🚀🐰 Yes, Space Bunny - which has topped global leaderboards with 200T+ tokens - was an earlier version of M3.1 Flash. 💰Redefining the performance economics of agentic AI. M3.1 Flash achieves frontier-level intelligence ht…",
    "author_name": "MiniMax (official)",
-   "likes": 5917,
+   "likes": 5993,
    "story": "MiniMax launches M3.1 Flash, saying it delivers “a generational leap” in agentic tasks, coding, computer use, and cybersecurity, with weights due October 23"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-10-19T13:05:44Z",
    "text": "I recently wrote about why we need to treat models as insider risks, with security controls sitting outside the model itself. Today, we're putting that principle into practice by expanding Project Perception with new capabilities to help continuously assess agent risk, adapt…",
    "author_name": "Satya Nadella",
-   "likes": 1025,
+   "likes": 1063,
    "story": "Microsoft debuts new security tools in Microsoft 365 E7 and its Project Perception system that treat AI agents as potential insider threats via risk assessments"
   },
   {
@@ -50,19 +50,22 @@
    "url": "https://home.cern/cern-and-mistral-join-forces-to-accelerate-ai-for-science/",
    "source": "Hacker News",
    "published_at": "2026-10-19T15:28:24Z",
-   "text": "216 points and 43 comments on Hacker News.",
-   "points": 216,
+   "text": "226 points and 45 comments on Hacker News.",
+   "points": 226,
    "discussion": "https://news.ycombinator.com/item?id=50153630"
   },
   {
-   "title": "Vibe coded my parents' TV this afternoon! It was showing a sponsored ad before you could even get t…",
-   "url": "https://x.com/gathint/status/2111379569030939102",
-   "source": "𝕏 @gathint",
-   "published_at": "2026-10-17T08:51:31Z",
-   "text": "Vibe coded my parents' TV this afternoon! It was showing a sponsored ad before you could even get to Netflix. Gave Claude Code the model number, it found the TV on wifi, removed 25 Xiaomi packages and wrote a new launcher. Looks like an Apple TV now lol",
-   "author_name": "Gathin (Ø,G)",
-   "likes": 27680,
-   "story": "Developers and vibe coders are using AI tools like Claude Code to get rid of sponsored ads on their smart TVs, disable tracking features, and more"
+   "title": "Expect this month to be a busy one for new model releases. We have the scoop on a new Anthropic mod…",
+   "url": "https://x.com/steph_palazzolo/status/2112183963452059734",
+   "source": "𝕏 @steph_palazzolo",
+   "published_at": "2026-10-19T14:07:54Z",
+   "text": "Expect this month to be a busy one for new model releases. We have the scoop on a new Anthropic model, Google’s Gemini 4 Carbon, and a potential new Terra model from OpenAI.",
+   "author_name": "Stephanie Palazzolo",
+   "likes": 584,
+   "story": "Source: Anthropic is preparing a model with better intuition and reasoning that can discern underlying intentions and is better at thinking outside of the box",
+   "links": [
+    "https://www.theinformation.com/newsletters/ai-agenda/anthropic-readies-model-reads-users-intentions-better"
+   ]
   },
   {
    "title": "Anthropic update on independent evaluators",
@@ -80,12 +83,22 @@
    "via": "Techmeme"
   },
   {
+   "title": "Vibe coded my parents' TV this afternoon! It was showing a sponsored ad before you could even get t…",
+   "url": "https://x.com/gathint/status/2111379569030939102",
+   "source": "𝕏 @gathint",
+   "published_at": "2026-10-17T08:51:31Z",
+   "text": "Vibe coded my parents' TV this afternoon! It was showing a sponsored ad before you could even get to Netflix. Gave Claude Code the model number, it found the TV on wifi, removed 25 Xiaomi packages and wrote a new launcher. Looks like an Apple TV now lol",
+   "author_name": "Gathin (Ø,G)",
+   "likes": 27763,
+   "story": "Developers and vibe coders are using AI tools like Claude Code to get rid of sponsored ads on their smart TVs, disable tracking features, and more"
+  },
+  {
    "title": "Timestral: Mistral's time-series foundation models",
    "url": "https://mistral.ai/news/timestral/",
    "source": "Hacker News",
    "published_at": "2026-10-19T09:59:32Z",
-   "text": "417 points and 79 comments on Hacker News.",
-   "points": 417,
+   "text": "433 points and 83 comments on Hacker News.",
+   "points": 433,
    "discussion": "https://news.ycombinator.com/item?id=50150434"
   }
  ],
