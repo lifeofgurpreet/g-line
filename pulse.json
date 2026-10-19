@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-19T14:21:50Z",
+ "generated_at": "2026-10-19T14:53:44Z",
  "items": [
   {
    "title": "Elon Musk says “I will give one of my SpaceX shares to every kid in America” in 2027, a gift worth…",
@@ -17,7 +17,7 @@
    "published_at": "2026-10-19T13:05:44Z",
    "text": "I recently wrote about why we need to treat models as insider risks, with security controls sitting outside the model itself. Today, we're putting that principle into practice by expanding Project Perception with new capabilities to help continuously assess agent risk, adapt…",
    "author_name": "Satya Nadella",
-   "likes": 484,
+   "likes": 614,
    "story": "Microsoft debuts new security tools in Microsoft 365 E7 and its Project Perception system that treat AI agents as potential insider threats via risk assessments"
   },
   {
@@ -53,8 +53,8 @@
    "url": "https://www.wjcl.com/article/savannah-police-officer-ice-agent-flock-access/74135816",
    "source": "Hacker News",
    "published_at": "2026-10-19T10:45:14Z",
-   "text": "470 points and 220 comments on Hacker News.",
-   "points": 470,
+   "text": "545 points and 262 comments on Hacker News.",
+   "points": 545,
    "discussion": "https://news.ycombinator.com/item?id=50150750"
   },
   {
@@ -77,8 +77,8 @@
    "url": "https://mistral.ai/news/timestral/",
    "source": "Hacker News",
    "published_at": "2026-10-19T09:59:32Z",
-   "text": "208 points and 41 comments on Hacker News.",
-   "points": 208,
+   "text": "233 points and 44 comments on Hacker News.",
+   "points": 233,
    "discussion": "https://news.ycombinator.com/item?id=50150434"
   }
  ],
