@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-19T00:16:51Z",
+ "generated_at": "2026-10-19T00:49:16Z",
  "items": [
   {
    "title": "Anthropic says it's committing 5% of its shares to a Public Benefit Fund, for a total of ~20% with…",
@@ -17,8 +17,8 @@
    "published_at": "2026-10-17T08:35:54Z",
    "text": "🚀 DeepSeek-V4.1-Flash-1017 is here! Stronger benchmark performance, faster task completion, and shorter outputs than the previous version—a Pareto improvement in performance and cost. Now live on our website, app, and API. 🛠️ Optimized for @DeepSeekHarness, Tencent CodeBuddy, h…",
    "author_name": "DeepSeek",
-   "likes": 35559,
-   "story": "MapQuest adds a Surveillance Layer to its mobile app showing license plate readers and cameras from 10+ companies including Flock, using OpenStreetMap data"
+   "likes": 35606,
+   "story": "Filing: Disney agreed to hire 60+ staff from Character.AI and pay them ~$180M over three years, plus $30M for retention awards; a bankruptcy judge must approve"
   },
   {
    "title": "Claude Code 2.1.303 released",
@@ -40,8 +40,8 @@
    "url": "https://arxiv.org/abs/2610.18861",
    "source": "Hacker News",
    "published_at": "2026-10-18T20:48:14Z",
-   "text": "163 points and 100 comments on Hacker News.",
-   "points": 163,
+   "text": "181 points and 109 comments on Hacker News.",
+   "points": 181,
    "discussion": "https://news.ycombinator.com/item?id=50145337"
   },
   {
@@ -64,8 +64,8 @@
    "url": "https://api-docs.deepseek.com/guides/search/",
    "source": "Hacker News",
    "published_at": "2026-10-18T06:50:36Z",
-   "text": "532 points and 255 comments on Hacker News.",
-   "points": 532,
+   "text": "540 points and 257 comments on Hacker News.",
+   "points": 540,
    "discussion": "https://news.ycombinator.com/item?id=50138531"
   }
  ],
