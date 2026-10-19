@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-19T14:53:44Z",
+ "generated_at": "2026-10-19T15:26:23Z",
  "items": [
   {
    "title": "Elon Musk says “I will give one of my SpaceX shares to every kid in America” in 2027, a gift worth…",
@@ -17,7 +17,7 @@
    "published_at": "2026-10-19T13:05:44Z",
    "text": "I recently wrote about why we need to treat models as insider risks, with security controls sitting outside the model itself. Today, we're putting that principle into practice by expanding Project Perception with new capabilities to help continuously assess agent risk, adapt…",
    "author_name": "Satya Nadella",
-   "likes": 614,
+   "likes": 718,
    "story": "Microsoft debuts new security tools in Microsoft 365 E7 and its Project Perception system that treat AI agents as potential insider threats via risk assessments"
   },
   {
@@ -49,13 +49,13 @@
    "via": "Techmeme"
   },
   {
-   "title": "Documents: Police officer gave her Flock login to her ICE agent husband",
-   "url": "https://www.wjcl.com/article/savannah-police-officer-ice-agent-flock-access/74135816",
+   "title": "Timestral: Mistral release time-series foundation models",
+   "url": "https://mistral.ai/news/timestral/",
    "source": "Hacker News",
-   "published_at": "2026-10-19T10:45:14Z",
-   "text": "545 points and 262 comments on Hacker News.",
-   "points": 545,
-   "discussion": "https://news.ycombinator.com/item?id=50150750"
+   "published_at": "2026-10-19T09:59:32Z",
+   "text": "281 points and 45 comments on Hacker News.",
+   "points": 281,
+   "discussion": "https://news.ycombinator.com/item?id=50150434"
   },
   {
    "title": "Anthropic update on independent evaluators",
@@ -65,21 +65,21 @@
    "text": "Anthropic announces updates to embedding independent evaluators"
   },
   {
-   "title": "Sam Altman's World debuts a World ID verification suite for banks, bundling tools for verifying hum…",
-   "url": "https://www.theblock.co/news/ecosystems/2026-10-18-world-launches-world-id-suite-banks-418869",
-   "source": "Zack Abrams / The Block",
-   "published_at": "2026-10-19T03:10:38Z",
-   "text": "Sam Altman's World debuts a World ID verification suite for banks, bundling tools for verifying human and agent identities, its first industry-specific offering. The identity project co-founded by OpenAI CEO Sam Altman named Bain Capital and VanEck Funds among its design partners …",
+   "title": "AI chip startup Tenstorrent raised a $1.5B Series E led by Trace Capital and Innovation X at a $6.2…",
+   "url": "https://www.bloomberg.com/news/articles/2026-10-19/ai-chip-startup-tenstorrent-raises-funds-at-6-2-billion-value",
+   "source": "Bloomberg",
+   "published_at": "2026-10-19T11:46:01Z",
+   "text": "AI chip startup Tenstorrent raised a $1.5B Series E led by Trace Capital and Innovation X at a $6.2B valuation, up from $2.6B after raising $700M in 2024. AI chip startup Tenstorrent Inc., after attracting takeover interest earlier this year, has raised $1.5 billion from investors …",
    "via": "Techmeme"
   },
   {
-   "title": "Timestral: Mistral release time-series foundation models",
-   "url": "https://mistral.ai/news/timestral/",
+   "title": "Show HN: Qwen3-4B with the AI writing tics trained out",
+   "url": "https://100toolkit.com/blog/deslop-model/",
    "source": "Hacker News",
-   "published_at": "2026-10-19T09:59:32Z",
-   "text": "233 points and 44 comments on Hacker News.",
-   "points": 233,
-   "discussion": "https://news.ycombinator.com/item?id=50150434"
+   "published_at": "2026-10-19T13:00:47Z",
+   "text": "90 points and 62 comments on Hacker News.",
+   "points": 90,
+   "discussion": "https://news.ycombinator.com/item?id=50151928"
   }
  ],
  "sources": "curated, Techmeme, X (found via Techmeme, Reddit, the Internet Archive), Claude Code releases, Anthropic, Hacker News, Simon Willison"
