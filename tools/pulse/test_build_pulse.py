@@ -53,6 +53,18 @@ class Ranking(unittest.TestCase):
         self.assertNotIn('Anthropic', sources)  # its article is the post's link
         self.assertIn('Claude Code releases', sources)
 
+    def test_techmeme_files_each_post_under_its_own_story(self):
+        story = lambda name, head, handle, post: (
+            f'<A NAME="a{name}"></A> <DIV CLASS="itc1"><STRONG><A CLASS="ourh" HREF="https://e.example/{name}">{head}</A></STRONG>'
+            f'<SPAN CLASS="drhed">X:</SPAN><A HREF="https://x.com/{handle}/status/{post}">@{handle}</A></DIV>')
+        page = ('<DIV CLASS="clus">' + story('261018p9', 'Anthropic news', 'alice', 2111814781766397990) + '</DIV>'
+                '<DIV ID="topcol2">sponsor <A HREF="https://x.com/ads/status/2111814781766397991">ad</A></DIV>'
+                '<DIV ID="botcol1">' + story('261017p20', 'DeepSeek releases V4.1', 'deepseek_ai', 2111814781766397992) + '</DIV>')
+        chunks = b.techmeme_items_html(page)
+        self.assertEqual(len(chunks), 2)
+        self.assertEqual(b.X_LINK.findall(chunks[0]), [('alice', '2111814781766397990')])
+        self.assertEqual(b.X_LINK.findall(chunks[1]), [('deepseek_ai', '2111814781766397992')])
+
     def test_summary_keeps_whole_sentences_and_drops_links(self):
         text = b.summary('First sentence here. ' * 40 + ' https://t.co/abc', 120)
         self.assertTrue(text.endswith('.'))

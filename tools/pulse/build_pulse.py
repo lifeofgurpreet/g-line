@@ -228,13 +228,23 @@ def simon_willison():
     return out[:2]
 
 
+def techmeme_items_html(page):
+    """Each story's own HTML on Techmeme's page, top first. A story starts at its anchor
+    (`<A NAME="a261018p9">`) and ends at the next one or at a column break. Splitting on the
+    `clus` blocks instead let the last one run on over the stories further down the page,
+    which carry no `clus`, so their posts on X were filed under the wrong headline."""
+    chunks = re.split(r'(?=<A NAME="a\d+p\d+">)', page)[1:]
+    stories = [re.split(r'<DIV ID="(?:topcol|botcol|events)', chunk, maxsplit=1, flags=re.I)[0] for chunk in chunks]
+    return [story for story in stories if 'CLASS="ourh"' in story]
+
+
 def techmeme():
     """Techmeme's front page as (stories, x_ids). A story: its rank on the page, headline, publisher,
     summary, how many outlets and voices it drew, and when Techmeme posted it. x_ids: each X post
     Techmeme lists under a story, with that story's key and headline."""
     page = get('https://www.techmeme.com/')
     stories, x_ids = [], {}
-    for n, cluster in enumerate(re.split(r'<DIV CLASS="clus">', page, flags=re.I)[1:]):
+    for n, cluster in enumerate(techmeme_items_html(page)):
         head = re.search(r'<A CLASS="ourh" HREF="([^"]+)">(.*?)</A>', cluster, re.S)
         if not head:
             continue
