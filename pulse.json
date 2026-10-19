@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-19T03:32:31Z",
+ "generated_at": "2026-10-19T04:05:12Z",
  "items": [
   {
    "title": "Anthropic says it's committing 5% of its shares to a Public Benefit Fund, for a total of ~20% with…",
@@ -17,8 +17,8 @@
    "published_at": "2026-10-17T08:35:54Z",
    "text": "🚀 DeepSeek-V4.1-Flash-1017 is here! Stronger benchmark performance, faster task completion, and shorter outputs than the previous version—a Pareto improvement in performance and cost. Now live on our website, app, and API. 🛠️ Optimized for @DeepSeekHarness, Tencent CodeBuddy, h…",
    "author_name": "DeepSeek",
-   "likes": 35853,
-   "story": "Sources: Anthropic is consulting law firms on deal negotiation tactics as it develops AI agents to negotiate on humans' behalf and interact with AI counterparts"
+   "likes": 35907,
+   "story": "DeepSeek releases V4.1-Flash-1017, an update it says offers “stronger benchmark performance, faster task completion, and shorter outputs” than its predecessor"
   },
   {
    "title": "Claude Code 2.1.303 released",
@@ -40,8 +40,8 @@
    "url": "https://arxiv.org/abs/2610.18861",
    "source": "Hacker News",
    "published_at": "2026-10-18T20:48:14Z",
-   "text": "257 points and 152 comments on Hacker News.",
-   "points": 257,
+   "text": "271 points and 154 comments on Hacker News.",
+   "points": 271,
    "discussion": "https://news.ycombinator.com/item?id=50145337"
   },
   {
@@ -52,11 +52,11 @@
    "text": "Anthropic announces updates to embedding independent evaluators"
   },
   {
-   "title": "China's GDP is set to grow 4.5% YoY in Q3, up from Q2's three-year-low growth rate of 4.3%, as AI-d…",
-   "url": "https://www.bbc.com/news/articles/cm5yn098xz8lo",
-   "source": "Osmond Chia / BBC",
-   "published_at": "2026-10-19T03:30:36Z",
-   "text": "China's GDP is set to grow 4.5% YoY in Q3, up from Q2's three-year-low growth rate of 4.3%, as AI-driven exports helped offset weak domestic spending. China's economic growth picked up in the three months to the end of September, rebounding from a three-year low as the artificial intelligence (AI) boom helped boost exports.",
+   "title": "Sam Altman's World launches a World ID verification suite for banks, bundling tools to verify human…",
+   "url": "https://www.theblock.co/news/ecosystems/2026-10-18-world-launches-world-id-suite-banks-418869",
+   "source": "Zack Abrams / The Block",
+   "published_at": "2026-10-19T03:10:38Z",
+   "text": "Sam Altman's World launches a World ID verification suite for banks, bundling tools to verify human and agent identities, its first industry-specific offering. The identity project co-founded by OpenAI CEO Sam Altman named Bain Capital and VanEck Funds among its design partners but did not name …",
    "via": "Techmeme"
   },
   {
@@ -64,8 +64,8 @@
    "url": "https://jrdsgl.com/if-you-dont-run-your-own-llm-proxy-how-the-fuck-do-you-even-know-whats-going-on/",
    "source": "Hacker News",
    "published_at": "2026-10-18T21:09:12Z",
-   "text": "66 points and 46 comments on Hacker News.",
-   "points": 66,
+   "text": "75 points and 54 comments on Hacker News.",
+   "points": 75,
    "discussion": "https://news.ycombinator.com/item?id=50145507"
   }
  ],
