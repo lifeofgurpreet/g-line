@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-19T09:31:22Z",
+ "generated_at": "2026-10-19T10:03:14Z",
  "items": [
   {
    "title": "Anthropic says it is committing 5% of its shares to a Public Benefit Fund, for a total of ~20% with…",
@@ -18,11 +18,11 @@
    "text": "Bug fixes and reliability improvements"
   },
   {
-   "title": "Sources: industry execs expect only 7-10 of hundreds of neoclouds to survive, as Nvidia supports th…",
-   "url": "https://www.theinformation.com/articles/neocloud-shakeout-looms-nvidia-lot-lose",
-   "source": "Phoebe Liu / The Information",
-   "published_at": "2026-10-18T19:55:58Z",
-   "text": "Sources: industry execs expect only 7-10 of hundreds of neoclouds to survive, as Nvidia supports them with easier credit terms, site finding, and $20B in leases. How many young AI cloud providers can the market, and Nvidia, support? — That's one of the big questions after a week …",
+   "title": "Sam Altman's World launches a World ID verification suite for banks, bundling tools to verify human…",
+   "url": "https://www.theblock.co/news/ecosystems/2026-10-18-world-launches-world-id-suite-banks-418869",
+   "source": "Zack Abrams / The Block",
+   "published_at": "2026-10-19T03:10:38Z",
+   "text": "Sam Altman's World launches a World ID verification suite for banks, bundling tools to verify human and agent identities, its first industry-specific offering. The identity project co-founded by OpenAI CEO Sam Altman named Bain Capital and VanEck Funds among its design partners but did not name …",
    "via": "Techmeme"
   },
   {
@@ -30,8 +30,8 @@
    "url": "https://artificialanalysis.ai/models/deepseek-v4-1-flash-1017",
    "source": "Hacker News",
    "published_at": "2026-10-19T04:41:46Z",
-   "text": "137 points and 46 comments on Hacker News.",
-   "points": 137,
+   "text": "144 points and 48 comments on Hacker News.",
+   "points": 144,
    "discussion": "https://news.ycombinator.com/item?id=50148452"
   },
   {
@@ -42,11 +42,11 @@
    "text": "Anthropic announces updates to embedding independent evaluators"
   },
   {
-   "title": "Sam Altman's World launches a World ID verification suite for banks, bundling tools to verify human…",
-   "url": "https://www.theblock.co/news/ecosystems/2026-10-18-world-launches-world-id-suite-banks-418869",
-   "source": "Zack Abrams / The Block",
-   "published_at": "2026-10-19T03:10:38Z",
-   "text": "Sam Altman's World launches a World ID verification suite for banks, bundling tools to verify human and agent identities, its first industry-specific offering. The identity project co-founded by OpenAI CEO Sam Altman named Bain Capital and VanEck Funds among its design partners but did not name …",
+   "title": "Sources: Nscale faces investor pushback on its ~$30B IPO valuation, with some urging a lower valuat…",
+   "url": "https://www.bloomberg.com/news/articles/2026-10-18/ai-cloud-firm-nscale-faces-investor-pushback-over-ipo-valuation",
+   "source": "Bailey Lipschultz / Bloombe…",
+   "published_at": "2026-10-18T22:15:38Z",
+   "text": "Sources: Nscale faces investor pushback on its ~$30B IPO valuation, with some urging a lower valuation of $16B to $19B, as Microsoft exits a UK data center deal. Nscale Ltd. is facing opposition to the valuation target it's pursuing in its initial public offering, according to people familiar …",
    "via": "Techmeme"
   },
   {
@@ -54,8 +54,8 @@
    "url": "https://arxiv.org/abs/2610.18861",
    "source": "Hacker News",
    "published_at": "2026-10-18T20:48:14Z",
-   "text": "385 points and 187 comments on Hacker News.",
-   "points": 385,
+   "text": "396 points and 192 comments on Hacker News.",
+   "points": 396,
    "discussion": "https://news.ycombinator.com/item?id=50145337"
   }
  ],
