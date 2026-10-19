@@ -1,13 +1,13 @@
 {
  "schema": 1,
- "generated_at": "2026-10-19T12:11:46Z",
+ "generated_at": "2026-10-19T12:44:45Z",
  "items": [
   {
-   "title": "Anthropic says it is committing 5% of its shares to a Public Benefit Fund, for a total of ~20% with…",
+   "title": "Anthropic commits 5% of its shares to the Anthropic Public Benefit Fund, for a total of ~20% with c…",
    "url": "https://www.anthropic.com/news/public-benefit-fund",
    "source": "Anthropic",
    "published_at": "2026-10-18T19:10:56Z",
-   "text": "Anthropic says it is committing 5% of its shares to a Public Benefit Fund, for a total of ~20% with co-founder and staff pledges, plus 2% per 50% valuation rise. Today, we're committing a portion of Anthropic's shares to the Anthropic Public Benefit Fund, a new entity with a structure that increases the stake as the company grows.",
+   "text": "Anthropic commits 5% of its shares to the Anthropic Public Benefit Fund, for a total of ~20% with co-founder and staff pledges, plus 2% per 50% valuation rise. Today, we're committing a portion of Anthropic's shares to the Anthropic Public Benefit Fund, a new entity with a structure that increases the stake as the company grows.",
    "via": "Techmeme"
   },
   {
@@ -17,7 +17,7 @@
    "published_at": "2026-10-16T16:11:50Z",
    "text": "Four Gemini 4 Argon agents beat Minecraft from scratch in 27 hours. Operating in a sandbox using only code and text, they wrote 2,783 programs, divided up jobs over chat, shared notes, and debugged errors together - all with no human help ↓",
    "author_name": "Google DeepMind",
-   "likes": 2527,
+   "likes": 2528,
    "story": "Google DeepMind says four Gemini 4 Argon agents beat Minecraft without any human help in 27 hours and 14 minutes, costing $1,620 at Argon's planned 2027 price",
    "links": [
     "https://x.com/maxencefaldor/status/2111023397106770026"
@@ -43,8 +43,8 @@
    "url": "https://www.wjcl.com/article/savannah-police-officer-ice-agent-flock-access/74135816",
    "source": "Hacker News",
    "published_at": "2026-10-19T10:45:14Z",
-   "text": "80 points and 33 comments on Hacker News.",
-   "points": 80,
+   "text": "174 points and 84 comments on Hacker News.",
+   "points": 174,
    "discussion": "https://news.ycombinator.com/item?id=50150750"
   },
   {
@@ -67,8 +67,8 @@
    "url": "https://mistral.ai/news/timestral/",
    "source": "Hacker News",
    "published_at": "2026-10-19T09:59:32Z",
-   "text": "74 points and 16 comments on Hacker News.",
-   "points": 74,
+   "text": "118 points and 22 comments on Hacker News.",
+   "points": 118,
    "discussion": "https://news.ycombinator.com/item?id=50150434"
   }
  ],
