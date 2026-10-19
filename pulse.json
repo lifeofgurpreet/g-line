@@ -1,13 +1,13 @@
 {
  "schema": 1,
- "generated_at": "2026-10-19T13:49:13Z",
+ "generated_at": "2026-10-19T14:21:50Z",
  "items": [
   {
-   "title": "Anthropic commits 5% of its shares to the Anthropic Public Benefit Fund, for a total of ~20% with c…",
-   "url": "https://www.anthropic.com/news/public-benefit-fund",
-   "source": "Anthropic",
-   "published_at": "2026-10-18T19:10:56Z",
-   "text": "Anthropic commits 5% of its shares to the Anthropic Public Benefit Fund, for a total of ~20% with co-founder and staff pledges, plus 2% per 50% valuation rise. Today, we're committing a portion of Anthropic's shares to the Anthropic Public Benefit Fund, a new entity with a structure that increases the stake as the company grows.",
+   "title": "Elon Musk says “I will give one of my SpaceX shares to every kid in America” in 2027, a gift worth…",
+   "url": "https://www.cnbc.com/2026/10/19/elon-musk-spacex-shares-giveaway-kids.html",
+   "source": "Kai Nicol-Schwarz / CNBC",
+   "published_at": "2026-10-19T09:40:40Z",
+   "text": "Elon Musk says “I will give one of my SpaceX shares to every kid in America” in 2027, a gift worth ~$10.5B, after Anthropic committed 5% of its shares to APBF. Choose CNBC as your preferred source on Google and never miss a moment from the most trusted name in business news.",
    "via": "Techmeme"
   },
   {
@@ -17,8 +17,8 @@
    "published_at": "2026-10-19T13:05:44Z",
    "text": "I recently wrote about why we need to treat models as insider risks, with security controls sitting outside the model itself. Today, we're putting that principle into practice by expanding Project Perception with new capabilities to help continuously assess agent risk, adapt…",
    "author_name": "Satya Nadella",
-   "likes": 252,
-   "story": "Microsoft unveils new security tools in its 365 E7 bundle and Project Perception system to treat AI agents as potential insider threats via risk assessments"
+   "likes": 484,
+   "story": "Microsoft debuts new security tools in Microsoft 365 E7 and its Project Perception system that treat AI agents as potential insider threats via risk assessments"
   },
   {
    "title": "Claude Code 2.1.303 released",
@@ -41,11 +41,11 @@
    ]
   },
   {
-   "title": "Sam Altman's World debuts a World ID verification suite for banks, bundling tools for verifying hum…",
-   "url": "https://www.theblock.co/news/ecosystems/2026-10-18-world-launches-world-id-suite-banks-418869",
-   "source": "Zack Abrams / The Block",
-   "published_at": "2026-10-19T03:10:38Z",
-   "text": "Sam Altman's World debuts a World ID verification suite for banks, bundling tools for verifying human and agent identities, its first industry-specific offering. The identity project co-founded by OpenAI CEO Sam Altman named Bain Capital and VanEck Funds among its design partners …",
+   "title": "Researcher: a Chinese-speaking hacker used AI agents to target 1,200+ websites and breach 100+ enti…",
+   "url": "https://www.reuters.com/legal/government/how-one-hacker-used-ai-agents-few-thousand-dollars-break-into-scores-sites-2026-10-19/",
+   "source": "Raphael Satter / Reuters",
+   "published_at": "2026-10-19T12:31:01Z",
+   "text": "Researcher: a Chinese-speaking hacker used AI agents to target 1,200+ websites and breach 100+ entities, like Deere and SharkNinja, spending ~$5,000 in tokens. Over the past couple of weeks, a cybersecurity researcher watched as a Chinese-speaking hacker broke into websites belonging …",
    "via": "Techmeme"
   },
   {
@@ -53,8 +53,8 @@
    "url": "https://www.wjcl.com/article/savannah-police-officer-ice-agent-flock-access/74135816",
    "source": "Hacker News",
    "published_at": "2026-10-19T10:45:14Z",
-   "text": "363 points and 183 comments on Hacker News.",
-   "points": 363,
+   "text": "470 points and 220 comments on Hacker News.",
+   "points": 470,
    "discussion": "https://news.ycombinator.com/item?id=50150750"
   },
   {
@@ -65,11 +65,11 @@
    "text": "Anthropic announces updates to embedding independent evaluators"
   },
   {
-   "title": "Researcher: a Chinese-speaking hacker used AI agents to target 1,200+ websites and breach 100+ enti…",
-   "url": "https://www.reuters.com/legal/government/how-one-hacker-used-ai-agents-few-thousand-dollars-break-into-scores-sites-2026-10-19/",
-   "source": "Raphael Satter / Reuters",
-   "published_at": "2026-10-19T12:31:01Z",
-   "text": "Researcher: a Chinese-speaking hacker used AI agents to target 1,200+ websites and breach 100+ entities, including Deere and SharkNinja, spending ~$5,000 total. Over the past couple of weeks, a cybersecurity researcher watched as a Chinese-speaking hacker broke into websites belonging …",
+   "title": "Sam Altman's World debuts a World ID verification suite for banks, bundling tools for verifying hum…",
+   "url": "https://www.theblock.co/news/ecosystems/2026-10-18-world-launches-world-id-suite-banks-418869",
+   "source": "Zack Abrams / The Block",
+   "published_at": "2026-10-19T03:10:38Z",
+   "text": "Sam Altman's World debuts a World ID verification suite for banks, bundling tools for verifying human and agent identities, its first industry-specific offering. The identity project co-founded by OpenAI CEO Sam Altman named Bain Capital and VanEck Funds among its design partners …",
    "via": "Techmeme"
   },
   {
@@ -77,8 +77,8 @@
    "url": "https://mistral.ai/news/timestral/",
    "source": "Hacker News",
    "published_at": "2026-10-19T09:59:32Z",
-   "text": "185 points and 32 comments on Hacker News.",
-   "points": 185,
+   "text": "208 points and 41 comments on Hacker News.",
+   "points": 208,
    "discussion": "https://news.ycombinator.com/item?id=50150434"
   }
  ],
