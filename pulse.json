@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-19T11:06:49Z",
+ "generated_at": "2026-10-19T11:38:30Z",
  "items": [
   {
    "title": "Anthropic says it is committing 5% of its shares to a Public Benefit Fund, for a total of ~20% with…",
@@ -17,7 +17,7 @@
    "published_at": "2026-10-16T16:11:50Z",
    "text": "Four Gemini 4 Argon agents beat Minecraft from scratch in 27 hours. Operating in a sandbox using only code and text, they wrote 2,783 programs, divided up jobs over chat, shared notes, and debugged errors together - all with no human help ↓",
    "author_name": "Google DeepMind",
-   "likes": 2526,
+   "likes": 2527,
    "story": "Google DeepMind says four Gemini 4 Argon agents beat Minecraft without any human help in 27 hours and 14 minutes, costing $1,620 at Argon's planned 2027 price",
    "links": [
     "https://x.com/maxencefaldor/status/2111023397106770026"
@@ -39,13 +39,13 @@
    "via": "Techmeme"
   },
   {
-   "title": "DeepSeek V4.1 Flash 1017 (Max)",
-   "url": "https://artificialanalysis.ai/models/deepseek-v4-1-flash-1017",
+   "title": "Hybrid Reasoning Agents: LLM agents that think in latent space, act through text",
+   "url": "https://arxiv.org/abs/2610.18861",
    "source": "Hacker News",
-   "published_at": "2026-10-19T04:41:46Z",
-   "text": "152 points and 56 comments on Hacker News.",
-   "points": 152,
-   "discussion": "https://news.ycombinator.com/item?id=50148452"
+   "published_at": "2026-10-18T20:48:14Z",
+   "text": "424 points and 207 comments on Hacker News.",
+   "points": 424,
+   "discussion": "https://news.ycombinator.com/item?id=50145337"
   },
   {
    "title": "Anthropic update on independent evaluators",
@@ -63,13 +63,13 @@
    "via": "Techmeme"
   },
   {
-   "title": "Hybrid Reasoning Agents: LLM agents that think in latent space, act through text",
-   "url": "https://arxiv.org/abs/2610.18861",
+   "title": "If you don't run your own LLM proxy, how do you know whats going on?",
+   "url": "https://jrdsgl.com/if-you-dont-run-your-own-llm-proxy-how-the-fuck-do-you-even-know-whats-going-on/",
    "source": "Hacker News",
-   "published_at": "2026-10-18T20:48:14Z",
-   "text": "412 points and 200 comments on Hacker News.",
-   "points": 412,
-   "discussion": "https://news.ycombinator.com/item?id=50145337"
+   "published_at": "2026-10-18T21:09:12Z",
+   "text": "193 points and 140 comments on Hacker News.",
+   "points": 193,
+   "discussion": "https://news.ycombinator.com/item?id=50145507"
   }
  ],
  "sources": "curated, Techmeme, X (found via Techmeme, Reddit, the Internet Archive), Claude Code releases, Anthropic, Hacker News, Simon Willison"
