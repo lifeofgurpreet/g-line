@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-19T02:59:39Z",
+ "generated_at": "2026-10-19T03:32:31Z",
  "items": [
   {
    "title": "Anthropic says it's committing 5% of its shares to a Public Benefit Fund, for a total of ~20% with…",
@@ -17,8 +17,8 @@
    "published_at": "2026-10-17T08:35:54Z",
    "text": "🚀 DeepSeek-V4.1-Flash-1017 is here! Stronger benchmark performance, faster task completion, and shorter outputs than the previous version—a Pareto improvement in performance and cost. Now live on our website, app, and API. 🛠️ Optimized for @DeepSeekHarness, Tencent CodeBuddy, h…",
    "author_name": "DeepSeek",
-   "likes": 35795,
-   "story": "DeepSeek releases V4.1-Flash-1017, an update it says offers “stronger benchmark performance, faster task completion, and shorter outputs” than its predecessor"
+   "likes": 35853,
+   "story": "Sources: Anthropic is consulting law firms on deal negotiation tactics as it develops AI agents to negotiate on humans' behalf and interact with AI counterparts"
   },
   {
    "title": "Claude Code 2.1.303 released",
@@ -40,8 +40,8 @@
    "url": "https://arxiv.org/abs/2610.18861",
    "source": "Hacker News",
    "published_at": "2026-10-18T20:48:14Z",
-   "text": "241 points and 148 comments on Hacker News.",
-   "points": 241,
+   "text": "257 points and 152 comments on Hacker News.",
+   "points": 257,
    "discussion": "https://news.ycombinator.com/item?id=50145337"
   },
   {
@@ -52,21 +52,21 @@
    "text": "Anthropic announces updates to embedding independent evaluators"
   },
   {
-   "title": "Sources: Nvidia asked Samsung, SK Hynix, and Micron to make base dies for its custom NVHBM memory o…",
-   "url": "https://www.reuters.com/world/asia-pacific/samsung-use-tsmc-technology-nvidias-next-generation-memory-chips-seoul-newspaper-2026-10-18/",
-   "source": "Kyu-Seok Shim / Reuters",
-   "published_at": "2026-10-18T18:10:37Z",
-   "text": "Sources: Nvidia asked Samsung, SK Hynix, and Micron to make base dies for its custom NVHBM memory on TSMC's 3nm process; Samsung agreed, its first use of TSMC. Samsung Electronics (005930.KS) will use TSMC's (2330.TW) 3-nanometre process to produce base dies for Nvidia's (NVDA.O) …",
+   "title": "China's GDP is set to grow 4.5% YoY in Q3, up from Q2's three-year-low growth rate of 4.3%, as AI-d…",
+   "url": "https://www.bbc.com/news/articles/cm5yn098xz8lo",
+   "source": "Osmond Chia / BBC",
+   "published_at": "2026-10-19T03:30:36Z",
+   "text": "China's GDP is set to grow 4.5% YoY in Q3, up from Q2's three-year-low growth rate of 4.3%, as AI-driven exports helped offset weak domestic spending. China's economic growth picked up in the three months to the end of September, rebounding from a three-year low as the artificial intelligence (AI) boom helped boost exports.",
    "via": "Techmeme"
   },
   {
-   "title": "I built a programming language that LLMs can't use",
-   "url": "https://blog.picheta.me/post/killswitch-lang/",
+   "title": "If you don't run your own LLM proxy, how do you know whats going on?",
+   "url": "https://jrdsgl.com/if-you-dont-run-your-own-llm-proxy-how-the-fuck-do-you-even-know-whats-going-on/",
    "source": "Hacker News",
-   "published_at": "2026-10-17T22:26:47Z",
-   "text": "99 points and 78 comments on Hacker News.",
-   "points": 99,
-   "discussion": "https://news.ycombinator.com/item?id=50135762"
+   "published_at": "2026-10-18T21:09:12Z",
+   "text": "66 points and 46 comments on Hacker News.",
+   "points": 66,
+   "discussion": "https://news.ycombinator.com/item?id=50145507"
   }
  ],
  "sources": "curated, Techmeme, X (found via Techmeme, Reddit, the Internet Archive), Claude Code releases, Anthropic, Hacker News, Simon Willison"
