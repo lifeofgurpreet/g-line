@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-19T17:33:55Z",
+ "generated_at": "2026-10-19T18:05:29Z",
  "items": [
   {
    "title": "A look at Anthropic's opaque, five-member Long-Term Benefit Trust, where members own no Anthropic e…",
@@ -17,7 +17,7 @@
    "published_at": "2026-10-19T11:56:23Z",
    "text": "MiniMax M3.1 Flash: Space Performance + Bunny Speed 🚀🐰 Yes, Space Bunny - which has topped global leaderboards with 200T+ tokens - was an earlier version of M3.1 Flash. 💰Redefining the performance economics of agentic AI. M3.1 Flash achieves frontier-level intelligence ht…",
    "author_name": "MiniMax (official)",
-   "likes": 5683,
+   "likes": 5813,
    "story": "MiniMax launches M3.1 Flash, saying it delivers “a generational leap” in agentic tasks, coding, computer use, and cybersecurity, with weights due October 23"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-10-19T13:05:44Z",
    "text": "I recently wrote about why we need to treat models as insider risks, with security controls sitting outside the model itself. Today, we're putting that principle into practice by expanding Project Perception with new capabilities to help continuously assess agent risk, adapt…",
    "author_name": "Satya Nadella",
-   "likes": 958,
+   "likes": 995,
    "story": "Microsoft debuts new security tools in Microsoft 365 E7 and its Project Perception system that treat AI agents as potential insider threats via risk assessments"
   },
   {
@@ -46,12 +46,12 @@
    "via": "Techmeme"
   },
   {
-   "title": "CERN and Mistral join forces to accelerate AI for science",
+   "title": "CERN and Mistral sign a statement of intent to establish a strategic partnership",
    "url": "https://home.cern/cern-and-mistral-join-forces-to-accelerate-ai-for-science/",
    "source": "Hacker News",
    "published_at": "2026-10-19T15:28:24Z",
-   "text": "126 points and 18 comments on Hacker News.",
-   "points": 126,
+   "text": "197 points and 39 comments on Hacker News.",
+   "points": 197,
    "discussion": "https://news.ycombinator.com/item?id=50153630"
   },
   {
@@ -62,20 +62,20 @@
    "text": "Anthropic announces updates to embedding independent evaluators"
   },
   {
-   "title": "The US DHS orders all federal civilian agencies to remove DeepSeek's tech from their IT systems and…",
-   "url": "https://www.wsj.com/tech/ai/dhs-orders-deepseek-technology-removed-from-federal-civilian-it-systems-060b6d3d?st=m6DV2n&reflink=desktopwebshare_permalink",
-   "source": "Connor Hart / Wall Street J…",
-   "published_at": "2026-10-19T14:55:41Z",
-   "text": "The US DHS orders all federal civilian agencies to remove DeepSeek's tech from their IT systems and prohibits future procurement of its products and services. The Department of Homeland Security has ordered federal civilian agencies to remove artificial-intelligence technology developed …",
+   "title": "Google DeepMind says four Gemini 4 Argon agents beat Minecraft without any human help in 27 hours a…",
+   "url": "https://the-decoder.com/four-gemini-4-argon-agents-beat-minecraft-without-any-human-help/",
+   "source": "Matthias Bastian / The Deco…",
+   "published_at": "2026-10-19T10:30:42Z",
+   "text": "Google DeepMind says four Gemini 4 Argon agents beat Minecraft without any human help in 27 hours and 14 minutes, costing $1,620 at Argon's planned 2027 price. The Google Deepmind team dropped the agents into a randomly generated world without assigning roles, strategies, or game-specific tools.",
    "via": "Techmeme"
   },
   {
-   "title": "Timestral: Mistral release time-series foundation models",
+   "title": "Timestral: Mistral's time-series foundation models",
    "url": "https://mistral.ai/news/timestral/",
    "source": "Hacker News",
    "published_at": "2026-10-19T09:59:32Z",
-   "text": "379 points and 69 comments on Hacker News.",
-   "points": 379,
+   "text": "397 points and 76 comments on Hacker News.",
+   "points": 397,
    "discussion": "https://news.ycombinator.com/item?id=50150434"
   }
  ],
