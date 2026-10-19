@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-19T02:27:48Z",
+ "generated_at": "2026-10-19T02:59:39Z",
  "items": [
   {
    "title": "Anthropic says it's committing 5% of its shares to a Public Benefit Fund, for a total of ~20% with…",
@@ -17,8 +17,8 @@
    "published_at": "2026-10-17T08:35:54Z",
    "text": "🚀 DeepSeek-V4.1-Flash-1017 is here! Stronger benchmark performance, faster task completion, and shorter outputs than the previous version—a Pareto improvement in performance and cost. Now live on our website, app, and API. 🛠️ Optimized for @DeepSeekHarness, Tencent CodeBuddy, h…",
    "author_name": "DeepSeek",
-   "likes": 35747,
-   "story": "Filing: Disney agreed to hire 60+ staff from Character.AI and pay them ~$180M over three years, plus $30M for retention awards; a bankruptcy judge must approve"
+   "likes": 35795,
+   "story": "DeepSeek releases V4.1-Flash-1017, an update it says offers “stronger benchmark performance, faster task completion, and shorter outputs” than its predecessor"
   },
   {
    "title": "Claude Code 2.1.303 released",
@@ -40,8 +40,8 @@
    "url": "https://arxiv.org/abs/2610.18861",
    "source": "Hacker News",
    "published_at": "2026-10-18T20:48:14Z",
-   "text": "225 points and 137 comments on Hacker News.",
-   "points": 225,
+   "text": "241 points and 148 comments on Hacker News.",
+   "points": 241,
    "discussion": "https://news.ycombinator.com/item?id=50145337"
   },
   {
@@ -52,21 +52,21 @@
    "text": "Anthropic announces updates to embedding independent evaluators"
   },
   {
-   "title": "RegLayer: 47+ large US data center projects were delayed, withdrawn, or blocked in 2026; Bernstein…",
-   "url": "https://www.ft.com/content/9ea5a37d-15c9-4d5b-94d6-719048c9cd3c",
-   "source": "Financial Times",
-   "published_at": "2026-10-18T06:15:51Z",
-   "text": "RegLayer: 47+ large US data center projects were delayed, withdrawn, or blocked in 2026; Bernstein says ~35% of the planned US data center pipeline is credible. A vast bet on the future of the technology is running into the unforgiving economics of the physical world",
+   "title": "Sources: Nvidia asked Samsung, SK Hynix, and Micron to make base dies for its custom NVHBM memory o…",
+   "url": "https://www.reuters.com/world/asia-pacific/samsung-use-tsmc-technology-nvidias-next-generation-memory-chips-seoul-newspaper-2026-10-18/",
+   "source": "Kyu-Seok Shim / Reuters",
+   "published_at": "2026-10-18T18:10:37Z",
+   "text": "Sources: Nvidia asked Samsung, SK Hynix, and Micron to make base dies for its custom NVHBM memory on TSMC's 3nm process; Samsung agreed, its first use of TSMC. Samsung Electronics (005930.KS) will use TSMC's (2330.TW) 3-nanometre process to produce base dies for Nvidia's (NVDA.O) …",
    "via": "Techmeme"
   },
   {
-   "title": "DeepSeek search and fetch – $0.75 per 1000 successful requests",
-   "url": "https://api-docs.deepseek.com/guides/search/",
+   "title": "I built a programming language that LLMs can't use",
+   "url": "https://blog.picheta.me/post/killswitch-lang/",
    "source": "Hacker News",
-   "published_at": "2026-10-18T06:50:36Z",
-   "text": "553 points and 261 comments on Hacker News.",
-   "points": 553,
-   "discussion": "https://news.ycombinator.com/item?id=50138531"
+   "published_at": "2026-10-17T22:26:47Z",
+   "text": "99 points and 78 comments on Hacker News.",
+   "points": 99,
+   "discussion": "https://news.ycombinator.com/item?id=50135762"
   }
  ],
  "sources": "curated, Techmeme, X (found via Techmeme, Reddit, the Internet Archive), Claude Code releases, Anthropic, Hacker News, Simon Willison"
