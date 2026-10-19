@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-19T12:44:45Z",
+ "generated_at": "2026-10-19T13:17:13Z",
  "items": [
   {
    "title": "Anthropic commits 5% of its shares to the Anthropic Public Benefit Fund, for a total of ~20% with c…",
@@ -17,7 +17,7 @@
    "published_at": "2026-10-16T16:11:50Z",
    "text": "Four Gemini 4 Argon agents beat Minecraft from scratch in 27 hours. Operating in a sandbox using only code and text, they wrote 2,783 programs, divided up jobs over chat, shared notes, and debugged errors together - all with no human help ↓",
    "author_name": "Google DeepMind",
-   "likes": 2528,
+   "likes": 2529,
    "story": "Google DeepMind says four Gemini 4 Argon agents beat Minecraft without any human help in 27 hours and 14 minutes, costing $1,620 at Argon's planned 2027 price",
    "links": [
     "https://x.com/maxencefaldor/status/2111023397106770026"
@@ -31,11 +31,11 @@
    "text": "Bug fixes and reliability improvements"
   },
   {
-   "title": "Sam Altman's World launches a World ID verification suite for banks, bundling tools to verify human…",
+   "title": "Sam Altman's World debuts a World ID verification suite for banks, bundling tools for verifying hum…",
    "url": "https://www.theblock.co/news/ecosystems/2026-10-18-world-launches-world-id-suite-banks-418869",
    "source": "Zack Abrams / The Block",
    "published_at": "2026-10-19T03:10:38Z",
-   "text": "Sam Altman's World launches a World ID verification suite for banks, bundling tools to verify human and agent identities, its first industry-specific offering. The identity project co-founded by OpenAI CEO Sam Altman named Bain Capital and VanEck Funds among its design partners but did not name …",
+   "text": "Sam Altman's World debuts a World ID verification suite for banks, bundling tools for verifying human and agent identities, its first industry-specific offering. The identity project co-founded by OpenAI CEO Sam Altman named Bain Capital and VanEck Funds among its design partners …",
    "via": "Techmeme"
   },
   {
@@ -43,8 +43,8 @@
    "url": "https://www.wjcl.com/article/savannah-police-officer-ice-agent-flock-access/74135816",
    "source": "Hacker News",
    "published_at": "2026-10-19T10:45:14Z",
-   "text": "174 points and 84 comments on Hacker News.",
-   "points": 174,
+   "text": "259 points and 129 comments on Hacker News.",
+   "points": 259,
    "discussion": "https://news.ycombinator.com/item?id=50150750"
   },
   {
@@ -55,11 +55,11 @@
    "text": "Anthropic announces updates to embedding independent evaluators"
   },
   {
-   "title": "Sources: Nscale faces investor pushback on its ~$30B IPO valuation, with some urging a lower valuat…",
-   "url": "https://www.bloomberg.com/news/articles/2026-10-18/ai-cloud-firm-nscale-faces-investor-pushback-over-ipo-valuation",
-   "source": "Bailey Lipschultz / Bloombe…",
-   "published_at": "2026-10-18T22:15:38Z",
-   "text": "Sources: Nscale faces investor pushback on its ~$30B IPO valuation, with some urging a lower valuation of $16B to $19B, as Microsoft exits a UK data center deal. Nscale Ltd. is facing opposition to the valuation target it's pursuing in its initial public offering, according to people familiar …",
+   "title": "AI chip startup Tenstorrent raised a $1.5B Series E led by Trace Capital and Innovation X at a $6.2…",
+   "url": "https://www.bloomberg.com/news/articles/2026-10-19/ai-chip-startup-tenstorrent-raises-funds-at-6-2-billion-value",
+   "source": "Bloomberg",
+   "published_at": "2026-10-19T11:46:01Z",
+   "text": "AI chip startup Tenstorrent raised a $1.5B Series E led by Trace Capital and Innovation X at a $6.2B valuation, up from $2.6B after raising $700M in 2024. AI chip startup Tenstorrent Inc., after attracting takeover interest earlier this year, has raised $1.5 billion from investors …",
    "via": "Techmeme"
   },
   {
@@ -67,8 +67,8 @@
    "url": "https://mistral.ai/news/timestral/",
    "source": "Hacker News",
    "published_at": "2026-10-19T09:59:32Z",
-   "text": "118 points and 22 comments on Hacker News.",
-   "points": 118,
+   "text": "149 points and 28 comments on Hacker News.",
+   "points": 149,
    "discussion": "https://news.ycombinator.com/item?id=50150434"
   }
  ],
