@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-18T23:44:05Z",
+ "generated_at": "2026-10-19T00:16:51Z",
  "items": [
   {
    "title": "Anthropic says it's committing 5% of its shares to a Public Benefit Fund, for a total of ~20% with…",
@@ -17,8 +17,8 @@
    "published_at": "2026-10-17T08:35:54Z",
    "text": "🚀 DeepSeek-V4.1-Flash-1017 is here! Stronger benchmark performance, faster task completion, and shorter outputs than the previous version—a Pareto improvement in performance and cost. Now live on our website, app, and API. 🛠️ Optimized for @DeepSeekHarness, Tencent CodeBuddy, h…",
    "author_name": "DeepSeek",
-   "likes": 35511,
-   "story": "DeepSeek releases V4.1-Flash-1017, an update it says offers “stronger benchmark performance, faster task completion, and shorter outputs” than its predecessor"
+   "likes": 35559,
+   "story": "MapQuest adds a Surveillance Layer to its mobile app showing license plate readers and cameras from 10+ companies including Flock, using OpenStreetMap data"
   },
   {
    "title": "Claude Code 2.1.303 released",
@@ -26,16 +26,6 @@
    "source": "Claude Code releases",
    "published_at": "2026-10-18T22:26:54Z",
    "text": "Bug fixes and reliability improvements"
-  },
-  {
-   "title": "OpenCode is currently under a sustained cyberattack, and mid-incident they ran into the same proble…",
-   "url": "https://x.com/AndrewCurran_/status/2111837963214794940",
-   "source": "𝕏 @AndrewCurran_",
-   "published_at": "2026-10-18T15:13:01Z",
-   "text": "OpenCode is currently under a sustained cyberattack, and mid-incident they ran into the same problem Hugging Face did: the frontier models they were using for defense began refusing to help fight attacking agents because analyzing the attacks started triggering safety guardrails.",
-   "author_name": "Andrew Curran",
-   "likes": 3798,
-   "story": "Filing: Disney agreed to hire 60+ staff from Character.AI and pay them ~$180M over three years, plus $30M for retention awards; a bankruptcy judge must approve"
   },
   {
    "title": "Microsoft cancels its deal to be the anchor tenant and rent 23K Nvidia AI chips at Nscale's Essex,…",
@@ -50,8 +40,8 @@
    "url": "https://arxiv.org/abs/2610.18861",
    "source": "Hacker News",
    "published_at": "2026-10-18T20:48:14Z",
-   "text": "147 points and 85 comments on Hacker News.",
-   "points": 147,
+   "text": "163 points and 100 comments on Hacker News.",
+   "points": 163,
    "discussion": "https://news.ycombinator.com/item?id=50145337"
   },
   {
@@ -74,8 +64,8 @@
    "url": "https://api-docs.deepseek.com/guides/search/",
    "source": "Hacker News",
    "published_at": "2026-10-18T06:50:36Z",
-   "text": "527 points and 253 comments on Hacker News.",
-   "points": 527,
+   "text": "532 points and 255 comments on Hacker News.",
+   "points": 532,
    "discussion": "https://news.ycombinator.com/item?id=50138531"
   }
  ],
