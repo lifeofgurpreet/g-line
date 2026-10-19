@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-19T01:21:51Z",
+ "generated_at": "2026-10-19T01:55:09Z",
  "items": [
   {
    "title": "Anthropic says it's committing 5% of its shares to a Public Benefit Fund, for a total of ~20% with…",
@@ -17,8 +17,8 @@
    "published_at": "2026-10-17T08:35:54Z",
    "text": "🚀 DeepSeek-V4.1-Flash-1017 is here! Stronger benchmark performance, faster task completion, and shorter outputs than the previous version—a Pareto improvement in performance and cost. Now live on our website, app, and API. 🛠️ Optimized for @DeepSeekHarness, Tencent CodeBuddy, h…",
    "author_name": "DeepSeek",
-   "likes": 35652,
-   "story": "Filing: Disney agreed to hire 60+ staff from Character.AI and pay them ~$180M over three years, plus $30M for retention awards; a bankruptcy judge must approve"
+   "likes": 35705,
+   "story": "Bleecker Street says TikTok suspended the Musk documentary account for “political policy” violations and called the suspension “permanent”; Bleecker's appealing"
   },
   {
    "title": "Claude Code 2.1.303 released",
@@ -40,8 +40,8 @@
    "url": "https://arxiv.org/abs/2610.18861",
    "source": "Hacker News",
    "published_at": "2026-10-18T20:48:14Z",
-   "text": "199 points and 117 comments on Hacker News.",
-   "points": 199,
+   "text": "210 points and 132 comments on Hacker News.",
+   "points": 210,
    "discussion": "https://news.ycombinator.com/item?id=50145337"
   },
   {
@@ -64,8 +64,8 @@
    "url": "https://api-docs.deepseek.com/guides/search/",
    "source": "Hacker News",
    "published_at": "2026-10-18T06:50:36Z",
-   "text": "546 points and 257 comments on Hacker News.",
-   "points": 546,
+   "text": "550 points and 257 comments on Hacker News.",
+   "points": 550,
    "discussion": "https://news.ycombinator.com/item?id=50138531"
   }
  ],
