@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.6.2 (2026-10-19): headlines with emoji stay on one row
+
+- Feed text is measured in terminal columns, not characters: an emoji or an East Asian wide
+  character counts two. A post starting with 🚀 used to run one column over and wrap Pulse's
+  row under the prompt onto a second line. The spinner and the reader now cut such headlines
+  in the right place too.
+- Variation selectors are dropped from feed text, so a symbol such as ❤ draws in its
+  one-column form.
+
 ## 0.6.1 (2026-10-16): the reader reads like a front page
 
 - `/g-line news` keeps the feed's own order, best first, instead of re-sorting by time; items

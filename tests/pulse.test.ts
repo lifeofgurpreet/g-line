@@ -1,6 +1,6 @@
 import { expect, test } from 'claude-code/testing'
 
-import { countOf, pageOf, parseFeed, pulseRow } from '../hooks/pulse'
+import { cells, clean, countOf, pageOf, parseFeed, pulseRow } from '../hooks/pulse'
 
 const ESC = String.fromCharCode(27)
 const AT = Date.parse('2026-10-14T12:00:00Z')
@@ -49,4 +49,21 @@ test('the reader pages around the picked item, and counts read at a glance', () 
   expect(pageOf(20, 10)).toEqual([8, 13])
   expect(pageOf(20, 19)).toEqual([15, 20])
   expect([countOf(999), countOf(4200), countOf(4000), countOf(12_345), countOf(2_500_000)]).toEqual(['999', '4.2k', '4k', '12k', '2.5M'])
+})
+
+test('emoji and wide characters count two columns, so a headline never wraps its row', () => {
+  expect(cells('🚀 ok')).toBe(5)
+  expect(cells('日本')).toBe(4)
+  expect(cells('e\u0301')).toBe(1)
+  // A variation selector is dropped: the symbol keeps its one-column text form.
+  expect(clean('❤\ufe0f x', 10)).toBe('❤ x')
+  const cut = clean('🚀🚀🚀🚀🚀🚀', 7)
+  expect(cut).toBe('🚀🚀🚀…')
+  expect(cells(cut)).toBeLessThanOrEqual(7)
+  const item = { title: '🚀 DeepSeek-V4.1-Flash-1017 is here! Stronger benchmark performance across the board', url: 'https://x.com/d/status/1', source: '𝕏 @deepseek_ai', at: '2026-10-13T12:00:00Z' }
+  for (const room of [60, 80, 96]) {
+    const row = pulseRow(item, room, AT)
+    expect(row).toBeDefined()
+    expect(cells(`${row?.lead ? `${row.lead}: ` : ''}${row?.title}${row?.tail}`)).toBeLessThanOrEqual(room)
+  }
 })

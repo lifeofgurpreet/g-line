@@ -7,7 +7,6 @@
 // string is stripped of escapes and control characters and cut to length
 // before it can reach the terminal.
 
-import { width } from './core'
 import type { PulseFeed, PulseItem } from '../types'
 
 export type { PulseFeed, PulseItem }
@@ -27,13 +26,34 @@ export const READER_PAGE = 5
 // CSI and OSC escape sequences, then any C0/C1 control, then bidi and zero-width controls.
 const ESCAPES = /\u001b\[[0-?]*[ -/]*[@-~]|\u001b\][^\u0007\u001b]*(?:\u0007|\u001b\\)|\u001b[@-_]/g
 const CONTROLS = /[\u0000-\u001f\u007f-\u009f\u200b-\u200f\u202a-\u202e\u2060-\u2069\ufeff]/g
+// Variation selectors are dropped, so a symbol draws in its one-column text form.
+const SELECTORS = /[\ufe00-\ufe0f]/g
+// Feed text, unlike the mod's own, can hold emoji and East Asian wide characters (two columns) and combining marks (none).
+const WIDE = /\p{Emoji_Presentation}|[\u1100-\u115f\u2e80-\u303e\u3041-\ua4cf\uac00-\ud7a3\uf900-\ufaff\ufe30-\ufe4f\uff00-\uff60\uffe0-\uffe6\u{20000}-\u{3fffd}]/u
+const ZERO = /[\p{Mn}\p{Me}]/u
+
+const cell = (ch: string) => ZERO.test(ch) ? 0 : WIDE.test(ch) ? 2 : 1
+
+/** Display columns of feed text. */
+export function cells(text: string): number {
+  let n = 0
+  for (const ch of text) n += cell(ch)
+  return n
+}
 
 /** Text safe to draw: no escapes or control characters, one line, at most `max` columns. */
 export function clean(value: unknown, max: number): string {
   if (typeof value !== 'string') return ''
-  const text = value.replace(ESCAPES, '').replace(CONTROLS, ' ').replace(/\s+/g, ' ').trim()
-  const chars = [...text]
-  return chars.length <= max ? text : `${chars.slice(0, Math.max(0, max - 1)).join('').trimEnd()}…`
+  const text = value.replace(ESCAPES, '').replace(CONTROLS, ' ').replace(SELECTORS, '').replace(/\s+/g, ' ').trim()
+  if (cells(text) <= max) return text
+  let kept = ''
+  let used = 0
+  for (const ch of text) {
+    used += cell(ch)
+    if (used > max - 1) break
+    kept += ch
+  }
+  return `${kept.trimEnd()}…`
 }
 
 /** Only plain https links, short enough to be a link and not a payload. */
@@ -103,10 +123,10 @@ export function tickerText(feed: PulseFeed | null | undefined, elapsedMs: number
   if (!item) return ''
   // A headline cut to a stub says nothing: drop the source before the title, and skip it if still too narrow.
   const lead = xLead(item, nowMs)
-  if (lead && room - width(lead) - 2 >= 24) return `${lead}: ${clean(item.title, room - width(lead) - 2)}`
+  if (lead && room - cells(lead) - 2 >= 24) return `${lead}: ${clean(item.title, room - cells(lead) - 2)}`
   if (lead) return clean(item.title, room)
   const tail = ` (${item.source})`
-  if (room - width(tail) >= 24) return `${clean(item.title, room - width(tail))}${tail}`
+  if (room - cells(tail) >= 24) return `${clean(item.title, room - cells(tail))}${tail}`
   return clean(item.title, room)
 }
 
@@ -136,8 +156,8 @@ export function pulseRow(item: PulseItem | undefined, room: number, nowMs: numbe
   const age = ageOf(item, nowMs)
   const lead = `${item.source}${age ? ` · ${age}` : ''}`
   const tailText = ' · /g-line news'
-  const tail = room - width(lead) - 2 - width(tailText) >= 40 ? tailText : ''
-  const titleRoom = room - width(lead) - 2 - width(tail)
+  const tail = room - cells(lead) - 2 - cells(tailText) >= 40 ? tailText : ''
+  const titleRoom = room - cells(lead) - 2 - cells(tail)
   if (titleRoom < 24) return { lead: '', title: clean(item.title, room), tail: '' }
   return { lead, title: clean(item.title, titleRoom), tail }
 }
