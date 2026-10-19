@@ -28,8 +28,8 @@ import type { ReceiptSpec } from './extras'
 import { MOD_KEYS, accountSegment, inline, joined, modesWidth, shownHint, tailRoom, withText } from './inline'
 import { deck, nextRoom } from './deck'
 import { STATUS_DESCRIPTION, STATUS_SCHEMA, STATUS_TOOL, statusJson } from './glance'
-import { PULSE_EVERY_MS, PULSE_TTL_MS, PULSE_URL, ageOf, clean, countOf, pageOf, parseFeed, pulseRow, safeUrl, tickerText, xLead } from './pulse'
-import type { PulseItem } from './pulse'
+import { PULSE_BEATS, PULSE_EVERY_MS, PULSE_TTL_MS, PULSE_URL, ageOf, clean, countOf, muted, pageOf, parseFeed, pulseRow, safeUrl, tickerText, xLead } from './pulse'
+import type { PulseFeed, PulseItem } from './pulse'
 import { gitSegmentOf } from './core'
 import {
   DEFAULTS, GROUPS, SETTINGS, changed, merge, nextValue, originOf, parseCommand, patchOf, said, withPatch, withoutSetting,
@@ -306,6 +306,8 @@ let pending: Promise<Receipt> | undefined
 let lastHint = ''
 /** Whether this turn's first request rebuilt a cold cache. */
 let coldThisTurn = false
+/** Pulse's 8-second beats so far; the row moves on every `PULSE_BEATS[speed]` of them. */
+let pulseBeats = 0
 /** Consecutive failures per agent, tool and target. */
 const streaks = new Map<string, number>()
 
@@ -886,9 +888,26 @@ async function refreshPulse($: EngineInterface, force = false): Promise<void> {
   }
 }
 
+/** The feed less the sources the person muted: what the row and the spinner show. */
+async function shownFeed($: EngineInterface): Promise<PulseFeed | null> {
+  const feed = await read($, pulseAtom)
+  if (!feed || !config.pulseMute.length) return feed
+  return { ...feed, items: feed.items.filter(item => !muted(item, config.pulseMute)) }
+}
+
+/**
+ * Mutes the item's source on Pulse's row and spinner, or unmutes whatever
+ * mutes it; saved like any other choice. The reader keeps showing it.
+ */
+async function toggleMute($: EngineInterface, item: PulseItem): Promise<void> {
+  const was = muted(item, config.pulseMute)
+  await choose($, { pulse_mute: was ? config.pulseMute.filter(word => !muted(item, [word])) : [...config.pulseMute, item.source] })
+  $.ui.toast(was ? `${item.source} is back on Pulse.` : `Muted ${item.source} on Pulse's row and spinner; m here unmutes it.`, { timeoutMs: 5000 })
+}
+
 /** The item Pulse's row shows now. */
 async function shownItem($: EngineInterface): Promise<PulseItem | undefined> {
-  const feed = await read($, pulseAtom)
+  const feed = await shownFeed($)
   if (!feed?.items.length) return undefined
   return feed.items[(await read($, turnover)) % feed.items.length]
 }
@@ -896,11 +915,12 @@ async function shownItem($: EngineInterface): Promise<PulseItem | undefined> {
 /**
  * Pulse's row under the prompt, while Pulse is on: whose post, how long ago,
  * and the headline as a link (cmd-click or ctrl-click opens it where the
- * terminal draws OSC 8 links). It moves to the next item every 8 seconds.
+ * terminal draws OSC 8 links). It moves to the next item every 8 or 40 seconds
+ * (`pulse_speed`), or holds one while paused; muted sources are skipped.
  */
 async function pulseLine($: EngineInterface, e: Parameters<EngineInterface['ui']['resolve']>[0], columns: number | undefined): Promise<JSX.Element | null> {
   if (!config.pulse || config.lines === 0 || columns === undefined) return null
-  const feed = await read($, pulseAtom)
+  const feed = await shownFeed($)
   if (!feed?.items.length) return null
   const item = feed.items[(await read($, turnover)) % feed.items.length]
   const row = pulseRow(item, columns - 4, await nowMs($))
@@ -930,7 +950,10 @@ async function drawsLinks($: EngineInterface): Promise<boolean> {
 /** Moves Pulse's row on to the next item, while there is a row to move. */
 async function turnPulse($: EngineInterface): Promise<void> {
   if (!config.pulse || config.lines === 0 || (await read($, hidden))) return
-  const feed = await read($, pulseAtom)
+  const beats = PULSE_BEATS[config.pulseSpeed]
+  pulseBeats += 1
+  if (beats === 0 || pulseBeats % beats !== 0) return
+  const feed = await shownFeed($)
   if (feed && feed.items.length > 1) await update($, turnover, n => n + 1)
 }
 
@@ -1379,7 +1402,7 @@ export const register: Register = (on, options) => {
       const columns = e.viewport?.columns ?? 0
       const room = columns - 4 - width(shown) - width(suffix || lead) - 3 - 34
       const now = await nowMs($)
-      const ticker = tickerText(await read($, pulseAtom), now - live.startAt, room, now)
+      const ticker = tickerText(await shownFeed($), now - live.startAt, room, now, PULSE_BEATS[config.pulseSpeed])
       if (ticker) suffix = `${suffix || lead} │ ${ticker}`
     }
     if (!suffix) return next(e)
@@ -1492,6 +1515,10 @@ export const register: Register = (on, options) => {
             {selected?.discussion ? (
               <Button key="discussion" plain label="Comments" hotkey="d" onPress={() => void (selected.discussion && openLink($, selected.discussion, e.surface))} />
             ) : null}
+            {selected ? (
+              <Button key="mute" plain label={muted(selected, config.pulseMute) ? 'Unmute' : 'Mute source'} hotkey="m"
+                onPress={() => void toggleMute($, selected)} />
+            ) : null}
             <Button key="refresh" plain label="Refresh" hotkey="r" onPress={() => void refreshPulse($, true)} />
             <Button key="close" plain label="Close" hotkey="q" onPress={() => void $.ui.close({ id: PANE })} />
           </Box>
@@ -1506,8 +1533,9 @@ export const register: Register = (on, options) => {
               <Box key={`news-${index}`} flexDirection="column" marginTop={offset ? 1 : 0}>
                 <Button key={`item-${index}`} plain onPress={() => void (chosen ? openLink($, item.url, e.surface) : move(index)())}>
                   <Text color={chosen ? 'claude' : undefined}>{chosen ? '▸ ' : '  '}</Text>
-                  <Text bold={chosen}>{clean(chosen ? meta : item.title, columns - (isNew(item) ? 6 : 2))}</Text>
+                  <Text bold={chosen} dimColor={muted(item, config.pulseMute)}>{clean(chosen ? meta : item.title, columns - (isNew(item) ? 6 : 2) - (muted(item, config.pulseMute) ? 6 : 0))}</Text>
                   {isNew(item) ? <Text color="claude">{' new'}</Text> : null}
+                  {muted(item, config.pulseMute) ? <Text dimColor>{' muted'}</Text> : null}
                 </Button>
                 {chosen ? (
                   <Box flexDirection="column" paddingLeft={2}>
@@ -1569,7 +1597,7 @@ export const register: Register = (on, options) => {
     }
     const rows = await detailRows($, seconds, e.props.bodyColumns)
     const account = (await read($, snap)).account
-    const feed = config.pulse ? await read($, pulseAtom) : null
+    const feed = config.pulse ? await shownFeed($) : null
     const now = await nowMs($)
     const { Link } = $.ui.resolve(e)
     return (

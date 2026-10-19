@@ -52,13 +52,13 @@ test('merge reads every config.json key, and ignores malformed values', () => {
     lines: 1, pulse: true, git: true, short_hints: false, preset: 'full', icons: 'nerd', toasts: false, cache_ttl: '5m',
     account_command: ['echo', 'x'], notify: { cache: false, reset: false, long_turn: true, agents: true },
     long_turn_seconds: 90, reset_threshold: 50, receipt: 'short', spinner: false, footer_labels: false, coach: true,
-    claude_reads: true, tool_streak: 5, today_budget: 20, export_state: true,
+    claude_reads: true, tool_streak: 5, today_budget: 20, export_state: true, pulse_speed: 'paused', pulse_mute: [' 𝕏 ', 3, ''],
   })
   expect(c).toEqual({
     lines: 1, pulse: true, git: true, shortHints: false, preset: 'full', icons: 'nerd', toasts: false, cacheTtl: '5m',
     accountCommand: ['echo', 'x'], notify: { cache: false, reset: false, longTurn: true, agents: true },
     longTurnSeconds: 90, resetThreshold: 50, receipt: ['cost', 'cache', 'tools'], spinner: false, footerLabels: false,
-    coach: true, claudeReads: true, toolStreak: 5, budget: 20, exportState: true,
+    coach: true, claudeReads: true, toolStreak: 5, budget: 20, exportState: true, pulseSpeed: 'paused', pulseMute: ['𝕏'],
   })
   expect(merge(DEFAULTS, { pulse: 'yes', lines: 7, notify: 'loud', reset_threshold: 400, icons: 'emoji' })).toEqual(DEFAULTS)
   expect(merge(DEFAULTS, { notify: false }).notify).toEqual({ cache: false, reset: false, longTurn: false, agents: false })

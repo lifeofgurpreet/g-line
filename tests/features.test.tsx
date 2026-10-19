@@ -758,6 +758,60 @@ test('where the terminal draws no links, or inside tmux, the headline is plain t
   await ui.unmount()
 })
 
+test('Pulse slow moves on every 40 seconds, paused not at all; the reader still pages', { timeoutMs: 30_000 }, async ($, on) => {
+  const w = world(on, {}, undefined, { TERM_PROGRAM: 'ghostty' })
+  w.config = { pulse: true, pulse_speed: 'slow' }
+  feedServer(on)
+  await start($)
+  await w.clock.settle()
+  const shown = async () => {
+    const ui = await $.ui.mount({ plugin: 'g-line', surface: 'terminal', component: 'PromptHint',
+      props: HINT_PROPS as never, viewport: { columns: 160, rows: 40 } })
+    const link = await ui.find({ type: 'Link' })
+    await ui.unmount()
+    return link?.text
+  }
+  const first = await shown()
+  await w.clock.advance(8_000)
+  expect(await shown()).toBe(first)
+  await w.clock.advance(32_000)
+  expect(await shown()).not.toBe(first)
+  await $.command.run({ command: 'g-line', args: 'set pulse_speed paused' } as never)
+  const held = await shown()
+  await w.clock.advance(120_000)
+  expect(await shown()).toBe(held)
+})
+
+test('m in the reader mutes the picked source on the row, keeps it listed as muted, and m again brings it back', { timeoutMs: 30_000 }, async ($, on) => {
+  const w = world(on, {}, undefined, { TERM_PROGRAM: 'ghostty' })
+  w.config = { pulse: true }
+  feedServer(on)
+  await start($)
+  await w.clock.settle()
+  const row = async () => {
+    const ui = await $.ui.mount({ plugin: 'g-line', surface: 'terminal', component: 'PromptHint',
+      props: HINT_PROPS as never, viewport: { columns: 160, rows: 40 } })
+    const link = await ui.find({ type: 'Link' })
+    await ui.unmount()
+    return link?.text
+  }
+  expect(await row()).toBe('Claude Dashboards are in beta')
+  await $.command.run({ command: 'g-line', args: 'news' } as never)
+  const pane = await $.ui.mount({ plugin: 'g-line', surface: 'terminal', component: 'Pane', requestId: 'g-line',
+    props: { bodyColumns: 90 } as never, viewport: { columns: 160, rows: 60 } })
+  await pane.press({ key: 'mute' })
+  expect(w.toasts[w.toasts.length - 1]).toBe("Muted 𝕏 @claudeai on Pulse's row and spinner; m here unmutes it.")
+  expect(await pane.find({ type: 'Text', text: ' muted' })).toBeDefined()
+  for (let i = 0; i < 4; i++) {
+    expect(await row()).not.toBe('Claude Dashboards are in beta')
+    await w.clock.advance(8_000)
+  }
+  await pane.press({ key: 'mute' })
+  expect(w.toasts[w.toasts.length - 1]).toBe('𝕏 @claudeai is back on Pulse.')
+  expect(await pane.find({ type: 'Text', text: ' muted' })).toBeUndefined()
+  await pane.unmount()
+})
+
 test('/g-line news lists every item in the feed\'s order, the picked one in full; j moves on', { timeoutMs: 30_000 }, async ($, on) => {
   const w = world(on)
   w.config = { pulse: true }

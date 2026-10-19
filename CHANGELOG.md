@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.6.5 (2026-10-19): Pulse at your pace, without the sources you skip
+
+- `pulse_speed`: `normal` moves Pulse to the next headline every 8 seconds, `slow` every 40,
+  and `paused` holds one until you page in `/g-line news`. `v` in `/g-line settings`, or
+  `/g-line set pulse_speed slow`. The spinner's headlines follow it too.
+- `m` in `/g-line news` mutes the picked item's source on Pulse's row and the spinner; `m`
+  again unmutes it. A muted source stays in the reader, marked muted. In config.json,
+  `pulse_mute` lists them: `["𝕏"]` skips every post on 𝕏.
+
 ## 0.6.4 (2026-10-19): the cache line knows about compaction
 
 - After a compaction the cache line reads `compacted, next turn caches 31k`: the size of the

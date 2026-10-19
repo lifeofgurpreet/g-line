@@ -143,7 +143,8 @@ appears under the prompt within seconds, on a dim row of its own under line 2:
 𝕏 @NeelNanda5 · 2h: This is interesting work, but I don't think it's a significant… · /g-line news
 ```
 
-It moves to the next item every 8 seconds. In Ghostty, iTerm2, WezTerm and VS Code the
+It moves to the next item every 8 seconds; `pulse_speed` (`v` in `/g-line settings`) makes it
+every 40 seconds (`slow`) or holds one headline (`paused`). In Ghostty, iTerm2, WezTerm and VS Code the
 headline is a link: cmd-click (ctrl-click on Linux) opens it. Elsewhere, and inside tmux, it's
 plain text, because a terminal without links would print the whole address after it and push
 the row onto a second line. `/g-line open` opens whichever headline is showing in any
@@ -157,7 +158,9 @@ than 15 seconds instead. Only one of the two ever shows.
 ranks them. The picked one is shown in full: who and when, likes on 𝕏 or points on Hacker
 News, the story a post is about, the whole post, and its link. The rest are one headline each.
 `j` and `k` move, `o` or Enter opens, `d` opens a Hacker News item's comments, `c` copies the
-link, `r` refreshes, `q` closes. Items posted since you last opened it are marked **new**.
+link, `m` mutes the picked item's source (or unmutes it), `r` refreshes, `q` closes. Items
+posted since you last opened it are marked **new**. A muted source stays in the reader, marked
+**muted**, and leaves Pulse's row and the spinner.
 
 ![/g-line news: "3–6 of 8, best first · updated 43m ago" over the key row; the picked item, "Hacker News · 4h · ▲ 163", shows its full title, "163 points and 100 comments on Hacker News.", its link and a link to the comments; the items around it show one headline and their source each, such as "James Titcomb / Telegraph via Techmeme · 18h"](docs/news.png)
 
@@ -226,6 +229,8 @@ Layers, lowest first: defaults, `config.json`, `/config`, then choices made with
 | `lines` | `2`, `1`, or `receipts` (receipts, spinner and heads-ups only) | `2` |
 | `receipt` | `adaptive`, `short` (cost, cache, tools), `full`, `off`, or a list of `cost`, `cache`, `context`, `tools`, `agents`, `output` | `adaptive` |
 | `pulse` | `true` fetches the headline feed (see Pulse) | `false` |
+| `pulse_speed` | `normal` (every 8 s), `slow` (every 40 s), `paused` | `normal` |
+| `pulse_mute` | Sources Pulse's row and spinner skip, matched within the source in any case: `["𝕏"]` skips every post on 𝕏, `["@someone", "Hacker News"]` one account and one site | `[]` |
 | `git` | `true` puts your branch on line 2; g-line then runs `git status` in your project | `false` |
 | `notify` | `true`, `false`, or per kind: `cache`, `reset`, `long_turn` (a turn longer than `long_turn_seconds` finished), `agents` (a background agent finished) | `cache` and `reset` on |
 | `toasts` | `true`, `false` | `true` |

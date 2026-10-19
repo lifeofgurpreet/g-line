@@ -1,6 +1,6 @@
 import { expect, test } from 'claude-code/testing'
 
-import { cells, clean, countOf, pageOf, parseFeed, pulseRow } from '../hooks/pulse'
+import { cells, clean, countOf, muted, pageOf, parseFeed, pulseRow, tickerText } from '../hooks/pulse'
 
 const ESC = String.fromCharCode(27)
 const AT = Date.parse('2026-10-14T12:00:00Z')
@@ -66,4 +66,17 @@ test('emoji and wide characters count two columns, so a headline never wraps its
     expect(row).toBeDefined()
     expect(cells(`${row?.lead ? `${row.lead}: ` : ''}${row?.title}${row?.tail}`)).toBeLessThanOrEqual(room)
   }
+})
+
+test('a mute matches within the source, any case; the spinner holds one headline when paused', () => {
+  const x = { title: 'Post', url: 'https://x.com/a/status/1', source: '𝕏 @claudeai' }
+  const hn = { title: 'Story', url: 'https://example.com/b', source: 'Hacker News' }
+  expect(muted(x, ['𝕏'])).toBe(true)
+  expect(muted(x, ['@ClaudeAI'])).toBe(true)
+  expect(muted(hn, ['𝕏', 'news.yc'])).toBe(false)
+  expect(muted(hn, [])).toBe(false)
+  const feed = { fetchedAt: 0, items: [hn, { ...hn, title: 'Second' }] }
+  expect(tickerText(feed, 15_000 + 8_000, 80)).toMatch(/^Second/)
+  expect(tickerText(feed, 15_000 + 8_000, 80, undefined, 5)).toMatch(/^Story/)
+  expect(tickerText(feed, 15_000 + 400_000, 80, undefined, 0)).toMatch(/^Story/)
 })

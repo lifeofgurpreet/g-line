@@ -18,6 +18,15 @@ export const PULSE_TTL_MS = 45 * 60_000
 export const PULSE_AFTER_MS = 15_000
 /** How long each headline stays on the spinner and on Pulse's row. */
 export const PULSE_EVERY_MS = 8_000
+
+/** Pulse's 8-second beats per headline at each speed; paused never moves on. */
+export const PULSE_BEATS = { normal: 1, slow: 5, paused: 0 } as const
+
+/** Whether `mute` names the item's source: a case-insensitive match within it. */
+export function muted(item: PulseItem, mute: readonly string[]): boolean {
+  const source = item.source.toLowerCase()
+  return mute.some(word => source.includes(word.toLowerCase()))
+}
 /** The longest text the reader shows for one item. */
 export const TEXT_MAX = 600
 /** How many items the reader shows at once. */
@@ -117,9 +126,10 @@ export function xLead(item: PulseItem, nowMs?: number): string {
 }
 
 /** The headline the spinner shows `elapsedMs` into a turn, cut to `room` columns, or nothing yet. */
-export function tickerText(feed: PulseFeed | null | undefined, elapsedMs: number, room: number, nowMs?: number): string {
+export function tickerText(feed: PulseFeed | null | undefined, elapsedMs: number, room: number, nowMs?: number, beats = 1): string {
   if (!feed?.items.length || elapsedMs < PULSE_AFTER_MS || room < 24) return ''
-  const item = feed.items[Math.floor((elapsedMs - PULSE_AFTER_MS) / PULSE_EVERY_MS) % feed.items.length]
+  const at = beats > 0 ? Math.floor((elapsedMs - PULSE_AFTER_MS) / (PULSE_EVERY_MS * beats)) : 0
+  const item = feed.items[at % feed.items.length]
   if (!item) return ''
   // A headline cut to a stub says nothing: drop the source before the title, and skip it if still too narrow.
   const lead = xLead(item, nowMs)

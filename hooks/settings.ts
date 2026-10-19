@@ -15,11 +15,17 @@ import type { ReceiptSpec } from './extras'
 
 export type Notify = { cache: boolean; reset: boolean; longTurn: boolean; agents: boolean }
 
+export type PulseSpeed = 'normal' | 'slow' | 'paused'
+
 export type Config = {
   /** 2: line 1 at the end of the hint line, line 2 under it; 1: the hint line only; 0: receipts, spinner and heads-ups, no footer. */
   lines: 0 | 1 | 2
   /** Headlines from g-line's feed on long turns' spinner and in the pane; fetches one static file. */
   pulse: boolean
+  /** How often Pulse moves to the next headline. */
+  pulseSpeed: PulseSpeed
+  /** Sources Pulse skips, matched case-insensitively within an item's source: `𝕏` skips every post on X. */
+  pulseMute: string[]
   /** Shorten Claude Code's standing hints: `(shift+tab to cycle)` to `⇧⇥`, `? for shortcuts` to `?`. */
   shortHints: boolean
   /** The branch on line 2 (two lines; one line names `git` in `segments`). */
@@ -45,7 +51,7 @@ export type Config = {
 }
 
 export const DEFAULTS: Config = {
-  lines: 2, pulse: false, shortHints: true, git: false, preset: 'default', icons: 'none', toasts: true, cacheTtl: 'auto',
+  lines: 2, pulse: false, pulseSpeed: 'normal', pulseMute: [], shortHints: true, git: false, preset: 'default', icons: 'none', toasts: true, cacheTtl: 'auto',
   notify: { cache: true, reset: true, longTurn: false, agents: false },
   longTurnSeconds: 60, resetThreshold: 80, receipt: 'adaptive', spinner: true, footerLabels: true,
   coach: false, claudeReads: false, toolStreak: 3, exportState: false,
@@ -59,6 +65,11 @@ export function merge(base: Config, raw: unknown): Config {
   if ([0, 1, 2, '0', '1', '2'].includes(r.lines as number)) next.lines = Number(r.lines) as 0 | 1 | 2
   if (r.lines === 'receipts') next.lines = 0
   if (typeof r.pulse === 'boolean') next.pulse = r.pulse
+  if (r.pulse_speed === 'normal' || r.pulse_speed === 'slow' || r.pulse_speed === 'paused') next.pulseSpeed = r.pulse_speed
+  if (Array.isArray(r.pulse_mute)) {
+    next.pulseMute = r.pulse_mute.filter((word): word is string => typeof word === 'string' && word.trim() !== '')
+      .map(word => word.trim()).slice(0, 100)
+  }
   if (typeof r.git === 'boolean') next.git = r.git
   if (typeof r.short_hints === 'boolean') next.shortHints = r.short_hints
   if (r.preset === 'minimal' || r.preset === 'default' || r.preset === 'full') next.preset = r.preset
@@ -153,6 +164,10 @@ export const SETTINGS: readonly Setting[] = [
   toggle('notify.long_turn', 'Long turn', 'Heads-ups', 'u', c => c.notify.longTurn, 'a notification when a long turn ends', ['long_turn']),
   toggle('notify.agents', 'Agents', 'Heads-ups', 'a', c => c.notify.agents, 'a notification when a background agent ends', ['agents']),
   toggle('pulse', 'Pulse', 'Extras', 'p', c => c.pulse, 'AI dev headlines and posts on X; fetches one static file every 45 minutes'),
+  { kind: 'choice', key: 'pulse_speed', aliases: ['speed', 'rotation'], label: 'Pulse speed', group: 'Extras', hotkey: 'v',
+    options: ['normal', 'slow', 'paused'], get: c => c.pulseSpeed,
+    words: { normal: 'every 8 s', slow: 'every 40 s', paused: 'paused' },
+    help: 'how often Pulse moves to the next headline; paused keeps one until you page in /g-line news' },
   toggle('coach', 'Coach', 'Extras', 'o', c => c.coach, 'offers /effort or /compact for Tab to take; never changes anything'),
   toggle('claude_reads', 'Claude reads', 'Extras', 'x', c => c.claudeReads, 'gives Claude a read-only `status` tool for these figures', ['status', 'status_tool']),
   toggle('export_state', 'Export state', 'Extras', 'e', c => c.exportState, 'writes the figures as JSON for tmux and other bars', ['export']),
