@@ -75,11 +75,19 @@ export function lineNow(p: Payload, o: Options): Segment[] {
 
 // ------------------------------------------------------------------ line 2
 
-/** `cache 58m`, green while warm, amber in its last minutes, then `cache cold`. */
+/**
+ * `cache 58m`, green while warm, amber in its last minutes, then `cache cold`;
+ * after a compaction, the summary the next turn writes instead.
+ */
 export function cacheNext(p: Payload, now: number): Segment | undefined {
   const cache = p.prompt_cache
   if (!cache || cache.caching_observed !== true) return undefined
   const expires = num(cache.expires_at)
+  if (cache.compacted === true) {
+    const size = num(cache.recache_tokens_if_cold)
+    return { key: 'cache', priority: 90,
+      forms: size && size > 0 ? [`compacted, next turn caches ${tokens(size)}`, 'cache compacted'] : ['cache compacted'] }
+  }
   if (cache.warm === true && expires !== undefined && expires > now) {
     const left = expires - now
     const soon = left <= (cache.ttl === '1h' ? 300 : 60)

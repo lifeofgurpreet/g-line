@@ -2,6 +2,7 @@ import { expect, test } from 'claude-code/testing'
 
 import { joined } from '../hooks/inline'
 import { deck, nextRoom } from '../hooks/deck'
+import { alerts } from '../hooks/core'
 import { STATUS_DESCRIPTION, statusJson } from '../hooks/glance'
 import { clean, parseFeed, tickerText, xLead } from '../hooks/pulse'
 import type { Payload } from '../hooks/core'
@@ -37,6 +38,21 @@ test('the cache goes amber in its last minutes and says what a cold one costs', 
   expect(soon.next.find(part => part.key === 'cache')).toEqual({ key: 'cache', text: 'cache warm ~4m', tone: 'warn' })
   const cold = deck({ ...P, prompt_cache: { ...P.prompt_cache, warm: false, expires_at: NOW - 10 } }, O, {})
   expect(cold.next.find(part => part.key === 'cache')?.text).toBe('cache cold, next turn rebuilds 120k')
+})
+
+test('after a compaction the cache says what the next turn writes, not a rebuild of the old conversation', async () => {
+  const compacted = { ...P, prompt_cache: { ...P.prompt_cache, warm: false, compacted: true, recache_tokens_if_cold: 31_000 } }
+  expect(deck(compacted, O, {}).next.find(part => part.key === 'cache')).toEqual({ key: 'cache', text: 'compacted, next turn caches 31k' })
+  expect(alerts(compacted, O).filter(a => a.id.startsWith('cache'))).toEqual([])
+  expect(JSON.parse(statusJson({ p: compacted, now: NOW, section: 'cache' })).cache)
+    .toEqual(expect.objectContaining({ state: 'compacted', rebuild_tokens_if_cold: 31_000 }))
+})
+
+test('the cold-cache heads-up says Claude Code compacts first when idle compaction covers it', async () => {
+  const soon = { ...P, prompt_cache: { ...P.prompt_cache, expires_at: NOW + 4 * 60 } }
+  expect(alerts(soon, O)[0]?.text).toMatch(/Reply before then to keep it cached; after, the next turn rebuilds it\.$/)
+  const idle = { ...soon, prompt_cache: { ...soon.prompt_cache, idle_compacts: true } }
+  expect(alerts(idle, O)[0]?.text).toMatch(/Reply before then to keep it cached; if not, Claude Code compacts the conversation to a summary first\.$/)
 })
 
 test('the status tool: a JSON snapshot with scope and basis; unknown stays null, never advice', async () => {

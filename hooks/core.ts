@@ -28,6 +28,10 @@ export type Payload = {
     ttl?: string
     expires_at?: number | null
     recache_tokens_if_cold?: number | null
+    /** A compaction replaced the cached conversation; the next request writes `recache_tokens_if_cold`. */
+    compacted?: boolean
+    /** Claude Code's idle compaction will summarise the conversation before this cache expires. */
+    idle_compacts?: boolean
   }
   cost?: {
     total_cost_usd?: number
@@ -243,6 +247,11 @@ function cacheSegment(p: Payload, now: number): Segment | undefined {
   const cache = p.prompt_cache
   if (!cache || cache.caching_observed !== true) return undefined
   const expires = num(cache.expires_at)
+  if (cache.compacted === true) {
+    const size = num(cache.recache_tokens_if_cold)
+    return { key: 'cache', priority: 80,
+      forms: size && size > 0 ? [`cache reset by compaction (next turn writes ${tokens(size)})`, 'cache compacted'] : ['cache compacted'] }
+  }
   if (cache.warm === true && expires !== undefined && expires > now) {
     const left = expires - now
     const soon = left <= (cache.ttl === '1h' ? 300 : 60)
@@ -406,8 +415,11 @@ export function alerts(p: Payload, o: Options): Alert[] {
     if (left > 0 && left <= (cache.ttl === '1h' ? 300 : 60)) {
       const recache = num(cache.recache_tokens_if_cold)
       const stake = recache && recache > 0 ? ` (${tokens(recache)} of context at risk)` : ''
+      const after = cache.idle_compacts === true
+        ? 'if not, Claude Code compacts the conversation to a summary first.'
+        : 'after, the next turn rebuilds it.'
       found.push({ id: `cache:${Math.floor(expires)}`, tone: 'warn',
-        text: `Claude cache goes cold in ${duration(left)}${stake}. Reply before then to keep it cached; after, the next turn rebuilds it.` })
+        text: `Claude cache goes cold in ${duration(left)}${stake}. Reply before then to keep it cached; ${after}` })
     }
   }
   for (const [kind, name] of [['five_hour', '5-hour'], ['seven_day', 'weekly']] as const) {

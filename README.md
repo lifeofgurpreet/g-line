@@ -32,8 +32,10 @@ In Claude Code 2.1.293 or later, type at the prompt:
   resets Fri 16:00`. Nothing goes above the prompt.
 - **A heads-up before the cache goes cold.** A native notification five minutes before a
   one-hour prompt cache expires, with what's at stake: `Claude cache goes cold in 5m (148k of
-  context at risk)`. Another tells you when a usage window resets after you came close to
-  its limit.
+  context at risk)`. When Claude Code's idle compaction covers the conversation (an hour-long
+  cache of 200k tokens or more), it says so: if you don't reply, Claude Code compacts the
+  conversation to a summary first. Another tells you when a usage window resets after you
+  came close to its limit.
 
 ![A schema comparison closes with "Baked for 43s · done 1:22 PM · cache cold · rebuilt 42k · API $0.31"; under the prompt, the hint line ends with "ctx 4% · 5h 1% · wk 80%!" and the coloured line reads "Opus 5.5 high · cache warm ~4m · 5h resets in 2h 47m · wk out ~Thu 19:00, resets Fri 16:00"](docs/hero.png)
 
@@ -109,7 +111,7 @@ Line 2, g-line's own row, in colour:
 | Segment | Example | What it means |
 | --- | --- | --- |
 | model | `Opus 5.5 high` | The model and the effort of the last request (`fast` when fast mode is on) |
-| cache | `cache ~59m`, `cache cold` | How long the prompt cache stays warm, green, then amber in its last minutes. `~` because it's an estimate from when the last request ran and the cache's lifetime |
+| cache | `cache ~59m`, `cache cold`, `compacted, next turn caches 31k` | How long the prompt cache stays warm, green, then amber in its last minutes. `~` because it's an estimate from when the last request ran and the cache's lifetime. After a compaction (yours, automatic, or Claude Code's while you were idle) the old conversation's cache no longer applies, so it shows the summary the next turn writes instead |
 | timing | `wk out ~Thu 19:00, resets Fri 16:00` | When a window on pace to run out gets there (rounded: it's a projection), else when it resets |
 | agents, compaction | `agents 2 running`, `compacts in ~3 turns` | While subagents work; when a compaction is near |
 

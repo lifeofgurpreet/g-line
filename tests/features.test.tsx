@@ -537,6 +537,58 @@ test('Claude can read the figures only when claude_reads is on, as a JSON snapsh
   expect(body.limits).toBeUndefined()
 })
 
+test('a compaction resets the cache figure: until the next turn writes the summary, it is not a cold rebuild of the old conversation', { timeoutMs: 30_000 }, async ($, on) => {
+  const w = world(on)
+  w.config = { claude_reads: true }
+  on('tool.register', ($, e) => ({ value: { tool: `mcp__g-line__${e.name}` } }) as never)
+  on('session.compact', () => ({ messages: SUMMARY, tokensBefore: 204_000, tokensAfter: 31_000 }) as never)
+  let write = 4_000
+  on('turn.step', async function* ($: unknown, e: { turnId: string; index: number }) {
+    return { turnId: e.turnId, index: e.index, answer: '', toolUses: [],
+      usage: { input_tokens: 4, output_tokens: 300, cache_read_input_tokens: 200_000 - write, cache_creation_input_tokens: write } }
+  } as never)
+  const step = async (n: number) => {
+    const stream = $.turn.step({ turnId: `t${n}`, index: 0, model: 'claude-opus-5-5', messageCount: 2 } as never)
+    for await (const _ of stream) { /* drain */ }
+    await stream.result
+  }
+  const cache = async () => {
+    const answer = await $.tool.call({ tool: 'mcp__g-line__status', section: 'cache' } as never) as unknown as { text: string }
+    return JSON.parse(answer.text).cache
+  }
+  await start($)
+  await $.turn.start({ text: 'go', turnId: 't1' })
+  await step(1)
+  expect((await cache()).state).toBe('estimated_warm')
+  await w.clock.advance(2 * 3600 * 1000)
+  expect(await cache()).toEqual(expect.objectContaining({ state: 'estimated_cold', rebuild_tokens_if_cold: 200_304 }))
+  await $.session.compact({ trigger: 'auto', messages: SUMMARY } as never)
+  expect(await cache()).toEqual(expect.objectContaining({ state: 'compacted', rebuild_tokens_if_cold: 31_000 }))
+  write = 31_000
+  await $.turn.start({ text: 'back', turnId: 't2' })
+  await step(2)
+  expect(await cache()).toEqual(expect.objectContaining({ state: 'estimated_warm', rebuild_tokens_if_cold: 200_304 }))
+})
+
+test('a context count that falls by half with no request between reads as a compaction, even unannounced', { timeoutMs: 30_000 }, async ($, on) => {
+  const w = world(on)
+  w.config = { claude_reads: true }
+  on('tool.register', ($, e) => ({ value: { tool: `mcp__g-line__${e.name}` } }) as never)
+  on('turn.step', async function* ($: unknown, e: { turnId: string; index: number }) {
+    return { turnId: e.turnId, index: e.index, answer: '', toolUses: [],
+      usage: { input_tokens: 4, output_tokens: 300, cache_read_input_tokens: 196_000, cache_creation_input_tokens: 4_000 } }
+  } as never)
+  await start($)
+  const stream = $.turn.step({ turnId: 't1', index: 0, model: 'claude-opus-5-5', messageCount: 2 } as never)
+  for await (const _ of stream) { /* drain */ }
+  await stream.result
+  await $.session.measure({ changed: ['context'], context: { tokens: 180_000, window: 1_000_000, percent: 18 }, rateLimits: [] } as never)
+  const read = async () => JSON.parse((await $.tool.call({ tool: 'mcp__g-line__status', section: 'cache' } as never) as unknown as { text: string }).text).cache
+  expect((await read()).state).toBe('estimated_warm')
+  await $.session.measure({ changed: ['context'], context: { tokens: 28_000, window: 1_000_000, percent: 3 }, rateLimits: [] } as never)
+  expect(await read()).toEqual(expect.objectContaining({ state: 'compacted', rebuild_tokens_if_cold: 28_000 }))
+})
+
 test('the settings view lists every setting with its origin; a key press applies it now and keeps it', { timeoutMs: 30_000 }, async ($, on) => {
   const store: Record<string, unknown> = {}
   const w = world(on, {}, store)

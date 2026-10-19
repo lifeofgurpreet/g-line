@@ -1,5 +1,22 @@
 # Changelog
 
+## 0.6.4 (2026-10-19): the cache line knows about compaction
+
+- After a compaction the cache line reads `compacted, next turn caches 31k`: the size of the
+  summary the next turn writes. It used to keep timing the old conversation and, an hour
+  later, warned `cache cold, next turn rebuilds 204k` about a conversation that was no longer
+  there. This matters most with Claude Code's idle compaction, which summarises a long
+  conversation shortly before an hour-long cache expires.
+- A compaction counts even when no compaction event reaches the mod: if Claude Code's
+  context count falls below half of the last request with no request in between, the cache
+  line treats it as one.
+- The heads-up before an hour-long cache goes cold says, when idle compaction covers the
+  conversation, that Claude Code compacts it to a summary if you don't reply, instead of
+  saying the next turn rebuilds it all. It reads `"idleCompaction"` from settings and
+  `CLAUDE_CODE_IDLE_COMPACT_MIN_TOKENS` (200k unset), as Claude Code does.
+- `/clear` forgets the cleared conversation's cache instead of counting it down.
+- The `status` tool reports the cache state `compacted` in that case.
+
 ## 0.6.3 (2026-10-19): one headline at a time, on one row
 
 - With a footer, Pulse's headline shows only on its row under the prompt. The spinner no

@@ -226,6 +226,23 @@ async function explicitTtl($: EngineInterface, config: Config): Promise<'5m' | '
   return undefined
 }
 
+/**
+ * Claude Code's idle compaction: on unless `"idleCompaction": false`, for an
+ * hour-long cache holding at least `CLAUDE_CODE_IDLE_COMPACT_MIN_TOKENS`
+ * (200k unset). It summarises the conversation shortly before the cache expires.
+ */
+type IdleCompaction = { minTokens: number }
+
+async function idleCompactionOf($: EngineInterface): Promise<IdleCompaction | undefined> {
+  try {
+    if ((await $.settings.read()).idleCompaction === false) return undefined
+  } catch {
+    // settings unreadable: Claude Code's default, on
+  }
+  const min = Number(await $.env.get('CLAUDE_CODE_IDLE_COMPACT_MIN_TOKENS'))
+  return { minTokens: Number.isFinite(min) && min > 0 ? min : 200_000 }
+}
+
 function automaticTtl(s: Snap): '5m' | '1h' {
   const limits = s.rateLimits ?? []
   const subscription = limits.some(l => l.kind === 'five_hour' || l.kind === 'seven_day')
@@ -236,7 +253,7 @@ function automaticTtl(s: Snap): '5m' | '1h' {
 // ---------------------------------------------------------------- payload
 
 /** The statusLine-shaped view of what the mod knows, for the core. */
-export function payload(s: Snap, nowSeconds: number, ttl: '5m' | '1h' | undefined): Payload {
+export function payload(s: Snap, nowSeconds: number, ttl: '5m' | '1h' | undefined, idle?: IdleCompaction): Payload {
   const p: Payload = {}
   if (s.model) p.model = { display_name: modelName(s.model) }
   if (s.effort) p.effort = { level: s.effort }
@@ -258,8 +275,11 @@ export function payload(s: Snap, nowSeconds: number, ttl: '5m' | '1h' | undefine
   if (s.cache?.cached) {
     const effective = s.cache.learned ?? ttl ?? automaticTtl(s)
     const expires = s.cache.lastAt + (effective === '1h' ? 3600 : 300)
-    p.prompt_cache = { caching_observed: true, ttl: effective, warm: expires > nowSeconds, expires_at: expires,
-      recache_tokens_if_cold: s.cache.prefix }
+    const compacted = s.cache.compactedTo !== undefined
+    p.prompt_cache = { caching_observed: true, ttl: effective, warm: !compacted && expires > nowSeconds, expires_at: expires,
+      recache_tokens_if_cold: s.cache.compactedTo ?? s.cache.prefix }
+    if (compacted) p.prompt_cache.compacted = true
+    else if (idle && effective === '1h' && s.cache.prefix >= idle.minTokens) p.prompt_cache.idle_compacts = true
   }
   if (s.git) p.git = s.git
   return p
@@ -275,6 +295,7 @@ let stamp = ''
 let startOptions: Record<string, unknown> = {}
 let statusRegistered = false
 let ttl: '5m' | '1h' | undefined
+let idle: IdleCompaction | undefined
 let beats = 0
 let liveFile: string | undefined
 let stateFile: string | undefined
@@ -321,6 +342,16 @@ function peaksOf(s: Snap, limits: Snap['rateLimits']): Snap['peaks'] {
     }
   }
   return peaks
+}
+
+/**
+ * The cache once the engine's context count falls below half the last
+ * request's prefix with no request since: a compaction replaced the
+ * conversation, whether or not a `session.compact` reached the mod.
+ */
+function shrunk(cache: Snap['cache'], context: number | undefined): Snap['cache'] {
+  if (!cache || context === undefined || context <= 0 || cache.compactedTo !== undefined) return cache
+  return context < cache.prefix / 2 ? { ...cache, compactedTo: context } : cache
 }
 
 async function measure($: EngineInterface): Promise<void> {
@@ -416,7 +447,7 @@ async function firstAcrossSessions($: EngineInterface, key: string): Promise<boo
 async function nudge($: EngineInterface): Promise<void> {
   const seconds = await nowSeconds($)
   const s = await read($, snap)
-  const p = payload(s, seconds, ttl)
+  const p = payload(s, seconds, ttl, idle)
   for (const alert of alerts(p, optionsAt(seconds))) {
     if (!(await once($, alert.id))) continue
     if (alert.id.startsWith('cache:')) {
@@ -480,7 +511,7 @@ async function exportState($: EngineInterface): Promise<void> {
   try {
     const seconds = await nowSeconds($)
     const s = await read($, snap)
-    const p = payload(s, seconds, ttl)
+    const p = payload(s, seconds, ttl, idle)
     const active = (await read($, agents)).filter(row => isActive(row.status)).length
     const body = {
       updatedAt: Math.floor(seconds), line: joined(inline(p, optionsAt(seconds))),
@@ -719,7 +750,7 @@ const bar = (value: number, cells = 10) => {
 
 async function detailRows($: EngineInterface, seconds: number, columns?: number): Promise<Row[]> {
   const s = await read($, snap)
-  const p = payload(s, seconds, ttl)
+  const p = payload(s, seconds, ttl, idle)
   const opts = { ...optionsAt(seconds), preset: 'full' as const, segments: undefined }
   const rows: Row[] = segments(p, opts).flat().map(row => ({ key: row.key, text: row.forms[0] ?? '', tone: row.tone }))
   for (const l of s.rateLimits ?? []) {
@@ -789,7 +820,7 @@ async function detailRows($: EngineInterface, seconds: number, columns?: number)
 async function cardText($: EngineInterface, seconds: number): Promise<string[]> {
   const s = await read($, snap)
   const t = await read($, totals)
-  const p = payload(s, seconds, ttl)
+  const p = payload(s, seconds, ttl, idle)
   return cardLines({
     model: p.model?.display_name,
     elapsedSeconds: s.startedAt !== undefined ? seconds - s.startedAt / 1000 : undefined,
@@ -1050,6 +1081,7 @@ export const register: Register = (on, options) => {
     ;({ config, layers } = await loadConfig($, startOptions))
     stamp = await configStamp($)
     ttl = await explicitTtl($, config)
+    idle = await idleCompactionOf($)
     if (config.claudeReads) await registerStatus($)
     for (const [name, description] of [
       [COMMAND, HELP],
@@ -1071,7 +1103,11 @@ export const register: Register = (on, options) => {
   // A /clear starts a new conversation in the same process, with no
   // `session.start`: read the fresh session's figures straight away.
   on('session.end', async ($, e, next) => {
-    if (e.reason === 'clear') $.clock.after(300, () => void resync($))
+    if (e.reason === 'clear') {
+      // The cleared conversation's cache says nothing about the next one.
+      await update($, snap, s => ({ ...s, cache: undefined }))
+      $.clock.after(300, () => void resync($))
+    }
     return next(e)
   })
 
@@ -1083,6 +1119,7 @@ export const register: Register = (on, options) => {
       rateLimits: limits,
       costUsd: e.cost?.usd ?? s.costUsd,
       peaks: peaksOf(s, limits),
+      cache: shrunk(s.cache, e.context.tokens),
     }))
     void nudge($)
     return next(e)
@@ -1118,7 +1155,10 @@ export const register: Register = (on, options) => {
       const prefix = u.input_tokens + u.cache_read_input_tokens + u.cache_creation_input_tokens + u.output_tokens
       await update($, snap, s => {
         let learned = s.cache?.learned
-        const gap = s.cache ? started - s.cache.lastAt : 0
+        // After a compaction the old prefix is gone: this write is the summary,
+        // neither a lifetime to learn from nor a cold rebuild.
+        const fresh = s.cache?.compactedTo !== undefined
+        const gap = s.cache && !fresh ? started - s.cache.lastAt : 0
         if (s.cache?.cached && gap > 330 && gap < 3500) {
           // After 5+ idle minutes a read means the hour TTL; a full rewrite of
           // a large prefix means five minutes.
@@ -1147,7 +1187,7 @@ export const register: Register = (on, options) => {
     const s = await read($, snap)
     const c = await read($, contextAtom)
     const text = statusJson({
-      p: payload(s, seconds, ttl), now: seconds, observedAt: s.cache?.lastAt,
+      p: payload(s, seconds, ttl, idle), now: seconds, observedAt: s.cache?.lastAt,
       compactAt: c?.threshold, compactOn: c ? c.threshold !== undefined : undefined,
       section: typeof (e as unknown as Record<string, unknown>).section === 'string' ? String((e as unknown as Record<string, unknown>).section) : undefined,
       disabled: await read($, hidden),
@@ -1239,6 +1279,7 @@ export const register: Register = (on, options) => {
     const c = { at: await nowMs($), trigger: e.trigger, before: result.tokensBefore, after: result.tokensAfter }
     await update($, totals, t => ({ ...t, compactions: [...t.compactions, c].slice(-20), growth: [] }))
     await update($, outlook, () => null)
+    if (c.after !== undefined) await update($, snap, s => (s.cache ? { ...s, cache: { ...s.cache, compactedTo: c.after } } : s))
     await update($, turnNow, live => (live ? { ...live, compacted: { before: c.before, after: c.after } } : live))
     await toast($, compactionText(c), 8000)
     return result
@@ -1268,7 +1309,7 @@ export const register: Register = (on, options) => {
       // The hint stays whole here: a rewritten hint has the engine draw its
       // mode label in a column of its own, which would squeeze line 2 into
       // the hint's column.
-      const d = deck(payload(s, seconds, ttl), optionsAt(seconds),
+      const d = deck(payload(s, seconds, ttl, idle), optionsAt(seconds),
         { now: tailRoom(columns, e.props.hint), next: nextRoom(columns) }, extra)
       const engine = await next({ ...e, props: withText(e.props, joined(d.now), false) })
       const pulse = await pulseLine($, e, columns)
@@ -1296,7 +1337,7 @@ export const register: Register = (on, options) => {
     const room = base === undefined ? undefined : base - modesWidth(labels)
     // With a budget set, today's spend joins the line once it nears the budget.
     const trailing = config.budget && extras.today && extras.today.tone !== 'dim' && !layoutHas('today') ? [extras.today] : []
-    const text = joined(inline(payload(s, seconds, ttl), optionsAt(seconds), s.account, room, extras, trailing))
+    const text = joined(inline(payload(s, seconds, ttl, idle), optionsAt(seconds), s.account, room, extras, trailing))
     const engine = await next(text ? { ...e, props: withText(e.props, text, config.shortHints) } : e)
     const pulse = await pulseLine($, e, e.viewport?.columns)
     if (!pulse) return engine

@@ -17,6 +17,11 @@ export type Snap = {
     prefix: number
     /** TTL learned from a hit or miss after an idle gap. */
     learned?: '5m' | '1h'
+    /**
+     * Tokens the conversation was compacted to since that request: the cached
+     * prefix is gone, and the next request writes the summary whatever the time.
+     */
+    compactedTo?: number
   }
   git?: { branch?: string; dirty?: boolean } | null
   account?: string | null

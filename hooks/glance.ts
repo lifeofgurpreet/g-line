@@ -82,7 +82,8 @@ export function statusJson(s: StatusInput): string {
     const c = s.p.prompt_cache
     const expires = num(c?.expires_at)
     out.cache = c?.caching_observed
-      ? { scope: 'main_session_last_request', state: c.warm && expires !== undefined && expires > s.now ? 'estimated_warm' : 'estimated_cold',
+      ? { scope: 'main_session_last_request',
+          state: c.compacted ? 'compacted' : c.warm && expires !== undefined && expires > s.now ? 'estimated_warm' : 'estimated_cold',
           estimated_expires_at: iso(expires), lifetime: c.ttl ?? null, rebuild_tokens_if_cold: num(c.recache_tokens_if_cold) ?? null,
           basis: 'configured_ttl_and_observed_request' }
       : null
