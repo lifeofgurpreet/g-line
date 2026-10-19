@@ -147,11 +147,15 @@ in tmux, add `set -ga terminal-features "*:hyperlinks"`). `/g-line open` opens w
 headline is showing; over SSH, where there's no browser to open, it copies the link instead.
 On a turn that runs longer than 15 seconds, the spinner shows the headlines too.
 
+![Under the prompt, after a turn that closed with "API $0.17 · cache read 53%": the hint line ends with "ctx 4% · 5h 0% · wk 24%", line 2 reads "Opus high · cache ~57m · 5h resets 4h41m · wk resets 4d4h", and Pulse's row under it reads "𝕏 @deepseek_ai · 1d: 🚀 DeepSeek-V4.1-Flash-1017 is here! Stronger benchmark per… · /g-line news"](docs/pulse-row.png)
+
 **`/g-line news` is the reader.** It lists every item in the feed, best first, as the feed
 ranks them. The picked one is shown in full: who and when, likes on 𝕏 or points on Hacker
 News, the story a post is about, the whole post, and its link. The rest are one headline each.
 `j` and `k` move, `o` or Enter opens, `d` opens a Hacker News item's comments, `c` copies the
 link, `r` refreshes, `q` closes. Items posted since you last opened it are marked **new**.
+
+![/g-line news: "3–6 of 8, best first · updated 43m ago" over the key row; the picked item, "Hacker News · 4h · ▲ 163", shows its full title, "163 points and 100 comments on Hacker News.", its link and a link to the comments; the items around it show one headline and their source each, such as "James Titcomb / Telegraph via Techmeme · 18h"](docs/news.png)
 
 Headlines come from g-line's own static feed: posts on 𝕏 about AI, Claude Code releases,
 Anthropic's news pages, Hacker News stories about Claude, Simon Willison's AI posts, and a few
@@ -168,7 +172,7 @@ seconds. Headline text is stripped of escape and control characters before it re
 terminal; the only escape g-line draws is its own link, to an `https` address it has checked.
 With Pulse off (the default), g-line makes no network requests at all.
 
-![Pulse on a long turn: Churning… · 1 tool · 5h 9% │ 𝕏 @claudeai · 6d: Claude Dashboards and Claude Motion are in b…](docs/pulse.png)
+![Pulse on the spinner during a long turn: Churning… · 1 tool · 5h 9% │ 𝕏 @claudeai · 6d: Claude Dashboards and Claude Motion are in b…](docs/pulse.png)
 
 ### The pane, settings and share card
 
@@ -186,12 +190,7 @@ and where the value comes from (`default`, `config.json`, `/config`, or `your ch
 at once, in this session and in every other open one, with no restart. `z` clears the choices
 you made here, so your files and the defaults decide again.
 
-```
-Show
-l: Layout          two lines    default
-p: Pulse           on         • config.json
-x: Claude reads    on         • your choice
-```
+![/g-line settings: "A key flips a setting now, in every open session. • = not the default", then rows grouped under Show, Heads-ups and Extras, such as "l: Layout two lines default", "g: Git branch on • config.json" and "p: Pulse on • your choice"](docs/settings.png)
 
 The same from the prompt: `/g-line set pulse on`, `/g-line set receipt short`,
 `/g-line toggle git`, `/g-line reset pulse` (back to what your files say), `/g-line reset`

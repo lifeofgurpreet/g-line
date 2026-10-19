@@ -8,6 +8,8 @@
   in the right place too.
 - Variation selectors are dropped from feed text, so a symbol such as ❤ draws in its
   one-column form.
+- The README shows the settings manager, the news reader and Pulse's row under the prompt,
+  captured from a real session; screenshots draw emoji in colour, two columns wide.
 
 ## 0.6.1 (2026-10-16): the reader reads like a front page
 

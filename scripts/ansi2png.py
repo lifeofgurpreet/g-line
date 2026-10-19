@@ -23,6 +23,7 @@ MONO_BOLD = [("/System/Library/Fonts/Menlo.ttc", 1), ("/usr/share/fonts/truetype
 SYMBOLS = ["/System/Library/Fonts/Apple Symbols.ttf", "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf"]
 UNICODE = ["/System/Library/Fonts/Supplemental/Arial Unicode.ttf", "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf"]
 MATH = ["/System/Library/Fonts/Supplemental/STIXGeneral.otf", "/usr/share/fonts/opentype/stix/STIXGeneral-Regular.otf"]  # 𝕏 and other math letters
+EMOJI = [("/System/Library/Fonts/Apple Color Emoji.ttc", 160), ("/usr/share/fonts/truetype/noto/NotoColorEmoji.ttf", 109)]  # bitmap fonts: one fixed size each
 
 
 def font(paths, index=0):
@@ -32,6 +33,24 @@ def font(paths, index=0):
         if os.path.exists(path):
             return ImageFont.truetype(path, FS, index=index)
     return ImageFont.load_default()
+
+
+def emoji_face():
+    for path, size in EMOJI:
+        if os.path.exists(path):
+            return ImageFont.truetype(path, size)
+    return None
+
+
+def emoji(face, ch):
+    """`ch` drawn in colour, scaled to two columns' height, or None without an emoji font."""
+    if face is None:
+        return None
+    left, top, right, bottom = face.getbbox(ch)
+    glyph = Image.new("RGBA", (right, bottom), (0, 0, 0, 0))
+    ImageDraw.Draw(glyph).text((0, 0), ch, font=face, embedded_color=True)
+    side = int(FS * 1.15)
+    return glyph.crop((left, top, right, bottom)).resize((side, side), Image.LANCZOS)
 
 
 GLYPHS = {}
@@ -70,6 +89,7 @@ def main():
     args = parser.parse_args()
     rows = parse(sys.stdin.read().rstrip("\n").split("\n"))
     regular, bold, symbols, wide, math = font(MONO), font(MONO_BOLD), font(SYMBOLS), font(UNICODE), font(MATH)
+    colour_emoji = emoji_face()
     cw = regular.getlength("M")
     columns = args.columns or max(sum(len(t) for t, _ in runs) for runs in rows)
     width = int(columns * cw + 2 * PAD)
@@ -96,6 +116,13 @@ def main():
             face = bold if style.get("bold") else regular
             for ch in text:
                 ch = STANDINS.get(ch, ch)
+                # An emoji takes two columns, as in the terminal.
+                picture = emoji(colour_emoji, ch) if ord(ch) >= 0x1F300 else None
+                if picture:
+                    x = PAD + column * cw
+                    image.alpha_composite(picture, (int(x + (2 * cw - picture.width) / 2), int(top + (LH - picture.height) / 2)))
+                    column += 2
+                    continue
                 if ch != " ":
                     x = PAD + column * cw
                     draw.text((x, top + LH / 2), ch, font=face_for(ch, (face, symbols, wide, math)) if ord(ch) > 0x7F else face, fill=colour, anchor="lm")
