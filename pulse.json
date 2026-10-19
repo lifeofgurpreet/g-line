@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-19T08:58:21Z",
+ "generated_at": "2026-10-19T09:31:22Z",
  "items": [
   {
    "title": "Anthropic says it is committing 5% of its shares to a Public Benefit Fund, for a total of ~20% with…",
@@ -30,8 +30,8 @@
    "url": "https://artificialanalysis.ai/models/deepseek-v4-1-flash-1017",
    "source": "Hacker News",
    "published_at": "2026-10-19T04:41:46Z",
-   "text": "131 points and 43 comments on Hacker News.",
-   "points": 131,
+   "text": "137 points and 46 comments on Hacker News.",
+   "points": 137,
    "discussion": "https://news.ycombinator.com/item?id=50148452"
   },
   {
@@ -54,8 +54,8 @@
    "url": "https://arxiv.org/abs/2610.18861",
    "source": "Hacker News",
    "published_at": "2026-10-18T20:48:14Z",
-   "text": "382 points and 187 comments on Hacker News.",
-   "points": 382,
+   "text": "385 points and 187 comments on Hacker News.",
+   "points": 385,
    "discussion": "https://news.ycombinator.com/item?id=50145337"
   }
  ],
