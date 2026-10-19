@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-19T15:58:32Z",
+ "generated_at": "2026-10-19T16:30:34Z",
  "items": [
   {
    "title": "Anthropic commits 5% of its shares to the Anthropic Public Benefit Fund, for a total of ~20% with c…",
@@ -17,7 +17,7 @@
    "published_at": "2026-10-19T13:05:44Z",
    "text": "I recently wrote about why we need to treat models as insider risks, with security controls sitting outside the model itself. Today, we're putting that principle into practice by expanding Project Perception with new capabilities to help continuously assess agent risk, adapt…",
    "author_name": "Satya Nadella",
-   "likes": 807,
+   "likes": 866,
    "story": "Microsoft debuts new security tools in Microsoft 365 E7 and its Project Perception system that treat AI agents as potential insider threats via risk assessments"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-10-19T11:56:23Z",
    "text": "MiniMax M3.1 Flash: Space Performance + Bunny Speed 🚀🐰 Yes, Space Bunny - which has topped global leaderboards with 200T+ tokens - was an earlier version of M3.1 Flash. 💰Redefining the performance economics of agentic AI. M3.1 Flash achieves frontier-level intelligence ht…",
    "author_name": "MiniMax (official)",
-   "likes": 5102,
+   "likes": 5334,
    "story": "MiniMax launches M3.1 Flash, saying it delivers “a generational leap” in agentic tasks, coding, computer use, and cybersecurity, with weights due October 23"
   },
   {
@@ -50,22 +50,9 @@
    "url": "https://mistral.ai/news/timestral/",
    "source": "Hacker News",
    "published_at": "2026-10-19T09:59:32Z",
-   "text": "309 points and 50 comments on Hacker News.",
-   "points": 309,
+   "text": "329 points and 53 comments on Hacker News.",
+   "points": 329,
    "discussion": "https://news.ycombinator.com/item?id=50150434"
-  },
-  {
-   "title": "Four Gemini 4 Argon agents beat Minecraft from scratch in 27 hours. Operating in a sandbox using on…",
-   "url": "https://x.com/GoogleDeepMind/status/2111127991401247033",
-   "source": "𝕏 @GoogleDeepMind",
-   "published_at": "2026-10-16T16:11:50Z",
-   "text": "Four Gemini 4 Argon agents beat Minecraft from scratch in 27 hours. Operating in a sandbox using only code and text, they wrote 2,783 programs, divided up jobs over chat, shared notes, and debugged errors together - all with no human help ↓",
-   "author_name": "Google DeepMind",
-   "likes": 2529,
-   "story": "Google DeepMind says four Gemini 4 Argon agents beat Minecraft without any human help in 27 hours and 14 minutes, costing $1,620 at Argon's planned 2027 price",
-   "links": [
-    "https://x.com/maxencefaldor/status/2111023397106770026"
-   ]
   },
   {
    "title": "Anthropic update on independent evaluators",
@@ -75,11 +62,11 @@
    "text": "Anthropic announces updates to embedding independent evaluators"
   },
   {
-   "title": "AI chip startup Tenstorrent raised a $1.5B Series E led by Trace Capital and Innovation X at a $6.2…",
-   "url": "https://www.bloomberg.com/news/articles/2026-10-19/ai-chip-startup-tenstorrent-raises-funds-at-6-2-billion-value",
-   "source": "Bloomberg",
-   "published_at": "2026-10-19T11:46:01Z",
-   "text": "AI chip startup Tenstorrent raised a $1.5B Series E led by Trace Capital and Innovation X at a $6.2B valuation, up from $2.6B after raising $700M in 2024. AI chip startup Tenstorrent Inc., after attracting takeover interest earlier this year, has raised $1.5 billion from investors …",
+   "title": "The US DHS orders all federal civilian agencies to remove any DeepSeek tech from their IT systems a…",
+   "url": "https://www.wsj.com/tech/ai/dhs-orders-deepseek-technology-removed-from-federal-civilian-it-systems-060b6d3d?st=m6DV2n&reflink=desktopwebshare_permalink",
+   "source": "Connor Hart / Wall Street J…",
+   "published_at": "2026-10-19T14:55:41Z",
+   "text": "The US DHS orders all federal civilian agencies to remove any DeepSeek tech from their IT systems and prohibits future procurement of its products and services. The Department of Homeland Security has ordered federal civilian agencies to remove artificial-intelligence technology developed …",
    "via": "Techmeme"
   },
   {
@@ -87,8 +74,8 @@
    "url": "https://100toolkit.com/blog/deslop-model/",
    "source": "Hacker News",
    "published_at": "2026-10-19T13:00:47Z",
-   "text": "98 points and 77 comments on Hacker News.",
-   "points": 98,
+   "text": "103 points and 84 comments on Hacker News.",
+   "points": 103,
    "discussion": "https://news.ycombinator.com/item?id=50151928"
   }
  ],
