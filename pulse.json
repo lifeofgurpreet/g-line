@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-19T01:55:09Z",
+ "generated_at": "2026-10-19T02:27:48Z",
  "items": [
   {
    "title": "Anthropic says it's committing 5% of its shares to a Public Benefit Fund, for a total of ~20% with…",
@@ -17,8 +17,8 @@
    "published_at": "2026-10-17T08:35:54Z",
    "text": "🚀 DeepSeek-V4.1-Flash-1017 is here! Stronger benchmark performance, faster task completion, and shorter outputs than the previous version—a Pareto improvement in performance and cost. Now live on our website, app, and API. 🛠️ Optimized for @DeepSeekHarness, Tencent CodeBuddy, h…",
    "author_name": "DeepSeek",
-   "likes": 35705,
-   "story": "Bleecker Street says TikTok suspended the Musk documentary account for “political policy” violations and called the suspension “permanent”; Bleecker's appealing"
+   "likes": 35747,
+   "story": "Filing: Disney agreed to hire 60+ staff from Character.AI and pay them ~$180M over three years, plus $30M for retention awards; a bankruptcy judge must approve"
   },
   {
    "title": "Claude Code 2.1.303 released",
@@ -28,11 +28,11 @@
    "text": "Bug fixes and reliability improvements"
   },
   {
-   "title": "Microsoft cancels its deal to be the anchor tenant and rent 23K Nvidia AI chips at Nscale's Essex,…",
-   "url": "https://www.telegraph.co.uk/business/2026/10/18/microsoft-axes-ai-deal-setback-uk-data-centre-pioneer/",
-   "source": "James Titcomb / Telegraph",
-   "published_at": "2026-10-18T06:05:53Z",
-   "text": "Microsoft cancels its deal to be the anchor tenant and rent 23K Nvidia AI chips at Nscale's Essex, UK, data center, which may not get grid power until the 2030s. US tech giant pulls the plug on Nscale deal in threat to multibillion-dollar listing — Microsoft has pulled …",
+   "title": "Sources: industry execs expect only 7-10 of hundreds of neoclouds to survive, as Nvidia supports th…",
+   "url": "https://www.theinformation.com/articles/neocloud-shakeout-looms-nvidia-lot-lose",
+   "source": "Phoebe Liu / The Information",
+   "published_at": "2026-10-18T19:55:58Z",
+   "text": "Sources: industry execs expect only 7-10 of hundreds of neoclouds to survive, as Nvidia supports them with easier credit terms, site finding, and $20B in leases. How many young AI cloud providers can the market, and Nvidia, support? — That's one of the big questions after a week …",
    "via": "Techmeme"
   },
   {
@@ -40,8 +40,8 @@
    "url": "https://arxiv.org/abs/2610.18861",
    "source": "Hacker News",
    "published_at": "2026-10-18T20:48:14Z",
-   "text": "210 points and 132 comments on Hacker News.",
-   "points": 210,
+   "text": "225 points and 137 comments on Hacker News.",
+   "points": 225,
    "discussion": "https://news.ycombinator.com/item?id=50145337"
   },
   {
@@ -64,8 +64,8 @@
    "url": "https://api-docs.deepseek.com/guides/search/",
    "source": "Hacker News",
    "published_at": "2026-10-18T06:50:36Z",
-   "text": "550 points and 257 comments on Hacker News.",
-   "points": 550,
+   "text": "553 points and 261 comments on Hacker News.",
+   "points": 553,
    "discussion": "https://news.ycombinator.com/item?id=50138531"
   }
  ],
