@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-19T04:05:12Z",
+ "generated_at": "2026-10-19T04:38:04Z",
  "items": [
   {
    "title": "Anthropic says it's committing 5% of its shares to a Public Benefit Fund, for a total of ~20% with…",
@@ -17,7 +17,7 @@
    "published_at": "2026-10-17T08:35:54Z",
    "text": "🚀 DeepSeek-V4.1-Flash-1017 is here! Stronger benchmark performance, faster task completion, and shorter outputs than the previous version—a Pareto improvement in performance and cost. Now live on our website, app, and API. 🛠️ Optimized for @DeepSeekHarness, Tencent CodeBuddy, h…",
    "author_name": "DeepSeek",
-   "likes": 35907,
+   "likes": 35945,
    "story": "DeepSeek releases V4.1-Flash-1017, an update it says offers “stronger benchmark performance, faster task completion, and shorter outputs” than its predecessor"
   },
   {
@@ -40,8 +40,8 @@
    "url": "https://arxiv.org/abs/2610.18861",
    "source": "Hacker News",
    "published_at": "2026-10-18T20:48:14Z",
-   "text": "271 points and 154 comments on Hacker News.",
-   "points": 271,
+   "text": "281 points and 156 comments on Hacker News.",
+   "points": 281,
    "discussion": "https://news.ycombinator.com/item?id=50145337"
   },
   {
@@ -64,8 +64,8 @@
    "url": "https://jrdsgl.com/if-you-dont-run-your-own-llm-proxy-how-the-fuck-do-you-even-know-whats-going-on/",
    "source": "Hacker News",
    "published_at": "2026-10-18T21:09:12Z",
-   "text": "75 points and 54 comments on Hacker News.",
-   "points": 75,
+   "text": "79 points and 60 comments on Hacker News.",
+   "points": 79,
    "discussion": "https://news.ycombinator.com/item?id=50145507"
   }
  ],
