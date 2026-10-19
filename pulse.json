@@ -1,13 +1,13 @@
 {
  "schema": 1,
- "generated_at": "2026-10-19T07:53:50Z",
+ "generated_at": "2026-10-19T08:26:07Z",
  "items": [
   {
-   "title": "Anthropic says it's committing 5% of its shares to a Public Benefit Fund, for a total of ~20% with…",
+   "title": "Anthropic says it is committing 5% of its shares to a Public Benefit Fund, for a total of ~20% with…",
    "url": "https://www.anthropic.com/news/public-benefit-fund",
    "source": "Anthropic",
    "published_at": "2026-10-18T19:10:56Z",
-   "text": "Anthropic says it's committing 5% of its shares to a Public Benefit Fund, for a total of ~20% with co-founder and staff pledges, plus 2% per 50% valuation rise. Today, we're committing a portion of Anthropic's shares to the Anthropic Public Benefit Fund, a new entity with a structure that increases the stake as the company grows.",
+   "text": "Anthropic says it is committing 5% of its shares to a Public Benefit Fund, for a total of ~20% with co-founder and staff pledges, plus 2% per 50% valuation rise. Today, we're committing a portion of Anthropic's shares to the Anthropic Public Benefit Fund, a new entity with a structure that increases the stake as the company grows.",
    "via": "Techmeme"
   },
   {
@@ -18,11 +18,11 @@
    "text": "Bug fixes and reliability improvements"
   },
   {
-   "title": "Sources: Nscale faces investor pushback on its ~$30B IPO valuation, with some urging a lower valuat…",
-   "url": "https://www.bloomberg.com/news/articles/2026-10-18/ai-cloud-firm-nscale-faces-investor-pushback-over-ipo-valuation",
-   "source": "Bailey Lipschultz / Bloombe…",
-   "published_at": "2026-10-18T22:15:38Z",
-   "text": "Sources: Nscale faces investor pushback on its ~$30B IPO valuation, with some urging a lower valuation of $16B to $19B, as Microsoft exits a UK data center deal. Nscale Ltd. is facing opposition to the valuation target it's pursuing in its initial public offering, according to people familiar …",
+   "title": "Sources: industry execs expect only 7-10 of hundreds of neoclouds to survive, as Nvidia supports th…",
+   "url": "https://www.theinformation.com/articles/neocloud-shakeout-looms-nvidia-lot-lose",
+   "source": "Phoebe Liu / The Information",
+   "published_at": "2026-10-18T19:55:58Z",
+   "text": "Sources: industry execs expect only 7-10 of hundreds of neoclouds to survive, as Nvidia supports them with easier credit terms, site finding, and $20B in leases. How many young AI cloud providers can the market, and Nvidia, support? — That's one of the big questions after a week …",
    "via": "Techmeme"
   },
   {
@@ -30,8 +30,8 @@
    "url": "https://artificialanalysis.ai/models/deepseek-v4-1-flash-1017",
    "source": "Hacker News",
    "published_at": "2026-10-19T04:41:46Z",
-   "text": "113 points and 37 comments on Hacker News.",
-   "points": 113,
+   "text": "122 points and 40 comments on Hacker News.",
+   "points": 122,
    "discussion": "https://news.ycombinator.com/item?id=50148452"
   },
   {
@@ -54,8 +54,8 @@
    "url": "https://arxiv.org/abs/2610.18861",
    "source": "Hacker News",
    "published_at": "2026-10-18T20:48:14Z",
-   "text": "366 points and 173 comments on Hacker News.",
-   "points": 366,
+   "text": "375 points and 179 comments on Hacker News.",
+   "points": 375,
    "discussion": "https://news.ycombinator.com/item?id=50145337"
   }
  ],
