@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-19T04:38:04Z",
+ "generated_at": "2026-10-19T05:10:07Z",
  "items": [
   {
    "title": "Anthropic says it's committing 5% of its shares to a Public Benefit Fund, for a total of ~20% with…",
@@ -17,7 +17,7 @@
    "published_at": "2026-10-17T08:35:54Z",
    "text": "🚀 DeepSeek-V4.1-Flash-1017 is here! Stronger benchmark performance, faster task completion, and shorter outputs than the previous version—a Pareto improvement in performance and cost. Now live on our website, app, and API. 🛠️ Optimized for @DeepSeekHarness, Tencent CodeBuddy, h…",
    "author_name": "DeepSeek",
-   "likes": 35945,
+   "likes": 35989,
    "story": "DeepSeek releases V4.1-Flash-1017, an update it says offers “stronger benchmark performance, faster task completion, and shorter outputs” than its predecessor"
   },
   {
@@ -40,8 +40,8 @@
    "url": "https://arxiv.org/abs/2610.18861",
    "source": "Hacker News",
    "published_at": "2026-10-18T20:48:14Z",
-   "text": "281 points and 156 comments on Hacker News.",
-   "points": 281,
+   "text": "296 points and 158 comments on Hacker News.",
+   "points": 296,
    "discussion": "https://news.ycombinator.com/item?id=50145337"
   },
   {
@@ -52,11 +52,11 @@
    "text": "Anthropic announces updates to embedding independent evaluators"
   },
   {
-   "title": "Sam Altman's World launches a World ID verification suite for banks, bundling tools to verify human…",
-   "url": "https://www.theblock.co/news/ecosystems/2026-10-18-world-launches-world-id-suite-banks-418869",
-   "source": "Zack Abrams / The Block",
-   "published_at": "2026-10-19T03:10:38Z",
-   "text": "Sam Altman's World launches a World ID verification suite for banks, bundling tools to verify human and agent identities, its first industry-specific offering. The identity project co-founded by OpenAI CEO Sam Altman named Bain Capital and VanEck Funds among its design partners but did not name …",
+   "title": "Abby Care, which runs a clinically led, AI-powered platform to train and certify family caregivers,…",
+   "url": "https://fortune.com/2026/10/15/startup-abby-care-raises-82-million-to-turn-family-members-into-paid-caregivers/",
+   "source": "Allie Garfinkle / Fortune",
+   "published_at": "2026-10-19T04:40:40Z",
+   "text": "Abby Care, which runs a clinically led, AI-powered platform to train and certify family caregivers, raised an $82M Series C led by Transformation Capital. As a kid, Havi Nguyen sometimes missed school to translate at doctor's appointments, and was managing Medicaid paperwork for her family, who had recently immigrated from Vietnam.",
    "via": "Techmeme"
   },
   {
@@ -64,8 +64,8 @@
    "url": "https://jrdsgl.com/if-you-dont-run-your-own-llm-proxy-how-the-fuck-do-you-even-know-whats-going-on/",
    "source": "Hacker News",
    "published_at": "2026-10-18T21:09:12Z",
-   "text": "79 points and 60 comments on Hacker News.",
-   "points": 79,
+   "text": "88 points and 67 comments on Hacker News.",
+   "points": 88,
    "discussion": "https://news.ycombinator.com/item?id=50145507"
   }
  ],
