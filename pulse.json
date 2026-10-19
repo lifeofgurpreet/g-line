@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-19T11:38:30Z",
+ "generated_at": "2026-10-19T12:11:46Z",
  "items": [
   {
    "title": "Anthropic says it is committing 5% of its shares to a Public Benefit Fund, for a total of ~20% with…",
@@ -39,13 +39,13 @@
    "via": "Techmeme"
   },
   {
-   "title": "Hybrid Reasoning Agents: LLM agents that think in latent space, act through text",
-   "url": "https://arxiv.org/abs/2610.18861",
+   "title": "Documents: Police officer gave her Flock login to her ICE agent husband",
+   "url": "https://www.wjcl.com/article/savannah-police-officer-ice-agent-flock-access/74135816",
    "source": "Hacker News",
-   "published_at": "2026-10-18T20:48:14Z",
-   "text": "424 points and 207 comments on Hacker News.",
-   "points": 424,
-   "discussion": "https://news.ycombinator.com/item?id=50145337"
+   "published_at": "2026-10-19T10:45:14Z",
+   "text": "80 points and 33 comments on Hacker News.",
+   "points": 80,
+   "discussion": "https://news.ycombinator.com/item?id=50150750"
   },
   {
    "title": "Anthropic update on independent evaluators",
@@ -63,13 +63,13 @@
    "via": "Techmeme"
   },
   {
-   "title": "If you don't run your own LLM proxy, how do you know whats going on?",
-   "url": "https://jrdsgl.com/if-you-dont-run-your-own-llm-proxy-how-the-fuck-do-you-even-know-whats-going-on/",
+   "title": "Timestral: Mistral release time-series foundation models",
+   "url": "https://mistral.ai/news/timestral/",
    "source": "Hacker News",
-   "published_at": "2026-10-18T21:09:12Z",
-   "text": "193 points and 140 comments on Hacker News.",
-   "points": 193,
-   "discussion": "https://news.ycombinator.com/item?id=50145507"
+   "published_at": "2026-10-19T09:59:32Z",
+   "text": "74 points and 16 comments on Hacker News.",
+   "points": 74,
+   "discussion": "https://news.ycombinator.com/item?id=50150434"
   }
  ],
  "sources": "curated, Techmeme, X (found via Techmeme, Reddit, the Internet Archive), Claude Code releases, Anthropic, Hacker News, Simon Willison"
