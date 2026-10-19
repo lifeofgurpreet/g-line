@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-19T20:46:18Z",
+ "generated_at": "2026-10-19T21:18:02Z",
  "items": [
   {
    "title": "Elon Musk says “I will give one of my SpaceX shares to every kid in America” in 2027, a gift worth…",
@@ -17,7 +17,7 @@
    "published_at": "2026-10-19T18:33:18Z",
    "text": "The Department of Homeland Security is requiring all civilian federal agencies to remove DeepSeek products and 'any third-party services developed using DeepSeek implementations,' and to stop buying them.",
    "author_name": "Andrew Curran",
-   "likes": 982,
+   "likes": 1115,
    "story": "The US DHS orders all federal civilian agencies to remove DeepSeek's tech from their IT systems and prohibits future procurement of its products and services"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-10-19T11:56:23Z",
    "text": "MiniMax M3.1 Flash: Space Performance + Bunny Speed 🚀🐰 Yes, Space Bunny - which has topped global leaderboards with 200T+ tokens - was an earlier version of M3.1 Flash. 💰Redefining the performance economics of agentic AI. M3.1 Flash achieves frontier-level intelligence ht…",
    "author_name": "MiniMax (official)",
-   "likes": 6216,
+   "likes": 6268,
    "story": "MiniMax launches M3.1 Flash, saying it delivers “a generational leap” in agentic tasks, coding, computer use, and cybersecurity, with weights due October 23"
   },
   {
@@ -50,8 +50,8 @@
    "url": "https://home.cern/cern-and-mistral-join-forces-to-accelerate-ai-for-science/",
    "source": "Hacker News",
    "published_at": "2026-10-19T15:28:24Z",
-   "text": "255 points and 50 comments on Hacker News.",
-   "points": 255,
+   "text": "272 points and 53 comments on Hacker News.",
+   "points": 272,
    "discussion": "https://news.ycombinator.com/item?id=50153630"
   },
   {
@@ -61,7 +61,7 @@
    "published_at": "2026-10-19T13:05:44Z",
    "text": "I recently wrote about why we need to treat models as insider risks, with security controls sitting outside the model itself. Today, we're putting that principle into practice by expanding Project Perception with new capabilities to help continuously assess agent risk, adapt…",
    "author_name": "Satya Nadella",
-   "likes": 1168,
+   "likes": 1196,
    "story": "Microsoft debuts new security tools in Microsoft 365 E7 and its Project Perception system that treat AI agents as potential insider threats via risk assessments"
   },
   {
@@ -72,11 +72,11 @@
    "text": "Anthropic announces updates to embedding independent evaluators"
   },
   {
-   "title": "Sources: Nscale is in talks for a second deal with Anthropic worth ~$45B to deliver 460MW of comput…",
-   "url": "https://www.bloomberg.com/news/articles/2026-10-19/nscale-anthropic-in-talks-for-45-billion-cloud-computing-deal",
-   "source": "Bloomberg",
-   "published_at": "2026-10-19T19:55:44Z",
-   "text": "Sources: Nscale is in talks for a second deal with Anthropic worth ~$45B to deliver 460MW of computing power at its West Virginia campus using Vera Rubin chips. Nscale Ltd., the AI cloud computing firm, is in talks to sell computing power to Anthropic PBC in a deal that could be worth about $45 billion …",
+   "title": "Filing: US prosecutors say OpenAI suspect Abdulrahman Alfozan maintained frequent WhatsApp contact…",
+   "url": "https://www.cnbc.com/2026/10/19/openai-bugging-suspect-alfozan-saudi-royal-family.html",
+   "source": "Dan Mangan / CNBC",
+   "published_at": "2026-10-19T14:25:43Z",
+   "text": "Filing: US prosecutors say OpenAI suspect Abdulrahman Alfozan maintained frequent WhatsApp contact in 2025 and 2026 with an unnamed Saudi Royal Family member. The Saudi national charged with planting a recording device in a sensitive OpenAI executive conference room in San Francisco was …",
    "via": "Techmeme"
   },
   {
@@ -86,7 +86,7 @@
    "published_at": "2026-10-19T14:07:54Z",
    "text": "Expect this month to be a busy one for new model releases. We have the scoop on a new Anthropic model, Google’s Gemini 4 Carbon, and a potential new Terra model from OpenAI.",
    "author_name": "Stephanie Palazzolo",
-   "likes": 628,
+   "likes": 645,
    "story": "Source: Anthropic is preparing a model with better intuition and reasoning that can discern underlying intentions and is better at thinking outside of the box",
    "links": [
     "https://www.theinformation.com/newsletters/ai-agenda/anthropic-readies-model-reads-users-intentions-better"
@@ -97,8 +97,8 @@
    "url": "https://mistral.ai/news/timestral/",
    "source": "Hacker News",
    "published_at": "2026-10-19T09:59:32Z",
-   "text": "481 points and 91 comments on Hacker News.",
-   "points": 481,
+   "text": "493 points and 93 comments on Hacker News.",
+   "points": 493,
    "discussion": "https://news.ycombinator.com/item?id=50150434"
   },
   {
@@ -108,7 +108,7 @@
    "published_at": "2026-10-17T08:51:31Z",
    "text": "Vibe coded my parents' TV this afternoon! It was showing a sponsored ad before you could even get to Netflix. Gave Claude Code the model number, it found the TV on wifi, removed 25 Xiaomi packages and wrote a new launcher. Looks like an Apple TV now lol",
    "author_name": "Gathin (Ø,G)",
-   "likes": 28024,
+   "likes": 28106,
    "story": "Developers and vibe coders are using AI tools like Claude Code to get rid of sponsored ads on their smart TVs, disable tracking features, and more"
   }
  ],
