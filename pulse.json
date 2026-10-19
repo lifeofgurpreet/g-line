@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-19T17:01:41Z",
+ "generated_at": "2026-10-19T17:33:55Z",
  "items": [
   {
    "title": "A look at Anthropic's opaque, five-member Long-Term Benefit Trust, where members own no Anthropic e…",
@@ -11,14 +11,14 @@
    "via": "Techmeme"
   },
   {
-   "title": "I recently wrote about why we need to treat models as insider risks, with security controls sitting…",
-   "url": "https://x.com/satyanadella/status/2112168320946634932",
-   "source": "𝕏 @satyanadella",
-   "published_at": "2026-10-19T13:05:44Z",
-   "text": "I recently wrote about why we need to treat models as insider risks, with security controls sitting outside the model itself. Today, we're putting that principle into practice by expanding Project Perception with new capabilities to help continuously assess agent risk, adapt…",
-   "author_name": "Satya Nadella",
-   "likes": 909,
-   "story": "Microsoft debuts new security tools in Microsoft 365 E7 and its Project Perception system that treat AI agents as potential insider threats via risk assessments"
+   "title": "MiniMax M3.1 Flash: Space Performance + Bunny Speed 🚀🐰 Yes, Space Bunny - which has topped global l…",
+   "url": "https://x.com/MiniMax_AI/status/2112150867868541221",
+   "source": "𝕏 @MiniMax_AI",
+   "published_at": "2026-10-19T11:56:23Z",
+   "text": "MiniMax M3.1 Flash: Space Performance + Bunny Speed 🚀🐰 Yes, Space Bunny - which has topped global leaderboards with 200T+ tokens - was an earlier version of M3.1 Flash. 💰Redefining the performance economics of agentic AI. M3.1 Flash achieves frontier-level intelligence ht…",
+   "author_name": "MiniMax (official)",
+   "likes": 5683,
+   "story": "MiniMax launches M3.1 Flash, saying it delivers “a generational leap” in agentic tasks, coding, computer use, and cybersecurity, with weights due October 23"
   },
   {
    "title": "Claude Code 2.1.303 released",
@@ -28,14 +28,14 @@
    "text": "Bug fixes and reliability improvements"
   },
   {
-   "title": "MiniMax M3.1 Flash: Space Performance + Bunny Speed 🚀🐰 Yes, Space Bunny - which has topped global l…",
-   "url": "https://x.com/MiniMax_AI/status/2112150867868541221",
-   "source": "𝕏 @MiniMax_AI",
-   "published_at": "2026-10-19T11:56:23Z",
-   "text": "MiniMax M3.1 Flash: Space Performance + Bunny Speed 🚀🐰 Yes, Space Bunny - which has topped global leaderboards with 200T+ tokens - was an earlier version of M3.1 Flash. 💰Redefining the performance economics of agentic AI. M3.1 Flash achieves frontier-level intelligence ht…",
-   "author_name": "MiniMax (official)",
-   "likes": 5525,
-   "story": "MiniMax launches M3.1 Flash, saying it delivers “a generational leap” in agentic tasks, coding, computer use, and cybersecurity, with weights due October 23"
+   "title": "I recently wrote about why we need to treat models as insider risks, with security controls sitting…",
+   "url": "https://x.com/satyanadella/status/2112168320946634932",
+   "source": "𝕏 @satyanadella",
+   "published_at": "2026-10-19T13:05:44Z",
+   "text": "I recently wrote about why we need to treat models as insider risks, with security controls sitting outside the model itself. Today, we're putting that principle into practice by expanding Project Perception with new capabilities to help continuously assess agent risk, adapt…",
+   "author_name": "Satya Nadella",
+   "likes": 958,
+   "story": "Microsoft debuts new security tools in Microsoft 365 E7 and its Project Perception system that treat AI agents as potential insider threats via risk assessments"
   },
   {
    "title": "Researcher: a Chinese-speaking hacker used AI agents to target 1,200+ websites and breach 100+ enti…",
@@ -50,8 +50,8 @@
    "url": "https://home.cern/cern-and-mistral-join-forces-to-accelerate-ai-for-science/",
    "source": "Hacker News",
    "published_at": "2026-10-19T15:28:24Z",
-   "text": "81 points and 6 comments on Hacker News.",
-   "points": 81,
+   "text": "126 points and 18 comments on Hacker News.",
+   "points": 126,
    "discussion": "https://news.ycombinator.com/item?id=50153630"
   },
   {
@@ -74,8 +74,8 @@
    "url": "https://mistral.ai/news/timestral/",
    "source": "Hacker News",
    "published_at": "2026-10-19T09:59:32Z",
-   "text": "362 points and 62 comments on Hacker News.",
-   "points": 362,
+   "text": "379 points and 69 comments on Hacker News.",
+   "points": 379,
    "discussion": "https://news.ycombinator.com/item?id=50150434"
   }
  ],
