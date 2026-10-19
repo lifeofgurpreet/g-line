@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-19T06:47:47Z",
+ "generated_at": "2026-10-19T07:20:22Z",
  "items": [
   {
    "title": "Anthropic says it's committing 5% of its shares to a Public Benefit Fund, for a total of ~20% with…",
@@ -17,7 +17,7 @@
    "published_at": "2026-10-17T08:35:54Z",
    "text": "🚀 DeepSeek-V4.1-Flash-1017 is here! Stronger benchmark performance, faster task completion, and shorter outputs than the previous version—a Pareto improvement in performance and cost. Now live on our website, app, and API. 🛠️ Optimized for @DeepSeekHarness, Tencent CodeBuddy, h…",
    "author_name": "DeepSeek",
-   "likes": 36133,
+   "likes": 36176,
    "story": "DeepSeek releases V4.1-Flash-1017, an update it says offers “stronger benchmark performance, faster task completion, and shorter outputs” than its predecessor"
   },
   {
@@ -28,11 +28,11 @@
    "text": "Bug fixes and reliability improvements"
   },
   {
-   "title": "Sources: industry execs expect only 7-10 of hundreds of neoclouds to survive, as Nvidia supports th…",
-   "url": "https://www.theinformation.com/articles/neocloud-shakeout-looms-nvidia-lot-lose",
-   "source": "Phoebe Liu / The Information",
-   "published_at": "2026-10-18T19:55:58Z",
-   "text": "Sources: industry execs expect only 7-10 of hundreds of neoclouds to survive, as Nvidia supports them with easier credit terms, site finding, and $20B in leases. How many young AI cloud providers can the market, and Nvidia, support? — That's one of the big questions after a week …",
+   "title": "Sources: Nscale faces investor pushback on its ~$30B IPO valuation, with some urging a lower valuat…",
+   "url": "https://www.bloomberg.com/news/articles/2026-10-18/ai-cloud-firm-nscale-faces-investor-pushback-over-ipo-valuation",
+   "source": "Bailey Lipschultz / Bloombe…",
+   "published_at": "2026-10-18T22:15:38Z",
+   "text": "Sources: Nscale faces investor pushback on its ~$30B IPO valuation, with some urging a lower valuation of $16B to $19B, as Microsoft exits a UK data center deal. Nscale Ltd. is facing opposition to the valuation target it's pursuing in its initial public offering, according to people familiar …",
    "via": "Techmeme"
   },
   {
@@ -40,8 +40,8 @@
    "url": "https://arxiv.org/abs/2610.18861",
    "source": "Hacker News",
    "published_at": "2026-10-18T20:48:14Z",
-   "text": "339 points and 163 comments on Hacker News.",
-   "points": 339,
+   "text": "348 points and 166 comments on Hacker News.",
+   "points": 348,
    "discussion": "https://news.ycombinator.com/item?id=50145337"
   },
   {
@@ -64,8 +64,8 @@
    "url": "https://jrdsgl.com/if-you-dont-run-your-own-llm-proxy-how-the-fuck-do-you-even-know-whats-going-on/",
    "source": "Hacker News",
    "published_at": "2026-10-18T21:09:12Z",
-   "text": "110 points and 77 comments on Hacker News.",
-   "points": 110,
+   "text": "118 points and 81 comments on Hacker News.",
+   "points": 118,
    "discussion": "https://news.ycombinator.com/item?id=50145507"
   }
  ],
