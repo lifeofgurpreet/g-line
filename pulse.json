@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-19T21:18:02Z",
+ "generated_at": "2026-10-19T21:50:19Z",
  "items": [
   {
    "title": "Elon Musk says “I will give one of my SpaceX shares to every kid in America” in 2027, a gift worth…",
@@ -17,25 +17,62 @@
    "published_at": "2026-10-19T18:33:18Z",
    "text": "The Department of Homeland Security is requiring all civilian federal agencies to remove DeepSeek products and 'any third-party services developed using DeepSeek implementations,' and to stop buying them.",
    "author_name": "Andrew Curran",
-   "likes": 1115,
+   "likes": 1212,
    "story": "The US DHS orders all federal civilian agencies to remove DeepSeek's tech from their IT systems and prohibits future procurement of its products and services"
   },
   {
-   "title": "Claude Code 2.1.303 released",
-   "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.303",
+   "title": "Claude Code 2.1.304 released",
+   "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.304",
    "source": "Claude Code releases",
-   "published_at": "2026-10-18T22:26:54Z",
-   "text": "Bug fixes and reliability improvements"
+   "published_at": "2026-10-19T21:34:39Z",
+   "text": "Added a transcript line when a plugin that runs first skips one of your mod's hooks, naming the event and the plugin · Added decider: \"person\" to a mod's tool.check answer: only the permission dialog or a host's callback can approve the ask, and it is refused with the mod's reason where nobody can be asked · Added e.isReadOnly to a mod's tool.check event, set when the tool call is read-only · Added /auto-mode-setup: a guided setup that reads your project and recent sessions to teach auto mode about your environment, now also available on Bedrock, Vertex, Foundry, Claude apps gateway and t…"
   },
   {
-   "title": "MiniMax M3.1 Flash: Space Performance + Bunny Speed 🚀🐰 Yes, Space Bunny - which has topped global l…",
-   "url": "https://x.com/MiniMax_AI/status/2112150867868541221",
-   "source": "𝕏 @MiniMax_AI",
-   "published_at": "2026-10-19T11:56:23Z",
-   "text": "MiniMax M3.1 Flash: Space Performance + Bunny Speed 🚀🐰 Yes, Space Bunny - which has topped global leaderboards with 200T+ tokens - was an earlier version of M3.1 Flash. 💰Redefining the performance economics of agentic AI. M3.1 Flash achieves frontier-level intelligence ht…",
-   "author_name": "MiniMax (official)",
-   "likes": 6268,
-   "story": "MiniMax launches M3.1 Flash, saying it delivers “a generational leap” in agentic tasks, coding, computer use, and cybersecurity, with weights due October 23"
+   "title": "I recently wrote about why we need to treat models as insider risks, with security controls sitting…",
+   "url": "https://x.com/satyanadella/status/2112168320946634932",
+   "source": "𝕏 @satyanadella",
+   "published_at": "2026-10-19T13:05:44Z",
+   "text": "I recently wrote about why we need to treat models as insider risks, with security controls sitting outside the model itself. Today, we're putting that principle into practice by expanding Project Perception with new capabilities to help continuously assess agent risk, adapt…",
+   "author_name": "Satya Nadella",
+   "likes": 1227,
+   "story": "Microsoft debuts new security tools in Microsoft 365 E7 and its Project Perception system that treat AI agents as potential insider threats via risk assessments"
+  },
+  {
+   "title": "MiniMax launches M3.1 Flash, saying it delivers “a generational leap” in agentic tasks, coding, com…",
+   "url": "https://www.minimax.io/blog/minimax-m31f",
+   "source": "MiniMax",
+   "published_at": "2026-10-19T15:30:46Z",
+   "text": "MiniMax launches M3.1 Flash, saying it delivers “a generational leap” in agentic tasks, coding, computer use, and cybersecurity, with weights due October 23. Space Bunny 🐰, which processed more than 200 trillion tokens while operating anonymously, was an early version of MiniMax M3.1 Flash.",
+   "via": "Techmeme"
+  },
+  {
+   "title": "CERN and Mistral sign a statement of intent to establish a strategic partnership",
+   "url": "https://home.cern/cern-and-mistral-join-forces-to-accelerate-ai-for-science/",
+   "source": "Hacker News",
+   "published_at": "2026-10-19T15:28:24Z",
+   "text": "281 points and 53 comments on Hacker News.",
+   "points": 281,
+   "discussion": "https://news.ycombinator.com/item?id=50153630"
+  },
+  {
+   "title": "Expect this month to be a busy one for new model releases. We have the scoop on a new Anthropic mod…",
+   "url": "https://x.com/steph_palazzolo/status/2112183963452059734",
+   "source": "𝕏 @steph_palazzolo",
+   "published_at": "2026-10-19T14:07:54Z",
+   "text": "Expect this month to be a busy one for new model releases. We have the scoop on a new Anthropic model, Google’s Gemini 4 Carbon, and a potential new Terra model from OpenAI.",
+   "author_name": "Stephanie Palazzolo",
+   "likes": 659,
+   "story": "Source: Anthropic is preparing a model with better intuition and reasoning that can discern underlying intentions and is better at thinking outside of the box",
+   "links": [
+    "https://www.theinformation.com/newsletters/ai-agenda/anthropic-readies-model-reads-users-intentions-better"
+   ]
+  },
+  {
+   "title": "Anthropic update on independent evaluators",
+   "url": "https://www.anthropic.com/news/an-update-on-independent-evaluators",
+   "source": "Anthropic",
+   "published_at": "2026-10-19T13:19:29Z",
+   "text": "Anthropic announces updates to embedding independent evaluators"
   },
   {
    "title": "Researcher: a Chinese-speaking hacker used AI agents to target 1,200+ websites and breach 100+ enti…",
@@ -46,70 +83,23 @@
    "via": "Techmeme"
   },
   {
-   "title": "CERN and Mistral sign a statement of intent to establish a strategic partnership",
-   "url": "https://home.cern/cern-and-mistral-join-forces-to-accelerate-ai-for-science/",
-   "source": "Hacker News",
-   "published_at": "2026-10-19T15:28:24Z",
-   "text": "272 points and 53 comments on Hacker News.",
-   "points": 272,
-   "discussion": "https://news.ycombinator.com/item?id=50153630"
-  },
-  {
-   "title": "I recently wrote about why we need to treat models as insider risks, with security controls sitting…",
-   "url": "https://x.com/satyanadella/status/2112168320946634932",
-   "source": "𝕏 @satyanadella",
-   "published_at": "2026-10-19T13:05:44Z",
-   "text": "I recently wrote about why we need to treat models as insider risks, with security controls sitting outside the model itself. Today, we're putting that principle into practice by expanding Project Perception with new capabilities to help continuously assess agent risk, adapt…",
-   "author_name": "Satya Nadella",
-   "likes": 1196,
-   "story": "Microsoft debuts new security tools in Microsoft 365 E7 and its Project Perception system that treat AI agents as potential insider threats via risk assessments"
-  },
-  {
-   "title": "Anthropic update on independent evaluators",
-   "url": "https://www.anthropic.com/news/an-update-on-independent-evaluators",
-   "source": "Anthropic",
-   "published_at": "2026-10-19T13:19:29Z",
-   "text": "Anthropic announces updates to embedding independent evaluators"
-  },
-  {
-   "title": "Filing: US prosecutors say OpenAI suspect Abdulrahman Alfozan maintained frequent WhatsApp contact…",
-   "url": "https://www.cnbc.com/2026/10/19/openai-bugging-suspect-alfozan-saudi-royal-family.html",
-   "source": "Dan Mangan / CNBC",
-   "published_at": "2026-10-19T14:25:43Z",
-   "text": "Filing: US prosecutors say OpenAI suspect Abdulrahman Alfozan maintained frequent WhatsApp contact in 2025 and 2026 with an unnamed Saudi Royal Family member. The Saudi national charged with planting a recording device in a sensitive OpenAI executive conference room in San Francisco was …",
-   "via": "Techmeme"
-  },
-  {
-   "title": "Expect this month to be a busy one for new model releases. We have the scoop on a new Anthropic mod…",
-   "url": "https://x.com/steph_palazzolo/status/2112183963452059734",
-   "source": "𝕏 @steph_palazzolo",
-   "published_at": "2026-10-19T14:07:54Z",
-   "text": "Expect this month to be a busy one for new model releases. We have the scoop on a new Anthropic model, Google’s Gemini 4 Carbon, and a potential new Terra model from OpenAI.",
-   "author_name": "Stephanie Palazzolo",
-   "likes": 645,
-   "story": "Source: Anthropic is preparing a model with better intuition and reasoning that can discern underlying intentions and is better at thinking outside of the box",
-   "links": [
-    "https://www.theinformation.com/newsletters/ai-agenda/anthropic-readies-model-reads-users-intentions-better"
-   ]
-  },
-  {
-   "title": "Timestral: Mistral's time-series foundation models",
-   "url": "https://mistral.ai/news/timestral/",
-   "source": "Hacker News",
-   "published_at": "2026-10-19T09:59:32Z",
-   "text": "493 points and 93 comments on Hacker News.",
-   "points": 493,
-   "discussion": "https://news.ycombinator.com/item?id=50150434"
-  },
-  {
    "title": "Vibe coded my parents' TV this afternoon! It was showing a sponsored ad before you could even get t…",
    "url": "https://x.com/gathint/status/2111379569030939102",
    "source": "𝕏 @gathint",
    "published_at": "2026-10-17T08:51:31Z",
    "text": "Vibe coded my parents' TV this afternoon! It was showing a sponsored ad before you could even get to Netflix. Gave Claude Code the model number, it found the TV on wifi, removed 25 Xiaomi packages and wrote a new launcher. Looks like an Apple TV now lol",
    "author_name": "Gathin (Ø,G)",
-   "likes": 28106,
+   "likes": 28204,
    "story": "Developers and vibe coders are using AI tools like Claude Code to get rid of sponsored ads on their smart TVs, disable tracking features, and more"
+  },
+  {
+   "title": "Timestral: Mistral's time-series foundation models",
+   "url": "https://mistral.ai/news/timestral/",
+   "source": "Hacker News",
+   "published_at": "2026-10-19T09:59:32Z",
+   "text": "504 points and 95 comments on Hacker News.",
+   "points": 504,
+   "discussion": "https://news.ycombinator.com/item?id=50150434"
   }
  ],
  "sources": "curated, Techmeme, X (found via Techmeme, Reddit, the Internet Archive), Claude Code releases, Anthropic, Hacker News, Simon Willison"
