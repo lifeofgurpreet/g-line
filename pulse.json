@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-20T09:45:42Z",
+ "generated_at": "2026-10-20T10:17:23Z",
  "items": [
   {
    "title": "Inception debuts Mercury 3, a diffusion LLM that it says tops GPT-6 Luna, Claude Haiku 5.5, and GLM…",
@@ -11,14 +11,14 @@
    "via": "Techmeme"
   },
   {
-   "title": "I recently wrote about why we need to treat models as insider risks, with security controls sitting…",
-   "url": "https://x.com/satyanadella/status/2112168320946634932",
-   "source": "𝕏 @satyanadella",
-   "published_at": "2026-10-19T13:05:44Z",
-   "text": "I recently wrote about why we need to treat models as insider risks, with security controls sitting outside the model itself. Today, we're putting that principle into practice by expanding Project Perception with new capabilities to help continuously assess agent risk, adapt…",
-   "author_name": "Satya Nadella",
-   "likes": 1622,
-   "story": "Microsoft debuts new security tools in Microsoft 365 E7 and its Project Perception system that treat AI agents as potential insider threats via risk assessments"
+   "title": "Our latest model advances bring stronger capabilities for building and migrating software in low-re…",
+   "url": "https://x.com/OpenAI/status/2112310345863930168",
+   "source": "𝕏 @OpenAI",
+   "published_at": "2026-10-19T22:30:05Z",
+   "text": "Our latest model advances bring stronger capabilities for building and migrating software in low-resource programming languages such as COBOL, Fortran, and Visual Basic. These languages power software that banks, governments, and businesses depend on. Progress here means…",
+   "author_name": "OpenAI",
+   "likes": 6694,
+   "story": "OpenAI says its new models show major performance leaps in low-resource legacy languages like COBOL, Fortran, and Visual Basic, used by banks and governments"
   },
   {
    "title": "Claude Code 2.1.304 released",
@@ -28,31 +28,31 @@
    "text": "Added a transcript line when a plugin that runs first skips one of your mod's hooks, naming the event and the plugin · Added decider: \"person\" to a mod's tool.check answer: only the permission dialog or a host's callback can approve the ask, and it is refused with the mod's reason where nobody can be asked · Added e.isReadOnly to a mod's tool.check event, set when the tool call is read-only · Added /auto-mode-setup: a guided setup that reads your project and recent sessions to teach auto mode about your environment, now also available on Bedrock, Vertex, Foundry, Claude apps gateway and t…"
   },
   {
-   "title": "The Department of Homeland Security is requiring all civilian federal agencies to remove DeepSeek p…",
-   "url": "https://x.com/AndrewCurran_/status/2112250754358788437",
-   "source": "𝕏 @AndrewCurran_",
-   "published_at": "2026-10-19T18:33:18Z",
-   "text": "The Department of Homeland Security is requiring all civilian federal agencies to remove DeepSeek products and 'any third-party services developed using DeepSeek implementations,' and to stop buying them.",
-   "author_name": "Andrew Curran",
-   "likes": 2089,
-   "story": "The US DHS orders all federal civilian agencies to remove DeepSeek's tech from their IT systems and prohibits future procurement of its products and services"
+   "title": "I recently wrote about why we need to treat models as insider risks, with security controls sitting…",
+   "url": "https://x.com/satyanadella/status/2112168320946634932",
+   "source": "𝕏 @satyanadella",
+   "published_at": "2026-10-19T13:05:44Z",
+   "text": "I recently wrote about why we need to treat models as insider risks, with security controls sitting outside the model itself. Today, we're putting that principle into practice by expanding Project Perception with new capabilities to help continuously assess agent risk, adapt…",
+   "author_name": "Satya Nadella",
+   "likes": 1633,
+   "story": "Microsoft debuts new security tools in Microsoft 365 E7 and its Project Perception system that treat AI agents as potential insider threats via risk assessments"
   },
   {
-   "title": "Cloudflare debuts Clairic, a System One-class extraction model it says processes unstructured data…",
-   "url": "https://blog.cloudflare.com/clairic-extraction-model/",
-   "source": "Cloudflare",
-   "published_at": "2026-10-19T22:36:07Z",
-   "text": "Cloudflare debuts Clairic, a System One-class extraction model it says processes unstructured data faster, more cheaply, and more accurately than normal LLMs. Today, we're announcing a preview of a new class of System One-style models: extraction models.",
+   "title": "The US DHS orders all federal civilian agencies to remove DeepSeek's tech from their IT systems and…",
+   "url": "https://www.wsj.com/tech/ai/dhs-orders-deepseek-technology-removed-from-federal-civilian-it-systems-060b6d3d?st=m6DV2n&reflink=desktopwebshare_permalink",
+   "source": "Connor Hart / Wall Street J…",
+   "published_at": "2026-10-19T14:55:41Z",
+   "text": "The US DHS orders all federal civilian agencies to remove DeepSeek's tech from their IT systems and prohibits future procurement of its products and services. The Department of Homeland Security has ordered federal civilian agencies to remove artificial-intelligence technology developed …",
    "via": "Techmeme"
   },
   {
-   "title": "WhatsApp's help pages hid LLM instructions: dont recommend a regulator",
-   "url": "https://redact.dev/blog/whatsapp-help-pages-hidden-ai-instructions",
+   "title": "DeepSeek just open-sourced its inference engine",
+   "url": "https://github.com/deepseek-ai/DeepInfer",
    "source": "Hacker News",
-   "published_at": "2026-10-19T23:22:18Z",
-   "text": "430 points and 119 comments on Hacker News.",
-   "points": 430,
-   "discussion": "https://news.ycombinator.com/item?id=50159341"
+   "published_at": "2026-10-20T09:08:54Z",
+   "text": "73 points and 13 comments on Hacker News.",
+   "points": 73,
+   "discussion": "https://news.ycombinator.com/item?id=50163277"
   },
   {
    "title": "MiniMax M3.1 Flash: Space Performance + Bunny Speed 🚀🐰 Yes, Space Bunny - which has topped global l…",
@@ -61,7 +61,7 @@
    "published_at": "2026-10-19T11:56:23Z",
    "text": "MiniMax M3.1 Flash: Space Performance + Bunny Speed 🚀🐰 Yes, Space Bunny - which has topped global leaderboards with 200T+ tokens - was an earlier version of M3.1 Flash. 💰Redefining the performance economics of agentic AI. M3.1 Flash achieves frontier-level intelligence ht…",
    "author_name": "MiniMax (official)",
-   "likes": 7009,
+   "likes": 7034,
    "story": "MiniMax launches M3.1 Flash, saying it delivers “a generational leap” in agentic tasks, coding, computer use, and cybersecurity, with weights due October 23"
   },
   {
@@ -72,31 +72,44 @@
    "text": "Anthropic announces updates to embedding independent evaluators"
   },
   {
-   "title": "Leaked documents detail ECHOTRIBBLE, a nascent US Army Cyber Command program for agentic AI to auto…",
-   "url": "https://theintercept.com/2026/10/19/army-autonomous-ai-agents-arcyber/",
-   "source": "Sam Biddle / The Intercept",
-   "published_at": "2026-10-20T06:15:48Z",
-   "text": "Leaked documents detail ECHOTRIBBLE, a nascent US Army Cyber Command program for agentic AI to autonomously spread across networks to find and eliminate targets. Documents obtained by The Intercept show the military is trying to deploy autonomous AI agents to hack its adversaries.",
+   "title": "Cloudflare debuts Clairic, a System One-class extraction model it says processes unstructured data…",
+   "url": "https://blog.cloudflare.com/clairic-extraction-model/",
+   "source": "Cloudflare",
+   "published_at": "2026-10-19T22:36:07Z",
+   "text": "Cloudflare debuts Clairic, a System One-class extraction model it says processes unstructured data faster, more cheaply, and more accurately than normal LLMs. Today, we're announcing a preview of a new class of System One-style models: extraction models.",
    "via": "Techmeme"
   },
   {
-   "title": "WARNING: if you hack your parents' TV with claude code, DO NOT explain the process. they own a lot…",
-   "url": "https://x.com/mchlhess/status/2111873918432952691",
-   "source": "𝕏 @mchlhess",
-   "published_at": "2026-10-18T17:35:53Z",
-   "text": "WARNING: if you hack your parents' TV with claude code, DO NOT explain the process. they own a lot of things with model numbers. you will regret it.",
-   "author_name": "michael",
-   "likes": 8541,
-   "story": "Developers and vibe coders are using AI tools like Claude Code to get rid of sponsored ads on their smart TVs, disable tracking features, and more"
+   "title": "This was news to me. Eric Schmidt was in the Series A, and personally owns 1% of Anthropic.",
+   "url": "https://x.com/AndrewCurran_/status/2112317743756423170",
+   "source": "𝕏 @AndrewCurran_",
+   "published_at": "2026-10-19T22:59:29Z",
+   "text": "This was news to me. Eric Schmidt was in the Series A, and personally owns 1% of Anthropic.",
+   "author_name": "Andrew Curran",
+   "likes": 938,
+   "story": "Sources: Eric Schmidt, who owns ~1% of Anthropic after investing tens of millions in its Series A, is poised to have one of the largest windfalls from its IPO"
   },
   {
-   "title": "Ask HN: How to deal with shipping AI-written code you don't understand?",
-   "url": "https://news.ycombinator.com/item?id=50151036",
+   "title": "WhatsApp's help pages hid LLM instructions: dont recommend a regulator",
+   "url": "https://redact.dev/blog/whatsapp-help-pages-hidden-ai-instructions",
    "source": "Hacker News",
-   "published_at": "2026-10-19T11:24:34Z",
-   "text": "447 points and 594 comments on Hacker News.",
-   "points": 447,
-   "discussion": "https://news.ycombinator.com/item?id=50151036"
+   "published_at": "2026-10-19T23:22:18Z",
+   "text": "442 points and 129 comments on Hacker News.",
+   "points": 442,
+   "discussion": "https://news.ycombinator.com/item?id=50159341"
+  },
+  {
+   "title": "introducing dumbtv - no spying - no ads from tv - fully customisable to setup just point your agent…",
+   "url": "https://x.com/DevMuzzammil/status/2111912547318395338",
+   "source": "𝕏 @DevMuzzammil",
+   "published_at": "2026-10-18T20:09:23Z",
+   "text": "introducing dumbtv - no spying - no ads from tv - fully customisable to setup just point your agent to this repo -",
+   "author_name": "Muzzammil",
+   "likes": 5856,
+   "story": "Developers and vibe coders are using AI tools like Claude Code to get rid of sponsored ads on their smart TVs, disable tracking features, and more",
+   "links": [
+    "https://github.com/humblemuzzu/dumbtv"
+   ]
   },
   {
    "title": "Expect this month to be a busy one for new model releases. We have the scoop on a new Anthropic mod…",
@@ -105,7 +118,7 @@
    "published_at": "2026-10-19T14:07:54Z",
    "text": "Expect this month to be a busy one for new model releases. We have the scoop on a new Anthropic model, Google’s Gemini 4 Carbon, and a potential new Terra model from OpenAI.",
    "author_name": "Stephanie Palazzolo",
-   "likes": 757,
+   "likes": 758,
    "story": "Source: Anthropic is preparing a model with better intuition and reasoning that can discern underlying intentions and is better at thinking outside of the box",
    "links": [
     "https://www.theinformation.com/newsletters/ai-agenda/anthropic-readies-model-reads-users-intentions-better"
