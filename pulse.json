@@ -1,13 +1,13 @@
 {
  "schema": 1,
- "generated_at": "2026-10-20T22:08:52Z",
+ "generated_at": "2026-10-20T22:41:15Z",
  "items": [
   {
-   "title": "Anthropic's IPO prospectus: H1 2026 revenue of $16.3B, ~20% from two customers, vs. $1.1B in H1 202…",
-   "url": "https://www.wsj.com/tech/ai/anthropic-revenue-growth-ipo-accaf0f1?st=YKUo1r",
-   "source": "Anissa Gardizy / Wall Stree…",
-   "published_at": "2026-10-20T19:47:39Z",
-   "text": "Anthropic's IPO prospectus: H1 2026 revenue of $16.3B, ~20% from two customers, vs. $1.1B in H1 2025, and an $80.7B net loss driven by accounting charges. In a new draft prospectus viewed by the Journal, the AI giant disclosed an $80.7 billion net loss for the first half of 2026 and a long list of risk factors",
+   "title": "SpaceX reports Q3 revenue up 161% YoY to $14.58B, vs. $12.72B est., AI revenue up 830% to $7.56B, a…",
+   "url": "https://www.cnbc.com/2026/10/20/spacex-spcx-earnings-live-updates-q3-2026html.html",
+   "source": "Lora Kolodny / CNBC",
+   "published_at": "2026-10-20T20:27:46Z",
+   "text": "SpaceX reports Q3 revenue up 161% YoY to $14.58B, vs. $12.72B est., AI revenue up 830% to $7.56B, and AI operating income of $431M, up from a loss of $1.7B. SpaceX reported 161% revenue growth for the third quarter, driven by the company's artificial intelligence business and Starlink Subscriber growth.",
    "via": "Techmeme"
   },
   {
@@ -17,7 +17,7 @@
    "published_at": "2026-10-20T09:30:19Z",
    "text": "🚀 Introducing DeepInfer, our in-house inference framework, now fully open source! Powering DeepSeek-V4.1-Flash at scale with high throughput and low latency. We’re sharing our production stack to help the community lower compute costs, reduce energy use, and make AI more…",
    "author_name": "DeepSeek",
-   "likes": 31076,
+   "likes": 31378,
    "story": "DeepSeek open-sources DeepInfer, its high-performance inference framework that powers its production services, starting with support for DeepSeek-V4.1-Flash"
   },
   {
@@ -28,31 +28,31 @@
    "text": "Added sandbox.allowNestedUserNamespaces so sandboxed commands on Linux can create user namespaces (Chromium, rootless podman); this lets them get around the sandbox's file protections · Added CLAUDE_CODE_RETRY_WATCHDOG_USAGE_LIMIT_RECHECK_MS so unattended retry mode (CLAUDE_CODE_RETRY_WATCHDOG) notices a usage limit that was lifted before its reset · Fixed every request failing on Vertex, Bedrock and other providers when the endpoint or a gateway rejects tool search, and behind gateways with ToolSearch disallowed or left out of --tools (a 2.1.304… · Fixed /effort and /autocompact settings not…"
   },
   {
-   "title": "Excited to welcome Orchestra Bio and @ashokaraj_ to OpenAI as we broaden our work in AI-assisted dr…",
-   "url": "https://x.com/markchen90/status/2112628202594349139",
-   "source": "𝕏 @markchen90",
-   "published_at": "2026-10-20T19:33:08Z",
-   "text": "Excited to welcome Orchestra Bio and @ashokaraj_ to OpenAI as we broaden our work in AI-assisted drug discovery!",
-   "author_name": "Mark Chen",
-   "likes": 148,
+   "title": "The WSJ has seen Anthropic's new draft prospectus. Some numbers: They plan to spend three-quarters…",
+   "url": "https://x.com/AndrewCurran_/status/2112641878147649911",
+   "source": "𝕏 @AndrewCurran_",
+   "published_at": "2026-10-20T20:27:29Z",
+   "text": "The WSJ has seen Anthropic's new draft prospectus. Some numbers: They plan to spend three-quarters of a trillion dollars on compute over the next seven to ten years. - $111 billion on Google cloud computing contracts - $110 billion with Amazon Web Services - $31 billion on…",
+   "author_name": "Andrew Curran",
+   "likes": 461,
+   "story": "Anthropic's IPO prospectus: H1 2026 revenue of $16.3B, ~20% from two customers, vs. $1.1B in H1 2025, and an $80.7B net loss driven by accounting charges"
+  },
+  {
+   "title": "We’ve acquired Orchestra Bio, a platform that helps biopharma teams coordinate the complex process…",
+   "url": "https://x.com/OpenAI/status/2112607347688583586",
+   "source": "𝕏 @OpenAI",
+   "published_at": "2026-10-20T18:10:16Z",
+   "text": "We’ve acquired Orchestra Bio, a platform that helps biopharma teams coordinate the complex process of drug development. Together, we’ll build on Rosalind, our AI models and tools for life sciences research, to streamline those operations and help new treatments reach patients…",
+   "author_name": "OpenAI",
+   "likes": 4718,
    "story": "OpenAI acquires Orchestra Bio, which builds AI agents for managing drug development, and plans to integrate its tech into OpenAI life sciences suite Rosalind"
   },
   {
-   "title": "Our latest model advances bring stronger capabilities for building and migrating software in low-re…",
-   "url": "https://x.com/OpenAI/status/2112310345863930168",
-   "source": "𝕏 @OpenAI",
-   "published_at": "2026-10-19T22:30:05Z",
-   "text": "Our latest model advances bring stronger capabilities for building and migrating software in low-resource programming languages such as COBOL, Fortran, and Visual Basic. These languages power software that banks, governments, and businesses depend on. Progress here means…",
-   "author_name": "OpenAI",
-   "likes": 8836,
-   "story": "OpenAI says its new models are better for building and migrating software in low-resource legacy programming languages like COBOL, Fortran, and Visual Basic"
-  },
-  {
-   "title": "SpaceX reports Q3 revenue up 161% YoY to $14.58B, vs. $12.72B est., AI revenue up 830% to $7.56B, a…",
-   "url": "https://www.cnbc.com/2026/10/20/spacex-spcx-earnings-live-updates-q3-2026html.html",
-   "source": "Lora Kolodny / CNBC",
-   "published_at": "2026-10-20T20:27:46Z",
-   "text": "SpaceX reports Q3 revenue up 161% YoY to $14.58B, vs. $12.72B est., AI revenue up 830% to $7.56B, and AI operating income of $431M, up from a loss of $1.7B. SpaceX reported 161% revenue growth for the third quarter, driven by the company's artificial intelligence business and Starlink Subscriber growth.",
+   "title": "Salesforce agrees to acquire AI-powered marketing platform Braze for nearly $5.7B in enterprise val…",
+   "url": "https://www.bloomberg.com/news/articles/2026-10-20/salesforce-to-buy-marketing-platform-braze-for-5-7-billion?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc5MjUwNjE4OSwiZXhwIjoxNzkzMTEwOTg5LCJhcnRpY2xlSWQiOiJUTjdHM0RLSkg2VkIwMCIsImJjb25uZWN0SWQiOiJEQ0FGMjNFM0YyMkE0Qzk5OTM0RUMyRDEwNkM0ODc0NyJ9.j7szHCh8COelVxZqXM050UbwA-o_4jWnuWe3bNry9dY",
+   "source": "Bloomberg",
+   "published_at": "2026-10-20T12:35:47Z",
+   "text": "Salesforce agrees to acquire AI-powered marketing platform Braze for nearly $5.7B in enterprise value, paying $47.50 per share, set to close from February 2027. Salesforce Inc. plugged a gap in its marketing platform with an agreement to buy Braze Inc. for an enterprise value of about $5.7 billion …",
    "via": "Techmeme"
   },
   {
@@ -60,19 +60,9 @@
    "url": "https://www.bolkunov.com/p/on-ai-writing",
    "source": "Hacker News",
    "published_at": "2026-10-20T19:55:11Z",
-   "text": "63 points and 22 comments on Hacker News.",
-   "points": 63,
+   "text": "69 points and 30 comments on Hacker News.",
+   "points": 69,
    "discussion": "https://news.ycombinator.com/item?id=50171771"
-  },
-  {
-   "title": "We found DeepSeek V4.1 Flash 1017 beats GPT 6 Sol on our multi-step offensive cybersecurity task. S…",
-   "url": "https://x.com/ValsAI/status/2112471082397778083",
-   "source": "𝕏 @ValsAI",
-   "published_at": "2026-10-20T09:08:48Z",
-   "text": "We found DeepSeek V4.1 Flash 1017 beats GPT 6 Sol on our multi-step offensive cybersecurity task. Sol was tested via the Daybreak trusted access program. We have been building a cybersecurity benchmark based on simulated corporate networks. This is a valuable indicator for the…",
-   "author_name": "Vals AI",
-   "likes": 1679,
-   "story": "Vals AI found DeepSeek V4.1 Flash 1017 beats GPT 6 Sol on their multi-step offensive cybersecurity task. Sol was tested via the Daybreak trusted access program."
   },
   {
    "title": "Anthropic update on independent evaluators",
@@ -89,11 +79,11 @@
    "text": "My latest vibe coded game experiment is a Command & Conquer style RTS (Real Time Strategy) game called Battle Drones ( play it here ). Unlike my previous experiments , this one is actually fun to play . I'm somewhat embarrassed to admit that I got there by telling Claude to \"Make it a LOT more fun\". It also supports multiplayer between nearby devices using audio to synchronize game state! Here's what I've built so far, and some of the things I learned along the way."
   },
   {
-   "title": "Salesforce agrees to acquire AI-powered marketing platform Braze for nearly $5.7B in enterprise val…",
-   "url": "https://www.bloomberg.com/news/articles/2026-10-20/salesforce-to-buy-marketing-platform-braze-for-5-7-billion?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc5MjUwNjE4OSwiZXhwIjoxNzkzMTEwOTg5LCJhcnRpY2xlSWQiOiJUTjdHM0RLSkg2VkIwMCIsImJjb25uZWN0SWQiOiJEQ0FGMjNFM0YyMkE0Qzk5OTM0RUMyRDEwNkM0ODc0NyJ9.j7szHCh8COelVxZqXM050UbwA-o_4jWnuWe3bNry9dY",
-   "source": "Bloomberg",
-   "published_at": "2026-10-20T12:35:47Z",
-   "text": "Salesforce agrees to acquire AI-powered marketing platform Braze for nearly $5.7B in enterprise value, paying $47.50 per share, set to close from February 2027. Salesforce Inc. plugged a gap in its marketing platform with an agreement to buy Braze Inc. for an enterprise value of about $5.7 billion …",
+   "title": "Google debuts TorchTPU, an open-source version of PyTorch for running AI apps on TPUs and Google Cl…",
+   "url": "https://techcrunch.com/2026/10/20/google-has-joined-amazon-in-attacking-nvidias-stronghold-with-ai-app-developers/",
+   "source": "Julie Bort / TechCrunch",
+   "published_at": "2026-10-20T19:02:10Z",
+   "text": "Google debuts TorchTPU, an open-source version of PyTorch for running AI apps on TPUs and Google Cloud via a simple configuration change and no code rewriting. On Tuesday, Google announced that TorchTPU, its long-awaited version of PyTorch, is now available as an open-source project.",
    "via": "Techmeme"
   },
   {
@@ -101,8 +91,8 @@
    "url": "https://www.anthropic.com/research/claude-scorpion-toxin-binder-design",
    "source": "Hacker News",
    "published_at": "2026-10-20T17:48:29Z",
-   "text": "62 points and 32 comments on Hacker News.",
-   "points": 62,
+   "text": "70 points and 38 comments on Hacker News.",
+   "points": 70,
    "discussion": "https://news.ycombinator.com/item?id=50170021"
   }
  ],
