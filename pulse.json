@@ -1,13 +1,13 @@
 {
  "schema": 1,
- "generated_at": "2026-10-20T14:39:29Z",
+ "generated_at": "2026-10-20T15:11:25Z",
  "items": [
   {
-   "title": "DeepSeek open-sources DeepInfer, its internal production stack designed to accelerate inference, op…",
+   "title": "DeepSeek open-sources DeepInfer, its high-performance inference framework that powers its productio…",
    "url": "https://www.bloomberg.com/news/articles/2026-10-20/deepseek-unveils-open-source-tool-to-help-cut-ai-operating-costs",
    "source": "Saritha Rai / Bloomberg",
    "published_at": "2026-10-20T13:05:46Z",
-   "text": "DeepSeek open-sources DeepInfer, its internal production stack designed to accelerate inference, optimize chip performance, and reduce energy and compute costs. DeepSeek is opening up the software it uses to run its artificial intelligence models at scale, potentially making its technology cheaper and easier for businesses to run.",
+   "text": "DeepSeek open-sources DeepInfer, its high-performance inference framework that powers its production services, starting with support for DeepSeek-V4.1-Flash. DeepSeek is opening up the software it uses to run its artificial intelligence models at scale, potentially making its technology cheaper and easier for businesses to run.",
    "via": "Techmeme"
   },
   {
@@ -17,7 +17,7 @@
    "published_at": "2026-10-19T22:30:05Z",
    "text": "Our latest model advances bring stronger capabilities for building and migrating software in low-resource programming languages such as COBOL, Fortran, and Visual Basic. These languages power software that banks, governments, and businesses depend on. Progress here means…",
    "author_name": "OpenAI",
-   "likes": 7742,
+   "likes": 7870,
    "story": "OpenAI says its new models are better for building and migrating software in low-resource legacy programming languages like COBOL, Fortran, and Visual Basic"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-10-20T09:08:48Z",
    "text": "We found DeepSeek V4.1 Flash 1017 beats GPT 6 Sol on our multi-step offensive cybersecurity task. Sol was tested via the Daybreak trusted access program. We have been building a cybersecurity benchmark based on simulated corporate networks. This is a valuable indicator for the…",
    "author_name": "Vals AI",
-   "likes": 949,
+   "likes": 1081,
    "story": "Vals AI found DeepSeek V4.1 Flash 1017 beats GPT 6 Sol on their multi-step offensive cybersecurity task. Sol was tested via the Daybreak trusted access program."
   },
   {
@@ -50,8 +50,8 @@
    "url": "https://github.com/deepseek-ai/DeepInfer",
    "source": "Hacker News",
    "published_at": "2026-10-20T09:08:54Z",
-   "text": "1236 points and 438 comments on Hacker News.",
-   "points": 1236,
+   "text": "1369 points and 475 comments on Hacker News.",
+   "points": 1369,
    "discussion": "https://news.ycombinator.com/item?id=50163277"
   },
   {
@@ -61,7 +61,7 @@
    "published_at": "2026-10-19T22:59:29Z",
    "text": "This was news to me. Eric Schmidt was in the Series A, and personally owns 1% of Anthropic.",
    "author_name": "Andrew Curran",
-   "likes": 1021,
+   "likes": 1029,
    "story": "Sources: Eric Schmidt, who owns ~1% of Anthropic after investing tens of millions in its Series A, is poised to have one of the largest windfalls from its IPO"
   },
   {
@@ -86,7 +86,7 @@
    "published_at": "2026-10-18T17:35:53Z",
    "text": "WARNING: if you hack your parents' TV with claude code, DO NOT explain the process. they own a lot of things with model numbers. you will regret it.",
    "author_name": "michael",
-   "likes": 8543,
+   "likes": 8542,
    "story": "Developers and vibe coders are using AI tools like Claude Code to remove sponsored ads on their smart TVs, speed up app launchers, disable tracking, and more"
   },
   {
@@ -94,8 +94,8 @@
    "url": "https://peec.ai/blog/publish-stats-get-cited-the-tactic-that-put-my-data-all-over-the-web",
    "source": "Hacker News",
    "published_at": "2026-10-20T13:06:22Z",
-   "text": "77 points and 33 comments on Hacker News.",
-   "points": 77,
+   "text": "101 points and 59 comments on Hacker News.",
+   "points": 101,
    "discussion": "https://news.ycombinator.com/item?id=50165801"
   }
  ],
