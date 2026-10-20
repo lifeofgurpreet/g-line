@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-20T00:02:06Z",
+ "generated_at": "2026-10-20T00:35:26Z",
  "items": [
   {
    "title": "The US DHS orders all federal civilian agencies to remove DeepSeek's tech from their IT systems and…",
@@ -17,7 +17,7 @@
    "published_at": "2026-10-19T13:05:44Z",
    "text": "I recently wrote about why we need to treat models as insider risks, with security controls sitting outside the model itself. Today, we're putting that principle into practice by expanding Project Perception with new capabilities to help continuously assess agent risk, adapt…",
    "author_name": "Satya Nadella",
-   "likes": 1333,
+   "likes": 1343,
    "story": "Microsoft debuts new security tools in Microsoft 365 E7 and its Project Perception system that treat AI agents as potential insider threats via risk assessments"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-10-19T22:59:29Z",
    "text": "This was news to me. Eric Schmidt was in the Series A, and personally owns 1% of Anthropic.",
    "author_name": "Andrew Curran",
-   "likes": 367,
+   "likes": 455,
    "story": "Sources: Eric Schmidt, who owns ~1% of Anthropic after investing tens of millions in its Series A, is poised to have one of the largest windfalls from its IPO"
   },
   {
@@ -44,7 +44,7 @@
    "published_at": "2026-10-19T11:56:23Z",
    "text": "MiniMax M3.1 Flash: Space Performance + Bunny Speed 🚀🐰 Yes, Space Bunny - which has topped global leaderboards with 200T+ tokens - was an earlier version of M3.1 Flash. 💰Redefining the performance economics of agentic AI. M3.1 Flash achieves frontier-level intelligence ht…",
    "author_name": "MiniMax (official)",
-   "likes": 6476,
+   "likes": 6514,
    "story": "MiniMax launches M3.1 Flash, saying it delivers “a generational leap” in agentic tasks, coding, computer use, and cybersecurity, with weights due October 23"
   },
   {
@@ -60,8 +60,8 @@
    "url": "https://mistral.ai/news/timestral/",
    "source": "Hacker News",
    "published_at": "2026-10-19T09:59:32Z",
-   "text": "531 points and 98 comments on Hacker News.",
-   "points": 531,
+   "text": "532 points and 101 comments on Hacker News.",
+   "points": 532,
    "discussion": "https://news.ycombinator.com/item?id=50150434"
   },
   {
@@ -71,7 +71,7 @@
    "published_at": "2026-10-17T08:51:31Z",
    "text": "Vibe coded my parents' TV this afternoon! It was showing a sponsored ad before you could even get to Netflix. Gave Claude Code the model number, it found the TV on wifi, removed 25 Xiaomi packages and wrote a new launcher. Looks like an Apple TV now lol",
    "author_name": "Gathin (Ø,G)",
-   "likes": 28817,
+   "likes": 29001,
    "story": "Developers and vibe coders are using AI tools like Claude Code to get rid of sponsored ads on their smart TVs, disable tracking features, and more"
   },
   {
@@ -96,7 +96,7 @@
    "published_at": "2026-10-19T14:07:54Z",
    "text": "Expect this month to be a busy one for new model releases. We have the scoop on a new Anthropic model, Google’s Gemini 4 Carbon, and a potential new Terra model from OpenAI.",
    "author_name": "Stephanie Palazzolo",
-   "likes": 701,
+   "likes": 709,
    "story": "Source: Anthropic is preparing a model with better intuition and reasoning that can discern underlying intentions and is better at thinking outside of the box",
    "links": [
     "https://www.theinformation.com/newsletters/ai-agenda/anthropic-readies-model-reads-users-intentions-better"
@@ -107,8 +107,8 @@
    "url": "https://news.ycombinator.com/item?id=50151036",
    "source": "Hacker News",
    "published_at": "2026-10-19T11:24:34Z",
-   "text": "225 points and 366 comments on Hacker News.",
-   "points": 225,
+   "text": "238 points and 376 comments on Hacker News.",
+   "points": 238,
    "discussion": "https://news.ycombinator.com/item?id=50151036"
   }
  ],
