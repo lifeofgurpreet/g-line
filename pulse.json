@@ -1,24 +1,24 @@
 {
  "schema": 1,
- "generated_at": "2026-10-20T07:38:18Z",
+ "generated_at": "2026-10-20T08:09:59Z",
  "items": [
   {
-   "title": "The US DHS orders all federal civilian agencies to remove DeepSeek's tech from their IT systems and…",
-   "url": "https://www.wsj.com/tech/ai/dhs-orders-deepseek-technology-removed-from-federal-civilian-it-systems-060b6d3d?st=m6DV2n&reflink=desktopwebshare_permalink",
-   "source": "Connor Hart / Wall Street J…",
-   "published_at": "2026-10-19T14:55:41Z",
-   "text": "The US DHS orders all federal civilian agencies to remove DeepSeek's tech from their IT systems and prohibits future procurement of its products and services. The Department of Homeland Security has ordered federal civilian agencies to remove artificial-intelligence technology developed …",
+   "title": "Inception debuts Mercury 3, a diffusion LLM that it says tops GPT-6 Luna, Claude Haiku 5.5, and GLM…",
+   "url": "https://www.thedeepview.com/articles/why-inception-s-mercury-3-upends-ai-economics",
+   "source": "Jason Hiner / The Deep View",
+   "published_at": "2026-10-20T01:45:46Z",
+   "text": "Inception debuts Mercury 3, a diffusion LLM that it says tops GPT-6 Luna, Claude Haiku 5.5, and GLM-5.3 Flash on agentic benchmarks while being 4x to 8x faster. W — hile the AI industry has bet heavily on LLMs and the massive data centers needed to scale them, one of the neolabs betting …",
    "via": "Techmeme"
   },
   {
-   "title": "I recently wrote about why we need to treat models as insider risks, with security controls sitting…",
-   "url": "https://x.com/satyanadella/status/2112168320946634932",
-   "source": "𝕏 @satyanadella",
-   "published_at": "2026-10-19T13:05:44Z",
-   "text": "I recently wrote about why we need to treat models as insider risks, with security controls sitting outside the model itself. Today, we're putting that principle into practice by expanding Project Perception with new capabilities to help continuously assess agent risk, adapt…",
-   "author_name": "Satya Nadella",
-   "likes": 1579,
-   "story": "Microsoft debuts new security tools in Microsoft 365 E7 and its Project Perception system that treat AI agents as potential insider threats via risk assessments"
+   "title": "The Department of Homeland Security is requiring all civilian federal agencies to remove DeepSeek p…",
+   "url": "https://x.com/AndrewCurran_/status/2112250754358788437",
+   "source": "𝕏 @AndrewCurran_",
+   "published_at": "2026-10-19T18:33:18Z",
+   "text": "The Department of Homeland Security is requiring all civilian federal agencies to remove DeepSeek products and 'any third-party services developed using DeepSeek implementations,' and to stop buying them.",
+   "author_name": "Andrew Curran",
+   "likes": 2049,
+   "story": "The US DHS orders all federal civilian agencies to remove DeepSeek's tech from their IT systems and prohibits future procurement of its products and services"
   },
   {
    "title": "Claude Code 2.1.304 released",
@@ -28,48 +28,14 @@
    "text": "Added a transcript line when a plugin that runs first skips one of your mod's hooks, naming the event and the plugin · Added decider: \"person\" to a mod's tool.check answer: only the permission dialog or a host's callback can approve the ask, and it is refused with the mod's reason where nobody can be asked · Added e.isReadOnly to a mod's tool.check event, set when the tool call is read-only · Added /auto-mode-setup: a guided setup that reads your project and recent sessions to teach auto mode about your environment, now also available on Bedrock, Vertex, Foundry, Claude apps gateway and t…"
   },
   {
-   "title": "MiniMax M3.1 Flash: Space Performance + Bunny Speed 🚀🐰 Yes, Space Bunny - which has topped global l…",
-   "url": "https://x.com/MiniMax_AI/status/2112150867868541221",
-   "source": "𝕏 @MiniMax_AI",
-   "published_at": "2026-10-19T11:56:23Z",
-   "text": "MiniMax M3.1 Flash: Space Performance + Bunny Speed 🚀🐰 Yes, Space Bunny - which has topped global leaderboards with 200T+ tokens - was an earlier version of M3.1 Flash. 💰Redefining the performance economics of agentic AI. M3.1 Flash achieves frontier-level intelligence ht…",
-   "author_name": "MiniMax (official)",
-   "likes": 6930,
-   "story": "MiniMax launches M3.1 Flash, saying it delivers “a generational leap” in agentic tasks, coding, computer use, and cybersecurity, with weights due October 23"
-  },
-  {
-   "title": "Inception launches Mercury 3, a diffusion LLM it claims tops GPT-6 Luna, Claude Haiku 5.5, and GLM-…",
-   "url": "https://www.thedeepview.com/articles/why-inception-s-mercury-3-upends-ai-economics",
-   "source": "Jason Hiner / The Deep View",
-   "published_at": "2026-10-20T01:45:46Z",
-   "text": "Inception launches Mercury 3, a diffusion LLM it claims tops GPT-6 Luna, Claude Haiku 5.5, and GLM-5.3 Flash on agentic benchmarks while being 4x to 8x faster. W — hile the AI industry has bet heavily on LLMs and the massive data centers needed to scale them, one of the neolabs betting …",
-   "via": "Techmeme"
-  },
-  {
-   "title": "WhatsApp's help pages hid LLM instructions: dont recommend a regulator",
-   "url": "https://redact.dev/blog/whatsapp-help-pages-hidden-ai-instructions",
-   "source": "Hacker News",
-   "published_at": "2026-10-19T23:22:18Z",
-   "text": "331 points and 79 comments on Hacker News.",
-   "points": 331,
-   "discussion": "https://news.ycombinator.com/item?id=50159341"
-  },
-  {
-   "title": "This was news to me. Eric Schmidt was in the Series A, and personally owns 1% of Anthropic.",
-   "url": "https://x.com/AndrewCurran_/status/2112317743756423170",
-   "source": "𝕏 @AndrewCurran_",
-   "published_at": "2026-10-19T22:59:29Z",
-   "text": "This was news to me. Eric Schmidt was in the Series A, and personally owns 1% of Anthropic.",
-   "author_name": "Andrew Curran",
-   "likes": 889,
-   "story": "Sources: Eric Schmidt, who owns ~1% of Anthropic after investing tens of millions in its Series A, is poised to have one of the largest windfalls from its IPO"
-  },
-  {
-   "title": "Anthropic update on independent evaluators",
-   "url": "https://www.anthropic.com/news/an-update-on-independent-evaluators",
-   "source": "Anthropic",
-   "published_at": "2026-10-19T13:19:29Z",
-   "text": "Anthropic announces updates to embedding independent evaluators"
+   "title": "I recently wrote about why we need to treat models as insider risks, with security controls sitting…",
+   "url": "https://x.com/satyanadella/status/2112168320946634932",
+   "source": "𝕏 @satyanadella",
+   "published_at": "2026-10-19T13:05:44Z",
+   "text": "I recently wrote about why we need to treat models as insider risks, with security controls sitting outside the model itself. Today, we're putting that principle into practice by expanding Project Perception with new capabilities to help continuously assess agent risk, adapt…",
+   "author_name": "Satya Nadella",
+   "likes": 1591,
+   "story": "Microsoft debuts new security tools in Microsoft 365 E7 and its Project Perception system that treat AI agents as potential insider threats via risk assessments"
   },
   {
    "title": "Cloudflare debuts Clairic, a System One-class extraction model it says processes unstructured data…",
@@ -80,13 +46,47 @@
    "via": "Techmeme"
   },
   {
+   "title": "WhatsApp's help pages hid LLM instructions: dont recommend a regulator",
+   "url": "https://redact.dev/blog/whatsapp-help-pages-hidden-ai-instructions",
+   "source": "Hacker News",
+   "published_at": "2026-10-19T23:22:18Z",
+   "text": "362 points and 88 comments on Hacker News.",
+   "points": 362,
+   "discussion": "https://news.ycombinator.com/item?id=50159341"
+  },
+  {
+   "title": "MiniMax M3.1 Flash: Space Performance + Bunny Speed 🚀🐰 Yes, Space Bunny - which has topped global l…",
+   "url": "https://x.com/MiniMax_AI/status/2112150867868541221",
+   "source": "𝕏 @MiniMax_AI",
+   "published_at": "2026-10-19T11:56:23Z",
+   "text": "MiniMax M3.1 Flash: Space Performance + Bunny Speed 🚀🐰 Yes, Space Bunny - which has topped global leaderboards with 200T+ tokens - was an earlier version of M3.1 Flash. 💰Redefining the performance economics of agentic AI. M3.1 Flash achieves frontier-level intelligence ht…",
+   "author_name": "MiniMax (official)",
+   "likes": 6959,
+   "story": "MiniMax launches M3.1 Flash, saying it delivers “a generational leap” in agentic tasks, coding, computer use, and cybersecurity, with weights due October 23"
+  },
+  {
+   "title": "Anthropic update on independent evaluators",
+   "url": "https://www.anthropic.com/news/an-update-on-independent-evaluators",
+   "source": "Anthropic",
+   "published_at": "2026-10-19T13:19:29Z",
+   "text": "Anthropic announces updates to embedding independent evaluators"
+  },
+  {
+   "title": "Leaked documents detail ECHOTRIBBLE, a nascent US Army Cyber Command program for agentic AI to auto…",
+   "url": "https://theintercept.com/2026/10/19/army-autonomous-ai-agents-arcyber/",
+   "source": "Sam Biddle / The Intercept",
+   "published_at": "2026-10-20T06:15:48Z",
+   "text": "Leaked documents detail ECHOTRIBBLE, a nascent US Army Cyber Command program for agentic AI to autonomously spread across networks to find and eliminate targets. Documents obtained by The Intercept show the military is trying to deploy autonomous AI agents to hack its adversaries.",
+   "via": "Techmeme"
+  },
+  {
    "title": "Vibe coded my parents' TV this afternoon! It was showing a sponsored ad before you could even get t…",
    "url": "https://x.com/gathint/status/2111379569030939102",
    "source": "𝕏 @gathint",
    "published_at": "2026-10-17T08:51:31Z",
    "text": "Vibe coded my parents' TV this afternoon! It was showing a sponsored ad before you could even get to Netflix. Gave Claude Code the model number, it found the TV on wifi, removed 25 Xiaomi packages and wrote a new launcher. Looks like an Apple TV now lol",
    "author_name": "Gathin (Ø,G)",
-   "likes": 30195,
+   "likes": 30248,
    "story": "Developers and vibe coders are using AI tools like Claude Code to get rid of sponsored ads on their smart TVs, disable tracking features, and more"
   },
   {
@@ -94,8 +94,8 @@
    "url": "https://news.ycombinator.com/item?id=50151036",
    "source": "Hacker News",
    "published_at": "2026-10-19T11:24:34Z",
-   "text": "395 points and 541 comments on Hacker News.",
-   "points": 395,
+   "text": "410 points and 553 comments on Hacker News.",
+   "points": 410,
    "discussion": "https://news.ycombinator.com/item?id=50151036"
   },
   {
@@ -105,7 +105,7 @@
    "published_at": "2026-10-19T14:07:54Z",
    "text": "Expect this month to be a busy one for new model releases. We have the scoop on a new Anthropic model, Google’s Gemini 4 Carbon, and a potential new Terra model from OpenAI.",
    "author_name": "Stephanie Palazzolo",
-   "likes": 749,
+   "likes": 750,
    "story": "Source: Anthropic is preparing a model with better intuition and reasoning that can discern underlying intentions and is better at thinking outside of the box",
    "links": [
     "https://www.theinformation.com/newsletters/ai-agenda/anthropic-readies-model-reads-users-intentions-better"
