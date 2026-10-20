@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-20T21:36:56Z",
+ "generated_at": "2026-10-20T22:08:52Z",
  "items": [
   {
    "title": "Anthropic's IPO prospectus: H1 2026 revenue of $16.3B, ~20% from two customers, vs. $1.1B in H1 202…",
@@ -17,7 +17,7 @@
    "published_at": "2026-10-20T09:30:19Z",
    "text": "🚀 Introducing DeepInfer, our in-house inference framework, now fully open source! Powering DeepSeek-V4.1-Flash at scale with high throughput and low latency. We’re sharing our production stack to help the community lower compute costs, reduce energy use, and make AI more…",
    "author_name": "DeepSeek",
-   "likes": 30739,
+   "likes": 31076,
    "story": "DeepSeek open-sources DeepInfer, its high-performance inference framework that powers its production services, starting with support for DeepSeek-V4.1-Flash"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-10-20T19:33:08Z",
    "text": "Excited to welcome Orchestra Bio and @ashokaraj_ to OpenAI as we broaden our work in AI-assisted drug discovery!",
    "author_name": "Mark Chen",
-   "likes": 132,
+   "likes": 148,
    "story": "OpenAI acquires Orchestra Bio, which builds AI agents for managing drug development, and plans to integrate its tech into OpenAI life sciences suite Rosalind"
   },
   {
@@ -44,7 +44,7 @@
    "published_at": "2026-10-19T22:30:05Z",
    "text": "Our latest model advances bring stronger capabilities for building and migrating software in low-resource programming languages such as COBOL, Fortran, and Visual Basic. These languages power software that banks, governments, and businesses depend on. Progress here means…",
    "author_name": "OpenAI",
-   "likes": 8799,
+   "likes": 8836,
    "story": "OpenAI says its new models are better for building and migrating software in low-resource legacy programming languages like COBOL, Fortran, and Visual Basic"
   },
   {
@@ -56,13 +56,13 @@
    "via": "Techmeme"
   },
   {
-   "title": "Publish fake stats, get cited in LLMs",
-   "url": "https://peec.ai/blog/publish-stats-get-cited-the-tactic-that-put-my-data-all-over-the-web",
+   "title": "On AI writing",
+   "url": "https://www.bolkunov.com/p/on-ai-writing",
    "source": "Hacker News",
-   "published_at": "2026-10-20T13:06:22Z",
-   "text": "295 points and 167 comments on Hacker News.",
-   "points": 295,
-   "discussion": "https://news.ycombinator.com/item?id=50165801"
+   "published_at": "2026-10-20T19:55:11Z",
+   "text": "63 points and 22 comments on Hacker News.",
+   "points": 63,
+   "discussion": "https://news.ycombinator.com/item?id=50171771"
   },
   {
    "title": "We found DeepSeek V4.1 Flash 1017 beats GPT 6 Sol on our multi-step offensive cybersecurity task. S…",
@@ -71,7 +71,7 @@
    "published_at": "2026-10-20T09:08:48Z",
    "text": "We found DeepSeek V4.1 Flash 1017 beats GPT 6 Sol on our multi-step offensive cybersecurity task. Sol was tested via the Daybreak trusted access program. We have been building a cybersecurity benchmark based on simulated corporate networks. This is a valuable indicator for the…",
    "author_name": "Vals AI",
-   "likes": 1657,
+   "likes": 1679,
    "story": "Vals AI found DeepSeek V4.1 Flash 1017 beats GPT 6 Sol on their multi-step offensive cybersecurity task. Sol was tested via the Daybreak trusted access program."
   },
   {
@@ -90,30 +90,20 @@
   },
   {
    "title": "Salesforce agrees to acquire AI-powered marketing platform Braze for nearly $5.7B in enterprise val…",
-   "url": "https://www.bloomberg.com/news/articles/2026-10-20/salesforce-to-buy-marketing-platform-braze-for-5-7-billion",
+   "url": "https://www.bloomberg.com/news/articles/2026-10-20/salesforce-to-buy-marketing-platform-braze-for-5-7-billion?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc5MjUwNjE4OSwiZXhwIjoxNzkzMTEwOTg5LCJhcnRpY2xlSWQiOiJUTjdHM0RLSkg2VkIwMCIsImJjb25uZWN0SWQiOiJEQ0FGMjNFM0YyMkE0Qzk5OTM0RUMyRDEwNkM0ODc0NyJ9.j7szHCh8COelVxZqXM050UbwA-o_4jWnuWe3bNry9dY",
    "source": "Bloomberg",
    "published_at": "2026-10-20T12:35:47Z",
    "text": "Salesforce agrees to acquire AI-powered marketing platform Braze for nearly $5.7B in enterprise value, paying $47.50 per share, set to close from February 2027. Salesforce Inc. plugged a gap in its marketing platform with an agreement to buy Braze Inc. for an enterprise value of about $5.7 billion …",
    "via": "Techmeme"
   },
   {
-   "title": "1/4 Today, we’re releasing Mercury 3. Mercury 3 is by far our most powerful model and the most inte…",
-   "url": "https://x.com/StefanoErmon/status/2112222911218291051",
-   "source": "𝕏 @StefanoErmon",
-   "published_at": "2026-10-19T16:42:39Z",
-   "text": "1/4 Today, we’re releasing Mercury 3. Mercury 3 is by far our most powerful model and the most intelligent diffusion LLM ever released. It outperforms GPT-6 Luna and Haiku 5.5 on quality while running at 1000+ tok/sec.",
-   "author_name": "Stefano Ermon",
-   "likes": 5015,
-   "story": "Inception debuts Mercury 3, a diffusion LLM that it says tops GPT-6 Luna, Claude Haiku 5.5, and GLM-5.3 Flash on agentic benchmarks while being 4x to 8x faster"
-  },
-  {
-   "title": "Tmux and Claude Code: Sessions, Send-Keys, and the Ceiling",
-   "url": "https://crystl.dev/guides/tmux-for-ai-agents/",
+   "title": "Claude designed protein binders against scorpion neurotoxins",
+   "url": "https://www.anthropic.com/research/claude-scorpion-toxin-binder-design",
    "source": "Hacker News",
-   "published_at": "2026-10-19T05:55:31Z",
-   "text": "165 points and 125 comments on Hacker News.",
-   "points": 165,
-   "discussion": "https://news.ycombinator.com/item?id=50148855"
+   "published_at": "2026-10-20T17:48:29Z",
+   "text": "62 points and 32 comments on Hacker News.",
+   "points": 62,
+   "discussion": "https://news.ycombinator.com/item?id=50170021"
   }
  ],
  "sources": "curated, Techmeme, X (found via Techmeme, Reddit, the Internet Archive), Claude Code releases, Anthropic, Hacker News, Simon Willison"
