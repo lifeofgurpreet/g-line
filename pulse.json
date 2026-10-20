@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-20T19:28:53Z",
+ "generated_at": "2026-10-20T20:01:02Z",
  "items": [
   {
    "title": "DeepSeek open-sources DeepInfer, its high-performance inference framework that powers its productio…",
@@ -17,7 +17,7 @@
    "published_at": "2026-10-19T22:30:05Z",
    "text": "Our latest model advances bring stronger capabilities for building and migrating software in low-resource programming languages such as COBOL, Fortran, and Visual Basic. These languages power software that banks, governments, and businesses depend on. Progress here means…",
    "author_name": "OpenAI",
-   "likes": 8585,
+   "likes": 8647,
    "story": "OpenAI says its new models are better for building and migrating software in low-resource legacy programming languages like COBOL, Fortran, and Visual Basic"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-10-20T09:08:48Z",
    "text": "We found DeepSeek V4.1 Flash 1017 beats GPT 6 Sol on our multi-step offensive cybersecurity task. Sol was tested via the Daybreak trusted access program. We have been building a cybersecurity benchmark based on simulated corporate networks. This is a valuable indicator for the…",
    "author_name": "Vals AI",
-   "likes": 1557,
+   "likes": 1583,
    "story": "Vals AI found DeepSeek V4.1 Flash 1017 beats GPT 6 Sol on their multi-step offensive cybersecurity task. Sol was tested via the Daybreak trusted access program."
   },
   {
@@ -50,8 +50,8 @@
    "url": "https://peec.ai/blog/publish-stats-get-cited-the-tactic-that-put-my-data-all-over-the-web",
    "source": "Hacker News",
    "published_at": "2026-10-20T13:06:22Z",
-   "text": "264 points and 145 comments on Hacker News.",
-   "points": 264,
+   "text": "272 points and 154 comments on Hacker News.",
+   "points": 272,
    "discussion": "https://news.ycombinator.com/item?id=50165801"
   },
   {
@@ -61,7 +61,7 @@
    "published_at": "2026-10-19T22:59:29Z",
    "text": "This was news to me. Eric Schmidt was in the Series A, and personally owns 1% of Anthropic.",
    "author_name": "Andrew Curran",
-   "likes": 1086,
+   "likes": 1087,
    "story": "Sources: Eric Schmidt, who owns ~1% of Anthropic after investing tens of millions in its Series A, is poised to have one of the largest windfalls from its IPO"
   },
   {
@@ -72,11 +72,18 @@
    "text": "Anthropic announces updates to embedding independent evaluators"
   },
   {
-   "title": "Salesforce agrees to acquire AI-powered marketing platform Braze for nearly $5.7B in enterprise val…",
-   "url": "https://www.bloomberg.com/news/articles/2026-10-20/salesforce-to-buy-marketing-platform-braze-for-5-7-billion",
-   "source": "Bloomberg",
-   "published_at": "2026-10-20T12:35:47Z",
-   "text": "Salesforce agrees to acquire AI-powered marketing platform Braze for nearly $5.7B in enterprise value, paying $47.50 per share, set to close from February 2027. Salesforce Inc. plugged a gap in its marketing platform with an agreement to buy Braze Inc. for an enterprise value of about $5.7 billion …",
+   "title": "Battle Drones - a vibe coded RTS with audio-based multiplayer",
+   "url": "https://simonwillison.net/2026/Oct/20/battledrones/",
+   "source": "Simon Willison's weblog",
+   "published_at": "2026-10-20T19:34:19Z",
+   "text": "My latest vibe coded game experiment is a Command & Conquer style RTS (Real Time Strategy) game called Battle Drones ( play it here ). Unlike my previous experiments , this one is actually fun to play . I'm somewhat embarrassed to admit that I got there by telling Claude to \"Make it a LOT more fun\". It also supports multiplayer between nearby devices using audio to synchronize game state! Here's what I've built so far, and some of the things I learned along the way."
+  },
+  {
+   "title": "OpenAI acquires Orchestra Bio, which builds AI agents for managing drug development, and plans to i…",
+   "url": "https://www.axios.com/2026/10/20/exclusive-openai-biotech-startup-drug-development",
+   "source": "Madison Mills / Axios",
+   "published_at": "2026-10-20T18:20:55Z",
+   "text": "OpenAI acquires Orchestra Bio, which builds AI agents for managing drug development, and plans to integrate its tech into OpenAI life sciences suite Rosalind. OpenAI has acquired Orchestra Bio, a startup building AI agents to help pharmaceutical companies manage drug development, the ChatGPT maker shared exclusively with Axios.",
    "via": "Techmeme"
   },
   {
