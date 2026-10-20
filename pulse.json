@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-20T04:53:26Z",
+ "generated_at": "2026-10-20T05:26:14Z",
  "items": [
   {
    "title": "The US DHS orders all federal civilian agencies to remove DeepSeek's tech from their IT systems and…",
@@ -17,7 +17,7 @@
    "published_at": "2026-10-19T13:05:44Z",
    "text": "I recently wrote about why we need to treat models as insider risks, with security controls sitting outside the model itself. Today, we're putting that principle into practice by expanding Project Perception with new capabilities to help continuously assess agent risk, adapt…",
    "author_name": "Satya Nadella",
-   "likes": 1504,
+   "likes": 1518,
    "story": "Microsoft debuts new security tools in Microsoft 365 E7 and its Project Perception system that treat AI agents as potential insider threats via risk assessments"
   },
   {
@@ -34,15 +34,15 @@
    "published_at": "2026-10-19T11:56:23Z",
    "text": "MiniMax M3.1 Flash: Space Performance + Bunny Speed 🚀🐰 Yes, Space Bunny - which has topped global leaderboards with 200T+ tokens - was an earlier version of M3.1 Flash. 💰Redefining the performance economics of agentic AI. M3.1 Flash achieves frontier-level intelligence ht…",
    "author_name": "MiniMax (official)",
-   "likes": 6769,
+   "likes": 6807,
    "story": "MiniMax launches M3.1 Flash, saying it delivers “a generational leap” in agentic tasks, coding, computer use, and cybersecurity, with weights due October 23"
   },
   {
-   "title": "Cloudflare debuts Clairic, a System One-class extraction model it says processes unstructured data…",
-   "url": "https://blog.cloudflare.com/clairic-extraction-model/",
-   "source": "Cloudflare",
-   "published_at": "2026-10-19T22:36:07Z",
-   "text": "Cloudflare debuts Clairic, a System One-class extraction model it says processes unstructured data faster, more cheaply, and more accurately than normal LLMs. Today, we're announcing a preview of a new class of System One-style models: extraction models.",
+   "title": "Inception launches Mercury 3, a diffusion LLM it claims tops GPT-6 Luna, Claude Haiku 5.5, and GLM-…",
+   "url": "https://www.thedeepview.com/articles/why-inception-s-mercury-3-upends-ai-economics",
+   "source": "Jason Hiner / The Deep View",
+   "published_at": "2026-10-20T01:45:46Z",
+   "text": "Inception launches Mercury 3, a diffusion LLM it claims tops GPT-6 Luna, Claude Haiku 5.5, and GLM-5.3 Flash on agentic benchmarks while being 4x to 8x faster. W — hile the AI industry has bet heavily on LLMs and the massive data centers needed to scale them, one of the neolabs betting …",
    "via": "Techmeme"
   },
   {
@@ -50,8 +50,8 @@
    "url": "https://redact.dev/blog/whatsapp-help-pages-hidden-ai-instructions",
    "source": "Hacker News",
    "published_at": "2026-10-19T23:22:18Z",
-   "text": "140 points and 22 comments on Hacker News.",
-   "points": 140,
+   "text": "193 points and 34 comments on Hacker News.",
+   "points": 193,
    "discussion": "https://news.ycombinator.com/item?id=50159341"
   },
   {
@@ -61,7 +61,7 @@
    "published_at": "2026-10-19T22:59:29Z",
    "text": "This was news to me. Eric Schmidt was in the Series A, and personally owns 1% of Anthropic.",
    "author_name": "Andrew Curran",
-   "likes": 793,
+   "likes": 815,
    "story": "Sources: Eric Schmidt, who owns ~1% of Anthropic after investing tens of millions in its Series A, is poised to have one of the largest windfalls from its IPO"
   },
   {
@@ -72,11 +72,11 @@
    "text": "Anthropic announces updates to embedding independent evaluators"
   },
   {
-   "title": "Sources: Nscale is in talks for a second deal with Anthropic worth ~$45B to deliver 460MW of comput…",
-   "url": "https://www.bloomberg.com/news/articles/2026-10-19/nscale-anthropic-in-talks-for-45-billion-cloud-computing-deal?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc5MjQ0MTU0NywiZXhwIjoxNzkzMDQ2MzQ3LCJhcnRpY2xlSWQiOiJUTjYwVFlUOU5KTFMwMCIsImJjb25uZWN0SWQiOiIzNDM2Qjk5ODhDOEU0ODE2ODJFQzJBOTQ3NkVBOTdGRiJ9.7_22u597uUCQ4yRwudvXvPd3nzUHiVFsZxvhPS-i1Wg",
-   "source": "Bloomberg",
-   "published_at": "2026-10-19T19:55:44Z",
-   "text": "Sources: Nscale is in talks for a second deal with Anthropic worth ~$45B to deliver 460MW of computing power at its West Virginia campus using Vera Rubin chips. Nscale Ltd., the AI cloud computing firm, is in talks to sell computing power to Anthropic PBC in a deal that could be worth about $45 billion …",
+   "title": "Cloudflare debuts Clairic, a System One-class extraction model it says processes unstructured data…",
+   "url": "https://blog.cloudflare.com/clairic-extraction-model/",
+   "source": "Cloudflare",
+   "published_at": "2026-10-19T22:36:07Z",
+   "text": "Cloudflare debuts Clairic, a System One-class extraction model it says processes unstructured data faster, more cheaply, and more accurately than normal LLMs. Today, we're announcing a preview of a new class of System One-style models: extraction models.",
    "via": "Techmeme"
   },
   {
@@ -86,17 +86,17 @@
    "published_at": "2026-10-17T08:51:31Z",
    "text": "Vibe coded my parents' TV this afternoon! It was showing a sponsored ad before you could even get to Netflix. Gave Claude Code the model number, it found the TV on wifi, removed 25 Xiaomi packages and wrote a new launcher. Looks like an Apple TV now lol",
    "author_name": "Gathin (Ø,G)",
-   "likes": 29871,
+   "likes": 29942,
    "story": "Developers and vibe coders are using AI tools like Claude Code to get rid of sponsored ads on their smart TVs, disable tracking features, and more"
   },
   {
-   "title": "Ask HN: How to deal with shipping AI-written code you don't understand?",
-   "url": "https://news.ycombinator.com/item?id=50151036",
+   "title": "How abliterated models can get you pwned",
+   "url": "https://projectdiscovery.io/research/how-abliterated-models-can-get-you-pwned",
    "source": "Hacker News",
-   "published_at": "2026-10-19T11:24:34Z",
-   "text": "330 points and 477 comments on Hacker News.",
-   "points": 330,
-   "discussion": "https://news.ycombinator.com/item?id=50151036"
+   "published_at": "2026-10-19T23:08:52Z",
+   "text": "72 points and 46 comments on Hacker News.",
+   "points": 72,
+   "discussion": "https://news.ycombinator.com/item?id=50159245"
   },
   {
    "title": "Expect this month to be a busy one for new model releases. We have the scoop on a new Anthropic mod…",
@@ -105,7 +105,7 @@
    "published_at": "2026-10-19T14:07:54Z",
    "text": "Expect this month to be a busy one for new model releases. We have the scoop on a new Anthropic model, Google’s Gemini 4 Carbon, and a potential new Terra model from OpenAI.",
    "author_name": "Stephanie Palazzolo",
-   "likes": 736,
+   "likes": 739,
    "story": "Source: Anthropic is preparing a model with better intuition and reasoning that can discern underlying intentions and is better at thinking outside of the box",
    "links": [
     "https://www.theinformation.com/newsletters/ai-agenda/anthropic-readies-model-reads-users-intentions-better"
