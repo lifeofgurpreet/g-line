@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-20T18:56:09Z",
+ "generated_at": "2026-10-20T19:28:53Z",
  "items": [
   {
    "title": "DeepSeek open-sources DeepInfer, its high-performance inference framework that powers its productio…",
@@ -17,7 +17,7 @@
    "published_at": "2026-10-19T22:30:05Z",
    "text": "Our latest model advances bring stronger capabilities for building and migrating software in low-resource programming languages such as COBOL, Fortran, and Visual Basic. These languages power software that banks, governments, and businesses depend on. Progress here means…",
    "author_name": "OpenAI",
-   "likes": 8517,
+   "likes": 8585,
    "story": "OpenAI says its new models are better for building and migrating software in low-resource legacy programming languages like COBOL, Fortran, and Visual Basic"
   },
   {
@@ -34,15 +34,15 @@
    "published_at": "2026-10-20T09:08:48Z",
    "text": "We found DeepSeek V4.1 Flash 1017 beats GPT 6 Sol on our multi-step offensive cybersecurity task. Sol was tested via the Daybreak trusted access program. We have been building a cybersecurity benchmark based on simulated corporate networks. This is a valuable indicator for the…",
    "author_name": "Vals AI",
-   "likes": 1517,
+   "likes": 1557,
    "story": "Vals AI found DeepSeek V4.1 Flash 1017 beats GPT 6 Sol on their multi-step offensive cybersecurity task. Sol was tested via the Daybreak trusted access program."
   },
   {
-   "title": "Inception debuts Mercury 3, a diffusion LLM that it says tops GPT-6 Luna, Claude Haiku 5.5, and GLM…",
-   "url": "https://www.thedeepview.com/articles/why-inception-s-mercury-3-upends-ai-economics",
-   "source": "Jason Hiner / The Deep View",
-   "published_at": "2026-10-20T01:45:46Z",
-   "text": "Inception debuts Mercury 3, a diffusion LLM that it says tops GPT-6 Luna, Claude Haiku 5.5, and GLM-5.3 Flash on agentic benchmarks while being 4x to 8x faster. W — hile the AI industry has bet heavily on LLMs and the massive data centers needed to scale them, one of the neolabs betting …",
+   "title": "Google launches TorchTPU, an open-source version of PyTorch to let AI apps run on TPUs and Google C…",
+   "url": "https://techcrunch.com/2026/10/20/google-has-joined-amazon-in-attacking-nvidias-stronghold-with-ai-app-developers/",
+   "source": "Julie Bort / TechCrunch",
+   "published_at": "2026-10-20T19:02:10Z",
+   "text": "Google launches TorchTPU, an open-source version of PyTorch to let AI apps run on TPUs and Google Cloud via simple configuration changes without rewriting code. On Tuesday, Google announced that TorchTPU, its long-awaited version of PyTorch, is now available as an open-source project.",
    "via": "Techmeme"
   },
   {
@@ -50,8 +50,8 @@
    "url": "https://peec.ai/blog/publish-stats-get-cited-the-tactic-that-put-my-data-all-over-the-web",
    "source": "Hacker News",
    "published_at": "2026-10-20T13:06:22Z",
-   "text": "255 points and 138 comments on Hacker News.",
-   "points": 255,
+   "text": "264 points and 145 comments on Hacker News.",
+   "points": 264,
    "discussion": "https://news.ycombinator.com/item?id=50165801"
   },
   {
@@ -61,7 +61,7 @@
    "published_at": "2026-10-19T22:59:29Z",
    "text": "This was news to me. Eric Schmidt was in the Series A, and personally owns 1% of Anthropic.",
    "author_name": "Andrew Curran",
-   "likes": 1082,
+   "likes": 1086,
    "story": "Sources: Eric Schmidt, who owns ~1% of Anthropic after investing tens of millions in its Series A, is poised to have one of the largest windfalls from its IPO"
   },
   {
@@ -84,8 +84,8 @@
    "url": "https://crystl.dev/guides/tmux-for-ai-agents/",
    "source": "Hacker News",
    "published_at": "2026-10-19T05:55:31Z",
-   "text": "163 points and 124 comments on Hacker News.",
-   "points": 163,
+   "text": "164 points and 125 comments on Hacker News.",
+   "points": 164,
    "discussion": "https://news.ycombinator.com/item?id=50148855"
   }
  ],
