@@ -1,14 +1,41 @@
 {
  "schema": 1,
- "generated_at": "2026-10-20T20:33:18Z",
+ "generated_at": "2026-10-20T21:05:16Z",
  "items": [
   {
-   "title": "DeepSeek open-sources DeepInfer, its high-performance inference framework that powers its productio…",
-   "url": "https://www.bloomberg.com/news/articles/2026-10-20/deepseek-unveils-open-source-tool-to-help-cut-ai-operating-costs",
-   "source": "Saritha Rai / Bloomberg",
-   "published_at": "2026-10-20T13:05:46Z",
-   "text": "DeepSeek open-sources DeepInfer, its high-performance inference framework that powers its production services, starting with support for DeepSeek-V4.1-Flash. DeepSeek is opening up the software it uses to run its artificial intelligence models at scale, potentially making its technology cheaper and easier for businesses to run.",
+   "title": "Anthropic's IPO prospectus: H1 2026 revenue of $16.3B, ~20% from two customers, vs. $1.1B in H1 202…",
+   "url": "https://www.wsj.com/tech/ai/anthropic-revenue-growth-ipo-accaf0f1?st=YKUo1r",
+   "source": "Anissa Gardizy / Wall Stree…",
+   "published_at": "2026-10-20T19:47:39Z",
+   "text": "Anthropic's IPO prospectus: H1 2026 revenue of $16.3B, ~20% from two customers, vs. $1.1B in H1 2025, and an $80.7B net loss driven by accounting charges. In a new draft prospectus viewed by the Journal, the AI giant disclosed an $80.7 billion net loss for the first half of 2026 and a long list of risk factors",
    "via": "Techmeme"
+  },
+  {
+   "title": "🚀 Introducing DeepInfer, our in-house inference framework, now fully open source! Powering DeepSeek…",
+   "url": "https://x.com/deepseek_ai/status/2112476496283775135",
+   "source": "𝕏 @deepseek_ai",
+   "published_at": "2026-10-20T09:30:19Z",
+   "text": "🚀 Introducing DeepInfer, our in-house inference framework, now fully open source! Powering DeepSeek-V4.1-Flash at scale with high throughput and low latency. We’re sharing our production stack to help the community lower compute costs, reduce energy use, and make AI more…",
+   "author_name": "DeepSeek",
+   "likes": 30377,
+   "story": "DeepSeek open-sources DeepInfer, its high-performance inference framework that powers its production services, starting with support for DeepSeek-V4.1-Flash"
+  },
+  {
+   "title": "Claude Code 2.1.305 released",
+   "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.305",
+   "source": "Claude Code releases",
+   "published_at": "2026-10-20T20:46:50Z",
+   "text": "Added sandbox.allowNestedUserNamespaces so sandboxed commands on Linux can create user namespaces (Chromium, rootless podman); this lets them get around the sandbox's file protections · Added CLAUDE_CODE_RETRY_WATCHDOG_USAGE_LIMIT_RECHECK_MS so unattended retry mode (CLAUDE_CODE_RETRY_WATCHDOG) notices a usage limit that was lifted before its reset · Fixed every request failing on Vertex, Bedrock and other providers when the endpoint or a gateway rejects tool search, and behind gateways with ToolSearch disallowed or left out of --tools (a 2.1.304… · Fixed /effort and /autocompact settings not…"
+  },
+  {
+   "title": "Excited to welcome Orchestra Bio and @ashokaraj_ to OpenAI as we broaden our work in AI-assisted dr…",
+   "url": "https://x.com/markchen90/status/2112628202594349139",
+   "source": "𝕏 @markchen90",
+   "published_at": "2026-10-20T19:33:08Z",
+   "text": "Excited to welcome Orchestra Bio and @ashokaraj_ to OpenAI as we broaden our work in AI-assisted drug discovery!",
+   "author_name": "Mark Chen",
+   "likes": 106,
+   "story": "OpenAI acquires Orchestra Bio, which builds AI agents for managing drug development, and plans to integrate its tech into OpenAI life sciences suite Rosalind"
   },
   {
    "title": "Our latest model advances bring stronger capabilities for building and migrating software in low-re…",
@@ -17,15 +44,25 @@
    "published_at": "2026-10-19T22:30:05Z",
    "text": "Our latest model advances bring stronger capabilities for building and migrating software in low-resource programming languages such as COBOL, Fortran, and Visual Basic. These languages power software that banks, governments, and businesses depend on. Progress here means…",
    "author_name": "OpenAI",
-   "likes": 8711,
+   "likes": 8758,
    "story": "OpenAI says its new models are better for building and migrating software in low-resource legacy programming languages like COBOL, Fortran, and Visual Basic"
   },
   {
-   "title": "Claude Code 2.1.304 released",
-   "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.304",
-   "source": "Claude Code releases",
-   "published_at": "2026-10-19T21:34:39Z",
-   "text": "Added a transcript line when a plugin that runs first skips one of your mod's hooks, naming the event and the plugin · Added decider: \"person\" to a mod's tool.check answer: only the permission dialog or a host's callback can approve the ask, and it is refused with the mod's reason where nobody can be asked · Added e.isReadOnly to a mod's tool.check event, set when the tool call is read-only · Added /auto-mode-setup: a guided setup that reads your project and recent sessions to teach auto mode about your environment, now also available on Bedrock, Vertex, Foundry, Claude apps gateway and t…"
+   "title": "SpaceX reports Q3 revenue up 161% YoY to $14.58B, vs. $12.72B est., AI revenue up 830% to $7.56B, a…",
+   "url": "https://www.cnbc.com/2026/10/20/spacex-spcx-earnings-live-updates-q3-2026html.html",
+   "source": "Lora Kolodny / CNBC",
+   "published_at": "2026-10-20T20:27:46Z",
+   "text": "SpaceX reports Q3 revenue up 161% YoY to $14.58B, vs. $12.72B est., AI revenue up 830% to $7.56B, and AI operating income of $431M, up from a loss of $1.7B. SpaceX reported 161% revenue growth for the third quarter, driven by the company's artificial intelligence business and Starlink Subscriber growth.",
+   "via": "Techmeme"
+  },
+  {
+   "title": "Publish fake stats, get cited in LLMs",
+   "url": "https://peec.ai/blog/publish-stats-get-cited-the-tactic-that-put-my-data-all-over-the-web",
+   "source": "Hacker News",
+   "published_at": "2026-10-20T13:06:22Z",
+   "text": "291 points and 164 comments on Hacker News.",
+   "points": 291,
+   "discussion": "https://news.ycombinator.com/item?id=50165801"
   },
   {
    "title": "We found DeepSeek V4.1 Flash 1017 beats GPT 6 Sol on our multi-step offensive cybersecurity task. S…",
@@ -34,25 +71,8 @@
    "published_at": "2026-10-20T09:08:48Z",
    "text": "We found DeepSeek V4.1 Flash 1017 beats GPT 6 Sol on our multi-step offensive cybersecurity task. Sol was tested via the Daybreak trusted access program. We have been building a cybersecurity benchmark based on simulated corporate networks. This is a valuable indicator for the…",
    "author_name": "Vals AI",
-   "likes": 1616,
+   "likes": 1639,
    "story": "Vals AI found DeepSeek V4.1 Flash 1017 beats GPT 6 Sol on their multi-step offensive cybersecurity task. Sol was tested via the Daybreak trusted access program."
-  },
-  {
-   "title": "Google launches TorchTPU, an open-source version of PyTorch to let AI apps run on TPUs and Google C…",
-   "url": "https://techcrunch.com/2026/10/20/google-has-joined-amazon-in-attacking-nvidias-stronghold-with-ai-app-developers/",
-   "source": "Julie Bort / TechCrunch",
-   "published_at": "2026-10-20T19:02:10Z",
-   "text": "Google launches TorchTPU, an open-source version of PyTorch to let AI apps run on TPUs and Google Cloud via simple configuration changes without rewriting code. On Tuesday, Google announced that TorchTPU, its long-awaited version of PyTorch, is now available as an open-source project.",
-   "via": "Techmeme"
-  },
-  {
-   "title": "Publish fake stats, get cited in LLMs",
-   "url": "https://peec.ai/blog/publish-stats-get-cited-the-tactic-that-put-my-data-all-over-the-web",
-   "source": "Hacker News",
-   "published_at": "2026-10-20T13:06:22Z",
-   "text": "282 points and 163 comments on Hacker News.",
-   "points": 282,
-   "discussion": "https://news.ycombinator.com/item?id=50165801"
   },
   {
    "title": "Anthropic update on independent evaluators",
@@ -69,12 +89,22 @@
    "text": "My latest vibe coded game experiment is a Command & Conquer style RTS (Real Time Strategy) game called Battle Drones ( play it here ). Unlike my previous experiments , this one is actually fun to play . I'm somewhat embarrassed to admit that I got there by telling Claude to \"Make it a LOT more fun\". It also supports multiplayer between nearby devices using audio to synchronize game state! Here's what I've built so far, and some of the things I learned along the way."
   },
   {
-   "title": "Anthropic's IPO prospectus: H1 2026 revenue of $16.3B, ~20% from two customers, vs. $1.1B in H1 202…",
-   "url": "https://www.wsj.com/tech/ai/anthropic-revenue-growth-ipo-accaf0f1?st=YKUo1r",
-   "source": "Anissa Gardizy / Wall Stree…",
-   "published_at": "2026-10-20T19:47:39Z",
-   "text": "Anthropic's IPO prospectus: H1 2026 revenue of $16.3B, ~20% from two customers, vs. $1.1B in H1 2025, and an $80.7B net loss driven by accounting charges. In a new draft prospectus viewed by the Journal, the AI giant disclosed an $80.7 billion net loss for the first half of 2026 and a long list of risk factors",
+   "title": "Salesforce agrees to acquire AI-powered marketing platform Braze for nearly $5.7B in enterprise val…",
+   "url": "https://www.bloomberg.com/news/articles/2026-10-20/salesforce-to-buy-marketing-platform-braze-for-5-7-billion",
+   "source": "Bloomberg",
+   "published_at": "2026-10-20T12:35:47Z",
+   "text": "Salesforce agrees to acquire AI-powered marketing platform Braze for nearly $5.7B in enterprise value, paying $47.50 per share, set to close from February 2027. Salesforce Inc. plugged a gap in its marketing platform with an agreement to buy Braze Inc. for an enterprise value of about $5.7 billion …",
    "via": "Techmeme"
+  },
+  {
+   "title": "1/4 Today, we’re releasing Mercury 3. Mercury 3 is by far our most powerful model and the most inte…",
+   "url": "https://x.com/StefanoErmon/status/2112222911218291051",
+   "source": "𝕏 @StefanoErmon",
+   "published_at": "2026-10-19T16:42:39Z",
+   "text": "1/4 Today, we’re releasing Mercury 3. Mercury 3 is by far our most powerful model and the most intelligent diffusion LLM ever released. It outperforms GPT-6 Luna and Haiku 5.5 on quality while running at 1000+ tok/sec.",
+   "author_name": "Stefano Ermon",
+   "likes": 5003,
+   "story": "Inception debuts Mercury 3, a diffusion LLM that it says tops GPT-6 Luna, Claude Haiku 5.5, and GLM-5.3 Flash on agentic benchmarks while being 4x to 8x faster"
   },
   {
    "title": "Tmux and Claude Code: Sessions, Send-Keys, and the Ceiling",
@@ -84,6 +114,16 @@
    "text": "165 points and 125 comments on Hacker News.",
    "points": 165,
    "discussion": "https://news.ycombinator.com/item?id=50148855"
+  },
+  {
+   "title": "This was news to me. Eric Schmidt was in the Series A, and personally owns 1% of Anthropic.",
+   "url": "https://x.com/AndrewCurran_/status/2112317743756423170",
+   "source": "𝕏 @AndrewCurran_",
+   "published_at": "2026-10-19T22:59:29Z",
+   "text": "This was news to me. Eric Schmidt was in the Series A, and personally owns 1% of Anthropic.",
+   "author_name": "Andrew Curran",
+   "likes": 1092,
+   "story": "Sources: Eric Schmidt, who owns ~1% of Anthropic after investing tens of millions in its Series A, is poised to have one of the largest windfalls from its IPO"
   }
  ],
  "sources": "curated, Techmeme, X (found via Techmeme, Reddit, the Internet Archive), Claude Code releases, Anthropic, Hacker News, Simon Willison"
