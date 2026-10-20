@@ -1,24 +1,24 @@
 {
  "schema": 1,
- "generated_at": "2026-10-19T23:27:12Z",
+ "generated_at": "2026-10-20T00:02:06Z",
  "items": [
   {
-   "title": "Elon Musk says “I will give one of my SpaceX shares to every kid in America” in 2027, a gift worth…",
-   "url": "https://www.cnbc.com/2026/10/19/elon-musk-spacex-shares-giveaway-kids.html",
-   "source": "Kai Nicol-Schwarz / CNBC",
-   "published_at": "2026-10-19T09:40:40Z",
-   "text": "Elon Musk says “I will give one of my SpaceX shares to every kid in America” in 2027, a gift worth ~$10.5B, after Anthropic committed 5% of its shares to APBF. Choose CNBC as your preferred source on Google and never miss a moment from the most trusted name in business news.",
+   "title": "The US DHS orders all federal civilian agencies to remove DeepSeek's tech from their IT systems and…",
+   "url": "https://www.wsj.com/tech/ai/dhs-orders-deepseek-technology-removed-from-federal-civilian-it-systems-060b6d3d?st=m6DV2n&reflink=desktopwebshare_permalink",
+   "source": "Connor Hart / Wall Street J…",
+   "published_at": "2026-10-19T14:55:41Z",
+   "text": "The US DHS orders all federal civilian agencies to remove DeepSeek's tech from their IT systems and prohibits future procurement of its products and services. The Department of Homeland Security has ordered federal civilian agencies to remove artificial-intelligence technology developed …",
    "via": "Techmeme"
   },
   {
-   "title": "The Department of Homeland Security is requiring all civilian federal agencies to remove DeepSeek p…",
-   "url": "https://x.com/AndrewCurran_/status/2112250754358788437",
-   "source": "𝕏 @AndrewCurran_",
-   "published_at": "2026-10-19T18:33:18Z",
-   "text": "The Department of Homeland Security is requiring all civilian federal agencies to remove DeepSeek products and 'any third-party services developed using DeepSeek implementations,' and to stop buying them.",
-   "author_name": "Andrew Curran",
-   "likes": 1445,
-   "story": "The US DHS orders all federal civilian agencies to remove DeepSeek's tech from their IT systems and prohibits future procurement of its products and services"
+   "title": "I recently wrote about why we need to treat models as insider risks, with security controls sitting…",
+   "url": "https://x.com/satyanadella/status/2112168320946634932",
+   "source": "𝕏 @satyanadella",
+   "published_at": "2026-10-19T13:05:44Z",
+   "text": "I recently wrote about why we need to treat models as insider risks, with security controls sitting outside the model itself. Today, we're putting that principle into practice by expanding Project Perception with new capabilities to help continuously assess agent risk, adapt…",
+   "author_name": "Satya Nadella",
+   "likes": 1333,
+   "story": "Microsoft debuts new security tools in Microsoft 365 E7 and its Project Perception system that treat AI agents as potential insider threats via risk assessments"
   },
   {
    "title": "Claude Code 2.1.304 released",
@@ -28,31 +28,41 @@
    "text": "Added a transcript line when a plugin that runs first skips one of your mod's hooks, naming the event and the plugin · Added decider: \"person\" to a mod's tool.check answer: only the permission dialog or a host's callback can approve the ask, and it is refused with the mod's reason where nobody can be asked · Added e.isReadOnly to a mod's tool.check event, set when the tool call is read-only · Added /auto-mode-setup: a guided setup that reads your project and recent sessions to teach auto mode about your environment, now also available on Bedrock, Vertex, Foundry, Claude apps gateway and t…"
   },
   {
-   "title": "I recently wrote about why we need to treat models as insider risks, with security controls sitting…",
-   "url": "https://x.com/satyanadella/status/2112168320946634932",
-   "source": "𝕏 @satyanadella",
-   "published_at": "2026-10-19T13:05:44Z",
-   "text": "I recently wrote about why we need to treat models as insider risks, with security controls sitting outside the model itself. Today, we're putting that principle into practice by expanding Project Perception with new capabilities to help continuously assess agent risk, adapt…",
-   "author_name": "Satya Nadella",
-   "likes": 1307,
-   "story": "Microsoft debuts new security tools in Microsoft 365 E7 and its Project Perception system that treat AI agents as potential insider threats via risk assessments"
+   "title": "This was news to me. Eric Schmidt was in the Series A, and personally owns 1% of Anthropic.",
+   "url": "https://x.com/AndrewCurran_/status/2112317743756423170",
+   "source": "𝕏 @AndrewCurran_",
+   "published_at": "2026-10-19T22:59:29Z",
+   "text": "This was news to me. Eric Schmidt was in the Series A, and personally owns 1% of Anthropic.",
+   "author_name": "Andrew Curran",
+   "likes": 367,
+   "story": "Sources: Eric Schmidt, who owns ~1% of Anthropic after investing tens of millions in its Series A, is poised to have one of the largest windfalls from its IPO"
   },
   {
-   "title": "MiniMax launches M3.1 Flash, saying it delivers “a generational leap” in agentic tasks, coding, com…",
-   "url": "https://www.minimax.io/blog/minimax-m31f",
-   "source": "MiniMax",
-   "published_at": "2026-10-19T15:30:46Z",
-   "text": "MiniMax launches M3.1 Flash, saying it delivers “a generational leap” in agentic tasks, coding, computer use, and cybersecurity, with weights due October 23. Space Bunny 🐰, which processed more than 200 trillion tokens while operating anonymously, was an early version of MiniMax M3.1 Flash.",
+   "title": "MiniMax M3.1 Flash: Space Performance + Bunny Speed 🚀🐰 Yes, Space Bunny - which has topped global l…",
+   "url": "https://x.com/MiniMax_AI/status/2112150867868541221",
+   "source": "𝕏 @MiniMax_AI",
+   "published_at": "2026-10-19T11:56:23Z",
+   "text": "MiniMax M3.1 Flash: Space Performance + Bunny Speed 🚀🐰 Yes, Space Bunny - which has topped global leaderboards with 200T+ tokens - was an earlier version of M3.1 Flash. 💰Redefining the performance economics of agentic AI. M3.1 Flash achieves frontier-level intelligence ht…",
+   "author_name": "MiniMax (official)",
+   "likes": 6476,
+   "story": "MiniMax launches M3.1 Flash, saying it delivers “a generational leap” in agentic tasks, coding, computer use, and cybersecurity, with weights due October 23"
+  },
+  {
+   "title": "Elon Musk says “I will give one of my SpaceX shares to every kid in America” in 2027, a gift worth…",
+   "url": "https://www.cnbc.com/2026/10/19/elon-musk-spacex-shares-giveaway-kids.html",
+   "source": "Kai Nicol-Schwarz / CNBC",
+   "published_at": "2026-10-19T09:40:40Z",
+   "text": "Elon Musk says “I will give one of my SpaceX shares to every kid in America” in 2027, a gift worth ~$10.5B, after Anthropic committed 5% of its shares to APBF. Choose CNBC as your preferred source on Google and never miss a moment from the most trusted name in business news.",
    "via": "Techmeme"
   },
   {
-   "title": "CERN and Mistral sign a statement of intent to establish a strategic partnership",
-   "url": "https://home.cern/cern-and-mistral-join-forces-to-accelerate-ai-for-science/",
+   "title": "Timestral: Mistral's time-series foundation models",
+   "url": "https://mistral.ai/news/timestral/",
    "source": "Hacker News",
-   "published_at": "2026-10-19T15:28:24Z",
-   "text": "303 points and 57 comments on Hacker News.",
-   "points": 303,
-   "discussion": "https://news.ycombinator.com/item?id=50153630"
+   "published_at": "2026-10-19T09:59:32Z",
+   "text": "531 points and 98 comments on Hacker News.",
+   "points": 531,
+   "discussion": "https://news.ycombinator.com/item?id=50150434"
   },
   {
    "title": "Vibe coded my parents' TV this afternoon! It was showing a sponsored ad before you could even get t…",
@@ -61,7 +71,7 @@
    "published_at": "2026-10-17T08:51:31Z",
    "text": "Vibe coded my parents' TV this afternoon! It was showing a sponsored ad before you could even get to Netflix. Gave Claude Code the model number, it found the TV on wifi, removed 25 Xiaomi packages and wrote a new launcher. Looks like an Apple TV now lol",
    "author_name": "Gathin (Ø,G)",
-   "likes": 28624,
+   "likes": 28817,
    "story": "Developers and vibe coders are using AI tools like Claude Code to get rid of sponsored ads on their smart TVs, disable tracking features, and more"
   },
   {
@@ -86,20 +96,20 @@
    "published_at": "2026-10-19T14:07:54Z",
    "text": "Expect this month to be a busy one for new model releases. We have the scoop on a new Anthropic model, Google’s Gemini 4 Carbon, and a potential new Terra model from OpenAI.",
    "author_name": "Stephanie Palazzolo",
-   "likes": 683,
+   "likes": 701,
    "story": "Source: Anthropic is preparing a model with better intuition and reasoning that can discern underlying intentions and is better at thinking outside of the box",
    "links": [
     "https://www.theinformation.com/newsletters/ai-agenda/anthropic-readies-model-reads-users-intentions-better"
    ]
   },
   {
-   "title": "Timestral: Mistral's time-series foundation models",
-   "url": "https://mistral.ai/news/timestral/",
+   "title": "Ask HN: How to deal with shipping AI-written code you don't understand?",
+   "url": "https://news.ycombinator.com/item?id=50151036",
    "source": "Hacker News",
-   "published_at": "2026-10-19T09:59:32Z",
-   "text": "526 points and 97 comments on Hacker News.",
-   "points": 526,
-   "discussion": "https://news.ycombinator.com/item?id=50150434"
+   "published_at": "2026-10-19T11:24:34Z",
+   "text": "225 points and 366 comments on Hacker News.",
+   "points": 225,
+   "discussion": "https://news.ycombinator.com/item?id=50151036"
   }
  ],
  "sources": "curated, Techmeme, X (found via Techmeme, Reddit, the Internet Archive), Claude Code releases, Anthropic, Hacker News, Simon Willison"
