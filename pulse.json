@@ -1,13 +1,13 @@
 {
  "schema": 1,
- "generated_at": "2026-10-20T13:00:58Z",
+ "generated_at": "2026-10-20T13:33:51Z",
  "items": [
   {
-   "title": "Inception debuts Mercury 3, a diffusion LLM that it says tops GPT-6 Luna, Claude Haiku 5.5, and GLM…",
-   "url": "https://www.thedeepview.com/articles/why-inception-s-mercury-3-upends-ai-economics",
-   "source": "Jason Hiner / The Deep View",
-   "published_at": "2026-10-20T01:45:46Z",
-   "text": "Inception debuts Mercury 3, a diffusion LLM that it says tops GPT-6 Luna, Claude Haiku 5.5, and GLM-5.3 Flash on agentic benchmarks while being 4x to 8x faster. W — hile the AI industry has bet heavily on LLMs and the massive data centers needed to scale them, one of the neolabs betting …",
+   "title": "DeepSeek open-sources DeepInfer, its internal production stack designed to accelerate inference, op…",
+   "url": "https://www.bloomberg.com/news/articles/2026-10-20/deepseek-unveils-open-source-tool-to-help-cut-ai-operating-costs",
+   "source": "Saritha Rai / Bloomberg",
+   "published_at": "2026-10-20T13:05:46Z",
+   "text": "DeepSeek open-sources DeepInfer, its internal production stack designed to accelerate inference, optimize chip performance, and reduce energy and compute costs. DeepSeek is opening up the software it uses to run its artificial intelligence models at scale, potentially making its technology cheaper and easier for businesses to run.",
    "via": "Techmeme"
   },
   {
@@ -17,7 +17,7 @@
    "published_at": "2026-10-19T22:30:05Z",
    "text": "Our latest model advances bring stronger capabilities for building and migrating software in low-resource programming languages such as COBOL, Fortran, and Visual Basic. These languages power software that banks, governments, and businesses depend on. Progress here means…",
    "author_name": "OpenAI",
-   "likes": 7327,
+   "likes": 7470,
    "story": "OpenAI says its new models show major performance leaps in low-resource legacy languages like COBOL, Fortran, and Visual Basic, used by banks and governments"
   },
   {
@@ -34,15 +34,15 @@
    "published_at": "2026-10-20T09:08:48Z",
    "text": "We found DeepSeek V4.1 Flash 1017 beats GPT 6 Sol on our multi-step offensive cybersecurity task. Sol was tested via the Daybreak trusted access program. We have been building a cybersecurity benchmark based on simulated corporate networks. This is a valuable indicator for the…",
    "author_name": "Vals AI",
-   "likes": 636,
+   "likes": 729,
    "story": "Vals AI found DeepSeek V4.1 Flash 1017 beats GPT 6 Sol on their multi-step offensive cybersecurity task. Sol was tested via the Daybreak trusted access program."
   },
   {
-   "title": "The US sanctions MiraclePlus, a Chinese VC firm founded by ex-Microsoft executive Lu Qi, over alleg…",
-   "url": "https://www.bloomberg.com/news/articles/2026-10-20/us-sanctions-china-s-y-combinator-in-google-ai-secrets-case",
-   "source": "Bloomberg",
-   "published_at": "2026-10-20T09:40:49Z",
-   "text": "The US sanctions MiraclePlus, a Chinese VC firm founded by ex-Microsoft executive Lu Qi, over alleged ties to Zhisuan, accused of stealing Google's AI secrets. Washington has blacklisted a Chinese venture firm established by ex-Microsoft Corp. AI scientist Lu Qi for alleged ties …",
+   "title": "Inception debuts Mercury 3, a diffusion LLM that it says tops GPT-6 Luna, Claude Haiku 5.5, and GLM…",
+   "url": "https://www.thedeepview.com/articles/why-inception-s-mercury-3-upends-ai-economics",
+   "source": "Jason Hiner / The Deep View",
+   "published_at": "2026-10-20T01:45:46Z",
+   "text": "Inception debuts Mercury 3, a diffusion LLM that it says tops GPT-6 Luna, Claude Haiku 5.5, and GLM-5.3 Flash on agentic benchmarks while being 4x to 8x faster. W — hile the AI industry has bet heavily on LLMs and the massive data centers needed to scale them, one of the neolabs betting …",
    "via": "Techmeme"
   },
   {
@@ -50,8 +50,8 @@
    "url": "https://github.com/deepseek-ai/DeepInfer",
    "source": "Hacker News",
    "published_at": "2026-10-20T09:08:54Z",
-   "text": "841 points and 281 comments on Hacker News.",
-   "points": 841,
+   "text": "968 points and 335 comments on Hacker News.",
+   "points": 968,
    "discussion": "https://news.ycombinator.com/item?id=50163277"
   },
   {
@@ -61,7 +61,7 @@
    "published_at": "2026-10-19T11:56:23Z",
    "text": "MiniMax M3.1 Flash: Space Performance + Bunny Speed 🚀🐰 Yes, Space Bunny - which has topped global leaderboards with 200T+ tokens - was an earlier version of M3.1 Flash. 💰Redefining the performance economics of agentic AI. M3.1 Flash achieves frontier-level intelligence ht…",
    "author_name": "MiniMax (official)",
-   "likes": 7099,
+   "likes": 7111,
    "story": "MiniMax launches M3.1 Flash, saying it delivers “a generational leap” in agentic tasks, coding, computer use, and cybersecurity, with weights due October 23"
   },
   {
@@ -72,11 +72,11 @@
    "text": "Anthropic announces updates to embedding independent evaluators"
   },
   {
-   "title": "Cloudflare debuts Clairic, a System One-class extraction model it says processes unstructured data…",
-   "url": "https://blog.cloudflare.com/clairic-extraction-model/",
-   "source": "Cloudflare",
-   "published_at": "2026-10-19T22:36:07Z",
-   "text": "Cloudflare debuts Clairic, a System One-class extraction model it says processes unstructured data faster, more cheaply, and more accurately than normal LLMs. Today, we're announcing a preview of a new class of System One-style models: extraction models.",
+   "title": "The US sanctions Chinese VC firm MiraclePlus for financing Zhisuan, founded by Ding Linwei, who in…",
+   "url": "https://www.bloomberg.com/news/articles/2026-10-20/us-sanctions-china-s-y-combinator-in-google-ai-secrets-case",
+   "source": "Bloomberg",
+   "published_at": "2026-10-20T09:40:49Z",
+   "text": "The US sanctions Chinese VC firm MiraclePlus for financing Zhisuan, founded by Ding Linwei, who in 2026 was convicted of stealing Google's AI trade secrets. Washington has blacklisted a Chinese venture firm established by ex-Microsoft Corp. AI scientist Lu Qi for alleged ties to a startup accused …",
    "via": "Techmeme"
   },
   {
@@ -86,7 +86,7 @@
    "published_at": "2026-10-19T18:33:18Z",
    "text": "The Department of Homeland Security is requiring all civilian federal agencies to remove DeepSeek products and 'any third-party services developed using DeepSeek implementations,' and to stop buying them.",
    "author_name": "Andrew Curran",
-   "likes": 2156,
+   "likes": 2177,
    "story": "The US DHS orders all federal civilian agencies to remove DeepSeek's tech from their IT systems and prohibits future procurement of its products and services"
   },
   {
@@ -94,8 +94,8 @@
    "url": "https://redact.dev/blog/whatsapp-help-pages-hidden-ai-instructions",
    "source": "Hacker News",
    "published_at": "2026-10-19T23:22:18Z",
-   "text": "559 points and 158 comments on Hacker News.",
-   "points": 559,
+   "text": "585 points and 164 comments on Hacker News.",
+   "points": 585,
    "discussion": "https://news.ycombinator.com/item?id=50159341"
   },
   {
