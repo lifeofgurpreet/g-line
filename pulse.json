@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-20T20:01:02Z",
+ "generated_at": "2026-10-20T20:33:18Z",
  "items": [
   {
    "title": "DeepSeek open-sources DeepInfer, its high-performance inference framework that powers its productio…",
@@ -17,7 +17,7 @@
    "published_at": "2026-10-19T22:30:05Z",
    "text": "Our latest model advances bring stronger capabilities for building and migrating software in low-resource programming languages such as COBOL, Fortran, and Visual Basic. These languages power software that banks, governments, and businesses depend on. Progress here means…",
    "author_name": "OpenAI",
-   "likes": 8647,
+   "likes": 8711,
    "story": "OpenAI says its new models are better for building and migrating software in low-resource legacy programming languages like COBOL, Fortran, and Visual Basic"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-10-20T09:08:48Z",
    "text": "We found DeepSeek V4.1 Flash 1017 beats GPT 6 Sol on our multi-step offensive cybersecurity task. Sol was tested via the Daybreak trusted access program. We have been building a cybersecurity benchmark based on simulated corporate networks. This is a valuable indicator for the…",
    "author_name": "Vals AI",
-   "likes": 1583,
+   "likes": 1616,
    "story": "Vals AI found DeepSeek V4.1 Flash 1017 beats GPT 6 Sol on their multi-step offensive cybersecurity task. Sol was tested via the Daybreak trusted access program."
   },
   {
@@ -50,19 +50,9 @@
    "url": "https://peec.ai/blog/publish-stats-get-cited-the-tactic-that-put-my-data-all-over-the-web",
    "source": "Hacker News",
    "published_at": "2026-10-20T13:06:22Z",
-   "text": "272 points and 154 comments on Hacker News.",
-   "points": 272,
+   "text": "282 points and 163 comments on Hacker News.",
+   "points": 282,
    "discussion": "https://news.ycombinator.com/item?id=50165801"
-  },
-  {
-   "title": "This was news to me. Eric Schmidt was in the Series A, and personally owns 1% of Anthropic.",
-   "url": "https://x.com/AndrewCurran_/status/2112317743756423170",
-   "source": "𝕏 @AndrewCurran_",
-   "published_at": "2026-10-19T22:59:29Z",
-   "text": "This was news to me. Eric Schmidt was in the Series A, and personally owns 1% of Anthropic.",
-   "author_name": "Andrew Curran",
-   "likes": 1087,
-   "story": "Sources: Eric Schmidt, who owns ~1% of Anthropic after investing tens of millions in its Series A, is poised to have one of the largest windfalls from its IPO"
   },
   {
    "title": "Anthropic update on independent evaluators",
@@ -79,11 +69,11 @@
    "text": "My latest vibe coded game experiment is a Command & Conquer style RTS (Real Time Strategy) game called Battle Drones ( play it here ). Unlike my previous experiments , this one is actually fun to play . I'm somewhat embarrassed to admit that I got there by telling Claude to \"Make it a LOT more fun\". It also supports multiplayer between nearby devices using audio to synchronize game state! Here's what I've built so far, and some of the things I learned along the way."
   },
   {
-   "title": "OpenAI acquires Orchestra Bio, which builds AI agents for managing drug development, and plans to i…",
-   "url": "https://www.axios.com/2026/10/20/exclusive-openai-biotech-startup-drug-development",
-   "source": "Madison Mills / Axios",
-   "published_at": "2026-10-20T18:20:55Z",
-   "text": "OpenAI acquires Orchestra Bio, which builds AI agents for managing drug development, and plans to integrate its tech into OpenAI life sciences suite Rosalind. OpenAI has acquired Orchestra Bio, a startup building AI agents to help pharmaceutical companies manage drug development, the ChatGPT maker shared exclusively with Axios.",
+   "title": "Anthropic's IPO prospectus: H1 2026 revenue of $16.3B, ~20% from two customers, vs. $1.1B in H1 202…",
+   "url": "https://www.wsj.com/tech/ai/anthropic-revenue-growth-ipo-accaf0f1?st=YKUo1r",
+   "source": "Anissa Gardizy / Wall Stree…",
+   "published_at": "2026-10-20T19:47:39Z",
+   "text": "Anthropic's IPO prospectus: H1 2026 revenue of $16.3B, ~20% from two customers, vs. $1.1B in H1 2025, and an $80.7B net loss driven by accounting charges. In a new draft prospectus viewed by the Journal, the AI giant disclosed an $80.7 billion net loss for the first half of 2026 and a long list of risk factors",
    "via": "Techmeme"
   },
   {
@@ -91,8 +81,8 @@
    "url": "https://crystl.dev/guides/tmux-for-ai-agents/",
    "source": "Hacker News",
    "published_at": "2026-10-19T05:55:31Z",
-   "text": "164 points and 125 comments on Hacker News.",
-   "points": 164,
+   "text": "165 points and 125 comments on Hacker News.",
+   "points": 165,
    "discussion": "https://news.ycombinator.com/item?id=50148855"
   }
  ],
