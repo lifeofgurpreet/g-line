@@ -240,7 +240,7 @@ async function idleCompactionOf($: EngineInterface): Promise<IdleCompaction | un
     // settings unreadable: Claude Code's default, on
   }
   const min = Number(await $.env.get('CLAUDE_CODE_IDLE_COMPACT_MIN_TOKENS'))
-  return { minTokens: Number.isFinite(min) && min > 0 ? min : 200_000 }
+  return { minTokens: Number.isFinite(min) && min > 0 ? Math.max(100_000, min) : 200_000 }
 }
 
 function automaticTtl(s: Snap): '5m' | '1h' {
@@ -277,7 +277,7 @@ export function payload(s: Snap, nowSeconds: number, ttl: '5m' | '1h' | undefine
     const expires = s.cache.lastAt + (effective === '1h' ? 3600 : 300)
     const compacted = s.cache.compactedTo !== undefined
     p.prompt_cache = { caching_observed: true, ttl: effective, warm: !compacted && expires > nowSeconds, expires_at: expires,
-      recache_tokens_if_cold: s.cache.compactedTo ?? s.cache.prefix }
+      recache_tokens_if_cold: compacted ? s.cache.compactedTo || undefined : s.cache.prefix }
     if (compacted) p.prompt_cache.compacted = true
     else if (idle && effective === '1h' && s.cache.prefix >= idle.minTokens) p.prompt_cache.idle_compacts = true
   }
@@ -306,6 +306,8 @@ let pending: Promise<Receipt> | undefined
 let lastHint = ''
 /** Whether this turn's first request rebuilt a cold cache. */
 let coldThisTurn = false
+/** The messages the next request is built from, counted once the last request's session went idle. */
+let idleCount: { lastAt: number; messages: number } | undefined
 /** Pulse's 8-second beats so far; the row moves on every `PULSE_BEATS[speed]` of them. */
 let pulseBeats = 0
 /** Consecutive failures per agent, tool and target. */
@@ -352,8 +354,32 @@ function peaksOf(s: Snap, limits: Snap['rateLimits']): Snap['peaks'] {
  * conversation, whether or not a `session.compact` reached the mod.
  */
 function shrunk(cache: Snap['cache'], context: number | undefined): Snap['cache'] {
-  if (!cache || context === undefined || context <= 0 || cache.compactedTo !== undefined) return cache
+  if (!cache || context === undefined || context <= 0 || cache.compactedTo) return cache
   return context < cache.prefix / 2 ? { ...cache, compactedTo: context } : cache
+}
+
+/** Marks the cached conversation replaced by a compaction, `after` tokens when known. */
+async function markCompacted($: EngineInterface, after?: number): Promise<void> {
+  await update($, snap, s => (s.cache
+    ? { ...s, cache: { ...s.cache, compactedTo: after ?? s.cache.compactedTo ?? 0 } }
+    : s))
+}
+
+/**
+ * Idle compaction reports itself through `session.compact` and the
+ * `compaction` door, and a managed plugin seated ahead of this one can send
+ * both on past it; Claude Code's context count then waits for the next
+ * request. What stays readable is the conversation the next request is built
+ * from: counted once the session is idle, it falls below half when a
+ * compaction replaces it with a summary.
+ */
+async function watchIdle($: EngineInterface): Promise<void> {
+  const cache = (await read($, snap))?.cache
+  if (!cache?.cached || cache.compactedTo !== undefined) return
+  if ((await nowSeconds($)) - cache.lastAt < 60) return
+  const messages = (await $.session.messages({ as: 'api' })).length
+  if (idleCount?.lastAt !== cache.lastAt) idleCount = { lastAt: cache.lastAt, messages }
+  else if (messages < idleCount.messages / 2) await markCompacted($)
 }
 
 async function measure($: EngineInterface): Promise<void> {
@@ -366,6 +392,7 @@ async function measure($: EngineInterface): Promise<void> {
     rateLimits: limits,
     costUsd: usage.cost?.usd,
     peaks: peaksOf(s, limits),
+    cache: shrunk(s.cache, usage.context.tokens),
   }))
 }
 
@@ -702,6 +729,7 @@ async function heartbeat($: EngineInterface): Promise<void> {
   if (beats % 2 === 0) await refreshGit($)
   if (beats % 40 === 0) await refreshAccount($)
   if (beats % 20 === 0) void refreshPulse($)
+  if (beats % 8 === 0) await watchIdle($).catch(() => undefined)
   if ((await configStamp($)) !== stamp) await reloadConfig($)
   if ((await read($, agents)).some(row => isActive(row.status))) await refreshAgents($)
   await exportState($)
@@ -1302,7 +1330,7 @@ export const register: Register = (on, options) => {
     const c = { at: await nowMs($), trigger: e.trigger, before: result.tokensBefore, after: result.tokensAfter }
     await update($, totals, t => ({ ...t, compactions: [...t.compactions, c].slice(-20), growth: [] }))
     await update($, outlook, () => null)
-    if (c.after !== undefined) await update($, snap, s => (s.cache ? { ...s, cache: { ...s.cache, compactedTo: c.after } } : s))
+    await markCompacted($, c.after)
     await update($, turnNow, live => (live ? { ...live, compacted: { before: c.before, after: c.after } } : live))
     await toast($, compactionText(c), 8000)
     return result

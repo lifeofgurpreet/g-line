@@ -589,6 +589,34 @@ test('a context count that falls by half with no request between reads as a comp
   expect(await read()).toEqual(expect.objectContaining({ state: 'compacted', rebuild_tokens_if_cold: 28_000 }))
 })
 
+test('a compaction no event reports, while the context count stands still, reads as one once the idle conversation shrinks', { timeoutMs: 30_000 }, async ($, on) => {
+  const w = world(on)
+  w.config = { claude_reads: true }
+  on('tool.register', ($, e) => ({ value: { tool: `mcp__g-line__${e.name}` } }) as never)
+  on('turn.step', async function* ($: unknown, e: { turnId: string; index: number }) {
+    return { turnId: e.turnId, index: e.index, answer: '', toolUses: [],
+      usage: { input_tokens: 4, output_tokens: 300, cache_read_input_tokens: 211_000, cache_creation_input_tokens: 4_000 } }
+  } as never)
+  let conversation = Array.from({ length: 300 }, (_, i) => ({ role: i % 2 ? 'assistant' : 'user', content: [] }))
+  let reads = 0
+  on('session.messages', () => {
+    reads += 1
+    return { value: conversation } as never
+  })
+  await start($)
+  const stream = $.turn.step({ turnId: 't1', index: 0, model: 'claude-opus-5-5', messageCount: 2 } as never)
+  for await (const _ of stream) { /* drain */ }
+  await stream.result
+  const read = async () => JSON.parse((await $.tool.call({ tool: 'mcp__g-line__status', section: 'cache' } as never) as unknown as { text: string }).text).cache
+  await w.clock.advance(4 * 60 * 1000)
+  expect(reads).toBeGreaterThan(0)
+  expect((await read()).state).toBe('estimated_warm')
+  conversation = [{ role: 'user', content: [] }]
+  await w.clock.advance(60 * 60 * 1000)
+  expect(await read()).toEqual(expect.objectContaining({ state: 'compacted', rebuild_tokens_if_cold: null }))
+  expect(w.toasts.filter(t => t.includes('cold'))).toEqual([])
+})
+
 test('the settings view lists every setting with its origin; a key press applies it now and keeps it', { timeoutMs: 30_000 }, async ($, on) => {
   const store: Record<string, unknown> = {}
   const w = world(on, {}, store)

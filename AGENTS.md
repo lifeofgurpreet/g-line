@@ -17,7 +17,9 @@ coding agents and for people.
    go on line 2 (or the footer labels in the one-line layout).
 3. **Engine figures only.** Everything comes from what Claude Code hands mods:
    `$.session.usage()`, `session.measure`, `turn.step`, `turn.complete`, `tool.call`,
-   `agent.spawn`, `$.agent.list()` and `session.compact`. Never parse the transcript, never
+   `agent.spawn`, `$.agent.list()`, `session.compact` and, while idle, the length of
+   `$.session.messages({ as: "api" })` (a managed plugin can send compaction events on past
+   user plugins). Never parse the transcript, never
    estimate what the engine reports, never make a network call, never write into the system
    prompt. The one network request is Pulse's GET of a static file, and only when the person
    turns Pulse on.

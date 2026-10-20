@@ -1,5 +1,21 @@
 # Changelog
 
+## 0.6.7 (2026-10-20): idle compaction shows even when no event reports it
+
+- After Claude Code compacted an idle session, line 2 could still read `cache cold, next turn
+  rebuilds 215k` under Claude Code's own "Compacted while idle, before the prompt cache
+  expired". On a machine with managed settings, Claude Code's built-in security plugin sits
+  ahead of user plugins and sends both `session.compact` and the `compaction` rows on past
+  them, and the context count stays at the old size until the next request. So none of the
+  signals g-line used reached it.
+- While the session is idle, g-line now counts the messages the next request is built from
+  (`$.session.messages({ as: "api" })`), every two minutes until it sees a compaction. A count
+  that falls below half reads as one: `cache compacted`, with no size until the engine reports it.
+- The context-count check from 0.6.4 also runs on the session's own refresh, not only on
+  `session.measure`.
+- The idle-compaction threshold follows Claude Code's floor: `CLAUDE_CODE_IDLE_COMPACT_MIN_TOKENS`
+  below 100k counts as 100k.
+
 ## 0.6.6 (2026-10-20): the warm cache says how much it holds
 
 - Line 2 reads `cache warm ~59m (57k)` while the cache is warm. Every request restarts the

@@ -20,6 +20,7 @@ export type Snap = {
     /**
      * Tokens the conversation was compacted to since that request: the cached
      * prefix is gone, and the next request writes the summary whatever the time.
+     * 0 when a compaction was seen but not its size.
      */
     compactedTo?: number
   }
