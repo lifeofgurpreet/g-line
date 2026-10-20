@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-20T16:48:38Z",
+ "generated_at": "2026-10-20T17:20:14Z",
  "items": [
   {
    "title": "DeepSeek open-sources DeepInfer, its high-performance inference framework that powers its productio…",
@@ -17,7 +17,7 @@
    "published_at": "2026-10-19T22:30:05Z",
    "text": "Our latest model advances bring stronger capabilities for building and migrating software in low-resource programming languages such as COBOL, Fortran, and Visual Basic. These languages power software that banks, governments, and businesses depend on. Progress here means…",
    "author_name": "OpenAI",
-   "likes": 8158,
+   "likes": 8267,
    "story": "OpenAI says its new models are better for building and migrating software in low-resource legacy programming languages like COBOL, Fortran, and Visual Basic"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-10-20T09:08:48Z",
    "text": "We found DeepSeek V4.1 Flash 1017 beats GPT 6 Sol on our multi-step offensive cybersecurity task. Sol was tested via the Daybreak trusted access program. We have been building a cybersecurity benchmark based on simulated corporate networks. This is a valuable indicator for the…",
    "author_name": "Vals AI",
-   "likes": 1317,
+   "likes": 1374,
    "story": "Vals AI found DeepSeek V4.1 Flash 1017 beats GPT 6 Sol on their multi-step offensive cybersecurity task. Sol was tested via the Daybreak trusted access program."
   },
   {
@@ -50,8 +50,8 @@
    "url": "https://github.com/deepseek-ai/DeepInfer",
    "source": "Hacker News",
    "published_at": "2026-10-20T09:08:54Z",
-   "text": "1709 points and 622 comments on Hacker News.",
-   "points": 1709,
+   "text": "1807 points and 663 comments on Hacker News.",
+   "points": 1807,
    "discussion": "https://news.ycombinator.com/item?id=50163277"
   },
   {
@@ -61,41 +61,31 @@
    "published_at": "2026-10-19T22:59:29Z",
    "text": "This was news to me. Eric Schmidt was in the Series A, and personally owns 1% of Anthropic.",
    "author_name": "Andrew Curran",
-   "likes": 1053,
+   "likes": 1061,
    "story": "Sources: Eric Schmidt, who owns ~1% of Anthropic after investing tens of millions in its Series A, is poised to have one of the largest windfalls from its IPO"
   },
   {
    "title": "Anthropic update on independent evaluators",
    "url": "https://www.anthropic.com/news/an-update-on-independent-evaluators",
    "source": "Anthropic",
-   "published_at": "2026-10-19T13:19:29Z",
+   "published_at": "2026-10-20T03:29:34Z",
    "text": "Anthropic announces updates to embedding independent evaluators"
   },
   {
-   "title": "Arda, which builds AI software and agents to accelerate assembly lines and manufacturing, raised $2…",
-   "url": "https://www.cnbc.com/2026/10/20/ex-openai-executive-builds-1point5-billion-ai-manufacturing-startup-arda.html",
-   "source": "Kate Rooney / CNBC",
-   "published_at": "2026-10-20T13:25:56Z",
-   "text": "Arda, which builds AI software and agents to accelerate assembly lines and manufacturing, raised $230M at a $1.5B valuation led by Altimeter, Accel, and Khosla. OpenAI's former research chief has been quietly building a startup that aims to bring manufacturing back to the U.S. using AI.",
+   "title": "Amazon pledges to spend €16B+ in Germany in 2027 on AWS and AI data centers, its Leo satellite inte…",
+   "url": "https://www.bloomberg.com/news/articles/2026-10-20/amazon-pledges-16-billion-in-germany-on-data-centers-prime",
+   "source": "Mark Bergen / Bloomberg",
+   "published_at": "2026-10-20T10:10:47Z",
+   "text": "Amazon pledges to spend €16B+ in Germany in 2027 on AWS and AI data centers, its Leo satellite internet, Prime Video media production, and a Berlin robotics lab. Amazon.com Inc. said it will invest more than €16 billion ($17.9 billion) next year in Germany for operations including data centers …",
    "via": "Techmeme"
-  },
-  {
-   "title": "WARNING: if you hack your parents' TV with claude code, DO NOT explain the process. they own a lot…",
-   "url": "https://x.com/mchlhess/status/2111873918432952691",
-   "source": "𝕏 @mchlhess",
-   "published_at": "2026-10-18T17:35:53Z",
-   "text": "WARNING: if you hack your parents' TV with claude code, DO NOT explain the process. they own a lot of things with model numbers. you will regret it.",
-   "author_name": "michael",
-   "likes": 8542,
-   "story": "Developers and vibe coders are using AI tools like Claude Code to remove sponsored ads on their smart TVs, speed up app launchers, disable tracking, and more"
   },
   {
    "title": "Publish fake stats, get cited in LLMs",
    "url": "https://peec.ai/blog/publish-stats-get-cited-the-tactic-that-put-my-data-all-over-the-web",
    "source": "Hacker News",
    "published_at": "2026-10-20T13:06:22Z",
-   "text": "164 points and 93 comments on Hacker News.",
-   "points": 164,
+   "text": "189 points and 103 comments on Hacker News.",
+   "points": 189,
    "discussion": "https://news.ycombinator.com/item?id=50165801"
   }
  ],
