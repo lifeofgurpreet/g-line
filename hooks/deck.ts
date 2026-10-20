@@ -76,7 +76,7 @@ export function lineNow(p: Payload, o: Options): Segment[] {
 // ------------------------------------------------------------------ line 2
 
 /**
- * `cache 58m`, green while warm, amber in its last minutes, then `cache cold`;
+ * `cache warm ~58m (57k)`, green while warm, amber in its last minutes, then `cache cold`;
  * after a compaction, the summary the next turn writes instead.
  */
 export function cacheNext(p: Payload, now: number): Segment | undefined {
@@ -94,8 +94,12 @@ export function cacheNext(p: Payload, now: number): Segment | undefined {
     // `~`: the mod knows when the last request ran and the cache's lifetime,
     // not the provider's own expiry.
     const about = left < 60 ? '<1m' : `~${duration(left, true)}`
+    const warm = `cache warm ${left < 60 ? '<1m' : `~${duration(left)}`}`
+    // Each request restarts the clock, so a busy session always reads ~59m:
+    // the size is what a lapse would cost.
+    const size = num(cache.recache_tokens_if_cold)
     return { key: 'cache', priority: 90, tone: soon ? 'warn' : 'ok',
-      forms: [`cache warm ${left < 60 ? '<1m' : `~${duration(left)}`}`, `cache ${about}`] }
+      forms: [...(size && size > 0 ? [`${warm} (${tokens(size)})`] : []), warm, `cache ${about}`] }
   }
   const recache = num(cache.recache_tokens_if_cold)
   return { key: 'cache', priority: 90, tone: 'warn',

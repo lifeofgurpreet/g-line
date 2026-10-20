@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.6.6 (2026-10-20): the warm cache says how much it holds
+
+- Line 2 reads `cache warm ~59m (57k)` while the cache is warm. Every request restarts the
+  clock, so in a busy session the time always read about 59 minutes and said little. The size
+  is what the next turn would rewrite if the cache lapsed. Narrow lines drop it first.
+
 ## 0.6.5 (2026-10-19): Pulse at your pace, without the sources you skip
 
 - `pulse_speed`: `normal` moves Pulse to the next headline every 8 seconds, `slow` every 40,

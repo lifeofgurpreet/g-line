@@ -20,7 +20,7 @@ const O = { now: NOW, utcOffsetMinutes: 0 }
 test('the deck: gauges on line 1, the model with its effort, the cache and the timing on line 2', async () => {
   const d = deck(P, O, {})
   expect(joined(d.now)).toBe('ctx 4% · 5h 1% · wk 79%!')
-  expect(joined(d.next)).toMatch(/^Opus 5\.5 high · cache warm ~59m · 5h resets in 3h 48m · wk out ~\S+ \S+, resets \S+ \S+$/)
+  expect(joined(d.next)).toMatch(/^Opus 5\.5 high · cache warm ~59m \(120k\) · 5h resets in 3h 48m · wk out ~\S+ \S+, resets \S+ \S+$/)
   expect(d.next.find(part => part.key === 'cache')?.tone).toBe('ok')
   expect(d.next.find(part => part.key === 'seven_day_next')?.tone).toBe('warn')
 })
@@ -35,7 +35,7 @@ test('narrow: line 2 keeps the effort and the cache, and the warning keeps its p
 
 test('the cache goes amber in its last minutes and says what a cold one costs', async () => {
   const soon = deck({ ...P, prompt_cache: { ...P.prompt_cache, expires_at: NOW + 4 * 60 } }, O, {})
-  expect(soon.next.find(part => part.key === 'cache')).toEqual({ key: 'cache', text: 'cache warm ~4m', tone: 'warn' })
+  expect(soon.next.find(part => part.key === 'cache')).toEqual({ key: 'cache', text: 'cache warm ~4m (120k)', tone: 'warn' })
   const cold = deck({ ...P, prompt_cache: { ...P.prompt_cache, warm: false, expires_at: NOW - 10 } }, O, {})
   expect(cold.next.find(part => part.key === 'cache')?.text).toBe('cache cold, next turn rebuilds 120k')
 })
