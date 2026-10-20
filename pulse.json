@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-20T16:15:40Z",
+ "generated_at": "2026-10-20T16:48:38Z",
  "items": [
   {
    "title": "DeepSeek open-sources DeepInfer, its high-performance inference framework that powers its productio…",
@@ -17,7 +17,7 @@
    "published_at": "2026-10-19T22:30:05Z",
    "text": "Our latest model advances bring stronger capabilities for building and migrating software in low-resource programming languages such as COBOL, Fortran, and Visual Basic. These languages power software that banks, governments, and businesses depend on. Progress here means…",
    "author_name": "OpenAI",
-   "likes": 8075,
+   "likes": 8158,
    "story": "OpenAI says its new models are better for building and migrating software in low-resource legacy programming languages like COBOL, Fortran, and Visual Basic"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-10-20T09:08:48Z",
    "text": "We found DeepSeek V4.1 Flash 1017 beats GPT 6 Sol on our multi-step offensive cybersecurity task. Sol was tested via the Daybreak trusted access program. We have been building a cybersecurity benchmark based on simulated corporate networks. This is a valuable indicator for the…",
    "author_name": "Vals AI",
-   "likes": 1246,
+   "likes": 1317,
    "story": "Vals AI found DeepSeek V4.1 Flash 1017 beats GPT 6 Sol on their multi-step offensive cybersecurity task. Sol was tested via the Daybreak trusted access program."
   },
   {
@@ -50,8 +50,8 @@
    "url": "https://github.com/deepseek-ai/DeepInfer",
    "source": "Hacker News",
    "published_at": "2026-10-20T09:08:54Z",
-   "text": "1621 points and 591 comments on Hacker News.",
-   "points": 1621,
+   "text": "1709 points and 622 comments on Hacker News.",
+   "points": 1709,
    "discussion": "https://news.ycombinator.com/item?id=50163277"
   },
   {
@@ -61,7 +61,7 @@
    "published_at": "2026-10-19T22:59:29Z",
    "text": "This was news to me. Eric Schmidt was in the Series A, and personally owns 1% of Anthropic.",
    "author_name": "Andrew Curran",
-   "likes": 1046,
+   "likes": 1053,
    "story": "Sources: Eric Schmidt, who owns ~1% of Anthropic after investing tens of millions in its Series A, is poised to have one of the largest windfalls from its IPO"
   },
   {
@@ -94,8 +94,8 @@
    "url": "https://peec.ai/blog/publish-stats-get-cited-the-tactic-that-put-my-data-all-over-the-web",
    "source": "Hacker News",
    "published_at": "2026-10-20T13:06:22Z",
-   "text": "149 points and 82 comments on Hacker News.",
-   "points": 149,
+   "text": "164 points and 93 comments on Hacker News.",
+   "points": 164,
    "discussion": "https://news.ycombinator.com/item?id=50165801"
   }
  ],
