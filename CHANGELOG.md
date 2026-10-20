@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.6.8 (2026-10-20): the account stays on a busy box
+
+- On a loaded machine the `account_command` sometimes ran past its 5 seconds (one call measured
+  5.5 s on a box with a load average near 94). The failure blanked the account, and the next
+  try came ten minutes later, so a remote session could go without its account for long
+  stretches. A command that fails or runs out of time now keeps the last reading and is tried
+  again a minute later. A command that answers still says what is now known, an empty line
+  included.
+
 ## 0.6.7 (2026-10-20): idle compaction shows even when no event reports it
 
 - After Claude Code compacted an idle session, line 2 could still read `cache cold, next turn

@@ -21,6 +21,8 @@ type World = {
   toolError: boolean
   writes: { path: string; text: string }[]
   config?: unknown
+  /** Answers a `process.run` itself; undefined leaves it to the git stand-in. */
+  run?: (argv: readonly string[]) => unknown
 }
 
 /** Claude Code beneath the mod, with what each test needs to steer it. */
@@ -68,7 +70,7 @@ function world(on: On, stored: Record<string, unknown> = {}, kept?: Record<strin
   on('session.id', () => ({ value: 'session-1' }))
   on('session.model', () => ({ value: 'claude-opus-5-5' }))
   on('settings.read', () => ({ value: {} }))
-  on('process.run', () => ({ value: { exitCode: 0, stdout: '## feat/secret-branch\n', stderr: '' } }) as never)
+  on('process.run', ($, e) => (w.run?.(e.argv) ?? { value: { exitCode: 0, stdout: '## feat/secret-branch\n', stderr: '' } }) as never)
   on('session.start', ($, e) => ({ cwd: e.cwd }))
   on('command.register', () => ({ value: undefined }) as never)
   on('fs.read', ($, e) => (w.config !== undefined && /\/(g-line|glanceline)\/config\.json$/.test(e.path)
@@ -360,6 +362,37 @@ test('/g-line card is a share card with no branch, path or account, copied as te
   expect(w.copied[0]).toMatch(/^g-line · session card\n/)
   expect(w.copied[0]).toMatch(/lifeofgurpreet\/g-line/)
   expect(w.copied[0]).not.toMatch(/secret-branch|someone@/)
+})
+
+test('an account reading that fails or runs out of time keeps the last one and is tried again within a minute', { timeoutMs: 30_000 }, async ($, on) => {
+  const w = world(on)
+  w.config = { account_command: ['acct'] }
+  let answer: 'seat' | 'slow' | 'other' = 'seat'
+  let calls = 0
+  w.run = argv => {
+    if (argv[0] !== 'acct') return undefined
+    calls += 1
+    if (answer === 'slow') throw new Error('timed out after 5000 ms')
+    return { value: { exitCode: 0, stdout: `account ${answer}@example.com (via CAAM)\n`, stderr: '' } }
+  }
+  const shown = async () => {
+    await $.command.run({ command: 'g-line', args: '' } as never)
+    const pane = await $.ui.mount({ plugin: 'g-line', surface: 'terminal', component: 'Pane', requestId: 'g-line',
+      props: { bodyColumns: 90 } as never, viewport: { columns: 160, rows: 50 } })
+    const text = (await pane.find({ type: 'Text', text: /@example\.com/ }))?.text
+    await pane.unmount()
+    return text
+  }
+  await start($)
+  expect(await shown()).toBe('account seat@example.com (via CAAM)')
+  answer = 'slow'
+  await w.clock.advance(10 * 60 * 1000)
+  expect(await shown()).toBe('account seat@example.com (via CAAM)')
+  const missed = calls
+  answer = 'other'
+  await w.clock.advance(60 * 1000)
+  expect(calls).toBeGreaterThan(missed)
+  expect(await shown()).toBe('account other@example.com (via CAAM)')
 })
 
 test('nothing is added above the prompt and no status row is pinned', { timeoutMs: 30_000 }, async ($, on) => {

@@ -306,6 +306,8 @@ let pending: Promise<Receipt> | undefined
 let lastHint = ''
 /** Whether this turn's first request rebuilt a cold cache. */
 let coldThisTurn = false
+/** Whether the last account reading failed or ran out of time. */
+let accountMissed = false
 /** The messages the next request is built from, counted once the last request's session went idle. */
 let idleCount: { lastAt: number; messages: number } | undefined
 /** Pulse's 8-second beats so far; the row moves on every `PULSE_BEATS[speed]` of them. */
@@ -415,15 +417,23 @@ async function refreshGit($: EngineInterface, force = false): Promise<void> {
   }
 }
 
+/**
+ * The account line, read again every ten minutes. A command that answers says
+ * what is now known, an empty line included; one that fails or runs past its
+ * time on a loaded box says nothing, so the last reading stays and the next
+ * try comes a minute later.
+ */
 async function refreshAccount($: EngineInterface): Promise<void> {
   const command = config.accountCommand
   if (!command) return
   try {
     const run = await $.process.run(command, { timeoutMs: 5000 })
-    const line = run.exitCode === 0 ? str(run.stdout.split('\n')[0], 120) : undefined
+    accountMissed = run.exitCode !== 0
+    if (accountMissed) return
+    const line = str(run.stdout.split('\n')[0], 120)
     await update($, snap, s => ({ ...s, account: line ?? null }))
   } catch {
-    await update($, snap, s => ({ ...s, account: null }))
+    accountMissed = true
   }
 }
 
@@ -727,7 +737,7 @@ async function heartbeat($: EngineInterface): Promise<void> {
   await update($, tick, () => beats)
   await nudge($)
   if (beats % 2 === 0) await refreshGit($)
-  if (beats % 40 === 0) await refreshAccount($)
+  if (beats % 40 === 0 || (accountMissed && beats % 4 === 0)) await refreshAccount($)
   if (beats % 20 === 0) void refreshPulse($)
   if (beats % 8 === 0) await watchIdle($).catch(() => undefined)
   if ((await configStamp($)) !== stamp) await reloadConfig($)
