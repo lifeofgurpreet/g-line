@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-20T18:24:21Z",
+ "generated_at": "2026-10-20T18:56:09Z",
  "items": [
   {
    "title": "DeepSeek open-sources DeepInfer, its high-performance inference framework that powers its productio…",
@@ -17,7 +17,7 @@
    "published_at": "2026-10-19T22:30:05Z",
    "text": "Our latest model advances bring stronger capabilities for building and migrating software in low-resource programming languages such as COBOL, Fortran, and Visual Basic. These languages power software that banks, governments, and businesses depend on. Progress here means…",
    "author_name": "OpenAI",
-   "likes": 8438,
+   "likes": 8517,
    "story": "OpenAI says its new models are better for building and migrating software in low-resource legacy programming languages like COBOL, Fortran, and Visual Basic"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-10-20T09:08:48Z",
    "text": "We found DeepSeek V4.1 Flash 1017 beats GPT 6 Sol on our multi-step offensive cybersecurity task. Sol was tested via the Daybreak trusted access program. We have been building a cybersecurity benchmark based on simulated corporate networks. This is a valuable indicator for the…",
    "author_name": "Vals AI",
-   "likes": 1475,
+   "likes": 1517,
    "story": "Vals AI found DeepSeek V4.1 Flash 1017 beats GPT 6 Sol on their multi-step offensive cybersecurity task. Sol was tested via the Daybreak trusted access program."
   },
   {
@@ -46,13 +46,13 @@
    "via": "Techmeme"
   },
   {
-   "title": "Steam Users Beg for \"No AI\" Filter as Vibecoders Flood Next Fest",
-   "url": "https://www.ign.com/articles/steam-fans-are-begging-for-a-no-ai-filter-as-steam-next-fest-is-filled-with-slop",
+   "title": "Publish fake stats, get cited in LLMs",
+   "url": "https://peec.ai/blog/publish-stats-get-cited-the-tactic-that-put-my-data-all-over-the-web",
    "source": "Hacker News",
-   "published_at": "2026-10-20T15:48:26Z",
-   "text": "109 points and 86 comments on Hacker News.",
-   "points": 109,
-   "discussion": "https://news.ycombinator.com/item?id=50168190"
+   "published_at": "2026-10-20T13:06:22Z",
+   "text": "255 points and 138 comments on Hacker News.",
+   "points": 255,
+   "discussion": "https://news.ycombinator.com/item?id=50165801"
   },
   {
    "title": "This was news to me. Eric Schmidt was in the Series A, and personally owns 1% of Anthropic.",
@@ -61,7 +61,7 @@
    "published_at": "2026-10-19T22:59:29Z",
    "text": "This was news to me. Eric Schmidt was in the Series A, and personally owns 1% of Anthropic.",
    "author_name": "Andrew Curran",
-   "likes": 1076,
+   "likes": 1082,
    "story": "Sources: Eric Schmidt, who owns ~1% of Anthropic after investing tens of millions in its Series A, is poised to have one of the largest windfalls from its IPO"
   },
   {
@@ -72,21 +72,21 @@
    "text": "Anthropic announces updates to embedding independent evaluators"
   },
   {
-   "title": "Amazon pledges to spend €16B+ in Germany in 2027 on AWS and AI data centers, its Leo satellite inte…",
-   "url": "https://www.bloomberg.com/news/articles/2026-10-20/amazon-pledges-16-billion-in-germany-on-data-centers-prime",
-   "source": "Mark Bergen / Bloomberg",
-   "published_at": "2026-10-20T10:10:47Z",
-   "text": "Amazon pledges to spend €16B+ in Germany in 2027 on AWS and AI data centers, its Leo satellite internet, Prime Video media production, and a Berlin robotics lab. Amazon.com Inc. said it will invest more than €16 billion ($17.9 billion) next year in Germany for operations including data centers …",
+   "title": "Salesforce agrees to acquire AI-powered marketing platform Braze for nearly $5.7B in enterprise val…",
+   "url": "https://www.bloomberg.com/news/articles/2026-10-20/salesforce-to-buy-marketing-platform-braze-for-5-7-billion",
+   "source": "Bloomberg",
+   "published_at": "2026-10-20T12:35:47Z",
+   "text": "Salesforce agrees to acquire AI-powered marketing platform Braze for nearly $5.7B in enterprise value, paying $47.50 per share, set to close from February 2027. Salesforce Inc. plugged a gap in its marketing platform with an agreement to buy Braze Inc. for an enterprise value of about $5.7 billion …",
    "via": "Techmeme"
   },
   {
-   "title": "Publish fake stats, get cited in LLMs",
-   "url": "https://peec.ai/blog/publish-stats-get-cited-the-tactic-that-put-my-data-all-over-the-web",
+   "title": "Tmux and Claude Code: Sessions, Send-Keys, and the Ceiling",
+   "url": "https://crystl.dev/guides/tmux-for-ai-agents/",
    "source": "Hacker News",
-   "published_at": "2026-10-20T13:06:22Z",
-   "text": "237 points and 128 comments on Hacker News.",
-   "points": 237,
-   "discussion": "https://news.ycombinator.com/item?id=50165801"
+   "published_at": "2026-10-19T05:55:31Z",
+   "text": "163 points and 124 comments on Hacker News.",
+   "points": 163,
+   "discussion": "https://news.ycombinator.com/item?id=50148855"
   }
  ],
  "sources": "curated, Techmeme, X (found via Techmeme, Reddit, the Internet Archive), Claude Code releases, Anthropic, Hacker News, Simon Willison"
