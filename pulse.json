@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-21T18:35:19Z",
+ "generated_at": "2026-10-21T19:07:23Z",
  "items": [
   {
    "title": "OpenAI says the PHP flaws, found using GPT-5.6 Sol, “are among several significant vulnerabilities”…",
@@ -11,14 +11,14 @@
    "via": "Techmeme"
   },
   {
-   "title": "Thank you for this, @_NathanCalvin. I appreciate and am a fan of the investigative work you’ve done…",
-   "url": "https://x.com/DarioAmodei/status/2112732230124818891",
-   "source": "𝕏 @DarioAmodei",
-   "published_at": "2026-10-21T02:26:30Z",
-   "text": "Thank you for this, @_NathanCalvin. I appreciate and am a fan of the investigative work you’ve done on behalf of AI safety and believe your comments are coming from a constructive, honest place, and that it benefits the public to have people whose job is to scrutinize the actions…",
-   "author_name": "Dario Amodei",
-   "likes": 3648,
-   "story": "Dario Amodei says Anthropic's “race to the top” makes AI safer, lists nine safety decisions with “substantial costs”, and admits to mishandling a draft AI bill"
+   "title": "We built ChatGPT’s ad stack to respond to an evolving conversation, while ensuring answers stay ind…",
+   "url": "https://x.com/OpenAIDevs/status/2112962753682198969",
+   "source": "𝕏 @OpenAIDevs",
+   "published_at": "2026-10-21T17:42:32Z",
+   "text": "We built ChatGPT’s ad stack to respond to an evolving conversation, while ensuring answers stay independent. Here’s how the LLM orchestrator, retrieval, ranking and auction tools work together.",
+   "author_name": "OpenAI Developers",
+   "likes": 434,
+   "story": "OpenAI expands ChatGPT ads to 26 additional countries, taking the total to 83 countries, and says the platform has 100K+ advertisers, up from 20K in late August"
   },
   {
    "title": "Claude Code 2.1.306 released",
@@ -28,17 +28,14 @@
    "text": "Fixed claude -p inside cloud sessions reporting \"Not logged in\" when started without the session's environment variables · Fixed an API error being replaced by \"prompt is too long\", and an unneeded compaction, in sessions with many MCP tools"
   },
   {
-   "title": "New on our Science Blog: designing protein binders against scorpion neurotoxins. Scorpions sting ab…",
-   "url": "https://x.com/AnthropicAI/status/2112579251555721573",
-   "source": "𝕏 @AnthropicAI",
-   "published_at": "2026-10-20T16:18:38Z",
-   "text": "New on our Science Blog: designing protein binders against scorpion neurotoxins. Scorpions sting about 1.2m people every year, and antivenoms are often costly or in short supply. Claude has made an early step toward finding new treatments.",
-   "author_name": "Anthropic",
-   "likes": 6955,
-   "story": "Anthropic and Citrini Research use an internal Claude model to autonomously generate protein minibinders against five scorpion neurotoxins, testing 211 designs",
-   "links": [
-    "https://www.anthropic.com/research/claude-scorpion-toxin-binder-design"
-   ]
+   "title": "Thank you for this, @_NathanCalvin. I appreciate and am a fan of the investigative work you’ve done…",
+   "url": "https://x.com/DarioAmodei/status/2112732230124818891",
+   "source": "𝕏 @DarioAmodei",
+   "published_at": "2026-10-21T02:26:30Z",
+   "text": "Thank you for this, @_NathanCalvin. I appreciate and am a fan of the investigative work you’ve done on behalf of AI safety and believe your comments are coming from a constructive, honest place, and that it benefits the public to have people whose job is to scrutinize the actions…",
+   "author_name": "Dario Amodei",
+   "likes": 3668,
+   "story": "Dario Amodei says Anthropic's “race to the top” makes AI safer, lists nine safety decisions with “substantial costs”, and admits to mishandling a draft AI bill"
   },
   {
    "title": "Nvidia unveils the DSX POD, a modular containerized version of its Vera Rubin reference architectur…",
@@ -53,9 +50,22 @@
    "url": "https://openai.com/index/openai-models-google-cloud/",
    "source": "Hacker News",
    "published_at": "2026-10-21T12:53:11Z",
-   "text": "116 points and 34 comments on Hacker News.",
-   "points": 116,
+   "text": "134 points and 46 comments on Hacker News.",
+   "points": 134,
    "discussion": "https://news.ycombinator.com/item?id=50180079"
+  },
+  {
+   "title": "New on our Science Blog: designing protein binders against scorpion neurotoxins. Scorpions sting ab…",
+   "url": "https://x.com/AnthropicAI/status/2112579251555721573",
+   "source": "𝕏 @AnthropicAI",
+   "published_at": "2026-10-20T16:18:38Z",
+   "text": "New on our Science Blog: designing protein binders against scorpion neurotoxins. Scorpions sting about 1.2m people every year, and antivenoms are often costly or in short supply. Claude has made an early step toward finding new treatments.",
+   "author_name": "Anthropic",
+   "likes": 6972,
+   "story": "Anthropic and Citrini Research use an internal Claude model to autonomously generate protein minibinders against five scorpion neurotoxins, testing 211 designs",
+   "links": [
+    "https://www.anthropic.com/research/claude-scorpion-toxin-binder-design"
+   ]
   },
   {
    "title": "Physicist Christopher Stubbs joins Anthropic's Long-Term Benefit Trust",
@@ -84,8 +94,8 @@
    "url": "https://openai.com/index/scaling-ai-research-for-complex-biological-data/",
    "source": "Hacker News",
    "published_at": "2026-10-21T13:37:00Z",
-   "text": "87 points and 36 comments on Hacker News.",
-   "points": 87,
+   "text": "95 points and 44 comments on Hacker News.",
+   "points": 95,
    "discussion": "https://news.ycombinator.com/item?id=50180752"
   },
   {
@@ -101,8 +111,8 @@
    "url": "https://arstechnica.com/security/2026/10/meta-muse-exposes-users-personal-and-business-secrets-when-they-share-conversations/",
    "source": "Hacker News",
    "published_at": "2026-10-21T00:45:59Z",
-   "text": "350 points and 153 comments on Hacker News.",
-   "points": 350,
+   "text": "361 points and 153 comments on Hacker News.",
+   "points": 361,
    "discussion": "https://news.ycombinator.com/item?id=50174687"
   },
   {
@@ -118,14 +128,6 @@
    "source": "Will Knight / Wired",
    "published_at": "2026-10-21T16:36:17Z",
    "text": "Recursive releases Flint, an open-weight, 40B-parameter coding model developed with its Eureka Machine AI system, which automated most of the development. Recursive makes the case that the benefits of using AI to build AI outweigh the risks. — For the past few days I've been testing …",
-   "via": "Techmeme"
-  },
-  {
-   "title": "Flapping Airplanes, which is working on methods to train AI models using less data and compute and…",
-   "url": "https://www.bloomberg.com/news/articles/2026-10-21/ai-research-startup-flapping-airplanes-valued-at-6-billion-in-round?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc5MjYwMjEzMywiZXhwIjoxNzkzMjA2OTMzLCJhcnRpY2xlSWQiOiJUTjlPSzFLSVVQU1UwMCIsImJjb25uZWN0SWQiOiIyMjNDRDM2NDg0QzY0OTc3QjY5ODE0Rjc1MTYxNDRGNyJ9.2ECQs48uRgaUOE9dkbaIGZ556qBFOPomk4VxMDMXvHE",
-   "source": "Rachel Metz / Bloomberg",
-   "published_at": "2026-10-21T17:46:08Z",
-   "text": "Flapping Airplanes, which is working on methods to train AI models using less data and compute and make the chips more efficient, raised $1B at a $6B valuation. Flapping Airplanes, a year-old artificial intelligence startup, has raised $1 billion in funding at a $6 billion valuation …",
    "via": "Techmeme"
   }
  ],
