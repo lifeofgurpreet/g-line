@@ -1,0 +1,187 @@
+import { expect, test } from 'claude-code/testing'
+
+import {
+  KEEP_WARM_DEFAULTS, agentModel, cappedEffort, changeText, effortKeepsCache, evaluate, guardForms, inHours, localTime,
+  parseGuard, parseHours, ruleText, seconds, stopText, tokenCount, warmDue,
+} from '../hooks/guard'
+import type { Facts, WarmFacts } from '../hooks/guard'
+
+// The operator's rules from the README, with a neutral shared account.
+const RULES = parseGuard({
+  rules: [
+    { left: 20, effort: 'medium' },
+    { left: 10, agents: 'sonnet' },
+    { left: 5, stop: true, unless_reset_within: '1h' },
+    { left: 10, stop: true, accounts: ['team@'], hours: '09:00-17:00 mon-fri', tz: 'Asia/Kuala_Lumpur' },
+  ],
+  keep_warm: { after: '45m', max: 2, min_context: '50k' },
+})
+
+// Tuesday 2026-10-20, 10:00 in Kuala Lumpur (UTC+8).
+const TUE_10_KL = Date.parse('2026-10-20T02:00:00Z')
+const HOUR = 3600
+
+function facts(left: number, o: { now?: number; resetsIn?: number | null; account?: string | null; week?: number } = {}): Facts {
+  const nowMs = o.now ?? TUE_10_KL
+  const resetsAt = o.resetsIn === null ? undefined : Math.floor(nowMs / 1000) + (o.resetsIn ?? 3 * HOUR)
+  return {
+    nowMs, account: o.account === undefined ? 'solo@example.com' : o.account,
+    windows: { '5h': { left, resetsAt }, ...(o.week !== undefined ? { week: { left: o.week, resetsAt: Math.floor(nowMs / 1000) + 4 * 86_400 } } : {}) },
+  }
+}
+
+test('the README\'s rules parse; nothing is in force without rules, and a malformed rule is said, not guessed', () => {
+  expect(RULES.errors).toEqual([])
+  expect(RULES.rules.map(r => r.id)).toEqual(['r0', 'r1', 'r2', 'r3'])
+  expect(RULES.rules[3]?.hours).toEqual({ from: 540, to: 1020, days: [1, 2, 3, 4, 5] })
+  expect(RULES.keepWarm).toEqual({ ...KEEP_WARM_DEFAULTS, after: 2700, max: 2, minContext: 50_000 })
+  const none = parseGuard(undefined)
+  expect(evaluate(none, facts(1)).rules).toEqual([])
+  const bad = parseGuard({ rules: [{ left: 120, stop: true }, { left: 10 }, { left: 10, stop: true, tz: 'Mars/Olympus' }, { left: 10, effort: 'turbo', stop: true }] })
+  expect(bad.rules.map(r => r.id)).toEqual(['r3'])
+  expect(bad.errors.length).toBe(4)
+  expect(parseGuard({ keep_warm: true }).keepWarm).toEqual(KEEP_WARM_DEFAULTS)
+  // keep-warm's timing is held to 10-55 minutes, and at most 6 re-reads.
+  expect(parseGuard({ keep_warm: { after: '2m', max: 50 } }).keepWarm).toEqual({ ...KEEP_WARM_DEFAULTS, after: 600, max: 6 })
+  expect(parseGuard(false).on).toBe(false)
+})
+
+test('thresholds: each rule acts at its percent left and below, the strictest action wins', () => {
+  expect(evaluate(RULES, facts(21)).rules).toEqual([])
+  const at20 = evaluate(RULES, facts(20))
+  expect(at20.effort).toBe('medium')
+  expect(at20.agents).toBeUndefined()
+  const at9 = evaluate(RULES, facts(9))
+  expect([at9.effort, at9.agents, at9.stop]).toEqual(['medium', 'sonnet', undefined])
+  const at4 = evaluate(RULES, facts(4))
+  expect(at4.stop?.rule.id).toBe('r2')
+  expect(evaluate(parseGuard({ rules: [{ left: 30, effort: 'high' }, { left: 20, effort: 'low' }] }), facts(10)).effort).toBe('low')
+})
+
+test('hysteresis: a rule in force lets go only 2 points past its threshold, or when the window resets', () => {
+  const on = evaluate(RULES, facts(20))
+  expect(evaluate(RULES, facts(21), on.active).effort).toBe('medium')
+  expect(evaluate(RULES, facts(22), on.active).effort).toBe('medium')
+  expect(evaluate(RULES, facts(22.5), on.active).effort).toBeUndefined()
+  // A new window (its reset moved) starts over: 21% there is above the threshold.
+  expect(evaluate(RULES, facts(21, { resetsIn: 5 * HOUR }), on.active).effort).toBeUndefined()
+})
+
+test('a stop waits while the window resets within the hour; with no reset time it does nothing', () => {
+  expect(evaluate(RULES, facts(4, { resetsIn: 30 * 60 })).stop).toBeUndefined()
+  expect(evaluate(RULES, facts(4, { resetsIn: 61 * 60 })).stop?.rule.id).toBe('r2')
+  expect(evaluate(RULES, facts(4, { resetsIn: null })).stop).toBeUndefined()
+})
+
+test('a shared-account rule: only that account, only in office hours in its own time zone', () => {
+  const team = { account: 'team@example.com (via CAAM)' }
+  expect(evaluate(RULES, facts(9, team)).stop?.rule.id).toBe('r3')
+  expect(evaluate(RULES, facts(9, { account: 'TEAM@example.com' })).stop?.rule.id).toBe('r3')
+  expect(evaluate(RULES, facts(9)).stop).toBeUndefined()
+  // No account reading: the rule waits.
+  expect(evaluate(RULES, facts(9, { account: null })).stop).toBeUndefined()
+  // 18:00 in Kuala Lumpur, and Saturday 10:00 there: out of hours.
+  expect(evaluate(RULES, facts(9, { ...team, now: Date.parse('2026-10-20T10:00:00Z') })).stop).toBeUndefined()
+  expect(evaluate(RULES, facts(9, { ...team, now: Date.parse('2026-10-24T02:00:00Z') })).stop).toBeUndefined()
+  // Monday 09:00 sharp is in; 08:59 is out, even though it's Sunday evening in UTC.
+  expect(evaluate(RULES, facts(9, { ...team, now: Date.parse('2026-10-19T01:00:00Z') })).stop?.rule.id).toBe('r3')
+  expect(evaluate(RULES, facts(9, { ...team, now: Date.parse('2026-10-19T00:59:00Z') })).stop).toBeUndefined()
+  // Leaving the account lets go at once, hysteresis or not.
+  const on = evaluate(RULES, facts(9, team))
+  expect(evaluate(RULES, facts(9), on.active).stop).toBeUndefined()
+})
+
+test('time windows: day lists and ranges, past midnight, and the machine\'s own zone when none is named', () => {
+  expect(parseHours('9-17 sat,sun')).toEqual({ from: 540, to: 1020, days: [0, 6] })
+  expect(parseHours('22:00-06:00')).toEqual({ from: 1320, to: 360, days: [0, 1, 2, 3, 4, 5, 6] })
+  expect(parseHours('fri-mon 10:00')).toBeUndefined()
+  const night = parseHours('22:00-06:00 fri')!
+  expect(inHours(night, { day: 5, minute: 23 * 60 })).toBe(true)
+  expect(inHours(night, { day: 6, minute: 5 * 60 })).toBe(true)
+  expect(inHours(night, { day: 6, minute: 23 * 60 })).toBe(false)
+  expect(localTime(TUE_10_KL, 'Asia/Kuala_Lumpur')).toEqual({ day: 2, minute: 600 })
+  expect(localTime(TUE_10_KL, undefined, 8 * 60)).toEqual({ day: 2, minute: 600 })
+  expect(localTime(TUE_10_KL, 'Nowhere/Else')).toBeUndefined()
+})
+
+test('a rule can watch the weekly window instead', () => {
+  const week = parseGuard({ rules: [{ left: 15, window: 'week', effort: 'low' }] })
+  expect(evaluate(week, facts(80, { week: 10 })).effort).toBe('low')
+  expect(evaluate(week, facts(5, { week: 40 })).effort).toBeUndefined()
+  expect(evaluate(week, facts(5)).effort).toBeUndefined()
+})
+
+test('missing figures decide nothing', () => {
+  expect(evaluate(RULES, { nowMs: TUE_10_KL, windows: {} }).rules).toEqual([])
+  expect(evaluate(RULES, { nowMs: TUE_10_KL, windows: { '5h': { left: Number.NaN } } }).rules).toEqual([])
+  expect(evaluate({ ...RULES, on: false }, facts(1)).rules).toEqual([])
+})
+
+test('effort only ever goes down, and keeps the cache only where Claude Code says it does', () => {
+  expect(cappedEffort('xhigh', 'medium')).toBe('medium')
+  expect(cappedEffort('medium', 'medium')).toBeUndefined()
+  expect(cappedEffort('low', 'medium')).toBeUndefined()
+  expect(cappedEffort(3, 'medium')).toBeUndefined()
+  expect(cappedEffort('high', undefined)).toBeUndefined()
+  expect(effortKeepsCache('claude-opus-5-5[1m]', {})).toBe(true)
+  expect(effortKeepsCache('claude-fable-5-1', {})).toBe(true)
+  expect(effortKeepsCache('claude-opus-5', {})).toBe(false)
+  expect(effortKeepsCache('claude-opus-5-5', { bedrock: true })).toBe(false)
+  expect(effortKeepsCache('claude-sonnet-5-5', { noBetas: true })).toBe(false)
+})
+
+test('a subagent moves only to a cheaper model: never a fork, never up', () => {
+  const spawn = { parentModel: 'claude-opus-5-5', fork: false }
+  expect(agentModel('sonnet', spawn)).toBe('sonnet')
+  expect(agentModel('sonnet', { ...spawn, model: 'opus' })).toBe('sonnet')
+  expect(agentModel('sonnet', { ...spawn, model: 'haiku' })).toBeUndefined()
+  expect(agentModel('sonnet', { ...spawn, known: 'claude-haiku-5-5' })).toBeUndefined()
+  expect(agentModel('sonnet', { ...spawn, fork: true })).toBeUndefined()
+  expect(agentModel('sonnet', { ...spawn, parentModel: 'claude-sonnet-5-5' })).toBeUndefined()
+  expect(agentModel('mystery', spawn)).toBeUndefined()
+  expect(agentModel(undefined, spawn)).toBeUndefined()
+})
+
+test('what the guard says: the stop, what started and ended, line 2', () => {
+  const stop = evaluate(RULES, facts(4))
+  const text = stopText(stop.stop!, TUE_10_KL, 8 * 60)
+  expect(text).toBe('g-line guard stopped this prompt: 4% of the 5-hour window left (your rule: stop at 5%). It resets at 13:00, in 3h 0m.'
+    + ' /g-line guard once lets the next prompt through; /g-line guard pause, an hour of them.')
+  expect(changeText(undefined, evaluate(RULES, facts(20)))).toBe('g-line guard: the conversation runs at effort medium.')
+  expect(changeText(evaluate(RULES, facts(20)), stop)).toBe('g-line guard: new prompts stop (4% of the 5-hour window left); new subagents run on sonnet.')
+  expect(changeText(stop, evaluate(RULES, facts(90, { resetsIn: 5 * HOUR }), stop.active)))
+    .toBe('g-line guard: prompts go through again; effort is yours again; subagents pick their own model again.')
+  expect(changeText(stop, stop)).toBeUndefined()
+  expect(guardForms(stop)).toEqual({ forms: ['guard: stopped, 4% 5h left', 'guard: stopped'], tone: 'bad' })
+  expect(guardForms(evaluate(RULES, facts(9)))).toEqual({ forms: ['guard: effort medium, agents sonnet', 'guard on'], tone: 'warn' })
+  expect(guardForms(stop, 1800)).toEqual({ forms: ['guard paused 30m', 'guard paused'], tone: 'dim' })
+  expect(guardForms(evaluate(RULES, facts(50)))).toBeUndefined()
+  expect(ruleText(RULES.rules[3]!)).toBe('at 10% of 5h left, on accounts "team@", 09:00-17:00 Mon,Tue,Wed,Thu,Fri (Asia/Kuala_Lumpur): stop new prompts')
+  expect(ruleText(RULES.rules[2]!)).toBe('at 5% of 5h left, unless it resets within 60m: stop new prompts')
+})
+
+test('keep-warm: only an idle, warm, hour-long cache worth keeping, a bounded number of times', () => {
+  const k = RULES.keepWarm
+  const base: WarmFacts = { now: 10_000 + 46 * 60, lastAt: 10_000, ttl: '1h', prefix: 120_000, compacted: false, compactionCovers: false,
+    done: 0, thisHour: 0, fiveHourLeft: 60, stopped: false, busy: false, jitter: 0 }
+  expect(warmDue(k, base).due).toBe(true)
+  expect(warmDue(undefined, base).due).toBe(false)
+  expect(warmDue(k, { ...base, now: 10_000 + 40 * 60 }).why).toBe('not idle long enough')
+  expect(warmDue(k, { ...base, jitter: 120 }).why).toBe('not idle long enough')
+  expect(warmDue(k, { ...base, now: 10_000 + 59 * 60 }).why).toBe('the cache has lapsed')
+  expect(warmDue(k, { ...base, ttl: '5m' }).due).toBe(false)
+  expect(warmDue(k, { ...base, prefix: 30_000 }).due).toBe(false)
+  expect(warmDue(k, { ...base, compactionCovers: true }).why).toBe('Claude Code compacts this conversation when idle')
+  expect(warmDue(k, { ...base, compacted: true }).due).toBe(false)
+  expect(warmDue(k, { ...base, done: 2 }).due).toBe(false)
+  expect(warmDue(k, { ...base, thisHour: 6 }).due).toBe(false)
+  expect(warmDue(k, { ...base, stopped: true }).due).toBe(false)
+  expect(warmDue(k, { ...base, fiveHourLeft: 10 }).due).toBe(false)
+  expect(warmDue(k, { ...base, fiveHourLeft: undefined }).due).toBe(false)
+  expect(warmDue(k, { ...base, busy: true }).due).toBe(false)
+})
+
+test('times and sizes as people write them', () => {
+  expect([seconds('45m'), seconds('1h'), seconds('1h30m'), seconds('90s'), seconds(30), seconds('soon')]).toEqual([2700, 3600, 5400, 90, 1800, undefined])
+  expect([tokenCount('50k'), tokenCount('1.5m'), tokenCount(2000), tokenCount('lots')]).toEqual([50_000, 1_500_000, 2000, undefined])
+})

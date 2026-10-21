@@ -22,14 +22,24 @@ coding agents and for people.
    user plugins). Never parse the transcript, never
    estimate what the engine reports, never make a network call, never write into the system
    prompt. The one network request is Pulse's GET of a static file, and only when the person
-   turns Pulse on.
+   turns Pulse on. Keep-warm's re-read (rule 5's guard) is Claude Code's own request through
+   `$.model.fork`, made only when the person configured it.
 4. **Private by default.** No account, email, branch, path or repository name shows unless
    configured (`account_command`, `git: true`). The share card leaves all of them out.
    Notifications don't carry agent descriptions unless `notify.agents` is on.
-5. **Observe, never steer.** Tool calls are observed (`await next(e)`), never gated or
-   rewritten. The coach only suggests (`prompt.suggest`), and it's off by default. The
-   `status` tool Claude can call (opt-in) is read-only and returns no advice. Commands answer
-   with toasts and return `{}`, because Claude reads a command's text.
+5. **Observe; steer only by the person's own rules, and say so.** Tool calls are observed
+   (`await next(e)`), never gated or rewritten. The coach only suggests (`prompt.suggest`),
+   and it's off by default. The `status` tool Claude can call (opt-in) is read-only and
+   returns no advice. Commands answer with toasts and return `{}`, because Claude reads a
+   command's text. The one exception is the **guard** (`hooks/guard.ts`). It acts only on
+   rules the person wrote under `guard` in config.json, and with none it does nothing. It
+   may lower the main conversation's effort for a whole turn (`turn.step`), start new
+   subagents on a cheaper model (`agent.spawn`), refuse a prompt that would start a turn
+   (`prompt.submit`), and re-read an idle cache (`$.model.fork`). It never touches a tool
+   call, a running turn, the main model or the system prompt, and it never raises a cost.
+   Everything it does is said: a toast when a rule starts or stops, line 2 while one is in
+   force, the turn's receipt, and `/g-line guard`. A new guard action needs all four, and a
+   test that it does nothing without a rule.
 6. **Say what's known.** A projection reads `~`. A cost overlapped by background agents is left
    out, not guessed. A receipt states observations (`cache write 84k`), not causes.
 
@@ -47,6 +57,7 @@ coding agents and for people.
 | `hooks/extras.ts` | Pure: receipts (adaptive and fixed), agents, compaction forecast, the day ledger, the card, the coach |
 | `hooks/glance.ts` | Pure: the `status` tool's JSON snapshot |
 | `hooks/settings.ts` | Pure: the settings table (`SETTINGS`), defaults, `merge`, origins, and `/g-line`'s argument parser. Add a setting here and it gets a toggle, a command name and an origin |
+| `hooks/guard.ts` | Pure: the guard's rules (`parseGuard`, `evaluate` with thresholds, hysteresis, accounts, hours), what it may change (`cappedEffort`, `agentModel`), what it says, and keep-warm's limits (`warmDue`) |
 | `hooks/pulse.ts` | Pure: Pulse feed parsing, cleaning (escapes, controls, https only), the spinner ticker, the row under the prompt, the reader's paging, the cycle's rules (`pickNext`), and Claude Code's own rule for drawing links (`linksDrawn`) |
 | `tools/pulse/build_pulse.py` | Operator tooling, not the mod: builds the Pulse feed and pushes it to the `pulse` branch |
 | `types/index.d.ts` | The `$.state` contract (`PluginState['g-line']`); self-contained, no imports |

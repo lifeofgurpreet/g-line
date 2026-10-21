@@ -265,6 +265,7 @@ Layers, lowest first: defaults, `config.json`, `/config`, then choices made with
 | `footer_labels` | `true`, `false`: agents and compaction in the footer (one-line layout) | `true` |
 | `short_hints` | `true` draws `(shift+tab to cycle)` as `⇧⇥` | `true` |
 | `export_state` | `true` writes the figures as JSON under `~/.cache/g-line/state/` for tmux and other bars | `false` |
+| `guard` | Your rules for a low usage window, and keep-warm (see Guard). With none, g-line changes nothing | none |
 | `reset_threshold`, `long_turn_seconds`, `cache_ttl`, `icons`, `segments`, `preset`, `account_command` | See `hooks/settings.ts`. `account_command` runs a command you choose and shows its first line; off unless set | |
 
 `~/.config/glanceline/config.json` from 0.4 is still read, and `g-line/config.json` wins.
@@ -280,6 +281,91 @@ the result enters the conversation like any tool result, so it goes to your mode
 with the rest of the conversation; and the tool is deferred only where tool search is
 available.
 
+### Guard: your rules for a low window (opt-in)
+
+Everything else in g-line only watches. The guard acts, but only on rules you write, and it
+says what it did. With no `guard` block in `config.json` it does nothing. Each rule says how
+much of a usage window is left (`left`, in percent, the 5-hour window unless it says
+`"window": "week"`) and one thing to do from then on:
+
+```json
+{
+  "account_command": ["my-account-tool", "--label"],
+  "guard": {
+    "rules": [
+      { "left": 20, "effort": "medium" },
+      { "left": 10, "agents": "sonnet" },
+      { "left": 5, "stop": true, "unless_reset_within": "1h" },
+      { "left": 10, "stop": true, "accounts": ["team@"], "hours": "09:00-17:00 mon-fri", "tz": "Asia/Kuala_Lumpur" }
+    ],
+    "keep_warm": { "after": "45m", "max": 2, "min_context": "50k" }
+  }
+}
+```
+
+That reads: at 20% left, run the conversation at effort `medium`. At 10%, start new subagents
+on Sonnet. At 5%, stop new prompts, unless the window resets within the hour. And on a shared
+account (one whose `account_command` line contains `team@`), stop at 10% during office
+hours in Kuala Lumpur, so teammates keep some of the window.
+
+- **`effort`** lowers the main conversation's effort, never raises it, and applies from the
+  start of a turn to its end. On Opus 5.5, Sonnet 5.5, Haiku 5.5 and Fable 5.1 through the
+  Claude API (an API key or a Claude subscription), Claude Code keeps the prompt cache when
+  effort changes. Elsewhere (Bedrock, Vertex, Foundry, other models) a change of effort reads
+  the whole conversation again, so the guard waits until the cache has gone cold, and line 2
+  says `effort medium when cache cold`. The guard never switches the main model, since that
+  always rebuilds the cache.
+- **`agents`** starts new subagents on that model (`sonnet`, `haiku`, or a model id). It only
+  ever moves an agent to a cheaper model: one that already runs on Haiku keeps it, and a fork
+  keeps its parent's model. Running agents aren't touched.
+- **`stop`** refuses a new prompt with the window, what's left and when it resets. That covers
+  typed prompts and machine-started ones (a `/loop` or schedule waking up, a background task's
+  notice when it would start a turn). It never stops a turn already running, or a tool call.
+  A slash command you type still goes through, so `/g-line guard once` lets the next prompt
+  through, and Tab puts it in the prompt box after a refusal. `/g-line guard pause` lets
+  everything through for an hour (or `pause 30m`) in every session on the machine, and
+  `/g-line guard resume` ends the pause.
+- **`unless_reset_within`**: the rule waits while the window resets within that time.
+- **`accounts`**: the rule applies only when the `account_command` line contains one of these
+  words, in any case. With no account reading, it doesn't apply.
+- **`hours`** (`09:00-17:00 mon-fri`, `22:00-06:00`, `9-17 sat,sun`) in **`tz`** (an IANA
+  zone; the machine's own when left out).
+
+A rule starts when the window falls to its threshold. It lets go when the window climbs 2
+points past it, the window resets, or one of its conditions stops holding. The percentages
+belong to the account, so every session using it crosses a threshold at about the same time.
+
+**You see what it does.** A toast says when a rule starts or stops. Line 2 says what's in force
+(`guard: effort medium, agents sonnet`, `guard: stopped, 4% 5h left`, `guard paused 52m`). A
+turn the guard changed says so on its closing line (`guard: effort medium, 1 agent on a
+cheaper model`). `/g-line guard` lists the rules in force, and the `/g-line` pane shows every
+rule. `/g-line guard off` turns your rules off until `/g-line guard on`.
+
+**Keep-warm** reads an idle conversation's prompt cache again before its hour runs out, so
+your next prompt doesn't pay to rebuild it. It sends the conversation again with one short
+question and no tools, through Claude Code (`$.model.fork`). Nothing is added to the
+conversation. The re-read counts toward your usage like any cached read. Its limits:
+
+- It runs only after `after` idle (45 minutes by default, 10 to 55), plus up to 3 minutes so
+  sessions that went quiet together don't all run at once.
+- It runs at most `max` times per idle stretch (2 by default) and `per_hour` times an hour
+  across every session on the machine (6).
+- It needs a cache of at least `min_context` (50k).
+- It needs an hour-long cache. Past your plan's limit, on usage credits, Claude Code uses
+  five-minute caches, so it stops there.
+- It needs `min_left` percent of the 5-hour window left (20).
+- It doesn't run while a stop rule is in force.
+- It stands aside for a conversation Claude Code compacts on its own when idle (`idleCompaction`,
+  at 200k tokens and up by default): that conversation gets summarised instead. Set
+  `"idleCompaction": false` in Claude Code's settings to keep big conversations warm instead.
+
+Each re-read is a toast (`Kept the cache warm: re-read 182k after 46 idle minutes (1 of 2)`).
+If a re-read, or the next turn, finds the cache gone anyway, keep-warm turns itself off for
+that session and says so. `"keep_warm": true` takes the defaults.
+
+When a model other than the one asked for answers a request (Claude Code fell back), the
+turn's closing line says `answered by Sonnet 5.5`, guard or not.
+
 ## Privacy and what it runs
 
 - **Reads:** the figures Claude Code hands every mod (usage, turns, tool calls and their
@@ -292,7 +378,10 @@ available.
   `account_command` only if you set one; `uname -s` once per session, to know whether a
   browser can open; `open` (or `xdg-open`) with a feed link when you ask the reader to open one.
 - **Sends:** nothing, unless Pulse is on (one GET of a static file) or you enable
-  `claude_reads` (the snapshot goes into your conversation).
+  `claude_reads` (the snapshot goes into your conversation). With keep-warm in your `guard`,
+  Claude Code sends your conversation again, through its own client, to re-read the cache.
+- **Changes:** nothing, unless you write `guard` rules: then a lower effort, a cheaper model
+  for new subagents, or a refused prompt, each as your rule says and each shown.
 - **Writes:** a one-line timestamp at `~/.cache/glanceline/live/<session id>` so an older
   status line command can step aside, and with `export_state`, a JSON file for other bars.
 

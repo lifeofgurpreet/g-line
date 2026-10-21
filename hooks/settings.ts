@@ -12,6 +12,8 @@ import { num } from './core'
 import type { Preset } from './core'
 import { receiptFields } from './extras'
 import type { ReceiptSpec } from './extras'
+import { NO_GUARD, parseGuard, seconds } from './guard'
+import type { GuardConfig } from './guard'
 
 export type Notify = { cache: boolean; reset: boolean; longTurn: boolean; agents: boolean }
 
@@ -48,13 +50,15 @@ export type Config = {
   toolStreak: number
   budget?: number
   exportState: boolean
+  /** The guard's rules and keep-warm (config.json `guard`); none by default, so it does nothing. */
+  guard: GuardConfig
 }
 
 export const DEFAULTS: Config = {
   lines: 2, pulse: false, pulseSpeed: 'normal', pulseMute: [], shortHints: true, git: false, preset: 'default', icons: 'none', toasts: true, cacheTtl: 'auto',
   notify: { cache: true, reset: true, longTurn: false, agents: false },
   longTurnSeconds: 60, resetThreshold: 80, receipt: 'adaptive', spinner: true, footerLabels: true,
-  coach: false, claudeReads: false, toolStreak: 3, exportState: false,
+  coach: false, claudeReads: false, toolStreak: 3, exportState: false, guard: NO_GUARD,
 }
 
 /** One layer over `base`: config.json's snake_case keys; anything malformed is ignored. */
@@ -107,6 +111,9 @@ export function merge(base: Config, raw: unknown): Config {
   const budget = num(r.today_budget)
   if (budget !== undefined && budget > 0) next.budget = budget
   if (typeof r.export_state === 'boolean') next.exportState = r.export_state
+  // `true`/`false` (from `/g-line guard on|off`) switches the rules the files wrote; an object replaces them.
+  if (typeof r.guard === 'boolean') next.guard = { ...base.guard, on: r.guard }
+  else if (r.guard && typeof r.guard === 'object') next.guard = parseGuard(r.guard)
   return next
 }
 
@@ -281,6 +288,8 @@ export type Command =
   | { kind: 'set'; setting: Setting; value: boolean | string | 'toggle' }
   | { kind: 'all'; value: boolean }
   | { kind: 'reset'; setting?: Setting }
+  | { kind: 'guard'; action: 'status' | 'once' | 'resume' | 'on' | 'off' }
+  | { kind: 'guard'; action: 'pause'; seconds: number }
   | { kind: 'error'; text: string }
 
 const ON = ['on', 'true', 'yes', '1', 'enable', 'enabled']
@@ -301,6 +310,7 @@ export function parseCommand(args: string): Command {
   if ((verb === 'news' || verb === 'read' || verb === 'reader') && !rest.length) return { kind: 'news' }
   if (verb === 'open' && !rest.length) return { kind: 'open' }
   if (verb === 'on' && !rest.length) return { kind: 'show' }
+  if (verb === 'guard') return guardCommand(rest)
   if (verb === 'off' && !rest.length) return { kind: 'hide' }
   if (verb === 'reset') {
     if (!rest.length) return { kind: 'reset' }
@@ -330,4 +340,18 @@ export function parseCommand(args: string): Command {
   const choice = raw === 'two' ? '2' : raw === 'one' ? '1' : raw
   if (setting.options.includes(choice)) return { kind: 'set', setting, value: choice }
   return { kind: 'error', text: `${setting.key} is one of ${setting.options.join(', ')}.` }
+}
+
+/** `/g-line guard [status|once|pause [30m]|resume|on|off]`. */
+function guardCommand(rest: string[]): Command {
+  const [action = 'status', ...more] = rest
+  if (action === 'pause') {
+    const s = more.length ? seconds(more.join('')) : 3600
+    if (s === undefined || s <= 0 || s > 24 * 3600) return { kind: 'error', text: '/g-line guard pause takes a time up to a day, such as 30m or 2h; an hour if none.' }
+    return { kind: 'guard', action: 'pause', seconds: s }
+  }
+  if (more.length === 0 && (action === 'status' || action === 'once' || action === 'resume' || action === 'on' || action === 'off')) {
+    return { kind: 'guard', action }
+  }
+  return { kind: 'error', text: '/g-line guard, then once, pause [30m], resume, on or off.' }
 }

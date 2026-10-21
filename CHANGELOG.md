@@ -1,5 +1,37 @@
 # Changelog
 
+## 0.7.0 (2026-10-21): a guard for a low window, by your own rules
+
+- **Guard (opt-in, off by default).** Rules you write under `guard` in config.json act when a
+  usage window runs low. With none, nothing changes. A rule names the percent left of the
+  5-hour window, or the week's, and one action. `effort` lowers the conversation's effort
+  for whole turns. `agents` starts new subagents on a cheaper model, never a dearer one.
+  `stop` refuses prompts that would start a turn, typed or started by a loop or schedule,
+  with the window, what's left, when it resets and the way past. Conditions are
+  `unless_reset_within`, `accounts` (matched against the `account_command` line, for shared
+  accounts) and `hours` in a `tz`. A rule lets go 2 points past its threshold, at the
+  window's reset, or when a condition stops holding. Missing figures decide nothing.
+- The guard never touches a tool call, a running turn or the main model. A lower effort keeps
+  the prompt cache on Opus 5.5, Sonnet 5.5, Haiku 5.5 and Fable 5.1 through the Claude API, as
+  Claude Code's own prompt-caching page says. Elsewhere the guard waits for the cache to go
+  cold before lowering it.
+- Everything it does is shown: a toast when a rule starts or stops, line 2 while one is in
+  force (`guard: effort medium, agents sonnet`, `guard: stopped, 4% 5h left`), the turn's
+  receipt (`guard: effort medium, 1 agent on a cheaper model`), `/g-line guard`, and the pane.
+  `/g-line guard once` lets one prompt through (Tab offers it after a refusal). `pause [30m]`
+  pauses the guard on the machine, `resume` ends a pause, and `off`/`on` switch your rules.
+- **Keep-warm** (`guard.keep_warm`) re-reads an idle conversation's hour-long prompt cache at
+  about 45 minutes, through Claude Code's own `$.model.fork`, which adds nothing to the
+  conversation. It runs at most twice per idle stretch and six times an hour across the
+  machine. It skips caches under 50k, a five-minute cache (as on usage credits), a low 5-hour
+  window, an active stop rule, and conversations Claude Code's idle compaction will summarise.
+  Each re-read is a toast and moves the cache countdown. A re-read, or a later turn, that
+  finds the cache gone turns it off for the session.
+- **Fallback on the receipt.** When a model other than the one asked for answers, the turn's
+  closing line says `answered by Sonnet 5.5`.
+- AGENTS.md rule 5 now says when g-line may steer (only by the person's rules) and what it
+  must show when it does.
+
 ## 0.6.9 (2026-10-21): Pulse's links, and headlines that don't come round every minute
 
 - **Links.** Since 0.6.3 Pulse's headline was a link only when `TERM_PROGRAM` named Ghostty,

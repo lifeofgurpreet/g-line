@@ -4,7 +4,7 @@
 // core.ts: the mod hands in what the engine reported, these turn it into
 // words, and the tests call them directly.
 
-import { SEP, clock, duration, pace, pct, tokens, width } from './core'
+import { SEP, clock, duration, modelName, pace, pct, tokens, width } from './core'
 import type { Segment, Tone, Window } from './core'
 import type { AgentRow, ContextView, Day, Forecast, Ledger, Receipt, Totals } from '../types'
 
@@ -115,6 +115,12 @@ export function costRatio(cost: number | undefined, overlap: boolean, earlier: r
  */
 export function receiptEvents(r: Receipt): Part[] {
   const events: Part[] = []
+  // The model that answered wasn't the one asked for: Claude Code fell back.
+  if (r.servedBy) events.push({ tone: 'bad', text: `answered by ${modelName(r.servedBy)}` })
+  // What the guard changed on this turn, by the person's own rules.
+  const guard = [r.guardEffort ? `effort ${r.guardEffort.to}` : '', r.guardAgents ? `${plural(r.guardAgents, 'agent')} on a cheaper model` : '']
+    .filter(Boolean)
+  if (guard.length) events.push({ tone: 'warn', text: `guard: ${guard.join(', ')}` })
   if (r.failures !== undefined && r.failures >= 2) {
     events.push({ tone: 'bad', text: r.failedTool ? `${r.failures} failed ${r.failedTool} calls` : `${r.failures} failed calls` })
   }

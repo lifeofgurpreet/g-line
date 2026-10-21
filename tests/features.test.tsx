@@ -975,3 +975,273 @@ test('/g-line news lists every item in the feed\'s order, the picked one in full
   expect(w.toasts[w.toasts.length - 1]).toBe('Opened news.ycombinator.com in your browser.')
   await pane.unmount()
 })
+
+// ------------------------------------------------------------------ guard
+
+const GUARD = {
+  rules: [
+    { left: 20, effort: 'medium' },
+    { left: 10, agents: 'sonnet' },
+    { left: 5, stop: true, unless_reset_within: '1h' },
+  ],
+}
+
+/** Claude Code beneath the guard: what each request, prompt and spawn arrived as at the bottom. */
+function engineBelow(on: On) {
+  const seen = { efforts: [] as unknown[], prompts: [] as string[], models: [] as (string | undefined)[], forks: 0 }
+  on('prompt.submit', ($, e) => {
+    seen.prompts.push(e.text)
+    return { text: e.text }
+  })
+  on('turn.step', async function* ($: unknown, e: { turnId: string; index: number; effort?: unknown; model: string }) {
+    seen.efforts.push(e.effort)
+    return { turnId: e.turnId, index: e.index, answer: '', toolUses: [], stopReason: 'end_turn',
+      usage: { input_tokens: 4, output_tokens: 300, cache_read_input_tokens: 90_000, cache_creation_input_tokens: 10_000, model: e.model } }
+  } as never)
+  on('agent.spawn', ($, e) => {
+    seen.models.push(e.model)
+    return { model: e.model ?? 'claude-opus-5-5', agentId: `a${seen.models.length}` } as never
+  })
+  return seen
+}
+
+async function step($: Engine, turnId: string, index: number, effort: string, model = 'claude-opus-5-5') {
+  const stream = $.turn.step({ turnId, index, model, effort, messageCount: 2 } as never)
+  for await (const _ of stream) { /* drain */ }
+  await stream.result
+}
+
+async function spawn($: Engine, type = 'general-purpose', model?: string) {
+  await $.agent.spawn({ tool_use_id: 'tu', prompt: 'p', description: 'Look into it', subagentType: type, ...(model ? { model } : {}),
+    provider: { plugin: 'engine', tier: 'core' }, parentModel: 'claude-opus-5-5', background: false, fork: false } as never)
+}
+
+async function measure($: Engine, w: World, percentUsed: number, resetsIn = 2 * 3600) {
+  w.usage.limits = [{ kind: 'five_hour', percentUsed, resetsAt: ISO(Math.floor(w.clock.now() / 1000) + resetsIn) }]
+  await $.session.measure({ context: { tokens: 100_000, window: 1_000_000, percent: 10 }, rateLimits: w.usage.limits,
+    cost: { usd: 1 }, changed: ['rateLimits'] })
+}
+
+/** The engine's hint line, for line 2 to sit under. */
+function hintBelow(on: On) {
+  on('ui.render', { component: 'PromptHint' }, ($, e) => {
+    const { Text } = $.ui.resolve(e)
+    return <Text>{e.props.hint}</Text>
+  })
+}
+
+const typed = (text: string) => ({ text, wait: false, origin: { kind: 'composer' } }) as never
+
+test('the guard is off by default: at 3% left nothing is refused, lowered or moved', { timeoutMs: 30_000 }, async ($, on) => {
+  const w = world(on)
+  const seen = engineBelow(on)
+  await start($)
+  await measure($, w, 97)
+  expect(await $.prompt.submit(typed('go on'))).toEqual({ text: 'go on' })
+  await $.turn.start({ text: 'go', turnId: 't1' })
+  await step($, 't1', 0, 'xhigh')
+  await spawn($)
+  expect(seen.efforts).toEqual(['xhigh'])
+  expect(seen.models).toEqual([undefined])
+  expect(w.toasts.some(t => t.includes('guard'))).toBe(false)
+})
+
+test('a stop rule refuses new prompts with the window, what is left and the way past; once and pause let them through', { timeoutMs: 30_000 }, async ($, on) => {
+  const w = world(on)
+  w.config = { guard: GUARD }
+  const seen = engineBelow(on)
+  hintBelow(on)
+  await start($)
+  await measure($, w, 96)
+  await w.clock.advance(15_000)
+  expect(w.toasts.filter(t => t.startsWith('g-line guard: new prompts stop (4% of the 5-hour window left)')).length).toBe(1)
+  const refused = await $.prompt.submit(typed('go on'))
+  expect(refused.drop).toMatch(/^g-line guard stopped this prompt: 4% of the 5-hour window left \(your rule: stop at 5%\)\. It resets at \d\d:\d\d, in 1h 59m\. \/g-line guard once/)
+  expect(w.suggested[w.suggested.length - 1]).toBe('/g-line guard once')
+  // A loop's or schedule's wakeup is refused too; a typed slash command and a delivery into a running turn are not.
+  expect((await $.prompt.submit({ text: 'check CI', wait: false, origin: { kind: 'scheduled-trigger' } } as never)).drop).toBeDefined()
+  expect((await $.prompt.submit({ text: '/compact', wait: false, origin: { kind: 'composer' }, command: { name: 'compact', args: '' } } as never)).drop).toBeUndefined()
+  expect((await $.prompt.submit({ text: 'agent done', wait: false, origin: { kind: 'task-notification' }, turnId: 't9' } as never)).drop).toBeUndefined()
+  await $.command.run({ command: 'g-line', args: 'guard once' } as never)
+  expect(await $.prompt.submit(typed('just this one'))).toEqual({ text: 'just this one' })
+  expect((await $.prompt.submit(typed('and this?'))).drop).toBeDefined()
+  await $.command.run({ command: 'g-line', args: 'guard pause 30m' } as never)
+  expect(await $.prompt.submit(typed('paused'))).toEqual({ text: 'paused' })
+  await $.command.run({ command: 'g-line', args: 'guard resume' } as never)
+  expect((await $.prompt.submit(typed('resumed'))).drop).toBeDefined()
+  expect(seen.prompts).toEqual(['/compact', 'agent done', 'just this one', 'paused'])
+  // Line 2 says so.
+  const ui = await $.ui.mount({ plugin: 'g-line', surface: 'terminal', component: 'PromptHint',
+    props: { isDraft: false, isWorking: false, hint: '? for shortcuts' }, viewport: { columns: 160, rows: 40 } })
+  expect(await ui.find({ type: 'Text', text: 'guard: stopped, 4% 5h left' })).toBeDefined()
+  await ui.unmount()
+  // Within the hour before the reset, the stop rule waits.
+  await measure($, w, 97, 40 * 60)
+  expect(await $.prompt.submit(typed('nearly reset'))).toEqual({ text: 'nearly reset' })
+})
+
+test('low on the window, the conversation runs at a lower effort and new subagents on Sonnet, and the receipt says so', { timeoutMs: 30_000 }, async ($, on) => {
+  const w = world(on)
+  w.config = { guard: GUARD }
+  const seen = engineBelow(on)
+  on('ui.render', { component: 'TurnDuration' }, ($, e) => {
+    const { Text } = $.ui.resolve(e)
+    return <Text>{`✻ ${e.props.word} for 1m 4s`}</Text>
+  })
+  await start($)
+  await measure($, w, 92)
+  await $.turn.start({ text: 'go', turnId: 't1' })
+  await step($, 't1', 0, 'xhigh')
+  await step($, 't1', 1, 'xhigh')
+  await spawn($)
+  await spawn($, 'Explore')
+  await spawn($, 'general-purpose', 'haiku')
+  // Effort only ever goes down: a request already at low stays there.
+  expect(seen.efforts).toEqual(['medium', 'medium'])
+  expect(seen.models).toEqual(['sonnet', undefined, 'haiku'])
+  await $.turn.complete({ answer: 'done', durationMs: 64_000, isAborted: false, turnId: 't1', reason: 'answer',
+    usage: { ...USAGE_ARGS, model: 'claude-opus-5-5' } })
+  await $.session.append({ message: { type: 'system', name: 'turn_duration', content: [] }, door: 'notice',
+    origin: { kind: 'engine' }, uuid: 'line-1' } as never)
+  const line = await $.ui.mount({ plugin: 'g-line', surface: 'terminal', component: 'TurnDuration', requestId: 'line-1',
+    props: { word: 'Baked', durationMs: 64_000 }, viewport: { columns: 160, rows: 40 } })
+  expect(await line.find({ type: 'Text', text: 'guard: effort medium, 1 agent on a cheaper model' })).toBeDefined()
+  await line.unmount()
+  // The window resets: effort is the person's again, said once.
+  await measure($, w, 3, 5 * 3600)
+  await w.clock.advance(15_000)
+  expect(w.toasts.filter(t => t.includes('effort is yours again')).length).toBe(1)
+  await $.turn.start({ text: 'go', turnId: 't2' })
+  await step($, 't2', 0, 'xhigh')
+  expect(seen.efforts[seen.efforts.length - 1]).toBe('xhigh')
+})
+
+test('where a change of effort would rebuild the cache, the guard waits for the cache to go cold', { timeoutMs: 30_000 }, async ($, on) => {
+  const w = world(on)
+  w.config = { guard: GUARD }
+  const seen = engineBelow(on)
+  hintBelow(on)
+  await start($)
+  await measure($, w, 50)
+  await $.turn.start({ text: 'go', turnId: 't1' })
+  await step($, 't1', 0, 'high', 'claude-opus-5')
+  await measure($, w, 85)
+  await $.turn.start({ text: 'go', turnId: 't2' })
+  await step($, 't2', 0, 'high', 'claude-opus-5')
+  expect(seen.efforts).toEqual(['high', 'high'])
+  const ui = await $.ui.mount({ plugin: 'g-line', surface: 'terminal', component: 'PromptHint',
+    props: { isDraft: false, isWorking: false, hint: '? for shortcuts' }, viewport: { columns: 200, rows: 40 } })
+  expect(await ui.find({ type: 'Text', text: 'guard: effort medium when cache cold' })).toBeDefined()
+  await ui.unmount()
+  await w.clock.advance(2 * 3600 * 1000)
+  await measure($, w, 85)
+  await $.turn.start({ text: 'back', turnId: 't3' })
+  await step($, 't3', 0, 'high', 'claude-opus-5')
+  expect(seen.efforts[2]).toBe('medium')
+})
+
+test('a model other than the one asked for answers: the receipt says which', { timeoutMs: 30_000 }, async ($, on) => {
+  const w = world(on)
+  on('turn.step', async function* ($: unknown, e: { turnId: string; index: number }) {
+    return { turnId: e.turnId, index: e.index, answer: '', toolUses: [], stopReason: 'end_turn',
+      usage: { input_tokens: 4, output_tokens: 300, cache_read_input_tokens: 0, cache_creation_input_tokens: 9000, model: 'claude-sonnet-5-5' } }
+  } as never)
+  on('ui.render', { component: 'TurnDuration' }, ($, e) => {
+    const { Text } = $.ui.resolve(e)
+    return <Text>{`✻ ${e.props.word}`}</Text>
+  })
+  await start($)
+  await $.turn.start({ text: 'go', turnId: 't1' })
+  await step($, 't1', 0, 'high', 'claude-opus-5-5[1m]')
+  await $.turn.complete({ answer: 'done', durationMs: 4000, isAborted: false, turnId: 't1', reason: 'answer',
+    usage: { ...USAGE_ARGS, model: 'claude-sonnet-5-5' } })
+  await $.session.append({ message: { type: 'system', name: 'turn_duration', content: [] }, door: 'notice',
+    origin: { kind: 'engine' }, uuid: 'line-1' } as never)
+  const line = await $.ui.mount({ plugin: 'g-line', surface: 'terminal', component: 'TurnDuration', requestId: 'line-1',
+    props: { word: 'Baked', durationMs: 4000 }, viewport: { columns: 160, rows: 40 } })
+  expect(await line.find({ type: 'Text', text: 'answered by Sonnet 5.5' })).toBeDefined()
+  await line.unmount()
+  void w
+})
+
+test('keep-warm re-reads an idle hour-long cache at about 45 minutes, says so, and stops at its limit', { timeoutMs: 30_000 }, async ($, on) => {
+  const w = world(on)
+  w.config = { guard: { keep_warm: { after: '45m', max: 2, min_context: '50k' } } }
+  engineBelow(on)
+  hintBelow(on)
+  const forks: string[] = []
+  on('model.fork', ($, e) => {
+    forks.push(e.prompt)
+    return { value: { isAnswered: true, text: 'ok', usage: { input_tokens: 20, output_tokens: 3, cache_read_input_tokens: 100_000, cache_creation_input_tokens: 0 } } } as never
+  })
+  await start($)
+  await measure($, w, 40)
+  await $.turn.start({ text: 'go', turnId: 't1' })
+  await step($, 't1', 0, 'high')
+  await $.turn.complete({ answer: 'done', durationMs: 4000, isAborted: false, turnId: 't1', reason: 'answer',
+    usage: { ...USAGE_ARGS, model: 'claude-opus-5-5' } })
+  await w.clock.advance(40 * 60_000)
+  expect(forks.length).toBe(0)
+  await w.clock.advance(9 * 60_000)
+  expect(forks.length).toBe(1)
+  expect(forks[0]).toMatch(/automatic keep-alive from the g-line plugin/)
+  expect(w.toasts.filter(t => t.startsWith('Kept the cache warm: re-read 100k')).length).toBe(1)
+  // The countdown starts over from the re-read: still warm well past the first hour.
+  await w.clock.advance(30 * 60_000)
+  const ui = await $.ui.mount({ plugin: 'g-line', surface: 'terminal', component: 'PromptHint',
+    props: { isDraft: false, isWorking: false, hint: '? for shortcuts' }, viewport: { columns: 200, rows: 40 } })
+  expect(await ui.find({ type: 'Text', text: /^cache warm/ })).toBeDefined()
+  await ui.unmount()
+  await w.clock.advance(60 * 60_000)
+  expect(forks.length).toBe(2)
+  await w.clock.advance(120 * 60_000)
+  expect(forks.length).toBe(2)
+})
+
+test('keep-warm stops for the session when its re-read finds no cache', { timeoutMs: 30_000 }, async ($, on) => {
+  const w = world(on)
+  w.config = { guard: { keep_warm: true } }
+  engineBelow(on)
+  let forks = 0
+  on('model.fork', () => {
+    forks += 1
+    return { value: { isAnswered: true, text: 'ok', usage: { input_tokens: 20, output_tokens: 3, cache_read_input_tokens: 0, cache_creation_input_tokens: 100_000 } } } as never
+  })
+  await start($)
+  await measure($, w, 40)
+  const turnOf = async (id: string) => {
+    await $.turn.start({ text: 'go', turnId: id })
+    await step($, id, 0, 'high')
+    await $.turn.complete({ answer: 'done', durationMs: 4000, isAborted: false, turnId: id, reason: 'answer',
+      usage: { ...USAGE_ARGS, model: 'claude-opus-5-5' } })
+  }
+  await turnOf('t1')
+  await w.clock.advance(50 * 60_000)
+  expect(forks).toBe(1)
+  expect(w.toasts.filter(t => t.startsWith('Keep-warm stopped for this session: its re-read found no cache (read 0, wrote 100k)')).length).toBe(1)
+  await turnOf('t2')
+  await w.clock.advance(50 * 60_000)
+  expect(forks).toBe(1)
+})
+
+test('keep-warm stands aside where Claude Code compacts an idle conversation itself', { timeoutMs: 30_000 }, async ($, on) => {
+  const w = world(on)
+  w.config = { guard: { keep_warm: true } }
+  on('turn.step', async function* ($: unknown, e: { turnId: string; index: number }) {
+    return { turnId: e.turnId, index: e.index, answer: '', toolUses: [], stopReason: 'end_turn',
+      usage: { input_tokens: 4, output_tokens: 300, cache_read_input_tokens: 240_000, cache_creation_input_tokens: 10_000, model: 'claude-opus-5-5' } }
+  } as never)
+  let forks = 0
+  on('model.fork', () => {
+    forks += 1
+    return { value: { isAnswered: true, text: 'ok', usage: { input_tokens: 20, output_tokens: 3, cache_read_input_tokens: 250_000, cache_creation_input_tokens: 0 } } } as never
+  })
+  await start($)
+  await measure($, w, 40)
+  await $.turn.start({ text: 'go', turnId: 't1' })
+  await step($, 't1', 0, 'high')
+  await $.turn.complete({ answer: 'done', durationMs: 4000, isAborted: false, turnId: 't1', reason: 'answer',
+    usage: { ...USAGE_ARGS, model: 'claude-opus-5-5' } })
+  await w.clock.advance(55 * 60_000)
+  expect(forks).toBe(0)
+})

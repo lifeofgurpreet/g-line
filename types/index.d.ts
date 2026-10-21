@@ -64,6 +64,12 @@ export type Receipt = {
   window?: number
   /** The turn's cost over the median of the recent attributable turns, fixed when it closed. */
   ratio?: number
+  /** The guard lowered the main conversation's effort for this turn. */
+  guardEffort?: { from: string; to: string }
+  /** Subagents the guard started on a cheaper model during the turn. */
+  guardAgents?: number
+  /** The model that answered, when it wasn't the one the request asked for (a fallback). */
+  servedBy?: string
 }
 
 /** The turn running now, for the spinner. */
@@ -86,6 +92,9 @@ export type TurnLive = {
   cold?: boolean
   overlap?: boolean
   compacted?: { before?: number; after?: number }
+  guardEffort?: { from: string; to: string }
+  guardAgents?: number
+  servedBy?: string
 }
 
 export type AgentRow = {

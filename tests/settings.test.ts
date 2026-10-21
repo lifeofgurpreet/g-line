@@ -58,7 +58,7 @@ test('merge reads every config.json key, and ignores malformed values', () => {
     lines: 1, pulse: true, git: true, shortHints: false, preset: 'full', icons: 'nerd', toasts: false, cacheTtl: '5m',
     accountCommand: ['echo', 'x'], notify: { cache: false, reset: false, longTurn: true, agents: true },
     longTurnSeconds: 90, resetThreshold: 50, receipt: ['cost', 'cache', 'tools'], spinner: false, footerLabels: false,
-    coach: true, claudeReads: true, toolStreak: 5, budget: 20, exportState: true, pulseSpeed: 'paused', pulseMute: ['𝕏'],
+    coach: true, claudeReads: true, toolStreak: 5, budget: 20, exportState: true, pulseSpeed: 'paused', pulseMute: ['𝕏'], guard: { on: true, rules: [], errors: [] },
   })
   expect(merge(DEFAULTS, { pulse: 'yes', lines: 7, notify: 'loud', reset_threshold: 400, icons: 'emoji' })).toEqual(DEFAULTS)
   expect(merge(DEFAULTS, { notify: false }).notify).toEqual({ cache: false, reset: false, longTurn: false, agents: false })
@@ -129,4 +129,21 @@ test('/g-line arguments: the pane, settings, set, toggle, reset, all, and the 0.
   expect(parseCommand('set warp on').kind).toBe('error')
   expect(parseCommand('set').kind).toBe('error')
   expect(parseCommand('reset warp').kind).toBe('error')
+})
+
+test('/g-line guard: status, once, pause with a time, resume, on and off; guard on/off keeps the rules the files wrote', () => {
+  expect(parseCommand('guard')).toEqual({ kind: 'guard', action: 'status' })
+  expect(parseCommand('guard once')).toEqual({ kind: 'guard', action: 'once' })
+  expect(parseCommand('guard pause')).toEqual({ kind: 'guard', action: 'pause', seconds: 3600 })
+  expect(parseCommand('guard pause 30m')).toEqual({ kind: 'guard', action: 'pause', seconds: 1800 })
+  expect(parseCommand('guard pause forever').kind).toBe('error')
+  expect(parseCommand('guard resume')).toEqual({ kind: 'guard', action: 'resume' })
+  expect(parseCommand('guard off')).toEqual({ kind: 'guard', action: 'off' })
+  expect(parseCommand('guard sideways').kind).toBe('error')
+  const file = merge(DEFAULTS, { guard: { rules: [{ left: 10, stop: true }] } })
+  const off = merge(file, { guard: false })
+  expect([off.guard.on, off.guard.rules.length]).toEqual([false, 1])
+  expect(merge(off, { guard: true }).guard.on).toBe(true)
+  // `/g-line set all on` never turns a guard on: it isn't a toggle.
+  expect(SETTINGS.some(s => s.key === 'guard')).toBe(false)
 })
