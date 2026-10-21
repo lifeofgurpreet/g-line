@@ -1,7 +1,7 @@
 import { expect, test } from 'claude-code/testing'
 
 import {
-  KEEP_WARM_DEFAULTS, accountKey, agentModel, cappedEffort, changeText, effortKeepsCache, evaluate, guardForms, inHours, leaseFree,
+  KEEP_WARM_DEFAULTS, accountIdentity, accountKey, agentModel, cappedEffort, changeText, effortKeepsCache, evaluate, guardForms, inHours, leaseFree,
   localTime, parseGuard, parseHours, readBack, ruleText, seconds, simulated, stopText, tokenCount, warmDue, warmForms,
 } from '../hooks/guard'
 import type { Facts, WarmFacts } from '../hooks/guard'
@@ -131,13 +131,16 @@ test('effort only ever goes down, and keeps the cache only where Claude Code say
 })
 
 test('a subagent moves only to a cheaper model: never a fork, never up', () => {
-  const spawn = { parentModel: 'claude-opus-5-5', fork: false }
+  // A general-purpose agent runs on its parent's model, here Opus.
+  const spawn = { known: 'claude-opus-5-5', fork: false }
   expect(agentModel('sonnet', spawn)).toBe('sonnet')
   expect(agentModel('sonnet', { ...spawn, model: 'opus' })).toBe('sonnet')
   expect(agentModel('sonnet', { ...spawn, model: 'haiku' })).toBeUndefined()
   expect(agentModel('sonnet', { ...spawn, known: 'claude-haiku-5-5' })).toBeUndefined()
   expect(agentModel('sonnet', { ...spawn, fork: true })).toBeUndefined()
-  expect(agentModel('sonnet', { ...spawn, parentModel: 'claude-sonnet-5-5' })).toBeUndefined()
+  expect(agentModel('sonnet', { ...spawn, known: 'claude-sonnet-5-5' })).toBeUndefined()
+  // A type whose own definition picks its model (a plugin's agent pinned to Haiku, say) is left alone: never moved up.
+  expect(agentModel('sonnet', { fork: false })).toBeUndefined()
   expect(agentModel('mystery', spawn)).toBeUndefined()
   expect(agentModel(undefined, spawn)).toBeUndefined()
 })
@@ -169,6 +172,9 @@ test('keep-warm: only an idle, warm, hour-long cache worth keeping, a bounded nu
   expect(warmDue(k, { ...base, now: 10_000 + 40 * 60 }).why).toBe('not idle long enough')
   expect(warmDue(k, { ...base, jitter: 120 }).why).toBe('not idle long enough')
   expect(warmDue(k, { ...base, now: 10_000 + 59 * 60 }).why).toBe('the cache has lapsed')
+  // The latest `after` (55 minutes) plus the most spread (3 minutes) still leaves a minute to re-read in.
+  const late = { ...k!, after: 55 * 60 }
+  expect(warmDue(late, { ...base, now: 10_000 + 57 * 60, jitter: 179 }).due).toBe(true)
   expect(warmDue(k, { ...base, ttl: '5m' }).due).toBe(false)
   expect(warmDue(k, { ...base, prefix: 30_000 }).due).toBe(false)
   expect(warmDue(k, { ...base, compactionCovers: true }).why).toBe('Claude Code compacts this conversation when idle')
@@ -194,7 +200,10 @@ test('0.7.1: a reading from before the window reset decides nothing; re-reads, l
   expect(readBack(100_000, { cache_read_input_tokens: 0, cache_creation_input_tokens: 100_000 })).toBe(false)
   expect(readBack(100_000, { cache_read_input_tokens: 90_000, cache_creation_input_tokens: 9000 })).toBe(false)
   expect(readBack(100_000, undefined)).toBe(false)
-  expect(accountKey('Team@Example.com (via manager)')).toBe('team@example.com_via_manager_')
+  expect(accountKey('Team@Example.com (via manager)')).toBe('team@example.com')
+  // A note that changes while the account stays (its quota, its plan) doesn't make it another account.
+  expect(accountKey('account team@example.com (82% left)')).toBe(accountKey('team@example.com (79% left)'))
+  expect(accountIdentity('account team@example.com (Max)')).toBe('team@example.com')
   expect(accountKey(null)).toBe('machine')
   expect(leaseFree(undefined, 's1', 0)).toBe(true)
   expect(leaseFree({ holder: 's2', until: 5000 }, 's1', 1000)).toBe(false)

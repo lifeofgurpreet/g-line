@@ -319,15 +319,25 @@ export function effortKeepsCache(model: string | undefined, env: { bedrock?: boo
 /**
  * The model a new subagent runs on under the guard, or nothing to leave it.
  * Only ever cheaper: an agent that names, or is known to run on, a model at or
- * below the guard's keeps it. A fork inherits the parent and can't change.
+ * below the guard's keeps it. One whose model isn't known (an agent type whose
+ * own definition picks it) is left alone, since it may already be cheaper. A
+ * fork inherits the parent and can't change.
  */
-export function agentModel(target: string | undefined, spawn: { model?: string; parentModel: string; fork: boolean; known?: string }): string | undefined {
+export function agentModel(target: string | undefined, spawn: { model?: string; fork: boolean; known?: string }): string | undefined {
   if (!target || spawn.fork) return undefined
   const want = rank(target)
   if (!want) return undefined
-  const runs = spawn.model ?? spawn.known ?? spawn.parentModel
-  const now = rank(runs)
+  const now = rank(spawn.model ?? spawn.known)
   return now > want ? target : undefined
+}
+
+/**
+ * What Claude Code's own agent types run on when the Agent call names no
+ * model: the parent's (`inherit`) or a model of their own. Types not listed
+ * are learned from what they ran on, and left alone until then.
+ */
+export const AGENT_TYPE_MODELS: Record<string, string> = {
+  'general-purpose': 'inherit', Plan: 'inherit', Explore: 'haiku', 'claude-code-guide': 'haiku', 'statusline-setup': 'sonnet',
 }
 
 const pct = (n: number) => `${Math.max(0, Math.round(n))}%`
@@ -344,10 +354,11 @@ function untilText(resetsAt: number | undefined, nowMs: number, offsetMinutes: n
 }
 
 /** Why a prompt was refused: the window, how much is left, when it resets, and the way past. */
-export function stopText(stop: NonNullable<Verdict['stop']>, nowMs: number, offsetMinutes: number): string {
+export function stopText(stop: NonNullable<Verdict['stop']>, nowMs: number, offsetMinutes: number, simulated = false): string {
   const whose = stop.rule.accounts ? ' on this shared account' : ''
   const hours = stop.rule.hours ? ' in these hours' : ''
-  return `g-line guard stopped this prompt: ${pct(stop.left)} of the ${NAMES[stop.window]} window left${whose}${hours} (your rule: stop at ${stop.rule.left}%).`
+  const sim = simulated ? 'simulated; ' : ''
+  return `g-line guard stopped this prompt: ${pct(stop.left)} of the ${NAMES[stop.window]} window left${whose}${hours} (${sim}your rule: stop at ${stop.rule.left}%).`
     + `${untilText(stop.resetsAt, nowMs, offsetMinutes)} /g-line guard once lets the next prompt through; /g-line guard pause, an hour of them.`
 }
 
@@ -364,6 +375,12 @@ export function ruleText(rule: Rule): string {
   }
   const what = [rule.effort ? `effort ${rule.effort}` : '', rule.agents ? `agents on ${rule.agents}` : '', rule.stop ? 'stop new prompts' : ''].filter(Boolean)
   return `${when.join(', ')}: ${what.join(', ')}`
+}
+
+/** What's in force, in a few words: `stop (4% of 5h left), effort low, agents on haiku`. */
+export function inForceText(v: Verdict): string {
+  return [v.stop ? `stop (${pct(v.stop.left)} of ${v.stop.window} left)` : '', v.effort ? `effort ${v.effort}` : '', v.agents ? `agents on ${v.agents}` : '']
+    .filter(Boolean).join(', ')
 }
 
 /** What changed between two verdicts, in words for a toast; nothing when nothing did. */
@@ -428,6 +445,9 @@ export type WarmFacts = {
   leased?: boolean
 }
 
+/** Idle seconds after which an hour-long cache may already be gone. */
+const WARM_LAPSE = 3600 - 120
+
 /** Why keep-warm re-reads now, or why it won't: the first reason that holds. */
 export function warmDue(k: KeepWarm | undefined, f: WarmFacts): { due: boolean; why: string } {
   if (!k) return { due: false, why: 'off' }
@@ -445,9 +465,10 @@ export function warmDue(k: KeepWarm | undefined, f: WarmFacts): { due: boolean; 
   if (k.sessions === 'last' && f.notLastTouched) return { due: false, why: 'you typed in another session on this account last' }
   if (f.leased) return { due: false, why: 'another session on this account is re-reading' }
   const idle = f.now - f.lastAt
-  if (idle < k.after + f.jitter) return { due: false, why: 'not idle long enough' }
   // Two minutes before the hour is up the cache may already be gone: a re-read then would rebuild it.
-  if (idle > 3600 - 120) return { due: false, why: 'the cache has lapsed' }
+  // `after` plus the spread stops a minute short of that, so a late `after` still gets its chance.
+  if (idle < Math.min(k.after + f.jitter, WARM_LAPSE - 60)) return { due: false, why: 'not idle long enough' }
+  if (idle > WARM_LAPSE) return { due: false, why: 'the cache has lapsed' }
   return { due: true, why: 'idle' }
 }
 
@@ -461,9 +482,20 @@ export function readBack(prefix: number, usage: { cache_read_input_tokens: numbe
   return usage.cache_read_input_tokens >= prefix * 0.5 && usage.cache_creation_input_tokens < usage.cache_read_input_tokens * 0.1
 }
 
+/**
+ * The account an `account_command` line names, without a leading `account`
+ * and a trailing `(…)` note (a plan, a quota, `via CAAM`) that can change
+ * while the account stays the same: `account you@example.com (82% left)`
+ * reads `you@example.com`.
+ */
+export function accountIdentity(line: string | null | undefined): string {
+  const text = (line ?? '').trim()
+  return text.replace(/^account\s+/i, '').replace(/\s*\([^()]*\)$/, '').trim() || text
+}
+
 /** The store's name for an account's share of keep-warm and resume: its reading, or the machine's when there is none. */
 export function accountKey(account: string | null | undefined): string {
-  const a = (account ?? '').trim().toLowerCase().replace(/[^a-z0-9@._+-]+/g, '_').slice(0, 80)
+  const a = accountIdentity(account).toLowerCase().replace(/[^a-z0-9@._+-]+/g, '_').slice(0, 80)
   return a || 'machine'
 }
 

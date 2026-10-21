@@ -37,7 +37,7 @@ import {
 import type { PulseFeed, PulseItem, Shown } from './pulse'
 import { gitSegmentOf } from './core'
 import {
-  accountKey, agentModel, cappedEffort, changeText, effortKeepsCache, evaluate, guardForms, leaseFree, readBack, ruleText, simulated, stopText,
+  AGENT_TYPE_MODELS, accountIdentity, accountKey, agentModel, cappedEffort, changeText, effortKeepsCache, evaluate, guardForms, inForceText, leaseFree, readBack, ruleText, simulated, stopText,
   resumeAt, warmDue, warmForms,
 } from './guard'
 import type { Effort, Facts, Simulation, Verdict, WindowName } from './guard'
@@ -327,6 +327,8 @@ let coldThisTurn = false
 let accountMissed = false
 /** When the account was last read (ms): after a turn it's read again if older than two minutes. */
 let accountAt = 0
+/** A reading is due within two minutes of a turn, so the account its cache was written under gets confirmed. */
+let accountSoon = false
 /** The messages the next request is built from, counted once the last request's session went idle. */
 let idleCount: { lastAt: number; messages: number } | undefined
 /** Pulse's 8-second beats so far; the row moves on every `PULSE_BEATS[speed]` of them. */
@@ -449,15 +451,20 @@ async function refreshAccount($: EngineInterface): Promise<void> {
     const run = await $.process.run(command, { timeoutMs: 5000 })
     accountMissed = run.exitCode !== 0
     if (accountMissed) return
+    const confirmedAt = accountAt
     accountAt = await nowMs($)
     const line = str(run.stdout.split('\n')[0], 120)
     const before = (await read($, snap)).account
     // Another account: caches are kept per organization, so the cache this
-    // session counted on isn't the new account's. Count it cold.
-    const moved = !!before && !!line && before !== line
+    // session counted on isn't the new account's. Count it cold, but only a
+    // cache written before the old account's last confirmed reading: one
+    // written since may already be the new account's (the switch came while
+    // idle and the turn after it ran on the new one before this reading).
+    const moved = !!before && !!line && accountIdentity(before) !== accountIdentity(line)
+    const cold = (c: Snap['cache']) => moved && !!c?.cached && c.lastAt * 1000 <= confirmedAt
     await update($, snap, s => ({ ...s, account: line ?? null,
-      cache: moved && s.cache?.cached ? { ...s.cache, accountChanged: true } : s.cache }))
-    if (moved && (await read($, snap)).cache?.cached) {
+      cache: cold(s.cache) && s.cache ? { ...s.cache, accountChanged: true } : s.cache }))
+    if (cold((await read($, snap)).cache)) {
       await toast($, 'The account changed: prompt caches are kept per organization, so the next turn starts a new cache.', 10_000)
     }
   } catch {
@@ -750,6 +757,11 @@ async function pruneLedger($: EngineInterface): Promise<void> {
     const at = await nowMs($)
     const keys = await $.store.keys()
     for (const key of staleKeys(keys, dayOf(at, offsetAt(at)))) await $.store.delete(key)
+    // Keep-warm's hourly counts (`warm:<account>:<hour>`) matter for their hour only.
+    for (const key of keys.filter(k => k.startsWith('warm:'))) {
+      const hour = Number(key.split(':').pop())
+      if (!Number.isFinite(hour) || hour < Math.floor(at / 3_600_000) - 1) await $.store.delete(key)
+    }
     // `coach:five_hour:<resets at>` marks outlive their window by a day at most.
     for (const key of keys.filter(k => k.startsWith('coach:'))) {
       const resets = Number(key.split(':').pop())
@@ -1225,6 +1237,12 @@ const PAUSE_KEY = 'guard_pause'
 let pausedUntil = 0
 /** `/g-line guard once`: the next prompt in this session goes through. */
 let passOnce = false
+/**
+ * Background agents the main loop started whose report hasn't come back. A
+ * stop lets each report through: its work is done and paid for, and a
+ * refused report would never reach Claude.
+ */
+let reportsDue = 0
 /** The effort the guard set for the running main-loop turn, kept for each of its steps. */
 let effortLatch: { turnId: string; from?: string; to?: Effort } | undefined
 /** The guard's effort waits for a cold cache where a change of effort would rebuild it. */
@@ -1232,7 +1250,7 @@ let effortWaits = false
 /** Whether a lower effort keeps the cache on this provider (Claude Code's own rule). */
 let providerKeepsCache = true
 /** The model each agent type ran on when nothing named one: so the guard never moves an agent up. */
-const typeModels = new Map<string, string>([['Explore', 'haiku']])
+const typeModels = new Map<string, string>(Object.entries(AGENT_TYPE_MODELS))
 /** Keep-warm: re-reads since the last real request, whether it gave up for this session, and this session's spread. */
 let warmed = 0
 /** What the re-reads since the last turn cost at API prices, where the engine counted it. */
@@ -1270,6 +1288,34 @@ function factsOf(s: Snap, nowMs: number): Facts {
   return { nowMs, windows, account: s.account, offsetMinutes: offsetAt(nowMs) }
 }
 
+/**
+ * Takes the machine-wide lease `key` until `until` (ms) for this session:
+ * free, expired or already ours, then written and read back, so of two
+ * sessions writing at once only the one whose write stands holds it. With no
+ * store, the session goes on by itself.
+ */
+async function takeLease($: EngineInterface, key: string, until: number): Promise<boolean> {
+  const me = sessionId ?? ''
+  try {
+    if (!leaseFree(await $.store.get(key), me, await nowMs($))) return false
+    await $.store.set(key, { holder: me, until })
+    const held = (await $.store.get(key)) as { holder?: unknown } | undefined
+    return held?.holder === me
+  } catch {
+    return true
+  }
+}
+
+/** Gives the lease back, only if it's still this session's. */
+async function releaseLease($: EngineInterface, key: string): Promise<void> {
+  try {
+    const held = (await $.store.get(key)) as { holder?: unknown } | undefined
+    if (held?.holder === (sessionId ?? '')) await $.store.delete(key)
+  } catch {
+    // it expires on its own
+  }
+}
+
 /** Seconds the guard stays paused; 0 when it isn't. */
 async function pausedFor($: EngineInterface): Promise<number> {
   try {
@@ -1287,7 +1333,7 @@ async function guardNow($: EngineInterface): Promise<Verdict> {
   const at = await nowMs($)
   if (simulation && simulation.until <= at) {
     simulation = undefined
-    $.ui.toast('g-line guard: the simulation ended; the real readings decide again.', { timeoutMs: 6000 })
+    if (!(await read($, hidden))) $.ui.toast('g-line guard: the simulation ended; the real readings decide again.', { timeoutMs: 6000 })
   }
   verdict = evaluate(config.guard, simulated(factsOf(await read($, snap), at), simulation), before.active)
   const change = changeText(before, verdict)
@@ -1315,19 +1361,19 @@ async function guardSegment($: EngineInterface): Promise<Segment | undefined> {
  * the person types goes through (so /g-line guard does); a message delivered
  * into a turn already running goes on into it. Nothing mid-turn is stopped.
  */
-async function guardPrompt($: EngineInterface, e: { origin: { kind: string }; command?: unknown; turnId?: string }): Promise<string | undefined> {
+async function guardPrompt($: EngineInterface, e: { origin: { kind: string }; command?: unknown; turnId?: string }, report = false): Promise<string | undefined> {
   const v = await guardNow($)
   if (!v.stop) return undefined
   const person = e.origin?.kind === 'composer' || e.origin?.kind === 'bridge'
   if (person && e.command) return undefined
-  if (!person && e.turnId) return undefined
+  if (!person && (e.turnId || report)) return undefined
   if ((await pausedFor($)) > 0) return undefined
   if (person && passOnce) {
     passOnce = false
     return undefined
   }
-  const text = stopText(v.stop, await nowMs($), offsetAt(await nowMs($)))
-  if (person) await $.prompt.suggest({ text: '/g-line guard once' }).catch(() => undefined)
+  const text = stopText(v.stop, await nowMs($), offsetAt(await nowMs($)), simulation !== undefined)
+  if (person && !(await read($, hidden))) await $.prompt.suggest({ text: '/g-line guard once' }).catch(() => undefined)
   return text
 }
 
@@ -1359,7 +1405,8 @@ async function guardAgentModel($: EngineInterface, e: { model?: string; parentMo
   if (e.resume) return undefined
   const v = await guardNow($)
   if (!v.agents || (await pausedFor($)) > 0) return undefined
-  return agentModel(v.agents, { model: e.model, parentModel: e.parentModel, fork: e.fork, known: typeModels.get(e.subagentType) })
+  const known = typeModels.get(e.subagentType)
+  return agentModel(v.agents, { model: e.model, fork: e.fork, known: known === 'inherit' ? e.parentModel : known })
 }
 
 /**
@@ -1406,10 +1453,10 @@ async function keepWarm($: EngineInterface): Promise<void> {
     leased: !leaseFree(lease, sessionId ?? '', now * 1000),
   })
   if (!due.due) return
+  // One session per account re-reads at a time; the lease outlives a slow answer.
+  if (!(await takeLease($, `lease:warm:${key}`, (now + 600) * 1000))) return
   warming = true
   try {
-    // One session per account re-reads at a time; the lease outlives a slow answer.
-    await $.store.set(`lease:warm:${key}`, { holder: sessionId ?? '', until: (now + 600) * 1000 }).catch(() => undefined)
     const quiet = !(await read($, agents)).some(row => isActive(row.status))
     const before = quiet ? (await $.session.usage().catch(() => undefined))?.cost?.usd : undefined
     const r = await $.model.fork({ prompt: WARM_PROMPT })
@@ -1436,7 +1483,7 @@ async function keepWarm($: EngineInterface): Promise<void> {
   } catch {
     warmOff = true
   } finally {
-    await $.store.delete(`lease:warm:${key}`).catch(() => undefined)
+    await releaseLease($, `lease:warm:${key}`)
     warming = false
   }
 }
@@ -1475,7 +1522,8 @@ async function simulate($: EngineInterface, window?: '5h' | 'week', used?: numbe
     $.ui.toast('g-line guard: simulation off; the real readings decide again.', { timeoutMs: 6000 })
   } else {
     simulation = { window, used, until: (await nowMs($)) + 15 * 60_000 }
-    $.ui.toast(`g-line guard: for 15 minutes the guard acts as if ${used}% of the ${window === '5h' ? '5-hour' : 'weekly'} window were used. Line 2 marks it (sim). /g-line guard simulate off ends it.`, { timeoutMs: 10_000 })
+    // Short enough for the toast's three lines: the way out is its last words.
+    $.ui.toast(`g-line guard: simulating ${used}% of the ${window === '5h' ? '5-hour' : 'weekly'} window used, 15 min. /g-line guard simulate off ends it.`, { timeoutMs: 10_000 })
   }
   await guardNow($)
   await update($, tick, n => n + 1)
@@ -1498,7 +1546,7 @@ async function guardCommandRun($: EngineInterface, action: string, pause?: numbe
       // this session's own pause
     }
     $.ui.toast(action === 'pause'
-      ? `g-line guard paused for ${Math.round((pause ?? 3600) / 60)} minutes in every session on this machine: rules and keep-warm wait. /g-line guard resume ends it.`
+      ? `g-line guard paused ${Math.round((pause ?? 3600) / 60)} min on this machine: rules and keep-warm wait. /g-line guard resume ends it.`
       : 'g-line guard resumed.', { timeoutMs: 8000 })
     await update($, tick, n => n + 1)
     return
@@ -1516,7 +1564,9 @@ async function guardCommandRun($: EngineInterface, action: string, pause?: numbe
     !none && !(await read($, snap)).rateLimits?.length ? 'No usage readings yet (an API key, a cloud provider, or no request so far): the rules wait.' : '',
     simulation ? `Simulating ${simulation.used}% used of the ${simulation.window} window.` : '',
     ...config.guard.errors.map(error => `Not read: ${error}.`),
-    !none && config.guard.on ? `${config.guard.rules.length} ${config.guard.rules.length === 1 ? 'rule' : 'rules'}, ${v.rules.length} in force${v.rules.length ? `: ${v.rules.map(ruleText).join('; ')}` : ''}.` : '',
+    config.guard.rules.some(rule => rule.accounts) && !config.accountCommand ? 'Rules naming accounts never apply: no account_command is set.' : '',
+    // What's in force in a few words; the pane lists every rule as written.
+    !none && config.guard.on ? `${config.guard.rules.length} ${config.guard.rules.length === 1 ? 'rule' : 'rules'}, ${v.rules.length} in force${v.rules.length ? `: ${inForceText(v)}` : ''}.` : '',
     paused > 0 ? `Paused for ${Math.ceil(paused / 60)} more minutes.` : '',
     config.guard.keepWarm ? `Keep-warm ${warmOff ? 'off for this session' : `on, ${warmed} re-reads since the last turn`}.` : '',
   ].filter(Boolean)
@@ -1593,23 +1643,19 @@ async function limitStopped($: EngineInterface): Promise<void> {
   const when = clock(Math.floor(plan.at / 1000), at / 1000, offsetAt(at))
   const name = plan.window === '5h' ? '5-hour' : 'weekly'
   if (!r || !config.guard.on || resumePlan) {
-    if (await once($, `limit:${plan.window}:${Math.floor(plan.at / 3_600_000)}`)) await toast($, `The ${name} usage limit stopped this turn. It resets about ${when}.`, 12_000)
+    // Keyed by the reset itself, not the jittered plan, so one limit is said once.
+    const reset = resumeAt(s.rateLimits ?? [], at, 0)?.at ?? plan.at
+    if (await once($, `limit:${plan.window}:${Math.floor(reset / 60_000)}`)) await toast($, `The ${name} usage limit stopped this turn. It resets about ${when}.`, 12_000)
     return
   }
   const key = accountKey(s.account)
-  try {
-    const lease = await $.store.get(`lease:resume:${key}`)
-    if (!leaseFree(lease, sessionId ?? '', at)) {
-      await toast($, `The ${name} usage limit stopped this turn. Another session on this account will go on after the reset; this one waits for you.`, 12_000)
-      return
-    }
-    await $.store.set(`lease:resume:${key}`, { holder: sessionId ?? '', until: plan.at + 15 * 60_000 })
-  } catch {
-    // no store: this session plans its own
+  if (!(await takeLease($, `lease:resume:${key}`, plan.at + 15 * 60_000))) {
+    await toast($, `The ${name} usage limit stopped this turn. Another session on this account will go on after the reset; this one waits for you.`, 12_000)
+    return
   }
   resumePlan = { ...plan, key }
   resumePlan.timer = $.clock.after(Math.max(1000, plan.at - at), () => void resumeNow($)) as unknown as { cancel: () => void }
-  await heads($, `The ${name} usage limit stopped this turn. g-line sends "${r.text}" at ${when}, after the reset. /g-line guard cancel stops it.`, 'Usage limit', true)
+  await heads($, `Usage limit: g-line sends "${r.text}" at ${when}, after the ${name} reset. /g-line guard cancel stops it.`, 'Usage limit', true)
   await update($, tick, n => n + 1)
 }
 
@@ -1617,17 +1663,19 @@ async function resumeNow($: EngineInterface): Promise<void> {
   const plan = resumePlan
   if (!plan || !config.guard.resume) return
   resumePlan = undefined
-  await $.store.delete(`lease:resume:${plan.key}`).catch(() => undefined)
-  if (await read($, turnNow)) {
-    await toast($, 'g-line didn\'t send its "continue": a turn is already running.', 8000)
+  await releaseLease($, `lease:resume:${plan.key}`)
+  // Said whatever the toasts setting: g-line is about to type for the person, or chose not to.
+  if (!config.guard.on || (await pausedFor($)) > 0 || (await read($, turnNow))) {
+    $.ui.toast(`g-line didn't send its "${config.guard.resume.text}": ${!config.guard.on ? 'the guard is off' : (await read($, turnNow)) ? 'a turn is already running' : 'the guard is paused'}.`, { timeoutMs: 8000 })
     return
   }
   const sent = await $.prompt.submit({ text: config.guard.resume.text }).catch(() => undefined)
-  await toast($, sent && !sent.drop ? `g-line sent "${config.guard.resume.text}" after the usage reset.` : `g-line's "${config.guard.resume.text}" after the reset didn't go through${sent?.drop ? `: ${sent.drop}` : ''}.`, 10_000)
+  $.ui.toast(sent && !sent.drop ? `g-line sent "${config.guard.resume.text}" after the usage reset.` : `g-line's "${config.guard.resume.text}" after the reset didn't go through${sent?.drop ? `: ${sent.drop}` : ''}.`, { timeoutMs: 10_000 })
   await update($, tick, n => n + 1)
 }
 
-async function cancelResume($: EngineInterface): Promise<void> {
+/** Drops the plan, its timer and its lease, quietly: what's left is the caller's to say. */
+async function dropResume($: EngineInterface): Promise<boolean> {
   const plan = resumePlan
   resumePlan = undefined
   try {
@@ -1635,8 +1683,13 @@ async function cancelResume($: EngineInterface): Promise<void> {
   } catch {
     // the timer had fired
   }
-  if (plan) await $.store.delete(`lease:resume:${plan.key}`).catch(() => undefined)
-  $.ui.toast(plan ? 'g-line won\'t send anything after the reset.' : 'g-line has nothing planned after a reset.', { timeoutMs: 6000 })
+  if (plan) await releaseLease($, `lease:resume:${plan.key}`)
+  return !!plan
+}
+
+async function cancelResume($: EngineInterface): Promise<void> {
+  const had = await dropResume($)
+  $.ui.toast(had ? 'g-line won\'t send anything after the reset.' : 'g-line has nothing planned after a reset.', { timeoutMs: 6000 })
   await update($, tick, n => n + 1)
 }
 
@@ -1739,6 +1792,9 @@ export const register: Register = (on, options) => {
     await readTerminal($)
     await readGuardEnv($)
     if (config.guard.errors.length) $.ui.toast(`g-line guard left out what it couldn't read: ${config.guard.errors.join('; ')}.`, { timeoutMs: 15_000 })
+    if (config.guard.on && config.guard.rules.some(rule => rule.accounts) && !config.accountCommand) {
+      $.ui.toast('g-line guard: rules naming accounts never apply, because no account_command is set.', { timeoutMs: 12_000 })
+    }
     await loadShown($)
     await resync($)
     $.clock.every(TICK_MS, () => void heartbeat($))
@@ -1750,6 +1806,9 @@ export const register: Register = (on, options) => {
   // `session.start`: read the fresh session's figures straight away.
   on('session.end', async ($, e, next) => {
     await leaveRoster($)
+    // A plan to go on after a limit belongs to the conversation that stopped:
+    // not the one a /clear starts, and not a session that has ended.
+    await dropResume($)
     if (e.reason === 'clear') {
       // The cleared conversation's cache says nothing about the next one.
       await update($, snap, s => ({ ...s, cache: undefined }))
@@ -1773,6 +1832,10 @@ export const register: Register = (on, options) => {
   })
 
   on('turn.start', async ($, e, next) => {
+    // A subagent's run is a turn too, and every hook hears its start: the
+    // record is the main loop's, so it's left alone (a subagent's would wipe
+    // the guard's note and leave the session reading busy while idle).
+    if (e.agentId !== undefined) return next(e)
     let costAt: number | undefined
     let contextAt: number | undefined
     try {
@@ -1788,7 +1851,7 @@ export const register: Register = (on, options) => {
     const overlap = (await read($, agents)).some(row => row.background && isActive(row.status))
     await update($, turnNow, () => ({ id: e.turnId, startAt, costAt, contextAt, tools: 0, agents: 0, failures: 0,
       cacheWrite: 0, warmBefore, overlap }))
-    if (e.agentId === undefined) await rosterChanged($)
+    await rosterChanged($)
     return next(e)
   })
 
@@ -1906,9 +1969,10 @@ export const register: Register = (on, options) => {
     const cheaper = config.guard.rules.length ? await guardAgentModel($, e) : undefined
     const result = await next(cheaper ? { ...e, model: cheaper } : e)
     if (result.agentId === undefined) return result
+    if (e.background && e.parentAgentId === undefined && !e.isTeammate) reportsDue += 1
     if (cheaper) await update($, turnNow, live => (live ? { ...live, guardAgents: (live.guardAgents ?? 0) + 1 } : live))
     // What an agent type runs on when nothing names a model: the guard never moves it up.
-    else if (!e.model && !e.fork && result.model) typeModels.set(e.subagentType, result.model)
+    else if (!e.model && !e.fork && result.model && typeModels.get(e.subagentType) !== 'inherit') typeModels.set(e.subagentType, result.model)
     const at = await nowMs($)
     const row: AgentRow = { id: result.agentId, description: e.description, type: e.subagentType, model: result.model,
       status: 'running', background: e.background, teammate: e.isTeammate === true, startedAt: at }
@@ -1940,8 +2004,20 @@ export const register: Register = (on, options) => {
     $.clock.after(1, () => void afterTurn($, r, e.isAborted))
     void refreshGit($)
     void refreshAgents($)
-    // An account manager may switch accounts between turns: read it again if the reading is old.
-    if (config.accountCommand && (await nowMs($)) - accountAt > 120_000) void refreshAccount($)
+    // An account manager may switch accounts between turns: read it again
+    // now if the reading is old, else within two minutes, so the account the
+    // turn's cache was written under is confirmed after it was written.
+    if (config.accountCommand) {
+      const age = (await nowMs($)) - accountAt
+      if (age > 120_000) void refreshAccount($)
+      else if (!accountSoon) {
+        accountSoon = true
+        $.clock.after(120_000 - age + 1000, () => {
+          accountSoon = false
+          void refreshAccount($)
+        })
+      }
+    }
     return next(e)
   })
 
@@ -1975,7 +2051,17 @@ export const register: Register = (on, options) => {
   // The guard's stop rules: a prompt that would start a turn is refused, with
   // why and the way past, while one is in force. Only with rules the person wrote.
   on('prompt.submit', async ($, e, next) => {
-    if (e.origin?.kind === 'composer' || e.origin?.kind === 'bridge') await touch($)
+    if (e.origin?.kind === 'composer' || e.origin?.kind === 'bridge') {
+      await touch($)
+      // You're back before the reset: the planned "continue" is yours to type now.
+      if (resumePlan && !e.command && (await dropResume($))) {
+        $.ui.toast('g-line won\'t send its prompt after the reset: you typed one.', { timeoutMs: 6000 })
+        void update($, tick, n => n + 1)
+      }
+    }
+    // A background agent's report, counted off whether or not a stop is in force.
+    const report = e.origin?.kind === 'task-notification' && reportsDue > 0
+    if (report) reportsDue -= 1
     if (!config.guard.on || !config.guard.rules.length) return next(e)
     // A headless run (`claude -p`) has no readings before its first request: say the guard can't see, once.
     if (!interactive && !blindSaid && !(await read($, snap)).rateLimits?.length) {
@@ -1983,7 +2069,7 @@ export const register: Register = (on, options) => {
       $.ui.log('g-line guard: no usage readings in this session yet, so its rules cannot act on this prompt.')
     }
     if (!config.guard.rules.some(rule => rule.stop)) return next(e)
-    const refused = await guardPrompt($, e)
+    const refused = await guardPrompt($, e, report)
     return refused ? { drop: refused } : next(e)
   }).catch(($, e, next) => next(e))
 

@@ -1,5 +1,54 @@
 # Changelog
 
+## 0.8.1 (2026-10-21): the guard, tried in a real session
+
+0.7 and 0.8 were tested only through the engine's dispatch. In a signed-in session the guard
+lowered effort, moved a subagent to a cheaper model, refused a typed prompt and let one through
+with `once`; keep-warm re-read a 45k cache after 12 idle minutes; the roster counted the other
+session. These were wrong:
+
+- **A subagent's run wiped the turn's record.** Every hook hears a subagent's `turn.start`,
+  and g-line took it for the main turn's. A turn that lowered effort and then started an agent
+  closed with no `guard:` note; tool counts and the cost baseline went too, and a subagent run
+  starting after the turn ended left the session reading busy, so keep-warm never ran and the
+  roster said `working`. Now only the main loop's start counts.
+- **A stop rule lost a background agent's report.** After `/g-line guard once`, the agent the
+  turn started finished, and its report was refused like a new prompt, so Claude never saw
+  it. A report from a background agent your conversation started now goes through; other
+  wake-ups (a `/loop`, a schedule, other tasks' notices) are still refused.
+- **A refusal while simulating didn't say so.** It now reads `(simulated; your rule: stop
+  at 5%)`.
+- **Toasts cut off their way out.** The simulate, pause and limit toasts ran past the toast's
+  three lines, losing `/g-line guard simulate off ends it`. They're shorter, and
+  `/g-line guard` lists what's in force in a few words (`stop (4% of 5h left), effort low,
+  agents on haiku`) instead of every rule; the pane still lists them all.
+- **Account changes.** An account switched while idle, with the next turn already on the new
+  account, read as `cache cold (account changed)` once g-line read the account. A cache now
+  counts cold only if it was written before the old account's last confirmed reading, and the
+  account is read again within two minutes of each turn to confirm it. A changing note at the
+  end of the line, such as `(82% left)`, no longer reads as another account, and no longer
+  splits keep-warm's and resume's per-account shares.
+- **The agents rule could raise a cost.** An agent type whose definition picks its own model
+  (a plugin's agent on Haiku, say) was taken to run on the parent's model and moved to the
+  rule's. Such a type is now left alone until g-line has seen what it runs on; Claude Code's
+  own types are known (`general-purpose` and `Plan` run on the parent's model, `Explore` on
+  Haiku).
+- **Resume.** A `/clear` or the session ending now drops a planned `continue` and its lease
+  (it used to go into the cleared conversation, or hold the account's lease for nobody). A
+  prompt you type before the reset drops it too, and at the reset nothing is sent while the
+  guard is off or paused; each says why, whatever the toasts setting. The same limit is said
+  once, not once per jittered plan.
+- **Leases** (keep-warm's and resume's, one session per account) are read back after they're
+  written, and a session gives back only its own.
+- **Keep-warm** with the latest `after` (55 minutes) and the most spread could miss its
+  window; it now always leaves a minute. Its hourly counts are pruned from the store.
+- Rules naming `accounts` with no `account_command` never apply; g-line now says so when the
+  session starts and in `/g-line guard`. The "simulation ended" toast and the refusal's Tab
+  suggestion stay quiet after `/g-line off`.
+- README: the Guard section has a real screenshot, says how to get a refused prompt back
+  (ctrl+u, `/g-line guard once`, ctrl+y), and notes that a keep-warm fork in one test
+  session read only the cached tools and system prompt; keep-warm noticed and stopped.
+
 ## 0.8.0 (2026-10-21): the other sessions, and going on after a limit
 
 - **The other sessions on this machine.** Each g-line session keeps a heartbeat in Claude

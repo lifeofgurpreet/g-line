@@ -1450,7 +1450,7 @@ test('a turn stopped by the usage limit: told when it resets; with guard.resume 
   }
   await start($)
   await stopped('t1')
-  expect(w.notes.some(n => n.text.startsWith('The 5-hour usage limit stopped this turn. g-line sends "continue" at '))).toBe(true)
+  expect(w.notes.some(n => /^Usage limit: g-line sends "continue" at \d\d:\d\d, after the 5-hour reset\. \/g-line guard cancel stops it\.$/.test(n.text))).toBe(true)
   expect(kept['lease:resume:machine']).toEqual({ holder: 'session-1', until: expect.any(Number) })
   const ui = await $.ui.mount({ plugin: 'g-line', surface: 'terminal', component: 'PromptHint',
     props: { isDraft: false, isWorking: false, hint: '? for shortcuts' }, viewport: { columns: 200, rows: 40 } })
@@ -1496,4 +1496,153 @@ test('without guard.resume a limit stop is only said, with the reset on your clo
     props: { bodyColumns: 140 } as never, viewport: { columns: 160, rows: 80 } })
   expect(await pane.find({ type: 'Text', text: /^5-hour 30% used, resets \d\d:\d\d \(in (1h 59m|2h 0m)\)$/ })).toBeDefined()
   await pane.unmount()
+})
+
+// 0.8.1: what a live session showed.
+
+test('a subagent\'s own turn leaves the main turn\'s record alone: the receipt keeps the guard\'s note', { timeoutMs: 30_000 }, async ($, on) => {
+  const w = world(on)
+  w.config = { guard: GUARD }
+  engineBelow(on)
+  on('ui.render', { component: 'TurnDuration' }, ($, e) => {
+    const { Text } = $.ui.resolve(e)
+    return <Text>{`✻ ${e.props.word} for 1m 4s`}</Text>
+  })
+  await start($)
+  await measure($, w, 92)
+  await $.turn.start({ text: 'go', turnId: 't1' })
+  await step($, 't1', 0, 'xhigh')
+  await spawn($)
+  // Every hook hears the subagent's run start and end, with its agentId.
+  await $.turn.start({ text: 'look', turnId: 'a1-t', agentId: 'a1' } as never)
+  await $.turn.complete({ answer: 'found it', durationMs: 2000, isAborted: false, turnId: 'a1-t', agentId: 'a1', reason: 'answer',
+    usage: { ...USAGE_ARGS, model: 'claude-sonnet-5-5' } } as never)
+  await $.turn.complete({ answer: 'done', durationMs: 64_000, isAborted: false, turnId: 't1', reason: 'answer',
+    usage: { ...USAGE_ARGS, model: 'claude-opus-5-5' } })
+  await $.session.append({ message: { type: 'system', name: 'turn_duration', content: [] }, door: 'notice',
+    origin: { kind: 'engine' }, uuid: 'line-1' } as never)
+  const line = await $.ui.mount({ plugin: 'g-line', surface: 'terminal', component: 'TurnDuration', requestId: 'line-1',
+    props: { word: 'Baked', durationMs: 64_000 }, viewport: { columns: 160, rows: 40 } })
+  expect(await line.find({ type: 'Text', text: 'guard: effort medium, 1 agent on a cheaper model' })).toBeDefined()
+  await line.unmount()
+})
+
+test('a stop lets a background agent\'s report through, once per agent the main loop started; other wake-ups stay refused', { timeoutMs: 30_000 }, async ($, on) => {
+  const w = world(on)
+  w.config = { guard: GUARD }
+  const seen = engineBelow(on)
+  await start($)
+  await measure($, w, 96)
+  await $.command.run({ command: 'g-line', args: 'guard once' } as never)
+  expect(await $.prompt.submit(typed('start the agent'))).toEqual({ text: 'start the agent' })
+  await $.turn.start({ text: 'start the agent', turnId: 't1' })
+  await $.agent.spawn({ tool_use_id: 'tu', prompt: 'p', description: 'Look into it', subagentType: 'general-purpose',
+    provider: { plugin: 'engine', tier: 'core' }, parentModel: 'claude-opus-5-5', background: true, fork: false } as never)
+  await $.turn.complete({ answer: 'started', durationMs: 4000, isAborted: false, turnId: 't1', reason: 'answer',
+    usage: { ...USAGE_ARGS, model: 'claude-opus-5-5' } })
+  // Its report arrives while the session is idle: it goes on to Claude, where a refusal would lose it.
+  const report = { text: '<task-notification>done</task-notification>', wait: false, origin: { kind: 'task-notification' } } as never
+  expect((await $.prompt.submit(report)).drop).toBeUndefined()
+  // A second notice with no agent behind it, and a schedule waking up, are refused as before.
+  expect((await $.prompt.submit(report)).drop).toBeDefined()
+  expect((await $.prompt.submit({ text: 'check CI', wait: false, origin: { kind: 'scheduled-trigger' } } as never)).drop).toBeDefined()
+  expect(seen.prompts).toEqual(['start the agent', '<task-notification>done</task-notification>'])
+})
+
+test('a refusal while simulating says it was simulated', { timeoutMs: 30_000 }, async ($, on) => {
+  const w = world(on)
+  w.config = { guard: GUARD }
+  engineBelow(on)
+  await start($)
+  await measure($, w, 10)
+  await $.command.run({ command: 'g-line', args: 'guard simulate 5h 96' } as never)
+  const refused = await $.prompt.submit(typed('go on'))
+  expect(refused.drop).toMatch(/^g-line guard stopped this prompt: 4% of the 5-hour window left \(simulated; your rule: stop at 5%\)\./)
+  // Every toast fits the toast's three lines: its way out is never cut off.
+  expect(w.toasts.filter(t => t.includes('simulat')).every(t => t.length <= 110)).toBe(true)
+})
+
+test('an account switched while idle, with the next turn on the new account, is not called cold', { timeoutMs: 30_000 }, async ($, on) => {
+  const w = world(on)
+  w.config = { account_command: ['acct'] }
+  let who = 'first@example.com (Max)'
+  w.run = argv => (argv[0] === 'acct' ? { value: { exitCode: 0, stdout: `${who}\n`, stderr: '' } } : undefined)
+  engineBelow(on)
+  hintBelow(on)
+  const line2 = async () => {
+    const ui = await $.ui.mount({ plugin: 'g-line', surface: 'terminal', component: 'PromptHint',
+      props: { isDraft: false, isWorking: false, hint: '? for shortcuts' }, viewport: { columns: 200, rows: 40 } })
+    const found = await ui.find({ type: 'Text', text: /^cache / })
+    await ui.unmount()
+    return found?.text
+  }
+  await start($)
+  await measure($, w, 30)
+  await w.clock.advance(60_000)
+  await $.turn.start({ text: 'go', turnId: 't1' })
+  await step($, 't1', 0, 'high')
+  await $.turn.complete({ answer: 'done', durationMs: 4000, isAborted: false, turnId: 't1', reason: 'answer', usage: { ...USAGE_ARGS, model: 'claude-opus-5-5' } })
+  // Within two minutes of the turn the account is read again, confirming the account its cache was written under.
+  await w.clock.advance(3 * 60_000)
+  // The plan's note changes: still the same account.
+  who = 'first@example.com (Max, 40% left)'
+  await w.clock.advance(10 * 60_000)
+  expect(await line2()).toMatch(/^cache warm/)
+  // The account manager switches while idle; the next turn runs on the new account before g-line reads it.
+  who = 'second@example.com (Max)'
+  await $.turn.start({ text: 'go', turnId: 't2' })
+  await step($, 't2', 0, 'high')
+  await $.turn.complete({ answer: 'done', durationMs: 4000, isAborted: false, turnId: 't2', reason: 'answer', usage: { ...USAGE_ARGS, model: 'claude-opus-5-5' } })
+  await w.clock.advance(5 * 60_000)
+  // The reading after that turn sees the new account; the cache that turn wrote is the new account's, warm.
+  expect(await line2()).toMatch(/^cache warm/)
+  expect(w.toasts.filter(t => t.startsWith('The account changed')).length).toBe(0)
+})
+
+test('a planned "continue" is dropped by /clear, by the session ending, and by a prompt you type first', { timeoutMs: 30_000 }, async ($, on) => {
+  const kept: Record<string, unknown> = {}
+  const w = world(on, {}, kept)
+  w.config = { guard: { resume: true } }
+  const seen = engineBelow(on)
+  on('session.end', ($, e) => ({ sessionId: e.sessionId }) as never)
+  const stopped = async (id: string) => {
+    w.usage.limits = [{ kind: 'five_hour', percentUsed: 100, resetsAt: ISO(Math.floor(w.clock.now() / 1000) + 3600) }]
+    await $.turn.start({ text: 'go', turnId: id })
+    await $.turn.complete({ answer: '', durationMs: 4000, isAborted: false, turnId: id, reason: 'error' } as never)
+    await w.clock.advance(10)
+  }
+  await start($)
+  await stopped('t1')
+  expect(kept['lease:resume:machine']).toBeDefined()
+  await $.session.end({ reason: 'clear', sessionId: 'session-1' } as never)
+  expect(kept['lease:resume:machine']).toBeUndefined()
+  await w.clock.advance(70 * 60_000)
+  expect(seen.prompts).toEqual([])
+  // You come back before the reset and type: your prompt goes, g-line's doesn't.
+  await stopped('t2')
+  w.usage.limits = []
+  expect(await $.prompt.submit(typed('carry on with the tests'))).toEqual({ text: 'carry on with the tests' })
+  expect(w.toasts[w.toasts.length - 1]).toBe('g-line won\'t send its prompt after the reset: you typed one.')
+  await w.clock.advance(70 * 60_000)
+  expect(seen.prompts).toEqual(['carry on with the tests'])
+  // The guard paused when the time comes: nothing is sent, and it says why.
+  await stopped('t3')
+  await $.command.run({ command: 'g-line', args: 'guard pause 3h' } as never)
+  await w.clock.advance(70 * 60_000)
+  expect(seen.prompts).toEqual(['carry on with the tests'])
+  expect(w.toasts.some(t => t === 'g-line didn\'t send its "continue": the guard is paused.')).toBe(true)
+})
+
+test('the agents rule leaves an agent type alone until it knows what that type runs on', { timeoutMs: 30_000 }, async ($, on) => {
+  const w = world(on)
+  w.config = { guard: GUARD }
+  const seen = engineBelow(on)
+  await start($)
+  await measure($, w, 92)
+  await $.turn.start({ text: 'go', turnId: 't1' })
+  // A plugin's agent whose definition picks its own model (it may be Haiku): never moved, so never moved up.
+  await spawn($, 'reviewer-plugin:quick-check')
+  // Claude Code's general-purpose agent runs on its parent's model, Opus here: moved down to Sonnet.
+  await spawn($, 'general-purpose')
+  expect(seen.models).toEqual([undefined, 'sonnet'])
 })

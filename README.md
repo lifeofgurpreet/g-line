@@ -321,17 +321,22 @@ hours in Kuala Lumpur, so teammates keep some of the window.
   always rebuilds the cache.
 - **`agents`** starts new subagents on that model (`sonnet`, `haiku`, or a model id). It only
   ever moves an agent to a cheaper model: one that already runs on Haiku keeps it, and a fork
-  keeps its parent's model. Running agents aren't touched.
+  keeps its parent's model. An agent type whose own definition picks its model (a plugin's
+  agent, say) is left alone until g-line has seen what it runs on. Running agents aren't
+  touched.
 - **`stop`** refuses a new prompt with the window, what's left and when it resets. That covers
   typed prompts and machine-started ones (a `/loop` or schedule waking up, a background task's
-  notice when it would start a turn). It never stops a turn already running, or a tool call.
-  A slash command you type still goes through, so `/g-line guard once` lets the next prompt
-  through, and Tab puts it in the prompt box after a refusal. `/g-line guard pause` lets
-  everything through for an hour (or `pause 30m`) in every session on the machine, and
-  `/g-line guard resume` ends the pause.
+  notice). The one notice it lets through is the report of a background agent your
+  conversation started: that work is done and paid for, and a refused report would never
+  reach Claude. A stop never stops a turn already running, or a tool call. A slash command
+  you type still goes through. Claude Code puts the refused prompt back in the box: clear it
+  (ctrl+u), type `/g-line guard once`, and ctrl+y brings your prompt back for one more turn.
+  `/g-line guard pause` lets everything through for an hour (or `pause 30m`) in every session
+  on the machine, and `/g-line guard resume` ends the pause.
 - **`unless_reset_within`**: the rule waits while the window resets within that time.
 - **`accounts`**: the rule applies only when the `account_command` line contains one of these
-  words, in any case. With no account reading, it doesn't apply.
+  words, in any case. With no account reading, it doesn't apply, and with no
+  `account_command` at all, g-line says so when the session starts and in `/g-line guard`.
 - **`hours`** (`09:00-17:00 mon-fri`, `22:00-06:00`, `9-17 sat,sun`) in **`tz`** (an IANA
   zone; the machine's own when left out).
 
@@ -348,13 +353,15 @@ to five minutes there. A stop rule near the end keeps you off them, for example
 **You see what it does.** A toast says when a rule starts or stops. Line 2 says what's in force
 (`guard: effort medium, agents sonnet`, `guard: stopped, 4% 5h left`, `guard paused 52m`). A
 turn the guard changed says so on its closing line (`guard: effort medium, 1 agent on a
-cheaper model`). `/g-line guard` lists the rules in force, and the `/g-line` pane shows every
-rule. `/g-line guard off` turns your rules off until `/g-line guard on`.
+cheaper model`). `/g-line guard` says what's in force, and the `/g-line` pane shows every
+rule as written. `/g-line guard off` turns your rules off until `/g-line guard on`.
+
+![A real session under a simulated low window: a turn that started a background agent closes with "guard: effort low, 1 agent on a cheaper model"; the agent's report still reaches Claude; the next typed prompt is refused with "g-line guard stopped this prompt: 4% of the 5-hour window left (simulated; your rule: stop at 5%)", its reset time and the way past; line 2 reads "guard: stopped, 4% 5h left (sim)"](docs/guard.png)
 
 **Try your rules without spending anything:** `/g-line guard simulate 5h 96` (or `week 90`)
 makes the guard act as if that much of the window were used, for 15 minutes or until
-`/g-line guard simulate off`. Line 2 marks it `(sim)`, and only the guard sees the made-up
-reading. With no usage readings at all (an API key, a cloud provider, or `claude -p` before
+`/g-line guard simulate off`. Line 2 marks it `(sim)`, a refusal says `simulated`, and only
+the guard sees the made-up reading. With no usage readings at all (an API key, a cloud provider, or `claude -p` before
 its first request), the rules can't act: `/g-line guard` says so, and a headless run logs it
 once.
 
@@ -385,7 +392,10 @@ $0.04)`), and line 2 shows `kept warm 2× · $0.08` until your next turn. The co
 session's own ledger before and after the re-read, left out when something else was running
 then. The pane's day line adds `kept warm 3× ($0.12)`. A re-read that reads nothing, or writes
 a tenth or more of what it reads, found no cache: keep-warm turns itself off for that session
-and says so. So does a next turn that rebuilds the cache anyway. An Esc ends that idle stretch
+and says so (`its re-read found no cache (read 28k, wrote 16k)`). So does a next turn that
+rebuilds the cache anyway. That happens: in one test session on Claude Code 2.1.305 the fork
+read only the cached tools and system prompt, not the conversation, and keep-warm stopped
+after that one re-read. An Esc ends that idle stretch
 for keep-warm. `"keep_warm": true` takes the defaults.
 
 **Resume after a limit** (`"resume": true` in `guard`, off by default). When a turn ends on an
@@ -394,8 +404,10 @@ reset on your clock. With `resume`, it also plans one prompt, `continue` (or you
 `"resume": { "text": "...", "jitter": "5m" }`), for just after the reset plus up to 5 random
 minutes, so sessions don't all start at once. You get a notification. Line 2 reads
 `resumes 14:17`, and `/g-line guard cancel` drops it. One session per account holds the plan
-(a lease in the plugin store); the others say so and wait for you. The prompt reaches Claude
-as a message from the g-line plugin. g-line writes no handoff file.
+(a lease in the plugin store); the others say so and wait for you. A prompt you type before
+the reset, a `/clear`, or the session ending drops the plan, and at the reset nothing is sent
+while the guard is off or paused or a turn is running; a toast says which. The prompt reaches
+Claude as a message from the g-line plugin. g-line writes no handoff file.
 
 When a model other than the one asked for answers a request (Claude Code fell back), the
 turn's closing line says `answered by Sonnet 5.5`, guard or not.

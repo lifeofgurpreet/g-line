@@ -43,6 +43,20 @@ built-in `plugin-authoring` skill has the long-form reference.
   (shared by every session on the machine). `$.state` is per session, through the atoms in
   `types/index.d.ts`.
 
+## Engine behaviour found in live sessions (2.1.305)
+
+- `turn.start`, `turn.step` and `turn.complete` fire for subagents' runs too, with `e.agentId`.
+  A hook that tracks the main turn returns `next(e)` first when `e.agentId !== undefined`.
+- A refused prompt (`{ drop }`) is put back in the prompt box; a refused `task-notification`
+  is lost for good.
+- `$.model.fork` replays the main thread's last request, but in one session it read only the
+  cached tools and system prompt (28k of 44k) and wrote the rest. Never assume a fork reads the
+  conversation's cache: check its `usage` (`readBack`).
+- `/effort <level>` in a test session saves that level as the default for the model in
+  `~/.claude/settings.json`. Start test sessions with `--effort <level>` instead.
+- A pane opened without `focus` can't be closed from tmux keys; `/g-line settings` (focused)
+  then `q` closes it.
+
 ## Loader and validator rules that bit
 
 - `types/index.d.ts` must be self-contained (no `import`), and declare every atom key under
