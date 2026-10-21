@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-21T01:20:43Z",
+ "generated_at": "2026-10-21T01:52:52Z",
  "items": [
   {
    "title": "Anthropic's IPO prospectus: H1 2026 revenue of $16.3B, ~20% from two customers, vs. $1.1B in H1 202…",
@@ -17,7 +17,7 @@
    "published_at": "2026-10-20T09:30:19Z",
    "text": "🚀 Introducing DeepInfer, our in-house inference framework, now fully open source! Powering DeepSeek-V4.1-Flash at scale with high throughput and low latency. We’re sharing our production stack to help the community lower compute costs, reduce energy use, and make AI more…",
    "author_name": "DeepSeek",
-   "likes": 33021,
+   "likes": 33388,
    "story": "DeepSeek open-sources DeepInfer, its high-performance inference framework that powers its production services, starting with support for DeepSeek-V4.1-Flash"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-10-20T18:10:16Z",
    "text": "We’ve acquired Orchestra Bio, a platform that helps biopharma teams coordinate the complex process of drug development. Together, we’ll build on Rosalind, our AI models and tools for life sciences research, to streamline those operations and help new treatments reach patients…",
    "author_name": "OpenAI",
-   "likes": 5303,
+   "likes": 5376,
    "story": "OpenAI acquires Orchestra Bio, which builds AI agents for managing drug development, and plans to integrate its tech into OpenAI life sciences suite Rosalind"
   },
   {
@@ -50,8 +50,8 @@
    "url": "https://www.anthropic.com/research/claude-scorpion-toxin-binder-design",
    "source": "Hacker News",
    "published_at": "2026-10-20T17:48:29Z",
-   "text": "89 points and 63 comments on Hacker News.",
-   "points": 89,
+   "text": "93 points and 63 comments on Hacker News.",
+   "points": 93,
    "discussion": "https://news.ycombinator.com/item?id=50170021"
   },
   {
@@ -84,6 +84,45 @@
    "text": "168 points and 126 comments on Hacker News.",
    "points": 168,
    "discussion": "https://news.ycombinator.com/item?id=50148855"
+  },
+  {
+   "title": "Google debuts TorchTPU, an open-source version of PyTorch for running AI apps on TPUs and Google Cl…",
+   "url": "https://techcrunch.com/2026/10/20/google-has-joined-amazon-in-attacking-nvidias-stronghold-with-ai-app-developers/",
+   "source": "Julie Bort / TechCrunch",
+   "published_at": "2026-10-20T19:02:10Z",
+   "text": "Google debuts TorchTPU, an open-source version of PyTorch for running AI apps on TPUs and Google Cloud via a simple configuration change and no code rewriting. On Tuesday, Google announced that TorchTPU, its long-awaited version of PyTorch, is now available as an open-source project.",
+   "via": "Techmeme"
+  },
+  {
+   "title": "Investing in the public benefit",
+   "url": "https://www.anthropic.com/news/public-benefit-fund",
+   "source": "Anthropic",
+   "published_at": "2026-10-20T03:29:16Z",
+   "text": "We’re committing a portion of Anthropic’s shares to the Anthropic Public Benefit Fund, a new entity with a structure that increases the stake as the company grows."
+  },
+  {
+   "title": "Sensor Tower: Muse passed 10.9M downloads since its September debut, 10.2M of them in the US, becom…",
+   "url": "https://techcrunch.com/2026/10/20/metas-muse-hits-10m-u-s-downloads-in-40-days-a-milestone-reached-by-only-11-other-apps/",
+   "source": "Sarah Perez / TechCrunch",
+   "published_at": "2026-10-20T17:30:58Z",
+   "text": "Sensor Tower: Muse passed 10.9M downloads since its September debut, 10.2M of them in the US, becoming the 12th app to hit 10M US downloads in its first 40 days. Meta's AI companion, Muse, is now one of only a dozen mobile apps to have reached 10 million U.S. downloads in its first 40 days on the market.",
+   "via": "Techmeme"
+  },
+  {
+   "title": "AI safety advocates widely criticize Anthropic's leaked US federal AI bill as much weaker than the…",
+   "url": "https://www.transformernews.ai/p/anthropic-leaked-ai-bill-undermines-safety-first-approach",
+   "source": "Shakeel Hashim / Transformer",
+   "published_at": "2026-10-20T10:55:48Z",
+   "text": "AI safety advocates widely criticize Anthropic's leaked US federal AI bill as much weaker than the bipartisan FRONTIER Act, undermining its safety-first pitch",
+   "via": "Techmeme"
+  },
+  {
+   "title": "Sources: Nvidia is in talks to invest hundreds of millions of dollars in Firmus, which pulled its I…",
+   "url": "https://www.theinformation.com/articles/nvidia-moves-back-gpu-cloud-provider-firmus-investors-balk-ipo",
+   "source": "Phoebe Liu / The Information",
+   "published_at": "2026-10-21T00:10:53Z",
+   "text": "Sources: Nvidia is in talks to invest hundreds of millions of dollars in Firmus, which pulled its IPO earlier this month, citing market volatility. Nvidia is in talks to invest hundreds of millions of dollars in Australian AI cloud provider Firmus, which abruptly pulled its initial public offering early …",
+   "via": "Techmeme"
   }
  ],
  "sources": "curated, Techmeme, X (found via Techmeme, Reddit, the Internet Archive), Claude Code releases, Anthropic, Hacker News, Simon Willison"
