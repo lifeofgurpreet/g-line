@@ -102,6 +102,10 @@ export function cacheNext(p: Payload, now: number): Segment | undefined {
       forms: [...(size && size > 0 ? [`${warm} (${tokens(size)})`] : []), warm, `cache ${about}`] }
   }
   const recache = num(cache.recache_tokens_if_cold)
+  if (cache.account_changed === true) {
+    return { key: 'cache', priority: 90, tone: 'warn',
+      forms: [...(recache && recache > 0 ? [`cache cold (account changed), next turn rebuilds ${tokens(recache)}`] : []), 'cache cold (account changed)', 'cache cold'] }
+  }
   return { key: 'cache', priority: 90, tone: 'warn',
     forms: recache && recache > 0 ? [`cache cold, next turn rebuilds ${tokens(recache)}`, 'cache cold'] : ['cache cold'] }
 }

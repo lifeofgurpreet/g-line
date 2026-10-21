@@ -23,6 +23,11 @@ export type Snap = {
      * 0 when a compaction was seen but not its size.
      */
     compactedTo?: number
+    /**
+     * The `account_command` reading changed since this cache was written. Caches
+     * are kept per organization, so the next request starts a new one.
+     */
+    accountChanged?: boolean
   }
   git?: { branch?: string; dirty?: boolean } | null
   account?: string | null
@@ -68,6 +73,8 @@ export type Receipt = {
   guardEffort?: { from: string; to: string }
   /** Subagents the guard started on a cheaper model during the turn. */
   guardAgents?: number
+  /** The account changed since the cache this turn found was written. */
+  accountChanged?: boolean
   /** The model that answered, when it wasn't the one the request asked for (a fallback). */
   servedBy?: string
 }
@@ -95,6 +102,7 @@ export type TurnLive = {
   guardEffort?: { from: string; to: string }
   guardAgents?: number
   servedBy?: string
+  accountChanged?: boolean
 }
 
 export type AgentRow = {
@@ -147,7 +155,11 @@ export type ContextView = {
 }
 
 /** One day's figures, summed over every session the mod ran in on this machine. */
-export type Day = { day: string; cost: number; turns: number; tools: number; sessions: number; colds: number; agents: number }
+export type Day = {
+  day: string; cost: number; turns: number; tools: number; sessions: number; colds: number; agents: number
+  /** Keep-warm's re-reads, and what they cost at API prices (included in `cost`) when the engine counted it. */
+  warms?: number; warmCost?: number
+}
 
 export type Ledger = { today: Day; week: Day[] }
 

@@ -1,8 +1,8 @@
 import { expect, test } from 'claude-code/testing'
 
 import {
-  KEEP_WARM_DEFAULTS, agentModel, cappedEffort, changeText, effortKeepsCache, evaluate, guardForms, inHours, localTime,
-  parseGuard, parseHours, ruleText, seconds, stopText, tokenCount, warmDue,
+  KEEP_WARM_DEFAULTS, accountKey, agentModel, cappedEffort, changeText, effortKeepsCache, evaluate, guardForms, inHours, leaseFree,
+  localTime, parseGuard, parseHours, readBack, ruleText, seconds, simulated, stopText, tokenCount, warmDue, warmForms,
 } from '../hooks/guard'
 import type { Facts, WarmFacts } from '../hooks/guard'
 
@@ -184,4 +184,46 @@ test('keep-warm: only an idle, warm, hour-long cache worth keeping, a bounded nu
 test('times and sizes as people write them', () => {
   expect([seconds('45m'), seconds('1h'), seconds('1h30m'), seconds('90s'), seconds(30), seconds('soon')]).toEqual([2700, 3600, 5400, 90, 1800, undefined])
   expect([tokenCount('50k'), tokenCount('1.5m'), tokenCount(2000), tokenCount('lots')]).toEqual([50_000, 1_500_000, 2000, undefined])
+})
+
+test('0.7.1: a reading from before the window reset decides nothing; re-reads, leases and the account\'s share', () => {
+  // The 5-hour window reset ten minutes ago, but the last reading (96% used) is from before it.
+  const stale: Facts = { nowMs: TUE_10_KL, windows: { '5h': { left: 4, resetsAt: Math.floor(TUE_10_KL / 1000) - 600 } } }
+  expect(evaluate(RULES, stale).rules).toEqual([])
+  expect(readBack(100_000, { cache_read_input_tokens: 100_000, cache_creation_input_tokens: 2000 })).toBe(true)
+  expect(readBack(100_000, { cache_read_input_tokens: 0, cache_creation_input_tokens: 100_000 })).toBe(false)
+  expect(readBack(100_000, { cache_read_input_tokens: 90_000, cache_creation_input_tokens: 9000 })).toBe(false)
+  expect(readBack(100_000, undefined)).toBe(false)
+  expect(accountKey('Team@Example.com (via manager)')).toBe('team@example.com_via_manager_')
+  expect(accountKey(null)).toBe('machine')
+  expect(leaseFree(undefined, 's1', 0)).toBe(true)
+  expect(leaseFree({ holder: 's2', until: 5000 }, 's1', 1000)).toBe(false)
+  expect(leaseFree({ holder: 's2', until: 5000 }, 's1', 6000)).toBe(true)
+  expect(leaseFree({ holder: 's1', until: 5000 }, 's1', 1000)).toBe(true)
+  expect(warmForms(2, 0.18)).toEqual(['kept warm 2× · $0.18', 'kept warm 2×'])
+  expect(warmForms(1)).toEqual(['kept warm 1×'])
+  expect(warmForms(0)).toEqual([])
+})
+
+test('0.7.1: keep-warm stands down after an account or model change, and keeps only the last-typed session per account', () => {
+  const k = RULES.keepWarm!
+  const base: WarmFacts = { now: 10_000 + 46 * 60, lastAt: 10_000, ttl: '1h', prefix: 120_000, compacted: false, compactionCovers: false,
+    done: 0, thisHour: 0, fiveHourLeft: 60, stopped: false, busy: false, jitter: 0 }
+  expect(warmDue(k, { ...base, accountChanged: true }).why).toBe('the account changed')
+  expect(warmDue(k, { ...base, modelChanged: true }).why).toBe('the model changed')
+  expect(warmDue(k, { ...base, notLastTouched: true }).why).toBe('you typed in another session on this account last')
+  expect(warmDue({ ...k, sessions: 'all' }, { ...base, notLastTouched: true }).due).toBe(true)
+  expect(warmDue(k, { ...base, leased: true }).why).toBe('another session on this account is re-reading')
+  expect(parseGuard({ keep_warm: { sessions: 'all' } }).keepWarm?.sessions).toBe('all')
+})
+
+test('0.7.1: a simulated reading replaces one window for the guard alone, for a while', () => {
+  const f = facts(60)
+  const sim = simulated(f, { window: '5h', used: 96, until: TUE_10_KL + 60_000 })
+  expect(sim.windows['5h']?.left).toBe(4)
+  expect(sim.windows['5h']?.resetsAt).toBe(f.windows['5h']?.resetsAt)
+  expect(evaluate(RULES, sim).stop?.rule.id).toBe('r2')
+  expect(simulated(f, { window: '5h', used: 96, until: TUE_10_KL - 1 })).toBe(f)
+  const none = simulated({ nowMs: TUE_10_KL, windows: {} }, { window: 'week', used: 90, until: TUE_10_KL + 1 })
+  expect(none.windows.week).toEqual({ left: 10, resetsAt: Math.floor(TUE_10_KL / 1000) + 7200 })
 })

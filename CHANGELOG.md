@@ -1,5 +1,32 @@
 # Changelog
 
+## 0.7.1 (2026-10-21): the guard, sturdier; an account change counts the cache cold
+
+- **Account changes.** When the `account_command` line changes, as when an account manager
+  switches accounts mid-session, line 2 reads `cache cold (account changed), next turn
+  rebuilds 120k`, a toast says so once, and the next turn's closing line reads `cache cold
+  after account change · rebuilt 120k`. Prompt caches are kept per organization (Claude's
+  prompt-caching docs), so a cache written under another account isn't counted on. That
+  holds for every model. The account is read again after a turn when the reading is over two
+  minutes old.
+- **Keep-warm, one per account.** By default it keeps only the session you typed in last on
+  each account (`"sessions": "all"` for every idle one). It holds a lease so one session per
+  account re-reads at a time. The hourly cap is per account.
+- **Keep-warm stands down** when a re-read reads nothing or writes a tenth or more of what it
+  read, after an account change, a model change, a compaction or `/clear`, while the guard is
+  paused, and, after an Esc, for the rest of that idle stretch.
+- **What keep-warm costs** shows: line 2 reads `kept warm 2× · $0.08` until your next turn,
+  each toast gives the cost, and the pane's day line adds `kept warm 3× ($0.12)`. The cost is
+  the session's own ledger before and after the re-read, and it's left out when something
+  else was running.
+- **`/g-line guard simulate 5h 96`** (or `week 90`) has the guard act as if that much of the
+  window were used, for 15 minutes, marked `(sim)`, so rules can be tried with no quota spent.
+  `simulate off` ends it.
+- With no usage readings, `/g-line guard` says the rules can't act, and a headless `claude -p`
+  run logs it once instead of passing silently. A reading from before a window's reset no
+  longer counts.
+- README: stop before usage credits (real money, and five-minute caches there).
+
 ## 0.7.0 (2026-10-21): a guard for a low window, by your own rules
 
 - **Guard (opt-in, off by default).** Rules you write under `guard` in config.json act when a

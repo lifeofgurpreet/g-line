@@ -290,6 +290,8 @@ export type Command =
   | { kind: 'reset'; setting?: Setting }
   | { kind: 'guard'; action: 'status' | 'once' | 'resume' | 'on' | 'off' }
   | { kind: 'guard'; action: 'pause'; seconds: number }
+  | { kind: 'guard'; action: 'simulate'; window: '5h' | 'week'; used: number }
+  | { kind: 'guard'; action: 'simulate'; window?: undefined; used?: undefined }
   | { kind: 'error'; text: string }
 
 const ON = ['on', 'true', 'yes', '1', 'enable', 'enabled']
@@ -350,8 +352,18 @@ function guardCommand(rest: string[]): Command {
     if (s === undefined || s <= 0 || s > 24 * 3600) return { kind: 'error', text: '/g-line guard pause takes a time up to a day, such as 30m or 2h; an hour if none.' }
     return { kind: 'guard', action: 'pause', seconds: s }
   }
+  if (action === 'simulate' || action === 'sim') {
+    if (more.length === 1 && (more[0] === 'off' || more[0] === 'stop')) return { kind: 'guard', action: 'simulate' }
+    const [win = '', pct = ''] = more
+    const window = win === '5h' || win === 'five' ? '5h' : win === 'week' || win === 'wk' || win === '7d' ? 'week' : undefined
+    const used = Number(pct.replace(/%$/, ''))
+    if (!window || more.length !== 2 || !Number.isFinite(used) || used < 0 || used > 100) {
+      return { kind: 'error', text: '/g-line guard simulate 5h 96 (or week 90): the guard acts as if that much of the window were used, for 15 minutes. /g-line guard simulate off ends it.' }
+    }
+    return { kind: 'guard', action: 'simulate', window, used }
+  }
   if (more.length === 0 && (action === 'status' || action === 'once' || action === 'resume' || action === 'on' || action === 'off')) {
     return { kind: 'guard', action }
   }
-  return { kind: 'error', text: '/g-line guard, then once, pause [30m], resume, on or off.' }
+  return { kind: 'error', text: '/g-line guard, then once, pause [30m], resume, simulate 5h 96, on or off.' }
 }

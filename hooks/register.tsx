@@ -34,8 +34,11 @@ import {
 } from './pulse'
 import type { PulseFeed, PulseItem, Shown } from './pulse'
 import { gitSegmentOf } from './core'
-import { agentModel, cappedEffort, changeText, effortKeepsCache, evaluate, guardForms, ruleText, stopText, warmDue } from './guard'
-import type { Effort, Facts, Verdict } from './guard'
+import {
+  accountKey, agentModel, cappedEffort, changeText, effortKeepsCache, evaluate, guardForms, leaseFree, readBack, ruleText, simulated, stopText,
+  warmDue, warmForms,
+} from './guard'
+import type { Effort, Facts, Simulation, Verdict } from './guard'
 import {
   DEFAULTS, GROUPS, SETTINGS, changed, merge, nextValue, originOf, parseCommand, patchOf, said, withPatch, withoutSetting,
 } from './settings'
@@ -286,9 +289,11 @@ export function payload(s: Snap, nowSeconds: number, ttl: '5m' | '1h' | undefine
     const effective = s.cache.learned ?? ttl ?? automaticTtl(s)
     const expires = s.cache.lastAt + (effective === '1h' ? 3600 : 300)
     const compacted = s.cache.compactedTo !== undefined
-    p.prompt_cache = { caching_observed: true, ttl: effective, warm: !compacted && expires > nowSeconds, expires_at: expires,
+    const moved = s.cache.accountChanged === true
+    p.prompt_cache = { caching_observed: true, ttl: effective, warm: !compacted && !moved && expires > nowSeconds, expires_at: expires,
       recache_tokens_if_cold: compacted ? s.cache.compactedTo || undefined : s.cache.prefix }
     if (compacted) p.prompt_cache.compacted = true
+    else if (moved) p.prompt_cache.account_changed = true
     else if (idle && effective === '1h' && s.cache.prefix >= idle.minTokens) p.prompt_cache.idle_compacts = true
   }
   if (s.git) p.git = s.git
@@ -318,6 +323,8 @@ let lastHint = ''
 let coldThisTurn = false
 /** Whether the last account reading failed or ran out of time. */
 let accountMissed = false
+/** When the account was last read (ms): after a turn it's read again if older than two minutes. */
+let accountAt = 0
 /** The messages the next request is built from, counted once the last request's session went idle. */
 let idleCount: { lastAt: number; messages: number } | undefined
 /** Pulse's 8-second beats so far; the row moves on every `PULSE_BEATS[speed]` of them. */
@@ -440,8 +447,17 @@ async function refreshAccount($: EngineInterface): Promise<void> {
     const run = await $.process.run(command, { timeoutMs: 5000 })
     accountMissed = run.exitCode !== 0
     if (accountMissed) return
+    accountAt = await nowMs($)
     const line = str(run.stdout.split('\n')[0], 120)
-    await update($, snap, s => ({ ...s, account: line ?? null }))
+    const before = (await read($, snap)).account
+    // Another account: caches are kept per organization, so the cache this
+    // session counted on isn't the new account's. Count it cold.
+    const moved = !!before && !!line && before !== line
+    await update($, snap, s => ({ ...s, account: line ?? null,
+      cache: moved && s.cache?.cached ? { ...s.cache, accountChanged: true } : s.cache }))
+    if (moved && (await read($, snap)).cache?.cached) {
+      await toast($, 'The account changed: prompt caches are kept per organization, so the next turn starts a new cache.', 10_000)
+    }
   } catch {
     accountMissed = true
   }
@@ -645,7 +661,7 @@ async function receiptOf($: EngineInterface, e: { durationMs: number; usage?: { 
     cacheWrite: live?.cacheWrite, warmBefore: live?.warmBefore, failures: live?.failures,
     failedTool: live?.failedTool ?? undefined, overlap, cold: live?.cold, compacted: live?.compacted, window,
     ratio: costRatio(cost, overlap, earlier),
-    guardEffort: live?.guardEffort, guardAgents: live?.guardAgents, servedBy: live?.servedBy,
+    guardEffort: live?.guardEffort, guardAgents: live?.guardAgents, servedBy: live?.servedBy, accountChanged: live?.accountChanged,
   }
 }
 
@@ -693,12 +709,25 @@ async function addToDay($: EngineInterface, r: Receipt, cold: boolean, at: numbe
   try {
     const old = ((await $.store.get(key)) ?? {}) as Record<string, number>
     await $.store.set(key, {
-      cost: (old.cost ?? 0) + (r.cost ?? 0), turns: (old.turns ?? 0) + 1, tools: (old.tools ?? 0) + r.tools,
+      ...old, cost: (old.cost ?? 0) + (r.cost ?? 0), turns: (old.turns ?? 0) + 1, tools: (old.tools ?? 0) + r.tools,
       colds: (old.colds ?? 0) + (cold ? 1 : 0), agents: (old.agents ?? 0) + r.agents,
     })
     await refreshLedger($, at)
   } catch {
     // the store is full or unwritable: the line and pane go on without it
+  }
+}
+
+/** A keep-warm re-read in today's entry: one more, and its cost when the engine counted one. */
+async function addWarmToDay($: EngineInterface, cost: number | undefined, at: number): Promise<void> {
+  if (!sessionId) return
+  const key = `d:${dayOf(at, offsetAt(at))}:${sessionId}`
+  try {
+    const old = ((await $.store.get(key)) ?? {}) as Record<string, number>
+    await $.store.set(key, { ...old, cost: (old.cost ?? 0) + (cost ?? 0), warms: (old.warms ?? 0) + 1, warmCost: (old.warmCost ?? 0) + (cost ?? 0) })
+    await refreshLedger($, at)
+  } catch {
+    // the store is full or unwritable
   }
 }
 
@@ -868,7 +897,7 @@ async function detailRows($: EngineInterface, seconds: number, columns?: number)
   const l = await read($, ledgerAtom)
   if (l && l.week.some(d => d.turns)) {
     rows.push({ key: 'h-day', text: 'Today and this week, every session on this machine', bold: true })
-    rows.push({ key: 'd-today', text: `today ${money(l.today.cost)} at API prices · ${l.today.turns} turns · ${l.today.sessions} ${l.today.sessions === 1 ? 'session' : 'sessions'}${l.today.colds ? ` · ${l.today.colds} cold-cache rebuilds` : ''}` })
+    rows.push({ key: 'd-today', text: `today ${money(l.today.cost)} at API prices · ${l.today.turns} turns · ${l.today.sessions} ${l.today.sessions === 1 ? 'session' : 'sessions'}${l.today.colds ? ` · ${l.today.colds} cold-cache rebuilds` : ''}${l.today.warms ? ` · kept warm ${l.today.warms}×${l.today.warmCost ? ` (${money(l.today.warmCost)})` : ''}` : ''}` })
     const week = l.week.reduce((sum, d) => sum + d.cost, 0)
     rows.push({ key: 'd-week', text: `7 days ${spark(l.week.map(d => d.cost))} ${money(week)}` })
   }
@@ -1181,7 +1210,16 @@ let providerKeepsCache = true
 const typeModels = new Map<string, string>([['Explore', 'haiku']])
 /** Keep-warm: re-reads since the last real request, whether it gave up for this session, and this session's spread. */
 let warmed = 0
+/** What the re-reads since the last turn cost at API prices, where the engine counted it. */
+let warmCost = 0
+/** An Esc ended this idle stretch for keep-warm: forks wait for the person's next prompt. */
+let warmRested = false
 let warmOff = false
+/** `/g-line guard simulate`: a window's reading replaced for the guard alone, for a while. */
+let simulation: Simulation | undefined
+/** Interactive or not: a headless run is told once when the guard has no readings to act on. */
+let interactive = true
+let blindSaid = false
 let warming = false
 let warmJitter = 0
 const WARM_PROMPT = 'This is an automatic keep-alive from the g-line plugin, not a message from the person. Reply with only: ok'
@@ -1222,11 +1260,16 @@ async function pausedFor($: EngineInterface): Promise<number> {
 async function guardNow($: EngineInterface): Promise<Verdict> {
   const before = verdict
   const at = await nowMs($)
-  verdict = evaluate(config.guard, factsOf(await read($, snap), at), before.active)
+  if (simulation && simulation.until <= at) {
+    simulation = undefined
+    $.ui.toast('g-line guard: the simulation ended; the real readings decide again.', { timeoutMs: 6000 })
+  }
+  verdict = evaluate(config.guard, simulated(factsOf(await read($, snap), at), simulation), before.active)
   const change = changeText(before, verdict)
   if (change && !(await read($, hidden))) {
     const paused = await pausedFor($)
-    $.ui.toast(paused > 0 ? `${change} (Paused for ${Math.ceil(paused / 60)} more minutes.)` : change, { timeoutMs: 12_000 })
+    const note = paused > 0 ? ` (Paused for ${Math.ceil(paused / 60)} more minutes.)` : simulation ? ' (Simulated.)' : ''
+    $.ui.toast(`${change}${note}`, { timeoutMs: 12_000 })
   }
   return verdict
 }
@@ -1236,6 +1279,7 @@ async function guardSegment($: EngineInterface): Promise<Segment | undefined> {
   if (!verdict.rules.length) return undefined
   const words = guardForms(verdict, await pausedFor($))
   if (!words) return undefined
+  if (simulation) words.forms = words.forms.map(form => `${form} (sim)`)
   const forms = effortWaits && verdict.effort && !verdict.stop ? words.forms.map(f => f.replace(`effort ${verdict.effort}`, `effort ${verdict.effort} when cache cold`)) : words.forms
   return { key: 'guard', priority: words.tone === 'bad' ? 92 : 60, forms, tone: words.tone }
 }
@@ -1302,47 +1346,90 @@ async function guardAgentModel($: EngineInterface, e: { model?: string; parentMo
  */
 async function keepWarm($: EngineInterface): Promise<void> {
   const k = config.guard.on ? config.guard.keepWarm : undefined
-  if (!k || warmOff || warming || (await read($, hidden))) return
+  if (!k || warmOff || warming || (await read($, hidden)) || (await pausedFor($)) > 0) return
   const s = await read($, snap)
   const c = s.cache
   if (!c?.cached) return
   const now = await nowSeconds($)
-  const hour = `warm:${Math.floor(now / 3600)}`
+  const key = accountKey(s.account)
+  const hour = `warm:${key}:${Math.floor(now / 3600)}`
   let thisHour = 0
+  let touched: unknown
+  let lease: unknown
   try {
     thisHour = Number(await $.store.get(hour)) || 0
+    touched = await $.store.get(`touched:${key}`)
+    lease = await $.store.get(`lease:warm:${key}`)
   } catch {
-    // this session's own count
+    // this session's own view
   }
+  let model: string | undefined
+  try {
+    model = await $.session.model()
+  } catch {
+    model = undefined
+  }
+  const t = touched as { session?: unknown } | undefined
   const five = s.rateLimits?.find(l => l.kind === 'five_hour')
   const due = warmDue(k, {
     now, lastAt: c.lastAt, ttl: c.learned ?? ttl ?? automaticTtl(s), prefix: c.prefix, compacted: c.compactedTo !== undefined,
-    compactionCovers: idle !== undefined && c.prefix >= idle.minTokens, done: warmed, thisHour,
+    compactionCovers: idle !== undefined && c.prefix >= idle.minTokens, done: warmRested ? k.max : warmed, thisHour,
     fiveHourLeft: five ? 100 - five.percentUsed : undefined, stopped: verdict.stop !== undefined,
-    busy: (await read($, turnNow)) !== null, jitter: warmJitter,
+    busy: (await read($, turnNow)) !== null, jitter: warmJitter, accountChanged: c.accountChanged === true,
+    modelChanged: !!model && !!s.model && plainModel(model) !== plainModel(s.model),
+    notLastTouched: typeof t?.session === 'string' && t.session !== sessionId,
+    leased: !leaseFree(lease, sessionId ?? '', now * 1000),
   })
   if (!due.due) return
   warming = true
   try {
+    // One session per account re-reads at a time; the lease outlives a slow answer.
+    await $.store.set(`lease:warm:${key}`, { holder: sessionId ?? '', until: (now + 600) * 1000 }).catch(() => undefined)
+    const quiet = !(await read($, agents)).some(row => isActive(row.status))
+    const before = quiet ? (await $.session.usage().catch(() => undefined))?.cost?.usd : undefined
     const r = await $.model.fork({ prompt: WARM_PROMPT })
+    const after = before !== undefined ? (await $.session.usage().catch(() => undefined))?.cost?.usd : undefined
+    // What the re-read cost, where the session's own ledger counted it and nothing else ran beside it.
+    const cost = before !== undefined && after !== undefined && after > before ? after - before : undefined
     const usage = 'usage' in r ? r.usage : undefined
-    const readBack = usage?.cache_read_input_tokens ?? 0
-    if (usage && readBack >= c.prefix * 0.5) {
+    if (readBack(c.prefix, usage)) {
       warmed += 1
+      if (cost !== undefined) warmCost += cost
       await update($, snap, x => (x.cache && x.cache.lastAt === c.lastAt ? { ...x, cache: { ...x.cache, lastAt: now } } : x))
       await $.store.set(hour, thisHour + 1).catch(() => undefined)
-      await toast($, `Kept the cache warm: re-read ${tokens(readBack)} after ${Math.round((now - c.lastAt) / 60)} idle minutes (${warmed} of ${k.max}).`, 8000)
+      await addWarmToDay($, cost, now * 1000)
+      await toast($, `Kept the cache warm: re-read ${tokens(usage?.cache_read_input_tokens ?? 0)} after ${Math.round((now - c.lastAt) / 60)} idle minutes (${warmed} of ${k.max}${cost !== undefined ? `, ${money(cost)}` : ''}).`, 8000)
+    } else if (!r.isAnswered && r.reason === 'aborted') {
+      // An Esc: forks wait for your next prompt. This idle stretch is over for keep-warm.
+      warmRested = true
     } else {
       warmOff = true
       const why = !r.isAnswered && r.reason !== 'api-error' && r.reason !== 'empty-reply' ? r.reason
-        : usage ? `read ${tokens(readBack)}, wrote ${tokens(usage.cache_creation_input_tokens)}` : 'no answer'
+        : usage ? `read ${tokens(usage.cache_read_input_tokens)}, wrote ${tokens(usage.cache_creation_input_tokens)}` : 'no answer'
       await toast($, `Keep-warm stopped for this session: its re-read found no cache (${why}).`, 10_000)
     }
   } catch {
     warmOff = true
   } finally {
+    await $.store.delete(`lease:warm:${key}`).catch(() => undefined)
     warming = false
   }
+}
+
+/** The person typed in this session: on its account, it's the one keep-warm keeps (`sessions: last`). */
+async function touch($: EngineInterface): Promise<void> {
+  if (!config.guard.keepWarm || !sessionId) return
+  try {
+    await $.store.set(`touched:${accountKey((await read($, snap)).account)}`, { session: sessionId, at: await nowMs($) })
+  } catch {
+    // keep-warm decides by the lease alone
+  }
+}
+
+/** Line 2's `kept warm 2× · $0.18`, while re-reads since the last turn hold the cache. */
+function warmSegment(): Segment | undefined {
+  const forms = warmForms(warmed, warmCost || undefined)
+  return forms.length ? { key: 'warm', priority: 42, forms } : undefined
 }
 
 /** After a real request: a lapsed cache despite keep-warm turns it off for the session, and the count starts over. */
@@ -1352,6 +1439,21 @@ async function afterRealRequest($: EngineInterface, cold: boolean): Promise<void
     await toast($, 'Keep-warm re-read the cache, yet this turn rebuilt it: keep-warm is off for this session.', 10_000)
   }
   warmed = 0
+  warmCost = 0
+  warmRested = false
+}
+
+/** `/g-line guard simulate 5h 96`: the guard acts as if, for 15 minutes, saying so; nothing spent to see it. */
+async function simulate($: EngineInterface, window?: '5h' | 'week', used?: number): Promise<void> {
+  if (!window || used === undefined) {
+    simulation = undefined
+    $.ui.toast('g-line guard: simulation off; the real readings decide again.', { timeoutMs: 6000 })
+  } else {
+    simulation = { window, used, until: (await nowMs($)) + 15 * 60_000 }
+    $.ui.toast(`g-line guard: for 15 minutes the guard acts as if ${used}% of the ${window === '5h' ? '5-hour' : 'weekly'} window were used. Line 2 marks it (sim). /g-line guard simulate off ends it.`, { timeoutMs: 10_000 })
+  }
+  await guardNow($)
+  await update($, tick, n => n + 1)
 }
 
 /** `/g-line guard …`: what's in force, a pass for one prompt, a pause, or the rules off and on. */
@@ -1386,6 +1488,8 @@ async function guardCommandRun($: EngineInterface, action: string, pause?: numbe
   const paused = await pausedFor($)
   const lines = [
     none ? 'g-line guard has no rules (README: Guard).' : !config.guard.on ? 'g-line guard is off (/g-line guard on).' : '',
+    !none && !(await read($, snap)).rateLimits?.length ? 'No usage readings yet (an API key, a cloud provider, or no request so far): the rules wait.' : '',
+    simulation ? `Simulating ${simulation.used}% used of the ${simulation.window} window.` : '',
     ...config.guard.errors.map(error => `Not read: ${error}.`),
     !none && config.guard.on ? `${config.guard.rules.length} ${config.guard.rules.length === 1 ? 'rule' : 'rules'}, ${v.rules.length} in force${v.rules.length ? `: ${v.rules.map(ruleText).join('; ')}` : ''}.` : '',
     paused > 0 ? `Paused for ${Math.ceil(paused / 60)} more minutes.` : '',
@@ -1449,7 +1553,8 @@ async function runCommand($: EngineInterface, e: { command: string; args: string
       return {}
     }
     case 'guard':
-      await guardCommandRun($, asked.action, asked.action === 'pause' ? asked.seconds : undefined)
+      if (asked.action === 'simulate') await simulate($, asked.window, asked.used)
+      else await guardCommandRun($, asked.action, asked.action === 'pause' ? asked.seconds : undefined)
       return {}
     case 'card':
       return openPane($, 'card')
@@ -1463,6 +1568,7 @@ async function runCommand($: EngineInterface, e: { command: string; args: string
 export const register: Register = (on, options) => {
   on('session.start', async ($, e, next) => {
     startOptions = options as Record<string, unknown>
+    interactive = e.isInteractive !== false
     ;({ config, layers } = await loadConfig($, startOptions))
     stamp = await configStamp($)
     ttl = await explicitTtl($, config)
@@ -1546,6 +1652,7 @@ export const register: Register = (on, options) => {
       const cached = u.cache_read_input_tokens + u.cache_creation_input_tokens > 0
       const prefix = u.input_tokens + u.cache_read_input_tokens + u.cache_creation_input_tokens + u.output_tokens
       const was = (await read($, snap)).cache
+      if (was?.accountChanged) await update($, turnNow, live => (live ? { ...live, accountChanged: true } : live))
       await afterRealRequest($, !!was?.cached && was.compactedTo === undefined && u.cache_creation_input_tokens > was.prefix * 0.5)
       // A model other than the one asked for answered: Claude Code fell back. Said on the receipt.
       if (u.model && plainModel(u.model) !== plainModel(e.model)) {
@@ -1566,6 +1673,7 @@ export const register: Register = (on, options) => {
         }
         const life = (learned ?? ttl ?? automaticTtl(s)) === '1h' ? 3600 : 300
         if (s.cache?.cached && gap > life && u.cache_creation_input_tokens > s.cache.prefix * 0.5) coldThisTurn = true
+        if (s.cache?.accountChanged && u.cache_creation_input_tokens > s.cache.prefix * 0.5) coldThisTurn = true
         return { ...s, model: e.model, effort: typeof step.effort === 'string' ? step.effort : s.effort,
           cache: { lastAt: started, cached, prefix, learned } }
       })
@@ -1660,6 +1768,8 @@ export const register: Register = (on, options) => {
     $.clock.after(1, () => void afterTurn($, r, e.isAborted))
     void refreshGit($)
     void refreshAgents($)
+    // An account manager may switch accounts between turns: read it again if the reading is old.
+    if (config.accountCommand && (await nowMs($)) - accountAt > 120_000) void refreshAccount($)
     return next(e)
   })
 
@@ -1693,6 +1803,13 @@ export const register: Register = (on, options) => {
   // The guard's stop rules: a prompt that would start a turn is refused, with
   // why and the way past, while one is in force. Only with rules the person wrote.
   on('prompt.submit', async ($, e, next) => {
+    if (e.origin?.kind === 'composer' || e.origin?.kind === 'bridge') await touch($)
+    if (!config.guard.on || !config.guard.rules.length) return next(e)
+    // A headless run (`claude -p`) has no readings before its first request: say the guard can't see, once.
+    if (!interactive && !blindSaid && !(await read($, snap)).rateLimits?.length) {
+      blindSaid = true
+      $.ui.log('g-line guard: no usage readings in this session yet, so its rules cannot act on this prompt.')
+    }
     if (!config.guard.rules.some(rule => rule.stop)) return next(e)
     const refused = await guardPrompt($, e)
     return refused ? { drop: refused } : next(e)
@@ -1717,7 +1834,7 @@ export const register: Register = (on, options) => {
       // label the engine draws before the hint is the engine's: a mod can
       // shorten the hint's words but not that label.
       const columns = e.viewport?.columns
-      const extra = [extras.guard, extras.agents, extras.compact, config.budget ? extras.today : undefined, config.git ? gitSegmentOf(s.git) : undefined, accountSegment(s.account)]
+      const extra = [extras.guard, warmSegment(), extras.agents, extras.compact, config.budget ? extras.today : undefined, config.git ? gitSegmentOf(s.git) : undefined, accountSegment(s.account)]
         .filter((one): one is Segment => one !== undefined)
       // The hint stays whole here: a rewritten hint has the engine draw its
       // mode label in a column of its own, which would squeeze line 2 into

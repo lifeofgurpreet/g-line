@@ -111,9 +111,10 @@ Line 2, g-line's own row, in colour:
 | Segment | Example | What it means |
 | --- | --- | --- |
 | model | `Opus 5.5 high` | The model and the effort of the last request (`fast` when fast mode is on) |
-| cache | `cache ~59m`, `cache cold`, `compacted, next turn caches 31k` | How long the prompt cache stays warm, green, then amber in its last minutes. `~` because it's an estimate from when the last request ran and the cache's lifetime. After a compaction (yours, automatic, or Claude Code's while you were idle) the old conversation's cache no longer applies, so it shows the summary the next turn writes instead |
+| cache | `cache ~59m`, `cache cold`, `compacted, next turn caches 31k` | How long the prompt cache stays warm, green, then amber in its last minutes. `~` because it's an estimate from when the last request ran and the cache's lifetime. After a compaction (yours, automatic, or Claude Code's while you were idle) the old conversation's cache no longer applies, so it shows the summary the next turn writes instead. When your `account_command` line changes (an account manager switched accounts), it reads `cache cold (account changed)`: prompt caches are kept per organization, so the next turn starts a new one, and that turn's closing line says `cache cold after account change · rebuilt 120k`. Without an `account_command`, g-line can't see a switch |
 | timing | `wk out ~Thu 19:00, resets Fri 16:00` | When a window on pace to run out gets there (rounded: it's a projection), else when it resets |
 | agents, compaction | `agents 2 running`, `compacts in ~3 turns` | While subagents work; when a compaction is near |
+| guard, keep-warm | `guard: effort medium`, `kept warm 2× · $0.08` | Only with your `guard` rules (see Guard): what they're doing now |
 
 When the terminal narrows, line 2 shortens first (`Opus 5.5` to `Opus`, the effort kept), and
 what line 1 can't fit moves down rather than vanishing. A healthy window's reset time goes
@@ -332,14 +333,27 @@ hours in Kuala Lumpur, so teammates keep some of the window.
   zone; the machine's own when left out).
 
 A rule starts when the window falls to its threshold. It lets go when the window climbs 2
-points past it, the window resets, or one of its conditions stops holding. The percentages
-belong to the account, so every session using it crosses a threshold at about the same time.
+points past it, the window resets, or one of its conditions stops holding. A reading taken
+before the window's reset counts for nothing. The percentages belong to the account, so every
+session using it crosses a threshold at about the same time.
+
+**Stop before usage credits.** If your plan has extra usage turned on, Claude Code keeps going
+past 100% of a window and bills it as usage credits: real money, and its prompt caches drop
+to five minutes there. A stop rule near the end keeps you off them, for example
+`{ "left": 2, "stop": true }`.
 
 **You see what it does.** A toast says when a rule starts or stops. Line 2 says what's in force
 (`guard: effort medium, agents sonnet`, `guard: stopped, 4% 5h left`, `guard paused 52m`). A
 turn the guard changed says so on its closing line (`guard: effort medium, 1 agent on a
 cheaper model`). `/g-line guard` lists the rules in force, and the `/g-line` pane shows every
 rule. `/g-line guard off` turns your rules off until `/g-line guard on`.
+
+**Try your rules without spending anything:** `/g-line guard simulate 5h 96` (or `week 90`)
+makes the guard act as if that much of the window were used, for 15 minutes or until
+`/g-line guard simulate off`. Line 2 marks it `(sim)`, and only the guard sees the made-up
+reading. With no usage readings at all (an API key, a cloud provider, or `claude -p` before
+its first request), the rules can't act: `/g-line guard` says so, and a headless run logs it
+once.
 
 **Keep-warm** reads an idle conversation's prompt cache again before its hour runs out, so
 your next prompt doesn't pay to rebuild it. It sends the conversation again with one short
@@ -348,20 +362,28 @@ conversation. The re-read counts toward your usage like any cached read. Its lim
 
 - It runs only after `after` idle (45 minutes by default, 10 to 55), plus up to 3 minutes so
   sessions that went quiet together don't all run at once.
+- It keeps only the session you last typed in on each account (`"sessions": "last"`, the
+  default; `"all"` keeps every idle one). One session per account re-reads at a time.
 - It runs at most `max` times per idle stretch (2 by default) and `per_hour` times an hour
-  across every session on the machine (6).
+  per account across the machine's sessions (6).
 - It needs a cache of at least `min_context` (50k).
 - It needs an hour-long cache. Past your plan's limit, on usage credits, Claude Code uses
   five-minute caches, so it stops there.
 - It needs `min_left` percent of the 5-hour window left (20).
-- It doesn't run while a stop rule is in force.
+- It doesn't run while a stop rule is in force or the guard is paused.
+- It skips a cache the conversation no longer has: after a compaction, a `/clear`, a model
+  change, or an account change.
 - It stands aside for a conversation Claude Code compacts on its own when idle (`idleCompaction`,
   at 200k tokens and up by default): that conversation gets summarised instead. Set
   `"idleCompaction": false` in Claude Code's settings to keep big conversations warm instead.
 
-Each re-read is a toast (`Kept the cache warm: re-read 182k after 46 idle minutes (1 of 2)`).
-If a re-read, or the next turn, finds the cache gone anyway, keep-warm turns itself off for
-that session and says so. `"keep_warm": true` takes the defaults.
+Each re-read is a toast (`Kept the cache warm: re-read 182k after 46 idle minutes (1 of 2,
+$0.04)`), and line 2 shows `kept warm 2× · $0.08` until your next turn. The cost is the
+session's own ledger before and after the re-read, left out when something else was running
+then. The pane's day line adds `kept warm 3× ($0.12)`. A re-read that reads nothing, or writes
+a tenth or more of what it reads, found no cache: keep-warm turns itself off for that session
+and says so. So does a next turn that rebuilds the cache anyway. An Esc ends that idle stretch
+for keep-warm. `"keep_warm": true` takes the defaults.
 
 When a model other than the one asked for answers a request (Claude Code fell back), the
 turn's closing line says `answered by Sonnet 5.5`, guard or not.

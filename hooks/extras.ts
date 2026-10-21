@@ -131,7 +131,7 @@ export function receiptEvents(r: Receipt): Part[] {
   const write = r.cacheWrite ?? 0
   // The turn's first request came after the cache's lifetime and rewrote most of it.
   const cold = r.cold === true && write >= 10_000
-  if (cold) events.push({ tone: 'warn', text: `cache cold · rebuilt ${tokens(write)}` })
+  if (cold) events.push({ tone: 'warn', text: `cache cold${r.accountChanged ? ' after account change' : ''} · rebuilt ${tokens(write)}` })
   if (bigJump(r)) events.push({ tone: 'accent', text: `+${tokens(r.context ?? 0)} context` })
   if (!cold && r.warmBefore && write >= 20_000 && write >= Math.max(0, r.context ?? 0) + 10_000) {
     events.push({ tone: 'warn', text: `cache write ${tokens(write)}` })
@@ -356,6 +356,10 @@ export function ledger(entries: readonly { key: string; value: unknown }[], toda
     const v = value as Record<string, unknown>
     const n = (k: string) => (typeof v[k] === 'number' && Number.isFinite(v[k]) ? (v[k] as number) : 0)
     sum.cost += n('cost'); sum.turns += n('turns'); sum.tools += n('tools'); sum.colds += n('colds'); sum.agents += n('agents')
+    if (n('warms')) {
+      sum.warms = (sum.warms ?? 0) + n('warms')
+      sum.warmCost = (sum.warmCost ?? 0) + n('warmCost')
+    }
     sum.sessions += 1
   }
   const week = days.map(day => sums.get(day) ?? emptyDay(day))

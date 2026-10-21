@@ -21,6 +21,8 @@ type World = {
   toolError: boolean
   writes: { path: string; text: string }[]
   config?: unknown
+  /** What `$.session.model()` answers; Opus 5.5 when unset. */
+  model?: string
   /** Answers a `process.run` itself; undefined leaves it to the git stand-in. */
   run?: (argv: readonly string[]) => unknown
 }
@@ -68,7 +70,7 @@ function world(on: On, stored: Record<string, unknown> = {}, kept?: Record<strin
     },
   }) as never)
   on('session.id', () => ({ value: 'session-1' }))
-  on('session.model', () => ({ value: 'claude-opus-5-5' }))
+  on('session.model', () => ({ value: w.model ?? 'claude-opus-5-5' }))
   on('settings.read', () => ({ value: {} }))
   on('process.run', ($, e) => (w.run?.(e.argv)
     ?? (e.argv[0] === 'uname' ? { value: { exitCode: 0, stdout: 'Darwin\n', stderr: '' } } : undefined)
@@ -1243,5 +1245,145 @@ test('keep-warm stands aside where Claude Code compacts an idle conversation its
   await $.turn.complete({ answer: 'done', durationMs: 4000, isAborted: false, turnId: 't1', reason: 'answer',
     usage: { ...USAGE_ARGS, model: 'claude-opus-5-5' } })
   await w.clock.advance(55 * 60_000)
+  expect(forks).toBe(0)
+})
+
+// ------------------------------------------------------------ 0.7.1
+
+test('an account change counts the cache cold: line 2 says so, the next turn\'s receipt says it rebuilt after the change', { timeoutMs: 30_000 }, async ($, on) => {
+  const w = world(on)
+  w.config = { account_command: ['acct'] }
+  let who = 'first@example.com'
+  w.run = argv => (argv[0] === 'acct' ? { value: { exitCode: 0, stdout: `${who}\n`, stderr: '' } } : undefined)
+  let rebuild = false
+  on('turn.step', async function* ($: unknown, e: { turnId: string; index: number }) {
+    return { turnId: e.turnId, index: e.index, answer: '', toolUses: [], stopReason: 'end_turn',
+      usage: rebuild
+        ? { input_tokens: 4, output_tokens: 300, cache_read_input_tokens: 0, cache_creation_input_tokens: 101_000, model: 'claude-opus-5-5' }
+        : { input_tokens: 4, output_tokens: 300, cache_read_input_tokens: 90_000, cache_creation_input_tokens: 10_000, model: 'claude-opus-5-5' } }
+  } as never)
+  hintBelow(on)
+  on('ui.render', { component: 'TurnDuration' }, ($, e) => {
+    const { Text } = $.ui.resolve(e)
+    return <Text>{`✻ ${e.props.word}`}</Text>
+  })
+  const line2 = async () => {
+    const ui = await $.ui.mount({ plugin: 'g-line', surface: 'terminal', component: 'PromptHint',
+      props: { isDraft: false, isWorking: false, hint: '? for shortcuts' }, viewport: { columns: 200, rows: 40 } })
+    const found = await ui.find({ type: 'Text', text: /^cache / })
+    await ui.unmount()
+    return found?.text
+  }
+  await start($)
+  await measure($, w, 30)
+  await $.turn.start({ text: 'go', turnId: 't1' })
+  await step($, 't1', 0, 'high')
+  await $.turn.complete({ answer: 'done', durationMs: 4000, isAborted: false, turnId: 't1', reason: 'answer', usage: { ...USAGE_ARGS, model: 'claude-opus-5-5' } })
+  expect(await line2()).toMatch(/^cache warm/)
+  // The account manager switches accounts; the next reading (ten minutes on) sees it.
+  who = 'second@example.com'
+  await w.clock.advance(10 * 60_000)
+  expect(await line2()).toBe('cache cold (account changed), next turn rebuilds 100k')
+  expect(w.toasts.filter(t => t.startsWith('The account changed: prompt caches are kept per organization')).length).toBe(1)
+  // The next turn writes the whole conversation again; its receipt says what it followed.
+  rebuild = true
+  await $.turn.start({ text: 'go', turnId: 't2' })
+  const stream = $.turn.step({ turnId: 't2', index: 0, model: 'claude-opus-5-5', effort: 'high', messageCount: 2 } as never)
+  for await (const _ of stream) { /* drain */ }
+  await stream.result
+  await $.turn.complete({ answer: 'done', durationMs: 4000, isAborted: false, turnId: 't2', reason: 'answer', usage: { ...USAGE_ARGS, model: 'claude-opus-5-5' } })
+  await $.session.append({ message: { type: 'system', name: 'turn_duration', content: [] }, door: 'notice', origin: { kind: 'engine' }, uuid: 'line-2' } as never)
+  const line = await $.ui.mount({ plugin: 'g-line', surface: 'terminal', component: 'TurnDuration', requestId: 'line-2',
+    props: { word: 'Baked', durationMs: 4000 }, viewport: { columns: 160, rows: 40 } })
+  expect(await line.find({ type: 'Text', text: 'cache cold after account change · rebuilt 101k' })).toBeDefined()
+  await line.unmount()
+  // The new account's cache is warm again.
+  expect(await line2()).toMatch(/^cache warm/)
+})
+
+test('/g-line guard simulate tries the rules with no quota spent, and a headless run is told the guard has no readings', { timeoutMs: 30_000 }, async ($, on) => {
+  const w = world(on)
+  w.config = { guard: GUARD }
+  engineBelow(on)
+  hintBelow(on)
+  const logs: string[] = []
+  on('ui.log', ($, e) => {
+    logs.push((e as unknown as { text: string }).text)
+    return { value: undefined } as never
+  })
+  await $.session.start({ cwd: '/work', surface: 'terminal', isInteractive: false })
+  expect(await $.prompt.submit({ text: 'run it', wait: false, origin: { kind: 'sdk' } } as never)).toEqual({ text: 'run it' })
+  expect(await $.prompt.submit({ text: 'again', wait: false, origin: { kind: 'sdk' } } as never)).toEqual({ text: 'again' })
+  expect(logs).toEqual(['g-line guard: no usage readings in this session yet, so its rules cannot act on this prompt.'])
+  await $.command.run({ command: 'g-line', args: 'guard simulate 5h 96' } as never)
+  expect(w.toasts.some(t => t.startsWith('g-line guard: new prompts stop (4% of the 5-hour window left)') && t.endsWith('(Simulated.)'))).toBe(true)
+  expect((await $.prompt.submit(typed('try it'))).drop).toMatch(/^g-line guard stopped this prompt: 4% of the 5-hour window left/)
+  const ui = await $.ui.mount({ plugin: 'g-line', surface: 'terminal', component: 'PromptHint',
+    props: { isDraft: false, isWorking: false, hint: '? for shortcuts' }, viewport: { columns: 200, rows: 40 } })
+  expect(await ui.find({ type: 'Text', text: 'guard: stopped, 4% 5h left (sim)' })).toBeDefined()
+  await ui.unmount()
+  // It ends by itself after 15 minutes.
+  await w.clock.advance(16 * 60_000)
+  expect(await $.prompt.submit(typed('after'))).toEqual({ text: 'after' })
+  expect(w.toasts.some(t => t === 'g-line guard: the simulation ended; the real readings decide again.')).toBe(true)
+})
+
+test('keep-warm keeps only the session typed in last on its account, and shows what its re-reads cost', { timeoutMs: 30_000 }, async ($, on) => {
+  const kept: Record<string, unknown> = {}
+  const w = world(on, {}, kept)
+  w.config = { guard: { keep_warm: true } }
+  engineBelow(on)
+  hintBelow(on)
+  let forks = 0
+  on('model.fork', () => {
+    forks += 1
+    w.usage.cost += 0.04
+    return { value: { isAnswered: true, text: 'ok', usage: { input_tokens: 20, output_tokens: 3, cache_read_input_tokens: 100_000, cache_creation_input_tokens: 0 } } } as never
+  })
+  await start($)
+  await measure($, w, 40)
+  await $.prompt.submit(typed('go'))
+  await $.turn.start({ text: 'go', turnId: 't1' })
+  await step($, 't1', 0, 'high')
+  await $.turn.complete({ answer: 'done', durationMs: 4000, isAborted: false, turnId: 't1', reason: 'answer', usage: { ...USAGE_ARGS, model: 'claude-opus-5-5' } })
+  expect(kept['touched:machine']).toEqual({ session: 'session-1', at: expect.any(Number) })
+  // The person types in another session on the same account: this one isn't kept.
+  kept['touched:machine'] = { session: 'session-2', at: 0 }
+  await w.clock.advance(50 * 60_000)
+  expect(forks).toBe(0)
+  // Back here: the next idle stretch is kept, and line 2 and the pane say what it cost.
+  await $.prompt.submit(typed('back'))
+  await $.turn.start({ text: 'back', turnId: 't2' })
+  await step($, 't2', 0, 'high')
+  await $.turn.complete({ answer: 'done', durationMs: 4000, isAborted: false, turnId: 't2', reason: 'answer', usage: { ...USAGE_ARGS, model: 'claude-opus-5-5' } })
+  await w.clock.advance(49 * 60_000)
+  expect(forks).toBe(1)
+  const ui = await $.ui.mount({ plugin: 'g-line', surface: 'terminal', component: 'PromptHint',
+    props: { isDraft: false, isWorking: false, hint: '? for shortcuts' }, viewport: { columns: 200, rows: 40 } })
+  expect(await ui.find({ type: 'Text', text: 'kept warm 1× · $0.04' })).toBeDefined()
+  await ui.unmount()
+  await $.command.run({ command: 'g-line', args: '' } as never)
+  const pane = await $.ui.mount({ plugin: 'g-line', surface: 'terminal', component: 'Pane', requestId: 'g-line',
+    props: { bodyColumns: 140 } as never, viewport: { columns: 160, rows: 60 } })
+  expect(await pane.find({ type: 'Text', text: /kept warm 1× \(\$0\.04\)/ })).toBeDefined()
+  await pane.unmount()
+})
+
+test('keep-warm skips a session whose model changed since the last request', { timeoutMs: 30_000 }, async ($, on) => {
+  const w = world(on)
+  w.config = { guard: { keep_warm: true } }
+  engineBelow(on)
+  let forks = 0
+  on('model.fork', () => {
+    forks += 1
+    return { value: { isAnswered: true, text: 'ok', usage: { input_tokens: 20, output_tokens: 3, cache_read_input_tokens: 100_000, cache_creation_input_tokens: 0 } } } as never
+  })
+  await start($)
+  await measure($, w, 40)
+  await $.turn.start({ text: 'go', turnId: 't1' })
+  await step($, 't1', 0, 'high')
+  await $.turn.complete({ answer: 'done', durationMs: 4000, isAborted: false, turnId: 't1', reason: 'answer', usage: { ...USAGE_ARGS, model: 'claude-opus-5-5' } })
+  w.model = 'claude-sonnet-5-5'
+  await w.clock.advance(50 * 60_000)
   expect(forks).toBe(0)
 })

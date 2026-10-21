@@ -85,7 +85,7 @@ export function statusJson(s: StatusInput): string {
       ? { scope: 'main_session_last_request',
           state: c.compacted ? 'compacted' : c.warm && expires !== undefined && expires > s.now ? 'estimated_warm' : 'estimated_cold',
           estimated_expires_at: iso(expires), lifetime: c.ttl ?? null, rebuild_tokens_if_cold: num(c.recache_tokens_if_cold) ?? null,
-          basis: 'configured_ttl_and_observed_request' }
+          basis: 'configured_ttl_and_observed_request', ...(c.account_changed ? { account_changed: true } : {}) }
       : null
   }
   return JSON.stringify(out)

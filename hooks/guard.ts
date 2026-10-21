@@ -40,6 +40,8 @@ export type Rule = {
 }
 
 export type KeepWarm = {
+  /** `last`: only the session the person last typed in, per account; `all`: every idle session. */
+  sessions: 'last' | 'all'
   /** Seconds idle before a re-read. */
   after: number
   /** Re-reads per idle stretch. */
@@ -56,7 +58,7 @@ export type GuardConfig = { on: boolean; rules: Rule[]; keepWarm?: KeepWarm; err
 
 export const NO_GUARD: GuardConfig = { on: true, rules: [], errors: [] }
 
-export const KEEP_WARM_DEFAULTS: KeepWarm = { after: 45 * 60, max: 2, minContext: 50_000, minLeft: 20, perHour: 6 }
+export const KEEP_WARM_DEFAULTS: KeepWarm = { sessions: 'last', after: 45 * 60, max: 2, minContext: 50_000, minLeft: 20, perHour: 6 }
 
 /** `45m`, `1h`, `90s`, `1h30m`, or a number of minutes, in seconds. */
 export function seconds(value: unknown): number | undefined {
@@ -201,6 +203,7 @@ export function parseGuard(raw: unknown): GuardConfig {
     const minLeft = typeof k.min_left === 'number' && k.min_left >= 0 ? k.min_left : undefined
     const perHour = typeof k.per_hour === 'number' && k.per_hour >= 0 ? Math.floor(k.per_hour) : undefined
     keepWarm = {
+      sessions: k.sessions === 'all' ? 'all' : 'last',
       // Under ten minutes would ping a busy session; past 55 the cache may already be gone.
       after: after !== undefined ? Math.min(55 * 60, Math.max(10 * 60, after)) : KEEP_WARM_DEFAULTS.after,
       max: Math.min(6, max ?? KEEP_WARM_DEFAULTS.max),
@@ -246,6 +249,8 @@ export function evaluate(guard: GuardConfig, facts: Facts, before: Active = {}):
   for (const rule of guard.rules) {
     const w = facts.windows[rule.window]
     if (!w || !Number.isFinite(w.left)) continue
+    // A reading from before the window's reset says nothing about the new window.
+    if (w.resetsAt !== undefined && w.resetsAt * 1000 <= facts.nowMs) continue
     const resets = w.resetsAt ?? null
     const was = Object.prototype.hasOwnProperty.call(before, rule.id) && before[rule.id] === resets
     if (w.left > rule.left + (was ? CLEAR_MARGIN : 0)) continue
@@ -403,6 +408,14 @@ export type WarmFacts = {
   busy: boolean
   /** Seconds added to `after`, so sessions idle since the same moment don't all re-read at once. */
   jitter: number
+  /** The account changed since the cache was written: it belongs to the other account. */
+  accountChanged?: boolean
+  /** The model changed (`/model`) since the last request: its cache is the old model's. */
+  modelChanged?: boolean
+  /** Another session on this account was typed in more recently (`sessions: last`). */
+  notLastTouched?: boolean
+  /** Another session on this account holds the re-read for now. */
+  leased?: boolean
 }
 
 /** Why keep-warm re-reads now, or why it won't: the first reason that holds. */
@@ -411,15 +424,59 @@ export function warmDue(k: KeepWarm | undefined, f: WarmFacts): { due: boolean; 
   if (f.busy) return { due: false, why: 'a turn is running' }
   if (f.ttl !== '1h') return { due: false, why: 'the cache lives 5 minutes (over the plan limit, on credits, or by setting)' }
   if (f.compacted) return { due: false, why: 'the conversation was compacted' }
+  if (f.accountChanged) return { due: false, why: 'the account changed' }
+  if (f.modelChanged) return { due: false, why: 'the model changed' }
   if (f.compactionCovers) return { due: false, why: 'Claude Code compacts this conversation when idle' }
   if (f.prefix < k.minContext) return { due: false, why: 'too small to be worth keeping' }
   if (f.stopped) return { due: false, why: 'a guard stop is in force' }
   if (f.fiveHourLeft === undefined || f.fiveHourLeft < k.minLeft) return { due: false, why: 'the 5-hour window is low' }
   if (f.done >= k.max) return { due: false, why: 'kept warm as many times as allowed' }
-  if (f.thisHour >= k.perHour) return { due: false, why: 'the hourly limit across sessions is reached' }
+  if (f.thisHour >= k.perHour) return { due: false, why: 'the hourly limit on this account is reached' }
+  if (k.sessions === 'last' && f.notLastTouched) return { due: false, why: 'you typed in another session on this account last' }
+  if (f.leased) return { due: false, why: 'another session on this account is re-reading' }
   const idle = f.now - f.lastAt
   if (idle < k.after + f.jitter) return { due: false, why: 'not idle long enough' }
   // Two minutes before the hour is up the cache may already be gone: a re-read then would rebuild it.
   if (idle > 3600 - 120) return { due: false, why: 'the cache has lapsed' }
   return { due: true, why: 'idle' }
+}
+
+/**
+ * Whether a re-read found the cache: it read most of the conversation and
+ * wrote little. A read of nothing, or writes of 10% or more of what it read,
+ * mean the cache it meant to keep wasn't there, so keep-warm stands down.
+ */
+export function readBack(prefix: number, usage: { cache_read_input_tokens: number; cache_creation_input_tokens: number } | undefined): boolean {
+  if (!usage || usage.cache_read_input_tokens <= 0) return false
+  return usage.cache_read_input_tokens >= prefix * 0.5 && usage.cache_creation_input_tokens < usage.cache_read_input_tokens * 0.1
+}
+
+/** The store's name for an account's share of keep-warm and resume: its reading, or the machine's when there is none. */
+export function accountKey(account: string | null | undefined): string {
+  const a = (account ?? '').trim().toLowerCase().replace(/[^a-z0-9@._+-]+/g, '_').slice(0, 80)
+  return a || 'machine'
+}
+
+/** A lease on `key` for `holder` until `until` (ms): free, expired, or already the holder's. */
+export function leaseFree(lease: unknown, holder: string, nowMs: number): boolean {
+  if (!lease || typeof lease !== 'object') return true
+  const l = lease as { holder?: unknown; until?: unknown }
+  return l.holder === holder || typeof l.until !== 'number' || l.until <= nowMs
+}
+
+/** `kept warm 2× · $0.18` for line 2 while re-reads hold the cache; the cost only when known. */
+export function warmForms(count: number, cost?: number): string[] {
+  if (count <= 0) return []
+  const money = cost !== undefined && cost > 0 ? ` · ${cost < 0.005 ? '<$0.01' : `$${cost.toFixed(2)}`}` : ''
+  return money ? [`kept warm ${count}×${money}`, `kept warm ${count}×`] : [`kept warm ${count}×`]
+}
+
+export type Simulation = { window: WindowName; used: number; until: number }
+
+/** `/g-line guard simulate 5h 96`: the window's reading replaced for the guard alone, reset two hours out when unknown. */
+export function simulated(facts: Facts, sim: Simulation | undefined): Facts {
+  if (!sim || sim.until <= facts.nowMs) return facts
+  const real = facts.windows[sim.window]
+  const resetsAt = real?.resetsAt && real.resetsAt * 1000 > facts.nowMs ? real.resetsAt : Math.floor(facts.nowMs / 1000) + 2 * 3600
+  return { ...facts, windows: { ...facts.windows, [sim.window]: { left: 100 - sim.used, resetsAt } } }
 }

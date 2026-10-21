@@ -32,6 +32,8 @@ export type Payload = {
     compacted?: boolean
     /** Claude Code's idle compaction will summarise the conversation before this cache expires. */
     idle_compacts?: boolean
+    /** The account changed since the cache was written: caches don't carry across organizations. */
+    account_changed?: boolean
   }
   cost?: {
     total_cost_usd?: number
@@ -259,7 +261,8 @@ function cacheSegment(p: Payload, now: number): Segment | undefined {
       forms: left < 60 ? ['cache warm (<1m left)', 'cache <1m'] : [`cache warm (~${duration(left)} left)`, `cache ~${duration(left, true)}`] }
   }
   const recache = num(cache.recache_tokens_if_cold)
-  const forms = recache && recache > 0 ? [`cache cold (next turn rebuilds ${tokens(recache)})`, 'cache cold'] : ['cache cold']
+  const why = cache.account_changed === true ? ', account changed' : ''
+  const forms = recache && recache > 0 ? [`cache cold (next turn rebuilds ${tokens(recache)}${why})`, 'cache cold'] : ['cache cold']
   return { key: 'cache', priority: 80, tone: 'warn', forms }
 }
 

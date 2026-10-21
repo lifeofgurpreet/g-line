@@ -147,3 +147,12 @@ test('/g-line guard: status, once, pause with a time, resume, on and off; guard 
   // `/g-line set all on` never turns a guard on: it isn't a toggle.
   expect(SETTINGS.some(s => s.key === 'guard')).toBe(false)
 })
+
+test('/g-line guard simulate 5h 96, week 90, off; anything else says how', () => {
+  expect(parseCommand('guard simulate 5h 96')).toEqual({ kind: 'guard', action: 'simulate', window: '5h', used: 96 })
+  expect(parseCommand('guard simulate week 90%')).toEqual({ kind: 'guard', action: 'simulate', window: 'week', used: 90 })
+  expect(parseCommand('guard simulate off')).toEqual({ kind: 'guard', action: 'simulate' })
+  expect(parseCommand('guard simulate 5h').kind).toBe('error')
+  expect(parseCommand('guard simulate month 5').kind).toBe('error')
+  expect(parseCommand('guard simulate 5h 140').kind).toBe('error')
+})
