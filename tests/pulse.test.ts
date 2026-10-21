@@ -1,6 +1,10 @@
 import { expect, test } from 'claude-code/testing'
 
-import { cells, clean, countOf, muted, pageOf, parseFeed, pulseRow, tickerText } from '../hooks/pulse'
+import {
+  cells, clean, countOf, itemNow, keptShown, linksDrawn, mergedShown, muted, opensHere, pageOf, parseFeed, pickNext, pulseRow,
+  tickerText, withShow,
+} from '../hooks/pulse'
+import type { Shown } from '../hooks/pulse'
 
 const ESC = String.fromCharCode(27)
 const AT = Date.parse('2026-10-14T12:00:00Z')
@@ -68,15 +72,83 @@ test('emoji and wide characters count two columns, so a headline never wraps its
   }
 })
 
-test('a mute matches within the source, any case; the spinner holds one headline when paused', () => {
+test('a mute matches within the source, any case', () => {
   const x = { title: 'Post', url: 'https://x.com/a/status/1', source: '𝕏 @claudeai' }
   const hn = { title: 'Story', url: 'https://example.com/b', source: 'Hacker News' }
   expect(muted(x, ['𝕏'])).toBe(true)
   expect(muted(x, ['@ClaudeAI'])).toBe(true)
   expect(muted(hn, ['𝕏', 'news.yc'])).toBe(false)
   expect(muted(hn, [])).toBe(false)
-  const feed = { fetchedAt: 0, items: [hn, { ...hn, title: 'Second' }] }
-  expect(tickerText(feed, 15_000 + 8_000, 80)).toMatch(/^Second/)
-  expect(tickerText(feed, 15_000 + 8_000, 80, undefined, 5)).toMatch(/^Story/)
-  expect(tickerText(feed, 15_000 + 400_000, 80, undefined, 0)).toMatch(/^Story/)
+  expect(tickerText(hn, 15_000 + 8_000, 80)).toBe('Story (Hacker News)')
+})
+
+const MIN = 60_000
+const items = ['a', 'b', 'c'].map(name => ({ title: name, url: `https://example.com/${name}`, source: 's' }))
+const url = (name: string) => `https://example.com/${name}`
+
+test('the cycle: new headlines first in the feed\'s order, never the same one twice in a row', () => {
+  expect(pickNext(items, {}, null, 0)?.title).toBe('a')
+  let shown = withShow({}, url('a'), 0)
+  expect(pickNext(items, shown, url('a'), 8000)?.title).toBe('b')
+  shown = withShow(shown, url('b'), 8000)
+  expect(pickNext(items, shown, url('b'), 16_000)?.title).toBe('c')
+  shown = withShow(shown, url('c'), 16_000)
+  // Every headline shown and resting: hold still on the one showing.
+  expect(pickNext(items, shown, url('c'), 24_000)).toBeUndefined()
+  expect(itemNow(items, shown, url('c'), 24_000)?.title).toBe('c')
+  // A new headline from a refreshed feed goes first.
+  const refreshed = [{ title: 'd', url: url('d'), source: 's' }, ...items]
+  expect(pickNext(refreshed, shown, url('c'), 30_000)?.title).toBe('d')
+  // A refresh never puts the headline showing now on again: with one item left, it holds.
+  expect(pickNext([items[2]!], {}, url('c'), 0)).toBeUndefined()
+})
+
+test('the cycle: a shown headline rests 30 minutes, longest-rested first, and shows at most 3 times a day', () => {
+  let shown: Shown = {}
+  for (const [i, name] of ['a', 'b', 'c'].entries()) shown = withShow(shown, url(name), i * 8000)
+  expect(pickNext(items, shown, url('c'), 29 * MIN)).toBeUndefined()
+  expect(pickNext(items, shown, url('c'), 31 * MIN)?.title).toBe('a')
+  shown = withShow(withShow(shown, url('a'), 31 * MIN), url('a'), 62 * MIN)
+  expect(shown[url('a')]?.n).toBe(3)
+  // `a` has had its three shows; `b` rested longest.
+  expect(pickNext(items, shown, url('c'), 200 * MIN)?.title).toBe('b')
+  // Counts older than a day are forgotten; malformed ones dropped.
+  const kept = keptShown({ [url('a')]: { n: 3, at: 0 }, [url('b')]: { n: 1, at: 20 * 3_600_000 }, bad: { n: 'x' } }, 25 * 3_600_000)
+  expect(Object.keys(kept)).toEqual([url('b')])
+  // Two sessions' counts merge to the larger count and the later time.
+  expect(mergedShown({ [url('a')]: { n: 1, at: 5 } }, { [url('a')]: { n: 2, at: 3 } })[url('a')]).toEqual({ n: 2, at: 5 })
+})
+
+test('links follow Claude Code\'s own rule: herdr and SSH draw none unless FORCE_HYPERLINK says so', () => {
+  expect(linksDrawn({ TERM_PROGRAM: 'ghostty' })).toBe(true)
+  expect(linksDrawn({ TERM_PROGRAM: 'iTerm.app', TERM_PROGRAM_VERSION: '3.5.0' })).toBe(true)
+  expect(linksDrawn({ TERM_PROGRAM: 'kitty' })).toBe(true)
+  expect(linksDrawn({ TERM: 'xterm-kitty' })).toBe(true)
+  expect(linksDrawn({ TERM_PROGRAM: 'WezTerm', TERM_PROGRAM_VERSION: '20240203-110809-5046fc22' })).toBe(true)
+  expect(linksDrawn({ TERM_PROGRAM: 'vscode', TERM_PROGRAM_VERSION: '1.71.0' })).toBe(false)
+  expect(linksDrawn({ TERM_PROGRAM: 'vscode', TERM_PROGRAM_VERSION: '1.95.0' })).toBe(true)
+  expect(linksDrawn({ WT_SESSION: 'x' })).toBe(true)
+  // tmux sets TERM_PROGRAM itself; 3.4 and later pass links on.
+  expect(linksDrawn({ TERM_PROGRAM: 'tmux', TERM_PROGRAM_VERSION: '3.4', TMUX: '/tmp/x' })).toBe(true)
+  expect(linksDrawn({ TERM_PROGRAM: 'tmux', TERM_PROGRAM_VERSION: '3.3a', TMUX: '/tmp/x' })).toBe(false)
+  // herdr, and a session over SSH that carries no TERM_PROGRAM: Claude Code prints addresses, so plain text.
+  expect(linksDrawn({ TERM_PROGRAM: 'herdr', TERM: 'xterm-256color' })).toBe(false)
+  expect(linksDrawn({ TERM: 'xterm-256color' })).toBe(false)
+  expect(linksDrawn({ TERM_PROGRAM: 'herdr', FORCE_HYPERLINK: '1' })).toBe(true)
+  expect(linksDrawn({ TERM_PROGRAM: 'ghostty', FORCE_HYPERLINK: '0' })).toBe(false)
+  expect(linksDrawn({ VTE_VERSION: '7600' })).toBe(true)
+  expect(linksDrawn({ LC_TERMINAL: 'iTerm2' })).toBe(true)
+})
+
+test('a browser opens on a Mac or a Linux desktop, never over SSH or on a box with no display', () => {
+  expect(opensHere({ os: 'Darwin', ssh: false, display: false })).toBe(true)
+  expect(opensHere({ os: 'Darwin', ssh: true, display: false })).toBe(false)
+  expect(opensHere({ os: 'Linux', ssh: false, display: false })).toBe(false)
+  expect(opensHere({ os: 'Linux', ssh: false, display: true })).toBe(true)
+})
+
+test('a gift link with a long token still parses', () => {
+  const long = `https://www.example.com/news/articles/2026-10-20/story?accessToken=${'eyJhbGciOiJIUzI1NiJ9'.repeat(20)}`
+  expect(long.length).toBeGreaterThan(400)
+  expect(parseFeed(JSON.stringify({ schema: 1, items: [{ title: 'Deal', url: long, source: 'Wire' }] }), 0)?.items.length).toBe(1)
 })

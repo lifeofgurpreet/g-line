@@ -406,8 +406,10 @@ def front_page(lanes, limit=MAX_ITEMS):
     """Lay the page out like an editor: take lanes in turn (the day's big story, a voice on X, a
     Claude Code or Anthropic item, the newest post worth reading, Hacker News, ...), each lane's
     best item that isn't a story or an author already on the page. Lanes that run dry are skipped;
-    then the rest fill in from X. 0.5.x readers show the first eight, so the first eight carry
-    every kind, a post from the last hours among them when there is one."""
+    then the rest fill in from X, then from the other lanes' leftovers, so a quiet day on X still
+    gives a full page (a short page makes Pulse's row run out of new headlines sooner). 0.5.x
+    readers show the first eight, so the first eight carry every kind, a post from the last hours
+    among them when there is one."""
     pattern = ['curated', 'techmeme', 'x', 'dev', 'fresh', 'x', 'techmeme', 'hn', 'x', 'dev', 'fresh', 'simonw', 'techmeme', 'x', 'hn']
     page, story_keys, urls, heads = [], set(), set(), []
 
@@ -428,7 +430,7 @@ def front_page(lanes, limit=MAX_ITEMS):
         heads.extend(filter(None, (it['title'], it.get('story'))))
 
     queues = {k: list(v) for k, v in lanes.items()}
-    for lane in pattern + ['x'] * limit:
+    for lane in pattern + ['x'] * limit + ['techmeme', 'hn', 'dev', 'simonw', 'curated'] * limit:
         if len(page) >= limit:
             break
         q = queues.get(lane, [])
@@ -499,7 +501,8 @@ def build(repo):
     # The newest posts that cleared the bar, from the last three hours: things move fast.
     lanes['fresh'] = sorted((e for e in lanes['x'] if age_h(parse_time(e[0]['published_at'] or '')) < 3),
                             key=lambda e: e[0]['published_at'], reverse=True)
-    items = [i for i in front_page(lanes) if i['url'].startswith('https://')]
+    # The mod drops a link longer than 1000 characters (gift links' tokens run to ~400): never ship one it would drop.
+    items = [i for i in front_page(lanes) if i['url'].startswith('https://') and len(i['url']) <= 1000]
     feed = {'schema': 1, 'generated_at': iso(NOW), 'items': items,
             'sources': 'curated, Techmeme, X (found via Techmeme, Reddit, the Internet Archive), Claude Code releases, '
                        'Anthropic, Hacker News, Simon Willison'}

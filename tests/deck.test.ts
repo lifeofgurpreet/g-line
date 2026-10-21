@@ -81,9 +81,9 @@ test('Pulse text is cleaned before it can reach the terminal, and links must be 
   expect(feed?.items.map(item => item.title)).toEqual(['Good'])
   expect(parseFeed('not json', 0)).toBeUndefined()
   expect(parseFeed(JSON.stringify({ schema: 2, items: [] }), 0)).toBeUndefined()
-  expect(tickerText(feed, 14_000, 80)).toBe('')
-  expect(tickerText(feed, 16_000, 80)).toBe('Good (Simon Willison)')
-  expect(tickerText(feed, 16_000, 10)).toBe('')
+  expect(tickerText(feed?.items[0], 14_000, 80)).toBe('')
+  expect(tickerText(feed?.items[0], 16_000, 80)).toBe('Good (Simon Willison)')
+  expect(tickerText(feed?.items[0], 16_000, 10)).toBe('')
 })
 
 test('An X post leads with its author and its age', async () => {
@@ -97,7 +97,7 @@ test('An X post leads with its author and its age', async () => {
   expect(xLead(post, at + 3 * 86_400_000)).toBe('𝕏 @claudeai · 3d')
   expect(xLead(post)).toBe('𝕏 @claudeai')
   expect(xLead({ title: 'Good', url: 'https://example.com/a', source: 'Simon Willison' }, at)).toBe('')
-  expect(tickerText(feed, 16_000, 80, at + 3_600_000)).toBe('𝕏 @claudeai · 1h: Claude Dashboards are in beta today')
-  expect(tickerText(feed, 16_000, 80, at + 3 * 86_400_000)).toBe('𝕏 @claudeai · 3d: Claude Dashboards are in beta today')
-  expect(tickerText(feed, 16_000, 30, at)).toBe('Claude Dashboards are in beta…')
+  expect(tickerText(post, 16_000, 80, at + 3_600_000)).toBe('𝕏 @claudeai · 1h: Claude Dashboards are in beta today')
+  expect(tickerText(post, 16_000, 80, at + 3 * 86_400_000)).toBe('𝕏 @claudeai · 3d: Claude Dashboards are in beta today')
+  expect(tickerText(post, 16_000, 30, at)).toBe('Claude Dashboards are in beta…')
 })

@@ -1,5 +1,31 @@
 # Changelog
 
+## 0.6.9 (2026-10-21): Pulse's links, and headlines that don't come round every minute
+
+- **Links.** Since 0.6.3 Pulse's headline was a link only when `TERM_PROGRAM` named Ghostty,
+  iTerm2, WezTerm or VS Code, and never inside tmux. In herdr (`TERM_PROGRAM=herdr`), and in a
+  session over SSH or in a multiplexer's server, which carry no `TERM_PROGRAM` at all, the
+  headline was plain text, so clicking it did nothing. g-line now follows Claude Code's own
+  rule for drawing links, the one Claude Code 2.1.304 applies to every `Link`: `FORCE_HYPERLINK`
+  first, then the terminals it knows (Ghostty, iTerm2, kitty, WezTerm, VS Code, Windows
+  Terminal, Warp, JetBrains, tmux 3.4 or later). herdr, Zellij and SSH sessions get links
+  with `FORCE_HYPERLINK=1` set where Claude Code starts; g-line says so once when it draws
+  headlines as plain text. The reader prints a link's whole address once, for the terminal
+  to find, instead of a link Claude Code would print twice.
+- `/g-line open` (and `o` and `d` in the reader) on a Linux machine with no display copies
+  the link, instead of trying `xdg-open` where no browser opens for you. A multiplexer's
+  server started over SSH carries no SSH variables, so g-line used to try there.
+- A link of up to 1000 characters is kept. A publisher's gift link carries a token and can run
+  past the old 400-character cap, which dropped the item.
+- **Cycling.** The row used to step through the feed every 8 seconds and start over, so with
+  10 items the same headline came back every 80 seconds. Now headlines you haven't seen come
+  first; a shown headline rests 30 minutes and shows at most 3 times a day; when every headline
+  is resting the row holds still; the same headline never shows twice in a row, even across a
+  feed refresh. Every session on the machine shares the counts. The README's Pulse section
+  states the rules. The spinner, in the receipts-only layout, follows them too.
+- The feed builder fills the page from the other sources' leftovers when 𝕏 is quiet, so the
+  feed carries up to 15 items instead of stopping at 10.
+
 ## 0.6.8 (2026-10-20): the account stays on a busy box
 
 - On a loaded machine the `account_command` sometimes ran past its 5 seconds (one call measured

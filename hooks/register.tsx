@@ -28,8 +28,11 @@ import type { ReceiptSpec } from './extras'
 import { MOD_KEYS, accountSegment, inline, joined, modesWidth, shownHint, tailRoom, withText } from './inline'
 import { deck, nextRoom } from './deck'
 import { STATUS_DESCRIPTION, STATUS_SCHEMA, STATUS_TOOL, statusJson } from './glance'
-import { PULSE_BEATS, PULSE_EVERY_MS, PULSE_TTL_MS, PULSE_URL, ageOf, clean, countOf, muted, pageOf, parseFeed, pulseRow, safeUrl, tickerText, xLead } from './pulse'
-import type { PulseFeed, PulseItem } from './pulse'
+import {
+  PULSE_AFTER_MS, PULSE_BEATS, PULSE_EVERY_MS, PULSE_TTL_MS, PULSE_URL, ageOf, clean, countOf, itemNow, keptShown, linksDrawn, mergedShown,
+  muted, opensHere, pageOf, parseFeed, pickNext, pulseRow, safeUrl, tickerText, withShow, xLead,
+} from './pulse'
+import type { PulseFeed, PulseItem, Shown } from './pulse'
 import { gitSegmentOf } from './core'
 import {
   DEFAULTS, GROUPS, SETTINGS, changed, merge, nextValue, originOf, parseCommand, patchOf, said, withPatch, withoutSetting,
@@ -49,7 +52,7 @@ const contextAtom = atom({ plugin: 'g-line', key: 'context' } as const, null)
 const ledgerAtom = atom({ plugin: 'g-line', key: 'ledger' } as const, null)
 const view = atom({ plugin: 'g-line', key: 'view' } as const, 'details')
 const pulseAtom = atom({ plugin: 'g-line', key: 'pulse' } as const, null)
-const turnover = atom({ plugin: 'g-line', key: 'turnover' } as const, 0)
+const pulseNow = atom({ plugin: 'g-line', key: 'pulseNow' } as const, null)
 const newsAt = atom({ plugin: 'g-line', key: 'newsAt' } as const, 0)
 
 const PANE = 'g-line'
@@ -897,8 +900,13 @@ async function openPane($: EngineInterface, mode: 'details' | 'card' | 'settings
 
 // ------------------------------------------------------------------ pulse
 
-/** Fetches g-line's static headline feed when it is on and the copy is old. Never on the drawing path. */
+/** Fetches g-line's static headline feed when it is on and the copy is old, then puts a headline up if none shows. Never on the drawing path. */
 async function refreshPulse($: EngineInterface, force = false): Promise<void> {
+  await fetchPulse($, force)
+  await turnPulse($, true).catch(() => undefined)
+}
+
+async function fetchPulse($: EngineInterface, force: boolean): Promise<void> {
   if (!config.pulse) return
   try {
     const at = await nowMs($)
@@ -940,72 +948,122 @@ async function shownFeed($: EngineInterface): Promise<PulseFeed | null> {
 async function toggleMute($: EngineInterface, item: PulseItem): Promise<void> {
   const was = muted(item, config.pulseMute)
   await choose($, { pulse_mute: was ? config.pulseMute.filter(word => !muted(item, [word])) : [...config.pulseMute, item.source] })
+  await turnPulse($, true)
   $.ui.toast(was ? `${item.source} is back on Pulse.` : `Muted ${item.source} on Pulse's row and spinner; m here unmutes it.`, { timeoutMs: 5000 })
 }
 
-/** The item Pulse's row shows now. */
+/** How many times each headline was shown today, on this machine; `$.store` shares it between sessions. */
+const SHOWN_KEY = 'pulse_shown'
+let shownCounts: Shown = {}
+
+async function loadShown($: EngineInterface): Promise<Shown> {
+  try {
+    shownCounts = mergedShown(shownCounts, keptShown(await $.store.get(SHOWN_KEY), await nowMs($)))
+  } catch {
+    // this session's own counts
+  }
+  return shownCounts
+}
+
+/** The item Pulse shows now, by the cycle's rules; nothing without a feed. */
 async function shownItem($: EngineInterface): Promise<PulseItem | undefined> {
   const feed = await shownFeed($)
   if (!feed?.items.length) return undefined
-  return feed.items[(await read($, turnover)) % feed.items.length]
+  return itemNow(feed.items, shownCounts, await read($, pulseNow), await nowMs($))
 }
 
 /**
  * Pulse's row under the prompt, while Pulse is on: whose post, how long ago,
- * and the headline as a link (cmd-click or ctrl-click opens it where the
- * terminal draws OSC 8 links). It moves to the next item every 8 or 40 seconds
- * (`pulse_speed`), or holds one while paused; muted sources are skipped.
+ * and the headline, a link where Claude Code draws links (cmd-click or
+ * ctrl-click opens it). The cycle's rules (hooks/pulse.ts) pick the headline.
  */
 async function pulseLine($: EngineInterface, e: Parameters<EngineInterface['ui']['resolve']>[0], columns: number | undefined): Promise<JSX.Element | null> {
   if (!config.pulse || config.lines === 0 || columns === undefined) return null
-  const feed = await shownFeed($)
-  if (!feed?.items.length) return null
-  const item = feed.items[(await read($, turnover)) % feed.items.length]
+  const item = await shownItem($)
   const row = pulseRow(item, columns - 4, await nowMs($))
   if (!item || !row) return null
   const { Box, Text, Link } = $.ui.resolve(e)
   return (
     <Box key="pulse" flexDirection="row">
       {row.lead ? <Text dimColor>{`${row.lead}: `}</Text> : null}
-      {(await drawsLinks($)) ? <Link href={item.url} label={row.title} /> : <Text wrap="truncate-end">{row.title}</Text>}
+      {links ? <Link href={item.url} label={row.title} /> : <Text wrap="truncate-end">{row.title}</Text>}
       {row.tail ? <Text dimColor>{row.tail}</Text> : null}
     </Box>
   )
 }
 
+/** Whether Claude Code draws OSC 8 links in this terminal, read once at the start, by its own rule. */
+let links = false
+/** `Darwin`, `Linux`: where a browser can open. */
+let os = ''
+
+async function readTerminal($: EngineInterface): Promise<void> {
+  links = linksDrawn({
+    FORCE_HYPERLINK: await $.env.get('FORCE_HYPERLINK'), NETLIFY: await $.env.get('NETLIFY'), CI: await $.env.get('CI'),
+    TEAMCITY_VERSION: await $.env.get('TEAMCITY_VERSION'), WT_SESSION: await $.env.get('WT_SESSION'),
+    TERM_PROGRAM: await $.env.get('TERM_PROGRAM'), TERM_PROGRAM_VERSION: await $.env.get('TERM_PROGRAM_VERSION'),
+    VTE_VERSION: await $.env.get('VTE_VERSION'), TERM: await $.env.get('TERM'), TERMINAL_EMULATOR: await $.env.get('TERMINAL_EMULATOR'),
+    TMUX: await $.env.get('TMUX'), LC_TERMINAL: await $.env.get('LC_TERMINAL'),
+  })
+  try {
+    const ran = await $.process.run(['uname', '-s'], { timeoutMs: 2000 })
+    if (ran.exitCode === 0) os = ran.stdout.trim()
+  } catch {
+    // unknown: a browser opens only where a display is set
+  }
+}
+
 /**
- * Whether the terminal draws OSC 8 links. Where it doesn't, the engine prints
- * a link's URL after its text, which pushes Pulse's row onto a second line, so
- * the headline is drawn as plain text there and `/g-line open` opens it.
- * Inside tmux, links need a tmux setting, so plain text too.
+ * Moves Pulse on by the cycle's rules, while there is a row (or, receipts
+ * only, a long turn's spinner) to show it. `settle` only puts a headline up
+ * when none of the feed's is showing: a fresh feed, a mute, Pulse turned on.
  */
-async function drawsLinks($: EngineInterface): Promise<boolean> {
-  if (await $.env.get('TMUX')) return false
-  const program = (await $.env.get('TERM_PROGRAM')) ?? ''
-  return ['ghostty', 'iTerm.app', 'WezTerm', 'vscode'].includes(program)
-}
-
-/** Moves Pulse's row on to the next item, while there is a row to move. */
-async function turnPulse($: EngineInterface): Promise<void> {
-  if (!config.pulse || config.lines === 0 || (await read($, hidden))) return
-  const beats = PULSE_BEATS[config.pulseSpeed]
-  pulseBeats += 1
-  if (beats === 0 || pulseBeats % beats !== 0) return
+async function turnPulse($: EngineInterface, settle = false): Promise<void> {
+  if (!config.pulse || (await read($, hidden))) return
+  if (config.lines === 0) {
+    const live = await read($, turnNow)
+    if (settle || !live || (await nowMs($)) - live.startAt < PULSE_AFTER_MS) return
+  }
   const feed = await shownFeed($)
-  if (feed && feed.items.length > 1) await update($, turnover, n => n + 1)
+  if (!feed?.items.length) return
+  const current = await read($, pulseNow)
+  const held = feed.items.some(item => item.url === current)
+  if (settle) {
+    if (held) return
+  } else {
+    const beats = PULSE_BEATS[config.pulseSpeed]
+    pulseBeats += 1
+    if (held && (beats === 0 || pulseBeats % beats !== 0)) return
+  }
+  const at = await nowMs($)
+  await loadShown($)
+  const next = pickNext(feed.items, shownCounts, current, at) ?? (held ? undefined : itemNow(feed.items, shownCounts, current, at))
+  if (!next) return
+  await update($, pulseNow, () => next.url)
+  shownCounts = withShow(shownCounts, next.url, at)
+  try {
+    await $.store.set(SHOWN_KEY, mergedShown(keptShown(await $.store.get(SHOWN_KEY), at), shownCounts))
+  } catch {
+    // this session keeps its own count
+  }
+  if (!links && config.lines !== 0 && (await firstAcrossSessions($, 'hint:links'))) {
+    await toast($, 'Pulse: Claude Code draws no links in this terminal, so headlines are plain text. FORCE_HYPERLINK=1 where Claude Code starts makes them links if your terminal shows links (herdr, Zellij, SSH). /g-line open opens the one shown.', 15_000)
+  }
 }
 
 /**
- * Opens a link in the browser where the session runs on this machine: `open`
- * on macOS, `xdg-open` elsewhere. Over SSH, or when neither works, the link
- * is copied instead, which reaches the clipboard of the terminal in front of you.
+ * Opens a link in the browser where one can open for the person: `open` on
+ * macOS, `xdg-open` on a Linux desktop. Over SSH, on a box with no display,
+ * or when neither works, the link is copied instead, which reaches the
+ * clipboard of the terminal in front of you.
  */
 async function openLink($: EngineInterface, url: string, surface?: string): Promise<void> {
   const safe = safeUrl(url)
   if (!safe) return
-  const remote = !!((await $.env.get('SSH_CONNECTION')) || (await $.env.get('SSH_TTY')))
-  if (!remote) {
-    for (const opener of ['open', 'xdg-open']) {
+  const ssh = !!((await $.env.get('SSH_CONNECTION')) || (await $.env.get('SSH_TTY')))
+  const display = !!((await $.env.get('DISPLAY')) || (await $.env.get('WAYLAND_DISPLAY')))
+  if (opensHere({ os, ssh, display })) {
+    for (const opener of os === 'Darwin' ? ['open'] : ['xdg-open']) {
       try {
         const ran = await $.process.run([opener, safe], { timeoutMs: 4000 })
         if (ran.exitCode === 0) {
@@ -1013,12 +1071,13 @@ async function openLink($: EngineInterface, url: string, surface?: string): Prom
           return
         }
       } catch {
-        // try the next opener
+        // copy it instead
       }
     }
   }
+  const why = ssh ? 'this session runs over SSH' : 'no browser opens on this machine'
   const copied = await $.ui.copy({ text: safe, ...(surface ? { surface } : {}) } as never)
-  $.ui.toast(copied.isCopied ? `Link copied (${remote ? 'this session runs over SSH' : 'no browser to open here'}): ${safe}` : safe, { timeoutMs: 8000 })
+  $.ui.toast(copied.isCopied ? `Link copied (${why}): ${safe}` : safe, { timeoutMs: 8000 })
 }
 
 function hostOf(url: string): string {
@@ -1155,6 +1214,8 @@ export const register: Register = (on, options) => {
       }
     }
     void refreshPulse($)
+    await readTerminal($)
+    await loadShown($)
     await resync($)
     $.clock.every(TICK_MS, () => void heartbeat($))
     $.clock.every(PULSE_EVERY_MS, () => void turnPulse($))
@@ -1440,7 +1501,7 @@ export const register: Register = (on, options) => {
       const columns = e.viewport?.columns ?? 0
       const room = columns - 4 - width(shown) - width(suffix || lead) - 3 - 34
       const now = await nowMs($)
-      const ticker = tickerText(await shownFeed($), now - live.startAt, room, now, PULSE_BEATS[config.pulseSpeed])
+      const ticker = tickerText(await shownItem($), now - live.startAt, room, now)
       if (ticker) suffix = `${suffix || lead} │ ${ticker}`
     }
     if (!suffix) return next(e)
@@ -1580,8 +1641,10 @@ export const register: Register = (on, options) => {
                     {item.text && !item.text.startsWith(item.title.replace(/…$/, '')) ? <Text bold>{item.title}</Text> : null}
                     {item.story ? <Text dimColor>{`↳ ${item.story}`}</Text> : null}
                     <Text>{item.text ?? item.title}</Text>
-                    <Link href={item.url} label={clean(item.url.replace(/^https:\/\/(www\.)?/, ''), columns - 2)} />
-                    {item.discussion ? <Link href={item.discussion} label="Comments on Hacker News" /> : null}
+                    {/* Where Claude Code draws no links it prints a link's address after its text: print it once, whole, for the terminal to find. */}
+                    {links ? <Link href={item.url} label={clean(item.url.replace(/^https:\/\/(www\.)?/, ''), columns - 2)} /> : <Text>{item.url}</Text>}
+                    {item.discussion ? (links ? <Link href={item.discussion} label="Comments on Hacker News" />
+                      : <Text>{`Comments: ${item.discussion}`}</Text>) : null}
                   </Box>
                 ) : (
                   <Box paddingLeft={2}><Text dimColor>{clean(meta, columns - 2)}</Text></Box>
@@ -1660,7 +1723,7 @@ export const register: Register = (on, options) => {
                 const copied = await $.ui.copy({ text: item.url, surface: e.surface })
                 $.ui.toast(copied.isCopied ? 'Link copied.' : item.url, { timeoutMs: 4000 })
               }} />
-            <Link href={item.url} label={item.title} />
+            {links ? <Link href={item.url} label={item.title} /> : <Text wrap="truncate-end">{item.title}</Text>}
             <Text dimColor>{xLead(item, now) || item.source}</Text>
           </Box>
         )) : null}

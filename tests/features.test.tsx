@@ -70,7 +70,9 @@ function world(on: On, stored: Record<string, unknown> = {}, kept?: Record<strin
   on('session.id', () => ({ value: 'session-1' }))
   on('session.model', () => ({ value: 'claude-opus-5-5' }))
   on('settings.read', () => ({ value: {} }))
-  on('process.run', ($, e) => (w.run?.(e.argv) ?? { value: { exitCode: 0, stdout: '## feat/secret-branch\n', stderr: '' } }) as never)
+  on('process.run', ($, e) => (w.run?.(e.argv)
+    ?? (e.argv[0] === 'uname' ? { value: { exitCode: 0, stdout: 'Darwin\n', stderr: '' } } : undefined)
+    ?? { value: { exitCode: 0, stdout: '## feat/secret-branch\n', stderr: '' } }) as never)
   on('session.start', ($, e) => ({ cwd: e.cwd }))
   on('command.register', () => ({ value: undefined }) as never)
   on('fs.read', ($, e) => (w.config !== undefined && /\/(g-line|glanceline)\/config\.json$/.test(e.path)
@@ -806,8 +808,8 @@ test('turned on, Pulse shows a headline under the prompt at once: who, how old, 
   expect(w.toasts[w.toasts.length - 1]).toMatch(/^Opened github\.com in your browser\.$/)
 })
 
-test('where the terminal draws no links, or inside tmux, the headline is plain text so the row stays one line', { timeoutMs: 30_000 }, async ($, on) => {
-  const w = world(on, {}, undefined, { TERM_PROGRAM: 'ghostty', TMUX: '/tmp/tmux-1/default,1,0' })
+test('where Claude Code draws no links (herdr), the headline is plain text, said once; FORCE_HYPERLINK makes it a link', { timeoutMs: 30_000 }, async ($, on) => {
+  const w = world(on, {}, undefined, { TERM_PROGRAM: 'herdr', HERDR_ENV: '1' })
   w.config = { pulse: true }
   feedServer(on)
   await start($)
@@ -817,6 +819,78 @@ test('where the terminal draws no links, or inside tmux, the headline is plain t
   expect(await ui.find({ type: 'Link' })).toBeUndefined()
   expect(await ui.find({ type: 'Text', text: 'Claude Dashboards are in beta' })).toBeDefined()
   await ui.unmount()
+  expect(w.toasts.filter(text => text.includes('FORCE_HYPERLINK=1')).length).toBe(1)
+  await w.clock.advance(16_000)
+  expect(w.toasts.filter(text => text.includes('FORCE_HYPERLINK=1')).length).toBe(1)
+  // The reader prints the whole address once, for the terminal to find, instead of a link it would print twice.
+  await $.command.run({ command: 'g-line', args: 'news' } as never)
+  const pane = await $.ui.mount({ plugin: 'g-line', surface: 'terminal', component: 'Pane', requestId: 'g-line',
+    props: { bodyColumns: 90 } as never, viewport: { columns: 160, rows: 60 } })
+  expect(await pane.find({ type: 'Link' })).toBeUndefined()
+  expect(await pane.find({ type: 'Text', text: 'https://x.com/claudeai/status/1' })).toBeDefined()
+  await pane.unmount()
+})
+
+test('after one pass through the feed the row holds still, and a headline comes back only after its 30-minute rest', { timeoutMs: 30_000 }, async ($, on) => {
+  const kept: Record<string, unknown> = {}
+  const w = world(on, {}, kept, { TERM_PROGRAM: 'ghostty' })
+  w.config = { pulse: true }
+  feedServer(on)
+  await start($)
+  await w.clock.settle()
+  const row = async () => {
+    const ui = await $.ui.mount({ plugin: 'g-line', surface: 'terminal', component: 'PromptHint',
+      props: HINT_PROPS as never, viewport: { columns: 160, rows: 40 } })
+    const link = await ui.find({ type: 'Link' })
+    await ui.unmount()
+    return link?.text
+  }
+  const seen = [await row()]
+  for (let i = 0; i < 2; i++) {
+    await w.clock.advance(8_000)
+    seen.push(await row())
+  }
+  expect(new Set(seen).size).toBe(3)
+  // Every headline shown: the third holds, minute after minute.
+  for (let i = 0; i < 10; i++) {
+    await w.clock.advance(60_000)
+    expect(await row()).toBe(seen[2])
+  }
+  // The counts are kept for every session on the machine.
+  expect(Object.keys(kept.pulse_shown as object).length).toBe(3)
+  // Past the rest, the one shown longest ago comes back.
+  await w.clock.advance(19 * 60_000 + 50_000)
+  expect(await row()).toBe(seen[0])
+})
+
+test('inside tmux 3.4, which passes links on, the headline is a link as Claude Code draws one', { timeoutMs: 30_000 }, async ($, on) => {
+  const w = world(on, {}, undefined, { TERM_PROGRAM: 'tmux', TERM_PROGRAM_VERSION: '3.4', TMUX: '/tmp/tmux-1/default,1,0' })
+  w.config = { pulse: true }
+  feedServer(on)
+  await start($)
+  await w.clock.settle()
+  const ui = await $.ui.mount({ plugin: 'g-line', surface: 'terminal', component: 'PromptHint',
+    props: HINT_PROPS as never, viewport: { columns: 160, rows: 40 } })
+  expect(await ui.find({ type: 'Link', text: 'Claude Dashboards are in beta' })).toBeDefined()
+  await ui.unmount()
+})
+
+test('on a Linux box with no display (a herdr server reached over SSH), /g-line open copies the link instead of opening nothing', { timeoutMs: 30_000 }, async ($, on) => {
+  const w = world(on, {}, undefined, { HERDR_ENV: '1' })
+  const ran: string[] = []
+  w.run = argv => {
+    ran.push(argv[0] ?? '')
+    return argv[0] === 'uname' ? { value: { exitCode: 0, stdout: 'Linux\n', stderr: '' } } : undefined
+  }
+  w.config = { pulse: true }
+  feedServer(on)
+  await start($)
+  await w.clock.settle()
+  await $.command.run({ command: 'g-line', args: 'open' } as never)
+  expect(ran).not.toContain('xdg-open')
+  expect(ran).not.toContain('open')
+  expect(w.copied).toEqual(['https://x.com/claudeai/status/1'])
+  expect(w.toasts[w.toasts.length - 1]).toBe('Link copied (no browser opens on this machine): https://x.com/claudeai/status/1')
 })
 
 test('Pulse slow moves on every 40 seconds, paused not at all; the reader still pages', { timeoutMs: 30_000 }, async ($, on) => {
@@ -874,7 +948,7 @@ test('m in the reader mutes the picked source on the row, keeps it listed as mut
 })
 
 test('/g-line news lists every item in the feed\'s order, the picked one in full; j moves on', { timeoutMs: 30_000 }, async ($, on) => {
-  const w = world(on)
+  const w = world(on, {}, undefined, { TERM_PROGRAM: 'ghostty' })
   w.config = { pulse: true }
   feedServer(on)
   await start($)

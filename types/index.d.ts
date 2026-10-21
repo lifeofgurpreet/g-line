@@ -181,8 +181,8 @@ declare module 'claude-code' {
       ledger: Ledger | null
       view: 'details' | 'card' | 'settings' | 'news'
       pulse: PulseFeed | null
-      /** Which headline Pulse's row under the prompt shows: it moves on every few seconds. */
-      turnover: number
+      /** The link of the headline Pulse shows now: the cycle's rules move it on. */
+      pulseNow: string | null
       /** The reader's selected item. */
       newsAt: number
     }

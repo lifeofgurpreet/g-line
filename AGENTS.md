@@ -47,7 +47,7 @@ coding agents and for people.
 | `hooks/extras.ts` | Pure: receipts (adaptive and fixed), agents, compaction forecast, the day ledger, the card, the coach |
 | `hooks/glance.ts` | Pure: the `status` tool's JSON snapshot |
 | `hooks/settings.ts` | Pure: the settings table (`SETTINGS`), defaults, `merge`, origins, and `/g-line`'s argument parser. Add a setting here and it gets a toggle, a command name and an origin |
-| `hooks/pulse.ts` | Pure: Pulse feed parsing, cleaning (escapes, controls, https only), the spinner ticker, the row under the prompt and the reader's paging |
+| `hooks/pulse.ts` | Pure: Pulse feed parsing, cleaning (escapes, controls, https only), the spinner ticker, the row under the prompt, the reader's paging, the cycle's rules (`pickNext`), and Claude Code's own rule for drawing links (`linksDrawn`) |
 | `tools/pulse/build_pulse.py` | Operator tooling, not the mod: builds the Pulse feed and pushes it to the `pulse` branch |
 | `types/index.d.ts` | The `$.state` contract (`PluginState['g-line']`); self-contained, no imports |
 | `tests/*.test.ts(x)` | `claude plugin test .` runs them; `tests/cases.ts` is the golden file for `core.ts` |

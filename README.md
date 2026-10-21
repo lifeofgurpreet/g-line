@@ -143,14 +143,35 @@ appears under the prompt within seconds, on a dim row of its own under line 2:
 𝕏 @NeelNanda5 · 2h: This is interesting work, but I don't think it's a significant… · /g-line news
 ```
 
-It moves to the next item every 8 seconds; `pulse_speed` (`v` in `/g-line settings`) makes it
-every 40 seconds (`slow`) or holds one headline (`paused`). In Ghostty, iTerm2, WezTerm and VS Code the
-headline is a link: cmd-click (ctrl-click on Linux) opens it. Elsewhere, and inside tmux, it's
-plain text, because a terminal without links would print the whole address after it and push
-the row onto a second line. `/g-line open` opens whichever headline is showing in any
-terminal; over SSH, where there's no browser to open, it copies the link instead. With the
-receipts-only layout there is no row, so the spinner shows the headlines on turns longer
-than 15 seconds instead. Only one of the two ever shows.
+**How it moves, and when a headline stops coming back:**
+
+- The row moves to the next headline every **8 seconds**. `pulse_speed` (`v` in
+  `/g-line settings`) makes it every **40 seconds** (`slow`), or holds one headline (`paused`).
+- Headlines you haven't seen come first, in the feed's order (best first).
+- A headline that has been shown **rests for 30 minutes** before it can come back, and shows at
+  most **3 times a day**.
+- When every headline is resting, the row **holds still** on the one it shows. It moves again
+  when a new headline arrives or a rest ends.
+- The same headline never shows twice in a row, even when the feed refreshes.
+- Every session on the machine shares these counts, so two terminals don't repeat each other.
+- The feed is rebuilt every 30 minutes (15 items when the sources have them), and g-line
+  fetches it at most every **45 minutes**. `r` in `/g-line news` fetches it now.
+
+So with 15 headlines the row shows each one once in its first two minutes, then stays on
+the last one until something new comes in or half an hour has passed.
+
+**Links.** The headline is a link wherever Claude Code itself draws links: Ghostty, iTerm2,
+kitty, WezTerm, VS Code, Windows Terminal, Warp, and tmux 3.4 or later. Cmd-click (ctrl-click
+on Linux) opens it. Elsewhere it's plain text, because there Claude Code would print the whole
+address after the headline and push the row onto a second line. That includes herdr and
+Zellij, and a session reached over SSH, since SSH doesn't pass on which terminal you use. If
+your terminal does show links, set `FORCE_HYPERLINK=1` where Claude Code starts (your shell
+profile, or `env` in Claude Code's settings): Claude Code then draws links there, and so does
+g-line. `/g-line open` opens the headline showing in any terminal. Over SSH, or on a machine
+with no display, it copies the link instead, for your own terminal to paste.
+
+With the receipts-only layout there is no row, so the spinner shows the headlines on turns
+longer than 15 seconds instead, by the same rules. Only one of the two ever shows.
 
 ![Under the prompt, after a turn that closed with "API $0.17 · cache read 53%": the hint line ends with "ctx 4% · 5h 0% · wk 24%", line 2 reads "Opus high · cache ~57m · 5h resets 4h41m · wk resets 4d4h", and Pulse's row under it reads "𝕏 @deepseek_ai · 1d: 🚀 DeepSeek-V4.1-Flash-1017 is here! Stronger benchmark per… · /g-line news"](docs/pulse-row.png)
 
@@ -177,6 +198,8 @@ When Pulse is on, g-line fetches one file,
 It sends nothing about you, it never fetches while drawing, and it gives up after five
 seconds. Headline text is stripped of escape and control characters before it reaches your
 terminal; the only escape g-line draws is its own link, to an `https` address it has checked.
+To keep the rules above across sessions, g-line remembers which headlines it showed and when,
+for a day, in Claude Code's plugin store on your machine.
 With Pulse off (the default), g-line makes no network requests at all.
 
 ![Pulse on the spinner during a long turn, in the receipts-only layout: Churning… · 1 tool · 5h 9% │ 𝕏 @claudeai · 6d: Claude Dashboards and Claude Motion are in b…](docs/pulse.png)
@@ -263,10 +286,11 @@ available.
   results' success, subagents, compactions). It doesn't read the transcript file.
 - **Keeps:** per session per day, numbers only (cost at API prices, turns, tool calls, cold
   rebuilds, agents) in Claude Code's plugin store, deleted after 35 days; your choices made
-  with `/g-line`; when you last opened the news reader; and, with Pulse on, the last feed.
+  with `/g-line`; when you last opened the news reader; and, with Pulse on, the last feed and
+  which headlines it showed today.
 - **Runs:** `git status` only with `git: true` or while the pane is open; your
-  `account_command` only if you set one; `open` (or `xdg-open`) with a feed link when you
-  ask the reader to open one.
+  `account_command` only if you set one; `uname -s` once per session, to know whether a
+  browser can open; `open` (or `xdg-open`) with a feed link when you ask the reader to open one.
 - **Sends:** nothing, unless Pulse is on (one GET of a static file) or you enable
   `claude_reads` (the snapshot goes into your conversation).
 - **Writes:** a one-line timestamp at `~/.cache/glanceline/live/<session id>` so an older

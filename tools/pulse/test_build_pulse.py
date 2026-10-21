@@ -18,6 +18,12 @@ def plain(source, title, url, hours=1):
     return b.item(title, url, source, b.NOW - dt.timedelta(hours=hours)), None
 
 
+HEADS = ['Apple ships glasses', 'Banks adopt agents', 'Chip export rules tighten', 'Drone startup raises',
+         'Europe fines platform', 'Fusion lab milestone', 'Gaming studio layoffs', 'Hospital pilots scribe',
+         'Insurers price risk', 'Judges weigh copyright', 'Kernel patch lands', 'Lawmakers debate safety',
+         'Memory prices climb', 'Nonprofit opens dataset', 'Orbital compute plan']
+
+
 class Ranking(unittest.TestCase):
     def test_listed_voice_clears_the_bar_an_unlisted_one_does_not(self):
         self.assertTrue(b.x_qualifies(10, 1, 5))
@@ -52,6 +58,17 @@ class Ranking(unittest.TestCase):
         self.assertEqual(sources.count('𝕏 @AnthropicAI'), 1)  # one post per author
         self.assertNotIn('Anthropic', sources)  # its article is the post's link
         self.assertIn('Claude Code releases', sources)
+
+    def test_a_quiet_day_on_x_still_fills_the_page_from_other_lanes(self):
+        lanes = {
+            'techmeme': [plain('Wire', head, f'https://w.example/{n}') for n, head in enumerate(HEADS[:10])],
+            'x': [x('AnthropicAI', 'One post', 2, key='reddit:1')],
+            'hn': [plain('Hacker News', head, f'https://h.example/{n}') for n, head in enumerate(HEADS[10:])],
+            'fresh': [],
+        }
+        page = b.front_page(lanes, limit=15)
+        self.assertEqual(len(page), 15)
+        self.assertEqual(len({i['url'] for i in page}), 15)
 
     def test_techmeme_files_each_post_under_its_own_story(self):
         story = lambda name, head, handle, post: (
