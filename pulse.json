@@ -1,13 +1,13 @@
 {
  "schema": 1,
- "generated_at": "2026-10-21T12:08:37Z",
+ "generated_at": "2026-10-21T12:40:23Z",
  "items": [
   {
-   "title": "Anthropic's IPO prospectus: H1 2026 revenue of $16.3B, with ~20% from two clients, up from $1.1B in…",
-   "url": "https://www.wsj.com/tech/ai/anthropic-revenue-growth-ipo-accaf0f1?st=YKUo1r",
-   "source": "Anissa Gardizy / Wall Stree…",
-   "published_at": "2026-10-20T19:47:39Z",
-   "text": "Anthropic's IPO prospectus: H1 2026 revenue of $16.3B, with ~20% from two clients, up from $1.1B in H1 2025, and an $80.7B net loss driven by accounting charges. In a new draft prospectus viewed by the Journal, the AI giant disclosed an $80.7 billion net loss for the first half of 2026 and a long list of risk factors",
+   "title": "Nvidia unveils the DSX POD, a modular containerized version of its Vera Rubin reference architectur…",
+   "url": "https://www.datacenterdynamics.com/en/news/nvidia-launches-dsx-pod-claims-the-vera-rubin-reference-architecture-will-make-ai-data-centers-more-water-and-energy-efficient/",
+   "source": "Charlotte Trueman / Datacen…",
+   "published_at": "2026-10-21T10:21:11Z",
+   "text": "Nvidia unveils the DSX POD, a modular containerized version of its Vera Rubin reference architecture to cut data center deployment from six months to 14 days. Details released at GTC Berlin event, taking place this week — Nvidia has claimed its DSX reference architecture for AI data centers …",
    "via": "Techmeme"
   },
   {
@@ -17,7 +17,7 @@
    "published_at": "2026-10-21T02:26:30Z",
    "text": "Thank you for this, @_NathanCalvin. I appreciate and am a fan of the investigative work you’ve done on behalf of AI safety and believe your comments are coming from a constructive, honest place, and that it benefits the public to have people whose job is to scrutinize the actions…",
    "author_name": "Dario Amodei",
-   "likes": 3078,
+   "likes": 3141,
    "story": "Dario Amodei says Anthropic's “race to the top” makes AI safer, cites nine safety decisions with “substantial costs”, and admits mishandling a draft AI bill"
   },
   {
@@ -34,15 +34,15 @@
    "published_at": "2026-10-20T18:10:16Z",
    "text": "We’ve acquired Orchestra Bio, a platform that helps biopharma teams coordinate the complex process of drug development. Together, we’ll build on Rosalind, our AI models and tools for life sciences research, to streamline those operations and help new treatments reach patients…",
    "author_name": "OpenAI",
-   "likes": 6540,
-   "story": "OpenAI acquires Orchestra Bio, which builds AI agents for managing drug development, and plans to integrate its tech into OpenAI life sciences suite Rosalind"
+   "likes": 6582,
+   "story": "OpenAI acquires Orchestra Bio, which builds AI agents to help manage drug development, and plans to integrate the tech into Rosalind, its life sciences AI suite"
   },
   {
-   "title": "SpaceX reports Q3 revenue up 161% YoY to $14.58B, above $12.72B est., AI revenue up 830% to $7.56B,…",
-   "url": "https://www.cnbc.com/2026/10/20/spacex-spcx-earnings-live-updates-q3-2026html.html",
-   "source": "Lora Kolodny / CNBC",
-   "published_at": "2026-10-20T20:27:46Z",
-   "text": "SpaceX reports Q3 revenue up 161% YoY to $14.58B, above $12.72B est., AI revenue up 830% to $7.56B, and AI operating income of $431M, up from a loss of $1.7B. SpaceX reported 161% revenue growth for the third quarter, driven by the company's artificial intelligence business and Starlink Subscriber growth.",
+   "title": "Anthropic's IPO prospectus: ~$16.3B in H1 2026 revenue, ~20% from two clients and up from $1.1B in…",
+   "url": "https://www.wsj.com/tech/ai/anthropic-revenue-growth-ipo-accaf0f1?st=YKUo1r",
+   "source": "Anissa Gardizy / Wall Stree…",
+   "published_at": "2026-10-20T19:47:39Z",
+   "text": "Anthropic's IPO prospectus: ~$16.3B in H1 2026 revenue, ~20% from two clients and up from $1.1B in H1 2025, and an $80.7B net loss, $72B from accounting charges. In a new draft prospectus viewed by the Journal, the AI giant disclosed an $80.7 billion net loss for the first half of 2026 and a long list of risk factors",
    "via": "Techmeme"
   },
   {
@@ -50,8 +50,8 @@
    "url": "https://github.com/deepseek-ai/DeepInfer",
    "source": "Hacker News",
    "published_at": "2026-10-20T09:08:54Z",
-   "text": "2263 points and 867 comments on Hacker News.",
-   "points": 2263,
+   "text": "2267 points and 868 comments on Hacker News.",
+   "points": 2267,
    "discussion": "https://news.ycombinator.com/item?id=50163277"
   },
   {
@@ -61,7 +61,7 @@
    "published_at": "2026-10-20T16:18:38Z",
    "text": "New on our Science Blog: designing protein binders against scorpion neurotoxins. Scorpions sting about 1.2m people every year, and antivenoms are often costly or in short supply. Claude has made an early step toward finding new treatments.",
    "author_name": "Anthropic",
-   "likes": 6397,
+   "likes": 6434,
    "story": "Anthropic and Citrini Research use an internal Claude model to autonomously generate protein minibinders against five scorpion neurotoxins, testing 211 designs",
    "links": [
     "https://www.anthropic.com/research/claude-scorpion-toxin-binder-design"
@@ -82,11 +82,11 @@
    "text": "My latest vibe coded game experiment is a Command & Conquer style RTS (Real Time Strategy) game called Battle Drones ( play it here ). Unlike my previous experiments , this one is actually fun to play . I'm somewhat embarrassed to admit that I got there by telling Claude to \"Make it a LOT more fun\". It also supports multiplayer between nearby devices using audio to synchronize game state! Here's what I've built so far, and some of the things I learned along the way."
   },
   {
-   "title": "Nvidia unveils the DSX POD, a modular containerized version of its Vera Rubin reference architectur…",
-   "url": "https://www.datacenterdynamics.com/en/news/nvidia-launches-dsx-pod-claims-the-vera-rubin-reference-architecture-will-make-ai-data-centers-more-water-and-energy-efficient/",
-   "source": "Charlotte Trueman / Datacen…",
-   "published_at": "2026-10-21T10:21:11Z",
-   "text": "Nvidia unveils the DSX POD, a modular containerized version of its Vera Rubin reference architecture to cut data center deployment from six months to 14 days. Details released at GTC Berlin event, taking place this week — Nvidia has claimed its DSX reference architecture for AI data centers …",
+   "title": "SpaceX reports Q3 revenue up 161% YoY to $14.58B, above $12.72B est., AI revenue up 830% to $7.56B,…",
+   "url": "https://www.cnbc.com/2026/10/20/spacex-spcx-earnings-live-updates-q3-2026html.html",
+   "source": "Lora Kolodny / CNBC",
+   "published_at": "2026-10-20T20:27:46Z",
+   "text": "SpaceX reports Q3 revenue up 161% YoY to $14.58B, above $12.72B est., AI revenue up 830% to $7.56B, and AI operating income of $431M, up from a loss of $1.7B. SpaceX reported 161% revenue growth for the third quarter, driven by the company's artificial intelligence business and Starlink Subscriber growth.",
    "via": "Techmeme"
   },
   {
@@ -94,8 +94,8 @@
    "url": "https://arstechnica.com/security/2026/10/meta-muse-exposes-users-personal-and-business-secrets-when-they-share-conversations/",
    "source": "Hacker News",
    "published_at": "2026-10-21T00:45:59Z",
-   "text": "211 points and 100 comments on Hacker News.",
-   "points": 211,
+   "text": "224 points and 108 comments on Hacker News.",
+   "points": 224,
    "discussion": "https://news.ycombinator.com/item?id=50174687"
   },
   {
@@ -111,8 +111,8 @@
    "url": "https://www.anthropic.com/research/attack-surface-reduction",
    "source": "Hacker News",
    "published_at": "2026-10-21T03:36:43Z",
-   "text": "69 points and 28 comments on Hacker News.",
-   "points": 69,
+   "text": "77 points and 34 comments on Hacker News.",
+   "points": 77,
    "discussion": "https://news.ycombinator.com/item?id=50175779"
   },
   {
