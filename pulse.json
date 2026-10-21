@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-21T04:32:01Z",
+ "generated_at": "2026-10-21T05:04:25Z",
  "items": [
   {
    "title": "Anthropic's IPO prospectus: H1 2026 revenue of $16.3B, ~20% from two customers, vs. $1.1B in H1 202…",
@@ -17,7 +17,7 @@
    "published_at": "2026-10-20T09:30:19Z",
    "text": "🚀 Introducing DeepInfer, our in-house inference framework, now fully open source! Powering DeepSeek-V4.1-Flash at scale with high throughput and low latency. We’re sharing our production stack to help the community lower compute costs, reduce energy use, and make AI more…",
    "author_name": "DeepSeek",
-   "likes": 35075,
+   "likes": 35395,
    "story": "DeepSeek open-sources DeepInfer, its high-performance inference framework that powers its production services, starting with support for DeepSeek-V4.1-Flash"
   },
   {
@@ -34,15 +34,15 @@
    "published_at": "2026-10-20T18:10:16Z",
    "text": "We’ve acquired Orchestra Bio, a platform that helps biopharma teams coordinate the complex process of drug development. Together, we’ll build on Rosalind, our AI models and tools for life sciences research, to streamline those operations and help new treatments reach patients…",
    "author_name": "OpenAI",
-   "likes": 5798,
+   "likes": 5864,
    "story": "OpenAI acquires Orchestra Bio, which builds AI agents for managing drug development, and plans to integrate its tech into OpenAI life sciences suite Rosalind"
   },
   {
-   "title": "Google says it is rolling out Personal Intelligence for Gemini on Android Auto now and to cars with…",
-   "url": "https://9to5google.com/2026/10/20/gemini-android-auto-personal-intelligence/",
-   "source": "Abner Li / 9to5Google",
-   "published_at": "2026-10-20T22:31:17Z",
-   "text": "Google says it is rolling out Personal Intelligence for Gemini on Android Auto now and to cars with Google built-in in the coming months as an opt-in feature. Google is beginning to roll out Personal Intelligence for Gemini on Android Auto and Android Automotive (cars with Google built-in).",
+   "title": "OpenAI says two agents, one GPT-6.1 Sol and one GPT-6 Astra, weakened misalignment monitoring while…",
+   "url": "https://alignment.openai.com/misalignment-reports/suppressing-misalignment-monitoring-alerts-and-disabling-misalignment-monitoring/",
+   "source": "OpenAI",
+   "published_at": "2026-10-21T03:41:00Z",
+   "text": "OpenAI says two agents, one GPT-6.1 Sol and one GPT-6 Astra, weakened misalignment monitoring while making requested changes during two internal coding tasks. GPT-6.1 Sol and GPT-6 Astra · Internal deployments — Discovered: Oct 3, 2026 (Sol); Oct 6, 2026 (Astra) — Summary",
    "via": "Techmeme"
   },
   {
@@ -50,8 +50,8 @@
    "url": "https://www.anthropic.com/research/claude-scorpion-toxin-binder-design",
    "source": "Hacker News",
    "published_at": "2026-10-20T17:48:29Z",
-   "text": "100 points and 64 comments on Hacker News.",
-   "points": 100,
+   "text": "102 points and 64 comments on Hacker News.",
+   "points": 102,
    "discussion": "https://news.ycombinator.com/item?id=50170021"
   },
   {
@@ -69,11 +69,11 @@
    "text": "My latest vibe coded game experiment is a Command & Conquer style RTS (Real Time Strategy) game called Battle Drones ( play it here ). Unlike my previous experiments , this one is actually fun to play . I'm somewhat embarrassed to admit that I got there by telling Claude to \"Make it a LOT more fun\". It also supports multiplayer between nearby devices using audio to synchronize game state! Here's what I've built so far, and some of the things I learned along the way."
   },
   {
-   "title": "OpenAI says two agents, one GPT-6.1 Sol and one GPT-6 Astra, weakened misalignment monitoring while…",
-   "url": "https://alignment.openai.com/misalignment-reports/suppressing-misalignment-monitoring-alerts-and-disabling-misalignment-monitoring/",
-   "source": "OpenAI",
-   "published_at": "2026-10-21T03:41:00Z",
-   "text": "OpenAI says two agents, one GPT-6.1 Sol and one GPT-6 Astra, weakened misalignment monitoring while making requested changes during two internal coding tasks. GPT-6.1 Sol and GPT-6 Astra · Internal deployments — Discovered: Oct 3, 2026 (Sol); Oct 6, 2026 (Astra) — Summary",
+   "title": "Google says it is rolling out Personal Intelligence for Gemini on Android Auto now and to cars with…",
+   "url": "https://9to5google.com/2026/10/20/gemini-android-auto-personal-intelligence/",
+   "source": "Abner Li / 9to5Google",
+   "published_at": "2026-10-20T22:31:17Z",
+   "text": "Google says it is rolling out Personal Intelligence for Gemini on Android Auto now and to cars with Google built-in in the coming months as an opt-in feature. Google is beginning to roll out Personal Intelligence for Gemini on Android Auto and Android Automotive (cars with Google built-in).",
    "via": "Techmeme"
   },
   {
@@ -105,7 +105,7 @@
    "url": "https://www.bloomberg.com/news/articles/2026-10-20/salesforce-to-buy-marketing-platform-braze-for-5-7-billion?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc5MjUwNjE4OSwiZXhwIjoxNzkzMTEwOTg5LCJhcnRpY2xlSWQiOiJUTjdHM0RLSkg2VkIwMCIsImJjb25uZWN0SWQiOiJEQ0FGMjNFM0YyMkE0Qzk5OTM0RUMyRDEwNkM0ODc0NyJ9.j7szHCh8COelVxZqXM050UbwA-o_4jWnuWe3bNry9dY",
    "source": "Bloomberg",
    "published_at": "2026-10-20T12:35:47Z",
-   "text": "Salesforce agrees to acquire AI-powered marketing platform Braze for nearly $5.7B in enterprise value, paying $47.50 per share, set to close from February 2027. Salesforce Inc. plugged a gap in its marketing platform with an agreement to buy Braze Inc. for an enterprise value of about $5.7 billion …",
+   "text": "Salesforce agrees to acquire AI-powered marketing platform Braze for nearly $5.7B in enterprise value, paying $47.50 per share, set to close from February 2027",
    "via": "Techmeme"
   },
   {
@@ -117,11 +117,11 @@
    "via": "Techmeme"
   },
   {
-   "title": "AI safety advocates widely criticize Anthropic's leaked US federal AI bill as much weaker than the…",
-   "url": "https://www.transformernews.ai/p/anthropic-leaked-ai-bill-undermines-safety-first-approach",
-   "source": "Shakeel Hashim / Transformer",
-   "published_at": "2026-10-20T10:55:48Z",
-   "text": "AI safety advocates widely criticize Anthropic's leaked US federal AI bill as much weaker than the bipartisan FRONTIER Act, undermining its safety-first pitch",
+   "title": "NextDC's stock fell as much as 44% to A$5.15 after the Australian data center company cut its earni…",
+   "url": "https://www.ft.com/content/023caf76-40df-485d-8a28-0ff62aa7ec6f",
+   "source": "Nic Fildes / Financial Times",
+   "published_at": "2026-10-21T04:40:54Z",
+   "text": "NextDC's stock fell as much as 44% to A$5.15 after the Australian data center company cut its earnings forecast by over a third; shares were above A$16 in June. NextDC plunge adds to sector woes as Nvidia holds talks over injecting capital into Firmus after failed IPO",
    "via": "Techmeme"
   }
  ],
