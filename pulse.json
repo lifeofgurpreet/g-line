@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-21T11:34:56Z",
+ "generated_at": "2026-10-21T12:08:37Z",
  "items": [
   {
    "title": "Anthropic's IPO prospectus: H1 2026 revenue of $16.3B, with ~20% from two clients, up from $1.1B in…",
@@ -17,7 +17,7 @@
    "published_at": "2026-10-21T02:26:30Z",
    "text": "Thank you for this, @_NathanCalvin. I appreciate and am a fan of the investigative work you’ve done on behalf of AI safety and believe your comments are coming from a constructive, honest place, and that it benefits the public to have people whose job is to scrutinize the actions…",
    "author_name": "Dario Amodei",
-   "likes": 3012,
+   "likes": 3078,
    "story": "Dario Amodei says Anthropic's “race to the top” makes AI safer, cites nine safety decisions with “substantial costs”, and admits mishandling a draft AI bill"
   },
   {
@@ -34,39 +34,8 @@
    "published_at": "2026-10-20T18:10:16Z",
    "text": "We’ve acquired Orchestra Bio, a platform that helps biopharma teams coordinate the complex process of drug development. Together, we’ll build on Rosalind, our AI models and tools for life sciences research, to streamline those operations and help new treatments reach patients…",
    "author_name": "OpenAI",
-   "likes": 6492,
+   "likes": 6540,
    "story": "OpenAI acquires Orchestra Bio, which builds AI agents for managing drug development, and plans to integrate its tech into OpenAI life sciences suite Rosalind"
-  },
-  {
-   "title": "Anthropic and Citrini Research use an internal Claude model to autonomously generate protein minibi…",
-   "url": "https://www.anthropic.com/research/claude-scorpion-toxin-binder-design",
-   "source": "Anthropic",
-   "published_at": "2026-10-21T09:55:59Z",
-   "text": "Anthropic and Citrini Research use an internal Claude model to autonomously generate protein minibinders against five scorpion neurotoxins, testing 211 designs. In August, we showed how Claude designed protein minibinders after being given a single prompt.",
-   "via": "Techmeme"
-  },
-  {
-   "title": "DeepInfer: High-performance inference framework for DeepSeek models",
-   "url": "https://github.com/deepseek-ai/DeepInfer",
-   "source": "Hacker News",
-   "published_at": "2026-10-20T09:08:54Z",
-   "text": "2262 points and 862 comments on Hacker News.",
-   "points": 2262,
-   "discussion": "https://news.ycombinator.com/item?id=50163277"
-  },
-  {
-   "title": "Investing in the public benefit",
-   "url": "https://www.anthropic.com/news/public-benefit-fund",
-   "source": "Anthropic",
-   "published_at": "2026-10-21T04:27:07Z",
-   "text": "We’re committing a portion of Anthropic’s shares to the Anthropic Public Benefit Fund, a new entity with a structure that increases the stake as the company grows."
-  },
-  {
-   "title": "Battle Drones - a vibe coded RTS with audio-based multiplayer",
-   "url": "https://simonwillison.net/2026/Oct/20/battledrones/",
-   "source": "Simon Willison's weblog",
-   "published_at": "2026-10-20T19:34:19Z",
-   "text": "My latest vibe coded game experiment is a Command & Conquer style RTS (Real Time Strategy) game called Battle Drones ( play it here ). Unlike my previous experiments , this one is actually fun to play . I'm somewhat embarrassed to admit that I got there by telling Claude to \"Make it a LOT more fun\". It also supports multiplayer between nearby devices using audio to synchronize game state! Here's what I've built so far, and some of the things I learned along the way."
   },
   {
    "title": "SpaceX reports Q3 revenue up 161% YoY to $14.58B, above $12.72B est., AI revenue up 830% to $7.56B,…",
@@ -77,12 +46,56 @@
    "via": "Techmeme"
   },
   {
+   "title": "DeepInfer: High-performance inference framework for DeepSeek models",
+   "url": "https://github.com/deepseek-ai/DeepInfer",
+   "source": "Hacker News",
+   "published_at": "2026-10-20T09:08:54Z",
+   "text": "2263 points and 867 comments on Hacker News.",
+   "points": 2263,
+   "discussion": "https://news.ycombinator.com/item?id=50163277"
+  },
+  {
+   "title": "New on our Science Blog: designing protein binders against scorpion neurotoxins. Scorpions sting ab…",
+   "url": "https://x.com/AnthropicAI/status/2112579251555721573",
+   "source": "𝕏 @AnthropicAI",
+   "published_at": "2026-10-20T16:18:38Z",
+   "text": "New on our Science Blog: designing protein binders against scorpion neurotoxins. Scorpions sting about 1.2m people every year, and antivenoms are often costly or in short supply. Claude has made an early step toward finding new treatments.",
+   "author_name": "Anthropic",
+   "likes": 6397,
+   "story": "Anthropic and Citrini Research use an internal Claude model to autonomously generate protein minibinders against five scorpion neurotoxins, testing 211 designs",
+   "links": [
+    "https://www.anthropic.com/research/claude-scorpion-toxin-binder-design"
+   ]
+  },
+  {
+   "title": "Investing in the public benefit",
+   "url": "https://www.anthropic.com/news/public-benefit-fund",
+   "source": "Anthropic",
+   "published_at": "2026-10-21T11:37:13Z",
+   "text": "We’re committing a portion of Anthropic’s shares to the Anthropic Public Benefit Fund, a new entity with a structure that increases the stake as the company grows."
+  },
+  {
+   "title": "Battle Drones - a vibe coded RTS with audio-based multiplayer",
+   "url": "https://simonwillison.net/2026/Oct/20/battledrones/",
+   "source": "Simon Willison's weblog",
+   "published_at": "2026-10-20T19:34:19Z",
+   "text": "My latest vibe coded game experiment is a Command & Conquer style RTS (Real Time Strategy) game called Battle Drones ( play it here ). Unlike my previous experiments , this one is actually fun to play . I'm somewhat embarrassed to admit that I got there by telling Claude to \"Make it a LOT more fun\". It also supports multiplayer between nearby devices using audio to synchronize game state! Here's what I've built so far, and some of the things I learned along the way."
+  },
+  {
+   "title": "Nvidia unveils the DSX POD, a modular containerized version of its Vera Rubin reference architectur…",
+   "url": "https://www.datacenterdynamics.com/en/news/nvidia-launches-dsx-pod-claims-the-vera-rubin-reference-architecture-will-make-ai-data-centers-more-water-and-energy-efficient/",
+   "source": "Charlotte Trueman / Datacen…",
+   "published_at": "2026-10-21T10:21:11Z",
+   "text": "Nvidia unveils the DSX POD, a modular containerized version of its Vera Rubin reference architecture to cut data center deployment from six months to 14 days. Details released at GTC Berlin event, taking place this week — Nvidia has claimed its DSX reference architecture for AI data centers …",
+   "via": "Techmeme"
+  },
+  {
    "title": "Muse exposes users' personal and business secrets when they share conversations",
    "url": "https://arstechnica.com/security/2026/10/meta-muse-exposes-users-personal-and-business-secrets-when-they-share-conversations/",
    "source": "Hacker News",
    "published_at": "2026-10-21T00:45:59Z",
-   "text": "204 points and 95 comments on Hacker News.",
-   "points": 204,
+   "text": "211 points and 100 comments on Hacker News.",
+   "points": 211,
    "discussion": "https://news.ycombinator.com/item?id=50174687"
   },
   {
@@ -98,8 +111,8 @@
    "url": "https://www.anthropic.com/research/attack-surface-reduction",
    "source": "Hacker News",
    "published_at": "2026-10-21T03:36:43Z",
-   "text": "61 points and 27 comments on Hacker News.",
-   "points": 61,
+   "text": "69 points and 28 comments on Hacker News.",
+   "points": 69,
    "discussion": "https://news.ycombinator.com/item?id=50175779"
   },
   {
@@ -108,14 +121,6 @@
    "source": "Anthropic",
    "published_at": "2026-10-20T03:29:34Z",
    "text": "Anthropic announces updates to embedding independent evaluators"
-  },
-  {
-   "title": "Nvidia unveils the DSX POD, a modular containerized version of its Vera Rubin reference architectur…",
-   "url": "https://www.datacenterdynamics.com/en/news/nvidia-launches-dsx-pod-claims-the-vera-rubin-reference-architecture-will-make-ai-data-centers-more-water-and-energy-efficient/",
-   "source": "Charlotte Trueman / Datacen…",
-   "published_at": "2026-10-21T10:21:11Z",
-   "text": "Nvidia unveils the DSX POD, a modular containerized version of its Vera Rubin reference architecture to cut data center deployment from six months to 14 days. Details released at GTC Berlin event, taking place this week — Nvidia has claimed its DSX reference architecture for AI data centers …",
-   "via": "Techmeme"
   },
   {
    "title": "Google says it is rolling out Personal Intelligence for Gemini on Android Auto now, and to cars wit…",
