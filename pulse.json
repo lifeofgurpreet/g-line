@@ -1,13 +1,13 @@
 {
  "schema": 1,
- "generated_at": "2026-10-21T00:16:42Z",
+ "generated_at": "2026-10-21T00:49:04Z",
  "items": [
   {
-   "title": "SpaceX reports Q3 revenue up 161% YoY to $14.58B, vs. $12.72B est., AI revenue up 830% to $7.56B, a…",
-   "url": "https://www.cnbc.com/2026/10/20/spacex-spcx-earnings-live-updates-q3-2026html.html",
-   "source": "Lora Kolodny / CNBC",
-   "published_at": "2026-10-20T20:27:46Z",
-   "text": "SpaceX reports Q3 revenue up 161% YoY to $14.58B, vs. $12.72B est., AI revenue up 830% to $7.56B, and AI operating income of $431M, up from a loss of $1.7B. SpaceX reported 161% revenue growth for the third quarter, driven by the company's artificial intelligence business and Starlink Subscriber growth.",
+   "title": "Anthropic's IPO prospectus: H1 2026 revenue of $16.3B, ~20% from two customers, vs. $1.1B in H1 202…",
+   "url": "https://www.wsj.com/tech/ai/anthropic-revenue-growth-ipo-accaf0f1?st=YKUo1r",
+   "source": "Anissa Gardizy / Wall Stree…",
+   "published_at": "2026-10-20T19:47:39Z",
+   "text": "Anthropic's IPO prospectus: H1 2026 revenue of $16.3B, ~20% from two customers, vs. $1.1B in H1 2025, and an $80.7B net loss driven by accounting charges. In a new draft prospectus viewed by the Journal, the AI giant disclosed an $80.7 billion net loss for the first half of 2026 and a long list of risk factors",
    "via": "Techmeme"
   },
   {
@@ -17,7 +17,7 @@
    "published_at": "2026-10-20T09:30:19Z",
    "text": "🚀 Introducing DeepInfer, our in-house inference framework, now fully open source! Powering DeepSeek-V4.1-Flash at scale with high throughput and low latency. We’re sharing our production stack to help the community lower compute costs, reduce energy use, and make AI more…",
    "author_name": "DeepSeek",
-   "likes": 32339,
+   "likes": 32635,
    "story": "DeepSeek open-sources DeepInfer, its high-performance inference framework that powers its production services, starting with support for DeepSeek-V4.1-Flash"
   },
   {
@@ -34,15 +34,15 @@
    "published_at": "2026-10-20T18:10:16Z",
    "text": "We’ve acquired Orchestra Bio, a platform that helps biopharma teams coordinate the complex process of drug development. Together, we’ll build on Rosalind, our AI models and tools for life sciences research, to streamline those operations and help new treatments reach patients…",
    "author_name": "OpenAI",
-   "likes": 5097,
+   "likes": 5209,
    "story": "OpenAI acquires Orchestra Bio, which builds AI agents for managing drug development, and plans to integrate its tech into OpenAI life sciences suite Rosalind"
   },
   {
-   "title": "Anthropic's IPO prospectus: H1 2026 revenue of $16.3B, ~20% from two customers, vs. $1.1B in H1 202…",
-   "url": "https://www.wsj.com/tech/ai/anthropic-revenue-growth-ipo-accaf0f1?st=YKUo1r",
-   "source": "Anissa Gardizy / Wall Stree…",
-   "published_at": "2026-10-20T19:47:39Z",
-   "text": "Anthropic's IPO prospectus: H1 2026 revenue of $16.3B, ~20% from two customers, vs. $1.1B in H1 2025, and an $80.7B net loss driven by accounting charges. In a new draft prospectus viewed by the Journal, the AI giant disclosed an $80.7 billion net loss for the first half of 2026 and a long list of risk factors",
+   "title": "Google says it is rolling out Personal Intelligence for Gemini on Android Auto now and to cars with…",
+   "url": "https://9to5google.com/2026/10/20/gemini-android-auto-personal-intelligence/",
+   "source": "Abner Li / 9to5Google",
+   "published_at": "2026-10-20T22:31:17Z",
+   "text": "Google says it is rolling out Personal Intelligence for Gemini on Android Auto now and to cars with Google built-in in the coming months as an opt-in feature. Google is beginning to roll out Personal Intelligence for Gemini on Android Auto and Android Automotive (cars with Google built-in).",
    "via": "Techmeme"
   },
   {
@@ -81,8 +81,8 @@
    "url": "https://crystl.dev/guides/tmux-for-ai-agents/",
    "source": "Hacker News",
    "published_at": "2026-10-19T05:55:31Z",
-   "text": "167 points and 125 comments on Hacker News.",
-   "points": 167,
+   "text": "168 points and 126 comments on Hacker News.",
+   "points": 168,
    "discussion": "https://news.ycombinator.com/item?id=50148855"
   }
  ],
