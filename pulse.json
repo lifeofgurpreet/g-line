@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-21T16:58:39Z",
+ "generated_at": "2026-10-21T17:31:12Z",
  "items": [
   {
    "title": "OpenAI says the PHP flaws, found using GPT-5.6 Sol, “are among several significant vulnerabilities”…",
@@ -17,7 +17,7 @@
    "published_at": "2026-10-21T02:26:30Z",
    "text": "Thank you for this, @_NathanCalvin. I appreciate and am a fan of the investigative work you’ve done on behalf of AI safety and believe your comments are coming from a constructive, honest place, and that it benefits the public to have people whose job is to scrutinize the actions…",
    "author_name": "Dario Amodei",
-   "likes": 3557,
+   "likes": 3586,
    "story": "Dario Amodei says Anthropic's “race to the top” makes AI safer, cites nine safety decisions with “substantial costs”, and admits mishandling a draft AI bill"
   },
   {
@@ -28,26 +28,13 @@
    "text": "Fixed claude -p inside cloud sessions reporting \"Not logged in\" when started without the session's environment variables · Fixed an API error being replaced by \"prompt is too long\", and an unneeded compaction, in sessions with many MCP tools"
   },
   {
-   "title": "GPTs will also now be available in Antigravity.",
-   "url": "https://x.com/AndrewCurran_/status/2112907155787411582",
-   "source": "𝕏 @AndrewCurran_",
-   "published_at": "2026-10-21T14:01:36Z",
-   "text": "GPTs will also now be available in Antigravity.",
-   "author_name": "Andrew Curran",
-   "likes": 270,
-   "story": "OpenAI says it will make its AI models available on Google Cloud's model garden and Antigravity coding tool in the coming weeks, after launching on AWS in April",
-   "links": [
-    "https://openai.com/index/openai-models-google-cloud/"
-   ]
-  },
-  {
    "title": "New on our Science Blog: designing protein binders against scorpion neurotoxins. Scorpions sting ab…",
    "url": "https://x.com/AnthropicAI/status/2112579251555721573",
    "source": "𝕏 @AnthropicAI",
    "published_at": "2026-10-20T16:18:38Z",
    "text": "New on our Science Blog: designing protein binders against scorpion neurotoxins. Scorpions sting about 1.2m people every year, and antivenoms are often costly or in short supply. Claude has made an early step toward finding new treatments.",
    "author_name": "Anthropic",
-   "likes": 6853,
+   "likes": 6880,
    "story": "Anthropic and Citrini Research use an internal Claude model to autonomously generate protein minibinders against five scorpion neurotoxins, testing 211 designs",
    "links": [
     "https://www.anthropic.com/research/claude-scorpion-toxin-binder-design"
@@ -66,15 +53,28 @@
    "url": "https://www.wiz.io/blog/php2shell-php-rce",
    "source": "Hacker News",
    "published_at": "2026-10-21T13:43:19Z",
-   "text": "366 points and 126 comments on Hacker News.",
-   "points": 366,
+   "text": "384 points and 142 comments on Hacker News.",
+   "points": 384,
    "discussion": "https://news.ycombinator.com/item?id=50180836"
+  },
+  {
+   "title": "GPTs will also now be available in Antigravity.",
+   "url": "https://x.com/AndrewCurran_/status/2112907155787411582",
+   "source": "𝕏 @AndrewCurran_",
+   "published_at": "2026-10-21T14:01:36Z",
+   "text": "GPTs will also now be available in Antigravity.",
+   "author_name": "Andrew Curran",
+   "likes": 279,
+   "story": "OpenAI says it will make its AI models available on Google Cloud's model garden and Antigravity coding tool in the coming weeks, after launching on AWS in April",
+   "links": [
+    "https://openai.com/index/openai-models-google-cloud/"
+   ]
   },
   {
    "title": "Physicist Christopher Stubbs joins Anthropic's Long-Term Benefit Trust",
    "url": "https://www.anthropic.com/news/christopher-stubbs-joins-long-term-benefit-trust",
    "source": "Anthropic",
-   "published_at": "2026-10-21T16:36:39Z",
+   "published_at": "2026-10-21T17:04:54Z",
    "text": "Dr. Christopher Stubbs, an experimental physicist and former Dean of Science at Harvard University, has joined Anthropic’s Long-Term Benefit Trust. He brings to the Trust decades of scientific expertise across observational cosmology and precision measurement. He has also advised the US government on national security and arms control. “I am honored to join Anthropic’s Long-Term Benefit Trust and to help the company deliver on its public benefit mission,” said Stubbs."
   },
   {
@@ -93,30 +93,30 @@
    "via": "Techmeme"
   },
   {
+   "title": "Using thousands of AI agents to uncover new leads in biological data",
+   "url": "https://openai.com/index/scaling-ai-research-for-complex-biological-data/",
+   "source": "Hacker News",
+   "published_at": "2026-10-21T13:37:00Z",
+   "text": "65 points and 21 comments on Hacker News.",
+   "points": 65,
+   "discussion": "https://news.ycombinator.com/item?id=50180752"
+  },
+  {
+   "title": "Recursive releases Flint, an open-weight, 40B-parameter coding model developed with its Eureka Mach…",
+   "url": "https://www.wired.com/story/recursive-self-improvement-flint-latest-model-scary-good/",
+   "source": "Will Knight / Wired",
+   "published_at": "2026-10-21T16:36:17Z",
+   "text": "Recursive releases Flint, an open-weight, 40B-parameter coding model developed with its Eureka Machine AI system, which automated most of the development. Recursive makes the case that the benefits of using AI to build AI outweigh the risks. — For the past few days I've been testing …",
+   "via": "Techmeme"
+  },
+  {
    "title": "Muse exposes users' personal and business secrets when they share conversations",
    "url": "https://arstechnica.com/security/2026/10/meta-muse-exposes-users-personal-and-business-secrets-when-they-share-conversations/",
    "source": "Hacker News",
    "published_at": "2026-10-21T00:45:59Z",
-   "text": "315 points and 144 comments on Hacker News.",
-   "points": 315,
+   "text": "327 points and 146 comments on Hacker News.",
+   "points": 327,
    "discussion": "https://news.ycombinator.com/item?id=50174687"
-  },
-  {
-   "title": "Anthropic's IPO prospectus: ~$16.3B in H1 2026 revenue, ~20% from two clients and up from $1.1B in…",
-   "url": "https://www.wsj.com/tech/ai/anthropic-revenue-growth-ipo-accaf0f1?st=YKUo1r",
-   "source": "Anissa Gardizy / Wall Stree…",
-   "published_at": "2026-10-20T19:47:39Z",
-   "text": "Anthropic's IPO prospectus: ~$16.3B in H1 2026 revenue, ~20% from two clients and up from $1.1B in H1 2025, and an $80.7B net loss, $72B from accounting charges. In a new draft prospectus viewed by the Journal, the AI giant disclosed an $80.7 billion net loss for the first half of 2026 and a long list of risk factors",
-   "via": "Techmeme"
-  },
-  {
-   "title": "Using Claude to reduce the attack surface of code",
-   "url": "https://www.anthropic.com/research/attack-surface-reduction",
-   "source": "Hacker News",
-   "published_at": "2026-10-21T03:36:43Z",
-   "text": "112 points and 74 comments on Hacker News.",
-   "points": 112,
-   "discussion": "https://news.ycombinator.com/item?id=50175779"
   },
   {
    "title": "Investing in the public benefit",
@@ -126,11 +126,11 @@
    "text": "We’re committing a portion of Anthropic’s shares to the Anthropic Public Benefit Fund, a new entity with a structure that increases the stake as the company grows."
   },
   {
-   "title": "Recursive releases Flint, an open-weight, 40B-parameter coding model developed with its Eureka Mach…",
-   "url": "https://www.wired.com/story/recursive-self-improvement-flint-latest-model-scary-good/",
-   "source": "Will Knight / Wired",
-   "published_at": "2026-10-21T16:36:17Z",
-   "text": "Recursive releases Flint, an open-weight, 40B-parameter coding model developed with its Eureka Machine AI system, which automated most of the development. Recursive makes the case that the benefits of using AI to build AI outweigh the risks. — For the past few days I've been testing …",
+   "title": "Anthropic's IPO prospectus: ~$16.3B in H1 2026 revenue, ~20% from two clients and up from $1.1B in…",
+   "url": "https://www.wsj.com/tech/ai/anthropic-revenue-growth-ipo-accaf0f1?st=YKUo1r",
+   "source": "Anissa Gardizy / Wall Stree…",
+   "published_at": "2026-10-20T19:47:39Z",
+   "text": "Anthropic's IPO prospectus: ~$16.3B in H1 2026 revenue, ~20% from two clients and up from $1.1B in H1 2025, and an $80.7B net loss, $72B from accounting charges. In a new draft prospectus viewed by the Journal, the AI giant disclosed an $80.7 billion net loss for the first half of 2026 and a long list of risk factors",
    "via": "Techmeme"
   }
  ],
