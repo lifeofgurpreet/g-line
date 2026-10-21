@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-21T18:03:13Z",
+ "generated_at": "2026-10-21T18:35:19Z",
  "items": [
   {
    "title": "OpenAI says the PHP flaws, found using GPT-5.6 Sol, “are among several significant vulnerabilities”…",
@@ -17,8 +17,8 @@
    "published_at": "2026-10-21T02:26:30Z",
    "text": "Thank you for this, @_NathanCalvin. I appreciate and am a fan of the investigative work you’ve done on behalf of AI safety and believe your comments are coming from a constructive, honest place, and that it benefits the public to have people whose job is to scrutinize the actions…",
    "author_name": "Dario Amodei",
-   "likes": 3620,
-   "story": "Dario Amodei says Anthropic's “race to the top” makes AI safer, cites nine safety decisions with “substantial costs”, and admits mishandling a draft AI bill"
+   "likes": 3648,
+   "story": "Dario Amodei says Anthropic's “race to the top” makes AI safer, lists nine safety decisions with “substantial costs”, and admits to mishandling a draft AI bill"
   },
   {
    "title": "Claude Code 2.1.306 released",
@@ -34,7 +34,7 @@
    "published_at": "2026-10-20T16:18:38Z",
    "text": "New on our Science Blog: designing protein binders against scorpion neurotoxins. Scorpions sting about 1.2m people every year, and antivenoms are often costly or in short supply. Claude has made an early step toward finding new treatments.",
    "author_name": "Anthropic",
-   "likes": 6924,
+   "likes": 6955,
    "story": "Anthropic and Citrini Research use an internal Claude model to autonomously generate protein minibinders against five scorpion neurotoxins, testing 211 designs",
    "links": [
     "https://www.anthropic.com/research/claude-scorpion-toxin-binder-design"
@@ -49,32 +49,19 @@
    "via": "Techmeme"
   },
   {
-   "title": "PHP2Shell: AI uncovers critical RCE in PHP",
-   "url": "https://www.wiz.io/blog/php2shell-php-rce",
+   "title": "OpenAI models are coming to Google Cloud",
+   "url": "https://openai.com/index/openai-models-google-cloud/",
    "source": "Hacker News",
-   "published_at": "2026-10-21T13:43:19Z",
-   "text": "394 points and 147 comments on Hacker News.",
-   "points": 394,
-   "discussion": "https://news.ycombinator.com/item?id=50180836"
-  },
-  {
-   "title": "GPTs will also now be available in Antigravity.",
-   "url": "https://x.com/AndrewCurran_/status/2112907155787411582",
-   "source": "𝕏 @AndrewCurran_",
-   "published_at": "2026-10-21T14:01:36Z",
-   "text": "GPTs will also now be available in Antigravity.",
-   "author_name": "Andrew Curran",
-   "likes": 294,
-   "story": "OpenAI says it will make its AI models available on Google Cloud's model garden and Antigravity coding tool in the coming weeks, after launching on AWS in April",
-   "links": [
-    "https://openai.com/index/openai-models-google-cloud/"
-   ]
+   "published_at": "2026-10-21T12:53:11Z",
+   "text": "116 points and 34 comments on Hacker News.",
+   "points": 116,
+   "discussion": "https://news.ycombinator.com/item?id=50180079"
   },
   {
    "title": "Physicist Christopher Stubbs joins Anthropic's Long-Term Benefit Trust",
    "url": "https://www.anthropic.com/news/christopher-stubbs-joins-long-term-benefit-trust",
    "source": "Anthropic",
-   "published_at": "2026-10-21T17:04:54Z",
+   "published_at": "2026-10-21T18:22:03Z",
    "text": "Dr. Christopher Stubbs, an experimental physicist and former Dean of Science at Harvard University, has joined Anthropic’s Long-Term Benefit Trust. He brings to the Trust decades of scientific expertise across observational cosmology and precision measurement. He has also advised the US government on national security and arms control. “I am honored to join Anthropic’s Long-Term Benefit Trust and to help the company deliver on its public benefit mission,” said Stubbs."
   },
   {
@@ -85,6 +72,23 @@
    "text": "My latest vibe coded game experiment is a Command & Conquer style RTS (Real Time Strategy) game called Battle Drones ( play it here ). Unlike my previous experiments , this one is actually fun to play . I'm somewhat embarrassed to admit that I got there by telling Claude to \"Make it a LOT more fun\". It also supports multiplayer between nearby devices using audio to synchronize game state! Here's what I've built so far, and some of the things I learned along the way."
   },
   {
+   "title": "PHP's creators disclose a critical memory-management vulnerability, dubbed “PHP2Shell”, that affect…",
+   "url": "https://www.wsj.com/tech/cybersecurity/ai-just-found-a-bug-that-puts-up-to-70-of-the-worlds-websites-at-risk-fd0902ea?st=tBLRBh&reflink=desktopwebshare_permalink",
+   "source": "Robert McMillan / Wall Stre…",
+   "published_at": "2026-10-21T14:08:28Z",
+   "text": "PHP's creators disclose a critical memory-management vulnerability, dubbed “PHP2Shell”, that affects up to 70% of websites, discovered via GPT-5.6 Sol in August. AI tools helped find one of the most severe online bugs ever. Cyber experts are racing to patch it before hackers use AI to exploit it.",
+   "via": "Techmeme"
+  },
+  {
+   "title": "Using thousands of AI agents to uncover new leads in biological data",
+   "url": "https://openai.com/index/scaling-ai-research-for-complex-biological-data/",
+   "source": "Hacker News",
+   "published_at": "2026-10-21T13:37:00Z",
+   "text": "87 points and 36 comments on Hacker News.",
+   "points": 87,
+   "discussion": "https://news.ycombinator.com/item?id=50180752"
+  },
+  {
    "title": "OpenAI says two agents, one GPT-6.1 Sol and one GPT-6 Astra, weakened misalignment monitoring while…",
    "url": "https://alignment.openai.com/misalignment-reports/suppressing-misalignment-monitoring-alerts-and-disabling-misalignment-monitoring/",
    "source": "OpenAI",
@@ -93,13 +97,20 @@
    "via": "Techmeme"
   },
   {
-   "title": "Using thousands of AI agents to uncover new leads in biological data",
-   "url": "https://openai.com/index/scaling-ai-research-for-complex-biological-data/",
+   "title": "Muse exposes users' personal and business secrets when they share conversations",
+   "url": "https://arstechnica.com/security/2026/10/meta-muse-exposes-users-personal-and-business-secrets-when-they-share-conversations/",
    "source": "Hacker News",
-   "published_at": "2026-10-21T13:37:00Z",
-   "text": "78 points and 27 comments on Hacker News.",
-   "points": 78,
-   "discussion": "https://news.ycombinator.com/item?id=50180752"
+   "published_at": "2026-10-21T00:45:59Z",
+   "text": "350 points and 153 comments on Hacker News.",
+   "points": 350,
+   "discussion": "https://news.ycombinator.com/item?id=50174687"
+  },
+  {
+   "title": "Investing in the public benefit",
+   "url": "https://www.anthropic.com/news/public-benefit-fund",
+   "source": "Anthropic",
+   "published_at": "2026-10-21T11:37:13Z",
+   "text": "We’re committing a portion of Anthropic’s shares to the Anthropic Public Benefit Fund, a new entity with a structure that increases the stake as the company grows."
   },
   {
    "title": "Recursive releases Flint, an open-weight, 40B-parameter coding model developed with its Eureka Mach…",
@@ -110,26 +121,11 @@
    "via": "Techmeme"
   },
   {
-   "title": "Investing in the public benefit",
-   "url": "https://www.anthropic.com/news/public-benefit-fund",
-   "source": "Anthropic",
-   "published_at": "2026-10-21T11:37:13Z",
-   "text": "We’re committing a portion of Anthropic’s shares to the Anthropic Public Benefit Fund, a new entity with a structure that increases the stake as the company grows."
-  },
-  {
-   "title": "Flapping Airplanes, which is working on methods to train AI models on less data and compute and mak…",
+   "title": "Flapping Airplanes, which is working on methods to train AI models using less data and compute and…",
    "url": "https://www.bloomberg.com/news/articles/2026-10-21/ai-research-startup-flapping-airplanes-valued-at-6-billion-in-round?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc5MjYwMjEzMywiZXhwIjoxNzkzMjA2OTMzLCJhcnRpY2xlSWQiOiJUTjlPSzFLSVVQU1UwMCIsImJjb25uZWN0SWQiOiIyMjNDRDM2NDg0QzY0OTc3QjY5ODE0Rjc1MTYxNDRGNyJ9.2ECQs48uRgaUOE9dkbaIGZ556qBFOPomk4VxMDMXvHE",
    "source": "Rachel Metz / Bloomberg",
    "published_at": "2026-10-21T17:46:08Z",
-   "text": "Flapping Airplanes, which is working on methods to train AI models on less data and compute and make the chips more efficient, raised $1B at a $6B valuation. Flapping Airplanes, a year-old artificial intelligence startup, has raised $1 billion in funding at a $6 billion valuation …",
-   "via": "Techmeme"
-  },
-  {
-   "title": "Stockholm-based legal AI startup Legora raised a $550M Series E at an $8.8B post-money valuation le…",
-   "url": "https://www.cityam.com/legora-raises-550-in-funding-to-lead-global-expansion/",
-   "source": "Rosie Harris-Davison / City…",
-   "published_at": "2026-10-21T13:46:27Z",
-   "text": "Stockholm-based legal AI startup Legora raised a $550M Series E at an $8.8B post-money valuation led by Atreides, up from $5.55B after a $550M Series D in March. Legal tech firm Legora has raised $550m (£410m) in Series E funding as it expands its footprint in the US, Europe, and the Asia-Pacific region.",
+   "text": "Flapping Airplanes, which is working on methods to train AI models using less data and compute and make the chips more efficient, raised $1B at a $6B valuation. Flapping Airplanes, a year-old artificial intelligence startup, has raised $1 billion in funding at a $6 billion valuation …",
    "via": "Techmeme"
   }
  ],
