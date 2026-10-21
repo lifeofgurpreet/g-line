@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-21T16:26:25Z",
+ "generated_at": "2026-10-21T16:58:39Z",
  "items": [
   {
    "title": "OpenAI says the PHP flaws, found using GPT-5.6 Sol, “are among several significant vulnerabilities”…",
@@ -17,7 +17,7 @@
    "published_at": "2026-10-21T02:26:30Z",
    "text": "Thank you for this, @_NathanCalvin. I appreciate and am a fan of the investigative work you’ve done on behalf of AI safety and believe your comments are coming from a constructive, honest place, and that it benefits the public to have people whose job is to scrutinize the actions…",
    "author_name": "Dario Amodei",
-   "likes": 3514,
+   "likes": 3557,
    "story": "Dario Amodei says Anthropic's “race to the top” makes AI safer, cites nine safety decisions with “substantial costs”, and admits mishandling a draft AI bill"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-10-21T14:01:36Z",
    "text": "GPTs will also now be available in Antigravity.",
    "author_name": "Andrew Curran",
-   "likes": 251,
+   "likes": 270,
    "story": "OpenAI says it will make its AI models available on Google Cloud's model garden and Antigravity coding tool in the coming weeks, after launching on AWS in April",
    "links": [
     "https://openai.com/index/openai-models-google-cloud/"
@@ -47,42 +47,11 @@
    "published_at": "2026-10-20T16:18:38Z",
    "text": "New on our Science Blog: designing protein binders against scorpion neurotoxins. Scorpions sting about 1.2m people every year, and antivenoms are often costly or in short supply. Claude has made an early step toward finding new treatments.",
    "author_name": "Anthropic",
-   "likes": 6807,
+   "likes": 6853,
    "story": "Anthropic and Citrini Research use an internal Claude model to autonomously generate protein minibinders against five scorpion neurotoxins, testing 211 designs",
    "links": [
     "https://www.anthropic.com/research/claude-scorpion-toxin-binder-design"
    ]
-  },
-  {
-   "title": "PHP's creators disclose a critical memory-management vulnerability, dubbed “PHP2Shell”, that affect…",
-   "url": "https://www.wsj.com/tech/cybersecurity/ai-just-found-a-bug-that-puts-up-to-70-of-the-worlds-websites-at-risk-fd0902ea?st=tBLRBh&reflink=desktopwebshare_permalink",
-   "source": "Robert McMillan / Wall Stre…",
-   "published_at": "2026-10-21T14:08:28Z",
-   "text": "PHP's creators disclose a critical memory-management vulnerability, dubbed “PHP2Shell”, that affects up to 70% of websites, discovered via GPT-5.6 Sol in August. AI tools helped find one of the most severe online bugs ever. Cyber experts are racing to patch it before hackers use AI to exploit it.",
-   "via": "Techmeme"
-  },
-  {
-   "title": "Muse exposes users' personal and business secrets when they share conversations",
-   "url": "https://arstechnica.com/security/2026/10/meta-muse-exposes-users-personal-and-business-secrets-when-they-share-conversations/",
-   "source": "Hacker News",
-   "published_at": "2026-10-21T00:45:59Z",
-   "text": "307 points and 144 comments on Hacker News.",
-   "points": 307,
-   "discussion": "https://news.ycombinator.com/item?id=50174687"
-  },
-  {
-   "title": "Investing in the public benefit",
-   "url": "https://www.anthropic.com/news/public-benefit-fund",
-   "source": "Anthropic",
-   "published_at": "2026-10-21T11:37:13Z",
-   "text": "We’re committing a portion of Anthropic’s shares to the Anthropic Public Benefit Fund, a new entity with a structure that increases the stake as the company grows."
-  },
-  {
-   "title": "Battle Drones - a vibe coded RTS with audio-based multiplayer",
-   "url": "https://simonwillison.net/2026/Oct/20/battledrones/",
-   "source": "Simon Willison's weblog",
-   "published_at": "2026-10-20T19:34:19Z",
-   "text": "My latest vibe coded game experiment is a Command & Conquer style RTS (Real Time Strategy) game called Battle Drones ( play it here ). Unlike my previous experiments , this one is actually fun to play . I'm somewhat embarrassed to admit that I got there by telling Claude to \"Make it a LOT more fun\". It also supports multiplayer between nearby devices using audio to synchronize game state! Here's what I've built so far, and some of the things I learned along the way."
   },
   {
    "title": "Nvidia unveils the DSX POD, a modular containerized version of its Vera Rubin reference architectur…",
@@ -93,13 +62,27 @@
    "via": "Techmeme"
   },
   {
-   "title": "Using Claude to reduce the attack surface of code",
-   "url": "https://www.anthropic.com/research/attack-surface-reduction",
+   "title": "PHP2Shell: AI uncovers critical RCE in PHP",
+   "url": "https://www.wiz.io/blog/php2shell-php-rce",
    "source": "Hacker News",
-   "published_at": "2026-10-21T03:36:43Z",
-   "text": "111 points and 74 comments on Hacker News.",
-   "points": 111,
-   "discussion": "https://news.ycombinator.com/item?id=50175779"
+   "published_at": "2026-10-21T13:43:19Z",
+   "text": "366 points and 126 comments on Hacker News.",
+   "points": 366,
+   "discussion": "https://news.ycombinator.com/item?id=50180836"
+  },
+  {
+   "title": "Physicist Christopher Stubbs joins Anthropic's Long-Term Benefit Trust",
+   "url": "https://www.anthropic.com/news/christopher-stubbs-joins-long-term-benefit-trust",
+   "source": "Anthropic",
+   "published_at": "2026-10-21T16:36:39Z",
+   "text": "Dr. Christopher Stubbs, an experimental physicist and former Dean of Science at Harvard University, has joined Anthropic’s Long-Term Benefit Trust. He brings to the Trust decades of scientific expertise across observational cosmology and precision measurement. He has also advised the US government on national security and arms control. “I am honored to join Anthropic’s Long-Term Benefit Trust and to help the company deliver on its public benefit mission,” said Stubbs."
+  },
+  {
+   "title": "Battle Drones - a vibe coded RTS with audio-based multiplayer",
+   "url": "https://simonwillison.net/2026/Oct/20/battledrones/",
+   "source": "Simon Willison's weblog",
+   "published_at": "2026-10-20T19:34:19Z",
+   "text": "My latest vibe coded game experiment is a Command & Conquer style RTS (Real Time Strategy) game called Battle Drones ( play it here ). Unlike my previous experiments , this one is actually fun to play . I'm somewhat embarrassed to admit that I got there by telling Claude to \"Make it a LOT more fun\". It also supports multiplayer between nearby devices using audio to synchronize game state! Here's what I've built so far, and some of the things I learned along the way."
   },
   {
    "title": "OpenAI says two agents, one GPT-6.1 Sol and one GPT-6 Astra, weakened misalignment monitoring while…",
@@ -110,11 +93,13 @@
    "via": "Techmeme"
   },
   {
-   "title": "Anthropic update on independent evaluators",
-   "url": "https://www.anthropic.com/news/an-update-on-independent-evaluators",
-   "source": "Anthropic",
-   "published_at": "2026-10-20T03:29:34Z",
-   "text": "Anthropic announces updates to embedding independent evaluators"
+   "title": "Muse exposes users' personal and business secrets when they share conversations",
+   "url": "https://arstechnica.com/security/2026/10/meta-muse-exposes-users-personal-and-business-secrets-when-they-share-conversations/",
+   "source": "Hacker News",
+   "published_at": "2026-10-21T00:45:59Z",
+   "text": "315 points and 144 comments on Hacker News.",
+   "points": 315,
+   "discussion": "https://news.ycombinator.com/item?id=50174687"
   },
   {
    "title": "Anthropic's IPO prospectus: ~$16.3B in H1 2026 revenue, ~20% from two clients and up from $1.1B in…",
@@ -125,11 +110,27 @@
    "via": "Techmeme"
   },
   {
-   "title": "Stockholm-based legal AI startup Legora raised a $550M Series E at an $8.8B post-money valuation le…",
-   "url": "https://www.cityam.com/legora-raises-550-in-funding-to-lead-global-expansion/",
-   "source": "Rosie Harris-Davison / City…",
-   "published_at": "2026-10-21T13:46:27Z",
-   "text": "Stockholm-based legal AI startup Legora raised a $550M Series E at an $8.8B post-money valuation led by Atreides, up from $5.55B after a $550M Series D in March. Legal tech firm Legora has raised $550m (£410m) in Series E funding as it expands its footprint in the US, Europe, and the Asia-Pacific region.",
+   "title": "Using Claude to reduce the attack surface of code",
+   "url": "https://www.anthropic.com/research/attack-surface-reduction",
+   "source": "Hacker News",
+   "published_at": "2026-10-21T03:36:43Z",
+   "text": "112 points and 74 comments on Hacker News.",
+   "points": 112,
+   "discussion": "https://news.ycombinator.com/item?id=50175779"
+  },
+  {
+   "title": "Investing in the public benefit",
+   "url": "https://www.anthropic.com/news/public-benefit-fund",
+   "source": "Anthropic",
+   "published_at": "2026-10-21T11:37:13Z",
+   "text": "We’re committing a portion of Anthropic’s shares to the Anthropic Public Benefit Fund, a new entity with a structure that increases the stake as the company grows."
+  },
+  {
+   "title": "Recursive releases Flint, an open-weight, 40B-parameter coding model developed with its Eureka Mach…",
+   "url": "https://www.wired.com/story/recursive-self-improvement-flint-latest-model-scary-good/",
+   "source": "Will Knight / Wired",
+   "published_at": "2026-10-21T16:36:17Z",
+   "text": "Recursive releases Flint, an open-weight, 40B-parameter coding model developed with its Eureka Machine AI system, which automated most of the development. Recursive makes the case that the benefits of using AI to build AI outweigh the risks. — For the past few days I've been testing …",
    "via": "Techmeme"
   }
  ],
