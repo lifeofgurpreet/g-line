@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-21T12:40:23Z",
+ "generated_at": "2026-10-21T13:12:25Z",
  "items": [
   {
    "title": "Nvidia unveils the DSX POD, a modular containerized version of its Vera Rubin reference architectur…",
@@ -17,7 +17,7 @@
    "published_at": "2026-10-21T02:26:30Z",
    "text": "Thank you for this, @_NathanCalvin. I appreciate and am a fan of the investigative work you’ve done on behalf of AI safety and believe your comments are coming from a constructive, honest place, and that it benefits the public to have people whose job is to scrutinize the actions…",
    "author_name": "Dario Amodei",
-   "likes": 3141,
+   "likes": 3211,
    "story": "Dario Amodei says Anthropic's “race to the top” makes AI safer, cites nine safety decisions with “substantial costs”, and admits mishandling a draft AI bill"
   },
   {
@@ -28,14 +28,17 @@
    "text": "Fixed claude -p inside cloud sessions reporting \"Not logged in\" when started without the session's environment variables · Fixed an API error being replaced by \"prompt is too long\", and an unneeded compaction, in sessions with many MCP tools"
   },
   {
-   "title": "We’ve acquired Orchestra Bio, a platform that helps biopharma teams coordinate the complex process…",
-   "url": "https://x.com/OpenAI/status/2112607347688583586",
-   "source": "𝕏 @OpenAI",
-   "published_at": "2026-10-20T18:10:16Z",
-   "text": "We’ve acquired Orchestra Bio, a platform that helps biopharma teams coordinate the complex process of drug development. Together, we’ll build on Rosalind, our AI models and tools for life sciences research, to streamline those operations and help new treatments reach patients…",
-   "author_name": "OpenAI",
-   "likes": 6582,
-   "story": "OpenAI acquires Orchestra Bio, which builds AI agents to help manage drug development, and plans to integrate the tech into Rosalind, its life sciences AI suite"
+   "title": "New on our Science Blog: designing protein binders against scorpion neurotoxins. Scorpions sting ab…",
+   "url": "https://x.com/AnthropicAI/status/2112579251555721573",
+   "source": "𝕏 @AnthropicAI",
+   "published_at": "2026-10-20T16:18:38Z",
+   "text": "New on our Science Blog: designing protein binders against scorpion neurotoxins. Scorpions sting about 1.2m people every year, and antivenoms are often costly or in short supply. Claude has made an early step toward finding new treatments.",
+   "author_name": "Anthropic",
+   "likes": 6481,
+   "story": "Anthropic and Citrini Research use an internal Claude model to autonomously generate protein minibinders against five scorpion neurotoxins, testing 211 designs",
+   "links": [
+    "https://www.anthropic.com/research/claude-scorpion-toxin-binder-design"
+   ]
   },
   {
    "title": "Anthropic's IPO prospectus: ~$16.3B in H1 2026 revenue, ~20% from two clients and up from $1.1B in…",
@@ -46,26 +49,23 @@
    "via": "Techmeme"
   },
   {
-   "title": "DeepInfer: High-performance inference framework for DeepSeek models",
-   "url": "https://github.com/deepseek-ai/DeepInfer",
+   "title": "Muse exposes users' personal and business secrets when they share conversations",
+   "url": "https://arstechnica.com/security/2026/10/meta-muse-exposes-users-personal-and-business-secrets-when-they-share-conversations/",
    "source": "Hacker News",
-   "published_at": "2026-10-20T09:08:54Z",
-   "text": "2267 points and 868 comments on Hacker News.",
-   "points": 2267,
-   "discussion": "https://news.ycombinator.com/item?id=50163277"
+   "published_at": "2026-10-21T00:45:59Z",
+   "text": "236 points and 109 comments on Hacker News.",
+   "points": 236,
+   "discussion": "https://news.ycombinator.com/item?id=50174687"
   },
   {
-   "title": "New on our Science Blog: designing protein binders against scorpion neurotoxins. Scorpions sting ab…",
-   "url": "https://x.com/AnthropicAI/status/2112579251555721573",
-   "source": "𝕏 @AnthropicAI",
-   "published_at": "2026-10-20T16:18:38Z",
-   "text": "New on our Science Blog: designing protein binders against scorpion neurotoxins. Scorpions sting about 1.2m people every year, and antivenoms are often costly or in short supply. Claude has made an early step toward finding new treatments.",
-   "author_name": "Anthropic",
-   "likes": 6434,
-   "story": "Anthropic and Citrini Research use an internal Claude model to autonomously generate protein minibinders against five scorpion neurotoxins, testing 211 designs",
-   "links": [
-    "https://www.anthropic.com/research/claude-scorpion-toxin-binder-design"
-   ]
+   "title": "We’ve acquired Orchestra Bio, a platform that helps biopharma teams coordinate the complex process…",
+   "url": "https://x.com/OpenAI/status/2112607347688583586",
+   "source": "𝕏 @OpenAI",
+   "published_at": "2026-10-20T18:10:16Z",
+   "text": "We’ve acquired Orchestra Bio, a platform that helps biopharma teams coordinate the complex process of drug development. Together, we’ll build on Rosalind, our AI models and tools for life sciences research, to streamline those operations and help new treatments reach patients…",
+   "author_name": "OpenAI",
+   "likes": 6613,
+   "story": "OpenAI acquires Orchestra Bio, which builds AI agents to help manage drug development, and plans to integrate the tech into Rosalind, its life sciences AI suite"
   },
   {
    "title": "Investing in the public benefit",
@@ -82,23 +82,6 @@
    "text": "My latest vibe coded game experiment is a Command & Conquer style RTS (Real Time Strategy) game called Battle Drones ( play it here ). Unlike my previous experiments , this one is actually fun to play . I'm somewhat embarrassed to admit that I got there by telling Claude to \"Make it a LOT more fun\". It also supports multiplayer between nearby devices using audio to synchronize game state! Here's what I've built so far, and some of the things I learned along the way."
   },
   {
-   "title": "SpaceX reports Q3 revenue up 161% YoY to $14.58B, above $12.72B est., AI revenue up 830% to $7.56B,…",
-   "url": "https://www.cnbc.com/2026/10/20/spacex-spcx-earnings-live-updates-q3-2026html.html",
-   "source": "Lora Kolodny / CNBC",
-   "published_at": "2026-10-20T20:27:46Z",
-   "text": "SpaceX reports Q3 revenue up 161% YoY to $14.58B, above $12.72B est., AI revenue up 830% to $7.56B, and AI operating income of $431M, up from a loss of $1.7B. SpaceX reported 161% revenue growth for the third quarter, driven by the company's artificial intelligence business and Starlink Subscriber growth.",
-   "via": "Techmeme"
-  },
-  {
-   "title": "Muse exposes users' personal and business secrets when they share conversations",
-   "url": "https://arstechnica.com/security/2026/10/meta-muse-exposes-users-personal-and-business-secrets-when-they-share-conversations/",
-   "source": "Hacker News",
-   "published_at": "2026-10-21T00:45:59Z",
-   "text": "224 points and 108 comments on Hacker News.",
-   "points": 224,
-   "discussion": "https://news.ycombinator.com/item?id=50174687"
-  },
-  {
    "title": "OpenAI says two agents, one GPT-6.1 Sol and one GPT-6 Astra, weakened misalignment monitoring while…",
    "url": "https://alignment.openai.com/misalignment-reports/suppressing-misalignment-monitoring-alerts-and-disabling-misalignment-monitoring/",
    "source": "OpenAI",
@@ -111,9 +94,17 @@
    "url": "https://www.anthropic.com/research/attack-surface-reduction",
    "source": "Hacker News",
    "published_at": "2026-10-21T03:36:43Z",
-   "text": "77 points and 34 comments on Hacker News.",
-   "points": 77,
+   "text": "80 points and 47 comments on Hacker News.",
+   "points": 80,
    "discussion": "https://news.ycombinator.com/item?id=50175779"
+  },
+  {
+   "title": "OpenAI says it will make its AI models available on Google Cloud's model garden and Antigravity cod…",
+   "url": "https://www.cnbc.com/2026/10/21/openai-bring-its-ai-models-to-googles-cloud-expands-beyond-microsoft.html",
+   "source": "Jordan Novet / CNBC",
+   "published_at": "2026-10-21T12:16:10Z",
+   "text": "OpenAI says it will make its AI models available on Google Cloud's model garden and Antigravity coding tool in the coming weeks, after launching on AWS in April. OpenAI will make its artificial intelligence models available for developers through Google's cloud, following years of competition between the two companies.",
+   "via": "Techmeme"
   },
   {
    "title": "Anthropic update on independent evaluators",
@@ -128,6 +119,14 @@
    "source": "Abner Li / 9to5Google",
    "published_at": "2026-10-20T22:31:17Z",
    "text": "Google says it is rolling out Personal Intelligence for Gemini on Android Auto now, and to cars with Google built-in in the coming months, as an opt-in feature. Google is beginning to roll out Personal Intelligence for Gemini on Android Auto and Android Automotive (cars with Google built-in).",
+   "via": "Techmeme"
+  },
+  {
+   "title": "Google, Temasek, and Bain: online spending in SE Asia to rise ~17% YoY to $368B in 2026 despite eco…",
+   "url": "https://www.bloomberg.com/news/articles/2026-10-21/ai-to-spur-se-asian-digital-economy-to-368-billion-study-shows",
+   "source": "Gabrielle Ng / Bloomberg",
+   "published_at": "2026-10-21T06:06:27Z",
+   "text": "Google, Temasek, and Bain: online spending in SE Asia to rise ~17% YoY to $368B in 2026 despite economic headwinds, as businesses harness AI to spur spending",
    "via": "Techmeme"
   }
  ],
