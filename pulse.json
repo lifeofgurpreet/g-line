@@ -1,13 +1,13 @@
 {
  "schema": 1,
- "generated_at": "2026-10-21T14:49:24Z",
+ "generated_at": "2026-10-21T15:21:40Z",
  "items": [
   {
-   "title": "PHP discloses a critical memory-management vulnerability, dubbed “PHP2Shell”, that affects up to 70…",
-   "url": "https://www.wsj.com/tech/cybersecurity/ai-just-found-a-bug-that-puts-up-to-70-of-the-worlds-websites-at-risk-fd0902ea?st=tBLRBh&reflink=desktopwebshare_permalink",
-   "source": "Robert McMillan / Wall Stre…",
-   "published_at": "2026-10-21T14:08:28Z",
-   "text": "PHP discloses a critical memory-management vulnerability, dubbed “PHP2Shell”, that affects up to 70% of websites, discovered using GPT-5.6 Sol in August. AI tools helped find one of the most severe online bugs ever. Cyber experts are racing to patch it before hackers use AI to exploit it.",
+   "title": "OpenAI says the PHP flaws, found using GPT-5.6 Sol, “are among several significant vulnerabilities”…",
+   "url": "https://openai.com/index/coordinated-disclosure-of-critical-vulnerabilities/",
+   "source": "OpenAI",
+   "published_at": "2026-10-21T14:33:01Z",
+   "text": "OpenAI says the PHP flaws, found using GPT-5.6 Sol, “are among several significant vulnerabilities” it found and expects “similar findings to increase sharply”. - Validate and fix the upstream vulnerability. … - Give affected organizations time to act.",
    "via": "Techmeme"
   },
   {
@@ -17,7 +17,7 @@
    "published_at": "2026-10-21T02:26:30Z",
    "text": "Thank you for this, @_NathanCalvin. I appreciate and am a fan of the investigative work you’ve done on behalf of AI safety and believe your comments are coming from a constructive, honest place, and that it benefits the public to have people whose job is to scrutinize the actions…",
    "author_name": "Dario Amodei",
-   "likes": 3378,
+   "likes": 3426,
    "story": "Dario Amodei says Anthropic's “race to the top” makes AI safer, cites nine safety decisions with “substantial costs”, and admits mishandling a draft AI bill"
   },
   {
@@ -28,13 +28,26 @@
    "text": "Fixed claude -p inside cloud sessions reporting \"Not logged in\" when started without the session's environment variables · Fixed an API error being replaced by \"prompt is too long\", and an unneeded compaction, in sessions with many MCP tools"
   },
   {
+   "title": "GPTs will also now be available in Antigravity.",
+   "url": "https://x.com/AndrewCurran_/status/2112907155787411582",
+   "source": "𝕏 @AndrewCurran_",
+   "published_at": "2026-10-21T14:01:36Z",
+   "text": "GPTs will also now be available in Antigravity.",
+   "author_name": "Andrew Curran",
+   "likes": 193,
+   "story": "OpenAI says it will make its AI models available on Google Cloud's model garden and Antigravity coding tool in the coming weeks, after launching on AWS in April",
+   "links": [
+    "https://openai.com/index/openai-models-google-cloud/"
+   ]
+  },
+  {
    "title": "New on our Science Blog: designing protein binders against scorpion neurotoxins. Scorpions sting ab…",
    "url": "https://x.com/AnthropicAI/status/2112579251555721573",
    "source": "𝕏 @AnthropicAI",
    "published_at": "2026-10-20T16:18:38Z",
    "text": "New on our Science Blog: designing protein binders against scorpion neurotoxins. Scorpions sting about 1.2m people every year, and antivenoms are often costly or in short supply. Claude has made an early step toward finding new treatments.",
    "author_name": "Anthropic",
-   "likes": 6648,
+   "likes": 6706,
    "story": "Anthropic and Citrini Research use an internal Claude model to autonomously generate protein minibinders against five scorpion neurotoxins, testing 211 designs",
    "links": [
     "https://www.anthropic.com/research/claude-scorpion-toxin-binder-design"
@@ -49,23 +62,13 @@
    "via": "Techmeme"
   },
   {
-   "title": "Muse exposes users' personal and business secrets when they share conversations",
-   "url": "https://arstechnica.com/security/2026/10/meta-muse-exposes-users-personal-and-business-secrets-when-they-share-conversations/",
+   "title": "PHP2Shell: AI uncovers critical RCE in PHP",
+   "url": "https://www.wiz.io/blog/php2shell-php-rce",
    "source": "Hacker News",
-   "published_at": "2026-10-21T00:45:59Z",
-   "text": "275 points and 125 comments on Hacker News.",
-   "points": 275,
-   "discussion": "https://news.ycombinator.com/item?id=50174687"
-  },
-  {
-   "title": "The WSJ has seen Anthropic's new draft prospectus. Some numbers: They plan to spend three-quarters…",
-   "url": "https://x.com/AndrewCurran_/status/2112641878147649911",
-   "source": "𝕏 @AndrewCurran_",
-   "published_at": "2026-10-20T20:27:29Z",
-   "text": "The WSJ has seen Anthropic's new draft prospectus. Some numbers: They plan to spend three-quarters of a trillion dollars on compute over the next seven to ten years. - $111 billion on Google cloud computing contracts - $110 billion with Amazon Web Services - $31 billion on…",
-   "author_name": "Andrew Curran",
-   "likes": 776,
-   "story": "Anthropic's IPO prospectus: ~$16.3B in H1 2026 revenue, ~20% from two clients and up from $1.1B in H1 2025, and an $80.7B net loss, $72B from accounting charges"
+   "published_at": "2026-10-21T13:43:19Z",
+   "text": "210 points and 54 comments on Hacker News.",
+   "points": 210,
+   "discussion": "https://news.ycombinator.com/item?id=50180836"
   },
   {
    "title": "Investing in the public benefit",
@@ -90,13 +93,13 @@
    "via": "Techmeme"
   },
   {
-   "title": "Using Claude to reduce the attack surface of code",
-   "url": "https://www.anthropic.com/research/attack-surface-reduction",
+   "title": "Muse exposes users' personal and business secrets when they share conversations",
+   "url": "https://arstechnica.com/security/2026/10/meta-muse-exposes-users-personal-and-business-secrets-when-they-share-conversations/",
    "source": "Hacker News",
-   "published_at": "2026-10-21T03:36:43Z",
-   "text": "104 points and 71 comments on Hacker News.",
-   "points": 104,
-   "discussion": "https://news.ycombinator.com/item?id=50175779"
+   "published_at": "2026-10-21T00:45:59Z",
+   "text": "288 points and 134 comments on Hacker News.",
+   "points": 288,
+   "discussion": "https://news.ycombinator.com/item?id=50174687"
   },
   {
    "title": "Nvidia launches its OpenShell Reference Architecture, a framework to secure, monitor, and govern AI…",
@@ -107,6 +110,15 @@
    "via": "Techmeme"
   },
   {
+   "title": "Using Claude to reduce the attack surface of code",
+   "url": "https://www.anthropic.com/research/attack-surface-reduction",
+   "source": "Hacker News",
+   "published_at": "2026-10-21T03:36:43Z",
+   "text": "105 points and 71 comments on Hacker News.",
+   "points": 105,
+   "discussion": "https://news.ycombinator.com/item?id=50175779"
+  },
+  {
    "title": "Anthropic update on independent evaluators",
    "url": "https://www.anthropic.com/news/an-update-on-independent-evaluators",
    "source": "Anthropic",
@@ -114,19 +126,11 @@
    "text": "Anthropic announces updates to embedding independent evaluators"
   },
   {
-   "title": "OpenAI says it will make its AI models available on Google Cloud's model garden and Antigravity cod…",
-   "url": "https://www.cnbc.com/2026/10/21/openai-bring-its-ai-models-to-googles-cloud-expands-beyond-microsoft.html",
-   "source": "Jordan Novet / CNBC",
-   "published_at": "2026-10-21T12:16:10Z",
-   "text": "OpenAI says it will make its AI models available on Google Cloud's model garden and Antigravity coding tool in the coming weeks, after launching on AWS in April. OpenAI will make its artificial intelligence models available for developers through Google's cloud, following years of competition between the two companies.",
-   "via": "Techmeme"
-  },
-  {
-   "title": "OpenAI expands ChatGPT ads to 26 additional countries, taking the total to 83 countries, and says t…",
-   "url": "https://www.theinformation.com/briefings/openai-expands-chatgpt-ads-26-countries-says-100-000-advertisers",
-   "source": "Alix Coutures / The Informa…",
-   "published_at": "2026-10-21T13:16:07Z",
-   "text": "OpenAI expands ChatGPT ads to 26 additional countries, taking the total to 83 countries, and says the platform's advertiser base is 100K+, up from 20K in August. OpenAI is expanding ChatGPT ads to 26 more countries as it tries to turn advertising into a bigger source of revenue to help cover its AI costs.",
+   "title": "Anthropic's IPO prospectus: ~$16.3B in H1 2026 revenue, ~20% from two clients and up from $1.1B in…",
+   "url": "https://www.wsj.com/tech/ai/anthropic-revenue-growth-ipo-accaf0f1?st=YKUo1r",
+   "source": "Anissa Gardizy / Wall Stree…",
+   "published_at": "2026-10-20T19:47:39Z",
+   "text": "Anthropic's IPO prospectus: ~$16.3B in H1 2026 revenue, ~20% from two clients and up from $1.1B in H1 2025, and an $80.7B net loss, $72B from accounting charges. In a new draft prospectus viewed by the Journal, the AI giant disclosed an $80.7 billion net loss for the first half of 2026 and a long list of risk factors",
    "via": "Techmeme"
   }
  ],
