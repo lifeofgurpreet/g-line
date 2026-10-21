@@ -1,24 +1,24 @@
 {
  "schema": 1,
- "generated_at": "2026-10-21T21:16:54Z",
+ "generated_at": "2026-10-21T21:48:58Z",
  "items": [
   {
-   "title": "OpenAI says the PHP flaws, found using GPT-5.6 Sol, “are among several significant vulnerabilities”…",
-   "url": "https://openai.com/index/coordinated-disclosure-of-critical-vulnerabilities/",
-   "source": "OpenAI",
-   "published_at": "2026-10-21T14:33:01Z",
-   "text": "OpenAI says the PHP flaws, found using GPT-5.6 Sol, “are among several significant vulnerabilities” it found and expects “similar findings to increase sharply”. - Validate and fix the upstream vulnerability. … - Give affected organizations time to act.",
+   "title": "Anthropic unveils Claude Duet, a proactive agent app on iOS, Android, and the web that works in the…",
+   "url": "https://claude.com/resources/articles/claude-duet",
+   "source": "Claude",
+   "published_at": "2026-10-21T21:02:27Z",
+   "text": "Anthropic unveils Claude Duet, a proactive agent app on iOS, Android, and the web that works in the background, in research preview for US Pro and Max users. A research preview is available by waitlist today, starting with US Pro and Max subscribers. — Join the waitlist … ShareCopy link",
    "via": "Techmeme"
   },
   {
-   "title": "We’re opening a research preview of Claude Duet, a new app where Claude works as a proactive agent.…",
-   "url": "https://x.com/claudeai/status/2112984664256241837",
-   "source": "𝕏 @claudeai",
-   "published_at": "2026-10-21T19:09:35Z",
-   "text": "We’re opening a research preview of Claude Duet, a new app where Claude works as a proactive agent. It comes to you with what needs your attention, completes tasks you ask of it, keeps working when you step away, and checks with you before it acts on your behalf.",
-   "author_name": "Claude",
-   "likes": 23753,
-   "story": "Anthropic unveils Claude Duet, a proactive agent app on iOS, Android, and the web that works in the background, in research preview for US Pro and Max users"
+   "title": "OpenAI models helped researchers—operating as part of our Patch the Planet initiative—discover crit…",
+   "url": "https://x.com/OpenAI/status/2112907856018309586",
+   "source": "𝕏 @OpenAI",
+   "published_at": "2026-10-21T14:04:23Z",
+   "text": "OpenAI models helped researchers—operating as part of our Patch the Planet initiative—discover critical security flaws in PHP, an open-source programming language used to run an estimated 70% of websites. Over the past two months, we led a coalition of maintainers, researchers,…",
+   "author_name": "OpenAI",
+   "likes": 12876,
+   "story": "The PHP Foundation details how it found and fixed the two flaws, and says it had to release patches a day early after the two CVE IDs began circulating online"
   },
   {
    "title": "Claude Code 2.1.306 released",
@@ -28,41 +28,44 @@
    "text": "Fixed claude -p inside cloud sessions reporting \"Not logged in\" when started without the session's environment variables · Fixed an API error being replaced by \"prompt is too long\", and an unneeded compaction, in sessions with many MCP tools"
   },
   {
-   "title": "GPT-Rosalind surfaced a new lead for drug discovery: could restoring cholesterol transport protect…",
-   "url": "https://x.com/OpenAI/status/2112899854569762936",
-   "source": "𝕏 @OpenAI",
-   "published_at": "2026-10-21T13:32:35Z",
-   "text": "GPT-Rosalind surfaced a new lead for drug discovery: could restoring cholesterol transport protect neurons from degeneration? DCTN1 is a gene linked to Perry syndrome, a rare neurodegenerative disorder. In mouse-brain data, disrupting it increased expression of genes involved in…",
-   "author_name": "OpenAI",
-   "likes": 4790,
-   "story": "OpenAI, PerturbAI, and Scripps say thousands of GPT-Rosalind agents analyzed data on millions of mouse brain cells in 32 minutes, a job that takes humans months"
-  },
-  {
-   "title": "Nvidia unveils the DSX POD, a modular containerized version of its Vera Rubin reference architectur…",
-   "url": "https://www.datacenterdynamics.com/en/news/nvidia-launches-dsx-pod-claims-the-vera-rubin-reference-architecture-will-make-ai-data-centers-more-water-and-energy-efficient/",
-   "source": "Charlotte Trueman / Datacen…",
-   "published_at": "2026-10-21T10:21:11Z",
-   "text": "Nvidia unveils the DSX POD, a modular containerized version of its Vera Rubin reference architecture to cut data center deployment from six months to 14 days. Details released at GTC Berlin event, taking place this week — Nvidia has claimed its DSX reference architecture for AI data centers …",
-   "via": "Techmeme"
-  },
-  {
-   "title": "Mistral Large 4",
-   "url": "https://docs.mistral.ai/models/mistral-large-4-0",
-   "source": "Hacker News",
-   "published_at": "2026-10-21T19:20:55Z",
-   "text": "281 points and 71 comments on Hacker News.",
-   "points": 281,
-   "discussion": "https://news.ycombinator.com/item?id=50186129"
-  },
-  {
    "title": "We built ChatGPT’s ad stack to respond to an evolving conversation, while ensuring answers stay ind…",
    "url": "https://x.com/OpenAIDevs/status/2112962753682198969",
    "source": "𝕏 @OpenAIDevs",
    "published_at": "2026-10-21T17:42:32Z",
    "text": "We built ChatGPT’s ad stack to respond to an evolving conversation, while ensuring answers stay independent. Here’s how the LLM orchestrator, retrieval, ranking and auction tools work together.",
    "author_name": "OpenAI Developers",
-   "likes": 629,
+   "likes": 660,
    "story": "OpenAI expands ChatGPT ads to 26 additional countries, taking the total to 83 countries, and says the platform has 100K+ advertisers, up from 20K in late August"
+  },
+  {
+   "title": "PHP's creators disclose a critical memory-management vulnerability, dubbed “PHP2Shell”, that affect…",
+   "url": "https://www.wsj.com/tech/cybersecurity/ai-just-found-a-bug-that-puts-up-to-70-of-the-worlds-websites-at-risk-fd0902ea?st=tBLRBh&reflink=desktopwebshare_permalink",
+   "source": "Robert McMillan / Wall Stre…",
+   "published_at": "2026-10-21T14:08:28Z",
+   "text": "PHP's creators disclose a critical memory-management vulnerability, dubbed “PHP2Shell”, that affects up to 70% of websites, discovered via GPT-5.6 Sol in August. AI tools helped find one of the most severe online bugs ever. Cyber experts are racing to patch it before hackers use AI to exploit it.",
+   "via": "Techmeme"
+  },
+  {
+   "title": "Mistral Large 4",
+   "url": "https://mistral.ai/news/mistral-large-4/",
+   "source": "Hacker News",
+   "published_at": "2026-10-21T19:20:55Z",
+   "text": "310 points and 90 comments on Hacker News.",
+   "points": 310,
+   "discussion": "https://news.ycombinator.com/item?id=50186129"
+  },
+  {
+   "title": "New on our Science Blog: designing protein binders against scorpion neurotoxins. Scorpions sting ab…",
+   "url": "https://x.com/AnthropicAI/status/2112579251555721573",
+   "source": "𝕏 @AnthropicAI",
+   "published_at": "2026-10-20T16:18:38Z",
+   "text": "New on our Science Blog: designing protein binders against scorpion neurotoxins. Scorpions sting about 1.2m people every year, and antivenoms are often costly or in short supply. Claude has made an early step toward finding new treatments.",
+   "author_name": "Anthropic",
+   "likes": 7070,
+   "story": "Anthropic and Citrini Research use an internal Claude model to autonomously generate protein minibinders against five scorpion neurotoxins, testing 211 designs",
+   "links": [
+    "https://www.anthropic.com/research/claude-scorpion-toxin-binder-design"
+   ]
   },
   {
    "title": "Developing Enterprise Frontier Safeguards with our customers",
@@ -79,34 +82,12 @@
    "text": "My latest vibe coded game experiment is a Command & Conquer style RTS (Real Time Strategy) game called Battle Drones ( play it here ). Unlike my previous experiments , this one is actually fun to play . I'm somewhat embarrassed to admit that I got there by telling Claude to \"Make it a LOT more fun\". It also supports multiplayer between nearby devices using audio to synchronize game state! Here's what I've built so far, and some of the things I learned along the way."
   },
   {
-   "title": "OpenAI says it will make its AI models available on Google Cloud's model garden and Antigravity cod…",
-   "url": "https://www.cnbc.com/2026/10/21/openai-bring-its-ai-models-to-googles-cloud-expands-beyond-microsoft.html",
-   "source": "Jordan Novet / CNBC",
-   "published_at": "2026-10-21T12:16:10Z",
-   "text": "OpenAI says it will make its AI models available on Google Cloud's model garden and Antigravity coding tool in the coming weeks, after launching on AWS in April. OpenAI will make its artificial intelligence models available for developers through Google's cloud, following years of competition between the two companies.",
+   "title": "Nvidia unveils the DSX POD, a modular containerized version of its Vera Rubin reference architectur…",
+   "url": "https://www.datacenterdynamics.com/en/news/nvidia-launches-dsx-pod-claims-the-vera-rubin-reference-architecture-will-make-ai-data-centers-more-water-and-energy-efficient/",
+   "source": "Charlotte Trueman / Datacen…",
+   "published_at": "2026-10-21T10:21:11Z",
+   "text": "Nvidia unveils the DSX POD, a modular containerized version of its Vera Rubin reference architecture to cut data center deployment from six months to 14 days. Details released at GTC Berlin event, taking place this week — Nvidia has claimed its DSX reference architecture for AI data centers …",
    "via": "Techmeme"
-  },
-  {
-   "title": "New on our Science Blog: designing protein binders against scorpion neurotoxins. Scorpions sting ab…",
-   "url": "https://x.com/AnthropicAI/status/2112579251555721573",
-   "source": "𝕏 @AnthropicAI",
-   "published_at": "2026-10-20T16:18:38Z",
-   "text": "New on our Science Blog: designing protein binders against scorpion neurotoxins. Scorpions sting about 1.2m people every year, and antivenoms are often costly or in short supply. Claude has made an early step toward finding new treatments.",
-   "author_name": "Anthropic",
-   "likes": 7053,
-   "story": "Anthropic and Citrini Research use an internal Claude model to autonomously generate protein minibinders against five scorpion neurotoxins, testing 211 designs",
-   "links": [
-    "https://www.anthropic.com/research/claude-scorpion-toxin-binder-design"
-   ]
-  },
-  {
-   "title": "Claude Duet",
-   "url": "https://claude.com/product/claude-duet",
-   "source": "Hacker News",
-   "published_at": "2026-10-21T19:14:01Z",
-   "text": "168 points and 154 comments on Hacker News.",
-   "points": 168,
-   "discussion": "https://news.ycombinator.com/item?id=50186037"
   },
   {
    "title": "Thank you for this, @_NathanCalvin. I appreciate and am a fan of the investigative work you’ve done…",
@@ -115,15 +96,37 @@
    "published_at": "2026-10-21T02:26:30Z",
    "text": "Thank you for this, @_NathanCalvin. I appreciate and am a fan of the investigative work you’ve done on behalf of AI safety and believe your comments are coming from a constructive, honest place, and that it benefits the public to have people whose job is to scrutinize the actions…",
    "author_name": "Dario Amodei",
-   "likes": 3735,
+   "likes": 3758,
    "story": "Dario Amodei says Anthropic's “race to the top” makes AI safer, lists nine safety decisions with “substantial costs”, and admits to mishandling a draft AI bill"
   },
   {
-   "title": "OpenAI says two agents, one GPT-6.1 Sol and one GPT-6 Astra, weakened misalignment monitoring while…",
-   "url": "https://alignment.openai.com/misalignment-reports/suppressing-misalignment-monitoring-alerts-and-disabling-misalignment-monitoring/",
-   "source": "OpenAI",
-   "published_at": "2026-10-21T03:41:00Z",
-   "text": "OpenAI says two agents, one GPT-6.1 Sol and one GPT-6 Astra, weakened misalignment monitoring while making requested changes during two internal coding tasks. GPT-6.1 Sol and GPT-6 Astra · Internal deployments — Discovered: Oct 3, 2026 (Sol); Oct 6, 2026 (Astra) — Summary",
+   "title": "Claude Duet",
+   "url": "https://claude.com/product/claude-duet",
+   "source": "Hacker News",
+   "published_at": "2026-10-21T19:14:01Z",
+   "text": "200 points and 174 comments on Hacker News.",
+   "points": 200,
+   "discussion": "https://news.ycombinator.com/item?id=50186037"
+  },
+  {
+   "title": "GPTs will also now be available in Antigravity.",
+   "url": "https://x.com/AndrewCurran_/status/2112907155787411582",
+   "source": "𝕏 @AndrewCurran_",
+   "published_at": "2026-10-21T14:01:36Z",
+   "text": "GPTs will also now be available in Antigravity.",
+   "author_name": "Andrew Curran",
+   "likes": 335,
+   "story": "OpenAI says it will make its AI models available on Google Cloud's model garden and Antigravity coding tool in the coming weeks, after launching on AWS in April",
+   "links": [
+    "https://openai.com/index/openai-models-google-cloud/"
+   ]
+  },
+  {
+   "title": "Recursive releases Flint, an open-weight, 40B-parameter coding model developed with its Eureka Mach…",
+   "url": "https://www.wired.com/story/recursive-self-improvement-flint-latest-model-scary-good/",
+   "source": "Will Knight / Wired",
+   "published_at": "2026-10-21T16:36:17Z",
+   "text": "Recursive releases Flint, an open-weight, 40B-parameter coding model developed with its Eureka Machine AI system, which automated most of the development. Recursive makes the case that the benefits of using AI to build AI outweigh the risks. — For the past few days I've been testing …",
    "via": "Techmeme"
   },
   {
@@ -131,8 +134,8 @@
    "url": "https://canarytokens.org/",
    "source": "Hacker News",
    "published_at": "2026-10-21T18:45:04Z",
-   "text": "72 points and 13 comments on Hacker News.",
-   "points": 72,
+   "text": "86 points and 18 comments on Hacker News.",
+   "points": 86,
    "discussion": "https://news.ycombinator.com/item?id=50185630"
   }
  ],
