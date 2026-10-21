@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-21T20:44:08Z",
+ "generated_at": "2026-10-21T21:16:54Z",
  "items": [
   {
    "title": "OpenAI says the PHP flaws, found using GPT-5.6 Sol, “are among several significant vulnerabilities”…",
@@ -11,14 +11,14 @@
    "via": "Techmeme"
   },
   {
-   "title": "GPT-Rosalind surfaced a new lead for drug discovery: could restoring cholesterol transport protect…",
-   "url": "https://x.com/OpenAI/status/2112899854569762936",
-   "source": "𝕏 @OpenAI",
-   "published_at": "2026-10-21T13:32:35Z",
-   "text": "GPT-Rosalind surfaced a new lead for drug discovery: could restoring cholesterol transport protect neurons from degeneration? DCTN1 is a gene linked to Perry syndrome, a rare neurodegenerative disorder. In mouse-brain data, disrupting it increased expression of genes involved in…",
-   "author_name": "OpenAI",
-   "likes": 4631,
-   "story": "OpenAI, PerturbAI, and Scripps say thousands of GPT-Rosalind agents analyzed data on millions of mouse brain cells in 32 minutes, a job that takes humans months"
+   "title": "We’re opening a research preview of Claude Duet, a new app where Claude works as a proactive agent.…",
+   "url": "https://x.com/claudeai/status/2112984664256241837",
+   "source": "𝕏 @claudeai",
+   "published_at": "2026-10-21T19:09:35Z",
+   "text": "We’re opening a research preview of Claude Duet, a new app where Claude works as a proactive agent. It comes to you with what needs your attention, completes tasks you ask of it, keeps working when you step away, and checks with you before it acts on your behalf.",
+   "author_name": "Claude",
+   "likes": 23753,
+   "story": "Anthropic unveils Claude Duet, a proactive agent app on iOS, Android, and the web that works in the background, in research preview for US Pro and Max users"
   },
   {
    "title": "Claude Code 2.1.306 released",
@@ -28,14 +28,14 @@
    "text": "Fixed claude -p inside cloud sessions reporting \"Not logged in\" when started without the session's environment variables · Fixed an API error being replaced by \"prompt is too long\", and an unneeded compaction, in sessions with many MCP tools"
   },
   {
-   "title": "The NSA is telling American companies to take production systems offline. The AI-era of cybersecuri…",
-   "url": "https://x.com/DavidVorick/status/2112930859540246575",
-   "source": "𝕏 @DavidVorick",
-   "published_at": "2026-10-21T15:35:47Z",
-   "text": "The NSA is telling American companies to take production systems offline. The AI-era of cybersecurity has fully arrived.",
-   "author_name": "David Vorick",
-   "likes": 8950,
-   "story": "PHP releases security fixes for two critical unauthenticated RCE vulnerabilities, affecting all web request-serving installations, and urges PHP users to update"
+   "title": "GPT-Rosalind surfaced a new lead for drug discovery: could restoring cholesterol transport protect…",
+   "url": "https://x.com/OpenAI/status/2112899854569762936",
+   "source": "𝕏 @OpenAI",
+   "published_at": "2026-10-21T13:32:35Z",
+   "text": "GPT-Rosalind surfaced a new lead for drug discovery: could restoring cholesterol transport protect neurons from degeneration? DCTN1 is a gene linked to Perry syndrome, a rare neurodegenerative disorder. In mouse-brain data, disrupting it increased expression of genes involved in…",
+   "author_name": "OpenAI",
+   "likes": 4790,
+   "story": "OpenAI, PerturbAI, and Scripps say thousands of GPT-Rosalind agents analyzed data on millions of mouse brain cells in 32 minutes, a job that takes humans months"
   },
   {
    "title": "Nvidia unveils the DSX POD, a modular containerized version of its Vera Rubin reference architectur…",
@@ -50,8 +50,8 @@
    "url": "https://docs.mistral.ai/models/mistral-large-4-0",
    "source": "Hacker News",
    "published_at": "2026-10-21T19:20:55Z",
-   "text": "221 points and 54 comments on Hacker News.",
-   "points": 221,
+   "text": "281 points and 71 comments on Hacker News.",
+   "points": 281,
    "discussion": "https://news.ycombinator.com/item?id=50186129"
   },
   {
@@ -61,7 +61,7 @@
    "published_at": "2026-10-21T17:42:32Z",
    "text": "We built ChatGPT’s ad stack to respond to an evolving conversation, while ensuring answers stay independent. Here’s how the LLM orchestrator, retrieval, ranking and auction tools work together.",
    "author_name": "OpenAI Developers",
-   "likes": 589,
+   "likes": 629,
    "story": "OpenAI expands ChatGPT ads to 26 additional countries, taking the total to 83 countries, and says the platform has 100K+ advertisers, up from 20K in late August"
   },
   {
@@ -93,7 +93,7 @@
    "published_at": "2026-10-20T16:18:38Z",
    "text": "New on our Science Blog: designing protein binders against scorpion neurotoxins. Scorpions sting about 1.2m people every year, and antivenoms are often costly or in short supply. Claude has made an early step toward finding new treatments.",
    "author_name": "Anthropic",
-   "likes": 7041,
+   "likes": 7053,
    "story": "Anthropic and Citrini Research use an internal Claude model to autonomously generate protein minibinders against five scorpion neurotoxins, testing 211 designs",
    "links": [
     "https://www.anthropic.com/research/claude-scorpion-toxin-binder-design"
@@ -104,8 +104,8 @@
    "url": "https://claude.com/product/claude-duet",
    "source": "Hacker News",
    "published_at": "2026-10-21T19:14:01Z",
-   "text": "129 points and 123 comments on Hacker News.",
-   "points": 129,
+   "text": "168 points and 154 comments on Hacker News.",
+   "points": 168,
    "discussion": "https://news.ycombinator.com/item?id=50186037"
   },
   {
@@ -115,15 +115,15 @@
    "published_at": "2026-10-21T02:26:30Z",
    "text": "Thank you for this, @_NathanCalvin. I appreciate and am a fan of the investigative work you’ve done on behalf of AI safety and believe your comments are coming from a constructive, honest place, and that it benefits the public to have people whose job is to scrutinize the actions…",
    "author_name": "Dario Amodei",
-   "likes": 3719,
+   "likes": 3735,
    "story": "Dario Amodei says Anthropic's “race to the top” makes AI safer, lists nine safety decisions with “substantial costs”, and admits to mishandling a draft AI bill"
   },
   {
-   "title": "Recursive releases Flint, an open-weight, 40B-parameter coding model developed with its Eureka Mach…",
-   "url": "https://www.wired.com/story/recursive-self-improvement-flint-latest-model-scary-good/",
-   "source": "Will Knight / Wired",
-   "published_at": "2026-10-21T16:36:17Z",
-   "text": "Recursive releases Flint, an open-weight, 40B-parameter coding model developed with its Eureka Machine AI system, which automated most of the development. Recursive makes the case that the benefits of using AI to build AI outweigh the risks. — For the past few days I've been testing …",
+   "title": "OpenAI says two agents, one GPT-6.1 Sol and one GPT-6 Astra, weakened misalignment monitoring while…",
+   "url": "https://alignment.openai.com/misalignment-reports/suppressing-misalignment-monitoring-alerts-and-disabling-misalignment-monitoring/",
+   "source": "OpenAI",
+   "published_at": "2026-10-21T03:41:00Z",
+   "text": "OpenAI says two agents, one GPT-6.1 Sol and one GPT-6 Astra, weakened misalignment monitoring while making requested changes during two internal coding tasks. GPT-6.1 Sol and GPT-6 Astra · Internal deployments — Discovered: Oct 3, 2026 (Sol); Oct 6, 2026 (Astra) — Summary",
    "via": "Techmeme"
   },
   {
@@ -131,8 +131,8 @@
    "url": "https://canarytokens.org/",
    "source": "Hacker News",
    "published_at": "2026-10-21T18:45:04Z",
-   "text": "65 points and 11 comments on Hacker News.",
-   "points": 65,
+   "text": "72 points and 13 comments on Hacker News.",
+   "points": 72,
    "discussion": "https://news.ycombinator.com/item?id=50185630"
   }
  ],
