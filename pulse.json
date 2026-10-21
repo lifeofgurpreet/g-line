@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-21T17:31:12Z",
+ "generated_at": "2026-10-21T18:03:13Z",
  "items": [
   {
    "title": "OpenAI says the PHP flaws, found using GPT-5.6 Sol, “are among several significant vulnerabilities”…",
@@ -17,7 +17,7 @@
    "published_at": "2026-10-21T02:26:30Z",
    "text": "Thank you for this, @_NathanCalvin. I appreciate and am a fan of the investigative work you’ve done on behalf of AI safety and believe your comments are coming from a constructive, honest place, and that it benefits the public to have people whose job is to scrutinize the actions…",
    "author_name": "Dario Amodei",
-   "likes": 3586,
+   "likes": 3620,
    "story": "Dario Amodei says Anthropic's “race to the top” makes AI safer, cites nine safety decisions with “substantial costs”, and admits mishandling a draft AI bill"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-10-20T16:18:38Z",
    "text": "New on our Science Blog: designing protein binders against scorpion neurotoxins. Scorpions sting about 1.2m people every year, and antivenoms are often costly or in short supply. Claude has made an early step toward finding new treatments.",
    "author_name": "Anthropic",
-   "likes": 6880,
+   "likes": 6924,
    "story": "Anthropic and Citrini Research use an internal Claude model to autonomously generate protein minibinders against five scorpion neurotoxins, testing 211 designs",
    "links": [
     "https://www.anthropic.com/research/claude-scorpion-toxin-binder-design"
@@ -53,8 +53,8 @@
    "url": "https://www.wiz.io/blog/php2shell-php-rce",
    "source": "Hacker News",
    "published_at": "2026-10-21T13:43:19Z",
-   "text": "384 points and 142 comments on Hacker News.",
-   "points": 384,
+   "text": "394 points and 147 comments on Hacker News.",
+   "points": 394,
    "discussion": "https://news.ycombinator.com/item?id=50180836"
   },
   {
@@ -64,7 +64,7 @@
    "published_at": "2026-10-21T14:01:36Z",
    "text": "GPTs will also now be available in Antigravity.",
    "author_name": "Andrew Curran",
-   "likes": 279,
+   "likes": 294,
    "story": "OpenAI says it will make its AI models available on Google Cloud's model garden and Antigravity coding tool in the coming weeks, after launching on AWS in April",
    "links": [
     "https://openai.com/index/openai-models-google-cloud/"
@@ -97,8 +97,8 @@
    "url": "https://openai.com/index/scaling-ai-research-for-complex-biological-data/",
    "source": "Hacker News",
    "published_at": "2026-10-21T13:37:00Z",
-   "text": "65 points and 21 comments on Hacker News.",
-   "points": 65,
+   "text": "78 points and 27 comments on Hacker News.",
+   "points": 78,
    "discussion": "https://news.ycombinator.com/item?id=50180752"
   },
   {
@@ -110,15 +110,6 @@
    "via": "Techmeme"
   },
   {
-   "title": "Muse exposes users' personal and business secrets when they share conversations",
-   "url": "https://arstechnica.com/security/2026/10/meta-muse-exposes-users-personal-and-business-secrets-when-they-share-conversations/",
-   "source": "Hacker News",
-   "published_at": "2026-10-21T00:45:59Z",
-   "text": "327 points and 146 comments on Hacker News.",
-   "points": 327,
-   "discussion": "https://news.ycombinator.com/item?id=50174687"
-  },
-  {
    "title": "Investing in the public benefit",
    "url": "https://www.anthropic.com/news/public-benefit-fund",
    "source": "Anthropic",
@@ -126,11 +117,19 @@
    "text": "We’re committing a portion of Anthropic’s shares to the Anthropic Public Benefit Fund, a new entity with a structure that increases the stake as the company grows."
   },
   {
-   "title": "Anthropic's IPO prospectus: ~$16.3B in H1 2026 revenue, ~20% from two clients and up from $1.1B in…",
-   "url": "https://www.wsj.com/tech/ai/anthropic-revenue-growth-ipo-accaf0f1?st=YKUo1r",
-   "source": "Anissa Gardizy / Wall Stree…",
-   "published_at": "2026-10-20T19:47:39Z",
-   "text": "Anthropic's IPO prospectus: ~$16.3B in H1 2026 revenue, ~20% from two clients and up from $1.1B in H1 2025, and an $80.7B net loss, $72B from accounting charges. In a new draft prospectus viewed by the Journal, the AI giant disclosed an $80.7 billion net loss for the first half of 2026 and a long list of risk factors",
+   "title": "Flapping Airplanes, which is working on methods to train AI models on less data and compute and mak…",
+   "url": "https://www.bloomberg.com/news/articles/2026-10-21/ai-research-startup-flapping-airplanes-valued-at-6-billion-in-round?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc5MjYwMjEzMywiZXhwIjoxNzkzMjA2OTMzLCJhcnRpY2xlSWQiOiJUTjlPSzFLSVVQU1UwMCIsImJjb25uZWN0SWQiOiIyMjNDRDM2NDg0QzY0OTc3QjY5ODE0Rjc1MTYxNDRGNyJ9.2ECQs48uRgaUOE9dkbaIGZ556qBFOPomk4VxMDMXvHE",
+   "source": "Rachel Metz / Bloomberg",
+   "published_at": "2026-10-21T17:46:08Z",
+   "text": "Flapping Airplanes, which is working on methods to train AI models on less data and compute and make the chips more efficient, raised $1B at a $6B valuation. Flapping Airplanes, a year-old artificial intelligence startup, has raised $1 billion in funding at a $6 billion valuation …",
+   "via": "Techmeme"
+  },
+  {
+   "title": "Stockholm-based legal AI startup Legora raised a $550M Series E at an $8.8B post-money valuation le…",
+   "url": "https://www.cityam.com/legora-raises-550-in-funding-to-lead-global-expansion/",
+   "source": "Rosie Harris-Davison / City…",
+   "published_at": "2026-10-21T13:46:27Z",
+   "text": "Stockholm-based legal AI startup Legora raised a $550M Series E at an $8.8B post-money valuation led by Atreides, up from $5.55B after a $550M Series D in March. Legal tech firm Legora has raised $550m (£410m) in Series E funding as it expands its footprint in the US, Europe, and the Asia-Pacific region.",
    "via": "Techmeme"
   }
  ],
