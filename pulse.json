@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-21T13:12:25Z",
+ "generated_at": "2026-10-21T13:44:29Z",
  "items": [
   {
    "title": "Nvidia unveils the DSX POD, a modular containerized version of its Vera Rubin reference architectur…",
@@ -17,7 +17,7 @@
    "published_at": "2026-10-21T02:26:30Z",
    "text": "Thank you for this, @_NathanCalvin. I appreciate and am a fan of the investigative work you’ve done on behalf of AI safety and believe your comments are coming from a constructive, honest place, and that it benefits the public to have people whose job is to scrutinize the actions…",
    "author_name": "Dario Amodei",
-   "likes": 3211,
+   "likes": 3268,
    "story": "Dario Amodei says Anthropic's “race to the top” makes AI safer, cites nine safety decisions with “substantial costs”, and admits mishandling a draft AI bill"
   },
   {
@@ -28,17 +28,14 @@
    "text": "Fixed claude -p inside cloud sessions reporting \"Not logged in\" when started without the session's environment variables · Fixed an API error being replaced by \"prompt is too long\", and an unneeded compaction, in sessions with many MCP tools"
   },
   {
-   "title": "New on our Science Blog: designing protein binders against scorpion neurotoxins. Scorpions sting ab…",
-   "url": "https://x.com/AnthropicAI/status/2112579251555721573",
-   "source": "𝕏 @AnthropicAI",
-   "published_at": "2026-10-20T16:18:38Z",
-   "text": "New on our Science Blog: designing protein binders against scorpion neurotoxins. Scorpions sting about 1.2m people every year, and antivenoms are often costly or in short supply. Claude has made an early step toward finding new treatments.",
-   "author_name": "Anthropic",
-   "likes": 6481,
-   "story": "Anthropic and Citrini Research use an internal Claude model to autonomously generate protein minibinders against five scorpion neurotoxins, testing 211 designs",
-   "links": [
-    "https://www.anthropic.com/research/claude-scorpion-toxin-binder-design"
-   ]
+   "title": "We’ve acquired Orchestra Bio, a platform that helps biopharma teams coordinate the complex process…",
+   "url": "https://x.com/OpenAI/status/2112607347688583586",
+   "source": "𝕏 @OpenAI",
+   "published_at": "2026-10-20T18:10:16Z",
+   "text": "We’ve acquired Orchestra Bio, a platform that helps biopharma teams coordinate the complex process of drug development. Together, we’ll build on Rosalind, our AI models and tools for life sciences research, to streamline those operations and help new treatments reach patients…",
+   "author_name": "OpenAI",
+   "likes": 6650,
+   "story": "OpenAI acquires Orchestra Bio, which builds AI agents to help manage drug development, and plans to integrate the tech into Rosalind, its life sciences AI suite"
   },
   {
    "title": "Anthropic's IPO prospectus: ~$16.3B in H1 2026 revenue, ~20% from two clients and up from $1.1B in…",
@@ -49,23 +46,26 @@
    "via": "Techmeme"
   },
   {
-   "title": "Muse exposes users' personal and business secrets when they share conversations",
-   "url": "https://arstechnica.com/security/2026/10/meta-muse-exposes-users-personal-and-business-secrets-when-they-share-conversations/",
+   "title": "DeepInfer: High-performance inference framework for DeepSeek models",
+   "url": "https://github.com/deepseek-ai/DeepInfer",
    "source": "Hacker News",
-   "published_at": "2026-10-21T00:45:59Z",
-   "text": "236 points and 109 comments on Hacker News.",
-   "points": 236,
-   "discussion": "https://news.ycombinator.com/item?id=50174687"
+   "published_at": "2026-10-20T09:08:54Z",
+   "text": "2273 points and 872 comments on Hacker News.",
+   "points": 2273,
+   "discussion": "https://news.ycombinator.com/item?id=50163277"
   },
   {
-   "title": "We’ve acquired Orchestra Bio, a platform that helps biopharma teams coordinate the complex process…",
-   "url": "https://x.com/OpenAI/status/2112607347688583586",
-   "source": "𝕏 @OpenAI",
-   "published_at": "2026-10-20T18:10:16Z",
-   "text": "We’ve acquired Orchestra Bio, a platform that helps biopharma teams coordinate the complex process of drug development. Together, we’ll build on Rosalind, our AI models and tools for life sciences research, to streamline those operations and help new treatments reach patients…",
-   "author_name": "OpenAI",
-   "likes": 6613,
-   "story": "OpenAI acquires Orchestra Bio, which builds AI agents to help manage drug development, and plans to integrate the tech into Rosalind, its life sciences AI suite"
+   "title": "New on our Science Blog: designing protein binders against scorpion neurotoxins. Scorpions sting ab…",
+   "url": "https://x.com/AnthropicAI/status/2112579251555721573",
+   "source": "𝕏 @AnthropicAI",
+   "published_at": "2026-10-20T16:18:38Z",
+   "text": "New on our Science Blog: designing protein binders against scorpion neurotoxins. Scorpions sting about 1.2m people every year, and antivenoms are often costly or in short supply. Claude has made an early step toward finding new treatments.",
+   "author_name": "Anthropic",
+   "likes": 6534,
+   "story": "Anthropic and Citrini Research use an internal Claude model to autonomously generate protein minibinders against five scorpion neurotoxins, testing 211 designs",
+   "links": [
+    "https://www.anthropic.com/research/claude-scorpion-toxin-binder-design"
+   ]
   },
   {
    "title": "Investing in the public benefit",
@@ -90,13 +90,13 @@
    "via": "Techmeme"
   },
   {
-   "title": "Using Claude to reduce the attack surface of code",
-   "url": "https://www.anthropic.com/research/attack-surface-reduction",
+   "title": "Muse exposes users' personal and business secrets when they share conversations",
+   "url": "https://arstechnica.com/security/2026/10/meta-muse-exposes-users-personal-and-business-secrets-when-they-share-conversations/",
    "source": "Hacker News",
-   "published_at": "2026-10-21T03:36:43Z",
-   "text": "80 points and 47 comments on Hacker News.",
-   "points": 80,
-   "discussion": "https://news.ycombinator.com/item?id=50175779"
+   "published_at": "2026-10-21T00:45:59Z",
+   "text": "254 points and 111 comments on Hacker News.",
+   "points": 254,
+   "discussion": "https://news.ycombinator.com/item?id=50174687"
   },
   {
    "title": "OpenAI says it will make its AI models available on Google Cloud's model garden and Antigravity cod…",
@@ -105,6 +105,15 @@
    "published_at": "2026-10-21T12:16:10Z",
    "text": "OpenAI says it will make its AI models available on Google Cloud's model garden and Antigravity coding tool in the coming weeks, after launching on AWS in April. OpenAI will make its artificial intelligence models available for developers through Google's cloud, following years of competition between the two companies.",
    "via": "Techmeme"
+  },
+  {
+   "title": "Using Claude to reduce the attack surface of code",
+   "url": "https://www.anthropic.com/research/attack-surface-reduction",
+   "source": "Hacker News",
+   "published_at": "2026-10-21T03:36:43Z",
+   "text": "90 points and 54 comments on Hacker News.",
+   "points": 90,
+   "discussion": "https://news.ycombinator.com/item?id=50175779"
   },
   {
    "title": "Anthropic update on independent evaluators",
@@ -119,14 +128,6 @@
    "source": "Abner Li / 9to5Google",
    "published_at": "2026-10-20T22:31:17Z",
    "text": "Google says it is rolling out Personal Intelligence for Gemini on Android Auto now, and to cars with Google built-in in the coming months, as an opt-in feature. Google is beginning to roll out Personal Intelligence for Gemini on Android Auto and Android Automotive (cars with Google built-in).",
-   "via": "Techmeme"
-  },
-  {
-   "title": "Google, Temasek, and Bain: online spending in SE Asia to rise ~17% YoY to $368B in 2026 despite eco…",
-   "url": "https://www.bloomberg.com/news/articles/2026-10-21/ai-to-spur-se-asian-digital-economy-to-368-billion-study-shows",
-   "source": "Gabrielle Ng / Bloomberg",
-   "published_at": "2026-10-21T06:06:27Z",
-   "text": "Google, Temasek, and Bain: online spending in SE Asia to rise ~17% YoY to $368B in 2026 despite economic headwinds, as businesses harness AI to spur spending",
    "via": "Techmeme"
   }
  ],
