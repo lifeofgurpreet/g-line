@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-21T22:53:49Z",
+ "generated_at": "2026-10-21T23:27:03Z",
  "items": [
   {
    "title": "Anthropic unveils Claude Duet, a proactive agent app on iOS, Android, and the web that works in the…",
@@ -17,7 +17,7 @@
    "published_at": "2026-10-21T14:04:23Z",
    "text": "OpenAI models helped researchers—operating as part of our Patch the Planet initiative—discover critical security flaws in PHP, an open-source programming language used to run an estimated 70% of websites. Over the past two months, we led a coalition of maintainers, researchers,…",
    "author_name": "OpenAI",
-   "likes": 13110,
+   "likes": 13206,
    "story": "The PHP Foundation details how it found and fixed the two flaws, and says it had to release patches a day early after the two CVE IDs began circulating online"
   },
   {
@@ -28,14 +28,14 @@
    "text": "Added /claude-api api-version to move Claude API code to API version 2026-10-21 · Added the claude_code.safety_event OpenTelemetry event for each tool call a permission rule, auto mode, a safety check, a hook or the sandbox stopped, prompted or sent back · Fixed requests failing with a model-not-found error when CLAUDE_CODE_DISABLE_1M_CONTEXT is set and the model is an alias with the [1m] suffix, such as opus[1m] · Fixed the prompt-caching-scope beta header being sent behind custom ANTHROPIC_BASE_URL gateways and on Foundry, where it has no effect"
   },
   {
-   "title": "We built ChatGPT’s ad stack to respond to an evolving conversation, while ensuring answers stay ind…",
-   "url": "https://x.com/OpenAIDevs/status/2112962753682198969",
-   "source": "𝕏 @OpenAIDevs",
-   "published_at": "2026-10-21T17:42:32Z",
-   "text": "We built ChatGPT’s ad stack to respond to an evolving conversation, while ensuring answers stay independent. Here’s how the LLM orchestrator, retrieval, ranking and auction tools work together.",
-   "author_name": "OpenAI Developers",
-   "likes": 706,
-   "story": "OpenAI expands ChatGPT ads to 26 additional countries, taking the total to 83 countries, and says the platform has 100K+ advertisers, up from 20K in late August"
+   "title": "Thank you for this, @_NathanCalvin. I appreciate and am a fan of the investigative work you’ve done…",
+   "url": "https://x.com/DarioAmodei/status/2112732230124818891",
+   "source": "𝕏 @DarioAmodei",
+   "published_at": "2026-10-21T02:26:30Z",
+   "text": "Thank you for this, @_NathanCalvin. I appreciate and am a fan of the investigative work you’ve done on behalf of AI safety and believe your comments are coming from a constructive, honest place, and that it benefits the public to have people whose job is to scrutinize the actions…",
+   "author_name": "Dario Amodei",
+   "likes": 3803,
+   "story": "Dario Amodei says Anthropic's “race to the top” makes AI safer, lists nine safety decisions with “substantial costs”, and admits to mishandling a draft AI bill"
   },
   {
    "title": "Mark Zuckerberg says Muse has drawn 10M+ users since its launch and 25%+ of users are making purcha…",
@@ -50,19 +50,19 @@
    "url": "https://claude.com/product/claude-duet",
    "source": "Hacker News",
    "published_at": "2026-10-21T19:14:01Z",
-   "text": "263 points and 217 comments on Hacker News.",
-   "points": 263,
+   "text": "279 points and 231 comments on Hacker News.",
+   "points": 279,
    "discussion": "https://news.ycombinator.com/item?id=50186037"
   },
   {
-   "title": "Thank you for this, @_NathanCalvin. I appreciate and am a fan of the investigative work you’ve done…",
-   "url": "https://x.com/DarioAmodei/status/2112732230124818891",
-   "source": "𝕏 @DarioAmodei",
-   "published_at": "2026-10-21T02:26:30Z",
-   "text": "Thank you for this, @_NathanCalvin. I appreciate and am a fan of the investigative work you’ve done on behalf of AI safety and believe your comments are coming from a constructive, honest place, and that it benefits the public to have people whose job is to scrutinize the actions…",
-   "author_name": "Dario Amodei",
-   "likes": 3796,
-   "story": "Dario Amodei says Anthropic's “race to the top” makes AI safer, lists nine safety decisions with “substantial costs”, and admits to mishandling a draft AI bill"
+   "title": "We built ChatGPT’s ad stack to respond to an evolving conversation, while ensuring answers stay ind…",
+   "url": "https://x.com/OpenAIDevs/status/2112962753682198969",
+   "source": "𝕏 @OpenAIDevs",
+   "published_at": "2026-10-21T17:42:32Z",
+   "text": "We built ChatGPT’s ad stack to respond to an evolving conversation, while ensuring answers stay independent. Here’s how the LLM orchestrator, retrieval, ranking and auction tools work together.",
+   "author_name": "OpenAI Developers",
+   "likes": 713,
+   "story": "OpenAI expands ChatGPT ads to 26 additional countries, taking the total to 83 countries, and says the platform has 100K+ advertisers, up from 20K in late August"
   },
   {
    "title": "Developing Enterprise Frontier Safeguards with our customers",
@@ -93,7 +93,7 @@
    "published_at": "2026-10-21T14:01:36Z",
    "text": "GPTs will also now be available in Antigravity.",
    "author_name": "Andrew Curran",
-   "likes": 341,
+   "likes": 344,
    "story": "OpenAI says it will make its AI models available on Google Cloud's model garden and Antigravity coding tool in the coming weeks, after launching on AWS in April",
    "links": [
     "https://openai.com/index/openai-models-google-cloud/"
@@ -104,8 +104,8 @@
    "url": "https://canarytokens.org/",
    "source": "Hacker News",
    "published_at": "2026-10-21T18:45:04Z",
-   "text": "104 points and 20 comments on Hacker News.",
-   "points": 104,
+   "text": "116 points and 21 comments on Hacker News.",
+   "points": 116,
    "discussion": "https://news.ycombinator.com/item?id=50185630"
   },
   {
@@ -121,8 +121,8 @@
    "url": "https://openai.com/index/coordinated-disclosure-of-critical-vulnerabilities/",
    "source": "Hacker News",
    "published_at": "2026-10-21T14:03:43Z",
-   "text": "217 points and 139 comments on Hacker News.",
-   "points": 217,
+   "text": "220 points and 142 comments on Hacker News.",
+   "points": 220,
    "discussion": "https://news.ycombinator.com/item?id=50181175"
   },
   {
