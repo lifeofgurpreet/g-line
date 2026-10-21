@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-21T01:52:52Z",
+ "generated_at": "2026-10-21T02:24:32Z",
  "items": [
   {
    "title": "Anthropic's IPO prospectus: H1 2026 revenue of $16.3B, ~20% from two customers, vs. $1.1B in H1 202…",
@@ -17,7 +17,7 @@
    "published_at": "2026-10-20T09:30:19Z",
    "text": "🚀 Introducing DeepInfer, our in-house inference framework, now fully open source! Powering DeepSeek-V4.1-Flash at scale with high throughput and low latency. We’re sharing our production stack to help the community lower compute costs, reduce energy use, and make AI more…",
    "author_name": "DeepSeek",
-   "likes": 33388,
+   "likes": 33729,
    "story": "DeepSeek open-sources DeepInfer, its high-performance inference framework that powers its production services, starting with support for DeepSeek-V4.1-Flash"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-10-20T18:10:16Z",
    "text": "We’ve acquired Orchestra Bio, a platform that helps biopharma teams coordinate the complex process of drug development. Together, we’ll build on Rosalind, our AI models and tools for life sciences research, to streamline those operations and help new treatments reach patients…",
    "author_name": "OpenAI",
-   "likes": 5376,
+   "likes": 5465,
    "story": "OpenAI acquires Orchestra Bio, which builds AI agents for managing drug development, and plans to integrate its tech into OpenAI life sciences suite Rosalind"
   },
   {
@@ -50,8 +50,8 @@
    "url": "https://www.anthropic.com/research/claude-scorpion-toxin-binder-design",
    "source": "Hacker News",
    "published_at": "2026-10-20T17:48:29Z",
-   "text": "93 points and 63 comments on Hacker News.",
-   "points": 93,
+   "text": "96 points and 63 comments on Hacker News.",
+   "points": 96,
    "discussion": "https://news.ycombinator.com/item?id=50170021"
   },
   {
