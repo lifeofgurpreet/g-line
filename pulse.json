@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-21T22:21:05Z",
+ "generated_at": "2026-10-21T22:53:49Z",
  "items": [
   {
    "title": "Anthropic unveils Claude Duet, a proactive agent app on iOS, Android, and the web that works in the…",
@@ -17,7 +17,7 @@
    "published_at": "2026-10-21T14:04:23Z",
    "text": "OpenAI models helped researchers—operating as part of our Patch the Planet initiative—discover critical security flaws in PHP, an open-source programming language used to run an estimated 70% of websites. Over the past two months, we led a coalition of maintainers, researchers,…",
    "author_name": "OpenAI",
-   "likes": 12994,
+   "likes": 13110,
    "story": "The PHP Foundation details how it found and fixed the two flaws, and says it had to release patches a day early after the two CVE IDs began circulating online"
   },
   {
@@ -34,15 +34,15 @@
    "published_at": "2026-10-21T17:42:32Z",
    "text": "We built ChatGPT’s ad stack to respond to an evolving conversation, while ensuring answers stay independent. Here’s how the LLM orchestrator, retrieval, ranking and auction tools work together.",
    "author_name": "OpenAI Developers",
-   "likes": 683,
+   "likes": 706,
    "story": "OpenAI expands ChatGPT ads to 26 additional countries, taking the total to 83 countries, and says the platform has 100K+ advertisers, up from 20K in late August"
   },
   {
-   "title": "PHP's creators disclose a critical memory-management vulnerability, dubbed “PHP2Shell”, that affect…",
-   "url": "https://www.wsj.com/tech/cybersecurity/ai-just-found-a-bug-that-puts-up-to-70-of-the-worlds-websites-at-risk-fd0902ea?st=tBLRBh&reflink=desktopwebshare_permalink",
-   "source": "Robert McMillan / Wall Stre…",
-   "published_at": "2026-10-21T14:08:28Z",
-   "text": "PHP's creators disclose a critical memory-management vulnerability, dubbed “PHP2Shell”, that affects up to 70% of websites, discovered via GPT-5.6 Sol in August. AI tools helped find one of the most severe online bugs ever. Cyber experts are racing to patch it before hackers use AI to exploit it.",
+   "title": "Mark Zuckerberg says Muse has drawn 10M+ users since its launch and 25%+ of users are making purcha…",
+   "url": "https://www.businessinsider.com/meta-q3-2026-earnings-mark-zuckerberg-muse-ai-app-users-2026-10",
+   "source": "Business Insider",
+   "published_at": "2026-10-21T21:21:09Z",
+   "text": "Mark Zuckerberg says Muse has drawn 10M+ users since its launch and 25%+ of users are making purchases through the app, with an average purchase size of $200+. - Meta reported third-quarter earnings on Wednesday. — Meta CEO Mark Zuckerberg said over 10 million people have set up a Muse AI agent since its launch.",
    "via": "Techmeme"
   },
   {
@@ -50,22 +50,19 @@
    "url": "https://claude.com/product/claude-duet",
    "source": "Hacker News",
    "published_at": "2026-10-21T19:14:01Z",
-   "text": "235 points and 204 comments on Hacker News.",
-   "points": 235,
+   "text": "263 points and 217 comments on Hacker News.",
+   "points": 263,
    "discussion": "https://news.ycombinator.com/item?id=50186037"
   },
   {
-   "title": "New on our Science Blog: designing protein binders against scorpion neurotoxins. Scorpions sting ab…",
-   "url": "https://x.com/AnthropicAI/status/2112579251555721573",
-   "source": "𝕏 @AnthropicAI",
-   "published_at": "2026-10-20T16:18:38Z",
-   "text": "New on our Science Blog: designing protein binders against scorpion neurotoxins. Scorpions sting about 1.2m people every year, and antivenoms are often costly or in short supply. Claude has made an early step toward finding new treatments.",
-   "author_name": "Anthropic",
-   "likes": 7080,
-   "story": "Anthropic and Citrini Research use an internal Claude model to autonomously generate protein minibinders against five scorpion neurotoxins, testing 211 designs",
-   "links": [
-    "https://www.anthropic.com/research/claude-scorpion-toxin-binder-design"
-   ]
+   "title": "Thank you for this, @_NathanCalvin. I appreciate and am a fan of the investigative work you’ve done…",
+   "url": "https://x.com/DarioAmodei/status/2112732230124818891",
+   "source": "𝕏 @DarioAmodei",
+   "published_at": "2026-10-21T02:26:30Z",
+   "text": "Thank you for this, @_NathanCalvin. I appreciate and am a fan of the investigative work you’ve done on behalf of AI safety and believe your comments are coming from a constructive, honest place, and that it benefits the public to have people whose job is to scrutinize the actions…",
+   "author_name": "Dario Amodei",
+   "likes": 3796,
+   "story": "Dario Amodei says Anthropic's “race to the top” makes AI safer, lists nine safety decisions with “substantial costs”, and admits to mishandling a draft AI bill"
   },
   {
    "title": "Developing Enterprise Frontier Safeguards with our customers",
@@ -82,31 +79,12 @@
    "text": "My latest vibe coded game experiment is a Command & Conquer style RTS (Real Time Strategy) game called Battle Drones ( play it here ). Unlike my previous experiments , this one is actually fun to play . I'm somewhat embarrassed to admit that I got there by telling Claude to \"Make it a LOT more fun\". It also supports multiplayer between nearby devices using audio to synchronize game state! Here's what I've built so far, and some of the things I learned along the way."
   },
   {
-   "title": "Nvidia unveils the DSX POD, a modular containerized version of its Vera Rubin reference architectur…",
-   "url": "https://www.datacenterdynamics.com/en/news/nvidia-launches-dsx-pod-claims-the-vera-rubin-reference-architecture-will-make-ai-data-centers-more-water-and-energy-efficient/",
-   "source": "Charlotte Trueman / Datacen…",
-   "published_at": "2026-10-21T10:21:11Z",
-   "text": "Nvidia unveils the DSX POD, a modular containerized version of its Vera Rubin reference architecture to cut data center deployment from six months to 14 days. Details released at GTC Berlin event, taking place this week — Nvidia has claimed its DSX reference architecture for AI data centers …",
+   "title": "PHP's creators disclose a critical memory-management vulnerability, dubbed “PHP2Shell”, that affect…",
+   "url": "https://www.wsj.com/tech/cybersecurity/ai-just-found-a-bug-that-puts-up-to-70-of-the-worlds-websites-at-risk-fd0902ea?st=tBLRBh&reflink=desktopwebshare_permalink",
+   "source": "Robert McMillan / Wall Stre…",
+   "published_at": "2026-10-21T14:08:28Z",
+   "text": "PHP's creators disclose a critical memory-management vulnerability, dubbed “PHP2Shell”, that affects up to 70% of websites, discovered via GPT-5.6 Sol in August. AI tools helped find one of the most severe online bugs ever. Cyber experts are racing to patch it before hackers use AI to exploit it.",
    "via": "Techmeme"
-  },
-  {
-   "title": "Thank you for this, @_NathanCalvin. I appreciate and am a fan of the investigative work you’ve done…",
-   "url": "https://x.com/DarioAmodei/status/2112732230124818891",
-   "source": "𝕏 @DarioAmodei",
-   "published_at": "2026-10-21T02:26:30Z",
-   "text": "Thank you for this, @_NathanCalvin. I appreciate and am a fan of the investigative work you’ve done on behalf of AI safety and believe your comments are coming from a constructive, honest place, and that it benefits the public to have people whose job is to scrutinize the actions…",
-   "author_name": "Dario Amodei",
-   "likes": 3777,
-   "story": "Dario Amodei says Anthropic's “race to the top” makes AI safer, lists nine safety decisions with “substantial costs”, and admits to mishandling a draft AI bill"
-  },
-  {
-   "title": "Canary Tokens",
-   "url": "https://canarytokens.org/",
-   "source": "Hacker News",
-   "published_at": "2026-10-21T18:45:04Z",
-   "text": "97 points and 19 comments on Hacker News.",
-   "points": 97,
-   "discussion": "https://news.ycombinator.com/item?id=50185630"
   },
   {
    "title": "GPTs will also now be available in Antigravity.",
@@ -115,18 +93,27 @@
    "published_at": "2026-10-21T14:01:36Z",
    "text": "GPTs will also now be available in Antigravity.",
    "author_name": "Andrew Curran",
-   "likes": 336,
+   "likes": 341,
    "story": "OpenAI says it will make its AI models available on Google Cloud's model garden and Antigravity coding tool in the coming weeks, after launching on AWS in April",
    "links": [
     "https://openai.com/index/openai-models-google-cloud/"
    ]
   },
   {
-   "title": "Recursive releases Flint, an open-weight, 40B-parameter coding model developed with its Eureka Mach…",
-   "url": "https://www.wired.com/story/recursive-self-improvement-flint-latest-model-scary-good/",
-   "source": "Will Knight / Wired",
-   "published_at": "2026-10-21T16:36:17Z",
-   "text": "Recursive releases Flint, an open-weight, 40B-parameter coding model developed with its Eureka Machine AI system, which automated most of the development. Recursive makes the case that the benefits of using AI to build AI outweigh the risks. — For the past few days I've been testing …",
+   "title": "Canary Tokens",
+   "url": "https://canarytokens.org/",
+   "source": "Hacker News",
+   "published_at": "2026-10-21T18:45:04Z",
+   "text": "104 points and 20 comments on Hacker News.",
+   "points": 104,
+   "discussion": "https://news.ycombinator.com/item?id=50185630"
+  },
+  {
+   "title": "Nvidia unveils the DSX POD, a modular containerized version of its Vera Rubin reference architectur…",
+   "url": "https://www.datacenterdynamics.com/en/news/nvidia-launches-dsx-pod-claims-the-vera-rubin-reference-architecture-will-make-ai-data-centers-more-water-and-energy-efficient/",
+   "source": "Charlotte Trueman / Datacen…",
+   "published_at": "2026-10-21T10:21:11Z",
+   "text": "Nvidia unveils the DSX POD, a modular containerized version of its Vera Rubin reference architecture to cut data center deployment from six months to 14 days. Details released at GTC Berlin event, taking place this week — Nvidia has claimed its DSX reference architecture for AI data centers …",
    "via": "Techmeme"
   },
   {
@@ -134,9 +121,16 @@
    "url": "https://openai.com/index/coordinated-disclosure-of-critical-vulnerabilities/",
    "source": "Hacker News",
    "published_at": "2026-10-21T14:03:43Z",
-   "text": "210 points and 137 comments on Hacker News.",
-   "points": 210,
+   "text": "217 points and 139 comments on Hacker News.",
+   "points": 217,
    "discussion": "https://news.ycombinator.com/item?id=50181175"
+  },
+  {
+   "title": "Physicist Christopher Stubbs joins Anthropic's Long-Term Benefit Trust",
+   "url": "https://www.anthropic.com/news/christopher-stubbs-joins-long-term-benefit-trust",
+   "source": "Anthropic",
+   "published_at": "2026-10-21T18:22:03Z",
+   "text": "Dr. Christopher Stubbs, an experimental physicist and former Dean of Science at Harvard University, has joined Anthropic’s Long-Term Benefit Trust. He brings to the Trust decades of scientific expertise across observational cosmology and precision measurement. He has also advised the US government on national security and arms control. “I am honored to join Anthropic’s Long-Term Benefit Trust and to help the company deliver on its public benefit mission,” said Stubbs."
   }
  ],
  "sources": "curated, Techmeme, X (found via Techmeme, Reddit, the Internet Archive), Claude Code releases, Anthropic, Hacker News, Simon Willison"
