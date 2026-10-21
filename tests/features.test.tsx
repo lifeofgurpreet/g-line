@@ -745,7 +745,7 @@ test('/g-line set all on turns every toggle on; reset clears the choices', { tim
   on('http.fetch', () => ({ value: { status: 200, ok: true, headers: {}, text: '{"schema":1,"items":[]}' } }) as never)
   await start($)
   await $.command.run({ command: 'g-line', args: 'set all on' } as never)
-  expect(store.settings).toEqual({ spinner: true, footer_labels: true, short_hints: true, git: true, toasts: true,
+  expect(store.settings).toEqual({ spinner: true, footer_labels: true, short_hints: true, git: true, roster: true, toasts: true,
     notify: { cache: true, reset: true, long_turn: true, agents: true }, pulse: true, coach: true, claude_reads: true, export_state: true })
   await $.command.run({ command: 'g-line', args: 'reset' } as never)
   expect(store.settings).toEqual({})
@@ -1386,4 +1386,114 @@ test('keep-warm skips a session whose model changed since the last request', { t
   w.model = 'claude-sonnet-5-5'
   await w.clock.advance(50 * 60_000)
   expect(forks).toBe(0)
+})
+
+// ------------------------------------------------------------ 0.8.0
+
+test('the roster: line 2 counts the other sessions on this machine and which wait on you; a permission ask here is written at once', { timeoutMs: 30_000 }, async ($, on) => {
+  const kept: Record<string, unknown> = {}
+  const w = world(on, {}, kept)
+  hintBelow(on)
+  on('tool.check', () => ({ decision: 'ask' }) as never)
+  on('session.end', ($, e) => ({ sessionId: e.sessionId }) as never)
+  const line2 = async () => {
+    const ui = await $.ui.mount({ plugin: 'g-line', surface: 'terminal', component: 'PromptHint',
+      props: { isDraft: false, isWorking: false, hint: '? for shortcuts' }, viewport: { columns: 200, rows: 40 } })
+    const found = await ui.find({ type: 'Text', text: /other/ })
+    await ui.unmount()
+    return found?.text
+  }
+  await start($)
+  await w.clock.advance(15_000)
+  expect(kept['s:session-1']).toEqual(expect.objectContaining({ state: 'idle' }))
+  expect(await line2()).toBeUndefined()
+  kept['s:other-1'] = { at: w.clock.now(), state: 'waiting', since: w.clock.now() - 60_000, model: 'Opus 5.5' }
+  kept['s:other-2'] = { at: w.clock.now(), state: 'working', since: w.clock.now() }
+  kept['s:long-gone'] = { at: w.clock.now() - 10 * 60_000, state: 'idle', since: 0 }
+  await w.clock.advance(15_000)
+  expect(await line2()).toBe('2 others · 1 waiting')
+  // An ask on the main loop: this session waits on the person, written before the next beat.
+  await $.turn.start({ text: 'go', turnId: 't1' })
+  await $.tool.check({ tool: 'Bash', input: { command: 'rm -rf build' }, tool_use_id: 'tu1' } as never)
+  expect(kept['s:session-1']).toEqual(expect.objectContaining({ state: 'waiting' }))
+  await $.tool.call({ tool: 'Bash', command: 'rm -rf build' } as never)
+  expect(kept['s:session-1']).toEqual(expect.objectContaining({ state: 'working' }))
+  // The pane lists them; the account shows only where an account_command is set.
+  await $.command.run({ command: 'g-line', args: '' } as never)
+  const pane = await $.ui.mount({ plugin: 'g-line', surface: 'terminal', component: 'Pane', requestId: 'g-line',
+    props: { bodyColumns: 140 } as never, viewport: { columns: 160, rows: 80 } })
+  expect(await pane.find({ type: 'Text', text: 'Sessions on this machine' })).toBeDefined()
+  expect(await pane.find({ type: 'Text', text: /^waiting on you 1m · Opus 5\.5$/ })).toBeDefined()
+  await pane.unmount()
+  // Turned off, line 2 says nothing of them.
+  await $.command.run({ command: 'g-line', args: 'set roster off' } as never)
+  expect(await line2()).toBeUndefined()
+  // The session's own entry goes when it ends.
+  await $.command.run({ command: 'g-line', args: 'set roster on' } as never)
+  await w.clock.advance(15_000)
+  await $.session.end({ reason: 'prompt_input_exit', sessionId: 'session-1' } as never)
+  expect(kept['s:session-1']).toBeUndefined()
+})
+
+test('a turn stopped by the usage limit: told when it resets; with guard.resume one "continue" goes after the reset, shown and cancellable', { timeoutMs: 30_000 }, async ($, on) => {
+  const kept: Record<string, unknown> = {}
+  const w = world(on, {}, kept)
+  w.config = { guard: { resume: true } }
+  const seen = engineBelow(on)
+  hintBelow(on)
+  on('session.end', ($, e) => ({ sessionId: e.sessionId }) as never)
+  const stopped = async (id: string) => {
+    w.usage.limits = [{ kind: 'five_hour', percentUsed: 100, resetsAt: ISO(Math.floor(w.clock.now() / 1000) + 3600) }]
+    await $.turn.start({ text: 'go', turnId: id })
+    await $.turn.complete({ answer: '', durationMs: 4000, isAborted: false, turnId: id, reason: 'error' } as never)
+    await w.clock.advance(10)
+  }
+  await start($)
+  await stopped('t1')
+  expect(w.notes.some(n => n.text.startsWith('The 5-hour usage limit stopped this turn. g-line sends "continue" at '))).toBe(true)
+  expect(kept['lease:resume:machine']).toEqual({ holder: 'session-1', until: expect.any(Number) })
+  const ui = await $.ui.mount({ plugin: 'g-line', surface: 'terminal', component: 'PromptHint',
+    props: { isDraft: false, isWorking: false, hint: '? for shortcuts' }, viewport: { columns: 200, rows: 40 } })
+  expect(await ui.find({ type: 'Text', text: /^resumes \d\d:\d\d$/ })).toBeDefined()
+  await ui.unmount()
+  // Not before the reset; once after it, within the jitter.
+  await w.clock.advance(55 * 60_000)
+  expect(seen.prompts).toEqual([])
+  await w.clock.advance(11 * 60_000)
+  expect(seen.prompts).toEqual(['continue'])
+  expect(kept['lease:resume:machine']).toBeUndefined()
+  await w.clock.advance(60 * 60_000)
+  expect(seen.prompts).toEqual(['continue'])
+  // Cancelled, nothing goes.
+  await stopped('t2')
+  await $.command.run({ command: 'g-line', args: 'guard cancel' } as never)
+  expect(w.toasts[w.toasts.length - 1]).toBe('g-line won\'t send anything after the reset.')
+  await w.clock.advance(70 * 60_000)
+  expect(seen.prompts).toEqual(['continue'])
+  // Another session on the account holds the resume: this one only says so.
+  kept['lease:resume:machine'] = { holder: 'session-9', until: w.clock.now() + 2 * 3600_000 }
+  await stopped('t3')
+  expect(w.toasts[w.toasts.length - 1]).toMatch(/Another session on this account will go on after the reset/)
+  await w.clock.advance(70 * 60_000)
+  expect(seen.prompts).toEqual(['continue'])
+})
+
+test('without guard.resume a limit stop is only said, with the reset on your clock; the pane shows each window\'s reset', { timeoutMs: 30_000 }, async ($, on) => {
+  const w = world(on)
+  const seen = engineBelow(on)
+  await start($)
+  w.usage.limits = [{ kind: 'five_hour', percentUsed: 100, resetsAt: ISO(NOW + 2 * 3600) }, { kind: 'seven_day', percentUsed: 40, resetsAt: ISO(NOW + 3 * 86_400) }]
+  await $.turn.start({ text: 'go', turnId: 't1' })
+  await $.turn.complete({ answer: '', durationMs: 4000, isAborted: false, turnId: 't1', reason: 'error' } as never)
+  await w.clock.advance(10)
+  expect(w.toasts.some(t => /^The 5-hour usage limit stopped this turn\. It resets about \d\d:\d\d\.$/.test(t))).toBe(true)
+  await w.clock.advance(3 * 3600_000)
+  expect(seen.prompts).toEqual([])
+  w.usage.limits = [{ kind: 'five_hour', percentUsed: 30, resetsAt: ISO(Math.floor(w.clock.now() / 1000) + 2 * 3600) }]
+  await $.session.measure({ context: { tokens: 1, window: 1_000_000, percent: 1 }, rateLimits: w.usage.limits, cost: { usd: 1 }, changed: ['rateLimits'] })
+  await $.command.run({ command: 'g-line', args: '' } as never)
+  const pane = await $.ui.mount({ plugin: 'g-line', surface: 'terminal', component: 'Pane', requestId: 'g-line',
+    props: { bodyColumns: 140 } as never, viewport: { columns: 160, rows: 80 } })
+  expect(await pane.find({ type: 'Text', text: /^5-hour 30% used, resets \d\d:\d\d \(in (1h 59m|2h 0m)\)$/ })).toBeDefined()
+  await pane.unmount()
 })

@@ -1,5 +1,26 @@
 # Changelog
 
+## 0.8.0 (2026-10-21): the other sessions, and going on after a limit
+
+- **The other sessions on this machine.** Each g-line session keeps a heartbeat in Claude
+  Code's plugin store, shared by the machine's sessions and nowhere else. It holds whether
+  the session is working, waiting on a permission answer from you, or idle, plus its context,
+  cache and model, and the `account_command` line only where you set one. Line 2 adds
+  `2 others · 1 waiting` when there are others; it's the first thing a narrow line drops. The
+  pane lists every session. A session's entry goes when it ends. `roster: false` turns it off.
+- **A usage limit stops a turn.** When a turn ends on an error while a window reads full,
+  g-line says so with the reset on your clock. With `"resume": true` in `guard` (off by
+  default) it also plans one `continue` (or your text) for just after the reset plus up to
+  five random minutes. You get a notification, line 2 reads `resumes 14:17`, and
+  `/g-line guard cancel` drops it. One session per account holds the plan; the others say so
+  and wait for you. No handoff file is written.
+- **Resets on your clock.** The pane gives each window's reset in local time:
+  `5-hour 62% used, resets 14:12 (in 2h 47m)`.
+- Not added: a "waiting on you" notification. Claude Code already sends one for each
+  permission ask and after a minute idle, through the same channel. Also not added: the cause
+  of a cache miss on the receipt. Claude Code's `/usage` names one, but nothing in the API it
+  gives mods (2.1.304) carries it.
+
 ## 0.7.1 (2026-10-21): the guard, sturdier; an account change counts the cache cold
 
 - **Account changes.** When the `account_command` line changes, as when an account manager

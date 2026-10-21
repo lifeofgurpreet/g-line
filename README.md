@@ -114,7 +114,8 @@ Line 2, g-line's own row, in colour:
 | cache | `cache ~59m`, `cache cold`, `compacted, next turn caches 31k` | How long the prompt cache stays warm, green, then amber in its last minutes. `~` because it's an estimate from when the last request ran and the cache's lifetime. After a compaction (yours, automatic, or Claude Code's while you were idle) the old conversation's cache no longer applies, so it shows the summary the next turn writes instead. When your `account_command` line changes (an account manager switched accounts), it reads `cache cold (account changed)`: prompt caches are kept per organization, so the next turn starts a new one, and that turn's closing line says `cache cold after account change · rebuilt 120k`. Without an `account_command`, g-line can't see a switch |
 | timing | `wk out ~Thu 19:00, resets Fri 16:00` | When a window on pace to run out gets there (rounded: it's a projection), else when it resets |
 | agents, compaction | `agents 2 running`, `compacts in ~3 turns` | While subagents work; when a compaction is near |
-| guard, keep-warm | `guard: effort medium`, `kept warm 2× · $0.08` | Only with your `guard` rules (see Guard): what they're doing now |
+| guard, keep-warm | `guard: effort medium`, `kept warm 2× · $0.08`, `resumes 14:17` | Only with your `guard` rules (see Guard): what they're doing now |
+| others | `2 others · 1 waiting` | Other g-line sessions on this machine, and how many wait on you for a permission answer. Only when there are others; it's the first thing a narrow line drops. `roster: false` turns it off |
 
 When the terminal narrows, line 2 shortens first (`Opus 5.5` to `Opus`, the effort kept), and
 what line 1 can't fit moves down rather than vanishing. A healthy window's reset time goes
@@ -207,9 +208,10 @@ With Pulse off (the default), g-line makes no network requests at all.
 
 ### The pane, settings and share card
 
-`/g-line` opens a pane with every figure spelled out: limits with bars and reset times,
-warnings, agents, the last turns' receipts, what fills the context (counted locally, like
-`/context`), tools used and failed, and today's and this week's totals across sessions. Its
+`/g-line` opens a pane with every figure spelled out: limits with bars and reset times (on
+your own clock: `5-hour 62% used, resets 14:12 (in 2h 47m)`), warnings, agents, the last
+turns' receipts, what fills the context (counted locally, like `/context`), tools used and
+failed, the other sessions on this machine, and today's and this week's totals across sessions. Its
 top row flips the common settings with one key (`l` layout, `r` receipt, `p` Pulse), `s` opens
 all of them, and `n` opens the news reader. `/g-line card` shows a share card of the session
 with a copy button; it leaves out your repository, branch, paths and account. `/g-line off`
@@ -266,6 +268,7 @@ Layers, lowest first: defaults, `config.json`, `/config`, then choices made with
 | `footer_labels` | `true`, `false`: agents and compaction in the footer (one-line layout) | `true` |
 | `short_hints` | `true` draws `(shift+tab to cycle)` as `⇧⇥` | `true` |
 | `export_state` | `true` writes the figures as JSON under `~/.cache/g-line/state/` for tmux and other bars | `false` |
+| `roster` | `true` keeps a heartbeat of each g-line session on this machine in Claude Code's plugin store: whether it's working, waiting on you or idle, its context, cache and model, and the `account_command` line when you set one. Line 2 counts the others, the pane lists them. `false` writes and shows nothing | `true` |
 | `guard` | Your rules for a low usage window, and keep-warm (see Guard). With none, g-line changes nothing | none |
 | `reset_threshold`, `long_turn_seconds`, `cache_ttl`, `icons`, `segments`, `preset`, `account_command` | See `hooks/settings.ts`. `account_command` runs a command you choose and shows its first line; off unless set | |
 
@@ -385,8 +388,22 @@ a tenth or more of what it reads, found no cache: keep-warm turns itself off for
 and says so. So does a next turn that rebuilds the cache anyway. An Esc ends that idle stretch
 for keep-warm. `"keep_warm": true` takes the defaults.
 
+**Resume after a limit** (`"resume": true` in `guard`, off by default). When a turn ends on an
+error while a usage window reads full, the limit stopped it. g-line always says so with the
+reset on your clock. With `resume`, it also plans one prompt, `continue` (or your
+`"resume": { "text": "...", "jitter": "5m" }`), for just after the reset plus up to 5 random
+minutes, so sessions don't all start at once. You get a notification. Line 2 reads
+`resumes 14:17`, and `/g-line guard cancel` drops it. One session per account holds the plan
+(a lease in the plugin store); the others say so and wait for you. The prompt reaches Claude
+as a message from the g-line plugin. g-line writes no handoff file.
+
 When a model other than the one asked for answers a request (Claude Code fell back), the
 turn's closing line says `answered by Sonnet 5.5`, guard or not.
+
+g-line doesn't add its own "Claude is waiting" notifications: Claude Code already sends one
+for each permission ask, and one after a minute of waiting for your input
+(`messageIdleNotifThresholdMs`), through the same channel g-line would use. The roster's
+`waiting` count is there for the sessions you aren't looking at.
 
 ## Privacy and what it runs
 
@@ -394,8 +411,10 @@ turn's closing line says `answered by Sonnet 5.5`, guard or not.
   results' success, subagents, compactions). It doesn't read the transcript file.
 - **Keeps:** per session per day, numbers only (cost at API prices, turns, tool calls, cold
   rebuilds, agents) in Claude Code's plugin store, deleted after 35 days; your choices made
-  with `/g-line`; when you last opened the news reader; and, with Pulse on, the last feed and
-  which headlines it showed today.
+  with `/g-line`; when you last opened the news reader; with Pulse on, the last feed and
+  which headlines it showed today; and, with `roster` on (the default), each running
+  session's heartbeat (state, context, cache, model, and the `account_command` line only if
+  you set one), cleared when the session ends.
 - **Runs:** `git status` only with `git: true` or while the pane is open; your
   `account_command` only if you set one; `uname -s` once per session, to know whether a
   browser can open; `open` (or `xdg-open`) with a feed link when you ask the reader to open one.
@@ -403,7 +422,8 @@ turn's closing line says `answered by Sonnet 5.5`, guard or not.
   `claude_reads` (the snapshot goes into your conversation). With keep-warm in your `guard`,
   Claude Code sends your conversation again, through its own client, to re-read the cache.
 - **Changes:** nothing, unless you write `guard` rules: then a lower effort, a cheaper model
-  for new subagents, or a refused prompt, each as your rule says and each shown.
+  for new subagents, a refused prompt, or with `resume` one prompt after a limit's reset, each
+  as your rule says and each shown.
 - **Writes:** a one-line timestamp at `~/.cache/glanceline/live/<session id>` so an older
   status line command can step aside, and with `export_state`, a JSON file for other bars.
 

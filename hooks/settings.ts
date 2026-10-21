@@ -52,13 +52,15 @@ export type Config = {
   exportState: boolean
   /** The guard's rules and keep-warm (config.json `guard`); none by default, so it does nothing. */
   guard: GuardConfig
+  /** The other g-line sessions on this machine: `2 others · 1 waiting` on line 2, and the list in the pane. */
+  roster: boolean
 }
 
 export const DEFAULTS: Config = {
   lines: 2, pulse: false, pulseSpeed: 'normal', pulseMute: [], shortHints: true, git: false, preset: 'default', icons: 'none', toasts: true, cacheTtl: 'auto',
   notify: { cache: true, reset: true, longTurn: false, agents: false },
   longTurnSeconds: 60, resetThreshold: 80, receipt: 'adaptive', spinner: true, footerLabels: true,
-  coach: false, claudeReads: false, toolStreak: 3, exportState: false, guard: NO_GUARD,
+  coach: false, claudeReads: false, toolStreak: 3, exportState: false, guard: NO_GUARD, roster: true,
 }
 
 /** One layer over `base`: config.json's snake_case keys; anything malformed is ignored. */
@@ -111,6 +113,7 @@ export function merge(base: Config, raw: unknown): Config {
   const budget = num(r.today_budget)
   if (budget !== undefined && budget > 0) next.budget = budget
   if (typeof r.export_state === 'boolean') next.exportState = r.export_state
+  if (typeof r.roster === 'boolean') next.roster = r.roster
   // `true`/`false` (from `/g-line guard on|off`) switches the rules the files wrote; an object replaces them.
   if (typeof r.guard === 'boolean') next.guard = { ...base.guard, on: r.guard }
   else if (r.guard && typeof r.guard === 'object') next.guard = parseGuard(r.guard)
@@ -165,6 +168,7 @@ export const SETTINGS: readonly Setting[] = [
   toggle('footer_labels', 'Footer labels', 'Show', 'f', c => c.footerLabels, 'agents and compaction in the footer (one-line layout)', ['footer']),
   toggle('short_hints', 'Short hints', 'Show', 'h', c => c.shortHints, '`(shift+tab to cycle)` drawn as `⇧⇥`', ['hints']),
   toggle('git', 'Git branch', 'Show', 'g', c => c.git, 'the branch on line 2', ['branch', 'git_branch']),
+  toggle('roster', 'Other sessions', 'Show', 'b', c => c.roster, 'other g-line sessions on this machine on line 2, and which wait on you', ['others', 'sessions']),
   toggle('toasts', 'Toasts', 'Heads-ups', 't', c => c.toasts, 'heads-ups as toasts in the terminal'),
   toggle('notify.cache', 'Cold cache', 'Heads-ups', 'k', c => c.notify.cache, 'a notification before the prompt cache goes cold', ['cache', 'cold_cache']),
   toggle('notify.reset', 'Window reset', 'Heads-ups', 'w', c => c.notify.reset, 'a notification when a usage window resets', ['reset', 'window_reset']),
@@ -288,7 +292,7 @@ export type Command =
   | { kind: 'set'; setting: Setting; value: boolean | string | 'toggle' }
   | { kind: 'all'; value: boolean }
   | { kind: 'reset'; setting?: Setting }
-  | { kind: 'guard'; action: 'status' | 'once' | 'resume' | 'on' | 'off' }
+  | { kind: 'guard'; action: 'status' | 'once' | 'resume' | 'on' | 'off' | 'cancel' }
   | { kind: 'guard'; action: 'pause'; seconds: number }
   | { kind: 'guard'; action: 'simulate'; window: '5h' | 'week'; used: number }
   | { kind: 'guard'; action: 'simulate'; window?: undefined; used?: undefined }
@@ -362,8 +366,8 @@ function guardCommand(rest: string[]): Command {
     }
     return { kind: 'guard', action: 'simulate', window, used }
   }
-  if (more.length === 0 && (action === 'status' || action === 'once' || action === 'resume' || action === 'on' || action === 'off')) {
+  if (more.length === 0 && (action === 'status' || action === 'once' || action === 'resume' || action === 'on' || action === 'off' || action === 'cancel')) {
     return { kind: 'guard', action }
   }
-  return { kind: 'error', text: '/g-line guard, then once, pause [30m], resume, simulate 5h 96, on or off.' }
+  return { kind: 'error', text: '/g-line guard, then once, pause [30m], resume, simulate 5h 96, cancel, on or off.' }
 }

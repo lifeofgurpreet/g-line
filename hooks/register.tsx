@@ -17,7 +17,9 @@ import { atom, read, update } from 'claude-code'
 import type { EngineInterface, Register } from 'claude-code'
 
 import type { AgentRow, Receipt, Snap, Totals } from '../types'
-import { SEP, alerts, layoutKeys, modelName, pct, segments, str, tokens, width } from './core'
+import { SEP, alerts, clock, layoutKeys, modelName, pct, segments, str, tokens, width } from './core'
+import { ROSTER_PREFIX, othersSegment, rosterOf, rosterRow, staleRosterKeys } from './roster'
+import type { RosterEntry, RosterState } from './roster'
 import type { Options, Payload, Preset, Segment, Tone } from './core'
 import {
   EMPTY_TOTALS, RECEIPT_PRESETS, agentsSegment, cacheHit, cardLines, coach, compactionText, contextView, costRatio,
@@ -36,9 +38,9 @@ import type { PulseFeed, PulseItem, Shown } from './pulse'
 import { gitSegmentOf } from './core'
 import {
   accountKey, agentModel, cappedEffort, changeText, effortKeepsCache, evaluate, guardForms, leaseFree, readBack, ruleText, simulated, stopText,
-  warmDue, warmForms,
+  resumeAt, warmDue, warmForms,
 } from './guard'
-import type { Effort, Facts, Simulation, Verdict } from './guard'
+import type { Effort, Facts, Simulation, Verdict, WindowName } from './guard'
 import {
   DEFAULTS, GROUPS, SETTINGS, changed, merge, nextValue, originOf, parseCommand, patchOf, said, withPatch, withoutSetting,
 } from './settings'
@@ -786,6 +788,7 @@ async function heartbeat($: EngineInterface): Promise<void> {
   else if (beats % 8 === 0 && config.guard.rules.some(rule => rule.accounts)) await refreshAccount($)
   await guardNow($).catch(() => undefined)
   await keepWarm($).catch(() => undefined)
+  await heartbeatRoster($)
   await exportState($)
 }
 
@@ -805,6 +808,8 @@ async function extrasNow($: EngineInterface): Promise<Extras> {
     compact: forecastSegment(await read($, outlook)),
     today: todaySegment(l?.today, config.budget),
     guard: await guardSegment($),
+    resume: await resumeSegment($),
+    others: config.roster ? othersSegment(others) : undefined,
   }
 }
 
@@ -812,9 +817,9 @@ async function extrasNow($: EngineInterface): Promise<Extras> {
 function footerLabels(extras: Extras): string[] {
   if (config.lines === 2) return []
   // What the guard is doing always shows: it acts on your behalf.
-  const guard = extras.guard?.forms[1] ? [extras.guard.forms[1]] : []
+  const guard = [extras.guard?.forms[1], extras.resume?.forms[0]].filter((label): label is string => Boolean(label))
   if (!config.footerLabels) return guard
-  return [...(['agents', 'compact'] as const)
+  return [...(['agents', 'compact', 'others'] as const)
     .filter(key => !layoutHas(key))
     .map(key => extras[key]?.forms[0])
     .filter((label): label is string => Boolean(label)), ...guard]
@@ -900,6 +905,26 @@ async function detailRows($: EngineInterface, seconds: number, columns?: number)
     rows.push({ key: 'd-today', text: `today ${money(l.today.cost)} at API prices · ${l.today.turns} turns · ${l.today.sessions} ${l.today.sessions === 1 ? 'session' : 'sessions'}${l.today.colds ? ` · ${l.today.colds} cold-cache rebuilds` : ''}${l.today.warms ? ` · kept warm ${l.today.warms}×${l.today.warmCost ? ` (${money(l.today.warmCost)})` : ''}` : ''}` })
     const week = l.week.reduce((sum, d) => sum + d.cost, 0)
     rows.push({ key: 'd-week', text: `7 days ${spark(l.week.map(d => d.cost))} ${money(week)}` })
+  }
+  // The windows' resets on your own clock.
+  const resets = (s.rateLimits ?? []).filter(l => (l.kind === 'five_hour' || l.kind === 'seven_day') && l.resetsAt && l.resetsAt > seconds)
+  if (resets.length) {
+    rows.push({ key: 'h-windows', text: 'Usage windows (your local time)', bold: true })
+    for (const l of resets) {
+      const at = l.resetsAt ?? 0
+      rows.push({ key: `w-${l.kind}`, text: `${l.kind === 'five_hour' ? '5-hour' : 'weekly'} ${pct(l.percentUsed)} used, resets ${clock(at, seconds, offsetAt(seconds * 1000))} (in ${ago((at - seconds) * 1000)})` })
+    }
+  }
+  if (resumePlan) {
+    rows.push({ key: 'w-resume', tone: 'accent', text: `"${config.guard.resume?.text ?? 'continue'}" goes at ${clock(Math.floor(resumePlan.at / 1000), seconds, offsetAt(seconds * 1000))}, after the reset (/g-line guard cancel)` })
+  }
+  if (config.roster && others.length) {
+    rows.push({ key: 'h-roster', text: 'Sessions on this machine', bold: true })
+    const mine = rosterState && sessionId ? [{ id: sessionId, at: now, state: rosterState.state, since: rosterState.since,
+      ...(s.context?.percent !== undefined ? { ctx: s.context.percent } : {}), ...(s.model ? { model: modelName(s.model) } : {}) }] : []
+    for (const entry of [...mine, ...others].slice(0, 10)) {
+      rows.push({ key: `r-${entry.id}`, tone: entry.state === 'waiting' ? 'warn' : entry.id === sessionId ? undefined : 'dim', text: rosterRow(entry, now, entry.id === sessionId) })
+    }
   }
   if (config.guard.rules.length || config.guard.keepWarm) {
     rows.push({ key: 'h-guard', text: `Guard (your rules${config.guard.on ? '' : ', off'}; /g-line guard once|pause|off)`, bold: true })
@@ -1498,6 +1523,131 @@ async function guardCommandRun($: EngineInterface, action: string, pause?: numbe
   $.ui.toast(lines.join(' '), { timeoutMs: 15_000 })
 }
 
+// ----------------------------------------------------------------- roster
+
+/** A permission ask on the main loop waiting on the person since then (ms). */
+let askSince: number | undefined
+/** When this session last changed state (ms), and to what. */
+let rosterState: { state: RosterState; since: number } | undefined
+/** The other sessions on this machine, as last read. */
+let others: RosterEntry[] = []
+
+async function stateNow($: EngineInterface): Promise<RosterState> {
+  if (askSince !== undefined) return 'waiting'
+  return (await read($, turnNow)) ? 'working' : 'idle'
+}
+
+/** Writes this session's heartbeat and reads the others'. Machine-local: Claude Code's plugin store. */
+async function heartbeatRoster($: EngineInterface): Promise<void> {
+  if (!config.roster || !sessionId) return
+  try {
+    const at = await nowMs($)
+    const state = await stateNow($)
+    if (rosterState?.state !== state) rosterState = { state, since: at }
+    const s = await read($, snap)
+    const p = payload(s, at / 1000, ttl, idle)
+    const cache = p.prompt_cache
+    await $.store.set(`${ROSTER_PREFIX}${sessionId}`, {
+      at, state, since: rosterState.since,
+      ...(s.context?.percent !== undefined ? { ctx: s.context.percent } : {}),
+      ...(cache?.warm && cache.expires_at ? { cacheUntil: cache.expires_at } : {}),
+      ...(s.model ? { model: modelName(s.model) } : {}),
+      ...(config.accountCommand && s.account ? { account: s.account } : {}),
+    })
+    const keys = (await $.store.keys()).filter(key => key.startsWith(ROSTER_PREFIX))
+    const entries = await Promise.all(keys.map(async key => ({ key, value: await $.store.get(key) })))
+    for (const key of staleRosterKeys(entries, at)) await $.store.delete(key)
+    others = rosterOf(entries, at).filter(entry => entry.id !== sessionId)
+  } catch {
+    // the store is busy or full: the line goes on without the others
+  }
+}
+
+/** A change of state is written at once, so other sessions see a wait as it starts. */
+async function rosterChanged($: EngineInterface): Promise<void> {
+  if (rosterState?.state !== (await stateNow($))) await heartbeatRoster($)
+}
+
+async function leaveRoster($: EngineInterface): Promise<void> {
+  if (sessionId) await $.store.delete(`${ROSTER_PREFIX}${sessionId}`).catch(() => undefined)
+}
+
+// ---------------------------------------------------------------- resume
+
+/** A turn stopped on a usage limit: the one prompt planned for after the reset, until sent or cancelled. */
+let resumePlan: { at: number; window: WindowName; key: string; timer?: { cancel: () => void } } | undefined
+
+/**
+ * A main-loop turn ended on an error while a usage window reads full: the
+ * limit stopped it. Says so; with `guard.resume`, plans one prompt after the
+ * reset (plus jitter), held by one session per account, shown on line 2 and
+ * cancelled with `/g-line guard cancel`.
+ */
+async function limitStopped($: EngineInterface): Promise<void> {
+  await measure($).catch(() => undefined)
+  const s = await read($, snap)
+  const at = await nowMs($)
+  const r = config.guard.resume
+  const plan = resumeAt(s.rateLimits ?? [], at, r && config.guard.on ? Math.random() * r.jitter : 0)
+  if (!plan) return
+  const when = clock(Math.floor(plan.at / 1000), at / 1000, offsetAt(at))
+  const name = plan.window === '5h' ? '5-hour' : 'weekly'
+  if (!r || !config.guard.on || resumePlan) {
+    if (await once($, `limit:${plan.window}:${Math.floor(plan.at / 3_600_000)}`)) await toast($, `The ${name} usage limit stopped this turn. It resets about ${when}.`, 12_000)
+    return
+  }
+  const key = accountKey(s.account)
+  try {
+    const lease = await $.store.get(`lease:resume:${key}`)
+    if (!leaseFree(lease, sessionId ?? '', at)) {
+      await toast($, `The ${name} usage limit stopped this turn. Another session on this account will go on after the reset; this one waits for you.`, 12_000)
+      return
+    }
+    await $.store.set(`lease:resume:${key}`, { holder: sessionId ?? '', until: plan.at + 15 * 60_000 })
+  } catch {
+    // no store: this session plans its own
+  }
+  resumePlan = { ...plan, key }
+  resumePlan.timer = $.clock.after(Math.max(1000, plan.at - at), () => void resumeNow($)) as unknown as { cancel: () => void }
+  await heads($, `The ${name} usage limit stopped this turn. g-line sends "${r.text}" at ${when}, after the reset. /g-line guard cancel stops it.`, 'Usage limit', true)
+  await update($, tick, n => n + 1)
+}
+
+async function resumeNow($: EngineInterface): Promise<void> {
+  const plan = resumePlan
+  if (!plan || !config.guard.resume) return
+  resumePlan = undefined
+  await $.store.delete(`lease:resume:${plan.key}`).catch(() => undefined)
+  if (await read($, turnNow)) {
+    await toast($, 'g-line didn\'t send its "continue": a turn is already running.', 8000)
+    return
+  }
+  const sent = await $.prompt.submit({ text: config.guard.resume.text }).catch(() => undefined)
+  await toast($, sent && !sent.drop ? `g-line sent "${config.guard.resume.text}" after the usage reset.` : `g-line's "${config.guard.resume.text}" after the reset didn't go through${sent?.drop ? `: ${sent.drop}` : ''}.`, 10_000)
+  await update($, tick, n => n + 1)
+}
+
+async function cancelResume($: EngineInterface): Promise<void> {
+  const plan = resumePlan
+  resumePlan = undefined
+  try {
+    plan?.timer?.cancel()
+  } catch {
+    // the timer had fired
+  }
+  if (plan) await $.store.delete(`lease:resume:${plan.key}`).catch(() => undefined)
+  $.ui.toast(plan ? 'g-line won\'t send anything after the reset.' : 'g-line has nothing planned after a reset.', { timeoutMs: 6000 })
+  await update($, tick, n => n + 1)
+}
+
+/** Line 2's `resumes 14:17` while a prompt is planned after the reset. */
+async function resumeSegment($: EngineInterface): Promise<Segment | undefined> {
+  if (!resumePlan) return undefined
+  const at = await nowMs($)
+  const when = clock(Math.floor(resumePlan.at / 1000), at / 1000, offsetAt(at))
+  return { key: 'resume', priority: 70, tone: 'accent', forms: [`resumes ${when}`] }
+}
+
 // ---------------------------------------------------------------- command
 
 const HELP = 'Open the g-line pane; `news` reads Pulse, `open` opens the headline shown, `settings` lists every setting, `set <name> on|off`, `reset [name]`, `card`, `off`/`on`'
@@ -1554,6 +1704,7 @@ async function runCommand($: EngineInterface, e: { command: string; args: string
     }
     case 'guard':
       if (asked.action === 'simulate') await simulate($, asked.window, asked.used)
+      else if (asked.action === 'cancel') await cancelResume($)
       else await guardCommandRun($, asked.action, asked.action === 'pause' ? asked.seconds : undefined)
       return {}
     case 'card':
@@ -1598,6 +1749,7 @@ export const register: Register = (on, options) => {
   // A /clear starts a new conversation in the same process, with no
   // `session.start`: read the fresh session's figures straight away.
   on('session.end', async ($, e, next) => {
+    await leaveRoster($)
     if (e.reason === 'clear') {
       // The cleared conversation's cache says nothing about the next one.
       await update($, snap, s => ({ ...s, cache: undefined }))
@@ -1636,8 +1788,20 @@ export const register: Register = (on, options) => {
     const overlap = (await read($, agents)).some(row => row.background && isActive(row.status))
     await update($, turnNow, () => ({ id: e.turnId, startAt, costAt, contextAt, tools: 0, agents: 0, failures: 0,
       cacheWrite: 0, warmBefore, overlap }))
+    if (e.agentId === undefined) await rosterChanged($)
     return next(e)
   })
+
+  // Observes the permission decision for each call on the main loop (never
+  // changes it): an ask puts the person on the spot, which the roster shows.
+  on('tool.check', async ($, e, next) => {
+    const result = await next(e)
+    if (e.agentId === undefined && e.tool_use_id && result.decision === 'ask') {
+      askSince = await nowMs($)
+      await rosterChanged($)
+    }
+    return result
+  }).catch(($, e, next) => next(e))
 
   // Each main-loop request: its model and effort, and whether the prompt
   // cache served it. Subagents keep caches of their own and are not counted.
@@ -1705,6 +1869,10 @@ export const register: Register = (on, options) => {
   // Observes every tool call (never gates or rewrites one): counts, failures,
   // and a toast when the same call fails several times in a row.
   on('tool.call', async ($, e, next) => {
+    if (e.agentId === undefined && askSince !== undefined) {
+      askSince = undefined
+      await rosterChanged($)
+    }
     if (e.agentId === undefined && e.tool !== 'Agent') await update($, turnNow, live => (live ? { ...live, tools: live.tools + 1 } : live))
     const result = await next(e)
     if (result.deny !== undefined || e.tool === 'Agent') return result
@@ -1763,6 +1931,10 @@ export const register: Register = (on, options) => {
     pending = ready
     const r = await ready
     await update($, turnNow, () => null)
+    askSince = undefined
+    void rosterChanged($)
+    // An error while a window reads full: the usage limit stopped the turn.
+    if (e.reason === 'error') $.clock.after(1, () => void limitStopped($))
     // The rest takes a moment (a local context count, the day's ledger), so it
     // runs after the turn's closing line is drawn, not before.
     $.clock.after(1, () => void afterTurn($, r, e.isAborted))
@@ -1834,7 +2006,7 @@ export const register: Register = (on, options) => {
       // label the engine draws before the hint is the engine's: a mod can
       // shorten the hint's words but not that label.
       const columns = e.viewport?.columns
-      const extra = [extras.guard, warmSegment(), extras.agents, extras.compact, config.budget ? extras.today : undefined, config.git ? gitSegmentOf(s.git) : undefined, accountSegment(s.account)]
+      const extra = [extras.guard, extras.resume, warmSegment(), extras.agents, extras.others, extras.compact, config.budget ? extras.today : undefined, config.git ? gitSegmentOf(s.git) : undefined, accountSegment(s.account)]
         .filter((one): one is Segment => one !== undefined)
       // The hint stays whole here: a rewritten hint has the engine draw its
       // mode label in a column of its own, which would squeeze line 2 into

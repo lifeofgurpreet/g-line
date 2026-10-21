@@ -54,7 +54,10 @@ export type KeepWarm = {
   perHour: number
 }
 
-export type GuardConfig = { on: boolean; rules: Rule[]; keepWarm?: KeepWarm; errors: string[] }
+/** After a turn stops on a usage limit: one prompt after the reset, plus up to `jitter` seconds. */
+export type Resume = { text: string; jitter: number }
+
+export type GuardConfig = { on: boolean; rules: Rule[]; keepWarm?: KeepWarm; resume?: Resume; errors: string[] }
 
 export const NO_GUARD: GuardConfig = { on: true, rules: [], errors: [] }
 
@@ -212,7 +215,14 @@ export function parseGuard(raw: unknown): GuardConfig {
       perHour: perHour ?? KEEP_WARM_DEFAULTS.perHour,
     }
   }
-  return { on: r.on !== false, rules, ...(keepWarm ? { keepWarm } : {}), errors }
+  let resume: Resume | undefined
+  if (r.resume === true) resume = { text: 'continue', jitter: 300 }
+  else if (r.resume && typeof r.resume === 'object') {
+    const o = r.resume as Record<string, unknown>
+    const text = typeof o.text === 'string' && o.text.trim() ? o.text.trim().slice(0, 500) : 'continue'
+    resume = { text, jitter: Math.min(1800, seconds(o.jitter) ?? 300) }
+  }
+  return { on: r.on !== false, rules, ...(keepWarm ? { keepWarm } : {}), ...(resume ? { resume } : {}), errors }
 }
 
 /** What the guard reads. `left` is percent of the window left; `resetsAt` in seconds. */
@@ -479,4 +489,18 @@ export function simulated(facts: Facts, sim: Simulation | undefined): Facts {
   const real = facts.windows[sim.window]
   const resetsAt = real?.resetsAt && real.resetsAt * 1000 > facts.nowMs ? real.resetsAt : Math.floor(facts.nowMs / 1000) + 2 * 3600
   return { ...facts, windows: { ...facts.windows, [sim.window]: { left: 100 - sim.used, resetsAt } } }
+}
+
+/**
+ * When a stopped turn can go on: the reset of every window that reads full
+ * (100% used), the latest of them, plus `jitterSeconds` so sessions on one
+ * account don't all start at once. Nothing when no window reads full, or a
+ * full one has no reset time.
+ */
+export function resumeAt(limits: readonly { kind: string; percentUsed: number; resetsAt?: number }[], nowMs: number, jitterSeconds: number):
+  { at: number; window: WindowName } | undefined {
+  const full = limits.filter(l => (l.kind === 'five_hour' || l.kind === 'seven_day') && l.percentUsed >= 100)
+  if (!full.length || full.some(l => l.resetsAt === undefined || l.resetsAt * 1000 <= nowMs)) return undefined
+  const last = full.reduce((a, b) => ((b.resetsAt ?? 0) > (a.resetsAt ?? 0) ? b : a))
+  return { at: (last.resetsAt ?? 0) * 1000 + Math.max(0, Math.round(jitterSeconds)) * 1000, window: last.kind === 'five_hour' ? '5h' : 'week' }
 }
