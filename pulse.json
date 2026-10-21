@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-21T13:44:29Z",
+ "generated_at": "2026-10-21T14:16:35Z",
  "items": [
   {
    "title": "Nvidia unveils the DSX POD, a modular containerized version of its Vera Rubin reference architectur…",
@@ -11,14 +11,14 @@
    "via": "Techmeme"
   },
   {
-   "title": "Thank you for this, @_NathanCalvin. I appreciate and am a fan of the investigative work you’ve done…",
-   "url": "https://x.com/DarioAmodei/status/2112732230124818891",
-   "source": "𝕏 @DarioAmodei",
-   "published_at": "2026-10-21T02:26:30Z",
-   "text": "Thank you for this, @_NathanCalvin. I appreciate and am a fan of the investigative work you’ve done on behalf of AI safety and believe your comments are coming from a constructive, honest place, and that it benefits the public to have people whose job is to scrutinize the actions…",
-   "author_name": "Dario Amodei",
-   "likes": 3268,
-   "story": "Dario Amodei says Anthropic's “race to the top” makes AI safer, cites nine safety decisions with “substantial costs”, and admits mishandling a draft AI bill"
+   "title": "OpenAI models helped researchers—operating as part of our Patch the Planet initiative—discover crit…",
+   "url": "https://x.com/OpenAI/status/2112907856018309586",
+   "source": "𝕏 @OpenAI",
+   "published_at": "2026-10-21T14:04:23Z",
+   "text": "OpenAI models helped researchers—operating as part of our Patch the Planet initiative—discover critical security flaws in PHP, an open-source programming language used to run an estimated 70% of websites. Over the past two months, we led a coalition of maintainers, researchers,…",
+   "author_name": "OpenAI",
+   "likes": 848,
+   "story": "PHP releases security fixes for two critical unauthenticated RCE vulnerabilities, urging all PHP users to update; all web-serving deployments are affected"
   },
   {
    "title": "Claude Code 2.1.306 released",
@@ -28,31 +28,31 @@
    "text": "Fixed claude -p inside cloud sessions reporting \"Not logged in\" when started without the session's environment variables · Fixed an API error being replaced by \"prompt is too long\", and an unneeded compaction, in sessions with many MCP tools"
   },
   {
-   "title": "We’ve acquired Orchestra Bio, a platform that helps biopharma teams coordinate the complex process…",
-   "url": "https://x.com/OpenAI/status/2112607347688583586",
-   "source": "𝕏 @OpenAI",
-   "published_at": "2026-10-20T18:10:16Z",
-   "text": "We’ve acquired Orchestra Bio, a platform that helps biopharma teams coordinate the complex process of drug development. Together, we’ll build on Rosalind, our AI models and tools for life sciences research, to streamline those operations and help new treatments reach patients…",
-   "author_name": "OpenAI",
-   "likes": 6650,
-   "story": "OpenAI acquires Orchestra Bio, which builds AI agents to help manage drug development, and plans to integrate the tech into Rosalind, its life sciences AI suite"
+   "title": "Thank you for this, @_NathanCalvin. I appreciate and am a fan of the investigative work you’ve done…",
+   "url": "https://x.com/DarioAmodei/status/2112732230124818891",
+   "source": "𝕏 @DarioAmodei",
+   "published_at": "2026-10-21T02:26:30Z",
+   "text": "Thank you for this, @_NathanCalvin. I appreciate and am a fan of the investigative work you’ve done on behalf of AI safety and believe your comments are coming from a constructive, honest place, and that it benefits the public to have people whose job is to scrutinize the actions…",
+   "author_name": "Dario Amodei",
+   "likes": 3324,
+   "story": "Dario Amodei says Anthropic's “race to the top” makes AI safer, cites nine safety decisions with “substantial costs”, and admits mishandling a draft AI bill"
   },
   {
-   "title": "Anthropic's IPO prospectus: ~$16.3B in H1 2026 revenue, ~20% from two clients and up from $1.1B in…",
-   "url": "https://www.wsj.com/tech/ai/anthropic-revenue-growth-ipo-accaf0f1?st=YKUo1r",
-   "source": "Anissa Gardizy / Wall Stree…",
-   "published_at": "2026-10-20T19:47:39Z",
-   "text": "Anthropic's IPO prospectus: ~$16.3B in H1 2026 revenue, ~20% from two clients and up from $1.1B in H1 2025, and an $80.7B net loss, $72B from accounting charges. In a new draft prospectus viewed by the Journal, the AI giant disclosed an $80.7 billion net loss for the first half of 2026 and a long list of risk factors",
+   "title": "OpenAI says two agents, one GPT-6.1 Sol and one GPT-6 Astra, weakened misalignment monitoring while…",
+   "url": "https://alignment.openai.com/misalignment-reports/suppressing-misalignment-monitoring-alerts-and-disabling-misalignment-monitoring/",
+   "source": "OpenAI",
+   "published_at": "2026-10-21T03:41:00Z",
+   "text": "OpenAI says two agents, one GPT-6.1 Sol and one GPT-6 Astra, weakened misalignment monitoring while making requested changes during two internal coding tasks. GPT-6.1 Sol and GPT-6 Astra · Internal deployments — Discovered: Oct 3, 2026 (Sol); Oct 6, 2026 (Astra) — Summary",
    "via": "Techmeme"
   },
   {
-   "title": "DeepInfer: High-performance inference framework for DeepSeek models",
-   "url": "https://github.com/deepseek-ai/DeepInfer",
+   "title": "Muse exposes users' personal and business secrets when they share conversations",
+   "url": "https://arstechnica.com/security/2026/10/meta-muse-exposes-users-personal-and-business-secrets-when-they-share-conversations/",
    "source": "Hacker News",
-   "published_at": "2026-10-20T09:08:54Z",
-   "text": "2273 points and 872 comments on Hacker News.",
-   "points": 2273,
-   "discussion": "https://news.ycombinator.com/item?id=50163277"
+   "published_at": "2026-10-21T00:45:59Z",
+   "text": "264 points and 120 comments on Hacker News.",
+   "points": 264,
+   "discussion": "https://news.ycombinator.com/item?id=50174687"
   },
   {
    "title": "New on our Science Blog: designing protein binders against scorpion neurotoxins. Scorpions sting ab…",
@@ -61,7 +61,7 @@
    "published_at": "2026-10-20T16:18:38Z",
    "text": "New on our Science Blog: designing protein binders against scorpion neurotoxins. Scorpions sting about 1.2m people every year, and antivenoms are often costly or in short supply. Claude has made an early step toward finding new treatments.",
    "author_name": "Anthropic",
-   "likes": 6534,
+   "likes": 6585,
    "story": "Anthropic and Citrini Research use an internal Claude model to autonomously generate protein minibinders against five scorpion neurotoxins, testing 211 designs",
    "links": [
     "https://www.anthropic.com/research/claude-scorpion-toxin-binder-design"
@@ -82,21 +82,41 @@
    "text": "My latest vibe coded game experiment is a Command & Conquer style RTS (Real Time Strategy) game called Battle Drones ( play it here ). Unlike my previous experiments , this one is actually fun to play . I'm somewhat embarrassed to admit that I got there by telling Claude to \"Make it a LOT more fun\". It also supports multiplayer between nearby devices using audio to synchronize game state! Here's what I've built so far, and some of the things I learned along the way."
   },
   {
-   "title": "OpenAI says two agents, one GPT-6.1 Sol and one GPT-6 Astra, weakened misalignment monitoring while…",
-   "url": "https://alignment.openai.com/misalignment-reports/suppressing-misalignment-monitoring-alerts-and-disabling-misalignment-monitoring/",
-   "source": "OpenAI",
-   "published_at": "2026-10-21T03:41:00Z",
-   "text": "OpenAI says two agents, one GPT-6.1 Sol and one GPT-6 Astra, weakened misalignment monitoring while making requested changes during two internal coding tasks. GPT-6.1 Sol and GPT-6 Astra · Internal deployments — Discovered: Oct 3, 2026 (Sol); Oct 6, 2026 (Astra) — Summary",
+   "title": "Nvidia launches its OpenShell Reference Architecture, a framework to secure, monitor, and govern AI…",
+   "url": "https://www.theregister.com/ai-and-ml/2026/10/21/nvidia-picks-openshell-to-tame-ai-gents/5304319",
+   "source": "Thomas Claburn / The Regist…",
+   "published_at": "2026-10-21T12:31:13Z",
+   "text": "Nvidia launches its OpenShell Reference Architecture, a framework to secure, monitor, and govern AI agents, and partners with Canonical, AWS, BBVA, and others. Nvidia has proposed a new way to keep corporate AI agents in line. — Nvidia on Wednesday introduced its OpenShell Reference Architecture.",
    "via": "Techmeme"
   },
   {
-   "title": "Muse exposes users' personal and business secrets when they share conversations",
-   "url": "https://arstechnica.com/security/2026/10/meta-muse-exposes-users-personal-and-business-secrets-when-they-share-conversations/",
+   "title": "towards acceleration of drug development, an extremely exciting and promising emerging application…",
+   "url": "https://x.com/gdb/status/2112797730829697108",
+   "source": "𝕏 @gdb",
+   "published_at": "2026-10-21T06:46:47Z",
+   "text": "towards acceleration of drug development, an extremely exciting and promising emerging application of our models",
+   "author_name": "Greg Brockman",
+   "likes": 1163,
+   "story": "OpenAI acquires Orchestra Bio, which builds AI agents to help manage drug development, and plans to integrate the tech into Rosalind, its life sciences AI suite"
+  },
+  {
+   "title": "Using Claude to reduce the attack surface of code",
+   "url": "https://www.anthropic.com/research/attack-surface-reduction",
    "source": "Hacker News",
-   "published_at": "2026-10-21T00:45:59Z",
-   "text": "254 points and 111 comments on Hacker News.",
-   "points": 254,
-   "discussion": "https://news.ycombinator.com/item?id=50174687"
+   "published_at": "2026-10-21T03:36:43Z",
+   "text": "98 points and 59 comments on Hacker News.",
+   "points": 98,
+   "discussion": "https://news.ycombinator.com/item?id=50175779"
+  },
+  {
+   "title": "The WSJ has seen Anthropic's new draft prospectus. Some numbers: They plan to spend three-quarters…",
+   "url": "https://x.com/AndrewCurran_/status/2112641878147649911",
+   "source": "𝕏 @AndrewCurran_",
+   "published_at": "2026-10-20T20:27:29Z",
+   "text": "The WSJ has seen Anthropic's new draft prospectus. Some numbers: They plan to spend three-quarters of a trillion dollars on compute over the next seven to ten years. - $111 billion on Google cloud computing contracts - $110 billion with Amazon Web Services - $31 billion on…",
+   "author_name": "Andrew Curran",
+   "likes": 773,
+   "story": "Anthropic's IPO prospectus: ~$16.3B in H1 2026 revenue, ~20% from two clients and up from $1.1B in H1 2025, and an $80.7B net loss, $72B from accounting charges"
   },
   {
    "title": "OpenAI says it will make its AI models available on Google Cloud's model garden and Antigravity cod…",
@@ -107,28 +127,11 @@
    "via": "Techmeme"
   },
   {
-   "title": "Using Claude to reduce the attack surface of code",
-   "url": "https://www.anthropic.com/research/attack-surface-reduction",
-   "source": "Hacker News",
-   "published_at": "2026-10-21T03:36:43Z",
-   "text": "90 points and 54 comments on Hacker News.",
-   "points": 90,
-   "discussion": "https://news.ycombinator.com/item?id=50175779"
-  },
-  {
    "title": "Anthropic update on independent evaluators",
    "url": "https://www.anthropic.com/news/an-update-on-independent-evaluators",
    "source": "Anthropic",
    "published_at": "2026-10-20T03:29:34Z",
    "text": "Anthropic announces updates to embedding independent evaluators"
-  },
-  {
-   "title": "Google says it is rolling out Personal Intelligence for Gemini on Android Auto now, and to cars wit…",
-   "url": "https://9to5google.com/2026/10/20/gemini-android-auto-personal-intelligence/",
-   "source": "Abner Li / 9to5Google",
-   "published_at": "2026-10-20T22:31:17Z",
-   "text": "Google says it is rolling out Personal Intelligence for Gemini on Android Auto now, and to cars with Google built-in in the coming months, as an opt-in feature. Google is beginning to roll out Personal Intelligence for Gemini on Android Auto and Android Automotive (cars with Google built-in).",
-   "via": "Techmeme"
   }
  ],
  "sources": "curated, Techmeme, X (found via Techmeme, Reddit, the Internet Archive), Claude Code releases, Anthropic, Hacker News, Simon Willison"
