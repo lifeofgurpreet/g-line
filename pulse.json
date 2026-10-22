@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-22T12:18:49Z",
+ "generated_at": "2026-10-22T12:50:28Z",
  "items": [
   {
    "title": "Anthropic unveils Claude Duet, a proactive agent app on iOS, Android, and the web that works in the…",
@@ -11,14 +11,14 @@
    "via": "Techmeme"
   },
   {
-   "title": "GPT-Rosalind surfaced a new lead for drug discovery: could restoring cholesterol transport protect…",
-   "url": "https://x.com/OpenAI/status/2112899854569762936",
+   "title": "OpenAI models helped researchers—operating as part of our Patch the Planet initiative—discover crit…",
+   "url": "https://x.com/OpenAI/status/2112907856018309586",
    "source": "𝕏 @OpenAI",
-   "published_at": "2026-10-21T13:32:35Z",
-   "text": "GPT-Rosalind surfaced a new lead for drug discovery: could restoring cholesterol transport protect neurons from degeneration? DCTN1 is a gene linked to Perry syndrome, a rare neurodegenerative disorder. In mouse-brain data, disrupting it increased expression of genes involved in…",
+   "published_at": "2026-10-21T14:04:23Z",
+   "text": "OpenAI models helped researchers—operating as part of our Patch the Planet initiative—discover critical security flaws in PHP, an open-source programming language used to run an estimated 70% of websites. Over the past two months, we led a coalition of maintainers, researchers,…",
    "author_name": "OpenAI",
-   "likes": 6571,
-   "story": "OpenAI, PerturbAI, and Scripps say thousands of GPT-Rosalind agents analyzed data on millions of mouse brain cells in 32 minutes, a job that takes humans months"
+   "likes": 14110,
+   "story": "The PHP Foundation says its patches for the RCE vulnerabilities are limited to PHP 8.2 and newer, leaving legacy deployments dependent on third-party vendors"
   },
   {
    "title": "Claude Code 2.1.308 released",
@@ -34,7 +34,7 @@
    "published_at": "2026-10-22T11:10:41Z",
    "text": "Introducing Ling-3.1-flash-1019 🚀 It scores 44 on the Artificial Analysis Intelligence Index, up from 41 for Ling-3.1-flash. Gains in agentic work: AA-Briefcase ~1400→1524 Elo and AutomationBench-AA 62%→68%. API access and open weights coming soon. Stay tuned.",
    "author_name": "Ant Ling",
-   "likes": 389,
+   "likes": 523,
    "story": "Ling-3.1-flash is getting a 1019 update, with open weights to follow"
   },
   {
@@ -44,7 +44,7 @@
    "published_at": "2026-10-21T18:02:07Z",
    "text": "My bar for AGI is still an AI winning a Nobel. But an AI researcher looking at the lm_head (that *everyone* tells you to keep in high precision) deciding to quantize it to 4 bits AND being actually right (0.7pt from bf16) is definitely impressive. Even better when the result…",
    "author_name": "Thomas Wolf",
-   "likes": 387,
+   "likes": 392,
    "story": "Recursive releases Flint, an open-weight, 40B-parameter coding model developed with its Eureka Machine AI system, which automated most of the development"
   },
   {
@@ -60,8 +60,8 @@
    "url": "https://simedw.com/2026/10/21/world-model-terminal/",
    "source": "Hacker News",
    "published_at": "2026-10-22T02:18:41Z",
-   "text": "289 points and 92 comments on Hacker News.",
-   "points": 289,
+   "text": "317 points and 94 comments on Hacker News.",
+   "points": 317,
    "discussion": "https://news.ycombinator.com/item?id=50190363"
   },
   {
@@ -91,16 +91,16 @@
    "url": "https://github.com/openai/openai-cli",
    "source": "Hacker News",
    "published_at": "2026-10-22T05:23:11Z",
-   "text": "151 points and 81 comments on Hacker News.",
-   "points": 151,
+   "text": "165 points and 82 comments on Hacker News.",
+   "points": 165,
    "discussion": "https://news.ycombinator.com/item?id=50191507"
   },
   {
-   "title": "Hugging Face releases Carbon-X, an open-source, 14B-parameter multimodal AI model to let users quer…",
-   "url": "https://www.wired.com/story/hugging-face-new-ai-biology-model-chat-with-dna/",
-   "source": "Emily Mullin / Wired",
-   "published_at": "2026-10-22T10:46:21Z",
-   "text": "Hugging Face releases Carbon-X, an open-source, 14B-parameter multimodal AI model to let users query DNA sequences via natural language, trained on 300B tokens. The new open-source model speaks the language of DNA and can help researchers understand the effects of any changes on gene activity and health.",
+   "title": "Barclays plans to cut 5,000 jobs, or ~5% of its workforce, by the end of 2026 as part of AI-driven…",
+   "url": "https://www.bloomberg.com/news/articles/2026-10-22/barclays-to-cut-5-000-jobs-as-ai-starts-creating-efficiency",
+   "source": "William Shaw / Bloomberg",
+   "published_at": "2026-10-22T09:46:35Z",
+   "text": "Barclays plans to cut 5,000 jobs, or ~5% of its workforce, by the end of 2026 as part of AI-driven cost cutting, with ~60% coming from support and developers. Barclays to Cut 5,000 Jobs as AI Starts to Create Efficiency — Video Player is loading. — Unmute — Current Time 0:00 Loaded: 69.77% Playback Rate",
    "via": "Techmeme"
   },
   {
@@ -108,8 +108,8 @@
    "url": "https://claude.com/product/claude-duet",
    "source": "Hacker News",
    "published_at": "2026-10-21T19:14:01Z",
-   "text": "432 points and 393 comments on Hacker News.",
-   "points": 432,
+   "text": "443 points and 408 comments on Hacker News.",
+   "points": 443,
    "discussion": "https://news.ycombinator.com/item?id=50186037"
   },
   {
@@ -120,11 +120,11 @@
    "text": "Dr. Christopher Stubbs, an experimental physicist and former Dean of Science at Harvard University, has joined Anthropic’s Long-Term Benefit Trust. He brings to the Trust decades of scientific expertise across observational cosmology and precision measurement. He has also advised the US government on national security and arms control. “I am honored to join Anthropic’s Long-Term Benefit Trust and to help the company deliver on its public benefit mission,” said Stubbs."
   },
   {
-   "title": "Walmart unveils Agent Gateway, an MCP server for AI agents to shop its site, and Agent Profiles to…",
-   "url": "https://techcrunch.com/2026/10/21/while-amazon-blocks-ai-agents-walmart-rolls-out-the-welcome-mat/",
-   "source": "Sarah Perez / TechCrunch",
-   "published_at": "2026-10-22T03:51:08Z",
-   "text": "Walmart unveils Agent Gateway, an MCP server for AI agents to shop its site, and Agent Profiles to authorize agents and track their purchases separately. Walmart is embracing agentic commerce with the launch of its own Agent Gateway to manage transactions and other new features aimed …",
+   "title": "Hugging Face releases Carbon-X, an open-source, 14B-parameter multimodal AI model to let users quer…",
+   "url": "https://www.wired.com/story/hugging-face-new-ai-biology-model-chat-with-dna/",
+   "source": "Emily Mullin / Wired",
+   "published_at": "2026-10-22T10:46:21Z",
+   "text": "Hugging Face releases Carbon-X, an open-source, 14B-parameter multimodal AI model to let users query DNA sequences via natural language, trained on 300B tokens. The new open-source model speaks the language of DNA and can help researchers understand the effects of any changes on gene activity and health.",
    "via": "Techmeme"
   }
  ],
