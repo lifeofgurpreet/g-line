@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-22T02:09:49Z",
+ "generated_at": "2026-10-22T02:43:12Z",
  "items": [
   {
    "title": "Anthropic unveils Claude Duet, a proactive agent app on iOS, Android, and the web that works in the…",
@@ -17,7 +17,7 @@
    "published_at": "2026-10-21T14:04:23Z",
    "text": "OpenAI models helped researchers—operating as part of our Patch the Planet initiative—discover critical security flaws in PHP, an open-source programming language used to run an estimated 70% of websites. Over the past two months, we led a coalition of maintainers, researchers,…",
    "author_name": "OpenAI",
-   "likes": 13571,
+   "likes": 13615,
    "story": "The PHP Foundation details how it found and fixed the two flaws, and says it had to release patches a day early after the two CVE IDs began circulating online"
   },
   {
@@ -34,15 +34,15 @@
    "published_at": "2026-10-21T15:35:47Z",
    "text": "The NSA is telling American companies to take production systems offline. The AI-era of cybersecurity has fully arrived.",
    "author_name": "David Vorick",
-   "likes": 12495,
+   "likes": 12621,
    "story": "PHP releases security fixes for two critical unauthenticated RCE vulnerabilities, affecting all web request-serving installations, and urges PHP users to update"
   },
   {
-   "title": "Meta says it will create a new class of nonvoting stock to raise the capital it needs for developin…",
-   "url": "https://www.wsj.com/articles/metaplatforms-meta-3q-earnings-report-2026-stock-f28d64c2?st=Uj26V6&reflink=desktopwebshare_permalink",
-   "source": "Meghan Bobrowsky / Wall Str…",
-   "published_at": "2026-10-21T20:21:07Z",
-   "text": "Meta says it will create a new class of nonvoting stock to raise the capital it needs for developing AI models, with an effective date in January 2027. The company, which reported record revenue of $64.2 billion for the third quarter, said the new stock won't affect Mark Zuckerberg's voting control",
+   "title": "Mark Zuckerberg says Muse has drawn 10M+ users since its launch and 25%+ of users are making purcha…",
+   "url": "https://www.businessinsider.com/meta-q3-2026-earnings-mark-zuckerberg-muse-ai-app-users-2026-10",
+   "source": "Business Insider",
+   "published_at": "2026-10-21T21:21:09Z",
+   "text": "Mark Zuckerberg says Muse has drawn 10M+ users since its launch and 25%+ of users are making purchases through the app, with an average purchase size of $200+. - Meta reported third-quarter earnings on Wednesday. — Meta CEO Mark Zuckerberg said over 10 million people have set up a Muse AI agent since its launch.",
    "via": "Techmeme"
   },
   {
@@ -50,8 +50,8 @@
    "url": "https://claude.com/product/claude-duet",
    "source": "Hacker News",
    "published_at": "2026-10-21T19:14:01Z",
-   "text": "318 points and 278 comments on Hacker News.",
-   "points": 318,
+   "text": "322 points and 280 comments on Hacker News.",
+   "points": 322,
    "discussion": "https://news.ycombinator.com/item?id=50186037"
   },
   {
@@ -61,7 +61,7 @@
    "published_at": "2026-10-21T02:26:30Z",
    "text": "Thank you for this, @_NathanCalvin. I appreciate and am a fan of the investigative work you’ve done on behalf of AI safety and believe your comments are coming from a constructive, honest place, and that it benefits the public to have people whose job is to scrutinize the actions…",
    "author_name": "Dario Amodei",
-   "likes": 3861,
+   "likes": 3877,
    "story": "Dario Amodei says Anthropic's “race to the top” makes AI safer, lists nine safety decisions with “substantial costs”, and admits to mishandling a draft AI bill"
   },
   {
@@ -93,7 +93,7 @@
    "published_at": "2026-10-21T17:42:32Z",
    "text": "We built ChatGPT’s ad stack to respond to an evolving conversation, while ensuring answers stay independent. Here’s how the LLM orchestrator, retrieval, ranking and auction tools work together.",
    "author_name": "OpenAI Developers",
-   "likes": 792,
+   "likes": 813,
    "story": "OpenAI expands ChatGPT ads to 26 additional countries, taking the total to 83 countries, and says the platform has 100K+ advertisers, up from 20K in late August"
   },
   {
@@ -101,8 +101,8 @@
    "url": "https://openai.com/index/coordinated-disclosure-of-critical-vulnerabilities/",
    "source": "Hacker News",
    "published_at": "2026-10-21T14:03:43Z",
-   "text": "236 points and 162 comments on Hacker News.",
-   "points": 236,
+   "text": "237 points and 162 comments on Hacker News.",
+   "points": 237,
    "discussion": "https://news.ycombinator.com/item?id=50181175"
   },
   {
@@ -112,7 +112,7 @@
    "published_at": "2026-10-21T16:29:32Z",
    "text": "Introducing Flint, @Recursive_SI’s first model: a fast local coding model built with our automated research system, the Eureka Machine. • Best-in-class fast local coding • Up to 2x faster than comparable models: 125+ tokens/sec on a MacBook Pro, 150+ on RTX Spark • Built from…",
    "author_name": "Richard Socher",
-   "likes": 5197,
+   "likes": 5354,
    "story": "Recursive releases Flint, an open-weight, 40B-parameter coding model developed with its Eureka Machine AI system, which automated most of the development"
   },
   {
@@ -122,7 +122,7 @@
    "published_at": "2026-10-21T14:01:36Z",
    "text": "GPTs will also now be available in Antigravity.",
    "author_name": "Andrew Curran",
-   "likes": 355,
+   "likes": 358,
    "story": "OpenAI says it will make its AI models available on Google Cloud's model garden and Antigravity coding tool in the coming weeks, after launching on AWS in April",
    "links": [
     "https://openai.com/index/openai-models-google-cloud/"
