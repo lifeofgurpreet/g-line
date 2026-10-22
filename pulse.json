@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-21T23:27:03Z",
+ "generated_at": "2026-10-21T23:58:33Z",
  "items": [
   {
    "title": "Anthropic unveils Claude Duet, a proactive agent app on iOS, Android, and the web that works in the…",
@@ -17,7 +17,7 @@
    "published_at": "2026-10-21T14:04:23Z",
    "text": "OpenAI models helped researchers—operating as part of our Patch the Planet initiative—discover critical security flaws in PHP, an open-source programming language used to run an estimated 70% of websites. Over the past two months, we led a coalition of maintainers, researchers,…",
    "author_name": "OpenAI",
-   "likes": 13206,
+   "likes": 13303,
    "story": "The PHP Foundation details how it found and fixed the two flaws, and says it had to release patches a day early after the two CVE IDs began circulating online"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-10-21T02:26:30Z",
    "text": "Thank you for this, @_NathanCalvin. I appreciate and am a fan of the investigative work you’ve done on behalf of AI safety and believe your comments are coming from a constructive, honest place, and that it benefits the public to have people whose job is to scrutinize the actions…",
    "author_name": "Dario Amodei",
-   "likes": 3803,
+   "likes": 3816,
    "story": "Dario Amodei says Anthropic's “race to the top” makes AI safer, lists nine safety decisions with “substantial costs”, and admits to mishandling a draft AI bill"
   },
   {
@@ -50,8 +50,8 @@
    "url": "https://claude.com/product/claude-duet",
    "source": "Hacker News",
    "published_at": "2026-10-21T19:14:01Z",
-   "text": "279 points and 231 comments on Hacker News.",
-   "points": 279,
+   "text": "288 points and 242 comments on Hacker News.",
+   "points": 288,
    "discussion": "https://news.ycombinator.com/item?id=50186037"
   },
   {
@@ -61,7 +61,7 @@
    "published_at": "2026-10-21T17:42:32Z",
    "text": "We built ChatGPT’s ad stack to respond to an evolving conversation, while ensuring answers stay independent. Here’s how the LLM orchestrator, retrieval, ranking and auction tools work together.",
    "author_name": "OpenAI Developers",
-   "likes": 713,
+   "likes": 730,
    "story": "OpenAI expands ChatGPT ads to 26 additional countries, taking the total to 83 countries, and says the platform has 100K+ advertisers, up from 20K in late August"
   },
   {
@@ -93,7 +93,7 @@
    "published_at": "2026-10-21T14:01:36Z",
    "text": "GPTs will also now be available in Antigravity.",
    "author_name": "Andrew Curran",
-   "likes": 344,
+   "likes": 348,
    "story": "OpenAI says it will make its AI models available on Google Cloud's model garden and Antigravity coding tool in the coming weeks, after launching on AWS in April",
    "links": [
     "https://openai.com/index/openai-models-google-cloud/"
@@ -104,8 +104,8 @@
    "url": "https://canarytokens.org/",
    "source": "Hacker News",
    "published_at": "2026-10-21T18:45:04Z",
-   "text": "116 points and 21 comments on Hacker News.",
-   "points": 116,
+   "text": "124 points and 21 comments on Hacker News.",
+   "points": 124,
    "discussion": "https://news.ycombinator.com/item?id=50185630"
   },
   {
@@ -121,8 +121,8 @@
    "url": "https://openai.com/index/coordinated-disclosure-of-critical-vulnerabilities/",
    "source": "Hacker News",
    "published_at": "2026-10-21T14:03:43Z",
-   "text": "220 points and 142 comments on Hacker News.",
-   "points": 220,
+   "text": "224 points and 147 comments on Hacker News.",
+   "points": 224,
    "discussion": "https://news.ycombinator.com/item?id=50181175"
   },
   {
