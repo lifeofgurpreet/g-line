@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-22T08:36:02Z",
+ "generated_at": "2026-10-22T09:07:17Z",
  "items": [
   {
    "title": "Anthropic unveils Claude Duet, a proactive agent app on iOS, Android, and the web that works in the…",
@@ -17,8 +17,8 @@
    "published_at": "2026-10-21T14:04:23Z",
    "text": "OpenAI models helped researchers—operating as part of our Patch the Planet initiative—discover critical security flaws in PHP, an open-source programming language used to run an estimated 70% of websites. Over the past two months, we led a coalition of maintainers, researchers,…",
    "author_name": "OpenAI",
-   "likes": 13950,
-   "story": "Cloudflare says it deployed WAF mitigations for all free and paid tier customers to combat two PHP flaws by default, about nine hours ahead of public disclosure"
+   "likes": 13973,
+   "story": "AWS analysts say that at least one actor attempted to exploit the PHP2Shell vulnerabilities on October 17, four days before their public disclosure and patching"
   },
   {
    "title": "Claude Code 2.1.308 released",
@@ -34,7 +34,7 @@
    "published_at": "2026-10-21T18:02:07Z",
    "text": "My bar for AGI is still an AI winning a Nobel. But an AI researcher looking at the lm_head (that *everyone* tells you to keep in high precision) deciding to quantize it to 4 bits AND being actually right (0.7pt from bf16) is definitely impressive. Even better when the result…",
    "author_name": "Thomas Wolf",
-   "likes": 351,
+   "likes": 360,
    "story": "Recursive releases Flint, an open-weight, 40B-parameter coding model developed with its Eureka Machine AI system, which automated most of the development"
   },
   {
@@ -50,8 +50,8 @@
    "url": "https://github.com/openai/openai-cli",
    "source": "Hacker News",
    "published_at": "2026-10-22T05:23:11Z",
-   "text": "91 points and 60 comments on Hacker News.",
-   "points": 91,
+   "text": "102 points and 67 comments on Hacker News.",
+   "points": 102,
    "discussion": "https://news.ycombinator.com/item?id=50191507"
   },
   {
@@ -94,8 +94,8 @@
    "url": "https://simedw.com/2026/10/21/world-model-terminal/",
    "source": "Hacker News",
    "published_at": "2026-10-22T02:18:41Z",
-   "text": "146 points and 48 comments on Hacker News.",
-   "points": 146,
+   "text": "166 points and 52 comments on Hacker News.",
+   "points": 166,
    "discussion": "https://news.ycombinator.com/item?id=50190363"
   },
   {
@@ -111,8 +111,8 @@
    "url": "https://claude.com/product/claude-duet",
    "source": "Hacker News",
    "published_at": "2026-10-21T19:14:01Z",
-   "text": "352 points and 322 comments on Hacker News.",
-   "points": 352,
+   "text": "357 points and 333 comments on Hacker News.",
+   "points": 357,
    "discussion": "https://news.ycombinator.com/item?id=50186037"
   },
   {
