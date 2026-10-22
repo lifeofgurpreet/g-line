@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-22T02:43:12Z",
+ "generated_at": "2026-10-22T03:14:44Z",
  "items": [
   {
    "title": "Anthropic unveils Claude Duet, a proactive agent app on iOS, Android, and the web that works in the…",
@@ -17,7 +17,7 @@
    "published_at": "2026-10-21T14:04:23Z",
    "text": "OpenAI models helped researchers—operating as part of our Patch the Planet initiative—discover critical security flaws in PHP, an open-source programming language used to run an estimated 70% of websites. Over the past two months, we led a coalition of maintainers, researchers,…",
    "author_name": "OpenAI",
-   "likes": 13615,
+   "likes": 13660,
    "story": "The PHP Foundation details how it found and fixed the two flaws, and says it had to release patches a day early after the two CVE IDs began circulating online"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-10-21T15:35:47Z",
    "text": "The NSA is telling American companies to take production systems offline. The AI-era of cybersecurity has fully arrived.",
    "author_name": "David Vorick",
-   "likes": 12621,
+   "likes": 12716,
    "story": "PHP releases security fixes for two critical unauthenticated RCE vulnerabilities, affecting all web request-serving installations, and urges PHP users to update"
   },
   {
@@ -50,8 +50,8 @@
    "url": "https://claude.com/product/claude-duet",
    "source": "Hacker News",
    "published_at": "2026-10-21T19:14:01Z",
-   "text": "322 points and 280 comments on Hacker News.",
-   "points": 322,
+   "text": "327 points and 292 comments on Hacker News.",
+   "points": 327,
    "discussion": "https://news.ycombinator.com/item?id=50186037"
   },
   {
@@ -61,7 +61,7 @@
    "published_at": "2026-10-21T02:26:30Z",
    "text": "Thank you for this, @_NathanCalvin. I appreciate and am a fan of the investigative work you’ve done on behalf of AI safety and believe your comments are coming from a constructive, honest place, and that it benefits the public to have people whose job is to scrutinize the actions…",
    "author_name": "Dario Amodei",
-   "likes": 3877,
+   "likes": 3889,
    "story": "Dario Amodei says Anthropic's “race to the top” makes AI safer, lists nine safety decisions with “substantial costs”, and admits to mishandling a draft AI bill"
   },
   {
@@ -93,7 +93,7 @@
    "published_at": "2026-10-21T17:42:32Z",
    "text": "We built ChatGPT’s ad stack to respond to an evolving conversation, while ensuring answers stay independent. Here’s how the LLM orchestrator, retrieval, ranking and auction tools work together.",
    "author_name": "OpenAI Developers",
-   "likes": 813,
+   "likes": 825,
    "story": "OpenAI expands ChatGPT ads to 26 additional countries, taking the total to 83 countries, and says the platform has 100K+ advertisers, up from 20K in late August"
   },
   {
@@ -101,8 +101,8 @@
    "url": "https://openai.com/index/coordinated-disclosure-of-critical-vulnerabilities/",
    "source": "Hacker News",
    "published_at": "2026-10-21T14:03:43Z",
-   "text": "237 points and 162 comments on Hacker News.",
-   "points": 237,
+   "text": "238 points and 162 comments on Hacker News.",
+   "points": 238,
    "discussion": "https://news.ycombinator.com/item?id=50181175"
   },
   {
@@ -112,7 +112,7 @@
    "published_at": "2026-10-21T16:29:32Z",
    "text": "Introducing Flint, @Recursive_SI’s first model: a fast local coding model built with our automated research system, the Eureka Machine. • Best-in-class fast local coding • Up to 2x faster than comparable models: 125+ tokens/sec on a MacBook Pro, 150+ on RTX Spark • Built from…",
    "author_name": "Richard Socher",
-   "likes": 5354,
+   "likes": 5509,
    "story": "Recursive releases Flint, an open-weight, 40B-parameter coding model developed with its Eureka Machine AI system, which automated most of the development"
   },
   {
