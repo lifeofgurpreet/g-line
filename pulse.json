@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-22T19:16:35Z",
+ "generated_at": "2026-10-22T19:49:00Z",
  "items": [
   {
    "title": "Sources: US banks are restricting third-party AI agents from accessing customer accounts, after som…",
@@ -17,7 +17,7 @@
    "published_at": "2026-10-21T19:09:35Z",
    "text": "We’re opening a research preview of Claude Duet, a new app where Claude works as a proactive agent. It comes to you with what needs your attention, completes tasks you ask of it, keeps working when you step away, and checks with you before it acts on your behalf.",
    "author_name": "Claude",
-   "likes": 52017,
+   "likes": 52154,
    "story": "Anthropic debuts Claude Duet, a proactive agent app for iOS, Android, and the web that works in the background, in research preview for US Pro and Max users"
   },
   {
@@ -34,15 +34,15 @@
    "published_at": "2026-10-22T15:41:24Z",
    "text": "💥 Introducing Warp Sciences, a new company applying AI and robotics to help the world develop new medicines faster. We’ve raised a $215M Series A led by @lightspeedvp to bring frontier AI out of the browser and into the lab, and build scientific capacity here in America. I…",
    "author_name": "Kevin Weil 🇺🇸",
-   "likes": 1362,
+   "likes": 1419,
    "story": "Warp Sciences, founded by former OpenAI CPO Kevin Weil to speed up drug development using AI, emerges from stealth with $215M at an $865M post-money valuation"
   },
   {
-   "title": "METR says a pilot test of OpenAI's monitoring system found vulnerabilities, including an exploit th…",
-   "url": "https://www.reuters.com/business/ai-safety-group-metr-finds-flaws-openais-internal-monitoring-system-2026-10-22/",
-   "source": "Anzar Mehraj / Reuters",
-   "published_at": "2026-10-22T16:26:38Z",
-   "text": "METR says a pilot test of OpenAI's monitoring system found vulnerabilities, including an exploit that could have let AI agents hide hundreds of recent actions. AI safety research group METR said on Thursday a pilot exercise to stress-test OpenAI's internal monitoring system uncovered several …",
+   "title": "Microsoft says China-linked hackers used AI penetration testing tool ARTEX to compromise ConnectWis…",
+   "url": "https://www.reuters.com/technology/chinese-linked-hackers-compromise-connectwise-target-hundreds-global-attack-2026-10-21/",
+   "source": "AJ Vicens / Reuters",
+   "published_at": "2026-10-22T06:26:04Z",
+   "text": "Microsoft says China-linked hackers used AI penetration testing tool ARTEX to compromise ConnectWise as part of a campaign targeting hundreds of organizations. A Chinese state-aligned hacking group used an AI-driven penetration testing tool to compromise IT services firm ConnectWise as part …",
    "via": "Techmeme"
   },
   {
@@ -50,19 +50,19 @@
    "url": "https://github.com/NVIDIA/OpenShell",
    "source": "Hacker News",
    "published_at": "2026-10-22T17:44:06Z",
-   "text": "83 points and 40 comments on Hacker News.",
-   "points": 83,
+   "text": "110 points and 55 comments on Hacker News.",
+   "points": 110,
    "discussion": "https://news.ycombinator.com/item?id=50198675"
   },
   {
-   "title": "Kimi K3.1 vs Qwen 4: 3D helicopter Same prompt, takeoff/land, 3D assembly and exploded views, very…",
-   "url": "https://x.com/LuminaBench/status/2113217029675085963",
-   "source": "𝕏 @LuminaBench",
-   "published_at": "2026-10-22T10:32:56Z",
-   "text": "Kimi K3.1 vs Qwen 4: 3D helicopter Same prompt, takeoff/land, 3D assembly and exploded views, very similar gen time at around 15-20 minutes for both China are not playing games anymore, these are very strong",
-   "author_name": "Lumina",
-   "likes": 588,
-   "story": "Qwen4 and Kimi3.1 on Arena apperantly"
+   "title": "Two employees from METR and Redwood Research worked on premises at OpenAI for three weeks this summ…",
+   "url": "https://x.com/METR_Evals/status/2113290966933389390",
+   "source": "𝕏 @METR_Evals",
+   "published_at": "2026-10-22T15:26:44Z",
+   "text": "Two employees from METR and Redwood Research worked on premises at OpenAI for three weeks this summer in an embedded assessment pilot. This team evaluated the systems OpenAI was using to monitor for misalignment from internal agents. A brief write-up of their work is now public.",
+   "author_name": "METR",
+   "likes": 762,
+   "story": "METR says a pilot test of OpenAI's monitoring system found vulnerabilities, including an exploit that could have let AI agents hide hundreds of recent actions"
   },
   {
    "title": "Donating Agent Skills to the Agentic AI Foundation",
@@ -79,28 +79,38 @@
    "text": "My latest vibe coded game experiment is a Command & Conquer style RTS (Real Time Strategy) game called Battle Drones ( play it here ). Unlike my previous experiments , this one is actually fun to play . I'm somewhat embarrassed to admit that I got there by telling Claude to \"Make it a LOT more fun\". It also supports multiplayer between nearby devices using audio to synchronize game state! Here's what I've built so far, and some of the things I learned along the way."
   },
   {
-   "title": "Microsoft says China-linked hackers used AI penetration testing tool ARTEX to compromise ConnectWis…",
-   "url": "https://www.reuters.com/technology/chinese-linked-hackers-compromise-connectwise-target-hundreds-global-attack-2026-10-21/",
-   "source": "AJ Vicens / Reuters",
-   "published_at": "2026-10-22T06:26:04Z",
-   "text": "Microsoft says China-linked hackers used AI penetration testing tool ARTEX to compromise ConnectWise as part of a campaign targeting hundreds of organizations. A Chinese state-aligned hacking group used an AI-driven penetration testing tool to compromise IT services firm ConnectWise as part …",
+   "title": "Palantir says that neither it nor the US government has a “kill switch” for its Maven military AI s…",
+   "url": "https://www.reuters.com/business/media-telecom/palantir-says-it-cannot-shut-off-nato-ai-system-europeans-fear-us-tech-2026-10-22/",
+   "source": "Andrew Gray / Reuters",
+   "published_at": "2026-10-22T10:11:15Z",
+   "text": "Palantir says that neither it nor the US government has a “kill switch” for its Maven military AI system that NATO uses, after Ukraine's Starshield disruptions. US software company Palantir (PLTR.O) sought to reassure Europeans that its military AI system used by NATO has no …",
    "via": "Techmeme"
+  },
+  {
+   "title": "Kimi K3.1 vs Qwen 4: 3D helicopter Same prompt, takeoff/land, 3D assembly and exploded views, very…",
+   "url": "https://x.com/LuminaBench/status/2113217029675085963",
+   "source": "𝕏 @LuminaBench",
+   "published_at": "2026-10-22T10:32:56Z",
+   "text": "Kimi K3.1 vs Qwen 4: 3D helicopter Same prompt, takeoff/land, 3D assembly and exploded views, very similar gen time at around 15-20 minutes for both China are not playing games anymore, these are very strong",
+   "author_name": "Lumina",
+   "likes": 598,
+   "story": "Qwen4 and Kimi3.1 on Arena apperantly"
   },
   {
    "title": "WorldTUI: I trained a 360M model to pretend to be a terminal",
    "url": "https://simedw.com/2026/10/21/world-model-terminal/",
    "source": "Hacker News",
    "published_at": "2026-10-22T02:18:41Z",
-   "text": "451 points and 144 comments on Hacker News.",
-   "points": 451,
+   "text": "455 points and 145 comments on Hacker News.",
+   "points": 455,
    "discussion": "https://news.ycombinator.com/item?id=50190363"
   },
   {
-   "title": "1Password passes $500M in ARR, up from $400M in November 2025, driven by enterprise AI coding assis…",
-   "url": "https://www.wsj.com/tech/ai/1password-surpasses-500-million-in-revenue-as-ai-agents-drive-growth-903ccd4b?st=acBBcU&reflink=desktopwebshare_permalink",
-   "source": "Elias Schisgall / Wall Stre…",
-   "published_at": "2026-10-22T13:06:04Z",
-   "text": "1Password passes $500M in ARR, up from $400M in November 2025, driven by enterprise AI coding assistants and agents, and launches 1Password for Agents. And the free cash flow margin is in the double digits amid an explosion in coding assistants and agents in enterprise settings",
+   "title": "The Browser Company says it will shut down its Arc browser on December 22, launched in 2023, shifti…",
+   "url": "https://www.theverge.com/tech/1016832/arc-browser-shutting-down",
+   "source": "Jay Peters / The Verge",
+   "published_at": "2026-10-22T17:26:36Z",
+   "text": "The Browser Company says it will shut down its Arc browser on December 22, launched in 2023, shifting attention to its AI-focused Dia browser, launched in 2025. New feature development for the innovative web browser ended last year. Now The Browser Company is telling users to try Dia, Arc's replacement.",
    "via": "Techmeme"
   },
   {
@@ -108,8 +118,8 @@
    "url": "https://claude.com/product/claude-duet",
    "source": "Hacker News",
    "published_at": "2026-10-21T19:14:01Z",
-   "text": "531 points and 497 comments on Hacker News.",
-   "points": 531,
+   "text": "534 points and 500 comments on Hacker News.",
+   "points": 534,
    "discussion": "https://news.ycombinator.com/item?id=50186037"
   },
   {
@@ -118,14 +128,6 @@
    "source": "Anthropic",
    "published_at": "2026-10-21T19:53:59Z",
    "text": "Anthropic is an AI safety and research company that's working to build reliable, interpretable, and steerable AI systems."
-  },
-  {
-   "title": "Palantir says that neither it nor the US government has a “kill switch” for its Maven military AI s…",
-   "url": "https://www.reuters.com/business/media-telecom/palantir-says-it-cannot-shut-off-nato-ai-system-europeans-fear-us-tech-2026-10-22/",
-   "source": "Andrew Gray / Reuters",
-   "published_at": "2026-10-22T10:11:15Z",
-   "text": "Palantir says that neither it nor the US government has a “kill switch” for its Maven military AI system that NATO uses, after Ukraine's Starshield disruptions. US software company Palantir (PLTR.O) sought to reassure Europeans that its military AI system used by NATO has no …",
-   "via": "Techmeme"
   }
  ],
  "sources": "curated, Techmeme, X (found via Techmeme, Reddit, the Internet Archive), Claude Code releases, Anthropic, Hacker News, Simon Willison"
