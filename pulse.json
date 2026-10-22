@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-22T10:11:06Z",
+ "generated_at": "2026-10-22T10:44:13Z",
  "items": [
   {
    "title": "Anthropic unveils Claude Duet, a proactive agent app on iOS, Android, and the web that works in the…",
@@ -17,7 +17,7 @@
    "published_at": "2026-10-21T14:04:23Z",
    "text": "OpenAI models helped researchers—operating as part of our Patch the Planet initiative—discover critical security flaws in PHP, an open-source programming language used to run an estimated 70% of websites. Over the past two months, we led a coalition of maintainers, researchers,…",
    "author_name": "OpenAI",
-   "likes": 14018,
+   "likes": 14031,
    "story": "The PHP Foundation details how it found and fixed the two flaws, and says it had to release patches a day early after the two CVE IDs began circulating online"
   },
   {
@@ -28,14 +28,14 @@
    "text": "Bug fixes and reliability improvements"
   },
   {
-   "title": "We built ChatGPT’s ad stack to respond to an evolving conversation, while ensuring answers stay ind…",
-   "url": "https://x.com/OpenAIDevs/status/2112962753682198969",
-   "source": "𝕏 @OpenAIDevs",
-   "published_at": "2026-10-21T17:42:32Z",
-   "text": "We built ChatGPT’s ad stack to respond to an evolving conversation, while ensuring answers stay independent. Here’s how the LLM orchestrator, retrieval, ranking and auction tools work together.",
-   "author_name": "OpenAI Developers",
-   "likes": 948,
-   "story": "OpenAI expands ChatGPT ads to 26 additional countries, taking the total to 83 countries, and says the platform has 100K+ advertisers, up from 20K in late August"
+   "title": "My bar for AGI is still an AI winning a Nobel. But an AI researcher looking at the lm_head (that *e…",
+   "url": "https://x.com/Thom_Wolf/status/2112967683813609724",
+   "source": "𝕏 @Thom_Wolf",
+   "published_at": "2026-10-21T18:02:07Z",
+   "text": "My bar for AGI is still an AI winning a Nobel. But an AI researcher looking at the lm_head (that *everyone* tells you to keep in high precision) deciding to quantize it to 4 bits AND being actually right (0.7pt from bf16) is definitely impressive. Even better when the result…",
+   "author_name": "Thomas Wolf",
+   "likes": 374,
+   "story": "Recursive releases Flint, an open-weight, 40B-parameter coding model developed with its Eureka Machine AI system, which automated most of the development"
   },
   {
    "title": "Meta says it will create a new class of nonvoting stock to raise the capital it needs for developin…",
@@ -50,19 +50,9 @@
    "url": "https://github.com/openai/openai-cli",
    "source": "Hacker News",
    "published_at": "2026-10-22T05:23:11Z",
-   "text": "121 points and 71 comments on Hacker News.",
-   "points": 121,
+   "text": "127 points and 72 comments on Hacker News.",
+   "points": 127,
    "discussion": "https://news.ycombinator.com/item?id=50191507"
-  },
-  {
-   "title": "My bar for AGI is still an AI winning a Nobel. But an AI researcher looking at the lm_head (that *e…",
-   "url": "https://x.com/Thom_Wolf/status/2112967683813609724",
-   "source": "𝕏 @Thom_Wolf",
-   "published_at": "2026-10-21T18:02:07Z",
-   "text": "My bar for AGI is still an AI winning a Nobel. But an AI researcher looking at the lm_head (that *everyone* tells you to keep in high precision) deciding to quantize it to 4 bits AND being actually right (0.7pt from bf16) is definitely impressive. Even better when the result…",
-   "author_name": "Thomas Wolf",
-   "likes": 373,
-   "story": "Recursive releases Flint, an open-weight, 40B-parameter coding model developed with its Eureka Machine AI system, which automated most of the development"
   },
   {
    "title": "Developing Enterprise Frontier Safeguards with our customers",
@@ -87,26 +77,37 @@
    "via": "Techmeme"
   },
   {
-   "title": "GPTs will also now be available in Antigravity.",
-   "url": "https://x.com/AndrewCurran_/status/2112907155787411582",
-   "source": "𝕏 @AndrewCurran_",
-   "published_at": "2026-10-21T14:01:36Z",
-   "text": "GPTs will also now be available in Antigravity.",
-   "author_name": "Andrew Curran",
-   "likes": 368,
-   "story": "OpenAI says it will make its AI models available on Google Cloud's model garden and Antigravity coding tool in the coming weeks, after launching on AWS in April",
-   "links": [
-    "https://openai.com/index/openai-models-google-cloud/"
-   ]
-  },
-  {
    "title": "WorldTUI: I trained a 360M model to pretend to be a terminal",
    "url": "https://simedw.com/2026/10/21/world-model-terminal/",
    "source": "Hacker News",
    "published_at": "2026-10-22T02:18:41Z",
-   "text": "210 points and 67 comments on Hacker News.",
-   "points": 210,
+   "text": "230 points and 69 comments on Hacker News.",
+   "points": 230,
    "discussion": "https://news.ycombinator.com/item?id=50190363"
+  },
+  {
+   "title": "Walmart unveils Agent Gateway, an MCP server for AI agents to shop its site, and Agent Profiles to…",
+   "url": "https://techcrunch.com/2026/10/21/while-amazon-blocks-ai-agents-walmart-rolls-out-the-welcome-mat/",
+   "source": "Sarah Perez / TechCrunch",
+   "published_at": "2026-10-22T03:51:08Z",
+   "text": "Walmart unveils Agent Gateway, an MCP server for AI agents to shop its site, and Agent Profiles to authorize agents and track their purchases separately. Walmart is embracing agentic commerce with the launch of its own Agent Gateway to manage transactions and other new features aimed …",
+   "via": "Techmeme"
+  },
+  {
+   "title": "Claude Duet",
+   "url": "https://claude.com/product/claude-duet",
+   "source": "Hacker News",
+   "published_at": "2026-10-21T19:14:01Z",
+   "text": "394 points and 360 comments on Hacker News.",
+   "points": 394,
+   "discussion": "https://news.ycombinator.com/item?id=50186037"
+  },
+  {
+   "title": "Physicist Christopher Stubbs joins Anthropic's Long-Term Benefit Trust",
+   "url": "https://www.anthropic.com/news/christopher-stubbs-joins-long-term-benefit-trust",
+   "source": "Anthropic",
+   "published_at": "2026-10-21T18:22:03Z",
+   "text": "Dr. Christopher Stubbs, an experimental physicist and former Dean of Science at Harvard University, has joined Anthropic’s Long-Term Benefit Trust. He brings to the Trust decades of scientific expertise across observational cosmology and precision measurement. He has also advised the US government on national security and arms control. “I am honored to join Anthropic’s Long-Term Benefit Trust and to help the company deliver on its public benefit mission,” said Stubbs."
   },
   {
    "title": "Barclays plans to cut 5,000 jobs, or ~5% of its workforce, by the end of 2026 as part of AI-driven…",
@@ -117,20 +118,13 @@
    "via": "Techmeme"
   },
   {
-   "title": "Claude Duet",
-   "url": "https://claude.com/product/claude-duet",
+   "title": "OpenAI models are coming to Google Cloud",
+   "url": "https://openai.com/index/openai-models-google-cloud/",
    "source": "Hacker News",
-   "published_at": "2026-10-21T19:14:01Z",
-   "text": "382 points and 351 comments on Hacker News.",
-   "points": 382,
-   "discussion": "https://news.ycombinator.com/item?id=50186037"
-  },
-  {
-   "title": "Physicist Christopher Stubbs joins Anthropic's Long-Term Benefit Trust",
-   "url": "https://www.anthropic.com/news/christopher-stubbs-joins-long-term-benefit-trust",
-   "source": "Anthropic",
-   "published_at": "2026-10-21T18:22:03Z",
-   "text": "Dr. Christopher Stubbs, an experimental physicist and former Dean of Science at Harvard University, has joined Anthropic’s Long-Term Benefit Trust. He brings to the Trust decades of scientific expertise across observational cosmology and precision measurement. He has also advised the US government on national security and arms control. “I am honored to join Anthropic’s Long-Term Benefit Trust and to help the company deliver on its public benefit mission,” said Stubbs."
+   "published_at": "2026-10-21T12:53:11Z",
+   "text": "294 points and 121 comments on Hacker News.",
+   "points": 294,
+   "discussion": "https://news.ycombinator.com/item?id=50180079"
   }
  ],
  "sources": "curated, Techmeme, X (found via Techmeme, Reddit, the Internet Archive), Claude Code releases, Anthropic, Hacker News, Simon Willison"
