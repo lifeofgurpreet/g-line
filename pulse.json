@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-22T13:22:15Z",
+ "generated_at": "2026-10-22T13:54:21Z",
  "items": [
   {
    "title": "Anthropic unveils Claude Duet, a proactive agent app on iOS, Android, and the web that works in the…",
@@ -17,7 +17,7 @@
    "published_at": "2026-10-21T13:32:35Z",
    "text": "GPT-Rosalind surfaced a new lead for drug discovery: could restoring cholesterol transport protect neurons from degeneration? DCTN1 is a gene linked to Perry syndrome, a rare neurodegenerative disorder. In mouse-brain data, disrupting it increased expression of genes involved in…",
    "author_name": "OpenAI",
-   "likes": 6645,
+   "likes": 6676,
    "story": "OpenAI, PerturbAI, and Scripps say thousands of GPT-Rosalind agents analyzed data on millions of mouse brain cells in 32 minutes, a job that takes humans months"
   },
   {
@@ -34,15 +34,25 @@
    "published_at": "2026-10-22T11:10:41Z",
    "text": "Introducing Ling-3.1-flash-1019 🚀 It scores 44 on the Artificial Analysis Intelligence Index, up from 41 for Ling-3.1-flash. Gains in agentic work: AA-Briefcase ~1400→1524 Elo and AutomationBench-AA 62%→68%. API access and open weights coming soon. Stay tuned.",
    "author_name": "Ant Ling",
-   "likes": 611,
+   "likes": 677,
    "story": "Ling-3.1-flash is getting a 1019 update, with open weights to follow"
+  },
+  {
+   "title": "Kimi K3.1 vs Qwen 4: 3D helicopter Same prompt, takeoff/land, 3D assembly and exploded views, very…",
+   "url": "https://x.com/LuminaBench/status/2113217029675085963",
+   "source": "𝕏 @LuminaBench",
+   "published_at": "2026-10-22T10:32:56Z",
+   "text": "Kimi K3.1 vs Qwen 4: 3D helicopter Same prompt, takeoff/land, 3D assembly and exploded views, very similar gen time at around 15-20 minutes for both China are not playing games anymore, these are very strong",
+   "author_name": "Lumina",
+   "likes": 314,
+   "story": "Qwen4 and Kimi3.1 on Arena apperantly"
   },
   {
    "title": "Mark Zuckerberg says Muse has drawn 10M+ users since its launch and 25%+ of users are making purcha…",
    "url": "https://www.businessinsider.com/meta-q3-2026-earnings-mark-zuckerberg-muse-ai-app-users-2026-10",
    "source": "Business Insider",
    "published_at": "2026-10-21T21:21:09Z",
-   "text": "Mark Zuckerberg says Muse has drawn 10M+ users since its launch and 25%+ of users are making purchases through the app, with an average purchase size of $200+. - Meta reported third-quarter earnings on Wednesday. — Meta CEO Mark Zuckerberg said over 10 million people have set up a Muse AI agent since its launch.",
+   "text": "Mark Zuckerberg says Muse has drawn 10M+ users since its launch and 25%+ of users are making purchases through the app, with an average purchase size of $200+",
    "via": "Techmeme"
   },
   {
@@ -50,8 +60,8 @@
    "url": "https://simedw.com/2026/10/21/world-model-terminal/",
    "source": "Hacker News",
    "published_at": "2026-10-22T02:18:41Z",
-   "text": "326 points and 100 comments on Hacker News.",
-   "points": 326,
+   "text": "344 points and 108 comments on Hacker News.",
+   "points": 344,
    "discussion": "https://news.ycombinator.com/item?id=50190363"
   },
   {
@@ -81,16 +91,16 @@
    "url": "https://github.com/openai/openai-cli",
    "source": "Hacker News",
    "published_at": "2026-10-22T05:23:11Z",
-   "text": "168 points and 84 comments on Hacker News.",
-   "points": 168,
+   "text": "175 points and 85 comments on Hacker News.",
+   "points": 175,
    "discussion": "https://news.ycombinator.com/item?id=50191507"
   },
   {
-   "title": "Barclays plans to cut 5,000 jobs, or ~5% of its workforce, by the end of 2026 as part of AI-driven…",
-   "url": "https://www.bloomberg.com/news/articles/2026-10-22/barclays-to-cut-5-000-jobs-as-ai-starts-creating-efficiency",
-   "source": "William Shaw / Bloomberg",
-   "published_at": "2026-10-22T09:46:35Z",
-   "text": "Barclays plans to cut 5,000 jobs, or ~5% of its workforce, by the end of 2026 as part of AI-driven cost cutting, with ~60% coming from support and developers. Barclays to Cut 5,000 Jobs as AI Starts to Create Efficiency — Video Player is loading. — Unmute — Current Time 0:00 Loaded: 69.77% Playback Rate",
+   "title": "Hugging Face releases Carbon-X, an open-source, 14B-parameter multimodal AI model to let users quer…",
+   "url": "https://www.wired.com/story/hugging-face-new-ai-biology-model-chat-with-dna/",
+   "source": "Emily Mullin / Wired",
+   "published_at": "2026-10-22T10:46:21Z",
+   "text": "Hugging Face releases Carbon-X, an open-source, 14B-parameter multimodal AI model to let users query DNA sequences via natural language, trained on 300B tokens. The new open-source model speaks the language of DNA and can help researchers understand the effects of any changes on gene activity and health.",
    "via": "Techmeme"
   },
   {
@@ -98,8 +108,8 @@
    "url": "https://claude.com/product/claude-duet",
    "source": "Hacker News",
    "published_at": "2026-10-21T19:14:01Z",
-   "text": "453 points and 413 comments on Hacker News.",
-   "points": 453,
+   "text": "465 points and 431 comments on Hacker News.",
+   "points": 465,
    "discussion": "https://news.ycombinator.com/item?id=50186037"
   },
   {
@@ -116,15 +126,6 @@
    "published_at": "2026-10-22T03:01:44Z",
    "text": "Sources: DeepSeek raised ~$15B in its latest fundraising round, one of China's largest ever, with CATL and Tencent among the biggest contributors. The Chinese AI pioneer DeepSeek has raised about 100 billion yuan ($15 billion) in its latest fundraising round, one of the country's largest ever …",
    "via": "Techmeme"
-  },
-  {
-   "title": "OpenAI models are coming to Google Cloud",
-   "url": "https://openai.com/index/openai-models-google-cloud/",
-   "source": "Hacker News",
-   "published_at": "2026-10-21T12:53:11Z",
-   "text": "307 points and 131 comments on Hacker News.",
-   "points": 307,
-   "discussion": "https://news.ycombinator.com/item?id=50180079"
   }
  ],
  "sources": "curated, Techmeme, X (found via Techmeme, Reddit, the Internet Archive), Claude Code releases, Anthropic, Hacker News, Simon Willison"
