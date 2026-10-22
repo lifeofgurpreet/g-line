@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-22T09:39:16Z",
+ "generated_at": "2026-10-22T10:11:06Z",
  "items": [
   {
    "title": "Anthropic unveils Claude Duet, a proactive agent app on iOS, Android, and the web that works in the…",
@@ -17,7 +17,7 @@
    "published_at": "2026-10-21T14:04:23Z",
    "text": "OpenAI models helped researchers—operating as part of our Patch the Planet initiative—discover critical security flaws in PHP, an open-source programming language used to run an estimated 70% of websites. Over the past two months, we led a coalition of maintainers, researchers,…",
    "author_name": "OpenAI",
-   "likes": 13994,
+   "likes": 14018,
    "story": "The PHP Foundation details how it found and fixed the two flaws, and says it had to release patches a day early after the two CVE IDs began circulating online"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-10-21T17:42:32Z",
    "text": "We built ChatGPT’s ad stack to respond to an evolving conversation, while ensuring answers stay independent. Here’s how the LLM orchestrator, retrieval, ranking and auction tools work together.",
    "author_name": "OpenAI Developers",
-   "likes": 942,
+   "likes": 948,
    "story": "OpenAI expands ChatGPT ads to 26 additional countries, taking the total to 83 countries, and says the platform has 100K+ advertisers, up from 20K in late August"
   },
   {
@@ -50,8 +50,8 @@
    "url": "https://github.com/openai/openai-cli",
    "source": "Hacker News",
    "published_at": "2026-10-22T05:23:11Z",
-   "text": "115 points and 67 comments on Hacker News.",
-   "points": 115,
+   "text": "121 points and 71 comments on Hacker News.",
+   "points": 121,
    "discussion": "https://news.ycombinator.com/item?id=50191507"
   },
   {
@@ -61,7 +61,7 @@
    "published_at": "2026-10-21T18:02:07Z",
    "text": "My bar for AGI is still an AI winning a Nobel. But an AI researcher looking at the lm_head (that *everyone* tells you to keep in high precision) deciding to quantize it to 4 bits AND being actually right (0.7pt from bf16) is definitely impressive. Even better when the result…",
    "author_name": "Thomas Wolf",
-   "likes": 372,
+   "likes": 373,
    "story": "Recursive releases Flint, an open-weight, 40B-parameter coding model developed with its Eureka Machine AI system, which automated most of the development"
   },
   {
@@ -93,7 +93,7 @@
    "published_at": "2026-10-21T14:01:36Z",
    "text": "GPTs will also now be available in Antigravity.",
    "author_name": "Andrew Curran",
-   "likes": 367,
+   "likes": 368,
    "story": "OpenAI says it will make its AI models available on Google Cloud's model garden and Antigravity coding tool in the coming weeks, after launching on AWS in April",
    "links": [
     "https://openai.com/index/openai-models-google-cloud/"
@@ -104,16 +104,16 @@
    "url": "https://simedw.com/2026/10/21/world-model-terminal/",
    "source": "Hacker News",
    "published_at": "2026-10-22T02:18:41Z",
-   "text": "197 points and 60 comments on Hacker News.",
-   "points": 197,
+   "text": "210 points and 67 comments on Hacker News.",
+   "points": 210,
    "discussion": "https://news.ycombinator.com/item?id=50190363"
   },
   {
-   "title": "Walmart unveils Agent Gateway, an MCP server for AI agents to shop its site, and Agent Profiles to…",
-   "url": "https://techcrunch.com/2026/10/21/while-amazon-blocks-ai-agents-walmart-rolls-out-the-welcome-mat/",
-   "source": "Sarah Perez / TechCrunch",
-   "published_at": "2026-10-22T03:51:08Z",
-   "text": "Walmart unveils Agent Gateway, an MCP server for AI agents to shop its site, and Agent Profiles to authorize agents and track their purchases separately. Walmart is embracing agentic commerce with the launch of its own Agent Gateway to manage transactions and other new features aimed …",
+   "title": "Barclays plans to cut 5,000 jobs, or ~5% of its workforce, by the end of 2026 as part of AI-driven…",
+   "url": "https://www.bloomberg.com/news/articles/2026-10-22/barclays-to-cut-5-000-jobs-as-ai-starts-creating-efficiency",
+   "source": "William Shaw / Bloomberg",
+   "published_at": "2026-10-22T09:46:35Z",
+   "text": "Barclays plans to cut 5,000 jobs, or ~5% of its workforce, by the end of 2026 as part of AI-driven cost cutting, with ~60% coming from support and developers",
    "via": "Techmeme"
   },
   {
@@ -121,8 +121,8 @@
    "url": "https://claude.com/product/claude-duet",
    "source": "Hacker News",
    "published_at": "2026-10-21T19:14:01Z",
-   "text": "374 points and 343 comments on Hacker News.",
-   "points": 374,
+   "text": "382 points and 351 comments on Hacker News.",
+   "points": 382,
    "discussion": "https://news.ycombinator.com/item?id=50186037"
   },
   {
