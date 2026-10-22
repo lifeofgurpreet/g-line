@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-22T01:04:20Z",
+ "generated_at": "2026-10-22T01:37:27Z",
  "items": [
   {
    "title": "Anthropic unveils Claude Duet, a proactive agent app on iOS, Android, and the web that works in the…",
@@ -17,8 +17,8 @@
    "published_at": "2026-10-21T14:04:23Z",
    "text": "OpenAI models helped researchers—operating as part of our Patch the Planet initiative—discover critical security flaws in PHP, an open-source programming language used to run an estimated 70% of websites. Over the past two months, we led a coalition of maintainers, researchers,…",
    "author_name": "OpenAI",
-   "likes": 13453,
-   "story": "The PHP Foundation details how it found and fixed the two flaws, and says it had to release patches a day early after the two CVE IDs began circulating online"
+   "likes": 13510,
+   "story": "Several government, school, and hospital websites in Europe were taken offline as organizations rush to protect themselves from two critical PHP security flaws"
   },
   {
    "title": "Claude Code 2.1.307 released",
@@ -28,14 +28,14 @@
    "text": "Added /claude-api api-version to move Claude API code to API version 2026-10-21 · Added the claude_code.safety_event OpenTelemetry event for each tool call a permission rule, auto mode, a safety check, a hook or the sandbox stopped, prompted or sent back · Fixed requests failing with a model-not-found error when CLAUDE_CODE_DISABLE_1M_CONTEXT is set and the model is an alias with the [1m] suffix, such as opus[1m] · Fixed the prompt-caching-scope beta header being sent behind custom ANTHROPIC_BASE_URL gateways and on Foundry, where it has no effect"
   },
   {
-   "title": "Thank you for this, @_NathanCalvin. I appreciate and am a fan of the investigative work you’ve done…",
-   "url": "https://x.com/DarioAmodei/status/2112732230124818891",
-   "source": "𝕏 @DarioAmodei",
-   "published_at": "2026-10-21T02:26:30Z",
-   "text": "Thank you for this, @_NathanCalvin. I appreciate and am a fan of the investigative work you’ve done on behalf of AI safety and believe your comments are coming from a constructive, honest place, and that it benefits the public to have people whose job is to scrutinize the actions…",
-   "author_name": "Dario Amodei",
-   "likes": 3843,
-   "story": "Dario Amodei says Anthropic's “race to the top” makes AI safer, lists nine safety decisions with “substantial costs”, and admits to mishandling a draft AI bill"
+   "title": "The NSA is telling American companies to take production systems offline. The AI-era of cybersecuri…",
+   "url": "https://x.com/DavidVorick/status/2112930859540246575",
+   "source": "𝕏 @DavidVorick",
+   "published_at": "2026-10-21T15:35:47Z",
+   "text": "The NSA is telling American companies to take production systems offline. The AI-era of cybersecurity has fully arrived.",
+   "author_name": "David Vorick",
+   "likes": 12331,
+   "story": "PHP releases security fixes for two critical unauthenticated RCE vulnerabilities, affecting all web request-serving installations, and urges PHP users to update"
   },
   {
    "title": "Meta says it will create a new class of nonvoting stock to raise the capital it needs for developin…",
@@ -50,19 +50,19 @@
    "url": "https://claude.com/product/claude-duet",
    "source": "Hacker News",
    "published_at": "2026-10-21T19:14:01Z",
-   "text": "306 points and 267 comments on Hacker News.",
-   "points": 306,
+   "text": "315 points and 273 comments on Hacker News.",
+   "points": 315,
    "discussion": "https://news.ycombinator.com/item?id=50186037"
   },
   {
-   "title": "We built ChatGPT’s ad stack to respond to an evolving conversation, while ensuring answers stay ind…",
-   "url": "https://x.com/OpenAIDevs/status/2112962753682198969",
-   "source": "𝕏 @OpenAIDevs",
-   "published_at": "2026-10-21T17:42:32Z",
-   "text": "We built ChatGPT’s ad stack to respond to an evolving conversation, while ensuring answers stay independent. Here’s how the LLM orchestrator, retrieval, ranking and auction tools work together.",
-   "author_name": "OpenAI Developers",
-   "likes": 759,
-   "story": "OpenAI expands ChatGPT ads to 26 additional countries, taking the total to 83 countries, and says the platform has 100K+ advertisers, up from 20K in late August"
+   "title": "Thank you for this, @_NathanCalvin. I appreciate and am a fan of the investigative work you’ve done…",
+   "url": "https://x.com/DarioAmodei/status/2112732230124818891",
+   "source": "𝕏 @DarioAmodei",
+   "published_at": "2026-10-21T02:26:30Z",
+   "text": "Thank you for this, @_NathanCalvin. I appreciate and am a fan of the investigative work you’ve done on behalf of AI safety and believe your comments are coming from a constructive, honest place, and that it benefits the public to have people whose job is to scrutinize the actions…",
+   "author_name": "Dario Amodei",
+   "likes": 3851,
+   "story": "Dario Amodei says Anthropic's “race to the top” makes AI safer, lists nine safety decisions with “substantial costs”, and admits to mishandling a draft AI bill"
   },
   {
    "title": "Developing Enterprise Frontier Safeguards with our customers",
@@ -87,23 +87,33 @@
    "via": "Techmeme"
   },
   {
-   "title": "My bar for AGI is still an AI winning a Nobel. But an AI researcher looking at the lm_head (that *e…",
-   "url": "https://x.com/Thom_Wolf/status/2112967683813609724",
-   "source": "𝕏 @Thom_Wolf",
-   "published_at": "2026-10-21T18:02:07Z",
-   "text": "My bar for AGI is still an AI winning a Nobel. But an AI researcher looking at the lm_head (that *everyone* tells you to keep in high precision) deciding to quantize it to 4 bits AND being actually right (0.7pt from bf16) is definitely impressive. Even better when the result…",
-   "author_name": "Thomas Wolf",
-   "likes": 256,
-   "story": "Recursive releases Flint, an open-weight, 40B-parameter coding model developed with its Eureka Machine AI system, which automated most of the development"
+   "title": "We built ChatGPT’s ad stack to respond to an evolving conversation, while ensuring answers stay ind…",
+   "url": "https://x.com/OpenAIDevs/status/2112962753682198969",
+   "source": "𝕏 @OpenAIDevs",
+   "published_at": "2026-10-21T17:42:32Z",
+   "text": "We built ChatGPT’s ad stack to respond to an evolving conversation, while ensuring answers stay independent. Here’s how the LLM orchestrator, retrieval, ranking and auction tools work together.",
+   "author_name": "OpenAI Developers",
+   "likes": 775,
+   "story": "OpenAI expands ChatGPT ads to 26 additional countries, taking the total to 83 countries, and says the platform has 100K+ advertisers, up from 20K in late August"
   },
   {
    "title": "Patch the Planet: global response coordination as agents uncover vulnerabilities",
    "url": "https://openai.com/index/coordinated-disclosure-of-critical-vulnerabilities/",
    "source": "Hacker News",
    "published_at": "2026-10-21T14:03:43Z",
-   "text": "230 points and 160 comments on Hacker News.",
-   "points": 230,
+   "text": "235 points and 160 comments on Hacker News.",
+   "points": 235,
    "discussion": "https://news.ycombinator.com/item?id=50181175"
+  },
+  {
+   "title": "Introducing Flint, @Recursive_SI’s first model: a fast local coding model built with our automated…",
+   "url": "https://x.com/RichardSocher/status/2112944385415426249",
+   "source": "𝕏 @RichardSocher",
+   "published_at": "2026-10-21T16:29:32Z",
+   "text": "Introducing Flint, @Recursive_SI’s first model: a fast local coding model built with our automated research system, the Eureka Machine. • Best-in-class fast local coding • Up to 2x faster than comparable models: 125+ tokens/sec on a MacBook Pro, 150+ on RTX Spark • Built from…",
+   "author_name": "Richard Socher",
+   "likes": 5030,
+   "story": "Recursive releases Flint, an open-weight, 40B-parameter coding model developed with its Eureka Machine AI system, which automated most of the development"
   },
   {
    "title": "GPTs will also now be available in Antigravity.",
@@ -125,15 +135,6 @@
    "published_at": "2026-10-21T10:21:11Z",
    "text": "Nvidia unveils the DSX POD, a modular containerized version of its Vera Rubin reference architecture to cut data center deployment from six months to 14 days. Details released at GTC Berlin event, taking place this week — Nvidia has claimed its DSX reference architecture for AI data centers …",
    "via": "Techmeme"
-  },
-  {
-   "title": "Using thousands of AI agents to uncover new leads in biological data",
-   "url": "https://openai.com/index/scaling-ai-research-for-complex-biological-data/",
-   "source": "Hacker News",
-   "published_at": "2026-10-21T13:37:00Z",
-   "text": "132 points and 83 comments on Hacker News.",
-   "points": 132,
-   "discussion": "https://news.ycombinator.com/item?id=50180752"
   }
  ],
  "sources": "curated, Techmeme, X (found via Techmeme, Reddit, the Internet Archive), Claude Code releases, Anthropic, Hacker News, Simon Willison"
