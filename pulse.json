@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-22T20:51:33Z",
+ "generated_at": "2026-10-22T21:23:56Z",
  "items": [
   {
    "title": "Sources: US banks are restricting third-party AI agents from accessing customer accounts, after som…",
@@ -17,7 +17,7 @@
    "published_at": "2026-10-22T18:17:10Z",
    "text": "Agent Skills started as an experiment in Claude Code. Many across the industry have come to adopt it, so we at Anthropic found it more fitting to donate it to the @AgenticAIFdn, next to MCP.",
    "author_name": "Boris Cherny",
-   "likes": 987,
+   "likes": 1066,
    "story": "Anthropic donates the Agent Skills open standard to the Agentic AI Foundation and says 70+ platforms have integrated it, after donating MCP to the AAIF in 2025"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-10-22T15:41:24Z",
    "text": "💥 Introducing Warp Sciences, a new company applying AI and robotics to help the world develop new medicines faster. We’ve raised a $215M Series A led by @lightspeedvp to bring frontier AI out of the browser and into the lab, and build scientific capacity here in America. I…",
    "author_name": "Kevin Weil 🇺🇸",
-   "likes": 1520,
+   "likes": 1571,
    "story": "Warp Sciences, founded by former OpenAI CPO Kevin Weil to speed up drug development using AI, emerges from stealth with $215M at an $865M post-money valuation"
   },
   {
@@ -50,8 +50,8 @@
    "url": "https://github.com/NVIDIA/OpenShell",
    "source": "Hacker News",
    "published_at": "2026-10-22T17:44:06Z",
-   "text": "162 points and 79 comments on Hacker News.",
-   "points": 162,
+   "text": "195 points and 98 comments on Hacker News.",
+   "points": 195,
    "discussion": "https://news.ycombinator.com/item?id=50198675"
   },
   {
@@ -61,7 +61,7 @@
    "published_at": "2026-10-22T10:32:56Z",
    "text": "Kimi K3.1 vs Qwen 4: 3D helicopter Same prompt, takeoff/land, 3D assembly and exploded views, very similar gen time at around 15-20 minutes for both China are not playing games anymore, these are very strong",
    "author_name": "Lumina",
-   "likes": 622,
+   "likes": 633,
    "story": "Qwen4 and Kimi3.1 on Arena apperantly"
   },
   {
@@ -79,23 +79,6 @@
    "text": "My latest vibe coded game experiment is a Command & Conquer style RTS (Real Time Strategy) game called Battle Drones ( play it here ). Unlike my previous experiments , this one is actually fun to play . I'm somewhat embarrassed to admit that I got there by telling Claude to \"Make it a LOT more fun\". It also supports multiplayer between nearby devices using audio to synchronize game state! Here's what I've built so far, and some of the things I learned along the way."
   },
   {
-   "title": "Microsoft says China-linked hackers used AI penetration testing tool ARTEX to compromise ConnectWis…",
-   "url": "https://www.reuters.com/technology/chinese-linked-hackers-compromise-connectwise-target-hundreds-global-attack-2026-10-21/",
-   "source": "AJ Vicens / Reuters",
-   "published_at": "2026-10-22T06:26:04Z",
-   "text": "Microsoft says China-linked hackers used AI penetration testing tool ARTEX to compromise ConnectWise as part of a campaign targeting hundreds of organizations. A Chinese state-aligned hacking group used an AI-driven penetration testing tool to compromise IT services firm ConnectWise as part …",
-   "via": "Techmeme"
-  },
-  {
-   "title": "Every AI model has the same \"controversial\" take on humans",
-   "url": "https://www.modelcompare.ai/blog/ai-models-controversial-take-on-humans",
-   "source": "Hacker News",
-   "published_at": "2026-10-22T16:08:00Z",
-   "text": "66 points and 93 comments on Hacker News.",
-   "points": 66,
-   "discussion": "https://news.ycombinator.com/item?id=50197313"
-  },
-  {
    "title": "The Browser Company says it will shut down its Arc browser on December 22, launched in 2023, shifti…",
    "url": "https://www.theverge.com/tech/1016832/arc-browser-shutting-down",
    "source": "Jay Peters / The Verge",
@@ -104,13 +87,30 @@
    "via": "Techmeme"
   },
   {
-   "title": "Claude Duet",
-   "url": "https://claude.com/product/claude-duet",
+   "title": "Every AI model has the same \"controversial\" take on humans",
+   "url": "https://www.modelcompare.ai/blog/ai-models-controversial-take-on-humans",
    "source": "Hacker News",
-   "published_at": "2026-10-21T19:14:01Z",
-   "text": "543 points and 503 comments on Hacker News.",
-   "points": 543,
-   "discussion": "https://news.ycombinator.com/item?id=50186037"
+   "published_at": "2026-10-22T16:08:00Z",
+   "text": "81 points and 116 comments on Hacker News.",
+   "points": 81,
+   "discussion": "https://news.ycombinator.com/item?id=50197313"
+  },
+  {
+   "title": "Microsoft says China-linked hackers used AI penetration testing tool ARTEX to compromise ConnectWis…",
+   "url": "https://www.reuters.com/technology/chinese-linked-hackers-compromise-connectwise-target-hundreds-global-attack-2026-10-21/",
+   "source": "AJ Vicens / Reuters",
+   "published_at": "2026-10-22T06:26:04Z",
+   "text": "Microsoft says China-linked hackers used AI penetration testing tool ARTEX to compromise ConnectWise as part of a campaign targeting hundreds of organizations. A Chinese state-aligned hacking group used an AI-driven penetration testing tool to compromise IT services firm ConnectWise as part …",
+   "via": "Techmeme"
+  },
+  {
+   "title": "WorldTUI: I trained a 360M model to pretend to be a terminal",
+   "url": "https://simedw.com/2026/10/21/world-model-terminal/",
+   "source": "Hacker News",
+   "published_at": "2026-10-22T02:18:41Z",
+   "text": "468 points and 153 comments on Hacker News.",
+   "points": 468,
+   "discussion": "https://news.ycombinator.com/item?id=50190363"
   },
   {
    "title": "Palantir says that neither it nor the US government has a “kill switch” for its Maven military AI s…",
@@ -121,13 +121,13 @@
    "via": "Techmeme"
   },
   {
-   "title": "Claude Now Works with Google Docs, Sheets, and Slides",
-   "url": "https://claude.com/resources/articles/claude-now-works-in-google-docs-sheets-and-slides",
+   "title": "Claude Duet",
+   "url": "https://claude.com/product/claude-duet",
    "source": "Hacker News",
-   "published_at": "2026-10-22T02:17:58Z",
-   "text": "82 points and 10 comments on Hacker News.",
-   "points": 82,
-   "discussion": "https://news.ycombinator.com/item?id=50190357"
+   "published_at": "2026-10-21T19:14:01Z",
+   "text": "544 points and 506 comments on Hacker News.",
+   "points": 544,
+   "discussion": "https://news.ycombinator.com/item?id=50186037"
   }
  ],
  "sources": "curated, Techmeme, X (found via Techmeme, Reddit, the Internet Archive), Claude Code releases, Anthropic, Hacker News, Simon Willison"
