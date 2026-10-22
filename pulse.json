@@ -1,41 +1,44 @@
 {
  "schema": 1,
- "generated_at": "2026-10-22T04:19:54Z",
+ "generated_at": "2026-10-22T04:52:43Z",
  "items": [
   {
-   "title": "Anthropic unveils Claude Duet, a proactive agent app on iOS, Android, and the web that works in the…",
-   "url": "https://claude.com/resources/articles/claude-duet",
-   "source": "Claude",
-   "published_at": "2026-10-21T21:02:27Z",
-   "text": "Anthropic unveils Claude Duet, a proactive agent app on iOS, Android, and the web that works in the background, in research preview for US Pro and Max users. A research preview is available by waitlist today, starting with US Pro and Max subscribers. — Join the waitlist … ShareCopy link",
+   "title": "PHP's creators disclose a critical memory-management vulnerability, dubbed “PHP2Shell”, that affect…",
+   "url": "https://www.wsj.com/tech/cybersecurity/ai-just-found-a-bug-that-puts-up-to-70-of-the-worlds-websites-at-risk-fd0902ea?st=tBLRBh&reflink=desktopwebshare_permalink",
+   "source": "Robert McMillan / Wall Stre…",
+   "published_at": "2026-10-21T14:08:28Z",
+   "text": "PHP's creators disclose a critical memory-management vulnerability, dubbed “PHP2Shell”, that affects up to 70% of websites, discovered via GPT-5.6 Sol in August",
    "via": "Techmeme"
   },
   {
-   "title": "OpenAI models helped researchers—operating as part of our Patch the Planet initiative—discover crit…",
-   "url": "https://x.com/OpenAI/status/2112907856018309586",
-   "source": "𝕏 @OpenAI",
-   "published_at": "2026-10-21T14:04:23Z",
-   "text": "OpenAI models helped researchers—operating as part of our Patch the Planet initiative—discover critical security flaws in PHP, an open-source programming language used to run an estimated 70% of websites. Over the past two months, we led a coalition of maintainers, researchers,…",
-   "author_name": "OpenAI",
-   "likes": 13759,
-   "story": "The PHP Foundation details how it found and fixed the two flaws, and says it had to release patches a day early after the two CVE IDs began circulating online"
+   "title": "We’re opening a research preview of Claude Duet, a new app where Claude works as a proactive agent.…",
+   "url": "https://x.com/claudeai/status/2112984664256241837",
+   "source": "𝕏 @claudeai",
+   "published_at": "2026-10-21T19:09:35Z",
+   "text": "We’re opening a research preview of Claude Duet, a new app where Claude works as a proactive agent. It comes to you with what needs your attention, completes tasks you ask of it, keeps working when you step away, and checks with you before it acts on your behalf.",
+   "author_name": "Claude",
+   "likes": 42467,
+   "story": "Anthropic unveils Claude Duet, a proactive agent app on iOS, Android, and the web that works in the background, in research preview for US Pro and Max users"
   },
   {
-   "title": "Claude Code 2.1.307 released",
-   "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.307",
+   "title": "Claude Code 2.1.308 released",
+   "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.308",
    "source": "Claude Code releases",
-   "published_at": "2026-10-21T22:17:02Z",
-   "text": "Added /claude-api api-version to move Claude API code to API version 2026-10-21 · Added the claude_code.safety_event OpenTelemetry event for each tool call a permission rule, auto mode, a safety check, a hook or the sandbox stopped, prompted or sent back · Fixed requests failing with a model-not-found error when CLAUDE_CODE_DISABLE_1M_CONTEXT is set and the model is an alias with the [1m] suffix, such as opus[1m] · Fixed the prompt-caching-scope beta header being sent behind custom ANTHROPIC_BASE_URL gateways and on Foundry, where it has no effect"
+   "published_at": "2026-10-22T04:34:55Z",
+   "text": "Bug fixes and reliability improvements"
   },
   {
-   "title": "The NSA is telling American companies to take production systems offline. The AI-era of cybersecuri…",
-   "url": "https://x.com/DavidVorick/status/2112930859540246575",
-   "source": "𝕏 @DavidVorick",
-   "published_at": "2026-10-21T15:35:47Z",
-   "text": "The NSA is telling American companies to take production systems offline. The AI-era of cybersecurity has fully arrived.",
-   "author_name": "David Vorick",
-   "likes": 12880,
-   "story": "PHP releases security fixes for two critical unauthenticated RCE vulnerabilities, affecting all web request-serving installations, and urges PHP users to update"
+   "title": "OpenAI models are coming to Google Cloud. We're bringing our frontier models and Codex agentic work…",
+   "url": "https://x.com/OpenAI/status/2112988118471295323",
+   "source": "𝕏 @OpenAI",
+   "published_at": "2026-10-21T19:23:19Z",
+   "text": "OpenAI models are coming to Google Cloud. We're bringing our frontier models and Codex agentic workflows to Google Cloud's Model Garden, so enterprises can use our technology where they already build.",
+   "author_name": "OpenAI",
+   "likes": 3559,
+   "story": "OpenAI says it will make its AI models available on Google Cloud's model garden and Antigravity coding tool in the coming weeks, after launching on AWS in April",
+   "links": [
+    "https://openai.com/index/openai-models-google-cloud/"
+   ]
   },
   {
    "title": "Mark Zuckerberg says Muse has drawn 10M+ users since its launch and 25%+ of users are making purcha…",
@@ -50,19 +53,19 @@
    "url": "https://claude.com/product/claude-duet",
    "source": "Hacker News",
    "published_at": "2026-10-21T19:14:01Z",
-   "text": "334 points and 297 comments on Hacker News.",
-   "points": 334,
+   "text": "338 points and 304 comments on Hacker News.",
+   "points": 338,
    "discussion": "https://news.ycombinator.com/item?id=50186037"
   },
   {
-   "title": "Thank you for this, @_NathanCalvin. I appreciate and am a fan of the investigative work you’ve done…",
-   "url": "https://x.com/DarioAmodei/status/2112732230124818891",
-   "source": "𝕏 @DarioAmodei",
-   "published_at": "2026-10-21T02:26:30Z",
-   "text": "Thank you for this, @_NathanCalvin. I appreciate and am a fan of the investigative work you’ve done on behalf of AI safety and believe your comments are coming from a constructive, honest place, and that it benefits the public to have people whose job is to scrutinize the actions…",
-   "author_name": "Dario Amodei",
-   "likes": 3910,
-   "story": "Dario Amodei says Anthropic's “race to the top” makes AI safer, lists nine safety decisions with “substantial costs”, and admits to mishandling a draft AI bill"
+   "title": "The NSA is telling American companies to take production systems offline. The AI-era of cybersecuri…",
+   "url": "https://x.com/DavidVorick/status/2112930859540246575",
+   "source": "𝕏 @DavidVorick",
+   "published_at": "2026-10-21T15:35:47Z",
+   "text": "The NSA is telling American companies to take production systems offline. The AI-era of cybersecurity has fully arrived.",
+   "author_name": "David Vorick",
+   "likes": 12955,
+   "story": "PHP releases security fixes for two critical unauthenticated RCE vulnerabilities, affecting all web request-serving installations, and urges PHP users to update"
   },
   {
    "title": "Developing Enterprise Frontier Safeguards with our customers",
@@ -79,12 +82,31 @@
    "text": "My latest vibe coded game experiment is a Command & Conquer style RTS (Real Time Strategy) game called Battle Drones ( play it here ). Unlike my previous experiments , this one is actually fun to play . I'm somewhat embarrassed to admit that I got there by telling Claude to \"Make it a LOT more fun\". It also supports multiplayer between nearby devices using audio to synchronize game state! Here's what I've built so far, and some of the things I learned along the way."
   },
   {
-   "title": "PHP's creators disclose a critical memory-management vulnerability, dubbed “PHP2Shell”, that affect…",
-   "url": "https://www.wsj.com/tech/cybersecurity/ai-just-found-a-bug-that-puts-up-to-70-of-the-worlds-websites-at-risk-fd0902ea?st=tBLRBh&reflink=desktopwebshare_permalink",
-   "source": "Robert McMillan / Wall Stre…",
-   "published_at": "2026-10-21T14:08:28Z",
-   "text": "PHP's creators disclose a critical memory-management vulnerability, dubbed “PHP2Shell”, that affects up to 70% of websites, discovered via GPT-5.6 Sol in August. AI tools helped find one of the most severe online bugs ever. Cyber experts are racing to patch it before hackers use AI to exploit it.",
+   "title": "Recursive releases Flint, an open-weight, 40B-parameter coding model developed with its Eureka Mach…",
+   "url": "https://www.wired.com/story/recursive-self-improvement-flint-latest-model-scary-good/",
+   "source": "Will Knight / Wired",
+   "published_at": "2026-10-21T16:36:17Z",
+   "text": "Recursive releases Flint, an open-weight, 40B-parameter coding model developed with its Eureka Machine AI system, which automated most of the development. Recursive makes the case that the benefits of using AI to build AI outweigh the risks. — For the past few days I've been testing …",
    "via": "Techmeme"
+  },
+  {
+   "title": "Thank you for this, @_NathanCalvin. I appreciate and am a fan of the investigative work you’ve done…",
+   "url": "https://x.com/DarioAmodei/status/2112732230124818891",
+   "source": "𝕏 @DarioAmodei",
+   "published_at": "2026-10-21T02:26:30Z",
+   "text": "Thank you for this, @_NathanCalvin. I appreciate and am a fan of the investigative work you’ve done on behalf of AI safety and believe your comments are coming from a constructive, honest place, and that it benefits the public to have people whose job is to scrutinize the actions…",
+   "author_name": "Dario Amodei",
+   "likes": 3918,
+   "story": "Dario Amodei says Anthropic's “race to the top” makes AI safer, lists nine safety decisions with “substantial costs”, and admits to mishandling a draft AI bill"
+  },
+  {
+   "title": "Patch the Planet: global response coordination as agents uncover vulnerabilities",
+   "url": "https://openai.com/index/coordinated-disclosure-of-critical-vulnerabilities/",
+   "source": "Hacker News",
+   "published_at": "2026-10-21T14:03:43Z",
+   "text": "244 points and 165 comments on Hacker News.",
+   "points": 244,
+   "discussion": "https://news.ycombinator.com/item?id=50181175"
   },
   {
    "title": "We built ChatGPT’s ad stack to respond to an evolving conversation, while ensuring answers stay ind…",
@@ -93,40 +115,8 @@
    "published_at": "2026-10-21T17:42:32Z",
    "text": "We built ChatGPT’s ad stack to respond to an evolving conversation, while ensuring answers stay independent. Here’s how the LLM orchestrator, retrieval, ranking and auction tools work together.",
    "author_name": "OpenAI Developers",
-   "likes": 853,
+   "likes": 860,
    "story": "OpenAI expands ChatGPT ads to 26 additional countries, taking the total to 83 countries, and says the platform has 100K+ advertisers, up from 20K in late August"
-  },
-  {
-   "title": "Patch the Planet: global response coordination as agents uncover vulnerabilities",
-   "url": "https://openai.com/index/coordinated-disclosure-of-critical-vulnerabilities/",
-   "source": "Hacker News",
-   "published_at": "2026-10-21T14:03:43Z",
-   "text": "243 points and 164 comments on Hacker News.",
-   "points": 243,
-   "discussion": "https://news.ycombinator.com/item?id=50181175"
-  },
-  {
-   "title": "Introducing Flint, @Recursive_SI’s first model: a fast local coding model built with our automated…",
-   "url": "https://x.com/RichardSocher/status/2112944385415426249",
-   "source": "𝕏 @RichardSocher",
-   "published_at": "2026-10-21T16:29:32Z",
-   "text": "Introducing Flint, @Recursive_SI’s first model: a fast local coding model built with our automated research system, the Eureka Machine. • Best-in-class fast local coding • Up to 2x faster than comparable models: 125+ tokens/sec on a MacBook Pro, 150+ on RTX Spark • Built from…",
-   "author_name": "Richard Socher",
-   "likes": 5821,
-   "story": "Recursive releases Flint, an open-weight, 40B-parameter coding model developed with its Eureka Machine AI system, which automated most of the development"
-  },
-  {
-   "title": "GPTs will also now be available in Antigravity.",
-   "url": "https://x.com/AndrewCurran_/status/2112907155787411582",
-   "source": "𝕏 @AndrewCurran_",
-   "published_at": "2026-10-21T14:01:36Z",
-   "text": "GPTs will also now be available in Antigravity.",
-   "author_name": "Andrew Curran",
-   "likes": 360,
-   "story": "OpenAI says it will make its AI models available on Google Cloud's model garden and Antigravity coding tool in the coming weeks, after launching on AWS in April",
-   "links": [
-    "https://openai.com/index/openai-models-google-cloud/"
-   ]
   },
   {
    "title": "Walmart unveils its Agent Gateway, a new MCP server to help users' approved AI agents shop its webs…",
@@ -135,6 +125,15 @@
    "published_at": "2026-10-22T03:51:08Z",
    "text": "Walmart unveils its Agent Gateway, a new MCP server to help users' approved AI agents shop its website, and dedicated Agent Profiles with special “terms” for AI. Walmart is embracing agentic commerce with the launch of its own Agent Gateway to manage transactions …",
    "via": "Techmeme"
+  },
+  {
+   "title": "Using Claude to reduce the attack surface of code",
+   "url": "https://www.anthropic.com/research/attack-surface-reduction",
+   "source": "Hacker News",
+   "published_at": "2026-10-21T03:36:43Z",
+   "text": "131 points and 86 comments on Hacker News.",
+   "points": 131,
+   "discussion": "https://news.ycombinator.com/item?id=50175779"
   }
  ],
  "sources": "curated, Techmeme, X (found via Techmeme, Reddit, the Internet Archive), Claude Code releases, Anthropic, Hacker News, Simon Willison"
