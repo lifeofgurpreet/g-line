@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-22T06:27:24Z",
+ "generated_at": "2026-10-22T07:00:21Z",
  "items": [
   {
    "title": "Anthropic unveils Claude Duet, a proactive agent app on iOS, Android, and the web that works in the…",
@@ -17,8 +17,8 @@
    "published_at": "2026-10-21T14:04:23Z",
    "text": "OpenAI models helped researchers—operating as part of our Patch the Planet initiative—discover critical security flaws in PHP, an open-source programming language used to run an estimated 70% of websites. Over the past two months, we led a coalition of maintainers, researchers,…",
    "author_name": "OpenAI",
-   "likes": 13863,
-   "story": "AWS analysts claim that at least one actor started to exploit the PHP2Shell bugs on October 17, four days prior to the vulnerabilities' public disclosure"
+   "likes": 13885,
+   "story": "Several government, school, and hospital websites in Europe were taken offline as organizations rush to protect themselves from two critical PHP security flaws"
   },
   {
    "title": "Claude Code 2.1.308 released",
@@ -34,7 +34,7 @@
    "published_at": "2026-10-21T17:42:32Z",
    "text": "We built ChatGPT’s ad stack to respond to an evolving conversation, while ensuring answers stay independent. Here’s how the LLM orchestrator, retrieval, ranking and auction tools work together.",
    "author_name": "OpenAI Developers",
-   "likes": 891,
+   "likes": 901,
    "story": "OpenAI expands ChatGPT ads to 26 additional countries, taking the total to 83 countries, and says the platform has 100K+ advertisers, up from 20K in late August"
   },
   {
@@ -50,8 +50,8 @@
    "url": "https://claude.com/product/claude-duet",
    "source": "Hacker News",
    "published_at": "2026-10-21T19:14:01Z",
-   "text": "344 points and 313 comments on Hacker News.",
-   "points": 344,
+   "text": "347 points and 316 comments on Hacker News.",
+   "points": 347,
    "discussion": "https://news.ycombinator.com/item?id=50186037"
   },
   {
@@ -61,7 +61,7 @@
    "published_at": "2026-10-21T16:29:32Z",
    "text": "Introducing Flint, @Recursive_SI’s first model: a fast local coding model built with our automated research system, the Eureka Machine. • Best-in-class fast local coding • Up to 2x faster than comparable models: 125+ tokens/sec on a MacBook Pro, 150+ on RTX Spark • Built from…",
    "author_name": "Richard Socher",
-   "likes": 6304,
+   "likes": 6410,
    "story": "Recursive releases Flint, an open-weight, 40B-parameter coding model developed with its Eureka Machine AI system, which automated most of the development"
   },
   {
@@ -79,11 +79,11 @@
    "text": "My latest vibe coded game experiment is a Command & Conquer style RTS (Real Time Strategy) game called Battle Drones ( play it here ). Unlike my previous experiments , this one is actually fun to play . I'm somewhat embarrassed to admit that I got there by telling Claude to \"Make it a LOT more fun\". It also supports multiplayer between nearby devices using audio to synchronize game state! Here's what I've built so far, and some of the things I learned along the way."
   },
   {
-   "title": "Walmart unveils Agent Gateway, an MCP server for AI agents to shop its site, and Agent Profiles to…",
-   "url": "https://techcrunch.com/2026/10/21/while-amazon-blocks-ai-agents-walmart-rolls-out-the-welcome-mat/",
-   "source": "Sarah Perez / TechCrunch",
-   "published_at": "2026-10-22T03:51:08Z",
-   "text": "Walmart unveils Agent Gateway, an MCP server for AI agents to shop its site, and Agent Profiles to authorize agents and track their purchases separately. Walmart is embracing agentic commerce with the launch of its own Agent Gateway to manage transactions and other new features aimed …",
+   "title": "Microsoft says China-linked hackers used AI penetration testing tool ARTEX to compromise ConnectWis…",
+   "url": "https://www.reuters.com/technology/chinese-linked-hackers-compromise-connectwise-target-hundreds-global-attack-2026-10-21/",
+   "source": "AJ Vicens / Reuters",
+   "published_at": "2026-10-22T06:26:04Z",
+   "text": "Microsoft says China-linked hackers used AI penetration testing tool ARTEX to compromise ConnectWise as part of a campaign targeting hundreds of organizations. A Chinese state-aligned hacking group used an AI-driven penetration testing tool to compromise IT services firm ConnectWise as part …",
    "via": "Techmeme"
   },
   {
@@ -93,7 +93,7 @@
    "published_at": "2026-10-21T14:01:36Z",
    "text": "GPTs will also now be available in Antigravity.",
    "author_name": "Andrew Curran",
-   "likes": 364,
+   "likes": 365,
    "story": "OpenAI says it will make its AI models available on Google Cloud's model garden and Antigravity coding tool in the coming weeks, after launching on AWS in April",
    "links": [
     "https://openai.com/index/openai-models-google-cloud/"
@@ -104,16 +104,16 @@
    "url": "https://simedw.com/2026/10/21/world-model-terminal/",
    "source": "Hacker News",
    "published_at": "2026-10-22T02:18:41Z",
-   "text": "63 points and 23 comments on Hacker News.",
-   "points": 63,
+   "text": "71 points and 32 comments on Hacker News.",
+   "points": 71,
    "discussion": "https://news.ycombinator.com/item?id=50190363"
   },
   {
-   "title": "Nvidia unveils the DSX POD, a modular containerized version of its Vera Rubin reference architectur…",
-   "url": "https://www.datacenterdynamics.com/en/news/nvidia-launches-dsx-pod-claims-the-vera-rubin-reference-architecture-will-make-ai-data-centers-more-water-and-energy-efficient/",
-   "source": "Charlotte Trueman / Datacen…",
-   "published_at": "2026-10-21T10:21:11Z",
-   "text": "Nvidia unveils the DSX POD, a modular containerized version of its Vera Rubin reference architecture to cut data center deployment from six months to 14 days. Details released at GTC Berlin event, taking place this week — Nvidia has claimed its DSX reference architecture for AI data centers …",
+   "title": "Walmart unveils Agent Gateway, an MCP server for AI agents to shop its site, and Agent Profiles to…",
+   "url": "https://techcrunch.com/2026/10/21/while-amazon-blocks-ai-agents-walmart-rolls-out-the-welcome-mat/",
+   "source": "Sarah Perez / TechCrunch",
+   "published_at": "2026-10-22T03:51:08Z",
+   "text": "Walmart unveils Agent Gateway, an MCP server for AI agents to shop its site, and Agent Profiles to authorize agents and track their purchases separately. Walmart is embracing agentic commerce with the launch of its own Agent Gateway to manage transactions and other new features aimed …",
    "via": "Techmeme"
   },
   {
@@ -121,8 +121,8 @@
    "url": "https://openai.com/index/coordinated-disclosure-of-critical-vulnerabilities/",
    "source": "Hacker News",
    "published_at": "2026-10-21T14:03:43Z",
-   "text": "250 points and 167 comments on Hacker News.",
-   "points": 250,
+   "text": "251 points and 168 comments on Hacker News.",
+   "points": 251,
    "discussion": "https://news.ycombinator.com/item?id=50181175"
   },
   {
