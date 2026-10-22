@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-22T22:59:13Z",
+ "generated_at": "2026-10-22T23:31:00Z",
  "items": [
   {
    "title": "Sources: US banks are restricting third-party AI agents from accessing customer accounts, after som…",
@@ -17,7 +17,7 @@
    "published_at": "2026-10-22T18:17:10Z",
    "text": "Agent Skills started as an experiment in Claude Code. Many across the industry have come to adopt it, so we at Anthropic found it more fitting to donate it to the @AgenticAIFdn, next to MCP.",
    "author_name": "Boris Cherny",
-   "likes": 1223,
+   "likes": 1281,
    "story": "Anthropic donates the Agent Skills open standard to the Agentic AI Foundation and says 70+ platforms have integrated it, after donating MCP to the AAIF in 2025"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-10-22T21:36:16Z",
    "text": "🚨🚨ALERT: ANTHROPIC IS A/B TESTING USAGE LIMITS Many users on X are reporting LOWER usage limits right now. THEY ARE NOT WRONG. We detected an A/B test going on that DECREASES your monthly API-value by ~20% while INCREASING your 5h usage limits by ~20%. This only affects SOME h…",
    "author_name": "SemiAnalysis",
-   "likes": 469,
+   "likes": 739,
    "story": "SemiAnalysis claims Anthropic is A/B Testing Usage Limits"
   },
   {
@@ -44,7 +44,7 @@
    "published_at": "2026-10-22T15:41:24Z",
    "text": "💥 Introducing Warp Sciences, a new company applying AI and robotics to help the world develop new medicines faster. We’ve raised a $215M Series A led by @lightspeedvp to bring frontier AI out of the browser and into the lab, and build scientific capacity here in America. I…",
    "author_name": "Kevin Weil 🇺🇸",
-   "likes": 1686,
+   "likes": 1723,
    "story": "Warp Sciences, founded by former OpenAI CPO Kevin Weil to speed up drug development using AI, emerges from stealth with $215M at an $865M post-money valuation"
   },
   {
@@ -60,19 +60,19 @@
    "url": "https://github.com/NVIDIA/OpenShell",
    "source": "Hacker News",
    "published_at": "2026-10-22T17:44:06Z",
-   "text": "249 points and 128 comments on Hacker News.",
-   "points": 249,
+   "text": "259 points and 134 comments on Hacker News.",
+   "points": 259,
    "discussion": "https://news.ycombinator.com/item?id=50198675"
   },
   {
-   "title": "Introducing Canva Craft 🚀 Extraordinary image generation is now available to everyone, powered by o…",
-   "url": "https://x.com/canva/status/2113348707223753165",
-   "source": "𝕏 @canva",
-   "published_at": "2026-10-22T19:16:10Z",
-   "text": "Introducing Canva Craft 🚀 Extraordinary image generation is now available to everyone, powered by our first frontier model built specifically for design. With Craft, Canva is now the world's second most advanced AI lab for image generation on @DesignArena's global leaderboard.…",
-   "author_name": "Canva",
-   "likes": 1503,
-   "story": "Canva has released their own image generation model."
+   "title": "Grok Bot can now use your 1Password account. Approve the logins you want to share, and your Bot sig…",
+   "url": "https://x.com/bot/status/2113332983226831339",
+   "source": "𝕏 @bot",
+   "published_at": "2026-10-22T18:13:41Z",
+   "text": "Grok Bot can now use your 1Password account. Approve the logins you want to share, and your Bot signs in for you. This new integration is rolling out to users over the next few days.",
+   "author_name": "Grok Bot",
+   "likes": 5746,
+   "story": "1Password passes $500M in ARR, up from $400M in November 2025, driven by enterprise AI coding assistants and agents, and launches 1Password for Agents"
   },
   {
    "title": "Open call for guest investigators in the life sciences",
@@ -89,11 +89,11 @@
    "text": "My latest vibe coded game experiment is a Command & Conquer style RTS (Real Time Strategy) game called Battle Drones ( play it here ). Unlike my previous experiments , this one is actually fun to play . I'm somewhat embarrassed to admit that I got there by telling Claude to \"Make it a LOT more fun\". It also supports multiplayer between nearby devices using audio to synchronize game state! Here's what I've built so far, and some of the things I learned along the way."
   },
   {
-   "title": "The Browser Company says it will shut down its Arc browser on December 22, launched in 2023, shifti…",
-   "url": "https://www.theverge.com/tech/1016832/arc-browser-shutting-down",
-   "source": "Jay Peters / The Verge",
-   "published_at": "2026-10-22T17:26:36Z",
-   "text": "The Browser Company says it will shut down its Arc browser on December 22, launched in 2023, shifting attention to its AI-focused Dia browser, launched in 2025. New feature development for the innovative web browser ended last year. Now The Browser Company is telling users to try Dia, Arc's replacement.",
+   "title": "a16z rebrands a16z Crypto as a16z Frontier and expands the fund's scope to back startups developing…",
+   "url": "https://fortune.com/2026/10/22/venture-giant-andreessen-horowitz-crypto-name-blockchain-fund-rebrands-a16z-frontier/",
+   "source": "Camila Grigera Naón / Fortu…",
+   "published_at": "2026-10-22T23:06:52Z",
+   "text": "a16z rebrands a16z Crypto as a16z Frontier and expands the fund's scope to back startups developing AI, robotics, and other emerging technologies. In 2018, Andreessen Horowitz made a splash in the venture capital world by launching a spin-off dedicated to digital assets called a16z Crypto.",
    "via": "Techmeme"
   },
   {
@@ -103,7 +103,7 @@
    "published_at": "2026-10-22T15:26:44Z",
    "text": "Two employees from METR and Redwood Research worked on premises at OpenAI for three weeks this summer in an embedded assessment pilot. This team evaluated the systems OpenAI was using to monitor for misalignment from internal agents. A brief write-up of their work is now public.",
    "author_name": "METR",
-   "likes": 888,
+   "likes": 903,
    "story": "METR says a pilot test of OpenAI's monitoring system found vulnerabilities, including an exploit that could have let AI agents hide hundreds of recent actions"
   },
   {
@@ -111,9 +111,19 @@
    "url": "https://www.modelcompare.ai/blog/ai-models-controversial-take-on-humans",
    "source": "Hacker News",
    "published_at": "2026-10-22T16:08:00Z",
-   "text": "165 points and 180 comments on Hacker News.",
-   "points": 165,
+   "text": "185 points and 203 comments on Hacker News.",
+   "points": 185,
    "discussion": "https://news.ycombinator.com/item?id=50197313"
+  },
+  {
+   "title": "Introducing Canva Craft 🚀 Extraordinary image generation is now available to everyone, powered by o…",
+   "url": "https://x.com/canva/status/2113348707223753165",
+   "source": "𝕏 @canva",
+   "published_at": "2026-10-22T19:16:10Z",
+   "text": "Introducing Canva Craft 🚀 Extraordinary image generation is now available to everyone, powered by our first frontier model built specifically for design. With Craft, Canva is now the world's second most advanced AI lab for image generation on @DesignArena's global leaderboard.…",
+   "author_name": "Canva",
+   "likes": 1623,
+   "story": "Canva has released their own image generation model."
   },
   {
    "title": "Kimi K3.1 vs Qwen 4: 3D helicopter Same prompt, takeoff/land, 3D assembly and exploded views, very…",
@@ -122,16 +132,8 @@
    "published_at": "2026-10-22T10:32:56Z",
    "text": "Kimi K3.1 vs Qwen 4: 3D helicopter Same prompt, takeoff/land, 3D assembly and exploded views, very similar gen time at around 15-20 minutes for both China are not playing games anymore, these are very strong",
    "author_name": "Lumina",
-   "likes": 669,
+   "likes": 673,
    "story": "Qwen4 and Kimi3.1 on Arena apperantly"
-  },
-  {
-   "title": "Microsoft says China-linked hackers used AI penetration testing tool ARTEX to compromise ConnectWis…",
-   "url": "https://www.reuters.com/technology/chinese-linked-hackers-compromise-connectwise-target-hundreds-global-attack-2026-10-21/",
-   "source": "AJ Vicens / Reuters",
-   "published_at": "2026-10-22T06:26:04Z",
-   "text": "Microsoft says China-linked hackers used AI penetration testing tool ARTEX to compromise ConnectWise as part of a campaign targeting hundreds of organizations. A Chinese state-aligned hacking group used an AI-driven penetration testing tool to compromise IT services firm ConnectWise as part …",
-   "via": "Techmeme"
   }
  ],
  "sources": "curated, Techmeme, X (found via Techmeme, Reddit, the Internet Archive), Claude Code releases, Anthropic, Hacker News, Simon Willison"
