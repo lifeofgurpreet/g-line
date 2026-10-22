@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-22T22:26:34Z",
+ "generated_at": "2026-10-22T22:59:13Z",
  "items": [
   {
    "title": "Sources: US banks are restricting third-party AI agents from accessing customer accounts, after som…",
@@ -17,7 +17,7 @@
    "published_at": "2026-10-22T18:17:10Z",
    "text": "Agent Skills started as an experiment in Claude Code. Many across the industry have come to adopt it, so we at Anthropic found it more fitting to donate it to the @AgenticAIFdn, next to MCP.",
    "author_name": "Boris Cherny",
-   "likes": 1182,
+   "likes": 1223,
    "story": "Anthropic donates the Agent Skills open standard to the Agentic AI Foundation and says 70+ platforms have integrated it, after donating MCP to the AAIF in 2025"
   },
   {
@@ -28,21 +28,31 @@
    "text": "Fixed sandboxed Bash commands on macOS and Linux running the shell's startup files outside the sandbox before each command · Fixed macOS sandbox denyWrite glob patterns not applying at a path's real location when the pattern's folder is reached through a symlink · Fixed sandboxed commands and auto-accepted edits being able to modify the MCP config file passed with --mcp-config · Fixed a disabled MCP server being reconnected by a later permission prompt in print and SDK sessions"
   },
   {
+   "title": "🚨🚨ALERT: ANTHROPIC IS A/B TESTING USAGE LIMITS Many users on X are reporting LOWER usage limits rig…",
+   "url": "https://x.com/SemiAnalysis_/status/2113383965784502444",
+   "source": "𝕏 @SemiAnalysis_",
+   "published_at": "2026-10-22T21:36:16Z",
+   "text": "🚨🚨ALERT: ANTHROPIC IS A/B TESTING USAGE LIMITS Many users on X are reporting LOWER usage limits right now. THEY ARE NOT WRONG. We detected an A/B test going on that DECREASES your monthly API-value by ~20% while INCREASING your 5h usage limits by ~20%. This only affects SOME h…",
+   "author_name": "SemiAnalysis",
+   "likes": 469,
+   "story": "SemiAnalysis claims Anthropic is A/B Testing Usage Limits"
+  },
+  {
    "title": "💥 Introducing Warp Sciences, a new company applying AI and robotics to help the world develop new m…",
    "url": "https://x.com/kevinweil/status/2113294657673466060",
    "source": "𝕏 @kevinweil",
    "published_at": "2026-10-22T15:41:24Z",
    "text": "💥 Introducing Warp Sciences, a new company applying AI and robotics to help the world develop new medicines faster. We’ve raised a $215M Series A led by @lightspeedvp to bring frontier AI out of the browser and into the lab, and build scientific capacity here in America. I…",
    "author_name": "Kevin Weil 🇺🇸",
-   "likes": 1654,
+   "likes": 1686,
    "story": "Warp Sciences, founded by former OpenAI CPO Kevin Weil to speed up drug development using AI, emerges from stealth with $215M at an $865M post-money valuation"
   },
   {
-   "title": "The Browser Company says it will shut down its Arc browser on December 22, launched in 2023, shifti…",
-   "url": "https://www.theverge.com/tech/1016832/arc-browser-shutting-down",
-   "source": "Jay Peters / The Verge",
-   "published_at": "2026-10-22T17:26:36Z",
-   "text": "The Browser Company says it will shut down its Arc browser on December 22, launched in 2023, shifting attention to its AI-focused Dia browser, launched in 2025. New feature development for the innovative web browser ended last year. Now The Browser Company is telling users to try Dia, Arc's replacement.",
+   "title": "Sources: OpenAI nears an up to $30B round led by investors from the UAE and Coatue at a $1.25T pre-…",
+   "url": "https://www.cnbc.com/2026/10/22/openai-funding-round-uae-investors.html",
+   "source": "Kate Rooney / CNBC",
+   "published_at": "2026-10-22T20:24:16Z",
+   "text": "Sources: OpenAI nears an up to $30B round led by investors from the UAE and Coatue at a $1.25T pre-money valuation, as an “opportunistic” bridge ahead of an IPO. OpenAI is closing in on a funding round that could value the artificial intelligence giant at more than $1 trillion ahead …",
    "via": "Techmeme"
   },
   {
@@ -50,19 +60,19 @@
    "url": "https://github.com/NVIDIA/OpenShell",
    "source": "Hacker News",
    "published_at": "2026-10-22T17:44:06Z",
-   "text": "234 points and 125 comments on Hacker News.",
-   "points": 234,
+   "text": "249 points and 128 comments on Hacker News.",
+   "points": 249,
    "discussion": "https://news.ycombinator.com/item?id=50198675"
   },
   {
-   "title": "Two employees from METR and Redwood Research worked on premises at OpenAI for three weeks this summ…",
-   "url": "https://x.com/METR_Evals/status/2113290966933389390",
-   "source": "𝕏 @METR_Evals",
-   "published_at": "2026-10-22T15:26:44Z",
-   "text": "Two employees from METR and Redwood Research worked on premises at OpenAI for three weeks this summer in an embedded assessment pilot. This team evaluated the systems OpenAI was using to monitor for misalignment from internal agents. A brief write-up of their work is now public.",
-   "author_name": "METR",
-   "likes": 873,
-   "story": "METR says a pilot test of OpenAI's monitoring system found vulnerabilities, including an exploit that could have let AI agents hide hundreds of recent actions"
+   "title": "Introducing Canva Craft 🚀 Extraordinary image generation is now available to everyone, powered by o…",
+   "url": "https://x.com/canva/status/2113348707223753165",
+   "source": "𝕏 @canva",
+   "published_at": "2026-10-22T19:16:10Z",
+   "text": "Introducing Canva Craft 🚀 Extraordinary image generation is now available to everyone, powered by our first frontier model built specifically for design. With Craft, Canva is now the world's second most advanced AI lab for image generation on @DesignArena's global leaderboard.…",
+   "author_name": "Canva",
+   "likes": 1503,
+   "story": "Canva has released their own image generation model."
   },
   {
    "title": "Open call for guest investigators in the life sciences",
@@ -79,12 +89,31 @@
    "text": "My latest vibe coded game experiment is a Command & Conquer style RTS (Real Time Strategy) game called Battle Drones ( play it here ). Unlike my previous experiments , this one is actually fun to play . I'm somewhat embarrassed to admit that I got there by telling Claude to \"Make it a LOT more fun\". It also supports multiplayer between nearby devices using audio to synchronize game state! Here's what I've built so far, and some of the things I learned along the way."
   },
   {
-   "title": "Microsoft says China-linked hackers used AI penetration testing tool ARTEX to compromise ConnectWis…",
-   "url": "https://www.reuters.com/technology/chinese-linked-hackers-compromise-connectwise-target-hundreds-global-attack-2026-10-21/",
-   "source": "AJ Vicens / Reuters",
-   "published_at": "2026-10-22T06:26:04Z",
-   "text": "Microsoft says China-linked hackers used AI penetration testing tool ARTEX to compromise ConnectWise as part of a campaign targeting hundreds of organizations. A Chinese state-aligned hacking group used an AI-driven penetration testing tool to compromise IT services firm ConnectWise as part …",
+   "title": "The Browser Company says it will shut down its Arc browser on December 22, launched in 2023, shifti…",
+   "url": "https://www.theverge.com/tech/1016832/arc-browser-shutting-down",
+   "source": "Jay Peters / The Verge",
+   "published_at": "2026-10-22T17:26:36Z",
+   "text": "The Browser Company says it will shut down its Arc browser on December 22, launched in 2023, shifting attention to its AI-focused Dia browser, launched in 2025. New feature development for the innovative web browser ended last year. Now The Browser Company is telling users to try Dia, Arc's replacement.",
    "via": "Techmeme"
+  },
+  {
+   "title": "Two employees from METR and Redwood Research worked on premises at OpenAI for three weeks this summ…",
+   "url": "https://x.com/METR_Evals/status/2113290966933389390",
+   "source": "𝕏 @METR_Evals",
+   "published_at": "2026-10-22T15:26:44Z",
+   "text": "Two employees from METR and Redwood Research worked on premises at OpenAI for three weeks this summer in an embedded assessment pilot. This team evaluated the systems OpenAI was using to monitor for misalignment from internal agents. A brief write-up of their work is now public.",
+   "author_name": "METR",
+   "likes": 888,
+   "story": "METR says a pilot test of OpenAI's monitoring system found vulnerabilities, including an exploit that could have let AI agents hide hundreds of recent actions"
+  },
+  {
+   "title": "Every AI model has the same \"controversial\" take on humans",
+   "url": "https://www.modelcompare.ai/blog/ai-models-controversial-take-on-humans",
+   "source": "Hacker News",
+   "published_at": "2026-10-22T16:08:00Z",
+   "text": "165 points and 180 comments on Hacker News.",
+   "points": 165,
+   "discussion": "https://news.ycombinator.com/item?id=50197313"
   },
   {
    "title": "Kimi K3.1 vs Qwen 4: 3D helicopter Same prompt, takeoff/land, 3D assembly and exploded views, very…",
@@ -93,41 +122,15 @@
    "published_at": "2026-10-22T10:32:56Z",
    "text": "Kimi K3.1 vs Qwen 4: 3D helicopter Same prompt, takeoff/land, 3D assembly and exploded views, very similar gen time at around 15-20 minutes for both China are not playing games anymore, these are very strong",
    "author_name": "Lumina",
-   "likes": 660,
+   "likes": 669,
    "story": "Qwen4 and Kimi3.1 on Arena apperantly"
   },
   {
-   "title": "AI and the Enclosure of the Scientific Commons",
-   "url": "https://arxiv.org/abs/2610.27251",
-   "source": "Hacker News",
-   "published_at": "2026-10-22T18:28:16Z",
-   "text": "82 points and 45 comments on Hacker News.",
-   "points": 82,
-   "discussion": "https://news.ycombinator.com/item?id=50199230"
-  },
-  {
-   "title": "Palantir says that neither it nor the US government has a “kill switch” for its Maven military AI s…",
-   "url": "https://www.reuters.com/business/media-telecom/palantir-says-it-cannot-shut-off-nato-ai-system-europeans-fear-us-tech-2026-10-22/",
-   "source": "Andrew Gray / Reuters",
-   "published_at": "2026-10-22T10:11:15Z",
-   "text": "Palantir says that neither it nor the US government has a “kill switch” for its Maven military AI system that NATO uses, after Ukraine's Starshield disruptions. US software company Palantir (PLTR.O) sought to reassure Europeans that its military AI system used by NATO has no …",
-   "via": "Techmeme"
-  },
-  {
-   "title": "Every AI model has the same \"controversial\" take on humans",
-   "url": "https://www.modelcompare.ai/blog/ai-models-controversial-take-on-humans",
-   "source": "Hacker News",
-   "published_at": "2026-10-22T16:08:00Z",
-   "text": "137 points and 162 comments on Hacker News.",
-   "points": 137,
-   "discussion": "https://news.ycombinator.com/item?id=50197313"
-  },
-  {
-   "title": "Microsoft says its GPT-5-powered Diagnostic Orchestrator uses agents that mimic panels of experts t…",
-   "url": "https://www.theverge.com/ai-artificial-intelligence/1016690/suleyman-microsoft-diagnostic-orchestrator-science-medical-superintelligence",
-   "source": "Robert Hart / The Verge",
-   "published_at": "2026-10-22T18:36:32Z",
-   "text": "Microsoft says its GPT-5-powered Diagnostic Orchestrator uses agents that mimic panels of experts to diagnose conditions up to 4x more accurately than doctors. 'We're going to build something that is indistinguishable from human performance ... in the next couple of years,' Microsoft AI CEO Mustafa Suleyman tells The Verge.",
+   "title": "Microsoft says China-linked hackers used AI penetration testing tool ARTEX to compromise ConnectWis…",
+   "url": "https://www.reuters.com/technology/chinese-linked-hackers-compromise-connectwise-target-hundreds-global-attack-2026-10-21/",
+   "source": "AJ Vicens / Reuters",
+   "published_at": "2026-10-22T06:26:04Z",
+   "text": "Microsoft says China-linked hackers used AI penetration testing tool ARTEX to compromise ConnectWise as part of a campaign targeting hundreds of organizations. A Chinese state-aligned hacking group used an AI-driven penetration testing tool to compromise IT services firm ConnectWise as part …",
    "via": "Techmeme"
   }
  ],
