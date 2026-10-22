@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-22T09:07:17Z",
+ "generated_at": "2026-10-22T09:39:16Z",
  "items": [
   {
    "title": "Anthropic unveils Claude Duet, a proactive agent app on iOS, Android, and the web that works in the…",
@@ -17,8 +17,8 @@
    "published_at": "2026-10-21T14:04:23Z",
    "text": "OpenAI models helped researchers—operating as part of our Patch the Planet initiative—discover critical security flaws in PHP, an open-source programming language used to run an estimated 70% of websites. Over the past two months, we led a coalition of maintainers, researchers,…",
    "author_name": "OpenAI",
-   "likes": 13973,
-   "story": "AWS analysts say that at least one actor attempted to exploit the PHP2Shell vulnerabilities on October 17, four days before their public disclosure and patching"
+   "likes": 13994,
+   "story": "The PHP Foundation details how it found and fixed the two flaws, and says it had to release patches a day early after the two CVE IDs began circulating online"
   },
   {
    "title": "Claude Code 2.1.308 released",
@@ -28,14 +28,14 @@
    "text": "Bug fixes and reliability improvements"
   },
   {
-   "title": "My bar for AGI is still an AI winning a Nobel. But an AI researcher looking at the lm_head (that *e…",
-   "url": "https://x.com/Thom_Wolf/status/2112967683813609724",
-   "source": "𝕏 @Thom_Wolf",
-   "published_at": "2026-10-21T18:02:07Z",
-   "text": "My bar for AGI is still an AI winning a Nobel. But an AI researcher looking at the lm_head (that *everyone* tells you to keep in high precision) deciding to quantize it to 4 bits AND being actually right (0.7pt from bf16) is definitely impressive. Even better when the result…",
-   "author_name": "Thomas Wolf",
-   "likes": 360,
-   "story": "Recursive releases Flint, an open-weight, 40B-parameter coding model developed with its Eureka Machine AI system, which automated most of the development"
+   "title": "We built ChatGPT’s ad stack to respond to an evolving conversation, while ensuring answers stay ind…",
+   "url": "https://x.com/OpenAIDevs/status/2112962753682198969",
+   "source": "𝕏 @OpenAIDevs",
+   "published_at": "2026-10-21T17:42:32Z",
+   "text": "We built ChatGPT’s ad stack to respond to an evolving conversation, while ensuring answers stay independent. Here’s how the LLM orchestrator, retrieval, ranking and auction tools work together.",
+   "author_name": "OpenAI Developers",
+   "likes": 942,
+   "story": "OpenAI expands ChatGPT ads to 26 additional countries, taking the total to 83 countries, and says the platform has 100K+ advertisers, up from 20K in late August"
   },
   {
    "title": "Meta says it will create a new class of nonvoting stock to raise the capital it needs for developin…",
@@ -50,22 +50,19 @@
    "url": "https://github.com/openai/openai-cli",
    "source": "Hacker News",
    "published_at": "2026-10-22T05:23:11Z",
-   "text": "102 points and 67 comments on Hacker News.",
-   "points": 102,
+   "text": "115 points and 67 comments on Hacker News.",
+   "points": 115,
    "discussion": "https://news.ycombinator.com/item?id=50191507"
   },
   {
-   "title": "GPTs will also now be available in Antigravity.",
-   "url": "https://x.com/AndrewCurran_/status/2112907155787411582",
-   "source": "𝕏 @AndrewCurran_",
-   "published_at": "2026-10-21T14:01:36Z",
-   "text": "GPTs will also now be available in Antigravity.",
-   "author_name": "Andrew Curran",
-   "likes": 367,
-   "story": "OpenAI says it will make its AI models available on Google Cloud's model garden and Antigravity coding tool in the coming weeks, after launching on AWS in April",
-   "links": [
-    "https://openai.com/index/openai-models-google-cloud/"
-   ]
+   "title": "My bar for AGI is still an AI winning a Nobel. But an AI researcher looking at the lm_head (that *e…",
+   "url": "https://x.com/Thom_Wolf/status/2112967683813609724",
+   "source": "𝕏 @Thom_Wolf",
+   "published_at": "2026-10-21T18:02:07Z",
+   "text": "My bar for AGI is still an AI winning a Nobel. But an AI researcher looking at the lm_head (that *everyone* tells you to keep in high precision) deciding to quantize it to 4 bits AND being actually right (0.7pt from bf16) is definitely impressive. Even better when the result…",
+   "author_name": "Thomas Wolf",
+   "likes": 372,
+   "story": "Recursive releases Flint, an open-weight, 40B-parameter coding model developed with its Eureka Machine AI system, which automated most of the development"
   },
   {
    "title": "Developing Enterprise Frontier Safeguards with our customers",
@@ -90,12 +87,25 @@
    "via": "Techmeme"
   },
   {
+   "title": "GPTs will also now be available in Antigravity.",
+   "url": "https://x.com/AndrewCurran_/status/2112907155787411582",
+   "source": "𝕏 @AndrewCurran_",
+   "published_at": "2026-10-21T14:01:36Z",
+   "text": "GPTs will also now be available in Antigravity.",
+   "author_name": "Andrew Curran",
+   "likes": 367,
+   "story": "OpenAI says it will make its AI models available on Google Cloud's model garden and Antigravity coding tool in the coming weeks, after launching on AWS in April",
+   "links": [
+    "https://openai.com/index/openai-models-google-cloud/"
+   ]
+  },
+  {
    "title": "WorldTUI: I trained a 360M model to pretend to be a terminal",
    "url": "https://simedw.com/2026/10/21/world-model-terminal/",
    "source": "Hacker News",
    "published_at": "2026-10-22T02:18:41Z",
-   "text": "166 points and 52 comments on Hacker News.",
-   "points": 166,
+   "text": "197 points and 60 comments on Hacker News.",
+   "points": 197,
    "discussion": "https://news.ycombinator.com/item?id=50190363"
   },
   {
@@ -111,8 +121,8 @@
    "url": "https://claude.com/product/claude-duet",
    "source": "Hacker News",
    "published_at": "2026-10-21T19:14:01Z",
-   "text": "357 points and 333 comments on Hacker News.",
-   "points": 357,
+   "text": "374 points and 343 comments on Hacker News.",
+   "points": 374,
    "discussion": "https://news.ycombinator.com/item?id=50186037"
   },
   {
@@ -121,14 +131,6 @@
    "source": "Anthropic",
    "published_at": "2026-10-21T18:22:03Z",
    "text": "Dr. Christopher Stubbs, an experimental physicist and former Dean of Science at Harvard University, has joined Anthropic’s Long-Term Benefit Trust. He brings to the Trust decades of scientific expertise across observational cosmology and precision measurement. He has also advised the US government on national security and arms control. “I am honored to join Anthropic’s Long-Term Benefit Trust and to help the company deliver on its public benefit mission,” said Stubbs."
-  },
-  {
-   "title": "Nvidia unveils the DSX POD, a modular containerized version of its Vera Rubin reference architectur…",
-   "url": "https://www.datacenterdynamics.com/en/news/nvidia-launches-dsx-pod-claims-the-vera-rubin-reference-architecture-will-make-ai-data-centers-more-water-and-energy-efficient/",
-   "source": "Charlotte Trueman / Datacen…",
-   "published_at": "2026-10-21T10:21:11Z",
-   "text": "Nvidia unveils the DSX POD, a modular containerized version of its Vera Rubin reference architecture to cut data center deployment from six months to 14 days. Details released at GTC Berlin event, taking place this week — Nvidia has claimed its DSX reference architecture for AI data centers …",
-   "via": "Techmeme"
   }
  ],
  "sources": "curated, Techmeme, X (found via Techmeme, Reddit, the Internet Archive), Claude Code releases, Anthropic, Hacker News, Simon Willison"
