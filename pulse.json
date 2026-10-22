@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-22T11:47:38Z",
+ "generated_at": "2026-10-22T12:18:49Z",
  "items": [
   {
    "title": "Anthropic unveils Claude Duet, a proactive agent app on iOS, Android, and the web that works in the…",
@@ -17,7 +17,7 @@
    "published_at": "2026-10-21T13:32:35Z",
    "text": "GPT-Rosalind surfaced a new lead for drug discovery: could restoring cholesterol transport protect neurons from degeneration? DCTN1 is a gene linked to Perry syndrome, a rare neurodegenerative disorder. In mouse-brain data, disrupting it increased expression of genes involved in…",
    "author_name": "OpenAI",
-   "likes": 6539,
+   "likes": 6571,
    "story": "OpenAI, PerturbAI, and Scripps say thousands of GPT-Rosalind agents analyzed data on millions of mouse brain cells in 32 minutes, a job that takes humans months"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-10-22T11:10:41Z",
    "text": "Introducing Ling-3.1-flash-1019 🚀 It scores 44 on the Artificial Analysis Intelligence Index, up from 41 for Ling-3.1-flash. Gains in agentic work: AA-Briefcase ~1400→1524 Elo and AutomationBench-AA 62%→68%. API access and open weights coming soon. Stay tuned.",
    "author_name": "Ant Ling",
-   "likes": 174,
+   "likes": 389,
    "story": "Ling-3.1-flash is getting a 1019 update, with open weights to follow"
   },
   {
@@ -44,15 +44,15 @@
    "published_at": "2026-10-21T18:02:07Z",
    "text": "My bar for AGI is still an AI winning a Nobel. But an AI researcher looking at the lm_head (that *everyone* tells you to keep in high precision) deciding to quantize it to 4 bits AND being actually right (0.7pt from bf16) is definitely impressive. Even better when the result…",
    "author_name": "Thomas Wolf",
-   "likes": 383,
+   "likes": 387,
    "story": "Recursive releases Flint, an open-weight, 40B-parameter coding model developed with its Eureka Machine AI system, which automated most of the development"
   },
   {
-   "title": "Microsoft says China-linked hackers used AI penetration testing tool ARTEX to compromise ConnectWis…",
-   "url": "https://www.reuters.com/technology/chinese-linked-hackers-compromise-connectwise-target-hundreds-global-attack-2026-10-21/",
-   "source": "AJ Vicens / Reuters",
-   "published_at": "2026-10-22T06:26:04Z",
-   "text": "Microsoft says China-linked hackers used AI penetration testing tool ARTEX to compromise ConnectWise as part of a campaign targeting hundreds of organizations. A Chinese state-aligned hacking group used an AI-driven penetration testing tool to compromise IT services firm ConnectWise as part …",
+   "title": "Meta says it will create a new class of nonvoting stock to raise the capital it needs for developin…",
+   "url": "https://www.wsj.com/articles/metaplatforms-meta-3q-earnings-report-2026-stock-f28d64c2?st=Uj26V6&reflink=desktopwebshare_permalink",
+   "source": "Meghan Bobrowsky / Wall Str…",
+   "published_at": "2026-10-21T20:21:07Z",
+   "text": "Meta says it will create a new class of nonvoting stock to raise the capital it needs for developing AI models, with an effective date in January 2027",
    "via": "Techmeme"
   },
   {
@@ -60,8 +60,8 @@
    "url": "https://simedw.com/2026/10/21/world-model-terminal/",
    "source": "Hacker News",
    "published_at": "2026-10-22T02:18:41Z",
-   "text": "270 points and 87 comments on Hacker News.",
-   "points": 270,
+   "text": "289 points and 92 comments on Hacker News.",
+   "points": 289,
    "discussion": "https://news.ycombinator.com/item?id=50190363"
   },
   {
@@ -79,11 +79,11 @@
    "text": "My latest vibe coded game experiment is a Command & Conquer style RTS (Real Time Strategy) game called Battle Drones ( play it here ). Unlike my previous experiments , this one is actually fun to play . I'm somewhat embarrassed to admit that I got there by telling Claude to \"Make it a LOT more fun\". It also supports multiplayer between nearby devices using audio to synchronize game state! Here's what I've built so far, and some of the things I learned along the way."
   },
   {
-   "title": "Walmart unveils Agent Gateway, an MCP server for AI agents to shop its site, and Agent Profiles to…",
-   "url": "https://techcrunch.com/2026/10/21/while-amazon-blocks-ai-agents-walmart-rolls-out-the-welcome-mat/",
-   "source": "Sarah Perez / TechCrunch",
-   "published_at": "2026-10-22T03:51:08Z",
-   "text": "Walmart unveils Agent Gateway, an MCP server for AI agents to shop its site, and Agent Profiles to authorize agents and track their purchases separately. Walmart is embracing agentic commerce with the launch of its own Agent Gateway to manage transactions and other new features aimed …",
+   "title": "Microsoft says China-linked hackers used AI penetration testing tool ARTEX to compromise ConnectWis…",
+   "url": "https://www.reuters.com/technology/chinese-linked-hackers-compromise-connectwise-target-hundreds-global-attack-2026-10-21/",
+   "source": "AJ Vicens / Reuters",
+   "published_at": "2026-10-22T06:26:04Z",
+   "text": "Microsoft says China-linked hackers used AI penetration testing tool ARTEX to compromise ConnectWise as part of a campaign targeting hundreds of organizations. A Chinese state-aligned hacking group used an AI-driven penetration testing tool to compromise IT services firm ConnectWise as part …",
    "via": "Techmeme"
   },
   {
@@ -91,16 +91,16 @@
    "url": "https://github.com/openai/openai-cli",
    "source": "Hacker News",
    "published_at": "2026-10-22T05:23:11Z",
-   "text": "145 points and 79 comments on Hacker News.",
-   "points": 145,
+   "text": "151 points and 81 comments on Hacker News.",
+   "points": 151,
    "discussion": "https://news.ycombinator.com/item?id=50191507"
   },
   {
-   "title": "Sources: DeepSeek raised ~$15B in its latest fundraising round, one of China's largest ever, with C…",
-   "url": "https://www.bloomberg.com/news/articles/2026-10-22/deepseek-raises-15-billion-in-challenge-to-leading-us-labs",
-   "source": "Lulu Yilun Chen / Bloomberg",
-   "published_at": "2026-10-22T03:01:44Z",
-   "text": "Sources: DeepSeek raised ~$15B in its latest fundraising round, one of China's largest ever, with CATL and Tencent among the biggest contributors. The Chinese AI pioneer DeepSeek has raised about 100 billion yuan ($15 billion) in its latest fundraising round, one of the country's largest ever …",
+   "title": "Hugging Face releases Carbon-X, an open-source, 14B-parameter multimodal AI model to let users quer…",
+   "url": "https://www.wired.com/story/hugging-face-new-ai-biology-model-chat-with-dna/",
+   "source": "Emily Mullin / Wired",
+   "published_at": "2026-10-22T10:46:21Z",
+   "text": "Hugging Face releases Carbon-X, an open-source, 14B-parameter multimodal AI model to let users query DNA sequences via natural language, trained on 300B tokens. The new open-source model speaks the language of DNA and can help researchers understand the effects of any changes on gene activity and health.",
    "via": "Techmeme"
   },
   {
@@ -108,8 +108,8 @@
    "url": "https://claude.com/product/claude-duet",
    "source": "Hacker News",
    "published_at": "2026-10-21T19:14:01Z",
-   "text": "420 points and 382 comments on Hacker News.",
-   "points": 420,
+   "text": "432 points and 393 comments on Hacker News.",
+   "points": 432,
    "discussion": "https://news.ycombinator.com/item?id=50186037"
   },
   {
@@ -120,11 +120,11 @@
    "text": "Dr. Christopher Stubbs, an experimental physicist and former Dean of Science at Harvard University, has joined Anthropic’s Long-Term Benefit Trust. He brings to the Trust decades of scientific expertise across observational cosmology and precision measurement. He has also advised the US government on national security and arms control. “I am honored to join Anthropic’s Long-Term Benefit Trust and to help the company deliver on its public benefit mission,” said Stubbs."
   },
   {
-   "title": "Hugging Face releases Carbon-X, an open-source, 14B-parameter multimodal AI model to let users quer…",
-   "url": "https://www.wired.com/story/hugging-face-new-ai-biology-model-chat-with-dna/",
-   "source": "Emily Mullin / Wired",
-   "published_at": "2026-10-22T10:46:21Z",
-   "text": "Hugging Face releases Carbon-X, an open-source, 14B-parameter multimodal AI model to let users query DNA sequences via natural language, trained on 300B tokens. The new open-source model speaks the language of DNA and can help researchers understand the effects of any changes on gene activity and health.",
+   "title": "Walmart unveils Agent Gateway, an MCP server for AI agents to shop its site, and Agent Profiles to…",
+   "url": "https://techcrunch.com/2026/10/21/while-amazon-blocks-ai-agents-walmart-rolls-out-the-welcome-mat/",
+   "source": "Sarah Perez / TechCrunch",
+   "published_at": "2026-10-22T03:51:08Z",
+   "text": "Walmart unveils Agent Gateway, an MCP server for AI agents to shop its site, and Agent Profiles to authorize agents and track their purchases separately. Walmart is embracing agentic commerce with the launch of its own Agent Gateway to manage transactions and other new features aimed …",
    "via": "Techmeme"
   }
  ],
