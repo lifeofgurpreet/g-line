@@ -1,24 +1,24 @@
 {
  "schema": 1,
- "generated_at": "2026-10-22T15:31:05Z",
+ "generated_at": "2026-10-22T16:03:10Z",
  "items": [
   {
-   "title": "Anthropic unveils Claude Duet, a proactive agent app on iOS, Android, and the web that works in the…",
+   "title": "Anthropic debuts Claude Duet, a proactive agent app for iOS, Android, and the web that works in the…",
    "url": "https://claude.com/resources/articles/claude-duet",
    "source": "Claude",
    "published_at": "2026-10-21T21:02:27Z",
-   "text": "Anthropic unveils Claude Duet, a proactive agent app on iOS, Android, and the web that works in the background, in research preview for US Pro and Max users. A research preview is available by waitlist today, starting with US Pro and Max subscribers. — Join the waitlist … ShareCopy link",
+   "text": "Anthropic debuts Claude Duet, a proactive agent app for iOS, Android, and the web that works in the background, in research preview for US Pro and Max users. A research preview is available by waitlist today, starting with US Pro and Max subscribers. — Join the waitlist … ShareCopy link",
    "via": "Techmeme"
   },
   {
-   "title": "Introducing Ling-3.1-flash-1019 🚀 It scores 44 on the Artificial Analysis Intelligence Index, up fr…",
-   "url": "https://x.com/AntLingAGI/status/2113226531522891851",
-   "source": "𝕏 @AntLingAGI",
-   "published_at": "2026-10-22T11:10:41Z",
-   "text": "Introducing Ling-3.1-flash-1019 🚀 It scores 44 on the Artificial Analysis Intelligence Index, up from 41 for Ling-3.1-flash. Gains in agentic work: AA-Briefcase ~1400→1524 Elo and AutomationBench-AA 62%→68%. API access and open weights coming soon. Stay tuned.",
-   "author_name": "Ant Ling",
-   "likes": 835,
-   "story": "Ling-3.1-flash is getting a 1019 update, with open weights to follow"
+   "title": "SCOOP: Major U.S. banks are detecting unauthorized third-party AI agents inside customer accounts,…",
+   "url": "https://x.com/MadisonMills22/status/2113251043173683683",
+   "source": "𝕏 @MadisonMills22",
+   "published_at": "2026-10-22T12:48:05Z",
+   "text": "SCOOP: Major U.S. banks are detecting unauthorized third-party AI agents inside customer accounts, including some attempting to take actions that appear to be independent of user instructions, sources told Axios. The findings have alarmed banking executives, who are racing to…",
+   "author_name": "Madison Mills",
+   "likes": 6839,
+   "story": "Sources: US banks are restricting third-party AI agents from accessing customer accounts, after some agents appeared to act independently of user instructions"
   },
   {
    "title": "Claude Code 2.1.308 released",
@@ -28,14 +28,24 @@
    "text": "Bug fixes and reliability improvements"
   },
   {
-   "title": "Kimi K3.1 vs Qwen 4: 3D helicopter Same prompt, takeoff/land, 3D assembly and exploded views, very…",
-   "url": "https://x.com/LuminaBench/status/2113217029675085963",
-   "source": "𝕏 @LuminaBench",
-   "published_at": "2026-10-22T10:32:56Z",
-   "text": "Kimi K3.1 vs Qwen 4: 3D helicopter Same prompt, takeoff/land, 3D assembly and exploded views, very similar gen time at around 15-20 minutes for both China are not playing games anymore, these are very strong",
-   "author_name": "Lumina",
-   "likes": 434,
-   "story": "Qwen4 and Kimi3.1 on Arena apperantly"
+   "title": "💥 Introducing Warp Sciences, a new company applying AI and robotics to help the world develop new m…",
+   "url": "https://x.com/kevinweil/status/2113294657673466060",
+   "source": "𝕏 @kevinweil",
+   "published_at": "2026-10-22T15:41:24Z",
+   "text": "💥 Introducing Warp Sciences, a new company applying AI and robotics to help the world develop new medicines faster. We’ve raised a $215M Series A led by @lightspeedvp to bring frontier AI out of the browser and into the lab, and build scientific capacity here in America. I…",
+   "author_name": "Kevin Weil 🇺🇸",
+   "likes": 144,
+   "story": "Warp Sciences, founded by ex-OpenAI product chief Kevin Weil to speed up AI drug development, emerges from stealth with $215M at an $865M post-money valuation"
+  },
+  {
+   "title": "Introducing Ling-3.1-flash-1019 🚀 It scores 44 on the Artificial Analysis Intelligence Index, up fr…",
+   "url": "https://x.com/AntLingAGI/status/2113226531522891851",
+   "source": "𝕏 @AntLingAGI",
+   "published_at": "2026-10-22T11:10:41Z",
+   "text": "Introducing Ling-3.1-flash-1019 🚀 It scores 44 on the Artificial Analysis Intelligence Index, up from 41 for Ling-3.1-flash. Gains in agentic work: AA-Briefcase ~1400→1524 Elo and AutomationBench-AA 62%→68%. API access and open weights coming soon. Stay tuned.",
+   "author_name": "Ant Ling",
+   "likes": 875,
+   "story": "Ling-3.1-flash is getting a 1019 update, with open weights to follow"
   },
   {
    "title": "Microsoft says China-linked hackers used AI penetration testing tool ARTEX to compromise ConnectWis…",
@@ -50,9 +60,19 @@
    "url": "https://simedw.com/2026/10/21/world-model-terminal/",
    "source": "Hacker News",
    "published_at": "2026-10-22T02:18:41Z",
-   "text": "391 points and 117 comments on Hacker News.",
-   "points": 391,
+   "text": "405 points and 124 comments on Hacker News.",
+   "points": 405,
    "discussion": "https://news.ycombinator.com/item?id=50190363"
+  },
+  {
+   "title": "Kimi K3.1 vs Qwen 4: 3D helicopter Same prompt, takeoff/land, 3D assembly and exploded views, very…",
+   "url": "https://x.com/LuminaBench/status/2113217029675085963",
+   "source": "𝕏 @LuminaBench",
+   "published_at": "2026-10-22T10:32:56Z",
+   "text": "Kimi K3.1 vs Qwen 4: 3D helicopter Same prompt, takeoff/land, 3D assembly and exploded views, very similar gen time at around 15-20 minutes for both China are not playing games anymore, these are very strong",
+   "author_name": "Lumina",
+   "likes": 459,
+   "story": "Qwen4 and Kimi3.1 on Arena apperantly"
   },
   {
    "title": "Developing Enterprise Frontier Safeguards with our customers",
@@ -77,45 +97,13 @@
    "via": "Techmeme"
   },
   {
-   "title": "OpenAI CLI",
-   "url": "https://github.com/openai/openai-cli",
-   "source": "Hacker News",
-   "published_at": "2026-10-22T05:23:11Z",
-   "text": "198 points and 93 comments on Hacker News.",
-   "points": 198,
-   "discussion": "https://news.ycombinator.com/item?id=50191507"
-  },
-  {
-   "title": "Walmart unveils Agent Gateway, an MCP server for AI agents to shop its site, and Agent Profiles to…",
-   "url": "https://techcrunch.com/2026/10/21/while-amazon-blocks-ai-agents-walmart-rolls-out-the-welcome-mat/",
-   "source": "Sarah Perez / TechCrunch",
-   "published_at": "2026-10-22T03:51:08Z",
-   "text": "Walmart unveils Agent Gateway, an MCP server for AI agents to shop its site, and Agent Profiles to authorize agents and track their purchases separately. Walmart is embracing agentic commerce with the launch of its own Agent Gateway to manage transactions and other new features aimed …",
-   "via": "Techmeme"
-  },
-  {
    "title": "Claude Duet",
    "url": "https://claude.com/product/claude-duet",
    "source": "Hacker News",
    "published_at": "2026-10-21T19:14:01Z",
-   "text": "491 points and 452 comments on Hacker News.",
-   "points": 491,
+   "text": "502 points and 460 comments on Hacker News.",
+   "points": 502,
    "discussion": "https://news.ycombinator.com/item?id=50186037"
-  },
-  {
-   "title": "Physicist Christopher Stubbs joins Anthropic's Long-Term Benefit Trust",
-   "url": "https://www.anthropic.com/news/christopher-stubbs-joins-long-term-benefit-trust",
-   "source": "Anthropic",
-   "published_at": "2026-10-21T18:22:03Z",
-   "text": "Dr. Christopher Stubbs, an experimental physicist and former Dean of Science at Harvard University, has joined Anthropic’s Long-Term Benefit Trust. He brings to the Trust decades of scientific expertise across observational cosmology and precision measurement. He has also advised the US government on national security and arms control. “I am honored to join Anthropic’s Long-Term Benefit Trust and to help the company deliver on its public benefit mission,” said Stubbs."
-  },
-  {
-   "title": "Hugging Face releases Carbon-X, an open-source, 14B-parameter multimodal AI model to let users quer…",
-   "url": "https://www.wired.com/story/hugging-face-new-ai-biology-model-chat-with-dna/",
-   "source": "Emily Mullin / Wired",
-   "published_at": "2026-10-22T10:46:21Z",
-   "text": "Hugging Face releases Carbon-X, an open-source, 14B-parameter multimodal AI model to let users query DNA sequences via natural language, trained on 300B tokens. The new open-source model speaks the language of DNA and can help researchers understand the effects of any changes on gene activity and health.",
-   "via": "Techmeme"
   },
   {
    "title": "Sources: DeepSeek raised ~$15B in its latest fundraising round, one of China's largest ever, with C…",
@@ -124,6 +112,22 @@
    "published_at": "2026-10-22T03:01:44Z",
    "text": "Sources: DeepSeek raised ~$15B in its latest fundraising round, one of China's largest ever, with CATL and Tencent among the biggest contributors. The Chinese AI pioneer DeepSeek has raised about 100 billion yuan ($15 billion) in its latest fundraising round, one of the country's largest ever …",
    "via": "Techmeme"
+  },
+  {
+   "title": "Show HN: Omnara – Open-source alternative to Claude Managed Agents",
+   "url": "https://github.com/omnara-ai/omnara",
+   "source": "Hacker News",
+   "published_at": "2026-10-21T16:44:53Z",
+   "text": "99 points and 28 comments on Hacker News.",
+   "points": 99,
+   "discussion": "https://news.ycombinator.com/item?id=50183892"
+  },
+  {
+   "title": "Physicist Christopher Stubbs joins Anthropic's Long-Term Benefit Trust",
+   "url": "https://www.anthropic.com/news/christopher-stubbs-joins-long-term-benefit-trust",
+   "source": "Anthropic",
+   "published_at": "2026-10-21T18:22:03Z",
+   "text": "Dr. Christopher Stubbs, an experimental physicist and former Dean of Science at Harvard University, has joined Anthropic’s Long-Term Benefit Trust. He brings to the Trust decades of scientific expertise across observational cosmology and precision measurement. He has also advised the US government on national security and arms control. “I am honored to join Anthropic’s Long-Term Benefit Trust and to help the company deliver on its public benefit mission,” said Stubbs."
   }
  ],
  "sources": "curated, Techmeme, X (found via Techmeme, Reddit, the Internet Archive), Claude Code releases, Anthropic, Hacker News, Simon Willison"
