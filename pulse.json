@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-22T13:54:21Z",
+ "generated_at": "2026-10-22T14:26:04Z",
  "items": [
   {
    "title": "Anthropic unveils Claude Duet, a proactive agent app on iOS, Android, and the web that works in the…",
@@ -17,7 +17,7 @@
    "published_at": "2026-10-21T13:32:35Z",
    "text": "GPT-Rosalind surfaced a new lead for drug discovery: could restoring cholesterol transport protect neurons from degeneration? DCTN1 is a gene linked to Perry syndrome, a rare neurodegenerative disorder. In mouse-brain data, disrupting it increased expression of genes involved in…",
    "author_name": "OpenAI",
-   "likes": 6676,
+   "likes": 6713,
    "story": "OpenAI, PerturbAI, and Scripps say thousands of GPT-Rosalind agents analyzed data on millions of mouse brain cells in 32 minutes, a job that takes humans months"
   },
   {
@@ -34,18 +34,8 @@
    "published_at": "2026-10-22T11:10:41Z",
    "text": "Introducing Ling-3.1-flash-1019 🚀 It scores 44 on the Artificial Analysis Intelligence Index, up from 41 for Ling-3.1-flash. Gains in agentic work: AA-Briefcase ~1400→1524 Elo and AutomationBench-AA 62%→68%. API access and open weights coming soon. Stay tuned.",
    "author_name": "Ant Ling",
-   "likes": 677,
+   "likes": 738,
    "story": "Ling-3.1-flash is getting a 1019 update, with open weights to follow"
-  },
-  {
-   "title": "Kimi K3.1 vs Qwen 4: 3D helicopter Same prompt, takeoff/land, 3D assembly and exploded views, very…",
-   "url": "https://x.com/LuminaBench/status/2113217029675085963",
-   "source": "𝕏 @LuminaBench",
-   "published_at": "2026-10-22T10:32:56Z",
-   "text": "Kimi K3.1 vs Qwen 4: 3D helicopter Same prompt, takeoff/land, 3D assembly and exploded views, very similar gen time at around 15-20 minutes for both China are not playing games anymore, these are very strong",
-   "author_name": "Lumina",
-   "likes": 314,
-   "story": "Qwen4 and Kimi3.1 on Arena apperantly"
   },
   {
    "title": "Mark Zuckerberg says Muse has drawn 10M+ users since its launch and 25%+ of users are making purcha…",
@@ -60,9 +50,19 @@
    "url": "https://simedw.com/2026/10/21/world-model-terminal/",
    "source": "Hacker News",
    "published_at": "2026-10-22T02:18:41Z",
-   "text": "344 points and 108 comments on Hacker News.",
-   "points": 344,
+   "text": "363 points and 114 comments on Hacker News.",
+   "points": 363,
    "discussion": "https://news.ycombinator.com/item?id=50190363"
+  },
+  {
+   "title": "Kimi K3.1 vs Qwen 4: 3D helicopter Same prompt, takeoff/land, 3D assembly and exploded views, very…",
+   "url": "https://x.com/LuminaBench/status/2113217029675085963",
+   "source": "𝕏 @LuminaBench",
+   "published_at": "2026-10-22T10:32:56Z",
+   "text": "Kimi K3.1 vs Qwen 4: 3D helicopter Same prompt, takeoff/land, 3D assembly and exploded views, very similar gen time at around 15-20 minutes for both China are not playing games anymore, these are very strong",
+   "author_name": "Lumina",
+   "likes": 354,
+   "story": "Qwen4 and Kimi3.1 on Arena apperantly"
   },
   {
    "title": "Developing Enterprise Frontier Safeguards with our customers",
@@ -91,8 +91,8 @@
    "url": "https://github.com/openai/openai-cli",
    "source": "Hacker News",
    "published_at": "2026-10-22T05:23:11Z",
-   "text": "175 points and 85 comments on Hacker News.",
-   "points": 175,
+   "text": "181 points and 86 comments on Hacker News.",
+   "points": 181,
    "discussion": "https://news.ycombinator.com/item?id=50191507"
   },
   {
@@ -108,8 +108,8 @@
    "url": "https://claude.com/product/claude-duet",
    "source": "Hacker News",
    "published_at": "2026-10-21T19:14:01Z",
-   "text": "465 points and 431 comments on Hacker News.",
-   "points": 465,
+   "text": "470 points and 439 comments on Hacker News.",
+   "points": 470,
    "discussion": "https://news.ycombinator.com/item?id=50186037"
   },
   {
@@ -120,11 +120,11 @@
    "text": "Dr. Christopher Stubbs, an experimental physicist and former Dean of Science at Harvard University, has joined Anthropic’s Long-Term Benefit Trust. He brings to the Trust decades of scientific expertise across observational cosmology and precision measurement. He has also advised the US government on national security and arms control. “I am honored to join Anthropic’s Long-Term Benefit Trust and to help the company deliver on its public benefit mission,” said Stubbs."
   },
   {
-   "title": "Sources: DeepSeek raised ~$15B in its latest fundraising round, one of China's largest ever, with C…",
-   "url": "https://www.bloomberg.com/news/articles/2026-10-22/deepseek-raises-15-billion-in-challenge-to-leading-us-labs",
-   "source": "Lulu Yilun Chen / Bloomberg",
-   "published_at": "2026-10-22T03:01:44Z",
-   "text": "Sources: DeepSeek raised ~$15B in its latest fundraising round, one of China's largest ever, with CATL and Tencent among the biggest contributors. The Chinese AI pioneer DeepSeek has raised about 100 billion yuan ($15 billion) in its latest fundraising round, one of the country's largest ever …",
+   "title": "Barclays plans to cut 5,000 jobs, or ~5% of its workforce, by the end of 2026 as part of AI-driven…",
+   "url": "https://www.bloomberg.com/news/articles/2026-10-22/barclays-to-cut-5-000-jobs-as-ai-starts-creating-efficiency",
+   "source": "William Shaw / Bloomberg",
+   "published_at": "2026-10-22T09:46:35Z",
+   "text": "Barclays plans to cut 5,000 jobs, or ~5% of its workforce, by the end of 2026 as part of AI-driven cost cutting, with ~60% coming from support and developers. Barclays to Cut 5,000 Jobs as AI Starts to Create Efficiency — Video Player is loading. — Unmute — Current Time 0:00 Loaded: 69.77% Playback Rate",
    "via": "Techmeme"
   }
  ],
