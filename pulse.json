@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-22T10:44:13Z",
+ "generated_at": "2026-10-22T11:16:06Z",
  "items": [
   {
    "title": "Anthropic unveils Claude Duet, a proactive agent app on iOS, Android, and the web that works in the…",
@@ -17,7 +17,7 @@
    "published_at": "2026-10-21T14:04:23Z",
    "text": "OpenAI models helped researchers—operating as part of our Patch the Planet initiative—discover critical security flaws in PHP, an open-source programming language used to run an estimated 70% of websites. Over the past two months, we led a coalition of maintainers, researchers,…",
    "author_name": "OpenAI",
-   "likes": 14031,
+   "likes": 14058,
    "story": "The PHP Foundation details how it found and fixed the two flaws, and says it had to release patches a day early after the two CVE IDs began circulating online"
   },
   {
@@ -34,25 +34,25 @@
    "published_at": "2026-10-21T18:02:07Z",
    "text": "My bar for AGI is still an AI winning a Nobel. But an AI researcher looking at the lm_head (that *everyone* tells you to keep in high precision) deciding to quantize it to 4 bits AND being actually right (0.7pt from bf16) is definitely impressive. Even better when the result…",
    "author_name": "Thomas Wolf",
-   "likes": 374,
+   "likes": 382,
    "story": "Recursive releases Flint, an open-weight, 40B-parameter coding model developed with its Eureka Machine AI system, which automated most of the development"
   },
   {
-   "title": "Meta says it will create a new class of nonvoting stock to raise the capital it needs for developin…",
-   "url": "https://www.wsj.com/articles/metaplatforms-meta-3q-earnings-report-2026-stock-f28d64c2?st=Uj26V6&reflink=desktopwebshare_permalink",
-   "source": "Meghan Bobrowsky / Wall Str…",
-   "published_at": "2026-10-21T20:21:07Z",
-   "text": "Meta says it will create a new class of nonvoting stock to raise the capital it needs for developing AI models, with an effective date in January 2027. The company, which reported record revenue of $64.2 billion for the third quarter, said the new stock won't affect Mark Zuckerberg's voting control",
+   "title": "Microsoft says China-linked hackers used AI penetration testing tool ARTEX to compromise ConnectWis…",
+   "url": "https://www.reuters.com/technology/chinese-linked-hackers-compromise-connectwise-target-hundreds-global-attack-2026-10-21/",
+   "source": "AJ Vicens / Reuters",
+   "published_at": "2026-10-22T06:26:04Z",
+   "text": "Microsoft says China-linked hackers used AI penetration testing tool ARTEX to compromise ConnectWise as part of a campaign targeting hundreds of organizations. A Chinese state-aligned hacking group used an AI-driven penetration testing tool to compromise IT services firm ConnectWise as part …",
    "via": "Techmeme"
   },
   {
-   "title": "OpenAI CLI",
-   "url": "https://github.com/openai/openai-cli",
+   "title": "WorldTUI: I trained a 360M model to pretend to be a terminal",
+   "url": "https://simedw.com/2026/10/21/world-model-terminal/",
    "source": "Hacker News",
-   "published_at": "2026-10-22T05:23:11Z",
-   "text": "127 points and 72 comments on Hacker News.",
-   "points": 127,
-   "discussion": "https://news.ycombinator.com/item?id=50191507"
+   "published_at": "2026-10-22T02:18:41Z",
+   "text": "252 points and 79 comments on Hacker News.",
+   "points": 252,
+   "discussion": "https://news.ycombinator.com/item?id=50190363"
   },
   {
    "title": "Developing Enterprise Frontier Safeguards with our customers",
@@ -69,23 +69,6 @@
    "text": "My latest vibe coded game experiment is a Command & Conquer style RTS (Real Time Strategy) game called Battle Drones ( play it here ). Unlike my previous experiments , this one is actually fun to play . I'm somewhat embarrassed to admit that I got there by telling Claude to \"Make it a LOT more fun\". It also supports multiplayer between nearby devices using audio to synchronize game state! Here's what I've built so far, and some of the things I learned along the way."
   },
   {
-   "title": "Microsoft says China-linked hackers used AI penetration testing tool ARTEX to compromise ConnectWis…",
-   "url": "https://www.reuters.com/technology/chinese-linked-hackers-compromise-connectwise-target-hundreds-global-attack-2026-10-21/",
-   "source": "AJ Vicens / Reuters",
-   "published_at": "2026-10-22T06:26:04Z",
-   "text": "Microsoft says China-linked hackers used AI penetration testing tool ARTEX to compromise ConnectWise as part of a campaign targeting hundreds of organizations. A Chinese state-aligned hacking group used an AI-driven penetration testing tool to compromise IT services firm ConnectWise as part …",
-   "via": "Techmeme"
-  },
-  {
-   "title": "WorldTUI: I trained a 360M model to pretend to be a terminal",
-   "url": "https://simedw.com/2026/10/21/world-model-terminal/",
-   "source": "Hacker News",
-   "published_at": "2026-10-22T02:18:41Z",
-   "text": "230 points and 69 comments on Hacker News.",
-   "points": 230,
-   "discussion": "https://news.ycombinator.com/item?id=50190363"
-  },
-  {
    "title": "Walmart unveils Agent Gateway, an MCP server for AI agents to shop its site, and Agent Profiles to…",
    "url": "https://techcrunch.com/2026/10/21/while-amazon-blocks-ai-agents-walmart-rolls-out-the-welcome-mat/",
    "source": "Sarah Perez / TechCrunch",
@@ -94,12 +77,29 @@
    "via": "Techmeme"
   },
   {
+   "title": "OpenAI CLI",
+   "url": "https://github.com/openai/openai-cli",
+   "source": "Hacker News",
+   "published_at": "2026-10-22T05:23:11Z",
+   "text": "137 points and 77 comments on Hacker News.",
+   "points": 137,
+   "discussion": "https://news.ycombinator.com/item?id=50191507"
+  },
+  {
+   "title": "Hugging Face releases Carbon-X, an open-source, 14B-parameter multimodal AI model to let users quer…",
+   "url": "https://www.wired.com/story/hugging-face-new-ai-biology-model-chat-with-dna/",
+   "source": "Emily Mullin / Wired",
+   "published_at": "2026-10-22T10:46:21Z",
+   "text": "Hugging Face releases Carbon-X, an open-source, 14B-parameter multimodal AI model to let users query DNA sequences via natural language, trained on 300B tokens. The new open-source model speaks the language of DNA and can help researchers understand the effects of any changes on gene activity and health.",
+   "via": "Techmeme"
+  },
+  {
    "title": "Claude Duet",
    "url": "https://claude.com/product/claude-duet",
    "source": "Hacker News",
    "published_at": "2026-10-21T19:14:01Z",
-   "text": "394 points and 360 comments on Hacker News.",
-   "points": 394,
+   "text": "406 points and 371 comments on Hacker News.",
+   "points": 406,
    "discussion": "https://news.ycombinator.com/item?id=50186037"
   },
   {
@@ -122,8 +122,8 @@
    "url": "https://openai.com/index/openai-models-google-cloud/",
    "source": "Hacker News",
    "published_at": "2026-10-21T12:53:11Z",
-   "text": "294 points and 121 comments on Hacker News.",
-   "points": 294,
+   "text": "295 points and 122 comments on Hacker News.",
+   "points": 295,
    "discussion": "https://news.ycombinator.com/item?id=50180079"
   }
  ],
