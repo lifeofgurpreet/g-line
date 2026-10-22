@@ -1,24 +1,24 @@
 {
  "schema": 1,
- "generated_at": "2026-10-22T05:56:02Z",
+ "generated_at": "2026-10-22T06:27:24Z",
  "items": [
   {
-   "title": "PHP's creators disclose a critical memory-management vulnerability, dubbed “PHP2Shell”, that affect…",
-   "url": "https://www.wsj.com/tech/cybersecurity/ai-just-found-a-bug-that-puts-up-to-70-of-the-worlds-websites-at-risk-fd0902ea?st=tBLRBh&reflink=desktopwebshare_permalink",
-   "source": "Robert McMillan / Wall Stre…",
-   "published_at": "2026-10-21T14:08:28Z",
-   "text": "PHP's creators disclose a critical memory-management vulnerability, dubbed “PHP2Shell”, that affects up to 70% of websites, discovered via GPT-5.6 Sol in August",
+   "title": "Anthropic unveils Claude Duet, a proactive agent app on iOS, Android, and the web that works in the…",
+   "url": "https://claude.com/resources/articles/claude-duet",
+   "source": "Claude",
+   "published_at": "2026-10-21T21:02:27Z",
+   "text": "Anthropic unveils Claude Duet, a proactive agent app on iOS, Android, and the web that works in the background, in research preview for US Pro and Max users. A research preview is available by waitlist today, starting with US Pro and Max subscribers. — Join the waitlist … ShareCopy link",
    "via": "Techmeme"
   },
   {
-   "title": "We’re opening a research preview of Claude Duet, a new app where Claude works as a proactive agent.…",
-   "url": "https://x.com/claudeai/status/2112984664256241837",
-   "source": "𝕏 @claudeai",
-   "published_at": "2026-10-21T19:09:35Z",
-   "text": "We’re opening a research preview of Claude Duet, a new app where Claude works as a proactive agent. It comes to you with what needs your attention, completes tasks you ask of it, keeps working when you step away, and checks with you before it acts on your behalf.",
-   "author_name": "Claude",
-   "likes": 43731,
-   "story": "Anthropic unveils Claude Duet, a proactive agent app on iOS, Android, and the web that works in the background, in research preview for US Pro and Max users"
+   "title": "OpenAI models helped researchers—operating as part of our Patch the Planet initiative—discover crit…",
+   "url": "https://x.com/OpenAI/status/2112907856018309586",
+   "source": "𝕏 @OpenAI",
+   "published_at": "2026-10-21T14:04:23Z",
+   "text": "OpenAI models helped researchers—operating as part of our Patch the Planet initiative—discover critical security flaws in PHP, an open-source programming language used to run an estimated 70% of websites. Over the past two months, we led a coalition of maintainers, researchers,…",
+   "author_name": "OpenAI",
+   "likes": 13863,
+   "story": "AWS analysts claim that at least one actor started to exploit the PHP2Shell bugs on October 17, four days prior to the vulnerabilities' public disclosure"
   },
   {
    "title": "Claude Code 2.1.308 released",
@@ -28,17 +28,14 @@
    "text": "Bug fixes and reliability improvements"
   },
   {
-   "title": "OpenAI models are coming to Google Cloud. We're bringing our frontier models and Codex agentic work…",
-   "url": "https://x.com/OpenAI/status/2112988118471295323",
-   "source": "𝕏 @OpenAI",
-   "published_at": "2026-10-21T19:23:19Z",
-   "text": "OpenAI models are coming to Google Cloud. We're bringing our frontier models and Codex agentic workflows to Google Cloud's Model Garden, so enterprises can use our technology where they already build.",
-   "author_name": "OpenAI",
-   "likes": 3656,
-   "story": "OpenAI says it will make its AI models available on Google Cloud's model garden and Antigravity coding tool in the coming weeks, after launching on AWS in April",
-   "links": [
-    "https://openai.com/index/openai-models-google-cloud/"
-   ]
+   "title": "We built ChatGPT’s ad stack to respond to an evolving conversation, while ensuring answers stay ind…",
+   "url": "https://x.com/OpenAIDevs/status/2112962753682198969",
+   "source": "𝕏 @OpenAIDevs",
+   "published_at": "2026-10-21T17:42:32Z",
+   "text": "We built ChatGPT’s ad stack to respond to an evolving conversation, while ensuring answers stay independent. Here’s how the LLM orchestrator, retrieval, ranking and auction tools work together.",
+   "author_name": "OpenAI Developers",
+   "likes": 891,
+   "story": "OpenAI expands ChatGPT ads to 26 additional countries, taking the total to 83 countries, and says the platform has 100K+ advertisers, up from 20K in late August"
   },
   {
    "title": "Meta says it will create a new class of nonvoting stock to raise the capital it needs for developin…",
@@ -53,19 +50,19 @@
    "url": "https://claude.com/product/claude-duet",
    "source": "Hacker News",
    "published_at": "2026-10-21T19:14:01Z",
-   "text": "343 points and 308 comments on Hacker News.",
-   "points": 343,
+   "text": "344 points and 313 comments on Hacker News.",
+   "points": 344,
    "discussion": "https://news.ycombinator.com/item?id=50186037"
   },
   {
-   "title": "Thank you for this, @_NathanCalvin. I appreciate and am a fan of the investigative work you’ve done…",
-   "url": "https://x.com/DarioAmodei/status/2112732230124818891",
-   "source": "𝕏 @DarioAmodei",
-   "published_at": "2026-10-21T02:26:30Z",
-   "text": "Thank you for this, @_NathanCalvin. I appreciate and am a fan of the investigative work you’ve done on behalf of AI safety and believe your comments are coming from a constructive, honest place, and that it benefits the public to have people whose job is to scrutinize the actions…",
-   "author_name": "Dario Amodei",
-   "likes": 3931,
-   "story": "Dario Amodei says Anthropic's “race to the top” makes AI safer, lists nine safety decisions with “substantial costs”, and admits to mishandling a draft AI bill"
+   "title": "Introducing Flint, @Recursive_SI’s first model: a fast local coding model built with our automated…",
+   "url": "https://x.com/RichardSocher/status/2112944385415426249",
+   "source": "𝕏 @RichardSocher",
+   "published_at": "2026-10-21T16:29:32Z",
+   "text": "Introducing Flint, @Recursive_SI’s first model: a fast local coding model built with our automated research system, the Eureka Machine. • Best-in-class fast local coding • Up to 2x faster than comparable models: 125+ tokens/sec on a MacBook Pro, 150+ on RTX Spark • Built from…",
+   "author_name": "Richard Socher",
+   "likes": 6304,
+   "story": "Recursive releases Flint, an open-weight, 40B-parameter coding model developed with its Eureka Machine AI system, which automated most of the development"
   },
   {
    "title": "Developing Enterprise Frontier Safeguards with our customers",
@@ -82,48 +79,51 @@
    "text": "My latest vibe coded game experiment is a Command & Conquer style RTS (Real Time Strategy) game called Battle Drones ( play it here ). Unlike my previous experiments , this one is actually fun to play . I'm somewhat embarrassed to admit that I got there by telling Claude to \"Make it a LOT more fun\". It also supports multiplayer between nearby devices using audio to synchronize game state! Here's what I've built so far, and some of the things I learned along the way."
   },
   {
-   "title": "Recursive releases Flint, an open-weight, 40B-parameter coding model developed with its Eureka Mach…",
-   "url": "https://www.wired.com/story/recursive-self-improvement-flint-latest-model-scary-good/",
-   "source": "Will Knight / Wired",
-   "published_at": "2026-10-21T16:36:17Z",
-   "text": "Recursive releases Flint, an open-weight, 40B-parameter coding model developed with its Eureka Machine AI system, which automated most of the development. Recursive makes the case that the benefits of using AI to build AI outweigh the risks. — For the past few days I've been testing …",
+   "title": "Walmart unveils Agent Gateway, an MCP server for AI agents to shop its site, and Agent Profiles to…",
+   "url": "https://techcrunch.com/2026/10/21/while-amazon-blocks-ai-agents-walmart-rolls-out-the-welcome-mat/",
+   "source": "Sarah Perez / TechCrunch",
+   "published_at": "2026-10-22T03:51:08Z",
+   "text": "Walmart unveils Agent Gateway, an MCP server for AI agents to shop its site, and Agent Profiles to authorize agents and track their purchases separately. Walmart is embracing agentic commerce with the launch of its own Agent Gateway to manage transactions and other new features aimed …",
    "via": "Techmeme"
   },
   {
-   "title": "We built ChatGPT’s ad stack to respond to an evolving conversation, while ensuring answers stay ind…",
-   "url": "https://x.com/OpenAIDevs/status/2112962753682198969",
-   "source": "𝕏 @OpenAIDevs",
-   "published_at": "2026-10-21T17:42:32Z",
-   "text": "We built ChatGPT’s ad stack to respond to an evolving conversation, while ensuring answers stay independent. Here’s how the LLM orchestrator, retrieval, ranking and auction tools work together.",
-   "author_name": "OpenAI Developers",
-   "likes": 882,
-   "story": "OpenAI expands ChatGPT ads to 26 additional countries, taking the total to 83 countries, and says the platform has 100K+ advertisers, up from 20K in late August"
+   "title": "GPTs will also now be available in Antigravity.",
+   "url": "https://x.com/AndrewCurran_/status/2112907155787411582",
+   "source": "𝕏 @AndrewCurran_",
+   "published_at": "2026-10-21T14:01:36Z",
+   "text": "GPTs will also now be available in Antigravity.",
+   "author_name": "Andrew Curran",
+   "likes": 364,
+   "story": "OpenAI says it will make its AI models available on Google Cloud's model garden and Antigravity coding tool in the coming weeks, after launching on AWS in April",
+   "links": [
+    "https://openai.com/index/openai-models-google-cloud/"
+   ]
+  },
+  {
+   "title": "WorldTUI: I trained a 360M model to pretend to be a terminal",
+   "url": "https://simedw.com/2026/10/21/world-model-terminal/",
+   "source": "Hacker News",
+   "published_at": "2026-10-22T02:18:41Z",
+   "text": "63 points and 23 comments on Hacker News.",
+   "points": 63,
+   "discussion": "https://news.ycombinator.com/item?id=50190363"
+  },
+  {
+   "title": "Nvidia unveils the DSX POD, a modular containerized version of its Vera Rubin reference architectur…",
+   "url": "https://www.datacenterdynamics.com/en/news/nvidia-launches-dsx-pod-claims-the-vera-rubin-reference-architecture-will-make-ai-data-centers-more-water-and-energy-efficient/",
+   "source": "Charlotte Trueman / Datacen…",
+   "published_at": "2026-10-21T10:21:11Z",
+   "text": "Nvidia unveils the DSX POD, a modular containerized version of its Vera Rubin reference architecture to cut data center deployment from six months to 14 days. Details released at GTC Berlin event, taking place this week — Nvidia has claimed its DSX reference architecture for AI data centers …",
+   "via": "Techmeme"
   },
   {
    "title": "Patch the Planet: global response coordination as agents uncover vulnerabilities",
    "url": "https://openai.com/index/coordinated-disclosure-of-critical-vulnerabilities/",
    "source": "Hacker News",
    "published_at": "2026-10-21T14:03:43Z",
-   "text": "247 points and 166 comments on Hacker News.",
-   "points": 247,
+   "text": "250 points and 167 comments on Hacker News.",
+   "points": 250,
    "discussion": "https://news.ycombinator.com/item?id=50181175"
-  },
-  {
-   "title": "Walmart unveils its Agent Gateway, a new MCP server to help users' approved AI agents shop its webs…",
-   "url": "https://techcrunch.com/2026/10/21/while-amazon-blocks-ai-agents-walmart-rolls-out-the-welcome-mat/",
-   "source": "Sarah Perez / TechCrunch",
-   "published_at": "2026-10-22T03:51:08Z",
-   "text": "Walmart unveils its Agent Gateway, a new MCP server to help users' approved AI agents shop its website, and dedicated Agent Profiles with special “terms” for AI. Walmart is embracing agentic commerce with the launch of its own Agent Gateway to manage transactions …",
-   "via": "Techmeme"
-  },
-  {
-   "title": "Using Claude to reduce the attack surface of code",
-   "url": "https://www.anthropic.com/research/attack-surface-reduction",
-   "source": "Hacker News",
-   "published_at": "2026-10-21T03:36:43Z",
-   "text": "131 points and 86 comments on Hacker News.",
-   "points": 131,
-   "discussion": "https://news.ycombinator.com/item?id=50175779"
   },
   {
    "title": "Physicist Christopher Stubbs joins Anthropic's Long-Term Benefit Trust",
