@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-22T05:24:09Z",
+ "generated_at": "2026-10-22T05:56:02Z",
  "items": [
   {
    "title": "PHP's creators disclose a critical memory-management vulnerability, dubbed “PHP2Shell”, that affect…",
@@ -17,7 +17,7 @@
    "published_at": "2026-10-21T19:09:35Z",
    "text": "We’re opening a research preview of Claude Duet, a new app where Claude works as a proactive agent. It comes to you with what needs your attention, completes tasks you ask of it, keeps working when you step away, and checks with you before it acts on your behalf.",
    "author_name": "Claude",
-   "likes": 43071,
+   "likes": 43731,
    "story": "Anthropic unveils Claude Duet, a proactive agent app on iOS, Android, and the web that works in the background, in research preview for US Pro and Max users"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-10-21T19:23:19Z",
    "text": "OpenAI models are coming to Google Cloud. We're bringing our frontier models and Codex agentic workflows to Google Cloud's Model Garden, so enterprises can use our technology where they already build.",
    "author_name": "OpenAI",
-   "likes": 3610,
+   "likes": 3656,
    "story": "OpenAI says it will make its AI models available on Google Cloud's model garden and Antigravity coding tool in the coming weeks, after launching on AWS in April",
    "links": [
     "https://openai.com/index/openai-models-google-cloud/"
@@ -53,19 +53,19 @@
    "url": "https://claude.com/product/claude-duet",
    "source": "Hacker News",
    "published_at": "2026-10-21T19:14:01Z",
-   "text": "341 points and 306 comments on Hacker News.",
-   "points": 341,
+   "text": "343 points and 308 comments on Hacker News.",
+   "points": 343,
    "discussion": "https://news.ycombinator.com/item?id=50186037"
   },
   {
-   "title": "The NSA is telling American companies to take production systems offline. The AI-era of cybersecuri…",
-   "url": "https://x.com/DavidVorick/status/2112930859540246575",
-   "source": "𝕏 @DavidVorick",
-   "published_at": "2026-10-21T15:35:47Z",
-   "text": "The NSA is telling American companies to take production systems offline. The AI-era of cybersecurity has fully arrived.",
-   "author_name": "David Vorick",
-   "likes": 13009,
-   "story": "PHP releases security fixes for two critical unauthenticated RCE vulnerabilities, affecting all web request-serving installations, and urges PHP users to update"
+   "title": "Thank you for this, @_NathanCalvin. I appreciate and am a fan of the investigative work you’ve done…",
+   "url": "https://x.com/DarioAmodei/status/2112732230124818891",
+   "source": "𝕏 @DarioAmodei",
+   "published_at": "2026-10-21T02:26:30Z",
+   "text": "Thank you for this, @_NathanCalvin. I appreciate and am a fan of the investigative work you’ve done on behalf of AI safety and believe your comments are coming from a constructive, honest place, and that it benefits the public to have people whose job is to scrutinize the actions…",
+   "author_name": "Dario Amodei",
+   "likes": 3931,
+   "story": "Dario Amodei says Anthropic's “race to the top” makes AI safer, lists nine safety decisions with “substantial costs”, and admits to mishandling a draft AI bill"
   },
   {
    "title": "Developing Enterprise Frontier Safeguards with our customers",
@@ -90,33 +90,23 @@
    "via": "Techmeme"
   },
   {
-   "title": "Thank you for this, @_NathanCalvin. I appreciate and am a fan of the investigative work you’ve done…",
-   "url": "https://x.com/DarioAmodei/status/2112732230124818891",
-   "source": "𝕏 @DarioAmodei",
-   "published_at": "2026-10-21T02:26:30Z",
-   "text": "Thank you for this, @_NathanCalvin. I appreciate and am a fan of the investigative work you’ve done on behalf of AI safety and believe your comments are coming from a constructive, honest place, and that it benefits the public to have people whose job is to scrutinize the actions…",
-   "author_name": "Dario Amodei",
-   "likes": 3924,
-   "story": "Dario Amodei says Anthropic's “race to the top” makes AI safer, lists nine safety decisions with “substantial costs”, and admits to mishandling a draft AI bill"
-  },
-  {
-   "title": "Patch the Planet: global response coordination as agents uncover vulnerabilities",
-   "url": "https://openai.com/index/coordinated-disclosure-of-critical-vulnerabilities/",
-   "source": "Hacker News",
-   "published_at": "2026-10-21T14:03:43Z",
-   "text": "247 points and 165 comments on Hacker News.",
-   "points": 247,
-   "discussion": "https://news.ycombinator.com/item?id=50181175"
-  },
-  {
    "title": "We built ChatGPT’s ad stack to respond to an evolving conversation, while ensuring answers stay ind…",
    "url": "https://x.com/OpenAIDevs/status/2112962753682198969",
    "source": "𝕏 @OpenAIDevs",
    "published_at": "2026-10-21T17:42:32Z",
    "text": "We built ChatGPT’s ad stack to respond to an evolving conversation, while ensuring answers stay independent. Here’s how the LLM orchestrator, retrieval, ranking and auction tools work together.",
    "author_name": "OpenAI Developers",
-   "likes": 868,
+   "likes": 882,
    "story": "OpenAI expands ChatGPT ads to 26 additional countries, taking the total to 83 countries, and says the platform has 100K+ advertisers, up from 20K in late August"
+  },
+  {
+   "title": "Patch the Planet: global response coordination as agents uncover vulnerabilities",
+   "url": "https://openai.com/index/coordinated-disclosure-of-critical-vulnerabilities/",
+   "source": "Hacker News",
+   "published_at": "2026-10-21T14:03:43Z",
+   "text": "247 points and 166 comments on Hacker News.",
+   "points": 247,
+   "discussion": "https://news.ycombinator.com/item?id=50181175"
   },
   {
    "title": "Walmart unveils its Agent Gateway, a new MCP server to help users' approved AI agents shop its webs…",
@@ -134,6 +124,13 @@
    "text": "131 points and 86 comments on Hacker News.",
    "points": 131,
    "discussion": "https://news.ycombinator.com/item?id=50175779"
+  },
+  {
+   "title": "Physicist Christopher Stubbs joins Anthropic's Long-Term Benefit Trust",
+   "url": "https://www.anthropic.com/news/christopher-stubbs-joins-long-term-benefit-trust",
+   "source": "Anthropic",
+   "published_at": "2026-10-21T18:22:03Z",
+   "text": "Dr. Christopher Stubbs, an experimental physicist and former Dean of Science at Harvard University, has joined Anthropic’s Long-Term Benefit Trust. He brings to the Trust decades of scientific expertise across observational cosmology and precision measurement. He has also advised the US government on national security and arms control. “I am honored to join Anthropic’s Long-Term Benefit Trust and to help the company deliver on its public benefit mission,” said Stubbs."
   }
  ],
  "sources": "curated, Techmeme, X (found via Techmeme, Reddit, the Internet Archive), Claude Code releases, Anthropic, Hacker News, Simon Willison"
