@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-21T23:58:33Z",
+ "generated_at": "2026-10-22T00:31:21Z",
  "items": [
   {
    "title": "Anthropic unveils Claude Duet, a proactive agent app on iOS, Android, and the web that works in the…",
@@ -17,7 +17,7 @@
    "published_at": "2026-10-21T14:04:23Z",
    "text": "OpenAI models helped researchers—operating as part of our Patch the Planet initiative—discover critical security flaws in PHP, an open-source programming language used to run an estimated 70% of websites. Over the past two months, we led a coalition of maintainers, researchers,…",
    "author_name": "OpenAI",
-   "likes": 13303,
+   "likes": 13377,
    "story": "The PHP Foundation details how it found and fixed the two flaws, and says it had to release patches a day early after the two CVE IDs began circulating online"
   },
   {
@@ -34,15 +34,15 @@
    "published_at": "2026-10-21T02:26:30Z",
    "text": "Thank you for this, @_NathanCalvin. I appreciate and am a fan of the investigative work you’ve done on behalf of AI safety and believe your comments are coming from a constructive, honest place, and that it benefits the public to have people whose job is to scrutinize the actions…",
    "author_name": "Dario Amodei",
-   "likes": 3816,
+   "likes": 3832,
    "story": "Dario Amodei says Anthropic's “race to the top” makes AI safer, lists nine safety decisions with “substantial costs”, and admits to mishandling a draft AI bill"
   },
   {
-   "title": "Mark Zuckerberg says Muse has drawn 10M+ users since its launch and 25%+ of users are making purcha…",
-   "url": "https://www.businessinsider.com/meta-q3-2026-earnings-mark-zuckerberg-muse-ai-app-users-2026-10",
-   "source": "Business Insider",
-   "published_at": "2026-10-21T21:21:09Z",
-   "text": "Mark Zuckerberg says Muse has drawn 10M+ users since its launch and 25%+ of users are making purchases through the app, with an average purchase size of $200+. - Meta reported third-quarter earnings on Wednesday. — Meta CEO Mark Zuckerberg said over 10 million people have set up a Muse AI agent since its launch.",
+   "title": "Meta says it will create a new class of nonvoting stock to raise the capital it needs for developin…",
+   "url": "https://www.wsj.com/articles/metaplatforms-meta-3q-earnings-report-2026-stock-f28d64c2?st=Uj26V6&reflink=desktopwebshare_permalink",
+   "source": "Meghan Bobrowsky / Wall Str…",
+   "published_at": "2026-10-21T20:21:07Z",
+   "text": "Meta says it will create a new class of nonvoting stock to raise the capital it needs for developing AI models, with an effective date in January 2027. The company, which reported record revenue of $64.2 billion for the third quarter, said the new stock won't affect Mark Zuckerberg's voting control",
    "via": "Techmeme"
   },
   {
@@ -50,8 +50,8 @@
    "url": "https://claude.com/product/claude-duet",
    "source": "Hacker News",
    "published_at": "2026-10-21T19:14:01Z",
-   "text": "288 points and 242 comments on Hacker News.",
-   "points": 288,
+   "text": "299 points and 254 comments on Hacker News.",
+   "points": 299,
    "discussion": "https://news.ycombinator.com/item?id=50186037"
   },
   {
@@ -61,7 +61,7 @@
    "published_at": "2026-10-21T17:42:32Z",
    "text": "We built ChatGPT’s ad stack to respond to an evolving conversation, while ensuring answers stay independent. Here’s how the LLM orchestrator, retrieval, ranking and auction tools work together.",
    "author_name": "OpenAI Developers",
-   "likes": 730,
+   "likes": 747,
    "story": "OpenAI expands ChatGPT ads to 26 additional countries, taking the total to 83 countries, and says the platform has 100K+ advertisers, up from 20K in late August"
   },
   {
@@ -87,26 +87,36 @@
    "via": "Techmeme"
   },
   {
+   "title": "My bar for AGI is still an AI winning a Nobel. But an AI researcher looking at the lm_head (that *e…",
+   "url": "https://x.com/Thom_Wolf/status/2112967683813609724",
+   "source": "𝕏 @Thom_Wolf",
+   "published_at": "2026-10-21T18:02:07Z",
+   "text": "My bar for AGI is still an AI winning a Nobel. But an AI researcher looking at the lm_head (that *everyone* tells you to keep in high precision) deciding to quantize it to 4 bits AND being actually right (0.7pt from bf16) is definitely impressive. Even better when the result…",
+   "author_name": "Thomas Wolf",
+   "likes": 247,
+   "story": "Recursive releases Flint, an open-weight, 40B-parameter coding model developed with its Eureka Machine AI system, which automated most of the development"
+  },
+  {
+   "title": "Patch the Planet: global response coordination as agents uncover vulnerabilities",
+   "url": "https://openai.com/index/coordinated-disclosure-of-critical-vulnerabilities/",
+   "source": "Hacker News",
+   "published_at": "2026-10-21T14:03:43Z",
+   "text": "228 points and 154 comments on Hacker News.",
+   "points": 228,
+   "discussion": "https://news.ycombinator.com/item?id=50181175"
+  },
+  {
    "title": "GPTs will also now be available in Antigravity.",
    "url": "https://x.com/AndrewCurran_/status/2112907155787411582",
    "source": "𝕏 @AndrewCurran_",
    "published_at": "2026-10-21T14:01:36Z",
    "text": "GPTs will also now be available in Antigravity.",
    "author_name": "Andrew Curran",
-   "likes": 348,
+   "likes": 351,
    "story": "OpenAI says it will make its AI models available on Google Cloud's model garden and Antigravity coding tool in the coming weeks, after launching on AWS in April",
    "links": [
     "https://openai.com/index/openai-models-google-cloud/"
    ]
-  },
-  {
-   "title": "Canary Tokens",
-   "url": "https://canarytokens.org/",
-   "source": "Hacker News",
-   "published_at": "2026-10-21T18:45:04Z",
-   "text": "124 points and 21 comments on Hacker News.",
-   "points": 124,
-   "discussion": "https://news.ycombinator.com/item?id=50185630"
   },
   {
    "title": "Nvidia unveils the DSX POD, a modular containerized version of its Vera Rubin reference architectur…",
@@ -117,20 +127,13 @@
    "via": "Techmeme"
   },
   {
-   "title": "Patch the Planet: global response coordination as agents uncover vulnerabilities",
-   "url": "https://openai.com/index/coordinated-disclosure-of-critical-vulnerabilities/",
+   "title": "Using thousands of AI agents to uncover new leads in biological data",
+   "url": "https://openai.com/index/scaling-ai-research-for-complex-biological-data/",
    "source": "Hacker News",
-   "published_at": "2026-10-21T14:03:43Z",
-   "text": "224 points and 147 comments on Hacker News.",
-   "points": 224,
-   "discussion": "https://news.ycombinator.com/item?id=50181175"
-  },
-  {
-   "title": "Physicist Christopher Stubbs joins Anthropic's Long-Term Benefit Trust",
-   "url": "https://www.anthropic.com/news/christopher-stubbs-joins-long-term-benefit-trust",
-   "source": "Anthropic",
-   "published_at": "2026-10-21T18:22:03Z",
-   "text": "Dr. Christopher Stubbs, an experimental physicist and former Dean of Science at Harvard University, has joined Anthropic’s Long-Term Benefit Trust. He brings to the Trust decades of scientific expertise across observational cosmology and precision measurement. He has also advised the US government on national security and arms control. “I am honored to join Anthropic’s Long-Term Benefit Trust and to help the company deliver on its public benefit mission,” said Stubbs."
+   "published_at": "2026-10-21T13:37:00Z",
+   "text": "126 points and 81 comments on Hacker News.",
+   "points": 126,
+   "discussion": "https://news.ycombinator.com/item?id=50180752"
   }
  ],
  "sources": "curated, Techmeme, X (found via Techmeme, Reddit, the Internet Archive), Claude Code releases, Anthropic, Hacker News, Simon Willison"
