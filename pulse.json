@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-22T17:07:50Z",
+ "generated_at": "2026-10-22T17:39:28Z",
  "items": [
   {
    "title": "Sources: US banks are restricting third-party AI agents from accessing customer accounts, after som…",
@@ -17,7 +17,7 @@
    "published_at": "2026-10-21T19:09:35Z",
    "text": "We’re opening a research preview of Claude Duet, a new app where Claude works as a proactive agent. It comes to you with what needs your attention, completes tasks you ask of it, keeps working when you step away, and checks with you before it acts on your behalf.",
    "author_name": "Claude",
-   "likes": 51225,
+   "likes": 51462,
    "story": "Anthropic debuts Claude Duet, a proactive agent app for iOS, Android, and the web that works in the background, in research preview for US Pro and Max users"
   },
   {
@@ -34,8 +34,8 @@
    "published_at": "2026-10-22T15:41:24Z",
    "text": "💥 Introducing Warp Sciences, a new company applying AI and robotics to help the world develop new medicines faster. We’ve raised a $215M Series A led by @lightspeedvp to bring frontier AI out of the browser and into the lab, and build scientific capacity here in America. I…",
    "author_name": "Kevin Weil 🇺🇸",
-   "likes": 808,
-   "story": "Warp Sciences, founded by ex-OpenAI product chief Kevin Weil to speed up AI drug development, emerges from stealth with $215M at an $865M post-money valuation"
+   "likes": 1027,
+   "story": "Warp Sciences, founded by former OpenAI CPO Kevin Weil to speed up drug development using AI, emerges from stealth with $215M at an $865M post-money valuation"
   },
   {
    "title": "Two employees from METR and Redwood Research worked on premises at OpenAI for three weeks this summ…",
@@ -44,7 +44,7 @@
    "published_at": "2026-10-22T15:26:44Z",
    "text": "Two employees from METR and Redwood Research worked on premises at OpenAI for three weeks this summer in an embedded assessment pilot. This team evaluated the systems OpenAI was using to monitor for misalignment from internal agents. A brief write-up of their work is now public.",
    "author_name": "METR",
-   "likes": 532,
+   "likes": 609,
    "story": "METR says a pilot test of OpenAI's monitoring system found vulnerabilities, including an exploit that could have let AI agents hide hundreds of recent actions"
   },
   {
@@ -60,8 +60,8 @@
    "url": "https://simedw.com/2026/10/21/world-model-terminal/",
    "source": "Hacker News",
    "published_at": "2026-10-22T02:18:41Z",
-   "text": "428 points and 134 comments on Hacker News.",
-   "points": 428,
+   "text": "436 points and 135 comments on Hacker News.",
+   "points": 436,
    "discussion": "https://news.ycombinator.com/item?id=50190363"
   },
   {
@@ -71,7 +71,7 @@
    "published_at": "2026-10-22T11:10:41Z",
    "text": "Introducing Ling-3.1-flash-1019 🚀 It scores 44 on the Artificial Analysis Intelligence Index, up from 41 for Ling-3.1-flash. Gains in agentic work: AA-Briefcase ~1400→1524 Elo and AutomationBench-AA 62%→68%. API access and open weights coming soon. Stay tuned.",
    "author_name": "Ant Ling",
-   "likes": 920,
+   "likes": 942,
    "story": "Ling-3.1-flash is getting a 1019 update, with open weights to follow"
   },
   {
@@ -89,11 +89,11 @@
    "text": "My latest vibe coded game experiment is a Command & Conquer style RTS (Real Time Strategy) game called Battle Drones ( play it here ). Unlike my previous experiments , this one is actually fun to play . I'm somewhat embarrassed to admit that I got there by telling Claude to \"Make it a LOT more fun\". It also supports multiplayer between nearby devices using audio to synchronize game state! Here's what I've built so far, and some of the things I learned along the way."
   },
   {
-   "title": "Sources: DeepSeek raised ~$15B in its latest fundraising round, one of China's largest ever, with C…",
-   "url": "https://www.bloomberg.com/news/articles/2026-10-22/deepseek-raises-15-billion-in-challenge-to-leading-us-labs",
-   "source": "Lulu Yilun Chen / Bloomberg",
-   "published_at": "2026-10-22T03:01:44Z",
-   "text": "Sources: DeepSeek raised ~$15B in its latest fundraising round, one of China's largest ever, with CATL and Tencent among the biggest contributors. The Chinese AI pioneer DeepSeek has raised about 100 billion yuan ($15 billion) in its latest fundraising round, one of the country's largest ever …",
+   "title": "Hugging Face releases Carbon-X, an open-weight, 14B-parameter decoder-only model trained on 300B to…",
+   "url": "https://www.wired.com/story/hugging-face-new-ai-biology-model-chat-with-dna/",
+   "source": "Emily Mullin / Wired",
+   "published_at": "2026-10-22T10:46:21Z",
+   "text": "Hugging Face releases Carbon-X, an open-weight, 14B-parameter decoder-only model trained on 300B tokens that lets users query DNA sequences via natural language. The new open-source model speaks the language of DNA and can help researchers understand the effects of any changes on gene activity and health.",
    "via": "Techmeme"
   },
   {
@@ -103,7 +103,7 @@
    "published_at": "2026-10-22T10:32:56Z",
    "text": "Kimi K3.1 vs Qwen 4: 3D helicopter Same prompt, takeoff/land, 3D assembly and exploded views, very similar gen time at around 15-20 minutes for both China are not playing games anymore, these are very strong",
    "author_name": "Lumina",
-   "likes": 525,
+   "likes": 542,
    "story": "Qwen4 and Kimi3.1 on Arena apperantly"
   },
   {
@@ -111,16 +111,16 @@
    "url": "https://claude.com/product/claude-duet",
    "source": "Hacker News",
    "published_at": "2026-10-21T19:14:01Z",
-   "text": "511 points and 474 comments on Hacker News.",
-   "points": 511,
+   "text": "517 points and 479 comments on Hacker News.",
+   "points": 517,
    "discussion": "https://news.ycombinator.com/item?id=50186037"
   },
   {
-   "title": "Hugging Face releases Carbon-X, an open-weight, 14B-parameter decoder-only model trained on 300B to…",
-   "url": "https://www.wired.com/story/hugging-face-new-ai-biology-model-chat-with-dna/",
-   "source": "Emily Mullin / Wired",
-   "published_at": "2026-10-22T10:46:21Z",
-   "text": "Hugging Face releases Carbon-X, an open-weight, 14B-parameter decoder-only model trained on 300B tokens that lets users query DNA sequences via natural language. The new open-source model speaks the language of DNA and can help researchers understand the effects of any changes on gene activity and health.",
+   "title": "Sources: DeepSeek raised ~$15B in its latest fundraising round, one of China's largest ever, with C…",
+   "url": "https://www.bloomberg.com/news/articles/2026-10-22/deepseek-raises-15-billion-in-challenge-to-leading-us-labs",
+   "source": "Lulu Yilun Chen / Bloomberg",
+   "published_at": "2026-10-22T03:01:44Z",
+   "text": "Sources: DeepSeek raised ~$15B in its latest fundraising round, one of China's largest ever, with CATL and Tencent among the biggest contributors. The Chinese AI pioneer DeepSeek has raised about 100 billion yuan ($15 billion) in its latest fundraising round, one of the country's largest ever …",
    "via": "Techmeme"
   },
   {
@@ -128,7 +128,7 @@
    "url": "https://claude.com/resources/articles/claude-duet",
    "source": "Hacker News",
    "published_at": "2026-10-21T19:40:18Z",
-   "text": "86 points and 11 comments on Hacker News.",
+   "text": "86 points and 12 comments on Hacker News.",
    "points": 86,
    "discussion": "https://news.ycombinator.com/item?id=50186455"
   }
