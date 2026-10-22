@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-22T07:32:02Z",
+ "generated_at": "2026-10-22T08:04:10Z",
  "items": [
   {
    "title": "Anthropic unveils Claude Duet, a proactive agent app on iOS, Android, and the web that works in the…",
@@ -17,8 +17,8 @@
    "published_at": "2026-10-21T14:04:23Z",
    "text": "OpenAI models helped researchers—operating as part of our Patch the Planet initiative—discover critical security flaws in PHP, an open-source programming language used to run an estimated 70% of websites. Over the past two months, we led a coalition of maintainers, researchers,…",
    "author_name": "OpenAI",
-   "likes": 13913,
-   "story": "Several government, school, and hospital websites in Europe were taken offline as organizations rush to protect themselves from two critical PHP security flaws"
+   "likes": 13929,
+   "story": "AWS analysts claim that at least one actor started to exploit the PHP2Shell bugs on October 17, four days prior to the vulnerabilities' public disclosure"
   },
   {
    "title": "Claude Code 2.1.308 released",
@@ -28,14 +28,14 @@
    "text": "Bug fixes and reliability improvements"
   },
   {
-   "title": "Thank you for this, @_NathanCalvin. I appreciate and am a fan of the investigative work you’ve done…",
-   "url": "https://x.com/DarioAmodei/status/2112732230124818891",
-   "source": "𝕏 @DarioAmodei",
-   "published_at": "2026-10-21T02:26:30Z",
-   "text": "Thank you for this, @_NathanCalvin. I appreciate and am a fan of the investigative work you’ve done on behalf of AI safety and believe your comments are coming from a constructive, honest place, and that it benefits the public to have people whose job is to scrutinize the actions…",
-   "author_name": "Dario Amodei",
-   "likes": 3950,
-   "story": "Dario Amodei says Anthropic's “race to the top” makes AI safer, lists nine safety decisions with “substantial costs”, and admits to mishandling a draft AI bill"
+   "title": "My bar for AGI is still an AI winning a Nobel. But an AI researcher looking at the lm_head (that *e…",
+   "url": "https://x.com/Thom_Wolf/status/2112967683813609724",
+   "source": "𝕏 @Thom_Wolf",
+   "published_at": "2026-10-21T18:02:07Z",
+   "text": "My bar for AGI is still an AI winning a Nobel. But an AI researcher looking at the lm_head (that *everyone* tells you to keep in high precision) deciding to quantize it to 4 bits AND being actually right (0.7pt from bf16) is definitely impressive. Even better when the result…",
+   "author_name": "Thomas Wolf",
+   "likes": 343,
+   "story": "Recursive releases Flint, an open-weight, 40B-parameter coding model developed with its Eureka Machine AI system, which automated most of the development"
   },
   {
    "title": "Meta says it will create a new class of nonvoting stock to raise the capital it needs for developin…",
@@ -46,23 +46,26 @@
    "via": "Techmeme"
   },
   {
-   "title": "Claude Duet",
-   "url": "https://claude.com/product/claude-duet",
+   "title": "OpenAI CLI",
+   "url": "https://github.com/openai/openai-cli",
    "source": "Hacker News",
-   "published_at": "2026-10-21T19:14:01Z",
-   "text": "349 points and 318 comments on Hacker News.",
-   "points": 349,
-   "discussion": "https://news.ycombinator.com/item?id=50186037"
+   "published_at": "2026-10-22T05:23:11Z",
+   "text": "75 points and 44 comments on Hacker News.",
+   "points": 75,
+   "discussion": "https://news.ycombinator.com/item?id=50191507"
   },
   {
-   "title": "Introducing Flint, @Recursive_SI’s first model: a fast local coding model built with our automated…",
-   "url": "https://x.com/RichardSocher/status/2112944385415426249",
-   "source": "𝕏 @RichardSocher",
-   "published_at": "2026-10-21T16:29:32Z",
-   "text": "Introducing Flint, @Recursive_SI’s first model: a fast local coding model built with our automated research system, the Eureka Machine. • Best-in-class fast local coding • Up to 2x faster than comparable models: 125+ tokens/sec on a MacBook Pro, 150+ on RTX Spark • Built from…",
-   "author_name": "Richard Socher",
-   "likes": 6450,
-   "story": "Recursive releases Flint, an open-weight, 40B-parameter coding model developed with its Eureka Machine AI system, which automated most of the development"
+   "title": "GPTs will also now be available in Antigravity.",
+   "url": "https://x.com/AndrewCurran_/status/2112907155787411582",
+   "source": "𝕏 @AndrewCurran_",
+   "published_at": "2026-10-21T14:01:36Z",
+   "text": "GPTs will also now be available in Antigravity.",
+   "author_name": "Andrew Curran",
+   "likes": 366,
+   "story": "OpenAI says it will make its AI models available on Google Cloud's model garden and Antigravity coding tool in the coming weeks, after launching on AWS in April",
+   "links": [
+    "https://openai.com/index/openai-models-google-cloud/"
+   ]
   },
   {
    "title": "Developing Enterprise Frontier Safeguards with our customers",
@@ -87,25 +90,12 @@
    "via": "Techmeme"
   },
   {
-   "title": "GPTs will also now be available in Antigravity.",
-   "url": "https://x.com/AndrewCurran_/status/2112907155787411582",
-   "source": "𝕏 @AndrewCurran_",
-   "published_at": "2026-10-21T14:01:36Z",
-   "text": "GPTs will also now be available in Antigravity.",
-   "author_name": "Andrew Curran",
-   "likes": 365,
-   "story": "OpenAI says it will make its AI models available on Google Cloud's model garden and Antigravity coding tool in the coming weeks, after launching on AWS in April",
-   "links": [
-    "https://openai.com/index/openai-models-google-cloud/"
-   ]
-  },
-  {
    "title": "WorldTUI: I trained a 360M model to pretend to be a terminal",
    "url": "https://simedw.com/2026/10/21/world-model-terminal/",
    "source": "Hacker News",
    "published_at": "2026-10-22T02:18:41Z",
-   "text": "90 points and 37 comments on Hacker News.",
-   "points": 90,
+   "text": "118 points and 44 comments on Hacker News.",
+   "points": 118,
    "discussion": "https://news.ycombinator.com/item?id=50190363"
   },
   {
@@ -117,13 +107,13 @@
    "via": "Techmeme"
   },
   {
-   "title": "Patch the Planet: global response coordination as agents uncover vulnerabilities",
-   "url": "https://openai.com/index/coordinated-disclosure-of-critical-vulnerabilities/",
+   "title": "Claude Duet",
+   "url": "https://claude.com/product/claude-duet",
    "source": "Hacker News",
-   "published_at": "2026-10-21T14:03:43Z",
-   "text": "251 points and 169 comments on Hacker News.",
-   "points": 251,
-   "discussion": "https://news.ycombinator.com/item?id=50181175"
+   "published_at": "2026-10-21T19:14:01Z",
+   "text": "351 points and 319 comments on Hacker News.",
+   "points": 351,
+   "discussion": "https://news.ycombinator.com/item?id=50186037"
   },
   {
    "title": "Physicist Christopher Stubbs joins Anthropic's Long-Term Benefit Trust",
@@ -131,6 +121,14 @@
    "source": "Anthropic",
    "published_at": "2026-10-21T18:22:03Z",
    "text": "Dr. Christopher Stubbs, an experimental physicist and former Dean of Science at Harvard University, has joined Anthropic’s Long-Term Benefit Trust. He brings to the Trust decades of scientific expertise across observational cosmology and precision measurement. He has also advised the US government on national security and arms control. “I am honored to join Anthropic’s Long-Term Benefit Trust and to help the company deliver on its public benefit mission,” said Stubbs."
+  },
+  {
+   "title": "How AI is an inherently imperial technology, and how the US and China are building rival “AI empire…",
+   "url": "https://www.foreignaffairs.com/china/empires-artificial-intelligence-ferguson-klaassen-schmidt",
+   "source": "Foreign Affairs",
+   "published_at": "2026-10-22T07:16:02Z",
+   "text": "How AI is an inherently imperial technology, and how the US and China are building rival “AI empires” with different approaches to extend their power",
+   "via": "Techmeme"
   }
  ],
  "sources": "curated, Techmeme, X (found via Techmeme, Reddit, the Internet Archive), Claude Code releases, Anthropic, Hacker News, Simon Willison"
