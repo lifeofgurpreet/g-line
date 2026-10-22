@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-22T01:37:27Z",
+ "generated_at": "2026-10-22T02:09:49Z",
  "items": [
   {
    "title": "Anthropic unveils Claude Duet, a proactive agent app on iOS, Android, and the web that works in the…",
@@ -17,8 +17,8 @@
    "published_at": "2026-10-21T14:04:23Z",
    "text": "OpenAI models helped researchers—operating as part of our Patch the Planet initiative—discover critical security flaws in PHP, an open-source programming language used to run an estimated 70% of websites. Over the past two months, we led a coalition of maintainers, researchers,…",
    "author_name": "OpenAI",
-   "likes": 13510,
-   "story": "Several government, school, and hospital websites in Europe were taken offline as organizations rush to protect themselves from two critical PHP security flaws"
+   "likes": 13571,
+   "story": "The PHP Foundation details how it found and fixed the two flaws, and says it had to release patches a day early after the two CVE IDs began circulating online"
   },
   {
    "title": "Claude Code 2.1.307 released",
@@ -34,7 +34,7 @@
    "published_at": "2026-10-21T15:35:47Z",
    "text": "The NSA is telling American companies to take production systems offline. The AI-era of cybersecurity has fully arrived.",
    "author_name": "David Vorick",
-   "likes": 12331,
+   "likes": 12495,
    "story": "PHP releases security fixes for two critical unauthenticated RCE vulnerabilities, affecting all web request-serving installations, and urges PHP users to update"
   },
   {
@@ -50,8 +50,8 @@
    "url": "https://claude.com/product/claude-duet",
    "source": "Hacker News",
    "published_at": "2026-10-21T19:14:01Z",
-   "text": "315 points and 273 comments on Hacker News.",
-   "points": 315,
+   "text": "318 points and 278 comments on Hacker News.",
+   "points": 318,
    "discussion": "https://news.ycombinator.com/item?id=50186037"
   },
   {
@@ -61,7 +61,7 @@
    "published_at": "2026-10-21T02:26:30Z",
    "text": "Thank you for this, @_NathanCalvin. I appreciate and am a fan of the investigative work you’ve done on behalf of AI safety and believe your comments are coming from a constructive, honest place, and that it benefits the public to have people whose job is to scrutinize the actions…",
    "author_name": "Dario Amodei",
-   "likes": 3851,
+   "likes": 3861,
    "story": "Dario Amodei says Anthropic's “race to the top” makes AI safer, lists nine safety decisions with “substantial costs”, and admits to mishandling a draft AI bill"
   },
   {
@@ -93,7 +93,7 @@
    "published_at": "2026-10-21T17:42:32Z",
    "text": "We built ChatGPT’s ad stack to respond to an evolving conversation, while ensuring answers stay independent. Here’s how the LLM orchestrator, retrieval, ranking and auction tools work together.",
    "author_name": "OpenAI Developers",
-   "likes": 775,
+   "likes": 792,
    "story": "OpenAI expands ChatGPT ads to 26 additional countries, taking the total to 83 countries, and says the platform has 100K+ advertisers, up from 20K in late August"
   },
   {
@@ -101,8 +101,8 @@
    "url": "https://openai.com/index/coordinated-disclosure-of-critical-vulnerabilities/",
    "source": "Hacker News",
    "published_at": "2026-10-21T14:03:43Z",
-   "text": "235 points and 160 comments on Hacker News.",
-   "points": 235,
+   "text": "236 points and 162 comments on Hacker News.",
+   "points": 236,
    "discussion": "https://news.ycombinator.com/item?id=50181175"
   },
   {
@@ -112,7 +112,7 @@
    "published_at": "2026-10-21T16:29:32Z",
    "text": "Introducing Flint, @Recursive_SI’s first model: a fast local coding model built with our automated research system, the Eureka Machine. • Best-in-class fast local coding • Up to 2x faster than comparable models: 125+ tokens/sec on a MacBook Pro, 150+ on RTX Spark • Built from…",
    "author_name": "Richard Socher",
-   "likes": 5030,
+   "likes": 5197,
    "story": "Recursive releases Flint, an open-weight, 40B-parameter coding model developed with its Eureka Machine AI system, which automated most of the development"
   },
   {
@@ -122,7 +122,7 @@
    "published_at": "2026-10-21T14:01:36Z",
    "text": "GPTs will also now be available in Antigravity.",
    "author_name": "Andrew Curran",
-   "likes": 353,
+   "likes": 355,
    "story": "OpenAI says it will make its AI models available on Google Cloud's model garden and Antigravity coding tool in the coming weeks, after launching on AWS in April",
    "links": [
     "https://openai.com/index/openai-models-google-cloud/"
