@@ -1,5 +1,29 @@
 # Changelog
 
+## 0.10.0 (2026-10-23): groups of accounts, your own time zone, and a guard that says why
+
+- **Account groups** (`guard.groups`). Name buckets of accounts (yours, the team's seats,
+  someone's own seat) and give rules to whole groups with `"groups": ["team"]`. An account is in
+  the first group whose words its account line contains, or in `other`. The refusal and line 2
+  name the group (`people reserve`), and the pane lists the groups with this session's marked.
+- **The guard says why, in plain words.** `g-line held this prompt: sam@example.com is in your
+  people group, with 35% of its 5-hour window left. g-line keeps the last 40% of it for its
+  owner. It resets at 13:00, in 3h 0m.` Rules with hours say them (`Mon-Fri 04:00-17:00 Kuala
+  Lumpur time`). A weekly reset reads `Sat 10:00, in 4d 0h`.
+- **Press Enter again to send it anyway.** Claude Code puts a held prompt back in the box; the
+  same prompt sent again within three minutes goes through, with a toast. Only for prompts you
+  type: a loop's or schedule's never does. `/g-line guard once` and `pause` still work.
+- **The reason holds still.** With several stop rules in force on the same window, the one given
+  is the one that started first (a team reserve before the general 5% stop), so the reason no
+  longer changes between two prompts.
+- **Line 2 says why and until when:** `guard: team reserve, 9% 5h left till 08:20`, narrowing to
+  `team reserve till 08:20`; otherwise `guard: held …`.
+- **Your time zone** (`tz`). Every time g-line shows can be in your zone instead of the
+  machine's: useful when the machine is in Germany and you're in Malaysia. The pane says which.
+- **The cache's size stays on line 2.** On a crowded line it was the first thing dropped. It now
+  outlasts the reset times and the session roster, and goes only before a warning would:
+  `cache ~48m 57k`. Segments can keep spare forms for this (`spare` in `core.ts`).
+
 ## 0.9.0 (2026-10-23): a stop that ends a running turn
 
 - **`end_turn`**, for a stop rule. A stop used to refuse only new prompts, so one long agentic

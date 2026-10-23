@@ -28,7 +28,8 @@ test('the deck: gauges on line 1, the model with its effort, the cache and the t
 test('narrow: line 2 keeps the effort and the cache, and the warning keeps its projection', async () => {
   const d = deck(P, O, { now: 30, next: nextRoom(80) }, [{ key: 'today', priority: 50, forms: ['today $4.63'] }])
   expect(joined(d.now)).toBe('ctx 4% · 5h 1% · wk 79%!')
-  expect(joined(d.next)).toMatch(/^Opus high · cache ~59m · 5h resets 3h48m · wk out ~\S+ \S+ · today \$4\.63$/)
+  // 0.9.1: the cache's size stays; the 5-hour reset goes first.
+  expect(joined(d.next)).toMatch(/^Opus high · cache ~59m 120k · wk out ~\S+ \S+ · today \$4\.63$/)
   const tight = deck(P, O, { next: 42 })
   expect(joined(tight.next)).toMatch(/^Opus high · cache ~59m · wk out ~/)
 })

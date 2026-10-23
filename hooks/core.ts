@@ -48,7 +48,12 @@ export type Payload = {
 
 export type Window = { used_percentage?: number; resets_at?: number }
 
-export type Segment = { key: string; priority: number; forms: string[]; tone?: Tone }
+/**
+ * A part of a line: its forms widest first. `spare` counts trailing forms kept
+ * back: they're used only before something at least as important would be
+ * dropped (the cache keeps its size until then).
+ */
+export type Segment = { key: string; priority: number; forms: string[]; tone?: Tone; spare?: number }
 export type Placed = { key: string; text: string; tone?: Tone }
 export type Preset = 'minimal' | 'default' | 'full'
 
@@ -122,6 +127,28 @@ export function pct(value: number): string {
 }
 
 const DAYS = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
+
+/** Minutes east of UTC in IANA zone `tz` at `ms`; undefined for no zone or one this runtime doesn't know. */
+export function zoneOffset(tz: string | undefined, ms: number): number | undefined {
+  if (!tz) return undefined
+  try {
+    const parts = new Intl.DateTimeFormat('en-US', { timeZone: tz, hourCycle: 'h23', year: 'numeric', month: 'numeric', day: 'numeric',
+      hour: 'numeric', minute: 'numeric' }).formatToParts(new Date(ms))
+    const n = (type: string) => Number(parts.find(p => p.type === type)?.value)
+    const local = Date.UTC(n('year'), n('month') - 1, n('day'), n('hour') % 24, n('minute'))
+    const minute = Math.floor(ms / 60_000) * 60_000
+    return Math.round((local - minute) / 60_000)
+  } catch {
+    return undefined
+  }
+}
+
+/** `UTC+11`, `UTC+5:45`, `UTC-3`: an offset in minutes, for saying which zone times are in. */
+export function utcLabel(offsetMinutes: number): string {
+  const sign = offsetMinutes < 0 ? '-' : '+'
+  const a = Math.abs(offsetMinutes)
+  return `UTC${sign}${Math.floor(a / 60)}${a % 60 ? `:${String(a % 60).padStart(2, '0')}` : ''}`
+}
 
 /** 16:40 when within a day of `now`, else Thu 16:40, in the caller's zone. */
 export function clock(at: number, now: number, offsetMinutes = 0): string {
@@ -372,10 +399,20 @@ export function fit(items: Segment[], room?: number): Placed[] {
   const deepest = Math.max(1, ...live.map(item => item.forms.length))
   let calmTier = 0
   let loudTier = 0
-  const forms = () => live.map(item => item.forms[Math.min(loud(item) ? loudTier : calmTier, item.forms.length - 1)] ?? '')
+  let spent = false
+  const reach = (item: Segment) => item.forms.length - 1 - (spent ? 0 : Math.max(0, item.spare ?? 0))
+  const forms = () => live.map(item => item.forms[Math.max(0, Math.min(loud(item) ? loudTier : calmTier, reach(item)))] ?? '')
   const dropLowest = () => {
     let lowest = 0
     live.forEach((item, index) => { if (item.priority < (live[lowest]?.priority ?? 0)) lowest = index })
+    // Spare forms go before a warning, or anything at least as important as their segment, does.
+    const guarded = live.filter(item => (item.spare ?? 0) > 0)
+    const going = live[lowest]
+    if (!spent && going && guarded.length && (loud(going) || guarded.some(item => item.priority <= going.priority))) {
+      spent = true
+      calmTier = Math.max(calmTier, deepest - 1)
+      return
+    }
     live.splice(lowest, 1)
   }
   while (width(forms().join(SEP)) > room) {

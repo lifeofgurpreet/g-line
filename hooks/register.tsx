@@ -17,7 +17,7 @@ import { atom, read, update } from 'claude-code'
 import type { EngineInterface, Register } from 'claude-code'
 
 import type { AgentRow, Receipt, Snap, Totals } from '../types'
-import { SEP, alerts, clock, layoutKeys, modelName, pct, segments, str, tokens, width } from './core'
+import { SEP, alerts, clock, layoutKeys, modelName, pct, segments, str, tokens, utcLabel, width, zoneOffset } from './core'
 import { ROSTER_PREFIX, othersSegment, rosterOf, rosterRow, staleRosterKeys } from './roster'
 import type { RosterEntry, RosterState } from './roster'
 import type { Options, Payload, Preset, Segment, Tone } from './core'
@@ -37,7 +37,7 @@ import {
 import type { PulseFeed, PulseItem, Shown } from './pulse'
 import { gitSegmentOf } from './core'
 import {
-  AGENT_TYPE_MODELS, accountIdentity, accountKey, agentModel, cappedEffort, changeText, effortKeepsCache, endText, evaluate, guardForms, inForceText, leaseFree, namesAccounts, readBack, ruleText, simulated, stopText,
+  AGENT_TYPE_MODELS, accountIdentity, accountKey, agentModel, cappedEffort, changeText, effortKeepsCache, endText, evaluate, groupOf, guardForms, inForceText, leaseFree, namesAccounts, readBack, ruleText, simulated, stopText,
   resumeAt, warmDue, warmForms,
 } from './guard'
 import type { Effort, Facts, Simulation, Verdict, WindowName } from './guard'
@@ -352,7 +352,8 @@ async function nowSeconds($: EngineInterface): Promise<number> {
   return (await $.clock.now()) / 1000
 }
 
-const offsetAt = (ms: number) => -new Date(ms).getTimezoneOffset()
+/** Minutes east of UTC at `ms` where the person is: their `tz`, else the machine's zone. */
+const offsetAt = (ms: number) => zoneOffset(config.tz, ms) ?? -new Date(ms).getTimezoneOffset()
 
 function limitsOf(list: readonly { kind: string; percentUsed: number; resetsAt?: string }[]): Snap['rateLimits'] {
   return list.map(l => ({ kind: l.kind, percentUsed: l.percentUsed,
@@ -940,6 +941,11 @@ async function detailRows($: EngineInterface, seconds: number, columns?: number)
   }
   if (config.guard.rules.length || config.guard.keepWarm) {
     rows.push({ key: 'h-guard', text: `Guard (your rules${config.guard.on ? '' : ', off'}; /g-line guard once|pause|off)`, bold: true })
+    const mine = groupOf(config.guard.groups, s.account)
+    for (const g of config.guard.groups ?? []) {
+      rows.push({ key: `gg-${g.name}`, tone: mine?.name === g.name ? 'accent' : 'dim', text: `${mine?.name === g.name ? 'this one ' : '         '}group ${g.name}: ${g.words.join(', ')} (kept for ${g.keepFor})` })
+    }
+    if (config.guard.groups?.length && mine?.name === 'other') rows.push({ key: 'gg-other', tone: 'accent', text: 'this one group other: this account is in none of your groups' })
     for (const rule of config.guard.rules) {
       const on = verdict.active[rule.id] !== undefined
       rows.push({ key: `g-${rule.id}`, tone: on ? (rule.stop ? 'bad' : 'warn') : 'dim', text: `${on ? 'in force ' : '         '}${ruleText(rule)}` })
@@ -948,6 +954,7 @@ async function detailRows($: EngineInterface, seconds: number, columns?: number)
     if (k) rows.push({ key: 'g-warm', tone: 'dim', text: `keep-warm: after ${Math.round(k.after / 60)}m idle, up to ${k.max} times, ${tokens(k.minContext)}+ context${warmOff ? ' (off for this session)' : `, ${warmed} so far`}` })
     for (const error of config.guard.errors) rows.push({ key: `g-err-${error}`, tone: 'warn', text: `not read: ${error}` })
   }
+  rows.push({ key: 'tz', tone: 'dim', text: `Times are ${config.tz ? `in ${config.tz} (${utcLabel(offsetAt(seconds * 1000))})` : `this machine's (${utcLabel(offsetAt(seconds * 1000))})`}; "tz" in config.json sets yours.` })
   rows.push({ key: 'note', tone: 'dim', text: `Pace projects your average rate since each window opened. Totals count only sessions g-line ran in. Layout: ${layoutKeys(optionsAt(seconds)).map(x => x.join(',')).join(' | ')}.` })
   return rows
 }
@@ -1237,6 +1244,9 @@ const PAUSE_KEY = 'guard_pause'
 let pausedUntil = 0
 /** `/g-line guard once`: the next prompt in this session goes through. */
 let passOnce = false
+/** The typed prompt the guard last held, and when: sent again unchanged within HELD_AGAIN_MS, it goes through. */
+let heldPrompt: { text: string; at: number } | undefined
+const HELD_AGAIN_MS = 3 * 60_000
 /**
  * Background agents the main loop started whose report hasn't come back. A
  * stop lets each report through: its work is done and paid for, and a
@@ -1350,7 +1360,9 @@ async function guardNow($: EngineInterface): Promise<Verdict> {
 /** The guard's segment for line 2 and the footer: what's in force, or that it's paused. */
 async function guardSegment($: EngineInterface): Promise<Segment | undefined> {
   if (!verdict.rules.length) return undefined
-  const words = guardForms(verdict, await pausedFor($))
+  const at = await nowMs($)
+  const until = verdict.stop?.resetsAt !== undefined ? clock(verdict.stop.resetsAt, at / 1000, offsetAt(at)) : undefined
+  const words = guardForms(verdict, await pausedFor($), until)
   if (!words) return undefined
   if (simulation) words.forms = words.forms.map(form => `${form} (sim)`)
   const forms = effortWaits && verdict.effort && !verdict.stop ? words.forms.map(f => f.replace(`effort ${verdict.effort}`, `effort ${verdict.effort} when cache cold`)) : words.forms
@@ -1363,7 +1375,7 @@ async function guardSegment($: EngineInterface): Promise<Segment | undefined> {
  * the person types goes through (so /g-line guard does); a message delivered
  * into a turn already running goes on into it. Nothing mid-turn is stopped.
  */
-async function guardPrompt($: EngineInterface, e: { origin: { kind: string }; command?: unknown; turnId?: string }, report = false): Promise<string | undefined> {
+async function guardPrompt($: EngineInterface, e: { origin: { kind: string }; command?: unknown; turnId?: string; text?: unknown }, report = false): Promise<string | undefined> {
   const v = await guardNow($)
   if (!v.stop) return undefined
   const person = e.origin?.kind === 'composer' || e.origin?.kind === 'bridge'
@@ -1374,9 +1386,17 @@ async function guardPrompt($: EngineInterface, e: { origin: { kind: string }; co
     passOnce = false
     return undefined
   }
-  const text = stopText(v.stop, await nowMs($), offsetAt(await nowMs($)), simulation !== undefined)
-  if (person && !(await read($, hidden))) await $.prompt.suggest({ text: '/g-line guard once' }).catch(() => undefined)
-  return text
+  const at = await nowMs($)
+  const typed = typeof e.text === 'string' ? e.text.trim() : ''
+  // The person sent the held prompt again, unchanged: their call, it goes.
+  if (person && typed && heldPrompt?.text === typed && at - heldPrompt.at < HELD_AGAIN_MS) {
+    heldPrompt = undefined
+    if (!(await read($, hidden))) $.ui.toast(`g-line sent it anyway, with ${Math.max(0, Math.round(v.stop.left))}% of the ${v.stop.window === '5h' ? '5-hour' : 'weekly'} window left.`, { timeoutMs: 6000 })
+    return undefined
+  }
+  if (person) heldPrompt = typed ? { text: typed, at } : undefined
+  const account = config.accountCommand ? (await read($, snap)).account : undefined
+  return stopText(v.stop, at, offsetAt(at), simulation !== undefined, { account, typed: person })
 }
 
 /**
@@ -1417,13 +1437,12 @@ async function guardEnds($: EngineInterface, turnId: string): Promise<boolean> {
   endSpared = turnId
   const end = v.end
   const at = await nowMs($)
-  const text = endText(end, at, offsetAt(at), simulation !== undefined)
+  const text = endText(end, at, offsetAt(at), simulation !== undefined, config.accountCommand ? (await read($, snap)).account : undefined)
   await update($, turnNow, live => (live ? { ...live, guardEnded: { left: end.left, window: end.window } } : live))
   if (!(await read($, hidden))) {
     $.ui.toast(text, { timeoutMs: 15_000 })
     await $.ui.notify(text, { title: 'g-line guard' }).catch(() => undefined)
   }
-  await suggest($, '/g-line guard once')
   await $.turn.abort({ turnId }).catch(() => undefined)
   return true
 }
@@ -1593,6 +1612,7 @@ async function guardCommandRun($: EngineInterface, action: string, pause?: numbe
     simulation ? `Simulating ${simulation.used}% used of the ${simulation.window} window.` : '',
     ...config.guard.errors.map(error => `Not read: ${error}.`),
     config.guard.rules.some(namesAccounts) && !config.accountCommand ? 'Rules naming accounts never apply: no account_command is set.' : '',
+    config.guard.groups?.length ? (g => (g ? `This account is in group ${g.name}.` : 'No account reading yet, so no group.'))(groupOf(config.guard.groups, (await read($, snap)).account)) : '',
     // What's in force in a few words; the pane lists every rule as written.
     !none && config.guard.on ? `${config.guard.rules.length} ${config.guard.rules.length === 1 ? 'rule' : 'rules'}, ${v.rules.length} in force${v.rules.length ? `: ${inForceText(v)}` : ''}.` : '',
     paused > 0 ? `Paused for ${Math.ceil(paused / 60)} more minutes.` : '',
@@ -2219,7 +2239,7 @@ export const register: Register = (on, options) => {
     const columns = e.viewport?.columns
     let done: string | undefined
     try {
-      done = new Date(r.endAt).toLocaleTimeString([], { hour: 'numeric', minute: '2-digit' })
+      done = new Date(r.endAt).toLocaleTimeString([], { hour: 'numeric', minute: '2-digit', ...(config.tz ? { timeZone: config.tz } : {}) })
     } catch {
       done = undefined
     }

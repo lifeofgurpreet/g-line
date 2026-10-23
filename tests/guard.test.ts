@@ -1,7 +1,7 @@
 import { expect, test } from 'claude-code/testing'
 
 import {
-  KEEP_WARM_DEFAULTS, accountIdentity, accountKey, agentModel, cappedEffort, changeText, effortKeepsCache, endText, evaluate, guardForms, inHours, leaseFree,
+  KEEP_WARM_DEFAULTS, accountIdentity, accountKey, agentModel, cappedEffort, changeText, effortKeepsCache, endText, evaluate, groupOf, hoursWords, guardForms, inHours, leaseFree,
   localTime, parseGuard, parseHours, readBack, ruleText, seconds, simulated, stopText, tokenCount, warmDue, warmForms,
 } from '../hooks/guard'
 import type { Facts, WarmFacts } from '../hooks/guard'
@@ -109,7 +109,8 @@ test('0.8.2: a rule for every account but yours, on the weekly window as well as
   const sat = Date.parse('2026-10-24T02:00:00Z')
   expect(evaluate(g, facts(80, { ...shared, week: 8, now: sat })).stop?.rule.id).toBe('r1')
   expect(evaluate(g, facts(80, { account: 'me@example.com', week: 8, now: sat })).stop).toBeUndefined()
-  expect(stopText(evaluate(g, facts(80, { ...shared, week: 8 })).stop!, TUE_10_KL, 480)).toContain('on this shared account')
+  expect(stopText(evaluate(g, facts(80, { ...shared, week: 8 })).stop!, TUE_10_KL, 480, false, { account: shared.account }))
+    .toBe('g-line held this prompt: team@example.com is a team seat, with 8% of its weekly window left. g-line keeps the last 10% of it for the team. It resets at Sat 10:00, in 4d 0h. Press Enter again to send it anyway, or /g-line guard pause for an hour.')
   expect(ruleText(g.rules[1]!)).toBe('at 10% of week left, unless it resets within 60m, on accounts except "me@": stop new prompts')
   expect(parseGuard({ rules: [{ left: 10, stop: true, except_accounts: [] }] }).errors.length).toBe(1)
 })
@@ -125,7 +126,55 @@ test('0.9.0: end_turn goes with a stop, is said in the rule, and marks the verdi
   expect(evaluate(g, facts(9, { account: 'me@example.com' })).end).toBeUndefined()
   // A plain stop never ends a turn.
   expect(evaluate(RULES, facts(4)).end).toBeUndefined()
-  expect(endText(v.end!, TUE_10_KL, 480)).toBe('g-line guard ended this turn before its next request: 9% of the 5-hour window left on this shared account (your rule: stop at 10%). It resets at 13:00, in 3h 0m. /g-line guard once, then "continue", carries on.')
+  expect(endText(v.end!, TUE_10_KL, 480)).toBe('g-line ended this turn before its next request: this account is a team seat, with 9% of its 5-hour window left. g-line keeps the last 10% of it for the team. It resets at 13:00, in 3h 0m. To carry on anyway, type "continue" and press Enter twice.')
+})
+
+test('0.9.1: account groups: an account is in the first group that names it, or "other"; rules name groups', () => {
+  const g = parseGuard({
+    groups: {
+      mine: ['me@'],
+      team: { accounts: ['team@', 'ops@'], for: 'the team' },
+      people: { accounts: 'sam@', for: 'its owner' },
+    },
+    rules: [
+      { left: 10, stop: true, end_turn: true, groups: ['team'], hours: '04:00-17:00 mon-fri', tz: 'Asia/Kuala_Lumpur' },
+      { left: 40, stop: true, groups: ['people'] },
+      { left: 15, stop: true, group: 'other' },
+      { left: 10, stop: true, groups: ['nobody'] },
+    ],
+  })
+  expect(g.errors).toEqual(['rule 4: no group named "nobody" in "guard.groups"'])
+  expect(g.groups?.map(x => [x.name, x.keepFor])).toEqual([['mine', 'the mine group'], ['team', 'the team'], ['people', 'its owner']])
+  expect(groupOf(g.groups, 'account SAM@example.com (via CAAM)')?.name).toBe('people')
+  expect(groupOf(g.groups, 'account stranger@example.com')?.name).toBe('other')
+  expect(groupOf(g.groups, null)).toBeUndefined()
+  // A person's own seat keeps most of its window; the team seat only its last 10% in office hours.
+  const sam = evaluate(g, facts(35, { account: 'account sam@example.com (via CAAM)' }))
+  expect([sam.stop?.rule.id, sam.stop?.group?.name]).toEqual(['r1', 'people'])
+  expect(stopText(sam.stop!, TUE_10_KL, 480, false, { account: 'account sam@example.com (via CAAM)' }))
+    .toBe('g-line held this prompt: sam@example.com is in your people group, with 35% of its 5-hour window left. g-line keeps the last 40% of it for its owner. It resets at 13:00, in 3h 0m. Press Enter again to send it anyway, or /g-line guard pause for an hour.')
+  const team = evaluate(g, facts(9, { account: 'ops@example.com' }))
+  expect(stopText(team.stop!, TUE_10_KL, 480, false, { account: 'ops@example.com', typed: false }))
+    .toBe('g-line held this prompt: ops@example.com is in your team group, with 9% of its 5-hour window left. Mon-Fri 04:00-17:00 Kuala Lumpur time, g-line keeps the last 10% of it for the team. It resets at 13:00, in 3h 0m. /g-line guard pause lets prompts like this through for an hour.')
+  expect(guardForms(team, 0, '13:00')?.forms).toEqual(['guard: team reserve, 9% 5h left till 13:00', 'team reserve till 13:00', 'team reserve'])
+  expect(evaluate(g, facts(9, { account: 'me@example.com' })).stop).toBeUndefined()
+  expect(evaluate(g, facts(12, { account: 'stranger@example.com' })).stop?.group?.name).toBe('other')
+  expect(ruleText(g.rules[0]!)).toBe('at 10% of 5h left, on group team, 04:00-17:00 Mon,Tue,Wed,Thu,Fri (Asia/Kuala_Lumpur): stop new prompts and end a running turn')
+  expect(parseGuard({ groups: { other: ['x@'] } }).errors.length).toBe(1)
+  expect(hoursWords(g.rules[0]!)).toBe('Mon-Fri 04:00-17:00 Kuala Lumpur time')
+})
+
+test('0.9.1: with several stops in force, the reason stays the one that started first', () => {
+  const g = parseGuard({ rules: [
+    { left: 5, stop: true },
+    { left: 10, stop: true, except_accounts: ['me@'] },
+  ] })
+  const at9 = evaluate(g, facts(9, { account: 'team@example.com' }))
+  const at4 = evaluate(g, facts(4, { account: 'team@example.com' }))
+  expect([at9.stop?.rule.id, at4.stop?.rule.id]).toEqual(['r1', 'r1'])
+  // A more depleted window still gives the reason.
+  const week = parseGuard({ rules: [{ left: 10, stop: true }, { left: 20, window: 'week', stop: true }] })
+  expect(evaluate(week, facts(9, { week: 3 })).stop?.window).toBe('week')
 })
 
 test('time windows: day lists and ranges, past midnight, and the machine\'s own zone when none is named', () => {
@@ -185,14 +234,14 @@ test('a subagent moves only to a cheaper model: never a fork, never up', () => {
 test('what the guard says: the stop, what started and ended, line 2', () => {
   const stop = evaluate(RULES, facts(4))
   const text = stopText(stop.stop!, TUE_10_KL, 8 * 60)
-  expect(text).toBe('g-line guard stopped this prompt: 4% of the 5-hour window left (your rule: stop at 5%). It resets at 13:00, in 3h 0m.'
-    + ' /g-line guard once lets the next prompt through; /g-line guard pause, an hour of them.')
+  expect(text).toBe('g-line held this prompt: 4% of the 5-hour window left, at or under your 5% stop. It resets at 13:00, in 3h 0m. Press Enter again to send it anyway, or /g-line guard pause for an hour.')
   expect(changeText(undefined, evaluate(RULES, facts(20)))).toBe('g-line guard: the conversation runs at effort medium.')
   expect(changeText(evaluate(RULES, facts(20)), stop)).toBe('g-line guard: new prompts stop (4% of the 5-hour window left); new subagents run on sonnet.')
   expect(changeText(stop, evaluate(RULES, facts(90, { resetsIn: 5 * HOUR }), stop.active)))
     .toBe('g-line guard: prompts go through again; effort is yours again; subagents pick their own model again.')
   expect(changeText(stop, stop)).toBeUndefined()
-  expect(guardForms(stop)).toEqual({ forms: ['guard: stopped, 4% 5h left', 'guard: stopped'], tone: 'bad' })
+  expect(guardForms(stop)).toEqual({ forms: ['guard: held, 4% 5h left', 'guard: held', 'guard: held'], tone: 'bad' })
+  expect(guardForms(stop, 0, '13:00')?.forms).toEqual(['guard: held, 4% 5h left till 13:00', 'guard: held till 13:00', 'guard: held'])
   expect(guardForms(evaluate(RULES, facts(9)))).toEqual({ forms: ['guard: effort medium, agents sonnet', 'guard on'], tone: 'warn' })
   expect(guardForms(stop, 1800)).toEqual({ forms: ['guard paused 30m', 'guard paused'], tone: 'dim' })
   expect(guardForms(evaluate(RULES, facts(50)))).toBeUndefined()

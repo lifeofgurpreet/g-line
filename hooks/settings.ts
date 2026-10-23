@@ -8,7 +8,7 @@
 // ~/.config/g-line/config.json, /config, then the pane. The highest layer
 // that names a setting is where its value comes from.
 
-import { num } from './core'
+import { num, zoneOffset } from './core'
 import type { Preset } from './core'
 import { receiptFields } from './extras'
 import type { ReceiptSpec } from './extras'
@@ -54,6 +54,8 @@ export type Config = {
   guard: GuardConfig
   /** The other g-line sessions on this machine: `2 others · 1 waiting` on line 2, and the list in the pane. */
   roster: boolean
+  /** The person's IANA time zone for every time g-line shows; the machine's own when unset (`auto`). */
+  tz?: string
 }
 
 export const DEFAULTS: Config = {
@@ -114,6 +116,8 @@ export function merge(base: Config, raw: unknown): Config {
   if (budget !== undefined && budget > 0) next.budget = budget
   if (typeof r.export_state === 'boolean') next.exportState = r.export_state
   if (typeof r.roster === 'boolean') next.roster = r.roster
+  if (r.tz === 'auto' || r.tz === null) delete next.tz
+  else if (typeof r.tz === 'string' && r.tz.trim() && zoneOffset(r.tz.trim(), 0) !== undefined) next.tz = r.tz.trim()
   // `true`/`false` (from `/g-line guard on|off`) switches the rules the files wrote; an object replaces them.
   if (typeof r.guard === 'boolean') next.guard = { ...base.guard, on: r.guard }
   else if (r.guard && typeof r.guard === 'object') next.guard = parseGuard(r.guard)

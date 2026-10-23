@@ -1082,8 +1082,7 @@ test('0.9.0: a stop with end_turn ends a running turn before its next request on
   expect(ended.toolUses).toEqual([])
   expect(seen.efforts).toEqual(['high'])
   expect(aborted).toEqual(['t1'])
-  expect(w.toasts.some(t => /^g-line guard ended this turn before its next request: 8% of the 5-hour window left \(your rule: stop at 10%\)\. It resets at \d\d:\d\d, in 2h 0m\. \/g-line guard once, then "continue", carries on\.$/.test(t))).toBe(true)
-  expect(w.suggested[w.suggested.length - 1]).toBe('/g-line guard once')
+  expect(w.toasts.some(t => /^g-line ended this turn before its next request: 8% of the 5-hour window left, at or under your 10% stop\. It resets at \d\d:\d\d, in 2h 0m\. To carry on anyway, type "continue" and press Enter twice\.$/.test(t))).toBe(true)
   await $.turn.complete({ answer: '', durationMs: 64_000, isAborted: true, turnId: 't1', reason: 'aborted',
     usage: { ...USAGE_ARGS, model: 'claude-opus-5-5' } } as never)
   await $.session.append({ message: { type: 'system', name: 'turn_duration', content: [] }, door: 'notice',
@@ -1140,8 +1139,7 @@ test('a stop rule refuses new prompts with the window, what is left and the way 
   await w.clock.advance(15_000)
   expect(w.toasts.filter(t => t.startsWith('g-line guard: new prompts stop (4% of the 5-hour window left)')).length).toBe(1)
   const refused = await $.prompt.submit(typed('go on'))
-  expect(refused.drop).toMatch(/^g-line guard stopped this prompt: 4% of the 5-hour window left \(your rule: stop at 5%\)\. It resets at \d\d:\d\d, in 1h 59m\. \/g-line guard once/)
-  expect(w.suggested[w.suggested.length - 1]).toBe('/g-line guard once')
+  expect(refused.drop).toMatch(/^g-line held this prompt: 4% of the 5-hour window left, at or under your 5% stop\. It resets at \d\d:\d\d, in 1h 59m\. Press Enter again to send it anyway/)
   // A loop's or schedule's wakeup is refused too; a typed slash command and a delivery into a running turn are not.
   expect((await $.prompt.submit({ text: 'check CI', wait: false, origin: { kind: 'scheduled-trigger' } } as never)).drop).toBeDefined()
   expect((await $.prompt.submit({ text: '/compact', wait: false, origin: { kind: 'composer' }, command: { name: 'compact', args: '' } } as never)).drop).toBeUndefined()
@@ -1149,15 +1147,21 @@ test('a stop rule refuses new prompts with the window, what is left and the way 
   await $.command.run({ command: 'g-line', args: 'guard once' } as never)
   expect(await $.prompt.submit(typed('just this one'))).toEqual({ text: 'just this one' })
   expect((await $.prompt.submit(typed('and this?'))).drop).toBeDefined()
+  // 0.9.1: the person sends the held prompt again, unchanged: it goes. A machine's repeat does not.
+  expect(await $.prompt.submit(typed('and this?'))).toEqual({ text: 'and this?' })
+  expect(w.toasts.some(t => t === 'g-line sent it anyway, with 4% of the 5-hour window left.')).toBe(true)
+  expect((await $.prompt.submit(typed('and this?'))).drop).toBeDefined()
+  expect((await $.prompt.submit(typed('something else'))).drop).toBeDefined()
+  expect((await $.prompt.submit({ text: 'check CI', wait: false, origin: { kind: 'scheduled-trigger' } } as never)).drop).toBeDefined()
   await $.command.run({ command: 'g-line', args: 'guard pause 30m' } as never)
   expect(await $.prompt.submit(typed('paused'))).toEqual({ text: 'paused' })
   await $.command.run({ command: 'g-line', args: 'guard resume' } as never)
   expect((await $.prompt.submit(typed('resumed'))).drop).toBeDefined()
-  expect(seen.prompts).toEqual(['/compact', 'agent done', 'just this one', 'paused'])
+  expect(seen.prompts).toEqual(['/compact', 'agent done', 'just this one', 'and this?', 'paused'])
   // Line 2 says so.
   const ui = await $.ui.mount({ plugin: 'g-line', surface: 'terminal', component: 'PromptHint',
     props: { isDraft: false, isWorking: false, hint: '? for shortcuts' }, viewport: { columns: 160, rows: 40 } })
-  expect(await ui.find({ type: 'Text', text: 'guard: stopped, 4% 5h left' })).toBeDefined()
+  expect(await ui.find({ type: 'Text', text: /^guard: held, 4% 5h left till \d\d:\d\d$/ })).toBeDefined()
   await ui.unmount()
   // Within the hour before the reset, the stop rule waits.
   await measure($, w, 97, 40 * 60)
@@ -1399,10 +1403,10 @@ test('/g-line guard simulate tries the rules with no quota spent, and a headless
   expect(logs).toEqual(['g-line guard: no usage readings in this session yet, so its rules cannot act on this prompt.'])
   await $.command.run({ command: 'g-line', args: 'guard simulate 5h 96' } as never)
   expect(w.toasts.some(t => t.startsWith('g-line guard: new prompts stop (4% of the 5-hour window left)') && t.endsWith('(Simulated.)'))).toBe(true)
-  expect((await $.prompt.submit(typed('try it'))).drop).toMatch(/^g-line guard stopped this prompt: 4% of the 5-hour window left/)
+  expect((await $.prompt.submit(typed('try it'))).drop).toMatch(/^g-line held this prompt: 4% of the 5-hour window left/)
   const ui = await $.ui.mount({ plugin: 'g-line', surface: 'terminal', component: 'PromptHint',
     props: { isDraft: false, isWorking: false, hint: '? for shortcuts' }, viewport: { columns: 200, rows: 40 } })
-  expect(await ui.find({ type: 'Text', text: 'guard: stopped, 4% 5h left (sim)' })).toBeDefined()
+  expect(await ui.find({ type: 'Text', text: /^guard: held, 4% 5h left till \d\d:\d\d \(sim\)$/ })).toBeDefined()
   await ui.unmount()
   // It ends by itself after 15 minutes.
   await w.clock.advance(16 * 60_000)
@@ -1642,7 +1646,7 @@ test('a refusal while simulating says it was simulated', { timeoutMs: 30_000 }, 
   await measure($, w, 10)
   await $.command.run({ command: 'g-line', args: 'guard simulate 5h 96' } as never)
   const refused = await $.prompt.submit(typed('go on'))
-  expect(refused.drop).toMatch(/^g-line guard stopped this prompt: 4% of the 5-hour window left \(simulated; your rule: stop at 5%\)\./)
+  expect(refused.drop).toMatch(/^g-line held this prompt: 4% of the 5-hour window left \(simulated\), at or under your 5% stop\./)
   // Every toast fits the toast's three lines: its way out is never cut off.
   expect(w.toasts.filter(t => t.includes('simulat')).every(t => t.length <= 110)).toBe(true)
 })

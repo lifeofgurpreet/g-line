@@ -99,7 +99,8 @@ export function cacheNext(p: Payload, now: number): Segment | undefined {
     // the size is what a lapse would cost.
     const size = num(cache.recache_tokens_if_cold)
     return { key: 'cache', priority: 90, tone: soon ? 'warn' : 'ok',
-      forms: [...(size && size > 0 ? [`${warm} (${tokens(size)})`] : []), warm, `cache ${about}`] }
+      ...(size && size > 0 ? { spare: 1 } : {}),
+      forms: size && size > 0 ? [`${warm} (${tokens(size)})`, `cache ${about} (${tokens(size)})`, `cache ${about} ${tokens(size)}`, `cache ${about}`] : [warm, `cache ${about}`] }
   }
   const recache = num(cache.recache_tokens_if_cold)
   if (cache.account_changed === true) {

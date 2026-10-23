@@ -37,6 +37,8 @@ export type Rule = {
   accounts?: string[]
   /** Lower-case parts of the account reading, any of which leaves the account out. */
   exceptAccounts?: string[]
+  /** Names of account groups (`guard.groups`, or `other` for an account in none) the rule applies to. */
+  groups?: string[]
   hours?: Hours
   tz?: string
   /** The rule as written, for toasts. */
@@ -61,7 +63,17 @@ export type KeepWarm = {
 /** After a turn stops on a usage limit: one prompt after the reset, plus up to `jitter` seconds. */
 export type Resume = { text: string; jitter: number }
 
-export type GuardConfig = { on: boolean; rules: Rule[]; keepWarm?: KeepWarm; resume?: Resume; errors: string[] }
+/**
+ * A named bucket of accounts (`guard.groups`): an account belongs to the first
+ * group, in the order written, whose words its account line contains, and to
+ * `other` when it's in none. Rules name groups to apply to them all at once.
+ */
+export type Group = { name: string; words: string[]; keepFor: string }
+
+/** The group of accounts in no group the person wrote. */
+export const OTHER_GROUP = 'other'
+
+export type GuardConfig = { on: boolean; rules: Rule[]; groups?: Group[]; keepWarm?: KeepWarm; resume?: Resume; errors: string[] }
 
 export const NO_GUARD: GuardConfig = { on: true, rules: [], errors: [] }
 
@@ -147,6 +159,7 @@ export function parseGuard(raw: unknown): GuardConfig {
   const r = raw as Record<string, unknown>
   const errors: string[] = []
   const rules: Rule[] = []
+  const groups = parseGroups(r.groups, errors)
   const list = Array.isArray(r.rules) ? r.rules : []
   list.forEach((entry, index) => {
     const text = JSON.stringify(entry)
@@ -192,6 +205,15 @@ export function parseGuard(raw: unknown): GuardConfig {
       if (except.length) rule.exceptAccounts = except
       else errors.push(`rule ${index + 1}: "except_accounts" lists parts of the account line, such as "me@"`)
     }
+    if (e.groups !== undefined || e.group !== undefined) {
+      const named = (Array.isArray(e.groups) ? e.groups : [e.groups ?? e.group]).map(word).filter(Boolean)
+      const unknown = named.filter(n => n !== OTHER_GROUP && !groups.some(g => g.name === n))
+      if (!named.length) errors.push(`rule ${index + 1}: "groups" names groups from "guard.groups", such as "team"`)
+      else if (unknown.length) {
+        errors.push(`rule ${index + 1}: no group named ${unknown.map(n => `"${n}"`).join(', ')} in "guard.groups"`)
+        return
+      } else rule.groups = named
+    }
     if (e.hours !== undefined) {
       const hours = parseHours(e.hours)
       if (hours) rule.hours = hours
@@ -235,7 +257,40 @@ export function parseGuard(raw: unknown): GuardConfig {
     const text = typeof o.text === 'string' && o.text.trim() ? o.text.trim().slice(0, 500) : 'continue'
     resume = { text, jitter: Math.min(1800, seconds(o.jitter) ?? 300) }
   }
-  return { on: r.on !== false, rules, ...(keepWarm ? { keepWarm } : {}), ...(resume ? { resume } : {}), errors }
+  return { on: r.on !== false, rules, ...(groups.length ? { groups } : {}), ...(keepWarm ? { keepWarm } : {}), ...(resume ? { resume } : {}), errors }
+}
+
+/** `guard.groups`: `{ "team": ["team@", "ops@"], "people": { "accounts": ["sam@"], "for": "its owner" } }`. */
+function parseGroups(raw: unknown, errors: string[]): Group[] {
+  if (raw === undefined) return []
+  if (!raw || typeof raw !== 'object' || Array.isArray(raw)) {
+    errors.push('"groups" maps a group name to the parts of account lines in it, such as { "team": ["team@"] }')
+    return []
+  }
+  const groups: Group[] = []
+  for (const [key, value] of Object.entries(raw as Record<string, unknown>)) {
+    const name = word(key)
+    if (!/^[a-z0-9][a-z0-9._-]{0,30}$/.test(name) || name === OTHER_GROUP) {
+      errors.push(`group "${key}": a name of letters, digits, dots or dashes, and not "${OTHER_GROUP}" (that's every account in no group)`)
+      continue
+    }
+    const o = Array.isArray(value) || typeof value === 'string' ? { accounts: value } : (value as Record<string, unknown> | null) ?? {}
+    const list = (Array.isArray(o.accounts) ? o.accounts : [o.accounts]).map(word).filter(Boolean)
+    if (!list.length) {
+      errors.push(`group "${key}" lists no accounts`)
+      continue
+    }
+    const keepFor = typeof o.for === 'string' && o.for.trim() ? o.for.trim().slice(0, 60) : `the ${name} group`
+    groups.push({ name, words: list, keepFor })
+  }
+  return groups
+}
+
+/** The group an account line belongs to; undefined with no reading. */
+export function groupOf(groups: readonly Group[] | undefined, account: string | null | undefined): Group | undefined {
+  const line = account?.toLowerCase()
+  if (!line) return undefined
+  return (groups ?? []).find(g => g.words.some(part => line.includes(part))) ?? { name: OTHER_GROUP, words: [], keepFor: 'others' }
 }
 
 /** What the guard reads. `left` is percent of the window left; `resetsAt` in seconds. */
@@ -256,10 +311,13 @@ export type Verdict = {
   rules: Rule[]
   effort?: Effort
   agents?: string
-  stop?: { rule: Rule; window: WindowName; left: number; resetsAt?: number }
+  stop?: Held
   /** The strictest stop in force that also ends a running turn. */
-  end?: { rule: Rule; window: WindowName; left: number; resetsAt?: number }
+  end?: Held
 }
+
+/** A stop in force: its rule, the window and what's left, and the account's group when the rule names groups. */
+export type Held = { rule: Rule; window: WindowName; left: number; resetsAt?: number; group?: Group }
 
 /**
  * The rules in force now. A rule starts when its window's percent left falls to
@@ -290,6 +348,10 @@ export function evaluate(guard: GuardConfig, facts: Facts, before: Active = {}):
       const account = facts.account?.toLowerCase()
       if (!account || rule.exceptAccounts.some(part => account.includes(part))) continue
     }
+    if (rule.groups) {
+      const g = groupOf(guard.groups, facts.account)
+      if (!g || !rule.groups.includes(g.name)) continue
+    }
     if (rule.hours) {
       const at = localTime(facts.nowMs, rule.tz, facts.offsetMinutes)
       if (!at || !inHours(rule.hours, at)) continue
@@ -298,18 +360,34 @@ export function evaluate(guard: GuardConfig, facts: Facts, before: Active = {}):
     rules.push(rule)
   }
   const verdict: Verdict = { active, rules }
+  const group = groupOf(guard.groups, facts.account)
   for (const rule of rules) {
     if (rule.effort && (!verdict.effort || EFFORTS.indexOf(rule.effort) < EFFORTS.indexOf(verdict.effort))) verdict.effort = rule.effort
     if (rule.agents && (!verdict.agents || rank(rule.agents) < rank(verdict.agents))) verdict.agents = rule.agents
     const w = facts.windows[rule.window]
-    if (rule.stop && w && (!verdict.stop || w.left < verdict.stop.left)) verdict.stop = { rule, window: rule.window, left: w.left, resetsAt: w.resetsAt }
-    if (rule.endTurn && w && (!verdict.end || w.left < verdict.end.left)) verdict.end = { rule, window: rule.window, left: w.left, resetsAt: w.resetsAt }
+    const held = w ? { rule, window: rule.window, left: w.left, resetsAt: w.resetsAt, ...(rule.groups && group ? { group } : {}) } : undefined
+    if (rule.stop && held && binds(rule, held.left, verdict.stop)) verdict.stop = held
+    if (rule.endTurn && held && binds(rule, held.left, verdict.end)) verdict.end = held
   }
   return verdict
 }
 
+/**
+ * Whether a stop rule gives the reason over the one chosen so far: the window
+ * with less left; on the same reading, a team-seat rule, then the higher
+ * threshold (the rule that started first), so the reason doesn't change from
+ * one prompt to the next as stricter rules join it.
+ */
+function binds(rule: Rule, left: number, chosen: Verdict['stop']): boolean {
+  if (!chosen) return true
+  if (left !== chosen.left) return left < chosen.left
+  const team = namesAccounts(rule)
+  if (team !== namesAccounts(chosen.rule)) return team
+  return rule.left > chosen.rule.left
+}
+
 /** Whether a rule depends on the account reading. */
-export const namesAccounts = (rule: Rule) => Boolean(rule.accounts || rule.exceptAccounts)
+export const namesAccounts = (rule: Rule) => Boolean(rule.accounts || rule.exceptAccounts || rule.groups)
 
 /** A model family's price rank: haiku 1, sonnet 2, opus 3, fable or mythos 4; 0 unknown. */
 export function rank(model: string | undefined): number {
@@ -366,31 +444,59 @@ export const AGENT_TYPE_MODELS: Record<string, string> = {
 const pct = (n: number) => `${Math.max(0, Math.round(n))}%`
 const NAMES: Record<WindowName, string> = { '5h': '5-hour', week: 'weekly' }
 
-function untilText(resetsAt: number | undefined, nowMs: number, offsetMinutes: number): string {
+/** When a window resets, in the caller's zone: `08:20, in 1h 5m`, or `Tue 13:00, in 3d 4h`. */
+function resetWords(resetsAt: number | undefined, nowMs: number, offsetMinutes: number): string {
   if (resetsAt === undefined) return ''
   const left = Math.max(0, Math.round(resetsAt - nowMs / 1000))
-  const h = Math.floor(left / 3600)
+  const d = Math.floor(left / 86_400)
+  const h = Math.floor((left % 86_400) / 3600)
   const m = Math.floor((left % 3600) / 60)
   const at = new Date(resetsAt * 1000 + offsetMinutes * 60_000)
-  const clock = `${String(at.getUTCHours()).padStart(2, '0')}:${String(at.getUTCMinutes()).padStart(2, '0')}`
-  return ` It resets at ${clock}, in ${h ? `${h}h ${m}m` : `${m}m`}.`
+  const hm = `${String(at.getUTCHours()).padStart(2, '0')}:${String(at.getUTCMinutes()).padStart(2, '0')}`
+  const day = left >= 20 * 3600 ? `${(DAYS[at.getUTCDay()] ?? '').replace(/^./, c => c.toUpperCase())} ` : ''
+  const span = d ? `${d}d ${h}h` : h ? `${h}h ${m}m` : `${m}m`
+  return `${day}${hm}, in ${span}`
 }
 
-/** Why a prompt was refused: the window, how much is left, when it resets, and the way past. */
-export function stopText(stop: NonNullable<Verdict['stop']>, nowMs: number, offsetMinutes: number, simulated = false): string {
-  const whose = namesAccounts(stop.rule) ? ' on this shared account' : ''
-  const hours = stop.rule.hours ? ' in these hours' : ''
-  const sim = simulated ? 'simulated; ' : ''
-  return `g-line guard stopped this prompt: ${pct(stop.left)} of the ${NAMES[stop.window]} window left${whose}${hours} (${sim}your rule: stop at ${stop.rule.left}%).`
-    + `${untilText(stop.resetsAt, nowMs, offsetMinutes)} /g-line guard once lets the next prompt through; /g-line guard pause, an hour of them.`
+/** A rule's hours in words: `Mon-Fri 04:00-17:00 Kuala Lumpur time`. */
+export function hoursWords(rule: Rule): string {
+  if (!rule.hours) return ''
+  const days = [...rule.hours.days].sort((a, b) => a - b)
+  const name = (d: number) => (DAYS[d] ?? '').replace(/^./, c => c.toUpperCase())
+  const run = days.length > 2 && days.every((d, i) => i === 0 || d === (days[i - 1] ?? 0) + 1)
+  const span = days.length === 7 ? 'Every day' : run ? `${name(days[0] ?? 0)}-${name(days[days.length - 1] ?? 0)}` : days.map(name).join(', ')
+  const zone = rule.tz ? ` ${(rule.tz.split('/').pop() ?? rule.tz).replace(/_/g, ' ')} time` : ''
+  return `${span} ${hhmm(rule.hours.from)}-${hhmm(rule.hours.to)}${zone}`
 }
 
-/** Why a running turn was ended: the window, what's left, when it resets, and how to carry on. */
-export function endText(end: NonNullable<Verdict['end']>, nowMs: number, offsetMinutes: number, simulated = false): string {
-  const whose = namesAccounts(end.rule) ? ' on this shared account' : ''
-  const sim = simulated ? 'simulated; ' : ''
-  return `g-line guard ended this turn before its next request: ${pct(end.left)} of the ${NAMES[end.window]} window left${whose} (${sim}your rule: stop at ${end.rule.left}%).`
-    + `${untilText(end.resetsAt, nowMs, offsetMinutes)} /g-line guard once, then "continue", carries on.`
+/** The reason a stop is in force, in a sentence or two, without the way past. */
+function reasonText(stop: NonNullable<Verdict['stop']>, simulated: boolean, account?: string | null): string {
+  const window = `${NAMES[stop.window]} window`
+  const sim = simulated ? ' (simulated)' : ''
+  if (namesAccounts(stop.rule)) {
+    const who = account ? accountIdentity(account) : 'this account'
+    const when = stop.rule.hours ? `${hoursWords(stop.rule)}, g-line keeps` : 'g-line keeps'
+    const what = stop.group ? `in your ${stop.group.name} group` : 'a team seat'
+    return `${who} is ${what}, with ${pct(stop.left)} of its ${window} left${sim}. ${when} the last ${stop.rule.left}% of it for ${stop.group?.keepFor ?? 'the team'}.`
+  }
+  return `${pct(stop.left)} of the ${window} left${sim}, at or under your ${stop.rule.left}% stop.`
+}
+
+/** Why a prompt was held, when the window resets, and the way past: Enter again for a prompt the person typed. */
+export function stopText(stop: NonNullable<Verdict['stop']>, nowMs: number, offsetMinutes: number, simulated = false,
+  o: { account?: string | null; typed?: boolean } = {}): string {
+  const reset = resetWords(stop.resetsAt, nowMs, offsetMinutes)
+  const past = o.typed === false
+    ? '/g-line guard pause lets prompts like this through for an hour.'
+    : 'Press Enter again to send it anyway, or /g-line guard pause for an hour.'
+  return `g-line held this prompt: ${reasonText(stop, simulated, o.account)}${reset ? ` It resets at ${reset}.` : ''} ${past}`
+}
+
+/** Why a running turn was ended, when the window resets, and how to carry on. */
+export function endText(end: NonNullable<Verdict['end']>, nowMs: number, offsetMinutes: number, simulated = false, account?: string | null): string {
+  const reset = resetWords(end.resetsAt, nowMs, offsetMinutes)
+  return `g-line ended this turn before its next request: ${reasonText(end, simulated, account)}${reset ? ` It resets at ${reset}.` : ''}`
+    + ' To carry on anyway, type "continue" and press Enter twice.'
 }
 
 const hhmm = (minute: number) => `${String(Math.floor(minute / 60)).padStart(2, '0')}:${String(minute % 60).padStart(2, '0')}`
@@ -401,6 +507,7 @@ export function ruleText(rule: Rule): string {
   if (rule.unlessResetWithin !== undefined) when.push(`unless it resets within ${Math.round(rule.unlessResetWithin / 60)}m`)
   if (rule.accounts) when.push(`on accounts ${rule.accounts.map(a => `"${a}"`).join(', ')}`)
   if (rule.exceptAccounts) when.push(`on accounts except ${rule.exceptAccounts.map(a => `"${a}"`).join(', ')}`)
+  if (rule.groups) when.push(`on ${rule.groups.length === 1 ? 'group' : 'groups'} ${rule.groups.join(', ')}`)
   if (rule.hours) {
     const days = rule.hours.days.length === 7 ? 'daily' : rule.hours.days.map(d => (DAYS[d] ?? '').replace(/^./, c => c.toUpperCase())).join(',')
     when.push(`${hhmm(rule.hours.from)}-${hhmm(rule.hours.to)} ${days}${rule.tz ? ` (${rule.tz})` : ''}`)
@@ -434,12 +541,19 @@ export function changeText(before: Verdict | undefined, after: Verdict): string 
 }
 
 /** Line 2's guard segment words, widest first: what's in force, or that it's paused. */
-export function guardForms(verdict: Verdict, pausedFor?: number): { forms: string[]; tone: 'bad' | 'warn' | 'dim' } | undefined {
+export function guardForms(verdict: Verdict, pausedFor?: number, until?: string): { forms: string[]; tone: 'bad' | 'warn' | 'dim' } | undefined {
   if (pausedFor !== undefined && pausedFor > 0 && verdict.rules.length) {
     const m = Math.ceil(pausedFor / 60)
     return { forms: [`guard paused ${m}m`, 'guard paused'], tone: 'dim' }
   }
-  if (verdict.stop) return { forms: [`guard: stopped, ${pct(verdict.stop.left)} ${verdict.stop.window} left`, 'guard: stopped'], tone: 'bad' }
+  if (verdict.stop) {
+    const till = until ? ` till ${until}` : ''
+    const reserve = `${verdict.stop.group?.name ?? 'team'} reserve`
+    const forms = namesAccounts(verdict.stop.rule)
+      ? [`guard: ${reserve}, ${pct(verdict.stop.left)} ${verdict.stop.window} left${till}`, `${reserve}${till}`, reserve]
+      : [`guard: held, ${pct(verdict.stop.left)} ${verdict.stop.window} left${till}`, `guard: held${till}`, 'guard: held']
+    return { forms, tone: 'bad' }
+  }
   const doing = [verdict.effort ? `effort ${verdict.effort}` : '', verdict.agents ? `agents ${verdict.agents}` : ''].filter(Boolean)
   if (!doing.length) return undefined
   return { forms: [`guard: ${doing.join(', ')}`, 'guard on'], tone: 'warn' }

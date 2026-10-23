@@ -1,6 +1,6 @@
 import { expect, test } from 'claude-code/testing'
 
-import { alerts, duration, modelName, pace, plain, render, tokens } from '../hooks/core'
+import { alerts, duration, modelName, pace, plain, render, tokens, utcLabel, zoneOffset } from '../hooks/core'
 import type { Options, Payload } from '../hooks/core'
 import { CASES } from './cases'
 
@@ -64,4 +64,17 @@ test('what warns keeps its words longest as the line narrows, and the cache coun
   expect(plain(render(p, { now, preset: 'full', utcOffsetMinutes: 0 }))[0]).toMatch(/cache warm \(~50m left\)/)
   const soon = { ...p, prompt_cache: { ...p.prompt_cache, expires_at: now + 4 * 60 } }
   expect(plain(render(soon, { now, utcOffsetMinutes: 0 }))[0]).toMatch(/cache warm \(~4m left\)/)
+})
+
+test('0.9.1: a zone\'s offset at an instant, and its label', () => {
+  const at = Date.parse('2026-10-23T03:00:00Z')
+  expect(zoneOffset('Pacific/Guadalcanal', at)).toBe(660)
+  expect(zoneOffset('Asia/Kuala_Lumpur', at)).toBe(480)
+  expect(zoneOffset('Asia/Kathmandu', at)).toBe(345)
+  expect(zoneOffset('Asia/Jakarta', at)).toBe(420)
+  expect(zoneOffset('Europe/Berlin', at)).toBe(120)
+  expect(zoneOffset('Europe/Berlin', Date.parse('2026-12-01T03:00:00Z'))).toBe(60)
+  expect(zoneOffset('Mars/Olympus', at)).toBeUndefined()
+  expect(zoneOffset(undefined, at)).toBeUndefined()
+  expect([utcLabel(660), utcLabel(345), utcLabel(-180), utcLabel(0)]).toEqual(['UTC+11', 'UTC+5:45', 'UTC-3', 'UTC+0'])
 })

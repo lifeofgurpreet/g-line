@@ -270,6 +270,7 @@ Layers, lowest first: defaults, `config.json`, `/config`, then choices made with
 | `export_state` | `true` writes the figures as JSON under `~/.cache/g-line/state/` for tmux and other bars | `false` |
 | `roster` | `true` keeps a heartbeat of each g-line session on this machine in Claude Code's plugin store: whether it's working, waiting on you or idle, its context, cache and model, and the `account_command` line when you set one. Line 2 counts the others, the pane lists them. `false` writes and shows nothing | `true` |
 | `guard` | Your rules for a low usage window, and keep-warm (see Guard). With none, g-line changes nothing | none |
+| `tz` | Your time zone (an IANA name such as `Pacific/Guadalcanal`) for every time g-line shows: resets, projections, receipts, the guard's words. Useful on a machine in another zone, over SSH. `auto` is the machine's own. The pane says which zone the times are in | `auto` |
 | `reset_threshold`, `long_turn_seconds`, `cache_ttl`, `icons`, `segments`, `preset`, `account_command` | See `hooks/settings.ts`. `account_command` runs a command you choose and shows its first line; off unless set | |
 
 `~/.config/glanceline/config.json` from 0.4 is still read, and `g-line/config.json` wins.
@@ -330,19 +331,24 @@ window.
   notice). The one notice it lets through is the report of a background agent your
   conversation started: that work is done and paid for, and a refused report would never
   reach Claude. A stop never stops a tool call, and a turn already running only with `end_turn` (below). A slash command
-  you type still goes through. Claude Code puts the refused prompt back in the box: clear it
-  (ctrl+u), type `/g-line guard once`, and ctrl+y brings your prompt back for one more turn.
-  `/g-line guard pause` lets everything through for an hour (or `pause 30m`) in every session
-  on the machine, and `/g-line guard resume` ends the pause.
+  you type still goes through. The refusal says why in plain words, for example `g-line held
+  this prompt: sam@example.com is in your people group, with 35% of its 5-hour window left. g-line
+  keeps the last 40% of it for its owner. It resets at 13:00, in 3h 0m.` **Claude Code puts the
+  refused prompt back in the box: press Enter again to send it anyway** (the same prompt, within
+  three minutes; a loop's or schedule's prompt never gets this). `/g-line guard once` lets the
+  next prompt through, `/g-line guard pause` lets everything through for an hour (or
+  `pause 30m`) in every session on the machine, and `/g-line guard resume` ends the pause. With
+  several stops in force, the reason given is the one that started first, so it doesn't change
+  from one prompt to the next.
 - **`end_turn`** (with `stop`): a stop also ends a turn that's already running, once the rule
   starts during it. The turn ends between steps, before its next request, so every tool call
   the last response asked for has finished; nothing is cut off mid-call. A turn that began with
   the rule already in force (`/g-line guard once`, a pause, a slash command, an agent's report)
   runs to its end, and so does every turn while the guard is paused. You get a toast, a
-  notification and `guard: stopped` on line 2; Claude Code draws no closing line for a turn
-  ended this way. Type
-  `/g-line guard once`, then `continue`, to carry on. Without `end_turn` a stop only refuses
-  new prompts, so one long agentic turn can still run a window down to nothing.
+  notification and `guard: held` (or `team reserve`) on line 2; Claude Code draws no closing
+  line for a turn ended this way. Type `continue` and press Enter twice to carry on. Without
+  `end_turn` a stop only refuses new prompts, so one long agentic turn can still run a window
+  down to nothing.
 - **`unless_reset_within`**: the rule waits while the window resets within that time.
 - **`accounts`**: the rule applies only when the `account_command` line contains one of these
   words, in any case. With no account reading, it doesn't apply, and with no
@@ -354,6 +360,35 @@ window.
   overnight is still drained in the morning.
 - **`hours`** (`09:00-17:00 mon-fri`, `22:00-06:00`, `9-17 sat,sun`) in **`tz`** (an IANA
   zone; the machine's own when left out).
+- **`groups`**: the rule applies to every account in these groups (see Account groups below).
+
+#### Account groups
+
+Rules can name groups of accounts instead of listing accounts, so you bucket your accounts once
+and give each bucket its own rules. An account belongs to the first group, in the order
+written, whose words its `account_command` line contains, and to `other` when it's in none:
+
+```json
+"guard": {
+  "groups": {
+    "mine":   ["me@"],
+    "team":   { "accounts": ["team@", "ops@"], "for": "the team" },
+    "people": { "accounts": ["sam@"], "for": "its owner" }
+  },
+  "rules": [
+    { "groups": ["team"], "left": 10, "stop": true, "end_turn": true, "hours": "09:00-17:00 mon-fri" },
+    { "groups": ["people"], "left": 40, "stop": true, "end_turn": true },
+    { "groups": ["team", "people"], "window": "week", "left": 10, "stop": true, "end_turn": true },
+    { "groups": ["other"], "left": 15, "stop": true }
+  ]
+}
+```
+
+A group is a list of words, or `{ "accounts": [...], "for": "..." }` where `for` is who the
+reserve is kept for, in the refusal (`g-line keeps the last 40% of it for its owner`). Line 2
+names the group (`guard: people reserve, 35% 5h left till 13:00`), and the `/g-line` pane lists
+the groups with the session's own marked. Change a group's rules and every account in it
+follows.
 
 A rule starts when the window falls to its threshold. It lets go when the window climbs 2
 points past it, the window resets, or one of its conditions stops holding. A reading taken
