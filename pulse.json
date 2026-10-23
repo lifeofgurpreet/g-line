@@ -1,13 +1,13 @@
 {
  "schema": 1,
- "generated_at": "2026-10-23T18:32:37Z",
+ "generated_at": "2026-10-23T19:04:25Z",
  "items": [
   {
    "title": "Kimi unveils K3.1 Pro, a 3T-class open-weight model with a 1M-token context window, and K3.1 Pro Hi…",
    "url": "https://www.kimi.ai/blog/kimi-k3-1-pro",
    "source": "Kimi",
    "published_at": "2026-10-23T17:45:53Z",
-   "text": "Kimi unveils K3.1 Pro, a 3T-class open-weight model with a 1M-token context window, and K3.1 Pro Highspeed, with full weights to be released by November 4. - Terminal-Bench 4.0. … - Terminal-Bench Science 0.1. … - DeepSWE v1.1. … - SWE-Marathon v1.1. … - PostTrainBench.",
+   "text": "Kimi unveils K3.1 Pro, a 3T-class open-weight model with a 1M-token context window, and K3.1 Pro Highspeed, with full weights to be released by November 4. We're introducing Kimi K3.1 Pro, the first model in our new K3.1 series and our most capable 3T-class open-weight model to date, with a 1-million-token context window.",
    "via": "Techmeme"
   },
   {
@@ -17,7 +17,7 @@
    "published_at": "2026-10-22T22:01:06Z",
    "text": "New on our Frontier Red Team blog: using Claude to formally verify software at large scale. Formal verification can prove that code is free of certain bugs, but historically it has only been feasible for small codebases (or required a lot of expert time). With AI models,…",
    "author_name": "Anthropic",
-   "likes": 8299,
+   "likes": 8365,
    "story": "Anthropic says it partnered with Theorem to use Claude to formally prove useful security properties at the assembly code level across 123 open-source libraries"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-10-23T14:14:49Z",
    "text": "Almost all of the recent incidents like this, including Hugging Face, happened because the models involved were accidentally given impossible goals by the humans running the tests, and because of their training they then tried desperately to complete them by any means necessary.",
    "author_name": "Andrew Curran",
-   "likes": 613,
+   "likes": 633,
    "story": "AISI finds Mythos 5 pushed a GitHub maintainer to accept malicious code in a July eval despite evidence he was real; other models behaved the same in simulation"
   },
   {
@@ -50,8 +50,8 @@
    "url": "https://www.sverigesradio.se/artikel/chat-gpt-och-claude-forbjuder-regeringskansliet",
    "source": "Hacker News",
    "published_at": "2026-10-23T11:39:54Z",
-   "text": "305 points and 112 comments on Hacker News.",
-   "points": 305,
+   "text": "306 points and 114 comments on Hacker News.",
+   "points": 306,
    "discussion": "https://news.ycombinator.com/item?id=50207405"
   },
   {
@@ -61,7 +61,7 @@
    "published_at": "2026-10-22T18:17:10Z",
    "text": "Agent Skills started as an experiment in Claude Code. Many across the industry have come to adopt it, so we at Anthropic found it more fitting to donate it to the @AgenticAIFdn, next to MCP.",
    "author_name": "Boris Cherny",
-   "likes": 2234,
+   "likes": 2250,
    "story": "Anthropic donates the Agent Skills open standard to the Agentic AI Foundation and says 70+ platforms have integrated it, after donating MCP to the AAIF in 2025"
   },
   {
@@ -79,11 +79,11 @@
    "text": "My latest vibe coded game experiment is a Command & Conquer style RTS (Real Time Strategy) game called Battle Drones ( play it here ). Unlike my previous experiments , this one is actually fun to play . I'm somewhat embarrassed to admit that I got there by telling Claude to \"Make it a LOT more fun\". It also supports multiplayer between nearby devices using audio to synchronize game state! Here's what I've built so far, and some of the things I learned along the way."
   },
   {
-   "title": "Sources: OpenAI has cut its valuation target to $1.25T, down from the $1.4T valuation it pitched ea…",
-   "url": "https://www.ft.com/content/bb564eb1-79d4-4694-aa24-1155202a9abc",
-   "source": "Financial Times",
-   "published_at": "2026-10-22T22:36:42Z",
-   "text": "Sources: OpenAI has cut its valuation target to $1.25T, down from the $1.4T valuation it pitched earlier in October, after facing resistance from some investors. AI lab floated $1.4tn price tag earlier this month, according to documents seen by the FT — OpenAI has cut its valuation target …",
+   "title": "Sources: OpenAI nears an up to $30B round led by investors from the UAE and Coatue at a $1.25T pre-…",
+   "url": "https://www.cnbc.com/2026/10/22/openai-funding-round-uae-investors.html",
+   "source": "Kate Rooney / CNBC",
+   "published_at": "2026-10-22T20:24:16Z",
+   "text": "Sources: OpenAI nears an up to $30B round led by investors from the UAE and Coatue at a $1.25T pre-money valuation, as an “opportunistic” bridge ahead of an IPO. OpenAI is closing in on a funding round that could value the artificial intelligence giant at more than $1 trillion ahead …",
    "via": "Techmeme"
   },
   {
@@ -93,7 +93,7 @@
    "published_at": "2026-10-22T18:13:41Z",
    "text": "Grok Bot can now use your 1Password account. Approve the logins you want to share, and your Bot signs in for you. This new integration is rolling out to users over the next few days.",
    "author_name": "Grok Bot",
-   "likes": 9215,
+   "likes": 9266,
    "story": "1Password passes $500M in ARR, up from $400M in November 2025, driven by enterprise AI coding assistants and agents, and launches 1Password for Agents"
   },
   {
@@ -101,8 +101,8 @@
    "url": "https://www.anthropic.com/research/formal-verification",
    "source": "Hacker News",
    "published_at": "2026-10-22T22:54:43Z",
-   "text": "428 points and 264 comments on Hacker News.",
-   "points": 428,
+   "text": "429 points and 269 comments on Hacker News.",
+   "points": 429,
    "discussion": "https://news.ycombinator.com/item?id=50202217"
   },
   {
@@ -112,7 +112,7 @@
    "published_at": "2026-10-22T21:36:16Z",
    "text": "🚨🚨ALERT: ANTHROPIC IS A/B TESTING USAGE LIMITS Many users on X are reporting LOWER usage limits right now. THEY ARE NOT WRONG. We detected an A/B test going on that DECREASES your monthly API-value by ~20% while INCREASING your 5h usage limits by ~20%. This only affects SOME h…",
    "author_name": "SemiAnalysis",
-   "likes": 2999,
+   "likes": 3018,
    "story": "SemiAnalysis claims Anthropic is A/B Testing Usage Limits"
   },
   {
@@ -122,15 +122,15 @@
    "published_at": "2026-10-22T15:26:44Z",
    "text": "Two employees from METR and Redwood Research worked on premises at OpenAI for three weeks this summer in an embedded assessment pilot. This team evaluated the systems OpenAI was using to monitor for misalignment from internal agents. A brief write-up of their work is now public.",
    "author_name": "METR",
-   "likes": 1132,
+   "likes": 1136,
    "story": "METR says a pilot test of OpenAI's monitoring system found vulnerabilities, including an exploit that could have let AI agents hide hundreds of recent actions"
   },
   {
-   "title": "An interview with Intel's leadership, including CTO Pushkar Ranade, on AI chip demand, lessons from…",
-   "url": "https://www.dwarkesh.com/p/intel-tour",
-   "source": "Dwarkesh Patel / Dwarkesh P…",
-   "published_at": "2026-10-23T11:46:09Z",
-   "text": "An interview with Intel's leadership, including CTO Pushkar Ranade, on AI chip demand, lessons from 10nm, whether Intel can catch up to TSMC, Terafab, and more. What I learned from touring Intel's most advanced fab and talking to its leadership. — I spent two days touring Intel's …",
+   "title": "OpenAI makes Decisions API, its Jev competitor, generally available with new voice and visual modal…",
+   "url": "https://techcrunch.com/2026/10/22/openai-makes-its-jev-competitor-widely-available-as-decision-model-competition-heats-up/",
+   "source": "Tim Fernholz / TechCrunch",
+   "published_at": "2026-10-23T13:26:05Z",
+   "text": "OpenAI makes Decisions API, its Jev competitor, generally available with new voice and visual modalities, at $0.10/1M input tokens and no output-token charges. OpenAI made its Decisions API model widely available to users for the first time, entering the market for fast …",
    "via": "Techmeme"
   }
  ],
