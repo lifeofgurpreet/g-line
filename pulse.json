@@ -1,13 +1,13 @@
 {
  "schema": 1,
- "generated_at": "2026-10-23T15:23:47Z",
+ "generated_at": "2026-10-23T15:55:48Z",
  "items": [
   {
-   "title": "Sources: OpenAI nears an up to $30B round led by investors from the UAE and Coatue at a $1.25T pre-…",
-   "url": "https://www.cnbc.com/2026/10/22/openai-funding-round-uae-investors.html",
-   "source": "Kate Rooney / CNBC",
-   "published_at": "2026-10-22T20:24:16Z",
-   "text": "Sources: OpenAI nears an up to $30B round led by investors from the UAE and Coatue at a $1.25T pre-money valuation, as an “opportunistic” bridge ahead of an IPO. OpenAI is closing in on a funding round that could value the artificial intelligence giant at more than $1 trillion ahead …",
+   "title": "OpenAI suspected the three fired researchers of leaking internal model designs to AI safety researc…",
+   "url": "https://www.wsj.com/tech/ai/the-signal-chats-that-cost-openai-researchers-their-jobs-594c5853?st=H9AUaC&reflink=desktopwebshare_permalink",
+   "source": "Wall Street Journal",
+   "published_at": "2026-10-23T02:51:59Z",
+   "text": "OpenAI suspected the three fired researchers of leaking internal model designs to AI safety researcher Ryan Greenblatt, including via disappearing Signal chats. The company fired three safety researchers for mishandling sensitive information. They had been fighting to keep the workings …",
    "via": "Techmeme"
   },
   {
@@ -17,7 +17,7 @@
    "published_at": "2026-10-22T22:01:06Z",
    "text": "New on our Frontier Red Team blog: using Claude to formally verify software at large scale. Formal verification can prove that code is free of certain bugs, but historically it has only been feasible for small codebases (or required a lot of expert time). With AI models,…",
    "author_name": "Anthropic",
-   "likes": 7838,
+   "likes": 7926,
    "story": "Anthropic says it partnered with Theorem to use Claude to formally prove useful security properties at the assembly code level across 123 open-source libraries"
   },
   {
@@ -28,21 +28,21 @@
    "text": "Fixed sandboxed Bash commands on macOS and Linux running the shell's startup files outside the sandbox before each command · Fixed macOS sandbox denyWrite glob patterns not applying at a path's real location when the pattern's folder is reached through a symlink · Fixed sandboxed commands and auto-accepted edits being able to modify the MCP config file passed with --mcp-config · Fixed a disabled MCP server being reconnected by a later permission prompt in print and SDK sessions"
   },
   {
-   "title": "wait new anthropic merch is kind of lit",
-   "url": "https://x.com/alexandr_wang/status/2113153669747392930",
-   "source": "𝕏 @alexandr_wang",
-   "published_at": "2026-10-22T06:21:10Z",
-   "text": "wait new anthropic merch is kind of lit",
-   "author_name": "Alexandr Wang",
-   "likes": 6133,
-   "story": "WTF is Alexandr Wang poasting about \"Anthropic merch\"?!"
+   "title": "Agent Skills started as an experiment in Claude Code. Many across the industry have come to adopt i…",
+   "url": "https://x.com/bcherny/status/2113333859907747871",
+   "source": "𝕏 @bcherny",
+   "published_at": "2026-10-22T18:17:10Z",
+   "text": "Agent Skills started as an experiment in Claude Code. Many across the industry have come to adopt it, so we at Anthropic found it more fitting to donate it to the @AgenticAIFdn, next to MCP.",
+   "author_name": "Boris Cherny",
+   "likes": 2124,
+   "story": "Anthropic donates the Agent Skills open standard to the Agentic AI Foundation and says 70+ platforms have integrated it, after donating MCP to the AAIF in 2025"
   },
   {
-   "title": "OpenAI suspected the three fired researchers of leaking internal model designs to AI safety researc…",
-   "url": "https://www.wsj.com/tech/ai/the-signal-chats-that-cost-openai-researchers-their-jobs-594c5853?st=H9AUaC&reflink=desktopwebshare_permalink",
-   "source": "Wall Street Journal",
-   "published_at": "2026-10-23T02:51:59Z",
-   "text": "OpenAI suspected the three fired researchers of leaking internal model designs to AI safety researcher Ryan Greenblatt, including via disappearing Signal chats. The company fired three safety researchers for mishandling sensitive information. They had been fighting to keep the workings …",
+   "title": "Sources: OpenAI nears an up to $30B round led by investors from the UAE and Coatue at a $1.25T pre-…",
+   "url": "https://www.cnbc.com/2026/10/22/openai-funding-round-uae-investors.html",
+   "source": "Kate Rooney / CNBC",
+   "published_at": "2026-10-22T20:24:16Z",
+   "text": "Sources: OpenAI nears an up to $30B round led by investors from the UAE and Coatue at a $1.25T pre-money valuation, as an “opportunistic” bridge ahead of an IPO. OpenAI is closing in on a funding round that could value the artificial intelligence giant at more than $1 trillion ahead …",
    "via": "Techmeme"
   },
   {
@@ -50,19 +50,19 @@
    "url": "https://www.sverigesradio.se/artikel/chat-gpt-och-claude-forbjuder-regeringskansliet",
    "source": "Hacker News",
    "published_at": "2026-10-23T11:39:54Z",
-   "text": "258 points and 93 comments on Hacker News.",
-   "points": 258,
+   "text": "293 points and 100 comments on Hacker News.",
+   "points": 293,
    "discussion": "https://news.ycombinator.com/item?id=50207405"
   },
   {
-   "title": "Agent Skills started as an experiment in Claude Code. Many across the industry have come to adopt i…",
-   "url": "https://x.com/bcherny/status/2113333859907747871",
-   "source": "𝕏 @bcherny",
-   "published_at": "2026-10-22T18:17:10Z",
-   "text": "Agent Skills started as an experiment in Claude Code. Many across the industry have come to adopt it, so we at Anthropic found it more fitting to donate it to the @AgenticAIFdn, next to MCP.",
-   "author_name": "Boris Cherny",
-   "likes": 2108,
-   "story": "Anthropic donates the Agent Skills open standard to the Agentic AI Foundation and says 70+ platforms have integrated it, after donating MCP to the AAIF in 2025"
+   "title": "Grok Bot can now use your 1Password account. Approve the logins you want to share, and your Bot sig…",
+   "url": "https://x.com/bot/status/2113332983226831339",
+   "source": "𝕏 @bot",
+   "published_at": "2026-10-22T18:13:41Z",
+   "text": "Grok Bot can now use your 1Password account. Approve the logins you want to share, and your Bot signs in for you. This new integration is rolling out to users over the next few days.",
+   "author_name": "Grok Bot",
+   "likes": 8932,
+   "story": "1Password passes $500M in ARR, up from $400M in November 2025, driven by enterprise AI coding assistants and agents, and launches 1Password for Agents"
   },
   {
    "title": "Open call for guest investigators in the life sciences",
@@ -79,31 +79,12 @@
    "text": "My latest vibe coded game experiment is a Command & Conquer style RTS (Real Time Strategy) game called Battle Drones ( play it here ). Unlike my previous experiments , this one is actually fun to play . I'm somewhat embarrassed to admit that I got there by telling Claude to \"Make it a LOT more fun\". It also supports multiplayer between nearby devices using audio to synchronize game state! Here's what I've built so far, and some of the things I learned along the way."
   },
   {
-   "title": "a16z rebrands “a16z Crypto” as “a16z Frontier” and expands the $2.2B fund's scope to back startups…",
-   "url": "https://fortune.com/2026/10/22/venture-giant-andreessen-horowitz-crypto-name-blockchain-fund-rebrands-a16z-frontier/",
-   "source": "Camila Grigera Naón / Fortu…",
-   "published_at": "2026-10-22T23:06:52Z",
-   "text": "a16z rebrands “a16z Crypto” as “a16z Frontier” and expands the $2.2B fund's scope to back startups developing AI, robotics, and other emerging technologies. In 2018, Andreessen Horowitz made a splash in the venture capital world by launching a spin-off dedicated to digital assets called a16z Crypto.",
+   "title": "OpenAI makes Decisions API, its Jev competitor, generally available with new voice and visual modal…",
+   "url": "https://techcrunch.com/2026/10/22/openai-makes-its-jev-competitor-widely-available-as-decision-model-competition-heats-up/",
+   "source": "Tim Fernholz / TechCrunch",
+   "published_at": "2026-10-23T13:26:05Z",
+   "text": "OpenAI makes Decisions API, its Jev competitor, generally available with new voice and visual modalities, at $0.10/1M input tokens and no output-token charges. OpenAI made its Decisions API model widely available to users for the first time, entering the market for fast …",
    "via": "Techmeme"
-  },
-  {
-   "title": "Grok Bot can now use your 1Password account. Approve the logins you want to share, and your Bot sig…",
-   "url": "https://x.com/bot/status/2113332983226831339",
-   "source": "𝕏 @bot",
-   "published_at": "2026-10-22T18:13:41Z",
-   "text": "Grok Bot can now use your 1Password account. Approve the logins you want to share, and your Bot signs in for you. This new integration is rolling out to users over the next few days.",
-   "author_name": "Grok Bot",
-   "likes": 8868,
-   "story": "1Password passes $500M in ARR, up from $400M in November 2025, driven by enterprise AI coding assistants and agents, and launches 1Password for Agents"
-  },
-  {
-   "title": "Every AI model has the same \"controversial\" take on humans",
-   "url": "https://www.modelcompare.ai/blog/ai-models-controversial-take-on-humans",
-   "source": "Hacker News",
-   "published_at": "2026-10-22T16:08:00Z",
-   "text": "542 points and 534 comments on Hacker News.",
-   "points": 542,
-   "discussion": "https://news.ycombinator.com/item?id=50197313"
   },
   {
    "title": "🚨🚨ALERT: ANTHROPIC IS A/B TESTING USAGE LIMITS Many users on X are reporting LOWER usage limits rig…",
@@ -112,8 +93,17 @@
    "published_at": "2026-10-22T21:36:16Z",
    "text": "🚨🚨ALERT: ANTHROPIC IS A/B TESTING USAGE LIMITS Many users on X are reporting LOWER usage limits right now. THEY ARE NOT WRONG. We detected an A/B test going on that DECREASES your monthly API-value by ~20% while INCREASING your 5h usage limits by ~20%. This only affects SOME h…",
    "author_name": "SemiAnalysis",
-   "likes": 2864,
+   "likes": 2894,
    "story": "SemiAnalysis claims Anthropic is A/B Testing Usage Limits"
+  },
+  {
+   "title": "LLMs are making formal software verification feasible at a much larger scale",
+   "url": "https://www.anthropic.com/research/formal-verification",
+   "source": "Hacker News",
+   "published_at": "2026-10-22T22:54:43Z",
+   "text": "397 points and 241 comments on Hacker News.",
+   "points": 397,
+   "discussion": "https://news.ycombinator.com/item?id=50202217"
   },
   {
    "title": "Two employees from METR and Redwood Research worked on premises at OpenAI for three weeks this summ…",
@@ -122,7 +112,7 @@
    "published_at": "2026-10-22T15:26:44Z",
    "text": "Two employees from METR and Redwood Research worked on premises at OpenAI for three weeks this summer in an embedded assessment pilot. This team evaluated the systems OpenAI was using to monitor for misalignment from internal agents. A brief write-up of their work is now public.",
    "author_name": "METR",
-   "likes": 1119,
+   "likes": 1120,
    "story": "METR says a pilot test of OpenAI's monitoring system found vulnerabilities, including an exploit that could have let AI agents hide hundreds of recent actions"
   },
   {
@@ -132,8 +122,16 @@
    "published_at": "2026-10-22T19:16:10Z",
    "text": "Introducing Canva Craft 🚀 Extraordinary image generation is now available to everyone, powered by our first frontier model built specifically for design. With Craft, Canva is now the world's second most advanced AI lab for image generation on @DesignArena's global leaderboard.…",
    "author_name": "Canva",
-   "likes": 2813,
+   "likes": 2849,
    "story": "Canva has released their own image generation model."
+  },
+  {
+   "title": "a16z rebrands “a16z Crypto” as “a16z Frontier” and expands the $2.2B fund's scope to back startups…",
+   "url": "https://fortune.com/2026/10/22/venture-giant-andreessen-horowitz-crypto-name-blockchain-fund-rebrands-a16z-frontier/",
+   "source": "Camila Grigera Naón / Fortu…",
+   "published_at": "2026-10-22T23:06:52Z",
+   "text": "a16z rebrands “a16z Crypto” as “a16z Frontier” and expands the $2.2B fund's scope to back startups developing AI, robotics, and other emerging technologies. In 2018, Andreessen Horowitz made a splash in the venture capital world by launching a spin-off dedicated to digital assets called a16z Crypto.",
+   "via": "Techmeme"
   }
  ],
  "sources": "curated, Techmeme, X (found via Techmeme, Reddit, the Internet Archive), Claude Code releases, Anthropic, Hacker News, Simon Willison"
