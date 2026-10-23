@@ -111,7 +111,7 @@ test('0.8.2: a rule for every account but yours, on the weekly window as well as
   expect(evaluate(g, facts(80, { account: 'me@example.com', week: 8, now: sat })).stop).toBeUndefined()
   expect(stopText(evaluate(g, facts(80, { ...shared, week: 8 })).stop!, TUE_10_KL, 480, false, { account: shared.account }))
     .toBe('g-line held this prompt: team@example.com is a team seat, with 8% of its weekly window left. g-line keeps the last 10% of it for the team. It resets at Sat 10:00, in 4d 0h. Press Enter again to send it anyway, or /g-line guard pause for an hour.')
-  expect(ruleText(g.rules[1]!)).toBe('at 10% of week left, unless it resets within 60m, on accounts except "me@": stop new prompts')
+  expect(ruleText(g.rules[1]!)).toBe('at 10% of week left, unless it resets within 1h, on accounts except "me@": stop new prompts')
   expect(parseGuard({ rules: [{ left: 10, stop: true, except_accounts: [] }] }).errors.length).toBe(1)
 })
 
@@ -271,7 +271,7 @@ test('what the guard says: the stop, what started and ended, line 2', () => {
   expect(guardForms(stop, 1800)).toEqual({ forms: ['guard paused 30m', 'guard paused'], tone: 'dim' })
   expect(guardForms(evaluate(RULES, facts(50)))).toBeUndefined()
   expect(ruleText(RULES.rules[3]!)).toBe('at 10% of 5h left, on accounts "team@", 09:00-17:00 Mon,Tue,Wed,Thu,Fri (Asia/Kuala_Lumpur): stop new prompts')
-  expect(ruleText(RULES.rules[2]!)).toBe('at 5% of 5h left, unless it resets within 60m: stop new prompts')
+  expect(ruleText(RULES.rules[2]!)).toBe('at 5% of 5h left, unless it resets within 1h: stop new prompts')
 })
 
 test('keep-warm: only an idle, warm, hour-long cache worth keeping, a bounded number of times', () => {
@@ -299,7 +299,7 @@ test('keep-warm: only an idle, warm, hour-long cache worth keeping, a bounded nu
 })
 
 test('times and sizes as people write them', () => {
-  expect([seconds('45m'), seconds('1h'), seconds('1h30m'), seconds('90s'), seconds(30), seconds('soon')]).toEqual([2700, 3600, 5400, 90, 1800, undefined])
+  expect([seconds('45m'), seconds('1h'), seconds('1h30m'), seconds('90s'), seconds(30), seconds('soon'), seconds('3d')]).toEqual([2700, 3600, 5400, 90, 1800, undefined, 259_200])
   expect([tokenCount('50k'), tokenCount('1.5m'), tokenCount(2000), tokenCount('lots')]).toEqual([50_000, 1_500_000, 2000, undefined])
 })
 

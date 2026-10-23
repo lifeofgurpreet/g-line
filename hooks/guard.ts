@@ -58,7 +58,14 @@ export type Rule = {
 export type Pace = {
   reserve: number; burst: number; office?: Hours; officeWeight: number; tz?: string
   buffer: number; tiers: [number, number, number]; effort: Effort; agents: string
+  /** The window paced: the week (the default) or the 5-hour window. */
+  window?: WindowName
 }
+
+const FIVE_HOURS_MS = 5 * 3_600_000
+const spanOf = (p: Pace) => (p.window === '5h' ? FIVE_HOURS_MS : WEEK_MS)
+/** The paced window in words. */
+const paceName = (w: WindowName | undefined) => (w === '5h' ? '5-hour window' : 'week')
 
 export type KeepWarm = {
   /** `last`: only the session the person last typed in, per account; `all`: every idle session. */
@@ -92,6 +99,8 @@ export type GuardConfig = {
   on: boolean; rules: Rule[]; groups?: Group[]; keepWarm?: KeepWarm; resume?: Resume
   /** Hold a typed prompt the guard refuses and send it when the guard lets it through. */
   queue?: boolean
+  /** Near the weekly reset, say once that what's left is there to use: within `within` seconds, with `left` percent or more left. */
+  drain?: { within: number; left: number }
   errors: string[]
 }
 
@@ -99,14 +108,14 @@ export const NO_GUARD: GuardConfig = { on: true, rules: [], errors: [] }
 
 export const KEEP_WARM_DEFAULTS: KeepWarm = { sessions: 'last', after: 45 * 60, max: 2, minContext: 50_000, minLeft: 20, perHour: 6 }
 
-/** `45m`, `1h`, `90s`, `1h30m`, or a number of minutes, in seconds. */
+/** `45m`, `1h`, `90s`, `1h30m`, `3d`, or a number of minutes, in seconds. */
 export function seconds(value: unknown): number | undefined {
   if (typeof value === 'number' && Number.isFinite(value) && value >= 0) return value * 60
   if (typeof value !== 'string') return undefined
   const text = value.trim().toLowerCase()
-  if (!/^(\d+(\.\d+)?\s*[hms]\s*)+$/.test(text)) return undefined
+  if (!/^(\d+(\.\d+)?\s*[dhms]\s*)+$/.test(text)) return undefined
   let total = 0
-  for (const [, n, unit] of text.matchAll(/(\d+(?:\.\d+)?)\s*([hms])/g)) total += Number(n) * (unit === 'h' ? 3600 : unit === 'm' ? 60 : 1)
+  for (const [, n, unit] of text.matchAll(/(\d+(?:\.\d+)?)\s*([dhms])/g)) total += Number(n) * (unit === 'd' ? 86_400 : unit === 'h' ? 3600 : unit === 'm' ? 60 : 1)
   return Number.isFinite(total) ? total : undefined
 }
 
@@ -202,12 +211,13 @@ export function parseGuard(raw: unknown): GuardConfig {
     if (paced && (e.left !== undefined || e.effort !== undefined || e.agents !== undefined || e.stop !== undefined)) {
       return bad('a "pace" rule sets its own steps: leave out "left", "effort", "agents" and "stop"')
     }
-    if (paced && e.window !== undefined && word(e.window) !== 'week') return bad('a "pace" rule paces the weekly window')
-    const rule: Rule = { id: `r${index}`, left, window: paced || word(e.window) === 'week' ? 'week' : '5h', text }
+    // A pace rule paces the week unless it names the 5-hour window.
+    const window: WindowName = paced ? (word(e.window) === '5h' ? '5h' : 'week') : word(e.window) === 'week' ? 'week' : '5h'
+    const rule: Rule = { id: `r${index}`, left, window, text }
     if (paced) {
       const pace = parsePace(e.pace, typeof e.tz === 'string' ? e.tz.trim() : undefined, n, errors)
       if (!pace) return
-      rule.pace = pace
+      rule.pace = window === '5h' ? { ...pace, window } : pace
       rule.stop = true
     }
     if (e.effort !== undefined) {
@@ -284,8 +294,18 @@ export function parseGuard(raw: unknown): GuardConfig {
     const text = typeof o.text === 'string' && o.text.trim() ? o.text.trim().slice(0, 500) : 'continue'
     resume = { text, jitter: Math.min(1800, seconds(o.jitter) ?? 300) }
   }
+  let drain: GuardConfig['drain']
+  if (r.drain === true) drain = { within: 48 * 3600, left: 20 }
+  else if (r.drain && typeof r.drain === 'object') {
+    const o = r.drain as Record<string, unknown>
+    const within = o.within === undefined ? 48 * 3600 : seconds(o.within)
+    const left = o.left === undefined ? 20 : typeof o.left === 'number' && o.left > 0 && o.left <= 100 ? o.left : undefined
+    if (within === undefined || within <= 0 || within > 7 * 86_400) errors.push('"drain": "within" is a time up to a week, such as "48h"')
+    else if (left === undefined) errors.push('"drain": "left" is a percent from 1 to 100')
+    else drain = { within, left }
+  } else if (r.drain !== undefined && r.drain !== false) errors.push('"drain" is true, or { "within": "48h", "left": 20 }')
   return { on: r.on !== false, rules, ...(groups.length ? { groups } : {}), ...(keepWarm ? { keepWarm } : {}), ...(resume ? { resume } : {}),
-    ...(r.queue === true ? { queue: true } : {}), errors }
+    ...(r.queue === true ? { queue: true } : {}), ...(drain ? { drain } : {}), errors }
 }
 
 /** `guard.groups`: `{ "team": ["team@", "ops@"], "people": { "accounts": ["sam@"], "for": "its owner" } }`. */
@@ -397,7 +417,7 @@ export type PaceCalendar = { startMs: number; endMs: number; spans: [number, num
 
 /** The week ending at `resetMs`, with its office hours (in the rule's zone, daylight saving included) laid out once. */
 export function paceCalendar(p: Pace, resetMs: number, offsetMinutes = 0): PaceCalendar | undefined {
-  const startMs = resetMs - WEEK_MS
+  const startMs = resetMs - spanOf(p)
   const spans: [number, number][] = []
   if (p.office) {
     const off = (ms: number) => zoneOffsetMs(p.tz, ms, offsetMinutes)
@@ -429,7 +449,7 @@ export function paceFraction(cal: PaceCalendar, nowMs: number): number {
   const t = Math.min(cal.endMs, Math.max(cal.startMs, nowMs))
   const extra = cal.weight - 1
   const office = cal.spans.reduce((sum, [a, b]) => sum + Math.max(0, Math.min(b, t) - a), 0)
-  return ((t - cal.startMs) + extra * office) / (WEEK_MS + extra * cal.officeMs)
+  return ((t - cal.startMs) + extra * office) / ((cal.endMs - cal.startMs) + extra * cal.officeMs)
 }
 
 /** What a week of the rule may have used by `nowMs`, in percent: `burst`, rising to `100 - reserve` by the reset. */
@@ -447,6 +467,8 @@ export type PaceNow = {
   hard: boolean
   reserve: number
   office: boolean
+  /** The window paced. */
+  window?: WindowName
   /** About when this step lets go on its own (ms), for a step in force. */
   liftsAt?: number
 }
@@ -469,7 +491,7 @@ function calendarOf(p: Pace, resetMs: number, offsetMinutes: number): PaceCalend
 export function paceRead(p: Pace, w: { left: number; resetsAt: number }, nowMs: number, offsetMinutes = 0, was?: { tier: number; hard: boolean }): PaceNow | undefined {
   if (!Number.isFinite(w.left) || !Number.isFinite(w.resetsAt)) return undefined
   const resetMs = w.resetsAt * 1000
-  if (resetMs <= nowMs || resetMs - nowMs > WEEK_MS + 3_600_000) return undefined
+  if (resetMs <= nowMs || resetMs - nowMs > spanOf(p) + 3_600_000) return undefined
   const cal = calendarOf(p, resetMs, offsetMinutes)
   if (!cal) return undefined
   const used = Math.min(100, Math.max(0, 100 - w.left))
@@ -480,7 +502,7 @@ export function paceRead(p: Pace, w: { left: number; resetsAt: number }, nowMs: 
   const hard = w.left <= p.reserve + p.buffer + (was?.hard ? CLEAR_MARGIN : 0)
   if (hard) tier = 3
   const now: PaceNow = { used, allowed, ahead, tier: tier as PaceNow['tier'], hard, reserve: p.reserve,
-    office: cal.spans.some(([a, b]) => nowMs >= a && nowMs < b) }
+    office: cal.spans.some(([a, b]) => nowMs >= a && nowMs < b), ...(p.window === '5h' ? { window: p.window } : {}) }
   if (tier > 0) {
     if (hard) now.liftsAt = resetMs
     else {
@@ -502,8 +524,8 @@ export function paceRead(p: Pace, w: { left: number; resetsAt: number }, nowMs: 
 /** The standing in words: `ahead of pace: 62% of the week used, 48% allowed by now`. */
 export function paceWords(n: PaceNow): string {
   return n.hard
-    ? `${pct(100 - n.used)} of the week is left, inside the ${n.reserve}% g-line keeps back`
-    : `ahead of pace: ${pct(n.used)} of the week used, ${pct(n.allowed)} allowed by now`
+    ? `${pct(100 - n.used)} of the ${paceName(n.window)} is left, inside the ${n.reserve}% g-line keeps back`
+    : `ahead of pace: ${pct(n.used)} of the ${paceName(n.window)} used, ${pct(n.allowed)} allowed by now`
 }
 
 /** What the guard reads. `left` is percent of the window left; `resetsAt` in seconds. */
@@ -724,7 +746,7 @@ function reasonText(stop: NonNullable<Verdict['stop']>, simulated: boolean, acco
     if (!namesAccounts(stop.rule)) return `${said.replace(/^./, c => c.toUpperCase())}.`
     const who = account ? accountIdentity(account) : 'this account'
     const what = !stop.group ? 'a team seat' : stop.group.name === OTHER_GROUP ? 'in none of your groups' : `in your ${stop.group.name} group`
-    return `${who} is ${what}, and ${said}. g-line paces the week so it lasts for ${stop.group?.keepFor ?? 'the team'}.`
+    return `${who} is ${what}, and ${said}. g-line paces the ${paceName(stop.pace.window)} so it lasts for ${stop.group?.keepFor ?? 'the team'}.`
   }
   if (namesAccounts(stop.rule)) {
     const who = account ? accountIdentity(account) : 'this account'
@@ -787,8 +809,11 @@ const hhmm = (minute: number) => `${String(Math.floor(minute / 60)).padStart(2, 
 
 /** A rule in words: `at 10% of 5h left, on accounts "team@", 09:00-17:00 Mon-Fri (Asia/Kuala_Lumpur): stop`. */
 export function ruleText(rule: Rule): string {
-  const when = [rule.pace ? 'paced week' : `at ${rule.left}% of ${rule.window} left`]
-  if (rule.unlessResetWithin !== undefined) when.push(`unless it resets within ${Math.round(rule.unlessResetWithin / 60)}m`)
+  const when = [rule.pace ? (rule.pace.window === '5h' ? 'paced 5h window' : 'paced week') : `at ${rule.left}% of ${rule.window} left`]
+  if (rule.unlessResetWithin !== undefined) {
+    const u = rule.unlessResetWithin
+    when.push(`unless it resets within ${u >= 86_400 && u % 86_400 === 0 ? `${u / 86_400}d` : u >= 3600 && u % 3600 === 0 ? `${u / 3600}h` : `${Math.round(u / 60)}m`}`)
+  }
   if (rule.accounts) when.push(`on accounts ${rule.accounts.map(a => `"${a}"`).join(', ')}`)
   if (rule.exceptAccounts) when.push(`on accounts except ${rule.exceptAccounts.map(a => `"${a}"`).join(', ')}`)
   if (rule.groups) when.push(`on ${rule.groups.length === 1 ? 'group' : 'groups'} ${rule.groups.join(', ')}`)
@@ -854,7 +879,7 @@ export function guardForms(verdict: Verdict, pausedFor?: number, until?: string,
   if (verdict.stop?.pace) {
     // A pace step's lift is reckoned from the allowance's growth: about, not exact.
     const till = until ? ` till ~${until}` : ''
-    const forms = [`guard: over pace, ${pct(verdict.stop.pace.used)} of the week used${till}`, `over pace${till}`, 'over pace']
+    const forms = [`guard: over pace, ${pct(verdict.stop.pace.used)} of the ${verdict.stop.pace.window === '5h' ? '5h' : 'week'} used${till}`, `over pace${till}`, 'over pace']
     return { forms: queued ? forms.map((f, i) => (i < forms.length - 1 ? `${f}, 1 queued` : f)) : forms, tone: 'bad' }
   }
   if (verdict.stop) {
@@ -1034,10 +1059,10 @@ export function whyLines(guard: GuardConfig, facts: Facts, verdict: Verdict, o: 
     if (rule.pace) {
       const now = verdict.pace?.[rule.id] ?? (w.resetsAt !== undefined ? paceRead(rule.pace, { left: w.left, resetsAt: w.resetsAt }, facts.nowMs, facts.offsetMinutes) : undefined)
       if (!now) {
-        out.push(`${label}: the engine gave no reset time for the week, so there's no week to pace.`)
+        out.push(`${label}: the engine gave no reset time for the ${paceName(rule.pace.window)}, so there's nothing to pace.`)
         continue
       }
-      const figures = `${pct(now.used)} of the week used, ${pct(now.allowed)} allowed by now${now.office ? ' (office hours)' : ''}`
+      const figures = `${pct(now.used)} of the ${paceName(now.window)} used, ${pct(now.allowed)} allowed by now${now.office ? ' (office hours)' : ''}`
       const state = on ? `step ${now.tier} of 3 in force${now.hard ? ' (inside the reserve)' : ''}` : now.tier > 0 && !scope ? 'waits (not this account or hours)' : 'on pace'
       out.push(`${label}: ${figures}; ${state}.`)
     } else {
@@ -1053,4 +1078,24 @@ export function whyLines(guard: GuardConfig, facts: Facts, verdict: Verdict, o: 
     out.push(`In force: ${inForceText(verdict)}.${next !== undefined ? ` The next step eases about ${resetWords(Math.floor(next / 1000), facts.nowMs, offset)}.` : ''}`)
   } else out.push('Nothing is held now.')
   return out
+}
+
+/**
+ * Near the weekly reset, what's left of the week is there to use: the words for it, once
+ * the week resets within `drain.within` with `drain.left` percent or more left, else
+ * nothing. Says what the guard still keeps back for this account, if anything.
+ */
+export function drainText(guard: GuardConfig, facts: Facts, account?: string | null): string | undefined {
+  const d = guard.drain
+  const w = facts.windows.week
+  if (!d || !guard.on || !w || w.resetsAt === undefined) return undefined
+  const until = w.resetsAt * 1000 - facts.nowMs
+  if (until <= 0 || until > d.within * 1000 || w.left < d.left) return undefined
+  // What a week stop rule in force for this account, now or later this week, keeps back.
+  const keeps = guard.rules.filter(r => r.window === 'week' && r.stop && !r.pace && inScope(guard, r, facts)
+    && (r.unlessResetWithin === undefined || until > r.unlessResetWithin * 1000)).map(r => r.left)
+  const keep = keeps.length ? Math.max(...keeps) : 0
+  const who = account ? `${accountIdentity(account)} has` : 'This account has'
+  const reset = resetWords(w.resetsAt, facts.nowMs, facts.offsetMinutes ?? 0)
+  return `${who} ${pct(w.left)} of its week left, and it resets at ${reset}. It's yours to use${keep ? `: g-line keeps only the last ${pct(keep)}` : ''}.`
 }

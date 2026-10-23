@@ -119,7 +119,7 @@ export function receiptEvents(r: Receipt): Part[] {
   if (r.servedBy) events.push({ tone: 'bad', text: `answered by ${modelName(r.servedBy)}` })
   // What the guard changed on this turn, by the person's own rules.
   const ended = r.guardEnded?.pace
-    ? `ended the turn, ahead of pace: ${Math.round(r.guardEnded.pace.used)}% of the week used, ${Math.round(r.guardEnded.pace.allowed)}% allowed`
+    ? `ended the turn, ahead of pace: ${Math.round(r.guardEnded.pace.used)}% of the ${r.guardEnded.window === '5h' ? '5h' : 'week'} used, ${Math.round(r.guardEnded.pace.allowed)}% allowed`
     : r.guardEnded ? `ended the turn, ${Math.max(0, Math.round(r.guardEnded.left))}% ${r.guardEnded.window} left` : ''
   const guard = [ended,
     r.guardEffort ? `effort ${r.guardEffort.to}` : '', r.guardAgents ? `${plural(r.guardAgents, 'agent')} on a cheaper model` : '']

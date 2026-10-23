@@ -401,6 +401,36 @@ for the team. It resets at Sat 10:00, in 4d 1h.` The rule takes the same `groups
 `agents` or `stop` of its own. `reserve` is 0 to 50, `burst` 0 to `100 - reserve`,
 `office_weight` 0.1 to 20, and the `tiers` rise.
 
+**Pace a 5-hour window instead** (`"window": "5h"` on a `pace` rule, 0.16.0). The allowance then
+rises from `burst` to `100 - reserve` across the five hours before the 5-hour reset, so a seat
+isn't spent in its first hour. With `hours`, it paces only then: in office hours a shared seat
+lasts the day, and outside them it's yours to spend.
+
+```json
+{ "groups": ["team", "other"], "window": "5h", "hours": "09:00-18:00 mon-fri", "tz": "Asia/Kuala_Lumpur",
+  "end_turn": true, "pace": { "reserve": 10, "burst": 15, "tiers": [0, 5, 10] } }
+```
+
+**The end of the week is for using** (`"drain": { "within": "48h", "left": 20 }` in `guard`,
+or `"drain": true`). With the weekly reset that close and that much left, g-line says so once
+per account and week (`team@example.com has 64% of its week left, and it resets at Sun 05:00,
+in 1d 19h. It's yours to use: g-line keeps only the last 2%.`), and line 2 reads
+`use it: 64% of the week left` while nothing holds the account back. A simple floor that
+loosens near the end pairs with it:
+
+```json
+{ "groups": ["team"], "window": "week", "left": 10, "stop": true, "unless_reset_within": "3d" },
+{ "groups": ["team"], "window": "week", "left": 2, "stop": true }
+```
+
+Times such as `unless_reset_within` take `d`, `h`, `m` and `s` (`3d`, `72h`, `1h30m`).
+
+**Change it yourself.** Every rule lives in `~/.config/g-line/config.json` under `guard`. Edit
+it and running sessions follow within 30 seconds; a mistake is named in a toast and that rule
+is left out, never half-applied. `/g-line guard why` shows what applies to this account now,
+`/g-line guard off here` frees the session you're in, and `/g-line guard pause 2h` frees the
+whole machine for a while.
+
 **Say why** (`/g-line guard why`). A toast gives the verdict and the pane lists the rest: the
 weekly and 5-hour figures, this account's group, each rule's state (for a pace rule, the used
 percent against what's allowed now and which step is in force), and about when the hold lifts.

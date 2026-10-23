@@ -1,5 +1,18 @@
 # Changelog
 
+## 0.16.0 (2026-10-23): pace the working day, and use the end of the week
+
+- **A pace rule can pace the 5-hour window** (`"window": "5h"`): the allowance rises across the
+  five hours instead of the week. With `hours`, it paces only in those hours, so a shared seat
+  lasts the office day and is free to spend outside it. The words follow the window
+  (`ahead of pace: 45% of the 5-hour window used, 22% allowed by now`).
+- **`drain`** in `guard`: in the last 48 hours of a week with 20% or more left (both yours to
+  set), g-line says once that it's there to use, with what the guard still keeps back, and line 2
+  reads `use it: 64% of the week left`.
+- Times take days (`"unless_reset_within": "3d"`), and a rule reads `unless it resets within 3d`
+  rather than in minutes.
+- The README has a short "Change it yourself".
+
 ## 0.15.0 (2026-10-23): see usage spent on another machine
 
 - Usage spent in a session on another machine never reached this one, so `5h` and `week` read

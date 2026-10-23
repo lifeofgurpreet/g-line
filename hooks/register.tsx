@@ -38,7 +38,7 @@ import {
 import type { PulseFeed, PulseItem, Shown } from './pulse'
 import { gitSegmentOf } from './core'
 import {
-  AGENT_TYPE_MODELS, accountIdentity, accountKey, agentModel, cappedEffort, changeText, effortKeepsCache, bridgeDue, endText, epochOf, evaluate, groupOf, guardForms, liftsAt, inForceText, leaseFree, namesAccounts, readBack, ruleText, simulated, stopText,
+  AGENT_TYPE_MODELS, accountIdentity, accountKey, agentModel, cappedEffort, changeText, drainText, effortKeepsCache, bridgeDue, endText, epochOf, evaluate, groupOf, guardForms, liftsAt, inForceText, leaseFree, namesAccounts, readBack, ruleText, simulated, stopText,
   resumeAt, warmDue, warmForms, whyLines,
 } from './guard'
 import type { Effort, Facts, Simulation, Verdict, WindowName } from './guard'
@@ -883,6 +883,7 @@ async function heartbeat($: EngineInterface): Promise<void> {
   await refreshUsage($)
   await shareLimits($)
   await guardNow($).catch(() => undefined)
+  await drainNudge($).catch(() => undefined)
   await queueTick($).catch(() => undefined)
   await keepWarm($).catch(() => undefined)
   await heartbeatRoster($)
@@ -1441,6 +1442,27 @@ async function pausedFor($: EngineInterface): Promise<number> {
   return Math.max(0, (pausedUntil - (await nowMs($))) / 1000)
 }
 
+/** Line 2's `use it: 64% of the week left` near the weekly reset, while nothing holds the account back. */
+async function drainSegment($: EngineInterface): Promise<Segment | undefined> {
+  if (!config.guard.drain || offHere) return undefined
+  const at = await nowMs($)
+  const s = await read($, snap)
+  if (!drainText(config.guard, factsOf(s, at))) return undefined
+  const left = 100 - (s.rateLimits?.find(l => l.kind === 'seven_day')?.percentUsed ?? 100)
+  return { key: 'guard', priority: 40, tone: 'ok', forms: [`use it: ${Math.round(left)}% of the week left`, `use ${Math.round(left)}% wk`] }
+}
+
+/** Near the weekly reset with plenty left: says once per account and week that it's there to use. */
+async function drainNudge($: EngineInterface): Promise<void> {
+  if (!config.guard.drain) return
+  const at = await nowMs($)
+  const s = await read($, snap)
+  const account = config.accountCommand ? s.account : undefined
+  const text = drainText(config.guard, factsOf(s, at), account)
+  const reset = s.rateLimits?.find(l => l.kind === 'seven_day')?.resetsAt
+  if (text && reset && (await once($, `drain:${accountKey(s.account)}:${reset}`))) await toast($, `g-line: ${text}`, 15_000)
+}
+
 /** Whether the rules wait: a pause on this machine, or `off here` in this session. */
 async function heldBack($: EngineInterface): Promise<boolean> {
   return offHere || (await pausedFor($)) > 0
@@ -1466,7 +1488,7 @@ async function guardNow($: EngineInterface): Promise<Verdict> {
 
 /** The guard's segment for line 2 and the footer: what's in force, or that it's paused. */
 async function guardSegment($: EngineInterface): Promise<Segment | undefined> {
-  if (!verdict.rules.length) return undefined
+  if (!verdict.rules.length) return drainSegment($)
   const at = await nowMs($)
   // When the hold lets go on its own: a pace step's lift or the end of the rule's hours, else the reset.
   const lift = verdict.stop ? liftsAt(verdict.stop, at, offsetAt(at)) : undefined

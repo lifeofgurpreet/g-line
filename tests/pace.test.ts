@@ -1,7 +1,7 @@
 import { expect, test } from 'claude-code/testing'
 
 import {
-  changeText, epochOf, evaluate, guardForms, liftsAt, paceAllowance, paceCalendar, paceFraction, paceRead, paceWords, parseGuard, parseHours,
+  changeText, drainText, epochOf, evaluate, guardForms, liftsAt, paceAllowance, paceCalendar, paceFraction, paceRead, paceWords, parseGuard, parseHours,
   ruleText, seconds, stopText, tokenCount, whyLines, accountKey, leaseFree, resumeAt, warmDue, KEEP_WARM_DEFAULTS,
 } from '../hooks/guard'
 import type { Facts, GuardConfig, Pace, WarmFacts } from '../hooks/guard'
@@ -52,7 +52,7 @@ test('pace config: the example parses, with its defaults; a bad one is left out 
     { pace: { agents: 'gpt' } },
     { pace: 'yes' },
     { pace: {}, left: 10 },
-    { pace: {}, window: '5h' },
+    { pace: {}, window: 'day' },
     { pace: {}, stop: true },
   ] })
   expect(bad.rules).toEqual([])
@@ -300,4 +300,45 @@ test('0.12.0 validation: a malformed rule is left out whole, never half-read int
   expect(leaseFree({ holder: 'a', until: Number.NaN }, 'b', 1000)).toBe(true)
   expect(resumeAt([{ kind: 'five_hour', percentUsed: 100, resetsAt: Number.NaN }], 1000, 0)).toBeUndefined()
   expect(accountKey('a@example.com')).toBe('a@example.com')
+})
+
+test('a pace rule can pace the 5-hour window in office hours: the allowance grows across the five hours', () => {
+  const g = parseGuard({ rules: [{ window: '5h', hours: '09:00-18:00 mon-fri', tz: KL, end_turn: true,
+    pace: { reserve: 10, burst: 15, tiers: [0, 5, 10] } }] })
+  expect(g.errors).toEqual([])
+  const rule = g.rules[0]!
+  expect(rule.window).toBe('5h')
+  const reset = MON_9 / 1000 + 4 * 3600
+  const five = (used: number, nowMs = MON_9, resetsAt = reset): Facts => ({ nowMs, windows: { '5h': { left: 100 - used, resetsAt } }, account: 'team@example.com', offsetMinutes: 0 })
+  // An hour into the window: 15 + 75 x 1/5 = 30% allowed.
+  const p = paceRead(rule.pace!, { left: 70, resetsAt: reset }, MON_9)
+  near(p!.allowed, 30)
+  expect(p!.window).toBe('5h')
+  expect(evaluate(g, five(25)).rules).toEqual([])
+  const stopped = evaluate(g, five(45))
+  expect(stopped.stop?.pace?.tier).toBe(3)
+  expect(paceWords(stopped.stop!.pace!)).toBe('ahead of pace: 45% of the 5-hour window used, 30% allowed by now')
+  expect(guardForms(stopped, undefined, '10:30')?.forms[0]).toBe('guard: over pace, 45% of the 5h used till ~10:30')
+  // It lets go well inside the window, as the allowance grows, not at the week's reset.
+  expect(stopped.stop!.pace!.liftsAt! - MON_9).toBeLessThan(2 * HOUR)
+  // Outside office hours the rule waits: Saturday, the same reading goes through.
+  const sat = MON_9 + 5 * 24 * HOUR
+  expect(evaluate(g, five(45, sat, sat / 1000 + 4 * 3600)).stop).toBeUndefined()
+})
+
+test('near the weekly reset, what is left is there to use: said with what the guard still keeps back', () => {
+  const g = parseGuard({ groups: { team: ['team@'] }, drain: { within: '48h', left: 20 }, rules: [
+    { groups: ['team', 'other'], window: 'week', left: 10, stop: true, unless_reset_within: '72h' },
+    { groups: ['team', 'other'], window: 'week', left: 2, stop: true }] })
+  expect(g.errors).toEqual([])
+  const facts = (left: number, hoursToReset: number, account = 'team@example.com'): Facts =>
+    ({ nowMs: MON_9, windows: { week: { left, resetsAt: MON_9 / 1000 + hoursToReset * 3600 } }, account, offsetMinutes: 0 })
+  expect(drainText(g, facts(64, 40), 'team@example.com')).toMatch(/^team@example\.com has 64% of its week left, and it resets at .+\. It's yours to use: g-line keeps only the last 2%\.$/)
+  // Too early, or too little left: nothing.
+  expect(drainText(g, facts(64, 60))).toBeUndefined()
+  expect(drainText(g, facts(15, 40))).toBeUndefined()
+  // Off without the setting; true takes 48h and 20%.
+  expect(drainText(parseGuard({ rules: [] }), facts(64, 40))).toBeUndefined()
+  expect(parseGuard({ drain: true }).drain).toEqual({ within: 172_800, left: 20 })
+  expect(parseGuard({ drain: { within: 'soon' } }).errors.length).toBe(1)
 })
