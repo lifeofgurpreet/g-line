@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-23T14:19:57Z",
+ "generated_at": "2026-10-23T14:51:44Z",
  "items": [
   {
    "title": "Sources: OpenAI nears an up to $30B round led by investors from the UAE and Coatue at a $1.25T pre-…",
@@ -17,7 +17,7 @@
    "published_at": "2026-10-22T22:01:06Z",
    "text": "New on our Frontier Red Team blog: using Claude to formally verify software at large scale. Formal verification can prove that code is free of certain bugs, but historically it has only been feasible for small codebases (or required a lot of expert time). With AI models,…",
    "author_name": "Anthropic",
-   "likes": 7613,
+   "likes": 7737,
    "story": "Anthropic says it partnered with Theorem to use Claude to formally prove useful security properties at the assembly code level across 123 open-source libraries"
   },
   {
@@ -34,15 +34,15 @@
    "published_at": "2026-10-22T18:17:10Z",
    "text": "Agent Skills started as an experiment in Claude Code. Many across the industry have come to adopt it, so we at Anthropic found it more fitting to donate it to the @AgenticAIFdn, next to MCP.",
    "author_name": "Boris Cherny",
-   "likes": 2058,
+   "likes": 2085,
    "story": "Anthropic donates the Agent Skills open standard to the Agentic AI Foundation and says 70+ platforms have integrated it, after donating MCP to the AAIF in 2025"
   },
   {
-   "title": "a16z rebrands “a16z Crypto” as “a16z Frontier” and expands the $2.2B fund's scope to back startups…",
-   "url": "https://fortune.com/2026/10/22/venture-giant-andreessen-horowitz-crypto-name-blockchain-fund-rebrands-a16z-frontier/",
-   "source": "Camila Grigera Naón / Fortu…",
-   "published_at": "2026-10-22T23:06:52Z",
-   "text": "a16z rebrands “a16z Crypto” as “a16z Frontier” and expands the $2.2B fund's scope to back startups developing AI, robotics, and other emerging technologies. In 2018, Andreessen Horowitz made a splash in the venture capital world by launching a spin-off dedicated to digital assets called a16z Crypto.",
+   "title": "OpenAI suspected the three fired researchers of leaking internal model designs to AI safety researc…",
+   "url": "https://www.wsj.com/tech/ai/the-signal-chats-that-cost-openai-researchers-their-jobs-594c5853?st=H9AUaC&reflink=desktopwebshare_permalink",
+   "source": "Wall Street Journal",
+   "published_at": "2026-10-23T02:51:59Z",
+   "text": "OpenAI suspected the three fired researchers of leaking internal model designs to AI safety researcher Ryan Greenblatt, including via disappearing Signal chats. The company fired three safety researchers for mishandling sensitive information. They had been fighting to keep the workings …",
    "via": "Techmeme"
   },
   {
@@ -50,8 +50,8 @@
    "url": "https://www.sverigesradio.se/artikel/chat-gpt-och-claude-forbjuder-regeringskansliet",
    "source": "Hacker News",
    "published_at": "2026-10-23T11:39:54Z",
-   "text": "194 points and 79 comments on Hacker News.",
-   "points": 194,
+   "text": "217 points and 84 comments on Hacker News.",
+   "points": 217,
    "discussion": "https://news.ycombinator.com/item?id=50207405"
   },
   {
@@ -61,7 +61,7 @@
    "published_at": "2026-10-22T15:41:24Z",
    "text": "💥 Introducing Warp Sciences, a new company applying AI and robotics to help the world develop new medicines faster. We’ve raised a $215M Series A led by @lightspeedvp to bring frontier AI out of the browser and into the lab, and build scientific capacity here in America. I…",
    "author_name": "Kevin Weil 🇺🇸",
-   "likes": 2180,
+   "likes": 2188,
    "story": "Warp Sciences, founded by former OpenAI CPO Kevin Weil to speed up drug development using AI, emerges from stealth with $215M at an $865M post-money valuation"
   },
   {
@@ -79,31 +79,12 @@
    "text": "My latest vibe coded game experiment is a Command & Conquer style RTS (Real Time Strategy) game called Battle Drones ( play it here ). Unlike my previous experiments , this one is actually fun to play . I'm somewhat embarrassed to admit that I got there by telling Claude to \"Make it a LOT more fun\". It also supports multiplayer between nearby devices using audio to synchronize game state! Here's what I've built so far, and some of the things I learned along the way."
   },
   {
-   "title": "The US Treasury proposes a rule to crack down on US high-tech investments in areas like AI and supe…",
-   "url": "https://apnews.com/article/treasury-china-tech-investments-rule-b742c292ff8eb19e6a4c8cf03d4d66b9",
-   "source": "Associated Press",
-   "published_at": "2026-10-23T01:11:10Z",
-   "text": "The US Treasury proposes a rule to crack down on US high-tech investments in areas like AI and supercomputing in China, Russia, and other “countries of concern”. The U.S. Treasury Department proposed a rule Thursday to crack down on American high-tech investments such as supercomputing …",
+   "title": "OpenAI makes Decisions API, its Jev competitor, generally available with new voice and visual modal…",
+   "url": "https://techcrunch.com/2026/10/22/openai-makes-its-jev-competitor-widely-available-as-decision-model-competition-heats-up/",
+   "source": "Tim Fernholz / TechCrunch",
+   "published_at": "2026-10-23T13:26:05Z",
+   "text": "OpenAI makes Decisions API, its Jev competitor, generally available with new voice and visual modalities, at $0.10/1M input tokens and no output-token charges. OpenAI made its Decisions API model widely available to users for the first time, entering the market for fast …",
    "via": "Techmeme"
-  },
-  {
-   "title": "This is insane. We cannot allow AI agents to go into your bank account and act independently withou…",
-   "url": "https://x.com/SenSanders/status/2113339331058233433",
-   "source": "𝕏 @SenSanders",
-   "published_at": "2026-10-22T18:38:55Z",
-   "text": "This is insane. We cannot allow AI agents to go into your bank account and act independently without your authorization. But that is what’s happening right now. Left unchecked, AI could endanger the entire global financial system — including your bank account. Pause AI NOW!",
-   "author_name": "Sen. Bernie Sanders",
-   "likes": 10181,
-   "story": "Sources: US banks are restricting third-party AI agents from accessing customer accounts, after some agents appeared to act independently of users' instructions"
-  },
-  {
-   "title": "Every AI model has the same \"controversial\" take on humans",
-   "url": "https://www.modelcompare.ai/blog/ai-models-controversial-take-on-humans",
-   "source": "Hacker News",
-   "published_at": "2026-10-22T16:08:00Z",
-   "text": "525 points and 519 comments on Hacker News.",
-   "points": 525,
-   "discussion": "https://news.ycombinator.com/item?id=50197313"
   },
   {
    "title": "Grok Bot can now use your 1Password account. Approve the logins you want to share, and your Bot sig…",
@@ -112,8 +93,17 @@
    "published_at": "2026-10-22T18:13:41Z",
    "text": "Grok Bot can now use your 1Password account. Approve the logins you want to share, and your Bot signs in for you. This new integration is rolling out to users over the next few days.",
    "author_name": "Grok Bot",
-   "likes": 8743,
+   "likes": 8811,
    "story": "1Password passes $500M in ARR, up from $400M in November 2025, driven by enterprise AI coding assistants and agents, and launches 1Password for Agents"
+  },
+  {
+   "title": "Every AI model has the same \"controversial\" take on humans",
+   "url": "https://www.modelcompare.ai/blog/ai-models-controversial-take-on-humans",
+   "source": "Hacker News",
+   "published_at": "2026-10-22T16:08:00Z",
+   "text": "535 points and 528 comments on Hacker News.",
+   "points": 535,
+   "discussion": "https://news.ycombinator.com/item?id=50197313"
   },
   {
    "title": "🚨🚨ALERT: ANTHROPIC IS A/B TESTING USAGE LIMITS Many users on X are reporting LOWER usage limits rig…",
@@ -122,7 +112,7 @@
    "published_at": "2026-10-22T21:36:16Z",
    "text": "🚨🚨ALERT: ANTHROPIC IS A/B TESTING USAGE LIMITS Many users on X are reporting LOWER usage limits right now. THEY ARE NOT WRONG. We detected an A/B test going on that DECREASES your monthly API-value by ~20% while INCREASING your 5h usage limits by ~20%. This only affects SOME h…",
    "author_name": "SemiAnalysis",
-   "likes": 2778,
+   "likes": 2835,
    "story": "SemiAnalysis claims Anthropic is A/B Testing Usage Limits"
   },
   {
@@ -132,8 +122,18 @@
    "published_at": "2026-10-22T15:26:44Z",
    "text": "Two employees from METR and Redwood Research worked on premises at OpenAI for three weeks this summer in an embedded assessment pilot. This team evaluated the systems OpenAI was using to monitor for misalignment from internal agents. A brief write-up of their work is now public.",
    "author_name": "METR",
-   "likes": 1110,
+   "likes": 1116,
    "story": "METR says a pilot test of OpenAI's monitoring system found vulnerabilities, including an exploit that could have let AI agents hide hundreds of recent actions"
+  },
+  {
+   "title": "Introducing Canva Craft 🚀 Extraordinary image generation is now available to everyone, powered by o…",
+   "url": "https://x.com/canva/status/2113348707223753165",
+   "source": "𝕏 @canva",
+   "published_at": "2026-10-22T19:16:10Z",
+   "text": "Introducing Canva Craft 🚀 Extraordinary image generation is now available to everyone, powered by our first frontier model built specifically for design. With Craft, Canva is now the world's second most advanced AI lab for image generation on @DesignArena's global leaderboard.…",
+   "author_name": "Canva",
+   "likes": 2797,
+   "story": "Canva has released their own image generation model."
   }
  ],
  "sources": "curated, Techmeme, X (found via Techmeme, Reddit, the Internet Archive), Claude Code releases, Anthropic, Hacker News, Simon Willison"
