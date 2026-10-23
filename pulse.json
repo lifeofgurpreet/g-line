@@ -1,24 +1,24 @@
 {
  "schema": 1,
- "generated_at": "2026-10-23T16:57:59Z",
+ "generated_at": "2026-10-23T17:29:33Z",
  "items": [
   {
-   "title": "OpenAI suspected the three fired researchers of leaking internal model designs to AI safety researc…",
-   "url": "https://www.wsj.com/tech/ai/the-signal-chats-that-cost-openai-researchers-their-jobs-594c5853?st=H9AUaC&reflink=desktopwebshare_permalink",
-   "source": "Wall Street Journal",
-   "published_at": "2026-10-23T02:51:59Z",
-   "text": "OpenAI suspected the three fired researchers of leaking internal model designs to AI safety researcher Ryan Greenblatt, including via disappearing Signal chats. The company fired three safety researchers for mishandling sensitive information. They had been fighting to keep the workings …",
+   "title": "UK's AISI finds Mythos 5 kept targeting real people in a July cyber eval despite evidence they were…",
+   "url": "https://www.aisi.gov.uk/blog/investigating-alignment-failures-in-aisis-incident",
+   "source": "AI Security Institute",
+   "published_at": "2026-10-23T16:55:55Z",
+   "text": "UK's AISI finds Mythos 5 kept targeting real people in a July cyber eval despite evidence they were uninvolved, and other models make such attacks in simulation. We examine why Mythos 5 pursued an unsanctioned supply-chain attack and identify broader learnings about model behaviour and oversight.",
    "via": "Techmeme"
   },
   {
-   "title": "New on our Frontier Red Team blog: using Claude to formally verify software at large scale. Formal…",
-   "url": "https://x.com/AnthropicAI/status/2113390212911083894",
-   "source": "𝕏 @AnthropicAI",
-   "published_at": "2026-10-22T22:01:06Z",
-   "text": "New on our Frontier Red Team blog: using Claude to formally verify software at large scale. Formal verification can prove that code is free of certain bugs, but historically it has only been feasible for small codebases (or required a lot of expert time). With AI models,…",
-   "author_name": "Anthropic",
-   "likes": 8080,
-   "story": "Anthropic says it partnered with Theorem to use Claude to formally prove useful security properties at the assembly code level across 123 open-source libraries"
+   "title": "Introducing Kimi K3.1 Pro: our most capable 3T-class open-weight model. 🔹 1M-token context, 2.8T to…",
+   "url": "https://x.com/Kimi_Moonshot/status/2113680701770068067",
+   "source": "𝕏 @Kimi_Moonshot",
+   "published_at": "2026-10-23T17:15:24Z",
+   "text": "Introducing Kimi K3.1 Pro: our most capable 3T-class open-weight model. 🔹 1M-token context, 2.8T total / 104B active params (MoE), Multimodal. 🔹 Full-project coding: games in Unreal, Unity & Godot. 🔹 Excels at parametric 3D modeling in Blender & CAD. 🔹 More reliable at htt…",
+   "author_name": "Kimi.ai",
+   "likes": 1738,
+   "story": "Kimi 3.1 and 2.8 preview"
   },
   {
    "title": "Claude Code 2.1.309 released",
@@ -28,21 +28,21 @@
    "text": "Fixed sandboxed Bash commands on macOS and Linux running the shell's startup files outside the sandbox before each command · Fixed macOS sandbox denyWrite glob patterns not applying at a path's real location when the pattern's folder is reached through a symlink · Fixed sandboxed commands and auto-accepted edits being able to modify the MCP config file passed with --mcp-config · Fixed a disabled MCP server being reconnected by a later permission prompt in print and SDK sessions"
   },
   {
-   "title": "Agent Skills started as an experiment in Claude Code. Many across the industry have come to adopt i…",
-   "url": "https://x.com/bcherny/status/2113333859907747871",
-   "source": "𝕏 @bcherny",
-   "published_at": "2026-10-22T18:17:10Z",
-   "text": "Agent Skills started as an experiment in Claude Code. Many across the industry have come to adopt it, so we at Anthropic found it more fitting to donate it to the @AgenticAIFdn, next to MCP.",
-   "author_name": "Boris Cherny",
-   "likes": 2160,
-   "story": "Anthropic donates the Agent Skills open standard to the Agentic AI Foundation and says 70+ platforms have integrated it, after donating MCP to the AAIF in 2025"
+   "title": "New on our Frontier Red Team blog: using Claude to formally verify software at large scale. Formal…",
+   "url": "https://x.com/AnthropicAI/status/2113390212911083894",
+   "source": "𝕏 @AnthropicAI",
+   "published_at": "2026-10-22T22:01:06Z",
+   "text": "New on our Frontier Red Team blog: using Claude to formally verify software at large scale. Formal verification can prove that code is free of certain bugs, but historically it has only been feasible for small codebases (or required a lot of expert time). With AI models,…",
+   "author_name": "Anthropic",
+   "likes": 8159,
+   "story": "Anthropic says it partnered with Theorem to use Claude to formally prove useful security properties at the assembly code level across 123 open-source libraries"
   },
   {
-   "title": "Sources: OpenAI nears an up to $30B round led by investors from the UAE and Coatue at a $1.25T pre-…",
-   "url": "https://www.cnbc.com/2026/10/22/openai-funding-round-uae-investors.html",
-   "source": "Kate Rooney / CNBC",
-   "published_at": "2026-10-22T20:24:16Z",
-   "text": "Sources: OpenAI nears an up to $30B round led by investors from the UAE and Coatue at a $1.25T pre-money valuation, as an “opportunistic” bridge ahead of an IPO. OpenAI is closing in on a funding round that could value the artificial intelligence giant at more than $1 trillion ahead …",
+   "title": "OpenAI suspected the three fired researchers of leaking internal model designs to AI safety researc…",
+   "url": "https://www.wsj.com/tech/ai/the-signal-chats-that-cost-openai-researchers-their-jobs-594c5853?st=H9AUaC&reflink=desktopwebshare_permalink",
+   "source": "Wall Street Journal",
+   "published_at": "2026-10-23T02:51:59Z",
+   "text": "OpenAI suspected the three fired researchers of leaking internal model designs to AI safety researcher Ryan Greenblatt, including via disappearing Signal chats. The company fired three safety researchers for mishandling sensitive information. They had been fighting to keep the workings …",
    "via": "Techmeme"
   },
   {
@@ -50,19 +50,19 @@
    "url": "https://www.sverigesradio.se/artikel/chat-gpt-och-claude-forbjuder-regeringskansliet",
    "source": "Hacker News",
    "published_at": "2026-10-23T11:39:54Z",
-   "text": "300 points and 112 comments on Hacker News.",
-   "points": 300,
+   "text": "301 points and 112 comments on Hacker News.",
+   "points": 301,
    "discussion": "https://news.ycombinator.com/item?id=50207405"
   },
   {
-   "title": "Grok Bot can now use your 1Password account. Approve the logins you want to share, and your Bot sig…",
-   "url": "https://x.com/bot/status/2113332983226831339",
-   "source": "𝕏 @bot",
-   "published_at": "2026-10-22T18:13:41Z",
-   "text": "Grok Bot can now use your 1Password account. Approve the logins you want to share, and your Bot signs in for you. This new integration is rolling out to users over the next few days.",
-   "author_name": "Grok Bot",
-   "likes": 9066,
-   "story": "1Password passes $500M in ARR, up from $400M in November 2025, driven by enterprise AI coding assistants and agents, and launches 1Password for Agents"
+   "title": "Agent Skills started as an experiment in Claude Code. Many across the industry have come to adopt i…",
+   "url": "https://x.com/bcherny/status/2113333859907747871",
+   "source": "𝕏 @bcherny",
+   "published_at": "2026-10-22T18:17:10Z",
+   "text": "Agent Skills started as an experiment in Claude Code. Many across the industry have come to adopt it, so we at Anthropic found it more fitting to donate it to the @AgenticAIFdn, next to MCP.",
+   "author_name": "Boris Cherny",
+   "likes": 2182,
+   "story": "Anthropic donates the Agent Skills open standard to the Agentic AI Foundation and says 70+ platforms have integrated it, after donating MCP to the AAIF in 2025"
   },
   {
    "title": "Open call for guest investigators in the life sciences",
@@ -79,12 +79,31 @@
    "text": "My latest vibe coded game experiment is a Command & Conquer style RTS (Real Time Strategy) game called Battle Drones ( play it here ). Unlike my previous experiments , this one is actually fun to play . I'm somewhat embarrassed to admit that I got there by telling Claude to \"Make it a LOT more fun\". It also supports multiplayer between nearby devices using audio to synchronize game state! Here's what I've built so far, and some of the things I learned along the way."
   },
   {
-   "title": "OpenAI makes Decisions API, its Jev competitor, generally available with new voice and visual modal…",
-   "url": "https://techcrunch.com/2026/10/22/openai-makes-its-jev-competitor-widely-available-as-decision-model-competition-heats-up/",
-   "source": "Tim Fernholz / TechCrunch",
-   "published_at": "2026-10-23T13:26:05Z",
-   "text": "OpenAI makes Decisions API, its Jev competitor, generally available with new voice and visual modalities, at $0.10/1M input tokens and no output-token charges. OpenAI made its Decisions API model widely available to users for the first time, entering the market for fast …",
+   "title": "Sources: OpenAI nears an up to $30B round led by investors from the UAE and Coatue at a $1.25T pre-…",
+   "url": "https://www.cnbc.com/2026/10/22/openai-funding-round-uae-investors.html",
+   "source": "Kate Rooney / CNBC",
+   "published_at": "2026-10-22T20:24:16Z",
+   "text": "Sources: OpenAI nears an up to $30B round led by investors from the UAE and Coatue at a $1.25T pre-money valuation, as an “opportunistic” bridge ahead of an IPO. OpenAI is closing in on a funding round that could value the artificial intelligence giant at more than $1 trillion ahead …",
    "via": "Techmeme"
+  },
+  {
+   "title": "Grok Bot can now use your 1Password account. Approve the logins you want to share, and your Bot sig…",
+   "url": "https://x.com/bot/status/2113332983226831339",
+   "source": "𝕏 @bot",
+   "published_at": "2026-10-22T18:13:41Z",
+   "text": "Grok Bot can now use your 1Password account. Approve the logins you want to share, and your Bot signs in for you. This new integration is rolling out to users over the next few days.",
+   "author_name": "Grok Bot",
+   "likes": 9121,
+   "story": "1Password passes $500M in ARR, up from $400M in November 2025, driven by enterprise AI coding assistants and agents, and launches 1Password for Agents"
+  },
+  {
+   "title": "LLMs are making formal software verification feasible at a much larger scale",
+   "url": "https://www.anthropic.com/research/formal-verification",
+   "source": "Hacker News",
+   "published_at": "2026-10-22T22:54:43Z",
+   "text": "420 points and 256 comments on Hacker News.",
+   "points": 420,
+   "discussion": "https://news.ycombinator.com/item?id=50202217"
   },
   {
    "title": "🚨🚨ALERT: ANTHROPIC IS A/B TESTING USAGE LIMITS Many users on X are reporting LOWER usage limits rig…",
@@ -93,17 +112,8 @@
    "published_at": "2026-10-22T21:36:16Z",
    "text": "🚨🚨ALERT: ANTHROPIC IS A/B TESTING USAGE LIMITS Many users on X are reporting LOWER usage limits right now. THEY ARE NOT WRONG. We detected an A/B test going on that DECREASES your monthly API-value by ~20% while INCREASING your 5h usage limits by ~20%. This only affects SOME h…",
    "author_name": "SemiAnalysis",
-   "likes": 2944,
+   "likes": 2964,
    "story": "SemiAnalysis claims Anthropic is A/B Testing Usage Limits"
-  },
-  {
-   "title": "LLMs are making formal software verification feasible at a much larger scale",
-   "url": "https://www.anthropic.com/research/formal-verification",
-   "source": "Hacker News",
-   "published_at": "2026-10-22T22:54:43Z",
-   "text": "410 points and 249 comments on Hacker News.",
-   "points": 410,
-   "discussion": "https://news.ycombinator.com/item?id=50202217"
   },
   {
    "title": "Two employees from METR and Redwood Research worked on premises at OpenAI for three weeks this summ…",
@@ -112,25 +122,16 @@
    "published_at": "2026-10-22T15:26:44Z",
    "text": "Two employees from METR and Redwood Research worked on premises at OpenAI for three weeks this summer in an embedded assessment pilot. This team evaluated the systems OpenAI was using to monitor for misalignment from internal agents. A brief write-up of their work is now public.",
    "author_name": "METR",
-   "likes": 1123,
+   "likes": 1127,
    "story": "METR says a pilot test of OpenAI's monitoring system found vulnerabilities, including an exploit that could have let AI agents hide hundreds of recent actions"
   },
   {
-   "title": "An interview with Intel's leadership, including CTO Pushkar Ranade, on AI chip demand, lessons from…",
-   "url": "https://www.dwarkesh.com/p/intel-tour",
-   "source": "Dwarkesh Patel / Dwarkesh P…",
-   "published_at": "2026-10-23T11:46:09Z",
-   "text": "An interview with Intel's leadership, including CTO Pushkar Ranade, on AI chip demand, lessons from 10nm, whether Intel can catch up to TSMC, Terafab, and more. What I learned from touring Intel's most advanced fab and talking to its leadership. — I spent two days touring Intel's …",
+   "title": "OpenAI makes Decisions API, its Jev competitor, generally available with new voice and visual modal…",
+   "url": "https://techcrunch.com/2026/10/22/openai-makes-its-jev-competitor-widely-available-as-decision-model-competition-heats-up/",
+   "source": "Tim Fernholz / TechCrunch",
+   "published_at": "2026-10-23T13:26:05Z",
+   "text": "OpenAI makes Decisions API, its Jev competitor, generally available with new voice and visual modalities, at $0.10/1M input tokens and no output-token charges. OpenAI made its Decisions API model widely available to users for the first time, entering the market for fast …",
    "via": "Techmeme"
-  },
-  {
-   "title": "Every AI model has the same \"controversial\" take on humans",
-   "url": "https://www.modelcompare.ai/blog/ai-models-controversial-take-on-humans",
-   "source": "Hacker News",
-   "published_at": "2026-10-22T16:08:00Z",
-   "text": "585 points and 558 comments on Hacker News.",
-   "points": 585,
-   "discussion": "https://news.ycombinator.com/item?id=50197313"
   }
  ],
  "sources": "curated, Techmeme, X (found via Techmeme, Reddit, the Internet Archive), Claude Code releases, Anthropic, Hacker News, Simon Willison"
