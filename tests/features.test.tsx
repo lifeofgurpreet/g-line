@@ -1776,3 +1776,46 @@ test('the agents rule leaves an agent type alone until it knows what that type r
   await spawn($, 'general-purpose')
   expect(seen.models).toEqual([undefined, 'sonnet'])
 })
+
+test('0.12.0: a paced week holds a prompt ahead of pace, says so in plain words, and /g-line guard why lists the figures', { timeoutMs: 30_000 }, async ($, on) => {
+  const w = world(on)
+  w.config = { guard: { rules: [{ pace: { reserve: 10, burst: 8 } }] } }
+  const seen = engineBelow(on)
+  await start($)
+  // Two days into the week, 60% used: 8 + 82 x 2/7 = 31% is allowed by now.
+  const resetsAt = Math.floor(w.clock.now() / 1000) + 5 * 86_400
+  w.usage.limits = [{ kind: 'seven_day', percentUsed: 60, resetsAt: ISO(resetsAt) }]
+  await $.session.measure({ context: { tokens: 100_000, window: 1_000_000, percent: 10 }, rateLimits: w.usage.limits,
+    cost: { usd: 1 }, changed: ['rateLimits'] })
+  await w.clock.advance(15_000)
+  expect(w.toasts.some(t => t.startsWith('g-line guard: ahead of pace: 60% of the week used, 31% allowed by now: the conversation runs at effort medium, new subagents run on sonnet, new prompts stop.'))).toBe(true)
+  const refused = await $.prompt.submit(typed('go on'))
+  expect(refused.drop).toMatch(/^g-line held this prompt: Ahead of pace: 60% of the week used, 31% allowed by now\./)
+  await $.command.run({ command: 'g-line', args: 'guard why' } as never)
+  expect(w.toasts.some(t => t.startsWith('g-line guard: Held: new prompts stop. The hold lifts about '))).toBe(true)
+  // back on pace once the week has used little: the prompt goes through
+  w.usage.limits = [{ kind: 'seven_day', percentUsed: 20, resetsAt: ISO(resetsAt) }]
+  await $.session.measure({ context: { tokens: 100_000, window: 1_000_000, percent: 10 }, rateLimits: w.usage.limits,
+    cost: { usd: 1 }, changed: ['rateLimits'] })
+  expect(await $.prompt.submit(typed('go on now'))).toEqual({ text: 'go on now' })
+  expect(seen.prompts).toEqual(['go on now'])
+})
+
+test('0.12.0: a pass for one prompt belongs to the account it was given for: after a switch it lapses', { timeoutMs: 30_000 }, async ($, on) => {
+  const w = world(on)
+  w.config = { account_command: ['acct'], guard: { rules: [{ left: 10, stop: true }] } }
+  let who = 'first@example.com'
+  w.run = argv => (argv[0] === 'acct' ? { value: { exitCode: 0, stdout: `${who}\n`, stderr: '' } } : undefined)
+  const seen = engineBelow(on)
+  await start($)
+  await measure($, w, 96)
+  await w.clock.advance(15_000)
+  await $.command.run({ command: 'g-line', args: 'guard once' } as never)
+  who = 'second@example.com'
+  await w.clock.advance(10 * 60_000)
+  expect((await $.prompt.submit(typed('use the pass'))).drop).toBeDefined()
+  expect(w.toasts.some(t => t.includes('the pass for one prompt was for another account or window'))).toBe(true)
+  // a held prompt sent again on the new account goes, but a pass given there is its own
+  expect(await $.prompt.submit(typed('use the pass'))).toEqual({ text: 'use the pass' })
+  expect(seen.prompts).toEqual(['use the pass'])
+})

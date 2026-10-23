@@ -38,7 +38,7 @@ test('the README\'s rules parse; nothing is in force without rules, and a malfor
   const none = parseGuard(undefined)
   expect(evaluate(none, facts(1)).rules).toEqual([])
   const bad = parseGuard({ rules: [{ left: 120, stop: true }, { left: 10 }, { left: 10, stop: true, tz: 'Mars/Olympus' }, { left: 10, effort: 'turbo', stop: true }] })
-  expect(bad.rules.map(r => r.id)).toEqual(['r3'])
+  expect(bad.rules.map(r => r.id)).toEqual([])
   expect(bad.errors.length).toBe(4)
   expect(parseGuard({ keep_warm: true }).keepWarm).toEqual(KEEP_WARM_DEFAULTS)
   // keep-warm's timing is held to 10-55 minutes, and at most 6 re-reads.

@@ -37,8 +37,8 @@ import {
 import type { PulseFeed, PulseItem, Shown } from './pulse'
 import { gitSegmentOf } from './core'
 import {
-  AGENT_TYPE_MODELS, accountIdentity, accountKey, agentModel, cappedEffort, changeText, effortKeepsCache, bridgeDue, endText, evaluate, groupOf, guardForms, liftsAt, inForceText, leaseFree, namesAccounts, readBack, ruleText, simulated, stopText,
-  resumeAt, warmDue, warmForms,
+  AGENT_TYPE_MODELS, accountIdentity, accountKey, agentModel, cappedEffort, changeText, effortKeepsCache, bridgeDue, endText, epochOf, evaluate, groupOf, guardForms, liftsAt, inForceText, leaseFree, namesAccounts, readBack, ruleText, simulated, stopText,
+  resumeAt, warmDue, warmForms, whyLines,
 } from './guard'
 import type { Effort, Facts, Simulation, Verdict, WindowName } from './guard'
 import {
@@ -953,6 +953,9 @@ async function detailRows($: EngineInterface, seconds: number, columns?: number)
     }
     const k = config.guard.keepWarm
     if (k) rows.push({ key: 'g-warm', tone: 'dim', text: `keep-warm: after ${Math.round(k.after / 60)}m idle, up to ${k.max} times, ${tokens(k.minContext)}+ context${warmOff ? ' (off for this session)' : `, ${warmed} so far`}` })
+    if (config.guard.rules.length) {
+      for (const [i, line] of (await whyNow($)).entries()) rows.push({ key: `g-why-${i}`, tone: line.startsWith('Held:') ? 'bad' : 'dim', text: line })
+    }
     for (const error of config.guard.errors) rows.push({ key: `g-err-${error}`, tone: 'warn', text: `not read: ${error}` })
   }
   rows.push({ key: 'tz', tone: 'dim', text: `Times are ${config.tz ? `in ${config.tz} (${utcLabel(offsetAt(seconds * 1000))})` : `this machine's (${utcLabel(offsetAt(seconds * 1000))})`}; "tz" in config.json sets yours.` })
@@ -1243,13 +1246,13 @@ let verdict: Verdict = { active: {}, rules: [] }
 /** A paused guard lets everything through until then (ms); shared by every session on the machine. */
 const PAUSE_KEY = 'guard_pause'
 let pausedUntil = 0
-/** `/g-line guard once`: the next prompt in this session goes through. */
-let passOnce = false
+/** `/g-line guard once`: the next prompt in this session goes through, while the account and the window it was given for stand (`epochOf`). */
+let passOnce: string | undefined
 /** The typed prompt the guard last held, and when: sent again unchanged within HELD_AGAIN_MS, it goes through. */
-let heldPrompt: { text: string; at: number } | undefined
+let heldPrompt: { text: string; at: number; epoch: string } | undefined
 const HELD_AGAIN_MS = 3 * 60_000
 /** The typed prompt the guard holds to send when it lets go (`guard.queue`), and the cache re-reads made for it. */
-let queued: { text: string; at: number; key: string; bridges: number } | undefined
+let queued: { text: string; at: number; key: string; epoch: string; bridges: number } | undefined
 let bridging = false
 /**
  * Background agents the main loop started whose report hasn't come back. A
@@ -1351,7 +1354,7 @@ async function guardNow($: EngineInterface): Promise<Verdict> {
     simulation = undefined
     if (!(await read($, hidden))) $.ui.toast('g-line guard: the simulation ended; the real readings decide again.', { timeoutMs: 6000 })
   }
-  verdict = evaluate(config.guard, simulated(factsOf(await read($, snap), at), simulation), before.active)
+  verdict = evaluate(config.guard, simulated(factsOf(await read($, snap), at), simulation), before.active, before.memory)
   const change = changeText(before, verdict)
   if (change && !(await read($, hidden))) {
     const paused = await pausedFor($)
@@ -1386,25 +1389,29 @@ async function guardPrompt($: EngineInterface, e: { origin: { kind: string }; co
   if (person && e.command) return undefined
   if (!person && (e.turnId || report)) return undefined
   if ((await pausedFor($)) > 0) return undefined
+  const s = await read($, snap)
+  // A pass, or a prompt sent again, is for the account and the window it was held in: another account, or a new window, is a new decision.
+  const epoch = epochOf(s.account, v.stop)
   if (person && passOnce) {
-    passOnce = false
-    return undefined
+    const fits = passOnce === epoch
+    passOnce = undefined
+    if (fits) return undefined
+    if (!(await read($, hidden))) $.ui.toast('g-line guard: the pass for one prompt was for another account or window, so it lapsed.', { timeoutMs: 6000 })
   }
   const at = await nowMs($)
   const typed = typeof e.text === 'string' ? e.text.trim() : ''
   // The person sent the held prompt again, unchanged: their call, it goes.
-  if (person && typed && heldPrompt?.text === typed && at - heldPrompt.at < HELD_AGAIN_MS) {
+  if (person && typed && heldPrompt?.text === typed && heldPrompt.epoch === epoch && at - heldPrompt.at < HELD_AGAIN_MS) {
     heldPrompt = undefined
     if (!(await read($, hidden))) $.ui.toast(`g-line sent it anyway, with ${Math.max(0, Math.round(v.stop.left))}% of the ${v.stop.window === '5h' ? '5-hour' : 'weekly'} window left.`, { timeoutMs: 6000 })
     return undefined
   }
-  if (person) heldPrompt = typed ? { text: typed, at } : undefined
-  const s = await read($, snap)
+  if (person) heldPrompt = typed ? { text: typed, at, epoch } : undefined
   const account = config.accountCommand ? s.account : undefined
   let plan: { at?: string; cache?: 'warm' | 'bridge' | 'cold' } | undefined
   if (person && typed && config.guard.queue) {
     if (queued && queued.text !== typed) $.ui.toast('g-line: this prompt replaces the one it was holding.', { timeoutMs: 6000 })
-    queued = { text: typed, at, key: accountKey(s.account), bridges: queued?.text === typed ? queued.bridges : 0 }
+    queued = { text: typed, at, key: accountKey(s.account), epoch, bridges: queued?.text === typed ? queued.bridges : 0 }
     const lift = liftsAt(v.stop, at, offsetAt(at))
     const expires = payload(s, at / 1000, ttl, idle).prompt_cache?.expires_at ?? undefined
     const cache = expires === undefined || lift === undefined ? undefined
@@ -1572,6 +1579,11 @@ async function queueTick($: EngineInterface): Promise<void> {
     $.ui.toast('g-line dropped the prompt it was holding: the account changed.', { timeoutMs: 8000 })
     return
   }
+  if (v.stop && epochOf(s.account, v.stop) !== q.epoch) {
+    queued = undefined
+    $.ui.toast('g-line dropped the prompt it was holding: it was held for another window, and the guard has held you for a new one.', { timeoutMs: 8000 })
+    return
+  }
   if (!v.stop || (await pausedFor($)) > 0) {
     queued = undefined
     try {
@@ -1651,13 +1663,28 @@ async function simulate($: EngineInterface, window?: '5h' | 'week', used?: numbe
   await update($, tick, n => n + 1)
 }
 
+/** What `/g-line guard why` says, and the pane's guard section: the figures, each rule's state, the group, the pace allowance, when the hold lifts. */
+async function whyNow($: EngineInterface): Promise<string[]> {
+  const at = await nowMs($)
+  const facts = simulated(factsOf(await read($, snap), at), simulation)
+  return whyLines(config.guard, facts, verdict, { pausedFor: await pausedFor($), simulated: simulation !== undefined })
+}
+
 /** `/g-line guard …`: what's in force, a pass for one prompt, a pause, or the rules off and on. */
 async function guardCommandRun($: EngineInterface, action: string, pause?: number): Promise<void> {
   const v = await guardNow($)
   const none = !config.guard.rules.length && !config.guard.keepWarm
   if (action === 'once') {
-    passOnce = true
+    passOnce = v.stop ? epochOf((await read($, snap)).account, v.stop) : undefined
     $.ui.toast(v.stop ? 'g-line guard: your next prompt goes through.' : 'g-line guard: nothing is stopped now; the next prompt would have gone through anyway.', { timeoutMs: 6000 })
+    return
+  }
+  if (action === 'why') {
+    const lines = await whyNow($)
+    // The toast's three lines hold the verdict; the pane lists every figure and rule.
+    const head = lines.find(l => l.startsWith('Held:') || l.startsWith('In force:') || l.startsWith('Nothing is held')) ?? lines[0] ?? ''
+    $.ui.toast(`g-line guard: ${head} The pane lists the figures and each rule.`, { timeoutMs: 15_000 })
+    await openPane($, 'details')
     return
   }
   if (action === 'pause' || action === 'resume') {

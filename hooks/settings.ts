@@ -296,7 +296,7 @@ export type Command =
   | { kind: 'set'; setting: Setting; value: boolean | string | 'toggle' }
   | { kind: 'all'; value: boolean }
   | { kind: 'reset'; setting?: Setting }
-  | { kind: 'guard'; action: 'status' | 'once' | 'resume' | 'on' | 'off' | 'cancel' }
+  | { kind: 'guard'; action: 'status' | 'once' | 'resume' | 'on' | 'off' | 'cancel' | 'why' }
   | { kind: 'guard'; action: 'pause'; seconds: number }
   | { kind: 'guard'; action: 'simulate'; window: '5h' | 'week'; used: number }
   | { kind: 'guard'; action: 'simulate'; window?: undefined; used?: undefined }
@@ -352,7 +352,7 @@ export function parseCommand(args: string): Command {
   return { kind: 'error', text: `${setting.key} is one of ${setting.options.join(', ')}.` }
 }
 
-/** `/g-line guard [status|once|pause [30m]|resume|on|off]`. */
+/** `/g-line guard [status|why|once|pause [30m]|resume|on|off]`. */
 function guardCommand(rest: string[]): Command {
   const [action = 'status', ...more] = rest
   if (action === 'pause') {
@@ -370,8 +370,8 @@ function guardCommand(rest: string[]): Command {
     }
     return { kind: 'guard', action: 'simulate', window, used }
   }
-  if (more.length === 0 && (action === 'status' || action === 'once' || action === 'resume' || action === 'on' || action === 'off' || action === 'cancel')) {
+  if (more.length === 0 && (action === 'status' || action === 'once' || action === 'resume' || action === 'on' || action === 'off' || action === 'cancel' || action === 'why')) {
     return { kind: 'guard', action }
   }
-  return { kind: 'error', text: '/g-line guard, then once, pause [30m], resume, simulate 5h 96, cancel, on or off.' }
+  return { kind: 'error', text: '/g-line guard, then why, once, pause [30m], resume, simulate 5h 96, cancel, on or off.' }
 }

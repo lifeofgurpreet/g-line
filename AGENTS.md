@@ -35,7 +35,7 @@ coding agents and for people.
    rules the person wrote under `guard` in config.json, and with none it does nothing. It
    may lower the main conversation's effort for a whole turn (`turn.step`), start new
    subagents on a cheaper model (`agent.spawn`), refuse a prompt that would start a turn
-   (`prompt.submit`), with `end_turn`, end a running main-loop turn between steps, before its next
+   (`prompt.submit`; a `pace` rule steps through effort, cheaper agents and a stop by how far the week runs ahead of its allowance), with `end_turn`, end a running main-loop turn between steps, before its next
    request (`$.turn.abort`), re-read an idle cache (`$.model.fork`), and, with `resume`, send one
    prompt after a usage limit's reset (`$.prompt.submit`, one session per account). It never touches a tool
    call, a turn mid-step (`end_turn` waits for the step boundary and only a rule the person
@@ -60,7 +60,7 @@ coding agents and for people.
 | `hooks/extras.ts` | Pure: receipts (adaptive and fixed), agents, compaction forecast, the day ledger, the card, the coach |
 | `hooks/glance.ts` | Pure: the `status` tool's JSON snapshot |
 | `hooks/settings.ts` | Pure: the settings table (`SETTINGS`), defaults, `merge`, origins, and `/g-line`'s argument parser. Add a setting here and it gets a toggle, a command name and an origin |
-| `hooks/guard.ts` | Pure: the guard's rules (`parseGuard`, `evaluate` with thresholds, hysteresis, accounts, hours), what it may change (`cappedEffort`, `agentModel`), what it says, `simulated` readings, and keep-warm's limits (`warmDue`, `readBack`, the per-account lease) |
+| `hooks/guard.ts` | Pure: the guard's rules (`parseGuard`, `evaluate` with thresholds, paced weeks (`pace`, `paceRead`, `paceCalendar`), hysteresis, accounts, hours, `whyLines`, `epochOf`), what it may change (`cappedEffort`, `agentModel`), what it says, `simulated` readings, and keep-warm's limits (`warmDue`, `readBack`, the per-account lease) |
 | `hooks/roster.ts` | Pure: the other sessions on this machine from their heartbeats in the store (`rosterOf`), line 2's `2 others · 1 waiting`, the pane's rows |
 | `hooks/pulse.ts` | Pure: Pulse feed parsing, cleaning (escapes, controls, https only), the spinner ticker, the row under the prompt, the reader's paging, the cycle's rules (`pickNext`), and Claude Code's own rule for drawing links (`linksDrawn`) |
 | `tools/pulse/build_pulse.py` | Operator tooling, not the mod: builds the Pulse feed and pushes it to the `pulse` branch |

@@ -361,6 +361,45 @@ window.
 - **`hours`** (`09:00-17:00 mon-fri`, `22:00-06:00`, `9-17 sat,sun`) in **`tz`** (an IANA
   zone; the machine's own when left out).
 - **`groups`**: the rule applies to every account in these groups (see Account groups below).
+- **`pace`**: a paced week instead of `left` (see Pace a week below).
+
+**Pace a week** (`pace`, 0.12.0). A cliff rule waits until the last 10% and then stops; a team
+that shares a seat finds the weekly window gone by Friday all the same, because nothing slowed
+down on the way. A `pace` rule gives the week an allowance that opens up as the week goes by,
+and steps in when the account has used more than that:
+
+```json
+{ "groups": ["team", "other"], "end_turn": true,
+  "pace": { "reserve": 10, "burst": 8, "office": "09:00-18:00 mon-fri", "office_weight": 4, "tz": "Asia/Kuala_Lumpur" } }
+```
+
+The week runs from seven days before the weekly reset the engine reports, to that reset, so it
+follows your plan's own week, not Monday. The allowance is `burst` percent from the first
+minute, rising to `100 - reserve` percent by the reset. How fast it rises follows the clock:
+an hour in `office` hours counts `office_weight` times an hour outside them (the example's week
+has 45 office hours and 123 others, 303 weighted hours, so by Monday 09:00 about 15% of the
+rise is allowed, and by Friday 18:00 about 95%). Office hours are read in `tz`, daylight saving
+included. With no `office`, the allowance rises in a straight line.
+
+When the week's used percent plus `buffer` (2 points of slack for a coarse reading) passes the
+allowance, the rule steps down, one step at each of `tiers` points ahead (`[0, 3, 6]`):
+
+1. the conversation runs at `effort` (`medium`);
+2. new subagents also run on `agents` (`sonnet`);
+3. new prompts stop, and with `end_turn`, a running turn ends between steps.
+
+Inside the `reserve` plus the buffer, it stops whatever the pace. Each step lets go 2 points
+after it would have started, so it doesn't flicker, and only in the account and the window it
+began in. The words are plain: `g-line held this prompt: sam@example.com is in your team group,
+and ahead of pace: 62% of the week used, 48% allowed by now. g-line paces the week so it lasts
+for the team. It resets at Sat 10:00, in 4d 1h.` The rule takes the same `groups`, `accounts`,
+`except_accounts`, `hours` and `unless_reset_within` as any other, and no `left`, `effort`,
+`agents` or `stop` of its own. `reserve` is 0 to 50, `burst` 0 to `100 - reserve`,
+`office_weight` 0.1 to 20, and the `tiers` rise.
+
+**Say why** (`/g-line guard why`). A toast gives the verdict and the pane lists the rest: the
+weekly and 5-hour figures, this account's group, each rule's state (for a pace rule, the used
+percent against what's allowed now and which step is in force), and about when the hold lifts.
 
 **Queue a held prompt** (`"queue": true` in `guard`). Instead of handing your prompt back, g-line
 holds it and sends it itself as soon as the guard lets go: when the window resets, or when a
@@ -369,8 +408,10 @@ about 08:21`), line 2 adds `1 queued`, and `/g-line guard cancel` keeps it from 
 prompt cache would lapse before then, g-line re-reads it once, a few minutes before it would,
 so the prompt lands on a warm cache (at most twice, and only with room left in the window; a
 window that's used up can't be read from, and the refusal says the cache will be cold). Enter
-again still sends it straight away. A prompt you type that goes through, `/clear`, or an
-account change drops the held one.
+again still sends it straight away. A prompt you type that goes through, `/clear`, an
+account change, or a stop that comes back for a different window drops the held one. The same
+goes for `/g-line guard once` and Enter again: each is for the account and window the prompt was
+held in, and lapses if either has changed.
 
 #### Account groups
 
@@ -413,8 +454,8 @@ to five minutes there. A stop rule near the end keeps you off them, for example
 **You see what it does.** A toast says when a rule starts or stops. Line 2 says what's in force
 (`guard: effort medium, agents sonnet`, `guard: stopped, 4% 5h left`, `guard paused 52m`). A
 turn the guard changed says so on its closing line (`guard: effort medium, 1 agent on a
-cheaper model`). `/g-line guard` says what's in force, and the `/g-line` pane shows every
-rule as written. `/g-line guard off` turns your rules off until `/g-line guard on`.
+cheaper model`). `/g-line guard` says what's in force, `/g-line guard why` the figures behind
+it, and the `/g-line` pane shows every rule as written. `/g-line guard off` turns your rules off until `/g-line guard on`.
 
 ![A real session under a simulated low window: a turn that started a background agent closes with "guard: effort low, 1 agent on a cheaper model"; the agent's report still reaches Claude; the next typed prompt is refused with "g-line guard stopped this prompt: 4% of the 5-hour window left (simulated; your rule: stop at 5%)", its reset time and the way past; line 2 reads "guard: stopped, 4% 5h left (sim)"](docs/guard.png)
 

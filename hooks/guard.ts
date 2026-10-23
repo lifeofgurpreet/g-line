@@ -41,8 +41,23 @@ export type Rule = {
   groups?: string[]
   hours?: Hours
   tz?: string
+  /** A paced weekly allowance in place of a cliff: the rule's steps come with how far ahead of pace the week is. */
+  pace?: Pace
   /** The rule as written, for toasts. */
   text: string
+}
+
+/**
+ * A paced weekly allowance. The week runs from seven days before the engine's reported
+ * weekly reset to the reset. `reserve` percent of it is kept back; `burst` points are
+ * free from the first minute; the rest opens up as the week goes by, office hours
+ * counting `officeWeight` times an ordinary hour. Ahead of that allowance by `tiers[0]`
+ * points (the used figure plus `buffer`), the conversation's effort is capped; by
+ * `tiers[1]`, new subagents run on a cheaper model; by `tiers[2]`, new prompts stop.
+ */
+export type Pace = {
+  reserve: number; burst: number; office?: Hours; officeWeight: number; tz?: string
+  buffer: number; tiers: [number, number, number]; effort: Effort; agents: string
 }
 
 export type KeepWarm = {
@@ -92,7 +107,7 @@ export function seconds(value: unknown): number | undefined {
   if (!/^(\d+(\.\d+)?\s*[hms]\s*)+$/.test(text)) return undefined
   let total = 0
   for (const [, n, unit] of text.matchAll(/(\d+(?:\.\d+)?)\s*([hms])/g)) total += Number(n) * (unit === 'h' ? 3600 : unit === 'm' ? 60 : 1)
-  return total
+  return Number.isFinite(total) ? total : undefined
 }
 
 /** `50k`, `1.2m`, `50000`, in tokens. */
@@ -101,7 +116,8 @@ export function tokenCount(value: unknown): number | undefined {
   if (typeof value !== 'string') return undefined
   const m = /^(\d+(?:\.\d+)?)\s*([km]?)$/i.exec(value.trim())
   if (!m) return undefined
-  return Number(m[1]) * (m[2]?.toLowerCase() === 'k' ? 1000 : m[2]?.toLowerCase() === 'm' ? 1_000_000 : 1)
+  const n = Number(m[1]) * (m[2]?.toLowerCase() === 'k' ? 1000 : m[2]?.toLowerCase() === 'm' ? 1_000_000 : 1)
+  return Number.isFinite(n) ? n : undefined
 }
 
 const DAYS = ['sun', 'mon', 'tue', 'wed', 'thu', 'fri', 'sat']
@@ -113,7 +129,8 @@ export function parseHours(value: unknown): Hours | undefined {
   if (!m) return undefined
   const from = Number(m[1]) * 60 + Number(m[2] ?? 0)
   const to = Number(m[3]) * 60 + Number(m[4] ?? 0)
-  if (from > 24 * 60 || to > 24 * 60 || from === to) return undefined
+  const minutesOk = (m[2] === undefined || Number(m[2]) < 60) && (m[4] === undefined || Number(m[4]) < 60)
+  if (!minutesOk || from > 24 * 60 || to > 24 * 60 || from === to) return undefined
   const rest = (m[5] ?? '').trim()
   if (!rest || rest === 'daily' || rest === 'every day') return { from, to, days: [0, 1, 2, 3, 4, 5, 6] }
   const days = new Set<number>()
@@ -173,66 +190,71 @@ export function parseGuard(raw: unknown): GuardConfig {
       return
     }
     const e = entry as Record<string, unknown>
-    const left = typeof e.left === 'number' ? e.left : Number.NaN
-    if (!(left > 0 && left <= 100)) {
-      errors.push(`rule ${index + 1}: "left" must be a percent from 1 to 100`)
-      return
+    const n = index + 1
+    // A rule with anything malformed is left out whole: a half-read rule would apply more widely than written.
+    const bad = (why: string) => {
+      errors.push(`rule ${n}: ${why}`)
     }
-    const rule: Rule = { id: `r${index}`, left, window: word(e.window) === 'week' ? 'week' : '5h', text }
-    if (e.window !== undefined && !['5h', 'week'].includes(word(e.window))) errors.push(`rule ${index + 1}: "window" is "5h" or "week"`)
+    const paced = e.pace !== undefined
+    const left = paced ? 0 : typeof e.left === 'number' ? e.left : Number.NaN
+    if (!paced && !(left > 0 && left <= 100)) return bad('"left" must be a percent from 1 to 100')
+    if (e.window !== undefined && !['5h', 'week'].includes(word(e.window))) return bad('"window" is "5h" or "week"')
+    if (paced && (e.left !== undefined || e.effort !== undefined || e.agents !== undefined || e.stop !== undefined)) {
+      return bad('a "pace" rule sets its own steps: leave out "left", "effort", "agents" and "stop"')
+    }
+    if (paced && e.window !== undefined && word(e.window) !== 'week') return bad('a "pace" rule paces the weekly window')
+    const rule: Rule = { id: `r${index}`, left, window: paced || word(e.window) === 'week' ? 'week' : '5h', text }
+    if (paced) {
+      const pace = parsePace(e.pace, typeof e.tz === 'string' ? e.tz.trim() : undefined, n, errors)
+      if (!pace) return
+      rule.pace = pace
+      rule.stop = true
+    }
     if (e.effort !== undefined) {
       if ((EFFORTS as readonly string[]).includes(word(e.effort))) rule.effort = word(e.effort) as Effort
-      else errors.push(`rule ${index + 1}: "effort" is one of ${EFFORTS.join(', ')}`)
+      else return bad(`"effort" is one of ${EFFORTS.join(', ')}`)
     }
-    if (typeof e.agents === 'string' && /^[a-z0-9._[\]-]{2,80}$/i.test(e.agents.trim())) rule.agents = e.agents.trim()
-    else if (e.agents !== undefined) errors.push(`rule ${index + 1}: "agents" names a model, such as "sonnet"`)
+    if (e.agents !== undefined) {
+      if (typeof e.agents === 'string' && /^[a-z0-9._[\]-]{2,80}$/i.test(e.agents.trim())) rule.agents = e.agents.trim()
+      else return bad('"agents" names a model, such as "sonnet"')
+    }
     if (e.stop === true) rule.stop = true
+    if (e.end_turn !== undefined && typeof e.end_turn !== 'boolean') return bad('"end_turn" is true or false')
     if (e.end_turn === true) {
       if (rule.stop) rule.endTurn = true
-      else errors.push(`rule ${index + 1}: "end_turn" goes with "stop": true`)
+      else return bad('"end_turn" goes with "stop": true')
     }
-    if (!rule.effort && !rule.agents && !rule.stop) {
-      errors.push(`rule ${index + 1} does nothing: give it "effort", "agents" or "stop": true`)
-      return
-    }
+    if (!rule.effort && !rule.agents && !rule.stop) return bad('it does nothing: give it "effort", "agents" or "stop": true')
     if (e.unless_reset_within !== undefined) {
       const s = seconds(e.unless_reset_within)
-      if (s === undefined) errors.push(`rule ${index + 1}: "unless_reset_within" is a time such as "1h"`)
-      else rule.unlessResetWithin = s
+      if (s === undefined) return bad('"unless_reset_within" is a time such as "1h"')
+      rule.unlessResetWithin = s
     }
     if (e.accounts !== undefined) {
       const accounts = (Array.isArray(e.accounts) ? e.accounts : [e.accounts]).map(word).filter(Boolean)
-      if (accounts.length) rule.accounts = accounts
-      else errors.push(`rule ${index + 1}: "accounts" lists parts of the account line, such as "team@"`)
+      if (!accounts.length) return bad('"accounts" lists parts of the account line, such as "team@"')
+      rule.accounts = accounts
     }
     if (e.except_accounts !== undefined) {
       const except = (Array.isArray(e.except_accounts) ? e.except_accounts : [e.except_accounts]).map(word).filter(Boolean)
-      if (except.length) rule.exceptAccounts = except
-      else errors.push(`rule ${index + 1}: "except_accounts" lists parts of the account line, such as "me@"`)
+      if (!except.length) return bad('"except_accounts" lists parts of the account line, such as "me@"')
+      rule.exceptAccounts = except
     }
     if (e.groups !== undefined || e.group !== undefined) {
       const named = (Array.isArray(e.groups) ? e.groups : [e.groups ?? e.group]).map(word).filter(Boolean)
-      const unknown = named.filter(n => n !== OTHER_GROUP && !groups.some(g => g.name === n))
-      if (!named.length) errors.push(`rule ${index + 1}: "groups" names groups from "guard.groups", such as "team"`)
-      else if (unknown.length) {
-        errors.push(`rule ${index + 1}: no group named ${unknown.map(n => `"${n}"`).join(', ')} in "guard.groups"`)
-        return
-      } else rule.groups = named
+      const unknown = named.filter(g => g !== OTHER_GROUP && !groups.some(x => x.name === g))
+      if (!named.length) return bad('"groups" names groups from "guard.groups", such as "team"')
+      if (unknown.length) return bad(`no group named ${unknown.map(g => `"${g}"`).join(', ')} in "guard.groups"`)
+      rule.groups = named
     }
     if (e.hours !== undefined) {
       const hours = parseHours(e.hours)
-      if (hours) rule.hours = hours
-      else {
-        errors.push(`rule ${index + 1}: "hours" is like "09:00-17:00 mon-fri"`)
-        return
-      }
+      if (!hours) return bad('"hours" is like "09:00-17:00 mon-fri"')
+      rule.hours = hours
     }
-    if (typeof e.tz === 'string' && e.tz.trim()) {
+    if (e.tz !== undefined) {
+      if (typeof e.tz !== 'string' || !e.tz.trim() || !localTime(0, e.tz.trim())) return bad(`unknown time zone "${String(e.tz)}"`)
       rule.tz = e.tz.trim()
-      if (!localTime(0, rule.tz)) {
-        errors.push(`rule ${index + 1}: unknown time zone "${rule.tz}"`)
-        return
-      }
     }
     rules.push(rule)
   })
@@ -299,6 +321,191 @@ export function groupOf(groups: readonly Group[] | undefined, account: string | 
   return (groups ?? []).find(g => g.words.some(part => line.includes(part))) ?? { name: OTHER_GROUP, words: [], keepFor: 'others' }
 }
 
+// ------------------------------------------------------------------- pace
+
+const WEEK_MS = 7 * 86_400_000
+const DAY_MS = 86_400_000
+const PACE_KEYS = ['reserve', 'burst', 'office', 'office_weight', 'tz', 'buffer', 'tiers', 'effort', 'agents']
+
+/** `pace` in a rule: `{ "reserve": 10, "burst": 8, "office": "09:00-18:00 mon-fri", "office_weight": 4, "tz": "Asia/Kuala_Lumpur" }`. */
+function parsePace(raw: unknown, ruleTz: string | undefined, n: number, errors: string[]): Pace | undefined {
+  const fail = (why: string) => {
+    errors.push(`rule ${n}: "pace" ${why}`)
+    return undefined
+  }
+  if (!raw || typeof raw !== 'object' || Array.isArray(raw)) return fail('is an object, such as { "reserve": 10, "burst": 8 }')
+  const o = raw as Record<string, unknown>
+  const unknown = Object.keys(o).filter(k => !PACE_KEYS.includes(k))
+  if (unknown.length) return fail(`doesn't know ${unknown.map(k => `"${k}"`).join(', ')} (it takes ${PACE_KEYS.join(', ')})`)
+  const num = (key: string, fallback: number, lo: number, hi: number): number | undefined => {
+    const v = o[key]
+    if (v === undefined) return fallback
+    return typeof v === 'number' && Number.isFinite(v) && v >= lo && v <= hi ? v : undefined
+  }
+  const reserve = num('reserve', 10, 0, 50)
+  if (reserve === undefined) return fail('"reserve" is a percent from 0 to 50 of the week kept back')
+  const burst = num('burst', 8, 0, 100 - reserve)
+  if (burst === undefined) return fail(`"burst" is points of the week free from the start, from 0 to ${100 - reserve} (100 less the reserve)`)
+  const buffer = num('buffer', 2, 0, 20)
+  if (buffer === undefined) return fail('"buffer" is a few points of slack for a coarse reading, from 0 to 20')
+  let office: Hours | undefined
+  if (o.office !== undefined) {
+    office = parseHours(o.office)
+    if (!office) return fail('"office" is like "09:00-18:00 mon-fri"')
+  }
+  const officeWeight = num('office_weight', office ? 4 : 1, 0.1, 20)
+  if (officeWeight === undefined) return fail('"office_weight" is how many times an office hour counts, from 0.1 to 20')
+  let tiers: [number, number, number] = [0, 3, 6]
+  if (o.tiers !== undefined) {
+    const t = o.tiers
+    const ok = Array.isArray(t) && t.length === 3 && t.every(x => typeof x === 'number' && Number.isFinite(x) && x >= -20 && x <= 50)
+      && (t as number[])[0]! < (t as number[])[1]! && (t as number[])[1]! < (t as number[])[2]!
+    if (!ok) return fail('"tiers" is three rising points ahead of pace, such as [0, 3, 6]: effort, cheaper agents, stop')
+    tiers = [...(t as [number, number, number])]
+  }
+  const effort = o.effort === undefined ? 'medium' : word(o.effort)
+  if (!(EFFORTS as readonly string[]).includes(effort)) return fail(`"effort" is one of ${EFFORTS.join(', ')}`)
+  const agents = o.agents === undefined ? 'sonnet' : typeof o.agents === 'string' ? o.agents.trim() : ''
+  if (!/^[a-z0-9._[\]-]{2,80}$/i.test(agents) || !rank(agents)) return fail('"agents" names a model family, such as "sonnet" or "haiku"')
+  const tz = o.tz === undefined ? ruleTz || undefined : typeof o.tz === 'string' ? o.tz.trim() : ''
+  if (tz !== undefined && (!tz || !localTime(0, tz))) return fail(`has an unknown time zone "${String(o.tz)}"`)
+  return { reserve, burst, ...(office ? { office } : {}), officeWeight, ...(tz ? { tz } : {}), buffer, tiers, effort: effort as Effort, agents }
+}
+
+const zoneFormats = new Map<string, Intl.DateTimeFormat>()
+
+/** The zone's offset from UTC at `ms`, in ms: the named zone's (daylight saving included), else the machine's fixed `fallbackMinutes`. */
+function zoneOffsetMs(tz: string | undefined, ms: number, fallbackMinutes: number): number | undefined {
+  if (!tz) return fallbackMinutes * 60_000
+  try {
+    let f = zoneFormats.get(tz)
+    if (!f) {
+      f = new Intl.DateTimeFormat('en-US', { timeZone: tz, hourCycle: 'h23', year: 'numeric', month: 'numeric', day: 'numeric', hour: 'numeric', minute: 'numeric', second: 'numeric' })
+      zoneFormats.set(tz, f)
+    }
+    const parts = f.formatToParts(new Date(ms))
+    const get = (type: string) => Number(parts.find(p => p.type === type)?.value)
+    const asUtc = Date.UTC(get('year'), get('month') - 1, get('day'), get('hour') % 24, get('minute'), get('second'))
+    return Number.isFinite(asUtc) ? asUtc - Math.floor(ms / 1000) * 1000 : undefined
+  } catch {
+    return undefined
+  }
+}
+
+/** The week of a pace rule: its office spans inside it, in UTC ms. */
+export type PaceCalendar = { startMs: number; endMs: number; spans: [number, number][]; officeMs: number; weight: number }
+
+/** The week ending at `resetMs`, with its office hours (in the rule's zone, daylight saving included) laid out once. */
+export function paceCalendar(p: Pace, resetMs: number, offsetMinutes = 0): PaceCalendar | undefined {
+  const startMs = resetMs - WEEK_MS
+  const spans: [number, number][] = []
+  if (p.office) {
+    const off = (ms: number) => zoneOffsetMs(p.tz, ms, offsetMinutes)
+    const at = off(startMs)
+    if (at === undefined) return undefined
+    const first = new Date(startMs + at)
+    const [y, m, d] = [first.getUTCFullYear(), first.getUTCMonth(), first.getUTCDate()]
+    // A wall-clock minute of a calendar day (`dayMs` is that day's midnight read as UTC) as an instant.
+    const instant = (dayMs: number, minute: number) => {
+      const guess = dayMs + minute * 60_000
+      const a = off(guess) ?? 0
+      return guess - (off(guess - a) ?? a)
+    }
+    for (let i = -1; i <= 8; i++) {
+      const dayMs = Date.UTC(y, m, d + i)
+      if (!p.office.days.includes(new Date(dayMs).getUTCDay())) continue
+      const from = instant(dayMs, p.office.from)
+      const to = instant(p.office.from < p.office.to ? dayMs : dayMs + DAY_MS, p.office.to)
+      const lo = Math.max(from, startMs)
+      const hi = Math.min(to, resetMs)
+      if (hi > lo) spans.push([lo, hi])
+    }
+  }
+  return { startMs, endMs: resetMs, spans, officeMs: spans.reduce((sum, [a, b]) => sum + (b - a), 0), weight: p.officeWeight }
+}
+
+/** The weighted share of the week gone by `nowMs`, 0 to 1: an office hour counts `weight` times an ordinary one. */
+export function paceFraction(cal: PaceCalendar, nowMs: number): number {
+  const t = Math.min(cal.endMs, Math.max(cal.startMs, nowMs))
+  const extra = cal.weight - 1
+  const office = cal.spans.reduce((sum, [a, b]) => sum + Math.max(0, Math.min(b, t) - a), 0)
+  return ((t - cal.startMs) + extra * office) / (WEEK_MS + extra * cal.officeMs)
+}
+
+/** What a week of the rule may have used by `nowMs`, in percent: `burst`, rising to `100 - reserve` by the reset. */
+export function paceAllowance(p: Pace, cal: PaceCalendar, nowMs: number): number {
+  const room = 100 - p.reserve
+  return Math.min(room, p.burst + (room - p.burst) * paceFraction(cal, nowMs))
+}
+
+/** Where a pace rule stands: the week used, what's allowed by now, how far ahead, and the step that means. */
+export type PaceNow = {
+  used: number; allowed: number; ahead: number
+  /** 0 on pace; 1 effort capped; 2 also cheaper new agents; 3 also stop. */
+  tier: 0 | 1 | 2 | 3
+  /** Stopped because the week's reserve itself is near, not only because of the pace. */
+  hard: boolean
+  reserve: number
+  office: boolean
+  /** About when this step lets go on its own (ms), for a step in force. */
+  liftsAt?: number
+}
+
+/** What a pace rule remembers, so a step lets go only after CLEAR_MARGIN points, and only in the window and for the account it began in. */
+export type PaceMemory = { tier: number; hard: boolean; reset: number | null; account: string }
+
+const calendars = new WeakMap<Pace, { key: string; cal: PaceCalendar | undefined }>()
+
+function calendarOf(p: Pace, resetMs: number, offsetMinutes: number): PaceCalendar | undefined {
+  const key = `${resetMs}|${p.tz ? '' : offsetMinutes}`
+  const kept = calendars.get(p)
+  if (kept?.key === key) return kept.cal
+  const cal = paceCalendar(p, resetMs, offsetMinutes)
+  calendars.set(p, { key, cal })
+  return cal
+}
+
+/** The pace rule's standing against the weekly window now; nothing when the reading or the zone can't say. */
+export function paceRead(p: Pace, w: { left: number; resetsAt: number }, nowMs: number, offsetMinutes = 0, was?: { tier: number; hard: boolean }): PaceNow | undefined {
+  if (!Number.isFinite(w.left) || !Number.isFinite(w.resetsAt)) return undefined
+  const resetMs = w.resetsAt * 1000
+  if (resetMs <= nowMs || resetMs - nowMs > WEEK_MS + 3_600_000) return undefined
+  const cal = calendarOf(p, resetMs, offsetMinutes)
+  if (!cal) return undefined
+  const used = Math.min(100, Math.max(0, 100 - w.left))
+  const allowed = paceAllowance(p, cal, nowMs)
+  const ahead = used + p.buffer - allowed
+  let tier = 0
+  for (let i = 0; i < 3; i++) if (ahead >= (p.tiers[i] ?? Infinity) - ((was?.tier ?? 0) >= i + 1 ? CLEAR_MARGIN : 0)) tier = i + 1
+  const hard = w.left <= p.reserve + p.buffer + (was?.hard ? CLEAR_MARGIN : 0)
+  if (hard) tier = 3
+  const now: PaceNow = { used, allowed, ahead, tier: tier as PaceNow['tier'], hard, reserve: p.reserve,
+    office: cal.spans.some(([a, b]) => nowMs >= a && nowMs < b) }
+  if (tier > 0) {
+    if (hard) now.liftsAt = resetMs
+    else {
+      // The allowance only rises: the first moment it climbs far enough for this step to let go.
+      const target = used + p.buffer - ((p.tiers[tier - 1] ?? 0) - CLEAR_MARGIN)
+      let lo = nowMs
+      let hi = resetMs
+      for (let i = 0; i < 40 && hi - lo > 1000; i++) {
+        const mid = (lo + hi) / 2
+        if (paceAllowance(p, cal, mid) >= target) hi = mid
+        else lo = mid
+      }
+      now.liftsAt = Math.ceil(hi)
+    }
+  }
+  return now
+}
+
+/** The standing in words: `ahead of pace: 62% of the week used, 48% allowed by now`. */
+export function paceWords(n: PaceNow): string {
+  return n.hard
+    ? `${pct(100 - n.used)} of the week is left, inside the ${n.reserve}% g-line keeps back`
+    : `ahead of pace: ${pct(n.used)} of the week used, ${pct(n.allowed)} allowed by now`
+}
+
 /** What the guard reads. `left` is percent of the window left; `resetsAt` in seconds. */
 export type Facts = {
   nowMs: number
@@ -315,6 +522,10 @@ export type Active = Record<string, number | null>
 export type Verdict = {
   active: Active
   rules: Rule[]
+  /** Where each pace rule in force stands, by rule id. */
+  pace?: Record<string, PaceNow>
+  /** What each pace rule in force remembers (hand it back to `evaluate`). */
+  memory?: Record<string, PaceMemory>
   effort?: Effort
   agents?: string
   stop?: Held
@@ -323,7 +534,7 @@ export type Verdict = {
 }
 
 /** A stop in force: its rule, the window and what's left, and the account's group when the rule names groups. */
-export type Held = { rule: Rule; window: WindowName; left: number; resetsAt?: number; group?: Group }
+export type Held = { rule: Rule; window: WindowName; left: number; resetsAt?: number; group?: Group; pace?: PaceNow }
 
 /**
  * The rules in force now. A rule starts when its window's percent left falls to
@@ -331,9 +542,11 @@ export type Held = { rule: Rule; window: WindowName; left: number; resetsAt?: nu
  * when the window climbs CLEAR_MARGIN points past the threshold, the window
  * resets, or a condition stops holding (the account changed, the hours ended).
  */
-export function evaluate(guard: GuardConfig, facts: Facts, before: Active = {}): Verdict {
+export function evaluate(guard: GuardConfig, facts: Facts, before: Active = {}, memory: Record<string, PaceMemory> = {}): Verdict {
   const active: Active = {}
   const rules: Rule[] = []
+  const paces: Record<string, PaceNow> = {}
+  const kept: Record<string, PaceMemory> = {}
   if (!guard.on) return { active, rules }
   for (const rule of guard.rules) {
     const w = facts.windows[rule.window]
@@ -341,41 +554,68 @@ export function evaluate(guard: GuardConfig, facts: Facts, before: Active = {}):
     // A reading from before the window's reset says nothing about the new window.
     if (w.resetsAt !== undefined && w.resetsAt * 1000 <= facts.nowMs) continue
     const resets = w.resetsAt ?? null
-    const was = Object.prototype.hasOwnProperty.call(before, rule.id) && before[rule.id] === resets
-    if (w.left > rule.left + (was ? CLEAR_MARGIN : 0)) continue
+    let pace: PaceNow | undefined
+    if (rule.pace) {
+      // The week is anchored on the engine's reset: with none, there is no week to pace.
+      if (w.resetsAt === undefined) continue
+      // A step's memory belongs to the account and the window it began in; any other starts afresh.
+      const mem = memory[rule.id]
+      const same = mem && mem.reset === resets && mem.account === accountKey(facts.account)
+      pace = paceRead(rule.pace, { left: w.left, resetsAt: w.resetsAt }, facts.nowMs, facts.offsetMinutes, same ? mem : undefined)
+      if (!pace || pace.tier === 0) continue
+    } else {
+      const was = Object.prototype.hasOwnProperty.call(before, rule.id) && before[rule.id] === resets
+      if (w.left > rule.left + (was ? CLEAR_MARGIN : 0)) continue
+    }
     if (rule.unlessResetWithin !== undefined) {
       if (w.resetsAt === undefined || w.resetsAt * 1000 - facts.nowMs <= rule.unlessResetWithin * 1000) continue
     }
-    if (rule.accounts) {
-      const account = facts.account?.toLowerCase()
-      if (!account || !rule.accounts.some(part => account.includes(part))) continue
-    }
-    if (rule.exceptAccounts) {
-      const account = facts.account?.toLowerCase()
-      if (!account || rule.exceptAccounts.some(part => account.includes(part))) continue
-    }
-    if (rule.groups) {
-      const g = groupOf(guard.groups, facts.account)
-      if (!g || !rule.groups.includes(g.name)) continue
-    }
-    if (rule.hours) {
-      const at = localTime(facts.nowMs, rule.tz, facts.offsetMinutes)
-      if (!at || !inHours(rule.hours, at)) continue
-    }
+    if (!inScope(guard, rule, facts)) continue
     active[rule.id] = resets
     rules.push(rule)
+    if (pace) {
+      paces[rule.id] = pace
+      kept[rule.id] = { tier: pace.tier, hard: pace.hard, reset: resets, account: accountKey(facts.account) }
+    }
   }
-  const verdict: Verdict = { active, rules }
+  const verdict: Verdict = { active, rules, ...(Object.keys(paces).length ? { pace: paces, memory: kept } : {}) }
   const group = groupOf(guard.groups, facts.account)
   for (const rule of rules) {
-    if (rule.effort && (!verdict.effort || EFFORTS.indexOf(rule.effort) < EFFORTS.indexOf(verdict.effort))) verdict.effort = rule.effort
-    if (rule.agents && (!verdict.agents || rank(rule.agents) < rank(verdict.agents))) verdict.agents = rule.agents
+    const pace = paces[rule.id]
+    // A pace rule's steps come one at a time with how far ahead of pace the week is.
+    const effort = pace ? (pace.tier >= 1 ? rule.pace?.effort : undefined) : rule.effort
+    const agents = pace ? (pace.tier >= 2 ? rule.pace?.agents : undefined) : rule.agents
+    const stops = pace ? pace.tier >= 3 : rule.stop
+    if (effort && (!verdict.effort || EFFORTS.indexOf(effort) < EFFORTS.indexOf(verdict.effort))) verdict.effort = effort
+    // A model the guard can't rank must not mask a cheaper one it can.
+    if (agents && (!verdict.agents || (rank(agents) > 0 && (rank(verdict.agents) === 0 || rank(agents) < rank(verdict.agents))))) verdict.agents = agents
     const w = facts.windows[rule.window]
-    const held = w ? { rule, window: rule.window, left: w.left, resetsAt: w.resetsAt, ...(rule.groups && group ? { group } : {}) } : undefined
-    if (rule.stop && held && binds(rule, held.left, verdict.stop)) verdict.stop = held
-    if (rule.endTurn && held && binds(rule, held.left, verdict.end)) verdict.end = held
+    const held = w ? { rule, window: rule.window, left: w.left, resetsAt: w.resetsAt, ...(rule.groups && group ? { group } : {}), ...(pace ? { pace } : {}) } : undefined
+    if (stops && held && binds(rule, held.left, verdict.stop)) verdict.stop = held
+    if (stops && rule.endTurn && held && binds(rule, held.left, verdict.end)) verdict.end = held
   }
   return verdict
+}
+
+/** Whether the account, group and hours a rule names hold now. */
+export function inScope(guard: GuardConfig, rule: Rule, facts: Facts): boolean {
+  if (rule.accounts) {
+    const account = facts.account?.toLowerCase()
+    if (!account || !rule.accounts.some(part => account.includes(part))) return false
+  }
+  if (rule.exceptAccounts) {
+    const account = facts.account?.toLowerCase()
+    if (!account || rule.exceptAccounts.some(part => account.includes(part))) return false
+  }
+  if (rule.groups) {
+    const g = groupOf(guard.groups, facts.account)
+    if (!g || !rule.groups.includes(g.name)) return false
+  }
+  if (rule.hours) {
+    const at = localTime(facts.nowMs, rule.tz, facts.offsetMinutes)
+    if (!at || !inHours(rule.hours, at)) return false
+  }
+  return true
 }
 
 /**
@@ -479,6 +719,13 @@ export function hoursWords(rule: Rule): string {
 function reasonText(stop: NonNullable<Verdict['stop']>, simulated: boolean, account?: string | null): string {
   const window = `${NAMES[stop.window]} window`
   const sim = simulated ? ' (simulated)' : ''
+  if (stop.pace) {
+    const said = `${paceWords(stop.pace)}${sim}`
+    if (!namesAccounts(stop.rule)) return `${said.replace(/^./, c => c.toUpperCase())}.`
+    const who = account ? accountIdentity(account) : 'this account'
+    const what = !stop.group ? 'a team seat' : stop.group.name === OTHER_GROUP ? 'in none of your groups' : `in your ${stop.group.name} group`
+    return `${who} is ${what}, and ${said}. g-line paces the week so it lasts for ${stop.group?.keepFor ?? 'the team'}.`
+  }
   if (namesAccounts(stop.rule)) {
     const who = account ? accountIdentity(account) : 'this account'
     const when = stop.rule.hours ? `${hoursWords(stop.rule)}, g-line keeps` : 'g-line keeps'
@@ -506,7 +753,7 @@ export function stopText(stop: NonNullable<Verdict['stop']>, nowMs: number, offs
  * end of the rule's hours. Undefined when neither is known.
  */
 export function liftsAt(held: Held, nowMs: number, offsetMinutes?: number): number | undefined {
-  const reset = held.resetsAt !== undefined ? held.resetsAt * 1000 : undefined
+  const reset = held.pace?.liftsAt ?? (held.resetsAt !== undefined ? held.resetsAt * 1000 : undefined)
   const hours = held.rule.hours
   if (!hours) return reset
   const at = localTime(nowMs, held.rule.tz, offsetMinutes)
@@ -540,7 +787,7 @@ const hhmm = (minute: number) => `${String(Math.floor(minute / 60)).padStart(2, 
 
 /** A rule in words: `at 10% of 5h left, on accounts "team@", 09:00-17:00 Mon-Fri (Asia/Kuala_Lumpur): stop`. */
 export function ruleText(rule: Rule): string {
-  const when = [`at ${rule.left}% of ${rule.window} left`]
+  const when = [rule.pace ? 'paced week' : `at ${rule.left}% of ${rule.window} left`]
   if (rule.unlessResetWithin !== undefined) when.push(`unless it resets within ${Math.round(rule.unlessResetWithin / 60)}m`)
   if (rule.accounts) when.push(`on accounts ${rule.accounts.map(a => `"${a}"`).join(', ')}`)
   if (rule.exceptAccounts) when.push(`on accounts except ${rule.exceptAccounts.map(a => `"${a}"`).join(', ')}`)
@@ -549,27 +796,48 @@ export function ruleText(rule: Rule): string {
     const days = rule.hours.days.length === 7 ? 'daily' : rule.hours.days.map(d => (DAYS[d] ?? '').replace(/^./, c => c.toUpperCase())).join(',')
     when.push(`${hhmm(rule.hours.from)}-${hhmm(rule.hours.to)} ${days}${rule.tz ? ` (${rule.tz})` : ''}`)
   }
+  if (rule.pace) {
+    const p = rule.pace
+    const office = p.office ? `, office ${hoursWords({ ...rule, hours: p.office, tz: p.tz })} counts ${p.officeWeight}x` : p.tz ? `, ${p.tz}` : ''
+    when.push(`keeps ${p.reserve}% back, ${p.burst}% free at the start${office}`)
+    const steps = [`effort ${p.effort}`, `agents on ${p.agents}`, rule.endTurn ? 'stop new prompts and end a running turn' : 'stop new prompts']
+    return `${when.join(', ')}: ${steps.map((x, i) => `${x} at ${p.tiers[i]} points ahead`).join(', ')}`
+  }
   const what = [rule.effort ? `effort ${rule.effort}` : '', rule.agents ? `agents on ${rule.agents}` : '', rule.stop ? (rule.endTurn ? 'stop new prompts and end a running turn' : 'stop new prompts') : ''].filter(Boolean)
   return `${when.join(', ')}: ${what.join(', ')}`
 }
 
 /** What's in force, in a few words: `stop (4% of 5h left), effort low, agents on haiku`. */
 export function inForceText(v: Verdict): string {
-  return [v.stop ? `stop (${pct(v.stop.left)} of ${v.stop.window} left)` : '', v.effort ? `effort ${v.effort}` : '', v.agents ? `agents on ${v.agents}` : '']
+  return [v.stop ? (v.stop.pace ? `stop (${paceWords(v.stop.pace)})` : `stop (${pct(v.stop.left)} of ${v.stop.window} left)`) : '', v.effort ? `effort ${v.effort}` : '', v.agents ? `agents on ${v.agents}` : '']
     .filter(Boolean).join(', ')
+}
+
+/** What a pace rule's steps are, by tier 1 to 3. */
+const paceSteps = (rule: Rule, from: number, to: number): string[] => {
+  const p = rule.pace
+  if (!p) return []
+  const steps = [`the conversation runs at effort ${p.effort}`, `new subagents run on ${p.agents}`, 'new prompts stop']
+  return steps.slice(from, to)
 }
 
 /** What changed between two verdicts, in words for a toast; nothing when nothing did. */
 export function changeText(before: Verdict | undefined, after: Verdict): string | undefined {
   const was = new Set(before?.rules.map(r => r.id) ?? [])
-  const now = new Set(after.rules.map(r => r.id))
   const started = after.rules.filter(r => !was.has(r.id))
-  const ended = (before?.rules ?? []).filter(r => !now.has(r.id))
-  if (!started.length && !ended.length) return undefined
   const parts: string[] = []
-  if (after.stop && started.includes(after.stop.rule)) parts.push(`new prompts stop (${pct(after.stop.left)} of the ${NAMES[after.stop.window]} window left)`)
+  // A pace rule climbing a step says where the week stands and what now applies.
+  for (const rule of after.rules) {
+    const at = after.pace?.[rule.id]
+    if (!at) continue
+    const from = before?.pace?.[rule.id]?.tier ?? 0
+    if (at.tier > from) parts.push(`${paceWords(at)}: ${paceSteps(rule, from, at.tier).join(', ')}`)
+  }
+  if (after.stop && started.includes(after.stop.rule) && !after.stop.pace) parts.push(`new prompts stop (${pct(after.stop.left)} of the ${NAMES[after.stop.window]} window left)`)
   if (after.effort && started.some(r => r.effort)) parts.push(`the conversation runs at effort ${after.effort}`)
   if (after.agents && started.some(r => r.agents)) parts.push(`new subagents run on ${after.agents}`)
+  if (before?.effort && after.effort && before.effort !== after.effort) parts.push(`the conversation now runs at effort ${after.effort}`)
+  if (before?.agents && after.agents && before.agents !== after.agents) parts.push(`new subagents now run on ${after.agents}`)
   if (before?.stop && !after.stop) parts.push('prompts go through again')
   if (before?.effort && !after.effort) parts.push('effort is yours again')
   if (before?.agents && !after.agents) parts.push('subagents pick their own model again')
@@ -583,6 +851,11 @@ export function guardForms(verdict: Verdict, pausedFor?: number, until?: string,
     const m = Math.ceil(pausedFor / 60)
     return { forms: [`guard paused ${m}m`, 'guard paused'], tone: 'dim' }
   }
+  if (verdict.stop?.pace) {
+    const till = until ? ` till ${until}` : ''
+    const forms = [`guard: over pace, ${pct(verdict.stop.pace.used)} of the week used${till}`, `over pace${till}`, 'over pace']
+    return { forms: queued ? forms.map((f, i) => (i < forms.length - 1 ? `${f}, 1 queued` : f)) : forms, tone: 'bad' }
+  }
   if (verdict.stop) {
     const till = until ? ` till ${until}` : ''
     const reserve = `${verdict.stop.group?.name ?? 'team'} reserve`
@@ -593,7 +866,8 @@ export function guardForms(verdict: Verdict, pausedFor?: number, until?: string,
   }
   const doing = [verdict.effort ? `effort ${verdict.effort}` : '', verdict.agents ? `agents ${verdict.agents}` : ''].filter(Boolean)
   if (!doing.length) return undefined
-  return { forms: [`guard: ${doing.join(', ')}`, 'guard on'], tone: 'warn' }
+  const paced = verdict.pace && verdict.rules.every(r => r.pace)
+  return { forms: paced ? [`guard: over pace, ${doing.join(', ')}`, 'over pace'] : [`guard: ${doing.join(', ')}`, 'guard on'], tone: 'warn' }
 }
 
 /** What keep-warm reads. Times in seconds. */
@@ -642,7 +916,7 @@ export function warmDue(k: KeepWarm | undefined, f: WarmFacts): { due: boolean; 
   if (f.compactionCovers) return { due: false, why: 'Claude Code compacts this conversation when idle' }
   if (f.prefix < k.minContext) return { due: false, why: 'too small to be worth keeping' }
   if (f.stopped) return { due: false, why: 'a guard stop is in force' }
-  if (f.fiveHourLeft === undefined || f.fiveHourLeft < k.minLeft) return { due: false, why: 'the 5-hour window is low' }
+  if (f.fiveHourLeft === undefined || !Number.isFinite(f.fiveHourLeft) || f.fiveHourLeft < k.minLeft) return { due: false, why: 'the 5-hour window is low' }
   if (f.done >= k.max) return { due: false, why: 'kept warm as many times as allowed' }
   if (f.thisHour >= k.perHour) return { due: false, why: 'the hourly limit on this account is reached' }
   if (k.sessions === 'last' && f.notLastTouched) return { due: false, why: 'you typed in another session on this account last' }
@@ -686,7 +960,7 @@ export function accountKey(account: string | null | undefined): string {
 export function leaseFree(lease: unknown, holder: string, nowMs: number): boolean {
   if (!lease || typeof lease !== 'object') return true
   const l = lease as { holder?: unknown; until?: unknown }
-  return l.holder === holder || typeof l.until !== 'number' || l.until <= nowMs
+  return l.holder === holder || typeof l.until !== 'number' || !Number.isFinite(l.until) || l.until <= nowMs
 }
 
 /** `kept warm 2× · $0.18` for line 2 while re-reads hold the cache; the cost only when known. */
@@ -715,7 +989,67 @@ export function simulated(facts: Facts, sim: Simulation | undefined): Facts {
 export function resumeAt(limits: readonly { kind: string; percentUsed: number; resetsAt?: number }[], nowMs: number, jitterSeconds: number):
   { at: number; window: WindowName } | undefined {
   const full = limits.filter(l => (l.kind === 'five_hour' || l.kind === 'seven_day') && l.percentUsed >= 100)
-  if (!full.length || full.some(l => l.resetsAt === undefined || l.resetsAt * 1000 <= nowMs)) return undefined
+  if (!full.length || full.some(l => l.resetsAt === undefined || !Number.isFinite(l.resetsAt) || l.resetsAt * 1000 <= nowMs)) return undefined
   const last = full.reduce((a, b) => ((b.resetsAt ?? 0) > (a.resetsAt ?? 0) ? b : a))
-  return { at: (last.resetsAt ?? 0) * 1000 + Math.max(0, Math.round(jitterSeconds)) * 1000, window: last.kind === 'five_hour' ? '5h' : 'week' }
+  return { at: (last.resetsAt ?? 0) * 1000 + Math.max(0, Math.round(Number.isFinite(jitterSeconds) ? jitterSeconds : 0)) * 1000, window: last.kind === 'five_hour' ? '5h' : 'week' }
+}
+
+/**
+ * What a held decision or a pass is bound to: the account and the window (and its reset)
+ * it was made for. An account switch, or a window that has reset since, makes it a
+ * different epoch, and whatever was bound to the old one (a pass for one prompt, a prompt
+ * sent again, a queued prompt) no longer carries over.
+ */
+export function epochOf(account: string | null | undefined, held?: { window: WindowName; resetsAt?: number }): string {
+  return `${accountKey(account)}|${held ? `${held.window}:${held.resetsAt ?? ''}` : '-'}`
+}
+
+/** `/g-line guard why`: the figures, each rule's state, the account's group, the pace allowance now and when the hold lifts. */
+export function whyLines(guard: GuardConfig, facts: Facts, verdict: Verdict, o: { pausedFor?: number; simulated?: boolean } = {}): string[] {
+  const out: string[] = []
+  const offset = facts.offsetMinutes ?? 0
+  if (!guard.rules.length) return ['No guard rules: write them under "guard" in config.json.']
+  if (!guard.on) out.push('The guard is off (/g-line guard on).')
+  if (o.simulated) out.push('These are simulated readings.')
+  if (o.pausedFor && o.pausedFor > 0) out.push(`Paused for ${Math.ceil(o.pausedFor / 60)} more minutes.`)
+  for (const name of ['week', '5h'] as const) {
+    const w = facts.windows[name]
+    const reset = w?.resetsAt !== undefined ? ` Resets ${resetWords(w.resetsAt, facts.nowMs, offset)}.` : ''
+    out.push(w && Number.isFinite(w.left) ? `${NAMES[name].replace(/^./, c => c.toUpperCase())} window: ${pct(100 - w.left)} used, ${pct(w.left)} left.${reset}` : `${NAMES[name].replace(/^./, c => c.toUpperCase())} window: no reading yet.`)
+  }
+  if (guard.groups?.length) {
+    const g = groupOf(guard.groups, facts.account)
+    out.push(g ? `This account is in group ${g.name}.` : 'No account reading yet, so no group.')
+  }
+  for (const rule of guard.rules) {
+    const w = facts.windows[rule.window]
+    const label = ruleText(rule)
+    if (!w || !Number.isFinite(w.left)) {
+      out.push(`${label}: no ${NAMES[rule.window]} reading yet, so it waits.`)
+      continue
+    }
+    const on = verdict.active[rule.id] !== undefined
+    const scope = inScope(guard, rule, facts)
+    if (rule.pace) {
+      const now = verdict.pace?.[rule.id] ?? (w.resetsAt !== undefined ? paceRead(rule.pace, { left: w.left, resetsAt: w.resetsAt }, facts.nowMs, facts.offsetMinutes) : undefined)
+      if (!now) {
+        out.push(`${label}: the engine gave no reset time for the week, so there's no week to pace.`)
+        continue
+      }
+      const figures = `${pct(now.used)} of the week used, ${pct(now.allowed)} allowed by now${now.office ? ' (office hours)' : ''}`
+      const state = on ? `step ${now.tier} of 3 in force${now.hard ? ' (inside the reserve)' : ''}` : now.tier > 0 && !scope ? 'waits (not this account or hours)' : 'on pace'
+      out.push(`${label}: ${figures}; ${state}.`)
+    } else {
+      out.push(`${label}: ${pct(w.left)} left; ${on ? 'in force' : scope ? 'not reached' : 'waits (not this account or hours)'}.`)
+    }
+  }
+  if (verdict.stop) {
+    const lift = liftsAt(verdict.stop, facts.nowMs, facts.offsetMinutes)
+    out.push(`Held: new prompts stop. ${lift !== undefined ? `The hold lifts about ${resetWords(Math.floor(lift / 1000), facts.nowMs, offset)}.` : 'No lift time is known.'}`)
+  } else if (verdict.effort || verdict.agents) {
+    const steps = Object.values(verdict.pace ?? {}).map(n => n.liftsAt).filter((x): x is number => x !== undefined)
+    const next = steps.length ? Math.min(...steps) : undefined
+    out.push(`In force: ${inForceText(verdict)}.${next !== undefined ? ` The next step eases about ${resetWords(Math.floor(next / 1000), facts.nowMs, offset)}.` : ''}`)
+  } else out.push('Nothing is held now.')
+  return out
 }

@@ -1,5 +1,32 @@
 # Changelog
 
+## 0.12.0 (2026-10-23): a paced week, and the guard says why
+
+- **A paced weekly allowance** (`pace`, a rule of its own). The cliff rules waited for the last
+  few percent, so a shared seat could still be drained by Friday. A `pace` rule gives the week an
+  allowance that opens up with the clock (office hours count more) and steps in when the account
+  has used more than that: first a lower effort, then cheaper new subagents, then a stop (with
+  `end_turn`, a running turn ends too). It says it in words: `ahead of pace: 62% of the week
+  used, 48% allowed by now`. The week is anchored on the weekly reset the engine reports, office
+  hours are read in your own `tz` (daylight saving included), and it works for groups like any
+  rule: `{ "groups": ["team", "other"], "pace": { "reserve": 10, "burst": 8, "office":
+  "09:00-18:00 mon-fri", "office_weight": 4, "tz": "Asia/Kuala_Lumpur" } }`. README: Guard.
+- **`/g-line guard why`.** A toast gives the verdict and the pane's guard section lists the
+  weekly and 5-hour figures, this account's group, each rule's state, the pace allowance now
+  and about when the hold lifts.
+- **A pass or a held prompt belongs to its account and window.** `/g-line guard once`, Enter
+  again and a queued prompt are each bound to the account and the window's reset they were
+  given for. A switch of account, or a stop that comes back for a new window, makes them lapse,
+  with a toast, instead of carrying over.
+- **A malformed rule is left out whole.** An empty `accounts` or `except_accounts`, an unknown
+  `window`, a bad `effort`, `agents`, `unless_reset_within` or `end_turn` used to be said and
+  then half-read into a rule that applied more widely than written. Now the rule is left out
+  and the startup toast says which. `09:99-18:00` is no longer an hour range, and a number
+  too big to be one is refused.
+- A new subagent model g-line can't rank no longer hides a cheaper one it can. A change of
+  effort or agent model between two rules that both stay in force now gets its toast. A reading
+  that isn't a number can't start keep-warm, hold a lease or schedule a resume.
+
 ## 0.11.0 (2026-10-23): a held prompt waits for you, on a warm cache
 
 - **`guard.queue`.** A typed prompt the guard holds is kept and sent by g-line as soon as the
