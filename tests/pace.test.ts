@@ -342,3 +342,14 @@ test('near the weekly reset, what is left is there to use: said with what the gu
   expect(parseGuard({ drain: true }).drain).toEqual({ within: 172_800, left: 20 })
   expect(parseGuard({ drain: { within: 'soon' } }).errors.length).toBe(1)
 })
+
+test('a pace rule with "agents": false never changes a model: its second step only marks the way to the stop', () => {
+  const g = parseGuard({ rules: [{ window: '5h', pace: { reserve: 10, burst: 15, tiers: [0, 5, 10], agents: false } }] })
+  expect(g.errors).toEqual([])
+  expect(g.rules[0]?.pace?.agents).toBeUndefined()
+  const reset = MON_9 / 1000 + 4 * 3600
+  const v = evaluate(g, { nowMs: MON_9, windows: { '5h': { left: 100 - 37, resetsAt: reset } }, offsetMinutes: 0 })
+  expect([v.effort, v.agents, v.stop]).toEqual(['medium', undefined, undefined])
+  expect(ruleText(g.rules[0]!)).not.toMatch(/agents/)
+  expect(changeText(undefined, v)).not.toMatch(/subagents/)
+})

@@ -57,7 +57,9 @@ export type Rule = {
  */
 export type Pace = {
   reserve: number; burst: number; office?: Hours; officeWeight: number; tz?: string
-  buffer: number; tiers: [number, number, number]; effort: Effort; agents: string
+  buffer: number; tiers: [number, number, number]; effort: Effort
+  /** The model new subagents move to at the second step; none with `"agents": false` (the step changes nothing). */
+  agents?: string
   /** The window paced: the week (the default) or the 5-hour window. */
   window?: WindowName
 }
@@ -385,11 +387,12 @@ function parsePace(raw: unknown, ruleTz: string | undefined, n: number, errors: 
   }
   const effort = o.effort === undefined ? 'medium' : word(o.effort)
   if (!(EFFORTS as readonly string[]).includes(effort)) return fail(`"effort" is one of ${EFFORTS.join(', ')}`)
-  const agents = o.agents === undefined ? 'sonnet' : typeof o.agents === 'string' ? o.agents.trim() : ''
-  if (!/^[a-z0-9._[\]-]{2,80}$/i.test(agents) || !rank(agents)) return fail('"agents" names a model family, such as "sonnet" or "haiku"')
+  // `false`: models are never changed, and the second step only marks the way to the stop.
+  const agents = o.agents === false ? undefined : o.agents === undefined ? 'sonnet' : typeof o.agents === 'string' ? o.agents.trim() : ''
+  if (agents !== undefined && (!/^[a-z0-9._[\]-]{2,80}$/i.test(agents) || !rank(agents))) return fail('"agents" names a model family, such as "sonnet" or "haiku", or is false')
   const tz = o.tz === undefined ? ruleTz || undefined : typeof o.tz === 'string' ? o.tz.trim() : ''
   if (tz !== undefined && (!tz || !localTime(0, tz))) return fail(`has an unknown time zone "${String(o.tz)}"`)
-  return { reserve, burst, ...(office ? { office } : {}), officeWeight, ...(tz ? { tz } : {}), buffer, tiers, effort: effort as Effort, agents }
+  return { reserve, burst, ...(office ? { office } : {}), officeWeight, ...(tz ? { tz } : {}), buffer, tiers, effort: effort as Effort, ...(agents ? { agents } : {}) }
 }
 
 const zoneFormats = new Map<string, Intl.DateTimeFormat>()
@@ -824,8 +827,8 @@ export function ruleText(rule: Rule): string {
     const p = rule.pace
     const office = p.office ? `, office ${hoursWords({ ...rule, hours: p.office, tz: p.tz })} counts ${p.officeWeight}x` : p.tz ? `, ${p.tz}` : ''
     when.push(`keeps ${p.reserve}% back, ${p.burst}% free at the start${office}`)
-    const steps = [`effort ${p.effort}`, `agents on ${p.agents}`, rule.endTurn ? 'stop new prompts and end a running turn' : 'stop new prompts']
-    return `${when.join(', ')}: ${steps.map((x, i) => `${x} at ${p.tiers[i]} points ahead`).join(', ')}`
+    const steps = [`effort ${p.effort}`, p.agents ? `agents on ${p.agents}` : '', rule.endTurn ? 'stop new prompts and end a running turn' : 'stop new prompts']
+    return `${when.join(', ')}: ${steps.map((x, i) => (x ? `${x} at ${p.tiers[i]} points ahead` : '')).filter(Boolean).join(', ')}`
   }
   const what = [rule.effort ? `effort ${rule.effort}` : '', rule.agents ? `agents on ${rule.agents}` : '', rule.stop ? (rule.endTurn ? 'stop new prompts and end a running turn' : 'stop new prompts') : ''].filter(Boolean)
   return `${when.join(', ')}: ${what.join(', ')}`
@@ -841,8 +844,8 @@ export function inForceText(v: Verdict): string {
 const paceSteps = (rule: Rule, from: number, to: number): string[] => {
   const p = rule.pace
   if (!p) return []
-  const steps = [`the conversation runs at effort ${p.effort}`, `new subagents run on ${p.agents}`, 'new prompts stop']
-  return steps.slice(from, to)
+  const steps = [`the conversation runs at effort ${p.effort}`, p.agents ? `new subagents run on ${p.agents}` : '', 'new prompts stop']
+  return steps.slice(from, to).filter(Boolean)
 }
 
 /** What changed between two verdicts, in words for a toast; nothing when nothing did. */

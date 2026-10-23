@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.17.1 (2026-10-23): pace without changing models
+
+- A `pace` rule takes `"agents": false`: its steps lower the effort and then stop, and never move
+  a subagent to another model. The rule's text and toasts leave the model step out.
+
 ## 0.17.0 (2026-10-23): a hold that doesn't cost you the cache, in one short line
 
 - **Keep-warm keeps going through a hold** that lifts within the re-reads it has left, so a
