@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.12.2 (2026-10-23): a turn the pace ended says so
+
+- The line under a turn that a `pace` rule ended read `guard: ended the turn, 38% week left`,
+  which looked like a stop well above any reserve. It now says what the toast and the refusal
+  say: `guard: ended the turn, ahead of pace: 62% of the week used, 48% allowed`. A turn ended
+  inside the week's reserve, and one a plain rule ended, still say how much of the window is left.
+
 ## 0.12.1 (2026-10-23): Pulse headlines are links in herdr, Zellij and over SSH
 
 - Claude Code decides whether to draw links on every draw, from its own environment, and it

@@ -1,6 +1,6 @@
 {
   "name": "g-line",
-  "version": "0.12.1",
+  "version": "0.12.2",
   "description": "Live status under Claude Code's prompt, and receipts on the turns themselves: context jumps, cache rebuilds and tool failures marked on the turn's own closing line; model, effort, cache countdown and usage pace on the hint line plus one coloured row; heads-up notifications before the cache goes cold. A mod: no transcript parsing.",
   "author": {
     "name": "Gurpreet"

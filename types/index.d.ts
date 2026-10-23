@@ -73,8 +73,8 @@ export type Receipt = {
   guardEffort?: { from: string; to: string }
   /** Subagents the guard started on a cheaper model during the turn. */
   guardAgents?: number
-  /** The guard ended the turn before its next request: how much of which window was left. */
-  guardEnded?: { left: number; window: string }
+  /** The guard ended the turn before its next request: how much of which window was left, and the week's pace when a pace rule ended it. */
+  guardEnded?: { left: number; window: string; pace?: { used: number; allowed: number } }
   /** The account changed since the cache this turn found was written. */
   accountChanged?: boolean
   /** The model that answered, when it wasn't the one the request asked for (a fallback). */
@@ -103,7 +103,7 @@ export type TurnLive = {
   compacted?: { before?: number; after?: number }
   guardEffort?: { from: string; to: string }
   guardAgents?: number
-  guardEnded?: { left: number; window: string }
+  guardEnded?: { left: number; window: string; pace?: { used: number; allowed: number } }
   servedBy?: string
   accountChanged?: boolean
 }

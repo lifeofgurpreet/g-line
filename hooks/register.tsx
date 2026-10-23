@@ -1474,7 +1474,7 @@ async function guardEnds($: EngineInterface, turnId: string): Promise<boolean> {
   const end = v.end
   const at = await nowMs($)
   const text = endText(end, at, offsetAt(at), simulation !== undefined, config.accountCommand ? (await read($, snap)).account : undefined)
-  await update($, turnNow, live => (live ? { ...live, guardEnded: { left: end.left, window: end.window } } : live))
+  await update($, turnNow, live => (live ? { ...live, guardEnded: { left: end.left, window: end.window, ...(end.pace && !end.pace.hard ? { pace: { used: end.pace.used, allowed: end.pace.allowed } } : {}) } } : live))
   if (!(await read($, hidden))) {
     $.ui.toast(text, { timeoutMs: 15_000 })
     await $.ui.notify(text, { title: 'g-line guard' }).catch(() => undefined)

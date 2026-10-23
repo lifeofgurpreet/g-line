@@ -194,3 +194,9 @@ test('mod-only segments stand where a custom layout names them, and the footer k
   expect(modesWidth([])).toBe(0)
   expect(modesWidth(['agents 2 running', 'compacts in ~3 turns'])).toBe('agents 2 running & compacts in ~3 turns'.length + 4)
 })
+
+test('a turn the guard ended says why: the window left, or the pace when a pace rule ended it', async () => {
+  expect(texts({ ...RECEIPT, guardEnded: { left: 8.2, window: '5h' } })).toContain('guard: ended the turn, 8% 5h left')
+  expect(texts({ ...RECEIPT, guardEnded: { left: 38, window: 'week', pace: { used: 62, allowed: 48.4 } } }))
+    .toContain('guard: ended the turn, ahead of pace: 62% of the week used, 48% allowed')
+})
