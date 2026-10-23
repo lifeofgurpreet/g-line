@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-23T21:12:38Z",
+ "generated_at": "2026-10-23T21:44:51Z",
  "items": [
   {
    "title": "Moonshot unveils Kimi K3.1 Pro, a 3T-class open-weight model with a 1M-token context window, and K3…",
@@ -17,7 +17,7 @@
    "published_at": "2026-10-23T19:46:46Z",
    "text": "Over the past several months, we have substantially hardened the security of our research training environment. We’ve removed live internet access for all frontier models during training and built an offline world for them to use instead—a cached version of the web where they can…",
    "author_name": "OpenAI",
-   "likes": 3184,
+   "likes": 3726,
    "story": "OpenAI plans to restrict internet access for its frontier models during training until adequate alignment, monitoring, and security safeguards are established"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-10-22T22:01:06Z",
    "text": "New on our Frontier Red Team blog: using Claude to formally verify software at large scale. Formal verification can prove that code is free of certain bugs, but historically it has only been feasible for small codebases (or required a lot of expert time). With AI models,…",
    "author_name": "Anthropic",
-   "likes": 8577,
+   "likes": 8638,
    "story": "Anthropic says it partnered with Theorem to use Claude to formally prove useful security properties at the assembly code level across 123 open-source libraries"
   },
   {
@@ -50,8 +50,8 @@
    "url": "https://block.xyz/dessa",
    "source": "Hacker News",
    "published_at": "2026-10-23T19:09:54Z",
-   "text": "61 points and 12 comments on Hacker News.",
-   "points": 61,
+   "text": "90 points and 26 comments on Hacker News.",
+   "points": 90,
    "discussion": "https://news.ycombinator.com/item?id=50213925"
   },
   {
@@ -61,7 +61,7 @@
    "published_at": "2026-10-22T18:13:41Z",
    "text": "Grok Bot can now use your 1Password account. Approve the logins you want to share, and your Bot signs in for you. This new integration is rolling out to users over the next few days.",
    "author_name": "Grok Bot",
-   "likes": 9402,
+   "likes": 9427,
    "story": "1Password passes $500M in ARR, up from $400M in November 2025, driven by enterprise AI coding assistants and agents, and launches 1Password for Agents"
   },
   {
@@ -86,7 +86,7 @@
    "published_at": "2026-10-22T21:36:16Z",
    "text": "🚨🚨ALERT: ANTHROPIC IS A/B TESTING USAGE LIMITS Many users on X are reporting LOWER usage limits right now. THEY ARE NOT WRONG. We detected an A/B test going on that DECREASES your monthly API-value by ~20% while INCREASING your 5h usage limits by ~20%. This only affects SOME h…",
    "author_name": "SemiAnalysis",
-   "likes": 3067,
+   "likes": 3079,
    "story": "SemiAnalysis claims Anthropic is A/B Testing Usage Limits"
   },
   {
@@ -94,8 +94,8 @@
    "url": "https://www.sverigesradio.se/artikel/chat-gpt-och-claude-forbjuder-regeringskansliet",
    "source": "Hacker News",
    "published_at": "2026-10-23T11:39:54Z",
-   "text": "311 points and 114 comments on Hacker News.",
-   "points": 311,
+   "text": "313 points and 114 comments on Hacker News.",
+   "points": 313,
    "discussion": "https://news.ycombinator.com/item?id=50207405"
   },
   {
@@ -109,11 +109,11 @@
    "story": "METR says a pilot test of OpenAI's monitoring system found vulnerabilities, including an exploit that could have let AI agents hide hundreds of recent actions"
   },
   {
-   "title": "An interview with Intel's leadership, including CTO Pushkar Ranade, on AI chip demand, lessons from…",
-   "url": "https://www.dwarkesh.com/p/intel-tour",
-   "source": "Dwarkesh Patel / Dwarkesh P…",
-   "published_at": "2026-10-23T11:46:09Z",
-   "text": "An interview with Intel's leadership, including CTO Pushkar Ranade, on AI chip demand, lessons from 10nm, whether Intel can catch up to TSMC, Terafab, and more. What I learned from touring Intel's most advanced fab and talking to its leadership. — I spent two days touring Intel's …",
+   "title": "Mave, which is developing an AI-driven tool to automate security investigations, raised a $28M Seri…",
+   "url": "https://www.calcalistech.com/ctechnews/article/h1sq8ip2mx",
+   "source": "Meir Orbach / CTech",
+   "published_at": "2026-10-23T21:15:49Z",
+   "text": "Mave, which is developing an AI-driven tool to automate security investigations, raised a $28M Series A led by Red Dot, bringing its total funding to $34M. The funding, led by Red Dot Capital Partners, brings Mave's total funding to $34 million. The company is developing AI …",
    "via": "Techmeme"
   },
   {
@@ -121,8 +121,8 @@
    "url": "https://news.ycombinator.com/item?id=50200997",
    "source": "Hacker News",
    "published_at": "2026-10-22T21:03:55Z",
-   "text": "545 points and 597 comments on Hacker News.",
-   "points": 545,
+   "text": "562 points and 610 comments on Hacker News.",
+   "points": 562,
    "discussion": "https://news.ycombinator.com/item?id=50200997"
   },
   {
