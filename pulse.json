@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-23T08:02:50Z",
+ "generated_at": "2026-10-23T08:35:29Z",
  "items": [
   {
    "title": "Sources: US banks are restricting third-party AI agents from accessing customer accounts, after som…",
@@ -17,7 +17,7 @@
    "published_at": "2026-10-22T18:17:10Z",
    "text": "Agent Skills started as an experiment in Claude Code. Many across the industry have come to adopt it, so we at Anthropic found it more fitting to donate it to the @AgenticAIFdn, next to MCP.",
    "author_name": "Boris Cherny",
-   "likes": 1759,
+   "likes": 1775,
    "story": "Anthropic donates the Agent Skills open standard to the Agentic AI Foundation and says 70+ platforms have integrated it, after donating MCP to the AAIF in 2025"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-10-22T15:41:24Z",
    "text": "💥 Introducing Warp Sciences, a new company applying AI and robotics to help the world develop new medicines faster. We’ve raised a $215M Series A led by @lightspeedvp to bring frontier AI out of the browser and into the lab, and build scientific capacity here in America. I…",
    "author_name": "Kevin Weil 🇺🇸",
-   "likes": 2071,
+   "likes": 2080,
    "story": "Warp Sciences, founded by former OpenAI CPO Kevin Weil to speed up drug development using AI, emerges from stealth with $215M at an $865M post-money valuation"
   },
   {
@@ -50,8 +50,8 @@
    "url": "https://berget.ai/en/blog/per-request-co2-press-release",
    "source": "Hacker News",
    "published_at": "2026-10-23T06:41:11Z",
-   "text": "74 points and 45 comments on Hacker News.",
-   "points": 74,
+   "text": "103 points and 98 comments on Hacker News.",
+   "points": 103,
    "discussion": "https://news.ycombinator.com/item?id=50205229"
   },
   {
@@ -61,7 +61,7 @@
    "published_at": "2026-10-22T18:13:41Z",
    "text": "Grok Bot can now use your 1Password account. Approve the logins you want to share, and your Bot signs in for you. This new integration is rolling out to users over the next few days.",
    "author_name": "Grok Bot",
-   "likes": 8014,
+   "likes": 8071,
    "story": "1Password passes $500M in ARR, up from $400M in November 2025, driven by enterprise AI coding assistants and agents, and launches 1Password for Agents"
   },
   {
@@ -93,7 +93,7 @@
    "published_at": "2026-10-22T21:36:16Z",
    "text": "🚨🚨ALERT: ANTHROPIC IS A/B TESTING USAGE LIMITS Many users on X are reporting LOWER usage limits right now. THEY ARE NOT WRONG. We detected an A/B test going on that DECREASES your monthly API-value by ~20% while INCREASING your 5h usage limits by ~20%. This only affects SOME h…",
    "author_name": "SemiAnalysis",
-   "likes": 2259,
+   "likes": 2317,
    "story": "SemiAnalysis claims Anthropic is A/B Testing Usage Limits"
   },
   {
@@ -101,8 +101,8 @@
    "url": "https://www.anthropic.com/research/formal-verification",
    "source": "Hacker News",
    "published_at": "2026-10-22T22:54:43Z",
-   "text": "325 points and 176 comments on Hacker News.",
-   "points": 325,
+   "text": "335 points and 188 comments on Hacker News.",
+   "points": 335,
    "discussion": "https://news.ycombinator.com/item?id=50202217"
   },
   {
@@ -112,7 +112,7 @@
    "published_at": "2026-10-22T15:26:44Z",
    "text": "Two employees from METR and Redwood Research worked on premises at OpenAI for three weeks this summer in an embedded assessment pilot. This team evaluated the systems OpenAI was using to monitor for misalignment from internal agents. A brief write-up of their work is now public.",
    "author_name": "METR",
-   "likes": 1067,
+   "likes": 1070,
    "story": "METR says a pilot test of OpenAI's monitoring system found vulnerabilities, including an exploit that could have let AI agents hide hundreds of recent actions"
   },
   {
@@ -122,7 +122,7 @@
    "published_at": "2026-10-22T19:16:10Z",
    "text": "Introducing Canva Craft 🚀 Extraordinary image generation is now available to everyone, powered by our first frontier model built specifically for design. With Craft, Canva is now the world's second most advanced AI lab for image generation on @DesignArena's global leaderboard.…",
    "author_name": "Canva",
-   "likes": 2516,
+   "likes": 2572,
    "story": "Canva has released their own image generation model."
   },
   {
@@ -132,7 +132,7 @@
    "published_at": "2026-10-22T10:32:56Z",
    "text": "Kimi K3.1 vs Qwen 4: 3D helicopter Same prompt, takeoff/land, 3D assembly and exploded views, very similar gen time at around 15-20 minutes for both China are not playing games anymore, these are very strong",
    "author_name": "Lumina",
-   "likes": 903,
+   "likes": 918,
    "story": "Qwen4 and Kimi3.1 on Arena apperantly"
   }
  ],
