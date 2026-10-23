@@ -1,13 +1,13 @@
 {
  "schema": 1,
- "generated_at": "2026-10-23T17:29:33Z",
+ "generated_at": "2026-10-23T18:01:02Z",
  "items": [
   {
-   "title": "UK's AISI finds Mythos 5 kept targeting real people in a July cyber eval despite evidence they were…",
+   "title": "AISI finds Mythos 5 pushed a GitHub maintainer to accept malicious code in a July eval despite evid…",
    "url": "https://www.aisi.gov.uk/blog/investigating-alignment-failures-in-aisis-incident",
    "source": "AI Security Institute",
    "published_at": "2026-10-23T16:55:55Z",
-   "text": "UK's AISI finds Mythos 5 kept targeting real people in a July cyber eval despite evidence they were uninvolved, and other models make such attacks in simulation. We examine why Mythos 5 pursued an unsanctioned supply-chain attack and identify broader learnings about model behaviour and oversight.",
+   "text": "AISI finds Mythos 5 pushed a GitHub maintainer to accept malicious code in a July eval despite evidence he was real; other models behaved the same in simulation. We examine why Mythos 5 pursued an unsanctioned supply-chain attack and identify broader learnings about model behaviour and oversight.",
    "via": "Techmeme"
   },
   {
@@ -17,8 +17,8 @@
    "published_at": "2026-10-23T17:15:24Z",
    "text": "Introducing Kimi K3.1 Pro: our most capable 3T-class open-weight model. 🔹 1M-token context, 2.8T total / 104B active params (MoE), Multimodal. 🔹 Full-project coding: games in Unreal, Unity & Godot. 🔹 Excels at parametric 3D modeling in Blender & CAD. 🔹 More reliable at htt…",
    "author_name": "Kimi.ai",
-   "likes": 1738,
-   "story": "Kimi 3.1 and 2.8 preview"
+   "likes": 7031,
+   "story": "Kimi unveils K3.1 Pro, a 3T-class open-weight model with a 1M-token context window, and K3.1 Pro Highspeed, with full weights to be released by November 4"
   },
   {
    "title": "Claude Code 2.1.309 released",
@@ -34,7 +34,7 @@
    "published_at": "2026-10-22T22:01:06Z",
    "text": "New on our Frontier Red Team blog: using Claude to formally verify software at large scale. Formal verification can prove that code is free of certain bugs, but historically it has only been feasible for small codebases (or required a lot of expert time). With AI models,…",
    "author_name": "Anthropic",
-   "likes": 8159,
+   "likes": 8232,
    "story": "Anthropic says it partnered with Theorem to use Claude to formally prove useful security properties at the assembly code level across 123 open-source libraries"
   },
   {
@@ -50,8 +50,8 @@
    "url": "https://www.sverigesradio.se/artikel/chat-gpt-och-claude-forbjuder-regeringskansliet",
    "source": "Hacker News",
    "published_at": "2026-10-23T11:39:54Z",
-   "text": "301 points and 112 comments on Hacker News.",
-   "points": 301,
+   "text": "302 points and 112 comments on Hacker News.",
+   "points": 302,
    "discussion": "https://news.ycombinator.com/item?id=50207405"
   },
   {
@@ -61,7 +61,7 @@
    "published_at": "2026-10-22T18:17:10Z",
    "text": "Agent Skills started as an experiment in Claude Code. Many across the industry have come to adopt it, so we at Anthropic found it more fitting to donate it to the @AgenticAIFdn, next to MCP.",
    "author_name": "Boris Cherny",
-   "likes": 2182,
+   "likes": 2215,
    "story": "Anthropic donates the Agent Skills open standard to the Agentic AI Foundation and says 70+ platforms have integrated it, after donating MCP to the AAIF in 2025"
   },
   {
@@ -79,11 +79,11 @@
    "text": "My latest vibe coded game experiment is a Command & Conquer style RTS (Real Time Strategy) game called Battle Drones ( play it here ). Unlike my previous experiments , this one is actually fun to play . I'm somewhat embarrassed to admit that I got there by telling Claude to \"Make it a LOT more fun\". It also supports multiplayer between nearby devices using audio to synchronize game state! Here's what I've built so far, and some of the things I learned along the way."
   },
   {
-   "title": "Sources: OpenAI nears an up to $30B round led by investors from the UAE and Coatue at a $1.25T pre-…",
-   "url": "https://www.cnbc.com/2026/10/22/openai-funding-round-uae-investors.html",
-   "source": "Kate Rooney / CNBC",
-   "published_at": "2026-10-22T20:24:16Z",
-   "text": "Sources: OpenAI nears an up to $30B round led by investors from the UAE and Coatue at a $1.25T pre-money valuation, as an “opportunistic” bridge ahead of an IPO. OpenAI is closing in on a funding round that could value the artificial intelligence giant at more than $1 trillion ahead …",
+   "title": "OpenAI makes Decisions API, its Jev competitor, generally available with new voice and visual modal…",
+   "url": "https://techcrunch.com/2026/10/22/openai-makes-its-jev-competitor-widely-available-as-decision-model-competition-heats-up/",
+   "source": "Tim Fernholz / TechCrunch",
+   "published_at": "2026-10-23T13:26:05Z",
+   "text": "OpenAI makes Decisions API, its Jev competitor, generally available with new voice and visual modalities, at $0.10/1M input tokens and no output-token charges. OpenAI made its Decisions API model widely available to users for the first time, entering the market for fast …",
    "via": "Techmeme"
   },
   {
@@ -93,7 +93,7 @@
    "published_at": "2026-10-22T18:13:41Z",
    "text": "Grok Bot can now use your 1Password account. Approve the logins you want to share, and your Bot signs in for you. This new integration is rolling out to users over the next few days.",
    "author_name": "Grok Bot",
-   "likes": 9121,
+   "likes": 9172,
    "story": "1Password passes $500M in ARR, up from $400M in November 2025, driven by enterprise AI coding assistants and agents, and launches 1Password for Agents"
   },
   {
@@ -101,8 +101,8 @@
    "url": "https://www.anthropic.com/research/formal-verification",
    "source": "Hacker News",
    "published_at": "2026-10-22T22:54:43Z",
-   "text": "420 points and 256 comments on Hacker News.",
-   "points": 420,
+   "text": "425 points and 261 comments on Hacker News.",
+   "points": 425,
    "discussion": "https://news.ycombinator.com/item?id=50202217"
   },
   {
@@ -112,7 +112,7 @@
    "published_at": "2026-10-22T21:36:16Z",
    "text": "🚨🚨ALERT: ANTHROPIC IS A/B TESTING USAGE LIMITS Many users on X are reporting LOWER usage limits right now. THEY ARE NOT WRONG. We detected an A/B test going on that DECREASES your monthly API-value by ~20% while INCREASING your 5h usage limits by ~20%. This only affects SOME h…",
    "author_name": "SemiAnalysis",
-   "likes": 2964,
+   "likes": 2982,
    "story": "SemiAnalysis claims Anthropic is A/B Testing Usage Limits"
   },
   {
@@ -126,11 +126,11 @@
    "story": "METR says a pilot test of OpenAI's monitoring system found vulnerabilities, including an exploit that could have let AI agents hide hundreds of recent actions"
   },
   {
-   "title": "OpenAI makes Decisions API, its Jev competitor, generally available with new voice and visual modal…",
-   "url": "https://techcrunch.com/2026/10/22/openai-makes-its-jev-competitor-widely-available-as-decision-model-competition-heats-up/",
-   "source": "Tim Fernholz / TechCrunch",
-   "published_at": "2026-10-23T13:26:05Z",
-   "text": "OpenAI makes Decisions API, its Jev competitor, generally available with new voice and visual modalities, at $0.10/1M input tokens and no output-token charges. OpenAI made its Decisions API model widely available to users for the first time, entering the market for fast …",
+   "title": "Sources: OpenAI nears an up to $30B round led by investors from the UAE and Coatue at a $1.25T pre-…",
+   "url": "https://www.cnbc.com/2026/10/22/openai-funding-round-uae-investors.html",
+   "source": "Kate Rooney / CNBC",
+   "published_at": "2026-10-22T20:24:16Z",
+   "text": "Sources: OpenAI nears an up to $30B round led by investors from the UAE and Coatue at a $1.25T pre-money valuation, as an “opportunistic” bridge ahead of an IPO. OpenAI is closing in on a funding round that could value the artificial intelligence giant at more than $1 trillion ahead …",
    "via": "Techmeme"
   }
  ],
