@@ -115,7 +115,7 @@ Line 2, g-line's own row, in colour:
 | timing | `wk out ~Thu 19:00, resets Fri 16:00` | When a window on pace to run out gets there (rounded: it's a projection), else when it resets |
 | agents, compaction | `agents 2 running`, `compacts in ~3 turns` | While subagents work; when a compaction is near |
 | guard, keep-warm | `guard: effort medium`, `kept warm 2× · $0.08`, `resumes 14:17` | Only with your `guard` rules (see Guard): what they're doing now |
-| others | `2 others · 1 waiting` | Other g-line sessions on this machine, and how many wait on you for a permission answer. Only when there are others; it's the first thing a narrow line drops. `roster: false` turns it off |
+| others | `2 others · 1 waiting` | Other g-line sessions on this machine, and how many wait on you for a permission answer. Only when there are others; it's the first thing a narrow line drops. `roster: false` turns it off. With an `account_command`, sessions on the same account also share their usage readings, so an idle terminal shows what a busy one just spent |
 
 When the terminal narrows, line 2 shortens first (`Opus 5.5` to `Opus`, the effort kept), and
 what line 1 can't fit moves down rather than vanishing. A healthy window's reset time goes

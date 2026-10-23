@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.14.0 (2026-10-23): sessions on one account share their usage
+
+- A session learns the account's usage only from its own requests, so an idle terminal kept
+  reading `5h 84%` while another on the same account spent it to 88%. With an `account_command`,
+  sessions on the same machine and account now share their readings through Claude Code's plugin
+  store every 15 seconds: in one window the higher percent wins (use only grows until the reset),
+  across a reset the newer window. Line 1, line 2 and the guard all read the shared figure, so a
+  rule stops an idle session as soon as a busy one crosses it. Different accounts never mix.
+
 ## 0.13.1 (2026-10-23): a cold cache keeps its size, and a hold says when it really lifts
 
 - A cold cache read only `cache cold` on a busy line, where a warm one kept `cache ~48m 57k`.

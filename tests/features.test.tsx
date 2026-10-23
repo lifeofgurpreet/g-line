@@ -1859,3 +1859,30 @@ test('0.12.0: a pass for one prompt belongs to the account it was given for: aft
   expect(await $.prompt.submit(typed('use the pass'))).toEqual({ text: 'use the pass' })
   expect(seen.prompts).toEqual(['use the pass'])
 })
+
+// ------------------------------------------------------------ 0.14.0
+
+test('sessions on the same account share usage: an idle one reads what another just spent', { timeoutMs: 30_000 }, async ($, on) => {
+  const store: Record<string, unknown> = {}
+  const w = world(on, {}, store)
+  w.config = { account_command: ['acct'], guard: { rules: [{ left: 12, stop: true }] } }
+  w.run = argv => (argv[0] === 'acct' ? { value: { exitCode: 0, stdout: 'team@example.com\n', stderr: '' } } : undefined)
+  engineBelow(on)
+  hintBelow(on)
+  await start($)
+  await measure($, w, 84)
+  await w.clock.advance(15_000)
+  expect(await $.prompt.submit(typed('at 84'))).toEqual({ text: 'at 84' })
+  const resets = Math.floor(w.clock.now() / 1000) + 2 * 3600
+  // Another session on the same account, and one on another account, wrote theirs.
+  store['g-line-limits:team@example.com'] = { at: w.clock.now(), limits: [{ kind: 'five_hour', percentUsed: 88, resetsAt: resets }] }
+  store['g-line-limits:other@example.com'] = { at: w.clock.now(), limits: [{ kind: 'five_hour', percentUsed: 99, resetsAt: resets }] }
+  await w.clock.advance(15_000)
+  // The guard reads the shared 88%: 12% left, at its stop.
+  expect((await $.prompt.submit(typed('at 88'))).drop).toMatch(/12% of the 5-hour window left/)
+  // This session's own lower reading doesn't take it back.
+  await measure($, w, 85)
+  await w.clock.advance(15_000)
+  expect((store['g-line-limits:team@example.com'] as { limits: { percentUsed: number }[] }).limits[0]?.percentUsed).toBe(88)
+  expect((store['g-line-limits:other@example.com'] as { limits: { percentUsed: number }[] }).limits[0]?.percentUsed).toBe(99)
+})

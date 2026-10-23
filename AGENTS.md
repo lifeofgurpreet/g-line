@@ -19,7 +19,9 @@ coding agents and for people.
    `$.session.usage()`, `session.measure`, `turn.step`, `turn.complete`, `tool.call`,
    `agent.spawn`, `$.agent.list()`, `session.compact` and, while idle, the length of
    `$.session.messages({ as: "api" })` (a managed plugin can send compaction events on past
-   user plugins). Never parse the transcript, never
+   user plugins). Sessions on one machine and one account share those readings through the
+   plugin store (`mergeLimits`: the higher percent in a window, the later window across a reset).
+   Never parse the transcript, never
    estimate what the engine reports, never make a network call, never write into the system
    prompt. The one network request is Pulse's GET of a static file, and only when the person
    turns Pulse on. Keep-warm's re-read (rule 5's guard) is Claude Code's own request through

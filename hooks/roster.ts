@@ -80,3 +80,39 @@ export function rosterRow(e: RosterEntry, nowMs: number, mine: boolean): string 
   return [mine ? `${what} (this one)` : what, e.ctx !== undefined ? `ctx ${Math.round(e.ctx)}%` : '', cache, e.model ?? '', e.account ?? '']
     .filter(Boolean).join(' · ')
 }
+
+/** The store key under which sessions on this machine share one account's usage readings. */
+export const LIMITS_PREFIX = 'g-line-limits:'
+
+export type Limit = { kind: string; percentUsed: number; resetsAt?: number }
+
+/**
+ * One account's usage windows from this session's reading and the one sessions
+ * on this machine share: in the same window the higher percent (use only grows
+ * until the reset), across windows the later one. A shared window already past
+ * its reset is left out. Order-free, so sessions converge whoever writes last.
+ */
+export function mergeLimits(own: readonly Limit[] | undefined, shared: unknown, nowSeconds: number): Limit[] {
+  const out = new Map<string, Limit>()
+  for (const l of own ?? []) out.set(l.kind, l)
+  const list = Array.isArray(shared) ? shared : []
+  for (const raw of list) {
+    if (!raw || typeof raw !== 'object') continue
+    const s = raw as Partial<Limit>
+    if (typeof s.kind !== 'string' || typeof s.percentUsed !== 'number' || !Number.isFinite(s.percentUsed)) continue
+    if (typeof s.resetsAt !== 'number' || s.resetsAt <= nowSeconds) continue
+    const mine = out.get(s.kind)
+    const theirs: Limit = { kind: s.kind, percentUsed: s.percentUsed, resetsAt: s.resetsAt }
+    if (!mine || mine.resetsAt === undefined) {
+      if (!mine) out.set(s.kind, theirs)
+      continue
+    }
+    // Resets read a fraction apart from one request to the next: within a minute is the same window.
+    if (Math.abs(mine.resetsAt - s.resetsAt) <= 60) {
+      if (s.percentUsed > mine.percentUsed) out.set(s.kind, { ...mine, percentUsed: s.percentUsed })
+    } else if (s.resetsAt > mine.resetsAt || mine.resetsAt <= nowSeconds) {
+      out.set(s.kind, theirs)
+    }
+  }
+  return [...out.values()]
+}

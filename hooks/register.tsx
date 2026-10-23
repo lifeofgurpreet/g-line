@@ -18,7 +18,7 @@ import type { EngineInterface, Register } from 'claude-code'
 
 import type { AgentRow, Receipt, Snap, Totals } from '../types'
 import { SEP, alerts, clock, layoutKeys, modelName, pct, segments, str, tokens, utcLabel, width, zoneOffset } from './core'
-import { ROSTER_PREFIX, othersSegment, rosterOf, rosterRow, staleRosterKeys } from './roster'
+import { LIMITS_PREFIX, ROSTER_PREFIX, mergeLimits, othersSegment, rosterOf, rosterRow, staleRosterKeys } from './roster'
 import type { RosterEntry, RosterState } from './roster'
 import type { Options, Payload, Preset, Segment, Tone } from './core'
 import {
@@ -358,6 +358,39 @@ async function nowSeconds($: EngineInterface): Promise<number> {
 /** Minutes east of UTC at `ms` where the person is: their `tz`, else the machine's zone. */
 const offsetAt = (ms: number) => zoneOffset(config.tz, ms) ?? -new Date(ms).getTimezoneOffset()
 
+/** The last usage readings sessions on this machine shared for an account. */
+let shared: { account: string; limits: unknown } | undefined
+
+/** This session's reading with what other sessions on the same account last shared. */
+function withShared(account: string | null | undefined, own: Snap['rateLimits'], now: number): Snap['rateLimits'] {
+  if (!config.accountCommand || !account || !shared || shared.account !== accountKey(account)) return own
+  return mergeLimits(own, shared.limits, now)
+}
+
+/**
+ * Shares this session's usage readings with the other sessions on this machine
+ * on the same account, and takes theirs: an idle terminal reads what a busy one
+ * on the same account just spent. Only with an account reading, so two
+ * accounts never mix.
+ */
+async function shareLimits($: EngineInterface): Promise<void> {
+  const s = await read($, snap)
+  if (!config.accountCommand || !s.account) return
+  try {
+    const key = accountKey(s.account)
+    const value = await $.store.get(`${LIMITS_PREFIX}${key}`)
+    const theirs = value && typeof value === 'object' ? (value as { limits?: unknown }).limits : undefined
+    shared = { account: key, limits: theirs }
+    const merged = mergeLimits(s.rateLimits, theirs, (await nowMs($)) / 1000)
+    if (JSON.stringify(merged) !== JSON.stringify(s.rateLimits ?? [])) {
+      await update($, snap, x => ({ ...x, rateLimits: merged, peaks: peaksOf(x, merged) }))
+    }
+    if (merged.length) await $.store.set(`${LIMITS_PREFIX}${key}`, { at: await nowMs($), limits: merged })
+  } catch {
+    // the store is busy: this session's own reading stands
+  }
+}
+
 function limitsOf(list: readonly { kind: string; percentUsed: number; resetsAt?: string }[]): Snap['rateLimits'] {
   return list.map(l => ({ kind: l.kind, percentUsed: l.percentUsed,
     resetsAt: l.resetsAt ? Math.floor(Date.parse(l.resetsAt) / 1000) : undefined }))
@@ -411,7 +444,7 @@ async function watchIdle($: EngineInterface): Promise<void> {
 
 async function measure($: EngineInterface): Promise<void> {
   const usage = await $.session.usage()
-  const limits = limitsOf(usage.rateLimits)
+  const limits = withShared((await read($, snap)).account, limitsOf(usage.rateLimits), await nowSeconds($))
   await update($, snap, s => ({
     ...s,
     startedAt: usage.startedAt,
@@ -802,6 +835,7 @@ async function heartbeat($: EngineInterface): Promise<void> {
   if ((await read($, agents)).some(row => isActive(row.status))) await refreshAgents($)
   // An account rule needs a fresh reading: an account manager may have switched accounts.
   else if (beats % 8 === 0 && config.guard.rules.some(namesAccounts)) await refreshAccount($)
+  await shareLimits($)
   await guardNow($).catch(() => undefined)
   await queueTick($).catch(() => undefined)
   await keepWarm($).catch(() => undefined)
@@ -2007,7 +2041,7 @@ export const register: Register = (on, options) => {
   })
 
   on('session.measure', async ($, e, next) => {
-    const limits = limitsOf(e.rateLimits)
+    const limits = withShared((await read($, snap)).account, limitsOf(e.rateLimits), await nowSeconds($))
     await update($, snap, s => ({
       ...s,
       context: { tokens: e.context.tokens, window: e.context.window, percent: e.context.percent },
