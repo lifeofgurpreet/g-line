@@ -743,16 +743,13 @@ function reasonText(stop: NonNullable<Verdict['stop']>, simulated: boolean, acco
   const sim = simulated ? ' (simulated)' : ''
   if (stop.pace) {
     const said = `${paceWords(stop.pace)}${sim}`
-    if (!namesAccounts(stop.rule)) return `${said.replace(/^./, c => c.toUpperCase())}.`
+    if (!namesAccounts(stop.rule)) return `${said}.`
     const who = account ? accountIdentity(account) : 'this account'
-    const what = !stop.group ? 'a team seat' : stop.group.name === OTHER_GROUP ? 'in none of your groups' : `in your ${stop.group.name} group`
-    return `${who} is ${what}, and ${said}. g-line paces the ${paceName(stop.pace.window)} so it lasts for ${stop.group?.keepFor ?? 'the team'}.`
+    return `${who} is ${said}, so it lasts for ${stop.group?.keepFor ?? 'the team'}.`
   }
   if (namesAccounts(stop.rule)) {
     const who = account ? accountIdentity(account) : 'this account'
-    const when = stop.rule.hours ? `${hoursWords(stop.rule)}, g-line keeps` : 'g-line keeps'
-    const what = !stop.group ? 'a team seat' : stop.group.name === OTHER_GROUP ? 'in none of your groups' : `in your ${stop.group.name} group`
-    return `${who} is ${what}, with ${pct(stop.left)} of its ${window} left${sim}. ${when} the last ${stop.rule.left}% of it for ${stop.group?.keepFor ?? 'the team'}.`
+    return `${who} has ${pct(stop.left)} of its ${window} left${sim}; g-line keeps the last ${stop.rule.left}% for ${stop.group?.keepFor ?? 'the team'}.`
   }
   return `${pct(stop.left)} of the ${window} left${sim}, at or under your ${stop.rule.left}% stop.`
 }
@@ -760,14 +757,16 @@ function reasonText(stop: NonNullable<Verdict['stop']>, simulated: boolean, acco
 /** Why a prompt was held, when the window resets, and the way past: Enter again for a prompt the person typed. */
 export function stopText(stop: NonNullable<Verdict['stop']>, nowMs: number, offsetMinutes: number, simulated = false,
   o: { account?: string | null; typed?: boolean; queued?: { at?: string; cache?: 'warm' | 'bridge' | 'cold' } } = {}): string {
-  const reset = resetWords(stop.resetsAt, nowMs, offsetMinutes)
-  const cache = o.queued?.cache === 'bridge' ? ', keeping the cache warm until then' : o.queued?.cache === 'cold' ? '; the cache will be cold by then' : ''
+  // When it lets go on its own: a pace step's lift or the end of the rule's hours, else the reset.
+  const lift = liftsAt(stop, nowMs, offsetMinutes)
+  const when = resetWords(lift !== undefined ? Math.ceil(lift / 1000) : stop.resetsAt, nowMs, offsetMinutes)
+  const cache = o.queued?.cache === 'bridge' ? ', cache kept warm' : o.queued?.cache === 'cold' ? '; the cache will be cold by then' : ''
   const past = o.typed === false
-    ? '/g-line guard pause lets prompts like this through for an hour.'
+    ? ''
     : o.queued
-      ? `g-line will send it when the guard lets it through${o.queued.at ? `, about ${o.queued.at}` : ''}${cache}. Enter again sends it now; /g-line guard cancel keeps it here.`
-      : 'Press Enter again to send it anyway, or /g-line guard pause for an hour.'
-  return `g-line held this prompt: ${reasonText(stop, simulated, o.account)}${reset ? ` It resets at ${reset}.` : ''} ${past}`
+      ? ` Queued${o.queued.at ? ` for about ${o.queued.at}` : ''}${cache}; Enter again sends it now.`
+      : ' Enter again sends it anyway.'
+  return `g-line held this: ${reasonText(stop, simulated, o.account)}${when ? ` Lifts ${lift !== undefined && stop.pace ? 'about ' : 'at '}${when}.` : ''}${past}`
 }
 
 /**
@@ -914,6 +913,8 @@ export type WarmFacts = {
   fiveHourLeft?: number
   /** A guard stop rule is in force. */
   stopped: boolean
+  /** Seconds until that stop lets go on its own, when known. */
+  liftsIn?: number
   /** A turn is running. */
   busy: boolean
   /** Seconds added to `after`, so sessions idle since the same moment don't all re-read at once. */
@@ -941,7 +942,8 @@ export function warmDue(k: KeepWarm | undefined, f: WarmFacts): { due: boolean; 
   if (f.modelChanged) return { due: false, why: 'the model changed' }
   if (f.compactionCovers) return { due: false, why: 'Claude Code compacts this conversation when idle' }
   if (f.prefix < k.minContext) return { due: false, why: 'too small to be worth keeping' }
-  if (f.stopped) return { due: false, why: 'a guard stop is in force' }
+  // A hold mustn't cost the cache: bridge it when the re-reads left can reach its lift.
+  if (f.stopped && (f.liftsIn === undefined || f.liftsIn > (k.max - f.done) * WARM_LAPSE)) return { due: false, why: 'held for longer than keep-warm can bridge' }
   if (f.fiveHourLeft === undefined || !Number.isFinite(f.fiveHourLeft) || f.fiveHourLeft < k.minLeft) return { due: false, why: 'the 5-hour window is low' }
   if (f.done >= k.max) return { due: false, why: 'kept warm as many times as allowed' }
   if (f.thisHour >= k.perHour) return { due: false, why: 'the hourly limit on this account is reached' }

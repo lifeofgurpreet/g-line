@@ -1,5 +1,17 @@
 # Changelog
 
+## 0.17.0 (2026-10-23): a hold that doesn't cost you the cache, in one short line
+
+- **Keep-warm keeps going through a hold** that lifts within the re-reads it has left, so a
+  held session doesn't come back to a cold cache and a 180k rebuild. A hold that lasts days is
+  left alone. Before, keep-warm stood aside for any stop.
+- **The refusal is one short line**: `g-line held this: sam@example.com has 35% of its 5-hour
+  window left; g-line keeps the last 40% for its owner. Lifts at 13:00, in 3h 0m. Enter again
+  sends it anyway.` It names when the hold lifts (a pace step's lift, the end of a rule's
+  hours), not the window's reset days away, and drops the talk of groups.
+- **A loop or schedule held again** in the same hold gets `g-line: still held, lifts about
+  13:00.`, not the whole paragraph each time it fires.
+
 ## 0.16.0 (2026-10-23): pace the working day, and use the end of the week
 
 - **A pace rule can pace the 5-hour window** (`"window": "5h"`): the allowance rises across the

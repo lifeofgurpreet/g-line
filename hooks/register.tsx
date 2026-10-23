@@ -1544,8 +1544,17 @@ async function guardPrompt($: EngineInterface, e: { origin: { kind: string }; co
     plan = { at: lift !== undefined ? clock(Math.floor(lift / 1000), at / 1000, offsetAt(at)) : undefined, cache }
     void update($, tick, n => n + 1)
   }
+  // A loop's or schedule's prompt held again in the same hold: one line, not the whole story.
+  if (!person && autoSaid === epoch) {
+    const lift = liftsAt(v.stop, at, offsetAt(at))
+    return `g-line: still held${lift !== undefined ? `, lifts about ${clock(Math.ceil(lift / 1000), at / 1000, offsetAt(at))}` : ''}.`
+  }
+  if (!person) autoSaid = epoch
   return stopText(v.stop, at, offsetAt(at), simulation !== undefined, { account, typed: person, queued: plan })
 }
+
+/** The hold a loop's or schedule's prompt was last told about in full. */
+let autoSaid: string | undefined
 
 /**
  * The effort a main-loop step runs at under the guard, decided at the turn's
@@ -1642,6 +1651,7 @@ async function keepWarm($: EngineInterface): Promise<void> {
     now, lastAt: c.lastAt, ttl: c.learned ?? ttl ?? automaticTtl(s), prefix: c.prefix, compacted: c.compactedTo !== undefined,
     compactionCovers: idle !== undefined && c.prefix >= idle.minTokens, done: warmRested ? k.max : warmed, thisHour,
     fiveHourLeft: five ? 100 - five.percentUsed : undefined, stopped: verdict.stop !== undefined,
+    ...(verdict.stop ? (lift => (lift !== undefined ? { liftsIn: Math.max(0, lift / 1000 - now) } : {}))(liftsAt(verdict.stop, now * 1000, offsetAt(now * 1000))) : {}),
     busy: (await read($, turnNow)) !== null, jitter: warmJitter, accountChanged: c.accountChanged === true,
     modelChanged: !!model && !!s.model && plainModel(model) !== plainModel(s.model),
     notLastTouched: typeof t?.session === 'string' && t.session !== sessionId,

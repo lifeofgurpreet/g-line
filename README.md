@@ -332,9 +332,10 @@ window.
   notice). The one notice it lets through is the report of a background agent your
   conversation started: that work is done and paid for, and a refused report would never
   reach Claude. A stop never stops a tool call, and a turn already running only with `end_turn` (below). A slash command
-  you type still goes through. The refusal says why in plain words, for example `g-line held
-  this prompt: sam@example.com is in your people group, with 35% of its 5-hour window left. g-line
-  keeps the last 40% of it for its owner. It resets at 13:00, in 3h 0m.` **Claude Code puts the
+  you type still goes through. The refusal is one short line, for example `g-line held this:
+  sam@example.com has 35% of its 5-hour window left; g-line keeps the last 40% for its owner.
+  Lifts at 13:00, in 3h 0m. Enter again sends it anyway.` A loop's or schedule's prompt held
+  again in the same hold gets just `g-line: still held, lifts about 13:00.` **Claude Code puts the
   refused prompt back in the box: press Enter again to send it anyway** (the same prompt, within
   three minutes; a loop's or schedule's prompt never gets this). `/g-line guard once` lets the
   next prompt through, `/g-line guard pause` lets everything through for an hour (or
@@ -394,9 +395,8 @@ allowance, the rule steps down, one step at each of `tiers` points ahead (`[0, 3
 
 Inside the `reserve` plus the buffer, it stops whatever the pace. Each step lets go 2 points
 after it would have started, so it doesn't flicker, and only in the account and the window it
-began in. The words are plain: `g-line held this prompt: sam@example.com is in your team group,
-and ahead of pace: 62% of the week used, 48% allowed by now. g-line paces the week so it lasts
-for the team. It resets at Sat 10:00, in 4d 1h.` The rule takes the same `groups`, `accounts`,
+began in. The words are plain: `g-line held this: sam@example.com is ahead of pace: 62% of the
+week used, 48% allowed by now, so it lasts for the team. Lifts about Sun 12:00, in 2d 1h.` The rule takes the same `groups`, `accounts`,
 `except_accounts`, `hours` and `unless_reset_within` as any other, and no `left`, `effort`,
 `agents` or `stop` of its own. `reserve` is 0 to 50, `burst` 0 to `100 - reserve`,
 `office_weight` 0.1 to 20, and the `tiers` rise.
@@ -517,7 +517,9 @@ conversation. The re-read counts toward your usage like any cached read. Its lim
 - It needs an hour-long cache. Past your plan's limit, on usage credits, Claude Code uses
   five-minute caches, so it stops there.
 - It needs `min_left` percent of the 5-hour window left (20).
-- It doesn't run while a stop rule is in force or the guard is paused.
+- A hold mustn't cost you the cache: while a stop is in force, it keeps re-reading if the stop
+  lifts within the re-reads it has left (`max` of them, about an hour each), and stands aside for
+  a hold that lasts longer. It doesn't run while the guard is paused or off here.
 - It skips a cache the conversation no longer has: after a compaction, a `/clear`, a model
   change, or an account change.
 - It stands aside for a conversation Claude Code compacts on its own when idle (`idleCompaction`,

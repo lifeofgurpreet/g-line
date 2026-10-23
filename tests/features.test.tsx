@@ -1161,7 +1161,7 @@ test('0.11.0: with guard.queue a typed prompt the guard holds is sent on its own
   await measure($, w, 95)
   await w.clock.advance(15_000)
   const held = await $.prompt.submit(typed('finish the report'))
-  expect(held.drop).toMatch(/g-line will send it when the guard lets it through, about \d\d:\d\d.* Enter again sends it now; \/g-line guard cancel keeps it here\.$/)
+  expect(held.drop).toMatch(/Queued for about \d\d:\d\d.*; Enter again sends it now\.$/)
   const ui = await $.ui.mount({ plugin: 'g-line', surface: 'terminal', component: 'PromptHint',
     props: { isDraft: false, isWorking: false, hint: '? for shortcuts' }, viewport: { columns: 200, rows: 40 } })
   expect(await ui.find({ type: 'Text', text: /guard: held, 5% 5h left till \d\d:\d\d, 1 queued/ })).toBeDefined()
@@ -1203,7 +1203,7 @@ test('a stop rule refuses new prompts with the window, what is left and the way 
   await w.clock.advance(15_000)
   expect(w.toasts.filter(t => t.startsWith('g-line guard: new prompts stop (4% of the 5-hour window left)')).length).toBe(1)
   const refused = await $.prompt.submit(typed('go on'))
-  expect(refused.drop).toMatch(/^g-line held this prompt: 4% of the 5-hour window left, at or under your 5% stop\. It resets at \d\d:\d\d, in 1h 59m\. Press Enter again to send it anyway/)
+  expect(refused.drop).toMatch(/^g-line held this: 4% of the 5-hour window left, at or under your 5% stop\. Lifts at \d\d:\d\d, in 1h 59m\. Enter again sends it anyway/)
   // A loop's or schedule's wakeup is refused too; a typed slash command and a delivery into a running turn are not.
   expect((await $.prompt.submit({ text: 'check CI', wait: false, origin: { kind: 'scheduled-trigger' } } as never)).drop).toBeDefined()
   expect((await $.prompt.submit({ text: '/compact', wait: false, origin: { kind: 'composer' }, command: { name: 'compact', args: '' } } as never)).drop).toBeUndefined()
@@ -1216,7 +1216,8 @@ test('a stop rule refuses new prompts with the window, what is left and the way 
   expect(w.toasts.some(t => t === 'g-line sent it anyway, with 4% of the 5-hour window left.')).toBe(true)
   expect((await $.prompt.submit(typed('and this?'))).drop).toBeDefined()
   expect((await $.prompt.submit(typed('something else'))).drop).toBeDefined()
-  expect((await $.prompt.submit({ text: 'check CI', wait: false, origin: { kind: 'scheduled-trigger' } } as never)).drop).toBeDefined()
+  // A schedule held again in the same hold gets one line, not the whole story.
+  expect((await $.prompt.submit({ text: 'check CI', wait: false, origin: { kind: 'scheduled-trigger' } } as never)).drop).toMatch(/^g-line: still held, lifts about \d\d:\d\d\.$/)
   await $.command.run({ command: 'g-line', args: 'guard pause 30m' } as never)
   expect(await $.prompt.submit(typed('paused'))).toEqual({ text: 'paused' })
   await $.command.run({ command: 'g-line', args: 'guard resume' } as never)
@@ -1484,7 +1485,7 @@ test('/g-line guard simulate tries the rules with no quota spent, and a headless
   expect(logs).toEqual(['g-line guard: no usage readings in this session yet, so its rules cannot act on this prompt.'])
   await $.command.run({ command: 'g-line', args: 'guard simulate 5h 96' } as never)
   expect(w.toasts.some(t => t.startsWith('g-line guard: new prompts stop (4% of the 5-hour window left)') && t.endsWith('(Simulated.)'))).toBe(true)
-  expect((await $.prompt.submit(typed('try it'))).drop).toMatch(/^g-line held this prompt: 4% of the 5-hour window left/)
+  expect((await $.prompt.submit(typed('try it'))).drop).toMatch(/^g-line held this: 4% of the 5-hour window left/)
   const ui = await $.ui.mount({ plugin: 'g-line', surface: 'terminal', component: 'PromptHint',
     props: { isDraft: false, isWorking: false, hint: '? for shortcuts' }, viewport: { columns: 200, rows: 40 } })
   expect(await ui.find({ type: 'Text', text: /^guard: held, 4% 5h left till \d\d:\d\d \(sim\)$/ })).toBeDefined()
@@ -1727,7 +1728,7 @@ test('a refusal while simulating says it was simulated', { timeoutMs: 30_000 }, 
   await measure($, w, 10)
   await $.command.run({ command: 'g-line', args: 'guard simulate 5h 96' } as never)
   const refused = await $.prompt.submit(typed('go on'))
-  expect(refused.drop).toMatch(/^g-line held this prompt: 4% of the 5-hour window left \(simulated\), at or under your 5% stop\./)
+  expect(refused.drop).toMatch(/^g-line held this: 4% of the 5-hour window left \(simulated\), at or under your 5% stop\./)
   // Every toast fits the toast's three lines: its way out is never cut off.
   expect(w.toasts.filter(t => t.includes('simulat')).every(t => t.length <= 110)).toBe(true)
 })
@@ -1830,7 +1831,7 @@ test('0.12.0: a paced week holds a prompt ahead of pace, says so in plain words,
   await w.clock.advance(15_000)
   expect(w.toasts.some(t => t.startsWith('g-line guard: ahead of pace: 60% of the week used, 31% allowed by now: the conversation runs at effort medium, new subagents run on sonnet, new prompts stop.'))).toBe(true)
   const refused = await $.prompt.submit(typed('go on'))
-  expect(refused.drop).toMatch(/^g-line held this prompt: Ahead of pace: 60% of the week used, 31% allowed by now\./)
+  expect(refused.drop).toMatch(/^g-line held this: ahead of pace: 60% of the week used, 31% allowed by now\./)
   await $.command.run({ command: 'g-line', args: 'guard why' } as never)
   expect(w.toasts.some(t => t.startsWith('g-line guard: Held: new prompts stop. The hold lifts about '))).toBe(true)
   // back on pace once the week has used little: the prompt goes through

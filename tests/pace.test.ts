@@ -175,8 +175,8 @@ test('evaluate: a pace rule works through its steps for the groups it names, and
   expect(three.end?.rule.id).toBe('r0')
   const text = stopText(three.stop as NonNullable<typeof three.stop>, MON_9, 480, false, { account: 'team@example.com' })
   expect(text).toMatch(/ahead of pace: 28% of the week used, 21% allowed by now/)
-  expect(text).toMatch(/team@example\.com is in your team group/)
-  expect(text).toMatch(/Press Enter again/)
+  expect(text).toMatch(/^g-line held this: team@example\.com is ahead of pace/)
+  expect(text).toMatch(/Lifts about .*Enter again sends it anyway\.$/)
   // a group the rule doesn't name is left alone
   expect(evaluate(GUARD, week(28, MON_9, RESET, 'sam@example.com')).rules).toEqual([])
   // 'other' is named: an account in no group is paced
