@@ -29,6 +29,8 @@ export type Rule = {
   /** A model alias or id for new subagents (`sonnet`, `haiku`). */
   agents?: string
   stop?: boolean
+  /** A stop that also ends a running main-loop turn at its next step, once the rule starts mid-turn. */
+  endTurn?: boolean
   /** The rule waits while the window resets within this many seconds. */
   unlessResetWithin?: number
   /** Lower-case parts of the account reading, any of which picks the account. */
@@ -167,6 +169,10 @@ export function parseGuard(raw: unknown): GuardConfig {
     if (typeof e.agents === 'string' && /^[a-z0-9._[\]-]{2,80}$/i.test(e.agents.trim())) rule.agents = e.agents.trim()
     else if (e.agents !== undefined) errors.push(`rule ${index + 1}: "agents" names a model, such as "sonnet"`)
     if (e.stop === true) rule.stop = true
+    if (e.end_turn === true) {
+      if (rule.stop) rule.endTurn = true
+      else errors.push(`rule ${index + 1}: "end_turn" goes with "stop": true`)
+    }
     if (!rule.effort && !rule.agents && !rule.stop) {
       errors.push(`rule ${index + 1} does nothing: give it "effort", "agents" or "stop": true`)
       return
@@ -251,6 +257,8 @@ export type Verdict = {
   effort?: Effort
   agents?: string
   stop?: { rule: Rule; window: WindowName; left: number; resetsAt?: number }
+  /** The strictest stop in force that also ends a running turn. */
+  end?: { rule: Rule; window: WindowName; left: number; resetsAt?: number }
 }
 
 /**
@@ -295,6 +303,7 @@ export function evaluate(guard: GuardConfig, facts: Facts, before: Active = {}):
     if (rule.agents && (!verdict.agents || rank(rule.agents) < rank(verdict.agents))) verdict.agents = rule.agents
     const w = facts.windows[rule.window]
     if (rule.stop && w && (!verdict.stop || w.left < verdict.stop.left)) verdict.stop = { rule, window: rule.window, left: w.left, resetsAt: w.resetsAt }
+    if (rule.endTurn && w && (!verdict.end || w.left < verdict.end.left)) verdict.end = { rule, window: rule.window, left: w.left, resetsAt: w.resetsAt }
   }
   return verdict
 }
@@ -376,6 +385,14 @@ export function stopText(stop: NonNullable<Verdict['stop']>, nowMs: number, offs
     + `${untilText(stop.resetsAt, nowMs, offsetMinutes)} /g-line guard once lets the next prompt through; /g-line guard pause, an hour of them.`
 }
 
+/** Why a running turn was ended: the window, what's left, when it resets, and how to carry on. */
+export function endText(end: NonNullable<Verdict['end']>, nowMs: number, offsetMinutes: number, simulated = false): string {
+  const whose = namesAccounts(end.rule) ? ' on this shared account' : ''
+  const sim = simulated ? 'simulated; ' : ''
+  return `g-line guard ended this turn before its next request: ${pct(end.left)} of the ${NAMES[end.window]} window left${whose} (${sim}your rule: stop at ${end.rule.left}%).`
+    + `${untilText(end.resetsAt, nowMs, offsetMinutes)} /g-line guard once, then "continue", carries on.`
+}
+
 const hhmm = (minute: number) => `${String(Math.floor(minute / 60)).padStart(2, '0')}:${String(minute % 60).padStart(2, '0')}`
 
 /** A rule in words: `at 10% of 5h left, on accounts "team@", 09:00-17:00 Mon-Fri (Asia/Kuala_Lumpur): stop`. */
@@ -388,7 +405,7 @@ export function ruleText(rule: Rule): string {
     const days = rule.hours.days.length === 7 ? 'daily' : rule.hours.days.map(d => (DAYS[d] ?? '').replace(/^./, c => c.toUpperCase())).join(',')
     when.push(`${hhmm(rule.hours.from)}-${hhmm(rule.hours.to)} ${days}${rule.tz ? ` (${rule.tz})` : ''}`)
   }
-  const what = [rule.effort ? `effort ${rule.effort}` : '', rule.agents ? `agents on ${rule.agents}` : '', rule.stop ? 'stop new prompts' : ''].filter(Boolean)
+  const what = [rule.effort ? `effort ${rule.effort}` : '', rule.agents ? `agents on ${rule.agents}` : '', rule.stop ? (rule.endTurn ? 'stop new prompts and end a running turn' : 'stop new prompts') : ''].filter(Boolean)
   return `${when.join(', ')}: ${what.join(', ')}`
 }
 

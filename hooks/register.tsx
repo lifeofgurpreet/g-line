@@ -37,7 +37,7 @@ import {
 import type { PulseFeed, PulseItem, Shown } from './pulse'
 import { gitSegmentOf } from './core'
 import {
-  AGENT_TYPE_MODELS, accountIdentity, accountKey, agentModel, cappedEffort, changeText, effortKeepsCache, evaluate, guardForms, inForceText, leaseFree, namesAccounts, readBack, ruleText, simulated, stopText,
+  AGENT_TYPE_MODELS, accountIdentity, accountKey, agentModel, cappedEffort, changeText, effortKeepsCache, endText, evaluate, guardForms, inForceText, leaseFree, namesAccounts, readBack, ruleText, simulated, stopText,
   resumeAt, warmDue, warmForms,
 } from './guard'
 import type { Effort, Facts, Simulation, Verdict, WindowName } from './guard'
@@ -670,7 +670,7 @@ async function receiptOf($: EngineInterface, e: { durationMs: number; usage?: { 
     cacheWrite: live?.cacheWrite, warmBefore: live?.warmBefore, failures: live?.failures,
     failedTool: live?.failedTool ?? undefined, overlap, cold: live?.cold, compacted: live?.compacted, window,
     ratio: costRatio(cost, overlap, earlier),
-    guardEffort: live?.guardEffort, guardAgents: live?.guardAgents, servedBy: live?.servedBy, accountChanged: live?.accountChanged,
+    guardEffort: live?.guardEffort, guardAgents: live?.guardAgents, guardEnded: live?.guardEnded, servedBy: live?.servedBy, accountChanged: live?.accountChanged,
   }
 }
 
@@ -1245,6 +1245,8 @@ let passOnce = false
 let reportsDue = 0
 /** The effort the guard set for the running main-loop turn, kept for each of its steps. */
 let effortLatch: { turnId: string; from?: string; to?: Effort } | undefined
+/** The main-loop turn an `end_turn` rule leaves alone: it began with the rule in force, or was already ended. */
+let endSpared: string | undefined
 /** The guard's effort waits for a cold cache where a change of effort would rebuild it. */
 let effortWaits = false
 /** Whether a lower effort keeps the cache on this provider (Claude Code's own rule). */
@@ -1398,6 +1400,32 @@ async function guardEffortOf($: EngineInterface, e: { turnId: string; effort?: u
   effortLatch = { turnId: e.turnId, from: typeof e.effort === 'string' ? e.effort : undefined, to }
   if (to) await update($, turnNow, live => (live ? { ...live, guardEffort: { from: String(e.effort), to } } : live))
   return to
+}
+
+/**
+ * A stop rule with `end_turn` that started while this main-loop turn ran: the
+ * turn ends before its next request, so every tool the last response asked
+ * for has already run. A turn that began with the rule in force (let through
+ * by once, a pause, a command or an agent's report) runs on, and so does
+ * every turn while the guard is paused. Said in a toast, a notification, line
+ * 2 and the turn's receipt.
+ */
+async function guardEnds($: EngineInterface, turnId: string): Promise<boolean> {
+  if (!config.guard.on || endSpared === turnId || !config.guard.rules.some(rule => rule.endTurn)) return false
+  const v = await guardNow($)
+  if (!v.end || (await pausedFor($)) > 0) return false
+  endSpared = turnId
+  const end = v.end
+  const at = await nowMs($)
+  const text = endText(end, at, offsetAt(at), simulation !== undefined)
+  await update($, turnNow, live => (live ? { ...live, guardEnded: { left: end.left, window: end.window } } : live))
+  if (!(await read($, hidden))) {
+    $.ui.toast(text, { timeoutMs: 15_000 })
+    await $.ui.notify(text, { title: 'g-line guard' }).catch(() => undefined)
+  }
+  await suggest($, '/g-line guard once')
+  await $.turn.abort({ turnId }).catch(() => undefined)
+  return true
 }
 
 /** The model a new subagent starts on under the guard, or nothing to leave it be. */
@@ -1846,6 +1874,9 @@ export const register: Register = (on, options) => {
       // the receipt leaves cost and context out
     }
     coldThisTurn = false
+    if (config.guard.on && config.guard.rules.some(rule => rule.endTurn)) {
+      endSpared = (await guardNow($).catch(() => undefined))?.end ? e.turnId : undefined
+    }
     const startAt = await nowMs($)
     const warmBefore = (await read($, snap)).cache?.cached === true
     const overlap = (await read($, agents)).some(row => row.background && isActive(row.status))
@@ -1869,6 +1900,10 @@ export const register: Register = (on, options) => {
   // Each main-loop request: its model and effort, and whether the prompt
   // cache served it. Subagents keep caches of their own and are not counted.
   on('turn.step', async function* ($, e, next) {
+    // A stop rule with end_turn that started mid-turn: no further request.
+    if (e.agentId === undefined && e.index > 0 && (await guardEnds($, e.turnId).catch(() => false))) {
+      return { turnId: e.turnId, index: e.index, answer: '', toolUses: [], stopReason: null, usage: null }
+    }
     const started = await nowSeconds($)
     // The guard's effort rule, on the main conversation only; a turn keeps one effort throughout.
     const capped = e.agentId === undefined && config.guard.rules.length ? await guardEffortOf($, e).catch(() => undefined) : undefined

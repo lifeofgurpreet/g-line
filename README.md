@@ -300,7 +300,7 @@ much of a usage window is left (`left`, in percent, the 5-hour window unless it 
       { "left": 20, "effort": "medium" },
       { "left": 10, "agents": "sonnet" },
       { "left": 5, "stop": true, "unless_reset_within": "1h" },
-      { "left": 10, "stop": true, "accounts": ["team@"], "hours": "09:00-17:00 mon-fri", "tz": "Asia/Kuala_Lumpur" }
+      { "left": 10, "stop": true, "end_turn": true, "accounts": ["team@"], "hours": "09:00-17:00 mon-fri", "tz": "Asia/Kuala_Lumpur" }
     ],
     "keep_warm": { "after": "45m", "max": 2, "min_context": "50k" }
   }
@@ -310,7 +310,8 @@ much of a usage window is left (`left`, in percent, the 5-hour window unless it 
 That reads: at 20% left, run the conversation at effort `medium`. At 10%, start new subagents
 on Sonnet. At 5%, stop new prompts, unless the window resets within the hour. And on a shared
 account (one whose `account_command` line contains `team@`), stop at 10% during office
-hours in Kuala Lumpur, so teammates keep some of the window.
+hours in Kuala Lumpur, ending a turn that's running then too, so teammates keep some of the
+window.
 
 - **`effort`** lowers the main conversation's effort, never raises it, and applies from the
   start of a turn to its end. On Opus 5.5, Sonnet 5.5, Haiku 5.5 and Fable 5.1 through the
@@ -328,11 +329,20 @@ hours in Kuala Lumpur, so teammates keep some of the window.
   typed prompts and machine-started ones (a `/loop` or schedule waking up, a background task's
   notice). The one notice it lets through is the report of a background agent your
   conversation started: that work is done and paid for, and a refused report would never
-  reach Claude. A stop never stops a turn already running, or a tool call. A slash command
+  reach Claude. A stop never stops a tool call, and a turn already running only with `end_turn` (below). A slash command
   you type still goes through. Claude Code puts the refused prompt back in the box: clear it
   (ctrl+u), type `/g-line guard once`, and ctrl+y brings your prompt back for one more turn.
   `/g-line guard pause` lets everything through for an hour (or `pause 30m`) in every session
   on the machine, and `/g-line guard resume` ends the pause.
+- **`end_turn`** (with `stop`): a stop also ends a turn that's already running, once the rule
+  starts during it. The turn ends between steps, before its next request, so every tool call
+  the last response asked for has finished; nothing is cut off mid-call. A turn that began with
+  the rule already in force (`/g-line guard once`, a pause, a slash command, an agent's report)
+  runs to its end, and so does every turn while the guard is paused. You get a toast, a
+  notification and `guard: stopped` on line 2; Claude Code draws no closing line for a turn
+  ended this way. Type
+  `/g-line guard once`, then `continue`, to carry on. Without `end_turn` a stop only refuses
+  new prompts, so one long agentic turn can still run a window down to nothing.
 - **`unless_reset_within`**: the rule waits while the window resets within that time.
 - **`accounts`**: the rule applies only when the `account_command` line contains one of these
   words, in any case. With no account reading, it doesn't apply, and with no

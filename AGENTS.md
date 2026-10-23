@@ -35,9 +35,11 @@ coding agents and for people.
    rules the person wrote under `guard` in config.json, and with none it does nothing. It
    may lower the main conversation's effort for a whole turn (`turn.step`), start new
    subagents on a cheaper model (`agent.spawn`), refuse a prompt that would start a turn
-   (`prompt.submit`), re-read an idle cache (`$.model.fork`), and, with `resume`, send one
+   (`prompt.submit`), with `end_turn`, end a running main-loop turn between steps, before its next
+   request (`$.turn.abort`), re-read an idle cache (`$.model.fork`), and, with `resume`, send one
    prompt after a usage limit's reset (`$.prompt.submit`, one session per account). It never touches a tool
-   call, a running turn, the main model or the system prompt, and it never raises a cost.
+   call, a turn mid-step (`end_turn` waits for the step boundary and only a rule the person
+   marked so), the main model or the system prompt, and it never raises a cost.
    Everything it does is said: a toast when a rule starts or stops, line 2 while one is in
    force, the turn's receipt, and `/g-line guard`. A new guard action needs all four, and a
    test that it does nothing without a rule.

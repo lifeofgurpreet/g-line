@@ -1,7 +1,7 @@
 import { expect, test } from 'claude-code/testing'
 
 import {
-  KEEP_WARM_DEFAULTS, accountIdentity, accountKey, agentModel, cappedEffort, changeText, effortKeepsCache, evaluate, guardForms, inHours, leaseFree,
+  KEEP_WARM_DEFAULTS, accountIdentity, accountKey, agentModel, cappedEffort, changeText, effortKeepsCache, endText, evaluate, guardForms, inHours, leaseFree,
   localTime, parseGuard, parseHours, readBack, ruleText, seconds, simulated, stopText, tokenCount, warmDue, warmForms,
 } from '../hooks/guard'
 import type { Facts, WarmFacts } from '../hooks/guard'
@@ -112,6 +112,20 @@ test('0.8.2: a rule for every account but yours, on the weekly window as well as
   expect(stopText(evaluate(g, facts(80, { ...shared, week: 8 })).stop!, TUE_10_KL, 480)).toContain('on this shared account')
   expect(ruleText(g.rules[1]!)).toBe('at 10% of week left, unless it resets within 60m, on accounts except "me@": stop new prompts')
   expect(parseGuard({ rules: [{ left: 10, stop: true, except_accounts: [] }] }).errors.length).toBe(1)
+})
+
+test('0.9.0: end_turn goes with a stop, is said in the rule, and marks the verdict', () => {
+  const g = parseGuard({ rules: [{ left: 10, stop: true, end_turn: true, except_accounts: ['me@'] }, { left: 20, effort: 'low', end_turn: true }] })
+  expect(g.errors).toEqual(['rule 2: "end_turn" goes with "stop": true'])
+  expect(g.rules[0]?.endTurn).toBe(true)
+  expect(g.rules[1]?.endTurn).toBeUndefined()
+  expect(ruleText(g.rules[0]!)).toBe('at 10% of 5h left, on accounts except "me@": stop new prompts and end a running turn')
+  const v = evaluate(g, facts(9, { account: 'team@example.com' }))
+  expect([v.stop?.rule.id, v.end?.rule.id]).toEqual(['r0', 'r0'])
+  expect(evaluate(g, facts(9, { account: 'me@example.com' })).end).toBeUndefined()
+  // A plain stop never ends a turn.
+  expect(evaluate(RULES, facts(4)).end).toBeUndefined()
+  expect(endText(v.end!, TUE_10_KL, 480)).toBe('g-line guard ended this turn before its next request: 9% of the 5-hour window left on this shared account (your rule: stop at 10%). It resets at 13:00, in 3h 0m. /g-line guard once, then "continue", carries on.')
 })
 
 test('time windows: day lists and ranges, past midnight, and the machine\'s own zone when none is named', () => {

@@ -1,5 +1,23 @@
 # Changelog
 
+## 0.9.0 (2026-10-23): a stop that ends a running turn
+
+- **`end_turn`**, for a stop rule. A stop used to refuse only new prompts, so one long agentic
+  turn (an agent working through a task on its own for an hour) ran a shared account's window
+  to nothing with the rule in force the whole time. With `"end_turn": true`, a stop rule that
+  starts during a turn ends it between steps, before the next request: every tool call the last
+  response asked for has finished, so nothing is cut off mid-call. Claude Code's `$.turn.abort`
+  does the ending. A turn that began with the rule already in force (let through by
+  `/g-line guard once`, a pause, a slash command or an agent's report) runs to its end, and so
+  does every turn while the guard is paused. Said in a toast, a notification and line 2
+  (`guard: stopped`). Claude Code draws no closing line for a turn ended this way; where it
+  does, the receipt reads `guard: ended the turn, 8% 5h left`. `/g-line guard once`, then
+  `continue`, carries on.
+- **Tried in a real session** (Claude Code 2.1.309, Haiku 5.5): with a stop rule in force on
+  another account, the account changed to a shared one while a long tool call ran. The call
+  finished, the turn made no further request, and the background task's later wake-up was
+  refused like any other.
+
 ## 0.8.2 (2026-10-23): a rule for every account but yours
 
 - **`except_accounts`.** A rule can now apply to every account except the ones named, so

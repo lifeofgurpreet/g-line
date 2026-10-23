@@ -118,7 +118,8 @@ export function receiptEvents(r: Receipt): Part[] {
   // The model that answered wasn't the one asked for: Claude Code fell back.
   if (r.servedBy) events.push({ tone: 'bad', text: `answered by ${modelName(r.servedBy)}` })
   // What the guard changed on this turn, by the person's own rules.
-  const guard = [r.guardEffort ? `effort ${r.guardEffort.to}` : '', r.guardAgents ? `${plural(r.guardAgents, 'agent')} on a cheaper model` : '']
+  const guard = [r.guardEnded ? `ended the turn, ${Math.max(0, Math.round(r.guardEnded.left))}% ${r.guardEnded.window} left` : '',
+    r.guardEffort ? `effort ${r.guardEffort.to}` : '', r.guardAgents ? `${plural(r.guardAgents, 'agent')} on a cheaper model` : '']
     .filter(Boolean)
   if (guard.length) events.push({ tone: 'warn', text: `guard: ${guard.join(', ')}` })
   if (r.failures !== undefined && r.failures >= 2) {

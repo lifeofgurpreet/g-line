@@ -1048,6 +1048,88 @@ test('the guard is off by default: at 3% left nothing is refused, lowered or mov
   expect(w.toasts.some(t => t.includes('guard'))).toBe(false)
 })
 
+async function stepResult($: Engine, turnId: string, index: number) {
+  const stream = $.turn.step({ turnId, index, model: 'claude-opus-5-5', effort: 'high', messageCount: 2 + index * 2 } as never) as unknown as AsyncIterator<unknown, unknown>
+  let r = await stream.next()
+  while (!r.done) r = await stream.next()
+  const v = r.value as { value?: unknown } | undefined
+  return ((v && 'value' in v ? v.value : v) ?? {}) as { usage: unknown; toolUses: unknown[] }
+}
+
+test('0.9.0: a stop with end_turn ends a running turn before its next request once the rule starts mid-turn; a plain stop never does', { timeoutMs: 30_000 }, async ($, on) => {
+  const w = world(on)
+  w.config = { guard: { rules: [{ left: 10, stop: true, end_turn: true }] } }
+  const seen = engineBelow(on)
+  const aborted: string[] = []
+  on('turn.abort', ($, e) => {
+    aborted.push((e as unknown as { turnId: string }).turnId)
+    return { value: undefined } as never
+  })
+  on('ui.render', { component: 'TurnDuration' }, ($, e) => {
+    const { Text } = $.ui.resolve(e)
+    return <Text>{`✻ ${e.props.word} for 1m 4s`}</Text>
+  })
+  hintBelow(on)
+  await start($)
+  await measure($, w, 50)
+  await w.clock.advance(15_000)
+  await $.turn.start({ text: 'go', turnId: 't1' })
+  expect((await stepResult($, 't1', 0)).usage).not.toBeNull()
+  // The window falls past the rule while the turn runs: the next step makes no request.
+  await measure($, w, 92)
+  const ended = await stepResult($, 't1', 1)
+  expect(ended.usage).toBeNull()
+  expect(ended.toolUses).toEqual([])
+  expect(seen.efforts).toEqual(['high'])
+  expect(aborted).toEqual(['t1'])
+  expect(w.toasts.some(t => /^g-line guard ended this turn before its next request: 8% of the 5-hour window left \(your rule: stop at 10%\)\. It resets at \d\d:\d\d, in 2h 0m\. \/g-line guard once, then "continue", carries on\.$/.test(t))).toBe(true)
+  expect(w.suggested[w.suggested.length - 1]).toBe('/g-line guard once')
+  await $.turn.complete({ answer: '', durationMs: 64_000, isAborted: true, turnId: 't1', reason: 'aborted',
+    usage: { ...USAGE_ARGS, model: 'claude-opus-5-5' } } as never)
+  await $.session.append({ message: { type: 'system', name: 'turn_duration', content: [] }, door: 'notice',
+    origin: { kind: 'engine' }, uuid: 'line-t1' } as never)
+  const line = await $.ui.mount({ plugin: 'g-line', surface: 'terminal', component: 'TurnDuration', requestId: 'line-t1',
+    props: { word: 'Worked' } as never, viewport: { columns: 200, rows: 5 } })
+  expect(await line.find({ type: 'Text', text: /guard: ended the turn, 8% 5h left/ })).toBeDefined()
+  await line.unmount()
+  // A turn let through with the rule in force (once) runs to its end.
+  await $.command.run({ command: 'g-line', args: 'guard once' } as never)
+  expect(await $.prompt.submit(typed('continue'))).toEqual({ text: 'continue' })
+  await $.turn.start({ text: 'continue', turnId: 't2' })
+  expect((await stepResult($, 't2', 0)).usage).not.toBeNull()
+  expect((await stepResult($, 't2', 1)).usage).not.toBeNull()
+  expect(aborted).toEqual(['t1'])
+})
+
+test('0.9.0: without end_turn, or while paused, a turn runs on past a stop rule', { timeoutMs: 30_000 }, async ($, on) => {
+  const w = world(on)
+  w.config = { guard: { rules: [{ left: 10, stop: true }] } }
+  const seen = engineBelow(on)
+  const aborted: string[] = []
+  on('turn.abort', ($, e) => {
+    aborted.push((e as unknown as { turnId: string }).turnId)
+    return { value: undefined } as never
+  })
+  await start($)
+  await measure($, w, 50)
+  await $.turn.start({ text: 'go', turnId: 't1' })
+  await stepResult($, 't1', 0)
+  await measure($, w, 95)
+  expect((await stepResult($, 't1', 1)).usage).not.toBeNull()
+  expect(seen.efforts.length).toBe(2)
+  expect(aborted).toEqual([])
+  // end_turn, but paused: runs on.
+  w.config = { guard: { rules: [{ left: 10, stop: true, end_turn: true }] } }
+  await w.clock.advance(31_000)
+  await $.command.run({ command: 'g-line', args: 'guard pause 30m' } as never)
+  await measure($, w, 50)
+  await $.turn.start({ text: 'go', turnId: 't2' })
+  await stepResult($, 't2', 0)
+  await measure($, w, 95)
+  expect((await stepResult($, 't2', 1)).usage).not.toBeNull()
+  expect(aborted).toEqual([])
+})
+
 test('a stop rule refuses new prompts with the window, what is left and the way past; once and pause let them through', { timeoutMs: 30_000 }, async ($, on) => {
   const w = world(on)
   w.config = { guard: GUARD }
