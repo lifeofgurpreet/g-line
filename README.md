@@ -362,6 +362,16 @@ window.
   zone; the machine's own when left out).
 - **`groups`**: the rule applies to every account in these groups (see Account groups below).
 
+**Queue a held prompt** (`"queue": true` in `guard`). Instead of handing your prompt back, g-line
+holds it and sends it itself as soon as the guard lets go: when the window resets, or when a
+rule's hours end. The refusal says when (`g-line will send it when the guard lets it through,
+about 08:21`), line 2 adds `1 queued`, and `/g-line guard cancel` keeps it from going. If the
+prompt cache would lapse before then, g-line re-reads it once, a few minutes before it would,
+so the prompt lands on a warm cache (at most twice, and only with room left in the window; a
+window that's used up can't be read from, and the refusal says the cache will be cold). Enter
+again still sends it straight away. A prompt you type that goes through, `/clear`, or an
+account change drops the held one.
+
 #### Account groups
 
 Rules can name groups of accounts instead of listing accounts, so you bucket your accounts once

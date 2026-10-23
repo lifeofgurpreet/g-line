@@ -1129,6 +1129,47 @@ test('0.9.0: without end_turn, or while paused, a turn runs on past a stop rule'
   expect(aborted).toEqual([])
 })
 
+test('0.11.0: with guard.queue a typed prompt the guard holds is sent on its own once the guard lets go', { timeoutMs: 30_000 }, async ($, on) => {
+  const w = world(on)
+  w.config = { guard: { rules: [{ left: 10, stop: true }], queue: true } }
+  const seen = engineBelow(on)
+  hintBelow(on)
+  await start($)
+  await measure($, w, 95)
+  await w.clock.advance(15_000)
+  const held = await $.prompt.submit(typed('finish the report'))
+  expect(held.drop).toMatch(/g-line will send it when the guard lets it through, about \d\d:\d\d.* Enter again sends it now; \/g-line guard cancel keeps it here\.$/)
+  const ui = await $.ui.mount({ plugin: 'g-line', surface: 'terminal', component: 'PromptHint',
+    props: { isDraft: false, isWorking: false, hint: '? for shortcuts' }, viewport: { columns: 200, rows: 40 } })
+  expect(await ui.find({ type: 'Text', text: /guard: held, 5% 5h left till \d\d:\d\d, 1 queued/ })).toBeDefined()
+  await ui.unmount()
+  // Still held: nothing goes.
+  await w.clock.advance(15_000)
+  expect(seen.prompts).toEqual([])
+  // The window resets: the next beat sends it, once.
+  await measure($, w, 3, 5 * 3600)
+  await w.clock.advance(15_000)
+  expect(seen.prompts).toEqual(['finish the report'])
+  expect(w.toasts.some(t => t === 'g-line sent the prompt it was holding.')).toBe(true)
+  await w.clock.advance(30_000)
+  expect(seen.prompts).toEqual(['finish the report'])
+})
+
+test('0.11.0: /g-line guard cancel drops a queued prompt', { timeoutMs: 30_000 }, async ($, on) => {
+  const w = world(on)
+  w.config = { guard: { rules: [{ left: 10, stop: true }], queue: true } }
+  const seen = engineBelow(on)
+  await start($)
+  await measure($, w, 95)
+  await w.clock.advance(15_000)
+  expect((await $.prompt.submit(typed('later please'))).drop).toBeDefined()
+  await $.command.run({ command: 'g-line', args: 'guard cancel' } as never)
+  await measure($, w, 3, 5 * 3600)
+  await w.clock.advance(15_000)
+  expect(seen.prompts).toEqual([])
+  expect(w.toasts.some(t => t.startsWith('g-line won\'t send the prompt it was holding'))).toBe(true)
+})
+
 test('a stop rule refuses new prompts with the window, what is left and the way past; once and pause let them through', { timeoutMs: 30_000 }, async ($, on) => {
   const w = world(on)
   w.config = { guard: GUARD }

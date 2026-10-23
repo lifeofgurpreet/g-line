@@ -1,7 +1,7 @@
 import { expect, test } from 'claude-code/testing'
 
 import {
-  KEEP_WARM_DEFAULTS, accountIdentity, accountKey, agentModel, cappedEffort, changeText, effortKeepsCache, endText, evaluate, groupOf, hoursWords, guardForms, inHours, leaseFree,
+  KEEP_WARM_DEFAULTS, accountIdentity, accountKey, agentModel, cappedEffort, changeText, effortKeepsCache, bridgeDue, endText, evaluate, groupOf, hoursWords, liftsAt, guardForms, inHours, leaseFree,
   localTime, parseGuard, parseHours, readBack, ruleText, seconds, simulated, stopText, tokenCount, warmDue, warmForms,
 } from '../hooks/guard'
 import type { Facts, WarmFacts } from '../hooks/guard'
@@ -175,6 +175,31 @@ test('0.9.1: with several stops in force, the reason stays the one that started 
   // A more depleted window still gives the reason.
   const week = parseGuard({ rules: [{ left: 10, stop: true }, { left: 20, window: 'week', stop: true }] })
   expect(evaluate(week, facts(9, { week: 3 })).stop?.window).toBe('week')
+})
+
+test('0.11.0: when a stop lets go, and when a queued prompt needs its cache kept warm', () => {
+  const g = parseGuard({ rules: [
+    { left: 10, stop: true, hours: '04:00-17:00 mon-fri', tz: 'Asia/Kuala_Lumpur' },
+    { left: 10, stop: true },
+  ] })
+  // Tuesday 10:00 in Kuala Lumpur: the hours end at 17:00, before a reset 9 hours out.
+  const hoursRule = evaluate({ ...g, rules: [g.rules[0]!] }, facts(9, { resetsIn: 9 * HOUR })).stop!
+  expect(liftsAt(hoursRule, TUE_10_KL)).toBe(TUE_10_KL + 7 * HOUR * 1000)
+  const plainRule = evaluate({ ...g, rules: [g.rules[1]!] }, facts(9, { resetsIn: 2 * HOUR })).stop!
+  expect(liftsAt(plainRule, TUE_10_KL)).toBe(TUE_10_KL + 2 * HOUR * 1000)
+  const now = 1_000_000
+  const base = { now, expiresAt: now + 200, sendAt: now + 3600, left: 5, bridges: 0, prefix: 90_000 }
+  expect(bridgeDue(base)).toBe(true)
+  expect(bridgeDue({ ...base, expiresAt: now + 600 })).toBe(false)
+  expect(bridgeDue({ ...base, sendAt: now + 100 })).toBe(false)
+  expect(bridgeDue({ ...base, left: 0 })).toBe(false)
+  expect(bridgeDue({ ...base, bridges: 2 })).toBe(false)
+  expect(bridgeDue({ ...base, prefix: 5_000 })).toBe(false)
+  expect(bridgeDue({ ...base, expiresAt: undefined })).toBe(false)
+  expect(stopText(plainRule, TUE_10_KL, 480, false, { queued: { at: '12:00', cache: 'bridge' } }))
+    .toBe('g-line held this prompt: 9% of the 5-hour window left, at or under your 10% stop. It resets at 12:00, in 2h 0m. g-line will send it when the guard lets it through, about 12:00, keeping the cache warm until then. Enter again sends it now; /g-line guard cancel keeps it here.')
+  expect(parseGuard({ queue: true }).queue).toBe(true)
+  expect(parseGuard({}).queue).toBeUndefined()
 })
 
 test('time windows: day lists and ranges, past midnight, and the machine\'s own zone when none is named', () => {

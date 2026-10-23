@@ -73,7 +73,12 @@ export type Group = { name: string; words: string[]; keepFor: string }
 /** The group of accounts in no group the person wrote. */
 export const OTHER_GROUP = 'other'
 
-export type GuardConfig = { on: boolean; rules: Rule[]; groups?: Group[]; keepWarm?: KeepWarm; resume?: Resume; errors: string[] }
+export type GuardConfig = {
+  on: boolean; rules: Rule[]; groups?: Group[]; keepWarm?: KeepWarm; resume?: Resume
+  /** Hold a typed prompt the guard refuses and send it when the guard lets it through. */
+  queue?: boolean
+  errors: string[]
+}
 
 export const NO_GUARD: GuardConfig = { on: true, rules: [], errors: [] }
 
@@ -257,7 +262,8 @@ export function parseGuard(raw: unknown): GuardConfig {
     const text = typeof o.text === 'string' && o.text.trim() ? o.text.trim().slice(0, 500) : 'continue'
     resume = { text, jitter: Math.min(1800, seconds(o.jitter) ?? 300) }
   }
-  return { on: r.on !== false, rules, ...(groups.length ? { groups } : {}), ...(keepWarm ? { keepWarm } : {}), ...(resume ? { resume } : {}), errors }
+  return { on: r.on !== false, rules, ...(groups.length ? { groups } : {}), ...(keepWarm ? { keepWarm } : {}), ...(resume ? { resume } : {}),
+    ...(r.queue === true ? { queue: true } : {}), errors }
 }
 
 /** `guard.groups`: `{ "team": ["team@", "ops@"], "people": { "accounts": ["sam@"], "for": "its owner" } }`. */
@@ -476,7 +482,7 @@ function reasonText(stop: NonNullable<Verdict['stop']>, simulated: boolean, acco
   if (namesAccounts(stop.rule)) {
     const who = account ? accountIdentity(account) : 'this account'
     const when = stop.rule.hours ? `${hoursWords(stop.rule)}, g-line keeps` : 'g-line keeps'
-    const what = stop.group ? `in your ${stop.group.name} group` : 'a team seat'
+    const what = !stop.group ? 'a team seat' : stop.group.name === OTHER_GROUP ? 'in none of your groups' : `in your ${stop.group.name} group`
     return `${who} is ${what}, with ${pct(stop.left)} of its ${window} left${sim}. ${when} the last ${stop.rule.left}% of it for ${stop.group?.keepFor ?? 'the team'}.`
   }
   return `${pct(stop.left)} of the ${window} left${sim}, at or under your ${stop.rule.left}% stop.`
@@ -484,12 +490,43 @@ function reasonText(stop: NonNullable<Verdict['stop']>, simulated: boolean, acco
 
 /** Why a prompt was held, when the window resets, and the way past: Enter again for a prompt the person typed. */
 export function stopText(stop: NonNullable<Verdict['stop']>, nowMs: number, offsetMinutes: number, simulated = false,
-  o: { account?: string | null; typed?: boolean } = {}): string {
+  o: { account?: string | null; typed?: boolean; queued?: { at?: string; cache?: 'warm' | 'bridge' | 'cold' } } = {}): string {
   const reset = resetWords(stop.resetsAt, nowMs, offsetMinutes)
+  const cache = o.queued?.cache === 'bridge' ? ', keeping the cache warm until then' : o.queued?.cache === 'cold' ? '; the cache will be cold by then' : ''
   const past = o.typed === false
     ? '/g-line guard pause lets prompts like this through for an hour.'
-    : 'Press Enter again to send it anyway, or /g-line guard pause for an hour.'
+    : o.queued
+      ? `g-line will send it when the guard lets it through${o.queued.at ? `, about ${o.queued.at}` : ''}${cache}. Enter again sends it now; /g-line guard cancel keeps it here.`
+      : 'Press Enter again to send it anyway, or /g-line guard pause for an hour.'
   return `g-line held this prompt: ${reasonText(stop, simulated, o.account)}${reset ? ` It resets at ${reset}.` : ''} ${past}`
+}
+
+/**
+ * About when a stop lets go on its own (ms): the window's reset, or sooner the
+ * end of the rule's hours. Undefined when neither is known.
+ */
+export function liftsAt(held: Held, nowMs: number, offsetMinutes?: number): number | undefined {
+  const reset = held.resetsAt !== undefined ? held.resetsAt * 1000 : undefined
+  const hours = held.rule.hours
+  if (!hours) return reset
+  const at = localTime(nowMs, held.rule.tz, offsetMinutes)
+  if (!at) return reset
+  const end = nowMs + (((hours.to - at.minute) % 1440 + 1440) % 1440) * 60_000
+  return reset === undefined ? end : Math.min(reset, end)
+}
+
+/** What a queue bridge reads: times in seconds, the window's percent left. */
+export type BridgeFacts = { now: number; expiresAt?: number; sendAt?: number; left?: number; bridges: number; prefix: number }
+
+/**
+ * Whether a queued prompt's cache needs one re-read now to still be warm when the
+ * prompt goes: it expires before the send, within four minutes, the window has
+ * room for a read, the cache is worth it, and at most two bridges per prompt.
+ */
+export function bridgeDue(f: BridgeFacts): boolean {
+  if (f.expiresAt === undefined || f.sendAt === undefined || f.expiresAt >= f.sendAt) return false
+  if (f.now < f.expiresAt - 240 || f.now > f.expiresAt - 20) return false
+  return (f.left ?? 0) > 1 && f.bridges < 2 && f.prefix >= 20_000
 }
 
 /** Why a running turn was ended, when the window resets, and how to carry on. */
@@ -541,7 +578,7 @@ export function changeText(before: Verdict | undefined, after: Verdict): string 
 }
 
 /** Line 2's guard segment words, widest first: what's in force, or that it's paused. */
-export function guardForms(verdict: Verdict, pausedFor?: number, until?: string): { forms: string[]; tone: 'bad' | 'warn' | 'dim' } | undefined {
+export function guardForms(verdict: Verdict, pausedFor?: number, until?: string, queued = false): { forms: string[]; tone: 'bad' | 'warn' | 'dim' } | undefined {
   if (pausedFor !== undefined && pausedFor > 0 && verdict.rules.length) {
     const m = Math.ceil(pausedFor / 60)
     return { forms: [`guard paused ${m}m`, 'guard paused'], tone: 'dim' }
@@ -552,7 +589,7 @@ export function guardForms(verdict: Verdict, pausedFor?: number, until?: string)
     const forms = namesAccounts(verdict.stop.rule)
       ? [`guard: ${reserve}, ${pct(verdict.stop.left)} ${verdict.stop.window} left${till}`, `${reserve}${till}`, reserve]
       : [`guard: held, ${pct(verdict.stop.left)} ${verdict.stop.window} left${till}`, `guard: held${till}`, 'guard: held']
-    return { forms, tone: 'bad' }
+    return { forms: queued ? forms.map((f, i) => (i < forms.length - 1 ? `${f}, 1 queued` : f)) : forms, tone: 'bad' }
   }
   const doing = [verdict.effort ? `effort ${verdict.effort}` : '', verdict.agents ? `agents ${verdict.agents}` : ''].filter(Boolean)
   if (!doing.length) return undefined

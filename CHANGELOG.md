@@ -1,5 +1,18 @@
 # Changelog
 
+## 0.11.0 (2026-10-23): a held prompt waits for you, on a warm cache
+
+- **`guard.queue`.** A typed prompt the guard holds is kept and sent by g-line as soon as the
+  guard lets go (the window's reset, or the end of a rule's hours), with a toast. The refusal
+  says about when; line 2 adds `1 queued`; `/g-line guard cancel` keeps it from going; Enter
+  again still sends it now. A prompt you type that goes through, `/clear`, the session ending or
+  an account change drops it. Sending takes it out of the prompt box if it's still there.
+- **The cache is kept warm for it.** If the prompt cache would lapse before the prompt goes,
+  g-line re-reads it once, four minutes before, so the prompt doesn't pay for a rebuild: at most
+  twice, and only with room in the window (a used-up window can't be read from; the refusal
+  says the cache will be cold).
+- An account in no group reads "in none of your groups".
+
 ## 0.10.0 (2026-10-23): groups of accounts, your own time zone, and a guard that says why
 
 - **Account groups** (`guard.groups`). Name buckets of accounts (yours, the team's seats,

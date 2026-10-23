@@ -37,7 +37,7 @@ import {
 import type { PulseFeed, PulseItem, Shown } from './pulse'
 import { gitSegmentOf } from './core'
 import {
-  AGENT_TYPE_MODELS, accountIdentity, accountKey, agentModel, cappedEffort, changeText, effortKeepsCache, endText, evaluate, groupOf, guardForms, inForceText, leaseFree, namesAccounts, readBack, ruleText, simulated, stopText,
+  AGENT_TYPE_MODELS, accountIdentity, accountKey, agentModel, cappedEffort, changeText, effortKeepsCache, bridgeDue, endText, evaluate, groupOf, guardForms, liftsAt, inForceText, leaseFree, namesAccounts, readBack, ruleText, simulated, stopText,
   resumeAt, warmDue, warmForms,
 } from './guard'
 import type { Effort, Facts, Simulation, Verdict, WindowName } from './guard'
@@ -800,6 +800,7 @@ async function heartbeat($: EngineInterface): Promise<void> {
   // An account rule needs a fresh reading: an account manager may have switched accounts.
   else if (beats % 8 === 0 && config.guard.rules.some(namesAccounts)) await refreshAccount($)
   await guardNow($).catch(() => undefined)
+  await queueTick($).catch(() => undefined)
   await keepWarm($).catch(() => undefined)
   await heartbeatRoster($)
   await exportState($)
@@ -1247,6 +1248,9 @@ let passOnce = false
 /** The typed prompt the guard last held, and when: sent again unchanged within HELD_AGAIN_MS, it goes through. */
 let heldPrompt: { text: string; at: number } | undefined
 const HELD_AGAIN_MS = 3 * 60_000
+/** The typed prompt the guard holds to send when it lets go (`guard.queue`), and the cache re-reads made for it. */
+let queued: { text: string; at: number; key: string; bridges: number } | undefined
+let bridging = false
 /**
  * Background agents the main loop started whose report hasn't come back. A
  * stop lets each report through: its work is done and paid for, and a
@@ -1362,7 +1366,7 @@ async function guardSegment($: EngineInterface): Promise<Segment | undefined> {
   if (!verdict.rules.length) return undefined
   const at = await nowMs($)
   const until = verdict.stop?.resetsAt !== undefined ? clock(verdict.stop.resetsAt, at / 1000, offsetAt(at)) : undefined
-  const words = guardForms(verdict, await pausedFor($), until)
+  const words = guardForms(verdict, await pausedFor($), until, queued !== undefined)
   if (!words) return undefined
   if (simulation) words.forms = words.forms.map(form => `${form} (sim)`)
   const forms = effortWaits && verdict.effort && !verdict.stop ? words.forms.map(f => f.replace(`effort ${verdict.effort}`, `effort ${verdict.effort} when cache cold`)) : words.forms
@@ -1395,8 +1399,20 @@ async function guardPrompt($: EngineInterface, e: { origin: { kind: string }; co
     return undefined
   }
   if (person) heldPrompt = typed ? { text: typed, at } : undefined
-  const account = config.accountCommand ? (await read($, snap)).account : undefined
-  return stopText(v.stop, at, offsetAt(at), simulation !== undefined, { account, typed: person })
+  const s = await read($, snap)
+  const account = config.accountCommand ? s.account : undefined
+  let plan: { at?: string; cache?: 'warm' | 'bridge' | 'cold' } | undefined
+  if (person && typed && config.guard.queue) {
+    if (queued && queued.text !== typed) $.ui.toast('g-line: this prompt replaces the one it was holding.', { timeoutMs: 6000 })
+    queued = { text: typed, at, key: accountKey(s.account), bridges: queued?.text === typed ? queued.bridges : 0 }
+    const lift = liftsAt(v.stop, at, offsetAt(at))
+    const expires = payload(s, at / 1000, ttl, idle).prompt_cache?.expires_at ?? undefined
+    const cache = expires === undefined || lift === undefined ? undefined
+      : expires * 1000 >= lift ? 'warm' : v.stop.left > 1 ? 'bridge' : 'cold'
+    plan = { at: lift !== undefined ? clock(Math.floor(lift / 1000), at / 1000, offsetAt(at)) : undefined, cache }
+    void update($, tick, n => n + 1)
+  }
+  return stopText(v.stop, at, offsetAt(at), simulation !== undefined, { account, typed: person, queued: plan })
 }
 
 /**
@@ -1532,6 +1548,65 @@ async function keepWarm($: EngineInterface): Promise<void> {
   } finally {
     await releaseLease($, `lease:warm:${key}`)
     warming = false
+  }
+}
+
+/**
+ * The queued prompt (`guard.queue`): sent as soon as the guard would let it
+ * through and no turn runs, taken out of the prompt box if it's still there.
+ * Before then, if the cache would lapse first, one re-read keeps it warm.
+ */
+async function queueTick($: EngineInterface): Promise<void> {
+  const q = queued
+  if (!q || bridging) return
+  if (!config.guard.on || !config.guard.queue) {
+    queued = undefined
+    return
+  }
+  if (await read($, turnNow)) return
+  const at = await nowMs($)
+  const v = verdict
+  const s = await read($, snap)
+  if (accountKey(s.account) !== q.key) {
+    queued = undefined
+    $.ui.toast('g-line dropped the prompt it was holding: the account changed.', { timeoutMs: 8000 })
+    return
+  }
+  if (!v.stop || (await pausedFor($)) > 0) {
+    queued = undefined
+    try {
+      const box = await $.prompt.read()
+      if (box.text.trim() === q.text) await $.prompt.fill({ text: '', mode: 'replace' })
+    } catch {
+      // the box is the person's
+    }
+    const sent = await $.prompt.submit({ text: q.text }).catch(() => undefined)
+    $.ui.toast(sent && !sent.drop ? 'g-line sent the prompt it was holding.' : `g-line couldn't send the prompt it was holding${sent?.drop ? `: ${sent.drop}` : ''}.`, { timeoutMs: 8000 })
+    await update($, tick, n => n + 1)
+    return
+  }
+  const c = s.cache
+  const expires = payload(s, at / 1000, ttl, idle).prompt_cache?.expires_at ?? undefined
+  const lift = liftsAt(v.stop, at, offsetAt(at))
+  if (!c?.cached || !bridgeDue({ now: at / 1000, expiresAt: expires, sendAt: lift !== undefined ? lift / 1000 : undefined,
+    left: v.stop.left, bridges: q.bridges, prefix: c.prefix })) return
+  bridging = true
+  try {
+    const r = await $.model.fork({ prompt: WARM_PROMPT })
+    const usage = 'usage' in r ? r.usage : undefined
+    q.bridges += 1
+    if (readBack(c.prefix, usage)) {
+      const now = Math.floor(at / 1000)
+      await update($, snap, x => (x.cache && x.cache.lastAt === c.lastAt ? { ...x, cache: { ...x.cache, lastAt: now } } : x))
+      await toast($, `Kept the cache warm for the prompt g-line is holding: re-read ${tokens(usage?.cache_read_input_tokens ?? 0)}.`, 8000)
+    } else {
+      q.bridges = 2
+      await toast($, 'g-line tried to keep the cache warm for the held prompt, but its re-read found no cache.', 8000)
+    }
+  } catch {
+    q.bridges = 2
+  } finally {
+    bridging = false
   }
 }
 
@@ -1737,7 +1812,10 @@ async function dropResume($: EngineInterface): Promise<boolean> {
 
 async function cancelResume($: EngineInterface): Promise<void> {
   const had = await dropResume($)
-  $.ui.toast(had ? 'g-line won\'t send anything after the reset.' : 'g-line has nothing planned after a reset.', { timeoutMs: 6000 })
+  const held = queued
+  queued = undefined
+  $.ui.toast(held ? 'g-line won\'t send the prompt it was holding; it\'s still in your prompt box if you left it there.'
+    : had ? 'g-line won\'t send anything after the reset.' : 'g-line has nothing planned after a reset.', { timeoutMs: 6000 })
   await update($, tick, n => n + 1)
 }
 
@@ -1857,6 +1935,7 @@ export const register: Register = (on, options) => {
     // A plan to go on after a limit belongs to the conversation that stopped:
     // not the one a /clear starts, and not a session that has ended.
     await dropResume($)
+    queued = undefined
     if (e.reason === 'clear') {
       // The cleared conversation's cache says nothing about the next one.
       await update($, snap, s => ({ ...s, cache: undefined }))
@@ -2125,6 +2204,7 @@ export const register: Register = (on, options) => {
     }
     if (!config.guard.rules.some(rule => rule.stop)) return next(e)
     const refused = await guardPrompt($, e, report)
+    if (!refused && queued && (e.origin?.kind === 'composer' || e.origin?.kind === 'bridge') && !e.command) queued = undefined
     return refused ? { drop: refused } : next(e)
   }).catch(($, e, next) => next(e))
 
