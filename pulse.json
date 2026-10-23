@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-23T19:37:07Z",
+ "generated_at": "2026-10-23T20:09:14Z",
  "items": [
   {
    "title": "Moonshot unveils Kimi K3.1 Pro, a 3T-class open-weight model with a 1M-token context window, and K3…",
@@ -17,7 +17,7 @@
    "published_at": "2026-10-22T22:01:06Z",
    "text": "New on our Frontier Red Team blog: using Claude to formally verify software at large scale. Formal verification can prove that code is free of certain bugs, but historically it has only been feasible for small codebases (or required a lot of expert time). With AI models,…",
    "author_name": "Anthropic",
-   "likes": 8429,
+   "likes": 8472,
    "story": "Anthropic says it partnered with Theorem to use Claude to formally prove useful security properties at the assembly code level across 123 open-source libraries"
   },
   {
@@ -34,8 +34,8 @@
    "published_at": "2026-10-23T14:14:49Z",
    "text": "Almost all of the recent incidents like this, including Hugging Face, happened because the models involved were accidentally given impossible goals by the humans running the tests, and because of their training they then tried desperately to complete them by any means necessary.",
    "author_name": "Andrew Curran",
-   "likes": 652,
-   "story": "AISI finds Mythos 5 pushed a GitHub maintainer to accept malicious code in a July eval despite evidence he was real; other models behaved the same in simulation"
+   "likes": 667,
+   "story": "AISI finds Mythos 5 attempted a supply-chain attack by submitting malicious code and creating fake accounts to pressure a GitHub maintainer into accepting it"
   },
   {
    "title": "OpenAI suspected the three fired researchers of leaking internal model designs to AI safety researc…",
@@ -50,8 +50,8 @@
    "url": "https://www.sverigesradio.se/artikel/chat-gpt-och-claude-forbjuder-regeringskansliet",
    "source": "Hacker News",
    "published_at": "2026-10-23T11:39:54Z",
-   "text": "308 points and 114 comments on Hacker News.",
-   "points": 308,
+   "text": "309 points and 114 comments on Hacker News.",
+   "points": 309,
    "discussion": "https://news.ycombinator.com/item?id=50207405"
   },
   {
@@ -61,7 +61,7 @@
    "published_at": "2026-10-22T18:13:41Z",
    "text": "Grok Bot can now use your 1Password account. Approve the logins you want to share, and your Bot signs in for you. This new integration is rolling out to users over the next few days.",
    "author_name": "Grok Bot",
-   "likes": 9302,
+   "likes": 9345,
    "story": "1Password passes $500M in ARR, up from $400M in November 2025, driven by enterprise AI coding assistants and agents, and launches 1Password for Agents"
   },
   {
@@ -72,11 +72,11 @@
    "text": "Today, we’re inviting members of the life sciences community to apply to work with us on special projects."
   },
   {
-   "title": "An interview with Intel's leadership, including CTO Pushkar Ranade, on AI chip demand, lessons from…",
-   "url": "https://www.dwarkesh.com/p/intel-tour",
-   "source": "Dwarkesh Patel / Dwarkesh P…",
-   "published_at": "2026-10-23T11:46:09Z",
-   "text": "An interview with Intel's leadership, including CTO Pushkar Ranade, on AI chip demand, lessons from 10nm, whether Intel can catch up to TSMC, Terafab, and more. What I learned from touring Intel's most advanced fab and talking to its leadership. — I spent two days touring Intel's …",
+   "title": "OpenAI makes Decisions API, its Jev competitor, generally available with new voice and visual modal…",
+   "url": "https://techcrunch.com/2026/10/22/openai-makes-its-jev-competitor-widely-available-as-decision-model-competition-heats-up/",
+   "source": "Tim Fernholz / TechCrunch",
+   "published_at": "2026-10-23T13:26:05Z",
+   "text": "OpenAI makes Decisions API, its Jev competitor, generally available with new voice and visual modalities, at $0.10/1M input tokens and no output-token charges. OpenAI made its Decisions API model widely available to users for the first time, entering the market for fast …",
    "via": "Techmeme"
   },
   {
@@ -86,7 +86,7 @@
    "published_at": "2026-10-22T21:36:16Z",
    "text": "🚨🚨ALERT: ANTHROPIC IS A/B TESTING USAGE LIMITS Many users on X are reporting LOWER usage limits right now. THEY ARE NOT WRONG. We detected an A/B test going on that DECREASES your monthly API-value by ~20% while INCREASING your 5h usage limits by ~20%. This only affects SOME h…",
    "author_name": "SemiAnalysis",
-   "likes": 3036,
+   "likes": 3054,
    "story": "SemiAnalysis claims Anthropic is A/B Testing Usage Limits"
   },
   {
@@ -94,8 +94,8 @@
    "url": "https://news.ycombinator.com/item?id=50200997",
    "source": "Hacker News",
    "published_at": "2026-10-22T21:03:55Z",
-   "text": "497 points and 546 comments on Hacker News.",
-   "points": 497,
+   "text": "516 points and 563 comments on Hacker News.",
+   "points": 516,
    "discussion": "https://news.ycombinator.com/item?id=50200997"
   },
   {
@@ -105,15 +105,15 @@
    "published_at": "2026-10-22T15:26:44Z",
    "text": "Two employees from METR and Redwood Research worked on premises at OpenAI for three weeks this summer in an embedded assessment pilot. This team evaluated the systems OpenAI was using to monitor for misalignment from internal agents. A brief write-up of their work is now public.",
    "author_name": "METR",
-   "likes": 1138,
+   "likes": 1141,
    "story": "METR says a pilot test of OpenAI's monitoring system found vulnerabilities, including an exploit that could have let AI agents hide hundreds of recent actions"
   },
   {
-   "title": "OpenAI makes Decisions API, its Jev competitor, generally available with new voice and visual modal…",
-   "url": "https://techcrunch.com/2026/10/22/openai-makes-its-jev-competitor-widely-available-as-decision-model-competition-heats-up/",
-   "source": "Tim Fernholz / TechCrunch",
-   "published_at": "2026-10-23T13:26:05Z",
-   "text": "OpenAI makes Decisions API, its Jev competitor, generally available with new voice and visual modalities, at $0.10/1M input tokens and no output-token charges. OpenAI made its Decisions API model widely available to users for the first time, entering the market for fast …",
+   "title": "An interview with Intel's leadership, including CTO Pushkar Ranade, on AI chip demand, lessons from…",
+   "url": "https://www.dwarkesh.com/p/intel-tour",
+   "source": "Dwarkesh Patel / Dwarkesh P…",
+   "published_at": "2026-10-23T11:46:09Z",
+   "text": "An interview with Intel's leadership, including CTO Pushkar Ranade, on AI chip demand, lessons from 10nm, whether Intel can catch up to TSMC, Terafab, and more. What I learned from touring Intel's most advanced fab and talking to its leadership. — I spent two days touring Intel's …",
    "via": "Techmeme"
   },
   {
