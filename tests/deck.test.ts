@@ -102,3 +102,11 @@ test('An X post leads with its author and its age', async () => {
   expect(tickerText(post, 16_000, 80, at + 3 * 86_400_000)).toBe('𝕏 @claudeai · 3d: Claude Dashboards are in beta today')
   expect(tickerText(post, 16_000, 30, at)).toBe('Claude Dashboards are in beta…')
 })
+
+test('an effort the guard lowered shows both, what was set and what ran, in amber', async () => {
+  const d = deck({ ...P, effort: { level: 'medium', set: 'xhigh' } }, O, {})
+  const model = d.next.find(part => part.key === 'model')
+  expect(model?.text).toBe('Opus 5.5 xhigh→medium by guard')
+  expect(model?.tone).toBe('warn')
+  expect(deck({ ...P, effort: { level: 'high', set: 'high' } }, O, {}).next.find(part => part.key === 'model')?.text).toBe('Opus 5.5 high')
+})

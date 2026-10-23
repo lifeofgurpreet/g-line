@@ -1221,7 +1221,18 @@ test('a stop rule refuses new prompts with the window, what is left and the way 
   expect(await $.prompt.submit(typed('paused'))).toEqual({ text: 'paused' })
   await $.command.run({ command: 'g-line', args: 'guard resume' } as never)
   expect((await $.prompt.submit(typed('resumed'))).drop).toBeDefined()
-  expect(seen.prompts).toEqual(['/compact', 'agent done', 'just this one', 'and this?', 'paused'])
+  // Off in this session alone: everything goes, line 2 says so, and on here brings the rule back.
+  await $.command.run({ command: 'g-line', args: 'guard off here' } as never)
+  expect(w.toasts.some(t => t.startsWith('g-line guard off in this session'))).toBe(true)
+  expect(await $.prompt.submit(typed('mine'))).toEqual({ text: 'mine' })
+  expect((await $.prompt.submit({ text: 'check CI', wait: false, origin: { kind: 'scheduled-trigger' } } as never)).drop).toBeUndefined()
+  const here = await $.ui.mount({ plugin: 'g-line', surface: 'terminal', component: 'PromptHint',
+    props: { isDraft: false, isWorking: false, hint: '? for shortcuts' }, viewport: { columns: 160, rows: 40 } })
+  expect(await here.find({ type: 'Text', text: /^guard off here$/ })).toBeDefined()
+  await here.unmount()
+  await $.command.run({ command: 'g-line', args: 'guard on here' } as never)
+  expect((await $.prompt.submit(typed('guarded again'))).drop).toBeDefined()
+  expect(seen.prompts).toEqual(['/compact', 'agent done', 'just this one', 'and this?', 'paused', 'mine', 'check CI'])
   // Line 2 says so.
   const ui = await $.ui.mount({ plugin: 'g-line', surface: 'terminal', component: 'PromptHint',
     props: { isDraft: false, isWorking: false, hint: '? for shortcuts' }, viewport: { columns: 160, rows: 40 } })
@@ -1236,6 +1247,7 @@ test('low on the window, the conversation runs at a lower effort and new subagen
   const w = world(on)
   w.config = { guard: GUARD }
   const seen = engineBelow(on)
+  hintBelow(on)
   on('ui.render', { component: 'TurnDuration' }, ($, e) => {
     const { Text } = $.ui.resolve(e)
     return <Text>{`✻ ${e.props.word} for 1m 4s`}</Text>
@@ -1259,6 +1271,11 @@ test('low on the window, the conversation runs at a lower effort and new subagen
     props: { word: 'Baked', durationMs: 64_000 }, viewport: { columns: 160, rows: 40 } })
   expect(await line.find({ type: 'Text', text: 'guard: effort medium, 1 agent on a cheaper model' })).toBeDefined()
   await line.unmount()
+  // Line 2 shows the effort set and the effort that ran.
+  const hint = await $.ui.mount({ plugin: 'g-line', surface: 'terminal', component: 'PromptHint',
+    props: { isDraft: false, isWorking: false, hint: '? for shortcuts' }, viewport: { columns: 200, rows: 40 } })
+  expect(await hint.find({ type: 'Text', text: /xhigh→medium/ })).toBeDefined()
+  await hint.unmount()
   // The window resets: effort is the person's again, said once.
   await measure($, w, 3, 5 * 3600)
   await w.clock.advance(15_000)

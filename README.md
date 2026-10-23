@@ -337,7 +337,10 @@ window.
   refused prompt back in the box: press Enter again to send it anyway** (the same prompt, within
   three minutes; a loop's or schedule's prompt never gets this). `/g-line guard once` lets the
   next prompt through, `/g-line guard pause` lets everything through for an hour (or
-  `pause 30m`) in every session on the machine, and `/g-line guard resume` ends the pause. With
+  `pause 30m`) in every session on the machine, and `/g-line guard resume` ends the pause.
+  **`/g-line guard off here` lets this session alone** (your prompts, effort and agents run as you
+  set them) while every other session on the machine stays guarded, until `/g-line guard on here`
+  or the session ends. With
   several stops in force, the reason given is the one that started first, so it doesn't change
   from one prompt to the next.
 - **`end_turn`** (with `stop`): a stop also ends a turn that's already running, once the rule
@@ -452,7 +455,9 @@ to five minutes there. A stop rule near the end keeps you off them, for example
 `{ "left": 2, "stop": true }`.
 
 **You see what it does.** A toast says when a rule starts or stops. Line 2 says what's in force
-(`guard: effort medium, agents sonnet`, `guard: stopped, 4% 5h left`, `guard paused 52m`). A
+(`guard: effort medium, agents sonnet`, `guard: stopped, 4% 5h left`, `guard paused 52m`), and
+the model shows the effort you set next to the one that ran (`Opus 5.5 xhigh→medium by guard`,
+in amber), so Claude Code's own effort label never leaves you guessing. A
 turn the guard changed says so on its closing line (`guard: effort medium, 1 agent on a
 cheaper model`). `/g-line guard` says what's in force, `/g-line guard why` the figures behind
 it, and the `/g-line` pane shows every rule as written. `/g-line guard off` turns your rules off until `/g-line guard on`.

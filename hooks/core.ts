@@ -10,7 +10,8 @@ export type Tone = 'ok' | 'warn' | 'bad' | 'dim' | 'accent'
 
 export type Payload = {
   model?: { id?: string; display_name?: string }
-  effort?: { level?: string }
+  /** `set`: what the person chose, when the guard ran the request at `level` instead. */
+  effort?: { level?: string; set?: string }
   fast_mode?: boolean
   context_window?: {
     used_percentage?: number | null
@@ -209,7 +210,13 @@ function modelSegment(p: Payload): Segment | undefined {
   const name = str(p.model?.display_name) ?? str(p.model?.id)
   if (!name) return undefined
   const level = str(p.effort?.level, 12)
+  const set = str(p.effort?.set, 12)
   const fast = p.fast_mode === true
+  if (level && set && set !== level) {
+    const family = name.split(' ')[0] ?? name
+    return { key: 'model', priority: 82, tone: 'warn',
+      forms: [`${name} (${set}→${level} effort by guard${fast ? ', fast' : ''})`, `${name} ${set}→${level}`, `${family} ${set}→${level}`, `${family} ${level}`] }
+  }
   const detail = [level ? `${level} effort` : '', fast ? 'fast' : ''].filter(Boolean).join(', ')
   const family = name.split(' ')[0] ?? name
   // The effort stays in every form: it is what you change most often.

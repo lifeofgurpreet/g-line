@@ -1,5 +1,16 @@
 # Changelog
 
+## 0.13.0 (2026-10-23): see the effort that ran, and free your own session
+
+- **The effort that ran, next to the one you set.** When the guard lowered the conversation's
+  effort, Claude Code's own label still read `xhigh` and nothing said the turn ran at `medium`.
+  Line 2's model now reads `Opus 5.5 xhigh→medium by guard`, in amber, and plain
+  `Opus 5.5 xhigh` once the effort is yours again.
+- **`/g-line guard off here`** (or `off me`) lets this session alone: prompts, effort and new
+  agents run as you set them, keep-warm waits, and line 2 says `guard off here`. Other sessions on
+  the machine stay guarded, where `pause` and `off` free every one of them. `/g-line guard on here`
+  brings the rules back; a new session starts guarded.
+
 ## 0.12.2 (2026-10-23): a turn the pace ended says so
 
 - The line under a turn that a `pace` rule ended read `guard: ended the turn, 38% week left`,

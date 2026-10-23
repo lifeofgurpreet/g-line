@@ -26,13 +26,18 @@ const WINDOW_NAME = { five_hour: '5h', seven_day: 'wk' } as const
 
 // ------------------------------------------------------------------ line 1
 
-/** `Opus 5.5 xhigh`: the effort stays even in the narrowest form. */
+/** `Opus 5.5 xhigh`, or `Opus 5.5 xhigh→medium` where the guard ran it lower: the effort stays even in the narrowest form. */
 export function modelNext(p: Payload): Segment | undefined {
   const name = str(p.model?.display_name) ?? str(p.model?.id)
   if (!name) return undefined
   const level = str(p.effort?.level, 12)
+  const set = str(p.effort?.set, 12)
   const fast = p.fast_mode === true ? ' fast' : ''
   const family = name.split(' ')[0] ?? name
+  if (level && set && set !== level) {
+    return { key: 'model', priority: 95, tone: 'warn',
+      forms: [`${name} ${set}→${level} by guard${fast}`, `${name} ${set}→${level}${fast}`, `${family} ${set}→${level}`, `${family} ${level}`] }
+  }
   const forms = level
     ? [`${name} ${level}${fast}`, `${family} ${level}${fast}`, `${family} ${level}`]
     : [`${name}${fast}`, family]

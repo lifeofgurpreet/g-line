@@ -134,6 +134,9 @@ test('/g-line arguments: the pane, settings, set, toggle, reset, all, and the 0.
 test('/g-line guard: status, once, pause with a time, resume, on and off; guard on/off keeps the rules the files wrote', () => {
   expect(parseCommand('guard')).toEqual({ kind: 'guard', action: 'status' })
   expect(parseCommand('guard once')).toEqual({ kind: 'guard', action: 'once' })
+  expect(parseCommand('guard off here')).toEqual({ kind: 'guard', action: 'off here' })
+  expect(parseCommand('guard on me')).toEqual({ kind: 'guard', action: 'on here' })
+  expect(parseCommand('guard off there').kind).toBe('error')
   expect(parseCommand('guard pause')).toEqual({ kind: 'guard', action: 'pause', seconds: 3600 })
   expect(parseCommand('guard pause 30m')).toEqual({ kind: 'guard', action: 'pause', seconds: 1800 })
   expect(parseCommand('guard pause forever').kind).toBe('error')

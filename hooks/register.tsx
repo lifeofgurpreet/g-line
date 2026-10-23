@@ -274,7 +274,7 @@ function automaticTtl(s: Snap): '5m' | '1h' {
 export function payload(s: Snap, nowSeconds: number, ttl: '5m' | '1h' | undefined, idle?: IdleCompaction): Payload {
   const p: Payload = {}
   if (s.model) p.model = { display_name: modelName(s.model) }
-  if (s.effort) p.effort = { level: s.effort }
+  if (s.effort) p.effort = { level: s.effort, ...(s.effortSet ? { set: s.effortSet } : {}) }
   if (s.context && s.context.percent !== undefined) {
     p.context_window = { used_percentage: s.context.percent, context_window_size: s.context.window,
       total_input_tokens: s.context.tokens }
@@ -1259,6 +1259,8 @@ let verdict: Verdict = { active: {}, rules: [] }
 /** A paused guard lets everything through until then (ms); shared by every session on the machine. */
 const PAUSE_KEY = 'guard_pause'
 let pausedUntil = 0
+/** `/g-line guard off here`: the rules leave this session alone until `/g-line guard on here` or it ends. */
+let offHere = false
 /** `/g-line guard once`: the next prompt in this session goes through, while the account and the window it was given for stand (`epochOf`). */
 let passOnce: string | undefined
 /** The typed prompt the guard last held, and when: sent again unchanged within HELD_AGAIN_MS, it goes through. */
@@ -1359,6 +1361,11 @@ async function pausedFor($: EngineInterface): Promise<number> {
   return Math.max(0, (pausedUntil - (await nowMs($))) / 1000)
 }
 
+/** Whether the rules wait: a pause on this machine, or `off here` in this session. */
+async function heldBack($: EngineInterface): Promise<boolean> {
+  return offHere || (await pausedFor($)) > 0
+}
+
 /** Looks at the rules again; a toast says what started or stopped. */
 async function guardNow($: EngineInterface): Promise<Verdict> {
   const before = verdict
@@ -1371,7 +1378,7 @@ async function guardNow($: EngineInterface): Promise<Verdict> {
   const change = changeText(before, verdict)
   if (change && !(await read($, hidden))) {
     const paused = await pausedFor($)
-    const note = paused > 0 ? ` (Paused for ${Math.ceil(paused / 60)} more minutes.)` : simulation ? ' (Simulated.)' : ''
+    const note = offHere ? ' (Off in this session.)' : paused > 0 ? ` (Paused for ${Math.ceil(paused / 60)} more minutes.)` : simulation ? ' (Simulated.)' : ''
     $.ui.toast(`${change}${note}`, { timeoutMs: 12_000 })
   }
   return verdict
@@ -1382,6 +1389,7 @@ async function guardSegment($: EngineInterface): Promise<Segment | undefined> {
   if (!verdict.rules.length) return undefined
   const at = await nowMs($)
   const until = verdict.stop?.resetsAt !== undefined ? clock(verdict.stop.resetsAt, at / 1000, offsetAt(at)) : undefined
+  if (offHere) return { key: 'guard', priority: 60, forms: ['guard off here', 'guard off'], tone: 'dim' }
   const words = guardForms(verdict, await pausedFor($), until, queued !== undefined)
   if (!words) return undefined
   if (simulation) words.forms = words.forms.map(form => `${form} (sim)`)
@@ -1401,7 +1409,7 @@ async function guardPrompt($: EngineInterface, e: { origin: { kind: string }; co
   const person = e.origin?.kind === 'composer' || e.origin?.kind === 'bridge'
   if (person && e.command) return undefined
   if (!person && (e.turnId || report)) return undefined
-  if ((await pausedFor($)) > 0) return undefined
+  if (await heldBack($)) return undefined
   const s = await read($, snap)
   // A pass, or a prompt sent again, is for the account and the window it was held in: another account, or a new window, is a new decision.
   const epoch = epochOf(s.account, v.stop)
@@ -1443,7 +1451,7 @@ async function guardPrompt($: EngineInterface, e: { origin: { kind: string }; co
 async function guardEffortOf($: EngineInterface, e: { turnId: string; effort?: unknown; model: string }): Promise<Effort | undefined> {
   if (effortLatch?.turnId === e.turnId) return cappedEffort(e.effort, effortLatch.to)
   const v = await guardNow($)
-  let to = (await pausedFor($)) > 0 ? undefined : cappedEffort(e.effort, v.effort)
+  let to = (await heldBack($)) ? undefined : cappedEffort(e.effort, v.effort)
   effortWaits = false
   if (to && !(providerKeepsCache && effortKeepsCache(e.model, {}))) {
     const s = await read($, snap)
@@ -1469,7 +1477,7 @@ async function guardEffortOf($: EngineInterface, e: { turnId: string; effort?: u
 async function guardEnds($: EngineInterface, turnId: string): Promise<boolean> {
   if (!config.guard.on || endSpared === turnId || !config.guard.rules.some(rule => rule.endTurn)) return false
   const v = await guardNow($)
-  if (!v.end || (await pausedFor($)) > 0) return false
+  if (!v.end || (await heldBack($))) return false
   endSpared = turnId
   const end = v.end
   const at = await nowMs($)
@@ -1487,7 +1495,7 @@ async function guardEnds($: EngineInterface, turnId: string): Promise<boolean> {
 async function guardAgentModel($: EngineInterface, e: { model?: string; parentModel: string; fork: boolean; subagentType: string; resume?: unknown }): Promise<string | undefined> {
   if (e.resume) return undefined
   const v = await guardNow($)
-  if (!v.agents || (await pausedFor($)) > 0) return undefined
+  if (!v.agents || (await heldBack($))) return undefined
   const known = typeModels.get(e.subagentType)
   return agentModel(v.agents, { model: e.model, fork: e.fork, known: known === 'inherit' ? e.parentModel : known })
 }
@@ -1501,7 +1509,7 @@ async function guardAgentModel($: EngineInterface, e: { model?: string; parentMo
  */
 async function keepWarm($: EngineInterface): Promise<void> {
   const k = config.guard.on ? config.guard.keepWarm : undefined
-  if (!k || warmOff || warming || (await read($, hidden)) || (await pausedFor($)) > 0) return
+  if (!k || warmOff || warming || (await read($, hidden)) || (await heldBack($))) return
   const s = await read($, snap)
   const c = s.cache
   if (!c?.cached) return
@@ -1597,7 +1605,7 @@ async function queueTick($: EngineInterface): Promise<void> {
     $.ui.toast('g-line dropped the prompt it was holding: it was held for another window, and the guard has held you for a new one.', { timeoutMs: 8000 })
     return
   }
-  if (!v.stop || (await pausedFor($)) > 0) {
+  if (!v.stop || (await heldBack($))) {
     queued = undefined
     try {
       const box = await $.prompt.read()
@@ -1680,7 +1688,8 @@ async function simulate($: EngineInterface, window?: '5h' | 'week', used?: numbe
 async function whyNow($: EngineInterface): Promise<string[]> {
   const at = await nowMs($)
   const facts = simulated(factsOf(await read($, snap), at), simulation)
-  return whyLines(config.guard, facts, verdict, { pausedFor: await pausedFor($), simulated: simulation !== undefined })
+  const lines = whyLines(config.guard, facts, verdict, { pausedFor: await pausedFor($), simulated: simulation !== undefined })
+  return offHere ? ['Off in this session: no rule acts here. /g-line guard on here brings them back.', ...lines] : lines
 }
 
 /** `/g-line guard …`: what's in force, a pass for one prompt, a pause, or the rules off and on. */
@@ -1713,6 +1722,16 @@ async function guardCommandRun($: EngineInterface, action: string, pause?: numbe
     await update($, tick, n => n + 1)
     return
   }
+  if (action === 'off here' || action === 'on here') {
+    offHere = action === 'off here'
+    passOnce = undefined
+    $.ui.toast(offHere
+      ? 'g-line guard off in this session: your prompts, effort and agents run as you set them. Other sessions stay guarded. /g-line guard on here brings it back.'
+      : 'g-line guard: your rules apply in this session again.', { timeoutMs: 10_000 })
+    await guardNow($)
+    await update($, tick, n => n + 1)
+    return
+  }
   if (action === 'on' || action === 'off') {
     await choose($, { guard: action === 'on' })
     $.ui.toast(none ? 'g-line guard has no rules: add them under "guard" in ~/.config/g-line/config.json (README: Guard).'
@@ -1730,6 +1749,7 @@ async function guardCommandRun($: EngineInterface, action: string, pause?: numbe
     config.guard.groups?.length ? (g => (g ? `This account is in group ${g.name}.` : 'No account reading yet, so no group.'))(groupOf(config.guard.groups, (await read($, snap)).account)) : '',
     // What's in force in a few words; the pane lists every rule as written.
     !none && config.guard.on ? `${config.guard.rules.length} ${config.guard.rules.length === 1 ? 'rule' : 'rules'}, ${v.rules.length} in force${v.rules.length ? `: ${inForceText(v)}` : ''}.` : '',
+    offHere ? 'Off in this session (/g-line guard on here).' : '',
     paused > 0 ? `Paused for ${Math.ceil(paused / 60)} more minutes.` : '',
     config.guard.keepWarm ? `Keep-warm ${warmOff ? 'off for this session' : `on, ${warmed} re-reads since the last turn`}.` : '',
   ].filter(Boolean)
@@ -1828,7 +1848,7 @@ async function resumeNow($: EngineInterface): Promise<void> {
   resumePlan = undefined
   await releaseLease($, `lease:resume:${plan.key}`)
   // Said whatever the toasts setting: g-line is about to type for the person, or chose not to.
-  if (!config.guard.on || (await pausedFor($)) > 0 || (await read($, turnNow))) {
+  if (!config.guard.on || (await heldBack($)) || (await read($, turnNow))) {
     $.ui.toast(`g-line didn't send its "${config.guard.resume.text}": ${!config.guard.on ? 'the guard is off' : (await read($, turnNow)) ? 'a turn is already running' : 'the guard is paused'}.`, { timeoutMs: 8000 })
     return
   }
@@ -2076,6 +2096,7 @@ export const register: Register = (on, options) => {
         if (s.cache?.cached && gap > life && u.cache_creation_input_tokens > s.cache.prefix * 0.5) coldThisTurn = true
         if (s.cache?.accountChanged && u.cache_creation_input_tokens > s.cache.prefix * 0.5) coldThisTurn = true
         return { ...s, model: e.model, effort: typeof step.effort === 'string' ? step.effort : s.effort,
+          effortSet: capped && typeof e.effort === 'string' && e.effort !== capped ? e.effort : undefined,
           cache: { lastAt: started, cached, prefix, learned } }
       })
       const cold = coldThisTurn
