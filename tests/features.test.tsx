@@ -1886,3 +1886,62 @@ test('sessions on the same account share usage: an idle one reads what another j
   expect((store['g-line-limits:team@example.com'] as { limits: { percentUsed: number }[] }).limits[0]?.percentUsed).toBe(88)
   expect((store['g-line-limits:other@example.com'] as { limits: { percentUsed: number }[] }).limits[0]?.percentUsed).toBe(99)
 })
+
+// ------------------------------------------------------------ 0.15.0
+
+test('a usage_command reading from another machine reaches the guard, and never lowers a figure', { timeoutMs: 30_000 }, async ($, on) => {
+  const store: Record<string, unknown> = {}
+  const w = world(on, {}, store)
+  const held = () => (store['g-line-limits:team@example.com'] as { limits: { percentUsed: number }[] }).limits[0]?.percentUsed
+  w.config = { account_command: ['acct'], usage_command: ['usage'], guard: { rules: [{ left: 12, stop: true }] } }
+  let printed = ''
+  let calls = 0
+  w.run = argv => {
+    if (argv[0] === 'acct') return { value: { exitCode: 0, stdout: 'team@example.com\n', stderr: '' } }
+    if (argv[0] === 'usage') {
+      calls += 1
+      return { value: { exitCode: 0, stdout: printed, stderr: '' } }
+    }
+    return undefined
+  }
+  engineBelow(on)
+  hintBelow(on)
+  await start($)
+  await measure($, w, 50)
+  const resetMs = w.clock.now() + 2 * 3600 * 1000
+  const resets = new Date(resetMs).toISOString()
+  printed = `{"five_hour":{"used_percentage":90,"resets_at":"${resets}"}}\n`
+  await w.clock.advance(135_000)
+  expect(calls).toBeGreaterThan(0)
+  // Another machine spent it: 10% left, under the 12% stop.
+  expect((await $.prompt.submit(typed('at 90'))).drop).toMatch(/10% of the 5-hour window left/)
+  expect(held()).toBe(90)
+  // A lower figure, a failure and junk change nothing.
+  printed = `{"five_hour":{"used_percentage":20,"resets_at":"${resets}"}}\n`
+  await w.clock.advance(135_000)
+  expect(held()).toBe(90)
+  printed = 'oops'
+  await w.clock.advance(135_000)
+  expect(held()).toBe(90)
+  // The engine's own lower reading doesn't take it back either.
+  await measure($, w, 55, Math.round((resetMs - w.clock.now()) / 1000))
+  await w.clock.advance(15_000)
+  expect(held()).toBe(90)
+})
+
+test('a usage_command does nothing without an account_command', { timeoutMs: 30_000 }, async ($, on) => {
+  const w = world(on, {}, {})
+  w.config = { usage_command: ['usage'], guard: { rules: [{ left: 12, stop: true }] } }
+  let calls = 0
+  w.run = argv => {
+    if (argv[0] === 'usage') calls += 1
+    return undefined
+  }
+  engineBelow(on)
+  hintBelow(on)
+  await start($)
+  await measure($, w, 50)
+  await w.clock.advance(135_000)
+  expect(calls).toBe(0)
+  expect(await $.prompt.submit(typed('hi'))).toEqual({ text: 'hi' })
+})

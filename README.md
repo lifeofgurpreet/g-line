@@ -202,7 +202,7 @@ seconds. Headline text is stripped of escape and control characters before it re
 terminal; the only escape g-line draws is its own link, to an `https` address it has checked.
 To keep the rules above across sessions, g-line remembers which headlines it showed and when,
 for a day, in Claude Code's plugin store on your machine.
-With Pulse off (the default), g-line makes no network requests at all.
+With Pulse off (the default), g-line makes no network requests at all. The one thing near that line is your own `usage_command` (below): a command you choose and g-line only runs, like `account_command`; whatever it fetches is its doing.
 
 ![Pulse on the spinner during a long turn, in the receipts-only layout: Churning… · 1 tool · 5h 9% │ 𝕏 @claudeai · 6d: Claude Dashboards and Claude Motion are in b…](docs/pulse.png)
 
@@ -271,6 +271,7 @@ Layers, lowest first: defaults, `config.json`, `/config`, then choices made with
 | `roster` | `true` keeps a heartbeat of each g-line session on this machine in Claude Code's plugin store: whether it's working, waiting on you or idle, its context, cache and model, and the `account_command` line when you set one. Line 2 counts the others, the pane lists them. `false` writes and shows nothing | `true` |
 | `guard` | Your rules for a low usage window, and keep-warm (see Guard). With none, g-line changes nothing | none |
 | `tz` | Your time zone (an IANA name such as `Pacific/Guadalcanal`) for every time g-line shows: resets, projections, receipts, the guard's words. Useful on a machine in another zone, over SSH. `auto` is the machine's own. The pane says which zone the times are in | `auto` |
+| `usage_command` | A command of yours, as a list of words, that prints the account's 5-hour and weekly usage as one line of JSON: `{"five_hour":{"used_percentage":42,"resets_at":"2026-10-23T12:00:00Z"},"seven_day":{"used_percentage":70,"resets_at":"2026-10-27T00:00:00Z"}}`. g-line runs it about every 2 minutes (5 s limit), only with an `account_command`, so usage spent in a session on another machine shows here and the guard acts on it. It can raise a figure, never lower one in the same window; failures and other output change nothing. The mod makes no network call itself: the command is yours | none |
 | `reset_threshold`, `long_turn_seconds`, `cache_ttl`, `icons`, `segments`, `preset`, `account_command` | See `hooks/settings.ts`. `account_command` runs a command you choose and shows its first line; off unless set | |
 
 `~/.config/glanceline/config.json` from 0.4 is still read, and `g-line/config.json` wins.

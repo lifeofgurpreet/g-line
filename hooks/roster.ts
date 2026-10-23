@@ -116,3 +116,27 @@ export function mergeLimits(own: readonly Limit[] | undefined, shared: unknown, 
   }
   return [...out.values()]
 }
+
+/**
+ * The readings a `usage_command` printed: the first line as JSON,
+ * `{"five_hour":{"used_percentage":N,"resets_at":"ISO"},"seven_day":{...}}`.
+ * Anything else is no reading (undefined), so what's known stays.
+ */
+export function parseUsage(stdout: string): Limit[] | undefined {
+  try {
+    const parsed: unknown = JSON.parse(stdout.split('\n')[0] ?? '')
+    if (!parsed || typeof parsed !== 'object') return undefined
+    const out: Limit[] = []
+    for (const kind of ['five_hour', 'seven_day']) {
+      const w = (parsed as Record<string, unknown>)[kind]
+      if (!w || typeof w !== 'object') continue
+      const { used_percentage: pct, resets_at: at } = w as { used_percentage?: unknown; resets_at?: unknown }
+      const resetsAt = typeof at === 'string' ? Date.parse(at) / 1000 : NaN
+      if (typeof pct !== 'number' || !Number.isFinite(pct) || !Number.isFinite(resetsAt)) continue
+      out.push({ kind, percentUsed: Math.min(100, Math.max(0, pct)), resetsAt: Math.floor(resetsAt) })
+    }
+    return out.length ? out : undefined
+  } catch {
+    return undefined
+  }
+}

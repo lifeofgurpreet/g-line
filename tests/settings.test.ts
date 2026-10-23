@@ -66,6 +66,14 @@ test('merge reads every config.json key, and ignores malformed values', () => {
   expect(merge(DEFAULTS, { receipt: false }).receipt).toEqual([])
 })
 
+test('usage_command is a list of words, and ignored when malformed', () => {
+  expect(merge(DEFAULTS, { account_command: ['a'], usage_command: ['caam-account-usage', '--x'] }).usageCommand).toEqual(['caam-account-usage', '--x'])
+  expect(merge(DEFAULTS, { usage_command: [] }).usageCommand).toBeUndefined()
+  expect(merge(DEFAULTS, { usage_command: 'tool' }).usageCommand).toBeUndefined()
+  expect(merge(DEFAULTS, { usage_command: ['ok', 3] }).usageCommand).toBeUndefined()
+  expect(DEFAULTS.usageCommand).toBeUndefined()
+})
+
 test('a saved notification choice keeps the others, from an object or the 0.5 boolean', () => {
   expect(withPatch({ pulse: true, notify: { cache: false } }, patchOf(named('agents'), true)))
     .toEqual({ pulse: true, notify: { cache: false, agents: true } })

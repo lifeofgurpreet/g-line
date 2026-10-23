@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.15.0 (2026-10-23): see usage spent on another machine
+
+- Usage spent in a session on another machine never reached this one, so `5h` and `week` read
+  low and the guard waited. A new opt-in `usage_command` in config.json prints the account's
+  usage as one line of JSON; g-line runs it about every 2 minutes (only with an `account_command`)
+  and merges the answer into line 1, line 2 and the guard. It can raise a figure and never lowers
+  one in the same window; a command that fails, times out or prints something else changes
+  nothing. The command is your own, like `account_command`: g-line makes no network call itself.
+
 ## 0.14.0 (2026-10-23): sessions on one account share their usage
 
 - A session learns the account's usage only from its own requests, so an idle terminal kept

@@ -38,6 +38,8 @@ export type Config = {
   toasts: boolean
   cacheTtl: 'auto' | '5m' | '1h'
   accountCommand?: string[]
+  /** A command that prints the account's usage as JSON (another machine's spending); only with `accountCommand`. */
+  usageCommand?: string[]
   notify: Notify
   longTurnSeconds: number
   resetThreshold: number
@@ -92,6 +94,10 @@ export function merge(base: Config, raw: unknown): Config {
   const command = r.account_command
   if (Array.isArray(command) && command.length && command.every(word => typeof word === 'string')) {
     next.accountCommand = command as string[]
+  }
+  const usage = r.usage_command
+  if (Array.isArray(usage) && usage.length && usage.every(word => typeof word === 'string')) {
+    next.usageCommand = usage as string[]
   }
   if (typeof r.notify === 'boolean') next.notify = { cache: r.notify, reset: r.notify, longTurn: r.notify && base.notify.longTurn, agents: r.notify && base.notify.agents }
   else if (r.notify && typeof r.notify === 'object') {

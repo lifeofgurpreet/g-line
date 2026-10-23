@@ -1,6 +1,6 @@
 import { expect, test } from 'claude-code/testing'
 
-import { mergeLimits, othersSegment, rosterOf, rosterRow, staleRosterKeys } from '../hooks/roster'
+import { mergeLimits, parseUsage, othersSegment, rosterOf, rosterRow, staleRosterKeys } from '../hooks/roster'
 import { parseGuard, resumeAt } from '../hooks/guard'
 
 const NOW = Date.parse('2026-10-21T06:00:00Z')
@@ -58,4 +58,16 @@ test('sessions on one account share usage: the higher percent in the same window
   // Junk from the store is skipped; a window only the other session saw is taken.
   expect(mergeLimits(own, 'junk', now)).toEqual(own)
   expect(mergeLimits([], [{ kind: 'seven_day', percentUsed: 40, resetsAt: now + 100 }, { kind: 1 }], now)).toEqual([{ kind: 'seven_day', percentUsed: 40, resetsAt: now + 100 }])
+})
+
+test('parseUsage reads the first line as JSON and nothing else', () => {
+  const line = '{"five_hour":{"used_percentage":42.5,"resets_at":"2026-10-23T12:00:00Z"},"seven_day":{"used_percentage":70,"resets_at":"2026-10-27T00:00:00Z"}}'
+  expect(parseUsage(line + '\nignored')).toEqual([
+    { kind: 'five_hour', percentUsed: 42.5, resetsAt: Date.parse('2026-10-23T12:00:00Z') / 1000 },
+    { kind: 'seven_day', percentUsed: 70, resetsAt: Date.parse('2026-10-27T00:00:00Z') / 1000 },
+  ])
+  expect(parseUsage('not json')).toBeUndefined()
+  expect(parseUsage('')).toBeUndefined()
+  expect(parseUsage('{"five_hour":{"used_percentage":"9","resets_at":"2026-10-23T12:00:00Z"}}')).toBeUndefined()
+  expect(parseUsage('{"five_hour":{"used_percentage":9,"resets_at":"soon"}}')).toBeUndefined()
 })

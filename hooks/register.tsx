@@ -18,7 +18,8 @@ import type { EngineInterface, Register } from 'claude-code'
 
 import type { AgentRow, Receipt, Snap, Totals } from '../types'
 import { SEP, alerts, clock, layoutKeys, modelName, pct, segments, str, tokens, utcLabel, width, zoneOffset } from './core'
-import { LIMITS_PREFIX, ROSTER_PREFIX, mergeLimits, othersSegment, rosterOf, rosterRow, staleRosterKeys } from './roster'
+import type { Limit } from './roster'
+import { LIMITS_PREFIX, ROSTER_PREFIX, mergeLimits, parseUsage, othersSegment, rosterOf, rosterRow, staleRosterKeys } from './roster'
 import type { RosterEntry, RosterState } from './roster'
 import type { Options, Payload, Preset, Segment, Tone } from './core'
 import {
@@ -361,10 +362,54 @@ const offsetAt = (ms: number) => zoneOffset(config.tz, ms) ?? -new Date(ms).getT
 /** The last usage readings sessions on this machine shared for an account. */
 let shared: { account: string; limits: unknown } | undefined
 
-/** This session's reading with what other sessions on the same account last shared. */
+/** What the person's `usage_command` last printed, for the account it was read under. */
+let fed: { account: string; limits: Limit[] } | undefined
+/** When `usage_command` last ran (ms); it runs about every two minutes. */
+let usageAt = 0
+
+/** This session's reading with what other sessions on the same account last shared, and `usage_command` printed. */
 function withShared(account: string | null | undefined, own: Snap['rateLimits'], now: number): Snap['rateLimits'] {
-  if (!config.accountCommand || !account || !shared || shared.account !== accountKey(account)) return own
-  return mergeLimits(own, shared.limits, now)
+  if (!config.accountCommand || !account) return own
+  const key = accountKey(account)
+  let out = own
+  if (shared && shared.account === key) out = mergeLimits(out, shared.limits, now)
+  if (config.usageCommand && fed && fed.account === key) out = mergeLimits(out, fed.limits, now)
+  return out
+}
+
+/**
+ * Runs the person's `usage_command` about every two minutes, only with an
+ * `account_command` and a known account: it can say what another machine spent.
+ * Output that isn't the JSON, or a failure, leaves the readings alone; a good
+ * one merges like a shared reading, so it raises a figure and never lowers it.
+ */
+async function refreshUsage($: EngineInterface): Promise<void> {
+  const command = config.usageCommand
+  if (!command || !config.accountCommand) return
+  const now = await nowMs($)
+  if (now - usageAt < 120_000) return
+  usageAt = now
+  try {
+    const account = (await read($, snap)).account
+    if (!account) {
+      usageAt = 0
+      return
+    }
+    const run = await $.process.run(command, { timeoutMs: 5000 })
+    if (run.exitCode !== 0) return
+    const limits = parseUsage(run.stdout)
+    if (!limits) return
+    const key = accountKey(account)
+    const at = (await nowMs($)) / 1000
+    fed = { account: key, limits: mergeLimits(fed?.account === key ? fed.limits : [], limits, at) }
+    const s = await read($, snap)
+    const merged = mergeLimits(s.rateLimits, limits, at)
+    if (JSON.stringify(merged) !== JSON.stringify(s.rateLimits ?? [])) {
+      await update($, snap, x => ({ ...x, rateLimits: merged, peaks: peaksOf(x, merged) }))
+    }
+  } catch {
+    // the command failed or ran out of time: the readings stand
+  }
 }
 
 /**
@@ -835,6 +880,7 @@ async function heartbeat($: EngineInterface): Promise<void> {
   if ((await read($, agents)).some(row => isActive(row.status))) await refreshAgents($)
   // An account rule needs a fresh reading: an account manager may have switched accounts.
   else if (beats % 8 === 0 && config.guard.rules.some(namesAccounts)) await refreshAccount($)
+  await refreshUsage($)
   await shareLimits($)
   await guardNow($).catch(() => undefined)
   await queueTick($).catch(() => undefined)
