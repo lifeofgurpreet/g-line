@@ -110,10 +110,15 @@ export function cacheNext(p: Payload, now: number): Segment | undefined {
   const recache = num(cache.recache_tokens_if_cold)
   if (cache.account_changed === true) {
     return { key: 'cache', priority: 90, tone: 'warn',
-      forms: [...(recache && recache > 0 ? [`cache cold (account changed), next turn rebuilds ${tokens(recache)}`] : []), 'cache cold (account changed)', 'cache cold'] }
+      ...(recache && recache > 0 ? { spare: 1 } : {}),
+      forms: recache && recache > 0
+        ? [`cache cold (account changed), next turn rebuilds ${tokens(recache)}`, `cache cold (account changed) ${tokens(recache)}`, `cache cold ${tokens(recache)}`, 'cache cold']
+        : ['cache cold (account changed)', 'cache cold'] }
   }
+  // The size stays as long as there's room for it, like the warm cache's: it's what the next turn pays.
   return { key: 'cache', priority: 90, tone: 'warn',
-    forms: recache && recache > 0 ? [`cache cold, next turn rebuilds ${tokens(recache)}`, 'cache cold'] : ['cache cold'] }
+    ...(recache && recache > 0 ? { spare: 1 } : {}),
+    forms: recache && recache > 0 ? [`cache cold, next turn rebuilds ${tokens(recache)}`, `cache cold, rebuilds ${tokens(recache)}`, `cache cold ${tokens(recache)}`, 'cache cold'] : ['cache cold'] }
 }
 
 /** When a window resets, or (on pace to run out) roughly when it runs out. */

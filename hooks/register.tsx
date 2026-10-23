@@ -1388,7 +1388,9 @@ async function guardNow($: EngineInterface): Promise<Verdict> {
 async function guardSegment($: EngineInterface): Promise<Segment | undefined> {
   if (!verdict.rules.length) return undefined
   const at = await nowMs($)
-  const until = verdict.stop?.resetsAt !== undefined ? clock(verdict.stop.resetsAt, at / 1000, offsetAt(at)) : undefined
+  // When the hold lets go on its own: a pace step's lift or the end of the rule's hours, else the reset.
+  const lift = verdict.stop ? liftsAt(verdict.stop, at, offsetAt(at)) : undefined
+  const until = lift !== undefined ? clock(Math.ceil(lift / 1000), at / 1000, offsetAt(at)) : undefined
   if (offHere) return { key: 'guard', priority: 60, forms: ['guard off here', 'guard off'], tone: 'dim' }
   const words = guardForms(verdict, await pausedFor($), until, queued !== undefined)
   if (!words) return undefined

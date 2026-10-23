@@ -232,7 +232,7 @@ test('what the guard says: steps toast with the figures; line 2 says over pace; 
   expect(changeText(v2, v3)).toMatch(/: new prompts stop\.$/)
   expect(changeText(v3, evaluate(GUARD, week(15, MON_9)))).toMatch(/prompts go through again; effort is yours again; subagents pick their own model again/)
   expect(guardForms(v1)?.forms[0]).toBe('guard: over pace, effort medium')
-  expect(guardForms(v3, undefined, '14:00')?.forms).toEqual(['guard: over pace, 28% of the week used till 14:00', 'over pace till 14:00', 'over pace'])
+  expect(guardForms(v3, undefined, '14:00')?.forms).toEqual(['guard: over pace, 28% of the week used till ~14:00', 'over pace till ~14:00', 'over pace'])
   expect(ruleText(GUARD.rules[0] as NonNullable<(typeof GUARD.rules)[0]>)).toBe(
     'paced week, on groups team, other, keeps 10% back, 8% free at the start, office Mon-Fri 09:00-18:00 Kuala Lumpur time counts 4x: '
     + 'effort medium at 0 points ahead, agents on sonnet at 3 points ahead, stop new prompts and end a running turn at 6 points ahead')

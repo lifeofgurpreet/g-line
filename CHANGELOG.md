@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.13.1 (2026-10-23): a cold cache keeps its size, and a hold says when it really lifts
+
+- A cold cache read only `cache cold` on a busy line, where a warm one kept `cache ~48m 57k`.
+  It now keeps its size the same way (`cache cold, rebuilds 57k`, `cache cold 57k`) and gives it
+  up only before something as important would be dropped.
+- Line 2's `over pace till …` named the week's reset, days away. It now names about when the pace
+  step lets go as the allowance grows (`over pace till ~Sun 12:00`). A rule with hours says when
+  its hours end, if that comes before the reset.
+
 ## 0.13.0 (2026-10-23): see the effort that ran, and free your own session
 
 - **The effort that ran, next to the one you set.** When the guard lowered the conversation's

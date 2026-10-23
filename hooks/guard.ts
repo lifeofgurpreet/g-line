@@ -852,7 +852,8 @@ export function guardForms(verdict: Verdict, pausedFor?: number, until?: string,
     return { forms: [`guard paused ${m}m`, 'guard paused'], tone: 'dim' }
   }
   if (verdict.stop?.pace) {
-    const till = until ? ` till ${until}` : ''
+    // A pace step's lift is reckoned from the allowance's growth: about, not exact.
+    const till = until ? ` till ~${until}` : ''
     const forms = [`guard: over pace, ${pct(verdict.stop.pace.used)} of the week used${till}`, `over pace${till}`, 'over pace']
     return { forms: queued ? forms.map((f, i) => (i < forms.length - 1 ? `${f}, 1 queued` : f)) : forms, tone: 'bad' }
   }

@@ -110,3 +110,10 @@ test('an effort the guard lowered shows both, what was set and what ran, in ambe
   expect(model?.tone).toBe('warn')
   expect(deck({ ...P, effort: { level: 'high', set: 'high' } }, O, {}).next.find(part => part.key === 'model')?.text).toBe('Opus 5.5 high')
 })
+
+test('a cold cache keeps its size while there is room, in its shortest form too', async () => {
+  const cold = { ...P, prompt_cache: { warm: false, caching_observed: true, ttl: '1h' as const, expires_at: NOW - 60, recache_tokens_if_cold: 57_000 } }
+  expect(deck(cold, O, {}).next.find(part => part.key === 'cache')?.text).toBe('cache cold, next turn rebuilds 57k')
+  const tight = deck(cold, O, { next: nextRoom(70) }, [{ key: 'others', priority: 40, forms: ['10 others'] }, { key: 'branch', priority: 30, forms: ['main*'] }])
+  expect(tight.next.find(part => part.key === 'cache')?.text).toMatch(/57k/)
+})
