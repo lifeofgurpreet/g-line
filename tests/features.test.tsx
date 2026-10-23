@@ -810,6 +810,29 @@ test('turned on, Pulse shows a headline under the prompt at once: who, how old, 
   expect(w.toasts[w.toasts.length - 1]).toMatch(/^Opened github\.com in your browser\.$/)
 })
 
+test('0.12.1: with Pulse on in an interactive session, g-line asks for links in Claude Code\'s own process', { timeoutMs: 30_000 }, async ($, on) => {
+  const w = world(on)
+  w.config = { pulse: true }
+  const set: [string, unknown][] = []
+  on('env.set', ($, e) => {
+    set.push([(e as unknown as { name: string }).name, (e as unknown as { value: unknown }).value])
+    return { value: {} } as never
+  })
+  await start($)
+  expect(set).toEqual([['FORCE_HYPERLINK', '1']])
+})
+
+test('0.12.1: Pulse off, nothing is set', { timeoutMs: 30_000 }, async ($, on) => {
+  world(on)
+  const set: unknown[] = []
+  on('env.set', ($, e) => {
+    set.push(e)
+    return { value: {} } as never
+  })
+  await start($)
+  expect(set).toEqual([])
+})
+
 test('where Claude Code draws no links (herdr), the headline is plain text, said once; FORCE_HYPERLINK makes it a link', { timeoutMs: 30_000 }, async ($, on) => {
   const w = world(on, {}, undefined, { TERM_PROGRAM: 'herdr', HERDR_ENV: '1' })
   w.config = { pulse: true }
@@ -821,9 +844,9 @@ test('where Claude Code draws no links (herdr), the headline is plain text, said
   expect(await ui.find({ type: 'Link' })).toBeUndefined()
   expect(await ui.find({ type: 'Text', text: 'Claude Dashboards are in beta' })).toBeDefined()
   await ui.unmount()
-  expect(w.toasts.filter(text => text.includes('FORCE_HYPERLINK=1')).length).toBe(1)
+  expect(w.toasts.filter(text => text.includes('FORCE_HYPERLINK=0')).length).toBe(1)
   await w.clock.advance(16_000)
-  expect(w.toasts.filter(text => text.includes('FORCE_HYPERLINK=1')).length).toBe(1)
+  expect(w.toasts.filter(text => text.includes('FORCE_HYPERLINK=0')).length).toBe(1)
   // The reader prints the whole address once, for the terminal to find, instead of a link it would print twice.
   await $.command.run({ command: 'g-line', args: 'news' } as never)
   const pane = await $.ui.mount({ plugin: 'g-line', surface: 'terminal', component: 'Pane', requestId: 'g-line',

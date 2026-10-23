@@ -168,7 +168,10 @@ async function applied($: EngineInterface, before: Config): Promise<void> {
   if (config.cacheTtl !== before.cacheTtl) ttl = await explicitTtl($, config)
   if (config.exportState !== before.exportState) await setupLive($)
   if (config.claudeReads && !statusRegistered) await registerStatus($)
-  if (config.pulse && !before.pulse) await refreshPulse($, true)
+  if (config.pulse && !before.pulse) {
+    await refreshPulse($, true)
+    await readTerminal($)
+  }
   await update($, tick, n => n + 1)
 }
 
@@ -1101,6 +1104,16 @@ let links = false
 let os = ''
 
 async function readTerminal($: EngineInterface): Promise<void> {
+  // Claude Code decides link support on every render, from its own environment, so
+  // setting the variable here (after it started) makes Pulse's headlines links in herdr,
+  // Zellij and SSH sessions. hooks.json's SessionStart hook unsets it for Bash commands.
+  if (config.pulse && interactive && !(await $.env.get('FORCE_HYPERLINK'))) {
+    try {
+      await $.env.set('FORCE_HYPERLINK', '1')
+    } catch {
+      // refused or unavailable: Claude Code's own rule decides, as before
+    }
+  }
   links = linksDrawn({
     FORCE_HYPERLINK: await $.env.get('FORCE_HYPERLINK'), NETLIFY: await $.env.get('NETLIFY'), CI: await $.env.get('CI'),
     TEAMCITY_VERSION: await $.env.get('TEAMCITY_VERSION'), WT_SESSION: await $.env.get('WT_SESSION'),
@@ -1150,7 +1163,7 @@ async function turnPulse($: EngineInterface, settle = false): Promise<void> {
     // this session keeps its own count
   }
   if (!links && config.lines !== 0 && (await firstAcrossSessions($, 'hint:links'))) {
-    await toast($, 'Pulse: Claude Code draws no links in this terminal, so headlines are plain text. FORCE_HYPERLINK=1 where Claude Code starts makes them links if your terminal shows links (herdr, Zellij, SSH). /g-line open opens the one shown.', 15_000)
+    await toast($, 'Pulse: links are off here (FORCE_HYPERLINK=0), so headlines are plain text. /g-line open opens the one shown.', 15_000)
   }
 }
 

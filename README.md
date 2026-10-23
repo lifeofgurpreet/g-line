@@ -164,12 +164,12 @@ the last one until something new comes in or half an hour has passed.
 
 **Links.** The headline is a link wherever Claude Code itself draws links: Ghostty, iTerm2,
 kitty, WezTerm, VS Code, Windows Terminal, Warp, and tmux 3.4 or later. Cmd-click (ctrl-click
-on Linux) opens it. Elsewhere it's plain text, because there Claude Code would print the whole
-address after the headline and push the row onto a second line. That includes herdr and
-Zellij, and a session reached over SSH, since SSH doesn't pass on which terminal you use. If
-your terminal does show links, set `FORCE_HYPERLINK=1` where Claude Code starts (your shell
-profile, or `env` in Claude Code's settings): Claude Code then draws links there, and so does
-g-line. `/g-line open` opens the headline showing in any terminal. Over SSH, or on a machine
+on Linux) opens it. Claude Code doesn't recognise herdr, Zellij or a session reached over SSH,
+so with Pulse on g-line sets `FORCE_HYPERLINK=1` in Claude Code's own process (Claude Code
+decides links on every draw) and its SessionStart hook unsets it again for Bash commands, so
+tools don't start printing link codes into what Claude reads. Set `FORCE_HYPERLINK=0` where
+Claude Code starts if your terminal can't show links (the address would then print after the
+headline). `/g-line open` opens the headline showing in any terminal. Over SSH, or on a machine
 with no display, it copies the link instead, for your own terminal to paste.
 
 With the receipts-only layout there is no row, so the spinner shows the headlines on turns

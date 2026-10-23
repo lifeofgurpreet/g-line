@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.12.1 (2026-10-23): Pulse headlines are links in herdr, Zellij and over SSH
+
+- Claude Code decides whether to draw links on every draw, from its own environment, and it
+  doesn't recognise herdr, Zellij or SSH sessions. With Pulse on, g-line now sets
+  `FORCE_HYPERLINK=1` in Claude Code's process, so the headline is a link there, with nothing to
+  set by hand. A SessionStart hook unsets it again for Bash commands: tried on 2.1.309, a
+  command's `env` no longer shows it, where without the hook tools inherit it and print link
+  codes into what Claude reads. `FORCE_HYPERLINK=0` where Claude Code starts keeps links off.
+
 ## 0.12.0 (2026-10-23): a paced week, and the guard says why
 
 - **A paced weekly allowance** (`pace`, a rule of its own). The cliff rules waited for the last
