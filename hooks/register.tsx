@@ -37,7 +37,7 @@ import {
 import type { PulseFeed, PulseItem, Shown } from './pulse'
 import { gitSegmentOf } from './core'
 import {
-  AGENT_TYPE_MODELS, accountIdentity, accountKey, agentModel, cappedEffort, changeText, effortKeepsCache, evaluate, guardForms, inForceText, leaseFree, readBack, ruleText, simulated, stopText,
+  AGENT_TYPE_MODELS, accountIdentity, accountKey, agentModel, cappedEffort, changeText, effortKeepsCache, evaluate, guardForms, inForceText, leaseFree, namesAccounts, readBack, ruleText, simulated, stopText,
   resumeAt, warmDue, warmForms,
 } from './guard'
 import type { Effort, Facts, Simulation, Verdict, WindowName } from './guard'
@@ -797,7 +797,7 @@ async function heartbeat($: EngineInterface): Promise<void> {
   if ((await configStamp($)) !== stamp) await reloadConfig($)
   if ((await read($, agents)).some(row => isActive(row.status))) await refreshAgents($)
   // An account rule needs a fresh reading: an account manager may have switched accounts.
-  else if (beats % 8 === 0 && config.guard.rules.some(rule => rule.accounts)) await refreshAccount($)
+  else if (beats % 8 === 0 && config.guard.rules.some(namesAccounts)) await refreshAccount($)
   await guardNow($).catch(() => undefined)
   await keepWarm($).catch(() => undefined)
   await heartbeatRoster($)
@@ -1564,7 +1564,7 @@ async function guardCommandRun($: EngineInterface, action: string, pause?: numbe
     !none && !(await read($, snap)).rateLimits?.length ? 'No usage readings yet (an API key, a cloud provider, or no request so far): the rules wait.' : '',
     simulation ? `Simulating ${simulation.used}% used of the ${simulation.window} window.` : '',
     ...config.guard.errors.map(error => `Not read: ${error}.`),
-    config.guard.rules.some(rule => rule.accounts) && !config.accountCommand ? 'Rules naming accounts never apply: no account_command is set.' : '',
+    config.guard.rules.some(namesAccounts) && !config.accountCommand ? 'Rules naming accounts never apply: no account_command is set.' : '',
     // What's in force in a few words; the pane lists every rule as written.
     !none && config.guard.on ? `${config.guard.rules.length} ${config.guard.rules.length === 1 ? 'rule' : 'rules'}, ${v.rules.length} in force${v.rules.length ? `: ${inForceText(v)}` : ''}.` : '',
     paused > 0 ? `Paused for ${Math.ceil(paused / 60)} more minutes.` : '',
@@ -1792,7 +1792,7 @@ export const register: Register = (on, options) => {
     await readTerminal($)
     await readGuardEnv($)
     if (config.guard.errors.length) $.ui.toast(`g-line guard left out what it couldn't read: ${config.guard.errors.join('; ')}.`, { timeoutMs: 15_000 })
-    if (config.guard.on && config.guard.rules.some(rule => rule.accounts) && !config.accountCommand) {
+    if (config.guard.on && config.guard.rules.some(namesAccounts) && !config.accountCommand) {
       $.ui.toast('g-line guard: rules naming accounts never apply, because no account_command is set.', { timeoutMs: 12_000 })
     }
     await loadShown($)

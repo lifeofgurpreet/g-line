@@ -337,6 +337,11 @@ hours in Kuala Lumpur, so teammates keep some of the window.
 - **`accounts`**: the rule applies only when the `account_command` line contains one of these
   words, in any case. With no account reading, it doesn't apply, and with no
   `account_command` at all, g-line says so when the session starts and in `/g-line guard`.
+- **`except_accounts`**: the other way round, every account except those whose line contains
+  one of these words (`["me@"]` for "every shared account"). With no account reading it
+  doesn't apply either. A shared account runs out by the week as well as by the hour, so a
+  reserve usually wants a `"window": "week"` rule too, with no `hours`: a week drained
+  overnight is still drained in the morning.
 - **`hours`** (`09:00-17:00 mon-fri`, `22:00-06:00`, `9-17 sat,sun`) in **`tz`** (an IANA
   zone; the machine's own when left out).
 

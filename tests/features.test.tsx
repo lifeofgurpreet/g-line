@@ -1394,7 +1394,10 @@ test('the roster: line 2 counts the other sessions on this machine and which wai
   const kept: Record<string, unknown> = {}
   const w = world(on, {}, kept)
   hintBelow(on)
-  on('tool.check', () => ({ decision: 'ask' }) as never)
+  // The first check asks the person; once they say yes, the call's own check
+  // (Claude Code 2.1.308 runs one inside tool.call) allows it.
+  let asked = false
+  on('tool.check', () => (asked ? { decision: 'allow' } : ((asked = true), { decision: 'ask' })) as never)
   on('session.end', ($, e) => ({ sessionId: e.sessionId }) as never)
   const line2 = async () => {
     const ui = await $.ui.mount({ plugin: 'g-line', surface: 'terminal', component: 'PromptHint',

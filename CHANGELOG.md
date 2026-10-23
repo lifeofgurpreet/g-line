@@ -1,5 +1,17 @@
 # Changelog
 
+## 0.8.2 (2026-10-23): a rule for every account but yours
+
+- **`except_accounts`.** A rule can now apply to every account except the ones named, so
+  "keep a reserve on shared accounts" no longer means listing each shared account and missing
+  the next one added. `{ "left": 10, "stop": true, "except_accounts": ["me@"] }` stops at 10%
+  on any account whose `account_command` line doesn't contain `me@`. With no account reading
+  it waits, as `accounts` does. It works on the weekly window too, which is the one a
+  shared account runs out of for days.
+- **A test that broke on Claude Code 2.1.308.** The test harness now runs a call's permission
+  check inside `tool.call`, so the roster test's "ask" stub asked again and the call never
+  ran. The stub now asks once. No change to the mod.
+
 ## 0.8.1 (2026-10-21): the guard, tried in a real session
 
 0.7 and 0.8 were tested only through the engine's dispatch. In a signed-in session the guard

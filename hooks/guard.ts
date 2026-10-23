@@ -33,6 +33,8 @@ export type Rule = {
   unlessResetWithin?: number
   /** Lower-case parts of the account reading, any of which picks the account. */
   accounts?: string[]
+  /** Lower-case parts of the account reading, any of which leaves the account out. */
+  exceptAccounts?: string[]
   hours?: Hours
   tz?: string
   /** The rule as written, for toasts. */
@@ -179,6 +181,11 @@ export function parseGuard(raw: unknown): GuardConfig {
       if (accounts.length) rule.accounts = accounts
       else errors.push(`rule ${index + 1}: "accounts" lists parts of the account line, such as "team@"`)
     }
+    if (e.except_accounts !== undefined) {
+      const except = (Array.isArray(e.except_accounts) ? e.except_accounts : [e.except_accounts]).map(word).filter(Boolean)
+      if (except.length) rule.exceptAccounts = except
+      else errors.push(`rule ${index + 1}: "except_accounts" lists parts of the account line, such as "me@"`)
+    }
     if (e.hours !== undefined) {
       const hours = parseHours(e.hours)
       if (hours) rule.hours = hours
@@ -271,6 +278,10 @@ export function evaluate(guard: GuardConfig, facts: Facts, before: Active = {}):
       const account = facts.account?.toLowerCase()
       if (!account || !rule.accounts.some(part => account.includes(part))) continue
     }
+    if (rule.exceptAccounts) {
+      const account = facts.account?.toLowerCase()
+      if (!account || rule.exceptAccounts.some(part => account.includes(part))) continue
+    }
     if (rule.hours) {
       const at = localTime(facts.nowMs, rule.tz, facts.offsetMinutes)
       if (!at || !inHours(rule.hours, at)) continue
@@ -287,6 +298,9 @@ export function evaluate(guard: GuardConfig, facts: Facts, before: Active = {}):
   }
   return verdict
 }
+
+/** Whether a rule depends on the account reading. */
+export const namesAccounts = (rule: Rule) => Boolean(rule.accounts || rule.exceptAccounts)
 
 /** A model family's price rank: haiku 1, sonnet 2, opus 3, fable or mythos 4; 0 unknown. */
 export function rank(model: string | undefined): number {
@@ -355,7 +369,7 @@ function untilText(resetsAt: number | undefined, nowMs: number, offsetMinutes: n
 
 /** Why a prompt was refused: the window, how much is left, when it resets, and the way past. */
 export function stopText(stop: NonNullable<Verdict['stop']>, nowMs: number, offsetMinutes: number, simulated = false): string {
-  const whose = stop.rule.accounts ? ' on this shared account' : ''
+  const whose = namesAccounts(stop.rule) ? ' on this shared account' : ''
   const hours = stop.rule.hours ? ' in these hours' : ''
   const sim = simulated ? 'simulated; ' : ''
   return `g-line guard stopped this prompt: ${pct(stop.left)} of the ${NAMES[stop.window]} window left${whose}${hours} (${sim}your rule: stop at ${stop.rule.left}%).`
@@ -369,6 +383,7 @@ export function ruleText(rule: Rule): string {
   const when = [`at ${rule.left}% of ${rule.window} left`]
   if (rule.unlessResetWithin !== undefined) when.push(`unless it resets within ${Math.round(rule.unlessResetWithin / 60)}m`)
   if (rule.accounts) when.push(`on accounts ${rule.accounts.map(a => `"${a}"`).join(', ')}`)
+  if (rule.exceptAccounts) when.push(`on accounts except ${rule.exceptAccounts.map(a => `"${a}"`).join(', ')}`)
   if (rule.hours) {
     const days = rule.hours.days.length === 7 ? 'daily' : rule.hours.days.map(d => (DAYS[d] ?? '').replace(/^./, c => c.toUpperCase())).join(',')
     when.push(`${hhmm(rule.hours.from)}-${hhmm(rule.hours.to)} ${days}${rule.tz ? ` (${rule.tz})` : ''}`)

@@ -91,6 +91,29 @@ test('a shared-account rule: only that account, only in office hours in its own 
   expect(evaluate(RULES, facts(9), on.active).stop).toBeUndefined()
 })
 
+test('0.8.2: a rule for every account but yours, on the weekly window as well as the 5-hour one', () => {
+  const g = parseGuard({
+    rules: [
+      { left: 10, stop: true, except_accounts: ['me@'], hours: '09:00-17:00 mon-fri', tz: 'Asia/Kuala_Lumpur' },
+      { left: 10, window: 'week', stop: true, except_accounts: 'me@', unless_reset_within: '1h' },
+    ],
+  })
+  expect(g.errors).toEqual([])
+  const shared = { account: 'account team@example.com (via CAAM)' }
+  // A shared account in office hours: the 5-hour reserve holds.
+  expect(evaluate(g, facts(9, shared)).stop?.rule.id).toBe('r0')
+  // Your own account (any case) is left out; no account reading decides nothing.
+  expect(evaluate(g, facts(9, { account: 'ME@example.com' })).stop).toBeUndefined()
+  expect(evaluate(g, facts(9, { account: null })).stop).toBeUndefined()
+  // The weekly reserve holds out of hours too (Saturday 10:00 in Kuala Lumpur), not on your own account.
+  const sat = Date.parse('2026-10-24T02:00:00Z')
+  expect(evaluate(g, facts(80, { ...shared, week: 8, now: sat })).stop?.rule.id).toBe('r1')
+  expect(evaluate(g, facts(80, { account: 'me@example.com', week: 8, now: sat })).stop).toBeUndefined()
+  expect(stopText(evaluate(g, facts(80, { ...shared, week: 8 })).stop!, TUE_10_KL, 480)).toContain('on this shared account')
+  expect(ruleText(g.rules[1]!)).toBe('at 10% of week left, unless it resets within 60m, on accounts except "me@": stop new prompts')
+  expect(parseGuard({ rules: [{ left: 10, stop: true, except_accounts: [] }] }).errors.length).toBe(1)
+})
+
 test('time windows: day lists and ranges, past midnight, and the machine\'s own zone when none is named', () => {
   expect(parseHours('9-17 sat,sun')).toEqual({ from: 540, to: 1020, days: [0, 6] })
   expect(parseHours('22:00-06:00')).toEqual({ from: 1320, to: 360, days: [0, 1, 2, 3, 4, 5, 6] })
