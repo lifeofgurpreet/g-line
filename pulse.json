@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-24T12:30:09Z",
+ "generated_at": "2026-10-24T13:02:34Z",
  "items": [
   {
    "title": "OpenAI says it built an “offline world” from cached web content to train isolated frontier models t…",
@@ -17,7 +17,7 @@
    "published_at": "2026-10-24T04:04:29Z",
    "text": "I’ve left Anthropic after more than a year of working on Claude Code and seeing it scale larger than I ever imagined. I have really loved working at Ant and believe deeply in the mission, and most of all, the idea of a race to the top. The idea that if we work hard and…",
    "author_name": "Thariq",
-   "likes": 20212,
+   "likes": 20933,
    "story": "Thariq left Anthropic!"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-10-23T17:44:44Z",
    "text": "Kimi K3.1 Pro launches at 4th on the Artificial Analysis Intelligence Index scoring 55, making large gains in agentic performance; it will be the leading open-weights model once its weights are published @Kimi_Moonshot's new reasoning model gains 11 points over Kimi K3 (max,…",
    "author_name": "Artificial Analysis",
-   "likes": 5041,
+   "likes": 5071,
    "story": "Moonshot unveils Kimi K3.1 Pro, a 3T-class open-weight model with a 1M-token context window, and K3.1 Pro Highspeed, with full weights to be released by Nov. 4"
   },
   {
@@ -50,8 +50,8 @@
    "url": "https://www.reddit.com/r/antiai/comments/1xdv3e5/hacker_reverse_engineers_his_samsung_tv_and_finds/",
    "source": "Hacker News",
    "published_at": "2026-10-24T05:49:57Z",
-   "text": "245 points and 69 comments on Hacker News.",
-   "points": 245,
+   "text": "270 points and 79 comments on Hacker News.",
+   "points": 270,
    "discussion": "https://news.ycombinator.com/item?id=50218633"
   },
   {
@@ -74,8 +74,8 @@
    "url": "https://block.xyz/dessa",
    "source": "Hacker News",
    "published_at": "2026-10-23T19:09:54Z",
-   "text": "409 points and 151 comments on Hacker News.",
-   "points": 409,
+   "text": "413 points and 152 comments on Hacker News.",
+   "points": 413,
    "discussion": "https://news.ycombinator.com/item?id=50213925"
   },
   {
@@ -115,8 +115,8 @@
    "url": "https://danielball.com/notes/ai_image_generation.html",
    "source": "Hacker News",
    "published_at": "2026-10-20T19:22:39Z",
-   "text": "122 points and 35 comments on Hacker News.",
-   "points": 122,
+   "text": "128 points and 37 comments on Hacker News.",
+   "points": 128,
    "discussion": "https://news.ycombinator.com/item?id=50171379"
   },
   {
@@ -124,7 +124,7 @@
    "url": "https://www.calcalistech.com/ctechnews/article/h1sq8ip2mx",
    "source": "Meir Orbach / CTech",
    "published_at": "2026-10-23T21:15:49Z",
-   "text": "Mave, which is developing an AI-driven tool to automate security investigations, raised a $28M Series A led by Red Dot, bringing its total funding to $34M",
+   "text": "Mave, which is developing an AI-driven tool to automate security investigations, raised a $28M Series A led by Red Dot, bringing its total funding to $34M. The funding, led by Red Dot Capital Partners, brings Mave's total funding to $34 million. The company is developing AI …",
    "via": "Techmeme"
   }
  ],
