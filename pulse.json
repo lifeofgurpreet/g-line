@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-24T23:13:39Z",
+ "generated_at": "2026-10-24T23:46:08Z",
  "items": [
   {
    "title": "Block unveils Dessa, a “true speech-to-speech” AI model trained on “nothing but human conversation”…",
@@ -17,7 +17,7 @@
    "published_at": "2026-10-24T04:04:29Z",
    "text": "I’ve left Anthropic after more than a year of working on Claude Code and seeing it scale larger than I ever imagined. I have really loved working at Ant and believe deeply in the mission, and most of all, the idea of a race to the top. The idea that if we work hard and…",
    "author_name": "Thariq",
-   "likes": 27395,
+   "likes": 27537,
    "story": "Thariq left Anthropic!"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-10-23T19:46:46Z",
    "text": "Over the past several months, we have substantially hardened the security of our research training environment. We’ve removed live internet access for all frontier models during training and built an offline world for them to use instead—a cached version of the web where they can…",
    "author_name": "OpenAI",
-   "likes": 12641,
+   "likes": 12672,
    "story": "OpenAI says it built an “offline world” from cached web content to train isolated frontier models to browse, search for information, and use web apps"
   },
   {
@@ -46,13 +46,13 @@
    "via": "Techmeme"
   },
   {
-   "title": "Why is AI generated language so hard to understand?",
-   "url": "https://arxiv.org/abs/2610.29162",
+   "title": "Neural chip decodes interactions between brain regions",
+   "url": "https://actu.epfl.ch/news/neural-chip-decodes-interactions-between-brain-r-2/",
    "source": "Hacker News",
-   "published_at": "2026-10-24T18:04:57Z",
-   "text": "144 points and 138 comments on Hacker News.",
-   "points": 144,
-   "discussion": "https://news.ycombinator.com/item?id=50223647"
+   "published_at": "2026-10-24T15:57:17Z",
+   "text": "84 points and 27 comments on Hacker News.",
+   "points": 84,
+   "discussion": "https://news.ycombinator.com/item?id=50222525"
   },
   {
    "title": "Kimi K3.1 Pro launches at 4th on the Artificial Analysis Intelligence Index scoring 55, making larg…",
@@ -61,8 +61,8 @@
    "published_at": "2026-10-23T17:44:44Z",
    "text": "Kimi K3.1 Pro launches at 4th on the Artificial Analysis Intelligence Index scoring 55, making large gains in agentic performance; it will be the leading open-weights model once its weights are published @Kimi_Moonshot's new reasoning model gains 11 points over Kimi K3 (max,…",
    "author_name": "Artificial Analysis",
-   "likes": 5328,
-   "story": "Artificial Analysis says Kimi K3.1 Pro lands 4th on its Intelligence Index, behind only Opus 5.5 (max), Sonnet 5.5 (max), and Muse Wonder Full (max)"
+   "likes": 5334,
+   "story": "Moonshot unveils Kimi K3.1 Pro, a 3T-class open-weight model with a 1M-token context window, and K3.1 Pro Highspeed, with full weights to be released by Nov. 4"
   },
   {
    "title": "Open call for guest investigators in the life sciences",
@@ -80,30 +80,30 @@
    "via": "Techmeme"
   },
   {
-   "title": "Neural chip decodes interactions between brain regions",
-   "url": "https://actu.epfl.ch/news/neural-chip-decodes-interactions-between-brain-r-2/",
-   "source": "Hacker News",
-   "published_at": "2026-10-24T15:57:17Z",
-   "text": "82 points and 26 comments on Hacker News.",
-   "points": 82,
-   "discussion": "https://news.ycombinator.com/item?id=50222525"
-  },
-  {
-   "title": "A look at Alpha School, a network of private schools that claims to teach kids 2x as fast using AI;…",
-   "url": "https://www.nytimes.com/2026/10/23/us/alpha-school-ai-education-parents.html?unlocked_article_code=1.K1E.IcJn.2l4XIQK5gQsl&smid=url-share",
-   "source": "Dana Goldstein / New York T…",
-   "published_at": "2026-10-24T17:25:51Z",
-   "text": "A look at Alpha School, a network of private schools that claims to teach kids 2x as fast using AI; data shows ~50% of K-8 students missed this goal in math. Alpha School, a private network, is spreading into public education. While its students' test scores are high, some parents and educators say it doesn't live up to the hype.",
-   "via": "Techmeme"
-  },
-  {
    "title": "GPU-unlock: FP/BF16 instruction issue rate on Nvidia 3000's cards",
    "url": "https://github.com/Zagitta/gpu-unlock",
    "source": "Hacker News",
    "published_at": "2026-10-24T09:58:27Z",
-   "text": "161 points and 59 comments on Hacker News.",
-   "points": 161,
+   "text": "167 points and 61 comments on Hacker News.",
+   "points": 167,
    "discussion": "https://news.ycombinator.com/item?id=50219700"
+  },
+  {
+   "title": "A look at OpenAI's Project Daybreak, which lets vetted partners use its top hacking models to find…",
+   "url": "https://www.forbes.com/sites/thomasbrewster/2026/10/23/inside-openais-plan-to-protect-the-internet-before-hackers-break-it/",
+   "source": "Thomas Brewster / Forbes",
+   "published_at": "2026-10-24T06:35:46Z",
+   "text": "A look at OpenAI's Project Daybreak, which lets vetted partners use its top hacking models to find and fix vulnerabilities and helped uncover PHP2Shell RCE bugs. This voice experience is generated by AI. Learn more. — Using the latest GPT model, cyber researchers …",
+   "via": "Techmeme"
+  },
+  {
+   "title": "Swedish government offices to ban ChatGPT and Claude",
+   "url": "https://www.sverigesradio.se/artikel/chat-gpt-och-claude-forbjuder-regeringskansliet",
+   "source": "Hacker News",
+   "published_at": "2026-10-23T11:39:54Z",
+   "text": "322 points and 120 comments on Hacker News.",
+   "points": 322,
+   "discussion": "https://news.ycombinator.com/item?id=50207405"
   },
   {
    "title": "Donating Agent Skills to the Agentic AI Foundation",
@@ -113,11 +113,11 @@
    "text": "Anthropic is an AI safety and research company that's working to build reliable, interpretable, and steerable AI systems."
   },
   {
-   "title": "A look at OpenAI's Project Daybreak, which lets vetted partners use its top hacking models to find…",
-   "url": "https://www.forbes.com/sites/thomasbrewster/2026/10/23/inside-openais-plan-to-protect-the-internet-before-hackers-break-it/",
-   "source": "Thomas Brewster / Forbes",
-   "published_at": "2026-10-24T06:35:46Z",
-   "text": "A look at OpenAI's Project Daybreak, which lets vetted partners use its top hacking models to find and fix vulnerabilities and helped uncover PHP2Shell RCE bugs. This voice experience is generated by AI. Learn more. — Using the latest GPT model, cyber researchers …",
+   "title": "A look at Alpha School, a network of private schools that claims to teach kids 2x as fast using AI;…",
+   "url": "https://www.nytimes.com/2026/10/23/us/alpha-school-ai-education-parents.html?unlocked_article_code=1.K1E.IcJn.2l4XIQK5gQsl&smid=url-share",
+   "source": "Dana Goldstein / New York T…",
+   "published_at": "2026-10-24T17:25:51Z",
+   "text": "A look at Alpha School, a network of private schools that claims to teach kids 2x as fast using AI; data shows ~50% of K-8 students missed this goal in math. Alpha School, a private network, is spreading into public education. While its students' test scores are high, some parents and educators say it doesn't live up to the hype.",
    "via": "Techmeme"
   },
   {
