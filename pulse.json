@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-24T21:04:47Z",
+ "generated_at": "2026-10-24T21:36:37Z",
  "items": [
   {
    "title": "Block unveils Dessa, a “true speech-to-speech” AI model trained on “nothing but human conversation”…",
@@ -17,7 +17,7 @@
    "published_at": "2026-10-24T04:04:29Z",
    "text": "I’ve left Anthropic after more than a year of working on Claude Code and seeing it scale larger than I ever imagined. I have really loved working at Ant and believe deeply in the mission, and most of all, the idea of a race to the top. The idea that if we work hard and…",
    "author_name": "Thariq",
-   "likes": 26738,
+   "likes": 26932,
    "story": "Thariq left Anthropic!"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-10-23T19:46:46Z",
    "text": "Over the past several months, we have substantially hardened the security of our research training environment. We’ve removed live internet access for all frontier models during training and built an offline world for them to use instead—a cached version of the web where they can…",
    "author_name": "OpenAI",
-   "likes": 12438,
+   "likes": 12505,
    "story": "OpenAI says it built an “offline world” from cached web content to train isolated frontier models to browse, search for information, and use web apps"
   },
   {
@@ -50,8 +50,8 @@
    "url": "https://www.apollo.com/wealth/insights-news/insights/daily-spark/no-signs-of-ai-payoff-outside-the-tech-sector",
    "source": "Hacker News",
    "published_at": "2026-10-24T19:47:19Z",
-   "text": "212 points and 168 comments on Hacker News.",
-   "points": 212,
+   "text": "284 points and 249 comments on Hacker News.",
+   "points": 284,
    "discussion": "https://news.ycombinator.com/item?id=50224463"
   },
   {
@@ -74,8 +74,8 @@
    "url": "https://arxiv.org/abs/2610.29162",
    "source": "Hacker News",
    "published_at": "2026-10-24T18:04:57Z",
-   "text": "98 points and 82 comments on Hacker News.",
-   "points": 98,
+   "text": "109 points and 101 comments on Hacker News.",
+   "points": 109,
    "discussion": "https://news.ycombinator.com/item?id=50223647"
   },
   {
@@ -91,8 +91,8 @@
    "url": "https://actu.epfl.ch/news/neural-chip-decodes-interactions-between-brain-r-2/",
    "source": "Hacker News",
    "published_at": "2026-10-24T15:57:17Z",
-   "text": "70 points and 18 comments on Hacker News.",
-   "points": 70,
+   "text": "72 points and 19 comments on Hacker News.",
+   "points": 72,
    "discussion": "https://news.ycombinator.com/item?id=50222525"
   },
   {
@@ -115,8 +115,8 @@
    "url": "https://github.com/Zagitta/gpu-unlock",
    "source": "Hacker News",
    "published_at": "2026-10-24T09:58:27Z",
-   "text": "141 points and 51 comments on Hacker News.",
-   "points": 141,
+   "text": "146 points and 55 comments on Hacker News.",
+   "points": 146,
    "discussion": "https://news.ycombinator.com/item?id=50219700"
   },
   {
