@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-24T19:27:58Z",
+ "generated_at": "2026-10-24T20:00:58Z",
  "items": [
   {
    "title": "Block unveils Dessa, a “true speech-to-speech” AI model trained on “nothing but human conversation”…",
@@ -17,7 +17,7 @@
    "published_at": "2026-10-24T04:04:29Z",
    "text": "I’ve left Anthropic after more than a year of working on Claude Code and seeing it scale larger than I ever imagined. I have really loved working at Ant and believe deeply in the mission, and most of all, the idea of a race to the top. The idea that if we work hard and…",
    "author_name": "Thariq",
-   "likes": 26131,
+   "likes": 26332,
    "story": "Thariq left Anthropic!"
   },
   {
@@ -34,25 +34,25 @@
    "published_at": "2026-10-23T19:46:46Z",
    "text": "Over the past several months, we have substantially hardened the security of our research training environment. We’ve removed live internet access for all frontier models during training and built an offline world for them to use instead—a cached version of the web where they can…",
    "author_name": "OpenAI",
-   "likes": 12221,
+   "likes": 12299,
    "story": "OpenAI says it built an “offline world” from cached web content to train isolated frontier models to browse, search for information, and use web apps"
   },
   {
-   "title": "Artificial Analysis says Kimi K3.1 Pro lands 4th on its Intelligence Index, behind only Opus 5.5 (m…",
-   "url": "https://x.com/artificialanlys/status/2113688083145314416",
-   "source": "@artificialanlys",
-   "published_at": "2026-10-23T19:26:03Z",
-   "text": "Artificial Analysis says Kimi K3.1 Pro lands 4th on its Intelligence Index, behind only Opus 5.5 (max), Sonnet 5.5 (max), and Muse Wonder Full (max). Kimi K3.1 Pro launches at 4th on the Artificial Analysis Intelligence Index scoring 55, making large gains in agentic performance; it will be the leading open-weights model once its weights are published @Kimi_Moonshot's new reasoning model gains 11 points over Kimi K3 (max, 44). It trails only Cl...",
+   "title": "Moonshot unveils Kimi K3.1 Pro, a 3T-class open-weight model with a 1M-token context window, and K3…",
+   "url": "https://www.kimi.ai/blog/kimi-k3-1-pro",
+   "source": "Kimi",
+   "published_at": "2026-10-23T17:45:53Z",
+   "text": "Moonshot unveils Kimi K3.1 Pro, a 3T-class open-weight model with a 1M-token context window, and K3.1 Pro Highspeed, with full weights to be released by Nov. 4. We're introducing Kimi K3.1 Pro, the first model in our new K3.1 series and our most capable 3T-class open-weight model to date, with a 1-million-token context window.",
    "via": "Techmeme"
   },
   {
-   "title": "Neural chip decodes interactions between brain regions",
-   "url": "https://actu.epfl.ch/news/neural-chip-decodes-interactions-between-brain-r-2/",
+   "title": "Why is AI generated language so hard to understand?",
+   "url": "https://arxiv.org/abs/2610.29162",
    "source": "Hacker News",
-   "published_at": "2026-10-24T15:57:17Z",
-   "text": "60 points and 12 comments on Hacker News.",
-   "points": 60,
-   "discussion": "https://news.ycombinator.com/item?id=50222525"
+   "published_at": "2026-10-24T18:04:57Z",
+   "text": "64 points and 52 comments on Hacker News.",
+   "points": 64,
+   "discussion": "https://news.ycombinator.com/item?id=50223647"
   },
   {
    "title": "Open call for guest investigators in the life sciences",
@@ -60,6 +60,23 @@
    "source": "Anthropic",
    "published_at": "2026-10-22T21:59:15Z",
    "text": "Today, we’re inviting members of the life sciences community to apply to work with us on special projects."
+  },
+  {
+   "title": "Source: Replit recently moved most AI spend from Anthropic to OpenAI, which gave 30%+ off in a deal…",
+   "url": "https://www.theinformation.com/articles/anthropics-margin-openais-opportunity",
+   "source": "The Information",
+   "published_at": "2026-10-24T19:45:46Z",
+   "text": "Source: Replit recently moved most AI spend from Anthropic to OpenAI, which gave 30%+ off in a deal worth $100M+/year, after Anthropic discontinued its discount. OpenAI's efforts to undercut Anthropic on price are producing some results. — For instance, in May, Anthropic models powered 57% …",
+   "via": "Techmeme"
+  },
+  {
+   "title": "Neural chip decodes interactions between brain regions",
+   "url": "https://actu.epfl.ch/news/neural-chip-decodes-interactions-between-brain-r-2/",
+   "source": "Hacker News",
+   "published_at": "2026-10-24T15:57:17Z",
+   "text": "61 points and 14 comments on Hacker News.",
+   "points": 61,
+   "discussion": "https://news.ycombinator.com/item?id=50222525"
   },
   {
    "title": "A look at Alpha School, a network of private schools that claims to teach kids 2x as fast using AI;…",
@@ -74,9 +91,16 @@
    "url": "https://github.com/Zagitta/gpu-unlock",
    "source": "Hacker News",
    "published_at": "2026-10-24T09:58:27Z",
-   "text": "119 points and 48 comments on Hacker News.",
-   "points": 119,
+   "text": "128 points and 49 comments on Hacker News.",
+   "points": 128,
    "discussion": "https://news.ycombinator.com/item?id=50219700"
+  },
+  {
+   "title": "Donating Agent Skills to the Agentic AI Foundation",
+   "url": "https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation",
+   "source": "Anthropic",
+   "published_at": "2026-10-22T17:48:51Z",
+   "text": "Anthropic is an AI safety and research company that's working to build reliable, interpretable, and steerable AI systems."
   },
   {
    "title": "A look at OpenAI's Project Daybreak, which lets vetted partners use its top hacking models to find…",
@@ -96,34 +120,11 @@
    "discussion": "https://news.ycombinator.com/item?id=50207405"
   },
   {
-   "title": "Donating Agent Skills to the Agentic AI Foundation",
-   "url": "https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation",
-   "source": "Anthropic",
-   "published_at": "2026-10-22T17:48:51Z",
-   "text": "Anthropic is an AI safety and research company that's working to build reliable, interpretable, and steerable AI systems."
-  },
-  {
-   "title": "Inside Meta's law enforcement outreach team, which uses AI and human reviewers to analyze social me…",
-   "url": "https://www.newyorker.com/news/the-lede/inside-metas-efforts-to-prevent-school-shootings",
-   "source": "Rachel Monroe / New Yorker",
-   "published_at": "2026-10-24T10:35:46Z",
-   "text": "Inside Meta's law enforcement outreach team, which uses AI and human reviewers to analyze social media posts, aiming to prevent threats like school shootings. Algorithmic social media, which has helped create the conditions for the spread of such violence, is reckoning with how it can be part of the solution.",
-   "via": "Techmeme"
-  },
-  {
    "title": "The UK plans to invest £100M to create the AI Biosecurity Lab to boost defenses against biological…",
    "url": "https://www.bbc.com/news/articles/cqdjv8xllvyyo",
    "source": "Liv McMahon / BBC",
    "published_at": "2026-10-24T01:21:05Z",
    "text": "The UK plans to invest £100M to create the AI Biosecurity Lab to boost defenses against biological threats, supported by OpenAI, Anthropic, and Google DeepMind. The UK says it will establish a national AI Biosecurity Lab (AIBL) to help strengthen its defences against emerging biological threats.",
-   "via": "Techmeme"
-  },
-  {
-   "title": "An interview with Ciena CEO Gary Smith, a veteran of the 2001 telecoms crash, on AI demand outpacin…",
-   "url": "https://www.wsj.com/cio-journal/a-veteran-of-the-telecom-bust-navigates-the-ai-boom-b063fa63?st=YJm3H4&reflink=desktopwebshare_permalink",
-   "source": "Steven Rosenbush / Wall Str…",
-   "published_at": "2026-10-24T15:41:00Z",
-   "text": "An interview with Ciena CEO Gary Smith, a veteran of the 2001 telecoms crash, on AI demand outpacing supply for Ciena's optical networking chips, and more. Ciena CEO Gary Smith is ‘suitably paranoid,’ but optimistic — The historic telecommunications crash of 2001 is burned indelibly …",
    "via": "Techmeme"
   }
  ],
