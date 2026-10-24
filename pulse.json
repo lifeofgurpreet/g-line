@@ -1,13 +1,13 @@
 {
  "schema": 1,
- "generated_at": "2026-10-24T16:46:41Z",
+ "generated_at": "2026-10-24T17:18:29Z",
  "items": [
   {
-   "title": "Block unveils Dessa, a “true speech-to-speech” AI model trained on “nothing but human conversation”…",
-   "url": "https://www.theverge.com/ai-artificial-intelligence/1017906/jack-dorsey-block-dessa-ai-voice-speech",
-   "source": "Jay Peters / The Verge",
-   "published_at": "2026-10-24T14:31:07Z",
-   "text": "Block unveils Dessa, a “true speech-to-speech” AI model trained on “nothing but human conversation” that it says runs locally on a MacBook Pro M4 Max or newer. You have got to listen to these conversations with Block's new Dessa AI model.",
+   "title": "OpenAI says it built an “offline world” from cached web content to train isolated frontier models t…",
+   "url": "https://openai.com/index/securing-our-frontier-model-training-environment",
+   "source": "OpenAI",
+   "published_at": "2026-10-24T00:30:48Z",
+   "text": "OpenAI says it built an “offline world” from cached web content to train isolated frontier models to browse, search for information, and use web apps. In order to work with software, AI models need computing environments: digital workspaces where they can write and run code …",
    "via": "Techmeme"
   },
   {
@@ -17,7 +17,7 @@
    "published_at": "2026-10-24T04:04:29Z",
    "text": "I’ve left Anthropic after more than a year of working on Claude Code and seeing it scale larger than I ever imagined. I have really loved working at Ant and believe deeply in the mission, and most of all, the idea of a race to the top. The idea that if we work hard and…",
    "author_name": "Thariq",
-   "likes": 24612,
+   "likes": 24993,
    "story": "Thariq left Anthropic!"
   },
   {
@@ -28,14 +28,17 @@
    "text": "Added the Monitor tool and plugin monitors on Bedrock, Vertex, and Foundry, and when telemetry or nonessential traffic is disabled; long foreground sleeps are now blocked there too · Fixed requests failing behind some gateways and compatible servers that reject the effort-2025-11-24 beta value or mid-conversation system messages; Claude Code now retries without them · Fixed background cleanup deleting some recent files, such as pasted images, when cleanupPeriodDays is set to a very large value · Fixed compaction after a \"Prompt is too long\" error keeping too much of a conversation with dense…"
   },
   {
-   "title": "Over the past several months, we have substantially hardened the security of our research training…",
-   "url": "https://x.com/OpenAI/status/2113718797505036665",
-   "source": "𝕏 @OpenAI",
-   "published_at": "2026-10-23T19:46:46Z",
-   "text": "Over the past several months, we have substantially hardened the security of our research training environment. We’ve removed live internet access for all frontier models during training and built an offline world for them to use instead—a cached version of the web where they can…",
-   "author_name": "OpenAI",
-   "likes": 11787,
-   "story": "OpenAI says it built an “offline world” from cached web content to train isolated frontier models to browse, search for information, and use web apps"
+   "title": "We believe voice is the most natural way to interact with intelligence, so we created Dessa, the mo…",
+   "url": "https://x.com/jack/status/2113697902916751661",
+   "source": "𝕏 @jack",
+   "published_at": "2026-10-23T18:23:45Z",
+   "text": "We believe voice is the most natural way to interact with intelligence, so we created Dessa, the most authentic full-duplex speech model ever built. Talking with it feels like talking with a person…full of emotion, nuance, pauses, and a natural cadence.",
+   "author_name": "jack",
+   "likes": 59406,
+   "story": "Block unveils Dessa, a “true speech-to-speech” AI model trained on “nothing but human conversation” that it says runs locally on a MacBook Pro M4 Max or newer",
+   "links": [
+    "https://block.xyz/dessa"
+   ]
   },
   {
    "title": "Moonshot unveils Kimi K3.1 Pro, a 3T-class open-weight model with a 1M-token context window, and K3…",
@@ -50,8 +53,8 @@
    "url": "https://torrentfreak.com/ai-assisted-paper-on-z-library-cites-a-torrentfreak-article-that-doesnt-exist/",
    "source": "Hacker News",
    "published_at": "2026-10-24T11:18:54Z",
-   "text": "75 points and 34 comments on Hacker News.",
-   "points": 75,
+   "text": "84 points and 39 comments on Hacker News.",
+   "points": 84,
    "discussion": "https://news.ycombinator.com/item?id=50220204"
   },
   {
@@ -74,8 +77,8 @@
    "url": "https://github.com/Zagitta/gpu-unlock",
    "source": "Hacker News",
    "published_at": "2026-10-24T09:58:27Z",
-   "text": "64 points and 37 comments on Hacker News.",
-   "points": 64,
+   "text": "76 points and 40 comments on Hacker News.",
+   "points": 76,
    "discussion": "https://news.ycombinator.com/item?id=50219700"
   },
   {
