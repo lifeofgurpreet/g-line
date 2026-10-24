@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-24T20:00:58Z",
+ "generated_at": "2026-10-24T20:32:51Z",
  "items": [
   {
    "title": "Block unveils Dessa, a “true speech-to-speech” AI model trained on “nothing but human conversation”…",
@@ -17,7 +17,7 @@
    "published_at": "2026-10-24T04:04:29Z",
    "text": "I’ve left Anthropic after more than a year of working on Claude Code and seeing it scale larger than I ever imagined. I have really loved working at Ant and believe deeply in the mission, and most of all, the idea of a race to the top. The idea that if we work hard and…",
    "author_name": "Thariq",
-   "likes": 26332,
+   "likes": 26533,
    "story": "Thariq left Anthropic!"
   },
   {
@@ -34,32 +34,8 @@
    "published_at": "2026-10-23T19:46:46Z",
    "text": "Over the past several months, we have substantially hardened the security of our research training environment. We’ve removed live internet access for all frontier models during training and built an offline world for them to use instead—a cached version of the web where they can…",
    "author_name": "OpenAI",
-   "likes": 12299,
+   "likes": 12374,
    "story": "OpenAI says it built an “offline world” from cached web content to train isolated frontier models to browse, search for information, and use web apps"
-  },
-  {
-   "title": "Moonshot unveils Kimi K3.1 Pro, a 3T-class open-weight model with a 1M-token context window, and K3…",
-   "url": "https://www.kimi.ai/blog/kimi-k3-1-pro",
-   "source": "Kimi",
-   "published_at": "2026-10-23T17:45:53Z",
-   "text": "Moonshot unveils Kimi K3.1 Pro, a 3T-class open-weight model with a 1M-token context window, and K3.1 Pro Highspeed, with full weights to be released by Nov. 4. We're introducing Kimi K3.1 Pro, the first model in our new K3.1 series and our most capable 3T-class open-weight model to date, with a 1-million-token context window.",
-   "via": "Techmeme"
-  },
-  {
-   "title": "Why is AI generated language so hard to understand?",
-   "url": "https://arxiv.org/abs/2610.29162",
-   "source": "Hacker News",
-   "published_at": "2026-10-24T18:04:57Z",
-   "text": "64 points and 52 comments on Hacker News.",
-   "points": 64,
-   "discussion": "https://news.ycombinator.com/item?id=50223647"
-  },
-  {
-   "title": "Open call for guest investigators in the life sciences",
-   "url": "https://www.anthropic.com/news/open-call-guest-investigators-life-sciences",
-   "source": "Anthropic",
-   "published_at": "2026-10-22T21:59:15Z",
-   "text": "Today, we’re inviting members of the life sciences community to apply to work with us on special projects."
   },
   {
    "title": "Source: Replit recently moved most AI spend from Anthropic to OpenAI, which gave 30%+ off in a deal…",
@@ -70,13 +46,30 @@
    "via": "Techmeme"
   },
   {
-   "title": "Neural chip decodes interactions between brain regions",
-   "url": "https://actu.epfl.ch/news/neural-chip-decodes-interactions-between-brain-r-2/",
+   "title": "No Signs of AI Payoff Outside the Tech Sector",
+   "url": "https://www.apollo.com/wealth/insights-news/insights/daily-spark/no-signs-of-ai-payoff-outside-the-tech-sector",
    "source": "Hacker News",
-   "published_at": "2026-10-24T15:57:17Z",
-   "text": "61 points and 14 comments on Hacker News.",
-   "points": 61,
-   "discussion": "https://news.ycombinator.com/item?id=50222525"
+   "published_at": "2026-10-24T19:47:19Z",
+   "text": "102 points and 68 comments on Hacker News.",
+   "points": 102,
+   "discussion": "https://news.ycombinator.com/item?id=50224463"
+  },
+  {
+   "title": "Kimi K3.1 Pro launches at 4th on the Artificial Analysis Intelligence Index scoring 55, making larg…",
+   "url": "https://x.com/ArtificialAnlys/status/2113688083145314416",
+   "source": "𝕏 @ArtificialAnlys",
+   "published_at": "2026-10-23T17:44:44Z",
+   "text": "Kimi K3.1 Pro launches at 4th on the Artificial Analysis Intelligence Index scoring 55, making large gains in agentic performance; it will be the leading open-weights model once its weights are published @Kimi_Moonshot's new reasoning model gains 11 points over Kimi K3 (max,…",
+   "author_name": "Artificial Analysis",
+   "likes": 5295,
+   "story": "Artificial Analysis says Kimi K3.1 Pro lands 4th on its Intelligence Index, behind only Opus 5.5 (max), Sonnet 5.5 (max), and Muse Wonder Full (max)"
+  },
+  {
+   "title": "Open call for guest investigators in the life sciences",
+   "url": "https://www.anthropic.com/news/open-call-guest-investigators-life-sciences",
+   "source": "Anthropic",
+   "published_at": "2026-10-22T21:59:15Z",
+   "text": "Today, we’re inviting members of the life sciences community to apply to work with us on special projects."
   },
   {
    "title": "A look at Alpha School, a network of private schools that claims to teach kids 2x as fast using AI;…",
@@ -87,20 +80,13 @@
    "via": "Techmeme"
   },
   {
-   "title": "GPU-unlock: FP/BF16 instruction issue rate on Nvidia 3000's cards",
-   "url": "https://github.com/Zagitta/gpu-unlock",
+   "title": "Why is AI generated language so hard to understand?",
+   "url": "https://arxiv.org/abs/2610.29162",
    "source": "Hacker News",
-   "published_at": "2026-10-24T09:58:27Z",
-   "text": "128 points and 49 comments on Hacker News.",
-   "points": 128,
-   "discussion": "https://news.ycombinator.com/item?id=50219700"
-  },
-  {
-   "title": "Donating Agent Skills to the Agentic AI Foundation",
-   "url": "https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation",
-   "source": "Anthropic",
-   "published_at": "2026-10-22T17:48:51Z",
-   "text": "Anthropic is an AI safety and research company that's working to build reliable, interpretable, and steerable AI systems."
+   "published_at": "2026-10-24T18:04:57Z",
+   "text": "80 points and 67 comments on Hacker News.",
+   "points": 80,
+   "discussion": "https://news.ycombinator.com/item?id=50223647"
   },
   {
    "title": "A look at OpenAI's Project Daybreak, which lets vetted partners use its top hacking models to find…",
@@ -111,21 +97,37 @@
    "via": "Techmeme"
   },
   {
-   "title": "Swedish government offices to ban ChatGPT and Claude",
-   "url": "https://www.sverigesradio.se/artikel/chat-gpt-och-claude-forbjuder-regeringskansliet",
+   "title": "Neural chip decodes interactions between brain regions",
+   "url": "https://actu.epfl.ch/news/neural-chip-decodes-interactions-between-brain-r-2/",
    "source": "Hacker News",
-   "published_at": "2026-10-23T11:39:54Z",
-   "text": "321 points and 120 comments on Hacker News.",
-   "points": 321,
-   "discussion": "https://news.ycombinator.com/item?id=50207405"
+   "published_at": "2026-10-24T15:57:17Z",
+   "text": "64 points and 18 comments on Hacker News.",
+   "points": 64,
+   "discussion": "https://news.ycombinator.com/item?id=50222525"
   },
   {
-   "title": "The UK plans to invest £100M to create the AI Biosecurity Lab to boost defenses against biological…",
-   "url": "https://www.bbc.com/news/articles/cqdjv8xllvyyo",
-   "source": "Liv McMahon / BBC",
-   "published_at": "2026-10-24T01:21:05Z",
-   "text": "The UK plans to invest £100M to create the AI Biosecurity Lab to boost defenses against biological threats, supported by OpenAI, Anthropic, and Google DeepMind. The UK says it will establish a national AI Biosecurity Lab (AIBL) to help strengthen its defences against emerging biological threats.",
+   "title": "Donating Agent Skills to the Agentic AI Foundation",
+   "url": "https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation",
+   "source": "Anthropic",
+   "published_at": "2026-10-22T17:48:51Z",
+   "text": "Anthropic is an AI safety and research company that's working to build reliable, interpretable, and steerable AI systems."
+  },
+  {
+   "title": "Inside Meta's law enforcement outreach team, which uses AI and human reviewers to analyze social me…",
+   "url": "https://www.newyorker.com/news/the-lede/inside-metas-efforts-to-prevent-school-shootings",
+   "source": "Rachel Monroe / New Yorker",
+   "published_at": "2026-10-24T10:35:46Z",
+   "text": "Inside Meta's law enforcement outreach team, which uses AI and human reviewers to analyze social media posts, aiming to prevent threats like school shootings. Algorithmic social media, which has helped create the conditions for the spread of such violence, is reckoning with how it can be part of the solution.",
    "via": "Techmeme"
+  },
+  {
+   "title": "GPU-unlock: FP/BF16 instruction issue rate on Nvidia 3000's cards",
+   "url": "https://github.com/Zagitta/gpu-unlock",
+   "source": "Hacker News",
+   "published_at": "2026-10-24T09:58:27Z",
+   "text": "132 points and 50 comments on Hacker News.",
+   "points": 132,
+   "discussion": "https://news.ycombinator.com/item?id=50219700"
   }
  ],
  "sources": "curated, Techmeme, X (found via Techmeme, Reddit, the Internet Archive), Claude Code releases, Anthropic, Hacker News, Simon Willison"
