@@ -270,6 +270,50 @@ async function idleCompactionOf($: EngineInterface): Promise<IdleCompaction | un
   return { minTokens: Number.isFinite(min) && min > 0 ? Math.max(100_000, min) : 200_000 }
 }
 
+/**
+ * Where hooks.json's SessionStart command leaves Claude Code's own figures for
+ * a resumed conversation (`--resume`, `--continue`, a terminal brought back
+ * after a restart): how long ago its last response came, what the next request
+ * sends, and whether Claude Code reckons the cache expired. Such a process has
+ * made no request, so there's nothing of its own to time the cache from. A
+ * command hook runs beneath every hooks module, so a managed plugin seated
+ * ahead can't send the event on past it. One file per session, read once.
+ */
+const RESUME_DIR = '.cache/g-line/resume'
+/** Beats left to look for the file: the command may finish after `session.start`. */
+let resumeLooks = 8
+
+async function readResumed($: EngineInterface): Promise<void> {
+  if (resumeLooks <= 0) return
+  resumeLooks -= 1
+  try {
+    const home = await $.env.get('HOME')
+    if (!home || !sessionId) return
+    const path = `${home}/${RESUME_DIR}/${sessionId}.json`
+    let figures: Record<string, unknown>
+    try {
+      figures = JSON.parse(String(await $.fs.read(path))) as Record<string, unknown>
+    } catch {
+      return
+    }
+    resumeLooks = 0
+    await $.process.run(['rm', '-f', path], { timeoutMs: 2000 }).catch(() => undefined)
+    const now = await nowSeconds($)
+    const { at, since, context, expired } = figures
+    if (typeof at !== 'number' || typeof since !== 'number' || typeof context !== 'number') return
+    // Written for this start, not left over from an earlier one.
+    if (since < 0 || context <= 0 || Math.abs(now - at) > 600) return
+    // Claude Code's own verdict settles the lifetime where the age alone can't.
+    const learned = expired === true && since < 3600 ? '5m' : expired === false && since > 300 ? '1h' : undefined
+    const cache: NonNullable<Snap['cache']> = { lastAt: Math.floor(at - since), cached: true, prefix: context, restored: true }
+    if (learned) cache.learned = learned
+    // A request this process made since knows better.
+    await update($, snap, s => (s.cache && !s.cache.restored ? s : { ...s, cache }))
+  } catch {
+    // the line waits for the first request, as before
+  }
+}
+
 /** When a session on this machine last compacted while idle (ms), and how long that counts. */
 const IDLE_SEEN_KEY = 'idle-compaction-seen'
 const IDLE_SEEN_MS = 14 * 86_400_000
@@ -901,6 +945,7 @@ async function heartbeat($: EngineInterface): Promise<void> {
   if (beats % 40 === 0 || (accountMissed && beats % 4 === 0)) await refreshAccount($)
   if (beats % 20 === 0) void refreshPulse($)
   if (beats % 8 === 0) await watchIdle($).catch(() => undefined)
+  if (resumeLooks > 0) await readResumed($)
   if ((await configStamp($)) !== stamp) await reloadConfig($)
   if ((await read($, agents)).some(row => isActive(row.status))) await refreshAgents($)
   // An account rule needs a fresh reading: an account manager may have switched accounts.
@@ -2123,30 +2168,11 @@ export const register: Register = (on, options) => {
     }
     await loadShown($)
     await resync($)
+    await readResumed($)
     $.clock.every(TICK_MS, () => void heartbeat($))
     $.clock.every(PULSE_EVERY_MS, () => void turnPulse($))
     return next(e)
   })
-
-  // A resumed conversation (`--resume`, `--continue`, a terminal brought back
-  // after a restart) has made no request in this process, so there's nothing
-  // of its own to time the cache from. Claude Code says how long ago its last
-  // response came and what the next request sends: line 2 reads warm or cold
-  // from those until a request shows it.
-  on('classic.SessionStart', async ($, e, next) => {
-    const result = await next(e)
-    const since = e.seconds_since_last_response
-    const size = e.context_tokens
-    if ((e.source === 'resume' || e.source === 'fork') && typeof since === 'number' && since >= 0 && typeof size === 'number' && size > 0) {
-      // Claude Code's own verdict settles the lifetime where the age alone can't.
-      const learned = e.prompt_cache_likely_expired === true && since < 3600 ? '5m'
-        : e.prompt_cache_likely_expired === false && since > 300 ? '1h' : undefined
-      const cache: NonNullable<Snap['cache']> = { lastAt: Math.floor((await nowSeconds($)) - since), cached: true, prefix: size, restored: true }
-      if (learned) cache.learned = learned
-      await update($, snap, s => ({ ...s, cache }))
-    }
-    return result
-  }).catch(($, e, next) => next(e))
 
   // A /clear starts a new conversation in the same process, with no
   // `session.start`: read the fresh session's figures straight away.

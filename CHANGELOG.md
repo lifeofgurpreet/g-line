@@ -1,5 +1,15 @@
 # Changelog
 
+## 0.18.1 (2026-10-24): the resumed cache reaches line 2 behind a managed plugin
+
+- 0.18.0 read a resumed conversation's figures from a hooks-module `SessionStart`, and a
+  managed plugin seated ahead (a security default some organisations ship) sent that event on
+  past g-line, so line 2 still had no cache figure and the session said the hook was skipped.
+  g-line's own `SessionStart` command in `hooks.json` now leaves the figures (the last
+  response's age, the next request's size, Claude Code's "likely expired") in
+  `~/.cache/g-line/resume/<session>.json`. A command runs beneath every hooks module, so nothing
+  can skip it. The mod reads the file once and removes it.
+
 ## 0.18.0 (2026-10-24): the cache after a restart, and keep-warm for big conversations
 
 - **A resumed conversation shows its cache straight away.** After a restart, `--resume` or a

@@ -21,6 +21,8 @@ type World = {
   toolError: boolean
   writes: { path: string; text: string }[]
   config?: unknown
+  /** Files `$.fs.read` finds, by path; `rm -f` takes one away. */
+  files: Record<string, string>
   /** What `$.session.model()` answers; Opus 5.5 when unset. */
   model?: string
   /** Answers a `process.run` itself; undefined leaves it to the git stand-in. */
@@ -32,6 +34,7 @@ function world(on: On, stored: Record<string, unknown> = {}, kept?: Record<strin
   const w: World = {
     clock: mock.clock(on, { now: NOW * 1000 }), toasts: [], notes: [], suggested: [], copied: [],
     usage: { cost: 1, tokens: 600_000, percent: 60, limits: [] }, agents: [], notifySent: true, toolError: false, writes: [],
+    files: {},
   }
   mock.env(on, { HOME: '/home/someone', ...env })
   if (kept) {
@@ -73,11 +76,13 @@ function world(on: On, stored: Record<string, unknown> = {}, kept?: Record<strin
   on('session.model', () => ({ value: w.model ?? 'claude-opus-5-5' }))
   on('settings.read', () => ({ value: {} }))
   on('process.run', ($, e) => (w.run?.(e.argv)
+    ?? (e.argv[0] === 'rm' ? (delete w.files[String(e.argv[e.argv.length - 1])], { value: { exitCode: 0, stdout: '', stderr: '' } }) : undefined)
     ?? (e.argv[0] === 'uname' ? { value: { exitCode: 0, stdout: 'Darwin\n', stderr: '' } } : undefined)
     ?? { value: { exitCode: 0, stdout: '## feat/secret-branch\n', stderr: '' } }) as never)
   on('session.start', ($, e) => ({ cwd: e.cwd }))
   on('command.register', () => ({ value: undefined }) as never)
-  on('fs.read', ($, e) => (w.config !== undefined && /\/(g-line|glanceline)\/config\.json$/.test(e.path)
+  on('fs.read', ($, e) => (w.files[e.path] !== undefined ? { value: w.files[e.path] }
+    : w.config !== undefined && /\/(g-line|glanceline)\/config\.json$/.test(e.path)
     ? { value: JSON.stringify(w.config) } : { deny: 'no such file' }) as never)
   on('fs.write', ($, e) => {
     w.writes.push({ path: e.path, text: e.text })
@@ -104,7 +109,6 @@ function world(on: On, stored: Record<string, unknown> = {}, kept?: Record<strin
   on('turn.start', ($, e) => ({ turnId: e.turnId }))
   on('turn.complete', ($, e) => ({ text: e.answer }))
   on('session.measure', ($, e) => ({ changed: e.changed }))
-  on('classic.SessionStart', () => ({}) as never)
   return w
 }
 
@@ -1460,51 +1464,67 @@ async function cacheShown($: Engine) {
   return found !== undefined
 }
 
+const RESUMED = '/home/someone/.cache/g-line/resume/session-1.json'
+
+/** What hooks.json's SessionStart command leaves for a resumed conversation: Claude Code's figures. */
+function resumed(w: World, since: number, context: number, expired: boolean | null, at = NOW) {
+  w.files[RESUMED] = JSON.stringify({ at, since, context, expired })
+}
+
+async function line2Has($: Engine, text: RegExp) {
+  const ui = await $.ui.mount({ plugin: 'g-line', surface: 'terminal', component: 'PromptHint',
+    props: { isDraft: false, isWorking: false, hint: '? for shortcuts' }, viewport: { columns: 200, rows: 40 } })
+  const found = await ui.find({ type: 'Text', text })
+  await ui.unmount()
+  return found !== undefined
+}
+
 test('0.18.0: a resumed conversation shows its cache before its first request, from Claude Code\'s own figures', { timeoutMs: 30_000 }, async ($, on) => {
   const w = world(on)
   hintBelow(on)
+  resumed(w, 600, 180_000, false)
   await start($)
   await measure($, w, 40)
-  // Before: nothing to time the cache from.
-  expect(await cacheShown($)).toBe(false)
-  await $.classic.SessionStart({ source: 'resume', seconds_since_last_response: 600, context_tokens: 180_000, prompt_cache_likely_expired: false } as never)
-  const ui = await $.ui.mount({ plugin: 'g-line', surface: 'terminal', component: 'PromptHint',
-    props: { isDraft: false, isWorking: false, hint: '? for shortcuts' }, viewport: { columns: 200, rows: 40 } })
-  expect(await ui.find({ type: 'Text', text: /^cache warm ~50m \(180k\)$/ })).toBeDefined()
-  await ui.unmount()
+  expect(await line2Has($, /^cache warm ~50m \(180k\)$/)).toBe(true)
+  // Read once: the file is gone.
+  expect(w.files[RESUMED]).toBeUndefined()
 })
 
 test('0.18.0: a conversation resumed after the cache lapsed reads cold, with what the next turn rebuilds', { timeoutMs: 30_000 }, async ($, on) => {
   const w = world(on)
   hintBelow(on)
+  resumed(w, 5 * 3600, 150_000, true)
   await start($)
   await measure($, w, 40)
-  await $.classic.SessionStart({ source: 'resume', seconds_since_last_response: 5 * 3600, context_tokens: 486_000, prompt_cache_likely_expired: true } as never)
-  const ui = await $.ui.mount({ plugin: 'g-line', surface: 'terminal', component: 'PromptHint',
-    props: { isDraft: false, isWorking: false, hint: '? for shortcuts' }, viewport: { columns: 200, rows: 40 } })
-  expect(await ui.find({ type: 'Text', text: /^cache cold, next turn rebuilds 486k$/ })).toBeDefined()
-  await ui.unmount()
+  expect(await line2Has($, /^cache cold, next turn rebuilds 150k$/)).toBe(true)
 })
 
 test('0.18.0: Claude Code\'s verdict sets the lifetime: expired after 10 minutes means a five-minute cache', { timeoutMs: 30_000 }, async ($, on) => {
   const w = world(on)
   hintBelow(on)
+  resumed(w, 600, 90_000, true)
   await start($)
   await measure($, w, 40)
-  await $.classic.SessionStart({ source: 'resume', seconds_since_last_response: 600, context_tokens: 90_000, prompt_cache_likely_expired: true } as never)
-  const ui = await $.ui.mount({ plugin: 'g-line', surface: 'terminal', component: 'PromptHint',
-    props: { isDraft: false, isWorking: false, hint: '? for shortcuts' }, viewport: { columns: 200, rows: 40 } })
-  expect(await ui.find({ type: 'Text', text: /^cache cold/ })).toBeDefined()
-  await ui.unmount()
+  expect(await line2Has($, /^cache cold/)).toBe(true)
 })
 
-test('0.18.0: a fresh start or a /clear restores nothing', { timeoutMs: 30_000 }, async ($, on) => {
+test('0.18.0: figures the command leaves a little after the session starts are read on the beat', { timeoutMs: 30_000 }, async ($, on) => {
   const w = world(on)
   hintBelow(on)
   await start($)
   await measure($, w, 40)
-  await $.classic.SessionStart({ source: 'startup' } as never)
-  await $.classic.SessionStart({ source: 'clear', seconds_since_last_response: 60, context_tokens: 90_000 } as never)
+  expect(await cacheShown($)).toBe(false)
+  resumed(w, 120, 120_000, false)
+  await w.clock.advance(16_000)
+  expect(await line2Has($, /^cache warm ~5[78]m \(120k\)$/)).toBe(true)
+})
+
+test('0.18.0: a fresh start restores nothing, and neither does a file left from an earlier start', { timeoutMs: 30_000 }, async ($, on) => {
+  const w = world(on)
+  hintBelow(on)
+  resumed(w, 60, 90_000, false, NOW - 3600)
+  await start($)
+  await measure($, w, 40)
   expect(await cacheShown($)).toBe(false)
 })
 
@@ -1517,9 +1537,9 @@ test('0.18.0: keep-warm leaves a resumed conversation alone until its first requ
     forks += 1
     return { value: { isAnswered: true, text: 'ok', usage: { input_tokens: 20, output_tokens: 3, cache_read_input_tokens: 100_000, cache_creation_input_tokens: 0 } } } as never
   })
+  resumed(w, 60, 100_000, false)
   await start($)
   await measure($, w, 40)
-  await $.classic.SessionStart({ source: 'resume', seconds_since_last_response: 60, context_tokens: 100_000, prompt_cache_likely_expired: false } as never)
   await w.clock.advance(55 * 60_000)
   // Claude Code would answer `nothing-to-fork`: no re-read tried, and keep-warm still on.
   expect(forks).toBe(0)

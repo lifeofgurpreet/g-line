@@ -1,8 +1,17 @@
 {
-  "modules": ["./register.tsx"],
+  "modules": [
+    "./register.tsx"
+  ],
   "hooks": {
     "SessionStart": [
-      { "hooks": [ { "type": "command", "command": "[ -n \"$CLAUDE_ENV_FILE\" ] && echo 'unset FORCE_HYPERLINK' >> \"$CLAUDE_ENV_FILE\"; exit 0" } ] }
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "[ -n \"$CLAUDE_ENV_FILE\" ] && echo 'unset FORCE_HYPERLINK' >> \"$CLAUDE_ENV_FILE\"; in=$(cat); case \"$in\" in *'\"source\":\"resume\"'*|*'\"source\": \"resume\"'*|*'\"source\":\"fork\"'*|*'\"source\": \"fork\"'*) v() { printf '%s' \"$in\" | tr ',{}' '\\n\\n\\n' | sed -n \"s/^ *\\\"$1\\\" *: *\\\"\\{0,1\\}\\([A-Za-z0-9_.-]*\\)\\\"\\{0,1\\} *$/\\1/p\" | head -n 1; }; s=$(v session_id); a=$(v seconds_since_last_response); c=$(v context_tokens); x=$(v prompt_cache_likely_expired); case \"$s$a$c\" in *[!A-Za-z0-9_.-]*|'') ;; *) case \"$x\" in true|false) ;; *) x=null;; esac; [ -n \"$s\" ] && [ -n \"$a\" ] && [ -n \"$c\" ] && mkdir -p \"$HOME/.cache/g-line/resume\" && printf '{\"at\":%s,\"since\":%s,\"context\":%s,\"expired\":%s}\\n' \"$(date +%s)\" \"$a\" \"$c\" \"$x\" > \"$HOME/.cache/g-line/resume/$s.json\";; esac;; esac; exit 0"
+          }
+        ]
+      }
     ]
   }
 }

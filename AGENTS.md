@@ -17,8 +17,9 @@ coding agents and for people.
    go on line 2 (or the footer labels in the one-line layout).
 3. **Engine figures only.** Everything comes from what Claude Code hands mods:
    `$.session.usage()`, `session.measure`, `turn.step`, `turn.complete`, `tool.call`,
-   `agent.spawn`, `$.agent.list()`, `session.compact`, `classic.SessionStart`'s figures for a
-   resumed conversation (its last response's age and size) and, while idle, the length of
+   `agent.spawn`, `$.agent.list()`, `session.compact`, the SessionStart hook's figures for a
+   resumed conversation (its last response's age and size, which `hooks.json`'s command leaves
+   in `~/.cache/g-line/resume`) and, while idle, the length of
    `$.session.messages({ as: "api" })` (a managed plugin can send compaction events on past
    user plugins). Sessions on one machine and one account share those readings through the
    plugin store (`mergeLimits`: the higher percent in a window, the later window across a reset).
