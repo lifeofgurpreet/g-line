@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-24T21:36:37Z",
+ "generated_at": "2026-10-24T22:08:42Z",
  "items": [
   {
    "title": "Block unveils Dessa, a “true speech-to-speech” AI model trained on “nothing but human conversation”…",
@@ -17,7 +17,7 @@
    "published_at": "2026-10-24T04:04:29Z",
    "text": "I’ve left Anthropic after more than a year of working on Claude Code and seeing it scale larger than I ever imagined. I have really loved working at Ant and believe deeply in the mission, and most of all, the idea of a race to the top. The idea that if we work hard and…",
    "author_name": "Thariq",
-   "likes": 26932,
+   "likes": 27085,
    "story": "Thariq left Anthropic!"
   },
   {
@@ -34,25 +34,35 @@
    "published_at": "2026-10-23T19:46:46Z",
    "text": "Over the past several months, we have substantially hardened the security of our research training environment. We’ve removed live internet access for all frontier models during training and built an offline world for them to use instead—a cached version of the web where they can…",
    "author_name": "OpenAI",
-   "likes": 12505,
+   "likes": 12550,
    "story": "OpenAI says it built an “offline world” from cached web content to train isolated frontier models to browse, search for information, and use web apps"
   },
   {
-   "title": "Moonshot unveils Kimi K3.1 Pro, a 3T-class open-weight model with a 1M-token context window, and K3…",
-   "url": "https://www.kimi.ai/blog/kimi-k3-1-pro",
-   "source": "Kimi",
-   "published_at": "2026-10-23T17:45:53Z",
-   "text": "Moonshot unveils Kimi K3.1 Pro, a 3T-class open-weight model with a 1M-token context window, and K3.1 Pro Highspeed, with full weights to be released by Nov. 4. We're introducing Kimi K3.1 Pro, the first model in our new K3.1 series and our most capable 3T-class open-weight model to date, with a 1-million-token context window.",
+   "title": "Outside of tech there has been no financial payoff to US companies for using AI, now viewed as a ma…",
+   "url": "https://www.apollo.com/wealth/insights-news/insights/daily-spark/no-signs-of-ai-payoff-outside-the-tech-sector",
+   "source": "Torsten Slok / Apollo Globa…",
+   "published_at": "2026-10-24T21:30:52Z",
+   "text": "Outside of tech there has been no financial payoff to US companies for using AI, now viewed as a margin-hurting cost center, as VC-backed firms burn more tokens. Despite massive investments and widespread hype around artificial intelligence, the technology has delivered zero financial payoff to corporate America outside of tech.",
    "via": "Techmeme"
   },
   {
-   "title": "No Signs of AI Payoff Outside the Tech Sector",
-   "url": "https://www.apollo.com/wealth/insights-news/insights/daily-spark/no-signs-of-ai-payoff-outside-the-tech-sector",
+   "title": "Why is AI generated language so hard to understand?",
+   "url": "https://arxiv.org/abs/2610.29162",
    "source": "Hacker News",
-   "published_at": "2026-10-24T19:47:19Z",
-   "text": "284 points and 249 comments on Hacker News.",
-   "points": 284,
-   "discussion": "https://news.ycombinator.com/item?id=50224463"
+   "published_at": "2026-10-24T18:04:57Z",
+   "text": "123 points and 120 comments on Hacker News.",
+   "points": 123,
+   "discussion": "https://news.ycombinator.com/item?id=50223647"
+  },
+  {
+   "title": "Kimi K3.1 Pro launches at 4th on the Artificial Analysis Intelligence Index scoring 55, making larg…",
+   "url": "https://x.com/ArtificialAnlys/status/2113688083145314416",
+   "source": "𝕏 @ArtificialAnlys",
+   "published_at": "2026-10-23T17:44:44Z",
+   "text": "Kimi K3.1 Pro launches at 4th on the Artificial Analysis Intelligence Index scoring 55, making large gains in agentic performance; it will be the leading open-weights model once its weights are published @Kimi_Moonshot's new reasoning model gains 11 points over Kimi K3 (max,…",
+   "author_name": "Artificial Analysis",
+   "likes": 5321,
+   "story": "Artificial Analysis says Kimi K3.1 Pro lands 4th on its Intelligence Index, behind only Opus 5.5 (max), Sonnet 5.5 (max), and Muse Wonder Full (max)"
   },
   {
    "title": "Open call for guest investigators in the life sciences",
@@ -70,13 +80,13 @@
    "via": "Techmeme"
   },
   {
-   "title": "Why is AI generated language so hard to understand?",
-   "url": "https://arxiv.org/abs/2610.29162",
+   "title": "Neural chip decodes interactions between brain regions",
+   "url": "https://actu.epfl.ch/news/neural-chip-decodes-interactions-between-brain-r-2/",
    "source": "Hacker News",
-   "published_at": "2026-10-24T18:04:57Z",
-   "text": "109 points and 101 comments on Hacker News.",
-   "points": 109,
-   "discussion": "https://news.ycombinator.com/item?id=50223647"
+   "published_at": "2026-10-24T15:57:17Z",
+   "text": "73 points and 23 comments on Hacker News.",
+   "points": 73,
+   "discussion": "https://news.ycombinator.com/item?id=50222525"
   },
   {
    "title": "A look at Alpha School, a network of private schools that claims to teach kids 2x as fast using AI;…",
@@ -87,13 +97,13 @@
    "via": "Techmeme"
   },
   {
-   "title": "Neural chip decodes interactions between brain regions",
-   "url": "https://actu.epfl.ch/news/neural-chip-decodes-interactions-between-brain-r-2/",
+   "title": "GPU-unlock: FP/BF16 instruction issue rate on Nvidia 3000's cards",
+   "url": "https://github.com/Zagitta/gpu-unlock",
    "source": "Hacker News",
-   "published_at": "2026-10-24T15:57:17Z",
-   "text": "72 points and 19 comments on Hacker News.",
-   "points": 72,
-   "discussion": "https://news.ycombinator.com/item?id=50222525"
+   "published_at": "2026-10-24T09:58:27Z",
+   "text": "149 points and 57 comments on Hacker News.",
+   "points": 149,
+   "discussion": "https://news.ycombinator.com/item?id=50219700"
   },
   {
    "title": "Donating Agent Skills to the Agentic AI Foundation",
@@ -109,15 +119,6 @@
    "published_at": "2026-10-24T06:35:46Z",
    "text": "A look at OpenAI's Project Daybreak, which lets vetted partners use its top hacking models to find and fix vulnerabilities and helped uncover PHP2Shell RCE bugs. This voice experience is generated by AI. Learn more. — Using the latest GPT model, cyber researchers …",
    "via": "Techmeme"
-  },
-  {
-   "title": "GPU-unlock: FP/BF16 instruction issue rate on Nvidia 3000's cards",
-   "url": "https://github.com/Zagitta/gpu-unlock",
-   "source": "Hacker News",
-   "published_at": "2026-10-24T09:58:27Z",
-   "text": "146 points and 55 comments on Hacker News.",
-   "points": 146,
-   "discussion": "https://news.ycombinator.com/item?id=50219700"
   },
   {
    "title": "Inside Meta's law enforcement outreach team, which uses AI and human reviewers to analyze social me…",
