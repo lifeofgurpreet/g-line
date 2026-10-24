@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-24T07:37:56Z",
+ "generated_at": "2026-10-24T08:10:39Z",
  "items": [
   {
    "title": "Moonshot unveils Kimi K3.1 Pro, a 3T-class open-weight model with a 1M-token context window, and K3…",
@@ -17,7 +17,7 @@
    "published_at": "2026-10-24T04:04:29Z",
    "text": "I’ve left Anthropic after more than a year of working on Claude Code and seeing it scale larger than I ever imagined. I have really loved working at Ant and believe deeply in the mission, and most of all, the idea of a race to the top. The idea that if we work hard and…",
    "author_name": "Thariq",
-   "likes": 12761,
+   "likes": 13814,
    "story": "Thariq left Anthropic!"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-10-23T19:46:46Z",
    "text": "Over the past several months, we have substantially hardened the security of our research training environment. We’ve removed live internet access for all frontier models during training and built an offline world for them to use instead—a cached version of the web where they can…",
    "author_name": "OpenAI",
-   "likes": 9040,
+   "likes": 9232,
    "story": "OpenAI says it built an “offline world” from cached web content to train isolated frontier models to browse, search for information, and use web apps"
   },
   {
@@ -50,8 +50,8 @@
    "url": "https://block.xyz/dessa",
    "source": "Hacker News",
    "published_at": "2026-10-23T19:09:54Z",
-   "text": "360 points and 133 comments on Hacker News.",
-   "points": 360,
+   "text": "369 points and 134 comments on Hacker News.",
+   "points": 369,
    "discussion": "https://news.ycombinator.com/item?id=50213925"
   },
   {
@@ -61,7 +61,7 @@
    "published_at": "2026-10-22T15:26:44Z",
    "text": "Two employees from METR and Redwood Research worked on premises at OpenAI for three weeks this summer in an embedded assessment pilot. This team evaluated the systems OpenAI was using to monitor for misalignment from internal agents. A brief write-up of their work is now public.",
    "author_name": "METR",
-   "likes": 1149,
+   "likes": 1150,
    "story": "METR says a pilot test of OpenAI's monitoring system found vulnerabilities, including an exploit that could have let AI agents hide hundreds of recent actions"
   },
   {
@@ -89,11 +89,11 @@
    "discussion": "https://news.ycombinator.com/item?id=50207405"
   },
   {
-   "title": "Mave, which is developing an AI-driven tool to automate security investigations, raised a $28M Seri…",
-   "url": "https://www.calcalistech.com/ctechnews/article/h1sq8ip2mx",
-   "source": "Meir Orbach / CTech",
-   "published_at": "2026-10-23T21:15:49Z",
-   "text": "Mave, which is developing an AI-driven tool to automate security investigations, raised a $28M Series A led by Red Dot, bringing its total funding to $34M",
+   "title": "An interview with Intel's leadership, including CTO Pushkar Ranade, on AI chip demand, lessons from…",
+   "url": "https://www.dwarkesh.com/p/intel-tour",
+   "source": "Dwarkesh Patel / Dwarkesh P…",
+   "published_at": "2026-10-23T11:46:09Z",
+   "text": "An interview with Intel's leadership, including CTO Pushkar Ranade, on AI chip demand, lessons from 10nm, whether Intel can catch up to TSMC, Terafab, and more",
    "via": "Techmeme"
   },
   {
@@ -101,8 +101,8 @@
    "url": "https://corgi.computer/",
    "source": "Hacker News",
    "published_at": "2026-10-23T19:46:38Z",
-   "text": "75 points and 18 comments on Hacker News.",
-   "points": 75,
+   "text": "76 points and 20 comments on Hacker News.",
+   "points": 76,
    "discussion": "https://news.ycombinator.com/item?id=50214373"
   },
   {
@@ -113,20 +113,21 @@
    "text": "Anthropic is an AI safety and research company that's working to build reliable, interpretable, and steerable AI systems."
   },
   {
-   "title": "An interview with Intel's leadership, including CTO Pushkar Ranade, on AI chip demand, lessons from…",
-   "url": "https://www.dwarkesh.com/p/intel-tour",
-   "source": "Dwarkesh Patel / Dwarkesh P…",
-   "published_at": "2026-10-23T11:46:09Z",
-   "text": "An interview with Intel's leadership, including CTO Pushkar Ranade, on AI chip demand, lessons from 10nm, whether Intel can catch up to TSMC, Terafab, and more",
+   "title": "Mave, which is developing an AI-driven tool to automate security investigations, raised a $28M Seri…",
+   "url": "https://www.calcalistech.com/ctechnews/article/h1sq8ip2mx",
+   "source": "Meir Orbach / CTech",
+   "published_at": "2026-10-23T21:15:49Z",
+   "text": "Mave, which is developing an AI-driven tool to automate security investigations, raised a $28M Series A led by Red Dot, bringing its total funding to $34M",
    "via": "Techmeme"
   },
   {
-   "title": "The UK plans to invest £100M to create the AI Biosecurity Lab to boost defenses against biological…",
-   "url": "https://www.bbc.com/news/articles/cqdjv8xllvyyo",
-   "source": "Liv McMahon / BBC",
-   "published_at": "2026-10-24T01:21:05Z",
-   "text": "The UK plans to invest £100M to create the AI Biosecurity Lab to boost defenses against biological threats, supported by OpenAI, Anthropic, and Google DeepMind. The UK says it will establish a national AI Biosecurity Lab (AIBL) to help strengthen its defences against emerging biological threats.",
-   "via": "Techmeme"
+   "title": "A practical guide to AI image generation, from diffusion to agents",
+   "url": "https://danielball.com/notes/ai_image_generation.html",
+   "source": "Hacker News",
+   "published_at": "2026-10-20T19:22:39Z",
+   "text": "66 points and 14 comments on Hacker News.",
+   "points": 66,
+   "discussion": "https://news.ycombinator.com/item?id=50171379"
   }
  ],
  "sources": "curated, Techmeme, X (found via Techmeme, Reddit, the Internet Archive), Claude Code releases, Anthropic, Hacker News, Simon Willison"
