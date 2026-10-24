@@ -1,13 +1,13 @@
 {
  "schema": 1,
- "generated_at": "2026-10-24T10:52:36Z",
+ "generated_at": "2026-10-24T11:25:04Z",
  "items": [
   {
-   "title": "Moonshot unveils Kimi K3.1 Pro, a 3T-class open-weight model with a 1M-token context window, and K3…",
-   "url": "https://www.kimi.ai/blog/kimi-k3-1-pro",
-   "source": "Kimi",
-   "published_at": "2026-10-23T17:45:53Z",
-   "text": "Moonshot unveils Kimi K3.1 Pro, a 3T-class open-weight model with a 1M-token context window, and K3.1 Pro Highspeed, with full weights to be released by Nov. 4. We're introducing Kimi K3.1 Pro, the first model in our new K3.1 series and our most capable 3T-class open-weight model to date, with a 1-million-token context window.",
+   "title": "OpenAI says it built an “offline world” from cached web content to train isolated frontier models t…",
+   "url": "https://openai.com/index/securing-our-frontier-model-training-environment",
+   "source": "OpenAI",
+   "published_at": "2026-10-24T00:30:48Z",
+   "text": "OpenAI says it built an “offline world” from cached web content to train isolated frontier models to browse, search for information, and use web apps. In order to work with software, AI models need computing environments: digital workspaces where they can write and run code …",
    "via": "Techmeme"
   },
   {
@@ -17,7 +17,7 @@
    "published_at": "2026-10-24T04:04:29Z",
    "text": "I’ve left Anthropic after more than a year of working on Claude Code and seeing it scale larger than I ever imagined. I have really loved working at Ant and believe deeply in the mission, and most of all, the idea of a race to the top. The idea that if we work hard and…",
    "author_name": "Thariq",
-   "likes": 17945,
+   "likes": 18703,
    "story": "Thariq left Anthropic!"
   },
   {
@@ -28,14 +28,14 @@
    "text": "Added the Monitor tool and plugin monitors on Bedrock, Vertex, and Foundry, and when telemetry or nonessential traffic is disabled; long foreground sleeps are now blocked there too · Fixed requests failing behind some gateways and compatible servers that reject the effort-2025-11-24 beta value or mid-conversation system messages; Claude Code now retries without them · Fixed background cleanup deleting some recent files, such as pasted images, when cleanupPeriodDays is set to a very large value · Fixed compaction after a \"Prompt is too long\" error keeping too much of a conversation with dense…"
   },
   {
-   "title": "Over the past several months, we have substantially hardened the security of our research training…",
-   "url": "https://x.com/OpenAI/status/2113718797505036665",
-   "source": "𝕏 @OpenAI",
-   "published_at": "2026-10-23T19:46:46Z",
-   "text": "Over the past several months, we have substantially hardened the security of our research training environment. We’ve removed live internet access for all frontier models during training and built an offline world for them to use instead—a cached version of the web where they can…",
-   "author_name": "OpenAI",
-   "likes": 10094,
-   "story": "OpenAI says it built an “offline world” from cached web content to train isolated frontier models to browse, search for information, and use web apps"
+   "title": "Kimi K3.1 Pro launches at 4th on the Artificial Analysis Intelligence Index scoring 55, making larg…",
+   "url": "https://x.com/ArtificialAnlys/status/2113688083145314416",
+   "source": "𝕏 @ArtificialAnlys",
+   "published_at": "2026-10-23T17:44:44Z",
+   "text": "Kimi K3.1 Pro launches at 4th on the Artificial Analysis Intelligence Index scoring 55, making large gains in agentic performance; it will be the leading open-weights model once its weights are published @Kimi_Moonshot's new reasoning model gains 11 points over Kimi K3 (max,…",
+   "author_name": "Artificial Analysis",
+   "likes": 4998,
+   "story": "Moonshot unveils Kimi K3.1 Pro, a 3T-class open-weight model with a 1M-token context window, and K3.1 Pro Highspeed, with full weights to be released by Nov. 4"
   },
   {
    "title": "Anthropic attributes Mythos 5's deception of a GitHub maintainer to recklessness, biased reasoning,…",
@@ -50,8 +50,8 @@
    "url": "https://www.reddit.com/r/antiai/comments/1xdv3e5/hacker_reverse_engineers_his_samsung_tv_and_finds/",
    "source": "Hacker News",
    "published_at": "2026-10-24T05:49:57Z",
-   "text": "163 points and 37 comments on Hacker News.",
-   "points": 163,
+   "text": "192 points and 48 comments on Hacker News.",
+   "points": 192,
    "discussion": "https://news.ycombinator.com/item?id=50218633"
   },
   {
@@ -74,8 +74,8 @@
    "url": "https://block.xyz/dessa",
    "source": "Hacker News",
    "published_at": "2026-10-23T19:09:54Z",
-   "text": "395 points and 143 comments on Hacker News.",
-   "points": 395,
+   "text": "398 points and 146 comments on Hacker News.",
+   "points": 398,
    "discussion": "https://news.ycombinator.com/item?id=50213925"
   },
   {
@@ -103,11 +103,11 @@
    "text": "Anthropic is an AI safety and research company that's working to build reliable, interpretable, and steerable AI systems."
   },
   {
-   "title": "An interview with Intel's leadership, including CTO Pushkar Ranade, on AI chip demand, lessons from…",
-   "url": "https://www.dwarkesh.com/p/intel-tour",
-   "source": "Dwarkesh Patel / Dwarkesh P…",
-   "published_at": "2026-10-23T11:46:09Z",
-   "text": "An interview with Intel's leadership, including CTO Pushkar Ranade, on AI chip demand, lessons from 10nm, whether Intel can catch up to TSMC, Terafab, and more",
+   "title": "The UK plans to invest £100M to create the AI Biosecurity Lab to boost defenses against biological…",
+   "url": "https://www.bbc.com/news/articles/cqdjv8xllvyyo",
+   "source": "Liv McMahon / BBC",
+   "published_at": "2026-10-24T01:21:05Z",
+   "text": "The UK plans to invest £100M to create the AI Biosecurity Lab to boost defenses against biological threats, supported by OpenAI, Anthropic, and Google DeepMind. The UK says it will establish a national AI Biosecurity Lab (AIBL) to help strengthen its defences against emerging biological threats.",
    "via": "Techmeme"
   },
   {
@@ -115,8 +115,8 @@
    "url": "https://corgi.computer/",
    "source": "Hacker News",
    "published_at": "2026-10-23T19:46:38Z",
-   "text": "87 points and 23 comments on Hacker News.",
-   "points": 87,
+   "text": "90 points and 24 comments on Hacker News.",
+   "points": 90,
    "discussion": "https://news.ycombinator.com/item?id=50214373"
   },
   {
