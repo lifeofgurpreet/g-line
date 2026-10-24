@@ -258,8 +258,30 @@ async function idleCompactionOf($: EngineInterface): Promise<IdleCompaction | un
   } catch {
     // settings unreadable: Claude Code's default, on
   }
+  // Claude Code turns idle compaction on per account, out of sight: it counts
+  // here only once a session on this machine was seen compacting while idle.
+  try {
+    const seen = Number(await $.store.get(IDLE_SEEN_KEY))
+    if (!(seen > 0) || (await nowMs($)) - seen > IDLE_SEEN_MS) return undefined
+  } catch {
+    return undefined
+  }
   const min = Number(await $.env.get('CLAUDE_CODE_IDLE_COMPACT_MIN_TOKENS'))
   return { minTokens: Number.isFinite(min) && min > 0 ? Math.max(100_000, min) : 200_000 }
+}
+
+/** When a session on this machine last compacted while idle (ms), and how long that counts. */
+const IDLE_SEEN_KEY = 'idle-compaction-seen'
+const IDLE_SEEN_MS = 14 * 86_400_000
+
+/** An idle compaction seen: from now on Claude Code's idle compaction counts on this machine. */
+async function idleCompactionSeen($: EngineInterface): Promise<void> {
+  try {
+    await $.store.set(IDLE_SEEN_KEY, await nowMs($))
+  } catch {
+    // this session's own view
+  }
+  idle = await idleCompactionOf($)
 }
 
 function automaticTtl(s: Snap): '5m' | '1h' {
@@ -484,7 +506,10 @@ async function watchIdle($: EngineInterface): Promise<void> {
   if ((await nowSeconds($)) - cache.lastAt < 60) return
   const messages = (await $.session.messages({ as: 'api' })).length
   if (idleCount?.lastAt !== cache.lastAt) idleCount = { lastAt: cache.lastAt, messages }
-  else if (messages < idleCount.messages / 2) await markCompacted($)
+  else if (messages < idleCount.messages / 2) {
+    await markCompacted($)
+    await idleCompactionSeen($)
+  }
 }
 
 async function measure($: EngineInterface): Promise<void> {
@@ -1625,7 +1650,8 @@ async function keepWarm($: EngineInterface): Promise<void> {
   if (!k || warmOff || warming || (await read($, hidden)) || (await heldBack($))) return
   const s = await read($, snap)
   const c = s.cache
-  if (!c?.cached) return
+  // A resumed conversation: until its first request, Claude Code has nothing to send again.
+  if (!c?.cached || c.restored) return
   const now = await nowSeconds($)
   const key = accountKey(s.account)
   const hour = `warm:${key}:${Math.floor(now / 3600)}`
@@ -1735,7 +1761,7 @@ async function queueTick($: EngineInterface): Promise<void> {
   const c = s.cache
   const expires = payload(s, at / 1000, ttl, idle).prompt_cache?.expires_at ?? undefined
   const lift = liftsAt(v.stop, at, offsetAt(at))
-  if (!c?.cached || !bridgeDue({ now: at / 1000, expiresAt: expires, sendAt: lift !== undefined ? lift / 1000 : undefined,
+  if (!c?.cached || c.restored || !bridgeDue({ now: at / 1000, expiresAt: expires, sendAt: lift !== undefined ? lift / 1000 : undefined,
     left: v.stop.left, bridges: q.bridges, prefix: c.prefix })) return
   bridging = true
   try {
@@ -2102,6 +2128,26 @@ export const register: Register = (on, options) => {
     return next(e)
   })
 
+  // A resumed conversation (`--resume`, `--continue`, a terminal brought back
+  // after a restart) has made no request in this process, so there's nothing
+  // of its own to time the cache from. Claude Code says how long ago its last
+  // response came and what the next request sends: line 2 reads warm or cold
+  // from those until a request shows it.
+  on('classic.SessionStart', async ($, e, next) => {
+    const result = await next(e)
+    const since = e.seconds_since_last_response
+    const size = e.context_tokens
+    if ((e.source === 'resume' || e.source === 'fork') && typeof since === 'number' && since >= 0 && typeof size === 'number' && size > 0) {
+      // Claude Code's own verdict settles the lifetime where the age alone can't.
+      const learned = e.prompt_cache_likely_expired === true && since < 3600 ? '5m'
+        : e.prompt_cache_likely_expired === false && since > 300 ? '1h' : undefined
+      const cache: NonNullable<Snap['cache']> = { lastAt: Math.floor((await nowSeconds($)) - since), cached: true, prefix: size, restored: true }
+      if (learned) cache.learned = learned
+      await update($, snap, s => ({ ...s, cache }))
+    }
+    return result
+  }).catch(($, e, next) => next(e))
+
   // A /clear starts a new conversation in the same process, with no
   // `session.start`: read the fresh session's figures straight away.
   on('session.end', async ($, e, next) => {
@@ -2200,7 +2246,8 @@ export const register: Register = (on, options) => {
         // neither a lifetime to learn from nor a cold rebuild.
         const fresh = s.cache?.compactedTo !== undefined
         const gap = s.cache && !fresh ? started - s.cache.lastAt : 0
-        if (s.cache?.cached && gap > 330 && gap < 3500) {
+        // A resumed conversation's first request can miss for reasons other than time, so it teaches no lifetime.
+        if (s.cache?.cached && !s.cache.restored && gap > 330 && gap < 3500) {
           // After 5+ idle minutes a read means the hour TTL; a full rewrite of
           // a large prefix means five minutes.
           if (u.cache_read_input_tokens > s.cache.prefix * 0.5) learned = '1h'
@@ -2349,6 +2396,8 @@ export const register: Register = (on, options) => {
     const result = await next(e)
     if (e.agentId !== undefined || e.trigger === 'precompute' || result.messages === undefined) return result
     const c = { at: await nowMs($), trigger: e.trigger, before: result.tokensBefore, after: result.tokensAfter }
+    // No turn running and nobody typed /compact: Claude Code compacted an idle conversation.
+    if (e.trigger !== 'manual' && (await read($, turnNow)) === null) await idleCompactionSeen($)
     await update($, totals, t => ({ ...t, compactions: [...t.compactions, c].slice(-20), growth: [] }))
     await update($, outlook, () => null)
     await markCompacted($, c.after)

@@ -1,5 +1,22 @@
 # Changelog
 
+## 0.18.0 (2026-10-24): the cache after a restart, and keep-warm for big conversations
+
+- **A resumed conversation shows its cache straight away.** After a restart, `--resume` or a
+  terminal brought back by herdr, line 2 had no cache figure until the next turn: nothing said
+  whether the cache was still warm. Claude Code says how long ago the resumed conversation's
+  last response came and what the next request sends, and line 2 now reads from that:
+  `cache warm ~41m (180k)`, or `cache cold, next turn rebuilds 486k`. Claude Code's own
+  "likely expired" verdict settles a five-minute cache.
+- **Keep-warm no longer stands aside for idle compaction it hasn't seen.** It left
+  conversations of 200k tokens or more to Claude Code's idle compaction, which Claude Code
+  turns on per account; where it's off, those conversations went cold untouched, and they're
+  the dearest to rebuild. Now keep-warm stands aside only once a session on the machine has been
+  seen compacting while idle (in the last 14 days), and so does the heads-up's "Claude Code
+  compacts the conversation first".
+- Keep-warm waits for a resumed conversation's first request: before it Claude Code has
+  nothing to send again, so it no longer tries, and it isn't switched off for the session.
+
 ## 0.17.1 (2026-10-23): pace without changing models
 
 - A `pace` rule takes `"agents": false`: its steps lower the effort and then stop, and never move

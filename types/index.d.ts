@@ -30,6 +30,12 @@ export type Snap = {
      * are kept per organization, so the next request starts a new one.
      */
     accountChanged?: boolean
+    /**
+     * Read from Claude Code's figures for a resumed conversation (its last
+     * response's age and size), not from a request this process made. Keep-warm
+     * waits for a real request: before one there's nothing to send again.
+     */
+    restored?: boolean
   }
   git?: { branch?: string; dirty?: boolean } | null
   account?: string | null

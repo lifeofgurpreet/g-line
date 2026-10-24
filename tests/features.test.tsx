@@ -104,6 +104,7 @@ function world(on: On, stored: Record<string, unknown> = {}, kept?: Record<strin
   on('turn.start', ($, e) => ({ turnId: e.turnId }))
   on('turn.complete', ($, e) => ({ text: e.answer }))
   on('session.measure', ($, e) => ({ changed: e.changed }))
+  on('classic.SessionStart', () => ({}) as never)
   return w
 }
 
@@ -1394,8 +1395,9 @@ test('keep-warm stops for the session when its re-read finds no cache', { timeou
   expect(forks).toBe(1)
 })
 
-test('keep-warm stands aside where Claude Code compacts an idle conversation itself', { timeoutMs: 30_000 }, async ($, on) => {
-  const w = world(on)
+/** A 250k conversation idle for 55 minutes under keep-warm: how many re-reads it got. */
+async function bigIdle($: Engine, on: On, stored: Record<string, unknown> = {}) {
+  const w = world(on, stored)
   w.config = { guard: { keep_warm: true } }
   on('turn.step', async function* ($: unknown, e: { turnId: string; index: number }) {
     return { turnId: e.turnId, index: e.index, answer: '', toolUses: [], stopReason: 'end_turn',
@@ -1413,7 +1415,121 @@ test('keep-warm stands aside where Claude Code compacts an idle conversation its
   await $.turn.complete({ answer: 'done', durationMs: 4000, isAborted: false, turnId: 't1', reason: 'answer',
     usage: { ...USAGE_ARGS, model: 'claude-opus-5-5' } })
   await w.clock.advance(55 * 60_000)
+  return forks
+}
+
+test('keep-warm stands aside where Claude Code compacts an idle conversation itself', { timeoutMs: 30_000 }, async ($, on) => {
+  // A session on this machine was seen compacting while idle an hour ago.
+  expect(await bigIdle($, on, { 'idle-compaction-seen': (NOW - 3600) * 1000 })).toBe(0)
+})
+
+test('0.18.0: until an idle compaction is seen on this machine, keep-warm keeps a big conversation warm', { timeoutMs: 30_000 }, async ($, on) => {
+  // Claude Code switches idle compaction on per account, out of sight: none seen, none counted on.
+  expect(await bigIdle($, on)).toBe(1)
+})
+
+test('0.18.0: an idle compaction seen counts from then on, and an old sighting does not', { timeoutMs: 30_000 }, async ($, on) => {
+  expect(await bigIdle($, on, { 'idle-compaction-seen': (NOW - 30 * 86_400) * 1000 })).toBe(1)
+})
+
+test('0.18.0: a compaction with no turn running records that Claude Code compacts idle conversations here', { timeoutMs: 30_000 }, async ($, on) => {
+  const kept: Record<string, unknown> = {}
+  const w = world(on, {}, kept)
+  engineBelow(on)
+  on('session.compact', ($, e) => ({ messages: SUMMARY, tokensBefore: 300_000, tokensAfter: 20_000 }) as never)
+  await start($)
+  await measure($, w, 40)
+  await $.turn.start({ text: 'go', turnId: 't1' })
+  await step($, 't1', 0, 'high')
+  await $.session.compact({ trigger: 'auto', messages: SUMMARY } as never)
+  expect(kept['idle-compaction-seen']).toBeUndefined()
+  await $.turn.complete({ answer: 'done', durationMs: 4000, isAborted: false, turnId: 't1', reason: 'answer',
+    usage: { ...USAGE_ARGS, model: 'claude-opus-5-5' } })
+  await $.session.compact({ trigger: 'manual', messages: SUMMARY } as never)
+  expect(kept['idle-compaction-seen']).toBeUndefined()
+  await $.session.compact({ trigger: 'auto', messages: SUMMARY } as never)
+  expect(typeof kept['idle-compaction-seen']).toBe('number')
+})
+
+/** Whether line 2 says anything about the cache right now. */
+async function cacheShown($: Engine) {
+  const ui = await $.ui.mount({ plugin: 'g-line', surface: 'terminal', component: 'PromptHint',
+    props: { isDraft: false, isWorking: false, hint: '? for shortcuts' }, viewport: { columns: 200, rows: 40 } })
+  const found = await ui.find({ type: 'Text', text: /^cache / })
+  await ui.unmount()
+  return found !== undefined
+}
+
+test('0.18.0: a resumed conversation shows its cache before its first request, from Claude Code\'s own figures', { timeoutMs: 30_000 }, async ($, on) => {
+  const w = world(on)
+  hintBelow(on)
+  await start($)
+  await measure($, w, 40)
+  // Before: nothing to time the cache from.
+  expect(await cacheShown($)).toBe(false)
+  await $.classic.SessionStart({ source: 'resume', seconds_since_last_response: 600, context_tokens: 180_000, prompt_cache_likely_expired: false } as never)
+  const ui = await $.ui.mount({ plugin: 'g-line', surface: 'terminal', component: 'PromptHint',
+    props: { isDraft: false, isWorking: false, hint: '? for shortcuts' }, viewport: { columns: 200, rows: 40 } })
+  expect(await ui.find({ type: 'Text', text: /^cache warm ~50m \(180k\)$/ })).toBeDefined()
+  await ui.unmount()
+})
+
+test('0.18.0: a conversation resumed after the cache lapsed reads cold, with what the next turn rebuilds', { timeoutMs: 30_000 }, async ($, on) => {
+  const w = world(on)
+  hintBelow(on)
+  await start($)
+  await measure($, w, 40)
+  await $.classic.SessionStart({ source: 'resume', seconds_since_last_response: 5 * 3600, context_tokens: 486_000, prompt_cache_likely_expired: true } as never)
+  const ui = await $.ui.mount({ plugin: 'g-line', surface: 'terminal', component: 'PromptHint',
+    props: { isDraft: false, isWorking: false, hint: '? for shortcuts' }, viewport: { columns: 200, rows: 40 } })
+  expect(await ui.find({ type: 'Text', text: /^cache cold, next turn rebuilds 486k$/ })).toBeDefined()
+  await ui.unmount()
+})
+
+test('0.18.0: Claude Code\'s verdict sets the lifetime: expired after 10 minutes means a five-minute cache', { timeoutMs: 30_000 }, async ($, on) => {
+  const w = world(on)
+  hintBelow(on)
+  await start($)
+  await measure($, w, 40)
+  await $.classic.SessionStart({ source: 'resume', seconds_since_last_response: 600, context_tokens: 90_000, prompt_cache_likely_expired: true } as never)
+  const ui = await $.ui.mount({ plugin: 'g-line', surface: 'terminal', component: 'PromptHint',
+    props: { isDraft: false, isWorking: false, hint: '? for shortcuts' }, viewport: { columns: 200, rows: 40 } })
+  expect(await ui.find({ type: 'Text', text: /^cache cold/ })).toBeDefined()
+  await ui.unmount()
+})
+
+test('0.18.0: a fresh start or a /clear restores nothing', { timeoutMs: 30_000 }, async ($, on) => {
+  const w = world(on)
+  hintBelow(on)
+  await start($)
+  await measure($, w, 40)
+  await $.classic.SessionStart({ source: 'startup' } as never)
+  await $.classic.SessionStart({ source: 'clear', seconds_since_last_response: 60, context_tokens: 90_000 } as never)
+  expect(await cacheShown($)).toBe(false)
+})
+
+test('0.18.0: keep-warm leaves a resumed conversation alone until its first request, then keeps it', { timeoutMs: 30_000 }, async ($, on) => {
+  const w = world(on)
+  w.config = { guard: { keep_warm: true } }
+  engineBelow(on)
+  let forks = 0
+  on('model.fork', () => {
+    forks += 1
+    return { value: { isAnswered: true, text: 'ok', usage: { input_tokens: 20, output_tokens: 3, cache_read_input_tokens: 100_000, cache_creation_input_tokens: 0 } } } as never
+  })
+  await start($)
+  await measure($, w, 40)
+  await $.classic.SessionStart({ source: 'resume', seconds_since_last_response: 60, context_tokens: 100_000, prompt_cache_likely_expired: false } as never)
+  await w.clock.advance(55 * 60_000)
+  // Claude Code would answer `nothing-to-fork`: no re-read tried, and keep-warm still on.
   expect(forks).toBe(0)
+  expect(w.toasts.some(t => t.startsWith('Keep-warm stopped'))).toBe(false)
+  await $.turn.start({ text: 'go', turnId: 't1' })
+  await step($, 't1', 0, 'high')
+  await $.turn.complete({ answer: 'done', durationMs: 4000, isAborted: false, turnId: 't1', reason: 'answer',
+    usage: { ...USAGE_ARGS, model: 'claude-opus-5-5' } })
+  await w.clock.advance(50 * 60_000)
+  expect(forks).toBe(1)
 })
 
 // ------------------------------------------------------------ 0.7.1
