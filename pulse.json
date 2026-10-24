@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-24T18:55:03Z",
+ "generated_at": "2026-10-24T19:27:58Z",
  "items": [
   {
    "title": "Block unveils Dessa, a “true speech-to-speech” AI model trained on “nothing but human conversation”…",
@@ -17,7 +17,7 @@
    "published_at": "2026-10-24T04:04:29Z",
    "text": "I’ve left Anthropic after more than a year of working on Claude Code and seeing it scale larger than I ever imagined. I have really loved working at Ant and believe deeply in the mission, and most of all, the idea of a race to the top. The idea that if we work hard and…",
    "author_name": "Thariq",
-   "likes": 25908,
+   "likes": 26131,
    "story": "Thariq left Anthropic!"
   },
   {
@@ -34,25 +34,25 @@
    "published_at": "2026-10-23T19:46:46Z",
    "text": "Over the past several months, we have substantially hardened the security of our research training environment. We’ve removed live internet access for all frontier models during training and built an offline world for them to use instead—a cached version of the web where they can…",
    "author_name": "OpenAI",
-   "likes": 12140,
+   "likes": 12221,
    "story": "OpenAI says it built an “offline world” from cached web content to train isolated frontier models to browse, search for information, and use web apps"
   },
   {
-   "title": "Moonshot unveils Kimi K3.1 Pro, a 3T-class open-weight model with a 1M-token context window, and K3…",
-   "url": "https://www.kimi.ai/blog/kimi-k3-1-pro",
-   "source": "Kimi",
-   "published_at": "2026-10-23T17:45:53Z",
-   "text": "Moonshot unveils Kimi K3.1 Pro, a 3T-class open-weight model with a 1M-token context window, and K3.1 Pro Highspeed, with full weights to be released by Nov. 4. We're introducing Kimi K3.1 Pro, the first model in our new K3.1 series and our most capable 3T-class open-weight model to date, with a 1-million-token context window.",
+   "title": "Artificial Analysis says Kimi K3.1 Pro lands 4th on its Intelligence Index, behind only Opus 5.5 (m…",
+   "url": "https://x.com/artificialanlys/status/2113688083145314416",
+   "source": "@artificialanlys",
+   "published_at": "2026-10-23T19:26:03Z",
+   "text": "Artificial Analysis says Kimi K3.1 Pro lands 4th on its Intelligence Index, behind only Opus 5.5 (max), Sonnet 5.5 (max), and Muse Wonder Full (max). Kimi K3.1 Pro launches at 4th on the Artificial Analysis Intelligence Index scoring 55, making large gains in agentic performance; it will be the leading open-weights model once its weights are published @Kimi_Moonshot's new reasoning model gains 11 points over Kimi K3 (max, 44). It trails only Cl...",
    "via": "Techmeme"
   },
   {
-   "title": "GPU-unlock: FP/BF16 instruction issue rate on Nvidia 3000's cards",
-   "url": "https://github.com/Zagitta/gpu-unlock",
+   "title": "Neural chip decodes interactions between brain regions",
+   "url": "https://actu.epfl.ch/news/neural-chip-decodes-interactions-between-brain-r-2/",
    "source": "Hacker News",
-   "published_at": "2026-10-24T09:58:27Z",
-   "text": "105 points and 45 comments on Hacker News.",
-   "points": 105,
-   "discussion": "https://news.ycombinator.com/item?id=50219700"
+   "published_at": "2026-10-24T15:57:17Z",
+   "text": "60 points and 12 comments on Hacker News.",
+   "points": 60,
+   "discussion": "https://news.ycombinator.com/item?id=50222525"
   },
   {
    "title": "Open call for guest investigators in the life sciences",
@@ -62,11 +62,28 @@
    "text": "Today, we’re inviting members of the life sciences community to apply to work with us on special projects."
   },
   {
-   "title": "Anthropic attributes Mythos 5's deception of a GitHub maintainer to recklessness, biased reasoning,…",
-   "url": "https://www.anthropic.com/research/alignment-assessment-ukaisi",
-   "source": "Anthropic",
-   "published_at": "2026-10-23T17:10:58Z",
-   "text": "Anthropic attributes Mythos 5's deception of a GitHub maintainer to recklessness, biased reasoning, and an urge to finish jobs, saying newer models rarely do so. In AISI's evaluation, Mythos 5 was given a capture-the-flag (CTF) cybersecurity challenge, in which it was asked to retrieve …",
+   "title": "A look at Alpha School, a network of private schools that claims to teach kids 2x as fast using AI;…",
+   "url": "https://www.nytimes.com/2026/10/23/us/alpha-school-ai-education-parents.html?unlocked_article_code=1.K1E.IcJn.2l4XIQK5gQsl&smid=url-share",
+   "source": "Dana Goldstein / New York T…",
+   "published_at": "2026-10-24T17:25:51Z",
+   "text": "A look at Alpha School, a network of private schools that claims to teach kids 2x as fast using AI; data shows ~50% of K-8 students missed this goal in math. Alpha School, a private network, is spreading into public education. While its students' test scores are high, some parents and educators say it doesn't live up to the hype.",
+   "via": "Techmeme"
+  },
+  {
+   "title": "GPU-unlock: FP/BF16 instruction issue rate on Nvidia 3000's cards",
+   "url": "https://github.com/Zagitta/gpu-unlock",
+   "source": "Hacker News",
+   "published_at": "2026-10-24T09:58:27Z",
+   "text": "119 points and 48 comments on Hacker News.",
+   "points": 119,
+   "discussion": "https://news.ycombinator.com/item?id=50219700"
+  },
+  {
+   "title": "A look at OpenAI's Project Daybreak, which lets vetted partners use its top hacking models to find…",
+   "url": "https://www.forbes.com/sites/thomasbrewster/2026/10/23/inside-openais-plan-to-protect-the-internet-before-hackers-break-it/",
+   "source": "Thomas Brewster / Forbes",
+   "published_at": "2026-10-24T06:35:46Z",
+   "text": "A look at OpenAI's Project Daybreak, which lets vetted partners use its top hacking models to find and fix vulnerabilities and helped uncover PHP2Shell RCE bugs. This voice experience is generated by AI. Learn more. — Using the latest GPT model, cyber researchers …",
    "via": "Techmeme"
   },
   {
@@ -79,23 +96,6 @@
    "discussion": "https://news.ycombinator.com/item?id=50207405"
   },
   {
-   "title": "A look at Alpha School, a network of private schools that claims to teach kids 2x as fast using AI;…",
-   "url": "https://www.nytimes.com/2026/10/23/us/alpha-school-ai-education-parents.html?unlocked_article_code=1.K1E.IcJn.2l4XIQK5gQsl&smid=url-share",
-   "source": "Dana Goldstein / New York T…",
-   "published_at": "2026-10-24T17:25:51Z",
-   "text": "A look at Alpha School, a network of private schools that claims to teach kids 2x as fast using AI; data shows ~50% of K-8 students missed this goal in math. Alpha School, a private network, is spreading into public education. While its students' test scores are high, some parents and educators say it doesn't live up to the hype.",
-   "via": "Techmeme"
-  },
-  {
-   "title": "A practical guide to AI image generation, from diffusion to agents",
-   "url": "https://danielball.com/notes/ai_image_generation.html",
-   "source": "Hacker News",
-   "published_at": "2026-10-20T19:22:39Z",
-   "text": "216 points and 67 comments on Hacker News.",
-   "points": 216,
-   "discussion": "https://news.ycombinator.com/item?id=50171379"
-  },
-  {
    "title": "Donating Agent Skills to the Agentic AI Foundation",
    "url": "https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation",
    "source": "Anthropic",
@@ -103,11 +103,11 @@
    "text": "Anthropic is an AI safety and research company that's working to build reliable, interpretable, and steerable AI systems."
   },
   {
-   "title": "A look at OpenAI's Project Daybreak, which lets vetted partners use its top hacking models to find…",
-   "url": "https://www.forbes.com/sites/thomasbrewster/2026/10/23/inside-openais-plan-to-protect-the-internet-before-hackers-break-it/",
-   "source": "Thomas Brewster / Forbes",
-   "published_at": "2026-10-24T06:35:46Z",
-   "text": "A look at OpenAI's Project Daybreak, which lets vetted partners use its top hacking models to find and fix vulnerabilities and helped uncover PHP2Shell RCE bugs. This voice experience is generated by AI. Learn more. — Using the latest GPT model, cyber researchers …",
+   "title": "Inside Meta's law enforcement outreach team, which uses AI and human reviewers to analyze social me…",
+   "url": "https://www.newyorker.com/news/the-lede/inside-metas-efforts-to-prevent-school-shootings",
+   "source": "Rachel Monroe / New Yorker",
+   "published_at": "2026-10-24T10:35:46Z",
+   "text": "Inside Meta's law enforcement outreach team, which uses AI and human reviewers to analyze social media posts, aiming to prevent threats like school shootings. Algorithmic social media, which has helped create the conditions for the spread of such violence, is reckoning with how it can be part of the solution.",
    "via": "Techmeme"
   },
   {
@@ -119,11 +119,11 @@
    "via": "Techmeme"
   },
   {
-   "title": "Inside Meta's law enforcement outreach team, which uses AI and human reviewers to analyze social me…",
-   "url": "https://www.newyorker.com/news/the-lede/inside-metas-efforts-to-prevent-school-shootings",
-   "source": "Rachel Monroe / New Yorker",
-   "published_at": "2026-10-24T10:35:46Z",
-   "text": "Inside Meta's law enforcement outreach team, which uses AI and human reviewers to analyze social media posts, aiming to prevent threats like school shootings. Algorithmic social media, which has helped create the conditions for the spread of such violence, is reckoning with how it can be part of the solution.",
+   "title": "An interview with Ciena CEO Gary Smith, a veteran of the 2001 telecoms crash, on AI demand outpacin…",
+   "url": "https://www.wsj.com/cio-journal/a-veteran-of-the-telecom-bust-navigates-the-ai-boom-b063fa63?st=YJm3H4&reflink=desktopwebshare_permalink",
+   "source": "Steven Rosenbush / Wall Str…",
+   "published_at": "2026-10-24T15:41:00Z",
+   "text": "An interview with Ciena CEO Gary Smith, a veteran of the 2001 telecoms crash, on AI demand outpacing supply for Ciena's optical networking chips, and more. Ciena CEO Gary Smith is ‘suitably paranoid,’ but optimistic — The historic telecommunications crash of 2001 is burned indelibly …",
    "via": "Techmeme"
   }
  ],
