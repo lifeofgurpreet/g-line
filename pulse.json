@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-24T14:06:19Z",
+ "generated_at": "2026-10-24T14:38:29Z",
  "items": [
   {
    "title": "OpenAI says it built an “offline world” from cached web content to train isolated frontier models t…",
@@ -17,7 +17,7 @@
    "published_at": "2026-10-24T04:04:29Z",
    "text": "I’ve left Anthropic after more than a year of working on Claude Code and seeing it scale larger than I ever imagined. I have really loved working at Ant and believe deeply in the mission, and most of all, the idea of a race to the top. The idea that if we work hard and…",
    "author_name": "Thariq",
-   "likes": 22123,
+   "likes": 22677,
    "story": "Thariq left Anthropic!"
   },
   {
@@ -28,21 +28,24 @@
    "text": "Added the Monitor tool and plugin monitors on Bedrock, Vertex, and Foundry, and when telemetry or nonessential traffic is disabled; long foreground sleeps are now blocked there too · Fixed requests failing behind some gateways and compatible servers that reject the effort-2025-11-24 beta value or mid-conversation system messages; Claude Code now retries without them · Fixed background cleanup deleting some recent files, such as pasted images, when cleanupPeriodDays is set to a very large value · Fixed compaction after a \"Prompt is too long\" error keeping too much of a conversation with dense…"
   },
   {
-   "title": "Kimi K3.1 Pro launches at 4th on the Artificial Analysis Intelligence Index scoring 55, making larg…",
-   "url": "https://x.com/ArtificialAnlys/status/2113688083145314416",
-   "source": "𝕏 @ArtificialAnlys",
-   "published_at": "2026-10-23T17:44:44Z",
-   "text": "Kimi K3.1 Pro launches at 4th on the Artificial Analysis Intelligence Index scoring 55, making large gains in agentic performance; it will be the leading open-weights model once its weights are published @Kimi_Moonshot's new reasoning model gains 11 points over Kimi K3 (max,…",
-   "author_name": "Artificial Analysis",
-   "likes": 5110,
-   "story": "Moonshot unveils Kimi K3.1 Pro, a 3T-class open-weight model with a 1M-token context window, and K3.1 Pro Highspeed, with full weights to be released by Nov. 4"
+   "title": "We believe voice is the most natural way to interact with intelligence, so we created Dessa, the mo…",
+   "url": "https://x.com/jack/status/2113697902916751661",
+   "source": "𝕏 @jack",
+   "published_at": "2026-10-23T18:23:45Z",
+   "text": "We believe voice is the most natural way to interact with intelligence, so we created Dessa, the most authentic full-duplex speech model ever built. Talking with it feels like talking with a person…full of emotion, nuance, pauses, and a natural cadence.",
+   "author_name": "jack",
+   "likes": 56397,
+   "story": "Block unveils Dessa, a “true speech-to-speech” AI model trained on “nothing but human conversation” that it says runs locally on a MacBook Pro M4 Max or better",
+   "links": [
+    "https://block.xyz/dessa"
+   ]
   },
   {
-   "title": "Anthropic attributes Mythos 5's deception of a GitHub maintainer to recklessness, biased reasoning,…",
-   "url": "https://www.anthropic.com/research/alignment-assessment-ukaisi",
-   "source": "Anthropic",
-   "published_at": "2026-10-23T17:10:58Z",
-   "text": "Anthropic attributes Mythos 5's deception of a GitHub maintainer to recklessness, biased reasoning, and an urge to finish jobs, saying newer models rarely do so. In AISI's evaluation, Mythos 5 was given a capture-the-flag (CTF) cybersecurity challenge, in which it was asked to retrieve …",
+   "title": "Moonshot unveils Kimi K3.1 Pro, a 3T-class open-weight model with a 1M-token context window, and K3…",
+   "url": "https://www.kimi.ai/blog/kimi-k3-1-pro",
+   "source": "Kimi",
+   "published_at": "2026-10-23T17:45:53Z",
+   "text": "Moonshot unveils Kimi K3.1 Pro, a 3T-class open-weight model with a 1M-token context window, and K3.1 Pro Highspeed, with full weights to be released by Nov. 4. We're introducing Kimi K3.1 Pro, the first model in our new K3.1 series and our most capable 3T-class open-weight model to date, with a 1-million-token context window.",
    "via": "Techmeme"
   },
   {
@@ -50,8 +53,8 @@
    "url": "https://www.reddit.com/r/antiai/comments/1xdv3e5/hacker_reverse_engineers_his_samsung_tv_and_finds/",
    "source": "Hacker News",
    "published_at": "2026-10-24T05:49:57Z",
-   "text": "314 points and 90 comments on Hacker News.",
-   "points": 314,
+   "text": "334 points and 102 comments on Hacker News.",
+   "points": 334,
    "discussion": "https://news.ycombinator.com/item?id=50218633"
   },
   {
@@ -62,28 +65,11 @@
    "text": "Today, we’re inviting members of the life sciences community to apply to work with us on special projects."
   },
   {
-   "title": "A look at OpenAI's Project Daybreak, which lets vetted partners use its top hacking models to find…",
-   "url": "https://www.forbes.com/sites/thomasbrewster/2026/10/23/inside-openais-plan-to-protect-the-internet-before-hackers-break-it/",
-   "source": "Thomas Brewster / Forbes",
-   "published_at": "2026-10-24T06:35:46Z",
-   "text": "A look at OpenAI's Project Daybreak, which lets vetted partners use its top hacking models to find and fix vulnerabilities and helped uncover PHP2Shell RCE bugs. This voice experience is generated by AI. Learn more. — Using the latest GPT model, cyber researchers …",
-   "via": "Techmeme"
-  },
-  {
-   "title": "Dessa: Conversation Model trained only on speech",
-   "url": "https://block.xyz/dessa",
-   "source": "Hacker News",
-   "published_at": "2026-10-23T19:09:54Z",
-   "text": "423 points and 158 comments on Hacker News.",
-   "points": 423,
-   "discussion": "https://news.ycombinator.com/item?id=50213925"
-  },
-  {
-   "title": "Inside Meta's law enforcement outreach team, which uses AI and human reviewers to analyze social me…",
-   "url": "https://www.newyorker.com/news/the-lede/inside-metas-efforts-to-prevent-school-shootings",
-   "source": "Rachel Monroe / New Yorker",
-   "published_at": "2026-10-24T10:35:46Z",
-   "text": "Inside Meta's law enforcement outreach team, which uses AI and human reviewers to analyze social media posts, aiming to prevent threats like school shootings. Algorithmic social media, which has helped create the conditions for the spread of such violence, is reckoning with how it can be part of the solution.",
+   "title": "Anthropic attributes Mythos 5's deception of a GitHub maintainer to recklessness, biased reasoning,…",
+   "url": "https://www.anthropic.com/research/alignment-assessment-ukaisi",
+   "source": "Anthropic",
+   "published_at": "2026-10-23T17:10:58Z",
+   "text": "Anthropic attributes Mythos 5's deception of a GitHub maintainer to recklessness, biased reasoning, and an urge to finish jobs, saying newer models rarely do so. In AISI's evaluation, Mythos 5 was given a capture-the-flag (CTF) cybersecurity challenge, in which it was asked to retrieve …",
    "via": "Techmeme"
   },
   {
@@ -96,11 +82,36 @@
    "discussion": "https://news.ycombinator.com/item?id=50207405"
   },
   {
+   "title": "Inside Meta's law enforcement outreach team, which uses AI and human reviewers to analyze social me…",
+   "url": "https://www.newyorker.com/news/the-lede/inside-metas-efforts-to-prevent-school-shootings",
+   "source": "Rachel Monroe / New Yorker",
+   "published_at": "2026-10-24T10:35:46Z",
+   "text": "Inside Meta's law enforcement outreach team, which uses AI and human reviewers to analyze social media posts, aiming to prevent threats like school shootings. Algorithmic social media, which has helped create the conditions for the spread of such violence, is reckoning with how it can be part of the solution.",
+   "via": "Techmeme"
+  },
+  {
+   "title": "A practical guide to AI image generation, from diffusion to agents",
+   "url": "https://danielball.com/notes/ai_image_generation.html",
+   "source": "Hacker News",
+   "published_at": "2026-10-20T19:22:39Z",
+   "text": "155 points and 49 comments on Hacker News.",
+   "points": 155,
+   "discussion": "https://news.ycombinator.com/item?id=50171379"
+  },
+  {
    "title": "Donating Agent Skills to the Agentic AI Foundation",
    "url": "https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation",
    "source": "Anthropic",
    "published_at": "2026-10-22T17:48:51Z",
    "text": "Anthropic is an AI safety and research company that's working to build reliable, interpretable, and steerable AI systems."
+  },
+  {
+   "title": "A look at OpenAI's Project Daybreak, which lets vetted partners use its top hacking models to find…",
+   "url": "https://www.forbes.com/sites/thomasbrewster/2026/10/23/inside-openais-plan-to-protect-the-internet-before-hackers-break-it/",
+   "source": "Thomas Brewster / Forbes",
+   "published_at": "2026-10-24T06:35:46Z",
+   "text": "A look at OpenAI's Project Daybreak, which lets vetted partners use its top hacking models to find and fix vulnerabilities and helped uncover PHP2Shell RCE bugs. This voice experience is generated by AI. Learn more. — Using the latest GPT model, cyber researchers …",
+   "via": "Techmeme"
   },
   {
    "title": "The UK plans to invest £100M to create the AI Biosecurity Lab to boost defenses against biological…",
@@ -111,20 +122,11 @@
    "via": "Techmeme"
   },
   {
-   "title": "A practical guide to AI image generation, from diffusion to agents",
-   "url": "https://danielball.com/notes/ai_image_generation.html",
-   "source": "Hacker News",
-   "published_at": "2026-10-20T19:22:39Z",
-   "text": "145 points and 45 comments on Hacker News.",
-   "points": 145,
-   "discussion": "https://news.ycombinator.com/item?id=50171379"
-  },
-  {
-   "title": "Utopai, an AI film studio that says it has more than 20 projects in the works, raised $60M at a $1B…",
-   "url": "https://www.theinformation.com/articles/utopai-becomes-unicorn-video-ai-takes",
-   "source": "Rocket Drew / The Informati…",
-   "published_at": "2026-10-23T23:10:53Z",
-   "text": "Utopai, an AI film studio that says it has more than 20 projects in the works, raised $60M at a $1B valuation. While much of the AI industry has fixated on new personal AI assistants from Meta and OpenAI, video AI is enjoying a quiet renaissance. Hollywood mogul Jeffrey Katzenberg …",
+   "title": "Mave, which is developing an AI-driven tool to automate security investigations, raised a $28M Seri…",
+   "url": "https://www.calcalistech.com/ctechnews/article/h1sq8ip2mx",
+   "source": "Meir Orbach / CTech",
+   "published_at": "2026-10-23T21:15:49Z",
+   "text": "Mave, which is developing an AI-driven tool to automate security investigations, raised a $28M Series A led by Red Dot, bringing its total funding to $34M",
    "via": "Techmeme"
   }
  ],
