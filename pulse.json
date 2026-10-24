@@ -1,13 +1,13 @@
 {
  "schema": 1,
- "generated_at": "2026-10-24T13:02:34Z",
+ "generated_at": "2026-10-24T13:34:32Z",
  "items": [
   {
-   "title": "OpenAI says it built an “offline world” from cached web content to train isolated frontier models t…",
-   "url": "https://openai.com/index/securing-our-frontier-model-training-environment",
-   "source": "OpenAI",
-   "published_at": "2026-10-24T00:30:48Z",
-   "text": "OpenAI says it built an “offline world” from cached web content to train isolated frontier models to browse, search for information, and use web apps. In order to work with software, AI models need computing environments: digital workspaces where they can write and run code …",
+   "title": "Moonshot unveils Kimi K3.1 Pro, a 3T-class open-weight model with a 1M-token context window, and K3…",
+   "url": "https://www.kimi.ai/blog/kimi-k3-1-pro",
+   "source": "Kimi",
+   "published_at": "2026-10-23T17:45:53Z",
+   "text": "Moonshot unveils Kimi K3.1 Pro, a 3T-class open-weight model with a 1M-token context window, and K3.1 Pro Highspeed, with full weights to be released by Nov. 4. We're introducing Kimi K3.1 Pro, the first model in our new K3.1 series and our most capable 3T-class open-weight model to date, with a 1-million-token context window.",
    "via": "Techmeme"
   },
   {
@@ -17,7 +17,7 @@
    "published_at": "2026-10-24T04:04:29Z",
    "text": "I’ve left Anthropic after more than a year of working on Claude Code and seeing it scale larger than I ever imagined. I have really loved working at Ant and believe deeply in the mission, and most of all, the idea of a race to the top. The idea that if we work hard and…",
    "author_name": "Thariq",
-   "likes": 20933,
+   "likes": 21581,
    "story": "Thariq left Anthropic!"
   },
   {
@@ -28,14 +28,14 @@
    "text": "Added the Monitor tool and plugin monitors on Bedrock, Vertex, and Foundry, and when telemetry or nonessential traffic is disabled; long foreground sleeps are now blocked there too · Fixed requests failing behind some gateways and compatible servers that reject the effort-2025-11-24 beta value or mid-conversation system messages; Claude Code now retries without them · Fixed background cleanup deleting some recent files, such as pasted images, when cleanupPeriodDays is set to a very large value · Fixed compaction after a \"Prompt is too long\" error keeping too much of a conversation with dense…"
   },
   {
-   "title": "Kimi K3.1 Pro launches at 4th on the Artificial Analysis Intelligence Index scoring 55, making larg…",
-   "url": "https://x.com/ArtificialAnlys/status/2113688083145314416",
-   "source": "𝕏 @ArtificialAnlys",
-   "published_at": "2026-10-23T17:44:44Z",
-   "text": "Kimi K3.1 Pro launches at 4th on the Artificial Analysis Intelligence Index scoring 55, making large gains in agentic performance; it will be the leading open-weights model once its weights are published @Kimi_Moonshot's new reasoning model gains 11 points over Kimi K3 (max,…",
-   "author_name": "Artificial Analysis",
-   "likes": 5071,
-   "story": "Moonshot unveils Kimi K3.1 Pro, a 3T-class open-weight model with a 1M-token context window, and K3.1 Pro Highspeed, with full weights to be released by Nov. 4"
+   "title": "Over the past several months, we have substantially hardened the security of our research training…",
+   "url": "https://x.com/OpenAI/status/2113718797505036665",
+   "source": "𝕏 @OpenAI",
+   "published_at": "2026-10-23T19:46:46Z",
+   "text": "Over the past several months, we have substantially hardened the security of our research training environment. We’ve removed live internet access for all frontier models during training and built an offline world for them to use instead—a cached version of the web where they can…",
+   "author_name": "OpenAI",
+   "likes": 10954,
+   "story": "OpenAI says it built an “offline world” from cached web content to train isolated frontier models to browse, search for information, and use web apps"
   },
   {
    "title": "Anthropic attributes Mythos 5's deception of a GitHub maintainer to recklessness, biased reasoning,…",
@@ -50,8 +50,8 @@
    "url": "https://www.reddit.com/r/antiai/comments/1xdv3e5/hacker_reverse_engineers_his_samsung_tv_and_finds/",
    "source": "Hacker News",
    "published_at": "2026-10-24T05:49:57Z",
-   "text": "270 points and 79 comments on Hacker News.",
-   "points": 270,
+   "text": "298 points and 86 comments on Hacker News.",
+   "points": 298,
    "discussion": "https://news.ycombinator.com/item?id=50218633"
   },
   {
@@ -74,8 +74,8 @@
    "url": "https://block.xyz/dessa",
    "source": "Hacker News",
    "published_at": "2026-10-23T19:09:54Z",
-   "text": "413 points and 152 comments on Hacker News.",
-   "points": 413,
+   "text": "421 points and 157 comments on Hacker News.",
+   "points": 421,
    "discussion": "https://news.ycombinator.com/item?id=50213925"
   },
   {
@@ -115,16 +115,16 @@
    "url": "https://danielball.com/notes/ai_image_generation.html",
    "source": "Hacker News",
    "published_at": "2026-10-20T19:22:39Z",
-   "text": "128 points and 37 comments on Hacker News.",
-   "points": 128,
+   "text": "138 points and 41 comments on Hacker News.",
+   "points": 138,
    "discussion": "https://news.ycombinator.com/item?id=50171379"
   },
   {
-   "title": "Mave, which is developing an AI-driven tool to automate security investigations, raised a $28M Seri…",
-   "url": "https://www.calcalistech.com/ctechnews/article/h1sq8ip2mx",
-   "source": "Meir Orbach / CTech",
-   "published_at": "2026-10-23T21:15:49Z",
-   "text": "Mave, which is developing an AI-driven tool to automate security investigations, raised a $28M Series A led by Red Dot, bringing its total funding to $34M. The funding, led by Red Dot Capital Partners, brings Mave's total funding to $34 million. The company is developing AI …",
+   "title": "Utopai, an AI film studio that says it has more than 20 projects in the works, raised $60M at a $1B…",
+   "url": "https://www.theinformation.com/articles/utopai-becomes-unicorn-video-ai-takes",
+   "source": "Rocket Drew / The Informati…",
+   "published_at": "2026-10-23T23:10:53Z",
+   "text": "Utopai, an AI film studio that says it has more than 20 projects in the works, raised $60M at a $1B valuation. While much of the AI industry has fixated on new personal AI assistants from Meta and OpenAI, video AI is enjoying a quiet renaissance. Hollywood mogul Jeffrey Katzenberg …",
    "via": "Techmeme"
   }
  ],
