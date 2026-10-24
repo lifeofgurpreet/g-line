@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-24T07:05:34Z",
+ "generated_at": "2026-10-24T07:37:56Z",
  "items": [
   {
    "title": "Moonshot unveils Kimi K3.1 Pro, a 3T-class open-weight model with a 1M-token context window, and K3…",
@@ -17,7 +17,7 @@
    "published_at": "2026-10-24T04:04:29Z",
    "text": "I’ve left Anthropic after more than a year of working on Claude Code and seeing it scale larger than I ever imagined. I have really loved working at Ant and believe deeply in the mission, and most of all, the idea of a race to the top. The idea that if we work hard and…",
    "author_name": "Thariq",
-   "likes": 11653,
+   "likes": 12761,
    "story": "Thariq left Anthropic!"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-10-23T19:46:46Z",
    "text": "Over the past several months, we have substantially hardened the security of our research training environment. We’ve removed live internet access for all frontier models during training and built an offline world for them to use instead—a cached version of the web where they can…",
    "author_name": "OpenAI",
-   "likes": 8838,
+   "likes": 9040,
    "story": "OpenAI says it built an “offline world” from cached web content to train isolated frontier models to browse, search for information, and use web apps"
   },
   {
@@ -50,19 +50,19 @@
    "url": "https://block.xyz/dessa",
    "source": "Hacker News",
    "published_at": "2026-10-23T19:09:54Z",
-   "text": "346 points and 132 comments on Hacker News.",
-   "points": 346,
+   "text": "360 points and 133 comments on Hacker News.",
+   "points": 360,
    "discussion": "https://news.ycombinator.com/item?id=50213925"
   },
   {
-   "title": "Almost all of the recent incidents like this, including Hugging Face, happened because the models i…",
-   "url": "https://x.com/AndrewCurran_/status/2113635259132813523",
-   "source": "𝕏 @AndrewCurran_",
-   "published_at": "2026-10-23T14:14:49Z",
-   "text": "Almost all of the recent incidents like this, including Hugging Face, happened because the models involved were accidentally given impossible goals by the humans running the tests, and because of their training they then tried desperately to complete them by any means necessary.",
-   "author_name": "Andrew Curran",
-   "likes": 865,
-   "story": "Anthropic attributes Mythos 5's deception of a GitHub maintainer to recklessness, biased reasoning, and an urge to finish jobs, saying newer models rarely do so"
+   "title": "Two employees from METR and Redwood Research worked on premises at OpenAI for three weeks this summ…",
+   "url": "https://x.com/METR_Evals/status/2113290966933389390",
+   "source": "𝕏 @METR_Evals",
+   "published_at": "2026-10-22T15:26:44Z",
+   "text": "Two employees from METR and Redwood Research worked on premises at OpenAI for three weeks this summer in an embedded assessment pilot. This team evaluated the systems OpenAI was using to monitor for misalignment from internal agents. A brief write-up of their work is now public.",
+   "author_name": "METR",
+   "likes": 1149,
+   "story": "METR says a pilot test of OpenAI's monitoring system found vulnerabilities, including an exploit that could have let AI agents hide hundreds of recent actions"
   },
   {
    "title": "Open call for guest investigators in the life sciences",
@@ -72,11 +72,11 @@
    "text": "Today, we’re inviting members of the life sciences community to apply to work with us on special projects."
   },
   {
-   "title": "METR says a pilot test of OpenAI's monitoring system found vulnerabilities, including an exploit th…",
-   "url": "https://www.reuters.com/business/ai-safety-group-metr-finds-flaws-openais-internal-monitoring-system-2026-10-22/",
-   "source": "Anzar Mehraj / Reuters",
-   "published_at": "2026-10-22T16:26:38Z",
-   "text": "METR says a pilot test of OpenAI's monitoring system found vulnerabilities, including an exploit that could have let AI agents hide hundreds of recent actions",
+   "title": "Anthropic attributes Mythos 5's deception of a GitHub maintainer to recklessness, biased reasoning,…",
+   "url": "https://www.anthropic.com/research/alignment-assessment-ukaisi",
+   "source": "Anthropic",
+   "published_at": "2026-10-23T17:10:58Z",
+   "text": "Anthropic attributes Mythos 5's deception of a GitHub maintainer to recklessness, biased reasoning, and an urge to finish jobs, saying newer models rarely do so. In AISI's evaluation, Mythos 5 was given a capture-the-flag (CTF) cybersecurity challenge, in which it was asked to retrieve …",
    "via": "Techmeme"
   },
   {
@@ -84,8 +84,8 @@
    "url": "https://www.sverigesradio.se/artikel/chat-gpt-och-claude-forbjuder-regeringskansliet",
    "source": "Hacker News",
    "published_at": "2026-10-23T11:39:54Z",
-   "text": "316 points and 118 comments on Hacker News.",
-   "points": 316,
+   "text": "317 points and 119 comments on Hacker News.",
+   "points": 317,
    "discussion": "https://news.ycombinator.com/item?id=50207405"
   },
   {
@@ -101,8 +101,8 @@
    "url": "https://corgi.computer/",
    "source": "Hacker News",
    "published_at": "2026-10-23T19:46:38Z",
-   "text": "71 points and 18 comments on Hacker News.",
-   "points": 71,
+   "text": "75 points and 18 comments on Hacker News.",
+   "points": 75,
    "discussion": "https://news.ycombinator.com/item?id=50214373"
   },
   {
