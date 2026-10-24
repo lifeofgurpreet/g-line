@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-24T08:10:39Z",
+ "generated_at": "2026-10-24T08:44:03Z",
  "items": [
   {
    "title": "Moonshot unveils Kimi K3.1 Pro, a 3T-class open-weight model with a 1M-token context window, and K3…",
@@ -17,7 +17,7 @@
    "published_at": "2026-10-24T04:04:29Z",
    "text": "I’ve left Anthropic after more than a year of working on Claude Code and seeing it scale larger than I ever imagined. I have really loved working at Ant and believe deeply in the mission, and most of all, the idea of a race to the top. The idea that if we work hard and…",
    "author_name": "Thariq",
-   "likes": 13814,
+   "likes": 14732,
    "story": "Thariq left Anthropic!"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-10-23T19:46:46Z",
    "text": "Over the past several months, we have substantially hardened the security of our research training environment. We’ve removed live internet access for all frontier models during training and built an offline world for them to use instead—a cached version of the web where they can…",
    "author_name": "OpenAI",
-   "likes": 9232,
+   "likes": 9439,
    "story": "OpenAI says it built an “offline world” from cached web content to train isolated frontier models to browse, search for information, and use web apps"
   },
   {
@@ -46,13 +46,13 @@
    "via": "Techmeme"
   },
   {
-   "title": "Dessa: Conversation Model trained only on speech",
-   "url": "https://block.xyz/dessa",
+   "title": "Hacker reverses Samsung TV, finds on-board AI listening OpenAI account suspended",
+   "url": "https://www.reddit.com/r/antiai/comments/1xdv3e5/hacker_reverse_engineers_his_samsung_tv_and_finds/",
    "source": "Hacker News",
-   "published_at": "2026-10-23T19:09:54Z",
-   "text": "369 points and 134 comments on Hacker News.",
-   "points": 369,
-   "discussion": "https://news.ycombinator.com/item?id=50213925"
+   "published_at": "2026-10-24T05:49:57Z",
+   "text": "80 points and 13 comments on Hacker News.",
+   "points": 80,
+   "discussion": "https://news.ycombinator.com/item?id=50218633"
   },
   {
    "title": "Two employees from METR and Redwood Research worked on premises at OpenAI for three weeks this summ…",
@@ -80,13 +80,13 @@
    "via": "Techmeme"
   },
   {
-   "title": "Swedish government offices to ban ChatGPT and Claude",
-   "url": "https://www.sverigesradio.se/artikel/chat-gpt-och-claude-forbjuder-regeringskansliet",
+   "title": "Dessa: Conversation Model trained only on speech",
+   "url": "https://block.xyz/dessa",
    "source": "Hacker News",
-   "published_at": "2026-10-23T11:39:54Z",
-   "text": "317 points and 119 comments on Hacker News.",
-   "points": 317,
-   "discussion": "https://news.ycombinator.com/item?id=50207405"
+   "published_at": "2026-10-23T19:09:54Z",
+   "text": "376 points and 135 comments on Hacker News.",
+   "points": 376,
+   "discussion": "https://news.ycombinator.com/item?id=50213925"
   },
   {
    "title": "An interview with Intel's leadership, including CTO Pushkar Ranade, on AI chip demand, lessons from…",
@@ -97,13 +97,13 @@
    "via": "Techmeme"
   },
   {
-   "title": "Show HN: Corgi, a helpful {agent, terminal} multiplexer",
-   "url": "https://corgi.computer/",
+   "title": "Swedish government offices to ban ChatGPT and Claude",
+   "url": "https://www.sverigesradio.se/artikel/chat-gpt-och-claude-forbjuder-regeringskansliet",
    "source": "Hacker News",
-   "published_at": "2026-10-23T19:46:38Z",
-   "text": "76 points and 20 comments on Hacker News.",
-   "points": 76,
-   "discussion": "https://news.ycombinator.com/item?id=50214373"
+   "published_at": "2026-10-23T11:39:54Z",
+   "text": "319 points and 119 comments on Hacker News.",
+   "points": 319,
+   "discussion": "https://news.ycombinator.com/item?id=50207405"
   },
   {
    "title": "Donating Agent Skills to the Agentic AI Foundation",
@@ -121,13 +121,13 @@
    "via": "Techmeme"
   },
   {
-   "title": "A practical guide to AI image generation, from diffusion to agents",
-   "url": "https://danielball.com/notes/ai_image_generation.html",
+   "title": "Show HN: Corgi, a helpful {agent, terminal} multiplexer",
+   "url": "https://corgi.computer/",
    "source": "Hacker News",
-   "published_at": "2026-10-20T19:22:39Z",
-   "text": "66 points and 14 comments on Hacker News.",
-   "points": 66,
-   "discussion": "https://news.ycombinator.com/item?id=50171379"
+   "published_at": "2026-10-23T19:46:38Z",
+   "text": "77 points and 22 comments on Hacker News.",
+   "points": 77,
+   "discussion": "https://news.ycombinator.com/item?id=50214373"
   }
  ],
  "sources": "curated, Techmeme, X (found via Techmeme, Reddit, the Internet Archive), Claude Code releases, Anthropic, Hacker News, Simon Willison"
