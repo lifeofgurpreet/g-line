@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-24T18:22:51Z",
+ "generated_at": "2026-10-24T18:55:03Z",
  "items": [
   {
    "title": "Block unveils Dessa, a “true speech-to-speech” AI model trained on “nothing but human conversation”…",
@@ -17,7 +17,7 @@
    "published_at": "2026-10-24T04:04:29Z",
    "text": "I’ve left Anthropic after more than a year of working on Claude Code and seeing it scale larger than I ever imagined. I have really loved working at Ant and believe deeply in the mission, and most of all, the idea of a race to the top. The idea that if we work hard and…",
    "author_name": "Thariq",
-   "likes": 25638,
+   "likes": 25908,
    "story": "Thariq left Anthropic!"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-10-23T19:46:46Z",
    "text": "Over the past several months, we have substantially hardened the security of our research training environment. We’ve removed live internet access for all frontier models during training and built an offline world for them to use instead—a cached version of the web where they can…",
    "author_name": "OpenAI",
-   "likes": 12058,
+   "likes": 12140,
    "story": "OpenAI says it built an “offline world” from cached web content to train isolated frontier models to browse, search for information, and use web apps"
   },
   {
@@ -50,8 +50,8 @@
    "url": "https://github.com/Zagitta/gpu-unlock",
    "source": "Hacker News",
    "published_at": "2026-10-24T09:58:27Z",
-   "text": "103 points and 41 comments on Hacker News.",
-   "points": 103,
+   "text": "105 points and 45 comments on Hacker News.",
+   "points": 105,
    "discussion": "https://news.ycombinator.com/item?id=50219700"
   },
   {
@@ -74,7 +74,7 @@
    "url": "https://www.sverigesradio.se/artikel/chat-gpt-och-claude-forbjuder-regeringskansliet",
    "source": "Hacker News",
    "published_at": "2026-10-23T11:39:54Z",
-   "text": "321 points and 119 comments on Hacker News.",
+   "text": "321 points and 120 comments on Hacker News.",
    "points": 321,
    "discussion": "https://news.ycombinator.com/item?id=50207405"
   },
@@ -91,8 +91,8 @@
    "url": "https://danielball.com/notes/ai_image_generation.html",
    "source": "Hacker News",
    "published_at": "2026-10-20T19:22:39Z",
-   "text": "212 points and 64 comments on Hacker News.",
-   "points": 212,
+   "text": "216 points and 67 comments on Hacker News.",
+   "points": 216,
    "discussion": "https://news.ycombinator.com/item?id=50171379"
   },
   {
@@ -111,19 +111,19 @@
    "via": "Techmeme"
   },
   {
-   "title": "Inside Meta's law enforcement outreach team, which uses AI and human reviewers to analyze social me…",
-   "url": "https://www.newyorker.com/news/the-lede/inside-metas-efforts-to-prevent-school-shootings",
-   "source": "Rachel Monroe / New Yorker",
-   "published_at": "2026-10-24T10:35:46Z",
-   "text": "Inside Meta's law enforcement outreach team, which uses AI and human reviewers to analyze social media posts, aiming to prevent threats like school shootings. Algorithmic social media, which has helped create the conditions for the spread of such violence, is reckoning with how it can be part of the solution.",
-   "via": "Techmeme"
-  },
-  {
    "title": "The UK plans to invest £100M to create the AI Biosecurity Lab to boost defenses against biological…",
    "url": "https://www.bbc.com/news/articles/cqdjv8xllvyyo",
    "source": "Liv McMahon / BBC",
    "published_at": "2026-10-24T01:21:05Z",
    "text": "The UK plans to invest £100M to create the AI Biosecurity Lab to boost defenses against biological threats, supported by OpenAI, Anthropic, and Google DeepMind. The UK says it will establish a national AI Biosecurity Lab (AIBL) to help strengthen its defences against emerging biological threats.",
+   "via": "Techmeme"
+  },
+  {
+   "title": "Inside Meta's law enforcement outreach team, which uses AI and human reviewers to analyze social me…",
+   "url": "https://www.newyorker.com/news/the-lede/inside-metas-efforts-to-prevent-school-shootings",
+   "source": "Rachel Monroe / New Yorker",
+   "published_at": "2026-10-24T10:35:46Z",
+   "text": "Inside Meta's law enforcement outreach team, which uses AI and human reviewers to analyze social media posts, aiming to prevent threats like school shootings. Algorithmic social media, which has helped create the conditions for the spread of such violence, is reckoning with how it can be part of the solution.",
    "via": "Techmeme"
   }
  ],
