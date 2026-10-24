@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-24T15:10:30Z",
+ "generated_at": "2026-10-24T15:42:27Z",
  "items": [
   {
    "title": "OpenAI says it built an “offline world” from cached web content to train isolated frontier models t…",
@@ -17,7 +17,7 @@
    "published_at": "2026-10-24T04:04:29Z",
    "text": "I’ve left Anthropic after more than a year of working on Claude Code and seeing it scale larger than I ever imagined. I have really loved working at Ant and believe deeply in the mission, and most of all, the idea of a race to the top. The idea that if we work hard and…",
    "author_name": "Thariq",
-   "likes": 23254,
+   "likes": 23751,
    "story": "Thariq left Anthropic!"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-10-23T18:23:45Z",
    "text": "We believe voice is the most natural way to interact with intelligence, so we created Dessa, the most authentic full-duplex speech model ever built. Talking with it feels like talking with a person…full of emotion, nuance, pauses, and a natural cadence.",
    "author_name": "jack",
-   "likes": 57002,
+   "likes": 57604,
    "story": "Block unveils Dessa, a “true speech-to-speech” AI model trained on “nothing but human conversation” that it says runs locally on a MacBook Pro M4 Max or newer",
    "links": [
     "https://block.xyz/dessa"
@@ -49,13 +49,13 @@
    "via": "Techmeme"
   },
   {
-   "title": "Hacker reverses Samsung TV, finds on-board AI listening OpenAI account suspended",
-   "url": "https://www.reddit.com/r/antiai/comments/1xdv3e5/hacker_reverse_engineers_his_samsung_tv_and_finds/",
+   "title": "Google illegally cut down 250K trees in Finland for data center",
+   "url": "https://nypost.com/2026/10/24/business/google-illegally-tore-down-250k-trees-for-finland-data-center-infuriating-locals-report/",
    "source": "Hacker News",
-   "published_at": "2026-10-24T05:49:57Z",
-   "text": "358 points and 116 comments on Hacker News.",
-   "points": 358,
-   "discussion": "https://news.ycombinator.com/item?id=50218633"
+   "published_at": "2026-10-24T14:38:34Z",
+   "text": "168 points and 80 comments on Hacker News.",
+   "points": 168,
+   "discussion": "https://news.ycombinator.com/item?id=50221676"
   },
   {
    "title": "Open call for guest investigators in the life sciences",
@@ -73,13 +73,13 @@
    "via": "Techmeme"
   },
   {
-   "title": "AI-Assisted Paper on Z-Library Cites a TorrentFreak Article That Doesn't Exist",
-   "url": "https://torrentfreak.com/ai-assisted-paper-on-z-library-cites-a-torrentfreak-article-that-doesnt-exist/",
+   "title": "Hacker reverses Samsung TV, finds on-board AI listening OpenAI account suspended",
+   "url": "https://www.reddit.com/r/antiai/comments/1xdv3e5/hacker_reverse_engineers_his_samsung_tv_and_finds/",
    "source": "Hacker News",
-   "published_at": "2026-10-24T11:18:54Z",
-   "text": "63 points and 20 comments on Hacker News.",
-   "points": 63,
-   "discussion": "https://news.ycombinator.com/item?id=50220204"
+   "published_at": "2026-10-24T05:49:57Z",
+   "text": "379 points and 128 comments on Hacker News.",
+   "points": 379,
+   "discussion": "https://news.ycombinator.com/item?id=50218633"
   },
   {
    "title": "Inside Meta's law enforcement outreach team, which uses AI and human reviewers to analyze social me…",
@@ -90,13 +90,13 @@
    "via": "Techmeme"
   },
   {
-   "title": "Swedish government offices to ban ChatGPT and Claude",
-   "url": "https://www.sverigesradio.se/artikel/chat-gpt-och-claude-forbjuder-regeringskansliet",
+   "title": "AI-Assisted Paper on Z-Library Cites a TorrentFreak Article That Doesn't Exist",
+   "url": "https://torrentfreak.com/ai-assisted-paper-on-z-library-cites-a-torrentfreak-article-that-doesnt-exist/",
    "source": "Hacker News",
-   "published_at": "2026-10-23T11:39:54Z",
-   "text": "321 points and 119 comments on Hacker News.",
-   "points": 321,
-   "discussion": "https://news.ycombinator.com/item?id=50207405"
+   "published_at": "2026-10-24T11:18:54Z",
+   "text": "71 points and 27 comments on Hacker News.",
+   "points": 71,
+   "discussion": "https://news.ycombinator.com/item?id=50220204"
   },
   {
    "title": "Donating Agent Skills to the Agentic AI Foundation",
@@ -122,11 +122,11 @@
    "via": "Techmeme"
   },
   {
-   "title": "Mave, which is developing an AI-driven tool to automate security investigations, raised a $28M Seri…",
-   "url": "https://www.calcalistech.com/ctechnews/article/h1sq8ip2mx",
-   "source": "Meir Orbach / CTech",
-   "published_at": "2026-10-23T21:15:49Z",
-   "text": "Mave, which is developing an AI-driven tool to automate security investigations, raised a $28M Series A led by Red Dot, bringing its total funding to $34M",
+   "title": "An interview with Ciena CEO Gary Smith, a veteran of the 2001 telecoms crash, on AI demand outpacin…",
+   "url": "https://www.wsj.com/cio-journal/a-veteran-of-the-telecom-bust-navigates-the-ai-boom-b063fa63?st=YJm3H4&reflink=desktopwebshare_permalink",
+   "source": "Steven Rosenbush / Wall Str…",
+   "published_at": "2026-10-24T15:41:00Z",
+   "text": "An interview with Ciena CEO Gary Smith, a veteran of the 2001 telecoms crash, on AI demand outpacing supply for Ciena's optical networking chips, and more. Ciena CEO Gary Smith is ‘suitably paranoid,’ but optimistic — The historic telecommunications crash of 2001 is burned indelibly …",
    "via": "Techmeme"
   }
  ],
