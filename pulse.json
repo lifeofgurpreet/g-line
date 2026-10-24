@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-24T10:20:28Z",
+ "generated_at": "2026-10-24T10:52:36Z",
  "items": [
   {
    "title": "Moonshot unveils Kimi K3.1 Pro, a 3T-class open-weight model with a 1M-token context window, and K3…",
@@ -17,7 +17,7 @@
    "published_at": "2026-10-24T04:04:29Z",
    "text": "I’ve left Anthropic after more than a year of working on Claude Code and seeing it scale larger than I ever imagined. I have really loved working at Ant and believe deeply in the mission, and most of all, the idea of a race to the top. The idea that if we work hard and…",
    "author_name": "Thariq",
-   "likes": 17226,
+   "likes": 17945,
    "story": "Thariq left Anthropic!"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-10-23T19:46:46Z",
    "text": "Over the past several months, we have substantially hardened the security of our research training environment. We’ve removed live internet access for all frontier models during training and built an offline world for them to use instead—a cached version of the web where they can…",
    "author_name": "OpenAI",
-   "likes": 9928,
+   "likes": 10094,
    "story": "OpenAI says it built an “offline world” from cached web content to train isolated frontier models to browse, search for information, and use web apps"
   },
   {
@@ -50,8 +50,8 @@
    "url": "https://www.reddit.com/r/antiai/comments/1xdv3e5/hacker_reverse_engineers_his_samsung_tv_and_finds/",
    "source": "Hacker News",
    "published_at": "2026-10-24T05:49:57Z",
-   "text": "148 points and 29 comments on Hacker News.",
-   "points": 148,
+   "text": "163 points and 37 comments on Hacker News.",
+   "points": 163,
    "discussion": "https://news.ycombinator.com/item?id=50218633"
   },
   {
@@ -74,16 +74,16 @@
    "url": "https://block.xyz/dessa",
    "source": "Hacker News",
    "published_at": "2026-10-23T19:09:54Z",
-   "text": "390 points and 141 comments on Hacker News.",
-   "points": 390,
+   "text": "395 points and 143 comments on Hacker News.",
+   "points": 395,
    "discussion": "https://news.ycombinator.com/item?id=50213925"
   },
   {
-   "title": "An interview with Intel's leadership, including CTO Pushkar Ranade, on AI chip demand, lessons from…",
-   "url": "https://www.dwarkesh.com/p/intel-tour",
-   "source": "Dwarkesh Patel / Dwarkesh P…",
-   "published_at": "2026-10-23T11:46:09Z",
-   "text": "An interview with Intel's leadership, including CTO Pushkar Ranade, on AI chip demand, lessons from 10nm, whether Intel can catch up to TSMC, Terafab, and more",
+   "title": "Inside Meta's law enforcement outreach team, which uses AI and human reviewers to analyze social me…",
+   "url": "https://www.newyorker.com/news/the-lede/inside-metas-efforts-to-prevent-school-shootings",
+   "source": "Rachel Monroe / New Yorker",
+   "published_at": "2026-10-24T10:35:46Z",
+   "text": "Inside Meta's law enforcement outreach team, which uses AI and human reviewers to analyze social media posts, aiming to prevent threats like school shootings. Algorithmic social media, which has helped create the conditions for the spread of such violence, is reckoning with how it can be part of the solution.",
    "via": "Techmeme"
   },
   {
@@ -103,11 +103,11 @@
    "text": "Anthropic is an AI safety and research company that's working to build reliable, interpretable, and steerable AI systems."
   },
   {
-   "title": "Mave, which is developing an AI-driven tool to automate security investigations, raised a $28M Seri…",
-   "url": "https://www.calcalistech.com/ctechnews/article/h1sq8ip2mx",
-   "source": "Meir Orbach / CTech",
-   "published_at": "2026-10-23T21:15:49Z",
-   "text": "Mave, which is developing an AI-driven tool to automate security investigations, raised a $28M Series A led by Red Dot, bringing its total funding to $34M",
+   "title": "An interview with Intel's leadership, including CTO Pushkar Ranade, on AI chip demand, lessons from…",
+   "url": "https://www.dwarkesh.com/p/intel-tour",
+   "source": "Dwarkesh Patel / Dwarkesh P…",
+   "published_at": "2026-10-23T11:46:09Z",
+   "text": "An interview with Intel's leadership, including CTO Pushkar Ranade, on AI chip demand, lessons from 10nm, whether Intel can catch up to TSMC, Terafab, and more",
    "via": "Techmeme"
   },
   {
@@ -115,16 +115,16 @@
    "url": "https://corgi.computer/",
    "source": "Hacker News",
    "published_at": "2026-10-23T19:46:38Z",
-   "text": "86 points and 23 comments on Hacker News.",
-   "points": 86,
+   "text": "87 points and 23 comments on Hacker News.",
+   "points": 87,
    "discussion": "https://news.ycombinator.com/item?id=50214373"
   },
   {
-   "title": "The UK plans to invest £100M to create the AI Biosecurity Lab to boost defenses against biological…",
-   "url": "https://www.bbc.com/news/articles/cqdjv8xllvyyo",
-   "source": "Liv McMahon / BBC",
-   "published_at": "2026-10-24T01:21:05Z",
-   "text": "The UK plans to invest £100M to create the AI Biosecurity Lab to boost defenses against biological threats, supported by OpenAI, Anthropic, and Google DeepMind. The UK says it will establish a national AI Biosecurity Lab (AIBL) to help strengthen its defences against emerging biological threats.",
+   "title": "Mave, which is developing an AI-driven tool to automate security investigations, raised a $28M Seri…",
+   "url": "https://www.calcalistech.com/ctechnews/article/h1sq8ip2mx",
+   "source": "Meir Orbach / CTech",
+   "published_at": "2026-10-23T21:15:49Z",
+   "text": "Mave, which is developing an AI-driven tool to automate security investigations, raised a $28M Series A led by Red Dot, bringing its total funding to $34M",
    "via": "Techmeme"
   }
  ],
