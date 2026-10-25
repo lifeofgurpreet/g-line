@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-24T23:46:08Z",
+ "generated_at": "2026-10-25T00:18:40Z",
  "items": [
   {
    "title": "Block unveils Dessa, a “true speech-to-speech” AI model trained on “nothing but human conversation”…",
@@ -17,7 +17,7 @@
    "published_at": "2026-10-24T04:04:29Z",
    "text": "I’ve left Anthropic after more than a year of working on Claude Code and seeing it scale larger than I ever imagined. I have really loved working at Ant and believe deeply in the mission, and most of all, the idea of a race to the top. The idea that if we work hard and…",
    "author_name": "Thariq",
-   "likes": 27537,
+   "likes": 27649,
    "story": "Thariq left Anthropic!"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-10-23T19:46:46Z",
    "text": "Over the past several months, we have substantially hardened the security of our research training environment. We’ve removed live internet access for all frontier models during training and built an offline world for them to use instead—a cached version of the web where they can…",
    "author_name": "OpenAI",
-   "likes": 12672,
+   "likes": 12704,
    "story": "OpenAI says it built an “offline world” from cached web content to train isolated frontier models to browse, search for information, and use web apps"
   },
   {
@@ -50,8 +50,8 @@
    "url": "https://actu.epfl.ch/news/neural-chip-decodes-interactions-between-brain-r-2/",
    "source": "Hacker News",
    "published_at": "2026-10-24T15:57:17Z",
-   "text": "84 points and 27 comments on Hacker News.",
-   "points": 84,
+   "text": "86 points and 29 comments on Hacker News.",
+   "points": 86,
    "discussion": "https://news.ycombinator.com/item?id=50222525"
   },
   {
@@ -84,8 +84,8 @@
    "url": "https://github.com/Zagitta/gpu-unlock",
    "source": "Hacker News",
    "published_at": "2026-10-24T09:58:27Z",
-   "text": "167 points and 61 comments on Hacker News.",
-   "points": 167,
+   "text": "176 points and 61 comments on Hacker News.",
+   "points": 176,
    "discussion": "https://news.ycombinator.com/item?id=50219700"
   },
   {
@@ -101,7 +101,7 @@
    "url": "https://www.sverigesradio.se/artikel/chat-gpt-och-claude-forbjuder-regeringskansliet",
    "source": "Hacker News",
    "published_at": "2026-10-23T11:39:54Z",
-   "text": "322 points and 120 comments on Hacker News.",
+   "text": "322 points and 121 comments on Hacker News.",
    "points": 322,
    "discussion": "https://news.ycombinator.com/item?id=50207405"
   },
