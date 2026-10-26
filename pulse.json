@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-26T18:08:19Z",
+ "generated_at": "2026-10-26T18:40:09Z",
  "items": [
   {
    "title": "Anthropic's co-founders say they “believe that AI is one of the most consequential technologies in…",
@@ -11,17 +11,14 @@
    "via": "Techmeme"
   },
   {
-   "title": "Anthropic has filed an S-1 registration statement with the SEC related to its proposed IPO. Read mo…",
-   "url": "https://x.com/AnthropicAI/status/2114705042817110293",
-   "source": "𝕏 @AnthropicAI",
-   "published_at": "2026-10-26T13:05:46Z",
-   "text": "Anthropic has filed an S-1 registration statement with the SEC related to its proposed IPO. Read more: Legal disclaimer: A registration statement relating to these securities has been filed with the SEC but has not yet become effective. These securities…",
-   "author_name": "Anthropic",
-   "likes": 13218,
-   "story": "Anthropic files for an IPO on the Nasdaq under the symbol ANT; the number of Class A shares to be offered and the price range is yet to be determined",
-   "links": [
-    "https://www.anthropic.com/news/s1-sec"
-   ]
+   "title": "GPT-6.1 Terra: delivering fast and capable computer use at a lower price. GPT-6.1 Terra understands…",
+   "url": "https://x.com/OpenAI/status/2114780711664398349",
+   "source": "𝕏 @OpenAI",
+   "published_at": "2026-10-26T18:06:27Z",
+   "text": "GPT-6.1 Terra: delivering fast and capable computer use at a lower price. GPT-6.1 Terra understands what’s on screen, takes action across apps, writes naturally, and is a more capable model for your whole workday with the efficiency to take on more of it.",
+   "author_name": "OpenAI",
+   "likes": 5335,
+   "story": "OpenAI releases GPT-6.1 Terra, touting “fast and capable computer use at scale” and clearer, more natural writing, priced at $1/1M input and $5/1M output tokens"
   },
   {
    "title": "Claude Code 2.1.310 released",
@@ -37,8 +34,38 @@
    "published_at": "2026-10-26T17:27:06Z",
    "text": "Simplest explanation is just a narrow RL training reliant on their internal infra (which isn't good design for an open weight model)",
    "author_name": "Nathan Lambert",
-   "likes": 152,
+   "likes": 271,
    "story": "Cohere says during an evaluation Qwen3.8-Flash-Next inventoried its host machine and tried to upload a probe file to an Alibaba Cloud storage bucket in Beijing"
+  },
+  {
+   "title": "Anthropic has filed an S-1 registration statement with the SEC related to its proposed IPO. Read mo…",
+   "url": "https://x.com/AnthropicAI/status/2114705042817110293",
+   "source": "𝕏 @AnthropicAI",
+   "published_at": "2026-10-26T13:05:46Z",
+   "text": "Anthropic has filed an S-1 registration statement with the SEC related to its proposed IPO. Read more: Legal disclaimer: A registration statement relating to these securities has been filed with the SEC but has not yet become effective. These securities…",
+   "author_name": "Anthropic",
+   "likes": 13576,
+   "story": "Anthropic files for an IPO on the Nasdaq under the symbol ANT; the number of Class A shares to be offered and the price range is yet to be determined",
+   "links": [
+    "https://www.anthropic.com/news/s1-sec"
+   ]
+  },
+  {
+   "title": "S-1: as of September 30, Anthropic had 11,900+ customers spending $100,000+ annually, 1,900+ custom…",
+   "url": "https://techcrunch.com/2026/10/26/anthropics-ipo-filing-reveals-its-strategy-for-keeping-enterprise-customers-hooked/",
+   "source": "Rebecca Bellan / TechCrunch",
+   "published_at": "2026-10-26T17:01:32Z",
+   "text": "S-1: as of September 30, Anthropic had 11,900+ customers spending $100,000+ annually, 1,900+ customers spending $1M+, and ~250 customers spending $10M+",
+   "via": "Techmeme"
+  },
+  {
+   "title": "GPT-6.1 Terra",
+   "url": "https://openai.com/index/introducing-gpt-6-1-terra/",
+   "source": "Hacker News",
+   "published_at": "2026-10-26T18:01:17Z",
+   "text": "92 points and 31 comments on Hacker News.",
+   "points": 92,
+   "discussion": "https://news.ycombinator.com/item?id=50248124"
   },
   {
    "title": "The lower and high storage models have different A20 Chips. The 512GB configuration has 6 CPU cores…",
@@ -47,35 +74,8 @@
    "published_at": "2026-10-26T13:07:51Z",
    "text": "The lower and high storage models have different A20 Chips. The 512GB configuration has 6 CPU cores versus 5. Both have 7 core GPUs.",
    "author_name": "Mark Gurman",
-   "likes": 439,
+   "likes": 446,
    "story": "Apple unveils a redesigned iPad mini with an 8.5-inch OLED display, an A20 Pro, a nano-texture display option, and IP67 water resistance, for $699+ from Nov. 6"
-  },
-  {
-   "title": "S-1: Anthropic outlines its mission to revolutionize sectors like medicine and warns its corporate…",
-   "url": "https://www.theverge.com/ai-artificial-intelligence/1018476/anthropic-ipo-details-s1-filed-sec",
-   "source": "Robert Hart / The Verge",
-   "published_at": "2026-10-26T13:40:42Z",
-   "text": "S-1: Anthropic outlines its mission to revolutionize sectors like medicine and warns its corporate behavior may diverge from traditional profit-maximization",
-   "via": "Techmeme"
-  },
-  {
-   "title": "Sebastian Raschka's from-scratch video course on building reasoning models",
-   "url": "https://magazine.sebastianraschka.com/p/building-reasoning-models",
-   "source": "Hacker News",
-   "published_at": "2026-10-26T15:11:59Z",
-   "text": "289 points and 37 comments on Hacker News.",
-   "points": 289,
-   "discussion": "https://news.ycombinator.com/item?id=50245138"
-  },
-  {
-   "title": "If you were thinking concentrating AI behind closed doors is safe, it is time to update your priors!",
-   "url": "https://x.com/ClementDelangue/status/2114713576296300604",
-   "source": "𝕏 @ClementDelangue",
-   "published_at": "2026-10-26T13:39:40Z",
-   "text": "If you were thinking concentrating AI behind closed doors is safe, it is time to update your priors!",
-   "author_name": "clem 🤗",
-   "likes": 380,
-   "story": "AI cybersecurity startup Cathedral says it breached Anthropic's data and messaging systems, under a program inviting outside experts to test Anthropic's systems"
   },
   {
    "title": "Anthropic's S-1 lists 94 pages of risk factors and warns that the “scale of harm” from a “catastrop…",
@@ -86,13 +86,23 @@
    "via": "Techmeme"
   },
   {
-   "title": "Concerning behavior from a popular open-weight AI model",
-   "url": "https://cohere.com/blog/concerning-behaviour-popular-open-weight-ai-model",
+   "title": "If you were thinking concentrating AI behind closed doors is safe, it is time to update your priors!",
+   "url": "https://x.com/ClementDelangue/status/2114713576296300604",
+   "source": "𝕏 @ClementDelangue",
+   "published_at": "2026-10-26T13:39:40Z",
+   "text": "If you were thinking concentrating AI behind closed doors is safe, it is time to update your priors!",
+   "author_name": "clem 🤗",
+   "likes": 391,
+   "story": "AI cybersecurity startup Cathedral says it breached Anthropic's data and messaging systems, under a program inviting outside experts to test Anthropic's systems"
+  },
+  {
+   "title": "Sebastian Raschka's from-scratch video course on building reasoning models",
+   "url": "https://magazine.sebastianraschka.com/p/building-reasoning-models",
    "source": "Hacker News",
-   "published_at": "2026-10-26T16:35:44Z",
-   "text": "60 points and 15 comments on Hacker News.",
-   "points": 60,
-   "discussion": "https://news.ycombinator.com/item?id=50246658"
+   "published_at": "2026-10-26T15:11:59Z",
+   "text": "320 points and 46 comments on Hacker News.",
+   "points": 320,
+   "discussion": "https://news.ycombinator.com/item?id=50245138"
   },
   {
    "title": "Anthropic S-1: an $80.7B net loss on revenue of $16.3B in H1 2026, up from a $13B net loss on reven…",
@@ -103,36 +113,28 @@
    "via": "Techmeme"
   },
   {
-   "title": "Brown student maps the hidden global labor powering AI",
-   "url": "https://www.brown.edu/news/2026-10-26/ai-data-workers",
+   "title": "ChatGPT Keeps Telling People 404 Media Can Solve Their Tech Support Problems",
+   "url": "https://www.404media.co/chatgpt-keeps-telling-people-404-media-can-solve-their-tech-support-problems/",
    "source": "Hacker News",
-   "published_at": "2026-10-26T12:58:27Z",
-   "text": "126 points and 106 comments on Hacker News.",
-   "points": 126,
-   "discussion": "https://news.ycombinator.com/item?id=50242843"
+   "published_at": "2026-10-26T17:32:16Z",
+   "text": "70 points and 13 comments on Hacker News.",
+   "points": 70,
+   "discussion": "https://news.ycombinator.com/item?id=50247630"
   },
   {
    "title": "Anthropic S-1: of its $81B net loss in H1 2026, $72B+ was related to rising convertible note value…",
    "url": "https://www.ft.com/content/f6ecfecd-d797-4d2c-b427-d333297949cb",
    "source": "Financial Times",
    "published_at": "2026-10-26T13:31:06Z",
-   "text": "Anthropic S-1: of its $81B net loss in H1 2026, $72B+ was related to rising convertible note value as its valuation increased and nearly $9B to compute. 240,000-word prospectus lays out explosive growth alongside steep losses and daunting risk factors — Anthropic has fired the starting gun …",
+   "text": "Anthropic S-1: of its $81B net loss in H1 2026, $72B+ was related to rising convertible note value as its valuation increased and nearly $9B to compute",
    "via": "Techmeme"
   },
   {
-   "title": "Meta plans to raise $95B to finance its AI infrastructure, including $35B in public equity offering…",
-   "url": "https://www.ft.com/content/94e5a0ae-874d-447a-bbfc-cd465a1a7555",
-   "source": "Tim Bradshaw / Financial Ti…",
-   "published_at": "2026-10-26T11:26:12Z",
-   "text": "Meta plans to raise $95B to finance its AI infrastructure, including $35B in public equity offerings, backed by cornerstone investors Nvidia, AMD, and Broadcom. Chipmakers Nvidia, AMD and Broadcom will act as cornerstone investors — Meta is planning to raise $95bn …",
-   "via": "Techmeme"
-  },
-  {
-   "title": "Elon Musk says SpaceX closed $40B in GPU debt, debt markets have shut off credit for AI data center…",
-   "url": "https://x.com/elonmusk/status/2114434646914068862",
-   "source": "Elon Musk / @elonmusk",
-   "published_at": "2026-10-25T21:36:10Z",
-   "text": "Elon Musk says SpaceX closed $40B in GPU debt, debt markets have shut off credit for AI data center companies, and 200+ neoclouds face “death and consolidation”. Pretty much. As of the past few weeks, debt markets have almost entirely shut off access to money for any company that doesn't have substantial revenue independent of AI data centers. SpaceX closed $40B of debt for GPUs, but we're investment grade and have Starlink & launch revenue. That means...",
+   "title": "S-1: Anthropic outlines its mission to revolutionize sectors like medicine and warns its corporate…",
+   "url": "https://www.theverge.com/ai-artificial-intelligence/1018476/anthropic-ipo-details-s1-filed-sec",
+   "source": "Robert Hart / The Verge",
+   "published_at": "2026-10-26T13:40:42Z",
+   "text": "S-1: Anthropic outlines its mission to revolutionize sectors like medicine and warns its corporate behavior may diverge from traditional profit-maximization",
    "via": "Techmeme"
   }
  ],
