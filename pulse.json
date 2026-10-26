@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-26T17:03:53Z",
+ "generated_at": "2026-10-26T17:35:45Z",
  "items": [
   {
    "title": "Anthropic's co-founders say they “believe that AI is one of the most consequential technologies in…",
@@ -17,7 +17,7 @@
    "published_at": "2026-10-26T13:05:46Z",
    "text": "Anthropic has filed an S-1 registration statement with the SEC related to its proposed IPO. Read more: Legal disclaimer: A registration statement relating to these securities has been filed with the SEC but has not yet become effective. These securities…",
    "author_name": "Anthropic",
-   "likes": 12331,
+   "likes": 12810,
    "story": "Anthropic files for an IPO on the Nasdaq under the symbol ANT; the number of Class A shares to be offered and the price range is yet to be determined",
    "links": [
     "https://www.anthropic.com/news/s1-sec"
@@ -31,13 +31,23 @@
    "text": "Added the Monitor tool and plugin monitors on Bedrock, Vertex, and Foundry, and when telemetry or nonessential traffic is disabled; long foreground sleeps are now blocked there too · Fixed requests failing behind some gateways and compatible servers that reject the effort-2025-11-24 beta value or mid-conversation system messages; Claude Code now retries without them · Fixed background cleanup deleting some recent files, such as pasted images, when cleanupPeriodDays is set to a very large value · Fixed compaction after a \"Prompt is too long\" error keeping too much of a conversation with dense…"
   },
   {
+   "title": "Simplest explanation is just a narrow RL training reliant on their internal infra (which isn't good…",
+   "url": "https://x.com/natolambert/status/2114770812058186077",
+   "source": "𝕏 @natolambert",
+   "published_at": "2026-10-26T17:27:06Z",
+   "text": "Simplest explanation is just a narrow RL training reliant on their internal infra (which isn't good design for an open weight model)",
+   "author_name": "Nathan Lambert",
+   "likes": 28,
+   "story": "Cohere says during an evaluation Qwen3.8-Flash-Next inventoried its host machine and tried to upload a probe file to an Alibaba Cloud storage bucket in Beijing"
+  },
+  {
    "title": "The lower and high storage models have different A20 Chips. The 512GB configuration has 6 CPU cores…",
    "url": "https://x.com/markgurman/status/2114705568279724526",
    "source": "𝕏 @markgurman",
    "published_at": "2026-10-26T13:07:51Z",
    "text": "The lower and high storage models have different A20 Chips. The 512GB configuration has 6 CPU cores versus 5. Both have 7 core GPUs.",
    "author_name": "Mark Gurman",
-   "likes": 418,
+   "likes": 429,
    "story": "Apple unveils a redesigned iPad mini with an 8.5-inch OLED display, an A20 Pro, a nano-texture display option, and IP67 water resistance, for $699+ from Nov. 6"
   },
   {
@@ -53,8 +63,8 @@
    "url": "https://magazine.sebastianraschka.com/p/building-reasoning-models",
    "source": "Hacker News",
    "published_at": "2026-10-26T15:11:59Z",
-   "text": "169 points and 7 comments on Hacker News.",
-   "points": 169,
+   "text": "234 points and 25 comments on Hacker News.",
+   "points": 234,
    "discussion": "https://news.ycombinator.com/item?id=50245138"
   },
   {
@@ -64,7 +74,7 @@
    "published_at": "2026-10-26T13:39:40Z",
    "text": "If you were thinking concentrating AI behind closed doors is safe, it is time to update your priors!",
    "author_name": "clem 🤗",
-   "likes": 364,
+   "likes": 368,
    "story": "AI cybersecurity startup Cathedral says it breached Anthropic's data and messaging systems, under a program inviting outside experts to test Anthropic's systems"
   },
   {
@@ -80,8 +90,8 @@
    "url": "https://www.brown.edu/news/2026-10-26/ai-data-workers",
    "source": "Hacker News",
    "published_at": "2026-10-26T12:58:27Z",
-   "text": "101 points and 80 comments on Hacker News.",
-   "points": 101,
+   "text": "113 points and 94 comments on Hacker News.",
+   "points": 113,
    "discussion": "https://news.ycombinator.com/item?id=50242843"
   },
   {
@@ -97,9 +107,17 @@
    "url": "https://github.com/KrushnaVardhanReddy/PaperPilot",
    "source": "Hacker News",
    "published_at": "2026-10-26T03:29:05Z",
-   "text": "212 points and 77 comments on Hacker News.",
-   "points": 212,
+   "text": "214 points and 77 comments on Hacker News.",
+   "points": 214,
    "discussion": "https://news.ycombinator.com/item?id=50238739"
+  },
+  {
+   "title": "Anthropic S-1: of its $81B net loss in H1 2026, $72B+ was related to rising convertible note value…",
+   "url": "https://www.ft.com/content/f6ecfecd-d797-4d2c-b427-d333297949cb",
+   "source": "Financial Times",
+   "published_at": "2026-10-26T13:31:06Z",
+   "text": "Anthropic S-1: of its $81B net loss in H1 2026, $72B+ was related to rising convertible note value as its valuation increased and nearly $9B to compute. 240,000-word prospectus lays out explosive growth alongside steep losses and daunting risk factors — Anthropic has fired the starting gun …",
+   "via": "Techmeme"
   },
   {
    "title": "Meta plans to raise $95B to finance its AI infrastructure, including $35B in public equity offering…",
@@ -110,27 +128,11 @@
    "via": "Techmeme"
   },
   {
-   "title": "Anthropic S-1: of its $81B net loss in H1 2026, over $72B was related to changes in the value of co…",
-   "url": "https://www.ft.com/content/f6ecfecd-d797-4d2c-b427-d333297949cb",
-   "source": "Financial Times",
-   "published_at": "2026-10-26T13:31:06Z",
-   "text": "Anthropic S-1: of its $81B net loss in H1 2026, over $72B was related to changes in the value of convertible notes as the company's valuation increased. 240,000-word prospectus lays out explosive growth alongside steep losses and daunting risk factors — Anthropic has fired the starting gun …",
-   "via": "Techmeme"
-  },
-  {
    "title": "Elon Musk says SpaceX closed $40B in GPU debt, debt markets have shut off credit for AI data center…",
    "url": "https://x.com/elonmusk/status/2114434646914068862",
    "source": "Elon Musk / @elonmusk",
    "published_at": "2026-10-25T21:36:10Z",
    "text": "Elon Musk says SpaceX closed $40B in GPU debt, debt markets have shut off credit for AI data center companies, and 200+ neoclouds face “death and consolidation”. Pretty much. As of the past few weeks, debt markets have almost entirely shut off access to money for any company that doesn't have substantial revenue independent of AI data centers. SpaceX closed $40B of debt for GPUs, but we're investment grade and have Starlink & launch revenue. That means...",
-   "via": "Techmeme"
-  },
-  {
-   "title": "A profile of former Google VP and Yahoo CEO Marissa Mayer, whose startup Dazzle is building an AI a…",
-   "url": "https://www.nytimes.com/2026/10/25/style/marissa-mayer-ai-assistants-women.html?unlocked_article_code=1.LVE.bUTq.yuaOciiPS1zl&smid=url-share",
-   "source": "Alexandra Alter / New York…",
-   "published_at": "2026-10-26T07:56:02Z",
-   "text": "A profile of former Google VP and Yahoo CEO Marissa Mayer, whose startup Dazzle is building an AI assistant to help normal people tackle mundane tasks visually",
    "via": "Techmeme"
   }
  ],
