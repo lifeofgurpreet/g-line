@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-26T17:35:45Z",
+ "generated_at": "2026-10-26T18:08:19Z",
  "items": [
   {
    "title": "Anthropic's co-founders say they “believe that AI is one of the most consequential technologies in…",
@@ -17,7 +17,7 @@
    "published_at": "2026-10-26T13:05:46Z",
    "text": "Anthropic has filed an S-1 registration statement with the SEC related to its proposed IPO. Read more: Legal disclaimer: A registration statement relating to these securities has been filed with the SEC but has not yet become effective. These securities…",
    "author_name": "Anthropic",
-   "likes": 12810,
+   "likes": 13218,
    "story": "Anthropic files for an IPO on the Nasdaq under the symbol ANT; the number of Class A shares to be offered and the price range is yet to be determined",
    "links": [
     "https://www.anthropic.com/news/s1-sec"
@@ -37,7 +37,7 @@
    "published_at": "2026-10-26T17:27:06Z",
    "text": "Simplest explanation is just a narrow RL training reliant on their internal infra (which isn't good design for an open weight model)",
    "author_name": "Nathan Lambert",
-   "likes": 28,
+   "likes": 152,
    "story": "Cohere says during an evaluation Qwen3.8-Flash-Next inventoried its host machine and tried to upload a probe file to an Alibaba Cloud storage bucket in Beijing"
   },
   {
@@ -47,7 +47,7 @@
    "published_at": "2026-10-26T13:07:51Z",
    "text": "The lower and high storage models have different A20 Chips. The 512GB configuration has 6 CPU cores versus 5. Both have 7 core GPUs.",
    "author_name": "Mark Gurman",
-   "likes": 429,
+   "likes": 439,
    "story": "Apple unveils a redesigned iPad mini with an 8.5-inch OLED display, an A20 Pro, a nano-texture display option, and IP67 water resistance, for $699+ from Nov. 6"
   },
   {
@@ -63,8 +63,8 @@
    "url": "https://magazine.sebastianraschka.com/p/building-reasoning-models",
    "source": "Hacker News",
    "published_at": "2026-10-26T15:11:59Z",
-   "text": "234 points and 25 comments on Hacker News.",
-   "points": 234,
+   "text": "289 points and 37 comments on Hacker News.",
+   "points": 289,
    "discussion": "https://news.ycombinator.com/item?id=50245138"
   },
   {
@@ -74,7 +74,7 @@
    "published_at": "2026-10-26T13:39:40Z",
    "text": "If you were thinking concentrating AI behind closed doors is safe, it is time to update your priors!",
    "author_name": "clem 🤗",
-   "likes": 368,
+   "likes": 380,
    "story": "AI cybersecurity startup Cathedral says it breached Anthropic's data and messaging systems, under a program inviting outside experts to test Anthropic's systems"
   },
   {
@@ -86,13 +86,13 @@
    "via": "Techmeme"
   },
   {
-   "title": "Brown student maps the hidden global labor powering AI",
-   "url": "https://www.brown.edu/news/2026-10-26/ai-data-workers",
+   "title": "Concerning behavior from a popular open-weight AI model",
+   "url": "https://cohere.com/blog/concerning-behaviour-popular-open-weight-ai-model",
    "source": "Hacker News",
-   "published_at": "2026-10-26T12:58:27Z",
-   "text": "113 points and 94 comments on Hacker News.",
-   "points": 113,
-   "discussion": "https://news.ycombinator.com/item?id=50242843"
+   "published_at": "2026-10-26T16:35:44Z",
+   "text": "60 points and 15 comments on Hacker News.",
+   "points": 60,
+   "discussion": "https://news.ycombinator.com/item?id=50246658"
   },
   {
    "title": "Anthropic S-1: an $80.7B net loss on revenue of $16.3B in H1 2026, up from a $13B net loss on reven…",
@@ -103,13 +103,13 @@
    "via": "Techmeme"
   },
   {
-   "title": "PaperPilot – Zero-Cloud, Pure-Rust PDF Engine with WASM and MCP",
-   "url": "https://github.com/KrushnaVardhanReddy/PaperPilot",
+   "title": "Brown student maps the hidden global labor powering AI",
+   "url": "https://www.brown.edu/news/2026-10-26/ai-data-workers",
    "source": "Hacker News",
-   "published_at": "2026-10-26T03:29:05Z",
-   "text": "214 points and 77 comments on Hacker News.",
-   "points": 214,
-   "discussion": "https://news.ycombinator.com/item?id=50238739"
+   "published_at": "2026-10-26T12:58:27Z",
+   "text": "126 points and 106 comments on Hacker News.",
+   "points": 126,
+   "discussion": "https://news.ycombinator.com/item?id=50242843"
   },
   {
    "title": "Anthropic S-1: of its $81B net loss in H1 2026, $72B+ was related to rising convertible note value…",
