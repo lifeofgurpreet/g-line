@@ -1,13 +1,13 @@
 {
  "schema": 1,
- "generated_at": "2026-10-26T12:48:05Z",
+ "generated_at": "2026-10-26T13:19:26Z",
  "items": [
   {
-   "title": "Meta plans to raise $95B to finance its AI infrastructure, including $35B in public equity offering…",
-   "url": "https://www.ft.com/content/94e5a0ae-874d-447a-bbfc-cd465a1a7555",
-   "source": "Tim Bradshaw / Financial Ti…",
-   "published_at": "2026-10-26T11:26:12Z",
-   "text": "Meta plans to raise $95B to finance its AI infrastructure, including $35B in public equity offerings, backed by cornerstone investors Nvidia, AMD, and Broadcom. Chipmakers Nvidia, AMD and Broadcom will act as cornerstone investors — Meta is planning to raise $95bn …",
+   "title": "Anthropic files for an IPO on the Nasdaq under the symbol ANT; the number of Class A shares to be o…",
+   "url": "https://www.anthropic.com/news/s1-sec",
+   "source": "Anthropic",
+   "published_at": "2026-10-26T13:12:17Z",
+   "text": "Anthropic files for an IPO on the Nasdaq under the symbol ANT; the number of Class A shares to be offered and the price range is yet to be determined. Today, Anthropic, PBC filed a registration statement on Form S-1 with the U.S. Securities and Exchange Commission relating …",
    "via": "Techmeme"
   },
   {
@@ -17,7 +17,7 @@
    "published_at": "2026-10-26T00:19:20Z",
    "text": "The naysayers are getting embarrassing. Every day, people are using AI to make incredible breakthroughs and answer some of the toughest questions around, like \"what do I like about my child?\"",
    "author_name": "Osita Nwanevu",
-   "likes": 10504,
+   "likes": 10959,
    "story": "A profile of former Google VP and Yahoo CEO Marissa Mayer, whose startup Dazzle is building an AI assistant to help non-tech enthusiasts with mundane tasks"
   },
   {
@@ -28,31 +28,41 @@
    "text": "Added the Monitor tool and plugin monitors on Bedrock, Vertex, and Foundry, and when telemetry or nonessential traffic is disabled; long foreground sleeps are now blocked there too · Fixed requests failing behind some gateways and compatible servers that reject the effort-2025-11-24 beta value or mid-conversation system messages; Claude Code now retries without them · Fixed background cleanup deleting some recent files, such as pasted images, when cleanupPeriodDays is set to a very large value · Fixed compaction after a \"Prompt is too long\" error keeping too much of a conversation with dense…"
   },
   {
+   "title": "The lower and high storage models have different A20 Chips. The 512GB configuration has 6 CPU cores…",
+   "url": "https://x.com/markgurman/status/2114705568279724526",
+   "source": "𝕏 @markgurman",
+   "published_at": "2026-10-26T13:07:51Z",
+   "text": "The lower and high storage models have different A20 Chips. The 512GB configuration has 6 CPU cores versus 5. Both have 7 core GPUs.",
+   "author_name": "Mark Gurman",
+   "likes": 95,
+   "story": "Apple unveils a redesigned iPad mini with an 8.5-inch OLED display, A20 Pro, 24% thinner bezels, and an optional nano-texture finish, for $699+ on November 6"
+  },
+  {
    "title": "Elon Musk just told the entire world that the AI bubble has popped... buckle up.",
    "url": "https://x.com/FinanceLancelot/status/2114447715564183998",
    "source": "𝕏 @FinanceLancelot",
    "published_at": "2026-10-25T20:03:14Z",
    "text": "Elon Musk just told the entire world that the AI bubble has popped... buckle up.",
    "author_name": "Financelot",
-   "likes": 9889,
+   "likes": 9897,
    "story": "Elon Musk says SpaceX closed $40B in GPU debt, debt markets have shut off credit for AI data center companies, and 200+ neoclouds face “death and consolidation”"
   },
   {
-   "title": "The public internet model is effectively dead due to saturation, algorithmic aggregators, and AI se…",
-   "url": "https://stratechery.com/2026/the-end-of-the-internet/",
-   "source": "Ben Thompson / Stratechery",
-   "published_at": "2026-10-26T11:20:40Z",
-   "text": "The public internet model is effectively dead due to saturation, algorithmic aggregators, and AI security vulnerabilities, and that may open new possibilities. It was the summer of 2003, just weeks before I was set to move to Taiwan, that I decided to create a blog to document my journey.",
+   "title": "Meta plans to raise $95B to finance its AI infrastructure, including $35B in public equity offering…",
+   "url": "https://www.ft.com/content/94e5a0ae-874d-447a-bbfc-cd465a1a7555",
+   "source": "Tim Bradshaw / Financial Ti…",
+   "published_at": "2026-10-26T11:26:12Z",
+   "text": "Meta plans to raise $95B to finance its AI infrastructure, including $35B in public equity offerings, backed by cornerstone investors Nvidia, AMD, and Broadcom. Chipmakers Nvidia, AMD and Broadcom will act as cornerstone investors — Meta is planning to raise $95bn …",
    "via": "Techmeme"
   },
   {
-   "title": "IBM CEO says open weight models are now good and cheap on-prem",
-   "url": "https://www.theregister.com/systems/2026/10/22/ibm-ceo-says-open-weight-models-are-now-irresistibly-good-and-cheap-on-prem/5304640",
+   "title": "Anthropic S-1",
+   "url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026067168/anthropicpbc-sx1.htm",
    "source": "Hacker News",
-   "published_at": "2026-10-26T01:47:46Z",
-   "text": "320 points and 221 comments on Hacker News.",
-   "points": 320,
-   "discussion": "https://news.ycombinator.com/item?id=50238088"
+   "published_at": "2026-10-26T13:04:50Z",
+   "text": "95 points and 32 comments on Hacker News.",
+   "points": 95,
+   "discussion": "https://news.ycombinator.com/item?id=50242939"
   },
   {
    "title": "Person who is reverse engineering his tv gets banned from OpenAI You aren't allowed to stop your tv…",
@@ -61,15 +71,15 @@
    "published_at": "2026-10-24T12:07:58Z",
    "text": "Person who is reverse engineering his tv gets banned from OpenAI You aren't allowed to stop your tv from spying on your family. You have to ask for permission Or, maybe, maybe we accelerate",
    "author_name": "kache",
-   "likes": 27408,
+   "likes": 27416,
    "story": "OpenAI and Anthropic blocked the reverse engineering of smart TVs spying on us"
   },
   {
-   "title": "A look at OpenAI's and Anthropic's aggressive price cuts from June through September, driven by low…",
-   "url": "https://minimaxir.com/2026/10/cheap-llms/",
-   "source": "Max Woolf's Blog",
-   "published_at": "2026-10-26T10:15:39Z",
-   "text": "A look at OpenAI's and Anthropic's aggressive price cuts from June through September, driven by low switching costs and pricing pressure from open-weight models. Let's look at a quick timeline of the major LLM model announcements from both OpenAI and Anthropic over the past few months.",
+   "title": "The public internet model is dying from too much content, algorithmic aggregators, and vulnerabilit…",
+   "url": "https://stratechery.com/2026/the-end-of-the-internet/",
+   "source": "Ben Thompson / Stratechery",
+   "published_at": "2026-10-26T11:20:40Z",
+   "text": "The public internet model is dying from too much content, algorithmic aggregators, and vulnerabilities found with AI, and that may bring new possibilities. It was the summer of 2003, just weeks before I was set to move to Taiwan, that I decided to create a blog to document my journey.",
    "via": "Techmeme"
   },
   {
@@ -79,17 +89,17 @@
    "published_at": "2026-10-25T10:11:07Z",
    "text": "r/opensource just banned any project that uses AI. By their own rule, that means the biggest open source project of all time, Linux, is now banned too. The kernel already accepts AI-assisted code. This is the real AI psychosis.",
    "author_name": "chasm",
-   "likes": 9998,
+   "likes": 10013,
    "story": "Moderators of r/opensource ban submissions of projects using, made by, or intended for AI, exclude non-English speakers over AI translation concerns, and more"
   },
   {
-   "title": "A 10-year-old CNN outperforms frontier LLMs for skin cancer diagnosis",
-   "url": "https://lynchlab.net/llm-skin-cancer",
+   "title": "IBM CEO says open weight models are now good and cheap on-prem",
+   "url": "https://www.theregister.com/systems/2026/10/22/ibm-ceo-says-open-weight-models-are-now-irresistibly-good-and-cheap-on-prem/5304640",
    "source": "Hacker News",
-   "published_at": "2026-10-25T17:15:38Z",
-   "text": "593 points and 250 comments on Hacker News.",
-   "points": 593,
-   "discussion": "https://news.ycombinator.com/item?id=50233779"
+   "published_at": "2026-10-26T01:47:46Z",
+   "text": "331 points and 240 comments on Hacker News.",
+   "points": 331,
+   "discussion": "https://news.ycombinator.com/item?id=50238088"
   },
   {
    "title": "Elvis Presley's rightsholders sue Anthropic over 274 songs allegedly used to train its models, seek…",
@@ -100,37 +110,30 @@
    "via": "Techmeme"
   },
   {
+   "title": "A 10-year-old CNN outperforms frontier LLMs for skin cancer diagnosis",
+   "url": "https://lynchlab.net/llm-skin-cancer",
+   "source": "Hacker News",
+   "published_at": "2026-10-25T17:15:38Z",
+   "text": "604 points and 254 comments on Hacker News.",
+   "points": 604,
+   "discussion": "https://news.ycombinator.com/item?id=50233779"
+  },
+  {
+   "title": "A look at OpenAI's and Anthropic's aggressive price cuts from June through September, driven by low…",
+   "url": "https://minimaxir.com/2026/10/cheap-llms/",
+   "source": "Max Woolf's Blog",
+   "published_at": "2026-10-26T10:15:39Z",
+   "text": "A look at OpenAI's and Anthropic's aggressive price cuts from June through September, driven by low switching costs and pricing pressure from open-weight models. Let's look at a quick timeline of the major LLM model announcements from both OpenAI and Anthropic over the past few months.",
+   "via": "Techmeme"
+  },
+  {
    "title": "PaperPilot – Zero-Cloud, Pure-Rust PDF Engine with WASM and MCP",
    "url": "https://github.com/KrushnaVardhanReddy/PaperPilot",
    "source": "Hacker News",
    "published_at": "2026-10-26T03:29:05Z",
-   "text": "174 points and 63 comments on Hacker News.",
-   "points": 174,
+   "text": "180 points and 66 comments on Hacker News.",
+   "points": 180,
    "discussion": "https://news.ycombinator.com/item?id=50238739"
-  },
-  {
-   "title": "Alphabet, Amazon, and Microsoft are expected to report double-digit gains in revenue this week, as…",
-   "url": "https://www.bloomberg.com/news/articles/2026-10-25/ai-spending-fears-threaten-to-swamp-big-tech-s-strong-earnings",
-   "source": "Bloomberg",
-   "published_at": "2026-10-26T08:36:13Z",
-   "text": "Alphabet, Amazon, and Microsoft are expected to report double-digit gains in revenue this week, as investors grow impatient with AI capex and seek returns. Three of the biggest and most important technology companies in the world are expected to show healthy growth when they report earnings this week.",
-   "via": "Techmeme"
-  },
-  {
-   "title": "Cathedral, a months-old cybersecurity startup founded by ex-DOGE staffers, says it breached Anthrop…",
-   "url": "https://www.washingtonpost.com/technology/2026/10/26/researchers-cybersecurity-start-up-cathedral-got-inside-anthropic/?pwapi_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyZWFzb24iOiJnaWZ0IiwibmJmIjoxNzkyOTg3MjAwLCJpc3MiOiJzdWJzY3JpcHRpb25zIiwiZXhwIjoxNzk0MzczMTk5LCJpYXQiOjE3OTI5ODcyMDAsImp0aSI6ImI1M2RjZmEzLThkNTItNGE3NC05ZjI4LWU1ZGJkZTIyZDFmOSIsInVybCI6Imh0dHBzOi8vd3d3Lndhc2hpbmd0b25wb3N0LmNvbS90ZWNobm9sb2d5LzIwMjYvMTAvMjYvcmVzZWFyY2hlcnMtY3liZXJzZWN1cml0eS1zdGFydC11cC1jYXRoZWRyYWwtZ290LWluc2lkZS1hbnRocm9waWMvIn0.k3b70wv6ePisrPvCYfDOPAjt5vHweVxm4rBnhcnDU-M&itid=gfta",
-   "source": "Washington Post",
-   "published_at": "2026-10-26T11:35:39Z",
-   "text": "Cathedral, a months-old cybersecurity startup founded by ex-DOGE staffers, says it breached Anthropic's internal systems in under 12 hours using AI agents. The start-up firm Cathedral has told makers of the Claude chatbot that its researchers were able to quickly penetrate sensitive systems, a report reviewed by The Post shows.",
-   "via": "Techmeme"
-  },
-  {
-   "title": "Ray-Ban Meta Audio glasses review: no camera is a bonus for some, good audio quality, and Meta AI w…",
-   "url": "https://www.bloomberg.com/news/articles/2026-10-25/ray-ban-meta-audio-ai-glasses-cost-more-while-ditching-a-key-feature-review",
-   "source": "Samantha Kelly / Bloomberg",
-   "published_at": "2026-10-26T11:10:54Z",
-   "text": "Ray-Ban Meta Audio glasses review: no camera is a bonus for some, good audio quality, and Meta AI works well, but lingering privacy concerns and fairly pricey",
-   "via": "Techmeme"
   }
  ],
  "sources": "curated, Techmeme, X (found via Techmeme, Reddit, the Internet Archive), Claude Code releases, Anthropic, Hacker News, Simon Willison"
