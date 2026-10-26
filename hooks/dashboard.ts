@@ -93,7 +93,7 @@ function windowsSection(s: DashboardSnapshot): string {
     const state = pace(kind, w, now)
     const next = windowNext(s.payload, kind, { now, utcOffsetMinutes: s.utcOffsetMinutes })
     const paceText = state?.kind === 'full' ? 'The window is full.'
-      : state?.kind === 'hot' ? `On pace to run out: ${next?.forms[0] ?? ''}. A projection, not a promise.`
+      : state?.kind === 'hot' ? `On pace to run out: ${next?.forms[0] ?? ''}.`
       : state?.kind === 'ok' ? 'On pace to last until the reset.' : 'Too early in the window to project a pace.'
     const tone = state?.kind === 'full' ? 'bad' : state?.kind === 'hot' || used >= 80 ? 'warn' : ''
     rows.push(`<div class="card ${tone}"><div class="big">${esc(pct(used))}</div><div><p class="strong">${esc(`${name} ${pct(used)} used${when}`)}</p>`
@@ -193,7 +193,7 @@ p{margin:6px 0}
 .card.warn .big{color:var(--warn)}.card.bad .big{color:var(--bad)}
 .card>div:last-child{flex:1;min-width:0}
 .meter{height:8px;background:var(--line);border-radius:4px;overflow:hidden;margin:6px 0}
-.meter span{display:block;height:100%;background:var(--accent)}
+.meter span{display:block;height:100%;background:var(--ok)}.card.warn .meter span{background:var(--warn)}.card.bad .meter span{background:var(--bad)}
 .rows{list-style:none;margin:0;padding:0}
 .rows li{background:var(--card);border:1px solid var(--line);border-left-width:4px;border-radius:8px;padding:8px 12px;margin:6px 0;overflow-wrap:anywhere}
 .rows li.ok{border-left-color:var(--ok)}.rows li.warn{border-left-color:var(--warn)}
