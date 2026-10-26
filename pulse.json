@@ -1,24 +1,27 @@
 {
  "schema": 1,
- "generated_at": "2026-10-26T13:19:26Z",
+ "generated_at": "2026-10-26T13:52:03Z",
  "items": [
   {
-   "title": "Anthropic files for an IPO on the Nasdaq under the symbol ANT; the number of Class A shares to be o…",
-   "url": "https://www.anthropic.com/news/s1-sec",
-   "source": "Anthropic",
-   "published_at": "2026-10-26T13:12:17Z",
-   "text": "Anthropic files for an IPO on the Nasdaq under the symbol ANT; the number of Class A shares to be offered and the price range is yet to be determined. Today, Anthropic, PBC filed a registration statement on Form S-1 with the U.S. Securities and Exchange Commission relating …",
+   "title": "Anthropic's co-founders say they “believe that AI is one of the most consequential technologies in…",
+   "url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026067168/anthropicpbc-sx1.htm",
+   "source": "SEC.gov",
+   "published_at": "2026-10-26T13:19:12Z",
+   "text": "Anthropic's co-founders say they “believe that AI is one of the most consequential technologies in human history”, detail its scientific potential, and more. We believe that Al is one of the most consequential technologies in human history. If managed well …",
    "via": "Techmeme"
   },
   {
-   "title": "The naysayers are getting embarrassing. Every day, people are using AI to make incredible breakthro…",
-   "url": "https://x.com/OsitaNwanevu/status/2114512163570426334",
-   "source": "𝕏 @OsitaNwanevu",
-   "published_at": "2026-10-26T00:19:20Z",
-   "text": "The naysayers are getting embarrassing. Every day, people are using AI to make incredible breakthroughs and answer some of the toughest questions around, like \"what do I like about my child?\"",
-   "author_name": "Osita Nwanevu",
-   "likes": 10959,
-   "story": "A profile of former Google VP and Yahoo CEO Marissa Mayer, whose startup Dazzle is building an AI assistant to help non-tech enthusiasts with mundane tasks"
+   "title": "Anthropic has filed an S-1 registration statement with the SEC related to its proposed IPO. Read mo…",
+   "url": "https://x.com/AnthropicAI/status/2114705042817110293",
+   "source": "𝕏 @AnthropicAI",
+   "published_at": "2026-10-26T13:05:46Z",
+   "text": "Anthropic has filed an S-1 registration statement with the SEC related to its proposed IPO. Read more: Legal disclaimer: A registration statement relating to these securities has been filed with the SEC but has not yet become effective. These securities…",
+   "author_name": "Anthropic",
+   "likes": 4657,
+   "story": "Anthropic files for an IPO on the Nasdaq under the symbol ANT; the number of Class A shares to be offered and the price range is yet to be determined",
+   "links": [
+    "https://www.anthropic.com/news/s1-sec"
+   ]
   },
   {
    "title": "Claude Code 2.1.310 released",
@@ -34,8 +37,35 @@
    "published_at": "2026-10-26T13:07:51Z",
    "text": "The lower and high storage models have different A20 Chips. The 512GB configuration has 6 CPU cores versus 5. Both have 7 core GPUs.",
    "author_name": "Mark Gurman",
-   "likes": 95,
-   "story": "Apple unveils a redesigned iPad mini with an 8.5-inch OLED display, A20 Pro, 24% thinner bezels, and an optional nano-texture finish, for $699+ on November 6"
+   "likes": 248,
+   "story": "Apple unveils a redesigned iPad mini with an 8.5-inch OLED display, an A20 Pro, 24% thinner bezels, and a nano-texture finish option, for $699+ from November 6"
+  },
+  {
+   "title": "The naysayers are getting embarrassing. Every day, people are using AI to make incredible breakthro…",
+   "url": "https://x.com/OsitaNwanevu/status/2114512163570426334",
+   "source": "𝕏 @OsitaNwanevu",
+   "published_at": "2026-10-26T00:19:20Z",
+   "text": "The naysayers are getting embarrassing. Every day, people are using AI to make incredible breakthroughs and answer some of the toughest questions around, like \"what do I like about my child?\"",
+   "author_name": "Osita Nwanevu",
+   "likes": 11385,
+   "story": "A profile of former Google VP and Yahoo CEO Marissa Mayer, whose startup Dazzle is building an AI assistant to help normal people tackle mundane tasks visually"
+  },
+  {
+   "title": "Anthropic S-1: an $80.7B net loss on revenue of $16.3B in H1 2026, up from a $13B net loss on reven…",
+   "url": "https://www.bloomberg.com/news/articles/2026-10-26/anthropic-ipo-s-1-filing-offers-first-look-at-claude-maker-s-finances",
+   "source": "Bailey Lipschultz / Bloombe…",
+   "published_at": "2026-10-26T13:31:06Z",
+   "text": "Anthropic S-1: an $80.7B net loss on revenue of $16.3B in H1 2026, up from a $13B net loss on revenue of $1.2B in H1 2025, and a net revenue retention of 900%. Anthropic PBC filed for an IPO, moving a step closer to being the first company focused primarily on developing the most advanced artificial intelligence models to go public.",
+   "via": "Techmeme"
+  },
+  {
+   "title": "IBM CEO says open weight models are now good and cheap on-prem",
+   "url": "https://www.theregister.com/systems/2026/10/22/ibm-ceo-says-open-weight-models-are-now-irresistibly-good-and-cheap-on-prem/5304640",
+   "source": "Hacker News",
+   "published_at": "2026-10-26T01:47:46Z",
+   "text": "350 points and 251 comments on Hacker News.",
+   "points": 350,
+   "discussion": "https://news.ycombinator.com/item?id=50238088"
   },
   {
    "title": "Elon Musk just told the entire world that the AI bubble has popped... buckle up.",
@@ -44,7 +74,7 @@
    "published_at": "2026-10-25T20:03:14Z",
    "text": "Elon Musk just told the entire world that the AI bubble has popped... buckle up.",
    "author_name": "Financelot",
-   "likes": 9897,
+   "likes": 9904,
    "story": "Elon Musk says SpaceX closed $40B in GPU debt, debt markets have shut off credit for AI data center companies, and 200+ neoclouds face “death and consolidation”"
   },
   {
@@ -56,23 +86,33 @@
    "via": "Techmeme"
   },
   {
-   "title": "Anthropic S-1",
-   "url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026067168/anthropicpbc-sx1.htm",
-   "source": "Hacker News",
-   "published_at": "2026-10-26T13:04:50Z",
-   "text": "95 points and 32 comments on Hacker News.",
-   "points": 95,
-   "discussion": "https://news.ycombinator.com/item?id=50242939"
-  },
-  {
    "title": "Person who is reverse engineering his tv gets banned from OpenAI You aren't allowed to stop your tv…",
    "url": "https://x.com/yacineMTB/status/2113965724435697732",
    "source": "𝕏 @yacineMTB",
    "published_at": "2026-10-24T12:07:58Z",
    "text": "Person who is reverse engineering his tv gets banned from OpenAI You aren't allowed to stop your tv from spying on your family. You have to ask for permission Or, maybe, maybe we accelerate",
    "author_name": "kache",
-   "likes": 27416,
+   "likes": 27421,
    "story": "OpenAI and Anthropic blocked the reverse engineering of smart TVs spying on us"
+  },
+  {
+   "title": "A 10-year-old CNN outperforms frontier LLMs for skin cancer diagnosis",
+   "url": "https://lynchlab.net/llm-skin-cancer",
+   "source": "Hacker News",
+   "published_at": "2026-10-25T17:15:38Z",
+   "text": "613 points and 259 comments on Hacker News.",
+   "points": 613,
+   "discussion": "https://news.ycombinator.com/item?id=50233779"
+  },
+  {
+   "title": "r/opensource just banned any project that uses AI. By their own rule, that means the biggest open s…",
+   "url": "https://x.com/chasmmmmmmmmmmm/status/2114298704253575338",
+   "source": "𝕏 @chasmmmmmmmmmmm",
+   "published_at": "2026-10-25T10:11:07Z",
+   "text": "r/opensource just banned any project that uses AI. By their own rule, that means the biggest open source project of all time, Linux, is now banned too. The kernel already accepts AI-assisted code. This is the real AI psychosis.",
+   "author_name": "chasm",
+   "likes": 10033,
+   "story": "Moderators of r/opensource ban submissions of projects using, made by, or intended for AI, exclude non-English speakers over AI translation concerns, and more"
   },
   {
    "title": "The public internet model is dying from too much content, algorithmic aggregators, and vulnerabilit…",
@@ -83,57 +123,21 @@
    "via": "Techmeme"
   },
   {
-   "title": "r/opensource just banned any project that uses AI. By their own rule, that means the biggest open s…",
-   "url": "https://x.com/chasmmmmmmmmmmm/status/2114298704253575338",
-   "source": "𝕏 @chasmmmmmmmmmmm",
-   "published_at": "2026-10-25T10:11:07Z",
-   "text": "r/opensource just banned any project that uses AI. By their own rule, that means the biggest open source project of all time, Linux, is now banned too. The kernel already accepts AI-assisted code. This is the real AI psychosis.",
-   "author_name": "chasm",
-   "likes": 10013,
-   "story": "Moderators of r/opensource ban submissions of projects using, made by, or intended for AI, exclude non-English speakers over AI translation concerns, and more"
-  },
-  {
-   "title": "IBM CEO says open weight models are now good and cheap on-prem",
-   "url": "https://www.theregister.com/systems/2026/10/22/ibm-ceo-says-open-weight-models-are-now-irresistibly-good-and-cheap-on-prem/5304640",
-   "source": "Hacker News",
-   "published_at": "2026-10-26T01:47:46Z",
-   "text": "331 points and 240 comments on Hacker News.",
-   "points": 331,
-   "discussion": "https://news.ycombinator.com/item?id=50238088"
-  },
-  {
-   "title": "Elvis Presley's rightsholders sue Anthropic over 274 songs allegedly used to train its models, seek…",
-   "url": "https://www.nytimes.com/2026/10/25/arts/music/anthropic-lawsuit-elvis-presley-songs.html?unlocked_article_code=1.LVE.Unk9.7e04-FAQ9Ei8&smid=nytcore-ios-share",
-   "source": "Derrick Bryson Taylor / New…",
-   "published_at": "2026-10-26T08:56:14Z",
-   "text": "Elvis Presley's rightsholders sue Anthropic over 274 songs allegedly used to train its models, seeking $41M+; Anthropic says it disagrees and will defend itself. The $41 million lawsuit contends that the A.I. company used Presley's music to train its models without permission.",
-   "via": "Techmeme"
-  },
-  {
-   "title": "A 10-year-old CNN outperforms frontier LLMs for skin cancer diagnosis",
-   "url": "https://lynchlab.net/llm-skin-cancer",
-   "source": "Hacker News",
-   "published_at": "2026-10-25T17:15:38Z",
-   "text": "604 points and 254 comments on Hacker News.",
-   "points": 604,
-   "discussion": "https://news.ycombinator.com/item?id=50233779"
-  },
-  {
-   "title": "A look at OpenAI's and Anthropic's aggressive price cuts from June through September, driven by low…",
-   "url": "https://minimaxir.com/2026/10/cheap-llms/",
-   "source": "Max Woolf's Blog",
-   "published_at": "2026-10-26T10:15:39Z",
-   "text": "A look at OpenAI's and Anthropic's aggressive price cuts from June through September, driven by low switching costs and pricing pressure from open-weight models. Let's look at a quick timeline of the major LLM model announcements from both OpenAI and Anthropic over the past few months.",
-   "via": "Techmeme"
-  },
-  {
    "title": "PaperPilot – Zero-Cloud, Pure-Rust PDF Engine with WASM and MCP",
    "url": "https://github.com/KrushnaVardhanReddy/PaperPilot",
    "source": "Hacker News",
    "published_at": "2026-10-26T03:29:05Z",
-   "text": "180 points and 66 comments on Hacker News.",
-   "points": 180,
+   "text": "187 points and 69 comments on Hacker News.",
+   "points": 187,
    "discussion": "https://news.ycombinator.com/item?id=50238739"
+  },
+  {
+   "title": "Elvis Presley's music owners sue Anthropic for allegedly using 274 songs to train its models, seeki…",
+   "url": "https://www.nytimes.com/2026/10/25/arts/music/anthropic-lawsuit-elvis-presley-songs.html?unlocked_article_code=1.LVE.Unk9.7e04-FAQ9Ei8&smid=nytcore-ios-share",
+   "source": "Derrick Bryson Taylor / New…",
+   "published_at": "2026-10-26T08:56:14Z",
+   "text": "Elvis Presley's music owners sue Anthropic for allegedly using 274 songs to train its models, seeking $41M+; Anthropic says it disagrees and will defend itself. The $41 million lawsuit contends that the A.I. company used Presley's music to train its models without permission.",
+   "via": "Techmeme"
   }
  ],
  "sources": "curated, Techmeme, X (found via Techmeme, Reddit, the Internet Archive), Claude Code releases, Anthropic, Hacker News, Simon Willison"
