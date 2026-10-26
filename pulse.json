@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-26T02:31:42Z",
+ "generated_at": "2026-10-26T03:04:56Z",
  "items": [
   {
    "title": "Elon Musk says SpaceX closed $40B in GPU debt, debt markets have shut off credit for AI data center…",
@@ -17,7 +17,7 @@
    "published_at": "2026-10-24T12:07:58Z",
    "text": "Person who is reverse engineering his tv gets banned from OpenAI You aren't allowed to stop your tv from spying on your family. You have to ask for permission Or, maybe, maybe we accelerate",
    "author_name": "kache",
-   "likes": 27003,
+   "likes": 27042,
    "story": "OpenAI and Anthropic blocked the reverse engineering of smart TVs spying on us"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-10-23T18:23:45Z",
    "text": "We believe voice is the most natural way to interact with intelligence, so we created Dessa, the most authentic full-duplex speech model ever built. Talking with it feels like talking with a person…full of emotion, nuance, pauses, and a natural cadence.",
    "author_name": "jack",
-   "likes": 68075,
+   "likes": 68088,
    "story": "Block unveils Dessa, a “true speech-to-speech” AI model trained on “nothing but human conversation” that it says runs locally on a MacBook Pro M4 Max or newer",
    "links": [
     "https://block.xyz/dessa"
@@ -53,8 +53,8 @@
    "url": "https://lynchlab.net/llm-skin-cancer",
    "source": "Hacker News",
    "published_at": "2026-10-25T17:15:38Z",
-   "text": "451 points and 214 comments on Hacker News.",
-   "points": 451,
+   "text": "465 points and 216 comments on Hacker News.",
+   "points": 465,
    "discussion": "https://news.ycombinator.com/item?id=50233779"
   },
   {
@@ -64,7 +64,7 @@
    "published_at": "2026-10-25T10:11:07Z",
    "text": "r/opensource just banned any project that uses AI. By their own rule, that means the biggest open source project of all time, Linux, is now banned too. The kernel already accepts AI-assisted code. This is the real AI psychosis.",
    "author_name": "chasm",
-   "likes": 9290,
+   "likes": 9375,
    "story": "Moderators of r/opensource ban submissions of projects using, made by, or intended for AI, exclude non-English speakers over AI translation concerns, and more"
   },
   {
@@ -80,17 +80,9 @@
    "url": "https://minimaxir.com/2026/10/cheap-llms/",
    "source": "Hacker News",
    "published_at": "2026-10-25T21:11:31Z",
-   "text": "161 points and 192 comments on Hacker News.",
-   "points": 161,
+   "text": "183 points and 207 comments on Hacker News.",
+   "points": 183,
    "discussion": "https://news.ycombinator.com/item?id=50236102"
-  },
-  {
-   "title": "Lawmakers and Hill staffers in both parties say AI leaders are becoming a political liability as th…",
-   "url": "https://www.axios.com/2026/10/24/ai-ceos-washington-political-liability",
-   "source": "Maria Curi / Axios",
-   "published_at": "2026-10-25T11:01:28Z",
-   "text": "Lawmakers and Hill staffers in both parties say AI leaders are becoming a political liability as they swing between claims of prosperity and existential dangers. Washington has always viewed Silicon Valley as culturally strange. But the current crop of AI leaders is becoming …",
-   "via": "Techmeme"
   },
   {
    "title": "Data center tenants now demand $5M+ a day in late-delivery fees, up from $1M this spring, spawning…",
@@ -98,6 +90,22 @@
    "source": "Ann Davis Vaughan / The Inf…",
    "published_at": "2026-10-25T19:10:57Z",
    "text": "Data center tenants now demand $5M+ a day in late-delivery fees, up from $1M this spring, spawning new “delay-in-delivery” coverage from brokers like Marsh. This spring, Mike Mathews, who leads the global digital infrastructure practice at insurance broker Marsh …",
+   "via": "Techmeme"
+  },
+  {
+   "title": "High-frequency trading firms such as Jane Street are investing in AI and chip startups and neocloud…",
+   "url": "https://www.bloomberg.com/news/features/2026-10-22/jane-street-hrt-are-spending-billions-to-win-in-ai-era?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc5Mjg5ODcyMSwiZXhwIjoxNzkzNTAzNTIxLCJhcnRpY2xlSWQiOiJUTkJVQ0RLSUpIOTIwMCIsImJjb25uZWN0SWQiOiIwNEFGQkMxQkYyMTA0NUVEODg3MzQxQkQwQzIyNzRBMCJ9.aZUQTESNPxDFkB9tAjev0zQuyASx2W5Ed0a-yabw_WY",
+   "source": "Bloomberg",
+   "published_at": "2026-10-26T02:51:09Z",
+   "text": "High-frequency trading firms such as Jane Street are investing in AI and chip startups and neoclouds, and building data centers to gain an edge in the AI era. High-frequency trading firms are even building their own data centers as they compete for an edge in the AI era.",
+   "via": "Techmeme"
+  },
+  {
+   "title": "Lawmakers and Hill staffers in both parties say AI leaders are becoming a political liability as th…",
+   "url": "https://www.axios.com/2026/10/24/ai-ceos-washington-political-liability",
+   "source": "Maria Curi / Axios",
+   "published_at": "2026-10-25T11:01:28Z",
+   "text": "Lawmakers and Hill staffers in both parties say AI leaders are becoming a political liability as they swing between claims of prosperity and existential dangers. Washington has always viewed Silicon Valley as culturally strange. But the current crop of AI leaders is becoming …",
    "via": "Techmeme"
   },
   {
