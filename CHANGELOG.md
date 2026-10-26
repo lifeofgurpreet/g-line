@@ -1,5 +1,16 @@
 # Changelog
 
+## 0.19.1 (2026-10-26): the newest usage reading wins, so a wrong 100% clears
+
+- Sessions on one account share their usage readings, and within a window the higher percent
+  used to win and was written back every 15 seconds. One reading that was wrong, or a window the
+  provider gave back early, then stayed at that figure for every session until the reset: an
+  account read `wk 100%` while it was at 21%, and guard rules acted on the 100%. Each reading now
+  carries when it was observed (a session's figure as of its last response), and within a window
+  the newest wins. A timed reading also beats one shared by an older g-line.
+- A `usage_command` can say when each figure was read with `"observed_at"`; without it a reading
+  counts as taken when the command ran. See [Configuration](docs/configuration.md#usage_command).
+
 ## 0.19.0 (2026-10-26): a local dashboard, and documentation split into pages
 
 - **`/g-line dashboard`** (or `b` in the `/g-line` pane) writes one page,

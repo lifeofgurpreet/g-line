@@ -2026,7 +2026,7 @@ test('sessions on the same account share usage: an idle one reads what another j
 
 // ------------------------------------------------------------ 0.15.0
 
-test('a usage_command reading from another machine reaches the guard, and never lowers a figure', { timeoutMs: 30_000 }, async ($, on) => {
+test('a usage_command reading from another machine reaches the guard; only a newer observation lowers it', { timeoutMs: 30_000 }, async ($, on) => {
   const store: Record<string, unknown> = {}
   const w = world(on, {}, store)
   const held = () => (store['g-line-limits:team@example.com'] as { limits: { percentUsed: number }[] }).limits[0]?.percentUsed
@@ -2053,17 +2053,22 @@ test('a usage_command reading from another machine reaches the guard, and never 
   // Another machine spent it: 10% left, under the 12% stop.
   expect((await $.prompt.submit(typed('at 90'))).drop).toMatch(/10% of the 5-hour window left/)
   expect(held()).toBe(90)
-  // A lower figure, a failure and junk change nothing.
-  printed = `{"five_hour":{"used_percentage":20,"resets_at":"${resets}"}}\n`
-  await w.clock.advance(135_000)
-  expect(held()).toBe(90)
+  // A failure, junk, and a lower figure observed before the 90 change nothing.
   printed = 'oops'
   await w.clock.advance(135_000)
   expect(held()).toBe(90)
-  // The engine's own lower reading doesn't take it back either.
+  const before = new Date(w.clock.now() - 3600 * 1000).toISOString()
+  printed = `{"five_hour":{"used_percentage":20,"resets_at":"${resets}","observed_at":"${before}"}}\n`
+  await w.clock.advance(135_000)
+  expect(held()).toBe(90)
+  // The engine's own figure with no response behind it yet doesn't take it back either.
   await measure($, w, 55, Math.round((resetMs - w.clock.now()) / 1000))
   await w.clock.advance(15_000)
   expect(held()).toBe(90)
+  // A newer, lower observation does: the 90 was wrong, or the window was given back.
+  printed = `{"five_hour":{"used_percentage":30,"resets_at":"${resets}"}}\n`
+  await w.clock.advance(135_000)
+  expect(held()).toBe(30)
 })
 
 test('a usage_command does nothing without an account_command', { timeoutMs: 30_000 }, async ($, on) => {

@@ -60,6 +60,30 @@ test('sessions on one account share usage: the higher percent in the same window
   expect(mergeLimits([], [{ kind: 'seven_day', percentUsed: 40, resetsAt: now + 100 }, { kind: 1 }], now)).toEqual([{ kind: 'seven_day', percentUsed: 40, resetsAt: now + 100 }])
 })
 
+test('in the same window the newest observation wins, so a stale or wrong figure heals', () => {
+  const now = 1_000_000
+  const w = now + 86_400
+  // A newer, lower reading replaces an older, higher one: a figure that was wrong, or a reset given early.
+  expect(mergeLimits([{ kind: 'seven_day', percentUsed: 21, resetsAt: w, at: now }], [{ kind: 'seven_day', percentUsed: 100, resetsAt: w, at: now - 3600 }], now))
+    .toEqual([{ kind: 'seven_day', percentUsed: 21, resetsAt: w, at: now }])
+  // A newer shared reading replaces this session's older one.
+  expect(mergeLimits([{ kind: 'seven_day', percentUsed: 30, resetsAt: w, at: now - 600 }], [{ kind: 'seven_day', percentUsed: 33, resetsAt: w, at: now }], now))
+    .toEqual([{ kind: 'seven_day', percentUsed: 33, resetsAt: w, at: now }])
+  // A timed reading beats an untimed one from before 0.19.1, whichever side it's on.
+  expect(mergeLimits([{ kind: 'seven_day', percentUsed: 21, resetsAt: w, at: now }], [{ kind: 'seven_day', percentUsed: 100, resetsAt: w }], now)[0]?.percentUsed).toBe(21)
+  expect(mergeLimits([{ kind: 'seven_day', percentUsed: 100, resetsAt: w }], [{ kind: 'seven_day', percentUsed: 21, resetsAt: w, at: now }], now)[0]?.percentUsed).toBe(21)
+  // The same time: the higher percent. A time that isn't a number counts as none.
+  expect(mergeLimits([{ kind: 'five_hour', percentUsed: 10, resetsAt: w, at: now }], [{ kind: 'five_hour', percentUsed: 12, resetsAt: w, at: now }], now)[0]?.percentUsed).toBe(12)
+  expect(mergeLimits([{ kind: 'seven_day', percentUsed: 21, resetsAt: w, at: now }], [{ kind: 'seven_day', percentUsed: 90, resetsAt: w, at: 'soon' }], now)[0]?.percentUsed).toBe(21)
+})
+
+test('parseUsage takes a window\'s observed_at, or the time the command ran', () => {
+  const line = '{"seven_day":{"used_percentage":21,"resets_at":"2026-10-28T00:00:00Z","observed_at":"2026-10-26T02:56:48.625Z"}}'
+  expect(parseUsage(line, 1)).toEqual([{ kind: 'seven_day', percentUsed: 21,
+    resetsAt: Date.parse('2026-10-28T00:00:00Z') / 1000, at: Math.floor(Date.parse('2026-10-26T02:56:48.625Z') / 1000) }])
+  expect(parseUsage('{"seven_day":{"used_percentage":21,"resets_at":"2026-10-28T00:00:00Z"}}', 1234)?.[0]?.at).toBe(1234)
+})
+
 test('parseUsage reads the first line as JSON and nothing else', () => {
   const line = '{"five_hour":{"used_percentage":42.5,"resets_at":"2026-10-23T12:00:00Z"},"seven_day":{"used_percentage":70,"resets_at":"2026-10-27T00:00:00Z"}}'
   expect(parseUsage(line + '\nignored')).toEqual([

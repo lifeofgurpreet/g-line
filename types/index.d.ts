@@ -6,7 +6,7 @@ export type Snap = {
   /** The effort the person set, when the guard ran the last main-loop request lower. */
   effortSet?: string
   context?: { tokens?: number; window?: number; percent?: number }
-  rateLimits?: { kind: string; percentUsed: number; resetsAt?: number }[]
+  rateLimits?: { kind: string; percentUsed: number; resetsAt?: number; at?: number }[]
   costUsd?: number
   /** Milliseconds since the epoch. */
   startedAt?: number

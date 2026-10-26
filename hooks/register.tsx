@@ -433,6 +433,12 @@ let shared: { account: string; limits: unknown } | undefined
 let fed: { account: string; limits: Limit[] } | undefined
 /** When `usage_command` last ran (ms); it runs about every two minutes. */
 let usageAt = 0
+/**
+ * When this session last got an API response (seconds): the engine's usage
+ * figures come from the latest one, so this is when they were observed. Until
+ * the first, the engine's figures carry no time and any timed reading wins.
+ */
+let lastResponseAt: number | undefined
 
 /** This session's reading with what other sessions on the same account last shared, and `usage_command` printed. */
 function withShared(account: string | null | undefined, own: Snap['rateLimits'], now: number): Snap['rateLimits'] {
@@ -464,7 +470,7 @@ async function refreshUsage($: EngineInterface): Promise<void> {
     }
     const run = await $.process.run(command, { timeoutMs: 5000 })
     if (run.exitCode !== 0) return
-    const limits = parseUsage(run.stdout)
+    const limits = parseUsage(run.stdout, Math.floor(now / 1000))
     if (!limits) return
     const key = accountKey(account)
     const at = (await nowMs($)) / 1000
@@ -503,9 +509,9 @@ async function shareLimits($: EngineInterface): Promise<void> {
   }
 }
 
-function limitsOf(list: readonly { kind: string; percentUsed: number; resetsAt?: string }[]): Snap['rateLimits'] {
+function limitsOf(list: readonly { kind: string; percentUsed: number; resetsAt?: string }[], at?: number): Snap['rateLimits'] {
   return list.map(l => ({ kind: l.kind, percentUsed: l.percentUsed,
-    resetsAt: l.resetsAt ? Math.floor(Date.parse(l.resetsAt) / 1000) : undefined }))
+    resetsAt: l.resetsAt ? Math.floor(Date.parse(l.resetsAt) / 1000) : undefined, ...(at !== undefined ? { at } : {}) }))
 }
 
 /** The highest percent each window has reached, so a reset can say what it freed. */
@@ -559,7 +565,7 @@ async function watchIdle($: EngineInterface): Promise<void> {
 
 async function measure($: EngineInterface): Promise<void> {
   const usage = await $.session.usage()
-  const limits = withShared((await read($, snap)).account, limitsOf(usage.rateLimits), await nowSeconds($))
+  const limits = withShared((await read($, snap)).account, limitsOf(usage.rateLimits, lastResponseAt), await nowSeconds($))
   await update($, snap, s => ({
     ...s,
     startedAt: usage.startedAt,
@@ -1742,6 +1748,7 @@ async function keepWarm($: EngineInterface): Promise<void> {
     const cost = before !== undefined && after !== undefined && after > before ? after - before : undefined
     const usage = 'usage' in r ? r.usage : undefined
     if (readBack(c.prefix, usage)) {
+      lastResponseAt = now
       warmed += 1
       if (cost !== undefined) warmCost += cost
       await update($, snap, x => (x.cache && x.cache.lastAt === c.lastAt ? { ...x, cache: { ...x.cache, lastAt: now } } : x))
@@ -2274,7 +2281,7 @@ export const register: Register = (on, options) => {
   })
 
   on('session.measure', async ($, e, next) => {
-    const limits = withShared((await read($, snap)).account, limitsOf(e.rateLimits), await nowSeconds($))
+    const limits = withShared((await read($, snap)).account, limitsOf(e.rateLimits, lastResponseAt), await nowSeconds($))
     await update($, snap, s => ({
       ...s,
       context: { tokens: e.context.tokens, window: e.context.window, percent: e.context.percent },
@@ -2337,6 +2344,7 @@ export const register: Register = (on, options) => {
     const capped = e.agentId === undefined && config.guard.rules.length ? await guardEffortOf($, e).catch(() => undefined) : undefined
     const step = capped ? { ...e, effort: capped } : e
     const result = yield* next(step)
+    if (result.usage) lastResponseAt = await nowSeconds($)
     if (e.agentId === undefined && result.usage) {
       const u = result.usage
       const cached = u.cache_read_input_tokens + u.cache_creation_input_tokens > 0

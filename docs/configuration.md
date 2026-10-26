@@ -84,9 +84,14 @@ line of JSON:
 ```
 
 g-line runs it about every 2 minutes (5-second limit), only with an `account_command`, so usage
-spent in a session on another machine shows here and the guard acts on it. A reading can raise
-a figure, never lower one in the same window. Failures and other output change nothing. g-line
-makes no network call itself; whatever the command fetches is its own doing.
+spent in a session on another machine shows here and the guard acts on it. Failures and other
+output change nothing. g-line makes no network call itself; whatever the command fetches is its
+own doing.
+
+Within one window, the newest reading wins: this session's own (as of its last response),
+another session's on the same account, or the command's. If your command's source lags, add
+when each figure was read, `"observed_at":"2026-10-23T11:42:00Z"`, inside the window's object;
+without it, a reading counts as taken when the command ran.
 
 ## Let Claude read the figures (opt-in, experimental)
 

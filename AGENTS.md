@@ -22,14 +22,14 @@ coding agents and for people.
    in `~/.cache/g-line/resume`) and, while idle, the length of
    `$.session.messages({ as: "api" })` (a managed plugin can send compaction events on past
    user plugins). Sessions on one machine and one account share those readings through the
-   plugin store (`mergeLimits`: the higher percent in a window, the later window across a reset).
+   plugin store (`mergeLimits`: in a window the newest observation, a timed reading over an untimed one; the later window across a reset).
    Never parse the transcript, never
    estimate what the engine reports, never make a network call of its own, never write into the system
    prompt. The one network request the mod makes is Pulse's GET of a static file, and only when the person
    turns Pulse on. The person's own `usage_command` (opt-in, like `account_command`, and only with
    one) is a command they chose, run through `$.process.run` about every two minutes; it may reach
    a network, but that is their command's doing, never the mod's. Its readings merge with
-   `mergeLimits`, so they can raise a figure and never lower one in the same window. Keep-warm's re-read (rule 5's guard) is Claude Code's own request through
+   `mergeLimits`, stamped with the command's `observed_at` or the time it ran. Keep-warm's re-read (rule 5's guard) is Claude Code's own request through
    `$.model.fork`, made only when the person configured it.
 4. **Private by default.** No account, email, branch, path or repository name shows unless
    configured (`account_command`, `git: true`). The share card leaves all of them out.

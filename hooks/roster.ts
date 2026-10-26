@@ -84,13 +84,28 @@ export function rosterRow(e: RosterEntry, nowMs: number, mine: boolean): string 
 /** The store key under which sessions on this machine share one account's usage readings. */
 export const LIMITS_PREFIX = 'g-line-limits:'
 
-export type Limit = { kind: string; percentUsed: number; resetsAt?: number }
+/** `at`: when the reading was observed (epoch seconds). Readings shared before 0.19.1 have none. */
+export type Limit = { kind: string; percentUsed: number; resetsAt?: number; at?: number }
+
+/**
+ * Whether reading `a` should replace `b` in the same window: the newer
+ * observation, a timed reading over an untimed one, and the higher percent
+ * when neither says when. Use only grows until the reset, so the newest
+ * reading is normally the highest; when it isn't (a stale figure, a reading
+ * that was wrong, a reset the provider gave early), the newest is still right.
+ */
+function replaces(a: Limit, b: Limit): boolean {
+  if (a.at !== undefined && b.at !== undefined) return a.at > b.at || (a.at === b.at && a.percentUsed > b.percentUsed)
+  if (a.at !== undefined) return true
+  if (b.at !== undefined) return false
+  return a.percentUsed > b.percentUsed
+}
 
 /**
  * One account's usage windows from this session's reading and the one sessions
- * on this machine share: in the same window the higher percent (use only grows
- * until the reset), across windows the later one. A shared window already past
- * its reset is left out. Order-free, so sessions converge whoever writes last.
+ * on this machine share: in the same window the newest observation (see
+ * `replaces`), across windows the later one. A shared window already past its
+ * reset is left out. Order-free, so sessions converge whoever writes last.
  */
 export function mergeLimits(own: readonly Limit[] | undefined, shared: unknown, nowSeconds: number): Limit[] {
   const out = new Map<string, Limit>()
@@ -102,14 +117,15 @@ export function mergeLimits(own: readonly Limit[] | undefined, shared: unknown, 
     if (typeof s.kind !== 'string' || typeof s.percentUsed !== 'number' || !Number.isFinite(s.percentUsed)) continue
     if (typeof s.resetsAt !== 'number' || s.resetsAt <= nowSeconds) continue
     const mine = out.get(s.kind)
-    const theirs: Limit = { kind: s.kind, percentUsed: s.percentUsed, resetsAt: s.resetsAt }
+    const at = typeof s.at === 'number' && Number.isFinite(s.at) ? { at: s.at } : {}
+    const theirs: Limit = { kind: s.kind, percentUsed: s.percentUsed, resetsAt: s.resetsAt, ...at }
     if (!mine || mine.resetsAt === undefined) {
       if (!mine) out.set(s.kind, theirs)
       continue
     }
     // Resets read a fraction apart from one request to the next: within a minute is the same window.
     if (Math.abs(mine.resetsAt - s.resetsAt) <= 60) {
-      if (s.percentUsed > mine.percentUsed) out.set(s.kind, { ...mine, percentUsed: s.percentUsed })
+      if (replaces(theirs, mine)) out.set(s.kind, { ...mine, percentUsed: s.percentUsed, ...at })
     } else if (s.resetsAt > mine.resetsAt || mine.resetsAt <= nowSeconds) {
       out.set(s.kind, theirs)
     }
@@ -120,9 +136,11 @@ export function mergeLimits(own: readonly Limit[] | undefined, shared: unknown, 
 /**
  * The readings a `usage_command` printed: the first line as JSON,
  * `{"five_hour":{"used_percentage":N,"resets_at":"ISO"},"seven_day":{...}}`.
- * Anything else is no reading (undefined), so what's known stays.
+ * A window's optional `observed_at` (ISO) says when it was read; without one
+ * it counts as read at `nowSeconds`. Anything else is no reading (undefined),
+ * so what's known stays.
  */
-export function parseUsage(stdout: string): Limit[] | undefined {
+export function parseUsage(stdout: string, nowSeconds?: number): Limit[] | undefined {
   try {
     const parsed: unknown = JSON.parse(stdout.split('\n')[0] ?? '')
     if (!parsed || typeof parsed !== 'object') return undefined
@@ -130,10 +148,14 @@ export function parseUsage(stdout: string): Limit[] | undefined {
     for (const kind of ['five_hour', 'seven_day']) {
       const w = (parsed as Record<string, unknown>)[kind]
       if (!w || typeof w !== 'object') continue
-      const { used_percentage: pct, resets_at: at } = w as { used_percentage?: unknown; resets_at?: unknown }
+      const { used_percentage: pct, resets_at: at, observed_at: seen } =
+        w as { used_percentage?: unknown; resets_at?: unknown; observed_at?: unknown }
       const resetsAt = typeof at === 'string' ? Date.parse(at) / 1000 : NaN
       if (typeof pct !== 'number' || !Number.isFinite(pct) || !Number.isFinite(resetsAt)) continue
-      out.push({ kind, percentUsed: Math.min(100, Math.max(0, pct)), resetsAt: Math.floor(resetsAt) })
+      const observed = typeof seen === 'string' ? Date.parse(seen) / 1000 : NaN
+      const when = Number.isFinite(observed) ? Math.floor(observed) : nowSeconds
+      out.push({ kind, percentUsed: Math.min(100, Math.max(0, pct)), resetsAt: Math.floor(resetsAt),
+        ...(when !== undefined ? { at: when } : {}) })
     }
     return out.length ? out : undefined
   } catch {
