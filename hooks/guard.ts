@@ -972,7 +972,7 @@ export function readBack(prefix: number, usage: { cache_read_input_tokens: numbe
 
 /**
  * The account an `account_command` line names, without a leading `account`
- * and a trailing `(…)` note (a plan, a quota, `via CAAM`) that can change
+ * and a trailing `(…)` note (a plan, a quota, `via my-accounts`) that can change
  * while the account stays the same: `account you@example.com (82% left)`
  * reads `you@example.com`.
  */

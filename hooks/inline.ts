@@ -24,7 +24,7 @@ const EDGES = 5
 
 /**
  * The line an `account_command` printed, as one short segment:
- * `account you@example.com (via CAAM)` reads `you@example.com`.
+ * `account you@example.com (via my-accounts)` reads `you@example.com`.
  */
 export function accountSegment(line?: string | null): Segment | undefined {
   const text = line?.trim()

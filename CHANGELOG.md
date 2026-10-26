@@ -1,6 +1,6 @@
 # Changelog
 
-## 0.18.1 (2026-10-24): the resumed cache reaches line 2 behind a managed plugin
+## 0.18.1 (2026-10-24): line 2 shows the resumed cache behind a managed plugin
 
 - 0.18.0 read a resumed conversation's figures from a hooks-module `SessionStart`, and a
   managed plugin seated ahead (a security default some organisations ship) sent that event on
@@ -10,7 +10,7 @@
   `~/.cache/g-line/resume/<session>.json`. A command runs beneath every hooks module, so nothing
   can skip it. The mod reads the file once and removes it.
 
-## 0.18.0 (2026-10-24): the cache after a restart, and keep-warm for big conversations
+## 0.18.0 (2026-10-24): cache figures after a restart, and keep-warm for big conversations
 
 - **A resumed conversation shows its cache straight away.** After a restart, `--resume` or a
   terminal brought back by herdr, line 2 had no cache figure until the next turn: nothing said
@@ -27,12 +27,12 @@
 - Keep-warm waits for a resumed conversation's first request: before it Claude Code has
   nothing to send again, so it no longer tries, and it isn't switched off for the session.
 
-## 0.17.1 (2026-10-23): pace without changing models
+## 0.17.1 (2026-10-23): pace rules that leave models alone
 
 - A `pace` rule takes `"agents": false`: its steps lower the effort and then stop, and never move
   a subagent to another model. The rule's text and toasts leave the model step out.
 
-## 0.17.0 (2026-10-23): a hold that doesn't cost you the cache, in one short line
+## 0.17.0 (2026-10-23): keep-warm through a hold, and a one-line refusal
 
 - **Keep-warm keeps going through a hold** that lifts within the re-reads it has left, so a
   held session doesn't come back to a cold cache and a 180k rebuild. A hold that lasts days is
@@ -44,7 +44,7 @@
 - **A loop or schedule held again** in the same hold gets `g-line: still held, lifts about
   13:00.`, not the whole paragraph each time it fires.
 
-## 0.16.0 (2026-10-23): pace the working day, and use the end of the week
+## 0.16.0 (2026-10-23): pace the 5-hour window, and `drain` at the end of the week
 
 - **A pace rule can pace the 5-hour window** (`"window": "5h"`): the allowance rises across the
   five hours instead of the week. With `hours`, it paces only in those hours, so a shared seat
@@ -75,7 +75,7 @@
   across a reset the newer window. Line 1, line 2 and the guard all read the shared figure, so a
   rule stops an idle session as soon as a busy one crosses it. Different accounts never mix.
 
-## 0.13.1 (2026-10-23): a cold cache keeps its size, and a hold says when it really lifts
+## 0.13.1 (2026-10-23): a cold cache keeps its size, and a hold names when it lifts
 
 - A cold cache read only `cache cold` on a busy line, where a warm one kept `cache ~48m 57k`.
   It now keeps its size the same way (`cache cold, rebuilds 57k`, `cache cold 57k`) and gives it
@@ -84,7 +84,7 @@
   step lets go as the allowance grows (`over pace till ~Sun 12:00`). A rule with hours says when
   its hours end, if that comes before the reset.
 
-## 0.13.0 (2026-10-23): see the effort that ran, and free your own session
+## 0.13.0 (2026-10-23): the effort that ran on line 2, and `/g-line guard off here`
 
 - **The effort that ran, next to the one you set.** When the guard lowered the conversation's
   effort, Claude Code's own label still read `xhigh` and nothing said the turn ran at `medium`.
@@ -138,7 +138,7 @@
   effort or agent model between two rules that both stay in force now gets its toast. A reading
   that isn't a number can't start keep-warm, hold a lease or schedule a resume.
 
-## 0.11.0 (2026-10-23): a held prompt waits for you, on a warm cache
+## 0.11.0 (2026-10-23): a held prompt is queued and sent when the hold lifts
 
 - **`guard.queue`.** A typed prompt the guard holds is kept and sent by g-line as soon as the
   guard lets go (the window's reset, or the end of a rule's hours), with a toast. The refusal
@@ -151,26 +151,26 @@
   says the cache will be cold).
 - An account in no group reads "in none of your groups".
 
-## 0.10.0 (2026-10-23): groups of accounts, your own time zone, and a guard that says why
+## 0.10.0 (2026-10-23): account groups, your own time zone, and the guard's reasons
 
 - **Account groups** (`guard.groups`). Name buckets of accounts (yours, the team's seats,
   someone's own seat) and give rules to whole groups with `"groups": ["team"]`. An account is in
   the first group whose words its account line contains, or in `other`. The refusal and line 2
   name the group (`people reserve`), and the pane lists the groups with this session's marked.
-- **The guard says why, in plain words.** `g-line held this prompt: sam@example.com is in your
+- **The guard gives its reason.** `g-line held this prompt: sam@example.com is in your
   people group, with 35% of its 5-hour window left. g-line keeps the last 40% of it for its
   owner. It resets at 13:00, in 3h 0m.` Rules with hours say them (`Mon-Fri 04:00-17:00 Kuala
   Lumpur time`). A weekly reset reads `Sat 10:00, in 4d 0h`.
 - **Press Enter again to send it anyway.** Claude Code puts a held prompt back in the box; the
   same prompt sent again within three minutes goes through, with a toast. Only for prompts you
   type: a loop's or schedule's never does. `/g-line guard once` and `pause` still work.
-- **The reason holds still.** With several stop rules in force on the same window, the one given
+- **The reason stays the same.** With several stop rules in force on the same window, the one given
   is the one that started first (a team reserve before the general 5% stop), so the reason no
   longer changes between two prompts.
 - **Line 2 says why and until when:** `guard: team reserve, 9% 5h left till 08:20`, narrowing to
   `team reserve till 08:20`; otherwise `guard: held …`.
 - **Your time zone** (`tz`). Every time g-line shows can be in your zone instead of the
-  machine's: useful when the machine is in Germany and you're in Malaysia. The pane says which.
+  machine's, useful when the machine is in a different time zone from you. The pane says which.
 - **The cache's size stays on line 2.** On a crowded line it was the first thing dropped. It now
   outlasts the reset times and the session roster, and goes only before a warning would:
   `cache ~48m 57k`. Segments can keep spare forms for this (`spare` in `core.ts`).
@@ -193,7 +193,7 @@
   finished, the turn made no further request, and the background task's later wake-up was
   refused like any other.
 
-## 0.8.2 (2026-10-23): a rule for every account but yours
+## 0.8.2 (2026-10-23): rules for every account except the ones you name
 
 - **`except_accounts`.** A rule can now apply to every account except the ones named, so
   "keep a reserve on shared accounts" no longer means listing each shared account and missing
@@ -205,12 +205,12 @@
   check inside `tool.call`, so the roster test's "ask" stub asked again and the call never
   ran. The stub now asks once. No change to the mod.
 
-## 0.8.1 (2026-10-21): the guard, tried in a real session
+## 0.8.1 (2026-10-21): fixes from trying the guard in a real session
 
-0.7 and 0.8 were tested only through the engine's dispatch. In a signed-in session the guard
-lowered effort, moved a subagent to a cheaper model, refused a typed prompt and let one through
-with `once`; keep-warm re-read a 45k cache after 12 idle minutes; the roster counted the other
-session. These were wrong:
+Until now 0.7 and 0.8 had been tested only through the engine's dispatch. In a signed-in session
+the guard lowered effort, moved a subagent to a cheaper model, refused a typed prompt and let one
+through with `once`; keep-warm re-read a 45k cache after 12 idle minutes; the roster counted the
+other session. These were wrong:
 
 - **A subagent's run wiped the turn's record.** Every hook hears a subagent's `turn.start`,
   and g-line took it for the main turn's. A turn that lowered effort and then started an agent
@@ -302,7 +302,7 @@ session. These were wrong:
   longer counts.
 - README: stop before usage credits (real money, and five-minute caches there).
 
-## 0.7.0 (2026-10-21): a guard for a low window, by your own rules
+## 0.7.0 (2026-10-21): guard rules for a low usage window
 
 - **Guard (opt-in, off by default).** Rules you write under `guard` in config.json act when a
   usage window runs low. With none, nothing changes. A rule names the percent left of the
@@ -360,7 +360,7 @@ session. These were wrong:
 - The feed builder fills the page from the other sources' leftovers when 𝕏 is quiet, so the
   feed carries up to 15 items instead of stopping at 10.
 
-## 0.6.8 (2026-10-20): the account stays on a busy box
+## 0.6.8 (2026-10-20): the account line survives a busy machine
 
 - On a loaded machine the `account_command` sometimes ran past its 5 seconds (one call measured
   5.5 s on a box with a load average near 94). The failure blanked the account, and the next
@@ -385,7 +385,7 @@ session. These were wrong:
 - The idle-compaction threshold follows Claude Code's floor: `CLAUDE_CODE_IDLE_COMPACT_MIN_TOKENS`
   below 100k counts as 100k.
 
-## 0.6.6 (2026-10-20): the warm cache says how much it holds
+## 0.6.6 (2026-10-20): a warm cache shows its size
 
 - Line 2 reads `cache warm ~59m (57k)` while the cache is warm. Every request restarts the
   clock, so in a busy session the time always read about 59 minutes and said little. The size
@@ -400,7 +400,7 @@ session. These were wrong:
   again unmutes it. A muted source stays in the reader, marked muted. In config.json,
   `pulse_mute` lists them: `["𝕏"]` skips every post on 𝕏.
 
-## 0.6.4 (2026-10-19): the cache line knows about compaction
+## 0.6.4 (2026-10-19): the cache line handles compaction
 
 - After a compaction the cache line reads `compacted, next turn caches 31k`: the size of the
   summary the next turn writes. It used to keep timing the old conversation and, an hour
@@ -438,7 +438,7 @@ session. These were wrong:
 - The README shows the settings manager, the news reader and Pulse's row under the prompt,
   captured from a real session; screenshots draw emoji in colour, two columns wide.
 
-## 0.6.1 (2026-10-16): the reader reads like a front page
+## 0.6.1 (2026-10-16): the news reader keeps the feed's order
 
 - `/g-line news` keeps the feed's own order, best first, instead of re-sorting by time; items
   since your last look are still marked new.
@@ -447,13 +447,13 @@ session. These were wrong:
   (`Reuters via Techmeme`). A headline the text doesn't repeat is shown above it.
 - The key row wraps instead of running off a narrow pane.
 
-## 0.6.0 (2026-10-16): a settings manager, a news reader, and Pulse you can see
+## 0.6.0 (2026-10-16): a settings manager, a news reader, and Pulse's row under the prompt
 
 - **`/g-line settings`.** Every setting on one screen: its key, its value, where the value
   comes from (`default`, `config.json`, `/config`, `your choice`) and a `•` where it differs
   from a fresh install. One key flips it. `/g-line set <name> on|off`, `/g-line toggle <name>`,
   `/g-line reset [name]` and `/g-line set all on` do the same from the prompt.
-- **Everything applies at once, everywhere.** A change made in the pane or by command takes
+- **Changes apply at once.** A change made in the pane or by command takes
   effect in the running session and reaches every other open session within 15 seconds, and
   so does an edit to `~/.config/g-line/config.json`: no restart. Turning on `claude_reads`
   registers the `status` tool for your next message; turning it off makes the tool answer
@@ -466,7 +466,7 @@ session. These were wrong:
   likes and link; `j`/`k`, `o`, `c`, `r`, `q`; items since your last look marked new. The
   feed's new optional fields are read when present: 0.5 readers ignore them, and 0.6 falls
   back to the title.
-- **Borrowed, with thanks.** One table drives every setting, its toggle, its command name and
+- **Where the ideas come from.** One table drives every setting, its toggle, its command name and
   its docs, like starship's per-module config; `/g-line toggle` is `starship toggle`. Showing
   where each value comes from is `git config --show-origin`; the `•` and per-setting reset are
   VS Code's "Modified" marker and "Reset Setting". Instant apply and the line itself as the
@@ -499,7 +499,7 @@ session. These were wrong:
 
 ## 0.5.0 (2026-10-14): glanceline is now g-line
 
-Live status, and receipts on the turns. A mod only.
+Live status and per-turn receipts. g-line is a mod only.
 
 - **New name.** The plugin, the marketplace and the command are now `g-line`
   (`/plugin install g-line --marketplace lifeofgurpreet/g-line`). The repository moved to
@@ -527,7 +527,7 @@ Live status, and receipts on the turns. A mod only.
   timeout. Off by default, so g-line makes no network requests unless you turn it on.
 - **Settings in the pane.** Buttons for the layout, notifications, Pulse and the receipt style.
   Choices stick across sessions.
-- **The cache heads-up says what's at stake.** `Claude cache goes cold in 5m (148k of context at
+- **The cache heads-up shows the context at risk.** `Claude cache goes cold in 5m (148k of context at
   risk)`.
 - **Claude can read the figures, if you let it** (`claude_reads: true`, off by default). A
   `status` tool returns a JSON snapshot with scope and basis, `null` for anything unknown, and
@@ -545,7 +545,7 @@ Live status, and receipts on the turns. A mod only.
 
 ## 0.4.0 (2026-10-14)
 
-The receipt flags the turn worth noticing. Still not one extra row.
+The receipt flags an unusual turn. No extra row.
 
 - **Adaptive receipts** (the new default, `receipt: adaptive`). An ordinary turn closes
   with two quiet facts (`· API $0.13 · cache read 82%`). A turn that did something unusual
@@ -554,21 +554,21 @@ The receipt flags the turn worth noticing. Still not one extra row.
   `3 failed Bash calls`, `compacted 182k → 31k`, or `API $1.42 · 4x recent` (three times the
   median of the last attributable turns and 20 cents more). Each receipt is fixed when the
   turn closes. `short`, `full` and field lists still work, worded the same way.
-- **Honest dollars.** When a background agent overlaps a turn, the session's cost growth
+- **Dollar figures with background agents.** When a background agent overlaps a turn, the session's cost growth
   isn't the turn's alone, so the receipt and spinner leave the dollar figure out. Costs read
   `API $0.75`. The share card's cache figure is now weighted by tokens over the whole session
   instead of an average of turn percentages. A cold-cache rebuild is recorded on its own
   turn, so a later turn can't take it.
-- **A quieter, smarter hint line.** The default layout drops the git branch (add `git` to
+- **A shorter hint line.** The default layout drops the git branch (add `git` to
   `segments` to keep it; glanceline then runs `git status` only when the branch is shown or
   the pane is open). A warm prompt cache stays off the line until under 15 minutes are left;
   `full` always shows it. `context` reads `ctx`, and "on track" is gone.
-- **What warns survives a narrow terminal.** A pace warning reads `5h 72% ! out ~10:03` (the
+- **Warnings survive a narrow terminal.** A pace warning reads `5h 72% ! out ~10:03` (the
   `!` and `~` work without colour, as the line is drawn dim), keeps its words while calm
   segments narrow, and outlasts them, the model name first. The hint line now keeps room for
   Claude Code's `⏸ manual mode on` label, so the engine no longer cuts the line's end.
 - **The spinner** says when a tool keeps failing: `· 5 tools · 2 failed Bash`.
-- **Quieter by default.** The pace coach and the `/compact` suggestion are off by default
+- **Quieter defaults.** The pace coach and the `/compact` suggestion are off by default
   (`coach: true` brings them back). `/glanceline off` now silences toasts, notifications and
   suggestions too, not just the line. The compaction forecast says `compacts soon` instead
   of promising the next turn.
@@ -577,7 +577,7 @@ The receipt flags the turn worth noticing. Still not one extra row.
 
 ## 0.3.0 (2026-10-13)
 
-Everything new rides on lines Claude Code already draws, so the screen still gains no row.
+Everything new uses lines Claude Code already draws, so the screen gains no row.
 
 - **A receipt for every turn.** The line that closes each turn (`Baked for 1m 4s`) adds what
   the turn cost at API prices, how much the prompt cache served and how many tools it ran
@@ -618,7 +618,7 @@ Everything new rides on lines Claude Code already draws, so the screen still gai
   least important drop first, measured against the room the hint leaves. The `[-]`
   collapse control and the blank spacer row went with the band.
 - **The account folds into the line.** `account_command`'s output is the last segment,
-  shortened to the address (`account you@example.com (via CAAM)` reads `you@example.com`),
+  shortened to the address (`account you@example.com (via my-accounts)` reads `you@example.com`),
   and drops before the limits on narrow terminals. It stays off unless configured.
 - **The fallback steps aside reliably.** The mod keeps `~/.cache/glanceline/live/<session
   id>` fresh every 15 s, and `glanceline.py` prints nothing while that file is under a

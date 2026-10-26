@@ -65,12 +65,14 @@ coding agents and for people.
 | `hooks/deck.ts` | Pure: the two-line layout (`lineNow`, `lineNext`, `deck`) |
 | `hooks/inline.ts` | Pure: the one-line layout, the hint's room, the shortened standing hints |
 | `hooks/extras.ts` | Pure: receipts (adaptive and fixed), agents, compaction forecast, the day ledger, the card, the coach |
+| `hooks/dashboard.ts` | Pure: the `/g-line dashboard` page (`dashboardHtml`): usage windows, sessions, 14 days of history, cache and guard, as one self-contained HTML file with no remote loads |
 | `hooks/glance.ts` | Pure: the `status` tool's JSON snapshot |
 | `hooks/settings.ts` | Pure: the settings table (`SETTINGS`), defaults, `merge`, origins, and `/g-line`'s argument parser. Add a setting here and it gets a toggle, a command name and an origin |
 | `hooks/guard.ts` | Pure: the guard's rules (`parseGuard`, `evaluate` with thresholds, paced weeks (`pace`, `paceRead`, `paceCalendar`), hysteresis, accounts, hours, `whyLines`, `epochOf`), what it may change (`cappedEffort`, `agentModel`), what it says, `simulated` readings, and keep-warm's limits (`warmDue`, `readBack`, the per-account lease) |
 | `hooks/roster.ts` | Pure: the other sessions on this machine from their heartbeats in the store (`rosterOf`), line 2's `2 others · 1 waiting`, the pane's rows |
 | `hooks/pulse.ts` | Pure: Pulse feed parsing, cleaning (escapes, controls, https only), the spinner ticker, the row under the prompt, the reader's paging, the cycle's rules (`pickNext`), and Claude Code's own rule for drawing links (`linksDrawn`) |
-| `tools/pulse/build_pulse.py` | Operator tooling, not the mod: builds the Pulse feed and pushes it to the `pulse` branch |
+| `tools/pulse/build_pulse.py` | Maintainer tooling, not the mod: builds the Pulse feed and pushes it to the `pulse` branch |
+| `docs/*.md` | The user guide beyond the README: `guard.md`, `pulse.md`, `configuration.md`, `dashboard.md` |
 | `types/index.d.ts` | The `$.state` contract (`PluginState['g-line']`); self-contained, no imports |
 | `tests/*.test.ts(x)` | `claude plugin test .` runs them; `tests/cases.ts` is the golden file for `core.ts` |
 | `scripts/golden.ts` | Regenerates `tests/cases.ts` (`bun scripts/golden.ts`) |

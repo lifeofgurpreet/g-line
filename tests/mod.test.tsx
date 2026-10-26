@@ -108,7 +108,7 @@ test('one line, when asked: everything on the hint line, the standing hint short
 })
 
 test('the account folds in last, as just the address, and drops before the limits', { timeoutMs: 30_000 }, async () => {
-  expect(accountSegment('account space@example.com (via CAAM)')?.forms).toEqual(['space@example.com'])
+  expect(accountSegment('account space@example.com (via my-accounts)')?.forms).toEqual(['space@example.com'])
   expect(accountSegment('cluster prod-eu')?.forms).toEqual(['cluster prod-eu'])
   expect(accountSegment('  ')).toBeUndefined()
   const p = {
@@ -119,9 +119,9 @@ test('the account folds in last, as just the address, and drops before the limit
     prompt_cache: { caching_observed: true, warm: true, ttl: '1h', expires_at: NOW + 59 * 60 + 30 },
   }
   const o = { now: NOW }
-  const wide = joined(inline(p, o, 'account space@example.com (via CAAM)', tailRoom(150, '(shift+tab to cycle)')))
+  const wide = joined(inline(p, o, 'account space@example.com (via my-accounts)', tailRoom(150, '(shift+tab to cycle)')))
   expect(wide).toBe('Opus 5.5 high · ctx 5% · 5h 1% (4h52m) · wk 40% (3d13h) · cache ~59m · space@example.com')
-  const tight = joined(inline(p, o, 'account space@example.com (via CAAM)', 50))
+  const tight = joined(inline(p, o, 'account space@example.com (via my-accounts)', 50))
   expect(tight.length).toBeLessThanOrEqual(50)
   expect(tight).not.toMatch(/space@/)
   expect(tight).toMatch(/5h 1%/)

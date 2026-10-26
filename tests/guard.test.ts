@@ -6,7 +6,7 @@ import {
 } from '../hooks/guard'
 import type { Facts, WarmFacts } from '../hooks/guard'
 
-// The operator's rules from the README, with a neutral shared account.
+// Rules like the README's example, with a neutral shared account.
 const RULES = parseGuard({
   rules: [
     { left: 20, effort: 'medium' },
@@ -74,7 +74,7 @@ test('a stop waits while the window resets within the hour; with no reset time i
 })
 
 test('a shared-account rule: only that account, only in office hours in its own time zone', () => {
-  const team = { account: 'team@example.com (via CAAM)' }
+  const team = { account: 'team@example.com (via my-accounts)' }
   expect(evaluate(RULES, facts(9, team)).stop?.rule.id).toBe('r3')
   expect(evaluate(RULES, facts(9, { account: 'TEAM@example.com' })).stop?.rule.id).toBe('r3')
   expect(evaluate(RULES, facts(9)).stop).toBeUndefined()
@@ -99,7 +99,7 @@ test('0.8.2: a rule for every account but yours, on the weekly window as well as
     ],
   })
   expect(g.errors).toEqual([])
-  const shared = { account: 'account team@example.com (via CAAM)' }
+  const shared = { account: 'account team@example.com (via my-accounts)' }
   // A shared account in office hours: the 5-hour reserve holds.
   expect(evaluate(g, facts(9, shared)).stop?.rule.id).toBe('r0')
   // Your own account (any case) is left out; no account reading decides nothing.
@@ -145,13 +145,13 @@ test('0.9.1: account groups: an account is in the first group that names it, or 
   })
   expect(g.errors).toEqual(['rule 4: no group named "nobody" in "guard.groups"'])
   expect(g.groups?.map(x => [x.name, x.keepFor])).toEqual([['mine', 'the mine group'], ['team', 'the team'], ['people', 'its owner']])
-  expect(groupOf(g.groups, 'account SAM@example.com (via CAAM)')?.name).toBe('people')
+  expect(groupOf(g.groups, 'account SAM@example.com (via my-accounts)')?.name).toBe('people')
   expect(groupOf(g.groups, 'account stranger@example.com')?.name).toBe('other')
   expect(groupOf(g.groups, null)).toBeUndefined()
   // A person's own seat keeps most of its window; the team seat only its last 10% in office hours.
-  const sam = evaluate(g, facts(35, { account: 'account sam@example.com (via CAAM)' }))
+  const sam = evaluate(g, facts(35, { account: 'account sam@example.com (via my-accounts)' }))
   expect([sam.stop?.rule.id, sam.stop?.group?.name]).toEqual(['r1', 'people'])
-  expect(stopText(sam.stop!, TUE_10_KL, 480, false, { account: 'account sam@example.com (via CAAM)' }))
+  expect(stopText(sam.stop!, TUE_10_KL, 480, false, { account: 'account sam@example.com (via my-accounts)' }))
     .toBe('g-line held this: sam@example.com has 35% of its 5-hour window left; g-line keeps the last 40% for its owner. Lifts at 13:00, in 3h 0m. Enter again sends it anyway.')
   const team = evaluate(g, facts(9, { account: 'ops@example.com' }))
   expect(stopText(team.stop!, TUE_10_KL, 480, false, { account: 'ops@example.com', typed: false }))

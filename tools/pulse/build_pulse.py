@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Build g-line's Pulse feed and publish it to the repository's `pulse` branch.
 
-Operator tooling, not part of the mod: the mod only reads the published file
+Maintainer tooling, not part of the mod: the mod only reads the published file
 (https://raw.githubusercontent.com/lifeofgurpreet/g-line/pulse/pulse.json),
 and only when a person turns Pulse on.
 
@@ -13,7 +13,7 @@ kinds (the day's big story, voices on X, Claude Code and Anthropic news, Hacker 
 Willison). 0.5.x readers show the first eight, so order is the ranking.
 
 Sources, each labelled as what it is (no source is passed off as another):
-  - curated.json on the `pulse` branch: items the operator adds by hand. An X post needs only its
+  - curated.json on the `pulse` branch: items the maintainer adds by hand. An X post needs only its
     URL; its author and text are filled in. `x_accounts` there replaces the archive-watched list.
   - Techmeme's front page: AI stories, ranked the way Techmeme ranks them (position on the page,
     then how much coverage the story drew). The item is the publisher's article, labelled with the
@@ -44,7 +44,7 @@ Item fields (schema 1; everything past the first four is optional, for newer rea
   links         the https links an X post carries (its article, if any)
 
 Standard library only. Publishing never checks out or switches branches: it
-writes the commit with git plumbing and pushes it as the operator.
+writes the commit with git plumbing and pushes it (`--push` names a wrapper, `--author` the identity).
 """
 import argparse
 import datetime as dt
@@ -513,7 +513,7 @@ def git(repo, *args, data=None):
     return subprocess.run(['git', '-C', repo, *args], input=data, capture_output=True, text=True, check=True).stdout.strip()
 
 
-def publish(repo, feed, push_cmd):
+def publish(repo, feed, push_cmd, author=None):
     git(repo, 'fetch', '-q', 'origin', 'pulse')
     parent = git(repo, 'rev-parse', 'origin/pulse')
     old = json.loads(git(repo, 'show', 'origin/pulse:pulse.json') or '{}')
@@ -525,7 +525,10 @@ def publish(repo, feed, push_cmd):
     entries = [line for line in git(repo, 'ls-tree', 'origin/pulse').splitlines() if not line.endswith('\tpulse.json')]
     entries.append(f'100644 blob {blob}\tpulse.json')
     tree = git(repo, 'mktree', data='\n'.join(entries) + '\n')
-    env_author = ['-c', 'user.name=Gurpreet', '-c', 'user.email=60426541+lifeofgurpreet@users.noreply.github.com']
+    env_author = []
+    if author:
+        name, _, email = author.partition('<')
+        env_author = ['-c', f'user.name={name.strip()}', '-c', f'user.email={email.rstrip(">").strip()}']
     commit = subprocess.run(['git', '-C', repo, *env_author, 'commit-tree', tree, '-p', parent, '-m',
                              f"pulse: {len(feed['items'])} items, {feed['generated_at']}\n\nAgent: g-line-pulse"],
                             capture_output=True, text=True, check=True).stdout.strip()
@@ -538,8 +541,9 @@ def main():
     ap.add_argument('--repo', help='the g-line checkout (for curated.json and publishing)')
     ap.add_argument('--out', help='also write the feed here')
     ap.add_argument('--publish', action='store_true')
-    ap.add_argument('--push', default='bbi-user-gh --expected-login lifeofgurpreet --git --author-name Gurpreet --',
-                    help='the command prefix that runs a git operation as the operator')
+    ap.add_argument('--push', default='git',
+                    help='the command prefix that runs the push, for a wrapper that pushes as a given account')
+    ap.add_argument('--author', help='"Name <email>" for the feed commit; git\'s own identity when left out')
     args = ap.parse_args()
     feed, notes = build(args.repo)
     print(' '.join(notes))
@@ -549,7 +553,7 @@ def main():
     if args.publish:
         if not args.repo:
             sys.exit('--publish needs --repo')
-        publish(args.repo, feed, args.push.split())
+        publish(args.repo, feed, args.push.split(), args.author)
 
 
 if __name__ == '__main__':

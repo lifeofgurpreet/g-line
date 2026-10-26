@@ -382,7 +382,7 @@ test('an account reading that fails or runs out of time keeps the last one and i
     if (argv[0] !== 'acct') return undefined
     calls += 1
     if (answer === 'slow') throw new Error('timed out after 5000 ms')
-    return { value: { exitCode: 0, stdout: `account ${answer}@example.com (via CAAM)\n`, stderr: '' } }
+    return { value: { exitCode: 0, stdout: `account ${answer}@example.com (via my-accounts)\n`, stderr: '' } }
   }
   const shown = async () => {
     await $.command.run({ command: 'g-line', args: '' } as never)
@@ -393,15 +393,15 @@ test('an account reading that fails or runs out of time keeps the last one and i
     return text
   }
   await start($)
-  expect(await shown()).toBe('account seat@example.com (via CAAM)')
+  expect(await shown()).toBe('account seat@example.com (via my-accounts)')
   answer = 'slow'
   await w.clock.advance(10 * 60 * 1000)
-  expect(await shown()).toBe('account seat@example.com (via CAAM)')
+  expect(await shown()).toBe('account seat@example.com (via my-accounts)')
   const missed = calls
   answer = 'other'
   await w.clock.advance(60 * 1000)
   expect(calls).toBeGreaterThan(missed)
-  expect(await shown()).toBe('account other@example.com (via CAAM)')
+  expect(await shown()).toBe('account other@example.com (via my-accounts)')
 })
 
 test('nothing is added above the prompt and no status row is pinned', { timeoutMs: 30_000 }, async ($, on) => {

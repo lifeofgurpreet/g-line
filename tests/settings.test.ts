@@ -67,7 +67,7 @@ test('merge reads every config.json key, and ignores malformed values', () => {
 })
 
 test('usage_command is a list of words, and ignored when malformed', () => {
-  expect(merge(DEFAULTS, { account_command: ['a'], usage_command: ['caam-account-usage', '--x'] }).usageCommand).toEqual(['caam-account-usage', '--x'])
+  expect(merge(DEFAULTS, { account_command: ['a'], usage_command: ['my-usage-tool', '--x'] }).usageCommand).toEqual(['my-usage-tool', '--x'])
   expect(merge(DEFAULTS, { usage_command: [] }).usageCommand).toBeUndefined()
   expect(merge(DEFAULTS, { usage_command: 'tool' }).usageCommand).toBeUndefined()
   expect(merge(DEFAULTS, { usage_command: ['ok', 3] }).usageCommand).toBeUndefined()
