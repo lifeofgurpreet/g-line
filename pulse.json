@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-26T21:59:10Z",
+ "generated_at": "2026-10-26T22:31:36Z",
  "items": [
   {
    "title": "Anthropic's co-founders say they “believe that AI is one of the most consequential technologies in…",
@@ -17,7 +17,7 @@
    "published_at": "2026-10-26T18:06:27Z",
    "text": "GPT-6.1 Terra: delivering fast and capable computer use at a lower price. GPT-6.1 Terra understands what’s on screen, takes action across apps, writes naturally, and is a more capable model for your whole workday with the efficiency to take on more of it.",
    "author_name": "OpenAI",
-   "likes": 17229,
+   "likes": 18007,
    "story": "OpenAI releases GPT-6.1 Terra, touting “fast and capable computer use at scale” and clearer, more natural writing, priced at $1/1M input and $5/1M output tokens"
   },
   {
@@ -28,44 +28,30 @@
    "text": "Added --hold-idle-file and --max-hold-min to self-hosted-runner, to keep an idle session while your host reports processes it left running · Added a tip for the Explanatory output style, shown when you ask Claude for explanations · Fixed long freezes at startup and after reading or editing files when a CLAUDE.md file holds a very long list item · Fixed interrupting Claude not taking effect until a timeout while an MCP server had not answered a resource read or a skill was still downloading"
   },
   {
+   "title": "Announcing three major scientific discoveries, one each in mathematics (harmonic analysis), compute…",
+   "url": "https://x.com/gdb/status/2114837059462627533",
+   "source": "𝕏 @gdb",
+   "published_at": "2026-10-26T21:50:21Z",
+   "text": "Announcing three major scientific discoveries, one each in mathematics (harmonic analysis), computer science (complexity theory), and physics (quantum field theory). AI starting to help us improve our understanding of the universe!",
+   "author_name": "Greg Brockman",
+   "likes": 1856,
+   "story": "OpenAI announces three breakthroughs in computer science, math, and physics, including that the Exponential Time Hypothesis, a longstanding conjecture, is false",
+   "links": [
+    "https://openai.com/index/building-scientific-understanding-with-academic-communities/"
+   ]
+  },
+  {
    "title": "Anthropic has filed an S-1 registration statement with the SEC related to its proposed IPO. Read mo…",
    "url": "https://x.com/AnthropicAI/status/2114705042817110293",
    "source": "𝕏 @AnthropicAI",
    "published_at": "2026-10-26T13:05:46Z",
    "text": "Anthropic has filed an S-1 registration statement with the SEC related to its proposed IPO. Read more: Legal disclaimer: A registration statement relating to these securities has been filed with the SEC but has not yet become effective. These securities…",
    "author_name": "Anthropic",
-   "likes": 14848,
+   "likes": 15003,
    "story": "Anthropic files for an IPO on the Nasdaq under the symbol ANT; the number of Class A shares to be offered and the price range is yet to be determined",
    "links": [
     "https://www.anthropic.com/news/s1-sec"
    ]
-  },
-  {
-   "title": "Anthropic's S-1 lists 94 pages of risk factors and warns that the “scale of harm” from a “catastrop…",
-   "url": "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-10-26-2026/card/anthropic-s-risk-factors-include-catastrophic-ai-related-incident--aAwPiJrvIG5OHdQGAo1n",
-   "source": "Wall Street Journal",
-   "published_at": "2026-10-26T14:04:15Z",
-   "text": "Anthropic's S-1 lists 94 pages of risk factors and warns that the “scale of harm” from a “catastrophic” AI incident might mean it is unable to obtain insurance. 94 pages — Nearly a quarter of Anthropic's S1, or 94 pages, was dedicated to risk factors …",
-   "via": "Techmeme"
-  },
-  {
-   "title": "GPT-6.1 Terra",
-   "url": "https://openai.com/index/introducing-gpt-6-1-terra/",
-   "source": "Hacker News",
-   "published_at": "2026-10-26T18:01:17Z",
-   "text": "405 points and 255 comments on Hacker News.",
-   "points": 405,
-   "discussion": "https://news.ycombinator.com/item?id=50248124"
-  },
-  {
-   "title": "While evaluating Qwen3.8-Flash-Next in a controlled sandbox environment, Cohere's research team obs…",
-   "url": "https://x.com/cohere/status/2114752002370544004",
-   "source": "𝕏 @cohere",
-   "published_at": "2026-10-26T16:12:22Z",
-   "text": "While evaluating Qwen3.8-Flash-Next in a controlled sandbox environment, Cohere's research team observed something unexpected. Asked to generate a defensive cybersecurity detection rule, the model instead inventoried aspects of the machine it was running on and attempted to…",
-   "author_name": "Cohere",
-   "likes": 8625,
-   "story": "Cohere says during an evaluation Qwen3.8-Flash-Next inventoried its host machine and tried to upload a probe file to an Alibaba Cloud storage bucket in Beijing"
   },
   {
    "title": "Anthropic S-1: an $80.7B net loss on revenue of $16.3B in H1 2026, up from a $13B net loss on reven…",
@@ -76,33 +62,23 @@
    "via": "Techmeme"
   },
   {
-   "title": "The lower and high storage models have different A20 Chips. The 512GB configuration has 6 CPU cores…",
-   "url": "https://x.com/markgurman/status/2114705568279724526",
-   "source": "𝕏 @markgurman",
-   "published_at": "2026-10-26T13:07:51Z",
-   "text": "The lower and high storage models have different A20 Chips. The 512GB configuration has 6 CPU cores versus 5. Both have 7 core GPUs.",
-   "author_name": "Mark Gurman",
-   "likes": 487,
-   "story": "Apple unveils a redesigned iPad mini with an 8.5-inch OLED display, an A20 Pro, a nano-texture display option, and IP67 water resistance, for $699+ from Nov. 6"
-  },
-  {
-   "title": "Sebastian Raschka's from-scratch video course on building reasoning models",
-   "url": "https://magazine.sebastianraschka.com/p/building-reasoning-models",
+   "title": "GPT-6.1 Terra",
+   "url": "https://openai.com/index/introducing-gpt-6-1-terra/",
    "source": "Hacker News",
-   "published_at": "2026-10-26T15:11:59Z",
-   "text": "488 points and 72 comments on Hacker News.",
-   "points": 488,
-   "discussion": "https://news.ycombinator.com/item?id=50245138"
+   "published_at": "2026-10-26T18:01:17Z",
+   "text": "428 points and 269 comments on Hacker News.",
+   "points": 428,
+   "discussion": "https://news.ycombinator.com/item?id=50248124"
   },
   {
-   "title": "If you were thinking concentrating AI behind closed doors is safe, it is time to update your priors!",
-   "url": "https://x.com/ClementDelangue/status/2114713576296300604",
-   "source": "𝕏 @ClementDelangue",
-   "published_at": "2026-10-26T13:39:40Z",
-   "text": "If you were thinking concentrating AI behind closed doors is safe, it is time to update your priors!",
-   "author_name": "clem 🤗",
-   "likes": 445,
-   "story": "AI cybersecurity startup Cathedral says it breached Anthropic's data and messaging systems, under a program inviting outside experts to test Anthropic's systems"
+   "title": "While evaluating Qwen3.8-Flash-Next in a controlled sandbox environment, Cohere's research team obs…",
+   "url": "https://x.com/cohere/status/2114752002370544004",
+   "source": "𝕏 @cohere",
+   "published_at": "2026-10-26T16:12:22Z",
+   "text": "While evaluating Qwen3.8-Flash-Next in a controlled sandbox environment, Cohere's research team observed something unexpected. Asked to generate a defensive cybersecurity detection rule, the model instead inventoried aspects of the machine it was running on and attempted to…",
+   "author_name": "Cohere",
+   "likes": 8804,
+   "story": "Cohere says during an evaluation Qwen3.8-Flash-Next inventoried its host machine and tried to upload a probe file to an Alibaba Cloud storage bucket in Beijing"
   },
   {
    "title": "Anthropic S-1: of its $81B net loss in H1 2026, $72B+ was related to rising convertible note value…",
@@ -113,13 +89,50 @@
    "via": "Techmeme"
   },
   {
-   "title": "Concerning behavior from a popular open-weight AI model",
-   "url": "https://cohere.com/blog/concerning-behaviour-popular-open-weight-ai-model",
+   "title": "The lower and high storage models have different A20 Chips. The 512GB configuration has 6 CPU cores…",
+   "url": "https://x.com/markgurman/status/2114705568279724526",
+   "source": "𝕏 @markgurman",
+   "published_at": "2026-10-26T13:07:51Z",
+   "text": "The lower and high storage models have different A20 Chips. The 512GB configuration has 6 CPU cores versus 5. Both have 7 core GPUs.",
+   "author_name": "Mark Gurman",
+   "likes": 491,
+   "story": "Apple unveils a redesigned iPad mini with an 8.5-inch OLED display, an A20 Pro, a nano-texture display option, and IP67 water resistance, for $699+ from Nov. 6"
+  },
+  {
+   "title": "Sebastian Raschka's from-scratch video course on building reasoning models",
+   "url": "https://magazine.sebastianraschka.com/p/building-reasoning-models",
    "source": "Hacker News",
-   "published_at": "2026-10-26T16:35:44Z",
-   "text": "219 points and 81 comments on Hacker News.",
-   "points": 219,
-   "discussion": "https://news.ycombinator.com/item?id=50246658"
+   "published_at": "2026-10-26T15:11:59Z",
+   "text": "494 points and 75 comments on Hacker News.",
+   "points": 494,
+   "discussion": "https://news.ycombinator.com/item?id=50245138"
+  },
+  {
+   "title": "If you were thinking concentrating AI behind closed doors is safe, it is time to update your priors!",
+   "url": "https://x.com/ClementDelangue/status/2114713576296300604",
+   "source": "𝕏 @ClementDelangue",
+   "published_at": "2026-10-26T13:39:40Z",
+   "text": "If you were thinking concentrating AI behind closed doors is safe, it is time to update your priors!",
+   "author_name": "clem 🤗",
+   "likes": 447,
+   "story": "AI cybersecurity startup Cathedral says it breached Anthropic's data and messaging systems, under a program inviting outside experts to test Anthropic's systems"
+  },
+  {
+   "title": "Anthropic's IPO outlines an unusual succession plan: confidential, ranked lists of up to 10 success…",
+   "url": "https://www.forbes.com/sites/annatong/2026/10/26/anthropic-founders-can-name-secret-successors/",
+   "source": "Anna Tong / Forbes",
+   "published_at": "2026-10-26T20:25:47Z",
+   "text": "Anthropic's IPO outlines an unusual succession plan: confidential, ranked lists of up to 10 successors per co-founder, subject to approval from five co-founders. Anthropic's IPO includes a private line of succession: confidential lists of would-be heirs to its founders' voting power …",
+   "via": "Techmeme"
+  },
+  {
+   "title": "ChatGPT Keeps Telling People 404 Media Can Solve Their Tech Support Problems",
+   "url": "https://www.404media.co/chatgpt-keeps-telling-people-404-media-can-solve-their-tech-support-problems/",
+   "source": "Hacker News",
+   "published_at": "2026-10-26T17:32:16Z",
+   "text": "192 points and 73 comments on Hacker News.",
+   "points": 192,
+   "discussion": "https://news.ycombinator.com/item?id=50247630"
   },
   {
    "title": "Sources: Anthropic is aiming to go public the week of November 16 and could raise ~$100B at a $1.5T…",
@@ -127,14 +140,6 @@
    "source": "Wall Street Journal",
    "published_at": "2026-10-26T14:06:57Z",
    "text": "Sources: Anthropic is aiming to go public the week of November 16 and could raise ~$100B at a $1.5T to $2T valuation, after initially preparing for October. Anthropic didn't reveal the valuation it is targeting or the number of shares it plans to sell — Anthropic filed its IPO paperwork …",
-   "via": "Techmeme"
-  },
-  {
-   "title": "Anthropic's IPO outlines an unusual succession plan: confidential, ranked lists of up to ten succes…",
-   "url": "https://www.forbes.com/sites/annatong/2026/10/26/anthropic-founders-can-name-secret-successors/",
-   "source": "Anna Tong / Forbes",
-   "published_at": "2026-10-26T20:25:47Z",
-   "text": "Anthropic's IPO outlines an unusual succession plan: confidential, ranked lists of up to ten successors per founder, subject to approval from five cofounders. Anthropic's IPO includes a private line of succession: confidential lists of would-be heirs to its founders' voting power, chosen by the founders and approved by one another.",
    "via": "Techmeme"
   }
  ],
