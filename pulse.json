@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-26T09:34:50Z",
+ "generated_at": "2026-10-26T10:07:47Z",
  "items": [
   {
    "title": "Elon Musk says SpaceX closed $40B in GPU debt, debt markets have shut off credit for AI data center…",
@@ -17,7 +17,7 @@
    "published_at": "2026-10-26T00:19:20Z",
    "text": "The naysayers are getting embarrassing. Every day, people are using AI to make incredible breakthroughs and answer some of the toughest questions around, like \"what do I like about my child?\"",
    "author_name": "Osita Nwanevu",
-   "likes": 7690,
+   "likes": 8067,
    "story": "A profile of former Google VP and Yahoo CEO Marissa Mayer, whose startup Dazzle is building an AI assistant to help non-tech enthusiasts with mundane tasks"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-10-24T12:07:58Z",
    "text": "Person who is reverse engineering his tv gets banned from OpenAI You aren't allowed to stop your tv from spying on your family. You have to ask for permission Or, maybe, maybe we accelerate",
    "author_name": "kache",
-   "likes": 27325,
+   "likes": 27352,
    "story": "OpenAI and Anthropic blocked the reverse engineering of smart TVs spying on us"
   },
   {
@@ -50,8 +50,8 @@
    "url": "https://www.theregister.com/systems/2026/10/22/ibm-ceo-says-open-weight-models-are-now-irresistibly-good-and-cheap-on-prem/5304640",
    "source": "Hacker News",
    "published_at": "2026-10-26T01:47:46Z",
-   "text": "237 points and 137 comments on Hacker News.",
-   "points": 237,
+   "text": "251 points and 145 comments on Hacker News.",
+   "points": 251,
    "discussion": "https://news.ycombinator.com/item?id=50238088"
   },
   {
@@ -61,7 +61,7 @@
    "published_at": "2026-10-23T17:44:44Z",
    "text": "Kimi K3.1 Pro launches at 4th on the Artificial Analysis Intelligence Index scoring 55, making large gains in agentic performance; it will be the leading open-weights model once its weights are published @Kimi_Moonshot's new reasoning model gains 11 points over Kimi K3 (max,…",
    "author_name": "Artificial Analysis",
-   "likes": 5463,
+   "likes": 5464,
    "story": "Kimi K3.1 Pro's debut draws scrutiny over allegations that influencers were asked to promote the model without disclosing a commercial relationship to Moonshot"
   },
   {
@@ -79,7 +79,7 @@
    "published_at": "2026-10-25T10:11:07Z",
    "text": "r/opensource just banned any project that uses AI. By their own rule, that means the biggest open source project of all time, Linux, is now banned too. The kernel already accepts AI-assisted code. This is the real AI psychosis.",
    "author_name": "chasm",
-   "likes": 9848,
+   "likes": 9866,
    "story": "Moderators of r/opensource ban submissions of projects using, made by, or intended for AI, exclude non-English speakers over AI translation concerns, and more"
   },
   {
@@ -87,8 +87,8 @@
    "url": "https://github.com/KrushnaVardhanReddy/PaperPilot",
    "source": "Hacker News",
    "published_at": "2026-10-26T03:29:05Z",
-   "text": "131 points and 30 comments on Hacker News.",
-   "points": 131,
+   "text": "137 points and 30 comments on Hacker News.",
+   "points": 137,
    "discussion": "https://news.ycombinator.com/item?id=50238739"
   },
   {
@@ -104,8 +104,8 @@
    "url": "https://lynchlab.net/llm-skin-cancer",
    "source": "Hacker News",
    "published_at": "2026-10-25T17:15:38Z",
-   "text": "551 points and 237 comments on Hacker News.",
-   "points": 551,
+   "text": "558 points and 238 comments on Hacker News.",
+   "points": 558,
    "discussion": "https://news.ycombinator.com/item?id=50233779"
   },
   {
@@ -121,8 +121,8 @@
    "url": "https://minimaxir.com/2026/10/cheap-llms/",
    "source": "Hacker News",
    "published_at": "2026-10-25T21:11:31Z",
-   "text": "309 points and 301 comments on Hacker News.",
-   "points": 309,
+   "text": "313 points and 309 comments on Hacker News.",
+   "points": 313,
    "discussion": "https://news.ycombinator.com/item?id=50236102"
   },
   {
@@ -130,7 +130,7 @@
    "url": "https://www.axios.com/2026/10/24/ai-ceos-washington-political-liability",
    "source": "Maria Curi / Axios",
    "published_at": "2026-10-25T11:01:28Z",
-   "text": "Lawmakers and Hill staffers in both parties say AI leaders are becoming a political liability as they swing between claims of prosperity and existential dangers. Washington has always viewed Silicon Valley as culturally strange. But the current crop of AI leaders is becoming …",
+   "text": "Lawmakers and Hill staffers in both parties say AI leaders are becoming a political liability as they swing between claims of prosperity and existential dangers",
    "via": "Techmeme"
   }
  ],
