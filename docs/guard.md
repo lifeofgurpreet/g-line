@@ -237,8 +237,11 @@ limits:
   change or an account change.
 - It stands aside for a conversation Claude Code will compact on its own when idle
   (`idleCompaction`, at 200k tokens and up by default). Claude Code turns idle compaction on per
-  account, so keep-warm counts on it only once a session on the machine has been seen compacting
-  while idle in the last 14 days; until then big conversations are kept warm too. Set
+  account, so keep-warm counts on it only once a session on the same account has been seen
+  compacting while idle in the last 14 days; until then big conversations are kept warm too. A
+  sighting on one account says nothing about another on the same machine. If a big conversation
+  then sits idle a full hour and its cache lapses with nothing compacting it, the sighting is
+  dropped and keep-warm covers that account's big conversations again, with a toast saying so. Set
   `"idleCompaction": false` in Claude Code's settings to keep them warm regardless.
 - A resumed conversation waits for its first request: before it, Claude Code has nothing to send
   again.

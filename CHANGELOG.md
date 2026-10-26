@@ -1,5 +1,20 @@
 # Changelog
 
+## 0.19.3 (2026-10-27): idle compaction is counted per account
+
+- On a machine running several accounts, big conversations went cold after an idle hour.
+  Keep-warm stands aside for a conversation of 200k tokens or more once Claude Code has been
+  seen compacting an idle conversation, because it expects that compaction to summarise it.
+  The sighting was kept for the whole machine, but Claude Code turns idle compaction on per
+  account: one account's compaction left every other account's big conversations to a
+  compaction that never came. On one shared machine, cold rebuilds went from none on the day
+  before such a sighting to several a day after it, while keep-warm's re-reads fell.
+- The sighting is now kept per account (the account `account_command` reads, or the machine's
+  when there is none). A sighting recorded by 0.19.2 or earlier, machine-wide, no longer counts.
+- If a big conversation sits idle a full hour and its cache lapses with nothing compacting it,
+  g-line drops that account's sighting and says so in a toast: keep-warm covers the account's
+  big conversations again until a compaction is seen on it.
+
 ## 0.19.2 (2026-10-27): a window on pace to run out says how long until it fills
 
 - Line 2 read `5h out ~00:35, resets 02:10`. At 00:20 that looked like 35 minutes left beside

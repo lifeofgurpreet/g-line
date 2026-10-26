@@ -260,9 +260,9 @@ async function idleCompactionOf($: EngineInterface): Promise<IdleCompaction | un
     // settings unreadable: Claude Code's default, on
   }
   // Claude Code turns idle compaction on per account, out of sight: it counts
-  // here only once a session on this machine was seen compacting while idle.
+  // here only once a session on this account was seen compacting while idle.
   try {
-    const seen = Number(await $.store.get(IDLE_SEEN_KEY))
+    const seen = Number(await $.store.get(idleSeenKey((await read($, snap)).account)))
     if (!(seen > 0) || (await nowMs($)) - seen > IDLE_SEEN_MS) return undefined
   } catch {
     return undefined
@@ -315,18 +315,43 @@ async function readResumed($: EngineInterface): Promise<void> {
   }
 }
 
-/** When a session on this machine last compacted while idle (ms), and how long that counts. */
-const IDLE_SEEN_KEY = 'idle-compaction-seen'
+/** When a session on an account last compacted while idle (ms), and how long that counts. */
 const IDLE_SEEN_MS = 14 * 86_400_000
 
-/** An idle compaction seen: from now on Claude Code's idle compaction counts on this machine. */
+/**
+ * The store's name for that sighting on an account. One machine can run many
+ * accounts, and a sighting on one says nothing about another: a machine-wide
+ * key left every other account's big conversations to a compaction that never came.
+ */
+function idleSeenKey(account: string | null | undefined): string {
+  return `idle-compaction-seen:${accountKey(account)}`
+}
+
+/** An idle compaction seen: from now on Claude Code's idle compaction counts on this account. */
 async function idleCompactionSeen($: EngineInterface): Promise<void> {
   try {
-    await $.store.set(IDLE_SEEN_KEY, await nowMs($))
+    await $.store.set(idleSeenKey((await read($, snap)).account), await nowMs($))
   } catch {
     // this session's own view
   }
   idle = await idleCompactionOf($)
+}
+
+/**
+ * A conversation idle compaction should have summarised lapsed after a full
+ * hour with nothing compacting it: on this account Claude Code doesn't compact
+ * idle conversations, so keep-warm stops standing aside for them.
+ */
+async function idleCompactionMissed($: EngineInterface): Promise<void> {
+  try {
+    await $.store.set(idleSeenKey((await read($, snap)).account), 0)
+  } catch {
+    return
+  }
+  idle = undefined
+  if (config.guard.keepWarm) {
+    await toast($, 'Claude Code did not compact this conversation while it sat idle: keep-warm keeps big conversations on this account warm again.', 10_000)
+  }
 }
 
 function automaticTtl(s: Snap): '5m' | '1h' {
@@ -1704,6 +1729,8 @@ async function keepWarm($: EngineInterface): Promise<void> {
   const c = s.cache
   // A resumed conversation: until its first request, Claude Code has nothing to send again.
   if (!c?.cached || c.restored) return
+  // The account can change under a session; whether idle compaction covers it is the account's.
+  idle = await idleCompactionOf($)
   const now = await nowSeconds($)
   const key = accountKey(s.account)
   const hour = `warm:${key}:${Math.floor(now / 3600)}`
@@ -2351,7 +2378,9 @@ export const register: Register = (on, options) => {
       const prefix = u.input_tokens + u.cache_read_input_tokens + u.cache_creation_input_tokens + u.output_tokens
       const was = (await read($, snap)).cache
       if (was?.accountChanged) await update($, turnNow, live => (live ? { ...live, accountChanged: true } : live))
-      await afterRealRequest($, !!was?.cached && was.compactedTo === undefined && u.cache_creation_input_tokens > was.prefix * 0.5)
+      const rebuilt = !!was?.cached && was.compactedTo === undefined && u.cache_creation_input_tokens > was.prefix * 0.5
+      await afterRealRequest($, rebuilt)
+      if (rebuilt && was && !was.restored && idle && was.prefix >= idle.minTokens && started - was.lastAt >= 3600) await idleCompactionMissed($)
       // A model other than the one asked for answered: Claude Code fell back. Said on the receipt.
       if (u.model && plainModel(u.model) !== plainModel(e.model)) {
         const served = u.model
