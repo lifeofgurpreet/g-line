@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-26T10:40:35Z",
+ "generated_at": "2026-10-26T11:12:55Z",
  "items": [
   {
    "title": "Elon Musk says SpaceX closed $40B in GPU debt, debt markets have shut off credit for AI data center…",
@@ -17,7 +17,7 @@
    "published_at": "2026-10-26T00:19:20Z",
    "text": "The naysayers are getting embarrassing. Every day, people are using AI to make incredible breakthroughs and answer some of the toughest questions around, like \"what do I like about my child?\"",
    "author_name": "Osita Nwanevu",
-   "likes": 8567,
+   "likes": 9096,
    "story": "A profile of former Google VP and Yahoo CEO Marissa Mayer, whose startup Dazzle is building an AI assistant to help non-tech enthusiasts with mundane tasks"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-10-24T12:07:58Z",
    "text": "Person who is reverse engineering his tv gets banned from OpenAI You aren't allowed to stop your tv from spying on your family. You have to ask for permission Or, maybe, maybe we accelerate",
    "author_name": "kache",
-   "likes": 27366,
+   "likes": 27377,
    "story": "OpenAI and Anthropic blocked the reverse engineering of smart TVs spying on us"
   },
   {
@@ -50,8 +50,8 @@
    "url": "https://www.theregister.com/systems/2026/10/22/ibm-ceo-says-open-weight-models-are-now-irresistibly-good-and-cheap-on-prem/5304640",
    "source": "Hacker News",
    "published_at": "2026-10-26T01:47:46Z",
-   "text": "265 points and 159 comments on Hacker News.",
-   "points": 265,
+   "text": "276 points and 173 comments on Hacker News.",
+   "points": 276,
    "discussion": "https://news.ycombinator.com/item?id=50238088"
   },
   {
@@ -61,7 +61,7 @@
    "published_at": "2026-10-25T10:11:07Z",
    "text": "r/opensource just banned any project that uses AI. By their own rule, that means the biggest open source project of all time, Linux, is now banned too. The kernel already accepts AI-assisted code. This is the real AI psychosis.",
    "author_name": "chasm",
-   "likes": 9891,
+   "likes": 9930,
    "story": "Moderators of r/opensource ban submissions of projects using, made by, or intended for AI, exclude non-English speakers over AI translation concerns, and more"
   },
   {
@@ -77,8 +77,8 @@
    "url": "https://lynchlab.net/llm-skin-cancer",
    "source": "Hacker News",
    "published_at": "2026-10-25T17:15:38Z",
-   "text": "566 points and 242 comments on Hacker News.",
-   "points": 566,
+   "text": "571 points and 245 comments on Hacker News.",
+   "points": 571,
    "discussion": "https://news.ycombinator.com/item?id=50233779"
   },
   {
@@ -94,9 +94,17 @@
    "url": "https://github.com/KrushnaVardhanReddy/PaperPilot",
    "source": "Hacker News",
    "published_at": "2026-10-26T03:29:05Z",
-   "text": "146 points and 38 comments on Hacker News.",
-   "points": 146,
+   "text": "152 points and 44 comments on Hacker News.",
+   "points": 152,
    "discussion": "https://news.ycombinator.com/item?id=50238739"
+  },
+  {
+   "title": "Modern AI panic reflects “cognitive mercantilism”, a zero-sum worldview where intelligence is hoard…",
+   "url": "https://contraptions.venkateshrao.com/p/cognitive-mercantilism",
+   "source": "Venkatesh Rao / Contraptions",
+   "published_at": "2026-10-26T10:56:13Z",
+   "text": "Modern AI panic reflects “cognitive mercantilism”, a zero-sum worldview where intelligence is hoarded as a scarce supply-side commodity managed by elites",
+   "via": "Techmeme"
   },
   {
    "title": "High-frequency trading firms such as Jane Street are investing in AI and chip startups and neocloud…",
@@ -115,19 +123,11 @@
    "via": "Techmeme"
   },
   {
-   "title": "Lawmakers and Hill staffers in both parties say AI leaders are becoming a political liability as th…",
-   "url": "https://www.axios.com/2026/10/24/ai-ceos-washington-political-liability",
-   "source": "Maria Curi / Axios",
-   "published_at": "2026-10-25T11:01:28Z",
-   "text": "Lawmakers and Hill staffers in both parties say AI leaders are becoming a political liability as they swing between claims of prosperity and existential dangers",
-   "via": "Techmeme"
-  },
-  {
-   "title": "Data center tenants now demand $5M+ per day in late-delivery fees, up from $1M in spring 2026, spaw…",
-   "url": "https://www.theinformation.com/articles/data-center-late-fees-hit-5-million-per-day-spawning-new-insurance",
-   "source": "Ann Davis Vaughan / The Inf…",
-   "published_at": "2026-10-25T19:10:57Z",
-   "text": "Data center tenants now demand $5M+ per day in late-delivery fees, up from $1M in spring 2026, spawning new “delay-in-delivery” coverage from brokers like Marsh",
+   "title": "Ray-Ban Meta Audio glasses review: no camera is a bonus for some, good audio quality, and Meta AI w…",
+   "url": "https://www.bloomberg.com/news/articles/2026-10-25/ray-ban-meta-audio-ai-glasses-cost-more-while-ditching-a-key-feature-review",
+   "source": "Samantha Kelly / Bloomberg",
+   "published_at": "2026-10-26T11:10:54Z",
+   "text": "Ray-Ban Meta Audio glasses review: no camera is a bonus for some, good audio quality, and Meta AI works well, but lingering privacy concerns and fairly pricey. Meta Platforms Inc.'s $349-and-up Ray-Ban Meta Audio, announced last month, are an odd proposition.",
    "via": "Techmeme"
   }
  ],
