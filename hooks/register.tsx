@@ -30,6 +30,7 @@ import {
 import type { ReceiptSpec } from './extras'
 import { MOD_KEYS, accountSegment, inline, joined, modesWidth, shownHint, tailRoom, withText } from './inline'
 import { deck, nextRoom } from './deck'
+import { dashboardHtml } from './dashboard'
 import { STATUS_DESCRIPTION, STATUS_SCHEMA, STATUS_TOOL, statusJson } from './glance'
 import {
   PULSE_AFTER_MS, PULSE_BEATS, PULSE_EVERY_MS, PULSE_TTL_MS, PULSE_URL, ageOf, clean, countOf, itemNow, keptShown, linksDrawn, mergedShown,
@@ -2072,13 +2073,95 @@ async function resumeSegment($: EngineInterface): Promise<Segment | undefined> {
   return { key: 'resume', priority: 70, tone: 'accent', forms: [`resumes ${when}`] }
 }
 
+// -------------------------------------------------------------- dashboard
+
+const DASHBOARD_FILE = '.cache/g-line/dashboard.html'
+
+/** g-line's version from its own manifest; null when it can't be read. */
+async function versionOf($: EngineInterface): Promise<string | null> {
+  try {
+    const manifest = JSON.parse(await $.fs.read(`${$.plugin.root}/.claude-plugin/plugin.json`)) as { version?: unknown }
+    return typeof manifest.version === 'string' ? manifest.version.slice(0, 20) : null
+  } catch {
+    return null
+  }
+}
+
+/**
+ * `/g-line dashboard`: writes one self-contained page of what g-line holds now
+ * (no script, nothing remote, no refresh) and opens it the way a link opens;
+ * over SSH or with no display, a toast says where the file is instead.
+ */
+async function openDashboard($: EngineInterface): Promise<void> {
+  const home = await $.env.get('HOME')
+  if (!home) {
+    $.ui.toast('g-line: no home directory to write the dashboard in.', { timeoutMs: 6000 })
+    return
+  }
+  const path = `${home}/${DASHBOARD_FILE}`
+  try {
+    const at = await nowMs($)
+    const seconds = at / 1000
+    await Promise.all([pruneLedger($), refreshAccount($)])
+    const s = await read($, snap)
+    const keys = await $.store.keys()
+    const today = dayOf(at, offsetAt(at))
+    const ledgerKeys = keys.filter(key => key.startsWith('d:') && !staleKeys([key], today, 14).length)
+    const ledger = await Promise.all(ledgerKeys.map(async key => ({ key, value: await $.store.get(key) })))
+    const rosterKeys = keys.filter(key => key.startsWith(ROSTER_PREFIX))
+    const stored = rosterOf(await Promise.all(rosterKeys.map(async key => ({ key, value: await $.store.get(key) }))), at)
+      .filter(entry => entry.id !== sessionId)
+    const state = await stateNow($)
+    const mine: RosterEntry = { id: sessionId ?? 'this', at, state, since: rosterState?.state === state ? rosterState.since : at,
+      ...(s.context?.percent !== undefined ? { ctx: s.context.percent } : {}), ...(s.model ? { model: modelName(s.model) } : {}),
+      ...(config.accountCommand && s.account ? { account: s.account } : {}) }
+    const p = payload(s, seconds, ttl, idle)
+    const k = config.guard.keepWarm
+    const html = dashboardHtml({
+      nowSeconds: seconds, utcOffsetMinutes: offsetAt(at), ...(config.tz ? { tz: config.tz } : {}),
+      version: await versionOf($), payload: p,
+      sessions: [{ entry: mine, mine: true }, ...(config.roster ? stored : []).map(entry => ({ entry, mine: false }))],
+      showAccount: !!config.accountCommand, ledger,
+      guard: {
+        rules: config.guard.rules.map(rule => ({ text: ruleText(rule), inForce: verdict.active[rule.id] !== undefined })),
+        why: config.guard.rules.length ? await whyNow($) : [], on: config.guard.on, simulated: simulation !== undefined,
+        ...(k ? { keepWarm: `keep-warm: after ${Math.round(k.after / 60)}m idle, up to ${k.max} times, ${tokens(k.minContext)}+ context${warmOff ? ' (off for this session)' : ''}` } : {}),
+        errors: config.guard.errors,
+      },
+    })
+    await $.fs.write(path, html)
+  } catch {
+    $.ui.toast('g-line: the dashboard could not be written.', { timeoutMs: 6000 })
+    return
+  }
+  const ssh = !!((await $.env.get('SSH_CONNECTION')) || (await $.env.get('SSH_TTY')))
+  const display = !!((await $.env.get('DISPLAY')) || (await $.env.get('WAYLAND_DISPLAY')))
+  if (opensHere({ os, ssh, display })) {
+    try {
+      const ran = await $.process.run([os === 'Darwin' ? 'open' : 'xdg-open', path], { timeoutMs: 4000 })
+      if (ran.exitCode === 0) {
+        $.ui.toast('Dashboard opened in your browser: a snapshot, /g-line dashboard again to refresh.', { timeoutMs: 5000 })
+        return
+      }
+    } catch {
+      // say where the file is instead
+    }
+  }
+  const why = ssh ? 'this session runs over SSH' : 'no browser opens on this machine'
+  $.ui.toast(`Dashboard written to ${path} (${why}).`, { timeoutMs: 10_000 })
+}
+
 // ---------------------------------------------------------------- command
 
-const HELP = 'Open the g-line pane; `news` reads Pulse, `open` opens the headline shown, `settings` lists every setting, `set <name> on|off`, `reset [name]`, `card`, `off`/`on`'
+const HELP = 'Open the g-line pane; `dashboard` writes a local page with usage, sessions, history and guard; `news` reads Pulse, `open` opens the headline shown, `settings` lists every setting, `set <name> on|off`, `reset [name]`, `card`, `off`/`on`'
 
 /** `/g-line [settings|set|reset|card|off|on]`, and the 0.4 name for one release. Nothing goes back into the conversation. */
 async function runCommand($: EngineInterface, e: { command: string; args: string }): Promise<Record<string, never>> {
   if (e.command === OLD_COMMAND) $.ui.toast('glanceline is now g-line: use /g-line. /glanceline works until the next release.', { timeoutMs: 8000 })
+  if (e.args.trim().toLowerCase() === 'dashboard') {
+    await openDashboard($)
+    return {}
+  }
   const asked = parseCommand(e.args)
   switch (asked.kind) {
     case 'show':
@@ -2154,7 +2237,7 @@ export const register: Register = (on, options) => {
       [OLD_COMMAND, 'Renamed to /g-line; this name works until the next release'],
     ] as const) {
       try {
-        await $.command.register({ name, description, argumentHint: '[news|open|settings|set <name> on|off|reset|card|off|on]' })
+        await $.command.register({ name, description, argumentHint: '[dashboard|news|open|settings|set <name> on|off|reset|card|off|on]' })
       } catch {
         // the line and toasts work without the command
       }
@@ -2763,6 +2846,7 @@ export const register: Register = (on, options) => {
               onPress={() => void setSetting($, setting, nextValue(setting, config))} />
           ))}
           <Button key="settings" plain label="All settings" hotkey="s" onPress={show('settings')} />
+          <Button key="dashboard" plain label="dashboard" hotkey="b" onPress={() => void openDashboard($)} />
         </Box>
         {feed && feed.items.length ? (
           <Box key="h-pulse" flexDirection="row" gap={1}>
