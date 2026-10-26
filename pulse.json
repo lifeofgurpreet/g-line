@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-26T06:18:54Z",
+ "generated_at": "2026-10-26T06:51:51Z",
  "items": [
   {
    "title": "Elon Musk says SpaceX closed $40B in GPU debt, debt markets have shut off credit for AI data center…",
@@ -17,7 +17,7 @@
    "published_at": "2026-10-24T12:07:58Z",
    "text": "Person who is reverse engineering his tv gets banned from OpenAI You aren't allowed to stop your tv from spying on your family. You have to ask for permission Or, maybe, maybe we accelerate",
    "author_name": "kache",
-   "likes": 27202,
+   "likes": 27226,
    "story": "OpenAI and Anthropic blocked the reverse engineering of smart TVs spying on us"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-10-25T10:11:07Z",
    "text": "r/opensource just banned any project that uses AI. By their own rule, that means the biggest open source project of all time, Linux, is now banned too. The kernel already accepts AI-assisted code. This is the real AI psychosis.",
    "author_name": "chasm",
-   "likes": 9649,
+   "likes": 9684,
    "story": "Moderators of r/opensource ban submissions of projects using, made by, or intended for AI, exclude non-English speakers over AI translation concerns, and more"
   },
   {
@@ -50,8 +50,8 @@
    "url": "https://www.theregister.com/systems/2026/10/22/ibm-ceo-says-open-weight-models-are-now-irresistibly-good-and-cheap-on-prem/5304640",
    "source": "Hacker News",
    "published_at": "2026-10-26T01:47:46Z",
-   "text": "133 points and 81 comments on Hacker News.",
-   "points": 133,
+   "text": "154 points and 90 comments on Hacker News.",
+   "points": 154,
    "discussion": "https://news.ycombinator.com/item?id=50238088"
   },
   {
@@ -67,8 +67,8 @@
    "url": "https://lynchlab.net/llm-skin-cancer",
    "source": "Hacker News",
    "published_at": "2026-10-25T17:15:38Z",
-   "text": "506 points and 228 comments on Hacker News.",
-   "points": 506,
+   "text": "512 points and 228 comments on Hacker News.",
+   "points": 512,
    "discussion": "https://news.ycombinator.com/item?id=50233779"
   },
   {
@@ -80,13 +80,13 @@
    "via": "Techmeme"
   },
   {
-   "title": "OpenAI and Anthropic cut their LLM prices by up to 80% within a few months. Why?",
-   "url": "https://minimaxir.com/2026/10/cheap-llms/",
+   "title": "PaperPilot – Zero-Cloud, Pure-Rust PDF Engine with WASM and MCP",
+   "url": "https://github.com/KrushnaVardhanReddy/PaperPilot",
    "source": "Hacker News",
-   "published_at": "2026-10-25T21:11:31Z",
-   "text": "238 points and 261 comments on Hacker News.",
-   "points": 238,
-   "discussion": "https://news.ycombinator.com/item?id=50236102"
+   "published_at": "2026-10-26T03:29:05Z",
+   "text": "72 points and 13 comments on Hacker News.",
+   "points": 72,
+   "discussion": "https://news.ycombinator.com/item?id=50238739"
   },
   {
    "title": "Lawmakers and Hill staffers in both parties say AI leaders are becoming a political liability as th…",
@@ -95,6 +95,15 @@
    "published_at": "2026-10-25T11:01:28Z",
    "text": "Lawmakers and Hill staffers in both parties say AI leaders are becoming a political liability as they swing between claims of prosperity and existential dangers. Washington has always viewed Silicon Valley as culturally strange. But the current crop of AI leaders is becoming …",
    "via": "Techmeme"
+  },
+  {
+   "title": "OpenAI and Anthropic cut their LLM prices by up to 80% within a few months. Why?",
+   "url": "https://minimaxir.com/2026/10/cheap-llms/",
+   "source": "Hacker News",
+   "published_at": "2026-10-25T21:11:31Z",
+   "text": "248 points and 270 comments on Hacker News.",
+   "points": 248,
+   "discussion": "https://news.ycombinator.com/item?id=50236102"
   },
   {
    "title": "Baba, which develops AI tools to help Medicare and Medicaid patients connect to care teams and hand…",
