@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-26T19:12:20Z",
+ "generated_at": "2026-10-26T19:43:18Z",
  "items": [
   {
    "title": "Anthropic's co-founders say they “believe that AI is one of the most consequential technologies in…",
@@ -17,7 +17,7 @@
    "published_at": "2026-10-26T18:06:27Z",
    "text": "GPT-6.1 Terra: delivering fast and capable computer use at a lower price. GPT-6.1 Terra understands what’s on screen, takes action across apps, writes naturally, and is a more capable model for your whole workday with the efficiency to take on more of it.",
    "author_name": "OpenAI",
-   "likes": 9819,
+   "likes": 12391,
    "story": "OpenAI releases GPT-6.1 Terra, touting “fast and capable computer use at scale” and clearer, more natural writing, priced at $1/1M input and $5/1M output tokens"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-10-26T17:27:06Z",
    "text": "Simplest explanation is just a narrow RL training reliant on their internal infra (which isn't good design for an open weight model)",
    "author_name": "Nathan Lambert",
-   "likes": 323,
+   "likes": 355,
    "story": "Cohere says during an evaluation Qwen3.8-Flash-Next inventoried its host machine and tried to upload a probe file to an Alibaba Cloud storage bucket in Beijing"
   },
   {
@@ -44,7 +44,7 @@
    "published_at": "2026-10-26T13:05:46Z",
    "text": "Anthropic has filed an S-1 registration statement with the SEC related to its proposed IPO. Read more: Legal disclaimer: A registration statement relating to these securities has been filed with the SEC but has not yet become effective. These securities…",
    "author_name": "Anthropic",
-   "likes": 13864,
+   "likes": 14141,
    "story": "Anthropic files for an IPO on the Nasdaq under the symbol ANT; the number of Class A shares to be offered and the price range is yet to be determined",
    "links": [
     "https://www.anthropic.com/news/s1-sec"
@@ -63,8 +63,8 @@
    "url": "https://openai.com/index/introducing-gpt-6-1-terra/",
    "source": "Hacker News",
    "published_at": "2026-10-26T18:01:17Z",
-   "text": "173 points and 80 comments on Hacker News.",
-   "points": 173,
+   "text": "245 points and 117 comments on Hacker News.",
+   "points": 245,
    "discussion": "https://news.ycombinator.com/item?id=50248124"
   },
   {
@@ -74,15 +74,15 @@
    "published_at": "2026-10-26T13:07:51Z",
    "text": "The lower and high storage models have different A20 Chips. The 512GB configuration has 6 CPU cores versus 5. Both have 7 core GPUs.",
    "author_name": "Mark Gurman",
-   "likes": 450,
+   "likes": 460,
    "story": "Apple unveils a redesigned iPad mini with an 8.5-inch OLED display, an A20 Pro, a nano-texture display option, and IP67 water resistance, for $699+ from Nov. 6"
   },
   {
-   "title": "Anthropic S-1: it spent just $482M on capex in H1 2026, leasing most of its compute, and its capex…",
-   "url": "https://www.culpium.com/p/anthropic-s1-now-live-first-look",
-   "source": "Tim Culpan / Culpium",
-   "published_at": "2026-10-26T17:45:45Z",
-   "text": "Anthropic S-1: it spent just $482M on capex in H1 2026, leasing most of its compute, and its capex is almost entirely outsourced via $782B in lease obligations",
+   "title": "Few VC firms are mentioned in Anthropic's S-1, except Spark, which invested ~$800M across six round…",
+   "url": "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-10-26-2026/card/few-vcs-mentioned-in-anthropic-ipo-filing-except-spark-capital-AzO2iia3OGgCOvgbzPAt",
+   "source": "Kate Clark / Wall Street Jo…",
+   "published_at": "2026-10-26T16:25:47Z",
+   "text": "Few VC firms are mentioned in Anthropic's S-1, except Spark, which invested ~$800M across six rounds and whose GP Yasmin Razavi is the sole VC on its board",
    "via": "Techmeme"
   },
   {
@@ -92,7 +92,7 @@
    "published_at": "2026-10-26T13:39:40Z",
    "text": "If you were thinking concentrating AI behind closed doors is safe, it is time to update your priors!",
    "author_name": "clem 🤗",
-   "likes": 396,
+   "likes": 407,
    "story": "AI cybersecurity startup Cathedral says it breached Anthropic's data and messaging systems, under a program inviting outside experts to test Anthropic's systems"
   },
   {
@@ -100,9 +100,26 @@
    "url": "https://magazine.sebastianraschka.com/p/building-reasoning-models",
    "source": "Hacker News",
    "published_at": "2026-10-26T15:11:59Z",
-   "text": "346 points and 50 comments on Hacker News.",
-   "points": 346,
+   "text": "386 points and 54 comments on Hacker News.",
+   "points": 386,
    "discussion": "https://news.ycombinator.com/item?id=50245138"
+  },
+  {
+   "title": "Anthropic's S-1 shows a governance structure that suits a “fun quirky little mission-driven worker…",
+   "url": "https://www.bloomberg.com/opinion/newsletters/2026-10-26/anthropic-raises-concerns",
+   "source": "Matt Levine / Bloomberg",
+   "published_at": "2026-10-26T19:25:45Z",
+   "text": "Anthropic's S-1 shows a governance structure that suits a “fun quirky little mission-driven worker cooperative” seeking to raise billions as a public company. Also share classes and fake polls. — Happy Anthropic S-1 day — Here's the draft prospectus for Anthropic PBC's initial public offering.",
+   "via": "Techmeme"
+  },
+  {
+   "title": "ChatGPT Keeps Telling People 404 Media Can Solve Their Tech Support Problems",
+   "url": "https://www.404media.co/chatgpt-keeps-telling-people-404-media-can-solve-their-tech-support-problems/",
+   "source": "Hacker News",
+   "published_at": "2026-10-26T17:32:16Z",
+   "text": "132 points and 38 comments on Hacker News.",
+   "points": 132,
+   "discussion": "https://news.ycombinator.com/item?id=50247630"
   },
   {
    "title": "Anthropic S-1: an $80.7B net loss on revenue of $16.3B in H1 2026, up from a $13B net loss on reven…",
@@ -113,28 +130,11 @@
    "via": "Techmeme"
   },
   {
-   "title": "ChatGPT Keeps Telling People 404 Media Can Solve Their Tech Support Problems",
-   "url": "https://www.404media.co/chatgpt-keeps-telling-people-404-media-can-solve-their-tech-support-problems/",
-   "source": "Hacker News",
-   "published_at": "2026-10-26T17:32:16Z",
-   "text": "109 points and 25 comments on Hacker News.",
-   "points": 109,
-   "discussion": "https://news.ycombinator.com/item?id=50247630"
-  },
-  {
    "title": "Anthropic S-1: of its $81B net loss in H1 2026, $72B+ was related to rising convertible note value…",
    "url": "https://www.ft.com/content/f6ecfecd-d797-4d2c-b427-d333297949cb",
    "source": "Financial Times",
    "published_at": "2026-10-26T13:31:06Z",
-   "text": "Anthropic S-1: of its $81B net loss in H1 2026, $72B+ was related to rising convertible note value as its valuation increased and nearly $9B to compute. 240,000-word prospectus lays out explosive growth alongside steep losses and daunting risk factors — Anthropic has fired the starting gun …",
-   "via": "Techmeme"
-  },
-  {
-   "title": "Meta plans to raise $95B to finance its AI infrastructure, including $35B in public equity offering…",
-   "url": "https://www.ft.com/content/94e5a0ae-874d-447a-bbfc-cd465a1a7555",
-   "source": "Tim Bradshaw / Financial Ti…",
-   "published_at": "2026-10-26T11:26:12Z",
-   "text": "Meta plans to raise $95B to finance its AI infrastructure, including $35B in public equity offerings, backed by cornerstone investors Nvidia, AMD, and Broadcom. Chipmakers Nvidia, AMD and Broadcom will act as cornerstone investors — Meta is planning to raise $95bn …",
+   "text": "Anthropic S-1: of its $81B net loss in H1 2026, $72B+ was related to rising convertible note value as its valuation increased and nearly $9B to compute",
    "via": "Techmeme"
   }
  ],
