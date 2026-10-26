@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-26T03:04:56Z",
+ "generated_at": "2026-10-26T03:36:54Z",
  "items": [
   {
    "title": "Elon Musk says SpaceX closed $40B in GPU debt, debt markets have shut off credit for AI data center…",
@@ -17,7 +17,7 @@
    "published_at": "2026-10-24T12:07:58Z",
    "text": "Person who is reverse engineering his tv gets banned from OpenAI You aren't allowed to stop your tv from spying on your family. You have to ask for permission Or, maybe, maybe we accelerate",
    "author_name": "kache",
-   "likes": 27042,
+   "likes": 27082,
    "story": "OpenAI and Anthropic blocked the reverse engineering of smart TVs spying on us"
   },
   {
@@ -34,11 +34,38 @@
    "published_at": "2026-10-23T18:23:45Z",
    "text": "We believe voice is the most natural way to interact with intelligence, so we created Dessa, the most authentic full-duplex speech model ever built. Talking with it feels like talking with a person…full of emotion, nuance, pauses, and a natural cadence.",
    "author_name": "jack",
-   "likes": 68088,
+   "likes": 68090,
    "story": "Block unveils Dessa, a “true speech-to-speech” AI model trained on “nothing but human conversation” that it says runs locally on a MacBook Pro M4 Max or newer",
    "links": [
     "https://block.xyz/dessa"
    ]
+  },
+  {
+   "title": "Moderators of r/opensource ban submissions of projects using, made by, or intended for AI, exclude…",
+   "url": "https://www.theverge.com/ai-artificial-intelligence/1018217/reddit-opensource-ai-ban",
+   "source": "Terrence O'Brien / The Verge",
+   "published_at": "2026-10-25T23:36:09Z",
+   "text": "Moderators of r/opensource ban submissions of projects using, made by, or intended for AI, exclude non-English speakers over AI translation concerns, and more. The opensource subreddit's new rules against AI have sparked a revolt. … The post made Saturday evening opens by saying …",
+   "via": "Techmeme"
+  },
+  {
+   "title": "A 10-year-old CNN outperforms frontier LLMs for skin cancer diagnosis",
+   "url": "https://lynchlab.net/llm-skin-cancer",
+   "source": "Hacker News",
+   "published_at": "2026-10-25T17:15:38Z",
+   "text": "477 points and 217 comments on Hacker News.",
+   "points": 477,
+   "discussion": "https://news.ycombinator.com/item?id=50233779"
+  },
+  {
+   "title": "Kimi K3.1 Pro launches at 4th on the Artificial Analysis Intelligence Index scoring 55, making larg…",
+   "url": "https://x.com/ArtificialAnlys/status/2113688083145314416",
+   "source": "𝕏 @ArtificialAnlys",
+   "published_at": "2026-10-23T17:44:44Z",
+   "text": "Kimi K3.1 Pro launches at 4th on the Artificial Analysis Intelligence Index scoring 55, making large gains in agentic performance; it will be the leading open-weights model once its weights are published @Kimi_Moonshot's new reasoning model gains 11 points over Kimi K3 (max,…",
+   "author_name": "Artificial Analysis",
+   "likes": 5459,
+   "story": "Kimi K3.1 Pro's debut draws scrutiny over allegations that influencers were asked to promote the model without disclosing a commercial relationship to Moonshot"
   },
   {
    "title": "Outside of tech there has been no financial payoff to US companies for using AI, now viewed as a ma…",
@@ -49,48 +76,13 @@
    "via": "Techmeme"
   },
   {
-   "title": "A 10-year-old CNN outperforms frontier LLMs for skin cancer diagnosis",
-   "url": "https://lynchlab.net/llm-skin-cancer",
-   "source": "Hacker News",
-   "published_at": "2026-10-25T17:15:38Z",
-   "text": "465 points and 216 comments on Hacker News.",
-   "points": 465,
-   "discussion": "https://news.ycombinator.com/item?id=50233779"
-  },
-  {
-   "title": "r/opensource just banned any project that uses AI. By their own rule, that means the biggest open s…",
-   "url": "https://x.com/chasmmmmmmmmmmm/status/2114298704253575338",
-   "source": "𝕏 @chasmmmmmmmmmmm",
-   "published_at": "2026-10-25T10:11:07Z",
-   "text": "r/opensource just banned any project that uses AI. By their own rule, that means the biggest open source project of all time, Linux, is now banned too. The kernel already accepts AI-assisted code. This is the real AI psychosis.",
-   "author_name": "chasm",
-   "likes": 9375,
-   "story": "Moderators of r/opensource ban submissions of projects using, made by, or intended for AI, exclude non-English speakers over AI translation concerns, and more"
-  },
-  {
-   "title": "Kimi K3.1 Pro's debut draws scrutiny over allegations that influencers were asked to promote the mo…",
-   "url": "https://venturebeat.com/technology/moonshots-kimi-k3-1-pro-flirts-with-open-weights-leadership-amid-paid-influencer-scandal-allegations",
-   "source": "Carl Franzen / VentureBeat",
-   "published_at": "2026-10-25T04:50:48Z",
-   "text": "Kimi K3.1 Pro's debut draws scrutiny over allegations that influencers were asked to promote the model without disclosing a commercial relationship to Moonshot",
-   "via": "Techmeme"
-  },
-  {
    "title": "OpenAI and Anthropic cut their LLM prices by up to 80% within a few months. Why?",
    "url": "https://minimaxir.com/2026/10/cheap-llms/",
    "source": "Hacker News",
    "published_at": "2026-10-25T21:11:31Z",
-   "text": "183 points and 207 comments on Hacker News.",
-   "points": 183,
+   "text": "195 points and 219 comments on Hacker News.",
+   "points": 195,
    "discussion": "https://news.ycombinator.com/item?id=50236102"
-  },
-  {
-   "title": "Data center tenants now demand $5M+ a day in late-delivery fees, up from $1M this spring, spawning…",
-   "url": "https://www.theinformation.com/articles/data-center-late-fees-hit-5-million-per-day-spawning-new-insurance",
-   "source": "Ann Davis Vaughan / The Inf…",
-   "published_at": "2026-10-25T19:10:57Z",
-   "text": "Data center tenants now demand $5M+ a day in late-delivery fees, up from $1M this spring, spawning new “delay-in-delivery” coverage from brokers like Marsh. This spring, Mike Mathews, who leads the global digital infrastructure practice at insurance broker Marsh …",
-   "via": "Techmeme"
   },
   {
    "title": "High-frequency trading firms such as Jane Street are investing in AI and chip startups and neocloud…",
@@ -101,19 +93,19 @@
    "via": "Techmeme"
   },
   {
+   "title": "Data center tenants now demand $5M+ a day in late-delivery fees, up from $1M this spring, spawning…",
+   "url": "https://www.theinformation.com/articles/data-center-late-fees-hit-5-million-per-day-spawning-new-insurance",
+   "source": "Ann Davis Vaughan / The Inf…",
+   "published_at": "2026-10-25T19:10:57Z",
+   "text": "Data center tenants now demand $5M+ a day in late-delivery fees, up from $1M this spring, spawning new “delay-in-delivery” coverage from brokers like Marsh. This spring, Mike Mathews, who leads the global digital infrastructure practice at insurance broker Marsh …",
+   "via": "Techmeme"
+  },
+  {
    "title": "Lawmakers and Hill staffers in both parties say AI leaders are becoming a political liability as th…",
    "url": "https://www.axios.com/2026/10/24/ai-ceos-washington-political-liability",
    "source": "Maria Curi / Axios",
    "published_at": "2026-10-25T11:01:28Z",
    "text": "Lawmakers and Hill staffers in both parties say AI leaders are becoming a political liability as they swing between claims of prosperity and existential dangers. Washington has always viewed Silicon Valley as culturally strange. But the current crop of AI leaders is becoming …",
-   "via": "Techmeme"
-  },
-  {
-   "title": "Source: Replit recently moved most AI spend from Anthropic to OpenAI, which gave 30%+ off in a deal…",
-   "url": "https://www.theinformation.com/articles/anthropics-margin-openais-opportunity",
-   "source": "The Information",
-   "published_at": "2026-10-24T19:45:46Z",
-   "text": "Source: Replit recently moved most AI spend from Anthropic to OpenAI, which gave 30%+ off in a deal worth $100M+/year, after Anthropic discontinued its discount",
    "via": "Techmeme"
   },
   {
