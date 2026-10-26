@@ -1125,7 +1125,7 @@ export const CASES: any[] = [
       "utcOffsetMinutes": 0
     },
     "lines": [
-      "Sonnet 5 (medium effort) · ctx 88% (24k left) · 5h 72% ! out ~10:03 (resets 10:53) · week 64% ! out ~Sat 15:00 (resets Sun 08:53) · cache warm (<1m left)"
+      "Sonnet 5 (medium effort) · ctx 88% (24k left) · 5h 72% ! full in ~1h 9m (back 10:53) · week 64% ! full in ~2d 6h (back Sun 08:53) · cache warm (<1m left)"
     ]
   },
   {
@@ -1171,7 +1171,7 @@ export const CASES: any[] = [
       "utcOffsetMinutes": 0
     },
     "lines": [
-      "Sonnet 5 (medium effort) · ctx 88% (24k left) · 5h 72% ! out ~10:03 (resets 10:53) · week 64% ! out ~Sat 15:00 (resets Sun 08:53) · cache warm (<1m left)"
+      "Sonnet 5 (medium effort) · ctx 88% (24k left) · 5h 72% ! full in ~1h 9m (back 10:53) · week 64% ! full in ~2d 6h (back Sun 08:53) · cache warm (<1m left)"
     ]
   },
   {
@@ -1217,7 +1217,7 @@ export const CASES: any[] = [
       "utcOffsetMinutes": 0
     },
     "lines": [
-      "Sonnet medium · ctx 88% · 5h 72% ! out ~10:03 · wk 64% ! out ~Sat 15:00 · cache <1m"
+      "Sonnet medium · ctx 88% · 5h 72% ! full in ~1h9m · wk 64% ! full in ~2d6h · cache <1m"
     ]
   },
   {
@@ -1263,7 +1263,7 @@ export const CASES: any[] = [
       "utcOffsetMinutes": 0
     },
     "lines": [
-      "ctx 88% · 5h 72% ! out ~10:03 · wk 64% ! out ~Sat 15:00 · cache <1m"
+      "ctx 88% · 5h 72% ! full in ~1h9m · wk 64% ! full in ~2d6h · cache <1m"
     ]
   },
   {
@@ -1400,7 +1400,7 @@ export const CASES: any[] = [
       "utcOffsetMinutes": 0
     },
     "lines": [
-      "Sonnet 5 (medium effort) · ctx 88% (24k left) · 5h 72% ! out ~10:03 (resets 10:53) · cache warm (<1m left)"
+      "Sonnet 5 (medium effort) · ctx 88% (24k left) · 5h 72% ! full in ~1h 9m (back 10:53) · cache warm (<1m left)"
     ]
   },
   {
@@ -1446,7 +1446,7 @@ export const CASES: any[] = [
       "utcOffsetMinutes": 0
     },
     "lines": [
-      "Sonnet 5 (medium effort) · ctx 88% (24k left) · 5h 72% ! out ~10:03 (resets 10:53) · cache warm (<1m left)"
+      "Sonnet 5 (medium effort) · ctx 88% (24k left) · 5h 72% ! full in ~1h 9m (back 10:53) · cache warm (<1m left)"
     ]
   },
   {
@@ -1492,7 +1492,7 @@ export const CASES: any[] = [
       "utcOffsetMinutes": 0
     },
     "lines": [
-      "Sonnet 5 medium · ctx 88% (24k left) · 5h 72% ! out ~10:03 (resets 10:53) · cache warm (<1m left)"
+      "Sonnet 5 medium · ctx 88% (24k left) · 5h 72% ! full in ~1h 9m (back 10:53) · cache warm (<1m left)"
     ]
   },
   {
@@ -1538,7 +1538,7 @@ export const CASES: any[] = [
       "utcOffsetMinutes": 0
     },
     "lines": [
-      "Sonnet medium · ctx 88% · 5h 72% ! out ~10:03 · cache <1m"
+      "Sonnet medium · ctx 88% · 5h 72% ! full in ~1h9m · cache <1m"
     ]
   },
   {
@@ -1584,7 +1584,7 @@ export const CASES: any[] = [
       "utcOffsetMinutes": 0
     },
     "lines": [
-      "ctx 88% · 5h 72% ! out ~10:03 · cache <1m"
+      "ctx 88% · 5h 72% ! full in ~1h9m · cache <1m"
     ]
   },
   {
@@ -1675,7 +1675,7 @@ export const CASES: any[] = [
       "utcOffsetMinutes": 0
     },
     "lines": [
-      "Sonnet 5 (medium effort) · context ▰▰▰▰▱ 88% (24k left) · 5h ▰▰▰▰▱ 72% ! out ~10:03 (resets 10:53) · week ▰▰▰▱▱ 64% ! out ~Sat 15:00 (resets Sun 08:53) · cache warm (<1m left)",
+      "Sonnet 5 (medium effort) · context ▰▰▰▰▱ 88% (24k left) · 5h ▰▰▰▰▱ 72% ! full in ~1h 9m (back 10:53) · week ▰▰▰▱▱ 64% ! full in ~2d 6h (back Sun 08:53) · cache warm (<1m left)",
       "feature/rate-limit-pace"
     ]
   },
@@ -1722,7 +1722,7 @@ export const CASES: any[] = [
       "utcOffsetMinutes": 0
     },
     "lines": [
-      "Sonnet medium · ctx 88% (24k left) · 5h 72% ! out ~10:03 · wk 64% ! out ~Sat 15:00 · cache <1m",
+      "Sonnet medium · ctx 88% (24k left) · 5h 72% ! full in ~1h9m · wk 64% ! full in ~2d6h · cache <1m",
       "feature/rate-limit-pace"
     ]
   },
@@ -1769,7 +1769,7 @@ export const CASES: any[] = [
       "utcOffsetMinutes": 0
     },
     "lines": [
-      "Sonnet medium · ctx 88% (24k left) · 5h 72% ! out ~10:03 · wk 64% ! out ~Sat 15:00 · cache <1m",
+      "Sonnet medium · ctx 88% (24k left) · 5h 72% ! full in ~1h9m · wk 64% ! full in ~2d6h · cache <1m",
       "feature/rate-limit-pace"
     ]
   },
@@ -4098,7 +4098,7 @@ export const CASES: any[] = [
       "utcOffsetMinutes": 330
     },
     "lines": [
-      "Sonnet 5 (medium effort) · ctx 88% (24k left) · 5h 72% ! out ~15:33 (resets 16:23) · week 64% ! out ~Sat 20:30 (resets Sun 14:23) · cache warm (<1m left)"
+      "Sonnet 5 (medium effort) · ctx 88% (24k left) · 5h 72% ! full in ~1h 9m (back 16:23) · week 64% ! full in ~2d 6h (back Sun 14:23) · cache warm (<1m left)"
     ]
   },
   {
@@ -4142,7 +4142,7 @@ export const CASES: any[] = [
       "utcOffsetMinutes": 0
     },
     "lines": [
-      "Sonnet 5 (medium effort) · ctx 88% (24k left) · 5h 72% ! out ~10:04 (resets 10:53) · week 64% ! out ~Sat 15:00 (resets Sun 08:53) · cache warm (<1m left)"
+      "Sonnet 5 (medium effort) · ctx 88% (24k left) · 5h 72% ! full in ~1h 10m (back 10:53) · week 64% ! full in ~2d 6h (back Sun 08:53) · cache warm (<1m left)"
     ]
   }
 ]

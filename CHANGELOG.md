@@ -1,5 +1,16 @@
 # Changelog
 
+## 0.19.2 (2026-10-27): a window on pace to run out says how long until it fills
+
+- Line 2 read `5h out ~00:35, resets 02:10`. At 00:20 that looked like 35 minutes left beside
+  a reset two hours away, two figures that seemed to disagree. It now reads
+  `5h full in ~15m, back 02:10`: how long until the window fills, then the time it comes back,
+  in the same words line 2 already uses for a full window (`5h back in 1h 50m`). The one-line
+  layout reads `5h 85% ! full in ~15m (back 02:10)`.
+- The weekly nudge's short form was `use 50% wk`, which read like an instruction. It's now
+  `50% wk left`; the long form is still `use it: 50% of the week left`.
+- The dashboard's pace line uses the same words.
+
 ## 0.19.1 (2026-10-26): the newest usage reading wins, so a wrong 100% clears
 
 - Sessions on one account share their usage readings, and within a window the higher percent

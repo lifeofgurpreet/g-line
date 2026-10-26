@@ -1526,7 +1526,7 @@ async function drainSegment($: EngineInterface): Promise<Segment | undefined> {
   const s = await read($, snap)
   if (!drainText(config.guard, factsOf(s, at))) return undefined
   const left = 100 - (s.rateLimits?.find(l => l.kind === 'seven_day')?.percentUsed ?? 100)
-  return { key: 'guard', priority: 40, tone: 'ok', forms: [`use it: ${Math.round(left)}% of the week left`, `use ${Math.round(left)}% wk`] }
+  return { key: 'guard', priority: 40, tone: 'ok', forms: [`use it: ${Math.round(left)}% of the week left`, `${Math.round(left)}% wk left`] }
 }
 
 /** Near the weekly reset with plenty left: says once per account and week that it's there to use. */

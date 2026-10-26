@@ -28,7 +28,7 @@ at once, with no restart. `/plugin uninstall g-line` removes it.
   `⚠ 3× Edit failures on core.ts` when calls keep failing.
 - **Two lines under the prompt.** Context and usage at the end of Claude Code's own hint line
   (`ctx 13% · 5h 1% · wk 79%!`), and one coloured row with the model, the cache countdown and
-  what happens next (`Opus 5.5 high · cache ~59m · wk out ~Thu 19:00, resets Fri 16:00`).
+  what happens next (`Opus 5.5 high · cache ~59m · wk full in ~1d 4h, back Fri 16:00`).
   Nothing goes above the prompt.
 - **Heads-ups.** A native notification five minutes before a one-hour prompt cache goes cold,
   with the context at stake (`Claude cache goes cold in 5m (148k of context at risk)`), and
@@ -81,7 +81,7 @@ Line 2 is g-line's own row, in colour:
 | --- | --- | --- |
 | model | `Opus 5.5 high` | The model and the effort of the last request (`fast` when fast mode is on) |
 | cache | `cache ~59m`, `cache cold` | How long the prompt cache stays warm: green, then amber in its last minutes. `~` because it's an estimate from when the last request ran and the cache's lifetime. After a compaction it shows the summary the next turn will write instead |
-| timing | `wk out ~Thu 19:00, resets Fri 16:00` | When a window on pace to run out gets there (a projection, so rounded), otherwise when it resets |
+| timing | `wk full in ~1d 4h, back Fri 16:00` | How long until a window on pace to run out fills (a projection, so rounded) and when it comes back; otherwise when it resets |
 | agents, compaction | `agents 2 running`, `compacts in ~3 turns` | While subagents work; when a compaction is near |
 | others | `2 others · 1 waiting` | Other g-line sessions on this machine, and how many are waiting on you for a permission answer. `roster: false` turns it off |
 | guard | `guard: effort medium`, `kept warm 2× · $0.08` | Only with your [guard](docs/guard.md) rules: what they're doing now |

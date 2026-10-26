@@ -77,7 +77,7 @@ test('a populated snapshot renders every section', () => {
 test('the pace projection reads as line 2 states it', () => {
   const resets = NOW + 4 * 3600
   const hot = dashboardHtml({ ...EMPTY, payload: { rate_limits: { five_hour: { used_percentage: 80, resets_at: resets } } } })
-  expect(hot).toContain('On pace to run out: 5h out ~')
+  expect(hot).toContain('On pace to run out: 5h full in ~')
   const full = dashboardHtml({ ...EMPTY, payload: { rate_limits: { five_hour: { used_percentage: 100, resets_at: resets } } } })
   expect(full).toContain('The window is full.')
 })

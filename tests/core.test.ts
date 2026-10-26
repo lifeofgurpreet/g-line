@@ -55,12 +55,12 @@ test('what warns keeps its words longest as the line narrows, and the cache coun
     prompt_cache: { warm: true, caching_observed: true, ttl: '1h', expires_at: now + 50 * 60 },
   }
   const line = (columns: number) => plain(render(p, { now, columns, utcOffsetMinutes: 0 }))[0]
-  expect(line(200)).toMatch(/^Opus 5\.5 \(high effort\) · ctx 13% \(870k left\) · 5h 2% \(resets in 4h\) · week 79% ! out ~\S+ \S+ \(resets \S+ \S+\) · cache warm \(~50m left\)$/)
-  // Calm segments go to their short forms first, the effort kept; the warning keeps "out ~".
-  expect(line(60)).toMatch(/^Opus high · ctx 13% · 5h 2% · wk 79% ! out ~/)
+  expect(line(200)).toMatch(/^Opus 5\.5 \(high effort\) · ctx 13% \(870k left\) · 5h 2% \(resets in 4h\) · week 79% ! full in ~\d+d \d+h \(back \S+ \S+\) · cache warm \(~50m left\)$/)
+  // Calm segments go to their short forms first, the effort kept; the warning keeps "full in ~".
+  expect(line(60)).toMatch(/^Opus high · ctx 13% · 5h 2% · wk 79% ! full in ~/)
   // Then calm segments go, the model name first, before the warning loses its projection.
-  expect(line(44)).toMatch(/^ctx 13% · 5h 2% · wk 79% ! out ~/)
-  expect(line(30)).toMatch(/^wk 79% ! out ~/)
+  expect(line(44)).toMatch(/^ctx 13% · 5h 2% · wk 79% ! full in ~/)
+  expect(line(30)).toMatch(/^wk 79% ! full in ~/)
   expect(plain(render(p, { now, preset: 'full', utcOffsetMinutes: 0 }))[0]).toMatch(/cache warm \(~50m left\)/)
   const soon = { ...p, prompt_cache: { ...p.prompt_cache, expires_at: now + 4 * 60 } }
   expect(plain(render(soon, { now, utcOffsetMinutes: 0 }))[0]).toMatch(/cache warm \(~4m left\)/)

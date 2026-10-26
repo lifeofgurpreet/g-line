@@ -67,7 +67,7 @@ test('two lines: the gauges ride the hint line, the model, cache and timing go o
     expect(await ui.find({ type: 'Text', text: /\? for shortcuts · ctx 41%/ })).toBeDefined()
     // Line 2, the mod's own row: the model with its effort, then what happens next.
     expect(await ui.find({ type: 'Text', text: 'Opus 5.5' })).toBeDefined()
-    expect(await ui.find({ type: 'Text', text: /^5h out ~\d\d:\d\d, resets \d\d:\d\d$/ })).toBeDefined()
+    expect(await ui.find({ type: 'Text', text: /^5h full in ~(\d+h )?\d+m, back \d\d:\d\d$/ })).toBeDefined()
     expect(await ui.find({ type: 'Text', text: /^wk resets in 5d/ })).toBeDefined()
     // The branch is opt-in (`git: true`), so neither line names the repository.
     expect(await ui.find({ type: 'Text', text: /main/ })).toBeUndefined()
@@ -80,7 +80,7 @@ test('two lines: the gauges ride the hint line, the model, cache and timing go o
   const short = tails[tails.length - 1] ?? ''
   expect(short.length).toBeLessThanOrEqual(80 - 5 - 26 - 20 - 3)
   expect(short).toMatch(/5h 72%!/)
-  expect(await narrow.find({ type: 'Text', text: /^5h out ~/ })).toBeDefined()
+  expect(await narrow.find({ type: 'Text', text: /^5h full in ~/ })).toBeDefined()
   await narrow.unmount()
 
   await clock.advance(15_000)
@@ -96,7 +96,7 @@ test('one line, when asked: everything on the hint line, the standing hint short
   const ui = await $.ui.mount({ plugin: 'g-line', surface: 'terminal', component: 'PromptHint',
     props: { ...HINT, hint: '(shift+tab to cycle)' }, viewport: { columns: 140, rows: 40 } })
   // A rewritten hint carries the text itself; the tail stays empty.
-  expect(hints[hints.length - 1]).toMatch(/^⇧⇥ · Opus 5\.5 · ctx 41% \(118k left\) · 5h 72% ! out ~/)
+  expect(hints[hints.length - 1]).toMatch(/^⇧⇥ · Opus 5\.5 · ctx 41% \(118k left\) · 5h 72% ! full in ~/)
   expect(tails[tails.length - 1]).toBeUndefined()
   await ui.unmount()
   // A hint that isn't a standing one (a key to press, a pill) is never shortened.

@@ -253,12 +253,13 @@ function windowSegment(p: Payload, kind: 'five_hour' | 'seven_day', o: Options, 
   }
   if (state?.kind === 'hot') {
     // `!` and `~` carry the meaning where the line is drawn dim: a warning, and
-    // a projection rather than an appointment.
-    const at = clock(roundEta(state.eta, o.now), o.now, o.utcOffsetMinutes)
-    const reset = resets !== undefined ? ` (resets ${clock(resets, o.now, o.utcOffsetMinutes)})` : ''
+    // a projection rather than an appointment. The fill is a duration and the
+    // reset a clock time, so the two can't be read as the same kind of figure.
+    const fills = Math.max(60, roundEta(state.eta, o.now) - o.now)
+    const back = resets !== undefined ? ` (back ${clock(resets, o.now, o.utcOffsetMinutes)})` : ''
     const soon = state.eta - o.now < 30 * 60
     return { key: kind, priority, tone: soon ? 'bad' : 'warn',
-      forms: [`${head} ! out ~${at}${reset}`, `${short} ${pct(used)} ! out ~${at}`, `${short} ${pct(used)}!`] }
+      forms: [`${head} ! full in ~${duration(fills)}${back}`, `${short} ${pct(used)} ! full in ~${duration(fills, true)}`, `${short} ${pct(used)}!`] }
   }
   if (left === undefined) return { key: kind, priority, tone: pressure(used), forms: [head, `${short} ${pct(used)}`] }
   return { key: kind, priority, tone: pressure(used),

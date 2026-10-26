@@ -20,7 +20,7 @@ const O = { now: NOW, utcOffsetMinutes: 0 }
 test('the deck: gauges on line 1, the model with its effort, the cache and the timing on line 2', async () => {
   const d = deck(P, O, {})
   expect(joined(d.now)).toBe('ctx 4% · 5h 1% · wk 79%!')
-  expect(joined(d.next)).toMatch(/^Opus 5\.5 high · cache warm ~59m \(120k\) · 5h resets in 3h 48m · wk out ~\S+ \S+, resets \S+ \S+$/)
+  expect(joined(d.next)).toMatch(/^Opus 5\.5 high · cache warm ~59m \(120k\) · 5h resets in 3h 48m · wk full in ~\d+d \d+h, back \S+ \S+$/)
   expect(d.next.find(part => part.key === 'cache')?.tone).toBe('ok')
   expect(d.next.find(part => part.key === 'seven_day_next')?.tone).toBe('warn')
 })
@@ -29,9 +29,9 @@ test('narrow: line 2 keeps the effort and the cache, and the warning keeps its p
   const d = deck(P, O, { now: 30, next: nextRoom(80) }, [{ key: 'today', priority: 50, forms: ['today $4.63'] }])
   expect(joined(d.now)).toBe('ctx 4% · 5h 1% · wk 79%!')
   // 0.9.1: the cache's size stays; the 5-hour reset goes first.
-  expect(joined(d.next)).toMatch(/^Opus high · cache ~59m 120k · wk out ~\S+ \S+ · today \$4\.63$/)
+  expect(joined(d.next)).toMatch(/^Opus high · cache ~59m 120k · wk full in ~\d+d\d+h · today \$4\.63$/)
   const tight = deck(P, O, { next: 42 })
-  expect(joined(tight.next)).toMatch(/^Opus high · cache ~59m · wk out ~/)
+  expect(joined(tight.next)).toMatch(/^Opus high · cache ~59m · wk full in ~/)
 })
 
 test('the cache goes amber in its last minutes and says what a cold one costs', async () => {

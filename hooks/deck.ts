@@ -138,8 +138,12 @@ export function windowNext(p: Payload, kind: 'five_hour' | 'seven_day', o: Optio
   }
   if (state?.kind === 'hot') {
     const tone: Tone = state.eta - o.now < 30 * 60 ? 'bad' : 'warn'
+    // How long until it fills, not a clock time: "out ~00:35" at 00:20 read as
+    // 35 minutes left, beside a reset two hours away. `back` is the full
+    // window's own word for the reset.
+    const fills = Math.max(60, roundEta(state.eta, o.now) - o.now)
     return { key: `${kind}_next`, priority, tone,
-      forms: [`${name} out ~${at(roundEta(state.eta, o.now))}, resets ${at(resets)}`, `${name} out ~${at(roundEta(state.eta, o.now))}`] }
+      forms: [`${name} full in ~${duration(fills)}, back ${at(resets)}`, `${name} full in ~${duration(fills, true)}`] }
   }
   return { key: `${kind}_next`, priority, forms: [`${name} resets in ${duration(left)}`, `${name} resets ${duration(left, true)}`] }
 }
