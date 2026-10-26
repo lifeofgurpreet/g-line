@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-26T04:42:18Z",
+ "generated_at": "2026-10-26T05:15:05Z",
  "items": [
   {
    "title": "Elon Musk says SpaceX closed $40B in GPU debt, debt markets have shut off credit for AI data center…",
@@ -17,7 +17,7 @@
    "published_at": "2026-10-24T12:07:58Z",
    "text": "Person who is reverse engineering his tv gets banned from OpenAI You aren't allowed to stop your tv from spying on your family. You have to ask for permission Or, maybe, maybe we accelerate",
    "author_name": "kache",
-   "likes": 27135,
+   "likes": 27165,
    "story": "OpenAI and Anthropic blocked the reverse engineering of smart TVs spying on us"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-10-23T18:23:45Z",
    "text": "We believe voice is the most natural way to interact with intelligence, so we created Dessa, the most authentic full-duplex speech model ever built. Talking with it feels like talking with a person…full of emotion, nuance, pauses, and a natural cadence.",
    "author_name": "jack",
-   "likes": 68147,
+   "likes": 68190,
    "story": "Block unveils Dessa, a “true speech-to-speech” AI model trained on “nothing but human conversation” that it says runs locally on a MacBook Pro M4 Max or newer",
    "links": [
     "https://block.xyz/dessa"
@@ -49,12 +49,12 @@
    "via": "Techmeme"
   },
   {
-   "title": "IBM CEO says open weight models are now irresistibly good and cheap on-prem",
+   "title": "IBM CEO says open weight models are now good and cheap on-prem",
    "url": "https://www.theregister.com/systems/2026/10/22/ibm-ceo-says-open-weight-models-are-now-irresistibly-good-and-cheap-on-prem/5304640",
    "source": "Hacker News",
    "published_at": "2026-10-26T01:47:46Z",
-   "text": "99 points and 56 comments on Hacker News.",
-   "points": 99,
+   "text": "108 points and 73 comments on Hacker News.",
+   "points": 108,
    "discussion": "https://news.ycombinator.com/item?id=50238088"
   },
   {
@@ -80,16 +80,16 @@
    "url": "https://lynchlab.net/llm-skin-cancer",
    "source": "Hacker News",
    "published_at": "2026-10-25T17:15:38Z",
-   "text": "493 points and 223 comments on Hacker News.",
-   "points": 493,
+   "text": "497 points and 226 comments on Hacker News.",
+   "points": 497,
    "discussion": "https://news.ycombinator.com/item?id=50233779"
   },
   {
-   "title": "Data center tenants now demand $5M+ a day in late-delivery fees, up from $1M this spring, spawning…",
-   "url": "https://www.theinformation.com/articles/data-center-late-fees-hit-5-million-per-day-spawning-new-insurance",
-   "source": "Ann Davis Vaughan / The Inf…",
-   "published_at": "2026-10-25T19:10:57Z",
-   "text": "Data center tenants now demand $5M+ a day in late-delivery fees, up from $1M this spring, spawning new “delay-in-delivery” coverage from brokers like Marsh. This spring, Mike Mathews, who leads the global digital infrastructure practice at insurance broker Marsh …",
+   "title": "Amazon Bee Frontier review: a simple $75 AI wearable that excels at always-on listening, summarizin…",
+   "url": "https://spyglass.org/amazon-bee/",
+   "source": "M.G. Siegler / Spyglass",
+   "published_at": "2026-10-26T05:05:43Z",
+   "text": "Amazon Bee Frontier review: a simple $75 AI wearable that excels at always-on listening, summarizing conversations, and suggesting follow-up actions. Amazon's quiet, listening AI wearable is also pretty killer? — I'm not sure people really understand what is coming with AI and wearables.",
    "via": "Techmeme"
   },
   {
@@ -97,8 +97,8 @@
    "url": "https://minimaxir.com/2026/10/cheap-llms/",
    "source": "Hacker News",
    "published_at": "2026-10-25T21:11:31Z",
-   "text": "213 points and 243 comments on Hacker News.",
-   "points": 213,
+   "text": "222 points and 252 comments on Hacker News.",
+   "points": 222,
    "discussion": "https://news.ycombinator.com/item?id=50236102"
   },
   {
@@ -107,6 +107,14 @@
    "source": "Maria Curi / Axios",
    "published_at": "2026-10-25T11:01:28Z",
    "text": "Lawmakers and Hill staffers in both parties say AI leaders are becoming a political liability as they swing between claims of prosperity and existential dangers. Washington has always viewed Silicon Valley as culturally strange. But the current crop of AI leaders is becoming …",
+   "via": "Techmeme"
+  },
+  {
+   "title": "Data center tenants now demand $5M+ a day in late-delivery fees, up from $1M this spring, spawning…",
+   "url": "https://www.theinformation.com/articles/data-center-late-fees-hit-5-million-per-day-spawning-new-insurance",
+   "source": "Ann Davis Vaughan / The Inf…",
+   "published_at": "2026-10-25T19:10:57Z",
+   "text": "Data center tenants now demand $5M+ a day in late-delivery fees, up from $1M this spring, spawning new “delay-in-delivery” coverage from brokers like Marsh. This spring, Mike Mathews, who leads the global digital infrastructure practice at insurance broker Marsh …",
    "via": "Techmeme"
   },
   {
