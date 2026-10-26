@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-26T09:02:13Z",
+ "generated_at": "2026-10-26T09:34:50Z",
  "items": [
   {
    "title": "Elon Musk says SpaceX closed $40B in GPU debt, debt markets have shut off credit for AI data center…",
@@ -17,7 +17,7 @@
    "published_at": "2026-10-26T00:19:20Z",
    "text": "The naysayers are getting embarrassing. Every day, people are using AI to make incredible breakthroughs and answer some of the toughest questions around, like \"what do I like about my child?\"",
    "author_name": "Osita Nwanevu",
-   "likes": 7282,
+   "likes": 7690,
    "story": "A profile of former Google VP and Yahoo CEO Marissa Mayer, whose startup Dazzle is building an AI assistant to help non-tech enthusiasts with mundane tasks"
   },
   {
@@ -34,15 +34,15 @@
    "published_at": "2026-10-24T12:07:58Z",
    "text": "Person who is reverse engineering his tv gets banned from OpenAI You aren't allowed to stop your tv from spying on your family. You have to ask for permission Or, maybe, maybe we accelerate",
    "author_name": "kache",
-   "likes": 27304,
+   "likes": 27325,
    "story": "OpenAI and Anthropic blocked the reverse engineering of smart TVs spying on us"
   },
   {
-   "title": "Elvis Presley's rightsholders sue Anthropic over 274 songs allegedly used to train its models, seek…",
-   "url": "https://www.nytimes.com/2026/10/25/arts/music/anthropic-lawsuit-elvis-presley-songs.html?unlocked_article_code=1.LVE.Unk9.7e04-FAQ9Ei8&smid=nytcore-ios-share",
-   "source": "Derrick Bryson Taylor / New…",
-   "published_at": "2026-10-26T08:56:14Z",
-   "text": "Elvis Presley's rightsholders sue Anthropic over 274 songs allegedly used to train its models, seeking $41M+; Anthropic says it disagrees and will defend itself. The $41 million lawsuit contends that the A.I. company used Presley's music to train its models without permission.",
+   "title": "Alphabet, Amazon, and Microsoft are expected to report double-digit gains in revenue this week, as…",
+   "url": "https://www.bloomberg.com/news/articles/2026-10-25/ai-spending-fears-threaten-to-swamp-big-tech-s-strong-earnings",
+   "source": "Bloomberg",
+   "published_at": "2026-10-26T08:36:13Z",
+   "text": "Alphabet, Amazon, and Microsoft are expected to report double-digit gains in revenue this week, as investors grow impatient with AI capex and seek returns. Three of the biggest and most important technology companies in the world are expected to show healthy growth when they report earnings this week.",
    "via": "Techmeme"
   },
   {
@@ -50,8 +50,8 @@
    "url": "https://www.theregister.com/systems/2026/10/22/ibm-ceo-says-open-weight-models-are-now-irresistibly-good-and-cheap-on-prem/5304640",
    "source": "Hacker News",
    "published_at": "2026-10-26T01:47:46Z",
-   "text": "227 points and 128 comments on Hacker News.",
-   "points": 227,
+   "text": "237 points and 137 comments on Hacker News.",
+   "points": 237,
    "discussion": "https://news.ycombinator.com/item?id=50238088"
   },
   {
@@ -65,11 +65,11 @@
    "story": "Kimi K3.1 Pro's debut draws scrutiny over allegations that influencers were asked to promote the model without disclosing a commercial relationship to Moonshot"
   },
   {
-   "title": "Alphabet, Amazon, and Microsoft are expected to report double-digit gains in revenue this week, as…",
-   "url": "https://www.bloomberg.com/news/articles/2026-10-25/ai-spending-fears-threaten-to-swamp-big-tech-s-strong-earnings",
-   "source": "Bloomberg",
-   "published_at": "2026-10-26T08:36:13Z",
-   "text": "Alphabet, Amazon, and Microsoft are expected to report double-digit gains in revenue this week, as investors grow impatient with AI capex and seek returns. Three of the biggest and most important technology companies in the world are expected to show healthy growth when they report earnings this week.",
+   "title": "Elvis Presley's rightsholders sue Anthropic over 274 songs allegedly used to train its models, seek…",
+   "url": "https://www.nytimes.com/2026/10/25/arts/music/anthropic-lawsuit-elvis-presley-songs.html?unlocked_article_code=1.LVE.Unk9.7e04-FAQ9Ei8&smid=nytcore-ios-share",
+   "source": "Derrick Bryson Taylor / New…",
+   "published_at": "2026-10-26T08:56:14Z",
+   "text": "Elvis Presley's rightsholders sue Anthropic over 274 songs allegedly used to train its models, seeking $41M+; Anthropic says it disagrees and will defend itself. The $41 million lawsuit contends that the A.I. company used Presley's music to train its models without permission.",
    "via": "Techmeme"
   },
   {
@@ -79,7 +79,7 @@
    "published_at": "2026-10-25T10:11:07Z",
    "text": "r/opensource just banned any project that uses AI. By their own rule, that means the biggest open source project of all time, Linux, is now banned too. The kernel already accepts AI-assisted code. This is the real AI psychosis.",
    "author_name": "chasm",
-   "likes": 9817,
+   "likes": 9848,
    "story": "Moderators of r/opensource ban submissions of projects using, made by, or intended for AI, exclude non-English speakers over AI translation concerns, and more"
   },
   {
@@ -87,19 +87,9 @@
    "url": "https://github.com/KrushnaVardhanReddy/PaperPilot",
    "source": "Hacker News",
    "published_at": "2026-10-26T03:29:05Z",
-   "text": "125 points and 29 comments on Hacker News.",
-   "points": 125,
+   "text": "131 points and 30 comments on Hacker News.",
+   "points": 131,
    "discussion": "https://news.ycombinator.com/item?id=50238739"
-  },
-  {
-   "title": "A thing I see happening at large organizations as a result of AI is the expansion of the role and s…",
-   "url": "https://x.com/emollick/status/2114337256865493250",
-   "source": "𝕏 @emollick",
-   "published_at": "2026-10-25T12:44:19Z",
-   "text": "A thing I see happening at large organizations as a result of AI is the expansion of the role and span of control of senior management who can directly monitor the whole firm. It vastly changes company operations. It also is straightforward to implement compared to firm redesign.",
-   "author_name": "Ethan Mollick",
-   "likes": 881,
-   "story": "Outside of tech there has been no financial payoff to US companies for using AI, now viewed as a margin-hurting cost center, as VC-backed firms burn more tokens"
   },
   {
    "title": "Amazon Bee Frontier review: a simple $75 AI wearable that excels at always-on listening, summarizin…",
@@ -114,9 +104,26 @@
    "url": "https://lynchlab.net/llm-skin-cancer",
    "source": "Hacker News",
    "published_at": "2026-10-25T17:15:38Z",
-   "text": "546 points and 235 comments on Hacker News.",
-   "points": 546,
+   "text": "551 points and 237 comments on Hacker News.",
+   "points": 551,
    "discussion": "https://news.ycombinator.com/item?id=50233779"
+  },
+  {
+   "title": "High-frequency trading firms such as Jane Street are investing in AI and chip startups and neocloud…",
+   "url": "https://www.bloomberg.com/news/features/2026-10-22/jane-street-hrt-are-spending-billions-to-win-in-ai-era?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc5Mjg5ODcyMSwiZXhwIjoxNzkzNTAzNTIxLCJhcnRpY2xlSWQiOiJUTkJVQ0RLSUpIOTIwMCIsImJjb25uZWN0SWQiOiIwNEFGQkMxQkYyMTA0NUVEODg3MzQxQkQwQzIyNzRBMCJ9.aZUQTESNPxDFkB9tAjev0zQuyASx2W5Ed0a-yabw_WY",
+   "source": "Bloomberg",
+   "published_at": "2026-10-26T02:51:09Z",
+   "text": "High-frequency trading firms such as Jane Street are investing in AI and chip startups and neoclouds, and building data centers to gain an edge in the AI era. High-frequency trading firms are even building their own data centers as they compete for an edge in the AI era.",
+   "via": "Techmeme"
+  },
+  {
+   "title": "OpenAI and Anthropic cut their LLM prices by up to 80% within a few months. Why?",
+   "url": "https://minimaxir.com/2026/10/cheap-llms/",
+   "source": "Hacker News",
+   "published_at": "2026-10-25T21:11:31Z",
+   "text": "309 points and 301 comments on Hacker News.",
+   "points": 309,
+   "discussion": "https://news.ycombinator.com/item?id=50236102"
   },
   {
    "title": "Lawmakers and Hill staffers in both parties say AI leaders are becoming a political liability as th…",
@@ -125,15 +132,6 @@
    "published_at": "2026-10-25T11:01:28Z",
    "text": "Lawmakers and Hill staffers in both parties say AI leaders are becoming a political liability as they swing between claims of prosperity and existential dangers. Washington has always viewed Silicon Valley as culturally strange. But the current crop of AI leaders is becoming …",
    "via": "Techmeme"
-  },
-  {
-   "title": "OpenAI and Anthropic cut their LLM prices by up to 80% within a few months. Why?",
-   "url": "https://minimaxir.com/2026/10/cheap-llms/",
-   "source": "Hacker News",
-   "published_at": "2026-10-25T21:11:31Z",
-   "text": "296 points and 292 comments on Hacker News.",
-   "points": 296,
-   "discussion": "https://news.ycombinator.com/item?id=50236102"
   }
  ],
  "sources": "curated, Techmeme, X (found via Techmeme, Reddit, the Internet Archive), Claude Code releases, Anthropic, Hacker News, Simon Willison"
