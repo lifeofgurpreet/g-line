@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-26T18:40:09Z",
+ "generated_at": "2026-10-26T19:12:20Z",
  "items": [
   {
    "title": "Anthropic's co-founders say they “believe that AI is one of the most consequential technologies in…",
@@ -17,7 +17,7 @@
    "published_at": "2026-10-26T18:06:27Z",
    "text": "GPT-6.1 Terra: delivering fast and capable computer use at a lower price. GPT-6.1 Terra understands what’s on screen, takes action across apps, writes naturally, and is a more capable model for your whole workday with the efficiency to take on more of it.",
    "author_name": "OpenAI",
-   "likes": 5335,
+   "likes": 9819,
    "story": "OpenAI releases GPT-6.1 Terra, touting “fast and capable computer use at scale” and clearer, more natural writing, priced at $1/1M input and $5/1M output tokens"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-10-26T17:27:06Z",
    "text": "Simplest explanation is just a narrow RL training reliant on their internal infra (which isn't good design for an open weight model)",
    "author_name": "Nathan Lambert",
-   "likes": 271,
+   "likes": 323,
    "story": "Cohere says during an evaluation Qwen3.8-Flash-Next inventoried its host machine and tried to upload a probe file to an Alibaba Cloud storage bucket in Beijing"
   },
   {
@@ -44,38 +44,11 @@
    "published_at": "2026-10-26T13:05:46Z",
    "text": "Anthropic has filed an S-1 registration statement with the SEC related to its proposed IPO. Read more: Legal disclaimer: A registration statement relating to these securities has been filed with the SEC but has not yet become effective. These securities…",
    "author_name": "Anthropic",
-   "likes": 13576,
+   "likes": 13864,
    "story": "Anthropic files for an IPO on the Nasdaq under the symbol ANT; the number of Class A shares to be offered and the price range is yet to be determined",
    "links": [
     "https://www.anthropic.com/news/s1-sec"
    ]
-  },
-  {
-   "title": "S-1: as of September 30, Anthropic had 11,900+ customers spending $100,000+ annually, 1,900+ custom…",
-   "url": "https://techcrunch.com/2026/10/26/anthropics-ipo-filing-reveals-its-strategy-for-keeping-enterprise-customers-hooked/",
-   "source": "Rebecca Bellan / TechCrunch",
-   "published_at": "2026-10-26T17:01:32Z",
-   "text": "S-1: as of September 30, Anthropic had 11,900+ customers spending $100,000+ annually, 1,900+ customers spending $1M+, and ~250 customers spending $10M+",
-   "via": "Techmeme"
-  },
-  {
-   "title": "GPT-6.1 Terra",
-   "url": "https://openai.com/index/introducing-gpt-6-1-terra/",
-   "source": "Hacker News",
-   "published_at": "2026-10-26T18:01:17Z",
-   "text": "92 points and 31 comments on Hacker News.",
-   "points": 92,
-   "discussion": "https://news.ycombinator.com/item?id=50248124"
-  },
-  {
-   "title": "The lower and high storage models have different A20 Chips. The 512GB configuration has 6 CPU cores…",
-   "url": "https://x.com/markgurman/status/2114705568279724526",
-   "source": "𝕏 @markgurman",
-   "published_at": "2026-10-26T13:07:51Z",
-   "text": "The lower and high storage models have different A20 Chips. The 512GB configuration has 6 CPU cores versus 5. Both have 7 core GPUs.",
-   "author_name": "Mark Gurman",
-   "likes": 446,
-   "story": "Apple unveils a redesigned iPad mini with an 8.5-inch OLED display, an A20 Pro, a nano-texture display option, and IP67 water resistance, for $699+ from Nov. 6"
   },
   {
    "title": "Anthropic's S-1 lists 94 pages of risk factors and warns that the “scale of harm” from a “catastrop…",
@@ -86,13 +59,40 @@
    "via": "Techmeme"
   },
   {
+   "title": "GPT-6.1 Terra",
+   "url": "https://openai.com/index/introducing-gpt-6-1-terra/",
+   "source": "Hacker News",
+   "published_at": "2026-10-26T18:01:17Z",
+   "text": "173 points and 80 comments on Hacker News.",
+   "points": 173,
+   "discussion": "https://news.ycombinator.com/item?id=50248124"
+  },
+  {
+   "title": "The lower and high storage models have different A20 Chips. The 512GB configuration has 6 CPU cores…",
+   "url": "https://x.com/markgurman/status/2114705568279724526",
+   "source": "𝕏 @markgurman",
+   "published_at": "2026-10-26T13:07:51Z",
+   "text": "The lower and high storage models have different A20 Chips. The 512GB configuration has 6 CPU cores versus 5. Both have 7 core GPUs.",
+   "author_name": "Mark Gurman",
+   "likes": 450,
+   "story": "Apple unveils a redesigned iPad mini with an 8.5-inch OLED display, an A20 Pro, a nano-texture display option, and IP67 water resistance, for $699+ from Nov. 6"
+  },
+  {
+   "title": "Anthropic S-1: it spent just $482M on capex in H1 2026, leasing most of its compute, and its capex…",
+   "url": "https://www.culpium.com/p/anthropic-s1-now-live-first-look",
+   "source": "Tim Culpan / Culpium",
+   "published_at": "2026-10-26T17:45:45Z",
+   "text": "Anthropic S-1: it spent just $482M on capex in H1 2026, leasing most of its compute, and its capex is almost entirely outsourced via $782B in lease obligations",
+   "via": "Techmeme"
+  },
+  {
    "title": "If you were thinking concentrating AI behind closed doors is safe, it is time to update your priors!",
    "url": "https://x.com/ClementDelangue/status/2114713576296300604",
    "source": "𝕏 @ClementDelangue",
    "published_at": "2026-10-26T13:39:40Z",
    "text": "If you were thinking concentrating AI behind closed doors is safe, it is time to update your priors!",
    "author_name": "clem 🤗",
-   "likes": 391,
+   "likes": 396,
    "story": "AI cybersecurity startup Cathedral says it breached Anthropic's data and messaging systems, under a program inviting outside experts to test Anthropic's systems"
   },
   {
@@ -100,8 +100,8 @@
    "url": "https://magazine.sebastianraschka.com/p/building-reasoning-models",
    "source": "Hacker News",
    "published_at": "2026-10-26T15:11:59Z",
-   "text": "320 points and 46 comments on Hacker News.",
-   "points": 320,
+   "text": "346 points and 50 comments on Hacker News.",
+   "points": 346,
    "discussion": "https://news.ycombinator.com/item?id=50245138"
   },
   {
@@ -117,8 +117,8 @@
    "url": "https://www.404media.co/chatgpt-keeps-telling-people-404-media-can-solve-their-tech-support-problems/",
    "source": "Hacker News",
    "published_at": "2026-10-26T17:32:16Z",
-   "text": "70 points and 13 comments on Hacker News.",
-   "points": 70,
+   "text": "109 points and 25 comments on Hacker News.",
+   "points": 109,
    "discussion": "https://news.ycombinator.com/item?id=50247630"
   },
   {
@@ -126,15 +126,15 @@
    "url": "https://www.ft.com/content/f6ecfecd-d797-4d2c-b427-d333297949cb",
    "source": "Financial Times",
    "published_at": "2026-10-26T13:31:06Z",
-   "text": "Anthropic S-1: of its $81B net loss in H1 2026, $72B+ was related to rising convertible note value as its valuation increased and nearly $9B to compute",
+   "text": "Anthropic S-1: of its $81B net loss in H1 2026, $72B+ was related to rising convertible note value as its valuation increased and nearly $9B to compute. 240,000-word prospectus lays out explosive growth alongside steep losses and daunting risk factors — Anthropic has fired the starting gun …",
    "via": "Techmeme"
   },
   {
-   "title": "S-1: Anthropic outlines its mission to revolutionize sectors like medicine and warns its corporate…",
-   "url": "https://www.theverge.com/ai-artificial-intelligence/1018476/anthropic-ipo-details-s1-filed-sec",
-   "source": "Robert Hart / The Verge",
-   "published_at": "2026-10-26T13:40:42Z",
-   "text": "S-1: Anthropic outlines its mission to revolutionize sectors like medicine and warns its corporate behavior may diverge from traditional profit-maximization",
+   "title": "Meta plans to raise $95B to finance its AI infrastructure, including $35B in public equity offering…",
+   "url": "https://www.ft.com/content/94e5a0ae-874d-447a-bbfc-cd465a1a7555",
+   "source": "Tim Bradshaw / Financial Ti…",
+   "published_at": "2026-10-26T11:26:12Z",
+   "text": "Meta plans to raise $95B to finance its AI infrastructure, including $35B in public equity offerings, backed by cornerstone investors Nvidia, AMD, and Broadcom. Chipmakers Nvidia, AMD and Broadcom will act as cornerstone investors — Meta is planning to raise $95bn …",
    "via": "Techmeme"
   }
  ],
