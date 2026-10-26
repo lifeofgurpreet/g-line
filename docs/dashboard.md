@@ -7,7 +7,7 @@ display, a toast tells you where the file is instead.
 The page is a snapshot of what g-line holds at that moment. Nothing runs in the background to
 keep it current; run the command again for a fresh one.
 
-![The g-line dashboard: usage cards for the 5-hour and weekly windows with meters, reset times and pace; the sessions on this machine; a bar chart of cost per day over 14 days and a table of turns, cost, cold rebuilds, keep-warm re-reads and tool calls per day](dashboard.png)
+![The g-line dashboard, with sample data: usage cards for the 5-hour and weekly windows with meters, reset times and pace; the sessions on this machine; a bar chart of cost per day over 14 days and a table of turns, cost, cold rebuilds, keep-warm re-reads and tool calls per day](dashboard.png)
 
 ## What it shows
 

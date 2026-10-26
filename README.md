@@ -241,7 +241,8 @@ claude plugin validate .     # what the engine reads, the hooks and calls, what 
 claude plugin test .         # the tests
 ```
 
-The screenshots are real captures (`tmux capture-pane -e`), drawn by `scripts/ansi2png.py`.
+The terminal screenshots are real captures (`tmux capture-pane -e`), drawn by
+`scripts/ansi2png.py`. The dashboard image is the real page generator run on sample data.
 
 ## License
 

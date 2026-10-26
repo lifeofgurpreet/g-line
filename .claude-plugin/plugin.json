@@ -1,7 +1,7 @@
 {
   "name": "g-line",
-  "version": "0.18.1",
-  "description": "Live status under Claude Code's prompt, and receipts on the turns themselves: context jumps, cache rebuilds and tool failures marked on the turn's own closing line; model, effort, cache countdown and usage pace on the hint line plus one coloured row; heads-up notifications before the cache goes cold. A mod: no transcript parsing.",
+  "version": "0.19.0",
+  "description": "Live status under Claude Code's prompt, and receipts on the turns themselves: context jumps, cache rebuilds and tool failures marked on the turn's own closing line; model, effort, cache countdown and usage pace on the hint line plus one coloured row; heads-up notifications before the cache goes cold; a local dashboard of usage, sessions and history. A mod: no transcript parsing.",
   "author": {
     "name": "Gurpreet"
   },
@@ -16,7 +16,8 @@
     "rate limits",
     "context",
     "effort",
-    "notifications"
+    "notifications",
+    "dashboard"
   ],
   "types": "./types/index.d.ts",
   "userConfig": {

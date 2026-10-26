@@ -1,5 +1,24 @@
 # Changelog
 
+## 0.19.0 (2026-10-26): a local dashboard, and documentation split into pages
+
+- **`/g-line dashboard`** (or `b` in the `/g-line` pane) writes one page,
+  `~/.cache/g-line/dashboard.html`, and opens it in your browser: the 5-hour and weekly windows
+  with their pace, the g-line sessions on this machine, the last 14 days of turns, cost at API
+  prices, cold cache rebuilds, keep-warm re-reads and tool calls, this session's cache, and your
+  guard rules. It's a snapshot made when you ask; nothing runs in the background. The page loads
+  nothing from the network, has no JavaScript, and shows no paths, branches or repository
+  names, and no account unless you set an `account_command`. Over SSH or with no display, a
+  toast says where the file is.
+- **The README is shorter.** It covers what g-line shows and how to install it; the reference
+  moved to [docs/guard.md](docs/guard.md), [docs/pulse.md](docs/pulse.md),
+  [docs/configuration.md](docs/configuration.md) and [docs/dashboard.md](docs/dashboard.md).
+  New: [CONTRIBUTING.md](CONTRIBUTING.md) and [SECURITY.md](SECURITY.md). The screenshots are
+  new captures of this version.
+- **The Pulse builder** (`tools/pulse/build_pulse.py`, maintainer tooling) takes `--push` for a
+  push wrapper and `--author` for the commit identity, and uses plain `git` and git's own
+  identity by default.
+
 ## 0.18.1 (2026-10-24): line 2 shows the resumed cache behind a managed plugin
 
 - 0.18.0 read a resumed conversation's figures from a hooks-module `SessionStart`, and a
