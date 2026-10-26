@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-26T03:36:54Z",
+ "generated_at": "2026-10-26T04:10:23Z",
  "items": [
   {
    "title": "Elon Musk says SpaceX closed $40B in GPU debt, debt markets have shut off credit for AI data center…",
@@ -17,7 +17,7 @@
    "published_at": "2026-10-24T12:07:58Z",
    "text": "Person who is reverse engineering his tv gets banned from OpenAI You aren't allowed to stop your tv from spying on your family. You have to ask for permission Or, maybe, maybe we accelerate",
    "author_name": "kache",
-   "likes": 27082,
+   "likes": 27108,
    "story": "OpenAI and Anthropic blocked the reverse engineering of smart TVs spying on us"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-10-23T18:23:45Z",
    "text": "We believe voice is the most natural way to interact with intelligence, so we created Dessa, the most authentic full-duplex speech model ever built. Talking with it feels like talking with a person…full of emotion, nuance, pauses, and a natural cadence.",
    "author_name": "jack",
-   "likes": 68090,
+   "likes": 68113,
    "story": "Block unveils Dessa, a “true speech-to-speech” AI model trained on “nothing but human conversation” that it says runs locally on a MacBook Pro M4 Max or newer",
    "links": [
     "https://block.xyz/dessa"
@@ -49,13 +49,13 @@
    "via": "Techmeme"
   },
   {
-   "title": "A 10-year-old CNN outperforms frontier LLMs for skin cancer diagnosis",
-   "url": "https://lynchlab.net/llm-skin-cancer",
+   "title": "IBM CEO says open weight models are now irresistibly good and cheap on-prem",
+   "url": "https://www.theregister.com/systems/2026/10/22/ibm-ceo-says-open-weight-models-are-now-irresistibly-good-and-cheap-on-prem/5304640",
    "source": "Hacker News",
-   "published_at": "2026-10-25T17:15:38Z",
-   "text": "477 points and 217 comments on Hacker News.",
-   "points": 477,
-   "discussion": "https://news.ycombinator.com/item?id=50233779"
+   "published_at": "2026-10-26T01:47:46Z",
+   "text": "77 points and 36 comments on Hacker News.",
+   "points": 77,
+   "discussion": "https://news.ycombinator.com/item?id=50238088"
   },
   {
    "title": "Kimi K3.1 Pro launches at 4th on the Artificial Analysis Intelligence Index scoring 55, making larg…",
@@ -68,23 +68,6 @@
    "story": "Kimi K3.1 Pro's debut draws scrutiny over allegations that influencers were asked to promote the model without disclosing a commercial relationship to Moonshot"
   },
   {
-   "title": "Outside of tech there has been no financial payoff to US companies for using AI, now viewed as a ma…",
-   "url": "https://www.apollo.com/wealth/insights-news/insights/daily-spark/no-signs-of-ai-payoff-outside-the-tech-sector",
-   "source": "Torsten Slok / Apollo Globa…",
-   "published_at": "2026-10-24T21:30:52Z",
-   "text": "Outside of tech there has been no financial payoff to US companies for using AI, now viewed as a margin-hurting cost center, as VC-backed firms burn more tokens. Despite massive investments and widespread hype around artificial intelligence, the technology has delivered zero financial payoff to corporate America outside of tech.",
-   "via": "Techmeme"
-  },
-  {
-   "title": "OpenAI and Anthropic cut their LLM prices by up to 80% within a few months. Why?",
-   "url": "https://minimaxir.com/2026/10/cheap-llms/",
-   "source": "Hacker News",
-   "published_at": "2026-10-25T21:11:31Z",
-   "text": "195 points and 219 comments on Hacker News.",
-   "points": 195,
-   "discussion": "https://news.ycombinator.com/item?id=50236102"
-  },
-  {
    "title": "High-frequency trading firms such as Jane Street are investing in AI and chip startups and neocloud…",
    "url": "https://www.bloomberg.com/news/features/2026-10-22/jane-street-hrt-are-spending-billions-to-win-in-ai-era?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc5Mjg5ODcyMSwiZXhwIjoxNzkzNTAzNTIxLCJhcnRpY2xlSWQiOiJUTkJVQ0RLSUpIOTIwMCIsImJjb25uZWN0SWQiOiIwNEFGQkMxQkYyMTA0NUVEODg3MzQxQkQwQzIyNzRBMCJ9.aZUQTESNPxDFkB9tAjev0zQuyASx2W5Ed0a-yabw_WY",
    "source": "Bloomberg",
@@ -93,12 +76,30 @@
    "via": "Techmeme"
   },
   {
+   "title": "A 10-year-old CNN outperforms frontier LLMs for skin cancer diagnosis",
+   "url": "https://lynchlab.net/llm-skin-cancer",
+   "source": "Hacker News",
+   "published_at": "2026-10-25T17:15:38Z",
+   "text": "486 points and 220 comments on Hacker News.",
+   "points": 486,
+   "discussion": "https://news.ycombinator.com/item?id=50233779"
+  },
+  {
    "title": "Data center tenants now demand $5M+ a day in late-delivery fees, up from $1M this spring, spawning…",
    "url": "https://www.theinformation.com/articles/data-center-late-fees-hit-5-million-per-day-spawning-new-insurance",
    "source": "Ann Davis Vaughan / The Inf…",
    "published_at": "2026-10-25T19:10:57Z",
    "text": "Data center tenants now demand $5M+ a day in late-delivery fees, up from $1M this spring, spawning new “delay-in-delivery” coverage from brokers like Marsh. This spring, Mike Mathews, who leads the global digital infrastructure practice at insurance broker Marsh …",
    "via": "Techmeme"
+  },
+  {
+   "title": "OpenAI and Anthropic cut their LLM prices by up to 80% within a few months. Why?",
+   "url": "https://minimaxir.com/2026/10/cheap-llms/",
+   "source": "Hacker News",
+   "published_at": "2026-10-25T21:11:31Z",
+   "text": "207 points and 232 comments on Hacker News.",
+   "points": 207,
+   "discussion": "https://news.ycombinator.com/item?id=50236102"
   },
   {
    "title": "Lawmakers and Hill staffers in both parties say AI leaders are becoming a political liability as th…",
