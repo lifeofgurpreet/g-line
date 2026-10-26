@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-26T08:29:20Z",
+ "generated_at": "2026-10-26T09:02:13Z",
  "items": [
   {
    "title": "Elon Musk says SpaceX closed $40B in GPU debt, debt markets have shut off credit for AI data center…",
@@ -17,7 +17,7 @@
    "published_at": "2026-10-26T00:19:20Z",
    "text": "The naysayers are getting embarrassing. Every day, people are using AI to make incredible breakthroughs and answer some of the toughest questions around, like \"what do I like about my child?\"",
    "author_name": "Osita Nwanevu",
-   "likes": 6923,
+   "likes": 7282,
    "story": "A profile of former Google VP and Yahoo CEO Marissa Mayer, whose startup Dazzle is building an AI assistant to help non-tech enthusiasts with mundane tasks"
   },
   {
@@ -34,15 +34,15 @@
    "published_at": "2026-10-24T12:07:58Z",
    "text": "Person who is reverse engineering his tv gets banned from OpenAI You aren't allowed to stop your tv from spying on your family. You have to ask for permission Or, maybe, maybe we accelerate",
    "author_name": "kache",
-   "likes": 27296,
+   "likes": 27304,
    "story": "OpenAI and Anthropic blocked the reverse engineering of smart TVs spying on us"
   },
   {
-   "title": "Amazon Bee Frontier review: a simple $75 AI wearable that excels at always-on listening, summarizin…",
-   "url": "https://spyglass.org/amazon-bee/",
-   "source": "M.G. Siegler / Spyglass",
-   "published_at": "2026-10-26T05:05:43Z",
-   "text": "Amazon Bee Frontier review: a simple $75 AI wearable that excels at always-on listening, summarizing conversations, and suggesting follow-up actions. Amazon's quiet, listening AI wearable is also pretty killer? — I'm not sure people really understand what is coming with AI and wearables.",
+   "title": "Elvis Presley's rightsholders sue Anthropic over 274 songs allegedly used to train its models, seek…",
+   "url": "https://www.nytimes.com/2026/10/25/arts/music/anthropic-lawsuit-elvis-presley-songs.html?unlocked_article_code=1.LVE.Unk9.7e04-FAQ9Ei8&smid=nytcore-ios-share",
+   "source": "Derrick Bryson Taylor / New…",
+   "published_at": "2026-10-26T08:56:14Z",
+   "text": "Elvis Presley's rightsholders sue Anthropic over 274 songs allegedly used to train its models, seeking $41M+; Anthropic says it disagrees and will defend itself. The $41 million lawsuit contends that the A.I. company used Presley's music to train its models without permission.",
    "via": "Techmeme"
   },
   {
@@ -50,8 +50,8 @@
    "url": "https://www.theregister.com/systems/2026/10/22/ibm-ceo-says-open-weight-models-are-now-irresistibly-good-and-cheap-on-prem/5304640",
    "source": "Hacker News",
    "published_at": "2026-10-26T01:47:46Z",
-   "text": "214 points and 112 comments on Hacker News.",
-   "points": 214,
+   "text": "227 points and 128 comments on Hacker News.",
+   "points": 227,
    "discussion": "https://news.ycombinator.com/item?id=50238088"
   },
   {
@@ -65,21 +65,58 @@
    "story": "Kimi K3.1 Pro's debut draws scrutiny over allegations that influencers were asked to promote the model without disclosing a commercial relationship to Moonshot"
   },
   {
-   "title": "Moderators of r/opensource ban submissions of projects using, made by, or intended for AI, exclude…",
-   "url": "https://www.theverge.com/ai-artificial-intelligence/1018217/reddit-opensource-ai-ban",
-   "source": "Terrence O'Brien / The Verge",
-   "published_at": "2026-10-25T23:36:09Z",
-   "text": "Moderators of r/opensource ban submissions of projects using, made by, or intended for AI, exclude non-English speakers over AI translation concerns, and more. The opensource subreddit's new rules against AI have sparked a revolt. … The post made Saturday evening opens by saying …",
+   "title": "Alphabet, Amazon, and Microsoft are expected to report double-digit gains in revenue this week, as…",
+   "url": "https://www.bloomberg.com/news/articles/2026-10-25/ai-spending-fears-threaten-to-swamp-big-tech-s-strong-earnings",
+   "source": "Bloomberg",
+   "published_at": "2026-10-26T08:36:13Z",
+   "text": "Alphabet, Amazon, and Microsoft are expected to report double-digit gains in revenue this week, as investors grow impatient with AI capex and seek returns. Three of the biggest and most important technology companies in the world are expected to show healthy growth when they report earnings this week.",
    "via": "Techmeme"
+  },
+  {
+   "title": "r/opensource just banned any project that uses AI. By their own rule, that means the biggest open s…",
+   "url": "https://x.com/chasmmmmmmmmmmm/status/2114298704253575338",
+   "source": "𝕏 @chasmmmmmmmmmmm",
+   "published_at": "2026-10-25T10:11:07Z",
+   "text": "r/opensource just banned any project that uses AI. By their own rule, that means the biggest open source project of all time, Linux, is now banned too. The kernel already accepts AI-assisted code. This is the real AI psychosis.",
+   "author_name": "chasm",
+   "likes": 9817,
+   "story": "Moderators of r/opensource ban submissions of projects using, made by, or intended for AI, exclude non-English speakers over AI translation concerns, and more"
   },
   {
    "title": "PaperPilot – Zero-Cloud, Pure-Rust PDF Engine with WASM and MCP",
    "url": "https://github.com/KrushnaVardhanReddy/PaperPilot",
    "source": "Hacker News",
    "published_at": "2026-10-26T03:29:05Z",
-   "text": "114 points and 28 comments on Hacker News.",
-   "points": 114,
+   "text": "125 points and 29 comments on Hacker News.",
+   "points": 125,
    "discussion": "https://news.ycombinator.com/item?id=50238739"
+  },
+  {
+   "title": "A thing I see happening at large organizations as a result of AI is the expansion of the role and s…",
+   "url": "https://x.com/emollick/status/2114337256865493250",
+   "source": "𝕏 @emollick",
+   "published_at": "2026-10-25T12:44:19Z",
+   "text": "A thing I see happening at large organizations as a result of AI is the expansion of the role and span of control of senior management who can directly monitor the whole firm. It vastly changes company operations. It also is straightforward to implement compared to firm redesign.",
+   "author_name": "Ethan Mollick",
+   "likes": 881,
+   "story": "Outside of tech there has been no financial payoff to US companies for using AI, now viewed as a margin-hurting cost center, as VC-backed firms burn more tokens"
+  },
+  {
+   "title": "Amazon Bee Frontier review: a simple $75 AI wearable that excels at always-on listening, summarizin…",
+   "url": "https://spyglass.org/amazon-bee/",
+   "source": "M.G. Siegler / Spyglass",
+   "published_at": "2026-10-26T05:05:43Z",
+   "text": "Amazon Bee Frontier review: a simple $75 AI wearable that excels at always-on listening, summarizing conversations, and suggesting follow-up actions. Amazon's quiet, listening AI wearable is also pretty killer? — I'm not sure people really understand what is coming with AI and wearables.",
+   "via": "Techmeme"
+  },
+  {
+   "title": "A 10-year-old CNN outperforms frontier LLMs for skin cancer diagnosis",
+   "url": "https://lynchlab.net/llm-skin-cancer",
+   "source": "Hacker News",
+   "published_at": "2026-10-25T17:15:38Z",
+   "text": "546 points and 235 comments on Hacker News.",
+   "points": 546,
+   "discussion": "https://news.ycombinator.com/item?id=50233779"
   },
   {
    "title": "Lawmakers and Hill staffers in both parties say AI leaders are becoming a political liability as th…",
@@ -90,46 +127,13 @@
    "via": "Techmeme"
   },
   {
-   "title": "A 10-year-old CNN outperforms frontier LLMs for skin cancer diagnosis",
-   "url": "https://lynchlab.net/llm-skin-cancer",
-   "source": "Hacker News",
-   "published_at": "2026-10-25T17:15:38Z",
-   "text": "538 points and 235 comments on Hacker News.",
-   "points": 538,
-   "discussion": "https://news.ycombinator.com/item?id=50233779"
-  },
-  {
-   "title": "High-frequency trading firms such as Jane Street are investing in AI and chip startups and neocloud…",
-   "url": "https://www.bloomberg.com/news/features/2026-10-22/jane-street-hrt-are-spending-billions-to-win-in-ai-era?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc5Mjg5ODcyMSwiZXhwIjoxNzkzNTAzNTIxLCJhcnRpY2xlSWQiOiJUTkJVQ0RLSUpIOTIwMCIsImJjb25uZWN0SWQiOiIwNEFGQkMxQkYyMTA0NUVEODg3MzQxQkQwQzIyNzRBMCJ9.aZUQTESNPxDFkB9tAjev0zQuyASx2W5Ed0a-yabw_WY",
-   "source": "Bloomberg",
-   "published_at": "2026-10-26T02:51:09Z",
-   "text": "High-frequency trading firms such as Jane Street are investing in AI and chip startups and neoclouds, and building data centers to gain an edge in the AI era. High-frequency trading firms are even building their own data centers as they compete for an edge in the AI era.",
-   "via": "Techmeme"
-  },
-  {
    "title": "OpenAI and Anthropic cut their LLM prices by up to 80% within a few months. Why?",
    "url": "https://minimaxir.com/2026/10/cheap-llms/",
    "source": "Hacker News",
    "published_at": "2026-10-25T21:11:31Z",
-   "text": "287 points and 285 comments on Hacker News.",
-   "points": 287,
+   "text": "296 points and 292 comments on Hacker News.",
+   "points": 296,
    "discussion": "https://news.ycombinator.com/item?id=50236102"
-  },
-  {
-   "title": "Data center tenants now demand $5M+ per day in late-delivery fees, up from $1M in spring 2026, spaw…",
-   "url": "https://www.theinformation.com/articles/data-center-late-fees-hit-5-million-per-day-spawning-new-insurance",
-   "source": "Ann Davis Vaughan / The Inf…",
-   "published_at": "2026-10-25T19:10:57Z",
-   "text": "Data center tenants now demand $5M+ per day in late-delivery fees, up from $1M in spring 2026, spawning new “delay-in-delivery” coverage from brokers like Marsh. This spring, Mike Mathews, who leads the global digital infrastructure practice at insurance broker Marsh …",
-   "via": "Techmeme"
-  },
-  {
-   "title": "Baba, which develops AI tools to help Medicare and Medicaid patients connect to care teams and hand…",
-   "url": "https://www.fiercehealthcare.com/finance/baba-nabs-40m-series-backed-firstmark-capital-and-cvs-health-ventures-medicare-ai-care",
-   "source": "Cailey Gleeson / Fierce Hea…",
-   "published_at": "2026-10-25T05:40:46Z",
-   "text": "Baba, which develops AI tools to help Medicare and Medicaid patients connect to care teams and handle advocacy tasks, raised a $40M Series A led by FirstMark",
-   "via": "Techmeme"
   }
  ],
  "sources": "curated, Techmeme, X (found via Techmeme, Reddit, the Internet Archive), Claude Code releases, Anthropic, Hacker News, Simon Willison"
