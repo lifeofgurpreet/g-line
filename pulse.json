@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-26T13:52:03Z",
+ "generated_at": "2026-10-26T14:24:31Z",
  "items": [
   {
    "title": "Anthropic's co-founders say they “believe that AI is one of the most consequential technologies in…",
@@ -17,7 +17,7 @@
    "published_at": "2026-10-26T13:05:46Z",
    "text": "Anthropic has filed an S-1 registration statement with the SEC related to its proposed IPO. Read more: Legal disclaimer: A registration statement relating to these securities has been filed with the SEC but has not yet become effective. These securities…",
    "author_name": "Anthropic",
-   "likes": 4657,
+   "likes": 7155,
    "story": "Anthropic files for an IPO on the Nasdaq under the symbol ANT; the number of Class A shares to be offered and the price range is yet to be determined",
    "links": [
     "https://www.anthropic.com/news/s1-sec"
@@ -31,14 +31,41 @@
    "text": "Added the Monitor tool and plugin monitors on Bedrock, Vertex, and Foundry, and when telemetry or nonessential traffic is disabled; long foreground sleeps are now blocked there too · Fixed requests failing behind some gateways and compatible servers that reject the effort-2025-11-24 beta value or mid-conversation system messages; Claude Code now retries without them · Fixed background cleanup deleting some recent files, such as pasted images, when cleanupPeriodDays is set to a very large value · Fixed compaction after a \"Prompt is too long\" error keeping too much of a conversation with dense…"
   },
   {
+   "title": "If you were thinking concentrating AI behind closed doors is safe, it is time to update your priors!",
+   "url": "https://x.com/ClementDelangue/status/2114713576296300604",
+   "source": "𝕏 @ClementDelangue",
+   "published_at": "2026-10-26T13:39:40Z",
+   "text": "If you were thinking concentrating AI behind closed doors is safe, it is time to update your priors!",
+   "author_name": "clem 🤗",
+   "likes": 153,
+   "story": "Cathedral, a months-old cybersecurity startup founded by ex-DOGE staffers, says it breached Anthropic's internal systems in under 12 hours using AI agents"
+  },
+  {
    "title": "The lower and high storage models have different A20 Chips. The 512GB configuration has 6 CPU cores…",
    "url": "https://x.com/markgurman/status/2114705568279724526",
    "source": "𝕏 @markgurman",
    "published_at": "2026-10-26T13:07:51Z",
    "text": "The lower and high storage models have different A20 Chips. The 512GB configuration has 6 CPU cores versus 5. Both have 7 core GPUs.",
    "author_name": "Mark Gurman",
-   "likes": 248,
+   "likes": 309,
    "story": "Apple unveils a redesigned iPad mini with an 8.5-inch OLED display, an A20 Pro, 24% thinner bezels, and a nano-texture finish option, for $699+ from November 6"
+  },
+  {
+   "title": "Anthropic S-1: of its $80.7B net loss in H1 2026, nearly $9B came from computing power and infrastr…",
+   "url": "https://www.ft.com/content/f6ecfecd-d797-4d2c-b427-d333297949cb",
+   "source": "Financial Times",
+   "published_at": "2026-10-26T13:31:06Z",
+   "text": "Anthropic S-1: of its $80.7B net loss in H1 2026, nearly $9B came from computing power and infrastructure, and it has nearly $800B in commitments over 10 years. AI company sets out its pitch to investors as the debate over the safety of the technology intensifies",
+   "via": "Techmeme"
+  },
+  {
+   "title": "IBM CEO says open weight models are now good and cheap on-prem",
+   "url": "https://www.theregister.com/systems/2026/10/22/ibm-ceo-says-open-weight-models-are-now-irresistibly-good-and-cheap-on-prem/5304640",
+   "source": "Hacker News",
+   "published_at": "2026-10-26T01:47:46Z",
+   "text": "364 points and 260 comments on Hacker News.",
+   "points": 364,
+   "discussion": "https://news.ycombinator.com/item?id=50238088"
   },
   {
    "title": "The naysayers are getting embarrassing. Every day, people are using AI to make incredible breakthro…",
@@ -47,25 +74,16 @@
    "published_at": "2026-10-26T00:19:20Z",
    "text": "The naysayers are getting embarrassing. Every day, people are using AI to make incredible breakthroughs and answer some of the toughest questions around, like \"what do I like about my child?\"",
    "author_name": "Osita Nwanevu",
-   "likes": 11385,
+   "likes": 11860,
    "story": "A profile of former Google VP and Yahoo CEO Marissa Mayer, whose startup Dazzle is building an AI assistant to help normal people tackle mundane tasks visually"
   },
   {
-   "title": "Anthropic S-1: an $80.7B net loss on revenue of $16.3B in H1 2026, up from a $13B net loss on reven…",
-   "url": "https://www.bloomberg.com/news/articles/2026-10-26/anthropic-ipo-s-1-filing-offers-first-look-at-claude-maker-s-finances",
-   "source": "Bailey Lipschultz / Bloombe…",
-   "published_at": "2026-10-26T13:31:06Z",
-   "text": "Anthropic S-1: an $80.7B net loss on revenue of $16.3B in H1 2026, up from a $13B net loss on revenue of $1.2B in H1 2025, and a net revenue retention of 900%. Anthropic PBC filed for an IPO, moving a step closer to being the first company focused primarily on developing the most advanced artificial intelligence models to go public.",
+   "title": "Anthropic's S-1 lists 94 pages of risk factors and warns that the “scale of harm” from a “catastrop…",
+   "url": "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-10-26-2026/card/anthropic-s-risk-factors-include-catastrophic-ai-related-incident--aAwPiJrvIG5OHdQGAo1n",
+   "source": "Wall Street Journal",
+   "published_at": "2026-10-26T14:04:15Z",
+   "text": "Anthropic's S-1 lists 94 pages of risk factors and warns that the “scale of harm” from a “catastrophic” AI incident might mean it is unable to obtain insurance. 94 pages — Nearly a quarter of Anthropic's S1, or 94 pages, was dedicated to risk factors …",
    "via": "Techmeme"
-  },
-  {
-   "title": "IBM CEO says open weight models are now good and cheap on-prem",
-   "url": "https://www.theregister.com/systems/2026/10/22/ibm-ceo-says-open-weight-models-are-now-irresistibly-good-and-cheap-on-prem/5304640",
-   "source": "Hacker News",
-   "published_at": "2026-10-26T01:47:46Z",
-   "text": "350 points and 251 comments on Hacker News.",
-   "points": 350,
-   "discussion": "https://news.ycombinator.com/item?id=50238088"
   },
   {
    "title": "Elon Musk just told the entire world that the AI bubble has popped... buckle up.",
@@ -74,8 +92,17 @@
    "published_at": "2026-10-25T20:03:14Z",
    "text": "Elon Musk just told the entire world that the AI bubble has popped... buckle up.",
    "author_name": "Financelot",
-   "likes": 9904,
+   "likes": 9908,
    "story": "Elon Musk says SpaceX closed $40B in GPU debt, debt markets have shut off credit for AI data center companies, and 200+ neoclouds face “death and consolidation”"
+  },
+  {
+   "title": "A 10-year-old CNN outperforms frontier LLMs for skin cancer diagnosis",
+   "url": "https://lynchlab.net/llm-skin-cancer",
+   "source": "Hacker News",
+   "published_at": "2026-10-25T17:15:38Z",
+   "text": "621 points and 259 comments on Hacker News.",
+   "points": 621,
+   "discussion": "https://news.ycombinator.com/item?id=50233779"
   },
   {
    "title": "Meta plans to raise $95B to finance its AI infrastructure, including $35B in public equity offering…",
@@ -86,33 +113,21 @@
    "via": "Techmeme"
   },
   {
-   "title": "Person who is reverse engineering his tv gets banned from OpenAI You aren't allowed to stop your tv…",
-   "url": "https://x.com/yacineMTB/status/2113965724435697732",
-   "source": "𝕏 @yacineMTB",
-   "published_at": "2026-10-24T12:07:58Z",
-   "text": "Person who is reverse engineering his tv gets banned from OpenAI You aren't allowed to stop your tv from spying on your family. You have to ask for permission Or, maybe, maybe we accelerate",
-   "author_name": "kache",
-   "likes": 27421,
-   "story": "OpenAI and Anthropic blocked the reverse engineering of smart TVs spying on us"
-  },
-  {
-   "title": "A 10-year-old CNN outperforms frontier LLMs for skin cancer diagnosis",
-   "url": "https://lynchlab.net/llm-skin-cancer",
+   "title": "PaperPilot – Zero-Cloud, Pure-Rust PDF Engine with WASM and MCP",
+   "url": "https://github.com/KrushnaVardhanReddy/PaperPilot",
    "source": "Hacker News",
-   "published_at": "2026-10-25T17:15:38Z",
-   "text": "613 points and 259 comments on Hacker News.",
-   "points": 613,
-   "discussion": "https://news.ycombinator.com/item?id=50233779"
+   "published_at": "2026-10-26T03:29:05Z",
+   "text": "191 points and 70 comments on Hacker News.",
+   "points": 191,
+   "discussion": "https://news.ycombinator.com/item?id=50238739"
   },
   {
-   "title": "r/opensource just banned any project that uses AI. By their own rule, that means the biggest open s…",
-   "url": "https://x.com/chasmmmmmmmmmmm/status/2114298704253575338",
-   "source": "𝕏 @chasmmmmmmmmmmm",
-   "published_at": "2026-10-25T10:11:07Z",
-   "text": "r/opensource just banned any project that uses AI. By their own rule, that means the biggest open source project of all time, Linux, is now banned too. The kernel already accepts AI-assisted code. This is the real AI psychosis.",
-   "author_name": "chasm",
-   "likes": 10033,
-   "story": "Moderators of r/opensource ban submissions of projects using, made by, or intended for AI, exclude non-English speakers over AI translation concerns, and more"
+   "title": "Anthropic S-1: an $80.7B net loss on revenue of $16.3B in H1 2026, up from a $13B net loss on reven…",
+   "url": "https://www.bloomberg.com/news/articles/2026-10-26/anthropic-ipo-s-1-filing-offers-first-look-at-claude-maker-s-finances",
+   "source": "Bailey Lipschultz / Bloombe…",
+   "published_at": "2026-10-26T13:31:06Z",
+   "text": "Anthropic S-1: an $80.7B net loss on revenue of $16.3B in H1 2026, up from a $13B net loss on revenue of $1.2B in H1 2025, and a net revenue retention of 900%. Anthropic PBC filed for an IPO, moving a step closer to being the first company focused primarily on developing the most advanced artificial intelligence models to go public.",
+   "via": "Techmeme"
   },
   {
    "title": "The public internet model is dying from too much content, algorithmic aggregators, and vulnerabilit…",
@@ -120,23 +135,6 @@
    "source": "Ben Thompson / Stratechery",
    "published_at": "2026-10-26T11:20:40Z",
    "text": "The public internet model is dying from too much content, algorithmic aggregators, and vulnerabilities found with AI, and that may bring new possibilities. It was the summer of 2003, just weeks before I was set to move to Taiwan, that I decided to create a blog to document my journey.",
-   "via": "Techmeme"
-  },
-  {
-   "title": "PaperPilot – Zero-Cloud, Pure-Rust PDF Engine with WASM and MCP",
-   "url": "https://github.com/KrushnaVardhanReddy/PaperPilot",
-   "source": "Hacker News",
-   "published_at": "2026-10-26T03:29:05Z",
-   "text": "187 points and 69 comments on Hacker News.",
-   "points": 187,
-   "discussion": "https://news.ycombinator.com/item?id=50238739"
-  },
-  {
-   "title": "Elvis Presley's music owners sue Anthropic for allegedly using 274 songs to train its models, seeki…",
-   "url": "https://www.nytimes.com/2026/10/25/arts/music/anthropic-lawsuit-elvis-presley-songs.html?unlocked_article_code=1.LVE.Unk9.7e04-FAQ9Ei8&smid=nytcore-ios-share",
-   "source": "Derrick Bryson Taylor / New…",
-   "published_at": "2026-10-26T08:56:14Z",
-   "text": "Elvis Presley's music owners sue Anthropic for allegedly using 274 songs to train its models, seeking $41M+; Anthropic says it disagrees and will defend itself. The $41 million lawsuit contends that the A.I. company used Presley's music to train its models without permission.",
    "via": "Techmeme"
   }
  ],
