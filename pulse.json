@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-25T23:49:26Z",
+ "generated_at": "2026-10-26T00:21:28Z",
  "items": [
   {
    "title": "Outside of tech there has been no financial payoff to US companies for using AI, now viewed as a ma…",
@@ -17,7 +17,7 @@
    "published_at": "2026-10-25T20:03:14Z",
    "text": "Elon Musk just told the entire world that the AI bubble has popped... buckle up.",
    "author_name": "Financelot",
-   "likes": 6957,
+   "likes": 7634,
    "story": "Elon Musk says SpaceX closed $40B in GPU debt, debt markets have shut off credit for AI data center firms, and 200+ neoclouds face “death and consolidation”"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-10-24T12:07:58Z",
    "text": "Person who is reverse engineering his tv gets banned from OpenAI You aren't allowed to stop your tv from spying on your family. You have to ask for permission Or, maybe, maybe we accelerate",
    "author_name": "kache",
-   "likes": 26756,
+   "likes": 26812,
    "story": "OpenAI and Anthropic blocked the reverse engineering of smart TVs spying on us"
   },
   {
@@ -50,8 +50,8 @@
    "url": "https://lynchlab.net/llm-skin-cancer",
    "source": "Hacker News",
    "published_at": "2026-10-25T17:15:38Z",
-   "text": "383 points and 183 comments on Hacker News.",
-   "points": 383,
+   "text": "386 points and 184 comments on Hacker News.",
+   "points": 386,
    "discussion": "https://news.ycombinator.com/item?id=50233779"
   },
   {
@@ -61,7 +61,7 @@
    "published_at": "2026-10-23T18:23:45Z",
    "text": "We believe voice is the most natural way to interact with intelligence, so we created Dessa, the most authentic full-duplex speech model ever built. Talking with it feels like talking with a person…full of emotion, nuance, pauses, and a natural cadence.",
    "author_name": "jack",
-   "likes": 68036,
+   "likes": 68043,
    "story": "Block unveils Dessa, a “true speech-to-speech” AI model trained on “nothing but human conversation” that it says runs locally on a MacBook Pro M4 Max or newer",
    "links": [
     "https://block.xyz/dessa"
@@ -80,8 +80,8 @@
    "url": "https://minimaxir.com/2026/10/cheap-llms/",
    "source": "Hacker News",
    "published_at": "2026-10-25T21:11:31Z",
-   "text": "77 points and 96 comments on Hacker News.",
-   "points": 77,
+   "text": "80 points and 102 comments on Hacker News.",
+   "points": 80,
    "discussion": "https://news.ycombinator.com/item?id=50236102"
   },
   {
@@ -102,11 +102,11 @@
    "discussion": "https://news.ycombinator.com/item?id=50233304"
   },
   {
-   "title": "Source: Replit recently moved most AI spend from Anthropic to OpenAI, which gave 30%+ off in a deal…",
-   "url": "https://www.theinformation.com/articles/anthropics-margin-openais-opportunity",
-   "source": "The Information",
-   "published_at": "2026-10-24T19:45:46Z",
-   "text": "Source: Replit recently moved most AI spend from Anthropic to OpenAI, which gave 30%+ off in a deal worth $100M+/year, after Anthropic discontinued its discount. OpenAI's efforts to undercut Anthropic on price are producing some results. — For instance, in May, Anthropic models powered 57% …",
+   "title": "OpenAI says it built an “offline world” from cached web content to train isolated frontier models t…",
+   "url": "https://openai.com/index/securing-our-frontier-model-training-environment",
+   "source": "OpenAI",
+   "published_at": "2026-10-24T00:30:48Z",
+   "text": "OpenAI says it built an “offline world” from cached web content to train isolated frontier models to browse, search for information, and use web apps. In order to work with software, AI models need computing environments: digital workspaces where they can write and run code …",
    "via": "Techmeme"
   },
   {
@@ -119,11 +119,11 @@
    "discussion": "https://news.ycombinator.com/item?id=50227356"
   },
   {
-   "title": "A look at Alpha School, a network of private schools that claims to teach kids 2x as fast using AI;…",
-   "url": "https://www.nytimes.com/2026/10/23/us/alpha-school-ai-education-parents.html?unlocked_article_code=1.K1E.IcJn.2l4XIQK5gQsl&smid=url-share",
-   "source": "Dana Goldstein / New York T…",
-   "published_at": "2026-10-24T17:25:51Z",
-   "text": "A look at Alpha School, a network of private schools that claims to teach kids 2x as fast using AI; data shows ~50% of K-8 students missed this goal in math. Alpha School, a private network, is spreading into public education. While its students' test scores are high, some parents and educators say it doesn't live up to the hype.",
+   "title": "Source: Replit recently moved most AI spend from Anthropic to OpenAI, which gave 30%+ off in a deal…",
+   "url": "https://www.theinformation.com/articles/anthropics-margin-openais-opportunity",
+   "source": "The Information",
+   "published_at": "2026-10-24T19:45:46Z",
+   "text": "Source: Replit recently moved most AI spend from Anthropic to OpenAI, which gave 30%+ off in a deal worth $100M+/year, after Anthropic discontinued its discount. OpenAI's efforts to undercut Anthropic on price are producing some results. — For instance, in May, Anthropic models powered 57% …",
    "via": "Techmeme"
   },
   {
