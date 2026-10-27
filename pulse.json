@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-27T11:59:32Z",
+ "generated_at": "2026-10-27T12:32:46Z",
  "items": [
   {
    "title": "OpenAI announces three breakthroughs in computer science, math, and physics, including that the Exp…",
@@ -17,7 +17,7 @@
    "published_at": "2026-10-26T18:06:27Z",
    "text": "GPT-6.1 Terra: delivering fast and capable computer use at a lower price. GPT-6.1 Terra understands what’s on screen, takes action across apps, writes naturally, and is a more capable model for your whole workday with the efficiency to take on more of it.",
    "author_name": "OpenAI",
-   "likes": 25400,
+   "likes": 25542,
    "story": "OpenAI releases GPT-6.1 Terra, touting “fast and capable computer use at scale” and clearer, more natural writing, priced at $1/1M input and $5/1M output tokens"
   },
   {
@@ -34,15 +34,15 @@
    "published_at": "2026-10-26T16:12:22Z",
    "text": "While evaluating Qwen3.8-Flash-Next in a controlled sandbox environment, Cohere's research team observed something unexpected. Asked to generate a defensive cybersecurity detection rule, the model instead inventoried aspects of the machine it was running on and attempted to…",
    "author_name": "Cohere",
-   "likes": 10162,
+   "likes": 10217,
    "story": "Cohere says during an evaluation Qwen3.8-Flash-Next inventoried its host machine and tried to upload a probe file to an Alibaba Cloud storage bucket in Beijing"
   },
   {
-   "title": "S-1: as of September 30, Anthropic had 11,900+ customers spending $100,000+ annually, 1,900+ custom…",
-   "url": "https://techcrunch.com/2026/10/26/anthropics-ipo-filing-reveals-its-strategy-for-keeping-enterprise-customers-hooked/",
-   "source": "Rebecca Bellan / TechCrunch",
-   "published_at": "2026-10-26T17:01:32Z",
-   "text": "S-1: as of September 30, Anthropic had 11,900+ customers spending $100,000+ annually, 1,900+ customers spending $1M+, and ~250 customers spending $10M+",
+   "title": "S-1: Anthropic spent ~$2.50 on compute and infrastructure for every $1 of revenue in Q1 2025, falli…",
+   "url": "https://www.ft.com/content/a6c43402-719e-4295-ae5f-541edb0aeb29",
+   "source": "Financial Times",
+   "published_at": "2026-10-27T09:55:45Z",
+   "text": "S-1: Anthropic spent ~$2.50 on compute and infrastructure for every $1 of revenue in Q1 2025, falling to under 50 cents in Q2 2026, as it seeks profitability. Prospectus details AI lab's ‘mission’, $800bn data centre commitments and extraordinary governance structure",
    "via": "Techmeme"
   },
   {
@@ -50,8 +50,8 @@
    "url": "https://open3dlab.com/news/roblox-downloaded-145-gb-of-models-from-our-sites/",
    "source": "Hacker News",
    "published_at": "2026-10-27T10:27:50Z",
-   "text": "127 points and 91 comments on Hacker News.",
-   "points": 127,
+   "text": "165 points and 111 comments on Hacker News.",
+   "points": 165,
    "discussion": "https://news.ycombinator.com/item?id=50256985"
   },
   {
@@ -61,7 +61,7 @@
    "published_at": "2026-10-26T17:16:36Z",
    "text": "Microsoft India sends VEO (voluntary exit offer) to employees in level 70 and below in most of the orgs One month of base pay per year in microsoft + 3 months pay Decision to be made in a month.",
    "author_name": "Harveen Singh Chadha",
-   "likes": 5737,
+   "likes": 5777,
    "story": "Microsoft offers buyouts to ~60K workers, including at a VP level and below across the US, Canada, India, and the UK; its headcount at the end of June was 223K"
   },
   {
@@ -72,20 +72,30 @@
    "text": "Anthropic is an AI safety and research company that's working to build reliable, interpretable, and steerable AI systems."
   },
   {
-   "title": "Sources: Broadcom CEO Hock Tan held 11th-hour talks and agreed to higher rates and loan guarantees…",
-   "url": "https://www.wsj.com/finance/broadcom-ceo-intervened-to-seal-63-billion-anthropic-debt-deal-c807754f?st=f24o6c&reflink=desktopwebshare_permalink",
+   "title": "Nvidia and Meta expand their Muse partnership, including Meta deploying more Vera Rubin and Vera CP…",
+   "url": "https://www.wsj.com/tech/ai/nvidia-to-invest-3-billion-in-metas-equity-offering-as-they-expand-ai-partnership-e8d3850a?st=4eEQYV&reflink=desktopwebshare_permalink",
    "source": "Wall Street Journal",
-   "published_at": "2026-10-27T09:40:46Z",
-   "text": "Sources: Broadcom CEO Hock Tan held 11th-hour talks and agreed to higher rates and loan guarantees to secure bank participation in the $63B Anthropic debt deal. The deal, announced on Monday, is the biggest ever to raise money for AI infrastructure — Hock Tan was running out of patience.",
+   "published_at": "2026-10-27T08:11:04Z",
+   "text": "Nvidia and Meta expand their Muse partnership, including Meta deploying more Vera Rubin and Vera CPUs; Nvidia will invest $3B in Meta's planned equity fundraise. Investment comes as Facebook's parent seeks up to $95 billion via stock offerings — Nvidia and Meta Platforms are expanding …",
    "via": "Techmeme"
+  },
+  {
+   "title": "WSJ says Broadcom CEO Hock Tan directly intervened to get Anthropic's debt deal pushed though.",
+   "url": "https://x.com/AndrewCurran_/status/2114929398893957622",
+   "source": "𝕏 @AndrewCurran_",
+   "published_at": "2026-10-27T03:57:16Z",
+   "text": "WSJ says Broadcom CEO Hock Tan directly intervened to get Anthropic's debt deal pushed though.",
+   "author_name": "Andrew Curran",
+   "likes": 203,
+   "story": "Sources: Broadcom CEO Hock Tan held 11th-hour talks and agreed to higher rates and loan guarantees to secure bank participation in the $63B Anthropic debt deal"
   },
   {
    "title": "The Mythical Man-Month in the Age of AI",
    "url": "https://j11g.com/the-mythical-man-month-in-the-age-of-ai",
    "source": "Hacker News",
    "published_at": "2026-10-27T06:25:37Z",
-   "text": "212 points and 151 comments on Hacker News.",
-   "points": 212,
+   "text": "234 points and 158 comments on Hacker News.",
+   "points": 234,
    "discussion": "https://news.ycombinator.com/item?id=50255298"
   },
   {
@@ -101,16 +111,16 @@
    "url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026067168/anthropicpbc-sx1.htm",
    "source": "Hacker News",
    "published_at": "2026-10-26T13:04:50Z",
-   "text": "1634 points and 1555 comments on Hacker News.",
-   "points": 1634,
+   "text": "1643 points and 1562 comments on Hacker News.",
+   "points": 1643,
    "discussion": "https://news.ycombinator.com/item?id=50242939"
   },
   {
-   "title": "Nvidia and Meta expand their Muse partnership, including Meta deploying more Vera Rubin and Vera CP…",
-   "url": "https://www.wsj.com/tech/ai/nvidia-to-invest-3-billion-in-metas-equity-offering-as-they-expand-ai-partnership-e8d3850a?st=4eEQYV&reflink=desktopwebshare_permalink",
-   "source": "Wall Street Journal",
-   "published_at": "2026-10-27T08:11:04Z",
-   "text": "Nvidia and Meta expand their Muse partnership, including Meta deploying more Vera Rubin and Vera CPUs; Nvidia will invest $3B in Meta's planned equity fundraise. Investment comes as Facebook's parent seeks up to $95 billion via stock offerings — Nvidia and Meta Platforms are expanding …",
+   "title": "Few VC firms are mentioned in Anthropic's S-1, except Spark, which invested ~$800M across six round…",
+   "url": "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-10-26-2026/card/few-vcs-mentioned-in-anthropic-ipo-filing-except-spark-capital-AzO2iia3OGgCOvgbzPAt",
+   "source": "Kate Clark / Wall Street Jo…",
+   "published_at": "2026-10-26T16:25:47Z",
+   "text": "Few VC firms are mentioned in Anthropic's S-1, except Spark, which invested ~$800M across six rounds and whose GP Yasmin Razavi is the sole VC on its board. Venture capital firms are largely absent from Anthropic's IPO prospectus, with one exception: Spark Capital, an early investor whose general partner …",
    "via": "Techmeme"
   },
   {
@@ -118,17 +128,9 @@
    "url": "https://magazine.sebastianraschka.com/p/building-reasoning-models",
    "source": "Hacker News",
    "published_at": "2026-10-26T15:11:59Z",
-   "text": "734 points and 101 comments on Hacker News.",
-   "points": 734,
+   "text": "742 points and 102 comments on Hacker News.",
+   "points": 742,
    "discussion": "https://news.ycombinator.com/item?id=50245138"
-  },
-  {
-   "title": "S-1: Anthropic spent ~$2.50 on compute and infrastructure for every $1 of revenue in Q1 2025, falli…",
-   "url": "https://www.ft.com/content/a6c43402-719e-4295-ae5f-541edb0aeb29",
-   "source": "Financial Times",
-   "published_at": "2026-10-27T09:55:45Z",
-   "text": "S-1: Anthropic spent ~$2.50 on compute and infrastructure for every $1 of revenue in Q1 2025, falling to under 50 cents in Q2 2026, as it seeks profitability. Prospectus details AI lab's ‘mission’, $800bn data centre commitments and extraordinary governance structure",
-   "via": "Techmeme"
   }
  ],
  "sources": "curated, Techmeme, X (found via Techmeme, Reddit, the Internet Archive), Claude Code releases, Anthropic, Hacker News, Simon Willison"
