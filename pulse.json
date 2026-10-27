@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-27T22:22:45Z",
+ "generated_at": "2026-10-27T22:54:27Z",
  "items": [
   {
    "title": "Google launches Genie 4, a world model powered by Gemini 3.8 Flash designed to generate interactive…",
@@ -17,7 +17,7 @@
    "published_at": "2026-10-27T20:27:48Z",
    "text": "Over the past few months, Anthropic scientists have engaged in deep research partnerships with six organizations developing new medicines. We've also begun drug discovery efforts of our own. In doing so, we’ve learned much more about how Claude can support the many stages of…",
    "author_name": "Anthropic",
-   "likes": 3475,
+   "likes": 3997,
    "story": "Anthropic details early drug development work with six partners and says it has acquired Mithril, a one-person company working on muscular dystrophy"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-10-27T22:09:39Z",
    "text": "NEW: Apple bets customers will pay a big premium for touch-screen, OLED laptops. The company has discussed charging $400 more, pricing the 14-inch touch MacBook Pro from $2,899. That could make the 16-inch model at least $3,399.",
    "author_name": "Mark Gurman",
-   "likes": 165,
+   "likes": 338,
    "story": "Source: Apple has discussed charging $2,899 for the 14-inch MacBook Pro with an OLED XDR touch screen and M5 Pro chip, $400 more than the current M5 Pro model",
    "links": [
     "https://www.bloomberg.com/news/articles/2026-10-27/apple-14-inch-16-inch-macbook-pro-touch-price-is-likely-2-899-laptop-details?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc5MzEzODg1NiwiZXhwIjoxNzkzNzQzNjU2LCJhcnRpY2xlSWQiOiJUTktaNE9UOTZPU0kwMCIsImJjb25uZWN0SWQiOiJDNEVEQ0FFMUZBMDU0MEJFQTI0QTlGMjExQzFFOTA4MCJ9.-r0-k5GENAkA0QuY_42jePcRdcwpSByLQzUz6ZPG9LI"
@@ -47,7 +47,7 @@
    "published_at": "2026-10-27T13:08:48Z",
    "text": "Everyday tasks? No sweat. Faster graphics? Nailed it. On-device AI? You bet. It’s the new 14-inch MacBook Pro and iMac, faster than ever and supercharged by M6.",
    "author_name": "Greg Joswiak",
-   "likes": 8516,
+   "likes": 8569,
    "story": "Apple unveils a 14\" MacBook Pro with an M6, which has a 12-core CPU and a 12-core GPU, 16GB or 32GB of unified memory, and Wi-Fi 7, for $1,999+ from November 6"
   },
   {
@@ -59,13 +59,13 @@
    "via": "Techmeme"
   },
   {
-   "title": "Police are using AI to pull over drivers for 'suspicious' behavior",
-   "url": "https://gizmodo.com/police-are-using-ai-to-pull-over-drivers-for-suspicious-behavior-2000831220",
+   "title": "Anthropic trained Claude on illegally obtained Stanford professors' books",
+   "url": "https://stanforddaily.com/2026/10/27/professors-books-pirated-to-train-claude/",
    "source": "Hacker News",
-   "published_at": "2026-10-27T16:40:15Z",
-   "text": "307 points and 234 comments on Hacker News.",
-   "points": 307,
-   "discussion": "https://news.ycombinator.com/item?id=50261819"
+   "published_at": "2026-10-27T15:28:26Z",
+   "text": "398 points and 224 comments on Hacker News.",
+   "points": 398,
+   "discussion": "https://news.ycombinator.com/item?id=50260814"
   },
   {
    "title": "Microsoft India sends VEO (voluntary exit offer) to employees in level 70 and below in most of the…",
@@ -81,7 +81,7 @@
    "title": "Expanding our partnership with GSA to bring Claude to all levels of government",
    "url": "https://www.anthropic.com/news/expanding-partnership-gsa",
    "source": "Anthropic",
-   "published_at": "2026-10-27T22:17:36Z",
+   "published_at": "2026-10-27T22:21:46Z",
    "text": "Anthropic is an AI safety and research company that's working to build reliable, interpretable, and steerable AI systems."
   },
   {
@@ -99,17 +99,17 @@
    "published_at": "2026-10-27T03:57:16Z",
    "text": "WSJ says Broadcom CEO Hock Tan directly intervened to get Anthropic's debt deal pushed though.",
    "author_name": "Andrew Curran",
-   "likes": 264,
+   "likes": 265,
    "story": "Sources: Broadcom CEO Hock Tan held 11th-hour talks and agreed to higher rates and loan guarantees to secure bank participation in the $63B Anthropic debt deal"
   },
   {
-   "title": "Anthropic trained Claude on illegally obtained Stanford professors' books",
-   "url": "https://stanforddaily.com/2026/10/27/professors-books-pirated-to-train-claude/",
+   "title": "Survival LLM: AI assistant and emergency library that runs on your own computer",
+   "url": "https://www.brangus.io/survival-llm",
    "source": "Hacker News",
-   "published_at": "2026-10-27T15:28:26Z",
-   "text": "377 points and 215 comments on Hacker News.",
-   "points": 377,
-   "discussion": "https://news.ycombinator.com/item?id=50260814"
+   "published_at": "2026-10-27T19:55:06Z",
+   "text": "116 points and 71 comments on Hacker News.",
+   "points": 116,
+   "discussion": "https://news.ycombinator.com/item?id=50264853"
   },
   {
    "title": "Anthropic's S-1 shows an 85% gross margin in H1 from running its models, a reality check for skepti…",
@@ -120,13 +120,13 @@
    "via": "Techmeme"
   },
   {
-   "title": "Survival LLM: AI assistant and emergency library that runs on your own computer",
-   "url": "https://www.brangus.io/survival-llm",
+   "title": "Early progress on accelerating drug development with Claude",
+   "url": "https://www.anthropic.com/research/early-progress-drug-development",
    "source": "Hacker News",
-   "published_at": "2026-10-27T19:55:06Z",
-   "text": "103 points and 65 comments on Hacker News.",
-   "points": 103,
-   "discussion": "https://news.ycombinator.com/item?id=50264853"
+   "published_at": "2026-10-27T20:50:42Z",
+   "text": "67 points and 53 comments on Hacker News.",
+   "points": 67,
+   "discussion": "https://news.ycombinator.com/item?id=50265609"
   },
   {
    "title": "Anthropic files S-1 with the SEC for proposed initial public offering",
