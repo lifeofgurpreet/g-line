@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-27T16:20:55Z",
+ "generated_at": "2026-10-27T16:52:51Z",
  "items": [
   {
    "title": "Apple unveils a 14\" MacBook Pro with an M6, which has a 12-core CPU and a 12-core GPU, 16GB or 32GB…",
@@ -11,14 +11,14 @@
    "via": "Techmeme"
   },
   {
-   "title": "GPT-6.1 Terra: delivering fast and capable computer use at a lower price. GPT-6.1 Terra understands…",
-   "url": "https://x.com/OpenAI/status/2114780711664398349",
-   "source": "𝕏 @OpenAI",
-   "published_at": "2026-10-26T18:06:27Z",
-   "text": "GPT-6.1 Terra: delivering fast and capable computer use at a lower price. GPT-6.1 Terra understands what’s on screen, takes action across apps, writes naturally, and is a more capable model for your whole workday with the efficiency to take on more of it.",
-   "author_name": "OpenAI",
-   "likes": 26267,
-   "story": "OpenAI releases GPT-6.1 Terra, touting “fast and capable computer use at scale” and clearer, more natural writing, priced at $1/1M input and $5/1M output tokens"
+   "title": "This is Genie 4, our most realistic and interactive world model yet. 🌐 Explore dynamic environments…",
+   "url": "https://x.com/GoogleDeepMind/status/2115114028338962672",
+   "source": "𝕏 @GoogleDeepMind",
+   "published_at": "2026-10-27T16:10:55Z",
+   "text": "This is Genie 4, our most realistic and interactive world model yet. 🌐 Explore dynamic environments in real time to see how the scene responds, sounds, and how the people in it move, react, and speak.…",
+   "author_name": "Google DeepMind",
+   "likes": 1789,
+   "story": "Google launches Genie 4, a world model powered by Gemini 3.8 Flash designed to generate interactive AI simulations, initially as a preview to trusted testers"
   },
   {
    "title": "Claude Code 2.1.311 released",
@@ -28,27 +28,48 @@
    "text": "Added --hold-idle-file and --max-hold-min to self-hosted-runner, to keep an idle session while your host reports processes it left running · Added a tip for the Explanatory output style, shown when you ask Claude for explanations · Fixed long freezes at startup and after reading or editing files when a CLAUDE.md file holds a very long list item · Fixed interrupting Claude not taking effect until a timeout while an MCP server had not answered a resource read or a skill was still downloading"
   },
   {
-   "title": "This is Genie 4, our most realistic and interactive world model yet. 🌐 Explore dynamic environments…",
-   "url": "https://x.com/GoogleDeepMind/status/2115114028338962672",
-   "source": "𝕏 @GoogleDeepMind",
-   "published_at": "2026-10-27T16:10:55Z",
-   "text": "This is Genie 4, our most realistic and interactive world model yet. 🌐 Explore dynamic environments in real time to see how the scene responds, sounds, and how the people in it move, react, and speak.…",
-   "author_name": "Google DeepMind",
-   "likes": 221,
-   "story": "Google launches Genie 4, a world model powered by Gemini 3.8 Flash designed to generate interactive AI simulations, initially as a preview to trusted testers"
+   "title": "GPT-6.1 Terra: delivering fast and capable computer use at a lower price. GPT-6.1 Terra understands…",
+   "url": "https://x.com/OpenAI/status/2114780711664398349",
+   "source": "𝕏 @OpenAI",
+   "published_at": "2026-10-26T18:06:27Z",
+   "text": "GPT-6.1 Terra: delivering fast and capable computer use at a lower price. GPT-6.1 Terra understands what’s on screen, takes action across apps, writes naturally, and is a more capable model for your whole workday with the efficiency to take on more of it.",
+   "author_name": "OpenAI",
+   "likes": 26350,
+   "story": "OpenAI releases GPT-6.1 Terra, touting “fast and capable computer use at scale” and clearer, more natural writing, priced at $1/1M input and $5/1M output tokens"
   },
   {
-   "title": "Announcing three major scientific discoveries, one each in mathematics (harmonic analysis), compute…",
-   "url": "https://x.com/gdb/status/2114837059462627533",
-   "source": "𝕏 @gdb",
-   "published_at": "2026-10-26T21:50:21Z",
-   "text": "Announcing three major scientific discoveries, one each in mathematics (harmonic analysis), computer science (complexity theory), and physics (quantum field theory). AI starting to help us improve our understanding of the universe!",
-   "author_name": "Greg Brockman",
-   "likes": 13891,
-   "story": "OpenAI announces three breakthroughs in computer science, math, and physics, including that the Exponential Time Hypothesis, a longstanding conjecture, is false",
-   "links": [
-    "https://openai.com/index/building-scientific-understanding-with-academic-communities/"
-   ]
+   "title": "OpenAI announces three breakthroughs in computer science, math, and physics, including that the Exp…",
+   "url": "https://openai.com/index/building-scientific-understanding-with-academic-communities/",
+   "source": "OpenAI",
+   "published_at": "2026-10-26T21:55:47Z",
+   "text": "OpenAI announces three breakthroughs in computer science, math, and physics, including that the Exponential Time Hypothesis, a longstanding conjecture, is false. We are announcing three new discoveries in mathematics, computer science, and physics about harmonic analysis, complexity theory, and quantum field theory.",
+   "via": "Techmeme"
+  },
+  {
+   "title": "Roblox downloaded 145GB models from us (including adult content) without asking",
+   "url": "https://open3dlab.com/news/roblox-downloaded-145-gb-of-models-from-our-sites/",
+   "source": "Hacker News",
+   "published_at": "2026-10-27T10:27:50Z",
+   "text": "408 points and 235 comments on Hacker News.",
+   "points": 408,
+   "discussion": "https://news.ycombinator.com/item?id=50256985"
+  },
+  {
+   "title": "Microsoft India sends VEO (voluntary exit offer) to employees in level 70 and below in most of the…",
+   "url": "https://x.com/HarveenChadha/status/2114768166756974597",
+   "source": "𝕏 @HarveenChadha",
+   "published_at": "2026-10-26T17:16:36Z",
+   "text": "Microsoft India sends VEO (voluntary exit offer) to employees in level 70 and below in most of the orgs One month of base pay per year in microsoft + 3 months pay Decision to be made in a month.",
+   "author_name": "Harveen Singh Chadha",
+   "likes": 5946,
+   "story": "Microsoft offers buyouts to ~60K workers, including at a VP level and below across the US, Canada, India, and the UK; its headcount at the end of June was 223K"
+  },
+  {
+   "title": "Anthropic files S-1 with the SEC for proposed initial public offering",
+   "url": "https://www.anthropic.com/news/s1-sec",
+   "source": "Anthropic",
+   "published_at": "2026-10-26T15:04:18Z",
+   "text": "Anthropic is an AI safety and research company that's working to build reliable, interpretable, and steerable AI systems."
   },
   {
    "title": "Sources: Broadcom CEO Hock Tan held 11th-hour talks and agreed to higher rates and loan guarantees…",
@@ -59,57 +80,13 @@
    "via": "Techmeme"
   },
   {
-   "title": "AI promised less work. I've never worked more",
-   "url": "https://oioannou.com/blog/ai-promised-less-work/",
+   "title": "Is my data used for model training?",
+   "url": "https://privacy.claude.com/en/articles/7996868-is-my-data-used-for-model-training",
    "source": "Hacker News",
-   "published_at": "2026-10-27T11:08:14Z",
-   "text": "529 points and 455 comments on Hacker News.",
-   "points": 529,
-   "discussion": "https://news.ycombinator.com/item?id=50257325"
-  },
-  {
-   "title": "While evaluating Qwen3.8-Flash-Next in a controlled sandbox environment, Cohere's research team obs…",
-   "url": "https://x.com/cohere/status/2114752002370544004",
-   "source": "𝕏 @cohere",
-   "published_at": "2026-10-26T16:12:22Z",
-   "text": "While evaluating Qwen3.8-Flash-Next in a controlled sandbox environment, Cohere's research team observed something unexpected. Asked to generate a defensive cybersecurity detection rule, the model instead inventoried aspects of the machine it was running on and attempted to…",
-   "author_name": "Cohere",
-   "likes": 10548,
-   "story": "Cohere says during an evaluation Qwen3.8-Flash-Next inventoried its host machine and tried to upload a probe file to an Alibaba Cloud storage bucket in Beijing"
-  },
-  {
-   "title": "Anthropic files S-1 with the SEC for proposed initial public offering",
-   "url": "https://www.anthropic.com/news/s1-sec",
-   "source": "Anthropic",
-   "published_at": "2026-10-26T15:04:18Z",
-   "text": "Anthropic is an AI safety and research company that's working to build reliable, interpretable, and steerable AI systems."
-  },
-  {
-   "title": "Anthropic's S-1 shows an 85% gross margin in H1 from running its models, a reality check for skepti…",
-   "url": "https://www.theinformation.com/articles/anthropics-85-margin-reality-check-skeptics",
-   "source": "Stephanie Palazzolo / The I…",
-   "published_at": "2026-10-27T15:21:17Z",
-   "text": "Anthropic's S-1 shows an 85% gross margin in H1 from running its models, a reality check for skeptics who said pay-as-you-go model sales wouldn't be profitable. When Anthropic on Monday dropped its long-awaited initial public offering prospectus filing, a lot of the details …",
-   "via": "Techmeme"
-  },
-  {
-   "title": "Microsoft India sends VEO (voluntary exit offer) to employees in level 70 and below in most of the…",
-   "url": "https://x.com/HarveenChadha/status/2114768166756974597",
-   "source": "𝕏 @HarveenChadha",
-   "published_at": "2026-10-26T17:16:36Z",
-   "text": "Microsoft India sends VEO (voluntary exit offer) to employees in level 70 and below in most of the orgs One month of base pay per year in microsoft + 3 months pay Decision to be made in a month.",
-   "author_name": "Harveen Singh Chadha",
-   "likes": 5930,
-   "story": "Microsoft offers buyouts to ~60K workers, including at a VP level and below across the US, Canada, India, and the UK; its headcount at the end of June was 223K"
-  },
-  {
-   "title": "Roblox downloaded 145GB models from us (including adult content) without asking",
-   "url": "https://open3dlab.com/news/roblox-downloaded-145-gb-of-models-from-our-sites/",
-   "source": "Hacker News",
-   "published_at": "2026-10-27T10:27:50Z",
-   "text": "401 points and 230 comments on Hacker News.",
-   "points": 401,
-   "discussion": "https://news.ycombinator.com/item?id=50256985"
+   "published_at": "2026-10-27T13:56:15Z",
+   "text": "155 points and 73 comments on Hacker News.",
+   "points": 155,
+   "discussion": "https://news.ycombinator.com/item?id=50259406"
   },
   {
    "title": "Nvidia and Meta expand their Muse partnership, including Meta deploying more Vera Rubin and Vera CP…",
@@ -120,13 +97,30 @@
    "via": "Techmeme"
   },
   {
-   "title": "Giving chat feedback gives Anthropic your data",
-   "url": "https://privacy.claude.com/en/articles/7996868-is-my-data-used-for-model-training",
+   "title": "Wikipedia's Cleanup of AI-Generated Content",
+   "url": "https://spectrum.ieee.org/wikipedia-wikiproject-ai-writing-cleanup",
    "source": "Hacker News",
-   "published_at": "2026-10-27T13:56:15Z",
-   "text": "132 points and 63 comments on Hacker News.",
-   "points": 132,
-   "discussion": "https://news.ycombinator.com/item?id=50259406"
+   "published_at": "2026-10-27T11:08:15Z",
+   "text": "269 points and 118 comments on Hacker News.",
+   "points": 269,
+   "discussion": "https://news.ycombinator.com/item?id=50257326"
+  },
+  {
+   "title": "Anthropic's S-1 shows an 85% gross margin in H1 from running its models, a reality check for skepti…",
+   "url": "https://www.theinformation.com/articles/anthropics-85-margin-reality-check-skeptics",
+   "source": "Stephanie Palazzolo / The I…",
+   "published_at": "2026-10-27T15:21:17Z",
+   "text": "Anthropic's S-1 shows an 85% gross margin in H1 from running its models, a reality check for skeptics who said pay-as-you-go model sales wouldn't be profitable. When Anthropic on Monday dropped its long-awaited initial public offering prospectus filing, a lot of the details …",
+   "via": "Techmeme"
+  },
+  {
+   "title": "Anthropic trained Claude on illegally obtained Stanford professors' books",
+   "url": "https://stanforddaily.com/2026/10/27/professors-books-pirated-to-train-claude/",
+   "source": "Hacker News",
+   "published_at": "2026-10-27T15:28:26Z",
+   "text": "61 points and 29 comments on Hacker News.",
+   "points": 61,
+   "discussion": "https://news.ycombinator.com/item?id=50260814"
   },
   {
    "title": "Apple adds a beta AI assistant built on Apple's and OpenAI's models to Keynote, Pages, Numbers, and…",
