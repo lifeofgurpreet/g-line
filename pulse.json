@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-27T10:54:02Z",
+ "generated_at": "2026-10-27T11:26:24Z",
  "items": [
   {
    "title": "OpenAI announces three breakthroughs in computer science, math, and physics, including that the Exp…",
@@ -17,7 +17,7 @@
    "published_at": "2026-10-26T18:06:27Z",
    "text": "GPT-6.1 Terra: delivering fast and capable computer use at a lower price. GPT-6.1 Terra understands what’s on screen, takes action across apps, writes naturally, and is a more capable model for your whole workday with the efficiency to take on more of it.",
    "author_name": "OpenAI",
-   "likes": 25130,
+   "likes": 25261,
    "story": "OpenAI releases GPT-6.1 Terra, touting “fast and capable computer use at scale” and clearer, more natural writing, priced at $1/1M input and $5/1M output tokens"
   },
   {
@@ -28,17 +28,14 @@
    "text": "Added --hold-idle-file and --max-hold-min to self-hosted-runner, to keep an idle session while your host reports processes it left running · Added a tip for the Explanatory output style, shown when you ask Claude for explanations · Fixed long freezes at startup and after reading or editing files when a CLAUDE.md file holds a very long list item · Fixed interrupting Claude not taking effect until a timeout while an MCP server had not answered a resource read or a skill was still downloading"
   },
   {
-   "title": "Anthropic has filed an S-1 registration statement with the SEC related to its proposed IPO. Read mo…",
-   "url": "https://x.com/AnthropicAI/status/2114705042817110293",
-   "source": "𝕏 @AnthropicAI",
-   "published_at": "2026-10-26T13:05:46Z",
-   "text": "Anthropic has filed an S-1 registration statement with the SEC related to its proposed IPO. Read more: Legal disclaimer: A registration statement relating to these securities has been filed with the SEC but has not yet become effective. These securities…",
-   "author_name": "Anthropic",
-   "likes": 17191,
-   "story": "Anthropic files for an IPO on the Nasdaq under the symbol ANT; the number of Class A shares to be offered and the price range is yet to be determined",
-   "links": [
-    "https://www.anthropic.com/news/s1-sec"
-   ]
+   "title": "While evaluating Qwen3.8-Flash-Next in a controlled sandbox environment, Cohere's research team obs…",
+   "url": "https://x.com/cohere/status/2114752002370544004",
+   "source": "𝕏 @cohere",
+   "published_at": "2026-10-26T16:12:22Z",
+   "text": "While evaluating Qwen3.8-Flash-Next in a controlled sandbox environment, Cohere's research team observed something unexpected. Asked to generate a defensive cybersecurity detection rule, the model instead inventoried aspects of the machine it was running on and attempted to…",
+   "author_name": "Cohere",
+   "likes": 10119,
+   "story": "Cohere says during an evaluation Qwen3.8-Flash-Next inventoried its host machine and tried to upload a probe file to an Alibaba Cloud storage bucket in Beijing"
   },
   {
    "title": "Anthropic's co-founders say they “believe that AI is one of the most consequential technologies in…",
@@ -49,31 +46,13 @@
    "via": "Techmeme"
   },
   {
-   "title": "The Mythical Man-Month in the Age of AI",
-   "url": "https://j11g.com/the-mythical-man-month-in-the-age-of-ai",
+   "title": "Roblox downloaded 145GB models from us (including adult content) without asking",
+   "url": "https://open3dlab.com/news/roblox-downloaded-145-gb-of-models-from-our-sites/",
    "source": "Hacker News",
-   "published_at": "2026-10-27T06:25:37Z",
-   "text": "161 points and 118 comments on Hacker News.",
-   "points": 161,
-   "discussion": "https://news.ycombinator.com/item?id=50255298"
-  },
-  {
-   "title": "While evaluating Qwen3.8-Flash-Next in a controlled sandbox environment, Cohere's research team obs…",
-   "url": "https://x.com/cohere/status/2114752002370544004",
-   "source": "𝕏 @cohere",
-   "published_at": "2026-10-26T16:12:22Z",
-   "text": "While evaluating Qwen3.8-Flash-Next in a controlled sandbox environment, Cohere's research team observed something unexpected. Asked to generate a defensive cybersecurity detection rule, the model instead inventoried aspects of the machine it was running on and attempted to…",
-   "author_name": "Cohere",
-   "likes": 10069,
-   "story": "Cohere says during an evaluation Qwen3.8-Flash-Next inventoried its host machine and tried to upload a probe file to an Alibaba Cloud storage bucket in Beijing"
-  },
-  {
-   "title": "S-1: as of September 30, Anthropic had 11,900+ customers spending $100,000+ annually, 1,900+ custom…",
-   "url": "https://techcrunch.com/2026/10/26/anthropics-ipo-filing-reveals-its-strategy-for-keeping-enterprise-customers-hooked/",
-   "source": "Rebecca Bellan / TechCrunch",
-   "published_at": "2026-10-26T17:01:32Z",
-   "text": "S-1: as of September 30, Anthropic had 11,900+ customers spending $100,000+ annually, 1,900+ customers spending $1M+, and ~250 customers spending $10M+",
-   "via": "Techmeme"
+   "published_at": "2026-10-27T10:27:50Z",
+   "text": "79 points and 40 comments on Hacker News.",
+   "points": 79,
+   "discussion": "https://news.ycombinator.com/item?id=50256985"
   },
   {
    "title": "Microsoft India sends VEO (voluntary exit offer) to employees in level 70 and below in most of the…",
@@ -82,27 +61,15 @@
    "published_at": "2026-10-26T17:16:36Z",
    "text": "Microsoft India sends VEO (voluntary exit offer) to employees in level 70 and below in most of the orgs One month of base pay per year in microsoft + 3 months pay Decision to be made in a month.",
    "author_name": "Harveen Singh Chadha",
-   "likes": 5644,
+   "likes": 5688,
    "story": "Microsoft offers buyouts to ~60K workers, including at a VP level and below across the US, Canada, India, and the UK; its headcount at the end of June was 223K"
   },
   {
-   "title": "Sebastian Raschka's from-scratch video course on building reasoning models",
-   "url": "https://magazine.sebastianraschka.com/p/building-reasoning-models",
-   "source": "Hacker News",
-   "published_at": "2026-10-26T15:11:59Z",
-   "text": "717 points and 99 comments on Hacker News.",
-   "points": 717,
-   "discussion": "https://news.ycombinator.com/item?id=50245138"
-  },
-  {
-   "title": "WSJ says Broadcom CEO Hock Tan directly intervened to get Anthropic's debt deal pushed though.",
-   "url": "https://x.com/AndrewCurran_/status/2114929398893957622",
-   "source": "𝕏 @AndrewCurran_",
-   "published_at": "2026-10-27T03:57:16Z",
-   "text": "WSJ says Broadcom CEO Hock Tan directly intervened to get Anthropic's debt deal pushed though.",
-   "author_name": "Andrew Curran",
-   "likes": 174,
-   "story": "Sources: Broadcom CEO Hock Tan held 11th-hour talks and agreed to higher rates and loan guarantees to secure bank participation in the $63B Anthropic debt deal"
+   "title": "Anthropic files S-1 with the SEC for proposed initial public offering",
+   "url": "https://www.anthropic.com/news/s1-sec",
+   "source": "Anthropic",
+   "published_at": "2026-10-26T15:04:18Z",
+   "text": "Anthropic is an AI safety and research company that's working to build reliable, interpretable, and steerable AI systems."
   },
   {
    "title": "Anthropic's S-1 excludes Labs co-lead Ben Mann from its “Continuing Founders” and Founder LLC; Anth…",
@@ -113,13 +80,48 @@
    "via": "Techmeme"
   },
   {
-   "title": "Cross-request KV cache exposure in the GLM-5.3 Workers AI model (155 responses)",
-   "url": "https://blog.cloudflare.com/kv-cache-exposure-remediation/",
+   "title": "WSJ says Broadcom CEO Hock Tan directly intervened to get Anthropic's debt deal pushed though.",
+   "url": "https://x.com/AndrewCurran_/status/2114929398893957622",
+   "source": "𝕏 @AndrewCurran_",
+   "published_at": "2026-10-27T03:57:16Z",
+   "text": "WSJ says Broadcom CEO Hock Tan directly intervened to get Anthropic's debt deal pushed though.",
+   "author_name": "Andrew Curran",
+   "likes": 184,
+   "story": "Sources: Broadcom CEO Hock Tan held 11th-hour talks and agreed to higher rates and loan guarantees to secure bank participation in the $63B Anthropic debt deal"
+  },
+  {
+   "title": "The Mythical Man-Month in the Age of AI",
+   "url": "https://j11g.com/the-mythical-man-month-in-the-age-of-ai",
    "source": "Hacker News",
-   "published_at": "2026-10-26T22:41:48Z",
-   "text": "139 points and 45 comments on Hacker News.",
-   "points": 139,
-   "discussion": "https://news.ycombinator.com/item?id=50252159"
+   "published_at": "2026-10-27T06:25:37Z",
+   "text": "185 points and 134 comments on Hacker News.",
+   "points": 185,
+   "discussion": "https://news.ycombinator.com/item?id=50255298"
+  },
+  {
+   "title": "S-1: as of September 30, Anthropic had 11,900+ customers spending $100,000+ annually, 1,900+ custom…",
+   "url": "https://techcrunch.com/2026/10/26/anthropics-ipo-filing-reveals-its-strategy-for-keeping-enterprise-customers-hooked/",
+   "source": "Rebecca Bellan / TechCrunch",
+   "published_at": "2026-10-26T17:01:32Z",
+   "text": "S-1: as of September 30, Anthropic had 11,900+ customers spending $100,000+ annually, 1,900+ customers spending $1M+, and ~250 customers spending $10M+",
+   "via": "Techmeme"
+  },
+  {
+   "title": "Sebastian Raschka's from-scratch video course on building reasoning models",
+   "url": "https://magazine.sebastianraschka.com/p/building-reasoning-models",
+   "source": "Hacker News",
+   "published_at": "2026-10-26T15:11:59Z",
+   "text": "726 points and 101 comments on Hacker News.",
+   "points": 726,
+   "discussion": "https://news.ycombinator.com/item?id=50245138"
+  },
+  {
+   "title": "Anthropic S-1: an $80.7B net loss on revenue of $16.3B in H1 2026, up from a $13B net loss on reven…",
+   "url": "https://www.bloomberg.com/news/articles/2026-10-26/anthropic-ipo-s-1-filing-offers-first-look-at-claude-maker-s-finances",
+   "source": "Bloomberg",
+   "published_at": "2026-10-26T13:31:06Z",
+   "text": "Anthropic S-1: an $80.7B net loss on revenue of $16.3B in H1 2026, up from a $13B net loss on revenue of $1.2B in H1 2025, and a net revenue retention of 900%",
+   "via": "Techmeme"
   },
   {
    "title": "S-1: Anthropic spent ~$2.50 on compute and infrastructure for every $1 of revenue in Q1 2025, falli…",
@@ -127,14 +129,6 @@
    "source": "Financial Times",
    "published_at": "2026-10-27T09:55:45Z",
    "text": "S-1: Anthropic spent ~$2.50 on compute and infrastructure for every $1 of revenue in Q1 2025, falling to under 50 cents in Q2 2026, as it seeks profitability. Prospectus details AI lab's ‘mission’, $800bn data centre commitments and extraordinary governance structure",
-   "via": "Techmeme"
-  },
-  {
-   "title": "Nvidia and Meta expand their Muse partnership, including Meta deploying more Vera Rubin and Vera CP…",
-   "url": "https://www.wsj.com/tech/ai/nvidia-to-invest-3-billion-in-metas-equity-offering-as-they-expand-ai-partnership-e8d3850a?st=4eEQYV&reflink=desktopwebshare_permalink",
-   "source": "Wall Street Journal",
-   "published_at": "2026-10-27T08:11:04Z",
-   "text": "Nvidia and Meta expand their Muse partnership, including Meta deploying more Vera Rubin and Vera CPUs; Nvidia will invest $3B in Meta's planned equity fundraise. Investment comes as Facebook's parent seeks up to $95 billion via stock offerings — Nvidia and Meta Platforms are expanding …",
    "via": "Techmeme"
   }
  ],
