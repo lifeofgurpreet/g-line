@@ -935,29 +935,61 @@ export type WarmFacts = {
 /** Idle seconds after which an hour-long cache may already be gone. */
 const WARM_LAPSE = 3600 - 120
 
+/**
+ * Why keep-warm did or didn't re-read, as a short name: the receipt of a cold
+ * turn and the day's tally use it. `warmDue`'s reasons, and the session's own
+ * (`slept`: no beat reached keep-warm for over ten minutes of the idle stretch).
+ */
+export type WarmCode = 'off' | 'busy' | 'ttl' | 'compacted' | 'account' | 'model' | 'idle-compaction' | 'small' | 'held'
+  | 'five-hour' | 'max' | 'hourly' | 'not-last' | 'leased' | 'early' | 'lapsed' | 'idle'
+  | 'guard-off' | 'hidden' | 'resumed' | 'stopped' | 'failed' | 'slept'
+
+/** The few words a cold turn's receipt gives for why keep-warm didn't keep the cache. */
+export const WARM_MISS: Record<WarmCode, string> = {
+  off: 'keep-warm not set', busy: 'a turn was running', ttl: '5-minute cache', compacted: 'compacted',
+  account: 'account changed', model: 'model changed', 'idle-compaction': 'left to idle compaction',
+  small: 'under keep-warm\'s size', held: 'held too long to bridge', 'five-hour': '5h window low',
+  max: 'out of re-reads', hourly: 'hourly cap reached', 'not-last': 'another session was typed in',
+  leased: 'another session was re-reading', early: 'not idle long enough', lapsed: 'its window passed unchecked',
+  idle: 'due, not yet run', 'guard-off': 'guard off', hidden: 'g-line off', resumed: 'resumed, no request yet',
+  stopped: 'keep-warm stopped here', failed: 'its re-reads failed', slept: 'the machine slept',
+}
+
+/**
+ * A five-hour reading as keep-warm counts it: what's left, all of it once the
+ * window has reset since the reading, unknown without one.
+ */
+export function fiveHourLeftOf(reading: { percentUsed: number; resetsAt?: number } | undefined, nowSeconds: number): number | undefined {
+  if (!reading || !Number.isFinite(reading.percentUsed)) return undefined
+  if (reading.resetsAt !== undefined && reading.resetsAt > 0 && reading.resetsAt <= nowSeconds) return 100
+  return Math.max(0, 100 - reading.percentUsed)
+}
+
 /** Why keep-warm re-reads now, or why it won't: the first reason that holds. */
-export function warmDue(k: KeepWarm | undefined, f: WarmFacts): { due: boolean; why: string } {
-  if (!k) return { due: false, why: 'off' }
-  if (f.busy) return { due: false, why: 'a turn is running' }
-  if (f.ttl !== '1h') return { due: false, why: 'the cache lives 5 minutes (over the plan limit, on credits, or by setting)' }
-  if (f.compacted) return { due: false, why: 'the conversation was compacted' }
-  if (f.accountChanged) return { due: false, why: 'the account changed' }
-  if (f.modelChanged) return { due: false, why: 'the model changed' }
-  if (f.compactionCovers) return { due: false, why: 'Claude Code compacts this conversation when idle' }
-  if (f.prefix < k.minContext) return { due: false, why: 'too small to be worth keeping' }
+export function warmDue(k: KeepWarm | undefined, f: WarmFacts): { due: boolean; why: string; code: WarmCode } {
+  const no = (code: WarmCode, why: string) => ({ due: false, why, code })
+  if (!k) return no('off', 'off')
+  if (f.busy) return no('busy', 'a turn is running')
+  if (f.ttl !== '1h') return no('ttl', 'the cache lives 5 minutes (over the plan limit, on credits, or by setting)')
+  if (f.compacted) return no('compacted', 'the conversation was compacted')
+  if (f.accountChanged) return no('account', 'the account changed')
+  if (f.modelChanged) return no('model', 'the model changed')
+  if (f.compactionCovers) return no('idle-compaction', 'Claude Code compacts this conversation when idle')
+  if (f.prefix < k.minContext) return no('small', 'too small to be worth keeping')
   // A hold mustn't cost the cache: bridge it when the re-reads left can reach its lift.
-  if (f.stopped && (f.liftsIn === undefined || f.liftsIn > (k.max - f.done) * WARM_LAPSE)) return { due: false, why: 'held for longer than keep-warm can bridge' }
-  if (f.fiveHourLeft === undefined || !Number.isFinite(f.fiveHourLeft) || f.fiveHourLeft < k.minLeft) return { due: false, why: 'the 5-hour window is low' }
-  if (f.done >= k.max) return { due: false, why: 'kept warm as many times as allowed' }
-  if (f.thisHour >= k.perHour) return { due: false, why: 'the hourly limit on this account is reached' }
-  if (k.sessions === 'last' && f.notLastTouched) return { due: false, why: 'you typed in another session on this account last' }
-  if (f.leased) return { due: false, why: 'another session on this account is re-reading' }
+  if (f.stopped && (f.liftsIn === undefined || f.liftsIn > (k.max - f.done) * WARM_LAPSE)) return no('held', 'held for longer than keep-warm can bridge')
+  // An unknown window (no reading yet, or an account without one) isn't a low one: a re-read costs a tenth of a rebuild.
+  if (f.fiveHourLeft !== undefined && (!Number.isFinite(f.fiveHourLeft) || f.fiveHourLeft < k.minLeft)) return no('five-hour', 'the 5-hour window is low')
+  if (f.done >= k.max) return no('max', 'kept warm as many times as allowed')
+  if (f.thisHour >= k.perHour) return no('hourly', 'the hourly limit on this account is reached')
+  if (k.sessions === 'last' && f.notLastTouched) return no('not-last', 'you typed in another session on this account last')
+  if (f.leased) return no('leased', 'another session on this account is re-reading')
   const idle = f.now - f.lastAt
   // Two minutes before the hour is up the cache may already be gone: a re-read then would rebuild it.
   // `after` plus the spread stops a minute short of that, so a late `after` still gets its chance.
-  if (idle < Math.min(k.after + f.jitter, WARM_LAPSE - 60)) return { due: false, why: 'not idle long enough' }
-  if (idle > WARM_LAPSE) return { due: false, why: 'the cache has lapsed' }
-  return { due: true, why: 'idle' }
+  if (idle < Math.min(k.after + f.jitter, WARM_LAPSE - 60)) return no('early', 'not idle long enough')
+  if (idle > WARM_LAPSE) return no('lapsed', 'the cache has lapsed')
+  return { due: true, why: 'idle', code: 'idle' }
 }
 
 /**

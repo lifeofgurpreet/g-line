@@ -228,17 +228,22 @@ limits:
 - It runs at most `max` times per idle stretch (2 by default), and `per_hour` times an hour per
   account across the machine's sessions (6).
 - It needs a cache of at least `min_context` (50k), an hour-long cache, and `min_left` percent of
-  the 5-hour window left (20). Past your plan's limit, on usage credits, Claude Code uses
-  five-minute caches, so it stops there.
+  the 5-hour window left (20). A window that has reset since its last reading counts as full,
+  and no reading yet (or an account without a 5-hour window) doesn't hold it back. Past your
+  plan's limit, on usage credits, Claude Code uses five-minute caches, so it stops there.
 - While a stop is in force, it keeps re-reading if the stop lifts within the re-reads it has
-  left (`max` of them, about an hour each), and stands aside for a longer hold. It doesn't run
-  while the guard is paused or off here.
+  left (`max` of them, about an hour each), and stands aside for a longer hold. A guard pause or
+  `off here` lets your prompts through and leaves keep-warm running, since it holds nothing
+  back; `/g-line guard off` stops it too.
 - It skips a cache the conversation no longer has: after a compaction, a `/clear`, a model
   change or an account change.
 - It stands aside for a conversation Claude Code will compact on its own when idle
   (`idleCompaction`, at 200k tokens and up by default). Claude Code turns idle compaction on per
   account, so keep-warm counts on it only once a session on the same account has been seen
-  compacting while idle in the last 14 days; until then big conversations are kept warm too. A
+  compacting while idle in the last 14 days; until then big conversations are kept warm too.
+  A conversation emptied while idle, or shrunk after you typed `/clear`, `/compact`, `/rewind`
+  or `/resume`, is yours, not idle compaction, and isn't counted (before 0.20 it was, so 0.20
+  drops older sightings). A
   sighting on one account says nothing about another on the same machine. If a big conversation
   then sits idle a full hour and its cache lapses with nothing compacting it, the sighting is
   dropped and keep-warm covers that account's big conversations again, with a toast saying so. Set
@@ -246,15 +251,25 @@ limits:
 - A resumed conversation waits for its first request: before it, Claude Code has nothing to send
   again.
 
-Each re-read is a toast (`Kept the cache warm: re-read 182k after 46 idle minutes (1 of 2,
-$0.04)`), and line 2 shows `kept warm 2× · $0.08` until your next turn. The cost comes from the
-session's own ledger before and after the re-read, and is left out when something else was
-running then. The pane's day line adds `kept warm 3× ($0.12)`. A re-read that reads nothing, or
-writes a tenth or more of what it reads, found no cache: keep-warm turns itself off for that
-session and says so (`its re-read found no cache (read 28k, wrote 16k)`). So does a next turn
-that rebuilds the cache anyway. In one test session on Claude Code 2.1.305 the fork read only
-the cached tools and system prompt, not the conversation, and keep-warm stopped after that one
-re-read. Pressing Esc ends that idle stretch for keep-warm.
+The first re-read of an idle stretch is a toast (`◆ cache kept warm · 182k re-read after 46m
+idle · $0.04`), and line 2 shows `kept warm 2× · $0.08` until your next turn. The cost comes
+from the session's own ledger before and after the re-read, and is left out when something
+else was running then. The pane's day line adds `kept warm 3× ($0.12)`.
+
+A re-read that gets no answer at all (an API error, an empty reply) says nothing about the
+cache, so it's tried again on the next beats, up to three times a stretch. A re-read that reads
+nothing, or writes a tenth or more of what it reads, found no cache: that ends the stretch. So
+does a next turn that rebuilds the cache anyway, unless a model or account change explains it.
+The second time in a session the kept cache turns out gone, keep-warm turns itself off for that
+session and says so (`◆ keep-warm off in this session · twice the kept cache was gone`). In one
+test session on Claude Code 2.1.305 the fork read only the cached tools and system prompt, not
+the conversation. Pressing Esc ends that idle stretch for keep-warm.
+
+When a cache goes cold anyway, the turn's receipt says why keep-warm didn't keep it, from what it
+saw while you were away: `cache cold · rebuilt 412k · 5h window low`, `out of re-reads`,
+`left to idle compaction`, `keep-warm stopped here`, or `the machine slept` (no beat reached
+keep-warm for over ten minutes: a laptop asleep, a stalled process). The dashboard's history
+counts the week's cold rebuilds by those reasons.
 
 ## Resume after a limit
 

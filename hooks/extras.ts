@@ -135,7 +135,8 @@ export function receiptEvents(r: Receipt): Part[] {
   const write = r.cacheWrite ?? 0
   // The turn's first request came after the cache's lifetime and rewrote most of it.
   const cold = r.cold === true && write >= 10_000
-  if (cold) events.push({ tone: 'warn', text: `cache cold${r.accountChanged ? ' after account change' : ''} · rebuilt ${tokens(write)}` })
+  // Keep-warm's own reason it didn't keep the cache, when it had one: what it saw, not a guess.
+  if (cold) events.push({ tone: 'warn', text: `cache cold${r.accountChanged ? ' after account change' : ''} · rebuilt ${tokens(write)}${r.coldWhy && !r.accountChanged ? ` · ${r.coldWhy}` : ''}` })
   if (bigJump(r)) events.push({ tone: 'accent', text: `+${tokens(r.context ?? 0)} context` })
   if (!cold && r.warmBefore && write >= 20_000 && write >= Math.max(0, r.context ?? 0) + 10_000) {
     events.push({ tone: 'warn', text: `cache write ${tokens(write)}` })
@@ -348,6 +349,16 @@ export function staleKeys(keys: readonly string[], today: string, keepDays = 35)
   return keys.filter(key => { const m = KEY.exec(key); return m !== null && (m[1] ?? '') < cutoff })
 }
 
+/** Two tallies of named counts added, ignoring anything that isn't a finite count; undefined while empty. */
+export function addCounts(into: Record<string, number> | undefined, more: unknown): Record<string, number> | undefined {
+  if (!more || typeof more !== 'object') return into
+  const out = { ...(into ?? {}) }
+  for (const [name, count] of Object.entries(more as Record<string, unknown>)) {
+    if (typeof count === 'number' && Number.isFinite(count) && count > 0) out[name.slice(0, 40)] = (out[name.slice(0, 40)] ?? 0) + count
+  }
+  return Object.keys(out).length ? out : into
+}
+
 /** Today and the last seven days, each summed over the sessions' entries. */
 export function ledger(entries: readonly { key: string; value: unknown }[], today: string): Ledger {
   const days: string[] = []
@@ -364,6 +375,7 @@ export function ledger(entries: readonly { key: string; value: unknown }[], toda
       sum.warms = (sum.warms ?? 0) + n('warms')
       sum.warmCost = (sum.warmCost ?? 0) + n('warmCost')
     }
+    sum.coldWhy = addCounts(sum.coldWhy, v.coldWhy)
     sum.sessions += 1
   }
   const week = days.map(day => sums.get(day) ?? emptyDay(day))

@@ -71,6 +71,8 @@ export type Receipt = {
   overlap?: boolean
   /** The turn's first request rebuilt a prompt cache that had gone cold. */
   cold?: boolean
+  /** Why keep-warm didn't keep that cache, in a few words (`5h window low`, `the machine slept`). */
+  coldWhy?: string
   /** A compaction ran during the turn, with its size before and after. */
   compacted?: { before?: number; after?: number }
   /** The context window size, for what counts as a big jump. */
@@ -107,6 +109,8 @@ export type TurnLive = {
   cacheWrite?: number
   warmBefore?: boolean
   cold?: boolean
+  /** Keep-warm's reason (a WarmCode) for the cold rebuild this turn found. */
+  coldWhy?: string
   overlap?: boolean
   compacted?: { before?: number; after?: number }
   guardEffort?: { from: string; to: string }
@@ -170,6 +174,8 @@ export type Day = {
   day: string; cost: number; turns: number; tools: number; sessions: number; colds: number; agents: number
   /** Keep-warm's re-reads, and what they cost at API prices (included in `cost`) when the engine counted it. */
   warms?: number; warmCost?: number
+  /** Cold rebuilds by why keep-warm didn't keep the cache (WARM_MISS's words). */
+  coldWhy?: Record<string, number>
 }
 
 export type Ledger = { today: Day; week: Day[] }

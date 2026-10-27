@@ -39,10 +39,10 @@ import {
 import type { PulseFeed, PulseItem, Shown } from './pulse'
 import { gitSegmentOf } from './core'
 import {
-  AGENT_TYPE_MODELS, accountIdentity, accountKey, agentModel, cappedEffort, changeText, drainText, effortKeepsCache, bridgeDue, endText, epochOf, evaluate, groupOf, guardForms, liftsAt, inForceText, leaseFree, namesAccounts, readBack, ruleText, simulated, stopText,
-  resumeAt, warmDue, warmForms, whyLines,
+  AGENT_TYPE_MODELS, KEEP_WARM_DEFAULTS, accountIdentity, accountKey, agentModel, cappedEffort, changeText, drainText, effortKeepsCache, bridgeDue, endText, epochOf, evaluate, groupOf, guardForms, liftsAt, inForceText, leaseFree, namesAccounts, readBack, ruleText, simulated, stopText,
+  resumeAt, fiveHourLeftOf, WARM_MISS, warmDue, warmForms, whyLines,
 } from './guard'
-import type { Effort, Facts, Simulation, Verdict, WindowName } from './guard'
+import type { Effort, Facts, Simulation, Verdict, WarmCode, WindowName } from './guard'
 import {
   DEFAULTS, GROUPS, SETTINGS, changed, merge, nextValue, originOf, parseCommand, patchOf, said, withPatch, withoutSetting,
 } from './settings'
@@ -322,10 +322,17 @@ const IDLE_SEEN_MS = 14 * 86_400_000
  * The store's name for that sighting on an account. One machine can run many
  * accounts, and a sighting on one says nothing about another: a machine-wide
  * key left every other account's big conversations to a compaction that never came.
+ * Sightings before 0.20 (`idle-compaction-seen…`) counted a `/clear` or `/compact`
+ * as one, so they are dropped rather than trusted.
  */
 function idleSeenKey(account: string | null | undefined): string {
-  return `idle-compaction-seen:${accountKey(account)}`
+  return `idle-compacts:${accountKey(account)}`
 }
+
+/** Slash commands that replace the conversation: a shrink after one is theirs, not idle compaction's. */
+const REPLACING = new Set(['clear', 'reset', 'new', 'compact', 'resume', 'rewind', 'branch', 'fork'])
+/** When the person last ran one (seconds). */
+let replacedAt = 0
 
 /** An idle compaction seen: from now on Claude Code's idle compaction counts on this account. */
 async function idleCompactionSeen($: EngineInterface): Promise<void> {
@@ -584,7 +591,9 @@ async function watchIdle($: EngineInterface): Promise<void> {
   if (idleCount?.lastAt !== cache.lastAt) idleCount = { lastAt: cache.lastAt, messages }
   else if (messages < idleCount.messages / 2) {
     await markCompacted($)
-    await idleCompactionSeen($)
+    // Only a summary standing in for a conversation nobody touched is Claude Code's idle compaction:
+    // `/clear` leaves nothing, and `/compact`, `/rewind` or `/resume` are the person's own.
+    if (messages > 0 && replacedAt < cache.lastAt) await idleCompactionSeen($)
   }
 }
 
@@ -851,7 +860,7 @@ async function receiptOf($: EngineInterface, e: { durationMs: number; usage?: { 
     tools: live?.tools ?? 0, agents: live?.agents ?? 0, output: e.usage?.output_tokens,
     endAt: await nowMs($), durationMs: e.durationMs, background: active || BACKGROUND.test(lastHint),
     cacheWrite: live?.cacheWrite, warmBefore: live?.warmBefore, failures: live?.failures,
-    failedTool: live?.failedTool ?? undefined, overlap, cold: live?.cold, compacted: live?.compacted, window,
+    failedTool: live?.failedTool ?? undefined, overlap, cold: live?.cold, coldWhy: live?.coldWhy ? WARM_MISS[live.coldWhy as WarmCode] : undefined, compacted: live?.compacted, window,
     ratio: costRatio(cost, overlap, earlier),
     guardEffort: live?.guardEffort, guardAgents: live?.guardAgents, guardEnded: live?.guardEnded, servedBy: live?.servedBy, accountChanged: live?.accountChanged,
   }
@@ -899,10 +908,12 @@ async function addToDay($: EngineInterface, r: Receipt, cold: boolean, at: numbe
   const today = dayOf(at, offsetAt(at))
   const key = `d:${today}:${sessionId}`
   try {
-    const old = ((await $.store.get(key)) ?? {}) as Record<string, number>
+    const old = ((await $.store.get(key)) ?? {}) as Record<string, number> & { coldWhy?: Record<string, number> }
+    // Why each cold rebuild happened, counted by keep-warm's few words: the dashboard's tally.
+    const why = cold && r.coldWhy ? { coldWhy: { ...(old.coldWhy ?? {}), [r.coldWhy]: (old.coldWhy?.[r.coldWhy] ?? 0) + 1 } } : {}
     await $.store.set(key, {
       ...old, cost: (old.cost ?? 0) + (r.cost ?? 0), turns: (old.turns ?? 0) + 1, tools: (old.tools ?? 0) + r.tools,
-      colds: (old.colds ?? 0) + (cold ? 1 : 0), agents: (old.agents ?? 0) + r.agents,
+      colds: (old.colds ?? 0) + (cold ? 1 : 0), agents: (old.agents ?? 0) + r.agents, ...why,
     })
     await refreshLedger($, at)
   } catch {
@@ -940,6 +951,8 @@ async function pruneLedger($: EngineInterface): Promise<void> {
     const at = await nowMs($)
     const keys = await $.store.keys()
     for (const key of staleKeys(keys, dayOf(at, offsetAt(at)))) await $.store.delete(key)
+    // Idle-compaction sightings from before 0.20 may be a `/clear`: dropped (see idleSeenKey).
+    for (const key of keys.filter(k => k.startsWith('idle-compaction-seen'))) await $.store.delete(key)
     // Keep-warm's hourly counts (`warm:<account>:<hour>`) matter for their hour only.
     for (const key of keys.filter(k => k.startsWith('warm:'))) {
       const hour = Number(key.split(':').pop())
@@ -1472,9 +1485,27 @@ const typeModels = new Map<string, string>(Object.entries(AGENT_TYPE_MODELS))
 let warmed = 0
 /** What the re-reads since the last turn cost at API prices, where the engine counted it. */
 let warmCost = 0
-/** An Esc ended this idle stretch for keep-warm: forks wait for the person's next prompt. */
+/**
+ * This idle stretch is over for keep-warm: an Esc (forks wait for the person's
+ * next prompt), a re-read that found no cache, or re-reads that kept failing.
+ */
 let warmRested = false
+/** Keep-warm gave up for the session, and why: twice the cache it kept was gone. */
 let warmOff = false
+let warmOffWhy = ''
+/** Re-reads that failed without an answer this stretch (an API error, a refusal): retried, up to WARM_TRIES. */
+let warmFailures = 0
+/** Times the kept cache turned out gone (a re-read found none, or the next turn rebuilt it): the second turns keep-warm off. */
+let warmStrikes = 0
+const WARM_TRIES = 3
+/**
+ * Keep-warm's last look while the cache was in its window to be kept (idle
+ * past `after`), and the longest gap between two looks this stretch: what a
+ * cold turn's receipt and the day's tally say about why it went cold.
+ */
+let warmSeen: { code: WarmCode; idle: number; at: number } | undefined
+let warmLookAt = 0
+let warmGap = 0
 /** `/g-line guard simulate`: a window's reading replaced for the guard alone, for a while. */
 let simulation: Simulation | undefined
 /** Interactive or not: a headless run is told once when the guard has no readings to act on. */
@@ -1719,19 +1750,34 @@ async function guardAgentModel($: EngineInterface, e: { model?: string; parentMo
  * Keep-warm: an idle conversation's prompt cache read again before it
  * lapses, with one tool-less completion over the conversation as the main
  * thread last sent it (`$.model.fork`), which adds nothing to the transcript.
- * Bounded by the rules in `warmDue`; each re-read is said in a toast, and a
- * re-read that finds no cache turns keep-warm off for the session.
+ * Bounded by the rules in `warmDue`. The first re-read of an idle stretch is
+ * said in a toast; line 2 counts the rest. A re-read that fails without an
+ * answer is tried again; one that finds no cache ends the stretch, and the
+ * second time the kept cache turns out gone, keep-warm is off for the session.
+ * A guard pause or `off here` leaves it running: it holds nothing back.
  */
 async function keepWarm($: EngineInterface): Promise<void> {
-  const k = config.guard.on ? config.guard.keepWarm : undefined
-  if (!k || warmOff || warming || (await read($, hidden)) || (await heldBack($))) return
+  if (warming) return
   const s = await read($, snap)
   const c = s.cache
+  if (!c?.cached) return
+  const k = config.guard.on ? config.guard.keepWarm : undefined
+  const now = await nowSeconds($)
+  // A beat that came long after the last one: the machine slept, or the process stalled.
+  if (warmLookAt) warmGap = Math.max(warmGap, now - warmLookAt)
+  warmLookAt = now
+  const idleFor = now - c.lastAt
+  const look = (code: WarmCode) => {
+    if (idleFor >= (k ?? KEEP_WARM_DEFAULTS).after) warmSeen = { code, idle: idleFor, at: now }
+  }
+  if (!k) return look(config.guard.on ? 'off' : 'guard-off')
+  if (await read($, hidden)) return look('hidden')
+  if (warmOff) return look('stopped')
+  if (warmRested) return look(warmFailures >= WARM_TRIES ? 'failed' : 'stopped')
   // A resumed conversation: until its first request, Claude Code has nothing to send again.
-  if (!c?.cached || c.restored) return
+  if (c.restored) return look('resumed')
   // The account can change under a session; whether idle compaction covers it is the account's.
   idle = await idleCompactionOf($)
-  const now = await nowSeconds($)
   const key = accountKey(s.account)
   const hour = `warm:${key}:${Math.floor(now / 3600)}`
   let thisHour = 0
@@ -1751,17 +1797,17 @@ async function keepWarm($: EngineInterface): Promise<void> {
     model = undefined
   }
   const t = touched as { session?: unknown } | undefined
-  const five = s.rateLimits?.find(l => l.kind === 'five_hour')
   const due = warmDue(k, {
     now, lastAt: c.lastAt, ttl: c.learned ?? ttl ?? automaticTtl(s), prefix: c.prefix, compacted: c.compactedTo !== undefined,
-    compactionCovers: idle !== undefined && c.prefix >= idle.minTokens, done: warmRested ? k.max : warmed, thisHour,
-    fiveHourLeft: five ? 100 - five.percentUsed : undefined, stopped: verdict.stop !== undefined,
+    compactionCovers: idle !== undefined && c.prefix >= idle.minTokens, done: warmed, thisHour,
+    fiveHourLeft: fiveHourLeftOf(s.rateLimits?.find(l => l.kind === 'five_hour'), now), stopped: verdict.stop !== undefined,
     ...(verdict.stop ? (lift => (lift !== undefined ? { liftsIn: Math.max(0, lift / 1000 - now) } : {}))(liftsAt(verdict.stop, now * 1000, offsetAt(now * 1000))) : {}),
     busy: (await read($, turnNow)) !== null, jitter: warmJitter, accountChanged: c.accountChanged === true,
     modelChanged: !!model && !!s.model && plainModel(model) !== plainModel(s.model),
     notLastTouched: typeof t?.session === 'string' && t.session !== sessionId,
     leased: !leaseFree(lease, sessionId ?? '', now * 1000),
   })
+  if (due.code !== 'busy' && due.code !== 'early') look(due.code)
   if (!due.due) return
   // One session per account re-reads at a time; the lease outlives a slow answer.
   if (!(await takeLease($, `lease:warm:${key}`, (now + 600) * 1000))) return
@@ -1777,26 +1823,43 @@ async function keepWarm($: EngineInterface): Promise<void> {
     if (readBack(c.prefix, usage)) {
       lastResponseAt = now
       warmed += 1
+      warmFailures = 0
       if (cost !== undefined) warmCost += cost
       await update($, snap, x => (x.cache && x.cache.lastAt === c.lastAt ? { ...x, cache: { ...x.cache, lastAt: now } } : x))
       await $.store.set(hour, thisHour + 1).catch(() => undefined)
       await addWarmToDay($, cost, now * 1000)
-      await toast($, `Kept the cache warm: re-read ${tokens(usage?.cache_read_input_tokens ?? 0)} after ${Math.round((now - c.lastAt) / 60)} idle minutes (${warmed} of ${k.max}${cost !== undefined ? `, ${money(cost)}` : ''}).`, 8000)
+      // The first of a stretch is said; line 2's `kept warm 2×` counts the rest.
+      if (warmed === 1) await toast($, `◆ cache kept warm · ${tokens(usage?.cache_read_input_tokens ?? 0)} re-read after ${Math.round((now - c.lastAt) / 60)}m idle${cost !== undefined ? ` · ${money(cost)}` : ''}`, 5000)
     } else if (!r.isAnswered && r.reason === 'aborted') {
       // An Esc: forks wait for your next prompt. This idle stretch is over for keep-warm.
       warmRested = true
+    } else if (!usage) {
+      // No answer at all (an API error, an empty reply, a refusal): nothing says the cache is gone. Tried again.
+      warmFailures += 1
+      if (warmFailures >= WARM_TRIES) warmRested = true
     } else {
-      warmOff = true
-      const why = !r.isAnswered && r.reason !== 'api-error' && r.reason !== 'empty-reply' ? r.reason
-        : usage ? `read ${tokens(usage.cache_read_input_tokens)}, wrote ${tokens(usage.cache_creation_input_tokens)}` : 'no answer'
-      await toast($, `Keep-warm stopped for this session: its re-read found no cache (${why}).`, 10_000)
+      await warmStrike($, `a re-read wrote ${tokens(usage.cache_creation_input_tokens)} of ${tokens(c.prefix)}`)
     }
   } catch {
-    warmOff = true
+    warmFailures += 1
+    if (warmFailures >= WARM_TRIES) warmRested = true
   } finally {
     await releaseLease($, `lease:warm:${key}`)
     warming = false
   }
+}
+
+/**
+ * The cache keep-warm kept was gone: this stretch is over, and the second
+ * time in a session keep-warm is off for it, said once.
+ */
+async function warmStrike($: EngineInterface, why: string): Promise<void> {
+  warmRested = true
+  warmStrikes += 1
+  if (warmStrikes < 2 || warmOff) return
+  warmOff = true
+  warmOffWhy = why
+  await toast($, `◆ keep-warm off in this session · twice the kept cache was gone (${why})`, 8000)
 }
 
 /**
@@ -1879,15 +1942,29 @@ function warmSegment(): Segment | undefined {
   return forms.length ? { key: 'warm', priority: 42, forms } : undefined
 }
 
-/** After a real request: a lapsed cache despite keep-warm turns it off for the session, and the count starts over. */
-async function afterRealRequest($: EngineInterface, cold: boolean): Promise<void> {
-  if (warmed > 0 && cold && !warmOff) {
-    warmOff = true
-    await toast($, 'Keep-warm re-read the cache, yet this turn rebuilt it: keep-warm is off for this session.', 10_000)
+/**
+ * After a real request the stretch starts over. A rebuild despite re-reads is
+ * a strike against keep-warm, unless a model or account change explains it; a
+ * request that read back what keep-warm kept clears the strikes.
+ */
+async function afterRealRequest($: EngineInterface, rebuilt: boolean, explained: boolean): Promise<void> {
+  if (warmed > 0 && !warmOff) {
+    if (rebuilt && !explained) await warmStrike($, 'the next turn rebuilt it')
+    else if (!rebuilt) warmStrikes = 0
   }
   warmed = 0
   warmCost = 0
   warmRested = false
+  warmFailures = 0
+  warmSeen = undefined
+  warmGap = 0
+}
+
+/** Why keep-warm didn't keep the cache a turn just rebuilt, from what it saw while the conversation sat idle. */
+function warmMiss(at: number): WarmCode {
+  if (warmLookAt) warmGap = Math.max(warmGap, at - warmLookAt)
+  if (warmGap > 600) return 'slept'
+  return warmSeen?.code ?? 'lapsed'
 }
 
 /** `/g-line guard simulate 5h 96`: the guard acts as if, for 15 minutes, saying so; nothing spent to see it. */
@@ -1937,7 +2014,7 @@ async function guardCommandRun($: EngineInterface, action: string, pause?: numbe
       // this session's own pause
     }
     $.ui.toast(action === 'pause'
-      ? `g-line guard paused ${Math.round((pause ?? 3600) / 60)} min on this machine: rules and keep-warm wait. /g-line guard resume ends it.`
+      ? `g-line guard paused ${Math.round((pause ?? 3600) / 60)} min on this machine: your prompts go through; keep-warm still runs. /g-line guard resume ends it.`
       : 'g-line guard resumed.', { timeoutMs: 8000 })
     await update($, tick, n => n + 1)
     return
@@ -2376,10 +2453,13 @@ export const register: Register = (on, options) => {
       const u = result.usage
       const cached = u.cache_read_input_tokens + u.cache_creation_input_tokens > 0
       const prefix = u.input_tokens + u.cache_read_input_tokens + u.cache_creation_input_tokens + u.output_tokens
-      const was = (await read($, snap)).cache
+      const before = await read($, snap)
+      const was = before.cache
       if (was?.accountChanged) await update($, turnNow, live => (live ? { ...live, accountChanged: true } : live))
       const rebuilt = !!was?.cached && was.compactedTo === undefined && u.cache_creation_input_tokens > was.prefix * 0.5
-      await afterRealRequest($, rebuilt)
+      // A rewrite a model or account change explains says nothing about the cache's life, or keep-warm's.
+      const sameModel = !before.model || plainModel(before.model) === plainModel(e.model)
+      const explained = !!was?.accountChanged || !sameModel
       if (rebuilt && was && !was.restored && idle && was.prefix >= idle.minTokens && started - was.lastAt >= 3600) await idleCompactionMissed($)
       // A model other than the one asked for answered: Claude Code fell back. Said on the receipt.
       if (u.model && plainModel(u.model) !== plainModel(e.model)) {
@@ -2392,8 +2472,9 @@ export const register: Register = (on, options) => {
         // neither a lifetime to learn from nor a cold rebuild.
         const fresh = s.cache?.compactedTo !== undefined
         const gap = s.cache && !fresh ? started - s.cache.lastAt : 0
-        // A resumed conversation's first request can miss for reasons other than time, so it teaches no lifetime.
-        if (s.cache?.cached && !s.cache.restored && gap > 330 && gap < 3500) {
+        // A resumed conversation's first request can miss for reasons other than time, so it teaches no lifetime;
+        // nor does one after a model or account change, whose cache is another one.
+        if (s.cache?.cached && !s.cache.restored && !explained && gap > 330 && gap < 3500) {
           // After 5+ idle minutes a read means the hour TTL; a full rewrite of
           // a large prefix means five minutes.
           if (u.cache_read_input_tokens > s.cache.prefix * 0.5) learned = '1h'
@@ -2407,7 +2488,11 @@ export const register: Register = (on, options) => {
           cache: { lastAt: started, cached, prefix, learned } }
       })
       const cold = coldThisTurn
+      // Why keep-warm didn't keep it, from what it saw while idle: on the receipt and in the day's tally.
+      const missed = cold && !was?.accountChanged ? warmMiss(started) : undefined
+      await afterRealRequest($, rebuilt, explained)
       await update($, turnNow, live => (live ? { ...live, cold: live.cold || cold,
+        ...(missed && !live.coldWhy ? { coldWhy: missed } : {}),
         cacheWrite: Math.max(live.cacheWrite ?? 0, u.cache_creation_input_tokens),
         contextGrowth: live.contextAt !== undefined ? prefix - live.contextAt : live.contextGrowth } : live))
       await update($, totals, t => ({ ...t, cacheRead: (t.cacheRead ?? 0) + u.cache_read_input_tokens,
@@ -2542,8 +2627,8 @@ export const register: Register = (on, options) => {
     const result = await next(e)
     if (e.agentId !== undefined || e.trigger === 'precompute' || result.messages === undefined) return result
     const c = { at: await nowMs($), trigger: e.trigger, before: result.tokensBefore, after: result.tokensAfter }
-    // No turn running and nobody typed /compact: Claude Code compacted an idle conversation.
-    if (e.trigger !== 'manual' && (await read($, turnNow)) === null) await idleCompactionSeen($)
+    // No turn running and nobody typed /compact (or another command that replaces the conversation): idle compaction.
+    if (e.trigger !== 'manual' && (await read($, turnNow)) === null && replacedAt < ((await read($, snap)).cache?.lastAt ?? 0)) await idleCompactionSeen($)
     await update($, totals, t => ({ ...t, compactions: [...t.compactions, c].slice(-20), growth: [] }))
     await update($, outlook, () => null)
     await markCompacted($, c.after)
@@ -2578,6 +2663,11 @@ export const register: Register = (on, options) => {
     return refused ? { drop: refused } : next(e)
   }).catch(($, e, next) => next(e))
 
+  // Observed, never changed: a command that replaces the conversation, so its shrink isn't read as idle compaction.
+  on('command.run', async ($, e, next) => {
+    if (REPLACING.has(e.command)) replacedAt = await nowSeconds($)
+    return next(e)
+  }).catch(($, e, next) => next(e))
   on('command.run', { command: COMMAND }, async ($, e) => runCommand($, e))
   on('command.run', { command: OLD_COMMAND }, async ($, e) => runCommand($, e))
 

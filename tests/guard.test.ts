@@ -2,7 +2,7 @@ import { expect, test } from 'claude-code/testing'
 
 import {
   KEEP_WARM_DEFAULTS, accountIdentity, accountKey, agentModel, cappedEffort, changeText, effortKeepsCache, bridgeDue, endText, evaluate, groupOf, hoursWords, liftsAt, guardForms, inHours, leaseFree,
-  localTime, parseGuard, parseHours, readBack, ruleText, seconds, simulated, stopText, tokenCount, warmDue, warmForms,
+  fiveHourLeftOf, localTime, parseGuard, parseHours, readBack, ruleText, seconds, simulated, stopText, tokenCount, WARM_MISS, warmDue, warmForms,
 } from '../hooks/guard'
 import type { Facts, WarmFacts } from '../hooks/guard'
 
@@ -297,8 +297,22 @@ test('keep-warm: only an idle, warm, hour-long cache worth keeping, a bounded nu
   expect(warmDue(k, { ...base, stopped: true, liftsIn: 30 * 60 }).due).toBe(true)
   expect(warmDue(k, { ...base, stopped: true, liftsIn: 3 * 86_400 }).why).toBe('held for longer than keep-warm can bridge')
   expect(warmDue(k, { ...base, fiveHourLeft: 10 }).due).toBe(false)
-  expect(warmDue(k, { ...base, fiveHourLeft: undefined }).due).toBe(false)
+  // No reading yet (or an account without a five-hour window) isn't a low window.
+  expect(warmDue(k, { ...base, fiveHourLeft: undefined }).due).toBe(true)
+  expect(warmDue(k, { ...base, fiveHourLeft: 10 }).code).toBe('five-hour')
   expect(warmDue(k, { ...base, busy: true }).due).toBe(false)
+  expect(warmDue(k, { ...base, now: 10_000 + 59 * 60 }).code).toBe('lapsed')
+  expect(warmDue(k, base).code).toBe('idle')
+})
+
+test('keep-warm reads a five-hour window that reset since its reading as all left', () => {
+  expect(fiveHourLeftOf({ percentUsed: 92, resetsAt: 5000 }, 4000)).toBe(8)
+  expect(fiveHourLeftOf({ percentUsed: 92, resetsAt: 5000 }, 5000)).toBe(100)
+  expect(fiveHourLeftOf({ percentUsed: 92 }, 9e9)).toBe(8)
+  expect(fiveHourLeftOf(undefined, 4000)).toBeUndefined()
+  expect(fiveHourLeftOf({ percentUsed: Number.NaN, resetsAt: 5000 }, 4000)).toBeUndefined()
+  // Every reason keep-warm can give has the few words a cold receipt shows.
+  for (const label of Object.values(WARM_MISS)) expect(label.length > 0 && label.length <= 32).toBe(true)
 })
 
 test('times and sizes as people write them', () => {

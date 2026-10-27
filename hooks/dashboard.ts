@@ -11,7 +11,7 @@
 import { clock, duration, modelName, pace, pct, tokens, utcLabel } from './core'
 import type { Payload } from './core'
 import { cacheNext, windowNext } from './deck'
-import { dayOf, emptyDay, money } from './extras'
+import { addCounts, dayOf, emptyDay, money } from './extras'
 import { rosterRow } from './roster'
 import type { RosterEntry } from './roster'
 import type { Day } from '../types'
@@ -74,6 +74,7 @@ export function historyDays(entries: readonly { key: string; value: unknown }[],
       sum.warms = (sum.warms ?? 0) + n('warms')
       sum.warmCost = (sum.warmCost ?? 0) + n('warmCost')
     }
+    sum.coldWhy = addCounts(sum.coldWhy, v.coldWhy)
     sum.sessions += 1
   }
   return days.map(day => sums.get(day) ?? emptyDay(day))
@@ -144,7 +145,11 @@ function historySection(s: DashboardSnapshot): string {
   const sum = (f: (d: Day) => number) => week.reduce((t, d) => t + f(d), 0)
   const totals = `This week (last 7 days): ${sum(d => d.turns)} turns, ${money(sum(d => d.cost))} at API prices, ${sum(d => d.colds)} cold cache rebuilds, `
     + `${sum(d => d.warms ?? 0)} keep-warm re-reads (${money(sum(d => d.warmCost ?? 0))}), ${sum(d => d.tools)} tool calls, ${sum(d => d.agents)} agents.`
-  return `<p class="strong">${esc(totals)}</p>${bars(days)}<p class="muted">Cost per day at API prices, oldest on the left. Only sessions g-line ran in are counted.</p>`
+  // Why the week's cold rebuilds happened, as keep-warm saw it: the most common first.
+  const why = Object.entries(week.reduce<Record<string, number>>((t, d) => addCounts(t, d.coldWhy) ?? t, {}))
+    .sort((a, b) => b[1] - a[1]).map(([name, count]) => `${name} ${count}`)
+  const coldWhy = why.length ? `<p class="muted">${esc(`Why caches went cold this week: ${why.join(' · ')}.`)}</p>` : ''
+  return `<p class="strong">${esc(totals)}</p>${coldWhy}${bars(days)}<p class="muted">Cost per day at API prices, oldest on the left. Only sessions g-line ran in are counted.</p>`
     + `<div class="scroll"><table><thead><tr><th>Day</th><th class="num">Turns</th><th class="num">Cost</th><th class="num">Cold rebuilds</th>`
     + `<th class="num">Keep-warm re-reads</th><th class="num">Re-read cost</th><th class="num">Tool calls</th><th class="num">Agents</th></tr></thead>`
     + `<tbody>${rows.join('')}</tbody></table></div>`

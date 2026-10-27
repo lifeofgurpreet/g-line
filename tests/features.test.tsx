@@ -1360,7 +1360,7 @@ test('keep-warm re-reads an idle hour-long cache at about 45 minutes, says so, a
   await w.clock.advance(9 * 60_000)
   expect(forks.length).toBe(1)
   expect(forks[0]).toMatch(/automatic keep-alive from the g-line plugin/)
-  expect(w.toasts.filter(t => t.startsWith('Kept the cache warm: re-read 100k')).length).toBe(1)
+  expect(w.toasts.filter(t => /^◆ cache kept warm · 100k re-read after 4\dm idle$/.test(t)).length).toBe(1)
   // The countdown starts over from the re-read: still warm well past the first hour.
   await w.clock.advance(30 * 60_000)
   const ui = await $.ui.mount({ plugin: 'g-line', surface: 'terminal', component: 'PromptHint',
@@ -1369,11 +1369,13 @@ test('keep-warm re-reads an idle hour-long cache at about 45 minutes, says so, a
   await ui.unmount()
   await w.clock.advance(60 * 60_000)
   expect(forks.length).toBe(2)
+  // Only the first re-read of an idle stretch is said; line 2 counts the rest.
+  expect(w.toasts.filter(t => t.includes('cache kept warm')).length).toBe(1)
   await w.clock.advance(120 * 60_000)
   expect(forks.length).toBe(2)
 })
 
-test('keep-warm stops for the session when its re-read finds no cache', { timeoutMs: 30_000 }, async ($, on) => {
+test('0.20: a re-read that finds no cache ends the stretch; the second time keep-warm is off for the session', { timeoutMs: 30_000 }, async ($, on) => {
   const w = world(on)
   w.config = { guard: { keep_warm: true } }
   engineBelow(on)
@@ -1393,10 +1395,99 @@ test('keep-warm stops for the session when its re-read finds no cache', { timeou
   await turnOf('t1')
   await w.clock.advance(50 * 60_000)
   expect(forks).toBe(1)
-  expect(w.toasts.filter(t => t.startsWith('Keep-warm stopped for this session: its re-read found no cache (read 0, wrote 100k)')).length).toBe(1)
+  // Once is the stretch's end, said nowhere: the next stretch tries again.
+  expect(w.toasts.some(t => t.includes('keep-warm off'))).toBe(false)
   await turnOf('t2')
   await w.clock.advance(50 * 60_000)
+  expect(forks).toBe(2)
+  expect(w.toasts.filter(t => t === '◆ keep-warm off in this session · twice the kept cache was gone (a re-read wrote 100k of 100k)').length).toBe(1)
+  await turnOf('t3')
+  await w.clock.advance(50 * 60_000)
+  expect(forks).toBe(2)
+})
+
+test('0.20: a re-read that gets no answer (an API error) is tried again, and keep-warm stays on', { timeoutMs: 30_000 }, async ($, on) => {
+  const w = world(on)
+  w.config = { guard: { keep_warm: true } }
+  engineBelow(on)
+  let forks = 0
+  on('model.fork', () => {
+    forks += 1
+    return forks <= 2
+      ? { value: { isAnswered: false, reason: 'api-error' } } as never
+      : { value: { isAnswered: true, text: 'ok', usage: { input_tokens: 20, output_tokens: 3, cache_read_input_tokens: 100_000, cache_creation_input_tokens: 0 } } } as never
+  })
+  await start($)
+  await measure($, w, 40)
+  await $.turn.start({ text: 'go', turnId: 't1' })
+  await step($, 't1', 0, 'high')
+  await $.turn.complete({ answer: 'done', durationMs: 4000, isAborted: false, turnId: 't1', reason: 'answer',
+    usage: { ...USAGE_ARGS, model: 'claude-opus-5-5' } })
+  await w.clock.advance(50 * 60_000)
+  expect(forks).toBe(3)
+  expect(w.toasts.filter(t => t.includes('cache kept warm')).length).toBe(1)
+  expect(w.toasts.some(t => t.includes('keep-warm off'))).toBe(false)
+})
+
+test('0.20: a guard pause leaves keep-warm running, and a reading from before the 5-hour reset counts as a full window', { timeoutMs: 30_000 }, async ($, on) => {
+  const w = world(on)
+  w.config = { guard: { keep_warm: true } }
+  engineBelow(on)
+  let forks = 0
+  on('model.fork', () => {
+    forks += 1
+    return { value: { isAnswered: true, text: 'ok', usage: { input_tokens: 20, output_tokens: 3, cache_read_input_tokens: 100_000, cache_creation_input_tokens: 0 } } } as never
+  })
+  await start($)
+  // 95% of the five hours used, resetting in 30 minutes: low now, a fresh window by the time the cache needs keeping.
+  await measure($, w, 95, 30 * 60)
+  await $.turn.start({ text: 'go', turnId: 't1' })
+  await step($, 't1', 0, 'high')
+  await $.turn.complete({ answer: 'done', durationMs: 4000, isAborted: false, turnId: 't1', reason: 'answer',
+    usage: { ...USAGE_ARGS, model: 'claude-opus-5-5' } })
+  await $.command.run({ command: 'g-line', args: 'guard pause 2h' } as never)
+  await w.clock.advance(50 * 60_000)
   expect(forks).toBe(1)
+})
+
+test('0.20: a cold rebuild says on its receipt why keep-warm did not keep the cache, and the day counts it', { timeoutMs: 30_000 }, async ($, on) => {
+  const kept: Record<string, unknown> = {}
+  const w = world(on, {}, kept)
+  w.config = { guard: { keep_warm: { after: '45m', max: 1 } } }
+  let lapsed = false
+  on('turn.step', async function* ($: unknown, e: { turnId: string; index: number }) {
+    const usage = lapsed
+      ? { input_tokens: 4, output_tokens: 300, cache_read_input_tokens: 0, cache_creation_input_tokens: 120_000, model: 'claude-opus-5-5' }
+      : { input_tokens: 4, output_tokens: 300, cache_read_input_tokens: 110_000, cache_creation_input_tokens: 10_000, model: 'claude-opus-5-5' }
+    return { turnId: e.turnId, index: e.index, answer: '', toolUses: [], stopReason: 'end_turn', usage }
+  } as never)
+  on('model.fork', () => ({ value: { isAnswered: true, text: 'ok', usage: { input_tokens: 20, output_tokens: 3, cache_read_input_tokens: 120_000, cache_creation_input_tokens: 0 } } }) as never)
+  on('ui.render', { component: 'TurnDuration' }, ($, e) => {
+    const { Text } = $.ui.resolve(e)
+    return <Text>{`✻ ${e.props.word}`}</Text>
+  })
+  const turnOf = async (id: string) => {
+    await $.turn.start({ text: 'go', turnId: id })
+    await step($, id, 0, 'high')
+    await $.turn.complete({ answer: 'done', durationMs: 4000, isAborted: false, turnId: id, reason: 'answer',
+      usage: { ...USAGE_ARGS, model: 'claude-opus-5-5' } })
+    await $.session.append({ message: { type: 'system', name: 'turn_duration', content: [] }, door: 'notice',
+      origin: { kind: 'engine' }, uuid: `line-${id}` } as never)
+  }
+  await start($)
+  await measure($, w, 40)
+  await turnOf('t1')
+  // One re-read allowed: the second hour has none left, so the cache lapses.
+  await w.clock.advance(150 * 60_000)
+  lapsed = true
+  await turnOf('t2')
+  const line = await $.ui.mount({ plugin: 'g-line', surface: 'terminal', component: 'TurnDuration', requestId: 'line-t2',
+    props: { word: 'Baked', durationMs: 4000 }, viewport: { columns: 200, rows: 40 } })
+  expect(await line.find({ type: 'Text', text: /cache cold · rebuilt 12\dk · out of re-reads/ })).toBeDefined()
+  await line.unmount()
+  await w.clock.advance(1000)
+  const day = Object.entries(kept).find(([key]) => key.startsWith('d:'))?.[1] as { coldWhy?: Record<string, number> } | undefined
+  expect(day?.coldWhy).toEqual({ 'out of re-reads': 1 })
 })
 
 /** A 250k conversation idle for 55 minutes under keep-warm: how many re-reads it got. */
@@ -1425,20 +1516,65 @@ async function bigIdle($: Engine, on: On, stored: Record<string, unknown> = {}, 
 
 test('keep-warm stands aside where Claude Code compacts an idle conversation itself', { timeoutMs: 30_000 }, async ($, on) => {
   // A session on this account was seen compacting while idle an hour ago.
-  expect(await bigIdle($, on, { 'idle-compaction-seen:machine': (NOW - 3600) * 1000 })).toBe(0)
+  expect(await bigIdle($, on, { 'idle-compacts:machine': (NOW - 3600) * 1000 })).toBe(0)
 })
 
 test('0.19.3: a sighting on another account leaves this account\'s big conversations to keep-warm', { timeoutMs: 30_000 }, async ($, on) => {
   // One machine, many accounts: Claude Code turns idle compaction on per account.
-  expect(await bigIdle($, on, { 'idle-compaction-seen:other@example.com': (NOW - 3600) * 1000 }, 'me@example.com')).toBe(1)
+  expect(await bigIdle($, on, { 'idle-compacts:other@example.com': (NOW - 3600) * 1000 }, 'me@example.com')).toBe(1)
 })
 
 test('0.19.3: a sighting on this account still counts when the account is read', { timeoutMs: 30_000 }, async ($, on) => {
-  expect(await bigIdle($, on, { 'idle-compaction-seen:me@example.com': (NOW - 3600) * 1000 }, 'me@example.com')).toBe(0)
+  expect(await bigIdle($, on, { 'idle-compacts:me@example.com': (NOW - 3600) * 1000 }, 'me@example.com')).toBe(0)
 })
 
 test('0.19.3: the old machine-wide sighting no longer counts', { timeoutMs: 30_000 }, async ($, on) => {
   expect(await bigIdle($, on, { 'idle-compaction-seen': (NOW - 3600) * 1000 })).toBe(1)
+})
+
+test('0.20: a sighting from before 0.20 (it may have been a /clear) no longer counts', { timeoutMs: 30_000 }, async ($, on) => {
+  expect(await bigIdle($, on, { 'idle-compaction-seen:machine': (NOW - 3600) * 1000 })).toBe(1)
+})
+
+/** A 300-message conversation shrunk to `left` while idle, after `/command` when given: the idle-compaction sightings it left. */
+async function shrunkIdle($: Engine, on: On, left: number, command?: string) {
+  const kept: Record<string, unknown> = {}
+  const w = world(on, {}, kept)
+  engineBelow(on)
+  let conversation: unknown[] = Array.from({ length: 300 }, (_, i) => ({ role: i % 2 ? 'assistant' : 'user', content: [] }))
+  on('session.messages', () => ({ value: conversation }) as never)
+  await start($)
+  await measure($, w, 40)
+  await $.turn.start({ text: 'go', turnId: 't1' })
+  await step($, 't1', 0, 'high')
+  await $.turn.complete({ answer: 'done', durationMs: 4000, isAborted: false, turnId: 't1', reason: 'answer',
+    usage: { ...USAGE_ARGS, model: 'claude-opus-5-5' } })
+  await w.clock.advance(4 * 60_000)
+  if (command) await $.command.run({ command, args: '' } as never).catch(() => undefined)
+  conversation = conversation.slice(0, left)
+  await w.clock.advance(10 * 60_000)
+  // Any sighting, under 0.20's key or an older one.
+  return Object.keys(kept).filter(key => key.startsWith('idle-compact'))
+}
+
+test('0.20: a conversation that shrank to a summary with nobody typing is an idle compaction', { timeoutMs: 30_000 }, async ($, on) => {
+  expect(await shrunkIdle($, on, 1)).toEqual(['idle-compacts:machine'])
+})
+
+test('0.20: /clear is no idle compaction', { timeoutMs: 30_000 }, async ($, on) => {
+  expect(await shrunkIdle($, on, 0, 'clear')).toEqual([])
+})
+
+test('0.20: an emptied conversation is no idle compaction, even unseen', { timeoutMs: 30_000 }, async ($, on) => {
+  expect(await shrunkIdle($, on, 0)).toEqual([])
+})
+
+test('0.20: /compact and /rewind while idle are the person\'s, not idle compaction', { timeoutMs: 30_000 }, async ($, on) => {
+  expect(await shrunkIdle($, on, 1, 'compact')).toEqual([])
+})
+
+test('0.20: /rewind while idle is no idle compaction', { timeoutMs: 30_000 }, async ($, on) => {
+  expect(await shrunkIdle($, on, 3, 'rewind')).toEqual([])
 })
 
 test('0.18.0: until an idle compaction is seen on this machine, keep-warm keeps a big conversation warm', { timeoutMs: 30_000 }, async ($, on) => {
@@ -1447,7 +1583,7 @@ test('0.18.0: until an idle compaction is seen on this machine, keep-warm keeps 
 })
 
 test('0.18.0: an idle compaction seen counts from then on, and an old sighting does not', { timeoutMs: 30_000 }, async ($, on) => {
-  expect(await bigIdle($, on, { 'idle-compaction-seen:machine': (NOW - 30 * 86_400) * 1000 })).toBe(1)
+  expect(await bigIdle($, on, { 'idle-compacts:machine': (NOW - 30 * 86_400) * 1000 })).toBe(1)
 })
 
 test('0.18.0: a compaction with no turn running records that Claude Code compacts idle conversations here', { timeoutMs: 30_000 }, async ($, on) => {
@@ -1460,17 +1596,17 @@ test('0.18.0: a compaction with no turn running records that Claude Code compact
   await $.turn.start({ text: 'go', turnId: 't1' })
   await step($, 't1', 0, 'high')
   await $.session.compact({ trigger: 'auto', messages: SUMMARY } as never)
-  expect(kept['idle-compaction-seen:machine']).toBeUndefined()
+  expect(kept['idle-compacts:machine']).toBeUndefined()
   await $.turn.complete({ answer: 'done', durationMs: 4000, isAborted: false, turnId: 't1', reason: 'answer',
     usage: { ...USAGE_ARGS, model: 'claude-opus-5-5' } })
   await $.session.compact({ trigger: 'manual', messages: SUMMARY } as never)
-  expect(kept['idle-compaction-seen:machine']).toBeUndefined()
+  expect(kept['idle-compacts:machine']).toBeUndefined()
   await $.session.compact({ trigger: 'auto', messages: SUMMARY } as never)
-  expect(typeof kept['idle-compaction-seen:machine']).toBe('number')
+  expect(typeof kept['idle-compacts:machine']).toBe('number')
 })
 
 test('0.19.3: a big conversation that lapses uncompacted after an idle hour clears the sighting', { timeoutMs: 30_000 }, async ($, on) => {
-  const kept: Record<string, unknown> = { 'idle-compaction-seen:machine': (NOW - 3600) * 1000 }
+  const kept: Record<string, unknown> = { 'idle-compacts:machine': (NOW - 3600) * 1000 }
   const w = world(on, {}, kept)
   w.config = { guard: { keep_warm: true } }
   let lapsed = false
@@ -1499,7 +1635,7 @@ test('0.19.3: a big conversation that lapses uncompacted after an idle hour clea
   expect(forks).toBe(0)
   lapsed = true
   await turnOf('t2')
-  expect(kept['idle-compaction-seen:machine']).toBe(0)
+  expect(kept['idle-compacts:machine']).toBe(0)
   expect(w.toasts.filter(t => t.startsWith('Claude Code did not compact this conversation while it sat idle')).length).toBe(1)
   // From now on the account's big conversations are kept warm.
   lapsed = false
@@ -1509,7 +1645,7 @@ test('0.19.3: a big conversation that lapses uncompacted after an idle hour clea
 })
 
 test('0.19.3: a cache that lapses within the hour leaves the sighting alone', { timeoutMs: 30_000 }, async ($, on) => {
-  const kept: Record<string, unknown> = { 'idle-compaction-seen:machine': (NOW - 3600) * 1000 }
+  const kept: Record<string, unknown> = { 'idle-compacts:machine': (NOW - 3600) * 1000 }
   const w = world(on, {}, kept)
   w.config = { guard: { keep_warm: true } }
   let lapsed = false
@@ -1532,8 +1668,8 @@ test('0.19.3: a cache that lapses within the hour leaves the sighting alone', { 
   lapsed = true
   await turnOf('t2')
   await w.clock.advance(60_000)
-  expect(typeof kept['idle-compaction-seen:machine']).toBe('number')
-  expect(kept['idle-compaction-seen:machine']).not.toBe(0)
+  expect(typeof kept['idle-compacts:machine']).toBe('number')
+  expect(kept['idle-compacts:machine']).not.toBe(0)
 })
 
 /** Whether line 2 says anything about the cache right now. */

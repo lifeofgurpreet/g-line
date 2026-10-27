@@ -1,5 +1,33 @@
 # Changelog
 
+## 0.20.0 (2026-10-28): keep-warm keeps more caches warm, and says why when one goes cold
+
+An audit of five machines' counters found cold rebuilds every day despite keep-warm (34 on
+10-27). These were the causes, now fixed:
+
+- **`/clear` read as idle compaction.** A conversation that shrank while idle counted as Claude
+  Code compacting it, so a `/clear`, `/compact` or `/rewind` marked the whole account as one
+  whose big conversations Claude Code would compact itself. Keep-warm then stood aside for every
+  conversation of 200k tokens or more on that account for up to 14 days. Only a conversation
+  that shrank to a summary with no such command counts now, and sightings recorded before 0.20
+  are dropped.
+- **One failed re-read turned keep-warm off for the session.** An API error, an empty reply or
+  a refused re-read now gets tried again, up to three times an idle stretch. A re-read that
+  finds no cache, or a next turn that rebuilds it anyway, ends that stretch only; the second
+  time in a session keep-warm turns off, and says so. A rebuild after a model or account change
+  no longer counts against it.
+- **A 5-hour reading from before its reset held keep-warm back.** A window that has reset since
+  its last reading counts as full, and no reading at all no longer stops it.
+- **A model change taught "five-minute cache".** The rewrite after `/model` or an account change
+  no longer sets the cache's lifetime, which stopped keep-warm for the session.
+- **A guard pause stopped keep-warm.** `/g-line guard pause` and `off here` let prompts through
+  and now leave keep-warm running; `/g-line guard off` still stops it.
+
+When a cache goes cold anyway, the turn's receipt says why keep-warm didn't keep it
+(`cache cold · rebuilt 412k · 5h window low`, `out of re-reads`, `the machine slept`), and
+`/g-line dashboard` counts the week's cold rebuilds by reason. Only the first re-read of an idle
+stretch is a toast now (`◆ cache kept warm · 182k re-read after 46m idle`); line 2 counts the rest.
+
 ## 0.19.3 (2026-10-27): idle compaction is counted per account
 
 - On a machine running several accounts, big conversations went cold after an idle hour.
