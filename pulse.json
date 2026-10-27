@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-27T12:32:46Z",
+ "generated_at": "2026-10-27T13:05:09Z",
  "items": [
   {
    "title": "OpenAI announces three breakthroughs in computer science, math, and physics, including that the Exp…",
@@ -17,7 +17,7 @@
    "published_at": "2026-10-26T18:06:27Z",
    "text": "GPT-6.1 Terra: delivering fast and capable computer use at a lower price. GPT-6.1 Terra understands what’s on screen, takes action across apps, writes naturally, and is a more capable model for your whole workday with the efficiency to take on more of it.",
    "author_name": "OpenAI",
-   "likes": 25542,
+   "likes": 25662,
    "story": "OpenAI releases GPT-6.1 Terra, touting “fast and capable computer use at scale” and clearer, more natural writing, priced at $1/1M input and $5/1M output tokens"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-10-26T16:12:22Z",
    "text": "While evaluating Qwen3.8-Flash-Next in a controlled sandbox environment, Cohere's research team observed something unexpected. Asked to generate a defensive cybersecurity detection rule, the model instead inventoried aspects of the machine it was running on and attempted to…",
    "author_name": "Cohere",
-   "likes": 10217,
+   "likes": 10282,
    "story": "Cohere says during an evaluation Qwen3.8-Flash-Next inventoried its host machine and tried to upload a probe file to an Alibaba Cloud storage bucket in Beijing"
   },
   {
@@ -50,8 +50,8 @@
    "url": "https://open3dlab.com/news/roblox-downloaded-145-gb-of-models-from-our-sites/",
    "source": "Hacker News",
    "published_at": "2026-10-27T10:27:50Z",
-   "text": "165 points and 111 comments on Hacker News.",
-   "points": 165,
+   "text": "215 points and 137 comments on Hacker News.",
+   "points": 215,
    "discussion": "https://news.ycombinator.com/item?id=50256985"
   },
   {
@@ -61,7 +61,7 @@
    "published_at": "2026-10-26T17:16:36Z",
    "text": "Microsoft India sends VEO (voluntary exit offer) to employees in level 70 and below in most of the orgs One month of base pay per year in microsoft + 3 months pay Decision to be made in a month.",
    "author_name": "Harveen Singh Chadha",
-   "likes": 5777,
+   "likes": 5802,
    "story": "Microsoft offers buyouts to ~60K workers, including at a VP level and below across the US, Canada, India, and the UK; its headcount at the end of June was 223K"
   },
   {
@@ -86,17 +86,17 @@
    "published_at": "2026-10-27T03:57:16Z",
    "text": "WSJ says Broadcom CEO Hock Tan directly intervened to get Anthropic's debt deal pushed though.",
    "author_name": "Andrew Curran",
-   "likes": 203,
+   "likes": 211,
    "story": "Sources: Broadcom CEO Hock Tan held 11th-hour talks and agreed to higher rates and loan guarantees to secure bank participation in the $63B Anthropic debt deal"
   },
   {
-   "title": "The Mythical Man-Month in the Age of AI",
-   "url": "https://j11g.com/the-mythical-man-month-in-the-age-of-ai",
+   "title": "Wikipedia's Cleanup of AI-Generated Content",
+   "url": "https://spectrum.ieee.org/wikipedia-wikiproject-ai-writing-cleanup",
    "source": "Hacker News",
-   "published_at": "2026-10-27T06:25:37Z",
-   "text": "234 points and 158 comments on Hacker News.",
-   "points": 234,
-   "discussion": "https://news.ycombinator.com/item?id=50255298"
+   "published_at": "2026-10-27T11:08:15Z",
+   "text": "74 points and 31 comments on Hacker News.",
+   "points": 74,
+   "discussion": "https://news.ycombinator.com/item?id=50257326"
   },
   {
    "title": "Anthropic's S-1 excludes Labs co-lead Ben Mann from its “Continuing Founders” and Founder LLC; Anth…",
@@ -107,30 +107,30 @@
    "via": "Techmeme"
   },
   {
-   "title": "Anthropic S-1",
-   "url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026067168/anthropicpbc-sx1.htm",
+   "title": "AI promised less work. I've never worked more",
+   "url": "https://oioannou.com/blog/ai-promised-less-work/",
    "source": "Hacker News",
-   "published_at": "2026-10-26T13:04:50Z",
-   "text": "1643 points and 1562 comments on Hacker News.",
-   "points": 1643,
-   "discussion": "https://news.ycombinator.com/item?id=50242939"
+   "published_at": "2026-10-27T11:08:14Z",
+   "text": "69 points and 46 comments on Hacker News.",
+   "points": 69,
+   "discussion": "https://news.ycombinator.com/item?id=50257325"
   },
   {
-   "title": "Few VC firms are mentioned in Anthropic's S-1, except Spark, which invested ~$800M across six round…",
-   "url": "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-10-26-2026/card/few-vcs-mentioned-in-anthropic-ipo-filing-except-spark-capital-AzO2iia3OGgCOvgbzPAt",
-   "source": "Kate Clark / Wall Street Jo…",
-   "published_at": "2026-10-26T16:25:47Z",
-   "text": "Few VC firms are mentioned in Anthropic's S-1, except Spark, which invested ~$800M across six rounds and whose GP Yasmin Razavi is the sole VC on its board. Venture capital firms are largely absent from Anthropic's IPO prospectus, with one exception: Spark Capital, an early investor whose general partner …",
+   "title": "China's Star 50 index of AI and chip leaders is down by 40% in under four months, losing ~$480B in…",
+   "url": "https://www.reuters.com/world/china/china-ai-bubble-has-already-burst-2026-10-26/",
+   "source": "Reuters",
+   "published_at": "2026-10-27T01:55:45Z",
+   "text": "China's Star 50 index of AI and chip leaders is down by 40% in under four months, losing ~$480B in market value; chipmaker CXMT is down ~25% in the past month. While global tech stocks teeter, in China they have already crashed as lofty valuations collapse under worries about AI demand and curbs on Chinese exports.",
    "via": "Techmeme"
   },
   {
-   "title": "Sebastian Raschka's from-scratch video course on building reasoning models",
-   "url": "https://magazine.sebastianraschka.com/p/building-reasoning-models",
+   "title": "The Mythical Man-Month in the Age of AI",
+   "url": "https://j11g.com/the-mythical-man-month-in-the-age-of-ai",
    "source": "Hacker News",
-   "published_at": "2026-10-26T15:11:59Z",
-   "text": "742 points and 102 comments on Hacker News.",
-   "points": 742,
-   "discussion": "https://news.ycombinator.com/item?id=50245138"
+   "published_at": "2026-10-27T06:25:37Z",
+   "text": "248 points and 166 comments on Hacker News.",
+   "points": 248,
+   "discussion": "https://news.ycombinator.com/item?id=50255298"
   }
  ],
  "sources": "curated, Techmeme, X (found via Techmeme, Reddit, the Internet Archive), Claude Code releases, Anthropic, Hacker News, Simon Willison"
