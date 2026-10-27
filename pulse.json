@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-27T22:54:27Z",
+ "generated_at": "2026-10-27T23:26:29Z",
  "items": [
   {
    "title": "Google launches Genie 4, a world model powered by Gemini 3.8 Flash designed to generate interactive…",
@@ -17,7 +17,7 @@
    "published_at": "2026-10-27T20:27:48Z",
    "text": "Over the past few months, Anthropic scientists have engaged in deep research partnerships with six organizations developing new medicines. We've also begun drug discovery efforts of our own. In doing so, we’ve learned much more about how Claude can support the many stages of…",
    "author_name": "Anthropic",
-   "likes": 3997,
+   "likes": 4481,
    "story": "Anthropic details early drug development work with six partners and says it has acquired Mithril, a one-person company working on muscular dystrophy"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-10-27T22:09:39Z",
    "text": "NEW: Apple bets customers will pay a big premium for touch-screen, OLED laptops. The company has discussed charging $400 more, pricing the 14-inch touch MacBook Pro from $2,899. That could make the 16-inch model at least $3,399.",
    "author_name": "Mark Gurman",
-   "likes": 338,
+   "likes": 460,
    "story": "Source: Apple has discussed charging $2,899 for the 14-inch MacBook Pro with an OLED XDR touch screen and M5 Pro chip, $400 more than the current M5 Pro model",
    "links": [
     "https://www.bloomberg.com/news/articles/2026-10-27/apple-14-inch-16-inch-macbook-pro-touch-price-is-likely-2-899-laptop-details?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc5MzEzODg1NiwiZXhwIjoxNzkzNzQzNjU2LCJhcnRpY2xlSWQiOiJUTktaNE9UOTZPU0kwMCIsImJjb25uZWN0SWQiOiJDNEVEQ0FFMUZBMDU0MEJFQTI0QTlGMjExQzFFOTA4MCJ9.-r0-k5GENAkA0QuY_42jePcRdcwpSByLQzUz6ZPG9LI"
@@ -47,7 +47,7 @@
    "published_at": "2026-10-27T13:08:48Z",
    "text": "Everyday tasks? No sweat. Faster graphics? Nailed it. On-device AI? You bet. It’s the new 14-inch MacBook Pro and iMac, faster than ever and supercharged by M6.",
    "author_name": "Greg Joswiak",
-   "likes": 8569,
+   "likes": 8622,
    "story": "Apple unveils a 14\" MacBook Pro with an M6, which has a 12-core CPU and a 12-core GPU, 16GB or 32GB of unified memory, and Wi-Fi 7, for $1,999+ from November 6"
   },
   {
@@ -63,8 +63,8 @@
    "url": "https://stanforddaily.com/2026/10/27/professors-books-pirated-to-train-claude/",
    "source": "Hacker News",
    "published_at": "2026-10-27T15:28:26Z",
-   "text": "398 points and 224 comments on Hacker News.",
-   "points": 398,
+   "text": "416 points and 235 comments on Hacker News.",
+   "points": 416,
    "discussion": "https://news.ycombinator.com/item?id=50260814"
   },
   {
@@ -74,7 +74,7 @@
    "published_at": "2026-10-26T17:16:36Z",
    "text": "Microsoft India sends VEO (voluntary exit offer) to employees in level 70 and below in most of the orgs One month of base pay per year in microsoft + 3 months pay Decision to be made in a month.",
    "author_name": "Harveen Singh Chadha",
-   "likes": 5992,
+   "likes": 5991,
    "story": "Microsoft offers buyouts to ~60K workers, including at a VP level and below across the US, Canada, India, and the UK; its headcount at the end of June was 223K"
   },
   {
@@ -99,7 +99,7 @@
    "published_at": "2026-10-27T03:57:16Z",
    "text": "WSJ says Broadcom CEO Hock Tan directly intervened to get Anthropic's debt deal pushed though.",
    "author_name": "Andrew Curran",
-   "likes": 265,
+   "likes": 266,
    "story": "Sources: Broadcom CEO Hock Tan held 11th-hour talks and agreed to higher rates and loan guarantees to secure bank participation in the $63B Anthropic debt deal"
   },
   {
@@ -107,8 +107,8 @@
    "url": "https://www.brangus.io/survival-llm",
    "source": "Hacker News",
    "published_at": "2026-10-27T19:55:06Z",
-   "text": "116 points and 71 comments on Hacker News.",
-   "points": 116,
+   "text": "130 points and 83 comments on Hacker News.",
+   "points": 130,
    "discussion": "https://news.ycombinator.com/item?id=50264853"
   },
   {
@@ -124,8 +124,8 @@
    "url": "https://www.anthropic.com/research/early-progress-drug-development",
    "source": "Hacker News",
    "published_at": "2026-10-27T20:50:42Z",
-   "text": "67 points and 53 comments on Hacker News.",
-   "points": 67,
+   "text": "74 points and 62 comments on Hacker News.",
+   "points": 74,
    "discussion": "https://news.ycombinator.com/item?id=50265609"
   },
   {
