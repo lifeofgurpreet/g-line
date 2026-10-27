@@ -1,13 +1,13 @@
 {
  "schema": 1,
- "generated_at": "2026-10-27T15:16:08Z",
+ "generated_at": "2026-10-27T15:48:51Z",
  "items": [
   {
-   "title": "Apple unveils the 14-inch MacBook Pro with M6, with a 12-core CPU and a 12-core GPU, up to 32GB of…",
+   "title": "Apple unveils a 14\" MacBook Pro with an M6, which has a 12-core CPU and a 12-core GPU, 16GB or 32GB…",
    "url": "https://www.apple.com/newsroom/2026/10/apple-introduces-the-new-14-inch-macbook-pro-with-m6/",
    "source": "Apple",
    "published_at": "2026-10-27T13:08:06Z",
-   "text": "Apple unveils the 14-inch MacBook Pro with M6, with a 12-core CPU and a 12-core GPU, up to 32GB of unified memory, and Wi-Fi 7, from $1,999 on November 6. Supercharged by M6, the 14-inch MacBook Pro features incredible performance and next-level AI capabilities, enhanced connectivity …",
+   "text": "Apple unveils a 14\" MacBook Pro with an M6, which has a 12-core CPU and a 12-core GPU, 16GB or 32GB of unified memory, and Wi-Fi 7, for $1,999+ from November 6. Supercharged by M6, the 14-inch MacBook Pro features incredible performance and next-level AI capabilities, enhanced connectivity …",
    "via": "Techmeme"
   },
   {
@@ -17,7 +17,7 @@
    "published_at": "2026-10-26T21:50:21Z",
    "text": "Announcing three major scientific discoveries, one each in mathematics (harmonic analysis), computer science (complexity theory), and physics (quantum field theory). AI starting to help us improve our understanding of the universe!",
    "author_name": "Greg Brockman",
-   "likes": 13624,
+   "likes": 13751,
    "story": "OpenAI announces three breakthroughs in computer science, math, and physics, including that the Exponential Time Hypothesis, a longstanding conjecture, is false",
    "links": [
     "https://openai.com/index/building-scientific-understanding-with-academic-communities/"
@@ -37,15 +37,15 @@
    "published_at": "2026-10-26T18:06:27Z",
    "text": "GPT-6.1 Terra: delivering fast and capable computer use at a lower price. GPT-6.1 Terra understands what’s on screen, takes action across apps, writes naturally, and is a more capable model for your whole workday with the efficiency to take on more of it.",
    "author_name": "OpenAI",
-   "likes": 26069,
+   "likes": 26172,
    "story": "OpenAI releases GPT-6.1 Terra, touting “fast and capable computer use at scale” and clearer, more natural writing, priced at $1/1M input and $5/1M output tokens"
   },
   {
-   "title": "Sources: Broadcom CEO Hock Tan held 11th-hour talks and agreed to higher rates and loan guarantees…",
-   "url": "https://www.wsj.com/finance/broadcom-ceo-intervened-to-seal-63-billion-anthropic-debt-deal-c807754f?st=f24o6c&reflink=desktopwebshare_permalink",
-   "source": "Wall Street Journal",
-   "published_at": "2026-10-27T09:40:46Z",
-   "text": "Sources: Broadcom CEO Hock Tan held 11th-hour talks and agreed to higher rates and loan guarantees to secure bank participation in the $63B Anthropic debt deal. The deal, announced on Monday, is the biggest ever to raise money for AI infrastructure — Hock Tan was running out of patience.",
+   "title": "Anthropic's S-1 shows an 85% gross margin in H1 from running its models, a reality check for skepti…",
+   "url": "https://www.theinformation.com/articles/anthropics-85-margin-reality-check-skeptics",
+   "source": "Stephanie Palazzolo / The I…",
+   "published_at": "2026-10-27T15:21:17Z",
+   "text": "Anthropic's S-1 shows an 85% gross margin in H1 from running its models, a reality check for skeptics who said pay-as-you-go model sales wouldn't be profitable. When Anthropic on Monday dropped its long-awaited initial public offering prospectus filing, a lot of the details …",
    "via": "Techmeme"
   },
   {
@@ -53,8 +53,8 @@
    "url": "https://oioannou.com/blog/ai-promised-less-work/",
    "source": "Hacker News",
    "published_at": "2026-10-27T11:08:14Z",
-   "text": "379 points and 338 comments on Hacker News.",
-   "points": 379,
+   "text": "443 points and 404 comments on Hacker News.",
+   "points": 443,
    "discussion": "https://news.ycombinator.com/item?id=50257325"
   },
   {
@@ -64,7 +64,7 @@
    "published_at": "2026-10-26T16:12:22Z",
    "text": "While evaluating Qwen3.8-Flash-Next in a controlled sandbox environment, Cohere's research team observed something unexpected. Asked to generate a defensive cybersecurity detection rule, the model instead inventoried aspects of the machine it was running on and attempted to…",
    "author_name": "Cohere",
-   "likes": 10462,
+   "likes": 10504,
    "story": "Cohere says during an evaluation Qwen3.8-Flash-Next inventoried its host machine and tried to upload a probe file to an Alibaba Cloud storage bucket in Beijing"
   },
   {
@@ -75,11 +75,11 @@
    "text": "Anthropic is an AI safety and research company that's working to build reliable, interpretable, and steerable AI systems."
   },
   {
-   "title": "S-1: Anthropic spent ~$2.50 on compute and infrastructure for every $1 of revenue in Q1 2025, falli…",
-   "url": "https://www.ft.com/content/a6c43402-719e-4295-ae5f-541edb0aeb29",
-   "source": "Financial Times",
-   "published_at": "2026-10-27T09:55:45Z",
-   "text": "S-1: Anthropic spent ~$2.50 on compute and infrastructure for every $1 of revenue in Q1 2025, falling to under 50 cents in Q2 2026, as it seeks profitability. Prospectus details AI lab's ‘mission’, $800bn data centre commitments and extraordinary governance structure",
+   "title": "Sources: Broadcom CEO Hock Tan held 11th-hour talks and agreed to higher rates and loan guarantees…",
+   "url": "https://www.wsj.com/finance/broadcom-ceo-intervened-to-seal-63-billion-anthropic-debt-deal-c807754f?st=f24o6c&reflink=desktopwebshare_permalink",
+   "source": "Wall Street Journal",
+   "published_at": "2026-10-27T09:40:46Z",
+   "text": "Sources: Broadcom CEO Hock Tan held 11th-hour talks and agreed to higher rates and loan guarantees to secure bank participation in the $63B Anthropic debt deal. The deal, announced on Monday, is the biggest ever to raise money for AI infrastructure — Hock Tan was running out of patience.",
    "via": "Techmeme"
   },
   {
@@ -89,7 +89,7 @@
    "published_at": "2026-10-26T17:16:36Z",
    "text": "Microsoft India sends VEO (voluntary exit offer) to employees in level 70 and below in most of the orgs One month of base pay per year in microsoft + 3 months pay Decision to be made in a month.",
    "author_name": "Harveen Singh Chadha",
-   "likes": 5894,
+   "likes": 5911,
    "story": "Microsoft offers buyouts to ~60K workers, including at a VP level and below across the US, Canada, India, and the UK; its headcount at the end of June was 223K"
   },
   {
@@ -97,8 +97,8 @@
    "url": "https://open3dlab.com/news/roblox-downloaded-145-gb-of-models-from-our-sites/",
    "source": "Hacker News",
    "published_at": "2026-10-27T10:27:50Z",
-   "text": "370 points and 220 comments on Hacker News.",
-   "points": 370,
+   "text": "383 points and 226 comments on Hacker News.",
+   "points": 383,
    "discussion": "https://news.ycombinator.com/item?id=50256985"
   },
   {
@@ -114,16 +114,16 @@
    "url": "https://privacy.claude.com/en/articles/7996868-is-my-data-used-for-model-training",
    "source": "Hacker News",
    "published_at": "2026-10-27T13:56:15Z",
-   "text": "73 points and 37 comments on Hacker News.",
-   "points": 73,
+   "text": "91 points and 48 comments on Hacker News.",
+   "points": 91,
    "discussion": "https://news.ycombinator.com/item?id=50259406"
   },
   {
-   "title": "Apple adds a beta AI assistant built on Apple and OpenAI models to Keynote, Pages, Numbers, and Log…",
+   "title": "Apple adds a beta AI assistant built on Apple's and OpenAI's models to Keynote, Pages, Numbers, and…",
    "url": "https://www.theverge.com/tech/1019373/apple-pages-keynote-numbers-ai-chatbot-update",
    "source": "Emma Roth / The Verge",
    "published_at": "2026-10-27T14:11:07Z",
-   "text": "Apple adds a beta AI assistant built on Apple and OpenAI models to Keynote, Pages, Numbers, and Logic Pro, plus MCP support to Keynote, Pages, and Numbers. The new AI assistant can draft and restructure content in Pages, while organizing data in Numbers.",
+   "text": "Apple adds a beta AI assistant built on Apple's and OpenAI's models to Keynote, Pages, Numbers, and Logic Pro, plus MCP support to Keynote, Pages, and Numbers. The new AI assistant can draft and restructure content in Pages, while organizing data in Numbers.",
    "via": "Techmeme"
   },
   {
@@ -131,8 +131,8 @@
    "url": "https://spectrum.ieee.org/wikipedia-wikiproject-ai-writing-cleanup",
    "source": "Hacker News",
    "published_at": "2026-10-27T11:08:15Z",
-   "text": "185 points and 82 comments on Hacker News.",
-   "points": 185,
+   "text": "219 points and 89 comments on Hacker News.",
+   "points": 219,
    "discussion": "https://news.ycombinator.com/item?id=50257326"
   }
  ],
