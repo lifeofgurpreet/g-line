@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-27T18:29:05Z",
+ "generated_at": "2026-10-27T19:01:09Z",
  "items": [
   {
    "title": "Apple unveils a 14\" MacBook Pro with an M6, which has a 12-core CPU and a 12-core GPU, 16GB or 32GB…",
@@ -17,7 +17,7 @@
    "published_at": "2026-10-27T16:10:55Z",
    "text": "This is Genie 4, our most realistic and interactive world model yet. 🌐 Explore dynamic environments in real time to see how the scene responds, sounds, and how the people in it move, react, and speak.…",
    "author_name": "Google DeepMind",
-   "likes": 6841,
+   "likes": 8195,
    "story": "Google launches Genie 4, a world model powered by Gemini 3.8 Flash designed to generate interactive AI simulations, initially as a preview to trusted testers"
   },
   {
@@ -28,75 +28,14 @@
    "text": "Added --hold-idle-file and --max-hold-min to self-hosted-runner, to keep an idle session while your host reports processes it left running · Added a tip for the Explanatory output style, shown when you ask Claude for explanations · Fixed long freezes at startup and after reading or editing files when a CLAUDE.md file holds a very long list item · Fixed interrupting Claude not taking effect until a timeout while an MCP server had not answered a resource read or a skill was still downloading"
   },
   {
-   "title": "Your OCR says it’s done—but did it get everything right? 🤔 In high-stakes workflows, even a small e…",
-   "url": "https://x.com/OpenBMB/status/2115124474882469955",
-   "source": "𝕏 @OpenBMB",
-   "published_at": "2026-10-27T16:52:26Z",
-   "text": "Your OCR says it’s done—but did it get everything right? 🤔 In high-stakes workflows, even a small error can be costly. 🚀 Meet the MiniCPM-OCR suite: an open-source solution to parse fast and guard the results. Two new models: 🔹 MiniCPM-OCR 1.0 — SOTA OCR performance and ht…",
-   "author_name": "OpenBMB",
-   "likes": 106,
-   "story": "OpenBMB released a 1.3B OCR model and a separate 2B model to check its work"
-  },
-  {
    "title": "An internal model at OpenAI has produced a claimed refutation of ETH! Russell Impagliazzo, Mohan Pa…",
    "url": "https://x.com/rrwilliams/status/2114833319431209352",
    "source": "𝕏 @rrwilliams",
    "published_at": "2026-10-26T21:35:29Z",
    "text": "An internal model at OpenAI has produced a claimed refutation of ETH! Russell Impagliazzo, Mohan Paturi, and I have been asked to help organize an open and independent examination of this claim. 1/4",
    "author_name": "Ryan Williams @rrwilliams.bsky.social",
-   "likes": 6347,
+   "likes": 6415,
    "story": "OpenAI announces three breakthroughs in computer science, math, and physics, including that the Exponential Time Hypothesis, a longstanding conjecture, is false"
-  },
-  {
-   "title": "Sources: Broadcom CEO Hock Tan held 11th-hour talks and agreed to higher rates and loan guarantees…",
-   "url": "https://www.wsj.com/finance/broadcom-ceo-intervened-to-seal-63-billion-anthropic-debt-deal-c807754f?st=f24o6c&reflink=desktopwebshare_permalink",
-   "source": "Wall Street Journal",
-   "published_at": "2026-10-27T09:40:46Z",
-   "text": "Sources: Broadcom CEO Hock Tan held 11th-hour talks and agreed to higher rates and loan guarantees to secure bank participation in the $63B Anthropic debt deal. The deal, announced on Monday, is the biggest ever to raise money for AI infrastructure — Hock Tan was running out of patience.",
-   "via": "Techmeme"
-  },
-  {
-   "title": "Police Are Using AI to Pull over Drivers for 'Suspicious' Behavior",
-   "url": "https://gizmodo.com/police-are-using-ai-to-pull-over-drivers-for-suspicious-behavior-2000831220",
-   "source": "Hacker News",
-   "published_at": "2026-10-27T16:40:15Z",
-   "text": "159 points and 79 comments on Hacker News.",
-   "points": 159,
-   "discussion": "https://news.ycombinator.com/item?id=50261819"
-  },
-  {
-   "title": "Microsoft India sends VEO (voluntary exit offer) to employees in level 70 and below in most of the…",
-   "url": "https://x.com/HarveenChadha/status/2114768166756974597",
-   "source": "𝕏 @HarveenChadha",
-   "published_at": "2026-10-26T17:16:36Z",
-   "text": "Microsoft India sends VEO (voluntary exit offer) to employees in level 70 and below in most of the orgs One month of base pay per year in microsoft + 3 months pay Decision to be made in a month.",
-   "author_name": "Harveen Singh Chadha",
-   "likes": 5969,
-   "story": "Microsoft offers buyouts to ~60K workers, including at a VP level and below across the US, Canada, India, and the UK; its headcount at the end of June was 223K"
-  },
-  {
-   "title": "Anthropic files S-1 with the SEC for proposed initial public offering",
-   "url": "https://www.anthropic.com/news/s1-sec",
-   "source": "Anthropic",
-   "published_at": "2026-10-26T15:04:18Z",
-   "text": "Anthropic is an AI safety and research company that's working to build reliable, interpretable, and steerable AI systems."
-  },
-  {
-   "title": "Nvidia and Meta expand their Muse partnership, including Meta deploying more Vera Rubin and Vera CP…",
-   "url": "https://www.wsj.com/tech/ai/nvidia-to-invest-3-billion-in-metas-equity-offering-as-they-expand-ai-partnership-e8d3850a?st=4eEQYV&reflink=desktopwebshare_permalink",
-   "source": "Wall Street Journal",
-   "published_at": "2026-10-27T08:11:04Z",
-   "text": "Nvidia and Meta expand their Muse partnership, including Meta deploying more Vera Rubin and Vera CPUs; Nvidia will invest $3B in Meta's planned equity fundraise. Investment comes as Facebook's parent seeks up to $95 billion via stock offerings — Nvidia and Meta Platforms are expanding …",
-   "via": "Techmeme"
-  },
-  {
-   "title": "Anthropic trained Claude on illegally obtained Stanford professors' books",
-   "url": "https://stanforddaily.com/2026/10/27/professors-books-pirated-to-train-claude/",
-   "source": "Hacker News",
-   "published_at": "2026-10-27T15:28:26Z",
-   "text": "165 points and 81 comments on Hacker News.",
-   "points": 165,
-   "discussion": "https://news.ycombinator.com/item?id=50260814"
   },
   {
    "title": "Anthropic's S-1 shows an 85% gross margin in H1 from running its models, a reality check for skepti…",
@@ -107,13 +46,30 @@
    "via": "Techmeme"
   },
   {
-   "title": "Is my data used for model training?",
-   "url": "https://privacy.claude.com/en/articles/7996868-is-my-data-used-for-model-training",
+   "title": "Police Are Using AI to Pull over Drivers for 'Suspicious' Behavior",
+   "url": "https://gizmodo.com/police-are-using-ai-to-pull-over-drivers-for-suspicious-behavior-2000831220",
    "source": "Hacker News",
-   "published_at": "2026-10-27T13:56:15Z",
-   "text": "181 points and 76 comments on Hacker News.",
-   "points": 181,
-   "discussion": "https://news.ycombinator.com/item?id=50259406"
+   "published_at": "2026-10-27T16:40:15Z",
+   "text": "206 points and 128 comments on Hacker News.",
+   "points": 206,
+   "discussion": "https://news.ycombinator.com/item?id=50261819"
+  },
+  {
+   "title": "Microsoft India sends VEO (voluntary exit offer) to employees in level 70 and below in most of the…",
+   "url": "https://x.com/HarveenChadha/status/2114768166756974597",
+   "source": "𝕏 @HarveenChadha",
+   "published_at": "2026-10-26T17:16:36Z",
+   "text": "Microsoft India sends VEO (voluntary exit offer) to employees in level 70 and below in most of the orgs One month of base pay per year in microsoft + 3 months pay Decision to be made in a month.",
+   "author_name": "Harveen Singh Chadha",
+   "likes": 5976,
+   "story": "Microsoft offers buyouts to ~60K workers, including at a VP level and below across the US, Canada, India, and the UK; its headcount at the end of June was 223K"
+  },
+  {
+   "title": "Anthropic files S-1 with the SEC for proposed initial public offering",
+   "url": "https://www.anthropic.com/news/s1-sec",
+   "source": "Anthropic",
+   "published_at": "2026-10-26T15:04:18Z",
+   "text": "Anthropic is an AI safety and research company that's working to build reliable, interpretable, and steerable AI systems."
   },
   {
    "title": "Apple adds a beta AI assistant built on Apple's and OpenAI's models to Keynote, Pages, Numbers, and…",
@@ -124,13 +80,57 @@
    "via": "Techmeme"
   },
   {
+   "title": "WSJ says Broadcom CEO Hock Tan directly intervened to get Anthropic's debt deal pushed though.",
+   "url": "https://x.com/AndrewCurran_/status/2114929398893957622",
+   "source": "𝕏 @AndrewCurran_",
+   "published_at": "2026-10-27T03:57:16Z",
+   "text": "WSJ says Broadcom CEO Hock Tan directly intervened to get Anthropic's debt deal pushed though.",
+   "author_name": "Andrew Curran",
+   "likes": 245,
+   "story": "Sources: Broadcom CEO Hock Tan held 11th-hour talks and agreed to higher rates and loan guarantees to secure bank participation in the $63B Anthropic debt deal"
+  },
+  {
+   "title": "Anthropic trained Claude on illegally obtained Stanford professors' books",
+   "url": "https://stanforddaily.com/2026/10/27/professors-books-pirated-to-train-claude/",
+   "source": "Hacker News",
+   "published_at": "2026-10-27T15:28:26Z",
+   "text": "192 points and 94 comments on Hacker News.",
+   "points": 192,
+   "discussion": "https://news.ycombinator.com/item?id=50260814"
+  },
+  {
+   "title": "Nvidia and Meta expand their Muse partnership, including Meta deploying more Vera Rubin and Vera CP…",
+   "url": "https://www.wsj.com/tech/ai/nvidia-to-invest-3-billion-in-metas-equity-offering-as-they-expand-ai-partnership-e8d3850a?st=4eEQYV&reflink=desktopwebshare_permalink",
+   "source": "Wall Street Journal",
+   "published_at": "2026-10-27T08:11:04Z",
+   "text": "Nvidia and Meta expand their Muse partnership, including Meta deploying more Vera Rubin and Vera CPUs; Nvidia will invest $3B in Meta's planned equity fundraise. Investment comes as Facebook's parent seeks up to $95 billion via stock offerings — Nvidia and Meta Platforms are expanding …",
+   "via": "Techmeme"
+  },
+  {
    "title": "Wikipedia's Cleanup of AI-Generated Content",
    "url": "https://spectrum.ieee.org/wikipedia-wikiproject-ai-writing-cleanup",
    "source": "Hacker News",
    "published_at": "2026-10-27T11:08:15Z",
-   "text": "329 points and 155 comments on Hacker News.",
-   "points": 329,
+   "text": "344 points and 159 comments on Hacker News.",
+   "points": 344,
    "discussion": "https://news.ycombinator.com/item?id=50257326"
+  },
+  {
+   "title": "Oracle adds ChatGPT and Codex to its app stack and expands Oracle Cloud Infrastructure lineup with…",
+   "url": "https://www.cnbc.com/2026/10/27/oracle-openai-chatgpt-codex-google-tpus.html",
+   "source": "Seema Mody / CNBC",
+   "published_at": "2026-10-27T16:31:32Z",
+   "text": "Oracle adds ChatGPT and Codex to its app stack and expands Oracle Cloud Infrastructure lineup with Google TPUs, OpenAI's Jalapeño chip, and Cerebras hardware",
+   "via": "Techmeme"
+  },
+  {
+   "title": "Is my data used for model training?",
+   "url": "https://privacy.claude.com/en/articles/7996868-is-my-data-used-for-model-training",
+   "source": "Hacker News",
+   "published_at": "2026-10-27T13:56:15Z",
+   "text": "185 points and 81 comments on Hacker News.",
+   "points": 185,
+   "discussion": "https://news.ycombinator.com/item?id=50259406"
   }
  ],
  "sources": "curated, Techmeme, X (found via Techmeme, Reddit, the Internet Archive), Claude Code releases, Anthropic, Hacker News, Simon Willison"
