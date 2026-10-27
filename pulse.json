@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-27T03:22:26Z",
+ "generated_at": "2026-10-27T03:54:42Z",
  "items": [
   {
    "title": "Anthropic's co-founders say they “believe that AI is one of the most consequential technologies in…",
@@ -17,7 +17,7 @@
    "published_at": "2026-10-26T18:06:27Z",
    "text": "GPT-6.1 Terra: delivering fast and capable computer use at a lower price. GPT-6.1 Terra understands what’s on screen, takes action across apps, writes naturally, and is a more capable model for your whole workday with the efficiency to take on more of it.",
    "author_name": "OpenAI",
-   "likes": 22434,
+   "likes": 22726,
    "story": "OpenAI releases GPT-6.1 Terra, touting “fast and capable computer use at scale” and clearer, more natural writing, priced at $1/1M input and $5/1M output tokens"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-10-26T13:05:46Z",
    "text": "Anthropic has filed an S-1 registration statement with the SEC related to its proposed IPO. Read more: Legal disclaimer: A registration statement relating to these securities has been filed with the SEC but has not yet become effective. These securities…",
    "author_name": "Anthropic",
-   "likes": 15984,
+   "likes": 16110,
    "story": "Anthropic files for an IPO on the Nasdaq under the symbol ANT; the number of Class A shares to be offered and the price range is yet to be determined",
    "links": [
     "https://www.anthropic.com/news/s1-sec"
@@ -53,8 +53,8 @@
    "url": "https://openai.com/index/introducing-gpt-6-1-terra/",
    "source": "Hacker News",
    "published_at": "2026-10-26T18:01:17Z",
-   "text": "534 points and 335 comments on Hacker News.",
-   "points": 534,
+   "text": "540 points and 338 comments on Hacker News.",
+   "points": 540,
    "discussion": "https://news.ycombinator.com/item?id=50248124"
   },
   {
@@ -64,7 +64,7 @@
    "published_at": "2026-10-26T16:12:22Z",
    "text": "While evaluating Qwen3.8-Flash-Next in a controlled sandbox environment, Cohere's research team observed something unexpected. Asked to generate a defensive cybersecurity detection rule, the model instead inventoried aspects of the machine it was running on and attempted to…",
    "author_name": "Cohere",
-   "likes": 9354,
+   "likes": 9420,
    "story": "Cohere says during an evaluation Qwen3.8-Flash-Next inventoried its host machine and tried to upload a probe file to an Alibaba Cloud storage bucket in Beijing"
   },
   {
@@ -90,8 +90,8 @@
    "url": "https://magazine.sebastianraschka.com/p/building-reasoning-models",
    "source": "Hacker News",
    "published_at": "2026-10-26T15:11:59Z",
-   "text": "595 points and 85 comments on Hacker News.",
-   "points": 595,
+   "text": "604 points and 86 comments on Hacker News.",
+   "points": 604,
    "discussion": "https://news.ycombinator.com/item?id=50245138"
   },
   {
@@ -101,7 +101,7 @@
    "published_at": "2026-10-26T13:07:51Z",
    "text": "The lower and high storage models have different A20 Chips. The 512GB configuration has 6 CPU cores versus 5. Both have 7 core GPUs.",
    "author_name": "Mark Gurman",
-   "likes": 523,
+   "likes": 525,
    "story": "Apple unveils a redesigned iPad mini with an 8.5-inch OLED display, an A20 Pro, a nano-texture display option, and IP67 water resistance, for $699+ from Nov. 6"
   },
   {
@@ -117,8 +117,8 @@
    "url": "https://blog.cloudflare.com/kv-cache-exposure-remediation/",
    "source": "Hacker News",
    "published_at": "2026-10-26T22:41:48Z",
-   "text": "89 points and 28 comments on Hacker News.",
-   "points": 89,
+   "text": "95 points and 30 comments on Hacker News.",
+   "points": 95,
    "discussion": "https://news.ycombinator.com/item?id=50252159"
   },
   {
