@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-27T09:16:56Z",
+ "generated_at": "2026-10-27T09:49:23Z",
  "items": [
   {
    "title": "OpenAI announces three breakthroughs in computer science, math, and physics, including that the Exp…",
@@ -17,7 +17,7 @@
    "published_at": "2026-10-26T18:06:27Z",
    "text": "GPT-6.1 Terra: delivering fast and capable computer use at a lower price. GPT-6.1 Terra understands what’s on screen, takes action across apps, writes naturally, and is a more capable model for your whole workday with the efficiency to take on more of it.",
    "author_name": "OpenAI",
-   "likes": 24733,
+   "likes": 24869,
    "story": "OpenAI releases GPT-6.1 Terra, touting “fast and capable computer use at scale” and clearer, more natural writing, priced at $1/1M input and $5/1M output tokens"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-10-26T13:05:46Z",
    "text": "Anthropic has filed an S-1 registration statement with the SEC related to its proposed IPO. Read more: Legal disclaimer: A registration statement relating to these securities has been filed with the SEC but has not yet become effective. These securities…",
    "author_name": "Anthropic",
-   "likes": 17019,
+   "likes": 17076,
    "story": "Anthropic files for an IPO on the Nasdaq under the symbol ANT; the number of Class A shares to be offered and the price range is yet to be determined",
    "links": [
     "https://www.anthropic.com/news/s1-sec"
@@ -53,8 +53,8 @@
    "url": "https://j11g.com/the-mythical-man-month-in-the-age-of-ai",
    "source": "Hacker News",
    "published_at": "2026-10-27T06:25:37Z",
-   "text": "98 points and 80 comments on Hacker News.",
-   "points": 98,
+   "text": "117 points and 95 comments on Hacker News.",
+   "points": 117,
    "discussion": "https://news.ycombinator.com/item?id=50255298"
   },
   {
@@ -64,7 +64,7 @@
    "published_at": "2026-10-26T16:12:22Z",
    "text": "While evaluating Qwen3.8-Flash-Next in a controlled sandbox environment, Cohere's research team observed something unexpected. Asked to generate a defensive cybersecurity detection rule, the model instead inventoried aspects of the machine it was running on and attempted to…",
    "author_name": "Cohere",
-   "likes": 9961,
+   "likes": 9995,
    "story": "Cohere says during an evaluation Qwen3.8-Flash-Next inventoried its host machine and tried to upload a probe file to an Alibaba Cloud storage bucket in Beijing"
   },
   {
@@ -82,7 +82,7 @@
    "published_at": "2026-10-26T17:16:36Z",
    "text": "Microsoft India sends VEO (voluntary exit offer) to employees in level 70 and below in most of the orgs One month of base pay per year in microsoft + 3 months pay Decision to be made in a month.",
    "author_name": "Harveen Singh Chadha",
-   "likes": 5478,
+   "likes": 5533,
    "story": "Microsoft offers buyouts to ~60K workers, including at a VP level and below across the US, Canada, India, and the UK; its headcount at the end of June was 223K"
   },
   {
@@ -90,8 +90,8 @@
    "url": "https://openai.com/index/introducing-gpt-6-1-terra/",
    "source": "Hacker News",
    "published_at": "2026-10-26T18:01:17Z",
-   "text": "585 points and 372 comments on Hacker News.",
-   "points": 585,
+   "text": "588 points and 374 comments on Hacker News.",
+   "points": 588,
    "discussion": "https://news.ycombinator.com/item?id=50248124"
   },
   {
@@ -101,18 +101,8 @@
    "published_at": "2026-10-27T03:57:16Z",
    "text": "WSJ says Broadcom CEO Hock Tan directly intervened to get Anthropic's debt deal pushed though.",
    "author_name": "Andrew Curran",
-   "likes": 155,
-   "story": "Broadcom arranges a $63B deal with BofA, Blackstone, Citi, and Morgan Stanley to finance the purchase of chips for Anthropic via a new special purpose vehicle"
-  },
-  {
-   "title": "If you were thinking concentrating AI behind closed doors is safe, it is time to update your priors!",
-   "url": "https://x.com/ClementDelangue/status/2114713576296300604",
-   "source": "𝕏 @ClementDelangue",
-   "published_at": "2026-10-26T13:39:40Z",
-   "text": "If you were thinking concentrating AI behind closed doors is safe, it is time to update your priors!",
-   "author_name": "clem 🤗",
-   "likes": 502,
-   "story": "AI cybersecurity startup Cathedral says it breached Anthropic's data and messaging systems, under a program inviting outside experts to test Anthropic's systems"
+   "likes": 163,
+   "story": "Sources: Broadcom CEO Hock Tan held 11th-hour talks and agreed to higher rates and loan guarantees to secure bank participation in the $63B Anthropic debt deal"
   },
   {
    "title": "The lower and high storage models have different A20 Chips. The 512GB configuration has 6 CPU cores…",
@@ -121,7 +111,7 @@
    "published_at": "2026-10-26T13:07:51Z",
    "text": "The lower and high storage models have different A20 Chips. The 512GB configuration has 6 CPU cores versus 5. Both have 7 core GPUs.",
    "author_name": "Mark Gurman",
-   "likes": 562,
+   "likes": 564,
    "story": "Apple unveils a redesigned iPad mini featuring an 8.5\" 60Hz OLED display with nano-texture option, an A20 Pro SoC, Touch ID, and IP67, for $699+ from November 6"
   },
   {
@@ -137,9 +127,17 @@
    "url": "https://magazine.sebastianraschka.com/p/building-reasoning-models",
    "source": "Hacker News",
    "published_at": "2026-10-26T15:11:59Z",
-   "text": "701 points and 95 comments on Hacker News.",
-   "points": 701,
+   "text": "703 points and 97 comments on Hacker News.",
+   "points": 703,
    "discussion": "https://news.ycombinator.com/item?id=50245138"
+  },
+  {
+   "title": "Nvidia and Meta expand their Muse partnership, including Meta deploying more Vera Rubin and Vera CP…",
+   "url": "https://www.wsj.com/tech/ai/nvidia-to-invest-3-billion-in-metas-equity-offering-as-they-expand-ai-partnership-e8d3850a?st=4eEQYV&reflink=desktopwebshare_permalink",
+   "source": "Wall Street Journal",
+   "published_at": "2026-10-27T08:11:04Z",
+   "text": "Nvidia and Meta expand their Muse partnership, including Meta deploying more Vera Rubin and Vera CPUs; Nvidia will invest $3B in Meta's planned equity fundraise. Investment comes as Facebook's parent seeks up to $95 billion via stock offerings — Nvidia and Meta Platforms are expanding …",
+   "via": "Techmeme"
   }
  ],
  "sources": "curated, Techmeme, X (found via Techmeme, Reddit, the Internet Archive), Claude Code releases, Anthropic, Hacker News, Simon Willison"
