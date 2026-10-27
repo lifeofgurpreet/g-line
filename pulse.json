@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-27T19:33:30Z",
+ "generated_at": "2026-10-27T20:05:42Z",
  "items": [
   {
    "title": "Apple unveils a 14\" MacBook Pro with an M6, which has a 12-core CPU and a 12-core GPU, 16GB or 32GB…",
@@ -17,7 +17,7 @@
    "published_at": "2026-10-27T16:10:55Z",
    "text": "This is Genie 4, our most realistic and interactive world model yet. 🌐 Explore dynamic environments in real time to see how the scene responds, sounds, and how the people in it move, react, and speak.…",
    "author_name": "Google DeepMind",
-   "likes": 9253,
+   "likes": 10222,
    "story": "Google launches Genie 4, a world model powered by Gemini 3.8 Flash designed to generate interactive AI simulations, initially as a preview to trusted testers"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-10-26T21:35:29Z",
    "text": "An internal model at OpenAI has produced a claimed refutation of ETH! Russell Impagliazzo, Mohan Paturi, and I have been asked to help organize an open and independent examination of this claim. 1/4",
    "author_name": "Ryan Williams @rrwilliams.bsky.social",
-   "likes": 6463,
+   "likes": 6511,
    "story": "OpenAI announces three breakthroughs in computer science, math, and physics, including that the Exponential Time Hypothesis, a longstanding conjecture, is false"
   },
   {
@@ -50,8 +50,8 @@
    "url": "https://gizmodo.com/police-are-using-ai-to-pull-over-drivers-for-suspicious-behavior-2000831220",
    "source": "Hacker News",
    "published_at": "2026-10-27T16:40:15Z",
-   "text": "240 points and 171 comments on Hacker News.",
-   "points": 240,
+   "text": "258 points and 189 comments on Hacker News.",
+   "points": 258,
    "discussion": "https://news.ycombinator.com/item?id=50261819"
   },
   {
@@ -61,7 +61,7 @@
    "published_at": "2026-10-26T17:16:36Z",
    "text": "Microsoft India sends VEO (voluntary exit offer) to employees in level 70 and below in most of the orgs One month of base pay per year in microsoft + 3 months pay Decision to be made in a month.",
    "author_name": "Harveen Singh Chadha",
-   "likes": 5980,
+   "likes": 5982,
    "story": "Microsoft offers buyouts to ~60K workers, including at a VP level and below across the US, Canada, India, and the UK; its headcount at the end of June was 223K"
   },
   {
@@ -80,23 +80,33 @@
    "via": "Techmeme"
   },
   {
-   "title": "WSJ says Broadcom CEO Hock Tan directly intervened to get Anthropic's debt deal pushed though.",
-   "url": "https://x.com/AndrewCurran_/status/2114929398893957622",
-   "source": "𝕏 @AndrewCurran_",
-   "published_at": "2026-10-27T03:57:16Z",
-   "text": "WSJ says Broadcom CEO Hock Tan directly intervened to get Anthropic's debt deal pushed though.",
-   "author_name": "Andrew Curran",
-   "likes": 252,
-   "story": "Sources: Broadcom CEO Hock Tan held 11th-hour talks and agreed to higher rates and loan guarantees to secure bank participation in the $63B Anthropic debt deal"
+   "title": "Your OCR says it’s done—but did it get everything right? 🤔 In high-stakes workflows, even a small e…",
+   "url": "https://x.com/OpenBMB/status/2115124474882469955",
+   "source": "𝕏 @OpenBMB",
+   "published_at": "2026-10-27T16:52:26Z",
+   "text": "Your OCR says it’s done—but did it get everything right? 🤔 In high-stakes workflows, even a small error can be costly. 🚀 Meet the MiniCPM-OCR suite: an open-source solution to parse fast and guard the results. Two new models: 🔹 MiniCPM-OCR 1.0 — SOTA OCR performance and ht…",
+   "author_name": "OpenBMB",
+   "likes": 226,
+   "story": "OpenBMB released a 1.3B OCR model and a separate 2B model to check its work"
   },
   {
    "title": "Anthropic trained Claude on illegally obtained Stanford professors' books",
    "url": "https://stanforddaily.com/2026/10/27/professors-books-pirated-to-train-claude/",
    "source": "Hacker News",
    "published_at": "2026-10-27T15:28:26Z",
-   "text": "233 points and 130 comments on Hacker News.",
-   "points": 233,
+   "text": "273 points and 148 comments on Hacker News.",
+   "points": 273,
    "discussion": "https://news.ycombinator.com/item?id=50260814"
+  },
+  {
+   "title": "WSJ says Broadcom CEO Hock Tan directly intervened to get Anthropic's debt deal pushed though.",
+   "url": "https://x.com/AndrewCurran_/status/2114929398893957622",
+   "source": "𝕏 @AndrewCurran_",
+   "published_at": "2026-10-27T03:57:16Z",
+   "text": "WSJ says Broadcom CEO Hock Tan directly intervened to get Anthropic's debt deal pushed though.",
+   "author_name": "Andrew Curran",
+   "likes": 256,
+   "story": "Sources: Broadcom CEO Hock Tan held 11th-hour talks and agreed to higher rates and loan guarantees to secure bank participation in the $63B Anthropic debt deal"
   },
   {
    "title": "Nvidia and Meta expand their Muse partnership, including Meta deploying more Vera Rubin and Vera CP…",
@@ -111,8 +121,8 @@
    "url": "https://spectrum.ieee.org/wikipedia-wikiproject-ai-writing-cleanup",
    "source": "Hacker News",
    "published_at": "2026-10-27T11:08:15Z",
-   "text": "362 points and 166 comments on Hacker News.",
-   "points": 362,
+   "text": "374 points and 169 comments on Hacker News.",
+   "points": 374,
    "discussion": "https://news.ycombinator.com/item?id=50257326"
   },
   {
@@ -122,15 +132,6 @@
    "published_at": "2026-10-27T16:31:32Z",
    "text": "Oracle adds ChatGPT and Codex to its app stack and expands Oracle Cloud Infrastructure lineup with Google TPUs, OpenAI's Jalapeño chip, and Cerebras hardware",
    "via": "Techmeme"
-  },
-  {
-   "title": "Is my data used for model training?",
-   "url": "https://privacy.claude.com/en/articles/7996868-is-my-data-used-for-model-training",
-   "source": "Hacker News",
-   "published_at": "2026-10-27T13:56:15Z",
-   "text": "195 points and 84 comments on Hacker News.",
-   "points": 195,
-   "discussion": "https://news.ycombinator.com/item?id=50259406"
   }
  ],
  "sources": "curated, Techmeme, X (found via Techmeme, Reddit, the Internet Archive), Claude Code releases, Anthropic, Hacker News, Simon Willison"
