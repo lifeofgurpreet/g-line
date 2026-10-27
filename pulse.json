@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-27T14:43:15Z",
+ "generated_at": "2026-10-27T15:16:08Z",
  "items": [
   {
    "title": "Apple unveils the 14-inch MacBook Pro with M6, with a 12-core CPU and a 12-core GPU, up to 32GB of…",
@@ -17,7 +17,7 @@
    "published_at": "2026-10-26T21:50:21Z",
    "text": "Announcing three major scientific discoveries, one each in mathematics (harmonic analysis), computer science (complexity theory), and physics (quantum field theory). AI starting to help us improve our understanding of the universe!",
    "author_name": "Greg Brockman",
-   "likes": 13479,
+   "likes": 13624,
    "story": "OpenAI announces three breakthroughs in computer science, math, and physics, including that the Exponential Time Hypothesis, a longstanding conjecture, is false",
    "links": [
     "https://openai.com/index/building-scientific-understanding-with-academic-communities/"
@@ -37,42 +37,8 @@
    "published_at": "2026-10-26T18:06:27Z",
    "text": "GPT-6.1 Terra: delivering fast and capable computer use at a lower price. GPT-6.1 Terra understands what’s on screen, takes action across apps, writes naturally, and is a more capable model for your whole workday with the efficiency to take on more of it.",
    "author_name": "OpenAI",
-   "likes": 25965,
+   "likes": 26069,
    "story": "OpenAI releases GPT-6.1 Terra, touting “fast and capable computer use at scale” and clearer, more natural writing, priced at $1/1M input and $5/1M output tokens"
-  },
-  {
-   "title": "S-1: Anthropic spent ~$2.50 on compute and infrastructure for every $1 of revenue in Q1 2025, falli…",
-   "url": "https://www.ft.com/content/a6c43402-719e-4295-ae5f-541edb0aeb29",
-   "source": "Financial Times",
-   "published_at": "2026-10-27T09:55:45Z",
-   "text": "S-1: Anthropic spent ~$2.50 on compute and infrastructure for every $1 of revenue in Q1 2025, falling to under 50 cents in Q2 2026, as it seeks profitability. Prospectus details AI lab's ‘mission’, $800bn data centre commitments and extraordinary governance structure",
-   "via": "Techmeme"
-  },
-  {
-   "title": "AI promised less work. I've never worked more",
-   "url": "https://oioannou.com/blog/ai-promised-less-work/",
-   "source": "Hacker News",
-   "published_at": "2026-10-27T11:08:14Z",
-   "text": "325 points and 294 comments on Hacker News.",
-   "points": 325,
-   "discussion": "https://news.ycombinator.com/item?id=50257325"
-  },
-  {
-   "title": "While evaluating Qwen3.8-Flash-Next in a controlled sandbox environment, Cohere's research team obs…",
-   "url": "https://x.com/cohere/status/2114752002370544004",
-   "source": "𝕏 @cohere",
-   "published_at": "2026-10-26T16:12:22Z",
-   "text": "While evaluating Qwen3.8-Flash-Next in a controlled sandbox environment, Cohere's research team observed something unexpected. Asked to generate a defensive cybersecurity detection rule, the model instead inventoried aspects of the machine it was running on and attempted to…",
-   "author_name": "Cohere",
-   "likes": 10422,
-   "story": "Cohere says during an evaluation Qwen3.8-Flash-Next inventoried its host machine and tried to upload a probe file to an Alibaba Cloud storage bucket in Beijing"
-  },
-  {
-   "title": "Anthropic files S-1 with the SEC for proposed initial public offering",
-   "url": "https://www.anthropic.com/news/s1-sec",
-   "source": "Anthropic",
-   "published_at": "2026-10-26T15:04:18Z",
-   "text": "Anthropic is an AI safety and research company that's working to build reliable, interpretable, and steerable AI systems."
   },
   {
    "title": "Sources: Broadcom CEO Hock Tan held 11th-hour talks and agreed to higher rates and loan guarantees…",
@@ -83,13 +49,47 @@
    "via": "Techmeme"
   },
   {
+   "title": "AI promised less work. I've never worked more",
+   "url": "https://oioannou.com/blog/ai-promised-less-work/",
+   "source": "Hacker News",
+   "published_at": "2026-10-27T11:08:14Z",
+   "text": "379 points and 338 comments on Hacker News.",
+   "points": 379,
+   "discussion": "https://news.ycombinator.com/item?id=50257325"
+  },
+  {
+   "title": "While evaluating Qwen3.8-Flash-Next in a controlled sandbox environment, Cohere's research team obs…",
+   "url": "https://x.com/cohere/status/2114752002370544004",
+   "source": "𝕏 @cohere",
+   "published_at": "2026-10-26T16:12:22Z",
+   "text": "While evaluating Qwen3.8-Flash-Next in a controlled sandbox environment, Cohere's research team observed something unexpected. Asked to generate a defensive cybersecurity detection rule, the model instead inventoried aspects of the machine it was running on and attempted to…",
+   "author_name": "Cohere",
+   "likes": 10462,
+   "story": "Cohere says during an evaluation Qwen3.8-Flash-Next inventoried its host machine and tried to upload a probe file to an Alibaba Cloud storage bucket in Beijing"
+  },
+  {
+   "title": "Anthropic files S-1 with the SEC for proposed initial public offering",
+   "url": "https://www.anthropic.com/news/s1-sec",
+   "source": "Anthropic",
+   "published_at": "2026-10-26T15:04:18Z",
+   "text": "Anthropic is an AI safety and research company that's working to build reliable, interpretable, and steerable AI systems."
+  },
+  {
+   "title": "S-1: Anthropic spent ~$2.50 on compute and infrastructure for every $1 of revenue in Q1 2025, falli…",
+   "url": "https://www.ft.com/content/a6c43402-719e-4295-ae5f-541edb0aeb29",
+   "source": "Financial Times",
+   "published_at": "2026-10-27T09:55:45Z",
+   "text": "S-1: Anthropic spent ~$2.50 on compute and infrastructure for every $1 of revenue in Q1 2025, falling to under 50 cents in Q2 2026, as it seeks profitability. Prospectus details AI lab's ‘mission’, $800bn data centre commitments and extraordinary governance structure",
+   "via": "Techmeme"
+  },
+  {
    "title": "Microsoft India sends VEO (voluntary exit offer) to employees in level 70 and below in most of the…",
    "url": "https://x.com/HarveenChadha/status/2114768166756974597",
    "source": "𝕏 @HarveenChadha",
    "published_at": "2026-10-26T17:16:36Z",
    "text": "Microsoft India sends VEO (voluntary exit offer) to employees in level 70 and below in most of the orgs One month of base pay per year in microsoft + 3 months pay Decision to be made in a month.",
    "author_name": "Harveen Singh Chadha",
-   "likes": 5872,
+   "likes": 5894,
    "story": "Microsoft offers buyouts to ~60K workers, including at a VP level and below across the US, Canada, India, and the UK; its headcount at the end of June was 223K"
   },
   {
@@ -97,8 +97,8 @@
    "url": "https://open3dlab.com/news/roblox-downloaded-145-gb-of-models-from-our-sites/",
    "source": "Hacker News",
    "published_at": "2026-10-27T10:27:50Z",
-   "text": "355 points and 214 comments on Hacker News.",
-   "points": 355,
+   "text": "370 points and 220 comments on Hacker News.",
+   "points": 370,
    "discussion": "https://news.ycombinator.com/item?id=50256985"
   },
   {
@@ -110,13 +110,13 @@
    "via": "Techmeme"
   },
   {
-   "title": "Wikipedia's Cleanup of AI-Generated Content",
-   "url": "https://spectrum.ieee.org/wikipedia-wikiproject-ai-writing-cleanup",
+   "title": "Giving chat feedback gives Anthropic your data",
+   "url": "https://privacy.claude.com/en/articles/7996868-is-my-data-used-for-model-training",
    "source": "Hacker News",
-   "published_at": "2026-10-27T11:08:15Z",
-   "text": "160 points and 71 comments on Hacker News.",
-   "points": 160,
-   "discussion": "https://news.ycombinator.com/item?id=50257326"
+   "published_at": "2026-10-27T13:56:15Z",
+   "text": "73 points and 37 comments on Hacker News.",
+   "points": 73,
+   "discussion": "https://news.ycombinator.com/item?id=50259406"
   },
   {
    "title": "Apple adds a beta AI assistant built on Apple and OpenAI models to Keynote, Pages, Numbers, and Log…",
@@ -127,13 +127,13 @@
    "via": "Techmeme"
   },
   {
-   "title": "The Mythical Man-Month in the Age of AI",
-   "url": "https://j11g.com/the-mythical-man-month-in-the-age-of-ai",
+   "title": "Wikipedia's Cleanup of AI-Generated Content",
+   "url": "https://spectrum.ieee.org/wikipedia-wikiproject-ai-writing-cleanup",
    "source": "Hacker News",
-   "published_at": "2026-10-27T06:25:37Z",
-   "text": "300 points and 193 comments on Hacker News.",
-   "points": 300,
-   "discussion": "https://news.ycombinator.com/item?id=50255298"
+   "published_at": "2026-10-27T11:08:15Z",
+   "text": "185 points and 82 comments on Hacker News.",
+   "points": 185,
+   "discussion": "https://news.ycombinator.com/item?id=50257326"
   }
  ],
  "sources": "curated, Techmeme, X (found via Techmeme, Reddit, the Internet Archive), Claude Code releases, Anthropic, Hacker News, Simon Willison"
