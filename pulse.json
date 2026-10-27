@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-27T16:52:51Z",
+ "generated_at": "2026-10-27T17:25:10Z",
  "items": [
   {
    "title": "Apple unveils a 14\" MacBook Pro with an M6, which has a 12-core CPU and a 12-core GPU, 16GB or 32GB…",
@@ -17,7 +17,7 @@
    "published_at": "2026-10-27T16:10:55Z",
    "text": "This is Genie 4, our most realistic and interactive world model yet. 🌐 Explore dynamic environments in real time to see how the scene responds, sounds, and how the people in it move, react, and speak.…",
    "author_name": "Google DeepMind",
-   "likes": 1789,
+   "likes": 3674,
    "story": "Google launches Genie 4, a world model powered by Gemini 3.8 Flash designed to generate interactive AI simulations, initially as a preview to trusted testers"
   },
   {
@@ -28,48 +28,14 @@
    "text": "Added --hold-idle-file and --max-hold-min to self-hosted-runner, to keep an idle session while your host reports processes it left running · Added a tip for the Explanatory output style, shown when you ask Claude for explanations · Fixed long freezes at startup and after reading or editing files when a CLAUDE.md file holds a very long list item · Fixed interrupting Claude not taking effect until a timeout while an MCP server had not answered a resource read or a skill was still downloading"
   },
   {
-   "title": "GPT-6.1 Terra: delivering fast and capable computer use at a lower price. GPT-6.1 Terra understands…",
-   "url": "https://x.com/OpenAI/status/2114780711664398349",
-   "source": "𝕏 @OpenAI",
-   "published_at": "2026-10-26T18:06:27Z",
-   "text": "GPT-6.1 Terra: delivering fast and capable computer use at a lower price. GPT-6.1 Terra understands what’s on screen, takes action across apps, writes naturally, and is a more capable model for your whole workday with the efficiency to take on more of it.",
-   "author_name": "OpenAI",
-   "likes": 26350,
-   "story": "OpenAI releases GPT-6.1 Terra, touting “fast and capable computer use at scale” and clearer, more natural writing, priced at $1/1M input and $5/1M output tokens"
-  },
-  {
-   "title": "OpenAI announces three breakthroughs in computer science, math, and physics, including that the Exp…",
-   "url": "https://openai.com/index/building-scientific-understanding-with-academic-communities/",
-   "source": "OpenAI",
-   "published_at": "2026-10-26T21:55:47Z",
-   "text": "OpenAI announces three breakthroughs in computer science, math, and physics, including that the Exponential Time Hypothesis, a longstanding conjecture, is false. We are announcing three new discoveries in mathematics, computer science, and physics about harmonic analysis, complexity theory, and quantum field theory.",
-   "via": "Techmeme"
-  },
-  {
-   "title": "Roblox downloaded 145GB models from us (including adult content) without asking",
-   "url": "https://open3dlab.com/news/roblox-downloaded-145-gb-of-models-from-our-sites/",
-   "source": "Hacker News",
-   "published_at": "2026-10-27T10:27:50Z",
-   "text": "408 points and 235 comments on Hacker News.",
-   "points": 408,
-   "discussion": "https://news.ycombinator.com/item?id=50256985"
-  },
-  {
-   "title": "Microsoft India sends VEO (voluntary exit offer) to employees in level 70 and below in most of the…",
-   "url": "https://x.com/HarveenChadha/status/2114768166756974597",
-   "source": "𝕏 @HarveenChadha",
-   "published_at": "2026-10-26T17:16:36Z",
-   "text": "Microsoft India sends VEO (voluntary exit offer) to employees in level 70 and below in most of the orgs One month of base pay per year in microsoft + 3 months pay Decision to be made in a month.",
-   "author_name": "Harveen Singh Chadha",
-   "likes": 5946,
-   "story": "Microsoft offers buyouts to ~60K workers, including at a VP level and below across the US, Canada, India, and the UK; its headcount at the end of June was 223K"
-  },
-  {
-   "title": "Anthropic files S-1 with the SEC for proposed initial public offering",
-   "url": "https://www.anthropic.com/news/s1-sec",
-   "source": "Anthropic",
-   "published_at": "2026-10-26T15:04:18Z",
-   "text": "Anthropic is an AI safety and research company that's working to build reliable, interpretable, and steerable AI systems."
+   "title": "An internal model at OpenAI has produced a claimed refutation of ETH! Russell Impagliazzo, Mohan Pa…",
+   "url": "https://x.com/rrwilliams/status/2114833319431209352",
+   "source": "𝕏 @rrwilliams",
+   "published_at": "2026-10-26T21:35:29Z",
+   "text": "An internal model at OpenAI has produced a claimed refutation of ETH! Russell Impagliazzo, Mohan Paturi, and I have been asked to help organize an open and independent examination of this claim. 1/4",
+   "author_name": "Ryan Williams @rrwilliams.bsky.social",
+   "likes": 6241,
+   "story": "OpenAI announces three breakthroughs in computer science, math, and physics, including that the Exponential Time Hypothesis, a longstanding conjecture, is false"
   },
   {
    "title": "Sources: Broadcom CEO Hock Tan held 11th-hour talks and agreed to higher rates and loan guarantees…",
@@ -80,13 +46,30 @@
    "via": "Techmeme"
   },
   {
-   "title": "Is my data used for model training?",
-   "url": "https://privacy.claude.com/en/articles/7996868-is-my-data-used-for-model-training",
+   "title": "Anthropic trained Claude on illegally obtained Stanford professors' books",
+   "url": "https://stanforddaily.com/2026/10/27/professors-books-pirated-to-train-claude/",
    "source": "Hacker News",
-   "published_at": "2026-10-27T13:56:15Z",
-   "text": "155 points and 73 comments on Hacker News.",
-   "points": 155,
-   "discussion": "https://news.ycombinator.com/item?id=50259406"
+   "published_at": "2026-10-27T15:28:26Z",
+   "text": "107 points and 42 comments on Hacker News.",
+   "points": 107,
+   "discussion": "https://news.ycombinator.com/item?id=50260814"
+  },
+  {
+   "title": "Microsoft India sends VEO (voluntary exit offer) to employees in level 70 and below in most of the…",
+   "url": "https://x.com/HarveenChadha/status/2114768166756974597",
+   "source": "𝕏 @HarveenChadha",
+   "published_at": "2026-10-26T17:16:36Z",
+   "text": "Microsoft India sends VEO (voluntary exit offer) to employees in level 70 and below in most of the orgs One month of base pay per year in microsoft + 3 months pay Decision to be made in a month.",
+   "author_name": "Harveen Singh Chadha",
+   "likes": 5957,
+   "story": "Microsoft offers buyouts to ~60K workers, including at a VP level and below across the US, Canada, India, and the UK; its headcount at the end of June was 223K"
+  },
+  {
+   "title": "Anthropic files S-1 with the SEC for proposed initial public offering",
+   "url": "https://www.anthropic.com/news/s1-sec",
+   "source": "Anthropic",
+   "published_at": "2026-10-26T15:04:18Z",
+   "text": "Anthropic is an AI safety and research company that's working to build reliable, interpretable, and steerable AI systems."
   },
   {
    "title": "Nvidia and Meta expand their Muse partnership, including Meta deploying more Vera Rubin and Vera CP…",
@@ -97,13 +80,13 @@
    "via": "Techmeme"
   },
   {
-   "title": "Wikipedia's Cleanup of AI-Generated Content",
-   "url": "https://spectrum.ieee.org/wikipedia-wikiproject-ai-writing-cleanup",
+   "title": "Is my data used for model training?",
+   "url": "https://privacy.claude.com/en/articles/7996868-is-my-data-used-for-model-training",
    "source": "Hacker News",
-   "published_at": "2026-10-27T11:08:15Z",
-   "text": "269 points and 118 comments on Hacker News.",
-   "points": 269,
-   "discussion": "https://news.ycombinator.com/item?id=50257326"
+   "published_at": "2026-10-27T13:56:15Z",
+   "text": "168 points and 75 comments on Hacker News.",
+   "points": 168,
+   "discussion": "https://news.ycombinator.com/item?id=50259406"
   },
   {
    "title": "Anthropic's S-1 shows an 85% gross margin in H1 from running its models, a reality check for skepti…",
@@ -114,13 +97,13 @@
    "via": "Techmeme"
   },
   {
-   "title": "Anthropic trained Claude on illegally obtained Stanford professors' books",
-   "url": "https://stanforddaily.com/2026/10/27/professors-books-pirated-to-train-claude/",
+   "title": "Wikipedia's Cleanup of AI-Generated Content",
+   "url": "https://spectrum.ieee.org/wikipedia-wikiproject-ai-writing-cleanup",
    "source": "Hacker News",
-   "published_at": "2026-10-27T15:28:26Z",
-   "text": "61 points and 29 comments on Hacker News.",
-   "points": 61,
-   "discussion": "https://news.ycombinator.com/item?id=50260814"
+   "published_at": "2026-10-27T11:08:15Z",
+   "text": "287 points and 134 comments on Hacker News.",
+   "points": 287,
+   "discussion": "https://news.ycombinator.com/item?id=50257326"
   },
   {
    "title": "Apple adds a beta AI assistant built on Apple's and OpenAI's models to Keynote, Pages, Numbers, and…",
@@ -128,6 +111,23 @@
    "source": "Emma Roth / The Verge",
    "published_at": "2026-10-27T14:11:07Z",
    "text": "Apple adds a beta AI assistant built on Apple's and OpenAI's models to Keynote, Pages, Numbers, and Logic Pro, plus MCP support to Keynote, Pages, and Numbers. The new AI assistant can draft and restructure content in Pages, while organizing data in Numbers.",
+   "via": "Techmeme"
+  },
+  {
+   "title": "Here be monsters: What do you still need to know when agents do the work?",
+   "url": "https://blog.adrq.dev/here-be-monsters-what-do-you-still-need-to-know-when-agents-do-the-work",
+   "source": "Hacker News",
+   "published_at": "2026-10-27T13:23:22Z",
+   "text": "94 points and 22 comments on Hacker News.",
+   "points": 94,
+   "discussion": "https://news.ycombinator.com/item?id=50258868"
+  },
+  {
+   "title": "Anthropic's S-1 excludes Labs co-lead Ben Mann from its “Continuing Founders” and Founder LLC; Anth…",
+   "url": "https://sfstandard.com/2026/10/26/anthropic-cofounder-mystery-ben-mann/",
+   "source": "Zara Stone / The San Franci…",
+   "published_at": "2026-10-27T10:36:03Z",
+   "text": "Anthropic's S-1 excludes Labs co-lead Ben Mann from its “Continuing Founders” and Founder LLC; Anthropic says “it's still fair to refer to him as a co-founder”. On Oct. 14, Anthropic announced the opening of its first Singapore office and said “cofounder Ben Mann” …",
    "via": "Techmeme"
   }
  ],
