@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-26T23:35:47Z",
+ "generated_at": "2026-10-27T00:08:06Z",
  "items": [
   {
    "title": "Anthropic's co-founders say they “believe that AI is one of the most consequential technologies in…",
@@ -17,7 +17,7 @@
    "published_at": "2026-10-26T18:06:27Z",
    "text": "GPT-6.1 Terra: delivering fast and capable computer use at a lower price. GPT-6.1 Terra understands what’s on screen, takes action across apps, writes naturally, and is a more capable model for your whole workday with the efficiency to take on more of it.",
    "author_name": "OpenAI",
-   "likes": 19305,
+   "likes": 19872,
    "story": "OpenAI releases GPT-6.1 Terra, touting “fast and capable computer use at scale” and clearer, more natural writing, priced at $1/1M input and $5/1M output tokens"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-10-26T22:20:02Z",
    "text": "I understand that this is their defiant gesture in the wake of Ant IPO, but it’s hard not to think: «humiliating generations of human CS, physics and math geniuses in days is EASIER than composing a single Fable.» This AGI business is pretty hard huh.",
    "author_name": "Teortaxes▶️ (DeepSeek 推特🐋铁粉 2023 – ∞)",
-   "likes": 83,
+   "likes": 97,
    "story": "OpenAI announces three breakthroughs in computer science, math, and physics, including that the Exponential Time Hypothesis, a longstanding conjecture, is false"
   },
   {
@@ -44,7 +44,7 @@
    "published_at": "2026-10-26T13:05:46Z",
    "text": "Anthropic has filed an S-1 registration statement with the SEC related to its proposed IPO. Read more: Legal disclaimer: A registration statement relating to these securities has been filed with the SEC but has not yet become effective. These securities…",
    "author_name": "Anthropic",
-   "likes": 15262,
+   "likes": 15387,
    "story": "Anthropic files for an IPO on the Nasdaq under the symbol ANT; the number of Class A shares to be offered and the price range is yet to be determined",
    "links": [
     "https://www.anthropic.com/news/s1-sec"
@@ -63,8 +63,8 @@
    "url": "https://openai.com/index/introducing-gpt-6-1-terra/",
    "source": "Hacker News",
    "published_at": "2026-10-26T18:01:17Z",
-   "text": "462 points and 289 comments on Hacker News.",
-   "points": 462,
+   "text": "472 points and 299 comments on Hacker News.",
+   "points": 472,
    "discussion": "https://news.ycombinator.com/item?id=50248124"
   },
   {
@@ -74,7 +74,7 @@
    "published_at": "2026-10-26T16:12:22Z",
    "text": "While evaluating Qwen3.8-Flash-Next in a controlled sandbox environment, Cohere's research team observed something unexpected. Asked to generate a defensive cybersecurity detection rule, the model instead inventoried aspects of the machine it was running on and attempted to…",
    "author_name": "Cohere",
-   "likes": 8946,
+   "likes": 8986,
    "story": "Cohere says during an evaluation Qwen3.8-Flash-Next inventoried its host machine and tried to upload a probe file to an Alibaba Cloud storage bucket in Beijing"
   },
   {
@@ -92,7 +92,7 @@
    "published_at": "2026-10-26T13:39:40Z",
    "text": "If you were thinking concentrating AI behind closed doors is safe, it is time to update your priors!",
    "author_name": "clem 🤗",
-   "likes": 459,
+   "likes": 463,
    "story": "AI cybersecurity startup Cathedral says it breached Anthropic's data and messaging systems, under a program inviting outside experts to test Anthropic's systems"
   },
   {
@@ -100,8 +100,8 @@
    "url": "https://magazine.sebastianraschka.com/p/building-reasoning-models",
    "source": "Hacker News",
    "published_at": "2026-10-26T15:11:59Z",
-   "text": "514 points and 76 comments on Hacker News.",
-   "points": 514,
+   "text": "523 points and 79 comments on Hacker News.",
+   "points": 523,
    "discussion": "https://news.ycombinator.com/item?id=50245138"
   },
   {
@@ -111,7 +111,7 @@
    "published_at": "2026-10-26T13:07:51Z",
    "text": "The lower and high storage models have different A20 Chips. The 512GB configuration has 6 CPU cores versus 5. Both have 7 core GPUs.",
    "author_name": "Mark Gurman",
-   "likes": 499,
+   "likes": 502,
    "story": "Apple unveils a redesigned iPad mini with an 8.5-inch OLED display, an A20 Pro, a nano-texture display option, and IP67 water resistance, for $699+ from Nov. 6"
   },
   {
@@ -127,8 +127,8 @@
    "url": "https://github.com/FrigadeHQ/hob",
    "source": "Hacker News",
    "published_at": "2026-10-26T16:12:29Z",
-   "text": "85 points and 21 comments on Hacker News.",
-   "points": 85,
+   "text": "96 points and 23 comments on Hacker News.",
+   "points": 96,
    "discussion": "https://news.ycombinator.com/item?id=50246238"
   },
   {
@@ -136,7 +136,7 @@
    "url": "https://www.wsj.com/tech/anthropic-unveils-paperwork-for-blockbuster-ipo-291a684b?st=sUdaw6&reflink=desktopwebshare_permalink",
    "source": "Wall Street Journal",
    "published_at": "2026-10-26T14:06:57Z",
-   "text": "Sources: Anthropic is aiming to go public the week of November 16 and could raise ~$100B at a $1.5T to $2T valuation, after initially preparing for October. Anthropic didn't reveal the valuation it is targeting or the number of shares it plans to sell — Anthropic filed its IPO paperwork …",
+   "text": "Sources: Anthropic is aiming to go public the week of November 16 and could raise ~$100B at a $1.5T to $2T valuation, after initially preparing for October",
    "via": "Techmeme"
   }
  ],
