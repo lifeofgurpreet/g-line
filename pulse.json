@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-27T17:56:52Z",
+ "generated_at": "2026-10-27T18:29:05Z",
  "items": [
   {
    "title": "Apple unveils a 14\" MacBook Pro with an M6, which has a 12-core CPU and a 12-core GPU, 16GB or 32GB…",
@@ -17,7 +17,7 @@
    "published_at": "2026-10-27T16:10:55Z",
    "text": "This is Genie 4, our most realistic and interactive world model yet. 🌐 Explore dynamic environments in real time to see how the scene responds, sounds, and how the people in it move, react, and speak.…",
    "author_name": "Google DeepMind",
-   "likes": 5274,
+   "likes": 6841,
    "story": "Google launches Genie 4, a world model powered by Gemini 3.8 Flash designed to generate interactive AI simulations, initially as a preview to trusted testers"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-10-27T16:52:26Z",
    "text": "Your OCR says it’s done—but did it get everything right? 🤔 In high-stakes workflows, even a small error can be costly. 🚀 Meet the MiniCPM-OCR suite: an open-source solution to parse fast and guard the results. Two new models: 🔹 MiniCPM-OCR 1.0 — SOTA OCR performance and ht…",
    "author_name": "OpenBMB",
-   "likes": 63,
+   "likes": 106,
    "story": "OpenBMB released a 1.3B OCR model and a separate 2B model to check its work"
   },
   {
@@ -44,7 +44,7 @@
    "published_at": "2026-10-26T21:35:29Z",
    "text": "An internal model at OpenAI has produced a claimed refutation of ETH! Russell Impagliazzo, Mohan Paturi, and I have been asked to help organize an open and independent examination of this claim. 1/4",
    "author_name": "Ryan Williams @rrwilliams.bsky.social",
-   "likes": 6295,
+   "likes": 6347,
    "story": "OpenAI announces three breakthroughs in computer science, math, and physics, including that the Exponential Time Hypothesis, a longstanding conjecture, is false"
   },
   {
@@ -60,8 +60,8 @@
    "url": "https://gizmodo.com/police-are-using-ai-to-pull-over-drivers-for-suspicious-behavior-2000831220",
    "source": "Hacker News",
    "published_at": "2026-10-27T16:40:15Z",
-   "text": "100 points and 37 comments on Hacker News.",
-   "points": 100,
+   "text": "159 points and 79 comments on Hacker News.",
+   "points": 159,
    "discussion": "https://news.ycombinator.com/item?id=50261819"
   },
   {
@@ -71,7 +71,7 @@
    "published_at": "2026-10-26T17:16:36Z",
    "text": "Microsoft India sends VEO (voluntary exit offer) to employees in level 70 and below in most of the orgs One month of base pay per year in microsoft + 3 months pay Decision to be made in a month.",
    "author_name": "Harveen Singh Chadha",
-   "likes": 5965,
+   "likes": 5969,
    "story": "Microsoft offers buyouts to ~60K workers, including at a VP level and below across the US, Canada, India, and the UK; its headcount at the end of June was 223K"
   },
   {
@@ -94,8 +94,8 @@
    "url": "https://stanforddaily.com/2026/10/27/professors-books-pirated-to-train-claude/",
    "source": "Hacker News",
    "published_at": "2026-10-27T15:28:26Z",
-   "text": "131 points and 63 comments on Hacker News.",
-   "points": 131,
+   "text": "165 points and 81 comments on Hacker News.",
+   "points": 165,
    "discussion": "https://news.ycombinator.com/item?id=50260814"
   },
   {
@@ -111,8 +111,8 @@
    "url": "https://privacy.claude.com/en/articles/7996868-is-my-data-used-for-model-training",
    "source": "Hacker News",
    "published_at": "2026-10-27T13:56:15Z",
-   "text": "177 points and 75 comments on Hacker News.",
-   "points": 177,
+   "text": "181 points and 76 comments on Hacker News.",
+   "points": 181,
    "discussion": "https://news.ycombinator.com/item?id=50259406"
   },
   {
@@ -128,8 +128,8 @@
    "url": "https://spectrum.ieee.org/wikipedia-wikiproject-ai-writing-cleanup",
    "source": "Hacker News",
    "published_at": "2026-10-27T11:08:15Z",
-   "text": "309 points and 147 comments on Hacker News.",
-   "points": 309,
+   "text": "329 points and 155 comments on Hacker News.",
+   "points": 329,
    "discussion": "https://news.ycombinator.com/item?id=50257326"
   }
  ],
