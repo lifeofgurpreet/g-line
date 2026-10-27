@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-27T14:10:03Z",
+ "generated_at": "2026-10-27T14:43:15Z",
  "items": [
   {
    "title": "Apple unveils the 14-inch MacBook Pro with M6, with a 12-core CPU and a 12-core GPU, up to 32GB of…",
@@ -11,14 +11,17 @@
    "via": "Techmeme"
   },
   {
-   "title": "GPT-6.1 Terra: delivering fast and capable computer use at a lower price. GPT-6.1 Terra understands…",
-   "url": "https://x.com/OpenAI/status/2114780711664398349",
-   "source": "𝕏 @OpenAI",
-   "published_at": "2026-10-26T18:06:27Z",
-   "text": "GPT-6.1 Terra: delivering fast and capable computer use at a lower price. GPT-6.1 Terra understands what’s on screen, takes action across apps, writes naturally, and is a more capable model for your whole workday with the efficiency to take on more of it.",
-   "author_name": "OpenAI",
-   "likes": 25875,
-   "story": "OpenAI releases GPT-6.1 Terra, touting “fast and capable computer use at scale” and clearer, more natural writing, priced at $1/1M input and $5/1M output tokens"
+   "title": "Announcing three major scientific discoveries, one each in mathematics (harmonic analysis), compute…",
+   "url": "https://x.com/gdb/status/2114837059462627533",
+   "source": "𝕏 @gdb",
+   "published_at": "2026-10-26T21:50:21Z",
+   "text": "Announcing three major scientific discoveries, one each in mathematics (harmonic analysis), computer science (complexity theory), and physics (quantum field theory). AI starting to help us improve our understanding of the universe!",
+   "author_name": "Greg Brockman",
+   "likes": 13479,
+   "story": "OpenAI announces three breakthroughs in computer science, math, and physics, including that the Exponential Time Hypothesis, a longstanding conjecture, is false",
+   "links": [
+    "https://openai.com/index/building-scientific-understanding-with-academic-communities/"
+   ]
   },
   {
    "title": "Claude Code 2.1.311 released",
@@ -28,17 +31,14 @@
    "text": "Added --hold-idle-file and --max-hold-min to self-hosted-runner, to keep an idle session while your host reports processes it left running · Added a tip for the Explanatory output style, shown when you ask Claude for explanations · Fixed long freezes at startup and after reading or editing files when a CLAUDE.md file holds a very long list item · Fixed interrupting Claude not taking effect until a timeout while an MCP server had not answered a resource read or a skill was still downloading"
   },
   {
-   "title": "Announcing three major scientific discoveries, one each in mathematics (harmonic analysis), compute…",
-   "url": "https://x.com/gdb/status/2114837059462627533",
-   "source": "𝕏 @gdb",
-   "published_at": "2026-10-26T21:50:21Z",
-   "text": "Announcing three major scientific discoveries, one each in mathematics (harmonic analysis), computer science (complexity theory), and physics (quantum field theory). AI starting to help us improve our understanding of the universe!",
-   "author_name": "Greg Brockman",
-   "likes": 13325,
-   "story": "OpenAI announces three breakthroughs in computer science, math, and physics, including that the Exponential Time Hypothesis, a longstanding conjecture, is false",
-   "links": [
-    "https://openai.com/index/building-scientific-understanding-with-academic-communities/"
-   ]
+   "title": "GPT-6.1 Terra: delivering fast and capable computer use at a lower price. GPT-6.1 Terra understands…",
+   "url": "https://x.com/OpenAI/status/2114780711664398349",
+   "source": "𝕏 @OpenAI",
+   "published_at": "2026-10-26T18:06:27Z",
+   "text": "GPT-6.1 Terra: delivering fast and capable computer use at a lower price. GPT-6.1 Terra understands what’s on screen, takes action across apps, writes naturally, and is a more capable model for your whole workday with the efficiency to take on more of it.",
+   "author_name": "OpenAI",
+   "likes": 25965,
+   "story": "OpenAI releases GPT-6.1 Terra, touting “fast and capable computer use at scale” and clearer, more natural writing, priced at $1/1M input and $5/1M output tokens"
   },
   {
    "title": "S-1: Anthropic spent ~$2.50 on compute and infrastructure for every $1 of revenue in Q1 2025, falli…",
@@ -49,13 +49,13 @@
    "via": "Techmeme"
   },
   {
-   "title": "Roblox downloaded 145GB models from us (including adult content) without asking",
-   "url": "https://open3dlab.com/news/roblox-downloaded-145-gb-of-models-from-our-sites/",
+   "title": "AI promised less work. I've never worked more",
+   "url": "https://oioannou.com/blog/ai-promised-less-work/",
    "source": "Hacker News",
-   "published_at": "2026-10-27T10:27:50Z",
-   "text": "315 points and 195 comments on Hacker News.",
-   "points": 315,
-   "discussion": "https://news.ycombinator.com/item?id=50256985"
+   "published_at": "2026-10-27T11:08:14Z",
+   "text": "325 points and 294 comments on Hacker News.",
+   "points": 325,
+   "discussion": "https://news.ycombinator.com/item?id=50257325"
   },
   {
    "title": "While evaluating Qwen3.8-Flash-Next in a controlled sandbox environment, Cohere's research team obs…",
@@ -64,7 +64,7 @@
    "published_at": "2026-10-26T16:12:22Z",
    "text": "While evaluating Qwen3.8-Flash-Next in a controlled sandbox environment, Cohere's research team observed something unexpected. Asked to generate a defensive cybersecurity detection rule, the model instead inventoried aspects of the machine it was running on and attempted to…",
    "author_name": "Cohere",
-   "likes": 10370,
+   "likes": 10422,
    "story": "Cohere says during an evaluation Qwen3.8-Flash-Next inventoried its host machine and tried to upload a probe file to an Alibaba Cloud storage bucket in Beijing"
   },
   {
@@ -89,17 +89,17 @@
    "published_at": "2026-10-26T17:16:36Z",
    "text": "Microsoft India sends VEO (voluntary exit offer) to employees in level 70 and below in most of the orgs One month of base pay per year in microsoft + 3 months pay Decision to be made in a month.",
    "author_name": "Harveen Singh Chadha",
-   "likes": 5853,
+   "likes": 5872,
    "story": "Microsoft offers buyouts to ~60K workers, including at a VP level and below across the US, Canada, India, and the UK; its headcount at the end of June was 223K"
   },
   {
-   "title": "AI promised less work. I've never worked more",
-   "url": "https://oioannou.com/blog/ai-promised-less-work/",
+   "title": "Roblox downloaded 145GB models from us (including adult content) without asking",
+   "url": "https://open3dlab.com/news/roblox-downloaded-145-gb-of-models-from-our-sites/",
    "source": "Hacker News",
-   "published_at": "2026-10-27T11:08:14Z",
-   "text": "244 points and 225 comments on Hacker News.",
-   "points": 244,
-   "discussion": "https://news.ycombinator.com/item?id=50257325"
+   "published_at": "2026-10-27T10:27:50Z",
+   "text": "355 points and 214 comments on Hacker News.",
+   "points": 355,
+   "discussion": "https://news.ycombinator.com/item?id=50256985"
   },
   {
    "title": "Nvidia and Meta expand their Muse partnership, including Meta deploying more Vera Rubin and Vera CP…",
@@ -114,16 +114,16 @@
    "url": "https://spectrum.ieee.org/wikipedia-wikiproject-ai-writing-cleanup",
    "source": "Hacker News",
    "published_at": "2026-10-27T11:08:15Z",
-   "text": "129 points and 59 comments on Hacker News.",
-   "points": 129,
+   "text": "160 points and 71 comments on Hacker News.",
+   "points": 160,
    "discussion": "https://news.ycombinator.com/item?id=50257326"
   },
   {
-   "title": "Anthropic's S-1 excludes Labs co-lead Ben Mann from its “Continuing Founders” and Founder LLC; Anth…",
-   "url": "https://sfstandard.com/2026/10/26/anthropic-cofounder-mystery-ben-mann/",
-   "source": "Zara Stone / The San Franci…",
-   "published_at": "2026-10-27T10:36:03Z",
-   "text": "Anthropic's S-1 excludes Labs co-lead Ben Mann from its “Continuing Founders” and Founder LLC; Anthropic says “it's still fair to refer to him as a co-founder”. On Oct. 14, Anthropic announced the opening of its first Singapore office and said “cofounder Ben Mann” …",
+   "title": "Apple adds a beta AI assistant built on Apple and OpenAI models to Keynote, Pages, Numbers, and Log…",
+   "url": "https://www.theverge.com/tech/1019373/apple-pages-keynote-numbers-ai-chatbot-update",
+   "source": "Emma Roth / The Verge",
+   "published_at": "2026-10-27T14:11:07Z",
+   "text": "Apple adds a beta AI assistant built on Apple and OpenAI models to Keynote, Pages, Numbers, and Logic Pro, plus MCP support to Keynote, Pages, and Numbers. The new AI assistant can draft and restructure content in Pages, while organizing data in Numbers.",
    "via": "Techmeme"
   },
   {
@@ -131,8 +131,8 @@
    "url": "https://j11g.com/the-mythical-man-month-in-the-age-of-ai",
    "source": "Hacker News",
    "published_at": "2026-10-27T06:25:37Z",
-   "text": "283 points and 187 comments on Hacker News.",
-   "points": 283,
+   "text": "300 points and 193 comments on Hacker News.",
+   "points": 300,
    "discussion": "https://news.ycombinator.com/item?id=50255298"
   }
  ],
