@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-27T06:36:06Z",
+ "generated_at": "2026-10-27T07:08:20Z",
  "items": [
   {
    "title": "Anthropic's co-founders say they “believe that AI is one of the most consequential technologies in…",
@@ -17,7 +17,7 @@
    "published_at": "2026-10-26T18:06:27Z",
    "text": "GPT-6.1 Terra: delivering fast and capable computer use at a lower price. GPT-6.1 Terra understands what’s on screen, takes action across apps, writes naturally, and is a more capable model for your whole workday with the efficiency to take on more of it.",
    "author_name": "OpenAI",
-   "likes": 23924,
+   "likes": 24114,
    "story": "OpenAI releases GPT-6.1 Terra, touting “fast and capable computer use at scale” and clearer, more natural writing, priced at $1/1M input and $5/1M output tokens"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-10-27T04:20:24Z",
    "text": "This is extremely confusing, but an internal Claude research model also independently refuted the Exponential Time Hypothesis on October 16, with 14M output tokens and no human input. 'Anthropic researchers worked with Claude to improve the presentation, resulting in this paper.'",
    "author_name": "Andrew Curran",
-   "likes": 469,
+   "likes": 518,
    "story": "OpenAI announces three breakthroughs in computer science, math, and physics, including that the Exponential Time Hypothesis, a longstanding conjecture, is false"
   },
   {
@@ -44,7 +44,7 @@
    "published_at": "2026-10-26T13:05:46Z",
    "text": "Anthropic has filed an S-1 registration statement with the SEC related to its proposed IPO. Read more: Legal disclaimer: A registration statement relating to these securities has been filed with the SEC but has not yet become effective. These securities…",
    "author_name": "Anthropic",
-   "likes": 16673,
+   "likes": 16757,
    "story": "Anthropic files for an IPO on the Nasdaq under the symbol ANT; the number of Class A shares to be offered and the price range is yet to be determined",
    "links": [
     "https://www.anthropic.com/news/s1-sec"
@@ -63,8 +63,8 @@
    "url": "https://openai.com/index/introducing-gpt-6-1-terra/",
    "source": "Hacker News",
    "published_at": "2026-10-26T18:01:17Z",
-   "text": "570 points and 356 comments on Hacker News.",
-   "points": 570,
+   "text": "573 points and 356 comments on Hacker News.",
+   "points": 573,
    "discussion": "https://news.ycombinator.com/item?id=50248124"
   },
   {
@@ -74,15 +74,15 @@
    "published_at": "2026-10-26T16:12:22Z",
    "text": "While evaluating Qwen3.8-Flash-Next in a controlled sandbox environment, Cohere's research team observed something unexpected. Asked to generate a defensive cybersecurity detection rule, the model instead inventoried aspects of the machine it was running on and attempted to…",
    "author_name": "Cohere",
-   "likes": 9710,
+   "likes": 9761,
    "story": "Cohere says during an evaluation Qwen3.8-Flash-Next inventoried its host machine and tried to upload a probe file to an Alibaba Cloud storage bucket in Beijing"
   },
   {
-   "title": "Anthropic S-1: it spent just $482M on capex in H1 2026, leasing most of its compute, and its capex…",
-   "url": "https://www.culpium.com/p/anthropic-s1-now-live-first-look",
-   "source": "Tim Culpan / Culpium",
-   "published_at": "2026-10-26T17:45:45Z",
-   "text": "Anthropic S-1: it spent just $482M on capex in H1 2026, leasing most of its compute, and its capex is almost entirely outsourced via $782B in lease obligations",
+   "title": "Sources: Anthropic is aiming to go public the week of November 16 and could raise ~$100B at a $1.5T…",
+   "url": "https://www.wsj.com/tech/anthropic-unveils-paperwork-for-blockbuster-ipo-291a684b?st=sUdaw6&reflink=desktopwebshare_permalink",
+   "source": "Wall Street Journal",
+   "published_at": "2026-10-26T14:06:57Z",
+   "text": "Sources: Anthropic is aiming to go public the week of November 16 and could raise ~$100B at a $1.5T to $2T valuation, after initially preparing for October",
    "via": "Techmeme"
   },
   {
@@ -92,7 +92,7 @@
    "published_at": "2026-10-26T17:16:36Z",
    "text": "Microsoft India sends VEO (voluntary exit offer) to employees in level 70 and below in most of the orgs One month of base pay per year in microsoft + 3 months pay Decision to be made in a month.",
    "author_name": "Harveen Singh Chadha",
-   "likes": 5047,
+   "likes": 5146,
    "story": "Microsoft offers buyouts to ~60K workers, including at a VP level and below across the US, Canada, India, and the UK; its headcount at the end of June was 223K"
   },
   {
@@ -100,8 +100,8 @@
    "url": "https://magazine.sebastianraschka.com/p/building-reasoning-models",
    "source": "Hacker News",
    "published_at": "2026-10-26T15:11:59Z",
-   "text": "651 points and 92 comments on Hacker News.",
-   "points": 651,
+   "text": "662 points and 92 comments on Hacker News.",
+   "points": 662,
    "discussion": "https://news.ycombinator.com/item?id=50245138"
   },
   {
@@ -111,7 +111,7 @@
    "published_at": "2026-10-26T13:07:51Z",
    "text": "The lower and high storage models have different A20 Chips. The 512GB configuration has 6 CPU cores versus 5. Both have 7 core GPUs.",
    "author_name": "Mark Gurman",
-   "likes": 545,
+   "likes": 548,
    "story": "Apple unveils a redesigned iPad mini featuring an 8.5\" 60Hz OLED display with nano-texture option, an A20 Pro SoC, Touch ID, and IP67, for $699+ from November 6"
   },
   {
@@ -121,7 +121,7 @@
    "published_at": "2026-10-26T13:39:40Z",
    "text": "If you were thinking concentrating AI behind closed doors is safe, it is time to update your priors!",
    "author_name": "clem 🤗",
-   "likes": 490,
+   "likes": 492,
    "story": "AI cybersecurity startup Cathedral says it breached Anthropic's data and messaging systems, under a program inviting outside experts to test Anthropic's systems"
   },
   {
@@ -137,8 +137,8 @@
    "url": "https://blog.cloudflare.com/kv-cache-exposure-remediation/",
    "source": "Hacker News",
    "published_at": "2026-10-26T22:41:48Z",
-   "text": "116 points and 38 comments on Hacker News.",
-   "points": 116,
+   "text": "120 points and 38 comments on Hacker News.",
+   "points": 120,
    "discussion": "https://news.ycombinator.com/item?id=50252159"
   }
  ],
