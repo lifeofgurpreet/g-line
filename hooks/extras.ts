@@ -271,9 +271,9 @@ export function forecastSegment(f?: Forecast | null): Segment | undefined {
 }
 
 export function compactionText(c: { trigger: string; before?: number; after?: number }): string {
-  const how = c.trigger === 'auto' ? 'automatically' : c.trigger === 'manual' ? 'by /compact' : `by ${c.trigger}`
-  if (c.before && c.after !== undefined) return `Context compacted ${how}: ${tokens(c.before)} → ${tokens(c.after)} tokens.`
-  return `Context compacted ${how}.`
+  const how = c.trigger === 'auto' ? '' : c.trigger === 'manual' ? ' by /compact' : ` by ${c.trigger}`
+  if (c.before && c.after !== undefined) return `◆ context compacted${how} · ${tokens(c.before)} → ${tokens(c.after)}`
+  return `◆ context compacted${how}`
 }
 
 // ----------------------------------------------------------- context view
@@ -331,7 +331,7 @@ export function target(tool: string, input: Record<string, unknown>): string {
 /** The toast after the same call has failed `streak` times in a row. */
 export function loopWarning(tool: string, what: string, streak: number): string {
   const on = what && what !== tool ? ` on ${what}` : ''
-  return `⚠ ${streak}× ${tool} failures in a row${on}. Worth a look before it burns more of your limit.`
+  return `⚠ ${streak}× ${tool} failures in a row${on} · worth a look`
 }
 
 // ----------------------------------------------------------------- ledger

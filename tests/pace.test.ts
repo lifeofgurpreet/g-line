@@ -225,12 +225,12 @@ test('when a hold lifts: the moment the allowance catches up, no later than the 
 
 test('what the guard says: steps toast with the figures; line 2 says over pace; the rule reads in words', () => {
   const v1 = evaluate(GUARD, week(21, MON_9))
-  expect(changeText(undefined, v1)).toBe('g-line guard: ahead of pace: 21% of the week used, 21% allowed by now: the conversation runs at effort medium.')
+  expect(changeText(undefined, v1)).toBe('◆ guard · over pace: 21% of the week used, 21% allowed · effort medium')
   const v2 = evaluate(GUARD, week(23, MON_9), v1.active, v1.memory)
-  expect(changeText(v1, v2)).toMatch(/ahead of pace: 23% of the week used.*: new subagents run on sonnet\.$/)
+  expect(changeText(v1, v2)).toMatch(/over pace: 23% of the week used.* · agents on sonnet$/)
   const v3 = evaluate(GUARD, week(28, MON_9), v2.active, v2.memory)
-  expect(changeText(v2, v3)).toMatch(/: new prompts stop\.$/)
-  expect(changeText(v3, evaluate(GUARD, week(15, MON_9)))).toMatch(/prompts go through again; effort is yours again; subagents pick their own model again/)
+  expect(changeText(v2, v3)).toMatch(/ · new prompts held$/)
+  expect(changeText(v3, evaluate(GUARD, week(15, MON_9)))).toMatch(/prompts go through again · effort is yours again · agents pick their own model again/)
   expect(guardForms(v1)?.forms[0]).toBe('guard: over pace, effort medium')
   expect(guardForms(v3, undefined, '14:00')?.forms).toEqual(['guard: over pace, 28% of the week used till ~14:00', 'over pace till ~14:00', 'over pace'])
   expect(ruleText(GUARD.rules[0] as NonNullable<(typeof GUARD.rules)[0]>)).toBe(

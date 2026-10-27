@@ -840,15 +840,28 @@ export function inForceText(v: Verdict): string {
     .filter(Boolean).join(', ')
 }
 
-/** What a pace rule's steps are, by tier 1 to 3. */
+/** What a pace rule's steps are, by tier 1 to 3, in a toast's few words. */
 const paceSteps = (rule: Rule, from: number, to: number): string[] => {
   const p = rule.pace
   if (!p) return []
-  const steps = [`the conversation runs at effort ${p.effort}`, p.agents ? `new subagents run on ${p.agents}` : '', 'new prompts stop']
+  const steps = [`effort ${p.effort}`, p.agents ? `agents on ${p.agents}` : '', 'new prompts held']
   return steps.slice(from, to).filter(Boolean)
 }
 
-/** What changed between two verdicts, in words for a toast; nothing when nothing did. */
+const SHORT: Record<WindowName, string> = { '5h': '5h', week: 'week' }
+
+/** Where a pace rule stands, short enough for a toast. */
+function paceShort(n: PaceNow): string {
+  return n.hard
+    ? `${pct(100 - n.used)} of the ${n.window === '5h' ? '5h' : 'week'} left, inside the ${n.reserve}% reserve`
+    : `over pace: ${pct(n.used)} of the ${n.window === '5h' ? '5h' : 'week'} used, ${pct(n.allowed)} allowed`
+}
+
+/**
+ * What changed between two verdicts, for a toast: `◆ guard · held: 4% of 5h
+ * left · effort medium`, short enough for the toast's three lines; nothing
+ * when nothing did. `/g-line guard why` has the long form.
+ */
 export function changeText(before: Verdict | undefined, after: Verdict): string | undefined {
   const was = new Set(before?.rules.map(r => r.id) ?? [])
   const started = after.rules.filter(r => !was.has(r.id))
@@ -858,18 +871,18 @@ export function changeText(before: Verdict | undefined, after: Verdict): string 
     const at = after.pace?.[rule.id]
     if (!at) continue
     const from = before?.pace?.[rule.id]?.tier ?? 0
-    if (at.tier > from) parts.push(`${paceWords(at)}: ${paceSteps(rule, from, at.tier).join(', ')}`)
+    if (at.tier > from) parts.push(paceShort(at), ...paceSteps(rule, from, at.tier))
   }
-  if (after.stop && started.includes(after.stop.rule) && !after.stop.pace) parts.push(`new prompts stop (${pct(after.stop.left)} of the ${NAMES[after.stop.window]} window left)`)
-  if (after.effort && started.some(r => r.effort)) parts.push(`the conversation runs at effort ${after.effort}`)
-  if (after.agents && started.some(r => r.agents)) parts.push(`new subagents run on ${after.agents}`)
-  if (before?.effort && after.effort && before.effort !== after.effort) parts.push(`the conversation now runs at effort ${after.effort}`)
-  if (before?.agents && after.agents && before.agents !== after.agents) parts.push(`new subagents now run on ${after.agents}`)
+  if (after.stop && started.includes(after.stop.rule) && !after.stop.pace) parts.push(`held: ${pct(after.stop.left)} of ${SHORT[after.stop.window]} left`)
+  if (after.effort && started.some(r => r.effort)) parts.push(`effort ${after.effort}`)
+  if (after.agents && started.some(r => r.agents)) parts.push(`agents on ${after.agents}`)
+  if (before?.effort && after.effort && before.effort !== after.effort) parts.push(`effort now ${after.effort}`)
+  if (before?.agents && after.agents && before.agents !== after.agents) parts.push(`agents now on ${after.agents}`)
   if (before?.stop && !after.stop) parts.push('prompts go through again')
   if (before?.effort && !after.effort) parts.push('effort is yours again')
-  if (before?.agents && !after.agents) parts.push('subagents pick their own model again')
+  if (before?.agents && !after.agents) parts.push('agents pick their own model again')
   if (!parts.length) return undefined
-  return `g-line guard: ${parts.join('; ')}.`
+  return `◆ guard · ${parts.join(' · ')}`
 }
 
 /** Line 2's guard segment words, widest first: what's in force, or that it's paused. */
@@ -942,7 +955,7 @@ const WARM_LAPSE = 3600 - 120
  */
 export type WarmCode = 'off' | 'busy' | 'ttl' | 'compacted' | 'account' | 'model' | 'idle-compaction' | 'small' | 'held'
   | 'five-hour' | 'max' | 'hourly' | 'not-last' | 'leased' | 'early' | 'lapsed' | 'idle'
-  | 'guard-off' | 'hidden' | 'resumed' | 'stopped' | 'failed' | 'slept'
+  | 'guard-off' | 'hidden' | 'resumed' | 'stopped' | 'failed' | 'slept' | 'esc' | 'gone'
 
 /** The few words a cold turn's receipt gives for why keep-warm didn't keep the cache. */
 export const WARM_MISS: Record<WarmCode, string> = {
@@ -953,6 +966,7 @@ export const WARM_MISS: Record<WarmCode, string> = {
   leased: 'another session was re-reading', early: 'not idle long enough', lapsed: 'its window passed unchecked',
   idle: 'due, not yet run', 'guard-off': 'guard off', hidden: 'g-line off', resumed: 'resumed, no request yet',
   stopped: 'keep-warm stopped here', failed: 'its re-reads failed', slept: 'the machine slept',
+  esc: 'Esc ended keep-warm\'s stretch', gone: 'its re-read found no cache',
 }
 
 /**

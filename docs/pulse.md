@@ -34,9 +34,14 @@ shows.
 
 ## Links
 
-The headline is a link wherever Claude Code itself draws links: Ghostty, iTerm2, kitty,
-WezTerm, VS Code, Windows Terminal, Warp, and tmux 3.4 or later. Cmd-click (ctrl-click on Linux)
-opens it.
+In Claude Code's fullscreen layout, where it reports clicks, a plain click on the headline
+opens it: g-line opens your browser itself (or, over SSH, copies the link for you to paste),
+so it works the same in any terminal or multiplexer. Cmd-click still opens it the terminal's
+way.
+
+On the main screen a click belongs to the terminal, so the headline is a link wherever Claude
+Code itself draws links: Ghostty, iTerm2, kitty, WezTerm, VS Code, Windows Terminal, Warp, and
+tmux 3.4 or later. Cmd-click (ctrl-click on Linux) opens it.
 
 Claude Code doesn't recognise herdr, Zellij or a session reached over SSH as terminals that
 draw links. With Pulse on, g-line sets `FORCE_HYPERLINK=1` in Claude Code's own process (Claude

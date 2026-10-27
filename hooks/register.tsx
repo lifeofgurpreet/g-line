@@ -17,7 +17,7 @@ import { atom, read, update } from 'claude-code'
 import type { EngineInterface, Register } from 'claude-code'
 
 import type { AgentRow, Receipt, Snap, Totals } from '../types'
-import { SEP, alerts, clock, layoutKeys, modelName, pct, segments, str, tokens, utcLabel, width, zoneOffset } from './core'
+import { SEP, alerts, clock, layoutKeys, modelName, pct, segments, str, toastMs, tokens, utcLabel, width, zoneOffset } from './core'
 import type { Limit } from './roster'
 import { LIMITS_PREFIX, ROSTER_PREFIX, mergeLimits, parseUsage, othersSegment, rosterOf, rosterRow, staleRosterKeys } from './roster'
 import type { RosterEntry, RosterState } from './roster'
@@ -357,7 +357,7 @@ async function idleCompactionMissed($: EngineInterface): Promise<void> {
   }
   idle = undefined
   if (config.guard.keepWarm) {
-    await toast($, 'Claude Code did not compact this conversation while it sat idle: keep-warm keeps big conversations on this account warm again.', 10_000)
+    await toast($, '◆ big conversations here are kept warm again · no idle compaction came', 10_000)
   }
 }
 
@@ -657,7 +657,7 @@ async function refreshAccount($: EngineInterface): Promise<void> {
     await update($, snap, s => ({ ...s, account: line ?? null,
       cache: cold(s.cache) && s.cache ? { ...s.cache, accountChanged: true } : s.cache }))
     if (cold((await read($, snap)).cache)) {
-      await toast($, 'The account changed: prompt caches are kept per organization, so the next turn starts a new cache.', 10_000)
+      await toast($, '◆ account changed · the next turn starts a new cache', 10_000)
     }
   } catch {
     accountMissed = true
@@ -682,9 +682,27 @@ async function heads($: EngineInterface, text: string, title: string, notify: bo
   await toast($, text, 12_000)
 }
 
-/** A terminal toast, unless toasts are off or `/g-line off` hid the mod. */
+/** When each unasked toast was last shown, by its text: the same heads-up within ten minutes is no news. */
+const toastedAt = new Map<string, number>()
+
+/**
+ * A heads-up g-line raises on its own: a terminal toast, unless toasts are off
+ * or `/g-line off` hid the mod, shown about as long as it takes to read
+ * (`toastMs`) and not again within ten minutes.
+ */
 async function toast($: EngineInterface, text: string, timeoutMs: number): Promise<void> {
-  if (config.toasts && !(await read($, hidden))) $.ui.toast(text, { timeoutMs })
+  if (!config.toasts || (await read($, hidden))) return
+  const at = await nowMs($)
+  const last = toastedAt.get(text)
+  if (last !== undefined && at - last < 10 * 60_000) return
+  toastedAt.set(text, at)
+  if (toastedAt.size > 100) toastedAt.delete(toastedAt.keys().next().value as string)
+  $.ui.toast(text, { timeoutMs: toastMs(text, timeoutMs) })
+}
+
+/** The answer to something the person asked (a command, a key): always shown, for as long as it takes to read. */
+function tell($: EngineInterface, text: string, timeoutMs = 4000): void {
+  $.ui.toast(text, { timeoutMs: toastMs(text, timeoutMs) })
 }
 
 /** Puts a command in the prompt box for Tab to take, unless the mod is hidden. */
@@ -892,7 +910,7 @@ async function afterTurn($: EngineInterface, r: Receipt, aborted: boolean): Prom
   const f = forecast(context, breakdown?.isAutoCompactEnabled ? breakdown.autoCompactThreshold : undefined, t.growth) ?? null
   await update($, outlook, () => f)
   if (f && f.turns <= 2 && (await once($, `compact:${t.compactions.length}`))) {
-    await toast($, `Context compacts ${f.turns <= 1 ? 'soon' : `in ~${f.turns} turns`}. To choose what's kept, run /compact with a note now${config.coach ? ' (Tab starts one)' : ''}.`, 15_000)
+    await toast($, `◆ context compacts ${f.turns <= 1 ? 'soon' : `in ~${f.turns} turns`} · /compact with a note now keeps what matters${config.coach ? ' (Tab)' : ''}`, 15_000)
     if (config.coach) await suggest($, '/compact keep ')
   }
   if (!aborted && r.durationMs >= config.longTurnSeconds * 1000 && config.notify.longTurn) {
@@ -1195,7 +1213,7 @@ async function openPane($: EngineInterface, mode: 'details' | 'card' | 'settings
   const title = mode === 'card' ? 'g-line card' : mode === 'settings' ? 'g-line settings' : mode === 'news' ? 'Pulse' : 'g-line'
   // The reader and the settings answer keys: they take the keyboard, asked for by the command.
   const opened = await $.ui.open({ id: PANE, title, ...(mode === 'news' || mode === 'settings' ? { focus: true as const, rows: 40 } : {}) })
-  if (!opened.isPlaced) $.ui.toast('g-line: widen the terminal to see the pane.', { timeoutMs: 5000 })
+  if (!opened.isPlaced) tell($, 'g-line: widen the terminal to see the pane.', 5000)
   // Nothing goes back into the conversation: a command's text is read by Claude.
   return {}
 }
@@ -1251,7 +1269,7 @@ async function toggleMute($: EngineInterface, item: PulseItem): Promise<void> {
   const was = muted(item, config.pulseMute)
   await choose($, { pulse_mute: was ? config.pulseMute.filter(word => !muted(item, [word])) : [...config.pulseMute, item.source] })
   await turnPulse($, true)
-  $.ui.toast(was ? `${item.source} is back on Pulse.` : `Muted ${item.source} on Pulse's row and spinner; m here unmutes it.`, { timeoutMs: 5000 })
+  tell($, was ? `${item.source} is back on Pulse.` : `Muted ${item.source} on Pulse's row and spinner; m here unmutes it.`, 5000)
 }
 
 /** How many times each headline was shown today, on this machine; `$.store` shares it between sessions. */
@@ -1276,19 +1294,27 @@ async function shownItem($: EngineInterface): Promise<PulseItem | undefined> {
 
 /**
  * Pulse's row under the prompt, while Pulse is on: whose post, how long ago,
- * and the headline, a link where Claude Code draws links (cmd-click or
- * ctrl-click opens it). The cycle's rules (hooks/pulse.ts) pick the headline.
+ * and the headline. The cycle's rules (hooks/pulse.ts) pick the headline.
+ *
+ * Where Claude Code reports clicks (the fullscreen terminal) the headline is
+ * g-line's own control: a plain click opens it in the browser here, or copies
+ * it over SSH, whatever the terminal or multiplexer does with links. On the
+ * main screen, where a click is the terminal's, it's a link where Claude Code
+ * draws links (cmd-click or ctrl-click opens it). `/g-line open` works anywhere.
  */
 async function pulseLine($: EngineInterface, e: Parameters<EngineInterface['ui']['resolve']>[0], columns: number | undefined): Promise<JSX.Element | null> {
   if (!config.pulse || config.lines === 0 || columns === undefined) return null
   const item = await shownItem($)
   const row = pulseRow(item, columns - 4, await nowMs($))
   if (!item || !row) return null
-  const { Box, Text, Link } = $.ui.resolve(e)
+  const { Box, Text, Link, Button } = $.ui.resolve(e)
+  const clicks = (e as { viewport?: { isFullscreen?: boolean } }).viewport?.isFullscreen === true
   return (
     <Box key="pulse" flexDirection="row">
       {row.lead ? <Text dimColor>{`${row.lead}: `}</Text> : null}
-      {links ? <Link href={item.url} label={row.title} /> : <Text wrap="truncate-end">{row.title}</Text>}
+      {clicks
+        ? <Button key="pulse-open" plain onPress={press => void openLink($, item.url, press.surface)}><Text underline>{row.title}</Text></Button>
+        : links ? <Link href={item.url} label={row.title} /> : <Text wrap="truncate-end">{row.title}</Text>}
       {row.tail ? <Text dimColor>{row.tail}</Text> : null}
     </Box>
   )
@@ -1359,7 +1385,7 @@ async function turnPulse($: EngineInterface, settle = false): Promise<void> {
     // this session keeps its own count
   }
   if (!links && config.lines !== 0 && (await firstAcrossSessions($, 'hint:links'))) {
-    await toast($, 'Pulse: links are off here (FORCE_HYPERLINK=0), so headlines are plain text. /g-line open opens the one shown.', 15_000)
+    await toast($, '◆ Pulse headlines are plain text here (FORCE_HYPERLINK=0) · /g-line open opens one', 15_000)
   }
 }
 
@@ -1379,7 +1405,7 @@ async function openLink($: EngineInterface, url: string, surface?: string): Prom
       try {
         const ran = await $.process.run([opener, safe], { timeoutMs: 4000 })
         if (ran.exitCode === 0) {
-          $.ui.toast(`Opened ${hostOf(safe)} in your browser.`, { timeoutMs: 3000 })
+          tell($, `◆ opened ${hostOf(safe)} in your browser`, 3000)
           return
         }
       } catch {
@@ -1389,7 +1415,7 @@ async function openLink($: EngineInterface, url: string, surface?: string): Prom
   }
   const why = ssh ? 'this session runs over SSH' : 'no browser opens on this machine'
   const copied = await $.ui.copy({ text: safe, ...(surface ? { surface } : {}) } as never)
-  $.ui.toast(copied.isCopied ? `Link copied (${why}): ${safe}` : safe, { timeoutMs: 8000 })
+  tell($, copied.isCopied ? `◆ link to ${hostOf(safe)} copied · ${why}, so paste it in your browser` : safe, 8000)
 }
 
 function hostOf(url: string): string {
@@ -1420,7 +1446,7 @@ async function openNews($: EngineInterface): Promise<Record<string, never>> {
   }
   await update($, newsAt, () => 0)
   if (!config.pulse) {
-    $.ui.toast('Pulse is off, so there is no news yet. /g-line set pulse on turns it on.', { timeoutMs: 8000 })
+    tell($, 'Pulse is off, so there is no news yet. /g-line set pulse on turns it on.', 8000)
     return {}
   }
   await refreshPulse($)
@@ -1504,6 +1530,10 @@ const WARM_TRIES = 3
  * cold turn's receipt and the day's tally say about why it went cold.
  */
 let warmSeen: { code: WarmCode; idle: number; at: number } | undefined
+/** The stretch's last re-read found and kept the cache. */
+let warmKept = false
+/** Why the stretch rested: an Esc, a missing cache, or failed re-reads. */
+let warmRestCode: WarmCode = 'stopped'
 let warmLookAt = 0
 let warmGap = 0
 /** `/g-line guard simulate`: a window's reading replaced for the guard alone, for a while. */
@@ -1593,7 +1623,7 @@ async function drainNudge($: EngineInterface): Promise<void> {
   const account = config.accountCommand ? s.account : undefined
   const text = drainText(config.guard, factsOf(s, at), account)
   const reset = s.rateLimits?.find(l => l.kind === 'seven_day')?.resetsAt
-  if (text && reset && (await once($, `drain:${accountKey(s.account)}:${reset}`))) await toast($, `g-line: ${text}`, 15_000)
+  if (text && reset && (await once($, `drain:${accountKey(s.account)}:${reset}`))) await toast($, `◆ ${text}`, 15_000)
 }
 
 /** Whether the rules wait: a pause on this machine, or `off here` in this session. */
@@ -1607,14 +1637,14 @@ async function guardNow($: EngineInterface): Promise<Verdict> {
   const at = await nowMs($)
   if (simulation && simulation.until <= at) {
     simulation = undefined
-    if (!(await read($, hidden))) $.ui.toast('g-line guard: the simulation ended; the real readings decide again.', { timeoutMs: 6000 })
+    if (!(await read($, hidden))) tell($, '◆ guard · simulation over, real readings again', 6000)
   }
   verdict = evaluate(config.guard, simulated(factsOf(await read($, snap), at), simulation), before.active, before.memory)
   const change = changeText(before, verdict)
   if (change && !(await read($, hidden))) {
     const paused = await pausedFor($)
-    const note = offHere ? ' (Off in this session.)' : paused > 0 ? ` (Paused for ${Math.ceil(paused / 60)} more minutes.)` : simulation ? ' (Simulated.)' : ''
-    $.ui.toast(`${change}${note}`, { timeoutMs: 12_000 })
+    const note = offHere ? ' · off in this session' : paused > 0 ? ` · paused ${Math.ceil(paused / 60)}m more` : simulation ? ' · simulated' : ''
+    tell($, `${change}${note}`, 12_000)
   }
   return verdict
 }
@@ -1654,21 +1684,21 @@ async function guardPrompt($: EngineInterface, e: { origin: { kind: string }; co
     const fits = passOnce === epoch
     passOnce = undefined
     if (fits) return undefined
-    if (!(await read($, hidden))) $.ui.toast('g-line guard: the pass for one prompt was for another account or window, so it lapsed.', { timeoutMs: 6000 })
+    if (!(await read($, hidden))) tell($, '◆ guard · your one-prompt pass lapsed: another account or window', 6000)
   }
   const at = await nowMs($)
   const typed = typeof e.text === 'string' ? e.text.trim() : ''
   // The person sent the held prompt again, unchanged: their call, it goes.
   if (person && typed && heldPrompt?.text === typed && heldPrompt.epoch === epoch && at - heldPrompt.at < HELD_AGAIN_MS) {
     heldPrompt = undefined
-    if (!(await read($, hidden))) $.ui.toast(`g-line sent it anyway, with ${Math.max(0, Math.round(v.stop.left))}% of the ${v.stop.window === '5h' ? '5-hour' : 'weekly'} window left.`, { timeoutMs: 6000 })
+    if (!(await read($, hidden))) tell($, `◆ sent anyway · ${Math.max(0, Math.round(v.stop.left))}% of the ${v.stop.window === '5h' ? '5-hour' : 'weekly'} window left`, 6000)
     return undefined
   }
   if (person) heldPrompt = typed ? { text: typed, at, epoch } : undefined
   const account = config.accountCommand ? s.account : undefined
   let plan: { at?: string; cache?: 'warm' | 'bridge' | 'cold' } | undefined
   if (person && typed && config.guard.queue) {
-    if (queued && queued.text !== typed) $.ui.toast('g-line: this prompt replaces the one it was holding.', { timeoutMs: 6000 })
+    if (queued && queued.text !== typed) tell($, '◆ this prompt replaces the one g-line was holding', 6000)
     queued = { text: typed, at, key: accountKey(s.account), epoch, bridges: queued?.text === typed ? queued.bridges : 0 }
     const lift = liftsAt(v.stop, at, offsetAt(at))
     const expires = payload(s, at / 1000, ttl, idle).prompt_cache?.expires_at ?? undefined
@@ -1730,7 +1760,7 @@ async function guardEnds($: EngineInterface, turnId: string): Promise<boolean> {
   const text = endText(end, at, offsetAt(at), simulation !== undefined, config.accountCommand ? (await read($, snap)).account : undefined)
   await update($, turnNow, live => (live ? { ...live, guardEnded: { left: end.left, window: end.window, ...(end.pace && !end.pace.hard ? { pace: { used: end.pace.used, allowed: end.pace.allowed } } : {}) } } : live))
   if (!(await read($, hidden))) {
-    $.ui.toast(text, { timeoutMs: 15_000 })
+    tell($, text, 15_000)
     await $.ui.notify(text, { title: 'g-line guard' }).catch(() => undefined)
   }
   await $.turn.abort({ turnId }).catch(() => undefined)
@@ -1757,15 +1787,16 @@ async function guardAgentModel($: EngineInterface, e: { model?: string; parentMo
  * A guard pause or `off here` leaves it running: it holds nothing back.
  */
 async function keepWarm($: EngineInterface): Promise<void> {
+  const now = await nowSeconds($)
+  // A beat that came long after the last one: the machine slept, or the process stalled.
+  // Measured before anything else returns, so a slow re-read in flight doesn't read as sleep.
+  if (warmLookAt) warmGap = Math.max(warmGap, now - warmLookAt)
+  warmLookAt = now
   if (warming) return
   const s = await read($, snap)
   const c = s.cache
   if (!c?.cached) return
   const k = config.guard.on ? config.guard.keepWarm : undefined
-  const now = await nowSeconds($)
-  // A beat that came long after the last one: the machine slept, or the process stalled.
-  if (warmLookAt) warmGap = Math.max(warmGap, now - warmLookAt)
-  warmLookAt = now
   const idleFor = now - c.lastAt
   const look = (code: WarmCode) => {
     if (idleFor >= (k ?? KEEP_WARM_DEFAULTS).after) warmSeen = { code, idle: idleFor, at: now }
@@ -1773,7 +1804,7 @@ async function keepWarm($: EngineInterface): Promise<void> {
   if (!k) return look(config.guard.on ? 'off' : 'guard-off')
   if (await read($, hidden)) return look('hidden')
   if (warmOff) return look('stopped')
-  if (warmRested) return look(warmFailures >= WARM_TRIES ? 'failed' : 'stopped')
+  if (warmRested) return look(warmRestCode)
   // A resumed conversation: until its first request, Claude Code has nothing to send again.
   if (c.restored) return look('resumed')
   // The account can change under a session; whether idle compaction covers it is the account's.
@@ -1824,6 +1855,9 @@ async function keepWarm($: EngineInterface): Promise<void> {
       lastResponseAt = now
       warmed += 1
       warmFailures = 0
+      warmKept = true
+      // Kept: what it saw before says nothing about a later lapse.
+      warmSeen = undefined
       if (cost !== undefined) warmCost += cost
       await update($, snap, x => (x.cache && x.cache.lastAt === c.lastAt ? { ...x, cache: { ...x.cache, lastAt: now } } : x))
       await $.store.set(hour, thisHour + 1).catch(() => undefined)
@@ -1833,16 +1867,23 @@ async function keepWarm($: EngineInterface): Promise<void> {
     } else if (!r.isAnswered && r.reason === 'aborted') {
       // An Esc: forks wait for your next prompt. This idle stretch is over for keep-warm.
       warmRested = true
+      warmRestCode = 'esc'
     } else if (!usage) {
       // No answer at all (an API error, an empty reply, a refusal): nothing says the cache is gone. Tried again.
       warmFailures += 1
-      if (warmFailures >= WARM_TRIES) warmRested = true
+      if (warmFailures >= WARM_TRIES) {
+        warmRested = true
+        warmRestCode = 'failed'
+      }
     } else {
       await warmStrike($, `a re-read wrote ${tokens(usage.cache_creation_input_tokens)} of ${tokens(c.prefix)}`)
     }
   } catch {
     warmFailures += 1
-    if (warmFailures >= WARM_TRIES) warmRested = true
+    if (warmFailures >= WARM_TRIES) {
+      warmRested = true
+      warmRestCode = 'failed'
+    }
   } finally {
     await releaseLease($, `lease:warm:${key}`)
     warming = false
@@ -1855,6 +1896,8 @@ async function keepWarm($: EngineInterface): Promise<void> {
  */
 async function warmStrike($: EngineInterface, why: string): Promise<void> {
   warmRested = true
+  warmRestCode = 'gone'
+  warmKept = false
   warmStrikes += 1
   if (warmStrikes < 2 || warmOff) return
   warmOff = true
@@ -1880,12 +1923,12 @@ async function queueTick($: EngineInterface): Promise<void> {
   const s = await read($, snap)
   if (accountKey(s.account) !== q.key) {
     queued = undefined
-    $.ui.toast('g-line dropped the prompt it was holding: the account changed.', { timeoutMs: 8000 })
+    tell($, '◆ dropped the held prompt · the account changed', 8000)
     return
   }
   if (v.stop && epochOf(s.account, v.stop) !== q.epoch) {
     queued = undefined
-    $.ui.toast('g-line dropped the prompt it was holding: it was held for another window, and the guard has held you for a new one.', { timeoutMs: 8000 })
+    tell($, '◆ dropped the held prompt · held again for a new window', 8000)
     return
   }
   if (!v.stop || (await heldBack($))) {
@@ -1897,7 +1940,7 @@ async function queueTick($: EngineInterface): Promise<void> {
       // the box is the person's
     }
     const sent = await $.prompt.submit({ text: q.text }).catch(() => undefined)
-    $.ui.toast(sent && !sent.drop ? 'g-line sent the prompt it was holding.' : `g-line couldn't send the prompt it was holding${sent?.drop ? `: ${sent.drop}` : ''}.`, { timeoutMs: 8000 })
+    tell($, sent && !sent.drop ? '◆ sent the prompt g-line was holding' : `◆ couldn't send the held prompt${sent?.drop ? ` · ${sent.drop}` : ''}`, 8000)
     await update($, tick, n => n + 1)
     return
   }
@@ -1914,10 +1957,10 @@ async function queueTick($: EngineInterface): Promise<void> {
     if (readBack(c.prefix, usage)) {
       const now = Math.floor(at / 1000)
       await update($, snap, x => (x.cache && x.cache.lastAt === c.lastAt ? { ...x, cache: { ...x.cache, lastAt: now } } : x))
-      await toast($, `Kept the cache warm for the prompt g-line is holding: re-read ${tokens(usage?.cache_read_input_tokens ?? 0)}.`, 8000)
+      await toast($, `◆ cache kept warm for your held prompt · ${tokens(usage?.cache_read_input_tokens ?? 0)} re-read`, 8000)
     } else {
       q.bridges = 2
-      await toast($, 'g-line tried to keep the cache warm for the held prompt, but its re-read found no cache.', 8000)
+      await toast($, '◆ couldn\'t keep the cache warm for your held prompt · it was gone', 8000)
     }
   } catch {
     q.bridges = 2
@@ -1950,8 +1993,11 @@ function warmSegment(): Segment | undefined {
 async function afterRealRequest($: EngineInterface, rebuilt: boolean, explained: boolean): Promise<void> {
   if (warmed > 0 && !warmOff) {
     if (rebuilt && !explained) await warmStrike($, 'the next turn rebuilt it')
-    else if (!rebuilt) warmStrikes = 0
+    // Read back what a successful re-read kept (not a cache a failed one just rewrote): keep-warm works here.
+    else if (!rebuilt && warmKept) warmStrikes = 0
   }
+  warmKept = false
+  warmLookAt = 0
   warmed = 0
   warmCost = 0
   warmRested = false
@@ -1971,11 +2017,11 @@ function warmMiss(at: number): WarmCode {
 async function simulate($: EngineInterface, window?: '5h' | 'week', used?: number): Promise<void> {
   if (!window || used === undefined) {
     simulation = undefined
-    $.ui.toast('g-line guard: simulation off; the real readings decide again.', { timeoutMs: 6000 })
+    tell($, 'g-line guard: simulation off; the real readings decide again.', 6000)
   } else {
     simulation = { window, used, until: (await nowMs($)) + 15 * 60_000 }
     // Short enough for the toast's three lines: the way out is its last words.
-    $.ui.toast(`g-line guard: simulating ${used}% of the ${window === '5h' ? '5-hour' : 'weekly'} window used, 15 min. /g-line guard simulate off ends it.`, { timeoutMs: 10_000 })
+    tell($, `g-line guard: simulating ${used}% of the ${window === '5h' ? '5-hour' : 'weekly'} window used, 15 min. /g-line guard simulate off ends it.`, 10_000)
   }
   await guardNow($)
   await update($, tick, n => n + 1)
@@ -1995,14 +2041,14 @@ async function guardCommandRun($: EngineInterface, action: string, pause?: numbe
   const none = !config.guard.rules.length && !config.guard.keepWarm
   if (action === 'once') {
     passOnce = v.stop ? epochOf((await read($, snap)).account, v.stop) : undefined
-    $.ui.toast(v.stop ? 'g-line guard: your next prompt goes through.' : 'g-line guard: nothing is stopped now; the next prompt would have gone through anyway.', { timeoutMs: 6000 })
+    tell($, v.stop ? 'g-line guard: your next prompt goes through.' : 'g-line guard: nothing is stopped now; the next prompt would have gone through anyway.', 6000)
     return
   }
   if (action === 'why') {
     const lines = await whyNow($)
     // The toast's three lines hold the verdict; the pane lists every figure and rule.
     const head = lines.find(l => l.startsWith('Held:') || l.startsWith('In force:') || l.startsWith('Nothing is held')) ?? lines[0] ?? ''
-    $.ui.toast(`g-line guard: ${head} The pane lists the figures and each rule.`, { timeoutMs: 15_000 })
+    tell($, `g-line guard: ${head} The pane lists the figures and each rule.`, 15_000)
     await openPane($, 'details')
     return
   }
@@ -2013,26 +2059,26 @@ async function guardCommandRun($: EngineInterface, action: string, pause?: numbe
     } catch {
       // this session's own pause
     }
-    $.ui.toast(action === 'pause'
+    tell($, action === 'pause'
       ? `g-line guard paused ${Math.round((pause ?? 3600) / 60)} min on this machine: your prompts go through; keep-warm still runs. /g-line guard resume ends it.`
-      : 'g-line guard resumed.', { timeoutMs: 8000 })
+      : 'g-line guard resumed.', 8000)
     await update($, tick, n => n + 1)
     return
   }
   if (action === 'off here' || action === 'on here') {
     offHere = action === 'off here'
     passOnce = undefined
-    $.ui.toast(offHere
+    tell($, offHere
       ? 'g-line guard off in this session: your prompts, effort and agents run as you set them. Other sessions stay guarded. /g-line guard on here brings it back.'
-      : 'g-line guard: your rules apply in this session again.', { timeoutMs: 10_000 })
+      : 'g-line guard: your rules apply in this session again.', 10_000)
     await guardNow($)
     await update($, tick, n => n + 1)
     return
   }
   if (action === 'on' || action === 'off') {
     await choose($, { guard: action === 'on' })
-    $.ui.toast(none ? 'g-line guard has no rules: add them under "guard" in ~/.config/g-line/config.json (README: Guard).'
-      : action === 'on' ? 'g-line guard: your rules apply again.' : 'g-line guard off: your rules and keep-warm wait until /g-line guard on.', { timeoutMs: 8000 })
+    tell($, none ? 'g-line guard has no rules: add them under "guard" in ~/.config/g-line/config.json (README: Guard).'
+      : action === 'on' ? 'g-line guard: your rules apply again.' : 'g-line guard off: your rules and keep-warm wait until /g-line guard on.', 8000)
     await guardNow($)
     return
   }
@@ -2050,7 +2096,7 @@ async function guardCommandRun($: EngineInterface, action: string, pause?: numbe
     paused > 0 ? `Paused for ${Math.ceil(paused / 60)} more minutes.` : '',
     config.guard.keepWarm ? `Keep-warm ${warmOff ? 'off for this session' : `on, ${warmed} re-reads since the last turn`}.` : '',
   ].filter(Boolean)
-  $.ui.toast(lines.join(' '), { timeoutMs: 15_000 })
+  tell($, lines.join(' '), 15_000)
 }
 
 // ----------------------------------------------------------------- roster
@@ -2125,12 +2171,12 @@ async function limitStopped($: EngineInterface): Promise<void> {
   if (!r || !config.guard.on || resumePlan) {
     // Keyed by the reset itself, not the jittered plan, so one limit is said once.
     const reset = resumeAt(s.rateLimits ?? [], at, 0)?.at ?? plan.at
-    if (await once($, `limit:${plan.window}:${Math.floor(reset / 60_000)}`)) await toast($, `The ${name} usage limit stopped this turn. It resets about ${when}.`, 12_000)
+    if (await once($, `limit:${plan.window}:${Math.floor(reset / 60_000)}`)) await toast($, `◆ the ${name} limit stopped this turn · resets ~${when}`, 12_000)
     return
   }
   const key = accountKey(s.account)
   if (!(await takeLease($, `lease:resume:${key}`, plan.at + 15 * 60_000))) {
-    await toast($, `The ${name} usage limit stopped this turn. Another session on this account will go on after the reset; this one waits for you.`, 12_000)
+    await toast($, `◆ the ${name} limit stopped this turn · another session here goes on after the reset`, 12_000)
     return
   }
   resumePlan = { ...plan, key }
@@ -2146,11 +2192,11 @@ async function resumeNow($: EngineInterface): Promise<void> {
   await releaseLease($, `lease:resume:${plan.key}`)
   // Said whatever the toasts setting: g-line is about to type for the person, or chose not to.
   if (!config.guard.on || (await heldBack($)) || (await read($, turnNow))) {
-    $.ui.toast(`g-line didn't send its "${config.guard.resume.text}": ${!config.guard.on ? 'the guard is off' : (await read($, turnNow)) ? 'a turn is already running' : 'the guard is paused'}.`, { timeoutMs: 8000 })
+    tell($, `◆ didn't send "${config.guard.resume.text}" · ${!config.guard.on ? 'the guard is off' : (await read($, turnNow)) ? 'a turn is already running' : 'the guard is paused'}`, 8000)
     return
   }
   const sent = await $.prompt.submit({ text: config.guard.resume.text }).catch(() => undefined)
-  $.ui.toast(sent && !sent.drop ? `g-line sent "${config.guard.resume.text}" after the usage reset.` : `g-line's "${config.guard.resume.text}" after the reset didn't go through${sent?.drop ? `: ${sent.drop}` : ''}.`, { timeoutMs: 10_000 })
+  tell($, sent && !sent.drop ? `◆ sent "${config.guard.resume.text}" after the reset` : `◆ "${config.guard.resume.text}" after the reset didn't go through${sent?.drop ? ` · ${sent.drop}` : ''}`, 10_000)
   await update($, tick, n => n + 1)
 }
 
@@ -2171,8 +2217,8 @@ async function cancelResume($: EngineInterface): Promise<void> {
   const had = await dropResume($)
   const held = queued
   queued = undefined
-  $.ui.toast(held ? 'g-line won\'t send the prompt it was holding; it\'s still in your prompt box if you left it there.'
-    : had ? 'g-line won\'t send anything after the reset.' : 'g-line has nothing planned after a reset.', { timeoutMs: 6000 })
+  tell($, held ? 'g-line won\'t send the prompt it was holding; it\'s still in your prompt box if you left it there.'
+    : had ? 'g-line won\'t send anything after the reset.' : 'g-line has nothing planned after a reset.', 6000)
   await update($, tick, n => n + 1)
 }
 
@@ -2206,7 +2252,7 @@ async function versionOf($: EngineInterface): Promise<string | null> {
 async function openDashboard($: EngineInterface): Promise<void> {
   const home = await $.env.get('HOME')
   if (!home) {
-    $.ui.toast('g-line: no home directory to write the dashboard in.', { timeoutMs: 6000 })
+    tell($, 'g-line: no home directory to write the dashboard in.', 6000)
     return
   }
   const path = `${home}/${DASHBOARD_FILE}`
@@ -2242,7 +2288,7 @@ async function openDashboard($: EngineInterface): Promise<void> {
     })
     await $.fs.write(path, html)
   } catch {
-    $.ui.toast('g-line: the dashboard could not be written.', { timeoutMs: 6000 })
+    tell($, 'g-line: the dashboard could not be written.', 6000)
     return
   }
   const ssh = !!((await $.env.get('SSH_CONNECTION')) || (await $.env.get('SSH_TTY')))
@@ -2251,7 +2297,7 @@ async function openDashboard($: EngineInterface): Promise<void> {
     try {
       const ran = await $.process.run([os === 'Darwin' ? 'open' : 'xdg-open', path], { timeoutMs: 4000 })
       if (ran.exitCode === 0) {
-        $.ui.toast('Dashboard opened in your browser: a snapshot, /g-line dashboard again to refresh.', { timeoutMs: 5000 })
+        tell($, 'Dashboard opened in your browser: a snapshot, /g-line dashboard again to refresh.', 5000)
         return
       }
     } catch {
@@ -2259,7 +2305,7 @@ async function openDashboard($: EngineInterface): Promise<void> {
     }
   }
   const why = ssh ? 'this session runs over SSH' : 'no browser opens on this machine'
-  $.ui.toast(`Dashboard written to ${path} (${why}).`, { timeoutMs: 10_000 })
+  tell($, `Dashboard written to ${path} (${why}).`, 10_000)
 }
 
 // ---------------------------------------------------------------- command
@@ -2268,7 +2314,7 @@ const HELP = 'Open the g-line pane; `dashboard` writes a local page with usage, 
 
 /** `/g-line [settings|set|reset|card|off|on]`, and the 0.4 name for one release. Nothing goes back into the conversation. */
 async function runCommand($: EngineInterface, e: { command: string; args: string }): Promise<Record<string, never>> {
-  if (e.command === OLD_COMMAND) $.ui.toast('glanceline is now g-line: use /g-line. /glanceline works until the next release.', { timeoutMs: 8000 })
+  if (e.command === OLD_COMMAND) tell($, 'glanceline is now g-line: use /g-line. /glanceline works until the next release.', 8000)
   if (e.args.trim().toLowerCase() === 'dashboard') {
     await openDashboard($)
     return {}
@@ -2278,19 +2324,19 @@ async function runCommand($: EngineInterface, e: { command: string; args: string
     case 'show':
     case 'hide':
       await update($, hidden, () => asked.kind === 'hide')
-      $.ui.toast(asked.kind === 'hide' ? 'g-line hidden, and quiet until /g-line on.' : 'g-line shown.', { timeoutMs: 5000 })
+      tell($, asked.kind === 'hide' ? 'g-line hidden, and quiet until /g-line on.' : 'g-line shown.', 5000)
       return {}
     case 'set': {
       const value = asked.value === 'toggle' ? nextValue(asked.setting, config) : asked.value
       await setSetting($, asked.setting, value)
-      $.ui.toast(changedText(asked.setting), { timeoutMs: 8000 })
+      tell($, changedText(asked.setting), 8000)
       return {}
     }
     case 'all': {
       let patch: Record<string, unknown> = {}
       for (const setting of SETTINGS) if (setting.kind === 'toggle') patch = withPatch(patch, patchOf(setting, asked.value))
       await choose($, patch)
-      $.ui.toast(`Every g-line toggle is ${asked.value ? 'on' : 'off'}. /g-line reset goes back to your files and the defaults.`, { timeoutMs: 8000 })
+      tell($, `Every g-line toggle is ${asked.value ? 'on' : 'off'}. /g-line reset goes back to your files and the defaults.`, 8000)
       return {}
     }
     case 'reset': {
@@ -2302,13 +2348,13 @@ async function runCommand($: EngineInterface, e: { command: string; args: string
         // what this session holds
       }
       await keep($, asked.setting ? withoutSetting(saved, asked.setting) : {})
-      $.ui.toast(asked.setting
+      tell($, asked.setting
         ? `${asked.setting.label}: ${said(asked.setting, config)}, from ${originOf(asked.setting, layers)}.`
-        : 'Choices made with /g-line cleared: your config files, /config and the defaults decide again.', { timeoutMs: 8000 })
+        : 'Choices made with /g-line cleared: your config files, /config and the defaults decide again.', 8000)
       return {}
     }
     case 'error':
-      $.ui.toast(asked.text, { timeoutMs: 10_000 })
+      tell($, asked.text, 10_000)
       return {}
     case 'settings':
       return openPane($, 'settings')
@@ -2317,7 +2363,7 @@ async function runCommand($: EngineInterface, e: { command: string; args: string
     case 'open': {
       const item = await shownItem($)
       if (item) await openLink($, item.url)
-      else $.ui.toast(config.pulse ? 'No headline yet: the feed is still on its way.' : 'Pulse is off. /g-line set pulse on turns it on.', { timeoutMs: 6000 })
+      else tell($, config.pulse ? 'No headline yet: the feed is still on its way.' : 'Pulse is off. /g-line set pulse on turns it on.', 6000)
       return {}
     }
     case 'guard':
@@ -2356,9 +2402,9 @@ export const register: Register = (on, options) => {
     void refreshPulse($)
     await readTerminal($)
     await readGuardEnv($)
-    if (config.guard.errors.length) $.ui.toast(`g-line guard left out what it couldn't read: ${config.guard.errors.join('; ')}.`, { timeoutMs: 15_000 })
+    if (config.guard.errors.length) tell($, `g-line guard left out what it couldn't read: ${config.guard.errors.join('; ')}.`, 15_000)
     if (config.guard.on && config.guard.rules.some(namesAccounts) && !config.accountCommand) {
-      $.ui.toast('g-line guard: rules naming accounts never apply, because no account_command is set.', { timeoutMs: 12_000 })
+      tell($, 'g-line guard: rules naming accounts never apply, because no account_command is set.', 12_000)
     }
     await loadShown($)
     await resync($)
@@ -2459,13 +2505,15 @@ export const register: Register = (on, options) => {
       const rebuilt = !!was?.cached && was.compactedTo === undefined && u.cache_creation_input_tokens > was.prefix * 0.5
       // A rewrite a model or account change explains says nothing about the cache's life, or keep-warm's.
       const sameModel = !before.model || plainModel(before.model) === plainModel(e.model)
-      const explained = !!was?.accountChanged || !sameModel
+      // So does a conversation the person replaced (`/rewind`, `/resume`) since that request.
+      const explained = !!was?.accountChanged || !sameModel || (!!was && replacedAt >= was.lastAt)
       if (rebuilt && was && !was.restored && idle && was.prefix >= idle.minTokens && started - was.lastAt >= 3600) await idleCompactionMissed($)
       // A model other than the one asked for answered: Claude Code fell back. Said on the receipt.
       if (u.model && plainModel(u.model) !== plainModel(e.model)) {
         const served = u.model
         await update($, turnNow, live => (live ? { ...live, servedBy: served } : live))
       }
+      const coldBefore = coldThisTurn
       await update($, snap, s => {
         let learned = s.cache?.learned
         // After a compaction the old prefix is gone: this write is the summary,
@@ -2489,7 +2537,7 @@ export const register: Register = (on, options) => {
       })
       const cold = coldThisTurn
       // Why keep-warm didn't keep it, from what it saw while idle: on the receipt and in the day's tally.
-      const missed = cold && !was?.accountChanged ? warmMiss(started) : undefined
+      const missed = cold && !coldBefore && !was?.accountChanged ? warmMiss(started) : undefined
       await afterRealRequest($, rebuilt, explained)
       await update($, turnNow, live => (live ? { ...live, cold: live.cold || cold,
         ...(missed && !live.coldWhy ? { coldWhy: missed } : {}),
@@ -2644,7 +2692,7 @@ export const register: Register = (on, options) => {
       await touch($)
       // You're back before the reset: the planned "continue" is yours to type now.
       if (resumePlan && !e.command && (await dropResume($))) {
-        $.ui.toast('g-line won\'t send its prompt after the reset: you typed one.', { timeoutMs: 6000 })
+        tell($, 'g-line won\'t send its prompt after the reset: you typed one.', 6000)
         void update($, tick, n => n + 1)
       }
     }
@@ -2820,7 +2868,7 @@ export const register: Register = (on, options) => {
       const lines = await cardText($, seconds)
       const copy = async () => {
         const copied = await $.ui.copy({ text: `${lines.join('\n')}\n${INSTALL}\n`, surface: e.surface })
-        $.ui.toast(copied.isCopied ? 'Card copied as text.' : 'Could not copy here; select the card text instead.', { timeoutMs: 5000 })
+        tell($, copied.isCopied ? 'Card copied as text.' : 'Could not copy here; select the card text instead.', 5000)
       }
       return (
         <Box flexDirection="column">
@@ -2870,7 +2918,7 @@ export const register: Register = (on, options) => {
             <Button key="copy" plain label="Copy" hotkey="c" onPress={async () => {
               if (!selected) return
               const copied = await $.ui.copy({ text: selected.url, surface: e.surface })
-              $.ui.toast(copied.isCopied ? 'Link copied.' : selected.url, { timeoutMs: 4000 })
+              tell($, copied.isCopied ? 'Link copied.' : selected.url, 4000)
             }} />
             {selected?.discussion ? (
               <Button key="discussion" plain label="Comments" hotkey="d" onPress={() => void (selected.discussion && openLink($, selected.discussion, e.surface))} />
@@ -2949,7 +2997,7 @@ export const register: Register = (on, options) => {
             <Button key="reset" plain label="Clear my choices" hotkey="z"
               onPress={async () => {
                 await keep($, {})
-                $.ui.toast('Choices made with /g-line cleared: your config files, /config and the defaults decide again.', { timeoutMs: 8000 })
+                tell($, 'Choices made with /g-line cleared: your config files, /config and the defaults decide again.', 8000)
               }} />
             <Button key="close" plain label="Close" hotkey="q" onPress={() => void $.ui.close({ id: PANE })} />
           </Box>
@@ -2986,7 +3034,7 @@ export const register: Register = (on, options) => {
             <Button key={`pulse-copy-${index}`} label="copy" hotkey={String(index + 1)} plain
               onPress={async () => {
                 const copied = await $.ui.copy({ text: item.url, surface: e.surface })
-                $.ui.toast(copied.isCopied ? 'Link copied.' : item.url, { timeoutMs: 4000 })
+                tell($, copied.isCopied ? 'Link copied.' : item.url, 4000)
               }} />
             {links ? <Link href={item.url} label={item.title} /> : <Text wrap="truncate-end">{item.title}</Text>}
             <Text dimColor>{xLead(item, now) || item.source}</Text>

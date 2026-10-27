@@ -285,10 +285,16 @@ test('the compaction forecast counts down in the footer (one-line layout) and su
   await ui.unmount()
   await turn($, w, 4, { grow: 70_000 })
   await turn($, w, 5, { grow: 70_000 })
-  expect(w.toasts.some(t => t.startsWith('Context compacts in ~'))).toBe(true)
+  expect(w.toasts.some(t => t.startsWith('◆ context compacts in ~'))).toBe(true)
   expect(w.suggested).toContain('/compact keep ')
   await $.session.compact({ trigger: 'auto', messages: SUMMARY } as never)
-  expect(w.toasts).toContain('Context compacted automatically: 912k → 31k tokens.')
+  expect(w.toasts).toContain('◆ context compacted · 912k → 31k')
+  // The same heads-up again within ten minutes is no news; after that it is said again.
+  await $.session.compact({ trigger: 'auto', messages: SUMMARY } as never)
+  expect(w.toasts.filter(t => t === '◆ context compacted · 912k → 31k').length).toBe(1)
+  await w.clock.advance(11 * 60_000)
+  await $.session.compact({ trigger: 'auto', messages: SUMMARY } as never)
+  expect(w.toasts.filter(t => t === '◆ context compacted · 912k → 31k').length).toBe(2)
   const later = await $.ui.mount({ plugin: 'g-line', surface: 'terminal', component: 'SessionMode', props: { modes: [] } })
   expect(modes[modes.length - 1]).toEqual([])
   await later.unmount()
@@ -812,7 +818,17 @@ test('turned on, Pulse shows a headline under the prompt at once: who, how old, 
   await ui.unmount()
   // `/g-line open` opens the one shown, or copies it where no browser can open.
   await $.command.run({ command: 'g-line', args: 'open' } as never)
-  expect(w.toasts[w.toasts.length - 1]).toMatch(/^Opened github\.com in your browser\.$/)
+  expect(w.toasts[w.toasts.length - 1]).toMatch(/^◆ opened github\.com in your browser$/)
+  // In the fullscreen terminal, where Claude Code reports clicks, the headline is g-line's own
+  // control: a plain click opens it, whatever the terminal does with links.
+  const opened = w.toasts.length
+  ui = await $.ui.mount({ plugin: 'g-line', surface: 'terminal', component: 'PromptHint',
+    props: HINT_PROPS as never, viewport: { columns: 160, rows: 40, isFullscreen: true } as never })
+  expect(await ui.find({ type: 'Link' })).toBeUndefined()
+  await ui.press({ key: 'pulse-open' })
+  expect(w.toasts.length).toBe(opened + 1)
+  expect(w.toasts[w.toasts.length - 1]).toMatch(/^◆ opened \S+ in your browser$/)
+  await ui.unmount()
 })
 
 test('0.12.1: with Pulse on in an interactive session, g-line asks for links in Claude Code\'s own process', { timeoutMs: 30_000 }, async ($, on) => {
@@ -920,7 +936,7 @@ test('on a Linux box with no display (a herdr server reached over SSH), /g-line 
   expect(ran).not.toContain('xdg-open')
   expect(ran).not.toContain('open')
   expect(w.copied).toEqual(['https://x.com/claudeai/status/1'])
-  expect(w.toasts[w.toasts.length - 1]).toBe('Link copied (no browser opens on this machine): https://x.com/claudeai/status/1')
+  expect(w.toasts[w.toasts.length - 1]).toBe('◆ link to x.com copied · no browser opens on this machine, so paste it in your browser')
 })
 
 test('Pulse slow moves on every 40 seconds, paused not at all; the reader still pages', { timeoutMs: 30_000 }, async ($, on) => {
@@ -1002,7 +1018,7 @@ test('/g-line news lists every item in the feed\'s order, the picked one in full
   await pane.press({ key: 'next' })
   expect(await pane.find({ type: 'Link', text: 'Comments on Hacker News' })).toBeDefined()
   await pane.press({ key: 'discussion' })
-  expect(w.toasts[w.toasts.length - 1]).toBe('Opened news.ycombinator.com in your browser.')
+  expect(w.toasts[w.toasts.length - 1]).toBe('◆ opened news.ycombinator.com in your browser')
   await pane.unmount()
 })
 
@@ -1178,7 +1194,7 @@ test('0.11.0: with guard.queue a typed prompt the guard holds is sent on its own
   await measure($, w, 3, 5 * 3600)
   await w.clock.advance(15_000)
   expect(seen.prompts).toEqual(['finish the report'])
-  expect(w.toasts.some(t => t === 'g-line sent the prompt it was holding.')).toBe(true)
+  expect(w.toasts.some(t => t === '◆ sent the prompt g-line was holding')).toBe(true)
   await w.clock.advance(30_000)
   expect(seen.prompts).toEqual(['finish the report'])
 })
@@ -1206,7 +1222,7 @@ test('a stop rule refuses new prompts with the window, what is left and the way 
   await start($)
   await measure($, w, 96)
   await w.clock.advance(15_000)
-  expect(w.toasts.filter(t => t.startsWith('g-line guard: new prompts stop (4% of the 5-hour window left)')).length).toBe(1)
+  expect(w.toasts.filter(t => t.startsWith('◆ guard · held: 4% of 5h left')).length).toBe(1)
   const refused = await $.prompt.submit(typed('go on'))
   expect(refused.drop).toMatch(/^g-line held this: 4% of the 5-hour window left, at or under your 5% stop\. Lifts at \d\d:\d\d, in 1h 59m\. Enter again sends it anyway/)
   // A loop's or schedule's wakeup is refused too; a typed slash command and a delivery into a running turn are not.
@@ -1218,7 +1234,7 @@ test('a stop rule refuses new prompts with the window, what is left and the way 
   expect((await $.prompt.submit(typed('and this?'))).drop).toBeDefined()
   // 0.9.1: the person sends the held prompt again, unchanged: it goes. A machine's repeat does not.
   expect(await $.prompt.submit(typed('and this?'))).toEqual({ text: 'and this?' })
-  expect(w.toasts.some(t => t === 'g-line sent it anyway, with 4% of the 5-hour window left.')).toBe(true)
+  expect(w.toasts.some(t => t === '◆ sent anyway · 4% of the 5-hour window left')).toBe(true)
   expect((await $.prompt.submit(typed('and this?'))).drop).toBeDefined()
   expect((await $.prompt.submit(typed('something else'))).drop).toBeDefined()
   // A schedule held again in the same hold gets one line, not the whole story.
@@ -1636,7 +1652,7 @@ test('0.19.3: a big conversation that lapses uncompacted after an idle hour clea
   lapsed = true
   await turnOf('t2')
   expect(kept['idle-compacts:machine']).toBe(0)
-  expect(w.toasts.filter(t => t.startsWith('Claude Code did not compact this conversation while it sat idle')).length).toBe(1)
+  expect(w.toasts.filter(t => t === '◆ big conversations here are kept warm again · no idle compaction came').length).toBe(1)
   // From now on the account's big conversations are kept warm.
   lapsed = false
   await turnOf('t3')
@@ -1805,7 +1821,7 @@ test('an account change counts the cache cold: line 2 says so, the next turn\'s 
   who = 'second@example.com'
   await w.clock.advance(10 * 60_000)
   expect(await line2()).toBe('cache cold (account changed), next turn rebuilds 100k')
-  expect(w.toasts.filter(t => t.startsWith('The account changed: prompt caches are kept per organization')).length).toBe(1)
+  expect(w.toasts.filter(t => t === '◆ account changed · the next turn starts a new cache').length).toBe(1)
   // The next turn writes the whole conversation again; its receipt says what it followed.
   rebuild = true
   await $.turn.start({ text: 'go', turnId: 't2' })
@@ -1837,7 +1853,7 @@ test('/g-line guard simulate tries the rules with no quota spent, and a headless
   expect(await $.prompt.submit({ text: 'again', wait: false, origin: { kind: 'sdk' } } as never)).toEqual({ text: 'again' })
   expect(logs).toEqual(['g-line guard: no usage readings in this session yet, so its rules cannot act on this prompt.'])
   await $.command.run({ command: 'g-line', args: 'guard simulate 5h 96' } as never)
-  expect(w.toasts.some(t => t.startsWith('g-line guard: new prompts stop (4% of the 5-hour window left)') && t.endsWith('(Simulated.)'))).toBe(true)
+  expect(w.toasts.some(t => t.startsWith('◆ guard · held: 4% of 5h left') && t.endsWith(' · simulated'))).toBe(true)
   expect((await $.prompt.submit(typed('try it'))).drop).toMatch(/^g-line held this: 4% of the 5-hour window left/)
   const ui = await $.ui.mount({ plugin: 'g-line', surface: 'terminal', component: 'PromptHint',
     props: { isDraft: false, isWorking: false, hint: '? for shortcuts' }, viewport: { columns: 200, rows: 40 } })
@@ -1846,7 +1862,7 @@ test('/g-line guard simulate tries the rules with no quota spent, and a headless
   // It ends by itself after 15 minutes.
   await w.clock.advance(16 * 60_000)
   expect(await $.prompt.submit(typed('after'))).toEqual({ text: 'after' })
-  expect(w.toasts.some(t => t === 'g-line guard: the simulation ended; the real readings decide again.')).toBe(true)
+  expect(w.toasts.some(t => t === '◆ guard · simulation over, real readings again')).toBe(true)
 })
 
 test('keep-warm keeps only the session typed in last on its account, and shows what its re-reads cost', { timeoutMs: 30_000 }, async ($, on) => {
@@ -1997,7 +2013,7 @@ test('a turn stopped by the usage limit: told when it resets; with guard.resume 
   // Another session on the account holds the resume: this one only says so.
   kept['lease:resume:machine'] = { holder: 'session-9', until: w.clock.now() + 2 * 3600_000 }
   await stopped('t3')
-  expect(w.toasts[w.toasts.length - 1]).toMatch(/Another session on this account will go on after the reset/)
+  expect(w.toasts[w.toasts.length - 1]).toMatch(/another session here goes on after the reset/)
   await w.clock.advance(70 * 60_000)
   expect(seen.prompts).toEqual(['continue'])
 })
@@ -2010,7 +2026,7 @@ test('without guard.resume a limit stop is only said, with the reset on your clo
   await $.turn.start({ text: 'go', turnId: 't1' })
   await $.turn.complete({ answer: '', durationMs: 4000, isAborted: false, turnId: 't1', reason: 'error' } as never)
   await w.clock.advance(10)
-  expect(w.toasts.some(t => /^The 5-hour usage limit stopped this turn\. It resets about \d\d:\d\d\.$/.test(t))).toBe(true)
+  expect(w.toasts.some(t => /^◆ the 5-hour limit stopped this turn · resets ~\d\d:\d\d$/.test(t))).toBe(true)
   await w.clock.advance(3 * 3600_000)
   expect(seen.prompts).toEqual([])
   w.usage.limits = [{ kind: 'five_hour', percentUsed: 30, resetsAt: ISO(Math.floor(w.clock.now() / 1000) + 2 * 3600) }]
@@ -2120,7 +2136,7 @@ test('an account switched while idle, with the next turn on the new account, is 
   await w.clock.advance(5 * 60_000)
   // The reading after that turn sees the new account; the cache that turn wrote is the new account's, warm.
   expect(await line2()).toMatch(/^cache warm/)
-  expect(w.toasts.filter(t => t.startsWith('The account changed')).length).toBe(0)
+  expect(w.toasts.filter(t => t.startsWith('◆ account changed')).length).toBe(0)
 })
 
 test('a planned "continue" is dropped by /clear, by the session ending, and by a prompt you type first', { timeoutMs: 30_000 }, async ($, on) => {
@@ -2154,7 +2170,7 @@ test('a planned "continue" is dropped by /clear, by the session ending, and by a
   await $.command.run({ command: 'g-line', args: 'guard pause 3h' } as never)
   await w.clock.advance(70 * 60_000)
   expect(seen.prompts).toEqual(['carry on with the tests'])
-  expect(w.toasts.some(t => t === 'g-line didn\'t send its "continue": the guard is paused.')).toBe(true)
+  expect(w.toasts.some(t => t === '◆ didn\'t send "continue" · the guard is paused')).toBe(true)
 })
 
 test('the agents rule leaves an agent type alone until it knows what that type runs on', { timeoutMs: 30_000 }, async ($, on) => {
@@ -2182,7 +2198,7 @@ test('0.12.0: a paced week holds a prompt ahead of pace, says so in plain words,
   await $.session.measure({ context: { tokens: 100_000, window: 1_000_000, percent: 10 }, rateLimits: w.usage.limits,
     cost: { usd: 1 }, changed: ['rateLimits'] })
   await w.clock.advance(15_000)
-  expect(w.toasts.some(t => t.startsWith('g-line guard: ahead of pace: 60% of the week used, 31% allowed by now: the conversation runs at effort medium, new subagents run on sonnet, new prompts stop.'))).toBe(true)
+  expect(w.toasts.some(t => t === '◆ guard · over pace: 60% of the week used, 31% allowed · effort medium · agents on sonnet · new prompts held')).toBe(true)
   const refused = await $.prompt.submit(typed('go on'))
   expect(refused.drop).toMatch(/^g-line held this: ahead of pace: 60% of the week used, 31% allowed by now\./)
   await $.command.run({ command: 'g-line', args: 'guard why' } as never)
@@ -2208,7 +2224,7 @@ test('0.12.0: a pass for one prompt belongs to the account it was given for: aft
   who = 'second@example.com'
   await w.clock.advance(10 * 60_000)
   expect((await $.prompt.submit(typed('use the pass'))).drop).toBeDefined()
-  expect(w.toasts.some(t => t.includes('the pass for one prompt was for another account or window'))).toBe(true)
+  expect(w.toasts.some(t => t.includes('your one-prompt pass lapsed: another account or window'))).toBe(true)
   // a held prompt sent again on the new account goes, but a pass given there is its own
   expect(await $.prompt.submit(typed('use the pass'))).toEqual({ text: 'use the pass' })
   expect(seen.prompts).toEqual(['use the pass'])

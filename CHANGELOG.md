@@ -1,6 +1,6 @@
 # Changelog
 
-## 0.20.0 (2026-10-28): keep-warm keeps more caches warm, and says why when one goes cold
+## 0.20.0 (2026-10-28): keep-warm keeps more caches warm, quieter toasts, clickable headlines
 
 An audit of five machines' counters found cold rebuilds every day despite keep-warm (34 on
 10-27). These were the causes, now fixed:
@@ -27,6 +27,16 @@ When a cache goes cold anyway, the turn's receipt says why keep-warm didn't keep
 (`cache cold · rebuilt 412k · 5h window low`, `out of re-reads`, `the machine slept`), and
 `/g-line dashboard` counts the week's cold rebuilds by reason. Only the first re-read of an idle
 stretch is a toast now (`◆ cache kept warm · 182k re-read after 46m idle`); line 2 counts the rest.
+
+**Toasts.** Claude Code's toast holds three lines of about 37 columns, and many of g-line's ran
+to 120 to 230 characters, cut off and up for 12 to 15 seconds. Each now says it in a line or
+two, led by `◆` (`◆ account changed · the next turn starts a new cache`, `◆ guard · held: 4% of
+5h left · agents on sonnet`), stays about as long as it takes to read (3 to 9 seconds), and the
+same heads-up isn't repeated within ten minutes. `/g-line guard why` keeps the long form.
+
+**Pulse links.** In Claude Code's fullscreen layout a plain click on the headline opens it:
+g-line opens the browser itself (or copies the link over SSH), so it no longer depends on the
+terminal or multiplexer passing links through, or on cmd-click. The main screen keeps the link.
 
 ## 0.19.3 (2026-10-27): idle compaction is counted per account
 

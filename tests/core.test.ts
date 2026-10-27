@@ -1,6 +1,6 @@
 import { expect, test } from 'claude-code/testing'
 
-import { alerts, duration, modelName, pace, plain, render, tokens, utcLabel, zoneOffset } from '../hooks/core'
+import { alerts, duration, modelName, pace, plain, render, toastMs, tokens, utcLabel, zoneOffset } from '../hooks/core'
 import type { Options, Payload } from '../hooks/core'
 import { CASES } from './cases'
 
@@ -77,4 +77,13 @@ test('0.9.1: a zone\'s offset at an instant, and its label', () => {
   expect(zoneOffset('Mars/Olympus', at)).toBeUndefined()
   expect(zoneOffset(undefined, at)).toBeUndefined()
   expect([utcLabel(660), utcLabel(345), utcLabel(-180), utcLabel(0)]).toEqual(['UTC+11', 'UTC+5:45', 'UTC-3', 'UTC+0'])
+})
+
+test('a toast stays about as long as it takes to read: three seconds at least, never past nine or what was asked', () => {
+  expect(toastMs('◆ opened github.com in your browser')).toBe(3750)
+  expect(toastMs('ok', 15_000)).toBe(3000)
+  expect(toastMs('x'.repeat(400), 15_000)).toBe(9000)
+  expect(toastMs('x'.repeat(400), 5000)).toBe(5000)
+  // Wide characters count as one character each, not their UTF-16 halves.
+  expect(toastMs('𝕏'.repeat(40), 15_000)).toBe(toastMs('x'.repeat(40), 15_000))
 })

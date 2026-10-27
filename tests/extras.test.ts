@@ -108,8 +108,8 @@ test('the compaction forecast waits for 60% and a trend, then counts turns', asy
   expect(forecastSegment({ turns: 3, percent: 78, threshold: 967_000 })?.forms[0]).toBe('compacts in ~3 turns')
   expect(forecastSegment({ turns: 1, percent: 98, threshold: 967_000 })?.forms[0]).toBe('compacts soon')
   expect(forecastSegment({ turns: 2, percent: 90, threshold: 967_000 })?.tone).toBe('warn')
-  expect(compactionText({ trigger: 'auto', before: 182_000, after: 31_000 })).toBe('Context compacted automatically: 182k → 31k tokens.')
-  expect(compactionText({ trigger: 'manual' })).toBe('Context compacted by /compact.')
+  expect(compactionText({ trigger: 'auto', before: 182_000, after: 31_000 })).toBe('◆ context compacted · 182k → 31k')
+  expect(compactionText({ trigger: 'manual' })).toBe('◆ context compacted by /compact')
 })
 
 test('the context view keeps categories and servers, never file paths', async () => {
@@ -134,7 +134,7 @@ test('repeated failures name the target briefly', async () => {
   expect(target('Bash', { command: 'npm run test -- --watch=false' })).toBe('npm run test')
   expect(target('WebFetch', { url: 'https://example.com/x' })).toBe('https://example.com/x')
   expect(target('Mystery', {})).toBe('Mystery')
-  expect(loopWarning('Edit', 'core.ts', 3)).toBe('⚠ 3× Edit failures in a row on core.ts. Worth a look before it burns more of your limit.')
+  expect(loopWarning('Edit', 'core.ts', 3)).toBe('⚠ 3× Edit failures in a row on core.ts · worth a look')
 })
 
 test('the day ledger sums every session per local day and forgets old days', async () => {

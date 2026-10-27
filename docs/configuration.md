@@ -35,7 +35,7 @@ the same setting.
 | `pulse_mute` | Sources Pulse's row and spinner skip, matched within the source in any case: `["𝕏"]` skips every post on 𝕏, `["@someone", "Hacker News"]` one account and one site | `[]` |
 | `git` | `true` puts your branch on line 2; g-line then runs `git status` in your project | `false` |
 | `notify` | `true`, `false`, or per kind: `cache`, `reset`, `long_turn` (a turn longer than `long_turn_seconds` finished), `agents` (a background agent finished) | `cache` and `reset` on |
-| `toasts` | `true`, `false` | `true` |
+| `toasts` | `true`, `false`: g-line's own heads-ups. Each is a line or two, stays about as long as it takes to read (3 to 9 seconds), and the same one isn't repeated within ten minutes. Guard changes and answers to your commands always show | `true` |
 | `spinner` | `true`, `false`: the burn on the spinner | `true` |
 | `tool_streak` | Failures in a row of the same call before the toast; `0` turns it off | `3` |
 | `today_budget` | Dollars at API prices; today's total across sessions joins line 2, and a toast says when you pass it | none |

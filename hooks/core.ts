@@ -492,3 +492,13 @@ export function modelName(id: string): string {
   const name = family.charAt(0).toUpperCase() + family.slice(1)
   return `${name} ${major}${minor ? '.' + minor : ''}${wide ? ' (1M)' : ''}`
 }
+
+/**
+ * How long a toast stays: about as long as it takes to read (two seconds, and
+ * 50 ms a character, at least three), never past what the caller asked or nine
+ * seconds. Claude Code's toast holds three lines of about 37 columns, so
+ * g-line says most things in one or two.
+ */
+export function toastMs(text: string, asked = 4000): number {
+  return Math.round(Math.min(asked, 9000, Math.max(3000, 2000 + 50 * [...text].length)))
+}
