@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-27T20:45:10Z",
+ "generated_at": "2026-10-27T21:17:56Z",
  "items": [
   {
    "title": "Apple unveils a 14\" MacBook Pro with an M6, which has a 12-core CPU and a 12-core GPU, 16GB or 32GB…",
@@ -17,7 +17,7 @@
    "published_at": "2026-10-27T16:10:55Z",
    "text": "This is Genie 4, our most realistic and interactive world model yet. 🌐 Explore dynamic environments in real time to see how the scene responds, sounds, and how the people in it move, react, and speak.…",
    "author_name": "Google DeepMind",
-   "likes": 11095,
+   "likes": 11720,
    "story": "Google launches Genie 4, a world model powered by Gemini 3.8 Flash designed to generate interactive AI simulations, initially as a preview to trusted testers"
   },
   {
@@ -28,21 +28,21 @@
    "text": "Added oidc.user_id_claim to the Claude apps gateway, to identify people by an id_token claim other than sub, such as Microsoft Entra ID's oid · Added click to send: in fullscreen, clicking the \"to send now\" hint under a queued message sends it right away, as its key does · Fixed managed settings and organization policy not being fetched for the rest of the session after signing in from the VS Code extension · Fixed Claude overwriting a very large CLAUDE.md, rules file or @-included file in a subdirectory after seeing only its start; Write now asks Claude to read it all or edit in place"
   },
   {
-   "title": "An internal model at OpenAI has produced a claimed refutation of ETH! Russell Impagliazzo, Mohan Pa…",
-   "url": "https://x.com/rrwilliams/status/2114833319431209352",
-   "source": "𝕏 @rrwilliams",
-   "published_at": "2026-10-26T21:35:29Z",
-   "text": "An internal model at OpenAI has produced a claimed refutation of ETH! Russell Impagliazzo, Mohan Paturi, and I have been asked to help organize an open and independent examination of this claim. 1/4",
-   "author_name": "Ryan Williams @rrwilliams.bsky.social",
-   "likes": 6556,
-   "story": "OpenAI announces three breakthroughs in computer science, math, and physics, including that the Exponential Time Hypothesis, a longstanding conjecture, is false"
+   "title": "Microsoft India sends VEO (voluntary exit offer) to employees in level 70 and below in most of the…",
+   "url": "https://x.com/HarveenChadha/status/2114768166756974597",
+   "source": "𝕏 @HarveenChadha",
+   "published_at": "2026-10-26T17:16:36Z",
+   "text": "Microsoft India sends VEO (voluntary exit offer) to employees in level 70 and below in most of the orgs One month of base pay per year in microsoft + 3 months pay Decision to be made in a month.",
+   "author_name": "Harveen Singh Chadha",
+   "likes": 5990,
+   "story": "Microsoft offers buyouts to ~60K workers, including at a VP level and below across the US, Canada, India, and the UK; its headcount at the end of June was 223K"
   },
   {
-   "title": "Anthropic's S-1 shows an 85% gross margin in H1 from running its models, a reality check for skepti…",
-   "url": "https://www.theinformation.com/articles/anthropics-85-margin-reality-check-skeptics",
-   "source": "Stephanie Palazzolo / The I…",
-   "published_at": "2026-10-27T15:21:17Z",
-   "text": "Anthropic's S-1 shows an 85% gross margin in H1 from running its models, a reality check for skeptics who said pay-as-you-go model sales wouldn't be profitable. When Anthropic on Monday dropped its long-awaited initial public offering prospectus filing, a lot of the details …",
+   "title": "Nvidia and Meta expand their Muse partnership, including Meta deploying more Vera Rubin and Vera CP…",
+   "url": "https://www.wsj.com/tech/ai/nvidia-to-invest-3-billion-in-metas-equity-offering-as-they-expand-ai-partnership-e8d3850a?st=4eEQYV&reflink=desktopwebshare_permalink",
+   "source": "Wall Street Journal",
+   "published_at": "2026-10-27T08:11:04Z",
+   "text": "Nvidia and Meta expand their Muse partnership, including Meta deploying more Vera Rubin and Vera CPUs; Nvidia will invest $3B in Meta's planned equity fundraise. Investment comes as Facebook's parent seeks up to $95 billion via stock offerings — Nvidia and Meta Platforms are expanding …",
    "via": "Techmeme"
   },
   {
@@ -50,19 +50,19 @@
    "url": "https://gizmodo.com/police-are-using-ai-to-pull-over-drivers-for-suspicious-behavior-2000831220",
    "source": "Hacker News",
    "published_at": "2026-10-27T16:40:15Z",
-   "text": "273 points and 201 comments on Hacker News.",
-   "points": 273,
+   "text": "288 points and 217 comments on Hacker News.",
+   "points": 288,
    "discussion": "https://news.ycombinator.com/item?id=50261819"
   },
   {
-   "title": "Microsoft India sends VEO (voluntary exit offer) to employees in level 70 and below in most of the…",
-   "url": "https://x.com/HarveenChadha/status/2114768166756974597",
-   "source": "𝕏 @HarveenChadha",
-   "published_at": "2026-10-26T17:16:36Z",
-   "text": "Microsoft India sends VEO (voluntary exit offer) to employees in level 70 and below in most of the orgs One month of base pay per year in microsoft + 3 months pay Decision to be made in a month.",
-   "author_name": "Harveen Singh Chadha",
-   "likes": 5989,
-   "story": "Microsoft offers buyouts to ~60K workers, including at a VP level and below across the US, Canada, India, and the UK; its headcount at the end of June was 223K"
+   "title": "WSJ says Broadcom CEO Hock Tan directly intervened to get Anthropic's debt deal pushed though.",
+   "url": "https://x.com/AndrewCurran_/status/2114929398893957622",
+   "source": "𝕏 @AndrewCurran_",
+   "published_at": "2026-10-27T03:57:16Z",
+   "text": "WSJ says Broadcom CEO Hock Tan directly intervened to get Anthropic's debt deal pushed though.",
+   "author_name": "Andrew Curran",
+   "likes": 261,
+   "story": "Sources: Broadcom CEO Hock Tan held 11th-hour talks and agreed to higher rates and loan guarantees to secure bank participation in the $63B Anthropic debt deal"
   },
   {
    "title": "Anthropic files S-1 with the SEC for proposed initial public offering",
@@ -80,47 +80,20 @@
    "via": "Techmeme"
   },
   {
-   "title": "WSJ says Broadcom CEO Hock Tan directly intervened to get Anthropic's debt deal pushed though.",
-   "url": "https://x.com/AndrewCurran_/status/2114929398893957622",
-   "source": "𝕏 @AndrewCurran_",
-   "published_at": "2026-10-27T03:57:16Z",
-   "text": "WSJ says Broadcom CEO Hock Tan directly intervened to get Anthropic's debt deal pushed though.",
-   "author_name": "Andrew Curran",
-   "likes": 259,
-   "story": "Sources: Broadcom CEO Hock Tan held 11th-hour talks and agreed to higher rates and loan guarantees to secure bank participation in the $63B Anthropic debt deal"
-  },
-  {
    "title": "Anthropic trained Claude on illegally obtained Stanford professors' books",
    "url": "https://stanforddaily.com/2026/10/27/professors-books-pirated-to-train-claude/",
    "source": "Hacker News",
    "published_at": "2026-10-27T15:28:26Z",
-   "text": "311 points and 171 comments on Hacker News.",
-   "points": 311,
+   "text": "343 points and 179 comments on Hacker News.",
+   "points": 343,
    "discussion": "https://news.ycombinator.com/item?id=50260814"
   },
   {
-   "title": "Nvidia and Meta expand their Muse partnership, including Meta deploying more Vera Rubin and Vera CP…",
-   "url": "https://www.wsj.com/tech/ai/nvidia-to-invest-3-billion-in-metas-equity-offering-as-they-expand-ai-partnership-e8d3850a?st=4eEQYV&reflink=desktopwebshare_permalink",
-   "source": "Wall Street Journal",
-   "published_at": "2026-10-27T08:11:04Z",
-   "text": "Nvidia and Meta expand their Muse partnership, including Meta deploying more Vera Rubin and Vera CPUs; Nvidia will invest $3B in Meta's planned equity fundraise. Investment comes as Facebook's parent seeks up to $95 billion via stock offerings — Nvidia and Meta Platforms are expanding …",
-   "via": "Techmeme"
-  },
-  {
-   "title": "Wikipedia's Cleanup of AI-Generated Content",
-   "url": "https://spectrum.ieee.org/wikipedia-wikiproject-ai-writing-cleanup",
-   "source": "Hacker News",
-   "published_at": "2026-10-27T11:08:15Z",
-   "text": "384 points and 175 comments on Hacker News.",
-   "points": 384,
-   "discussion": "https://news.ycombinator.com/item?id=50257326"
-  },
-  {
-   "title": "Oracle adds ChatGPT and Codex to its app stack and expands Oracle Cloud Infrastructure lineup with…",
-   "url": "https://www.cnbc.com/2026/10/27/oracle-openai-chatgpt-codex-google-tpus.html",
-   "source": "Seema Mody / CNBC",
-   "published_at": "2026-10-27T16:31:32Z",
-   "text": "Oracle adds ChatGPT and Codex to its app stack and expands Oracle Cloud Infrastructure lineup with Google TPUs, OpenAI's Jalapeño chip, and Cerebras hardware",
+   "title": "Anthropic's S-1 shows an 85% gross margin in H1 from running its models, a reality check for skepti…",
+   "url": "https://www.theinformation.com/articles/anthropics-85-margin-reality-check-skeptics",
+   "source": "Stephanie Palazzolo / The I…",
+   "published_at": "2026-10-27T15:21:17Z",
+   "text": "Anthropic's S-1 shows an 85% gross margin in H1 from running its models, a reality check for skeptics who said pay-as-you-go model sales wouldn't be profitable. When Anthropic on Monday dropped its long-awaited initial public offering prospectus filing, a lot of the details …",
    "via": "Techmeme"
   },
   {
@@ -128,9 +101,34 @@
    "url": "https://futurism.com/artificial-intelligence/amazon-ai-division-failure-nova",
    "source": "Hacker News",
    "published_at": "2026-10-27T16:25:30Z",
-   "text": "115 points and 52 comments on Hacker News.",
-   "points": 115,
+   "text": "143 points and 66 comments on Hacker News.",
+   "points": 143,
    "discussion": "https://news.ycombinator.com/item?id=50261589"
+  },
+  {
+   "title": "Oracle adds ChatGPT and Codex to its app stack and expands Oracle Cloud Infrastructure lineup with…",
+   "url": "https://www.cnbc.com/2026/10/27/oracle-openai-chatgpt-codex-google-tpus.html",
+   "source": "Seema Mody / CNBC",
+   "published_at": "2026-10-27T16:31:32Z",
+   "text": "Oracle adds ChatGPT and Codex to its app stack and expands Oracle Cloud Infrastructure lineup with Google TPUs, OpenAI's Jalapeño chip, and Cerebras hardware. Oracle on Tuesday announced an expanded collaboration with OpenAI that brings the artificial intelligence lab's ChatGPT …",
+   "via": "Techmeme"
+  },
+  {
+   "title": "Wikipedia's Cleanup of AI-Generated Content",
+   "url": "https://spectrum.ieee.org/wikipedia-wikiproject-ai-writing-cleanup",
+   "source": "Hacker News",
+   "published_at": "2026-10-27T11:08:15Z",
+   "text": "398 points and 182 comments on Hacker News.",
+   "points": 398,
+   "discussion": "https://news.ycombinator.com/item?id=50257326"
+  },
+  {
+   "title": "GM plans to switch from the NYSE to Nasdaq on November 17 as part of its push under Tesla veteran S…",
+   "url": "https://www.ft.com/content/01467514-66c1-4375-9906-45a47b949270",
+   "source": "Financial Times",
+   "published_at": "2026-10-27T18:11:13Z",
+   "text": "GM plans to switch from the NYSE to Nasdaq on November 17 as part of its push under Tesla veteran Sterling Anderson to use AI to speed up its development cycle. Move marks another blow for Big Board as tech-focused rival attracts some of world's most valuable companies",
+   "via": "Techmeme"
   }
  ],
  "sources": "curated, Techmeme, X (found via Techmeme, Reddit, the Internet Archive), Claude Code releases, Anthropic, Hacker News, Simon Willison"
