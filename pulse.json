@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-27T09:49:23Z",
+ "generated_at": "2026-10-27T10:21:52Z",
  "items": [
   {
    "title": "OpenAI announces three breakthroughs in computer science, math, and physics, including that the Exp…",
@@ -17,7 +17,7 @@
    "published_at": "2026-10-26T18:06:27Z",
    "text": "GPT-6.1 Terra: delivering fast and capable computer use at a lower price. GPT-6.1 Terra understands what’s on screen, takes action across apps, writes naturally, and is a more capable model for your whole workday with the efficiency to take on more of it.",
    "author_name": "OpenAI",
-   "likes": 24869,
+   "likes": 24999,
    "story": "OpenAI releases GPT-6.1 Terra, touting “fast and capable computer use at scale” and clearer, more natural writing, priced at $1/1M input and $5/1M output tokens"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-10-26T13:05:46Z",
    "text": "Anthropic has filed an S-1 registration statement with the SEC related to its proposed IPO. Read more: Legal disclaimer: A registration statement relating to these securities has been filed with the SEC but has not yet become effective. These securities…",
    "author_name": "Anthropic",
-   "likes": 17076,
+   "likes": 17134,
    "story": "Anthropic files for an IPO on the Nasdaq under the symbol ANT; the number of Class A shares to be offered and the price range is yet to be determined",
    "links": [
     "https://www.anthropic.com/news/s1-sec"
@@ -53,8 +53,8 @@
    "url": "https://j11g.com/the-mythical-man-month-in-the-age-of-ai",
    "source": "Hacker News",
    "published_at": "2026-10-27T06:25:37Z",
-   "text": "117 points and 95 comments on Hacker News.",
-   "points": 117,
+   "text": "144 points and 111 comments on Hacker News.",
+   "points": 144,
    "discussion": "https://news.ycombinator.com/item?id=50255298"
   },
   {
@@ -64,15 +64,15 @@
    "published_at": "2026-10-26T16:12:22Z",
    "text": "While evaluating Qwen3.8-Flash-Next in a controlled sandbox environment, Cohere's research team observed something unexpected. Asked to generate a defensive cybersecurity detection rule, the model instead inventoried aspects of the machine it was running on and attempted to…",
    "author_name": "Cohere",
-   "likes": 9995,
+   "likes": 10037,
    "story": "Cohere says during an evaluation Qwen3.8-Flash-Next inventoried its host machine and tried to upload a probe file to an Alibaba Cloud storage bucket in Beijing"
   },
   {
-   "title": "S-1: as of September 30, Anthropic had 11,900+ customers spending $100,000+ annually, 1,900+ custom…",
-   "url": "https://techcrunch.com/2026/10/26/anthropics-ipo-filing-reveals-its-strategy-for-keeping-enterprise-customers-hooked/",
-   "source": "Rebecca Bellan / TechCrunch",
-   "published_at": "2026-10-26T17:01:32Z",
-   "text": "S-1: as of September 30, Anthropic had 11,900+ customers spending $100,000+ annually, 1,900+ customers spending $1M+, and ~250 customers spending $10M+",
+   "title": "Few VC firms are mentioned in Anthropic's S-1, except Spark, which invested ~$800M across six round…",
+   "url": "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-10-26-2026/card/few-vcs-mentioned-in-anthropic-ipo-filing-except-spark-capital-AzO2iia3OGgCOvgbzPAt",
+   "source": "Kate Clark / Wall Street Jo…",
+   "published_at": "2026-10-26T16:25:47Z",
+   "text": "Few VC firms are mentioned in Anthropic's S-1, except Spark, which invested ~$800M across six rounds and whose GP Yasmin Razavi is the sole VC on its board",
    "via": "Techmeme"
   },
   {
@@ -82,17 +82,17 @@
    "published_at": "2026-10-26T17:16:36Z",
    "text": "Microsoft India sends VEO (voluntary exit offer) to employees in level 70 and below in most of the orgs One month of base pay per year in microsoft + 3 months pay Decision to be made in a month.",
    "author_name": "Harveen Singh Chadha",
-   "likes": 5533,
+   "likes": 5599,
    "story": "Microsoft offers buyouts to ~60K workers, including at a VP level and below across the US, Canada, India, and the UK; its headcount at the end of June was 223K"
   },
   {
-   "title": "GPT-6.1 Terra",
-   "url": "https://openai.com/index/introducing-gpt-6-1-terra/",
+   "title": "Sebastian Raschka's from-scratch video course on building reasoning models",
+   "url": "https://magazine.sebastianraschka.com/p/building-reasoning-models",
    "source": "Hacker News",
-   "published_at": "2026-10-26T18:01:17Z",
-   "text": "588 points and 374 comments on Hacker News.",
-   "points": 588,
-   "discussion": "https://news.ycombinator.com/item?id=50248124"
+   "published_at": "2026-10-26T15:11:59Z",
+   "text": "712 points and 99 comments on Hacker News.",
+   "points": 712,
+   "discussion": "https://news.ycombinator.com/item?id=50245138"
   },
   {
    "title": "WSJ says Broadcom CEO Hock Tan directly intervened to get Anthropic's debt deal pushed though.",
@@ -101,7 +101,7 @@
    "published_at": "2026-10-27T03:57:16Z",
    "text": "WSJ says Broadcom CEO Hock Tan directly intervened to get Anthropic's debt deal pushed though.",
    "author_name": "Andrew Curran",
-   "likes": 163,
+   "likes": 171,
    "story": "Sources: Broadcom CEO Hock Tan held 11th-hour talks and agreed to higher rates and loan guarantees to secure bank participation in the $63B Anthropic debt deal"
   },
   {
@@ -111,25 +111,8 @@
    "published_at": "2026-10-26T13:07:51Z",
    "text": "The lower and high storage models have different A20 Chips. The 512GB configuration has 6 CPU cores versus 5. Both have 7 core GPUs.",
    "author_name": "Mark Gurman",
-   "likes": 564,
+   "likes": 566,
    "story": "Apple unveils a redesigned iPad mini featuring an 8.5\" 60Hz OLED display with nano-texture option, an A20 Pro SoC, Touch ID, and IP67, for $699+ from November 6"
-  },
-  {
-   "title": "Anthropic's S-1 shows a governance structure that suits a fun quirky little mission-driven worker c…",
-   "url": "https://www.bloomberg.com/opinion/newsletters/2026-10-26/anthropic-raises-concerns",
-   "source": "Matt Levine / Bloomberg",
-   "published_at": "2026-10-26T19:25:45Z",
-   "text": "Anthropic's S-1 shows a governance structure that suits a fun quirky little mission-driven worker cooperative that needs to raise billions as a public company. Also share classes and fake polls. — Happy Anthropic S-1 day — Here's the draft prospectus for Anthropic PBC's initial public offering.",
-   "via": "Techmeme"
-  },
-  {
-   "title": "Sebastian Raschka's from-scratch video course on building reasoning models",
-   "url": "https://magazine.sebastianraschka.com/p/building-reasoning-models",
-   "source": "Hacker News",
-   "published_at": "2026-10-26T15:11:59Z",
-   "text": "703 points and 97 comments on Hacker News.",
-   "points": 703,
-   "discussion": "https://news.ycombinator.com/item?id=50245138"
   },
   {
    "title": "Nvidia and Meta expand their Muse partnership, including Meta deploying more Vera Rubin and Vera CP…",
@@ -137,6 +120,23 @@
    "source": "Wall Street Journal",
    "published_at": "2026-10-27T08:11:04Z",
    "text": "Nvidia and Meta expand their Muse partnership, including Meta deploying more Vera Rubin and Vera CPUs; Nvidia will invest $3B in Meta's planned equity fundraise. Investment comes as Facebook's parent seeks up to $95 billion via stock offerings — Nvidia and Meta Platforms are expanding …",
+   "via": "Techmeme"
+  },
+  {
+   "title": "Cross-request KV cache exposure in the GLM-5.3 Workers AI model (155 responses)",
+   "url": "https://blog.cloudflare.com/kv-cache-exposure-remediation/",
+   "source": "Hacker News",
+   "published_at": "2026-10-26T22:41:48Z",
+   "text": "137 points and 45 comments on Hacker News.",
+   "points": 137,
+   "discussion": "https://news.ycombinator.com/item?id=50252159"
+  },
+  {
+   "title": "S-1: as of September 30, Anthropic had 11,900+ customers spending $100,000+ annually, 1,900+ custom…",
+   "url": "https://techcrunch.com/2026/10/26/anthropics-ipo-filing-reveals-its-strategy-for-keeping-enterprise-customers-hooked/",
+   "source": "Rebecca Bellan / TechCrunch",
+   "published_at": "2026-10-26T17:01:32Z",
+   "text": "S-1: as of September 30, Anthropic had 11,900+ customers spending $100,000+ annually, 1,900+ customers spending $1M+, and ~250 customers spending $10M+",
    "via": "Techmeme"
   }
  ],
