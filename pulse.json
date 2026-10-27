@@ -1,13 +1,13 @@
 {
  "schema": 1,
- "generated_at": "2026-10-27T13:37:35Z",
+ "generated_at": "2026-10-27T14:10:03Z",
  "items": [
   {
-   "title": "OpenAI announces three breakthroughs in computer science, math, and physics, including that the Exp…",
-   "url": "https://openai.com/index/building-scientific-understanding-with-academic-communities/",
-   "source": "OpenAI",
-   "published_at": "2026-10-26T21:55:47Z",
-   "text": "OpenAI announces three breakthroughs in computer science, math, and physics, including that the Exponential Time Hypothesis, a longstanding conjecture, is false. We are announcing three new discoveries in mathematics, computer science, and physics about harmonic analysis, complexity theory, and quantum field theory.",
+   "title": "Apple unveils the 14-inch MacBook Pro with M6, with a 12-core CPU and a 12-core GPU, up to 32GB of…",
+   "url": "https://www.apple.com/newsroom/2026/10/apple-introduces-the-new-14-inch-macbook-pro-with-m6/",
+   "source": "Apple",
+   "published_at": "2026-10-27T13:08:06Z",
+   "text": "Apple unveils the 14-inch MacBook Pro with M6, with a 12-core CPU and a 12-core GPU, up to 32GB of unified memory, and Wi-Fi 7, from $1,999 on November 6. Supercharged by M6, the 14-inch MacBook Pro features incredible performance and next-level AI capabilities, enhanced connectivity …",
    "via": "Techmeme"
   },
   {
@@ -17,7 +17,7 @@
    "published_at": "2026-10-26T18:06:27Z",
    "text": "GPT-6.1 Terra: delivering fast and capable computer use at a lower price. GPT-6.1 Terra understands what’s on screen, takes action across apps, writes naturally, and is a more capable model for your whole workday with the efficiency to take on more of it.",
    "author_name": "OpenAI",
-   "likes": 25776,
+   "likes": 25875,
    "story": "OpenAI releases GPT-6.1 Terra, touting “fast and capable computer use at scale” and clearer, more natural writing, priced at $1/1M input and $5/1M output tokens"
   },
   {
@@ -28,48 +28,17 @@
    "text": "Added --hold-idle-file and --max-hold-min to self-hosted-runner, to keep an idle session while your host reports processes it left running · Added a tip for the Explanatory output style, shown when you ask Claude for explanations · Fixed long freezes at startup and after reading or editing files when a CLAUDE.md file holds a very long list item · Fixed interrupting Claude not taking effect until a timeout while an MCP server had not answered a resource read or a skill was still downloading"
   },
   {
-   "title": "While evaluating Qwen3.8-Flash-Next in a controlled sandbox environment, Cohere's research team obs…",
-   "url": "https://x.com/cohere/status/2114752002370544004",
-   "source": "𝕏 @cohere",
-   "published_at": "2026-10-26T16:12:22Z",
-   "text": "While evaluating Qwen3.8-Flash-Next in a controlled sandbox environment, Cohere's research team observed something unexpected. Asked to generate a defensive cybersecurity detection rule, the model instead inventoried aspects of the machine it was running on and attempted to…",
-   "author_name": "Cohere",
-   "likes": 10320,
-   "story": "Cohere says during an evaluation Qwen3.8-Flash-Next inventoried its host machine and tried to upload a probe file to an Alibaba Cloud storage bucket in Beijing"
-  },
-  {
-   "title": "Apple unveils the 14-inch MacBook Pro with M6, with a 12-core CPU and a 12-core GPU, up to 32GB of…",
-   "url": "https://www.apple.com/newsroom/2026/10/apple-introduces-the-new-14-inch-macbook-pro-with-m6/",
-   "source": "Apple",
-   "published_at": "2026-10-27T13:08:06Z",
-   "text": "Apple unveils the 14-inch MacBook Pro with M6, with a 12-core CPU and a 12-core GPU, up to 32GB of unified memory, and Wi-Fi 7, from $1,999 on November 6. Supercharged by M6, the 14-inch MacBook Pro features incredible performance and next-level AI capabilities, enhanced connectivity …",
-   "via": "Techmeme"
-  },
-  {
-   "title": "Roblox downloaded 145GB models from us (including adult content) without asking",
-   "url": "https://open3dlab.com/news/roblox-downloaded-145-gb-of-models-from-our-sites/",
-   "source": "Hacker News",
-   "published_at": "2026-10-27T10:27:50Z",
-   "text": "252 points and 165 comments on Hacker News.",
-   "points": 252,
-   "discussion": "https://news.ycombinator.com/item?id=50256985"
-  },
-  {
-   "title": "Microsoft India sends VEO (voluntary exit offer) to employees in level 70 and below in most of the…",
-   "url": "https://x.com/HarveenChadha/status/2114768166756974597",
-   "source": "𝕏 @HarveenChadha",
-   "published_at": "2026-10-26T17:16:36Z",
-   "text": "Microsoft India sends VEO (voluntary exit offer) to employees in level 70 and below in most of the orgs One month of base pay per year in microsoft + 3 months pay Decision to be made in a month.",
-   "author_name": "Harveen Singh Chadha",
-   "likes": 5831,
-   "story": "Microsoft offers buyouts to ~60K workers, including at a VP level and below across the US, Canada, India, and the UK; its headcount at the end of June was 223K"
-  },
-  {
-   "title": "Anthropic files S-1 with the SEC for proposed initial public offering",
-   "url": "https://www.anthropic.com/news/s1-sec",
-   "source": "Anthropic",
-   "published_at": "2026-10-26T15:04:18Z",
-   "text": "Anthropic is an AI safety and research company that's working to build reliable, interpretable, and steerable AI systems."
+   "title": "Announcing three major scientific discoveries, one each in mathematics (harmonic analysis), compute…",
+   "url": "https://x.com/gdb/status/2114837059462627533",
+   "source": "𝕏 @gdb",
+   "published_at": "2026-10-26T21:50:21Z",
+   "text": "Announcing three major scientific discoveries, one each in mathematics (harmonic analysis), computer science (complexity theory), and physics (quantum field theory). AI starting to help us improve our understanding of the universe!",
+   "author_name": "Greg Brockman",
+   "likes": 13325,
+   "story": "OpenAI announces three breakthroughs in computer science, math, and physics, including that the Exponential Time Hypothesis, a longstanding conjecture, is false",
+   "links": [
+    "https://openai.com/index/building-scientific-understanding-with-academic-communities/"
+   ]
   },
   {
    "title": "S-1: Anthropic spent ~$2.50 on compute and infrastructure for every $1 of revenue in Q1 2025, falli…",
@@ -80,22 +49,56 @@
    "via": "Techmeme"
   },
   {
-   "title": "WSJ says Broadcom CEO Hock Tan directly intervened to get Anthropic's debt deal pushed though.",
-   "url": "https://x.com/AndrewCurran_/status/2114929398893957622",
-   "source": "𝕏 @AndrewCurran_",
-   "published_at": "2026-10-27T03:57:16Z",
-   "text": "WSJ says Broadcom CEO Hock Tan directly intervened to get Anthropic's debt deal pushed though.",
-   "author_name": "Andrew Curran",
-   "likes": 217,
-   "story": "Sources: Broadcom CEO Hock Tan held 11th-hour talks and agreed to higher rates and loan guarantees to secure bank participation in the $63B Anthropic debt deal"
+   "title": "Roblox downloaded 145GB models from us (including adult content) without asking",
+   "url": "https://open3dlab.com/news/roblox-downloaded-145-gb-of-models-from-our-sites/",
+   "source": "Hacker News",
+   "published_at": "2026-10-27T10:27:50Z",
+   "text": "315 points and 195 comments on Hacker News.",
+   "points": 315,
+   "discussion": "https://news.ycombinator.com/item?id=50256985"
+  },
+  {
+   "title": "While evaluating Qwen3.8-Flash-Next in a controlled sandbox environment, Cohere's research team obs…",
+   "url": "https://x.com/cohere/status/2114752002370544004",
+   "source": "𝕏 @cohere",
+   "published_at": "2026-10-26T16:12:22Z",
+   "text": "While evaluating Qwen3.8-Flash-Next in a controlled sandbox environment, Cohere's research team observed something unexpected. Asked to generate a defensive cybersecurity detection rule, the model instead inventoried aspects of the machine it was running on and attempted to…",
+   "author_name": "Cohere",
+   "likes": 10370,
+   "story": "Cohere says during an evaluation Qwen3.8-Flash-Next inventoried its host machine and tried to upload a probe file to an Alibaba Cloud storage bucket in Beijing"
+  },
+  {
+   "title": "Anthropic files S-1 with the SEC for proposed initial public offering",
+   "url": "https://www.anthropic.com/news/s1-sec",
+   "source": "Anthropic",
+   "published_at": "2026-10-26T15:04:18Z",
+   "text": "Anthropic is an AI safety and research company that's working to build reliable, interpretable, and steerable AI systems."
+  },
+  {
+   "title": "Sources: Broadcom CEO Hock Tan held 11th-hour talks and agreed to higher rates and loan guarantees…",
+   "url": "https://www.wsj.com/finance/broadcom-ceo-intervened-to-seal-63-billion-anthropic-debt-deal-c807754f?st=f24o6c&reflink=desktopwebshare_permalink",
+   "source": "Wall Street Journal",
+   "published_at": "2026-10-27T09:40:46Z",
+   "text": "Sources: Broadcom CEO Hock Tan held 11th-hour talks and agreed to higher rates and loan guarantees to secure bank participation in the $63B Anthropic debt deal. The deal, announced on Monday, is the biggest ever to raise money for AI infrastructure — Hock Tan was running out of patience.",
+   "via": "Techmeme"
+  },
+  {
+   "title": "Microsoft India sends VEO (voluntary exit offer) to employees in level 70 and below in most of the…",
+   "url": "https://x.com/HarveenChadha/status/2114768166756974597",
+   "source": "𝕏 @HarveenChadha",
+   "published_at": "2026-10-26T17:16:36Z",
+   "text": "Microsoft India sends VEO (voluntary exit offer) to employees in level 70 and below in most of the orgs One month of base pay per year in microsoft + 3 months pay Decision to be made in a month.",
+   "author_name": "Harveen Singh Chadha",
+   "likes": 5853,
+   "story": "Microsoft offers buyouts to ~60K workers, including at a VP level and below across the US, Canada, India, and the UK; its headcount at the end of June was 223K"
   },
   {
    "title": "AI promised less work. I've never worked more",
    "url": "https://oioannou.com/blog/ai-promised-less-work/",
    "source": "Hacker News",
    "published_at": "2026-10-27T11:08:14Z",
-   "text": "164 points and 143 comments on Hacker News.",
-   "points": 164,
+   "text": "244 points and 225 comments on Hacker News.",
+   "points": 244,
    "discussion": "https://news.ycombinator.com/item?id=50257325"
   },
   {
@@ -111,8 +114,8 @@
    "url": "https://spectrum.ieee.org/wikipedia-wikiproject-ai-writing-cleanup",
    "source": "Hacker News",
    "published_at": "2026-10-27T11:08:15Z",
-   "text": "102 points and 50 comments on Hacker News.",
-   "points": 102,
+   "text": "129 points and 59 comments on Hacker News.",
+   "points": 129,
    "discussion": "https://news.ycombinator.com/item?id=50257326"
   },
   {
@@ -128,8 +131,8 @@
    "url": "https://j11g.com/the-mythical-man-month-in-the-age-of-ai",
    "source": "Hacker News",
    "published_at": "2026-10-27T06:25:37Z",
-   "text": "264 points and 176 comments on Hacker News.",
-   "points": 264,
+   "text": "283 points and 187 comments on Hacker News.",
+   "points": 283,
    "discussion": "https://news.ycombinator.com/item?id=50255298"
   }
  ],
