@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-28T19:43:42Z",
+ "generated_at": "2026-10-28T20:15:15Z",
  "items": [
   {
    "title": "Google unveils Gemini 4 Carbon, its “strongest model with state-of-the-art cybersecurity” capabilit…",
@@ -17,7 +17,7 @@
    "published_at": "2026-10-28T17:08:18Z",
    "text": "We're redefining the SDLC for the agentic era. Lots of GitHub updates this morning at Universe: • GitHub Copilot Fusion delivers frontier-level quality, 40% faster and at up to 77% lower cost • Our unified Copilot harness is now in Foundry, a managed service for building…",
    "author_name": "Satya Nadella",
-   "likes": 595,
+   "likes": 664,
    "story": "GitHub says Copilot Fusion, which handles model selection and orchestration, is now generally available, releases the GitHub Copilot app, and more"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-10-28T02:11:22Z",
    "text": "Announcing Artificial Analysis Intelligence Index v5, featuring 2 new benchmarks and 3 upgrades. For the first time, the majority of the Index is built on private datasets The Artificial Analysis Intelligence Index is our composite measure of model capabilities across tasks…",
    "author_name": "Artificial Analysis",
-   "likes": 5016,
+   "likes": 5041,
    "story": "Artificial Analysis unveils the Intelligence Index v5 with new coding and science benchmarks; 60% of the Index is based on private test sets or held-out answers"
   },
   {
@@ -50,8 +50,8 @@
    "url": "https://religionnews.com/2026/10/26/in-a-first-a-humanist-granted-a-religious-exemption-from-using-ai/",
    "source": "Hacker News",
    "published_at": "2026-10-28T13:41:30Z",
-   "text": "322 points and 378 comments on Hacker News.",
-   "points": 322,
+   "text": "340 points and 401 comments on Hacker News.",
+   "points": 340,
    "discussion": "https://news.ycombinator.com/item?id=50273396"
   },
   {
@@ -61,7 +61,7 @@
    "published_at": "2026-10-28T14:14:45Z",
    "text": "lot of people making stuff up so here's some more context you can imagine there's hidden enterprise demand for open source models that isn't visible but if you look at the top inference providers that aggressively go after this business, they have shared some numbers and they…",
    "author_name": "dax",
-   "likes": 941,
+   "likes": 987,
    "story": "Theory: Local is going to explode at enterprises"
   },
   {
@@ -93,7 +93,7 @@
    "published_at": "2026-10-27T23:13:53Z",
    "text": "I'm so glad AI killed LeetCode-style coding interviews. I've talked to young AI talent, and most would simply skip companies that still use LeetCode interviews. I agree with Felix. Taste, empathy, principled thinking, business sense, and agency are what really matter.",
    "author_name": "Yuchen Jin",
-   "likes": 2441,
+   "likes": 2455,
    "story": "An Anthropic hiring manager says he stopped giving coding interviews because Claude is better at them and tells junior engineers that “hunger beats tenure”"
   },
   {
@@ -101,8 +101,8 @@
    "url": "https://surgehq.ai/blog/dayjob-tax",
    "source": "Hacker News",
    "published_at": "2026-10-28T15:46:30Z",
-   "text": "119 points and 68 comments on Hacker News.",
-   "points": 119,
+   "text": "127 points and 76 comments on Hacker News.",
+   "points": 127,
    "discussion": "https://news.ycombinator.com/item?id=50275626"
   },
   {
@@ -112,7 +112,7 @@
    "published_at": "2026-10-28T07:53:30Z",
    "text": "So...what would you like to see in our future Gemma models?",
    "author_name": "Omar Sanseviero",
-   "likes": 919,
+   "likes": 942,
    "story": "Gemma 5 models soon ??"
   },
   {
@@ -128,8 +128,8 @@
    "url": "https://huggingface.co/blog/nvidia/nemotron-transcribe-granary",
    "source": "Hacker News",
    "published_at": "2026-10-28T15:17:53Z",
-   "text": "69 points and 7 comments on Hacker News.",
-   "points": 69,
+   "text": "74 points and 9 comments on Hacker News.",
+   "points": 74,
    "discussion": "https://news.ycombinator.com/item?id=50275128"
   }
  ],
