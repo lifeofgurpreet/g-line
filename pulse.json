@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-28T14:55:44Z",
+ "generated_at": "2026-10-28T15:27:13Z",
  "items": [
   {
    "title": "Lawsuit: the parents of a 31-year-old say OpenAI's GPT-4o guided her through an aggressive tapering…",
@@ -17,7 +17,7 @@
    "published_at": "2026-10-27T20:27:48Z",
    "text": "Over the past few months, Anthropic scientists have engaged in deep research partnerships with six organizations developing new medicines. We've also begun drug discovery efforts of our own. In doing so, we’ve learned much more about how Claude can support the many stages of…",
    "author_name": "Anthropic",
-   "likes": 8977,
+   "likes": 9079,
    "story": "Anthropic details early drug development work with six partners and says it has acquired Mithril, a one-person company working on muscular dystrophy"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-10-28T13:00:30Z",
    "text": "Open models' demise has been greatly exaggerated, but the previous AA index did flatter them. As an industry we need more specific intelligence indices, as LLMs are used in vastly different tasks. My meta-review on the benchmarking industry.",
    "author_name": "Nathan Lambert",
-   "likes": 87,
+   "likes": 102,
    "story": "Artificial Analysis launches the Intelligence Index v5, with new coding and science benchmarks, built on private datasets; Claude Opus 5.5 (max) leads at 58",
    "links": [
     "https://www.interconnects.ai/p/artificial-analysis-v5-and-the-benchmarkers"
@@ -47,18 +47,18 @@
    "published_at": "2026-10-27T21:56:30Z",
    "text": "The coding interview is dead, at least for my team at Anthropic. I've seen enough to know that it no longer provides signal. I removed it from loops this month. I have a spicy, optimistic take - I think there's an opportunity for junior engineers:",
    "author_name": "Felix Rieseberg",
-   "likes": 10908,
+   "likes": 11053,
    "story": "An Anthropic hiring manager says he stopped giving coding interviews because Claude is better at them and tells junior engineers that “hunger beats tenure”",
    "links": [
     "https://felixrieseberg.com/hunger-beats-tenure-advice-for-junior-engineers/"
    ]
   },
   {
-   "title": "Sources: Anthropic's seven cofounders remain extremely influential and personally tight; Daniela Am…",
-   "url": "https://www.ft.com/content/24a35e41-2641-4cec-97f5-a974412f9952",
-   "source": "Financial Times",
-   "published_at": "2026-10-28T11:45:56Z",
-   "text": "Sources: Anthropic's seven cofounders remain extremely influential and personally tight; Daniela Amodei, who runs operations, is seen as a good balance to Dario. Anthropic's seven billionaire co-founders are set to gain collective control over one of the world's biggest companies following …",
+   "title": "Research: professional analysts followed AI agents' randomly assigned “leans” on subjective analyti…",
+   "url": "https://www.anthropic.com/research/agents-judgment-calls",
+   "source": "Anthropic",
+   "published_at": "2026-10-28T10:20:55Z",
+   "text": "Research: professional analysts followed AI agents' randomly assigned “leans” on subjective analytical decisions 86% of the time; 77% used the agents' arguments. Amaç Herdağdelen, Hailey Joren, Alex Tamkin — When experts hand their work to an AI agent …",
    "via": "Techmeme"
   },
   {
@@ -66,8 +66,8 @@
    "url": "https://religionnews.com/2026/10/26/in-a-first-a-humanist-granted-a-religious-exemption-from-using-ai/",
    "source": "Hacker News",
    "published_at": "2026-10-28T13:41:30Z",
-   "text": "102 points and 107 comments on Hacker News.",
-   "points": 102,
+   "text": "140 points and 141 comments on Hacker News.",
+   "points": 140,
    "discussion": "https://news.ycombinator.com/item?id=50273396"
   },
   {
@@ -77,7 +77,7 @@
    "published_at": "2026-10-27T19:34:55Z",
    "text": "ok to put what i'm saying about demand in context openrouter is the most successful model router, you can almost serve 100% of their deepseek traffic yesterday on a single GB300 rack this is worth 6-7M...even if there's 10x this demand secretly that's still < 100M of compute",
    "author_name": "dax",
-   "likes": 3458,
+   "likes": 3536,
    "story": "Dirt cheap GPUs coming next year"
   },
   {
@@ -95,11 +95,11 @@
    "text": "I've written before about how November 2025 was an inflection point for coding agents - the point where Opus 4.5 and GPT-5.1 crossed a tipping point that meant their respective coding agents became reliable daily drivers for software engineers. I think we've reached a new inflection point in October 2026, and this time it's for vibe coding computer games . Tree Appreciator Emberwick Battle Drones Pumpkin Farmer, aka Quarter Sun Cove Four times as insulting What happens if someone actually puts the work in? You should build a game!"
   },
   {
-   "title": "Research: professional analysts followed AI agents' randomly assigned “leans” on subjective analyti…",
-   "url": "https://www.anthropic.com/research/agents-judgment-calls",
-   "source": "Anthropic",
-   "published_at": "2026-10-28T10:20:55Z",
-   "text": "Research: professional analysts followed AI agents' randomly assigned “leans” on subjective analytical decisions 86% of the time; 77% used the agents' arguments. Amaç Herdağdelen, Hailey Joren, Alex Tamkin — When experts hand their work to an AI agent …",
+   "title": "Sources: Anthropic's seven cofounders remain extremely influential and personally tight; Daniela Am…",
+   "url": "https://www.ft.com/content/24a35e41-2641-4cec-97f5-a974412f9952",
+   "source": "Financial Times",
+   "published_at": "2026-10-28T11:45:56Z",
+   "text": "Sources: Anthropic's seven cofounders remain extremely influential and personally tight; Daniela Amodei, who runs operations, is seen as a good balance to Dario. Anthropic's seven billionaire co-founders are set to gain collective control over one of the world's biggest companies following …",
    "via": "Techmeme"
   },
   {
@@ -109,7 +109,7 @@
    "published_at": "2026-10-27T22:09:39Z",
    "text": "NEW: Apple bets customers will pay a big premium for touch-screen, OLED laptops. The company has discussed charging $400 more, pricing the 14-inch touch MacBook Pro from $2,899. That could make the 16-inch model at least $3,399.",
    "author_name": "Mark Gurman",
-   "likes": 1004,
+   "likes": 1016,
    "story": "Source: Apple has discussed charging $2,899 for the 14-inch MacBook Pro with an OLED XDR touch screen and M5 Pro chip, $400 more than the current M5 Pro model",
    "links": [
     "https://www.bloomberg.com/news/articles/2026-10-27/apple-14-inch-16-inch-macbook-pro-touch-price-is-likely-2-899-laptop-details?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc5MzEzODg1NiwiZXhwIjoxNzkzNzQzNjU2LCJhcnRpY2xlSWQiOiJUTktaNE9UOTZPU0kwMCIsImJjb25uZWN0SWQiOiJDNEVEQ0FFMUZBMDU0MEJFQTI0QTlGMjExQzFFOTA4MCJ9.-r0-k5GENAkA0QuY_42jePcRdcwpSByLQzUz6ZPG9LI"
@@ -120,8 +120,8 @@
    "url": "https://www.brangus.io/survival-llm",
    "source": "Hacker News",
    "published_at": "2026-10-27T19:55:06Z",
-   "text": "438 points and 166 comments on Hacker News.",
-   "points": 438,
+   "text": "446 points and 167 comments on Hacker News.",
+   "points": 446,
    "discussion": "https://news.ycombinator.com/item?id=50264853"
   },
   {
@@ -131,7 +131,7 @@
    "published_at": "2026-10-28T07:53:30Z",
    "text": "So...what would you like to see in our future Gemma models?",
    "author_name": "Omar Sanseviero",
-   "likes": 575,
+   "likes": 616,
    "story": "Gemma 5 models soon ??"
   },
   {
