@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-28T09:33:15Z",
+ "generated_at": "2026-10-28T10:04:48Z",
  "items": [
   {
    "title": "AMD says it will invest $1B in Meta's equity offering, its first Helios rackscale systems are insta…",
@@ -17,7 +17,7 @@
    "published_at": "2026-10-27T16:10:55Z",
    "text": "This is Genie 4, our most realistic and interactive world model yet. 🌐 Explore dynamic environments in real time to see how the scene responds, sounds, and how the people in it move, react, and speak.…",
    "author_name": "Google DeepMind",
-   "likes": 19718,
+   "likes": 19886,
    "story": "Google DeepMind launches Genie 4, a world model powered by Gemini 3.8 Flash designed to generate interactive AI simulations, in preview first to trusted testers"
   },
   {
@@ -28,48 +28,24 @@
    "text": "Added oidc.user_id_claim to the Claude apps gateway, to identify people by an id_token claim other than sub, such as Microsoft Entra ID's oid · Added click to send: in fullscreen, clicking the \"to send now\" hint under a queued message sends it right away, as its key does · Fixed managed settings and organization policy not being fetched for the rest of the session after signing in from the VS Code extension · Fixed Claude overwriting a very large CLAUDE.md, rules file or @-included file in a subdirectory after seeing only its start; Write now asks Claude to read it all or edit in place"
   },
   {
+   "title": "So...what would you like to see in our future Gemma models?",
+   "url": "https://x.com/osanseviero/status/2115351234811249111",
+   "source": "𝕏 @osanseviero",
+   "published_at": "2026-10-28T07:53:30Z",
+   "text": "So...what would you like to see in our future Gemma models?",
+   "author_name": "Omar Sanseviero",
+   "likes": 121,
+   "story": "Gemma 5 models soon ??"
+  },
+  {
    "title": "Over the past few months, Anthropic scientists have engaged in deep research partnerships with six…",
    "url": "https://x.com/AnthropicAI/status/2115178675050307942",
    "source": "𝕏 @AnthropicAI",
    "published_at": "2026-10-27T20:27:48Z",
    "text": "Over the past few months, Anthropic scientists have engaged in deep research partnerships with six organizations developing new medicines. We've also begun drug discovery efforts of our own. In doing so, we’ve learned much more about how Claude can support the many stages of…",
    "author_name": "Anthropic",
-   "likes": 8091,
+   "likes": 8159,
    "story": "Anthropic details early drug development work with six partners and says it has acquired Mithril, a one-person company working on muscular dystrophy"
-  },
-  {
-   "title": "Source: Apple has discussed charging $2,899 for the 14-inch MacBook Pro with an OLED XDR touch scre…",
-   "url": "https://www.bloomberg.com/news/articles/2026-10-27/apple-14-inch-16-inch-macbook-pro-touch-price-is-likely-2-899-laptop-details?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc5MzEzODg1NiwiZXhwIjoxNzkzNzQzNjU2LCJhcnRpY2xlSWQiOiJUTktaNE9UOTZPU0kwMCIsImJjb25uZWN0SWQiOiJDNEVEQ0FFMUZBMDU0MEJFQTI0QTlGMjExQzFFOTA4MCJ9.-r0-k5GENAkA0QuY_42jePcRdcwpSByLQzUz6ZPG9LI",
-   "source": "Mark Gurman / Bloomberg",
-   "published_at": "2026-10-27T22:21:03Z",
-   "text": "Source: Apple has discussed charging $2,899 for the 14-inch MacBook Pro with an OLED XDR touch screen and M5 Pro chip, $400 more than the current M5 Pro model. Apple Inc., after successfully betting this month that consumers are willing to pay $2,000 or more for a foldable iPhone …",
-   "via": "Techmeme"
-  },
-  {
-   "title": "Survival LLM: AI assistant and emergency library that runs on your own computer",
-   "url": "https://www.brangus.io/survival-llm",
-   "source": "Hacker News",
-   "published_at": "2026-10-27T19:55:06Z",
-   "text": "338 points and 140 comments on Hacker News.",
-   "points": 338,
-   "discussion": "https://news.ycombinator.com/item?id=50264853"
-  },
-  {
-   "title": "Announcing Artificial Analysis Intelligence Index v5, featuring 2 new benchmarks and 3 upgrades. Fo…",
-   "url": "https://x.com/ArtificialAnlys/status/2115265133467635877",
-   "source": "𝕏 @ArtificialAnlys",
-   "published_at": "2026-10-28T02:11:22Z",
-   "text": "Announcing Artificial Analysis Intelligence Index v5, featuring 2 new benchmarks and 3 upgrades. For the first time, the majority of the Index is built on private datasets The Artificial Analysis Intelligence Index is our composite measure of model capabilities across tasks…",
-   "author_name": "Artificial Analysis",
-   "likes": 3590,
-   "story": "Artificial Analysis Intelligence Index v5 released"
-  },
-  {
-   "title": "Expanding our partnership with GSA to bring Claude to all levels of government",
-   "url": "https://www.anthropic.com/news/expanding-partnership-gsa",
-   "source": "Anthropic",
-   "published_at": "2026-10-27T22:21:46Z",
-   "text": "Anthropic is an AI safety and research company that's working to build reliable, interpretable, and steerable AI systems."
   },
   {
    "title": "Anthropic's S-1 implies a $40T+ annual TAM based on knowledge work's economic value in 2025, toppin…",
@@ -80,13 +56,47 @@
    "via": "Techmeme"
   },
   {
+   "title": "Survival LLM: AI assistant and emergency library that runs on your own computer",
+   "url": "https://www.brangus.io/survival-llm",
+   "source": "Hacker News",
+   "published_at": "2026-10-27T19:55:06Z",
+   "text": "347 points and 141 comments on Hacker News.",
+   "points": 347,
+   "discussion": "https://news.ycombinator.com/item?id=50264853"
+  },
+  {
+   "title": "Announcing Artificial Analysis Intelligence Index v5, featuring 2 new benchmarks and 3 upgrades. Fo…",
+   "url": "https://x.com/ArtificialAnlys/status/2115265133467635877",
+   "source": "𝕏 @ArtificialAnlys",
+   "published_at": "2026-10-28T02:11:22Z",
+   "text": "Announcing Artificial Analysis Intelligence Index v5, featuring 2 new benchmarks and 3 upgrades. For the first time, the majority of the Index is built on private datasets The Artificial Analysis Intelligence Index is our composite measure of model capabilities across tasks…",
+   "author_name": "Artificial Analysis",
+   "likes": 3714,
+   "story": "Artificial Analysis Intelligence Index v5 released"
+  },
+  {
+   "title": "Expanding our partnership with GSA to bring Claude to all levels of government",
+   "url": "https://www.anthropic.com/news/expanding-partnership-gsa",
+   "source": "Anthropic",
+   "published_at": "2026-10-27T22:21:46Z",
+   "text": "Anthropic is an AI safety and research company that's working to build reliable, interpretable, and steerable AI systems."
+  },
+  {
+   "title": "Source: Apple has discussed charging $2,899 for the 14-inch MacBook Pro with an OLED XDR touch scre…",
+   "url": "https://www.bloomberg.com/news/articles/2026-10-27/apple-14-inch-16-inch-macbook-pro-touch-price-is-likely-2-899-laptop-details?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc5MzEzODg1NiwiZXhwIjoxNzkzNzQzNjU2LCJhcnRpY2xlSWQiOiJUTktaNE9UOTZPU0kwMCIsImJjb25uZWN0SWQiOiJDNEVEQ0FFMUZBMDU0MEJFQTI0QTlGMjExQzFFOTA4MCJ9.-r0-k5GENAkA0QuY_42jePcRdcwpSByLQzUz6ZPG9LI",
+   "source": "Mark Gurman / Bloomberg",
+   "published_at": "2026-10-27T22:21:03Z",
+   "text": "Source: Apple has discussed charging $2,899 for the 14-inch MacBook Pro with an OLED XDR touch screen and M5 Pro chip, $400 more than the current M5 Pro model. Apple Inc., after successfully betting this month that consumers are willing to pay $2,000 or more for a foldable iPhone …",
+   "via": "Techmeme"
+  },
+  {
    "title": "The coding interview is dead, at least for my team at Anthropic. I've seen enough to know that it n…",
    "url": "https://x.com/felixrieseberg/status/2115200995546566910",
    "source": "𝕏 @felixrieseberg",
    "published_at": "2026-10-27T21:56:30Z",
    "text": "The coding interview is dead, at least for my team at Anthropic. I've seen enough to know that it no longer provides signal. I removed it from loops this month. I have a spicy, optimistic take - I think there's an opportunity for junior engineers:",
    "author_name": "Felix Rieseberg",
-   "likes": 8922,
+   "likes": 9130,
    "story": "An Anthropic hiring manager says he stopped giving coding interviews because Claude is better at them and tells junior engineers that “hunger beats tenure”",
    "links": [
     "https://felixrieseberg.com/hunger-beats-tenure-advice-for-junior-engineers/"
@@ -108,7 +118,7 @@
    "published_at": "2026-10-27T13:08:48Z",
    "text": "Everyday tasks? No sweat. Faster graphics? Nailed it. On-device AI? You bet. It’s the new 14-inch MacBook Pro and iMac, faster than ever and supercharged by M6.",
    "author_name": "Greg Joswiak",
-   "likes": 9202,
+   "likes": 9228,
    "story": "Apple unveils a 14\" MacBook Pro with an M6, which has a 12-core CPU and a 12-core GPU, 16GB or 32GB of unified memory, and Wi-Fi 7, for $1,999+ from November 6"
   },
   {
@@ -118,7 +128,7 @@
    "published_at": "2026-10-27T19:34:55Z",
    "text": "ok to put what i'm saying about demand in context openrouter is the most successful model router, you can almost serve 100% of their deepseek traffic yesterday on a single GB300 rack this is worth 6-7M...even if there's 10x this demand secretly that's still < 100M of compute",
    "author_name": "dax",
-   "likes": 2612,
+   "likes": 2675,
    "story": "Dirt cheap GPUs coming next year"
   },
   {
@@ -130,14 +140,6 @@
    "author_name": "Harveen Singh Chadha",
    "likes": 6009,
    "story": "Microsoft offers buyouts to ~60K workers, including at a VP level and below across the US, Canada, India, and the UK; its headcount at the end of June was 223K"
-  },
-  {
-   "title": "Memo: Amazon says measuring AI adoption solely by token usage or code generation is “deeply flawed”…",
-   "url": "https://www.cnbc.com/2026/10/27/amazon-ai-coding-tokenmaxxing.html",
-   "source": "Annie Palmer / CNBC",
-   "published_at": "2026-10-27T19:16:53Z",
-   "text": "Memo: Amazon says measuring AI adoption solely by token usage or code generation is “deeply flawed”, as it discourages staff from tokenmaxxing. Amazon laid out its AI usage guidelines for software engineers in a memo to staffers, and discouraged employees from turning to …",
-   "via": "Techmeme"
   }
  ],
  "sources": "curated, Techmeme, X (found via Techmeme, Reddit, the Internet Archive), Claude Code releases, Anthropic, Hacker News, Simon Willison"
