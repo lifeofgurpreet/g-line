@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-28T07:26:52Z",
+ "generated_at": "2026-10-28T07:58:35Z",
  "items": [
   {
    "title": "Google DeepMind launches Genie 4, a world model powered by Gemini 3.8 Flash designed to generate in…",
@@ -17,7 +17,7 @@
    "published_at": "2026-10-27T20:27:48Z",
    "text": "Over the past few months, Anthropic scientists have engaged in deep research partnerships with six organizations developing new medicines. We've also begun drug discovery efforts of our own. In doing so, we’ve learned much more about how Claude can support the many stages of…",
    "author_name": "Anthropic",
-   "likes": 7711,
+   "likes": 7831,
    "story": "Anthropic details early drug development work with six partners and says it has acquired Mithril, a one-person company working on muscular dystrophy"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-10-28T02:11:22Z",
    "text": "Announcing Artificial Analysis Intelligence Index v5, featuring 2 new benchmarks and 3 upgrades. For the first time, the majority of the Index is built on private datasets The Artificial Analysis Intelligence Index is our composite measure of model capabilities across tasks…",
    "author_name": "Artificial Analysis",
-   "likes": 2964,
+   "likes": 3153,
    "story": "Artificial Analysis Intelligence Index v5 released"
   },
   {
@@ -46,13 +46,13 @@
    "via": "Techmeme"
   },
   {
-   "title": "Anthropic trained Claude on illegally obtained Stanford professors' books",
-   "url": "https://stanforddaily.com/2026/10/27/professors-books-pirated-to-train-claude/",
+   "title": "Survival LLM: AI assistant and emergency library that runs on your own computer",
+   "url": "https://www.brangus.io/survival-llm",
    "source": "Hacker News",
-   "published_at": "2026-10-27T15:28:26Z",
-   "text": "511 points and 271 comments on Hacker News.",
-   "points": 511,
-   "discussion": "https://news.ycombinator.com/item?id=50260814"
+   "published_at": "2026-10-27T19:55:06Z",
+   "text": "313 points and 129 comments on Hacker News.",
+   "points": 313,
+   "discussion": "https://news.ycombinator.com/item?id=50264853"
   },
   {
    "title": "The coding interview is dead, at least for my team at Anthropic. I've seen enough to know that it n…",
@@ -61,7 +61,7 @@
    "published_at": "2026-10-27T21:56:30Z",
    "text": "The coding interview is dead, at least for my team at Anthropic. I've seen enough to know that it no longer provides signal. I removed it from loops this month. I have a spicy, optimistic take - I think there's an opportunity for junior engineers:",
    "author_name": "Felix Rieseberg",
-   "likes": 8058,
+   "likes": 8309,
    "story": "An Anthropic hiring manager says he stopped giving coding interviews because Claude is better at them and tells junior engineers that “hunger beats tenure”",
    "links": [
     "https://felixrieseberg.com/hunger-beats-tenure-advice-for-junior-engineers/"
@@ -89,17 +89,17 @@
    "published_at": "2026-10-27T13:08:48Z",
    "text": "Everyday tasks? No sweat. Faster graphics? Nailed it. On-device AI? You bet. It’s the new 14-inch MacBook Pro and iMac, faster than ever and supercharged by M6.",
    "author_name": "Greg Joswiak",
-   "likes": 9129,
+   "likes": 9155,
    "story": "Apple unveils a 14\" MacBook Pro with an M6, which has a 12-core CPU and a 12-core GPU, 16GB or 32GB of unified memory, and Wi-Fi 7, for $1,999+ from November 6"
   },
   {
-   "title": "Survival LLM: AI assistant and emergency library that runs on your own computer",
-   "url": "https://www.brangus.io/survival-llm",
+   "title": "Anthropic trained Claude on illegally obtained Stanford professors' books",
+   "url": "https://stanforddaily.com/2026/10/27/professors-books-pirated-to-train-claude/",
    "source": "Hacker News",
-   "published_at": "2026-10-27T19:55:06Z",
-   "text": "297 points and 125 comments on Hacker News.",
-   "points": 297,
-   "discussion": "https://news.ycombinator.com/item?id=50264853"
+   "published_at": "2026-10-27T15:28:26Z",
+   "text": "513 points and 273 comments on Hacker News.",
+   "points": 513,
+   "discussion": "https://news.ycombinator.com/item?id=50260814"
   },
   {
    "title": "ok to put what i'm saying about demand in context openrouter is the most successful model router, y…",
@@ -108,7 +108,7 @@
    "published_at": "2026-10-27T19:34:55Z",
    "text": "ok to put what i'm saying about demand in context openrouter is the most successful model router, you can almost serve 100% of their deepseek traffic yesterday on a single GB300 rack this is worth 6-7M...even if there's 10x this demand secretly that's still < 100M of compute",
    "author_name": "dax",
-   "likes": 2330,
+   "likes": 2415,
    "story": "Dirt cheap GPUs coming next year"
   },
   {
@@ -134,8 +134,8 @@
    "url": "https://www.anthropic.com/research/early-progress-drug-development",
    "source": "Hacker News",
    "published_at": "2026-10-27T20:50:42Z",
-   "text": "205 points and 182 comments on Hacker News.",
-   "points": 205,
+   "text": "210 points and 186 comments on Hacker News.",
+   "points": 210,
    "discussion": "https://news.ycombinator.com/item?id=50265609"
   }
  ],
