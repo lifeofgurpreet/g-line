@@ -1,42 +1,7 @@
 {
  "schema": 1,
- "generated_at": "2026-10-28T07:58:35Z",
+ "generated_at": "2026-10-28T08:30:58Z",
  "items": [
-  {
-   "title": "Google DeepMind launches Genie 4, a world model powered by Gemini 3.8 Flash designed to generate in…",
-   "url": "https://www.theverge.com/tech/1019076/google-genie-4-ai-model",
-   "source": "Jay Peters / The Verge",
-   "published_at": "2026-10-27T16:11:20Z",
-   "text": "Google DeepMind launches Genie 4, a world model powered by Gemini 3.8 Flash designed to generate interactive AI simulations, in preview first to trusted testers. The Genie 4 world model offers more realism and can create audio to accompany its interactive worlds.",
-   "via": "Techmeme"
-  },
-  {
-   "title": "Over the past few months, Anthropic scientists have engaged in deep research partnerships with six…",
-   "url": "https://x.com/AnthropicAI/status/2115178675050307942",
-   "source": "𝕏 @AnthropicAI",
-   "published_at": "2026-10-27T20:27:48Z",
-   "text": "Over the past few months, Anthropic scientists have engaged in deep research partnerships with six organizations developing new medicines. We've also begun drug discovery efforts of our own. In doing so, we’ve learned much more about how Claude can support the many stages of…",
-   "author_name": "Anthropic",
-   "likes": 7831,
-   "story": "Anthropic details early drug development work with six partners and says it has acquired Mithril, a one-person company working on muscular dystrophy"
-  },
-  {
-   "title": "Claude Code 2.1.312 released",
-   "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.312",
-   "source": "Claude Code releases",
-   "published_at": "2026-10-27T20:24:20Z",
-   "text": "Added oidc.user_id_claim to the Claude apps gateway, to identify people by an id_token claim other than sub, such as Microsoft Entra ID's oid · Added click to send: in fullscreen, clicking the \"to send now\" hint under a queued message sends it right away, as its key does · Fixed managed settings and organization policy not being fetched for the rest of the session after signing in from the VS Code extension · Fixed Claude overwriting a very large CLAUDE.md, rules file or @-included file in a subdirectory after seeing only its start; Write now asks Claude to read it all or edit in place"
-  },
-  {
-   "title": "Announcing Artificial Analysis Intelligence Index v5, featuring 2 new benchmarks and 3 upgrades. Fo…",
-   "url": "https://x.com/ArtificialAnlys/status/2115265133467635877",
-   "source": "𝕏 @ArtificialAnlys",
-   "published_at": "2026-10-28T02:11:22Z",
-   "text": "Announcing Artificial Analysis Intelligence Index v5, featuring 2 new benchmarks and 3 upgrades. For the first time, the majority of the Index is built on private datasets The Artificial Analysis Intelligence Index is our composite measure of model capabilities across tasks…",
-   "author_name": "Artificial Analysis",
-   "likes": 3153,
-   "story": "Artificial Analysis Intelligence Index v5 released"
-  },
   {
    "title": "AMD says it will invest $1B in Meta's equity offering, its first Helios rackscale systems are insta…",
    "url": "https://www.cnbc.com/2026/10/27/nvidia-invest-meta.html",
@@ -46,33 +11,31 @@
    "via": "Techmeme"
   },
   {
-   "title": "Survival LLM: AI assistant and emergency library that runs on your own computer",
-   "url": "https://www.brangus.io/survival-llm",
-   "source": "Hacker News",
-   "published_at": "2026-10-27T19:55:06Z",
-   "text": "313 points and 129 comments on Hacker News.",
-   "points": 313,
-   "discussion": "https://news.ycombinator.com/item?id=50264853"
+   "title": "This is Genie 4, our most realistic and interactive world model yet. 🌐 Explore dynamic environments…",
+   "url": "https://x.com/GoogleDeepMind/status/2115114028338962672",
+   "source": "𝕏 @GoogleDeepMind",
+   "published_at": "2026-10-27T16:10:55Z",
+   "text": "This is Genie 4, our most realistic and interactive world model yet. 🌐 Explore dynamic environments in real time to see how the scene responds, sounds, and how the people in it move, react, and speak.…",
+   "author_name": "Google DeepMind",
+   "likes": 19385,
+   "story": "Google DeepMind launches Genie 4, a world model powered by Gemini 3.8 Flash designed to generate interactive AI simulations, in preview first to trusted testers"
   },
   {
-   "title": "The coding interview is dead, at least for my team at Anthropic. I've seen enough to know that it n…",
-   "url": "https://x.com/felixrieseberg/status/2115200995546566910",
-   "source": "𝕏 @felixrieseberg",
-   "published_at": "2026-10-27T21:56:30Z",
-   "text": "The coding interview is dead, at least for my team at Anthropic. I've seen enough to know that it no longer provides signal. I removed it from loops this month. I have a spicy, optimistic take - I think there's an opportunity for junior engineers:",
-   "author_name": "Felix Rieseberg",
-   "likes": 8309,
-   "story": "An Anthropic hiring manager says he stopped giving coding interviews because Claude is better at them and tells junior engineers that “hunger beats tenure”",
-   "links": [
-    "https://felixrieseberg.com/hunger-beats-tenure-advice-for-junior-engineers/"
-   ]
+   "title": "Claude Code 2.1.312 released",
+   "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.312",
+   "source": "Claude Code releases",
+   "published_at": "2026-10-27T20:24:20Z",
+   "text": "Added oidc.user_id_claim to the Claude apps gateway, to identify people by an id_token claim other than sub, such as Microsoft Entra ID's oid · Added click to send: in fullscreen, clicking the \"to send now\" hint under a queued message sends it right away, as its key does · Fixed managed settings and organization policy not being fetched for the rest of the session after signing in from the VS Code extension · Fixed Claude overwriting a very large CLAUDE.md, rules file or @-included file in a subdirectory after seeing only its start; Write now asks Claude to read it all or edit in place"
   },
   {
-   "title": "Expanding our partnership with GSA to bring Claude to all levels of government",
-   "url": "https://www.anthropic.com/news/expanding-partnership-gsa",
-   "source": "Anthropic",
-   "published_at": "2026-10-27T22:21:46Z",
-   "text": "Anthropic is an AI safety and research company that's working to build reliable, interpretable, and steerable AI systems."
+   "title": "Over the past few months, Anthropic scientists have engaged in deep research partnerships with six…",
+   "url": "https://x.com/AnthropicAI/status/2115178675050307942",
+   "source": "𝕏 @AnthropicAI",
+   "published_at": "2026-10-27T20:27:48Z",
+   "text": "Over the past few months, Anthropic scientists have engaged in deep research partnerships with six organizations developing new medicines. We've also begun drug discovery efforts of our own. In doing so, we’ve learned much more about how Claude can support the many stages of…",
+   "author_name": "Anthropic",
+   "likes": 7921,
+   "story": "Anthropic details early drug development work with six partners and says it has acquired Mithril, a one-person company working on muscular dystrophy"
   },
   {
    "title": "Source: Apple has discussed charging $2,899 for the 14-inch MacBook Pro with an OLED XDR touch scre…",
@@ -83,22 +46,59 @@
    "via": "Techmeme"
   },
   {
-   "title": "Everyday tasks? No sweat. Faster graphics? Nailed it. On-device AI? You bet. It’s the new 14-inch M…",
-   "url": "https://x.com/gregjoz/status/2115068193870143604",
-   "source": "𝕏 @gregjoz",
-   "published_at": "2026-10-27T13:08:48Z",
-   "text": "Everyday tasks? No sweat. Faster graphics? Nailed it. On-device AI? You bet. It’s the new 14-inch MacBook Pro and iMac, faster than ever and supercharged by M6.",
-   "author_name": "Greg Joswiak",
-   "likes": 9155,
-   "story": "Apple unveils a 14\" MacBook Pro with an M6, which has a 12-core CPU and a 12-core GPU, 16GB or 32GB of unified memory, and Wi-Fi 7, for $1,999+ from November 6"
+   "title": "Survival LLM: AI assistant and emergency library that runs on your own computer",
+   "url": "https://www.brangus.io/survival-llm",
+   "source": "Hacker News",
+   "published_at": "2026-10-27T19:55:06Z",
+   "text": "324 points and 135 comments on Hacker News.",
+   "points": 324,
+   "discussion": "https://news.ycombinator.com/item?id=50264853"
+  },
+  {
+   "title": "Announcing Artificial Analysis Intelligence Index v5, featuring 2 new benchmarks and 3 upgrades. Fo…",
+   "url": "https://x.com/ArtificialAnlys/status/2115265133467635877",
+   "source": "𝕏 @ArtificialAnlys",
+   "published_at": "2026-10-28T02:11:22Z",
+   "text": "Announcing Artificial Analysis Intelligence Index v5, featuring 2 new benchmarks and 3 upgrades. For the first time, the majority of the Index is built on private datasets The Artificial Analysis Intelligence Index is our composite measure of model capabilities across tasks…",
+   "author_name": "Artificial Analysis",
+   "likes": 3292,
+   "story": "Artificial Analysis Intelligence Index v5 released"
+  },
+  {
+   "title": "Expanding our partnership with GSA to bring Claude to all levels of government",
+   "url": "https://www.anthropic.com/news/expanding-partnership-gsa",
+   "source": "Anthropic",
+   "published_at": "2026-10-27T22:21:46Z",
+   "text": "Anthropic is an AI safety and research company that's working to build reliable, interpretable, and steerable AI systems."
+  },
+  {
+   "title": "Apple unveils a 14\" MacBook Pro with an M6, which has a 12-core CPU and a 12-core GPU, 16GB or 32GB…",
+   "url": "https://www.apple.com/newsroom/2026/10/apple-introduces-the-new-14-inch-macbook-pro-with-m6/",
+   "source": "Apple",
+   "published_at": "2026-10-27T13:08:06Z",
+   "text": "Apple unveils a 14\" MacBook Pro with an M6, which has a 12-core CPU and a 12-core GPU, 16GB or 32GB of unified memory, and Wi-Fi 7, for $1,999+ from November 6. Supercharged by M6, the 14-inch MacBook Pro features incredible performance and next-level AI capabilities, enhanced connectivity …",
+   "via": "Techmeme"
+  },
+  {
+   "title": "The coding interview is dead, at least for my team at Anthropic. I've seen enough to know that it n…",
+   "url": "https://x.com/felixrieseberg/status/2115200995546566910",
+   "source": "𝕏 @felixrieseberg",
+   "published_at": "2026-10-27T21:56:30Z",
+   "text": "The coding interview is dead, at least for my team at Anthropic. I've seen enough to know that it no longer provides signal. I removed it from loops this month. I have a spicy, optimistic take - I think there's an opportunity for junior engineers:",
+   "author_name": "Felix Rieseberg",
+   "likes": 8492,
+   "story": "An Anthropic hiring manager says he stopped giving coding interviews because Claude is better at them and tells junior engineers that “hunger beats tenure”",
+   "links": [
+    "https://felixrieseberg.com/hunger-beats-tenure-advice-for-junior-engineers/"
+   ]
   },
   {
    "title": "Anthropic trained Claude on illegally obtained Stanford professors' books",
    "url": "https://stanforddaily.com/2026/10/27/professors-books-pirated-to-train-claude/",
    "source": "Hacker News",
    "published_at": "2026-10-27T15:28:26Z",
-   "text": "513 points and 273 comments on Hacker News.",
-   "points": 513,
+   "text": "519 points and 274 comments on Hacker News.",
+   "points": 519,
    "discussion": "https://news.ycombinator.com/item?id=50260814"
   },
   {
@@ -108,7 +108,7 @@
    "published_at": "2026-10-27T19:34:55Z",
    "text": "ok to put what i'm saying about demand in context openrouter is the most successful model router, you can almost serve 100% of their deepseek traffic yesterday on a single GB300 rack this is worth 6-7M...even if there's 10x this demand secretly that's still < 100M of compute",
    "author_name": "dax",
-   "likes": 2415,
+   "likes": 2479,
    "story": "Dirt cheap GPUs coming next year"
   },
   {
@@ -118,7 +118,7 @@
    "published_at": "2026-10-26T17:16:36Z",
    "text": "Microsoft India sends VEO (voluntary exit offer) to employees in level 70 and below in most of the orgs One month of base pay per year in microsoft + 3 months pay Decision to be made in a month.",
    "author_name": "Harveen Singh Chadha",
-   "likes": 6011,
+   "likes": 6009,
    "story": "Microsoft offers buyouts to ~60K workers, including at a VP level and below across the US, Canada, India, and the UK; its headcount at the end of June was 223K"
   },
   {
@@ -134,8 +134,8 @@
    "url": "https://www.anthropic.com/research/early-progress-drug-development",
    "source": "Hacker News",
    "published_at": "2026-10-27T20:50:42Z",
-   "text": "210 points and 186 comments on Hacker News.",
-   "points": 210,
+   "text": "216 points and 193 comments on Hacker News.",
+   "points": 216,
    "discussion": "https://news.ycombinator.com/item?id=50265609"
   }
  ],
