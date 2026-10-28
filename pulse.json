@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-28T04:15:09Z",
+ "generated_at": "2026-10-28T04:47:14Z",
  "items": [
   {
    "title": "Google DeepMind launches Genie 4, a world model powered by Gemini 3.8 Flash designed to generate in…",
@@ -17,7 +17,7 @@
    "published_at": "2026-10-27T20:27:48Z",
    "text": "Over the past few months, Anthropic scientists have engaged in deep research partnerships with six organizations developing new medicines. We've also begun drug discovery efforts of our own. In doing so, we’ve learned much more about how Claude can support the many stages of…",
    "author_name": "Anthropic",
-   "likes": 6750,
+   "likes": 6917,
    "story": "Anthropic details early drug development work with six partners and says it has acquired Mithril, a one-person company working on muscular dystrophy"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-10-28T02:11:22Z",
    "text": "Announcing Artificial Analysis Intelligence Index v5, featuring 2 new benchmarks and 3 upgrades. For the first time, the majority of the Index is built on private datasets The Artificial Analysis Intelligence Index is our composite measure of model capabilities across tasks…",
    "author_name": "Artificial Analysis",
-   "likes": 1798,
+   "likes": 2032,
    "story": "Artificial Analysis Intelligence Index v5 released"
   },
   {
@@ -44,7 +44,7 @@
    "published_at": "2026-10-27T21:56:30Z",
    "text": "The coding interview is dead, at least for my team at Anthropic. I've seen enough to know that it no longer provides signal. I removed it from loops this month. I have a spicy, optimistic take - I think there's an opportunity for junior engineers:",
    "author_name": "Felix Rieseberg",
-   "likes": 6196,
+   "likes": 6517,
    "story": "An Anthropic hiring manager says he stopped giving coding interviews because Claude is better at them and tells junior engineers that “hunger beats tenure”",
    "links": [
     "https://felixrieseberg.com/hunger-beats-tenure-advice-for-junior-engineers/"
@@ -63,8 +63,8 @@
    "url": "https://stanforddaily.com/2026/10/27/professors-books-pirated-to-train-claude/",
    "source": "Hacker News",
    "published_at": "2026-10-27T15:28:26Z",
-   "text": "492 points and 268 comments on Hacker News.",
-   "points": 492,
+   "text": "496 points and 269 comments on Hacker News.",
+   "points": 496,
    "discussion": "https://news.ycombinator.com/item?id=50260814"
   },
   {
@@ -74,7 +74,7 @@
    "published_at": "2026-10-27T13:08:48Z",
    "text": "Everyday tasks? No sweat. Faster graphics? Nailed it. On-device AI? You bet. It’s the new 14-inch MacBook Pro and iMac, faster than ever and supercharged by M6.",
    "author_name": "Greg Joswiak",
-   "likes": 8980,
+   "likes": 9016,
    "story": "Apple unveils a 14\" MacBook Pro with an M6, which has a 12-core CPU and a 12-core GPU, 16GB or 32GB of unified memory, and Wi-Fi 7, for $1,999+ from November 6"
   },
   {
@@ -85,31 +85,44 @@
    "text": "Anthropic is an AI safety and research company that's working to build reliable, interpretable, and steerable AI systems."
   },
   {
-   "title": "Source: Apple has discussed charging $2,899 for the 14-inch MacBook Pro with an OLED XDR touch scre…",
-   "url": "https://www.bloomberg.com/news/articles/2026-10-27/apple-14-inch-16-inch-macbook-pro-touch-price-is-likely-2-899-laptop-details?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc5MzEzODg1NiwiZXhwIjoxNzkzNzQzNjU2LCJhcnRpY2xlSWQiOiJUTktaNE9UOTZPU0kwMCIsImJjb25uZWN0SWQiOiJDNEVEQ0FFMUZBMDU0MEJFQTI0QTlGMjExQzFFOTA4MCJ9.-r0-k5GENAkA0QuY_42jePcRdcwpSByLQzUz6ZPG9LI",
-   "source": "Mark Gurman / Bloomberg",
-   "published_at": "2026-10-27T22:21:03Z",
-   "text": "Source: Apple has discussed charging $2,899 for the 14-inch MacBook Pro with an OLED XDR touch screen and M5 Pro chip, $400 more than the current M5 Pro model. Apple Inc., after successfully betting this month that consumers are willing to pay $2,000 or more for a foldable iPhone …",
+   "title": "Anthropic's S-1 implies a $40T+ annual TAM based on the economic value of knowledge work in 2025, t…",
+   "url": "https://www.wsj.com/tech/ai/see-how-anthropic-arrived-at-its-mind-boggling-40-trillion-market-opportunity-948c56a0?st=QmxiSy",
+   "source": "Wall Street Journal",
+   "published_at": "2026-10-28T04:21:00Z",
+   "text": "Anthropic's S-1 implies a $40T+ annual TAM based on the economic value of knowledge work in 2025, topping SpaceX's $28.5T estimate, without explicitly naming it. The company's estimated market opportunity, tied to the economic value of work produced by knowledge workers, tops SpaceX's enormous figure from earlier this year",
    "via": "Techmeme"
   },
   {
-   "title": "Anthropic valuation: $1.5 trillion Walmart valuation: $960 Billion Anthropic revenue: $16.3 billion…",
-   "url": "https://x.com/0xSweep/status/2114729342874140700",
-   "source": "𝕏 @0xSweep",
-   "published_at": "2026-10-26T14:42:19Z",
-   "text": "Anthropic valuation: $1.5 trillion Walmart valuation: $960 Billion Anthropic revenue: $16.3 billion Walmart revenue: $365 billion",
-   "author_name": "Sweep",
-   "likes": 19356,
-   "story": "Anthropic's S-1 shows an 85% gross margin in H1 from running its models, a reality check for skeptics who said pay-as-you-go model sales wouldn't be profitable"
+   "title": "NEW: Apple bets customers will pay a big premium for touch-screen, OLED laptops. The company has di…",
+   "url": "https://x.com/markgurman/status/2115204306043593004",
+   "source": "𝕏 @markgurman",
+   "published_at": "2026-10-27T22:09:39Z",
+   "text": "NEW: Apple bets customers will pay a big premium for touch-screen, OLED laptops. The company has discussed charging $400 more, pricing the 14-inch touch MacBook Pro from $2,899. That could make the 16-inch model at least $3,399.",
+   "author_name": "Mark Gurman",
+   "likes": 800,
+   "story": "Source: Apple has discussed charging $2,899 for the 14-inch MacBook Pro with an OLED XDR touch screen and M5 Pro chip, $400 more than the current M5 Pro model",
+   "links": [
+    "https://www.bloomberg.com/news/articles/2026-10-27/apple-14-inch-16-inch-macbook-pro-touch-price-is-likely-2-899-laptop-details?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc5MzEzODg1NiwiZXhwIjoxNzkzNzQzNjU2LCJhcnRpY2xlSWQiOiJUTktaNE9UOTZPU0kwMCIsImJjb25uZWN0SWQiOiJDNEVEQ0FFMUZBMDU0MEJFQTI0QTlGMjExQzFFOTA4MCJ9.-r0-k5GENAkA0QuY_42jePcRdcwpSByLQzUz6ZPG9LI"
+   ]
   },
   {
    "title": "Survival LLM: AI assistant and emergency library that runs on your own computer",
    "url": "https://www.brangus.io/survival-llm",
    "source": "Hacker News",
    "published_at": "2026-10-27T19:55:06Z",
-   "text": "226 points and 116 comments on Hacker News.",
-   "points": 226,
+   "text": "243 points and 119 comments on Hacker News.",
+   "points": 243,
    "discussion": "https://news.ycombinator.com/item?id=50264853"
+  },
+  {
+   "title": "ok to put what i'm saying about demand in context openrouter is the most successful model router, y…",
+   "url": "https://x.com/thdxr/status/2115165365630026178",
+   "source": "𝕏 @thdxr",
+   "published_at": "2026-10-27T19:34:55Z",
+   "text": "ok to put what i'm saying about demand in context openrouter is the most successful model router, you can almost serve 100% of their deepseek traffic yesterday on a single GB300 rack this is worth 6-7M...even if there's 10x this demand secretly that's still < 100M of compute",
+   "author_name": "dax",
+   "likes": 2007,
+   "story": "Dirt cheap GPUs coming next year"
   },
   {
    "title": "Microsoft India sends VEO (voluntary exit offer) to employees in level 70 and below in most of the…",
@@ -118,25 +131,16 @@
    "published_at": "2026-10-26T17:16:36Z",
    "text": "Microsoft India sends VEO (voluntary exit offer) to employees in level 70 and below in most of the orgs One month of base pay per year in microsoft + 3 months pay Decision to be made in a month.",
    "author_name": "Harveen Singh Chadha",
-   "likes": 6005,
+   "likes": 6008,
    "story": "Microsoft offers buyouts to ~60K workers, including at a VP level and below across the US, Canada, India, and the UK; its headcount at the end of June was 223K"
   },
   {
-   "title": "Apple adds a beta AI assistant built on Apple's and OpenAI's models to Keynote, Pages, Numbers, and…",
-   "url": "https://www.theverge.com/tech/1019373/apple-pages-keynote-numbers-ai-chatbot-update",
-   "source": "Emma Roth / The Verge",
-   "published_at": "2026-10-27T14:11:07Z",
-   "text": "Apple adds a beta AI assistant built on Apple's and OpenAI's models to Keynote, Pages, Numbers, and Logic Pro, plus MCP support to Keynote, Pages, and Numbers. The new AI assistant can draft and restructure content in Pages, while organizing data in Numbers.",
+   "title": "Memo: Amazon says measuring AI adoption solely by token usage or code generation is “deeply flawed,…",
+   "url": "https://www.cnbc.com/2026/10/27/amazon-ai-coding-tokenmaxxing.html",
+   "source": "Annie Palmer / CNBC",
+   "published_at": "2026-10-27T19:16:53Z",
+   "text": "Memo: Amazon says measuring AI adoption solely by token usage or code generation is “deeply flawed,” as it discourages staff from tokenmaxxing. Amazon laid out its AI usage guidelines for software engineers in a memo to staffers, and discouraged employees from turning to …",
    "via": "Techmeme"
-  },
-  {
-   "title": "Early progress on accelerating drug development with Claude",
-   "url": "https://www.anthropic.com/research/early-progress-drug-development",
-   "source": "Hacker News",
-   "published_at": "2026-10-27T20:50:42Z",
-   "text": "165 points and 154 comments on Hacker News.",
-   "points": 165,
-   "discussion": "https://news.ycombinator.com/item?id=50265609"
   }
  ],
  "sources": "curated, Techmeme, X (found via Techmeme, Reddit, the Internet Archive), Claude Code releases, Anthropic, Hacker News, Simon Willison"
