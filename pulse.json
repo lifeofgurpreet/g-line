@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-28T22:25:03Z",
+ "generated_at": "2026-10-28T22:56:49Z",
  "items": [
   {
    "title": "Google unveils Gemini 4 Carbon, its “strongest model with state-of-the-art cybersecurity” capabilit…",
@@ -17,8 +17,8 @@
    "published_at": "2026-10-28T20:05:31Z",
    "text": "Q3 is in the books! We’re now on a half-trillion annual revenue run rate, with Alphabet revenues growing at 25%. - Our AI investments are driving overall Search query growth, including commercial queries - our YoY query growth rate is the highest it’s been in the last five…",
    "author_name": "Sundar Pichai",
-   "likes": 4933,
-   "story": "Alphabet reports Q3 revenue up 25% YoY to $127.6B, Google Cloud revenue up 103% to $30.7B, and Google Services revenue up 11% to $96.3B"
+   "likes": 5365,
+   "story": "Alphabet reports Q3 revenue up 25% YoY to $127.58B, vs. $128.22B est., Google Cloud revenue up 103% to $30.7B, vs. $28.7B est.; GOOG drops 9%+ after hours"
   },
   {
    "title": "Claude Code 2.1.312 released",
@@ -34,7 +34,7 @@
    "published_at": "2026-10-28T02:11:22Z",
    "text": "Announcing Artificial Analysis Intelligence Index v5, featuring 2 new benchmarks and 3 upgrades. For the first time, the majority of the Index is built on private datasets The Artificial Analysis Intelligence Index is our composite measure of model capabilities across tasks…",
    "author_name": "Artificial Analysis",
-   "likes": 5112,
+   "likes": 5126,
    "story": "Artificial Analysis unveils the Intelligence Index v5 with new coding and science benchmarks; 60% of the Index is based on private test sets or held-out answers"
   },
   {
@@ -50,19 +50,19 @@
    "url": "https://www.wired.com/story/massive-leak-exposes-41000-homeland-security-workers-including-undercover-ice-agents/",
    "source": "Hacker News",
    "published_at": "2026-10-28T21:03:24Z",
-   "text": "132 points and 43 comments on Hacker News.",
-   "points": 132,
+   "text": "196 points and 66 comments on Hacker News.",
+   "points": 196,
    "discussion": "https://news.ycombinator.com/item?id=50280864"
   },
   {
-   "title": "lot of people making stuff up so here's some more context you can imagine there's hidden enterprise…",
-   "url": "https://x.com/thdxr/status/2115447178722177226",
-   "source": "𝕏 @thdxr",
-   "published_at": "2026-10-28T14:14:45Z",
-   "text": "lot of people making stuff up so here's some more context you can imagine there's hidden enterprise demand for open source models that isn't visible but if you look at the top inference providers that aggressively go after this business, they have shared some numbers and they…",
-   "author_name": "dax",
-   "likes": 1106,
-   "story": "Theory: Local is going to explode at enterprises"
+   "title": "Lots of debate this week on whether journals should ban AI in peer review. We actually tested this…",
+   "url": "https://x.com/rust_ruslan/status/2115493697001513053",
+   "source": "𝕏 @rust_ruslan",
+   "published_at": "2026-10-28T17:19:35Z",
+   "text": "Lots of debate this week on whether journals should ban AI in peer review. We actually tested this in our new preprint, and the results were pretty clear to me. For context, I've reviewed for most of the big journals and evaluated 1,000 human reviews as an editor. I love to…",
+   "author_name": "Ruslan Rust",
+   "likes": 506,
+   "story": "LLMs are significantly better at finding mistakes in papers than trained human reviewers"
   },
   {
    "title": "Expanding our partnership with GSA to bring Claude to all levels of government",
@@ -87,23 +87,13 @@
    "via": "Techmeme"
   },
   {
-   "title": "Lots of debate this week on whether journals should ban AI in peer review. We actually tested this…",
-   "url": "https://x.com/rust_ruslan/status/2115493697001513053",
-   "source": "𝕏 @rust_ruslan",
-   "published_at": "2026-10-28T17:19:35Z",
-   "text": "Lots of debate this week on whether journals should ban AI in peer review. We actually tested this in our new preprint, and the results were pretty clear to me. For context, I've reviewed for most of the big journals and evaluated 1,000 human reviews as an editor. I love to…",
-   "author_name": "Ruslan Rust",
-   "likes": 429,
-   "story": "LLMs are significantly better at finding mistakes in papers than trained human reviewers"
-  },
-  {
-   "title": "Google AI gets cagey when asked who won the 2020 elections",
-   "url": "https://arstechnica.com/ai/2026/10/google-ai-gets-cagey-when-asked-who-won-the-2020-elections/",
+   "title": "Kentucky man becomes the first humanist granted religious exemption from AI",
+   "url": "https://religionnews.com/2026/10/26/in-a-first-a-humanist-granted-a-religious-exemption-from-using-ai/",
    "source": "Hacker News",
-   "published_at": "2026-10-28T20:10:16Z",
-   "text": "89 points and 46 comments on Hacker News.",
-   "points": 89,
-   "discussion": "https://news.ycombinator.com/item?id=50280178"
+   "published_at": "2026-10-28T13:41:30Z",
+   "text": "397 points and 445 comments on Hacker News.",
+   "points": 397,
+   "discussion": "https://news.ycombinator.com/item?id=50273396"
   },
   {
    "title": "Research: professional analysts followed AI agents' randomly assigned “leans” on subjective analyti…",
@@ -114,13 +104,13 @@
    "via": "Techmeme"
   },
   {
-   "title": "Kentucky man becomes the first humanist granted religious exemption from AI",
-   "url": "https://religionnews.com/2026/10/26/in-a-first-a-humanist-granted-a-religious-exemption-from-using-ai/",
+   "title": "Dayjob: Tax – evaluating AI agents on 50 professional tax assignments",
+   "url": "https://surgehq.ai/blog/dayjob-tax",
    "source": "Hacker News",
-   "published_at": "2026-10-28T13:41:30Z",
-   "text": "390 points and 437 comments on Hacker News.",
-   "points": 390,
-   "discussion": "https://news.ycombinator.com/item?id=50273396"
+   "published_at": "2026-10-28T15:46:30Z",
+   "text": "174 points and 103 comments on Hacker News.",
+   "points": 174,
+   "discussion": "https://news.ycombinator.com/item?id=50275626"
   },
   {
    "title": "Anthropic files S-1 with the SEC for proposed initial public offering",
@@ -128,6 +118,14 @@
    "source": "Anthropic",
    "published_at": "2026-10-27T21:40:46Z",
    "text": "Anthropic is an AI safety and research company that's working to build reliable, interpretable, and steerable AI systems."
+  },
+  {
+   "title": "Nvidia debuts Nemotron 3.5 Transcribe, an open-weight model for multilingual audio transcription an…",
+   "url": "https://siliconangle.com/2026/10/28/nvidia-releases-all-in-one-adaptable-nemotron-3-5-audio-transcription-and-translation-model/",
+   "source": "Kyt Dotson / SiliconANGLE",
+   "published_at": "2026-10-28T15:21:07Z",
+   "text": "Nvidia debuts Nemotron 3.5 Transcribe, an open-weight model for multilingual audio transcription and translation, and Granary v2, its open-source speech dataset. Nvidia Corp. today released a leaderboard-winning open artificial intelligence model for multilingual audio transcription and translation …",
+   "via": "Techmeme"
   }
  ],
  "sources": "curated, Techmeme, X (found via Techmeme, Reddit, the Internet Archive), Claude Code releases, Anthropic, Hacker News, Simon Willison"
