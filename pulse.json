@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-28T14:23:31Z",
+ "generated_at": "2026-10-28T14:55:44Z",
  "items": [
   {
    "title": "Lawsuit: the parents of a 31-year-old say OpenAI's GPT-4o guided her through an aggressive tapering…",
@@ -11,14 +11,14 @@
    "via": "Techmeme"
   },
   {
-   "title": "This is Genie 4, our most realistic and interactive world model yet. 🌐 Explore dynamic environments…",
-   "url": "https://x.com/GoogleDeepMind/status/2115114028338962672",
-   "source": "𝕏 @GoogleDeepMind",
-   "published_at": "2026-10-27T16:10:55Z",
-   "text": "This is Genie 4, our most realistic and interactive world model yet. 🌐 Explore dynamic environments in real time to see how the scene responds, sounds, and how the people in it move, react, and speak.…",
-   "author_name": "Google DeepMind",
-   "likes": 21271,
-   "story": "Google DeepMind launches Genie 4, a world model powered by Gemini 3.8 Flash designed to generate interactive AI simulations, in preview first to trusted testers"
+   "title": "Over the past few months, Anthropic scientists have engaged in deep research partnerships with six…",
+   "url": "https://x.com/AnthropicAI/status/2115178675050307942",
+   "source": "𝕏 @AnthropicAI",
+   "published_at": "2026-10-27T20:27:48Z",
+   "text": "Over the past few months, Anthropic scientists have engaged in deep research partnerships with six organizations developing new medicines. We've also begun drug discovery efforts of our own. In doing so, we’ve learned much more about how Claude can support the many stages of…",
+   "author_name": "Anthropic",
+   "likes": 8977,
+   "story": "Anthropic details early drug development work with six partners and says it has acquired Mithril, a one-person company working on muscular dystrophy"
   },
   {
    "title": "Claude Code 2.1.312 released",
@@ -34,21 +34,24 @@
    "published_at": "2026-10-28T13:00:30Z",
    "text": "Open models' demise has been greatly exaggerated, but the previous AA index did flatter them. As an industry we need more specific intelligence indices, as LLMs are used in vastly different tasks. My meta-review on the benchmarking industry.",
    "author_name": "Nathan Lambert",
-   "likes": 70,
+   "likes": 87,
    "story": "Artificial Analysis launches the Intelligence Index v5, with new coding and science benchmarks, built on private datasets; Claude Opus 5.5 (max) leads at 58",
    "links": [
     "https://www.interconnects.ai/p/artificial-analysis-v5-and-the-benchmarkers"
    ]
   },
   {
-   "title": "Over the past few months, Anthropic scientists have engaged in deep research partnerships with six…",
-   "url": "https://x.com/AnthropicAI/status/2115178675050307942",
-   "source": "𝕏 @AnthropicAI",
-   "published_at": "2026-10-27T20:27:48Z",
-   "text": "Over the past few months, Anthropic scientists have engaged in deep research partnerships with six organizations developing new medicines. We've also begun drug discovery efforts of our own. In doing so, we’ve learned much more about how Claude can support the many stages of…",
-   "author_name": "Anthropic",
-   "likes": 8890,
-   "story": "Anthropic details early drug development work with six partners and says it has acquired Mithril, a one-person company working on muscular dystrophy"
+   "title": "The coding interview is dead, at least for my team at Anthropic. I've seen enough to know that it n…",
+   "url": "https://x.com/felixrieseberg/status/2115200995546566910",
+   "source": "𝕏 @felixrieseberg",
+   "published_at": "2026-10-27T21:56:30Z",
+   "text": "The coding interview is dead, at least for my team at Anthropic. I've seen enough to know that it no longer provides signal. I removed it from loops this month. I have a spicy, optimistic take - I think there's an opportunity for junior engineers:",
+   "author_name": "Felix Rieseberg",
+   "likes": 10908,
+   "story": "An Anthropic hiring manager says he stopped giving coding interviews because Claude is better at them and tells junior engineers that “hunger beats tenure”",
+   "links": [
+    "https://felixrieseberg.com/hunger-beats-tenure-advice-for-junior-engineers/"
+   ]
   },
   {
    "title": "Sources: Anthropic's seven cofounders remain extremely influential and personally tight; Daniela Am…",
@@ -59,26 +62,23 @@
    "via": "Techmeme"
   },
   {
-   "title": "Survival LLM: AI assistant and emergency library that runs on your own computer",
-   "url": "https://www.brangus.io/survival-llm",
+   "title": "Kentucky man becomes the first humanist granted religious exemption from AI",
+   "url": "https://religionnews.com/2026/10/26/in-a-first-a-humanist-granted-a-religious-exemption-from-using-ai/",
    "source": "Hacker News",
-   "published_at": "2026-10-27T19:55:06Z",
-   "text": "426 points and 164 comments on Hacker News.",
-   "points": 426,
-   "discussion": "https://news.ycombinator.com/item?id=50264853"
+   "published_at": "2026-10-28T13:41:30Z",
+   "text": "102 points and 107 comments on Hacker News.",
+   "points": 102,
+   "discussion": "https://news.ycombinator.com/item?id=50273396"
   },
   {
-   "title": "The coding interview is dead, at least for my team at Anthropic. I've seen enough to know that it n…",
-   "url": "https://x.com/felixrieseberg/status/2115200995546566910",
-   "source": "𝕏 @felixrieseberg",
-   "published_at": "2026-10-27T21:56:30Z",
-   "text": "The coding interview is dead, at least for my team at Anthropic. I've seen enough to know that it no longer provides signal. I removed it from loops this month. I have a spicy, optimistic take - I think there's an opportunity for junior engineers:",
-   "author_name": "Felix Rieseberg",
-   "likes": 10732,
-   "story": "An Anthropic hiring manager says he stopped giving coding interviews because Claude is better at them and tells junior engineers that “hunger beats tenure”",
-   "links": [
-    "https://felixrieseberg.com/hunger-beats-tenure-advice-for-junior-engineers/"
-   ]
+   "title": "ok to put what i'm saying about demand in context openrouter is the most successful model router, y…",
+   "url": "https://x.com/thdxr/status/2115165365630026178",
+   "source": "𝕏 @thdxr",
+   "published_at": "2026-10-27T19:34:55Z",
+   "text": "ok to put what i'm saying about demand in context openrouter is the most successful model router, you can almost serve 100% of their deepseek traffic yesterday on a single GB300 rack this is worth 6-7M...even if there's 10x this demand secretly that's still < 100M of compute",
+   "author_name": "dax",
+   "likes": 3458,
+   "story": "Dirt cheap GPUs coming next year"
   },
   {
    "title": "Expanding our partnership with GSA to bring Claude to all levels of government",
@@ -103,36 +103,26 @@
    "via": "Techmeme"
   },
   {
-   "title": "ok to put what i'm saying about demand in context openrouter is the most successful model router, y…",
-   "url": "https://x.com/thdxr/status/2115165365630026178",
-   "source": "𝕏 @thdxr",
-   "published_at": "2026-10-27T19:34:55Z",
-   "text": "ok to put what i'm saying about demand in context openrouter is the most successful model router, you can almost serve 100% of their deepseek traffic yesterday on a single GB300 rack this is worth 6-7M...even if there's 10x this demand secretly that's still < 100M of compute",
-   "author_name": "dax",
-   "likes": 3384,
-   "story": "Dirt cheap GPUs coming next year"
-  },
-  {
-   "title": "Anthropic trained Claude on illegally obtained Stanford professors' books",
-   "url": "https://stanforddaily.com/2026/10/27/professors-books-pirated-to-train-claude/",
-   "source": "Hacker News",
-   "published_at": "2026-10-27T15:28:26Z",
-   "text": "542 points and 280 comments on Hacker News.",
-   "points": 542,
-   "discussion": "https://news.ycombinator.com/item?id=50260814"
-  },
-  {
    "title": "NEW: Apple bets customers will pay a big premium for touch-screen, OLED laptops. The company has di…",
    "url": "https://x.com/markgurman/status/2115204306043593004",
    "source": "𝕏 @markgurman",
    "published_at": "2026-10-27T22:09:39Z",
    "text": "NEW: Apple bets customers will pay a big premium for touch-screen, OLED laptops. The company has discussed charging $400 more, pricing the 14-inch touch MacBook Pro from $2,899. That could make the 16-inch model at least $3,399.",
    "author_name": "Mark Gurman",
-   "likes": 990,
+   "likes": 1004,
    "story": "Source: Apple has discussed charging $2,899 for the 14-inch MacBook Pro with an OLED XDR touch screen and M5 Pro chip, $400 more than the current M5 Pro model",
    "links": [
     "https://www.bloomberg.com/news/articles/2026-10-27/apple-14-inch-16-inch-macbook-pro-touch-price-is-likely-2-899-laptop-details?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc5MzEzODg1NiwiZXhwIjoxNzkzNzQzNjU2LCJhcnRpY2xlSWQiOiJUTktaNE9UOTZPU0kwMCIsImJjb25uZWN0SWQiOiJDNEVEQ0FFMUZBMDU0MEJFQTI0QTlGMjExQzFFOTA4MCJ9.-r0-k5GENAkA0QuY_42jePcRdcwpSByLQzUz6ZPG9LI"
    ]
+  },
+  {
+   "title": "Survival LLM: AI assistant and emergency library that runs on your own computer",
+   "url": "https://www.brangus.io/survival-llm",
+   "source": "Hacker News",
+   "published_at": "2026-10-27T19:55:06Z",
+   "text": "438 points and 166 comments on Hacker News.",
+   "points": 438,
+   "discussion": "https://news.ycombinator.com/item?id=50264853"
   },
   {
    "title": "So...what would you like to see in our future Gemma models?",
@@ -141,8 +131,16 @@
    "published_at": "2026-10-28T07:53:30Z",
    "text": "So...what would you like to see in our future Gemma models?",
    "author_name": "Omar Sanseviero",
-   "likes": 542,
+   "likes": 575,
    "story": "Gemma 5 models soon ??"
+  },
+  {
+   "title": "Samsung unveils the $229 Galaxy Buds On, its first open-fit, C-shaped cuff earbuds to compete with…",
+   "url": "https://www.bloomberg.com/news/articles/2026-10-28/samsung-unveils-galaxy-buds-on-clip-on-earbuds-for-229",
+   "source": "Chris Welch / Bloomberg",
+   "published_at": "2026-10-28T12:26:03Z",
+   "text": "Samsung unveils the $229 Galaxy Buds On, its first open-fit, C-shaped cuff earbuds to compete with Sony and Bose, designed with AI's help, shipping November 6. Samsung Electronics Co. unveiled its first pair of cuff-style earbuds, adding to a growing category that includes products from Sony Group Corp. …",
+   "via": "Techmeme"
   }
  ],
  "sources": "curated, Techmeme, X (found via Techmeme, Reddit, the Internet Archive), Claude Code releases, Anthropic, Hacker News, Simon Willison"
