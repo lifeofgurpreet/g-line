@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-28T02:05:40Z",
+ "generated_at": "2026-10-28T02:37:38Z",
  "items": [
   {
    "title": "Google DeepMind launches Genie 4, a world model powered by Gemini 3.8 Flash designed to generate in…",
@@ -17,7 +17,7 @@
    "published_at": "2026-10-27T20:27:48Z",
    "text": "Over the past few months, Anthropic scientists have engaged in deep research partnerships with six organizations developing new medicines. We've also begun drug discovery efforts of our own. In doing so, we’ve learned much more about how Claude can support the many stages of…",
    "author_name": "Anthropic",
-   "likes": 5886,
+   "likes": 6125,
    "story": "Anthropic details early drug development work with six partners and says it has acquired Mithril, a one-person company working on muscular dystrophy"
   },
   {
@@ -28,24 +28,17 @@
    "text": "Added oidc.user_id_claim to the Claude apps gateway, to identify people by an id_token claim other than sub, such as Microsoft Entra ID's oid · Added click to send: in fullscreen, clicking the \"to send now\" hint under a queued message sends it right away, as its key does · Fixed managed settings and organization policy not being fetched for the rest of the session after signing in from the VS Code extension · Fixed Claude overwriting a very large CLAUDE.md, rules file or @-included file in a subdirectory after seeing only its start; Write now asks Claude to read it all or edit in place"
   },
   {
-   "title": "I'm so glad AI killed LeetCode-style coding interviews. I've talked to young AI talent, and most wo…",
-   "url": "https://x.com/Yuchenj_UW/status/2115220471377768841",
-   "source": "𝕏 @Yuchenj_UW",
-   "published_at": "2026-10-27T23:13:53Z",
-   "text": "I'm so glad AI killed LeetCode-style coding interviews. I've talked to young AI talent, and most would simply skip companies that still use LeetCode interviews. I agree with Felix. Taste, empathy, principled thinking, business sense, and agency are what really matter.",
-   "author_name": "Yuchen Jin",
-   "likes": 783,
-   "story": "An Anthropic hiring manager says he stopped giving coding interviews because Claude is better at them and tells junior engineers that “hunger beats tenure”"
-  },
-  {
-   "title": "Everyday tasks? No sweat. Faster graphics? Nailed it. On-device AI? You bet. It’s the new 14-inch M…",
-   "url": "https://x.com/gregjoz/status/2115068193870143604",
-   "source": "𝕏 @gregjoz",
-   "published_at": "2026-10-27T13:08:48Z",
-   "text": "Everyday tasks? No sweat. Faster graphics? Nailed it. On-device AI? You bet. It’s the new 14-inch MacBook Pro and iMac, faster than ever and supercharged by M6.",
-   "author_name": "Greg Joswiak",
-   "likes": 8847,
-   "story": "Apple unveils a 14\" MacBook Pro with an M6, which has a 12-core CPU and a 12-core GPU, 16GB or 32GB of unified memory, and Wi-Fi 7, for $1,999+ from November 6"
+   "title": "The coding interview is dead, at least for my team at Anthropic. I've seen enough to know that it n…",
+   "url": "https://x.com/felixrieseberg/status/2115200995546566910",
+   "source": "𝕏 @felixrieseberg",
+   "published_at": "2026-10-27T21:56:30Z",
+   "text": "The coding interview is dead, at least for my team at Anthropic. I've seen enough to know that it no longer provides signal. I removed it from loops this month. I have a spicy, optimistic take - I think there's an opportunity for junior engineers:",
+   "author_name": "Felix Rieseberg",
+   "likes": 5000,
+   "story": "An Anthropic hiring manager says he stopped giving coding interviews because Claude is better at them and tells junior engineers that “hunger beats tenure”",
+   "links": [
+    "https://felixrieseberg.com/hunger-beats-tenure-advice-for-junior-engineers/"
+   ]
   },
   {
    "title": "AMD says it will invest $1B in Meta's equity offering, its first Helios rackscale systems are insta…",
@@ -60,22 +53,19 @@
    "url": "https://stanforddaily.com/2026/10/27/professors-books-pirated-to-train-claude/",
    "source": "Hacker News",
    "published_at": "2026-10-27T15:28:26Z",
-   "text": "475 points and 265 comments on Hacker News.",
-   "points": 475,
+   "text": "480 points and 265 comments on Hacker News.",
+   "points": 480,
    "discussion": "https://news.ycombinator.com/item?id=50260814"
   },
   {
-   "title": "NEW: Apple bets customers will pay a big premium for touch-screen, OLED laptops. The company has di…",
-   "url": "https://x.com/markgurman/status/2115204306043593004",
-   "source": "𝕏 @markgurman",
-   "published_at": "2026-10-27T22:09:39Z",
-   "text": "NEW: Apple bets customers will pay a big premium for touch-screen, OLED laptops. The company has discussed charging $400 more, pricing the 14-inch touch MacBook Pro from $2,899. That could make the 16-inch model at least $3,399.",
-   "author_name": "Mark Gurman",
-   "likes": 687,
-   "story": "Source: Apple has discussed charging $2,899 for the 14-inch MacBook Pro with an OLED XDR touch screen and M5 Pro chip, $400 more than the current M5 Pro model",
-   "links": [
-    "https://www.bloomberg.com/news/articles/2026-10-27/apple-14-inch-16-inch-macbook-pro-touch-price-is-likely-2-899-laptop-details?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc5MzEzODg1NiwiZXhwIjoxNzkzNzQzNjU2LCJhcnRpY2xlSWQiOiJUTktaNE9UOTZPU0kwMCIsImJjb25uZWN0SWQiOiJDNEVEQ0FFMUZBMDU0MEJFQTI0QTlGMjExQzFFOTA4MCJ9.-r0-k5GENAkA0QuY_42jePcRdcwpSByLQzUz6ZPG9LI"
-   ]
+   "title": "Everyday tasks? No sweat. Faster graphics? Nailed it. On-device AI? You bet. It’s the new 14-inch M…",
+   "url": "https://x.com/gregjoz/status/2115068193870143604",
+   "source": "𝕏 @gregjoz",
+   "published_at": "2026-10-27T13:08:48Z",
+   "text": "Everyday tasks? No sweat. Faster graphics? Nailed it. On-device AI? You bet. It’s the new 14-inch MacBook Pro and iMac, faster than ever and supercharged by M6.",
+   "author_name": "Greg Joswiak",
+   "likes": 8890,
+   "story": "Apple unveils a 14\" MacBook Pro with an M6, which has a 12-core CPU and a 12-core GPU, 16GB or 32GB of unified memory, and Wi-Fi 7, for $1,999+ from November 6"
   },
   {
    "title": "Expanding our partnership with GSA to bring Claude to all levels of government",
@@ -85,11 +75,11 @@
    "text": "Anthropic is an AI safety and research company that's working to build reliable, interpretable, and steerable AI systems."
   },
   {
-   "title": "Oracle adds ChatGPT and Codex to its app stack and expands Oracle Cloud Infrastructure lineup with…",
-   "url": "https://www.cnbc.com/2026/10/27/oracle-openai-chatgpt-codex-google-tpus.html",
-   "source": "Seema Mody / CNBC",
-   "published_at": "2026-10-27T16:31:32Z",
-   "text": "Oracle adds ChatGPT and Codex to its app stack and expands Oracle Cloud Infrastructure lineup with Google TPUs, OpenAI's Jalapeño chip, and Cerebras hardware. Oracle on Tuesday announced an expanded collaboration with OpenAI that brings the artificial intelligence lab's ChatGPT …",
+   "title": "Source: Apple has discussed charging $2,899 for the 14-inch MacBook Pro with an OLED XDR touch scre…",
+   "url": "https://www.bloomberg.com/news/articles/2026-10-27/apple-14-inch-16-inch-macbook-pro-touch-price-is-likely-2-899-laptop-details?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc5MzEzODg1NiwiZXhwIjoxNzkzNzQzNjU2LCJhcnRpY2xlSWQiOiJUTktaNE9UOTZPU0kwMCIsImJjb25uZWN0SWQiOiJDNEVEQ0FFMUZBMDU0MEJFQTI0QTlGMjExQzFFOTA4MCJ9.-r0-k5GENAkA0QuY_42jePcRdcwpSByLQzUz6ZPG9LI",
+   "source": "Mark Gurman / Bloomberg",
+   "published_at": "2026-10-27T22:21:03Z",
+   "text": "Source: Apple has discussed charging $2,899 for the 14-inch MacBook Pro with an OLED XDR touch screen and M5 Pro chip, $400 more than the current M5 Pro model. Apple Inc., after successfully betting this month that consumers are willing to pay $2,000 or more for a foldable iPhone …",
    "via": "Techmeme"
   },
   {
@@ -107,8 +97,8 @@
    "url": "https://www.brangus.io/survival-llm",
    "source": "Hacker News",
    "published_at": "2026-10-27T19:55:06Z",
-   "text": "191 points and 101 comments on Hacker News.",
-   "points": 191,
+   "text": "199 points and 107 comments on Hacker News.",
+   "points": 199,
    "discussion": "https://news.ycombinator.com/item?id=50264853"
   },
   {
@@ -118,26 +108,32 @@
    "published_at": "2026-10-26T17:16:36Z",
    "text": "Microsoft India sends VEO (voluntary exit offer) to employees in level 70 and below in most of the orgs One month of base pay per year in microsoft + 3 months pay Decision to be made in a month.",
    "author_name": "Harveen Singh Chadha",
-   "likes": 5996,
+   "likes": 5998,
    "story": "Microsoft offers buyouts to ~60K workers, including at a VP level and below across the US, Canada, India, and the UK; its headcount at the end of June was 223K"
   },
   {
-   "title": "Your OCR says it’s done—but did it get everything right? 🤔 In high-stakes workflows, even a small e…",
-   "url": "https://x.com/OpenBMB/status/2115124474882469955",
-   "source": "𝕏 @OpenBMB",
-   "published_at": "2026-10-27T16:52:26Z",
-   "text": "Your OCR says it’s done—but did it get everything right? 🤔 In high-stakes workflows, even a small error can be costly. 🚀 Meet the MiniCPM-OCR suite: an open-source solution to parse fast and guard the results. Two new models: 🔹 MiniCPM-OCR 1.0 — SOTA OCR performance and ht…",
-   "author_name": "OpenBMB",
-   "likes": 380,
-   "story": "OpenBMB released a 1.3B OCR model and a separate 2B model to check its work"
+   "title": "Oracle adds ChatGPT and Codex to its app stack and expands Oracle Cloud Infrastructure lineup with…",
+   "url": "https://www.cnbc.com/2026/10/27/oracle-openai-chatgpt-codex-google-tpus.html",
+   "source": "Seema Mody / CNBC",
+   "published_at": "2026-10-27T16:31:32Z",
+   "text": "Oracle adds ChatGPT and Codex to its app stack and expands Oracle Cloud Infrastructure lineup with Google TPUs, OpenAI's Jalapeño chip, and Cerebras hardware. Oracle on Tuesday announced an expanded collaboration with OpenAI that brings the artificial intelligence lab's ChatGPT …",
+   "via": "Techmeme"
   },
   {
-   "title": "Apple adds a beta AI assistant built on Apple's and OpenAI's models to Keynote, Pages, Numbers, and…",
-   "url": "https://www.theverge.com/tech/1019373/apple-pages-keynote-numbers-ai-chatbot-update",
-   "source": "Emma Roth / The Verge",
-   "published_at": "2026-10-27T14:11:07Z",
-   "text": "Apple adds a beta AI assistant built on Apple's and OpenAI's models to Keynote, Pages, Numbers, and Logic Pro, plus MCP support to Keynote, Pages, and Numbers. The new AI assistant can draft and restructure content in Pages, while organizing data in Numbers.",
-   "via": "Techmeme"
+   "title": "Early progress on accelerating drug development with Claude",
+   "url": "https://www.anthropic.com/research/early-progress-drug-development",
+   "source": "Hacker News",
+   "published_at": "2026-10-27T20:50:42Z",
+   "text": "144 points and 125 comments on Hacker News.",
+   "points": 144,
+   "discussion": "https://news.ycombinator.com/item?id=50265609"
+  },
+  {
+   "title": "Anthropic files S-1 with the SEC for proposed initial public offering",
+   "url": "https://www.anthropic.com/news/s1-sec",
+   "source": "Anthropic",
+   "published_at": "2026-10-27T21:40:46Z",
+   "text": "Anthropic is an AI safety and research company that's working to build reliable, interpretable, and steerable AI systems."
   }
  ],
  "sources": "curated, Techmeme, X (found via Techmeme, Reddit, the Internet Archive), Claude Code releases, Anthropic, Hacker News, Simon Willison"
