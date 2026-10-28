@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-28T01:33:33Z",
+ "generated_at": "2026-10-28T02:05:40Z",
  "items": [
   {
    "title": "Google DeepMind launches Genie 4, a world model powered by Gemini 3.8 Flash designed to generate in…",
@@ -17,7 +17,7 @@
    "published_at": "2026-10-27T20:27:48Z",
    "text": "Over the past few months, Anthropic scientists have engaged in deep research partnerships with six organizations developing new medicines. We've also begun drug discovery efforts of our own. In doing so, we’ve learned much more about how Claude can support the many stages of…",
    "author_name": "Anthropic",
-   "likes": 5648,
+   "likes": 5886,
    "story": "Anthropic details early drug development work with six partners and says it has acquired Mithril, a one-person company working on muscular dystrophy"
   },
   {
@@ -34,8 +34,35 @@
    "published_at": "2026-10-27T23:13:53Z",
    "text": "I'm so glad AI killed LeetCode-style coding interviews. I've talked to young AI talent, and most would simply skip companies that still use LeetCode interviews. I agree with Felix. Taste, empathy, principled thinking, business sense, and agency are what really matter.",
    "author_name": "Yuchen Jin",
-   "likes": 660,
+   "likes": 783,
    "story": "An Anthropic hiring manager says he stopped giving coding interviews because Claude is better at them and tells junior engineers that “hunger beats tenure”"
+  },
+  {
+   "title": "Everyday tasks? No sweat. Faster graphics? Nailed it. On-device AI? You bet. It’s the new 14-inch M…",
+   "url": "https://x.com/gregjoz/status/2115068193870143604",
+   "source": "𝕏 @gregjoz",
+   "published_at": "2026-10-27T13:08:48Z",
+   "text": "Everyday tasks? No sweat. Faster graphics? Nailed it. On-device AI? You bet. It’s the new 14-inch MacBook Pro and iMac, faster than ever and supercharged by M6.",
+   "author_name": "Greg Joswiak",
+   "likes": 8847,
+   "story": "Apple unveils a 14\" MacBook Pro with an M6, which has a 12-core CPU and a 12-core GPU, 16GB or 32GB of unified memory, and Wi-Fi 7, for $1,999+ from November 6"
+  },
+  {
+   "title": "AMD says it will invest $1B in Meta's equity offering, its first Helios rackscale systems are insta…",
+   "url": "https://www.cnbc.com/2026/10/27/nvidia-invest-meta.html",
+   "source": "Kai Nicol-Schwarz / CNBC",
+   "published_at": "2026-10-28T01:46:31Z",
+   "text": "AMD says it will invest $1B in Meta's equity offering, its first Helios rackscale systems are installed at Meta, and its EPYC CPUs power Meta's Muse AI agent. Nvidia and Advanced Micro Devices have said they will invest a total of $4 billion in Meta after the social media …",
+   "via": "Techmeme"
+  },
+  {
+   "title": "Anthropic trained Claude on illegally obtained Stanford professors' books",
+   "url": "https://stanforddaily.com/2026/10/27/professors-books-pirated-to-train-claude/",
+   "source": "Hacker News",
+   "published_at": "2026-10-27T15:28:26Z",
+   "text": "475 points and 265 comments on Hacker News.",
+   "points": 475,
+   "discussion": "https://news.ycombinator.com/item?id=50260814"
   },
   {
    "title": "NEW: Apple bets customers will pay a big premium for touch-screen, OLED laptops. The company has di…",
@@ -44,28 +71,26 @@
    "published_at": "2026-10-27T22:09:39Z",
    "text": "NEW: Apple bets customers will pay a big premium for touch-screen, OLED laptops. The company has discussed charging $400 more, pricing the 14-inch touch MacBook Pro from $2,899. That could make the 16-inch model at least $3,399.",
    "author_name": "Mark Gurman",
-   "likes": 639,
+   "likes": 687,
    "story": "Source: Apple has discussed charging $2,899 for the 14-inch MacBook Pro with an OLED XDR touch screen and M5 Pro chip, $400 more than the current M5 Pro model",
    "links": [
     "https://www.bloomberg.com/news/articles/2026-10-27/apple-14-inch-16-inch-macbook-pro-touch-price-is-likely-2-899-laptop-details?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc5MzEzODg1NiwiZXhwIjoxNzkzNzQzNjU2LCJhcnRpY2xlSWQiOiJUTktaNE9UOTZPU0kwMCIsImJjb25uZWN0SWQiOiJDNEVEQ0FFMUZBMDU0MEJFQTI0QTlGMjExQzFFOTA4MCJ9.-r0-k5GENAkA0QuY_42jePcRdcwpSByLQzUz6ZPG9LI"
    ]
   },
   {
-   "title": "Apple unveils a 14\" MacBook Pro with an M6, which has a 12-core CPU and a 12-core GPU, 16GB or 32GB…",
-   "url": "https://www.apple.com/newsroom/2026/10/apple-introduces-the-new-14-inch-macbook-pro-with-m6/",
-   "source": "Apple",
-   "published_at": "2026-10-27T13:08:06Z",
-   "text": "Apple unveils a 14\" MacBook Pro with an M6, which has a 12-core CPU and a 12-core GPU, 16GB or 32GB of unified memory, and Wi-Fi 7, for $1,999+ from November 6. Supercharged by M6, the 14-inch MacBook Pro features incredible performance and next-level AI capabilities, enhanced connectivity …",
-   "via": "Techmeme"
+   "title": "Expanding our partnership with GSA to bring Claude to all levels of government",
+   "url": "https://www.anthropic.com/news/expanding-partnership-gsa",
+   "source": "Anthropic",
+   "published_at": "2026-10-27T22:21:46Z",
+   "text": "Anthropic is an AI safety and research company that's working to build reliable, interpretable, and steerable AI systems."
   },
   {
-   "title": "Anthropic trained Claude on illegally obtained Stanford professors' books",
-   "url": "https://stanforddaily.com/2026/10/27/professors-books-pirated-to-train-claude/",
-   "source": "Hacker News",
-   "published_at": "2026-10-27T15:28:26Z",
-   "text": "463 points and 263 comments on Hacker News.",
-   "points": 463,
-   "discussion": "https://news.ycombinator.com/item?id=50260814"
+   "title": "Oracle adds ChatGPT and Codex to its app stack and expands Oracle Cloud Infrastructure lineup with…",
+   "url": "https://www.cnbc.com/2026/10/27/oracle-openai-chatgpt-codex-google-tpus.html",
+   "source": "Seema Mody / CNBC",
+   "published_at": "2026-10-27T16:31:32Z",
+   "text": "Oracle adds ChatGPT and Codex to its app stack and expands Oracle Cloud Infrastructure lineup with Google TPUs, OpenAI's Jalapeño chip, and Cerebras hardware. Oracle on Tuesday announced an expanded collaboration with OpenAI that brings the artificial intelligence lab's ChatGPT …",
+   "via": "Techmeme"
   },
   {
    "title": "Anthropic valuation: $1.5 trillion Walmart valuation: $960 Billion Anthropic revenue: $16.3 billion…",
@@ -78,19 +103,13 @@
    "story": "Anthropic's S-1 shows an 85% gross margin in H1 from running its models, a reality check for skeptics who said pay-as-you-go model sales wouldn't be profitable"
   },
   {
-   "title": "Expanding our partnership with GSA to bring Claude to all levels of government",
-   "url": "https://www.anthropic.com/news/expanding-partnership-gsa",
-   "source": "Anthropic",
-   "published_at": "2026-10-27T22:21:46Z",
-   "text": "Anthropic is an AI safety and research company that's working to build reliable, interpretable, and steerable AI systems."
-  },
-  {
-   "title": "Nvidia and Meta expand their Muse partnership, including Meta deploying more Vera Rubin and Vera CP…",
-   "url": "https://www.wsj.com/tech/ai/nvidia-to-invest-3-billion-in-metas-equity-offering-as-they-expand-ai-partnership-e8d3850a?st=4eEQYV&reflink=desktopwebshare_permalink",
-   "source": "Wall Street Journal",
-   "published_at": "2026-10-27T08:11:04Z",
-   "text": "Nvidia and Meta expand their Muse partnership, including Meta deploying more Vera Rubin and Vera CPUs; Nvidia will invest $3B in Meta's planned equity fundraise. Investment comes as Facebook's parent seeks up to $95 billion via stock offerings — Nvidia and Meta Platforms are expanding …",
-   "via": "Techmeme"
+   "title": "Survival LLM: AI assistant and emergency library that runs on your own computer",
+   "url": "https://www.brangus.io/survival-llm",
+   "source": "Hacker News",
+   "published_at": "2026-10-27T19:55:06Z",
+   "text": "191 points and 101 comments on Hacker News.",
+   "points": 191,
+   "discussion": "https://news.ycombinator.com/item?id=50264853"
   },
   {
    "title": "Microsoft India sends VEO (voluntary exit offer) to employees in level 70 and below in most of the…",
@@ -99,17 +118,18 @@
    "published_at": "2026-10-26T17:16:36Z",
    "text": "Microsoft India sends VEO (voluntary exit offer) to employees in level 70 and below in most of the orgs One month of base pay per year in microsoft + 3 months pay Decision to be made in a month.",
    "author_name": "Harveen Singh Chadha",
-   "likes": 5994,
+   "likes": 5996,
    "story": "Microsoft offers buyouts to ~60K workers, including at a VP level and below across the US, Canada, India, and the UK; its headcount at the end of June was 223K"
   },
   {
-   "title": "Survival LLM: AI assistant and emergency library that runs on your own computer",
-   "url": "https://www.brangus.io/survival-llm",
-   "source": "Hacker News",
-   "published_at": "2026-10-27T19:55:06Z",
-   "text": "180 points and 98 comments on Hacker News.",
-   "points": 180,
-   "discussion": "https://news.ycombinator.com/item?id=50264853"
+   "title": "Your OCR says it’s done—but did it get everything right? 🤔 In high-stakes workflows, even a small e…",
+   "url": "https://x.com/OpenBMB/status/2115124474882469955",
+   "source": "𝕏 @OpenBMB",
+   "published_at": "2026-10-27T16:52:26Z",
+   "text": "Your OCR says it’s done—but did it get everything right? 🤔 In high-stakes workflows, even a small error can be costly. 🚀 Meet the MiniCPM-OCR suite: an open-source solution to parse fast and guard the results. Two new models: 🔹 MiniCPM-OCR 1.0 — SOTA OCR performance and ht…",
+   "author_name": "OpenBMB",
+   "likes": 380,
+   "story": "OpenBMB released a 1.3B OCR model and a separate 2B model to check its work"
   },
   {
    "title": "Apple adds a beta AI assistant built on Apple's and OpenAI's models to Keynote, Pages, Numbers, and…",
@@ -118,22 +138,6 @@
    "published_at": "2026-10-27T14:11:07Z",
    "text": "Apple adds a beta AI assistant built on Apple's and OpenAI's models to Keynote, Pages, Numbers, and Logic Pro, plus MCP support to Keynote, Pages, and Numbers. The new AI assistant can draft and restructure content in Pages, while organizing data in Numbers.",
    "via": "Techmeme"
-  },
-  {
-   "title": "Early progress on accelerating drug development with Claude",
-   "url": "https://www.anthropic.com/research/early-progress-drug-development",
-   "source": "Hacker News",
-   "published_at": "2026-10-27T20:50:42Z",
-   "text": "120 points and 104 comments on Hacker News.",
-   "points": 120,
-   "discussion": "https://news.ycombinator.com/item?id=50265609"
-  },
-  {
-   "title": "Anthropic files S-1 with the SEC for proposed initial public offering",
-   "url": "https://www.anthropic.com/news/s1-sec",
-   "source": "Anthropic",
-   "published_at": "2026-10-27T21:40:46Z",
-   "text": "Anthropic is an AI safety and research company that's working to build reliable, interpretable, and steerable AI systems."
   }
  ],
  "sources": "curated, Techmeme, X (found via Techmeme, Reddit, the Internet Archive), Claude Code releases, Anthropic, Hacker News, Simon Willison"
