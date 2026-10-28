@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-28T06:54:49Z",
+ "generated_at": "2026-10-28T07:26:52Z",
  "items": [
   {
    "title": "Google DeepMind launches Genie 4, a world model powered by Gemini 3.8 Flash designed to generate in…",
@@ -17,7 +17,7 @@
    "published_at": "2026-10-27T20:27:48Z",
    "text": "Over the past few months, Anthropic scientists have engaged in deep research partnerships with six organizations developing new medicines. We've also begun drug discovery efforts of our own. In doing so, we’ve learned much more about how Claude can support the many stages of…",
    "author_name": "Anthropic",
-   "likes": 7567,
+   "likes": 7711,
    "story": "Anthropic details early drug development work with six partners and says it has acquired Mithril, a one-person company working on muscular dystrophy"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-10-28T02:11:22Z",
    "text": "Announcing Artificial Analysis Intelligence Index v5, featuring 2 new benchmarks and 3 upgrades. For the first time, the majority of the Index is built on private datasets The Artificial Analysis Intelligence Index is our composite measure of model capabilities across tasks…",
    "author_name": "Artificial Analysis",
-   "likes": 2758,
+   "likes": 2964,
    "story": "Artificial Analysis Intelligence Index v5 released"
   },
   {
@@ -50,8 +50,8 @@
    "url": "https://stanforddaily.com/2026/10/27/professors-books-pirated-to-train-claude/",
    "source": "Hacker News",
    "published_at": "2026-10-27T15:28:26Z",
-   "text": "506 points and 270 comments on Hacker News.",
-   "points": 506,
+   "text": "511 points and 271 comments on Hacker News.",
+   "points": 511,
    "discussion": "https://news.ycombinator.com/item?id=50260814"
   },
   {
@@ -61,7 +61,7 @@
    "published_at": "2026-10-27T21:56:30Z",
    "text": "The coding interview is dead, at least for my team at Anthropic. I've seen enough to know that it no longer provides signal. I removed it from loops this month. I have a spicy, optimistic take - I think there's an opportunity for junior engineers:",
    "author_name": "Felix Rieseberg",
-   "likes": 7766,
+   "likes": 8058,
    "story": "An Anthropic hiring manager says he stopped giving coding interviews because Claude is better at them and tells junior engineers that “hunger beats tenure”",
    "links": [
     "https://felixrieseberg.com/hunger-beats-tenure-advice-for-junior-engineers/"
@@ -89,7 +89,7 @@
    "published_at": "2026-10-27T13:08:48Z",
    "text": "Everyday tasks? No sweat. Faster graphics? Nailed it. On-device AI? You bet. It’s the new 14-inch MacBook Pro and iMac, faster than ever and supercharged by M6.",
    "author_name": "Greg Joswiak",
-   "likes": 9112,
+   "likes": 9129,
    "story": "Apple unveils a 14\" MacBook Pro with an M6, which has a 12-core CPU and a 12-core GPU, 16GB or 32GB of unified memory, and Wi-Fi 7, for $1,999+ from November 6"
   },
   {
@@ -97,8 +97,8 @@
    "url": "https://www.brangus.io/survival-llm",
    "source": "Hacker News",
    "published_at": "2026-10-27T19:55:06Z",
-   "text": "291 points and 125 comments on Hacker News.",
-   "points": 291,
+   "text": "297 points and 125 comments on Hacker News.",
+   "points": 297,
    "discussion": "https://news.ycombinator.com/item?id=50264853"
   },
   {
@@ -108,7 +108,7 @@
    "published_at": "2026-10-27T19:34:55Z",
    "text": "ok to put what i'm saying about demand in context openrouter is the most successful model router, you can almost serve 100% of their deepseek traffic yesterday on a single GB300 rack this is worth 6-7M...even if there's 10x this demand secretly that's still < 100M of compute",
    "author_name": "dax",
-   "likes": 2263,
+   "likes": 2330,
    "story": "Dirt cheap GPUs coming next year"
   },
   {
@@ -122,11 +122,11 @@
    "story": "Microsoft offers buyouts to ~60K workers, including at a VP level and below across the US, Canada, India, and the UK; its headcount at the end of June was 223K"
   },
   {
-   "title": "Anthropic's S-1 implies a $40T+ annual TAM based on the economic value of knowledge work in 2025, t…",
+   "title": "Anthropic's S-1 implies a $40T+ annual TAM based on knowledge work's economic value in 2025, toppin…",
    "url": "https://www.wsj.com/tech/ai/see-how-anthropic-arrived-at-its-mind-boggling-40-trillion-market-opportunity-948c56a0?st=QmxiSy",
    "source": "Wall Street Journal",
    "published_at": "2026-10-28T04:21:00Z",
-   "text": "Anthropic's S-1 implies a $40T+ annual TAM based on the economic value of knowledge work in 2025, topping SpaceX's $28.5T estimate, without explicitly naming it. The company's estimated market opportunity, tied to the economic value of work produced by knowledge workers, tops SpaceX's enormous figure from earlier this year",
+   "text": "Anthropic's S-1 implies a $40T+ annual TAM based on knowledge work's economic value in 2025, topping SpaceX's $28.5T estimate, without explicitly naming TAM. The company's estimated market opportunity, tied to the economic value of work produced by knowledge workers, tops SpaceX's enormous figure from earlier this year",
    "via": "Techmeme"
   },
   {
@@ -134,8 +134,8 @@
    "url": "https://www.anthropic.com/research/early-progress-drug-development",
    "source": "Hacker News",
    "published_at": "2026-10-27T20:50:42Z",
-   "text": "199 points and 177 comments on Hacker News.",
-   "points": 199,
+   "text": "205 points and 182 comments on Hacker News.",
+   "points": 205,
    "discussion": "https://news.ycombinator.com/item?id=50265609"
   }
  ],
