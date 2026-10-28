@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-28T05:19:30Z",
+ "generated_at": "2026-10-28T05:51:14Z",
  "items": [
   {
    "title": "Google DeepMind launches Genie 4, a world model powered by Gemini 3.8 Flash designed to generate in…",
@@ -17,7 +17,7 @@
    "published_at": "2026-10-27T20:27:48Z",
    "text": "Over the past few months, Anthropic scientists have engaged in deep research partnerships with six organizations developing new medicines. We've also begun drug discovery efforts of our own. In doing so, we’ve learned much more about how Claude can support the many stages of…",
    "author_name": "Anthropic",
-   "likes": 7064,
+   "likes": 7237,
    "story": "Anthropic details early drug development work with six partners and says it has acquired Mithril, a one-person company working on muscular dystrophy"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-10-28T02:11:22Z",
    "text": "Announcing Artificial Analysis Intelligence Index v5, featuring 2 new benchmarks and 3 upgrades. For the first time, the majority of the Index is built on private datasets The Artificial Analysis Intelligence Index is our composite measure of model capabilities across tasks…",
    "author_name": "Artificial Analysis",
-   "likes": 2203,
+   "likes": 2369,
    "story": "Artificial Analysis Intelligence Index v5 released"
   },
   {
@@ -50,8 +50,8 @@
    "url": "https://stanforddaily.com/2026/10/27/professors-books-pirated-to-train-claude/",
    "source": "Hacker News",
    "published_at": "2026-10-27T15:28:26Z",
-   "text": "497 points and 269 comments on Hacker News.",
-   "points": 497,
+   "text": "499 points and 269 comments on Hacker News.",
+   "points": 499,
    "discussion": "https://news.ycombinator.com/item?id=50260814"
   },
   {
@@ -61,7 +61,7 @@
    "published_at": "2026-10-27T21:56:30Z",
    "text": "The coding interview is dead, at least for my team at Anthropic. I've seen enough to know that it no longer provides signal. I removed it from loops this month. I have a spicy, optimistic take - I think there's an opportunity for junior engineers:",
    "author_name": "Felix Rieseberg",
-   "likes": 6829,
+   "likes": 7115,
    "story": "An Anthropic hiring manager says he stopped giving coding interviews because Claude is better at them and tells junior engineers that “hunger beats tenure”",
    "links": [
     "https://felixrieseberg.com/hunger-beats-tenure-advice-for-junior-engineers/"
@@ -89,7 +89,7 @@
    "published_at": "2026-10-27T22:09:39Z",
    "text": "NEW: Apple bets customers will pay a big premium for touch-screen, OLED laptops. The company has discussed charging $400 more, pricing the 14-inch touch MacBook Pro from $2,899. That could make the 16-inch model at least $3,399.",
    "author_name": "Mark Gurman",
-   "likes": 811,
+   "likes": 828,
    "story": "Source: Apple has discussed charging $2,899 for the 14-inch MacBook Pro with an OLED XDR touch screen and M5 Pro chip, $400 more than the current M5 Pro model",
    "links": [
     "https://www.bloomberg.com/news/articles/2026-10-27/apple-14-inch-16-inch-macbook-pro-touch-price-is-likely-2-899-laptop-details?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc5MzEzODg1NiwiZXhwIjoxNzkzNzQzNjU2LCJhcnRpY2xlSWQiOiJUTktaNE9UOTZPU0kwMCIsImJjb25uZWN0SWQiOiJDNEVEQ0FFMUZBMDU0MEJFQTI0QTlGMjExQzFFOTA4MCJ9.-r0-k5GENAkA0QuY_42jePcRdcwpSByLQzUz6ZPG9LI"
@@ -100,8 +100,8 @@
    "url": "https://www.brangus.io/survival-llm",
    "source": "Hacker News",
    "published_at": "2026-10-27T19:55:06Z",
-   "text": "257 points and 120 comments on Hacker News.",
-   "points": 257,
+   "text": "269 points and 120 comments on Hacker News.",
+   "points": 269,
    "discussion": "https://news.ycombinator.com/item?id=50264853"
   },
   {
@@ -111,7 +111,7 @@
    "published_at": "2026-10-27T19:34:55Z",
    "text": "ok to put what i'm saying about demand in context openrouter is the most successful model router, you can almost serve 100% of their deepseek traffic yesterday on a single GB300 rack this is worth 6-7M...even if there's 10x this demand secretly that's still < 100M of compute",
    "author_name": "dax",
-   "likes": 2067,
+   "likes": 2116,
    "story": "Dirt cheap GPUs coming next year"
   },
   {
@@ -121,7 +121,7 @@
    "published_at": "2026-10-26T17:16:36Z",
    "text": "Microsoft India sends VEO (voluntary exit offer) to employees in level 70 and below in most of the orgs One month of base pay per year in microsoft + 3 months pay Decision to be made in a month.",
    "author_name": "Harveen Singh Chadha",
-   "likes": 6010,
+   "likes": 6011,
    "story": "Microsoft offers buyouts to ~60K workers, including at a VP level and below across the US, Canada, India, and the UK; its headcount at the end of June was 223K"
   },
   {
@@ -137,8 +137,8 @@
    "url": "https://www.anthropic.com/research/early-progress-drug-development",
    "source": "Hacker News",
    "published_at": "2026-10-27T20:50:42Z",
-   "text": "184 points and 166 comments on Hacker News.",
-   "points": 184,
+   "text": "190 points and 167 comments on Hacker News.",
+   "points": 190,
    "discussion": "https://news.ycombinator.com/item?id=50265609"
   }
  ],
