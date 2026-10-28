@@ -1,13 +1,13 @@
 {
  "schema": 1,
- "generated_at": "2026-10-28T13:50:46Z",
+ "generated_at": "2026-10-28T14:23:31Z",
  "items": [
   {
-   "title": "Anthropic details early drug development work with six partners and says it has acquired Mithril, a…",
-   "url": "https://www.anthropic.com/research/early-progress-drug-development",
-   "source": "Anthropic",
-   "published_at": "2026-10-27T21:47:00Z",
-   "text": "Anthropic details early drug development work with six partners and says it has acquired Mithril, a one-person company working on muscular dystrophy. There are many opportunities to speed up drug development, even beyond the most commonly discussed applications of AI, like proposing initial designs for new molecules.",
+   "title": "Lawsuit: the parents of a 31-year-old say OpenAI's GPT-4o guided her through an aggressive tapering…",
+   "url": "https://www.nytimes.com/2026/10/27/well/ai-chatgpt-medication-epilepsy-death.html?unlocked_article_code=1.L1E.iJJI.hjmxpaYuBDhc&smid=nytcore-ios-share",
+   "source": "Teddy Rosenbluth / New York…",
+   "published_at": "2026-10-28T10:05:55Z",
+   "text": "Lawsuit: the parents of a 31-year-old say OpenAI's GPT-4o guided her through an aggressive tapering plan off epilepsy meds, leading to her death in February. The chatbot helped a woman taper off a lifesaving drug and hide the plan from her doctors. — 1.3k",
    "via": "Techmeme"
   },
   {
@@ -17,7 +17,7 @@
    "published_at": "2026-10-27T16:10:55Z",
    "text": "This is Genie 4, our most realistic and interactive world model yet. 🌐 Explore dynamic environments in real time to see how the scene responds, sounds, and how the people in it move, react, and speak.…",
    "author_name": "Google DeepMind",
-   "likes": 21086,
+   "likes": 21271,
    "story": "Google DeepMind launches Genie 4, a world model powered by Gemini 3.8 Flash designed to generate interactive AI simulations, in preview first to trusted testers"
   },
   {
@@ -34,21 +34,65 @@
    "published_at": "2026-10-28T13:00:30Z",
    "text": "Open models' demise has been greatly exaggerated, but the previous AA index did flatter them. As an industry we need more specific intelligence indices, as LLMs are used in vastly different tasks. My meta-review on the benchmarking industry.",
    "author_name": "Nathan Lambert",
-   "likes": 54,
+   "likes": 70,
    "story": "Artificial Analysis launches the Intelligence Index v5, with new coding and science benchmarks, built on private datasets; Claude Opus 5.5 (max) leads at 58",
    "links": [
     "https://www.interconnects.ai/p/artificial-analysis-v5-and-the-benchmarkers"
    ]
   },
   {
-   "title": "ChatGPT helped a 31-year-old woman plan how to quit her seizure medication, then told her to hide i…",
-   "url": "https://x.com/aakashgupta/status/2115310340997329032",
-   "source": "𝕏 @aakashgupta",
-   "published_at": "2026-10-28T05:11:00Z",
-   "text": "ChatGPT helped a 31-year-old woman plan how to quit her seizure medication, then told her to hide it from her doctor. The plan had her completely off the drug by February 12. She died on February 12. Her parents sued OpenAI today, and the details in the complaint are hard to…",
-   "author_name": "Aakash Gupta",
-   "likes": 6827,
-   "story": "Lawsuit: the parents of a 31-year-old say OpenAI's GPT-4o guided her through an aggressive tapering plan off epilepsy meds, leading to her death in February"
+   "title": "Over the past few months, Anthropic scientists have engaged in deep research partnerships with six…",
+   "url": "https://x.com/AnthropicAI/status/2115178675050307942",
+   "source": "𝕏 @AnthropicAI",
+   "published_at": "2026-10-27T20:27:48Z",
+   "text": "Over the past few months, Anthropic scientists have engaged in deep research partnerships with six organizations developing new medicines. We've also begun drug discovery efforts of our own. In doing so, we’ve learned much more about how Claude can support the many stages of…",
+   "author_name": "Anthropic",
+   "likes": 8890,
+   "story": "Anthropic details early drug development work with six partners and says it has acquired Mithril, a one-person company working on muscular dystrophy"
+  },
+  {
+   "title": "Sources: Anthropic's seven cofounders remain extremely influential and personally tight; Daniela Am…",
+   "url": "https://www.ft.com/content/24a35e41-2641-4cec-97f5-a974412f9952",
+   "source": "Financial Times",
+   "published_at": "2026-10-28T11:45:56Z",
+   "text": "Sources: Anthropic's seven cofounders remain extremely influential and personally tight; Daniela Amodei, who runs operations, is seen as a good balance to Dario. Anthropic's seven billionaire co-founders are set to gain collective control over one of the world's biggest companies following …",
+   "via": "Techmeme"
+  },
+  {
+   "title": "Survival LLM: AI assistant and emergency library that runs on your own computer",
+   "url": "https://www.brangus.io/survival-llm",
+   "source": "Hacker News",
+   "published_at": "2026-10-27T19:55:06Z",
+   "text": "426 points and 164 comments on Hacker News.",
+   "points": 426,
+   "discussion": "https://news.ycombinator.com/item?id=50264853"
+  },
+  {
+   "title": "The coding interview is dead, at least for my team at Anthropic. I've seen enough to know that it n…",
+   "url": "https://x.com/felixrieseberg/status/2115200995546566910",
+   "source": "𝕏 @felixrieseberg",
+   "published_at": "2026-10-27T21:56:30Z",
+   "text": "The coding interview is dead, at least for my team at Anthropic. I've seen enough to know that it no longer provides signal. I removed it from loops this month. I have a spicy, optimistic take - I think there's an opportunity for junior engineers:",
+   "author_name": "Felix Rieseberg",
+   "likes": 10732,
+   "story": "An Anthropic hiring manager says he stopped giving coding interviews because Claude is better at them and tells junior engineers that “hunger beats tenure”",
+   "links": [
+    "https://felixrieseberg.com/hunger-beats-tenure-advice-for-junior-engineers/"
+   ]
+  },
+  {
+   "title": "Expanding our partnership with GSA to bring Claude to all levels of government",
+   "url": "https://www.anthropic.com/news/expanding-partnership-gsa",
+   "source": "Anthropic",
+   "published_at": "2026-10-27T22:21:46Z",
+   "text": "Anthropic is an AI safety and research company that's working to build reliable, interpretable, and steerable AI systems."
+  },
+  {
+   "title": "The October inflection point for vibe game development",
+   "url": "https://simonwillison.net/2026/Oct/28/vibe-game-development/",
+   "source": "Simon Willison's weblog",
+   "published_at": "2026-10-28T13:55:15Z",
+   "text": "I've written before about how November 2025 was an inflection point for coding agents - the point where Opus 4.5 and GPT-5.1 crossed a tipping point that meant their respective coding agents became reliable daily drivers for software engineers. I think we've reached a new inflection point in October 2026, and this time it's for vibe coding computer games . Tree Appreciator Emberwick Battle Drones Pumpkin Farmer, aka Quarter Sun Cove Four times as insulting What happens if someone actually puts the work in? You should build a game!"
   },
   {
    "title": "Research: professional analysts followed AI agents' randomly assigned “leans” on subjective analyti…",
@@ -59,73 +103,23 @@
    "via": "Techmeme"
   },
   {
-   "title": "Survival LLM: AI assistant and emergency library that runs on your own computer",
-   "url": "https://www.brangus.io/survival-llm",
-   "source": "Hacker News",
-   "published_at": "2026-10-27T19:55:06Z",
-   "text": "417 points and 157 comments on Hacker News.",
-   "points": 417,
-   "discussion": "https://news.ycombinator.com/item?id=50264853"
-  },
-  {
-   "title": "We're expanding our partnership with @USGSA. Under a new OneGov agreement, we are bringing Claude t…",
-   "url": "https://x.com/AnthropicAI/status/2115207004293853358",
-   "source": "𝕏 @AnthropicAI",
-   "published_at": "2026-10-27T22:20:23Z",
-   "text": "We're expanding our partnership with @USGSA. Under a new OneGov agreement, we are bringing Claude to federal, state, local, tribal, and territorial governments at 40% off.",
-   "author_name": "Anthropic",
-   "likes": 1778,
-   "story": "Anthropic expands its US GSA partnership to give federal, state, local, tribal, and territorial governments a 40% discount on Claude, estimated to save $1B",
-   "links": [
-    "https://www.anthropic.com/news/expanding-partnership-gsa"
-   ]
-  },
-  {
-   "title": "Anthropic files S-1 with the SEC for proposed initial public offering",
-   "url": "https://www.anthropic.com/news/s1-sec",
-   "source": "Anthropic",
-   "published_at": "2026-10-27T21:40:46Z",
-   "text": "Anthropic is an AI safety and research company that's working to build reliable, interpretable, and steerable AI systems."
-  },
-  {
-   "title": "Anthropic's S-1 implies a $40T+ annual TAM based on knowledge work's economic value in 2025, toppin…",
-   "url": "https://www.wsj.com/tech/ai/see-how-anthropic-arrived-at-its-mind-boggling-40-trillion-market-opportunity-948c56a0?st=QmxiSy",
-   "source": "Wall Street Journal",
-   "published_at": "2026-10-28T04:21:00Z",
-   "text": "Anthropic's S-1 implies a $40T+ annual TAM based on knowledge work's economic value in 2025, topping SpaceX's $28.5T estimate, without explicitly naming TAM. The company's estimated market opportunity, tied to the economic value of work produced by knowledge workers, tops SpaceX's enormous figure from earlier this year",
-   "via": "Techmeme"
-  },
-  {
-   "title": "The coding interview is dead, at least for my team at Anthropic. I've seen enough to know that it n…",
-   "url": "https://x.com/felixrieseberg/status/2115200995546566910",
-   "source": "𝕏 @felixrieseberg",
-   "published_at": "2026-10-27T21:56:30Z",
-   "text": "The coding interview is dead, at least for my team at Anthropic. I've seen enough to know that it no longer provides signal. I removed it from loops this month. I have a spicy, optimistic take - I think there's an opportunity for junior engineers:",
-   "author_name": "Felix Rieseberg",
-   "likes": 10522,
-   "story": "An Anthropic hiring manager says he stopped giving coding interviews because Claude is better at them and tells junior engineers that “hunger beats tenure”",
-   "links": [
-    "https://felixrieseberg.com/hunger-beats-tenure-advice-for-junior-engineers/"
-   ]
-  },
-  {
-   "title": "Anthropic trained Claude on illegally obtained Stanford professors' books",
-   "url": "https://stanforddaily.com/2026/10/27/professors-books-pirated-to-train-claude/",
-   "source": "Hacker News",
-   "published_at": "2026-10-27T15:28:26Z",
-   "text": "540 points and 279 comments on Hacker News.",
-   "points": 540,
-   "discussion": "https://news.ycombinator.com/item?id=50260814"
-  },
-  {
    "title": "ok to put what i'm saying about demand in context openrouter is the most successful model router, y…",
    "url": "https://x.com/thdxr/status/2115165365630026178",
    "source": "𝕏 @thdxr",
    "published_at": "2026-10-27T19:34:55Z",
    "text": "ok to put what i'm saying about demand in context openrouter is the most successful model router, you can almost serve 100% of their deepseek traffic yesterday on a single GB300 rack this is worth 6-7M...even if there's 10x this demand secretly that's still < 100M of compute",
    "author_name": "dax",
-   "likes": 3311,
+   "likes": 3384,
    "story": "Dirt cheap GPUs coming next year"
+  },
+  {
+   "title": "Anthropic trained Claude on illegally obtained Stanford professors' books",
+   "url": "https://stanforddaily.com/2026/10/27/professors-books-pirated-to-train-claude/",
+   "source": "Hacker News",
+   "published_at": "2026-10-27T15:28:26Z",
+   "text": "542 points and 280 comments on Hacker News.",
+   "points": 542,
+   "discussion": "https://news.ycombinator.com/item?id=50260814"
   },
   {
    "title": "NEW: Apple bets customers will pay a big premium for touch-screen, OLED laptops. The company has di…",
@@ -134,7 +128,7 @@
    "published_at": "2026-10-27T22:09:39Z",
    "text": "NEW: Apple bets customers will pay a big premium for touch-screen, OLED laptops. The company has discussed charging $400 more, pricing the 14-inch touch MacBook Pro from $2,899. That could make the 16-inch model at least $3,399.",
    "author_name": "Mark Gurman",
-   "likes": 980,
+   "likes": 990,
    "story": "Source: Apple has discussed charging $2,899 for the 14-inch MacBook Pro with an OLED XDR touch screen and M5 Pro chip, $400 more than the current M5 Pro model",
    "links": [
     "https://www.bloomberg.com/news/articles/2026-10-27/apple-14-inch-16-inch-macbook-pro-touch-price-is-likely-2-899-laptop-details?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc5MzEzODg1NiwiZXhwIjoxNzkzNzQzNjU2LCJhcnRpY2xlSWQiOiJUTktaNE9UOTZPU0kwMCIsImJjb25uZWN0SWQiOiJDNEVEQ0FFMUZBMDU0MEJFQTI0QTlGMjExQzFFOTA4MCJ9.-r0-k5GENAkA0QuY_42jePcRdcwpSByLQzUz6ZPG9LI"
@@ -147,7 +141,7 @@
    "published_at": "2026-10-28T07:53:30Z",
    "text": "So...what would you like to see in our future Gemma models?",
    "author_name": "Omar Sanseviero",
-   "likes": 501,
+   "likes": 542,
    "story": "Gemma 5 models soon ??"
   }
  ],
