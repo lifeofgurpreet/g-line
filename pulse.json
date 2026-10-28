@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-28T12:46:13Z",
+ "generated_at": "2026-10-28T13:18:19Z",
  "items": [
   {
    "title": "Anthropic details early drug development work with six partners and says it has acquired Mithril, a…",
@@ -17,7 +17,7 @@
    "published_at": "2026-10-27T16:10:55Z",
    "text": "This is Genie 4, our most realistic and interactive world model yet. 🌐 Explore dynamic environments in real time to see how the scene responds, sounds, and how the people in it move, react, and speak.…",
    "author_name": "Google DeepMind",
-   "likes": 20773,
+   "likes": 20931,
    "story": "Google DeepMind launches Genie 4, a world model powered by Gemini 3.8 Flash designed to generate interactive AI simulations, in preview first to trusted testers"
   },
   {
@@ -28,21 +28,34 @@
    "text": "Added oidc.user_id_claim to the Claude apps gateway, to identify people by an id_token claim other than sub, such as Microsoft Entra ID's oid · Added click to send: in fullscreen, clicking the \"to send now\" hint under a queued message sends it right away, as its key does · Fixed managed settings and organization policy not being fetched for the rest of the session after signing in from the VS Code extension · Fixed Claude overwriting a very large CLAUDE.md, rules file or @-included file in a subdirectory after seeing only its start; Write now asks Claude to read it all or edit in place"
   },
   {
-   "title": "Announcing Artificial Analysis Intelligence Index v5, featuring 2 new benchmarks and 3 upgrades. Fo…",
-   "url": "https://x.com/ArtificialAnlys/status/2115265133467635877",
-   "source": "𝕏 @ArtificialAnlys",
-   "published_at": "2026-10-28T02:11:22Z",
-   "text": "Announcing Artificial Analysis Intelligence Index v5, featuring 2 new benchmarks and 3 upgrades. For the first time, the majority of the Index is built on private datasets The Artificial Analysis Intelligence Index is our composite measure of model capabilities across tasks…",
-   "author_name": "Artificial Analysis",
-   "likes": 4274,
-   "story": "Artificial Analysis Intelligence Index v5 released"
+   "title": "Open models' demise has been greatly exaggerated, but the previous AA index did flatter them. As an…",
+   "url": "https://x.com/natolambert/status/2115428494515777629",
+   "source": "𝕏 @natolambert",
+   "published_at": "2026-10-28T13:00:30Z",
+   "text": "Open models' demise has been greatly exaggerated, but the previous AA index did flatter them. As an industry we need more specific intelligence indices, as LLMs are used in vastly different tasks. My meta-review on the benchmarking industry.",
+   "author_name": "Nathan Lambert",
+   "likes": 29,
+   "story": "Artificial Analysis launches the Intelligence Index v5, with new coding and science benchmarks, built on private datasets; Claude Opus 5.5 (max) leads at 58",
+   "links": [
+    "https://www.interconnects.ai/p/artificial-analysis-v5-and-the-benchmarkers"
+   ]
   },
   {
-   "title": "Lawsuit: the parents of a 31-year-old say OpenAI's GPT-4o guided her through an aggressive tapering…",
-   "url": "https://www.nytimes.com/2026/10/27/well/ai-chatgpt-medication-epilepsy-death.html?unlocked_article_code=1.L1E.iJJI.hjmxpaYuBDhc&smid=nytcore-ios-share",
-   "source": "Teddy Rosenbluth / New York…",
-   "published_at": "2026-10-28T10:05:55Z",
-   "text": "Lawsuit: the parents of a 31-year-old say OpenAI's GPT-4o guided her through an aggressive tapering plan off epilepsy meds, leading to her death in February. The chatbot helped a woman taper off a lifesaving drug and hide the plan from her doctors. — 1.3k",
+   "title": "ChatGPT helped a 31-year-old woman plan how to quit her seizure medication, then told her to hide i…",
+   "url": "https://x.com/aakashgupta/status/2115310340997329032",
+   "source": "𝕏 @aakashgupta",
+   "published_at": "2026-10-28T05:11:00Z",
+   "text": "ChatGPT helped a 31-year-old woman plan how to quit her seizure medication, then told her to hide it from her doctor. The plan had her completely off the drug by February 12. She died on February 12. Her parents sued OpenAI today, and the details in the complaint are hard to…",
+   "author_name": "Aakash Gupta",
+   "likes": 6196,
+   "story": "Lawsuit: the parents of a 31-year-old say OpenAI's GPT-4o guided her through an aggressive tapering plan off epilepsy meds, leading to her death in February"
+  },
+  {
+   "title": "Research: professional analysts followed AI agents' randomly assigned “leans” on subjective analyti…",
+   "url": "https://www.anthropic.com/research/agents-judgment-calls",
+   "source": "Anthropic",
+   "published_at": "2026-10-28T10:20:55Z",
+   "text": "Research: professional analysts followed AI agents' randomly assigned “leans” on subjective analytical decisions 86% of the time; 77% used the agents' arguments. Amaç Herdağdelen, Hailey Joren, Alex Tamkin — When experts hand their work to an AI agent …",
    "via": "Techmeme"
   },
   {
@@ -50,8 +63,8 @@
    "url": "https://www.brangus.io/survival-llm",
    "source": "Hacker News",
    "published_at": "2026-10-27T19:55:06Z",
-   "text": "395 points and 149 comments on Hacker News.",
-   "points": 395,
+   "text": "404 points and 154 comments on Hacker News.",
+   "points": 404,
    "discussion": "https://news.ycombinator.com/item?id=50264853"
   },
   {
@@ -61,7 +74,7 @@
    "published_at": "2026-10-27T22:20:23Z",
    "text": "We're expanding our partnership with @USGSA. Under a new OneGov agreement, we are bringing Claude to federal, state, local, tribal, and territorial governments at 40% off.",
    "author_name": "Anthropic",
-   "likes": 1720,
+   "likes": 1751,
    "story": "Anthropic expands its US GSA partnership to give federal, state, local, tribal, and territorial governments a 40% discount on Claude, estimated to save $1B",
    "links": [
     "https://www.anthropic.com/news/expanding-partnership-gsa"
@@ -75,11 +88,11 @@
    "text": "Anthropic is an AI safety and research company that's working to build reliable, interpretable, and steerable AI systems."
   },
   {
-   "title": "Research: professional analysts followed AI agents' randomly assigned “leans” on subjective analyti…",
-   "url": "https://www.anthropic.com/research/agents-judgment-calls",
-   "source": "Anthropic",
-   "published_at": "2026-10-28T10:20:55Z",
-   "text": "Research: professional analysts followed AI agents' randomly assigned “leans” on subjective analytical decisions 86% of the time; 77% used the agents' arguments. Amaç Herdağdelen, Hailey Joren, Alex Tamkin — When experts hand their work to an AI agent …",
+   "title": "Anthropic's S-1 implies a $40T+ annual TAM based on knowledge work's economic value in 2025, toppin…",
+   "url": "https://www.wsj.com/tech/ai/see-how-anthropic-arrived-at-its-mind-boggling-40-trillion-market-opportunity-948c56a0?st=QmxiSy",
+   "source": "Wall Street Journal",
+   "published_at": "2026-10-28T04:21:00Z",
+   "text": "Anthropic's S-1 implies a $40T+ annual TAM based on knowledge work's economic value in 2025, topping SpaceX's $28.5T estimate, without explicitly naming TAM. The company's estimated market opportunity, tied to the economic value of work produced by knowledge workers, tops SpaceX's enormous figure from earlier this year",
    "via": "Techmeme"
   },
   {
@@ -89,7 +102,7 @@
    "published_at": "2026-10-27T21:56:30Z",
    "text": "The coding interview is dead, at least for my team at Anthropic. I've seen enough to know that it no longer provides signal. I removed it from loops this month. I have a spicy, optimistic take - I think there's an opportunity for junior engineers:",
    "author_name": "Felix Rieseberg",
-   "likes": 10096,
+   "likes": 10314,
    "story": "An Anthropic hiring manager says he stopped giving coding interviews because Claude is better at them and tells junior engineers that “hunger beats tenure”",
    "links": [
     "https://felixrieseberg.com/hunger-beats-tenure-advice-for-junior-engineers/"
@@ -100,8 +113,8 @@
    "url": "https://stanforddaily.com/2026/10/27/professors-books-pirated-to-train-claude/",
    "source": "Hacker News",
    "published_at": "2026-10-27T15:28:26Z",
-   "text": "537 points and 277 comments on Hacker News.",
-   "points": 537,
+   "text": "538 points and 278 comments on Hacker News.",
+   "points": 538,
    "discussion": "https://news.ycombinator.com/item?id=50260814"
   },
   {
@@ -111,7 +124,7 @@
    "published_at": "2026-10-27T19:34:55Z",
    "text": "ok to put what i'm saying about demand in context openrouter is the most successful model router, you can almost serve 100% of their deepseek traffic yesterday on a single GB300 rack this is worth 6-7M...even if there's 10x this demand secretly that's still < 100M of compute",
    "author_name": "dax",
-   "likes": 3151,
+   "likes": 3235,
    "story": "Dirt cheap GPUs coming next year"
   },
   {
@@ -121,7 +134,7 @@
    "published_at": "2026-10-27T22:09:39Z",
    "text": "NEW: Apple bets customers will pay a big premium for touch-screen, OLED laptops. The company has discussed charging $400 more, pricing the 14-inch touch MacBook Pro from $2,899. That could make the 16-inch model at least $3,399.",
    "author_name": "Mark Gurman",
-   "likes": 960,
+   "likes": 972,
    "story": "Source: Apple has discussed charging $2,899 for the 14-inch MacBook Pro with an OLED XDR touch screen and M5 Pro chip, $400 more than the current M5 Pro model",
    "links": [
     "https://www.bloomberg.com/news/articles/2026-10-27/apple-14-inch-16-inch-macbook-pro-touch-price-is-likely-2-899-laptop-details?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc5MzEzODg1NiwiZXhwIjoxNzkzNzQzNjU2LCJhcnRpY2xlSWQiOiJUTktaNE9UOTZPU0kwMCIsImJjb25uZWN0SWQiOiJDNEVEQ0FFMUZBMDU0MEJFQTI0QTlGMjExQzFFOTA4MCJ9.-r0-k5GENAkA0QuY_42jePcRdcwpSByLQzUz6ZPG9LI"
@@ -134,16 +147,8 @@
    "published_at": "2026-10-28T07:53:30Z",
    "text": "So...what would you like to see in our future Gemma models?",
    "author_name": "Omar Sanseviero",
-   "likes": 398,
+   "likes": 447,
    "story": "Gemma 5 models soon ??"
-  },
-  {
-   "title": "Anthropic's S-1 implies a $40T+ annual TAM based on knowledge work's economic value in 2025, toppin…",
-   "url": "https://www.wsj.com/tech/ai/see-how-anthropic-arrived-at-its-mind-boggling-40-trillion-market-opportunity-948c56a0?st=QmxiSy",
-   "source": "Wall Street Journal",
-   "published_at": "2026-10-28T04:21:00Z",
-   "text": "Anthropic's S-1 implies a $40T+ annual TAM based on knowledge work's economic value in 2025, topping SpaceX's $28.5T estimate, without explicitly naming TAM. The company's estimated market opportunity, tied to the economic value of work produced by knowledge workers, tops SpaceX's enormous figure from earlier this year",
-   "via": "Techmeme"
   }
  ],
  "sources": "curated, Techmeme, X (found via Techmeme, Reddit, the Internet Archive), Claude Code releases, Anthropic, Hacker News, Simon Willison"
