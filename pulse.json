@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-28T18:40:06Z",
+ "generated_at": "2026-10-28T19:11:49Z",
  "items": [
   {
    "title": "Google unveils Gemini 4 Carbon, its “strongest model with state-of-the-art cybersecurity” capabilit…",
@@ -17,7 +17,7 @@
    "published_at": "2026-10-28T17:08:18Z",
    "text": "We're redefining the SDLC for the agentic era. Lots of GitHub updates this morning at Universe: • GitHub Copilot Fusion delivers frontier-level quality, 40% faster and at up to 77% lower cost • Our unified Copilot harness is now in Foundry, a managed service for building…",
    "author_name": "Satya Nadella",
-   "likes": 403,
+   "likes": 504,
    "story": "GitHub says Copilot Fusion, which handles model selection and orchestration, is now generally available, releases the GitHub Copilot app, and more"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-10-27T20:27:48Z",
    "text": "Over the past few months, Anthropic scientists have engaged in deep research partnerships with six organizations developing new medicines. We've also begun drug discovery efforts of our own. In doing so, we’ve learned much more about how Claude can support the many stages of…",
    "author_name": "Anthropic",
-   "likes": 9594,
+   "likes": 9661,
    "story": "Anthropic details early drug development work with six partners and says it has acquired Mithril, a one-person company working on muscular dystrophy"
   },
   {
@@ -50,8 +50,8 @@
    "url": "https://religionnews.com/2026/10/26/in-a-first-a-humanist-granted-a-religious-exemption-from-using-ai/",
    "source": "Hacker News",
    "published_at": "2026-10-28T13:41:30Z",
-   "text": "300 points and 355 comments on Hacker News.",
-   "points": 300,
+   "text": "312 points and 365 comments on Hacker News.",
+   "points": 312,
    "discussion": "https://news.ycombinator.com/item?id=50273396"
   },
   {
@@ -61,7 +61,7 @@
    "published_at": "2026-10-28T02:11:22Z",
    "text": "Announcing Artificial Analysis Intelligence Index v5, featuring 2 new benchmarks and 3 upgrades. For the first time, the majority of the Index is built on private datasets The Artificial Analysis Intelligence Index is our composite measure of model capabilities across tasks…",
    "author_name": "Artificial Analysis",
-   "likes": 4978,
+   "likes": 4998,
    "story": "Artificial Analysis unveils the Intelligence Index v5 with new coding and science benchmarks; 60% of the Index is based on private test sets or held-out answers"
   },
   {
@@ -93,7 +93,7 @@
    "published_at": "2026-10-28T14:14:45Z",
    "text": "lot of people making stuff up so here's some more context you can imagine there's hidden enterprise demand for open source models that isn't visible but if you look at the top inference providers that aggressively go after this business, they have shared some numbers and they…",
    "author_name": "dax",
-   "likes": 855,
+   "likes": 896,
    "story": "Theory: Local is going to explode at enterprises"
   },
   {
@@ -101,8 +101,8 @@
    "url": "https://surgehq.ai/blog/dayjob-tax",
    "source": "Hacker News",
    "published_at": "2026-10-28T15:46:30Z",
-   "text": "90 points and 51 comments on Hacker News.",
-   "points": 90,
+   "text": "107 points and 61 comments on Hacker News.",
+   "points": 107,
    "discussion": "https://news.ycombinator.com/item?id=50275626"
   },
   {
@@ -112,7 +112,7 @@
    "published_at": "2026-10-27T23:13:53Z",
    "text": "I'm so glad AI killed LeetCode-style coding interviews. I've talked to young AI talent, and most would simply skip companies that still use LeetCode interviews. I agree with Felix. Taste, empathy, principled thinking, business sense, and agency are what really matter.",
    "author_name": "Yuchen Jin",
-   "likes": 2406,
+   "likes": 2427,
    "story": "An Anthropic hiring manager says he stopped giving coding interviews because Claude is better at them and tells junior engineers that “hunger beats tenure”"
   },
   {
@@ -122,7 +122,7 @@
    "published_at": "2026-10-28T07:53:30Z",
    "text": "So...what would you like to see in our future Gemma models?",
    "author_name": "Omar Sanseviero",
-   "likes": 865,
+   "likes": 900,
    "story": "Gemma 5 models soon ??"
   },
   {
@@ -130,7 +130,7 @@
    "url": "https://www.macrumors.com/2026/10/28/mac-studio-m5-ultra-512gb-ram/",
    "source": "Joe Rossignol / MacRumors",
    "published_at": "2026-10-28T18:26:22Z",
-   "text": "Apple adds a 512GB RAM configuration for the Mac Studio with the M5 Ultra chip, starting at $22,299; the M5 Max model maxes out at 128GB of RAM. Starting today, the Mac Studio with the M5 Ultra chip can be configured with 512GB of RAM, with U.S. pricing starting at $22,299.",
+   "text": "Apple adds a 512GB RAM configuration for the Mac Studio with the M5 Ultra chip, starting at $22,299; the M5 Max model maxes out at 128GB of RAM. Starting today, the Mac Studio with the M5 Ultra chip can be configured with 512GB of RAM on Apple's online store, but it is an expensive upgrade.",
    "via": "Techmeme"
   }
  ],
