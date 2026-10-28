@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-28T11:09:46Z",
+ "generated_at": "2026-10-28T11:41:55Z",
  "items": [
   {
    "title": "AMD says it will invest $1B in Meta's equity offering, its first Helios rackscale systems are insta…",
@@ -17,7 +17,7 @@
    "published_at": "2026-10-27T16:10:55Z",
    "text": "This is Genie 4, our most realistic and interactive world model yet. 🌐 Explore dynamic environments in real time to see how the scene responds, sounds, and how the people in it move, react, and speak.…",
    "author_name": "Google DeepMind",
-   "likes": 20282,
+   "likes": 20450,
    "story": "Google DeepMind launches Genie 4, a world model powered by Gemini 3.8 Flash designed to generate interactive AI simulations, in preview first to trusted testers"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-10-27T20:27:48Z",
    "text": "Over the past few months, Anthropic scientists have engaged in deep research partnerships with six organizations developing new medicines. We've also begun drug discovery efforts of our own. In doing so, we’ve learned much more about how Claude can support the many stages of…",
    "author_name": "Anthropic",
-   "likes": 8327,
+   "likes": 8440,
    "story": "Anthropic details early drug development work with six partners and says it has acquired Mithril, a one-person company working on muscular dystrophy"
   },
   {
@@ -50,8 +50,8 @@
    "url": "https://www.brangus.io/survival-llm",
    "source": "Hacker News",
    "published_at": "2026-10-27T19:55:06Z",
-   "text": "371 points and 143 comments on Hacker News.",
-   "points": 371,
+   "text": "381 points and 146 comments on Hacker News.",
+   "points": 381,
    "discussion": "https://news.ycombinator.com/item?id=50264853"
   },
   {
@@ -61,7 +61,7 @@
    "published_at": "2026-10-28T02:11:22Z",
    "text": "Announcing Artificial Analysis Intelligence Index v5, featuring 2 new benchmarks and 3 upgrades. For the first time, the majority of the Index is built on private datasets The Artificial Analysis Intelligence Index is our composite measure of model capabilities across tasks…",
    "author_name": "Artificial Analysis",
-   "likes": 3978,
+   "likes": 4074,
    "story": "Artificial Analysis Intelligence Index v5 released"
   },
   {
@@ -86,7 +86,7 @@
    "published_at": "2026-10-27T21:56:30Z",
    "text": "The coding interview is dead, at least for my team at Anthropic. I've seen enough to know that it no longer provides signal. I removed it from loops this month. I have a spicy, optimistic take - I think there's an opportunity for junior engineers:",
    "author_name": "Felix Rieseberg",
-   "likes": 9482,
+   "likes": 9670,
    "story": "An Anthropic hiring manager says he stopped giving coding interviews because Claude is better at them and tells junior engineers that “hunger beats tenure”",
    "links": [
     "https://felixrieseberg.com/hunger-beats-tenure-advice-for-junior-engineers/"
@@ -108,7 +108,7 @@
    "published_at": "2026-10-27T19:34:55Z",
    "text": "ok to put what i'm saying about demand in context openrouter is the most successful model router, you can almost serve 100% of their deepseek traffic yesterday on a single GB300 rack this is worth 6-7M...even if there's 10x this demand secretly that's still < 100M of compute",
    "author_name": "dax",
-   "likes": 2843,
+   "likes": 2934,
    "story": "Dirt cheap GPUs coming next year"
   },
   {
@@ -118,15 +118,15 @@
    "published_at": "2026-10-28T07:53:30Z",
    "text": "So...what would you like to see in our future Gemma models?",
    "author_name": "Omar Sanseviero",
-   "likes": 221,
+   "likes": 282,
    "story": "Gemma 5 models soon ??"
   },
   {
-   "title": "Anthropic's S-1 implies a $40T+ annual TAM based on knowledge work's economic value in 2025, toppin…",
-   "url": "https://www.wsj.com/tech/ai/see-how-anthropic-arrived-at-its-mind-boggling-40-trillion-market-opportunity-948c56a0?st=QmxiSy",
-   "source": "Wall Street Journal",
-   "published_at": "2026-10-28T04:21:00Z",
-   "text": "Anthropic's S-1 implies a $40T+ annual TAM based on knowledge work's economic value in 2025, topping SpaceX's $28.5T estimate, without explicitly naming TAM. The company's estimated market opportunity, tied to the economic value of work produced by knowledge workers, tops SpaceX's enormous figure from earlier this year",
+   "title": "Research: professional analysts followed AI agents' randomly assigned “leans” on subjective analyti…",
+   "url": "https://www.anthropic.com/research/agents-judgment-calls",
+   "source": "Anthropic",
+   "published_at": "2026-10-28T10:20:55Z",
+   "text": "Research: professional analysts followed AI agents' randomly assigned “leans” on subjective analytical decisions 86% of the time; 77% used the agents' arguments. Amaç Herdağdelen, Hailey Joren, Alex Tamkin — When experts hand their work to an AI agent …",
    "via": "Techmeme"
   },
   {
@@ -134,8 +134,8 @@
    "url": "https://www.anthropic.com/research/early-progress-drug-development",
    "source": "Hacker News",
    "published_at": "2026-10-27T20:50:42Z",
-   "text": "237 points and 229 comments on Hacker News.",
-   "points": 237,
+   "text": "242 points and 236 comments on Hacker News.",
+   "points": 242,
    "discussion": "https://news.ycombinator.com/item?id=50265609"
   }
  ],
