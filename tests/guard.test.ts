@@ -3,6 +3,7 @@ import { expect, test } from 'claude-code/testing'
 import {
   KEEP_WARM_DEFAULTS, accountIdentity, accountKey, agentModel, cappedEffort, changeText, effortKeepsCache, bridgeDue, endText, evaluate, groupOf, hoursWords, liftsAt, guardForms, inHours, leaseFree,
   fiveHourLeftOf, localTime, parseGuard, parseHours, readBack, ruleText, seconds, simulated, stopText, tokenCount, WARM_MISS, warmDue, warmForms,
+  automaticTtl, compactDue, idleCompactionStoodDown,
 } from '../hooks/guard'
 import type { Facts, WarmFacts } from '../hooks/guard'
 
@@ -43,6 +44,9 @@ test('the README\'s rules parse; nothing is in force without rules, and a malfor
   expect(parseGuard({ keep_warm: true }).keepWarm).toEqual(KEEP_WARM_DEFAULTS)
   // keep-warm's timing is held to 10-55 minutes, and at most 6 re-reads.
   expect(parseGuard({ keep_warm: { after: '2m', max: 50 } }).keepWarm).toEqual({ ...KEEP_WARM_DEFAULTS, after: 600, max: 6 })
+  // Compacting before a lapse comes with keep-warm; `compact: false` turns it off.
+  expect(parseGuard({ keep_warm: { max: 2 } }).keepWarm?.compact).toBe(true)
+  expect(parseGuard({ keep_warm: { compact: false } }).keepWarm?.compact).toBe(false)
   expect(parseGuard(false).on).toBe(false)
 })
 
@@ -303,6 +307,48 @@ test('keep-warm: only an idle, warm, hour-long cache worth keeping, a bounded nu
   expect(warmDue(k, { ...base, busy: true }).due).toBe(false)
   expect(warmDue(k, { ...base, now: 10_000 + 59 * 60 }).code).toBe('lapsed')
   expect(warmDue(k, base).code).toBe('idle')
+})
+
+test('keep-warm compacts when its own limits end the re-reads, while the cache is still warm', () => {
+  const k = RULES.keepWarm!
+  const idle = 46 * 60
+  for (const code of ['max', 'hourly', 'five-hour', 'held'] as const) expect(compactDue(k, code, idle, 0, 15)).toBe(true)
+  // Anything else keeps the cache or says it isn't worth keeping: no compaction.
+  for (const code of ['idle', 'busy', 'ttl', 'compacted', 'small', 'leased', 'early', 'lapsed', 'off'] as const) expect(compactDue(k, code, idle, 0, 60)).toBe(false)
+  expect(compactDue(k, 'max', 40 * 60, 0, 60)).toBe(false)
+  expect(compactDue(k, 'max', 59 * 60, 0, 60)).toBe(false)
+  expect(compactDue(k, 'max', idle, 120, 60)).toBe(false)
+  // A spent 5-hour window can't take the compaction's request either; an unknown one isn't spent.
+  expect(compactDue(k, 'five-hour', idle, 0, 0)).toBe(false)
+  expect(compactDue(k, 'max', idle, 0, undefined)).toBe(true)
+  // Nothing without the rule, or with `compact: false`.
+  expect(compactDue(undefined, 'max', idle, 0, 60)).toBe(false)
+  expect(compactDue({ ...k, compact: false }, 'max', idle, 0, 60)).toBe(false)
+})
+
+test('Claude Code\'s idle compaction stands down only while keep-warm holds the cache', () => {
+  const k = RULES.keepWarm!
+  const held = { busy: false, rereads: 1, resting: false, idle: 10 * 60 }
+  expect(idleCompactionStoodDown(k, held)).toBe(true)
+  expect(idleCompactionStoodDown(k, { ...held, rereads: 0 })).toBe(false)
+  expect(idleCompactionStoodDown(k, { ...held, busy: true })).toBe(false)
+  expect(idleCompactionStoodDown(k, { ...held, resting: true })).toBe(false)
+  expect(idleCompactionStoodDown(k, { ...held, idle: 59 * 60 })).toBe(false)
+  expect(idleCompactionStoodDown(undefined, held)).toBe(false)
+  expect(idleCompactionStoodDown({ ...k, compact: false }, held)).toBe(false)
+})
+
+test('the automatic cache lifetime counts only plan windows, and a reset window as fresh', () => {
+  const now = 10_000
+  expect(automaticTtl(undefined, now)).toBe('5m')
+  expect(automaticTtl([{ kind: 'five_hour', percentUsed: 40, resetsAt: now + 3600 }], now)).toBe('1h')
+  expect(automaticTtl([{ kind: 'five_hour', percentUsed: 100, resetsAt: now + 60 }], now)).toBe('5m')
+  // A 100% reading from before the reset doesn't hold the cache at five minutes after it.
+  expect(automaticTtl([{ kind: 'five_hour', percentUsed: 100, resetsAt: now - 60 }], now)).toBe('1h')
+  expect(automaticTtl([{ kind: 'seven_day', percentUsed: 100 }], now)).toBe('5m')
+  // A spent extra-usage cap leaves plan requests on the plan: still an hour.
+  expect(automaticTtl([{ kind: 'five_hour', percentUsed: 30 }, { kind: 'spend_limit', percentUsed: 100 }], now)).toBe('1h')
+  expect(automaticTtl([{ kind: 'spend_limit', percentUsed: 10 }], now)).toBe('5m')
 })
 
 test('keep-warm reads a five-hour window that reset since its reading as all left', () => {

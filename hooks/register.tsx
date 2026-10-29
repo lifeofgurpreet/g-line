@@ -40,7 +40,7 @@ import type { PulseFeed, PulseItem, Shown } from './pulse'
 import { gitSegmentOf } from './core'
 import {
   AGENT_TYPE_MODELS, KEEP_WARM_DEFAULTS, accountIdentity, accountKey, agentModel, cappedEffort, changeText, drainText, effortKeepsCache, bridgeDue, endText, epochOf, evaluate, groupOf, guardForms, liftsAt, inForceText, leaseFree, namesAccounts, readBack, ruleText, simulated, stopText,
-  resumeAt, fiveHourLeftOf, WARM_MISS, warmDue, warmForms, whyLines,
+  resumeAt, fiveHourLeftOf, WARM_MISS, warmDue, warmForms, whyLines, automaticTtl, compactDue, idleCompactionStoodDown,
 } from './guard'
 import type { Effort, Facts, Simulation, Verdict, WarmCode, WindowName } from './guard'
 import {
@@ -361,13 +361,6 @@ async function idleCompactionMissed($: EngineInterface): Promise<void> {
   }
 }
 
-function automaticTtl(s: Snap): '5m' | '1h' {
-  const limits = s.rateLimits ?? []
-  const subscription = limits.some(l => l.kind === 'five_hour' || l.kind === 'seven_day')
-  const within = limits.every(l => l.percentUsed < 100)
-  return subscription && within ? '1h' : '5m'
-}
-
 // ---------------------------------------------------------------- payload
 
 /** The statusLine-shaped view of what the mod knows, for the core. */
@@ -391,7 +384,7 @@ export function payload(s: Snap, nowSeconds: number, ttl: '5m' | '1h' | undefine
       total_duration_ms: s.startedAt !== undefined ? nowSeconds * 1000 - s.startedAt : undefined }
   }
   if (s.cache?.cached) {
-    const effective = s.cache.learned ?? ttl ?? automaticTtl(s)
+    const effective = s.cache.learned ?? ttl ?? automaticTtl(s.rateLimits, nowSeconds)
     const expires = s.cache.lastAt + (effective === '1h' ? 3600 : 300)
     const compacted = s.cache.compactedTo !== undefined
     const moved = s.cache.accountChanged === true
@@ -573,6 +566,15 @@ async function markCompacted($: EngineInterface, after?: number): Promise<void> 
   await update($, snap, s => (s.cache
     ? { ...s, cache: { ...s.cache, compactedTo: after ?? s.cache.compactedTo ?? 0 } }
     : s))
+}
+
+/** A compaction that stood, in the day's tally, the forecast, the cache and the live turn; `say` toasts it. */
+async function noteCompaction($: EngineInterface, c: { at: number; trigger: string; before?: number; after?: number }, say: boolean): Promise<void> {
+  await update($, totals, t => ({ ...t, compactions: [...t.compactions, c].slice(-20), growth: [] }))
+  await update($, outlook, () => null)
+  await markCompacted($, c.after)
+  await update($, turnNow, live => (live ? { ...live, compacted: { before: c.before, after: c.after } } : live))
+  if (say) await toast($, compactionText(c), 8000)
 }
 
 /**
@@ -1828,10 +1830,12 @@ async function keepWarm($: EngineInterface): Promise<void> {
     model = undefined
   }
   const t = touched as { session?: unknown } | undefined
+  const fiveHourLeft = fiveHourLeftOf(s.rateLimits?.find(l => l.kind === 'five_hour'), now)
   const due = warmDue(k, {
-    now, lastAt: c.lastAt, ttl: c.learned ?? ttl ?? automaticTtl(s), prefix: c.prefix, compacted: c.compactedTo !== undefined,
-    compactionCovers: idle !== undefined && c.prefix >= idle.minTokens, done: warmed, thisHour,
-    fiveHourLeft: fiveHourLeftOf(s.rateLimits?.find(l => l.kind === 'five_hour'), now), stopped: verdict.stop !== undefined,
+    now, lastAt: c.lastAt, ttl: c.learned ?? ttl ?? automaticTtl(s.rateLimits, now), prefix: c.prefix, compacted: c.compactedTo !== undefined,
+    // With `compact`, keep-warm holds big conversations too and stands idle compaction down instead.
+    compactionCovers: !k.compact && idle !== undefined && c.prefix >= idle.minTokens, done: warmed, thisHour,
+    fiveHourLeft, stopped: verdict.stop !== undefined,
     ...(verdict.stop ? (lift => (lift !== undefined ? { liftsIn: Math.max(0, lift / 1000 - now) } : {}))(liftsAt(verdict.stop, now * 1000, offsetAt(now * 1000))) : {}),
     busy: (await read($, turnNow)) !== null, jitter: warmJitter, accountChanged: c.accountChanged === true,
     modelChanged: !!model && !!s.model && plainModel(model) !== plainModel(s.model),
@@ -1839,7 +1843,10 @@ async function keepWarm($: EngineInterface): Promise<void> {
     leased: !leaseFree(lease, sessionId ?? '', now * 1000),
   })
   if (due.code !== 'busy' && due.code !== 'early') look(due.code)
-  if (!due.due) return
+  if (!due.due) {
+    if (!compactTried && compactDue(k, due.code, idleFor, warmJitter, fiveHourLeft)) await compactIdle($, c.prefix, due.code)
+    return
+  }
   // One session per account re-reads at a time; the lease outlives a slow answer.
   if (!(await takeLease($, `lease:warm:${key}`, (now + 600) * 1000))) return
   warming = true
@@ -1888,6 +1895,51 @@ async function keepWarm($: EngineInterface): Promise<void> {
     await releaseLease($, `lease:warm:${key}`)
     warming = false
   }
+}
+
+/** Set while keep-warm's own compaction runs: the `session.compact` hook mustn't take it for idle compaction. */
+let compactingIdle = false
+/** Keep-warm compacted, or tried to, in this idle stretch. */
+let compactTried = false
+/** The idle stretch's first stand-down of Claude Code's idle compaction was said. */
+let standDownSaid = false
+
+/**
+ * Keep-warm's last resort: its own limits (`code`) end the re-reads, so the
+ * idle conversation is compacted by the engine's own compaction, the call
+ * `/compact` makes, while the cache it reads is still warm. The next turn then
+ * sends the summary rather than rebuilding the whole conversation cold.
+ */
+async function compactIdle($: EngineInterface, prefix: number, code: WarmCode): Promise<void> {
+  compactTried = true
+  compactingIdle = true
+  try {
+    const r = await $.session.compact()
+    // A hook vetoed it, and the engine says why.
+    if (r.messages === undefined) return
+    if ((await read($, snap)).cache?.compactedTo === undefined) {
+      await noteCompaction($, { at: await nowMs($), trigger: 'plugin', before: r.tokensBefore, after: r.tokensAfter }, false)
+    }
+    await toast($, `◆ idle conversation compacted before its cache lapsed · ${tokens(r.tokensBefore ?? prefix)}${r.tokensAfter ? ` → ${tokens(r.tokensAfter)}` : ''} · keep-warm ${WARM_MISS[code]}`, 10_000)
+  } catch {
+    // A turn started, or the engine refused: the cache lapses as it would have.
+  } finally {
+    compactingIdle = false
+  }
+}
+
+/** Whether Claude Code's idle compaction stands down now: keep-warm holds this conversation's cache. Said once a stretch. */
+async function idleCompactionStandsDown($: EngineInterface): Promise<boolean> {
+  const c = (await read($, snap)).cache
+  if (!c?.cached || warmOff || compactingIdle) return false
+  const k = config.guard.on ? config.guard.keepWarm : undefined
+  const busy = (await read($, turnNow)) !== null
+  if (!idleCompactionStoodDown(k, { busy, rereads: warmed, resting: warmRested, idle: (await nowSeconds($)) - c.lastAt })) return false
+  if (!standDownSaid) {
+    standDownSaid = true
+    await toast($, '◆ idle compaction stood down · keep-warm is holding the cache', 6000)
+  }
+  return true
 }
 
 /**
@@ -2004,6 +2056,8 @@ async function afterRealRequest($: EngineInterface, rebuilt: boolean, explained:
   warmFailures = 0
   warmSeen = undefined
   warmGap = 0
+  compactTried = false
+  standDownSaid = false
 }
 
 /** Why keep-warm didn't keep the cache a turn just rebuilt, from what it saw while the conversation sat idle. */
@@ -2282,7 +2336,7 @@ async function openDashboard($: EngineInterface): Promise<void> {
       guard: {
         rules: config.guard.rules.map(rule => ({ text: ruleText(rule), inForce: verdict.active[rule.id] !== undefined })),
         why: config.guard.rules.length ? await whyNow($) : [], on: config.guard.on, simulated: simulation !== undefined,
-        ...(k ? { keepWarm: `keep-warm: after ${Math.round(k.after / 60)}m idle, up to ${k.max} times, ${tokens(k.minContext)}+ context${warmOff ? ' (off for this session)' : ''}` } : {}),
+        ...(k ? { keepWarm: `keep-warm: after ${Math.round(k.after / 60)}m idle, up to ${k.max} times, ${tokens(k.minContext)}+ context${k.compact ? ', then compacts before it goes cold' : ''}${warmOff ? ' (off for this session)' : ''}` } : {}),
         errors: config.guard.errors,
       },
     })
@@ -2528,7 +2582,7 @@ export const register: Register = (on, options) => {
           if (u.cache_read_input_tokens > s.cache.prefix * 0.5) learned = '1h'
           else if (u.cache_creation_input_tokens > s.cache.prefix * 0.5) learned = '5m'
         }
-        const life = (learned ?? ttl ?? automaticTtl(s)) === '1h' ? 3600 : 300
+        const life = (learned ?? ttl ?? automaticTtl(s.rateLimits, started)) === '1h' ? 3600 : 300
         if (s.cache?.cached && gap > life && u.cache_creation_input_tokens > s.cache.prefix * 0.5) coldThisTurn = true
         if (s.cache?.accountChanged && u.cache_creation_input_tokens > s.cache.prefix * 0.5) coldThisTurn = true
         return { ...s, model: e.model, effort: typeof step.effort === 'string' ? step.effort : s.effort,
@@ -2672,16 +2726,17 @@ export const register: Register = (on, options) => {
   }).catch(($, e, next) => next(e))
 
   on('session.compact', async ($, e, next) => {
+    // Claude Code's idle compaction would summarise a cache keep-warm is holding: it waits for keep-warm to run out.
+    if (e.agentId === undefined && (e.trigger === 'auto' || e.trigger === 'precompute') && (await idleCompactionStandsDown($))) {
+      return { skip: 'g-line keep-warm is holding this idle conversation\'s cache' }
+    }
     const result = await next(e)
     if (e.agentId !== undefined || e.trigger === 'precompute' || result.messages === undefined) return result
     const c = { at: await nowMs($), trigger: e.trigger, before: result.tokensBefore, after: result.tokensAfter }
     // No turn running and nobody typed /compact (or another command that replaces the conversation): idle compaction.
-    if (e.trigger !== 'manual' && (await read($, turnNow)) === null && replacedAt < ((await read($, snap)).cache?.lastAt ?? 0)) await idleCompactionSeen($)
-    await update($, totals, t => ({ ...t, compactions: [...t.compactions, c].slice(-20), growth: [] }))
-    await update($, outlook, () => null)
-    await markCompacted($, c.after)
-    await update($, turnNow, live => (live ? { ...live, compacted: { before: c.before, after: c.after } } : live))
-    await toast($, compactionText(c), 8000)
+    // Keep-warm's own compaction is not Claude Code's, and says itself.
+    if (!compactingIdle && e.trigger !== 'manual' && (await read($, turnNow)) === null && replacedAt < ((await read($, snap)).cache?.lastAt ?? 0)) await idleCompactionSeen($)
+    await noteCompaction($, c, !compactingIdle)
     return result
   }).catch(($, e, next) => next(e))
 

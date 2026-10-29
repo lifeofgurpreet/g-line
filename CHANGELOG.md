@@ -1,5 +1,28 @@
 # Changelog
 
+## 0.21.0 (2026-10-29): keep warm, then compact; one rule on every account
+
+Idle caches behaved differently from one account to the next, because Claude Code's idle
+compaction is something Anthropic turns on per account. Keep-warm now runs one policy
+everywhere: hold the cache while it can, and compact before it goes cold when it can't.
+
+- **Compacts instead of letting the cache lapse.** When keep-warm's own limits end the re-reads
+  (`max`, `per_hour`, `min_left`, or a stop held longer than it can bridge), it compacts the
+  idle conversation once, through Claude Code's own compaction, while the cache is still warm.
+  The next prompt sends the summary instead of rebuilding the whole conversation cold. A toast
+  says so.
+- **Holds big conversations on idle-compaction accounts too.** Instead of standing aside for
+  Claude Code's idle compaction, keep-warm re-reads as usual and stands that compaction down
+  while the cache it holds is live. When the re-reads run out, it compacts itself. Your own
+  `/compact` is never stood down.
+- **`"compact": false`** under `keep_warm` turns both off and brings back 0.20's behaviour.
+- **A spent extra-usage cap no longer stopped keep-warm.** The automatic cache lifetime counted
+  the `spend_limit` reading, so a used-up credits cap put every session on the account at five
+  minutes, and keep-warm stopped. Only the 5-hour and weekly windows count now.
+- **A 100% reading from before its reset no longer held the cache at five minutes.** A window
+  that has reset since that reading counts as a fresh one, as keep-warm's 5-hour check already
+  did.
+
 ## 0.20.0 (2026-10-28): keep-warm keeps more caches warm, quieter toasts, clickable headlines
 
 An audit of five machines' counters found cold rebuilds every day despite keep-warm (34 on

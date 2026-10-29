@@ -1506,10 +1506,42 @@ test('0.20: a cold rebuild says on its receipt why keep-warm did not keep the ca
   expect(day?.coldWhy).toEqual({ 'out of re-reads': 1 })
 })
 
-/** A 250k conversation idle for 55 minutes under keep-warm: how many re-reads it got. */
-async function bigIdle($: Engine, on: On, stored: Record<string, unknown> = {}, account?: string) {
+/** A 120k conversation left idle for 150 minutes with one re-read allowed (`keepWarm` as written): the compactions that reached the engine. */
+async function outOfRereads($: Engine, on: On, keepWarm: unknown) {
+  const w = world(on, {})
+  w.config = { guard: { keep_warm: keepWarm } }
+  on('turn.step', async function* ($: unknown, e: { turnId: string; index: number }) {
+    return { turnId: e.turnId, index: e.index, answer: '', toolUses: [], stopReason: 'end_turn',
+      usage: { input_tokens: 4, output_tokens: 300, cache_read_input_tokens: 110_000, cache_creation_input_tokens: 10_000, model: 'claude-opus-5-5' } }
+  } as never)
+  on('model.fork', () => ({ value: { isAnswered: true, text: 'ok', usage: { input_tokens: 20, output_tokens: 3, cache_read_input_tokens: 120_000, cache_creation_input_tokens: 0 } } }) as never)
+  const triggers: string[] = []
+  on('session.compact', ($, e) => {
+    triggers.push((e as { trigger: string }).trigger)
+    return { messages: SUMMARY, tokensBefore: 120_000, tokensAfter: 9_000 } as never
+  })
+  await start($)
+  await measure($, w, 40)
+  await $.turn.start({ text: 'go', turnId: 't1' })
+  await step($, 't1', 0, 'high')
+  await $.turn.complete({ answer: 'done', durationMs: 4000, isAborted: false, turnId: 't1', reason: 'answer',
+    usage: { ...USAGE_ARGS, model: 'claude-opus-5-5' } })
+  await w.clock.advance(150 * 60_000)
+  return triggers
+}
+
+test('0.21: out of re-reads, keep-warm compacts the idle conversation once, while its cache is still warm', { timeoutMs: 30_000 }, async ($, on) => {
+  expect((await outOfRereads($, on, { after: '45m', max: 1 })).length).toBe(1)
+})
+
+test('0.21: with compact: false keep-warm lets the cache lapse as before', { timeoutMs: 30_000 }, async ($, on) => {
+  expect((await outOfRereads($, on, { after: '45m', max: 1, compact: false })).length).toBe(0)
+})
+
+/** A 250k conversation idle for 55 minutes under keep-warm (`keepWarm` as written): how many re-reads it got. */
+async function bigIdle($: Engine, on: On, stored: Record<string, unknown> = {}, account?: string, keepWarm: unknown = true) {
   const w = world(on, stored)
-  w.config = account ? { guard: { keep_warm: true }, account_command: ['acct'] } : { guard: { keep_warm: true } }
+  w.config = account ? { guard: { keep_warm: keepWarm }, account_command: ['acct'] } : { guard: { keep_warm: keepWarm } }
   if (account) w.run = argv => (argv[0] === 'acct' ? { value: { exitCode: 0, stdout: `${account}\n`, stderr: '' } } : undefined)
   on('turn.step', async function* ($: unknown, e: { turnId: string; index: number }) {
     return { turnId: e.turnId, index: e.index, answer: '', toolUses: [], stopReason: 'end_turn',
@@ -1530,9 +1562,25 @@ async function bigIdle($: Engine, on: On, stored: Record<string, unknown> = {}, 
   return forks
 }
 
-test('keep-warm stands aside where Claude Code compacts an idle conversation itself', { timeoutMs: 30_000 }, async ($, on) => {
+test('with compact: false keep-warm stands aside where Claude Code compacts an idle conversation itself', { timeoutMs: 30_000 }, async ($, on) => {
   // A session on this account was seen compacting while idle an hour ago.
-  expect(await bigIdle($, on, { 'idle-compacts:machine': (NOW - 3600) * 1000 })).toBe(0)
+  expect(await bigIdle($, on, { 'idle-compacts:machine': (NOW - 3600) * 1000 }, undefined, { compact: false })).toBe(0)
+})
+
+test('0.21: keep-warm holds a big conversation where Claude Code compacts idle ones, and stands that compaction down', { timeoutMs: 30_000 }, async ($, on) => {
+  let compactions = 0
+  on('session.compact', () => {
+    compactions += 1
+    return { messages: SUMMARY, tokensBefore: 250_000, tokensAfter: 20_000 } as never
+  })
+  expect(await bigIdle($, on, { 'idle-compacts:machine': (NOW - 3600) * 1000 })).toBe(1)
+  // Claude Code's idle compaction comes about 54 minutes in: keep-warm re-read at 45, so it waits.
+  const r = await $.session.compact({ trigger: 'auto', messages: SUMMARY } as never) as { skip?: string }
+  expect(r.skip).toContain('keep-warm')
+  expect(compactions).toBe(0)
+  // A person's own /compact is never stood down.
+  await $.session.compact({ trigger: 'manual', messages: SUMMARY } as never)
+  expect(compactions).toBe(1)
 })
 
 test('0.19.3: a sighting on another account leaves this account\'s big conversations to keep-warm', { timeoutMs: 30_000 }, async ($, on) => {
@@ -1541,7 +1589,7 @@ test('0.19.3: a sighting on another account leaves this account\'s big conversat
 })
 
 test('0.19.3: a sighting on this account still counts when the account is read', { timeoutMs: 30_000 }, async ($, on) => {
-  expect(await bigIdle($, on, { 'idle-compacts:me@example.com': (NOW - 3600) * 1000 }, 'me@example.com')).toBe(0)
+  expect(await bigIdle($, on, { 'idle-compacts:me@example.com': (NOW - 3600) * 1000 }, 'me@example.com', { compact: false })).toBe(0)
 })
 
 test('0.19.3: the old machine-wide sighting no longer counts', { timeoutMs: 30_000 }, async ($, on) => {
@@ -1624,7 +1672,7 @@ test('0.18.0: a compaction with no turn running records that Claude Code compact
 test('0.19.3: a big conversation that lapses uncompacted after an idle hour clears the sighting', { timeoutMs: 30_000 }, async ($, on) => {
   const kept: Record<string, unknown> = { 'idle-compacts:machine': (NOW - 3600) * 1000 }
   const w = world(on, {}, kept)
-  w.config = { guard: { keep_warm: true } }
+  w.config = { guard: { keep_warm: { compact: false } } }
   let lapsed = false
   on('turn.step', async function* ($: unknown, e: { turnId: string; index: number }) {
     const usage = lapsed
@@ -1663,7 +1711,7 @@ test('0.19.3: a big conversation that lapses uncompacted after an idle hour clea
 test('0.19.3: a cache that lapses within the hour leaves the sighting alone', { timeoutMs: 30_000 }, async ($, on) => {
   const kept: Record<string, unknown> = { 'idle-compacts:machine': (NOW - 3600) * 1000 }
   const w = world(on, {}, kept)
-  w.config = { guard: { keep_warm: true } }
+  w.config = { guard: { keep_warm: { compact: false } } }
   let lapsed = false
   on('turn.step', async function* ($: unknown, e: { turnId: string; index: number }) {
     const usage = lapsed

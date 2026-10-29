@@ -5,7 +5,8 @@
 // do then: run the main conversation at a lower effort, run new subagents on a
 // cheaper model, or stop new prompts. It can be limited to some accounts (the
 // `account_command` reading) and to hours of the week in a time zone. Keep-warm
-// re-reads an idle conversation's prompt cache before it lapses.
+// re-reads an idle conversation's prompt cache before it lapses and, when it
+// can't any more, compacts the conversation while the cache is still warm.
 //
 // Pure: the mod hands in the figures, these decide. Missing figures decide
 // nothing: no reading, no account, an unknown time zone, and the rule waits.
@@ -82,6 +83,13 @@ export type KeepWarm = {
   minLeft: number
   /** Re-reads per hour across every session on the machine. */
   perHour: number
+  /**
+   * When the re-reads run out (`max`, `per_hour`, `min_left`, a hold too long
+   * to bridge), compact the conversation while its cache is still warm rather
+   * than let it go cold; and while keep-warm holds the cache, stand Claude
+   * Code's own idle compaction down. `compact: false` leaves both to Claude Code.
+   */
+  compact: boolean
 }
 
 /** After a turn stops on a usage limit: one prompt after the reset, plus up to `jitter` seconds. */
@@ -108,7 +116,7 @@ export type GuardConfig = {
 
 export const NO_GUARD: GuardConfig = { on: true, rules: [], errors: [] }
 
-export const KEEP_WARM_DEFAULTS: KeepWarm = { sessions: 'last', after: 45 * 60, max: 2, minContext: 50_000, minLeft: 20, perHour: 6 }
+export const KEEP_WARM_DEFAULTS: KeepWarm = { sessions: 'last', after: 45 * 60, max: 2, minContext: 50_000, minLeft: 20, perHour: 6, compact: true }
 
 /** `45m`, `1h`, `90s`, `1h30m`, `3d`, or a number of minutes, in seconds. */
 export function seconds(value: unknown): number | undefined {
@@ -287,6 +295,7 @@ export function parseGuard(raw: unknown): GuardConfig {
       minContext: minContext ?? KEEP_WARM_DEFAULTS.minContext,
       minLeft: minLeft ?? KEEP_WARM_DEFAULTS.minLeft,
       perHour: perHour ?? KEEP_WARM_DEFAULTS.perHour,
+      compact: k.compact !== false,
     }
   }
   let resume: Resume | undefined
@@ -979,6 +988,19 @@ export function fiveHourLeftOf(reading: { percentUsed: number; resetsAt?: number
   return Math.max(0, 100 - reading.percentUsed)
 }
 
+/**
+ * The TTL Claude Code writes when nothing sets one: an hour on a subscription
+ * within its plan windows, five minutes past them (extra usage) or without one.
+ * Only the 5-hour and weekly windows count: a spent extra-usage cap
+ * (`spend_limit`) doesn't put plan requests on credits. A window whose reset has
+ * passed since its reading is a fresh one, not a full one.
+ */
+export function automaticTtl(limits: readonly { kind: string; percentUsed: number; resetsAt?: number }[] | undefined, nowSeconds: number): '5m' | '1h' {
+  const plan = (limits ?? []).filter(l => l.kind === 'five_hour' || l.kind === 'seven_day')
+  const within = plan.every(l => l.percentUsed < 100 || (l.resetsAt !== undefined && l.resetsAt > 0 && l.resetsAt <= nowSeconds))
+  return plan.length && within ? '1h' : '5m'
+}
+
 /** Why keep-warm re-reads now, or why it won't: the first reason that holds. */
 export function warmDue(k: KeepWarm | undefined, f: WarmFacts): { due: boolean; why: string; code: WarmCode } {
   const no = (code: WarmCode, why: string) => ({ due: false, why, code })
@@ -1004,6 +1026,32 @@ export function warmDue(k: KeepWarm | undefined, f: WarmFacts): { due: boolean; 
   if (idle < Math.min(k.after + f.jitter, WARM_LAPSE - 60)) return no('early', 'not idle long enough')
   if (idle > WARM_LAPSE) return no('lapsed', 'the cache has lapsed')
   return { due: true, why: 'idle', code: 'idle' }
+}
+
+/** The reasons keep-warm stops re-reading that a compaction can stand in for: its own limits. */
+const OUT_OF_REREADS: readonly WarmCode[] = ['held', 'five-hour', 'max', 'hourly']
+
+/**
+ * Whether to compact an idle conversation now that keep-warm won't re-read it:
+ * its own limits stopped it (`warmDue`'s code), the cache is still warm and as
+ * idle as a re-read would have been, and the 5-hour window isn't spent (the
+ * compaction is a request too). Once per idle stretch: a compaction leaves
+ * `compacted`, which no longer qualifies.
+ */
+export function compactDue(k: KeepWarm | undefined, code: WarmCode, idle: number, jitter: number, fiveHourLeft: number | undefined): boolean {
+  if (!k?.compact || !OUT_OF_REREADS.includes(code)) return false
+  if (fiveHourLeft !== undefined && !(fiveHourLeft > 0)) return false
+  return idle >= Math.min(k.after + jitter, WARM_LAPSE - 60) && idle <= WARM_LAPSE
+}
+
+/**
+ * Whether Claude Code's idle compaction (`auto` or `precompute`, no turn
+ * running) is stood down: keep-warm re-read this conversation since its last
+ * turn and the cache it kept is live, so a summary would only throw it away.
+ * When keep-warm runs out, `compactDue` compacts instead.
+ */
+export function idleCompactionStoodDown(k: KeepWarm | undefined, f: { busy: boolean; rereads: number; resting: boolean; idle: number }): boolean {
+  return !!k?.compact && !f.busy && !f.resting && f.rereads > 0 && f.idle < WARM_LAPSE
 }
 
 /**

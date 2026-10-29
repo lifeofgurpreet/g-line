@@ -16,7 +16,7 @@ unless the rule says `"window": "week"`) and one thing to do from then on:
       { "left": 5, "stop": true, "unless_reset_within": "1h" },
       { "left": 10, "stop": true, "end_turn": true, "accounts": ["team@"], "hours": "09:00-17:00 mon-fri", "tz": "Europe/London" }
     ],
-    "keep_warm": { "after": "45m", "max": 2, "min_context": "50k" }
+    "keep_warm": { "after": "45m", "max": 2, "min_context": "50k", "compact": true }
   }
 }
 ```
@@ -230,14 +230,30 @@ limits:
 - It needs a cache of at least `min_context` (50k), an hour-long cache, and `min_left` percent of
   the 5-hour window left (20). A window that has reset since its last reading counts as full,
   and no reading yet (or an account without a 5-hour window) doesn't hold it back. Past your
-  plan's limit, on usage credits, Claude Code uses five-minute caches, so it stops there.
+  plan's limit, on usage credits, Claude Code uses five-minute caches, so it stops there. Only
+  the 5-hour and weekly windows decide that: a spent extra-usage cap leaves plan requests on
+  hour-long caches, and a window that has reset since its 100% reading is a fresh one.
 - While a stop is in force, it keeps re-reading if the stop lifts within the re-reads it has
   left (`max` of them, about an hour each), and stands aside for a longer hold. A guard pause or
   `off here` lets your prompts through and leaves keep-warm running, since it holds nothing
   back; `/g-line guard off` stops it too.
 - It skips a cache the conversation no longer has: after a compaction, a `/clear`, a model
   change or an account change.
-- It stands aside for a conversation Claude Code will compact on its own when idle
+- When its own limits end the re-reads (`max`, `per_hour`, `min_left`, or a stop held longer
+  than it can bridge), it compacts the idle conversation instead of letting the cache go cold:
+  once per idle stretch, at the time a re-read would have run, through Claude Code's own
+  compaction (the call `/compact` makes), while the cache it reads is still warm. Your next
+  prompt then sends the summary, not the whole conversation rebuilt. It says so in a toast
+  (`◆ idle conversation compacted before its cache lapsed · 250k → 20k · keep-warm out of
+  re-reads`). It doesn't when the 5-hour window is spent, since the compaction is a request too.
+- Claude Code compacts conversations of 200k tokens and up on its own about 54 minutes into an
+  idle stretch (`idleCompaction`), on accounts where Anthropic has turned it on. Once keep-warm
+  has re-read a conversation in the stretch, that compaction would only throw the warm cache
+  away, so keep-warm stands it down (`◆ idle compaction stood down · keep-warm is holding the
+  cache`, and one line in the conversation) until its re-reads run out and it compacts itself.
+  Your own `/compact` is never stood down. `"compact": false` turns both off and brings back
+  the behaviour below.
+- With `"compact": false`, it stands aside for a conversation Claude Code will compact on its own when idle
   (`idleCompaction`, at 200k tokens and up by default). Claude Code turns idle compaction on per
   account, so keep-warm counts on it only once a session on the same account has been seen
   compacting while idle in the last 14 days; until then big conversations are kept warm too.
