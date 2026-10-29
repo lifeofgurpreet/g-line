@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-29T20:34:36Z",
+ "generated_at": "2026-10-29T21:06:05Z",
  "items": [
   {
    "title": "Alphabet's stock falls 12%+, wiping a record $500B from its market cap, after reporting negative ca…",
@@ -17,7 +17,7 @@
    "published_at": "2026-10-29T14:21:24Z",
    "text": "Today, we release the weights of a new and improved Le Chonk, advancing the open frontier for agentic coding and cybersecurity. 💻 Built to build: Le Chonk ranks #1 on @cognition’s FrontierCode among open models, and sets a new benchmark for Pareto efficiency on…",
    "author_name": "Mistral AI",
-   "likes": 4333,
+   "likes": 4456,
    "story": "Mistral releases the weights for Mistral Large 4, or Le Chonk, and says it rivals top open models such as GLM-5.3 on the Artificial Analysis Coding Agent Index"
   },
   {
@@ -28,14 +28,14 @@
    "text": "Added oidc.user_id_claim to the Claude apps gateway, to identify people by an id_token claim other than sub, such as Microsoft Entra ID's oid · Added click to send: in fullscreen, clicking the \"to send now\" hint under a queued message sends it right away, as its key does · Fixed managed settings and organization policy not being fetched for the rest of the session after signing in from the VS Code extension · Fixed Claude overwriting a very large CLAUDE.md, rules file or @-included file in a subdirectory after seeing only its start; Write now asks Claude to read it all or edit in place"
   },
   {
-   "title": "OpenAI has updated their model spec around five core values: - faithfulness to human intent - harm…",
-   "url": "https://x.com/AndrewCurran_/status/2115858614934175901",
+   "title": "Customer B has been revealed. Anthropic is SpaceX's largest single customer, overtaking NASA and th…",
+   "url": "https://x.com/AndrewCurran_/status/2115897550914158832",
    "source": "𝕏 @AndrewCurran_",
-   "published_at": "2026-10-29T17:29:39Z",
-   "text": "OpenAI has updated their model spec around five core values: - faithfulness to human intent - harm minimization - honesty and transparency - human agency - care. 'The Assistant,' which has been around for a very long time, has been replaced with 'GPT.'",
+   "published_at": "2026-10-29T20:04:22Z",
+   "text": "Customer B has been revealed. Anthropic is SpaceX's largest single customer, overtaking NASA and the Pentagon for the first time. 34.5% of SpaceX's revenue last quarter was from compute-as-a-service to Dario Amodei, and Anthropic has committed to spending up to $120.5 billion…",
    "author_name": "Andrew Curran",
-   "likes": 412,
-   "story": "OpenAI updates Model Spec to reorganize it around five values: faithfulness to human intent, harm minimization, honesty and transparency, human agency, and care"
+   "likes": 406,
+   "story": "Source: Anthropic is “Customer B” cited by SpaceX in a filing as its single largest customer accounting for 34.5% of Q3 revenue, surpassing the US government"
   },
   {
    "title": "Hackers leak the personal data of 41,000+ DHS employees and contractors, including CBP and ICE agen…",
@@ -46,13 +46,13 @@
    "via": "Techmeme"
   },
   {
-   "title": "LLM Voice",
-   "url": "https://martinfowler.com/bliki/LLM-Voice.html",
+   "title": "Alleged Chinese spy had 'close relationship' with Nvidia boss Jensen Huang",
+   "url": "https://nypost.com/2026/10/29/business/alleged-chinese-spy-had-close-relationship-with-nvidia-boss-jensen-huang-report/",
    "source": "Hacker News",
-   "published_at": "2026-10-29T14:57:55Z",
-   "text": "234 points and 133 comments on Hacker News.",
-   "points": 234,
-   "discussion": "https://news.ycombinator.com/item?id=50290177"
+   "published_at": "2026-10-29T17:43:48Z",
+   "text": "144 points and 84 comments on Hacker News.",
+   "points": 144,
+   "discussion": "https://news.ycombinator.com/item?id=50293047"
   },
   {
    "title": "Expanding our partnership with GSA to bring Claude to all levels of government",
@@ -69,21 +69,21 @@
    "text": "I've written before about how November 2025 was an inflection point for coding agents - the point where Opus 4.5 and GPT-5.1 crossed a tipping point that meant their respective coding agents became reliable daily drivers for software engineers. I think we've reached a new inflection point in October 2026, and this time it's for vibe coding computer games . Tree Appreciator Emberwick Battle Drones Pumpkin Farmer, aka Quarter Sun Cove Four times as insulting What happens if someone actually puts the work in? You should build a game!"
   },
   {
-   "title": "Google reports Search revenue up 12% YoY to $63.25B in Q3 2026, down from 14.5% in Q3 2025, and att…",
-   "url": "https://www.theregister.com/ai-and-ml/2026/10/29/google-struggling-to-make-ai-mode-searches-pay/5306181",
-   "source": "Simon Sharwood / The Regist…",
-   "published_at": "2026-10-29T05:11:37Z",
-   "text": "Google reports Search revenue up 12% YoY to $63.25B in Q3 2026, down from 14.5% in Q3 2025, and attributes the slowdown to “lower monetization” in AI Mode. Shares in Google's parent company Alphabet dived by almost ten percent on Wednesday, after the web giant admitted AI-powered searches earn …",
+   "title": "Google plans to expand “high-quality ads within AI Overviews in AI Mode” into international markets…",
+   "url": "https://techcrunch.com/2026/10/28/google-expands-ai-search-ads-globally-as-core-ad-growth-slows/",
+   "source": "Lauren Forristal / TechCrun…",
+   "published_at": "2026-10-29T05:31:30Z",
+   "text": "Google plans to expand “high-quality ads within AI Overviews in AI Mode” into international markets, as growth in its core search ad business slows. Google is bringing ads in its AI-powered Search experiences to international markets, betting that generative AI can open …",
    "via": "Techmeme"
   },
   {
-   "title": "Alleged Chinese spy had 'close relationship' with Nvidia boss Jensen Huang",
-   "url": "https://nypost.com/2026/10/29/business/alleged-chinese-spy-had-close-relationship-with-nvidia-boss-jensen-huang-report/",
+   "title": "LLM Voice",
+   "url": "https://martinfowler.com/bliki/LLM-Voice.html",
    "source": "Hacker News",
-   "published_at": "2026-10-29T17:43:48Z",
-   "text": "103 points and 41 comments on Hacker News.",
-   "points": 103,
-   "discussion": "https://news.ycombinator.com/item?id=50293047"
+   "published_at": "2026-10-29T14:57:55Z",
+   "text": "259 points and 138 comments on Hacker News.",
+   "points": 259,
+   "discussion": "https://news.ycombinator.com/item?id=50290177"
   },
   {
    "title": "Reddit plans to require users to log in to fully access the site in response to AI scraping and wil…",
@@ -98,8 +98,8 @@
    "url": "https://skypilot.ai/blog/grace-blackwell-needs-a-new-scheduler",
    "source": "Hacker News",
    "published_at": "2026-10-29T15:45:05Z",
-   "text": "102 points and 18 comments on Hacker News.",
-   "points": 102,
+   "text": "104 points and 18 comments on Hacker News.",
+   "points": 104,
    "discussion": "https://news.ycombinator.com/item?id=50290912"
   },
   {
