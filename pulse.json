@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-29T19:31:22Z",
+ "generated_at": "2026-10-29T20:03:29Z",
  "items": [
   {
    "title": "Alphabet's stock falls 12%+, wiping a record $500B from its market cap, after reporting negative ca…",
@@ -17,7 +17,7 @@
    "published_at": "2026-10-29T14:21:24Z",
    "text": "Today, we release the weights of a new and improved Le Chonk, advancing the open frontier for agentic coding and cybersecurity. 💻 Built to build: Le Chonk ranks #1 on @cognition’s FrontierCode among open models, and sets a new benchmark for Pareto efficiency on…",
    "author_name": "Mistral AI",
-   "likes": 4096,
+   "likes": 4220,
    "story": "Mistral releases the weights for Mistral Large 4, or Le Chonk, and says it rivals top open models such as GLM-5.3 on the Artificial Analysis Coding Agent Index"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-10-29T17:29:39Z",
    "text": "OpenAI has updated their model spec around five core values: - faithfulness to human intent - harm minimization - honesty and transparency - human agency - care. 'The Assistant,' which has been around for a very long time, has been replaced with 'GPT.'",
    "author_name": "Andrew Curran",
-   "likes": 373,
+   "likes": 392,
    "story": "OpenAI updates Model Spec to reorganize it around five values: faithfulness to human intent, harm minimization, honesty and transparency, human agency, and care"
   },
   {
@@ -50,8 +50,8 @@
    "url": "https://martinfowler.com/bliki/LLM-Voice.html",
    "source": "Hacker News",
    "published_at": "2026-10-29T14:57:55Z",
-   "text": "177 points and 98 comments on Hacker News.",
-   "points": 177,
+   "text": "216 points and 123 comments on Hacker News.",
+   "points": 216,
    "discussion": "https://news.ycombinator.com/item?id=50290177"
   },
   {
@@ -81,8 +81,8 @@
    "url": "https://skypilot.ai/blog/grace-blackwell-needs-a-new-scheduler",
    "source": "Hacker News",
    "published_at": "2026-10-29T15:45:05Z",
-   "text": "93 points and 9 comments on Hacker News.",
-   "points": 93,
+   "text": "101 points and 16 comments on Hacker News.",
+   "points": 101,
    "discussion": "https://news.ycombinator.com/item?id=50290912"
   },
   {
@@ -98,8 +98,8 @@
    "url": "https://trakkr.ai/trakkr-research/zombie-stats",
    "source": "Hacker News",
    "published_at": "2026-10-29T15:06:17Z",
-   "text": "100 points and 50 comments on Hacker News.",
-   "points": 100,
+   "text": "108 points and 54 comments on Hacker News.",
+   "points": 108,
    "discussion": "https://news.ycombinator.com/item?id=50290283"
   },
   {
@@ -118,11 +118,11 @@
    "via": "Techmeme"
   },
   {
-   "title": "Wabi, which is building an AI assistant that integrates into group chats and can take actions like…",
-   "url": "https://www.bloomberg.com/news/articles/2026-10-29/ai-assistant-startup-wabi-raises-55-million-at-1-25-billion-value",
-   "source": "Micah Barkley / Bloomberg",
-   "published_at": "2026-10-29T13:46:04Z",
-   "text": "Wabi, which is building an AI assistant that integrates into group chats and can take actions like booking appointments, raised $55M at a $1.25B valuation. AI assistant startup Wabi Inc. has raised $55 million at a $1.25 billion valuation to build out its software that lets groups …",
+   "title": "Serval, which offers AI agents for enterprise IT operations like access management, raised $150M le…",
+   "url": "https://www.reuters.com/business/serval-triples-valuation-3-billion-businesses-adopt-ai-workflow-automation-2026-10-29/",
+   "source": "Harshita Mary Varghese / Re…",
+   "published_at": "2026-10-29T13:55:50Z",
+   "text": "Serval, which offers AI agents for enterprise IT operations like access management, raised $150M led by Sequoia at a $3B valuation, up from $1B in December 2025. Serval raised $150 million in a Sequoia-led round at a $3 billion valuation, as the enterprise automation company seeks …",
    "via": "Techmeme"
   }
  ],
