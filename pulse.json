@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-29T15:47:44Z",
+ "generated_at": "2026-10-29T16:20:30Z",
  "items": [
   {
    "title": "Hackers leak the personal data of 41,000+ DHS employees and contractors, including CBP and ICE agen…",
@@ -17,7 +17,7 @@
    "published_at": "2026-10-29T14:21:24Z",
    "text": "Today, we release the weights of a new and improved Le Chonk, advancing the open frontier for agentic coding and cybersecurity. 💻 Built to build: Le Chonk ranks #1 on @cognition’s FrontierCode among open models, and sets a new benchmark for Pareto efficiency on…",
    "author_name": "Mistral AI",
-   "likes": 2410,
+   "likes": 2838,
    "story": "Mistral releases the weights for Mistral Large 4, or Le Chonk, and says it rivals top open models such as GLM-5.3 on the Artificial Analysis Coding Agent Index"
   },
   {
@@ -34,35 +34,35 @@
    "published_at": "2026-10-29T15:28:54Z",
    "text": "I was going to post some new sama quotes from this interview this morning, but prinz already posted a great summary. I will add that this is the third time I've seen Mr Altman talk about self replicating OpenAI datacenters. The first use case for OpenAI robots appears to be…",
    "author_name": "Andrew Curran",
-   "likes": 67,
+   "likes": 173,
    "story": "Q&A with Sam Altman on finding PHP bugs, sandboxing superhuman models as an unsolved safety dilemma, robotics scaling data centers, math, agent swarms, and more"
   },
   {
-   "title": "I did say we'd be releasing our models periodically...introducing Gemini 4 Carbon, our next frontie…",
-   "url": "https://x.com/sundarpichai/status/2115489219804352921",
+   "title": "Q3 is in the books! We’re now on a half-trillion annual revenue run rate, with Alphabet revenues gr…",
+   "url": "https://x.com/sundarpichai/status/2115535455156642066",
    "source": "𝕏 @sundarpichai",
-   "published_at": "2026-10-28T17:01:48Z",
-   "text": "I did say we'd be releasing our models periodically...introducing Gemini 4 Carbon, our next frontier model. Following Argon's release just two weeks ago, Carbon shows the pace at which we’re pushing the frontier, it ranks #1 on the recently updated v5.0 of @ArtificialAnlys…",
+   "published_at": "2026-10-28T20:05:31Z",
+   "text": "Q3 is in the books! We’re now on a half-trillion annual revenue run rate, with Alphabet revenues growing at 25%. - Our AI investments are driving overall Search query growth, including commercial queries - our YoY query growth rate is the highest it’s been in the last five…",
    "author_name": "Sundar Pichai",
-   "likes": 32009,
-   "story": "Google unveils Gemini 4 Carbon, its “strongest model with state-of-the-art cybersecurity” capabilities, ranked #1 on Artificial Analysis' new Intelligence Index"
+   "likes": 10897,
+   "story": "Google reports Search revenue up 12% YoY to $63.25B in Q3 2026, down from 14.5% in Q3 2025, and attributes the slowdown to “lower monetization” in AI Mode"
   },
   {
-   "title": "Google reports Search revenue up 12% YoY to $63.25B in Q3 2026, down from 14.5% in Q3 2025, and att…",
-   "url": "https://www.theregister.com/ai-and-ml/2026/10/29/google-struggling-to-make-ai-mode-searches-pay/5306181",
-   "source": "Simon Sharwood / The Regist…",
-   "published_at": "2026-10-29T05:11:37Z",
-   "text": "Google reports Search revenue up 12% YoY to $63.25B in Q3 2026, down from 14.5% in Q3 2025, and attributes the slowdown to “lower monetization” in AI Mode. Shares in Google's parent company Alphabet dived by almost ten percent on Wednesday, after the web giant admitted AI-powered searches earn …",
+   "title": "How surging demand from AI hyperscalers has quintupled flash memory prices and shifted market and n…",
+   "url": "https://www.wsj.com/tech/apple-iphone-memory-chips-ai-c0084cc9?st=jB9Xwc&reflink=desktopwebshare_permalink",
+   "source": "Rolfe Winkler / Wall Street…",
+   "published_at": "2026-10-29T03:56:10Z",
+   "text": "How surging demand from AI hyperscalers has quintupled flash memory prices and shifted market and negotiating power from Apple to suppliers like Kioxia. The iPhone maker for years bullied flash-storage makers into steep discounts—until AI hyperscalers bid up prices and gobbled up supply",
    "via": "Techmeme"
   },
   {
-   "title": "Claude Code regularly sends each background agent’s transcript to its model",
-   "url": "https://gist.github.com/flamerix-ai/c3905705cc4205e5de3011fa2e74efce",
+   "title": "Gemini 4 Carbon is the new #1 on the Artificial Analysis Intelligence Index v5",
+   "url": "https://artificialanalysis.ai/articles/gemini-4-carbon-new-number-1",
    "source": "Hacker News",
-   "published_at": "2026-10-29T03:33:42Z",
-   "text": "518 points and 210 comments on Hacker News.",
-   "points": 518,
-   "discussion": "https://news.ycombinator.com/item?id=50284255"
+   "published_at": "2026-10-29T12:41:56Z",
+   "text": "264 points and 206 comments on Hacker News.",
+   "points": 264,
+   "discussion": "https://news.ycombinator.com/item?id=50288019"
   },
   {
    "title": "Just wrapped our earnings call. It was a fast start to our fiscal year. Microsoft Cloud revenue sur…",
@@ -71,7 +71,7 @@
    "published_at": "2026-10-28T22:53:39Z",
    "text": "Just wrapped our earnings call. It was a fast start to our fiscal year. Microsoft Cloud revenue surpassed $63B, with growth accelerating to 30% YoY. Lots of innovation as we build the new tech stack for the agentic wave. A few highlights:",
    "author_name": "Satya Nadella",
-   "likes": 8311,
+   "likes": 8380,
    "story": "Microsoft reports Q1 revenue up 19% YoY to $92.28B, above $90.69B est., Azure revenue up 48% to $33.17B, above $32.32B est., and net income up 32% to $36.63B"
   },
   {
@@ -89,11 +89,11 @@
    "text": "I've written before about how November 2025 was an inflection point for coding agents - the point where Opus 4.5 and GPT-5.1 crossed a tipping point that meant their respective coding agents became reliable daily drivers for software engineers. I think we've reached a new inflection point in October 2026, and this time it's for vibe coding computer games . Tree Appreciator Emberwick Battle Drones Pumpkin Farmer, aka Quarter Sun Cove Four times as insulting What happens if someone actually puts the work in? You should build a game!"
   },
   {
-   "title": "Google plans to expand “high-quality ads within AI Overviews in AI Mode” into international markets…",
-   "url": "https://techcrunch.com/2026/10/28/google-expands-ai-search-ads-globally-as-core-ad-growth-slows/",
-   "source": "Lauren Forristal / TechCrun…",
-   "published_at": "2026-10-29T05:31:30Z",
-   "text": "Google plans to expand “high-quality ads within AI Overviews in AI Mode” into international markets, as growth in its core search ad business slows. Google is bringing ads in its AI-powered Search experiences to international markets, betting that generative AI can open …",
+   "title": "Sources: the US DOJ has inquired about the impact of Nvidia's Hugging Face deal on AI competition,…",
+   "url": "https://www.reuters.com/world/us-doj-is-inquiring-about-nvidias-purchase-hugging-face-sources-say-2026-10-28/",
+   "source": "Reuters",
+   "published_at": "2026-10-28T23:02:08Z",
+   "text": "Sources: the US DOJ has inquired about the impact of Nvidia's Hugging Face deal on AI competition, as antitrust enforcers continue to probe Nvidia's conduct. The US Department of Justice has made inquiries about how Nvidia's (NVDA.O) $12.93 billion deal to buy open-source platform Hugging Face …",
    "via": "Techmeme"
   },
   {
@@ -103,8 +103,25 @@
    "published_at": "2026-10-28T17:19:35Z",
    "text": "Lots of debate this week on whether journals should ban AI in peer review. We actually tested this in our new preprint, and the results were pretty clear to me. For context, I've reviewed for most of the big journals and evaluated 1,000 human reviews as an editor. I love to…",
    "author_name": "Ruslan Rust",
-   "likes": 1541,
+   "likes": 1572,
    "story": "LLMs are significantly better at finding mistakes in papers than trained human reviewers"
+  },
+  {
+   "title": "Claude Code regularly sends each background agent’s transcript to its model",
+   "url": "https://gist.github.com/flamerix-ai/c3905705cc4205e5de3011fa2e74efce",
+   "source": "Hacker News",
+   "published_at": "2026-10-29T03:33:42Z",
+   "text": "523 points and 211 comments on Hacker News.",
+   "points": 523,
+   "discussion": "https://news.ycombinator.com/item?id=50284255"
+  },
+  {
+   "title": "Collective, which uses AI to automate bookkeeping for solo business owners, raised a $40M Series B…",
+   "url": "https://www.axios.com/pro/fintech-deals/2026/10/29/collective-100m-financial-services-ai",
+   "source": "Natalie Breymeyer / Axios",
+   "published_at": "2026-10-29T15:16:09Z",
+   "text": "Collective, which uses AI to automate bookkeeping for solo business owners, raised a $40M Series B and $60M in nondilutive capital from GC's Customer Value Fund. Collective, a financial services platform for solo business owners, secured $100 million in financing, CEO Hooman Radfar tells Axios.",
+   "via": "Techmeme"
   },
   {
    "title": "Early progress on accelerating drug development with Claude",
@@ -114,21 +131,6 @@
    "text": "328 points and 337 comments on Hacker News.",
    "points": 328,
    "discussion": "https://news.ycombinator.com/item?id=50265609"
-  },
-  {
-   "title": "How surging demand from AI hyperscalers has quintupled flash memory prices and shifted market and n…",
-   "url": "https://www.wsj.com/tech/apple-iphone-memory-chips-ai-c0084cc9?st=jB9Xwc&reflink=desktopwebshare_permalink",
-   "source": "Rolfe Winkler / Wall Street…",
-   "published_at": "2026-10-29T03:56:10Z",
-   "text": "How surging demand from AI hyperscalers has quintupled flash memory prices and shifted market and negotiating power from Apple to suppliers like Kioxia. The iPhone maker for years bullied flash-storage makers into steep discounts—until AI hyperscalers bid up prices and gobbled up supply",
-   "via": "Techmeme"
-  },
-  {
-   "title": "Expanding our partnership with GSA to bring Claude to all levels of government",
-   "url": "https://www.anthropic.com/news/expanding-partnership-gsa",
-   "source": "Anthropic",
-   "published_at": "2026-10-27T22:21:46Z",
-   "text": "Anthropic is an AI safety and research company that's working to build reliable, interpretable, and steerable AI systems."
   }
  ],
  "sources": "curated, Techmeme, X (found via Techmeme, Reddit, the Internet Archive), Claude Code releases, Anthropic, Hacker News, Simon Willison"
