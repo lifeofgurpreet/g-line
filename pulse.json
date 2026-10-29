@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-29T21:37:08Z",
+ "generated_at": "2026-10-29T22:08:41Z",
  "items": [
   {
    "title": "Alphabet's stock falls 12%+, wiping a record $500B from its market cap, after reporting negative ca…",
@@ -17,7 +17,7 @@
    "published_at": "2026-10-29T14:21:24Z",
    "text": "Today, we release the weights of a new and improved Le Chonk, advancing the open frontier for agentic coding and cybersecurity. 💻 Built to build: Le Chonk ranks #1 on @cognition’s FrontierCode among open models, and sets a new benchmark for Pareto efficiency on…",
    "author_name": "Mistral AI",
-   "likes": 4547,
+   "likes": 4641,
    "story": "Mistral releases the weights for Mistral Large 4, or Le Chonk, and says it rivals top open models such as GLM-5.3 on the Artificial Analysis Coding Agent Index"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-10-29T20:04:22Z",
    "text": "Customer B has been revealed. Anthropic is SpaceX's largest single customer, overtaking NASA and the Pentagon for the first time. 34.5% of SpaceX's revenue last quarter was from compute-as-a-service to Dario Amodei, and Anthropic has committed to spending up to $120.5 billion…",
    "author_name": "Andrew Curran",
-   "likes": 552,
+   "likes": 684,
    "story": "Source: Anthropic is “Customer B” cited by SpaceX in a filing as its single largest customer accounting for 34.5% of Q3 revenue, surpassing the US government"
   },
   {
@@ -50,8 +50,8 @@
    "url": "https://nypost.com/2026/10/29/business/alleged-chinese-spy-had-close-relationship-with-nvidia-boss-jensen-huang-report/",
    "source": "Hacker News",
    "published_at": "2026-10-29T17:43:48Z",
-   "text": "190 points and 120 comments on Hacker News.",
-   "points": 190,
+   "text": "221 points and 147 comments on Hacker News.",
+   "points": 221,
    "discussion": "https://news.ycombinator.com/item?id=50293047"
   },
   {
@@ -81,8 +81,8 @@
    "url": "https://martinfowler.com/bliki/LLM-Voice.html",
    "source": "Hacker News",
    "published_at": "2026-10-29T14:57:55Z",
-   "text": "271 points and 146 comments on Hacker News.",
-   "points": 271,
+   "text": "284 points and 154 comments on Hacker News.",
+   "points": 284,
    "discussion": "https://news.ycombinator.com/item?id=50290177"
   },
   {
@@ -94,13 +94,13 @@
    "via": "Techmeme"
   },
   {
-   "title": "Grace Blackwell needs a new scheduler: 27% more usable GPUs from the same racks",
-   "url": "https://skypilot.ai/blog/grace-blackwell-needs-a-new-scheduler",
+   "title": "Zombie stats: Where the numbers AI quotes come from",
+   "url": "https://trakkr.ai/trakkr-research/zombie-stats",
    "source": "Hacker News",
-   "published_at": "2026-10-29T15:45:05Z",
-   "text": "105 points and 18 comments on Hacker News.",
-   "points": 105,
-   "discussion": "https://news.ycombinator.com/item?id=50290912"
+   "published_at": "2026-10-29T15:06:17Z",
+   "text": "127 points and 59 comments on Hacker News.",
+   "points": 127,
+   "discussion": "https://news.ycombinator.com/item?id=50290283"
   },
   {
    "title": "AI for Science expands to foundations and institutions",
@@ -110,19 +110,19 @@
    "text": "We’re highlighting 20 scientific foundations, institutions, and research groups from around the world that we’ve partnered with in an expansion of our AI for Science program."
   },
   {
-   "title": "How surging demand from AI hyperscalers has quintupled flash memory prices and shifted market and n…",
-   "url": "https://www.wsj.com/tech/apple-iphone-memory-chips-ai-c0084cc9?st=jB9Xwc&reflink=desktopwebshare_permalink",
-   "source": "Rolfe Winkler / Wall Street…",
-   "published_at": "2026-10-29T03:56:10Z",
-   "text": "How surging demand from AI hyperscalers has quintupled flash memory prices and shifted market and negotiating power from Apple to suppliers like Kioxia. The iPhone maker for years bullied flash-storage makers into steep discounts—until AI hyperscalers bid up prices and gobbled up supply",
-   "via": "Techmeme"
-  },
-  {
    "title": "Sources: an Accenture staffer's Claude agent ran on a DOD network for two months and appears to hav…",
    "url": "https://www.wired.com/story/a-defense-contractor-gave-their-personal-ai-agent-access-to-a-secure-pentagon-system/",
    "source": "Vittoria Elliott / Wired",
    "published_at": "2026-10-29T19:10:57Z",
    "text": "Sources: an Accenture staffer's Claude agent ran on a DOD network for two months and appears to have sent info to a third-party site before it was identified. Sources tell WIRED that an Accenture employee's personal Claude agent ran on a DOD network for two months before it was identified and the vulnerability could be patched.",
+   "via": "Techmeme"
+  },
+  {
+   "title": "How surging demand from AI hyperscalers has quintupled flash memory prices and shifted market and n…",
+   "url": "https://www.wsj.com/tech/apple-iphone-memory-chips-ai-c0084cc9?st=jB9Xwc&reflink=desktopwebshare_permalink",
+   "source": "Rolfe Winkler / Wall Street…",
+   "published_at": "2026-10-29T03:56:10Z",
+   "text": "How surging demand from AI hyperscalers has quintupled flash memory prices and shifted market and negotiating power from Apple to suppliers like Kioxia. The iPhone maker for years bullied flash-storage makers into steep discounts—until AI hyperscalers bid up prices and gobbled up supply",
    "via": "Techmeme"
   }
  ],
