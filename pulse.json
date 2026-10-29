@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-29T13:38:08Z",
+ "generated_at": "2026-10-29T14:10:49Z",
  "items": [
   {
    "title": "Hackers leak the personal data of 41,000+ DHS employees and contractors, including CBP and ICE agen…",
@@ -17,7 +17,7 @@
    "published_at": "2026-10-28T17:01:48Z",
    "text": "I did say we'd be releasing our models periodically...introducing Gemini 4 Carbon, our next frontier model. Following Argon's release just two weeks ago, Carbon shows the pace at which we’re pushing the frontier, it ranks #1 on the recently updated v5.0 of @ArtificialAnlys…",
    "author_name": "Sundar Pichai",
-   "likes": 31357,
+   "likes": 31536,
    "story": "Google unveils Gemini 4 Carbon, its “strongest model with state-of-the-art cybersecurity” capabilities, ranked #1 on Artificial Analysis' new Intelligence Index"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-10-28T22:53:39Z",
    "text": "Just wrapped our earnings call. It was a fast start to our fiscal year. Microsoft Cloud revenue surpassed $63B, with growth accelerating to 30% YoY. Lots of innovation as we build the new tech stack for the agentic wave. A few highlights:",
    "author_name": "Satya Nadella",
-   "likes": 7852,
+   "likes": 7986,
    "story": "Microsoft reports Q1 revenue up 19% YoY to $92.28B, above $90.69B est., Azure revenue up 48% to $33.17B, above $32.32B est., and net income up 32% to $36.63B"
   },
   {
@@ -50,19 +50,19 @@
    "url": "https://gist.github.com/flamerix-ai/c3905705cc4205e5de3011fa2e74efce",
    "source": "Hacker News",
    "published_at": "2026-10-29T03:33:42Z",
-   "text": "475 points and 187 comments on Hacker News.",
-   "points": 475,
+   "text": "486 points and 197 comments on Hacker News.",
+   "points": 486,
    "discussion": "https://news.ycombinator.com/item?id=50284255"
   },
   {
-   "title": "Announcing Artificial Analysis Intelligence Index v5, featuring 2 new benchmarks and 3 upgrades. Fo…",
-   "url": "https://x.com/ArtificialAnlys/status/2115265133467635877",
-   "source": "𝕏 @ArtificialAnlys",
-   "published_at": "2026-10-28T02:11:22Z",
-   "text": "Announcing Artificial Analysis Intelligence Index v5, featuring 2 new benchmarks and 3 upgrades. For the first time, the majority of the Index is built on private datasets The Artificial Analysis Intelligence Index is our composite measure of model capabilities across tasks…",
-   "author_name": "Artificial Analysis",
-   "likes": 5371,
-   "story": "Artificial Analysis unveils the Intelligence Index v5 with new coding and science benchmarks; 60% of the Index is based on private test sets or held-out answers"
+   "title": "Sundar Pichai on the earnings call: 'This rapid progress underscores our incredible model momentum.…",
+   "url": "https://x.com/AndrewCurran_/status/2115546957909533157",
+   "source": "𝕏 @AndrewCurran_",
+   "published_at": "2026-10-28T20:51:14Z",
+   "text": "Sundar Pichai on the earnings call: 'This rapid progress underscores our incredible model momentum. We are at the point where AI is helping us increase our training and launch velocity. I would expect the next twelve months to see continued acceleration because of RSI.'",
+   "author_name": "Andrew Curran",
+   "likes": 1481,
+   "story": "Alphabet reports Q3 revenue up 25% YoY to $127.58B, below $128.22B est., and Google Cloud revenue up 103% to $30.7B, above $28.7B est.; GOOG drops 11%+"
   },
   {
    "title": "AI for Science expands to foundations and institutions",
@@ -87,36 +87,26 @@
    "via": "Techmeme"
   },
   {
-   "title": "Sundar Pichai on the earnings call: 'This rapid progress underscores our incredible model momentum.…",
-   "url": "https://x.com/AndrewCurran_/status/2115546957909533157",
-   "source": "𝕏 @AndrewCurran_",
-   "published_at": "2026-10-28T20:51:14Z",
-   "text": "Sundar Pichai on the earnings call: 'This rapid progress underscores our incredible model momentum. We are at the point where AI is helping us increase our training and launch velocity. I would expect the next twelve months to see continued acceleration because of RSI.'",
-   "author_name": "Andrew Curran",
-   "likes": 1473,
-   "story": "Alphabet reports Q3 revenue up 25% YoY to $127.58B, below $128.22B est., and Google Cloud revenue up 103% to $30.7B, above $28.7B est.; GOOG drops 9%+"
-  },
-  {
-   "title": "Gemini 4 Carbon",
-   "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/",
-   "source": "Hacker News",
-   "published_at": "2026-10-28T17:01:23Z",
-   "text": "965 points and 771 comments on Hacker News.",
-   "points": 965,
-   "discussion": "https://news.ycombinator.com/item?id=50276792"
-  },
-  {
    "title": "Frontier performance at a fraction of the cost. In the @ArtificialAnlys Coding Agent Index, Copilot…",
    "url": "https://x.com/github/status/2115480207469560109",
    "source": "𝕏 @github",
    "published_at": "2026-10-28T16:25:59Z",
    "text": "Frontier performance at a fraction of the cost. In the @ArtificialAnlys Coding Agent Index, Copilot Fusion Max scored within two points of Claude Code with Opus 5.5 Max at about half the API cost per task. Get 30% off through Nov. 30. Try it now. ⬇️",
    "author_name": "GitHub",
-   "likes": 536,
+   "likes": 544,
    "story": "GitHub says Copilot Fusion, which handles model selection and orchestration, is now generally available, releases the GitHub Copilot app, and more",
    "links": [
     "https://docs.github.com/copilot/concepts/models/copilot-fusion?utm_source=universe-2026-x&utm_medium=social&utm_campaign=universe-2026"
    ]
+  },
+  {
+   "title": "Gemini 4 Carbon",
+   "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/",
+   "source": "Hacker News",
+   "published_at": "2026-10-28T17:01:23Z",
+   "text": "972 points and 776 comments on Hacker News.",
+   "points": 972,
+   "discussion": "https://news.ycombinator.com/item?id=50276792"
   },
   {
    "title": "Lots of debate this week on whether journals should ban AI in peer review. We actually tested this…",
@@ -125,7 +115,7 @@
    "published_at": "2026-10-28T17:19:35Z",
    "text": "Lots of debate this week on whether journals should ban AI in peer review. We actually tested this in our new preprint, and the results were pretty clear to me. For context, I've reviewed for most of the big journals and evaluated 1,000 human reviews as an editor. I love to…",
    "author_name": "Ruslan Rust",
-   "likes": 1415,
+   "likes": 1445,
    "story": "LLMs are significantly better at finding mistakes in papers than trained human reviewers"
   },
   {
@@ -135,6 +125,15 @@
    "published_at": "2026-10-28T23:02:08Z",
    "text": "Sources: the US DOJ has inquired about the impact of Nvidia's Hugging Face deal on AI competition, as antitrust enforcers continue to probe Nvidia's conduct. The US Department of Justice has made inquiries about how Nvidia's (NVDA.O) $12.93 billion deal to buy open-source platform Hugging Face …",
    "via": "Techmeme"
+  },
+  {
+   "title": "Anthropic trained Claude on illegally obtained Stanford professors' books",
+   "url": "https://stanforddaily.com/2026/10/27/professors-books-pirated-to-train-claude/",
+   "source": "Hacker News",
+   "published_at": "2026-10-27T15:28:26Z",
+   "text": "587 points and 295 comments on Hacker News.",
+   "points": 587,
+   "discussion": "https://news.ycombinator.com/item?id=50260814"
   }
  ],
  "sources": "curated, Techmeme, X (found via Techmeme, Reddit, the Internet Archive), Claude Code releases, Anthropic, Hacker News, Simon Willison"
