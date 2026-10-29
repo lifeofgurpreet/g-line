@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-29T06:04:48Z",
+ "generated_at": "2026-10-29T06:36:51Z",
  "items": [
   {
    "title": "Apple debuts a touchscreen MacBook Pro with a PROLED XDR tandem OLED display, light-up logo, M5 Pro…",
@@ -17,7 +17,7 @@
    "published_at": "2026-10-28T17:01:48Z",
    "text": "I did say we'd be releasing our models periodically...introducing Gemini 4 Carbon, our next frontier model. Following Argon's release just two weeks ago, Carbon shows the pace at which we’re pushing the frontier, it ranks #1 on the recently updated v5.0 of @ArtificialAnlys…",
    "author_name": "Sundar Pichai",
-   "likes": 28497,
+   "likes": 28810,
    "story": "Google unveils Gemini 4 Carbon, its “strongest model with state-of-the-art cybersecurity” capabilities, ranked #1 on Artificial Analysis' new Intelligence Index"
   },
   {
@@ -34,24 +34,24 @@
    "published_at": "2026-10-28T22:53:39Z",
    "text": "Just wrapped our earnings call. It was a fast start to our fiscal year. Microsoft Cloud revenue surpassed $63B, with growth accelerating to 30% YoY. Lots of innovation as we build the new tech stack for the agentic wave. A few highlights:",
    "author_name": "Satya Nadella",
-   "likes": 5521,
+   "likes": 5786,
    "story": "Microsoft reports Q1 revenue up 19% YoY to $92.28B, vs. $90.69B est., Azure revenue up 48% to $33.17B, vs. $32.32B est., and net income up 32% to $36.63B"
   },
   {
-   "title": "The personal data of 41,000+ DHS employees and contractors, including CBP and ICE agents, leaks onl…",
-   "url": "https://www.wired.com/story/massive-leak-exposes-41000-homeland-security-workers-including-undercover-ice-agents/",
-   "source": "Wired",
-   "published_at": "2026-10-29T01:56:37Z",
-   "text": "The personal data of 41,000+ DHS employees and contractors, including CBP and ICE agents, leaks online after hackers claim they breached DHS' Okta login system. The leaked records include the locations of ICE and CBP facilities, workers' cell phone numbers, and the members of groups tied …",
+   "title": "Google's search revenue rose 12% YoY to $63.25B in Q3 2026, down from 14.5% in Q3 2025, with Google…",
+   "url": "https://www.theregister.com/ai-and-ml/2026/10/29/google-struggling-to-make-ai-mode-searches-pay/5306181",
+   "source": "Simon Sharwood / The Regist…",
+   "published_at": "2026-10-29T05:11:37Z",
+   "text": "Google's search revenue rose 12% YoY to $63.25B in Q3 2026, down from 14.5% in Q3 2025, with Google attributing the slowdown to “lower monetization” in AI Mode. Shares in Google's parent company Alphabet dived by almost ten percent on Wednesday, after the web giant admitted …",
    "via": "Techmeme"
   },
   {
-   "title": "Claude Code burns ~15–20% of your tokens on a 3-word status line",
+   "title": "Claude Code regularly sends each background agent’s transcript to its model",
    "url": "https://gist.github.com/flamerix-ai/c3905705cc4205e5de3011fa2e74efce",
    "source": "Hacker News",
    "published_at": "2026-10-29T03:33:42Z",
-   "text": "203 points and 48 comments on Hacker News.",
-   "points": 203,
+   "text": "223 points and 63 comments on Hacker News.",
+   "points": 223,
    "discussion": "https://news.ycombinator.com/item?id=50284255"
   },
   {
@@ -61,14 +61,14 @@
    "published_at": "2026-10-28T02:11:22Z",
    "text": "Announcing Artificial Analysis Intelligence Index v5, featuring 2 new benchmarks and 3 upgrades. For the first time, the majority of the Index is built on private datasets The Artificial Analysis Intelligence Index is our composite measure of model capabilities across tasks…",
    "author_name": "Artificial Analysis",
-   "likes": 5290,
+   "likes": 5297,
    "story": "Artificial Analysis unveils the Intelligence Index v5 with new coding and science benchmarks; 60% of the Index is based on private test sets or held-out answers"
   },
   {
    "title": "AI for Science expands to foundations and institutions",
    "url": "https://www.anthropic.com/news/ai-for-science-expands-foundations-research-institutions",
    "source": "Anthropic",
-   "published_at": "2026-10-28T23:59:00Z",
+   "published_at": "2026-10-29T04:43:29Z",
    "text": "We’re highlighting 20 scientific foundations, institutions, and research groups from around the world that we’ve partnered with in an expansion of our AI for Science program."
   },
   {
@@ -79,11 +79,11 @@
    "text": "I've written before about how November 2025 was an inflection point for coding agents - the point where Opus 4.5 and GPT-5.1 crossed a tipping point that meant their respective coding agents became reliable daily drivers for software engineers. I think we've reached a new inflection point in October 2026, and this time it's for vibe coding computer games . Tree Appreciator Emberwick Battle Drones Pumpkin Farmer, aka Quarter Sun Cove Four times as insulting What happens if someone actually puts the work in? You should build a game!"
   },
   {
-   "title": "Google's search revenue rose 12% YoY to $63.25B in Q3 2026, down from 14.5% in Q3 2025, with Google…",
-   "url": "https://www.theregister.com/ai-and-ml/2026/10/29/google-struggling-to-make-ai-mode-searches-pay/5306181",
-   "source": "Simon Sharwood / The Regist…",
-   "published_at": "2026-10-29T05:11:37Z",
-   "text": "Google's search revenue rose 12% YoY to $63.25B in Q3 2026, down from 14.5% in Q3 2025, with Google attributing the slowdown to “lower monetization” in AI Mode. That's a problem, cos it just spent $51 billion on infrastructure and still needs to rent compute from others to run its cloud",
+   "title": "The personal data of 41,000+ DHS employees and contractors, including CBP and ICE agents, leaks onl…",
+   "url": "https://www.wired.com/story/massive-leak-exposes-41000-homeland-security-workers-including-undercover-ice-agents/",
+   "source": "Wired",
+   "published_at": "2026-10-29T01:56:37Z",
+   "text": "The personal data of 41,000+ DHS employees and contractors, including CBP and ICE agents, leaks online after hackers claim they breached DHS' Okta login system. The leaked records include the locations of ICE and CBP facilities, workers' cell phone numbers, and the members of groups tied …",
    "via": "Techmeme"
   },
   {
@@ -93,7 +93,7 @@
    "published_at": "2026-10-28T20:51:14Z",
    "text": "Sundar Pichai on the earnings call: 'This rapid progress underscores our incredible model momentum. We are at the point where AI is helping us increase our training and launch velocity. I would expect the next twelve months to see continued acceleration because of RSI.'",
    "author_name": "Andrew Curran",
-   "likes": 1226,
+   "likes": 1252,
    "story": "Alphabet reports Q3 revenue up 25% YoY to $127.58B, vs. $128.22B est., Google Cloud revenue up 103% to $30.7B, vs. $28.7B est.; GOOG drops 9%+ after hours"
   },
   {
@@ -101,8 +101,8 @@
    "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/",
    "source": "Hacker News",
    "published_at": "2026-10-28T17:01:23Z",
-   "text": "869 points and 715 comments on Hacker News.",
-   "points": 869,
+   "text": "876 points and 723 comments on Hacker News.",
+   "points": 876,
    "discussion": "https://news.ycombinator.com/item?id=50276792"
   },
   {
@@ -112,7 +112,7 @@
    "published_at": "2026-10-28T16:25:59Z",
    "text": "Frontier performance at a fraction of the cost. In the @ArtificialAnlys Coding Agent Index, Copilot Fusion Max scored within two points of Claude Code with Opus 5.5 Max at about half the API cost per task. Get 30% off through Nov. 30. Try it now. ⬇️",
    "author_name": "GitHub",
-   "likes": 424,
+   "likes": 436,
    "story": "GitHub says Copilot Fusion, which handles model selection and orchestration, is now generally available, releases the GitHub Copilot app, and more",
    "links": [
     "https://docs.github.com/copilot/concepts/models/copilot-fusion?utm_source=universe-2026-x&utm_medium=social&utm_campaign=universe-2026"
@@ -125,7 +125,7 @@
    "published_at": "2026-10-28T17:19:35Z",
    "text": "Lots of debate this week on whether journals should ban AI in peer review. We actually tested this in our new preprint, and the results were pretty clear to me. For context, I've reviewed for most of the big journals and evaluated 1,000 human reviews as an editor. I love to…",
    "author_name": "Ruslan Rust",
-   "likes": 932,
+   "likes": 961,
    "story": "LLMs are significantly better at finding mistakes in papers than trained human reviewers"
   },
   {
