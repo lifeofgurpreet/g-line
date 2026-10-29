@@ -1,13 +1,13 @@
 {
  "schema": 1,
- "generated_at": "2026-10-29T23:13:12Z",
+ "generated_at": "2026-10-29T23:45:23Z",
  "items": [
   {
-   "title": "Alphabet's stock falls 12%+, wiping a record $500B from its market cap, after reporting negative ca…",
+   "title": "Alphabet's stock falls 12.3%, wiping a record $500B from its market cap, after reporting negative c…",
    "url": "https://www.ft.com/content/eb386156-5bf9-4edd-80f2-803fdee1e33d",
    "source": "Stephen Morris / Financial…",
    "published_at": "2026-10-29T16:26:15Z",
-   "text": "Alphabet's stock falls 12%+, wiping a record $500B from its market cap, after reporting negative cash flow amid its AI spending; the Nasdaq falls 1.4%+. Google owner admits ‘AI mode’ has hurt traditional search as sales and profits undershoot expectations",
+   "text": "Alphabet's stock falls 12.3%, wiping a record $500B from its market cap, after reporting negative cash flow amid its AI spending; the Nasdaq falls 1.4%. Google owner admits ‘AI mode’ has hurt traditional search as sales and profits undershoot expectations",
    "via": "Techmeme"
   },
   {
@@ -17,7 +17,7 @@
    "published_at": "2026-10-29T14:21:24Z",
    "text": "Today, we release the weights of a new and improved Le Chonk, advancing the open frontier for agentic coding and cybersecurity. 💻 Built to build: Le Chonk ranks #1 on @cognition’s FrontierCode among open models, and sets a new benchmark for Pareto efficiency on…",
    "author_name": "Mistral AI",
-   "likes": 4824,
+   "likes": 4897,
    "story": "Mistral releases the weights for Mistral Large 4, or Le Chonk, and says it rivals top open models such as GLM-5.3 on the Artificial Analysis Coding Agent Index"
   },
   {
@@ -28,13 +28,23 @@
    "text": "Added oidc.user_id_claim to the Claude apps gateway, to identify people by an id_token claim other than sub, such as Microsoft Entra ID's oid · Added click to send: in fullscreen, clicking the \"to send now\" hint under a queued message sends it right away, as its key does · Fixed managed settings and organization policy not being fetched for the rest of the session after signing in from the VS Code extension · Fixed Claude overwriting a very large CLAUDE.md, rules file or @-included file in a subdirectory after seeing only its start; Write now asks Claude to read it all or edit in place"
   },
   {
+   "title": "Roblox just released a letter to shareholders. - Over 80% of the top 100 Roblox games now use AI. -…",
+   "url": "https://x.com/KreekCraft/status/2115913814516629675",
+   "source": "𝕏 @KreekCraft",
+   "published_at": "2026-10-29T21:08:59Z",
+   "text": "Roblox just released a letter to shareholders. - Over 80% of the top 100 Roblox games now use AI. - Steal an Egg and Huss Valley are almost 100% AI generated. - More than 70,000 games have been AI generated with Roblox Build.",
+   "author_name": "KreekCraft",
+   "likes": 5513,
+   "story": "Roblox reports Q3 bookings down 12% YoY to $1.7B, vs. $1.63B est., and DAUs down 9% to 138M, vs. 145.8M est.; RBLX drops 16%+ after hours"
+  },
+  {
    "title": "Customer B has been revealed. Anthropic is SpaceX's largest single customer, overtaking NASA and th…",
    "url": "https://x.com/AndrewCurran_/status/2115897550914158832",
    "source": "𝕏 @AndrewCurran_",
    "published_at": "2026-10-29T20:04:22Z",
    "text": "Customer B has been revealed. Anthropic is SpaceX's largest single customer, overtaking NASA and the Pentagon for the first time. 34.5% of SpaceX's revenue last quarter was from compute-as-a-service to Dario Amodei, and Anthropic has committed to spending up to $120.5 billion…",
    "author_name": "Andrew Curran",
-   "likes": 802,
+   "likes": 843,
    "story": "Source: Anthropic is “Customer B” cited by SpaceX in a filing as its single largest customer accounting for 34.5% of Q3 revenue, surpassing the US government"
   },
   {
@@ -46,13 +56,13 @@
    "via": "Techmeme"
   },
   {
-   "title": "Alleged Chinese spy had 'close relationship' with Nvidia boss Jensen Huang",
-   "url": "https://nypost.com/2026/10/29/business/alleged-chinese-spy-had-close-relationship-with-nvidia-boss-jensen-huang-report/",
+   "title": "We ran AI agent swarms in Minecraft and Mindustry",
+   "url": "https://labs.ycombinator.com/projects/games/index.html",
    "source": "Hacker News",
-   "published_at": "2026-10-29T17:43:48Z",
-   "text": "250 points and 168 comments on Hacker News.",
-   "points": 250,
-   "discussion": "https://news.ycombinator.com/item?id=50293047"
+   "published_at": "2026-10-29T21:40:28Z",
+   "text": "84 points and 33 comments on Hacker News.",
+   "points": 84,
+   "discussion": "https://news.ycombinator.com/item?id=50296486"
   },
   {
    "title": "Expanding our partnership with GSA to bring Claude to all levels of government",
@@ -77,13 +87,13 @@
    "via": "Techmeme"
   },
   {
-   "title": "We ran AI agent swarms in Minecraft and Mindustry",
-   "url": "https://labs.ycombinator.com/projects/games/index.html",
+   "title": "Alleged Chinese spy had 'close relationship' with Nvidia boss Jensen Huang",
+   "url": "https://nypost.com/2026/10/29/business/alleged-chinese-spy-had-close-relationship-with-nvidia-boss-jensen-huang-report/",
    "source": "Hacker News",
-   "published_at": "2026-10-29T21:40:28Z",
-   "text": "64 points and 26 comments on Hacker News.",
-   "points": 64,
-   "discussion": "https://news.ycombinator.com/item?id=50296486"
+   "published_at": "2026-10-29T17:43:48Z",
+   "text": "257 points and 176 comments on Hacker News.",
+   "points": 257,
+   "discussion": "https://news.ycombinator.com/item?id=50293047"
   },
   {
    "title": "Sources: an Accenture staffer's Claude agent ran on a DOD network for two months and appears to hav…",
@@ -98,8 +108,8 @@
    "url": "https://martinfowler.com/bliki/LLM-Voice.html",
    "source": "Hacker News",
    "published_at": "2026-10-29T14:57:55Z",
-   "text": "302 points and 162 comments on Hacker News.",
-   "points": 302,
+   "text": "313 points and 164 comments on Hacker News.",
+   "points": 313,
    "discussion": "https://news.ycombinator.com/item?id=50290177"
   },
   {
@@ -115,14 +125,6 @@
    "source": "John Collison / Cheeky Pint",
    "published_at": "2026-10-29T12:41:02Z",
    "text": "Q&A with Sam Altman on finding PHP bugs, sandboxing superhuman models as an unsolved safety dilemma, robotics scaling data centers, math, agent swarms, and more. Sam Altman, CEO of OpenAI, joins John to break down how models uncovered critical PHP vulnerabilities …",
-   "via": "Techmeme"
-  },
-  {
-   "title": "How surging demand from AI hyperscalers has quintupled flash memory prices and shifted market and n…",
-   "url": "https://www.wsj.com/tech/apple-iphone-memory-chips-ai-c0084cc9?st=jB9Xwc&reflink=desktopwebshare_permalink",
-   "source": "Rolfe Winkler / Wall Street…",
-   "published_at": "2026-10-29T03:56:10Z",
-   "text": "How surging demand from AI hyperscalers has quintupled flash memory prices and shifted market and negotiating power from Apple to suppliers like Kioxia. The iPhone maker for years bullied flash-storage makers into steep discounts—until AI hyperscalers bid up prices and gobbled up supply",
    "via": "Techmeme"
   }
  ],
