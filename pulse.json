@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-29T22:08:41Z",
+ "generated_at": "2026-10-29T22:41:44Z",
  "items": [
   {
    "title": "Alphabet's stock falls 12%+, wiping a record $500B from its market cap, after reporting negative ca…",
@@ -17,7 +17,7 @@
    "published_at": "2026-10-29T14:21:24Z",
    "text": "Today, we release the weights of a new and improved Le Chonk, advancing the open frontier for agentic coding and cybersecurity. 💻 Built to build: Le Chonk ranks #1 on @cognition’s FrontierCode among open models, and sets a new benchmark for Pareto efficiency on…",
    "author_name": "Mistral AI",
-   "likes": 4641,
+   "likes": 4732,
    "story": "Mistral releases the weights for Mistral Large 4, or Le Chonk, and says it rivals top open models such as GLM-5.3 on the Artificial Analysis Coding Agent Index"
   },
   {
@@ -34,15 +34,15 @@
    "published_at": "2026-10-29T20:04:22Z",
    "text": "Customer B has been revealed. Anthropic is SpaceX's largest single customer, overtaking NASA and the Pentagon for the first time. 34.5% of SpaceX's revenue last quarter was from compute-as-a-service to Dario Amodei, and Anthropic has committed to spending up to $120.5 billion…",
    "author_name": "Andrew Curran",
-   "likes": 684,
+   "likes": 742,
    "story": "Source: Anthropic is “Customer B” cited by SpaceX in a filing as its single largest customer accounting for 34.5% of Q3 revenue, surpassing the US government"
   },
   {
-   "title": "Hackers leak the personal data of 41,000+ DHS employees and contractors, including CBP and ICE agen…",
-   "url": "https://www.wired.com/story/massive-leak-exposes-41000-homeland-security-workers-including-undercover-ice-agents/",
-   "source": "Wired",
-   "published_at": "2026-10-29T01:56:37Z",
-   "text": "Hackers leak the personal data of 41,000+ DHS employees and contractors, including CBP and ICE agents; DDoSecrets says the data came from DHS' Okta login system. The leaked records include the locations of ICE and CBP facilities, workers' cell phone numbers, and the members of groups tied …",
+   "title": "Reddit plans to require users to log in to fully access the site in response to AI scraping and wil…",
+   "url": "https://www.axios.com/2026/10/29/reddit-logged-in-ai-search-incognito",
+   "source": "Sara Fischer / Axios",
+   "published_at": "2026-10-29T20:22:24Z",
+   "text": "Reddit plans to require users to log in to fully access the site in response to AI scraping and will test it in select markets outside the US this quarter. Reddit on Thursday said it's moving to become a primarily logged-in experience, marking one of the most significant shifts in its 21-year history.",
    "via": "Techmeme"
   },
   {
@@ -50,8 +50,8 @@
    "url": "https://nypost.com/2026/10/29/business/alleged-chinese-spy-had-close-relationship-with-nvidia-boss-jensen-huang-report/",
    "source": "Hacker News",
    "published_at": "2026-10-29T17:43:48Z",
-   "text": "221 points and 147 comments on Hacker News.",
-   "points": 221,
+   "text": "241 points and 156 comments on Hacker News.",
+   "points": 241,
    "discussion": "https://news.ycombinator.com/item?id=50293047"
   },
   {
@@ -69,11 +69,11 @@
    "text": "I've written before about how November 2025 was an inflection point for coding agents - the point where Opus 4.5 and GPT-5.1 crossed a tipping point that meant their respective coding agents became reliable daily drivers for software engineers. I think we've reached a new inflection point in October 2026, and this time it's for vibe coding computer games . Tree Appreciator Emberwick Battle Drones Pumpkin Farmer, aka Quarter Sun Cove Four times as insulting What happens if someone actually puts the work in? You should build a game!"
   },
   {
-   "title": "Reddit plans to require users to log in to fully access the site in response to AI scraping and wil…",
-   "url": "https://www.axios.com/2026/10/29/reddit-logged-in-ai-search-incognito",
-   "source": "Sara Fischer / Axios",
-   "published_at": "2026-10-29T20:22:24Z",
-   "text": "Reddit plans to require users to log in to fully access the site in response to AI scraping and will test it in select markets outside the US this quarter. Reddit on Thursday said it's moving to become a primarily logged-in experience, marking one of the most significant shifts in its 21-year history.",
+   "title": "Hackers leak the personal data of 41,000+ DHS employees and contractors, including CBP and ICE agen…",
+   "url": "https://www.wired.com/story/massive-leak-exposes-41000-homeland-security-workers-including-undercover-ice-agents/",
+   "source": "Wired",
+   "published_at": "2026-10-29T01:56:37Z",
+   "text": "Hackers leak the personal data of 41,000+ DHS employees and contractors, including CBP and ICE agents; DDoSecrets says the data came from DHS' Okta login system. The leaked records include the locations of ICE and CBP facilities, workers' cell phone numbers, and the members of groups tied …",
    "via": "Techmeme"
   },
   {
@@ -81,8 +81,8 @@
    "url": "https://martinfowler.com/bliki/LLM-Voice.html",
    "source": "Hacker News",
    "published_at": "2026-10-29T14:57:55Z",
-   "text": "284 points and 154 comments on Hacker News.",
-   "points": 284,
+   "text": "295 points and 156 comments on Hacker News.",
+   "points": 295,
    "discussion": "https://news.ycombinator.com/item?id=50290177"
   },
   {
@@ -94,13 +94,13 @@
    "via": "Techmeme"
   },
   {
-   "title": "Zombie stats: Where the numbers AI quotes come from",
-   "url": "https://trakkr.ai/trakkr-research/zombie-stats",
+   "title": "Claude Code regularly sends each background agent’s transcript to its model",
+   "url": "https://gist.github.com/flamerix-ai/c3905705cc4205e5de3011fa2e74efce",
    "source": "Hacker News",
-   "published_at": "2026-10-29T15:06:17Z",
-   "text": "127 points and 59 comments on Hacker News.",
-   "points": 127,
-   "discussion": "https://news.ycombinator.com/item?id=50290283"
+   "published_at": "2026-10-29T03:33:42Z",
+   "text": "557 points and 224 comments on Hacker News.",
+   "points": 557,
+   "discussion": "https://news.ycombinator.com/item?id=50284255"
   },
   {
    "title": "AI for Science expands to foundations and institutions",
