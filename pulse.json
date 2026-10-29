@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-29T16:52:27Z",
+ "generated_at": "2026-10-29T17:24:22Z",
  "items": [
   {
    "title": "Alphabet's stock falls 12%+, wiping a record $500B from its market cap, after reporting negative ca…",
@@ -17,7 +17,7 @@
    "published_at": "2026-10-29T14:21:24Z",
    "text": "Today, we release the weights of a new and improved Le Chonk, advancing the open frontier for agentic coding and cybersecurity. 💻 Built to build: Le Chonk ranks #1 on @cognition’s FrontierCode among open models, and sets a new benchmark for Pareto efficiency on…",
    "author_name": "Mistral AI",
-   "likes": 3134,
+   "likes": 3404,
    "story": "Mistral releases the weights for Mistral Large 4, or Le Chonk, and says it rivals top open models such as GLM-5.3 on the Artificial Analysis Coding Agent Index"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-10-29T15:28:54Z",
    "text": "I was going to post some new sama quotes from this interview this morning, but prinz already posted a great summary. I will add that this is the third time I've seen Mr Altman talk about self replicating OpenAI datacenters. The first use case for OpenAI robots appears to be…",
    "author_name": "Andrew Curran",
-   "likes": 229,
+   "likes": 266,
    "story": "Q&A with Sam Altman on finding PHP bugs, sandboxing superhuman models as an unsolved safety dilemma, robotics scaling data centers, math, agent swarms, and more"
   },
   {
@@ -44,7 +44,7 @@
    "published_at": "2026-10-28T20:05:31Z",
    "text": "Q3 is in the books! We’re now on a half-trillion annual revenue run rate, with Alphabet revenues growing at 25%. - Our AI investments are driving overall Search query growth, including commercial queries - our YoY query growth rate is the highest it’s been in the last five…",
    "author_name": "Sundar Pichai",
-   "likes": 10962,
+   "likes": 11014,
    "story": "Google plans to expand “high-quality ads within AI Overviews in AI Mode” into international markets, as growth in its core search ad business slows"
   },
   {
@@ -60,19 +60,9 @@
    "url": "https://artificialanalysis.ai/articles/gemini-4-carbon-new-number-1",
    "source": "Hacker News",
    "published_at": "2026-10-29T12:41:56Z",
-   "text": "285 points and 218 comments on Hacker News.",
-   "points": 285,
+   "text": "302 points and 224 comments on Hacker News.",
+   "points": 302,
    "discussion": "https://news.ycombinator.com/item?id=50288019"
-  },
-  {
-   "title": "Just wrapped our earnings call. It was a fast start to our fiscal year. Microsoft Cloud revenue sur…",
-   "url": "https://x.com/satyanadella/status/2115577764300693644",
-   "source": "𝕏 @satyanadella",
-   "published_at": "2026-10-28T22:53:39Z",
-   "text": "Just wrapped our earnings call. It was a fast start to our fiscal year. Microsoft Cloud revenue surpassed $63B, with growth accelerating to 30% YoY. Lots of innovation as we build the new tech stack for the agentic wave. A few highlights:",
-   "author_name": "Satya Nadella",
-   "likes": 8460,
-   "story": "Microsoft reports Q1 revenue up 19% YoY to $92.28B, above $90.69B est., Azure revenue up 48% to $33.17B, above $32.32B est., and net income up 32% to $36.63B"
   },
   {
    "title": "AI for Science expands to foundations and institutions",
@@ -101,8 +91,8 @@
    "url": "https://trakkr.ai/trakkr-research/zombie-stats",
    "source": "Hacker News",
    "published_at": "2026-10-29T15:06:17Z",
-   "text": "61 points and 23 comments on Hacker News.",
-   "points": 61,
+   "text": "78 points and 36 comments on Hacker News.",
+   "points": 78,
    "discussion": "https://news.ycombinator.com/item?id=50290283"
   },
   {
@@ -118,8 +108,8 @@
    "url": "https://gist.github.com/flamerix-ai/c3905705cc4205e5de3011fa2e74efce",
    "source": "Hacker News",
    "published_at": "2026-10-29T03:33:42Z",
-   "text": "527 points and 213 comments on Hacker News.",
-   "points": 527,
+   "text": "530 points and 215 comments on Hacker News.",
+   "points": 530,
    "discussion": "https://news.ycombinator.com/item?id=50284255"
   },
   {
@@ -128,6 +118,14 @@
    "source": "Anthropic",
    "published_at": "2026-10-27T22:21:46Z",
    "text": "Anthropic is an AI safety and research company that's working to build reliable, interpretable, and steerable AI systems."
+  },
+  {
+   "title": "Wabi, which is building an AI assistant that integrates into group chats and can take actions like…",
+   "url": "https://www.bloomberg.com/news/articles/2026-10-29/ai-assistant-startup-wabi-raises-55-million-at-1-25-billion-value",
+   "source": "Micah Barkley / Bloomberg",
+   "published_at": "2026-10-29T13:46:04Z",
+   "text": "Wabi, which is building an AI assistant that integrates into group chats and can take actions like booking appointments, raised $55M at a $1.25B valuation. AI assistant startup Wabi Inc. has raised $55 million at a $1.25 billion valuation to build out its software that lets groups …",
+   "via": "Techmeme"
   }
  ],
  "sources": "curated, Techmeme, X (found via Techmeme, Reddit, the Internet Archive), Claude Code releases, Anthropic, Hacker News, Simon Willison"
