@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-29T20:03:29Z",
+ "generated_at": "2026-10-29T20:34:36Z",
  "items": [
   {
    "title": "Alphabet's stock falls 12%+, wiping a record $500B from its market cap, after reporting negative ca…",
@@ -17,7 +17,7 @@
    "published_at": "2026-10-29T14:21:24Z",
    "text": "Today, we release the weights of a new and improved Le Chonk, advancing the open frontier for agentic coding and cybersecurity. 💻 Built to build: Le Chonk ranks #1 on @cognition’s FrontierCode among open models, and sets a new benchmark for Pareto efficiency on…",
    "author_name": "Mistral AI",
-   "likes": 4220,
+   "likes": 4333,
    "story": "Mistral releases the weights for Mistral Large 4, or Le Chonk, and says it rivals top open models such as GLM-5.3 on the Artificial Analysis Coding Agent Index"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-10-29T17:29:39Z",
    "text": "OpenAI has updated their model spec around five core values: - faithfulness to human intent - harm minimization - honesty and transparency - human agency - care. 'The Assistant,' which has been around for a very long time, has been replaced with 'GPT.'",
    "author_name": "Andrew Curran",
-   "likes": 392,
+   "likes": 412,
    "story": "OpenAI updates Model Spec to reorganize it around five values: faithfulness to human intent, harm minimization, honesty and transparency, human agency, and care"
   },
   {
@@ -50,8 +50,8 @@
    "url": "https://martinfowler.com/bliki/LLM-Voice.html",
    "source": "Hacker News",
    "published_at": "2026-10-29T14:57:55Z",
-   "text": "216 points and 123 comments on Hacker News.",
-   "points": 216,
+   "text": "234 points and 133 comments on Hacker News.",
+   "points": 234,
    "discussion": "https://news.ycombinator.com/item?id=50290177"
   },
   {
@@ -77,30 +77,30 @@
    "via": "Techmeme"
   },
   {
+   "title": "Alleged Chinese spy had 'close relationship' with Nvidia boss Jensen Huang",
+   "url": "https://nypost.com/2026/10/29/business/alleged-chinese-spy-had-close-relationship-with-nvidia-boss-jensen-huang-report/",
+   "source": "Hacker News",
+   "published_at": "2026-10-29T17:43:48Z",
+   "text": "103 points and 41 comments on Hacker News.",
+   "points": 103,
+   "discussion": "https://news.ycombinator.com/item?id=50293047"
+  },
+  {
+   "title": "Reddit plans to require users to log in to fully access the site in response to AI scraping and wil…",
+   "url": "https://www.axios.com/2026/10/29/reddit-logged-in-ai-search-incognito",
+   "source": "Sara Fischer / Axios",
+   "published_at": "2026-10-29T20:22:24Z",
+   "text": "Reddit plans to require users to log in to fully access the site in response to AI scraping and will test it in select markets outside the US this quarter. Reddit on Thursday said it's moving to become a primarily logged-in experience, marking one of the most significant shifts in its 21-year history.",
+   "via": "Techmeme"
+  },
+  {
    "title": "Grace Blackwell needs a new scheduler: 27% more usable GPUs from the same racks",
    "url": "https://skypilot.ai/blog/grace-blackwell-needs-a-new-scheduler",
    "source": "Hacker News",
    "published_at": "2026-10-29T15:45:05Z",
-   "text": "101 points and 16 comments on Hacker News.",
-   "points": 101,
+   "text": "102 points and 18 comments on Hacker News.",
+   "points": 102,
    "discussion": "https://news.ycombinator.com/item?id=50290912"
-  },
-  {
-   "title": "How surging demand from AI hyperscalers has quintupled flash memory prices and shifted market and n…",
-   "url": "https://www.wsj.com/tech/apple-iphone-memory-chips-ai-c0084cc9?st=jB9Xwc&reflink=desktopwebshare_permalink",
-   "source": "Rolfe Winkler / Wall Street…",
-   "published_at": "2026-10-29T03:56:10Z",
-   "text": "How surging demand from AI hyperscalers has quintupled flash memory prices and shifted market and negotiating power from Apple to suppliers like Kioxia. The iPhone maker for years bullied flash-storage makers into steep discounts—until AI hyperscalers bid up prices and gobbled up supply",
-   "via": "Techmeme"
-  },
-  {
-   "title": "Zombie stats: Where the numbers AI quotes come from",
-   "url": "https://trakkr.ai/trakkr-research/zombie-stats",
-   "source": "Hacker News",
-   "published_at": "2026-10-29T15:06:17Z",
-   "text": "108 points and 54 comments on Hacker News.",
-   "points": 108,
-   "discussion": "https://news.ycombinator.com/item?id=50290283"
   },
   {
    "title": "AI for Science expands to foundations and institutions",
@@ -118,11 +118,11 @@
    "via": "Techmeme"
   },
   {
-   "title": "Serval, which offers AI agents for enterprise IT operations like access management, raised $150M le…",
-   "url": "https://www.reuters.com/business/serval-triples-valuation-3-billion-businesses-adopt-ai-workflow-automation-2026-10-29/",
-   "source": "Harshita Mary Varghese / Re…",
-   "published_at": "2026-10-29T13:55:50Z",
-   "text": "Serval, which offers AI agents for enterprise IT operations like access management, raised $150M led by Sequoia at a $3B valuation, up from $1B in December 2025. Serval raised $150 million in a Sequoia-led round at a $3 billion valuation, as the enterprise automation company seeks …",
+   "title": "How surging demand from AI hyperscalers has quintupled flash memory prices and shifted market and n…",
+   "url": "https://www.wsj.com/tech/apple-iphone-memory-chips-ai-c0084cc9?st=jB9Xwc&reflink=desktopwebshare_permalink",
+   "source": "Rolfe Winkler / Wall Street…",
+   "published_at": "2026-10-29T03:56:10Z",
+   "text": "How surging demand from AI hyperscalers has quintupled flash memory prices and shifted market and negotiating power from Apple to suppliers like Kioxia. The iPhone maker for years bullied flash-storage makers into steep discounts—until AI hyperscalers bid up prices and gobbled up supply",
    "via": "Techmeme"
   }
  ],
