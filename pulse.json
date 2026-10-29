@@ -1,13 +1,13 @@
 {
  "schema": 1,
- "generated_at": "2026-10-29T19:00:44Z",
+ "generated_at": "2026-10-29T19:31:22Z",
  "items": [
   {
-   "title": "Hackers leak the personal data of 41,000+ DHS employees and contractors, including CBP and ICE agen…",
-   "url": "https://www.wired.com/story/massive-leak-exposes-41000-homeland-security-workers-including-undercover-ice-agents/",
-   "source": "Wired",
-   "published_at": "2026-10-29T01:56:37Z",
-   "text": "Hackers leak the personal data of 41,000+ DHS employees and contractors, including CBP and ICE agents; DDoSecrets says the data came from DHS' Okta login system. The leaked records include the locations of ICE and CBP facilities, workers' cell phone numbers, and the members of groups tied …",
+   "title": "Alphabet's stock falls 12%+, wiping a record $500B from its market cap, after reporting negative ca…",
+   "url": "https://www.ft.com/content/eb386156-5bf9-4edd-80f2-803fdee1e33d",
+   "source": "Stephen Morris / Financial…",
+   "published_at": "2026-10-29T16:26:15Z",
+   "text": "Alphabet's stock falls 12%+, wiping a record $500B from its market cap, after reporting negative cash flow amid its AI spending; the Nasdaq falls 1.4%+. Google owner admits ‘AI mode’ has hurt traditional search as sales and profits undershoot expectations",
    "via": "Techmeme"
   },
   {
@@ -17,7 +17,7 @@
    "published_at": "2026-10-29T14:21:24Z",
    "text": "Today, we release the weights of a new and improved Le Chonk, advancing the open frontier for agentic coding and cybersecurity. 💻 Built to build: Le Chonk ranks #1 on @cognition’s FrontierCode among open models, and sets a new benchmark for Pareto efficiency on…",
    "author_name": "Mistral AI",
-   "likes": 3959,
+   "likes": 4096,
    "story": "Mistral releases the weights for Mistral Large 4, or Le Chonk, and says it rivals top open models such as GLM-5.3 on the Artificial Analysis Coding Agent Index"
   },
   {
@@ -34,25 +34,15 @@
    "published_at": "2026-10-29T17:29:39Z",
    "text": "OpenAI has updated their model spec around five core values: - faithfulness to human intent - harm minimization - honesty and transparency - human agency - care. 'The Assistant,' which has been around for a very long time, has been replaced with 'GPT.'",
    "author_name": "Andrew Curran",
-   "likes": 317,
+   "likes": 373,
    "story": "OpenAI updates Model Spec to reorganize it around five values: faithfulness to human intent, harm minimization, honesty and transparency, human agency, and care"
   },
   {
-   "title": "Q3 is in the books! We’re now on a half-trillion annual revenue run rate, with Alphabet revenues gr…",
-   "url": "https://x.com/sundarpichai/status/2115535455156642066",
-   "source": "𝕏 @sundarpichai",
-   "published_at": "2026-10-28T20:05:31Z",
-   "text": "Q3 is in the books! We’re now on a half-trillion annual revenue run rate, with Alphabet revenues growing at 25%. - Our AI investments are driving overall Search query growth, including commercial queries - our YoY query growth rate is the highest it’s been in the last five…",
-   "author_name": "Sundar Pichai",
-   "likes": 11171,
-   "story": "Google plans to expand “high-quality ads within AI Overviews in AI Mode” into international markets, as growth in its core search ad business slows"
-  },
-  {
-   "title": "Alphabet's stock falls 12%+, wiping a record $500B from its market cap, after reporting negative ca…",
-   "url": "https://www.ft.com/content/eb386156-5bf9-4edd-80f2-803fdee1e33d",
-   "source": "Stephen Morris / Financial…",
-   "published_at": "2026-10-29T16:26:15Z",
-   "text": "Alphabet's stock falls 12%+, wiping a record $500B from its market cap, after reporting negative cash flow amid its AI spending; the Nasdaq falls 1.4%+. Google owner admits ‘AI mode’ has hurt traditional search as sales and profits undershoot expectations",
+   "title": "Hackers leak the personal data of 41,000+ DHS employees and contractors, including CBP and ICE agen…",
+   "url": "https://www.wired.com/story/massive-leak-exposes-41000-homeland-security-workers-including-undercover-ice-agents/",
+   "source": "Wired",
+   "published_at": "2026-10-29T01:56:37Z",
+   "text": "Hackers leak the personal data of 41,000+ DHS employees and contractors, including CBP and ICE agents; DDoSecrets says the data came from DHS' Okta login system. The leaked records include the locations of ICE and CBP facilities, workers' cell phone numbers, and the members of groups tied …",
    "via": "Techmeme"
   },
   {
@@ -60,8 +50,8 @@
    "url": "https://martinfowler.com/bliki/LLM-Voice.html",
    "source": "Hacker News",
    "published_at": "2026-10-29T14:57:55Z",
-   "text": "147 points and 80 comments on Hacker News.",
-   "points": 147,
+   "text": "177 points and 98 comments on Hacker News.",
+   "points": 177,
    "discussion": "https://news.ycombinator.com/item?id=50290177"
   },
   {
@@ -79,6 +69,23 @@
    "text": "I've written before about how November 2025 was an inflection point for coding agents - the point where Opus 4.5 and GPT-5.1 crossed a tipping point that meant their respective coding agents became reliable daily drivers for software engineers. I think we've reached a new inflection point in October 2026, and this time it's for vibe coding computer games . Tree Appreciator Emberwick Battle Drones Pumpkin Farmer, aka Quarter Sun Cove Four times as insulting What happens if someone actually puts the work in? You should build a game!"
   },
   {
+   "title": "Google reports Search revenue up 12% YoY to $63.25B in Q3 2026, down from 14.5% in Q3 2025, and att…",
+   "url": "https://www.theregister.com/ai-and-ml/2026/10/29/google-struggling-to-make-ai-mode-searches-pay/5306181",
+   "source": "Simon Sharwood / The Regist…",
+   "published_at": "2026-10-29T05:11:37Z",
+   "text": "Google reports Search revenue up 12% YoY to $63.25B in Q3 2026, down from 14.5% in Q3 2025, and attributes the slowdown to “lower monetization” in AI Mode. Shares in Google's parent company Alphabet dived by almost ten percent on Wednesday, after the web giant admitted AI-powered searches earn …",
+   "via": "Techmeme"
+  },
+  {
+   "title": "Grace Blackwell needs a new scheduler: 27% more usable GPUs from the same racks",
+   "url": "https://skypilot.ai/blog/grace-blackwell-needs-a-new-scheduler",
+   "source": "Hacker News",
+   "published_at": "2026-10-29T15:45:05Z",
+   "text": "93 points and 9 comments on Hacker News.",
+   "points": 93,
+   "discussion": "https://news.ycombinator.com/item?id=50290912"
+  },
+  {
    "title": "How surging demand from AI hyperscalers has quintupled flash memory prices and shifted market and n…",
    "url": "https://www.wsj.com/tech/apple-iphone-memory-chips-ai-c0084cc9?st=jB9Xwc&reflink=desktopwebshare_permalink",
    "source": "Rolfe Winkler / Wall Street…",
@@ -87,29 +94,12 @@
    "via": "Techmeme"
   },
   {
-   "title": "Grace Blackwell needs a new scheduler: 27% more usable GPUs from the same racks",
-   "url": "https://skypilot.ai/blog/grace-blackwell-needs-a-new-scheduler",
-   "source": "Hacker News",
-   "published_at": "2026-10-29T15:45:05Z",
-   "text": "79 points and 7 comments on Hacker News.",
-   "points": 79,
-   "discussion": "https://news.ycombinator.com/item?id=50290912"
-  },
-  {
-   "title": "Q&A with Sam Altman on finding PHP bugs, sandboxing superhuman models as an unsolved safety dilemma…",
-   "url": "https://cheekypint.substack.com/p/why-sam-altman-is-against-a-single",
-   "source": "John Collison / Cheeky Pint",
-   "published_at": "2026-10-29T12:41:02Z",
-   "text": "Q&A with Sam Altman on finding PHP bugs, sandboxing superhuman models as an unsolved safety dilemma, robotics scaling data centers, math, agent swarms, and more. Sam Altman, CEO of OpenAI, joins John to break down how models uncovered critical PHP vulnerabilities …",
-   "via": "Techmeme"
-  },
-  {
    "title": "Zombie stats: Where the numbers AI quotes come from",
    "url": "https://trakkr.ai/trakkr-research/zombie-stats",
    "source": "Hacker News",
    "published_at": "2026-10-29T15:06:17Z",
-   "text": "93 points and 46 comments on Hacker News.",
-   "points": 93,
+   "text": "100 points and 50 comments on Hacker News.",
+   "points": 100,
    "discussion": "https://news.ycombinator.com/item?id=50290283"
   },
   {
@@ -120,11 +110,19 @@
    "text": "We’re highlighting 20 scientific foundations, institutions, and research groups from around the world that we’ve partnered with in an expansion of our AI for Science program."
   },
   {
-   "title": "Ottawa-based Solink, which uses AI to pull data from already-installed security cameras, raised $10…",
-   "url": "https://siliconangle.com/2026/10/29/solink-raises-more-than-100m-to-pull-business-data-from-security-cameras-with-ai/",
-   "source": "Duncan Riley / SiliconANGLE",
-   "published_at": "2026-10-29T15:05:57Z",
-   "text": "Ottawa-based Solink, which uses AI to pull data from already-installed security cameras, raised $100M+ led by Vertu Capital, bringing its total raised to $198M+. Video intelligence company Solink Corp. revealed today that it has raised more than $100 million in new funding.",
+   "title": "Sources: an Accenture staffer's Claude agent ran on a DOD network for two months and appears to hav…",
+   "url": "https://www.wired.com/story/a-defense-contractor-gave-their-personal-ai-agent-access-to-a-secure-pentagon-system/",
+   "source": "Vittoria Elliott / Wired",
+   "published_at": "2026-10-29T19:10:57Z",
+   "text": "Sources: an Accenture staffer's Claude agent ran on a DOD network for two months and appears to have sent info to a third-party site before it was identified. Sources tell WIRED that an Accenture employee's personal Claude agent ran on a DOD network for two months before it was identified and the vulnerability could be patched.",
+   "via": "Techmeme"
+  },
+  {
+   "title": "Wabi, which is building an AI assistant that integrates into group chats and can take actions like…",
+   "url": "https://www.bloomberg.com/news/articles/2026-10-29/ai-assistant-startup-wabi-raises-55-million-at-1-25-billion-value",
+   "source": "Micah Barkley / Bloomberg",
+   "published_at": "2026-10-29T13:46:04Z",
+   "text": "Wabi, which is building an AI assistant that integrates into group chats and can take actions like booking appointments, raised $55M at a $1.25B valuation. AI assistant startup Wabi Inc. has raised $55 million at a $1.25 billion valuation to build out its software that lets groups …",
    "via": "Techmeme"
   }
  ],
