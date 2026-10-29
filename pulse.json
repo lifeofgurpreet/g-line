@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-29T22:41:44Z",
+ "generated_at": "2026-10-29T23:13:12Z",
  "items": [
   {
    "title": "Alphabet's stock falls 12%+, wiping a record $500B from its market cap, after reporting negative ca…",
@@ -17,7 +17,7 @@
    "published_at": "2026-10-29T14:21:24Z",
    "text": "Today, we release the weights of a new and improved Le Chonk, advancing the open frontier for agentic coding and cybersecurity. 💻 Built to build: Le Chonk ranks #1 on @cognition’s FrontierCode among open models, and sets a new benchmark for Pareto efficiency on…",
    "author_name": "Mistral AI",
-   "likes": 4732,
+   "likes": 4824,
    "story": "Mistral releases the weights for Mistral Large 4, or Le Chonk, and says it rivals top open models such as GLM-5.3 on the Artificial Analysis Coding Agent Index"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-10-29T20:04:22Z",
    "text": "Customer B has been revealed. Anthropic is SpaceX's largest single customer, overtaking NASA and the Pentagon for the first time. 34.5% of SpaceX's revenue last quarter was from compute-as-a-service to Dario Amodei, and Anthropic has committed to spending up to $120.5 billion…",
    "author_name": "Andrew Curran",
-   "likes": 742,
+   "likes": 802,
    "story": "Source: Anthropic is “Customer B” cited by SpaceX in a filing as its single largest customer accounting for 34.5% of Q3 revenue, surpassing the US government"
   },
   {
@@ -50,8 +50,8 @@
    "url": "https://nypost.com/2026/10/29/business/alleged-chinese-spy-had-close-relationship-with-nvidia-boss-jensen-huang-report/",
    "source": "Hacker News",
    "published_at": "2026-10-29T17:43:48Z",
-   "text": "241 points and 156 comments on Hacker News.",
-   "points": 241,
+   "text": "250 points and 168 comments on Hacker News.",
+   "points": 250,
    "discussion": "https://news.ycombinator.com/item?id=50293047"
   },
   {
@@ -69,23 +69,6 @@
    "text": "I've written before about how November 2025 was an inflection point for coding agents - the point where Opus 4.5 and GPT-5.1 crossed a tipping point that meant their respective coding agents became reliable daily drivers for software engineers. I think we've reached a new inflection point in October 2026, and this time it's for vibe coding computer games . Tree Appreciator Emberwick Battle Drones Pumpkin Farmer, aka Quarter Sun Cove Four times as insulting What happens if someone actually puts the work in? You should build a game!"
   },
   {
-   "title": "Hackers leak the personal data of 41,000+ DHS employees and contractors, including CBP and ICE agen…",
-   "url": "https://www.wired.com/story/massive-leak-exposes-41000-homeland-security-workers-including-undercover-ice-agents/",
-   "source": "Wired",
-   "published_at": "2026-10-29T01:56:37Z",
-   "text": "Hackers leak the personal data of 41,000+ DHS employees and contractors, including CBP and ICE agents; DDoSecrets says the data came from DHS' Okta login system. The leaked records include the locations of ICE and CBP facilities, workers' cell phone numbers, and the members of groups tied …",
-   "via": "Techmeme"
-  },
-  {
-   "title": "LLM Voice",
-   "url": "https://martinfowler.com/bliki/LLM-Voice.html",
-   "source": "Hacker News",
-   "published_at": "2026-10-29T14:57:55Z",
-   "text": "295 points and 156 comments on Hacker News.",
-   "points": 295,
-   "discussion": "https://news.ycombinator.com/item?id=50290177"
-  },
-  {
    "title": "Google plans to expand “high-quality ads within AI Overviews in AI Mode” into international markets…",
    "url": "https://techcrunch.com/2026/10/28/google-expands-ai-search-ads-globally-as-core-ad-growth-slows/",
    "source": "Lauren Forristal / TechCrun…",
@@ -94,13 +77,30 @@
    "via": "Techmeme"
   },
   {
-   "title": "Claude Code regularly sends each background agent’s transcript to its model",
-   "url": "https://gist.github.com/flamerix-ai/c3905705cc4205e5de3011fa2e74efce",
+   "title": "We ran AI agent swarms in Minecraft and Mindustry",
+   "url": "https://labs.ycombinator.com/projects/games/index.html",
    "source": "Hacker News",
-   "published_at": "2026-10-29T03:33:42Z",
-   "text": "557 points and 224 comments on Hacker News.",
-   "points": 557,
-   "discussion": "https://news.ycombinator.com/item?id=50284255"
+   "published_at": "2026-10-29T21:40:28Z",
+   "text": "64 points and 26 comments on Hacker News.",
+   "points": 64,
+   "discussion": "https://news.ycombinator.com/item?id=50296486"
+  },
+  {
+   "title": "Sources: an Accenture staffer's Claude agent ran on a DOD network for two months and appears to hav…",
+   "url": "https://www.wired.com/story/a-defense-contractor-gave-their-personal-ai-agent-access-to-a-secure-pentagon-system/",
+   "source": "Vittoria Elliott / Wired",
+   "published_at": "2026-10-29T19:10:57Z",
+   "text": "Sources: an Accenture staffer's Claude agent ran on a DOD network for two months and appears to have sent info to a third-party site before it was identified. Sources tell WIRED that an Accenture employee's personal Claude agent ran on a DOD network for two months before it was identified and the vulnerability could be patched.",
+   "via": "Techmeme"
+  },
+  {
+   "title": "LLM Voice",
+   "url": "https://martinfowler.com/bliki/LLM-Voice.html",
+   "source": "Hacker News",
+   "published_at": "2026-10-29T14:57:55Z",
+   "text": "302 points and 162 comments on Hacker News.",
+   "points": 302,
+   "discussion": "https://news.ycombinator.com/item?id=50290177"
   },
   {
    "title": "AI for Science expands to foundations and institutions",
@@ -110,11 +110,11 @@
    "text": "We’re highlighting 20 scientific foundations, institutions, and research groups from around the world that we’ve partnered with in an expansion of our AI for Science program."
   },
   {
-   "title": "Sources: an Accenture staffer's Claude agent ran on a DOD network for two months and appears to hav…",
-   "url": "https://www.wired.com/story/a-defense-contractor-gave-their-personal-ai-agent-access-to-a-secure-pentagon-system/",
-   "source": "Vittoria Elliott / Wired",
-   "published_at": "2026-10-29T19:10:57Z",
-   "text": "Sources: an Accenture staffer's Claude agent ran on a DOD network for two months and appears to have sent info to a third-party site before it was identified. Sources tell WIRED that an Accenture employee's personal Claude agent ran on a DOD network for two months before it was identified and the vulnerability could be patched.",
+   "title": "Q&A with Sam Altman on finding PHP bugs, sandboxing superhuman models as an unsolved safety dilemma…",
+   "url": "https://cheekypint.substack.com/p/why-sam-altman-is-against-a-single",
+   "source": "John Collison / Cheeky Pint",
+   "published_at": "2026-10-29T12:41:02Z",
+   "text": "Q&A with Sam Altman on finding PHP bugs, sandboxing superhuman models as an unsolved safety dilemma, robotics scaling data centers, math, agent swarms, and more. Sam Altman, CEO of OpenAI, joins John to break down how models uncovered critical PHP vulnerabilities …",
    "via": "Techmeme"
   },
   {
