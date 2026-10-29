@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-29T04:26:52Z",
+ "generated_at": "2026-10-29T04:59:57Z",
  "items": [
   {
    "title": "Apple debuts a touchscreen MacBook Pro with a PROLED XDR tandem OLED display, light-up logo, M5 Pro…",
@@ -17,7 +17,7 @@
    "published_at": "2026-10-28T17:01:48Z",
    "text": "I did say we'd be releasing our models periodically...introducing Gemini 4 Carbon, our next frontier model. Following Argon's release just two weeks ago, Carbon shows the pace at which we’re pushing the frontier, it ranks #1 on the recently updated v5.0 of @ArtificialAnlys…",
    "author_name": "Sundar Pichai",
-   "likes": 27479,
+   "likes": 27818,
    "story": "Google unveils Gemini 4 Carbon, its “strongest model with state-of-the-art cybersecurity” capabilities, ranked #1 on Artificial Analysis' new Intelligence Index"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-10-28T22:53:39Z",
    "text": "Just wrapped our earnings call. It was a fast start to our fiscal year. Microsoft Cloud revenue surpassed $63B, with growth accelerating to 30% YoY. Lots of innovation as we build the new tech stack for the agentic wave. A few highlights:",
    "author_name": "Satya Nadella",
-   "likes": 4579,
+   "likes": 4917,
    "story": "Microsoft reports Q1 revenue up 19% YoY to $92.28B, vs. $90.69B est., Azure revenue up 48% to $33.17B, vs. $32.32B est., and net income up 32% to $36.63B"
   },
   {
@@ -50,8 +50,8 @@
    "url": "https://gist.github.com/flamerix-ai/c3905705cc4205e5de3011fa2e74efce",
    "source": "Hacker News",
    "published_at": "2026-10-29T03:33:42Z",
-   "text": "85 points and 7 comments on Hacker News.",
-   "points": 85,
+   "text": "126 points and 25 comments on Hacker News.",
+   "points": 126,
    "discussion": "https://news.ycombinator.com/item?id=50284255"
   },
   {
@@ -61,7 +61,7 @@
    "published_at": "2026-10-28T20:51:14Z",
    "text": "Sundar Pichai on the earnings call: 'This rapid progress underscores our incredible model momentum. We are at the point where AI is helping us increase our training and launch velocity. I would expect the next twelve months to see continued acceleration because of RSI.'",
    "author_name": "Andrew Curran",
-   "likes": 1143,
+   "likes": 1176,
    "story": "Alphabet reports Q3 revenue up 25% YoY to $127.58B, vs. $128.22B est., Google Cloud revenue up 103% to $30.7B, vs. $28.7B est.; GOOG drops 9%+ after hours"
   },
   {
@@ -93,7 +93,7 @@
    "published_at": "2026-10-28T15:05:14Z",
    "text": "NVIDIA's Nemotron 3.5 Transcribe ties for #1 among open weights Speech to Text models with 2.8% WER, using just 4B active parameters Nemotron 3.5 Transcribe is NVIDIA's new open weights Speech to Text model for non-streaming transcription, with 30B total and 4B active…",
    "author_name": "Artificial Analysis",
-   "likes": 508,
+   "likes": 514,
    "story": "Nvidia debuts Nemotron 3.5 Transcribe, an open-weight model for multilingual audio transcription and translation, and Granary v2, its open-source speech dataset"
   },
   {
@@ -101,8 +101,8 @@
    "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/",
    "source": "Hacker News",
    "published_at": "2026-10-28T17:01:23Z",
-   "text": "847 points and 705 comments on Hacker News.",
-   "points": 847,
+   "text": "854 points and 708 comments on Hacker News.",
+   "points": 854,
    "discussion": "https://news.ycombinator.com/item?id=50276792"
   },
   {
@@ -112,7 +112,7 @@
    "published_at": "2026-10-28T02:59:39Z",
    "text": "Artificial Analysis finally moves to closed benchmarks (goodbye GDPval-AA), and finds that open weights models are falling further behind than they had previously measured. Take with a grain of salt, but matches the general vibes that we haven't seen a Fable-class open model.",
    "author_name": "Ethan Mollick",
-   "likes": 1623,
+   "likes": 1630,
    "story": "Artificial Analysis unveils the Intelligence Index v5 with new coding and science benchmarks; 60% of the Index is based on private test sets or held-out answers"
   },
   {
@@ -122,7 +122,7 @@
    "published_at": "2026-10-28T17:19:35Z",
    "text": "Lots of debate this week on whether journals should ban AI in peer review. We actually tested this in our new preprint, and the results were pretty clear to me. For context, I've reviewed for most of the big journals and evaluated 1,000 human reviews as an editor. I love to…",
    "author_name": "Ruslan Rust",
-   "likes": 845,
+   "likes": 868,
    "story": "LLMs are significantly better at finding mistakes in papers than trained human reviewers"
   },
   {
