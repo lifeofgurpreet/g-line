@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-30T21:50:24Z",
+ "generated_at": "2026-10-30T22:23:12Z",
  "items": [
   {
    "title": "Binance says it has reserved $6.34B+ in company funds, including $5B already held in impacted token…",
@@ -17,7 +17,7 @@
    "published_at": "2026-10-30T17:29:07Z",
    "text": "We’re renaming our Max plans: Max 5x → Max Max 20x → Ultra Max is still $100/month, and Ultra is still $200. If you’re a subscriber, there’s nothing you need to do. We’re also removing the 5-hour limit for verified Ultra accounts, starting today with most existing…",
    "author_name": "Claude",
-   "likes": 20683,
+   "likes": 21422,
    "story": "Anthropic renames its $100 per month Max 5x plan as Max and the $200 per month Max 20x plan as Ultra, and removes the 5-hour limit for verified Ultra accounts"
   },
   {
@@ -34,15 +34,15 @@
    "published_at": "2026-10-30T15:31:10Z",
    "text": "Yesterday's earnings call with Reddit's CEO will be referenced for years to come. Reddit, $RDDT, is now down -42% in 8 trading days. AI has disrupted search, and the internet more broadly, forever. Our thoughts on this are included below.",
    "author_name": "The Kobeissi Letter",
-   "likes": 5582,
+   "likes": 5783,
    "story": "Reddit closed down 29.27% on Friday, the worst drop since becoming a public company in 2024, after it forecast weak Q4 revenue"
   },
   {
-   "title": "Alphabet, Meta, Microsoft, Amazon, and Oracle have a collective $3T+ in AI spending commitments ove…",
-   "url": "https://www.bloomberg.com/news/articles/2026-10-30/big-tech-holds-3-trillion-in-spending-commitments-for-ai-boom",
-   "source": "Brody Ford / Bloomberg",
-   "published_at": "2026-10-30T20:01:51Z",
-   "text": "Alphabet, Meta, Microsoft, Amazon, and Oracle have a collective $3T+ in AI spending commitments over the coming years, including Alphabet's $1T and Meta's $800B. The five largest players in the data center race have committed more than $3 trillion in spending over the coming years …",
+   "title": "Microsoft, Alphabet, Amazon, Meta, and Oracle returned just 9.3% of cash to shareholders in the fir…",
+   "url": "https://www.reuters.com/legal/transactional/big-tech-returns-smallest-share-cash-shareholders-15-years-given-ai-spending-2026-10-30/",
+   "source": "Patturaja Murugaboopathy /…",
+   "published_at": "2026-10-30T19:26:27Z",
+   "text": "Microsoft, Alphabet, Amazon, Meta, and Oracle returned just 9.3% of cash to shareholders in the first three quarters of 2026, a 15-year low amid AI spending. The biggest US technology companies generated record amounts of cash in the first nine months of 2026, yet returned the smallest share …",
    "via": "Techmeme"
   },
   {
@@ -50,8 +50,8 @@
    "url": "https://newsletter.signoz.io/p/ai-isnt-replacing-sres-its-deskilling",
    "source": "Hacker News",
    "published_at": "2026-10-30T15:52:18Z",
-   "text": "425 points and 318 comments on Hacker News.",
-   "points": 425,
+   "text": "441 points and 329 comments on Hacker News.",
+   "points": 441,
    "discussion": "https://news.ycombinator.com/item?id=50305693"
   },
   {
@@ -61,7 +61,7 @@
    "published_at": "2026-10-30T07:01:46Z",
    "text": "ANTHROPIC IS CRACKING DOWN ON VIDEO GAME REWRITES 🚨 Claude Code picked up a new rule around Oct 27, sent from Anthropic’s servers under a flag called \"tengu_heron_brook\". There’s no setting to turn it off. The full rule: “Do build original games, games in a genre, and games…",
    "author_name": "chasm",
-   "likes": 7455,
+   "likes": 7554,
    "story": "Another reason to own your own compute. Your account may get banned in a sneaky update."
   },
   {
@@ -91,16 +91,16 @@
    "url": "https://www.ft.com/content/59383c7f-8d82-493f-bf01-d2e862a1018f",
    "source": "Hacker News",
    "published_at": "2026-10-30T17:27:25Z",
-   "text": "230 points and 166 comments on Hacker News.",
-   "points": 230,
+   "text": "247 points and 191 comments on Hacker News.",
+   "points": 247,
    "discussion": "https://news.ycombinator.com/item?id=50307219"
   },
   {
-   "title": "On Amazon's earnings call, Andy Jassy says outside AI shopping agents are “still not great, nor mor…",
-   "url": "https://fortune.com/2026/10/29/amazon-ceo-says-shopping-agents-like-metas-muse-not-great/",
-   "source": "Sebastian Herrera / Fortune",
-   "published_at": "2026-10-30T00:21:24Z",
-   "text": "On Amazon's earnings call, Andy Jassy says outside AI shopping agents are “still not great, nor more convenient than coming to a retailer directly”. Amazon Chief Executive Andy Jassy told investors Thursday not to worry about bots invading its online store and rendering it useless.",
+   "title": "Google says its Suncatcher prototype data center satellite is online after an October 1 launch, wit…",
+   "url": "https://techcrunch.com/2026/10/30/googles-first-data-center-satellite-is-online-and-writing-poetry/",
+   "source": "Tim Fernholz / TechCrunch",
+   "published_at": "2026-10-30T18:41:22Z",
+   "text": "Google says its Suncatcher prototype data center satellite is online after an October 1 launch, with Gemma 4 generating a haiku about being in space. Google Suncatcher's prototype space data center is online and communicating with the ground after launching earlier this month alongside …",
    "via": "Techmeme"
   },
   {
@@ -108,8 +108,8 @@
    "url": "https://cyberplace.social/@GossiTheDog/117528831681803563",
    "source": "Hacker News",
    "published_at": "2026-10-30T11:05:53Z",
-   "text": "650 points and 17 comments on Hacker News.",
-   "points": 650,
+   "text": "651 points and 17 comments on Hacker News.",
+   "points": 651,
    "discussion": "https://news.ycombinator.com/item?id=50302334"
   },
   {
@@ -120,11 +120,11 @@
    "text": "We’re highlighting 20 scientific foundations, institutions, and research groups from around the world that we’ve partnered with in an expansion of our AI for Science program."
   },
   {
-   "title": "Google says its Suncatcher prototype data center satellite is online after an October 1 launch, wit…",
-   "url": "https://techcrunch.com/2026/10/30/googles-first-data-center-satellite-is-online-and-writing-poetry/",
-   "source": "Tim Fernholz / TechCrunch",
-   "published_at": "2026-10-30T18:41:22Z",
-   "text": "Google says its Suncatcher prototype data center satellite is online after an October 1 launch, with Gemma 4 generating a haiku about being in space. Google Suncatcher's prototype space data center is online and communicating with the ground after launching earlier this month alongside …",
+   "title": "CrowdStrike: China-linked hackers used AI tool ARTEX with a DeepSeek LLM and another model to targe…",
+   "url": "https://www.nbcnews.com/tech/security/china-linked-hackers-used-ai-target-200-organizations-crowdstrike-says-rcna606343",
+   "source": "Kevin Collier / NBC News",
+   "published_at": "2026-10-30T04:02:33Z",
+   "text": "CrowdStrike: China-linked hackers used AI tool ARTEX with a DeepSeek LLM and another model to target 200+ organizations in 11 days, compromising at least nine. Chinese state-linked hackers targeted more than 200 organizations in just 11 days, using AI to attack governments and businesses worldwide, according to CrowdStrike.",
    "via": "Techmeme"
   }
  ],
