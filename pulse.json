@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-30T17:00:26Z",
+ "generated_at": "2026-10-30T17:32:19Z",
  "items": [
   {
    "title": "Binance says it has reserved $6.34B+ in company funds, including $5B already held in impacted token…",
@@ -17,7 +17,7 @@
    "published_at": "2026-10-30T07:01:46Z",
    "text": "ANTHROPIC IS CRACKING DOWN ON VIDEO GAME REWRITES 🚨 Claude Code picked up a new rule around Oct 27, sent from Anthropic’s servers under a flag called \"tengu_heron_brook\". There’s no setting to turn it off. The full rule: “Do build original games, games in a genre, and games…",
    "author_name": "chasm",
-   "likes": 6250,
+   "likes": 6445,
    "story": "Another reason to own your own compute. Your account may get banned in a sneaky update."
   },
   {
@@ -34,24 +34,24 @@
    "published_at": "2026-10-30T04:05:48Z",
    "text": "To sum up today's news: - Reddit stock is down because of AI answers - Google stock is down because of AI answers - Your web traffic is down because of AI answers Happy to see that worked out well for all parties involved",
    "author_name": "Cyrus SEO",
-   "likes": 7300,
+   "likes": 8055,
    "story": "Reddit reports Q3 revenue up 53% YoY to $895M, vs. $878M est., DAUq up 12% to 130.3M, below est., forecasts Q4 revenue below est.; RDDT drops 25%+"
   },
   {
-   "title": "On Amazon's earnings call, Andy Jassy says outside AI shopping agents are “still not great, nor mor…",
-   "url": "https://fortune.com/2026/10/29/amazon-ceo-says-shopping-agents-like-metas-muse-not-great/",
-   "source": "Sebastian Herrera / Fortune",
-   "published_at": "2026-10-30T00:21:24Z",
-   "text": "On Amazon's earnings call, Andy Jassy says outside AI shopping agents are “still not great, nor more convenient than coming to a retailer directly”",
+   "title": "The UK CMA opens a probe into whether Meta imposed exploitative terms on publishers and advertisers…",
+   "url": "https://www.reuters.com/world/europe/uks-cma-opens-investigation-into-metas-terms-publishers-advertisers-2026-10-30/",
+   "source": "Reuters",
+   "published_at": "2026-10-30T11:40:59Z",
+   "text": "The UK CMA opens a probe into whether Meta imposed exploitative terms on publishers and advertisers to use their content to develop its AI and other services. Britain's competition regulator on Friday said it has opened an investigation into whether Meta (META.O) was imposing exploitative terms …",
    "via": "Techmeme"
   },
   {
-   "title": "AI Isn't Replacing SREs. It's Deskilling Them",
+   "title": "AI isn't replacing SREs, it's deskilling them",
    "url": "https://newsletter.signoz.io/p/ai-isnt-replacing-sres-its-deskilling",
    "source": "Hacker News",
    "published_at": "2026-10-30T15:52:18Z",
-   "text": "150 points and 118 comments on Hacker News.",
-   "points": 150,
+   "text": "214 points and 171 comments on Hacker News.",
+   "points": 214,
    "discussion": "https://news.ycombinator.com/item?id=50305693"
   },
   {
@@ -61,7 +61,7 @@
    "published_at": "2026-10-29T21:08:59Z",
    "text": "Roblox just released a letter to shareholders. - Over 80% of the top 100 Roblox games now use AI. - Steal an Egg and Huss Valley are almost 100% AI generated. - More than 70,000 games have been AI generated with Roblox Build.",
    "author_name": "KreekCraft",
-   "likes": 11379,
+   "likes": 11489,
    "story": "Roblox reports Q3 bookings down 12% YoY to $1.7B, vs. $1.63B est., and DAUs down 9% to 138M, vs. 145.8M est.; RBLX drops 16%+"
   },
   {
@@ -79,11 +79,11 @@
    "text": "I've written before about how November 2025 was an inflection point for coding agents - the point where Opus 4.5 and GPT-5.1 crossed a tipping point that meant their respective coding agents became reliable daily drivers for software engineers. I think we've reached a new inflection point in October 2026, and this time it's for vibe coding computer games . Tree Appreciator Emberwick Battle Drones Pumpkin Farmer, aka Quarter Sun Cove Four times as insulting What happens if someone actually puts the work in? You should build a game!"
   },
   {
-   "title": "CrowdStrike: China-linked hackers used AI tool ARTEX with a DeepSeek LLM and another model to targe…",
-   "url": "https://www.nbcnews.com/tech/security/china-linked-hackers-used-ai-target-200-organizations-crowdstrike-says-rcna606343",
-   "source": "Kevin Collier / NBC News",
-   "published_at": "2026-10-30T04:02:33Z",
-   "text": "CrowdStrike: China-linked hackers used AI tool ARTEX with a DeepSeek LLM and another model to target 200+ organizations in 11 days, compromising at least nine. Chinese state-linked hackers targeted more than 200 organizations in just 11 days, using AI to attack governments and businesses worldwide, according to CrowdStrike.",
+   "title": "On Amazon's earnings call, Andy Jassy says outside AI shopping agents are “still not great, nor mor…",
+   "url": "https://fortune.com/2026/10/29/amazon-ceo-says-shopping-agents-like-metas-muse-not-great/",
+   "source": "Sebastian Herrera / Fortune",
+   "published_at": "2026-10-30T00:21:24Z",
+   "text": "On Amazon's earnings call, Andy Jassy says outside AI shopping agents are “still not great, nor more convenient than coming to a retailer directly”",
    "via": "Techmeme"
   },
   {
@@ -93,7 +93,7 @@
    "published_at": "2026-10-29T20:04:22Z",
    "text": "Customer B has been revealed. Anthropic is SpaceX's largest single customer, overtaking NASA and the Pentagon for the first time. 34.5% of SpaceX's revenue last quarter was from compute-as-a-service to Dario Amodei, and Anthropic has committed to spending up to $120.5 billion…",
    "author_name": "Andrew Curran",
-   "likes": 1539,
+   "likes": 1551,
    "story": "Source: Anthropic is “Customer B” cited by SpaceX in a filing as its single largest customer accounting for 34.5% of Q3 revenue, surpassing the US government"
   },
   {
@@ -101,26 +101,26 @@
    "url": "https://cyberplace.social/@GossiTheDog/117528831681803563",
    "source": "Hacker News",
    "published_at": "2026-10-30T11:05:53Z",
-   "text": "645 points and 17 comments on Hacker News.",
-   "points": 645,
+   "text": "646 points and 17 comments on Hacker News.",
+   "points": 646,
    "discussion": "https://news.ycombinator.com/item?id=50302334"
   },
   {
-   "title": "Sources: Spotify aims to launch its AI remix service in Q1 2027 and may charge $4-$5/month extra; i…",
-   "url": "https://www.ft.com/content/50286bd0-7158-4347-81d8-011cd164f75b",
-   "source": "Anna Nicolaou / Financial T…",
-   "published_at": "2026-10-30T08:46:04Z",
-   "text": "Sources: Spotify aims to launch its AI remix service in Q1 2027 and may charge $4-$5/month extra; it is still negotiating licensing deals with Sony and Warner. Streaming service plans to charge users up to $5 a month to use the feature — Spotify is targeting an early 2027 launch …",
+   "title": "Salesforce agrees to acquire Rune, which raised ~$30M to make AI military logistics software, as it…",
+   "url": "https://www.axios.com/pro/enterprise-software-deals/2026/10/29/salesforce-rune-defense",
+   "source": "Chris Metinko / Axios",
+   "published_at": "2026-10-30T17:11:38Z",
+   "text": "Salesforce agrees to acquire Rune, which raised ~$30M to make AI military logistics software, as it expands its year-old Missionforce defense business. Salesforce signed a definitive agreement to acquire Rune Technologies, a military software and hardware developer for logistics and sustainment.",
    "via": "Techmeme"
   },
   {
-   "title": "Backdoor in Claude Code for VS Code extension on the Cursor Marketplace",
-   "url": "https://phorion.io/blog/offical-claude-code-vsx-compromise/",
+   "title": "US tech stocks see sharp falls over AI cost fears",
+   "url": "https://www.bbc.co.uk/news/articles/cvwy72e0n72yo",
    "source": "Hacker News",
-   "published_at": "2026-10-30T07:09:12Z",
-   "text": "373 points and 358 comments on Hacker News.",
-   "points": 373,
-   "discussion": "https://news.ycombinator.com/item?id=50300683"
+   "published_at": "2026-10-30T16:13:02Z",
+   "text": "76 points and 26 comments on Hacker News.",
+   "points": 76,
+   "discussion": "https://news.ycombinator.com/item?id=50306008"
   },
   {
    "title": "AI for Science expands to foundations and institutions",
