@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-30T03:33:34Z",
+ "generated_at": "2026-10-30T04:05:36Z",
  "items": [
   {
    "title": "Alphabet's stock falls 12.3%, wiping a record $500B from its market cap, after reporting negative c…",
@@ -17,7 +17,7 @@
    "published_at": "2026-10-29T14:21:24Z",
    "text": "Today, we release the weights of a new and improved Le Chonk, advancing the open frontier for agentic coding and cybersecurity. 💻 Built to build: Le Chonk ranks #1 on @cognition’s FrontierCode among open models, and sets a new benchmark for Pareto efficiency on…",
    "author_name": "Mistral AI",
-   "likes": 5194,
+   "likes": 5227,
    "story": "Mistral releases the weights for Mistral Large 4, or Le Chonk, and says it rivals top open models such as GLM-5.3 on the Artificial Analysis Coding Agent Index"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-10-29T21:08:59Z",
    "text": "Roblox just released a letter to shareholders. - Over 80% of the top 100 Roblox games now use AI. - Steal an Egg and Huss Valley are almost 100% AI generated. - More than 70,000 games have been AI generated with Roblox Build.",
    "author_name": "KreekCraft",
-   "likes": 7835,
+   "likes": 7986,
    "story": "Roblox reports Q3 bookings down 12% YoY to $1.7B, vs. $1.63B est., and DAUs down 9% to 138M, vs. 145.8M est.; RBLX drops 16%+ after hours"
   },
   {
@@ -50,8 +50,8 @@
    "url": "https://labs.ycombinator.com/projects/games/index.html",
    "source": "Hacker News",
    "published_at": "2026-10-29T21:40:28Z",
-   "text": "207 points and 68 comments on Hacker News.",
-   "points": 207,
+   "text": "212 points and 68 comments on Hacker News.",
+   "points": 212,
    "discussion": "https://news.ycombinator.com/item?id=50296486"
   },
   {
@@ -61,7 +61,7 @@
    "published_at": "2026-10-29T20:04:22Z",
    "text": "Customer B has been revealed. Anthropic is SpaceX's largest single customer, overtaking NASA and the Pentagon for the first time. 34.5% of SpaceX's revenue last quarter was from compute-as-a-service to Dario Amodei, and Anthropic has committed to spending up to $120.5 billion…",
    "author_name": "Andrew Curran",
-   "likes": 1135,
+   "likes": 1173,
    "story": "Source: Anthropic is “Customer B” cited by SpaceX in a filing as its single largest customer accounting for 34.5% of Q3 revenue, surpassing the US government"
   },
   {
@@ -93,34 +93,34 @@
    "published_at": "2026-10-29T14:51:50Z",
    "text": "Another day, another Laura Loomer exclusive that has been vindicated 6 months later. In May, I broke a story about how Nvidia CEO Jensen Huang posed a massive national security risk and I showed how he’s been compromised by China and the CCP. I reported how NVIDIA @nvidia…",
    "author_name": "Laura Loomer",
-   "likes": 5636,
+   "likes": 5718,
    "story": "US officials believe Megaspeed executive Alice Huang, who has a close relationship with Jensen Huang, is a Chinese asset; Trump was briefed and took no action"
-  },
-  {
-   "title": "A tiny world model running games on a Raspberry Pi Pico 2 W",
-   "url": "https://github.com/SheepSeb/tinyworldformer",
-   "source": "Hacker News",
-   "published_at": "2026-10-29T20:32:28Z",
-   "text": "159 points and 8 comments on Hacker News.",
-   "points": 159,
-   "discussion": "https://news.ycombinator.com/item?id=50295450"
-  },
-  {
-   "title": "Q&A with Sam Altman on finding PHP bugs, sandboxing superhuman models as an unsolved safety dilemma…",
-   "url": "https://cheekypint.substack.com/p/why-sam-altman-is-against-a-single",
-   "source": "John Collison / Cheeky Pint",
-   "published_at": "2026-10-29T12:41:02Z",
-   "text": "Q&A with Sam Altman on finding PHP bugs, sandboxing superhuman models as an unsolved safety dilemma, robotics scaling data centers, math, agent swarms, and more. Sam Altman, CEO of OpenAI, joins John to break down how models uncovered critical PHP vulnerabilities …",
-   "via": "Techmeme"
   },
   {
    "title": "LLM Voice",
    "url": "https://martinfowler.com/bliki/LLM-Voice.html",
    "source": "Hacker News",
    "published_at": "2026-10-29T14:57:55Z",
-   "text": "370 points and 199 comments on Hacker News.",
-   "points": 370,
+   "text": "378 points and 202 comments on Hacker News.",
+   "points": 378,
    "discussion": "https://news.ycombinator.com/item?id=50290177"
+  },
+  {
+   "title": "Sources: an Accenture staffer's Claude agent ran on a DOD network for two months and appears to hav…",
+   "url": "https://www.wired.com/story/a-defense-contractor-gave-their-personal-ai-agent-access-to-a-secure-pentagon-system/",
+   "source": "Vittoria Elliott / Wired",
+   "published_at": "2026-10-29T19:10:57Z",
+   "text": "Sources: an Accenture staffer's Claude agent ran on a DOD network for two months and appears to have sent info to a third-party site before it was identified. Sources tell WIRED that an Accenture employee's personal Claude agent ran on a DOD network for two months before it was identified and the vulnerability could be patched.",
+   "via": "Techmeme"
+  },
+  {
+   "title": "A tiny world model running games on a Raspberry Pi Pico 2 W",
+   "url": "https://github.com/SheepSeb/tinyworldformer",
+   "source": "Hacker News",
+   "published_at": "2026-10-29T20:32:28Z",
+   "text": "163 points and 9 comments on Hacker News.",
+   "points": 163,
+   "discussion": "https://news.ycombinator.com/item?id=50295450"
   },
   {
    "title": "AI for Science expands to foundations and institutions",
