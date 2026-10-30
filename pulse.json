@@ -1,13 +1,13 @@
 {
  "schema": 1,
- "generated_at": "2026-10-30T12:40:55Z",
+ "generated_at": "2026-10-30T13:12:33Z",
  "items": [
   {
-   "title": "Sources: Nvidia is in talks to provide Nscale with billions of dollars in credit guarantees for deb…",
-   "url": "https://www.theinformation.com/articles/nvidia-talks-provide-billions-credit-support-cloud-providers-45-billion-anthropic-deal",
-   "source": "Phoebe Liu / The Information",
-   "published_at": "2026-10-29T22:56:09Z",
-   "text": "Sources: Nvidia is in talks to provide Nscale with billions of dollars in credit guarantees for debt to develop a 460MW data center that Anthropic plans to use. Nvidia is in talks to provide Nscale, a young AI cloud provider, with billions of dollars in credit guarantees for debt to develop …",
+   "title": "CrowdStrike: China-linked hackers used AI tool ARTEX with a DeepSeek LLM and another model to targe…",
+   "url": "https://www.nbcnews.com/tech/security/china-linked-hackers-used-ai-target-200-organizations-crowdstrike-says-rcna606343",
+   "source": "Kevin Collier / NBC News",
+   "published_at": "2026-10-30T04:02:33Z",
+   "text": "CrowdStrike: China-linked hackers used AI tool ARTEX with a DeepSeek LLM and another model to target 200+ organizations in 11 days, compromising at least nine. Chinese state-linked hackers targeted more than 200 organizations in just 11 days, using AI to attack governments and businesses worldwide, according to CrowdStrike.",
    "via": "Techmeme"
   },
   {
@@ -17,7 +17,7 @@
    "published_at": "2026-10-29T14:21:24Z",
    "text": "Today, we release the weights of a new and improved Le Chonk, advancing the open frontier for agentic coding and cybersecurity. 💻 Built to build: Le Chonk ranks #1 on @cognition’s FrontierCode among open models, and sets a new benchmark for Pareto efficiency on…",
    "author_name": "Mistral AI",
-   "likes": 5761,
+   "likes": 5796,
    "story": "Mistral releases the weights for Mistral Large 4, or Le Chonk, and says it rivals top open models such as GLM-5.3 on the Artificial Analysis Coding Agent Index"
   },
   {
@@ -34,15 +34,15 @@
    "published_at": "2026-10-29T21:08:59Z",
    "text": "Roblox just released a letter to shareholders. - Over 80% of the top 100 Roblox games now use AI. - Steal an Egg and Huss Valley are almost 100% AI generated. - More than 70,000 games have been AI generated with Roblox Build.",
    "author_name": "KreekCraft",
-   "likes": 10263,
+   "likes": 10387,
    "story": "Roblox reports Q3 bookings down 12% YoY to $1.7B, vs. $1.63B est., and DAUs down 9% to 138M, vs. 145.8M est.; RBLX drops 16%+ after hours"
   },
   {
-   "title": "CrowdStrike: China-linked hackers used AI tool ARTEX with a DeepSeek LLM and another model to targe…",
-   "url": "https://www.nbcnews.com/tech/security/china-linked-hackers-used-ai-target-200-organizations-crowdstrike-says-rcna606343",
-   "source": "Kevin Collier / NBC News",
-   "published_at": "2026-10-30T04:02:33Z",
-   "text": "CrowdStrike: China-linked hackers used AI tool ARTEX with a DeepSeek LLM and another model to target 200+ organizations in 11 days, compromising at least nine. Chinese state-linked hackers targeted more than 200 organizations in just 11 days, using AI to attack governments and businesses worldwide, according to CrowdStrike.",
+   "title": "Sources: Nvidia is in talks to provide Nscale with billions of dollars in credit guarantees for deb…",
+   "url": "https://www.theinformation.com/articles/nvidia-talks-provide-billions-credit-support-cloud-providers-45-billion-anthropic-deal",
+   "source": "Phoebe Liu / The Information",
+   "published_at": "2026-10-29T22:56:09Z",
+   "text": "Sources: Nvidia is in talks to provide Nscale with billions of dollars in credit guarantees for debt to develop a 460MW data center that Anthropic plans to use. Nvidia is in talks to provide Nscale, a young AI cloud provider, with billions of dollars in credit guarantees for debt to develop …",
    "via": "Techmeme"
   },
   {
@@ -50,8 +50,8 @@
    "url": "https://cyberplace.social/@GossiTheDog/117528831681803563",
    "source": "Hacker News",
    "published_at": "2026-10-30T11:05:53Z",
-   "text": "274 points and 68 comments on Hacker News.",
-   "points": 274,
+   "text": "383 points and 109 comments on Hacker News.",
+   "points": 383,
    "discussion": "https://news.ycombinator.com/item?id=50302334"
   },
   {
@@ -61,7 +61,7 @@
    "published_at": "2026-10-29T20:04:22Z",
    "text": "Customer B has been revealed. Anthropic is SpaceX's largest single customer, overtaking NASA and the Pentagon for the first time. 34.5% of SpaceX's revenue last quarter was from compute-as-a-service to Dario Amodei, and Anthropic has committed to spending up to $120.5 billion…",
    "author_name": "Andrew Curran",
-   "likes": 1453,
+   "likes": 1460,
    "story": "Source: Anthropic is “Customer B” cited by SpaceX in a filing as its single largest customer accounting for 34.5% of Q3 revenue, surpassing the US government"
   },
   {
@@ -91,8 +91,8 @@
    "url": "https://doublepulsar.com/anthropic-hacked-to-deliver-remote-access-trojan-to-claude-developer-laptops-worldwide-1148a92baae2",
    "source": "Hacker News",
    "published_at": "2026-10-30T10:22:51Z",
-   "text": "184 points and 34 comments on Hacker News.",
-   "points": 184,
+   "text": "248 points and 45 comments on Hacker News.",
+   "points": 248,
    "discussion": "https://news.ycombinator.com/item?id=50301983"
   },
   {
@@ -100,7 +100,7 @@
    "url": "https://www.reuters.com/world/europe/uks-cma-opens-investigation-into-metas-terms-publishers-advertisers-2026-10-30/",
    "source": "Reuters",
    "published_at": "2026-10-30T11:40:59Z",
-   "text": "The UK CMA opens a probe into whether Meta imposed exploitative terms on publishers and advertisers to use their content to develop its AI and other services. Britain's competition regulator on Friday said it has opened an investigation into whether Meta (META.O) was imposing exploitative terms …",
+   "text": "The UK CMA opens a probe into whether Meta imposed exploitative terms on publishers and advertisers to use their content to develop its AI and other services",
    "via": "Techmeme"
   },
   {
@@ -108,8 +108,8 @@
    "url": "https://labs.ycombinator.com/projects/games/index.html",
    "source": "Hacker News",
    "published_at": "2026-10-29T21:40:28Z",
-   "text": "321 points and 121 comments on Hacker News.",
-   "points": 321,
+   "text": "325 points and 128 comments on Hacker News.",
+   "points": 325,
    "discussion": "https://news.ycombinator.com/item?id=50296486"
   },
   {
