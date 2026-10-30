@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-30T00:50:20Z",
+ "generated_at": "2026-10-30T01:22:11Z",
  "items": [
   {
    "title": "Alphabet's stock falls 12.3%, wiping a record $500B from its market cap, after reporting negative c…",
@@ -17,15 +17,15 @@
    "published_at": "2026-10-29T14:21:24Z",
    "text": "Today, we release the weights of a new and improved Le Chonk, advancing the open frontier for agentic coding and cybersecurity. 💻 Built to build: Le Chonk ranks #1 on @cognition’s FrontierCode among open models, and sets a new benchmark for Pareto efficiency on…",
    "author_name": "Mistral AI",
-   "likes": 4997,
+   "likes": 5044,
    "story": "Mistral releases the weights for Mistral Large 4, or Le Chonk, and says it rivals top open models such as GLM-5.3 on the Artificial Analysis Coding Agent Index"
   },
   {
-   "title": "Claude Code 2.1.312 released",
-   "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.312",
+   "title": "Claude Code 2.1.314 released",
+   "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.314",
    "source": "Claude Code releases",
-   "published_at": "2026-10-27T20:24:20Z",
-   "text": "Added oidc.user_id_claim to the Claude apps gateway, to identify people by an id_token claim other than sub, such as Microsoft Entra ID's oid · Added click to send: in fullscreen, clicking the \"to send now\" hint under a queued message sends it right away, as its key does · Fixed managed settings and organization policy not being fetched for the rest of the session after signing in from the VS Code extension · Fixed Claude overwriting a very large CLAUDE.md, rules file or @-included file in a subdirectory after seeing only its start; Write now asks Claude to read it all or edit in place"
+   "published_at": "2026-10-30T01:06:26Z",
+   "text": "Added permissions.blockWritesOutsideWorkingDirectories: Write, Edit and NotebookEdit refuse paths outside the working directories in every permission mode · Added an optional groups list to Claude apps gateway upstreams: only developers in the listed IdP groups are sent to that upstream, on failover too · Added guardrail_trace to Claude apps gateway Bedrock upstreams, to log which Amazon Bedrock guardrail filter fired on a request, without the matched text · Added idle compaction to VS Code and Claude Desktop's Code tab: a 200K+ token conversation left idle is summarized, and the summary is u…"
   },
   {
    "title": "Roblox just released a letter to shareholders. - Over 80% of the top 100 Roblox games now use AI. -…",
@@ -34,7 +34,7 @@
    "published_at": "2026-10-29T21:08:59Z",
    "text": "Roblox just released a letter to shareholders. - Over 80% of the top 100 Roblox games now use AI. - Steal an Egg and Huss Valley are almost 100% AI generated. - More than 70,000 games have been AI generated with Roblox Build.",
    "author_name": "KreekCraft",
-   "likes": 6416,
+   "likes": 6879,
    "story": "Roblox reports Q3 bookings down 12% YoY to $1.7B, vs. $1.63B est., and DAUs down 9% to 138M, vs. 145.8M est.; RBLX drops 16%+ after hours"
   },
   {
@@ -50,19 +50,19 @@
    "url": "https://labs.ycombinator.com/projects/games/index.html",
    "source": "Hacker News",
    "published_at": "2026-10-29T21:40:28Z",
-   "text": "132 points and 49 comments on Hacker News.",
-   "points": 132,
+   "text": "146 points and 55 comments on Hacker News.",
+   "points": 146,
    "discussion": "https://news.ycombinator.com/item?id=50296486"
   },
   {
-   "title": "Another day, another Laura Loomer exclusive that has been vindicated 6 months later. In May, I brok…",
-   "url": "https://x.com/LauraLoomer/status/2115818899308442039",
-   "source": "𝕏 @LauraLoomer",
-   "published_at": "2026-10-29T14:51:50Z",
-   "text": "Another day, another Laura Loomer exclusive that has been vindicated 6 months later. In May, I broke a story about how Nvidia CEO Jensen Huang posed a massive national security risk and I showed how he’s been compromised by China and the CCP. I reported how NVIDIA @nvidia…",
-   "author_name": "Laura Loomer",
-   "likes": 5071,
-   "story": "US officials believe Megaspeed executive Alice Huang, who has a close relationship with Jensen Huang, is a Chinese asset; Trump was briefed and took no action"
+   "title": "Customer B has been revealed. Anthropic is SpaceX's largest single customer, overtaking NASA and th…",
+   "url": "https://x.com/AndrewCurran_/status/2115897550914158832",
+   "source": "𝕏 @AndrewCurran_",
+   "published_at": "2026-10-29T20:04:22Z",
+   "text": "Customer B has been revealed. Anthropic is SpaceX's largest single customer, overtaking NASA and the Pentagon for the first time. 34.5% of SpaceX's revenue last quarter was from compute-as-a-service to Dario Amodei, and Anthropic has committed to spending up to $120.5 billion…",
+   "author_name": "Andrew Curran",
+   "likes": 971,
+   "story": "Source: Anthropic is “Customer B” cited by SpaceX in a filing as its single largest customer accounting for 34.5% of Q3 revenue, surpassing the US government"
   },
   {
    "title": "Expanding our partnership with GSA to bring Claude to all levels of government",
@@ -87,30 +87,30 @@
    "via": "Techmeme"
   },
   {
-   "title": "Customer B has been revealed. Anthropic is SpaceX's largest single customer, overtaking NASA and th…",
-   "url": "https://x.com/AndrewCurran_/status/2115897550914158832",
-   "source": "𝕏 @AndrewCurran_",
-   "published_at": "2026-10-29T20:04:22Z",
-   "text": "Customer B has been revealed. Anthropic is SpaceX's largest single customer, overtaking NASA and the Pentagon for the first time. 34.5% of SpaceX's revenue last quarter was from compute-as-a-service to Dario Amodei, and Anthropic has committed to spending up to $120.5 billion…",
-   "author_name": "Andrew Curran",
-   "likes": 929,
-   "story": "Source: Anthropic is “Customer B” cited by SpaceX in a filing as its single largest customer accounting for 34.5% of Q3 revenue, surpassing the US government"
+   "title": "Another day, another Laura Loomer exclusive that has been vindicated 6 months later. In May, I brok…",
+   "url": "https://x.com/LauraLoomer/status/2115818899308442039",
+   "source": "𝕏 @LauraLoomer",
+   "published_at": "2026-10-29T14:51:50Z",
+   "text": "Another day, another Laura Loomer exclusive that has been vindicated 6 months later. In May, I broke a story about how Nvidia CEO Jensen Huang posed a massive national security risk and I showed how he’s been compromised by China and the CCP. I reported how NVIDIA @nvidia…",
+   "author_name": "Laura Loomer",
+   "likes": 5229,
+   "story": "US officials believe Megaspeed executive Alice Huang, who has a close relationship with Jensen Huang, is a Chinese asset; Trump was briefed and took no action"
   },
   {
    "title": "Alleged Chinese spy had 'close relationship' with Nvidia boss Jensen Huang",
    "url": "https://nypost.com/2026/10/29/business/alleged-chinese-spy-had-close-relationship-with-nvidia-boss-jensen-huang-report/",
    "source": "Hacker News",
    "published_at": "2026-10-29T17:43:48Z",
-   "text": "278 points and 192 comments on Hacker News.",
-   "points": 278,
+   "text": "283 points and 196 comments on Hacker News.",
+   "points": 283,
    "discussion": "https://news.ycombinator.com/item?id=50293047"
   },
   {
-   "title": "Google plans to expand “high-quality ads within AI Overviews in AI Mode” into international markets…",
-   "url": "https://techcrunch.com/2026/10/28/google-expands-ai-search-ads-globally-as-core-ad-growth-slows/",
-   "source": "Lauren Forristal / TechCrun…",
-   "published_at": "2026-10-29T05:31:30Z",
-   "text": "Google plans to expand “high-quality ads within AI Overviews in AI Mode” into international markets, as growth in its core search ad business slows. Google is bringing ads in its AI-powered Search experiences to international markets, betting that generative AI can open …",
+   "title": "Sources: Nvidia is in talks to provide Nscale with billions of dollars in credit guarantees for deb…",
+   "url": "https://www.theinformation.com/articles/nvidia-talks-provide-billions-credit-support-cloud-providers-45-billion-anthropic-deal",
+   "source": "Phoebe Liu / The Information",
+   "published_at": "2026-10-29T22:56:09Z",
+   "text": "Sources: Nvidia is in talks to provide Nscale with billions of dollars in credit guarantees for debt to develop a 460MW data center that Anthropic plans to use. Nvidia is in talks to provide Nscale, a young AI cloud provider, with billions of dollars in credit guarantees for debt to develop …",
    "via": "Techmeme"
   },
   {
@@ -118,8 +118,8 @@
    "url": "https://github.com/SheepSeb/tinyworldformer",
    "source": "Hacker News",
    "published_at": "2026-10-29T20:32:28Z",
-   "text": "108 points and 7 comments on Hacker News.",
-   "points": 108,
+   "text": "117 points and 8 comments on Hacker News.",
+   "points": 117,
    "discussion": "https://news.ycombinator.com/item?id=50295450"
   },
   {
