@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-30T19:09:10Z",
+ "generated_at": "2026-10-30T19:40:51Z",
  "items": [
   {
    "title": "Binance says it has reserved $6.34B+ in company funds, including $5B already held in impacted token…",
@@ -17,8 +17,8 @@
    "published_at": "2026-10-30T17:29:07Z",
    "text": "We’re renaming our Max plans: Max 5x → Max Max 20x → Ultra Max is still $100/month, and Ultra is still $200. If you’re a subscriber, there’s nothing you need to do. We’re also removing the 5-hour limit for verified Ultra accounts, starting today with most existing…",
    "author_name": "Claude",
-   "likes": 14601,
-   "story": "Max Plans renamed. 20x is now Ultra. No more 5 hour limit."
+   "likes": 16485,
+   "story": "Anthropic renames its $100 per month Max 5x plan as Max and the $200 per month Max 20x plan as Ultra, and removes the 5-hour limit for verified Ultra accounts"
   },
   {
    "title": "Claude Code 2.1.314 released",
@@ -34,25 +34,25 @@
    "published_at": "2026-10-30T07:01:46Z",
    "text": "ANTHROPIC IS CRACKING DOWN ON VIDEO GAME REWRITES 🚨 Claude Code picked up a new rule around Oct 27, sent from Anthropic’s servers under a flag called \"tengu_heron_brook\". There’s no setting to turn it off. The full rule: “Do build original games, games in a genre, and games…",
    "author_name": "chasm",
-   "likes": 6896,
+   "likes": 7029,
    "story": "Another reason to own your own compute. Your account may get banned in a sneaky update."
   },
   {
-   "title": "On Amazon's earnings call, Andy Jassy says outside AI shopping agents are “still not great, nor mor…",
-   "url": "https://fortune.com/2026/10/29/amazon-ceo-says-shopping-agents-like-metas-muse-not-great/",
-   "source": "Sebastian Herrera / Fortune",
-   "published_at": "2026-10-30T00:21:24Z",
-   "text": "On Amazon's earnings call, Andy Jassy says outside AI shopping agents are “still not great, nor more convenient than coming to a retailer directly”",
+   "title": "The UK CMA opens a probe into whether Meta imposed exploitative terms on publishers and advertisers…",
+   "url": "https://www.reuters.com/world/europe/uks-cma-opens-investigation-into-metas-terms-publishers-advertisers-2026-10-30/",
+   "source": "Reuters",
+   "published_at": "2026-10-30T11:40:59Z",
+   "text": "The UK CMA opens a probe into whether Meta imposed exploitative terms on publishers and advertisers to use their content to develop its AI and other services. Britain's competition regulator on Friday said it has opened an investigation into whether Meta (META.O) was imposing exploitative terms …",
    "via": "Techmeme"
   },
   {
-   "title": "Proton's CEO Cancels AI 'Re-Interviews'",
-   "url": "https://www.404media.co/protons-ceo-cancels-ai-re-interviews/",
+   "title": "AI isn't replacing SREs, it's deskilling them",
+   "url": "https://newsletter.signoz.io/p/ai-isnt-replacing-sres-its-deskilling",
    "source": "Hacker News",
-   "published_at": "2026-10-30T17:24:45Z",
-   "text": "175 points and 137 comments on Hacker News.",
-   "points": 175,
-   "discussion": "https://news.ycombinator.com/item?id=50307183"
+   "published_at": "2026-10-30T15:52:18Z",
+   "text": "345 points and 269 comments on Hacker News.",
+   "points": 345,
+   "discussion": "https://news.ycombinator.com/item?id=50305693"
   },
   {
    "title": "To sum up today's news: - Reddit stock is down because of AI answers - Google stock is down because…",
@@ -61,7 +61,7 @@
    "published_at": "2026-10-30T04:05:48Z",
    "text": "To sum up today's news: - Reddit stock is down because of AI answers - Google stock is down because of AI answers - Your web traffic is down because of AI answers Happy to see that worked out well for all parties involved",
    "author_name": "Cyrus SEO",
-   "likes": 10085,
+   "likes": 10771,
    "story": "Reddit reports Q3 revenue up 53% YoY to $895M, vs. $878M est., DAUq up 12% to 130.3M, below est., forecasts Q4 revenue below est.; RDDT drops 25%+"
   },
   {
@@ -93,34 +93,34 @@
    "published_at": "2026-10-29T21:08:59Z",
    "text": "Roblox just released a letter to shareholders. - Over 80% of the top 100 Roblox games now use AI. - Steal an Egg and Huss Valley are almost 100% AI generated. - More than 70,000 games have been AI generated with Roblox Build.",
    "author_name": "KreekCraft",
-   "likes": 11795,
+   "likes": 11868,
    "story": "Roblox reports Q3 bookings down 12% YoY to $1.7B, vs. $1.63B est., and DAUs down 9% to 138M, vs. 145.8M est.; RBLX drops 16%+"
-  },
-  {
-   "title": "AI isn't replacing SREs, it's deskilling them",
-   "url": "https://newsletter.signoz.io/p/ai-isnt-replacing-sres-its-deskilling",
-   "source": "Hacker News",
-   "published_at": "2026-10-30T15:52:18Z",
-   "text": "323 points and 240 comments on Hacker News.",
-   "points": 323,
-   "discussion": "https://news.ycombinator.com/item?id=50305693"
-  },
-  {
-   "title": "The UK CMA opens a probe into whether Meta imposed exploitative terms on publishers and advertisers…",
-   "url": "https://www.reuters.com/world/europe/uks-cma-opens-investigation-into-metas-terms-publishers-advertisers-2026-10-30/",
-   "source": "Reuters",
-   "published_at": "2026-10-30T11:40:59Z",
-   "text": "The UK CMA opens a probe into whether Meta imposed exploitative terms on publishers and advertisers to use their content to develop its AI and other services. Britain's competition regulator on Friday said it has opened an investigation into whether Meta (META.O) was imposing exploitative terms …",
-   "via": "Techmeme"
   },
   {
    "title": "Backdoors in official Claude Code extensions",
    "url": "https://cyberplace.social/@GossiTheDog/117528831681803563",
    "source": "Hacker News",
    "published_at": "2026-10-30T11:05:53Z",
-   "text": "646 points and 17 comments on Hacker News.",
-   "points": 646,
+   "text": "648 points and 17 comments on Hacker News.",
+   "points": 648,
    "discussion": "https://news.ycombinator.com/item?id=50302334"
+  },
+  {
+   "title": "CrowdStrike: China-linked hackers used AI tool ARTEX with a DeepSeek LLM and another model to targe…",
+   "url": "https://www.nbcnews.com/tech/security/china-linked-hackers-used-ai-target-200-organizations-crowdstrike-says-rcna606343",
+   "source": "Kevin Collier / NBC News",
+   "published_at": "2026-10-30T04:02:33Z",
+   "text": "CrowdStrike: China-linked hackers used AI tool ARTEX with a DeepSeek LLM and another model to target 200+ organizations in 11 days, compromising at least nine. Chinese state-linked hackers targeted more than 200 organizations in just 11 days, using AI to attack governments and businesses worldwide, according to CrowdStrike.",
+   "via": "Techmeme"
+  },
+  {
+   "title": "Anthropic may not secure investment-grade rating after IPO, Blackstone says",
+   "url": "https://www.ft.com/content/59383c7f-8d82-493f-bf01-d2e862a1018f",
+   "source": "Hacker News",
+   "published_at": "2026-10-30T17:27:25Z",
+   "text": "121 points and 51 comments on Hacker News.",
+   "points": 121,
+   "discussion": "https://news.ycombinator.com/item?id=50307219"
   },
   {
    "title": "AI for Science expands to foundations and institutions",
