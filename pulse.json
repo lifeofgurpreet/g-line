@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-30T16:28:19Z",
+ "generated_at": "2026-10-30T17:00:26Z",
  "items": [
   {
    "title": "Binance says it has reserved $6.34B+ in company funds, including $5B already held in impacted token…",
@@ -17,7 +17,7 @@
    "published_at": "2026-10-30T07:01:46Z",
    "text": "ANTHROPIC IS CRACKING DOWN ON VIDEO GAME REWRITES 🚨 Claude Code picked up a new rule around Oct 27, sent from Anthropic’s servers under a flag called \"tengu_heron_brook\". There’s no setting to turn it off. The full rule: “Do build original games, games in a genre, and games…",
    "author_name": "chasm",
-   "likes": 6001,
+   "likes": 6250,
    "story": "Another reason to own your own compute. Your account may get banned in a sneaky update."
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-10-30T04:05:48Z",
    "text": "To sum up today's news: - Reddit stock is down because of AI answers - Google stock is down because of AI answers - Your web traffic is down because of AI answers Happy to see that worked out well for all parties involved",
    "author_name": "Cyrus SEO",
-   "likes": 6604,
+   "likes": 7300,
    "story": "Reddit reports Q3 revenue up 53% YoY to $895M, vs. $878M est., DAUq up 12% to 130.3M, below est., forecasts Q4 revenue below est.; RDDT drops 25%+"
   },
   {
@@ -46,13 +46,13 @@
    "via": "Techmeme"
   },
   {
-   "title": "Backdoors in official Claude Code extensions",
-   "url": "https://cyberplace.social/@GossiTheDog/117528831681803563",
+   "title": "AI Isn't Replacing SREs. It's Deskilling Them",
+   "url": "https://newsletter.signoz.io/p/ai-isnt-replacing-sres-its-deskilling",
    "source": "Hacker News",
-   "published_at": "2026-10-30T11:05:53Z",
-   "text": "644 points and 17 comments on Hacker News.",
-   "points": 644,
-   "discussion": "https://news.ycombinator.com/item?id=50302334"
+   "published_at": "2026-10-30T15:52:18Z",
+   "text": "150 points and 118 comments on Hacker News.",
+   "points": 150,
+   "discussion": "https://news.ycombinator.com/item?id=50305693"
   },
   {
    "title": "Roblox just released a letter to shareholders. - Over 80% of the top 100 Roblox games now use AI. -…",
@@ -61,7 +61,7 @@
    "published_at": "2026-10-29T21:08:59Z",
    "text": "Roblox just released a letter to shareholders. - Over 80% of the top 100 Roblox games now use AI. - Steal an Egg and Huss Valley are almost 100% AI generated. - More than 70,000 games have been AI generated with Roblox Build.",
    "author_name": "KreekCraft",
-   "likes": 11264,
+   "likes": 11379,
    "story": "Roblox reports Q3 bookings down 12% YoY to $1.7B, vs. $1.63B est., and DAUs down 9% to 138M, vs. 145.8M est.; RBLX drops 16%+"
   },
   {
@@ -93,34 +93,34 @@
    "published_at": "2026-10-29T20:04:22Z",
    "text": "Customer B has been revealed. Anthropic is SpaceX's largest single customer, overtaking NASA and the Pentagon for the first time. 34.5% of SpaceX's revenue last quarter was from compute-as-a-service to Dario Amodei, and Anthropic has committed to spending up to $120.5 billion…",
    "author_name": "Andrew Curran",
-   "likes": 1523,
+   "likes": 1539,
    "story": "Source: Anthropic is “Customer B” cited by SpaceX in a filing as its single largest customer accounting for 34.5% of Q3 revenue, surpassing the US government"
+  },
+  {
+   "title": "Backdoors in official Claude Code extensions",
+   "url": "https://cyberplace.social/@GossiTheDog/117528831681803563",
+   "source": "Hacker News",
+   "published_at": "2026-10-30T11:05:53Z",
+   "text": "645 points and 17 comments on Hacker News.",
+   "points": 645,
+   "discussion": "https://news.ycombinator.com/item?id=50302334"
+  },
+  {
+   "title": "Sources: Spotify aims to launch its AI remix service in Q1 2027 and may charge $4-$5/month extra; i…",
+   "url": "https://www.ft.com/content/50286bd0-7158-4347-81d8-011cd164f75b",
+   "source": "Anna Nicolaou / Financial T…",
+   "published_at": "2026-10-30T08:46:04Z",
+   "text": "Sources: Spotify aims to launch its AI remix service in Q1 2027 and may charge $4-$5/month extra; it is still negotiating licensing deals with Sony and Warner. Streaming service plans to charge users up to $5 a month to use the feature — Spotify is targeting an early 2027 launch …",
+   "via": "Techmeme"
   },
   {
    "title": "Backdoor in Claude Code for VS Code extension on the Cursor Marketplace",
    "url": "https://phorion.io/blog/offical-claude-code-vsx-compromise/",
    "source": "Hacker News",
    "published_at": "2026-10-30T07:09:12Z",
-   "text": "328 points and 347 comments on Hacker News.",
-   "points": 328,
+   "text": "373 points and 358 comments on Hacker News.",
+   "points": 373,
    "discussion": "https://news.ycombinator.com/item?id=50300683"
-  },
-  {
-   "title": "Sources: Spotify aims to launch an AI product in Q1 2027 that lets subscribers create their own rem…",
-   "url": "https://www.ft.com/content/50286bd0-7158-4347-81d8-011cd164f75b",
-   "source": "Anna Nicolaou / Financial T…",
-   "published_at": "2026-10-30T08:46:04Z",
-   "text": "Sources: Spotify aims to launch an AI product in Q1 2027 that lets subscribers create their own remixes and covers for ~$5 per month, pending licensing deals. Streaming service plans to charge users up to $5 a month to use the feature — Spotify is targeting an early 2027 launch …",
-   "via": "Techmeme"
-  },
-  {
-   "title": "We're releasing the weights of Mistral Large 4",
-   "url": "https://mistral.ai/news/mistral-large-4-oss/",
-   "source": "Hacker News",
-   "published_at": "2026-10-29T14:13:21Z",
-   "text": "1637 points and 426 comments on Hacker News.",
-   "points": 1637,
-   "discussion": "https://news.ycombinator.com/item?id=50289418"
   },
   {
    "title": "AI for Science expands to foundations and institutions",
