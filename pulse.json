@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-30T20:45:56Z",
+ "generated_at": "2026-10-30T21:18:10Z",
  "items": [
   {
    "title": "Binance says it has reserved $6.34B+ in company funds, including $5B already held in impacted token…",
@@ -17,7 +17,7 @@
    "published_at": "2026-10-30T17:29:07Z",
    "text": "We’re renaming our Max plans: Max 5x → Max Max 20x → Ultra Max is still $100/month, and Ultra is still $200. If you’re a subscriber, there’s nothing you need to do. We’re also removing the 5-hour limit for verified Ultra accounts, starting today with most existing…",
    "author_name": "Claude",
-   "likes": 18952,
+   "likes": 19826,
    "story": "Anthropic renames its $100 per month Max 5x plan as Max and the $200 per month Max 20x plan as Ultra, and removes the 5-hour limit for verified Ultra accounts"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-10-30T07:01:46Z",
    "text": "ANTHROPIC IS CRACKING DOWN ON VIDEO GAME REWRITES 🚨 Claude Code picked up a new rule around Oct 27, sent from Anthropic’s servers under a flag called \"tengu_heron_brook\". There’s no setting to turn it off. The full rule: “Do build original games, games in a genre, and games…",
    "author_name": "chasm",
-   "likes": 7262,
+   "likes": 7357,
    "story": "Another reason to own your own compute. Your account may get banned in a sneaky update."
   },
   {
@@ -50,8 +50,8 @@
    "url": "https://newsletter.signoz.io/p/ai-isnt-replacing-sres-its-deskilling",
    "source": "Hacker News",
    "published_at": "2026-10-30T15:52:18Z",
-   "text": "388 points and 298 comments on Hacker News.",
-   "points": 388,
+   "text": "411 points and 309 comments on Hacker News.",
+   "points": 411,
    "discussion": "https://news.ycombinator.com/item?id=50305693"
   },
   {
@@ -81,16 +81,16 @@
    "url": "https://www.ft.com/content/59383c7f-8d82-493f-bf01-d2e862a1018f",
    "source": "Hacker News",
    "published_at": "2026-10-30T17:27:25Z",
-   "text": "178 points and 125 comments on Hacker News.",
-   "points": 178,
+   "text": "202 points and 145 comments on Hacker News.",
+   "points": 202,
    "discussion": "https://news.ycombinator.com/item?id=50307219"
   },
   {
-   "title": "The UK CMA opens a probe into whether Meta imposed exploitative terms on publishers and advertisers…",
-   "url": "https://www.reuters.com/world/europe/uks-cma-opens-investigation-into-metas-terms-publishers-advertisers-2026-10-30/",
-   "source": "Reuters",
-   "published_at": "2026-10-30T11:40:59Z",
-   "text": "The UK CMA opens a probe into whether Meta imposed exploitative terms on publishers and advertisers to use their content to develop its AI and other services. Britain's competition regulator on Friday said it has opened an investigation into whether Meta (META.O) was imposing exploitative terms …",
+   "title": "OpenAI, Google, Microsoft, and Anthropic say they will adopt a new standard that publishers can use…",
+   "url": "https://www.theverge.com/tech/1023763/openai-google-microsoft-ai-scraping-standard-opt-out",
+   "source": "Emma Roth / The Verge",
+   "published_at": "2026-10-30T21:05:53Z",
+   "text": "OpenAI, Google, Microsoft, and Anthropic say they will adopt a new standard that publishers can use to opt out of being scraped by AI across multiple crawlers. The new control will allow publishers to apply their AI training preferences across multiple crawlers.",
    "via": "Techmeme"
   },
   {
@@ -98,8 +98,8 @@
    "url": "https://cyberplace.social/@GossiTheDog/117528831681803563",
    "source": "Hacker News",
    "published_at": "2026-10-30T11:05:53Z",
-   "text": "648 points and 17 comments on Hacker News.",
-   "points": 648,
+   "text": "649 points and 17 comments on Hacker News.",
+   "points": 649,
    "discussion": "https://news.ycombinator.com/item?id=50302334"
   },
   {
@@ -110,11 +110,11 @@
    "text": "We’re highlighting 20 scientific foundations, institutions, and research groups from around the world that we’ve partnered with in an expansion of our AI for Science program."
   },
   {
-   "title": "CrowdStrike: China-linked hackers used AI tool ARTEX with a DeepSeek LLM and another model to targe…",
-   "url": "https://www.nbcnews.com/tech/security/china-linked-hackers-used-ai-target-200-organizations-crowdstrike-says-rcna606343",
-   "source": "Kevin Collier / NBC News",
-   "published_at": "2026-10-30T04:02:33Z",
-   "text": "CrowdStrike: China-linked hackers used AI tool ARTEX with a DeepSeek LLM and another model to target 200+ organizations in 11 days, compromising at least nine. Chinese state-linked hackers targeted more than 200 organizations in just 11 days, using AI to attack governments and businesses worldwide, according to CrowdStrike.",
+   "title": "The UK CMA opens a probe into whether Meta imposed exploitative terms on publishers and advertisers…",
+   "url": "https://www.reuters.com/world/europe/uks-cma-opens-investigation-into-metas-terms-publishers-advertisers-2026-10-30/",
+   "source": "Reuters",
+   "published_at": "2026-10-30T11:40:59Z",
+   "text": "The UK CMA opens a probe into whether Meta imposed exploitative terms on publishers and advertisers to use their content to develop its AI and other services. Britain's competition regulator on Friday said it has opened an investigation into whether Meta (META.O) was imposing exploitative terms …",
    "via": "Techmeme"
   },
   {
@@ -122,8 +122,8 @@
    "url": "https://github.com/dbreunig/nesformer",
    "source": "Hacker News",
    "published_at": "2026-10-30T16:40:22Z",
-   "text": "129 points and 93 comments on Hacker News.",
-   "points": 129,
+   "text": "141 points and 98 comments on Hacker News.",
+   "points": 141,
    "discussion": "https://news.ycombinator.com/item?id=50306442"
   }
  ],
