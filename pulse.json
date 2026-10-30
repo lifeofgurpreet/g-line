@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-30T10:32:01Z",
+ "generated_at": "2026-10-30T11:03:57Z",
  "items": [
   {
    "title": "Reddit plans to require users to log in to fully access the site in response to AI scraping, and to…",
@@ -17,7 +17,7 @@
    "published_at": "2026-10-29T14:21:24Z",
    "text": "Today, we release the weights of a new and improved Le Chonk, advancing the open frontier for agentic coding and cybersecurity. 💻 Built to build: Le Chonk ranks #1 on @cognition’s FrontierCode among open models, and sets a new benchmark for Pareto efficiency on…",
    "author_name": "Mistral AI",
-   "likes": 5625,
+   "likes": 5658,
    "story": "Mistral releases the weights for Mistral Large 4, or Le Chonk, and says it rivals top open models such as GLM-5.3 on the Artificial Analysis Coding Agent Index"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-10-29T21:08:59Z",
    "text": "Roblox just released a letter to shareholders. - Over 80% of the top 100 Roblox games now use AI. - Steal an Egg and Huss Valley are almost 100% AI generated. - More than 70,000 games have been AI generated with Roblox Build.",
    "author_name": "KreekCraft",
-   "likes": 9794,
+   "likes": 9930,
    "story": "Roblox reports Q3 bookings down 12% YoY to $1.7B, vs. $1.63B est., and DAUs down 9% to 138M, vs. 145.8M est.; RBLX drops 16%+ after hours"
   },
   {
@@ -50,8 +50,8 @@
    "url": "https://labs.ycombinator.com/projects/games/index.html",
    "source": "Hacker News",
    "published_at": "2026-10-29T21:40:28Z",
-   "text": "293 points and 101 comments on Hacker News.",
-   "points": 293,
+   "text": "300 points and 110 comments on Hacker News.",
+   "points": 300,
    "discussion": "https://news.ycombinator.com/item?id=50296486"
   },
   {
@@ -61,7 +61,7 @@
    "published_at": "2026-10-29T20:04:22Z",
    "text": "Customer B has been revealed. Anthropic is SpaceX's largest single customer, overtaking NASA and the Pentagon for the first time. 34.5% of SpaceX's revenue last quarter was from compute-as-a-service to Dario Amodei, and Anthropic has committed to spending up to $120.5 billion…",
    "author_name": "Andrew Curran",
-   "likes": 1400,
+   "likes": 1409,
    "story": "Source: Anthropic is “Customer B” cited by SpaceX in a filing as its single largest customer accounting for 34.5% of Q3 revenue, surpassing the US government"
   },
   {
@@ -91,8 +91,8 @@
    "url": "https://martinfowler.com/bliki/LLM-Voice.html",
    "source": "Hacker News",
    "published_at": "2026-10-29T14:57:55Z",
-   "text": "484 points and 255 comments on Hacker News.",
-   "points": 484,
+   "text": "492 points and 259 comments on Hacker News.",
+   "points": 492,
    "discussion": "https://news.ycombinator.com/item?id=50290177"
   },
   {
@@ -108,8 +108,8 @@
    "url": "https://github.com/SheepSeb/tinyworldformer",
    "source": "Hacker News",
    "published_at": "2026-10-29T20:32:28Z",
-   "text": "214 points and 15 comments on Hacker News.",
-   "points": 214,
+   "text": "220 points and 15 comments on Hacker News.",
+   "points": 220,
    "discussion": "https://news.ycombinator.com/item?id=50295450"
   },
   {
