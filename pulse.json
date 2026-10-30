@@ -1,13 +1,13 @@
 {
  "schema": 1,
- "generated_at": "2026-10-30T12:08:40Z",
+ "generated_at": "2026-10-30T12:40:55Z",
  "items": [
   {
-   "title": "Alphabet's stock falls 12.3%, wiping a record $500B from its market cap, after reporting negative c…",
-   "url": "https://www.ft.com/content/eb386156-5bf9-4edd-80f2-803fdee1e33d?accessToken=zwAAAaIi1GfplNO5KUuRDu5BO9O93gVp9IU5udPuhsS2H-RGftOPGJwI3yiK_9PrOGFWW_lO3dOA8oA_3uHjPdPy3p88MpBOh9O7wlVDACXyqwE.MEUCIQCTfptZcpPISYntlhh1mjoa3g6HxEZajv0OSQGMtt_QEQIgSVZwVMNDn0Bf_KARrNJmOPbLhMU516inUsUkdvr2i-0&segmentId=7d4bcc2e-e664-92ba-62e3-5590579f1902",
-   "source": "Stephen Morris / Financial…",
-   "published_at": "2026-10-29T16:26:15Z",
-   "text": "Alphabet's stock falls 12.3%, wiping a record $500B from its market cap, after reporting negative cash flow amid its AI spending; the Nasdaq falls 1.4%. Google owner admits ‘AI mode’ has hurt traditional search as sales and profits undershoot expectations",
+   "title": "Sources: Nvidia is in talks to provide Nscale with billions of dollars in credit guarantees for deb…",
+   "url": "https://www.theinformation.com/articles/nvidia-talks-provide-billions-credit-support-cloud-providers-45-billion-anthropic-deal",
+   "source": "Phoebe Liu / The Information",
+   "published_at": "2026-10-29T22:56:09Z",
+   "text": "Sources: Nvidia is in talks to provide Nscale with billions of dollars in credit guarantees for debt to develop a 460MW data center that Anthropic plans to use. Nvidia is in talks to provide Nscale, a young AI cloud provider, with billions of dollars in credit guarantees for debt to develop …",
    "via": "Techmeme"
   },
   {
@@ -17,7 +17,7 @@
    "published_at": "2026-10-29T14:21:24Z",
    "text": "Today, we release the weights of a new and improved Le Chonk, advancing the open frontier for agentic coding and cybersecurity. 💻 Built to build: Le Chonk ranks #1 on @cognition’s FrontierCode among open models, and sets a new benchmark for Pareto efficiency on…",
    "author_name": "Mistral AI",
-   "likes": 5721,
+   "likes": 5761,
    "story": "Mistral releases the weights for Mistral Large 4, or Le Chonk, and says it rivals top open models such as GLM-5.3 on the Artificial Analysis Coding Agent Index"
   },
   {
@@ -34,15 +34,15 @@
    "published_at": "2026-10-29T21:08:59Z",
    "text": "Roblox just released a letter to shareholders. - Over 80% of the top 100 Roblox games now use AI. - Steal an Egg and Huss Valley are almost 100% AI generated. - More than 70,000 games have been AI generated with Roblox Build.",
    "author_name": "KreekCraft",
-   "likes": 10142,
+   "likes": 10263,
    "story": "Roblox reports Q3 bookings down 12% YoY to $1.7B, vs. $1.63B est., and DAUs down 9% to 138M, vs. 145.8M est.; RBLX drops 16%+ after hours"
   },
   {
-   "title": "Sources: Nvidia is in talks to provide Nscale with billions of dollars in credit guarantees for deb…",
-   "url": "https://www.theinformation.com/articles/nvidia-talks-provide-billions-credit-support-cloud-providers-45-billion-anthropic-deal",
-   "source": "Phoebe Liu / The Information",
-   "published_at": "2026-10-29T22:56:09Z",
-   "text": "Sources: Nvidia is in talks to provide Nscale with billions of dollars in credit guarantees for debt to develop a 460MW data center that Anthropic plans to use. Nvidia is in talks to provide Nscale, a young AI cloud provider, with billions of dollars in credit guarantees for debt to develop …",
+   "title": "CrowdStrike: China-linked hackers used AI tool ARTEX with a DeepSeek LLM and another model to targe…",
+   "url": "https://www.nbcnews.com/tech/security/china-linked-hackers-used-ai-target-200-organizations-crowdstrike-says-rcna606343",
+   "source": "Kevin Collier / NBC News",
+   "published_at": "2026-10-30T04:02:33Z",
+   "text": "CrowdStrike: China-linked hackers used AI tool ARTEX with a DeepSeek LLM and another model to target 200+ organizations in 11 days, compromising at least nine. Chinese state-linked hackers targeted more than 200 organizations in just 11 days, using AI to attack governments and businesses worldwide, according to CrowdStrike.",
    "via": "Techmeme"
   },
   {
@@ -50,8 +50,8 @@
    "url": "https://cyberplace.social/@GossiTheDog/117528831681803563",
    "source": "Hacker News",
    "published_at": "2026-10-30T11:05:53Z",
-   "text": "157 points and 24 comments on Hacker News.",
-   "points": 157,
+   "text": "274 points and 68 comments on Hacker News.",
+   "points": 274,
    "discussion": "https://news.ycombinator.com/item?id=50302334"
   },
   {
@@ -61,7 +61,7 @@
    "published_at": "2026-10-29T20:04:22Z",
    "text": "Customer B has been revealed. Anthropic is SpaceX's largest single customer, overtaking NASA and the Pentagon for the first time. 34.5% of SpaceX's revenue last quarter was from compute-as-a-service to Dario Amodei, and Anthropic has committed to spending up to $120.5 billion…",
    "author_name": "Andrew Curran",
-   "likes": 1443,
+   "likes": 1453,
    "story": "Source: Anthropic is “Customer B” cited by SpaceX in a filing as its single largest customer accounting for 34.5% of Q3 revenue, surpassing the US government"
   },
   {
@@ -79,11 +79,11 @@
    "text": "I've written before about how November 2025 was an inflection point for coding agents - the point where Opus 4.5 and GPT-5.1 crossed a tipping point that meant their respective coding agents became reliable daily drivers for software engineers. I think we've reached a new inflection point in October 2026, and this time it's for vibe coding computer games . Tree Appreciator Emberwick Battle Drones Pumpkin Farmer, aka Quarter Sun Cove Four times as insulting What happens if someone actually puts the work in? You should build a game!"
   },
   {
-   "title": "CrowdStrike: China-linked hackers used AI tool ARTEX with a DeepSeek LLM and another model to targe…",
-   "url": "https://www.nbcnews.com/tech/security/china-linked-hackers-used-ai-target-200-organizations-crowdstrike-says-rcna606343",
-   "source": "Kevin Collier / NBC News",
-   "published_at": "2026-10-30T04:02:33Z",
-   "text": "CrowdStrike: China-linked hackers used AI tool ARTEX with a DeepSeek LLM and another model to target 200+ organizations in 11 days, compromising at least nine. Chinese state-linked hackers targeted more than 200 organizations in just 11 days, using AI to attack governments and businesses worldwide, according to CrowdStrike.",
+   "title": "Alphabet's stock falls 12.3%, wiping a record $500B from its market cap, after reporting negative c…",
+   "url": "https://www.ft.com/content/eb386156-5bf9-4edd-80f2-803fdee1e33d?accessToken=zwAAAaIi1GfplNO5KUuRDu5BO9O93gVp9IU5udPuhsS2H-RGftOPGJwI3yiK_9PrOGFWW_lO3dOA8oA_3uHjPdPy3p88MpBOh9O7wlVDACXyqwE.MEUCIQCTfptZcpPISYntlhh1mjoa3g6HxEZajv0OSQGMtt_QEQIgSVZwVMNDn0Bf_KARrNJmOPbLhMU516inUsUkdvr2i-0&segmentId=7d4bcc2e-e664-92ba-62e3-5590579f1902",
+   "source": "Stephen Morris / Financial…",
+   "published_at": "2026-10-29T16:26:15Z",
+   "text": "Alphabet's stock falls 12.3%, wiping a record $500B from its market cap, after reporting negative cash flow amid its AI spending; the Nasdaq falls 1.4%",
    "via": "Techmeme"
   },
   {
@@ -91,16 +91,16 @@
    "url": "https://doublepulsar.com/anthropic-hacked-to-deliver-remote-access-trojan-to-claude-developer-laptops-worldwide-1148a92baae2",
    "source": "Hacker News",
    "published_at": "2026-10-30T10:22:51Z",
-   "text": "128 points and 19 comments on Hacker News.",
-   "points": 128,
+   "text": "184 points and 34 comments on Hacker News.",
+   "points": 184,
    "discussion": "https://news.ycombinator.com/item?id=50301983"
   },
   {
-   "title": "Dream, which is training AI world models on US building data to automate construction design and en…",
-   "url": "https://techcrunch.com/2026/10/29/ex-palantir-execs-launch-dream-with-17m-from-a16z-to-build-ai-world-models-for-construction/",
-   "source": "Marina Temkin / TechCrunch",
-   "published_at": "2026-10-30T10:16:04Z",
-   "text": "Dream, which is training AI world models on US building data to automate construction design and engineering, emerges from stealth with a $17M seed led by a16z. Andy Alder and Arjun Mather were Stanford roommates who both studied computer science before spending a decade at Palantir.",
+   "title": "The UK CMA opens a probe into whether Meta imposed exploitative terms on publishers and advertisers…",
+   "url": "https://www.reuters.com/world/europe/uks-cma-opens-investigation-into-metas-terms-publishers-advertisers-2026-10-30/",
+   "source": "Reuters",
+   "published_at": "2026-10-30T11:40:59Z",
+   "text": "The UK CMA opens a probe into whether Meta imposed exploitative terms on publishers and advertisers to use their content to develop its AI and other services. Britain's competition regulator on Friday said it has opened an investigation into whether Meta (META.O) was imposing exploitative terms …",
    "via": "Techmeme"
   },
   {
@@ -108,8 +108,8 @@
    "url": "https://labs.ycombinator.com/projects/games/index.html",
    "source": "Hacker News",
    "published_at": "2026-10-29T21:40:28Z",
-   "text": "311 points and 116 comments on Hacker News.",
-   "points": 311,
+   "text": "321 points and 121 comments on Hacker News.",
+   "points": 321,
    "discussion": "https://news.ycombinator.com/item?id=50296486"
   },
   {
@@ -120,11 +120,11 @@
    "text": "We’re highlighting 20 scientific foundations, institutions, and research groups from around the world that we’ve partnered with in an expansion of our AI for Science program."
   },
   {
-   "title": "The UK CMA opens a probe into whether Meta imposed exploitative terms on publishers and advertisers…",
-   "url": "https://www.reuters.com/world/europe/uks-cma-opens-investigation-into-metas-terms-publishers-advertisers-2026-10-30/",
-   "source": "Reuters",
-   "published_at": "2026-10-30T11:40:59Z",
-   "text": "The UK CMA opens a probe into whether Meta imposed exploitative terms on publishers and advertisers to use their content to develop its AI and other services",
+   "title": "Dream, which is training AI world models on US building data to automate construction design and en…",
+   "url": "https://techcrunch.com/2026/10/29/ex-palantir-execs-launch-dream-with-17m-from-a16z-to-build-ai-world-models-for-construction/",
+   "source": "Marina Temkin / TechCrunch",
+   "published_at": "2026-10-30T10:16:04Z",
+   "text": "Dream, which is training AI world models on US building data to automate construction design and engineering, emerges from stealth with a $17M seed led by a16z. Andy Alder and Arjun Mather were Stanford roommates who both studied computer science before spending a decade at Palantir.",
    "via": "Techmeme"
   }
  ],
