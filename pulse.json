@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-30T09:28:33Z",
+ "generated_at": "2026-10-30T09:59:46Z",
  "items": [
   {
    "title": "Reddit plans to require users to log in to fully access the site in response to AI scraping, and to…",
@@ -17,7 +17,7 @@
    "published_at": "2026-10-29T14:21:24Z",
    "text": "Today, we release the weights of a new and improved Le Chonk, advancing the open frontier for agentic coding and cybersecurity. 💻 Built to build: Le Chonk ranks #1 on @cognition’s FrontierCode among open models, and sets a new benchmark for Pareto efficiency on…",
    "author_name": "Mistral AI",
-   "likes": 5571,
+   "likes": 5596,
    "story": "Mistral releases the weights for Mistral Large 4, or Le Chonk, and says it rivals top open models such as GLM-5.3 on the Artificial Analysis Coding Agent Index"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-10-29T21:08:59Z",
    "text": "Roblox just released a letter to shareholders. - Over 80% of the top 100 Roblox games now use AI. - Steal an Egg and Huss Valley are almost 100% AI generated. - More than 70,000 games have been AI generated with Roblox Build.",
    "author_name": "KreekCraft",
-   "likes": 9580,
+   "likes": 9688,
    "story": "Roblox reports Q3 bookings down 12% YoY to $1.7B, vs. $1.63B est., and DAUs down 9% to 138M, vs. 145.8M est.; RBLX drops 16%+ after hours"
   },
   {
@@ -46,13 +46,13 @@
    "via": "Techmeme"
   },
   {
-   "title": "We ran AI agent swarms in Minecraft and Mindustry",
-   "url": "https://labs.ycombinator.com/projects/games/index.html",
+   "title": "Ask HN: Are you tired too in this AI era?",
+   "url": "https://news.ycombinator.com/item?id=50301479",
    "source": "Hacker News",
-   "published_at": "2026-10-29T21:40:28Z",
-   "text": "277 points and 97 comments on Hacker News.",
-   "points": 277,
-   "discussion": "https://news.ycombinator.com/item?id=50296486"
+   "published_at": "2026-10-30T09:17:43Z",
+   "text": "76 points and 43 comments on Hacker News.",
+   "points": 76,
+   "discussion": "https://news.ycombinator.com/item?id=50301479"
   },
   {
    "title": "Customer B has been revealed. Anthropic is SpaceX's largest single customer, overtaking NASA and th…",
@@ -61,7 +61,7 @@
    "published_at": "2026-10-29T20:04:22Z",
    "text": "Customer B has been revealed. Anthropic is SpaceX's largest single customer, overtaking NASA and the Pentagon for the first time. 34.5% of SpaceX's revenue last quarter was from compute-as-a-service to Dario Amodei, and Anthropic has committed to spending up to $120.5 billion…",
    "author_name": "Andrew Curran",
-   "likes": 1377,
+   "likes": 1392,
    "story": "Source: Anthropic is “Customer B” cited by SpaceX in a filing as its single largest customer accounting for 34.5% of Q3 revenue, surpassing the US government"
   },
   {
@@ -79,6 +79,23 @@
    "text": "I've written before about how November 2025 was an inflection point for coding agents - the point where Opus 4.5 and GPT-5.1 crossed a tipping point that meant their respective coding agents became reliable daily drivers for software engineers. I think we've reached a new inflection point in October 2026, and this time it's for vibe coding computer games . Tree Appreciator Emberwick Battle Drones Pumpkin Farmer, aka Quarter Sun Cove Four times as insulting What happens if someone actually puts the work in? You should build a game!"
   },
   {
+   "title": "Sources: Nvidia is in talks to provide Nscale with billions of dollars in credit guarantees for deb…",
+   "url": "https://www.theinformation.com/articles/nvidia-talks-provide-billions-credit-support-cloud-providers-45-billion-anthropic-deal",
+   "source": "Phoebe Liu / The Information",
+   "published_at": "2026-10-29T22:56:09Z",
+   "text": "Sources: Nvidia is in talks to provide Nscale with billions of dollars in credit guarantees for debt to develop a 460MW data center that Anthropic plans to use. Nvidia is in talks to provide Nscale, a young AI cloud provider, with billions of dollars in credit guarantees for debt to develop …",
+   "via": "Techmeme"
+  },
+  {
+   "title": "We ran AI agent swarms in Minecraft and Mindustry",
+   "url": "https://labs.ycombinator.com/projects/games/index.html",
+   "source": "Hacker News",
+   "published_at": "2026-10-29T21:40:28Z",
+   "text": "285 points and 100 comments on Hacker News.",
+   "points": 285,
+   "discussion": "https://news.ycombinator.com/item?id=50296486"
+  },
+  {
    "title": "CrowdStrike: China-linked hackers used AI tool ARTEX with a DeepSeek LLM and another model to targe…",
    "url": "https://www.nbcnews.com/tech/security/china-linked-hackers-used-ai-target-200-organizations-crowdstrike-says-rcna606343",
    "source": "Kevin Collier / NBC News",
@@ -91,26 +108,9 @@
    "url": "https://martinfowler.com/bliki/LLM-Voice.html",
    "source": "Hacker News",
    "published_at": "2026-10-29T14:57:55Z",
-   "text": "470 points and 250 comments on Hacker News.",
-   "points": 470,
+   "text": "477 points and 253 comments on Hacker News.",
+   "points": 477,
    "discussion": "https://news.ycombinator.com/item?id=50290177"
-  },
-  {
-   "title": "Sources: Nvidia is in talks to provide Nscale with billions of dollars in credit guarantees for deb…",
-   "url": "https://www.theinformation.com/articles/nvidia-talks-provide-billions-credit-support-cloud-providers-45-billion-anthropic-deal",
-   "source": "Phoebe Liu / The Information",
-   "published_at": "2026-10-29T22:56:09Z",
-   "text": "Sources: Nvidia is in talks to provide Nscale with billions of dollars in credit guarantees for debt to develop a 460MW data center that Anthropic plans to use. Nvidia is in talks to provide Nscale, a young AI cloud provider, with billions of dollars in credit guarantees for debt to develop …",
-   "via": "Techmeme"
-  },
-  {
-   "title": "A tiny world model running games on a Raspberry Pi Pico 2 W",
-   "url": "https://github.com/SheepSeb/tinyworldformer",
-   "source": "Hacker News",
-   "published_at": "2026-10-29T20:32:28Z",
-   "text": "205 points and 14 comments on Hacker News.",
-   "points": 205,
-   "discussion": "https://news.ycombinator.com/item?id=50295450"
   },
   {
    "title": "AI for Science expands to foundations and institutions",
