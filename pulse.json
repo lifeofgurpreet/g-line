@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-30T09:59:46Z",
+ "generated_at": "2026-10-30T10:32:01Z",
  "items": [
   {
    "title": "Reddit plans to require users to log in to fully access the site in response to AI scraping, and to…",
@@ -17,7 +17,7 @@
    "published_at": "2026-10-29T14:21:24Z",
    "text": "Today, we release the weights of a new and improved Le Chonk, advancing the open frontier for agentic coding and cybersecurity. 💻 Built to build: Le Chonk ranks #1 on @cognition’s FrontierCode among open models, and sets a new benchmark for Pareto efficiency on…",
    "author_name": "Mistral AI",
-   "likes": 5596,
+   "likes": 5625,
    "story": "Mistral releases the weights for Mistral Large 4, or Le Chonk, and says it rivals top open models such as GLM-5.3 on the Artificial Analysis Coding Agent Index"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-10-29T21:08:59Z",
    "text": "Roblox just released a letter to shareholders. - Over 80% of the top 100 Roblox games now use AI. - Steal an Egg and Huss Valley are almost 100% AI generated. - More than 70,000 games have been AI generated with Roblox Build.",
    "author_name": "KreekCraft",
-   "likes": 9688,
+   "likes": 9794,
    "story": "Roblox reports Q3 bookings down 12% YoY to $1.7B, vs. $1.63B est., and DAUs down 9% to 138M, vs. 145.8M est.; RBLX drops 16%+ after hours"
   },
   {
@@ -46,13 +46,13 @@
    "via": "Techmeme"
   },
   {
-   "title": "Ask HN: Are you tired too in this AI era?",
-   "url": "https://news.ycombinator.com/item?id=50301479",
+   "title": "We ran AI agent swarms in Minecraft and Mindustry",
+   "url": "https://labs.ycombinator.com/projects/games/index.html",
    "source": "Hacker News",
-   "published_at": "2026-10-30T09:17:43Z",
-   "text": "76 points and 43 comments on Hacker News.",
-   "points": 76,
-   "discussion": "https://news.ycombinator.com/item?id=50301479"
+   "published_at": "2026-10-29T21:40:28Z",
+   "text": "293 points and 101 comments on Hacker News.",
+   "points": 293,
+   "discussion": "https://news.ycombinator.com/item?id=50296486"
   },
   {
    "title": "Customer B has been revealed. Anthropic is SpaceX's largest single customer, overtaking NASA and th…",
@@ -61,7 +61,7 @@
    "published_at": "2026-10-29T20:04:22Z",
    "text": "Customer B has been revealed. Anthropic is SpaceX's largest single customer, overtaking NASA and the Pentagon for the first time. 34.5% of SpaceX's revenue last quarter was from compute-as-a-service to Dario Amodei, and Anthropic has committed to spending up to $120.5 billion…",
    "author_name": "Andrew Curran",
-   "likes": 1392,
+   "likes": 1400,
    "story": "Source: Anthropic is “Customer B” cited by SpaceX in a filing as its single largest customer accounting for 34.5% of Q3 revenue, surpassing the US government"
   },
   {
@@ -87,13 +87,13 @@
    "via": "Techmeme"
   },
   {
-   "title": "We ran AI agent swarms in Minecraft and Mindustry",
-   "url": "https://labs.ycombinator.com/projects/games/index.html",
+   "title": "LLM Voice",
+   "url": "https://martinfowler.com/bliki/LLM-Voice.html",
    "source": "Hacker News",
-   "published_at": "2026-10-29T21:40:28Z",
-   "text": "285 points and 100 comments on Hacker News.",
-   "points": 285,
-   "discussion": "https://news.ycombinator.com/item?id=50296486"
+   "published_at": "2026-10-29T14:57:55Z",
+   "text": "484 points and 255 comments on Hacker News.",
+   "points": 484,
+   "discussion": "https://news.ycombinator.com/item?id=50290177"
   },
   {
    "title": "CrowdStrike: China-linked hackers used AI tool ARTEX with a DeepSeek LLM and another model to targe…",
@@ -104,13 +104,13 @@
    "via": "Techmeme"
   },
   {
-   "title": "LLM Voice",
-   "url": "https://martinfowler.com/bliki/LLM-Voice.html",
+   "title": "A tiny world model running games on a Raspberry Pi Pico 2 W",
+   "url": "https://github.com/SheepSeb/tinyworldformer",
    "source": "Hacker News",
-   "published_at": "2026-10-29T14:57:55Z",
-   "text": "477 points and 253 comments on Hacker News.",
-   "points": 477,
-   "discussion": "https://news.ycombinator.com/item?id=50290177"
+   "published_at": "2026-10-29T20:32:28Z",
+   "text": "214 points and 15 comments on Hacker News.",
+   "points": 214,
+   "discussion": "https://news.ycombinator.com/item?id=50295450"
   },
   {
    "title": "AI for Science expands to foundations and institutions",
@@ -120,11 +120,11 @@
    "text": "We’re highlighting 20 scientific foundations, institutions, and research groups from around the world that we’ve partnered with in an expansion of our AI for Science program."
   },
   {
-   "title": "How a wave of startups are betting on AI to make formal software verification practical and essenti…",
-   "url": "https://www.wired.com/story/software-verification-is-the-hot-new-answer-to-the-ai-safety-crisis/",
-   "source": "Paresh Dave / Wired",
-   "published_at": "2026-10-30T06:31:09Z",
-   "text": "How a wave of startups are betting on AI to make formal software verification practical and essential, including &Truth, which launches with a $70M seed. A new startup called &Truth is joining the race to automate formal verification, a painstaking process that uses math to prove software works as intended.",
+   "title": "Dream, which is training AI world models on US building data to automate construction design and en…",
+   "url": "https://techcrunch.com/2026/10/29/ex-palantir-execs-launch-dream-with-17m-from-a16z-to-build-ai-world-models-for-construction/",
+   "source": "Marina Temkin / TechCrunch",
+   "published_at": "2026-10-30T10:16:04Z",
+   "text": "Dream, which is training AI world models on US building data to automate construction design and engineering, emerges from stealth with a $17M seed led by a16z. Andy Alder and Arjun Mather were Stanford roommates who both studied computer science before spending a decade at Palantir.",
    "via": "Techmeme"
   }
  ],
