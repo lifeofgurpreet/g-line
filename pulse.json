@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-30T22:56:25Z",
+ "generated_at": "2026-10-30T23:28:48Z",
  "items": [
   {
    "title": "Binance says it has reserved $6.34B+ in company funds, including $5B already held in impacted token…",
@@ -17,7 +17,7 @@
    "published_at": "2026-10-30T17:29:07Z",
    "text": "We’re renaming our Max plans: Max 5x → Max Max 20x → Ultra Max is still $100/month, and Ultra is still $200. If you’re a subscriber, there’s nothing you need to do. We’re also removing the 5-hour limit for verified Ultra accounts, starting today with most existing…",
    "author_name": "Claude",
-   "likes": 22050,
+   "likes": 22659,
    "story": "Anthropic renames its $100 per month Max 5x plan as Max and the $200 per month Max 20x plan as Ultra, and removes the 5-hour limit for verified Ultra accounts"
   },
   {
@@ -28,21 +28,31 @@
    "text": "Added permissions.blockWritesOutsideWorkingDirectories: Write, Edit and NotebookEdit refuse paths outside the working directories in every permission mode · Added an optional groups list to Claude apps gateway upstreams: only developers in the listed IdP groups are sent to that upstream, on failover too · Added guardrail_trace to Claude apps gateway Bedrock upstreams, to log which Amazon Bedrock guardrail filter fired on a request, without the matched text · Added idle compaction to VS Code and Claude Desktop's Code tab: a 200K+ token conversation left idle is summarized, and the summary is u…"
   },
   {
+   "title": "Companies like Microsoft, Meta, Google, Amazon, SpaceX, Oracle & Nvidia have racked up $3 trillion…",
+   "url": "https://x.com/SenSanders/status/2116267455999820145",
+   "source": "𝕏 @SenSanders",
+   "published_at": "2026-10-30T20:34:14Z",
+   "text": "Companies like Microsoft, Meta, Google, Amazon, SpaceX, Oracle & Nvidia have racked up $3 trillion in debt on a high-stakes gamble on AI. Big Tech Oligarchs: If your AI bet fails, don’t come begging to taxpayers. You won’t be bailed out — period. End of Discussion.",
+   "author_name": "Sen. Bernie Sanders",
+   "likes": 5214,
+   "story": "Microsoft, Alphabet, Amazon, Meta, and Oracle returned just 9.3% of cash to shareholders in the first three quarters of 2026, a 15-year low amid AI spending"
+  },
+  {
    "title": "Yesterday's earnings call with Reddit's CEO will be referenced for years to come. Reddit, $RDDT, is…",
    "url": "https://x.com/KobeissiLetter/status/2116191185677246814",
    "source": "𝕏 @KobeissiLetter",
    "published_at": "2026-10-30T15:31:10Z",
    "text": "Yesterday's earnings call with Reddit's CEO will be referenced for years to come. Reddit, $RDDT, is now down -42% in 8 trading days. AI has disrupted search, and the internet more broadly, forever. Our thoughts on this are included below.",
    "author_name": "The Kobeissi Letter",
-   "likes": 5967,
+   "likes": 6166,
    "story": "Reddit closed down 29.27% on Friday, the worst drop since becoming a public company in 2024, after it forecast weak Q4 revenue"
   },
   {
-   "title": "Microsoft, Alphabet, Amazon, Meta, and Oracle returned just 9.3% of cash to shareholders in the fir…",
-   "url": "https://www.reuters.com/legal/transactional/big-tech-returns-smallest-share-cash-shareholders-15-years-given-ai-spending-2026-10-30/",
-   "source": "Patturaja Murugaboopathy /…",
-   "published_at": "2026-10-30T19:26:27Z",
-   "text": "Microsoft, Alphabet, Amazon, Meta, and Oracle returned just 9.3% of cash to shareholders in the first three quarters of 2026, a 15-year low amid AI spending. The biggest US technology companies generated record amounts of cash in the first nine months of 2026, yet returned the smallest share …",
+   "title": "Google says its Suncatcher prototype data center satellite is online after an October 1 launch, wit…",
+   "url": "https://techcrunch.com/2026/10/30/googles-first-data-center-satellite-is-online-and-writing-poetry/",
+   "source": "Tim Fernholz / TechCrunch",
+   "published_at": "2026-10-30T18:41:22Z",
+   "text": "Google says its Suncatcher prototype data center satellite is online after an October 1 launch, with Gemma 4 generating a haiku about being in space. Google Suncatcher's prototype space data center is online and communicating with the ground after launching earlier this month alongside …",
    "via": "Techmeme"
   },
   {
@@ -50,19 +60,19 @@
    "url": "https://newsletter.signoz.io/p/ai-isnt-replacing-sres-its-deskilling",
    "source": "Hacker News",
    "published_at": "2026-10-30T15:52:18Z",
-   "text": "459 points and 335 comments on Hacker News.",
-   "points": 459,
+   "text": "466 points and 345 comments on Hacker News.",
+   "points": 466,
    "discussion": "https://news.ycombinator.com/item?id=50305693"
   },
   {
-   "title": "ANTHROPIC IS CRACKING DOWN ON VIDEO GAME REWRITES 🚨 Claude Code picked up a new rule around Oct 27,…",
-   "url": "https://x.com/chasmmmmmmmmmmm/status/2116062991686721968",
-   "source": "𝕏 @chasmmmmmmmmmmm",
-   "published_at": "2026-10-30T07:01:46Z",
-   "text": "ANTHROPIC IS CRACKING DOWN ON VIDEO GAME REWRITES 🚨 Claude Code picked up a new rule around Oct 27, sent from Anthropic’s servers under a flag called \"tengu_heron_brook\". There’s no setting to turn it off. The full rule: “Do build original games, games in a genre, and games…",
-   "author_name": "chasm",
-   "likes": 7627,
-   "story": "Another reason to own your own compute. Your account may get banned in a sneaky update."
+   "title": "Seems token recovery already began. Another little detail in addition to the effort described, user…",
+   "url": "https://x.com/cz_binance/status/2116137390180065546",
+   "source": "𝕏 @cz_binance",
+   "published_at": "2026-10-30T11:57:24Z",
+   "text": "Seems token recovery already began. Another little detail in addition to the effort described, users pay trading fees on Binance in the coins they trade, so Binance's naturally accumulates all tokens they list. Your funds are SAFU!",
+   "author_name": "CZ 🔶 BNB",
+   "likes": 6863,
+   "story": "TRM Labs attributes the Binance hack to North Korea-based TraderTraitor, which drained ~$6.36B from Binance wallets across 10 blockchains, mostly in ~20 minutes"
   },
   {
    "title": "Expanding our partnership with GSA to bring Claude to all levels of government",
@@ -79,12 +89,22 @@
    "text": "I've written before about how November 2025 was an inflection point for coding agents - the point where Opus 4.5 and GPT-5.1 crossed a tipping point that meant their respective coding agents became reliable daily drivers for software engineers. I think we've reached a new inflection point in October 2026, and this time it's for vibe coding computer games . Tree Appreciator Emberwick Battle Drones Pumpkin Farmer, aka Quarter Sun Cove Four times as insulting What happens if someone actually puts the work in? You should build a game!"
   },
   {
-   "title": "Google says its Suncatcher prototype data center satellite is online after an October 1 launch, wit…",
-   "url": "https://techcrunch.com/2026/10/30/googles-first-data-center-satellite-is-online-and-writing-poetry/",
-   "source": "Tim Fernholz / TechCrunch",
-   "published_at": "2026-10-30T18:41:22Z",
-   "text": "Google says its Suncatcher prototype data center satellite is online after an October 1 launch, with Gemma 4 generating a haiku about being in space. Google Suncatcher's prototype space data center is online and communicating with the ground after launching earlier this month alongside …",
+   "title": "CrowdStrike: China-linked hackers used AI tool ARTEX with a DeepSeek LLM and another model to targe…",
+   "url": "https://www.nbcnews.com/tech/security/china-linked-hackers-used-ai-target-200-organizations-crowdstrike-says-rcna606343",
+   "source": "Kevin Collier / NBC News",
+   "published_at": "2026-10-30T04:02:33Z",
+   "text": "CrowdStrike: China-linked hackers used AI tool ARTEX with a DeepSeek LLM and another model to target 200+ organizations in 11 days, compromising at least nine. Chinese state-linked hackers targeted more than 200 organizations in just 11 days, using AI to attack governments and businesses worldwide, according to CrowdStrike.",
    "via": "Techmeme"
+  },
+  {
+   "title": "ANTHROPIC IS CRACKING DOWN ON VIDEO GAME REWRITES 🚨 Claude Code picked up a new rule around Oct 27,…",
+   "url": "https://x.com/chasmmmmmmmmmmm/status/2116062991686721968",
+   "source": "𝕏 @chasmmmmmmmmmmm",
+   "published_at": "2026-10-30T07:01:46Z",
+   "text": "ANTHROPIC IS CRACKING DOWN ON VIDEO GAME REWRITES 🚨 Claude Code picked up a new rule around Oct 27, sent from Anthropic’s servers under a flag called \"tengu_heron_brook\". There’s no setting to turn it off. The full rule: “Do build original games, games in a genre, and games…",
+   "author_name": "chasm",
+   "likes": 7696,
+   "story": "Another reason to own your own compute. Your account may get banned in a sneaky update."
   },
   {
    "title": "Backdoors in official Claude Code extensions",
@@ -96,11 +116,11 @@
    "discussion": "https://news.ycombinator.com/item?id=50302334"
   },
   {
-   "title": "CrowdStrike: China-linked hackers used AI tool ARTEX with a DeepSeek LLM and another model to targe…",
-   "url": "https://www.nbcnews.com/tech/security/china-linked-hackers-used-ai-target-200-organizations-crowdstrike-says-rcna606343",
-   "source": "Kevin Collier / NBC News",
-   "published_at": "2026-10-30T04:02:33Z",
-   "text": "CrowdStrike: China-linked hackers used AI tool ARTEX with a DeepSeek LLM and another model to target 200+ organizations in 11 days, compromising at least nine. Chinese state-linked hackers targeted more than 200 organizations in just 11 days, using AI to attack governments and businesses worldwide, according to CrowdStrike.",
+   "title": "OpenAI, Google, Microsoft, and Anthropic say they will adopt a new standard that publishers can use…",
+   "url": "https://www.theverge.com/tech/1023763/openai-google-microsoft-ai-scraping-standard-opt-out",
+   "source": "Emma Roth / The Verge",
+   "published_at": "2026-10-30T21:05:53Z",
+   "text": "OpenAI, Google, Microsoft, and Anthropic say they will adopt a new standard that publishers can use to opt out of being scraped by AI across multiple crawlers. The new control will allow publishers to apply their AI training preferences across multiple crawlers.",
    "via": "Techmeme"
   },
   {
@@ -108,24 +128,9 @@
    "url": "https://phorion.io/blog/offical-claude-code-vsx-compromise/",
    "source": "Hacker News",
    "published_at": "2026-10-30T07:09:12Z",
-   "text": "696 points and 437 comments on Hacker News.",
-   "points": 696,
+   "text": "714 points and 445 comments on Hacker News.",
+   "points": 714,
    "discussion": "https://news.ycombinator.com/item?id=50300683"
-  },
-  {
-   "title": "AI for Science expands to foundations and institutions",
-   "url": "https://www.anthropic.com/news/ai-for-science-expands-foundations-research-institutions",
-   "source": "Anthropic",
-   "published_at": "2026-10-29T04:43:29Z",
-   "text": "We’re highlighting 20 scientific foundations, institutions, and research groups from around the world that we’ve partnered with in an expansion of our AI for Science program."
-  },
-  {
-   "title": "OpenAI, Google, Microsoft, and Anthropic say they will adopt a new standard that publishers can use…",
-   "url": "https://www.theverge.com/tech/1023763/openai-google-microsoft-ai-scraping-standard-opt-out",
-   "source": "Emma Roth / The Verge",
-   "published_at": "2026-10-30T21:05:53Z",
-   "text": "OpenAI, Google, Microsoft, and Anthropic say they will adopt a new standard that publishers can use to opt out of being scraped by AI across multiple crawlers. The new control will allow publishers to apply their AI training preferences across multiple crawlers.",
-   "via": "Techmeme"
   }
  ],
  "sources": "curated, Techmeme, X (found via Techmeme, Reddit, the Internet Archive), Claude Code releases, Anthropic, Hacker News, Simon Willison"
