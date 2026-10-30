@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-30T11:36:04Z",
+ "generated_at": "2026-10-30T12:08:40Z",
  "items": [
   {
    "title": "Alphabet's stock falls 12.3%, wiping a record $500B from its market cap, after reporting negative c…",
@@ -17,7 +17,7 @@
    "published_at": "2026-10-29T14:21:24Z",
    "text": "Today, we release the weights of a new and improved Le Chonk, advancing the open frontier for agentic coding and cybersecurity. 💻 Built to build: Le Chonk ranks #1 on @cognition’s FrontierCode among open models, and sets a new benchmark for Pareto efficiency on…",
    "author_name": "Mistral AI",
-   "likes": 5692,
+   "likes": 5721,
    "story": "Mistral releases the weights for Mistral Large 4, or Le Chonk, and says it rivals top open models such as GLM-5.3 on the Artificial Analysis Coding Agent Index"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-10-29T21:08:59Z",
    "text": "Roblox just released a letter to shareholders. - Over 80% of the top 100 Roblox games now use AI. - Steal an Egg and Huss Valley are almost 100% AI generated. - More than 70,000 games have been AI generated with Roblox Build.",
    "author_name": "KreekCraft",
-   "likes": 10039,
+   "likes": 10142,
    "story": "Roblox reports Q3 bookings down 12% YoY to $1.7B, vs. $1.63B est., and DAUs down 9% to 138M, vs. 145.8M est.; RBLX drops 16%+ after hours"
   },
   {
@@ -46,13 +46,13 @@
    "via": "Techmeme"
   },
   {
-   "title": "We ran AI agent swarms in Minecraft and Mindustry",
-   "url": "https://labs.ycombinator.com/projects/games/index.html",
+   "title": "Backdoors in official Claude Code extensions",
+   "url": "https://cyberplace.social/@GossiTheDog/117528831681803563",
    "source": "Hacker News",
-   "published_at": "2026-10-29T21:40:28Z",
-   "text": "307 points and 113 comments on Hacker News.",
-   "points": 307,
-   "discussion": "https://news.ycombinator.com/item?id=50296486"
+   "published_at": "2026-10-30T11:05:53Z",
+   "text": "157 points and 24 comments on Hacker News.",
+   "points": 157,
+   "discussion": "https://news.ycombinator.com/item?id=50302334"
   },
   {
    "title": "Customer B has been revealed. Anthropic is SpaceX's largest single customer, overtaking NASA and th…",
@@ -61,7 +61,7 @@
    "published_at": "2026-10-29T20:04:22Z",
    "text": "Customer B has been revealed. Anthropic is SpaceX's largest single customer, overtaking NASA and the Pentagon for the first time. 34.5% of SpaceX's revenue last quarter was from compute-as-a-service to Dario Amodei, and Anthropic has committed to spending up to $120.5 billion…",
    "author_name": "Andrew Curran",
-   "likes": 1423,
+   "likes": 1443,
    "story": "Source: Anthropic is “Customer B” cited by SpaceX in a filing as its single largest customer accounting for 34.5% of Q3 revenue, surpassing the US government"
   },
   {
@@ -87,13 +87,13 @@
    "via": "Techmeme"
   },
   {
-   "title": "LLM Voice",
-   "url": "https://martinfowler.com/bliki/LLM-Voice.html",
+   "title": "Anthropic hacked to deliver remote access trojan",
+   "url": "https://doublepulsar.com/anthropic-hacked-to-deliver-remote-access-trojan-to-claude-developer-laptops-worldwide-1148a92baae2",
    "source": "Hacker News",
-   "published_at": "2026-10-29T14:57:55Z",
-   "text": "499 points and 262 comments on Hacker News.",
-   "points": 499,
-   "discussion": "https://news.ycombinator.com/item?id=50290177"
+   "published_at": "2026-10-30T10:22:51Z",
+   "text": "128 points and 19 comments on Hacker News.",
+   "points": 128,
+   "discussion": "https://news.ycombinator.com/item?id=50301983"
   },
   {
    "title": "Dream, which is training AI world models on US building data to automate construction design and en…",
@@ -104,13 +104,13 @@
    "via": "Techmeme"
   },
   {
-   "title": "A tiny world model running games on a Raspberry Pi Pico 2 W",
-   "url": "https://github.com/SheepSeb/tinyworldformer",
+   "title": "We ran AI agent swarms in Minecraft and Mindustry",
+   "url": "https://labs.ycombinator.com/projects/games/index.html",
    "source": "Hacker News",
-   "published_at": "2026-10-29T20:32:28Z",
-   "text": "229 points and 15 comments on Hacker News.",
-   "points": 229,
-   "discussion": "https://news.ycombinator.com/item?id=50295450"
+   "published_at": "2026-10-29T21:40:28Z",
+   "text": "311 points and 116 comments on Hacker News.",
+   "points": 311,
+   "discussion": "https://news.ycombinator.com/item?id=50296486"
   },
   {
    "title": "AI for Science expands to foundations and institutions",
@@ -120,11 +120,11 @@
    "text": "We’re highlighting 20 scientific foundations, institutions, and research groups from around the world that we’ve partnered with in an expansion of our AI for Science program."
   },
   {
-   "title": "Ravical, whose AI-powered platform helps accounting and tax firms manage their operations, raised a…",
-   "url": "https://tech.eu/2026/10/29/ravical-raises-17m-to-break-the-link-between-accounting-firms-growth-and-hiring/",
-   "source": "Tamara Djurickovic / Tech.eu",
-   "published_at": "2026-10-30T10:11:37Z",
-   "text": "Ravical, whose AI-powered platform helps accounting and tax firms manage their operations, raised a $17M seed led by MMC, bringing its total funding to $25M. As AI transforms the accounting industry, Ravical aims to help firms turn individual expertise into shared knowledge …",
+   "title": "The UK CMA opens a probe into whether Meta imposed exploitative terms on publishers and advertisers…",
+   "url": "https://www.reuters.com/world/europe/uks-cma-opens-investigation-into-metas-terms-publishers-advertisers-2026-10-30/",
+   "source": "Reuters",
+   "published_at": "2026-10-30T11:40:59Z",
+   "text": "The UK CMA opens a probe into whether Meta imposed exploitative terms on publishers and advertisers to use their content to develop its AI and other services",
    "via": "Techmeme"
   }
  ],
