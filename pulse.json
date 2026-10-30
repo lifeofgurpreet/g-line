@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-30T07:49:54Z",
+ "generated_at": "2026-10-30T08:22:29Z",
  "items": [
   {
    "title": "Reddit plans to require users to log in to fully access the site in response to AI scraping, and to…",
@@ -17,7 +17,7 @@
    "published_at": "2026-10-29T14:21:24Z",
    "text": "Today, we release the weights of a new and improved Le Chonk, advancing the open frontier for agentic coding and cybersecurity. 💻 Built to build: Le Chonk ranks #1 on @cognition’s FrontierCode among open models, and sets a new benchmark for Pareto efficiency on…",
    "author_name": "Mistral AI",
-   "likes": 5454,
+   "likes": 5495,
    "story": "Mistral releases the weights for Mistral Large 4, or Le Chonk, and says it rivals top open models such as GLM-5.3 on the Artificial Analysis Coding Agent Index"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-10-29T21:08:59Z",
    "text": "Roblox just released a letter to shareholders. - Over 80% of the top 100 Roblox games now use AI. - Steal an Egg and Huss Valley are almost 100% AI generated. - More than 70,000 games have been AI generated with Roblox Build.",
    "author_name": "KreekCraft",
-   "likes": 9205,
+   "likes": 9368,
    "story": "Roblox reports Q3 bookings down 12% YoY to $1.7B, vs. $1.63B est., and DAUs down 9% to 138M, vs. 145.8M est.; RBLX drops 16%+ after hours"
   },
   {
@@ -50,8 +50,8 @@
    "url": "https://labs.ycombinator.com/projects/games/index.html",
    "source": "Hacker News",
    "published_at": "2026-10-29T21:40:28Z",
-   "text": "257 points and 84 comments on Hacker News.",
-   "points": 257,
+   "text": "263 points and 89 comments on Hacker News.",
+   "points": 263,
    "discussion": "https://news.ycombinator.com/item?id=50296486"
   },
   {
@@ -61,7 +61,7 @@
    "published_at": "2026-10-29T20:04:22Z",
    "text": "Customer B has been revealed. Anthropic is SpaceX's largest single customer, overtaking NASA and the Pentagon for the first time. 34.5% of SpaceX's revenue last quarter was from compute-as-a-service to Dario Amodei, and Anthropic has committed to spending up to $120.5 billion…",
    "author_name": "Andrew Curran",
-   "likes": 1328,
+   "likes": 1340,
    "story": "Source: Anthropic is “Customer B” cited by SpaceX in a filing as its single largest customer accounting for 34.5% of Q3 revenue, surpassing the US government"
   },
   {
@@ -91,8 +91,8 @@
    "url": "https://martinfowler.com/bliki/LLM-Voice.html",
    "source": "Hacker News",
    "published_at": "2026-10-29T14:57:55Z",
-   "text": "441 points and 239 comments on Hacker News.",
-   "points": 441,
+   "text": "454 points and 244 comments on Hacker News.",
+   "points": 454,
    "discussion": "https://news.ycombinator.com/item?id=50290177"
   },
   {
@@ -108,8 +108,8 @@
    "url": "https://github.com/SheepSeb/tinyworldformer",
    "source": "Hacker News",
    "published_at": "2026-10-29T20:32:28Z",
-   "text": "193 points and 12 comments on Hacker News.",
-   "points": 193,
+   "text": "195 points and 13 comments on Hacker News.",
+   "points": 195,
    "discussion": "https://news.ycombinator.com/item?id=50295450"
   },
   {
@@ -124,7 +124,7 @@
    "url": "https://www.wired.com/story/software-verification-is-the-hot-new-answer-to-the-ai-safety-crisis/",
    "source": "Paresh Dave / Wired",
    "published_at": "2026-10-30T06:31:09Z",
-   "text": "How a wave of startups are betting on AI to make formal software verification practical and essential, including &Truth, which launches with a $70M seed. A new startup called &Truth is joining the race to automate formal verification, a painstaking process that uses math to prove software works as intended.",
+   "text": "How a wave of startups are betting on AI to make formal software verification practical and essential, including &Truth, which launches with a $70M seed",
    "via": "Techmeme"
   }
  ],
