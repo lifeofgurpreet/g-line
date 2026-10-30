@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-30T01:22:11Z",
+ "generated_at": "2026-10-30T01:55:36Z",
  "items": [
   {
    "title": "Alphabet's stock falls 12.3%, wiping a record $500B from its market cap, after reporting negative c…",
@@ -17,7 +17,7 @@
    "published_at": "2026-10-29T14:21:24Z",
    "text": "Today, we release the weights of a new and improved Le Chonk, advancing the open frontier for agentic coding and cybersecurity. 💻 Built to build: Le Chonk ranks #1 on @cognition’s FrontierCode among open models, and sets a new benchmark for Pareto efficiency on…",
    "author_name": "Mistral AI",
-   "likes": 5044,
+   "likes": 5081,
    "story": "Mistral releases the weights for Mistral Large 4, or Le Chonk, and says it rivals top open models such as GLM-5.3 on the Artificial Analysis Coding Agent Index"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-10-29T21:08:59Z",
    "text": "Roblox just released a letter to shareholders. - Over 80% of the top 100 Roblox games now use AI. - Steal an Egg and Huss Valley are almost 100% AI generated. - More than 70,000 games have been AI generated with Roblox Build.",
    "author_name": "KreekCraft",
-   "likes": 6879,
+   "likes": 7209,
    "story": "Roblox reports Q3 bookings down 12% YoY to $1.7B, vs. $1.63B est., and DAUs down 9% to 138M, vs. 145.8M est.; RBLX drops 16%+ after hours"
   },
   {
@@ -50,19 +50,19 @@
    "url": "https://labs.ycombinator.com/projects/games/index.html",
    "source": "Hacker News",
    "published_at": "2026-10-29T21:40:28Z",
-   "text": "146 points and 55 comments on Hacker News.",
-   "points": 146,
+   "text": "160 points and 62 comments on Hacker News.",
+   "points": 160,
    "discussion": "https://news.ycombinator.com/item?id=50296486"
   },
   {
-   "title": "Customer B has been revealed. Anthropic is SpaceX's largest single customer, overtaking NASA and th…",
-   "url": "https://x.com/AndrewCurran_/status/2115897550914158832",
-   "source": "𝕏 @AndrewCurran_",
-   "published_at": "2026-10-29T20:04:22Z",
-   "text": "Customer B has been revealed. Anthropic is SpaceX's largest single customer, overtaking NASA and the Pentagon for the first time. 34.5% of SpaceX's revenue last quarter was from compute-as-a-service to Dario Amodei, and Anthropic has committed to spending up to $120.5 billion…",
-   "author_name": "Andrew Curran",
-   "likes": 971,
-   "story": "Source: Anthropic is “Customer B” cited by SpaceX in a filing as its single largest customer accounting for 34.5% of Q3 revenue, surpassing the US government"
+   "title": "Another day, another Laura Loomer exclusive that has been vindicated 6 months later. In May, I brok…",
+   "url": "https://x.com/LauraLoomer/status/2115818899308442039",
+   "source": "𝕏 @LauraLoomer",
+   "published_at": "2026-10-29T14:51:50Z",
+   "text": "Another day, another Laura Loomer exclusive that has been vindicated 6 months later. In May, I broke a story about how Nvidia CEO Jensen Huang posed a massive national security risk and I showed how he’s been compromised by China and the CCP. I reported how NVIDIA @nvidia…",
+   "author_name": "Laura Loomer",
+   "likes": 5350,
+   "story": "US officials believe Megaspeed executive Alice Huang, who has a close relationship with Jensen Huang, is a Chinese asset; Trump was briefed and took no action"
   },
   {
    "title": "Expanding our partnership with GSA to bring Claude to all levels of government",
@@ -87,22 +87,22 @@
    "via": "Techmeme"
   },
   {
-   "title": "Another day, another Laura Loomer exclusive that has been vindicated 6 months later. In May, I brok…",
-   "url": "https://x.com/LauraLoomer/status/2115818899308442039",
-   "source": "𝕏 @LauraLoomer",
-   "published_at": "2026-10-29T14:51:50Z",
-   "text": "Another day, another Laura Loomer exclusive that has been vindicated 6 months later. In May, I broke a story about how Nvidia CEO Jensen Huang posed a massive national security risk and I showed how he’s been compromised by China and the CCP. I reported how NVIDIA @nvidia…",
-   "author_name": "Laura Loomer",
-   "likes": 5229,
-   "story": "US officials believe Megaspeed executive Alice Huang, who has a close relationship with Jensen Huang, is a Chinese asset; Trump was briefed and took no action"
+   "title": "Customer B has been revealed. Anthropic is SpaceX's largest single customer, overtaking NASA and th…",
+   "url": "https://x.com/AndrewCurran_/status/2115897550914158832",
+   "source": "𝕏 @AndrewCurran_",
+   "published_at": "2026-10-29T20:04:22Z",
+   "text": "Customer B has been revealed. Anthropic is SpaceX's largest single customer, overtaking NASA and the Pentagon for the first time. 34.5% of SpaceX's revenue last quarter was from compute-as-a-service to Dario Amodei, and Anthropic has committed to spending up to $120.5 billion…",
+   "author_name": "Andrew Curran",
+   "likes": 1015,
+   "story": "Source: Anthropic is “Customer B” cited by SpaceX in a filing as its single largest customer accounting for 34.5% of Q3 revenue, surpassing the US government"
   },
   {
    "title": "Alleged Chinese spy had 'close relationship' with Nvidia boss Jensen Huang",
    "url": "https://nypost.com/2026/10/29/business/alleged-chinese-spy-had-close-relationship-with-nvidia-boss-jensen-huang-report/",
    "source": "Hacker News",
    "published_at": "2026-10-29T17:43:48Z",
-   "text": "283 points and 196 comments on Hacker News.",
-   "points": 283,
+   "text": "287 points and 199 comments on Hacker News.",
+   "points": 287,
    "discussion": "https://news.ycombinator.com/item?id=50293047"
   },
   {
@@ -118,8 +118,8 @@
    "url": "https://github.com/SheepSeb/tinyworldformer",
    "source": "Hacker News",
    "published_at": "2026-10-29T20:32:28Z",
-   "text": "117 points and 8 comments on Hacker News.",
-   "points": 117,
+   "text": "130 points and 8 comments on Hacker News.",
+   "points": 130,
    "discussion": "https://news.ycombinator.com/item?id=50295450"
   },
   {
