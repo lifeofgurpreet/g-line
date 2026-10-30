@@ -1,13 +1,13 @@
 {
  "schema": 1,
- "generated_at": "2026-10-30T11:03:57Z",
+ "generated_at": "2026-10-30T11:36:04Z",
  "items": [
   {
-   "title": "Reddit plans to require users to log in to fully access the site in response to AI scraping, and to…",
-   "url": "https://www.axios.com/2026/10/29/reddit-logged-in-ai-search-incognito",
-   "source": "Sara Fischer / Axios",
-   "published_at": "2026-10-29T20:22:24Z",
-   "text": "Reddit plans to require users to log in to fully access the site in response to AI scraping, and to begin tests in select markets outside the US this quarter. Reddit on Thursday said it's moving to become a primarily logged-in experience, marking one of the most significant shifts in its 21-year history.",
+   "title": "Alphabet's stock falls 12.3%, wiping a record $500B from its market cap, after reporting negative c…",
+   "url": "https://www.ft.com/content/eb386156-5bf9-4edd-80f2-803fdee1e33d?accessToken=zwAAAaIi1GfplNO5KUuRDu5BO9O93gVp9IU5udPuhsS2H-RGftOPGJwI3yiK_9PrOGFWW_lO3dOA8oA_3uHjPdPy3p88MpBOh9O7wlVDACXyqwE.MEUCIQCTfptZcpPISYntlhh1mjoa3g6HxEZajv0OSQGMtt_QEQIgSVZwVMNDn0Bf_KARrNJmOPbLhMU516inUsUkdvr2i-0&segmentId=7d4bcc2e-e664-92ba-62e3-5590579f1902",
+   "source": "Stephen Morris / Financial…",
+   "published_at": "2026-10-29T16:26:15Z",
+   "text": "Alphabet's stock falls 12.3%, wiping a record $500B from its market cap, after reporting negative cash flow amid its AI spending; the Nasdaq falls 1.4%. Google owner admits ‘AI mode’ has hurt traditional search as sales and profits undershoot expectations",
    "via": "Techmeme"
   },
   {
@@ -17,7 +17,7 @@
    "published_at": "2026-10-29T14:21:24Z",
    "text": "Today, we release the weights of a new and improved Le Chonk, advancing the open frontier for agentic coding and cybersecurity. 💻 Built to build: Le Chonk ranks #1 on @cognition’s FrontierCode among open models, and sets a new benchmark for Pareto efficiency on…",
    "author_name": "Mistral AI",
-   "likes": 5658,
+   "likes": 5692,
    "story": "Mistral releases the weights for Mistral Large 4, or Le Chonk, and says it rivals top open models such as GLM-5.3 on the Artificial Analysis Coding Agent Index"
   },
   {
@@ -34,15 +34,15 @@
    "published_at": "2026-10-29T21:08:59Z",
    "text": "Roblox just released a letter to shareholders. - Over 80% of the top 100 Roblox games now use AI. - Steal an Egg and Huss Valley are almost 100% AI generated. - More than 70,000 games have been AI generated with Roblox Build.",
    "author_name": "KreekCraft",
-   "likes": 9930,
+   "likes": 10039,
    "story": "Roblox reports Q3 bookings down 12% YoY to $1.7B, vs. $1.63B est., and DAUs down 9% to 138M, vs. 145.8M est.; RBLX drops 16%+ after hours"
   },
   {
-   "title": "Alphabet's stock falls 12.3%, wiping a record $500B from its market cap, after reporting negative c…",
-   "url": "https://www.ft.com/content/eb386156-5bf9-4edd-80f2-803fdee1e33d?accessToken=zwAAAaIi1GfplNO5KUuRDu5BO9O93gVp9IU5udPuhsS2H-RGftOPGJwI3yiK_9PrOGFWW_lO3dOA8oA_3uHjPdPy3p88MpBOh9O7wlVDACXyqwE.MEUCIQCTfptZcpPISYntlhh1mjoa3g6HxEZajv0OSQGMtt_QEQIgSVZwVMNDn0Bf_KARrNJmOPbLhMU516inUsUkdvr2i-0&segmentId=7d4bcc2e-e664-92ba-62e3-5590579f1902",
-   "source": "Stephen Morris / Financial…",
-   "published_at": "2026-10-29T16:26:15Z",
-   "text": "Alphabet's stock falls 12.3%, wiping a record $500B from its market cap, after reporting negative cash flow amid its AI spending; the Nasdaq falls 1.4%. Google owner admits ‘AI mode’ has hurt traditional search as sales and profits undershoot expectations",
+   "title": "Sources: Nvidia is in talks to provide Nscale with billions of dollars in credit guarantees for deb…",
+   "url": "https://www.theinformation.com/articles/nvidia-talks-provide-billions-credit-support-cloud-providers-45-billion-anthropic-deal",
+   "source": "Phoebe Liu / The Information",
+   "published_at": "2026-10-29T22:56:09Z",
+   "text": "Sources: Nvidia is in talks to provide Nscale with billions of dollars in credit guarantees for debt to develop a 460MW data center that Anthropic plans to use. Nvidia is in talks to provide Nscale, a young AI cloud provider, with billions of dollars in credit guarantees for debt to develop …",
    "via": "Techmeme"
   },
   {
@@ -50,8 +50,8 @@
    "url": "https://labs.ycombinator.com/projects/games/index.html",
    "source": "Hacker News",
    "published_at": "2026-10-29T21:40:28Z",
-   "text": "300 points and 110 comments on Hacker News.",
-   "points": 300,
+   "text": "307 points and 113 comments on Hacker News.",
+   "points": 307,
    "discussion": "https://news.ycombinator.com/item?id=50296486"
   },
   {
@@ -61,7 +61,7 @@
    "published_at": "2026-10-29T20:04:22Z",
    "text": "Customer B has been revealed. Anthropic is SpaceX's largest single customer, overtaking NASA and the Pentagon for the first time. 34.5% of SpaceX's revenue last quarter was from compute-as-a-service to Dario Amodei, and Anthropic has committed to spending up to $120.5 billion…",
    "author_name": "Andrew Curran",
-   "likes": 1409,
+   "likes": 1423,
    "story": "Source: Anthropic is “Customer B” cited by SpaceX in a filing as its single largest customer accounting for 34.5% of Q3 revenue, surpassing the US government"
   },
   {
@@ -79,23 +79,6 @@
    "text": "I've written before about how November 2025 was an inflection point for coding agents - the point where Opus 4.5 and GPT-5.1 crossed a tipping point that meant their respective coding agents became reliable daily drivers for software engineers. I think we've reached a new inflection point in October 2026, and this time it's for vibe coding computer games . Tree Appreciator Emberwick Battle Drones Pumpkin Farmer, aka Quarter Sun Cove Four times as insulting What happens if someone actually puts the work in? You should build a game!"
   },
   {
-   "title": "Sources: Nvidia is in talks to provide Nscale with billions of dollars in credit guarantees for deb…",
-   "url": "https://www.theinformation.com/articles/nvidia-talks-provide-billions-credit-support-cloud-providers-45-billion-anthropic-deal",
-   "source": "Phoebe Liu / The Information",
-   "published_at": "2026-10-29T22:56:09Z",
-   "text": "Sources: Nvidia is in talks to provide Nscale with billions of dollars in credit guarantees for debt to develop a 460MW data center that Anthropic plans to use. Nvidia is in talks to provide Nscale, a young AI cloud provider, with billions of dollars in credit guarantees for debt to develop …",
-   "via": "Techmeme"
-  },
-  {
-   "title": "LLM Voice",
-   "url": "https://martinfowler.com/bliki/LLM-Voice.html",
-   "source": "Hacker News",
-   "published_at": "2026-10-29T14:57:55Z",
-   "text": "492 points and 259 comments on Hacker News.",
-   "points": 492,
-   "discussion": "https://news.ycombinator.com/item?id=50290177"
-  },
-  {
    "title": "CrowdStrike: China-linked hackers used AI tool ARTEX with a DeepSeek LLM and another model to targe…",
    "url": "https://www.nbcnews.com/tech/security/china-linked-hackers-used-ai-target-200-organizations-crowdstrike-says-rcna606343",
    "source": "Kevin Collier / NBC News",
@@ -104,12 +87,29 @@
    "via": "Techmeme"
   },
   {
+   "title": "LLM Voice",
+   "url": "https://martinfowler.com/bliki/LLM-Voice.html",
+   "source": "Hacker News",
+   "published_at": "2026-10-29T14:57:55Z",
+   "text": "499 points and 262 comments on Hacker News.",
+   "points": 499,
+   "discussion": "https://news.ycombinator.com/item?id=50290177"
+  },
+  {
+   "title": "Dream, which is training AI world models on US building data to automate construction design and en…",
+   "url": "https://techcrunch.com/2026/10/29/ex-palantir-execs-launch-dream-with-17m-from-a16z-to-build-ai-world-models-for-construction/",
+   "source": "Marina Temkin / TechCrunch",
+   "published_at": "2026-10-30T10:16:04Z",
+   "text": "Dream, which is training AI world models on US building data to automate construction design and engineering, emerges from stealth with a $17M seed led by a16z. Andy Alder and Arjun Mather were Stanford roommates who both studied computer science before spending a decade at Palantir.",
+   "via": "Techmeme"
+  },
+  {
    "title": "A tiny world model running games on a Raspberry Pi Pico 2 W",
    "url": "https://github.com/SheepSeb/tinyworldformer",
    "source": "Hacker News",
    "published_at": "2026-10-29T20:32:28Z",
-   "text": "220 points and 15 comments on Hacker News.",
-   "points": 220,
+   "text": "229 points and 15 comments on Hacker News.",
+   "points": 229,
    "discussion": "https://news.ycombinator.com/item?id=50295450"
   },
   {
@@ -120,11 +120,11 @@
    "text": "We’re highlighting 20 scientific foundations, institutions, and research groups from around the world that we’ve partnered with in an expansion of our AI for Science program."
   },
   {
-   "title": "Dream, which is training AI world models on US building data to automate construction design and en…",
-   "url": "https://techcrunch.com/2026/10/29/ex-palantir-execs-launch-dream-with-17m-from-a16z-to-build-ai-world-models-for-construction/",
-   "source": "Marina Temkin / TechCrunch",
-   "published_at": "2026-10-30T10:16:04Z",
-   "text": "Dream, which is training AI world models on US building data to automate construction design and engineering, emerges from stealth with a $17M seed led by a16z. Andy Alder and Arjun Mather were Stanford roommates who both studied computer science before spending a decade at Palantir.",
+   "title": "Ravical, whose AI-powered platform helps accounting and tax firms manage their operations, raised a…",
+   "url": "https://tech.eu/2026/10/29/ravical-raises-17m-to-break-the-link-between-accounting-firms-growth-and-hiring/",
+   "source": "Tamara Djurickovic / Tech.eu",
+   "published_at": "2026-10-30T10:11:37Z",
+   "text": "Ravical, whose AI-powered platform helps accounting and tax firms manage their operations, raised a $17M seed led by MMC, bringing its total funding to $25M. As AI transforms the accounting industry, Ravical aims to help firms turn individual expertise into shared knowledge …",
    "via": "Techmeme"
   }
  ],
