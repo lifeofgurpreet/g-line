@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-31T13:24:07Z",
+ "generated_at": "2026-10-31T13:57:11Z",
  "items": [
   {
    "title": "Sources: OpenAI has secured ~$11B in commitments for its latest funding round, less than half its i…",
@@ -17,7 +17,7 @@
    "published_at": "2026-10-30T17:29:07Z",
    "text": "We’re renaming our Max plans: Max 5x → Max Max 20x → Ultra Max is still $100/month, and Ultra is still $200. If you’re a subscriber, there’s nothing you need to do. We’re also removing the 5-hour limit for verified Ultra accounts, starting today with most existing…",
    "author_name": "Claude",
-   "likes": 29473,
+   "likes": 29594,
    "story": "Anthropic renames its $100 per month Max 5x plan as Max and the $200 per month Max 20x plan as Ultra, and removes the 5-hour limit for verified Ultra accounts"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-10-30T07:46:39Z",
    "text": "We identified a security incident affecting a modified Claude Code VS Code extension accessed through our Cursor IDE extension marketplace, impacting at most 5,000 users. This malicious version of the extension was not developed by Anthropic. It does not impact other extensions…",
    "author_name": "Cursor",
-   "likes": 6856,
+   "likes": 6861,
    "story": "Anthropic says a malicious actor used access to Cursor's marketplace to publish a “tampered” copy of the Claude Code extension, which it didn't build or publish"
   },
   {
@@ -50,8 +50,8 @@
    "url": "https://www.parameter.ai/labs/we-found-a-gap-at-openai",
    "source": "Hacker News",
    "published_at": "2026-10-31T10:30:11Z",
-   "text": "71 points and 31 comments on Hacker News.",
-   "points": 71,
+   "text": "96 points and 38 comments on Hacker News.",
+   "points": 96,
    "discussion": "https://news.ycombinator.com/item?id=50314699"
   },
   {
@@ -61,7 +61,7 @@
    "published_at": "2026-10-30T20:34:14Z",
    "text": "Companies like Microsoft, Meta, Google, Amazon, SpaceX, Oracle & Nvidia have racked up $3 trillion in debt on a high-stakes gamble on AI. Big Tech Oligarchs: If your AI bet fails, don’t come begging to taxpayers. You won’t be bailed out — period. End of Discussion.",
    "author_name": "Sen. Bernie Sanders",
-   "likes": 12606,
+   "likes": 12777,
    "story": "Alphabet, Meta, Microsoft, Amazon, and Oracle have a collective $3T+ in AI spending commitments over the coming years, including Alphabet's $1T and Meta's $800B"
   },
   {
@@ -70,13 +70,6 @@
    "source": "Anthropic",
    "published_at": "2026-10-29T17:09:08Z",
    "text": "Anthropic is an AI safety and research company that's working to build reliable, interpretable, and steerable AI systems."
-  },
-  {
-   "title": "The October inflection point for vibe game development",
-   "url": "https://simonwillison.net/2026/Oct/28/vibe-game-development/",
-   "source": "Simon Willison's weblog",
-   "published_at": "2026-10-28T13:55:15Z",
-   "text": "I've written before about how November 2025 was an inflection point for coding agents - the point where Opus 4.5 and GPT-5.1 crossed a tipping point that meant their respective coding agents became reliable daily drivers for software engineers. I think we've reached a new inflection point in October 2026, and this time it's for vibe coding computer games . Tree Appreciator Emberwick Battle Drones Pumpkin Farmer, aka Quarter Sun Cove Four times as insulting What happens if someone actually puts the work in? You should build a game!"
   },
   {
    "title": "John Ternus says Apple doesn't “want to ship AI for AI's sake” and that Tim Cook is “available to h…",
@@ -93,7 +86,7 @@
    "published_at": "2026-10-30T15:31:10Z",
    "text": "Yesterday's earnings call with Reddit's CEO will be referenced for years to come. Reddit, $RDDT, is now down -42% in 8 trading days. AI has disrupted search, and the internet more broadly, forever. Our thoughts on this are included below.",
    "author_name": "The Kobeissi Letter",
-   "likes": 8101,
+   "likes": 8145,
    "story": "Reddit closed down 29.27% on Friday, the worst drop since becoming a public company in 2024, after it forecast weak Q4 revenue"
   },
   {
@@ -112,7 +105,7 @@
    "published_at": "2026-10-30T11:57:24Z",
    "text": "Seems token recovery already began. Another little detail in addition to the effort described, users pay trading fees on Binance in the coins they trade, so Binance's naturally accumulates all tokens they list. Your funds are SAFU!",
    "author_name": "CZ 🔶 BNB",
-   "likes": 7782,
+   "likes": 7807,
    "story": "TRM Labs attributes the Binance hack to North Korea-based TraderTraitor, which drained ~$6.36B from Binance wallets across 10 blockchains, mostly in ~20 minutes"
   },
   {
@@ -122,16 +115,25 @@
    "published_at": "2026-10-30T07:01:46Z",
    "text": "ANTHROPIC IS CRACKING DOWN ON VIDEO GAME REWRITES 🚨 Claude Code picked up a new rule around Oct 27, sent from Anthropic’s servers under a flag called \"tengu_heron_brook\". There’s no setting to turn it off. The full rule: “Do build original games, games in a genre, and games…",
    "author_name": "chasm",
-   "likes": 8610,
+   "likes": 8621,
    "story": "Another reason to own your own compute. Your account may get banned in a sneaky update."
   },
   {
-   "title": "Google says its Suncatcher prototype data center satellite is online after an October 1 launch, wit…",
-   "url": "https://techcrunch.com/2026/10/30/googles-first-data-center-satellite-is-online-and-writing-poetry/",
-   "source": "Tim Fernholz / TechCrunch",
-   "published_at": "2026-10-30T18:41:22Z",
-   "text": "Google says its Suncatcher prototype data center satellite is online after an October 1 launch, with Gemma 4 generating a haiku about being in space. Google Suncatcher's prototype space data center is online and communicating with the ground after launching earlier this month alongside …",
+   "title": "How AI detectors like Pangram are changing human writing: authors drop em dashes, “not X, but Y” ph…",
+   "url": "https://www.bloomberg.com/news/features/2026-10-30/how-ai-detectors-like-pangram-are-changing-human-writing?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc5MzM2MDg2MCwiZXhwIjoxNzkzOTY1NjYwLCJhcnRpY2xlSWQiOiJUTlBLU0FLSVVQU0MwMCIsImJjb25uZWN0SWQiOiI1MEU0OTBGQjhDNTM0MkREODAwRUEyNTQ1RjBCMThCOCJ9.QWmO8ZCSYNuUI7oMX4N9wEkQtBDq_LYD89yJOMz3bfE",
+   "source": "Morgan Meaker / Bloomberg",
+   "published_at": "2026-10-31T13:42:13Z",
+   "text": "How AI detectors like Pangram are changing human writing: authors drop em dashes, “not X, but Y” phrasing, and words like “delve”, or add typos, to look human. As AI transforms writing and detectors like Pangram police what counts as machine-generated …",
    "via": "Techmeme"
+  },
+  {
+   "title": "Show HN: A working Nintendo in ~1GB of Qwen weights",
+   "url": "https://github.com/dbreunig/nesformer",
+   "source": "Hacker News",
+   "published_at": "2026-10-30T16:40:22Z",
+   "text": "268 points and 131 comments on Hacker News.",
+   "points": 268,
+   "discussion": "https://news.ycombinator.com/item?id=50306442"
   }
  ],
  "sources": "curated, Techmeme, X (found via Techmeme, Reddit, the Internet Archive), Claude Code releases, Anthropic, Hacker News, Simon Willison"
