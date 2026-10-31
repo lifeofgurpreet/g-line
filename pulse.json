@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-31T18:13:33Z",
+ "generated_at": "2026-10-31T18:45:40Z",
  "items": [
   {
    "title": "Sources: OpenAI has secured ~$11B in commitments for its latest funding round, less than half its i…",
@@ -17,7 +17,7 @@
    "published_at": "2026-10-30T17:29:07Z",
    "text": "We’re renaming our Max plans: Max 5x → Max Max 20x → Ultra Max is still $100/month, and Ultra is still $200. If you’re a subscriber, there’s nothing you need to do. We’re also removing the 5-hour limit for verified Ultra accounts, starting today with most existing…",
    "author_name": "Claude",
-   "likes": 30357,
+   "likes": 30400,
    "story": "Max Plans renamed. 20x is now Ultra. No more 5 hour limit."
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-10-30T07:46:39Z",
    "text": "We identified a security incident affecting a modified Claude Code VS Code extension accessed through our Cursor IDE extension marketplace, impacting at most 5,000 users. This malicious version of the extension was not developed by Anthropic. It does not impact other extensions…",
    "author_name": "Cursor",
-   "likes": 6910,
+   "likes": 6912,
    "story": "Anthropic says a malicious actor used access to Cursor's marketplace to publish a “tampered” copy of the Claude Code extension, which it didn't build or publish"
   },
   {
@@ -50,8 +50,8 @@
    "url": "https://blog.talosintelligence.com/appraisal-by-ai-model-driven-victim-prioritization-in-the-volta-infostealer/",
    "source": "Hacker News",
    "published_at": "2026-10-31T14:29:03Z",
-   "text": "171 points and 78 comments on Hacker News.",
-   "points": 171,
+   "text": "187 points and 94 comments on Hacker News.",
+   "points": 187,
    "discussion": "https://news.ycombinator.com/item?id=50316531"
   },
   {
@@ -61,7 +61,7 @@
    "published_at": "2026-10-30T20:34:14Z",
    "text": "Companies like Microsoft, Meta, Google, Amazon, SpaceX, Oracle & Nvidia have racked up $3 trillion in debt on a high-stakes gamble on AI. Big Tech Oligarchs: If your AI bet fails, don’t come begging to taxpayers. You won’t be bailed out — period. End of Discussion.",
    "author_name": "Sen. Bernie Sanders",
-   "likes": 14314,
+   "likes": 14498,
    "story": "Alphabet, Meta, Microsoft, Amazon, and Oracle have a collective $3T+ in AI spending commitments over the coming years, including Alphabet's $1T and Meta's $800B"
   },
   {
@@ -80,33 +80,23 @@
    "via": "Techmeme"
   },
   {
-   "title": "Yesterday's earnings call with Reddit's CEO will be referenced for years to come. Reddit, $RDDT, is…",
-   "url": "https://x.com/KobeissiLetter/status/2116191185677246814",
-   "source": "𝕏 @KobeissiLetter",
-   "published_at": "2026-10-30T15:31:10Z",
-   "text": "Yesterday's earnings call with Reddit's CEO will be referenced for years to come. Reddit, $RDDT, is now down -42% in 8 trading days. AI has disrupted search, and the internet more broadly, forever. Our thoughts on this are included below.",
-   "author_name": "The Kobeissi Letter",
-   "likes": 8393,
-   "story": "Reddit closed down 29.27% on Friday, the worst drop since becoming a public company in 2024, after it forecast weak Q4 revenue"
-  },
-  {
-   "title": "We Took over ChatGPT Accounts",
-   "url": "https://www.parameter.ai/labs/we-found-a-gap-at-openai",
-   "source": "Hacker News",
-   "published_at": "2026-10-31T10:30:11Z",
-   "text": "234 points and 111 comments on Hacker News.",
-   "points": 234,
-   "discussion": "https://news.ycombinator.com/item?id=50314699"
-  },
-  {
    "title": "Seems token recovery already began. Another little detail in addition to the effort described, user…",
    "url": "https://x.com/cz_binance/status/2116137390180065546",
    "source": "𝕏 @cz_binance",
    "published_at": "2026-10-30T11:57:24Z",
    "text": "Seems token recovery already began. Another little detail in addition to the effort described, users pay trading fees on Binance in the coins they trade, so Binance's naturally accumulates all tokens they list. Your funds are SAFU!",
    "author_name": "CZ 🔶 BNB",
-   "likes": 7942,
+   "likes": 7949,
    "story": "TRM Labs attributes the Binance hack to North Korea-based TraderTraitor, which drained ~$6.36B from Binance wallets across 10 blockchains, mostly in ~20 minutes"
+  },
+  {
+   "title": "We Took over ChatGPT Accounts",
+   "url": "https://www.parameter.ai/labs/we-found-a-gap-at-openai",
+   "source": "Hacker News",
+   "published_at": "2026-10-31T10:30:11Z",
+   "text": "254 points and 114 comments on Hacker News.",
+   "points": 254,
+   "discussion": "https://news.ycombinator.com/item?id=50314699"
   },
   {
    "title": "John Ternus says Apple doesn't “want to ship AI for AI's sake” and that Tim Cook is “available to h…",
@@ -131,6 +121,14 @@
    "source": "Anthropic",
    "published_at": "2026-10-29T04:43:29Z",
    "text": "We’re highlighting 20 scientific foundations, institutions, and research groups from around the world that we’ve partnered with in an expansion of our AI for Science program."
+  },
+  {
+   "title": "As AI models commoditize, lasting wealth will accrue to those controlling chokepoints like distribu…",
+   "url": "https://commanding-heights.com/#top",
+   "source": "The Commanding Heights",
+   "published_at": "2026-10-31T06:30:51Z",
+   "text": "As AI models commoditize, lasting wealth will accrue to those controlling chokepoints like distribution, payment rails, and a stablecoin dollar, not to the labs. Scarce, controllable positions of Economic Power whose holders durably capture the gains of Increasingly Capable and diffused intelligence.",
+   "via": "Techmeme"
   }
  ],
  "sources": "curated, Techmeme, X (found via Techmeme, Reddit, the Internet Archive), Claude Code releases, Anthropic, Hacker News, Simon Willison"
