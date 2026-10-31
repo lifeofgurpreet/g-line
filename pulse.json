@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-31T20:20:05Z",
+ "generated_at": "2026-10-31T20:52:03Z",
  "items": [
   {
    "title": "Sources: OpenAI has secured ~$11B in commitments for its latest funding round, less than half its i…",
@@ -17,8 +17,8 @@
    "published_at": "2026-10-30T17:29:07Z",
    "text": "We’re renaming our Max plans: Max 5x → Max Max 20x → Ultra Max is still $100/month, and Ultra is still $200. If you’re a subscriber, there’s nothing you need to do. We’re also removing the 5-hour limit for verified Ultra accounts, starting today with most existing…",
    "author_name": "Claude",
-   "likes": 30538,
-   "story": "Anthropic renames its $100 per month Max 5x plan as Max and the $200 per month Max 20x plan as Ultra, and removes the 5-hour limit for verified Ultra accounts"
+   "likes": 30577,
+   "story": "Max Plans renamed. 20x is now Ultra. No more 5 hour limit."
   },
   {
    "title": "Claude Code 2.1.316 released",
@@ -34,7 +34,7 @@
    "published_at": "2026-10-30T07:46:39Z",
    "text": "We identified a security incident affecting a modified Claude Code VS Code extension accessed through our Cursor IDE extension marketplace, impacting at most 5,000 users. This malicious version of the extension was not developed by Anthropic. It does not impact other extensions…",
    "author_name": "Cursor",
-   "likes": 6925,
+   "likes": 6926,
    "story": "Anthropic says a malicious actor used access to Cursor's marketplace to publish a “tampered” copy of the Claude Code extension, which it didn't build or publish"
   },
   {
@@ -50,8 +50,8 @@
    "url": "https://ryanmadden.net/gpt-56-beats-factorio/",
    "source": "Hacker News",
    "published_at": "2026-10-31T18:50:34Z",
-   "text": "75 points and 63 comments on Hacker News.",
-   "points": 75,
+   "text": "96 points and 100 comments on Hacker News.",
+   "points": 96,
    "discussion": "https://news.ycombinator.com/item?id=50318871"
   },
   {
@@ -61,7 +61,7 @@
    "published_at": "2026-10-30T20:34:14Z",
    "text": "Companies like Microsoft, Meta, Google, Amazon, SpaceX, Oracle & Nvidia have racked up $3 trillion in debt on a high-stakes gamble on AI. Big Tech Oligarchs: If your AI bet fails, don’t come begging to taxpayers. You won’t be bailed out — period. End of Discussion.",
    "author_name": "Sen. Bernie Sanders",
-   "likes": 14932,
+   "likes": 15043,
    "story": "Alphabet, Meta, Microsoft, Amazon, and Oracle have a collective $3T+ in AI spending commitments over the coming years, including Alphabet's $1T and Meta's $800B"
   },
   {
@@ -86,7 +86,7 @@
    "published_at": "2026-10-31T14:56:56Z",
    "text": "1/3 A CPU inside an LLM is one thing, but running another LLM inside an LLM would be taking things a bit too far, wouldn't it? Anyways, here's an LLM running inside an LLM : QwenPU, an LLM (@karpathy's stories260k) running on an NPU compiled inside Qwen 3.5-4B's weights.",
    "author_name": "div (fp32)",
-   "likes": 1089,
+   "likes": 1153,
    "story": "An LLM inside an LLM - Same guy who put a RISK-V CPU inside Qwen has now made Karpathy's stories260k run on an NPU compiled inside Qwen 3.5-4B's weights"
   },
   {
@@ -94,9 +94,19 @@
    "url": "https://blog.talosintelligence.com/appraisal-by-ai-model-driven-victim-prioritization-in-the-volta-infostealer/",
    "source": "Hacker News",
    "published_at": "2026-10-31T14:29:03Z",
-   "text": "205 points and 111 comments on Hacker News.",
-   "points": 205,
+   "text": "210 points and 114 comments on Hacker News.",
+   "points": 210,
    "discussion": "https://news.ycombinator.com/item?id=50316531"
+  },
+  {
+   "title": "Yesterday's earnings call with Reddit's CEO will be referenced for years to come. Reddit, $RDDT, is…",
+   "url": "https://x.com/KobeissiLetter/status/2116191185677246814",
+   "source": "𝕏 @KobeissiLetter",
+   "published_at": "2026-10-30T15:31:10Z",
+   "text": "Yesterday's earnings call with Reddit's CEO will be referenced for years to come. Reddit, $RDDT, is now down -42% in 8 trading days. AI has disrupted search, and the internet more broadly, forever. Our thoughts on this are included below.",
+   "author_name": "The Kobeissi Letter",
+   "likes": 8494,
+   "story": "Reddit closed down 29.27% on Friday, the worst drop since becoming a public company in 2024, after it forecast weak Q4 revenue"
   },
   {
    "title": "Seems token recovery already began. Another little detail in addition to the effort described, user…",
@@ -105,7 +115,7 @@
    "published_at": "2026-10-30T11:57:24Z",
    "text": "Seems token recovery already began. Another little detail in addition to the effort described, users pay trading fees on Binance in the coins they trade, so Binance's naturally accumulates all tokens they list. Your funds are SAFU!",
    "author_name": "CZ 🔶 BNB",
-   "likes": 7982,
+   "likes": 7989,
    "story": "TRM Labs attributes the Binance hack to North Korea-based TraderTraitor, which drained ~$6.36B from Binance wallets across 10 blockchains, mostly in ~20 minutes"
   },
   {
@@ -121,16 +131,9 @@
    "url": "https://dl.acm.org/doi/full/10.1145/3706598.3713778",
    "source": "Hacker News",
    "published_at": "2026-10-31T18:02:29Z",
-   "text": "60 points and 39 comments on Hacker News.",
-   "points": 60,
+   "text": "64 points and 42 comments on Hacker News.",
+   "points": 64,
    "discussion": "https://news.ycombinator.com/item?id=50318401"
-  },
-  {
-   "title": "AI for Science expands to foundations and institutions",
-   "url": "https://www.anthropic.com/news/ai-for-science-expands-foundations-research-institutions",
-   "source": "Anthropic",
-   "published_at": "2026-10-29T04:43:29Z",
-   "text": "We’re highlighting 20 scientific foundations, institutions, and research groups from around the world that we’ve partnered with in an expansion of our AI for Science program."
   }
  ],
  "sources": "curated, Techmeme, X (found via Techmeme, Reddit, the Internet Archive), Claude Code releases, Anthropic, Hacker News, Simon Willison"
