@@ -1,13 +1,13 @@
 {
  "schema": 1,
- "generated_at": "2026-10-31T16:37:11Z",
+ "generated_at": "2026-10-31T17:09:33Z",
  "items": [
   {
-   "title": "Sources: OpenAI now seeks ~$20B at a $1.25T valuation for its latest round, from $30B at a $1.4T va…",
-   "url": "https://www.ft.com/content/7a3ad950-1b3b-4d9e-8c15-65a61ae6180f",
-   "source": "Financial Times",
-   "published_at": "2026-10-31T01:02:07Z",
-   "text": "Sources: OpenAI now seeks ~$20B at a $1.25T valuation for its latest round, from $30B at a $1.4T valuation, as some investors cut commitments amid an AI selloff. ChatGPT maker is now seeking about $20bn at a $1.25tn valuation as it tempers its ambitions — OpenAI has slashed the target …",
+   "title": "Sources: OpenAI has secured ~$11B in commitments for its latest funding round, less than half its i…",
+   "url": "https://www.wsj.com/tech/ai/openai-raises-less-than-half-of-30-billion-target-in-latest-round-91aecdc5?st=pgo9cE&reflink=desktopwebshare_permalink",
+   "source": "Berber Jin / Wall Street Jo…",
+   "published_at": "2026-10-31T02:30:54Z",
+   "text": "Sources: OpenAI has secured ~$11B in commitments for its latest funding round, less than half its initial $30B target, and expects to raise more in coming weeks. The ChatGPT maker's latest funding round values it at $1.25 trillion, less than its $1.4 trillion target",
    "via": "Techmeme"
   },
   {
@@ -17,8 +17,8 @@
    "published_at": "2026-10-30T17:29:07Z",
    "text": "We’re renaming our Max plans: Max 5x → Max Max 20x → Ultra Max is still $100/month, and Ultra is still $200. If you’re a subscriber, there’s nothing you need to do. We’re also removing the 5-hour limit for verified Ultra accounts, starting today with most existing…",
    "author_name": "Claude",
-   "likes": 30097,
-   "story": "Max Plans renamed. 20x is now Ultra. No more 5 hour limit."
+   "likes": 30201,
+   "story": "Anthropic renames its $100 per month Max 5x plan as Max and the $200 per month Max 20x plan as Ultra, and removes the 5-hour limit for verified Ultra accounts"
   },
   {
    "title": "Claude Code 2.1.316 released",
@@ -34,7 +34,7 @@
    "published_at": "2026-10-30T07:46:39Z",
    "text": "We identified a security incident affecting a modified Claude Code VS Code extension accessed through our Cursor IDE extension marketplace, impacting at most 5,000 users. This malicious version of the extension was not developed by Anthropic. It does not impact other extensions…",
    "author_name": "Cursor",
-   "likes": 6895,
+   "likes": 6901,
    "story": "Anthropic says a malicious actor used access to Cursor's marketplace to publish a “tampered” copy of the Claude Code extension, which it didn't build or publish"
   },
   {
@@ -50,8 +50,8 @@
    "url": "https://blog.talosintelligence.com/appraisal-by-ai-model-driven-victim-prioritization-in-the-volta-infostealer/",
    "source": "Hacker News",
    "published_at": "2026-10-31T14:29:03Z",
-   "text": "61 points and 6 comments on Hacker News.",
-   "points": 61,
+   "text": "106 points and 40 comments on Hacker News.",
+   "points": 106,
    "discussion": "https://news.ycombinator.com/item?id=50316531"
   },
   {
@@ -61,8 +61,8 @@
    "published_at": "2026-10-30T20:34:14Z",
    "text": "Companies like Microsoft, Meta, Google, Amazon, SpaceX, Oracle & Nvidia have racked up $3 trillion in debt on a high-stakes gamble on AI. Big Tech Oligarchs: If your AI bet fails, don’t come begging to taxpayers. You won’t be bailed out — period. End of Discussion.",
    "author_name": "Sen. Bernie Sanders",
-   "likes": 13742,
-   "story": "Alphabet, Meta, Microsoft, Amazon, and Oracle have a collective $3T+ in AI spending commitments over the coming years, including Alphabet's $1T and Meta's $800B"
+   "likes": 13937,
+   "story": "Microsoft, Alphabet, Amazon, Meta, and Oracle returned just 9.3% of cash to shareholders in the first three quarters of 2026, a 15-year low amid AI spending"
   },
   {
    "title": "Expanding our partnership with GSA to bring Claude to all levels of government",
@@ -86,7 +86,7 @@
    "published_at": "2026-10-30T15:31:10Z",
    "text": "Yesterday's earnings call with Reddit's CEO will be referenced for years to come. Reddit, $RDDT, is now down -42% in 8 trading days. AI has disrupted search, and the internet more broadly, forever. Our thoughts on this are included below.",
    "author_name": "The Kobeissi Letter",
-   "likes": 8322,
+   "likes": 8345,
    "story": "Reddit closed down 29.27% on Friday, the worst drop since becoming a public company in 2024, after it forecast weak Q4 revenue"
   },
   {
@@ -94,8 +94,8 @@
    "url": "https://www.parameter.ai/labs/we-found-a-gap-at-openai",
    "source": "Hacker News",
    "published_at": "2026-10-31T10:30:11Z",
-   "text": "194 points and 98 comments on Hacker News.",
-   "points": 194,
+   "text": "207 points and 104 comments on Hacker News.",
+   "points": 207,
    "discussion": "https://news.ycombinator.com/item?id=50314699"
   },
   {
@@ -105,7 +105,7 @@
    "published_at": "2026-10-30T11:57:24Z",
    "text": "Seems token recovery already began. Another little detail in addition to the effort described, users pay trading fees on Binance in the coins they trade, so Binance's naturally accumulates all tokens they list. Your funds are SAFU!",
    "author_name": "CZ 🔶 BNB",
-   "likes": 7898,
+   "likes": 7915,
    "story": "TRM Labs attributes the Binance hack to North Korea-based TraderTraitor, which drained ~$6.36B from Binance wallets across 10 blockchains, mostly in ~20 minutes"
   },
   {
@@ -115,7 +115,7 @@
    "published_at": "2026-10-30T07:01:46Z",
    "text": "ANTHROPIC IS CRACKING DOWN ON VIDEO GAME REWRITES 🚨 Claude Code picked up a new rule around Oct 27, sent from Anthropic’s servers under a flag called \"tengu_heron_brook\". There’s no setting to turn it off. The full rule: “Do build original games, games in a genre, and games…",
    "author_name": "chasm",
-   "likes": 8702,
+   "likes": 8713,
    "story": "Another reason to own your own compute. Your account may get banned in a sneaky update."
   },
   {
