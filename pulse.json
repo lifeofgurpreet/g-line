@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-31T10:43:14Z",
+ "generated_at": "2026-10-31T11:14:56Z",
  "items": [
   {
    "title": "Sources: OpenAI has secured ~$11B in commitments for its latest funding round, less than half its i…",
@@ -17,7 +17,7 @@
    "published_at": "2026-10-30T17:29:07Z",
    "text": "We’re renaming our Max plans: Max 5x → Max Max 20x → Ultra Max is still $100/month, and Ultra is still $200. If you’re a subscriber, there’s nothing you need to do. We’re also removing the 5-hour limit for verified Ultra accounts, starting today with most existing…",
    "author_name": "Claude",
-   "likes": 28769,
+   "likes": 28907,
    "story": "Anthropic renames its $100 per month Max 5x plan as Max and the $200 per month Max 20x plan as Ultra, and removes the 5-hour limit for verified Ultra accounts"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-10-30T07:46:39Z",
    "text": "We identified a security incident affecting a modified Claude Code VS Code extension accessed through our Cursor IDE extension marketplace, impacting at most 5,000 users. This malicious version of the extension was not developed by Anthropic. It does not impact other extensions…",
    "author_name": "Cursor",
-   "likes": 6802,
+   "likes": 6817,
    "story": "Anthropic says a malicious actor used access to Cursor's marketplace to publish a “tampered” copy of the Claude Code extension, which it didn't build or publish"
   },
   {
@@ -61,7 +61,7 @@
    "published_at": "2026-10-30T20:34:14Z",
    "text": "Companies like Microsoft, Meta, Google, Amazon, SpaceX, Oracle & Nvidia have racked up $3 trillion in debt on a high-stakes gamble on AI. Big Tech Oligarchs: If your AI bet fails, don’t come begging to taxpayers. You won’t be bailed out — period. End of Discussion.",
    "author_name": "Sen. Bernie Sanders",
-   "likes": 11760,
+   "likes": 11942,
    "story": "Alphabet, Meta, Microsoft, Amazon, and Oracle have a collective $3T+ in AI spending commitments over the coming years, including Alphabet's $1T and Meta's $800B"
   },
   {
@@ -93,7 +93,7 @@
    "published_at": "2026-10-30T15:31:10Z",
    "text": "Yesterday's earnings call with Reddit's CEO will be referenced for years to come. Reddit, $RDDT, is now down -42% in 8 trading days. AI has disrupted search, and the internet more broadly, forever. Our thoughts on this are included below.",
    "author_name": "The Kobeissi Letter",
-   "likes": 7846,
+   "likes": 7903,
    "story": "Reddit closed down 29.27% on Friday, the worst drop since becoming a public company in 2024, after it forecast weak Q4 revenue"
   },
   {
@@ -101,8 +101,8 @@
    "url": "https://github.com/dbreunig/nesformer",
    "source": "Hacker News",
    "published_at": "2026-10-30T16:40:22Z",
-   "text": "255 points and 122 comments on Hacker News.",
-   "points": 255,
+   "text": "256 points and 122 comments on Hacker News.",
+   "points": 256,
    "discussion": "https://news.ycombinator.com/item?id=50306442"
   },
   {
@@ -112,7 +112,7 @@
    "published_at": "2026-10-30T11:57:24Z",
    "text": "Seems token recovery already began. Another little detail in addition to the effort described, users pay trading fees on Binance in the coins they trade, so Binance's naturally accumulates all tokens they list. Your funds are SAFU!",
    "author_name": "CZ 🔶 BNB",
-   "likes": 7632,
+   "likes": 7669,
    "story": "TRM Labs attributes the Binance hack to North Korea-based TraderTraitor, which drained ~$6.36B from Binance wallets across 10 blockchains, mostly in ~20 minutes"
   },
   {
@@ -122,7 +122,7 @@
    "published_at": "2026-10-30T07:01:46Z",
    "text": "ANTHROPIC IS CRACKING DOWN ON VIDEO GAME REWRITES 🚨 Claude Code picked up a new rule around Oct 27, sent from Anthropic’s servers under a flag called \"tengu_heron_brook\". There’s no setting to turn it off. The full rule: “Do build original games, games in a genre, and games…",
    "author_name": "chasm",
-   "likes": 8506,
+   "likes": 8527,
    "story": "Another reason to own your own compute. Your account may get banned in a sneaky update."
   },
   {
@@ -130,7 +130,7 @@
    "url": "https://www.wired.com/story/i-spent-30-minutes-with-apples-ceo-now-i-know-why-john-ternus-got-the-job/",
    "source": "Steven Levy / Wired",
    "published_at": "2026-10-31T04:31:14Z",
-   "text": "John Ternus says Apple doesn't “want to ship AI for AI's sake” and that Tim Cook is “available to help wherever I ask” on policy; Ternus has yet to meet Trump",
+   "text": "John Ternus says Apple doesn't “want to ship AI for AI's sake” and that Tim Cook is “available to help wherever I ask” on policy; Ternus has yet to meet Trump. Apple doesn't need fixing, and it doesn't want drama. Its new leader is a “product guy” who bleeds six colors.",
    "via": "Techmeme"
   }
  ],
