@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-01T15:59:39Z",
+ "generated_at": "2026-11-01T16:32:07Z",
  "items": [
   {
    "title": "Binance has started resuming withdrawals in phases, including for BTC and ETH, after covering 95% o…",
@@ -11,14 +11,14 @@
    "via": "Techmeme"
   },
   {
-   "title": "Yann LeCun and Randall Balestriero just Proved the Platonic Representation Hypothesis, and found a…",
-   "url": "https://x.com/askalphaxiv/status/2116779287390896418",
-   "source": "𝕏 @askalphaxiv",
-   "published_at": "2026-11-01T06:28:04Z",
-   "text": "Yann LeCun and Randall Balestriero just Proved the Platonic Representation Hypothesis, and found a better way to achieve it. The Platonic Representation Hypothesis suggests that AI models trained on different modalities, like images and text, eventually learn similar…",
-   "author_name": "alphaXiv",
-   "likes": 1384,
-   "story": "new research: A tiny 109M-parameter model outperforms models up to 72B parameters at image-text alignment, using 42× less training data"
+   "title": "Mythos 5.5 is already listed HTML source code of Anthropic's official website Thanks to the anonymo…",
+   "url": "https://x.com/kimmonismus/status/2116914141017370972",
+   "source": "𝕏 @kimmonismus",
+   "published_at": "2026-11-01T15:23:56Z",
+   "text": "Mythos 5.5 is already listed HTML source code of Anthropic's official website Thanks to the anonymous person who sent me the tip via email :)…",
+   "author_name": "Chubby♨️",
+   "likes": 1347,
+   "story": "Opus 5.6 imminently about to release"
   },
   {
    "title": "Claude Code 2.1.316 released",
@@ -26,6 +26,16 @@
    "source": "Claude Code releases",
    "published_at": "2026-10-31T01:01:35Z",
    "text": "Added CLAUDE_CODE_DISABLE_ULTRATHINK, which turns the ultrathink keyword off · Added pooled group budgets to the Claude apps gateway: one monthly budget that a group's members share, on top of each member's own limit, set with pooled_budget on the spend limits admin API · Added CLAUDE_CODE_DISABLE_LOOPED_CROSS_CERT_DROP to keep system cross-certificates that certify each other in a loop, for servers whose private CA needs one · Added CLAUDE_CODE_SUBAGENT_EFFORT to set the effort level subagents run at when nothing else names one, instead of inheriting the session's"
+  },
+  {
+   "title": "Yann LeCun and Randall Balestriero just Proved the Platonic Representation Hypothesis, and found a…",
+   "url": "https://x.com/askalphaxiv/status/2116779287390896418",
+   "source": "𝕏 @askalphaxiv",
+   "published_at": "2026-11-01T06:28:04Z",
+   "text": "Yann LeCun and Randall Balestriero just Proved the Platonic Representation Hypothesis, and found a better way to achieve it. The Platonic Representation Hypothesis suggests that AI models trained on different modalities, like images and text, eventually learn similar…",
+   "author_name": "alphaXiv",
+   "likes": 1446,
+   "story": "new research: A tiny 109M-parameter model outperforms models up to 72B parameters at image-text alignment, using 42× less training data"
   },
   {
    "title": "DeepSeek open sources Super-Agent, a coding agent research prototype it says proactively monitors d…",
@@ -36,13 +46,13 @@
    "via": "Techmeme"
   },
   {
-   "title": "The AI cost of JavaScript frameworks",
-   "url": "https://nolanlawson.com/2026/10/28/the-ai-cost-of-javascript-frameworks/",
+   "title": "AI agent swarms in Minecraft fail to build civilization, drown in bureaucracy",
+   "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/ai-agent-swarms-unleashed-in-minecraft-to-build-a-thriving-civilization-50-agent-teams-fail-after-falling-into-paralyzing-bureaucracy",
    "source": "Hacker News",
-   "published_at": "2026-11-01T06:06:19Z",
-   "text": "183 points and 123 comments on Hacker News.",
-   "points": 183,
-   "discussion": "https://news.ycombinator.com/item?id=50323088"
+   "published_at": "2026-11-01T13:47:24Z",
+   "text": "65 points and 24 comments on Hacker News.",
+   "points": 65,
+   "discussion": "https://news.ycombinator.com/item?id=50325662"
   },
   {
    "title": "Expanding our partnership with GSA to bring Claude to all levels of government",
@@ -60,13 +70,13 @@
    "via": "Techmeme"
   },
   {
-   "title": "Memdoor: A team of 5 Qwen3.8-27B models beats Fable 5 on LiveCodeBench Hard",
-   "url": "https://github.com/guregodevo/memdoor/tree/main/examples/workflows/team-solve",
+   "title": "The AI cost of JavaScript frameworks",
+   "url": "https://nolanlawson.com/2026/10/28/the-ai-cost-of-javascript-frameworks/",
    "source": "Hacker News",
-   "published_at": "2026-10-31T22:46:12Z",
-   "text": "341 points and 166 comments on Hacker News.",
-   "points": 341,
-   "discussion": "https://news.ycombinator.com/item?id=50320995"
+   "published_at": "2026-11-01T06:06:19Z",
+   "text": "190 points and 130 comments on Hacker News.",
+   "points": 190,
+   "discussion": "https://news.ycombinator.com/item?id=50323088"
   },
   {
    "title": "A profile of White House OSTP Director Michael Kratsios, an ex-Peter Thiel aide who is among a hand…",
@@ -77,13 +87,13 @@
    "via": "Techmeme"
   },
   {
-   "title": "Anthropic takes steps to block Claude from reverse-engineering video games",
-   "url": "https://mashable.com/tech/anthropic-takes-steps-to-block-video-game-cloning-and-reverse-engineering",
+   "title": "Memdoor: A team of 5 Qwen3.8-27B models beats Fable 5 on LiveCodeBench Hard",
+   "url": "https://github.com/guregodevo/memdoor/tree/main/examples/workflows/team-solve",
    "source": "Hacker News",
-   "published_at": "2026-10-31T21:07:58Z",
-   "text": "166 points and 104 comments on Hacker News.",
-   "points": 166,
-   "discussion": "https://news.ycombinator.com/item?id=50320255"
+   "published_at": "2026-10-31T22:46:12Z",
+   "text": "354 points and 173 comments on Hacker News.",
+   "points": 354,
+   "discussion": "https://news.ycombinator.com/item?id=50320995"
   },
   {
    "title": "Lumaril, which develops AI software for optimizing industrial production by connecting to existing…",
@@ -92,6 +102,15 @@
    "published_at": "2026-11-01T05:36:01Z",
    "text": "Lumaril, which develops AI software for optimizing industrial production by connecting to existing control systems, raised a $66M Series A at a $400M valuation. The AI-for-manufacturers company has raised $66 million at a $400 million valuation — Think of running a production line on a factory floor as a kind of art.",
    "via": "Techmeme"
+  },
+  {
+   "title": "Anthropic takes steps to block Claude from reverse-engineering video games",
+   "url": "https://mashable.com/tech/anthropic-takes-steps-to-block-video-game-cloning-and-reverse-engineering",
+   "source": "Hacker News",
+   "published_at": "2026-10-31T21:07:58Z",
+   "text": "168 points and 105 comments on Hacker News.",
+   "points": 168,
+   "discussion": "https://news.ycombinator.com/item?id=50320255"
   },
   {
    "title": "Google says its Suncatcher prototype data center satellite is online after an October 1 launch, wit…",
@@ -107,22 +126,6 @@
    "source": "Swati Khandelwal / The Hack…",
    "published_at": "2026-10-31T19:02:18Z",
    "text": "Researchers are paid $5K for reporting a bug to OpenAI that would let attackers run code in logged-in sessions of all who opened the hacker's ChatGPT share link. A malicious ChatGPT share link could run an attacker's code in the logged-in session of anyone who opened it …",
-   "via": "Techmeme"
-  },
-  {
-   "title": "As AI models commoditize, lasting wealth will accrue to those controlling chokepoints like distribu…",
-   "url": "https://commanding-heights.com/#top",
-   "source": "The Commanding Heights",
-   "published_at": "2026-10-31T06:30:51Z",
-   "text": "As AI models commoditize, lasting wealth will accrue to those controlling chokepoints like distribution, payment rails, and a stablecoin dollar, not to the labs",
-   "via": "Techmeme"
-  },
-  {
-   "title": "Tests: chatbots rely on three obscure AI-built voter sites for US midterm answers; Copilot cited th…",
-   "url": "https://www.washingtonpost.com/technology/2026/10/30/how-an-obscure-website-became-force-americas-election-information-machine/?pwapi_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyZWFzb24iOiJnaWZ0IiwibmJmIjoxNzkzMzMyODAwLCJpc3MiOiJzdWJzY3JpcHRpb25zIiwiZXhwIjoxNzk0NzE4Nzk5LCJpYXQiOjE3OTMzMzI4MDAsImp0aSI6ImFlZmU1ZmI3LThlMmItNDYwOC1iMmVhLWJiZDg2YTFmZDQ1ZCIsInVybCI6Imh0dHBzOi8vd3d3Lndhc2hpbmd0b25wb3N0LmNvbS90ZWNobm9sb2d5LzIwMjYvMTAvMzAvaG93LWFuLW9ic2N1cmUtd2Vic2l0ZS1iZWNhbWUtZm9yY2UtYW1lcmljYXMtZWxlY3Rpb24taW5mb3JtYXRpb24tbWFjaGluZS8ifQ.lCIALy15UkNNilYI0FU_HKDmoqz6MM-BgZD4xUT8pME&itid=gfta",
-   "source": "Washington Post",
-   "published_at": "2026-11-01T00:03:14Z",
-   "text": "Tests: chatbots rely on three obscure AI-built voter sites for US midterm answers; Copilot cited the error-prone Ballot Brief in 75% of tests and ChatGPT in 22%. Frustrated with hunting for information on political candidates, Ben Torres Ezrick set out to build a one-stop shop for voters.",
    "via": "Techmeme"
   }
  ],
