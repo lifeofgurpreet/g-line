@@ -1,13 +1,13 @@
 {
  "schema": 1,
- "generated_at": "2026-11-01T10:08:26Z",
+ "generated_at": "2026-11-01T10:39:52Z",
  "items": [
   {
-   "title": "When talking about local inference, Sam Altman says supply-constrained DRAM is better used in data…",
-   "url": "https://www.tomshardware.com/tech-industry/data-centers/openai-ceo-says-its-quite-terrible-for-your-pc-to-have-ram-sam-altman-says-data-centers-offer-better-utilization",
-   "source": "Andrew E. Freedman / Tom's…",
-   "published_at": "2026-10-31T06:11:59Z",
-   "text": "When talking about local inference, Sam Altman says supply-constrained DRAM is better used in data centers than sitting in PCs and “being used 5% of the time”",
+   "title": "Binance says it plans to resume withdrawals in phases starting Sunday, after covering 95% of the ~$…",
+   "url": "https://www.reuters.com/legal/government/binance-resume-withdrawals-after-recovering-bulk-6-billion-stolen-funds-2026-11-01/",
+   "source": "Reuters",
+   "published_at": "2026-11-01T05:30:58Z",
+   "text": "Binance says it plans to resume withdrawals in phases starting Sunday, after covering 95% of the ~$6.3B in tokens stolen in the hack, including BTC and ETH. Binance, the world's biggest cryptocurrency exchange, said it would resume withdrawals in phases after covering 95% of the $6.3 billion …",
    "via": "Techmeme"
   },
   {
@@ -28,14 +28,14 @@
    "text": "Added CLAUDE_CODE_DISABLE_ULTRATHINK, which turns the ultrathink keyword off · Added pooled group budgets to the Claude apps gateway: one monthly budget that a group's members share, on top of each member's own limit, set with pooled_budget on the spend limits admin API · Added CLAUDE_CODE_DISABLE_LOOPED_CROSS_CERT_DROP to keep system cross-certificates that certify each other in a loop, for servers whose private CA needs one · Added CLAUDE_CODE_SUBAGENT_EFFORT to set the effort level subagents run at when nothing else names one, instead of inheriting the session's"
   },
   {
-   "title": "Apple CEO John Ternus believes that, while AI can be useful, Apple products should continue to be d…",
-   "url": "https://x.com/pubity/status/2116273946761040144",
-   "source": "𝕏 @pubity",
-   "published_at": "2026-10-30T21:00:02Z",
-   "text": "Apple CEO John Ternus believes that, while AI can be useful, Apple products should continue to be designed primarily by humans and not AI. \"The creation of products is a deeply human and personal thing, something that we love to do.\"",
-   "author_name": "Pubity",
-   "likes": 5420,
-   "story": "John Ternus says Apple doesn't “want to ship AI for AI's sake” and that Tim Cook is “available to help wherever I ask” on policy; Ternus has yet to meet Trump"
+   "title": "BREAKING: OpenAI CEO Sam Altman says having RAM in personal computers is an inefficient use of the…",
+   "url": "https://x.com/unusual_whales/status/2116248483892277526",
+   "source": "𝕏 @unusual_whales",
+   "published_at": "2026-10-30T19:18:51Z",
+   "text": "BREAKING: OpenAI CEO Sam Altman says having RAM in personal computers is an inefficient use of the world’s limited DRAM supply, arguing it would be better allocated to data centers, per Tom’s Hardware",
+   "author_name": "unusual_whales",
+   "likes": 19215,
+   "story": "When talking about local inference, Sam Altman says supply-constrained DRAM is better used in data centers than sitting in PCs and “being used 5% of the time”"
   },
   {
    "title": "DeepSeek open sources Super-Agent as a research prototype, a proactive coding agent it says can mon…",
@@ -50,19 +50,19 @@
    "url": "https://nolanlawson.com/2026/10/28/the-ai-cost-of-javascript-frameworks/",
    "source": "Hacker News",
    "published_at": "2026-11-01T06:06:19Z",
-   "text": "71 points and 37 comments on Hacker News.",
-   "points": 71,
+   "text": "80 points and 47 comments on Hacker News.",
+   "points": 80,
    "discussion": "https://news.ycombinator.com/item?id=50323088"
   },
   {
-   "title": "1/3 A CPU inside an LLM is one thing, but running another LLM inside an LLM would be taking things…",
-   "url": "https://x.com/divagr1925/status/2116544960023687432",
-   "source": "𝕏 @divagr1925",
-   "published_at": "2026-10-31T14:56:56Z",
-   "text": "1/3 A CPU inside an LLM is one thing, but running another LLM inside an LLM would be taking things a bit too far, wouldn't it? Anyways, here's an LLM running inside an LLM : QwenPU, an LLM (@karpathy's stories260k) running on an NPU compiled inside Qwen 3.5-4B's weights.",
-   "author_name": "div (fp32)",
-   "likes": 1884,
-   "story": "An LLM inside an LLM - Same guy who put a RISK-V CPU inside Qwen has now made Karpathy's stories260k run on an NPU compiled inside Qwen 3.5-4B's weights"
+   "title": "Yann LeCun and Randall Balestriero just Proved the Platonic Representation Hypothesis, and found a…",
+   "url": "https://x.com/askalphaxiv/status/2116779287390896418",
+   "source": "𝕏 @askalphaxiv",
+   "published_at": "2026-11-01T06:28:04Z",
+   "text": "Yann LeCun and Randall Balestriero just Proved the Platonic Representation Hypothesis, and found a better way to achieve it. The Platonic Representation Hypothesis suggests that AI models trained on different modalities, like images and text, eventually learn similar…",
+   "author_name": "alphaXiv",
+   "likes": 356,
+   "story": "new research: A tiny 109M-parameter model outperforms models up to 72B parameters at image-text alignment, using 42× less training data"
   },
   {
    "title": "Expanding our partnership with GSA to bring Claude to all levels of government",
@@ -80,13 +80,33 @@
    "via": "Techmeme"
   },
   {
+   "title": "Apple CEO John Ternus believes that, while AI can be useful, Apple products should continue to be d…",
+   "url": "https://x.com/pubity/status/2116273946761040144",
+   "source": "𝕏 @pubity",
+   "published_at": "2026-10-30T21:00:02Z",
+   "text": "Apple CEO John Ternus believes that, while AI can be useful, Apple products should continue to be designed primarily by humans and not AI. \"The creation of products is a deeply human and personal thing, something that we love to do.\"",
+   "author_name": "Pubity",
+   "likes": 5431,
+   "story": "John Ternus says Apple doesn't “want to ship AI for AI's sake” and that Tim Cook is “available to help wherever I ask” on policy; Ternus has yet to meet Trump"
+  },
+  {
    "title": "Anthropic blocks users for anything touching training larger models",
    "url": "https://twitter.com/jiahaoshao1/status/2116475922190922088",
    "source": "Hacker News",
    "published_at": "2026-10-31T19:39:19Z",
-   "text": "351 points and 206 comments on Hacker News.",
-   "points": 351,
+   "text": "363 points and 206 comments on Hacker News.",
+   "points": 363,
    "discussion": "https://news.ycombinator.com/item?id=50319358"
+  },
+  {
+   "title": "1/3 A CPU inside an LLM is one thing, but running another LLM inside an LLM would be taking things…",
+   "url": "https://x.com/divagr1925/status/2116544960023687432",
+   "source": "𝕏 @divagr1925",
+   "published_at": "2026-10-31T14:56:56Z",
+   "text": "1/3 A CPU inside an LLM is one thing, but running another LLM inside an LLM would be taking things a bit too far, wouldn't it? Anyways, here's an LLM running inside an LLM : QwenPU, an LLM (@karpathy's stories260k) running on an NPU compiled inside Qwen 3.5-4B's weights.",
+   "author_name": "div (fp32)",
+   "likes": 1898,
+   "story": "An LLM inside an LLM - Same guy who put a RISK-V CPU inside Qwen has now made Karpathy's stories260k run on an NPU compiled inside Qwen 3.5-4B's weights"
   },
   {
    "title": "Researchers are paid $5K for reporting a bug to OpenAI that would let attackers run code in logged-…",
@@ -101,8 +121,8 @@
    "url": "https://github.com/guregodevo/memdoor/tree/main/examples/workflows/team-solve",
    "source": "Hacker News",
    "published_at": "2026-10-31T22:46:12Z",
-   "text": "230 points and 112 comments on Hacker News.",
-   "points": 230,
+   "text": "240 points and 114 comments on Hacker News.",
+   "points": 240,
    "discussion": "https://news.ycombinator.com/item?id=50320995"
   },
   {
@@ -111,23 +131,6 @@
    "source": "Anzar Mehraj / Reuters",
    "published_at": "2026-11-01T04:50:56Z",
    "text": "Insurance software maker Guidewire agrees to acquire Hyperexponential, which makes AI-powered insurance underwriting and pricing software, for $1.7B in cash. Insurance software maker Guidewire (GWRE.N) said on Tuesday it would buy hyperexponential for $1.7 billion in cash and up to $400 million …",
-   "via": "Techmeme"
-  },
-  {
-   "title": "Anthropic takes steps to block Claude from reverse-engineering video games",
-   "url": "https://mashable.com/tech/anthropic-takes-steps-to-block-video-game-cloning-and-reverse-engineering",
-   "source": "Hacker News",
-   "published_at": "2026-10-31T21:07:58Z",
-   "text": "146 points and 89 comments on Hacker News.",
-   "points": 146,
-   "discussion": "https://news.ycombinator.com/item?id=50320255"
-  },
-  {
-   "title": "As AI models commoditize, lasting wealth will accrue to those controlling chokepoints like distribu…",
-   "url": "https://commanding-heights.com/#top",
-   "source": "The Commanding Heights",
-   "published_at": "2026-10-31T06:30:51Z",
-   "text": "As AI models commoditize, lasting wealth will accrue to those controlling chokepoints like distribution, payment rails, and a stablecoin dollar, not to the labs. Scarce, controllable positions of Economic Power whose holders durably capture the gains of Increasingly Capable and diffused intelligence.",
    "via": "Techmeme"
   }
  ],
