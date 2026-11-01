@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-31T23:35:17Z",
+ "generated_at": "2026-11-01T00:07:29Z",
  "items": [
   {
    "title": "Binance says it has covered 90% of its hack losses, having set aside $6.34B+ of company funds; the…",
@@ -17,7 +17,7 @@
    "published_at": "2026-10-30T17:29:07Z",
    "text": "We’re renaming our Max plans: Max 5x → Max Max 20x → Ultra Max is still $100/month, and Ultra is still $200. If you’re a subscriber, there’s nothing you need to do. We’re also removing the 5-hour limit for verified Ultra accounts, starting today with most existing…",
    "author_name": "Claude",
-   "likes": 30823,
+   "likes": 30861,
    "story": "Max Plans renamed. 20x is now Ultra. No more 5 hour limit."
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-10-30T07:46:39Z",
    "text": "We identified a security incident affecting a modified Claude Code VS Code extension accessed through our Cursor IDE extension marketplace, impacting at most 5,000 users. This malicious version of the extension was not developed by Anthropic. It does not impact other extensions…",
    "author_name": "Cursor",
-   "likes": 6934,
+   "likes": 6939,
    "story": "Anthropic says a malicious actor used access to Cursor's marketplace to publish a “tampered” copy of the Claude Code extension, which it didn't build or publish"
   },
   {
@@ -46,13 +46,13 @@
    "via": "Techmeme"
   },
   {
-   "title": "Anthropic takes steps to block Claude from reverse-engineering video games",
-   "url": "https://mashable.com/tech/anthropic-takes-steps-to-block-video-game-cloning-and-reverse-engineering",
+   "title": "Anthropic blocks users for anything touching training larger models",
+   "url": "https://twitter.com/jiahaoshao1/status/2116475922190922088",
    "source": "Hacker News",
-   "published_at": "2026-10-31T21:07:58Z",
-   "text": "85 points and 57 comments on Hacker News.",
-   "points": 85,
-   "discussion": "https://news.ycombinator.com/item?id=50320255"
+   "published_at": "2026-10-31T19:39:19Z",
+   "text": "153 points and 54 comments on Hacker News.",
+   "points": 153,
+   "discussion": "https://news.ycombinator.com/item?id=50319358"
   },
   {
    "title": "BREAKING: OpenAI CEO Sam Altman says having RAM in personal computers is an inefficient use of the…",
@@ -61,7 +61,7 @@
    "published_at": "2026-10-30T19:18:51Z",
    "text": "BREAKING: OpenAI CEO Sam Altman says having RAM in personal computers is an inefficient use of the world’s limited DRAM supply, arguing it would be better allocated to data centers, per Tom’s Hardware",
    "author_name": "unusual_whales",
-   "likes": 19116,
+   "likes": 19120,
    "story": "When talking about local inference, Sam Altman says supply-constrained DRAM is better used in data centers than sitting in PCs and “being used 5% of the time”"
   },
   {
@@ -86,17 +86,17 @@
    "published_at": "2026-10-31T14:56:56Z",
    "text": "1/3 A CPU inside an LLM is one thing, but running another LLM inside an LLM would be taking things a bit too far, wouldn't it? Anyways, here's an LLM running inside an LLM : QwenPU, an LLM (@karpathy's stories260k) running on an NPU compiled inside Qwen 3.5-4B's weights.",
    "author_name": "div (fp32)",
-   "likes": 1346,
+   "likes": 1378,
    "story": "An LLM inside an LLM - Same guy who put a RISK-V CPU inside Qwen has now made Karpathy's stories260k run on an NPU compiled inside Qwen 3.5-4B's weights"
   },
   {
-   "title": "Anthropic blocks users for anything touching training larger models",
-   "url": "https://twitter.com/jiahaoshao1/status/2116475922190922088",
+   "title": "Anthropic takes steps to block Claude from reverse-engineering video games",
+   "url": "https://mashable.com/tech/anthropic-takes-steps-to-block-video-game-cloning-and-reverse-engineering",
    "source": "Hacker News",
-   "published_at": "2026-10-31T19:39:19Z",
-   "text": "140 points and 42 comments on Hacker News.",
-   "points": 140,
-   "discussion": "https://news.ycombinator.com/item?id=50319358"
+   "published_at": "2026-10-31T21:07:58Z",
+   "text": "89 points and 60 comments on Hacker News.",
+   "points": 89,
+   "discussion": "https://news.ycombinator.com/item?id=50320255"
   },
   {
    "title": "Shame on @DarioAmodei / Anthropic. I never distilled Claude—rollouts came from a strong open-source…",
@@ -105,7 +105,7 @@
    "published_at": "2026-10-31T10:22:36Z",
    "text": "Shame on @DarioAmodei / Anthropic. I never distilled Claude—rollouts came from a strong open-source model; Claude just helped submit jobs and run analysis. Still got tagged for \"training a competitor,\" and now anything touching RFT, SFT, or training larger models gets me blocked,…",
    "author_name": "Jiahao Shao",
-   "likes": 1820,
+   "likes": 1900,
    "story": "Jiahao Shao on X: \"Shame on @DarioAmodei / Anthropic. I never distilled Claude—rollouts came from a strong open-source model; Claude just helped submit jobs an…"
   },
   {
@@ -117,13 +117,13 @@
    "via": "Techmeme"
   },
   {
-   "title": "GPT-5.6 Sol can beat Factorio on peaceful mode",
-   "url": "https://ryanmadden.net/gpt-56-beats-factorio/",
+   "title": "Do the math: How we took over ChatGPT accounts",
+   "url": "https://www.parameter.ai/labs/we-found-a-gap-at-openai",
    "source": "Hacker News",
-   "published_at": "2026-10-31T18:50:34Z",
-   "text": "149 points and 161 comments on Hacker News.",
-   "points": 149,
-   "discussion": "https://news.ycombinator.com/item?id=50318871"
+   "published_at": "2026-10-31T10:30:11Z",
+   "text": "297 points and 144 comments on Hacker News.",
+   "points": 297,
+   "discussion": "https://news.ycombinator.com/item?id=50314699"
   },
   {
    "title": "AI for Science expands to foundations and institutions",
