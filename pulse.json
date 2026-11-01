@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-01T20:46:44Z",
+ "generated_at": "2026-11-01T21:18:37Z",
  "items": [
   {
    "title": "Google's data center energy head says space data centers cost up to 100x more than Earth-based ones…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-01T15:23:56Z",
    "text": "Mythos 5.5 is already listed HTML source code of Anthropic's official website Thanks to the anonymous person who sent me the tip via email :)…",
    "author_name": "Chubby♨️",
-   "likes": 2809,
+   "likes": 2857,
    "story": "Opus 5.6 imminently about to release"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-11-01T06:28:04Z",
    "text": "Yann LeCun and Randall Balestriero just Proved the Platonic Representation Hypothesis, and found a better way to achieve it. The Platonic Representation Hypothesis suggests that AI models trained on different modalities, like images and text, eventually learn similar…",
    "author_name": "alphaXiv",
-   "likes": 1935,
+   "likes": 2012,
    "story": "new research: A tiny 109M-parameter model outperforms models up to 72B parameters at image-text alignment, using 42× less training data"
   },
   {
@@ -50,8 +50,8 @@
    "url": "https://blog.raed.dev/posts/proton-loser-thinking/",
    "source": "Hacker News",
    "published_at": "2026-11-01T18:53:55Z",
-   "text": "87 points and 38 comments on Hacker News.",
-   "points": 87,
+   "text": "110 points and 64 comments on Hacker News.",
+   "points": 110,
    "discussion": "https://news.ycombinator.com/item?id=50328488"
   },
   {
@@ -67,8 +67,8 @@
    "url": "https://nolanlawson.com/2026/10/28/the-ai-cost-of-javascript-frameworks/",
    "source": "Hacker News",
    "published_at": "2026-11-01T06:06:19Z",
-   "text": "252 points and 178 comments on Hacker News.",
-   "points": 252,
+   "text": "257 points and 182 comments on Hacker News.",
+   "points": 257,
    "discussion": "https://news.ycombinator.com/item?id=50323088"
   },
   {
@@ -84,8 +84,8 @@
    "url": "https://github.com/guregodevo/memdoor/tree/main/examples/workflows/team-solve",
    "source": "Hacker News",
    "published_at": "2026-10-31T22:46:12Z",
-   "text": "399 points and 197 comments on Hacker News.",
-   "points": 399,
+   "text": "401 points and 198 comments on Hacker News.",
+   "points": 401,
    "discussion": "https://news.ycombinator.com/item?id=50320995"
   },
   {
@@ -106,14 +106,6 @@
    "discussion": "https://news.ycombinator.com/item?id=50320255"
   },
   {
-   "title": "As AI models commoditize, lasting wealth will accrue to those controlling chokepoints like distribu…",
-   "url": "https://commanding-heights.com/#top",
-   "source": "The Commanding Heights",
-   "published_at": "2026-10-31T06:30:51Z",
-   "text": "As AI models commoditize, lasting wealth will accrue to those controlling chokepoints like distribution, payment rails, and a stablecoin dollar, not to the labs",
-   "via": "Techmeme"
-  },
-  {
    "title": "Lumaril, which develops AI software for optimizing industrial production by connecting to existing…",
    "url": "https://www.wsj.com/pro/venture-capital/ai-startup-lumaril-wants-to-make-factories-the-best-version-of-themselves-b65ea83d",
    "source": "Sarah Klearman / Wall Stree…",
@@ -127,6 +119,14 @@
    "source": "Swati Khandelwal / The Hack…",
    "published_at": "2026-10-31T19:02:18Z",
    "text": "Researchers are paid $5K for reporting a bug to OpenAI that would let attackers run code in logged-in sessions of all who opened the hacker's ChatGPT share link. A malicious ChatGPT share link could run an attacker's code in the logged-in session of anyone who opened it …",
+   "via": "Techmeme"
+  },
+  {
+   "title": "How AI detectors like Pangram are changing human writing: authors drop em dashes, “not X, but Y” ph…",
+   "url": "https://www.bloomberg.com/news/features/2026-10-30/how-ai-detectors-like-pangram-are-changing-human-writing?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc5MzM2MDg2MCwiZXhwIjoxNzkzOTY1NjYwLCJhcnRpY2xlSWQiOiJUTlBLU0FLSVVQU0MwMCIsImJjb25uZWN0SWQiOiI1MEU0OTBGQjhDNTM0MkREODAwRUEyNTQ1RjBCMThCOCJ9.QWmO8ZCSYNuUI7oMX4N9wEkQtBDq_LYD89yJOMz3bfE",
+   "source": "Morgan Meaker / Bloomberg",
+   "published_at": "2026-10-31T13:42:13Z",
+   "text": "How AI detectors like Pangram are changing human writing: authors drop em dashes, “not X, but Y” phrasing, and words like “delve”, or add typos, to look human",
    "via": "Techmeme"
   }
  ],
