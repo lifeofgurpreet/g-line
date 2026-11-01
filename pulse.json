@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-01T08:02:33Z",
+ "generated_at": "2026-11-01T08:34:25Z",
  "items": [
   {
    "title": "Binance says it plans to resume withdrawals in phases starting Sunday, after covering 95% of the ~$…",
@@ -17,7 +17,7 @@
    "published_at": "2026-10-30T17:29:07Z",
    "text": "We’re renaming our Max plans: Max 5x → Max Max 20x → Ultra Max is still $100/month, and Ultra is still $200. If you’re a subscriber, there’s nothing you need to do. We’re also removing the 5-hour limit for verified Ultra accounts, starting today with most existing…",
    "author_name": "Claude",
-   "likes": 31292,
+   "likes": 31318,
    "story": "Max Plans renamed. 20x is now Ultra. No more 5 hour limit."
   },
   {
@@ -38,11 +38,11 @@
    "story": "Anthropic says a malicious actor used access to Cursor's marketplace to publish a “tampered” copy of the Claude Code extension, which it didn't build or publish"
   },
   {
-   "title": "Sources: OpenAI has secured ~$11B in commitments for its latest funding round, less than half its i…",
-   "url": "https://www.wsj.com/tech/ai/openai-raises-less-than-half-of-30-billion-target-in-latest-round-91aecdc5?st=pgo9cE&reflink=desktopwebshare_permalink",
-   "source": "Berber Jin / Wall Street Jo…",
-   "published_at": "2026-10-31T02:30:54Z",
-   "text": "Sources: OpenAI has secured ~$11B in commitments for its latest funding round, less than half its initial $30B target, and expects to raise more in coming weeks. The ChatGPT maker's latest funding round values it at $1.25 trillion, less than its $1.4 trillion target",
+   "title": "When talking about local inference, Sam Altman says supply-constrained DRAM is better used in data…",
+   "url": "https://www.tomshardware.com/tech-industry/data-centers/openai-ceo-says-its-quite-terrible-for-your-pc-to-have-ram-sam-altman-says-data-centers-offer-better-utilization",
+   "source": "Andrew E. Freedman / Tom's…",
+   "published_at": "2026-10-31T06:11:59Z",
+   "text": "When talking about local inference, Sam Altman says supply-constrained DRAM is better used in data centers than sitting in PCs and “being used 5% of the time”",
    "via": "Techmeme"
   },
   {
@@ -50,19 +50,19 @@
    "url": "https://twitter.com/jiahaoshao1/status/2116475922190922088",
    "source": "Hacker News",
    "published_at": "2026-10-31T19:39:19Z",
-   "text": "327 points and 182 comments on Hacker News.",
-   "points": 327,
+   "text": "330 points and 188 comments on Hacker News.",
+   "points": 330,
    "discussion": "https://news.ycombinator.com/item?id=50319358"
   },
   {
-   "title": "BREAKING: OpenAI CEO Sam Altman says having RAM in personal computers is an inefficient use of the…",
-   "url": "https://x.com/unusual_whales/status/2116248483892277526",
-   "source": "𝕏 @unusual_whales",
-   "published_at": "2026-10-30T19:18:51Z",
-   "text": "BREAKING: OpenAI CEO Sam Altman says having RAM in personal computers is an inefficient use of the world’s limited DRAM supply, arguing it would be better allocated to data centers, per Tom’s Hardware",
-   "author_name": "unusual_whales",
-   "likes": 19195,
-   "story": "When talking about local inference, Sam Altman says supply-constrained DRAM is better used in data centers than sitting in PCs and “being used 5% of the time”"
+   "title": "House of cards now falling apart *OPENAI SLASHES LATEST FUNDING TARGET BY $10B: FT *OPENAI NOW SEEK…",
+   "url": "https://x.com/zerohedge/status/2116327468760256571",
+   "source": "𝕏 @zerohedge",
+   "published_at": "2026-10-31T00:32:42Z",
+   "text": "House of cards now falling apart *OPENAI SLASHES LATEST FUNDING TARGET BY $10B: FT *OPENAI NOW SEEKING ABOUT $20B AT A $1.25T VALUATION: FT Translation: Abu Dhabi passed on $30BN.",
+   "author_name": "zerohedge",
+   "likes": 7102,
+   "story": "Sources: OpenAI has secured ~$11B in commitments for its latest funding round, less than half its initial $30B target, and expects to raise more in coming weeks"
   },
   {
    "title": "Expanding our partnership with GSA to bring Claude to all levels of government",
@@ -86,7 +86,7 @@
    "published_at": "2026-10-30T21:00:02Z",
    "text": "Apple CEO John Ternus believes that, while AI can be useful, Apple products should continue to be designed primarily by humans and not AI. \"The creation of products is a deeply human and personal thing, something that we love to do.\"",
    "author_name": "Pubity",
-   "likes": 5345,
+   "likes": 5365,
    "story": "John Ternus says Apple doesn't “want to ship AI for AI's sake” and that Tim Cook is “available to help wherever I ask” on policy; Ternus has yet to meet Trump"
   },
   {
@@ -94,19 +94,9 @@
    "url": "https://github.com/guregodevo/memdoor/tree/main/examples/workflows/team-solve",
    "source": "Hacker News",
    "published_at": "2026-10-31T22:46:12Z",
-   "text": "199 points and 97 comments on Hacker News.",
-   "points": 199,
+   "text": "210 points and 101 comments on Hacker News.",
+   "points": 210,
    "discussion": "https://news.ycombinator.com/item?id=50320995"
-  },
-  {
-   "title": "Seems token recovery already began. Another little detail in addition to the effort described, user…",
-   "url": "https://x.com/cz_binance/status/2116137390180065546",
-   "source": "𝕏 @cz_binance",
-   "published_at": "2026-10-30T11:57:24Z",
-   "text": "Seems token recovery already began. Another little detail in addition to the effort described, users pay trading fees on Binance in the coins they trade, so Binance's naturally accumulates all tokens they list. Your funds are SAFU!",
-   "author_name": "CZ 🔶 BNB",
-   "likes": 8155,
-   "story": "The FBI attributes the $6B+ Binance hack to North Korea's TraderTraitor hacking group, which the agency also previously blamed for the ~$1.5B Bybit hack"
   },
   {
    "title": "1/3 A CPU inside an LLM is one thing, but running another LLM inside an LLM would be taking things…",
@@ -115,15 +105,15 @@
    "published_at": "2026-10-31T14:56:56Z",
    "text": "1/3 A CPU inside an LLM is one thing, but running another LLM inside an LLM would be taking things a bit too far, wouldn't it? Anyways, here's an LLM running inside an LLM : QwenPU, an LLM (@karpathy's stories260k) running on an NPU compiled inside Qwen 3.5-4B's weights.",
    "author_name": "div (fp32)",
-   "likes": 1811,
+   "likes": 1829,
    "story": "An LLM inside an LLM - Same guy who put a RISK-V CPU inside Qwen has now made Karpathy's stories260k run on an NPU compiled inside Qwen 3.5-4B's weights"
   },
   {
-   "title": "Lumaril, which develops AI software for optimizing industrial production by connecting to existing…",
-   "url": "https://www.wsj.com/pro/venture-capital/ai-startup-lumaril-wants-to-make-factories-the-best-version-of-themselves-b65ea83d",
-   "source": "Sarah Klearman / Wall Stree…",
-   "published_at": "2026-11-01T05:36:01Z",
-   "text": "Lumaril, which develops AI software for optimizing industrial production by connecting to existing control systems, raised a $66M Series A at a $400M valuation. The AI-for-manufacturers company has raised $66 million at a $400 million valuation — Think of running a production line on a factory floor as a kind of art.",
+   "title": "Researchers are paid $5K for reporting a bug to OpenAI that would let attackers run code in logged-…",
+   "url": "https://thehackernews.com/2026/10/a-shared-chatgpt-link-could-run.html",
+   "source": "Swati Khandelwal / The Hack…",
+   "published_at": "2026-10-31T19:02:18Z",
+   "text": "Researchers are paid $5K for reporting a bug to OpenAI that would let attackers run code in logged-in sessions of all who opened the hacker's ChatGPT share link. A malicious ChatGPT share link could run an attacker's code in the logged-in session of anyone who opened it …",
    "via": "Techmeme"
   },
   {
@@ -134,6 +124,14 @@
    "text": "139 points and 84 comments on Hacker News.",
    "points": 139,
    "discussion": "https://news.ycombinator.com/item?id=50320255"
+  },
+  {
+   "title": "Lumaril, which develops AI software for optimizing industrial production by connecting to existing…",
+   "url": "https://www.wsj.com/pro/venture-capital/ai-startup-lumaril-wants-to-make-factories-the-best-version-of-themselves-b65ea83d",
+   "source": "Sarah Klearman / Wall Stree…",
+   "published_at": "2026-11-01T05:36:01Z",
+   "text": "Lumaril, which develops AI software for optimizing industrial production by connecting to existing control systems, raised a $66M Series A at a $400M valuation. The AI-for-manufacturers company has raised $66 million at a $400 million valuation — Think of running a production line on a factory floor as a kind of art.",
+   "via": "Techmeme"
   }
  ],
  "sources": "curated, Techmeme, X (found via Techmeme, Reddit, the Internet Archive), Claude Code releases, Anthropic, Hacker News, Simon Willison"
