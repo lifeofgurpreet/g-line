@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-01T00:40:07Z",
+ "generated_at": "2026-11-01T01:11:01Z",
  "items": [
   {
    "title": "Binance says it has covered 90% of its hack losses, having set aside $6.34B+ of company funds; the…",
@@ -17,8 +17,8 @@
    "published_at": "2026-10-30T17:29:07Z",
    "text": "We’re renaming our Max plans: Max 5x → Max Max 20x → Ultra Max is still $100/month, and Ultra is still $200. If you’re a subscriber, there’s nothing you need to do. We’re also removing the 5-hour limit for verified Ultra accounts, starting today with most existing…",
    "author_name": "Claude",
-   "likes": 30901,
-   "story": "Anthropic renames its $100 per month Max 5x plan as Max and the $200 per month Max 20x plan as Ultra, and removes the 5-hour limit for verified Ultra accounts"
+   "likes": 30939,
+   "story": "Max Plans renamed. 20x is now Ultra. No more 5 hour limit."
   },
   {
    "title": "Claude Code 2.1.316 released",
@@ -34,7 +34,7 @@
    "published_at": "2026-10-30T07:46:39Z",
    "text": "We identified a security incident affecting a modified Claude Code VS Code extension accessed through our Cursor IDE extension marketplace, impacting at most 5,000 users. This malicious version of the extension was not developed by Anthropic. It does not impact other extensions…",
    "author_name": "Cursor",
-   "likes": 6942,
+   "likes": 6943,
    "story": "Anthropic says a malicious actor used access to Cursor's marketplace to publish a “tampered” copy of the Claude Code extension, which it didn't build or publish"
   },
   {
@@ -50,8 +50,8 @@
    "url": "https://twitter.com/jiahaoshao1/status/2116475922190922088",
    "source": "Hacker News",
    "published_at": "2026-10-31T19:39:19Z",
-   "text": "166 points and 70 comments on Hacker News.",
-   "points": 166,
+   "text": "177 points and 86 comments on Hacker News.",
+   "points": 177,
    "discussion": "https://news.ycombinator.com/item?id=50319358"
   },
   {
@@ -61,8 +61,8 @@
    "published_at": "2026-10-30T20:34:14Z",
    "text": "Companies like Microsoft, Meta, Google, Amazon, SpaceX, Oracle & Nvidia have racked up $3 trillion in debt on a high-stakes gamble on AI. Big Tech Oligarchs: If your AI bet fails, don’t come begging to taxpayers. You won’t be bailed out — period. End of Discussion.",
    "author_name": "Sen. Bernie Sanders",
-   "likes": 15160,
-   "story": "Microsoft, Alphabet, Amazon, Meta, and Oracle returned just 9.3% of cash to shareholders in the first three quarters of 2026, a 15-year low amid AI spending"
+   "likes": 15168,
+   "story": "Alphabet, Meta, Microsoft, Amazon, and Oracle have a collective $3T+ in AI spending commitments over the coming years, including Alphabet's $1T and Meta's $800B"
   },
   {
    "title": "Expanding our partnership with GSA to bring Claude to all levels of government",
@@ -76,27 +76,8 @@
    "url": "https://www.tomshardware.com/tech-industry/data-centers/openai-ceo-says-its-quite-terrible-for-your-pc-to-have-ram-sam-altman-says-data-centers-offer-better-utilization",
    "source": "Andrew E. Freedman / Tom's…",
    "published_at": "2026-10-31T06:11:59Z",
-   "text": "When talking about local inference, Sam Altman says supply-constrained DRAM is better used in data centers than sitting in PCs and “being used 5% of the time”",
+   "text": "When talking about local inference, Sam Altman says supply-constrained DRAM is better used in data centers than sitting in PCs and “being used 5% of the time”. With data centers full of RAM, your PC is apparently the problem. … OpenAI CEO Sam Altman has data centers full of memory …",
    "via": "Techmeme"
-  },
-  {
-   "title": "Yesterday's earnings call with Reddit's CEO will be referenced for years to come. Reddit, $RDDT, is…",
-   "url": "https://x.com/KobeissiLetter/status/2116191185677246814",
-   "source": "𝕏 @KobeissiLetter",
-   "published_at": "2026-10-30T15:31:10Z",
-   "text": "Yesterday's earnings call with Reddit's CEO will be referenced for years to come. Reddit, $RDDT, is now down -42% in 8 trading days. AI has disrupted search, and the internet more broadly, forever. Our thoughts on this are included below.",
-   "author_name": "The Kobeissi Letter",
-   "likes": 8578,
-   "story": "Reddit closed down 29.27% on Friday, the worst drop since becoming a public company in 2024, after it forecast weak Q4 revenue"
-  },
-  {
-   "title": "Anthropic takes steps to block Claude from reverse-engineering video games",
-   "url": "https://mashable.com/tech/anthropic-takes-steps-to-block-video-game-cloning-and-reverse-engineering",
-   "source": "Hacker News",
-   "published_at": "2026-10-31T21:07:58Z",
-   "text": "91 points and 62 comments on Hacker News.",
-   "points": 91,
-   "discussion": "https://news.ycombinator.com/item?id=50320255"
   },
   {
    "title": "1/3 A CPU inside an LLM is one thing, but running another LLM inside an LLM would be taking things…",
@@ -105,8 +86,17 @@
    "published_at": "2026-10-31T14:56:56Z",
    "text": "1/3 A CPU inside an LLM is one thing, but running another LLM inside an LLM would be taking things a bit too far, wouldn't it? Anyways, here's an LLM running inside an LLM : QwenPU, an LLM (@karpathy's stories260k) running on an NPU compiled inside Qwen 3.5-4B's weights.",
    "author_name": "div (fp32)",
-   "likes": 1410,
+   "likes": 1436,
    "story": "An LLM inside an LLM - Same guy who put a RISK-V CPU inside Qwen has now made Karpathy's stories260k run on an NPU compiled inside Qwen 3.5-4B's weights"
+  },
+  {
+   "title": "Memdoor: A team of 5 Qwen3.8-27B models beats Fable 5 on LiveCodeBench Hard",
+   "url": "https://github.com/guregodevo/memdoor/tree/main/examples/workflows/team-solve",
+   "source": "Hacker News",
+   "published_at": "2026-10-31T22:46:12Z",
+   "text": "61 points and 32 comments on Hacker News.",
+   "points": 61,
+   "discussion": "https://news.ycombinator.com/item?id=50320995"
   },
   {
    "title": "Seems token recovery already began. Another little detail in addition to the effort described, user…",
@@ -115,7 +105,7 @@
    "published_at": "2026-10-30T11:57:24Z",
    "text": "Seems token recovery already began. Another little detail in addition to the effort described, users pay trading fees on Binance in the coins they trade, so Binance's naturally accumulates all tokens they list. Your funds are SAFU!",
    "author_name": "CZ 🔶 BNB",
-   "likes": 8081,
+   "likes": 8087,
    "story": "TRM Labs attributes the Binance hack to North Korea-based TraderTraitor, which drained ~$6.36B from Binance wallets across 10 blockchains, mostly in ~20 minutes"
   },
   {
@@ -125,7 +115,7 @@
    "published_at": "2026-10-31T10:22:36Z",
    "text": "Shame on @DarioAmodei / Anthropic. I never distilled Claude—rollouts came from a strong open-source model; Claude just helped submit jobs and run analysis. Still got tagged for \"training a competitor,\" and now anything touching RFT, SFT, or training larger models gets me blocked,…",
    "author_name": "Jiahao Shao",
-   "likes": 1980,
+   "likes": 2040,
    "story": "Jiahao Shao on X: \"Shame on @DarioAmodei / Anthropic. I never distilled Claude—rollouts came from a strong open-source model; Claude just helped submit jobs an…"
   },
   {
@@ -135,6 +125,15 @@
    "published_at": "2026-10-31T04:31:14Z",
    "text": "John Ternus says Apple doesn't “want to ship AI for AI's sake” and that Tim Cook is “available to help wherever I ask” on policy; Ternus has yet to meet Trump. Apple doesn't need fixing, and it doesn't want drama. Its new leader is a “product guy” who bleeds six colors.",
    "via": "Techmeme"
+  },
+  {
+   "title": "Anthropic takes steps to block Claude from reverse-engineering video games",
+   "url": "https://mashable.com/tech/anthropic-takes-steps-to-block-video-game-cloning-and-reverse-engineering",
+   "source": "Hacker News",
+   "published_at": "2026-10-31T21:07:58Z",
+   "text": "94 points and 64 comments on Hacker News.",
+   "points": 94,
+   "discussion": "https://news.ycombinator.com/item?id=50320255"
   }
  ],
  "sources": "curated, Techmeme, X (found via Techmeme, Reddit, the Internet Archive), Claude Code releases, Anthropic, Hacker News, Simon Willison"
