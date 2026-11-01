@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-01T22:23:18Z",
+ "generated_at": "2026-11-01T22:56:03Z",
  "items": [
   {
    "title": "Google's data center energy head says space data centers cost up to 100x more than Earth-based ones…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-01T15:23:56Z",
    "text": "Mythos 5.5 is already listed HTML source code of Anthropic's official website Thanks to the anonymous person who sent me the tip via email :)…",
    "author_name": "Chubby♨️",
-   "likes": 2946,
+   "likes": 2986,
    "story": "Opus 5.6 imminently about to release"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-11-01T18:25:40Z",
    "text": "OpenAI is preparing for a post midterms change in the weather. Axios:",
    "author_name": "Andrew Curran",
-   "likes": 582,
+   "likes": 603,
    "story": "OpenAI plans a post-midterms policy and PR blitz, pushing mandatory “speed limits” for powerful AI and rebranding its data centers as “AI compute campuses”"
   },
   {
@@ -50,8 +50,8 @@
    "url": "https://nolanlawson.com/2026/10/28/the-ai-cost-of-javascript-frameworks/",
    "source": "Hacker News",
    "published_at": "2026-11-01T06:06:19Z",
-   "text": "269 points and 205 comments on Hacker News.",
-   "points": 269,
+   "text": "270 points and 210 comments on Hacker News.",
+   "points": 270,
    "discussion": "https://news.ycombinator.com/item?id=50323088"
   },
   {
@@ -61,7 +61,7 @@
    "published_at": "2026-11-01T06:28:04Z",
    "text": "Yann LeCun and Randall Balestriero just Proved the Platonic Representation Hypothesis, and found a better way to achieve it. The Platonic Representation Hypothesis suggests that AI models trained on different modalities, like images and text, eventually learn similar…",
    "author_name": "alphaXiv",
-   "likes": 2118,
+   "likes": 2154,
    "story": "new research: A tiny 109M-parameter model outperforms models up to 72B parameters at image-text alignment, using 42× less training data"
   },
   {
@@ -77,8 +77,8 @@
    "url": "https://github.com/guregodevo/memdoor/tree/main/examples/workflows/team-solve",
    "source": "Hacker News",
    "published_at": "2026-10-31T22:46:12Z",
-   "text": "415 points and 202 comments on Hacker News.",
-   "points": 415,
+   "text": "418 points and 202 comments on Hacker News.",
+   "points": 418,
    "discussion": "https://news.ycombinator.com/item?id=50320995"
   },
   {
