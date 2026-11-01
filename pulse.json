@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-01T19:12:14Z",
+ "generated_at": "2026-11-01T19:43:45Z",
  "items": [
   {
    "title": "Binance has started resuming withdrawals in phases, including for BTC and ETH, after covering 95% o…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-01T15:23:56Z",
    "text": "Mythos 5.5 is already listed HTML source code of Anthropic's official website Thanks to the anonymous person who sent me the tip via email :)…",
    "author_name": "Chubby♨️",
-   "likes": 2545,
+   "likes": 2655,
    "story": "Claude Opus 5.6 rolling out with Mythos (and Fable) 5.5"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-11-01T06:28:04Z",
    "text": "Yann LeCun and Randall Balestriero just Proved the Platonic Representation Hypothesis, and found a better way to achieve it. The Platonic Representation Hypothesis suggests that AI models trained on different modalities, like images and text, eventually learn similar…",
    "author_name": "alphaXiv",
-   "likes": 1775,
+   "likes": 1828,
    "story": "new research: A tiny 109M-parameter model outperforms models up to 72B parameters at image-text alignment, using 42× less training data"
   },
   {
@@ -50,8 +50,8 @@
    "url": "https://nolanlawson.com/2026/10/28/the-ai-cost-of-javascript-frameworks/",
    "source": "Hacker News",
    "published_at": "2026-11-01T06:06:19Z",
-   "text": "231 points and 161 comments on Hacker News.",
-   "points": 231,
+   "text": "235 points and 166 comments on Hacker News.",
+   "points": 235,
    "discussion": "https://news.ycombinator.com/item?id=50323088"
   },
   {
@@ -67,26 +67,9 @@
    "url": "https://github.com/guregodevo/memdoor/tree/main/examples/workflows/team-solve",
    "source": "Hacker News",
    "published_at": "2026-10-31T22:46:12Z",
-   "text": "385 points and 191 comments on Hacker News.",
-   "points": 385,
+   "text": "390 points and 194 comments on Hacker News.",
+   "points": 390,
    "discussion": "https://news.ycombinator.com/item?id=50320995"
-  },
-  {
-   "title": "A profile of White House OSTP Director Michael Kratsios, an ex-Peter Thiel aide who is among a hand…",
-   "url": "https://colossus.com/article/michael-kratsios-office-frontier-ostp/",
-   "source": "Harry Lambert / Colossus",
-   "published_at": "2026-11-01T15:30:35Z",
-   "text": "A profile of White House OSTP Director Michael Kratsios, an ex-Peter Thiel aide who is among a handful of players steering the Trump administration's AI policy. The fight to regulate AI and reform American science runs through a little-known White House office, and the Thiel-turned-Trump aide in charge of it",
-   "via": "Techmeme"
-  },
-  {
-   "title": "Anthropic takes steps to block Claude from reverse-engineering video games",
-   "url": "https://mashable.com/tech/anthropic-takes-steps-to-block-video-game-cloning-and-reverse-engineering",
-   "source": "Hacker News",
-   "published_at": "2026-10-31T21:07:58Z",
-   "text": "173 points and 107 comments on Hacker News.",
-   "points": 173,
-   "discussion": "https://news.ycombinator.com/item?id=50320255"
   },
   {
    "title": "Analysis: candidates backing a data center moratorium could win up to 15 of 36 US governors' races…",
@@ -94,6 +77,23 @@
    "source": "Shane Burke / The Informati…",
    "published_at": "2026-11-01T18:45:40Z",
    "text": "Analysis: candidates backing a data center moratorium could win up to 15 of 36 US governors' races on Tuesday, including in Texas, Ohio, Michigan, and New York. As data centers have gone from obscurity to the top of voters' minds, midterm candidates are taking a stance on the issue.",
+   "via": "Techmeme"
+  },
+  {
+   "title": "Anthropic takes steps to block Claude from reverse-engineering video games",
+   "url": "https://mashable.com/tech/anthropic-takes-steps-to-block-video-game-cloning-and-reverse-engineering",
+   "source": "Hacker News",
+   "published_at": "2026-10-31T21:07:58Z",
+   "text": "175 points and 107 comments on Hacker News.",
+   "points": 175,
+   "discussion": "https://news.ycombinator.com/item?id=50320255"
+  },
+  {
+   "title": "A profile of White House OSTP Director Michael Kratsios, an ex-Peter Thiel aide who is among a hand…",
+   "url": "https://colossus.com/article/michael-kratsios-office-frontier-ostp/",
+   "source": "Harry Lambert / Colossus",
+   "published_at": "2026-11-01T15:30:35Z",
+   "text": "A profile of White House OSTP Director Michael Kratsios, an ex-Peter Thiel aide who is among a handful of players steering the Trump administration's AI policy. The fight to regulate AI and reform American science runs through a little-known White House office, and the Thiel-turned-Trump aide in charge of it",
    "via": "Techmeme"
   },
   {
@@ -121,11 +121,11 @@
    "via": "Techmeme"
   },
   {
-   "title": "Tests: chatbots rely on three obscure AI-built voter sites for US midterm answers; Copilot cited th…",
-   "url": "https://www.washingtonpost.com/technology/2026/10/30/how-an-obscure-website-became-force-americas-election-information-machine/?pwapi_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyZWFzb24iOiJnaWZ0IiwibmJmIjoxNzkzMzMyODAwLCJpc3MiOiJzdWJzY3JpcHRpb25zIiwiZXhwIjoxNzk0NzE4Nzk5LCJpYXQiOjE3OTMzMzI4MDAsImp0aSI6ImFlZmU1ZmI3LThlMmItNDYwOC1iMmVhLWJiZDg2YTFmZDQ1ZCIsInVybCI6Imh0dHBzOi8vd3d3Lndhc2hpbmd0b25wb3N0LmNvbS90ZWNobm9sb2d5LzIwMjYvMTAvMzAvaG93LWFuLW9ic2N1cmUtd2Vic2l0ZS1iZWNhbWUtZm9yY2UtYW1lcmljYXMtZWxlY3Rpb24taW5mb3JtYXRpb24tbWFjaGluZS8ifQ.lCIALy15UkNNilYI0FU_HKDmoqz6MM-BgZD4xUT8pME&itid=gfta",
-   "source": "Washington Post",
-   "published_at": "2026-11-01T00:03:14Z",
-   "text": "Tests: chatbots rely on three obscure AI-built voter sites for US midterm answers; Copilot cited the error-prone Ballot Brief in 75% of tests and ChatGPT in 22%. Frustrated with hunting for information on political candidates, Ben Torres Ezrick set out to build a one-stop shop for voters.",
+   "title": "How AI detectors like Pangram are changing human writing: authors drop em dashes, “not X, but Y” ph…",
+   "url": "https://www.bloomberg.com/news/features/2026-10-30/how-ai-detectors-like-pangram-are-changing-human-writing?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc5MzM2MDg2MCwiZXhwIjoxNzkzOTY1NjYwLCJhcnRpY2xlSWQiOiJUTlBLU0FLSVVQU0MwMCIsImJjb25uZWN0SWQiOiI1MEU0OTBGQjhDNTM0MkREODAwRUEyNTQ1RjBCMThCOCJ9.QWmO8ZCSYNuUI7oMX4N9wEkQtBDq_LYD89yJOMz3bfE",
+   "source": "Morgan Meaker / Bloomberg",
+   "published_at": "2026-10-31T13:42:13Z",
+   "text": "How AI detectors like Pangram are changing human writing: authors drop em dashes, “not X, but Y” phrasing, and words like “delve”, or add typos, to look human",
    "via": "Techmeme"
   }
  ],
