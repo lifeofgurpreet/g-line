@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-01T18:07:38Z",
+ "generated_at": "2026-11-01T18:40:05Z",
  "items": [
   {
    "title": "Binance has started resuming withdrawals in phases, including for BTC and ETH, after covering 95% o…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-01T15:23:56Z",
    "text": "Mythos 5.5 is already listed HTML source code of Anthropic's official website Thanks to the anonymous person who sent me the tip via email :)…",
    "author_name": "Chubby♨️",
-   "likes": 2259,
+   "likes": 2421,
    "story": "Opus 5.6 imminently about to release"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-11-01T06:28:04Z",
    "text": "Yann LeCun and Randall Balestriero just Proved the Platonic Representation Hypothesis, and found a better way to achieve it. The Platonic Representation Hypothesis suggests that AI models trained on different modalities, like images and text, eventually learn similar…",
    "author_name": "alphaXiv",
-   "likes": 1685,
+   "likes": 1729,
    "story": "new research: A tiny 109M-parameter model outperforms models up to 72B parameters at image-text alignment, using 42× less training data"
   },
   {
@@ -50,8 +50,8 @@
    "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/ai-agent-swarms-unleashed-in-minecraft-to-build-a-thriving-civilization-50-agent-teams-fail-after-falling-into-paralyzing-bureaucracy",
    "source": "Hacker News",
    "published_at": "2026-11-01T13:47:24Z",
-   "text": "105 points and 42 comments on Hacker News.",
-   "points": 105,
+   "text": "112 points and 50 comments on Hacker News.",
+   "points": 112,
    "discussion": "https://news.ycombinator.com/item?id=50325662"
   },
   {
@@ -67,8 +67,8 @@
    "url": "https://nolanlawson.com/2026/10/28/the-ai-cost-of-javascript-frameworks/",
    "source": "Hacker News",
    "published_at": "2026-11-01T06:06:19Z",
-   "text": "211 points and 145 comments on Hacker News.",
-   "points": 211,
+   "text": "222 points and 152 comments on Hacker News.",
+   "points": 222,
    "discussion": "https://news.ycombinator.com/item?id=50323088"
   },
   {
@@ -84,8 +84,8 @@
    "url": "https://github.com/guregodevo/memdoor/tree/main/examples/workflows/team-solve",
    "source": "Hacker News",
    "published_at": "2026-10-31T22:46:12Z",
-   "text": "379 points and 184 comments on Hacker News.",
-   "points": 379,
+   "text": "383 points and 188 comments on Hacker News.",
+   "points": 383,
    "discussion": "https://news.ycombinator.com/item?id=50320995"
   },
   {
@@ -101,8 +101,8 @@
    "url": "https://mashable.com/tech/anthropic-takes-steps-to-block-video-game-cloning-and-reverse-engineering",
    "source": "Hacker News",
    "published_at": "2026-10-31T21:07:58Z",
-   "text": "172 points and 106 comments on Hacker News.",
-   "points": 172,
+   "text": "173 points and 106 comments on Hacker News.",
+   "points": 173,
    "discussion": "https://news.ycombinator.com/item?id=50320255"
   },
   {
@@ -114,19 +114,19 @@
    "via": "Techmeme"
   },
   {
-   "title": "Tests: chatbots rely on three obscure AI-built voter sites for US midterm answers; Copilot cited th…",
-   "url": "https://www.washingtonpost.com/technology/2026/10/30/how-an-obscure-website-became-force-americas-election-information-machine/?pwapi_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyZWFzb24iOiJnaWZ0IiwibmJmIjoxNzkzMzMyODAwLCJpc3MiOiJzdWJzY3JpcHRpb25zIiwiZXhwIjoxNzk0NzE4Nzk5LCJpYXQiOjE3OTMzMzI4MDAsImp0aSI6ImFlZmU1ZmI3LThlMmItNDYwOC1iMmVhLWJiZDg2YTFmZDQ1ZCIsInVybCI6Imh0dHBzOi8vd3d3Lndhc2hpbmd0b25wb3N0LmNvbS90ZWNobm9sb2d5LzIwMjYvMTAvMzAvaG93LWFuLW9ic2N1cmUtd2Vic2l0ZS1iZWNhbWUtZm9yY2UtYW1lcmljYXMtZWxlY3Rpb24taW5mb3JtYXRpb24tbWFjaGluZS8ifQ.lCIALy15UkNNilYI0FU_HKDmoqz6MM-BgZD4xUT8pME&itid=gfta",
-   "source": "Washington Post",
-   "published_at": "2026-11-01T00:03:14Z",
-   "text": "Tests: chatbots rely on three obscure AI-built voter sites for US midterm answers; Copilot cited the error-prone Ballot Brief in 75% of tests and ChatGPT in 22%. Frustrated with hunting for information on political candidates, Ben Torres Ezrick set out to build a one-stop shop for voters.",
-   "via": "Techmeme"
-  },
-  {
    "title": "Researchers are paid $5K for reporting a bug to OpenAI that would let attackers run code in logged-…",
    "url": "https://thehackernews.com/2026/10/a-shared-chatgpt-link-could-run.html",
    "source": "Swati Khandelwal / The Hack…",
    "published_at": "2026-10-31T19:02:18Z",
    "text": "Researchers are paid $5K for reporting a bug to OpenAI that would let attackers run code in logged-in sessions of all who opened the hacker's ChatGPT share link. A malicious ChatGPT share link could run an attacker's code in the logged-in session of anyone who opened it …",
+   "via": "Techmeme"
+  },
+  {
+   "title": "Tests: chatbots rely on three obscure AI-built voter sites for US midterm answers; Copilot cited th…",
+   "url": "https://www.washingtonpost.com/technology/2026/10/30/how-an-obscure-website-became-force-americas-election-information-machine/?pwapi_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyZWFzb24iOiJnaWZ0IiwibmJmIjoxNzkzMzMyODAwLCJpc3MiOiJzdWJzY3JpcHRpb25zIiwiZXhwIjoxNzk0NzE4Nzk5LCJpYXQiOjE3OTMzMzI4MDAsImp0aSI6ImFlZmU1ZmI3LThlMmItNDYwOC1iMmVhLWJiZDg2YTFmZDQ1ZCIsInVybCI6Imh0dHBzOi8vd3d3Lndhc2hpbmd0b25wb3N0LmNvbS90ZWNobm9sb2d5LzIwMjYvMTAvMzAvaG93LWFuLW9ic2N1cmUtd2Vic2l0ZS1iZWNhbWUtZm9yY2UtYW1lcmljYXMtZWxlY3Rpb24taW5mb3JtYXRpb24tbWFjaGluZS8ifQ.lCIALy15UkNNilYI0FU_HKDmoqz6MM-BgZD4xUT8pME&itid=gfta",
+   "source": "Washington Post",
+   "published_at": "2026-11-01T00:03:14Z",
+   "text": "Tests: chatbots rely on three obscure AI-built voter sites for US midterm answers; Copilot cited the error-prone Ballot Brief in 75% of tests and ChatGPT in 22%. Frustrated with hunting for information on political candidates, Ben Torres Ezrick set out to build a one-stop shop for voters.",
    "via": "Techmeme"
   }
  ],
