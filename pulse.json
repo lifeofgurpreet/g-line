@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-01T12:46:49Z",
+ "generated_at": "2026-11-01T13:18:03Z",
  "items": [
   {
    "title": "Binance says it plans to resume withdrawals in phases starting Sunday, after covering 95% of the ~$…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-01T06:28:04Z",
    "text": "Yann LeCun and Randall Balestriero just Proved the Platonic Representation Hypothesis, and found a better way to achieve it. The Platonic Representation Hypothesis suggests that AI models trained on different modalities, like images and text, eventually learn similar…",
    "author_name": "alphaXiv",
-   "likes": 665,
+   "likes": 802,
    "story": "new research: A tiny 109M-parameter model outperforms models up to 72B parameters at image-text alignment, using 42× less training data"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-10-30T21:00:02Z",
    "text": "Apple CEO John Ternus believes that, while AI can be useful, Apple products should continue to be designed primarily by humans and not AI. \"The creation of products is a deeply human and personal thing, something that we love to do.\"",
    "author_name": "Pubity",
-   "likes": 5473,
+   "likes": 5489,
    "story": "John Ternus says Apple doesn't “want to ship AI for AI's sake” and that Tim Cook is “available to help wherever I ask” on policy; Ternus has yet to meet Trump"
   },
   {
@@ -50,8 +50,8 @@
    "url": "https://nolanlawson.com/2026/10/28/the-ai-cost-of-javascript-frameworks/",
    "source": "Hacker News",
    "published_at": "2026-11-01T06:06:19Z",
-   "text": "121 points and 70 comments on Hacker News.",
-   "points": 121,
+   "text": "133 points and 83 comments on Hacker News.",
+   "points": 133,
    "discussion": "https://news.ycombinator.com/item?id=50323088"
   },
   {
@@ -61,7 +61,7 @@
    "published_at": "2026-10-31T14:56:56Z",
    "text": "1/3 A CPU inside an LLM is one thing, but running another LLM inside an LLM would be taking things a bit too far, wouldn't it? Anyways, here's an LLM running inside an LLM : QwenPU, an LLM (@karpathy's stories260k) running on an NPU compiled inside Qwen 3.5-4B's weights.",
    "author_name": "div (fp32)",
-   "likes": 1961,
+   "likes": 1979,
    "story": "An LLM inside an LLM - Same guy who put a RISK-V CPU inside Qwen has now made Karpathy's stories260k run on an NPU compiled inside Qwen 3.5-4B's weights"
   },
   {
@@ -72,6 +72,23 @@
    "text": "Anthropic is an AI safety and research company that's working to build reliable, interpretable, and steerable AI systems."
   },
   {
+   "title": "Insurance software maker Guidewire agrees to acquire Hyperexponential, which makes AI-powered insur…",
+   "url": "https://www.reuters.com/legal/litigation/guidewire-buy-uk-insurance-ai-firm-hyperexponential-deal-worth-up-21-billion-2026-10-27/",
+   "source": "Anzar Mehraj / Reuters",
+   "published_at": "2026-11-01T04:50:56Z",
+   "text": "Insurance software maker Guidewire agrees to acquire Hyperexponential, which makes AI-powered insurance underwriting and pricing software, for $1.7B in cash. Insurance software maker Guidewire (GWRE.N) said on Tuesday it would buy hyperexponential for $1.7 billion in cash and up to $400 million …",
+   "via": "Techmeme"
+  },
+  {
+   "title": "Memdoor: A team of 5 Qwen3.8-27B models beats Fable 5 on LiveCodeBench Hard",
+   "url": "https://github.com/guregodevo/memdoor/tree/main/examples/workflows/team-solve",
+   "source": "Hacker News",
+   "published_at": "2026-10-31T22:46:12Z",
+   "text": "292 points and 134 comments on Hacker News.",
+   "points": 292,
+   "discussion": "https://news.ycombinator.com/item?id=50320995"
+  },
+  {
    "title": "Researchers are paid $5K for reporting a bug to OpenAI that would let attackers run code in logged-…",
    "url": "https://thehackernews.com/2026/10/a-shared-chatgpt-link-could-run.html",
    "source": "Swati Khandelwal / The Hack…",
@@ -80,29 +97,12 @@
    "via": "Techmeme"
   },
   {
-   "title": "Memdoor: A team of 5 Qwen3.8-27B models beats Fable 5 on LiveCodeBench Hard",
-   "url": "https://github.com/guregodevo/memdoor/tree/main/examples/workflows/team-solve",
-   "source": "Hacker News",
-   "published_at": "2026-10-31T22:46:12Z",
-   "text": "281 points and 128 comments on Hacker News.",
-   "points": 281,
-   "discussion": "https://news.ycombinator.com/item?id=50320995"
-  },
-  {
-   "title": "Lumaril, which develops AI software for optimizing industrial production by connecting to existing…",
-   "url": "https://www.wsj.com/pro/venture-capital/ai-startup-lumaril-wants-to-make-factories-the-best-version-of-themselves-b65ea83d",
-   "source": "Sarah Klearman / Wall Stree…",
-   "published_at": "2026-11-01T05:36:01Z",
-   "text": "Lumaril, which develops AI software for optimizing industrial production by connecting to existing control systems, raised a $66M Series A at a $400M valuation. The AI-for-manufacturers company has raised $66 million at a $400 million valuation — Think of running a production line on a factory floor as a kind of art.",
-   "via": "Techmeme"
-  },
-  {
    "title": "ChatGPT and Codex usage limits merging",
    "url": "https://help.openai.com/en/articles/20001625-understanding-chatgpt-and-codex-usage-limits",
    "source": "Hacker News",
    "published_at": "2026-10-31T21:49:07Z",
-   "text": "173 points and 107 comments on Hacker News.",
-   "points": 173,
+   "text": "183 points and 118 comments on Hacker News.",
+   "points": 183,
    "discussion": "https://news.ycombinator.com/item?id=50320588"
   },
   {
@@ -118,16 +118,16 @@
    "url": "https://mashable.com/tech/anthropic-takes-steps-to-block-video-game-cloning-and-reverse-engineering",
    "source": "Hacker News",
    "published_at": "2026-10-31T21:07:58Z",
-   "text": "156 points and 98 comments on Hacker News.",
-   "points": 156,
+   "text": "157 points and 100 comments on Hacker News.",
+   "points": 157,
    "discussion": "https://news.ycombinator.com/item?id=50320255"
   },
   {
-   "title": "Insurance software maker Guidewire agrees to acquire Hyperexponential, which makes AI-powered insur…",
-   "url": "https://www.reuters.com/legal/litigation/guidewire-buy-uk-insurance-ai-firm-hyperexponential-deal-worth-up-21-billion-2026-10-27/",
-   "source": "Anzar Mehraj / Reuters",
-   "published_at": "2026-11-01T04:50:56Z",
-   "text": "Insurance software maker Guidewire agrees to acquire Hyperexponential, which makes AI-powered insurance underwriting and pricing software, for $1.7B in cash. Insurance software maker Guidewire (GWRE.N) said on Tuesday it would buy hyperexponential for $1.7 billion in cash and up to $400 million …",
+   "title": "Lumaril, which develops AI software for optimizing industrial production by connecting to existing…",
+   "url": "https://www.wsj.com/pro/venture-capital/ai-startup-lumaril-wants-to-make-factories-the-best-version-of-themselves-b65ea83d",
+   "source": "Sarah Klearman / Wall Stree…",
+   "published_at": "2026-11-01T05:36:01Z",
+   "text": "Lumaril, which develops AI software for optimizing industrial production by connecting to existing control systems, raised a $66M Series A at a $400M valuation. The AI-for-manufacturers company has raised $66 million at a $400 million valuation — Think of running a production line on a factory floor as a kind of art.",
    "via": "Techmeme"
   }
  ],
