@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-01T15:28:03Z",
+ "generated_at": "2026-11-01T15:59:39Z",
  "items": [
   {
    "title": "Binance has started resuming withdrawals in phases, including for BTC and ETH, after covering 95% o…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-01T06:28:04Z",
    "text": "Yann LeCun and Randall Balestriero just Proved the Platonic Representation Hypothesis, and found a better way to achieve it. The Platonic Representation Hypothesis suggests that AI models trained on different modalities, like images and text, eventually learn similar…",
    "author_name": "alphaXiv",
-   "likes": 1308,
+   "likes": 1384,
    "story": "new research: A tiny 109M-parameter model outperforms models up to 72B parameters at image-text alignment, using 42× less training data"
   },
   {
@@ -40,8 +40,8 @@
    "url": "https://nolanlawson.com/2026/10/28/the-ai-cost-of-javascript-frameworks/",
    "source": "Hacker News",
    "published_at": "2026-11-01T06:06:19Z",
-   "text": "177 points and 118 comments on Hacker News.",
-   "points": 177,
+   "text": "183 points and 123 comments on Hacker News.",
+   "points": 183,
    "discussion": "https://news.ycombinator.com/item?id=50323088"
   },
   {
@@ -64,9 +64,26 @@
    "url": "https://github.com/guregodevo/memdoor/tree/main/examples/workflows/team-solve",
    "source": "Hacker News",
    "published_at": "2026-10-31T22:46:12Z",
-   "text": "333 points and 163 comments on Hacker News.",
-   "points": 333,
+   "text": "341 points and 166 comments on Hacker News.",
+   "points": 341,
    "discussion": "https://news.ycombinator.com/item?id=50320995"
+  },
+  {
+   "title": "A profile of White House OSTP Director Michael Kratsios, an ex-Peter Thiel aide who is among a hand…",
+   "url": "https://colossus.com/article/michael-kratsios-office-frontier-ostp/",
+   "source": "Harry Lambert / Colossus",
+   "published_at": "2026-11-01T15:30:35Z",
+   "text": "A profile of White House OSTP Director Michael Kratsios, an ex-Peter Thiel aide who is among a handful of players steering the Trump administration's AI policy. The fight to regulate AI and reform American science runs through a little-known White House office, and the Thiel-turned-Trump aide in charge of it",
+   "via": "Techmeme"
+  },
+  {
+   "title": "Anthropic takes steps to block Claude from reverse-engineering video games",
+   "url": "https://mashable.com/tech/anthropic-takes-steps-to-block-video-game-cloning-and-reverse-engineering",
+   "source": "Hacker News",
+   "published_at": "2026-10-31T21:07:58Z",
+   "text": "166 points and 104 comments on Hacker News.",
+   "points": 166,
+   "discussion": "https://news.ycombinator.com/item?id=50320255"
   },
   {
    "title": "Lumaril, which develops AI software for optimizing industrial production by connecting to existing…",
@@ -77,20 +94,11 @@
    "via": "Techmeme"
   },
   {
-   "title": "Anthropic takes steps to block Claude from reverse-engineering video games",
-   "url": "https://mashable.com/tech/anthropic-takes-steps-to-block-video-game-cloning-and-reverse-engineering",
-   "source": "Hacker News",
-   "published_at": "2026-10-31T21:07:58Z",
-   "text": "165 points and 101 comments on Hacker News.",
-   "points": 165,
-   "discussion": "https://news.ycombinator.com/item?id=50320255"
-  },
-  {
    "title": "Google says its Suncatcher prototype data center satellite is online after an October 1 launch, wit…",
    "url": "https://techcrunch.com/2026/10/30/googles-first-data-center-satellite-is-online-and-writing-poetry/",
    "source": "Tim Fernholz / TechCrunch",
    "published_at": "2026-10-30T18:41:22Z",
-   "text": "Google says its Suncatcher prototype data center satellite is online after an October 1 launch, with Gemma 4 generating a haiku about being in space. Google Suncatcher's prototype space data center is online and communicating with the ground after launching earlier this month alongside …",
+   "text": "Google says its Suncatcher prototype data center satellite is online after an October 1 launch, with Gemma 4 generating a haiku about being in space",
    "via": "Techmeme"
   },
   {
@@ -102,27 +110,19 @@
    "via": "Techmeme"
   },
   {
+   "title": "As AI models commoditize, lasting wealth will accrue to those controlling chokepoints like distribu…",
+   "url": "https://commanding-heights.com/#top",
+   "source": "The Commanding Heights",
+   "published_at": "2026-10-31T06:30:51Z",
+   "text": "As AI models commoditize, lasting wealth will accrue to those controlling chokepoints like distribution, payment rails, and a stablecoin dollar, not to the labs",
+   "via": "Techmeme"
+  },
+  {
    "title": "Tests: chatbots rely on three obscure AI-built voter sites for US midterm answers; Copilot cited th…",
    "url": "https://www.washingtonpost.com/technology/2026/10/30/how-an-obscure-website-became-force-americas-election-information-machine/?pwapi_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyZWFzb24iOiJnaWZ0IiwibmJmIjoxNzkzMzMyODAwLCJpc3MiOiJzdWJzY3JpcHRpb25zIiwiZXhwIjoxNzk0NzE4Nzk5LCJpYXQiOjE3OTMzMzI4MDAsImp0aSI6ImFlZmU1ZmI3LThlMmItNDYwOC1iMmVhLWJiZDg2YTFmZDQ1ZCIsInVybCI6Imh0dHBzOi8vd3d3Lndhc2hpbmd0b25wb3N0LmNvbS90ZWNobm9sb2d5LzIwMjYvMTAvMzAvaG93LWFuLW9ic2N1cmUtd2Vic2l0ZS1iZWNhbWUtZm9yY2UtYW1lcmljYXMtZWxlY3Rpb24taW5mb3JtYXRpb24tbWFjaGluZS8ifQ.lCIALy15UkNNilYI0FU_HKDmoqz6MM-BgZD4xUT8pME&itid=gfta",
    "source": "Washington Post",
    "published_at": "2026-11-01T00:03:14Z",
    "text": "Tests: chatbots rely on three obscure AI-built voter sites for US midterm answers; Copilot cited the error-prone Ballot Brief in 75% of tests and ChatGPT in 22%. Frustrated with hunting for information on political candidates, Ben Torres Ezrick set out to build a one-stop shop for voters.",
-   "via": "Techmeme"
-  },
-  {
-   "title": "How AI detectors like Pangram are changing human writing: authors drop em dashes, “not X, but Y” ph…",
-   "url": "https://www.bloomberg.com/news/features/2026-10-30/how-ai-detectors-like-pangram-are-changing-human-writing?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc5MzM2MDg2MCwiZXhwIjoxNzkzOTY1NjYwLCJhcnRpY2xlSWQiOiJUTlBLU0FLSVVQU0MwMCIsImJjb25uZWN0SWQiOiI1MEU0OTBGQjhDNTM0MkREODAwRUEyNTQ1RjBCMThCOCJ9.QWmO8ZCSYNuUI7oMX4N9wEkQtBDq_LYD89yJOMz3bfE",
-   "source": "Morgan Meaker / Bloomberg",
-   "published_at": "2026-10-31T13:42:13Z",
-   "text": "How AI detectors like Pangram are changing human writing: authors drop em dashes, “not X, but Y” phrasing, and words like “delve”, or add typos, to look human. As AI transforms writing and detectors like Pangram police what counts as machine-generated …",
-   "via": "Techmeme"
-  },
-  {
-   "title": "Enterprise voice AI tools provider Deepgram acquires Daily, which has raised $62M+ and develops ope…",
-   "url": "https://techcrunch.com/2026/10/29/deepgram-acquires-pipecat-maker-daily-to-bolster-its-voice-ai-infrastructure/",
-   "source": "Ivan Mehta / TechCrunch",
-   "published_at": "2026-11-01T05:15:55Z",
-   "text": "Enterprise voice AI tools provider Deepgram acquires Daily, which has raised $62M+ and develops open-source voice AI framework Pipecat, for an undisclosed sum. The voice AI sector is hot, and top players are trying to consolidate their position as more business models come to the fore through partnerships and acquisitions.",
    "via": "Techmeme"
   }
  ],
