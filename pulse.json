@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-02T11:19:29Z",
+ "generated_at": "2026-11-02T11:52:12Z",
  "items": [
   {
    "title": "SemiAnalysis launches GDPx, an agentic capability benchmark measuring 11 domains, including chip de…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-01T15:23:56Z",
    "text": "Mythos 5.5 is already listed HTML source code of Anthropic's official website Thanks to the anonymous person who sent me the tip via email :)…",
    "author_name": "Chubby♨️",
-   "likes": 3397,
+   "likes": 3410,
    "story": "Opus 5.6 imminently about to release"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-11-01T18:25:40Z",
    "text": "OpenAI is preparing for a post midterms change in the weather. Axios:",
    "author_name": "Andrew Curran",
-   "likes": 832,
+   "likes": 837,
    "story": "OpenAI plans a post-midterms policy and PR blitz, pushing mandatory “speed limits” for powerful AI and rebranding its data centers as “AI compute campuses”"
   },
   {
@@ -46,13 +46,13 @@
    "via": "Techmeme"
   },
   {
-   "title": "The AI cost of JavaScript frameworks",
-   "url": "https://nolanlawson.com/2026/10/28/the-ai-cost-of-javascript-frameworks/",
+   "title": "China's First Frontier AI Export Controls: Mofcom Announcement No. 48",
+   "url": "https://labs.cloudsecurityalliance.org/research/csa-research-note-china-ai-export-controls-announcement-48-2/",
    "source": "Hacker News",
-   "published_at": "2026-11-01T06:06:19Z",
-   "text": "382 points and 297 comments on Hacker News.",
-   "points": 382,
-   "discussion": "https://news.ycombinator.com/item?id=50323088"
+   "published_at": "2026-11-02T07:27:28Z",
+   "text": "60 points and 36 comments on Hacker News.",
+   "points": 60,
+   "discussion": "https://news.ycombinator.com/item?id=50334038"
   },
   {
    "title": "A profile of UCLA professor Terence Tao, who was once enthusiastic about AI's role in math but now…",
@@ -63,6 +63,23 @@
    "via": "Techmeme"
   },
   {
+   "title": "The AI cost of JavaScript frameworks",
+   "url": "https://nolanlawson.com/2026/10/28/the-ai-cost-of-javascript-frameworks/",
+   "source": "Hacker News",
+   "published_at": "2026-11-01T06:06:19Z",
+   "text": "388 points and 298 comments on Hacker News.",
+   "points": 388,
+   "discussion": "https://news.ycombinator.com/item?id=50323088"
+  },
+  {
+   "title": "Filing: Anthropic plans to raise up to $3.5B from Japanese investors as part of its IPO, joining Au…",
+   "url": "https://www.bloomberg.com/news/articles/2026-11-02/anthropic-seeks-up-to-3-5-billion-in-japan-for-its-mega-us-ipo",
+   "source": "Yasutaka Tamura / Bloomberg",
+   "published_at": "2026-11-02T10:40:41Z",
+   "text": "Filing: Anthropic plans to raise up to $3.5B from Japanese investors as part of its IPO, joining Australia, Canada, and parts of Europe in having direct access. Anthropic PBC aims to raise up to $3.5 billion from Japanese investors in its initial public offering in the US …",
+   "via": "Techmeme"
+  },
+  {
    "title": "Anthropic takes steps to block Claude from reverse-engineering video games",
    "url": "https://mashable.com/tech/anthropic-takes-steps-to-block-video-game-cloning-and-reverse-engineering",
    "source": "Hacker News",
@@ -70,14 +87,6 @@
    "text": "189 points and 114 comments on Hacker News.",
    "points": 189,
    "discussion": "https://news.ycombinator.com/item?id=50320255"
-  },
-  {
-   "title": "Casap, whose AI tools automate dispute and anti-fraud operations for banks, raised a $56M Series B…",
-   "url": "https://fortune.com/2026/10/28/dd/",
-   "source": "Jeff John Roberts / Fortune",
-   "published_at": "2026-11-02T04:35:39Z",
-   "text": "Casap, whose AI tools automate dispute and anti-fraud operations for banks, raised a $56M Series B led by Base10 Partners, bringing its total funding to $90M. Credit card fraud is hardly new, but the nature of that fraud is undergoing a major shift. In the past, nearly all scams …",
-   "via": "Techmeme"
   },
   {
    "title": "Data analytics provider Hex Technologies, which says it has rebuilt its platform for AI agents, rai…",
@@ -93,14 +102,6 @@
    "source": "Emmy Martin / New York Times",
    "published_at": "2026-11-02T08:46:03Z",
    "text": "How SF's AI boom is reshaping dating: founders treat first dates as interviews, use tech terms like “conversion rate” to track dates, and pay coaches $5K/month. San Francisco's A.I. boom has drawn a wave of young ambitious people who are now reshaping the city's dating life.Kelsey McClellan for The New York Times",
-   "via": "Techmeme"
-  },
-  {
-   "title": "Filing: Anthropic plans to raise up to $3.5B from Japanese investors as part of its IPO, joining Au…",
-   "url": "https://www.bloomberg.com/news/articles/2026-11-02/anthropic-seeks-up-to-3-5-billion-in-japan-for-its-mega-us-ipo",
-   "source": "Yasutaka Tamura / Bloomberg",
-   "published_at": "2026-11-02T10:40:41Z",
-   "text": "Filing: Anthropic plans to raise up to $3.5B from Japanese investors as part of its IPO, joining Australia, Canada, and parts of Europe in having direct access. Anthropic PBC aims to raise up to $3.5 billion from Japanese investors in its initial public offering in the US …",
    "via": "Techmeme"
   },
   {
