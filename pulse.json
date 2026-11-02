@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-02T13:28:09Z",
+ "generated_at": "2026-11-02T14:01:20Z",
  "items": [
   {
    "title": "Marvell agrees to acquire optical components maker Lumentum in a $115B all-stock deal, as it aims t…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-02T04:34:36Z",
    "text": "Great to see high quality benchmarks with headroom and look at that cost line for Carbon🚀",
    "author_name": "Sundar Pichai",
-   "likes": 3054,
+   "likes": 3171,
    "story": "SemiAnalysis launches GDPx, an AI frontier model benchmark measuring 11 domains, including chip design, cybersecurity, and RSI; Opus 5.5 tops with a 12% score"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-11-01T15:23:56Z",
    "text": "Mythos 5.5 is already listed HTML source code of Anthropic's official website Thanks to the anonymous person who sent me the tip via email :)…",
    "author_name": "Chubby♨️",
-   "likes": 3434,
+   "likes": 3450,
    "story": "Opus 5.6 imminently about to release"
   },
   {
@@ -50,8 +50,8 @@
    "url": "https://labs.cloudsecurityalliance.org/research/csa-research-note-china-ai-export-controls-announcement-48-2/",
    "source": "Hacker News",
    "published_at": "2026-11-02T07:27:28Z",
-   "text": "84 points and 51 comments on Hacker News.",
-   "points": 84,
+   "text": "98 points and 54 comments on Hacker News.",
+   "points": 98,
    "discussion": "https://news.ycombinator.com/item?id=50334038"
   },
   {
@@ -61,8 +61,15 @@
    "published_at": "2026-11-01T18:25:40Z",
    "text": "OpenAI is preparing for a post midterms change in the weather. Axios:",
    "author_name": "Andrew Curran",
-   "likes": 853,
+   "likes": 858,
    "story": "OpenAI plans a post-midterms policy and PR blitz, pushing mandatory “speed limits” for powerful AI and rebranding its data centers as “AI compute campuses”"
+  },
+  {
+   "title": "The U.S. Census Bureau and “Super Intelligence”",
+   "url": "https://simonwillison.net/2026/Nov/2/census-bureau-super-intelligence/",
+   "source": "Simon Willison's weblog",
+   "published_at": "2026-11-02T13:31:26Z",
+   "text": "I was reminded today of AI Adoption Rate Trending Down for Large Companies , a chart produced by Apollo Global Management in September 2025, which appeared to show a slowdown in U.S. corporate AI adoption based on numbers collected by the U.S. Census Bureau. At the time I used that chart to demonstrate GPT-5 data analysis , and then to experiment with Claude's new Code Interpreter . I decided to try running those numbers again to see what had changed over the past year, and in doing so learned that the Bureau has fallen foul of Executive Order 14434 , aka the asinine Super Intelligence one."
   },
   {
    "title": "YC details multi-agent tests in games like Minecraft, where agents exhibit emergent capabilities, f…",
@@ -77,16 +84,16 @@
    "url": "https://nolanlawson.com/2026/10/28/the-ai-cost-of-javascript-frameworks/",
    "source": "Hacker News",
    "published_at": "2026-11-01T06:06:19Z",
-   "text": "400 points and 308 comments on Hacker News.",
-   "points": 400,
+   "text": "409 points and 315 comments on Hacker News.",
+   "points": 409,
    "discussion": "https://news.ycombinator.com/item?id=50323088"
   },
   {
-   "title": "A profile of UCLA professor Terence Tao, who was once enthusiastic about AI's role in math but now…",
-   "url": "https://www.newyorker.com/magazine/2026/11/09/the-year-math-changed-forever?currentPage=all",
-   "source": "Rivka Galchen / New Yorker",
-   "published_at": "2026-11-02T09:20:38Z",
-   "text": "A profile of UCLA professor Terence Tao, who was once enthusiastic about AI's role in math but now warns of AI destroying the field's deliberative process. A.I. is solving problems that stumped the field for decades. Mathematicians look to Terence Tao for guidance on their altered world.",
+   "title": "Filing: Anthropic plans to raise up to $3.5B from Japanese investors as part of its IPO, joining Au…",
+   "url": "https://www.bloomberg.com/news/articles/2026-11-02/anthropic-seeks-up-to-3-5-billion-in-japan-for-its-mega-us-ipo",
+   "source": "Yasutaka Tamura / Bloomberg",
+   "published_at": "2026-11-02T10:40:41Z",
+   "text": "Filing: Anthropic plans to raise up to $3.5B from Japanese investors as part of its IPO, joining Australia, Canada, and parts of Europe in having direct access. Anthropic PBC aims to raise up to $3.5 billion from Japanese investors in its initial public offering in the US …",
    "via": "Techmeme"
   },
   {
@@ -99,6 +106,14 @@
    "discussion": "https://news.ycombinator.com/item?id=50320255"
   },
   {
+   "title": "A profile of UCLA professor Terence Tao, who was once enthusiastic about AI's role in math but now…",
+   "url": "https://www.newyorker.com/magazine/2026/11/09/the-year-math-changed-forever?currentPage=all",
+   "source": "Rivka Galchen / New Yorker",
+   "published_at": "2026-11-02T09:20:38Z",
+   "text": "A profile of UCLA professor Terence Tao, who was once enthusiastic about AI's role in math but now warns of AI destroying the field's deliberative process. A.I. is solving problems that stumped the field for decades. Mathematicians look to Terence Tao for guidance on their altered world.",
+   "via": "Techmeme"
+  },
+  {
    "title": "A look at AI safety debates and the rising popularity of “Stop Unilaterally + Raise Awareness”, or…",
    "url": "https://www.lesswrong.com/posts/xikGZ8fuhdG6DApAo/against-sura",
    "source": "Scott Alexander / LessWrong",
@@ -107,27 +122,11 @@
    "via": "Techmeme"
   },
   {
-   "title": "Filing: Anthropic plans to raise up to $3.5B from Japanese investors as part of its IPO, joining Au…",
-   "url": "https://www.bloomberg.com/news/articles/2026-11-02/anthropic-seeks-up-to-3-5-billion-in-japan-for-its-mega-us-ipo",
-   "source": "Yasutaka Tamura / Bloomberg",
-   "published_at": "2026-11-02T10:40:41Z",
-   "text": "Filing: Anthropic plans to raise up to $3.5B from Japanese investors as part of its IPO, joining Australia, Canada, and parts of Europe in having direct access. Anthropic PBC aims to raise up to $3.5 billion from Japanese investors in its initial public offering in the US …",
-   "via": "Techmeme"
-  },
-  {
    "title": "Data analytics provider Hex Technologies, which says it has rebuilt its platform for AI agents, rai…",
    "url": "https://www.forbes.com/sites/timkeary/2026/10/27/hex-threw-out-its-code-to-stop-the-saaspocalypse-raising-100-million/",
    "source": "Tim Keary / Forbes",
    "published_at": "2026-11-02T02:41:18Z",
    "text": "Data analytics provider Hex Technologies, which says it has rebuilt its platform for AI agents, raised a $100M Series D led by Peak XV at a $1.2B valuation. This voice experience is generated by AI. Learn more. … The SaaSpocalypse has become one of the most controversial topics in enterprise tech.",
-   "via": "Techmeme"
-  },
-  {
-   "title": "How SF's AI boom is reshaping dating: founders treat first dates as interviews, use tech terms like…",
-   "url": "https://www.nytimes.com/2026/10/31/technology/san-francisco-ai-boom-dating.html?unlocked_article_code=1.NFE.wr2v.F_Wy3TSgmnjB&smid=url-share",
-   "source": "Emmy Martin / New York Times",
-   "published_at": "2026-11-02T08:46:03Z",
-   "text": "How SF's AI boom is reshaping dating: founders treat first dates as interviews, use tech terms like “conversion rate” to track dates, and pay coaches $5K/month. San Francisco's A.I. boom has drawn a wave of young ambitious people who are now reshaping the city's dating life.Kelsey McClellan for The New York Times",
    "via": "Techmeme"
   }
  ],
