@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-02T01:37:54Z",
+ "generated_at": "2026-11-02T02:10:27Z",
  "items": [
   {
    "title": "Binance has started resuming withdrawals in phases, including for BTC and ETH, after covering 95% o…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-01T15:23:56Z",
    "text": "Mythos 5.5 is already listed HTML source code of Anthropic's official website Thanks to the anonymous person who sent me the tip via email :)…",
    "author_name": "Chubby♨️",
-   "likes": 3117,
+   "likes": 3140,
    "story": "Opus 5.6 imminently about to release"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-11-01T18:25:40Z",
    "text": "OpenAI is preparing for a post midterms change in the weather. Axios:",
    "author_name": "Andrew Curran",
-   "likes": 702,
+   "likes": 714,
    "story": "OpenAI plans a post-midterms policy and PR blitz, pushing mandatory “speed limits” for powerful AI and rebranding its data centers as “AI compute campuses”"
   },
   {
@@ -50,8 +50,8 @@
    "url": "https://techcrunch.com/2026/10/25/ai-delivers-zero-financial-payoff-to-most-companies-according-to-apollo-economist/",
    "source": "Hacker News",
    "published_at": "2026-11-01T22:10:45Z",
-   "text": "156 points and 130 comments on Hacker News.",
-   "points": 156,
+   "text": "171 points and 140 comments on Hacker News.",
+   "points": 171,
    "discussion": "https://news.ycombinator.com/item?id=50330456"
   },
   {
@@ -61,7 +61,7 @@
    "published_at": "2026-11-01T06:28:04Z",
    "text": "Yann LeCun and Randall Balestriero just Proved the Platonic Representation Hypothesis, and found a better way to achieve it. The Platonic Representation Hypothesis suggests that AI models trained on different modalities, like images and text, eventually learn similar…",
    "author_name": "alphaXiv",
-   "likes": 2356,
+   "likes": 2390,
    "story": "new research: A tiny 109M-parameter model outperforms models up to 72B parameters at image-text alignment, using 42× less training data"
   },
   {
@@ -77,8 +77,8 @@
    "url": "https://nolanlawson.com/2026/10/28/the-ai-cost-of-javascript-frameworks/",
    "source": "Hacker News",
    "published_at": "2026-11-01T06:06:19Z",
-   "text": "294 points and 228 comments on Hacker News.",
-   "points": 294,
+   "text": "302 points and 230 comments on Hacker News.",
+   "points": 302,
    "discussion": "https://news.ycombinator.com/item?id=50323088"
   },
   {
@@ -115,19 +115,11 @@
    "via": "Techmeme"
   },
   {
-   "title": "Hyperbolic, which lets companies rent AI compute across ~30 neoclouds, raised a $30M Series A-1 led…",
-   "url": "https://www.businessinsider.com/intel-ceo-backs-30-million-round-ai-cloud-startup-hyperbolic-2026-10",
-   "source": "Geoff Weiss / Business Insi…",
-   "published_at": "2026-11-02T01:15:37Z",
-   "text": "Hyperbolic, which lets companies rent AI compute across ~30 neoclouds, raised a $30M Series A-1 led by Lip-Bu Tan's Walden Catalyst; it has raised $50M to date",
-   "via": "Techmeme"
-  },
-  {
-   "title": "Analysis: candidates backing a data center moratorium could win up to 15 of 36 US governors' races…",
-   "url": "https://www.theinformation.com/articles/candidates-backing-data-center-pauses-win-15-governors-races",
-   "source": "Shane Burke / The Informati…",
-   "published_at": "2026-11-01T18:45:40Z",
-   "text": "Analysis: candidates backing a data center moratorium could win up to 15 of 36 US governors' races on Tuesday, including in Texas, Ohio, Michigan, and New York. As data centers have gone from obscurity to the top of voters' minds, midterm candidates are taking a stance on the issue.",
+   "title": "Letter: the White House argues it doesn't have to share the full draft of its voluntary AI testing…",
+   "url": "https://www.theinformation.com/briefings/trump-administration-refuses-release-information-ai-testing-framework",
+   "source": "Leo Schwartz / The Informat…",
+   "published_at": "2026-11-02T01:45:37Z",
+   "text": "Letter: the White House argues it doesn't have to share the full draft of its voluntary AI testing framework, citing national security and commercial exemptions",
    "via": "Techmeme"
   }
  ],
