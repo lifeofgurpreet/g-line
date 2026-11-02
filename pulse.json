@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-01T23:28:00Z",
+ "generated_at": "2026-11-01T23:59:41Z",
  "items": [
   {
    "title": "Google's data center energy head says space data centers cost up to 100x more than Earth-based ones…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-01T15:23:56Z",
    "text": "Mythos 5.5 is already listed HTML source code of Anthropic's official website Thanks to the anonymous person who sent me the tip via email :)…",
    "author_name": "Chubby♨️",
-   "likes": 3017,
+   "likes": 3046,
    "story": "Opus 5.6 imminently about to release"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-11-01T18:25:40Z",
    "text": "OpenAI is preparing for a post midterms change in the weather. Axios:",
    "author_name": "Andrew Curran",
-   "likes": 624,
+   "likes": 641,
    "story": "OpenAI plans a post-midterms policy and PR blitz, pushing mandatory “speed limits” for powerful AI and rebranding its data centers as “AI compute campuses”"
   },
   {
@@ -46,13 +46,13 @@
    "via": "Techmeme"
   },
   {
-   "title": "The AI cost of JavaScript frameworks",
-   "url": "https://nolanlawson.com/2026/10/28/the-ai-cost-of-javascript-frameworks/",
+   "title": "AI delivers 'zero financial payoff' to most companies, Apollo economist says",
+   "url": "https://techcrunch.com/2026/10/25/ai-delivers-zero-financial-payoff-to-most-companies-according-to-apollo-economist/",
    "source": "Hacker News",
-   "published_at": "2026-11-01T06:06:19Z",
-   "text": "274 points and 215 comments on Hacker News.",
-   "points": 274,
-   "discussion": "https://news.ycombinator.com/item?id=50323088"
+   "published_at": "2026-11-01T22:10:45Z",
+   "text": "71 points and 42 comments on Hacker News.",
+   "points": 71,
+   "discussion": "https://news.ycombinator.com/item?id=50330456"
   },
   {
    "title": "Yann LeCun and Randall Balestriero just Proved the Platonic Representation Hypothesis, and found a…",
@@ -61,7 +61,7 @@
    "published_at": "2026-11-01T06:28:04Z",
    "text": "Yann LeCun and Randall Balestriero just Proved the Platonic Representation Hypothesis, and found a better way to achieve it. The Platonic Representation Hypothesis suggests that AI models trained on different modalities, like images and text, eventually learn similar…",
    "author_name": "alphaXiv",
-   "likes": 2204,
+   "likes": 2247,
    "story": "new research: A tiny 109M-parameter model outperforms models up to 72B parameters at image-text alignment, using 42× less training data"
   },
   {
@@ -73,13 +73,13 @@
    "via": "Techmeme"
   },
   {
-   "title": "Anthropic takes steps to block Claude from reverse-engineering video games",
-   "url": "https://mashable.com/tech/anthropic-takes-steps-to-block-video-game-cloning-and-reverse-engineering",
+   "title": "The AI cost of JavaScript frameworks",
+   "url": "https://nolanlawson.com/2026/10/28/the-ai-cost-of-javascript-frameworks/",
    "source": "Hacker News",
-   "published_at": "2026-10-31T21:07:58Z",
-   "text": "180 points and 112 comments on Hacker News.",
-   "points": 180,
-   "discussion": "https://news.ycombinator.com/item?id=50320255"
+   "published_at": "2026-11-01T06:06:19Z",
+   "text": "282 points and 221 comments on Hacker News.",
+   "points": 282,
+   "discussion": "https://news.ycombinator.com/item?id=50323088"
   },
   {
    "title": "Saudi Aramco acquires a 49% stake in AI startup Humain, contributing ~$2.6B in cash in 2026 plus AI…",
@@ -88,6 +88,15 @@
    "published_at": "2026-11-01T22:15:37Z",
    "text": "Saudi Aramco acquires a 49% stake in AI startup Humain, contributing ~$2.6B in cash in 2026 plus AI, compute, and digital assets; Saudi Arabia's PIF retains 51%",
    "via": "Techmeme"
+  },
+  {
+   "title": "Anthropic takes steps to block Claude from reverse-engineering video games",
+   "url": "https://mashable.com/tech/anthropic-takes-steps-to-block-video-game-cloning-and-reverse-engineering",
+   "source": "Hacker News",
+   "published_at": "2026-10-31T21:07:58Z",
+   "text": "180 points and 112 comments on Hacker News.",
+   "points": 180,
+   "discussion": "https://news.ycombinator.com/item?id=50320255"
   },
   {
    "title": "Analysis: candidates backing a data center moratorium could win up to 15 of 36 US governors' races…",
@@ -119,14 +128,6 @@
    "source": "Washington Post",
    "published_at": "2026-11-01T00:03:14Z",
    "text": "Tests: chatbots rely on three obscure AI-built voter sites for US midterm answers; Copilot cited the error-prone Ballot Brief in 75% of tests and ChatGPT in 22%. Frustrated with hunting for information on political candidates, Ben Torres Ezrick set out to build a one-stop shop for voters.",
-   "via": "Techmeme"
-  },
-  {
-   "title": "Insurance software maker Guidewire agrees to acquire Hyperexponential, which makes AI-powered insur…",
-   "url": "https://www.reuters.com/legal/litigation/guidewire-buy-uk-insurance-ai-firm-hyperexponential-deal-worth-up-21-billion-2026-10-27/",
-   "source": "Anzar Mehraj / Reuters",
-   "published_at": "2026-11-01T04:50:56Z",
-   "text": "Insurance software maker Guidewire agrees to acquire Hyperexponential, which makes AI-powered insurance underwriting and pricing software, for $1.7B+ in cash",
    "via": "Techmeme"
   }
  ],
