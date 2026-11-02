@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-02T05:56:46Z",
+ "generated_at": "2026-11-02T06:29:14Z",
  "items": [
   {
    "title": "SemiAnalysis launches GDPx, an agentic capability benchmark measuring 11 domains, including chip de…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-01T15:23:56Z",
    "text": "Mythos 5.5 is already listed HTML source code of Anthropic's official website Thanks to the anonymous person who sent me the tip via email :)…",
    "author_name": "Chubby♨️",
-   "likes": 3283,
+   "likes": 3305,
    "story": "Opus 5.6 imminently about to release"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-11-01T18:25:40Z",
    "text": "OpenAI is preparing for a post midterms change in the weather. Axios:",
    "author_name": "Andrew Curran",
-   "likes": 778,
+   "likes": 785,
    "story": "OpenAI plans a post-midterms policy and PR blitz, pushing mandatory “speed limits” for powerful AI and rebranding its data centers as “AI compute campuses”"
   },
   {
@@ -46,23 +46,13 @@
    "via": "Techmeme"
   },
   {
-   "title": "The AI cost of JavaScript frameworks",
-   "url": "https://nolanlawson.com/2026/10/28/the-ai-cost-of-javascript-frameworks/",
+   "title": "AI fan wikis riddled with errors are muddying the waters of games culture",
+   "url": "https://www.eurogamer.net/ai-fan-wikis-errors-complicating-games-culture",
    "source": "Hacker News",
-   "published_at": "2026-11-01T06:06:19Z",
-   "text": "336 points and 258 comments on Hacker News.",
-   "points": 336,
-   "discussion": "https://news.ycombinator.com/item?id=50323088"
-  },
-  {
-   "title": "Yann LeCun and Randall Balestriero just Proved the Platonic Representation Hypothesis, and found a…",
-   "url": "https://x.com/askalphaxiv/status/2116779287390896418",
-   "source": "𝕏 @askalphaxiv",
-   "published_at": "2026-11-01T06:28:04Z",
-   "text": "Yann LeCun and Randall Balestriero just Proved the Platonic Representation Hypothesis, and found a better way to achieve it. The Platonic Representation Hypothesis suggests that AI models trained on different modalities, like images and text, eventually learn similar…",
-   "author_name": "alphaXiv",
-   "likes": 2600,
-   "story": "new research: A tiny 109M-parameter model outperforms models up to 72B parameters at image-text alignment, using 42× less training data"
+   "published_at": "2026-11-02T01:47:07Z",
+   "text": "64 points and 40 comments on Hacker News.",
+   "points": 64,
+   "discussion": "https://news.ycombinator.com/item?id=50332086"
   },
   {
    "title": "Casap, whose AI tools automate dispute and anti-fraud operations for banks, raised a $56M Series B…",
@@ -73,13 +63,13 @@
    "via": "Techmeme"
   },
   {
-   "title": "Anthropic takes steps to block Claude from reverse-engineering video games",
-   "url": "https://mashable.com/tech/anthropic-takes-steps-to-block-video-game-cloning-and-reverse-engineering",
+   "title": "The AI cost of JavaScript frameworks",
+   "url": "https://nolanlawson.com/2026/10/28/the-ai-cost-of-javascript-frameworks/",
    "source": "Hacker News",
-   "published_at": "2026-10-31T21:07:58Z",
-   "text": "183 points and 113 comments on Hacker News.",
-   "points": 183,
-   "discussion": "https://news.ycombinator.com/item?id=50320255"
+   "published_at": "2026-11-01T06:06:19Z",
+   "text": "344 points and 261 comments on Hacker News.",
+   "points": 344,
+   "discussion": "https://news.ycombinator.com/item?id=50323088"
   },
   {
    "title": "Broccoli AI, which sells AI agents to plumbing, HVAC, and electrical companies, raised a $22M Serie…",
@@ -88,6 +78,15 @@
    "published_at": "2026-11-02T02:15:37Z",
    "text": "Broccoli AI, which sells AI agents to plumbing, HVAC, and electrical companies, raised a $22M Series A and a $30M Series B; a source says it is valued at $300M. When Marcelle Flowers' staff told her that two students were waiting at the counter of her Sacramento plumbing shop, she grabbed her wallet.",
    "via": "Techmeme"
+  },
+  {
+   "title": "Anthropic takes steps to block Claude from reverse-engineering video games",
+   "url": "https://mashable.com/tech/anthropic-takes-steps-to-block-video-game-cloning-and-reverse-engineering",
+   "source": "Hacker News",
+   "published_at": "2026-10-31T21:07:58Z",
+   "text": "183 points and 113 comments on Hacker News.",
+   "points": 183,
+   "discussion": "https://news.ycombinator.com/item?id=50320255"
   },
   {
    "title": "Google's data center energy head says space data centers cost up to 100x more than Earth-based ones…",
@@ -106,19 +105,11 @@
    "via": "Techmeme"
   },
   {
-   "title": "AI-powered medical search engine Vera Health, which says it is used by 800,000+ clinicians in 190 c…",
-   "url": "https://www.fiercehealthcare.com/finance/vera-health-secures-285m-series-ai-driven-clinical-search-engine",
-   "source": "Cailey Gleeson / Fierce Hea…",
-   "published_at": "2026-11-02T03:35:36Z",
-   "text": "AI-powered medical search engine Vera Health, which says it is used by 800,000+ clinicians in 190 countries, raised a $28.5M Series A led by Threshold Ventures. Artificial Intelligence funding round series A venture capital (VC) — Clinical artificial intelligence search engine Vera …",
-   "via": "Techmeme"
-  },
-  {
-   "title": "Letter: the White House argues it doesn't have to share the full draft of its voluntary AI testing…",
-   "url": "https://www.theinformation.com/briefings/trump-administration-refuses-release-information-ai-testing-framework",
-   "source": "Leo Schwartz / The Informat…",
-   "published_at": "2026-11-02T01:45:37Z",
-   "text": "Letter: the White House argues it doesn't have to share the full draft of its voluntary AI testing framework, citing national security and commercial exemptions. The Trump administration declined to produce key documents related to its voluntary AI testing framework …",
+   "title": "South Korean President Lee Jae Myung vows $15.97B for AI, chips, physical AI, and data centers in t…",
+   "url": "https://www.reuters.com/world/asia-pacific/south-koreas-lee-vows-make-bold-ai-investment-record-budget-push-2026-11-02/",
+   "source": "Reuters",
+   "published_at": "2026-11-02T04:05:38Z",
+   "text": "South Korean President Lee Jae Myung vows $15.97B for AI, chips, physical AI, and data centers in the country's 2027 budget, nearly twice the 2026 amount",
    "via": "Techmeme"
   },
   {
@@ -127,6 +118,14 @@
    "source": "Harry Lambert / Colossus",
    "published_at": "2026-11-01T15:30:35Z",
    "text": "A profile of White House OSTP Director Michael Kratsios, an ex-Peter Thiel aide who is among a handful of players steering the Trump administration's AI policy",
+   "via": "Techmeme"
+  },
+  {
+   "title": "AI-powered medical search engine Vera Health, which says it is used by 800,000+ clinicians in 190 c…",
+   "url": "https://www.fiercehealthcare.com/finance/vera-health-secures-285m-series-ai-driven-clinical-search-engine",
+   "source": "Cailey Gleeson / Fierce Hea…",
+   "published_at": "2026-11-02T03:35:36Z",
+   "text": "AI-powered medical search engine Vera Health, which says it is used by 800,000+ clinicians in 190 countries, raised a $28.5M Series A led by Threshold Ventures. Artificial Intelligence funding round series A venture capital (VC) — Clinical artificial intelligence search engine Vera …",
    "via": "Techmeme"
   }
  ],
