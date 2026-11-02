@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-02T07:01:18Z",
+ "generated_at": "2026-11-02T07:34:37Z",
  "items": [
   {
    "title": "SemiAnalysis launches GDPx, an agentic capability benchmark measuring 11 domains, including chip de…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-01T15:23:56Z",
    "text": "Mythos 5.5 is already listed HTML source code of Anthropic's official website Thanks to the anonymous person who sent me the tip via email :)…",
    "author_name": "Chubby♨️",
-   "likes": 3318,
+   "likes": 3329,
    "story": "Opus 5.6 imminently about to release"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-11-01T18:25:40Z",
    "text": "OpenAI is preparing for a post midterms change in the weather. Axios:",
    "author_name": "Andrew Curran",
-   "likes": 795,
+   "likes": 804,
    "story": "OpenAI plans a post-midterms policy and PR blitz, pushing mandatory “speed limits” for powerful AI and rebranding its data centers as “AI compute campuses”"
   },
   {
@@ -50,8 +50,8 @@
    "url": "https://www.eurogamer.net/ai-fan-wikis-errors-complicating-games-culture",
    "source": "Hacker News",
    "published_at": "2026-11-02T01:47:07Z",
-   "text": "69 points and 47 comments on Hacker News.",
-   "points": 69,
+   "text": "78 points and 57 comments on Hacker News.",
+   "points": 78,
    "discussion": "https://news.ycombinator.com/item?id=50332086"
   },
   {
@@ -67,8 +67,8 @@
    "url": "https://nolanlawson.com/2026/10/28/the-ai-cost-of-javascript-frameworks/",
    "source": "Hacker News",
    "published_at": "2026-11-01T06:06:19Z",
-   "text": "346 points and 264 comments on Hacker News.",
-   "points": 346,
+   "text": "349 points and 267 comments on Hacker News.",
+   "points": 349,
    "discussion": "https://news.ycombinator.com/item?id=50323088"
   },
   {
@@ -84,17 +84,9 @@
    "url": "https://mashable.com/tech/anthropic-takes-steps-to-block-video-game-cloning-and-reverse-engineering",
    "source": "Hacker News",
    "published_at": "2026-10-31T21:07:58Z",
-   "text": "184 points and 113 comments on Hacker News.",
-   "points": 184,
+   "text": "185 points and 113 comments on Hacker News.",
+   "points": 185,
    "discussion": "https://news.ycombinator.com/item?id=50320255"
-  },
-  {
-   "title": "Bites, whose AI tools deliver personalized training to frontline workers via WhatsApp, SMS, Slack,…",
-   "url": "https://www.calcalistech.com/ctechnews/article/s1t5soetmx",
-   "source": "Meir Orbach / CTech",
-   "published_at": "2026-11-02T06:45:57Z",
-   "text": "Bites, whose AI tools deliver personalized training to frontline workers via WhatsApp, SMS, Slack, and other channels, raised a $40M Series A led by PeakSpan. The platform turns company procedures into short, branded videos delivered through WhatsApp, Teams and other familiar channels.",
-   "via": "Techmeme"
   },
   {
    "title": "Saudi Aramco acquires a 49% stake in AI startup Humain, contributing ~$2.6B in cash in 2026 plus AI…",
@@ -102,6 +94,14 @@
    "source": "Dean Takahashi / GamesBeat",
    "published_at": "2026-11-01T22:15:37Z",
    "text": "Saudi Aramco acquires a 49% stake in AI startup Humain, contributing ~$2.6B in cash in 2026 plus AI, compute, and digital assets; Saudi Arabia's PIF retains 51%. Join the Leaders Making Gaming's Next Big Deals. GamesBeat NEXT brings 500+ executives, CEOs, founders, and investors to San Francisco …",
+   "via": "Techmeme"
+  },
+  {
+   "title": "Bites, whose AI tools deliver personalized training to frontline workers via WhatsApp, SMS, Slack,…",
+   "url": "https://www.calcalistech.com/ctechnews/article/s1t5soetmx",
+   "source": "Meir Orbach / CTech",
+   "published_at": "2026-11-02T06:45:57Z",
+   "text": "Bites, whose AI tools deliver personalized training to frontline workers via WhatsApp, SMS, Slack, and other channels, raised a $40M Series A led by PeakSpan. The platform turns company procedures into short, branded videos delivered through WhatsApp, Teams and other familiar channels.",
    "via": "Techmeme"
   },
   {
@@ -117,7 +117,7 @@
    "url": "https://www.reuters.com/world/asia-pacific/south-koreas-lee-vows-make-bold-ai-investment-record-budget-push-2026-11-02/",
    "source": "Reuters",
    "published_at": "2026-11-02T04:05:38Z",
-   "text": "South Korean President Lee Jae Myung vows $15.97B for AI, chips, physical AI, and data centers in the country's 2027 budget, nearly twice the 2026 amount",
+   "text": "South Korean President Lee Jae Myung vows $15.97B for AI, chips, physical AI, and data centers in the country's 2027 budget, nearly twice the 2026 amount. South Korean President Lee Jae Myung vowed on Monday to make bold investments in artificial intelligence to boost …",
    "via": "Techmeme"
   },
   {
