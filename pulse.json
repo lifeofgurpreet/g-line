@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-02T01:04:54Z",
+ "generated_at": "2026-11-02T01:37:54Z",
  "items": [
   {
    "title": "Binance has started resuming withdrawals in phases, including for BTC and ETH, after covering 95% o…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-01T15:23:56Z",
    "text": "Mythos 5.5 is already listed HTML source code of Anthropic's official website Thanks to the anonymous person who sent me the tip via email :)…",
    "author_name": "Chubby♨️",
-   "likes": 3095,
+   "likes": 3117,
    "story": "Opus 5.6 imminently about to release"
   },
   {
@@ -34,15 +34,15 @@
    "published_at": "2026-11-01T18:25:40Z",
    "text": "OpenAI is preparing for a post midterms change in the weather. Axios:",
    "author_name": "Andrew Curran",
-   "likes": 679,
+   "likes": 702,
    "story": "OpenAI plans a post-midterms policy and PR blitz, pushing mandatory “speed limits” for powerful AI and rebranding its data centers as “AI compute campuses”"
   },
   {
-   "title": "Sources: OpenAI has secured ~$11B in commitments for its latest funding round, less than half its i…",
-   "url": "https://www.wsj.com/tech/ai/openai-raises-less-than-half-of-30-billion-target-in-latest-round-91aecdc5?st=pgo9cE&reflink=desktopwebshare_permalink",
-   "source": "Berber Jin / Wall Street Jo…",
-   "published_at": "2026-10-31T02:30:54Z",
-   "text": "Sources: OpenAI has secured ~$11B in commitments for its latest funding round, less than half its initial $30B target, and expects to raise more in coming weeks. The ChatGPT maker's latest funding round values it at $1.25 trillion, less than its $1.4 trillion target",
+   "title": "Google's data center energy head says space data centers cost up to 100x more than Earth-based ones…",
+   "url": "https://www.theinformation.com/articles/google-energy-chief-space-data-centers-cost-100-times-earth",
+   "source": "Amir Efrati / The Informati…",
+   "published_at": "2026-11-01T17:05:37Z",
+   "text": "Google's data center energy head says space data centers cost up to 100x more than Earth-based ones, and US power supply is sufficient but permits are slow. Data centers in space could cost up to 100 times as much as those on Earth, Google's head of data center energy said this week …",
    "via": "Techmeme"
   },
   {
@@ -50,8 +50,8 @@
    "url": "https://techcrunch.com/2026/10/25/ai-delivers-zero-financial-payoff-to-most-companies-according-to-apollo-economist/",
    "source": "Hacker News",
    "published_at": "2026-11-01T22:10:45Z",
-   "text": "131 points and 115 comments on Hacker News.",
-   "points": 131,
+   "text": "156 points and 130 comments on Hacker News.",
+   "points": 156,
    "discussion": "https://news.ycombinator.com/item?id=50330456"
   },
   {
@@ -61,7 +61,7 @@
    "published_at": "2026-11-01T06:28:04Z",
    "text": "Yann LeCun and Randall Balestriero just Proved the Platonic Representation Hypothesis, and found a better way to achieve it. The Platonic Representation Hypothesis suggests that AI models trained on different modalities, like images and text, eventually learn similar…",
    "author_name": "alphaXiv",
-   "likes": 2323,
+   "likes": 2356,
    "story": "new research: A tiny 109M-parameter model outperforms models up to 72B parameters at image-text alignment, using 42× less training data"
   },
   {
@@ -77,16 +77,16 @@
    "url": "https://nolanlawson.com/2026/10/28/the-ai-cost-of-javascript-frameworks/",
    "source": "Hacker News",
    "published_at": "2026-11-01T06:06:19Z",
-   "text": "291 points and 227 comments on Hacker News.",
-   "points": 291,
+   "text": "294 points and 228 comments on Hacker News.",
+   "points": 294,
    "discussion": "https://news.ycombinator.com/item?id=50323088"
   },
   {
-   "title": "Google's data center energy head says space data centers cost up to 100x more than Earth-based ones…",
-   "url": "https://www.theinformation.com/articles/google-energy-chief-space-data-centers-cost-100-times-earth",
-   "source": "Amir Efrati / The Informati…",
-   "published_at": "2026-11-01T17:05:37Z",
-   "text": "Google's data center energy head says space data centers cost up to 100x more than Earth-based ones, and US power supply is sufficient but permits are slow. Data centers in space could cost up to 100 times as much as those on Earth, Google's head of data center energy said this week …",
+   "title": "Saudi Aramco acquires a 49% stake in AI startup Humain, contributing ~$2.6B in cash in 2026 plus AI…",
+   "url": "https://gamesbeat.com/saudi-arabias-aramco-buy-49-stake-in-ai-firm-humain-for-2-6b/",
+   "source": "Dean Takahashi / GamesBeat",
+   "published_at": "2026-11-01T22:15:37Z",
+   "text": "Saudi Aramco acquires a 49% stake in AI startup Humain, contributing ~$2.6B in cash in 2026 plus AI, compute, and digital assets; Saudi Arabia's PIF retains 51%. Join the Leaders Making Gaming's Next Big Deals. GamesBeat NEXT brings 500+ executives, CEOs, founders, and investors to San Francisco …",
    "via": "Techmeme"
   },
   {
@@ -103,15 +103,23 @@
    "url": "https://colossus.com/article/michael-kratsios-office-frontier-ostp/",
    "source": "Harry Lambert / Colossus",
    "published_at": "2026-11-01T15:30:35Z",
-   "text": "A profile of White House OSTP Director Michael Kratsios, an ex-Peter Thiel aide who is among a handful of players steering the Trump administration's AI policy. The fight to regulate AI and reform American science runs through a little-known White House office, and the Thiel-turned-Trump aide in charge of it",
+   "text": "A profile of White House OSTP Director Michael Kratsios, an ex-Peter Thiel aide who is among a handful of players steering the Trump administration's AI policy",
    "via": "Techmeme"
   },
   {
-   "title": "Saudi Aramco acquires a 49% stake in AI startup Humain, contributing ~$2.6B in cash in 2026 plus AI…",
-   "url": "https://gamesbeat.com/saudi-arabias-aramco-buy-49-stake-in-ai-firm-humain-for-2-6b/",
-   "source": "Dean Takahashi / GamesBeat",
-   "published_at": "2026-11-01T22:15:37Z",
-   "text": "Saudi Aramco acquires a 49% stake in AI startup Humain, contributing ~$2.6B in cash in 2026 plus AI, compute, and digital assets; Saudi Arabia's PIF retains 51%",
+   "title": "Sources: OpenAI has secured ~$11B in commitments for its latest funding round, less than half its i…",
+   "url": "https://www.wsj.com/tech/ai/openai-raises-less-than-half-of-30-billion-target-in-latest-round-91aecdc5?st=pgo9cE&reflink=desktopwebshare_permalink",
+   "source": "Berber Jin / Wall Street Jo…",
+   "published_at": "2026-10-31T02:30:54Z",
+   "text": "Sources: OpenAI has secured ~$11B in commitments for its latest funding round, less than half its initial $30B target, and expects to raise more in coming weeks",
+   "via": "Techmeme"
+  },
+  {
+   "title": "Hyperbolic, which lets companies rent AI compute across ~30 neoclouds, raised a $30M Series A-1 led…",
+   "url": "https://www.businessinsider.com/intel-ceo-backs-30-million-round-ai-cloud-startup-hyperbolic-2026-10",
+   "source": "Geoff Weiss / Business Insi…",
+   "published_at": "2026-11-02T01:15:37Z",
+   "text": "Hyperbolic, which lets companies rent AI compute across ~30 neoclouds, raised a $30M Series A-1 led by Lip-Bu Tan's Walden Catalyst; it has raised $50M to date",
    "via": "Techmeme"
   },
   {
@@ -120,14 +128,6 @@
    "source": "Shane Burke / The Informati…",
    "published_at": "2026-11-01T18:45:40Z",
    "text": "Analysis: candidates backing a data center moratorium could win up to 15 of 36 US governors' races on Tuesday, including in Texas, Ohio, Michigan, and New York. As data centers have gone from obscurity to the top of voters' minds, midterm candidates are taking a stance on the issue.",
-   "via": "Techmeme"
-  },
-  {
-   "title": "Lumaril, which develops AI software for optimizing industrial production by connecting to existing…",
-   "url": "https://www.wsj.com/pro/venture-capital/ai-startup-lumaril-wants-to-make-factories-the-best-version-of-themselves-b65ea83d",
-   "source": "Sarah Klearman / Wall Stree…",
-   "published_at": "2026-11-01T05:36:01Z",
-   "text": "Lumaril, which develops AI software for optimizing industrial production by connecting to existing control systems, raised a $66M Series A at a $400M valuation",
    "via": "Techmeme"
   }
  ],
