@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-02T00:32:21Z",
+ "generated_at": "2026-11-02T01:04:54Z",
  "items": [
   {
    "title": "Binance has started resuming withdrawals in phases, including for BTC and ETH, after covering 95% o…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-01T15:23:56Z",
    "text": "Mythos 5.5 is already listed HTML source code of Anthropic's official website Thanks to the anonymous person who sent me the tip via email :)…",
    "author_name": "Chubby♨️",
-   "likes": 3072,
+   "likes": 3095,
    "story": "Opus 5.6 imminently about to release"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-11-01T18:25:40Z",
    "text": "OpenAI is preparing for a post midterms change in the weather. Axios:",
    "author_name": "Andrew Curran",
-   "likes": 658,
+   "likes": 679,
    "story": "OpenAI plans a post-midterms policy and PR blitz, pushing mandatory “speed limits” for powerful AI and rebranding its data centers as “AI compute campuses”"
   },
   {
@@ -50,8 +50,8 @@
    "url": "https://techcrunch.com/2026/10/25/ai-delivers-zero-financial-payoff-to-most-companies-according-to-apollo-economist/",
    "source": "Hacker News",
    "published_at": "2026-11-01T22:10:45Z",
-   "text": "108 points and 89 comments on Hacker News.",
-   "points": 108,
+   "text": "131 points and 115 comments on Hacker News.",
+   "points": 131,
    "discussion": "https://news.ycombinator.com/item?id=50330456"
   },
   {
@@ -61,7 +61,7 @@
    "published_at": "2026-11-01T06:28:04Z",
    "text": "Yann LeCun and Randall Balestriero just Proved the Platonic Representation Hypothesis, and found a better way to achieve it. The Platonic Representation Hypothesis suggests that AI models trained on different modalities, like images and text, eventually learn similar…",
    "author_name": "alphaXiv",
-   "likes": 2286,
+   "likes": 2323,
    "story": "new research: A tiny 109M-parameter model outperforms models up to 72B parameters at image-text alignment, using 42× less training data"
   },
   {
@@ -77,26 +77,9 @@
    "url": "https://nolanlawson.com/2026/10/28/the-ai-cost-of-javascript-frameworks/",
    "source": "Hacker News",
    "published_at": "2026-11-01T06:06:19Z",
-   "text": "290 points and 225 comments on Hacker News.",
-   "points": 290,
+   "text": "291 points and 227 comments on Hacker News.",
+   "points": 291,
    "discussion": "https://news.ycombinator.com/item?id=50323088"
-  },
-  {
-   "title": "A profile of White House OSTP Director Michael Kratsios, an ex-Peter Thiel aide who is among a hand…",
-   "url": "https://colossus.com/article/michael-kratsios-office-frontier-ostp/",
-   "source": "Harry Lambert / Colossus",
-   "published_at": "2026-11-01T15:30:35Z",
-   "text": "A profile of White House OSTP Director Michael Kratsios, an ex-Peter Thiel aide who is among a handful of players steering the Trump administration's AI policy. The fight to regulate AI and reform American science runs through a little-known White House office, and the Thiel-turned-Trump aide in charge of it",
-   "via": "Techmeme"
-  },
-  {
-   "title": "Anthropic takes steps to block Claude from reverse-engineering video games",
-   "url": "https://mashable.com/tech/anthropic-takes-steps-to-block-video-game-cloning-and-reverse-engineering",
-   "source": "Hacker News",
-   "published_at": "2026-10-31T21:07:58Z",
-   "text": "180 points and 111 comments on Hacker News.",
-   "points": 180,
-   "discussion": "https://news.ycombinator.com/item?id=50320255"
   },
   {
    "title": "Google's data center energy head says space data centers cost up to 100x more than Earth-based ones…",
@@ -104,6 +87,23 @@
    "source": "Amir Efrati / The Informati…",
    "published_at": "2026-11-01T17:05:37Z",
    "text": "Google's data center energy head says space data centers cost up to 100x more than Earth-based ones, and US power supply is sufficient but permits are slow. Data centers in space could cost up to 100 times as much as those on Earth, Google's head of data center energy said this week …",
+   "via": "Techmeme"
+  },
+  {
+   "title": "Anthropic takes steps to block Claude from reverse-engineering video games",
+   "url": "https://mashable.com/tech/anthropic-takes-steps-to-block-video-game-cloning-and-reverse-engineering",
+   "source": "Hacker News",
+   "published_at": "2026-10-31T21:07:58Z",
+   "text": "181 points and 111 comments on Hacker News.",
+   "points": 181,
+   "discussion": "https://news.ycombinator.com/item?id=50320255"
+  },
+  {
+   "title": "A profile of White House OSTP Director Michael Kratsios, an ex-Peter Thiel aide who is among a hand…",
+   "url": "https://colossus.com/article/michael-kratsios-office-frontier-ostp/",
+   "source": "Harry Lambert / Colossus",
+   "published_at": "2026-11-01T15:30:35Z",
+   "text": "A profile of White House OSTP Director Michael Kratsios, an ex-Peter Thiel aide who is among a handful of players steering the Trump administration's AI policy. The fight to regulate AI and reform American science runs through a little-known White House office, and the Thiel-turned-Trump aide in charge of it",
    "via": "Techmeme"
   },
   {
