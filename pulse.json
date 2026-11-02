@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-02T21:02:33Z",
+ "generated_at": "2026-11-02T21:35:42Z",
  "items": [
   {
    "title": "S-1 update: Anthropic reports Q3 revenue up 12x YoY to nearly $17B, a $23.3B net loss, up from $12.…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-02T17:51:48Z",
    "text": "We asked GPT-6 Astra to edit Qwen3.5-0.8B weights to improve math. It directly changed only 0.016% of weights, fixing 0.8B's reasoning loops & improving math up to 6x and even instruction following 3x, without gradients or training. We call this Weight-Space Programming:…",
    "author_name": "Rikiya Takehi",
-   "likes": 18900,
+   "likes": 22052,
    "story": "Researchers say LLMs can be good at natively reading and writing neural network weights; GPT-6 Astra edited Qwen3.5-0.8B's weights to make it better at math"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-11-02T14:03:08Z",
    "text": "Your Harness. You Define It. Meet Creator Mode in DeepSeek Harness. Turn ideas into plugins that you can use, from a design workspace to a sandbox game or a 3D LLM visualizer. What will you create?",
    "author_name": "DeepSeek Harness",
-   "likes": 15883,
+   "likes": 16289,
    "story": "DeepSeek releases a “creator mode” that allows users of DeepSeek Harness to create custom plugins, like a 3D model renderer and a video editing workbench"
   },
   {
@@ -50,8 +50,8 @@
    "url": "https://rikiyat.github.io/blog/weight-space-programming/",
    "source": "Hacker News",
    "published_at": "2026-11-02T18:21:28Z",
-   "text": "1000 points and 310 comments on Hacker News.",
-   "points": 1000,
+   "text": "1163 points and 364 comments on Hacker News.",
+   "points": 1163,
    "discussion": "https://news.ycombinator.com/item?id=50341174"
   },
   {
@@ -61,7 +61,7 @@
    "published_at": "2026-11-02T04:34:36Z",
    "text": "Great to see high quality benchmarks with headroom and look at that cost line for Carbon🚀",
    "author_name": "Sundar Pichai",
-   "likes": 3945,
+   "likes": 3989,
    "story": "SemiAnalysis launches GDPx, an AI frontier model benchmark measuring 11 domains, including chip design, cybersecurity, and RSI; Opus 5.5 tops with a 12% score"
   },
   {
@@ -86,7 +86,7 @@
    "published_at": "2026-11-02T15:35:11Z",
    "text": "When you think about the Labs' weird approach to software (sudden changes, bad communication), it is worth remembering that a core belief is that these products are a temporary thing they have to do to raise money for a couple years until \"true\" AGI makes all products obsolete.",
    "author_name": "Ethan Mollick",
-   "likes": 488,
+   "likes": 508,
    "story": "Email: OpenAI plans to merge ChatGPT's Chat and Work tabs on desktop for select users before rolling it out widely; Codex “will remain a separate experience”"
   },
   {
@@ -94,8 +94,8 @@
    "url": "https://www.businessinsider.com/anthropic-claude-internal-ai-use-exceeds-employee-pay-tokens-2026-11",
    "source": "Hacker News",
    "published_at": "2026-11-02T16:40:29Z",
-   "text": "229 points and 177 comments on Hacker News.",
-   "points": 229,
+   "text": "238 points and 189 comments on Hacker News.",
+   "points": 238,
    "discussion": "https://news.ycombinator.com/item?id=50339494"
   },
   {
@@ -105,7 +105,7 @@
    "published_at": "2026-11-02T14:09:54Z",
    "text": "763B parameters, compressed to 1 bit per weight. Introducing DeepSeek-V4.1-Flash-1017 GSQ-RCO Coder, a frontier-scale model tailored for coding and agentic workflows. Benchmarks, demos and download link below. Follow us for updates.",
    "author_name": "Michael Helcig",
-   "likes": 666,
+   "likes": 686,
    "story": "[Release] ISTA DeepSeek-V4.1-Flash-1017 GSQ-RCO Coder: a 763B model at 1 bit per parameter"
   },
   {
@@ -115,7 +115,7 @@
    "published_at": "2026-11-01T15:23:56Z",
    "text": "Mythos 5.5 is already listed HTML source code of Anthropic's official website Thanks to the anonymous person who sent me the tip via email :)…",
    "author_name": "Chubby♨️",
-   "likes": 3588,
+   "likes": 3594,
    "story": "Opus 5.6 imminently about to release"
   },
   {
@@ -123,7 +123,7 @@
    "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/anthropic-confirms-new-claude-code-limits-to-prevent-game-cloning-users-report-opus-5-5-is-also-actively-blocking-reverse-engineering-tasks",
    "source": "Bruno Ferreira / Tom's Hard…",
    "published_at": "2026-11-02T17:05:51Z",
-   "text": "Anthropic confirms new Claude Code limits “to steer it away from recreating someone else's specific game”, saying IP infringement violates its usage policy. Meanwhile, we now have direct reports of reverse engineering efforts being blocked, while online complaints grow.",
+   "text": "Anthropic confirms new Claude Code limits “to steer it away from recreating someone else's specific game”, saying IP infringement is against its usage policy. Meanwhile, we now have direct reports of reverse engineering efforts being blocked, while online complaints grow.",
    "via": "Techmeme"
   },
   {
@@ -131,8 +131,8 @@
    "url": "https://www.cnbc.com/2026/11/02/oracle-files-to-sell-20-billion-in-new-stock-bonds-to-finance-ai-buildout.html",
    "source": "Hacker News",
    "published_at": "2026-11-02T19:27:37Z",
-   "text": "64 points and 33 comments on Hacker News.",
-   "points": 64,
+   "text": "87 points and 46 comments on Hacker News.",
+   "points": 87,
    "discussion": "https://news.ycombinator.com/item?id=50342284"
   }
  ],
