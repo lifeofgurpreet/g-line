@@ -1,13 +1,13 @@
 {
  "schema": 1,
- "generated_at": "2026-11-02T12:55:59Z",
+ "generated_at": "2026-11-02T13:28:09Z",
  "items": [
   {
-   "title": "Marvell agrees to buy optical components maker Lumentum in a $115B all-stock deal, as it seeks to r…",
+   "title": "Marvell agrees to acquire optical components maker Lumentum in a $115B all-stock deal, as it aims t…",
    "url": "https://www.reuters.com/legal/transactional/marvell-buy-lumentum-115-billion-deal-ai-data-center-bet-2026-11-02/",
    "source": "Anhata Rooprai / Reuters",
    "published_at": "2026-11-02T12:21:16Z",
-   "text": "Marvell agrees to buy optical components maker Lumentum in a $115B all-stock deal, as it seeks to rival Broadcom; Nvidia invested $2B in each company in 2026. Marvell Technology (MRVL.O) is buying optical components maker Lumentum (LITE.O) in a $115 billion all-stock deal, including debt …",
+   "text": "Marvell agrees to acquire optical components maker Lumentum in a $115B all-stock deal, as it aims to rival Broadcom; Nvidia invested $2B in each company in 2026. Marvell Technology (MRVL.O) is buying optical components maker Lumentum (LITE.O) in a $115 billion all-stock deal, including debt …",
    "via": "Techmeme"
   },
   {
@@ -17,8 +17,8 @@
    "published_at": "2026-11-02T04:34:36Z",
    "text": "Great to see high quality benchmarks with headroom and look at that cost line for Carbon🚀",
    "author_name": "Sundar Pichai",
-   "likes": 2958,
-   "story": "SemiAnalysis launches GDPx, an agentic capability benchmark measuring 11 domains, including chip design, cybersecurity, and RSI; Opus 5.5 tops with a 12% score"
+   "likes": 3054,
+   "story": "SemiAnalysis launches GDPx, an AI frontier model benchmark measuring 11 domains, including chip design, cybersecurity, and RSI; Opus 5.5 tops with a 12% score"
   },
   {
    "title": "Claude Code 2.1.316 released",
@@ -34,8 +34,35 @@
    "published_at": "2026-11-01T15:23:56Z",
    "text": "Mythos 5.5 is already listed HTML source code of Anthropic's official website Thanks to the anonymous person who sent me the tip via email :)…",
    "author_name": "Chubby♨️",
-   "likes": 3422,
+   "likes": 3434,
    "story": "Opus 5.6 imminently about to release"
+  },
+  {
+   "title": "Elon Musk says the cost of serving Grok Bot was “unsustainably high relative to revenue”, following…",
+   "url": "https://www.forbes.com/sites/siladityaray/2026/11/02/musk-says-grok-bots-costs-were-unsustainably-high-weeks-after-touting-rapid-growth/",
+   "source": "Siladitya Ray / Forbes",
+   "published_at": "2026-11-02T13:10:44Z",
+   "text": "Elon Musk says the cost of serving Grok Bot was “unsustainably high relative to revenue”, following subscriber complaints regarding rapid usage limit depletion. Topline — Elon Musk acknowledged on Sunday that the cost of running SpaceX's AI agent Grok Bot was “unsustainably high” …",
+   "via": "Techmeme"
+  },
+  {
+   "title": "China's First Frontier AI Export Controls: Mofcom Announcement No. 48",
+   "url": "https://labs.cloudsecurityalliance.org/research/csa-research-note-china-ai-export-controls-announcement-48-2/",
+   "source": "Hacker News",
+   "published_at": "2026-11-02T07:27:28Z",
+   "text": "84 points and 51 comments on Hacker News.",
+   "points": 84,
+   "discussion": "https://news.ycombinator.com/item?id=50334038"
+  },
+  {
+   "title": "OpenAI is preparing for a post midterms change in the weather. Axios:",
+   "url": "https://x.com/AndrewCurran_/status/2116959876576649420",
+   "source": "𝕏 @AndrewCurran_",
+   "published_at": "2026-11-01T18:25:40Z",
+   "text": "OpenAI is preparing for a post midterms change in the weather. Axios:",
+   "author_name": "Andrew Curran",
+   "likes": 853,
+   "story": "OpenAI plans a post-midterms policy and PR blitz, pushing mandatory “speed limits” for powerful AI and rebranding its data centers as “AI compute campuses”"
   },
   {
    "title": "YC details multi-agent tests in games like Minecraft, where agents exhibit emergent capabilities, f…",
@@ -46,23 +73,13 @@
    "via": "Techmeme"
   },
   {
-   "title": "China's First Frontier AI Export Controls: Mofcom Announcement No. 48",
-   "url": "https://labs.cloudsecurityalliance.org/research/csa-research-note-china-ai-export-controls-announcement-48-2/",
+   "title": "The AI cost of JavaScript frameworks",
+   "url": "https://nolanlawson.com/2026/10/28/the-ai-cost-of-javascript-frameworks/",
    "source": "Hacker News",
-   "published_at": "2026-11-02T07:27:28Z",
-   "text": "73 points and 42 comments on Hacker News.",
-   "points": 73,
-   "discussion": "https://news.ycombinator.com/item?id=50334038"
-  },
-  {
-   "title": "OpenAI is preparing for a post midterms change in the weather. Axios:",
-   "url": "https://x.com/AndrewCurran_/status/2116959876576649420",
-   "source": "𝕏 @AndrewCurran_",
-   "published_at": "2026-11-01T18:25:40Z",
-   "text": "OpenAI is preparing for a post midterms change in the weather. Axios:",
-   "author_name": "Andrew Curran",
-   "likes": 844,
-   "story": "OpenAI plans a post-midterms policy and PR blitz, pushing mandatory “speed limits” for powerful AI and rebranding its data centers as “AI compute campuses”"
+   "published_at": "2026-11-01T06:06:19Z",
+   "text": "400 points and 308 comments on Hacker News.",
+   "points": 400,
+   "discussion": "https://news.ycombinator.com/item?id=50323088"
   },
   {
    "title": "A profile of UCLA professor Terence Tao, who was once enthusiastic about AI's role in math but now…",
@@ -73,13 +90,21 @@
    "via": "Techmeme"
   },
   {
-   "title": "The AI cost of JavaScript frameworks",
-   "url": "https://nolanlawson.com/2026/10/28/the-ai-cost-of-javascript-frameworks/",
+   "title": "Anthropic takes steps to block Claude from reverse-engineering video games",
+   "url": "https://mashable.com/tech/anthropic-takes-steps-to-block-video-game-cloning-and-reverse-engineering",
    "source": "Hacker News",
-   "published_at": "2026-11-01T06:06:19Z",
-   "text": "396 points and 303 comments on Hacker News.",
-   "points": 396,
-   "discussion": "https://news.ycombinator.com/item?id=50323088"
+   "published_at": "2026-10-31T21:07:58Z",
+   "text": "189 points and 114 comments on Hacker News.",
+   "points": 189,
+   "discussion": "https://news.ycombinator.com/item?id=50320255"
+  },
+  {
+   "title": "A look at AI safety debates and the rising popularity of “Stop Unilaterally + Raise Awareness”, or…",
+   "url": "https://www.lesswrong.com/posts/xikGZ8fuhdG6DApAo/against-sura",
+   "source": "Scott Alexander / LessWrong",
+   "published_at": "2026-11-02T13:05:45Z",
+   "text": "A look at AI safety debates and the rising popularity of “Stop Unilaterally + Raise Awareness”, or SURA; safety-focused AI labs shouldn't abandon the AI race. The AI Futures Project[1] distinguishes several different plans for navigating the AI transition, which I'll lump into two broader categories:",
+   "via": "Techmeme"
   },
   {
    "title": "Filing: Anthropic plans to raise up to $3.5B from Japanese investors as part of its IPO, joining Au…",
@@ -88,15 +113,6 @@
    "published_at": "2026-11-02T10:40:41Z",
    "text": "Filing: Anthropic plans to raise up to $3.5B from Japanese investors as part of its IPO, joining Australia, Canada, and parts of Europe in having direct access. Anthropic PBC aims to raise up to $3.5 billion from Japanese investors in its initial public offering in the US …",
    "via": "Techmeme"
-  },
-  {
-   "title": "Anthropic takes steps to block Claude from reverse-engineering video games",
-   "url": "https://mashable.com/tech/anthropic-takes-steps-to-block-video-game-cloning-and-reverse-engineering",
-   "source": "Hacker News",
-   "published_at": "2026-10-31T21:07:58Z",
-   "text": "189 points and 114 comments on Hacker News.",
-   "points": 189,
-   "discussion": "https://news.ycombinator.com/item?id=50320255"
   },
   {
    "title": "Data analytics provider Hex Technologies, which says it has rebuilt its platform for AI agents, rai…",
@@ -112,22 +128,6 @@
    "source": "Emmy Martin / New York Times",
    "published_at": "2026-11-02T08:46:03Z",
    "text": "How SF's AI boom is reshaping dating: founders treat first dates as interviews, use tech terms like “conversion rate” to track dates, and pay coaches $5K/month. San Francisco's A.I. boom has drawn a wave of young ambitious people who are now reshaping the city's dating life.Kelsey McClellan for The New York Times",
-   "via": "Techmeme"
-  },
-  {
-   "title": "Saudi Aramco acquires a 49% stake in AI startup Humain, contributing ~$2.6B in cash in 2026 plus AI…",
-   "url": "https://gamesbeat.com/saudi-arabias-aramco-buy-49-stake-in-ai-firm-humain-for-2-6b/",
-   "source": "Dean Takahashi / GamesBeat",
-   "published_at": "2026-11-01T22:15:37Z",
-   "text": "Saudi Aramco acquires a 49% stake in AI startup Humain, contributing ~$2.6B in cash in 2026 plus AI, compute, and digital assets; Saudi Arabia's PIF retains 51%. Join the Leaders Making Gaming's Next Big Deals. GamesBeat NEXT brings 500+ executives, CEOs, founders, and investors to San Francisco …",
-   "via": "Techmeme"
-  },
-  {
-   "title": "Hirundo, Lazarus, and others are applying machine unlearning and weight edits to Chinese models to…",
-   "url": "https://restofworld.org/2026/western-startups-realigning-chinese-ai-models/",
-   "source": "Rest of World",
-   "published_at": "2026-11-02T12:40:48Z",
-   "text": "Hirundo, Lazarus, and others are applying machine unlearning and weight edits to Chinese models to remove censorship and harden security for Western companies. A growing number of startups are editing powerful Chinese open-weight models for Western businesses that are concerned about censorship and security.",
    "via": "Techmeme"
   }
  ],
