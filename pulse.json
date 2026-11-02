@@ -1,24 +1,24 @@
 {
  "schema": 1,
- "generated_at": "2026-11-02T12:24:07Z",
+ "generated_at": "2026-11-02T12:55:59Z",
  "items": [
   {
-   "title": "SemiAnalysis launches GDPx, an agentic capability benchmark measuring 11 domains, including chip de…",
-   "url": "https://newsletter.semianalysis.com/p/gdpx-measuring-frontier-model-capabilities",
-   "source": "SemiAnalysis",
-   "published_at": "2026-11-02T05:20:40Z",
-   "text": "SemiAnalysis launches GDPx, an agentic capability benchmark measuring 11 domains, including chip design, cybersecurity, and RSI; Opus 5.5 tops with a 12% score. A comprehensive benchmark spanning RSI, hardware design, cyber, bio, finance, legal, quant trading, chip design, software engineering, materials science, and alignment",
+   "title": "Marvell agrees to buy optical components maker Lumentum in a $115B all-stock deal, as it seeks to r…",
+   "url": "https://www.reuters.com/legal/transactional/marvell-buy-lumentum-115-billion-deal-ai-data-center-bet-2026-11-02/",
+   "source": "Anhata Rooprai / Reuters",
+   "published_at": "2026-11-02T12:21:16Z",
+   "text": "Marvell agrees to buy optical components maker Lumentum in a $115B all-stock deal, as it seeks to rival Broadcom; Nvidia invested $2B in each company in 2026. Marvell Technology (MRVL.O) is buying optical components maker Lumentum (LITE.O) in a $115 billion all-stock deal, including debt …",
    "via": "Techmeme"
   },
   {
-   "title": "Mythos 5.5 is already listed HTML source code of Anthropic's official website Thanks to the anonymo…",
-   "url": "https://x.com/kimmonismus/status/2116914141017370972",
-   "source": "𝕏 @kimmonismus",
-   "published_at": "2026-11-01T15:23:56Z",
-   "text": "Mythos 5.5 is already listed HTML source code of Anthropic's official website Thanks to the anonymous person who sent me the tip via email :)…",
-   "author_name": "Chubby♨️",
-   "likes": 3416,
-   "story": "Opus 5.6 imminently about to release"
+   "title": "Great to see high quality benchmarks with headroom and look at that cost line for Carbon🚀",
+   "url": "https://x.com/sundarpichai/status/2117113121102045347",
+   "source": "𝕏 @sundarpichai",
+   "published_at": "2026-11-02T04:34:36Z",
+   "text": "Great to see high quality benchmarks with headroom and look at that cost line for Carbon🚀",
+   "author_name": "Sundar Pichai",
+   "likes": 2958,
+   "story": "SemiAnalysis launches GDPx, an agentic capability benchmark measuring 11 domains, including chip design, cybersecurity, and RSI; Opus 5.5 tops with a 12% score"
   },
   {
    "title": "Claude Code 2.1.316 released",
@@ -28,31 +28,14 @@
    "text": "Added CLAUDE_CODE_DISABLE_ULTRATHINK, which turns the ultrathink keyword off · Added pooled group budgets to the Claude apps gateway: one monthly budget that a group's members share, on top of each member's own limit, set with pooled_budget on the spend limits admin API · Added CLAUDE_CODE_DISABLE_LOOPED_CROSS_CERT_DROP to keep system cross-certificates that certify each other in a loop, for servers whose private CA needs one · Added CLAUDE_CODE_SUBAGENT_EFFORT to set the effort level subagents run at when nothing else names one, instead of inheriting the session's"
   },
   {
-   "title": "OpenAI is preparing for a post midterms change in the weather. Axios:",
-   "url": "https://x.com/AndrewCurran_/status/2116959876576649420",
-   "source": "𝕏 @AndrewCurran_",
-   "published_at": "2026-11-01T18:25:40Z",
-   "text": "OpenAI is preparing for a post midterms change in the weather. Axios:",
-   "author_name": "Andrew Curran",
-   "likes": 843,
-   "story": "OpenAI plans a post-midterms policy and PR blitz, pushing mandatory “speed limits” for powerful AI and rebranding its data centers as “AI compute campuses”"
-  },
-  {
-   "title": "Marvell agrees to acquire optical components maker Lumentum in a $115B deal, as it seeks to rival B…",
-   "url": "https://www.reuters.com/legal/transactional/marvell-buy-lumentum-115-billion-deal-ai-data-center-bet-2026-11-02/",
-   "source": "Anhata Rooprai / Reuters",
-   "published_at": "2026-11-02T12:21:16Z",
-   "text": "Marvell agrees to acquire optical components maker Lumentum in a $115B deal, as it seeks to rival Broadcom; Nvidia invested $2B in both Marvell and Lumentum. Marvell Technology (MRVL.O) is buying optical-components maker Lumentum (LITE.O) in a deal valued at $115 billion …",
-   "via": "Techmeme"
-  },
-  {
-   "title": "China's First Frontier AI Export Controls: Mofcom Announcement No. 48",
-   "url": "https://labs.cloudsecurityalliance.org/research/csa-research-note-china-ai-export-controls-announcement-48-2/",
-   "source": "Hacker News",
-   "published_at": "2026-11-02T07:27:28Z",
-   "text": "65 points and 40 comments on Hacker News.",
-   "points": 65,
-   "discussion": "https://news.ycombinator.com/item?id=50334038"
+   "title": "Mythos 5.5 is already listed HTML source code of Anthropic's official website Thanks to the anonymo…",
+   "url": "https://x.com/kimmonismus/status/2116914141017370972",
+   "source": "𝕏 @kimmonismus",
+   "published_at": "2026-11-01T15:23:56Z",
+   "text": "Mythos 5.5 is already listed HTML source code of Anthropic's official website Thanks to the anonymous person who sent me the tip via email :)…",
+   "author_name": "Chubby♨️",
+   "likes": 3422,
+   "story": "Opus 5.6 imminently about to release"
   },
   {
    "title": "YC details multi-agent tests in games like Minecraft, where agents exhibit emergent capabilities, f…",
@@ -63,13 +46,23 @@
    "via": "Techmeme"
   },
   {
-   "title": "The AI cost of JavaScript frameworks",
-   "url": "https://nolanlawson.com/2026/10/28/the-ai-cost-of-javascript-frameworks/",
+   "title": "China's First Frontier AI Export Controls: Mofcom Announcement No. 48",
+   "url": "https://labs.cloudsecurityalliance.org/research/csa-research-note-china-ai-export-controls-announcement-48-2/",
    "source": "Hacker News",
-   "published_at": "2026-11-01T06:06:19Z",
-   "text": "392 points and 301 comments on Hacker News.",
-   "points": 392,
-   "discussion": "https://news.ycombinator.com/item?id=50323088"
+   "published_at": "2026-11-02T07:27:28Z",
+   "text": "73 points and 42 comments on Hacker News.",
+   "points": 73,
+   "discussion": "https://news.ycombinator.com/item?id=50334038"
+  },
+  {
+   "title": "OpenAI is preparing for a post midterms change in the weather. Axios:",
+   "url": "https://x.com/AndrewCurran_/status/2116959876576649420",
+   "source": "𝕏 @AndrewCurran_",
+   "published_at": "2026-11-01T18:25:40Z",
+   "text": "OpenAI is preparing for a post midterms change in the weather. Axios:",
+   "author_name": "Andrew Curran",
+   "likes": 844,
+   "story": "OpenAI plans a post-midterms policy and PR blitz, pushing mandatory “speed limits” for powerful AI and rebranding its data centers as “AI compute campuses”"
   },
   {
    "title": "A profile of UCLA professor Terence Tao, who was once enthusiastic about AI's role in math but now…",
@@ -77,6 +70,23 @@
    "source": "Rivka Galchen / New Yorker",
    "published_at": "2026-11-02T09:20:38Z",
    "text": "A profile of UCLA professor Terence Tao, who was once enthusiastic about AI's role in math but now warns of AI destroying the field's deliberative process. A.I. is solving problems that stumped the field for decades. Mathematicians look to Terence Tao for guidance on their altered world.",
+   "via": "Techmeme"
+  },
+  {
+   "title": "The AI cost of JavaScript frameworks",
+   "url": "https://nolanlawson.com/2026/10/28/the-ai-cost-of-javascript-frameworks/",
+   "source": "Hacker News",
+   "published_at": "2026-11-01T06:06:19Z",
+   "text": "396 points and 303 comments on Hacker News.",
+   "points": 396,
+   "discussion": "https://news.ycombinator.com/item?id=50323088"
+  },
+  {
+   "title": "Filing: Anthropic plans to raise up to $3.5B from Japanese investors as part of its IPO, joining Au…",
+   "url": "https://www.bloomberg.com/news/articles/2026-11-02/anthropic-seeks-up-to-3-5-billion-in-japan-for-its-mega-us-ipo",
+   "source": "Yasutaka Tamura / Bloomberg",
+   "published_at": "2026-11-02T10:40:41Z",
+   "text": "Filing: Anthropic plans to raise up to $3.5B from Japanese investors as part of its IPO, joining Australia, Canada, and parts of Europe in having direct access. Anthropic PBC aims to raise up to $3.5 billion from Japanese investors in its initial public offering in the US …",
    "via": "Techmeme"
   },
   {
@@ -89,27 +99,11 @@
    "discussion": "https://news.ycombinator.com/item?id=50320255"
   },
   {
-   "title": "Filing: Anthropic plans to raise up to $3.5B from Japanese investors as part of its IPO, joining Au…",
-   "url": "https://www.bloomberg.com/news/articles/2026-11-02/anthropic-seeks-up-to-3-5-billion-in-japan-for-its-mega-us-ipo",
-   "source": "Yasutaka Tamura / Bloomberg",
-   "published_at": "2026-11-02T10:40:41Z",
-   "text": "Filing: Anthropic plans to raise up to $3.5B from Japanese investors as part of its IPO, joining Australia, Canada, and parts of Europe in having direct access. Anthropic PBC aims to raise up to $3.5 billion from Japanese investors in its initial public offering in the US …",
-   "via": "Techmeme"
-  },
-  {
    "title": "Data analytics provider Hex Technologies, which says it has rebuilt its platform for AI agents, rai…",
    "url": "https://www.forbes.com/sites/timkeary/2026/10/27/hex-threw-out-its-code-to-stop-the-saaspocalypse-raising-100-million/",
    "source": "Tim Keary / Forbes",
    "published_at": "2026-11-02T02:41:18Z",
    "text": "Data analytics provider Hex Technologies, which says it has rebuilt its platform for AI agents, raised a $100M Series D led by Peak XV at a $1.2B valuation. This voice experience is generated by AI. Learn more. … The SaaSpocalypse has become one of the most controversial topics in enterprise tech.",
-   "via": "Techmeme"
-  },
-  {
-   "title": "Saudi Aramco acquires a 49% stake in AI startup Humain, contributing ~$2.6B in cash in 2026 plus AI…",
-   "url": "https://gamesbeat.com/saudi-arabias-aramco-buy-49-stake-in-ai-firm-humain-for-2-6b/",
-   "source": "Dean Takahashi / GamesBeat",
-   "published_at": "2026-11-01T22:15:37Z",
-   "text": "Saudi Aramco acquires a 49% stake in AI startup Humain, contributing ~$2.6B in cash in 2026 plus AI, compute, and digital assets; Saudi Arabia's PIF retains 51%. Join the Leaders Making Gaming's Next Big Deals. GamesBeat NEXT brings 500+ executives, CEOs, founders, and investors to San Francisco …",
    "via": "Techmeme"
   },
   {
@@ -121,11 +115,19 @@
    "via": "Techmeme"
   },
   {
-   "title": "Broccoli AI, which sells AI agents to plumbing, HVAC, and electrical companies, raised a $22M Serie…",
-   "url": "https://fortune.com/2026/10/28/broccoli-ai-funding-khosla-ventures-marcelle-flowers-plumbing-gen-z-founders/",
-   "source": "Nick Lichtenberg / Fortune",
-   "published_at": "2026-11-02T02:15:37Z",
-   "text": "Broccoli AI, which sells AI agents to plumbing, HVAC, and electrical companies, raised a $22M Series A and a $30M Series B; a source says it is valued at $300M. When Marcelle Flowers' staff told her that two students were waiting at the counter of her Sacramento plumbing shop, she grabbed her wallet.",
+   "title": "Saudi Aramco acquires a 49% stake in AI startup Humain, contributing ~$2.6B in cash in 2026 plus AI…",
+   "url": "https://gamesbeat.com/saudi-arabias-aramco-buy-49-stake-in-ai-firm-humain-for-2-6b/",
+   "source": "Dean Takahashi / GamesBeat",
+   "published_at": "2026-11-01T22:15:37Z",
+   "text": "Saudi Aramco acquires a 49% stake in AI startup Humain, contributing ~$2.6B in cash in 2026 plus AI, compute, and digital assets; Saudi Arabia's PIF retains 51%. Join the Leaders Making Gaming's Next Big Deals. GamesBeat NEXT brings 500+ executives, CEOs, founders, and investors to San Francisco …",
+   "via": "Techmeme"
+  },
+  {
+   "title": "Hirundo, Lazarus, and others are applying machine unlearning and weight edits to Chinese models to…",
+   "url": "https://restofworld.org/2026/western-startups-realigning-chinese-ai-models/",
+   "source": "Rest of World",
+   "published_at": "2026-11-02T12:40:48Z",
+   "text": "Hirundo, Lazarus, and others are applying machine unlearning and weight edits to Chinese models to remove censorship and harden security for Western companies. A growing number of startups are editing powerful Chinese open-weight models for Western businesses that are concerned about censorship and security.",
    "via": "Techmeme"
   }
  ],
