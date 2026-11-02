@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-02T02:42:49Z",
+ "generated_at": "2026-11-02T03:14:46Z",
  "items": [
   {
    "title": "OpenAI plans a post-midterms policy and PR blitz, pushing mandatory “speed limits” for powerful AI…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-01T15:23:56Z",
    "text": "Mythos 5.5 is already listed HTML source code of Anthropic's official website Thanks to the anonymous person who sent me the tip via email :)…",
    "author_name": "Chubby♨️",
-   "likes": 3169,
+   "likes": 3198,
    "story": "Opus 5.6 imminently about to release"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-11-01T06:28:04Z",
    "text": "Yann LeCun and Randall Balestriero just Proved the Platonic Representation Hypothesis, and found a better way to achieve it. The Platonic Representation Hypothesis suggests that AI models trained on different modalities, like images and text, eventually learn similar…",
    "author_name": "alphaXiv",
-   "likes": 2425,
+   "likes": 2463,
    "story": "new research: A tiny 109M-parameter model outperforms models up to 72B parameters at image-text alignment, using 42× less training data"
   },
   {
@@ -46,29 +46,12 @@
    "via": "Techmeme"
   },
   {
-   "title": "AI delivers 'zero financial payoff' to most companies, Apollo economist says",
-   "url": "https://techcrunch.com/2026/10/25/ai-delivers-zero-financial-payoff-to-most-companies-according-to-apollo-economist/",
-   "source": "Hacker News",
-   "published_at": "2026-11-01T22:10:45Z",
-   "text": "190 points and 158 comments on Hacker News.",
-   "points": 190,
-   "discussion": "https://news.ycombinator.com/item?id=50330456"
-  },
-  {
-   "title": "Saudi Aramco acquires a 49% stake in AI startup Humain, contributing ~$2.6B in cash in 2026 plus AI…",
-   "url": "https://gamesbeat.com/saudi-arabias-aramco-buy-49-stake-in-ai-firm-humain-for-2-6b/",
-   "source": "Dean Takahashi / GamesBeat",
-   "published_at": "2026-11-01T22:15:37Z",
-   "text": "Saudi Aramco acquires a 49% stake in AI startup Humain, contributing ~$2.6B in cash in 2026 plus AI, compute, and digital assets; Saudi Arabia's PIF retains 51%. Join the Leaders Making Gaming's Next Big Deals. GamesBeat NEXT brings 500+ executives, CEOs, founders, and investors to San Francisco …",
-   "via": "Techmeme"
-  },
-  {
    "title": "The AI cost of JavaScript frameworks",
    "url": "https://nolanlawson.com/2026/10/28/the-ai-cost-of-javascript-frameworks/",
    "source": "Hacker News",
    "published_at": "2026-11-01T06:06:19Z",
-   "text": "310 points and 230 comments on Hacker News.",
-   "points": 310,
+   "text": "314 points and 232 comments on Hacker News.",
+   "points": 314,
    "discussion": "https://news.ycombinator.com/item?id=50323088"
   },
   {
@@ -76,7 +59,7 @@
    "url": "https://fortune.com/2026/10/28/broccoli-ai-funding-khosla-ventures-marcelle-flowers-plumbing-gen-z-founders/",
    "source": "Nick Lichtenberg / Fortune",
    "published_at": "2026-11-02T02:15:37Z",
-   "text": "Broccoli AI, which sells AI agents to plumbing, HVAC, and electrical companies, raised a $22M Series A and a $30M Series B; a source says it is valued at $300M",
+   "text": "Broccoli AI, which sells AI agents to plumbing, HVAC, and electrical companies, raised a $22M Series A and a $30M Series B; a source says it is valued at $300M. When Marcelle Flowers' staff told her that two students were waiting at the counter of her Sacramento plumbing shop, she grabbed her wallet.",
    "via": "Techmeme"
   },
   {
@@ -89,11 +72,19 @@
    "discussion": "https://news.ycombinator.com/item?id=50320255"
   },
   {
-   "title": "DeepSeek open sources Super-Agent, a coding agent research prototype it says proactively monitors d…",
-   "url": "https://www.bloomberg.com/news/articles/2026-11-01/deepseek-drops-enhanced-coding-agent-with-aim-to-rival-anthropic",
-   "source": "Debby Wu / Bloomberg",
-   "published_at": "2026-11-01T05:01:42Z",
-   "text": "DeepSeek open sources Super-Agent, a coding agent research prototype it says proactively monitors developer group chats for coding issues and suggests solutions. DeepSeek has released a prototype of a more autonomous coding agent as it seeks to challenge Anthropic PBC's popular Claude Code.",
+   "title": "Midstream Health, whose AI tools help 250 hospitals recover revenue from rebates and vendor and pay…",
+   "url": "https://www.axios.com/pro/health-tech-deals/2026/10/29/midstream-health-20m-revenue-recovery",
+   "source": "Will Maddox / Axios",
+   "published_at": "2026-11-02T03:01:59Z",
+   "text": "Midstream Health, whose AI tools help 250 hospitals recover revenue from rebates and vendor and payer underpayments, raised a $20M Series A led by Valtrius. Midstream Health, an AI financial system for hospitals, raised a $20 million Series A round to expand its platform …",
+   "via": "Techmeme"
+  },
+  {
+   "title": "Saudi Aramco acquires a 49% stake in AI startup Humain, contributing ~$2.6B in cash in 2026 plus AI…",
+   "url": "https://gamesbeat.com/saudi-arabias-aramco-buy-49-stake-in-ai-firm-humain-for-2-6b/",
+   "source": "Dean Takahashi / GamesBeat",
+   "published_at": "2026-11-01T22:15:37Z",
+   "text": "Saudi Aramco acquires a 49% stake in AI startup Humain, contributing ~$2.6B in cash in 2026 plus AI, compute, and digital assets; Saudi Arabia's PIF retains 51%",
    "via": "Techmeme"
   },
   {
@@ -118,6 +109,22 @@
    "source": "Tim Keary / Forbes",
    "published_at": "2026-11-02T02:41:18Z",
    "text": "Data analytics provider Hex Technologies, which says it has rebuilt its platform for AI agents, raised a $100M Series D led by Peak XV at a $1.2B valuation. This voice experience is generated by AI. Learn more. … The SaaSpocalypse has become one of the most controversial topics in enterprise tech.",
+   "via": "Techmeme"
+  },
+  {
+   "title": "Hyperbolic, which lets companies rent AI compute across ~30 neoclouds, raised a $30M Series A-1 led…",
+   "url": "https://www.businessinsider.com/intel-ceo-backs-30-million-round-ai-cloud-startup-hyperbolic-2026-10",
+   "source": "Geoff Weiss / Business Insi…",
+   "published_at": "2026-11-02T01:15:37Z",
+   "text": "Hyperbolic, which lets companies rent AI compute across ~30 neoclouds, raised a $30M Series A-1 led by Lip-Bu Tan's Walden Catalyst; it has raised $50M to date. Intel CEO Lip-Bu Tan is backing an infrastructure startup that has raised $30 million to help companies rent compute across hundreds of different AI cloud providers.",
+   "via": "Techmeme"
+  },
+  {
+   "title": "DeepSeek open sources Super-Agent, a coding agent research prototype it says proactively monitors d…",
+   "url": "https://www.bloomberg.com/news/articles/2026-11-01/deepseek-drops-enhanced-coding-agent-with-aim-to-rival-anthropic",
+   "source": "Debby Wu / Bloomberg",
+   "published_at": "2026-11-01T05:01:42Z",
+   "text": "DeepSeek open sources Super-Agent, a coding agent research prototype it says proactively monitors developer group chats for coding issues and suggests solutions",
    "via": "Techmeme"
   }
  ],
