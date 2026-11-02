@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-02T09:10:43Z",
+ "generated_at": "2026-11-02T09:42:31Z",
  "items": [
   {
    "title": "SemiAnalysis launches GDPx, an agentic capability benchmark measuring 11 domains, including chip de…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-01T15:23:56Z",
    "text": "Mythos 5.5 is already listed HTML source code of Anthropic's official website Thanks to the anonymous person who sent me the tip via email :)…",
    "author_name": "Chubby♨️",
-   "likes": 3364,
+   "likes": 3370,
    "story": "Opus 5.6 imminently about to release"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-11-01T18:25:40Z",
    "text": "OpenAI is preparing for a post midterms change in the weather. Axios:",
    "author_name": "Andrew Curran",
-   "likes": 814,
+   "likes": 817,
    "story": "OpenAI plans a post-midterms policy and PR blitz, pushing mandatory “speed limits” for powerful AI and rebranding its data centers as “AI compute campuses”"
   },
   {
@@ -50,16 +50,16 @@
    "url": "https://nolanlawson.com/2026/10/28/the-ai-cost-of-javascript-frameworks/",
    "source": "Hacker News",
    "published_at": "2026-11-01T06:06:19Z",
-   "text": "364 points and 281 comments on Hacker News.",
-   "points": 364,
+   "text": "374 points and 286 comments on Hacker News.",
+   "points": 374,
    "discussion": "https://news.ycombinator.com/item?id=50323088"
   },
   {
-   "title": "Casap, whose AI tools automate dispute and anti-fraud operations for banks, raised a $56M Series B…",
-   "url": "https://fortune.com/2026/10/28/dd/",
-   "source": "Jeff John Roberts / Fortune",
-   "published_at": "2026-11-02T04:35:39Z",
-   "text": "Casap, whose AI tools automate dispute and anti-fraud operations for banks, raised a $56M Series B led by Base10 Partners, bringing its total funding to $90M. Credit card fraud is hardly new, but the nature of that fraud is undergoing a major shift. In the past, nearly all scams …",
+   "title": "A profile of UCLA professor Terence Tao, who was once enthusiastic about AI's role in math but now…",
+   "url": "https://www.newyorker.com/magazine/2026/11/09/the-year-math-changed-forever?currentPage=all",
+   "source": "Rivka Galchen / New Yorker",
+   "published_at": "2026-11-02T09:20:38Z",
+   "text": "A profile of UCLA professor Terence Tao, who was once enthusiastic about AI's role in math but now warns of AI destroying the field's deliberative process. A.I. is solving problems that stumped the field for decades. Mathematicians look to Terence Tao for guidance on their altered world.",
    "via": "Techmeme"
   },
   {
@@ -70,6 +70,14 @@
    "text": "187 points and 114 comments on Hacker News.",
    "points": 187,
    "discussion": "https://news.ycombinator.com/item?id=50320255"
+  },
+  {
+   "title": "Casap, whose AI tools automate dispute and anti-fraud operations for banks, raised a $56M Series B…",
+   "url": "https://fortune.com/2026/10/28/dd/",
+   "source": "Jeff John Roberts / Fortune",
+   "published_at": "2026-11-02T04:35:39Z",
+   "text": "Casap, whose AI tools automate dispute and anti-fraud operations for banks, raised a $56M Series B led by Base10 Partners, bringing its total funding to $90M. Credit card fraud is hardly new, but the nature of that fraud is undergoing a major shift. In the past, nearly all scams …",
+   "via": "Techmeme"
   },
   {
    "title": "Data analytics provider Hex Technologies, which says it has rebuilt its platform for AI agents, rai…",
@@ -88,11 +96,11 @@
    "via": "Techmeme"
   },
   {
-   "title": "NAND maker Kioxia's shares fell up to 15% on Monday after its cautious Q3 outlook disappointed inve…",
-   "url": "https://www.bloomberg.com/news/articles/2026-11-02/kioxia-shares-tumble-after-outlook-suggests-demand-leveling-off",
-   "source": "Bloomberg",
+   "title": "How SF's AI boom is reshaping dating: founders treat first dates as interviews, use tech terms like…",
+   "url": "https://www.nytimes.com/2026/10/31/technology/san-francisco-ai-boom-dating.html?unlocked_article_code=1.NFE.wr2v.F_Wy3TSgmnjB&smid=url-share",
+   "source": "Emmy Martin / New York Times",
    "published_at": "2026-11-02T08:46:03Z",
-   "text": "NAND maker Kioxia's shares fell up to 15% on Monday after its cautious Q3 outlook disappointed investors, raising concerns that AI-driven growth may be slowing. Kioxia Holdings Corp.'s shares fell by their most in three months after the Japanese memory maker's cautious outlook inflamed concerns …",
+   "text": "How SF's AI boom is reshaping dating: founders treat first dates as interviews, use tech terms like “conversion rate” to track dates, and pay coaches $5K/month. San Francisco's A.I. boom has drawn a wave of young ambitious people who are now reshaping the city's dating life.Kelsey McClellan for The New York Times",
    "via": "Techmeme"
   },
   {
@@ -104,11 +112,11 @@
    "via": "Techmeme"
   },
   {
-   "title": "How SF's AI boom is reshaping dating: founders treat first dates as interviews, use tech terms like…",
-   "url": "https://www.nytimes.com/2026/10/31/technology/san-francisco-ai-boom-dating.html?unlocked_article_code=1.NFE.wr2v.F_Wy3TSgmnjB&smid=url-share",
-   "source": "Emmy Martin / New York Times",
+   "title": "NAND maker Kioxia's shares fell up to 15% on Monday after its cautious Q3 outlook disappointed inve…",
+   "url": "https://www.bloomberg.com/news/articles/2026-11-02/kioxia-shares-tumble-after-outlook-suggests-demand-leveling-off",
+   "source": "Bloomberg",
    "published_at": "2026-11-02T08:46:03Z",
-   "text": "How SF's AI boom is reshaping dating: founders treat first dates as interviews, use tech terms like “conversion rate” to track dates, and pay coaches $5K/month. San Francisco's A.I. boom has drawn a wave of young ambitious people who are now reshaping the city's dating life.Kelsey McClellan for The New York Times",
+   "text": "NAND maker Kioxia's shares fell up to 15% on Monday after its cautious Q3 outlook disappointed investors, raising concerns that AI-driven growth may be slowing. Kioxia Holdings Corp.'s shares fell by their most in three months after the Japanese memory maker's cautious outlook inflamed concerns …",
    "via": "Techmeme"
   },
   {
@@ -116,15 +124,7 @@
    "url": "https://www.calcalistech.com/ctechnews/article/s1t5soetmx",
    "source": "Meir Orbach / CTech",
    "published_at": "2026-11-02T06:45:57Z",
-   "text": "Bites, whose AI tools deliver personalized training to frontline workers via WhatsApp, SMS, Slack, and other channels, raised a $40M Series A led by PeakSpan. The platform turns company procedures into short, branded videos delivered through WhatsApp, Teams and other familiar channels.",
-   "via": "Techmeme"
-  },
-  {
-   "title": "South Korean President Lee Jae Myung vows $15.97B for AI, chips, physical AI, and data centers in t…",
-   "url": "https://www.reuters.com/world/asia-pacific/south-koreas-lee-vows-make-bold-ai-investment-record-budget-push-2026-11-02/",
-   "source": "Reuters",
-   "published_at": "2026-11-02T04:05:38Z",
-   "text": "South Korean President Lee Jae Myung vows $15.97B for AI, chips, physical AI, and data centers in the country's 2027 budget, nearly twice the 2026 amount",
+   "text": "Bites, whose AI tools deliver personalized training to frontline workers via WhatsApp, SMS, Slack, and other channels, raised a $40M Series A led by PeakSpan",
    "via": "Techmeme"
   }
  ],
