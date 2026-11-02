@@ -1,13 +1,13 @@
 {
  "schema": 1,
- "generated_at": "2026-11-02T15:06:13Z",
+ "generated_at": "2026-11-02T15:38:24Z",
  "items": [
   {
-   "title": "Marvell agrees to acquire optical components maker Lumentum in a $115B all-stock deal, as it aims t…",
-   "url": "https://www.reuters.com/legal/transactional/marvell-buy-lumentum-115-billion-deal-ai-data-center-bet-2026-11-02/",
-   "source": "Anhata Rooprai / Reuters",
-   "published_at": "2026-11-02T12:21:16Z",
-   "text": "Marvell agrees to acquire optical components maker Lumentum in a $115B all-stock deal, as it aims to rival Broadcom; Nvidia invested $2B in each company in 2026. Marvell Technology (MRVL.O) is buying optical components maker Lumentum (LITE.O) in a $115 billion all-stock deal, including debt …",
+   "title": "S-1: Anthropic reports Q3 revenue up 12x YoY to nearly $17B, a net loss of $23.3B, up from $12.1B i…",
+   "url": "https://www.bloomberg.com/news/articles/2026-11-02/anthropic-revenue-hits-nearly-17-billion-before-blockbuster-ipo",
+   "source": "Bailey Lipschultz / Bloombe…",
+   "published_at": "2026-11-02T14:46:44Z",
+   "text": "S-1: Anthropic reports Q3 revenue up 12x YoY to nearly $17B, a net loss of $23.3B, up from $12.1B in Q3 2025, and operating expenses up 292% to $17.5B. Anthropic PBC reported third-quarter revenue of nearly $17 billion as of Sept. 30, a twelve-fold increase versus the same period …",
    "via": "Techmeme"
   },
   {
@@ -17,7 +17,7 @@
    "published_at": "2026-11-02T04:34:36Z",
    "text": "Great to see high quality benchmarks with headroom and look at that cost line for Carbon🚀",
    "author_name": "Sundar Pichai",
-   "likes": 3373,
+   "likes": 3471,
    "story": "SemiAnalysis launches GDPx, an AI frontier model benchmark measuring 11 domains, including chip design, cybersecurity, and RSI; Opus 5.5 tops with a 12% score"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-11-02T14:09:54Z",
    "text": "763B parameters, compressed to 1 bit per weight. Introducing DeepSeek-V4.1-Flash-1017 GSQ-RCO Coder, a frontier-scale model tailored for coding and agentic workflows. Benchmarks, demos and download link below. Follow us for updates.",
    "author_name": "Michael Helcig",
-   "likes": 117,
+   "likes": 213,
    "story": "[Release] ISTA DeepSeek-V4.1-Flash-1017 GSQ-RCO Coder: a 763B model at 1 bit per parameter"
   },
   {
@@ -44,15 +44,15 @@
    "published_at": "2026-11-01T15:23:56Z",
    "text": "Mythos 5.5 is already listed HTML source code of Anthropic's official website Thanks to the anonymous person who sent me the tip via email :)…",
    "author_name": "Chubby♨️",
-   "likes": 3478,
+   "likes": 3493,
    "story": "Opus 5.6 imminently about to release"
   },
   {
-   "title": "S-1: Anthropic reports Q3 revenue up 12x YoY to nearly $17B, a net loss of $23.3B, up from $12.1B i…",
-   "url": "https://www.bloomberg.com/news/articles/2026-11-02/anthropic-revenue-hits-nearly-17-billion-before-blockbuster-ipo",
-   "source": "Bailey Lipschultz / Bloombe…",
-   "published_at": "2026-11-02T14:46:44Z",
-   "text": "S-1: Anthropic reports Q3 revenue up 12x YoY to nearly $17B, a net loss of $23.3B, up from $12.1B in Q3 2025, and operating expenses up 292% to $17.5B. Anthropic PBC reported third-quarter revenue of nearly $17 billion as of Sept. 30, a twelve-fold increase versus the same period …",
+   "title": "Marvell agrees to acquire optical components maker Lumentum in a $115B all-stock deal, as it aims t…",
+   "url": "https://www.reuters.com/legal/transactional/marvell-buy-lumentum-115-billion-deal-ai-data-center-bet-2026-11-02/",
+   "source": "Anhata Rooprai / Reuters",
+   "published_at": "2026-11-02T12:21:16Z",
+   "text": "Marvell agrees to acquire optical components maker Lumentum in a $115B all-stock deal, as it aims to rival Broadcom; Nvidia invested $2B in each company in 2026. Marvell Technology (MRVL.O) is buying optical components maker Lumentum (LITE.O) in a $115 billion all-stock deal, including debt …",
    "via": "Techmeme"
   },
   {
@@ -60,8 +60,8 @@
    "url": "https://labs.cloudsecurityalliance.org/research/csa-research-note-china-ai-export-controls-announcement-48-2/",
    "source": "Hacker News",
    "published_at": "2026-11-02T07:27:28Z",
-   "text": "119 points and 60 comments on Hacker News.",
-   "points": 119,
+   "text": "125 points and 66 comments on Hacker News.",
+   "points": 125,
    "discussion": "https://news.ycombinator.com/item?id=50334038"
   },
   {
@@ -71,7 +71,7 @@
    "published_at": "2026-11-01T18:25:40Z",
    "text": "OpenAI is preparing for a post midterms change in the weather. Axios:",
    "author_name": "Andrew Curran",
-   "likes": 873,
+   "likes": 884,
    "story": "OpenAI plans a post-midterms policy and PR blitz, pushing mandatory “speed limits” for powerful AI and rebranding its data centers as “AI compute campuses”"
   },
   {
@@ -82,20 +82,30 @@
    "text": "I was reminded today of AI Adoption Rate Trending Down for Large Companies , a chart produced by Apollo Global Management in September 2025, which appeared to show a slowdown in U.S. corporate AI adoption based on numbers collected by the U.S. Census Bureau. At the time I used that chart to demonstrate GPT-5 data analysis , and then to experiment with Claude's new Code Interpreter . I decided to try running those numbers again to see what had changed over the past year, and in doing so learned that the Bureau has fallen foul of Executive Order 14434 , aka the asinine Super Intelligence one."
   },
   {
-   "title": "Email: OpenAI plans to merge ChatGPT's Chat and Work tabs on desktop, rolling out to select users b…",
+   "title": "Email: OpenAI plans to merge ChatGPT's Chat and Work tabs on desktop for select users before rollin…",
    "url": "https://techcrunch.com/2026/11/02/openai-is-finally-merging-chatgpts-chat-and-work-tabs/",
    "source": "Ivan Mehta / TechCrunch",
    "published_at": "2026-11-02T14:25:46Z",
-   "text": "Email: OpenAI plans to merge ChatGPT's Chat and Work tabs on desktop, rolling out to select users before a wider release; Codex remains a separate experience. The ChatGPT desktop app can be a confusing piece of software, given that there are ChatGPT and Codex sections, and within the former, there are Chat and Work tabs.",
+   "text": "Email: OpenAI plans to merge ChatGPT's Chat and Work tabs on desktop for select users before rolling it out widely; Codex “will remain a separate experience”. The ChatGPT desktop app can be a confusing piece of software, given that there are ChatGPT and Codex sections, and within the former, there are Chat and Work tabs.",
    "via": "Techmeme"
+  },
+  {
+   "title": "MiniMax M3.1 Flash, on more of your hardware. Quantizing a 428B model opens up more ways to run it…",
+   "url": "https://x.com/MiniMax_AI/status/2116996123164569606",
+   "source": "𝕏 @MiniMax_AI",
+   "published_at": "2026-11-01T20:49:42Z",
+   "text": "MiniMax M3.1 Flash, on more of your hardware. Quantizing a 428B model opens up more ways to run it locally. Lower-bit weights reduce the memory needed to load the model and the weight data moved during decoding. Making those savings useful takes careful calibration, efficient…",
+   "author_name": "MiniMax (official)",
+   "likes": 631,
+   "story": "Builders got MiniMax M3.1 Flash's open weights from 252.4 GB down to 93 GB in 10 days, and the lab thanked them by name"
   },
   {
    "title": "The AI cost of JavaScript frameworks",
    "url": "https://nolanlawson.com/2026/10/28/the-ai-cost-of-javascript-frameworks/",
    "source": "Hacker News",
    "published_at": "2026-11-01T06:06:19Z",
-   "text": "422 points and 323 comments on Hacker News.",
-   "points": 422,
+   "text": "432 points and 325 comments on Hacker News.",
+   "points": 432,
    "discussion": "https://news.ycombinator.com/item?id=50323088"
   },
   {
@@ -121,14 +131,6 @@
    "source": "YC Labs",
    "published_at": "2026-11-02T07:45:55Z",
    "text": "YC details multi-agent tests in games like Minecraft, where agents exhibit emergent capabilities, forming roles, hierarchies, and complex coordination patterns",
-   "via": "Techmeme"
-  },
-  {
-   "title": "A look at AI safety debates and the rising popularity of “Stop Unilaterally + Raise Awareness”, or…",
-   "url": "https://www.lesswrong.com/posts/xikGZ8fuhdG6DApAo/against-sura",
-   "source": "Scott Alexander / LessWrong",
-   "published_at": "2026-11-02T13:05:45Z",
-   "text": "A look at AI safety debates and the rising popularity of “Stop Unilaterally + Raise Awareness”, or SURA; safety-focused AI labs shouldn't abandon the AI race. The AI Futures Project[1] distinguishes several different plans for navigating the AI transition, which I'll lump into two broader categories:",
    "via": "Techmeme"
   }
  ],
