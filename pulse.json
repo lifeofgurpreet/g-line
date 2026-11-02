@@ -1,13 +1,13 @@
 {
  "schema": 1,
- "generated_at": "2026-11-01T23:59:41Z",
+ "generated_at": "2026-11-02T00:32:21Z",
  "items": [
   {
-   "title": "Google's data center energy head says space data centers cost up to 100x more than Earth-based ones…",
-   "url": "https://www.theinformation.com/articles/google-energy-chief-space-data-centers-cost-100-times-earth",
-   "source": "Amir Efrati / The Informati…",
-   "published_at": "2026-11-01T17:05:37Z",
-   "text": "Google's data center energy head says space data centers cost up to 100x more than Earth-based ones, and US power supply is sufficient but permits are slow. Data centers in space could cost up to 100 times as much as those on Earth, Google's head of data center energy said this week …",
+   "title": "Binance has started resuming withdrawals in phases, including for BTC and ETH, after covering 95% o…",
+   "url": "https://www.reuters.com/legal/government/binance-resume-withdrawals-after-recovering-bulk-6-billion-stolen-funds-2026-11-01/",
+   "source": "Reuters",
+   "published_at": "2026-11-01T05:30:58Z",
+   "text": "Binance has started resuming withdrawals in phases, including for BTC and ETH, after covering 95% of the $6.3B in tokens stolen in the hack by TraderTraitor. Binance, the world's biggest cryptocurrency exchange, said it would resume withdrawals in phases after covering 95% of the $6.3 billion …",
    "via": "Techmeme"
   },
   {
@@ -17,7 +17,7 @@
    "published_at": "2026-11-01T15:23:56Z",
    "text": "Mythos 5.5 is already listed HTML source code of Anthropic's official website Thanks to the anonymous person who sent me the tip via email :)…",
    "author_name": "Chubby♨️",
-   "likes": 3046,
+   "likes": 3072,
    "story": "Opus 5.6 imminently about to release"
   },
   {
@@ -34,8 +34,35 @@
    "published_at": "2026-11-01T18:25:40Z",
    "text": "OpenAI is preparing for a post midterms change in the weather. Axios:",
    "author_name": "Andrew Curran",
-   "likes": 641,
+   "likes": 658,
    "story": "OpenAI plans a post-midterms policy and PR blitz, pushing mandatory “speed limits” for powerful AI and rebranding its data centers as “AI compute campuses”"
+  },
+  {
+   "title": "Sources: OpenAI has secured ~$11B in commitments for its latest funding round, less than half its i…",
+   "url": "https://www.wsj.com/tech/ai/openai-raises-less-than-half-of-30-billion-target-in-latest-round-91aecdc5?st=pgo9cE&reflink=desktopwebshare_permalink",
+   "source": "Berber Jin / Wall Street Jo…",
+   "published_at": "2026-10-31T02:30:54Z",
+   "text": "Sources: OpenAI has secured ~$11B in commitments for its latest funding round, less than half its initial $30B target, and expects to raise more in coming weeks. The ChatGPT maker's latest funding round values it at $1.25 trillion, less than its $1.4 trillion target",
+   "via": "Techmeme"
+  },
+  {
+   "title": "AI delivers 'zero financial payoff' to most companies, Apollo economist says",
+   "url": "https://techcrunch.com/2026/10/25/ai-delivers-zero-financial-payoff-to-most-companies-according-to-apollo-economist/",
+   "source": "Hacker News",
+   "published_at": "2026-11-01T22:10:45Z",
+   "text": "108 points and 89 comments on Hacker News.",
+   "points": 108,
+   "discussion": "https://news.ycombinator.com/item?id=50330456"
+  },
+  {
+   "title": "Yann LeCun and Randall Balestriero just Proved the Platonic Representation Hypothesis, and found a…",
+   "url": "https://x.com/askalphaxiv/status/2116779287390896418",
+   "source": "𝕏 @askalphaxiv",
+   "published_at": "2026-11-01T06:28:04Z",
+   "text": "Yann LeCun and Randall Balestriero just Proved the Platonic Representation Hypothesis, and found a better way to achieve it. The Platonic Representation Hypothesis suggests that AI models trained on different modalities, like images and text, eventually learn similar…",
+   "author_name": "alphaXiv",
+   "likes": 2286,
+   "story": "new research: A tiny 109M-parameter model outperforms models up to 72B parameters at image-text alignment, using 42× less training data"
   },
   {
    "title": "DeepSeek open sources Super-Agent, a coding agent research prototype it says proactively monitors d…",
@@ -46,23 +73,13 @@
    "via": "Techmeme"
   },
   {
-   "title": "AI delivers 'zero financial payoff' to most companies, Apollo economist says",
-   "url": "https://techcrunch.com/2026/10/25/ai-delivers-zero-financial-payoff-to-most-companies-according-to-apollo-economist/",
+   "title": "The AI cost of JavaScript frameworks",
+   "url": "https://nolanlawson.com/2026/10/28/the-ai-cost-of-javascript-frameworks/",
    "source": "Hacker News",
-   "published_at": "2026-11-01T22:10:45Z",
-   "text": "71 points and 42 comments on Hacker News.",
-   "points": 71,
-   "discussion": "https://news.ycombinator.com/item?id=50330456"
-  },
-  {
-   "title": "Yann LeCun and Randall Balestriero just Proved the Platonic Representation Hypothesis, and found a…",
-   "url": "https://x.com/askalphaxiv/status/2116779287390896418",
-   "source": "𝕏 @askalphaxiv",
-   "published_at": "2026-11-01T06:28:04Z",
-   "text": "Yann LeCun and Randall Balestriero just Proved the Platonic Representation Hypothesis, and found a better way to achieve it. The Platonic Representation Hypothesis suggests that AI models trained on different modalities, like images and text, eventually learn similar…",
-   "author_name": "alphaXiv",
-   "likes": 2247,
-   "story": "new research: A tiny 109M-parameter model outperforms models up to 72B parameters at image-text alignment, using 42× less training data"
+   "published_at": "2026-11-01T06:06:19Z",
+   "text": "290 points and 225 comments on Hacker News.",
+   "points": 290,
+   "discussion": "https://news.ycombinator.com/item?id=50323088"
   },
   {
    "title": "A profile of White House OSTP Director Michael Kratsios, an ex-Peter Thiel aide who is among a hand…",
@@ -73,13 +90,21 @@
    "via": "Techmeme"
   },
   {
-   "title": "The AI cost of JavaScript frameworks",
-   "url": "https://nolanlawson.com/2026/10/28/the-ai-cost-of-javascript-frameworks/",
+   "title": "Anthropic takes steps to block Claude from reverse-engineering video games",
+   "url": "https://mashable.com/tech/anthropic-takes-steps-to-block-video-game-cloning-and-reverse-engineering",
    "source": "Hacker News",
-   "published_at": "2026-11-01T06:06:19Z",
-   "text": "282 points and 221 comments on Hacker News.",
-   "points": 282,
-   "discussion": "https://news.ycombinator.com/item?id=50323088"
+   "published_at": "2026-10-31T21:07:58Z",
+   "text": "180 points and 111 comments on Hacker News.",
+   "points": 180,
+   "discussion": "https://news.ycombinator.com/item?id=50320255"
+  },
+  {
+   "title": "Google's data center energy head says space data centers cost up to 100x more than Earth-based ones…",
+   "url": "https://www.theinformation.com/articles/google-energy-chief-space-data-centers-cost-100-times-earth",
+   "source": "Amir Efrati / The Informati…",
+   "published_at": "2026-11-01T17:05:37Z",
+   "text": "Google's data center energy head says space data centers cost up to 100x more than Earth-based ones, and US power supply is sufficient but permits are slow. Data centers in space could cost up to 100 times as much as those on Earth, Google's head of data center energy said this week …",
+   "via": "Techmeme"
   },
   {
    "title": "Saudi Aramco acquires a 49% stake in AI startup Humain, contributing ~$2.6B in cash in 2026 plus AI…",
@@ -88,15 +113,6 @@
    "published_at": "2026-11-01T22:15:37Z",
    "text": "Saudi Aramco acquires a 49% stake in AI startup Humain, contributing ~$2.6B in cash in 2026 plus AI, compute, and digital assets; Saudi Arabia's PIF retains 51%",
    "via": "Techmeme"
-  },
-  {
-   "title": "Anthropic takes steps to block Claude from reverse-engineering video games",
-   "url": "https://mashable.com/tech/anthropic-takes-steps-to-block-video-game-cloning-and-reverse-engineering",
-   "source": "Hacker News",
-   "published_at": "2026-10-31T21:07:58Z",
-   "text": "180 points and 112 comments on Hacker News.",
-   "points": 180,
-   "discussion": "https://news.ycombinator.com/item?id=50320255"
   },
   {
    "title": "Analysis: candidates backing a data center moratorium could win up to 15 of 36 US governors' races…",
@@ -112,22 +128,6 @@
    "source": "Sarah Klearman / Wall Stree…",
    "published_at": "2026-11-01T05:36:01Z",
    "text": "Lumaril, which develops AI software for optimizing industrial production by connecting to existing control systems, raised a $66M Series A at a $400M valuation",
-   "via": "Techmeme"
-  },
-  {
-   "title": "How AI detectors like Pangram are changing human writing: authors drop em dashes, “not X, but Y” ph…",
-   "url": "https://www.bloomberg.com/news/features/2026-10-30/how-ai-detectors-like-pangram-are-changing-human-writing?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc5MzM2MDg2MCwiZXhwIjoxNzkzOTY1NjYwLCJhcnRpY2xlSWQiOiJUTlBLU0FLSVVQU0MwMCIsImJjb25uZWN0SWQiOiI1MEU0OTBGQjhDNTM0MkREODAwRUEyNTQ1RjBCMThCOCJ9.QWmO8ZCSYNuUI7oMX4N9wEkQtBDq_LYD89yJOMz3bfE",
-   "source": "Morgan Meaker / Bloomberg",
-   "published_at": "2026-10-31T13:42:13Z",
-   "text": "How AI detectors like Pangram are changing human writing: authors drop em dashes, “not X, but Y” phrasing, and words like “delve”, or add typos, to look human",
-   "via": "Techmeme"
-  },
-  {
-   "title": "Tests: chatbots rely on three obscure AI-built voter sites for US midterm answers; Copilot cited th…",
-   "url": "https://www.washingtonpost.com/technology/2026/10/30/how-an-obscure-website-became-force-americas-election-information-machine/?pwapi_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyZWFzb24iOiJnaWZ0IiwibmJmIjoxNzkzMzMyODAwLCJpc3MiOiJzdWJzY3JpcHRpb25zIiwiZXhwIjoxNzk0NzE4Nzk5LCJpYXQiOjE3OTMzMzI4MDAsImp0aSI6ImFlZmU1ZmI3LThlMmItNDYwOC1iMmVhLWJiZDg2YTFmZDQ1ZCIsInVybCI6Imh0dHBzOi8vd3d3Lndhc2hpbmd0b25wb3N0LmNvbS90ZWNobm9sb2d5LzIwMjYvMTAvMzAvaG93LWFuLW9ic2N1cmUtd2Vic2l0ZS1iZWNhbWUtZm9yY2UtYW1lcmljYXMtZWxlY3Rpb24taW5mb3JtYXRpb24tbWFjaGluZS8ifQ.lCIALy15UkNNilYI0FU_HKDmoqz6MM-BgZD4xUT8pME&itid=gfta",
-   "source": "Washington Post",
-   "published_at": "2026-11-01T00:03:14Z",
-   "text": "Tests: chatbots rely on three obscure AI-built voter sites for US midterm answers; Copilot cited the error-prone Ballot Brief in 75% of tests and ChatGPT in 22%. Frustrated with hunting for information on political candidates, Ben Torres Ezrick set out to build a one-stop shop for voters.",
    "via": "Techmeme"
   }
  ],
