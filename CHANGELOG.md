@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.22.0 (2026-11-02): switch an account off
+
+- **`guard.off` switches accounts off until a time.** A switched-off account holds every prompt,
+  with or without a usage reading, and ends a running turn at its next step. It says why and
+  when it comes back on (`It comes back on 16 Nov 09:00.`), on line 2 (`guard: account off till
+  16 Nov`), in the toast and in `/g-line guard why`. Keep-warm neither re-reads nor compacts it,
+  and a held prompt isn't queued. Enter again still sends a prompt anyway. See
+  [docs/guard.md](docs/guard.md#switch-an-account-off).
+
 ## 0.21.0 (2026-10-29): keep warm, then compact; one rule on every account
 
 Idle caches behaved differently from one account to the next, because Claude Code's idle

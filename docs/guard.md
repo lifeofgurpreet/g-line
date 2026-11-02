@@ -198,6 +198,35 @@ names the group (`guard: people reserve, 35% 5h left till 13:00`), and the `/g-l
 the groups with the session's own marked. Change a group's rules and every account in it
 follows.
 
+## Switch an account off
+
+Some accounts shouldn't be used for a while, whatever their windows say: a shared account a
+colleague needs this fortnight, say. `off` switches them off until a time:
+
+```json
+"guard": {
+  "off": [
+    { "accounts": ["team@example.com", "ops@"], "until": "2026-11-16T09:00:00+08:00", "why": "reserved for the team" },
+    { "groups": ["people"] }
+  ]
+}
+```
+
+- **Every prompt on a switched-off account is held,** with or without a usage reading, from the
+  moment the config loads. A running turn ends at its next step unless the entry says
+  `"end_turn": false`.
+- **`until`** is a time with its zone. Past it the switch is off by itself; without one it stays
+  until you remove the entry. **`why`** is said in the refusal and on line 2.
+- **It says so:** `g-line held this: team@example.com is switched off: reserved for the team. It
+  comes back on 16 Nov 09:00.` Line 2 reads `guard: account off till 16 Nov`, and
+  `/g-line guard why` lists each switch and whether it's in force.
+- **Nothing is spent on it:** keep-warm neither re-reads nor compacts a switched-off account, and
+  a held prompt isn't queued.
+- **You can still get past it:** Enter again sends the prompt anyway, as with any hold.
+
+An entry names `accounts` or `groups` (never every account). Over any threshold rule, the switch
+is the reason given.
+
 ## Queue a held prompt
 
 With `"queue": true` in `guard`, g-line keeps a refused prompt and sends it itself as soon as the

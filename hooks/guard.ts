@@ -44,6 +44,11 @@ export type Rule = {
   tz?: string
   /** A paced weekly allowance in place of a cliff: the rule's steps come with how far ahead of pace the week is. */
   pace?: Pace
+  /**
+   * An off switch (`guard.off`), not a threshold: the accounts it names are held whatever their
+   * readings say, from now until `until` (ms; none: until the entry is removed). `why` is said with it.
+   */
+  off?: { until?: number; why?: string }
   /** The rule as written, for toasts. */
   text: string
 }
@@ -278,6 +283,50 @@ export function parseGuard(raw: unknown): GuardConfig {
     }
     rules.push(rule)
   })
+  // Off switches: an account held outright, whatever its readings, until a time or until removed.
+  const offs = r.off === undefined ? [] : Array.isArray(r.off) ? r.off : [r.off]
+  const switched: Rule[] = []
+  offs.forEach((entry, index) => {
+    const n = index + 1
+    if (!entry || typeof entry !== 'object' || Array.isArray(entry)) {
+      errors.push(`off ${n}: an object such as {"accounts": ["team@"], "until": "2026-11-16T09:00:00+08:00"}`)
+      return
+    }
+    const e = entry as Record<string, unknown>
+    const bad = (why: string) => {
+      errors.push(`off ${n}: ${why}`)
+    }
+    const rule: Rule = { id: `off${index}`, left: 100, window: '5h', stop: true, text: JSON.stringify(entry), off: {} }
+    if (e.accounts !== undefined) {
+      const accounts = (Array.isArray(e.accounts) ? e.accounts : [e.accounts]).map(word).filter(Boolean)
+      if (!accounts.length) return bad('"accounts" lists parts of the account line, such as "team@"')
+      rule.accounts = accounts
+    }
+    if (e.groups !== undefined || e.group !== undefined) {
+      const named = (Array.isArray(e.groups) ? e.groups : [e.groups ?? e.group]).map(word).filter(Boolean)
+      const unknown = named.filter(g => g !== OTHER_GROUP && !groups.some(x => x.name === g))
+      if (!named.length) return bad('"groups" names groups from "guard.groups", such as "team"')
+      if (unknown.length) return bad(`no group named ${unknown.map(g => `"${g}"`).join(', ')} in "guard.groups"`)
+      rule.groups = named
+    }
+    if (!rule.accounts && !rule.groups) return bad('name "accounts" or "groups": an off switch never covers every account')
+    if (e.until !== undefined) {
+      const until = typeof e.until === 'string' ? Date.parse(e.until) : Number.NaN
+      if (!Number.isFinite(until)) return bad('"until" is a time such as "2026-11-16T09:00:00+08:00"')
+      rule.off = { until }
+    }
+    if (e.why !== undefined) {
+      // eslint-disable-next-line no-control-regex
+      const why = typeof e.why === 'string' ? e.why.replace(/[\u0000-\u001f\u007f]/g, ' ').trim().slice(0, 120) : ''
+      if (!why) return bad('"why" is a few words, such as "reserved for the team"')
+      rule.off = { ...rule.off, why }
+    }
+    if (e.end_turn !== undefined && typeof e.end_turn !== 'boolean') return bad('"end_turn" is true or false')
+    // A switched-off account's running turn ends at its next step unless the entry says otherwise.
+    if (e.end_turn !== false) rule.endTurn = true
+    switched.push(rule)
+  })
+  rules.unshift(...switched)
   let keepWarm: KeepWarm | undefined
   if (r.keep_warm === true) keepWarm = KEEP_WARM_DEFAULTS
   else if (r.keep_warm && typeof r.keep_warm === 'object') {
@@ -583,6 +632,13 @@ export function evaluate(guard: GuardConfig, facts: Facts, before: Active = {}, 
   const kept: Record<string, PaceMemory> = {}
   if (!guard.on) return { active, rules }
   for (const rule of guard.rules) {
+    // An off switch needs no reading: it holds from now until its time, on the accounts it names.
+    if (rule.off) {
+      if (!switchedOff(rule, facts.nowMs) || !inScope(guard, rule, facts)) continue
+      active[rule.id] = null
+      rules.push(rule)
+      continue
+    }
     const w = facts.windows[rule.window]
     if (!w || !Number.isFinite(w.left)) continue
     // A reading from before the window's reset says nothing about the new window.
@@ -624,7 +680,9 @@ export function evaluate(guard: GuardConfig, facts: Facts, before: Active = {}, 
     // A model the guard can't rank must not mask a cheaper one it can.
     if (agents && (!verdict.agents || (rank(agents) > 0 && (rank(verdict.agents) === 0 || rank(agents) < rank(verdict.agents))))) verdict.agents = agents
     const w = facts.windows[rule.window]
-    const held = w ? { rule, window: rule.window, left: w.left, resetsAt: w.resetsAt, ...(rule.groups && group ? { group } : {}), ...(pace ? { pace } : {}) } : undefined
+    const held = rule.off
+      ? { rule, window: rule.window, left: w && Number.isFinite(w.left) ? w.left : 100, ...(rule.groups && group ? { group } : {}) }
+      : w ? { rule, window: rule.window, left: w.left, resetsAt: w.resetsAt, ...(rule.groups && group ? { group } : {}), ...(pace ? { pace } : {}) } : undefined
     if (stops && held && binds(rule, held.left, verdict.stop)) verdict.stop = held
     if (stops && rule.endTurn && held && binds(rule, held.left, verdict.end)) verdict.end = held
   }
@@ -660,10 +718,24 @@ export function inScope(guard: GuardConfig, rule: Rule, facts: Facts): boolean {
  */
 function binds(rule: Rule, left: number, chosen: Verdict['stop']): boolean {
   if (!chosen) return true
+  // An off switch is the reason over any threshold; the first one written keeps it.
+  if (Boolean(rule.off) !== Boolean(chosen.rule.off)) return Boolean(rule.off)
+  if (rule.off) return false
   if (left !== chosen.left) return left < chosen.left
   const team = namesAccounts(rule)
   if (team !== namesAccounts(chosen.rule)) return team
   return rule.left > chosen.rule.left
+}
+
+/** Whether an off switch is on at this moment: no time, or a time still ahead. */
+export const switchedOff = (rule: Rule, nowMs: number) => Boolean(rule.off) && (rule.off?.until === undefined || rule.off.until > nowMs)
+
+/** A day and month in the caller's zone, with the time unless it's midnight: `16 Nov`, `16 Nov 09:00`. */
+export function dateWords(ms: number, offsetMinutes = 0): string {
+  const at = new Date(ms + offsetMinutes * 60_000)
+  const month = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'][at.getUTCMonth()]
+  const time = at.getUTCHours() || at.getUTCMinutes() ? ` ${hhmm(at.getUTCHours() * 60 + at.getUTCMinutes())}` : ''
+  return `${at.getUTCDate()} ${month}${time}`
 }
 
 /** Whether a rule depends on the account reading. */
@@ -753,6 +825,10 @@ export function hoursWords(rule: Rule): string {
 function reasonText(stop: NonNullable<Verdict['stop']>, simulated: boolean, account?: string | null): string {
   const window = `${NAMES[stop.window]} window`
   const sim = simulated ? ' (simulated)' : ''
+  if (stop.rule.off) {
+    const who = account ? accountIdentity(account) : 'this account'
+    return `${who} is switched off${stop.rule.off.why ? `: ${stop.rule.off.why}` : ''}${sim}.`
+  }
   if (stop.pace) {
     const said = `${paceWords(stop.pace)}${sim}`
     if (!namesAccounts(stop.rule)) return `${said}.`
@@ -771,6 +847,10 @@ export function stopText(stop: NonNullable<Verdict['stop']>, nowMs: number, offs
   o: { account?: string | null; typed?: boolean; queued?: { at?: string; cache?: 'warm' | 'bridge' | 'cold' } } = {}): string {
   // When it lets go on its own: a pace step's lift or the end of the rule's hours, else the reset.
   const lift = liftsAt(stop, nowMs, offsetMinutes)
+  if (stop.rule.off) {
+    const back = lift !== undefined ? ` It comes back on ${dateWords(lift, offsetMinutes)}.` : ' It stays off until the switch is turned back on.'
+    return `g-line held this: ${reasonText(stop, simulated, o.account)}${back}${o.typed === false ? '' : ' Enter again sends it anyway.'}`
+  }
   const when = resetWords(lift !== undefined ? Math.ceil(lift / 1000) : stop.resetsAt, nowMs, offsetMinutes)
   const cache = o.queued?.cache === 'bridge' ? ', cache kept warm' : o.queued?.cache === 'cold' ? '; the cache will be cold by then' : ''
   const past = o.typed === false
@@ -786,6 +866,7 @@ export function stopText(stop: NonNullable<Verdict['stop']>, nowMs: number, offs
  * end of the rule's hours. Undefined when neither is known.
  */
 export function liftsAt(held: Held, nowMs: number, offsetMinutes?: number): number | undefined {
+  if (held.rule.off) return held.rule.off.until
   const reset = held.pace?.liftsAt ?? (held.resetsAt !== undefined ? held.resetsAt * 1000 : undefined)
   const hours = held.rule.hours
   if (!hours) return reset
@@ -811,7 +892,7 @@ export function bridgeDue(f: BridgeFacts): boolean {
 
 /** Why a running turn was ended, when the window resets, and how to carry on. */
 export function endText(end: NonNullable<Verdict['end']>, nowMs: number, offsetMinutes: number, simulated = false, account?: string | null): string {
-  const reset = resetWords(end.resetsAt, nowMs, offsetMinutes)
+  const reset = end.rule.off ? '' : resetWords(end.resetsAt, nowMs, offsetMinutes)
   return `g-line ended this turn before its next request: ${reasonText(end, simulated, account)}${reset ? ` It resets at ${reset}.` : ''}`
     + ' To carry on anyway, type "continue" and press Enter twice.'
 }
@@ -820,6 +901,12 @@ const hhmm = (minute: number) => `${String(Math.floor(minute / 60)).padStart(2, 
 
 /** A rule in words: `at 10% of 5h left, on accounts "team@", 09:00-17:00 Mon-Fri (Asia/Kuala_Lumpur): stop`. */
 export function ruleText(rule: Rule): string {
+  if (rule.off) {
+    const who = [rule.accounts ? `accounts ${rule.accounts.map(a => `"${a}"`).join(', ')}` : '',
+      rule.groups ? `${rule.groups.length === 1 ? 'group' : 'groups'} ${rule.groups.join(', ')}` : ''].filter(Boolean).join(', ')
+    const until = rule.off.until !== undefined ? ` until ${new Date(rule.off.until).toISOString().slice(0, 16).replace('T', ' ')} UTC` : ''
+    return `${who}: switched off${until}${rule.off.why ? ` (${rule.off.why})` : ''}${rule.endTurn ? ', running turns end' : ''}`
+  }
   const when = [rule.pace ? (rule.pace.window === '5h' ? 'paced 5h window' : 'paced week') : `at ${rule.left}% of ${rule.window} left`]
   if (rule.unlessResetWithin !== undefined) {
     const u = rule.unlessResetWithin
@@ -845,7 +932,7 @@ export function ruleText(rule: Rule): string {
 
 /** What's in force, in a few words: `stop (4% of 5h left), effort low, agents on haiku`. */
 export function inForceText(v: Verdict): string {
-  return [v.stop ? (v.stop.pace ? `stop (${paceWords(v.stop.pace)})` : `stop (${pct(v.stop.left)} of ${v.stop.window} left)`) : '', v.effort ? `effort ${v.effort}` : '', v.agents ? `agents on ${v.agents}` : '']
+  return [v.stop ? (v.stop.rule.off ? 'account switched off' : v.stop.pace ? `stop (${paceWords(v.stop.pace)})` : `stop (${pct(v.stop.left)} of ${v.stop.window} left)`) : '', v.effort ? `effort ${v.effort}` : '', v.agents ? `agents on ${v.agents}` : '']
     .filter(Boolean).join(', ')
 }
 
@@ -882,7 +969,8 @@ export function changeText(before: Verdict | undefined, after: Verdict): string 
     const from = before?.pace?.[rule.id]?.tier ?? 0
     if (at.tier > from) parts.push(paceShort(at), ...paceSteps(rule, from, at.tier))
   }
-  if (after.stop && started.includes(after.stop.rule) && !after.stop.pace) parts.push(`held: ${pct(after.stop.left)} of ${SHORT[after.stop.window]} left`)
+  if (after.stop && started.includes(after.stop.rule) && after.stop.rule.off) parts.push(`account switched off${after.stop.rule.off.why ? `: ${after.stop.rule.off.why}` : ''}`)
+  else if (after.stop && started.includes(after.stop.rule) && !after.stop.pace) parts.push(`held: ${pct(after.stop.left)} of ${SHORT[after.stop.window]} left`)
   if (after.effort && started.some(r => r.effort)) parts.push(`effort ${after.effort}`)
   if (after.agents && started.some(r => r.agents)) parts.push(`agents on ${after.agents}`)
   if (before?.effort && after.effort && before.effort !== after.effort) parts.push(`effort now ${after.effort}`)
@@ -899,6 +987,11 @@ export function guardForms(verdict: Verdict, pausedFor?: number, until?: string,
   if (pausedFor !== undefined && pausedFor > 0 && verdict.rules.length) {
     const m = Math.ceil(pausedFor / 60)
     return { forms: [`guard paused ${m}m`, 'guard paused'], tone: 'dim' }
+  }
+  if (verdict.stop?.rule.off) {
+    const till = until ? ` till ${until}` : ''
+    const why = verdict.stop.rule.off.why
+    return { forms: [`guard: account off${till}${why ? `, ${why}` : ''}`, `guard: account off${till}`, 'account off'], tone: 'bad' }
   }
   if (verdict.stop?.pace) {
     // A pace step's lift is reckoned from the allowance's growth: about, not exact.
@@ -938,6 +1031,8 @@ export type WarmFacts = {
   fiveHourLeft?: number
   /** A guard stop rule is in force. */
   stopped: boolean
+  /** The stop is an off switch: the account isn't to be used, so neither re-read nor compact. */
+  switchedOff?: boolean
   /** Seconds until that stop lets go on its own, when known. */
   liftsIn?: number
   /** A turn is running. */
@@ -964,7 +1059,7 @@ const WARM_LAPSE = 3600 - 120
  */
 export type WarmCode = 'off' | 'busy' | 'ttl' | 'compacted' | 'account' | 'model' | 'idle-compaction' | 'small' | 'held'
   | 'five-hour' | 'max' | 'hourly' | 'not-last' | 'leased' | 'early' | 'lapsed' | 'idle'
-  | 'guard-off' | 'hidden' | 'resumed' | 'stopped' | 'failed' | 'slept' | 'esc' | 'gone'
+  | 'guard-off' | 'hidden' | 'resumed' | 'stopped' | 'failed' | 'slept' | 'esc' | 'gone' | 'switched-off'
 
 /** The few words a cold turn's receipt gives for why keep-warm didn't keep the cache. */
 export const WARM_MISS: Record<WarmCode, string> = {
@@ -975,7 +1070,7 @@ export const WARM_MISS: Record<WarmCode, string> = {
   leased: 'another session was re-reading', early: 'not idle long enough', lapsed: 'its window passed unchecked',
   idle: 'due, not yet run', 'guard-off': 'guard off', hidden: 'g-line off', resumed: 'resumed, no request yet',
   stopped: 'keep-warm stopped here', failed: 'its re-reads failed', slept: 'the machine slept',
-  esc: 'Esc ended keep-warm\'s stretch', gone: 'its re-read found no cache',
+  esc: 'Esc ended keep-warm\'s stretch', gone: 'its re-read found no cache', 'switched-off': 'account switched off',
 }
 
 /**
@@ -1012,6 +1107,8 @@ export function warmDue(k: KeepWarm | undefined, f: WarmFacts): { due: boolean; 
   if (f.modelChanged) return no('model', 'the model changed')
   if (f.compactionCovers) return no('idle-compaction', 'Claude Code compacts this conversation when idle')
   if (f.prefix < k.minContext) return no('small', 'too small to be worth keeping')
+  // A switched-off account is spent on nothing, not even a re-read (and not a compaction: not in OUT_OF_REREADS).
+  if (f.switchedOff) return no('switched-off', 'this account is switched off')
   // A hold mustn't cost the cache: bridge it when the re-reads left can reach its lift.
   if (f.stopped && (f.liftsIn === undefined || f.liftsIn > (k.max - f.done) * WARM_LAPSE)) return no('held', 'held for longer than keep-warm can bridge')
   // An unknown window (no reading yet, or an account without one) isn't a low one: a re-read costs a tenth of a rebuild.
@@ -1149,6 +1246,11 @@ export function whyLines(guard: GuardConfig, facts: Facts, verdict: Verdict, o: 
   for (const rule of guard.rules) {
     const w = facts.windows[rule.window]
     const label = ruleText(rule)
+    if (rule.off) {
+      const on = verdict.active[rule.id] !== undefined
+      out.push(`${label}: ${on ? 'in force' : !switchedOff(rule, facts.nowMs) ? 'its time has passed' : 'not this account'}.`)
+      continue
+    }
     if (!w || !Number.isFinite(w.left)) {
       out.push(`${label}: no ${NAMES[rule.window]} reading yet, so it waits.`)
       continue
@@ -1168,7 +1270,10 @@ export function whyLines(guard: GuardConfig, facts: Facts, verdict: Verdict, o: 
       out.push(`${label}: ${pct(w.left)} left; ${on ? 'in force' : scope ? 'not reached' : 'waits (not this account or hours)'}.`)
     }
   }
-  if (verdict.stop) {
+  if (verdict.stop?.rule.off) {
+    const until = verdict.stop.rule.off.until
+    out.push(`Held: this account is switched off${verdict.stop.rule.off.why ? ` (${verdict.stop.rule.off.why})` : ''}. ${until !== undefined ? `It comes back on ${dateWords(until, offset)}.` : 'It stays off until the switch is turned back on.'}`)
+  } else if (verdict.stop) {
     const lift = liftsAt(verdict.stop, facts.nowMs, facts.offsetMinutes)
     out.push(`Held: new prompts stop. ${lift !== undefined ? `The hold lifts about ${resetWords(Math.floor(lift / 1000), facts.nowMs, offset)}.` : 'No lift time is known.'}`)
   } else if (verdict.effort || verdict.agents) {

@@ -39,7 +39,7 @@ import {
 import type { PulseFeed, PulseItem, Shown } from './pulse'
 import { gitSegmentOf } from './core'
 import {
-  AGENT_TYPE_MODELS, KEEP_WARM_DEFAULTS, accountIdentity, accountKey, agentModel, cappedEffort, changeText, drainText, effortKeepsCache, bridgeDue, endText, epochOf, evaluate, groupOf, guardForms, liftsAt, inForceText, leaseFree, namesAccounts, readBack, ruleText, simulated, stopText,
+  AGENT_TYPE_MODELS, KEEP_WARM_DEFAULTS, accountIdentity, dateWords, accountKey, agentModel, cappedEffort, changeText, drainText, effortKeepsCache, bridgeDue, endText, epochOf, evaluate, groupOf, guardForms, liftsAt, inForceText, leaseFree, namesAccounts, readBack, ruleText, simulated, stopText,
   resumeAt, fiveHourLeftOf, WARM_MISS, warmDue, warmForms, whyLines, automaticTtl, compactDue, idleCompactionStoodDown,
 } from './guard'
 import type { Effort, Facts, Simulation, Verdict, WarmCode, WindowName } from './guard'
@@ -1657,7 +1657,9 @@ async function guardSegment($: EngineInterface): Promise<Segment | undefined> {
   const at = await nowMs($)
   // When the hold lets go on its own: a pace step's lift or the end of the rule's hours, else the reset.
   const lift = verdict.stop ? liftsAt(verdict.stop, at, offsetAt(at)) : undefined
-  const until = lift !== undefined ? clock(Math.ceil(lift / 1000), at / 1000, offsetAt(at)) : undefined
+  // An off switch can run for weeks: its end reads as a date, not a weekday.
+  const until = lift === undefined ? undefined
+    : verdict.stop?.rule.off && lift - at > 20 * 3_600_000 ? dateWords(lift, offsetAt(at)) : clock(Math.ceil(lift / 1000), at / 1000, offsetAt(at))
   if (offHere) return { key: 'guard', priority: 60, forms: ['guard off here', 'guard off'], tone: 'dim' }
   const words = guardForms(verdict, await pausedFor($), until, queued !== undefined)
   if (!words) return undefined
@@ -1693,13 +1695,17 @@ async function guardPrompt($: EngineInterface, e: { origin: { kind: string }; co
   // The person sent the held prompt again, unchanged: their call, it goes.
   if (person && typed && heldPrompt?.text === typed && heldPrompt.epoch === epoch && at - heldPrompt.at < HELD_AGAIN_MS) {
     heldPrompt = undefined
-    if (!(await read($, hidden))) tell($, `◆ sent anyway · ${Math.max(0, Math.round(v.stop.left))}% of the ${v.stop.window === '5h' ? '5-hour' : 'weekly'} window left`, 6000)
+    if (!(await read($, hidden))) {
+      tell($, v.stop.rule.off ? '◆ sent anyway · this account is switched off'
+        : `◆ sent anyway · ${Math.max(0, Math.round(v.stop.left))}% of the ${v.stop.window === '5h' ? '5-hour' : 'weekly'} window left`, 6000)
+    }
     return undefined
   }
   if (person) heldPrompt = typed ? { text: typed, at, epoch } : undefined
   const account = config.accountCommand ? s.account : undefined
   let plan: { at?: string; cache?: 'warm' | 'bridge' | 'cold' } | undefined
-  if (person && typed && config.guard.queue) {
+  // A switched-off account isn't coming back within a wait worth queueing for.
+  if (person && typed && config.guard.queue && !v.stop.rule.off) {
     if (queued && queued.text !== typed) tell($, '◆ this prompt replaces the one g-line was holding', 6000)
     queued = { text: typed, at, key: accountKey(s.account), epoch, bridges: queued?.text === typed ? queued.bridges : 0 }
     const lift = liftsAt(v.stop, at, offsetAt(at))
@@ -1835,7 +1841,7 @@ async function keepWarm($: EngineInterface): Promise<void> {
     now, lastAt: c.lastAt, ttl: c.learned ?? ttl ?? automaticTtl(s.rateLimits, now), prefix: c.prefix, compacted: c.compactedTo !== undefined,
     // With `compact`, keep-warm holds big conversations too and stands idle compaction down instead.
     compactionCovers: !k.compact && idle !== undefined && c.prefix >= idle.minTokens, done: warmed, thisHour,
-    fiveHourLeft, stopped: verdict.stop !== undefined,
+    fiveHourLeft, stopped: verdict.stop !== undefined, switchedOff: verdict.stop?.rule.off !== undefined,
     ...(verdict.stop ? (lift => (lift !== undefined ? { liftsIn: Math.max(0, lift / 1000 - now) } : {}))(liftsAt(verdict.stop, now * 1000, offsetAt(now * 1000))) : {}),
     busy: (await read($, turnNow)) !== null, jitter: warmJitter, accountChanged: c.accountChanged === true,
     modelChanged: !!model && !!s.model && plainModel(model) !== plainModel(s.model),

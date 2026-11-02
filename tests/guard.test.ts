@@ -3,7 +3,7 @@ import { expect, test } from 'claude-code/testing'
 import {
   KEEP_WARM_DEFAULTS, accountIdentity, accountKey, agentModel, cappedEffort, changeText, effortKeepsCache, bridgeDue, endText, evaluate, groupOf, hoursWords, liftsAt, guardForms, inHours, leaseFree,
   fiveHourLeftOf, localTime, parseGuard, parseHours, readBack, ruleText, seconds, simulated, stopText, tokenCount, WARM_MISS, warmDue, warmForms,
-  automaticTtl, compactDue, idleCompactionStoodDown,
+  automaticTtl, compactDue, idleCompactionStoodDown, whyLines,
 } from '../hooks/guard'
 import type { Facts, WarmFacts } from '../hooks/guard'
 
@@ -409,4 +409,79 @@ test('0.7.1: a simulated reading replaces one window for the guard alone, for a 
   expect(simulated(f, { window: '5h', used: 96, until: TUE_10_KL - 1 })).toBe(f)
   const none = simulated({ nowMs: TUE_10_KL, windows: {} }, { window: 'week', used: 90, until: TUE_10_KL + 1 })
   expect(none.windows.week).toEqual({ left: 10, resetsAt: Math.floor(TUE_10_KL / 1000) + 7200 })
+})
+
+// Off switches: an account held outright, whatever its readings, until a time.
+const OFF = parseGuard({
+  groups: { team: ['team@'] },
+  rules: [{ left: 10, stop: true, groups: ['team'] }],
+  off: [
+    { accounts: ['shared@example.com'], until: '2026-11-03T01:00:00Z', why: 'reserved for the team' },
+    { groups: ['team'], until: '2026-10-19T00:00:00Z' },
+  ],
+})
+
+test('off: an entry parses into a stop that ends turns, and a malformed one is said, not guessed', () => {
+  expect(OFF.errors).toEqual([])
+  expect(OFF.rules.map(r => r.id)).toEqual(['off0', 'off1', 'r0'])
+  expect(OFF.rules[0]).toMatchObject({ stop: true, endTurn: true, accounts: ['shared@example.com'], off: { until: Date.parse('2026-11-03T01:00:00Z'), why: 'reserved for the team' } })
+  expect(parseGuard({ off: [{ accounts: ['a@'], end_turn: false }] }).rules[0]?.endTurn).toBeUndefined()
+  const bad = parseGuard({ off: [{ until: '2026-11-03' }, { accounts: ['a@'], until: 'soon' }, { accounts: ['a@'], why: '' }, 'a@', { groups: ['nope'] }] })
+  expect(bad.rules).toEqual([])
+  expect(bad.errors).toEqual([
+    'off 1: name "accounts" or "groups": an off switch never covers every account',
+    'off 2: "until" is a time such as "2026-11-16T09:00:00+08:00"',
+    'off 3: "why" is a few words, such as "reserved for the team"',
+    'off 4: an object such as {"accounts": ["team@"], "until": "2026-11-16T09:00:00+08:00"}',
+    'off 5: no group named "nope" in "guard.groups"',
+  ])
+  // Without an off entry nothing is switched off.
+  expect(evaluate(parseGuard({ rules: [] }), facts(90, { account: 'shared@example.com' })).stop).toBeUndefined()
+})
+
+test('off: holds the named account with no reading at all, only until its time, and over any threshold', () => {
+  const none: Facts = { nowMs: TUE_10_KL, account: 'shared@example.com', windows: {} }
+  const v = evaluate(OFF, none)
+  expect(v.stop?.rule.id).toBe('off0')
+  expect(v.end?.rule.id).toBe('off0')
+  expect(liftsAt(v.stop!, TUE_10_KL)).toBe(Date.parse('2026-11-03T01:00:00Z'))
+  expect(evaluate(OFF, facts(90, { account: 'other@example.com' })).stop).toBeUndefined()
+  expect(evaluate(OFF, { ...none, nowMs: Date.parse('2026-11-03T01:00:00Z') }).stop).toBeUndefined()
+  // A past time switches nothing off; the team's threshold still applies on its own.
+  expect(evaluate(OFF, facts(90, { account: 'team@example.com' })).stop).toBeUndefined()
+  expect(evaluate(OFF, facts(5, { account: 'team@example.com' })).stop?.rule.id).toBe('r0')
+  // On an account both switched off and under a threshold, the switch is the reason.
+  const both = parseGuard({ rules: [{ left: 10, stop: true }], off: [{ accounts: ['shared@'] }] })
+  expect(evaluate(both, facts(3, { account: 'shared@example.com' })).stop?.rule.id).toBe('off0')
+  expect(liftsAt(evaluate(both, facts(3, { account: 'shared@example.com' })).stop!, TUE_10_KL)).toBeUndefined()
+  // Even when a weekly threshold has less left than the switched-off account's 5-hour reading.
+  const week = parseGuard({ rules: [{ window: 'week', left: 10, stop: true }], off: [{ accounts: ['shared@'] }] })
+  expect(evaluate(week, facts(70, { account: 'shared@example.com', week: 3 })).stop?.rule.id).toBe('off0')
+})
+
+test('off: said in the refusal, on line 2, in the toast, in why, and in the rule list', () => {
+  const v = evaluate(OFF, facts(70, { account: 'shared@example.com' }))
+  const text = stopText(v.stop!, TUE_10_KL, 480, false, { account: 'shared@example.com' })
+  expect(text).toBe('g-line held this: shared@example.com is switched off: reserved for the team. It comes back on 3 Nov 09:00. Enter again sends it anyway.')
+  expect(stopText(evaluate(parseGuard({ off: [{ accounts: ['shared@'] }] }), facts(70, { account: 'shared@example.com' })).stop!, TUE_10_KL, 0))
+    .toBe('g-line held this: this account is switched off. It stays off until the switch is turned back on. Enter again sends it anyway.')
+  expect(guardForms(v, undefined, '3 Nov')?.forms).toEqual(['guard: account off till 3 Nov, reserved for the team', 'guard: account off till 3 Nov', 'account off'])
+  expect(changeText(undefined, v)).toBe('◆ guard · account switched off: reserved for the team')
+  expect(endText(v.end!, TUE_10_KL, 480)).toContain('this account is switched off: reserved for the team.')
+  expect(ruleText(OFF.rules[0]!)).toBe('accounts "shared@example.com": switched off until 2026-11-03 01:00 UTC (reserved for the team), running turns end')
+  const why = whyLines(OFF, { ...facts(70, { account: 'shared@example.com' }), offsetMinutes: 480 }, v)
+  expect(why).toContain('accounts "shared@example.com": switched off until 2026-11-03 01:00 UTC (reserved for the team), running turns end: in force.')
+  expect(why).toContain('group team: switched off until 2026-10-19 00:00 UTC, running turns end: its time has passed.')
+  expect(why.at(-1)).toBe('Held: this account is switched off (reserved for the team). It comes back on 3 Nov 09:00.')
+})
+
+test('off: a switched-off account is neither re-read nor compacted', () => {
+  const k = RULES.keepWarm
+  const base: WarmFacts = { now: 10_000 + 46 * 60, lastAt: 10_000, ttl: '1h', prefix: 120_000, compacted: false, compactionCovers: false,
+    done: 0, thisHour: 0, fiveHourLeft: 60, stopped: true, liftsIn: 600, busy: false, jitter: 0 }
+  expect(warmDue(k, base).due).toBe(true)
+  const off = warmDue(k, { ...base, switchedOff: true })
+  expect(off).toEqual({ due: false, why: 'this account is switched off', code: 'switched-off' })
+  expect(WARM_MISS['switched-off']).toBe('account switched off')
+  expect(compactDue({ ...k!, compact: true }, off.code, 46 * 60, 0, 60)).toBe(false)
 })
