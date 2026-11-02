@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-02T16:43:37Z",
+ "generated_at": "2026-11-02T17:15:33Z",
  "items": [
   {
    "title": "S-1 update: Anthropic reports Q3 revenue up 12x YoY to nearly $17B, a $23.3B net loss, up from $12.…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-02T04:34:36Z",
    "text": "Great to see high quality benchmarks with headroom and look at that cost line for Carbon🚀",
    "author_name": "Sundar Pichai",
-   "likes": 3629,
+   "likes": 3682,
    "story": "SemiAnalysis launches GDPx, an AI frontier model benchmark measuring 11 domains, including chip design, cybersecurity, and RSI; Opus 5.5 tops with a 12% score"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-11-02T15:35:11Z",
    "text": "When you think about the Labs' weird approach to software (sudden changes, bad communication), it is worth remembering that a core belief is that these products are a temporary thing they have to do to raise money for a couple years until \"true\" AGI makes all products obsolete.",
    "author_name": "Ethan Mollick",
-   "likes": 241,
+   "likes": 291,
    "story": "Email: OpenAI plans to merge ChatGPT's Chat and Work tabs on desktop for select users before rolling it out widely; Codex “will remain a separate experience”"
   },
   {
@@ -44,7 +44,7 @@
    "published_at": "2026-11-02T14:09:54Z",
    "text": "763B parameters, compressed to 1 bit per weight. Introducing DeepSeek-V4.1-Flash-1017 GSQ-RCO Coder, a frontier-scale model tailored for coding and agentic workflows. Benchmarks, demos and download link below. Follow us for updates.",
    "author_name": "Michael Helcig",
-   "likes": 353,
+   "likes": 408,
    "story": "[Release] ISTA DeepSeek-V4.1-Flash-1017 GSQ-RCO Coder: a 763B model at 1 bit per parameter"
   },
   {
@@ -60,8 +60,8 @@
    "url": "https://www.cnbc.com/2026/11/02/anthropic-ant-s-1-quarter-financials.html",
    "source": "Hacker News",
    "published_at": "2026-11-02T14:38:45Z",
-   "text": "143 points and 135 comments on Hacker News.",
-   "points": 143,
+   "text": "173 points and 176 comments on Hacker News.",
+   "points": 173,
    "discussion": "https://news.ycombinator.com/item?id=50337439"
   },
   {
@@ -71,7 +71,7 @@
    "published_at": "2026-11-01T15:23:56Z",
    "text": "Mythos 5.5 is already listed HTML source code of Anthropic's official website Thanks to the anonymous person who sent me the tip via email :)…",
    "author_name": "Chubby♨️",
-   "likes": 3511,
+   "likes": 3522,
    "story": "Opus 5.6 imminently about to release"
   },
   {
@@ -96,7 +96,7 @@
    "published_at": "2026-11-01T18:25:40Z",
    "text": "OpenAI is preparing for a post midterms change in the weather. Axios:",
    "author_name": "Andrew Curran",
-   "likes": 893,
+   "likes": 897,
    "story": "OpenAI plans a post-midterms policy and PR blitz, pushing mandatory “speed limits” for powerful AI and rebranding its data centers as “AI compute campuses”"
   },
   {
@@ -104,8 +104,8 @@
    "url": "https://twitter.com/OcanaSantero/status/2115442964574908902",
    "source": "Hacker News",
    "published_at": "2026-11-02T12:50:59Z",
-   "text": "71 points and 61 comments on Hacker News.",
-   "points": 71,
+   "text": "77 points and 78 comments on Hacker News.",
+   "points": 77,
    "discussion": "https://news.ycombinator.com/item?id=50336138"
   },
   {
@@ -115,25 +115,25 @@
    "published_at": "2026-11-01T20:49:42Z",
    "text": "MiniMax M3.1 Flash, on more of your hardware. Quantizing a 428B model opens up more ways to run it locally. Lower-bit weights reduce the memory needed to load the model and the weight data moved during decoding. Making those savings useful takes careful calibration, efficient…",
    "author_name": "MiniMax (official)",
-   "likes": 635,
+   "likes": 641,
    "story": "Builders got MiniMax M3.1 Flash's open weights from 252.4 GB down to 93 GB in 10 days, and the lab thanked them by name"
   },
   {
-   "title": "Elon Musk says the cost of serving Grok Bot was “unsustainably high relative to revenue”, in respon…",
-   "url": "https://www.forbes.com/sites/siladityaray/2026/11/02/musk-says-grok-bots-costs-were-unsustainably-high-weeks-after-touting-rapid-growth/",
-   "source": "Siladitya Ray / Forbes",
-   "published_at": "2026-11-02T13:10:44Z",
-   "text": "Elon Musk says the cost of serving Grok Bot was “unsustainably high relative to revenue”, in response to subscribers complaining about SpaceX's usage limits. Topline — Elon Musk acknowledged on Sunday that the cost of running SpaceX's AI agent Grok Bot was “unsustainably high” …",
+   "title": "Anthropic confirms new Claude Code limits “to steer it away from recreating someone else's specific…",
+   "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/anthropic-confirms-new-claude-code-limits-to-prevent-game-cloning-users-report-opus-5-5-is-also-actively-blocking-reverse-engineering-tasks",
+   "source": "Bruno Ferreira / Tom's Hard…",
+   "published_at": "2026-11-02T17:05:51Z",
+   "text": "Anthropic confirms new Claude Code limits “to steer it away from recreating someone else's specific game”, saying IP infringement violates its usage policy. Meanwhile, we now have direct reports of reverse engineering efforts being blocked, while online complaints grow.",
    "via": "Techmeme"
   },
   {
-   "title": "China's First Frontier AI Export Controls: Mofcom Announcement No. 48",
-   "url": "https://labs.cloudsecurityalliance.org/research/csa-research-note-china-ai-export-controls-announcement-48-2/",
+   "title": "Anthropic takes steps to block Claude from reverse-engineering video games",
+   "url": "https://mashable.com/tech/anthropic-takes-steps-to-block-video-game-cloning-and-reverse-engineering",
    "source": "Hacker News",
-   "published_at": "2026-11-02T07:27:28Z",
-   "text": "137 points and 75 comments on Hacker News.",
-   "points": 137,
-   "discussion": "https://news.ycombinator.com/item?id=50334038"
+   "published_at": "2026-10-31T21:07:58Z",
+   "text": "195 points and 117 comments on Hacker News.",
+   "points": 195,
+   "discussion": "https://news.ycombinator.com/item?id=50320255"
   }
  ],
  "sources": "curated, Techmeme, X (found via Techmeme, Reddit, the Internet Archive), Claude Code releases, Anthropic, Hacker News, Simon Willison"
