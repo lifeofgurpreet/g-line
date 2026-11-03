@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-03T15:24:59Z",
+ "generated_at": "2026-11-03T15:58:31Z",
  "items": [
   {
    "title": "S-1: Anthropic says it may “imminently meet” its RSI threshold and may not identify “a significant…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-02T17:51:48Z",
    "text": "We asked GPT-6 Astra to edit Qwen3.5-0.8B weights to improve math. It directly changed only 0.016% of weights, fixing 0.8B's reasoning loops & improving math up to 6x and even instruction following 3x, without gradients or training. We call this Weight-Space Programming:…",
    "author_name": "Rikiya Takehi",
-   "likes": 51628,
+   "likes": 51873,
    "story": "Researchers say LLMs can be good at natively reading and writing neural network weights; GPT-6 Astra edited Qwen3.5-0.8B's weights to make it better at math"
   },
   {
@@ -28,23 +28,13 @@
    "text": "Added a warning to /schedule when a new cloud scheduled task gets connectors you did not ask for, with how to remove them · Added a check that asks before a web or shell tool call sends your account email address to the network · Added onFailure: \"block\" for Agent SDK hook callbacks, so a callback that fails blocks the action instead of letting it run · Added a notice in Claude Desktop's Code tab when your organization's remote managed settings haven't loaded for the session, and another once they do"
   },
   {
-   "title": "Fable 5.5 vs GPT 6.2 Astra vs Opus 5.5 vs GPT 6 Astra same prompt: create an SVG of a PS5 controlle…",
-   "url": "https://x.com/marcthecreatorr/status/2117596659215417399",
-   "source": "𝕏 @marcthecreatorr",
-   "published_at": "2026-11-03T12:36:01Z",
-   "text": "Fable 5.5 vs GPT 6.2 Astra vs Opus 5.5 vs GPT 6 Astra same prompt: create an SVG of a PS5 controller the jump from the older models is actually crazy. the latest Fable and Astra models are really on another level, especially with the details and overall design. Fable 5.5 and…",
-   "author_name": "Marcel",
-   "likes": 165,
-   "story": "Fable 5.5 vs GPT 6.2 Astra - SVG of a PS5 Controller"
-  },
-  {
    "title": "Today we are happy to share one of our first open research releases: Latent Sparse Attention (LSA),…",
    "url": "https://x.com/jcrwhittington/status/2117317159777177602",
    "source": "𝕏 @jcrwhittington",
    "published_at": "2026-11-02T18:05:23Z",
    "text": "Today we are happy to share one of our first open research releases: Latent Sparse Attention (LSA), a step towards subquadratic attention that matches accuracy of full attention at ultra-long context. Sparse attention attends to only a few tokens per query, but it has to find…",
    "author_name": "James Whittington",
-   "likes": 2568,
+   "likes": 2615,
    "story": "New sparse attention method for ultra-long context"
   },
   {
@@ -60,19 +50,19 @@
    "url": "https://honnibal.dev/blog/astra-read-write-misleading",
    "source": "Hacker News",
    "published_at": "2026-11-03T12:21:17Z",
-   "text": "474 points and 109 comments on Hacker News.",
-   "points": 474,
+   "text": "537 points and 118 comments on Hacker News.",
+   "points": 537,
    "discussion": "https://news.ycombinator.com/item?id=50351111"
   },
   {
-   "title": "When you think about the Labs' weird approach to software (sudden changes, bad communication), it i…",
-   "url": "https://x.com/emollick/status/2117279363175739630",
-   "source": "𝕏 @emollick",
-   "published_at": "2026-11-02T15:35:11Z",
-   "text": "When you think about the Labs' weird approach to software (sudden changes, bad communication), it is worth remembering that a core belief is that these products are a temporary thing they have to do to raise money for a couple years until \"true\" AGI makes all products obsolete.",
-   "author_name": "Ethan Mollick",
-   "likes": 829,
-   "story": "Email: OpenAI plans to merge ChatGPT's Chat and Work tabs on desktop for select users before rolling it out widely; Codex “will remain a separate experience”"
+   "title": "Fable 5.5 vs GPT 6.2 Astra vs Opus 5.5 vs GPT 6 Astra same prompt: create an SVG of a PS5 controlle…",
+   "url": "https://x.com/marcthecreatorr/status/2117596659215417399",
+   "source": "𝕏 @marcthecreatorr",
+   "published_at": "2026-11-03T12:36:01Z",
+   "text": "Fable 5.5 vs GPT 6.2 Astra vs Opus 5.5 vs GPT 6 Astra same prompt: create an SVG of a PS5 controller the jump from the older models is actually crazy. the latest Fable and Astra models are really on another level, especially with the details and overall design. Fable 5.5 and…",
+   "author_name": "Marcel",
+   "likes": 177,
+   "story": "Fable 5.5 vs GPT 6.2 Astra - SVG of a PS5 Controller"
   },
   {
    "title": "The U.S. Census Bureau and “Super Intelligence”",
@@ -96,7 +86,7 @@
    "published_at": "2026-11-03T02:52:45Z",
    "text": "OpenAI has partnered with Cathedral systems. This is the cybersecurity startup founded by former DOGE staffers who very recently hacked Anthropic's Slack.",
    "author_name": "Andrew Curran",
-   "likes": 294,
+   "likes": 298,
    "story": "OpenAI partners with Cathedral to test its security defenses and revamps its Security Bug Bounty program, including quadrupling rewards for critical findings"
   },
   {
@@ -104,8 +94,8 @@
    "url": "https://shkspr.mobi/blog/2026/11/just-a-little-ai-resistance-as-a-treat/",
    "source": "Hacker News",
    "published_at": "2026-11-03T14:14:12Z",
-   "text": "90 points and 58 comments on Hacker News.",
-   "points": 90,
+   "text": "137 points and 80 comments on Hacker News.",
+   "points": 137,
    "discussion": "https://news.ycombinator.com/item?id=50352257"
   },
   {
@@ -115,7 +105,7 @@
    "published_at": "2026-11-02T17:12:34Z",
    "text": "NOMENCLATURE WATCH: Just got my first email from OpenAI referring to their data centers as 'compute campuses'",
    "author_name": "Casey Newton",
-   "likes": 466,
+   "likes": 467,
    "story": "OpenAI launches the Grid Protectors Program, a US effort for its future data center campuses meant “to reduce electricity demand when the grid is under strain”"
   },
   {
@@ -131,9 +121,17 @@
    "url": "https://github.com/NVIDIA/auto-ontology",
    "source": "Hacker News",
    "published_at": "2026-11-03T07:04:50Z",
-   "text": "216 points and 78 comments on Hacker News.",
-   "points": 216,
+   "text": "226 points and 82 comments on Hacker News.",
+   "points": 226,
    "discussion": "https://news.ycombinator.com/item?id=50348962"
+  },
+  {
+   "title": "Google plans to make it easier to restrict its AI tools for students early next year but says schoo…",
+   "url": "https://www.nytimes.com/2026/11/03/us/google-search-schools-restrict-ai.html?unlocked_article_code=1.NlE.VMKr.Cr-g-C6phyfH&smid=url-share",
+   "source": "New York Times",
+   "published_at": "2026-11-03T15:45:56Z",
+   "text": "Google plans to make it easier to restrict its AI tools for students early next year but says schools that block AI entirely will lose student access to Search. Google is making it easier to restrict its A.I. tools for students. But schools that block A.I. entirely will lose student access to Google's search engine.",
+   "via": "Techmeme"
   }
  ],
  "sources": "curated, Techmeme, X (found via Techmeme, Reddit, the Internet Archive), Claude Code releases, Anthropic, Hacker News, Simon Willison"
