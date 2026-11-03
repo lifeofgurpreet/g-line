@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-03T17:35:29Z",
+ "generated_at": "2026-11-03T18:06:59Z",
  "items": [
   {
    "title": "Google plans to make it easier to restrict its AI tools for students in early 2027, but says school…",
@@ -11,14 +11,17 @@
    "via": "Techmeme"
   },
   {
-   "title": "We asked GPT-6 Astra to edit Qwen3.5-0.8B weights to improve math. It directly changed only 0.016%…",
-   "url": "https://x.com/rikiyatakehi/status/2117313742891327994",
-   "source": "𝕏 @rikiyatakehi",
-   "published_at": "2026-11-02T17:51:48Z",
-   "text": "We asked GPT-6 Astra to edit Qwen3.5-0.8B weights to improve math. It directly changed only 0.016% of weights, fixing 0.8B's reasoning loops & improving math up to 6x and even instruction following 3x, without gradients or training. We call this Weight-Space Programming:…",
-   "author_name": "Rikiya Takehi",
-   "likes": 52554,
-   "story": "Researchers say LLMs can be good at natively reading and writing neural network weights; GPT-6 Astra edited Qwen3.5-0.8B's weights to make it better at math"
+   "title": "There's a buzzy new paper about GPT-6 Astra being able to directly interpret model weights (prompts…",
+   "url": "https://x.com/simonw/status/2117655816581071203",
+   "source": "𝕏 @simonw",
+   "published_at": "2026-11-03T16:31:05Z",
+   "text": "There's a buzzy new paper about GPT-6 Astra being able to directly interpret model weights (prompts full of floating point numbers) - I tried it with Qwen 3.8 27B on my laptop and found that, after 45+ minutes, that model could achieve the same thing",
+   "author_name": "Simon Willison",
+   "likes": 1254,
+   "story": "Researchers say LLMs can be good at natively reading and writing neural network weights; GPT-6 Astra edited Qwen3.5-0.8B's weights to make it better at math",
+   "links": [
+    "https://simonwillison.net/2026/Nov/3/qwen-can-interpret-model-weights/"
+   ]
   },
   {
    "title": "Claude Code 2.1.317 released",
@@ -34,79 +37,18 @@
    "published_at": "2026-11-03T15:44:55Z",
    "text": "Well, turns out Qwen3.8-Flash-Next can do more than work with software tools, it can operate real robots too. A group of Qwen developers from Tsinghua and UC Berkeley recently built uni-robot-agent, an open-source harness that connects general-purpose LLMs to robotic systems. It…",
    "author_name": "Qwen Developers",
-   "likes": 231,
+   "likes": 265,
    "story": "“Can Qwen directly control the robot as well as GPT-6 Astra?”"
   },
   {
-   "title": "Today we are happy to share one of our first open research releases: Latent Sparse Attention (LSA),…",
-   "url": "https://x.com/jcrwhittington/status/2117317159777177602",
-   "source": "𝕏 @jcrwhittington",
-   "published_at": "2026-11-02T18:05:23Z",
-   "text": "Today we are happy to share one of our first open research releases: Latent Sparse Attention (LSA), a step towards subquadratic attention that matches accuracy of full attention at ultra-long context. Sparse attention attends to only a few tokens per query, but it has to find…",
-   "author_name": "James Whittington",
-   "likes": 2741,
-   "story": "New sparse attention method for ultra-long context"
-  },
-  {
-   "title": "S-1: Anthropic says it may “imminently meet” its RSI threshold and may not identify “a significant…",
-   "url": "https://techcrunch.com/2026/11/02/anthropic-warns-that-its-very-close-to-rsi-capability-aka-self-building-ai/",
-   "source": "Julie Bort / TechCrunch",
-   "published_at": "2026-11-02T23:05:49Z",
-   "text": "S-1: Anthropic says it may “imminently meet” its RSI threshold and may not identify “a significant acceleration” in its development until after it has occurred. While much attention has focused on the updated financials Anthropic revealed in its revised S-1A on Monday …",
-   "via": "Techmeme"
-  },
-  {
-   "title": "The 'Astra can read and write weights to improve Qwen' post is misleading",
-   "url": "https://honnibal.dev/blog/astra-read-write-misleading",
-   "source": "Hacker News",
-   "published_at": "2026-11-03T12:21:17Z",
-   "text": "687 points and 160 comments on Hacker News.",
-   "points": 687,
-   "discussion": "https://news.ycombinator.com/item?id=50351111"
-  },
-  {
-   "title": "Fable 5.5 vs GPT 6.2 Astra vs Opus 5.5 vs GPT 6 Astra same prompt: create an SVG of a PS5 controlle…",
-   "url": "https://x.com/marcthecreatorr/status/2117596659215417399",
-   "source": "𝕏 @marcthecreatorr",
-   "published_at": "2026-11-03T12:36:01Z",
-   "text": "Fable 5.5 vs GPT 6.2 Astra vs Opus 5.5 vs GPT 6 Astra same prompt: create an SVG of a PS5 controller the jump from the older models is actually crazy. the latest Fable and Astra models are really on another level, especially with the details and overall design. Fable 5.5 and…",
-   "author_name": "Marcel",
-   "likes": 224,
-   "story": "Fable 5.5 vs GPT 6.2 Astra - SVG of a PS5 Controller"
-  },
-  {
-   "title": "Qwen 3.8 27B on my laptop can interpret model weights, too",
-   "url": "https://simonwillison.net/2026/Nov/3/qwen-can-interpret-model-weights/",
-   "source": "Simon Willison's weblog",
-   "published_at": "2026-11-03T16:29:48Z",
-   "text": "Yesterday's hot paper was Sparks of Weight-Space Programming: LLMs can natively read & write neural network weights by Rikiya Takehi, Jayden Teoh, Alex Zhang, and Omar Khattab. The paper found that frontier models, in particular GPT-6 Astra, can both interpret and modify the raw weights of a machine learning model - literally a text description of the model containing a bunch of floating point numbers. I've been playing with one of the examples from the paper and I'm delighted to share that Qwen 3.8 27B running on my laptop can do this as well!"
-  },
-  {
-   "title": "The UK NCSC says AI is “transforming cyber operations” and expects China and Russia to “routinely u…",
-   "url": "https://www.ft.com/content/131d9506-04b1-49b8-ba79-b0d783219c40",
-   "source": "Tom Wilson / Financial Times",
-   "published_at": "2026-11-03T11:05:59Z",
-   "text": "The UK NCSC says AI is “transforming cyber operations” and expects China and Russia to “routinely use AI cyber to achieve their geopolitical goals” by 2028. Head of National Cyber Security Centre set to warn security defences, particularly for critical infrastructure, are inadequate",
-   "via": "Techmeme"
-  },
-  {
-   "title": "OpenAI has partnered with Cathedral systems. This is the cybersecurity startup founded by former DO…",
-   "url": "https://x.com/AndrewCurran_/status/2117449875675889821",
+   "title": "Anthropic's amended S-1 filing this morning reports: Q3 revenue: $16.96 billion, up 1,127% year-ove…",
+   "url": "https://x.com/AndrewCurran_/status/2117268002454507902",
    "source": "𝕏 @AndrewCurran_",
-   "published_at": "2026-11-03T02:52:45Z",
-   "text": "OpenAI has partnered with Cathedral systems. This is the cybersecurity startup founded by former DOGE staffers who very recently hacked Anthropic's Slack.",
+   "published_at": "2026-11-02T14:50:03Z",
+   "text": "Anthropic's amended S-1 filing this morning reports: Q3 revenue: $16.96 billion, up 1,127% year-over-year. Nine-month revenue: $33.2 billion. Cumulative purchase and lease commitments of $895.4 billion.",
    "author_name": "Andrew Curran",
-   "likes": 309,
-   "story": "OpenAI partners with Cathedral to test its security defenses and revamps its Security Bug Bounty program, including quadrupling rewards for critical findings"
-  },
-  {
-   "title": "OpenAI seems to be silently re-enabling model training on Codex chats",
-   "url": "https://news.ycombinator.com/item?id=50352757",
-   "source": "Hacker News",
-   "published_at": "2026-11-03T14:53:41Z",
-   "text": "127 points and 44 comments on Hacker News.",
-   "points": 127,
-   "discussion": "https://news.ycombinator.com/item?id=50352757"
+   "likes": 1000,
+   "story": "S-1: Anthropic says it may “imminently meet” its RSI threshold and may not identify “a significant acceleration” in its development until after it has occurred"
   },
   {
    "title": "OpenAI hires ex-US Army Secretary Dan Driscoll to oversee national security modernization, as it pu…",
@@ -117,13 +59,23 @@
    "via": "Techmeme"
   },
   {
-   "title": "Quili AI",
-   "url": "https://www.quili.ai/",
+   "title": "Postman silently auto-installs AI plugins and attempts to share all API data",
+   "url": "https://github.com/postmanlabs/postman-app-support/issues/14370",
    "source": "Hacker News",
-   "published_at": "2026-11-03T15:49:02Z",
-   "text": "78 points and 46 comments on Hacker News.",
-   "points": 78,
-   "discussion": "https://news.ycombinator.com/item?id=50353475"
+   "published_at": "2026-11-03T17:22:37Z",
+   "text": "160 points and 40 comments on Hacker News.",
+   "points": 160,
+   "discussion": "https://news.ycombinator.com/item?id=50354960"
+  },
+  {
+   "title": "Fable 5.5 vs GPT 6.2 Astra vs Opus 5.5 vs GPT 6 Astra same prompt: create an SVG of a PS5 controlle…",
+   "url": "https://x.com/marcthecreatorr/status/2117596659215417399",
+   "source": "𝕏 @marcthecreatorr",
+   "published_at": "2026-11-03T12:36:01Z",
+   "text": "Fable 5.5 vs GPT 6.2 Astra vs Opus 5.5 vs GPT 6 Astra same prompt: create an SVG of a PS5 controller the jump from the older models is actually crazy. the latest Fable and Astra models are really on another level, especially with the details and overall design. Fable 5.5 and…",
+   "author_name": "Marcel",
+   "likes": 232,
+   "story": "Fable 5.5 vs GPT 6.2 Astra - SVG of a PS5 Controller"
   },
   {
    "title": "The U.S. Census Bureau and “Super Intelligence”",
@@ -131,6 +83,57 @@
    "source": "Simon Willison's weblog",
    "published_at": "2026-11-02T13:31:26Z",
    "text": "I was reminded today of AI Adoption Rate Trending Down for Large Companies , a chart produced by Apollo Global Management in September 2025, which appeared to show a slowdown in U.S. corporate AI adoption based on numbers collected by the U.S. Census Bureau. At the time I used that chart to demonstrate GPT-5 data analysis , and then to experiment with Claude's new Code Interpreter . I decided to try running those numbers again to see what had changed over the past year, and in doing so learned that the Bureau has fallen foul of Executive Order 14434 , aka the asinine Super Intelligence one."
+  },
+  {
+   "title": "The UK NCSC says AI is “transforming cyber operations” and expects China and Russia to “routinely u…",
+   "url": "https://www.ft.com/content/131d9506-04b1-49b8-ba79-b0d783219c40",
+   "source": "Tom Wilson / Financial Times",
+   "published_at": "2026-11-03T11:05:59Z",
+   "text": "The UK NCSC says AI is “transforming cyber operations” and expects China and Russia to “routinely use AI cyber to achieve their geopolitical goals” by 2028. Head of National Cyber Security Centre set to warn security defences, particularly for critical infrastructure, are inadequate",
+   "via": "Techmeme"
+  },
+  {
+   "title": "The 'Astra can read and write weights to improve Qwen' post is misleading",
+   "url": "https://honnibal.dev/blog/astra-read-write-misleading",
+   "source": "Hacker News",
+   "published_at": "2026-11-03T12:21:17Z",
+   "text": "713 points and 164 comments on Hacker News.",
+   "points": 713,
+   "discussion": "https://news.ycombinator.com/item?id=50351111"
+  },
+  {
+   "title": "OpenAI partners with Cathedral to test its security defenses and revamps its Security Bug Bounty pr…",
+   "url": "https://openai.com/index/preparing-our-next-security-sprint-to-harden-openai",
+   "source": "OpenAI",
+   "published_at": "2026-11-03T07:20:49Z",
+   "text": "OpenAI partners with Cathedral to test its security defenses and revamps its Security Bug Bounty program, including quadrupling rewards for critical findings. We're planning our next internal security sprint at OpenAI, bringing new researchers and security partners together with our own teams …",
+   "via": "Techmeme"
+  },
+  {
+   "title": "OpenAI seems to be silently re-enabling model training on Codex chats",
+   "url": "https://news.ycombinator.com/item?id=50352757",
+   "source": "Hacker News",
+   "published_at": "2026-11-03T14:53:41Z",
+   "text": "166 points and 57 comments on Hacker News.",
+   "points": 166,
+   "discussion": "https://news.ycombinator.com/item?id=50352757"
+  },
+  {
+   "title": "Sources: Nvidia verbally told cloud compute clients they must sell 51%+ of their services to non-Ch…",
+   "url": "https://www.ft.com/content/1902df70-1380-4588-bad5-171352b575f2",
+   "source": "Financial Times",
+   "published_at": "2026-11-03T06:01:25Z",
+   "text": "Sources: Nvidia verbally told cloud compute clients they must sell 51%+ of their services to non-Chinese companies, as the US further limits China's chip access. Nvidia is ordering its data centre partners to reduce exposure to Chinese customers in a move that further restrains China's ability …",
+   "via": "Techmeme"
+  },
+  {
+   "title": "Nvidia – open-source auto-ontology",
+   "url": "https://github.com/NVIDIA/auto-ontology",
+   "source": "Hacker News",
+   "published_at": "2026-11-03T07:04:50Z",
+   "text": "242 points and 101 comments on Hacker News.",
+   "points": 242,
+   "discussion": "https://news.ycombinator.com/item?id=50348962"
   }
  ],
  "sources": "curated, Techmeme, X (found via Techmeme, Reddit, the Internet Archive), Claude Code releases, Anthropic, Hacker News, Simon Willison"
