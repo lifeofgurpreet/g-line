@@ -19,7 +19,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "in=$(cat); case \"$in\" in *'\"agent_id\"'*) exit 0;; esac; s=$(printf '%s' \"$in\" | tr ',{}' '\\n\\n\\n' | sed -n 's/^ *\"session_id\" *: *\"\\([A-Za-z0-9_.-]*\\)\" *$/\\1/p' | head -n 1); f=\"$HOME/.cache/g-line/hold/$s\"; [ -n \"$s\" ] && [ -f \"$f\" ] || exit 0; u=$(head -c 20 \"$f\" | cut -d. -f1 | tr -dc 0-9); [ -n \"$u\" ] && [ \"$u\" -gt \"$(date +%s)\" ] || exit 0; date +%s > \"$f.deferred\"; printf '%s\\n' '{\"decision\":\"block\",\"reason\":\"g-line keep-warm is holding this idle conversation cache\"}'; exit 0"
+            "command": "sh \"${CLAUDE_PLUGIN_ROOT}/hooks/compaction.sh\" pre"
           }
         ]
       }
@@ -29,7 +29,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "in=$(cat); case \"$in\" in *'\"agent_id\"'*) exit 0;; esac; s=$(printf '%s' \"$in\" | tr ',{}' '\\n\\n\\n' | sed -n 's/^ *\"session_id\" *: *\"\\([A-Za-z0-9_.-]*\\)\" *$/\\1/p' | head -n 1); t=$(printf '%s' \"$in\" | tr ',{}' '\\n\\n\\n' | sed -n 's/^ *\"trigger\" *: *\"\\([a-z]*\\)\" *$/\\1/p' | head -n 1); case \"$s\" in ''|*[!A-Za-z0-9_.-]*) exit 0;; esac; mkdir -p \"$HOME/.cache/g-line/compacted\" && printf '{\"at\":%s,\"trigger\":\"%s\"}\\n' \"$(date +%s)\" \"$t\" > \"$HOME/.cache/g-line/compacted/$s.json\"; exit 0"
+            "command": "sh \"${CLAUDE_PLUGIN_ROOT}/hooks/compaction.sh\" post"
           }
         ]
       }
