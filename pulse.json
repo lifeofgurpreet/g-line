@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-03T09:31:04Z",
+ "generated_at": "2026-11-03T10:03:32Z",
  "items": [
   {
    "title": "Sources: institutional investors told Anthropic that its IPO valuation should be ~$1.5T to $1.6T, d…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-02T17:51:48Z",
    "text": "We asked GPT-6 Astra to edit Qwen3.5-0.8B weights to improve math. It directly changed only 0.016% of weights, fixing 0.8B's reasoning loops & improving math up to 6x and even instruction following 3x, without gradients or training. We call this Weight-Space Programming:…",
    "author_name": "Rikiya Takehi",
-   "likes": 47760,
+   "likes": 48202,
    "story": "Researchers say LLMs can be good at natively reading and writing neural network weights; GPT-6 Astra edited Qwen3.5-0.8B's weights to make it better at math"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-11-02T14:03:08Z",
    "text": "Your Harness. You Define It. Meet Creator Mode in DeepSeek Harness. Turn ideas into plugins that you can use, from a design workspace to a sandbox game or a 3D LLM visualizer. What will you create?",
    "author_name": "DeepSeek Harness",
-   "likes": 21734,
+   "likes": 21904,
    "story": "DeepSeek releases a “creator mode” that allows DeepSeek Harness users to quickly create custom plugins, like a 3D model renderer and a video editing workbench"
   },
   {
@@ -50,8 +50,8 @@
    "url": "https://rikiyat.github.io/blog/weight-space-programming/",
    "source": "Hacker News",
    "published_at": "2026-11-02T18:21:28Z",
-   "text": "2579 points and 785 comments on Hacker News.",
-   "points": 2579,
+   "text": "2629 points and 800 comments on Hacker News.",
+   "points": 2629,
    "discussion": "https://news.ycombinator.com/item?id=50341174"
   },
   {
@@ -61,7 +61,7 @@
    "published_at": "2026-11-02T14:03:44Z",
    "text": "Got his first bill from Anthropic.",
    "author_name": "Quinn Nelson",
-   "likes": 7621,
+   "likes": 7746,
    "story": "Elon Musk says the cost of serving Grok Bot was “unsustainably high relative to revenue”, in response to subscribers complaining about SpaceX's usage limits"
   },
   {
@@ -86,17 +86,17 @@
    "published_at": "2026-11-02T18:05:23Z",
    "text": "Today we are happy to share one of our first open research releases: Latent Sparse Attention (LSA), a step towards subquadratic attention that matches accuracy of full attention at ultra-long context. Sparse attention attends to only a few tokens per query, but it has to find…",
    "author_name": "James Whittington",
-   "likes": 2079,
+   "likes": 2113,
    "story": "New sparse attention method for ultra-long context"
   },
   {
-   "title": "The SEC Should Block Anthropic's IPO to Protect the Public",
-   "url": "https://www.techpolicy.press/the-sec-should-block-anthropics-ipo-to-protect-the-public/",
+   "title": "Nvidia – open-source auto-ontology",
+   "url": "https://github.com/NVIDIA/auto-ontology",
    "source": "Hacker News",
-   "published_at": "2026-11-02T22:30:47Z",
-   "text": "342 points and 253 comments on Hacker News.",
-   "points": 342,
-   "discussion": "https://news.ycombinator.com/item?id=50344919"
+   "published_at": "2026-11-03T07:04:50Z",
+   "text": "62 points and 12 comments on Hacker News.",
+   "points": 62,
+   "discussion": "https://news.ycombinator.com/item?id=50348962"
   },
   {
    "title": "OpenAI has partnered with Cathedral systems. This is the cybersecurity startup founded by former DO…",
@@ -105,7 +105,7 @@
    "published_at": "2026-11-03T02:52:45Z",
    "text": "OpenAI has partnered with Cathedral systems. This is the cybersecurity startup founded by former DOGE staffers who very recently hacked Anthropic's Slack.",
    "author_name": "Andrew Curran",
-   "likes": 245,
+   "likes": 247,
    "story": "OpenAI partners with Cathedral to test its security defenses and revamps its Security Bug Bounty program, including quadrupling rewards for critical findings"
   },
   {
@@ -115,7 +115,7 @@
    "published_at": "2026-11-02T15:35:11Z",
    "text": "When you think about the Labs' weird approach to software (sudden changes, bad communication), it is worth remembering that a core belief is that these products are a temporary thing they have to do to raise money for a couple years until \"true\" AGI makes all products obsolete.",
    "author_name": "Ethan Mollick",
-   "likes": 795,
+   "likes": 797,
    "story": "Email: OpenAI plans to merge ChatGPT's Chat and Work tabs on desktop for select users before rolling it out widely; Codex “will remain a separate experience”"
   },
   {
@@ -125,7 +125,7 @@
    "published_at": "2026-11-02T17:12:34Z",
    "text": "NOMENCLATURE WATCH: Just got my first email from OpenAI referring to their data centers as 'compute campuses'",
    "author_name": "Casey Newton",
-   "likes": 456,
+   "likes": 457,
    "story": "OpenAI launches the Grid Protectors Program, a US effort for its future data center campuses meant “to reduce electricity demand when the grid is under strain”"
   },
   {
@@ -135,7 +135,7 @@
    "published_at": "2026-11-02T14:09:54Z",
    "text": "763B parameters, compressed to 1 bit per weight. Introducing DeepSeek-V4.1-Flash-1017 GSQ-RCO Coder, a frontier-scale model tailored for coding and agentic workflows. Benchmarks, demos and download link below. Follow us for updates.",
    "author_name": "Michael Helcig",
-   "likes": 943,
+   "likes": 946,
    "story": "[Release] ISTA DeepSeek-V4.1-Flash-1017 GSQ-RCO Coder: a 763B model at 1 bit per parameter"
   }
  ],
