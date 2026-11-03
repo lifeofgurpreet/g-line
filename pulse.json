@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-03T15:58:31Z",
+ "generated_at": "2026-11-03T16:31:29Z",
  "items": [
   {
    "title": "S-1: Anthropic says it may “imminently meet” its RSI threshold and may not identify “a significant…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-02T17:51:48Z",
    "text": "We asked GPT-6 Astra to edit Qwen3.5-0.8B weights to improve math. It directly changed only 0.016% of weights, fixing 0.8B's reasoning loops & improving math up to 6x and even instruction following 3x, without gradients or training. We call this Weight-Space Programming:…",
    "author_name": "Rikiya Takehi",
-   "likes": 51873,
+   "likes": 52094,
    "story": "Researchers say LLMs can be good at natively reading and writing neural network weights; GPT-6 Astra edited Qwen3.5-0.8B's weights to make it better at math"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-11-02T18:05:23Z",
    "text": "Today we are happy to share one of our first open research releases: Latent Sparse Attention (LSA), a step towards subquadratic attention that matches accuracy of full attention at ultra-long context. Sparse attention attends to only a few tokens per query, but it has to find…",
    "author_name": "James Whittington",
-   "likes": 2615,
+   "likes": 2661,
    "story": "New sparse attention method for ultra-long context"
   },
   {
@@ -50,8 +50,8 @@
    "url": "https://honnibal.dev/blog/astra-read-write-misleading",
    "source": "Hacker News",
    "published_at": "2026-11-03T12:21:17Z",
-   "text": "537 points and 118 comments on Hacker News.",
-   "points": 537,
+   "text": "584 points and 136 comments on Hacker News.",
+   "points": 584,
    "discussion": "https://news.ycombinator.com/item?id=50351111"
   },
   {
@@ -61,7 +61,7 @@
    "published_at": "2026-11-03T12:36:01Z",
    "text": "Fable 5.5 vs GPT 6.2 Astra vs Opus 5.5 vs GPT 6 Astra same prompt: create an SVG of a PS5 controller the jump from the older models is actually crazy. the latest Fable and Astra models are really on another level, especially with the details and overall design. Fable 5.5 and…",
    "author_name": "Marcel",
-   "likes": 177,
+   "likes": 194,
    "story": "Fable 5.5 vs GPT 6.2 Astra - SVG of a PS5 Controller"
   },
   {
@@ -86,7 +86,7 @@
    "published_at": "2026-11-03T02:52:45Z",
    "text": "OpenAI has partnered with Cathedral systems. This is the cybersecurity startup founded by former DOGE staffers who very recently hacked Anthropic's Slack.",
    "author_name": "Andrew Curran",
-   "likes": 298,
+   "likes": 303,
    "story": "OpenAI partners with Cathedral to test its security defenses and revamps its Security Bug Bounty program, including quadrupling rewards for critical findings"
   },
   {
@@ -94,8 +94,8 @@
    "url": "https://shkspr.mobi/blog/2026/11/just-a-little-ai-resistance-as-a-treat/",
    "source": "Hacker News",
    "published_at": "2026-11-03T14:14:12Z",
-   "text": "137 points and 80 comments on Hacker News.",
-   "points": 137,
+   "text": "146 points and 89 comments on Hacker News.",
+   "points": 146,
    "discussion": "https://news.ycombinator.com/item?id=50352257"
   },
   {
@@ -105,25 +105,8 @@
    "published_at": "2026-11-02T17:12:34Z",
    "text": "NOMENCLATURE WATCH: Just got my first email from OpenAI referring to their data centers as 'compute campuses'",
    "author_name": "Casey Newton",
-   "likes": 467,
+   "likes": 468,
    "story": "OpenAI launches the Grid Protectors Program, a US effort for its future data center campuses meant “to reduce electricity demand when the grid is under strain”"
-  },
-  {
-   "title": "Sources: Nvidia verbally told cloud compute clients they must sell 51%+ of their services to non-Ch…",
-   "url": "https://www.ft.com/content/1902df70-1380-4588-bad5-171352b575f2",
-   "source": "Financial Times",
-   "published_at": "2026-11-03T06:01:25Z",
-   "text": "Sources: Nvidia verbally told cloud compute clients they must sell 51%+ of their services to non-Chinese companies, as the US further limits China's chip access. Nvidia is ordering its data centre partners to reduce exposure to Chinese customers in a move that further restrains China's ability …",
-   "via": "Techmeme"
-  },
-  {
-   "title": "Nvidia – open-source auto-ontology",
-   "url": "https://github.com/NVIDIA/auto-ontology",
-   "source": "Hacker News",
-   "published_at": "2026-11-03T07:04:50Z",
-   "text": "226 points and 82 comments on Hacker News.",
-   "points": 226,
-   "discussion": "https://news.ycombinator.com/item?id=50348962"
   },
   {
    "title": "Google plans to make it easier to restrict its AI tools for students early next year but says schoo…",
@@ -131,6 +114,23 @@
    "source": "New York Times",
    "published_at": "2026-11-03T15:45:56Z",
    "text": "Google plans to make it easier to restrict its AI tools for students early next year but says schools that block AI entirely will lose student access to Search. Google is making it easier to restrict its A.I. tools for students. But schools that block A.I. entirely will lose student access to Google's search engine.",
+   "via": "Techmeme"
+  },
+  {
+   "title": "AI is destroying my CS degree",
+   "url": "https://lordtoots.bearblog.dev/ai-is-destroying-my-cs-degree/",
+   "source": "Hacker News",
+   "published_at": "2026-11-03T15:35:06Z",
+   "text": "73 points and 38 comments on Hacker News.",
+   "points": 73,
+   "discussion": "https://news.ycombinator.com/item?id=50353300"
+  },
+  {
+   "title": "Sources: Nvidia verbally told cloud compute clients they must sell 51%+ of their services to non-Ch…",
+   "url": "https://www.ft.com/content/1902df70-1380-4588-bad5-171352b575f2",
+   "source": "Financial Times",
+   "published_at": "2026-11-03T06:01:25Z",
+   "text": "Sources: Nvidia verbally told cloud compute clients they must sell 51%+ of their services to non-Chinese companies, as the US further limits China's chip access. Nvidia is ordering its data centre partners to reduce exposure to Chinese customers in a move that further restrains China's ability …",
    "via": "Techmeme"
   }
  ],
