@@ -1411,6 +1411,24 @@ test('a cache keeps the lifetime it was written with: the 5-hour window filling 
   await ui.unmount()
 })
 
+test('the guard pane says what keep-warm makes of this conversation now', { timeoutMs: 30_000 }, async ($, on) => {
+  const w = world(on)
+  w.config = { guard: { keep_warm: { after: '45m', max: 2, min_context: '50k' } } }
+  engineBelow(on)
+  await start($)
+  await measure($, w, 40)
+  await $.turn.start({ text: 'go', turnId: 't1' })
+  await step($, 't1', 0, 'high')
+  await $.turn.complete({ answer: 'done', durationMs: 4000, isAborted: false, turnId: 't1', reason: 'answer',
+    usage: { ...USAGE_ARGS, model: 'claude-opus-5-5' } })
+  await w.clock.advance(10 * 60_000)
+  await $.command.run({ command: 'g-line', args: 'guard why' } as never)
+  const pane = await $.ui.mount({ plugin: 'g-line', surface: 'terminal', component: 'Pane', requestId: 'g-line',
+    props: { bodyColumns: 140 } as never, viewport: { columns: 160, rows: 50 } })
+  expect(await pane.find({ type: 'Text', text: /keep-warm: after 45m idle, up to 2 times, 50k\+ context, 0 so far · now: not idle long enough/ })).toBeDefined()
+  await pane.unmount()
+})
+
 test('0.20: a re-read that finds no cache ends the stretch; the second time keep-warm is off for the session', { timeoutMs: 30_000 }, async ($, on) => {
   const w = world(on)
   w.config = { guard: { keep_warm: true } }

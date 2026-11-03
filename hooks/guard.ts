@@ -1107,6 +1107,14 @@ export function cacheTtl(cache: { learned?: '5m' | '1h'; written?: '5m' | '1h' }
   return cache?.learned ?? setting ?? cache?.written ?? automaticTtl(limits, nowSeconds)
 }
 
+/**
+ * The TTL a request starting now is written with, when the plan windows are
+ * known; nothing before the first reading, so a guess made then doesn't stick.
+ */
+export function writtenTtl(limits: readonly { kind: string; percentUsed: number; resetsAt?: number }[] | undefined, nowSeconds: number): '5m' | '1h' | undefined {
+  return (limits ?? []).some(l => l.kind === 'five_hour' || l.kind === 'seven_day') ? automaticTtl(limits, nowSeconds) : undefined
+}
+
 /** Why keep-warm re-reads now, or why it won't: the first reason that holds. */
 export function warmDue(k: KeepWarm | undefined, f: WarmFacts): { due: boolean; why: string; code: WarmCode } {
   const no = (code: WarmCode, why: string) => ({ due: false, why, code })

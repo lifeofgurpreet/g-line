@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.22.2 (2026-11-04): the pane says why keep-warm is waiting
+
+- **`/g-line guard why` shows what keep-warm makes of this conversation now**, on its line in the
+  pane: `keep-warm: after 45m idle, up to 6 times, 30k+ context, 0 so far · now: not idle long
+  enough`, or `due now`, `another session on this account is re-reading`, `the 5-hour window is
+  low` and so on. Before, the reason showed only on the receipt of a cold rebuild.
+- A session's first request, made before any usage reading, no longer fixes its cache at five
+  minutes: the lifetime follows the readings when they come.
+
 ## 0.22.1 (2026-11-03): a full window no longer turns a warm cache cold
 
 - **A cache keeps the lifetime it was written with.** When a 5-hour or weekly window filled after

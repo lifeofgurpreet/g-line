@@ -3,7 +3,7 @@ import { expect, test } from 'claude-code/testing'
 import {
   KEEP_WARM_DEFAULTS, accountIdentity, accountKey, agentModel, cappedEffort, changeText, effortKeepsCache, bridgeDue, endText, evaluate, groupOf, hoursWords, liftsAt, guardForms, inHours, leaseFree,
   fiveHourLeftOf, localTime, parseGuard, parseHours, readBack, ruleText, seconds, simulated, stopText, tokenCount, WARM_MISS, warmDue, warmForms,
-  automaticTtl, cacheTtl, compactDue, idleCompactionStoodDown, whyLines,
+  automaticTtl, cacheTtl, writtenTtl, compactDue, idleCompactionStoodDown, whyLines,
 } from '../hooks/guard'
 import type { Facts, WarmFacts } from '../hooks/guard'
 
@@ -360,6 +360,11 @@ test('a cache lives as long as it was written for, not as the windows stand now'
   // What a hit or miss taught, then the setting, beat the lifetime it was written with.
   expect(cacheTtl({ written: '1h', learned: '5m' }, undefined, full, now)).toBe('5m')
   expect(cacheTtl({ written: '5m' }, '1h', full, now)).toBe('1h')
+  // Before the first reading nothing is recorded, so the lifetime follows the readings when they come.
+  expect(writtenTtl(undefined, now)).toBeUndefined()
+  expect(writtenTtl([{ kind: 'spend_limit', percentUsed: 10 }], now)).toBeUndefined()
+  expect(writtenTtl(full, now)).toBe('5m')
+  expect(writtenTtl([{ kind: 'five_hour', percentUsed: 40, resetsAt: now + 3600 }], now)).toBe('1h')
 })
 
 test('keep-warm reads a five-hour window that reset since its reading as all left', () => {

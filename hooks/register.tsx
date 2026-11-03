@@ -40,7 +40,7 @@ import type { PulseFeed, PulseItem, Shown } from './pulse'
 import { gitSegmentOf } from './core'
 import {
   AGENT_TYPE_MODELS, KEEP_WARM_DEFAULTS, accountIdentity, dateWords, accountKey, agentModel, cappedEffort, changeText, drainText, effortKeepsCache, bridgeDue, endText, epochOf, evaluate, groupOf, guardForms, liftsAt, inForceText, leaseFree, namesAccounts, readBack, ruleText, simulated, stopText,
-  resumeAt, fiveHourLeftOf, WARM_MISS, warmDue, warmForms, whyLines, automaticTtl, cacheTtl, compactDue, idleCompactionStoodDown,
+  resumeAt, fiveHourLeftOf, WARM_MISS, warmDue, warmForms, whyLines, cacheTtl, writtenTtl, compactDue, idleCompactionStoodDown,
 } from './guard'
 import type { Effort, Facts, Simulation, Verdict, WarmCode, WindowName } from './guard'
 import {
@@ -1171,7 +1171,7 @@ async function detailRows($: EngineInterface, seconds: number, columns?: number)
       rows.push({ key: `g-${rule.id}`, tone: on ? (rule.stop ? 'bad' : 'warn') : 'dim', text: `${on ? 'in force ' : '         '}${ruleText(rule)}` })
     }
     const k = config.guard.keepWarm
-    if (k) rows.push({ key: 'g-warm', tone: 'dim', text: `keep-warm: after ${Math.round(k.after / 60)}m idle, up to ${k.max} times, ${tokens(k.minContext)}+ context${warmOff ? ' (off for this session)' : `, ${warmed} so far`}` })
+    if (k) rows.push({ key: 'g-warm', tone: 'dim', text: `keep-warm: after ${Math.round(k.after / 60)}m idle, up to ${k.max} times, ${tokens(k.minContext)}+ context${warmOff ? ' (off for this session)' : `, ${warmed} so far`}${warmNow ? ` · now: ${warmNow}` : ''}` })
     if (config.guard.rules.length) {
       for (const [i, line] of (await whyNow($)).entries()) rows.push({ key: `g-why-${i}`, tone: line.startsWith('Held:') ? 'bad' : 'dim', text: line })
     }
@@ -1532,6 +1532,8 @@ const WARM_TRIES = 3
  * cold turn's receipt and the day's tally say about why it went cold.
  */
 let warmSeen: { code: WarmCode; idle: number; at: number } | undefined
+/** What keep-warm made of this conversation on its last look, for the pane: `not idle long enough`, `due now`. */
+let warmNow: string | undefined
 /** The stretch's last re-read found and kept the cache. */
 let warmKept = false
 /** Why the stretch rested: an Esc, a missing cache, or failed re-reads. */
@@ -1807,6 +1809,7 @@ async function keepWarm($: EngineInterface): Promise<void> {
   const k = config.guard.on ? config.guard.keepWarm : undefined
   const idleFor = now - c.lastAt
   const look = (code: WarmCode) => {
+    warmNow = WARM_MISS[code]
     if (idleFor >= (k ?? KEEP_WARM_DEFAULTS).after) warmSeen = { code, idle: idleFor, at: now }
   }
   if (!k) return look(config.guard.on ? 'off' : 'guard-off')
@@ -1849,6 +1852,7 @@ async function keepWarm($: EngineInterface): Promise<void> {
     leased: !leaseFree(lease, sessionId ?? '', now * 1000),
   })
   if (due.code !== 'busy' && due.code !== 'early') look(due.code)
+  warmNow = due.due ? 'due now' : due.why
   if (!due.due) {
     if (!compactTried && compactDue(k, due.code, idleFor, warmJitter, fiveHourLeft)) await compactIdle($, c.prefix, due.code)
     return
@@ -2061,6 +2065,7 @@ async function afterRealRequest($: EngineInterface, rebuilt: boolean, explained:
   warmRested = false
   warmFailures = 0
   warmSeen = undefined
+  warmNow = undefined
   warmGap = 0
   compactTried = false
   standDownSaid = false
@@ -2593,7 +2598,7 @@ export const register: Register = (on, options) => {
         if (s.cache?.accountChanged && u.cache_creation_input_tokens > s.cache.prefix * 0.5) coldThisTurn = true
         return { ...s, model: e.model, effort: typeof step.effort === 'string' ? step.effort : s.effort,
           effortSet: capped && typeof e.effort === 'string' && e.effort !== capped ? e.effort : undefined,
-          cache: { lastAt: started, cached, prefix, learned, written: automaticTtl(s.rateLimits, started) } }
+          cache: { lastAt: started, cached, prefix, learned, written: writtenTtl(s.rateLimits, started) } }
       })
       const cold = coldThisTurn
       // Why keep-warm didn't keep it, from what it saw while idle: on the receipt and in the day's tally.
