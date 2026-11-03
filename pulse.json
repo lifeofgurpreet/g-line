@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-03T23:05:46Z",
+ "generated_at": "2026-11-03T23:39:03Z",
  "items": [
   {
    "title": "Google plans to make it easier to restrict its AI tools for students in early 2027, but says school…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-03T15:03:52Z",
    "text": "7 BILLION DOLLAR crypto hack came from a homebrew install from someone tryna vibecode something 😭",
    "author_name": "ashen",
-   "likes": 8415,
+   "likes": 8533,
    "story": "Binance says North Korean hackers stole $6.3B through a months-long scheme with fake LinkedIn job interviews and an ad campaign to deliver malicious software"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-11-03T18:29:54Z",
    "text": "Apple Intelligence in China, redesigned Health app, AI listening features on the Apple Watch are all in the new betas.",
    "author_name": "Mark Gurman",
-   "likes": 395,
+   "likes": 403,
    "story": "Apple opens Siri AI to all developers, letting any app on iOS 27.3 beta and other 27.3 OS betas bring its content and actions into Siri AI by using App Intents",
    "links": [
     "https://www.bloomberg.com/news/articles/2026-11-03/apple-releases-ios-27-3-beta-with-watch-ai-listening-tools-health-app-china-ai?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc5MzczMDU5MCwiZXhwIjoxNzk0MzM1MzkwLCJhcnRpY2xlSWQiOiJUTlhWQTJOM04wOUowMCIsImJjb25uZWN0SWQiOiJDNEVEQ0FFMUZBMDU0MEJFQTI0QTlGMjExQzFFOTA4MCJ9.7fxypbPrSvvjnL8axvz4558x4pLkCOGmDrxk0Q0E3l0"
@@ -53,8 +53,8 @@
    "url": "https://github.com/postmanlabs/postman-app-support/issues/14370",
    "source": "Hacker News",
    "published_at": "2026-11-03T17:22:37Z",
-   "text": "910 points and 298 comments on Hacker News.",
-   "points": 910,
+   "text": "951 points and 309 comments on Hacker News.",
+   "points": 951,
    "discussion": "https://news.ycombinator.com/item?id=50354960"
   },
   {
@@ -64,7 +64,7 @@
    "published_at": "2026-11-03T15:44:55Z",
    "text": "Well, turns out Qwen3.8-Flash-Next can do more than work with software tools, it can operate real robots too. A group of Qwen developers from Tsinghua and UC Berkeley recently built uni-robot-agent, an open-source harness that connects general-purpose LLMs to robotic systems. It…",
    "author_name": "Qwen Developers",
-   "likes": 350,
+   "likes": 360,
    "story": "“Can Qwen directly control the robot as well as GPT-6 Astra?”"
   },
   {
@@ -89,7 +89,7 @@
    "published_at": "2026-11-03T02:52:45Z",
    "text": "OpenAI has partnered with Cathedral systems. This is the cybersecurity startup founded by former DOGE staffers who very recently hacked Anthropic's Slack.",
    "author_name": "Andrew Curran",
-   "likes": 348,
+   "likes": 354,
    "story": "OpenAI partners with Cathedral to test its security defenses and revamps its Security Bug Bounty program, including quadrupling rewards for critical findings"
   },
   {
@@ -97,8 +97,8 @@
    "url": "https://arxiv.org/abs/2605.29713",
    "source": "Hacker News",
    "published_at": "2026-11-03T21:40:53Z",
-   "text": "101 points and 11 comments on Hacker News.",
-   "points": 101,
+   "text": "138 points and 16 comments on Hacker News.",
+   "points": 138,
    "discussion": "https://news.ycombinator.com/item?id=50358582"
   },
   {
@@ -110,13 +110,13 @@
    "via": "Techmeme"
   },
   {
-   "title": "The 'Astra can read and write weights to improve Qwen' post is misleading",
-   "url": "https://honnibal.dev/blog/astra-read-write-misleading",
+   "title": "US tech giants' hidden AI debt swells 90% to $3.2T in 6 months",
+   "url": "https://asia.nikkei.com/business/technology/artificial-intelligence/us-tech-giants-hidden-ai-debt-swells-90-to-3.2tn-in-6-months",
    "source": "Hacker News",
-   "published_at": "2026-11-03T12:21:17Z",
-   "text": "855 points and 188 comments on Hacker News.",
-   "points": 855,
-   "discussion": "https://news.ycombinator.com/item?id=50351111"
+   "published_at": "2026-11-03T21:26:44Z",
+   "text": "109 points and 44 comments on Hacker News.",
+   "points": 109,
+   "discussion": "https://news.ycombinator.com/item?id=50358422"
   },
   {
    "title": "The U.S. Census Bureau and “Super Intelligence”",
@@ -126,11 +126,11 @@
    "text": "I was reminded today of AI Adoption Rate Trending Down for Large Companies , a chart produced by Apollo Global Management in September 2025, which appeared to show a slowdown in U.S. corporate AI adoption based on numbers collected by the U.S. Census Bureau. At the time I used that chart to demonstrate GPT-5 data analysis , and then to experiment with Claude's new Code Interpreter . I decided to try running those numbers again to see what had changed over the past year, and in doing so learned that the Bureau has fallen foul of Executive Order 14434 , aka the asinine Super Intelligence one."
   },
   {
-   "title": "The UK NCSC says AI is “transforming cyber operations” and expects China and Russia to “routinely u…",
-   "url": "https://www.ft.com/content/131d9506-04b1-49b8-ba79-b0d783219c40",
-   "source": "Tom Wilson / Financial Times",
-   "published_at": "2026-11-03T11:05:59Z",
-   "text": "The UK NCSC says AI is “transforming cyber operations” and expects China and Russia to “routinely use AI cyber to achieve their geopolitical goals” by 2028. Head of National Cyber Security Centre set to warn security defences, particularly for critical infrastructure, are inadequate",
+   "title": "Anthropic releases FlashProve, an open-source prototype that cryptographically verifies an AI respo…",
+   "url": "https://www.anthropic.com/research/provable-inference",
+   "source": "Anthropic",
+   "published_at": "2026-11-03T21:11:18Z",
+   "text": "Anthropic releases FlashProve, an open-source prototype that cryptographically verifies an AI response came from a given model, not one that a router swapped in. Roy Rinberg (Anthropic), Alex Allain (Anthropic); Alessandro Chiesa (EPFL, StarkWare), Miranda Christ (MIT, RESI), Rahul Dalal …",
    "via": "Techmeme"
   }
  ],
