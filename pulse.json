@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-03T22:00:59Z",
+ "generated_at": "2026-11-03T22:33:19Z",
  "items": [
   {
    "title": "Google plans to make it easier to restrict its AI tools for students in early 2027, but says school…",
@@ -11,14 +11,14 @@
    "via": "Techmeme"
   },
   {
-   "title": "We asked GPT-6 Astra to edit Qwen3.5-0.8B weights to improve math. It directly changed only 0.016%…",
-   "url": "https://x.com/rikiyatakehi/status/2117313742891327994",
-   "source": "𝕏 @rikiyatakehi",
-   "published_at": "2026-11-02T17:51:48Z",
-   "text": "We asked GPT-6 Astra to edit Qwen3.5-0.8B weights to improve math. It directly changed only 0.016% of weights, fixing 0.8B's reasoning loops & improving math up to 6x and even instruction following 3x, without gradients or training. We call this Weight-Space Programming:…",
-   "author_name": "Rikiya Takehi",
-   "likes": 53711,
-   "story": "MIT researchers say GPT-6 Astra improved a small Qwen model’s math score from 7.9% to 48.1% by directly editing just 0.016% of its weights, without gradient-ba…"
+   "title": "7 BILLION DOLLAR crypto hack came from a homebrew install from someone tryna vibecode something 😭",
+   "url": "https://x.com/ashen_one/status/2117633867955720451",
+   "source": "𝕏 @ashen_one",
+   "published_at": "2026-11-03T15:03:52Z",
+   "text": "7 BILLION DOLLAR crypto hack came from a homebrew install from someone tryna vibecode something 😭",
+   "author_name": "ashen",
+   "likes": 8272,
+   "story": "Binance says North Korean hackers stole $6.3B through a months-long scheme with fake LinkedIn job interviews and an ad campaign to deliver malicious software"
   },
   {
    "title": "Claude Code 2.1.317 released",
@@ -28,21 +28,24 @@
    "text": "Added a warning to /schedule when a new cloud scheduled task gets connectors you did not ask for, with how to remove them · Added a check that asks before a web or shell tool call sends your account email address to the network · Added onFailure: \"block\" for Agent SDK hook callbacks, so a callback that fails blocks the action instead of letting it run · Added a notice in Claude Desktop's Code tab when your organization's remote managed settings haven't loaded for the session, and another once they do"
   },
   {
-   "title": "7 BILLION DOLLAR crypto hack came from a homebrew install from someone tryna vibecode something 😭",
-   "url": "https://x.com/ashen_one/status/2117633867955720451",
-   "source": "𝕏 @ashen_one",
-   "published_at": "2026-11-03T15:03:52Z",
-   "text": "7 BILLION DOLLAR crypto hack came from a homebrew install from someone tryna vibecode something 😭",
-   "author_name": "ashen",
-   "likes": 8075,
-   "story": "Binance says North Korean hackers stole $6.3B through a months-long scheme with fake LinkedIn job interviews and an ad campaign to deliver malicious software"
+   "title": "Apple Intelligence in China, redesigned Health app, AI listening features on the Apple Watch are al…",
+   "url": "https://x.com/markgurman/status/2117685717690200087",
+   "source": "𝕏 @markgurman",
+   "published_at": "2026-11-03T18:29:54Z",
+   "text": "Apple Intelligence in China, redesigned Health app, AI listening features on the Apple Watch are all in the new betas.",
+   "author_name": "Mark Gurman",
+   "likes": 383,
+   "story": "Apple opens Siri AI to all developers, letting any app on iOS 27.3 beta and other 27.3 OS betas bring its content and actions into Siri AI by using App Intents",
+   "links": [
+    "https://www.bloomberg.com/news/articles/2026-11-03/apple-releases-ios-27-3-beta-with-watch-ai-listening-tools-health-app-china-ai?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc5MzczMDU5MCwiZXhwIjoxNzk0MzM1MzkwLCJhcnRpY2xlSWQiOiJUTlhWQTJOM04wOUowMCIsImJjb25uZWN0SWQiOiJDNEVEQ0FFMUZBMDU0MEJFQTI0QTlGMjExQzFFOTA4MCJ9.7fxypbPrSvvjnL8axvz4558x4pLkCOGmDrxk0Q0E3l0"
+   ]
   },
   {
-   "title": "Apple opens Siri AI to all developers, letting any app on iOS 27.3 beta and other 27.3 OS betas bri…",
-   "url": "https://developer.apple.com/news/?id=gdk2umrf",
-   "source": "Apple Developer",
-   "published_at": "2026-11-03T20:15:53Z",
-   "text": "Apple opens Siri AI to all developers, letting any app on iOS 27.3 beta and other 27.3 OS betas bring its content and actions into Siri AI by using App Intents. Starting today with the iOS 27.3, iPadOS 27.3, macOS 27.3, and visionOS 27.3 betas, a new Developer Preview enables any developer …",
+   "title": "AMD reports Q3 revenue up 45% YoY to $13.38B, vs. $13.09B est., Data Center revenue up 97% to $8.5B…",
+   "url": "https://www.cnbc.com/2026/11/03/amd-amd-q3-earnings-report-2026-.html",
+   "source": "Katie Tarasov / CNBC",
+   "published_at": "2026-11-03T21:30:55Z",
+   "text": "AMD reports Q3 revenue up 45% YoY to $13.38B, vs. $13.09B est., Data Center revenue up 97% to $8.5B, forecasts Q4 revenue above est.; AMD jumps 7%+ after hours. Advanced Micro Devices reported third-quarter earnings on Tuesday that beat Wall Street's expectations, with revenue jump 45% …",
    "via": "Techmeme"
   },
   {
@@ -50,8 +53,8 @@
    "url": "https://github.com/postmanlabs/postman-app-support/issues/14370",
    "source": "Hacker News",
    "published_at": "2026-11-03T17:22:37Z",
-   "text": "831 points and 271 comments on Hacker News.",
-   "points": 831,
+   "text": "876 points and 285 comments on Hacker News.",
+   "points": 876,
    "discussion": "https://news.ycombinator.com/item?id=50354960"
   },
   {
@@ -61,7 +64,7 @@
    "published_at": "2026-11-02T22:11:24Z",
    "text": "BREAKING: Revolut moved ~2,000 engineers onto self-hosted GLM for coding and pushed Claude Code and Codex to the exception list. Per David Abitbol, who leads AI ops there: 56 Nvidia B200s, a blended 30 cents per million tokens, roughly a tenth of what they paid Anthropic and…",
    "author_name": "Guillermo Flor",
-   "likes": 6612,
+   "likes": 6729,
    "story": "Revolut says it cut AI coding inference costs by ~90% in less than a year by making self-hosted GLM models its default over commercial tools like Claude Code"
   },
   {
@@ -72,11 +75,11 @@
    "text": "Yesterday's hot paper was Sparks of Weight-Space Programming: LLMs can natively read & write neural network weights by Rikiya Takehi, Jayden Teoh, Alex Zhang, and Omar Khattab. The paper (OK, the authors classify is as a \"blog post\", but it's paper-shaped) found that frontier models, in particular GPT-6 Astra, can both interpret and modify the raw weights of a machine learning model - literally a text description of the model containing a bunch of floating point numbers."
   },
   {
-   "title": "The UK NCSC says AI is “transforming cyber operations” and expects China and Russia to “routinely u…",
-   "url": "https://www.ft.com/content/131d9506-04b1-49b8-ba79-b0d783219c40",
-   "source": "Tom Wilson / Financial Times",
-   "published_at": "2026-11-03T11:05:59Z",
-   "text": "The UK NCSC says AI is “transforming cyber operations” and expects China and Russia to “routinely use AI cyber to achieve their geopolitical goals” by 2028. Head of National Cyber Security Centre set to warn security defences, particularly for critical infrastructure, are inadequate",
+   "title": "OpenAI hires ex-US Army Secretary Dan Driscoll to oversee national security modernization, as it pu…",
+   "url": "https://www.wsj.com/politics/national-security/openai-hires-former-army-secretary-dan-driscoll-to-cybersecurity-role-0e5cc0a1?st=cfNEPb&reflink=desktopwebshare_permalink",
+   "source": "Gareth Vipers / Wall Street…",
+   "published_at": "2026-11-03T11:25:49Z",
+   "text": "OpenAI hires ex-US Army Secretary Dan Driscoll to oversee national security modernization, as it pushes to secure government contracts and shape military policy. Driscoll will advise on ways AI could bolster U.S. security capabilities and cyber defenses — OpenAI has appointed former …",
    "via": "Techmeme"
   },
   {
@@ -86,7 +89,7 @@
    "published_at": "2026-11-03T15:44:55Z",
    "text": "Well, turns out Qwen3.8-Flash-Next can do more than work with software tools, it can operate real robots too. A group of Qwen developers from Tsinghua and UC Berkeley recently built uni-robot-agent, an open-source harness that connects general-purpose LLMs to robotic systems. It…",
    "author_name": "Qwen Developers",
-   "likes": 337,
+   "likes": 344,
    "story": "“Can Qwen directly control the robot as well as GPT-6 Astra?”"
   },
   {
@@ -94,8 +97,8 @@
    "url": "https://honnibal.dev/blog/astra-read-write-misleading",
    "source": "Hacker News",
    "published_at": "2026-11-03T12:21:17Z",
-   "text": "829 points and 187 comments on Hacker News.",
-   "points": 829,
+   "text": "845 points and 187 comments on Hacker News.",
+   "points": 845,
    "discussion": "https://news.ycombinator.com/item?id=50351111"
   },
   {
@@ -105,15 +108,15 @@
    "published_at": "2026-11-03T02:52:45Z",
    "text": "OpenAI has partnered with Cathedral systems. This is the cybersecurity startup founded by former DOGE staffers who very recently hacked Anthropic's Slack.",
    "author_name": "Andrew Curran",
-   "likes": 331,
+   "likes": 338,
    "story": "OpenAI partners with Cathedral to test its security defenses and revamps its Security Bug Bounty program, including quadrupling rewards for critical findings"
   },
   {
-   "title": "OpenAI hires ex-US Army Secretary Dan Driscoll to oversee national security modernization, as it pu…",
-   "url": "https://www.wsj.com/politics/national-security/openai-hires-former-army-secretary-dan-driscoll-to-cybersecurity-role-0e5cc0a1?st=cfNEPb&reflink=desktopwebshare_permalink",
-   "source": "Gareth Vipers / Wall Street…",
-   "published_at": "2026-11-03T11:25:49Z",
-   "text": "OpenAI hires ex-US Army Secretary Dan Driscoll to oversee national security modernization, as it pushes to secure government contracts and shape military policy. Driscoll will advise on ways AI could bolster U.S. security capabilities and cyber defenses — OpenAI has appointed former …",
+   "title": "The UK NCSC says AI is “transforming cyber operations” and expects China and Russia to “routinely u…",
+   "url": "https://www.ft.com/content/131d9506-04b1-49b8-ba79-b0d783219c40",
+   "source": "Tom Wilson / Financial Times",
+   "published_at": "2026-11-03T11:05:59Z",
+   "text": "The UK NCSC says AI is “transforming cyber operations” and expects China and Russia to “routinely use AI cyber to achieve their geopolitical goals” by 2028. Head of National Cyber Security Centre set to warn security defences, particularly for critical infrastructure, are inadequate",
    "via": "Techmeme"
   },
   {
