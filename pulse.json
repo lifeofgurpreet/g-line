@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-03T18:37:55Z",
+ "generated_at": "2026-11-03T19:10:50Z",
  "items": [
   {
    "title": "Google plans to make it easier to restrict its AI tools for students in early 2027, but says school…",
@@ -11,17 +11,14 @@
    "via": "Techmeme"
   },
   {
-   "title": "There's a buzzy new paper about GPT-6 Astra being able to directly interpret model weights (prompts…",
-   "url": "https://x.com/simonw/status/2117655816581071203",
-   "source": "𝕏 @simonw",
-   "published_at": "2026-11-03T16:31:05Z",
-   "text": "There's a buzzy new paper about GPT-6 Astra being able to directly interpret model weights (prompts full of floating point numbers) - I tried it with Qwen 3.8 27B on my laptop and found that, after 45+ minutes, that model could achieve the same thing",
-   "author_name": "Simon Willison",
-   "likes": 1583,
-   "story": "Researchers say LLMs can be good at natively reading and writing neural network weights; GPT-6 Astra edited Qwen3.5-0.8B's weights to make it better at math",
-   "links": [
-    "https://simonwillison.net/2026/Nov/3/qwen-can-interpret-model-weights/"
-   ]
+   "title": "We asked GPT-6 Astra to edit Qwen3.5-0.8B weights to improve math. It directly changed only 0.016%…",
+   "url": "https://x.com/rikiyatakehi/status/2117313742891327994",
+   "source": "𝕏 @rikiyatakehi",
+   "published_at": "2026-11-02T17:51:48Z",
+   "text": "We asked GPT-6 Astra to edit Qwen3.5-0.8B weights to improve math. It directly changed only 0.016% of weights, fixing 0.8B's reasoning loops & improving math up to 6x and even instruction following 3x, without gradients or training. We call this Weight-Space Programming:…",
+   "author_name": "Rikiya Takehi",
+   "likes": 53079,
+   "story": "MIT researchers say GPT-6 Astra improved a small Qwen model’s math score from 7.9% to 48.1% by directly editing just 0.016% of its weights, without gradient-ba…"
   },
   {
    "title": "Claude Code 2.1.317 released",
@@ -31,23 +28,13 @@
    "text": "Added a warning to /schedule when a new cloud scheduled task gets connectors you did not ask for, with how to remove them · Added a check that asks before a web or shell tool call sends your account email address to the network · Added onFailure: \"block\" for Agent SDK hook callbacks, so a callback that fails blocks the action instead of letting it run · Added a notice in Claude Desktop's Code tab when your organization's remote managed settings haven't loaded for the session, and another once they do"
   },
   {
-   "title": "Well, turns out Qwen3.8-Flash-Next can do more than work with software tools, it can operate real r…",
-   "url": "https://x.com/QwenDevs/status/2117644199860601297",
-   "source": "𝕏 @QwenDevs",
-   "published_at": "2026-11-03T15:44:55Z",
-   "text": "Well, turns out Qwen3.8-Flash-Next can do more than work with software tools, it can operate real robots too. A group of Qwen developers from Tsinghua and UC Berkeley recently built uni-robot-agent, an open-source harness that connects general-purpose LLMs to robotic systems. It…",
-   "author_name": "Qwen Developers",
-   "likes": 279,
-   "story": "“Can Qwen directly control the robot as well as GPT-6 Astra?”"
-  },
-  {
    "title": "7 BILLION DOLLAR crypto hack came from a homebrew install from someone tryna vibecode something 😭",
    "url": "https://x.com/ashen_one/status/2117633867955720451",
    "source": "𝕏 @ashen_one",
    "published_at": "2026-11-03T15:03:52Z",
    "text": "7 BILLION DOLLAR crypto hack came from a homebrew install from someone tryna vibecode something 😭",
    "author_name": "ashen",
-   "likes": 5611,
+   "likes": 6331,
    "story": "Binance says North Korean hackers stole $6.3B through a months-long scheme with fake LinkedIn job interviews and an ad campaign to deliver malicious software"
   },
   {
@@ -63,26 +50,26 @@
    "url": "https://github.com/postmanlabs/postman-app-support/issues/14370",
    "source": "Hacker News",
    "published_at": "2026-11-03T17:22:37Z",
-   "text": "307 points and 106 comments on Hacker News.",
-   "points": 307,
+   "text": "451 points and 143 comments on Hacker News.",
+   "points": 451,
    "discussion": "https://news.ycombinator.com/item?id=50354960"
   },
   {
-   "title": "OpenAI has partnered with Cathedral systems. This is the cybersecurity startup founded by former DO…",
-   "url": "https://x.com/AndrewCurran_/status/2117449875675889821",
-   "source": "𝕏 @AndrewCurran_",
-   "published_at": "2026-11-03T02:52:45Z",
-   "text": "OpenAI has partnered with Cathedral systems. This is the cybersecurity startup founded by former DOGE staffers who very recently hacked Anthropic's Slack.",
-   "author_name": "Andrew Curran",
-   "likes": 313,
-   "story": "OpenAI partners with Cathedral to test its security defenses and revamps its Security Bug Bounty program, including quadrupling rewards for critical findings"
+   "title": "Well, turns out Qwen3.8-Flash-Next can do more than work with software tools, it can operate real r…",
+   "url": "https://x.com/QwenDevs/status/2117644199860601297",
+   "source": "𝕏 @QwenDevs",
+   "published_at": "2026-11-03T15:44:55Z",
+   "text": "Well, turns out Qwen3.8-Flash-Next can do more than work with software tools, it can operate real robots too. A group of Qwen developers from Tsinghua and UC Berkeley recently built uni-robot-agent, an open-source harness that connects general-purpose LLMs to robotic systems. It…",
+   "author_name": "Qwen Developers",
+   "likes": 297,
+   "story": "“Can Qwen directly control the robot as well as GPT-6 Astra?”"
   },
   {
-   "title": "The U.S. Census Bureau and “Super Intelligence”",
-   "url": "https://simonwillison.net/2026/Nov/2/census-bureau-super-intelligence/",
+   "title": "Qwen 3.8 27B on my laptop can interpret model weights, too",
+   "url": "https://simonwillison.net/2026/Nov/3/qwen-can-interpret-model-weights/",
    "source": "Simon Willison's weblog",
-   "published_at": "2026-11-02T13:31:26Z",
-   "text": "I was reminded today of AI Adoption Rate Trending Down for Large Companies , a chart produced by Apollo Global Management in September 2025, which appeared to show a slowdown in U.S. corporate AI adoption based on numbers collected by the U.S. Census Bureau. At the time I used that chart to demonstrate GPT-5 data analysis , and then to experiment with Claude's new Code Interpreter . I decided to try running those numbers again to see what had changed over the past year, and in doing so learned that the Bureau has fallen foul of Executive Order 14434 , aka the asinine Super Intelligence one."
+   "published_at": "2026-11-03T16:29:48Z",
+   "text": "Yesterday's hot paper was Sparks of Weight-Space Programming: LLMs can natively read & write neural network weights by Rikiya Takehi, Jayden Teoh, Alex Zhang, and Omar Khattab. The paper found that frontier models, in particular GPT-6 Astra, can both interpret and modify the raw weights of a machine learning model - literally a text description of the model containing a bunch of floating point numbers. I've been playing with one of the examples from the paper and I'm delighted to share that Qwen 3.8 27B running on my laptop can do this as well!"
   },
   {
    "title": "OpenAI hires ex-US Army Secretary Dan Driscoll to oversee national security modernization, as it pu…",
@@ -93,12 +80,22 @@
    "via": "Techmeme"
   },
   {
+   "title": "OpenAI has partnered with Cathedral systems. This is the cybersecurity startup founded by former DO…",
+   "url": "https://x.com/AndrewCurran_/status/2117449875675889821",
+   "source": "𝕏 @AndrewCurran_",
+   "published_at": "2026-11-03T02:52:45Z",
+   "text": "OpenAI has partnered with Cathedral systems. This is the cybersecurity startup founded by former DOGE staffers who very recently hacked Anthropic's Slack.",
+   "author_name": "Andrew Curran",
+   "likes": 317,
+   "story": "OpenAI partners with Cathedral to test its security defenses and revamps its Security Bug Bounty program, including quadrupling rewards for critical findings"
+  },
+  {
    "title": "The 'Astra can read and write weights to improve Qwen' post is misleading",
    "url": "https://honnibal.dev/blog/astra-read-write-misleading",
    "source": "Hacker News",
    "published_at": "2026-11-03T12:21:17Z",
-   "text": "731 points and 168 comments on Hacker News.",
-   "points": 731,
+   "text": "752 points and 173 comments on Hacker News.",
+   "points": 752,
    "discussion": "https://news.ycombinator.com/item?id=50351111"
   },
   {
@@ -108,6 +105,13 @@
    "published_at": "2026-11-03T11:05:59Z",
    "text": "The UK NCSC says AI is “transforming cyber operations” and expects China and Russia to “routinely use AI cyber to achieve their geopolitical goals” by 2028. Head of National Cyber Security Centre set to warn security defences, particularly for critical infrastructure, are inadequate",
    "via": "Techmeme"
+  },
+  {
+   "title": "The U.S. Census Bureau and “Super Intelligence”",
+   "url": "https://simonwillison.net/2026/Nov/2/census-bureau-super-intelligence/",
+   "source": "Simon Willison's weblog",
+   "published_at": "2026-11-02T13:31:26Z",
+   "text": "I was reminded today of AI Adoption Rate Trending Down for Large Companies , a chart produced by Apollo Global Management in September 2025, which appeared to show a slowdown in U.S. corporate AI adoption based on numbers collected by the U.S. Census Bureau. At the time I used that chart to demonstrate GPT-5 data analysis , and then to experiment with Claude's new Code Interpreter . I decided to try running those numbers again to see what had changed over the past year, and in doing so learned that the Bureau has fallen foul of Executive Order 14434 , aka the asinine Super Intelligence one."
   },
   {
    "title": "CrowdStrike agrees to buy Fiddler AI, which helps monitor AI agents, for ~$400M, and Dreadnode, an…",
@@ -123,14 +127,6 @@
    "source": "Financial Times",
    "published_at": "2026-11-03T06:01:25Z",
    "text": "Sources: Nvidia verbally told cloud compute clients they must sell 51%+ of their services to non-Chinese companies, as the US further limits China's chip access. Nvidia is ordering its data centre partners to reduce exposure to Chinese customers in a move that further restrains China's ability …",
-   "via": "Techmeme"
-  },
-  {
-   "title": "ChatGPT Consumer Product Lead Adam Fry says ChatGPT has hit 1.2B WAUs, adding 200M over the past tw…",
-   "url": "https://www.bigtechnology.com/p/openai-chatgpt-search-is-about-20",
-   "source": "Alex Kantrowitz / Big Techn…",
-   "published_at": "2026-11-03T15:50:53Z",
-   "text": "ChatGPT Consumer Product Lead Adam Fry says ChatGPT has hit 1.2B WAUs, adding 200M over the past two months, and its search volume is now ~20% of Google's. ChatGPT consumer product lead Adam Fry on ChatGPT's growth, the cost of personal agents, and plans to bring Chat and Work together.",
    "via": "Techmeme"
   }
  ],
