@@ -1,13 +1,13 @@
 {
  "schema": 1,
- "generated_at": "2026-11-03T16:31:29Z",
+ "generated_at": "2026-11-03T17:02:34Z",
  "items": [
   {
-   "title": "S-1: Anthropic says it may “imminently meet” its RSI threshold and may not identify “a significant…",
-   "url": "https://techcrunch.com/2026/11/02/anthropic-warns-that-its-very-close-to-rsi-capability-aka-self-building-ai/",
-   "source": "Julie Bort / TechCrunch",
-   "published_at": "2026-11-02T23:05:49Z",
-   "text": "S-1: Anthropic says it may “imminently meet” its RSI threshold and may not identify “a significant acceleration” in its development until after it has occurred. While much attention has focused on the updated financials Anthropic revealed in its revised S-1A on Monday …",
+   "title": "Google plans to make it easier to restrict its AI tools for students in early 2027, but says school…",
+   "url": "https://www.nytimes.com/2026/11/03/us/google-search-schools-restrict-ai.html?unlocked_article_code=1.NlE.VMKr.Cr-g-C6phyfH&smid=url-share",
+   "source": "New York Times",
+   "published_at": "2026-11-03T15:45:56Z",
+   "text": "Google plans to make it easier to restrict its AI tools for students in early 2027, but says schools that block AI entirely will lose student access to Search. Google is making it easier to restrict its A.I. tools for students. But schools that block A.I. entirely will lose student access to Google's search engine.",
    "via": "Techmeme"
   },
   {
@@ -17,7 +17,7 @@
    "published_at": "2026-11-02T17:51:48Z",
    "text": "We asked GPT-6 Astra to edit Qwen3.5-0.8B weights to improve math. It directly changed only 0.016% of weights, fixing 0.8B's reasoning loops & improving math up to 6x and even instruction following 3x, without gradients or training. We call this Weight-Space Programming:…",
    "author_name": "Rikiya Takehi",
-   "likes": 52094,
+   "likes": 52335,
    "story": "Researchers say LLMs can be good at natively reading and writing neural network weights; GPT-6 Astra edited Qwen3.5-0.8B's weights to make it better at math"
   },
   {
@@ -34,15 +34,15 @@
    "published_at": "2026-11-02T18:05:23Z",
    "text": "Today we are happy to share one of our first open research releases: Latent Sparse Attention (LSA), a step towards subquadratic attention that matches accuracy of full attention at ultra-long context. Sparse attention attends to only a few tokens per query, but it has to find…",
    "author_name": "James Whittington",
-   "likes": 2661,
+   "likes": 2709,
    "story": "New sparse attention method for ultra-long context"
   },
   {
-   "title": "OpenAI hires ex-US Army Secretary Dan Driscoll to oversee national security modernization, as it pu…",
-   "url": "https://www.wsj.com/politics/national-security/openai-hires-former-army-secretary-dan-driscoll-to-cybersecurity-role-0e5cc0a1?st=cfNEPb&reflink=desktopwebshare_permalink",
-   "source": "Gareth Vipers / Wall Street…",
-   "published_at": "2026-11-03T11:25:49Z",
-   "text": "OpenAI hires ex-US Army Secretary Dan Driscoll to oversee national security modernization, as it pushes to secure government contracts and shape military policy. Driscoll will advise on ways AI could bolster U.S. security capabilities and cyber defenses — OpenAI has appointed former …",
+   "title": "S-1: Anthropic says it may “imminently meet” its RSI threshold and may not identify “a significant…",
+   "url": "https://techcrunch.com/2026/11/02/anthropic-warns-that-its-very-close-to-rsi-capability-aka-self-building-ai/",
+   "source": "Julie Bort / TechCrunch",
+   "published_at": "2026-11-02T23:05:49Z",
+   "text": "S-1: Anthropic says it may “imminently meet” its RSI threshold and may not identify “a significant acceleration” in its development until after it has occurred. While much attention has focused on the updated financials Anthropic revealed in its revised S-1A on Monday …",
    "via": "Techmeme"
   },
   {
@@ -50,8 +50,8 @@
    "url": "https://honnibal.dev/blog/astra-read-write-misleading",
    "source": "Hacker News",
    "published_at": "2026-11-03T12:21:17Z",
-   "text": "584 points and 136 comments on Hacker News.",
-   "points": 584,
+   "text": "643 points and 145 comments on Hacker News.",
+   "points": 643,
    "discussion": "https://news.ycombinator.com/item?id=50351111"
   },
   {
@@ -61,15 +61,15 @@
    "published_at": "2026-11-03T12:36:01Z",
    "text": "Fable 5.5 vs GPT 6.2 Astra vs Opus 5.5 vs GPT 6 Astra same prompt: create an SVG of a PS5 controller the jump from the older models is actually crazy. the latest Fable and Astra models are really on another level, especially with the details and overall design. Fable 5.5 and…",
    "author_name": "Marcel",
-   "likes": 194,
+   "likes": 207,
    "story": "Fable 5.5 vs GPT 6.2 Astra - SVG of a PS5 Controller"
   },
   {
-   "title": "The U.S. Census Bureau and “Super Intelligence”",
-   "url": "https://simonwillison.net/2026/Nov/2/census-bureau-super-intelligence/",
+   "title": "Qwen 3.8 27B on my laptop can interpret model weights, too",
+   "url": "https://simonwillison.net/2026/Nov/3/qwen-can-interpret-model-weights/",
    "source": "Simon Willison's weblog",
-   "published_at": "2026-11-02T13:31:26Z",
-   "text": "I was reminded today of AI Adoption Rate Trending Down for Large Companies , a chart produced by Apollo Global Management in September 2025, which appeared to show a slowdown in U.S. corporate AI adoption based on numbers collected by the U.S. Census Bureau. At the time I used that chart to demonstrate GPT-5 data analysis , and then to experiment with Claude's new Code Interpreter . I decided to try running those numbers again to see what had changed over the past year, and in doing so learned that the Bureau has fallen foul of Executive Order 14434 , aka the asinine Super Intelligence one."
+   "published_at": "2026-11-03T16:29:48Z",
+   "text": "Yesterday's hot paper was Sparks of Weight-Space Programming: LLMs can natively read & write neural network weights by Rikiya Takehi, Jayden Teoh, Alex Zhang, and Omar Khattab. The paper found that frontier models, in particular GPT-6 Astra, can both interpret and modify the raw weights of a machine learning model - literally a text description of the model containing a bunch of floating point numbers. I've been playing with one of the examples from the paper and I'm delighted to share that Qwen 3.8 27B running on my laptop can do this as well!"
   },
   {
    "title": "The UK NCSC says AI is “transforming cyber operations” and expects China and Russia to “routinely u…",
@@ -86,17 +86,17 @@
    "published_at": "2026-11-03T02:52:45Z",
    "text": "OpenAI has partnered with Cathedral systems. This is the cybersecurity startup founded by former DOGE staffers who very recently hacked Anthropic's Slack.",
    "author_name": "Andrew Curran",
-   "likes": 303,
+   "likes": 307,
    "story": "OpenAI partners with Cathedral to test its security defenses and revamps its Security Bug Bounty program, including quadrupling rewards for critical findings"
   },
   {
-   "title": "Just a little AI resistance, as a treat",
-   "url": "https://shkspr.mobi/blog/2026/11/just-a-little-ai-resistance-as-a-treat/",
+   "title": "Quili AI",
+   "url": "https://www.quili.ai/",
    "source": "Hacker News",
-   "published_at": "2026-11-03T14:14:12Z",
-   "text": "146 points and 89 comments on Hacker News.",
-   "points": 146,
-   "discussion": "https://news.ycombinator.com/item?id=50352257"
+   "published_at": "2026-11-03T15:49:02Z",
+   "text": "72 points and 39 comments on Hacker News.",
+   "points": 72,
+   "discussion": "https://news.ycombinator.com/item?id=50353475"
   },
   {
    "title": "NOMENCLATURE WATCH: Just got my first email from OpenAI referring to their data centers as 'compute…",
@@ -105,33 +105,32 @@
    "published_at": "2026-11-02T17:12:34Z",
    "text": "NOMENCLATURE WATCH: Just got my first email from OpenAI referring to their data centers as 'compute campuses'",
    "author_name": "Casey Newton",
-   "likes": 468,
+   "likes": 469,
    "story": "OpenAI launches the Grid Protectors Program, a US effort for its future data center campuses meant “to reduce electricity demand when the grid is under strain”"
   },
   {
-   "title": "Google plans to make it easier to restrict its AI tools for students early next year but says schoo…",
-   "url": "https://www.nytimes.com/2026/11/03/us/google-search-schools-restrict-ai.html?unlocked_article_code=1.NlE.VMKr.Cr-g-C6phyfH&smid=url-share",
-   "source": "New York Times",
-   "published_at": "2026-11-03T15:45:56Z",
-   "text": "Google plans to make it easier to restrict its AI tools for students early next year but says schools that block AI entirely will lose student access to Search. Google is making it easier to restrict its A.I. tools for students. But schools that block A.I. entirely will lose student access to Google's search engine.",
+   "title": "OpenAI hires ex-US Army Secretary Dan Driscoll to oversee national security modernization, as it pu…",
+   "url": "https://www.wsj.com/politics/national-security/openai-hires-former-army-secretary-dan-driscoll-to-cybersecurity-role-0e5cc0a1?st=cfNEPb&reflink=desktopwebshare_permalink",
+   "source": "Gareth Vipers / Wall Street…",
+   "published_at": "2026-11-03T11:25:49Z",
+   "text": "OpenAI hires ex-US Army Secretary Dan Driscoll to oversee national security modernization, as it pushes to secure government contracts and shape military policy. Driscoll will advise on ways AI could bolster U.S. security capabilities and cyber defenses — OpenAI has appointed former …",
    "via": "Techmeme"
   },
   {
-   "title": "AI is destroying my CS degree",
-   "url": "https://lordtoots.bearblog.dev/ai-is-destroying-my-cs-degree/",
+   "title": "OpenAI seems to be silently re-enabling model training on Codex chats",
+   "url": "https://news.ycombinator.com/item?id=50352757",
    "source": "Hacker News",
-   "published_at": "2026-11-03T15:35:06Z",
-   "text": "73 points and 38 comments on Hacker News.",
-   "points": 73,
-   "discussion": "https://news.ycombinator.com/item?id=50353300"
+   "published_at": "2026-11-03T14:53:41Z",
+   "text": "86 points and 31 comments on Hacker News.",
+   "points": 86,
+   "discussion": "https://news.ycombinator.com/item?id=50352757"
   },
   {
-   "title": "Sources: Nvidia verbally told cloud compute clients they must sell 51%+ of their services to non-Ch…",
-   "url": "https://www.ft.com/content/1902df70-1380-4588-bad5-171352b575f2",
-   "source": "Financial Times",
-   "published_at": "2026-11-03T06:01:25Z",
-   "text": "Sources: Nvidia verbally told cloud compute clients they must sell 51%+ of their services to non-Chinese companies, as the US further limits China's chip access. Nvidia is ordering its data centre partners to reduce exposure to Chinese customers in a move that further restrains China's ability …",
-   "via": "Techmeme"
+   "title": "The U.S. Census Bureau and “Super Intelligence”",
+   "url": "https://simonwillison.net/2026/Nov/2/census-bureau-super-intelligence/",
+   "source": "Simon Willison's weblog",
+   "published_at": "2026-11-02T13:31:26Z",
+   "text": "I was reminded today of AI Adoption Rate Trending Down for Large Companies , a chart produced by Apollo Global Management in September 2025, which appeared to show a slowdown in U.S. corporate AI adoption based on numbers collected by the U.S. Census Bureau. At the time I used that chart to demonstrate GPT-5 data analysis , and then to experiment with Claude's new Code Interpreter . I decided to try running those numbers again to see what had changed over the past year, and in doing so learned that the Bureau has fallen foul of Executive Order 14434 , aka the asinine Super Intelligence one."
   }
  ],
  "sources": "curated, Techmeme, X (found via Techmeme, Reddit, the Internet Archive), Claude Code releases, Anthropic, Hacker News, Simon Willison"
