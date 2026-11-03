@@ -30,6 +30,8 @@ export type Snap = {
      * 0 when a compaction was seen but not its size.
      */
     compactedTo?: number
+    /** Who compacted it, when known: Claude Code (its idle or automatic compaction) or g-line's keep-warm fallback. */
+    compactedBy?: 'claude' | 'g-line'
     /**
      * The `account_command` reading changed since this cache was written. Caches
      * are kept per organization, so the next request starts a new one.

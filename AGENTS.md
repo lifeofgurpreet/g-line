@@ -19,9 +19,12 @@ coding agents and for people.
    `$.session.usage()`, `session.measure`, `turn.step`, `turn.complete`, `tool.call`,
    `agent.spawn`, `$.agent.list()`, `session.compact`, the SessionStart hook's figures for a
    resumed conversation (its last response's age and size, which `hooks.json`'s command leaves
-   in `~/.cache/g-line/resume`) and, while idle, the length of
-   `$.session.messages({ as: "api" })` (a managed plugin can send compaction events on past
-   user plugins). Sessions on one machine and one account share those readings through the
+   in `~/.cache/g-line/resume`), the PostCompact hook's note of a compaction (`hooks.json`'s
+   command leaves it in `~/.cache/g-line/compacted`) and, while idle, Claude Code's context
+   figure and the length of `$.session.messages({ as: "api" })` (the managed
+   `cc-plugin-sec-default` passes `session.compact` and the `compaction` door over user plugins).
+   g-line builds on Claude Code's own features and never switches one off in its settings.
+   Sessions on one machine and one account share those readings through the
    plugin store (`mergeLimits`: in a window the newest observation, a timed reading over an untimed one; the later window across a reset).
    Never parse the transcript, never
    estimate what the engine reports, never make a network call of its own, never write into the system
@@ -43,7 +46,10 @@ coding agents and for people.
    may lower the main conversation's effort for a whole turn (`turn.step`), start new
    subagents on a cheaper model (`agent.spawn`), refuse a prompt that would start a turn
    (`prompt.submit`; a `pace` rule steps through effort, cheaper agents and a stop by how far the week runs ahead of its allowance), with `end_turn`, end a running main-loop turn between steps, before its next
-   request (`$.turn.abort`), re-read an idle cache (`$.model.fork`), and, with `resume`, send one
+   request (`$.turn.abort`), re-read an idle cache (`$.model.fork`), defer Claude Code's automatic
+   compaction of the idle main conversation while keep-warm holds its cache (`{ skip }` from
+   `session.compact`, and `hooks.json`'s PreCompact command while `~/.cache/g-line/hold/<session>`
+   says so), compact it with Claude Code's own `/compact` as keep-warm's fallback, and, with `resume`, send one
    prompt after a usage limit's reset (`$.prompt.submit`, one session per account). It never touches a tool
    call, a turn mid-step (`end_turn` waits for the step boundary and only a rule the person
    marked so), the main model or the system prompt, and it never raises a cost.
@@ -59,7 +65,7 @@ coding agents and for people.
 | --- | --- |
 | `.claude-plugin/plugin.json` | Manifest: name, version, `userConfig` (the `/config` rows), `types` |
 | `.claude-plugin/marketplace.json` | Makes this repository its own marketplace: `/plugin install g-line --marketplace lifeofgurpreet/g-line` |
-| `hooks/hooks.json` | `{ "modules": ["./register.tsx"] }` |
+| `hooks/hooks.json` | `{ "modules": ["./register.tsx"] }`, plus three command hooks that run beneath every hooks module: SessionStart (a resumed conversation's figures), PreCompact (keep-warm's deferral) and PostCompact (a compaction's note) |
 | `hooks/register.tsx` | The only file that touches `$`: config, events, drawing, the pane, commands, Pulse fetching, the `status` tool |
 | `hooks/core.ts` | Pure: segments, widths, fitting (`fit`), pace, alerts, model names |
 | `hooks/deck.ts` | Pure: the two-line layout (`lineNow`, `lineNext`, `deck`) |

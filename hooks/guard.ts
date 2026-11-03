@@ -6,7 +6,10 @@
 // cheaper model, or stop new prompts. It can be limited to some accounts (the
 // `account_command` reading) and to hours of the week in a time zone. Keep-warm
 // re-reads an idle conversation's prompt cache before it lapses and, when it
-// can't any more, compacts the conversation while the cache is still warm.
+// can't any more, compacts the conversation while the cache is still warm. It
+// works on top of Claude Code's own idle compaction, never in its place: keep
+// warm first (deferring Claude Code's compaction while it holds the cache), then
+// Claude Code's own compaction, then g-line's `/compact` as the fallback.
 //
 // Pure: the mod hands in the figures, these decide. Missing figures decide
 // nothing: no reading, no account, an unknown time zone, and the rule waits.
@@ -89,10 +92,15 @@ export type KeepWarm = {
   /** Re-reads per hour across every session on the machine. */
   perHour: number
   /**
-   * When the re-reads run out (`max`, `per_hour`, `min_left`, a hold too long
-   * to bridge), compact the conversation while its cache is still warm rather
-   * than let it go cold; and while keep-warm holds the cache, stand Claude
-   * Code's own idle compaction down. `compact: false` leaves both to Claude Code.
+   * Keep warm first, then let compaction take over. While keep-warm holds the
+   * cache with re-reads left, Claude Code's own idle compaction is deferred;
+   * once the re-reads run out (`max`, `per_hour`, `min_left`, a hold too long
+   * to bridge) it's Claude Code's to compact, and where it doesn't (its single
+   * try was deferred, the conversation is under its size, or the account has
+   * none) keep-warm compacts with Claude Code's own `/compact` while the cache
+   * is still warm. `compact: false` neither defers nor compacts: the cache
+   * lapses, and where Claude Code compacts idle conversations itself
+   * keep-warm stands aside for it.
    */
   compact: boolean
 }
@@ -1022,7 +1030,7 @@ export type WarmFacts = {
   /** Tokens the cache holds: the next request's prefix. */
   prefix: number
   compacted: boolean
-  /** Claude Code's idle compaction will summarise this conversation before the cache expires. */
+  /** With `compact: false`, Claude Code's idle compaction will summarise this conversation before the cache expires. */
   compactionCovers: boolean
   /** Re-reads already made since the last real request. */
   done: number
@@ -1057,7 +1065,7 @@ const WARM_LAPSE = 3600 - 120
  * turn and the day's tally use it. `warmDue`'s reasons, and the session's own
  * (`slept`: no beat reached keep-warm for over ten minutes of the idle stretch).
  */
-export type WarmCode = 'off' | 'busy' | 'ttl' | 'compacted' | 'account' | 'model' | 'idle-compaction' | 'small' | 'held'
+export type WarmCode = 'off' | 'busy' | 'ttl' | 'compacted' | 'account' | 'model' | 'idle-compaction' | 'handed' | 'small' | 'held'
   | 'five-hour' | 'max' | 'hourly' | 'not-last' | 'leased' | 'early' | 'lapsed' | 'idle'
   | 'guard-off' | 'hidden' | 'resumed' | 'stopped' | 'failed' | 'slept' | 'esc' | 'gone' | 'switched-off'
 
@@ -1065,6 +1073,7 @@ export type WarmCode = 'off' | 'busy' | 'ttl' | 'compacted' | 'account' | 'model
 export const WARM_MISS: Record<WarmCode, string> = {
   off: 'keep-warm not set', busy: 'a turn was running', ttl: '5-minute cache', compacted: 'compacted',
   account: 'account changed', model: 'model changed', 'idle-compaction': 'left to idle compaction',
+  handed: 'handed to Claude Code',
   small: 'under keep-warm\'s size', held: 'held too long to bridge', 'five-hour': '5h window low',
   max: 'out of re-reads', hourly: 'hourly cap reached', 'not-last': 'another session was typed in',
   leased: 'another session was re-reading', early: 'not idle long enough', lapsed: 'its window passed unchecked',
@@ -1124,7 +1133,7 @@ export function warmDue(k: KeepWarm | undefined, f: WarmFacts): { due: boolean; 
   if (f.compacted) return no('compacted', 'the conversation was compacted')
   if (f.accountChanged) return no('account', 'the account changed')
   if (f.modelChanged) return no('model', 'the model changed')
-  if (f.compactionCovers) return no('idle-compaction', 'Claude Code compacts this conversation when idle')
+  if (f.compactionCovers) return no('idle-compaction', 'Claude Code compacts this conversation itself when idle')
   if (f.prefix < k.minContext) return no('small', 'too small to be worth keeping')
   // A switched-off account is spent on nothing, not even a re-read (and not a compaction: not in OUT_OF_REREADS).
   if (f.switchedOff) return no('switched-off', 'this account is switched off')
@@ -1144,30 +1153,55 @@ export function warmDue(k: KeepWarm | undefined, f: WarmFacts): { due: boolean; 
   return { due: true, why: 'idle', code: 'idle' }
 }
 
+/**
+ * Claude Code's idle compaction fires at 90% of an hour-long cache's life
+ * (about 54 minutes idle), on a conversation of `minTokens` or more. Keep-warm
+ * gives it `IDLE_COMPACTION_GRACE` more to finish before it looks again.
+ */
+export const IDLE_COMPACTION_AT = 3600 * 0.9
+export const IDLE_COMPACTION_GRACE = 120
+
+/**
+ * The idle seconds (from the request's start) by which Claude Code's idle
+ * compaction would have come and gone: its own point, counted from when the
+ * answer finished (`answeredIn` seconds after the request started), plus the
+ * grace. Never so late that a re-read after it would find the cache gone.
+ */
+export function idleCompactionDue(answeredIn: number): number {
+  const answered = Number.isFinite(answeredIn) ? Math.min(Math.max(0, answeredIn), 600) : 0
+  return Math.min(IDLE_COMPACTION_AT + IDLE_COMPACTION_GRACE + answered, WARM_LAPSE - 60)
+}
+
 /** The reasons keep-warm stops re-reading that a compaction can stand in for: its own limits. */
-const OUT_OF_REREADS: readonly WarmCode[] = ['held', 'five-hour', 'max', 'hourly']
+export const OUT_OF_REREADS: readonly WarmCode[] = ['held', 'five-hour', 'max', 'hourly']
+
+/**
+ * Whether Claude Code's idle compaction is deferred now: keep-warm holds this
+ * conversation's cache (it re-read it this stretch) and has re-reads left, so a
+ * summary would throw away a cache it is keeping. Only with `compact`, so a
+ * deferred compaction always has keep-warm's own to fall back on. Once the
+ * re-reads run out it's Claude Code's again.
+ */
+export function deferDue(k: KeepWarm | undefined, f: { code: WarmCode; done: number; resting: boolean; off: boolean }): boolean {
+  if (!k?.compact || f.resting || f.off || f.done <= 0 || f.done >= k.max) return false
+  return f.code === 'early' || f.code === 'idle' || f.code === 'leased'
+}
 
 /**
  * Whether to compact an idle conversation now that keep-warm won't re-read it:
  * its own limits stopped it (`warmDue`'s code), the cache is still warm and as
  * idle as a re-read would have been, and the 5-hour window isn't spent (the
  * compaction is a request too). Once per idle stretch: a compaction leaves
- * `compacted`, which no longer qualifies.
+ * `compacted`, which no longer qualifies. `handedFor`: seconds Claude Code's
+ * own idle compaction may still come in; g-line's is the fallback after it.
  */
-export function compactDue(k: KeepWarm | undefined, code: WarmCode, idle: number, jitter: number, fiveHourLeft: number | undefined): boolean {
+export function compactDue(k: KeepWarm | undefined, code: WarmCode, idle: number, jitter: number, fiveHourLeft: number | undefined,
+  handedFor = 0): boolean {
   if (!k?.compact || !OUT_OF_REREADS.includes(code)) return false
+  // Handed to Claude Code: its own idle compaction may still come, and comes first.
+  if (handedFor > 0) return false
   if (fiveHourLeft !== undefined && !(fiveHourLeft > 0)) return false
   return idle >= Math.min(k.after + jitter, WARM_LAPSE - 60) && idle <= WARM_LAPSE
-}
-
-/**
- * Whether Claude Code's idle compaction (`auto` or `precompute`, no turn
- * running) is stood down: keep-warm re-read this conversation since its last
- * turn and the cache it kept is live, so a summary would only throw it away.
- * When keep-warm runs out, `compactDue` compacts instead.
- */
-export function idleCompactionStoodDown(k: KeepWarm | undefined, f: { busy: boolean; rereads: number; resting: boolean; idle: number }): boolean {
-  return !!k?.compact && !f.busy && !f.resting && f.rereads > 0 && f.idle < WARM_LAPSE
 }
 
 /**
@@ -1205,10 +1239,11 @@ export function leaseFree(lease: unknown, holder: string, nowMs: number): boolea
 }
 
 /** `kept warm 2× · $0.18` for line 2 while re-reads hold the cache; the cost only when known. */
-export function warmForms(count: number, cost?: number): string[] {
+export function warmForms(count: number, cost?: number, max?: number): string[] {
   if (count <= 0) return []
   const money = cost !== undefined && cost > 0 ? ` · ${cost < 0.005 ? '<$0.01' : `$${cost.toFixed(2)}`}` : ''
-  return money ? [`kept warm ${count}×${money}`, `kept warm ${count}×`] : [`kept warm ${count}×`]
+  const n = max !== undefined && max > 0 ? `${count}/${max}` : `${count}×`
+  return money ? [`kept warm ${n}${money}`, `kept warm ${n}`] : [`kept warm ${n}`]
 }
 
 export type Simulation = { window: WindowName; used: number; until: number }

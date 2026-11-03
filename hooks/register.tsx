@@ -40,9 +40,9 @@ import type { PulseFeed, PulseItem, Shown } from './pulse'
 import { gitSegmentOf } from './core'
 import {
   AGENT_TYPE_MODELS, KEEP_WARM_DEFAULTS, accountIdentity, dateWords, accountKey, agentModel, cappedEffort, changeText, drainText, effortKeepsCache, bridgeDue, endText, epochOf, evaluate, groupOf, guardForms, liftsAt, inForceText, leaseFree, namesAccounts, readBack, ruleText, simulated, stopText,
-  resumeAt, fiveHourLeftOf, WARM_MISS, warmDue, warmForms, whyLines, cacheTtl, writtenTtl, compactDue, idleCompactionStoodDown,
+  resumeAt, fiveHourLeftOf, WARM_MISS, warmDue, warmForms, whyLines, cacheTtl, writtenTtl, compactDue, deferDue, idleCompactionDue, IDLE_COMPACTION_AT, OUT_OF_REREADS,
 } from './guard'
-import type { Effort, Facts, Simulation, Verdict, WarmCode, WindowName } from './guard'
+import type { Effort, Facts, KeepWarm, Simulation, Verdict, WarmCode, WindowName } from './guard'
 import {
   DEFAULTS, GROUPS, SETTINGS, changed, merge, nextValue, originOf, parseCommand, patchOf, said, withPatch, withoutSetting,
 } from './settings'
@@ -247,28 +247,37 @@ async function explicitTtl($: EngineInterface, config: Config): Promise<'5m' | '
 }
 
 /**
- * Claude Code's idle compaction: on unless `"idleCompaction": false`, for an
- * hour-long cache holding at least `CLAUDE_CODE_IDLE_COMPACT_MIN_TOKENS`
- * (200k unset). It summarises the conversation shortly before the cache expires.
+ * Claude Code's idle compaction: it summarises an idle conversation at 90% of
+ * an hour-long cache's life, when it holds at least
+ * `CLAUDE_CODE_IDLE_COMPACT_MIN_TOKENS` (200k unset, never under 100k). On
+ * unless `"idleCompaction": false` or compaction is off altogether
+ * (`autoCompactEnabled: false`, `DISABLE_COMPACT`, `DISABLE_AUTO_COMPACT`).
+ * Claude Code also turns it on per account, out of sight: `seen` is true once
+ * a session on this account was seen compacting while idle (for 14 days),
+ * false once a big conversation here went past that point uncompacted, and
+ * unknown until either. g-line never turns it off; keep-warm works around it.
  */
-type IdleCompaction = { minTokens: number }
+type IdleCompaction = { minTokens: number; seen: boolean | undefined }
 
 async function idleCompactionOf($: EngineInterface): Promise<IdleCompaction | undefined> {
   try {
-    if ((await $.settings.read()).idleCompaction === false) return undefined
+    const settings = await $.settings.read()
+    if (settings.idleCompaction === false || settings.autoCompactEnabled === false) return undefined
   } catch {
     // settings unreadable: Claude Code's default, on
   }
-  // Claude Code turns idle compaction on per account, out of sight: it counts
-  // here only once a session on this account was seen compacting while idle.
+  if (truthy(await $.env.get('DISABLE_COMPACT')) || truthy(await $.env.get('DISABLE_AUTO_COMPACT'))) return undefined
+  let seen: boolean | undefined
   try {
-    const seen = Number(await $.store.get(idleSeenKey((await read($, snap)).account)))
-    if (!(seen > 0) || (await nowMs($)) - seen > IDLE_SEEN_MS) return undefined
+    const stored = await $.store.get(idleSeenKey((await read($, snap)).account))
+    const at = Number(stored)
+    if (stored === 0) seen = false
+    else if (at > 0 && (await nowMs($)) - at <= IDLE_SEEN_MS) seen = true
   } catch {
-    return undefined
+    // no store: unknown
   }
   const min = Number(await $.env.get('CLAUDE_CODE_IDLE_COMPACT_MIN_TOKENS'))
-  return { minTokens: Number.isFinite(min) && min > 0 ? Math.max(100_000, min) : 200_000 }
+  return { minTokens: Number.isFinite(min) && min > 0 ? Math.max(100_000, min) : 200_000, seen }
 }
 
 /**
@@ -345,19 +354,23 @@ async function idleCompactionSeen($: EngineInterface): Promise<void> {
 }
 
 /**
- * A conversation idle compaction should have summarised lapsed after a full
- * hour with nothing compacting it: on this account Claude Code doesn't compact
- * idle conversations, so keep-warm stops standing aside for them.
+ * A big idle conversation went past Claude Code's idle-compaction point with
+ * nothing compacting it: on this account Claude Code doesn't compact idle
+ * conversations (or no longer does), so keep-warm keeps them warm itself.
+ * Seen compacting again later, the account counts as compacting again.
  */
 async function idleCompactionMissed($: EngineInterface): Promise<void> {
+  const was = idle?.seen
   try {
     await $.store.set(idleSeenKey((await read($, snap)).account), 0)
   } catch {
     return
   }
-  idle = undefined
-  if (config.guard.keepWarm) {
-    await toast($, '◆ big conversations here are kept warm again · no idle compaction came', 10_000)
+  idle = await idleCompactionOf($)
+  if (config.guard.keepWarm && was !== false) {
+    await toast($, was
+      ? '◆ big conversations here are kept warm again · no idle compaction came'
+      : '◆ Claude Code didn\'t compact this idle conversation · keep-warm keeps big ones here warm', 10_000)
   }
 }
 
@@ -390,9 +403,12 @@ export function payload(s: Snap, nowSeconds: number, ttl: '5m' | '1h' | undefine
     const moved = s.cache.accountChanged === true
     p.prompt_cache = { caching_observed: true, ttl: effective, warm: !compacted && !moved && expires > nowSeconds, expires_at: expires,
       recache_tokens_if_cold: compacted ? s.cache.compactedTo || undefined : s.cache.prefix }
-    if (compacted) p.prompt_cache.compacted = true
+    if (compacted) {
+      p.prompt_cache.compacted = true
+      if (s.cache.compactedBy) p.prompt_cache.compacted_by = s.cache.compactedBy
+    }
     else if (moved) p.prompt_cache.account_changed = true
-    else if (idle && effective === '1h' && s.cache.prefix >= idle.minTokens) p.prompt_cache.idle_compacts = true
+    else if (idle?.seen && effective === '1h' && s.cache.prefix >= idle.minTokens) p.prompt_cache.idle_compacts = true
   }
   if (s.git) p.git = s.git
   return p
@@ -561,42 +577,183 @@ function shrunk(cache: Snap['cache'], context: number | undefined): Snap['cache'
   return context < cache.prefix / 2 ? { ...cache, compactedTo: context } : cache
 }
 
-/** Marks the cached conversation replaced by a compaction, `after` tokens when known. */
-async function markCompacted($: EngineInterface, after?: number): Promise<void> {
+/** Marks the cached conversation replaced by a compaction, `after` tokens when known, and by whom when known. */
+async function markCompacted($: EngineInterface, after?: number, by?: 'claude' | 'g-line'): Promise<void> {
   await update($, snap, s => (s.cache
-    ? { ...s, cache: { ...s.cache, compactedTo: after ?? s.cache.compactedTo ?? 0 } }
+    ? { ...s, cache: { ...s.cache, compactedTo: after ?? s.cache.compactedTo ?? 0, ...(by ? { compactedBy: by } : {}) } }
     : s))
 }
 
 /** A compaction that stood, in the day's tally, the forecast, the cache and the live turn; `say` toasts it. */
-async function noteCompaction($: EngineInterface, c: { at: number; trigger: string; before?: number; after?: number }, say: boolean): Promise<void> {
+async function noteCompaction($: EngineInterface, c: { at: number; trigger: string; before?: number; after?: number }, say: boolean,
+  by?: 'claude' | 'g-line'): Promise<void> {
   await update($, totals, t => ({ ...t, compactions: [...t.compactions, c].slice(-20), growth: [] }))
   await update($, outlook, () => null)
-  await markCompacted($, c.after)
+  await markCompacted($, c.after, by)
   await update($, turnNow, live => (live ? { ...live, compacted: { before: c.before, after: c.after } } : live))
   if (say) await toast($, compactionText(c), 8000)
 }
 
 /**
  * Idle compaction reports itself through `session.compact` and the
- * `compaction` door, and a managed plugin seated ahead of this one can send
- * both on past it; Claude Code's context count then waits for the next
- * request. What stays readable is the conversation the next request is built
- * from: counted once the session is idle, it falls below half when a
- * compaction replaces it with a summary.
+ * `compaction` door, but Claude Code's managed `cc-plugin-sec-default` passes
+ * both over user plugins, so most sessions never see them. What stays
+ * readable: Claude Code's context figure, which a compaction drops (absent, or
+ * the summary's size, until the next response) with no request since, and the
+ * conversation the next request is built from, whose message count falls
+ * below half. Either one, confirmed by the engine's own count of the
+ * conversation as it now stands, is a compaction: line 2 shows the summary's
+ * size, and with nobody having typed a command that replaces the conversation
+ * it is Claude Code's idle compaction, seen on this account. True when it found one.
  */
-async function watchIdle($: EngineInterface): Promise<void> {
+async function watchIdle($: EngineInterface): Promise<boolean> {
   const cache = (await read($, snap))?.cache
-  if (!cache?.cached || cache.compactedTo !== undefined) return
-  if ((await nowSeconds($)) - cache.lastAt < 60) return
-  const messages = (await $.session.messages({ as: 'api' })).length
-  if (idleCount?.lastAt !== cache.lastAt) idleCount = { lastAt: cache.lastAt, messages }
-  else if (messages < idleCount.messages / 2) {
-    await markCompacted($)
-    // Only a summary standing in for a conversation nobody touched is Claude Code's idle compaction:
-    // `/clear` leaves nothing, and `/compact`, `/rewind` or `/resume` are the person's own.
-    if (messages > 0 && replacedAt < cache.lastAt) await idleCompactionSeen($)
+  if (!cache?.cached || cache.compactedTo !== undefined || compactingIdle) return false
+  const now = await nowSeconds($)
+  if (now - cache.lastAt < 60 || (await read($, turnNow)) !== null) return false
+  // A command that replaced the conversation since its last request is the person's (`/clear`, `/compact`, `/rewind`).
+  const replaced = replacedAt >= cache.lastAt
+  const usage = await $.session.usage()
+  const tokens = usage.context.tokens
+  // A resumed conversation has no figure of its own until its first request.
+  let dropped = !cache.restored && !replaced && (tokens === undefined || tokens < cache.prefix / 2)
+  const messages = await $.session.messages({ as: 'api' }).then(m => m.length, () => undefined)
+  if (messages !== undefined) {
+    if (idleCount?.lastAt !== cache.lastAt) idleCount = { lastAt: cache.lastAt, messages }
+    else if (messages < idleCount.messages / 2) dropped = true
   }
+  if (!dropped) return false
+  // The engine's own count of the conversation now: a summary is far under what was cached.
+  let size = tokens !== undefined && tokens < cache.prefix / 2 ? tokens : undefined
+  try {
+    const counted = (await $.session.usage({ breakdown: 'summary' })).context.breakdown?.totalTokens
+    if (counted !== undefined && counted >= cache.prefix / 2 && (messages ?? 0) >= (idleCount?.messages ?? 0) / 2) return false
+    if (size === undefined && counted !== undefined && counted > 0 && counted < cache.prefix / 2) size = counted
+  } catch {
+    // no breakdown: the drop alone
+  }
+  // `/clear` leaves nothing, and `/compact`, `/rewind` or `/resume` are the person's own.
+  if ((messages === undefined || messages > 0) && !replaced) {
+    await noteCompaction($, { at: now * 1000, trigger: 'idle', before: cache.prefix, after: size }, true, 'claude')
+    await idleCompactionSeen($)
+  } else await markCompacted($, size)
+  await measure($).catch(() => undefined)
+  return true
+}
+
+/**
+ * Where hooks.json's PreCompact and PostCompact commands meet the module.
+ * Command hooks run beneath every hooks module, so the managed plugin that
+ * passes `session.compact` over this one can't pass them over. `hold/<session>`
+ * holds the Unix second until which keep-warm holds the cache: while it's in
+ * the future the PreCompact command defers Claude Code's automatic compaction
+ * (`{"decision":"block"}`) and leaves `hold/<session>.deferred`.
+ * `compacted/<session>.json` is the PostCompact command's note of a
+ * compaction: when and by which trigger.
+ */
+const HOLD_DIR = '.cache/g-line/hold'
+const COMPACTED_DIR = '.cache/g-line/compacted'
+/** The second the hold file says now, when this session wrote one. */
+let holdUntil = 0
+/** Claude Code's idle compaction was deferred this stretch, and said. */
+let deferredSaid = false
+/** The last real request of the main conversation: when it started and how long its answer took (seconds). */
+let realReq: { at: number; answered: number } | undefined
+
+async function homeFile($: EngineInterface, dir: string, name: string): Promise<string | undefined> {
+  const home = await $.env.get('HOME')
+  return home && sessionId && /^[A-Za-z0-9_.-]+$/.test(sessionId) ? `${home}/${dir}/${name}` : undefined
+}
+
+/**
+ * Keep-warm holds the cache, or lets go of it. Holding, the hold file is kept
+ * two minutes ahead; let go (re-reads out, a turn started, keep-warm off), it's
+ * removed, so Claude Code's idle compaction is its own again.
+ */
+async function holdCache($: EngineInterface, on: boolean, now: number): Promise<void> {
+  holding = on
+  const path = await homeFile($, HOLD_DIR, sessionId ?? '')
+  if (!path) return
+  try {
+    if (on && holdUntil - now < 60) {
+      await $.fs.write(path, `${now + 120}\n`)
+      holdUntil = now + 120
+    } else if (!on && holdUntil) {
+      holdUntil = 0
+      await $.process.run(['rm', '-f', path], { timeoutMs: 2000 })
+    }
+  } catch {
+    // unwritable home: Claude Code compacts as it would without keep-warm
+  }
+}
+
+/**
+ * Claude Code's own idle compaction for this conversation, while it may still
+ * act on it: an hour-long cache at or above its size since a real request, on
+ * an account not known to go without it. `idle` counts from that request (a
+ * re-read doesn't move Claude Code's clock), `until` is when it would have come.
+ */
+function nativeOf(c: NonNullable<Snap['cache']>, ttlNow: '5m' | '1h', now: number): { idle: number; until: number } | undefined {
+  if (!idle || idle.seen === false || ttlNow !== '1h' || c.compactedTo !== undefined || !realReq || c.prefix < idle.minTokens) return undefined
+  return { idle: now - realReq.at, until: idleCompactionDue(realReq.answered) }
+}
+
+/** Which stage a held conversation is in, for the pane and `/g-line guard why`. */
+function stageWhy(k: KeepWarm, due: { code: WarmCode; why: string }, handedFor: number): string {
+  const kept = `kept warm ${warmed}/${k.max}`
+  if (handedFor > 0 && OUT_OF_REREADS.includes(due.code)) {
+    return `${kept}, handed to Claude Code: its own idle compaction comes at about ${Math.round(IDLE_COMPACTION_AT / 60)}m idle; g-line compacts if it doesn't (${due.why})`
+  }
+  if (holding) return `${kept}, Claude Code's idle compaction deferred while keep-warm holds the cache (${due.why})`
+  return due.why
+}
+
+/**
+ * The compaction hooks.json's commands saw: a PostCompact note newer than the
+ * last request, and a deferral the PreCompact command made. Read every beat.
+ */
+async function watchCompaction($: EngineInterface): Promise<void> {
+  const deferred = await homeFile($, HOLD_DIR, `${sessionId}.deferred`)
+  if (deferred && holdUntil && !deferredSaid) {
+    try {
+      await $.fs.read(deferred)
+      deferredSaid = true
+      await $.process.run(['rm', '-f', deferred], { timeoutMs: 2000 }).catch(() => undefined)
+      await toast($, `◆ Claude Code's idle compaction deferred · keep-warm holds the cache (kept warm ${warmed}/${config.guard.keepWarm?.max ?? 0})`, 8000)
+      await update($, tick, n => n + 1)
+    } catch {
+      // none
+    }
+  }
+  const path = await homeFile($, COMPACTED_DIR, `${sessionId}.json`)
+  if (!path) return
+  let note: { at?: unknown; trigger?: unknown }
+  try {
+    note = JSON.parse(String(await $.fs.read(path))) as { at?: unknown; trigger?: unknown }
+  } catch {
+    return
+  }
+  await $.process.run(['rm', '-f', path], { timeoutMs: 2000 }).catch(() => undefined)
+  const cache = (await read($, snap)).cache
+  const at = Number(note.at)
+  if (!cache?.cached || cache.compactedTo !== undefined || !(at >= cache.lastAt) || compactingIdle) return
+  const now = await nowSeconds($)
+  if ((await read($, turnNow)) !== null) return
+  let size: number | undefined
+  try {
+    const usage = await $.session.usage({ breakdown: 'summary' })
+    const t = usage.context.tokens
+    const counted = usage.context.breakdown?.totalTokens
+    size = t !== undefined && t < cache.prefix / 2 ? t : counted !== undefined && counted > 0 && counted < cache.prefix / 2 ? counted : undefined
+  } catch {
+    // the size stays unknown
+  }
+  // Automatic with no turn running and nobody's command since: Claude Code's idle compaction.
+  if (note.trigger === 'auto' && replacedAt < cache.lastAt) {
+    await noteCompaction($, { at: now * 1000, trigger: 'idle', before: cache.prefix, after: size }, true, 'claude')
+    await idleCompactionSeen($)
+  } else await markCompacted($, size)
+  await measure($).catch(() => undefined)
 }
 
 async function measure($: EngineInterface): Promise<void> {
@@ -1009,7 +1166,10 @@ async function heartbeat($: EngineInterface): Promise<void> {
   if (beats % 2 === 0) await refreshGit($)
   if (beats % 40 === 0 || (accountMissed && beats % 4 === 0)) await refreshAccount($)
   if (beats % 20 === 0) void refreshPulse($)
-  if (beats % 8 === 0) await watchIdle($).catch(() => undefined)
+  await watchCompaction($).catch(() => undefined)
+  // Claude Code's context figure, every two minutes, and every beat around its idle-compaction point.
+  const nearPoint = realReq !== undefined && Math.abs((await nowSeconds($)) - realReq.at - IDLE_COMPACTION_AT) < 6 * 60
+  if (beats % 8 === 0 || nearPoint) await watchIdle($).catch(() => undefined)
   if (resumeLooks > 0) await readResumed($)
   if ((await configStamp($)) !== stamp) await reloadConfig($)
   if ((await read($, agents)).some(row => isActive(row.status))) await refreshAgents($)
@@ -1547,6 +1707,10 @@ let interactive = true
 let blindSaid = false
 let warming = false
 let warmJitter = 0
+/** Keep-warm holds this conversation's cache now: Claude Code's idle compaction is deferred. */
+let holding = false
+/** Keep-warm's re-reads are out and Claude Code's own idle compaction may still come: it's Claude Code's turn. */
+let handed = false
 const WARM_PROMPT = 'This is an automatic keep-alive from the g-line plugin, not a message from the person. Reply with only: ok'
 
 async function readGuardEnv($: EngineInterface): Promise<void> {
@@ -1812,14 +1976,17 @@ async function keepWarm($: EngineInterface): Promise<void> {
     warmNow = WARM_MISS[code]
     if (idleFor >= (k ?? KEEP_WARM_DEFAULTS).after) warmSeen = { code, idle: idleFor, at: now }
   }
+  if (holding && (!k || warmOff || warmRested || c.compactedTo !== undefined)) await holdCache($, false, now)
   if (!k) return look(config.guard.on ? 'off' : 'guard-off')
   if (await read($, hidden)) return look('hidden')
   if (warmOff) return look('stopped')
   if (warmRested) return look(warmRestCode)
   // A resumed conversation: until its first request, Claude Code has nothing to send again.
   if (c.restored) return look('resumed')
-  // The account can change under a session; whether idle compaction covers it is the account's.
+  // The account can change under a session; whether Claude Code compacts it while idle is the account's.
   idle = await idleCompactionOf($)
+  const cacheTtlNow = cacheTtl(c, ttl, s.rateLimits, now)
+  const native = nativeOf(c, cacheTtlNow, now)
   const key = accountKey(s.account)
   const hour = `warm:${key}:${Math.floor(now / 3600)}`
   let thisHour = 0
@@ -1841,9 +2008,9 @@ async function keepWarm($: EngineInterface): Promise<void> {
   const t = touched as { session?: unknown } | undefined
   const fiveHourLeft = fiveHourLeftOf(s.rateLimits?.find(l => l.kind === 'five_hour'), now)
   const due = warmDue(k, {
-    now, lastAt: c.lastAt, ttl: cacheTtl(c, ttl, s.rateLimits, now), prefix: c.prefix, compacted: c.compactedTo !== undefined,
-    // With `compact`, keep-warm holds big conversations too and stands idle compaction down instead.
-    compactionCovers: !k.compact && idle !== undefined && c.prefix >= idle.minTokens, done: warmed, thisHour,
+    now, lastAt: c.lastAt, ttl: cacheTtlNow, prefix: c.prefix, compacted: c.compactedTo !== undefined,
+    // Without `compact` nothing is deferred: where Claude Code compacts idle conversations itself, a re-read would be spent for nothing.
+    compactionCovers: !k.compact && native !== undefined && idle?.seen === true, done: warmed, thisHour,
     fiveHourLeft, stopped: verdict.stop !== undefined, switchedOff: verdict.stop?.rule.off !== undefined,
     ...(verdict.stop ? (lift => (lift !== undefined ? { liftsIn: Math.max(0, lift / 1000 - now) } : {}))(liftsAt(verdict.stop, now * 1000, offsetAt(now * 1000))) : {}),
     busy: (await read($, turnNow)) !== null, jitter: warmJitter, accountChanged: c.accountChanged === true,
@@ -1852,9 +2019,15 @@ async function keepWarm($: EngineInterface): Promise<void> {
     leased: !leaseFree(lease, sessionId ?? '', now * 1000),
   })
   if (due.code !== 'busy' && due.code !== 'early') look(due.code)
-  warmNow = due.due ? 'due now' : due.why
+  // Keep warm first: while keep-warm holds the cache with re-reads left, Claude Code's idle compaction waits.
+  await holdCache($, deferDue(k, { code: due.code, done: warmed, resting: warmRested, off: warmOff }), now)
+  // Then Claude Code's own compaction, where it may still come; g-line's is the fallback after it.
+  const handedFor = native ? Math.max(0, native.until - native.idle) : 0
+  handed = !due.due && handedFor > 0 && OUT_OF_REREADS.includes(due.code)
+  warmNow = due.due ? 'due now' : stageWhy(k, due, handedFor)
   if (!due.due) {
-    if (!compactTried && compactDue(k, due.code, idleFor, warmJitter, fiveHourLeft)) await compactIdle($, c.prefix, due.code)
+    if (handedFor > 0 && OUT_OF_REREADS.includes(due.code)) look('handed')
+    if (!compactTried && compactDue(k, due.code, idleFor, warmJitter, fiveHourLeft, handedFor)) await compactIdle($, c.prefix, due.code)
     return
   }
   // One session per account re-reads at a time; the lease outlives a slow answer.
@@ -1911,8 +2084,6 @@ async function keepWarm($: EngineInterface): Promise<void> {
 let compactingIdle = false
 /** Keep-warm compacted, or tried to, in this idle stretch. */
 let compactTried = false
-/** The idle stretch's first stand-down of Claude Code's idle compaction was said. */
-let standDownSaid = false
 
 /**
  * Keep-warm's last resort: its own limits (`code`) end the re-reads, so the
@@ -1928,7 +2099,7 @@ async function compactIdle($: EngineInterface, prefix: number, code: WarmCode): 
     // A hook vetoed it, and the engine says why.
     if (r.messages === undefined) return
     if ((await read($, snap)).cache?.compactedTo === undefined) {
-      await noteCompaction($, { at: await nowMs($), trigger: 'plugin', before: r.tokensBefore, after: r.tokensAfter }, false)
+      await noteCompaction($, { at: await nowMs($), trigger: 'plugin', before: r.tokensBefore, after: r.tokensAfter }, false, 'g-line')
     }
     await toast($, `◆ idle conversation compacted before its cache lapsed · ${tokens(r.tokensBefore ?? prefix)}${r.tokensAfter ? ` → ${tokens(r.tokensAfter)}` : ''} · keep-warm ${WARM_MISS[code]}`, 10_000)
   } catch {
@@ -1936,20 +2107,6 @@ async function compactIdle($: EngineInterface, prefix: number, code: WarmCode): 
   } finally {
     compactingIdle = false
   }
-}
-
-/** Whether Claude Code's idle compaction stands down now: keep-warm holds this conversation's cache. Said once a stretch. */
-async function idleCompactionStandsDown($: EngineInterface): Promise<boolean> {
-  const c = (await read($, snap)).cache
-  if (!c?.cached || warmOff || compactingIdle) return false
-  const k = config.guard.on ? config.guard.keepWarm : undefined
-  const busy = (await read($, turnNow)) !== null
-  if (!idleCompactionStoodDown(k, { busy, rereads: warmed, resting: warmRested, idle: (await nowSeconds($)) - c.lastAt })) return false
-  if (!standDownSaid) {
-    standDownSaid = true
-    await toast($, '◆ idle compaction stood down · keep-warm is holding the cache', 6000)
-  }
-  return true
 }
 
 /**
@@ -2041,9 +2198,15 @@ async function touch($: EngineInterface): Promise<void> {
   }
 }
 
-/** Line 2's `kept warm 2× · $0.18`, while re-reads since the last turn hold the cache. */
+/**
+ * Line 2's keep-warm stage: `kept warm 2/3 · $0.18` while re-reads since the
+ * last turn hold the cache (Claude Code's idle compaction waits), then
+ * `handed to Claude Code` once they're out and its own compaction may come.
+ */
 function warmSegment(): Segment | undefined {
-  const forms = warmForms(warmed, warmCost || undefined)
+  const max = config.guard.on ? config.guard.keepWarm?.max : undefined
+  const forms = warmForms(warmed, warmCost || undefined, max)
+  if (handed) return { key: 'warm', priority: 42, forms: [...forms.map(f => `${f}, handed to Claude Code`), 'handed to Claude Code'] }
   return forms.length ? { key: 'warm', priority: 42, forms } : undefined
 }
 
@@ -2068,7 +2231,8 @@ async function afterRealRequest($: EngineInterface, rebuilt: boolean, explained:
   warmNow = undefined
   warmGap = 0
   compactTried = false
-  standDownSaid = false
+  deferredSaid = false
+  handed = false
 }
 
 /** Why keep-warm didn't keep the cache a turn just rebuilt, from what it saw while the conversation sat idle. */
@@ -2347,7 +2511,7 @@ async function openDashboard($: EngineInterface): Promise<void> {
       guard: {
         rules: config.guard.rules.map(rule => ({ text: ruleText(rule), inForce: verdict.active[rule.id] !== undefined })),
         why: config.guard.rules.length ? await whyNow($) : [], on: config.guard.on, simulated: simulation !== undefined,
-        ...(k ? { keepWarm: `keep-warm: after ${Math.round(k.after / 60)}m idle, up to ${k.max} times, ${tokens(k.minContext)}+ context${k.compact ? ', then compacts before it goes cold' : ''}${warmOff ? ' (off for this session)' : ''}` } : {}),
+        ...(k ? { keepWarm: `keep-warm: after ${Math.round(k.after / 60)}m idle, up to ${k.max} times, ${tokens(k.minContext)}+ context${k.compact ? ', deferring Claude Code\'s idle compaction meanwhile; then Claude Code\'s, then g-line\'s if it doesn\'t' : ''}${warmOff ? ' (off for this session)' : ''}` } : {}),
         errors: config.guard.errors,
       },
     })
@@ -2524,6 +2688,8 @@ export const register: Register = (on, options) => {
       // the receipt leaves cost and context out
     }
     coldThisTurn = false
+    // A turn: Claude Code compacts as it needs to; keep-warm's hold is over.
+    if (holding) await holdCache($, false, await nowSeconds($)).catch(() => undefined)
     if (config.guard.on && config.guard.rules.some(rule => rule.endTurn)) {
       endSpared = (await guardNow($).catch(() => undefined))?.end ? e.turnId : undefined
     }
@@ -2560,6 +2726,7 @@ export const register: Register = (on, options) => {
     const step = capped ? { ...e, effort: capped } : e
     const result = yield* next(step)
     if (result.usage) lastResponseAt = await nowSeconds($)
+    if (e.agentId === undefined && result.usage) realReq = { at: started, answered: (lastResponseAt ?? started) - started }
     if (e.agentId === undefined && result.usage) {
       const u = result.usage
       const cached = u.cache_read_input_tokens + u.cache_creation_input_tokens > 0
@@ -2572,7 +2739,7 @@ export const register: Register = (on, options) => {
       const sameModel = !before.model || plainModel(before.model) === plainModel(e.model)
       // So does a conversation the person replaced (`/rewind`, `/resume`) since that request.
       const explained = !!was?.accountChanged || !sameModel || (!!was && replacedAt >= was.lastAt)
-      if (rebuilt && was && !was.restored && idle && was.prefix >= idle.minTokens && started - was.lastAt >= 3600) await idleCompactionMissed($)
+      if (rebuilt && was && !was.restored && idle?.seen && was.prefix >= idle.minTokens && started - was.lastAt >= 3600) await idleCompactionMissed($)
       // A model other than the one asked for answered: Claude Code fell back. Said on the receipt.
       if (u.model && plainModel(u.model) !== plainModel(e.model)) {
         const served = u.model
@@ -2736,9 +2903,16 @@ export const register: Register = (on, options) => {
     return next(e)
   }).catch(($, e, next) => next(e))
 
+  // Keep warm first: while keep-warm holds the cache, Claude Code's automatic compaction of the
+  // idle conversation waits (also deferred by hooks.json's PreCompact command, which a managed
+  // plugin can't pass over). Everything else is observed: where this hook is passed over,
+  // the PostCompact command's note and `watchIdle` see what happened.
   on('session.compact', async ($, e, next) => {
-    // Claude Code's idle compaction would summarise a cache keep-warm is holding: it waits for keep-warm to run out.
-    if (e.agentId === undefined && (e.trigger === 'auto' || e.trigger === 'precompute') && (await idleCompactionStandsDown($))) {
+    if (holding && e.agentId === undefined && (e.trigger === 'auto' || e.trigger === 'precompute') && (await read($, turnNow)) === null) {
+      if (!deferredSaid) {
+        deferredSaid = true
+        await toast($, `◆ Claude Code's idle compaction deferred · keep-warm holds the cache (kept warm ${warmed}/${config.guard.keepWarm?.max ?? 0})`, 8000)
+      }
       return { skip: 'g-line keep-warm is holding this idle conversation\'s cache' }
     }
     const result = await next(e)
@@ -2747,7 +2921,7 @@ export const register: Register = (on, options) => {
     // No turn running and nobody typed /compact (or another command that replaces the conversation): idle compaction.
     // Keep-warm's own compaction is not Claude Code's, and says itself.
     if (!compactingIdle && e.trigger !== 'manual' && (await read($, turnNow)) === null && replacedAt < ((await read($, snap)).cache?.lastAt ?? 0)) await idleCompactionSeen($)
-    await noteCompaction($, c, !compactingIdle)
+    await noteCompaction($, c, !compactingIdle, compactingIdle ? 'g-line' : 'claude')
     return result
   }).catch(($, e, next) => next(e))
 

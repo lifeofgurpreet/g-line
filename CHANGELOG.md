@@ -1,5 +1,34 @@
 # Changelog
 
+## 0.23.0 (2026-11-04): keep warm first, then Claude Code's compaction, then g-line's
+
+Keep-warm now works on top of Claude Code's own idle compaction instead of around it, and you
+can see which stage an idle conversation is in.
+
+- **Keep warm first.** While keep-warm holds a conversation's cache with re-reads left, Claude
+  Code's automatic idle compaction waits: `◆ Claude Code's idle compaction deferred · keep-warm
+  holds the cache (kept warm 1/3)`, and line 2 reads `kept warm 1/3`. On Claude Code 2.1.317 the
+  0.21 stand-down never ran: a managed plugin Claude Code ships passes the `session.compact`
+  event over user plugins. The deferral now also runs as a `PreCompact` command in g-line's
+  `hooks.json`, which no plugin passes over, and only while keep-warm says it holds the cache
+  (`~/.cache/g-line/hold/<session>`). Your own `/compact` and a compaction when the context
+  fills mid-turn are never deferred.
+- **Then Claude Code.** When the re-reads run out, the conversation is Claude Code's to compact
+  where its idle compaction can still come: line 2 reads `handed to Claude Code`, then
+  `compacted by Claude Code, next turn caches 14k`, with a toast (`◆ context compacted by
+  Claude Code while idle · 250k → 14k`). g-line now sees that compaction through a
+  `PostCompact` command's note and Claude Code's own context figure; before, line 2 kept the
+  old size until the next turn.
+- **Then g-line, as the fallback.** Where Claude Code doesn't compact it (its one try was
+  deferred, the conversation is under its size, or the account has none), keep-warm compacts
+  with Claude Code's own `/compact` while the cache is still warm, as in 0.21, and line 2 reads
+  `compacted by g-line`.
+- `/g-line guard why` names the stage on keep-warm's line (`kept warm 2/3, Claude Code's idle
+  compaction deferred …`, `kept warm 3/3, handed to Claude Code …`).
+- Claude Code's `idleCompaction` setting stays on: g-line builds on it and never needs it off.
+  `"compact": false` neither defers nor compacts, and stands keep-warm aside where Claude Code
+  compacts idle conversations itself.
+
 ## 0.22.2 (2026-11-04): the pane says why keep-warm is waiting
 
 - **`/g-line guard why` shows what keep-warm makes of this conversation now**, on its line in the

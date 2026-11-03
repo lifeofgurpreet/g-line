@@ -52,6 +52,15 @@ built-in `plugin-authoring` skill has the long-form reference.
 - `$.model.fork` replays the main thread's last request, but in one session it read only the
   cached tools and system prompt (28k of 44k) and wrote the rest. Never assume a fork reads the
   conversation's cache: check its `usage` (`readBack`).
+- On 2.1.317 the managed `cc-plugin-sec-default` passes `session.compact` and
+  `session.append{door=compaction}` (and `classic.*`) over user plugins: a hooks-module hook on
+  them never runs there. Command hooks in `hooks.json` run beneath every module, so keep-warm
+  defers Claude Code's idle compaction with a PreCompact command (`{"decision":"block"}` while
+  `~/.cache/g-line/hold/<session>` is in the future) and sees compactions through a PostCompact
+  command's note and the context figure (`$.session.usage().context.tokens` drops).
+- Claude Code's idle compaction fires once, at 90% of the hour-long cache's life after the last
+  main-thread request; a `$.model.fork` doesn't re-arm it, and after a deferral it waits for the
+  next real request.
 - `/effort <level>` in a test session saves that level as the default for the model in
   `~/.claude/settings.json`. Start test sessions with `--effort <level>` instead.
 - A pane opened without `focus` can't be closed from tmux keys; `/g-line settings` (focused)

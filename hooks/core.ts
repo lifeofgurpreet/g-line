@@ -31,6 +31,8 @@ export type Payload = {
     recache_tokens_if_cold?: number | null
     /** A compaction replaced the cached conversation; the next request writes `recache_tokens_if_cold`. */
     compacted?: boolean
+    /** Who compacted it, when known: Claude Code's own compaction, or keep-warm's fallback. */
+    compacted_by?: 'claude' | 'g-line'
     /** Claude Code's idle compaction will summarise the conversation before this cache expires. */
     idle_compacts?: boolean
     /** The account changed since the cache was written: caches don't carry across organizations. */

@@ -268,36 +268,58 @@ limits:
   back; `/g-line guard off` stops it too.
 - It skips a cache the conversation no longer has: after a compaction, a `/clear`, a model
   change or an account change.
-- When its own limits end the re-reads (`max`, `per_hour`, `min_left`, or a stop held longer
-  than it can bridge), it compacts the idle conversation instead of letting the cache go cold:
-  once per idle stretch, at the time a re-read would have run, through Claude Code's own
-  compaction (the call `/compact` makes), while the cache it reads is still warm. Your next
-  prompt then sends the summary, not the whole conversation rebuilt. It says so in a toast
-  (`◆ idle conversation compacted before its cache lapsed · 250k → 20k · keep-warm out of
-  re-reads`). It doesn't when the 5-hour window is spent, since the compaction is a request too.
-- Claude Code compacts conversations of 200k tokens and up on its own about 54 minutes into an
-  idle stretch (`idleCompaction`), on accounts where Anthropic has turned it on. Once keep-warm
-  has re-read a conversation in the stretch, that compaction would only throw the warm cache
-  away, so keep-warm stands it down (`◆ idle compaction stood down · keep-warm is holding the
-  cache`, and one line in the conversation) until its re-reads run out and it compacts itself.
-  Your own `/compact` is never stood down. `"compact": false` turns both off and brings back
-  the behaviour below.
-- With `"compact": false`, it stands aside for a conversation Claude Code will compact on its own when idle
-  (`idleCompaction`, at 200k tokens and up by default). Claude Code turns idle compaction on per
-  account, so keep-warm counts on it only once a session on the same account has been seen
-  compacting while idle in the last 14 days; until then big conversations are kept warm too.
-  A conversation emptied while idle, or shrunk after you typed `/clear`, `/compact`, `/rewind`
-  or `/resume`, is yours, not idle compaction, and isn't counted (before 0.20 it was, so 0.20
-  drops older sightings). A
-  sighting on one account says nothing about another on the same machine. If a big conversation
-  then sits idle a full hour and its cache lapses with nothing compacting it, the sighting is
-  dropped and keep-warm covers that account's big conversations again, with a toast saying so. Set
-  `"idleCompaction": false` in Claude Code's settings to keep them warm regardless.
+- Keep-warm works on top of Claude Code's own compaction, never in its place, in three stages:
+  1. **Keep warm first.** While keep-warm holds a conversation's cache (it re-read it this idle
+     stretch and has re-reads left), Claude Code's idle compaction waits. Claude Code compacts
+     conversations of 200k tokens and up on its own about 54 minutes into an idle stretch
+     (`idleCompaction`, on accounts where Anthropic has turned it on); that would only throw the
+     warm cache away. g-line defers it through a `PreCompact` command in its `hooks.json`
+     (Claude Code's own extension point, which still runs where a managed plugin passes the
+     `session.compact` event over user plugins), and through its `session.compact` hook where
+     that one is reached. It writes `~/.cache/g-line/hold/<session>` while it holds the cache,
+     and the command defers only Claude Code's automatic compaction of the main conversation
+     while that file says so. It says so once (`◆ Claude Code's idle compaction deferred ·
+     keep-warm holds the cache (kept warm 1/3)`), and line 2 reads `kept warm 1/3`. Your own
+     `/compact`, and Claude Code's compaction when the context fills during a turn, are never
+     deferred. Claude Code's idle compaction is never switched off: leave `idleCompaction` on.
+  2. **Then Claude Code.** When the re-reads run out (`max`, `per_hour`, `min_left`, or a stop
+     held longer than keep-warm can bridge), nothing is deferred any more. If Claude Code's own
+     idle compaction can still come (an hour-long cache of its size, an account not known to go
+     without it, its point not yet passed), keep-warm waits for it: line 2 reads `handed to
+     Claude Code`. When it compacts, line 2 shows `compacted by Claude Code, next turn caches
+     14k` and a toast says `◆ context compacted by Claude Code while idle · 250k → 14k`. g-line
+     sees that compaction through a `PostCompact` command (it leaves
+     `~/.cache/g-line/compacted/<session>.json`) and through Claude Code's context figure,
+     which drops with no request since.
+  3. **Then g-line, as the fallback.** Where Claude Code doesn't compact it (its one try in an
+     idle stretch was deferred in stage 1, the conversation is under its size, or the account
+     has no idle compaction), keep-warm compacts the idle conversation itself instead of letting
+     the cache go cold: once per idle stretch, at the time a re-read would have run, through
+     Claude Code's own compaction (the call `/compact` makes), while the cache it reads is still
+     warm. Your next prompt then sends the summary, not the whole conversation rebuilt. It says
+     so in a toast (`◆ idle conversation compacted before its cache lapsed · 250k → 20k ·
+     keep-warm out of re-reads`) and line 2 reads `compacted by g-line`. It doesn't when the
+     5-hour window is spent, since the compaction is a request too.
+- Claude Code tries its idle compaction once per idle stretch, about 54 minutes after your last
+  turn, and on 2.1.317 doesn't try again after a deferral until your next turn: a re-read
+  doesn't restart its clock. So a conversation keep-warm held past that point is compacted by
+  g-line's fallback when the re-reads run out, and one keep-warm let go of before it is
+  Claude Code's.
+- `"compact": false` neither defers nor compacts: the cache lapses when the re-reads run out.
+  With it, keep-warm stands aside for a conversation Claude Code will compact on its own when
+  idle (at 200k tokens and up by default), since a re-read would be spent for nothing.
+- Claude Code turns idle compaction on per account, so g-line counts on it once a session on the
+  same account has been seen compacting while idle in the last 14 days, and until then waits
+  for its point anyway before falling back. A conversation emptied while idle, or shrunk after
+  you typed `/clear`, `/compact`, `/rewind` or `/resume`, is yours, not idle compaction, and
+  isn't counted. A sighting on one account says nothing about another on the same machine. If
+  a big conversation then sits idle a full hour and its cache lapses with nothing compacting
+  it, the sighting is dropped, with a toast saying so.
 - A resumed conversation waits for its first request: before it, Claude Code has nothing to send
   again.
 
 The first re-read of an idle stretch is a toast (`◆ cache kept warm · 182k re-read after 46m
-idle · $0.04`), and line 2 shows `kept warm 2× · $0.08` until your next turn. The cost comes
+idle · $0.04`), and line 2 shows `kept warm 2/3 · $0.08` (re-reads made of `max`) until your next turn. The cost comes
 from the session's own ledger before and after the re-read, and is left out when something
 else was running then. The pane's day line adds `kept warm 3× ($0.12)`.
 
@@ -312,7 +334,7 @@ the conversation. Pressing Esc ends that idle stretch for keep-warm.
 
 When a cache goes cold anyway, the turn's receipt says why keep-warm didn't keep it, from what it
 saw while you were away: `cache cold · rebuilt 412k · 5h window low`, `out of re-reads`,
-`left to idle compaction`, `keep-warm stopped here`, or `the machine slept` (no beat reached
+`left to idle compaction`, `handed to Claude Code`, `keep-warm stopped here`, or `the machine slept` (no beat reached
 keep-warm for over ten minutes: a laptop asleep, a stalled process). The dashboard's history
 counts the week's cold rebuilds by those reasons.
 

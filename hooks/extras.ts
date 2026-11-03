@@ -271,7 +271,7 @@ export function forecastSegment(f?: Forecast | null): Segment | undefined {
 }
 
 export function compactionText(c: { trigger: string; before?: number; after?: number }): string {
-  const how = c.trigger === 'auto' ? '' : c.trigger === 'manual' ? ' by /compact' : ` by ${c.trigger}`
+  const how = c.trigger === 'auto' ? '' : c.trigger === 'manual' ? ' by /compact' : c.trigger === 'idle' ? ' by Claude Code while idle' : ` by ${c.trigger}`
   if (c.before && c.after !== undefined) return `◆ context compacted${how} · ${tokens(c.before)} → ${tokens(c.after)}`
   return `◆ context compacted${how}`
 }

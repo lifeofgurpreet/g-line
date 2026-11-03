@@ -3,7 +3,7 @@ import { expect, test } from 'claude-code/testing'
 import {
   KEEP_WARM_DEFAULTS, accountIdentity, accountKey, agentModel, cappedEffort, changeText, effortKeepsCache, bridgeDue, endText, evaluate, groupOf, hoursWords, liftsAt, guardForms, inHours, leaseFree,
   fiveHourLeftOf, localTime, parseGuard, parseHours, readBack, ruleText, seconds, simulated, stopText, tokenCount, WARM_MISS, warmDue, warmForms,
-  automaticTtl, cacheTtl, writtenTtl, compactDue, idleCompactionStoodDown, whyLines,
+  automaticTtl, cacheTtl, writtenTtl, compactDue, idleCompactionDue, IDLE_COMPACTION_AT, whyLines,
 } from '../hooks/guard'
 import type { Facts, WarmFacts } from '../hooks/guard'
 
@@ -292,7 +292,7 @@ test('keep-warm: only an idle, warm, hour-long cache worth keeping, a bounded nu
   expect(warmDue(late, { ...base, now: 10_000 + 57 * 60, jitter: 179 }).due).toBe(true)
   expect(warmDue(k, { ...base, ttl: '5m' }).due).toBe(false)
   expect(warmDue(k, { ...base, prefix: 30_000 }).due).toBe(false)
-  expect(warmDue(k, { ...base, compactionCovers: true }).why).toBe('Claude Code compacts this conversation when idle')
+  expect(warmDue(k, { ...base, compactionCovers: true }).why).toBe('Claude Code compacts this conversation itself when idle')
   expect(warmDue(k, { ...base, compacted: true }).due).toBe(false)
   expect(warmDue(k, { ...base, done: 2 }).due).toBe(false)
   expect(warmDue(k, { ...base, thisHour: 6 }).due).toBe(false)
@@ -326,16 +326,14 @@ test('keep-warm compacts when its own limits end the re-reads, while the cache i
   expect(compactDue({ ...k, compact: false }, 'max', idle, 0, 60)).toBe(false)
 })
 
-test('Claude Code\'s idle compaction stands down only while keep-warm holds the cache', () => {
-  const k = RULES.keepWarm!
-  const held = { busy: false, rereads: 1, resting: false, idle: 10 * 60 }
-  expect(idleCompactionStoodDown(k, held)).toBe(true)
-  expect(idleCompactionStoodDown(k, { ...held, rereads: 0 })).toBe(false)
-  expect(idleCompactionStoodDown(k, { ...held, busy: true })).toBe(false)
-  expect(idleCompactionStoodDown(k, { ...held, resting: true })).toBe(false)
-  expect(idleCompactionStoodDown(k, { ...held, idle: 59 * 60 })).toBe(false)
-  expect(idleCompactionStoodDown(undefined, held)).toBe(false)
-  expect(idleCompactionStoodDown({ ...k, compact: false }, held)).toBe(false)
+test('Claude Code\'s idle-compaction point: 90% of the hour from the answer, plus grace, never past the lapse', () => {
+  expect(IDLE_COMPACTION_AT).toBe(54 * 60)
+  expect(idleCompactionDue(0)).toBe(56 * 60)
+  expect(idleCompactionDue(30)).toBe(56 * 60 + 30)
+  // A long answer moves Claude Code's point, but a re-read still gets a minute before the cache may lapse.
+  expect(idleCompactionDue(10 * 60)).toBe(57 * 60)
+  expect(idleCompactionDue(-5)).toBe(56 * 60)
+  expect(idleCompactionDue(Number.NaN)).toBe(56 * 60)
 })
 
 test('the automatic cache lifetime counts only plan windows, and a reset window as fresh', () => {

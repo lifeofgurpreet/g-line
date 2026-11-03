@@ -1983,7 +1983,7 @@ test('keep-warm keeps only the session typed in last on its account, and shows w
   expect(forks).toBe(1)
   const ui = await $.ui.mount({ plugin: 'g-line', surface: 'terminal', component: 'PromptHint',
     props: { isDraft: false, isWorking: false, hint: '? for shortcuts' }, viewport: { columns: 200, rows: 40 } })
-  expect(await ui.find({ type: 'Text', text: 'kept warm 1× · $0.04' })).toBeDefined()
+  expect(await ui.find({ type: 'Text', text: /^kept warm 1\/\d · \$0\.04$/ })).toBeDefined()
   await ui.unmount()
   await $.command.run({ command: 'g-line', args: '' } as never)
   const pane = await $.ui.mount({ plugin: 'g-line', surface: 'terminal', component: 'Pane', requestId: 'g-line',
@@ -2405,4 +2405,141 @@ test('a usage_command does nothing without an account_command', { timeoutMs: 30_
   await w.clock.advance(135_000)
   expect(calls).toBe(0)
   expect(await $.prompt.submit(typed('hi'))).toEqual({ text: 'hi' })
+})
+
+// ------------------------------------------------- 0.23: keep warm first, then Claude Code, then g-line
+
+const HOLD = '/home/someone/.cache/g-line/hold/session-1'
+const COMPACTED = '/home/someone/.cache/g-line/compacted/session-1.json'
+
+/**
+ * A 250k conversation left idle under `keepWarm` (none: no guard at all): the
+ * world, its re-reads and the compactions that reached the engine (`trigger`s),
+ * with `idleFor` steps of the clock run by the test.
+ */
+async function stages($: Engine, on: On, keepWarm: unknown, stored: Record<string, unknown> = {}) {
+  const kept: Record<string, unknown> = { ...stored }
+  const w = world(on, {}, kept)
+  if (keepWarm !== undefined) w.config = { guard: { keep_warm: keepWarm } }
+  hintBelow(on)
+  on('turn.step', async function* ($: unknown, e: { turnId: string; index: number }) {
+    return { turnId: e.turnId, index: e.index, answer: '', toolUses: [], stopReason: 'end_turn',
+      usage: { input_tokens: 4, output_tokens: 300, cache_read_input_tokens: 240_000, cache_creation_input_tokens: 10_000, model: 'claude-opus-5-5' } }
+  } as never)
+  const run = { forks: 0, triggers: [] as string[] }
+  on('model.fork', () => {
+    run.forks += 1
+    return { value: { isAnswered: true, text: 'ok', usage: { input_tokens: 20, output_tokens: 3, cache_read_input_tokens: 250_000, cache_creation_input_tokens: 0 } } } as never
+  })
+  on('session.compact', ($, e) => {
+    run.triggers.push((e as { trigger: string }).trigger)
+    return { messages: SUMMARY, tokensBefore: 250_000, tokensAfter: 14_000 } as never
+  })
+  await start($)
+  await measure($, w, 40)
+  await $.turn.start({ text: 'go', turnId: 't1' })
+  await step($, 't1', 0, 'high')
+  await $.turn.complete({ answer: 'done', durationMs: 4000, isAborted: false, turnId: 't1', reason: 'answer',
+    usage: { ...USAGE_ARGS, model: 'claude-opus-5-5' } })
+  return { w, kept, run }
+}
+
+const holdWrites = (w: World) => w.writes.filter(x => x.path === HOLD)
+
+test('0.23: keep warm first: while keep-warm holds the cache with re-reads left, Claude Code\'s idle compaction waits', { timeoutMs: 30_000 }, async ($, on) => {
+  const { w, run } = await stages($, on, { max: 3 })
+  await w.clock.advance(49 * 60_000)
+  expect(run.forks).toBe(1)
+  // The hold file the PreCompact command reads: a second in the future.
+  const held = holdWrites(w).at(-1)
+  expect(Number(held?.text) > NOW + 49 * 60).toBe(true)
+  expect(await line2Has($, /kept warm 1\/3/)).toBe(true)
+  // The mod's own hook, where it is reached, defers it too, and says so once.
+  const r = await $.session.compact({ trigger: 'auto', messages: SUMMARY } as never) as { skip?: string }
+  expect(r.skip).toContain('keep-warm')
+  expect(run.triggers).toEqual([])
+  expect(w.toasts.filter(t => t.startsWith('◆ Claude Code\'s idle compaction deferred')).length).toBe(1)
+  // A person's own /compact is never deferred.
+  await $.session.compact({ trigger: 'manual', messages: SUMMARY } as never)
+  expect(run.triggers).toEqual(['manual'])
+})
+
+test('0.23: a deferral the PreCompact command made is said once', { timeoutMs: 30_000 }, async ($, on) => {
+  const { w } = await stages($, on, { max: 3 })
+  await w.clock.advance(49 * 60_000)
+  w.files[`${HOLD}.deferred`] = `${NOW + 54 * 60}\n`
+  await w.clock.advance(60_000)
+  expect(w.toasts.filter(t => t === '◆ Claude Code\'s idle compaction deferred · keep-warm holds the cache (kept warm 1/3)').length).toBe(1)
+  expect(w.files[`${HOLD}.deferred`]).toBeUndefined()
+})
+
+test('0.23: out of re-reads, it\'s handed to Claude Code, whose idle compaction it sees through the PostCompact note', { timeoutMs: 30_000 }, async ($, on) => {
+  const { w, kept, run } = await stages($, on, { max: 1 })
+  await w.clock.advance(49 * 60_000)
+  expect(run.forks).toBe(1)
+  // Out of re-reads: nothing held, Claude Code's own compaction may still come.
+  expect(await line2Has($, /handed to Claude Code/)).toBe(true)
+  // Claude Code compacts at about 54 minutes; its PostCompact command leaves a note, and the context figure drops.
+  await w.clock.advance(5 * 60_000)
+  w.files[COMPACTED] = JSON.stringify({ at: NOW + 54 * 60, trigger: 'auto' })
+  w.usage.tokens = 14_000
+  await w.clock.advance(60_000)
+  expect(await line2Has($, /^compacted by Claude Code, next turn caches 14k$/)).toBe(true)
+  expect(typeof kept['idle-compacts:machine']).toBe('number')
+  expect(w.toasts).toContain('◆ context compacted by Claude Code while idle · 250k → 14k')
+  // And g-line never compacts it after.
+  await w.clock.advance(60 * 60_000)
+  expect(run.triggers).toEqual([])
+})
+
+test('0.23: Claude Code\'s compaction is seen by its context figure alone, when no note comes', { timeoutMs: 30_000 }, async ($, on) => {
+  const { w, kept } = await stages($, on, undefined)
+  await w.clock.advance(54 * 60_000)
+  ;(w.usage as { tokens?: number }).tokens = undefined
+  await w.clock.advance(60_000)
+  expect(await line2Has($, /^compacted by Claude Code/)).toBe(true)
+  expect(typeof kept['idle-compacts:machine']).toBe('number')
+})
+
+test('0.23: g-line compacts only as the fallback, after Claude Code\'s own point has passed with nothing compacted', { timeoutMs: 30_000 }, async ($, on) => {
+  const { w, run } = await stages($, on, { max: 1 })
+  await w.clock.advance(57 * 60_000)
+  expect(run.triggers).toEqual([])
+  // Keep-warm compacts when a re-read would have been due, with the cache still warm.
+  await w.clock.advance(40 * 60_000)
+  expect(run.triggers.length).toBe(1)
+  expect(await line2Has($, /^compacted by g-line, next turn caches 14k$/)).toBe(true)
+})
+
+test('0.23: under Claude Code\'s size, keep-warm\'s fallback needs no wait for it', { timeoutMs: 30_000 }, async ($, on) => {
+  // 120k: Claude Code's idle compaction doesn't touch it, so out of re-reads keep-warm compacts at its own time.
+  expect((await outOfRereads($, on, { after: '45m', max: 1 })).length).toBe(1)
+})
+
+test('0.23: with compact: false nothing is ever deferred', { timeoutMs: 30_000 }, async ($, on) => {
+  const { w, run } = await stages($, on, { max: 3, compact: false })
+  await w.clock.advance(49 * 60_000)
+  expect(run.forks).toBe(1)
+  expect(holdWrites(w)).toEqual([])
+  await $.session.compact({ trigger: 'auto', messages: SUMMARY } as never)
+  expect(run.triggers).toEqual(['auto'])
+})
+
+test('0.23: without a guard rule nothing is held, deferred, re-read or compacted', { timeoutMs: 30_000 }, async ($, on) => {
+  const { w, run } = await stages($, on, undefined)
+  await w.clock.advance(50 * 60_000)
+  expect(run.forks).toBe(0)
+  expect(holdWrites(w)).toEqual([])
+  await $.session.compact({ trigger: 'auto', messages: SUMMARY } as never)
+  expect(run.triggers).toEqual(['auto'])
+  await w.clock.advance(60 * 60_000)
+  expect(run.triggers).toEqual(['auto'])
+})
+
+test('0.23: a turn lets go of the hold', { timeoutMs: 30_000 }, async ($, on) => {
+  const { w } = await stages($, on, { max: 3 })
+  await w.clock.advance(49 * 60_000)
+  w.files[HOLD] = holdWrites(w).at(-1)?.text ?? ''
+  await $.turn.start({ text: 'again', turnId: 't2' })
+  expect(w.files[HOLD]).toBeUndefined()
 })

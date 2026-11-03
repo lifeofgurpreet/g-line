@@ -90,8 +90,10 @@ export function cacheNext(p: Payload, now: number): Segment | undefined {
   const expires = num(cache.expires_at)
   if (cache.compacted === true) {
     const size = num(cache.recache_tokens_if_cold)
+    const by = cache.compacted_by === 'claude' ? ' by Claude Code' : cache.compacted_by === 'g-line' ? ' by g-line' : ''
+    const plain = size && size > 0 ? [`compacted, next turn caches ${tokens(size)}`, 'cache compacted'] : ['cache compacted']
     return { key: 'cache', priority: 90,
-      forms: size && size > 0 ? [`compacted, next turn caches ${tokens(size)}`, 'cache compacted'] : ['cache compacted'] }
+      forms: [...(by ? [size && size > 0 ? `compacted${by}, next turn caches ${tokens(size)}` : `compacted${by}`] : []), ...plain] }
   }
   if (cache.warm === true && expires !== undefined && expires > now) {
     const left = expires - now
