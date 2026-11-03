@@ -1096,6 +1096,17 @@ export function automaticTtl(limits: readonly { kind: string; percentUsed: numbe
   return plan.length && within ? '1h' : '5m'
 }
 
+/**
+ * How long this conversation's cache lives: what a hit or miss taught, else the
+ * `cache_ttl` setting, else the TTL its last request was written with, else what
+ * Claude Code would write now. A window that fills after a write doesn't shorten
+ * the cache already there.
+ */
+export function cacheTtl(cache: { learned?: '5m' | '1h'; written?: '5m' | '1h' } | undefined, setting: '5m' | '1h' | undefined,
+  limits: readonly { kind: string; percentUsed: number; resetsAt?: number }[] | undefined, nowSeconds: number): '5m' | '1h' {
+  return cache?.learned ?? setting ?? cache?.written ?? automaticTtl(limits, nowSeconds)
+}
+
 /** Why keep-warm re-reads now, or why it won't: the first reason that holds. */
 export function warmDue(k: KeepWarm | undefined, f: WarmFacts): { due: boolean; why: string; code: WarmCode } {
   const no = (code: WarmCode, why: string) => ({ due: false, why, code })

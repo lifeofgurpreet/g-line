@@ -88,8 +88,8 @@ A shared account runs out by the week as well as by the hour, so a reserve usual
 morning.
 
 **Stop before usage credits.** If your plan has extra usage turned on, Claude Code keeps going
-past 100% of a window and bills it as usage credits, and its prompt caches drop to five minutes
-there. A stop rule near the end keeps you off them: `{ "left": 2, "stop": true }`.
+past 100% of a window and bills it as usage credits, and the prompt caches it writes there last
+five minutes. A cache written before the window filled keeps its hour. A stop rule near the end keeps you off them: `{ "left": 2, "stop": true }`.
 
 ## Letting work through
 

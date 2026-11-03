@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.22.1 (2026-11-03): a full window no longer turns a warm cache cold
+
+- **A cache keeps the lifetime it was written with.** When a 5-hour or weekly window filled after
+  your last turn, line 2 switched straight to `cache cold, next turn rebuilds …`, because the
+  cache's lifetime was worked out from the windows as they stood now rather than when it was
+  written. An hour-long cache written inside the plan stays warm for its hour: line 2, the
+  heads-up and keep-warm all count it that way. Requests made past the limit, on usage credits,
+  still write five-minute caches.
+
 ## 0.22.0 (2026-11-02): switch an account off
 
 - **`guard.off` switches accounts off until a time.** A switched-off account holds every prompt,

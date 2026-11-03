@@ -1391,6 +1391,26 @@ test('keep-warm re-reads an idle hour-long cache at about 45 minutes, says so, a
   expect(forks.length).toBe(2)
 })
 
+test('a cache keeps the lifetime it was written with: the 5-hour window filling later does not turn it cold', { timeoutMs: 30_000 }, async ($, on) => {
+  const w = world(on)
+  engineBelow(on)
+  hintBelow(on)
+  await start($)
+  await measure($, w, 40, 3 * 3600)
+  await $.turn.start({ text: 'go', turnId: 't1' })
+  await step($, 't1', 0, 'high')
+  await $.turn.complete({ answer: 'done', durationMs: 4000, isAborted: false, turnId: 't1', reason: 'answer',
+    usage: { ...USAGE_ARGS, model: 'claude-opus-5-5' } })
+  // Ten minutes on, other sessions on the account fill the window. The hour-long cache is still there.
+  await w.clock.advance(10 * 60_000)
+  await measure($, w, 100, 3 * 3600)
+  await w.clock.advance(15_000)
+  const ui = await $.ui.mount({ plugin: 'g-line', surface: 'terminal', component: 'PromptHint',
+    props: { isDraft: false, isWorking: false, hint: '? for shortcuts' }, viewport: { columns: 200, rows: 40 } })
+  expect(await ui.find({ type: 'Text', text: /^cache warm ~4\dm/ })).toBeDefined()
+  await ui.unmount()
+})
+
 test('0.20: a re-read that finds no cache ends the stretch; the second time keep-warm is off for the session', { timeoutMs: 30_000 }, async ($, on) => {
   const w = world(on)
   w.config = { guard: { keep_warm: true } }

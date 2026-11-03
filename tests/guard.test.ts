@@ -3,7 +3,7 @@ import { expect, test } from 'claude-code/testing'
 import {
   KEEP_WARM_DEFAULTS, accountIdentity, accountKey, agentModel, cappedEffort, changeText, effortKeepsCache, bridgeDue, endText, evaluate, groupOf, hoursWords, liftsAt, guardForms, inHours, leaseFree,
   fiveHourLeftOf, localTime, parseGuard, parseHours, readBack, ruleText, seconds, simulated, stopText, tokenCount, WARM_MISS, warmDue, warmForms,
-  automaticTtl, compactDue, idleCompactionStoodDown, whyLines,
+  automaticTtl, cacheTtl, compactDue, idleCompactionStoodDown, whyLines,
 } from '../hooks/guard'
 import type { Facts, WarmFacts } from '../hooks/guard'
 
@@ -349,6 +349,17 @@ test('the automatic cache lifetime counts only plan windows, and a reset window 
   // A spent extra-usage cap leaves plan requests on the plan: still an hour.
   expect(automaticTtl([{ kind: 'five_hour', percentUsed: 30 }, { kind: 'spend_limit', percentUsed: 100 }], now)).toBe('1h')
   expect(automaticTtl([{ kind: 'spend_limit', percentUsed: 10 }], now)).toBe('5m')
+})
+
+test('a cache lives as long as it was written for, not as the windows stand now', () => {
+  const now = 10_000
+  const full = [{ kind: 'five_hour', percentUsed: 100, resetsAt: now + 3600 }]
+  expect(cacheTtl({ written: '1h' }, undefined, full, now)).toBe('1h')
+  expect(cacheTtl({}, undefined, full, now)).toBe('5m')
+  expect(cacheTtl(undefined, undefined, full, now)).toBe('5m')
+  // What a hit or miss taught, then the setting, beat the lifetime it was written with.
+  expect(cacheTtl({ written: '1h', learned: '5m' }, undefined, full, now)).toBe('5m')
+  expect(cacheTtl({ written: '5m' }, '1h', full, now)).toBe('1h')
 })
 
 test('keep-warm reads a five-hour window that reset since its reading as all left', () => {

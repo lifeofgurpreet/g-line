@@ -20,6 +20,11 @@ export type Snap = {
     /** TTL learned from a hit or miss after an idle gap. */
     learned?: '5m' | '1h'
     /**
+     * The TTL that request was written with, from the plan windows as they stood
+     * when it started. A window filling later doesn't shorten a cache already written.
+     */
+    written?: '5m' | '1h'
+    /**
      * Tokens the conversation was compacted to since that request: the cached
      * prefix is gone, and the next request writes the summary whatever the time.
      * 0 when a compaction was seen but not its size.

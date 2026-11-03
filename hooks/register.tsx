@@ -40,7 +40,7 @@ import type { PulseFeed, PulseItem, Shown } from './pulse'
 import { gitSegmentOf } from './core'
 import {
   AGENT_TYPE_MODELS, KEEP_WARM_DEFAULTS, accountIdentity, dateWords, accountKey, agentModel, cappedEffort, changeText, drainText, effortKeepsCache, bridgeDue, endText, epochOf, evaluate, groupOf, guardForms, liftsAt, inForceText, leaseFree, namesAccounts, readBack, ruleText, simulated, stopText,
-  resumeAt, fiveHourLeftOf, WARM_MISS, warmDue, warmForms, whyLines, automaticTtl, compactDue, idleCompactionStoodDown,
+  resumeAt, fiveHourLeftOf, WARM_MISS, warmDue, warmForms, whyLines, automaticTtl, cacheTtl, compactDue, idleCompactionStoodDown,
 } from './guard'
 import type { Effort, Facts, Simulation, Verdict, WarmCode, WindowName } from './guard'
 import {
@@ -384,7 +384,7 @@ export function payload(s: Snap, nowSeconds: number, ttl: '5m' | '1h' | undefine
       total_duration_ms: s.startedAt !== undefined ? nowSeconds * 1000 - s.startedAt : undefined }
   }
   if (s.cache?.cached) {
-    const effective = s.cache.learned ?? ttl ?? automaticTtl(s.rateLimits, nowSeconds)
+    const effective = cacheTtl(s.cache, ttl, s.rateLimits, nowSeconds)
     const expires = s.cache.lastAt + (effective === '1h' ? 3600 : 300)
     const compacted = s.cache.compactedTo !== undefined
     const moved = s.cache.accountChanged === true
@@ -1838,7 +1838,7 @@ async function keepWarm($: EngineInterface): Promise<void> {
   const t = touched as { session?: unknown } | undefined
   const fiveHourLeft = fiveHourLeftOf(s.rateLimits?.find(l => l.kind === 'five_hour'), now)
   const due = warmDue(k, {
-    now, lastAt: c.lastAt, ttl: c.learned ?? ttl ?? automaticTtl(s.rateLimits, now), prefix: c.prefix, compacted: c.compactedTo !== undefined,
+    now, lastAt: c.lastAt, ttl: cacheTtl(c, ttl, s.rateLimits, now), prefix: c.prefix, compacted: c.compactedTo !== undefined,
     // With `compact`, keep-warm holds big conversations too and stands idle compaction down instead.
     compactionCovers: !k.compact && idle !== undefined && c.prefix >= idle.minTokens, done: warmed, thisHour,
     fiveHourLeft, stopped: verdict.stop !== undefined, switchedOff: verdict.stop?.rule.off !== undefined,
@@ -2588,12 +2588,12 @@ export const register: Register = (on, options) => {
           if (u.cache_read_input_tokens > s.cache.prefix * 0.5) learned = '1h'
           else if (u.cache_creation_input_tokens > s.cache.prefix * 0.5) learned = '5m'
         }
-        const life = (learned ?? ttl ?? automaticTtl(s.rateLimits, started)) === '1h' ? 3600 : 300
+        const life = cacheTtl({ learned, written: s.cache?.written }, ttl, s.rateLimits, started) === '1h' ? 3600 : 300
         if (s.cache?.cached && gap > life && u.cache_creation_input_tokens > s.cache.prefix * 0.5) coldThisTurn = true
         if (s.cache?.accountChanged && u.cache_creation_input_tokens > s.cache.prefix * 0.5) coldThisTurn = true
         return { ...s, model: e.model, effort: typeof step.effort === 'string' ? step.effort : s.effort,
           effortSet: capped && typeof e.effort === 'string' && e.effort !== capped ? e.effort : undefined,
-          cache: { lastAt: started, cached, prefix, learned } }
+          cache: { lastAt: started, cached, prefix, learned, written: automaticTtl(s.rateLimits, started) } }
       })
       const cold = coldThisTurn
       // Why keep-warm didn't keep it, from what it saw while idle: on the receipt and in the day's tally.
