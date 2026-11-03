@@ -2452,7 +2452,7 @@ test('0.23: keep warm first: while keep-warm holds the cache with re-reads left,
   expect(run.forks).toBe(1)
   // The hold file the PreCompact command reads: a second in the future.
   const held = holdWrites(w).at(-1)
-  expect(Number(held?.text) > NOW + 49 * 60).toBe(true)
+  expect(/^\d+\n$/.test(held?.text ?? '') && Number(held?.text) > NOW + 49 * 60).toBe(true)
   expect(await line2Has($, /kept warm 1\/3/)).toBe(true)
   // The mod's own hook, where it is reached, defers it too, and says so once.
   const r = await $.session.compact({ trigger: 'auto', messages: SUMMARY } as never) as { skip?: string }

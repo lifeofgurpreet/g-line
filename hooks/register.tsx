@@ -676,8 +676,9 @@ async function holdCache($: EngineInterface, on: boolean, now: number): Promise<
   if (!path) return
   try {
     if (on && holdUntil - now < 60) {
-      await $.fs.write(path, `${now + 120}\n`)
-      holdUntil = now + 120
+      // Whole seconds: the PreCompact command compares them with `date +%s`.
+      await $.fs.write(path, `${Math.floor(now) + 120}\n`)
+      holdUntil = Math.floor(now) + 120
     } else if (!on && holdUntil) {
       holdUntil = 0
       await $.process.run(['rm', '-f', path], { timeoutMs: 2000 })

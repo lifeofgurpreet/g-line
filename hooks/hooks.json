@@ -19,7 +19,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "in=$(cat); case \"$in\" in *'\"agent_id\"'*) exit 0;; esac; s=$(printf '%s' \"$in\" | tr ',{}' '\\n\\n\\n' | sed -n 's/^ *\"session_id\" *: *\"\\([A-Za-z0-9_.-]*\\)\" *$/\\1/p' | head -n 1); f=\"$HOME/.cache/g-line/hold/$s\"; [ -n \"$s\" ] && [ -f \"$f\" ] || exit 0; u=$(head -c 20 \"$f\" | tr -dc 0-9); [ -n \"$u\" ] && [ \"$u\" -gt \"$(date +%s)\" ] || exit 0; date +%s > \"$f.deferred\"; printf '%s\\n' '{\"decision\":\"block\",\"reason\":\"g-line keep-warm is holding this idle conversation cache\"}'; exit 0"
+            "command": "in=$(cat); case \"$in\" in *'\"agent_id\"'*) exit 0;; esac; s=$(printf '%s' \"$in\" | tr ',{}' '\\n\\n\\n' | sed -n 's/^ *\"session_id\" *: *\"\\([A-Za-z0-9_.-]*\\)\" *$/\\1/p' | head -n 1); f=\"$HOME/.cache/g-line/hold/$s\"; [ -n \"$s\" ] && [ -f \"$f\" ] || exit 0; u=$(head -c 20 \"$f\" | cut -d. -f1 | tr -dc 0-9); [ -n \"$u\" ] && [ \"$u\" -gt \"$(date +%s)\" ] || exit 0; date +%s > \"$f.deferred\"; printf '%s\\n' '{\"decision\":\"block\",\"reason\":\"g-line keep-warm is holding this idle conversation cache\"}'; exit 0"
           }
         ]
       }
