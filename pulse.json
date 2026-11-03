@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-03T17:02:34Z",
+ "generated_at": "2026-11-03T17:35:29Z",
  "items": [
   {
    "title": "Google plans to make it easier to restrict its AI tools for students in early 2027, but says school…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-02T17:51:48Z",
    "text": "We asked GPT-6 Astra to edit Qwen3.5-0.8B weights to improve math. It directly changed only 0.016% of weights, fixing 0.8B's reasoning loops & improving math up to 6x and even instruction following 3x, without gradients or training. We call this Weight-Space Programming:…",
    "author_name": "Rikiya Takehi",
-   "likes": 52335,
+   "likes": 52554,
    "story": "Researchers say LLMs can be good at natively reading and writing neural network weights; GPT-6 Astra edited Qwen3.5-0.8B's weights to make it better at math"
   },
   {
@@ -28,13 +28,23 @@
    "text": "Added a warning to /schedule when a new cloud scheduled task gets connectors you did not ask for, with how to remove them · Added a check that asks before a web or shell tool call sends your account email address to the network · Added onFailure: \"block\" for Agent SDK hook callbacks, so a callback that fails blocks the action instead of letting it run · Added a notice in Claude Desktop's Code tab when your organization's remote managed settings haven't loaded for the session, and another once they do"
   },
   {
+   "title": "Well, turns out Qwen3.8-Flash-Next can do more than work with software tools, it can operate real r…",
+   "url": "https://x.com/QwenDevs/status/2117644199860601297",
+   "source": "𝕏 @QwenDevs",
+   "published_at": "2026-11-03T15:44:55Z",
+   "text": "Well, turns out Qwen3.8-Flash-Next can do more than work with software tools, it can operate real robots too. A group of Qwen developers from Tsinghua and UC Berkeley recently built uni-robot-agent, an open-source harness that connects general-purpose LLMs to robotic systems. It…",
+   "author_name": "Qwen Developers",
+   "likes": 231,
+   "story": "“Can Qwen directly control the robot as well as GPT-6 Astra?”"
+  },
+  {
    "title": "Today we are happy to share one of our first open research releases: Latent Sparse Attention (LSA),…",
    "url": "https://x.com/jcrwhittington/status/2117317159777177602",
    "source": "𝕏 @jcrwhittington",
    "published_at": "2026-11-02T18:05:23Z",
    "text": "Today we are happy to share one of our first open research releases: Latent Sparse Attention (LSA), a step towards subquadratic attention that matches accuracy of full attention at ultra-long context. Sparse attention attends to only a few tokens per query, but it has to find…",
    "author_name": "James Whittington",
-   "likes": 2709,
+   "likes": 2741,
    "story": "New sparse attention method for ultra-long context"
   },
   {
@@ -50,8 +60,8 @@
    "url": "https://honnibal.dev/blog/astra-read-write-misleading",
    "source": "Hacker News",
    "published_at": "2026-11-03T12:21:17Z",
-   "text": "643 points and 145 comments on Hacker News.",
-   "points": 643,
+   "text": "687 points and 160 comments on Hacker News.",
+   "points": 687,
    "discussion": "https://news.ycombinator.com/item?id=50351111"
   },
   {
@@ -61,7 +71,7 @@
    "published_at": "2026-11-03T12:36:01Z",
    "text": "Fable 5.5 vs GPT 6.2 Astra vs Opus 5.5 vs GPT 6 Astra same prompt: create an SVG of a PS5 controller the jump from the older models is actually crazy. the latest Fable and Astra models are really on another level, especially with the details and overall design. Fable 5.5 and…",
    "author_name": "Marcel",
-   "likes": 207,
+   "likes": 224,
    "story": "Fable 5.5 vs GPT 6.2 Astra - SVG of a PS5 Controller"
   },
   {
@@ -86,27 +96,17 @@
    "published_at": "2026-11-03T02:52:45Z",
    "text": "OpenAI has partnered with Cathedral systems. This is the cybersecurity startup founded by former DOGE staffers who very recently hacked Anthropic's Slack.",
    "author_name": "Andrew Curran",
-   "likes": 307,
+   "likes": 309,
    "story": "OpenAI partners with Cathedral to test its security defenses and revamps its Security Bug Bounty program, including quadrupling rewards for critical findings"
   },
   {
-   "title": "Quili AI",
-   "url": "https://www.quili.ai/",
+   "title": "OpenAI seems to be silently re-enabling model training on Codex chats",
+   "url": "https://news.ycombinator.com/item?id=50352757",
    "source": "Hacker News",
-   "published_at": "2026-11-03T15:49:02Z",
-   "text": "72 points and 39 comments on Hacker News.",
-   "points": 72,
-   "discussion": "https://news.ycombinator.com/item?id=50353475"
-  },
-  {
-   "title": "NOMENCLATURE WATCH: Just got my first email from OpenAI referring to their data centers as 'compute…",
-   "url": "https://x.com/CaseyNewton/status/2117303868694700525",
-   "source": "𝕏 @CaseyNewton",
-   "published_at": "2026-11-02T17:12:34Z",
-   "text": "NOMENCLATURE WATCH: Just got my first email from OpenAI referring to their data centers as 'compute campuses'",
-   "author_name": "Casey Newton",
-   "likes": 469,
-   "story": "OpenAI launches the Grid Protectors Program, a US effort for its future data center campuses meant “to reduce electricity demand when the grid is under strain”"
+   "published_at": "2026-11-03T14:53:41Z",
+   "text": "127 points and 44 comments on Hacker News.",
+   "points": 127,
+   "discussion": "https://news.ycombinator.com/item?id=50352757"
   },
   {
    "title": "OpenAI hires ex-US Army Secretary Dan Driscoll to oversee national security modernization, as it pu…",
@@ -117,13 +117,13 @@
    "via": "Techmeme"
   },
   {
-   "title": "OpenAI seems to be silently re-enabling model training on Codex chats",
-   "url": "https://news.ycombinator.com/item?id=50352757",
+   "title": "Quili AI",
+   "url": "https://www.quili.ai/",
    "source": "Hacker News",
-   "published_at": "2026-11-03T14:53:41Z",
-   "text": "86 points and 31 comments on Hacker News.",
-   "points": 86,
-   "discussion": "https://news.ycombinator.com/item?id=50352757"
+   "published_at": "2026-11-03T15:49:02Z",
+   "text": "78 points and 46 comments on Hacker News.",
+   "points": 78,
+   "discussion": "https://news.ycombinator.com/item?id=50353475"
   },
   {
    "title": "The U.S. Census Bureau and “Super Intelligence”",
