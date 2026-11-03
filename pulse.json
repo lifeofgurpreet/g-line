@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-03T07:21:05Z",
+ "generated_at": "2026-11-03T07:52:58Z",
  "items": [
   {
    "title": "Researchers say LLMs can be good at natively reading and writing neural network weights; GPT-6 Astr…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-02T14:03:08Z",
    "text": "Your Harness. You Define It. Meet Creator Mode in DeepSeek Harness. Turn ideas into plugins that you can use, from a design workspace to a sandbox game or a 3D LLM visualizer. What will you create?",
    "author_name": "DeepSeek Harness",
-   "likes": 21051,
+   "likes": 21232,
    "story": "DeepSeek releases a “creator mode” that allows DeepSeek Harness users to quickly create custom plugins, like a 3D model renderer and a video editing workbench"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-11-02T14:03:44Z",
    "text": "Got his first bill from Anthropic.",
    "author_name": "Quinn Nelson",
-   "likes": 7150,
+   "likes": 7282,
    "story": "Elon Musk says the cost of serving Grok Bot was “unsustainably high relative to revenue”, in response to subscribers complaining about SpaceX's usage limits"
   },
   {
@@ -50,8 +50,8 @@
    "url": "https://www.techpolicy.press/the-sec-should-block-anthropics-ipo-to-protect-the-public/",
    "source": "Hacker News",
    "published_at": "2026-11-02T22:30:47Z",
-   "text": "305 points and 232 comments on Hacker News.",
-   "points": 305,
+   "text": "314 points and 234 comments on Hacker News.",
+   "points": 314,
    "discussion": "https://news.ycombinator.com/item?id=50344919"
   },
   {
@@ -61,7 +61,7 @@
    "published_at": "2026-11-02T18:05:23Z",
    "text": "Today we are happy to share one of our first open research releases: Latent Sparse Attention (LSA), a step towards subquadratic attention that matches accuracy of full attention at ultra-long context. Sparse attention attends to only a few tokens per query, but it has to find…",
    "author_name": "James Whittington",
-   "likes": 1889,
+   "likes": 1941,
    "story": "New sparse attention method for ultra-long context"
   },
   {
@@ -80,23 +80,33 @@
    "via": "Techmeme"
   },
   {
-   "title": "When you think about the Labs' weird approach to software (sudden changes, bad communication), it i…",
-   "url": "https://x.com/emollick/status/2117279363175739630",
-   "source": "𝕏 @emollick",
-   "published_at": "2026-11-02T15:35:11Z",
-   "text": "When you think about the Labs' weird approach to software (sudden changes, bad communication), it is worth remembering that a core belief is that these products are a temporary thing they have to do to raise money for a couple years until \"true\" AGI makes all products obsolete.",
-   "author_name": "Ethan Mollick",
-   "likes": 767,
-   "story": "Email: OpenAI plans to merge ChatGPT's Chat and Work tabs on desktop for select users before rolling it out widely; Codex “will remain a separate experience”"
+   "title": "OpenAI has partnered with Cathedral systems. This is the cybersecurity startup founded by former DO…",
+   "url": "https://x.com/AndrewCurran_/status/2117449875675889821",
+   "source": "𝕏 @AndrewCurran_",
+   "published_at": "2026-11-03T02:52:45Z",
+   "text": "OpenAI has partnered with Cathedral systems. This is the cybersecurity startup founded by former DOGE staffers who very recently hacked Anthropic's Slack.",
+   "author_name": "Andrew Curran",
+   "likes": 240,
+   "story": "OpenAI partners with Cathedral to test its security defenses and revamps its Security Bug Bounty program, including quadrupling rewards for critical findings"
   },
   {
    "title": "Scaling Git at OpenAI",
    "url": "https://openai.com/index/scaling-git-at-openai/",
    "source": "Hacker News",
    "published_at": "2026-11-02T23:47:56Z",
-   "text": "179 points and 90 comments on Hacker News.",
-   "points": 179,
+   "text": "188 points and 104 comments on Hacker News.",
+   "points": 188,
    "discussion": "https://news.ycombinator.com/item?id=50345924"
+  },
+  {
+   "title": "When you think about the Labs' weird approach to software (sudden changes, bad communication), it i…",
+   "url": "https://x.com/emollick/status/2117279363175739630",
+   "source": "𝕏 @emollick",
+   "published_at": "2026-11-02T15:35:11Z",
+   "text": "When you think about the Labs' weird approach to software (sudden changes, bad communication), it is worth remembering that a core belief is that these products are a temporary thing they have to do to raise money for a couple years until \"true\" AGI makes all products obsolete.",
+   "author_name": "Ethan Mollick",
+   "likes": 780,
+   "story": "Email: OpenAI plans to merge ChatGPT's Chat and Work tabs on desktop for select users before rolling it out widely; Codex “will remain a separate experience”"
   },
   {
    "title": "NOMENCLATURE WATCH: Just got my first email from OpenAI referring to their data centers as 'compute…",
@@ -105,7 +115,7 @@
    "published_at": "2026-11-02T17:12:34Z",
    "text": "NOMENCLATURE WATCH: Just got my first email from OpenAI referring to their data centers as 'compute campuses'",
    "author_name": "Casey Newton",
-   "likes": 450,
+   "likes": 452,
    "story": "OpenAI launches the Grid Protectors Program, a US effort for its future data center campuses meant “to reduce electricity demand when the grid is under strain”"
   },
   {
@@ -115,7 +125,7 @@
    "published_at": "2026-11-02T14:09:54Z",
    "text": "763B parameters, compressed to 1 bit per weight. Introducing DeepSeek-V4.1-Flash-1017 GSQ-RCO Coder, a frontier-scale model tailored for coding and agentic workflows. Benchmarks, demos and download link below. Follow us for updates.",
    "author_name": "Michael Helcig",
-   "likes": 924,
+   "likes": 928,
    "story": "[Release] ISTA DeepSeek-V4.1-Flash-1017 GSQ-RCO Coder: a 763B model at 1 bit per parameter"
   },
   {
@@ -125,15 +135,6 @@
    "published_at": "2026-11-02T17:05:51Z",
    "text": "Anthropic confirms new Claude Code limits “to steer it away from recreating someone else's specific game”, saying IP infringement is against its usage policy. Meanwhile, we now have direct reports of reverse engineering efforts being blocked, while online complaints grow.",
    "via": "Techmeme"
-  },
-  {
-   "title": "Egoless Mathematics in the AI Era",
-   "url": "https://terrytao.wordpress.com/2026/11/02/egoless-mathematics-in-the-ai-era/",
-   "source": "Hacker News",
-   "published_at": "2026-11-02T18:54:44Z",
-   "text": "148 points and 99 comments on Hacker News.",
-   "points": 148,
-   "discussion": "https://news.ycombinator.com/item?id=50341736"
   }
  ],
  "sources": "curated, Techmeme, X (found via Techmeme, Reddit, the Internet Archive), Claude Code releases, Anthropic, Hacker News, Simon Willison"
