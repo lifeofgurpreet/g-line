@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-03T01:21:45Z",
+ "generated_at": "2026-11-03T01:54:53Z",
  "items": [
   {
    "title": "S-1 update: Anthropic reports Q3 revenue up 12x YoY to nearly $17B, a $23.3B net loss, up from $12.…",
@@ -17,15 +17,15 @@
    "published_at": "2026-11-02T17:51:48Z",
    "text": "We asked GPT-6 Astra to edit Qwen3.5-0.8B weights to improve math. It directly changed only 0.016% of weights, fixing 0.8B's reasoning loops & improving math up to 6x and even instruction following 3x, without gradients or training. We call this Weight-Space Programming:…",
    "author_name": "Rikiya Takehi",
-   "likes": 35156,
+   "likes": 36559,
    "story": "Researchers say LLMs can be good at natively reading and writing neural network weights; GPT-6 Astra edited Qwen3.5-0.8B's weights to make it better at math"
   },
   {
-   "title": "Claude Code 2.1.316 released",
-   "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.316",
+   "title": "Claude Code 2.1.317 released",
+   "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.317",
    "source": "Claude Code releases",
-   "published_at": "2026-10-31T01:01:35Z",
-   "text": "Added CLAUDE_CODE_DISABLE_ULTRATHINK, which turns the ultrathink keyword off · Added pooled group budgets to the Claude apps gateway: one monthly budget that a group's members share, on top of each member's own limit, set with pooled_budget on the spend limits admin API · Added CLAUDE_CODE_DISABLE_LOOPED_CROSS_CERT_DROP to keep system cross-certificates that certify each other in a loop, for servers whose private CA needs one · Added CLAUDE_CODE_SUBAGENT_EFFORT to set the effort level subagents run at when nothing else names one, instead of inheriting the session's"
+   "published_at": "2026-11-03T01:25:46Z",
+   "text": "Added a warning to /schedule when a new cloud scheduled task gets connectors you did not ask for, with how to remove them · Added a check that asks before a web or shell tool call sends your account email address to the network · Added onFailure: \"block\" for Agent SDK hook callbacks, so a callback that fails blocks the action instead of letting it run · Added a notice in Claude Desktop's Code tab when your organization's remote managed settings haven't loaded for the session, and another once they do"
   },
   {
    "title": "Your Harness. You Define It. Meet Creator Mode in DeepSeek Harness. Turn ideas into plugins that yo…",
@@ -34,42 +34,8 @@
    "published_at": "2026-11-02T14:03:08Z",
    "text": "Your Harness. You Define It. Meet Creator Mode in DeepSeek Harness. Turn ideas into plugins that you can use, from a design workspace to a sandbox game or a 3D LLM visualizer. What will you create?",
    "author_name": "DeepSeek Harness",
-   "likes": 18455,
+   "likes": 18726,
    "story": "DeepSeek releases a “creator mode” that allows DeepSeek Harness users to quickly create custom plugins, like a 3D model renderer and a video editing workbench"
-  },
-  {
-   "title": "Marvell agrees to acquire optical components maker Lumentum in a $115B all-stock deal, as it aims t…",
-   "url": "https://www.reuters.com/legal/transactional/marvell-buy-lumentum-115-billion-deal-ai-data-center-bet-2026-11-02/",
-   "source": "Anhata Rooprai / Reuters",
-   "published_at": "2026-11-02T12:21:16Z",
-   "text": "Marvell agrees to acquire optical components maker Lumentum in a $115B all-stock deal, as it aims to rival Broadcom; Nvidia invested $2B in each company in 2026. Marvell Technology (MRVL.O) is buying optical components maker Lumentum (LITE.O) in a $115 billion all-stock deal, including debt …",
-   "via": "Techmeme"
-  },
-  {
-   "title": "Astra can read and write weights to improve Qwen",
-   "url": "https://rikiyat.github.io/blog/weight-space-programming/",
-   "source": "Hacker News",
-   "published_at": "2026-11-02T18:21:28Z",
-   "text": "1893 points and 602 comments on Hacker News.",
-   "points": 1893,
-   "discussion": "https://news.ycombinator.com/item?id=50341174"
-  },
-  {
-   "title": "Great to see high quality benchmarks with headroom and look at that cost line for Carbon🚀",
-   "url": "https://x.com/sundarpichai/status/2117113121102045347",
-   "source": "𝕏 @sundarpichai",
-   "published_at": "2026-11-02T04:34:36Z",
-   "text": "Great to see high quality benchmarks with headroom and look at that cost line for Carbon🚀",
-   "author_name": "Sundar Pichai",
-   "likes": 4136,
-   "story": "SemiAnalysis launches GDPx, an AI frontier model benchmark measuring 11 domains, including chip design, cybersecurity, and RSI; Opus 5.5 tops with a 12% score"
-  },
-  {
-   "title": "The U.S. Census Bureau and “Super Intelligence”",
-   "url": "https://simonwillison.net/2026/Nov/2/census-bureau-super-intelligence/",
-   "source": "Simon Willison's weblog",
-   "published_at": "2026-11-02T13:31:26Z",
-   "text": "I was reminded today of AI Adoption Rate Trending Down for Large Companies , a chart produced by Apollo Global Management in September 2025, which appeared to show a slowdown in U.S. corporate AI adoption based on numbers collected by the U.S. Census Bureau. At the time I used that chart to demonstrate GPT-5 data analysis , and then to experiment with Claude's new Code Interpreter . I decided to try running those numbers again to see what had changed over the past year, and in doing so learned that the Bureau has fallen foul of Executive Order 14434 , aka the asinine Super Intelligence one."
   },
   {
    "title": "Amended S-1: Anthropic says it has purchased commitments and lease agreements of $895.4B, “substant…",
@@ -80,13 +46,47 @@
    "via": "Techmeme"
   },
   {
+   "title": "Astra can read and write weights to improve Qwen",
+   "url": "https://rikiyat.github.io/blog/weight-space-programming/",
+   "source": "Hacker News",
+   "published_at": "2026-11-02T18:21:28Z",
+   "text": "1931 points and 616 comments on Hacker News.",
+   "points": 1931,
+   "discussion": "https://news.ycombinator.com/item?id=50341174"
+  },
+  {
+   "title": "Great to see high quality benchmarks with headroom and look at that cost line for Carbon🚀",
+   "url": "https://x.com/sundarpichai/status/2117113121102045347",
+   "source": "𝕏 @sundarpichai",
+   "published_at": "2026-11-02T04:34:36Z",
+   "text": "Great to see high quality benchmarks with headroom and look at that cost line for Carbon🚀",
+   "author_name": "Sundar Pichai",
+   "likes": 4153,
+   "story": "SemiAnalysis launches GDPx, an AI frontier model benchmark measuring 11 domains, including chip design, cybersecurity, and RSI; Opus 5.5 tops with a 12% score"
+  },
+  {
+   "title": "The U.S. Census Bureau and “Super Intelligence”",
+   "url": "https://simonwillison.net/2026/Nov/2/census-bureau-super-intelligence/",
+   "source": "Simon Willison's weblog",
+   "published_at": "2026-11-02T13:31:26Z",
+   "text": "I was reminded today of AI Adoption Rate Trending Down for Large Companies , a chart produced by Apollo Global Management in September 2025, which appeared to show a slowdown in U.S. corporate AI adoption based on numbers collected by the U.S. Census Bureau. At the time I used that chart to demonstrate GPT-5 data analysis , and then to experiment with Claude's new Code Interpreter . I decided to try running those numbers again to see what had changed over the past year, and in doing so learned that the Bureau has fallen foul of Executive Order 14434 , aka the asinine Super Intelligence one."
+  },
+  {
+   "title": "Marvell agrees to acquire optical components maker Lumentum in a $115B all-stock deal, as it aims t…",
+   "url": "https://www.reuters.com/legal/transactional/marvell-buy-lumentum-115-billion-deal-ai-data-center-bet-2026-11-02/",
+   "source": "Anhata Rooprai / Reuters",
+   "published_at": "2026-11-02T12:21:16Z",
+   "text": "Marvell agrees to acquire optical components maker Lumentum in a $115B all-stock deal, as it aims to rival Broadcom; Nvidia invested $2B in each company in 2026. Marvell Technology (MRVL.O) is buying optical components maker Lumentum (LITE.O) in a $115 billion all-stock deal, including debt …",
+   "via": "Techmeme"
+  },
+  {
    "title": "Got his first bill from Anthropic.",
    "url": "https://x.com/SnazzyLabs/status/2117256345967874077",
    "source": "𝕏 @SnazzyLabs",
    "published_at": "2026-11-02T14:03:44Z",
    "text": "Got his first bill from Anthropic.",
    "author_name": "Quinn Nelson",
-   "likes": 5098,
+   "likes": 5422,
    "story": "Elon Musk says the cost of serving Grok Bot was “unsustainably high relative to revenue”, in response to subscribers complaining about SpaceX's usage limits"
   },
   {
@@ -94,8 +94,8 @@
    "url": "https://www.techpolicy.press/the-sec-should-block-anthropics-ipo-to-protect-the-public/",
    "source": "Hacker News",
    "published_at": "2026-11-02T22:30:47Z",
-   "text": "176 points and 108 comments on Hacker News.",
-   "points": 176,
+   "text": "192 points and 123 comments on Hacker News.",
+   "points": 192,
    "discussion": "https://news.ycombinator.com/item?id=50344919"
   },
   {
@@ -105,7 +105,7 @@
    "published_at": "2026-11-02T18:05:23Z",
    "text": "Today we are happy to share one of our first open research releases: Latent Sparse Attention (LSA), a step towards subquadratic attention that matches accuracy of full attention at ultra-long context. Sparse attention attends to only a few tokens per query, but it has to find…",
    "author_name": "James Whittington",
-   "likes": 1129,
+   "likes": 1169,
    "story": "New sparse attention method for ultra-long context"
   },
   {
@@ -115,7 +115,7 @@
    "published_at": "2026-11-02T15:35:11Z",
    "text": "When you think about the Labs' weird approach to software (sudden changes, bad communication), it is worth remembering that a core belief is that these products are a temporary thing they have to do to raise money for a couple years until \"true\" AGI makes all products obsolete.",
    "author_name": "Ethan Mollick",
-   "likes": 620,
+   "likes": 639,
    "story": "Email: OpenAI plans to merge ChatGPT's Chat and Work tabs on desktop for select users before rolling it out widely; Codex “will remain a separate experience”"
   },
   {
@@ -125,7 +125,7 @@
    "published_at": "2026-11-02T17:12:34Z",
    "text": "NOMENCLATURE WATCH: Just got my first email from OpenAI referring to their data centers as 'compute campuses'",
    "author_name": "Casey Newton",
-   "likes": 398,
+   "likes": 404,
    "story": "OpenAI launches the Grid Protectors Program, a US effort for its future data center campuses meant “to reduce electricity demand when the grid is under strain”"
   },
   {
@@ -135,7 +135,7 @@
    "published_at": "2026-11-02T14:09:54Z",
    "text": "763B parameters, compressed to 1 bit per weight. Introducing DeepSeek-V4.1-Flash-1017 GSQ-RCO Coder, a frontier-scale model tailored for coding and agentic workflows. Benchmarks, demos and download link below. Follow us for updates.",
    "author_name": "Michael Helcig",
-   "likes": 814,
+   "likes": 833,
    "story": "[Release] ISTA DeepSeek-V4.1-Flash-1017 GSQ-RCO Coder: a 763B model at 1 bit per parameter"
   }
  ],
