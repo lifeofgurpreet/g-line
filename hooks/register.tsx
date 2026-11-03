@@ -2763,8 +2763,13 @@ export const register: Register = (on, options) => {
         const life = cacheTtl({ learned, written: s.cache?.written }, ttl, s.rateLimits, started) === '1h' ? 3600 : 300
         if (s.cache?.cached && gap > life && u.cache_creation_input_tokens > s.cache.prefix * 0.5) coldThisTurn = true
         if (s.cache?.accountChanged && u.cache_creation_input_tokens > s.cache.prefix * 0.5) coldThisTurn = true
-        return { ...s, model: e.model, effort: typeof step.effort === 'string' ? step.effort : s.effort,
-          effortSet: capped && typeof e.effort === 'string' && e.effort !== capped ? e.effort : undefined,
+        // The level a turn's first request names stands for the whole turn: Claude Code holds it
+        // through the tool steps, and a step's `effort` past the first is the setting as it
+        // stands now (another session's `/effort`, a settings reload), not what is sent.
+        const first = e.index === 0 || s.effort === undefined
+        return { ...s, model: e.model,
+          effort: first ? (typeof step.effort === 'string' ? step.effort : undefined) : s.effort,
+          effortSet: first ? (capped && typeof e.effort === 'string' && e.effort !== capped ? e.effort : undefined) : s.effortSet,
           cache: { lastAt: started, cached, prefix, learned, written: writtenTtl(s.rateLimits, started) } }
       })
       const cold = coldThisTurn

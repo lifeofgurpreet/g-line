@@ -25,6 +25,10 @@ can see which stage an idle conversation is in.
   `compacted by g-line`.
 - `/g-line guard why` names the stage on keep-warm's line (`kept warm 2/3, Claude Code's idle
   compaction deferred …`, `kept warm 3/3, handed to Claude Code …`).
+- **Line 2's effort is the one the turn runs at.** Claude Code holds a turn's effort through its
+  tool steps, but each step reports the setting as it stands now, so a `/effort` saved by another
+  session mid-turn turned line 2 to `medium` while the turn ran on at `xhigh`. Line 2 now takes
+  the level from the turn's first request.
 - Claude Code's `idleCompaction` setting stays on: g-line builds on it and never needs it off.
   `"compact": false` neither defers nor compacts, and stands keep-warm aside where Claude Code
   compacts idle conversations itself.

@@ -2543,3 +2543,24 @@ test('0.23: a turn lets go of the hold', { timeoutMs: 30_000 }, async ($, on) =>
   await $.turn.start({ text: 'again', turnId: 't2' })
   expect(w.files[HOLD]).toBeUndefined()
 })
+
+test('0.23: line 2 shows the effort the turn runs at, not a setting changed under it between tool steps', { timeoutMs: 30_000 }, async ($, on) => {
+  const w = world(on)
+  hintBelow(on)
+  engineBelow(on)
+  await start($)
+  await measure($, w, 27)
+  await $.turn.start({ text: 'go', turnId: 't1' })
+  await step($, 't1', 0, 'xhigh')
+  // Another session saved `/effort medium` mid-turn: Claude Code keeps xhigh through the tool steps.
+  await step($, 't1', 1, 'medium')
+  await step($, 't1', 2, 'medium')
+  expect(await line2Has($, /xhigh/)).toBe(true)
+  expect(await line2Has($, /medium/)).toBe(false)
+  await $.turn.complete({ answer: 'done', durationMs: 4000, isAborted: false, turnId: 't1', reason: 'answer',
+    usage: { ...USAGE_ARGS, model: 'claude-opus-5-5' } })
+  // The next turn's first request names the new level, and it stands from there.
+  await $.turn.start({ text: 'again', turnId: 't2' })
+  await step($, 't2', 0, 'medium')
+  expect(await line2Has($, /medium/)).toBe(true)
+})
