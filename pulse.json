@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-03T23:39:03Z",
+ "generated_at": "2026-11-04T00:12:21Z",
  "items": [
   {
    "title": "Google plans to make it easier to restrict its AI tools for students in early 2027, but says school…",
@@ -17,15 +17,15 @@
    "published_at": "2026-11-03T15:03:52Z",
    "text": "7 BILLION DOLLAR crypto hack came from a homebrew install from someone tryna vibecode something 😭",
    "author_name": "ashen",
-   "likes": 8533,
+   "likes": 8623,
    "story": "Binance says North Korean hackers stole $6.3B through a months-long scheme with fake LinkedIn job interviews and an ad campaign to deliver malicious software"
   },
   {
-   "title": "Claude Code 2.1.317 released",
-   "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.317",
+   "title": "Claude Code 2.1.318 released",
+   "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.318",
    "source": "Claude Code releases",
-   "published_at": "2026-11-03T01:25:46Z",
-   "text": "Added a warning to /schedule when a new cloud scheduled task gets connectors you did not ask for, with how to remove them · Added a check that asks before a web or shell tool call sends your account email address to the network · Added onFailure: \"block\" for Agent SDK hook callbacks, so a callback that fails blocks the action instead of letting it run · Added a notice in Claude Desktop's Code tab when your organization's remote managed settings haven't loaded for the session, and another once they do"
+   "published_at": "2026-11-04T00:01:03Z",
+   "text": "Added a record of your answer when Claude Code asks to turn on the mods it writes in a session · Added assume_role on mantle upstreams of the Claude apps gateway, for a role in another AWS account and for per-developer AWS cost attribution · Added an effort option to a mod's $.model.fork, so a quick side job can run at low whatever effort the session uses; the result reports the effort sent · Added the date a stored claude.ai sign-in ends to claude auth status (loginExpiresAt) and to claude -p JSON results (credential_expires_at)"
   },
   {
    "title": "Apple Intelligence in China, redesigned Health app, AI listening features on the Apple Watch are al…",
@@ -34,7 +34,7 @@
    "published_at": "2026-11-03T18:29:54Z",
    "text": "Apple Intelligence in China, redesigned Health app, AI listening features on the Apple Watch are all in the new betas.",
    "author_name": "Mark Gurman",
-   "likes": 403,
+   "likes": 414,
    "story": "Apple opens Siri AI to all developers, letting any app on iOS 27.3 beta and other 27.3 OS betas bring its content and actions into Siri AI by using App Intents",
    "links": [
     "https://www.bloomberg.com/news/articles/2026-11-03/apple-releases-ios-27-3-beta-with-watch-ai-listening-tools-health-app-china-ai?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc5MzczMDU5MCwiZXhwIjoxNzk0MzM1MzkwLCJhcnRpY2xlSWQiOiJUTlhWQTJOM04wOUowMCIsImJjb25uZWN0SWQiOiJDNEVEQ0FFMUZBMDU0MEJFQTI0QTlGMjExQzFFOTA4MCJ9.7fxypbPrSvvjnL8axvz4558x4pLkCOGmDrxk0Q0E3l0"
@@ -53,8 +53,8 @@
    "url": "https://github.com/postmanlabs/postman-app-support/issues/14370",
    "source": "Hacker News",
    "published_at": "2026-11-03T17:22:37Z",
-   "text": "951 points and 309 comments on Hacker News.",
-   "points": 951,
+   "text": "970 points and 319 comments on Hacker News.",
+   "points": 970,
    "discussion": "https://news.ycombinator.com/item?id=50354960"
   },
   {
@@ -64,7 +64,7 @@
    "published_at": "2026-11-03T15:44:55Z",
    "text": "Well, turns out Qwen3.8-Flash-Next can do more than work with software tools, it can operate real robots too. A group of Qwen developers from Tsinghua and UC Berkeley recently built uni-robot-agent, an open-source harness that connects general-purpose LLMs to robotic systems. It…",
    "author_name": "Qwen Developers",
-   "likes": 360,
+   "likes": 374,
    "story": "“Can Qwen directly control the robot as well as GPT-6 Astra?”"
   },
   {
@@ -89,7 +89,7 @@
    "published_at": "2026-11-03T02:52:45Z",
    "text": "OpenAI has partnered with Cathedral systems. This is the cybersecurity startup founded by former DOGE staffers who very recently hacked Anthropic's Slack.",
    "author_name": "Andrew Curran",
-   "likes": 354,
+   "likes": 356,
    "story": "OpenAI partners with Cathedral to test its security defenses and revamps its Security Bug Bounty program, including quadrupling rewards for critical findings"
   },
   {
@@ -97,16 +97,16 @@
    "url": "https://arxiv.org/abs/2605.29713",
    "source": "Hacker News",
    "published_at": "2026-11-03T21:40:53Z",
-   "text": "138 points and 16 comments on Hacker News.",
-   "points": 138,
+   "text": "169 points and 23 comments on Hacker News.",
+   "points": 169,
    "discussion": "https://news.ycombinator.com/item?id=50358582"
   },
   {
-   "title": "OpenAI hires ex-US Army Secretary Dan Driscoll to oversee national security modernization, as it pu…",
-   "url": "https://www.wsj.com/politics/national-security/openai-hires-former-army-secretary-dan-driscoll-to-cybersecurity-role-0e5cc0a1?st=cfNEPb&reflink=desktopwebshare_permalink",
-   "source": "Gareth Vipers / Wall Street…",
-   "published_at": "2026-11-03T11:25:49Z",
-   "text": "OpenAI hires ex-US Army Secretary Dan Driscoll to oversee national security modernization, as it pushes to secure government contracts and shape military policy. Driscoll will advise on ways AI could bolster U.S. security capabilities and cyber defenses — OpenAI has appointed former …",
+   "title": "Anthropic releases FlashProve, an open-source prototype that cryptographically verifies an AI respo…",
+   "url": "https://www.anthropic.com/research/provable-inference",
+   "source": "Anthropic",
+   "published_at": "2026-11-03T21:11:18Z",
+   "text": "Anthropic releases FlashProve, an open-source prototype that cryptographically verifies an AI response came from a given model, not one that a router swapped in. Roy Rinberg (Anthropic), Alex Allain (Anthropic); Alessandro Chiesa (EPFL, StarkWare), Miranda Christ (MIT, RESI), Rahul Dalal …",
    "via": "Techmeme"
   },
   {
@@ -114,8 +114,8 @@
    "url": "https://asia.nikkei.com/business/technology/artificial-intelligence/us-tech-giants-hidden-ai-debt-swells-90-to-3.2tn-in-6-months",
    "source": "Hacker News",
    "published_at": "2026-11-03T21:26:44Z",
-   "text": "109 points and 44 comments on Hacker News.",
-   "points": 109,
+   "text": "144 points and 50 comments on Hacker News.",
+   "points": 144,
    "discussion": "https://news.ycombinator.com/item?id=50358422"
   },
   {
@@ -126,11 +126,11 @@
    "text": "I was reminded today of AI Adoption Rate Trending Down for Large Companies , a chart produced by Apollo Global Management in September 2025, which appeared to show a slowdown in U.S. corporate AI adoption based on numbers collected by the U.S. Census Bureau. At the time I used that chart to demonstrate GPT-5 data analysis , and then to experiment with Claude's new Code Interpreter . I decided to try running those numbers again to see what had changed over the past year, and in doing so learned that the Bureau has fallen foul of Executive Order 14434 , aka the asinine Super Intelligence one."
   },
   {
-   "title": "Anthropic releases FlashProve, an open-source prototype that cryptographically verifies an AI respo…",
-   "url": "https://www.anthropic.com/research/provable-inference",
-   "source": "Anthropic",
-   "published_at": "2026-11-03T21:11:18Z",
-   "text": "Anthropic releases FlashProve, an open-source prototype that cryptographically verifies an AI response came from a given model, not one that a router swapped in. Roy Rinberg (Anthropic), Alex Allain (Anthropic); Alessandro Chiesa (EPFL, StarkWare), Miranda Christ (MIT, RESI), Rahul Dalal …",
+   "title": "OpenAI hires ex-US Army Secretary Dan Driscoll to oversee national security modernization, as it pu…",
+   "url": "https://www.wsj.com/politics/national-security/openai-hires-former-army-secretary-dan-driscoll-to-cybersecurity-role-0e5cc0a1?st=cfNEPb&reflink=desktopwebshare_permalink",
+   "source": "Gareth Vipers / Wall Street…",
+   "published_at": "2026-11-03T11:25:49Z",
+   "text": "OpenAI hires ex-US Army Secretary Dan Driscoll to oversee national security modernization, as it pushes to secure government contracts and shape military policy. Driscoll will advise on ways AI could bolster U.S. security capabilities and cyber defenses — OpenAI has appointed former …",
    "via": "Techmeme"
   }
  ],
