@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-04T07:46:44Z",
+ "generated_at": "2026-11-04T08:18:49Z",
  "items": [
   {
    "title": "Google says AI tools for K-12 students will be off by default in 2027; schools that block AI entire…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-04T01:40:12Z",
    "text": "People should always be in control of the future. OpenAI is against the notion that it would be acceptable for people to be relegated to a role of doing things that “AI systems think makes sense to reward in humans”. People should not cede control of the future to…",
    "author_name": "Ram Altman",
-   "likes": 11691,
+   "likes": 12158,
    "story": "Sam Altman: People should not cede control of the future to superintelligence, and that requirement should ultimately constrain AI progress."
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-11-03T21:33:33Z",
    "text": "Friday was my last day at Anthropic. Two years ago, when Claude Code was a small internal tool, I asked it to build an RL env. I steered it for tens of hours but never manually wrote a line of code. It worked, I was hooked, and I joined the team. When we first launched, most…",
    "author_name": "cat",
-   "likes": 10216,
+   "likes": 10456,
    "story": "Cat Wu, product lead for Claude Code and Cowork, has left Anthropic; Thariq Shihipar, who worked on Claude Code, announced his departure last month"
   },
   {
@@ -50,8 +50,8 @@
    "url": "https://github.com/postmanlabs/postman-app-support/issues/14370",
    "source": "Hacker News",
    "published_at": "2026-11-03T17:22:37Z",
-   "text": "1201 points and 392 comments on Hacker News.",
-   "points": 1201,
+   "text": "1214 points and 396 comments on Hacker News.",
+   "points": 1214,
    "discussion": "https://news.ycombinator.com/item?id=50354960"
   },
   {
@@ -61,7 +61,7 @@
    "published_at": "2026-11-03T15:03:52Z",
    "text": "7 BILLION DOLLAR crypto hack came from a homebrew install from someone tryna vibecode something 😭",
    "author_name": "ashen",
-   "likes": 9519,
+   "likes": 9551,
    "story": "Binance says North Korean hackers stole $6.3B through a months-long scheme with fake LinkedIn job interviews and an ad campaign to deliver malicious software"
   },
   {
@@ -86,7 +86,7 @@
    "published_at": "2026-11-04T01:11:12Z",
    "text": "👨‍💻 THREAD on how data center-related ballot measures are faring tonight data centers are on the ballot in ~40 localities across 13 states, including proposed bans, votes on specific projects, and recalls of pro-data center politicians",
    "author_name": "J.D. Capelouto",
-   "likes": 1799,
+   "likes": 1865,
    "story": "Anti data-center measures pass with huge margins in today's mid term election in America."
   },
   {
@@ -94,16 +94,16 @@
    "url": "https://honnibal.dev/blog/astra-read-write-misleading",
    "source": "Hacker News",
    "published_at": "2026-11-03T12:21:17Z",
-   "text": "962 points and 200 comments on Hacker News.",
-   "points": 962,
+   "text": "963 points and 200 comments on Hacker News.",
+   "points": 963,
    "discussion": "https://news.ycombinator.com/item?id=50351111"
   },
   {
-   "title": "Anthropic releases FlashProve, an open-source prototype that cryptographically verifies an AI respo…",
-   "url": "https://www.anthropic.com/research/provable-inference",
-   "source": "Anthropic",
-   "published_at": "2026-11-03T21:11:18Z",
-   "text": "Anthropic releases FlashProve, an open-source prototype that cryptographically verifies an AI response came from a given model, not one that a router swapped in. Roy Rinberg (Anthropic), Alex Allain (Anthropic); Alessandro Chiesa (EPFL, StarkWare), Miranda Christ (MIT, RESI), Rahul Dalal …",
+   "title": "Democratic gubernatorial wins in Texas, Georgia, Ohio and Pennsylvania could expose 50% of proposed…",
+   "url": "https://www.bloomberg.com/news/articles/2026-11-04/ai-data-center-boom-is-set-for-upheaval-after-us-election-rout",
+   "source": "Bloomberg",
+   "published_at": "2026-11-04T06:56:23Z",
+   "text": "Democratic gubernatorial wins in Texas, Georgia, Ohio and Pennsylvania could expose 50% of proposed US AI data center additions to greater scrutiny and pushback. Data center developers seeking to build dozens of sprawling artificial intelligence campuses across Texas were already dealing …",
    "via": "Techmeme"
   },
   {
@@ -111,8 +111,8 @@
    "url": "https://arxiv.org/abs/2605.29713",
    "source": "Hacker News",
    "published_at": "2026-11-03T21:40:53Z",
-   "text": "321 points and 50 comments on Hacker News.",
-   "points": 321,
+   "text": "328 points and 50 comments on Hacker News.",
+   "points": 328,
    "discussion": "https://news.ycombinator.com/item?id=50358582"
   },
   {
@@ -123,11 +123,11 @@
    "text": "I was reminded today of AI Adoption Rate Trending Down for Large Companies , a chart produced by Apollo Global Management in September 2025, which appeared to show a slowdown in U.S. corporate AI adoption based on numbers collected by the U.S. Census Bureau. At the time I used that chart to demonstrate GPT-5 data analysis , and then to experiment with Claude's new Code Interpreter . I decided to try running those numbers again to see what had changed over the past year, and in doing so learned that the Bureau has fallen foul of Executive Order 14434 , aka the asinine Super Intelligence one."
   },
   {
-   "title": "Revolut says it cut AI coding inference costs by ~90% in less than a year by making self-hosted GLM…",
-   "url": "https://www.theregister.com/ai-and-ml/2026/11/03/british-fintech-revolut-slashes-ai-coding-costs-10x-by-cutting-out-claude-and-going-self-hosted/5307345",
-   "source": "Tobias Mann / The Register",
-   "published_at": "2026-11-03T21:50:57Z",
-   "text": "Revolut says it cut AI coding inference costs by ~90% in less than a year by making self-hosted GLM models its default over commercial tools like Claude Code. Revolut says that in less than a year it's managed to slash its AI coding inference costs by roughly 90 percent by making self-hosted models …",
+   "title": "Anthropic releases FlashProve, an open-source prototype that cryptographically verifies an AI respo…",
+   "url": "https://www.anthropic.com/research/provable-inference",
+   "source": "Anthropic",
+   "published_at": "2026-11-03T21:11:18Z",
+   "text": "Anthropic releases FlashProve, an open-source prototype that cryptographically verifies an AI response came from a given model, not one that a router swapped in. Roy Rinberg (Anthropic), Alex Allain (Anthropic); Alessandro Chiesa (EPFL, StarkWare), Miranda Christ (MIT, RESI), Rahul Dalal …",
    "via": "Techmeme"
   }
  ],
