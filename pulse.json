@@ -1,13 +1,13 @@
 {
  "schema": 1,
- "generated_at": "2026-11-04T18:31:21Z",
+ "generated_at": "2026-11-04T19:03:15Z",
  "items": [
   {
    "title": "Democratic gubernatorial wins from Texas and Georgia to Ohio and Pennsylvania are set to expose 50%…",
    "url": "https://www.bloomberg.com/news/articles/2026-11-04/ai-data-center-boom-is-set-for-upheaval-after-us-election-rout",
    "source": "Bloomberg",
    "published_at": "2026-11-04T06:56:23Z",
-   "text": "Democratic gubernatorial wins from Texas and Georgia to Ohio and Pennsylvania are set to expose 50% of AI data center proposals to more scrutiny and pushback. Data center developers seeking to build dozens of sprawling artificial intelligence campuses across Texas were already dealing …",
+   "text": "Democratic gubernatorial wins from Texas and Georgia to Ohio and Pennsylvania are set to expose 50% of AI data center proposals to more scrutiny and pushback. Stocks in Volatile Trading as Democrats Take Congress — Video Player is loading. — Unmute — Current Time 0:00 Loaded: 55.10% Playback Rate",
    "via": "Techmeme"
   },
   {
@@ -17,7 +17,7 @@
    "published_at": "2026-11-03T21:33:33Z",
    "text": "Friday was my last day at Anthropic. Two years ago, when Claude Code was a small internal tool, I asked it to build an RL env. I steered it for tens of hours but never manually wrote a line of code. It worked, I was hooked, and I joined the team. When we first launched, most…",
    "author_name": "cat",
-   "likes": 13942,
+   "likes": 14055,
    "story": "Cat Wu, product lead for Claude Code and Cowork, says she has left Anthropic; Thariq Shihipar, who worked on Claude Code, announced his departure on October 24"
   },
   {
@@ -28,18 +28,14 @@
    "text": "Added a record of your answer when Claude Code asks to turn on the mods it writes in a session · Added assume_role on mantle upstreams of the Claude apps gateway, for a role in another AWS account and for per-developer AWS cost attribution · Added an effort option to a mod's $.model.fork, so a quick side job can run at low whatever effort the session uses; the result reports the effort sent · Added the date a stored claude.ai sign-in ends to claude auth status (loginExpiresAt) and to claude -p JSON results (credential_expires_at)"
   },
   {
-   "title": "We’re releasing new Qwen3.8-Flash-Next GGUFs with 15% higher accuracy. Unsloth Dynamic V3.1 outperf…",
-   "url": "https://x.com/UnslothAI/status/2118033433045991660",
-   "source": "𝕏 @UnslothAI",
-   "published_at": "2026-11-04T17:31:36Z",
-   "text": "We’re releasing new Qwen3.8-Flash-Next GGUFs with 15% higher accuracy. Unsloth Dynamic V3.1 outperforms others by >15% on Terminal Bench, DeepSWE & more benchmarks (256K context). Run on 32GB+ RAM setups. GGUF: Blog:",
-   "author_name": "Unsloth AI",
-   "likes": 501,
-   "story": "Qwen 3.8 Flash Next GSQ RCO quant as good as BF16",
-   "links": [
-    "https://huggingface.co/unsloth/Qwen3.8-Flash-Next-GGUF",
-    "https://unsloth.ai/docs/models/qwen3.8-next"
-   ]
+   "title": "Today we release Ripple-65B Preview, our 65B dense LLM we pretrained from scratch. Ripple sets a ne…",
+   "url": "https://x.com/RicursiveAI/status/2118046765857546733",
+   "source": "𝕏 @RicursiveAI",
+   "published_at": "2026-11-04T18:24:35Z",
+   "text": "Today we release Ripple-65B Preview, our 65B dense LLM we pretrained from scratch. Ripple sets a new state-of-the-art for U.S. open-weight models in agentic coding tasks, surpassing significantly larger models including Muse Spark Open-816B, Beam-501B, Inkling-975B, and Nemotron…",
+   "author_name": "Ricursive Intelligence",
+   "likes": 226,
+   "story": "Ricursive Intelligence released their first LLM: Ripple-65B Preview, a 65B dense model."
   },
   {
    "title": "Elon Musk moving to Texas to get away from Dems, becoming the biggest partisan megadonor in history…",
@@ -48,15 +44,15 @@
    "published_at": "2026-11-04T06:25:16Z",
    "text": "Elon Musk moving to Texas to get away from Dems, becoming the biggest partisan megadonor in history, then spending around a half-billion dollars to have his own state go blue immediately in the next election — with data centers the top gov issue — is pretty impressive",
    "author_name": "Benjy Sarlin",
-   "likes": 22168,
-   "story": "Democrat James Talarico defeats Ken Paxton to win Texas' first Democratic Senate seat in 30+ years; Elon Musk spent $47M+ backing Paxton and attacked Talarico"
+   "likes": 22446,
+   "story": "Elon Musk's preferred US midterm candidates, including Ken Paxton and Vivek Ramaswamy, lost almost everywhere; Musk spent ~$446M, a record for a non-candidate"
   },
   {
-   "title": "Texas elects Democrats for governor and the US Senate for the first time in decades, creating uncer…",
-   "url": "https://www.theinformation.com/briefings/stunning-democrat-victories-texas-bring-uncertainty-data-centers-musk",
-   "source": "Nick Wingfield / The Inform…",
-   "published_at": "2026-11-04T11:02:28Z",
-   "text": "Texas elects Democrats for governor and the US Senate for the first time in decades, creating uncertainty for its booming AI data center sector and Elon Musk. Texas elected Democrats for governor and the U.S. Senate for the first time in decades, creating potential uncertainty …",
+   "title": "Voters in 38+ US jurisdictions pass data center bans or restrictions; TV network poll: 56% said AI…",
+   "url": "https://www.washingtonpost.com/technology/2026/11/04/voters-pass-over-20-ballot-measures-ban-or-restrict-data-centers/",
+   "source": "Washington Post",
+   "published_at": "2026-11-04T12:51:00Z",
+   "text": "Voters in 38+ US jurisdictions pass data center bans or restrictions; TV network poll: 56% said AI and data centers were a major or crucial factor in their vote. In at least 38 jurisdictions voters rejected or restricted data centers, delivering a major setback to the AI industry. — SummaryLoading...",
    "via": "Techmeme"
   },
   {
@@ -64,19 +60,23 @@
    "url": "https://spectrum.ieee.org/ai-in-cybersecurity-php2shell-vulnerability",
    "source": "Hacker News",
    "published_at": "2026-11-04T11:52:17Z",
-   "text": "731 points and 453 comments on Hacker News.",
-   "points": 731,
+   "text": "777 points and 480 comments on Hacker News.",
+   "points": 777,
    "discussion": "https://news.ycombinator.com/item?id=50364336"
   },
   {
-   "title": "BREAKING: Oracle just CANCELED its $7 billion AI deal with Tencent it has begun",
-   "url": "https://x.com/ns123abc/status/2117857386610454950",
-   "source": "𝕏 @ns123abc",
-   "published_at": "2026-11-04T05:52:03Z",
-   "text": "BREAKING: Oracle just CANCELED its $7 billion AI deal with Tencent it has begun",
-   "author_name": "NIK",
-   "likes": 8404,
-   "story": "Sources: Oracle has scrapped a ~$7B, five-year deal to lease as many as 100K advanced AI chips to Tencent after bowing to pressure from the Trump administration"
+   "title": "We’re releasing new Qwen3.8-Flash-Next GGUFs with 15% higher accuracy. Unsloth Dynamic V3.1 outperf…",
+   "url": "https://x.com/UnslothAI/status/2118033433045991660",
+   "source": "𝕏 @UnslothAI",
+   "published_at": "2026-11-04T17:31:36Z",
+   "text": "We’re releasing new Qwen3.8-Flash-Next GGUFs with 15% higher accuracy. Unsloth Dynamic V3.1 outperforms others by >15% on Terminal Bench, DeepSWE & more benchmarks (256K context). Run on 32GB+ RAM setups. GGUF: Blog:",
+   "author_name": "Unsloth AI",
+   "likes": 677,
+   "story": "Qwen 3.8 Flash Next GSQ RCO quant as good as BF16",
+   "links": [
+    "https://huggingface.co/unsloth/Qwen3.8-Flash-Next-GGUF",
+    "https://unsloth.ai/docs/models/qwen3.8-next"
+   ]
   },
   {
    "title": "Qwen 3.8 27B on my laptop can interpret model weights, too",
@@ -86,45 +86,31 @@
    "text": "Yesterday's hot paper was Sparks of Weight-Space Programming: LLMs can natively read & write neural network weights by Rikiya Takehi, Jayden Teoh, Alex Zhang, and Omar Khattab. The paper (OK, the authors classify is as a \"blog post\", but it's paper-shaped) found that frontier models, in particular GPT-6 Astra, can both interpret and modify the raw weights of a machine learning model - literally a text description of the model containing a bunch of floating point numbers."
   },
   {
-   "title": "NBC exit poll: 56% said AI and data centers had been a “crucial or a major factor” in their Congres…",
-   "url": "https://www.ft.com/content/badd6af9-88b7-47b7-b1c2-067814e70fb5",
-   "source": "Financial Times",
-   "published_at": "2026-11-04T10:46:13Z",
-   "text": "NBC exit poll: 56% said AI and data centers had been a “crucial or a major factor” in their Congress votes, as Democratic candidates pledged to halt development. Gubernatorial wins in Texas, Georgia and Ohio and local ballot measures show depth of discontent with Trump-backed infrastructure spree",
+   "title": "Democrats' sweep of Congress raises the likelihood of strong frontier AI legislation passing in ear…",
+   "url": "https://www.transformernews.ai/p/midterms-democrats-blue-tsunami-ai-policy-legislation",
+   "source": "Shakeel Hashim / Transformer",
+   "published_at": "2026-11-04T16:16:51Z",
+   "text": "Democrats' sweep of Congress raises the likelihood of strong frontier AI legislation passing in early 2027, including mandatory testing and developer liability. America is waking up to an astonishing Democratic sweep. As I write, Dems may end up with 56 Senate seats and as many as 261 House seats …",
    "via": "Techmeme"
+  },
+  {
+   "title": "BREAKING: Oracle just CANCELED its $7 billion AI deal with Tencent it has begun",
+   "url": "https://x.com/ns123abc/status/2117857386610454950",
+   "source": "𝕏 @ns123abc",
+   "published_at": "2026-11-04T05:52:03Z",
+   "text": "BREAKING: Oracle just CANCELED its $7 billion AI deal with Tencent it has begun",
+   "author_name": "NIK",
+   "likes": 8954,
+   "story": "Sources: Oracle has scrapped a ~$7B, five-year deal to lease as many as 100K advanced AI chips to Tencent after bowing to pressure from the Trump administration"
   },
   {
    "title": "Kimi K3.1 Pro model weights are out",
    "url": "https://huggingface.co/moonshotai/Kimi-K3.1-Pro",
    "source": "Hacker News",
    "published_at": "2026-11-04T15:30:30Z",
-   "text": "159 points and 33 comments on Hacker News.",
-   "points": 159,
+   "text": "191 points and 52 comments on Hacker News.",
+   "points": 191,
    "discussion": "https://news.ycombinator.com/item?id=50366999"
-  },
-  {
-   "title": "Crypto and AI super PACs spent $250M in 2026 midterms, but lost 9/12 competitive races called so fa…",
-   "url": "https://www.citationneeded.news/2026-election-results/",
-   "source": "Molly White / Citation Need…",
-   "published_at": "2026-11-04T15:16:46Z",
-   "text": "Crypto and AI super PACs spent $250M in 2026 midterms, but lost 9/12 competitive races called so far, spending $74.7M on losing candidates and $28.3M on winners",
-   "via": "Techmeme"
-  },
-  {
-   "title": "Progress on provable inference for large language models",
-   "url": "https://www.anthropic.com/research/provable-inference",
-   "source": "Hacker News",
-   "published_at": "2026-11-04T17:17:46Z",
-   "text": "67 points and 23 comments on Hacker News.",
-   "points": 67,
-   "discussion": "https://news.ycombinator.com/item?id=50368626"
-  },
-  {
-   "title": "The U.S. Census Bureau and “Super Intelligence”",
-   "url": "https://simonwillison.net/2026/Nov/2/census-bureau-super-intelligence/",
-   "source": "Simon Willison's weblog",
-   "published_at": "2026-11-02T13:31:26Z",
-   "text": "I was reminded today of AI Adoption Rate Trending Down for Large Companies , a chart produced by Apollo Global Management in September 2025, which appeared to show a slowdown in U.S. corporate AI adoption based on numbers collected by the U.S. Census Bureau. At the time I used that chart to demonstrate GPT-5 data analysis , and then to experiment with Claude's new Code Interpreter . I decided to try running those numbers again to see what had changed over the past year, and in doing so learned that the Bureau has fallen foul of Executive Order 14434 , aka the asinine Super Intelligence one."
   },
   {
    "title": "Democrats' US midterms victory is a win for hyperscalers and AI labs, a mixed bag for Nvidia, an ad…",
@@ -133,6 +119,22 @@
    "published_at": "2026-11-04T11:46:24Z",
    "text": "Democrats' US midterms victory is a win for hyperscalers and AI labs, a mixed bag for Nvidia, an advantage to China, and may make space data centers attractive. Data Centers were on the ballot, and they lost in a major way; what does it mean if American opposition to building is permanent?",
    "via": "Techmeme"
+  },
+  {
+   "title": "Progress on provable inference for large language models",
+   "url": "https://www.anthropic.com/research/provable-inference",
+   "source": "Hacker News",
+   "published_at": "2026-11-04T17:17:46Z",
+   "text": "88 points and 29 comments on Hacker News.",
+   "points": 88,
+   "discussion": "https://news.ycombinator.com/item?id=50368626"
+  },
+  {
+   "title": "The U.S. Census Bureau and “Super Intelligence”",
+   "url": "https://simonwillison.net/2026/Nov/2/census-bureau-super-intelligence/",
+   "source": "Simon Willison's weblog",
+   "published_at": "2026-11-02T13:31:26Z",
+   "text": "I was reminded today of AI Adoption Rate Trending Down for Large Companies , a chart produced by Apollo Global Management in September 2025, which appeared to show a slowdown in U.S. corporate AI adoption based on numbers collected by the U.S. Census Bureau. At the time I used that chart to demonstrate GPT-5 data analysis , and then to experiment with Claude's new Code Interpreter . I decided to try running those numbers again to see what had changed over the past year, and in doing so learned that the Bureau has fallen foul of Executive Order 14434 , aka the asinine Super Intelligence one."
   }
  ],
  "sources": "curated, Techmeme, X (found via Techmeme, Reddit, the Internet Archive), Claude Code releases, Anthropic, Hacker News, Simon Willison"
