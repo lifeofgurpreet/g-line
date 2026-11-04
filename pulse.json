@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-04T00:12:21Z",
+ "generated_at": "2026-11-04T00:44:49Z",
  "items": [
   {
    "title": "Google plans to make it easier to restrict its AI tools for students in early 2027, but says school…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-03T15:03:52Z",
    "text": "7 BILLION DOLLAR crypto hack came from a homebrew install from someone tryna vibecode something 😭",
    "author_name": "ashen",
-   "likes": 8623,
+   "likes": 8742,
    "story": "Binance says North Korean hackers stole $6.3B through a months-long scheme with fake LinkedIn job interviews and an ad campaign to deliver malicious software"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-11-03T18:29:54Z",
    "text": "Apple Intelligence in China, redesigned Health app, AI listening features on the Apple Watch are all in the new betas.",
    "author_name": "Mark Gurman",
-   "likes": 414,
+   "likes": 420,
    "story": "Apple opens Siri AI to all developers, letting any app on iOS 27.3 beta and other 27.3 OS betas bring its content and actions into Siri AI by using App Intents",
    "links": [
     "https://www.bloomberg.com/news/articles/2026-11-03/apple-releases-ios-27-3-beta-with-watch-ai-listening-tools-health-app-china-ai?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc5MzczMDU5MCwiZXhwIjoxNzk0MzM1MzkwLCJhcnRpY2xlSWQiOiJUTlhWQTJOM04wOUowMCIsImJjb25uZWN0SWQiOiJDNEVEQ0FFMUZBMDU0MEJFQTI0QTlGMjExQzFFOTA4MCJ9.7fxypbPrSvvjnL8axvz4558x4pLkCOGmDrxk0Q0E3l0"
@@ -53,19 +53,19 @@
    "url": "https://github.com/postmanlabs/postman-app-support/issues/14370",
    "source": "Hacker News",
    "published_at": "2026-11-03T17:22:37Z",
-   "text": "970 points and 319 comments on Hacker News.",
-   "points": 970,
+   "text": "988 points and 328 comments on Hacker News.",
+   "points": 988,
    "discussion": "https://news.ycombinator.com/item?id=50354960"
   },
   {
-   "title": "Well, turns out Qwen3.8-Flash-Next can do more than work with software tools, it can operate real r…",
-   "url": "https://x.com/QwenDevs/status/2117644199860601297",
-   "source": "𝕏 @QwenDevs",
-   "published_at": "2026-11-03T15:44:55Z",
-   "text": "Well, turns out Qwen3.8-Flash-Next can do more than work with software tools, it can operate real robots too. A group of Qwen developers from Tsinghua and UC Berkeley recently built uni-robot-agent, an open-source harness that connects general-purpose LLMs to robotic systems. It…",
-   "author_name": "Qwen Developers",
-   "likes": 374,
-   "story": "“Can Qwen directly control the robot as well as GPT-6 Astra?”"
+   "title": "Nvidia and its CEO Jensen Huang have used their immense soft power to protect their business and in…",
+   "url": "https://x.com/steph_palazzolo/status/2117649720042455349",
+   "source": "𝕏 @steph_palazzolo",
+   "published_at": "2026-11-03T16:06:51Z",
+   "text": "Nvidia and its CEO Jensen Huang have used their immense soft power to protect their business and influence policy. That's shaped the policy stances of companies like OpenAI. More recently, researchers like Noam Brown have questioned the company's views in Slack channels.",
+   "author_name": "Stephanie Palazzolo",
+   "likes": 154,
+   "story": "Sources: Nvidia verbally told cloud compute clients they must sell 51%+ of their services to non-Chinese companies, as the US further limits China's chip access"
   },
   {
    "title": "Qwen 3.8 27B on my laptop can interpret model weights, too",
@@ -75,11 +75,11 @@
    "text": "Yesterday's hot paper was Sparks of Weight-Space Programming: LLMs can natively read & write neural network weights by Rikiya Takehi, Jayden Teoh, Alex Zhang, and Omar Khattab. The paper (OK, the authors classify is as a \"blog post\", but it's paper-shaped) found that frontier models, in particular GPT-6 Astra, can both interpret and modify the raw weights of a machine learning model - literally a text description of the model containing a bunch of floating point numbers."
   },
   {
-   "title": "Revolut says it cut AI coding inference costs by ~90% in less than a year by making self-hosted GLM…",
-   "url": "https://www.theregister.com/ai-and-ml/2026/11/03/british-fintech-revolut-slashes-ai-coding-costs-10x-by-cutting-out-claude-and-going-self-hosted/5307345",
-   "source": "Tobias Mann / The Register",
-   "published_at": "2026-11-03T21:50:57Z",
-   "text": "Revolut says it cut AI coding inference costs by ~90% in less than a year by making self-hosted GLM models its default over commercial tools like Claude Code. Revolut says that in less than a year it's managed to slash its AI coding inference costs by roughly 90 percent by making self-hosted models …",
+   "title": "Anthropic releases FlashProve, an open-source prototype that cryptographically verifies an AI respo…",
+   "url": "https://www.anthropic.com/research/provable-inference",
+   "source": "Anthropic",
+   "published_at": "2026-11-03T21:11:18Z",
+   "text": "Anthropic releases FlashProve, an open-source prototype that cryptographically verifies an AI response came from a given model, not one that a router swapped in. Roy Rinberg (Anthropic), Alex Allain (Anthropic); Alessandro Chiesa (EPFL, StarkWare), Miranda Christ (MIT, RESI), Rahul Dalal …",
    "via": "Techmeme"
   },
   {
@@ -97,16 +97,16 @@
    "url": "https://arxiv.org/abs/2605.29713",
    "source": "Hacker News",
    "published_at": "2026-11-03T21:40:53Z",
-   "text": "169 points and 23 comments on Hacker News.",
-   "points": 169,
+   "text": "183 points and 31 comments on Hacker News.",
+   "points": 183,
    "discussion": "https://news.ycombinator.com/item?id=50358582"
   },
   {
-   "title": "Anthropic releases FlashProve, an open-source prototype that cryptographically verifies an AI respo…",
-   "url": "https://www.anthropic.com/research/provable-inference",
-   "source": "Anthropic",
-   "published_at": "2026-11-03T21:11:18Z",
-   "text": "Anthropic releases FlashProve, an open-source prototype that cryptographically verifies an AI response came from a given model, not one that a router swapped in. Roy Rinberg (Anthropic), Alex Allain (Anthropic); Alessandro Chiesa (EPFL, StarkWare), Miranda Christ (MIT, RESI), Rahul Dalal …",
+   "title": "Revolut says it cut AI coding inference costs by ~90% in less than a year by making self-hosted GLM…",
+   "url": "https://www.theregister.com/ai-and-ml/2026/11/03/british-fintech-revolut-slashes-ai-coding-costs-10x-by-cutting-out-claude-and-going-self-hosted/5307345",
+   "source": "Tobias Mann / The Register",
+   "published_at": "2026-11-03T21:50:57Z",
+   "text": "Revolut says it cut AI coding inference costs by ~90% in less than a year by making self-hosted GLM models its default over commercial tools like Claude Code. Revolut says that in less than a year it's managed to slash its AI coding inference costs by roughly 90 percent by making self-hosted models …",
    "via": "Techmeme"
   },
   {
@@ -114,8 +114,8 @@
    "url": "https://asia.nikkei.com/business/technology/artificial-intelligence/us-tech-giants-hidden-ai-debt-swells-90-to-3.2tn-in-6-months",
    "source": "Hacker News",
    "published_at": "2026-11-03T21:26:44Z",
-   "text": "144 points and 50 comments on Hacker News.",
-   "points": 144,
+   "text": "180 points and 64 comments on Hacker News.",
+   "points": 180,
    "discussion": "https://news.ycombinator.com/item?id=50358422"
   },
   {
