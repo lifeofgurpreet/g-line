@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-04T01:50:41Z",
+ "generated_at": "2026-11-04T02:23:00Z",
  "items": [
   {
    "title": "Google says AI tools for K-12 students will be off by default in 2027; schools that block AI entire…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-03T21:33:33Z",
    "text": "Friday was my last day at Anthropic. Two years ago, when Claude Code was a small internal tool, I asked it to build an RL env. I steered it for tens of hours but never manually wrote a line of code. It worked, I was hooked, and I joined the team. When we first launched, most…",
    "author_name": "cat",
-   "likes": 6470,
+   "likes": 6863,
    "story": "Cat Wu, product lead for Claude Code and Cowork, has left Anthropic; Thariq Shihipar, who worked on Claude Code, announced his departure last month"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-11-03T15:03:52Z",
    "text": "7 BILLION DOLLAR crypto hack came from a homebrew install from someone tryna vibecode something 😭",
    "author_name": "ashen",
-   "likes": 8901,
+   "likes": 8985,
    "story": "Binance says North Korean hackers stole $6.3B through a months-long scheme with fake LinkedIn job interviews and an ad campaign to deliver malicious software"
   },
   {
@@ -50,8 +50,8 @@
    "url": "https://github.com/postmanlabs/postman-app-support/issues/14370",
    "source": "Hacker News",
    "published_at": "2026-11-03T17:22:37Z",
-   "text": "1025 points and 343 comments on Hacker News.",
-   "points": 1025,
+   "text": "1046 points and 346 comments on Hacker News.",
+   "points": 1046,
    "discussion": "https://news.ycombinator.com/item?id=50354960"
   },
   {
@@ -61,7 +61,7 @@
    "published_at": "2026-11-03T16:06:51Z",
    "text": "Nvidia and its CEO Jensen Huang have used their immense soft power to protect their business and influence policy. That's shaped the policy stances of companies like OpenAI. More recently, researchers like Noam Brown have questioned the company's views in Slack channels.",
    "author_name": "Stephanie Palazzolo",
-   "likes": 158,
+   "likes": 162,
    "story": "How Nvidia uses soft power to influence customers and shape US chip policy; sources: OpenAI took no public stance on China chip exports to avoid angering Nvidia"
   },
   {
@@ -86,7 +86,7 @@
    "published_at": "2026-11-03T02:52:45Z",
    "text": "OpenAI has partnered with Cathedral systems. This is the cybersecurity startup founded by former DOGE staffers who very recently hacked Anthropic's Slack.",
    "author_name": "Andrew Curran",
-   "likes": 364,
+   "likes": 365,
    "story": "OpenAI partners with Cathedral to test its security defenses and revamps its Security Bug Bounty program, including quadrupling rewards for critical findings"
   },
   {
@@ -94,8 +94,8 @@
    "url": "https://arxiv.org/abs/2605.29713",
    "source": "Hacker News",
    "published_at": "2026-11-03T21:40:53Z",
-   "text": "227 points and 35 comments on Hacker News.",
-   "points": 227,
+   "text": "247 points and 39 comments on Hacker News.",
+   "points": 247,
    "discussion": "https://news.ycombinator.com/item?id=50358582"
   },
   {
@@ -111,8 +111,8 @@
    "url": "https://asia.nikkei.com/business/technology/artificial-intelligence/us-tech-giants-hidden-ai-debt-swells-90-to-3.2tn-in-6-months",
    "source": "Hacker News",
    "published_at": "2026-11-03T21:26:44Z",
-   "text": "233 points and 103 comments on Hacker News.",
-   "points": 233,
+   "text": "262 points and 115 comments on Hacker News.",
+   "points": 262,
    "discussion": "https://news.ycombinator.com/item?id=50358422"
   },
   {
