@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-04T11:31:16Z",
+ "generated_at": "2026-11-04T12:03:22Z",
  "items": [
   {
    "title": "Democratic gubernatorial wins in Texas, Georgia, Ohio, and Pennsylvania are set to expose 50% of pr…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-03T21:33:33Z",
    "text": "Friday was my last day at Anthropic. Two years ago, when Claude Code was a small internal tool, I asked it to build an RL env. I steered it for tens of hours but never manually wrote a line of code. It worked, I was hooked, and I joined the team. When we first launched, most…",
    "author_name": "cat",
-   "likes": 11640,
+   "likes": 11870,
    "story": "Cat Wu, product lead for Claude Code and Cowork, says she has left Anthropic; Thariq Shihipar, who worked on Claude Code, announced his departure on October 24"
   },
   {
@@ -28,44 +28,41 @@
    "text": "Added a record of your answer when Claude Code asks to turn on the mods it writes in a session · Added assume_role on mantle upstreams of the Claude apps gateway, for a role in another AWS account and for per-developer AWS cost attribution · Added an effort option to a mod's $.model.fork, so a quick side job can run at low whatever effort the session uses; the result reports the effort sent · Added the date a stored claude.ai sign-in ends to claude auth status (loginExpiresAt) and to claude -p JSON results (credential_expires_at)"
   },
   {
-   "title": "Google is trying to use its monopoly power to force AI into our public schools. No corporation shou…",
-   "url": "https://x.com/NYCMayor/status/2117692668213940677",
-   "source": "𝕏 @NYCMayor",
-   "published_at": "2026-11-03T18:57:31Z",
-   "text": "Google is trying to use its monopoly power to force AI into our public schools. No corporation should have the power to dictate how we teach our children. Our public schools exist to serve students, not to grow the profit margins of Big Tech.",
-   "author_name": "Mayor Zohran Kwame Mamdani",
-   "likes": 63351,
-   "story": "Google says AI tools for K-12 students will be off by default in 2027; schools that block AI entirely will lose Search, as “Search and AI are deeply integrated”",
-   "links": [
-    "https://www.nytimes.com/2026/11/03/us/google-search-schools-restrict-ai.html"
-   ]
-  },
-  {
-   "title": "Apple opens Siri AI to all developers, letting any app on iOS 27.3 beta and other 27.3 OS betas bri…",
-   "url": "https://developer.apple.com/news/?id=gdk2umrf",
-   "source": "Apple Developer",
-   "published_at": "2026-11-03T20:15:53Z",
-   "text": "Apple opens Siri AI to all developers, letting any app on iOS 27.3 beta and other 27.3 OS betas bring its content and actions into Siri AI by using App Intents. Starting today with the iOS 27.3, iPadOS 27.3, macOS 27.3, and visionOS 27.3 betas, a new Developer Preview enables any developer …",
-   "via": "Techmeme"
-  },
-  {
-   "title": "Postman silently auto-installs AI plugins and attempts to share all API data",
-   "url": "https://github.com/postmanlabs/postman-app-support/issues/14370",
-   "source": "Hacker News",
-   "published_at": "2026-11-03T17:22:37Z",
-   "text": "1314 points and 447 comments on Hacker News.",
-   "points": 1314,
-   "discussion": "https://news.ycombinator.com/item?id=50354960"
-  },
-  {
    "title": "Elon Musk moving to Texas to get away from Dems, becoming the biggest partisan megadonor in history…",
    "url": "https://x.com/BenjySarlin/status/2117865744662712571",
    "source": "𝕏 @BenjySarlin",
    "published_at": "2026-11-04T06:25:16Z",
    "text": "Elon Musk moving to Texas to get away from Dems, becoming the biggest partisan megadonor in history, then spending around a half-billion dollars to have his own state go blue immediately in the next election — with data centers the top gov issue — is pretty impressive",
    "author_name": "Benjy Sarlin",
-   "likes": 9596,
+   "likes": 10846,
    "story": "Democrat James Talarico defeats Ken Paxton to win Texas's first Democratic Senate seat in 30+ years; Elon Musk spent $47M backing Paxton and attacked Talarico"
+  },
+  {
+   "title": "Democrats' US midterms victory is a win for hyperscalers and AI labs, a mixed bag for Nvidia, an ad…",
+   "url": "https://stratechery.com/2026/ai-on-the-ballot/",
+   "source": "Ben Thompson / Stratechery",
+   "published_at": "2026-11-04T11:46:24Z",
+   "text": "Democrats' US midterms victory is a win for hyperscalers and AI labs, a mixed bag for Nvidia, an advantage to China, and may make space data centers attractive",
+   "via": "Techmeme"
+  },
+  {
+   "title": "Nvidia RTX Spark encrypted firmware slows inference speed to 35% on Linux",
+   "url": "https://www.mindstudio.ai/blog/linux-nvidia-rtx-spark-laptop",
+   "source": "Hacker News",
+   "published_at": "2026-11-04T08:46:29Z",
+   "text": "143 points and 72 comments on Hacker News.",
+   "points": 143,
+   "discussion": "https://news.ycombinator.com/item?id=50362905"
+  },
+  {
+   "title": "Nasdaq futures collapse as Texas governor race swings to Hinjosa (D), which would effectively ice d…",
+   "url": "https://x.com/zerohedge/status/2117788289323217207",
+   "source": "𝕏 @zerohedge",
+   "published_at": "2026-11-04T01:17:29Z",
+   "text": "Nasdaq futures collapse as Texas governor race swings to Hinjosa (D), which would effectively ice data center build out",
+   "author_name": "zerohedge",
+   "likes": 7197,
+   "story": "Texas elects Democrats for governor and the US Senate for the first time in decades, creating uncertainty for its booming AI data center sector and Elon Musk"
   },
   {
    "title": "Qwen 3.8 27B on my laptop can interpret model weights, too",
@@ -75,11 +72,11 @@
    "text": "Yesterday's hot paper was Sparks of Weight-Space Programming: LLMs can natively read & write neural network weights by Rikiya Takehi, Jayden Teoh, Alex Zhang, and Omar Khattab. The paper (OK, the authors classify is as a \"blog post\", but it's paper-shaped) found that frontier models, in particular GPT-6 Astra, can both interpret and modify the raw weights of a machine learning model - literally a text description of the model containing a bunch of floating point numbers."
   },
   {
-   "title": "AMD reports Q3 revenue up 45% YoY to $13.38B, above $13.09B est., Data Center revenue up 97% to $8.…",
-   "url": "https://www.cnbc.com/2026/11/03/amd-amd-q3-earnings-report-2026-.html",
-   "source": "Katie Tarasov / CNBC",
-   "published_at": "2026-11-03T21:30:55Z",
-   "text": "AMD reports Q3 revenue up 45% YoY to $13.38B, above $13.09B est., Data Center revenue up 97% to $8.5B, and forecasts Q4 revenue above est.; AMD jumps 7%+. Advanced Micro Devices reported third-quarter earnings on Tuesday that beat Wall Street's expectations, with revenue jump 45% …",
+   "title": "Google says AI tools for K-12 students will be off by default in 2027; schools that block AI entire…",
+   "url": "https://www.nytimes.com/2026/11/03/us/google-search-schools-restrict-ai.html?unlocked_article_code=1.NlE.VMKr.Cr-g-C6phyfH&smid=url-share",
+   "source": "New York Times",
+   "published_at": "2026-11-03T15:45:56Z",
+   "text": "Google says AI tools for K-12 students will be off by default in 2027; schools that block AI entirely will lose Search, as “Search and AI are deeply integrated”. Google is making it easier to restrict its A.I. tools for students. But schools that block A.I. entirely will lose student access to Google's search engine.",
    "via": "Techmeme"
   },
   {
@@ -89,17 +86,30 @@
    "published_at": "2026-11-04T01:11:12Z",
    "text": "👨‍💻 THREAD on how data center-related ballot measures are faring tonight data centers are on the ballot in ~40 localities across 13 states, including proposed bans, votes on specific projects, and recalls of pro-data center politicians",
    "author_name": "J.D. Capelouto",
-   "likes": 2260,
+   "likes": 2348,
    "story": "Anti data-center measures pass with huge margins in today's mid term election in America."
   },
   {
-   "title": "Nvidia RTX Spark encrypted firmware slows inference speed to 35% on Linux",
-   "url": "https://www.mindstudio.ai/blog/linux-nvidia-rtx-spark-laptop",
+   "title": "Tell HN: Gemini trains on chat history, even for subscribers (personal accounts)",
+   "url": "https://news.ycombinator.com/item?id=50363461",
    "source": "Hacker News",
-   "published_at": "2026-11-04T08:46:29Z",
-   "text": "94 points and 50 comments on Hacker News.",
-   "points": 94,
-   "discussion": "https://news.ycombinator.com/item?id=50362905"
+   "published_at": "2026-11-04T10:10:27Z",
+   "text": "72 points and 29 comments on Hacker News.",
+   "points": 72,
+   "discussion": "https://news.ycombinator.com/item?id=50363461"
+  },
+  {
+   "title": "Apple Intelligence in China, redesigned Health app, AI listening features on the Apple Watch are al…",
+   "url": "https://x.com/markgurman/status/2117685717690200087",
+   "source": "𝕏 @markgurman",
+   "published_at": "2026-11-03T18:29:54Z",
+   "text": "Apple Intelligence in China, redesigned Health app, AI listening features on the Apple Watch are all in the new betas.",
+   "author_name": "Mark Gurman",
+   "likes": 507,
+   "story": "Apple opens Siri AI to all developers, letting any app on iOS 27.3 beta and other 27.3 OS betas bring its content and actions into Siri AI by using App Intents",
+   "links": [
+    "https://www.bloomberg.com/news/articles/2026-11-03/apple-releases-ios-27-3-beta-with-watch-ai-listening-tools-health-app-china-ai?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc5MzczMDU5MCwiZXhwIjoxNzk0MzM1MzkwLCJhcnRpY2xlSWQiOiJUTlhWQTJOM04wOUowMCIsImJjb25uZWN0SWQiOiJDNEVEQ0FFMUZBMDU0MEJFQTI0QTlGMjExQzFFOTA4MCJ9.7fxypbPrSvvjnL8axvz4558x4pLkCOGmDrxk0Q0E3l0"
+   ]
   },
   {
    "title": "Sources: Oracle has scrapped a ~$7B, five-year deal to lease ~100K advanced AI chips to Tencent aft…",
@@ -110,13 +120,13 @@
    "via": "Techmeme"
   },
   {
-   "title": "The Little Book of Generative AI Foundations: An Intuitive Mathematical Primer",
-   "url": "https://arxiv.org/abs/2605.29713",
+   "title": "Geoffrey Hinton: it might turn out we were better off without AI",
+   "url": "https://www.theguardian.com/uk-news/2026/nov/03/ai-godfather-geoffrey-hinton-better-off-without-ai",
    "source": "Hacker News",
-   "published_at": "2026-11-03T21:40:53Z",
-   "text": "348 points and 55 comments on Hacker News.",
-   "points": 348,
-   "discussion": "https://news.ycombinator.com/item?id=50358582"
+   "published_at": "2026-11-04T10:23:34Z",
+   "text": "64 points and 30 comments on Hacker News.",
+   "points": 64,
+   "discussion": "https://news.ycombinator.com/item?id=50363554"
   },
   {
    "title": "The U.S. Census Bureau and “Super Intelligence”",
@@ -124,14 +134,6 @@
    "source": "Simon Willison's weblog",
    "published_at": "2026-11-02T13:31:26Z",
    "text": "I was reminded today of AI Adoption Rate Trending Down for Large Companies , a chart produced by Apollo Global Management in September 2025, which appeared to show a slowdown in U.S. corporate AI adoption based on numbers collected by the U.S. Census Bureau. At the time I used that chart to demonstrate GPT-5 data analysis , and then to experiment with Claude's new Code Interpreter . I decided to try running those numbers again to see what had changed over the past year, and in doing so learned that the Bureau has fallen foul of Executive Order 14434 , aka the asinine Super Intelligence one."
-  },
-  {
-   "title": "Tencent releases its Hy4 open-weight foundation model, which it says joins the top tier of Chinese…",
-   "url": "https://www.bloomberg.com/news/articles/2026-11-04/tencent-declares-latest-ai-model-ranks-among-china-s-best",
-   "source": "Bloomberg",
-   "published_at": "2026-11-04T10:56:22Z",
-   "text": "Tencent releases its Hy4 open-weight foundation model, which it says joins the top tier of Chinese open-weight AI for the first time, and plans a Flash version. Tencent Holdings Ltd. released a foundation model Wednesday that it said joins the top tier of Chinese open-weight AI systems for the first time.",
-   "via": "Techmeme"
   }
  ],
  "sources": "curated, Techmeme, X (found via Techmeme, Reddit, the Internet Archive), Claude Code releases, Anthropic, Hacker News, Simon Willison"
