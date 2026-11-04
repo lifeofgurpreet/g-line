@@ -1,13 +1,13 @@
 {
  "schema": 1,
- "generated_at": "2026-11-04T12:03:22Z",
+ "generated_at": "2026-11-04T12:36:19Z",
  "items": [
   {
    "title": "Democratic gubernatorial wins in Texas, Georgia, Ohio, and Pennsylvania are set to expose 50% of pr…",
    "url": "https://www.bloomberg.com/news/articles/2026-11-04/ai-data-center-boom-is-set-for-upheaval-after-us-election-rout",
    "source": "Bloomberg",
    "published_at": "2026-11-04T06:56:23Z",
-   "text": "Democratic gubernatorial wins in Texas, Georgia, Ohio, and Pennsylvania are set to expose 50% of proposed AI data center additions to more scrutiny and pushback. Stocks in Volatile Trading as Democrats Take Congress — Video Player is loading. — Unmute — Current Time 0:01 Loaded: 55.10% Playback Rate",
+   "text": "Democratic gubernatorial wins in Texas, Georgia, Ohio, and Pennsylvania are set to expose 50% of proposed AI data center additions to more scrutiny and pushback. Data center developers seeking to build dozens of sprawling artificial intelligence campuses across Texas were already dealing …",
    "via": "Techmeme"
   },
   {
@@ -17,7 +17,7 @@
    "published_at": "2026-11-03T21:33:33Z",
    "text": "Friday was my last day at Anthropic. Two years ago, when Claude Code was a small internal tool, I asked it to build an RL env. I steered it for tens of hours but never manually wrote a line of code. It worked, I was hooked, and I joined the team. When we first launched, most…",
    "author_name": "cat",
-   "likes": 11870,
+   "likes": 12072,
    "story": "Cat Wu, product lead for Claude Code and Cowork, says she has left Anthropic; Thariq Shihipar, who worked on Claude Code, announced his departure on October 24"
   },
   {
@@ -34,25 +34,25 @@
    "published_at": "2026-11-04T06:25:16Z",
    "text": "Elon Musk moving to Texas to get away from Dems, becoming the biggest partisan megadonor in history, then spending around a half-billion dollars to have his own state go blue immediately in the next election — with data centers the top gov issue — is pretty impressive",
    "author_name": "Benjy Sarlin",
-   "likes": 10846,
+   "likes": 12159,
    "story": "Democrat James Talarico defeats Ken Paxton to win Texas's first Democratic Senate seat in 30+ years; Elon Musk spent $47M backing Paxton and attacked Talarico"
   },
   {
-   "title": "Democrats' US midterms victory is a win for hyperscalers and AI labs, a mixed bag for Nvidia, an ad…",
-   "url": "https://stratechery.com/2026/ai-on-the-ballot/",
-   "source": "Ben Thompson / Stratechery",
-   "published_at": "2026-11-04T11:46:24Z",
-   "text": "Democrats' US midterms victory is a win for hyperscalers and AI labs, a mixed bag for Nvidia, an advantage to China, and may make space data centers attractive",
+   "title": "NBC exit poll: 56% said AI and data centers had been a “crucial or a major factor” in casting their…",
+   "url": "https://www.ft.com/content/badd6af9-88b7-47b7-b1c2-067814e70fb5",
+   "source": "Financial Times",
+   "published_at": "2026-11-04T10:46:13Z",
+   "text": "NBC exit poll: 56% said AI and data centers had been a “crucial or a major factor” in casting their votes for Congress, as candidates pledge to halt development. Gubernatorial wins in Texas, Georgia and Ohio and local ballot measures show depth of discontent with Trump-backed infrastructure spree",
    "via": "Techmeme"
   },
   {
-   "title": "Nvidia RTX Spark encrypted firmware slows inference speed to 35% on Linux",
-   "url": "https://www.mindstudio.ai/blog/linux-nvidia-rtx-spark-laptop",
+   "title": "AI is forcing us to pay off 40 years of technical debt",
+   "url": "https://spectrum.ieee.org/ai-in-cybersecurity-php2shell-vulnerability",
    "source": "Hacker News",
-   "published_at": "2026-11-04T08:46:29Z",
-   "text": "143 points and 72 comments on Hacker News.",
-   "points": 143,
-   "discussion": "https://news.ycombinator.com/item?id=50362905"
+   "published_at": "2026-11-04T11:52:17Z",
+   "text": "103 points and 25 comments on Hacker News.",
+   "points": 103,
+   "discussion": "https://news.ycombinator.com/item?id=50364336"
   },
   {
    "title": "Nasdaq futures collapse as Texas governor race swings to Hinjosa (D), which would effectively ice d…",
@@ -61,7 +61,7 @@
    "published_at": "2026-11-04T01:17:29Z",
    "text": "Nasdaq futures collapse as Texas governor race swings to Hinjosa (D), which would effectively ice data center build out",
    "author_name": "zerohedge",
-   "likes": 7197,
+   "likes": 7214,
    "story": "Texas elects Democrats for governor and the US Senate for the first time in decades, creating uncertainty for its booming AI data center sector and Elon Musk"
   },
   {
@@ -86,7 +86,7 @@
    "published_at": "2026-11-04T01:11:12Z",
    "text": "👨‍💻 THREAD on how data center-related ballot measures are faring tonight data centers are on the ballot in ~40 localities across 13 states, including proposed bans, votes on specific projects, and recalls of pro-data center politicians",
    "author_name": "J.D. Capelouto",
-   "likes": 2348,
+   "likes": 2432,
    "story": "Anti data-center measures pass with huge margins in today's mid term election in America."
   },
   {
@@ -94,8 +94,8 @@
    "url": "https://news.ycombinator.com/item?id=50363461",
    "source": "Hacker News",
    "published_at": "2026-11-04T10:10:27Z",
-   "text": "72 points and 29 comments on Hacker News.",
-   "points": 72,
+   "text": "111 points and 34 comments on Hacker News.",
+   "points": 111,
    "discussion": "https://news.ycombinator.com/item?id=50363461"
   },
   {
@@ -105,28 +105,28 @@
    "published_at": "2026-11-03T18:29:54Z",
    "text": "Apple Intelligence in China, redesigned Health app, AI listening features on the Apple Watch are all in the new betas.",
    "author_name": "Mark Gurman",
-   "likes": 507,
+   "likes": 508,
    "story": "Apple opens Siri AI to all developers, letting any app on iOS 27.3 beta and other 27.3 OS betas bring its content and actions into Siri AI by using App Intents",
    "links": [
     "https://www.bloomberg.com/news/articles/2026-11-03/apple-releases-ios-27-3-beta-with-watch-ai-listening-tools-health-app-china-ai?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc5MzczMDU5MCwiZXhwIjoxNzk0MzM1MzkwLCJhcnRpY2xlSWQiOiJUTlhWQTJOM04wOUowMCIsImJjb25uZWN0SWQiOiJDNEVEQ0FFMUZBMDU0MEJFQTI0QTlGMjExQzFFOTA4MCJ9.7fxypbPrSvvjnL8axvz4558x4pLkCOGmDrxk0Q0E3l0"
    ]
   },
   {
-   "title": "Sources: Oracle has scrapped a ~$7B, five-year deal to lease ~100K advanced AI chips to Tencent aft…",
-   "url": "https://www.ft.com/content/c5a6a738-cd78-4a8e-a814-57a7473ebb9c",
-   "source": "Financial Times",
-   "published_at": "2026-11-04T06:06:13Z",
-   "text": "Sources: Oracle has scrapped a ~$7B, five-year deal to lease ~100K advanced AI chips to Tencent after yielding to pressure from the Trump administration. Intervention comes amid growing tension for US AI infrastructure groups doing business with Chinese tech giants.",
+   "title": "Democrats' US midterms victory is a win for hyperscalers and AI labs, a mixed bag for Nvidia, an ad…",
+   "url": "https://stratechery.com/2026/ai-on-the-ballot/",
+   "source": "Ben Thompson / Stratechery",
+   "published_at": "2026-11-04T11:46:24Z",
+   "text": "Democrats' US midterms victory is a win for hyperscalers and AI labs, a mixed bag for Nvidia, an advantage to China, and may make space data centers attractive. Data Centers were on the ballot, and they lost in a major way; what does it mean if American opposition to building is permanent?",
    "via": "Techmeme"
   },
   {
-   "title": "Geoffrey Hinton: it might turn out we were better off without AI",
-   "url": "https://www.theguardian.com/uk-news/2026/nov/03/ai-godfather-geoffrey-hinton-better-off-without-ai",
+   "title": "Nvidia RTX Spark encrypted firmware slows inference speed to 35% on Linux",
+   "url": "https://www.mindstudio.ai/blog/linux-nvidia-rtx-spark-laptop",
    "source": "Hacker News",
-   "published_at": "2026-11-04T10:23:34Z",
-   "text": "64 points and 30 comments on Hacker News.",
-   "points": 64,
-   "discussion": "https://news.ycombinator.com/item?id=50363554"
+   "published_at": "2026-11-04T08:46:29Z",
+   "text": "173 points and 88 comments on Hacker News.",
+   "points": 173,
+   "discussion": "https://news.ycombinator.com/item?id=50362905"
   },
   {
    "title": "The U.S. Census Bureau and “Super Intelligence”",
