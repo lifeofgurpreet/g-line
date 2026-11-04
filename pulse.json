@@ -1,13 +1,13 @@
 {
  "schema": 1,
- "generated_at": "2026-11-04T00:44:49Z",
+ "generated_at": "2026-11-04T01:17:36Z",
  "items": [
   {
-   "title": "Google plans to make it easier to restrict its AI tools for students in early 2027, but says school…",
+   "title": "Google says AI tools for K-12 students will be off by default in 2027; schools that block AI entire…",
    "url": "https://www.nytimes.com/2026/11/03/us/google-search-schools-restrict-ai.html?unlocked_article_code=1.NlE.VMKr.Cr-g-C6phyfH&smid=url-share",
    "source": "New York Times",
    "published_at": "2026-11-03T15:45:56Z",
-   "text": "Google plans to make it easier to restrict its AI tools for students in early 2027, but says schools that block AI entirely will lose student access to Search. Google is making it easier to restrict its A.I. tools for students. But schools that block A.I. entirely will lose student access to Google's search engine.",
+   "text": "Google says AI tools for K-12 students will be off by default in 2027; schools that block AI entirely will lose Search, as “Search and AI are deeply integrated”. Google is making it easier to restrict its A.I. tools for students. But schools that block A.I. entirely will lose student access to Google's search engine.",
    "via": "Techmeme"
   },
   {
@@ -17,7 +17,7 @@
    "published_at": "2026-11-03T15:03:52Z",
    "text": "7 BILLION DOLLAR crypto hack came from a homebrew install from someone tryna vibecode something 😭",
    "author_name": "ashen",
-   "likes": 8742,
+   "likes": 8838,
    "story": "Binance says North Korean hackers stole $6.3B through a months-long scheme with fake LinkedIn job interviews and an ad campaign to deliver malicious software"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-11-03T18:29:54Z",
    "text": "Apple Intelligence in China, redesigned Health app, AI listening features on the Apple Watch are all in the new betas.",
    "author_name": "Mark Gurman",
-   "likes": 420,
+   "likes": 429,
    "story": "Apple opens Siri AI to all developers, letting any app on iOS 27.3 beta and other 27.3 OS betas bring its content and actions into Siri AI by using App Intents",
    "links": [
     "https://www.bloomberg.com/news/articles/2026-11-03/apple-releases-ios-27-3-beta-with-watch-ai-listening-tools-health-app-china-ai?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc5MzczMDU5MCwiZXhwIjoxNzk0MzM1MzkwLCJhcnRpY2xlSWQiOiJUTlhWQTJOM04wOUowMCIsImJjb25uZWN0SWQiOiJDNEVEQ0FFMUZBMDU0MEJFQTI0QTlGMjExQzFFOTA4MCJ9.7fxypbPrSvvjnL8axvz4558x4pLkCOGmDrxk0Q0E3l0"
@@ -53,8 +53,8 @@
    "url": "https://github.com/postmanlabs/postman-app-support/issues/14370",
    "source": "Hacker News",
    "published_at": "2026-11-03T17:22:37Z",
-   "text": "988 points and 328 comments on Hacker News.",
-   "points": 988,
+   "text": "1010 points and 336 comments on Hacker News.",
+   "points": 1010,
    "discussion": "https://news.ycombinator.com/item?id=50354960"
   },
   {
@@ -64,8 +64,8 @@
    "published_at": "2026-11-03T16:06:51Z",
    "text": "Nvidia and its CEO Jensen Huang have used their immense soft power to protect their business and influence policy. That's shaped the policy stances of companies like OpenAI. More recently, researchers like Noam Brown have questioned the company's views in Slack channels.",
    "author_name": "Stephanie Palazzolo",
-   "likes": 154,
-   "story": "Sources: Nvidia verbally told cloud compute clients they must sell 51%+ of their services to non-Chinese companies, as the US further limits China's chip access"
+   "likes": 156,
+   "story": "How Nvidia uses soft power to influence customers and shape US chip policy; sources: OpenAI took no public stance on China chip exports to avoid angering Nvidia"
   },
   {
    "title": "Qwen 3.8 27B on my laptop can interpret model weights, too",
@@ -89,7 +89,7 @@
    "published_at": "2026-11-03T02:52:45Z",
    "text": "OpenAI has partnered with Cathedral systems. This is the cybersecurity startup founded by former DOGE staffers who very recently hacked Anthropic's Slack.",
    "author_name": "Andrew Curran",
-   "likes": 356,
+   "likes": 363,
    "story": "OpenAI partners with Cathedral to test its security defenses and revamps its Security Bug Bounty program, including quadrupling rewards for critical findings"
   },
   {
@@ -97,8 +97,8 @@
    "url": "https://arxiv.org/abs/2605.29713",
    "source": "Hacker News",
    "published_at": "2026-11-03T21:40:53Z",
-   "text": "183 points and 31 comments on Hacker News.",
-   "points": 183,
+   "text": "216 points and 32 comments on Hacker News.",
+   "points": 216,
    "discussion": "https://news.ycombinator.com/item?id=50358582"
   },
   {
@@ -114,8 +114,8 @@
    "url": "https://asia.nikkei.com/business/technology/artificial-intelligence/us-tech-giants-hidden-ai-debt-swells-90-to-3.2tn-in-6-months",
    "source": "Hacker News",
    "published_at": "2026-11-03T21:26:44Z",
-   "text": "180 points and 64 comments on Hacker News.",
-   "points": 180,
+   "text": "223 points and 86 comments on Hacker News.",
+   "points": 223,
    "discussion": "https://news.ycombinator.com/item?id=50358422"
   },
   {
