@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-04T06:09:44Z",
+ "generated_at": "2026-11-04T06:42:30Z",
  "items": [
   {
    "title": "Google says AI tools for K-12 students will be off by default in 2027; schools that block AI entire…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-04T01:40:12Z",
    "text": "People should always be in control of the future. OpenAI is against the notion that it would be acceptable for people to be relegated to a role of doing things that “AI systems think makes sense to reward in humans”. People should not cede control of the future to…",
    "author_name": "Ram Altman",
-   "likes": 9764,
+   "likes": 10509,
    "story": "Sam Altman: People should not cede control of the future to superintelligence, and that requirement should ultimately constrain AI progress."
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-11-03T21:33:33Z",
    "text": "Friday was my last day at Anthropic. Two years ago, when Claude Code was a small internal tool, I asked it to build an RL env. I steered it for tens of hours but never manually wrote a line of code. It worked, I was hooked, and I joined the team. When we first launched, most…",
    "author_name": "cat",
-   "likes": 9297,
+   "likes": 9631,
    "story": "Cat Wu, product lead for Claude Code and Cowork, has left Anthropic; Thariq Shihipar, who worked on Claude Code, announced his departure last month"
   },
   {
@@ -50,8 +50,8 @@
    "url": "https://github.com/postmanlabs/postman-app-support/issues/14370",
    "source": "Hacker News",
    "published_at": "2026-11-03T17:22:37Z",
-   "text": "1156 points and 378 comments on Hacker News.",
-   "points": 1156,
+   "text": "1173 points and 386 comments on Hacker News.",
+   "points": 1173,
    "discussion": "https://news.ycombinator.com/item?id=50354960"
   },
   {
@@ -61,7 +61,7 @@
    "published_at": "2026-11-03T15:03:52Z",
    "text": "7 BILLION DOLLAR crypto hack came from a homebrew install from someone tryna vibecode something 😭",
    "author_name": "ashen",
-   "likes": 9403,
+   "likes": 9447,
    "story": "Binance says North Korean hackers stole $6.3B through a months-long scheme with fake LinkedIn job interviews and an ad campaign to deliver malicious software"
   },
   {
@@ -80,12 +80,22 @@
    "via": "Techmeme"
   },
   {
+   "title": "👨‍💻 THREAD on how data center-related ballot measures are faring tonight data centers are on the ba…",
+   "url": "https://x.com/jdcapelouto/status/2117786709173645427",
+   "source": "𝕏 @jdcapelouto",
+   "published_at": "2026-11-04T01:11:12Z",
+   "text": "👨‍💻 THREAD on how data center-related ballot measures are faring tonight data centers are on the ballot in ~40 localities across 13 states, including proposed bans, votes on specific projects, and recalls of pro-data center politicians",
+   "author_name": "J.D. Capelouto",
+   "likes": 1584,
+   "story": "Anti data-center measures pass with huge margins in today's mid term election in America."
+  },
+  {
    "title": "The 'Astra can read and write weights to improve Qwen' post is misleading",
    "url": "https://honnibal.dev/blog/astra-read-write-misleading",
    "source": "Hacker News",
    "published_at": "2026-11-03T12:21:17Z",
-   "text": "950 points and 197 comments on Hacker News.",
-   "points": 950,
+   "text": "952 points and 197 comments on Hacker News.",
+   "points": 952,
    "discussion": "https://news.ycombinator.com/item?id=50351111"
   },
   {
@@ -101,8 +111,8 @@
    "url": "https://arxiv.org/abs/2605.29713",
    "source": "Hacker News",
    "published_at": "2026-11-03T21:40:53Z",
-   "text": "295 points and 49 comments on Hacker News.",
-   "points": 295,
+   "text": "302 points and 49 comments on Hacker News.",
+   "points": 302,
    "discussion": "https://news.ycombinator.com/item?id=50358582"
   },
   {
@@ -118,14 +128,6 @@
    "source": "Tobias Mann / The Register",
    "published_at": "2026-11-03T21:50:57Z",
    "text": "Revolut says it cut AI coding inference costs by ~90% in less than a year by making self-hosted GLM models its default over commercial tools like Claude Code. Revolut says that in less than a year it's managed to slash its AI coding inference costs by roughly 90 percent by making self-hosted models …",
-   "via": "Techmeme"
-  },
-  {
-   "title": "Q&A with NYC Mayor Zohran Mamdani on new municipal AI policy measures, like an AI ban for some stud…",
-   "url": "https://www.wired.com/story/the-big-interview-podcast-nyc-mayor-zohran-mamdani/",
-   "source": "Katie Drummond / Wired",
-   "published_at": "2026-11-04T01:46:15Z",
-   "text": "Q&A with NYC Mayor Zohran Mamdani on new municipal AI policy measures, like an AI ban for some students, support for a one-year data center pause, and more. Ahead of the midterms, WIRED talked to New York City's mayor about data centers, AI in schools, and the future of the Democratic party.",
    "via": "Techmeme"
   }
  ],
