@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-04T20:41:13Z",
+ "generated_at": "2026-11-04T21:13:41Z",
  "items": [
   {
    "title": "Democratic gubernatorial wins from Texas and Georgia to Ohio and Pennsylvania are set to expose 50%…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-03T21:33:33Z",
    "text": "Friday was my last day at Anthropic. Two years ago, when Claude Code was a small internal tool, I asked it to build an RL env. I steered it for tens of hours but never manually wrote a line of code. It worked, I was hooked, and I joined the team. When we first launched, most…",
    "author_name": "cat",
-   "likes": 14326,
+   "likes": 14414,
    "story": "Cat Wu, product lead for Claude Code and Cowork, says she has left Anthropic; Thariq Shihipar, who worked on Claude Code, announced his departure on October 24"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-11-04T19:51:36Z",
    "text": "NEW: Apple is cutting employee AI spending budgets even as it pushes workers to use the technology more. Engineers have seen daily limits cut from $300 to $200, with further reductions to $100 planned. Other teams could see limits fall to $25.",
    "author_name": "Mark Gurman",
-   "likes": 374,
+   "likes": 727,
    "story": "Sources: Apple cut some engineers' daily AI spending cap to $200 from $300 and plans cuts to as little as $100, as cost cutting stokes staff fears of layoffs",
    "links": [
     "https://www.bloomberg.com/news/articles/2026-11-04/apple-cuts-internal-ai-usage-budgets-in-move-to-reduce-spending?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc5MzgyMTg3MSwiZXhwIjoxNzk0NDI2NjcxLCJhcnRpY2xlSWQiOiJUTlhPMzdLSzNOWTkwMCIsImJjb25uZWN0SWQiOiJDNEVEQ0FFMUZBMDU0MEJFQTI0QTlGMjExQzFFOTA4MCJ9.efg5gZUg_bpWGkDdX9in4eLTEutSs8WX9rD17IHSi_o"
@@ -47,7 +47,7 @@
    "published_at": "2026-11-04T18:05:50Z",
    "text": "welcome @pierrecomputer to openai! pierre’s open-source developer tools already power parts of codex today, and excited to build together the future of collaboratively building software with ai.",
    "author_name": "Greg Brockman",
-   "likes": 608,
+   "likes": 651,
    "story": "OpenAI acquires developer tools startup Pierre Computer for an undisclosed amount and plans to integrate Pierre's Code Storage feature directly into Codex"
   },
   {
@@ -63,8 +63,8 @@
    "url": "https://spectrum.ieee.org/ai-in-cybersecurity-php2shell-vulnerability",
    "source": "Hacker News",
    "published_at": "2026-11-04T11:52:17Z",
-   "text": "899 points and 544 comments on Hacker News.",
-   "points": 899,
+   "text": "936 points and 572 comments on Hacker News.",
+   "points": 936,
    "discussion": "https://news.ycombinator.com/item?id=50364336"
   },
   {
@@ -74,7 +74,7 @@
    "published_at": "2026-11-04T06:25:16Z",
    "text": "Elon Musk moving to Texas to get away from Dems, becoming the biggest partisan megadonor in history, then spending around a half-billion dollars to have his own state go blue immediately in the next election — with data centers the top gov issue — is pretty impressive",
    "author_name": "Benjy Sarlin",
-   "likes": 22875,
+   "likes": 23095,
    "story": "Elon Musk's preferred US midterm candidates, including Ken Paxton and Vivek Ramaswamy, lost almost everywhere; Musk spent ~$446M, a record for a non-candidate"
   },
   {
@@ -84,7 +84,7 @@
    "published_at": "2026-11-04T18:24:35Z",
    "text": "Today we release Ripple-65B Preview, our 65B dense LLM we pretrained from scratch. Ripple sets a new state-of-the-art for U.S. open-weight models in agentic coding tasks, surpassing significantly larger models including Muse Spark Open-816B, Beam-501B, Inkling-975B, and Nemotron…",
    "author_name": "Ricursive Intelligence",
-   "likes": 1432,
+   "likes": 1730,
    "story": "Ricursive Intelligence released their first LLM: Ripple-65B Preview, a 65B dense model."
   },
   {
@@ -95,11 +95,11 @@
    "text": "Yesterday's hot paper was Sparks of Weight-Space Programming: LLMs can natively read & write neural network weights by Rikiya Takehi, Jayden Teoh, Alex Zhang, and Omar Khattab. The paper (OK, the authors classify is as a \"blog post\", but it's paper-shaped) found that frontier models, in particular GPT-6 Astra, can both interpret and modify the raw weights of a machine learning model - literally a text description of the model containing a bunch of floating point numbers."
   },
   {
-   "title": "Democrats' US midterms victory is a win for hyperscalers and AI labs, a mixed bag for Nvidia, an ad…",
-   "url": "https://stratechery.com/2026/ai-on-the-ballot/",
-   "source": "Ben Thompson / Stratechery",
-   "published_at": "2026-11-04T11:46:24Z",
-   "text": "Democrats' US midterms victory is a win for hyperscalers and AI labs, a mixed bag for Nvidia, an advantage to China, and may make space data centers attractive. Data Centers were on the ballot, and they lost in a major way; what does it mean if American opposition to building is permanent?",
+   "title": "Democrats who ran on data center opposition and AI regulation won Congress seats in OH, PA, WI, CO;…",
+   "url": "https://www.politico.com/news/2026/11/04/dems-made-big-tech-a-foil-and-they-couldnt-stop-winning-01148450",
+   "source": "Politico",
+   "published_at": "2026-11-04T12:26:01Z",
+   "text": "Democrats who ran on data center opposition and AI regulation won Congress seats in OH, PA, WI, CO; some see a mandate to use their new gavels against Big Tech. Democrats' decisive midterms victory marked a warning shot to politicians who choose to align with the artificial intelligence industry …",
    "via": "Techmeme"
   },
   {
@@ -109,7 +109,7 @@
    "published_at": "2026-11-04T17:31:36Z",
    "text": "We’re releasing new Qwen3.8-Flash-Next GGUFs with 15% higher accuracy. Unsloth Dynamic V3.1 outperforms others by >15% on Terminal Bench, DeepSWE & more benchmarks (256K context). Run on 32GB+ RAM setups. GGUF: Blog:",
    "author_name": "Unsloth AI",
-   "likes": 950,
+   "likes": 1012,
    "story": "Qwen 3.8 Flash Next GSQ RCO quant as good as BF16",
    "links": [
     "https://huggingface.co/unsloth/Qwen3.8-Flash-Next-GGUF",
@@ -117,31 +117,30 @@
    ]
   },
   {
+   "title": "Ripple-65B Preview: U.S. Open-Weight SOTA on Agentic Coding",
+   "url": "https://www.ricursive.com/ripple",
+   "source": "Hacker News",
+   "published_at": "2026-11-04T18:53:29Z",
+   "text": "116 points and 43 comments on Hacker News.",
+   "points": 116,
+   "discussion": "https://news.ycombinator.com/item?id=50369925"
+  },
+  {
+   "title": "CoreWeave's stock and unsecured bonds fall after sweeping Democratic midterm victories, as Texas Go…",
+   "url": "https://www.bloomberg.com/news/articles/2026-11-04/coreweave-bonds-hit-new-lows-as-texas-data-centers-in-crosshairs",
+   "source": "Katherine Schwartz / Bloomb…",
+   "published_at": "2026-11-04T16:11:25Z",
+   "text": "CoreWeave's stock and unsecured bonds fall after sweeping Democratic midterm victories, as Texas Governor-elect Gina Hinojosa calls for a data center moratorium. CoreWeave Inc.'s bonds tumbled on Wednesday, in some cases to new lows, after Democratic candidates in favor of slowing …",
+   "via": "Techmeme"
+  },
+  {
    "title": "Kimi K3.1 Pro model weights are out",
    "url": "https://huggingface.co/moonshotai/Kimi-K3.1-Pro",
    "source": "Hacker News",
    "published_at": "2026-11-04T15:30:30Z",
-   "text": "249 points and 66 comments on Hacker News.",
-   "points": 249,
+   "text": "263 points and 68 comments on Hacker News.",
+   "points": 263,
    "discussion": "https://news.ycombinator.com/item?id=50366999"
-  },
-  {
-   "title": "BREAKING: Oracle just CANCELED its $7 billion AI deal with Tencent it has begun",
-   "url": "https://x.com/ns123abc/status/2117857386610454950",
-   "source": "𝕏 @ns123abc",
-   "published_at": "2026-11-04T05:52:03Z",
-   "text": "BREAKING: Oracle just CANCELED its $7 billion AI deal with Tencent it has begun",
-   "author_name": "NIK",
-   "likes": 10025,
-   "story": "Sources: Oracle has scrapped a ~$7B, five-year deal to lease as many as 100K advanced AI chips to Tencent after bowing to pressure from the Trump administration"
-  },
-  {
-   "title": "Democrats running on AI regulation and anti-data center platforms won key races, including Sherrod…",
-   "url": "https://www.politico.com/news/2026/11/04/dems-made-big-tech-a-foil-and-they-couldnt-stop-winning-01148450",
-   "source": "Politico",
-   "published_at": "2026-11-04T12:26:01Z",
-   "text": "Democrats running on AI regulation and anti-data center platforms won key races, including Sherrod Brown in Ohio, as leadership signals aggressive AI oversight. Democrats' decisive midterms victory marked a warning shot to politicians who choose to align with the artificial intelligence industry …",
-   "via": "Techmeme"
   }
  ],
  "sources": "curated, Techmeme, X (found via Techmeme, Reddit, the Internet Archive), Claude Code releases, Anthropic, Hacker News, Simon Willison"
