@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-04T02:23:00Z",
+ "generated_at": "2026-11-04T02:56:01Z",
  "items": [
   {
    "title": "Google says AI tools for K-12 students will be off by default in 2027; schools that block AI entire…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-03T21:33:33Z",
    "text": "Friday was my last day at Anthropic. Two years ago, when Claude Code was a small internal tool, I asked it to build an RL env. I steered it for tens of hours but never manually wrote a line of code. It worked, I was hooked, and I joined the team. When we first launched, most…",
    "author_name": "cat",
-   "likes": 6863,
+   "likes": 7255,
    "story": "Cat Wu, product lead for Claude Code and Cowork, has left Anthropic; Thariq Shihipar, who worked on Claude Code, announced his departure last month"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-11-03T15:03:52Z",
    "text": "7 BILLION DOLLAR crypto hack came from a homebrew install from someone tryna vibecode something 😭",
    "author_name": "ashen",
-   "likes": 8985,
+   "likes": 9065,
    "story": "Binance says North Korean hackers stole $6.3B through a months-long scheme with fake LinkedIn job interviews and an ad campaign to deliver malicious software"
   },
   {
@@ -50,8 +50,8 @@
    "url": "https://github.com/postmanlabs/postman-app-support/issues/14370",
    "source": "Hacker News",
    "published_at": "2026-11-03T17:22:37Z",
-   "text": "1046 points and 346 comments on Hacker News.",
-   "points": 1046,
+   "text": "1063 points and 351 comments on Hacker News.",
+   "points": 1063,
    "discussion": "https://news.ycombinator.com/item?id=50354960"
   },
   {
@@ -80,23 +80,13 @@
    "via": "Techmeme"
   },
   {
-   "title": "OpenAI has partnered with Cathedral systems. This is the cybersecurity startup founded by former DO…",
-   "url": "https://x.com/AndrewCurran_/status/2117449875675889821",
-   "source": "𝕏 @AndrewCurran_",
-   "published_at": "2026-11-03T02:52:45Z",
-   "text": "OpenAI has partnered with Cathedral systems. This is the cybersecurity startup founded by former DOGE staffers who very recently hacked Anthropic's Slack.",
-   "author_name": "Andrew Curran",
-   "likes": 365,
-   "story": "OpenAI partners with Cathedral to test its security defenses and revamps its Security Bug Bounty program, including quadrupling rewards for critical findings"
-  },
-  {
-   "title": "The Little Book of Generative AI Foundations: An Intuitive Mathematical Primer",
-   "url": "https://arxiv.org/abs/2605.29713",
+   "title": "US tech giants' hidden AI debt swells 90% to $3.2T in 6 months",
+   "url": "https://asia.nikkei.com/business/technology/artificial-intelligence/us-tech-giants-hidden-ai-debt-swells-90-to-3.2tn-in-6-months",
    "source": "Hacker News",
-   "published_at": "2026-11-03T21:40:53Z",
-   "text": "247 points and 39 comments on Hacker News.",
-   "points": 247,
-   "discussion": "https://news.ycombinator.com/item?id=50358582"
+   "published_at": "2026-11-03T21:26:44Z",
+   "text": "281 points and 122 comments on Hacker News.",
+   "points": 281,
+   "discussion": "https://news.ycombinator.com/item?id=50358422"
   },
   {
    "title": "Anthropic releases FlashProve, an open-source prototype that cryptographically verifies an AI respo…",
@@ -107,13 +97,13 @@
    "via": "Techmeme"
   },
   {
-   "title": "US tech giants' hidden AI debt swells 90% to $3.2T in 6 months",
-   "url": "https://asia.nikkei.com/business/technology/artificial-intelligence/us-tech-giants-hidden-ai-debt-swells-90-to-3.2tn-in-6-months",
+   "title": "The Little Book of Generative AI Foundations: An Intuitive Mathematical Primer",
+   "url": "https://arxiv.org/abs/2605.29713",
    "source": "Hacker News",
-   "published_at": "2026-11-03T21:26:44Z",
-   "text": "262 points and 115 comments on Hacker News.",
-   "points": 262,
-   "discussion": "https://news.ycombinator.com/item?id=50358422"
+   "published_at": "2026-11-03T21:40:53Z",
+   "text": "251 points and 42 comments on Hacker News.",
+   "points": 251,
+   "discussion": "https://news.ycombinator.com/item?id=50358582"
   },
   {
    "title": "The U.S. Census Bureau and “Super Intelligence”",
@@ -128,6 +118,14 @@
    "source": "Tobias Mann / The Register",
    "published_at": "2026-11-03T21:50:57Z",
    "text": "Revolut says it cut AI coding inference costs by ~90% in less than a year by making self-hosted GLM models its default over commercial tools like Claude Code. Revolut says that in less than a year it's managed to slash its AI coding inference costs by roughly 90 percent by making self-hosted models …",
+   "via": "Techmeme"
+  },
+  {
+   "title": "Q&A with NYC Mayor Zohran Mamdani on new municipal AI policy measures, like an AI ban for some stud…",
+   "url": "https://www.wired.com/story/the-big-interview-podcast-nyc-mayor-zohran-mamdani/",
+   "source": "Katie Drummond / Wired",
+   "published_at": "2026-11-04T01:46:15Z",
+   "text": "Q&A with NYC Mayor Zohran Mamdani on new municipal AI policy measures, like an AI ban for some students, support for a one-year data center pause, and more. Ahead of the midterms, WIRED talked to New York City's mayor about data centers, AI in schools, and the future of the Democratic party.",
    "via": "Techmeme"
   }
  ],
