@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-04T01:17:36Z",
+ "generated_at": "2026-11-04T01:50:41Z",
  "items": [
   {
    "title": "Google says AI tools for K-12 students will be off by default in 2027; schools that block AI entire…",
@@ -11,14 +11,14 @@
    "via": "Techmeme"
   },
   {
-   "title": "7 BILLION DOLLAR crypto hack came from a homebrew install from someone tryna vibecode something 😭",
-   "url": "https://x.com/ashen_one/status/2117633867955720451",
-   "source": "𝕏 @ashen_one",
-   "published_at": "2026-11-03T15:03:52Z",
-   "text": "7 BILLION DOLLAR crypto hack came from a homebrew install from someone tryna vibecode something 😭",
-   "author_name": "ashen",
-   "likes": 8838,
-   "story": "Binance says North Korean hackers stole $6.3B through a months-long scheme with fake LinkedIn job interviews and an ad campaign to deliver malicious software"
+   "title": "Friday was my last day at Anthropic. Two years ago, when Claude Code was a small internal tool, I a…",
+   "url": "https://x.com/_catwu/status/2117731934340337676",
+   "source": "𝕏 @_catwu",
+   "published_at": "2026-11-03T21:33:33Z",
+   "text": "Friday was my last day at Anthropic. Two years ago, when Claude Code was a small internal tool, I asked it to build an RL env. I steered it for tens of hours but never manually wrote a line of code. It worked, I was hooked, and I joined the team. When we first launched, most…",
+   "author_name": "cat",
+   "likes": 6470,
+   "story": "Cat Wu, product lead for Claude Code and Cowork, has left Anthropic; Thariq Shihipar, who worked on Claude Code, announced his departure last month"
   },
   {
    "title": "Claude Code 2.1.318 released",
@@ -28,24 +28,21 @@
    "text": "Added a record of your answer when Claude Code asks to turn on the mods it writes in a session · Added assume_role on mantle upstreams of the Claude apps gateway, for a role in another AWS account and for per-developer AWS cost attribution · Added an effort option to a mod's $.model.fork, so a quick side job can run at low whatever effort the session uses; the result reports the effort sent · Added the date a stored claude.ai sign-in ends to claude auth status (loginExpiresAt) and to claude -p JSON results (credential_expires_at)"
   },
   {
-   "title": "Apple Intelligence in China, redesigned Health app, AI listening features on the Apple Watch are al…",
-   "url": "https://x.com/markgurman/status/2117685717690200087",
-   "source": "𝕏 @markgurman",
-   "published_at": "2026-11-03T18:29:54Z",
-   "text": "Apple Intelligence in China, redesigned Health app, AI listening features on the Apple Watch are all in the new betas.",
-   "author_name": "Mark Gurman",
-   "likes": 429,
-   "story": "Apple opens Siri AI to all developers, letting any app on iOS 27.3 beta and other 27.3 OS betas bring its content and actions into Siri AI by using App Intents",
-   "links": [
-    "https://www.bloomberg.com/news/articles/2026-11-03/apple-releases-ios-27-3-beta-with-watch-ai-listening-tools-health-app-china-ai?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc5MzczMDU5MCwiZXhwIjoxNzk0MzM1MzkwLCJhcnRpY2xlSWQiOiJUTlhWQTJOM04wOUowMCIsImJjb25uZWN0SWQiOiJDNEVEQ0FFMUZBMDU0MEJFQTI0QTlGMjExQzFFOTA4MCJ9.7fxypbPrSvvjnL8axvz4558x4pLkCOGmDrxk0Q0E3l0"
-   ]
+   "title": "7 BILLION DOLLAR crypto hack came from a homebrew install from someone tryna vibecode something 😭",
+   "url": "https://x.com/ashen_one/status/2117633867955720451",
+   "source": "𝕏 @ashen_one",
+   "published_at": "2026-11-03T15:03:52Z",
+   "text": "7 BILLION DOLLAR crypto hack came from a homebrew install from someone tryna vibecode something 😭",
+   "author_name": "ashen",
+   "likes": 8901,
+   "story": "Binance says North Korean hackers stole $6.3B through a months-long scheme with fake LinkedIn job interviews and an ad campaign to deliver malicious software"
   },
   {
-   "title": "AMD reports Q3 revenue up 45% YoY to $13.38B, vs. $13.09B est., Data Center revenue up 97% to $8.5B…",
-   "url": "https://www.cnbc.com/2026/11/03/amd-amd-q3-earnings-report-2026-.html",
-   "source": "Katie Tarasov / CNBC",
-   "published_at": "2026-11-03T21:30:55Z",
-   "text": "AMD reports Q3 revenue up 45% YoY to $13.38B, vs. $13.09B est., Data Center revenue up 97% to $8.5B, forecasts Q4 revenue above est.; AMD jumps 7%+ after hours. Advanced Micro Devices reported third-quarter earnings on Tuesday that beat Wall Street's expectations, with revenue jump 45% …",
+   "title": "Apple opens Siri AI to all developers, letting any app on iOS 27.3 beta and other 27.3 OS betas bri…",
+   "url": "https://developer.apple.com/news/?id=gdk2umrf",
+   "source": "Apple Developer",
+   "published_at": "2026-11-03T20:15:53Z",
+   "text": "Apple opens Siri AI to all developers, letting any app on iOS 27.3 beta and other 27.3 OS betas bring its content and actions into Siri AI by using App Intents. Starting today with the iOS 27.3, iPadOS 27.3, macOS 27.3, and visionOS 27.3 betas, a new Developer Preview enables any developer …",
    "via": "Techmeme"
   },
   {
@@ -53,8 +50,8 @@
    "url": "https://github.com/postmanlabs/postman-app-support/issues/14370",
    "source": "Hacker News",
    "published_at": "2026-11-03T17:22:37Z",
-   "text": "1010 points and 336 comments on Hacker News.",
-   "points": 1010,
+   "text": "1025 points and 343 comments on Hacker News.",
+   "points": 1025,
    "discussion": "https://news.ycombinator.com/item?id=50354960"
   },
   {
@@ -64,7 +61,7 @@
    "published_at": "2026-11-03T16:06:51Z",
    "text": "Nvidia and its CEO Jensen Huang have used their immense soft power to protect their business and influence policy. That's shaped the policy stances of companies like OpenAI. More recently, researchers like Noam Brown have questioned the company's views in Slack channels.",
    "author_name": "Stephanie Palazzolo",
-   "likes": 156,
+   "likes": 158,
    "story": "How Nvidia uses soft power to influence customers and shape US chip policy; sources: OpenAI took no public stance on China chip exports to avoid angering Nvidia"
   },
   {
@@ -75,11 +72,11 @@
    "text": "Yesterday's hot paper was Sparks of Weight-Space Programming: LLMs can natively read & write neural network weights by Rikiya Takehi, Jayden Teoh, Alex Zhang, and Omar Khattab. The paper (OK, the authors classify is as a \"blog post\", but it's paper-shaped) found that frontier models, in particular GPT-6 Astra, can both interpret and modify the raw weights of a machine learning model - literally a text description of the model containing a bunch of floating point numbers."
   },
   {
-   "title": "Anthropic releases FlashProve, an open-source prototype that cryptographically verifies an AI respo…",
-   "url": "https://www.anthropic.com/research/provable-inference",
-   "source": "Anthropic",
-   "published_at": "2026-11-03T21:11:18Z",
-   "text": "Anthropic releases FlashProve, an open-source prototype that cryptographically verifies an AI response came from a given model, not one that a router swapped in. Roy Rinberg (Anthropic), Alex Allain (Anthropic); Alessandro Chiesa (EPFL, StarkWare), Miranda Christ (MIT, RESI), Rahul Dalal …",
+   "title": "AMD reports Q3 revenue up 45% YoY to $13.38B, vs. $13.09B est., Data Center revenue up 97% to $8.5B…",
+   "url": "https://www.cnbc.com/2026/11/03/amd-amd-q3-earnings-report-2026-.html",
+   "source": "Katie Tarasov / CNBC",
+   "published_at": "2026-11-03T21:30:55Z",
+   "text": "AMD reports Q3 revenue up 45% YoY to $13.38B, vs. $13.09B est., Data Center revenue up 97% to $8.5B, forecasts Q4 revenue above est.; AMD jumps 7%+ after hours. Advanced Micro Devices reported third-quarter earnings on Tuesday that beat Wall Street's expectations, with revenue jump 45% …",
    "via": "Techmeme"
   },
   {
@@ -89,7 +86,7 @@
    "published_at": "2026-11-03T02:52:45Z",
    "text": "OpenAI has partnered with Cathedral systems. This is the cybersecurity startup founded by former DOGE staffers who very recently hacked Anthropic's Slack.",
    "author_name": "Andrew Curran",
-   "likes": 363,
+   "likes": 364,
    "story": "OpenAI partners with Cathedral to test its security defenses and revamps its Security Bug Bounty program, including quadrupling rewards for critical findings"
   },
   {
@@ -97,16 +94,16 @@
    "url": "https://arxiv.org/abs/2605.29713",
    "source": "Hacker News",
    "published_at": "2026-11-03T21:40:53Z",
-   "text": "216 points and 32 comments on Hacker News.",
-   "points": 216,
+   "text": "227 points and 35 comments on Hacker News.",
+   "points": 227,
    "discussion": "https://news.ycombinator.com/item?id=50358582"
   },
   {
-   "title": "Revolut says it cut AI coding inference costs by ~90% in less than a year by making self-hosted GLM…",
-   "url": "https://www.theregister.com/ai-and-ml/2026/11/03/british-fintech-revolut-slashes-ai-coding-costs-10x-by-cutting-out-claude-and-going-self-hosted/5307345",
-   "source": "Tobias Mann / The Register",
-   "published_at": "2026-11-03T21:50:57Z",
-   "text": "Revolut says it cut AI coding inference costs by ~90% in less than a year by making self-hosted GLM models its default over commercial tools like Claude Code. Revolut says that in less than a year it's managed to slash its AI coding inference costs by roughly 90 percent by making self-hosted models …",
+   "title": "Anthropic releases FlashProve, an open-source prototype that cryptographically verifies an AI respo…",
+   "url": "https://www.anthropic.com/research/provable-inference",
+   "source": "Anthropic",
+   "published_at": "2026-11-03T21:11:18Z",
+   "text": "Anthropic releases FlashProve, an open-source prototype that cryptographically verifies an AI response came from a given model, not one that a router swapped in. Roy Rinberg (Anthropic), Alex Allain (Anthropic); Alessandro Chiesa (EPFL, StarkWare), Miranda Christ (MIT, RESI), Rahul Dalal …",
    "via": "Techmeme"
   },
   {
@@ -114,8 +111,8 @@
    "url": "https://asia.nikkei.com/business/technology/artificial-intelligence/us-tech-giants-hidden-ai-debt-swells-90-to-3.2tn-in-6-months",
    "source": "Hacker News",
    "published_at": "2026-11-03T21:26:44Z",
-   "text": "223 points and 86 comments on Hacker News.",
-   "points": 223,
+   "text": "233 points and 103 comments on Hacker News.",
+   "points": 233,
    "discussion": "https://news.ycombinator.com/item?id=50358422"
   },
   {
@@ -126,11 +123,11 @@
    "text": "I was reminded today of AI Adoption Rate Trending Down for Large Companies , a chart produced by Apollo Global Management in September 2025, which appeared to show a slowdown in U.S. corporate AI adoption based on numbers collected by the U.S. Census Bureau. At the time I used that chart to demonstrate GPT-5 data analysis , and then to experiment with Claude's new Code Interpreter . I decided to try running those numbers again to see what had changed over the past year, and in doing so learned that the Bureau has fallen foul of Executive Order 14434 , aka the asinine Super Intelligence one."
   },
   {
-   "title": "OpenAI hires ex-US Army Secretary Dan Driscoll to oversee national security modernization, as it pu…",
-   "url": "https://www.wsj.com/politics/national-security/openai-hires-former-army-secretary-dan-driscoll-to-cybersecurity-role-0e5cc0a1?st=cfNEPb&reflink=desktopwebshare_permalink",
-   "source": "Gareth Vipers / Wall Street…",
-   "published_at": "2026-11-03T11:25:49Z",
-   "text": "OpenAI hires ex-US Army Secretary Dan Driscoll to oversee national security modernization, as it pushes to secure government contracts and shape military policy. Driscoll will advise on ways AI could bolster U.S. security capabilities and cyber defenses — OpenAI has appointed former …",
+   "title": "Revolut says it cut AI coding inference costs by ~90% in less than a year by making self-hosted GLM…",
+   "url": "https://www.theregister.com/ai-and-ml/2026/11/03/british-fintech-revolut-slashes-ai-coding-costs-10x-by-cutting-out-claude-and-going-self-hosted/5307345",
+   "source": "Tobias Mann / The Register",
+   "published_at": "2026-11-03T21:50:57Z",
+   "text": "Revolut says it cut AI coding inference costs by ~90% in less than a year by making self-hosted GLM models its default over commercial tools like Claude Code. Revolut says that in less than a year it's managed to slash its AI coding inference costs by roughly 90 percent by making self-hosted models …",
    "via": "Techmeme"
   }
  ],
