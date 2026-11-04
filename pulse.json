@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-04T08:50:44Z",
+ "generated_at": "2026-11-04T09:22:31Z",
  "items": [
   {
    "title": "Google says AI tools for K-12 students will be off by default in 2027; schools that block AI entire…",
@@ -11,14 +11,14 @@
    "via": "Techmeme"
   },
   {
-   "title": "People should always be in control of the future. OpenAI is against the notion that it would be acc…",
-   "url": "https://x.com/sama/status/2117794005165748448",
-   "source": "𝕏 @sama",
-   "published_at": "2026-11-04T01:40:12Z",
-   "text": "People should always be in control of the future. OpenAI is against the notion that it would be acceptable for people to be relegated to a role of doing things that “AI systems think makes sense to reward in humans”. People should not cede control of the future to…",
-   "author_name": "Ram Altman",
-   "likes": 12563,
-   "story": "Sam Altman: People should not cede control of the future to superintelligence, and that requirement should ultimately constrain AI progress."
+   "title": "Data centers in space looking pretty appealing right now",
+   "url": "https://x.com/elonmusk/status/2117862462976594112",
+   "source": "𝕏 @elonmusk",
+   "published_at": "2026-11-04T06:12:13Z",
+   "text": "Data centers in space looking pretty appealing right now",
+   "author_name": "Elon Musk",
+   "likes": 72477,
+   "story": "A Democratic sweep of US Congress pulls down Asian tech stocks, as investors rethink trades built around Trump's policy agenda for AI infrastructure and crypto"
   },
   {
    "title": "Claude Code 2.1.318 released",
@@ -28,14 +28,24 @@
    "text": "Added a record of your answer when Claude Code asks to turn on the mods it writes in a session · Added assume_role on mantle upstreams of the Claude apps gateway, for a role in another AWS account and for per-developer AWS cost attribution · Added an effort option to a mod's $.model.fork, so a quick side job can run at low whatever effort the session uses; the result reports the effort sent · Added the date a stored claude.ai sign-in ends to claude auth status (loginExpiresAt) and to claude -p JSON results (credential_expires_at)"
   },
   {
-   "title": "Friday was my last day at Anthropic. Two years ago, when Claude Code was a small internal tool, I a…",
-   "url": "https://x.com/_catwu/status/2117731934340337676",
-   "source": "𝕏 @_catwu",
-   "published_at": "2026-11-03T21:33:33Z",
-   "text": "Friday was my last day at Anthropic. Two years ago, when Claude Code was a small internal tool, I asked it to build an RL env. I steered it for tens of hours but never manually wrote a line of code. It worked, I was hooked, and I joined the team. When we first launched, most…",
-   "author_name": "cat",
-   "likes": 10683,
-   "story": "Cat Wu, product lead for Claude Code and Cowork, has left Anthropic; Thariq Shihipar, who worked on Claude Code, announced his departure last month"
+   "title": "Elon Musk moving to Texas to get away from Dems, becoming the biggest partisan megadonor in history…",
+   "url": "https://x.com/BenjySarlin/status/2117865744662712571",
+   "source": "𝕏 @BenjySarlin",
+   "published_at": "2026-11-04T06:25:16Z",
+   "text": "Elon Musk moving to Texas to get away from Dems, becoming the biggest partisan megadonor in history, then spending around a half-billion dollars to have his own state go blue immediately in the next election — with data centers the top gov issue — is pretty impressive",
+   "author_name": "Benjy Sarlin",
+   "likes": 5088,
+   "story": "Democrat James Talarico defeats Ken Paxton to win Texas's first Democratic Senate seat in 30+ years; Elon Musk spent $47M backing Paxton and attacked Talarico"
+  },
+  {
+   "title": "People should always be in control of the future. OpenAI is against the notion that it would be acc…",
+   "url": "https://x.com/sama/status/2117794005165748448",
+   "source": "𝕏 @sama",
+   "published_at": "2026-11-04T01:40:12Z",
+   "text": "People should always be in control of the future. OpenAI is against the notion that it would be acceptable for people to be relegated to a role of doing things that “AI systems think makes sense to reward in humans”. People should not cede control of the future to…",
+   "author_name": "Ram Altman",
+   "likes": 12928,
+   "story": "Sam Altman: People should not cede control of the future to superintelligence, and that requirement should ultimately constrain AI progress."
   },
   {
    "title": "Apple opens Siri AI to all developers, letting any app on iOS 27.3 beta and other 27.3 OS betas bri…",
@@ -50,19 +60,19 @@
    "url": "https://github.com/postmanlabs/postman-app-support/issues/14370",
    "source": "Hacker News",
    "published_at": "2026-11-03T17:22:37Z",
-   "text": "1246 points and 410 comments on Hacker News.",
-   "points": 1246,
+   "text": "1262 points and 416 comments on Hacker News.",
+   "points": 1262,
    "discussion": "https://news.ycombinator.com/item?id=50354960"
   },
   {
-   "title": "7 BILLION DOLLAR crypto hack came from a homebrew install from someone tryna vibecode something 😭",
-   "url": "https://x.com/ashen_one/status/2117633867955720451",
-   "source": "𝕏 @ashen_one",
-   "published_at": "2026-11-03T15:03:52Z",
-   "text": "7 BILLION DOLLAR crypto hack came from a homebrew install from someone tryna vibecode something 😭",
-   "author_name": "ashen",
-   "likes": 9583,
-   "story": "Binance says North Korean hackers stole $6.3B through a months-long scheme with fake LinkedIn job interviews and an ad campaign to deliver malicious software"
+   "title": "Friday was my last day at Anthropic. Two years ago, when Claude Code was a small internal tool, I a…",
+   "url": "https://x.com/_catwu/status/2117731934340337676",
+   "source": "𝕏 @_catwu",
+   "published_at": "2026-11-03T21:33:33Z",
+   "text": "Friday was my last day at Anthropic. Two years ago, when Claude Code was a small internal tool, I asked it to build an RL env. I steered it for tens of hours but never manually wrote a line of code. It worked, I was hooked, and I joined the team. When we first launched, most…",
+   "author_name": "cat",
+   "likes": 10882,
+   "story": "Cat Wu, product lead for Claude Code and Cowork, has left Anthropic; Thariq Shihipar, who worked on Claude Code, announced his departure last month"
   },
   {
    "title": "Qwen 3.8 27B on my laptop can interpret model weights, too",
@@ -80,47 +90,33 @@
    "via": "Techmeme"
   },
   {
-   "title": "👨‍💻 THREAD on how data center-related ballot measures are faring tonight data centers are on the ba…",
-   "url": "https://x.com/jdcapelouto/status/2117786709173645427",
-   "source": "𝕏 @jdcapelouto",
-   "published_at": "2026-11-04T01:11:12Z",
-   "text": "👨‍💻 THREAD on how data center-related ballot measures are faring tonight data centers are on the ballot in ~40 localities across 13 states, including proposed bans, votes on specific projects, and recalls of pro-data center politicians",
-   "author_name": "J.D. Capelouto",
-   "likes": 1923,
-   "story": "Anti data-center measures pass with huge margins in today's mid term election in America."
+   "title": "7 BILLION DOLLAR crypto hack came from a homebrew install from someone tryna vibecode something 😭",
+   "url": "https://x.com/ashen_one/status/2117633867955720451",
+   "source": "𝕏 @ashen_one",
+   "published_at": "2026-11-03T15:03:52Z",
+   "text": "7 BILLION DOLLAR crypto hack came from a homebrew install from someone tryna vibecode something 😭",
+   "author_name": "ashen",
+   "likes": 9608,
+   "story": "Binance says North Korean hackers stole $6.3B through a months-long scheme with fake LinkedIn job interviews and an ad campaign to deliver malicious software"
   },
   {
    "title": "The 'Astra can read and write weights to improve Qwen' post is misleading",
    "url": "https://honnibal.dev/blog/astra-read-write-misleading",
    "source": "Hacker News",
    "published_at": "2026-11-03T12:21:17Z",
-   "text": "969 points and 201 comments on Hacker News.",
-   "points": 969,
+   "text": "970 points and 202 comments on Hacker News.",
+   "points": 970,
    "discussion": "https://news.ycombinator.com/item?id=50351111"
   },
   {
-   "title": "Democratic gubernatorial wins in Texas, Georgia, Ohio and Pennsylvania could expose 50% of proposed…",
-   "url": "https://www.bloomberg.com/news/articles/2026-11-04/ai-data-center-boom-is-set-for-upheaval-after-us-election-rout",
-   "source": "Bloomberg",
-   "published_at": "2026-11-04T06:56:23Z",
-   "text": "Democratic gubernatorial wins in Texas, Georgia, Ohio and Pennsylvania could expose 50% of proposed US AI data center additions to greater scrutiny and pushback. Data center developers seeking to build dozens of sprawling artificial intelligence campuses across Texas were already dealing …",
-   "via": "Techmeme"
-  },
-  {
-   "title": "The Little Book of Generative AI Foundations: An Intuitive Mathematical Primer",
-   "url": "https://arxiv.org/abs/2605.29713",
-   "source": "Hacker News",
-   "published_at": "2026-11-03T21:40:53Z",
-   "text": "331 points and 51 comments on Hacker News.",
-   "points": 331,
-   "discussion": "https://news.ycombinator.com/item?id=50358582"
-  },
-  {
-   "title": "The U.S. Census Bureau and “Super Intelligence”",
-   "url": "https://simonwillison.net/2026/Nov/2/census-bureau-super-intelligence/",
-   "source": "Simon Willison's weblog",
-   "published_at": "2026-11-02T13:31:26Z",
-   "text": "I was reminded today of AI Adoption Rate Trending Down for Large Companies , a chart produced by Apollo Global Management in September 2025, which appeared to show a slowdown in U.S. corporate AI adoption based on numbers collected by the U.S. Census Bureau. At the time I used that chart to demonstrate GPT-5 data analysis , and then to experiment with Claude's new Code Interpreter . I decided to try running those numbers again to see what had changed over the past year, and in doing so learned that the Bureau has fallen foul of Executive Order 14434 , aka the asinine Super Intelligence one."
+   "title": "👨‍💻 THREAD on how data center-related ballot measures are faring tonight data centers are on the ba…",
+   "url": "https://x.com/jdcapelouto/status/2117786709173645427",
+   "source": "𝕏 @jdcapelouto",
+   "published_at": "2026-11-04T01:11:12Z",
+   "text": "👨‍💻 THREAD on how data center-related ballot measures are faring tonight data centers are on the ballot in ~40 localities across 13 states, including proposed bans, votes on specific projects, and recalls of pro-data center politicians",
+   "author_name": "J.D. Capelouto",
+   "likes": 1973,
+   "story": "Anti data-center measures pass with huge margins in today's mid term election in America."
   },
   {
    "title": "Anthropic releases FlashProve, an open-source prototype that cryptographically verifies an AI respo…",
@@ -129,6 +125,15 @@
    "published_at": "2026-11-03T21:11:18Z",
    "text": "Anthropic releases FlashProve, an open-source prototype that cryptographically verifies an AI response came from a given model, not one that a router swapped in. Roy Rinberg (Anthropic), Alex Allain (Anthropic); Alessandro Chiesa (EPFL, StarkWare), Miranda Christ (MIT, RESI), Rahul Dalal …",
    "via": "Techmeme"
+  },
+  {
+   "title": "The Little Book of Generative AI Foundations: An Intuitive Mathematical Primer",
+   "url": "https://arxiv.org/abs/2605.29713",
+   "source": "Hacker News",
+   "published_at": "2026-11-03T21:40:53Z",
+   "text": "334 points and 51 comments on Hacker News.",
+   "points": 334,
+   "discussion": "https://news.ycombinator.com/item?id=50358582"
   }
  ],
  "sources": "curated, Techmeme, X (found via Techmeme, Reddit, the Internet Archive), Claude Code releases, Anthropic, Hacker News, Simon Willison"
