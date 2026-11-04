@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-04T04:00:24Z",
+ "generated_at": "2026-11-04T04:32:22Z",
  "items": [
   {
    "title": "Google says AI tools for K-12 students will be off by default in 2027; schools that block AI entire…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-04T01:40:12Z",
    "text": "People should always be in control of the future. OpenAI is against the notion that it would be acceptable for people to be relegated to a role of doing things that “AI systems think makes sense to reward in humans”. People should not cede control of the future to…",
    "author_name": "Sam Altman",
-   "likes": 5985,
+   "likes": 7063,
    "story": "Sam Altman: People should not cede control of the future to superintelligence, and that requirement should ultimately constrain AI progress."
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-11-03T21:33:33Z",
    "text": "Friday was my last day at Anthropic. Two years ago, when Claude Code was a small internal tool, I asked it to build an RL env. I steered it for tens of hours but never manually wrote a line of code. It worked, I was hooked, and I joined the team. When we first launched, most…",
    "author_name": "cat",
-   "likes": 7950,
+   "likes": 8303,
    "story": "Cat Wu, product lead for Claude Code and Cowork, has left Anthropic; Thariq Shihipar, who worked on Claude Code, announced his departure last month"
   },
   {
@@ -50,8 +50,8 @@
    "url": "https://github.com/postmanlabs/postman-app-support/issues/14370",
    "source": "Hacker News",
    "published_at": "2026-11-03T17:22:37Z",
-   "text": "1099 points and 362 comments on Hacker News.",
-   "points": 1099,
+   "text": "1116 points and 363 comments on Hacker News.",
+   "points": 1116,
    "discussion": "https://news.ycombinator.com/item?id=50354960"
   },
   {
@@ -61,7 +61,7 @@
    "published_at": "2026-11-03T15:03:52Z",
    "text": "7 BILLION DOLLAR crypto hack came from a homebrew install from someone tryna vibecode something 😭",
    "author_name": "ashen",
-   "likes": 9206,
+   "likes": 9268,
    "story": "Binance says North Korean hackers stole $6.3B through a months-long scheme with fake LinkedIn job interviews and an ad campaign to deliver malicious software"
   },
   {
@@ -94,8 +94,8 @@
    "url": "https://arxiv.org/abs/2605.29713",
    "source": "Hacker News",
    "published_at": "2026-11-03T21:40:53Z",
-   "text": "265 points and 47 comments on Hacker News.",
-   "points": 265,
+   "text": "270 points and 47 comments on Hacker News.",
+   "points": 270,
    "discussion": "https://news.ycombinator.com/item?id=50358582"
   },
   {
@@ -111,8 +111,8 @@
    "url": "https://honnibal.dev/blog/astra-read-write-misleading",
    "source": "Hacker News",
    "published_at": "2026-11-03T12:21:17Z",
-   "text": "928 points and 193 comments on Hacker News.",
-   "points": 928,
+   "text": "932 points and 196 comments on Hacker News.",
+   "points": 932,
    "discussion": "https://news.ycombinator.com/item?id=50351111"
   },
   {
