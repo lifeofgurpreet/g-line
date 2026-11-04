@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-04T10:26:21Z",
+ "generated_at": "2026-11-04T10:59:01Z",
  "items": [
   {
    "title": "Democratic gubernatorial wins in Texas, Georgia, Ohio, and Pennsylvania are set to expose 50% of pr…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-03T21:33:33Z",
    "text": "Friday was my last day at Anthropic. Two years ago, when Claude Code was a small internal tool, I asked it to build an RL env. I steered it for tens of hours but never manually wrote a line of code. It worked, I was hooked, and I joined the team. When we first launched, most…",
    "author_name": "cat",
-   "likes": 11247,
+   "likes": 11424,
    "story": "Cat Wu, product lead for Claude Code and Cowork, says she has left Anthropic; Thariq Shihipar, who worked on Claude Code, announced his departure on October 24"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-11-03T18:57:31Z",
    "text": "Google is trying to use its monopoly power to force AI into our public schools. No corporation should have the power to dictate how we teach our children. Our public schools exist to serve students, not to grow the profit margins of Big Tech.",
    "author_name": "Mayor Zohran Kwame Mamdani",
-   "likes": 62273,
+   "likes": 62808,
    "story": "Google says AI tools for K-12 students will be off by default in 2027; schools that block AI entirely will lose Search, as “Search and AI are deeply integrated”",
    "links": [
     "https://www.nytimes.com/2026/11/03/us/google-search-schools-restrict-ai.html"
@@ -53,19 +53,19 @@
    "url": "https://github.com/postmanlabs/postman-app-support/issues/14370",
    "source": "Hacker News",
    "published_at": "2026-11-03T17:22:37Z",
-   "text": "1293 points and 435 comments on Hacker News.",
-   "points": 1293,
+   "text": "1307 points and 444 comments on Hacker News.",
+   "points": 1307,
    "discussion": "https://news.ycombinator.com/item?id=50354960"
   },
   {
-   "title": "👨‍💻 THREAD on how data center-related ballot measures are faring tonight data centers are on the ba…",
-   "url": "https://x.com/jdcapelouto/status/2117786709173645427",
-   "source": "𝕏 @jdcapelouto",
-   "published_at": "2026-11-04T01:11:12Z",
-   "text": "👨‍💻 THREAD on how data center-related ballot measures are faring tonight data centers are on the ballot in ~40 localities across 13 states, including proposed bans, votes on specific projects, and recalls of pro-data center politicians",
-   "author_name": "J.D. Capelouto",
-   "likes": 2103,
-   "story": "Anti data-center measures pass with huge margins in today's mid term election in America."
+   "title": "Elon Musk moving to Texas to get away from Dems, becoming the biggest partisan megadonor in history…",
+   "url": "https://x.com/BenjySarlin/status/2117865744662712571",
+   "source": "𝕏 @BenjySarlin",
+   "published_at": "2026-11-04T06:25:16Z",
+   "text": "Elon Musk moving to Texas to get away from Dems, becoming the biggest partisan megadonor in history, then spending around a half-billion dollars to have his own state go blue immediately in the next election — with data centers the top gov issue — is pretty impressive",
+   "author_name": "Benjy Sarlin",
+   "likes": 8317,
+   "story": "Democrat James Talarico defeats Ken Paxton to win Texas's first Democratic Senate seat in 30+ years; Elon Musk spent $47M backing Paxton and attacked Talarico"
   },
   {
    "title": "Qwen 3.8 27B on my laptop can interpret model weights, too",
@@ -83,30 +83,40 @@
    "via": "Techmeme"
   },
   {
+   "title": "👨‍💻 THREAD on how data center-related ballot measures are faring tonight data centers are on the ba…",
+   "url": "https://x.com/jdcapelouto/status/2117786709173645427",
+   "source": "𝕏 @jdcapelouto",
+   "published_at": "2026-11-04T01:11:12Z",
+   "text": "👨‍💻 THREAD on how data center-related ballot measures are faring tonight data centers are on the ballot in ~40 localities across 13 states, including proposed bans, votes on specific projects, and recalls of pro-data center politicians",
+   "author_name": "J.D. Capelouto",
+   "likes": 2180,
+   "story": "Anti data-center measures pass with huge margins in today's mid term election in America."
+  },
+  {
+   "title": "Nvidia RTX Spark encrypted firmware slows inference speed to 35% on Linux",
+   "url": "https://www.mindstudio.ai/blog/linux-nvidia-rtx-spark-laptop",
+   "source": "Hacker News",
+   "published_at": "2026-11-04T08:46:29Z",
+   "text": "69 points and 38 comments on Hacker News.",
+   "points": 69,
+   "discussion": "https://news.ycombinator.com/item?id=50362905"
+  },
+  {
+   "title": "Sources: Oracle has scrapped a ~$7B, five-year deal to lease ~100K advanced AI chips to Tencent aft…",
+   "url": "https://www.ft.com/content/c5a6a738-cd78-4a8e-a814-57a7473ebb9c",
+   "source": "Financial Times",
+   "published_at": "2026-11-04T06:06:13Z",
+   "text": "Sources: Oracle has scrapped a ~$7B, five-year deal to lease ~100K advanced AI chips to Tencent after yielding to pressure from the Trump administration. Intervention comes amid growing tension for US AI infrastructure groups doing business with Chinese tech giants.",
+   "via": "Techmeme"
+  },
+  {
    "title": "The 'Astra can read and write weights to improve Qwen' post is misleading",
    "url": "https://honnibal.dev/blog/astra-read-write-misleading",
    "source": "Hacker News",
    "published_at": "2026-11-03T12:21:17Z",
-   "text": "985 points and 203 comments on Hacker News.",
-   "points": 985,
+   "text": "989 points and 203 comments on Hacker News.",
+   "points": 989,
    "discussion": "https://news.ycombinator.com/item?id=50351111"
-  },
-  {
-   "title": "Revolut says it cut AI coding inference costs by ~90% in less than a year by making self-hosted GLM…",
-   "url": "https://www.theregister.com/ai-and-ml/2026/11/03/british-fintech-revolut-slashes-ai-coding-costs-10x-by-cutting-out-claude-and-going-self-hosted/5307345",
-   "source": "Tobias Mann / The Register",
-   "published_at": "2026-11-03T21:50:57Z",
-   "text": "Revolut says it cut AI coding inference costs by ~90% in less than a year by making self-hosted GLM models its default over commercial tools like Claude Code. Revolut says that in less than a year it's managed to slash its AI coding inference costs by roughly 90 percent by making self-hosted models …",
-   "via": "Techmeme"
-  },
-  {
-   "title": "The Little Book of Generative AI Foundations: An Intuitive Mathematical Primer",
-   "url": "https://arxiv.org/abs/2605.29713",
-   "source": "Hacker News",
-   "published_at": "2026-11-03T21:40:53Z",
-   "text": "343 points and 53 comments on Hacker News.",
-   "points": 343,
-   "discussion": "https://news.ycombinator.com/item?id=50358582"
   },
   {
    "title": "The U.S. Census Bureau and “Super Intelligence”",
@@ -116,19 +126,11 @@
    "text": "I was reminded today of AI Adoption Rate Trending Down for Large Companies , a chart produced by Apollo Global Management in September 2025, which appeared to show a slowdown in U.S. corporate AI adoption based on numbers collected by the U.S. Census Bureau. At the time I used that chart to demonstrate GPT-5 data analysis , and then to experiment with Claude's new Code Interpreter . I decided to try running those numbers again to see what had changed over the past year, and in doing so learned that the Bureau has fallen foul of Executive Order 14434 , aka the asinine Super Intelligence one."
   },
   {
-   "title": "Anthropic releases FlashProve, an open-source prototype that cryptographically verifies an AI respo…",
-   "url": "https://www.anthropic.com/research/provable-inference",
-   "source": "Anthropic",
-   "published_at": "2026-11-03T21:11:18Z",
-   "text": "Anthropic releases FlashProve, an open-source prototype that cryptographically verifies an AI response came from a given model, not one that a router swapped in. Roy Rinberg (Anthropic), Alex Allain (Anthropic); Alessandro Chiesa (EPFL, StarkWare), Miranda Christ (MIT, RESI), Rahul Dalal …",
-   "via": "Techmeme"
-  },
-  {
-   "title": "Sources: Oracle has scrapped a ~$7B, five-year deal to lease ~100K advanced AI chips to Tencent aft…",
-   "url": "https://www.ft.com/content/c5a6a738-cd78-4a8e-a814-57a7473ebb9c",
-   "source": "Financial Times",
-   "published_at": "2026-11-04T06:06:13Z",
-   "text": "Sources: Oracle has scrapped a ~$7B, five-year deal to lease ~100K advanced AI chips to Tencent after yielding to pressure from the Trump administration. Intervention comes amid growing tension for US AI infrastructure groups doing business with Chinese tech giants.",
+   "title": "Revolut says it cut AI coding inference costs by ~90% in less than a year by making self-hosted GLM…",
+   "url": "https://www.theregister.com/ai-and-ml/2026/11/03/british-fintech-revolut-slashes-ai-coding-costs-10x-by-cutting-out-claude-and-going-self-hosted/5307345",
+   "source": "Tobias Mann / The Register",
+   "published_at": "2026-11-03T21:50:57Z",
+   "text": "Revolut says it cut AI coding inference costs by ~90% in less than a year by making self-hosted GLM models its default over commercial tools like Claude Code. Revolut says that in less than a year it's managed to slash its AI coding inference costs by roughly 90 percent by making self-hosted models …",
    "via": "Techmeme"
   }
  ],
