@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-04T17:27:01Z",
+ "generated_at": "2026-11-04T17:58:56Z",
  "items": [
   {
    "title": "Democratic gubernatorial wins from Texas and Georgia to Ohio and Pennsylvania are set to expose 50%…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-03T21:33:33Z",
    "text": "Friday was my last day at Anthropic. Two years ago, when Claude Code was a small internal tool, I asked it to build an RL env. I steered it for tens of hours but never manually wrote a line of code. It worked, I was hooked, and I joined the team. When we first launched, most…",
    "author_name": "cat",
-   "likes": 13695,
+   "likes": 13816,
    "story": "Cat Wu, product lead for Claude Code and Cowork, says she has left Anthropic; Thariq Shihipar, who worked on Claude Code, announced his departure on October 24"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-11-04T06:25:16Z",
    "text": "Elon Musk moving to Texas to get away from Dems, becoming the biggest partisan megadonor in history, then spending around a half-billion dollars to have his own state go blue immediately in the next election — with data centers the top gov issue — is pretty impressive",
    "author_name": "Benjy Sarlin",
-   "likes": 21304,
+   "likes": 21787,
    "story": "Democrat James Talarico defeats Ken Paxton to win Texas' first Democratic Senate seat in 30+ years; Elon Musk spent $47M+ backing Paxton and attacked Talarico"
   },
   {
@@ -50,8 +50,8 @@
    "url": "https://spectrum.ieee.org/ai-in-cybersecurity-php2shell-vulnerability",
    "source": "Hacker News",
    "published_at": "2026-11-04T11:52:17Z",
-   "text": "652 points and 422 comments on Hacker News.",
-   "points": 652,
+   "text": "691 points and 438 comments on Hacker News.",
+   "points": 691,
    "discussion": "https://news.ycombinator.com/item?id=50364336"
   },
   {
@@ -61,7 +61,7 @@
    "published_at": "2026-11-04T05:52:03Z",
    "text": "BREAKING: Oracle just CANCELED its $7 billion AI deal with Tencent it has begun",
    "author_name": "NIK",
-   "likes": 7336,
+   "likes": 7838,
    "story": "Sources: Oracle has scrapped a ~$7B, five-year deal to lease as many as 100K advanced AI chips to Tencent after bowing to pressure from the Trump administration"
   },
   {
@@ -86,7 +86,7 @@
    "published_at": "2026-11-03T18:29:54Z",
    "text": "Apple Intelligence in China, redesigned Health app, AI listening features on the Apple Watch are all in the new betas.",
    "author_name": "Mark Gurman",
-   "likes": 520,
+   "likes": 521,
    "story": "Apple launches iOS 27.3 beta, adding Apple Intelligence in China with an Alibaba-powered content filter, and watchOS 27.3 beta, with Siri Recap and Live Rewind",
    "links": [
     "https://www.bloomberg.com/news/articles/2026-11-03/apple-releases-ios-27-3-beta-with-watch-ai-listening-tools-health-app-china-ai?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc5MzczMDU5MCwiZXhwIjoxNzk0MzM1MzkwLCJhcnRpY2xlSWQiOiJUTlhWQTJOM04wOUowMCIsImJjb25uZWN0SWQiOiJDNEVEQ0FFMUZBMDU0MEJFQTI0QTlGMjExQzFFOTA4MCJ9.7fxypbPrSvvjnL8axvz4558x4pLkCOGmDrxk0Q0E3l0"
@@ -97,8 +97,8 @@
    "url": "https://huggingface.co/moonshotai/Kimi-K3.1-Pro",
    "source": "Hacker News",
    "published_at": "2026-11-04T15:30:30Z",
-   "text": "104 points and 16 comments on Hacker News.",
-   "points": 104,
+   "text": "136 points and 22 comments on Hacker News.",
+   "points": 136,
    "discussion": "https://news.ycombinator.com/item?id=50366999"
   },
   {
@@ -114,8 +114,8 @@
    "url": "https://news.ycombinator.com/item?id=50363461",
    "source": "Hacker News",
    "published_at": "2026-11-04T10:10:27Z",
-   "text": "441 points and 120 comments on Hacker News.",
-   "points": 441,
+   "text": "461 points and 123 comments on Hacker News.",
+   "points": 461,
    "discussion": "https://news.ycombinator.com/item?id=50363461"
   },
   {
