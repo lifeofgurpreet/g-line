@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-04T19:03:15Z",
+ "generated_at": "2026-11-04T19:36:08Z",
  "items": [
   {
    "title": "Democratic gubernatorial wins from Texas and Georgia to Ohio and Pennsylvania are set to expose 50%…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-03T21:33:33Z",
    "text": "Friday was my last day at Anthropic. Two years ago, when Claude Code was a small internal tool, I asked it to build an RL env. I steered it for tens of hours but never manually wrote a line of code. It worked, I was hooked, and I joined the team. When we first launched, most…",
    "author_name": "cat",
-   "likes": 14055,
+   "likes": 14145,
    "story": "Cat Wu, product lead for Claude Code and Cowork, says she has left Anthropic; Thariq Shihipar, who worked on Claude Code, announced his departure on October 24"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-11-04T18:24:35Z",
    "text": "Today we release Ripple-65B Preview, our 65B dense LLM we pretrained from scratch. Ripple sets a new state-of-the-art for U.S. open-weight models in agentic coding tasks, surpassing significantly larger models including Muse Spark Open-816B, Beam-501B, Inkling-975B, and Nemotron…",
    "author_name": "Ricursive Intelligence",
-   "likes": 226,
+   "likes": 577,
    "story": "Ricursive Intelligence released their first LLM: Ripple-65B Preview, a 65B dense model."
   },
   {
@@ -44,7 +44,7 @@
    "published_at": "2026-11-04T06:25:16Z",
    "text": "Elon Musk moving to Texas to get away from Dems, becoming the biggest partisan megadonor in history, then spending around a half-billion dollars to have his own state go blue immediately in the next election — with data centers the top gov issue — is pretty impressive",
    "author_name": "Benjy Sarlin",
-   "likes": 22446,
+   "likes": 22621,
    "story": "Elon Musk's preferred US midterm candidates, including Ken Paxton and Vivek Ramaswamy, lost almost everywhere; Musk spent ~$446M, a record for a non-candidate"
   },
   {
@@ -60,8 +60,8 @@
    "url": "https://spectrum.ieee.org/ai-in-cybersecurity-php2shell-vulnerability",
    "source": "Hacker News",
    "published_at": "2026-11-04T11:52:17Z",
-   "text": "777 points and 480 comments on Hacker News.",
-   "points": 777,
+   "text": "820 points and 499 comments on Hacker News.",
+   "points": 820,
    "discussion": "https://news.ycombinator.com/item?id=50364336"
   },
   {
@@ -71,7 +71,7 @@
    "published_at": "2026-11-04T17:31:36Z",
    "text": "We’re releasing new Qwen3.8-Flash-Next GGUFs with 15% higher accuracy. Unsloth Dynamic V3.1 outperforms others by >15% on Terminal Bench, DeepSWE & more benchmarks (256K context). Run on 32GB+ RAM setups. GGUF: Blog:",
    "author_name": "Unsloth AI",
-   "likes": 677,
+   "likes": 787,
    "story": "Qwen 3.8 Flash Next GSQ RCO quant as good as BF16",
    "links": [
     "https://huggingface.co/unsloth/Qwen3.8-Flash-Next-GGUF",
@@ -100,7 +100,7 @@
    "published_at": "2026-11-04T05:52:03Z",
    "text": "BREAKING: Oracle just CANCELED its $7 billion AI deal with Tencent it has begun",
    "author_name": "NIK",
-   "likes": 8954,
+   "likes": 9404,
    "story": "Sources: Oracle has scrapped a ~$7B, five-year deal to lease as many as 100K advanced AI chips to Tencent after bowing to pressure from the Trump administration"
   },
   {
@@ -108,8 +108,8 @@
    "url": "https://huggingface.co/moonshotai/Kimi-K3.1-Pro",
    "source": "Hacker News",
    "published_at": "2026-11-04T15:30:30Z",
-   "text": "191 points and 52 comments on Hacker News.",
-   "points": 191,
+   "text": "208 points and 57 comments on Hacker News.",
+   "points": 208,
    "discussion": "https://news.ycombinator.com/item?id=50366999"
   },
   {
@@ -125,8 +125,8 @@
    "url": "https://www.anthropic.com/research/provable-inference",
    "source": "Hacker News",
    "published_at": "2026-11-04T17:17:46Z",
-   "text": "88 points and 29 comments on Hacker News.",
-   "points": 88,
+   "text": "106 points and 47 comments on Hacker News.",
+   "points": 106,
    "discussion": "https://news.ycombinator.com/item?id=50368626"
   },
   {
