@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-04T21:53:39Z",
+ "generated_at": "2026-11-04T22:25:36Z",
  "items": [
   {
    "title": "Democratic gubernatorial wins from Texas and Georgia to Ohio and Pennsylvania are set to expose 50%…",
@@ -11,14 +11,14 @@
    "via": "Techmeme"
   },
   {
-   "title": "welcome @pierrecomputer to openai! pierre’s open-source developer tools already power parts of code…",
-   "url": "https://x.com/gdb/status/2118042051057250377",
-   "source": "𝕏 @gdb",
-   "published_at": "2026-11-04T18:05:50Z",
-   "text": "welcome @pierrecomputer to openai! pierre’s open-source developer tools already power parts of codex today, and excited to build together the future of collaboratively building software with ai.",
-   "author_name": "Greg Brockman",
-   "likes": 693,
-   "story": "OpenAI acquires developer tools startup Pierre Computer for an undisclosed amount and plans to integrate Pierre's Code Storage feature directly into Codex"
+   "title": "Friday was my last day at Anthropic. Two years ago, when Claude Code was a small internal tool, I a…",
+   "url": "https://x.com/_catwu/status/2117731934340337676",
+   "source": "𝕏 @_catwu",
+   "published_at": "2026-11-03T21:33:33Z",
+   "text": "Friday was my last day at Anthropic. Two years ago, when Claude Code was a small internal tool, I asked it to build an RL env. I steered it for tens of hours but never manually wrote a line of code. It worked, I was hooked, and I joined the team. When we first launched, most…",
+   "author_name": "cat",
+   "likes": 14629,
+   "story": "Cat Wu, product lead for Claude Code and Cowork, says she has left Anthropic; Thariq Shihipar, who worked on Claude Code, announced his departure on October 24"
   },
   {
    "title": "Claude Code 2.1.318 released",
@@ -34,21 +34,21 @@
    "published_at": "2026-11-04T19:51:36Z",
    "text": "NEW: Apple is cutting employee AI spending budgets even as it pushes workers to use the technology more. Engineers have seen daily limits cut from $300 to $200, with further reductions to $100 planned. Other teams could see limits fall to $25.",
    "author_name": "Mark Gurman",
-   "likes": 1170,
+   "likes": 1434,
    "story": "Sources: Apple cut some engineers' daily AI spending cap to $200 from $300 and plans cuts to as little as $100, as cost cutting stokes staff fears of layoffs",
    "links": [
     "https://www.bloomberg.com/news/articles/2026-11-04/apple-cuts-internal-ai-usage-budgets-in-move-to-reduce-spending?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc5MzgyMTg3MSwiZXhwIjoxNzk0NDI2NjcxLCJhcnRpY2xlSWQiOiJUTlhPMzdLSzNOWTkwMCIsImJjb25uZWN0SWQiOiJDNEVEQ0FFMUZBMDU0MEJFQTI0QTlGMjExQzFFOTA4MCJ9.efg5gZUg_bpWGkDdX9in4eLTEutSs8WX9rD17IHSi_o"
    ]
   },
   {
-   "title": "Elon Musk moving to Texas to get away from Dems, becoming the biggest partisan megadonor in history…",
-   "url": "https://x.com/BenjySarlin/status/2117865744662712571",
-   "source": "𝕏 @BenjySarlin",
-   "published_at": "2026-11-04T06:25:16Z",
-   "text": "Elon Musk moving to Texas to get away from Dems, becoming the biggest partisan megadonor in history, then spending around a half-billion dollars to have his own state go blue immediately in the next election — with data centers the top gov issue — is pretty impressive",
-   "author_name": "Benjy Sarlin",
-   "likes": 23463,
-   "story": "Elon Musk's preferred US midterm candidates, including Ken Paxton and Vivek Ramaswamy, lost almost everywhere; Musk spent ~$446M, a record for a non-candidate"
+   "title": "welcome @pierrecomputer to openai! pierre’s open-source developer tools already power parts of code…",
+   "url": "https://x.com/gdb/status/2118042051057250377",
+   "source": "𝕏 @gdb",
+   "published_at": "2026-11-04T18:05:50Z",
+   "text": "welcome @pierrecomputer to openai! pierre’s open-source developer tools already power parts of codex today, and excited to build together the future of collaboratively building software with ai.",
+   "author_name": "Greg Brockman",
+   "likes": 730,
+   "story": "OpenAI acquires developer tools startup Pierre Computer for an undisclosed amount and plans to integrate Pierre's Code Storage feature directly into Codex"
   },
   {
    "title": "Voters in 38+ US jurisdictions pass data center bans or restrictions; TV network poll: 56% said AI…",
@@ -63,8 +63,8 @@
    "url": "https://spectrum.ieee.org/ai-in-cybersecurity-php2shell-vulnerability",
    "source": "Hacker News",
    "published_at": "2026-11-04T11:52:17Z",
-   "text": "956 points and 584 comments on Hacker News.",
-   "points": 956,
+   "text": "973 points and 591 comments on Hacker News.",
+   "points": 973,
    "discussion": "https://news.ycombinator.com/item?id=50364336"
   },
   {
@@ -74,7 +74,7 @@
    "published_at": "2026-11-04T18:24:35Z",
    "text": "Today we release Ripple-65B Preview, our 65B dense LLM we pretrained from scratch. Ripple sets a new state-of-the-art for U.S. open-weight models in agentic coding tasks, surpassing significantly larger models including Muse Spark Open-816B, Beam-501B, Inkling-975B, and Nemotron…",
    "author_name": "Ricursive Intelligence",
-   "likes": 2004,
+   "likes": 2189,
    "story": "Ricursive Intelligence released their first LLM: Ripple-65B Preview, a 65B dense model."
   },
   {
@@ -85,12 +85,31 @@
    "text": "Yesterday's hot paper was Sparks of Weight-Space Programming: LLMs can natively read & write neural network weights by Rikiya Takehi, Jayden Teoh, Alex Zhang, and Omar Khattab. The paper (OK, the authors classify is as a \"blog post\", but it's paper-shaped) found that frontier models, in particular GPT-6 Astra, can both interpret and modify the raw weights of a machine learning model - literally a text description of the model containing a bunch of floating point numbers."
   },
   {
-   "title": "Democrats who ran on data center opposition and AI regulation won Congress seats in OH, PA, WI, CO;…",
-   "url": "https://www.politico.com/news/2026/11/04/dems-made-big-tech-a-foil-and-they-couldnt-stop-winning-01148450",
-   "source": "Politico",
-   "published_at": "2026-11-04T12:26:01Z",
-   "text": "Democrats who ran on data center opposition and AI regulation won Congress seats in OH, PA, WI, CO; some see a mandate to use their new gavels against Big Tech. Democrats' decisive midterms victory marked a warning shot to politicians who choose to align with the artificial intelligence industry …",
+   "title": "Democrats' US midterms victory is a win for hyperscalers and AI labs, a mixed bag for Nvidia, an ad…",
+   "url": "https://stratechery.com/2026/ai-on-the-ballot/",
+   "source": "Ben Thompson / Stratechery",
+   "published_at": "2026-11-04T11:46:24Z",
+   "text": "Democrats' US midterms victory is a win for hyperscalers and AI labs, a mixed bag for Nvidia, an advantage to China, and may make space data centers attractive. Data Centers were on the ballot, and they lost in a major way; what does it mean if American opposition to building is permanent?",
    "via": "Techmeme"
+  },
+  {
+   "title": "Top of the Democratic agenda on day 1 needs to be a pause on advanced AI development, regulation of…",
+   "url": "https://x.com/RepYassAnsari/status/2118054336077127797",
+   "source": "𝕏 @RepYassAnsari",
+   "published_at": "2026-11-04T18:54:39Z",
+   "text": "Top of the Democratic agenda on day 1 needs to be a pause on advanced AI development, regulation of this out of control industry, and a ban on artificial superintelligence.",
+   "author_name": "Congresswoman Yassamin Ansari",
+   "likes": 1015,
+   "story": "Democratic Arizona Congresswoman: Top of the Democratic agenda on day 1 needs to be a pause on advanced AI development, regulation of this out of control indus…"
+  },
+  {
+   "title": "Everything is an AI scam now",
+   "url": "https://www.davidralphlewis.co.uk/posts/everything-is-an-ai-scam-now/",
+   "source": "Hacker News",
+   "published_at": "2026-11-04T21:05:19Z",
+   "text": "80 points and 19 comments on Hacker News.",
+   "points": 80,
+   "discussion": "https://news.ycombinator.com/item?id=50371508"
   },
   {
    "title": "We’re releasing new Qwen3.8-Flash-Next GGUFs with 15% higher accuracy. Unsloth Dynamic V3.1 outperf…",
@@ -99,7 +118,7 @@
    "published_at": "2026-11-04T17:31:36Z",
    "text": "We’re releasing new Qwen3.8-Flash-Next GGUFs with 15% higher accuracy. Unsloth Dynamic V3.1 outperforms others by >15% on Terminal Bench, DeepSWE & more benchmarks (256K context). Run on 32GB+ RAM setups. GGUF: Blog:",
    "author_name": "Unsloth AI",
-   "likes": 1063,
+   "likes": 1125,
    "story": "Qwen 3.8 Flash Next GSQ RCO quant as good as BF16",
    "links": [
     "https://huggingface.co/unsloth/Qwen3.8-Flash-Next-GGUF",
@@ -107,20 +126,11 @@
    ]
   },
   {
-   "title": "Everything is an AI scam now",
-   "url": "https://www.davidralphlewis.co.uk/posts/everything-is-an-ai-scam-now/",
-   "source": "Hacker News",
-   "published_at": "2026-11-04T21:05:19Z",
-   "text": "61 points and 16 comments on Hacker News.",
-   "points": 61,
-   "discussion": "https://news.ycombinator.com/item?id=50371508"
-  },
-  {
-   "title": "CoreWeave's stock and unsecured bonds fall after sweeping Democratic midterm victories, as Texas Go…",
-   "url": "https://www.bloomberg.com/news/articles/2026-11-04/coreweave-bonds-hit-new-lows-as-texas-data-centers-in-crosshairs",
-   "source": "Katherine Schwartz / Bloomb…",
-   "published_at": "2026-11-04T16:11:25Z",
-   "text": "CoreWeave's stock and unsecured bonds fall after sweeping Democratic midterm victories, as Texas Governor-elect Gina Hinojosa calls for a data center moratorium. CoreWeave Inc.'s bonds tumbled on Wednesday, in some cases to new lows, after Democratic candidates in favor of slowing …",
+   "title": "Democrats who ran on data center opposition and AI regulation won Congress seats in OH, PA, WI, CO;…",
+   "url": "https://www.politico.com/news/2026/11/04/dems-made-big-tech-a-foil-and-they-couldnt-stop-winning-01148450",
+   "source": "Politico",
+   "published_at": "2026-11-04T12:26:01Z",
+   "text": "Democrats who ran on data center opposition and AI regulation won Congress seats in OH, PA, WI, CO; some see a mandate to use their new gavels against Big Tech. Democrats' decisive midterms victory marked a warning shot to politicians who choose to align with the artificial intelligence industry …",
    "via": "Techmeme"
   },
   {
@@ -128,16 +138,9 @@
    "url": "https://www.ricursive.com/ripple",
    "source": "Hacker News",
    "published_at": "2026-11-04T18:53:29Z",
-   "text": "141 points and 55 comments on Hacker News.",
-   "points": 141,
+   "text": "158 points and 57 comments on Hacker News.",
+   "points": 158,
    "discussion": "https://news.ycombinator.com/item?id=50369925"
-  },
-  {
-   "title": "The U.S. Census Bureau and “Super Intelligence”",
-   "url": "https://simonwillison.net/2026/Nov/2/census-bureau-super-intelligence/",
-   "source": "Simon Willison's weblog",
-   "published_at": "2026-11-02T13:31:26Z",
-   "text": "I was reminded today of AI Adoption Rate Trending Down for Large Companies , a chart produced by Apollo Global Management in September 2025, which appeared to show a slowdown in U.S. corporate AI adoption based on numbers collected by the U.S. Census Bureau. At the time I used that chart to demonstrate GPT-5 data analysis , and then to experiment with Claude's new Code Interpreter . I decided to try running those numbers again to see what had changed over the past year, and in doing so learned that the Bureau has fallen foul of Executive Order 14434 , aka the asinine Super Intelligence one."
   }
  ],
  "sources": "curated, Techmeme, X (found via Techmeme, Reddit, the Internet Archive), Claude Code releases, Anthropic, Hacker News, Simon Willison"
