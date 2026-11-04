@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-04T21:13:41Z",
+ "generated_at": "2026-11-04T21:21:14Z",
  "items": [
   {
    "title": "Democratic gubernatorial wins from Texas and Georgia to Ohio and Pennsylvania are set to expose 50%…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-03T21:33:33Z",
    "text": "Friday was my last day at Anthropic. Two years ago, when Claude Code was a small internal tool, I asked it to build an RL env. I steered it for tens of hours but never manually wrote a line of code. It worked, I was hooked, and I joined the team. When we first launched, most…",
    "author_name": "cat",
-   "likes": 14414,
+   "likes": 14441,
    "story": "Cat Wu, product lead for Claude Code and Cowork, says she has left Anthropic; Thariq Shihipar, who worked on Claude Code, announced his departure on October 24"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-11-04T19:51:36Z",
    "text": "NEW: Apple is cutting employee AI spending budgets even as it pushes workers to use the technology more. Engineers have seen daily limits cut from $300 to $200, with further reductions to $100 planned. Other teams could see limits fall to $25.",
    "author_name": "Mark Gurman",
-   "likes": 727,
+   "likes": 827,
    "story": "Sources: Apple cut some engineers' daily AI spending cap to $200 from $300 and plans cuts to as little as $100, as cost cutting stokes staff fears of layoffs",
    "links": [
     "https://www.bloomberg.com/news/articles/2026-11-04/apple-cuts-internal-ai-usage-budgets-in-move-to-reduce-spending?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc5MzgyMTg3MSwiZXhwIjoxNzk0NDI2NjcxLCJhcnRpY2xlSWQiOiJUTlhPMzdLSzNOWTkwMCIsImJjb25uZWN0SWQiOiJDNEVEQ0FFMUZBMDU0MEJFQTI0QTlGMjExQzFFOTA4MCJ9.efg5gZUg_bpWGkDdX9in4eLTEutSs8WX9rD17IHSi_o"
@@ -47,7 +47,7 @@
    "published_at": "2026-11-04T18:05:50Z",
    "text": "welcome @pierrecomputer to openai! pierre’s open-source developer tools already power parts of codex today, and excited to build together the future of collaboratively building software with ai.",
    "author_name": "Greg Brockman",
-   "likes": 651,
+   "likes": 656,
    "story": "OpenAI acquires developer tools startup Pierre Computer for an undisclosed amount and plans to integrate Pierre's Code Storage feature directly into Codex"
   },
   {
@@ -63,8 +63,8 @@
    "url": "https://spectrum.ieee.org/ai-in-cybersecurity-php2shell-vulnerability",
    "source": "Hacker News",
    "published_at": "2026-11-04T11:52:17Z",
-   "text": "936 points and 572 comments on Hacker News.",
-   "points": 936,
+   "text": "941 points and 574 comments on Hacker News.",
+   "points": 941,
    "discussion": "https://news.ycombinator.com/item?id=50364336"
   },
   {
@@ -74,7 +74,7 @@
    "published_at": "2026-11-04T06:25:16Z",
    "text": "Elon Musk moving to Texas to get away from Dems, becoming the biggest partisan megadonor in history, then spending around a half-billion dollars to have his own state go blue immediately in the next election — with data centers the top gov issue — is pretty impressive",
    "author_name": "Benjy Sarlin",
-   "likes": 23095,
+   "likes": 23145,
    "story": "Elon Musk's preferred US midterm candidates, including Ken Paxton and Vivek Ramaswamy, lost almost everywhere; Musk spent ~$446M, a record for a non-candidate"
   },
   {
@@ -84,7 +84,7 @@
    "published_at": "2026-11-04T18:24:35Z",
    "text": "Today we release Ripple-65B Preview, our 65B dense LLM we pretrained from scratch. Ripple sets a new state-of-the-art for U.S. open-weight models in agentic coding tasks, surpassing significantly larger models including Muse Spark Open-816B, Beam-501B, Inkling-975B, and Nemotron…",
    "author_name": "Ricursive Intelligence",
-   "likes": 1730,
+   "likes": 1784,
    "story": "Ricursive Intelligence released their first LLM: Ripple-65B Preview, a 65B dense model."
   },
   {
@@ -109,7 +109,7 @@
    "published_at": "2026-11-04T17:31:36Z",
    "text": "We’re releasing new Qwen3.8-Flash-Next GGUFs with 15% higher accuracy. Unsloth Dynamic V3.1 outperforms others by >15% on Terminal Bench, DeepSWE & more benchmarks (256K context). Run on 32GB+ RAM setups. GGUF: Blog:",
    "author_name": "Unsloth AI",
-   "likes": 1012,
+   "likes": 1022,
    "story": "Qwen 3.8 Flash Next GSQ RCO quant as good as BF16",
    "links": [
     "https://huggingface.co/unsloth/Qwen3.8-Flash-Next-GGUF",
@@ -121,8 +121,8 @@
    "url": "https://www.ricursive.com/ripple",
    "source": "Hacker News",
    "published_at": "2026-11-04T18:53:29Z",
-   "text": "116 points and 43 comments on Hacker News.",
-   "points": 116,
+   "text": "121 points and 45 comments on Hacker News.",
+   "points": 121,
    "discussion": "https://news.ycombinator.com/item?id=50369925"
   },
   {
@@ -138,8 +138,8 @@
    "url": "https://huggingface.co/moonshotai/Kimi-K3.1-Pro",
    "source": "Hacker News",
    "published_at": "2026-11-04T15:30:30Z",
-   "text": "263 points and 68 comments on Hacker News.",
-   "points": 263,
+   "text": "267 points and 69 comments on Hacker News.",
+   "points": 267,
    "discussion": "https://news.ycombinator.com/item?id=50366999"
   }
  ],
