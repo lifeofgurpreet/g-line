@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-04T15:18:40Z",
+ "generated_at": "2026-11-04T15:50:29Z",
  "items": [
   {
    "title": "Democratic gubernatorial wins from Texas and Georgia to Ohio and Pennsylvania are set to expose 50%…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-03T21:33:33Z",
    "text": "Friday was my last day at Anthropic. Two years ago, when Claude Code was a small internal tool, I asked it to build an RL env. I steered it for tens of hours but never manually wrote a line of code. It worked, I was hooked, and I joined the team. When we first launched, most…",
    "author_name": "cat",
-   "likes": 13081,
+   "likes": 13253,
    "story": "Cat Wu, product lead for Claude Code and Cowork, says she has left Anthropic; Thariq Shihipar, who worked on Claude Code, announced his departure on October 24"
   },
   {
@@ -34,8 +34,8 @@
    "published_at": "2026-11-04T13:10:57Z",
    "text": "Statement from Humans First, the conservative pro-AI safety and anti- data center expansion group helmed by longtime tea party leader @AmyKremer & GOP operative @ChrisRBarron, on last night: “Republican leadership in Washington gambled our majorities on big AI money and lost.…",
    "author_name": "Ashley Gold",
-   "likes": 35,
-   "story": "US voters in 29+ jurisdictions overwhelmingly pass data center bans or restrictions; S&P says 145+ US projects were delayed or canceled through early August"
+   "likes": 44,
+   "story": "NBC exit poll: 56% said AI and data centers had been a “crucial or a major factor” in their Congress votes, as Democratic candidates pledged to halt development"
   },
   {
    "title": "Elon Musk moving to Texas to get away from Dems, becoming the biggest partisan megadonor in history…",
@@ -44,7 +44,7 @@
    "published_at": "2026-11-04T06:25:16Z",
    "text": "Elon Musk moving to Texas to get away from Dems, becoming the biggest partisan megadonor in history, then spending around a half-billion dollars to have his own state go blue immediately in the next election — with data centers the top gov issue — is pretty impressive",
    "author_name": "Benjy Sarlin",
-   "likes": 18459,
+   "likes": 19311,
    "story": "Democrat James Talarico defeats Ken Paxton to win Texas' first Democratic Senate seat in 30+ years; Elon Musk spent $47M+ backing Paxton and attacked Talarico"
   },
   {
@@ -60,8 +60,8 @@
    "url": "https://www.semafor.com/article/11/04/2026/us-voters-roundly-reject-data-centers-in-ballot-measures",
    "source": "Hacker News",
    "published_at": "2026-11-04T14:27:02Z",
-   "text": "130 points and 146 comments on Hacker News.",
-   "points": 130,
+   "text": "184 points and 274 comments on Hacker News.",
+   "points": 184,
    "discussion": "https://news.ycombinator.com/item?id=50365982"
   },
   {
@@ -71,7 +71,7 @@
    "published_at": "2026-11-04T05:52:03Z",
    "text": "BREAKING: Oracle just CANCELED its $7 billion AI deal with Tencent it has begun",
    "author_name": "NIK",
-   "likes": 5764,
+   "likes": 6069,
    "story": "Sources: Oracle has scrapped a ~$7B, five-year deal to lease as many as 100K advanced AI chips to Tencent after bowing to pressure from the Trump administration"
   },
   {
@@ -82,11 +82,11 @@
    "text": "Yesterday's hot paper was Sparks of Weight-Space Programming: LLMs can natively read & write neural network weights by Rikiya Takehi, Jayden Teoh, Alex Zhang, and Omar Khattab. The paper (OK, the authors classify is as a \"blog post\", but it's paper-shaped) found that frontier models, in particular GPT-6 Astra, can both interpret and modify the raw weights of a machine learning model - literally a text description of the model containing a bunch of floating point numbers."
   },
   {
-   "title": "Democrats running on AI regulation and anti-data center platforms won key races, including Sherrod…",
-   "url": "https://www.politico.com/news/2026/11/04/dems-made-big-tech-a-foil-and-they-couldnt-stop-winning-01148450",
-   "source": "Politico",
-   "published_at": "2026-11-04T12:26:01Z",
-   "text": "Democrats running on AI regulation and anti-data center platforms won key races, including Sherrod Brown in Ohio, as leadership signals aggressive AI oversight. Democrats' decisive midterms victory marked a warning shot to politicians who choose to align with the artificial intelligence industry …",
+   "title": "Democrats' US midterms victory is a win for hyperscalers and AI labs, a mixed bag for Nvidia, an ad…",
+   "url": "https://stratechery.com/2026/ai-on-the-ballot/",
+   "source": "Ben Thompson / Stratechery",
+   "published_at": "2026-11-04T11:46:24Z",
+   "text": "Democrats' US midterms victory is a win for hyperscalers and AI labs, a mixed bag for Nvidia, an advantage to China, and may make space data centers attractive. Data Centers were on the ballot, and they lost in a major way; what does it mean if American opposition to building is permanent?",
    "via": "Techmeme"
   },
   {
@@ -96,7 +96,7 @@
    "published_at": "2026-11-03T18:29:54Z",
    "text": "Apple Intelligence in China, redesigned Health app, AI listening features on the Apple Watch are all in the new betas.",
    "author_name": "Mark Gurman",
-   "likes": 514,
+   "likes": 515,
    "story": "Apple opens Siri AI to all developers, letting any app on iOS 27.3 beta and other 27.3 OS betas bring its content and actions into Siri AI by using App Intents",
    "links": [
     "https://www.bloomberg.com/news/articles/2026-11-03/apple-releases-ios-27-3-beta-with-watch-ai-listening-tools-health-app-china-ai?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc5MzczMDU5MCwiZXhwIjoxNzk0MzM1MzkwLCJhcnRpY2xlSWQiOiJUTlhWQTJOM04wOUowMCIsImJjb25uZWN0SWQiOiJDNEVEQ0FFMUZBMDU0MEJFQTI0QTlGMjExQzFFOTA4MCJ9.7fxypbPrSvvjnL8axvz4558x4pLkCOGmDrxk0Q0E3l0"
@@ -107,16 +107,16 @@
    "url": "https://spectrum.ieee.org/ai-in-cybersecurity-php2shell-vulnerability",
    "source": "Hacker News",
    "published_at": "2026-11-04T11:52:17Z",
-   "text": "391 points and 280 comments on Hacker News.",
-   "points": 391,
+   "text": "455 points and 314 comments on Hacker News.",
+   "points": 455,
    "discussion": "https://news.ycombinator.com/item?id=50364336"
   },
   {
-   "title": "Democrats' US midterms victory is a win for hyperscalers and AI labs, a mixed bag for Nvidia, an ad…",
-   "url": "https://stratechery.com/2026/ai-on-the-ballot/",
-   "source": "Ben Thompson / Stratechery",
-   "published_at": "2026-11-04T11:46:24Z",
-   "text": "Democrats' US midterms victory is a win for hyperscalers and AI labs, a mixed bag for Nvidia, an advantage to China, and may make space data centers attractive. Data Centers were on the ballot, and they lost in a major way; what does it mean if American opposition to building is permanent?",
+   "title": "Democrats running on AI regulation and anti-data center platforms won key races, including Sherrod…",
+   "url": "https://www.politico.com/news/2026/11/04/dems-made-big-tech-a-foil-and-they-couldnt-stop-winning-01148450",
+   "source": "Politico",
+   "published_at": "2026-11-04T12:26:01Z",
+   "text": "Democrats running on AI regulation and anti-data center platforms won key races, including Sherrod Brown in Ohio, as leadership signals aggressive AI oversight. Democrats' decisive midterms victory marked a warning shot to politicians who choose to align with the artificial intelligence industry …",
    "via": "Techmeme"
   },
   {
@@ -124,8 +124,8 @@
    "url": "https://news.ycombinator.com/item?id=50363461",
    "source": "Hacker News",
    "published_at": "2026-11-04T10:10:27Z",
-   "text": "317 points and 86 comments on Hacker News.",
-   "points": 317,
+   "text": "345 points and 93 comments on Hacker News.",
+   "points": 345,
    "discussion": "https://news.ycombinator.com/item?id=50363461"
   },
   {
