@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-05T00:03:57Z",
+ "generated_at": "2026-11-05T00:36:06Z",
  "items": [
   {
    "title": "Democratic gubernatorial wins from Texas and Georgia to Ohio and Pennsylvania are set to expose 50%…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-04T23:13:24Z",
    "text": "Our security researchers built an autonomous cyber vulnerability discovery, exploitation, and patching pipeline. In a single run with an upcoming cyber model, it validated and generated patches for 948 local privilege escalation vulnerabilities in the Linux kernel at a total API…",
    "author_name": "OpenAI",
-   "likes": 1687,
+   "likes": 2455,
    "story": "OpenAI claims their new security model patched 948 Linux privilege escalation vulnerabilities"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-11-04T23:01:44Z",
    "text": "Do individual limits still make sense? As capabilities increase you want to work with and support an agent that represents your project, that runs loops and evolves your codebase. The humans merely curate the automations.",
    "author_name": "Peter Steinberger 🦞",
-   "likes": 154,
+   "likes": 220,
    "story": "Sources: Apple cut some engineers' daily AI spending cap to $200 from $300 and plans cuts to as little as $100, as cost cutting stokes staff fears of layoffs"
   },
   {
@@ -44,7 +44,7 @@
    "published_at": "2026-11-04T18:05:50Z",
    "text": "welcome @pierrecomputer to openai! pierre’s open-source developer tools already power parts of codex today, and excited to build together the future of collaboratively building software with ai.",
    "author_name": "Greg Brockman",
-   "likes": 793,
+   "likes": 802,
    "story": "OpenAI acquires developer tools startup Pierre Computer for an undisclosed amount and plans to integrate Pierre's Code Storage feature directly into Codex"
   },
   {
@@ -60,19 +60,19 @@
    "url": "https://spectrum.ieee.org/ai-in-cybersecurity-php2shell-vulnerability",
    "source": "Hacker News",
    "published_at": "2026-11-04T11:52:17Z",
-   "text": "1015 points and 612 comments on Hacker News.",
-   "points": 1015,
+   "text": "1034 points and 620 comments on Hacker News.",
+   "points": 1034,
    "discussion": "https://news.ycombinator.com/item?id=50364336"
   },
   {
-   "title": "Today we release Ripple-65B Preview, our 65B dense LLM we pretrained from scratch. Ripple sets a ne…",
-   "url": "https://x.com/RicursiveAI/status/2118046765857546733",
-   "source": "𝕏 @RicursiveAI",
-   "published_at": "2026-11-04T18:24:35Z",
-   "text": "Today we release Ripple-65B Preview, our 65B dense LLM we pretrained from scratch. Ripple sets a new state-of-the-art for U.S. open-weight models in agentic coding tasks, surpassing significantly larger models including Muse Spark Open-816B, Beam-501B, Inkling-975B, and Nemotron…",
-   "author_name": "Ricursive Intelligence",
-   "likes": 2571,
-   "story": "Ricursive Intelligence released their first LLM: Ripple-65B Preview, a 65B dense model."
+   "title": "Top of the Democratic agenda on day 1 needs to be a pause on advanced AI development, regulation of…",
+   "url": "https://x.com/RepYassAnsari/status/2118054336077127797",
+   "source": "𝕏 @RepYassAnsari",
+   "published_at": "2026-11-04T18:54:39Z",
+   "text": "Top of the Democratic agenda on day 1 needs to be a pause on advanced AI development, regulation of this out of control industry, and a ban on artificial superintelligence.",
+   "author_name": "Congresswoman Yassamin Ansari",
+   "likes": 2445,
+   "story": "Democratic Arizona Congresswoman: Top of the Democratic agenda on day 1 needs to be a pause on advanced AI development, regulation of this out of control indus…"
   },
   {
    "title": "Qwen 3.8 27B on my laptop can interpret model weights, too",
@@ -90,22 +90,22 @@
    "via": "Techmeme"
   },
   {
-   "title": "Top of the Democratic agenda on day 1 needs to be a pause on advanced AI development, regulation of…",
-   "url": "https://x.com/RepYassAnsari/status/2118054336077127797",
-   "source": "𝕏 @RepYassAnsari",
-   "published_at": "2026-11-04T18:54:39Z",
-   "text": "Top of the Democratic agenda on day 1 needs to be a pause on advanced AI development, regulation of this out of control industry, and a ban on artificial superintelligence.",
-   "author_name": "Congresswoman Yassamin Ansari",
-   "likes": 1991,
-   "story": "Democratic Arizona Congresswoman: Top of the Democratic agenda on day 1 needs to be a pause on advanced AI development, regulation of this out of control indus…"
+   "title": "Today we release Ripple-65B Preview, our 65B dense LLM we pretrained from scratch. Ripple sets a ne…",
+   "url": "https://x.com/RicursiveAI/status/2118046765857546733",
+   "source": "𝕏 @RicursiveAI",
+   "published_at": "2026-11-04T18:24:35Z",
+   "text": "Today we release Ripple-65B Preview, our 65B dense LLM we pretrained from scratch. Ripple sets a new state-of-the-art for U.S. open-weight models in agentic coding tasks, surpassing significantly larger models including Muse Spark Open-816B, Beam-501B, Inkling-975B, and Nemotron…",
+   "author_name": "Ricursive Intelligence",
+   "likes": 2662,
+   "story": "Ricursive Intelligence released their first LLM: Ripple-65B Preview, a 65B dense model."
   },
   {
    "title": "Ripple-65B Preview: U.S. Open-Weight SOTA on Agentic Coding",
    "url": "https://www.ricursive.com/ripple",
    "source": "Hacker News",
    "published_at": "2026-11-04T18:53:29Z",
-   "text": "199 points and 67 comments on Hacker News.",
-   "points": 199,
+   "text": "205 points and 74 comments on Hacker News.",
+   "points": 205,
    "discussion": "https://news.ycombinator.com/item?id=50369925"
   },
   {
@@ -115,7 +115,7 @@
    "published_at": "2026-11-04T17:31:36Z",
    "text": "We’re releasing new Qwen3.8-Flash-Next GGUFs with 15% higher accuracy. Unsloth Dynamic V3.1 outperforms others by >15% on Terminal Bench, DeepSWE & more benchmarks (256K context). Run on 32GB+ RAM setups. GGUF: Blog:",
    "author_name": "Unsloth AI",
-   "likes": 1283,
+   "likes": 1324,
    "story": "Qwen 3.8 Flash Next GSQ RCO quant as good as BF16",
    "links": [
     "https://huggingface.co/unsloth/Qwen3.8-Flash-Next-GGUF",
@@ -123,11 +123,11 @@
    ]
   },
   {
-   "title": "Shares of US tech giants jump after Democrats' midterm sweep as investors bet that a Democrat-contr…",
-   "url": "https://www.bloomberg.com/news/articles/2026-11-04/big-tech-stocks-soar-as-traders-bet-democrats-will-slow-ai-spend?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc5MzgxNDc5MCwiZXhwIjoxNzk0NDE5NTkwLCJhcnRpY2xlSWQiOiJUTlpJR0JWVFRENUUwMCIsImJjb25uZWN0SWQiOiI4OUM4OTNDMDhGOTQ0NThDQkQwQTQyREY1RDFCOTY0QyJ9.frDjijiV6zS7FBiJWbcApv_YkVGs2tz0u-uB7LtBVsw",
-   "source": "Bloomberg",
-   "published_at": "2026-11-04T18:03:25Z",
-   "text": "Shares of US tech giants jump after Democrats' midterm sweep as investors bet that a Democrat-controlled Congress will slow AI capex that's draining cash flow. The shares of US technology giants led the market higher on Wednesday as investors bet that a Democrat-controlled Congress will slow …",
+   "title": "CoreWeave's bonds hit new lows after Democrats in favor of slowing down data center construction wi…",
+   "url": "https://www.bloomberg.com/news/articles/2026-11-04/coreweave-bonds-hit-new-lows-as-texas-data-centers-in-crosshairs",
+   "source": "Katherine Schwartz / Bloomb…",
+   "published_at": "2026-11-04T16:11:25Z",
+   "text": "CoreWeave's bonds hit new lows after Democrats in favor of slowing down data center construction win gubernatorial races, including in Texas; CRWV drops 9.9%. CoreWeave Inc.'s bonds tumbled on Wednesday, in some cases to new lows, after Democratic candidates in favor of slowing …",
    "via": "Techmeme"
   },
   {
@@ -135,8 +135,8 @@
    "url": "https://huggingface.co/moonshotai/Kimi-K3.1-Pro",
    "source": "Hacker News",
    "published_at": "2026-11-04T15:30:30Z",
-   "text": "332 points and 87 comments on Hacker News.",
-   "points": 332,
+   "text": "348 points and 91 comments on Hacker News.",
+   "points": 348,
    "discussion": "https://news.ycombinator.com/item?id=50366999"
   }
  ],
