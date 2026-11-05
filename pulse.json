@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-05T01:39:10Z",
+ "generated_at": "2026-11-05T02:12:12Z",
  "items": [
   {
    "title": "Democratic gubernatorial wins from Texas and Georgia to Ohio and Pennsylvania are set to expose 50%…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-04T23:35:14Z",
    "text": "Images, upgraded—introducing ChatGPT Images 2.6. Now with GIFs and reference images. Plus, two new models are coming to the API with 50% faster image generation.",
    "author_name": "OpenAI",
-   "likes": 8839,
+   "likes": 9877,
    "story": "OpenAI launches Images 2.6 in ChatGPT, Codex, and the API, saying it generates images 50% faster, and adds animated GIF creation from prompts or photos"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-11-05T00:25:34Z",
    "text": "Some news: I’m joining OpenAI to lead product management for Core Products! I have a lot of respect for OpenAI for showing the world that scaling works, for bringing AI to over a billion people, and for believing great products are core to the mission. I’m excited to work with…",
    "author_name": "cat",
-   "likes": 5408,
+   "likes": 6846,
    "story": "Cat Wu, who left Anthropic last week, says she is joining OpenAI to lead product manangement for core products; Wu was the product lead for Claude Code"
   },
   {
@@ -44,7 +44,7 @@
    "published_at": "2026-11-04T19:51:36Z",
    "text": "NEW: Apple is cutting employee AI spending budgets even as it pushes workers to use the technology more. Engineers have seen daily limits cut from $300 to $200, with further reductions to $100 planned. Other teams could see limits fall to $25.",
    "author_name": "Mark Gurman",
-   "likes": 2311,
+   "likes": 2391,
    "story": "Sources: Apple cut some engineers' daily AI spending cap to $200 from $300 and plans cuts to as little as $100, as cost cutting stokes staff fears of layoffs",
    "links": [
     "https://www.bloomberg.com/news/articles/2026-11-04/apple-cuts-internal-ai-usage-budgets-in-move-to-reduce-spending?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc5MzgyMTg3MSwiZXhwIjoxNzk0NDI2NjcxLCJhcnRpY2xlSWQiOiJUTlhPMzdLSzNOWTkwMCIsImJjb25uZWN0SWQiOiJDNEVEQ0FFMUZBMDU0MEJFQTI0QTlGMjExQzFFOTA4MCJ9.efg5gZUg_bpWGkDdX9in4eLTEutSs8WX9rD17IHSi_o"
@@ -63,8 +63,8 @@
    "url": "https://spectrum.ieee.org/ai-in-cybersecurity-php2shell-vulnerability",
    "source": "Hacker News",
    "published_at": "2026-11-04T11:52:17Z",
-   "text": "1057 points and 632 comments on Hacker News.",
-   "points": 1057,
+   "text": "1073 points and 639 comments on Hacker News.",
+   "points": 1073,
    "discussion": "https://news.ycombinator.com/item?id=50364336"
   },
   {
@@ -74,7 +74,7 @@
    "published_at": "2026-11-04T18:05:50Z",
    "text": "welcome @pierrecomputer to openai! pierre’s open-source developer tools already power parts of codex today, and excited to build together the future of collaboratively building software with ai.",
    "author_name": "Greg Brockman",
-   "likes": 831,
+   "likes": 842,
    "story": "OpenAI acquires developer tools startup Pierre Computer for an undisclosed amount and plans to integrate Pierre's Code Storage feature directly into Codex"
   },
   {
@@ -99,7 +99,7 @@
    "published_at": "2026-11-04T18:24:35Z",
    "text": "Today we release Ripple-65B Preview, our 65B dense LLM we pretrained from scratch. Ripple sets a new state-of-the-art for U.S. open-weight models in agentic coding tasks, surpassing significantly larger models including Muse Spark Open-816B, Beam-501B, Inkling-975B, and Nemotron…",
    "author_name": "Ricursive Intelligence",
-   "likes": 2868,
+   "likes": 2950,
    "story": "Ricursive Intelligence released their first LLM: Ripple-65B Preview, a 65B dense model."
   },
   {
@@ -107,8 +107,8 @@
    "url": "https://www.ricursive.com/ripple",
    "source": "Hacker News",
    "published_at": "2026-11-04T18:53:29Z",
-   "text": "219 points and 78 comments on Hacker News.",
-   "points": 219,
+   "text": "226 points and 79 comments on Hacker News.",
+   "points": 226,
    "discussion": "https://news.ycombinator.com/item?id=50369925"
   },
   {
@@ -118,7 +118,7 @@
    "published_at": "2026-11-04T17:31:36Z",
    "text": "We’re releasing new Qwen3.8-Flash-Next GGUFs with 15% higher accuracy. Unsloth Dynamic V3.1 outperforms others by >15% on Terminal Bench, DeepSWE & more benchmarks (256K context). Run on 32GB+ RAM setups. GGUF: Blog:",
    "author_name": "Unsloth AI",
-   "likes": 1384,
+   "likes": 1416,
    "story": "Qwen 3.8 Flash Next GSQ RCO quant as good as BF16",
    "links": [
     "https://huggingface.co/unsloth/Qwen3.8-Flash-Next-GGUF",
@@ -138,8 +138,8 @@
    "url": "https://huggingface.co/moonshotai/Kimi-K3.1-Pro",
    "source": "Hacker News",
    "published_at": "2026-11-04T15:30:30Z",
-   "text": "371 points and 101 comments on Hacker News.",
-   "points": 371,
+   "text": "385 points and 102 comments on Hacker News.",
+   "points": 385,
    "discussion": "https://news.ycombinator.com/item?id=50366999"
   }
  ],
