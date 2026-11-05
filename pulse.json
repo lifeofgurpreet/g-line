@@ -1,13 +1,13 @@
 {
  "schema": 1,
- "generated_at": "2026-11-05T06:31:42Z",
+ "generated_at": "2026-11-05T14:10:13Z",
  "items": [
   {
-   "title": "Data center shares fall as investors expect slower AI buildout after Democrats win Congress; Hut 8…",
-   "url": "https://www.reuters.com/business/us-stock-index-futures-steady-democrats-seize-congress-2026-11-04/",
-   "source": "Reuters",
-   "published_at": "2026-11-04T23:31:24Z",
-   "text": "Data center shares fall as investors expect slower AI buildout after Democrats win Congress; Hut 8 drops 23%, IREN 11%, Core Scientific 10%, Applied Digital 7%. Wall Street closed sharply higher on Wednesday as Democrats' sweeping midterm election victory eased political uncertainty …",
+   "title": "Sources: at Jensen Huang's midterms event, tech executives expressed concern over anti-data center…",
+   "url": "https://www.wsj.com/tech/ai/the-election-day-revolt-that-threatens-americas-ai-boom-03a53b52?st=F62maw&reflink=desktopwebshare_permalink",
+   "source": "Wall Street Journal",
+   "published_at": "2026-11-05T11:26:08Z",
+   "text": "Sources: at Jensen Huang's midterms event, tech executives expressed concern over anti-data center results; OpenAI discussed resetting its 2027 capacity plans. Americans' vote for anti-data center candidates and ballot measures could rein in AI's expansion and hobble economic growth",
    "via": "Techmeme"
   },
   {
@@ -17,8 +17,8 @@
    "published_at": "2026-11-04T23:35:14Z",
    "text": "Images, upgraded—introducing ChatGPT Images 2.6. Now with GIFs and reference images. Plus, two new models are coming to the API with 50% faster image generation.",
    "author_name": "OpenAI",
-   "likes": 15096,
-   "story": "OpenAI launches Images 2.6 in ChatGPT, Codex, and the API, saying it generates images 50% faster, and adds animated GIF creation from prompts or photos"
+   "likes": 19631,
+   "story": "OpenAI launches Images 2.6 in ChatGPT, Codex, and its API, saying it generates images 50% faster, and adds animated GIF creation from a prompt or a photo"
   },
   {
    "title": "Claude Code 2.1.318 released",
@@ -28,48 +28,17 @@
    "text": "Added a record of your answer when Claude Code asks to turn on the mods it writes in a session · Added assume_role on mantle upstreams of the Claude apps gateway, for a role in another AWS account and for per-developer AWS cost attribution · Added an effort option to a mod's $.model.fork, so a quick side job can run at low whatever effort the session uses; the result reports the effort sent · Added the date a stored claude.ai sign-in ends to claude auth status (loginExpiresAt) and to claude -p JSON results (credential_expires_at)"
   },
   {
-   "title": "Some news: I’m joining OpenAI to lead product management for Core Products! I have a lot of respect…",
-   "url": "https://x.com/_catwu/status/2118137612577968402",
-   "source": "𝕏 @_catwu",
-   "published_at": "2026-11-05T00:25:34Z",
-   "text": "Some news: I’m joining OpenAI to lead product management for Core Products! I have a lot of respect for OpenAI for showing the world that scaling works, for bringing AI to over a billion people, and for believing great products are core to the mission. I’m excited to work with…",
-   "author_name": "cat",
-   "likes": 12053,
-   "story": "Cat Wu, who left Anthropic last week, says she is joining OpenAI to lead product manangement for core products; Wu was the product lead for Claude Code"
-  },
-  {
-   "title": "Voters in 38+ US jurisdictions pass data center bans or restrictions; TV network poll: 56% said AI…",
-   "url": "https://www.washingtonpost.com/technology/2026/11/04/voters-pass-over-20-ballot-measures-ban-or-restrict-data-centers/",
-   "source": "Washington Post",
-   "published_at": "2026-11-04T12:51:00Z",
-   "text": "Voters in 38+ US jurisdictions pass data center bans or restrictions; TV network poll: 56% said AI and data centers were a major or crucial factor in their vote. In at least 38 jurisdictions voters rejected or restricted data centers, delivering a major setback to the AI industry. — SummaryLoading...",
-   "via": "Techmeme"
-  },
-  {
-   "title": "AI is forcing us to pay off 40 years of technical debt",
-   "url": "https://spectrum.ieee.org/ai-in-cybersecurity-php2shell-vulnerability",
-   "source": "Hacker News",
-   "published_at": "2026-11-04T11:52:17Z",
-   "text": "1144 points and 663 comments on Hacker News.",
-   "points": 1144,
-   "discussion": "https://news.ycombinator.com/item?id=50364336"
-  },
-  {
-   "title": "7 months ago, AOC and I introduced an AI data center moratorium. Last night, 43 of 44 communities v…",
-   "url": "https://x.com/SenSanders/status/2118131101562454038",
-   "source": "𝕏 @SenSanders",
-   "published_at": "2026-11-04T23:59:42Z",
-   "text": "7 months ago, AOC and I introduced an AI data center moratorium. Last night, 43 of 44 communities voted for one locally. Americans don’t want Big Tech oligarchs wrecking the environment, gutting jobs and threatening humanity’s future. NATIONAL DATA CENTER MORATORIUM NOW",
-   "author_name": "Sen. Bernie Sanders",
-   "likes": 9962,
-   "story": "Democrats who ran on data center opposition and AI regulation won Congress seats in OH, PA, WI, CO; some see a mandate to use their new gavels against Big Tech"
-  },
-  {
-   "title": "Qwen 3.8 27B on my laptop can interpret model weights, too",
-   "url": "https://simonwillison.net/2026/Nov/3/qwen-can-interpret-model-weights/",
-   "source": "Simon Willison's weblog",
-   "published_at": "2026-11-03T16:29:48Z",
-   "text": "Yesterday's hot paper was Sparks of Weight-Space Programming: LLMs can natively read & write neural network weights by Rikiya Takehi, Jayden Teoh, Alex Zhang, and Omar Khattab. The paper (OK, the authors classify is as a \"blog post\", but it's paper-shaped) found that frontier models, in particular GPT-6 Astra, can both interpret and modify the raw weights of a machine learning model - literally a text description of the model containing a bunch of floating point numbers."
+   "title": "NEW: Apple is cutting employee AI spending budgets even as it pushes workers to use the technology…",
+   "url": "https://x.com/markgurman/status/2118068667103453360",
+   "source": "𝕏 @markgurman",
+   "published_at": "2026-11-04T19:51:36Z",
+   "text": "NEW: Apple is cutting employee AI spending budgets even as it pushes workers to use the technology more. Engineers have seen daily limits cut from $300 to $200, with further reductions to $100 planned. Other teams could see limits fall to $25.",
+   "author_name": "Mark Gurman",
+   "likes": 3938,
+   "story": "Sources: Apple cut some engineers' daily AI spending cap from $300 to $200 and plans cuts to as little as $100, as cost cutting stokes employee fears of layoffs",
+   "links": [
+    "https://www.bloomberg.com/news/articles/2026-11-04/apple-cuts-internal-ai-usage-budgets-in-move-to-reduce-spending?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc5MzgyMTg3MSwiZXhwIjoxNzk0NDI2NjcxLCJhcnRpY2xlSWQiOiJUTlhPMzdLSzNOWTkwMCIsImJjb25uZWN0SWQiOiJDNEVEQ0FFMUZBMDU0MEJFQTI0QTlGMjExQzFFOTA4MCJ9.efg5gZUg_bpWGkDdX9in4eLTEutSs8WX9rD17IHSi_o"
+   ]
   },
   {
    "title": "OpenAI details a pipeline that used an upcoming cyber model to validate and patch 948 local privile…",
@@ -80,60 +49,45 @@
    "via": "Techmeme"
   },
   {
-   "title": "NEW: Apple is cutting employee AI spending budgets even as it pushes workers to use the technology…",
-   "url": "https://x.com/markgurman/status/2118068667103453360",
-   "source": "𝕏 @markgurman",
-   "published_at": "2026-11-04T19:51:36Z",
-   "text": "NEW: Apple is cutting employee AI spending budgets even as it pushes workers to use the technology more. Engineers have seen daily limits cut from $300 to $200, with further reductions to $100 planned. Other teams could see limits fall to $25.",
-   "author_name": "Mark Gurman",
-   "likes": 2866,
-   "story": "Sources: Apple cut some engineers' daily AI spending cap to $200 from $300 and plans cuts to as little as $100, as cost cutting stokes staff fears of layoffs",
-   "links": [
-    "https://www.bloomberg.com/news/articles/2026-11-04/apple-cuts-internal-ai-usage-budgets-in-move-to-reduce-spending?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc5MzgyMTg3MSwiZXhwIjoxNzk0NDI2NjcxLCJhcnRpY2xlSWQiOiJUTlhPMzdLSzNOWTkwMCIsImJjb25uZWN0SWQiOiJDNEVEQ0FFMUZBMDU0MEJFQTI0QTlGMjExQzFFOTA4MCJ9.efg5gZUg_bpWGkDdX9in4eLTEutSs8WX9rD17IHSi_o"
-   ]
+   "title": "> we developed and trained Ripple-65B Preview for only $32M, which is one-tenth the cost of the pre…",
+   "url": "https://x.com/swyx/status/2118073650356384239",
+   "source": "𝕏 @swyx",
+   "published_at": "2026-11-04T20:11:24Z",
+   "text": "> we developed and trained Ripple-65B Preview for only $32M, which is one-tenth the cost of the previous open-weight SOTA on agentic coding¹ this is like the avengers of open model SOTA ¹ \"Note that $32M is our full R&D cost starting from scratch, including pretraining ladder…",
+   "author_name": "swyx",
+   "likes": 200,
+   "story": "Ricursive releases Ripple-65B Preview, a general-purpose variant of its AI model for advanced chip design, under Apache 2.0, costing $0.60 per 1M output tokens"
   },
   {
-   "title": "Kimi K3.1 Pro model weights are out",
-   "url": "https://huggingface.co/moonshotai/Kimi-K3.1-Pro",
-   "source": "Hacker News",
-   "published_at": "2026-11-04T15:30:30Z",
-   "text": "461 points and 132 comments on Hacker News.",
-   "points": 461,
-   "discussion": "https://news.ycombinator.com/item?id=50366999"
+   "title": "Qwen 3.8 27B on my laptop can interpret model weights, too",
+   "url": "https://simonwillison.net/2026/Nov/3/qwen-can-interpret-model-weights/",
+   "source": "Simon Willison's weblog",
+   "published_at": "2026-11-03T16:29:48Z",
+   "text": "Yesterday's hot paper was Sparks of Weight-Space Programming: LLMs can natively read & write neural network weights by Rikiya Takehi, Jayden Teoh, Alex Zhang, and Omar Khattab. The paper (OK, the authors classify is as a \"blog post\", but it's paper-shaped) found that frontier models, in particular GPT-6 Astra, can both interpret and modify the raw weights of a machine learning model - literally a text description of the model containing a bunch of floating point numbers."
   },
   {
-   "title": "Today we release Ripple-65B Preview, our 65B dense LLM we pretrained from scratch. Ripple sets a ne…",
-   "url": "https://x.com/RicursiveAI/status/2118046765857546733",
-   "source": "𝕏 @RicursiveAI",
-   "published_at": "2026-11-04T18:24:35Z",
-   "text": "Today we release Ripple-65B Preview, our 65B dense LLM we pretrained from scratch. Ripple sets a new state-of-the-art for U.S. open-weight models in agentic coding tasks, surpassing significantly larger models including Muse Spark Open-816B, Beam-501B, Inkling-975B, and Nemotron…",
-   "author_name": "Ricursive Intelligence",
-   "likes": 3466,
-   "story": "Ricursive Intelligence released their first LLM: Ripple-65B Preview, a 65B dense model."
+   "title": "Sources detail Dario Amodei's AI beliefs, shaped by forums like GiveWell and based on EA and “ratio…",
+   "url": "https://www.nytimes.com/2026/11/05/technology/dario-amodei-anthropic-ai.html?unlocked_article_code=1.OFE.CslN.usTW7cxPf_1Y&smid=url-share",
+   "source": "New York Times",
+   "published_at": "2026-11-05T12:25:48Z",
+   "text": "Sources detail Dario Amodei's AI beliefs, shaped by forums like GiveWell and based on EA and “rationalism”, and his disputes with Sam Altman and Greg Brockman. One night in 2007, Dario Amodei regaled a friend who was visiting him at Princeton University with his thoughts on …",
+   "via": "Techmeme"
   },
   {
-   "title": "welcome @pierrecomputer to openai! pierre’s open-source developer tools already power parts of code…",
-   "url": "https://x.com/gdb/status/2118042051057250377",
-   "source": "𝕏 @gdb",
-   "published_at": "2026-11-04T18:05:50Z",
-   "text": "welcome @pierrecomputer to openai! pierre’s open-source developer tools already power parts of codex today, and excited to build together the future of collaboratively building software with ai.",
-   "author_name": "Greg Brockman",
-   "likes": 924,
-   "story": "OpenAI acquires developer tools startup Pierre Computer for an undisclosed amount and plans to integrate Pierre's Code Storage feature directly into Codex"
+   "title": "Cat Wu, who left Anthropic last week, says she is joining OpenAI to lead product manangement for co…",
+   "url": "https://www.businessinsider.com/cat-wu-joins-openai-from-anthropic-product-lead-coup-2026-11",
+   "source": "Stephen Council / Business…",
+   "published_at": "2026-11-05T01:21:05Z",
+   "text": "Cat Wu, who left Anthropic last week, says she is joining OpenAI to lead product manangement for core products; Wu was the product lead for Claude Code. Cat Wu, who left Anthropic last week after becoming one of the company's highest-profile product managers, is joining OpenAI. She announced the news on X.",
+   "via": "Techmeme"
   },
   {
-   "title": "We’re releasing new Qwen3.8-Flash-Next GGUFs with 15% higher accuracy. Unsloth Dynamic V3.1 outperf…",
-   "url": "https://x.com/UnslothAI/status/2118033433045991660",
-   "source": "𝕏 @UnslothAI",
-   "published_at": "2026-11-04T17:31:36Z",
-   "text": "We’re releasing new Qwen3.8-Flash-Next GGUFs with 15% higher accuracy. Unsloth Dynamic V3.1 outperforms others by >15% on Terminal Bench, DeepSWE & more benchmarks (256K context). Run on 32GB+ RAM setups. GGUF: Blog:",
-   "author_name": "Unsloth AI",
-   "likes": 1625,
-   "story": "Qwen 3.8 Flash Next GSQ RCO quant as good as BF16",
-   "links": [
-    "https://huggingface.co/unsloth/Qwen3.8-Flash-Next-GGUF",
-    "https://unsloth.ai/docs/models/qwen3.8-next"
-   ]
+   "title": "Data center shares fall as investors expect a slower AI buildout after Democrats' win; Hut 8 drops…",
+   "url": "https://www.reuters.com/business/us-stock-index-futures-steady-democrats-seize-congress-2026-11-04/",
+   "source": "Reuters",
+   "published_at": "2026-11-04T23:31:24Z",
+   "text": "Data center shares fall as investors expect a slower AI buildout after Democrats' win; Hut 8 drops 23%, IREN 11%, Core Scientific 10%, and Applied Digital 7%. Wall Street closed sharply higher on Wednesday as Democrats' sweeping midterm election victory eased political uncertainty …",
+   "via": "Techmeme"
   },
   {
    "title": "Meta acquires Conductor, which lets developers run multiple AI coding agents in parallel; CEO Charl…",
@@ -141,6 +95,38 @@
    "source": "Madison Mills / Axios",
    "published_at": "2026-11-04T18:51:23Z",
    "text": "Meta acquires Conductor, which lets developers run multiple AI coding agents in parallel; CEO Charlie Holtz says the team will join Meta Superintelligence Labs. Meta has acquired Conductor, an AI coding startup that lets software engineers manage multiple coding agents simultaneously …",
+   "via": "Techmeme"
+  },
+  {
+   "title": "Sources: Microsoft rejects an option to more than double its Texas data center contract with Nscale…",
+   "url": "https://www.ft.com/content/668e6ef8-88a1-4bef-8664-8f495baf09f8",
+   "source": "Financial Times",
+   "published_at": "2026-11-05T05:46:05Z",
+   "text": "Sources: Microsoft rejects an option to more than double its Texas data center contract with Nscale, dealing a fresh blow to Nscale's ambitions for a $35B IPO. Fresh blow ahead of start-up's IPO as tech giant turns down option to more than double Texas data centre contract",
+   "via": "Techmeme"
+  },
+  {
+   "title": "Source: Meta has decided to stop using fruit for its AI model codenames, as they didn't suit its lo…",
+   "url": "https://www.businessinsider.com/meta-will-stop-naming-its-ai-models-after-fruit-2026-11",
+   "source": "Charles Rollet / Business I…",
+   "published_at": "2026-11-05T04:36:05Z",
+   "text": "Source: Meta has decided to stop using fruit for its AI model codenames, as they didn't suit its lofty AI ambitions; its latest model was named “Watermelon”. Meta is done with fruits. — The social media giant has internally decided to stop naming its AI models after fruit, a person familiar with the matter said.",
+   "via": "Techmeme"
+  },
+  {
+   "title": "Pro-AI PAC Leading the Future ended the midterms with $20M+ in the bank, from ~$100M, after focusin…",
+   "url": "https://www.wired.com/story/the-biggest-pro-ai-super-pac-network-didnt-really-impact-the-midterms/",
+   "source": "Tess Owen / Wired",
+   "published_at": "2026-11-05T06:46:27Z",
+   "text": "Pro-AI PAC Leading the Future ended the midterms with $20M+ in the bank, from ~$100M, after focusing on safe bipartisan candidates; its riskier bets fell flat",
+   "via": "Techmeme"
+  },
+  {
+   "title": "OpenAI President Greg Brockman says H1 2026 was “pretty rough”, but agentic coding tools, GPT-5.6 S…",
+   "url": "https://www.wsj.com/tech/openai-had-rough-first-half-of-year-before-coding-takeoff-brockman-says-6c97d9e5?st=hL3kyT&reflink=desktopwebshare_permalink",
+   "source": "Maxwell Zeff / Wall Street…",
+   "published_at": "2026-11-05T07:36:33Z",
+   "text": "OpenAI President Greg Brockman says H1 2026 was “pretty rough”, but agentic coding tools, GPT-5.6 Sol, and ChatGPT Work drove a “revenue inflection” in Q3. The ChatGPT maker's president said it experienced a ‘revenue inflection’ in the third quarter of 2026, driven by a growing enterprise business",
    "via": "Techmeme"
   }
  ],
