@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-05T05:58:37Z",
+ "generated_at": "2026-11-05T06:31:42Z",
  "items": [
   {
    "title": "Data center shares fall as investors expect slower AI buildout after Democrats win Congress; Hut 8…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-04T23:35:14Z",
    "text": "Images, upgraded—introducing ChatGPT Images 2.6. Now with GIFs and reference images. Plus, two new models are coming to the API with 50% faster image generation.",
    "author_name": "OpenAI",
-   "likes": 14494,
+   "likes": 15096,
    "story": "OpenAI launches Images 2.6 in ChatGPT, Codex, and the API, saying it generates images 50% faster, and adds animated GIF creation from prompts or photos"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-11-05T00:25:34Z",
    "text": "Some news: I’m joining OpenAI to lead product management for Core Products! I have a lot of respect for OpenAI for showing the world that scaling works, for bringing AI to over a billion people, and for believing great products are core to the mission. I’m excited to work with…",
    "author_name": "cat",
-   "likes": 11641,
+   "likes": 12053,
    "story": "Cat Wu, who left Anthropic last week, says she is joining OpenAI to lead product manangement for core products; Wu was the product lead for Claude Code"
   },
   {
@@ -50,8 +50,8 @@
    "url": "https://spectrum.ieee.org/ai-in-cybersecurity-php2shell-vulnerability",
    "source": "Hacker News",
    "published_at": "2026-11-04T11:52:17Z",
-   "text": "1138 points and 662 comments on Hacker News.",
-   "points": 1138,
+   "text": "1144 points and 663 comments on Hacker News.",
+   "points": 1144,
    "discussion": "https://news.ycombinator.com/item?id=50364336"
   },
   {
@@ -61,7 +61,7 @@
    "published_at": "2026-11-04T23:59:42Z",
    "text": "7 months ago, AOC and I introduced an AI data center moratorium. Last night, 43 of 44 communities voted for one locally. Americans don’t want Big Tech oligarchs wrecking the environment, gutting jobs and threatening humanity’s future. NATIONAL DATA CENTER MORATORIUM NOW",
    "author_name": "Sen. Bernie Sanders",
-   "likes": 9526,
+   "likes": 9962,
    "story": "Democrats who ran on data center opposition and AI regulation won Congress seats in OH, PA, WI, CO; some see a mandate to use their new gavels against Big Tech"
   },
   {
@@ -86,7 +86,7 @@
    "published_at": "2026-11-04T19:51:36Z",
    "text": "NEW: Apple is cutting employee AI spending budgets even as it pushes workers to use the technology more. Engineers have seen daily limits cut from $300 to $200, with further reductions to $100 planned. Other teams could see limits fall to $25.",
    "author_name": "Mark Gurman",
-   "likes": 2815,
+   "likes": 2866,
    "story": "Sources: Apple cut some engineers' daily AI spending cap to $200 from $300 and plans cuts to as little as $100, as cost cutting stokes staff fears of layoffs",
    "links": [
     "https://www.bloomberg.com/news/articles/2026-11-04/apple-cuts-internal-ai-usage-budgets-in-move-to-reduce-spending?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc5MzgyMTg3MSwiZXhwIjoxNzk0NDI2NjcxLCJhcnRpY2xlSWQiOiJUTlhPMzdLSzNOWTkwMCIsImJjb25uZWN0SWQiOiJDNEVEQ0FFMUZBMDU0MEJFQTI0QTlGMjExQzFFOTA4MCJ9.efg5gZUg_bpWGkDdX9in4eLTEutSs8WX9rD17IHSi_o"
@@ -97,8 +97,8 @@
    "url": "https://huggingface.co/moonshotai/Kimi-K3.1-Pro",
    "source": "Hacker News",
    "published_at": "2026-11-04T15:30:30Z",
-   "text": "450 points and 131 comments on Hacker News.",
-   "points": 450,
+   "text": "461 points and 132 comments on Hacker News.",
+   "points": 461,
    "discussion": "https://news.ycombinator.com/item?id=50366999"
   },
   {
@@ -108,7 +108,7 @@
    "published_at": "2026-11-04T18:24:35Z",
    "text": "Today we release Ripple-65B Preview, our 65B dense LLM we pretrained from scratch. Ripple sets a new state-of-the-art for U.S. open-weight models in agentic coding tasks, surpassing significantly larger models including Muse Spark Open-816B, Beam-501B, Inkling-975B, and Nemotron…",
    "author_name": "Ricursive Intelligence",
-   "likes": 3401,
+   "likes": 3466,
    "story": "Ricursive Intelligence released their first LLM: Ripple-65B Preview, a 65B dense model."
   },
   {
@@ -118,7 +118,7 @@
    "published_at": "2026-11-04T18:05:50Z",
    "text": "welcome @pierrecomputer to openai! pierre’s open-source developer tools already power parts of codex today, and excited to build together the future of collaboratively building software with ai.",
    "author_name": "Greg Brockman",
-   "likes": 909,
+   "likes": 924,
    "story": "OpenAI acquires developer tools startup Pierre Computer for an undisclosed amount and plans to integrate Pierre's Code Storage feature directly into Codex"
   },
   {
@@ -128,7 +128,7 @@
    "published_at": "2026-11-04T17:31:36Z",
    "text": "We’re releasing new Qwen3.8-Flash-Next GGUFs with 15% higher accuracy. Unsloth Dynamic V3.1 outperforms others by >15% on Terminal Bench, DeepSWE & more benchmarks (256K context). Run on 32GB+ RAM setups. GGUF: Blog:",
    "author_name": "Unsloth AI",
-   "likes": 1610,
+   "likes": 1625,
    "story": "Qwen 3.8 Flash Next GSQ RCO quant as good as BF16",
    "links": [
     "https://huggingface.co/unsloth/Qwen3.8-Flash-Next-GGUF",
