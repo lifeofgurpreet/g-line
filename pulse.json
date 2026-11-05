@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-05T01:07:50Z",
+ "generated_at": "2026-11-05T01:39:10Z",
  "items": [
   {
    "title": "Democratic gubernatorial wins from Texas and Georgia to Ohio and Pennsylvania are set to expose 50%…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-04T23:35:14Z",
    "text": "Images, upgraded—introducing ChatGPT Images 2.6. Now with GIFs and reference images. Plus, two new models are coming to the API with 50% faster image generation.",
    "author_name": "OpenAI",
-   "likes": 7448,
+   "likes": 8839,
    "story": "OpenAI launches Images 2.6 in ChatGPT, Codex, and the API, saying it generates images 50% faster, and adds animated GIF creation from prompts or photos"
   },
   {
@@ -28,24 +28,27 @@
    "text": "Added a record of your answer when Claude Code asks to turn on the mods it writes in a session · Added assume_role on mantle upstreams of the Claude apps gateway, for a role in another AWS account and for per-developer AWS cost attribution · Added an effort option to a mod's $.model.fork, so a quick side job can run at low whatever effort the session uses; the result reports the effort sent · Added the date a stored claude.ai sign-in ends to claude auth status (loginExpiresAt) and to claude -p JSON results (credential_expires_at)"
   },
   {
-   "title": "Do individual limits still make sense? As capabilities increase you want to work with and support a…",
-   "url": "https://x.com/steipete/status/2118116514700386439",
-   "source": "𝕏 @steipete",
-   "published_at": "2026-11-04T23:01:44Z",
-   "text": "Do individual limits still make sense? As capabilities increase you want to work with and support an agent that represents your project, that runs loops and evolves your codebase. The humans merely curate the automations.",
-   "author_name": "Peter Steinberger 🦞",
-   "likes": 280,
-   "story": "Sources: Apple cut some engineers' daily AI spending cap to $200 from $300 and plans cuts to as little as $100, as cost cutting stokes staff fears of layoffs"
+   "title": "Some news: I’m joining OpenAI to lead product management for Core Products! I have a lot of respect…",
+   "url": "https://x.com/_catwu/status/2118137612577968402",
+   "source": "𝕏 @_catwu",
+   "published_at": "2026-11-05T00:25:34Z",
+   "text": "Some news: I’m joining OpenAI to lead product management for Core Products! I have a lot of respect for OpenAI for showing the world that scaling works, for bringing AI to over a billion people, and for believing great products are core to the mission. I’m excited to work with…",
+   "author_name": "cat",
+   "likes": 5408,
+   "story": "Cat Wu, who left Anthropic last week, says she is joining OpenAI to lead product manangement for core products; Wu was the product lead for Claude Code"
   },
   {
-   "title": "Top of the Democratic agenda on day 1 needs to be a pause on advanced AI development, regulation of…",
-   "url": "https://x.com/RepYassAnsari/status/2118054336077127797",
-   "source": "𝕏 @RepYassAnsari",
-   "published_at": "2026-11-04T18:54:39Z",
-   "text": "Top of the Democratic agenda on day 1 needs to be a pause on advanced AI development, regulation of this out of control industry, and a ban on artificial superintelligence.",
-   "author_name": "Congresswoman Yassamin Ansari",
-   "likes": 2863,
-   "story": "Democratic Arizona Congresswoman: Top of the Democratic agenda on day 1 needs to be a pause on advanced AI development, regulation of this out of control indus…"
+   "title": "NEW: Apple is cutting employee AI spending budgets even as it pushes workers to use the technology…",
+   "url": "https://x.com/markgurman/status/2118068667103453360",
+   "source": "𝕏 @markgurman",
+   "published_at": "2026-11-04T19:51:36Z",
+   "text": "NEW: Apple is cutting employee AI spending budgets even as it pushes workers to use the technology more. Engineers have seen daily limits cut from $300 to $200, with further reductions to $100 planned. Other teams could see limits fall to $25.",
+   "author_name": "Mark Gurman",
+   "likes": 2311,
+   "story": "Sources: Apple cut some engineers' daily AI spending cap to $200 from $300 and plans cuts to as little as $100, as cost cutting stokes staff fears of layoffs",
+   "links": [
+    "https://www.bloomberg.com/news/articles/2026-11-04/apple-cuts-internal-ai-usage-budgets-in-move-to-reduce-spending?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc5MzgyMTg3MSwiZXhwIjoxNzk0NDI2NjcxLCJhcnRpY2xlSWQiOiJUTlhPMzdLSzNOWTkwMCIsImJjb25uZWN0SWQiOiJDNEVEQ0FFMUZBMDU0MEJFQTI0QTlGMjExQzFFOTA4MCJ9.efg5gZUg_bpWGkDdX9in4eLTEutSs8WX9rD17IHSi_o"
+   ]
   },
   {
    "title": "Voters in 38+ US jurisdictions pass data center bans or restrictions; TV network poll: 56% said AI…",
@@ -60,8 +63,8 @@
    "url": "https://spectrum.ieee.org/ai-in-cybersecurity-php2shell-vulnerability",
    "source": "Hacker News",
    "published_at": "2026-11-04T11:52:17Z",
-   "text": "1046 points and 626 comments on Hacker News.",
-   "points": 1046,
+   "text": "1057 points and 632 comments on Hacker News.",
+   "points": 1057,
    "discussion": "https://news.ycombinator.com/item?id=50364336"
   },
   {
@@ -71,7 +74,7 @@
    "published_at": "2026-11-04T18:05:50Z",
    "text": "welcome @pierrecomputer to openai! pierre’s open-source developer tools already power parts of codex today, and excited to build together the future of collaboratively building software with ai.",
    "author_name": "Greg Brockman",
-   "likes": 818,
+   "likes": 831,
    "story": "OpenAI acquires developer tools startup Pierre Computer for an undisclosed amount and plans to integrate Pierre's Code Storage feature directly into Codex"
   },
   {
@@ -96,7 +99,7 @@
    "published_at": "2026-11-04T18:24:35Z",
    "text": "Today we release Ripple-65B Preview, our 65B dense LLM we pretrained from scratch. Ripple sets a new state-of-the-art for U.S. open-weight models in agentic coding tasks, surpassing significantly larger models including Muse Spark Open-816B, Beam-501B, Inkling-975B, and Nemotron…",
    "author_name": "Ricursive Intelligence",
-   "likes": 2776,
+   "likes": 2868,
    "story": "Ricursive Intelligence released their first LLM: Ripple-65B Preview, a 65B dense model."
   },
   {
@@ -104,8 +107,8 @@
    "url": "https://www.ricursive.com/ripple",
    "source": "Hacker News",
    "published_at": "2026-11-04T18:53:29Z",
-   "text": "212 points and 75 comments on Hacker News.",
-   "points": 212,
+   "text": "219 points and 78 comments on Hacker News.",
+   "points": 219,
    "discussion": "https://news.ycombinator.com/item?id=50369925"
   },
   {
@@ -115,7 +118,7 @@
    "published_at": "2026-11-04T17:31:36Z",
    "text": "We’re releasing new Qwen3.8-Flash-Next GGUFs with 15% higher accuracy. Unsloth Dynamic V3.1 outperforms others by >15% on Terminal Bench, DeepSWE & more benchmarks (256K context). Run on 32GB+ RAM setups. GGUF: Blog:",
    "author_name": "Unsloth AI",
-   "likes": 1357,
+   "likes": 1384,
    "story": "Qwen 3.8 Flash Next GSQ RCO quant as good as BF16",
    "links": [
     "https://huggingface.co/unsloth/Qwen3.8-Flash-Next-GGUF",
@@ -135,8 +138,8 @@
    "url": "https://huggingface.co/moonshotai/Kimi-K3.1-Pro",
    "source": "Hacker News",
    "published_at": "2026-11-04T15:30:30Z",
-   "text": "356 points and 95 comments on Hacker News.",
-   "points": 356,
+   "text": "371 points and 101 comments on Hacker News.",
+   "points": 371,
    "discussion": "https://news.ycombinator.com/item?id=50366999"
   }
  ],
