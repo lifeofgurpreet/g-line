@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-06T08:18:35Z",
+ "generated_at": "2026-11-06T08:50:13Z",
  "items": [
   {
    "title": "The Nasdaq 100 drops 6%, losing a record $2.3T in value, and the Philadelphia chip index plunges 12…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-05T18:00:35Z",
    "text": "Introducing Personal Finance in Claude, in beta in the US. Connect the accounts you choose, and Claude answers your money questions in everyday language, from your own balances and transactions. Access is read-only, and Claude can't move, manage, or invest your money.",
    "author_name": "Claude",
-   "likes": 31430,
+   "likes": 31819,
    "story": "Anthropic launches Personal Finance in Claude, letting users connect bank and credit card accounts via Plaid with read-only access to analyze spending trends"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-11-05T17:09:13Z",
    "text": "Introducing GPT‑6 Cyber: a major advance in security research that pairs stronger capabilities with better model alignment. The model powered the Linux kernel research we announced yesterday, and security teams at companies like Mozilla, Palo Alto Networks, Calif, and…",
    "author_name": "OpenAI",
-   "likes": 16797,
+   "likes": 16963,
    "story": "OpenAI launches GPT-6 Cyber, which it says outperforms GPT-6 Astra on cyber benchmarks, is better at finding vulnerabilities, and is less likely to go rogue"
   },
   {
@@ -50,8 +50,8 @@
    "url": "https://github.com/anthropics/claude-code/issues/107757",
    "source": "Hacker News",
    "published_at": "2026-11-05T22:17:15Z",
-   "text": "1002 points and 321 comments on Hacker News.",
-   "points": 1002,
+   "text": "1059 points and 330 comments on Hacker News.",
+   "points": 1059,
    "discussion": "https://news.ycombinator.com/item?id=50385272"
   },
   {
@@ -61,7 +61,7 @@
    "published_at": "2026-11-05T17:11:48Z",
    "text": "Today we are rolling out Gemini Omni Flash 1.2, with: - longer video generation (15 seconds) - deeper cinematic controls for camera pov - support for multi-turn conversation editing - less visual drift - 30% lower price than Omni Flash 1.1 Read more:",
    "author_name": "Logan Kilpatrick",
-   "likes": 2147,
+   "likes": 2155,
    "story": "Google rolls out Gemini Omni 1.2 Flash, which creates clips up to 15 seconds, vs. 10 seconds with Omni 1.1, has better reference adherence, and costs 30% less",
    "links": [
     "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/"
@@ -96,7 +96,7 @@
    "published_at": "2026-11-05T18:30:24Z",
    "text": "Now in the Muse app: talk with your Muse in real time. And pick from multiple voices 🗣️",
    "author_name": "Mark Zuckerberg",
-   "likes": 4953,
+   "likes": 5001,
    "story": "Meta rolls out voice mode and expressive avatars in the Muse app, starting in the US, letting users have real-time voice conversations with their Muse AI agent"
   },
   {
@@ -104,18 +104,18 @@
    "url": "https://finance.yahoo.com/technology/ai/articles/mark-cuban-says-facebook-knowingly-213000020.html",
    "source": "Hacker News",
    "published_at": "2026-11-05T23:09:57Z",
-   "text": "291 points and 135 comments on Hacker News.",
-   "points": 291,
+   "text": "306 points and 143 comments on Hacker News.",
+   "points": 306,
    "discussion": "https://news.ycombinator.com/item?id=50385870"
   },
   {
-   "title": "OpenAI kicked off its big charm offensive this morning after data center moratoriums went 43-1 duri…",
-   "url": "https://x.com/AndrewCurran_/status/2118346666789249335",
+   "title": "This is probably going to be a huge part of political coverage for the next two years. The Democrat…",
+   "url": "https://x.com/AndrewCurran_/status/2118083360006483986",
    "source": "𝕏 @AndrewCurran_",
-   "published_at": "2026-11-05T14:16:16Z",
-   "text": "OpenAI kicked off its big charm offensive this morning after data center moratoriums went 43-1 during the midterms, and many candidates rode a wave of public opposition to the industry to huge victories. Data centers have been rebranded as Compute Campuses. OpenAI has also…",
+   "published_at": "2026-11-04T20:49:59Z",
+   "text": "This is probably going to be a huge part of political coverage for the next two years. The Democrats are going to push hard for an AI pause, new industry regulations, and probably a Bernie-style ban on superintelligence itself that exceeds the human-level. It will be interesting…",
    "author_name": "Andrew Curran",
-   "likes": 809,
+   "likes": 1470,
    "story": "Sources: at Jensen Huang's midterms event, tech executives expressed concern over anti-data center results; OpenAI discussed resetting its 2027 capacity plans"
   },
   {
@@ -127,13 +127,13 @@
    "via": "Techmeme"
   },
   {
-   "title": "Nvidia Kubernetes Engine (NVKE)",
-   "url": "https://github.com/dsx-ai-factory/nvke",
+   "title": "I struggle to believe that AI R&D is ingenious",
+   "url": "https://www.lesswrong.com/posts/DALNiKBjMGMF8grme/arjun-panickssery-s-shortform?commentId=fJtaHHHfx45tD7BSL",
    "source": "Hacker News",
-   "published_at": "2026-11-06T03:16:26Z",
-   "text": "67 points and 19 comments on Hacker News.",
+   "published_at": "2026-11-06T05:19:04Z",
+   "text": "67 points and 47 comments on Hacker News.",
    "points": 67,
-   "discussion": "https://news.ycombinator.com/item?id=50387738"
+   "discussion": "https://news.ycombinator.com/item?id=50388513"
   }
  ],
  "sources": "curated, Techmeme, X (found via Techmeme, Reddit, the Internet Archive), Claude Code releases, Anthropic, Hacker News, Simon Willison"
