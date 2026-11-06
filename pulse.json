@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-06T15:49:17Z",
+ "generated_at": "2026-11-06T16:22:42Z",
  "items": [
   {
    "title": "The Nasdaq 100 fell 6% on Thursday, losing a record $2.3T in value, and the Philadelphia chip index…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-05T18:00:35Z",
    "text": "Introducing Personal Finance in Claude, in beta in the US. Connect the accounts you choose, and Claude answers your money questions in everyday language, from your own balances and transactions. Access is read-only, and Claude can't move, manage, or invest your money.",
    "author_name": "Claude",
-   "likes": 37975,
+   "likes": 38503,
    "story": "Anthropic launches Personal Finance in Claude, letting users connect bank and credit card accounts via Plaid with read-only access to analyze spending trends"
   },
   {
@@ -34,18 +34,18 @@
    "published_at": "2026-11-06T14:46:50Z",
    "text": "Qwhen? Qsoon! For our friends outside China, the Chinese text in the poster comes from Zhuangzi, an ancient Chinese classic: \"Far in the northern sea lives a fish named Kun (pronounced like Qwen). So immense is its size that no one knows how many thousands of miles it spans.\"",
    "author_name": "Qwen Developers",
-   "likes": 1389,
-   "story": "Qwen Developers on X: \"Qwhen? Qsoon! For our friends outside China, the Chinese text in the poster comes from"
+   "likes": 1835,
+   "story": "Qwen - the becoming begins"
   },
   {
-   "title": "Introducing GPT‑6 Cyber: a major advance in security research that pairs stronger capabilities with…",
-   "url": "https://x.com/OpenAI/status/2118390190246879554",
-   "source": "𝕏 @OpenAI",
-   "published_at": "2026-11-05T17:09:13Z",
-   "text": "Introducing GPT‑6 Cyber: a major advance in security research that pairs stronger capabilities with better model alignment. The model powered the Linux kernel research we announced yesterday, and security teams at companies like Mozilla, Palo Alto Networks, Calif, and…",
-   "author_name": "OpenAI",
-   "likes": 19118,
-   "story": "OpenAI launches GPT-6 Cyber, which it says outperforms GPT-6 Astra on cyber benchmarks, is better at finding vulnerabilities, and is less likely to go rogue"
+   "title": "Since August, a team within METR has worked with internal Anthropic information to assess whether A…",
+   "url": "https://x.com/METR_Evals/status/2118412183860351084",
+   "source": "𝕏 @METR_Evals",
+   "published_at": "2026-11-05T18:36:37Z",
+   "text": "Since August, a team within METR has worked with internal Anthropic information to assess whether AI itself is accelerating AI development. We are now publishing a report summarizing the results of this risk assessment.",
+   "author_name": "METR",
+   "likes": 4361,
+   "story": "METR: Anthropic's models are improving about twice as fast as they did between March 2024 and October 2025, with internal AI use driving ~80% of acceleration"
   },
   {
    "title": "Thinking Machines Lab debuts Inkling 2 Small, a MoE model with 594B total and 17B active parameters…",
@@ -60,19 +60,19 @@
    "url": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/",
    "source": "Hacker News",
    "published_at": "2026-11-06T13:35:27Z",
-   "text": "141 points and 105 comments on Hacker News.",
-   "points": 141,
+   "text": "169 points and 130 comments on Hacker News.",
+   "points": 169,
    "discussion": "https://news.ycombinator.com/item?id=50392118"
   },
   {
-   "title": "Since August, a team within METR has worked with internal Anthropic information to assess whether A…",
-   "url": "https://x.com/METR_Evals/status/2118412183860351084",
-   "source": "𝕏 @METR_Evals",
-   "published_at": "2026-11-05T18:36:37Z",
-   "text": "Since August, a team within METR has worked with internal Anthropic information to assess whether AI itself is accelerating AI development. We are now publishing a report summarizing the results of this risk assessment.",
-   "author_name": "METR",
-   "likes": 4293,
-   "story": "METR: Anthropic's models are improving about twice as fast as they did between March 2024 and October 2025, with internal AI use driving ~80% of acceleration"
+   "title": "Now in the Muse app: talk with your Muse in real time. And pick from multiple voices 🗣️",
+   "url": "https://x.com/finkd/status/2118410617698517088",
+   "source": "𝕏 @finkd",
+   "published_at": "2026-11-05T18:30:24Z",
+   "text": "Now in the Muse app: talk with your Muse in real time. And pick from multiple voices 🗣️",
+   "author_name": "Mark Zuckerberg",
+   "likes": 5385,
+   "story": "Meta rolls out voice mode and expressive avatars in the Muse app, starting in the US, letting users have real-time voice conversations with their Muse AI agent"
   },
   {
    "title": "Open call for guest investigators in the life sciences",
@@ -97,30 +97,20 @@
    "via": "Techmeme"
   },
   {
-   "title": "Now in the Muse app: talk with your Muse in real time. And pick from multiple voices 🗣️",
-   "url": "https://x.com/finkd/status/2118410617698517088",
-   "source": "𝕏 @finkd",
-   "published_at": "2026-11-05T18:30:24Z",
-   "text": "Now in the Muse app: talk with your Muse in real time. And pick from multiple voices 🗣️",
-   "author_name": "Mark Zuckerberg",
-   "likes": 5354,
-   "story": "Meta rolls out voice mode and expressive avatars in the Muse app, starting in the US, letting users have real-time voice conversations with their Muse AI agent"
-  },
-  {
    "title": "Claude Code sends your email address to websites",
    "url": "https://github.com/anthropics/claude-code/issues/107757",
    "source": "Hacker News",
    "published_at": "2026-11-05T22:17:15Z",
-   "text": "1409 points and 442 comments on Hacker News.",
-   "points": 1409,
+   "text": "1435 points and 449 comments on Hacker News.",
+   "points": 1435,
    "discussion": "https://news.ycombinator.com/item?id=50385272"
   },
   {
-   "title": "Cleanview: ~40% of pending US data center capacity is planned to be built in states where newly ele…",
-   "url": "https://www.bloomberg.com/news/articles/2026-11-06/new-governors-set-to-challenge-big-swath-of-data-center-capacity",
-   "source": "Bloomberg",
-   "published_at": "2026-11-06T09:25:50Z",
-   "text": "Cleanview: ~40% of pending US data center capacity is planned to be built in states where newly elected governors have pledged to stop or pause construction. A new crop of Democratic governors-elect campaigned on putting the brakes on artificial intelligence development.",
+   "title": "Sources: Nvidia is requiring Southeast Asian customers seeking Nvidia Cloud Partner status to enrol…",
+   "url": "https://www.bloomberg.com/news/articles/2026-11-06/nvidia-boosts-chip-tracking-in-southeast-asia-to-fight-smuggling",
+   "source": "Mackenzie Hawkins / Bloombe…",
+   "published_at": "2026-11-06T11:30:50Z",
+   "text": "Sources: Nvidia is requiring Southeast Asian customers seeking Nvidia Cloud Partner status to enroll in a program that tracks the locations of their AI chips. Nvidia Corp. is stepping up monitoring of AI accelerators sold in Southeast Asia, a strategic step to curtail semiconductor smuggling …",
    "via": "Techmeme"
   },
   {
@@ -128,9 +118,16 @@
    "url": "https://github.com/dsx-ai-factory/nvke",
    "source": "Hacker News",
    "published_at": "2026-11-06T03:16:26Z",
-   "text": "112 points and 24 comments on Hacker News.",
-   "points": 112,
+   "text": "113 points and 24 comments on Hacker News.",
+   "points": 113,
    "discussion": "https://news.ycombinator.com/item?id=50387738"
+  },
+  {
+   "title": "The Long-Term Benefit Trust",
+   "url": "https://www.anthropic.com/news/the-long-term-benefit-trust",
+   "source": "Anthropic",
+   "published_at": "2026-11-05T15:44:46Z",
+   "text": "An independent body of five trustees with authority to elect and remove Anthropic board members, balancing stockholder and public interests."
   }
  ],
  "sources": "curated, Techmeme, X (found via Techmeme, Reddit, the Internet Archive), Claude Code releases, Anthropic, Hacker News, Simon Willison"
