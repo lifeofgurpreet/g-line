@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-06T12:03:32Z",
+ "generated_at": "2026-11-06T12:37:15Z",
  "items": [
   {
    "title": "The Nasdaq 100 drops 6%, losing a record $2.3T in value, and the Philadelphia chip index plunges 12…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-05T18:00:35Z",
    "text": "Introducing Personal Finance in Claude, in beta in the US. Connect the accounts you choose, and Claude answers your money questions in everyday language, from your own balances and transactions. Access is read-only, and Claude can't move, manage, or invest your money.",
    "author_name": "Claude",
-   "likes": 34470,
+   "likes": 34971,
    "story": "Anthropic launches Personal Finance in Claude, letting users connect bank and credit card accounts via Plaid with read-only access to analyze spending trends"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-11-05T17:09:13Z",
    "text": "Introducing GPT‑6 Cyber: a major advance in security research that pairs stronger capabilities with better model alignment. The model powered the Linux kernel research we announced yesterday, and security teams at companies like Mozilla, Palo Alto Networks, Calif, and…",
    "author_name": "OpenAI",
-   "likes": 17966,
+   "likes": 18116,
    "story": "OpenAI launches GPT-6 Cyber, which it says outperforms GPT-6 Astra on cyber benchmarks, is better at finding vulnerabilities, and is less likely to go rogue"
   },
   {
@@ -50,8 +50,8 @@
    "url": "https://github.com/anthropics/claude-code/issues/107757",
    "source": "Hacker News",
    "published_at": "2026-11-05T22:17:15Z",
-   "text": "1221 points and 385 comments on Hacker News.",
-   "points": 1221,
+   "text": "1245 points and 395 comments on Hacker News.",
+   "points": 1245,
    "discussion": "https://news.ycombinator.com/item?id=50385272"
   },
   {
@@ -61,14 +61,14 @@
    "published_at": "2026-11-05T18:36:37Z",
    "text": "Since August, a team within METR has worked with internal Anthropic information to assess whether AI itself is accelerating AI development. We are now publishing a report summarizing the results of this risk assessment.",
    "author_name": "METR",
-   "likes": 3957,
+   "likes": 4006,
    "story": "METR: Anthropic's models are improving about twice as fast as they did between March 2024 and October 2025, with internal AI use driving ~80% of acceleration"
   },
   {
    "title": "Open call for guest investigators in the life sciences",
    "url": "https://www.anthropic.com/news/open-call-guest-investigators-life-sciences",
    "source": "Anthropic",
-   "published_at": "2026-11-06T00:32:57Z",
+   "published_at": "2026-11-06T10:22:49Z",
    "text": "Today, we’re inviting members of the life sciences community to apply to work with us on special projects."
   },
   {
@@ -93,7 +93,7 @@
    "published_at": "2026-11-05T17:11:48Z",
    "text": "Today we are rolling out Gemini Omni Flash 1.2, with: - longer video generation (15 seconds) - deeper cinematic controls for camera pov - support for multi-turn conversation editing - less visual drift - 30% lower price than Omni Flash 1.1 Read more:",
    "author_name": "Logan Kilpatrick",
-   "likes": 2214,
+   "likes": 2220,
    "story": "Google rolls out Gemini Omni 1.2 Flash, which creates clips up to 15 seconds, vs. 10 seconds with Omni 1.1, has better reference adherence, and costs 30% less",
    "links": [
     "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/"
@@ -104,8 +104,8 @@
    "url": "https://finance.yahoo.com/technology/ai/articles/mark-cuban-says-facebook-knowingly-213000020.html",
    "source": "Hacker News",
    "published_at": "2026-11-05T23:09:57Z",
-   "text": "368 points and 178 comments on Hacker News.",
-   "points": 368,
+   "text": "385 points and 181 comments on Hacker News.",
+   "points": 385,
    "discussion": "https://news.ycombinator.com/item?id=50385870"
   },
   {
@@ -115,7 +115,7 @@
    "published_at": "2026-11-05T18:30:24Z",
    "text": "Now in the Muse app: talk with your Muse in real time. And pick from multiple voices 🗣️",
    "author_name": "Mark Zuckerberg",
-   "likes": 5189,
+   "likes": 5209,
    "story": "Meta rolls out voice mode and expressive avatars in the Muse app, starting in the US, letting users have real-time voice conversations with their Muse AI agent"
   },
   {
@@ -131,8 +131,8 @@
    "url": "https://www.lesswrong.com/posts/DALNiKBjMGMF8grme/arjun-panickssery-s-shortform?commentId=fJtaHHHfx45tD7BSL",
    "source": "Hacker News",
    "published_at": "2026-11-06T05:19:04Z",
-   "text": "121 points and 102 comments on Hacker News.",
-   "points": 121,
+   "text": "136 points and 116 comments on Hacker News.",
+   "points": 136,
    "discussion": "https://news.ycombinator.com/item?id=50388513"
   }
  ],
