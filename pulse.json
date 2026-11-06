@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-06T13:40:22Z",
+ "generated_at": "2026-11-06T14:12:25Z",
  "items": [
   {
    "title": "The Nasdaq 100 drops 6%, losing a record $2.3T in value, and the Philadelphia chip index plunges 12…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-05T18:00:35Z",
    "text": "Introducing Personal Finance in Claude, in beta in the US. Connect the accounts you choose, and Claude answers your money questions in everyday language, from your own balances and transactions. Access is read-only, and Claude can't move, manage, or invest your money.",
    "author_name": "Claude",
-   "likes": 35923,
+   "likes": 36425,
    "story": "Anthropic launches Personal Finance in Claude, letting users connect bank and credit card accounts via Plaid with read-only access to analyze spending trends"
   },
   {
@@ -34,15 +34,15 @@
    "published_at": "2026-11-05T17:09:13Z",
    "text": "Introducing GPT‑6 Cyber: a major advance in security research that pairs stronger capabilities with better model alignment. The model powered the Linux kernel research we announced yesterday, and security teams at companies like Mozilla, Palo Alto Networks, Calif, and…",
    "author_name": "OpenAI",
-   "likes": 18490,
+   "likes": 18655,
    "story": "OpenAI launches GPT-6 Cyber, which it says outperforms GPT-6 Astra on cyber benchmarks, is better at finding vulnerabilities, and is less likely to go rogue"
   },
   {
-   "title": "Sources: major investors are increasingly skeptical Anthropic's IPO can achieve a $1.5T valuation a…",
-   "url": "https://www.wsj.com/finance/major-investors-are-skeptical-anthropic-ipo-can-achieve-1-5-trillion-valuation-ca965d8b?st=kUhvLS",
-   "source": "Wall Street Journal",
-   "published_at": "2026-11-06T00:11:23Z",
-   "text": "Sources: major investors are increasingly skeptical Anthropic's IPO can achieve a $1.5T valuation after a market selloff; one says it could be closer to $1T. The AI giant could need to set a significantly lower-than-expected valuation, investors say — Major investors are increasingly …",
+   "title": "Thinking Machines Lab debuts Inkling 2 Small, a MoE model with 594B total and 17B active parameters…",
+   "url": "https://thinkingmachines.ai/news/inkling-2-small/",
+   "source": "Thinking Machines Lab",
+   "published_at": "2026-11-06T00:16:14Z",
+   "text": "Thinking Machines Lab debuts Inkling 2 Small, a MoE model with 594B total and 17B active parameters, and plans to release weights next week after safety testing. Today we are introducing our second model generation with Inkling 2 Small. It is a Mixture-of-Experts model with 594B total parameters …",
    "via": "Techmeme"
   },
   {
@@ -50,8 +50,8 @@
    "url": "https://github.com/anthropics/claude-code/issues/107757",
    "source": "Hacker News",
    "published_at": "2026-11-05T22:17:15Z",
-   "text": "1295 points and 408 comments on Hacker News.",
-   "points": 1295,
+   "text": "1319 points and 417 comments on Hacker News.",
+   "points": 1319,
    "discussion": "https://news.ycombinator.com/item?id=50385272"
   },
   {
@@ -61,7 +61,7 @@
    "published_at": "2026-11-05T18:36:37Z",
    "text": "Since August, a team within METR has worked with internal Anthropic information to assess whether AI itself is accelerating AI development. We are now publishing a report summarizing the results of this risk assessment.",
    "author_name": "METR",
-   "likes": 4102,
+   "likes": 4141,
    "story": "METR: Anthropic's models are improving about twice as fast as they did between March 2024 and October 2025, with internal AI use driving ~80% of acceleration"
   },
   {
@@ -79,11 +79,11 @@
    "text": "Yesterday's hot paper was Sparks of Weight-Space Programming: LLMs can natively read & write neural network weights by Rikiya Takehi, Jayden Teoh, Alex Zhang, and Omar Khattab. The paper (OK, the authors classify is as a \"blog post\", but it's paper-shaped) found that frontier models, in particular GPT-6 Astra, can both interpret and modify the raw weights of a machine learning model - literally a text description of the model containing a bunch of floating point numbers."
   },
   {
-   "title": "Thinking Machines Lab debuts Inkling 2 Small, a MoE model with 594B total and 17B active parameters…",
-   "url": "https://thinkingmachines.ai/news/inkling-2-small/",
-   "source": "Thinking Machines Lab",
-   "published_at": "2026-11-06T00:16:14Z",
-   "text": "Thinking Machines Lab debuts Inkling 2 Small, a MoE model with 594B total and 17B active parameters, and plans to release weights next week after safety testing. Today we are introducing our second model generation with Inkling 2 Small. It is a Mixture-of-Experts model with 594B total parameters …",
+   "title": "Sources: major investors are increasingly skeptical Anthropic's IPO can proceed at a $1.5T valuatio…",
+   "url": "https://www.wsj.com/finance/major-investors-are-skeptical-anthropic-ipo-can-achieve-1-5-trillion-valuation-ca965d8b?st=kUhvLS",
+   "source": "Wall Street Journal",
+   "published_at": "2026-11-06T00:11:23Z",
+   "text": "Sources: major investors are increasingly skeptical Anthropic's IPO can proceed at a $1.5T valuation after a market selloff; one says it could be closer to $1T. The AI giant could need to set a significantly lower-than-expected valuation, investors say — Major investors …",
    "via": "Techmeme"
   },
   {
@@ -93,7 +93,7 @@
    "published_at": "2026-11-05T17:11:48Z",
    "text": "Today we are rolling out Gemini Omni Flash 1.2, with: - longer video generation (15 seconds) - deeper cinematic controls for camera pov - support for multi-turn conversation editing - less visual drift - 30% lower price than Omni Flash 1.1 Read more:",
    "author_name": "Logan Kilpatrick",
-   "likes": 2239,
+   "likes": 2246,
    "story": "Google rolls out Gemini Omni 1.2 Flash, which creates clips up to 15 seconds, vs. 10 seconds with Omni 1.1, has better reference adherence, and costs 30% less",
    "links": [
     "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/"
@@ -104,8 +104,8 @@
    "url": "https://finance.yahoo.com/technology/ai/articles/mark-cuban-says-facebook-knowingly-213000020.html",
    "source": "Hacker News",
    "published_at": "2026-11-05T23:09:57Z",
-   "text": "413 points and 187 comments on Hacker News.",
-   "points": 413,
+   "text": "426 points and 193 comments on Hacker News.",
+   "points": 426,
    "discussion": "https://news.ycombinator.com/item?id=50385870"
   },
   {
@@ -115,7 +115,7 @@
    "published_at": "2026-11-05T18:30:24Z",
    "text": "Now in the Muse app: talk with your Muse in real time. And pick from multiple voices 🗣️",
    "author_name": "Mark Zuckerberg",
-   "likes": 5250,
+   "likes": 5278,
    "story": "Meta rolls out voice mode and expressive avatars in the Muse app, starting in the US, letting users have real-time voice conversations with their Muse AI agent"
   },
   {
@@ -131,8 +131,8 @@
    "url": "https://github.com/dsx-ai-factory/nvke",
    "source": "Hacker News",
    "published_at": "2026-11-06T03:16:26Z",
-   "text": "101 points and 23 comments on Hacker News.",
-   "points": 101,
+   "text": "103 points and 23 comments on Hacker News.",
+   "points": 103,
    "discussion": "https://news.ycombinator.com/item?id=50387738"
   }
  ],
