@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-06T09:23:18Z",
+ "generated_at": "2026-11-06T09:55:26Z",
  "items": [
   {
    "title": "The Nasdaq 100 drops 6%, losing a record $2.3T in value, and the Philadelphia chip index plunges 12…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-05T18:00:35Z",
    "text": "Introducing Personal Finance in Claude, in beta in the US. Connect the accounts you choose, and Claude answers your money questions in everyday language, from your own balances and transactions. Access is read-only, and Claude can't move, manage, or invest your money.",
    "author_name": "Claude",
-   "likes": 32167,
+   "likes": 32556,
    "story": "Anthropic launches Personal Finance in Claude, letting users connect bank and credit card accounts via Plaid with read-only access to analyze spending trends"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-11-05T17:09:13Z",
    "text": "Introducing GPT‑6 Cyber: a major advance in security research that pairs stronger capabilities with better model alignment. The model powered the Linux kernel research we announced yesterday, and security teams at companies like Mozilla, Palo Alto Networks, Calif, and…",
    "author_name": "OpenAI",
-   "likes": 17140,
+   "likes": 17334,
    "story": "OpenAI launches GPT-6 Cyber, which it says outperforms GPT-6 Astra on cyber benchmarks, is better at finding vulnerabilities, and is less likely to go rogue"
   },
   {
@@ -50,8 +50,8 @@
    "url": "https://github.com/anthropics/claude-code/issues/107757",
    "source": "Hacker News",
    "published_at": "2026-11-05T22:17:15Z",
-   "text": "1087 points and 338 comments on Hacker News.",
-   "points": 1087,
+   "text": "1131 points and 341 comments on Hacker News.",
+   "points": 1131,
    "discussion": "https://news.ycombinator.com/item?id=50385272"
   },
   {
@@ -61,7 +61,7 @@
    "published_at": "2026-11-05T17:11:48Z",
    "text": "Today we are rolling out Gemini Omni Flash 1.2, with: - longer video generation (15 seconds) - deeper cinematic controls for camera pov - support for multi-turn conversation editing - less visual drift - 30% lower price than Omni Flash 1.1 Read more:",
    "author_name": "Logan Kilpatrick",
-   "likes": 2166,
+   "likes": 2172,
    "story": "Google rolls out Gemini Omni 1.2 Flash, which creates clips up to 15 seconds, vs. 10 seconds with Omni 1.1, has better reference adherence, and costs 30% less",
    "links": [
     "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/"
@@ -96,7 +96,7 @@
    "published_at": "2026-11-05T18:30:24Z",
    "text": "Now in the Muse app: talk with your Muse in real time. And pick from multiple voices 🗣️",
    "author_name": "Mark Zuckerberg",
-   "likes": 5035,
+   "likes": 5076,
    "story": "Meta rolls out voice mode and expressive avatars in the Muse app, starting in the US, letting users have real-time voice conversations with their Muse AI agent"
   },
   {
@@ -104,8 +104,8 @@
    "url": "https://finance.yahoo.com/technology/ai/articles/mark-cuban-says-facebook-knowingly-213000020.html",
    "source": "Hacker News",
    "published_at": "2026-11-05T23:09:57Z",
-   "text": "315 points and 151 comments on Hacker News.",
-   "points": 315,
+   "text": "327 points and 156 comments on Hacker News.",
+   "points": 327,
    "discussion": "https://news.ycombinator.com/item?id=50385870"
   },
   {
@@ -115,18 +115,8 @@
    "published_at": "2026-11-05T23:45:03Z",
    "text": "Inkling 2 Small is available today on Tinker, with weights coming soon. It's a capable small model. We look forward to seeing what you make with it.",
    "author_name": "Mira Murati",
-   "likes": 1126,
+   "likes": 1158,
    "story": "Thinking Machines Lab debuts Inkling 2 Small, a MoE model with 594B total and 17B active parameters, and plans to release weights next week after safety testing"
-  },
-  {
-   "title": "This is probably going to be a huge part of political coverage for the next two years. The Democrat…",
-   "url": "https://x.com/AndrewCurran_/status/2118083360006483986",
-   "source": "𝕏 @AndrewCurran_",
-   "published_at": "2026-11-04T20:49:59Z",
-   "text": "This is probably going to be a huge part of political coverage for the next two years. The Democrats are going to push hard for an AI pause, new industry regulations, and probably a Bernie-style ban on superintelligence itself that exceeds the human-level. It will be interesting…",
-   "author_name": "Andrew Curran",
-   "likes": 1470,
-   "story": "Sources: at Jensen Huang's midterms event, tech executives expressed concern over anti-data center results; OpenAI discussed resetting its 2027 capacity plans"
   },
   {
    "title": "Google says it will spend $17B to build its first Wyoming data center, pay for all the power it use…",
@@ -135,6 +125,15 @@
    "published_at": "2026-11-05T19:40:59Z",
    "text": "Google says it will spend $17B to build its first Wyoming data center, pay for all the power it uses, and form a Community Council to address growth concerns. Alphabet Inc.'s Google will spend $17 billion to build a data center in Wyoming, formally putting a price tag on the proposal …",
    "via": "Techmeme"
+  },
+  {
+   "title": "Nvidia Kubernetes Engine (NVKE)",
+   "url": "https://github.com/dsx-ai-factory/nvke",
+   "source": "Hacker News",
+   "published_at": "2026-11-06T03:16:26Z",
+   "text": "76 points and 20 comments on Hacker News.",
+   "points": 76,
+   "discussion": "https://news.ycombinator.com/item?id=50387738"
   }
  ],
  "sources": "curated, Techmeme, X (found via Techmeme, Reddit, the Internet Archive), Claude Code releases, Anthropic, Hacker News, Simon Willison"
