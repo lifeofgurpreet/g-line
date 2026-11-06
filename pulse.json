@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-06T14:44:12Z",
+ "generated_at": "2026-11-06T15:17:07Z",
  "items": [
   {
    "title": "The Nasdaq 100 fell 6% on Thursday, losing a record $2.3T in value, and the Philadelphia chip index…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-05T18:00:35Z",
    "text": "Introducing Personal Finance in Claude, in beta in the US. Connect the accounts you choose, and Claude answers your money questions in everyday language, from your own balances and transactions. Access is read-only, and Claude can't move, manage, or invest your money.",
    "author_name": "Claude",
-   "likes": 36928,
+   "likes": 37454,
    "story": "Anthropic launches Personal Finance in Claude, letting users connect bank and credit card accounts via Plaid with read-only access to analyze spending trends"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-11-05T17:09:13Z",
    "text": "Introducing GPT‑6 Cyber: a major advance in security research that pairs stronger capabilities with better model alignment. The model powered the Linux kernel research we announced yesterday, and security teams at companies like Mozilla, Palo Alto Networks, Calif, and…",
    "author_name": "OpenAI",
-   "likes": 18838,
+   "likes": 18960,
    "story": "OpenAI launches GPT-6 Cyber, which it says outperforms GPT-6 Astra on cyber benchmarks, is better at finding vulnerabilities, and is less likely to go rogue"
   },
   {
@@ -50,8 +50,8 @@
    "url": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/",
    "source": "Hacker News",
    "published_at": "2026-11-06T13:35:27Z",
-   "text": "62 points and 36 comments on Hacker News.",
-   "points": 62,
+   "text": "106 points and 68 comments on Hacker News.",
+   "points": 106,
    "discussion": "https://news.ycombinator.com/item?id=50392118"
   },
   {
@@ -61,7 +61,7 @@
    "published_at": "2026-11-05T18:36:37Z",
    "text": "Since August, a team within METR has worked with internal Anthropic information to assess whether AI itself is accelerating AI development. We are now publishing a report summarizing the results of this risk assessment.",
    "author_name": "METR",
-   "likes": 4188,
+   "likes": 4237,
    "story": "METR: Anthropic's models are improving about twice as fast as they did between March 2024 and October 2025, with internal AI use driving ~80% of acceleration"
   },
   {
@@ -93,7 +93,7 @@
    "published_at": "2026-11-05T18:30:24Z",
    "text": "Now in the Muse app: talk with your Muse in real time. And pick from multiple voices 🗣️",
    "author_name": "Mark Zuckerberg",
-   "likes": 5307,
+   "likes": 5328,
    "story": "Meta rolls out voice mode and expressive avatars in the Muse app, starting in the US, letting users have real-time voice conversations with their Muse AI agent"
   },
   {
@@ -101,26 +101,26 @@
    "url": "https://github.com/anthropics/claude-code/issues/107757",
    "source": "Hacker News",
    "published_at": "2026-11-05T22:17:15Z",
-   "text": "1353 points and 431 comments on Hacker News.",
-   "points": 1353,
+   "text": "1383 points and 435 comments on Hacker News.",
+   "points": 1383,
    "discussion": "https://news.ycombinator.com/item?id=50385272"
   },
   {
-   "title": "Google says it will spend $17B to build its first Wyoming data center, pay for all the power it use…",
-   "url": "https://www.bloomberg.com/news/articles/2026-11-05/google-plans-to-spend-17-billion-on-wyoming-data-center",
-   "source": "Davey Alba / Bloomberg",
-   "published_at": "2026-11-05T19:40:59Z",
-   "text": "Google says it will spend $17B to build its first Wyoming data center, pay for all the power it uses, and form a Community Council to address growth concerns. Alphabet Inc.'s Google will spend $17 billion to build a data center in Wyoming, formally putting a price tag on the proposal …",
+   "title": "Meta President Dina Powell McCormick says building new US data centers will be “harder” after midte…",
+   "url": "https://www.wsj.com/tech/ai/meta-president-says-midterm-results-will-make-building-data-centers-harder-f1d27c93?st=d9mJbm&reflink=article_copyURL_share",
+   "source": "Meghan Bobrowsky / Wall Str…",
+   "published_at": "2026-11-05T20:41:01Z",
+   "text": "Meta President Dina Powell McCormick says building new US data centers will be “harder” after midterm results, but it will be easier to expand existing projects. Speaking at the WSJ Tech conference, Dina Powell McCormick says the company is more optimistic about scaling up its existing data centers",
    "via": "Techmeme"
   },
   {
-   "title": "Cuban: Facebook knowingly runs AI deepfake scam ads; docs say $16B fraud revenue",
-   "url": "https://finance.yahoo.com/technology/ai/articles/mark-cuban-says-facebook-knowingly-213000020.html",
+   "title": "Nvidia Kubernetes Engine (NVKE)",
+   "url": "https://github.com/dsx-ai-factory/nvke",
    "source": "Hacker News",
-   "published_at": "2026-11-05T23:09:57Z",
-   "text": "441 points and 203 comments on Hacker News.",
-   "points": 441,
-   "discussion": "https://news.ycombinator.com/item?id=50385870"
+   "published_at": "2026-11-06T03:16:26Z",
+   "text": "108 points and 24 comments on Hacker News.",
+   "points": 108,
+   "discussion": "https://news.ycombinator.com/item?id=50387738"
   },
   {
    "title": "The Long-Term Benefit Trust",
