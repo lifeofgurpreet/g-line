@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-06T03:24:40Z",
+ "generated_at": "2026-11-06T03:57:01Z",
  "items": [
   {
    "title": "OpenAI pledges to change how it handles data center deals, including avoiding NDAs and lowering pow…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-05T18:00:35Z",
    "text": "Introducing Personal Finance in Claude, in beta in the US. Connect the accounts you choose, and Claude answers your money questions in everyday language, from your own balances and transactions. Access is read-only, and Claude can't move, manage, or invest your money.",
    "author_name": "Claude",
-   "likes": 27509,
+   "likes": 28072,
    "story": "Anthropic launches Personal Finance in Claude, letting users connect bank and credit card accounts via Plaid with read-only access to analyze spending trends"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-11-05T17:09:13Z",
    "text": "Introducing GPT‑6 Cyber: a major advance in security research that pairs stronger capabilities with better model alignment. The model powered the Linux kernel research we announced yesterday, and security teams at companies like Mozilla, Palo Alto Networks, Calif, and…",
    "author_name": "OpenAI",
-   "likes": 15079,
+   "likes": 15314,
    "story": "OpenAI launches GPT-6 Cyber, which it says outperforms GPT-6 Astra on cyber benchmarks, is better at finding vulnerabilities, and is less likely to go rogue"
   },
   {
@@ -50,8 +50,8 @@
    "url": "https://github.com/anthropics/claude-code/issues/107757",
    "source": "Hacker News",
    "published_at": "2026-11-05T22:17:15Z",
-   "text": "630 points and 217 comments on Hacker News.",
-   "points": 630,
+   "text": "674 points and 230 comments on Hacker News.",
+   "points": 674,
    "discussion": "https://news.ycombinator.com/item?id=50385272"
   },
   {
@@ -61,7 +61,7 @@
    "published_at": "2026-11-05T18:36:37Z",
    "text": "Since August, a team within METR has worked with internal Anthropic information to assess whether AI itself is accelerating AI development. We are now publishing a report summarizing the results of this risk assessment.",
    "author_name": "METR",
-   "likes": 2959,
+   "likes": 3038,
    "story": "METR: Anthropic's models are improving about twice as fast as they did between March 2024 and October 2025, with internal AI use driving ~80% of acceleration"
   },
   {
@@ -93,7 +93,7 @@
    "published_at": "2026-11-05T18:30:24Z",
    "text": "Now in the Muse app: talk with your Muse in real time. And pick from multiple voices 🗣️",
    "author_name": "Mark Zuckerberg",
-   "likes": 4324,
+   "likes": 4409,
    "story": "Meta rolls out voice mode and expressive avatars in the Muse app, starting in the US, letting users have real-time voice conversations with their Muse AI agent"
   },
   {
@@ -101,8 +101,8 @@
    "url": "https://finance.yahoo.com/technology/ai/articles/mark-cuban-says-facebook-knowingly-213000020.html",
    "source": "Hacker News",
    "published_at": "2026-11-05T23:09:57Z",
-   "text": "154 points and 65 comments on Hacker News.",
-   "points": 154,
+   "text": "168 points and 83 comments on Hacker News.",
+   "points": 168,
    "discussion": "https://news.ycombinator.com/item?id=50385870"
   },
   {
@@ -114,13 +114,13 @@
    "via": "Techmeme"
   },
   {
-   "title": "Hungary: Communist-era files released, up to 60k former agents revealed",
-   "url": "https://www.euronews.com/2026/11/04/hungary-communist-era-files-opened-up-to-60000-former-agents-revealed",
+   "title": "MCP Explained",
+   "url": "https://mcp-explained.com/",
    "source": "Hacker News",
-   "published_at": "2026-11-05T19:16:34Z",
-   "text": "172 points and 38 comments on Hacker News.",
-   "points": 172,
-   "discussion": "https://news.ycombinator.com/item?id=50383163"
+   "published_at": "2026-11-05T14:08:35Z",
+   "text": "261 points and 116 comments on Hacker News.",
+   "points": 261,
+   "discussion": "https://news.ycombinator.com/item?id=50379249"
   },
   {
    "title": "The Long-Term Benefit Trust",
