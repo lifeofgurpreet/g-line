@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-06T20:38:51Z",
+ "generated_at": "2026-11-06T21:10:49Z",
  "items": [
   {
    "title": "Democrats, with Elizabeth Warren a top contender to chair Senate Banking, are poised to step up ove…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-05T18:00:35Z",
    "text": "Introducing Personal Finance in Claude, in beta in the US. Connect the accounts you choose, and Claude answers your money questions in everyday language, from your own balances and transactions. Access is read-only, and Claude can't move, manage, or invest your money.",
    "author_name": "Claude",
-   "likes": 41801,
+   "likes": 41961,
    "story": "Anthropic launches Personal Finance in Claude, letting users connect bank and credit card accounts via Plaid with read-only access to analyze spending trends"
   },
   {
@@ -34,45 +34,11 @@
    "published_at": "2026-11-05T17:11:48Z",
    "text": "Today we are rolling out Gemini Omni Flash 1.2, with: - longer video generation (15 seconds) - deeper cinematic controls for camera pov - support for multi-turn conversation editing - less visual drift - 30% lower price than Omni Flash 1.1 Read more:",
    "author_name": "Logan Kilpatrick",
-   "likes": 2340,
+   "likes": 2344,
    "story": "Google rolls out Gemini Omni 1.2 Flash, which creates clips up to 15 seconds, vs. 10 seconds with Omni 1.1, has better reference adherence, and costs 30% less",
    "links": [
     "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/"
    ]
-  },
-  {
-   "title": "Sources: Microsoft has been turning off rented computing capacity from Oracle after declining to re…",
-   "url": "https://www.bloomberg.com/news/articles/2026-11-06/microsoft-is-winding-down-oracle-deal-to-rent-ai-cloud-capacity",
-   "source": "Brody Ford / Bloomberg",
-   "published_at": "2026-11-06T18:05:56Z",
-   "text": "Sources: Microsoft has been turning off rented computing capacity from Oracle after declining to renew a 2023 deal, because the hardware used older Nvidia chips. Microsoft Corp. is winding down an arrangement to rent AI computing from Oracle Corp., part of a larger reassessment of billions of dollars in cloud partnerships.",
-   "via": "Techmeme"
-  },
-  {
-   "title": "Claude Code sends your email address to websites",
-   "url": "https://github.com/anthropics/claude-code/issues/107757",
-   "source": "Hacker News",
-   "published_at": "2026-11-05T22:17:15Z",
-   "text": "1527 points and 479 comments on Hacker News.",
-   "points": 1527,
-   "discussion": "https://news.ycombinator.com/item?id=50385272"
-  },
-  {
-   "title": "Inkling 2 Small is available today on Tinker, with weights coming soon. It's a capable small model.…",
-   "url": "https://x.com/miramurati/status/2118489804585509192",
-   "source": "𝕏 @miramurati",
-   "published_at": "2026-11-05T23:45:03Z",
-   "text": "Inkling 2 Small is available today on Tinker, with weights coming soon. It's a capable small model. We look forward to seeing what you make with it.",
-   "author_name": "Mira Murati",
-   "likes": 1636,
-   "story": "Thinking Machines Lab debuts Inkling 2 Small, a MoE model with 594B total and 17B active parameters, and plans to release weights next week after safety testing"
-  },
-  {
-   "title": "Open call for guest investigators in the life sciences",
-   "url": "https://www.anthropic.com/news/open-call-guest-investigators-life-sciences",
-   "source": "Anthropic",
-   "published_at": "2026-11-06T10:22:49Z",
-   "text": "Today, we’re inviting members of the life sciences community to apply to work with us on special projects."
   },
   {
    "title": "Asian tech stocks plunge amid fears US Democrats may delay data centers; Taiwan's Taiex sees a reco…",
@@ -83,13 +49,30 @@
    "via": "Techmeme"
   },
   {
-   "title": "Anthropic IPO buyers see valuation as low as $1.1T",
-   "url": "https://www.bloomberg.com/news/articles/2026-11-06/anthropic-ipo-valuation-expectations-pressured-after-ai-rout",
+   "title": "Claude Code sends your email address to websites",
+   "url": "https://github.com/anthropics/claude-code/issues/107757",
    "source": "Hacker News",
-   "published_at": "2026-11-06T16:54:36Z",
-   "text": "109 points and 264 comments on Hacker News.",
-   "points": 109,
-   "discussion": "https://news.ycombinator.com/item?id=50394906"
+   "published_at": "2026-11-05T22:17:15Z",
+   "text": "1531 points and 484 comments on Hacker News.",
+   "points": 1531,
+   "discussion": "https://news.ycombinator.com/item?id=50385272"
+  },
+  {
+   "title": "Inkling 2 Small is available today on Tinker, with weights coming soon. It's a capable small model.…",
+   "url": "https://x.com/miramurati/status/2118489804585509192",
+   "source": "𝕏 @miramurati",
+   "published_at": "2026-11-05T23:45:03Z",
+   "text": "Inkling 2 Small is available today on Tinker, with weights coming soon. It's a capable small model. We look forward to seeing what you make with it.",
+   "author_name": "Mira Murati",
+   "likes": 1648,
+   "story": "Thinking Machines Lab debuts Inkling 2 Small, a MoE model with 594B total and 17B active parameters, and plans to release weights next week after safety testing"
+  },
+  {
+   "title": "Open call for guest investigators in the life sciences",
+   "url": "https://www.anthropic.com/news/open-call-guest-investigators-life-sciences",
+   "source": "Anthropic",
+   "published_at": "2026-11-06T10:22:49Z",
+   "text": "Today, we’re inviting members of the life sciences community to apply to work with us on special projects."
   },
   {
    "title": "The US DOJ indicts three foreign nationals for allegedly using AI to impersonate CEOs and attorneys…",
@@ -100,12 +83,29 @@
    "via": "Techmeme"
   },
   {
+   "title": "Anthropic IPO buyers see valuation as low as $1.1T",
+   "url": "https://www.bloomberg.com/news/articles/2026-11-06/anthropic-ipo-valuation-expectations-pressured-after-ai-rout",
+   "source": "Hacker News",
+   "published_at": "2026-11-06T16:54:36Z",
+   "text": "122 points and 309 comments on Hacker News.",
+   "points": 122,
+   "discussion": "https://news.ycombinator.com/item?id=50394906"
+  },
+  {
+   "title": "Sources: Microsoft has been turning off rented computing capacity from Oracle after declining to re…",
+   "url": "https://www.bloomberg.com/news/articles/2026-11-06/microsoft-is-winding-down-oracle-deal-to-rent-ai-cloud-capacity",
+   "source": "Brody Ford / Bloomberg",
+   "published_at": "2026-11-06T18:05:56Z",
+   "text": "Sources: Microsoft has been turning off rented computing capacity from Oracle after declining to renew a 2023 deal, because the hardware used older Nvidia chips. Microsoft Corp. is winding down an arrangement to rent AI computing from Oracle Corp., part of a larger reassessment of billions of dollars in cloud partnerships.",
+   "via": "Techmeme"
+  },
+  {
    "title": "Rune: A native GPU-rendered Rust UI framework for macOS, Windows, Linux and web",
    "url": "https://github.com/anomalyco/rune",
    "source": "Hacker News",
    "published_at": "2026-11-06T16:31:32Z",
-   "text": "104 points and 80 comments on Hacker News.",
-   "points": 104,
+   "text": "112 points and 86 comments on Hacker News.",
+   "points": 112,
    "discussion": "https://news.ycombinator.com/item?id=50394569"
   },
   {
@@ -124,11 +124,11 @@
    "via": "Techmeme"
   },
   {
-   "title": "AI physics startup PSI says a system running a non-public Anthropic model proved the Aaronson-Ambai…",
-   "url": "https://psi.inc/research/aaronson-ambainis/",
-   "source": "PSI",
-   "published_at": "2026-11-06T19:35:55Z",
-   "text": "AI physics startup PSI says a system running a non-public Anthropic model proved the Aaronson-Ambainis conjecture, a quantum computing question open since 2008. The Aaronson-Ambainis conjecture is now a theorem. — Open since 2008, the conjecture of Scott Aaronson and Andris Ambainis concerns …",
+   "title": "Sources: TSMC is considering expanding into manufacturing 3D DRAM at the request of Nvidia, its big…",
+   "url": "https://www.theinformation.com/articles/tsmc-weighs-making-advanced-memory-chips-capture-ai-spending",
+   "source": "Qianer Liu / The Information",
+   "published_at": "2026-11-06T15:06:46Z",
+   "text": "Sources: TSMC is considering expanding into manufacturing 3D DRAM at the request of Nvidia, its biggest customer, amid memory chip shortages due to the AI boom. Taiwan Semiconductor Manufacturing Co. is considering expanding into the advanced memory chip manufacturing sector …",
    "via": "Techmeme"
   }
  ],
