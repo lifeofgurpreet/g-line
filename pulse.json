@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-06T08:50:13Z",
+ "generated_at": "2026-11-06T09:23:18Z",
  "items": [
   {
    "title": "The Nasdaq 100 drops 6%, losing a record $2.3T in value, and the Philadelphia chip index plunges 12…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-05T18:00:35Z",
    "text": "Introducing Personal Finance in Claude, in beta in the US. Connect the accounts you choose, and Claude answers your money questions in everyday language, from your own balances and transactions. Access is read-only, and Claude can't move, manage, or invest your money.",
    "author_name": "Claude",
-   "likes": 31819,
+   "likes": 32167,
    "story": "Anthropic launches Personal Finance in Claude, letting users connect bank and credit card accounts via Plaid with read-only access to analyze spending trends"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-11-05T17:09:13Z",
    "text": "Introducing GPT‑6 Cyber: a major advance in security research that pairs stronger capabilities with better model alignment. The model powered the Linux kernel research we announced yesterday, and security teams at companies like Mozilla, Palo Alto Networks, Calif, and…",
    "author_name": "OpenAI",
-   "likes": 16963,
+   "likes": 17140,
    "story": "OpenAI launches GPT-6 Cyber, which it says outperforms GPT-6 Astra on cyber benchmarks, is better at finding vulnerabilities, and is less likely to go rogue"
   },
   {
@@ -50,8 +50,8 @@
    "url": "https://github.com/anthropics/claude-code/issues/107757",
    "source": "Hacker News",
    "published_at": "2026-11-05T22:17:15Z",
-   "text": "1059 points and 330 comments on Hacker News.",
-   "points": 1059,
+   "text": "1087 points and 338 comments on Hacker News.",
+   "points": 1087,
    "discussion": "https://news.ycombinator.com/item?id=50385272"
   },
   {
@@ -61,7 +61,7 @@
    "published_at": "2026-11-05T17:11:48Z",
    "text": "Today we are rolling out Gemini Omni Flash 1.2, with: - longer video generation (15 seconds) - deeper cinematic controls for camera pov - support for multi-turn conversation editing - less visual drift - 30% lower price than Omni Flash 1.1 Read more:",
    "author_name": "Logan Kilpatrick",
-   "likes": 2155,
+   "likes": 2166,
    "story": "Google rolls out Gemini Omni 1.2 Flash, which creates clips up to 15 seconds, vs. 10 seconds with Omni 1.1, has better reference adherence, and costs 30% less",
    "links": [
     "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/"
@@ -82,11 +82,11 @@
    "text": "Yesterday's hot paper was Sparks of Weight-Space Programming: LLMs can natively read & write neural network weights by Rikiya Takehi, Jayden Teoh, Alex Zhang, and Omar Khattab. The paper (OK, the authors classify is as a \"blog post\", but it's paper-shaped) found that frontier models, in particular GPT-6 Astra, can both interpret and modify the raw weights of a machine learning model - literally a text description of the model containing a bunch of floating point numbers."
   },
   {
-   "title": "Thinking Machines Lab debuts Inkling 2 Small, a MoE model with 594B total and 17B active parameters…",
-   "url": "https://thinkingmachines.ai/news/inkling-2-small/",
-   "source": "Thinking Machines Lab",
-   "published_at": "2026-11-06T00:16:14Z",
-   "text": "Thinking Machines Lab debuts Inkling 2 Small, a MoE model with 594B total and 17B active parameters, and plans to release weights next week after safety testing. Today we are introducing our second model generation with Inkling 2 Small. It is a Mixture-of-Experts model with 594B total parameters …",
+   "title": "Sources: major investors are increasingly skeptical Anthropic's IPO can achieve a $1.5T valuation a…",
+   "url": "https://www.wsj.com/finance/major-investors-are-skeptical-anthropic-ipo-can-achieve-1-5-trillion-valuation-ca965d8b?st=kUhvLS",
+   "source": "Wall Street Journal",
+   "published_at": "2026-11-06T00:11:23Z",
+   "text": "Sources: major investors are increasingly skeptical Anthropic's IPO can achieve a $1.5T valuation after a market selloff; one says it could be closer to $1T. The AI giant could need to set a significantly lower-than-expected valuation, investors say — Major investors are increasingly …",
    "via": "Techmeme"
   },
   {
@@ -96,7 +96,7 @@
    "published_at": "2026-11-05T18:30:24Z",
    "text": "Now in the Muse app: talk with your Muse in real time. And pick from multiple voices 🗣️",
    "author_name": "Mark Zuckerberg",
-   "likes": 5001,
+   "likes": 5035,
    "story": "Meta rolls out voice mode and expressive avatars in the Muse app, starting in the US, letting users have real-time voice conversations with their Muse AI agent"
   },
   {
@@ -104,9 +104,19 @@
    "url": "https://finance.yahoo.com/technology/ai/articles/mark-cuban-says-facebook-knowingly-213000020.html",
    "source": "Hacker News",
    "published_at": "2026-11-05T23:09:57Z",
-   "text": "306 points and 143 comments on Hacker News.",
-   "points": 306,
+   "text": "315 points and 151 comments on Hacker News.",
+   "points": 315,
    "discussion": "https://news.ycombinator.com/item?id=50385870"
+  },
+  {
+   "title": "Inkling 2 Small is available today on Tinker, with weights coming soon. It's a capable small model.…",
+   "url": "https://x.com/miramurati/status/2118489804585509192",
+   "source": "𝕏 @miramurati",
+   "published_at": "2026-11-05T23:45:03Z",
+   "text": "Inkling 2 Small is available today on Tinker, with weights coming soon. It's a capable small model. We look forward to seeing what you make with it.",
+   "author_name": "Mira Murati",
+   "likes": 1126,
+   "story": "Thinking Machines Lab debuts Inkling 2 Small, a MoE model with 594B total and 17B active parameters, and plans to release weights next week after safety testing"
   },
   {
    "title": "This is probably going to be a huge part of political coverage for the next two years. The Democrat…",
@@ -119,21 +129,12 @@
    "story": "Sources: at Jensen Huang's midterms event, tech executives expressed concern over anti-data center results; OpenAI discussed resetting its 2027 capacity plans"
   },
   {
-   "title": "Sources: major investors are increasingly skeptical Anthropic's IPO can achieve a $1.5T valuation a…",
-   "url": "https://www.wsj.com/finance/major-investors-are-skeptical-anthropic-ipo-can-achieve-1-5-trillion-valuation-ca965d8b?st=kUhvLS",
-   "source": "Wall Street Journal",
-   "published_at": "2026-11-06T00:11:23Z",
-   "text": "Sources: major investors are increasingly skeptical Anthropic's IPO can achieve a $1.5T valuation after a market selloff; one says it could be closer to $1T. The AI giant could need to set a significantly lower-than-expected valuation, investors say — Major investors are increasingly …",
+   "title": "Google says it will spend $17B to build its first Wyoming data center, pay for all the power it use…",
+   "url": "https://www.bloomberg.com/news/articles/2026-11-05/google-plans-to-spend-17-billion-on-wyoming-data-center",
+   "source": "Davey Alba / Bloomberg",
+   "published_at": "2026-11-05T19:40:59Z",
+   "text": "Google says it will spend $17B to build its first Wyoming data center, pay for all the power it uses, and form a Community Council to address growth concerns. Alphabet Inc.'s Google will spend $17 billion to build a data center in Wyoming, formally putting a price tag on the proposal …",
    "via": "Techmeme"
-  },
-  {
-   "title": "I struggle to believe that AI R&D is ingenious",
-   "url": "https://www.lesswrong.com/posts/DALNiKBjMGMF8grme/arjun-panickssery-s-shortform?commentId=fJtaHHHfx45tD7BSL",
-   "source": "Hacker News",
-   "published_at": "2026-11-06T05:19:04Z",
-   "text": "67 points and 47 comments on Hacker News.",
-   "points": 67,
-   "discussion": "https://news.ycombinator.com/item?id=50388513"
   }
  ],
  "sources": "curated, Techmeme, X (found via Techmeme, Reddit, the Internet Archive), Claude Code releases, Anthropic, Hacker News, Simon Willison"
