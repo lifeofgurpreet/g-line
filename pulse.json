@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-06T22:15:35Z",
+ "generated_at": "2026-11-06T22:47:49Z",
  "items": [
   {
    "title": "Sources: Anthropic is continuing with plans to list before the Thanksgiving holiday this month, exp…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-05T18:00:35Z",
    "text": "Introducing Personal Finance in Claude, in beta in the US. Connect the accounts you choose, and Claude answers your money questions in everyday language, from your own balances and transactions. Access is read-only, and Claude can't move, manage, or invest your money.",
    "author_name": "Claude",
-   "likes": 42222,
+   "likes": 42362,
    "story": "Anthropic launches Personal Finance in Claude, letting users connect bank and credit card accounts via Plaid with read-only access to analyze spending trends"
   },
   {
@@ -34,8 +34,35 @@
    "published_at": "2026-11-06T21:48:45Z",
    "text": "Introducing Arete-27B: Qwen3.8-27B, post-trained to reinforce Western values. Chinese open models are currently the strongest available, but they ship with state-aligned behavior in the weights. We built an 803-prompt eval across seven value categories, including freedom of…",
    "author_name": "Nous Research",
-   "likes": 506,
+   "likes": 2084,
    "story": "NousResearch/Arete-27B · Hugging Face (Qwen finetune)"
+  },
+  {
+   "title": "i went to bed and asked claude to paint an autumn tree overnight. at around 4am, it realised that i…",
+   "url": "https://x.com/dhvanil/status/2118756173721575767",
+   "source": "𝕏 @dhvanil",
+   "published_at": "2026-11-06T17:23:31Z",
+   "text": "i went to bed and asked claude to paint an autumn tree overnight. at around 4am, it realised that it didn't have some shades -- so it stopped and titrated its own paint: diluting red, sienna and madder step by step on a second palette, then measuring each pocket from a photo.…",
+   "author_name": "nil",
+   "likes": 1509,
+   "story": "Claude paints a watercolor tree with a robotic arm in 4.5 hours, and mixes its own custom colors along the way"
+  },
+  {
+   "title": "Sources: Microsoft has been turning off rented computing capacity from Oracle after declining to re…",
+   "url": "https://www.bloomberg.com/news/articles/2026-11-06/microsoft-is-winding-down-oracle-deal-to-rent-ai-cloud-capacity",
+   "source": "Brody Ford / Bloomberg",
+   "published_at": "2026-11-06T18:05:56Z",
+   "text": "Sources: Microsoft has been turning off rented computing capacity from Oracle after declining to renew a 2023 deal, because the hardware used older Nvidia chips. Microsoft Corp. is winding down an arrangement to rent AI computing from Oracle Corp., part of a larger reassessment of billions of dollars in cloud partnerships.",
+   "via": "Techmeme"
+  },
+  {
+   "title": "AI is dramatically accelerating AI research",
+   "url": "https://www.planned-obsolescence.org/p/ai-is-dramatically-accelerating-ai",
+   "source": "Hacker News",
+   "published_at": "2026-11-06T20:27:23Z",
+   "text": "110 points and 65 comments on Hacker News.",
+   "points": 110,
+   "discussion": "https://news.ycombinator.com/item?id=50397994"
   },
   {
    "title": "Today we are rolling out Gemini Omni Flash 1.2, with: - longer video generation (15 seconds) - deep…",
@@ -44,38 +71,11 @@
    "published_at": "2026-11-05T17:11:48Z",
    "text": "Today we are rolling out Gemini Omni Flash 1.2, with: - longer video generation (15 seconds) - deeper cinematic controls for camera pov - support for multi-turn conversation editing - less visual drift - 30% lower price than Omni Flash 1.1 Read more:",
    "author_name": "Logan Kilpatrick",
-   "likes": 2358,
+   "likes": 2361,
    "story": "Google rolls out Gemini Omni 1.2 Flash, which creates clips up to 15 seconds, vs. 10 seconds with Omni 1.1, has better reference adherence, and costs 30% less",
    "links": [
     "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/"
    ]
-  },
-  {
-   "title": "Sources: Nvidia is requiring Southeast Asian customers seeking Nvidia Cloud Partner status to enrol…",
-   "url": "https://www.bloomberg.com/news/articles/2026-11-06/nvidia-boosts-chip-tracking-in-southeast-asia-to-fight-smuggling",
-   "source": "Mackenzie Hawkins / Bloombe…",
-   "published_at": "2026-11-06T11:30:50Z",
-   "text": "Sources: Nvidia is requiring Southeast Asian customers seeking Nvidia Cloud Partner status to enroll in a program that tracks the locations of their AI chips. Nvidia Corp. is stepping up monitoring of AI accelerators sold in Southeast Asia, a strategic step to curtail semiconductor smuggling …",
-   "via": "Techmeme"
-  },
-  {
-   "title": "AI is dramatically accelerating AI research",
-   "url": "https://www.planned-obsolescence.org/p/ai-is-dramatically-accelerating-ai",
-   "source": "Hacker News",
-   "published_at": "2026-11-06T20:27:23Z",
-   "text": "91 points and 36 comments on Hacker News.",
-   "points": 91,
-   "discussion": "https://news.ycombinator.com/item?id=50397994"
-  },
-  {
-   "title": "Inkling 2 Small is available today on Tinker, with weights coming soon. It's a capable small model.…",
-   "url": "https://x.com/miramurati/status/2118489804585509192",
-   "source": "𝕏 @miramurati",
-   "published_at": "2026-11-05T23:45:03Z",
-   "text": "Inkling 2 Small is available today on Tinker, with weights coming soon. It's a capable small model. We look forward to seeing what you make with it.",
-   "author_name": "Mira Murati",
-   "likes": 1671,
-   "story": "Thinking Machines Lab debuts Inkling 2 Small, a MoE model with 594B total and 17B active parameters, and plans to release weights next week after safety testing"
   },
   {
    "title": "Open call for guest investigators in the life sciences",
@@ -93,20 +93,30 @@
    "via": "Techmeme"
   },
   {
+   "title": "Inkling 2 Small is available today on Tinker, with weights coming soon. It's a capable small model.…",
+   "url": "https://x.com/miramurati/status/2118489804585509192",
+   "source": "𝕏 @miramurati",
+   "published_at": "2026-11-05T23:45:03Z",
+   "text": "Inkling 2 Small is available today on Tinker, with weights coming soon. It's a capable small model. We look forward to seeing what you make with it.",
+   "author_name": "Mira Murati",
+   "likes": 1681,
+   "story": "Sources: Thinking Machines Lab is raising $5B led by Accel at a $40B pre-money valuation, more than triple its valuation from its last public round in July 2025"
+  },
+  {
    "title": "Claude Code sends your email address to websites",
    "url": "https://github.com/anthropics/claude-code/issues/107757",
    "source": "Hacker News",
    "published_at": "2026-11-05T22:17:15Z",
-   "text": "1541 points and 487 comments on Hacker News.",
-   "points": 1541,
+   "text": "1543 points and 487 comments on Hacker News.",
+   "points": 1543,
    "discussion": "https://news.ycombinator.com/item?id=50385272"
   },
   {
-   "title": "The US DOJ indicts three foreign nationals for allegedly using AI to impersonate CEOs and attorneys…",
-   "url": "https://www.nbcnews.com/news/us-news/3-foreign-nationals-allegedly-used-ai-mimic-ceos-129m-scheme-doj-says-rcna607818",
-   "source": "Rebecca Cohen / NBC News",
-   "published_at": "2026-11-06T17:35:52Z",
-   "text": "The US DOJ indicts three foreign nationals for allegedly using AI to impersonate CEOs and attorneys at major international law firms in a $129M+ fraud scheme. Federal prosecutors say the suspects posed as corporate executives and high-powered attorneys, using AI to convince employees to transfer millions of dollars.",
+   "title": "Sources: OpenAI has closed on new funding of roughly $11B at a $1.25T valuation; the round could in…",
+   "url": "https://www.bloomberg.com/news/articles/2026-11-06/openai-completes-11-billion-portion-of-funding-at-1-25-trillion-value?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc5Mzk5OTYyNywiZXhwIjoxNzk0NjA0NDI3LCJhcnRpY2xlSWQiOiJUTzNNOVRSS1YyVEUwMCIsImJjb25uZWN0SWQiOiI4OUM4OTNDMDhGOTQ0NThDQkQwQTQyREY1RDFCOTY0QyJ9.pVWDvtzoWMkiwWdzW9wgW8MNHfO8XHw9d9znQhP2cv4",
+   "source": "Bloomberg",
+   "published_at": "2026-11-06T21:15:52Z",
+   "text": "Sources: OpenAI has closed on new funding of roughly $11B at a $1.25T valuation; the round could increase to as much as $20B in total. OpenAI has closed on new funding of roughly $11 billion, the initial part of a round that values the company at $1.25 trillion, according to people familiar with the matter.",
    "via": "Techmeme"
   },
   {
@@ -114,8 +124,8 @@
    "url": "https://www.bloomberg.com/news/articles/2026-11-06/anthropic-ipo-valuation-expectations-pressured-after-ai-rout",
    "source": "Hacker News",
    "published_at": "2026-11-06T16:54:36Z",
-   "text": "152 points and 365 comments on Hacker News.",
-   "points": 152,
+   "text": "172 points and 391 comments on Hacker News.",
+   "points": 172,
    "discussion": "https://news.ycombinator.com/item?id=50394906"
   },
   {
@@ -124,14 +134,6 @@
    "source": "Anthropic",
    "published_at": "2026-11-05T15:44:46Z",
    "text": "An independent body of five trustees with authority to elect and remove Anthropic board members, balancing stockholder and public interests."
-  },
-  {
-   "title": "Sources: Microsoft has been turning off rented computing capacity from Oracle after declining to re…",
-   "url": "https://www.bloomberg.com/news/articles/2026-11-06/microsoft-is-winding-down-oracle-deal-to-rent-ai-cloud-capacity",
-   "source": "Brody Ford / Bloomberg",
-   "published_at": "2026-11-06T18:05:56Z",
-   "text": "Sources: Microsoft has been turning off rented computing capacity from Oracle after declining to renew a 2023 deal, because the hardware used older Nvidia chips. Microsoft Corp. is winding down an arrangement to rent AI computing from Oracle Corp., part of a larger reassessment of billions of dollars in cloud partnerships.",
-   "via": "Techmeme"
   }
  ],
  "sources": "curated, Techmeme, X (found via Techmeme, Reddit, the Internet Archive), Claude Code releases, Anthropic, Hacker News, Simon Willison"
