@@ -1,13 +1,13 @@
 {
  "schema": 1,
- "generated_at": "2026-11-06T14:12:25Z",
+ "generated_at": "2026-11-06T14:44:12Z",
  "items": [
   {
-   "title": "The Nasdaq 100 drops 6%, losing a record $2.3T in value, and the Philadelphia chip index plunges 12…",
+   "title": "The Nasdaq 100 fell 6% on Thursday, losing a record $2.3T in value, and the Philadelphia chip index…",
    "url": "https://www.bloomberg.com/news/articles/2026-11-05/us-stock-futures-diverge-as-chip-selloff-extends-into-second-day",
    "source": "Natalia Kniazhevich / Bloom…",
    "published_at": "2026-11-05T22:16:03Z",
-   "text": "The Nasdaq 100 drops 6%, losing a record $2.3T in value, and the Philadelphia chip index plunges 12%, on concerns over the AI trade after Democrats won Congress. Technology stocks plunged the most since 2020 on Thursday as investors exited the sector on concerns over the artificial intelligence trade …",
+   "text": "The Nasdaq 100 fell 6% on Thursday, losing a record $2.3T in value, and the Philadelphia chip index fell 12%, on AI trade concerns after Democrats won Congress. Technology stocks plunged the most since 2020 on Thursday as investors exited the sector on concerns over the artificial intelligence trade …",
    "via": "Techmeme"
   },
   {
@@ -17,7 +17,7 @@
    "published_at": "2026-11-05T18:00:35Z",
    "text": "Introducing Personal Finance in Claude, in beta in the US. Connect the accounts you choose, and Claude answers your money questions in everyday language, from your own balances and transactions. Access is read-only, and Claude can't move, manage, or invest your money.",
    "author_name": "Claude",
-   "likes": 36425,
+   "likes": 36928,
    "story": "Anthropic launches Personal Finance in Claude, letting users connect bank and credit card accounts via Plaid with read-only access to analyze spending trends"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-11-05T17:09:13Z",
    "text": "Introducing GPT‑6 Cyber: a major advance in security research that pairs stronger capabilities with better model alignment. The model powered the Linux kernel research we announced yesterday, and security teams at companies like Mozilla, Palo Alto Networks, Calif, and…",
    "author_name": "OpenAI",
-   "likes": 18655,
+   "likes": 18838,
    "story": "OpenAI launches GPT-6 Cyber, which it says outperforms GPT-6 Astra on cyber benchmarks, is better at finding vulnerabilities, and is less likely to go rogue"
   },
   {
@@ -46,13 +46,13 @@
    "via": "Techmeme"
   },
   {
-   "title": "Claude Code sends your email address to websites",
-   "url": "https://github.com/anthropics/claude-code/issues/107757",
+   "title": "Gemini Omni 1.2 Flash",
+   "url": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/",
    "source": "Hacker News",
-   "published_at": "2026-11-05T22:17:15Z",
-   "text": "1319 points and 417 comments on Hacker News.",
-   "points": 1319,
-   "discussion": "https://news.ycombinator.com/item?id=50385272"
+   "published_at": "2026-11-06T13:35:27Z",
+   "text": "62 points and 36 comments on Hacker News.",
+   "points": 62,
+   "discussion": "https://news.ycombinator.com/item?id=50392118"
   },
   {
    "title": "Since August, a team within METR has worked with internal Anthropic information to assess whether A…",
@@ -61,7 +61,7 @@
    "published_at": "2026-11-05T18:36:37Z",
    "text": "Since August, a team within METR has worked with internal Anthropic information to assess whether AI itself is accelerating AI development. We are now publishing a report summarizing the results of this risk assessment.",
    "author_name": "METR",
-   "likes": 4141,
+   "likes": 4188,
    "story": "METR: Anthropic's models are improving about twice as fast as they did between March 2024 and October 2025, with internal AI use driving ~80% of acceleration"
   },
   {
@@ -87,53 +87,47 @@
    "via": "Techmeme"
   },
   {
-   "title": "Today we are rolling out Gemini Omni Flash 1.2, with: - longer video generation (15 seconds) - deep…",
-   "url": "https://x.com/OfficialLoganK/status/2118390838434693281",
-   "source": "𝕏 @OfficialLoganK",
-   "published_at": "2026-11-05T17:11:48Z",
-   "text": "Today we are rolling out Gemini Omni Flash 1.2, with: - longer video generation (15 seconds) - deeper cinematic controls for camera pov - support for multi-turn conversation editing - less visual drift - 30% lower price than Omni Flash 1.1 Read more:",
-   "author_name": "Logan Kilpatrick",
-   "likes": 2246,
-   "story": "Google rolls out Gemini Omni 1.2 Flash, which creates clips up to 15 seconds, vs. 10 seconds with Omni 1.1, has better reference adherence, and costs 30% less",
-   "links": [
-    "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/"
-   ]
-  },
-  {
-   "title": "Cuban: Facebook knowingly runs AI deepfake scam ads; docs say $16B fraud revenue",
-   "url": "https://finance.yahoo.com/technology/ai/articles/mark-cuban-says-facebook-knowingly-213000020.html",
-   "source": "Hacker News",
-   "published_at": "2026-11-05T23:09:57Z",
-   "text": "426 points and 193 comments on Hacker News.",
-   "points": 426,
-   "discussion": "https://news.ycombinator.com/item?id=50385870"
-  },
-  {
    "title": "Now in the Muse app: talk with your Muse in real time. And pick from multiple voices 🗣️",
    "url": "https://x.com/finkd/status/2118410617698517088",
    "source": "𝕏 @finkd",
    "published_at": "2026-11-05T18:30:24Z",
    "text": "Now in the Muse app: talk with your Muse in real time. And pick from multiple voices 🗣️",
    "author_name": "Mark Zuckerberg",
-   "likes": 5278,
+   "likes": 5307,
    "story": "Meta rolls out voice mode and expressive avatars in the Muse app, starting in the US, letting users have real-time voice conversations with their Muse AI agent"
   },
   {
-   "title": "Meta President Dina Powell McCormick says building new US data centers will be “harder” after midte…",
-   "url": "https://www.wsj.com/tech/ai/meta-president-says-midterm-results-will-make-building-data-centers-harder-f1d27c93?st=d9mJbm&reflink=article_copyURL_share",
-   "source": "Meghan Bobrowsky / Wall Str…",
-   "published_at": "2026-11-05T20:41:01Z",
-   "text": "Meta President Dina Powell McCormick says building new US data centers will be “harder” after midterm results, but it will be easier to expand existing projects. Speaking at the WSJ Tech conference, Dina Powell McCormick says the company is more optimistic about scaling up its existing data centers",
+   "title": "Claude Code sends your email address to websites",
+   "url": "https://github.com/anthropics/claude-code/issues/107757",
+   "source": "Hacker News",
+   "published_at": "2026-11-05T22:17:15Z",
+   "text": "1353 points and 431 comments on Hacker News.",
+   "points": 1353,
+   "discussion": "https://news.ycombinator.com/item?id=50385272"
+  },
+  {
+   "title": "Google says it will spend $17B to build its first Wyoming data center, pay for all the power it use…",
+   "url": "https://www.bloomberg.com/news/articles/2026-11-05/google-plans-to-spend-17-billion-on-wyoming-data-center",
+   "source": "Davey Alba / Bloomberg",
+   "published_at": "2026-11-05T19:40:59Z",
+   "text": "Google says it will spend $17B to build its first Wyoming data center, pay for all the power it uses, and form a Community Council to address growth concerns. Alphabet Inc.'s Google will spend $17 billion to build a data center in Wyoming, formally putting a price tag on the proposal …",
    "via": "Techmeme"
   },
   {
-   "title": "Nvidia Kubernetes Engine (NVKE)",
-   "url": "https://github.com/dsx-ai-factory/nvke",
+   "title": "Cuban: Facebook knowingly runs AI deepfake scam ads; docs say $16B fraud revenue",
+   "url": "https://finance.yahoo.com/technology/ai/articles/mark-cuban-says-facebook-knowingly-213000020.html",
    "source": "Hacker News",
-   "published_at": "2026-11-06T03:16:26Z",
-   "text": "103 points and 23 comments on Hacker News.",
-   "points": 103,
-   "discussion": "https://news.ycombinator.com/item?id=50387738"
+   "published_at": "2026-11-05T23:09:57Z",
+   "text": "441 points and 203 comments on Hacker News.",
+   "points": 441,
+   "discussion": "https://news.ycombinator.com/item?id=50385870"
+  },
+  {
+   "title": "The Long-Term Benefit Trust",
+   "url": "https://www.anthropic.com/news/the-long-term-benefit-trust",
+   "source": "Anthropic",
+   "published_at": "2026-11-05T15:44:46Z",
+   "text": "An independent body of five trustees with authority to elect and remove Anthropic board members, balancing stockholder and public interests."
   }
  ],
  "sources": "curated, Techmeme, X (found via Techmeme, Reddit, the Internet Archive), Claude Code releases, Anthropic, Hacker News, Simon Willison"
