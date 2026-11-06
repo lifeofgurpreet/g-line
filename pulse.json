@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-06T20:06:27Z",
+ "generated_at": "2026-11-06T20:38:51Z",
  "items": [
   {
    "title": "Democrats, with Elizabeth Warren a top contender to chair Senate Banking, are poised to step up ove…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-05T18:00:35Z",
    "text": "Introducing Personal Finance in Claude, in beta in the US. Connect the accounts you choose, and Claude answers your money questions in everyday language, from your own balances and transactions. Access is read-only, and Claude can't move, manage, or invest your money.",
    "author_name": "Claude",
-   "likes": 41568,
+   "likes": 41801,
    "story": "Anthropic launches Personal Finance in Claude, letting users connect bank and credit card accounts via Plaid with read-only access to analyze spending trends"
   },
   {
@@ -34,45 +34,11 @@
    "published_at": "2026-11-05T17:11:48Z",
    "text": "Today we are rolling out Gemini Omni Flash 1.2, with: - longer video generation (15 seconds) - deeper cinematic controls for camera pov - support for multi-turn conversation editing - less visual drift - 30% lower price than Omni Flash 1.1 Read more:",
    "author_name": "Logan Kilpatrick",
-   "likes": 2331,
+   "likes": 2340,
    "story": "Google rolls out Gemini Omni 1.2 Flash, which creates clips up to 15 seconds, vs. 10 seconds with Omni 1.1, has better reference adherence, and costs 30% less",
    "links": [
     "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/"
    ]
-  },
-  {
-   "title": "Asian tech stocks plunge amid fears US Democrats may delay data centers; Taiwan's Taiex sees a reco…",
-   "url": "https://asia.nikkei.com/business/markets/taiwan-stocks-in-steepest-ever-fall-south-korea-halts-trading-amid-ai-rout",
-   "source": "Jada Nagumo / Nikkei Asia",
-   "published_at": "2026-11-06T05:40:48Z",
-   "text": "Asian tech stocks plunge amid fears US Democrats may delay data centers; Taiwan's Taiex sees a record intraday point drop, Kospi falls 8.7%, and Nikkei 6.7%. TOKYO — Asian stock markets tied to the artificial intelligence boom plummeted on Friday morning following a tech sell-off …",
-   "via": "Techmeme"
-  },
-  {
-   "title": "Claude Code sends your email address to websites",
-   "url": "https://github.com/anthropics/claude-code/issues/107757",
-   "source": "Hacker News",
-   "published_at": "2026-11-05T22:17:15Z",
-   "text": "1525 points and 479 comments on Hacker News.",
-   "points": 1525,
-   "discussion": "https://news.ycombinator.com/item?id=50385272"
-  },
-  {
-   "title": "Inkling 2 Small is available today on Tinker, with weights coming soon. It's a capable small model.…",
-   "url": "https://x.com/miramurati/status/2118489804585509192",
-   "source": "𝕏 @miramurati",
-   "published_at": "2026-11-05T23:45:03Z",
-   "text": "Inkling 2 Small is available today on Tinker, with weights coming soon. It's a capable small model. We look forward to seeing what you make with it.",
-   "author_name": "Mira Murati",
-   "likes": 1622,
-   "story": "Thinking Machines Lab debuts Inkling 2 Small, a MoE model with 594B total and 17B active parameters, and plans to release weights next week after safety testing"
-  },
-  {
-   "title": "Open call for guest investigators in the life sciences",
-   "url": "https://www.anthropic.com/news/open-call-guest-investigators-life-sciences",
-   "source": "Anthropic",
-   "published_at": "2026-11-06T10:22:49Z",
-   "text": "Today, we’re inviting members of the life sciences community to apply to work with us on special projects."
   },
   {
    "title": "Sources: Microsoft has been turning off rented computing capacity from Oracle after declining to re…",
@@ -83,20 +49,37 @@
    "via": "Techmeme"
   },
   {
-   "title": "Rune: A native GPU-rendered Rust UI framework for macOS, Windows, Linux and web",
-   "url": "https://github.com/anomalyco/rune",
+   "title": "Claude Code sends your email address to websites",
+   "url": "https://github.com/anthropics/claude-code/issues/107757",
    "source": "Hacker News",
-   "published_at": "2026-11-06T16:31:32Z",
-   "text": "100 points and 71 comments on Hacker News.",
-   "points": 100,
-   "discussion": "https://news.ycombinator.com/item?id=50394569"
+   "published_at": "2026-11-05T22:17:15Z",
+   "text": "1527 points and 479 comments on Hacker News.",
+   "points": 1527,
+   "discussion": "https://news.ycombinator.com/item?id=50385272"
   },
   {
-   "title": "Sources: major investors are increasingly skeptical Anthropic's IPO can proceed at a $1.5T valuatio…",
-   "url": "https://www.wsj.com/finance/major-investors-are-skeptical-anthropic-ipo-can-achieve-1-5-trillion-valuation-ca965d8b?st=kUhvLS",
-   "source": "Wall Street Journal",
-   "published_at": "2026-11-06T00:11:23Z",
-   "text": "Sources: major investors are increasingly skeptical Anthropic's IPO can proceed at a $1.5T valuation after a market selloff; one says it could be closer to $1T. The AI giant could need to set a significantly lower-than-expected valuation, investors say — Major investors …",
+   "title": "Inkling 2 Small is available today on Tinker, with weights coming soon. It's a capable small model.…",
+   "url": "https://x.com/miramurati/status/2118489804585509192",
+   "source": "𝕏 @miramurati",
+   "published_at": "2026-11-05T23:45:03Z",
+   "text": "Inkling 2 Small is available today on Tinker, with weights coming soon. It's a capable small model. We look forward to seeing what you make with it.",
+   "author_name": "Mira Murati",
+   "likes": 1636,
+   "story": "Thinking Machines Lab debuts Inkling 2 Small, a MoE model with 594B total and 17B active parameters, and plans to release weights next week after safety testing"
+  },
+  {
+   "title": "Open call for guest investigators in the life sciences",
+   "url": "https://www.anthropic.com/news/open-call-guest-investigators-life-sciences",
+   "source": "Anthropic",
+   "published_at": "2026-11-06T10:22:49Z",
+   "text": "Today, we’re inviting members of the life sciences community to apply to work with us on special projects."
+  },
+  {
+   "title": "Asian tech stocks plunge amid fears US Democrats may delay data centers; Taiwan's Taiex sees a reco…",
+   "url": "https://asia.nikkei.com/business/markets/taiwan-stocks-in-steepest-ever-fall-south-korea-halts-trading-amid-ai-rout",
+   "source": "Jada Nagumo / Nikkei Asia",
+   "published_at": "2026-11-06T05:40:48Z",
+   "text": "Asian tech stocks plunge amid fears US Democrats may delay data centers; Taiwan's Taiex sees a record intraday point drop, Kospi falls 8.7%, and Nikkei 6.7%. TOKYO — Asian stock markets tied to the artificial intelligence boom plummeted on Friday morning following a tech sell-off …",
    "via": "Techmeme"
   },
   {
@@ -104,16 +87,9 @@
    "url": "https://www.bloomberg.com/news/articles/2026-11-06/anthropic-ipo-valuation-expectations-pressured-after-ai-rout",
    "source": "Hacker News",
    "published_at": "2026-11-06T16:54:36Z",
-   "text": "84 points and 217 comments on Hacker News.",
-   "points": 84,
+   "text": "109 points and 264 comments on Hacker News.",
+   "points": 109,
    "discussion": "https://news.ycombinator.com/item?id=50394906"
-  },
-  {
-   "title": "The Long-Term Benefit Trust",
-   "url": "https://www.anthropic.com/news/the-long-term-benefit-trust",
-   "source": "Anthropic",
-   "published_at": "2026-11-05T15:44:46Z",
-   "text": "An independent body of five trustees with authority to elect and remove Anthropic board members, balancing stockholder and public interests."
   },
   {
    "title": "The US DOJ indicts three foreign nationals for allegedly using AI to impersonate CEOs and attorneys…",
@@ -124,11 +100,35 @@
    "via": "Techmeme"
   },
   {
-   "title": "Employees at Microsoft, long known for its stability, are grappling with its decision to offer buyo…",
-   "url": "https://www.nytimes.com/2026/11/06/technology/microsoft-buyouts.html",
-   "source": "Emmy Martin / New York Times",
-   "published_at": "2026-11-06T14:25:51Z",
-   "text": "Employees at Microsoft, long known for its stability, are grappling with its decision to offer buyouts to 60,000 people as its spending priorities shift to AI. Within an hour of Microsoft's announcement of buyouts last week, employees rushed to an internal site to see whether they had been offered one.",
+   "title": "Rune: A native GPU-rendered Rust UI framework for macOS, Windows, Linux and web",
+   "url": "https://github.com/anomalyco/rune",
+   "source": "Hacker News",
+   "published_at": "2026-11-06T16:31:32Z",
+   "text": "104 points and 80 comments on Hacker News.",
+   "points": 104,
+   "discussion": "https://news.ycombinator.com/item?id=50394569"
+  },
+  {
+   "title": "The Long-Term Benefit Trust",
+   "url": "https://www.anthropic.com/news/the-long-term-benefit-trust",
+   "source": "Anthropic",
+   "published_at": "2026-11-05T15:44:46Z",
+   "text": "An independent body of five trustees with authority to elect and remove Anthropic board members, balancing stockholder and public interests."
+  },
+  {
+   "title": "Sources: major investors are increasingly skeptical Anthropic's IPO can proceed at a $1.5T valuatio…",
+   "url": "https://www.wsj.com/finance/major-investors-are-skeptical-anthropic-ipo-can-achieve-1-5-trillion-valuation-ca965d8b?st=kUhvLS",
+   "source": "Wall Street Journal",
+   "published_at": "2026-11-06T00:11:23Z",
+   "text": "Sources: major investors are increasingly skeptical Anthropic's IPO can proceed at a $1.5T valuation after a market selloff; one says it could be closer to $1T. The AI giant could need to set a significantly lower-than-expected valuation, investors say — Major investors …",
+   "via": "Techmeme"
+  },
+  {
+   "title": "AI physics startup PSI says a system running a non-public Anthropic model proved the Aaronson-Ambai…",
+   "url": "https://psi.inc/research/aaronson-ambainis/",
+   "source": "PSI",
+   "published_at": "2026-11-06T19:35:55Z",
+   "text": "AI physics startup PSI says a system running a non-public Anthropic model proved the Aaronson-Ambainis conjecture, a quantum computing question open since 2008. The Aaronson-Ambainis conjecture is now a theorem. — Open since 2008, the conjecture of Scott Aaronson and Andris Ambainis concerns …",
    "via": "Techmeme"
   }
  ],
