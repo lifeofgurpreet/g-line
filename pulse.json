@@ -1,13 +1,13 @@
 {
  "schema": 1,
- "generated_at": "2026-11-06T19:34:24Z",
+ "generated_at": "2026-11-06T20:06:27Z",
  "items": [
   {
-   "title": "Sources: Nvidia is requiring Southeast Asian customers seeking Nvidia Cloud Partner status to enrol…",
-   "url": "https://www.bloomberg.com/news/articles/2026-11-06/nvidia-boosts-chip-tracking-in-southeast-asia-to-fight-smuggling",
-   "source": "Mackenzie Hawkins / Bloombe…",
-   "published_at": "2026-11-06T11:30:50Z",
-   "text": "Sources: Nvidia is requiring Southeast Asian customers seeking Nvidia Cloud Partner status to enroll in a program that tracks the locations of their AI chips. Nvidia Corp. is stepping up monitoring of AI accelerators sold in Southeast Asia, a strategic step to curtail semiconductor smuggling …",
+   "title": "Democrats, with Elizabeth Warren a top contender to chair Senate Banking, are poised to step up ove…",
+   "url": "https://www.bloomberg.com/news/articles/2026-11-06/nvidia-s-ai-chip-exports-emerge-as-target-in-democratic-congress",
+   "source": "Maggie Eastland / Bloomberg",
+   "published_at": "2026-11-06T15:51:59Z",
+   "text": "Democrats, with Elizabeth Warren a top contender to chair Senate Banking, are poised to step up oversight of Nvidia over chip exports and circular financing. Nvidia Corp. is in for tougher scrutiny from a new Democratic majority in Congress that's set to demand answers …",
    "via": "Techmeme"
   },
   {
@@ -17,7 +17,7 @@
    "published_at": "2026-11-05T18:00:35Z",
    "text": "Introducing Personal Finance in Claude, in beta in the US. Connect the accounts you choose, and Claude answers your money questions in everyday language, from your own balances and transactions. Access is read-only, and Claude can't move, manage, or invest your money.",
    "author_name": "Claude",
-   "likes": 41328,
+   "likes": 41568,
    "story": "Anthropic launches Personal Finance in Claude, letting users connect bank and credit card accounts via Plaid with read-only access to analyze spending trends"
   },
   {
@@ -28,48 +28,17 @@
    "text": "Changed auto mode with telemetry or feature flags off, including behind LLM gateways: calls the server can't check are asked about or denied, with no fallback to the built-in classifier; set CLAUDE_C… · Changed auto mode behind an LLM gateway: CLAUDE_CODE_AUTO_MODE_SERVER=1 turns on the server-side check even with CLAUDE_CODE_DISABLE_EXPERIMENTAL_BETAS set; if managed settings set the latter, they m… · Added support for MCP tasks in the terminal: when an MCP server runs a tool call as a task, Claude Code moves it to the background right away and tells Claude the result when it finishes · Adde…"
   },
   {
-   "title": "Qwhen? Qsoon! For our friends outside China, the Chinese text in the poster comes from Zhuangzi, an…",
-   "url": "https://x.com/QwenDevs/status/2118716745372532865",
-   "source": "𝕏 @QwenDevs",
-   "published_at": "2026-11-06T14:46:50Z",
-   "text": "Qwhen? Qsoon! For our friends outside China, the Chinese text in the poster comes from Zhuangzi, an ancient Chinese classic: \"Far in the northern sea lives a fish named Kun (pronounced like Qwen). So immense is its size that no one knows how many thousands of miles it spans.\"",
-   "author_name": "Qwen Developers",
-   "likes": 2920,
-   "story": "Qwen - the becoming begins"
-  },
-  {
-   "title": "Sources: Microsoft has been turning off rented computing capacity from Oracle after declining to re…",
-   "url": "https://www.bloomberg.com/news/articles/2026-11-06/microsoft-is-winding-down-oracle-deal-to-rent-ai-cloud-capacity",
-   "source": "Brody Ford / Bloomberg",
-   "published_at": "2026-11-06T18:05:56Z",
-   "text": "Sources: Microsoft has been turning off rented computing capacity from Oracle after declining to renew a 2023 deal, because the hardware used older Nvidia chips. Microsoft Corp. is winding down an arrangement to rent AI computing from Oracle Corp., part of a larger reassessment of billions of dollars in cloud partnerships.",
-   "via": "Techmeme"
-  },
-  {
-   "title": "Gemini Omni 1.2 Flash",
-   "url": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/",
-   "source": "Hacker News",
-   "published_at": "2026-11-06T13:35:27Z",
-   "text": "237 points and 188 comments on Hacker News.",
-   "points": 237,
-   "discussion": "https://news.ycombinator.com/item?id=50392118"
-  },
-  {
-   "title": "Inkling 2 Small is available today on Tinker, with weights coming soon. It's a capable small model.…",
-   "url": "https://x.com/miramurati/status/2118489804585509192",
-   "source": "𝕏 @miramurati",
-   "published_at": "2026-11-05T23:45:03Z",
-   "text": "Inkling 2 Small is available today on Tinker, with weights coming soon. It's a capable small model. We look forward to seeing what you make with it.",
-   "author_name": "Mira Murati",
-   "likes": 1610,
-   "story": "Thinking Machines Lab debuts Inkling 2 Small, a MoE model with 594B total and 17B active parameters, and plans to release weights next week after safety testing"
-  },
-  {
-   "title": "Open call for guest investigators in the life sciences",
-   "url": "https://www.anthropic.com/news/open-call-guest-investigators-life-sciences",
-   "source": "Anthropic",
-   "published_at": "2026-11-06T10:22:49Z",
-   "text": "Today, we’re inviting members of the life sciences community to apply to work with us on special projects."
+   "title": "Today we are rolling out Gemini Omni Flash 1.2, with: - longer video generation (15 seconds) - deep…",
+   "url": "https://x.com/OfficialLoganK/status/2118390838434693281",
+   "source": "𝕏 @OfficialLoganK",
+   "published_at": "2026-11-05T17:11:48Z",
+   "text": "Today we are rolling out Gemini Omni Flash 1.2, with: - longer video generation (15 seconds) - deeper cinematic controls for camera pov - support for multi-turn conversation editing - less visual drift - 30% lower price than Omni Flash 1.1 Read more:",
+   "author_name": "Logan Kilpatrick",
+   "likes": 2331,
+   "story": "Google rolls out Gemini Omni 1.2 Flash, which creates clips up to 15 seconds, vs. 10 seconds with Omni 1.1, has better reference adherence, and costs 30% less",
+   "links": [
+    "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/"
+   ]
   },
   {
    "title": "Asian tech stocks plunge amid fears US Democrats may delay data centers; Taiwan's Taiex sees a reco…",
@@ -84,9 +53,43 @@
    "url": "https://github.com/anthropics/claude-code/issues/107757",
    "source": "Hacker News",
    "published_at": "2026-11-05T22:17:15Z",
-   "text": "1523 points and 479 comments on Hacker News.",
-   "points": 1523,
+   "text": "1525 points and 479 comments on Hacker News.",
+   "points": 1525,
    "discussion": "https://news.ycombinator.com/item?id=50385272"
+  },
+  {
+   "title": "Inkling 2 Small is available today on Tinker, with weights coming soon. It's a capable small model.…",
+   "url": "https://x.com/miramurati/status/2118489804585509192",
+   "source": "𝕏 @miramurati",
+   "published_at": "2026-11-05T23:45:03Z",
+   "text": "Inkling 2 Small is available today on Tinker, with weights coming soon. It's a capable small model. We look forward to seeing what you make with it.",
+   "author_name": "Mira Murati",
+   "likes": 1622,
+   "story": "Thinking Machines Lab debuts Inkling 2 Small, a MoE model with 594B total and 17B active parameters, and plans to release weights next week after safety testing"
+  },
+  {
+   "title": "Open call for guest investigators in the life sciences",
+   "url": "https://www.anthropic.com/news/open-call-guest-investigators-life-sciences",
+   "source": "Anthropic",
+   "published_at": "2026-11-06T10:22:49Z",
+   "text": "Today, we’re inviting members of the life sciences community to apply to work with us on special projects."
+  },
+  {
+   "title": "Sources: Microsoft has been turning off rented computing capacity from Oracle after declining to re…",
+   "url": "https://www.bloomberg.com/news/articles/2026-11-06/microsoft-is-winding-down-oracle-deal-to-rent-ai-cloud-capacity",
+   "source": "Brody Ford / Bloomberg",
+   "published_at": "2026-11-06T18:05:56Z",
+   "text": "Sources: Microsoft has been turning off rented computing capacity from Oracle after declining to renew a 2023 deal, because the hardware used older Nvidia chips. Microsoft Corp. is winding down an arrangement to rent AI computing from Oracle Corp., part of a larger reassessment of billions of dollars in cloud partnerships.",
+   "via": "Techmeme"
+  },
+  {
+   "title": "Rune: A native GPU-rendered Rust UI framework for macOS, Windows, Linux and web",
+   "url": "https://github.com/anomalyco/rune",
+   "source": "Hacker News",
+   "published_at": "2026-11-06T16:31:32Z",
+   "text": "100 points and 71 comments on Hacker News.",
+   "points": 100,
+   "discussion": "https://news.ycombinator.com/item?id=50394569"
   },
   {
    "title": "Sources: major investors are increasingly skeptical Anthropic's IPO can proceed at a $1.5T valuatio…",
@@ -97,13 +100,13 @@
    "via": "Techmeme"
   },
   {
-   "title": "Rune: A native GPU-rendered Rust UI framework for macOS, Windows, Linux and web",
-   "url": "https://github.com/anomalyco/rune",
+   "title": "Anthropic IPO buyers see valuation as low as $1.1T",
+   "url": "https://www.bloomberg.com/news/articles/2026-11-06/anthropic-ipo-valuation-expectations-pressured-after-ai-rout",
    "source": "Hacker News",
-   "published_at": "2026-11-06T16:31:32Z",
-   "text": "85 points and 65 comments on Hacker News.",
-   "points": 85,
-   "discussion": "https://news.ycombinator.com/item?id=50394569"
+   "published_at": "2026-11-06T16:54:36Z",
+   "text": "84 points and 217 comments on Hacker News.",
+   "points": 84,
+   "discussion": "https://news.ycombinator.com/item?id=50394906"
   },
   {
    "title": "The Long-Term Benefit Trust",
@@ -121,13 +124,12 @@
    "via": "Techmeme"
   },
   {
-   "title": "Anthropic IPO buyers see valuation as low as $1.1T",
-   "url": "https://www.bloomberg.com/news/articles/2026-11-06/anthropic-ipo-valuation-expectations-pressured-after-ai-rout",
-   "source": "Hacker News",
-   "published_at": "2026-11-06T16:54:36Z",
-   "text": "65 points and 162 comments on Hacker News.",
-   "points": 65,
-   "discussion": "https://news.ycombinator.com/item?id=50394906"
+   "title": "Employees at Microsoft, long known for its stability, are grappling with its decision to offer buyo…",
+   "url": "https://www.nytimes.com/2026/11/06/technology/microsoft-buyouts.html",
+   "source": "Emmy Martin / New York Times",
+   "published_at": "2026-11-06T14:25:51Z",
+   "text": "Employees at Microsoft, long known for its stability, are grappling with its decision to offer buyouts to 60,000 people as its spending priorities shift to AI. Within an hour of Microsoft's announcement of buyouts last week, employees rushed to an internal site to see whether they had been offered one.",
+   "via": "Techmeme"
   }
  ],
  "sources": "curated, Techmeme, X (found via Techmeme, Reddit, the Internet Archive), Claude Code releases, Anthropic, Hacker News, Simon Willison"
