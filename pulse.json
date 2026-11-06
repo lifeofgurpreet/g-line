@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-05T23:37:04Z",
+ "generated_at": "2026-11-06T00:09:04Z",
  "items": [
   {
    "title": "OpenAI pledges to change how it handles data center deals, including avoiding NDAs and lowering pow…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-05T18:00:35Z",
    "text": "Introducing Personal Finance in Claude, in beta in the US. Connect the accounts you choose, and Claude answers your money questions in everyday language, from your own balances and transactions. Access is read-only, and Claude can't move, manage, or invest your money.",
    "author_name": "Claude",
-   "likes": 22494,
+   "likes": 23345,
    "story": "Anthropic launches Personal Finance in Claude, letting users connect bank and credit card accounts via Plaid with read-only access to analyze spending trends"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-11-05T21:26:10Z",
    "text": "live like f1 champion kimi antonelli talk to your muse with Voice",
    "author_name": "Alexandr Wang",
-   "likes": 264,
+   "likes": 388,
    "story": "Meta rolls out voice mode and expressive avatars in the Muse app, starting in the US, letting users have real-time voice conversations with their Muse AI agent"
   },
   {
@@ -44,7 +44,7 @@
    "published_at": "2026-11-05T17:09:13Z",
    "text": "Introducing GPT‑6 Cyber: a major advance in security research that pairs stronger capabilities with better model alignment. The model powered the Linux kernel research we announced yesterday, and security teams at companies like Mozilla, Palo Alto Networks, Calif, and…",
    "author_name": "OpenAI",
-   "likes": 12732,
+   "likes": 13172,
    "story": "OpenAI launches GPT-6 Cyber, which it says outperforms GPT-6 Astra on cyber benchmarks, is better at finding vulnerabilities, and is less likely to go rogue"
   },
   {
@@ -60,8 +60,8 @@
    "url": "https://github.com/anthropics/claude-code/issues/107757",
    "source": "Hacker News",
    "published_at": "2026-11-05T22:17:15Z",
-   "text": "190 points and 48 comments on Hacker News.",
-   "points": 190,
+   "text": "309 points and 88 comments on Hacker News.",
+   "points": 309,
    "discussion": "https://news.ycombinator.com/item?id=50385272"
   },
   {
@@ -71,7 +71,7 @@
    "published_at": "2026-11-04T23:22:03Z",
    "text": "948 vulnerabilities in the Linux kernel found by an internal OpenAI model at a total API cost of $1.2 million Crazy!",
    "author_name": "Yuchen Jin",
-   "likes": 1289,
+   "likes": 1290,
    "story": "OpenAI details a pipeline that used an upcoming cyber model to validate and patch 948 local privilege escalation vulnerabilities in Linux for $1.2M in API costs"
   },
   {
@@ -89,23 +89,6 @@
    "text": "Yesterday's hot paper was Sparks of Weight-Space Programming: LLMs can natively read & write neural network weights by Rikiya Takehi, Jayden Teoh, Alex Zhang, and Omar Khattab. The paper (OK, the authors classify is as a \"blog post\", but it's paper-shaped) found that frontier models, in particular GPT-6 Astra, can both interpret and modify the raw weights of a machine learning model - literally a text description of the model containing a bunch of floating point numbers."
   },
   {
-   "title": "Google says it will spend $17B to build its first Wyoming data center, pay for all the power it use…",
-   "url": "https://www.bloomberg.com/news/articles/2026-11-05/google-plans-to-spend-17-billion-on-wyoming-data-center",
-   "source": "Davey Alba / Bloomberg",
-   "published_at": "2026-11-05T19:40:59Z",
-   "text": "Google says it will spend $17B to build its first Wyoming data center, pay for all the power it uses, and form a Community Council to address growth concerns. Alphabet Inc.'s Google will spend $17 billion to build a data center in Wyoming, formally putting a price tag on the proposal …",
-   "via": "Techmeme"
-  },
-  {
-   "title": "Hungary: Communist-era files released, up to 60k former agents revealed",
-   "url": "https://www.euronews.com/2026/11/04/hungary-communist-era-files-opened-up-to-60000-former-agents-revealed",
-   "source": "Hacker News",
-   "published_at": "2026-11-05T19:16:34Z",
-   "text": "119 points and 26 comments on Hacker News.",
-   "points": 119,
-   "discussion": "https://news.ycombinator.com/item?id=50383163"
-  },
-  {
    "title": "Meta President Dina Powell McCormick says building new US data centers will be “harder” after midte…",
    "url": "https://www.wsj.com/tech/ai/meta-president-says-midterm-results-will-make-building-data-centers-harder-f1d27c93?st=d9mJbm&reflink=article_copyURL_share",
    "source": "Meghan Bobrowsky / Wall Str…",
@@ -114,12 +97,29 @@
    "via": "Techmeme"
   },
   {
+   "title": "Hungary: Communist-era files released, up to 60k former agents revealed",
+   "url": "https://www.euronews.com/2026/11/04/hungary-communist-era-files-opened-up-to-60000-former-agents-revealed",
+   "source": "Hacker News",
+   "published_at": "2026-11-05T19:16:34Z",
+   "text": "131 points and 28 comments on Hacker News.",
+   "points": 131,
+   "discussion": "https://news.ycombinator.com/item?id=50383163"
+  },
+  {
+   "title": "Google says it will spend $17B to build its first Wyoming data center, pay for all the power it use…",
+   "url": "https://www.bloomberg.com/news/articles/2026-11-05/google-plans-to-spend-17-billion-on-wyoming-data-center",
+   "source": "Davey Alba / Bloomberg",
+   "published_at": "2026-11-05T19:40:59Z",
+   "text": "Google says it will spend $17B to build its first Wyoming data center, pay for all the power it uses, and form a Community Council to address growth concerns. Alphabet Inc.'s Google will spend $17 billion to build a data center in Wyoming, formally putting a price tag on the proposal …",
+   "via": "Techmeme"
+  },
+  {
    "title": "Tencent Launches Hy4, One of the Leading Open-Source AI Models",
    "url": "https://www.tencent.com/tencent-launches-hy4-joining-the-ranks-of-the-worlds-leading-open-source-ai-models/",
    "source": "Hacker News",
    "published_at": "2026-11-05T20:21:43Z",
-   "text": "63 points and 1 comments on Hacker News.",
-   "points": 63,
+   "text": "73 points and 1 comments on Hacker News.",
+   "points": 73,
    "discussion": "https://news.ycombinator.com/item?id=50383963"
   },
   {
