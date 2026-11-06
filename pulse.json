@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-06T16:22:42Z",
+ "generated_at": "2026-11-06T16:54:26Z",
  "items": [
   {
    "title": "The Nasdaq 100 fell 6% on Thursday, losing a record $2.3T in value, and the Philadelphia chip index…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-05T18:00:35Z",
    "text": "Introducing Personal Finance in Claude, in beta in the US. Connect the accounts you choose, and Claude answers your money questions in everyday language, from your own balances and transactions. Access is read-only, and Claude can't move, manage, or invest your money.",
    "author_name": "Claude",
-   "likes": 38503,
+   "likes": 39072,
    "story": "Anthropic launches Personal Finance in Claude, letting users connect bank and credit card accounts via Plaid with read-only access to analyze spending trends"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-11-06T14:46:50Z",
    "text": "Qwhen? Qsoon! For our friends outside China, the Chinese text in the poster comes from Zhuangzi, an ancient Chinese classic: \"Far in the northern sea lives a fish named Kun (pronounced like Qwen). So immense is its size that no one knows how many thousands of miles it spans.\"",
    "author_name": "Qwen Developers",
-   "likes": 1835,
+   "likes": 2162,
    "story": "Qwen - the becoming begins"
   },
   {
@@ -44,8 +44,8 @@
    "published_at": "2026-11-05T18:36:37Z",
    "text": "Since August, a team within METR has worked with internal Anthropic information to assess whether AI itself is accelerating AI development. We are now publishing a report summarizing the results of this risk assessment.",
    "author_name": "METR",
-   "likes": 4361,
-   "story": "METR: Anthropic's models are improving about twice as fast as they did between March 2024 and October 2025, with internal AI use driving ~80% of acceleration"
+   "likes": 4411,
+   "story": "METR: Anthropic redacted much of the “most informative” evidence from METR's 100-page report, so readers “must rely on our judgment more than we consider ideal”"
   },
   {
    "title": "Thinking Machines Lab debuts Inkling 2 Small, a MoE model with 594B total and 17B active parameters…",
@@ -60,8 +60,8 @@
    "url": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/",
    "source": "Hacker News",
    "published_at": "2026-11-06T13:35:27Z",
-   "text": "169 points and 130 comments on Hacker News.",
-   "points": 169,
+   "text": "189 points and 146 comments on Hacker News.",
+   "points": 189,
    "discussion": "https://news.ycombinator.com/item?id=50392118"
   },
   {
@@ -71,7 +71,7 @@
    "published_at": "2026-11-05T18:30:24Z",
    "text": "Now in the Muse app: talk with your Muse in real time. And pick from multiple voices 🗣️",
    "author_name": "Mark Zuckerberg",
-   "likes": 5385,
+   "likes": 5404,
    "story": "Meta rolls out voice mode and expressive avatars in the Muse app, starting in the US, letting users have real-time voice conversations with their Muse AI agent"
   },
   {
@@ -80,13 +80,6 @@
    "source": "Anthropic",
    "published_at": "2026-11-06T10:22:49Z",
    "text": "Today, we’re inviting members of the life sciences community to apply to work with us on special projects."
-  },
-  {
-   "title": "Qwen 3.8 27B on my laptop can interpret model weights, too",
-   "url": "https://simonwillison.net/2026/Nov/3/qwen-can-interpret-model-weights/",
-   "source": "Simon Willison's weblog",
-   "published_at": "2026-11-03T16:29:48Z",
-   "text": "Yesterday's hot paper was Sparks of Weight-Space Programming: LLMs can natively read & write neural network weights by Rikiya Takehi, Jayden Teoh, Alex Zhang, and Omar Khattab. The paper (OK, the authors classify is as a \"blog post\", but it's paper-shaped) found that frontier models, in particular GPT-6 Astra, can both interpret and modify the raw weights of a machine learning model - literally a text description of the model containing a bunch of floating point numbers."
   },
   {
    "title": "Sources: major investors are increasingly skeptical Anthropic's IPO can proceed at a $1.5T valuatio…",
@@ -101,8 +94,8 @@
    "url": "https://github.com/anthropics/claude-code/issues/107757",
    "source": "Hacker News",
    "published_at": "2026-11-05T22:17:15Z",
-   "text": "1435 points and 449 comments on Hacker News.",
-   "points": 1435,
+   "text": "1460 points and 453 comments on Hacker News.",
+   "points": 1460,
    "discussion": "https://news.ycombinator.com/item?id=50385272"
   },
   {
@@ -114,13 +107,13 @@
    "via": "Techmeme"
   },
   {
-   "title": "Nvidia Kubernetes Engine (NVKE)",
-   "url": "https://github.com/dsx-ai-factory/nvke",
+   "title": "University libraries are being swarmed by AI bots, putting public access at risk",
+   "url": "https://www.cbc.ca/news/world/university-libraries-ai-data-scraping-bots-9.7408287",
    "source": "Hacker News",
-   "published_at": "2026-11-06T03:16:26Z",
-   "text": "113 points and 24 comments on Hacker News.",
-   "points": 113,
-   "discussion": "https://news.ycombinator.com/item?id=50387738"
+   "published_at": "2026-11-06T14:13:09Z",
+   "text": "70 points and 35 comments on Hacker News.",
+   "points": 70,
+   "discussion": "https://news.ycombinator.com/item?id=50392499"
   },
   {
    "title": "The Long-Term Benefit Trust",
@@ -128,6 +121,14 @@
    "source": "Anthropic",
    "published_at": "2026-11-05T15:44:46Z",
    "text": "An independent body of five trustees with authority to elect and remove Anthropic board members, balancing stockholder and public interests."
+  },
+  {
+   "title": "Cleanview: ~40% of pending US data center capacity is planned to be built in states where newly ele…",
+   "url": "https://www.bloomberg.com/news/articles/2026-11-06/new-governors-set-to-challenge-big-swath-of-data-center-capacity",
+   "source": "Bloomberg",
+   "published_at": "2026-11-06T09:25:50Z",
+   "text": "Cleanview: ~40% of pending US data center capacity is planned to be built in states where newly elected governors have pledged to stop or pause construction. A new crop of Democratic governors-elect campaigned on putting the brakes on artificial intelligence development.",
+   "via": "Techmeme"
   }
  ],
  "sources": "curated, Techmeme, X (found via Techmeme, Reddit, the Internet Archive), Claude Code releases, Anthropic, Hacker News, Simon Willison"
