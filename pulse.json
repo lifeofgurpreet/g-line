@@ -1,13 +1,13 @@
 {
  "schema": 1,
- "generated_at": "2026-11-06T21:10:49Z",
+ "generated_at": "2026-11-06T21:42:49Z",
  "items": [
   {
-   "title": "Democrats, with Elizabeth Warren a top contender to chair Senate Banking, are poised to step up ove…",
-   "url": "https://www.bloomberg.com/news/articles/2026-11-06/nvidia-s-ai-chip-exports-emerge-as-target-in-democratic-congress",
-   "source": "Maggie Eastland / Bloomberg",
-   "published_at": "2026-11-06T15:51:59Z",
-   "text": "Democrats, with Elizabeth Warren a top contender to chair Senate Banking, are poised to step up oversight of Nvidia over chip exports and circular financing. Nvidia Corp. is in for tougher scrutiny from a new Democratic majority in Congress that's set to demand answers …",
+   "title": "Sources: Anthropic is continuing with plans to list before the Thanksgiving holiday this month, exp…",
+   "url": "https://www.ft.com/content/314e17df-e7af-4814-b208-70a0557cb452",
+   "source": "Financial Times",
+   "published_at": "2026-11-06T21:13:55Z",
+   "text": "Sources: Anthropic is continuing with plans to list before the Thanksgiving holiday this month, expecting to raise $80B-$100B at a valuation of $1.25T to $1.75T. Claude-maker intends to list before Thanksgiving despite brutal tech rout — Anthropic is pressing on with its high-stakes IPO …",
    "via": "Techmeme"
   },
   {
@@ -17,7 +17,7 @@
    "published_at": "2026-11-05T18:00:35Z",
    "text": "Introducing Personal Finance in Claude, in beta in the US. Connect the accounts you choose, and Claude answers your money questions in everyday language, from your own balances and transactions. Access is read-only, and Claude can't move, manage, or invest your money.",
    "author_name": "Claude",
-   "likes": 41961,
+   "likes": 42089,
    "story": "Anthropic launches Personal Finance in Claude, letting users connect bank and credit card accounts via Plaid with read-only access to analyze spending trends"
   },
   {
@@ -34,18 +34,18 @@
    "published_at": "2026-11-05T17:11:48Z",
    "text": "Today we are rolling out Gemini Omni Flash 1.2, with: - longer video generation (15 seconds) - deeper cinematic controls for camera pov - support for multi-turn conversation editing - less visual drift - 30% lower price than Omni Flash 1.1 Read more:",
    "author_name": "Logan Kilpatrick",
-   "likes": 2344,
+   "likes": 2350,
    "story": "Google rolls out Gemini Omni 1.2 Flash, which creates clips up to 15 seconds, vs. 10 seconds with Omni 1.1, has better reference adherence, and costs 30% less",
    "links": [
     "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/"
    ]
   },
   {
-   "title": "Asian tech stocks plunge amid fears US Democrats may delay data centers; Taiwan's Taiex sees a reco…",
-   "url": "https://asia.nikkei.com/business/markets/taiwan-stocks-in-steepest-ever-fall-south-korea-halts-trading-amid-ai-rout",
-   "source": "Jada Nagumo / Nikkei Asia",
-   "published_at": "2026-11-06T05:40:48Z",
-   "text": "Asian tech stocks plunge amid fears US Democrats may delay data centers; Taiwan's Taiex sees a record intraday point drop, Kospi falls 8.7%, and Nikkei 6.7%. TOKYO — Asian stock markets tied to the artificial intelligence boom plummeted on Friday morning following a tech sell-off …",
+   "title": "Democrats, with Elizabeth Warren a top contender to chair Senate Banking, are poised to step up ove…",
+   "url": "https://www.bloomberg.com/news/articles/2026-11-06/nvidia-s-ai-chip-exports-emerge-as-target-in-democratic-congress",
+   "source": "Maggie Eastland / Bloomberg",
+   "published_at": "2026-11-06T15:51:59Z",
+   "text": "Democrats, with Elizabeth Warren a top contender to chair Senate Banking, are poised to step up oversight of Nvidia over chip exports and circular financing. Nvidia Corp. is in for tougher scrutiny from a new Democratic majority in Congress that's set to demand answers …",
    "via": "Techmeme"
   },
   {
@@ -53,8 +53,8 @@
    "url": "https://github.com/anthropics/claude-code/issues/107757",
    "source": "Hacker News",
    "published_at": "2026-11-05T22:17:15Z",
-   "text": "1531 points and 484 comments on Hacker News.",
-   "points": 1531,
+   "text": "1535 points and 485 comments on Hacker News.",
+   "points": 1535,
    "discussion": "https://news.ycombinator.com/item?id=50385272"
   },
   {
@@ -64,7 +64,7 @@
    "published_at": "2026-11-05T23:45:03Z",
    "text": "Inkling 2 Small is available today on Tinker, with weights coming soon. It's a capable small model. We look forward to seeing what you make with it.",
    "author_name": "Mira Murati",
-   "likes": 1648,
+   "likes": 1657,
    "story": "Thinking Machines Lab debuts Inkling 2 Small, a MoE model with 594B total and 17B active parameters, and plans to release weights next week after safety testing"
   },
   {
@@ -75,23 +75,6 @@
    "text": "Today, we’re inviting members of the life sciences community to apply to work with us on special projects."
   },
   {
-   "title": "The US DOJ indicts three foreign nationals for allegedly using AI to impersonate CEOs and attorneys…",
-   "url": "https://www.nbcnews.com/news/us-news/3-foreign-nationals-allegedly-used-ai-mimic-ceos-129m-scheme-doj-says-rcna607818",
-   "source": "Rebecca Cohen / NBC News",
-   "published_at": "2026-11-06T17:35:52Z",
-   "text": "The US DOJ indicts three foreign nationals for allegedly using AI to impersonate CEOs and attorneys at major international law firms in a $129M+ fraud scheme. Federal prosecutors say the suspects posed as corporate executives and high-powered attorneys, using AI to convince employees to transfer millions of dollars.",
-   "via": "Techmeme"
-  },
-  {
-   "title": "Anthropic IPO buyers see valuation as low as $1.1T",
-   "url": "https://www.bloomberg.com/news/articles/2026-11-06/anthropic-ipo-valuation-expectations-pressured-after-ai-rout",
-   "source": "Hacker News",
-   "published_at": "2026-11-06T16:54:36Z",
-   "text": "122 points and 309 comments on Hacker News.",
-   "points": 122,
-   "discussion": "https://news.ycombinator.com/item?id=50394906"
-  },
-  {
    "title": "Sources: Microsoft has been turning off rented computing capacity from Oracle after declining to re…",
    "url": "https://www.bloomberg.com/news/articles/2026-11-06/microsoft-is-winding-down-oracle-deal-to-rent-ai-cloud-capacity",
    "source": "Brody Ford / Bloomberg",
@@ -100,12 +83,29 @@
    "via": "Techmeme"
   },
   {
+   "title": "Anthropic IPO buyers see valuation as low as $1.1T",
+   "url": "https://www.bloomberg.com/news/articles/2026-11-06/anthropic-ipo-valuation-expectations-pressured-after-ai-rout",
+   "source": "Hacker News",
+   "published_at": "2026-11-06T16:54:36Z",
+   "text": "141 points and 337 comments on Hacker News.",
+   "points": 141,
+   "discussion": "https://news.ycombinator.com/item?id=50394906"
+  },
+  {
+   "title": "The US DOJ indicts three foreign nationals for allegedly using AI to impersonate CEOs and attorneys…",
+   "url": "https://www.nbcnews.com/news/us-news/3-foreign-nationals-allegedly-used-ai-mimic-ceos-129m-scheme-doj-says-rcna607818",
+   "source": "Rebecca Cohen / NBC News",
+   "published_at": "2026-11-06T17:35:52Z",
+   "text": "The US DOJ indicts three foreign nationals for allegedly using AI to impersonate CEOs and attorneys at major international law firms in a $129M+ fraud scheme. Federal prosecutors say the suspects posed as corporate executives and high-powered attorneys, using AI to convince employees to transfer millions of dollars.",
+   "via": "Techmeme"
+  },
+  {
    "title": "Rune: A native GPU-rendered Rust UI framework for macOS, Windows, Linux and web",
    "url": "https://github.com/anomalyco/rune",
    "source": "Hacker News",
    "published_at": "2026-11-06T16:31:32Z",
-   "text": "112 points and 86 comments on Hacker News.",
-   "points": 112,
+   "text": "119 points and 91 comments on Hacker News.",
+   "points": 119,
    "discussion": "https://news.ycombinator.com/item?id=50394569"
   },
   {
@@ -116,11 +116,11 @@
    "text": "An independent body of five trustees with authority to elect and remove Anthropic board members, balancing stockholder and public interests."
   },
   {
-   "title": "Sources: major investors are increasingly skeptical Anthropic's IPO can proceed at a $1.5T valuatio…",
-   "url": "https://www.wsj.com/finance/major-investors-are-skeptical-anthropic-ipo-can-achieve-1-5-trillion-valuation-ca965d8b?st=kUhvLS",
-   "source": "Wall Street Journal",
-   "published_at": "2026-11-06T00:11:23Z",
-   "text": "Sources: major investors are increasingly skeptical Anthropic's IPO can proceed at a $1.5T valuation after a market selloff; one says it could be closer to $1T. The AI giant could need to set a significantly lower-than-expected valuation, investors say — Major investors …",
+   "title": "AI physics startup PSI says a system running a non-public Anthropic model proved the Aaronson-Ambai…",
+   "url": "https://psi.inc/research/aaronson-ambainis/",
+   "source": "PSI",
+   "published_at": "2026-11-06T19:35:55Z",
+   "text": "AI physics startup PSI says a system running a non-public Anthropic model proved the Aaronson-Ambainis conjecture, a quantum computing question open since 2008. The Aaronson-Ambainis conjecture is now a theorem. — Open since 2008, the conjecture of Scott Aaronson and Andris Ambainis concerns …",
    "via": "Techmeme"
   },
   {
