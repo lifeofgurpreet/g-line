@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-06T00:09:04Z",
+ "generated_at": "2026-11-06T00:42:18Z",
  "items": [
   {
    "title": "OpenAI pledges to change how it handles data center deals, including avoiding NDAs and lowering pow…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-05T18:00:35Z",
    "text": "Introducing Personal Finance in Claude, in beta in the US. Connect the accounts you choose, and Claude answers your money questions in everyday language, from your own balances and transactions. Access is read-only, and Claude can't move, manage, or invest your money.",
    "author_name": "Claude",
-   "likes": 23345,
+   "likes": 24091,
    "story": "Anthropic launches Personal Finance in Claude, letting users connect bank and credit card accounts via Plaid with read-only access to analyze spending trends"
   },
   {
@@ -28,14 +28,14 @@
    "text": "Added a record of your answer when Claude Code asks to turn on the mods it writes in a session · Added assume_role on mantle upstreams of the Claude apps gateway, for a role in another AWS account and for per-developer AWS cost attribution · Added an effort option to a mod's $.model.fork, so a quick side job can run at low whatever effort the session uses; the result reports the effort sent · Added the date a stored claude.ai sign-in ends to claude auth status (loginExpiresAt) and to claude -p JSON results (credential_expires_at)"
   },
   {
-   "title": "live like f1 champion kimi antonelli talk to your muse with Voice",
-   "url": "https://x.com/alexandr_wang/status/2118454853223829622",
-   "source": "𝕏 @alexandr_wang",
-   "published_at": "2026-11-05T21:26:10Z",
-   "text": "live like f1 champion kimi antonelli talk to your muse with Voice",
-   "author_name": "Alexandr Wang",
-   "likes": 388,
-   "story": "Meta rolls out voice mode and expressive avatars in the Muse app, starting in the US, letting users have real-time voice conversations with their Muse AI agent"
+   "title": "Inkling 2 Small is available today on Tinker, with weights coming soon. It's a capable small model.…",
+   "url": "https://x.com/miramurati/status/2118489804585509192",
+   "source": "𝕏 @miramurati",
+   "published_at": "2026-11-05T23:45:03Z",
+   "text": "Inkling 2 Small is available today on Tinker, with weights coming soon. It's a capable small model. We look forward to seeing what you make with it.",
+   "author_name": "Mira Murati",
+   "likes": 381,
+   "story": "Thinking Machines Lab debuts Inkling 2 Small, a MoE model with 594B total and 17B active parameters, and plans to release weights next week after safety testing"
   },
   {
    "title": "Introducing GPT‑6 Cyber: a major advance in security research that pairs stronger capabilities with…",
@@ -44,7 +44,7 @@
    "published_at": "2026-11-05T17:09:13Z",
    "text": "Introducing GPT‑6 Cyber: a major advance in security research that pairs stronger capabilities with better model alignment. The model powered the Linux kernel research we announced yesterday, and security teams at companies like Mozilla, Palo Alto Networks, Calif, and…",
    "author_name": "OpenAI",
-   "likes": 13172,
+   "likes": 13557,
    "story": "OpenAI launches GPT-6 Cyber, which it says outperforms GPT-6 Astra on cyber benchmarks, is better at finding vulnerabilities, and is less likely to go rogue"
   },
   {
@@ -60,26 +60,26 @@
    "url": "https://github.com/anthropics/claude-code/issues/107757",
    "source": "Hacker News",
    "published_at": "2026-11-05T22:17:15Z",
-   "text": "309 points and 88 comments on Hacker News.",
-   "points": 309,
+   "text": "382 points and 133 comments on Hacker News.",
+   "points": 382,
    "discussion": "https://news.ycombinator.com/item?id=50385272"
   },
   {
-   "title": "948 vulnerabilities in the Linux kernel found by an internal OpenAI model at a total API cost of $1…",
-   "url": "https://x.com/Yuchenj_UW/status/2118121629385671045",
-   "source": "𝕏 @Yuchenj_UW",
-   "published_at": "2026-11-04T23:22:03Z",
-   "text": "948 vulnerabilities in the Linux kernel found by an internal OpenAI model at a total API cost of $1.2 million Crazy!",
-   "author_name": "Yuchen Jin",
-   "likes": 1290,
-   "story": "OpenAI details a pipeline that used an upcoming cyber model to validate and patch 948 local privilege escalation vulnerabilities in Linux for $1.2M in API costs"
+   "title": "Now in the Muse app: talk with your Muse in real time. And pick from multiple voices 🗣️",
+   "url": "https://x.com/finkd/status/2118410617698517088",
+   "source": "𝕏 @finkd",
+   "published_at": "2026-11-05T18:30:24Z",
+   "text": "Now in the Muse app: talk with your Muse in real time. And pick from multiple voices 🗣️",
+   "author_name": "Mark Zuckerberg",
+   "likes": 3766,
+   "story": "Meta rolls out voice mode and expressive avatars in the Muse app, starting in the US, letting users have real-time voice conversations with their Muse AI agent"
   },
   {
-   "title": "The Long-Term Benefit Trust",
-   "url": "https://www.anthropic.com/news/the-long-term-benefit-trust",
+   "title": "Open call for guest investigators in the life sciences",
+   "url": "https://www.anthropic.com/news/open-call-guest-investigators-life-sciences",
    "source": "Anthropic",
-   "published_at": "2026-11-05T15:44:46Z",
-   "text": "An independent body of five trustees with authority to elect and remove Anthropic board members, balancing stockholder and public interests."
+   "published_at": "2026-11-06T00:32:57Z",
+   "text": "Today, we’re inviting members of the life sciences community to apply to work with us on special projects."
   },
   {
    "title": "Qwen 3.8 27B on my laptop can interpret model weights, too",
@@ -87,23 +87,6 @@
    "source": "Simon Willison's weblog",
    "published_at": "2026-11-03T16:29:48Z",
    "text": "Yesterday's hot paper was Sparks of Weight-Space Programming: LLMs can natively read & write neural network weights by Rikiya Takehi, Jayden Teoh, Alex Zhang, and Omar Khattab. The paper (OK, the authors classify is as a \"blog post\", but it's paper-shaped) found that frontier models, in particular GPT-6 Astra, can both interpret and modify the raw weights of a machine learning model - literally a text description of the model containing a bunch of floating point numbers."
-  },
-  {
-   "title": "Meta President Dina Powell McCormick says building new US data centers will be “harder” after midte…",
-   "url": "https://www.wsj.com/tech/ai/meta-president-says-midterm-results-will-make-building-data-centers-harder-f1d27c93?st=d9mJbm&reflink=article_copyURL_share",
-   "source": "Meghan Bobrowsky / Wall Str…",
-   "published_at": "2026-11-05T20:41:01Z",
-   "text": "Meta President Dina Powell McCormick says building new US data centers will be “harder” after midterm results, but it will be easier to expand existing projects. Speaking at the WSJ Tech conference, Dina Powell McCormick says the company is more optimistic about scaling up its existing data centers",
-   "via": "Techmeme"
-  },
-  {
-   "title": "Hungary: Communist-era files released, up to 60k former agents revealed",
-   "url": "https://www.euronews.com/2026/11/04/hungary-communist-era-files-opened-up-to-60000-former-agents-revealed",
-   "source": "Hacker News",
-   "published_at": "2026-11-05T19:16:34Z",
-   "text": "131 points and 28 comments on Hacker News.",
-   "points": 131,
-   "discussion": "https://news.ycombinator.com/item?id=50383163"
   },
   {
    "title": "Google says it will spend $17B to build its first Wyoming data center, pay for all the power it use…",
@@ -114,21 +97,37 @@
    "via": "Techmeme"
   },
   {
+   "title": "Hungary: Communist-era files released, up to 60k former agents revealed",
+   "url": "https://www.euronews.com/2026/11/04/hungary-communist-era-files-opened-up-to-60000-former-agents-revealed",
+   "source": "Hacker News",
+   "published_at": "2026-11-05T19:16:34Z",
+   "text": "140 points and 31 comments on Hacker News.",
+   "points": 140,
+   "discussion": "https://news.ycombinator.com/item?id=50383163"
+  },
+  {
+   "title": "Meta President Dina Powell McCormick says building new US data centers will be “harder” after midte…",
+   "url": "https://www.wsj.com/tech/ai/meta-president-says-midterm-results-will-make-building-data-centers-harder-f1d27c93?st=d9mJbm&reflink=article_copyURL_share",
+   "source": "Meghan Bobrowsky / Wall Str…",
+   "published_at": "2026-11-05T20:41:01Z",
+   "text": "Meta President Dina Powell McCormick says building new US data centers will be “harder” after midterm results, but it will be easier to expand existing projects. Speaking at the WSJ Tech conference, Dina Powell McCormick says the company is more optimistic about scaling up its existing data centers",
+   "via": "Techmeme"
+  },
+  {
    "title": "Tencent Launches Hy4, One of the Leading Open-Source AI Models",
    "url": "https://www.tencent.com/tencent-launches-hy4-joining-the-ranks-of-the-worlds-leading-open-source-ai-models/",
    "source": "Hacker News",
    "published_at": "2026-11-05T20:21:43Z",
-   "text": "73 points and 1 comments on Hacker News.",
+   "text": "73 points and 2 comments on Hacker News.",
    "points": 73,
    "discussion": "https://news.ycombinator.com/item?id=50383963"
   },
   {
-   "title": "Sources: Microsoft is tightening oversight of some data center projects, stepping away from those i…",
-   "url": "https://www.bloomberg.com/news/articles/2026-11-05/microsoft-sours-on-neoclouds-iren-nebius-nscale-on-delays-costs",
-   "source": "Brody Ford / Bloomberg",
-   "published_at": "2026-11-05T16:41:04Z",
-   "text": "Sources: Microsoft is tightening oversight of some data center projects, stepping away from those it deems risky, and debating whether to ink new neocloud deals. Microsoft Corp. helped create the “neocloud” boom, signing tens of billions of dollars in contracts with upstart data center operators …",
-   "via": "Techmeme"
+   "title": "The Long-Term Benefit Trust",
+   "url": "https://www.anthropic.com/news/the-long-term-benefit-trust",
+   "source": "Anthropic",
+   "published_at": "2026-11-05T15:44:46Z",
+   "text": "An independent body of five trustees with authority to elect and remove Anthropic board members, balancing stockholder and public interests."
   }
  ],
  "sources": "curated, Techmeme, X (found via Techmeme, Reddit, the Internet Archive), Claude Code releases, Anthropic, Hacker News, Simon Willison"
