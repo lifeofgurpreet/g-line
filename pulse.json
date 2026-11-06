@@ -1,13 +1,13 @@
 {
  "schema": 1,
- "generated_at": "2026-11-06T17:27:21Z",
+ "generated_at": "2026-11-06T17:59:00Z",
  "items": [
   {
-   "title": "The Nasdaq 100 fell 6% on Thursday, losing a record $2.3T in value, and the Philadelphia chip index…",
-   "url": "https://www.bloomberg.com/news/articles/2026-11-05/us-stock-futures-diverge-as-chip-selloff-extends-into-second-day",
-   "source": "Natalia Kniazhevich / Bloom…",
-   "published_at": "2026-11-05T22:16:03Z",
-   "text": "The Nasdaq 100 fell 6% on Thursday, losing a record $2.3T in value, and the Philadelphia chip index fell 12%, on AI trade concerns after Democrats won Congress. Technology stocks plunged the most since 2020 on Thursday as investors exited the sector on concerns over the artificial intelligence trade …",
+   "title": "Sources: Nvidia is requiring Southeast Asian customers seeking Nvidia Cloud Partner status to enrol…",
+   "url": "https://www.bloomberg.com/news/articles/2026-11-06/nvidia-boosts-chip-tracking-in-southeast-asia-to-fight-smuggling",
+   "source": "Mackenzie Hawkins / Bloombe…",
+   "published_at": "2026-11-06T11:30:50Z",
+   "text": "Sources: Nvidia is requiring Southeast Asian customers seeking Nvidia Cloud Partner status to enroll in a program that tracks the locations of their AI chips. Nvidia Corp. is stepping up monitoring of AI accelerators sold in Southeast Asia, a strategic step to curtail semiconductor smuggling …",
    "via": "Techmeme"
   },
   {
@@ -17,7 +17,7 @@
    "published_at": "2026-11-05T18:00:35Z",
    "text": "Introducing Personal Finance in Claude, in beta in the US. Connect the accounts you choose, and Claude answers your money questions in everyday language, from your own balances and transactions. Access is read-only, and Claude can't move, manage, or invest your money.",
    "author_name": "Claude",
-   "likes": 39589,
+   "likes": 40156,
    "story": "Anthropic launches Personal Finance in Claude, letting users connect bank and credit card accounts via Plaid with read-only access to analyze spending trends"
   },
   {
@@ -34,8 +34,25 @@
    "published_at": "2026-11-06T14:46:50Z",
    "text": "Qwhen? Qsoon! For our friends outside China, the Chinese text in the poster comes from Zhuangzi, an ancient Chinese classic: \"Far in the northern sea lives a fish named Kun (pronounced like Qwen). So immense is its size that no one knows how many thousands of miles it spans.\"",
    "author_name": "Qwen Developers",
-   "likes": 2384,
+   "likes": 2547,
    "story": "Qwen Developers on X: \"Qwhen? Qsoon! For our friends outside China, the Chinese text in the poster comes from"
+  },
+  {
+   "title": "The Nasdaq 100 fell 6% on Thursday, losing a record $2.3T in value, and the Philadelphia chip index…",
+   "url": "https://www.bloomberg.com/news/articles/2026-11-05/us-stock-futures-diverge-as-chip-selloff-extends-into-second-day",
+   "source": "Natalia Kniazhevich / Bloom…",
+   "published_at": "2026-11-05T22:16:03Z",
+   "text": "The Nasdaq 100 fell 6% on Thursday, losing a record $2.3T in value, and the Philadelphia chip index fell 12%, on AI trade concerns after Democrats won Congress. Technology stocks plunged the most since 2020 on Thursday as investors exited the sector on concerns over the artificial intelligence trade …",
+   "via": "Techmeme"
+  },
+  {
+   "title": "Gemini Omni 1.2 Flash",
+   "url": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/",
+   "source": "Hacker News",
+   "published_at": "2026-11-06T13:35:27Z",
+   "text": "213 points and 164 comments on Hacker News.",
+   "points": 213,
+   "discussion": "https://news.ycombinator.com/item?id=50392118"
   },
   {
    "title": "Since August, a team within METR has worked with internal Anthropic information to assess whether A…",
@@ -44,8 +61,15 @@
    "published_at": "2026-11-05T18:36:37Z",
    "text": "Since August, a team within METR has worked with internal Anthropic information to assess whether AI itself is accelerating AI development. We are now publishing a report summarizing the results of this risk assessment.",
    "author_name": "METR",
-   "likes": 4454,
-   "story": "METR: Anthropic's models are improving about twice as fast as they did between March 2024 and October 2025, with internal AI use driving ~80% of acceleration"
+   "likes": 4492,
+   "story": "METR: Anthropic redacted much of the “most informative” evidence from METR's 100-page report, so readers “must rely on our judgment more than we consider ideal”"
+  },
+  {
+   "title": "Open call for guest investigators in the life sciences",
+   "url": "https://www.anthropic.com/news/open-call-guest-investigators-life-sciences",
+   "source": "Anthropic",
+   "published_at": "2026-11-06T10:22:49Z",
+   "text": "Today, we’re inviting members of the life sciences community to apply to work with us on special projects."
   },
   {
    "title": "Thinking Machines Lab debuts Inkling 2 Small, a MoE model with 594B total and 17B active parameters…",
@@ -56,30 +80,23 @@
    "via": "Techmeme"
   },
   {
-   "title": "Gemini Omni 1.2 Flash",
-   "url": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/",
-   "source": "Hacker News",
-   "published_at": "2026-11-06T13:35:27Z",
-   "text": "199 points and 153 comments on Hacker News.",
-   "points": 199,
-   "discussion": "https://news.ycombinator.com/item?id=50392118"
-  },
-  {
    "title": "Now in the Muse app: talk with your Muse in real time. And pick from multiple voices 🗣️",
    "url": "https://x.com/finkd/status/2118410617698517088",
    "source": "𝕏 @finkd",
    "published_at": "2026-11-05T18:30:24Z",
    "text": "Now in the Muse app: talk with your Muse in real time. And pick from multiple voices 🗣️",
    "author_name": "Mark Zuckerberg",
-   "likes": 5432,
+   "likes": 5462,
    "story": "Meta rolls out voice mode and expressive avatars in the Muse app, starting in the US, letting users have real-time voice conversations with their Muse AI agent"
   },
   {
-   "title": "Open call for guest investigators in the life sciences",
-   "url": "https://www.anthropic.com/news/open-call-guest-investigators-life-sciences",
-   "source": "Anthropic",
-   "published_at": "2026-11-06T10:22:49Z",
-   "text": "Today, we’re inviting members of the life sciences community to apply to work with us on special projects."
+   "title": "Claude Code sends your email address to websites",
+   "url": "https://github.com/anthropics/claude-code/issues/107757",
+   "source": "Hacker News",
+   "published_at": "2026-11-05T22:17:15Z",
+   "text": "1494 points and 468 comments on Hacker News.",
+   "points": 1494,
+   "discussion": "https://news.ycombinator.com/item?id=50385272"
   },
   {
    "title": "Sources: major investors are increasingly skeptical Anthropic's IPO can proceed at a $1.5T valuatio…",
@@ -90,29 +107,12 @@
    "via": "Techmeme"
   },
   {
-   "title": "Claude Code sends your email address to websites",
-   "url": "https://github.com/anthropics/claude-code/issues/107757",
-   "source": "Hacker News",
-   "published_at": "2026-11-05T22:17:15Z",
-   "text": "1479 points and 462 comments on Hacker News.",
-   "points": 1479,
-   "discussion": "https://news.ycombinator.com/item?id=50385272"
-  },
-  {
-   "title": "Sources: Nvidia is requiring Southeast Asian customers seeking Nvidia Cloud Partner status to enrol…",
-   "url": "https://www.bloomberg.com/news/articles/2026-11-06/nvidia-boosts-chip-tracking-in-southeast-asia-to-fight-smuggling",
-   "source": "Mackenzie Hawkins / Bloombe…",
-   "published_at": "2026-11-06T11:30:50Z",
-   "text": "Sources: Nvidia is requiring Southeast Asian customers seeking Nvidia Cloud Partner status to enroll in a program that tracks the locations of their AI chips. Nvidia Corp. is stepping up monitoring of AI accelerators sold in Southeast Asia, a strategic step to curtail semiconductor smuggling …",
-   "via": "Techmeme"
-  },
-  {
    "title": "University libraries are being swarmed by AI bots, putting public access at risk",
    "url": "https://www.cbc.ca/news/world/university-libraries-ai-data-scraping-bots-9.7408287",
    "source": "Hacker News",
    "published_at": "2026-11-06T14:13:09Z",
-   "text": "85 points and 38 comments on Hacker News.",
-   "points": 85,
+   "text": "95 points and 46 comments on Hacker News.",
+   "points": 95,
    "discussion": "https://news.ycombinator.com/item?id=50392499"
   },
   {
@@ -123,11 +123,11 @@
    "text": "An independent body of five trustees with authority to elect and remove Anthropic board members, balancing stockholder and public interests."
   },
   {
-   "title": "Cleanview: ~40% of pending US data center capacity is planned to be built in states where newly ele…",
-   "url": "https://www.bloomberg.com/news/articles/2026-11-06/new-governors-set-to-challenge-big-swath-of-data-center-capacity",
-   "source": "Bloomberg",
-   "published_at": "2026-11-06T09:25:50Z",
-   "text": "Cleanview: ~40% of pending US data center capacity is planned to be built in states where newly elected governors have pledged to stop or pause construction. A new crop of Democratic governors-elect campaigned on putting the brakes on artificial intelligence development.",
+   "title": "The US DOJ indicts three foreign nationals for allegedly using AI to impersonate CEOs and attorneys…",
+   "url": "https://www.nbcnews.com/news/us-news/3-foreign-nationals-allegedly-used-ai-mimic-ceos-129m-scheme-doj-says-rcna607818",
+   "source": "Rebecca Cohen / NBC News",
+   "published_at": "2026-11-06T17:35:52Z",
+   "text": "The US DOJ indicts three foreign nationals for allegedly using AI to impersonate CEOs and attorneys at major international law firms in a $129M+ fraud scheme. Federal prosecutors say the suspects posed as corporate executives and high-powered attorneys, using AI to convince employees to transfer millions of dollars.",
    "via": "Techmeme"
   }
  ],
