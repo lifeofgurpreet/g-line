@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-07T20:42:53Z",
+ "generated_at": "2026-11-07T21:15:28Z",
  "items": [
   {
    "title": "Investigation: some Chinese companies approved by the US Commerce Department to handle Nvidia's H20…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-06T21:48:45Z",
    "text": "Introducing Arete-27B: Qwen3.8-27B, post-trained to reinforce Western values. Chinese open models are currently the strongest available, but they ship with state-aligned behavior in the weights. We built an 803-prompt eval across seven value categories, including freedom of…",
    "author_name": "Nous Research",
-   "likes": 12189,
+   "likes": 12275,
    "story": "NousResearch/Arete-27B · Hugging Face (Qwen finetune)"
   },
   {
@@ -34,69 +34,8 @@
    "published_at": "2026-11-06T18:45:11Z",
    "text": "1/ starting today, muse and meta ai will run on new specialized models trained using muse wonder. ACTIVE MEMORY: models can reason across time and better remember what matters ACTIVE FOCUS: enabling muse to continue working towards a goal even when met with roadblocks",
    "author_name": "Alexandr Wang",
-   "likes": 2531,
+   "likes": 2543,
    "story": "Meta introduces specialized versions of its existing models, trained using Muse Wonder, bringing Active Memory and Active Focus to all Muse and Meta AI users"
-  },
-  {
-   "title": "Public records appear to show SpaceX building a “Starbase supercomputer” in TX, but Gina Hinojosa's…",
-   "url": "https://www.theinformation.com/articles/blue-wave-may-stop-musks-texas-data-center-ambitions",
-   "source": "Ann Davis Vaughan / The Inf…",
-   "published_at": "2026-11-07T19:41:07Z",
-   "text": "Public records appear to show SpaceX building a “Starbase supercomputer” in TX, but Gina Hinojosa's election as governor may delay some of the data center plans. Elon Musk moved early to build AI data centers in Tennessee and Mississippi and reaped the rewards.",
-   "via": "Techmeme"
-  },
-  {
-   "title": "The end of Microsoft Research's AI Frontiers group",
-   "url": "https://hunch.net/?p=13764006",
-   "source": "Hacker News",
-   "published_at": "2026-11-07T18:02:17Z",
-   "text": "194 points and 102 comments on Hacker News.",
-   "points": 194,
-   "discussion": "https://news.ycombinator.com/item?id=50406563"
-  },
-  {
-   "title": "Since August, a team within METR has worked with internal Anthropic information to assess whether A…",
-   "url": "https://x.com/METR_Evals/status/2118412183860351084",
-   "source": "𝕏 @METR_Evals",
-   "published_at": "2026-11-05T18:36:37Z",
-   "text": "Since August, a team within METR has worked with internal Anthropic information to assess whether AI itself is accelerating AI development. We are now publishing a report summarizing the results of this risk assessment.",
-   "author_name": "METR",
-   "likes": 5180,
-   "story": "People are concerned about the METR report: \"I've always had substantially longer timelines than my friends at Anthropic\" ... \"I now think that we are more tha…"
-  },
-  {
-   "title": "Open call for guest investigators in the life sciences",
-   "url": "https://www.anthropic.com/news/open-call-guest-investigators-life-sciences",
-   "source": "Anthropic",
-   "published_at": "2026-11-06T10:22:49Z",
-   "text": "Today, we’re inviting members of the life sciences community to apply to work with us on special projects."
-  },
-  {
-   "title": "Censys finds 800+ publicly exposed copies of ARTEX, a Chinese-made, AI-powered, open-source penetra…",
-   "url": "https://techcrunch.com/2026/11/06/hundreds-of-artex-ai-hacking-tools-found-publicly-exposed-to-the-web/",
-   "source": "Zack Whittaker / TechCrunch",
-   "published_at": "2026-11-07T07:01:53Z",
-   "text": "Censys finds 800+ publicly exposed copies of ARTEX, a Chinese-made, AI-powered, open-source penetration testing tool linked to several cyberattacks since July. Security researchers have discovered hundreds of copies of a Chinese-made AI hacking tool publicly exposed to the internet for anyone to access …",
-   "via": "Techmeme"
-  },
-  {
-   "title": "i went to bed and asked claude to paint an autumn tree overnight. at around 4am, it realised that i…",
-   "url": "https://x.com/dhvanil/status/2118756173721575767",
-   "source": "𝕏 @dhvanil",
-   "published_at": "2026-11-06T17:23:31Z",
-   "text": "i went to bed and asked claude to paint an autumn tree overnight. at around 4am, it realised that it didn't have some shades -- so it stopped and titrated its own paint: diluting red, sienna and madder step by step on a second palette, then measuring each pocket from a photo.…",
-   "author_name": "nil",
-   "likes": 5444,
-   "story": "Claude paints a watercolor tree with a robotic arm in 4.5 hours, and mixes its own custom colors along the way"
-  },
-  {
-   "title": "Claude Code sends your email address to websites",
-   "url": "https://github.com/anthropics/claude-code/issues/107757",
-   "source": "Hacker News",
-   "published_at": "2026-11-05T22:17:15Z",
-   "text": "1588 points and 513 comments on Hacker News.",
-   "points": 1588,
-   "discussion": "https://news.ycombinator.com/item?id=50385272"
   },
   {
    "title": "Exponential Time Hypothesis co-proposer Russell Impagliazzo calls OpenAI's disproof “shocking news”…",
@@ -107,12 +46,83 @@
    "via": "Techmeme"
   },
   {
+   "title": "The end of Microsoft Research's AI Frontiers group",
+   "url": "https://hunch.net/?p=13764006",
+   "source": "Hacker News",
+   "published_at": "2026-11-07T18:02:17Z",
+   "text": "228 points and 126 comments on Hacker News.",
+   "points": 228,
+   "discussion": "https://news.ycombinator.com/item?id=50406563"
+  },
+  {
+   "title": "Since August, a team within METR has worked with internal Anthropic information to assess whether A…",
+   "url": "https://x.com/METR_Evals/status/2118412183860351084",
+   "source": "𝕏 @METR_Evals",
+   "published_at": "2026-11-05T18:36:37Z",
+   "text": "Since August, a team within METR has worked with internal Anthropic information to assess whether AI itself is accelerating AI development. We are now publishing a report summarizing the results of this risk assessment.",
+   "author_name": "METR",
+   "likes": 5184,
+   "story": "People are concerned about the METR report: \"I've always had substantially longer timelines than my friends at Anthropic\" ... \"I now think that we are more tha…"
+  },
+  {
+   "title": "Open call for guest investigators in the life sciences",
+   "url": "https://www.anthropic.com/news/open-call-guest-investigators-life-sciences",
+   "source": "Anthropic",
+   "published_at": "2026-11-06T10:22:49Z",
+   "text": "Today, we’re inviting members of the life sciences community to apply to work with us on special projects."
+  },
+  {
+   "title": "Public records appear to show SpaceX building a “Starbase supercomputer” in TX, but Gina Hinojosa's…",
+   "url": "https://www.theinformation.com/articles/blue-wave-may-stop-musks-texas-data-center-ambitions",
+   "source": "Ann Davis Vaughan / The Inf…",
+   "published_at": "2026-11-07T19:41:07Z",
+   "text": "Public records appear to show SpaceX building a “Starbase supercomputer” in TX, but Gina Hinojosa's election as governor may delay some of the data center plans. Elon Musk moved early to build AI data centers in Tennessee and Mississippi and reaped the rewards.",
+   "via": "Techmeme"
+  },
+  {
+   "title": "i went to bed and asked claude to paint an autumn tree overnight. at around 4am, it realised that i…",
+   "url": "https://x.com/dhvanil/status/2118756173721575767",
+   "source": "𝕏 @dhvanil",
+   "published_at": "2026-11-06T17:23:31Z",
+   "text": "i went to bed and asked claude to paint an autumn tree overnight. at around 4am, it realised that it didn't have some shades -- so it stopped and titrated its own paint: diluting red, sienna and madder step by step on a second palette, then measuring each pocket from a photo.…",
+   "author_name": "nil",
+   "likes": 5536,
+   "story": "Claude paints a watercolor tree with a robotic arm in 4.5 hours, and mixes its own custom colors along the way"
+  },
+  {
+   "title": "Claude Code sends your email address to websites",
+   "url": "https://github.com/anthropics/claude-code/issues/107757",
+   "source": "Hacker News",
+   "published_at": "2026-11-05T22:17:15Z",
+   "text": "1589 points and 514 comments on Hacker News.",
+   "points": 1589,
+   "discussion": "https://news.ycombinator.com/item?id=50385272"
+  },
+  {
+   "title": ".@CoreWeave writes to @GinaHinojosaTX pledging to work with her and TX communities on responsible d…",
+   "url": "https://x.com/ashleyrgold/status/2119131357028995562",
+   "source": "𝕏 @ashleyrgold",
+   "published_at": "2026-11-07T18:14:21Z",
+   "text": ".@CoreWeave writes to @GinaHinojosaTX pledging to work with her and TX communities on responsible data center development",
+   "author_name": "Ashley Gold",
+   "likes": 78,
+   "story": "Democratic wins could slow AI investment and safeguard the US economy against a downturn by pacing it over time, as Deutsche Bank sees “shaky” projects killed"
+  },
+  {
+   "title": "Censys finds 800+ publicly exposed copies of ARTEX, a Chinese-made, AI-powered, open-source penetra…",
+   "url": "https://techcrunch.com/2026/11/06/hundreds-of-artex-ai-hacking-tools-found-publicly-exposed-to-the-web/",
+   "source": "Zack Whittaker / TechCrunch",
+   "published_at": "2026-11-07T07:01:53Z",
+   "text": "Censys finds 800+ publicly exposed copies of ARTEX, a Chinese-made, AI-powered, open-source penetration testing tool linked to several cyberattacks since July. Security researchers have discovered hundreds of copies of a Chinese-made AI hacking tool publicly exposed to the internet for anyone to access …",
+   "via": "Techmeme"
+  },
+  {
    "title": "The Components of Agent Memory",
    "url": "https://www.anthropic.com/research/components-of-agent-memory",
    "source": "Hacker News",
    "published_at": "2026-11-07T06:39:04Z",
-   "text": "136 points and 69 comments on Hacker News.",
-   "points": 136,
+   "text": "139 points and 71 comments on Hacker News.",
+   "points": 139,
    "discussion": "https://news.ycombinator.com/item?id=50402212"
   },
   {
@@ -121,14 +131,6 @@
    "source": "Anthropic",
    "published_at": "2026-11-05T15:44:46Z",
    "text": "An independent body of five trustees with authority to elect and remove Anthropic board members, balancing stockholder and public interests."
-  },
-  {
-   "title": "Chicago-based data analytics company Ocient raised a $100M Series C co-led by Boka Capital and OCA…",
-   "url": "https://siliconangle.com/2026/11/05/ocient-raises-100-million-as-agentic-ai-drives-growth-in-large-scale-analytics/",
-   "source": "Paul Gillin / SiliconANGLE",
-   "published_at": "2026-11-07T15:30:56Z",
-   "text": "Chicago-based data analytics company Ocient raised a $100M Series C co-led by Boka Capital and OCA Ventures to grow its agentic AI analytics business. Ocient Inc., the maker of a speedy data analytics platform, today said it has raised $100 million in a Series C funding to expand …",
-   "via": "Techmeme"
   }
  ],
  "sources": "curated, Techmeme, X (found via Techmeme, Reddit, the Internet Archive), Claude Code releases, Anthropic, Hacker News, Simon Willison"
