@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-07T02:35:38Z",
+ "generated_at": "2026-11-07T03:07:52Z",
  "items": [
   {
    "title": "Sources: OpenAI has closed on new funding of roughly $11B at a $1.25T valuation; the round could in…",
@@ -11,14 +11,14 @@
    "via": "Techmeme"
   },
   {
-   "title": "Introducing Arete-27B: Qwen3.8-27B, post-trained to reinforce Western values. Chinese open models a…",
-   "url": "https://x.com/NousResearch/status/2118822925445050435",
-   "source": "𝕏 @NousResearch",
-   "published_at": "2026-11-06T21:48:45Z",
-   "text": "Introducing Arete-27B: Qwen3.8-27B, post-trained to reinforce Western values. Chinese open models are currently the strongest available, but they ship with state-aligned behavior in the weights. We built an 803-prompt eval across seven value categories, including freedom of…",
-   "author_name": "Nous Research",
-   "likes": 6773,
-   "story": "NousResearch/Arete-27B · Hugging Face (Qwen finetune)"
+   "title": "Introducing Personal Finance in Claude, in beta in the US. Connect the accounts you choose, and Cla…",
+   "url": "https://x.com/claudeai/status/2118403114890137895",
+   "source": "𝕏 @claudeai",
+   "published_at": "2026-11-05T18:00:35Z",
+   "text": "Introducing Personal Finance in Claude, in beta in the US. Connect the accounts you choose, and Claude answers your money questions in everyday language, from your own balances and transactions. Access is read-only, and Claude can't move, manage, or invest your money.",
+   "author_name": "Claude",
+   "likes": 43399,
+   "story": "Anthropic launches Personal Finance in Claude, letting users connect bank and credit card accounts via Plaid with read-only access to analyze spending trends"
   },
   {
    "title": "Claude Code 2.1.319 released",
@@ -28,14 +28,14 @@
    "text": "Changed auto mode with telemetry or feature flags off, including behind LLM gateways: calls the server can't check are asked about or denied, with no fallback to the built-in classifier; set CLAUDE_C… · Changed auto mode behind an LLM gateway: CLAUDE_CODE_AUTO_MODE_SERVER=1 turns on the server-side check even with CLAUDE_CODE_DISABLE_EXPERIMENTAL_BETAS set; if managed settings set the latter, they m… · Added support for MCP tasks in the terminal: when an MCP server runs a tool call as a task, Claude Code moves it to the background right away and tells Claude the result when it finishes · Adde…"
   },
   {
-   "title": "Introducing Personal Finance in Claude, in beta in the US. Connect the accounts you choose, and Cla…",
-   "url": "https://x.com/claudeai/status/2118403114890137895",
-   "source": "𝕏 @claudeai",
-   "published_at": "2026-11-05T18:00:35Z",
-   "text": "Introducing Personal Finance in Claude, in beta in the US. Connect the accounts you choose, and Claude answers your money questions in everyday language, from your own balances and transactions. Access is read-only, and Claude can't move, manage, or invest your money.",
-   "author_name": "Claude",
-   "likes": 43289,
-   "story": "Anthropic launches Personal Finance in Claude, letting users connect bank and credit card accounts via Plaid with read-only access to analyze spending trends"
+   "title": "Introducing Arete-27B: Qwen3.8-27B, post-trained to reinforce Western values. Chinese open models a…",
+   "url": "https://x.com/NousResearch/status/2118822925445050435",
+   "source": "𝕏 @NousResearch",
+   "published_at": "2026-11-06T21:48:45Z",
+   "text": "Introducing Arete-27B: Qwen3.8-27B, post-trained to reinforce Western values. Chinese open models are currently the strongest available, but they ship with state-aligned behavior in the weights. We built an 803-prompt eval across seven value categories, including freedom of…",
+   "author_name": "Nous Research",
+   "likes": 7012,
+   "story": "NousResearch/Arete-27B · Hugging Face (Qwen finetune)"
   },
   {
    "title": "Sources: Anthropic is continuing with plans to list before the Thanksgiving holiday this month, exp…",
@@ -50,8 +50,8 @@
    "url": "https://www.planned-obsolescence.org/p/ai-is-dramatically-accelerating-ai",
    "source": "Hacker News",
    "published_at": "2026-11-06T20:27:23Z",
-   "text": "212 points and 160 comments on Hacker News.",
-   "points": 212,
+   "text": "218 points and 166 comments on Hacker News.",
+   "points": 218,
    "discussion": "https://news.ycombinator.com/item?id=50397994"
   },
   {
@@ -61,7 +61,7 @@
    "published_at": "2026-11-06T18:45:11Z",
    "text": "1/ starting today, muse and meta ai will run on new specialized models trained using muse wonder. ACTIVE MEMORY: models can reason across time and better remember what matters ACTIVE FOCUS: enabling muse to continue working towards a goal even when met with roadblocks",
    "author_name": "Alexandr Wang",
-   "likes": 1800,
+   "likes": 1841,
    "story": "Meta introduces specialized versions of its existing models, trained using Muse Wonder, bringing Active Memory and Active Focus to all Muse and Meta AI users"
   },
   {
@@ -86,7 +86,7 @@
    "published_at": "2026-11-06T17:23:31Z",
    "text": "i went to bed and asked claude to paint an autumn tree overnight. at around 4am, it realised that it didn't have some shades -- so it stopped and titrated its own paint: diluting red, sienna and madder step by step on a second palette, then measuring each pocket from a photo.…",
    "author_name": "nil",
-   "likes": 2472,
+   "likes": 2553,
    "story": "Claude paints a watercolor tree with a robotic arm in 4.5 hours, and mixes its own custom colors along the way"
   },
   {
@@ -94,8 +94,8 @@
    "url": "https://github.com/anthropics/claude-code/issues/107757",
    "source": "Hacker News",
    "published_at": "2026-11-05T22:17:15Z",
-   "text": "1554 points and 493 comments on Hacker News.",
-   "points": 1554,
+   "text": "1557 points and 495 comments on Hacker News.",
+   "points": 1557,
    "discussion": "https://news.ycombinator.com/item?id=50385272"
   },
   {
@@ -111,8 +111,8 @@
    "url": "https://community.openai.com/t/security-follow-up-tool-call-silently-routed-to-a-different-connector/1413053",
    "source": "Hacker News",
    "published_at": "2026-11-06T22:50:43Z",
-   "text": "76 points and 33 comments on Hacker News.",
-   "points": 76,
+   "text": "82 points and 35 comments on Hacker News.",
+   "points": 82,
    "discussion": "https://news.ycombinator.com/item?id=50399569"
   },
   {
