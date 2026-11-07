@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-07T06:18:47Z",
+ "generated_at": "2026-11-07T06:50:07Z",
  "items": [
   {
    "title": "Sources: OpenAI has closed on new funding of roughly $11B at a $1.25T valuation; the round could in…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-05T18:00:35Z",
    "text": "Introducing Personal Finance in Claude, in beta in the US. Connect the accounts you choose, and Claude answers your money questions in everyday language, from your own balances and transactions. Access is read-only, and Claude can't move, manage, or invest your money.",
    "author_name": "Claude",
-   "likes": 43833,
+   "likes": 43903,
    "story": "Anthropic launches Personal Finance in Claude, letting users connect bank and credit card accounts via Plaid with read-only access to analyze spending trends"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-11-06T21:48:45Z",
    "text": "Introducing Arete-27B: Qwen3.8-27B, post-trained to reinforce Western values. Chinese open models are currently the strongest available, but they ship with state-aligned behavior in the weights. We built an 803-prompt eval across seven value categories, including freedom of…",
    "author_name": "Nous Research",
-   "likes": 8387,
+   "likes": 8565,
    "story": "NousResearch/Arete-27B · Hugging Face (Qwen finetune)"
   },
   {
@@ -50,8 +50,8 @@
    "url": "https://www.planned-obsolescence.org/p/ai-is-dramatically-accelerating-ai",
    "source": "Hacker News",
    "published_at": "2026-11-06T20:27:23Z",
-   "text": "255 points and 206 comments on Hacker News.",
-   "points": 255,
+   "text": "265 points and 209 comments on Hacker News.",
+   "points": 265,
    "discussion": "https://news.ycombinator.com/item?id=50397994"
   },
   {
@@ -61,7 +61,7 @@
    "published_at": "2026-11-06T18:45:11Z",
    "text": "1/ starting today, muse and meta ai will run on new specialized models trained using muse wonder. ACTIVE MEMORY: models can reason across time and better remember what matters ACTIVE FOCUS: enabling muse to continue working towards a goal even when met with roadblocks",
    "author_name": "Alexandr Wang",
-   "likes": 2085,
+   "likes": 2103,
    "story": "Meta introduces specialized versions of its existing models, trained using Muse Wonder, bringing Active Memory and Active Focus to all Muse and Meta AI users"
   },
   {
@@ -86,7 +86,7 @@
    "published_at": "2026-11-06T17:23:31Z",
    "text": "i went to bed and asked claude to paint an autumn tree overnight. at around 4am, it realised that it didn't have some shades -- so it stopped and titrated its own paint: diluting red, sienna and madder step by step on a second palette, then measuring each pocket from a photo.…",
    "author_name": "nil",
-   "likes": 2996,
+   "likes": 3044,
    "story": "Claude paints a watercolor tree with a robotic arm in 4.5 hours, and mixes its own custom colors along the way"
   },
   {
@@ -111,8 +111,8 @@
    "url": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/",
    "source": "Hacker News",
    "published_at": "2026-11-06T13:35:27Z",
-   "text": "311 points and 225 comments on Hacker News.",
-   "points": 311,
+   "text": "317 points and 227 comments on Hacker News.",
+   "points": 317,
    "discussion": "https://news.ycombinator.com/item?id=50392118"
   },
   {
@@ -123,11 +123,11 @@
    "text": "An independent body of five trustees with authority to elect and remove Anthropic board members, balancing stockholder and public interests."
   },
   {
-   "title": "Beijing-based Sand.ai, an AI startup specializing in video generation, raised a $200M Series A+, br…",
-   "url": "https://www.dealstreetasia.com/stories/sand-ai-enters-unicorn-club-500283/",
-   "source": "Eudora Wang / DealStreetAsia",
-   "published_at": "2026-11-07T05:45:54Z",
-   "text": "Beijing-based Sand.ai, an AI startup specializing in video generation, raised a $200M Series A+, bringing its total funding over the past 10 months to $300M. Sand.ai, a Chinese artificial intelligence (AI) startup specialising in video generation, announced on Thursday the completion …",
+   "title": "Crusoe says Google has bought out its data center site in southeast Wyoming; Crusoe reportedly fail…",
+   "url": "https://www.bloomberg.com/news/articles/2026-11-06/google-takes-over-wyoming-data-center-that-crusoe-had-pitched",
+   "source": "Lynn Doan / Bloomberg",
+   "published_at": "2026-11-06T23:16:08Z",
+   "text": "Crusoe says Google has bought out its data center site in southeast Wyoming; Crusoe reportedly failed to lock in customers including Google for the project. Alphabet Inc.'s Google has bought out Crusoe's data center site in southeast Wyoming, opting to take on the project itself …",
    "via": "Techmeme"
   }
  ],
