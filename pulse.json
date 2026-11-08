@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-08T03:42:59Z",
+ "generated_at": "2026-11-08T04:15:54Z",
  "items": [
   {
    "title": "Investigation: some Chinese companies approved by the US Commerce Department to handle Nvidia's H20…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-06T18:45:11Z",
    "text": "1/ starting today, muse and meta ai will run on new specialized models trained using muse wonder. ACTIVE MEMORY: models can reason across time and better remember what matters ACTIVE FOCUS: enabling muse to continue working towards a goal even when met with roadblocks",
    "author_name": "Alexandr Wang",
-   "likes": 2620,
+   "likes": 2627,
    "story": "Meta introduces specialized versions of its existing models, trained using Muse Wonder, bringing Active Memory and Active Focus to all Muse and Meta AI users"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-11-07T22:15:38Z",
    "text": "is Opus 5.5 nerfed? I just had Gemini 4 Argon analyze 1,400 Claude Code sessions and it found that on November 3, something definitely happened. the model name didn't change, but the way it does reasoning took a sharp turn.",
    "author_name": "Shane Melaugh",
-   "likes": 1024,
+   "likes": 1089,
    "story": "is Opus 5.5 nerfed?"
   },
   {
@@ -50,19 +50,19 @@
    "url": "https://hunch.net/?p=13764006",
    "source": "Hacker News",
    "published_at": "2026-11-07T18:02:17Z",
-   "text": "419 points and 244 comments on Hacker News.",
-   "points": 419,
+   "text": "423 points and 247 comments on Hacker News.",
+   "points": 423,
    "discussion": "https://news.ycombinator.com/item?id=50406563"
   },
   {
-   "title": "i went to bed and asked claude to paint an autumn tree overnight. at around 4am, it realised that i…",
-   "url": "https://x.com/dhvanil/status/2118756173721575767",
-   "source": "𝕏 @dhvanil",
-   "published_at": "2026-11-06T17:23:31Z",
-   "text": "i went to bed and asked claude to paint an autumn tree overnight. at around 4am, it realised that it didn't have some shades -- so it stopped and titrated its own paint: diluting red, sienna and madder step by step on a second palette, then measuring each pocket from a photo.…",
-   "author_name": "nil",
-   "likes": 6222,
-   "story": "Claude paints a watercolor tree with a robotic arm in 4.5 hours, and mixes its own custom colors along the way"
+   "title": "Nice DeepSWE score! Does it survive a lowercase filename? Introducing MaxxBench: 89 DeepSWE tasks w…",
+   "url": "https://x.com/loresjpg/status/2118880329490637049",
+   "source": "𝕏 @loresjpg",
+   "published_at": "2026-11-07T01:36:52Z",
+   "text": "Nice DeepSWE score! Does it survive a lowercase filename? Introducing MaxxBench: 89 DeepSWE tasks with small changes to the instructions or starting code. Same engineering problem, slightly different requirement. Models clustered around 74% on DeepSWE end up 23 pp apart. Good…",
+   "author_name": "Justin Lo",
+   "likes": 4121,
+   "story": "Saw this benchmark where small changes to coding tasks made a big difference"
   },
   {
    "title": "Open call for guest investigators in the life sciences",
@@ -80,33 +80,23 @@
    "via": "Techmeme"
   },
   {
-   "title": "Nice DeepSWE score! Does it survive a lowercase filename? Introducing MaxxBench: 89 DeepSWE tasks w…",
-   "url": "https://x.com/loresjpg/status/2118880329490637049",
-   "source": "𝕏 @loresjpg",
-   "published_at": "2026-11-07T01:36:52Z",
-   "text": "Nice DeepSWE score! Does it survive a lowercase filename? Introducing MaxxBench: 89 DeepSWE tasks with small changes to the instructions or starting code. Same engineering problem, slightly different requirement. Models clustered around 74% on DeepSWE end up 23 pp apart. Good…",
-   "author_name": "Justin Lo",
-   "likes": 4070,
-   "story": "Saw this benchmark where small changes to coding tasks made a big difference"
-  },
-  {
-   "title": "Claude Code's \"Don't Ask Again\" exposes passwords in 1,122 public GitHub files",
-   "url": "https://apiiro.com/blog/coding-agents-leaking-secrets-github-dont-ask-again",
-   "source": "Hacker News",
-   "published_at": "2026-11-07T20:45:32Z",
-   "text": "227 points and 149 comments on Hacker News.",
-   "points": 227,
-   "discussion": "https://news.ycombinator.com/item?id=50407882"
-  },
-  {
    "title": ".@CoreWeave writes to @GinaHinojosaTX pledging to work with her and TX communities on responsible d…",
    "url": "https://x.com/ashleyrgold/status/2119131357028995562",
    "source": "𝕏 @ashleyrgold",
    "published_at": "2026-11-07T18:14:21Z",
    "text": ".@CoreWeave writes to @GinaHinojosaTX pledging to work with her and TX communities on responsible data center development",
    "author_name": "Ashley Gold",
-   "likes": 360,
+   "likes": 363,
    "story": "Democratic wins could slow AI investment and safeguard the US economy against a downturn by pacing it over time, as Deutsche Bank sees “shaky” projects killed"
+  },
+  {
+   "title": "Claude Code's \"Don't Ask Again\" exposes passwords in 1,122 public GitHub files",
+   "url": "https://apiiro.com/blog/coding-agents-leaking-secrets-github-dont-ask-again",
+   "source": "Hacker News",
+   "published_at": "2026-11-07T20:45:32Z",
+   "text": "249 points and 161 comments on Hacker News.",
+   "points": 249,
+   "discussion": "https://news.ycombinator.com/item?id=50407882"
   },
   {
    "title": "Censys finds 800+ publicly exposed copies of ARTEX, a Chinese-made, AI-powered, open-source penetra…",
@@ -131,6 +121,14 @@
    "source": "Anthropic",
    "published_at": "2026-11-05T15:44:46Z",
    "text": "An independent body of five trustees with authority to elect and remove Anthropic board members, balancing stockholder and public interests."
+  },
+  {
+   "title": "Chicago-based data analytics company Ocient raised a $100M Series C co-led by Boka Capital and OCA…",
+   "url": "https://siliconangle.com/2026/11/05/ocient-raises-100-million-as-agentic-ai-drives-growth-in-large-scale-analytics/",
+   "source": "Paul Gillin / SiliconANGLE",
+   "published_at": "2026-11-07T15:30:56Z",
+   "text": "Chicago-based data analytics company Ocient raised a $100M Series C co-led by Boka Capital and OCA Ventures to grow its agentic AI analytics business. Ocient Inc., the maker of a speedy data analytics platform, today said it has raised $100 million in a Series C funding to expand …",
+   "via": "Techmeme"
   }
  ],
  "sources": "curated, Techmeme, X (found via Techmeme, Reddit, the Internet Archive), Claude Code releases, Anthropic, Hacker News, Simon Willison"
