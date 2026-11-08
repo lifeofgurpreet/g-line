@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-08T07:00:33Z",
+ "generated_at": "2026-11-08T07:32:51Z",
  "items": [
   {
    "title": "Investigation: some Chinese companies approved by the US Commerce Department to handle Nvidia's H20…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-06T21:48:45Z",
    "text": "Introducing Arete-27B: Qwen3.8-27B, post-trained to reinforce Western values. Chinese open models are currently the strongest available, but they ship with state-aligned behavior in the weights. We built an 803-prompt eval across seven value categories, including freedom of…",
    "author_name": "Nous Research",
-   "likes": 13378,
+   "likes": 13408,
    "story": "Nous Research unveils Arete-27B, a post-trained Qwen3.8-27B model that reinforces Western values, saying the underlying Chinese model's bias layer is shallow"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-11-06T18:45:11Z",
    "text": "1/ starting today, muse and meta ai will run on new specialized models trained using muse wonder. ACTIVE MEMORY: models can reason across time and better remember what matters ACTIVE FOCUS: enabling muse to continue working towards a goal even when met with roadblocks",
    "author_name": "Alexandr Wang",
-   "likes": 2657,
+   "likes": 2662,
    "story": "Meta introduces specialized versions of its existing models, trained using Muse Wonder, bringing Active Memory and Active Focus to all Muse and Meta AI users"
   },
   {
@@ -50,8 +50,8 @@
    "url": "https://caleb.software/posts/claude-to-pi.html",
    "source": "Hacker News",
    "published_at": "2026-11-08T03:11:48Z",
-   "text": "136 points and 80 comments on Hacker News.",
-   "points": 136,
+   "text": "175 points and 98 comments on Hacker News.",
+   "points": 175,
    "discussion": "https://news.ycombinator.com/item?id=50410107"
   },
   {
@@ -61,7 +61,7 @@
    "published_at": "2026-11-07T22:15:38Z",
    "text": "is Opus 5.5 nerfed? I just had Gemini 4 Argon analyze 1,400 Claude Code sessions and it found that on November 3, something definitely happened. the model name didn't change, but the way it does reasoning took a sharp turn.",
    "author_name": "Shane Melaugh",
-   "likes": 1362,
+   "likes": 1429,
    "story": "is Opus 5.5 nerfed?"
   },
   {
@@ -86,7 +86,7 @@
    "published_at": "2026-11-07T01:36:52Z",
    "text": "Nice DeepSWE score! Does it survive a lowercase filename? Introducing MaxxBench: 89 DeepSWE tasks with small changes to the instructions or starting code. Same engineering problem, slightly different requirement. Models clustered around 74% on DeepSWE end up 23 pp apart. Good…",
    "author_name": "Justin Lo",
-   "likes": 4365,
+   "likes": 4403,
    "story": "Saw this benchmark where small changes to coding tasks made a big difference"
   },
   {
@@ -94,8 +94,8 @@
    "url": "https://apiiro.com/blog/coding-agents-leaking-secrets-github-dont-ask-again",
    "source": "Hacker News",
    "published_at": "2026-11-07T20:45:32Z",
-   "text": "319 points and 221 comments on Hacker News.",
-   "points": 319,
+   "text": "334 points and 228 comments on Hacker News.",
+   "points": 334,
    "discussion": "https://news.ycombinator.com/item?id=50407882"
   },
   {
@@ -105,25 +105,15 @@
    "published_at": "2026-11-07T18:14:21Z",
    "text": ".@CoreWeave writes to @GinaHinojosaTX pledging to work with her and TX communities on responsible data center development",
    "author_name": "Ashley Gold",
-   "likes": 380,
+   "likes": 381,
    "story": "Democratic wins could slow AI investment and safeguard the US economy against a downturn by pacing it over time, as Deutsche Bank sees “shaky” projects killed"
   },
   {
-   "title": "Qwen-4-Flash-Early (codename hawk) added to GameFeel Bench! (and audio score was calculated wrong f…",
-   "url": "https://x.com/follistatindev/status/2119220233751671186",
-   "source": "𝕏 @follistatindev",
-   "published_at": "2026-11-08T00:07:31Z",
-   "text": "Qwen-4-Flash-Early (codename hawk) added to GameFeel Bench! (and audio score was calculated wrong for qwen-4-27b, a genuine mistake that was fixed)",
-   "author_name": "follistatin",
-   "likes": 332,
-   "story": "follistatin on X: \"Qwen-4-Flash-Early (codename hawk) added to GameFeel Bench! (and audio score was calculated"
-  },
-  {
-   "title": "Beijing-based GenRobot AI, which develops equipment and software for collecting human demonstration…",
-   "url": "https://technode.com/2026/11/02/robot-training-data-startup-genrobot-ai-raises-100-million-in-series-a-funding/",
-   "source": "TechNode",
-   "published_at": "2026-11-08T06:06:01Z",
-   "text": "Beijing-based GenRobot AI, which develops equipment and software for collecting human demonstrations that can be used to train robots, raised a $100M Series A+. GenRobot AI, a Beijing-based company providing data infrastructure for robot development, has completed a $100 million Series A+ funding round.",
+   "title": "Major environmental groups are embracing AI to analyze climate data, track forest fires, and more,…",
+   "url": "https://www.reuters.com/sustainability/cop/environmental-groups-embrace-ai-even-they-warn-data-center-impacts-2026-11-07/",
+   "source": "Valerie Volcovici / Reuters",
+   "published_at": "2026-11-08T07:02:14Z",
+   "text": "Major environmental groups are embracing AI to analyze climate data, track forest fires, and more, even as they warn of the environmental impact of data centers. Environmental groups worldwide are using artificial intelligence to analyze climate data, track forest fires and count endangered wildlife …",
    "via": "Techmeme"
   },
   {
@@ -131,9 +121,16 @@
    "url": "https://hunch.net/?p=13764006",
    "source": "Hacker News",
    "published_at": "2026-11-07T18:02:17Z",
-   "text": "438 points and 260 comments on Hacker News.",
-   "points": 438,
+   "text": "439 points and 264 comments on Hacker News.",
+   "points": 439,
    "discussion": "https://news.ycombinator.com/item?id=50406563"
+  },
+  {
+   "title": "The Long-Term Benefit Trust",
+   "url": "https://www.anthropic.com/news/the-long-term-benefit-trust",
+   "source": "Anthropic",
+   "published_at": "2026-11-05T15:44:46Z",
+   "text": "An independent body of five trustees with authority to elect and remove Anthropic board members, balancing stockholder and public interests."
   }
  ],
  "sources": "curated, Techmeme, X (found via Techmeme, Reddit, the Internet Archive), Claude Code releases, Anthropic, Hacker News, Simon Willison"
