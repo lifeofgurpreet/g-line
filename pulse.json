@@ -1,13 +1,13 @@
 {
  "schema": 1,
- "generated_at": "2026-11-08T15:06:02Z",
+ "generated_at": "2026-11-08T15:38:22Z",
  "items": [
   {
-   "title": "How a small, wealthy AI-safety network that organized in Signal chats grew into a coalition that be…",
-   "url": "https://www.politico.com/news/magazine/2026/11/06/ai-big-tech-2026-midterms-anthropic-openai-01152312",
-   "source": "Politico",
-   "published_at": "2026-11-08T02:46:21Z",
-   "text": "How a small, wealthy AI-safety network that organized in Signal chats grew into a coalition that beat the $100M super PAC Leading the Future in the midterms. For years, the policy debate over artificial intelligence belonged to those who counted progress in decades.",
+   "title": "Sources: Anthropic bought commitments for 1.7GW of gas-fired generators from equipment supplier One…",
+   "url": "https://www.ft.com/content/41bf5c6a-9735-4f1a-a8e3-2bcccad58ba0",
+   "source": "Martha Muir / Financial Tim…",
+   "published_at": "2026-11-08T15:05:53Z",
+   "text": "Sources: Anthropic bought commitments for 1.7GW of gas-fired generators from equipment supplier OnePWR for $3.4B, the largest known such purchase by an AI lab. AI lab bypasses traditional suppliers to secure scarce equipment as demand for energy surges — Anthropic has struck a massive deal …",
    "via": "Techmeme"
   },
   {
@@ -17,7 +17,7 @@
    "published_at": "2026-11-06T21:48:45Z",
    "text": "Introducing Arete-27B: Qwen3.8-27B, post-trained to reinforce Western values. Chinese open models are currently the strongest available, but they ship with state-aligned behavior in the weights. We built an 803-prompt eval across seven value categories, including freedom of…",
    "author_name": "Nous Research",
-   "likes": 14028,
+   "likes": 14070,
    "story": "Nous Research unveils Arete-27B, a post-trained Qwen3.8-27B model that reinforces Western values, saying the underlying Chinese model's bias layer is shallow"
   },
   {
@@ -34,15 +34,15 @@
    "published_at": "2026-11-07T22:15:38Z",
    "text": "is Opus 5.5 nerfed? I just had Gemini 4 Argon analyze 1,400 Claude Code sessions and it found that on November 3, something definitely happened. the model name didn't change, but the way it does reasoning took a sharp turn.",
    "author_name": "Shane Melaugh",
-   "likes": 2053,
+   "likes": 2081,
    "story": "is Opus 5.5 nerfed?"
   },
   {
-   "title": "Investigation: some Chinese companies approved by the US Commerce Department to handle Nvidia's H20…",
-   "url": "https://www.nytimes.com/2026/11/07/business/economy/nvidia-chips-chinese-firms.html?unlocked_article_code=1.OlE.MZ9x.zeop-X6IZe5B&smid=nytcore-ios-share",
-   "source": "New York Times",
-   "published_at": "2026-11-07T14:31:00Z",
-   "text": "Investigation: some Chinese companies approved by the US Commerce Department to handle Nvidia's H200 chips have empty offices and ties to firms under sanctions. The Commerce Department has approved dozens of Chinese companies to handle Nvidia's H200 chips, some of which have ties to firms under sanctions over national security.",
+   "title": "How a small, wealthy AI-safety network that organized in Signal chats grew into a coalition that be…",
+   "url": "https://www.politico.com/news/magazine/2026/11/06/ai-big-tech-2026-midterms-anthropic-openai-01152312",
+   "source": "Politico",
+   "published_at": "2026-11-08T02:46:21Z",
+   "text": "How a small, wealthy AI-safety network that organized in Signal chats grew into a coalition that beat the $100M super PAC Leading the Future in the midterms. For years, the policy debate over artificial intelligence belonged to those who counted progress in decades.",
    "via": "Techmeme"
   },
   {
@@ -50,8 +50,8 @@
    "url": "https://caleb.software/posts/claude-to-pi.html",
    "source": "Hacker News",
    "published_at": "2026-11-08T03:11:48Z",
-   "text": "474 points and 314 comments on Hacker News.",
-   "points": 474,
+   "text": "497 points and 326 comments on Hacker News.",
+   "points": 497,
    "discussion": "https://news.ycombinator.com/item?id=50410107"
   },
   {
@@ -61,7 +61,7 @@
    "published_at": "2026-11-07T18:14:21Z",
    "text": ".@CoreWeave writes to @GinaHinojosaTX pledging to work with her and TX communities on responsible data center development",
    "author_name": "Ashley Gold",
-   "likes": 404,
+   "likes": 406,
    "story": "Democratic wins could slow AI investment and safeguard the US economy against a downturn by pacing it over time, as Deutsche Bank sees “shaky” projects killed"
   },
   {
@@ -84,16 +84,16 @@
    "url": "https://github.com/synchopate/llama-modchip",
    "source": "Hacker News",
    "published_at": "2026-11-08T10:22:04Z",
-   "text": "96 points and 31 comments on Hacker News.",
-   "points": 96,
+   "text": "129 points and 39 comments on Hacker News.",
+   "points": 129,
    "discussion": "https://news.ycombinator.com/item?id=50411961"
   },
   {
-   "title": "Inside Inner Mongolia, China's fastest-growing AI data center region, where construction is acceler…",
-   "url": "https://newsletter.semianalysis.com/p/we-visited-chinas-stargate-in-inner",
-   "source": "SemiAnalysis",
-   "published_at": "2026-11-08T11:02:32Z",
-   "text": "Inside Inner Mongolia, China's fastest-growing AI data center region, where construction is accelerating with low building cost and no public backlash. A wind-powered 800MW campus, 120MW built within a year, a 5MW SST-native 800V DC pilot and a cooling design without central chillers",
+   "title": "Investigation: some Chinese companies approved by the US Commerce Department to handle Nvidia's H20…",
+   "url": "https://www.nytimes.com/2026/11/07/business/economy/nvidia-chips-chinese-firms.html?unlocked_article_code=1.OlE.MZ9x.zeop-X6IZe5B&smid=nytcore-ios-share",
+   "source": "New York Times",
+   "published_at": "2026-11-07T14:31:00Z",
+   "text": "Investigation: some Chinese companies approved by the US Commerce Department to handle Nvidia's H200 chips have empty offices and ties to firms under sanctions",
    "via": "Techmeme"
   },
   {
@@ -101,8 +101,8 @@
    "url": "https://apiiro.com/blog/coding-agents-leaking-secrets-github-dont-ask-again",
    "source": "Hacker News",
    "published_at": "2026-11-07T20:45:32Z",
-   "text": "471 points and 333 comments on Hacker News.",
-   "points": 471,
+   "text": "484 points and 348 comments on Hacker News.",
+   "points": 484,
    "discussion": "https://news.ycombinator.com/item?id=50407882"
   },
   {
@@ -113,11 +113,11 @@
    "text": "An independent body of five trustees with authority to elect and remove Anthropic board members, balancing stockholder and public interests."
   },
   {
-   "title": "Beijing-based GenRobot AI, which develops equipment and software for collecting human demonstration…",
-   "url": "https://technode.com/2026/11/02/robot-training-data-startup-genrobot-ai-raises-100-million-in-series-a-funding/",
-   "source": "TechNode",
-   "published_at": "2026-11-08T06:06:01Z",
-   "text": "Beijing-based GenRobot AI, which develops equipment and software for collecting human demonstrations that can be used to train robots, raised a $100M Series A+. GenRobot AI, a Beijing-based company providing data infrastructure for robot development, has completed a $100 million Series A+ funding round.",
+   "title": "Inside Inner Mongolia, China's fastest-growing AI data center region, where construction is acceler…",
+   "url": "https://newsletter.semianalysis.com/p/we-visited-chinas-stargate-in-inner",
+   "source": "SemiAnalysis",
+   "published_at": "2026-11-08T11:02:32Z",
+   "text": "Inside Inner Mongolia, China's fastest-growing AI data center region, where construction is accelerating with low building cost and no public backlash. A wind-powered 800MW campus, 120MW built within a year, a 5MW SST-native 800V DC pilot and a cooling design without central chillers",
    "via": "Techmeme"
   },
   {
@@ -125,8 +125,8 @@
    "url": "https://www.lorekit.io/blog/open-agent-memory-format",
    "source": "Hacker News",
    "published_at": "2026-11-08T08:40:23Z",
-   "text": "92 points and 75 comments on Hacker News.",
-   "points": 92,
+   "text": "100 points and 77 comments on Hacker News.",
+   "points": 100,
    "discussion": "https://news.ycombinator.com/item?id=50411467"
   }
  ],
