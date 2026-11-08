@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-08T09:09:25Z",
+ "generated_at": "2026-11-08T09:41:53Z",
  "items": [
   {
    "title": "Investigation: some Chinese companies approved by the US Commerce Department to handle Nvidia's H20…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-06T21:48:45Z",
    "text": "Introducing Arete-27B: Qwen3.8-27B, post-trained to reinforce Western values. Chinese open models are currently the strongest available, but they ship with state-aligned behavior in the weights. We built an 803-prompt eval across seven value categories, including freedom of…",
    "author_name": "Nous Research",
-   "likes": 13544,
+   "likes": 13586,
    "story": "Nous Research unveils Arete-27B, a post-trained Qwen3.8-27B model that reinforces Western values, saying the underlying Chinese model's bias layer is shallow"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-11-07T22:15:38Z",
    "text": "is Opus 5.5 nerfed? I just had Gemini 4 Argon analyze 1,400 Claude Code sessions and it found that on November 3, something definitely happened. the model name didn't change, but the way it does reasoning took a sharp turn.",
    "author_name": "Shane Melaugh",
-   "likes": 1600,
+   "likes": 1646,
    "story": "is Opus 5.5 nerfed?"
   },
   {
@@ -50,8 +50,8 @@
    "url": "https://caleb.software/posts/claude-to-pi.html",
    "source": "Hacker News",
    "published_at": "2026-11-08T03:11:48Z",
-   "text": "259 points and 147 comments on Hacker News.",
-   "points": 259,
+   "text": "283 points and 166 comments on Hacker News.",
+   "points": 283,
    "discussion": "https://news.ycombinator.com/item?id=50410107"
   },
   {
@@ -61,7 +61,7 @@
    "published_at": "2026-11-07T01:36:52Z",
    "text": "Nice DeepSWE score! Does it survive a lowercase filename? Introducing MaxxBench: 89 DeepSWE tasks with small changes to the instructions or starting code. Same engineering problem, slightly different requirement. Models clustered around 74% on DeepSWE end up 23 pp apart. Good…",
    "author_name": "Justin Lo",
-   "likes": 4527,
+   "likes": 4554,
    "story": "Saw this benchmark where small changes to coding tasks made a big difference"
   },
   {
@@ -72,11 +72,11 @@
    "text": "Today, we’re inviting members of the life sciences community to apply to work with us on special projects."
   },
   {
-   "title": "Public records appear to show SpaceX building a “Starbase supercomputer” in TX, but Gina Hinojosa's…",
-   "url": "https://www.theinformation.com/articles/blue-wave-may-stop-musks-texas-data-center-ambitions",
-   "source": "Ann Davis Vaughan / The Inf…",
-   "published_at": "2026-11-07T19:41:07Z",
-   "text": "Public records appear to show SpaceX building a “Starbase supercomputer” in TX, but Gina Hinojosa's election as governor may delay some of the data center plans. Elon Musk moved early to build AI data centers in Tennessee and Mississippi and reaped the rewards.",
+   "title": "Major environmental groups are embracing AI to analyze climate data, track forest fires, and more,…",
+   "url": "https://www.reuters.com/sustainability/cop/environmental-groups-embrace-ai-even-they-warn-data-center-impacts-2026-11-07/",
+   "source": "Valerie Volcovici / Reuters",
+   "published_at": "2026-11-08T07:02:14Z",
+   "text": "Major environmental groups are embracing AI to analyze climate data, track forest fires, and more, even as they warn of the environmental impact of data centers. Environmental groups worldwide are using artificial intelligence to analyze climate data, track forest fires and count endangered wildlife …",
    "via": "Techmeme"
   },
   {
@@ -86,7 +86,7 @@
    "published_at": "2026-11-07T18:14:21Z",
    "text": ".@CoreWeave writes to @GinaHinojosaTX pledging to work with her and TX communities on responsible data center development",
    "author_name": "Ashley Gold",
-   "likes": 384,
+   "likes": 386,
    "story": "Democratic wins could slow AI investment and safeguard the US economy against a downturn by pacing it over time, as Deutsche Bank sees “shaky” projects killed"
   },
   {
@@ -94,16 +94,16 @@
    "url": "https://apiiro.com/blog/coding-agents-leaking-secrets-github-dont-ask-again",
    "source": "Hacker News",
    "published_at": "2026-11-07T20:45:32Z",
-   "text": "377 points and 260 comments on Hacker News.",
-   "points": 377,
+   "text": "383 points and 267 comments on Hacker News.",
+   "points": 383,
    "discussion": "https://news.ycombinator.com/item?id=50407882"
   },
   {
-   "title": "Exponential Time Hypothesis co-proposer Russell Impagliazzo calls OpenAI's disproof “shocking news”…",
-   "url": "https://www.nytimes.com/2026/11/06/science/ai-exponential-time-hypothesis.html?unlocked_article_code=1.OlE.47kX.eivz6u8UMHXN&smid=url-share",
-   "source": "Cade Metz / New York Times",
-   "published_at": "2026-11-07T17:15:58Z",
-   "text": "Exponential Time Hypothesis co-proposer Russell Impagliazzo calls OpenAI's disproof “shocking news”; it could one day speed up chip design and break encryption. A longstanding hypothesis held that some problems would always be hard for computers to solve quickly.",
+   "title": "Public records appear to show SpaceX building a “Starbase supercomputer” in TX, but Gina Hinojosa's…",
+   "url": "https://www.theinformation.com/articles/blue-wave-may-stop-musks-texas-data-center-ambitions",
+   "source": "Ann Davis Vaughan / The Inf…",
+   "published_at": "2026-11-07T19:41:07Z",
+   "text": "Public records appear to show SpaceX building a “Starbase supercomputer” in TX, but Gina Hinojosa's election as governor may delay some of the data center plans. Elon Musk moved early to build AI data centers in Tennessee and Mississippi and reaped the rewards.",
    "via": "Techmeme"
   },
   {
@@ -111,8 +111,8 @@
    "url": "https://hunch.net/?p=13764006",
    "source": "Hacker News",
    "published_at": "2026-11-07T18:02:17Z",
-   "text": "453 points and 270 comments on Hacker News.",
-   "points": 453,
+   "text": "454 points and 272 comments on Hacker News.",
+   "points": 454,
    "discussion": "https://news.ycombinator.com/item?id=50406563"
   },
   {
@@ -123,11 +123,11 @@
    "text": "An independent body of five trustees with authority to elect and remove Anthropic board members, balancing stockholder and public interests."
   },
   {
-   "title": "Beijing-based GenRobot AI, which develops equipment and software for collecting human demonstration…",
-   "url": "https://technode.com/2026/11/02/robot-training-data-startup-genrobot-ai-raises-100-million-in-series-a-funding/",
-   "source": "TechNode",
-   "published_at": "2026-11-08T06:06:01Z",
-   "text": "Beijing-based GenRobot AI, which develops equipment and software for collecting human demonstrations that can be used to train robots, raised a $100M Series A+. GenRobot AI, a Beijing-based company providing data infrastructure for robot development, has completed a $100 million Series A+ funding round.",
+   "title": "Exponential Time Hypothesis co-proposer Russell Impagliazzo calls OpenAI's disproof “shocking news”…",
+   "url": "https://www.nytimes.com/2026/11/06/science/ai-exponential-time-hypothesis.html?unlocked_article_code=1.OlE.47kX.eivz6u8UMHXN&smid=url-share",
+   "source": "Cade Metz / New York Times",
+   "published_at": "2026-11-07T17:15:58Z",
+   "text": "Exponential Time Hypothesis co-proposer Russell Impagliazzo calls OpenAI's disproof “shocking news”; it could one day speed up chip design and break encryption. A longstanding hypothesis held that some problems would always be hard for computers to solve quickly.",
    "via": "Techmeme"
   }
  ],
