@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-08T22:54:33Z",
+ "generated_at": "2026-11-08T23:27:10Z",
  "items": [
   {
    "title": "Nvidia's board launches a probe into whether Jensen Huang was targeted by a foreign spy plot, sayin…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-08T15:17:41Z",
    "text": "NEW in Power On: Apple CEO John Ternus held a closed-door meeting with Craig Federighi in the last few weeks, pushing his software chief to accelerate Apple’s AI road map and move beyond Siri improvements amid concerns about falling behind rivals.",
    "author_name": "Mark Gurman",
-   "likes": 2354,
+   "likes": 2398,
    "story": "Sources: John Ternus wants more urgency in Apple's AI efforts, pushing Craig Federighi to move beyond Siri AI tweaks to agentic and other advanced capabilities",
    "links": [
     "https://www.bloomberg.com/news/newsletters/2026-11-08/apple-explores-turning-siri-ai-into-chatgpt-dots-like-agent-ios-28-shake-up?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc5NDE1MTAxMCwiZXhwIjoxNzk0NzU1ODEwLCJhcnRpY2xlSWQiOiJUTzZWMDFLSUpIOEkwMCIsImJjb25uZWN0SWQiOiJDNEVEQ0FFMUZBMDU0MEJFQTI0QTlGMjExQzFFOTA4MCJ9.v_kF8kPRiaZ6qSDqbDcb8marNAUSibGlv7PG3r-OYKA"
@@ -37,7 +37,7 @@
    "published_at": "2026-11-06T21:48:45Z",
    "text": "Introducing Arete-27B: Qwen3.8-27B, post-trained to reinforce Western values. Chinese open models are currently the strongest available, but they ship with state-aligned behavior in the weights. We built an 803-prompt eval across seven value categories, including freedom of…",
    "author_name": "Nous Research",
-   "likes": 14504,
+   "likes": 14523,
    "story": "Nous Research unveils Arete-27B, a post-trained Qwen3.8-27B model that reinforces Western values, saying the underlying Chinese model's bias layer is shallow"
   },
   {
@@ -49,13 +49,13 @@
    "via": "Techmeme"
   },
   {
-   "title": "Goldman Sachs is pulling Claude Code from its bankers and traders",
-   "url": "https://www.thestateofai.com/news/goldman-sachs-claude-code-traders-bankers",
+   "title": "Nvidia CEO Jensen Huang's letter to staff about affair",
+   "url": "https://www.axios.com/2026/11/08/nvidia-ceo-jensen-huang-affair-email-to-company",
    "source": "Hacker News",
-   "published_at": "2026-11-08T18:16:07Z",
-   "text": "508 points and 309 comments on Hacker News.",
-   "points": 508,
-   "discussion": "https://news.ycombinator.com/item?id=50415628"
+   "published_at": "2026-11-08T22:20:09Z",
+   "text": "176 points and 145 comments on Hacker News.",
+   "points": 176,
+   "discussion": "https://news.ycombinator.com/item?id=50418016"
   },
   {
    "title": "Open call for guest investigators in the life sciences",
@@ -73,13 +73,13 @@
    "via": "Techmeme"
   },
   {
-   "title": "How I Fight AI Brain Fry",
-   "url": "https://sergeykuhne.com/blog/fighting-ai-brain-fry",
+   "title": "Goldman Sachs is pulling Claude Code from its bankers and traders",
+   "url": "https://www.thestateofai.com/news/goldman-sachs-claude-code-traders-bankers",
    "source": "Hacker News",
-   "published_at": "2026-11-08T19:37:42Z",
-   "text": "113 points and 101 comments on Hacker News.",
-   "points": 113,
-   "discussion": "https://news.ycombinator.com/item?id=50416363"
+   "published_at": "2026-11-08T18:16:07Z",
+   "text": "525 points and 320 comments on Hacker News.",
+   "points": 525,
+   "discussion": "https://news.ycombinator.com/item?id=50415628"
   },
   {
    "title": "Major environmental groups are embracing AI to analyze climate data, track forest fires, and more,…",
@@ -90,28 +90,20 @@
    "via": "Techmeme"
   },
   {
-   "title": "Llama-modchip: 284B DeepSeek on 64GB RAM, no GPU",
-   "url": "https://github.com/synchopate/llama-modchip",
+   "title": "How I Fight AI Brain Fry",
+   "url": "https://sergeykuhne.com/blog/fighting-ai-brain-fry",
    "source": "Hacker News",
-   "published_at": "2026-11-08T10:22:04Z",
-   "text": "328 points and 130 comments on Hacker News.",
-   "points": 328,
-   "discussion": "https://news.ycombinator.com/item?id=50411961"
+   "published_at": "2026-11-08T19:37:42Z",
+   "text": "120 points and 107 comments on Hacker News.",
+   "points": 120,
+   "discussion": "https://news.ycombinator.com/item?id=50416363"
   },
   {
-   "title": "DeepSeek says its open-source agent app Harness hit 1.54M DAUs on November 4, less than three month…",
-   "url": "https://www.bloomberg.com/news/articles/2026-11-08/deepseek-s-ai-agent-platform-hits-1-54-million-daily-users",
-   "source": "Saritha Rai / Bloomberg",
-   "published_at": "2026-11-08T20:10:34Z",
-   "text": "DeepSeek says its open-source agent app Harness hit 1.54M DAUs on November 4, less than three months after launch, and uses ~92T tokens a day, or ~60M per user. DeepSeek, the Chinese AI disruptor, released striking adoption numbers for its AI agent infrastructure as it continues …",
-   "via": "Techmeme"
-  },
-  {
-   "title": "Investigation: some Chinese companies approved by the US Commerce Department to handle Nvidia's H20…",
-   "url": "https://www.nytimes.com/2026/11/07/business/economy/nvidia-chips-chinese-firms.html?unlocked_article_code=1.OlE.MZ9x.zeop-X6IZe5B&smid=nytcore-ios-share",
-   "source": "New York Times",
-   "published_at": "2026-11-07T14:31:00Z",
-   "text": "Investigation: some Chinese companies approved by the US Commerce Department to handle Nvidia's H200 chips have empty offices and ties to firms under sanctions",
+   "title": "Sources: officials at the Commerce Department's AI safety center CAISSI were asked to informally re…",
+   "url": "https://apnews.com/article/ai-safety-trump-white-house-d3318eb2cf011df53e9ddb3e03d25f13",
+   "source": "Garance Burke / Associated…",
+   "published_at": "2026-11-08T22:55:37Z",
+   "text": "Sources: officials at the Commerce Department's AI safety center CAISSI were asked to informally report to a White House office, raising independence concerns. With public anxiety growing over mounting reports about out-of-control artificial intelligence agents, the tiny U.S. government division charged …",
    "via": "Techmeme"
   },
   {
@@ -120,6 +112,14 @@
    "source": "Politico",
    "published_at": "2026-11-08T02:46:21Z",
    "text": "How a small, wealthy AI-safety network that organized in Signal chats grew into a coalition that beat the $100M super PAC Leading the Future in the midterms. For years, the policy debate over artificial intelligence belonged to those who counted progress in decades.",
+   "via": "Techmeme"
+  },
+  {
+   "title": "DeepSeek says its open-source agent app Harness hit 1.54M DAUs on November 4, less than three month…",
+   "url": "https://www.bloomberg.com/news/articles/2026-11-08/deepseek-s-ai-agent-platform-hits-1-54-million-daily-users",
+   "source": "Saritha Rai / Bloomberg",
+   "published_at": "2026-11-08T20:10:34Z",
+   "text": "DeepSeek says its open-source agent app Harness hit 1.54M DAUs on November 4, less than three months after launch, and uses ~92T tokens a day, or ~60M per user. DeepSeek, the Chinese AI disruptor, released striking adoption numbers for its AI agent infrastructure as it continues …",
    "via": "Techmeme"
   },
   {
