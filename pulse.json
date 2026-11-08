@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-08T05:54:49Z",
+ "generated_at": "2026-11-08T06:27:14Z",
  "items": [
   {
    "title": "Investigation: some Chinese companies approved by the US Commerce Department to handle Nvidia's H20…",
@@ -11,14 +11,14 @@
    "via": "Techmeme"
   },
   {
-   "title": "1/ starting today, muse and meta ai will run on new specialized models trained using muse wonder. A…",
-   "url": "https://x.com/alexandr_wang/status/2118776727912755478",
-   "source": "𝕏 @alexandr_wang",
-   "published_at": "2026-11-06T18:45:11Z",
-   "text": "1/ starting today, muse and meta ai will run on new specialized models trained using muse wonder. ACTIVE MEMORY: models can reason across time and better remember what matters ACTIVE FOCUS: enabling muse to continue working towards a goal even when met with roadblocks",
-   "author_name": "Alexandr Wang",
-   "likes": 2645,
-   "story": "Meta introduces specialized versions of its existing models, trained using Muse Wonder, bringing Active Memory and Active Focus to all Muse and Meta AI users"
+   "title": "Introducing Arete-27B: Qwen3.8-27B, post-trained to reinforce Western values. Chinese open models a…",
+   "url": "https://x.com/NousResearch/status/2118822925445050435",
+   "source": "𝕏 @NousResearch",
+   "published_at": "2026-11-06T21:48:45Z",
+   "text": "Introducing Arete-27B: Qwen3.8-27B, post-trained to reinforce Western values. Chinese open models are currently the strongest available, but they ship with state-aligned behavior in the weights. We built an 803-prompt eval across seven value categories, including freedom of…",
+   "author_name": "Nous Research",
+   "likes": 13348,
+   "story": "Nous Research unveils Arete-27B, a post-trained Qwen3.8-27B model that reinforces Western values, saying the underlying Chinese model's bias layer is shallow"
   },
   {
    "title": "Claude Code 2.1.319 released",
@@ -28,14 +28,14 @@
    "text": "Changed auto mode with telemetry or feature flags off, including behind LLM gateways: calls the server can't check are asked about or denied, with no fallback to the built-in classifier; set CLAUDE_C… · Changed auto mode behind an LLM gateway: CLAUDE_CODE_AUTO_MODE_SERVER=1 turns on the server-side check even with CLAUDE_CODE_DISABLE_EXPERIMENTAL_BETAS set; if managed settings set the latter, they m… · Added support for MCP tasks in the terminal: when an MCP server runs a tool call as a task, Claude Code moves it to the background right away and tells Claude the result when it finishes · Adde…"
   },
   {
-   "title": "is Opus 5.5 nerfed? I just had Gemini 4 Argon analyze 1,400 Claude Code sessions and it found that…",
-   "url": "https://x.com/shanemelaugh/status/2119192075505893695",
-   "source": "𝕏 @shanemelaugh",
-   "published_at": "2026-11-07T22:15:38Z",
-   "text": "is Opus 5.5 nerfed? I just had Gemini 4 Argon analyze 1,400 Claude Code sessions and it found that on November 3, something definitely happened. the model name didn't change, but the way it does reasoning took a sharp turn.",
-   "author_name": "Shane Melaugh",
-   "likes": 1246,
-   "story": "is Opus 5.5 nerfed?"
+   "title": "1/ starting today, muse and meta ai will run on new specialized models trained using muse wonder. A…",
+   "url": "https://x.com/alexandr_wang/status/2118776727912755478",
+   "source": "𝕏 @alexandr_wang",
+   "published_at": "2026-11-06T18:45:11Z",
+   "text": "1/ starting today, muse and meta ai will run on new specialized models trained using muse wonder. ACTIVE MEMORY: models can reason across time and better remember what matters ACTIVE FOCUS: enabling muse to continue working towards a goal even when met with roadblocks",
+   "author_name": "Alexandr Wang",
+   "likes": 2654,
+   "story": "Meta introduces specialized versions of its existing models, trained using Muse Wonder, bringing Active Memory and Active Focus to all Muse and Meta AI users"
   },
   {
    "title": "How a small, wealthy AI-safety network that organized in Signal chats grew into a coalition that be…",
@@ -50,19 +50,19 @@
    "url": "https://caleb.software/posts/claude-to-pi.html",
    "source": "Hacker News",
    "published_at": "2026-11-08T03:11:48Z",
-   "text": "71 points and 36 comments on Hacker News.",
-   "points": 71,
+   "text": "111 points and 59 comments on Hacker News.",
+   "points": 111,
    "discussion": "https://news.ycombinator.com/item?id=50410107"
   },
   {
-   "title": "Nice DeepSWE score! Does it survive a lowercase filename? Introducing MaxxBench: 89 DeepSWE tasks w…",
-   "url": "https://x.com/loresjpg/status/2118880329490637049",
-   "source": "𝕏 @loresjpg",
-   "published_at": "2026-11-07T01:36:52Z",
-   "text": "Nice DeepSWE score! Does it survive a lowercase filename? Introducing MaxxBench: 89 DeepSWE tasks with small changes to the instructions or starting code. Same engineering problem, slightly different requirement. Models clustered around 74% on DeepSWE end up 23 pp apart. Good…",
-   "author_name": "Justin Lo",
-   "likes": 4279,
-   "story": "Saw this benchmark where small changes to coding tasks made a big difference"
+   "title": "is Opus 5.5 nerfed? I just had Gemini 4 Argon analyze 1,400 Claude Code sessions and it found that…",
+   "url": "https://x.com/shanemelaugh/status/2119192075505893695",
+   "source": "𝕏 @shanemelaugh",
+   "published_at": "2026-11-07T22:15:38Z",
+   "text": "is Opus 5.5 nerfed? I just had Gemini 4 Argon analyze 1,400 Claude Code sessions and it found that on November 3, something definitely happened. the model name didn't change, but the way it does reasoning took a sharp turn.",
+   "author_name": "Shane Melaugh",
+   "likes": 1309,
+   "story": "is Opus 5.5 nerfed?"
   },
   {
    "title": "Open call for guest investigators in the life sciences",
@@ -80,23 +80,43 @@
    "via": "Techmeme"
   },
   {
-   "title": ".@CoreWeave writes to @GinaHinojosaTX pledging to work with her and TX communities on responsible d…",
-   "url": "https://x.com/ashleyrgold/status/2119131357028995562",
-   "source": "𝕏 @ashleyrgold",
-   "published_at": "2026-11-07T18:14:21Z",
-   "text": ".@CoreWeave writes to @GinaHinojosaTX pledging to work with her and TX communities on responsible data center development",
-   "author_name": "Ashley Gold",
-   "likes": 377,
-   "story": "Democratic wins could slow AI investment and safeguard the US economy against a downturn by pacing it over time, as Deutsche Bank sees “shaky” projects killed"
+   "title": "Nice DeepSWE score! Does it survive a lowercase filename? Introducing MaxxBench: 89 DeepSWE tasks w…",
+   "url": "https://x.com/loresjpg/status/2118880329490637049",
+   "source": "𝕏 @loresjpg",
+   "published_at": "2026-11-07T01:36:52Z",
+   "text": "Nice DeepSWE score! Does it survive a lowercase filename? Introducing MaxxBench: 89 DeepSWE tasks with small changes to the instructions or starting code. Same engineering problem, slightly different requirement. Models clustered around 74% on DeepSWE end up 23 pp apart. Good…",
+   "author_name": "Justin Lo",
+   "likes": 4313,
+   "story": "Saw this benchmark where small changes to coding tasks made a big difference"
   },
   {
    "title": "Claude Code's \"Don't Ask Again\" exposes passwords in 1,122 public GitHub files",
    "url": "https://apiiro.com/blog/coding-agents-leaking-secrets-github-dont-ask-again",
    "source": "Hacker News",
    "published_at": "2026-11-07T20:45:32Z",
-   "text": "295 points and 201 comments on Hacker News.",
-   "points": 295,
+   "text": "307 points and 212 comments on Hacker News.",
+   "points": 307,
    "discussion": "https://news.ycombinator.com/item?id=50407882"
+  },
+  {
+   "title": ".@CoreWeave writes to @GinaHinojosaTX pledging to work with her and TX communities on responsible d…",
+   "url": "https://x.com/ashleyrgold/status/2119131357028995562",
+   "source": "𝕏 @ashleyrgold",
+   "published_at": "2026-11-07T18:14:21Z",
+   "text": ".@CoreWeave writes to @GinaHinojosaTX pledging to work with her and TX communities on responsible data center development",
+   "author_name": "Ashley Gold",
+   "likes": 378,
+   "story": "Democratic wins could slow AI investment and safeguard the US economy against a downturn by pacing it over time, as Deutsche Bank sees “shaky” projects killed"
+  },
+  {
+   "title": "Qwen-4-Flash-Early (codename hawk) added to GameFeel Bench! (and audio score was calculated wrong f…",
+   "url": "https://x.com/follistatindev/status/2119220233751671186",
+   "source": "𝕏 @follistatindev",
+   "published_at": "2026-11-08T00:07:31Z",
+   "text": "Qwen-4-Flash-Early (codename hawk) added to GameFeel Bench! (and audio score was calculated wrong for qwen-4-27b, a genuine mistake that was fixed)",
+   "author_name": "follistatin",
+   "likes": 284,
+   "story": "follistatin on X: \"Qwen-4-Flash-Early (codename hawk) added to GameFeel Bench! (and audio score was calculated"
   },
   {
    "title": "Censys finds 800+ publicly exposed copies of ARTEX, a Chinese-made, AI-powered, open-source penetra…",
@@ -111,24 +131,9 @@
    "url": "https://hunch.net/?p=13764006",
    "source": "Hacker News",
    "published_at": "2026-11-07T18:02:17Z",
-   "text": "430 points and 255 comments on Hacker News.",
-   "points": 430,
+   "text": "433 points and 260 comments on Hacker News.",
+   "points": 433,
    "discussion": "https://news.ycombinator.com/item?id=50406563"
-  },
-  {
-   "title": "The Long-Term Benefit Trust",
-   "url": "https://www.anthropic.com/news/the-long-term-benefit-trust",
-   "source": "Anthropic",
-   "published_at": "2026-11-05T15:44:46Z",
-   "text": "An independent body of five trustees with authority to elect and remove Anthropic board members, balancing stockholder and public interests."
-  },
-  {
-   "title": "Chicago-based data analytics company Ocient raised a $100M Series C co-led by Boka Capital and OCA…",
-   "url": "https://siliconangle.com/2026/11/05/ocient-raises-100-million-as-agentic-ai-drives-growth-in-large-scale-analytics/",
-   "source": "Paul Gillin / SiliconANGLE",
-   "published_at": "2026-11-07T15:30:56Z",
-   "text": "Chicago-based data analytics company Ocient raised a $100M Series C co-led by Boka Capital and OCA Ventures to grow its agentic AI analytics business. Ocient Inc., the maker of a speedy data analytics platform, today said it has raised $100 million in a Series C funding to expand …",
-   "via": "Techmeme"
   }
  ],
  "sources": "curated, Techmeme, X (found via Techmeme, Reddit, the Internet Archive), Claude Code releases, Anthropic, Hacker News, Simon Willison"
