@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-08T04:48:35Z",
+ "generated_at": "2026-11-08T05:21:17Z",
  "items": [
   {
    "title": "Investigation: some Chinese companies approved by the US Commerce Department to handle Nvidia's H20…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-06T18:45:11Z",
    "text": "1/ starting today, muse and meta ai will run on new specialized models trained using muse wonder. ACTIVE MEMORY: models can reason across time and better remember what matters ACTIVE FOCUS: enabling muse to continue working towards a goal even when met with roadblocks",
    "author_name": "Alexandr Wang",
-   "likes": 2629,
+   "likes": 2636,
    "story": "Meta introduces specialized versions of its existing models, trained using Muse Wonder, bringing Active Memory and Active Focus to all Muse and Meta AI users"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-11-07T22:15:38Z",
    "text": "is Opus 5.5 nerfed? I just had Gemini 4 Argon analyze 1,400 Claude Code sessions and it found that on November 3, something definitely happened. the model name didn't change, but the way it does reasoning took a sharp turn.",
    "author_name": "Shane Melaugh",
-   "likes": 1137,
+   "likes": 1196,
    "story": "is Opus 5.5 nerfed?"
   },
   {
@@ -50,8 +50,8 @@
    "url": "https://hunch.net/?p=13764006",
    "source": "Hacker News",
    "published_at": "2026-11-07T18:02:17Z",
-   "text": "424 points and 251 comments on Hacker News.",
-   "points": 424,
+   "text": "430 points and 254 comments on Hacker News.",
+   "points": 430,
    "discussion": "https://news.ycombinator.com/item?id=50406563"
   },
   {
@@ -61,7 +61,7 @@
    "published_at": "2026-11-07T01:36:52Z",
    "text": "Nice DeepSWE score! Does it survive a lowercase filename? Introducing MaxxBench: 89 DeepSWE tasks with small changes to the instructions or starting code. Same engineering problem, slightly different requirement. Models clustered around 74% on DeepSWE end up 23 pp apart. Good…",
    "author_name": "Justin Lo",
-   "likes": 4187,
+   "likes": 4238,
    "story": "Saw this benchmark where small changes to coding tasks made a big difference"
   },
   {
@@ -80,12 +80,22 @@
    "via": "Techmeme"
   },
   {
+   "title": ".@CoreWeave writes to @GinaHinojosaTX pledging to work with her and TX communities on responsible d…",
+   "url": "https://x.com/ashleyrgold/status/2119131357028995562",
+   "source": "𝕏 @ashleyrgold",
+   "published_at": "2026-11-07T18:14:21Z",
+   "text": ".@CoreWeave writes to @GinaHinojosaTX pledging to work with her and TX communities on responsible data center development",
+   "author_name": "Ashley Gold",
+   "likes": 373,
+   "story": "Democratic wins could slow AI investment and safeguard the US economy against a downturn by pacing it over time, as Deutsche Bank sees “shaky” projects killed"
+  },
+  {
    "title": "Claude Code's \"Don't Ask Again\" exposes passwords in 1,122 public GitHub files",
    "url": "https://apiiro.com/blog/coding-agents-leaking-secrets-github-dont-ask-again",
    "source": "Hacker News",
    "published_at": "2026-11-07T20:45:32Z",
-   "text": "265 points and 170 comments on Hacker News.",
-   "points": 265,
+   "text": "278 points and 186 comments on Hacker News.",
+   "points": 278,
    "discussion": "https://news.ycombinator.com/item?id=50407882"
   },
   {
@@ -111,14 +121,6 @@
    "source": "Anthropic",
    "published_at": "2026-11-05T15:44:46Z",
    "text": "An independent body of five trustees with authority to elect and remove Anthropic board members, balancing stockholder and public interests."
-  },
-  {
-   "title": "Democratic wins could slow AI investment and safeguard the US economy against a downturn by pacing…",
-   "url": "https://www.bloomberg.com/news/newsletters/2026-11-06/data-center-pullback-may-shield-real-economy-from-ai-bubble",
-   "source": "Cecile Daurat / Bloomberg",
-   "published_at": "2026-11-07T16:36:11Z",
-   "text": "Democratic wins could slow AI investment and safeguard the US economy against a downturn by pacing it over time, as Deutsche Bank sees “shaky” projects killed. Guardrails against data-center expansion in states won by Democrats may help spread investment over time.",
-   "via": "Techmeme"
   },
   {
    "title": "Chicago-based data analytics company Ocient raised a $100M Series C co-led by Boka Capital and OCA…",
