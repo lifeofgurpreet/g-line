@@ -1,13 +1,13 @@
 {
  "schema": 1,
- "generated_at": "2026-11-08T01:33:35Z",
+ "generated_at": "2026-11-08T02:05:21Z",
  "items": [
   {
-   "title": "Censys finds 800+ publicly exposed copies of ARTEX, a Chinese-made, AI-powered, open-source penetra…",
-   "url": "https://techcrunch.com/2026/11/06/hundreds-of-artex-ai-hacking-tools-found-publicly-exposed-to-the-web/",
-   "source": "Zack Whittaker / TechCrunch",
-   "published_at": "2026-11-07T07:01:53Z",
-   "text": "Censys finds 800+ publicly exposed copies of ARTEX, a Chinese-made, AI-powered, open-source penetration testing tool linked to several cyberattacks since July. Security researchers have discovered hundreds of copies of a Chinese-made AI hacking tool publicly exposed to the internet for anyone to access …",
+   "title": "Public records appear to show SpaceX building a “Starbase supercomputer” in TX, but Gina Hinojosa's…",
+   "url": "https://www.theinformation.com/articles/blue-wave-may-stop-musks-texas-data-center-ambitions",
+   "source": "Ann Davis Vaughan / The Inf…",
+   "published_at": "2026-11-07T19:41:07Z",
+   "text": "Public records appear to show SpaceX building a “Starbase supercomputer” in TX, but Gina Hinojosa's election as governor may delay some of the data center plans. Elon Musk moved early to build AI data centers in Tennessee and Mississippi and reaped the rewards.",
    "via": "Techmeme"
   },
   {
@@ -17,7 +17,7 @@
    "published_at": "2026-11-06T18:45:11Z",
    "text": "1/ starting today, muse and meta ai will run on new specialized models trained using muse wonder. ACTIVE MEMORY: models can reason across time and better remember what matters ACTIVE FOCUS: enabling muse to continue working towards a goal even when met with roadblocks",
    "author_name": "Alexandr Wang",
-   "likes": 2594,
+   "likes": 2602,
    "story": "Meta introduces specialized versions of its existing models, trained using Muse Wonder, bringing Active Memory and Active Focus to all Muse and Meta AI users"
   },
   {
@@ -34,15 +34,15 @@
    "published_at": "2026-11-07T22:15:38Z",
    "text": "is Opus 5.5 nerfed? I just had Gemini 4 Argon analyze 1,400 Claude Code sessions and it found that on November 3, something definitely happened. the model name didn't change, but the way it does reasoning took a sharp turn.",
    "author_name": "Shane Melaugh",
-   "likes": 636,
+   "likes": 786,
    "story": "is Opus 5.5 nerfed?"
   },
   {
-   "title": "Public records appear to show SpaceX building a “Starbase supercomputer” in TX, but Gina Hinojosa's…",
-   "url": "https://www.theinformation.com/articles/blue-wave-may-stop-musks-texas-data-center-ambitions",
-   "source": "Ann Davis Vaughan / The Inf…",
-   "published_at": "2026-11-07T19:41:07Z",
-   "text": "Public records appear to show SpaceX building a “Starbase supercomputer” in TX, but Gina Hinojosa's election as governor may delay some of the data center plans. Elon Musk moved early to build AI data centers in Tennessee and Mississippi and reaped the rewards.",
+   "title": "Censys finds 800+ publicly exposed copies of ARTEX, a Chinese-made, AI-powered, open-source penetra…",
+   "url": "https://techcrunch.com/2026/11/06/hundreds-of-artex-ai-hacking-tools-found-publicly-exposed-to-the-web/",
+   "source": "Zack Whittaker / TechCrunch",
+   "published_at": "2026-11-07T07:01:53Z",
+   "text": "Censys finds 800+ publicly exposed copies of ARTEX, a Chinese-made, AI-powered, open-source penetration testing tool linked to several cyberattacks since July. Security researchers have discovered hundreds of copies of a Chinese-made AI hacking tool publicly exposed to the internet for anyone to access …",
    "via": "Techmeme"
   },
   {
@@ -50,8 +50,8 @@
    "url": "https://hunch.net/?p=13764006",
    "source": "Hacker News",
    "published_at": "2026-11-07T18:02:17Z",
-   "text": "376 points and 220 comments on Hacker News.",
-   "points": 376,
+   "text": "389 points and 227 comments on Hacker News.",
+   "points": 389,
    "discussion": "https://news.ycombinator.com/item?id=50406563"
   },
   {
@@ -61,7 +61,7 @@
    "published_at": "2026-11-06T17:23:31Z",
    "text": "i went to bed and asked claude to paint an autumn tree overnight. at around 4am, it realised that it didn't have some shades -- so it stopped and titrated its own paint: diluting red, sienna and madder step by step on a second palette, then measuring each pocket from a photo.…",
    "author_name": "nil",
-   "likes": 6031,
+   "likes": 6083,
    "story": "Claude paints a watercolor tree with a robotic arm in 4.5 hours, and mixes its own custom colors along the way"
   },
   {
@@ -72,30 +72,30 @@
    "text": "Today, we’re inviting members of the life sciences community to apply to work with us on special projects."
   },
   {
-   "title": "Exponential Time Hypothesis co-proposer Russell Impagliazzo calls OpenAI's disproof “shocking news”…",
-   "url": "https://www.nytimes.com/2026/11/06/science/ai-exponential-time-hypothesis.html?unlocked_article_code=1.OlE.47kX.eivz6u8UMHXN&smid=url-share",
-   "source": "Cade Metz / New York Times",
-   "published_at": "2026-11-07T17:15:58Z",
-   "text": "Exponential Time Hypothesis co-proposer Russell Impagliazzo calls OpenAI's disproof “shocking news”; it could one day speed up chip design and break encryption. A longstanding hypothesis held that some problems would always be hard for computers to solve quickly.",
+   "title": "Democratic wins could slow AI investment and safeguard the US economy against a downturn by pacing…",
+   "url": "https://www.bloomberg.com/news/newsletters/2026-11-06/data-center-pullback-may-shield-real-economy-from-ai-bubble",
+   "source": "Cecile Daurat / Bloomberg",
+   "published_at": "2026-11-07T16:36:11Z",
+   "text": "Democratic wins could slow AI investment and safeguard the US economy against a downturn by pacing it over time, as Deutsche Bank sees “shaky” projects killed. Guardrails against data-center expansion in states won by Democrats may help spread investment over time.",
    "via": "Techmeme"
   },
   {
-   "title": ".@CoreWeave writes to @GinaHinojosaTX pledging to work with her and TX communities on responsible d…",
-   "url": "https://x.com/ashleyrgold/status/2119131357028995562",
-   "source": "𝕏 @ashleyrgold",
-   "published_at": "2026-11-07T18:14:21Z",
-   "text": ".@CoreWeave writes to @GinaHinojosaTX pledging to work with her and TX communities on responsible data center development",
-   "author_name": "Ashley Gold",
-   "likes": 315,
-   "story": "Democratic wins could slow AI investment and safeguard the US economy against a downturn by pacing it over time, as Deutsche Bank sees “shaky” projects killed"
+   "title": "Nice DeepSWE score! Does it survive a lowercase filename? Introducing MaxxBench: 89 DeepSWE tasks w…",
+   "url": "https://x.com/loresjpg/status/2118880329490637049",
+   "source": "𝕏 @loresjpg",
+   "published_at": "2026-11-07T01:36:52Z",
+   "text": "Nice DeepSWE score! Does it survive a lowercase filename? Introducing MaxxBench: 89 DeepSWE tasks with small changes to the instructions or starting code. Same engineering problem, slightly different requirement. Models clustered around 74% on DeepSWE end up 23 pp apart. Good…",
+   "author_name": "Justin Lo",
+   "likes": 3911,
+   "story": "Saw this benchmark where small changes to coding tasks made a big difference"
   },
   {
    "title": "Claude Code's \"Don't Ask Again\" exposes passwords in 1,122 public GitHub files",
    "url": "https://apiiro.com/blog/coding-agents-leaking-secrets-github-dont-ask-again",
    "source": "Hacker News",
    "published_at": "2026-11-07T20:45:32Z",
-   "text": "170 points and 121 comments on Hacker News.",
-   "points": 170,
+   "text": "186 points and 129 comments on Hacker News.",
+   "points": 186,
    "discussion": "https://news.ycombinator.com/item?id=50407882"
   },
   {
@@ -123,11 +123,11 @@
    "text": "An independent body of five trustees with authority to elect and remove Anthropic board members, balancing stockholder and public interests."
   },
   {
-   "title": "Chicago-based data analytics company Ocient raised a $100M Series C co-led by Boka Capital and OCA…",
-   "url": "https://siliconangle.com/2026/11/05/ocient-raises-100-million-as-agentic-ai-drives-growth-in-large-scale-analytics/",
-   "source": "Paul Gillin / SiliconANGLE",
-   "published_at": "2026-11-07T15:30:56Z",
-   "text": "Chicago-based data analytics company Ocient raised a $100M Series C co-led by Boka Capital and OCA Ventures to grow its agentic AI analytics business. Ocient Inc., the maker of a speedy data analytics platform, today said it has raised $100 million in a Series C funding to expand …",
+   "title": "Exponential Time Hypothesis co-proposer Russell Impagliazzo calls OpenAI's disproof “shocking news”…",
+   "url": "https://www.nytimes.com/2026/11/06/science/ai-exponential-time-hypothesis.html?unlocked_article_code=1.OlE.47kX.eivz6u8UMHXN&smid=url-share",
+   "source": "Cade Metz / New York Times",
+   "published_at": "2026-11-07T17:15:58Z",
+   "text": "Exponential Time Hypothesis co-proposer Russell Impagliazzo calls OpenAI's disproof “shocking news”; it could one day speed up chip design and break encryption. A longstanding hypothesis held that some problems would always be hard for computers to solve quickly.",
    "via": "Techmeme"
   }
  ],
