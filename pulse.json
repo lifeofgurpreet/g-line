@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-08T05:21:17Z",
+ "generated_at": "2026-11-08T05:54:49Z",
  "items": [
   {
    "title": "Investigation: some Chinese companies approved by the US Commerce Department to handle Nvidia's H20…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-06T18:45:11Z",
    "text": "1/ starting today, muse and meta ai will run on new specialized models trained using muse wonder. ACTIVE MEMORY: models can reason across time and better remember what matters ACTIVE FOCUS: enabling muse to continue working towards a goal even when met with roadblocks",
    "author_name": "Alexandr Wang",
-   "likes": 2636,
+   "likes": 2645,
    "story": "Meta introduces specialized versions of its existing models, trained using Muse Wonder, bringing Active Memory and Active Focus to all Muse and Meta AI users"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-11-07T22:15:38Z",
    "text": "is Opus 5.5 nerfed? I just had Gemini 4 Argon analyze 1,400 Claude Code sessions and it found that on November 3, something definitely happened. the model name didn't change, but the way it does reasoning took a sharp turn.",
    "author_name": "Shane Melaugh",
-   "likes": 1196,
+   "likes": 1246,
    "story": "is Opus 5.5 nerfed?"
   },
   {
@@ -46,13 +46,13 @@
    "via": "Techmeme"
   },
   {
-   "title": "The end of Microsoft Research's AI Frontiers group",
-   "url": "https://hunch.net/?p=13764006",
+   "title": "Goodbye Claude, Hello Pi",
+   "url": "https://caleb.software/posts/claude-to-pi.html",
    "source": "Hacker News",
-   "published_at": "2026-11-07T18:02:17Z",
-   "text": "430 points and 254 comments on Hacker News.",
-   "points": 430,
-   "discussion": "https://news.ycombinator.com/item?id=50406563"
+   "published_at": "2026-11-08T03:11:48Z",
+   "text": "71 points and 36 comments on Hacker News.",
+   "points": 71,
+   "discussion": "https://news.ycombinator.com/item?id=50410107"
   },
   {
    "title": "Nice DeepSWE score! Does it survive a lowercase filename? Introducing MaxxBench: 89 DeepSWE tasks w…",
@@ -61,7 +61,7 @@
    "published_at": "2026-11-07T01:36:52Z",
    "text": "Nice DeepSWE score! Does it survive a lowercase filename? Introducing MaxxBench: 89 DeepSWE tasks with small changes to the instructions or starting code. Same engineering problem, slightly different requirement. Models clustered around 74% on DeepSWE end up 23 pp apart. Good…",
    "author_name": "Justin Lo",
-   "likes": 4238,
+   "likes": 4279,
    "story": "Saw this benchmark where small changes to coding tasks made a big difference"
   },
   {
@@ -86,7 +86,7 @@
    "published_at": "2026-11-07T18:14:21Z",
    "text": ".@CoreWeave writes to @GinaHinojosaTX pledging to work with her and TX communities on responsible data center development",
    "author_name": "Ashley Gold",
-   "likes": 373,
+   "likes": 377,
    "story": "Democratic wins could slow AI investment and safeguard the US economy against a downturn by pacing it over time, as Deutsche Bank sees “shaky” projects killed"
   },
   {
@@ -94,8 +94,8 @@
    "url": "https://apiiro.com/blog/coding-agents-leaking-secrets-github-dont-ask-again",
    "source": "Hacker News",
    "published_at": "2026-11-07T20:45:32Z",
-   "text": "278 points and 186 comments on Hacker News.",
-   "points": 278,
+   "text": "295 points and 201 comments on Hacker News.",
+   "points": 295,
    "discussion": "https://news.ycombinator.com/item?id=50407882"
   },
   {
@@ -107,13 +107,13 @@
    "via": "Techmeme"
   },
   {
-   "title": "AI for scientific discovery: How researchers use Claude",
-   "url": "https://www.anthropic.com/research/how-researchers-use-claude",
+   "title": "The end of Microsoft Research's AI Frontiers group",
+   "url": "https://hunch.net/?p=13764006",
    "source": "Hacker News",
-   "published_at": "2026-11-06T09:13:30Z",
-   "text": "101 points and 39 comments on Hacker News.",
-   "points": 101,
-   "discussion": "https://news.ycombinator.com/item?id=50389990"
+   "published_at": "2026-11-07T18:02:17Z",
+   "text": "430 points and 255 comments on Hacker News.",
+   "points": 430,
+   "discussion": "https://news.ycombinator.com/item?id=50406563"
   },
   {
    "title": "The Long-Term Benefit Trust",
