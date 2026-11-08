@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-08T02:36:56Z",
+ "generated_at": "2026-11-08T03:10:14Z",
  "items": [
   {
    "title": "Investigation: some Chinese companies approved by the US Commerce Department to handle Nvidia's H20…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-06T18:45:11Z",
    "text": "1/ starting today, muse and meta ai will run on new specialized models trained using muse wonder. ACTIVE MEMORY: models can reason across time and better remember what matters ACTIVE FOCUS: enabling muse to continue working towards a goal even when met with roadblocks",
    "author_name": "Alexandr Wang",
-   "likes": 2608,
+   "likes": 2614,
    "story": "Meta introduces specialized versions of its existing models, trained using Muse Wonder, bringing Active Memory and Active Focus to all Muse and Meta AI users"
   },
   {
@@ -34,15 +34,15 @@
    "published_at": "2026-11-07T22:15:38Z",
    "text": "is Opus 5.5 nerfed? I just had Gemini 4 Argon analyze 1,400 Claude Code sessions and it found that on November 3, something definitely happened. the model name didn't change, but the way it does reasoning took a sharp turn.",
    "author_name": "Shane Melaugh",
-   "likes": 887,
+   "likes": 960,
    "story": "is Opus 5.5 nerfed?"
   },
   {
-   "title": "Public records appear to show SpaceX building a “Starbase supercomputer” in TX, but Gina Hinojosa's…",
-   "url": "https://www.theinformation.com/articles/blue-wave-may-stop-musks-texas-data-center-ambitions",
-   "source": "Ann Davis Vaughan / The Inf…",
-   "published_at": "2026-11-07T19:41:07Z",
-   "text": "Public records appear to show SpaceX building a “Starbase supercomputer” in TX, but Gina Hinojosa's election as governor may delay some of the data center plans. Elon Musk moved early to build AI data centers in Tennessee and Mississippi and reaped the rewards.",
+   "title": "How a small, wealthy AI-safety network that organized in Signal chats grew into a coalition that be…",
+   "url": "https://www.politico.com/news/magazine/2026/11/06/ai-big-tech-2026-midterms-anthropic-openai-01152312",
+   "source": "Politico",
+   "published_at": "2026-11-08T02:46:21Z",
+   "text": "How a small, wealthy AI-safety network that organized in Signal chats grew into a coalition that beat the $100M super PAC Leading the Future in the midterms. For years, the policy debate over artificial intelligence belonged to those who counted progress in decades.",
    "via": "Techmeme"
   },
   {
@@ -50,8 +50,8 @@
    "url": "https://hunch.net/?p=13764006",
    "source": "Hacker News",
    "published_at": "2026-11-07T18:02:17Z",
-   "text": "397 points and 236 comments on Hacker News.",
-   "points": 397,
+   "text": "413 points and 239 comments on Hacker News.",
+   "points": 413,
    "discussion": "https://news.ycombinator.com/item?id=50406563"
   },
   {
@@ -61,7 +61,7 @@
    "published_at": "2026-11-06T17:23:31Z",
    "text": "i went to bed and asked claude to paint an autumn tree overnight. at around 4am, it realised that it didn't have some shades -- so it stopped and titrated its own paint: diluting red, sienna and madder step by step on a second palette, then measuring each pocket from a photo.…",
    "author_name": "nil",
-   "likes": 6127,
+   "likes": 6182,
    "story": "Claude paints a watercolor tree with a robotic arm in 4.5 hours, and mixes its own custom colors along the way"
   },
   {
@@ -72,11 +72,11 @@
    "text": "Today, we’re inviting members of the life sciences community to apply to work with us on special projects."
   },
   {
-   "title": "Censys finds 800+ publicly exposed copies of ARTEX, a Chinese-made, AI-powered, open-source penetra…",
-   "url": "https://techcrunch.com/2026/11/06/hundreds-of-artex-ai-hacking-tools-found-publicly-exposed-to-the-web/",
-   "source": "Zack Whittaker / TechCrunch",
-   "published_at": "2026-11-07T07:01:53Z",
-   "text": "Censys finds 800+ publicly exposed copies of ARTEX, a Chinese-made, AI-powered, open-source penetration testing tool linked to several cyberattacks since July. Security researchers have discovered hundreds of copies of a Chinese-made AI hacking tool publicly exposed to the internet for anyone to access …",
+   "title": "Public records appear to show SpaceX building a “Starbase supercomputer” in TX, but Gina Hinojosa's…",
+   "url": "https://www.theinformation.com/articles/blue-wave-may-stop-musks-texas-data-center-ambitions",
+   "source": "Ann Davis Vaughan / The Inf…",
+   "published_at": "2026-11-07T19:41:07Z",
+   "text": "Public records appear to show SpaceX building a “Starbase supercomputer” in TX, but Gina Hinojosa's election as governor may delay some of the data center plans. Elon Musk moved early to build AI data centers in Tennessee and Mississippi and reaped the rewards.",
    "via": "Techmeme"
   },
   {
@@ -86,7 +86,7 @@
    "published_at": "2026-11-07T01:36:52Z",
    "text": "Nice DeepSWE score! Does it survive a lowercase filename? Introducing MaxxBench: 89 DeepSWE tasks with small changes to the instructions or starting code. Same engineering problem, slightly different requirement. Models clustered around 74% on DeepSWE end up 23 pp apart. Good…",
    "author_name": "Justin Lo",
-   "likes": 3958,
+   "likes": 4021,
    "story": "Saw this benchmark where small changes to coding tasks made a big difference"
   },
   {
@@ -94,8 +94,8 @@
    "url": "https://apiiro.com/blog/coding-agents-leaking-secrets-github-dont-ask-again",
    "source": "Hacker News",
    "published_at": "2026-11-07T20:45:32Z",
-   "text": "195 points and 131 comments on Hacker News.",
-   "points": 195,
+   "text": "208 points and 143 comments on Hacker News.",
+   "points": 208,
    "discussion": "https://news.ycombinator.com/item?id=50407882"
   },
   {
@@ -105,15 +105,15 @@
    "published_at": "2026-11-07T18:14:21Z",
    "text": ".@CoreWeave writes to @GinaHinojosaTX pledging to work with her and TX communities on responsible data center development",
    "author_name": "Ashley Gold",
-   "likes": 345,
+   "likes": 354,
    "story": "Democratic wins could slow AI investment and safeguard the US economy against a downturn by pacing it over time, as Deutsche Bank sees “shaky” projects killed"
   },
   {
-   "title": "Sources: OpenAI has closed on new funding of roughly $11B at a $1.25T valuation; the round could in…",
-   "url": "https://www.bloomberg.com/news/articles/2026-11-06/openai-completes-11-billion-portion-of-funding-at-1-25-trillion-value?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc5Mzk5OTYyNywiZXhwIjoxNzk0NjA0NDI3LCJhcnRpY2xlSWQiOiJUTzNNOVRSS1YyVEUwMCIsImJjb25uZWN0SWQiOiI4OUM4OTNDMDhGOTQ0NThDQkQwQTQyREY1RDFCOTY0QyJ9.pVWDvtzoWMkiwWdzW9wgW8MNHfO8XHw9d9znQhP2cv4",
-   "source": "Bloomberg",
-   "published_at": "2026-11-06T21:15:52Z",
-   "text": "Sources: OpenAI has closed on new funding of roughly $11B at a $1.25T valuation; the round could increase to as much as $20B in total. OpenAI has closed on new funding of roughly $11 billion, the initial part of a round that values the company at $1.25 trillion, according to people familiar with the matter.",
+   "title": "Censys finds 800+ publicly exposed copies of ARTEX, a Chinese-made, AI-powered, open-source penetra…",
+   "url": "https://techcrunch.com/2026/11/06/hundreds-of-artex-ai-hacking-tools-found-publicly-exposed-to-the-web/",
+   "source": "Zack Whittaker / TechCrunch",
+   "published_at": "2026-11-07T07:01:53Z",
+   "text": "Censys finds 800+ publicly exposed copies of ARTEX, a Chinese-made, AI-powered, open-source penetration testing tool linked to several cyberattacks since July. Security researchers have discovered hundreds of copies of a Chinese-made AI hacking tool publicly exposed to the internet for anyone to access …",
    "via": "Techmeme"
   },
   {
