@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-09T04:19:52Z",
+ "generated_at": "2026-11-09T04:52:14Z",
  "items": [
   {
    "title": "Nvidia's board launches a probe into whether Jensen Huang was targeted by a foreign spy plot, sayin…",
@@ -17,8 +17,8 @@
    "published_at": "2026-11-08T22:33:27Z",
    "text": "Deadass biggest plot twist of 2026. the CEO of one of the biggest AI companies was cheating on his wife with a Chinese spy, that was relying intel to Chinese AI companies. You couldn’t write that Script in your wildest dreams.",
    "author_name": "JtheFrog",
-   "likes": 44262,
-   "story": "Sources: Marco Rubio oversaw the drafting of a classified memo this spring warning Trump admin that Jensen Huang was in a close relationship with a Chinese spy"
+   "likes": 45946,
+   "story": "Trump says Jensen Huang should stay on as Nvidia CEO after affair admission, saying he is a “fine person” and “I haven't heard he's done anything wrong”"
   },
   {
    "title": "Claude Code 2.1.319 released",
@@ -34,7 +34,7 @@
    "published_at": "2026-11-08T15:17:41Z",
    "text": "NEW in Power On: Apple CEO John Ternus held a closed-door meeting with Craig Federighi in the last few weeks, pushing his software chief to accelerate Apple’s AI road map and move beyond Siri improvements amid concerns about falling behind rivals.",
    "author_name": "Mark Gurman",
-   "likes": 2672,
+   "likes": 2698,
    "story": "Sources: John Ternus wants more urgency in Apple's AI efforts, pushing Craig Federighi to move beyond Siri AI tweaks to agentic and other advanced capabilities",
    "links": [
     "https://www.bloomberg.com/news/newsletters/2026-11-08/apple-explores-turning-siri-ai-into-chatgpt-dots-like-agent-ios-28-shake-up?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc5NDE1MTAxMCwiZXhwIjoxNzk0NzU1ODEwLCJhcnRpY2xlSWQiOiJUTzZWMDFLSUpIOEkwMCIsImJjb25uZWN0SWQiOiJDNEVEQ0FFMUZBMDU0MEJFQTI0QTlGMjExQzFFOTA4MCJ9.v_kF8kPRiaZ6qSDqbDcb8marNAUSibGlv7PG3r-OYKA"
@@ -49,13 +49,13 @@
    "via": "Techmeme"
   },
   {
-   "title": "Nvidia CEO Jensen Huang's letter to staff about affair",
-   "url": "https://nvidianews.nvidia.com/news/a-message-to-our-company",
+   "title": "Goldman Sachs is pulling Claude Code from its bankers and traders",
+   "url": "https://www.thestateofai.com/news/goldman-sachs-claude-code-traders-bankers",
    "source": "Hacker News",
-   "published_at": "2026-11-08T22:20:09Z",
-   "text": "415 points and 448 comments on Hacker News.",
-   "points": 415,
-   "discussion": "https://news.ycombinator.com/item?id=50418016"
+   "published_at": "2026-11-08T18:16:07Z",
+   "text": "672 points and 381 comments on Hacker News.",
+   "points": 672,
+   "discussion": "https://news.ycombinator.com/item?id=50415628"
   },
   {
    "title": "Introducing Arete-27B: Qwen3.8-27B, post-trained to reinforce Western values. Chinese open models a…",
@@ -64,7 +64,7 @@
    "published_at": "2026-11-06T21:48:45Z",
    "text": "Introducing Arete-27B: Qwen3.8-27B, post-trained to reinforce Western values. Chinese open models are currently the strongest available, but they ship with state-aligned behavior in the weights. We built an 803-prompt eval across seven value categories, including freedom of…",
    "author_name": "Nous Research",
-   "likes": 14602,
+   "likes": 14616,
    "story": "Nous Research unveils Arete-27B, a post-trained Qwen3.8-27B model that reinforces Western values, saying the underlying Chinese model's bias layer is shallow"
   },
   {
@@ -75,6 +75,13 @@
    "text": "Today, we’re inviting members of the life sciences community to apply to work with us on special projects."
   },
   {
+   "title": "Hide your slop PR descriptions behind <details><summary>",
+   "url": "https://simonwillison.net/2026/Nov/9/details-summary/",
+   "source": "Simon Willison's weblog",
+   "published_at": "2026-11-09T04:25:05Z",
+   "text": "Most of the changes I make to my projects these days come in the form of PRs opened for me by Claude Code or Codex. The PR is my unit of work - I use them to bundle commits together, iterating on them until a feature is complete, document decisions and then merge the finished result. Today's coding agents are great at writing PR descriptions. They're too good at describing the work The problem is that they are too good. An agent-written PR description is accurate and comprehensive. It describes the problem, the detailed solution, and the steps taken to verify it."
+  },
+  {
    "title": "Tencent's chief AI scientist Yao Shunyu says AI's bio abilities will soon make it “possible to do h…",
    "url": "https://www.scmp.com/tech/big-tech/article/3373697/ai-will-soon-master-biology-unleashing-new-safety-risks-tencent-ai-chief-warns",
    "source": "Vincent Chow / South China…",
@@ -83,29 +90,12 @@
    "via": "Techmeme"
   },
   {
-   "title": "Goldman Sachs is pulling Claude Code from its bankers and traders",
-   "url": "https://www.thestateofai.com/news/goldman-sachs-claude-code-traders-bankers",
-   "source": "Hacker News",
-   "published_at": "2026-11-08T18:16:07Z",
-   "text": "666 points and 381 comments on Hacker News.",
-   "points": 666,
-   "discussion": "https://news.ycombinator.com/item?id=50415628"
-  },
-  {
-   "title": "Sources: Anthropic bought commitments for 1.7GW of gas-fired generators from equipment supplier One…",
-   "url": "https://www.ft.com/content/41bf5c6a-9735-4f1a-a8e3-2bcccad58ba0",
-   "source": "Martha Muir / Financial Tim…",
-   "published_at": "2026-11-08T15:05:53Z",
-   "text": "Sources: Anthropic bought commitments for 1.7GW of gas-fired generators from equipment supplier OnePWR for $3.4B, the largest known such purchase by an AI lab. AI lab bypasses traditional suppliers to secure scarce equipment as demand for energy surges — Anthropic has struck a massive deal …",
-   "via": "Techmeme"
-  },
-  {
    "title": "I'm not convinced the AI bubble exists",
    "url": "https://matteoraso.github.io/im-not-convinced-the-ai-bubble-exists.html#im-not-convinced-the-ai-bubble-exists",
    "source": "Hacker News",
    "published_at": "2026-11-08T23:44:36Z",
-   "text": "80 points and 114 comments on Hacker News.",
-   "points": 80,
+   "text": "97 points and 131 comments on Hacker News.",
+   "points": 97,
    "discussion": "https://news.ycombinator.com/item?id=50418975"
   },
   {
@@ -121,16 +111,24 @@
    "url": "https://sergeykuhne.com/blog/fighting-ai-brain-fry",
    "source": "Hacker News",
    "published_at": "2026-11-08T19:37:42Z",
-   "text": "186 points and 146 comments on Hacker News.",
-   "points": 186,
+   "text": "189 points and 150 comments on Hacker News.",
+   "points": 189,
    "discussion": "https://news.ycombinator.com/item?id=50416363"
+  },
+  {
+   "title": "Sources: Anthropic bought commitments for 1.7GW of gas-fired generators from equipment supplier One…",
+   "url": "https://www.ft.com/content/41bf5c6a-9735-4f1a-a8e3-2bcccad58ba0",
+   "source": "Martha Muir / Financial Tim…",
+   "published_at": "2026-11-08T15:05:53Z",
+   "text": "Sources: Anthropic bought commitments for 1.7GW of gas-fired generators from equipment supplier OnePWR for $3.4B, the largest known such purchase by an AI lab. AI lab bypasses traditional suppliers to secure scarce equipment as demand for energy surges — Anthropic has struck a massive deal …",
+   "via": "Techmeme"
   },
   {
    "title": "Sources: officials at the Commerce Department's AI safety center CAISSI were asked to informally re…",
    "url": "https://apnews.com/article/ai-safety-trump-white-house-d3318eb2cf011df53e9ddb3e03d25f13",
    "source": "Garance Burke / Associated…",
    "published_at": "2026-11-08T22:55:37Z",
-   "text": "Sources: officials at the Commerce Department's AI safety center CAISSI were asked to informally report to a White House office, raising independence concerns. With public anxiety growing over mounting reports about out-of-control artificial intelligence agents, the tiny U.S. government division charged …",
+   "text": "Sources: officials at the Commerce Department's AI safety center CAISSI were asked to informally report to a White House office, raising independence concerns",
    "via": "Techmeme"
   }
  ],
