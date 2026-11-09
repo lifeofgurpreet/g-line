@@ -1,31 +1,68 @@
 {
  "schema": 1,
- "generated_at": "2026-11-09T14:06:04Z",
+ "generated_at": "2026-11-09T20:32:29Z",
  "items": [
   {
    "title": "Nvidia's board launches a probe into whether Jensen Huang was targeted by a foreign spy plot, sayin…",
    "url": "https://www.bloomberg.com/news/articles/2026-11-08/nvidia-board-to-probe-spying-case-after-ceo-jensen-huang-admits-infidelity?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc5NDE2ODU1OSwiZXhwIjoxNzk0NzczMzU5LCJhcnRpY2xlSWQiOiJUTzU3WTNWVFRDWlkwMCIsImJjb25uZWN0SWQiOiIyQ0FEODkyRDYzODU0QjJFOEI2MEM2QUI2OTg2MzBBNyJ9.AHrN1ygaU7rv8RK6qaS-JAmbJRFuZsKMk5VcnnENzt0&leadSource=article-gifting",
    "source": "Ian King / Bloomberg",
    "published_at": "2026-11-08T20:25:34Z",
-   "text": "Nvidia's board launches a probe into whether Jensen Huang was targeted by a foreign spy plot, saying it has “no reason to believe” that secrets were compromised. Nvidia Corp.'s board is launching an investigation into whether Chief Executive Officer Jensen Huang was targeted …",
+   "text": "Nvidia's board launches a probe into whether Jensen Huang was targeted by a foreign spy plot, saying it has “no reason to believe” that secrets were compromised. Nvidia Corp.'s investigation into Chief Executive Officer Jensen Huang's affair with an alleged Chinese spy raises …",
    "via": "Techmeme"
   },
   {
-   "title": "Deadass biggest plot twist of 2026. the CEO of one of the biggest AI companies was cheating on his…",
-   "url": "https://x.com/JtheFrog0/status/2119558950303547464",
-   "source": "𝕏 @JtheFrog0",
-   "published_at": "2026-11-08T22:33:27Z",
-   "text": "Deadass biggest plot twist of 2026. the CEO of one of the biggest AI companies was cheating on his wife with a Chinese spy, that was relying intel to Chinese AI companies. You couldn’t write that Script in your wildest dreams.",
-   "author_name": "JtheFrog",
-   "likes": 65852,
-   "story": "Email to staff: Jensen Huang admits an affair, takes “full responsibility”, and says he fell short of his duties to Nvidia's board, shareholders, and employees"
+   "title": "Introducing Claude Fable 5.2 and Claude Mythos 5.2, designed to tackle the most daunting technical…",
+   "url": "https://x.com/claudeai/status/2119867114450268322",
+   "source": "𝕏 @claudeai",
+   "published_at": "2026-11-09T18:57:59Z",
+   "text": "Introducing Claude Fable 5.2 and Claude Mythos 5.2, designed to tackle the most daunting technical challenges. They’re capable collaborators on ambitious projects in many fields, and show improvements in areas like coding, reasoning, and vision.",
+   "author_name": "Claude",
+   "likes": 46019,
+   "story": "Anthropic releases Mythos 5.2 and Fable 5.2, saying they are “best for the most ambitious, open-ended technical work”, with outputs up to 30% faster than 5.1"
   },
   {
-   "title": "Claude Code 2.1.319 released",
-   "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.319",
+   "title": "Claude Code 2.1.321 released",
+   "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.321",
    "source": "Claude Code releases",
-   "published_at": "2026-11-06T17:04:01Z",
-   "text": "Changed auto mode with telemetry or feature flags off, including behind LLM gateways: calls the server can't check are asked about or denied, with no fallback to the built-in classifier; set CLAUDE_C… · Changed auto mode behind an LLM gateway: CLAUDE_CODE_AUTO_MODE_SERVER=1 turns on the server-side check even with CLAUDE_CODE_DISABLE_EXPERIMENTAL_BETAS set; if managed settings set the latter, they m… · Added support for MCP tasks in the terminal: when an MCP server runs a tool call as a task, Claude Code moves it to the background right away and tells Claude the result when it finishes · Adde…"
+   "published_at": "2026-11-09T19:22:30Z",
+   "text": "Added Claude Fable 5.2 (claude-fable-5-2), now the default Fable model — 1M context, $8/$40 per Mtok with $0.20/Mtok cache reads · Added --settings to claude remote-control, which applies a settings file to every session it starts; if the file changes, no new session starts until you restart claude remote-control · Fixed MCP OAuth requests sending secrets such as refresh tokens to another host when a server redirected them · Fixed a case where a read-only Bash command ran outside the sandbox without a permission prompt"
+  },
+  {
+   "title": "Gemini is accelerating all of this. These numbers are from the AlphaChip paper in 2024. God knows w…",
+   "url": "https://x.com/AndrewCurran_/status/2119863129534538134",
+   "source": "𝕏 @AndrewCurran_",
+   "published_at": "2026-11-09T18:42:09Z",
+   "text": "Gemini is accelerating all of this. These numbers are from the AlphaChip paper in 2024. God knows what these numbers are now, they have not been updated in over two years. Google started leaning into the AI hardware design loop long before anyone.",
+   "author_name": "Andrew Curran",
+   "likes": 262,
+   "story": "Google unveils two specialized TPUs launching in 2027: the 8tx, to be paired with an AMD CPU, and the 8i Max, a dual-chip package for long-context window tasks"
+  },
+  {
+   "title": "1/ announcing our smallest, most efficient little model is here: muse ember 🔥 built for work that a…",
+   "url": "https://x.com/alexandr_wang/status/2119853374158032950",
+   "source": "𝕏 @alexandr_wang",
+   "published_at": "2026-11-09T18:03:24Z",
+   "text": "1/ announcing our smallest, most efficient little model is here: muse ember 🔥 built for work that agents repeat all day, it gets you more intelligence per dollar than Haiku, Luna, and all other flash models at any reasoning setting and does it at a third of the cost or less!",
+   "author_name": "Alexandr Wang",
+   "likes": 3783,
+   "story": "Meta releases Muse Ember, its smallest and most cost-efficient AI model yet, saying it delivers more intelligence per dollar than Haiku 5.5 and GPT-6 Luna"
+  },
+  {
+   "title": "Nvidia drops 5%+ after its board opens an investigation into Jensen Huang; the company originally d…",
+   "url": "https://www.ft.com/content/fa3b0a35-1aa9-4f31-97b4-e4c599e3e654",
+   "source": "Demetri Sevastopulo / Finan…",
+   "published_at": "2026-11-09T10:40:50Z",
+   "text": "Nvidia drops 5%+ after its board opens an investigation into Jensen Huang; the company originally dismissed the interactions as “nothing unusual or unexpected”. Board of chipmaker opens investigation after chief executive Jensen Huang admits to affair",
+   "via": "Techmeme"
+  },
+  {
+   "title": "DeepX claims inference up to 100B parameters at less than 5 W",
+   "url": "https://www.eetimes.com/deepx-tapes-out-second-gen-chip-projects-6-7x-performance-gain-with-lpddr5x-pim/",
+   "source": "Hacker News",
+   "published_at": "2026-11-09T18:33:58Z",
+   "text": "79 points and 8 comments on Hacker News.",
+   "points": 79,
+   "discussion": "https://news.ycombinator.com/item?id=50429545"
   },
   {
    "title": "jensen huang (nvidia ceo) finding out his fling alice huang has been a chinese intelligence asset t…",
@@ -34,38 +71,8 @@
    "published_at": "2026-11-09T06:57:57Z",
    "text": "jensen huang (nvidia ceo) finding out his fling alice huang has been a chinese intelligence asset this whole time",
    "author_name": "ukdicha modak",
-   "likes": 11382,
+   "likes": 20752,
    "story": "A profile of Alice Huang, a suspected Chinese spy who founded Megaspeed in 2023 and spent years in Jensen Huang's orbit; Megaspeed's Nvidia imports top $4.6B"
-  },
-  {
-   "title": "Nvidia drops ~5% pre-market after its board opens a probe into Jensen Huang; Nvidia previously dism…",
-   "url": "https://www.ft.com/content/fa3b0a35-1aa9-4f31-97b4-e4c599e3e654",
-   "source": "Demetri Sevastopulo / Finan…",
-   "published_at": "2026-11-09T10:40:50Z",
-   "text": "Nvidia drops ~5% pre-market after its board opens a probe into Jensen Huang; Nvidia previously dismissed the interactions as “nothing unusual or unexpected”. Board of chipmaker opens investigation after chief executive Jensen Huang admits to affair",
-   "via": "Techmeme"
-  },
-  {
-   "title": "Goldman Sachs is pulling Claude Code from its bankers and traders",
-   "url": "https://www.thestateofai.com/news/goldman-sachs-claude-code-traders-bankers",
-   "source": "Hacker News",
-   "published_at": "2026-11-08T18:16:07Z",
-   "text": "817 points and 440 comments on Hacker News.",
-   "points": 817,
-   "discussion": "https://news.ycombinator.com/item?id=50415628"
-  },
-  {
-   "title": "NEW in Power On: Apple CEO John Ternus held a closed-door meeting with Craig Federighi in the last…",
-   "url": "https://x.com/markgurman/status/2119449283267371274",
-   "source": "𝕏 @markgurman",
-   "published_at": "2026-11-08T15:17:41Z",
-   "text": "NEW in Power On: Apple CEO John Ternus held a closed-door meeting with Craig Federighi in the last few weeks, pushing his software chief to accelerate Apple’s AI road map and move beyond Siri improvements amid concerns about falling behind rivals.",
-   "author_name": "Mark Gurman",
-   "likes": 2987,
-   "story": "Sources: John Ternus wants more urgency in Apple's AI efforts, pushing Craig Federighi to move beyond Siri AI tweaks to agentic and other advanced capabilities",
-   "links": [
-    "https://www.bloomberg.com/news/newsletters/2026-11-08/apple-explores-turning-siri-ai-into-chatgpt-dots-like-agent-ios-28-shake-up?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc5NDE1MTAxMCwiZXhwIjoxNzk0NzU1ODEwLCJhcnRpY2xlSWQiOiJUTzZWMDFLSUpIOEkwMCIsImJjb25uZWN0SWQiOiJDNEVEQ0FFMUZBMDU0MEJFQTI0QTlGMjExQzFFOTA4MCJ9.v_kF8kPRiaZ6qSDqbDcb8marNAUSibGlv7PG3r-OYKA"
-   ]
   },
   {
    "title": "Hide your slop PR descriptions behind <details><summary>",
@@ -75,38 +82,45 @@
    "text": "Most of the changes I make to my projects these days come in the form of PRs opened for me by Claude Code or Codex. The PR is my unit of work - I use them to bundle commits together, iterating on them until a feature is complete, document decisions and then merge the finished result. Today's coding agents are great at writing PR descriptions. They're too good at describing the work The problem is that they are too good. An agent-written PR description is accurate and comprehensive. It describes the problem, the detailed solution, and the steps taken to verify it."
   },
   {
+   "title": "Sources: a Commerce Department investigation into Megaspeed for allegedly smuggling Nvidia chips to…",
+   "url": "https://www.nytimes.com/2026/11/09/business/economy/nvidia-megaspeed-investigation-huang.html?unlocked_article_code=1.PFE.kx0T.Y85ccrbdDRP8&smid=url-share",
+   "source": "New York Times",
+   "published_at": "2026-11-09T16:20:53Z",
+   "text": "Sources: a Commerce Department investigation into Megaspeed for allegedly smuggling Nvidia chips to China was transferred to the DOJ after Nvidia intervened. An investigation into Megaspeed, a Singapore company that was buying advanced Nvidia A.I. chips, was transferred to the Justice Department …",
+   "via": "Techmeme"
+  },
+  {
+   "title": "Goldman Sachs is pulling Claude Code from its bankers and traders",
+   "url": "https://www.thestateofai.com/news/goldman-sachs-claude-code-traders-bankers",
+   "source": "Hacker News",
+   "published_at": "2026-11-08T18:16:07Z",
+   "text": "874 points and 470 comments on Hacker News.",
+   "points": 874,
+   "discussion": "https://news.ycombinator.com/item?id=50415628"
+  },
+  {
+   "title": "Nvidia Senior Director Madison Huang, daughter of Jensen, cancels a high-profile Seoul appearance c…",
+   "url": "https://www.bloomberg.com/news/articles/2026-11-09/nvidia-controversy-throws-high-profile-korea-event-into-disarray",
+   "source": "Yoolim Lee / Bloomberg",
+   "published_at": "2026-11-09T10:50:55Z",
+   "text": "Nvidia Senior Director Madison Huang, daughter of Jensen, cancels a high-profile Seoul appearance citing a “family matter”, throwing the event into disarray",
+   "via": "Techmeme"
+  },
+  {
    "title": "Sources: Alice Huang and her partner pitched a Southeast Asia data center project to China-based in…",
    "url": "https://www.ft.com/content/5d8c1e1d-6ce0-4eb4-9f5c-722fa5c4841d",
    "source": "Financial Times",
    "published_at": "2026-11-09T14:02:34Z",
-   "text": "Sources: Alice Huang and her partner pitched a Southeast Asia data center project to China-based investors in 2025, saying they had “no problem securing GPUs”",
+   "text": "Sources: Alice Huang and her partner pitched a Southeast Asia data center project to China-based investors in 2025, saying they had “no problem securing GPUs”. Alice Huang boasted of having access to Nvidia GPUs and her connection to Alibaba — The woman at the centre …",
    "via": "Techmeme"
-  },
-  {
-   "title": "I'm not convinced the AI bubble exists",
-   "url": "https://matteoraso.github.io/im-not-convinced-the-ai-bubble-exists.html#im-not-convinced-the-ai-bubble-exists",
-   "source": "Hacker News",
-   "published_at": "2026-11-08T23:44:36Z",
-   "text": "401 points and 677 comments on Hacker News.",
-   "points": 401,
-   "discussion": "https://news.ycombinator.com/item?id=50418975"
   },
   {
    "title": "Jensen Huang maintains deep control over Nvidia, managing 60+ direct reports and owning a 3.56% sta…",
    "url": "https://www.nytimes.com/2026/11/09/technology/jensen-huang-affair-nvidia.html?unlocked_article_code=1.PFE.mKVc.NEtql9fbaFYJ&smid=url-share",
    "source": "New York Times",
    "published_at": "2026-11-09T11:02:33Z",
-   "text": "Jensen Huang maintains deep control over Nvidia, managing 60+ direct reports and owning a 3.56% stake, presenting a challenge for Nvidia's 10-person board. The chief executive has a tight grip on his company, presenting a challenge for Nvidia's board, which is investigating his affair with a woman believed to be a Chinese spy.",
+   "text": "Jensen Huang maintains deep control over Nvidia, managing 60+ direct reports and owning a 3.56% stake, presenting a challenge for Nvidia's 10-person board",
    "via": "Techmeme"
-  },
-  {
-   "title": "ChatGPT Desktop forwards your SSH agent to remote machines",
-   "url": "https://news.ycombinator.com/item?id=50422628",
-   "source": "Hacker News",
-   "published_at": "2026-11-09T08:17:49Z",
-   "text": "85 points and 20 comments on Hacker News.",
-   "points": 85,
-   "discussion": "https://news.ycombinator.com/item?id=50422628"
   },
   {
    "title": "When talking about AI safety, President Trump says “I don't mind guardrails. But I don't wanna put…",
@@ -114,22 +128,6 @@
    "source": "CBS News",
    "published_at": "2026-11-09T05:15:39Z",
    "text": "When talking about AI safety, President Trump says “I don't mind guardrails. But I don't wanna put us in a deep second position”, and “China has no guardrails”. This past Tuesday, President Donald Trump's Republican Party suffered an extraordinary midterm repudiation …",
-   "via": "Techmeme"
-  },
-  {
-   "title": "Jensen Huang's scandal poses a rare crisis in US corporate history, given the national security sta…",
-   "url": "https://www.semafor.com/article/11/08/2026/nvidias-45-trillion-test-of-founder-immunity",
-   "source": "Andrew Edgecliffe-Johnson /…",
-   "published_at": "2026-11-09T04:25:38Z",
-   "text": "Jensen Huang's scandal poses a rare crisis in US corporate history, given the national security stakes, his centrality to Nvidia, and its role in the AI race",
-   "via": "Techmeme"
-  },
-  {
-   "title": "Sources and filings: how Jensen Huang hired his children and other family members, making Nvidia a…",
-   "url": "https://www.wsj.com/tech/ai/jensen-huang-apologized-to-nvidia-for-his-infidelity-his-kids-are-on-staff-190f3176?st=qRVEvG&reflink=desktopwebshare_permalink",
-   "source": "Wall Street Journal",
-   "published_at": "2026-11-09T05:10:56Z",
-   "text": "Sources and filings: how Jensen Huang hired his children and other family members, making Nvidia a family business to a degree that is unique in Silicon Valley",
    "via": "Techmeme"
   }
  ],
