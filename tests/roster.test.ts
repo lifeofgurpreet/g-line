@@ -7,7 +7,7 @@ const NOW = Date.parse('2026-10-21T06:00:00Z')
 
 test('the roster: fresh, well-formed heartbeats only, newest first; a day-old one is cleared', () => {
   const entries = [
-    { key: 's:a', value: { at: NOW - 5000, state: 'working', since: NOW - 180_000, ctx: 41, model: 'Opus 5.5' } },
+    { key: 's:a', value: { at: NOW - 5000, state: 'working', since: NOW - 180_000, ctx: 41, model: 'Opus 5.5', effort: 'high' } },
     { key: 's:b', value: { at: NOW - 1000, state: 'waiting', since: NOW - 90_000 } },
     { key: 's:gone', value: { at: NOW - 120_000, state: 'idle' } },
     { key: 's:odd', value: { at: NOW, state: 'dancing' } },
@@ -16,6 +16,16 @@ test('the roster: fresh, well-formed heartbeats only, newest first; a day-old on
   ]
   expect(rosterOf(entries, NOW).map(e => e.id)).toEqual(['b', 'a'])
   expect(staleRosterKeys(entries, NOW)).toEqual(['s:ancient'])
+})
+
+test('a heartbeat carries the effort its last turn ran at, when it has run one', () => {
+  const entries = [
+    { key: 's:a', value: { at: NOW, state: 'working', since: NOW, model: 'Opus 5.5', effort: 'xhigh' } },
+    { key: 's:b', value: { at: NOW - 1000, state: 'idle', since: NOW, model: 'Opus 5.5' } },
+    { key: 's:c', value: { at: NOW - 2000, state: 'idle', since: NOW, effort: 7 } },
+  ]
+  expect(rosterOf(entries, NOW).map(e => e.effort)).toEqual(['xhigh', undefined, undefined])
+  expect(rosterRow(rosterOf(entries, NOW)[0]!, NOW, false)).toBe('working <1m · Opus 5.5 xhigh')
 })
 
 test('line 2 says others only when there are some, and which wait on you', () => {

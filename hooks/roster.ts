@@ -21,6 +21,8 @@ export type RosterEntry = {
   /** When its prompt cache is estimated to lapse (seconds), while warm. */
   cacheUntil?: number
   model?: string
+  /** The effort its last main-loop turn ran at, as that turn's first request named it. */
+  effort?: string
   /** The `account_command` reading, only where the person configured one. */
   account?: string
 }
@@ -45,6 +47,7 @@ export function rosterOf(entries: readonly { key: string; value: unknown }[], no
       ...(typeof v.ctx === 'number' ? { ctx: v.ctx } : {}),
       ...(typeof v.cacheUntil === 'number' ? { cacheUntil: v.cacheUntil } : {}),
       ...(typeof v.model === 'string' ? { model: v.model.slice(0, 40) } : {}),
+      ...(typeof v.effort === 'string' ? { effort: v.effort.slice(0, 16) } : {}),
       ...(typeof v.account === 'string' ? { account: v.account.slice(0, 120) } : {}),
     })
   }
@@ -72,12 +75,13 @@ const ago = (ms: number) => {
   return m < 1 ? '<1m' : m < 60 ? `${m}m` : `${Math.floor(m / 60)}h ${m % 60}m`
 }
 
-/** One pane row per session: what it's doing and for how long, its context, its cache, its model and account. */
+/** One pane row per session: what it's doing and for how long, its context, its cache, its model and effort, and account. */
 export function rosterRow(e: RosterEntry, nowMs: number, mine: boolean): string {
   const what = e.state === 'waiting' ? `waiting on you ${ago(nowMs - e.since)}` : `${e.state} ${ago(nowMs - e.since)}`
   const cache = e.cacheUntil !== undefined
     ? e.cacheUntil * 1000 > nowMs ? `cache ~${ago(e.cacheUntil * 1000 - nowMs)}` : 'cache cold' : ''
-  return [mine ? `${what} (this one)` : what, e.ctx !== undefined ? `ctx ${Math.round(e.ctx)}%` : '', cache, e.model ?? '', e.account ?? '']
+  const model = [e.model, e.effort].filter(Boolean).join(' ')
+  return [mine ? `${what} (this one)` : what, e.ctx !== undefined ? `ctx ${Math.round(e.ctx)}%` : '', cache, model, e.account ?? '']
     .filter(Boolean).join(' · ')
 }
 

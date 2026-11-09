@@ -1323,7 +1323,8 @@ async function detailRows($: EngineInterface, seconds: number, columns?: number)
   if (config.roster && others.length) {
     rows.push({ key: 'h-roster', text: 'Sessions on this machine', bold: true })
     const mine = rosterState && sessionId ? [{ id: sessionId, at: now, state: rosterState.state, since: rosterState.since,
-      ...(s.context?.percent !== undefined ? { ctx: s.context.percent } : {}), ...(s.model ? { model: modelName(s.model) } : {}) }] : []
+      ...(s.context?.percent !== undefined ? { ctx: s.context.percent } : {}), ...(s.model ? { model: modelName(s.model) } : {}),
+      ...(s.effort ? { effort: s.effort } : {}) }] : []
     for (const entry of [...mine, ...others].slice(0, 10)) {
       rows.push({ key: `r-${entry.id}`, tone: entry.state === 'waiting' ? 'warn' : entry.id === sessionId ? undefined : 'dim', text: rosterRow(entry, now, entry.id === sessionId) })
     }
@@ -2366,6 +2367,7 @@ async function heartbeatRoster($: EngineInterface): Promise<void> {
       ...(s.context?.percent !== undefined ? { ctx: s.context.percent } : {}),
       ...(cache?.warm && cache.expires_at ? { cacheUntil: cache.expires_at } : {}),
       ...(s.model ? { model: modelName(s.model) } : {}),
+      ...(s.effort ? { effort: s.effort } : {}),
       ...(config.accountCommand && s.account ? { account: s.account } : {}),
     })
     const keys = (await $.store.keys()).filter(key => key.startsWith(ROSTER_PREFIX))
@@ -2509,7 +2511,7 @@ async function openDashboard($: EngineInterface): Promise<void> {
     const state = await stateNow($)
     const mine: RosterEntry = { id: sessionId ?? 'this', at, state, since: rosterState?.state === state ? rosterState.since : at,
       ...(s.context?.percent !== undefined ? { ctx: s.context.percent } : {}), ...(s.model ? { model: modelName(s.model) } : {}),
-      ...(config.accountCommand && s.account ? { account: s.account } : {}) }
+      ...(s.effort ? { effort: s.effort } : {}), ...(config.accountCommand && s.account ? { account: s.account } : {}) }
     const p = payload(s, seconds, ttl, idle)
     const k = config.guard.keepWarm
     const html = dashboardHtml({

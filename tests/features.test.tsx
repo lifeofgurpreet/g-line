@@ -1281,7 +1281,8 @@ test('a stop rule refuses new prompts with the window, what is left and the way 
 })
 
 test('low on the window, the conversation runs at a lower effort and new subagents on Sonnet, and the receipt says so', { timeoutMs: 30_000 }, async ($, on) => {
-  const w = world(on)
+  const kept: Record<string, unknown> = {}
+  const w = world(on, {}, kept)
   w.config = { guard: GUARD }
   const seen = engineBelow(on)
   hintBelow(on)
@@ -1313,6 +1314,9 @@ test('low on the window, the conversation runs at a lower effort and new subagen
     props: { isDraft: false, isWorking: false, hint: '? for shortcuts' }, viewport: { columns: 200, rows: 40 } })
   expect(await hint.find({ type: 'Text', text: /xhigh→medium/ })).toBeDefined()
   await hint.unmount()
+  // The roster's heartbeat carries the effort the turn ran at, not the one set.
+  await w.clock.advance(15_000)
+  expect(kept['s:session-1']).toEqual(expect.objectContaining({ effort: 'medium' }))
   // The window resets: effort is the person's again, said once.
   await measure($, w, 3, 5 * 3600)
   await w.clock.advance(15_000)
@@ -1320,6 +1324,8 @@ test('low on the window, the conversation runs at a lower effort and new subagen
   await $.turn.start({ text: 'go', turnId: 't2' })
   await step($, 't2', 0, 'xhigh')
   expect(seen.efforts[seen.efforts.length - 1]).toBe('xhigh')
+  await w.clock.advance(15_000)
+  expect(kept['s:session-1']).toEqual(expect.objectContaining({ effort: 'xhigh' }))
 })
 
 test('where a change of effort would rebuild the cache, the guard waits for the cache to go cold', { timeoutMs: 30_000 }, async ($, on) => {

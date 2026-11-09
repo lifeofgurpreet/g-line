@@ -1,5 +1,16 @@
 # Changelog
 
+## 0.23.2 (2026-11-09): each session's heartbeat says the effort it runs at
+
+- **The roster carries effort.** Each session's heartbeat in the plugin store now has the effort
+  its last main-loop turn ran at, as that turn's first request named it to Claude Code (the
+  guard's lower effort when the guard lowered it, not the one set). Before its first turn a
+  session has no effort to report, and none is written. Tools that read the machine's roster
+  can now show it beside the model.
+- **The pane and `/g-line dashboard` show it**: `Opus 5.5 high` where they said `Opus 5.5`.
+- Sessions that started before this version keep writing their heartbeat without it until they
+  restart.
+
 ## 0.23.1 (2026-11-09): no more "hook was skipped" notice for compaction
 
 - **The notice is gone.** Where Claude Code's managed `cc-plugin-sec-default` is installed, a
