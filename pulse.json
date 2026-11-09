@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-09T21:05:02Z",
+ "generated_at": "2026-11-09T21:38:44Z",
  "items": [
   {
    "title": "Nvidia's board launches a probe into whether Jensen Huang was targeted by a foreign spy plot, sayin…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-09T18:57:59Z",
    "text": "Introducing Claude Fable 5.2 and Claude Mythos 5.2, designed to tackle the most daunting technical challenges. They’re capable collaborators on ambitious projects in many fields, and show improvements in areas like coding, reasoning, and vision.",
    "author_name": "Claude",
-   "likes": 52615,
+   "likes": 57239,
    "story": "Anthropic releases Mythos 5.2 and Fable 5.2, saying they are “best for the most ambitious, open-ended technical work”, with outputs up to 30% faster than 5.1"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-11-09T18:42:09Z",
    "text": "Gemini is accelerating all of this. These numbers are from the AlphaChip paper in 2024. God knows what these numbers are now, they have not been updated in over two years. Google started leaning into the AI hardware design loop long before anyone.",
    "author_name": "Andrew Curran",
-   "likes": 285,
+   "likes": 314,
    "story": "Google unveils two specialized TPUs launching in 2027: the 8tx, to be paired with an AMD CPU, and the 8i Max, a dual-chip package for long-context window tasks"
   },
   {
@@ -44,7 +44,7 @@
    "published_at": "2026-11-09T18:03:24Z",
    "text": "1/ announcing our smallest, most efficient little model is here: muse ember 🔥 built for work that agents repeat all day, it gets you more intelligence per dollar than Haiku, Luna, and all other flash models at any reasoning setting and does it at a third of the cost or less!",
    "author_name": "Alexandr Wang",
-   "likes": 3980,
+   "likes": 4113,
    "story": "Meta releases Muse Ember, its smallest and most cost-efficient AI model yet, saying it delivers more intelligence per dollar than Haiku 5.5 and GPT-6 Luna"
   },
   {
@@ -56,13 +56,13 @@
    "via": "Techmeme"
   },
   {
-   "title": "DeepX claims inference up to 100B parameters at less than 5 W",
-   "url": "https://www.eetimes.com/deepx-tapes-out-second-gen-chip-projects-6-7x-performance-gain-with-lpddr5x-pim/",
+   "title": "Claude Fable 5.2 Scores 65 on Artificial Analysis, Highest So Far",
+   "url": "https://artificialanalysis.ai/models/claude-fable-5-2",
    "source": "Hacker News",
-   "published_at": "2026-11-09T18:33:58Z",
-   "text": "93 points and 11 comments on Hacker News.",
-   "points": 93,
-   "discussion": "https://news.ycombinator.com/item?id=50429545"
+   "published_at": "2026-11-09T20:04:55Z",
+   "text": "75 points and 39 comments on Hacker News.",
+   "points": 75,
+   "discussion": "https://news.ycombinator.com/item?id=50431144"
   },
   {
    "title": "jensen huang (nvidia ceo) finding out his fling alice huang has been a chinese intelligence asset t…",
@@ -71,7 +71,7 @@
    "published_at": "2026-11-09T06:57:57Z",
    "text": "jensen huang (nvidia ceo) finding out his fling alice huang has been a chinese intelligence asset this whole time",
    "author_name": "ukdicha modak",
-   "likes": 21151,
+   "likes": 21457,
    "story": "A profile of Alice Huang, a suspected Chinese spy who founded Megaspeed in 2023 and spent years in Jensen Huang's orbit; Megaspeed's Nvidia imports top $4.6B"
   },
   {
@@ -90,20 +90,20 @@
    "via": "Techmeme"
   },
   {
-   "title": "Goldman Sachs is pulling Claude Code from its bankers and traders",
-   "url": "https://www.thestateofai.com/news/goldman-sachs-claude-code-traders-bankers",
+   "title": "DeepX claims inference up to 100B parameters at less than 5 W",
+   "url": "https://www.eetimes.com/deepx-tapes-out-second-gen-chip-projects-6-7x-performance-gain-with-lpddr5x-pim/",
    "source": "Hacker News",
-   "published_at": "2026-11-08T18:16:07Z",
-   "text": "874 points and 470 comments on Hacker News.",
-   "points": 874,
-   "discussion": "https://news.ycombinator.com/item?id=50415628"
+   "published_at": "2026-11-09T18:33:58Z",
+   "text": "104 points and 13 comments on Hacker News.",
+   "points": 104,
+   "discussion": "https://news.ycombinator.com/item?id=50429545"
   },
   {
-   "title": "Nvidia Senior Director Madison Huang, daughter of Jensen, cancels a high-profile Seoul appearance c…",
-   "url": "https://www.bloomberg.com/news/articles/2026-11-09/nvidia-controversy-throws-high-profile-korea-event-into-disarray",
-   "source": "Yoolim Lee / Bloomberg",
-   "published_at": "2026-11-09T10:50:55Z",
-   "text": "Nvidia Senior Director Madison Huang, daughter of Jensen, cancels a high-profile Seoul appearance citing a “family matter”, throwing the event into disarray",
+   "title": "Jensen Huang maintains deep control over Nvidia, managing 60+ direct reports and owning a 3.56% sta…",
+   "url": "https://www.nytimes.com/2026/11/09/technology/jensen-huang-affair-nvidia.html?unlocked_article_code=1.PFE.mKVc.NEtql9fbaFYJ&smid=url-share",
+   "source": "New York Times",
+   "published_at": "2026-11-09T11:02:33Z",
+   "text": "Jensen Huang maintains deep control over Nvidia, managing 60+ direct reports and owning a 3.56% stake, presenting a challenge for Nvidia's 10-person board",
    "via": "Techmeme"
   },
   {
@@ -115,19 +115,19 @@
    "via": "Techmeme"
   },
   {
-   "title": "Jensen Huang maintains deep control over Nvidia, managing 60+ direct reports and owning a 3.56% sta…",
-   "url": "https://www.nytimes.com/2026/11/09/technology/jensen-huang-affair-nvidia.html?unlocked_article_code=1.PFE.mKVc.NEtql9fbaFYJ&smid=url-share",
-   "source": "New York Times",
-   "published_at": "2026-11-09T11:02:33Z",
-   "text": "Jensen Huang maintains deep control over Nvidia, managing 60+ direct reports and owning a 3.56% stake, presenting a challenge for Nvidia's 10-person board",
-   "via": "Techmeme"
-  },
-  {
    "title": "When talking about AI safety, President Trump says “I don't mind guardrails. But I don't wanna put…",
    "url": "https://www.cbsnews.com/news/donald-trump-2026-post-midterm-elections-interview-60-minutes-transcript/",
    "source": "CBS News",
    "published_at": "2026-11-09T05:15:39Z",
    "text": "When talking about AI safety, President Trump says “I don't mind guardrails. But I don't wanna put us in a deep second position”, and “China has no guardrails”. This past Tuesday, President Donald Trump's Republican Party suffered an extraordinary midterm repudiation …",
+   "via": "Techmeme"
+  },
+  {
+   "title": "Meta expands its AI age estimation tech globally to apply Instagram's Teen Account protections for…",
+   "url": "https://www.theverge.com/tech/1029627/meta-instagram-ai-age-assurance-global-expansion",
+   "source": "Jess Weatherbed / The Verge",
+   "published_at": "2026-11-09T12:15:49Z",
+   "text": "Meta expands its AI age estimation tech globally to apply Instagram's Teen Account protections for millions of users from 13 to 17 who misrepresented their age. Meta says it will expand Teen Account protections to millions more kids, even if they've misrepresented their age.﻿",
    "via": "Techmeme"
   }
  ],
