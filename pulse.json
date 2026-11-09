@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-09T09:12:10Z",
+ "generated_at": "2026-11-09T09:44:07Z",
  "items": [
   {
    "title": "Nvidia's board launches a probe into whether Jensen Huang was targeted by a foreign spy plot, sayin…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-08T22:33:27Z",
    "text": "Deadass biggest plot twist of 2026. the CEO of one of the biggest AI companies was cheating on his wife with a Chinese spy, that was relying intel to Chinese AI companies. You couldn’t write that Script in your wildest dreams.",
    "author_name": "JtheFrog",
-   "likes": 57114,
+   "likes": 58264,
    "story": "Email to staff: Jensen Huang admits an affair, takes “full responsibility”, and says he fell short of his duties to Nvidia's board, shareholders, and employees"
   },
   {
@@ -34,18 +34,18 @@
    "published_at": "2026-11-08T15:17:41Z",
    "text": "NEW in Power On: Apple CEO John Ternus held a closed-door meeting with Craig Federighi in the last few weeks, pushing his software chief to accelerate Apple’s AI road map and move beyond Siri improvements amid concerns about falling behind rivals.",
    "author_name": "Mark Gurman",
-   "likes": 2838,
+   "likes": 2856,
    "story": "Sources: John Ternus wants more urgency in Apple's AI efforts, pushing Craig Federighi to move beyond Siri AI tweaks to agentic and other advanced capabilities",
    "links": [
     "https://www.bloomberg.com/news/newsletters/2026-11-08/apple-explores-turning-siri-ai-into-chatgpt-dots-like-agent-ios-28-shake-up?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc5NDE1MTAxMCwiZXhwIjoxNzk0NzU1ODEwLCJhcnRpY2xlSWQiOiJUTzZWMDFLSUpIOEkwMCIsImJjb25uZWN0SWQiOiJDNEVEQ0FFMUZBMDU0MEJFQTI0QTlGMjExQzFFOTA4MCJ9.v_kF8kPRiaZ6qSDqbDcb8marNAUSibGlv7PG3r-OYKA"
    ]
   },
   {
-   "title": "Jensen Huang's scandal poses a rare crisis in US corporate history, given the national security sta…",
-   "url": "https://www.semafor.com/article/11/08/2026/nvidias-45-trillion-test-of-founder-immunity",
-   "source": "Andrew Edgecliffe-Johnson /…",
-   "published_at": "2026-11-09T04:25:38Z",
-   "text": "Jensen Huang's scandal poses a rare crisis in US corporate history, given the national security stakes, his centrality to Nvidia, and its role in the AI race. There's little precedent in US corporate history for the crisis facing Nvidia after reports that Jensen Huang was targeted by a Chinese “honeytrap” operation.",
+   "title": "Sources and filings detail how Jensen Huang has brought his children and other family members into…",
+   "url": "https://www.wsj.com/tech/ai/jensen-huang-apologized-to-nvidia-for-his-infidelity-his-kids-are-on-staff-190f3176?st=qRVEvG&reflink=desktopwebshare_permalink",
+   "source": "Wall Street Journal",
+   "published_at": "2026-11-09T05:10:56Z",
+   "text": "Sources and filings detail how Jensen Huang has brought his children and other family members into Nvidia, making it unusually family-run for Silicon Valley. The Nvidia CEO has elevated his children to prominence. His board is investigating reports that he was an espionage target.",
    "via": "Techmeme"
   },
   {
@@ -53,8 +53,8 @@
    "url": "https://www.thestateofai.com/news/goldman-sachs-claude-code-traders-bankers",
    "source": "Hacker News",
    "published_at": "2026-11-08T18:16:07Z",
-   "text": "758 points and 405 comments on Hacker News.",
-   "points": 758,
+   "text": "771 points and 412 comments on Hacker News.",
+   "points": 771,
    "discussion": "https://news.ycombinator.com/item?id=50415628"
   },
   {
@@ -84,9 +84,26 @@
    "url": "https://matteoraso.github.io/im-not-convinced-the-ai-bubble-exists.html#im-not-convinced-the-ai-bubble-exists",
    "source": "Hacker News",
    "published_at": "2026-11-08T23:44:36Z",
-   "text": "255 points and 400 comments on Hacker News.",
-   "points": 255,
+   "text": "276 points and 453 comments on Hacker News.",
+   "points": 276,
    "discussion": "https://news.ycombinator.com/item?id=50418975"
+  },
+  {
+   "title": "Jensen Huang's scandal poses a rare crisis in US corporate history, given the national security sta…",
+   "url": "https://www.semafor.com/article/11/08/2026/nvidias-45-trillion-test-of-founder-immunity",
+   "source": "Andrew Edgecliffe-Johnson /…",
+   "published_at": "2026-11-09T04:25:38Z",
+   "text": "Jensen Huang's scandal poses a rare crisis in US corporate history, given the national security stakes, his centrality to Nvidia, and its role in the AI race. There's little precedent in US corporate history for the crisis facing Nvidia after reports that Jensen Huang was targeted by a Chinese “honeytrap” operation.",
+   "via": "Techmeme"
+  },
+  {
+   "title": "How I Fight AI Brain Fry",
+   "url": "https://sergeykuhne.com/blog/fighting-ai-brain-fry",
+   "source": "Hacker News",
+   "published_at": "2026-11-08T19:37:42Z",
+   "text": "246 points and 171 comments on Hacker News.",
+   "points": 246,
+   "discussion": "https://news.ycombinator.com/item?id=50416363"
   },
   {
    "title": "Google rolls out a Googlebook update that frees up 3GB to 6GB of RAM via on-device AI optimizations…",
@@ -95,15 +112,6 @@
    "published_at": "2026-11-09T06:35:57Z",
    "text": "Google rolls out a Googlebook update that frees up 3GB to 6GB of RAM via on-device AI optimizations, reduces Chrome crashes, patches ~60 Android flaws, and more. Google's latest Googlebook update frees up to 6GB of RAM and fixes Chrome crashes. … Google is rolling out its November update …",
    "via": "Techmeme"
-  },
-  {
-   "title": "How I Fight AI Brain Fry",
-   "url": "https://sergeykuhne.com/blog/fighting-ai-brain-fry",
-   "source": "Hacker News",
-   "published_at": "2026-11-08T19:37:42Z",
-   "text": "242 points and 170 comments on Hacker News.",
-   "points": 242,
-   "discussion": "https://news.ycombinator.com/item?id=50416363"
   },
   {
    "title": "An interview with Cognition CISO Alex Stamos on how AI is upending cybersecurity, AI-powered red te…",
@@ -119,14 +127,6 @@
    "source": "Globe and Mail",
    "published_at": "2026-11-09T08:47:54Z",
    "text": "Toronto-based Ada and SF-based Dialpad, both makers of AI customer service software, agree to merge, sources say in an all-share deal valuing Ada at ~$430M. Ada Support Inc., the Toronto-based company that makes AI customer service software for businesses, has agreed to combine …",
-   "via": "Techmeme"
-  },
-  {
-   "title": "Sources: Anthropic bought commitments for 1.7GW of gas-fired generators from equipment supplier One…",
-   "url": "https://www.ft.com/content/41bf5c6a-9735-4f1a-a8e3-2bcccad58ba0",
-   "source": "Martha Muir / Financial Tim…",
-   "published_at": "2026-11-08T15:05:53Z",
-   "text": "Sources: Anthropic bought commitments for 1.7GW of gas-fired generators from equipment supplier OnePWR for $3.4B, the largest known such purchase by an AI lab",
    "via": "Techmeme"
   }
  ],
