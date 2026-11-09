@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-09T05:56:35Z",
+ "generated_at": "2026-11-09T06:28:20Z",
  "items": [
   {
    "title": "Nvidia's board launches a probe into whether Jensen Huang was targeted by a foreign spy plot, sayin…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-08T22:33:27Z",
    "text": "Deadass biggest plot twist of 2026. the CEO of one of the biggest AI companies was cheating on his wife with a Chinese spy, that was relying intel to Chinese AI companies. You couldn’t write that Script in your wildest dreams.",
    "author_name": "JtheFrog",
-   "likes": 48825,
+   "likes": 50217,
    "story": "Email to staff: Jensen Huang admits an affair, takes “full responsibility”, and says he fell short of his duties to Nvidia's board, shareholders, and employees"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-11-08T15:17:41Z",
    "text": "NEW in Power On: Apple CEO John Ternus held a closed-door meeting with Craig Federighi in the last few weeks, pushing his software chief to accelerate Apple’s AI road map and move beyond Siri improvements amid concerns about falling behind rivals.",
    "author_name": "Mark Gurman",
-   "likes": 2759,
+   "likes": 2777,
    "story": "Sources: John Ternus wants more urgency in Apple's AI efforts, pushing Craig Federighi to move beyond Siri AI tweaks to agentic and other advanced capabilities",
    "links": [
     "https://www.bloomberg.com/news/newsletters/2026-11-08/apple-explores-turning-siri-ai-into-chatgpt-dots-like-agent-ios-28-shake-up?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc5NDE1MTAxMCwiZXhwIjoxNzk0NzU1ODEwLCJhcnRpY2xlSWQiOiJUTzZWMDFLSUpIOEkwMCIsImJjb25uZWN0SWQiOiJDNEVEQ0FFMUZBMDU0MEJFQTI0QTlGMjExQzFFOTA4MCJ9.v_kF8kPRiaZ6qSDqbDcb8marNAUSibGlv7PG3r-OYKA"
@@ -53,19 +53,9 @@
    "url": "https://www.thestateofai.com/news/goldman-sachs-claude-code-traders-bankers",
    "source": "Hacker News",
    "published_at": "2026-11-08T18:16:07Z",
-   "text": "688 points and 384 comments on Hacker News.",
-   "points": 688,
+   "text": "696 points and 386 comments on Hacker News.",
+   "points": 696,
    "discussion": "https://news.ycombinator.com/item?id=50415628"
-  },
-  {
-   "title": "Introducing Arete-27B: Qwen3.8-27B, post-trained to reinforce Western values. Chinese open models a…",
-   "url": "https://x.com/NousResearch/status/2118822925445050435",
-   "source": "𝕏 @NousResearch",
-   "published_at": "2026-11-06T21:48:45Z",
-   "text": "Introducing Arete-27B: Qwen3.8-27B, post-trained to reinforce Western values. Chinese open models are currently the strongest available, but they ship with state-aligned behavior in the weights. We built an 803-prompt eval across seven value categories, including freedom of…",
-   "author_name": "Nous Research",
-   "likes": 14630,
-   "story": "Nous Research unveils Arete-27B, a post-trained Qwen3.8-27B model that reinforces Western values, saying the underlying Chinese model's bias layer is shallow"
   },
   {
    "title": "Open call for guest investigators in the life sciences",
@@ -94,8 +84,8 @@
    "url": "https://matteoraso.github.io/im-not-convinced-the-ai-bubble-exists.html#im-not-convinced-the-ai-bubble-exists",
    "source": "Hacker News",
    "published_at": "2026-11-08T23:44:36Z",
-   "text": "130 points and 180 comments on Hacker News.",
-   "points": 130,
+   "text": "145 points and 202 comments on Hacker News.",
+   "points": 145,
    "discussion": "https://news.ycombinator.com/item?id=50418975"
   },
   {
@@ -111,8 +101,8 @@
    "url": "https://sergeykuhne.com/blog/fighting-ai-brain-fry",
    "source": "Hacker News",
    "published_at": "2026-11-08T19:37:42Z",
-   "text": "201 points and 158 comments on Hacker News.",
-   "points": 201,
+   "text": "206 points and 158 comments on Hacker News.",
+   "points": 206,
    "discussion": "https://news.ycombinator.com/item?id=50416363"
   },
   {
@@ -129,6 +119,14 @@
    "source": "Vincent Chow / South China…",
    "published_at": "2026-11-09T03:15:38Z",
    "text": "Tencent's chief AI scientist Yao Shunyu says AI's bio abilities will soon make it “possible to do harm” and Anthropic has a “strong argument” for closed models. Artificial intelligence models will soon be powerful enough to master biology, presenting both benefits …",
+   "via": "Techmeme"
+  },
+  {
+   "title": "Sources: ByteDance seeks to expand its data center project in Ceara, Brazil, with a second phase la…",
+   "url": "https://www.bloomberg.com/news/articles/2026-11-06/tiktok-owner-bytedance-weighs-data-center-expansion-in-brazil",
+   "source": "Peter Millard / Bloomberg",
+   "published_at": "2026-11-09T05:51:11Z",
+   "text": "Sources: ByteDance seeks to expand its data center project in Ceara, Brazil, with a second phase larger than its ongoing $10B, 300MW project. TikTok owner ByteDance is considering expanding a data center project in northeastern Brazil, a move that would strengthen its standing …",
    "via": "Techmeme"
   }
  ],
