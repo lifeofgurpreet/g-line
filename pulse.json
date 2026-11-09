@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-09T11:55:02Z",
+ "generated_at": "2026-11-09T12:27:31Z",
  "items": [
   {
    "title": "Nvidia's board launches a probe into whether Jensen Huang was targeted by a foreign spy plot, sayin…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-08T22:33:27Z",
    "text": "Deadass biggest plot twist of 2026. the CEO of one of the biggest AI companies was cheating on his wife with a Chinese spy, that was relying intel to Chinese AI companies. You couldn’t write that Script in your wildest dreams.",
    "author_name": "JtheFrog",
-   "likes": 61923,
+   "likes": 62893,
    "story": "Email to staff: Jensen Huang admits an affair, takes “full responsibility”, and says he fell short of his duties to Nvidia's board, shareholders, and employees"
   },
   {
@@ -34,18 +34,18 @@
    "published_at": "2026-11-08T15:17:41Z",
    "text": "NEW in Power On: Apple CEO John Ternus held a closed-door meeting with Craig Federighi in the last few weeks, pushing his software chief to accelerate Apple’s AI road map and move beyond Siri improvements amid concerns about falling behind rivals.",
    "author_name": "Mark Gurman",
-   "likes": 2904,
+   "likes": 2922,
    "story": "Sources: John Ternus wants more urgency in Apple's AI efforts, pushing Craig Federighi to move beyond Siri AI tweaks to agentic and other advanced capabilities",
    "links": [
     "https://www.bloomberg.com/news/newsletters/2026-11-08/apple-explores-turning-siri-ai-into-chatgpt-dots-like-agent-ios-28-shake-up?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc5NDE1MTAxMCwiZXhwIjoxNzk0NzU1ODEwLCJhcnRpY2xlSWQiOiJUTzZWMDFLSUpIOEkwMCIsImJjb25uZWN0SWQiOiJDNEVEQ0FFMUZBMDU0MEJFQTI0QTlGMjExQzFFOTA4MCJ9.v_kF8kPRiaZ6qSDqbDcb8marNAUSibGlv7PG3r-OYKA"
    ]
   },
   {
-   "title": "Jensen Huang's scandal poses a rare crisis in US corporate history, given the national security sta…",
-   "url": "https://www.semafor.com/article/11/08/2026/nvidias-45-trillion-test-of-founder-immunity",
-   "source": "Andrew Edgecliffe-Johnson /…",
-   "published_at": "2026-11-09T04:25:38Z",
-   "text": "Jensen Huang's scandal poses a rare crisis in US corporate history, given the national security stakes, his centrality to Nvidia, and its role in the AI race. There's little precedent in US corporate history for the crisis facing Nvidia after reports that Jensen Huang was targeted by a Chinese “honeytrap” operation.",
+   "title": "Nvidia drops ~5% pre-market after its board opens a probe into Jensen Huang; Nvidia previously dism…",
+   "url": "https://www.ft.com/content/fa3b0a35-1aa9-4f31-97b4-e4c599e3e654",
+   "source": "Demetri Sevastopulo / Finan…",
+   "published_at": "2026-11-09T10:40:50Z",
+   "text": "Nvidia drops ~5% pre-market after its board opens a probe into Jensen Huang; Nvidia previously dismissed the interactions as “nothing unusual or unexpected”. Board of chipmaker opens investigation after chief executive Jensen Huang admits to affair",
    "via": "Techmeme"
   },
   {
@@ -53,8 +53,8 @@
    "url": "https://www.thestateofai.com/news/goldman-sachs-claude-code-traders-bankers",
    "source": "Hacker News",
    "published_at": "2026-11-08T18:16:07Z",
-   "text": "793 points and 420 comments on Hacker News.",
-   "points": 793,
+   "text": "796 points and 424 comments on Hacker News.",
+   "points": 796,
    "discussion": "https://news.ycombinator.com/item?id=50415628"
   },
   {
@@ -65,11 +65,11 @@
    "text": "Most of the changes I make to my projects these days come in the form of PRs opened for me by Claude Code or Codex. The PR is my unit of work - I use them to bundle commits together, iterating on them until a feature is complete, document decisions and then merge the finished result. Today's coding agents are great at writing PR descriptions. They're too good at describing the work The problem is that they are too good. An agent-written PR description is accurate and comprehensive. It describes the problem, the detailed solution, and the steps taken to verify it."
   },
   {
-   "title": "Jensen Huang maintains deep control over Nvidia, managing 60+ direct reports and owning a 3.56% sta…",
-   "url": "https://www.nytimes.com/2026/11/09/technology/jensun-huang-affair-nvidia.html",
-   "source": "New York Times",
-   "published_at": "2026-11-09T11:02:33Z",
-   "text": "Jensen Huang maintains deep control over Nvidia, managing 60+ direct reports and owning a 3.56% stake, presenting a challenge for Nvidia's 10-person board. The chief executive has a tight grip on his company, presenting a challenge for Nvidia's board, which is investigating his affair with a woman believed to be a Chinese spy.",
+   "title": "Jensen Huang's scandal poses a rare crisis in US corporate history, given the national security sta…",
+   "url": "https://www.semafor.com/article/11/08/2026/nvidias-45-trillion-test-of-founder-immunity",
+   "source": "Andrew Edgecliffe-Johnson /…",
+   "published_at": "2026-11-09T04:25:38Z",
+   "text": "Jensen Huang's scandal poses a rare crisis in US corporate history, given the national security stakes, his centrality to Nvidia, and its role in the AI race. There's little precedent in US corporate history for the crisis facing Nvidia after reports that Jensen Huang was targeted by a Chinese “honeytrap” operation.",
    "via": "Techmeme"
   },
   {
@@ -77,16 +77,16 @@
    "url": "https://matteoraso.github.io/im-not-convinced-the-ai-bubble-exists.html#im-not-convinced-the-ai-bubble-exists",
    "source": "Hacker News",
    "published_at": "2026-11-08T23:44:36Z",
-   "text": "344 points and 568 comments on Hacker News.",
-   "points": 344,
+   "text": "353 points and 594 comments on Hacker News.",
+   "points": 353,
    "discussion": "https://news.ycombinator.com/item?id=50418975"
   },
   {
-   "title": "Sources and filings detail how Jensen Huang has brought his children and other family members into…",
-   "url": "https://www.wsj.com/tech/ai/jensen-huang-apologized-to-nvidia-for-his-infidelity-his-kids-are-on-staff-190f3176?st=qRVEvG&reflink=desktopwebshare_permalink",
-   "source": "Wall Street Journal",
-   "published_at": "2026-11-09T05:10:56Z",
-   "text": "Sources and filings detail how Jensen Huang has brought his children and other family members into Nvidia, making it unusually family-run for Silicon Valley. The Nvidia CEO has elevated his children to prominence. His board is investigating reports that he was an espionage target.",
+   "title": "Jensen Huang maintains deep control over Nvidia, managing 60+ direct reports and owning a 3.56% sta…",
+   "url": "https://www.nytimes.com/2026/11/09/technology/jensen-huang-affair-nvidia.html?unlocked_article_code=1.PFE.mKVc.NEtql9fbaFYJ&smid=url-share",
+   "source": "New York Times",
+   "published_at": "2026-11-09T11:02:33Z",
+   "text": "Jensen Huang maintains deep control over Nvidia, managing 60+ direct reports and owning a 3.56% stake, presenting a challenge for Nvidia's 10-person board. The chief executive has a tight grip on his company, presenting a challenge for Nvidia's board, which is investigating his affair with a woman believed to be a Chinese spy.",
    "via": "Techmeme"
   },
   {
@@ -94,8 +94,8 @@
    "url": "https://sergeykuhne.com/blog/fighting-ai-brain-fry",
    "source": "Hacker News",
    "published_at": "2026-11-08T19:37:42Z",
-   "text": "269 points and 178 comments on Hacker News.",
-   "points": 269,
+   "text": "271 points and 182 comments on Hacker News.",
+   "points": 271,
    "discussion": "https://news.ycombinator.com/item?id=50416363"
   },
   {
@@ -104,6 +104,14 @@
    "source": "CBS News",
    "published_at": "2026-11-09T05:15:39Z",
    "text": "When talking about AI safety, President Trump says “I don't mind guardrails. But I don't wanna put us in a deep second position”, and “China has no guardrails”. This past Tuesday, President Donald Trump's Republican Party suffered an extraordinary midterm repudiation …",
+   "via": "Techmeme"
+  },
+  {
+   "title": "Sources and filings detail how Jensen Huang has brought his children and other family members into…",
+   "url": "https://www.wsj.com/tech/ai/jensen-huang-apologized-to-nvidia-for-his-infidelity-his-kids-are-on-staff-190f3176?st=qRVEvG&reflink=desktopwebshare_permalink",
+   "source": "Wall Street Journal",
+   "published_at": "2026-11-09T05:10:56Z",
+   "text": "Sources and filings detail how Jensen Huang has brought his children and other family members into Nvidia, making it unusually family-run for Silicon Valley. The Nvidia CEO has elevated his children to prominence. His board is investigating reports that he was an espionage target.",
    "via": "Techmeme"
   },
   {
@@ -120,14 +128,6 @@
    "source": "Jowi Morales / Tom's Hardwa…",
    "published_at": "2026-11-09T11:25:48Z",
    "text": "Amsterdam police arrested between 150 and 200 protesters for trespassing and violence at a Microsoft data center construction site owned by Pure Data Centers. The people were protesting against the use of fossil fuel generators to power data centers.",
-   "via": "Techmeme"
-  },
-  {
-   "title": "US voters in Harwood, North Dakota rejected a ballot measure that opposed Applied Digital's $3B dat…",
-   "url": "https://www.washingtonpost.com/technology/2026/11/08/only-town-america-that-said-yes-data-centers/",
-   "source": "Miriam Waldvogel / Washingt…",
-   "published_at": "2026-11-09T11:51:19Z",
-   "text": "US voters in Harwood, North Dakota rejected a ballot measure that opposed Applied Digital's $3B data center, set to open in 2027, bucking a nationwide backlash. On Election Day, much of the country turned against the massive projects that power AI. Here's why one place didn't. — SummaryLoading...",
    "via": "Techmeme"
   }
  ],
