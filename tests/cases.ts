@@ -3567,6 +3567,607 @@ export const CASES: any[] = [
     "alerts": []
   },
   {
+    "name": "fable/default/unbounded",
+    "payload": {
+      "model": {
+        "id": "claude-fable-5-2",
+        "display_name": "Fable 5.2"
+      },
+      "effort": {
+        "level": "xhigh"
+      },
+      "context_window": {
+        "used_percentage": 18,
+        "context_window_size": 200000,
+        "total_input_tokens": 36000
+      },
+      "rate_limits": {
+        "seven_day": {
+          "used_percentage": 12,
+          "resets_at": 1760432000
+        }
+      }
+    },
+    "options": {
+      "now": 1760000000,
+      "preset": "default",
+      "utcOffsetMinutes": 0
+    },
+    "lines": [
+      "Fable 5.2 (xhigh effort) · ctx 18% (164k left) · week 12% (resets in 5d)"
+    ]
+  },
+  {
+    "name": "fable/default/160",
+    "payload": {
+      "model": {
+        "id": "claude-fable-5-2",
+        "display_name": "Fable 5.2"
+      },
+      "effort": {
+        "level": "xhigh"
+      },
+      "context_window": {
+        "used_percentage": 18,
+        "context_window_size": 200000,
+        "total_input_tokens": 36000
+      },
+      "rate_limits": {
+        "seven_day": {
+          "used_percentage": 12,
+          "resets_at": 1760432000
+        }
+      }
+    },
+    "options": {
+      "now": 1760000000,
+      "preset": "default",
+      "columns": 160,
+      "utcOffsetMinutes": 0
+    },
+    "lines": [
+      "Fable 5.2 (xhigh effort) · ctx 18% (164k left) · week 12% (resets in 5d)"
+    ]
+  },
+  {
+    "name": "fable/default/100",
+    "payload": {
+      "model": {
+        "id": "claude-fable-5-2",
+        "display_name": "Fable 5.2"
+      },
+      "effort": {
+        "level": "xhigh"
+      },
+      "context_window": {
+        "used_percentage": 18,
+        "context_window_size": 200000,
+        "total_input_tokens": 36000
+      },
+      "rate_limits": {
+        "seven_day": {
+          "used_percentage": 12,
+          "resets_at": 1760432000
+        }
+      }
+    },
+    "options": {
+      "now": 1760000000,
+      "preset": "default",
+      "columns": 100,
+      "utcOffsetMinutes": 0
+    },
+    "lines": [
+      "Fable 5.2 (xhigh effort) · ctx 18% (164k left) · week 12% (resets in 5d)"
+    ]
+  },
+  {
+    "name": "fable/default/72",
+    "payload": {
+      "model": {
+        "id": "claude-fable-5-2",
+        "display_name": "Fable 5.2"
+      },
+      "effort": {
+        "level": "xhigh"
+      },
+      "context_window": {
+        "used_percentage": 18,
+        "context_window_size": 200000,
+        "total_input_tokens": 36000
+      },
+      "rate_limits": {
+        "seven_day": {
+          "used_percentage": 12,
+          "resets_at": 1760432000
+        }
+      }
+    },
+    "options": {
+      "now": 1760000000,
+      "preset": "default",
+      "columns": 72,
+      "utcOffsetMinutes": 0
+    },
+    "lines": [
+      "Fable 5.2 (xhigh effort) · ctx 18% (164k left) · week 12% (resets in 5d)"
+    ]
+  },
+  {
+    "name": "fable/default/48",
+    "payload": {
+      "model": {
+        "id": "claude-fable-5-2",
+        "display_name": "Fable 5.2"
+      },
+      "effort": {
+        "level": "xhigh"
+      },
+      "context_window": {
+        "used_percentage": 18,
+        "context_window_size": 200000,
+        "total_input_tokens": 36000
+      },
+      "rate_limits": {
+        "seven_day": {
+          "used_percentage": 12,
+          "resets_at": 1760432000
+        }
+      }
+    },
+    "options": {
+      "now": 1760000000,
+      "preset": "default",
+      "columns": 48,
+      "utcOffsetMinutes": 0
+    },
+    "lines": [
+      "Fable 5.2 xhigh · ctx 18% · wk 12% (5d)"
+    ]
+  },
+  {
+    "name": "fable/default/30",
+    "payload": {
+      "model": {
+        "id": "claude-fable-5-2",
+        "display_name": "Fable 5.2"
+      },
+      "effort": {
+        "level": "xhigh"
+      },
+      "context_window": {
+        "used_percentage": 18,
+        "context_window_size": 200000,
+        "total_input_tokens": 36000
+      },
+      "rate_limits": {
+        "seven_day": {
+          "used_percentage": 12,
+          "resets_at": 1760432000
+        }
+      }
+    },
+    "options": {
+      "now": 1760000000,
+      "preset": "default",
+      "columns": 30,
+      "utcOffsetMinutes": 0
+    },
+    "lines": [
+      "Fable xhigh · ctx 18% · wk 12%"
+    ]
+  },
+  {
+    "name": "fable/minimal/unbounded",
+    "payload": {
+      "model": {
+        "id": "claude-fable-5-2",
+        "display_name": "Fable 5.2"
+      },
+      "effort": {
+        "level": "xhigh"
+      },
+      "context_window": {
+        "used_percentage": 18,
+        "context_window_size": 200000,
+        "total_input_tokens": 36000
+      },
+      "rate_limits": {
+        "seven_day": {
+          "used_percentage": 12,
+          "resets_at": 1760432000
+        }
+      }
+    },
+    "options": {
+      "now": 1760000000,
+      "preset": "minimal",
+      "utcOffsetMinutes": 0
+    },
+    "lines": [
+      "Fable 5.2 (xhigh effort) · ctx 18% (164k left)"
+    ]
+  },
+  {
+    "name": "fable/minimal/160",
+    "payload": {
+      "model": {
+        "id": "claude-fable-5-2",
+        "display_name": "Fable 5.2"
+      },
+      "effort": {
+        "level": "xhigh"
+      },
+      "context_window": {
+        "used_percentage": 18,
+        "context_window_size": 200000,
+        "total_input_tokens": 36000
+      },
+      "rate_limits": {
+        "seven_day": {
+          "used_percentage": 12,
+          "resets_at": 1760432000
+        }
+      }
+    },
+    "options": {
+      "now": 1760000000,
+      "preset": "minimal",
+      "columns": 160,
+      "utcOffsetMinutes": 0
+    },
+    "lines": [
+      "Fable 5.2 (xhigh effort) · ctx 18% (164k left)"
+    ]
+  },
+  {
+    "name": "fable/minimal/100",
+    "payload": {
+      "model": {
+        "id": "claude-fable-5-2",
+        "display_name": "Fable 5.2"
+      },
+      "effort": {
+        "level": "xhigh"
+      },
+      "context_window": {
+        "used_percentage": 18,
+        "context_window_size": 200000,
+        "total_input_tokens": 36000
+      },
+      "rate_limits": {
+        "seven_day": {
+          "used_percentage": 12,
+          "resets_at": 1760432000
+        }
+      }
+    },
+    "options": {
+      "now": 1760000000,
+      "preset": "minimal",
+      "columns": 100,
+      "utcOffsetMinutes": 0
+    },
+    "lines": [
+      "Fable 5.2 (xhigh effort) · ctx 18% (164k left)"
+    ]
+  },
+  {
+    "name": "fable/minimal/72",
+    "payload": {
+      "model": {
+        "id": "claude-fable-5-2",
+        "display_name": "Fable 5.2"
+      },
+      "effort": {
+        "level": "xhigh"
+      },
+      "context_window": {
+        "used_percentage": 18,
+        "context_window_size": 200000,
+        "total_input_tokens": 36000
+      },
+      "rate_limits": {
+        "seven_day": {
+          "used_percentage": 12,
+          "resets_at": 1760432000
+        }
+      }
+    },
+    "options": {
+      "now": 1760000000,
+      "preset": "minimal",
+      "columns": 72,
+      "utcOffsetMinutes": 0
+    },
+    "lines": [
+      "Fable 5.2 (xhigh effort) · ctx 18% (164k left)"
+    ]
+  },
+  {
+    "name": "fable/minimal/48",
+    "payload": {
+      "model": {
+        "id": "claude-fable-5-2",
+        "display_name": "Fable 5.2"
+      },
+      "effort": {
+        "level": "xhigh"
+      },
+      "context_window": {
+        "used_percentage": 18,
+        "context_window_size": 200000,
+        "total_input_tokens": 36000
+      },
+      "rate_limits": {
+        "seven_day": {
+          "used_percentage": 12,
+          "resets_at": 1760432000
+        }
+      }
+    },
+    "options": {
+      "now": 1760000000,
+      "preset": "minimal",
+      "columns": 48,
+      "utcOffsetMinutes": 0
+    },
+    "lines": [
+      "Fable 5.2 (xhigh effort) · ctx 18% (164k left)"
+    ]
+  },
+  {
+    "name": "fable/minimal/30",
+    "payload": {
+      "model": {
+        "id": "claude-fable-5-2",
+        "display_name": "Fable 5.2"
+      },
+      "effort": {
+        "level": "xhigh"
+      },
+      "context_window": {
+        "used_percentage": 18,
+        "context_window_size": 200000,
+        "total_input_tokens": 36000
+      },
+      "rate_limits": {
+        "seven_day": {
+          "used_percentage": 12,
+          "resets_at": 1760432000
+        }
+      }
+    },
+    "options": {
+      "now": 1760000000,
+      "preset": "minimal",
+      "columns": 30,
+      "utcOffsetMinutes": 0
+    },
+    "lines": [
+      "Fable 5.2 xhigh · ctx 18%"
+    ]
+  },
+  {
+    "name": "fable/full/unbounded",
+    "payload": {
+      "model": {
+        "id": "claude-fable-5-2",
+        "display_name": "Fable 5.2"
+      },
+      "effort": {
+        "level": "xhigh"
+      },
+      "context_window": {
+        "used_percentage": 18,
+        "context_window_size": 200000,
+        "total_input_tokens": 36000
+      },
+      "rate_limits": {
+        "seven_day": {
+          "used_percentage": 12,
+          "resets_at": 1760432000
+        }
+      }
+    },
+    "options": {
+      "now": 1760000000,
+      "preset": "full",
+      "utcOffsetMinutes": 0
+    },
+    "lines": [
+      "Fable 5.2 (xhigh effort) · context ▰▱▱▱▱ 18% (164k left) · week ▰▱▱▱▱ 12% (resets in 5d)"
+    ]
+  },
+  {
+    "name": "fable/full/160",
+    "payload": {
+      "model": {
+        "id": "claude-fable-5-2",
+        "display_name": "Fable 5.2"
+      },
+      "effort": {
+        "level": "xhigh"
+      },
+      "context_window": {
+        "used_percentage": 18,
+        "context_window_size": 200000,
+        "total_input_tokens": 36000
+      },
+      "rate_limits": {
+        "seven_day": {
+          "used_percentage": 12,
+          "resets_at": 1760432000
+        }
+      }
+    },
+    "options": {
+      "now": 1760000000,
+      "preset": "full",
+      "columns": 160,
+      "utcOffsetMinutes": 0
+    },
+    "lines": [
+      "Fable 5.2 (xhigh effort) · context ▰▱▱▱▱ 18% (164k left) · week ▰▱▱▱▱ 12% (resets in 5d)"
+    ]
+  },
+  {
+    "name": "fable/full/100",
+    "payload": {
+      "model": {
+        "id": "claude-fable-5-2",
+        "display_name": "Fable 5.2"
+      },
+      "effort": {
+        "level": "xhigh"
+      },
+      "context_window": {
+        "used_percentage": 18,
+        "context_window_size": 200000,
+        "total_input_tokens": 36000
+      },
+      "rate_limits": {
+        "seven_day": {
+          "used_percentage": 12,
+          "resets_at": 1760432000
+        }
+      }
+    },
+    "options": {
+      "now": 1760000000,
+      "preset": "full",
+      "columns": 100,
+      "utcOffsetMinutes": 0
+    },
+    "lines": [
+      "Fable 5.2 (xhigh effort) · context ▰▱▱▱▱ 18% (164k left) · week ▰▱▱▱▱ 12% (resets in 5d)"
+    ]
+  },
+  {
+    "name": "fable/full/72",
+    "payload": {
+      "model": {
+        "id": "claude-fable-5-2",
+        "display_name": "Fable 5.2"
+      },
+      "effort": {
+        "level": "xhigh"
+      },
+      "context_window": {
+        "used_percentage": 18,
+        "context_window_size": 200000,
+        "total_input_tokens": 36000
+      },
+      "rate_limits": {
+        "seven_day": {
+          "used_percentage": 12,
+          "resets_at": 1760432000
+        }
+      }
+    },
+    "options": {
+      "now": 1760000000,
+      "preset": "full",
+      "columns": 72,
+      "utcOffsetMinutes": 0
+    },
+    "lines": [
+      "Fable 5.2 xhigh · ctx 18% (164k left) · wk 12% (5d)"
+    ]
+  },
+  {
+    "name": "fable/full/48",
+    "payload": {
+      "model": {
+        "id": "claude-fable-5-2",
+        "display_name": "Fable 5.2"
+      },
+      "effort": {
+        "level": "xhigh"
+      },
+      "context_window": {
+        "used_percentage": 18,
+        "context_window_size": 200000,
+        "total_input_tokens": 36000
+      },
+      "rate_limits": {
+        "seven_day": {
+          "used_percentage": 12,
+          "resets_at": 1760432000
+        }
+      }
+    },
+    "options": {
+      "now": 1760000000,
+      "preset": "full",
+      "columns": 48,
+      "utcOffsetMinutes": 0
+    },
+    "lines": [
+      "Fable xhigh · ctx 18% · wk 12%"
+    ]
+  },
+  {
+    "name": "fable/full/30",
+    "payload": {
+      "model": {
+        "id": "claude-fable-5-2",
+        "display_name": "Fable 5.2"
+      },
+      "effort": {
+        "level": "xhigh"
+      },
+      "context_window": {
+        "used_percentage": 18,
+        "context_window_size": 200000,
+        "total_input_tokens": 36000
+      },
+      "rate_limits": {
+        "seven_day": {
+          "used_percentage": 12,
+          "resets_at": 1760432000
+        }
+      }
+    },
+    "options": {
+      "now": 1760000000,
+      "preset": "full",
+      "columns": 30,
+      "utcOffsetMinutes": 0
+    },
+    "lines": [
+      "Fable xhigh · ctx 18% · wk 12%"
+    ]
+  },
+  {
+    "name": "fable/alerts",
+    "payload": {
+      "model": {
+        "id": "claude-fable-5-2",
+        "display_name": "Fable 5.2"
+      },
+      "effort": {
+        "level": "xhigh"
+      },
+      "context_window": {
+        "used_percentage": 18,
+        "context_window_size": 200000,
+        "total_input_tokens": 36000
+      },
+      "rate_limits": {
+        "seven_day": {
+          "used_percentage": 12,
+          "resets_at": 1760432000
+        }
+      }
+    },
+    "options": {
+      "now": 1760000000,
+      "utcOffsetMinutes": 0
+    },
+    "alerts": []
+  },
+  {
     "name": "junk/default/unbounded",
     "payload": {
       "model": {

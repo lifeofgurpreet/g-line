@@ -111,6 +111,12 @@ test('an effort the guard lowered shows both, what was set and what ran, in ambe
   expect(deck({ ...P, effort: { level: 'high', set: 'high' } }, O, {}).next.find(part => part.key === 'model')?.text).toBe('Opus 5.5 high')
 })
 
+test('Fable 5.2 reads as itself on line 2, and as Fable with its effort where the line is narrow', async () => {
+  const fable = { ...P, model: { id: 'claude-fable-5-2', display_name: 'Fable 5.2' }, effort: { level: 'xhigh' } }
+  expect(deck(fable, O, {}).next.find(part => part.key === 'model')?.text).toBe('Fable 5.2 xhigh')
+  expect(deck(fable, O, { next: 30 }).next.find(part => part.key === 'model')?.text).toBe('Fable xhigh')
+})
+
 test('a cold cache keeps its size while there is room, in its shortest form too', async () => {
   const cold = { ...P, prompt_cache: { warm: false, caching_observed: true, ttl: '1h' as const, expires_at: NOW - 60, recache_tokens_if_cold: 57_000 } }
   expect(deck(cold, O, {}).next.find(part => part.key === 'cache')?.text).toBe('cache cold, next turn rebuilds 57k')

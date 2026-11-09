@@ -1352,6 +1352,32 @@ test('where a change of effort would rebuild the cache, the guard waits for the 
   expect(seen.efforts[2]).toBe('medium')
 })
 
+test('0.24.0: /model shows the new model on line 2 before any turn runs on it; its effort waits for that turn', { timeoutMs: 30_000 }, async ($, on) => {
+  const w = world(on)
+  engineBelow(on)
+  hintBelow(on)
+  on('command.run', ($, e) => {
+    if (e.command === 'model') w.model = e.args
+    return { text: `Set model to ${e.args}` } as never
+  })
+  await start($)
+  await $.turn.start({ text: 'go', turnId: 't1' })
+  await step($, 't1', 0, 'xhigh')
+  expect(await line2Has($, /^Opus 5\.5 xhigh$/)).toBe(true)
+  // `/model claude-fable-5-2`: Claude Code holds the new model; no request has run on it yet.
+  await $.command.run({ command: 'model', args: 'claude-fable-5-2' } as never)
+  expect(await line2Has($, /^Fable 5\.2$/)).toBe(true)
+  expect(await line2Has($, /Opus|xhigh/)).toBe(false)
+  // The picker and a fallback change it without a command g-line sees: the next beat reads it.
+  w.model = 'claude-sonnet-5-5'
+  await w.clock.advance(15_000)
+  expect(await line2Has($, /^Sonnet 5\.5$/)).toBe(true)
+  // The first request on the chosen model names its effort again.
+  await $.turn.start({ text: 'go', turnId: 't2' })
+  await step($, 't2', 0, 'high', 'claude-sonnet-5-5')
+  expect(await line2Has($, /^Sonnet 5\.5 high$/)).toBe(true)
+})
+
 test('a model other than the one asked for answers: the receipt says which', { timeoutMs: 30_000 }, async ($, on) => {
   const w = world(on)
   on('turn.step', async function* ($: unknown, e: { turnId: string; index: number }) {

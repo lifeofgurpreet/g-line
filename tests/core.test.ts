@@ -42,6 +42,7 @@ test('model ids read as names', async () => {
   expect(modelName('claude-opus-5-5')).toBe('Opus 5.5')
   expect(modelName('claude-sonnet-5-20260901')).toBe('Sonnet 5')
   expect(modelName('claude-fable-5-1[1m]')).toBe('Fable 5.1 (1M)')
+  expect(modelName('claude-fable-5-2')).toBe('Fable 5.2')
   expect(modelName('gpt-oss')).toBe('gpt-oss')
 })
 

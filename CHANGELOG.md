@@ -1,5 +1,20 @@
 # Changelog
 
+## 0.24.0 (2026-11-10): line 2 names the model `/model` just chose
+
+- **No more stale model after `/model`.** Line 2 named the model of the last turn, so right after
+  `/model claude-fable-5-2` it still said `Opus 5.5` until a turn ran. It now reads the session's
+  model from Claude Code (`$.session.model()`, "the main loop's model, as `/model` shows it") as
+  soon as `/model` has run, and every heartbeat, which catches the picker, the `/config` model row
+  and a fallback. The pane, the dashboard and the roster heartbeat name the same model.
+- **Its effort waits for its first turn.** The effort beside the model is the one the last turn's
+  request ran at. Claude Code hands mods no effort for a model that hasn't answered yet, so after a
+  switch line 2 reads `Fable 5.2` alone, and `Fable 5.2 xhigh` once Fable has run a turn.
+- **Receipts are unchanged.** What actually answered a turn is still that turn's own figure:
+  `answered by Sonnet 5.5` on its receipt when Claude Code fell back.
+- `Fable 5.2` reads as itself (`claude-fable-5-2`), and as `Fable` with its effort where line 2
+  is narrow; the golden cases pin it.
+
 ## 0.23.2 (2026-11-09): each session's heartbeat says the effort it runs at
 
 - **The roster carries effort.** Each session's heartbeat in the plugin store now has the effort

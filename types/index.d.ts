@@ -2,6 +2,11 @@
 export type Snap = {
   /** Model id the last main-loop request named. */
   model?: string
+  /**
+   * The main loop's model as `$.session.model()` answers it: what `/model` (or the picker, `/config`, a
+   * fallback or a resume) chose, before any request runs on it. Line 2 names this one.
+   */
+  selected?: string
   effort?: string
   /** The effort the person set, when the guard ran the last main-loop request lower. */
   effortSet?: string

@@ -1,6 +1,6 @@
 // Regenerates tests/cases.ts: the golden renderings both renderers must match.
 //   bun scripts/golden.ts
-import { alerts, plain, render } from '../hooks/core'
+import { alerts, modelName, plain, render } from '../hooks/core'
 import type { Options, Payload } from '../hooks/core'
 
 const NOW = 1760000000
@@ -35,6 +35,11 @@ const fixtures: Record<string, Payload> = {
     rate_limits: { five_hour: { used_percentage: 100, resets_at: NOW + 41 * 60 } },
   },
   bare: { model: { display_name: 'Haiku 4.5' } },
+  fable: {
+    model: { id: 'claude-fable-5-2', display_name: modelName('claude-fable-5-2') }, effort: { level: 'xhigh' },
+    context_window: { used_percentage: 18, context_window_size: 200000, total_input_tokens: 36000 },
+    rate_limits: { seven_day: { used_percentage: 12, resets_at: NOW + 5 * 24 * H } },
+  },
   junk: { model: { display_name: 'Bad\u001b[31m' }, context_window: { used_percentage: Number.NaN },
     rate_limits: { five_hour: { used_percentage: -1 } } } as Payload,
 }

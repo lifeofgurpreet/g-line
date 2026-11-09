@@ -376,11 +376,29 @@ async function idleCompactionMissed($: EngineInterface): Promise<void> {
 
 // ---------------------------------------------------------------- payload
 
+/**
+ * The model the session is on: `/model`'s choice as `$.session.model()` reads it, else the last request's. Its
+ * effort is the last request's, kept only while that request ran on the same model: another model's effort
+ * isn't known until its first request. What actually answered a turn stays on that turn's receipt (`servedBy`).
+ */
+function onModel(s: Snap): { model?: string; effort?: string; effortSet?: string } {
+  const model = s.selected ?? s.model
+  if (model && s.model && plainModel(model) !== plainModel(s.model)) return { model }
+  return { model, effort: s.effort, effortSet: s.effortSet }
+}
+
+/** The roster's words for this session's model and effort: line 2's (`onModel`). */
+function modelWords(s: Snap): { model?: string; effort?: string } {
+  const chosen = onModel(s)
+  return { ...(chosen.model ? { model: modelName(chosen.model) } : {}), ...(chosen.effort ? { effort: chosen.effort } : {}) }
+}
+
 /** The statusLine-shaped view of what the mod knows, for the core. */
 export function payload(s: Snap, nowSeconds: number, ttl: '5m' | '1h' | undefined, idle?: IdleCompaction): Payload {
   const p: Payload = {}
-  if (s.model) p.model = { display_name: modelName(s.model) }
-  if (s.effort) p.effort = { level: s.effort, ...(s.effortSet ? { set: s.effortSet } : {}) }
+  const chosen = onModel(s)
+  if (chosen.model) p.model = { display_name: modelName(chosen.model) }
+  if (chosen.effort) p.effort = { level: chosen.effort, ...(chosen.effortSet ? { set: chosen.effortSet } : {}) }
   if (s.context && s.context.percent !== undefined) {
     p.context_window = { used_percentage: s.context.percent, context_window_size: s.context.window,
       total_input_tokens: s.context.tokens }
@@ -1160,17 +1178,29 @@ async function resync($: EngineInterface): Promise<void> {
   await setupLive($)
   try {
     const id = await $.session.model()
-    await update($, snap, s => ({ ...s, model: s.model ?? id }))
+    await update($, snap, s => ({ ...s, model: s.model ?? id, selected: id }))
   } catch {
     // the first request names the model
   }
   await Promise.all([measure($).catch(() => undefined), refreshGit($), refreshAccount($), refreshAgents($), pruneLedger($)])
 }
 
+/** The main loop's model as Claude Code holds it now (`$.session.model()`), so `/model` shows before the next turn. */
+async function readModel($: EngineInterface): Promise<void> {
+  try {
+    const id = await $.session.model()
+    if (typeof id === 'string' && id && (await read($, snap)).selected !== id) await update($, snap, s => ({ ...s, selected: id }))
+  } catch {
+    // the last request's model stands
+  }
+}
+
 async function heartbeat($: EngineInterface): Promise<void> {
   beats += 1
   await markLive($)
   await update($, tick, () => beats)
+  // The picker, `/config` and a fallback change the model without a command g-line sees.
+  await readModel($)
   await nudge($)
   if (beats % 2 === 0) await refreshGit($)
   if (beats % 40 === 0 || (accountMissed && beats % 4 === 0)) await refreshAccount($)
@@ -1323,8 +1353,7 @@ async function detailRows($: EngineInterface, seconds: number, columns?: number)
   if (config.roster && others.length) {
     rows.push({ key: 'h-roster', text: 'Sessions on this machine', bold: true })
     const mine = rosterState && sessionId ? [{ id: sessionId, at: now, state: rosterState.state, since: rosterState.since,
-      ...(s.context?.percent !== undefined ? { ctx: s.context.percent } : {}), ...(s.model ? { model: modelName(s.model) } : {}),
-      ...(s.effort ? { effort: s.effort } : {}) }] : []
+      ...(s.context?.percent !== undefined ? { ctx: s.context.percent } : {}), ...modelWords(s) }] : []
     for (const entry of [...mine, ...others].slice(0, 10)) {
       rows.push({ key: `r-${entry.id}`, tone: entry.state === 'waiting' ? 'warn' : entry.id === sessionId ? undefined : 'dim', text: rosterRow(entry, now, entry.id === sessionId) })
     }
@@ -2366,8 +2395,7 @@ async function heartbeatRoster($: EngineInterface): Promise<void> {
       at, state, since: rosterState.since,
       ...(s.context?.percent !== undefined ? { ctx: s.context.percent } : {}),
       ...(cache?.warm && cache.expires_at ? { cacheUntil: cache.expires_at } : {}),
-      ...(s.model ? { model: modelName(s.model) } : {}),
-      ...(s.effort ? { effort: s.effort } : {}),
+      ...modelWords(s),
       ...(config.accountCommand && s.account ? { account: s.account } : {}),
     })
     const keys = (await $.store.keys()).filter(key => key.startsWith(ROSTER_PREFIX))
@@ -2510,8 +2538,8 @@ async function openDashboard($: EngineInterface): Promise<void> {
       .filter(entry => entry.id !== sessionId)
     const state = await stateNow($)
     const mine: RosterEntry = { id: sessionId ?? 'this', at, state, since: rosterState?.state === state ? rosterState.since : at,
-      ...(s.context?.percent !== undefined ? { ctx: s.context.percent } : {}), ...(s.model ? { model: modelName(s.model) } : {}),
-      ...(s.effort ? { effort: s.effort } : {}), ...(config.accountCommand && s.account ? { account: s.account } : {}) }
+      ...(s.context?.percent !== undefined ? { ctx: s.context.percent } : {}), ...modelWords(s),
+      ...(config.accountCommand && s.account ? { account: s.account } : {}) }
     const p = payload(s, seconds, ttl, idle)
     const k = config.guard.keepWarm
     const html = dashboardHtml({
@@ -2947,10 +2975,14 @@ export const register: Register = (on, options) => {
     return refused ? { drop: refused } : next(e)
   }).catch(($, e, next) => next(e))
 
-  // Observed, never changed: a command that replaces the conversation, so its shrink isn't read as idle compaction.
+  // Observed, never changed: a command that replaces the conversation, so its shrink isn't read as idle compaction;
+  // and `/model`, so line 2 names the new model as soon as the command has run, not after the next turn.
   on('command.run', async ($, e, next) => {
     if (REPLACING.has(e.command)) replacedAt = await nowSeconds($)
-    return next(e)
+    if (e.command !== 'model') return next(e)
+    const out = await next(e)
+    await readModel($)
+    return out
   }).catch(($, e, next) => next(e))
   on('command.run', { command: COMMAND }, async ($, e) => runCommand($, e))
   on('command.run', { command: OLD_COMMAND }, async ($, e) => runCommand($, e))
