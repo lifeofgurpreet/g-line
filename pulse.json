@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-09T04:52:14Z",
+ "generated_at": "2026-11-09T05:24:25Z",
  "items": [
   {
    "title": "Nvidia's board launches a probe into whether Jensen Huang was targeted by a foreign spy plot, sayin…",
@@ -17,8 +17,8 @@
    "published_at": "2026-11-08T22:33:27Z",
    "text": "Deadass biggest plot twist of 2026. the CEO of one of the biggest AI companies was cheating on his wife with a Chinese spy, that was relying intel to Chinese AI companies. You couldn’t write that Script in your wildest dreams.",
    "author_name": "JtheFrog",
-   "likes": 45946,
-   "story": "Trump says Jensen Huang should stay on as Nvidia CEO after affair admission, saying he is a “fine person” and “I haven't heard he's done anything wrong”"
+   "likes": 47482,
+   "story": "Email to staff: Jensen Huang admits an affair, takes “full responsibility”, and says he fell short of his duties to Nvidia's board, shareholders, and employees"
   },
   {
    "title": "Claude Code 2.1.319 released",
@@ -34,18 +34,18 @@
    "published_at": "2026-11-08T15:17:41Z",
    "text": "NEW in Power On: Apple CEO John Ternus held a closed-door meeting with Craig Federighi in the last few weeks, pushing his software chief to accelerate Apple’s AI road map and move beyond Siri improvements amid concerns about falling behind rivals.",
    "author_name": "Mark Gurman",
-   "likes": 2698,
+   "likes": 2725,
    "story": "Sources: John Ternus wants more urgency in Apple's AI efforts, pushing Craig Federighi to move beyond Siri AI tweaks to agentic and other advanced capabilities",
    "links": [
     "https://www.bloomberg.com/news/newsletters/2026-11-08/apple-explores-turning-siri-ai-into-chatgpt-dots-like-agent-ios-28-shake-up?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc5NDE1MTAxMCwiZXhwIjoxNzk0NzU1ODEwLCJhcnRpY2xlSWQiOiJUTzZWMDFLSUpIOEkwMCIsImJjb25uZWN0SWQiOiJDNEVEQ0FFMUZBMDU0MEJFQTI0QTlGMjExQzFFOTA4MCJ9.v_kF8kPRiaZ6qSDqbDcb8marNAUSibGlv7PG3r-OYKA"
    ]
   },
   {
-   "title": "An interview with Cognition CISO Alex Stamos on how AI is upending cybersecurity, AI-powered red te…",
-   "url": "https://www.theverge.com/podcast/1029038/ai-cybersecurity-hackers-data-breach-dark-age-alex-stamos",
-   "source": "Nilay Patel / The Verge",
-   "published_at": "2026-11-09T04:05:36Z",
-   "text": "An interview with Cognition CISO Alex Stamos on how AI is upending cybersecurity, AI-powered red teaming, vulnerabilities in legacy codebases, and more. Today, I'm talking with Alex Stamos, chief security officer at Cognition and longtime cybersecurity expert, about what a mess cybersecurity is right now.",
+   "title": "Trump says Jensen Huang should stay on as Nvidia CEO after affair admission, saying he is a “fine p…",
+   "url": "https://www.bloomberg.com/news/articles/2026-11-08/trump-defends-nvidia-s-huang-after-he-admits-affair-with-spy",
+   "source": "Kate Sullivan / Bloomberg",
+   "published_at": "2026-11-09T01:40:53Z",
+   "text": "Trump says Jensen Huang should stay on as Nvidia CEO after affair admission, saying he is a “fine person” and “I haven't heard he's done anything wrong”. President Donald Trump called Jensen Huang a “fine person” and said he should stay on as the chief executive officer …",
    "via": "Techmeme"
   },
   {
@@ -53,8 +53,8 @@
    "url": "https://www.thestateofai.com/news/goldman-sachs-claude-code-traders-bankers",
    "source": "Hacker News",
    "published_at": "2026-11-08T18:16:07Z",
-   "text": "672 points and 381 comments on Hacker News.",
-   "points": 672,
+   "text": "680 points and 383 comments on Hacker News.",
+   "points": 680,
    "discussion": "https://news.ycombinator.com/item?id=50415628"
   },
   {
@@ -64,7 +64,7 @@
    "published_at": "2026-11-06T21:48:45Z",
    "text": "Introducing Arete-27B: Qwen3.8-27B, post-trained to reinforce Western values. Chinese open models are currently the strongest available, but they ship with state-aligned behavior in the weights. We built an 803-prompt eval across seven value categories, including freedom of…",
    "author_name": "Nous Research",
-   "likes": 14616,
+   "likes": 14625,
    "story": "Nous Research unveils Arete-27B, a post-trained Qwen3.8-27B model that reinforces Western values, saying the underlying Chinese model's bias layer is shallow"
   },
   {
@@ -82,11 +82,11 @@
    "text": "Most of the changes I make to my projects these days come in the form of PRs opened for me by Claude Code or Codex. The PR is my unit of work - I use them to bundle commits together, iterating on them until a feature is complete, document decisions and then merge the finished result. Today's coding agents are great at writing PR descriptions. They're too good at describing the work The problem is that they are too good. An agent-written PR description is accurate and comprehensive. It describes the problem, the detailed solution, and the steps taken to verify it."
   },
   {
-   "title": "Tencent's chief AI scientist Yao Shunyu says AI's bio abilities will soon make it “possible to do h…",
-   "url": "https://www.scmp.com/tech/big-tech/article/3373697/ai-will-soon-master-biology-unleashing-new-safety-risks-tencent-ai-chief-warns",
-   "source": "Vincent Chow / South China…",
-   "published_at": "2026-11-09T03:15:38Z",
-   "text": "Tencent's chief AI scientist Yao Shunyu says AI's bio abilities will soon make it “possible to do harm” and Anthropic has a “strong argument” for closed models. Artificial intelligence models will soon be powerful enough to master biology, presenting both benefits …",
+   "title": "When talking about AI safety, President Trump says “I don't mind guardrails. But I don't wanna put…",
+   "url": "https://www.cbsnews.com/news/donald-trump-2026-post-midterm-elections-interview-60-minutes-transcript/",
+   "source": "CBS News",
+   "published_at": "2026-11-09T05:15:39Z",
+   "text": "When talking about AI safety, President Trump says “I don't mind guardrails. But I don't wanna put us in a deep second position”, and “China has no guardrails”. This past Tuesday, President Donald Trump's Republican Party suffered an extraordinary midterm repudiation …",
    "via": "Techmeme"
   },
   {
@@ -94,16 +94,16 @@
    "url": "https://matteoraso.github.io/im-not-convinced-the-ai-bubble-exists.html#im-not-convinced-the-ai-bubble-exists",
    "source": "Hacker News",
    "published_at": "2026-11-08T23:44:36Z",
-   "text": "97 points and 131 comments on Hacker News.",
-   "points": 97,
+   "text": "117 points and 152 comments on Hacker News.",
+   "points": 117,
    "discussion": "https://news.ycombinator.com/item?id=50418975"
   },
   {
-   "title": "US professional services added 70K jobs in October, the most since July 2022, as AI-exposed consult…",
-   "url": "https://www.wsj.com/economy/jobs/is-ai-taking-white-collar-jobs-what-the-latest-numbers-tell-us-dd31b115?st=YYHUT4",
-   "source": "Ian Hodgson / Wall Street J…",
-   "published_at": "2026-11-08T21:45:39Z",
-   "text": "US professional services added 70K jobs in October, the most since July 2022, as AI-exposed consulting, legal, and accounting all grew despite AI job-loss fears. Strong hiring at law offices, consulting firms staves off fears of job apocalypse — Consulting firms, law offices …",
+   "title": "An interview with Cognition CISO Alex Stamos on how AI is upending cybersecurity, AI-powered red te…",
+   "url": "https://www.theverge.com/podcast/1029038/ai-cybersecurity-hackers-data-breach-dark-age-alex-stamos",
+   "source": "Nilay Patel / The Verge",
+   "published_at": "2026-11-09T04:05:36Z",
+   "text": "An interview with Cognition CISO Alex Stamos on how AI is upending cybersecurity, AI-powered red teaming, vulnerabilities in legacy codebases, and more. Today, I'm talking with Alex Stamos, chief security officer at Cognition and longtime cybersecurity expert, about what a mess cybersecurity is right now.",
    "via": "Techmeme"
   },
   {
@@ -111,8 +111,8 @@
    "url": "https://sergeykuhne.com/blog/fighting-ai-brain-fry",
    "source": "Hacker News",
    "published_at": "2026-11-08T19:37:42Z",
-   "text": "189 points and 150 comments on Hacker News.",
-   "points": 189,
+   "text": "193 points and 158 comments on Hacker News.",
+   "points": 193,
    "discussion": "https://news.ycombinator.com/item?id=50416363"
   },
   {
@@ -124,11 +124,11 @@
    "via": "Techmeme"
   },
   {
-   "title": "Sources: officials at the Commerce Department's AI safety center CAISSI were asked to informally re…",
-   "url": "https://apnews.com/article/ai-safety-trump-white-house-d3318eb2cf011df53e9ddb3e03d25f13",
-   "source": "Garance Burke / Associated…",
-   "published_at": "2026-11-08T22:55:37Z",
-   "text": "Sources: officials at the Commerce Department's AI safety center CAISSI were asked to informally report to a White House office, raising independence concerns",
+   "title": "Tencent's chief AI scientist Yao Shunyu says AI's bio abilities will soon make it “possible to do h…",
+   "url": "https://www.scmp.com/tech/big-tech/article/3373697/ai-will-soon-master-biology-unleashing-new-safety-risks-tencent-ai-chief-warns",
+   "source": "Vincent Chow / South China…",
+   "published_at": "2026-11-09T03:15:38Z",
+   "text": "Tencent's chief AI scientist Yao Shunyu says AI's bio abilities will soon make it “possible to do harm” and Anthropic has a “strong argument” for closed models. Artificial intelligence models will soon be powerful enough to master biology, presenting both benefits …",
    "via": "Techmeme"
   }
  ],
