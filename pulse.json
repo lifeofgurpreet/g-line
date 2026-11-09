@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-09T22:10:48Z",
+ "generated_at": "2026-11-09T22:43:46Z",
  "items": [
   {
    "title": "Nvidia's board launches a probe into whether Jensen Huang was targeted by a foreign spy plot, sayin…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-09T18:57:59Z",
    "text": "Introducing Claude Fable 5.2 and Claude Mythos 5.2, designed to tackle the most daunting technical challenges. They’re capable collaborators on ambitious projects in many fields, and show improvements in areas like coding, reasoning, and vision.",
    "author_name": "Claude",
-   "likes": 60983,
+   "likes": 64024,
    "story": "Anthropic releases Mythos 5.2 and Fable 5.2, saying they are “best for the most ambitious, open-ended technical work”, with outputs up to 30% faster than 5.1"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-11-09T18:03:24Z",
    "text": "1/ announcing our smallest, most efficient little model is here: muse ember 🔥 built for work that agents repeat all day, it gets you more intelligence per dollar than Haiku, Luna, and all other flash models at any reasoning setting and does it at a third of the cost or less!",
    "author_name": "Alexandr Wang",
-   "likes": 4254,
+   "likes": 4344,
    "story": "Meta releases Muse Ember, its smallest and most cost-efficient AI model yet, saying it delivers more intelligence per dollar than Haiku 5.5 and GPT-6 Luna"
   },
   {
@@ -50,8 +50,8 @@
    "url": "https://artificialanalysis.ai/models/claude-fable-5-2",
    "source": "Hacker News",
    "published_at": "2026-11-09T20:04:55Z",
-   "text": "141 points and 73 comments on Hacker News.",
-   "points": 141,
+   "text": "178 points and 97 comments on Hacker News.",
+   "points": 178,
    "discussion": "https://news.ycombinator.com/item?id=50431144"
   },
   {
@@ -61,7 +61,7 @@
    "published_at": "2026-11-09T18:19:08Z",
    "text": "Four distinct TPU systems in a single generation in one year! Instead of waiting years for a traditional semiconductor cycle, hardware engineers co-designing systems alongside Google Deepmind means we can keep innovating quickly for customers.",
    "author_name": "Sundar Pichai",
-   "likes": 2359,
+   "likes": 2513,
    "story": "Google unveils two specialized TPUs launching in 2027: the 8tx, to be paired with an AMD CPU, and the 8i Max, a dual-chip package for long-context window tasks"
   },
   {
@@ -86,7 +86,7 @@
    "published_at": "2026-11-09T06:57:57Z",
    "text": "jensen huang (nvidia ceo) finding out his fling alice huang has been a chinese intelligence asset this whole time",
    "author_name": "ukdicha modak",
-   "likes": 21709,
+   "likes": 21938,
    "story": "A profile of Alice Huang, a suspected Chinese spy who founded Megaspeed in 2023 and spent years in Jensen Huang's orbit; Megaspeed's Nvidia imports top $4.6B"
   },
   {
@@ -94,16 +94,16 @@
    "url": "https://github.com/thisisme6598/gemini_files/",
    "source": "Hacker News",
    "published_at": "2026-11-09T18:24:38Z",
-   "text": "167 points and 25 comments on Hacker News.",
-   "points": 167,
+   "text": "205 points and 36 comments on Hacker News.",
+   "points": 205,
    "discussion": "https://news.ycombinator.com/item?id=50429426"
   },
   {
-   "title": "Jensen Huang maintains deep control over Nvidia, managing 60+ direct reports and owning a 3.56% sta…",
-   "url": "https://www.nytimes.com/2026/11/09/technology/jensen-huang-affair-nvidia.html?unlocked_article_code=1.PFE.mKVc.NEtql9fbaFYJ&smid=url-share",
-   "source": "New York Times",
-   "published_at": "2026-11-09T11:02:33Z",
-   "text": "Jensen Huang maintains deep control over Nvidia, managing 60+ direct reports and owning a 3.56% stake, presenting a challenge for Nvidia's 10-person board",
+   "title": "Trump says the FBI is “looking into” Jensen Huang's affair, and the Nvidia CEO told him he “had abs…",
+   "url": "https://apnews.com/article/china-denies-spy-jensen-huang-nvidia-3345b9f05c54d58909e88f6dcb9c1cd8",
+   "source": "Associated Press",
+   "published_at": "2026-11-09T22:40:46Z",
+   "text": "Trump says the FBI is “looking into” Jensen Huang's affair, and the Nvidia CEO told him he “had absolutely no idea that the person in question was a spy”",
    "via": "Techmeme"
   },
   {
@@ -123,11 +123,11 @@
    "via": "Techmeme"
   },
   {
-   "title": "When talking about AI safety, President Trump says “I don't mind guardrails. But I don't wanna put…",
-   "url": "https://www.cbsnews.com/news/donald-trump-2026-post-midterm-elections-interview-60-minutes-transcript/",
-   "source": "CBS News",
-   "published_at": "2026-11-09T05:15:39Z",
-   "text": "When talking about AI safety, President Trump says “I don't mind guardrails. But I don't wanna put us in a deep second position”, and “China has no guardrails”. This past Tuesday, President Donald Trump's Republican Party suffered an extraordinary midterm repudiation …",
+   "title": "Jensen Huang maintains deep control over Nvidia, managing 60+ direct reports and owning a 3.56% sta…",
+   "url": "https://www.nytimes.com/2026/11/09/technology/jensen-huang-affair-nvidia.html?unlocked_article_code=1.PFE.mKVc.NEtql9fbaFYJ&smid=url-share",
+   "source": "New York Times",
+   "published_at": "2026-11-09T11:02:33Z",
+   "text": "Jensen Huang maintains deep control over Nvidia, managing 60+ direct reports and owning a 3.56% stake, presenting a challenge for Nvidia's 10-person board",
    "via": "Techmeme"
   }
  ],
