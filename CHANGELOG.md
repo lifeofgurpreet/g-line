@@ -1,5 +1,21 @@
 # Changelog
 
+## 0.23.1 (2026-11-09): no more "hook was skipped" notice for compaction
+
+- **The notice is gone.** Where Claude Code's managed `cc-plugin-sec-default` is installed, a
+  session said `g-line: its session.compact hook was skipped. "cc-plugin-sec-default" runs first
+  and sent the event on past it.` That plugin passes `session.compact` over user plugins, and
+  Claude Code tells you of every hook it skips. g-line no longer hooks `session.compact`:
+  `hooks.json`'s PreCompact and PostCompact commands, which nothing passes over, now do all the
+  compaction work everywhere, as `SessionStart` did in 0.18.1.
+- **A compaction during a turn is back on that turn's receipt** (`compacted 250k → 14k`) with a
+  toast, and a `/compact` you type reads `◆ context compacted by /compact · 250k → 14k`. Behind
+  the managed plugin 0.23.0 saw only idle compactions. g-line reads the PostCompact note before
+  each request as well as every few seconds. The figures are the last request's size and Claude
+  Code's own count of the summary.
+- Unchanged: keep warm first, then Claude Code's idle compaction, then g-line's `/compact` as
+  the fallback, and the toast when idle compaction is deferred.
+
 ## 0.23.0 (2026-11-04): keep warm first, then Claude Code's compaction, then g-line's
 
 Keep-warm now works on top of Claude Code's own idle compaction instead of around it, and you

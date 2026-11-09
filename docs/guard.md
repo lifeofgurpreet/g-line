@@ -275,8 +275,7 @@ limits:
      (`idleCompaction`, on accounts where Anthropic has turned it on); that would only throw the
      warm cache away. g-line defers it through a `PreCompact` command in its `hooks.json`
      (Claude Code's own extension point, which still runs where a managed plugin passes the
-     `session.compact` event over user plugins), and through its `session.compact` hook where
-     that one is reached. It writes `~/.cache/g-line/hold/<session>` while it holds the cache,
+     `session.compact` event over user plugins). It writes `~/.cache/g-line/hold/<session>` while it holds the cache,
      and the command defers only Claude Code's automatic compaction of the main conversation
      while that file says so. It says so once (`◆ Claude Code's idle compaction deferred ·
      keep-warm holds the cache (kept warm 1/3)`), and line 2 reads `kept warm 1/3`. Your own

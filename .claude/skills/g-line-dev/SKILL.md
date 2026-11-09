@@ -38,7 +38,8 @@ built-in `plugin-authoring` skill has the long-form reference.
 - `turn.step` (an async generator: `yield* next(e)`) gives each request's `usage` (cache reads and writes), `model` and `effort`.
 - `tool.call`: `await next(e)` and read `isError`; never gate or rewrite.
 - `agent.spawn` (`e.background`) and `$.agent.list()` give subagents and their status.
-- `session.compact` gives `tokensBefore` and `tokensAfter`.
+- Compactions come from `hooks.json`'s PostCompact command (`~/.cache/g-line/compacted/<session>.json`:
+  when, and `auto` or `manual`); before is the last request's size, after the engine's count.
 - `$.clock.every(ms, fn)` keeps countdowns moving while idle. `$.store` persists across sessions
   (shared by every session on the machine). `$.state` is per session, through the atoms in
   `types/index.d.ts`.
@@ -58,6 +59,11 @@ built-in `plugin-authoring` skill has the long-form reference.
   defers Claude Code's idle compaction with a PreCompact command (`{"decision":"block"}` while
   `~/.cache/g-line/hold/<session>` is in the future) and sees compactions through a PostCompact
   command's note and the context figure (`$.session.usage().context.tokens` drops).
+- Don't hook an event a managed plugin passes over. On 2.1.319 Claude Code tells the person, in
+  the transcript and to the model: `g-line: its session.compact hook was skipped.
+  "cc-plugin-sec-default" runs first and sent the event on past it.` A mod can't tell at
+  `register` time (`$.plugin` names only itself), so use the command hook instead. 0.18.1
+  (SessionStart) and 0.23.1 (`session.compact`) both moved to commands for this reason.
 - Claude Code's idle compaction fires once, at 90% of the hour-long cache's life after the last
   main-thread request; a `$.model.fork` doesn't re-arm it, and after a deferral it waits for the
   next real request.
