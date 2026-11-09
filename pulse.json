@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-09T02:44:04Z",
+ "generated_at": "2026-11-09T03:15:36Z",
  "items": [
   {
    "title": "Nvidia's board launches a probe into whether Jensen Huang was targeted by a foreign spy plot, sayin…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-08T22:33:27Z",
    "text": "Deadass biggest plot twist of 2026. the CEO of one of the biggest AI companies was cheating on his wife with a Chinese spy, that was relying intel to Chinese AI companies. You couldn’t write that Script in your wildest dreams.",
    "author_name": "JtheFrog",
-   "likes": 36884,
+   "likes": 39757,
    "story": "Sources: Marco Rubio oversaw the drafting of a classified memo this spring warning Trump admin that Jensen Huang was in a close relationship with a Chinese spy"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-11-08T15:17:41Z",
    "text": "NEW in Power On: Apple CEO John Ternus held a closed-door meeting with Craig Federighi in the last few weeks, pushing his software chief to accelerate Apple’s AI road map and move beyond Siri improvements amid concerns about falling behind rivals.",
    "author_name": "Mark Gurman",
-   "likes": 2612,
+   "likes": 2632,
    "story": "Sources: John Ternus wants more urgency in Apple's AI efforts, pushing Craig Federighi to move beyond Siri AI tweaks to agentic and other advanced capabilities",
    "links": [
     "https://www.bloomberg.com/news/newsletters/2026-11-08/apple-explores-turning-siri-ai-into-chatgpt-dots-like-agent-ios-28-shake-up?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc5NDE1MTAxMCwiZXhwIjoxNzk0NzU1ODEwLCJhcnRpY2xlSWQiOiJUTzZWMDFLSUpIOEkwMCIsImJjb25uZWN0SWQiOiJDNEVEQ0FFMUZBMDU0MEJFQTI0QTlGMjExQzFFOTA4MCJ9.v_kF8kPRiaZ6qSDqbDcb8marNAUSibGlv7PG3r-OYKA"
@@ -53,8 +53,8 @@
    "url": "https://www.axios.com/2026/11/08/nvidia-ceo-jensen-huang-affair-email-to-company",
    "source": "Hacker News",
    "published_at": "2026-11-08T22:20:09Z",
-   "text": "384 points and 405 comments on Hacker News.",
-   "points": 384,
+   "text": "396 points and 421 comments on Hacker News.",
+   "points": 396,
    "discussion": "https://news.ycombinator.com/item?id=50418016"
   },
   {
@@ -64,7 +64,7 @@
    "published_at": "2026-11-06T21:48:45Z",
    "text": "Introducing Arete-27B: Qwen3.8-27B, post-trained to reinforce Western values. Chinese open models are currently the strongest available, but they ship with state-aligned behavior in the weights. We built an 803-prompt eval across seven value categories, including freedom of…",
    "author_name": "Nous Research",
-   "likes": 14580,
+   "likes": 14589,
    "story": "Nous Research unveils Arete-27B, a post-trained Qwen3.8-27B model that reinforces Western values, saying the underlying Chinese model's bias layer is shallow"
   },
   {
@@ -75,23 +75,6 @@
    "text": "Today, we’re inviting members of the life sciences community to apply to work with us on special projects."
   },
   {
-   "title": "Major environmental groups are embracing AI to analyze climate data, track forest fires, and more,…",
-   "url": "https://www.reuters.com/sustainability/cop/environmental-groups-embrace-ai-even-they-warn-data-center-impacts-2026-11-07/",
-   "source": "Valerie Volcovici / Reuters",
-   "published_at": "2026-11-08T07:02:14Z",
-   "text": "Major environmental groups are embracing AI to analyze climate data, track forest fires, and more, even as they warn of the environmental impact of data centers. Environmental groups worldwide are using artificial intelligence to analyze climate data, track forest fires and count endangered wildlife …",
-   "via": "Techmeme"
-  },
-  {
-   "title": "Goldman Sachs is pulling Claude Code from its bankers and traders",
-   "url": "https://www.thestateofai.com/news/goldman-sachs-claude-code-traders-bankers",
-   "source": "Hacker News",
-   "published_at": "2026-11-08T18:16:07Z",
-   "text": "626 points and 362 comments on Hacker News.",
-   "points": 626,
-   "discussion": "https://news.ycombinator.com/item?id=50415628"
-  },
-  {
    "title": "US professional services added 70K jobs in October, the most since July 2022, as AI-exposed consult…",
    "url": "https://www.wsj.com/economy/jobs/is-ai-taking-white-collar-jobs-what-the-latest-numbers-tell-us-dd31b115?st=YYHUT4",
    "source": "Ian Hodgson / Wall Street J…",
@@ -100,13 +83,13 @@
    "via": "Techmeme"
   },
   {
-   "title": "How I Fight AI Brain Fry",
-   "url": "https://sergeykuhne.com/blog/fighting-ai-brain-fry",
+   "title": "Goldman Sachs is pulling Claude Code from its bankers and traders",
+   "url": "https://www.thestateofai.com/news/goldman-sachs-claude-code-traders-bankers",
    "source": "Hacker News",
-   "published_at": "2026-11-08T19:37:42Z",
-   "text": "165 points and 131 comments on Hacker News.",
-   "points": 165,
-   "discussion": "https://news.ycombinator.com/item?id=50416363"
+   "published_at": "2026-11-08T18:16:07Z",
+   "text": "639 points and 364 comments on Hacker News.",
+   "points": 639,
+   "discussion": "https://news.ycombinator.com/item?id=50415628"
   },
   {
    "title": "Sources: officials at the Commerce Department's AI safety center CAISSI were asked to informally re…",
@@ -117,11 +100,20 @@
    "via": "Techmeme"
   },
   {
-   "title": "How a small, wealthy AI-safety network that organized in Signal chats grew into a coalition that be…",
-   "url": "https://www.politico.com/news/magazine/2026/11/06/ai-big-tech-2026-midterms-anthropic-openai-01152312",
-   "source": "Politico",
-   "published_at": "2026-11-08T02:46:21Z",
-   "text": "How a small, wealthy AI-safety network that organized in Signal chats grew into a coalition that beat the $100M super PAC Leading the Future in the midterms. For years, the policy debate over artificial intelligence belonged to those who counted progress in decades.",
+   "title": "How I Fight AI Brain Fry",
+   "url": "https://sergeykuhne.com/blog/fighting-ai-brain-fry",
+   "source": "Hacker News",
+   "published_at": "2026-11-08T19:37:42Z",
+   "text": "169 points and 135 comments on Hacker News.",
+   "points": 169,
+   "discussion": "https://news.ycombinator.com/item?id=50416363"
+  },
+  {
+   "title": "Major environmental groups are embracing AI to analyze climate data, track forest fires, and more,…",
+   "url": "https://www.reuters.com/sustainability/cop/environmental-groups-embrace-ai-even-they-warn-data-center-impacts-2026-11-07/",
+   "source": "Valerie Volcovici / Reuters",
+   "published_at": "2026-11-08T07:02:14Z",
+   "text": "Major environmental groups are embracing AI to analyze climate data, track forest fires, and more, even as they warn of the environmental impact of data centers. Environmental groups worldwide are using artificial intelligence to analyze climate data, track forest fires and count endangered wildlife …",
    "via": "Techmeme"
   },
   {
@@ -130,6 +122,14 @@
    "source": "Saritha Rai / Bloomberg",
    "published_at": "2026-11-08T20:10:34Z",
    "text": "DeepSeek says its open-source agent app Harness hit 1.54M DAUs on November 4, less than three months after launch, and uses ~92T tokens a day, or ~60M per user. DeepSeek, the Chinese AI disruptor, released striking adoption numbers for its AI agent infrastructure as it continues …",
+   "via": "Techmeme"
+  },
+  {
+   "title": "Inside Inner Mongolia, China's fastest-growing AI data center region, where construction is acceler…",
+   "url": "https://newsletter.semianalysis.com/p/we-visited-chinas-stargate-in-inner",
+   "source": "SemiAnalysis",
+   "published_at": "2026-11-08T11:02:32Z",
+   "text": "Inside Inner Mongolia, China's fastest-growing AI data center region, where construction is accelerating with low building cost and no public backlash",
    "via": "Techmeme"
   }
  ],
