@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-09T23:16:45Z",
+ "generated_at": "2026-11-09T23:49:54Z",
  "items": [
   {
    "title": "Sources: a Commerce Department investigation into Megaspeed for allegedly smuggling Nvidia chips to…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-09T18:57:59Z",
    "text": "Introducing Claude Fable 5.2 and Claude Mythos 5.2, designed to tackle the most daunting technical challenges. They’re capable collaborators on ambitious projects in many fields, and show improvements in areas like coding, reasoning, and vision.",
    "author_name": "Claude",
-   "likes": 66659,
+   "likes": 68981,
    "story": "Anthropic releases Mythos 5.2 and Fable 5.2, saying they are “best for the most ambitious, open-ended technical work”, with outputs up to 30% faster than 5.1"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-11-09T21:49:49Z",
    "text": "Muse Ember, Muse Spark 1.3, and Muse Wonder are now available on Google Cloud.",
    "author_name": "Mark Zuckerberg",
-   "likes": 1704,
+   "likes": 2063,
    "story": "Meta releases Muse Ember, its smallest and most cost-efficient AI model yet, saying it delivers more intelligence per dollar than Haiku 5.5 and GPT-6 Luna"
   },
   {
@@ -44,42 +44,8 @@
    "published_at": "2026-11-09T18:19:08Z",
    "text": "Four distinct TPU systems in a single generation in one year! Instead of waiting years for a traditional semiconductor cycle, hardware engineers co-designing systems alongside Google Deepmind means we can keep innovating quickly for customers.",
    "author_name": "Sundar Pichai",
-   "likes": 2661,
+   "likes": 2799,
    "story": "Google unveils two specialized TPUs launching in 2027: the 8tx, to be paired with an AMD CPU, and the 8i Max, a dual-chip package for long-context window tasks"
-  },
-  {
-   "title": "Nvidia's board launches a probe into whether Jensen Huang was targeted by a foreign spy plot, sayin…",
-   "url": "https://www.bloomberg.com/news/articles/2026-11-08/nvidia-board-to-probe-spying-case-after-ceo-jensen-huang-admits-infidelity?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc5NDE2ODU1OSwiZXhwIjoxNzk0NzczMzU5LCJhcnRpY2xlSWQiOiJUTzU3WTNWVFRDWlkwMCIsImJjb25uZWN0SWQiOiIyQ0FEODkyRDYzODU0QjJFOEI2MEM2QUI2OTg2MzBBNyJ9.AHrN1ygaU7rv8RK6qaS-JAmbJRFuZsKMk5VcnnENzt0&leadSource=article-gifting",
-   "source": "Ian King / Bloomberg",
-   "published_at": "2026-11-08T20:25:34Z",
-   "text": "Nvidia's board launches a probe into whether Jensen Huang was targeted by a foreign spy plot, saying it has “no reason to believe” that secrets were compromised. Nvidia Corp.'s investigation into Chief Executive Officer Jensen Huang's affair with an alleged Chinese spy raises …",
-   "via": "Techmeme"
-  },
-  {
-   "title": "Claude Fable 5.2 Scores 65 on Artificial Analysis, Highest So Far",
-   "url": "https://artificialanalysis.ai/models/claude-fable-5-2",
-   "source": "Hacker News",
-   "published_at": "2026-11-09T20:04:55Z",
-   "text": "216 points and 129 comments on Hacker News.",
-   "points": 216,
-   "discussion": "https://news.ycombinator.com/item?id=50431144"
-  },
-  {
-   "title": "jensen huang (nvidia ceo) finding out his fling alice huang has been a chinese intelligence asset t…",
-   "url": "https://x.com/kalshitkalshi/status/2119685908094148859",
-   "source": "𝕏 @kalshitkalshi",
-   "published_at": "2026-11-09T06:57:57Z",
-   "text": "jensen huang (nvidia ceo) finding out his fling alice huang has been a chinese intelligence asset this whole time",
-   "author_name": "ukdicha modak",
-   "likes": 22133,
-   "story": "A profile of Alice Huang, a suspected Chinese spy who founded Megaspeed in 2023 and spent years in Jensen Huang's orbit; Megaspeed's Nvidia imports top $4.6B"
-  },
-  {
-   "title": "Hide your slop PR descriptions behind <details><summary>",
-   "url": "https://simonwillison.net/2026/Nov/9/details-summary/",
-   "source": "Simon Willison's weblog",
-   "published_at": "2026-11-09T04:25:05Z",
-   "text": "Most of the changes I make to my projects these days come in the form of PRs opened for me by Claude Code or Codex. The PR is my unit of work - I use them to bundle commits together, iterating on them until a feature is complete, document decisions and then merge the finished result. Today's coding agents are great at writing PR descriptions. They're too good at describing the work The problem is that they are too good. An agent-written PR description is accurate and comprehensive. It describes the problem, the detailed solution, and the steps taken to verify it."
   },
   {
    "title": "Trump says the FBI is “looking into” Jensen Huang's affair, and the Nvidia CEO told him he “had abs…",
@@ -90,12 +56,46 @@
    "via": "Techmeme"
   },
   {
+   "title": "Claude Fable 5.2 Scores 65 on Artificial Analysis, Highest So Far",
+   "url": "https://artificialanalysis.ai/models/claude-fable-5-2",
+   "source": "Hacker News",
+   "published_at": "2026-11-09T20:04:55Z",
+   "text": "239 points and 156 comments on Hacker News.",
+   "points": 239,
+   "discussion": "https://news.ycombinator.com/item?id=50431144"
+  },
+  {
+   "title": "jensen huang (nvidia ceo) finding out his fling alice huang has been a chinese intelligence asset t…",
+   "url": "https://x.com/kalshitkalshi/status/2119685908094148859",
+   "source": "𝕏 @kalshitkalshi",
+   "published_at": "2026-11-09T06:57:57Z",
+   "text": "jensen huang (nvidia ceo) finding out his fling alice huang has been a chinese intelligence asset this whole time",
+   "author_name": "ukdicha modak",
+   "likes": 22301,
+   "story": "A profile of Alice Huang, a suspected Chinese spy who founded Megaspeed in 2023 and spent years in Jensen Huang's orbit; Megaspeed's Nvidia imports top $4.6B"
+  },
+  {
+   "title": "Hide your slop PR descriptions behind <details><summary>",
+   "url": "https://simonwillison.net/2026/Nov/9/details-summary/",
+   "source": "Simon Willison's weblog",
+   "published_at": "2026-11-09T04:25:05Z",
+   "text": "Most of the changes I make to my projects these days come in the form of PRs opened for me by Claude Code or Codex. The PR is my unit of work - I use them to bundle commits together, iterating on them until a feature is complete, document decisions and then merge the finished result. Today's coding agents are great at writing PR descriptions. They're too good at describing the work The problem is that they are too good. An agent-written PR description is accurate and comprehensive. It describes the problem, the detailed solution, and the steps taken to verify it."
+  },
+  {
+   "title": "Nvidia's board launches a probe into whether Jensen Huang was targeted by a foreign spy plot, sayin…",
+   "url": "https://www.bloomberg.com/news/articles/2026-11-08/nvidia-board-to-probe-spying-case-after-ceo-jensen-huang-admits-infidelity?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc5NDE2ODU1OSwiZXhwIjoxNzk0NzczMzU5LCJhcnRpY2xlSWQiOiJUTzU3WTNWVFRDWlkwMCIsImJjb25uZWN0SWQiOiIyQ0FEODkyRDYzODU0QjJFOEI2MEM2QUI2OTg2MzBBNyJ9.AHrN1ygaU7rv8RK6qaS-JAmbJRFuZsKMk5VcnnENzt0&leadSource=article-gifting",
+   "source": "Ian King / Bloomberg",
+   "published_at": "2026-11-08T20:25:34Z",
+   "text": "Nvidia's board launches a probe into whether Jensen Huang was targeted by a foreign spy plot, saying it has “no reason to believe” that secrets were compromised. Nvidia Corp.'s investigation into Chief Executive Officer Jensen Huang's affair with an alleged Chinese spy raises …",
+   "via": "Techmeme"
+  },
+  {
    "title": "Google Gemini routes personal Drive files and emails to human annotators",
    "url": "https://github.com/thisisme6598/gemini_files/",
    "source": "Hacker News",
    "published_at": "2026-11-09T18:24:38Z",
-   "text": "251 points and 50 comments on Hacker News.",
-   "points": 251,
+   "text": "290 points and 58 comments on Hacker News.",
+   "points": 290,
    "discussion": "https://news.ycombinator.com/item?id=50429426"
   },
   {
@@ -107,11 +107,11 @@
    "via": "Techmeme"
   },
   {
-   "title": "Sources: Alice Huang and her partner pitched a Southeast Asia data center project to China-based in…",
-   "url": "https://www.ft.com/content/5d8c1e1d-6ce0-4eb4-9f5c-722fa5c4841d",
-   "source": "Financial Times",
-   "published_at": "2026-11-09T14:02:34Z",
-   "text": "Sources: Alice Huang and her partner pitched a Southeast Asia data center project to China-based investors in 2025, saying they had “no problem securing GPUs”. Alice Huang boasted of having access to Nvidia GPUs and her connection to Alibaba — The woman at the centre …",
+   "title": "Nvidia Senior Director Madison Huang, daughter of Jensen, cancels a high-profile Seoul appearance c…",
+   "url": "https://www.bloomberg.com/news/articles/2026-11-09/nvidia-controversy-throws-high-profile-korea-event-into-disarray",
+   "source": "Yoolim Lee / Bloomberg",
+   "published_at": "2026-11-09T10:50:55Z",
+   "text": "Nvidia Senior Director Madison Huang, daughter of Jensen, cancels a high-profile Seoul appearance citing a “family matter”, throwing the event into disarray",
    "via": "Techmeme"
   },
   {
@@ -123,11 +123,11 @@
    "via": "Techmeme"
   },
   {
-   "title": "Jensen Huang maintains deep control over Nvidia, managing 60+ direct reports and owning a 3.56% sta…",
-   "url": "https://www.nytimes.com/2026/11/09/technology/jensen-huang-affair-nvidia.html?unlocked_article_code=1.PFE.mKVc.NEtql9fbaFYJ&smid=url-share",
-   "source": "New York Times",
-   "published_at": "2026-11-09T11:02:33Z",
-   "text": "Jensen Huang maintains deep control over Nvidia, managing 60+ direct reports and owning a 3.56% stake, presenting a challenge for Nvidia's 10-person board",
+   "title": "Sources: Alice Huang and her partner pitched a Southeast Asia data center project to China-based in…",
+   "url": "https://www.ft.com/content/5d8c1e1d-6ce0-4eb4-9f5c-722fa5c4841d",
+   "source": "Financial Times",
+   "published_at": "2026-11-09T14:02:34Z",
+   "text": "Sources: Alice Huang and her partner pitched a Southeast Asia data center project to China-based investors in 2025, saying they had “no problem securing GPUs”. Alice Huang boasted of having access to Nvidia GPUs and her connection to Alibaba — The woman at the centre …",
    "via": "Techmeme"
   }
  ],
