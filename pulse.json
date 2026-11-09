@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-09T13:33:24Z",
+ "generated_at": "2026-11-09T14:06:04Z",
  "items": [
   {
    "title": "Nvidia's board launches a probe into whether Jensen Huang was targeted by a foreign spy plot, sayin…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-08T22:33:27Z",
    "text": "Deadass biggest plot twist of 2026. the CEO of one of the biggest AI companies was cheating on his wife with a Chinese spy, that was relying intel to Chinese AI companies. You couldn’t write that Script in your wildest dreams.",
    "author_name": "JtheFrog",
-   "likes": 64992,
+   "likes": 65852,
    "story": "Email to staff: Jensen Huang admits an affair, takes “full responsibility”, and says he fell short of his duties to Nvidia's board, shareholders, and employees"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-11-09T06:57:57Z",
    "text": "jensen huang (nvidia ceo) finding out his fling alice huang has been a chinese intelligence asset this whole time",
    "author_name": "ukdicha modak",
-   "likes": 10587,
+   "likes": 11382,
    "story": "A profile of Alice Huang, a suspected Chinese spy who founded Megaspeed in 2023 and spent years in Jensen Huang's orbit; Megaspeed's Nvidia imports top $4.6B"
   },
   {
@@ -50,8 +50,8 @@
    "url": "https://www.thestateofai.com/news/goldman-sachs-claude-code-traders-bankers",
    "source": "Hacker News",
    "published_at": "2026-11-08T18:16:07Z",
-   "text": "812 points and 436 comments on Hacker News.",
-   "points": 812,
+   "text": "817 points and 440 comments on Hacker News.",
+   "points": 817,
    "discussion": "https://news.ycombinator.com/item?id=50415628"
   },
   {
@@ -61,7 +61,7 @@
    "published_at": "2026-11-08T15:17:41Z",
    "text": "NEW in Power On: Apple CEO John Ternus held a closed-door meeting with Craig Federighi in the last few weeks, pushing his software chief to accelerate Apple’s AI road map and move beyond Siri improvements amid concerns about falling behind rivals.",
    "author_name": "Mark Gurman",
-   "likes": 2965,
+   "likes": 2987,
    "story": "Sources: John Ternus wants more urgency in Apple's AI efforts, pushing Craig Federighi to move beyond Siri AI tweaks to agentic and other advanced capabilities",
    "links": [
     "https://www.bloomberg.com/news/newsletters/2026-11-08/apple-explores-turning-siri-ai-into-chatgpt-dots-like-agent-ios-28-shake-up?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc5NDE1MTAxMCwiZXhwIjoxNzk0NzU1ODEwLCJhcnRpY2xlSWQiOiJUTzZWMDFLSUpIOEkwMCIsImJjb25uZWN0SWQiOiJDNEVEQ0FFMUZBMDU0MEJFQTI0QTlGMjExQzFFOTA4MCJ9.v_kF8kPRiaZ6qSDqbDcb8marNAUSibGlv7PG3r-OYKA"
@@ -75,11 +75,11 @@
    "text": "Most of the changes I make to my projects these days come in the form of PRs opened for me by Claude Code or Codex. The PR is my unit of work - I use them to bundle commits together, iterating on them until a feature is complete, document decisions and then merge the finished result. Today's coding agents are great at writing PR descriptions. They're too good at describing the work The problem is that they are too good. An agent-written PR description is accurate and comprehensive. It describes the problem, the detailed solution, and the steps taken to verify it."
   },
   {
-   "title": "Jensen Huang's scandal poses a rare crisis in US corporate history, given the national security sta…",
-   "url": "https://www.semafor.com/article/11/08/2026/nvidias-45-trillion-test-of-founder-immunity",
-   "source": "Andrew Edgecliffe-Johnson /…",
-   "published_at": "2026-11-09T04:25:38Z",
-   "text": "Jensen Huang's scandal poses a rare crisis in US corporate history, given the national security stakes, his centrality to Nvidia, and its role in the AI race",
+   "title": "Sources: Alice Huang and her partner pitched a Southeast Asia data center project to China-based in…",
+   "url": "https://www.ft.com/content/5d8c1e1d-6ce0-4eb4-9f5c-722fa5c4841d",
+   "source": "Financial Times",
+   "published_at": "2026-11-09T14:02:34Z",
+   "text": "Sources: Alice Huang and her partner pitched a Southeast Asia data center project to China-based investors in 2025, saying they had “no problem securing GPUs”",
    "via": "Techmeme"
   },
   {
@@ -87,8 +87,8 @@
    "url": "https://matteoraso.github.io/im-not-convinced-the-ai-bubble-exists.html#im-not-convinced-the-ai-bubble-exists",
    "source": "Hacker News",
    "published_at": "2026-11-08T23:44:36Z",
-   "text": "382 points and 646 comments on Hacker News.",
-   "points": 382,
+   "text": "401 points and 677 comments on Hacker News.",
+   "points": 401,
    "discussion": "https://news.ycombinator.com/item?id=50418975"
   },
   {
@@ -104,8 +104,8 @@
    "url": "https://news.ycombinator.com/item?id=50422628",
    "source": "Hacker News",
    "published_at": "2026-11-09T08:17:49Z",
-   "text": "76 points and 17 comments on Hacker News.",
-   "points": 76,
+   "text": "85 points and 20 comments on Hacker News.",
+   "points": 85,
    "discussion": "https://news.ycombinator.com/item?id=50422628"
   },
   {
@@ -117,19 +117,19 @@
    "via": "Techmeme"
   },
   {
-   "title": "Sources and filings detail how Jensen Huang has brought his children and other family members into…",
-   "url": "https://www.wsj.com/tech/ai/jensen-huang-apologized-to-nvidia-for-his-infidelity-his-kids-are-on-staff-190f3176?st=qRVEvG&reflink=desktopwebshare_permalink",
-   "source": "Wall Street Journal",
-   "published_at": "2026-11-09T05:10:56Z",
-   "text": "Sources and filings detail how Jensen Huang has brought his children and other family members into Nvidia, making it unusually family-run for Silicon Valley",
+   "title": "Jensen Huang's scandal poses a rare crisis in US corporate history, given the national security sta…",
+   "url": "https://www.semafor.com/article/11/08/2026/nvidias-45-trillion-test-of-founder-immunity",
+   "source": "Andrew Edgecliffe-Johnson /…",
+   "published_at": "2026-11-09T04:25:38Z",
+   "text": "Jensen Huang's scandal poses a rare crisis in US corporate history, given the national security stakes, his centrality to Nvidia, and its role in the AI race",
    "via": "Techmeme"
   },
   {
-   "title": "Meta says it is globally expanding Instagram's AI age estimation tech to apply Teen Account protect…",
-   "url": "https://www.theverge.com/tech/1029627/meta-instagram-ai-age-assurance-global-expansion",
-   "source": "Jess Weatherbed / The Verge",
-   "published_at": "2026-11-09T12:15:49Z",
-   "text": "Meta says it is globally expanding Instagram's AI age estimation tech to apply Teen Account protections to teens aged 13 to 17 who misrepresented their age. Meta says it will expand Teen Account protections to millions more kids, even if they've misrepresented their age.﻿",
+   "title": "Sources and filings: how Jensen Huang hired his children and other family members, making Nvidia a…",
+   "url": "https://www.wsj.com/tech/ai/jensen-huang-apologized-to-nvidia-for-his-infidelity-his-kids-are-on-staff-190f3176?st=qRVEvG&reflink=desktopwebshare_permalink",
+   "source": "Wall Street Journal",
+   "published_at": "2026-11-09T05:10:56Z",
+   "text": "Sources and filings: how Jensen Huang hired his children and other family members, making Nvidia a family business to a degree that is unique in Silicon Valley",
    "via": "Techmeme"
   }
  ],
