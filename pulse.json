@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-09T10:16:31Z",
+ "generated_at": "2026-11-09T10:49:31Z",
  "items": [
   {
    "title": "Nvidia's board launches a probe into whether Jensen Huang was targeted by a foreign spy plot, sayin…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-08T22:33:27Z",
    "text": "Deadass biggest plot twist of 2026. the CEO of one of the biggest AI companies was cheating on his wife with a Chinese spy, that was relying intel to Chinese AI companies. You couldn’t write that Script in your wildest dreams.",
    "author_name": "JtheFrog",
-   "likes": 59264,
+   "likes": 60098,
    "story": "Email to staff: Jensen Huang admits an affair, takes “full responsibility”, and says he fell short of his duties to Nvidia's board, shareholders, and employees"
   },
   {
@@ -34,18 +34,18 @@
    "published_at": "2026-11-08T15:17:41Z",
    "text": "NEW in Power On: Apple CEO John Ternus held a closed-door meeting with Craig Federighi in the last few weeks, pushing his software chief to accelerate Apple’s AI road map and move beyond Siri improvements amid concerns about falling behind rivals.",
    "author_name": "Mark Gurman",
-   "likes": 2871,
+   "likes": 2881,
    "story": "Sources: John Ternus wants more urgency in Apple's AI efforts, pushing Craig Federighi to move beyond Siri AI tweaks to agentic and other advanced capabilities",
    "links": [
     "https://www.bloomberg.com/news/newsletters/2026-11-08/apple-explores-turning-siri-ai-into-chatgpt-dots-like-agent-ios-28-shake-up?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc5NDE1MTAxMCwiZXhwIjoxNzk0NzU1ODEwLCJhcnRpY2xlSWQiOiJUTzZWMDFLSUpIOEkwMCIsImJjb25uZWN0SWQiOiJDNEVEQ0FFMUZBMDU0MEJFQTI0QTlGMjExQzFFOTA4MCJ9.v_kF8kPRiaZ6qSDqbDcb8marNAUSibGlv7PG3r-OYKA"
    ]
   },
   {
-   "title": "Jensen Huang's scandal poses a rare crisis in US corporate history, given the national security sta…",
-   "url": "https://www.semafor.com/article/11/08/2026/nvidias-45-trillion-test-of-founder-immunity",
-   "source": "Andrew Edgecliffe-Johnson /…",
-   "published_at": "2026-11-09T04:25:38Z",
-   "text": "Jensen Huang's scandal poses a rare crisis in US corporate history, given the national security stakes, his centrality to Nvidia, and its role in the AI race. There's little precedent in US corporate history for the crisis facing Nvidia after reports that Jensen Huang was targeted by a Chinese “honeytrap” operation.",
+   "title": "Nvidia drops ~5% pre-market after its board opens a probe into Jensen Huang; Nvidia previously dism…",
+   "url": "https://www.ft.com/content/fa3b0a35-1aa9-4f31-97b4-e4c599e3e654",
+   "source": "Demetri Sevastopulo / Finan…",
+   "published_at": "2026-11-09T10:40:50Z",
+   "text": "Nvidia drops ~5% pre-market after its board opens a probe into Jensen Huang; Nvidia previously dismissed the interactions as “nothing unusual or unexpected”. Board of chipmaker opens investigation after chief executive Jensen Huang admits to affair",
    "via": "Techmeme"
   },
   {
@@ -53,16 +53,9 @@
    "url": "https://www.thestateofai.com/news/goldman-sachs-claude-code-traders-bankers",
    "source": "Hacker News",
    "published_at": "2026-11-08T18:16:07Z",
-   "text": "782 points and 413 comments on Hacker News.",
-   "points": 782,
+   "text": "786 points and 416 comments on Hacker News.",
+   "points": 786,
    "discussion": "https://news.ycombinator.com/item?id=50415628"
-  },
-  {
-   "title": "Open call for guest investigators in the life sciences",
-   "url": "https://www.anthropic.com/news/open-call-guest-investigators-life-sciences",
-   "source": "Anthropic",
-   "published_at": "2026-11-06T10:22:49Z",
-   "text": "Today, we’re inviting members of the life sciences community to apply to work with us on special projects."
   },
   {
    "title": "Hide your slop PR descriptions behind <details><summary>",
@@ -84,9 +77,26 @@
    "url": "https://matteoraso.github.io/im-not-convinced-the-ai-bubble-exists.html#im-not-convinced-the-ai-bubble-exists",
    "source": "Hacker News",
    "published_at": "2026-11-08T23:44:36Z",
-   "text": "292 points and 495 comments on Hacker News.",
-   "points": 292,
+   "text": "307 points and 528 comments on Hacker News.",
+   "points": 307,
    "discussion": "https://news.ycombinator.com/item?id=50418975"
+  },
+  {
+   "title": "Jensen Huang's scandal poses a rare crisis in US corporate history, given the national security sta…",
+   "url": "https://www.semafor.com/article/11/08/2026/nvidias-45-trillion-test-of-founder-immunity",
+   "source": "Andrew Edgecliffe-Johnson /…",
+   "published_at": "2026-11-09T04:25:38Z",
+   "text": "Jensen Huang's scandal poses a rare crisis in US corporate history, given the national security stakes, his centrality to Nvidia, and its role in the AI race. There's little precedent in US corporate history for the crisis facing Nvidia after reports that Jensen Huang was targeted by a Chinese “honeytrap” operation.",
+   "via": "Techmeme"
+  },
+  {
+   "title": "How I Fight AI Brain Fry",
+   "url": "https://sergeykuhne.com/blog/fighting-ai-brain-fry",
+   "source": "Hacker News",
+   "published_at": "2026-11-08T19:37:42Z",
+   "text": "262 points and 174 comments on Hacker News.",
+   "points": 262,
+   "discussion": "https://news.ycombinator.com/item?id=50416363"
   },
   {
    "title": "Sources and filings detail how Jensen Huang has brought his children and other family members into…",
@@ -95,15 +105,6 @@
    "published_at": "2026-11-09T05:10:56Z",
    "text": "Sources and filings detail how Jensen Huang has brought his children and other family members into Nvidia, making it unusually family-run for Silicon Valley. The Nvidia CEO has elevated his children to prominence. His board is investigating reports that he was an espionage target.",
    "via": "Techmeme"
-  },
-  {
-   "title": "How I Fight AI Brain Fry",
-   "url": "https://sergeykuhne.com/blog/fighting-ai-brain-fry",
-   "source": "Hacker News",
-   "published_at": "2026-11-08T19:37:42Z",
-   "text": "256 points and 172 comments on Hacker News.",
-   "points": 256,
-   "discussion": "https://news.ycombinator.com/item?id=50416363"
   },
   {
    "title": "Google rolls out a Googlebook update that frees up 3GB to 6GB of RAM via on-device AI optimizations…",
