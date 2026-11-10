@@ -1,24 +1,24 @@
 {
  "schema": 1,
- "generated_at": "2026-11-10T16:32:27Z",
+ "generated_at": "2026-11-10T17:04:40Z",
  "items": [
   {
-   "title": "Anthropic's Fable 5.2 represents “Jagged AGI”, which matches human experts on most computer tasks l…",
-   "url": "https://www.oneusefulthing.org/p/fable-52-and-jagged-agi",
-   "source": "Ethan Mollick / One Useful…",
-   "published_at": "2026-11-10T11:10:52Z",
-   "text": "Anthropic's Fable 5.2 represents “Jagged AGI”, which matches human experts on most computer tasks like game design but lacks self-directed judgment and taste. General, often expert, and sometimes jagged … I have had the chance to use the new Claude Fable 5.2 quite a bit …",
+   "title": "Anthropic launches its IPO roadshow, saying the company and shareholders plan to sell 825M Class A…",
+   "url": "https://www.anthropic.com/news/roadshow-launch",
+   "source": "Anthropic",
+   "published_at": "2026-11-10T11:40:50Z",
+   "text": "Anthropic launches its IPO roadshow, saying the company and shareholders plan to sell 825M Class A shares at $70 to $78 each, listing on the Nasdaq under ANT. Today Anthropic, PBC launched the roadshow for its proposed initial public offering of its Class A common stock.",
    "via": "Techmeme"
   },
   {
-   "title": "Gemini 4 Carbon is rolling out today. It’s built for sustained, long-horizon tasks, reasoning deepl…",
-   "url": "https://x.com/sundarpichai/status/2120185896469496180",
-   "source": "𝕏 @sundarpichai",
-   "published_at": "2026-11-10T16:04:43Z",
-   "text": "Gemini 4 Carbon is rolling out today. It’s built for sustained, long-horizon tasks, reasoning deeply through complex software engineering, cybersecurity, and scientific discovery. Coming globally via the Gemini API in @GoogleAIStudio and Gemini for business, and for Ultra…",
-   "author_name": "Sundar Pichai",
-   "likes": 2021,
-   "story": "Google rolls out Gemini 4 Carbon to paid API and AI Ultra users two weeks after releasing it to cyber defenders, and previews a swarm feature in Antigravity"
+   "title": "Introducing Claude Fable 5.2 and Claude Mythos 5.2, designed to tackle the most daunting technical…",
+   "url": "https://x.com/claudeai/status/2119867114450268322",
+   "source": "𝕏 @claudeai",
+   "published_at": "2026-11-09T18:57:59Z",
+   "text": "Introducing Claude Fable 5.2 and Claude Mythos 5.2, designed to tackle the most daunting technical challenges. They’re capable collaborators on ambitious projects in many fields, and show improvements in areas like coding, reasoning, and vision.",
+   "author_name": "Claude",
+   "likes": 91439,
+   "story": "Anthropic's Fable 5.2 represents “Jagged AGI”, which matches human experts on most computer tasks like game design but lacks self-directed judgment and taste"
   },
   {
    "title": "Claude Code 2.1.322 released",
@@ -28,34 +28,14 @@
    "text": "Added fast mode on Vertex in the global, us and eu regions, falling back to standard speed if Vertex refuses it"
   },
   {
-   "title": "Anthropic has launched the roadshow for its proposed initial public offering: Legal disclaimer: A r…",
-   "url": "https://x.com/AnthropicAI/status/2120117722230968385",
-   "source": "𝕏 @AnthropicAI",
-   "published_at": "2026-11-10T11:33:49Z",
-   "text": "Anthropic has launched the roadshow for its proposed initial public offering: Legal disclaimer: A registration statement relating to these securities has been filed with the SEC but has not yet become effective. These securities may not be sold, nor may…",
-   "author_name": "Anthropic",
-   "likes": 3730,
-   "story": "Anthropic launches its IPO roadshow, saying the company and shareholders plan to sell 825M Class A shares at $70 to $78 each, listing on the Nasdaq under ANT",
-   "links": [
-    "https://www.anthropic.com/news/roadshow-launch"
-   ]
-  },
-  {
-   "title": "Sources: Jensen Huang and Alice Huang's relationship dates back to at least 2023, facilitating $7.5…",
-   "url": "https://www.theinformation.com/articles/jensen-huangs-yearslong-ties-alice-huang-enabled-nvidia-chip-sales-china",
-   "source": "The Information",
-   "published_at": "2026-11-10T11:45:48Z",
-   "text": "Sources: Jensen Huang and Alice Huang's relationship dates back to at least 2023, facilitating $7.5B+ in Nvidia chip shipments via Chinese companies since then. The relationship between Nvidia CEO Jensen Huang and Alice Huang, the woman that the U.S. government reportedly identified …",
-   "via": "Techmeme"
-  },
-  {
-   "title": "Claude Fable 5.2 and Mythos 5.2",
-   "url": "https://www.anthropic.com/claude-fable-and-mythos-5-2",
-   "source": "Hacker News",
-   "published_at": "2026-11-09T18:56:29Z",
-   "text": "980 points and 6 comments on Hacker News.",
-   "points": 980,
-   "discussion": "https://news.ycombinator.com/item?id=50429906"
+   "title": "Gemini 4 Carbon is now available in Cursor! At high effort, it's the top model on CursorBench at 60…",
+   "url": "https://x.com/cursor_ai/status/2120193584670580857",
+   "source": "𝕏 @cursor_ai",
+   "published_at": "2026-11-10T16:35:16Z",
+   "text": "Gemini 4 Carbon is now available in Cursor! At high effort, it's the top model on CursorBench at 60.4%",
+   "author_name": "Cursor",
+   "likes": 1063,
+   "story": "Google rolls out Gemini 4 Carbon to paid API and AI Ultra users two weeks after releasing it to cyber defenders, and previews a swarm feature in Antigravity"
   },
   {
    "title": "1/ announcing our smallest, most efficient little model is here: muse ember 🔥 built for work that a…",
@@ -64,60 +44,8 @@
    "published_at": "2026-11-09T18:03:24Z",
    "text": "1/ announcing our smallest, most efficient little model is here: muse ember 🔥 built for work that agents repeat all day, it gets you more intelligence per dollar than Haiku, Luna, and all other flash models at any reasoning setting and does it at a third of the cost or less!",
    "author_name": "Alexandr Wang",
-   "likes": 5769,
+   "likes": 5798,
    "story": "Meta releases Muse Ember, its smallest and most cost-efficient AI model yet, saying it delivers more intelligence per dollar than Claude Haiku 5.5 or GPT-6 Luna"
-  },
-  {
-   "title": "Locating the source of a mysterious beep with Claude",
-   "url": "https://simonwillison.net/2026/Nov/9/mysterious-beeps/",
-   "source": "Simon Willison's weblog",
-   "published_at": "2026-11-09T23:57:21Z",
-   "text": "Our house has a box room, full of boxes that we still haven't unpacked from our last move. A couple of weeks ago something in that room started intermittently beeping . The beeps were far enough apart that standing in the room and trying to determine the source of the noise was frustrating, and I really didn't want to dig through every one of those boxes. So I had Claude Code build Beep Locator , a software system for triangulating the source of a mysterious beep using multiple devices scattered around the room."
-  },
-  {
-   "title": "Trump says the FBI is “looking into” Jensen Huang's affair, and the Nvidia CEO told him that he “ha…",
-   "url": "https://apnews.com/article/china-denies-spy-jensen-huang-nvidia-3345b9f05c54d58909e88f6dcb9c1cd8",
-   "source": "Associated Press",
-   "published_at": "2026-11-09T22:40:46Z",
-   "text": "Trump says the FBI is “looking into” Jensen Huang's affair, and the Nvidia CEO told him that he “had absolutely no idea that the person in question was a spy”. President Donald Trump said Monday that Nvidia CEO Jensen Huang should not worry about the FBI looking …",
-   "via": "Techmeme"
-  },
-  {
-   "title": "Fireworks, the most highly-valued out of a growing group of inference providers, told customers inc…",
-   "url": "https://x.com/steph_palazzolo/status/2119879358575714545",
-   "source": "𝕏 @steph_palazzolo",
-   "published_at": "2026-11-09T19:46:39Z",
-   "text": "Fireworks, the most highly-valued out of a growing group of inference providers, told customers including Harvey that it had been hit with a hack that exposed customer data. Some customers are now considering moving their business off the platform.",
-   "author_name": "Stephanie Palazzolo",
-   "likes": 781,
-   "story": "AI infrastructure provider Fireworks says hackers accessed some of its customers' datasets, incomplete model weights, and billing information in late October",
-   "links": [
-    "https://www.theinformation.com/articles/new-fireworks-hack-threatens-1-billion-business"
-   ]
-  },
-  {
-   "title": "Fireworks AI security breach impacts Notion and their customers",
-   "url": "https://www.notion.com/help/security-incident-involving-a-third-party-ai-vendor",
-   "source": "Hacker News",
-   "published_at": "2026-11-10T07:19:38Z",
-   "text": "134 points and 45 comments on Hacker News.",
-   "points": 134,
-   "discussion": "https://news.ycombinator.com/item?id=50437106"
-  },
-  {
-   "title": "Analysis: Nvidia's 2025 figures to the US government undercounted chips sold to Megaspeed via partn…",
-   "url": "https://www.bloomberg.com/news/articles/2026-11-09/nvidia-intervened-in-us-probe-of-megaspeed-chip-smuggling",
-   "source": "Mackenzie Hawkins / Bloombe…",
-   "published_at": "2026-11-10T04:25:55Z",
-   "text": "Analysis: Nvidia's 2025 figures to the US government undercounted chips sold to Megaspeed via partners by 50,000; Nvidia did not give Bloomberg an exact figure. Nvidia Corp.'s general counsel intervened in a US government probe of suspected smuggling of AI chips by Megaspeed International …",
-   "via": "Techmeme"
-  },
-  {
-   "title": "Hide your slop PR descriptions behind <details><summary>",
-   "url": "https://simonwillison.net/2026/Nov/9/details-summary/",
-   "source": "Simon Willison's weblog",
-   "published_at": "2026-11-09T04:25:05Z",
-   "text": "Most of the changes I make to my projects these days come in the form of PRs opened for me by Claude Code or Codex. The PR is my unit of work - I use them to bundle commits together, iterating on them until a feature is complete, document decisions and then merge the finished result. Today's coding agents are great at writing PR descriptions. They're too good at describing the work The problem is that they are too good. An agent-written PR description is accurate and comprehensive. It describes the problem, the detailed solution, and the steps taken to verify it."
   },
   {
    "title": "Filing: Anthropic's IPO could give it an up to $1.405T valuation on a fully diluted basis, up from…",
@@ -128,11 +56,79 @@
    "via": "Techmeme"
   },
   {
+   "title": "Fireworks AI security breach impacts Notion and their customers",
+   "url": "https://www.notion.com/help/security-incident-involving-a-third-party-ai-vendor",
+   "source": "Hacker News",
+   "published_at": "2026-11-10T07:19:38Z",
+   "text": "139 points and 49 comments on Hacker News.",
+   "points": 139,
+   "discussion": "https://news.ycombinator.com/item?id=50437106"
+  },
+  {
+   "title": "Fireworks, the most highly-valued out of a growing group of inference providers, told customers inc…",
+   "url": "https://x.com/steph_palazzolo/status/2119879358575714545",
+   "source": "𝕏 @steph_palazzolo",
+   "published_at": "2026-11-09T19:46:39Z",
+   "text": "Fireworks, the most highly-valued out of a growing group of inference providers, told customers including Harvey that it had been hit with a hack that exposed customer data. Some customers are now considering moving their business off the platform.",
+   "author_name": "Stephanie Palazzolo",
+   "likes": 783,
+   "story": "AI infrastructure provider Fireworks says hackers accessed some of its customers' datasets, incomplete model weights, and billing information in late October",
+   "links": [
+    "https://www.theinformation.com/articles/new-fireworks-hack-threatens-1-billion-business"
+   ]
+  },
+  {
+   "title": "Locating the source of a mysterious beep with Claude",
+   "url": "https://simonwillison.net/2026/Nov/9/mysterious-beeps/",
+   "source": "Simon Willison's weblog",
+   "published_at": "2026-11-09T23:57:21Z",
+   "text": "Our house has a box room, full of boxes that we still haven't unpacked from our last move. A couple of weeks ago something in that room started intermittently beeping . The beeps were far enough apart that standing in the room and trying to determine the source of the noise was frustrating, and I really didn't want to dig through every one of those boxes. So I had Claude Code build Beep Locator , a software system for triangulating the source of a mysterious beep using multiple devices scattered around the room."
+  },
+  {
+   "title": "Sources: Goldman Sachs expects Anthropic revenue of ~$52B in 2026 and $600B+ by 2030, operating pro…",
+   "url": "https://www.ft.com/content/fd209548-d2df-470c-ab9a-caadbec08b58",
+   "source": "Financial Times",
+   "published_at": "2026-11-10T16:03:52Z",
+   "text": "Sources: Goldman Sachs expects Anthropic revenue of ~$52B in 2026 and $600B+ by 2030, operating profit in 2029, and positive free cash flow in 2030. Wall Street bank projects AI start-up will increase sales by 130 times — and be cash flow positive — by end of the decade",
+   "via": "Techmeme"
+  },
+  {
    "title": "IPO prospectus: Anthropic and its investors are set to raise up to $64.4B, and it will also raise $…",
    "url": "https://www.reuters.com/business/anthropic-ipo-raise-much-644-billion-latest-draft-prospectus-shows-2026-11-10/",
    "source": "Echo Wang / Reuters",
    "published_at": "2026-11-10T11:21:05Z",
    "text": "IPO prospectus: Anthropic and its investors are set to raise up to $64.4B, and it will also raise $26B via cornerstone investors like Google, AMD, and Nvidia. Anthropic is targeting a valuation of up to $1.02 trillion in its landmark U.S. IPO, its filing showed on Tuesday …",
+   "via": "Techmeme"
+  },
+  {
+   "title": "Hide your slop PR descriptions behind <details><summary>",
+   "url": "https://simonwillison.net/2026/Nov/9/details-summary/",
+   "source": "Simon Willison's weblog",
+   "published_at": "2026-11-09T04:25:05Z",
+   "text": "Most of the changes I make to my projects these days come in the form of PRs opened for me by Claude Code or Codex. The PR is my unit of work - I use them to bundle commits together, iterating on them until a feature is complete, document decisions and then merge the finished result. Today's coding agents are great at writing PR descriptions. They're too good at describing the work The problem is that they are too good. An agent-written PR description is accurate and comprehensive. It describes the problem, the detailed solution, and the steps taken to verify it."
+  },
+  {
+   "title": "Sources: Jensen Huang and Alice Huang's relationship dates back to at least 2023, facilitating $7.5…",
+   "url": "https://www.theinformation.com/articles/jensen-huangs-yearslong-ties-alice-huang-enabled-nvidia-chip-sales-china",
+   "source": "The Information",
+   "published_at": "2026-11-10T11:45:48Z",
+   "text": "Sources: Jensen Huang and Alice Huang's relationship dates back to at least 2023, facilitating $7.5B+ in Nvidia chip shipments via Chinese companies since then. The relationship between Nvidia CEO Jensen Huang and Alice Huang, the woman that the U.S. government reportedly identified …",
+   "via": "Techmeme"
+  },
+  {
+   "title": "Analysis: Nvidia's 2025 figures to the US government undercounted chips sold to Megaspeed via partn…",
+   "url": "https://www.bloomberg.com/news/articles/2026-11-09/nvidia-intervened-in-us-probe-of-megaspeed-chip-smuggling",
+   "source": "Mackenzie Hawkins / Bloombe…",
+   "published_at": "2026-11-10T04:25:55Z",
+   "text": "Analysis: Nvidia's 2025 figures to the US government undercounted chips sold to Megaspeed via partners by 50,000; Nvidia did not give Bloomberg an exact figure",
+   "via": "Techmeme"
+  },
+  {
+   "title": "Trump says the FBI is “looking into” Jensen Huang's affair, and the Nvidia CEO told him that he “ha…",
+   "url": "https://apnews.com/article/china-denies-spy-jensen-huang-nvidia-3345b9f05c54d58909e88f6dcb9c1cd8",
+   "source": "Associated Press",
+   "published_at": "2026-11-09T22:40:46Z",
+   "text": "Trump says the FBI is “looking into” Jensen Huang's affair, and the Nvidia CEO told him that he “had absolutely no idea that the person in question was a spy”. President Donald Trump said Monday that Nvidia CEO Jensen Huang should not worry about the FBI looking …",
    "via": "Techmeme"
   }
  ],
