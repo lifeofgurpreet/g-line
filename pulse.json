@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-10T21:22:00Z",
+ "generated_at": "2026-11-10T21:53:48Z",
  "items": [
   {
    "title": "Sources: Jensen Huang and Alice Huang's relationship dates back to at least 2023, facilitating $7.5…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-10T17:26:03Z",
    "text": "Starting to roll out today: Claude Whiteboards, Claude Sheets and Claude Data. Think a plan through on a board, build a tracker in a sheet, and tell a story with your data.",
    "author_name": "Claude",
-   "likes": 29063,
+   "likes": 31197,
    "story": "Anthropic unveils office tools, including a video call assistant, a data dashboard, and spreadsheet service Claude Sheets, competing with Microsoft and Google"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-11-10T19:30:45Z",
    "text": "By announcing it has \"no reason to believe that either national security or Nvidia secrets were compromised,\" Nvidia's \"investigation\" into Huang begins with its conclusion seemingly predetermined",
    "author_name": "Casey Newton",
-   "likes": 48,
+   "likes": 59,
    "story": "Nvidia hires former acting US attorney Joon H. Kim and his law firm Wachtell Lipton to conduct a probe into Jensen Huang's affair with an alleged Chinese spy",
    "links": [
     "https://www.nytimes.com/2026/11/10/business/nvidia-wachtell-lipton-jensen-huang.html"
@@ -47,18 +47,18 @@
    "published_at": "2026-11-10T18:06:42Z",
    "text": "Now in beta: Businesses in ChatGPT. Claim your business, manage your information, and get insights on how people engage with you. Eligible businesses can also build a Business Agent to answer customers’ questions and help them explore what you offer.",
    "author_name": "OpenAI",
-   "likes": 7536,
+   "likes": 8348,
    "story": "OpenAI launches Businesses in ChatGPT in beta, including Business Agents for companies to interact with users and a hub where companies can claim their profiles",
    "links": [
     "https://openai.com/index/introducing-businesses-chatgpt/"
    ]
   },
   {
-   "title": "Anthropic launches its IPO roadshow, saying the company and shareholders plan to sell 825M Class A…",
-   "url": "https://www.anthropic.com/news/roadshow-launch",
-   "source": "Anthropic",
-   "published_at": "2026-11-10T11:40:50Z",
-   "text": "Anthropic launches its IPO roadshow, saying the company and shareholders plan to sell 825M Class A shares at $70 to $78 each, listing on the Nasdaq under ANT. Today Anthropic, PBC launched the roadshow for its proposed initial public offering of its Class A common stock.",
+   "title": "Google rolls out Gemini 4 Carbon to paid API and AI Ultra users two weeks after releasing it to cyb…",
+   "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/",
+   "source": "Koray Kavukcuoglu / Google",
+   "published_at": "2026-11-10T16:26:13Z",
+   "text": "Google rolls out Gemini 4 Carbon to paid API and AI Ultra users two weeks after releasing it to cyber defenders, and previews a swarm feature in Antigravity. Developers, enterprises, scientists, and consumers can now try our latest frontier model. — SVP, Google DeepMind and Chief AI Architect, Google",
    "via": "Techmeme"
   },
   {
@@ -66,19 +66,22 @@
    "url": "https://github.com/GoogleChrome/modern-web-guidance",
    "source": "Hacker News",
    "published_at": "2026-11-10T18:01:15Z",
-   "text": "161 points and 45 comments on Hacker News.",
-   "points": 161,
+   "text": "181 points and 52 comments on Hacker News.",
+   "points": 181,
    "discussion": "https://news.ycombinator.com/item?id=50443812"
   },
   {
-   "title": "Gemini 4 Carbon is rolling out today. It’s built for sustained, long-horizon tasks, reasoning deepl…",
-   "url": "https://x.com/sundarpichai/status/2120185896469496180",
-   "source": "𝕏 @sundarpichai",
-   "published_at": "2026-11-10T16:04:43Z",
-   "text": "Gemini 4 Carbon is rolling out today. It’s built for sustained, long-horizon tasks, reasoning deeply through complex software engineering, cybersecurity, and scientific discovery. Coming globally via the Gemini API in @GoogleAIStudio and Gemini for business, and for Ultra…",
-   "author_name": "Sundar Pichai",
-   "likes": 5659,
-   "story": "Google rolls out Gemini 4 Carbon to paid API and AI Ultra users two weeks after releasing it to cyber defenders, and previews a swarm feature in Antigravity"
+   "title": "Anthropic has launched the roadshow for its proposed initial public offering: Legal disclaimer: A r…",
+   "url": "https://x.com/AnthropicAI/status/2120117722230968385",
+   "source": "𝕏 @AnthropicAI",
+   "published_at": "2026-11-10T11:33:49Z",
+   "text": "Anthropic has launched the roadshow for its proposed initial public offering: Legal disclaimer: A registration statement relating to these securities has been filed with the SEC but has not yet become effective. These securities may not be sold, nor may…",
+   "author_name": "Anthropic",
+   "likes": 4196,
+   "story": "Anthropic launches its IPO roadshow, saying the company and shareholders plan to sell 825M Class A shares at $70 to $78 each, listing on the Nasdaq under ANT",
+   "links": [
+    "https://www.anthropic.com/news/roadshow-launch"
+   ]
   },
   {
    "title": "Locating the source of a mysterious beep with Claude",
@@ -102,7 +105,7 @@
    "published_at": "2026-11-10T05:42:39Z",
    "text": "When Anthropic release a new model it's always worth taking a look at their updated prompting guide - here's an entertaining tip to make Fable 5.2 less likely to be cautious in how it improves existing code: tell it \"This codebase is yours\"",
    "author_name": "Simon Willison",
-   "likes": 3767,
+   "likes": 3810,
    "story": "Anthropic's Fable 5.2 represents “Jagged AGI”, which matches human experts on most computer tasks like game design but lacks self-directed judgment and taste",
    "links": [
     "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/prompting-claude-fable-5-2#say-who-owns-the-code"
@@ -113,8 +116,8 @@
    "url": "https://evanxmerz.com/post/ai-usage-generates-a-fragile-codebase/",
    "source": "Hacker News",
    "published_at": "2026-11-10T10:25:58Z",
-   "text": "274 points and 341 comments on Hacker News.",
-   "points": 274,
+   "text": "288 points and 352 comments on Hacker News.",
+   "points": 288,
    "discussion": "https://news.ycombinator.com/item?id=50438318"
   },
   {
@@ -124,15 +127,15 @@
    "published_at": "2026-11-10T17:05:35Z",
    "text": "The AI Futures Project have updated their timelines. They say we are five months ahead of AI 2027, and they now believe a Superhuman AI Researcher will arrive sometime in 2027.",
    "author_name": "Andrew Curran",
-   "likes": 1484,
+   "likes": 1531,
    "story": "The AI Futures Project updates its timelines after METR's report on Anthropic R&D progress, saying it now expects a Superhuman AI Researcher to arrive in 2027"
   },
   {
-   "title": "S-1: Nvidia plans to invest about $10B in Anthropic after its IPO, or ~10% of the new cash Anthropi…",
-   "url": "https://www.nytimes.com/2026/11/10/business/anthropic-ipo-nvidia.html",
-   "source": "Cory Weinberg / New York Ti…",
-   "published_at": "2026-11-10T20:56:09Z",
-   "text": "S-1: Nvidia plans to invest about $10B in Anthropic after its IPO, or ~10% of the new cash Anthropic is expected to raise this month, including in the IPO",
+   "title": "IPO prospectus: Anthropic and its investors are set to raise up to $64.4B, and it will also raise $…",
+   "url": "https://www.reuters.com/business/anthropic-ipo-raise-much-644-billion-latest-draft-prospectus-shows-2026-11-10/",
+   "source": "Echo Wang / Reuters",
+   "published_at": "2026-11-10T11:21:05Z",
+   "text": "IPO prospectus: Anthropic and its investors are set to raise up to $64.4B, and it will also raise $26B via cornerstone investors like Google, AMD, and Nvidia. Anthropic is targeting a valuation of up to $1.02 trillion in its landmark U.S. IPO, its filing showed on Tuesday …",
    "via": "Techmeme"
   },
   {
@@ -140,8 +143,8 @@
    "url": "https://www.anthropic.com/claude-fable-and-mythos-5-2",
    "source": "Hacker News",
    "published_at": "2026-11-09T18:56:29Z",
-   "text": "985 points and 6 comments on Hacker News.",
-   "points": 985,
+   "text": "986 points and 6 comments on Hacker News.",
+   "points": 986,
    "discussion": "https://news.ycombinator.com/item?id=50429906"
   }
  ],
