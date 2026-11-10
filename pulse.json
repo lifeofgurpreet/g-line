@@ -1,13 +1,13 @@
 {
  "schema": 1,
- "generated_at": "2026-11-10T12:47:59Z",
+ "generated_at": "2026-11-10T13:20:11Z",
  "items": [
   {
-   "title": "Trump says the FBI is “looking into” Jensen Huang's affair, and the Nvidia CEO told him that he “ha…",
-   "url": "https://apnews.com/article/china-denies-spy-jensen-huang-nvidia-3345b9f05c54d58909e88f6dcb9c1cd8",
-   "source": "Associated Press",
-   "published_at": "2026-11-09T22:40:46Z",
-   "text": "Trump says the FBI is “looking into” Jensen Huang's affair, and the Nvidia CEO told him that he “had absolutely no idea that the person in question was a spy”. President Donald Trump said Monday that Nvidia CEO Jensen Huang should not worry about the FBI looking …",
+   "title": "IPO prospectus: Anthropic's IPO is set to raise up to $64.4B, and the company will also raise $26B…",
+   "url": "https://www.reuters.com/business/anthropic-ipo-raise-much-644-billion-latest-draft-prospectus-shows-2026-11-10/",
+   "source": "Echo Wang / Reuters",
+   "published_at": "2026-11-10T11:21:05Z",
+   "text": "IPO prospectus: Anthropic's IPO is set to raise up to $64.4B, and the company will also raise $26B via cornerstone investors like Google, AMD, and Nvidia. Anthropic is targeting a valuation of up to $1.02 trillion in its landmark U.S. IPO, its filing showed on Tuesday …",
    "via": "Techmeme"
   },
   {
@@ -17,7 +17,7 @@
    "published_at": "2026-11-09T18:57:59Z",
    "text": "Introducing Claude Fable 5.2 and Claude Mythos 5.2, designed to tackle the most daunting technical challenges. They’re capable collaborators on ambitious projects in many fields, and show improvements in areas like coding, reasoning, and vision.",
    "author_name": "Claude",
-   "likes": 89067,
+   "likes": 89376,
    "story": "Anthropic releases Mythos 5.2 and Fable 5.2, saying they are “best for the most ambitious, open-ended technical work”, with outputs up to 30% faster than 5.1"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-11-10T11:33:49Z",
    "text": "Anthropic has launched the roadshow for its proposed initial public offering: Legal disclaimer: A registration statement relating to these securities has been filed with the SEC but has not yet become effective. These securities may not be sold, nor may…",
    "author_name": "Anthropic",
-   "likes": 2161,
+   "likes": 2573,
    "story": "Anthropic launches its IPO roadshow, saying the company and shareholders plan to sell 825M Class A shares at $70 to $78 each, listing on the Nasdaq under ANT",
    "links": [
     "https://www.anthropic.com/news/roadshow-launch"
@@ -47,15 +47,15 @@
    "published_at": "2026-11-09T18:03:24Z",
    "text": "1/ announcing our smallest, most efficient little model is here: muse ember 🔥 built for work that agents repeat all day, it gets you more intelligence per dollar than Haiku, Luna, and all other flash models at any reasoning setting and does it at a third of the cost or less!",
    "author_name": "Alexandr Wang",
-   "likes": 5523,
+   "likes": 5552,
    "story": "Meta releases Muse Ember, its smallest and most cost-efficient AI model yet, saying it delivers more intelligence per dollar than Haiku 5.5 and GPT-6 Luna"
   },
   {
-   "title": "Sources: Jensen Huang and Alice Huang's relationship dates back to at least 2023, facilitating $7.5…",
-   "url": "https://www.theinformation.com/articles/jensen-huangs-yearslong-ties-alice-huang-enabled-nvidia-chip-sales-china",
-   "source": "The Information",
-   "published_at": "2026-11-10T11:45:48Z",
-   "text": "Sources: Jensen Huang and Alice Huang's relationship dates back to at least 2023, facilitating $7.5B+ in Nvidia chip shipments via Chinese companies since then. The relationship between Nvidia CEO Jensen Huang and Alice Huang, the woman that the U.S. government reportedly identified …",
+   "title": "Trump says the FBI is “looking into” Jensen Huang's affair, and the Nvidia CEO told him that he “ha…",
+   "url": "https://apnews.com/article/china-denies-spy-jensen-huang-nvidia-3345b9f05c54d58909e88f6dcb9c1cd8",
+   "source": "Associated Press",
+   "published_at": "2026-11-09T22:40:46Z",
+   "text": "Trump says the FBI is “looking into” Jensen Huang's affair, and the Nvidia CEO told him that he “had absolutely no idea that the person in question was a spy”. President Donald Trump said Monday that Nvidia CEO Jensen Huang should not worry about the FBI looking …",
    "via": "Techmeme"
   },
   {
@@ -63,8 +63,8 @@
    "url": "https://github.com/thisisme6598/gemini_files/",
    "source": "Hacker News",
    "published_at": "2026-11-09T18:24:38Z",
-   "text": "649 points and 137 comments on Hacker News.",
-   "points": 649,
+   "text": "661 points and 139 comments on Hacker News.",
+   "points": 661,
    "discussion": "https://news.ycombinator.com/item?id=50429426"
   },
   {
@@ -74,7 +74,7 @@
    "published_at": "2026-11-09T21:53:54Z",
    "text": "We have our answer to who will be replacing Sora and OpenAI as Disney's generative AI partner. Disney plans to use it not only in studio, but also at the theme parks. 'Disney will work directly with Adobe on generative AI models tailored to Disney’s properties'",
    "author_name": "Andrew Curran",
-   "likes": 217,
+   "likes": 218,
    "story": "Disney and Adobe sign a multiyear deal to build proprietary “artist-led” generative AI models with Adobe Firefly Foundry to support Disney's production pipeline"
   },
   {
@@ -89,7 +89,7 @@
    "url": "https://www.nytimes.com/2026/11/09/business/economy/nvidia-megaspeed-investigation-huang.html?unlocked_article_code=1.PFE.kx0T.Y85ccrbdDRP8&smid=url-share",
    "source": "New York Times",
    "published_at": "2026-11-09T16:20:53Z",
-   "text": "Sources: a US Commerce Department investigation into Megaspeed for allegedly smuggling Nvidia chips to China was transferred to the DOJ after Nvidia intervened. An investigation into Megaspeed, a Singapore company that was buying advanced Nvidia A.I. chips, was transferred to the Justice Department …",
+   "text": "Sources: a US Commerce Department investigation into Megaspeed for allegedly smuggling Nvidia chips to China was transferred to the DOJ after Nvidia intervened",
    "via": "Techmeme"
   },
   {
@@ -97,16 +97,16 @@
    "url": "https://www.notion.com/help/security-incident-involving-a-third-party-ai-vendor",
    "source": "Hacker News",
    "published_at": "2026-11-10T07:19:38Z",
-   "text": "78 points and 21 comments on Hacker News.",
-   "points": 78,
+   "text": "82 points and 23 comments on Hacker News.",
+   "points": 82,
    "discussion": "https://news.ycombinator.com/item?id=50437106"
   },
   {
-   "title": "IPO prospectus: Anthropic's IPO is set to raise up to $64.4B, and the company will also raise $26B…",
-   "url": "https://www.reuters.com/business/anthropic-ipo-raise-much-644-billion-latest-draft-prospectus-shows-2026-11-10/",
-   "source": "Echo Wang / Reuters",
-   "published_at": "2026-11-10T11:21:05Z",
-   "text": "IPO prospectus: Anthropic's IPO is set to raise up to $64.4B, and the company will also raise $26B via cornerstone investors like Google, AMD, and Nvidia. Anthropic is targeting a valuation of up to $1.02 trillion in its landmark U.S. IPO, its filing showed on Tuesday …",
+   "title": "Sources: Jensen Huang and Alice Huang's relationship dates back to at least 2023, facilitating $7.5…",
+   "url": "https://www.theinformation.com/articles/jensen-huangs-yearslong-ties-alice-huang-enabled-nvidia-chip-sales-china",
+   "source": "The Information",
+   "published_at": "2026-11-10T11:45:48Z",
+   "text": "Sources: Jensen Huang and Alice Huang's relationship dates back to at least 2023, facilitating $7.5B+ in Nvidia chip shipments via Chinese companies since then. The relationship between Nvidia CEO Jensen Huang and Alice Huang, the woman that the U.S. government reportedly identified …",
    "via": "Techmeme"
   },
   {
