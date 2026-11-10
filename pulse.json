@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-10T02:00:46Z",
+ "generated_at": "2026-11-10T02:34:05Z",
  "items": [
   {
    "title": "Trump says the FBI is “looking into” Jensen Huang's affair, and the Nvidia CEO told him he “had abs…",
@@ -17,15 +17,15 @@
    "published_at": "2026-11-09T18:57:59Z",
    "text": "Introducing Claude Fable 5.2 and Claude Mythos 5.2, designed to tackle the most daunting technical challenges. They’re capable collaborators on ambitious projects in many fields, and show improvements in areas like coding, reasoning, and vision.",
    "author_name": "Claude",
-   "likes": 76335,
+   "likes": 77698,
    "story": "Anthropic releases Mythos 5.2 and Fable 5.2, saying they are “best for the most ambitious, open-ended technical work”, with outputs up to 30% faster than 5.1"
   },
   {
-   "title": "Claude Code 2.1.321 released",
-   "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.321",
+   "title": "Claude Code 2.1.322 released",
+   "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.322",
    "source": "Claude Code releases",
-   "published_at": "2026-11-09T19:22:30Z",
-   "text": "Added Claude Fable 5.2 (claude-fable-5-2), now the default Fable model — 1M context, $8/$40 per Mtok with $0.20/Mtok cache reads · Added --settings to claude remote-control, which applies a settings file to every session it starts; if the file changes, no new session starts until you restart claude remote-control · Fixed MCP OAuth requests sending secrets such as refresh tokens to another host when a server redirected them · Fixed a case where a read-only Bash command ran outside the sandbox without a permission prompt"
+   "published_at": "2026-11-10T02:29:43Z",
+   "text": "Added fast mode on Vertex in the global, us and eu regions, falling back to standard speed if Vertex refuses it"
   },
   {
    "title": "1/ announcing our smallest, most efficient little model is here: muse ember 🔥 built for work that a…",
@@ -34,7 +34,7 @@
    "published_at": "2026-11-09T18:03:24Z",
    "text": "1/ announcing our smallest, most efficient little model is here: muse ember 🔥 built for work that agents repeat all day, it gets you more intelligence per dollar than Haiku, Luna, and all other flash models at any reasoning setting and does it at a third of the cost or less!",
    "author_name": "Alexandr Wang",
-   "likes": 4845,
+   "likes": 4925,
    "story": "Meta releases Muse Ember, its smallest and most cost-efficient AI model yet, saying it delivers more intelligence per dollar than Haiku 5.5 and GPT-6 Luna"
   },
   {
@@ -50,8 +50,8 @@
    "url": "https://github.com/thisisme6598/gemini_files/",
    "source": "Hacker News",
    "published_at": "2026-11-09T18:24:38Z",
-   "text": "417 points and 103 comments on Hacker News.",
-   "points": 417,
+   "text": "443 points and 102 comments on Hacker News.",
+   "points": 443,
    "discussion": "https://news.ycombinator.com/item?id=50429426"
   },
   {
@@ -61,7 +61,7 @@
    "published_at": "2026-11-09T18:19:08Z",
    "text": "Four distinct TPU systems in a single generation in one year! Instead of waiting years for a traditional semiconductor cycle, hardware engineers co-designing systems alongside Google Deepmind means we can keep innovating quickly for customers.",
    "author_name": "Sundar Pichai",
-   "likes": 3232,
+   "likes": 3354,
    "story": "Google unveils two specialized TPUs launching in 2027: the 8tx, to be paired with an AMD CPU, and the 8i Max, a dual-chip package for long-context window tasks"
   },
   {
@@ -72,31 +72,12 @@
    "text": "Our house has a box room, full of boxes that we still haven't unpacked from our last move. A couple of weeks ago something in that room started intermittently beeping . The beeps were far enough apart that standing in the room and trying to determine the source of the noise was frustrating, and I really didn't want to dig through every one of those boxes. So I had Claude Code build Beep Locator , a software system for triangulating the source of a mysterious beep using multiple devices scattered around the room."
   },
   {
-   "title": "Nvidia drops 4.3% after its board opens an investigation into Jensen Huang; the company originally…",
-   "url": "https://www.ft.com/content/fa3b0a35-1aa9-4f31-97b4-e4c599e3e654",
-   "source": "Demetri Sevastopulo / Finan…",
-   "published_at": "2026-11-09T10:40:50Z",
-   "text": "Nvidia drops 4.3% after its board opens an investigation into Jensen Huang; the company originally dismissed the interactions as “nothing unusual or unexpected”. Board of chipmaker opens investigation after chief executive Jensen Huang admits to affair",
+   "title": "Sources: Alice Huang and her partner pitched a Southeast Asia data center project to China-based in…",
+   "url": "https://www.ft.com/content/5d8c1e1d-6ce0-4eb4-9f5c-722fa5c4841d",
+   "source": "Financial Times",
+   "published_at": "2026-11-09T14:02:34Z",
+   "text": "Sources: Alice Huang and her partner pitched a Southeast Asia data center project to China-based investors in 2025, saying they had “no problem securing GPUs”. Alice Huang boasted of having access to Nvidia GPUs and her connection to Alibaba — The woman at the centre …",
    "via": "Techmeme"
-  },
-  {
-   "title": "jensen huang (nvidia ceo) finding out his fling alice huang has been a chinese intelligence asset t…",
-   "url": "https://x.com/kalshitkalshi/status/2119685908094148859",
-   "source": "𝕏 @kalshitkalshi",
-   "published_at": "2026-11-09T06:57:57Z",
-   "text": "jensen huang (nvidia ceo) finding out his fling alice huang has been a chinese intelligence asset this whole time",
-   "author_name": "ukdicha modak",
-   "likes": 23076,
-   "story": "A profile of Alice Huang, a suspected Chinese spy who founded Megaspeed in 2023 and spent years in Jensen Huang's orbit; Megaspeed's Nvidia imports top $4.6B"
-  },
-  {
-   "title": "Claude Fable 5.2 Scores 65 on Artificial Analysis, Highest So Far",
-   "url": "https://artificialanalysis.ai/models/claude-fable-5-2",
-   "source": "Hacker News",
-   "published_at": "2026-11-09T20:04:55Z",
-   "text": "287 points and 205 comments on Hacker News.",
-   "points": 287,
-   "discussion": "https://news.ycombinator.com/item?id=50431144"
   },
   {
    "title": "We have our answer to who will be replacing Sora and OpenAI as Disney's generative AI partner. Disn…",
@@ -105,15 +86,24 @@
    "published_at": "2026-11-09T21:53:54Z",
    "text": "We have our answer to who will be replacing Sora and OpenAI as Disney's generative AI partner. Disney plans to use it not only in studio, but also at the theme parks. 'Disney will work directly with Adobe on generative AI models tailored to Disney’s properties'",
    "author_name": "Andrew Curran",
-   "likes": 176,
+   "likes": 177,
    "story": "Disney and Adobe sign a multiyear deal to build proprietary “artist-led” generative AI models with Adobe Firefly Foundry to support Disney's production pipeline"
   },
   {
-   "title": "Jensen Huang's affair shines a spotlight on Nvidia's weak board and opaque succession planning at w…",
-   "url": "https://www.semafor.com/article/11/09/2026/with-a-weak-board-and-no-successor-nvidia-confronts-a-governance-crisis",
-   "source": "Semafor",
-   "published_at": "2026-11-09T22:01:20Z",
-   "text": "Jensen Huang's affair shines a spotlight on Nvidia's weak board and opaque succession planning at what has become the world's most important company. Nvidia CEO Jensen Huang's spy scandal shines a spotlight on thin corporate governance and opaque succession planning at what has become the world's most important company.",
+   "title": "Claude Fable 5.2 scores 65 on Artificial Analysis, highest so far",
+   "url": "https://artificialanalysis.ai/models/claude-fable-5-2",
+   "source": "Hacker News",
+   "published_at": "2026-11-09T20:04:55Z",
+   "text": "296 points and 216 comments on Hacker News.",
+   "points": 296,
+   "discussion": "https://news.ycombinator.com/item?id=50431144"
+  },
+  {
+   "title": "Nvidia drops 4.3% after its board opens an investigation into Jensen Huang; the company originally…",
+   "url": "https://www.ft.com/content/fa3b0a35-1aa9-4f31-97b4-e4c599e3e654",
+   "source": "Demetri Sevastopulo / Finan…",
+   "published_at": "2026-11-09T10:40:50Z",
+   "text": "Nvidia drops 4.3% after its board opens an investigation into Jensen Huang; the company originally dismissed the interactions as “nothing unusual or unexpected”. Board of chipmaker opens investigation after chief executive Jensen Huang admits to affair",
    "via": "Techmeme"
   },
   {
@@ -124,11 +114,19 @@
    "text": "Most of the changes I make to my projects these days come in the form of PRs opened for me by Claude Code or Codex. The PR is my unit of work - I use them to bundle commits together, iterating on them until a feature is complete, document decisions and then merge the finished result. Today's coding agents are great at writing PR descriptions. They're too good at describing the work The problem is that they are too good. An agent-written PR description is accurate and comprehensive. It describes the problem, the detailed solution, and the steps taken to verify it."
   },
   {
-   "title": "Sources: Alice Huang and her partner pitched a Southeast Asia data center project to China-based in…",
-   "url": "https://www.ft.com/content/5d8c1e1d-6ce0-4eb4-9f5c-722fa5c4841d",
-   "source": "Financial Times",
-   "published_at": "2026-11-09T14:02:34Z",
-   "text": "Sources: Alice Huang and her partner pitched a Southeast Asia data center project to China-based investors in 2025, saying they had “no problem securing GPUs”. Alice Huang boasted of having access to Nvidia GPUs and her connection to Alibaba — The woman at the centre …",
+   "title": "Jensen Huang's affair shines a spotlight on Nvidia's weak board and opaque succession planning at w…",
+   "url": "https://www.semafor.com/article/11/09/2026/with-a-weak-board-and-no-successor-nvidia-confronts-a-governance-crisis",
+   "source": "Semafor",
+   "published_at": "2026-11-09T22:01:20Z",
+   "text": "Jensen Huang's affair shines a spotlight on Nvidia's weak board and opaque succession planning at what has become the world's most important company. Nvidia CEO Jensen Huang's spy scandal shines a spotlight on thin corporate governance and opaque succession planning at what has become the world's most important company.",
+   "via": "Techmeme"
+  },
+  {
+   "title": "Apple is now offering additional AI access via one-time $50 “intelligence usage packs” when monthly…",
+   "url": "https://9to5mac.com/2026/11/09/apple-launches-50-intelligence-usage-packs-for-select-ai-features/",
+   "source": "Ryan Christoffel / 9to5Mac",
+   "published_at": "2026-11-09T23:05:56Z",
+   "text": "Apple is now offering additional AI access via one-time $50 “intelligence usage packs” when monthly usage caps are met, starting in its Creator Studio apps. Apple has said it will eventually charge for expanded usage of select AI features. Now the first 'intelligence usage packs …",
    "via": "Techmeme"
   }
  ],
