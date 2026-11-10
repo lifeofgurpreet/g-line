@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-10T17:04:40Z",
+ "generated_at": "2026-11-10T17:37:31Z",
  "items": [
   {
    "title": "Anthropic launches its IPO roadshow, saying the company and shareholders plan to sell 825M Class A…",
@@ -11,14 +11,14 @@
    "via": "Techmeme"
   },
   {
-   "title": "Introducing Claude Fable 5.2 and Claude Mythos 5.2, designed to tackle the most daunting technical…",
-   "url": "https://x.com/claudeai/status/2119867114450268322",
+   "title": "Starting to roll out today: Claude Whiteboards, Claude Sheets and Claude Data. Think a plan through…",
+   "url": "https://x.com/claudeai/status/2120206365759094857",
    "source": "𝕏 @claudeai",
-   "published_at": "2026-11-09T18:57:59Z",
-   "text": "Introducing Claude Fable 5.2 and Claude Mythos 5.2, designed to tackle the most daunting technical challenges. They’re capable collaborators on ambitious projects in many fields, and show improvements in areas like coding, reasoning, and vision.",
+   "published_at": "2026-11-10T17:26:03Z",
+   "text": "Starting to roll out today: Claude Whiteboards, Claude Sheets and Claude Data. Think a plan through on a board, build a tracker in a sheet, and tell a story with your data.",
    "author_name": "Claude",
-   "likes": 91439,
-   "story": "Anthropic's Fable 5.2 represents “Jagged AGI”, which matches human experts on most computer tasks like game design but lacks self-directed judgment and taste"
+   "likes": 2306,
+   "story": "Sources: Goldman Sachs expects Anthropic revenue of ~$52B in 2026 and $600B+ by 2030, operating profit in 2029, and positive free cash flow in 2030"
   },
   {
    "title": "Claude Code 2.1.322 released",
@@ -28,24 +28,27 @@
    "text": "Added fast mode on Vertex in the global, us and eu regions, falling back to standard speed if Vertex refuses it"
   },
   {
-   "title": "Gemini 4 Carbon is now available in Cursor! At high effort, it's the top model on CursorBench at 60…",
-   "url": "https://x.com/cursor_ai/status/2120193584670580857",
-   "source": "𝕏 @cursor_ai",
-   "published_at": "2026-11-10T16:35:16Z",
-   "text": "Gemini 4 Carbon is now available in Cursor! At high effort, it's the top model on CursorBench at 60.4%",
-   "author_name": "Cursor",
-   "likes": 1063,
+   "title": "Had early access to Gemini 4 Carbon, it is a very good model that improves on Argon. It is useful t…",
+   "url": "https://x.com/emollick/status/2120198832202125322",
+   "source": "𝕏 @emollick",
+   "published_at": "2026-11-10T16:56:07Z",
+   "text": "Had early access to Gemini 4 Carbon, it is a very good model that improves on Argon. It is useful to have an AI that thinks differently than Claude/GPT & is still highly capable, but has its own strengths & weakness One fun demo: I gave Carbon a video clip & it reproduced in 3js",
+   "author_name": "Ethan Mollick",
+   "likes": 160,
    "story": "Google rolls out Gemini 4 Carbon to paid API and AI Ultra users two weeks after releasing it to cyber defenders, and previews a swarm feature in Antigravity"
   },
   {
-   "title": "1/ announcing our smallest, most efficient little model is here: muse ember 🔥 built for work that a…",
-   "url": "https://x.com/alexandr_wang/status/2119853374158032950",
-   "source": "𝕏 @alexandr_wang",
-   "published_at": "2026-11-09T18:03:24Z",
-   "text": "1/ announcing our smallest, most efficient little model is here: muse ember 🔥 built for work that agents repeat all day, it gets you more intelligence per dollar than Haiku, Luna, and all other flash models at any reasoning setting and does it at a third of the cost or less!",
-   "author_name": "Alexandr Wang",
-   "likes": 5798,
-   "story": "Meta releases Muse Ember, its smallest and most cost-efficient AI model yet, saying it delivers more intelligence per dollar than Claude Haiku 5.5 or GPT-6 Luna"
+   "title": "When Anthropic release a new model it's always worth taking a look at their updated prompting guide…",
+   "url": "https://x.com/simonw/status/2120029347948220500",
+   "source": "𝕏 @simonw",
+   "published_at": "2026-11-10T05:42:39Z",
+   "text": "When Anthropic release a new model it's always worth taking a look at their updated prompting guide - here's an entertaining tip to make Fable 5.2 less likely to be cautious in how it improves existing code: tell it \"This codebase is yours\"",
+   "author_name": "Simon Willison",
+   "likes": 3426,
+   "story": "Anthropic's Fable 5.2 represents “Jagged AGI”, which matches human experts on most computer tasks like game design but lacks self-directed judgment and taste",
+   "links": [
+    "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/prompting-claude-fable-5-2#say-who-owns-the-code"
+   ]
   },
   {
    "title": "Filing: Anthropic's IPO could give it an up to $1.405T valuation on a fully diluted basis, up from…",
@@ -56,13 +59,13 @@
    "via": "Techmeme"
   },
   {
-   "title": "Fireworks AI security breach impacts Notion and their customers",
-   "url": "https://www.notion.com/help/security-incident-involving-a-third-party-ai-vendor",
+   "title": "Claude Fable 5.2 and Mythos 5.2",
+   "url": "https://www.anthropic.com/claude-fable-and-mythos-5-2",
    "source": "Hacker News",
-   "published_at": "2026-11-10T07:19:38Z",
-   "text": "139 points and 49 comments on Hacker News.",
-   "points": 139,
-   "discussion": "https://news.ycombinator.com/item?id=50437106"
+   "published_at": "2026-11-09T18:56:29Z",
+   "text": "982 points and 6 comments on Hacker News.",
+   "points": 982,
+   "discussion": "https://news.ycombinator.com/item?id=50429906"
   },
   {
    "title": "Fireworks, the most highly-valued out of a growing group of inference providers, told customers inc…",
@@ -71,7 +74,7 @@
    "published_at": "2026-11-09T19:46:39Z",
    "text": "Fireworks, the most highly-valued out of a growing group of inference providers, told customers including Harvey that it had been hit with a hack that exposed customer data. Some customers are now considering moving their business off the platform.",
    "author_name": "Stephanie Palazzolo",
-   "likes": 783,
+   "likes": 787,
    "story": "AI infrastructure provider Fireworks says hackers accessed some of its customers' datasets, incomplete model weights, and billing information in late October",
    "links": [
     "https://www.theinformation.com/articles/new-fireworks-hack-threatens-1-billion-business"
@@ -85,14 +88,6 @@
    "text": "Our house has a box room, full of boxes that we still haven't unpacked from our last move. A couple of weeks ago something in that room started intermittently beeping . The beeps were far enough apart that standing in the room and trying to determine the source of the noise was frustrating, and I really didn't want to dig through every one of those boxes. So I had Claude Code build Beep Locator , a software system for triangulating the source of a mysterious beep using multiple devices scattered around the room."
   },
   {
-   "title": "Sources: Goldman Sachs expects Anthropic revenue of ~$52B in 2026 and $600B+ by 2030, operating pro…",
-   "url": "https://www.ft.com/content/fd209548-d2df-470c-ab9a-caadbec08b58",
-   "source": "Financial Times",
-   "published_at": "2026-11-10T16:03:52Z",
-   "text": "Sources: Goldman Sachs expects Anthropic revenue of ~$52B in 2026 and $600B+ by 2030, operating profit in 2029, and positive free cash flow in 2030. Wall Street bank projects AI start-up will increase sales by 130 times — and be cash flow positive — by end of the decade",
-   "via": "Techmeme"
-  },
-  {
    "title": "IPO prospectus: Anthropic and its investors are set to raise up to $64.4B, and it will also raise $…",
    "url": "https://www.reuters.com/business/anthropic-ipo-raise-much-644-billion-latest-draft-prospectus-shows-2026-11-10/",
    "source": "Echo Wang / Reuters",
@@ -101,11 +96,13 @@
    "via": "Techmeme"
   },
   {
-   "title": "Hide your slop PR descriptions behind <details><summary>",
-   "url": "https://simonwillison.net/2026/Nov/9/details-summary/",
-   "source": "Simon Willison's weblog",
-   "published_at": "2026-11-09T04:25:05Z",
-   "text": "Most of the changes I make to my projects these days come in the form of PRs opened for me by Claude Code or Codex. The PR is my unit of work - I use them to bundle commits together, iterating on them until a feature is complete, document decisions and then merge the finished result. Today's coding agents are great at writing PR descriptions. They're too good at describing the work The problem is that they are too good. An agent-written PR description is accurate and comprehensive. It describes the problem, the detailed solution, and the steps taken to verify it."
+   "title": "Fireworks AI security breach impacts Notion and their customers",
+   "url": "https://www.notion.com/help/security-incident-involving-a-third-party-ai-vendor",
+   "source": "Hacker News",
+   "published_at": "2026-11-10T07:19:38Z",
+   "text": "143 points and 49 comments on Hacker News.",
+   "points": 143,
+   "discussion": "https://news.ycombinator.com/item?id=50437106"
   },
   {
    "title": "Sources: Jensen Huang and Alice Huang's relationship dates back to at least 2023, facilitating $7.5…",
@@ -116,12 +113,11 @@
    "via": "Techmeme"
   },
   {
-   "title": "Analysis: Nvidia's 2025 figures to the US government undercounted chips sold to Megaspeed via partn…",
-   "url": "https://www.bloomberg.com/news/articles/2026-11-09/nvidia-intervened-in-us-probe-of-megaspeed-chip-smuggling",
-   "source": "Mackenzie Hawkins / Bloombe…",
-   "published_at": "2026-11-10T04:25:55Z",
-   "text": "Analysis: Nvidia's 2025 figures to the US government undercounted chips sold to Megaspeed via partners by 50,000; Nvidia did not give Bloomberg an exact figure",
-   "via": "Techmeme"
+   "title": "Hide your slop PR descriptions behind <details><summary>",
+   "url": "https://simonwillison.net/2026/Nov/9/details-summary/",
+   "source": "Simon Willison's weblog",
+   "published_at": "2026-11-09T04:25:05Z",
+   "text": "Most of the changes I make to my projects these days come in the form of PRs opened for me by Claude Code or Codex. The PR is my unit of work - I use them to bundle commits together, iterating on them until a feature is complete, document decisions and then merge the finished result. Today's coding agents are great at writing PR descriptions. They're too good at describing the work The problem is that they are too good. An agent-written PR description is accurate and comprehensive. It describes the problem, the detailed solution, and the steps taken to verify it."
   },
   {
    "title": "Trump says the FBI is “looking into” Jensen Huang's affair, and the Nvidia CEO told him that he “ha…",
@@ -129,6 +125,14 @@
    "source": "Associated Press",
    "published_at": "2026-11-09T22:40:46Z",
    "text": "Trump says the FBI is “looking into” Jensen Huang's affair, and the Nvidia CEO told him that he “had absolutely no idea that the person in question was a spy”. President Donald Trump said Monday that Nvidia CEO Jensen Huang should not worry about the FBI looking …",
+   "via": "Techmeme"
+  },
+  {
+   "title": "Amazon's Ring unveils the $249 Ring Drone Cam and the $999 Ring Rover Cam, utilizing its AI Pilot n…",
+   "url": "https://www.zdnet.com/home-and-office/ring-drone-cam-rover-cam-security-robots/",
+   "source": "Kyle Kucharski / ZDNET",
+   "published_at": "2026-11-10T13:40:51Z",
+   "text": "Amazon's Ring unveils the $249 Ring Drone Cam and the $999 Ring Rover Cam, utilizing its AI Pilot navigation software, under new subbrand Ring Robotics. Alongside the Ring Drone Cam, Ring introduced the Rover Cam for businesses. It investigates disturbances and streams 4K footage.",
    "via": "Techmeme"
   }
  ],
