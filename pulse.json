@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-10T20:19:04Z",
+ "generated_at": "2026-11-10T20:50:29Z",
  "items": [
   {
    "title": "Sources: Jensen Huang and Alice Huang's relationship dates back to at least 2023, facilitating $7.5…",
@@ -17,8 +17,8 @@
    "published_at": "2026-11-10T17:26:03Z",
    "text": "Starting to roll out today: Claude Whiteboards, Claude Sheets and Claude Data. Think a plan through on a board, build a tracker in a sheet, and tell a story with your data.",
    "author_name": "Claude",
-   "likes": 24108,
-   "story": "Anthropic unveils office tools, including a video call assistant, a data dashboard, and spreadsheet service Claude Sheets, in a bid to compete with Microsoft"
+   "likes": 26718,
+   "story": "Anthropic unveils office tools, including a video call assistant, a data dashboard, and spreadsheet service Claude Sheets, competing with Microsoft and Google"
   },
   {
    "title": "Claude Code 2.1.322 released",
@@ -34,7 +34,7 @@
    "published_at": "2026-11-10T19:30:45Z",
    "text": "By announcing it has \"no reason to believe that either national security or Nvidia secrets were compromised,\" Nvidia's \"investigation\" into Huang begins with its conclusion seemingly predetermined",
    "author_name": "Casey Newton",
-   "likes": 23,
+   "likes": 37,
    "story": "Nvidia hires law firm Wachtell Lipton to investigate Jensen Huang's affair with an alleged Chinese spy, to be led by former acting US attorney Joon H. Kim",
    "links": [
     "https://www.nytimes.com/2026/11/10/business/nvidia-wachtell-lipton-jensen-huang.html"
@@ -47,7 +47,7 @@
    "published_at": "2026-11-10T16:04:43Z",
    "text": "Gemini 4 Carbon is rolling out today. It’s built for sustained, long-horizon tasks, reasoning deeply through complex software engineering, cybersecurity, and scientific discovery. Coming globally via the Gemini API in @GoogleAIStudio and Gemini for business, and for Ultra…",
    "author_name": "Sundar Pichai",
-   "likes": 5393,
+   "likes": 5530,
    "story": "Google rolls out Gemini 4 Carbon to paid API and AI Ultra users two weeks after releasing it to cyber defenders, and previews a swarm feature in Antigravity"
   },
   {
@@ -63,8 +63,8 @@
    "url": "https://github.com/GoogleChrome/modern-web-guidance",
    "source": "Hacker News",
    "published_at": "2026-11-10T18:01:15Z",
-   "text": "100 points and 32 comments on Hacker News.",
-   "points": 100,
+   "text": "135 points and 37 comments on Hacker News.",
+   "points": 135,
    "discussion": "https://news.ycombinator.com/item?id=50443812"
   },
   {
@@ -74,7 +74,7 @@
    "published_at": "2026-11-10T05:42:39Z",
    "text": "When Anthropic release a new model it's always worth taking a look at their updated prompting guide - here's an entertaining tip to make Fable 5.2 less likely to be cautious in how it improves existing code: tell it \"This codebase is yours\"",
    "author_name": "Simon Willison",
-   "likes": 3695,
+   "likes": 3743,
    "story": "Anthropic's Fable 5.2 represents “Jagged AGI”, which matches human experts on most computer tasks like game design but lacks self-directed judgment and taste",
    "links": [
     "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/prompting-claude-fable-5-2#say-who-owns-the-code"
@@ -102,24 +102,24 @@
    "published_at": "2026-11-10T17:05:35Z",
    "text": "The AI Futures Project have updated their timelines. They say we are five months ahead of AI 2027, and they now believe a Superhuman AI Researcher will arrive sometime in 2027.",
    "author_name": "Andrew Curran",
-   "likes": 1340,
-   "story": "The AI Futures Project updates its AI timelines after METR's report on Anthropic R&D, saying it now expects a Superhuman AI Researcher to arrive in 2027"
+   "likes": 1410,
+   "story": "The AI Futures Project updates its timelines after METR's report on Anthropic R&D progress, saying it now expects a Superhuman AI Researcher to arrive in 2027"
   },
   {
    "title": "AI usage generates a fragile codebase",
    "url": "https://evanxmerz.com/post/ai-usage-generates-a-fragile-codebase/",
    "source": "Hacker News",
    "published_at": "2026-11-10T10:25:58Z",
-   "text": "244 points and 292 comments on Hacker News.",
-   "points": 244,
+   "text": "261 points and 315 comments on Hacker News.",
+   "points": 261,
    "discussion": "https://news.ycombinator.com/item?id=50438318"
   },
   {
-   "title": "Analysis: Nvidia's 2025 figures to the US government undercounted chips sold to Megaspeed via partn…",
-   "url": "https://www.bloomberg.com/news/articles/2026-11-09/nvidia-intervened-in-us-probe-of-megaspeed-chip-smuggling",
-   "source": "Mackenzie Hawkins / Bloombe…",
-   "published_at": "2026-11-10T04:25:55Z",
-   "text": "Analysis: Nvidia's 2025 figures to the US government undercounted chips sold to Megaspeed via partners by 50,000; Nvidia did not give Bloomberg an exact figure",
+   "title": "Sources: Goldman Sachs expects Anthropic to hit ~$52B revenue in 2026 and $600B+ by 2030, an operat…",
+   "url": "https://www.ft.com/content/fd209548-d2df-470c-ab9a-caadbec08b58",
+   "source": "Financial Times",
+   "published_at": "2026-11-10T16:03:52Z",
+   "text": "Sources: Goldman Sachs expects Anthropic to hit ~$52B revenue in 2026 and $600B+ by 2030, an operating profit in 2029, and be free cash flow positive from 2030",
    "via": "Techmeme"
   },
   {
