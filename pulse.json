@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-10T11:11:52Z",
+ "generated_at": "2026-11-10T11:43:42Z",
  "items": [
   {
    "title": "Trump says the FBI is “looking into” Jensen Huang's affair, and the Nvidia CEO told him that he “ha…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-09T18:57:59Z",
    "text": "Introducing Claude Fable 5.2 and Claude Mythos 5.2, designed to tackle the most daunting technical challenges. They’re capable collaborators on ambitious projects in many fields, and show improvements in areas like coding, reasoning, and vision.",
    "author_name": "Claude",
-   "likes": 88124,
+   "likes": 88442,
    "story": "Anthropic releases Mythos 5.2 and Fable 5.2, saying they are “best for the most ambitious, open-ended technical work”, with outputs up to 30% faster than 5.1"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-11-09T18:03:24Z",
    "text": "1/ announcing our smallest, most efficient little model is here: muse ember 🔥 built for work that agents repeat all day, it gets you more intelligence per dollar than Haiku, Luna, and all other flash models at any reasoning setting and does it at a third of the cost or less!",
    "author_name": "Alexandr Wang",
-   "likes": 5454,
+   "likes": 5478,
    "story": "Meta releases Muse Ember, its smallest and most cost-efficient AI model yet, saying it delivers more intelligence per dollar than Haiku 5.5 and GPT-6 Luna"
   },
   {
@@ -50,19 +50,19 @@
    "url": "https://github.com/thisisme6598/gemini_files/",
    "source": "Hacker News",
    "published_at": "2026-11-09T18:24:38Z",
-   "text": "621 points and 130 comments on Hacker News.",
-   "points": 621,
+   "text": "626 points and 131 comments on Hacker News.",
+   "points": 626,
    "discussion": "https://news.ycombinator.com/item?id=50429426"
   },
   {
-   "title": "Four distinct TPU systems in a single generation in one year! Instead of waiting years for a tradit…",
-   "url": "https://x.com/sundarpichai/status/2119857335871164769",
-   "source": "𝕏 @sundarpichai",
-   "published_at": "2026-11-09T18:19:08Z",
-   "text": "Four distinct TPU systems in a single generation in one year! Instead of waiting years for a traditional semiconductor cycle, hardware engineers co-designing systems alongside Google Deepmind means we can keep innovating quickly for customers.",
-   "author_name": "Sundar Pichai",
-   "likes": 4620,
-   "story": "Google unveils two specialized TPUs launching in 2027: the 8tx, to be paired with an AMD CPU, and the 8i Max, a dual-chip package for long-context window tasks"
+   "title": "We have our answer to who will be replacing Sora and OpenAI as Disney's generative AI partner. Disn…",
+   "url": "https://x.com/AndrewCurran_/status/2119911383190085923",
+   "source": "𝕏 @AndrewCurran_",
+   "published_at": "2026-11-09T21:53:54Z",
+   "text": "We have our answer to who will be replacing Sora and OpenAI as Disney's generative AI partner. Disney plans to use it not only in studio, but also at the theme parks. 'Disney will work directly with Adobe on generative AI models tailored to Disney’s properties'",
+   "author_name": "Andrew Curran",
+   "likes": 214,
+   "story": "Disney and Adobe sign a multiyear deal to build proprietary “artist-led” generative AI models with Adobe Firefly Foundry to support Disney's production pipeline"
   },
   {
    "title": "Locating the source of a mysterious beep with Claude",
@@ -80,36 +80,13 @@
    "via": "Techmeme"
   },
   {
-   "title": "I had early access to Fable 5.2 for a bit & I think it crosses the line into being a sort of Jagged…",
-   "url": "https://x.com/emollick/status/2119870150845599972",
-   "source": "𝕏 @emollick",
-   "published_at": "2026-11-09T19:10:03Z",
-   "text": "I had early access to Fable 5.2 for a bit & I think it crosses the line into being a sort of Jagged AGI. Here, I have it launch a business, do academic research, hack hardware, build 3D models & more. I think it is a good illustration of limits & powers:",
-   "author_name": "Ethan Mollick",
-   "likes": 3928,
-   "story": "Anthropic says during prerelease testing Mythos 5.2 and Fable 5.2 formalized the proof of Fermat's Last Theorem and solved two open black hole physics problems",
-   "links": [
-    "https://www.oneusefulthing.org/p/fable-52-and-jagged-agi"
-   ]
-  },
-  {
    "title": "CoreWeave bond yield tops 16% as AI credit stress rises",
    "url": "https://www.cnbc.com/2026/11/06/coreweave-bond-yield-tops-16percent-as-ai-credit-stress-rises.html",
    "source": "Hacker News",
    "published_at": "2026-11-10T03:20:06Z",
-   "text": "162 points and 123 comments on Hacker News.",
-   "points": 162,
+   "text": "166 points and 129 comments on Hacker News.",
+   "points": 166,
    "discussion": "https://news.ycombinator.com/item?id=50435660"
-  },
-  {
-   "title": "We have our answer to who will be replacing Sora and OpenAI as Disney's generative AI partner. Disn…",
-   "url": "https://x.com/AndrewCurran_/status/2119911383190085923",
-   "source": "𝕏 @AndrewCurran_",
-   "published_at": "2026-11-09T21:53:54Z",
-   "text": "We have our answer to who will be replacing Sora and OpenAI as Disney's generative AI partner. Disney plans to use it not only in studio, but also at the theme parks. 'Disney will work directly with Adobe on generative AI models tailored to Disney’s properties'",
-   "author_name": "Andrew Curran",
-   "likes": 212,
-   "story": "Disney and Adobe sign a multiyear deal to build proprietary “artist-led” generative AI models with Adobe Firefly Foundry to support Disney's production pipeline"
   },
   {
    "title": "Analysis: Nvidia's 2025 figures to the US government undercounted chips sold to Megaspeed via partn…",
@@ -127,11 +104,27 @@
    "text": "Most of the changes I make to my projects these days come in the form of PRs opened for me by Claude Code or Codex. The PR is my unit of work - I use them to bundle commits together, iterating on them until a feature is complete, document decisions and then merge the finished result. Today's coding agents are great at writing PR descriptions. They're too good at describing the work The problem is that they are too good. An agent-written PR description is accurate and comprehensive. It describes the problem, the detailed solution, and the steps taken to verify it."
   },
   {
+   "title": "IPO prospectus: Anthropic's IPO is set to raise up to $64.4B, and the company will also raise $26B…",
+   "url": "https://www.reuters.com/business/anthropic-ipo-raise-much-644-billion-latest-draft-prospectus-shows-2026-11-10/",
+   "source": "Echo Wang / Reuters",
+   "published_at": "2026-11-10T11:21:05Z",
+   "text": "IPO prospectus: Anthropic's IPO is set to raise up to $64.4B, and the company will also raise $26B via cornerstone investors like Google, AMD, and Nvidia. Anthropic's IPO is set to raise as much as $64.4 billion, according to the latest draft prospectus seen by Reuters on Tuesday …",
+   "via": "Techmeme"
+  },
+  {
    "title": "Jensen Huang's affair shines a spotlight on Nvidia's weak board and opaque succession planning at w…",
    "url": "https://www.semafor.com/article/11/09/2026/with-a-weak-board-and-no-successor-nvidia-confronts-a-governance-crisis",
    "source": "Semafor",
    "published_at": "2026-11-09T22:01:20Z",
    "text": "Jensen Huang's affair shines a spotlight on Nvidia's weak board and opaque succession planning at what has become the world's most important company. Nvidia CEO Jensen Huang's spy scandal shines a spotlight on thin corporate governance and opaque succession planning at what has become the world's most important company.",
+   "via": "Techmeme"
+  },
+  {
+   "title": "Apple begins offering additional AI access via one-time $50 “intelligence usage packs” when users m…",
+   "url": "https://9to5mac.com/2026/11/09/apple-launches-50-intelligence-usage-packs-for-select-ai-features/",
+   "source": "Ryan Christoffel / 9to5Mac",
+   "published_at": "2026-11-09T23:05:56Z",
+   "text": "Apple begins offering additional AI access via one-time $50 “intelligence usage packs” when users meet monthly usage caps, starting in its Creator Studio apps. Apple has said it will eventually charge for expanded usage of select AI features.",
    "via": "Techmeme"
   }
  ],
