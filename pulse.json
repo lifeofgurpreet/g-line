@@ -1,13 +1,13 @@
 {
  "schema": 1,
- "generated_at": "2026-11-10T08:31:44Z",
+ "generated_at": "2026-11-10T09:03:52Z",
  "items": [
   {
-   "title": "Trump says the FBI is “looking into” Jensen Huang's affair, and the Nvidia CEO told him he “had abs…",
+   "title": "Trump says the FBI is “looking into” Jensen Huang's affair, and the Nvidia CEO told him that he “ha…",
    "url": "https://apnews.com/article/china-denies-spy-jensen-huang-nvidia-3345b9f05c54d58909e88f6dcb9c1cd8",
    "source": "Associated Press",
    "published_at": "2026-11-09T22:40:46Z",
-   "text": "Trump says the FBI is “looking into” Jensen Huang's affair, and the Nvidia CEO told him he “had absolutely no idea that the person in question was a spy”. President Donald Trump said Monday that Nvidia CEO Jensen Huang should not worry about the FBI looking …",
+   "text": "Trump says the FBI is “looking into” Jensen Huang's affair, and the Nvidia CEO told him that he “had absolutely no idea that the person in question was a spy”. President Donald Trump said Monday that Nvidia CEO Jensen Huang should not worry about the FBI looking …",
    "via": "Techmeme"
   },
   {
@@ -17,7 +17,7 @@
    "published_at": "2026-11-09T18:57:59Z",
    "text": "Introducing Claude Fable 5.2 and Claude Mythos 5.2, designed to tackle the most daunting technical challenges. They’re capable collaborators on ambitious projects in many fields, and show improvements in areas like coding, reasoning, and vision.",
    "author_name": "Claude",
-   "likes": 86237,
+   "likes": 86642,
    "story": "Anthropic releases Mythos 5.2 and Fable 5.2, saying they are “best for the most ambitious, open-ended technical work”, with outputs up to 30% faster than 5.1"
   },
   {
@@ -34,15 +34,15 @@
    "published_at": "2026-11-09T18:03:24Z",
    "text": "1/ announcing our smallest, most efficient little model is here: muse ember 🔥 built for work that agents repeat all day, it gets you more intelligence per dollar than Haiku, Luna, and all other flash models at any reasoning setting and does it at a third of the cost or less!",
    "author_name": "Alexandr Wang",
-   "likes": 5343,
+   "likes": 5364,
    "story": "Meta releases Muse Ember, its smallest and most cost-efficient AI model yet, saying it delivers more intelligence per dollar than Haiku 5.5 and GPT-6 Luna"
   },
   {
-   "title": "Sources: a Commerce Department investigation into Megaspeed for allegedly smuggling Nvidia chips to…",
-   "url": "https://www.nytimes.com/2026/11/09/business/economy/nvidia-megaspeed-investigation-huang.html?unlocked_article_code=1.PFE.kx0T.Y85ccrbdDRP8&smid=url-share",
-   "source": "New York Times",
-   "published_at": "2026-11-09T16:20:53Z",
-   "text": "Sources: a Commerce Department investigation into Megaspeed for allegedly smuggling Nvidia chips to China was transferred to the DOJ after Nvidia intervened. An investigation into Megaspeed, a Singapore company that was buying advanced Nvidia A.I. chips, was transferred to the Justice Department …",
+   "title": "Analysis: Nvidia's 2025 figures to the US government undercounted chips sold to Megaspeed via partn…",
+   "url": "https://www.bloomberg.com/news/articles/2026-11-09/nvidia-intervened-in-us-probe-of-megaspeed-chip-smuggling",
+   "source": "Mackenzie Hawkins / Bloombe…",
+   "published_at": "2026-11-10T04:25:55Z",
+   "text": "Analysis: Nvidia's 2025 figures to the US government undercounted chips sold to Megaspeed via partners by 50K; Nvidia did not give Bloomberg an exact figure. Nvidia Corp.'s general counsel intervened in a US government probe of suspected smuggling of AI chips by Megaspeed International …",
    "via": "Techmeme"
   },
   {
@@ -50,8 +50,8 @@
    "url": "https://github.com/thisisme6598/gemini_files/",
    "source": "Hacker News",
    "published_at": "2026-11-09T18:24:38Z",
-   "text": "575 points and 127 comments on Hacker News.",
-   "points": 575,
+   "text": "582 points and 128 comments on Hacker News.",
+   "points": 582,
    "discussion": "https://news.ycombinator.com/item?id=50429426"
   },
   {
@@ -61,7 +61,7 @@
    "published_at": "2026-11-09T18:19:08Z",
    "text": "Four distinct TPU systems in a single generation in one year! Instead of waiting years for a traditional semiconductor cycle, hardware engineers co-designing systems alongside Google Deepmind means we can keep innovating quickly for customers.",
    "author_name": "Sundar Pichai",
-   "likes": 4391,
+   "likes": 4443,
    "story": "Google unveils two specialized TPUs launching in 2027: the 8tx, to be paired with an AMD CPU, and the 8i Max, a dual-chip package for long-context window tasks"
   },
   {
@@ -72,11 +72,11 @@
    "text": "Our house has a box room, full of boxes that we still haven't unpacked from our last move. A couple of weeks ago something in that room started intermittently beeping . The beeps were far enough apart that standing in the room and trying to determine the source of the noise was frustrating, and I really didn't want to dig through every one of those boxes. So I had Claude Code build Beep Locator , a software system for triangulating the source of a mysterious beep using multiple devices scattered around the room."
   },
   {
-   "title": "Nvidia drops 4.3% after its board opens an investigation into Jensen Huang; the company originally…",
-   "url": "https://www.ft.com/content/fa3b0a35-1aa9-4f31-97b4-e4c599e3e654",
-   "source": "Demetri Sevastopulo / Finan…",
-   "published_at": "2026-11-09T10:40:50Z",
-   "text": "Nvidia drops 4.3% after its board opens an investigation into Jensen Huang; the company originally dismissed the interactions as “nothing unusual or unexpected”. Board of chipmaker opens investigation after chief executive Jensen Huang admits to affair",
+   "title": "Sources: a US Commerce Department investigation into Megaspeed for allegedly smuggling Nvidia chips…",
+   "url": "https://www.nytimes.com/2026/11/09/business/economy/nvidia-megaspeed-investigation-huang.html?unlocked_article_code=1.PFE.kx0T.Y85ccrbdDRP8&smid=url-share",
+   "source": "New York Times",
+   "published_at": "2026-11-09T16:20:53Z",
+   "text": "Sources: a US Commerce Department investigation into Megaspeed for allegedly smuggling Nvidia chips to China was transferred to the DOJ after Nvidia intervened. An investigation into Megaspeed, a Singapore company that was buying advanced Nvidia A.I. chips, was transferred to the Justice Department …",
    "via": "Techmeme"
   },
   {
@@ -86,7 +86,7 @@
    "published_at": "2026-11-09T21:53:54Z",
    "text": "We have our answer to who will be replacing Sora and OpenAI as Disney's generative AI partner. Disney plans to use it not only in studio, but also at the theme parks. 'Disney will work directly with Adobe on generative AI models tailored to Disney’s properties'",
    "author_name": "Andrew Curran",
-   "likes": 202,
+   "likes": 203,
    "story": "Disney and Adobe sign a multiyear deal to build proprietary “artist-led” generative AI models with Adobe Firefly Foundry to support Disney's production pipeline"
   },
   {
@@ -94,16 +94,16 @@
    "url": "https://www.cnbc.com/2026/11/06/coreweave-bond-yield-tops-16percent-as-ai-credit-stress-rises.html",
    "source": "Hacker News",
    "published_at": "2026-11-10T03:20:06Z",
-   "text": "132 points and 82 comments on Hacker News.",
-   "points": 132,
+   "text": "136 points and 94 comments on Hacker News.",
+   "points": 136,
    "discussion": "https://news.ycombinator.com/item?id=50435660"
   },
   {
-   "title": "Analysis: Nvidia's 2025 figures to the US government undercounted chips sold to Megaspeed via partn…",
-   "url": "https://www.bloomberg.com/news/articles/2026-11-09/nvidia-intervened-in-us-probe-of-megaspeed-chip-smuggling",
-   "source": "Mackenzie Hawkins / Bloombe…",
-   "published_at": "2026-11-10T04:25:55Z",
-   "text": "Analysis: Nvidia's 2025 figures to the US government undercounted chips sold to Megaspeed via partners by 50K; Nvidia did not give Bloomberg an exact figure. Nvidia Corp.'s general counsel intervened in a US government probe of suspected smuggling of AI chips by Megaspeed International …",
+   "title": "Apple is now offering additional AI access via one-time $50 “intelligence usage packs” when monthly…",
+   "url": "https://9to5mac.com/2026/11/09/apple-launches-50-intelligence-usage-packs-for-select-ai-features/",
+   "source": "Ryan Christoffel / 9to5Mac",
+   "published_at": "2026-11-09T23:05:56Z",
+   "text": "Apple is now offering additional AI access via one-time $50 “intelligence usage packs” when monthly usage caps are met, starting in its Creator Studio apps. Apple has said it will eventually charge for expanded usage of select AI features. Now the first 'intelligence usage packs …",
    "via": "Techmeme"
   },
   {
@@ -122,11 +122,11 @@
    "via": "Techmeme"
   },
   {
-   "title": "Apple is now offering additional AI access via one-time $50 “intelligence usage packs” when monthly…",
-   "url": "https://9to5mac.com/2026/11/09/apple-launches-50-intelligence-usage-packs-for-select-ai-features/",
-   "source": "Ryan Christoffel / 9to5Mac",
-   "published_at": "2026-11-09T23:05:56Z",
-   "text": "Apple is now offering additional AI access via one-time $50 “intelligence usage packs” when monthly usage caps are met, starting in its Creator Studio apps. Apple has said it will eventually charge for expanded usage of select AI features. Now the first 'intelligence usage packs …",
+   "title": "GeniosAI, which develops AI software for financial analysis and modeling, raised $19.1M across seed…",
+   "url": "https://www.axios.com/pro/fintech-deals/2026/11/09/geniosai-19-1m-factset-financial-analysis-ai",
+   "source": "Ryan Lawler / Axios",
+   "published_at": "2026-11-10T06:46:13Z",
+   "text": "GeniosAI, which develops AI software for financial analysis and modeling, raised $19.1M across seed and Series A rounds; FactSet led the Series A. GeniosAI, which develops AI software for financial analysis and modeling, has raised $19.1 million in combined seed and Series A funding, CEO PD Singh tells Axios Pro exclusively.",
    "via": "Techmeme"
   }
  ],
