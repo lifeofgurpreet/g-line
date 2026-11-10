@@ -1,13 +1,13 @@
 {
  "schema": 1,
- "generated_at": "2026-11-10T19:13:34Z",
+ "generated_at": "2026-11-10T19:46:28Z",
  "items": [
   {
-   "title": "Anthropic launches its IPO roadshow, saying the company and shareholders plan to sell 825M Class A…",
-   "url": "https://www.anthropic.com/news/roadshow-launch",
-   "source": "Anthropic",
-   "published_at": "2026-11-10T11:40:50Z",
-   "text": "Anthropic launches its IPO roadshow, saying the company and shareholders plan to sell 825M Class A shares at $70 to $78 each, listing on the Nasdaq under ANT. Today Anthropic, PBC launched the roadshow for its proposed initial public offering of its Class A common stock.",
+   "title": "Sources: Nvidia internally discussed a succession plan over the years for Jensen Huang, who resiste…",
+   "url": "https://www.nytimes.com/2026/11/10/technology/jensen-huang-nvidia-board.html?unlocked_article_code=1.PVE.vX6m.WpA2mOjt_bGc&smid=nytcore-ios-share",
+   "source": "New York Times",
+   "published_at": "2026-11-10T10:55:49Z",
+   "text": "Sources: Nvidia internally discussed a succession plan over the years for Jensen Huang, who resisted; many of the 10 board members have a long history with him",
    "via": "Techmeme"
   },
   {
@@ -17,7 +17,7 @@
    "published_at": "2026-11-10T17:26:03Z",
    "text": "Starting to roll out today: Claude Whiteboards, Claude Sheets and Claude Data. Think a plan through on a board, build a tracker in a sheet, and tell a story with your data.",
    "author_name": "Claude",
-   "likes": 18097,
+   "likes": 21324,
    "story": "Anthropic unveils office tools, including a video call assistant, a data dashboard, and spreadsheet service Claude Sheets, in a bid to compete with Microsoft"
   },
   {
@@ -28,14 +28,17 @@
    "text": "Added fast mode on Vertex in the global, us and eu regions, falling back to standard speed if Vertex refuses it"
   },
   {
-   "title": "The AI Futures Project have updated their timelines. They say we are five months ahead of AI 2027,…",
-   "url": "https://x.com/AndrewCurran_/status/2120201213878972582",
-   "source": "𝕏 @AndrewCurran_",
-   "published_at": "2026-11-10T17:05:35Z",
-   "text": "The AI Futures Project have updated their timelines. They say we are five months ahead of AI 2027, and they now believe a Superhuman AI Researcher will arrive sometime in 2027.",
-   "author_name": "Andrew Curran",
-   "likes": 1163,
-   "story": "The AI Futures Project updates its AI timelines after METR's report on Anthropic R&D, saying it now expects a Superhuman AI Researcher to arrive in 2027"
+   "title": "By announcing it has \"no reason to believe that either national security or Nvidia secrets were com…",
+   "url": "https://x.com/CaseyNewton/status/2120237746786795861",
+   "source": "𝕏 @CaseyNewton",
+   "published_at": "2026-11-10T19:30:45Z",
+   "text": "By announcing it has \"no reason to believe that either national security or Nvidia secrets were compromised,\" Nvidia's \"investigation\" into Huang begins with its conclusion seemingly predetermined",
+   "author_name": "Casey Newton",
+   "likes": 12,
+   "story": "Nvidia hires law firm Wachtell Lipton to investigate Jensen Huang's affair with an alleged Chinese spy, to be led by former acting US attorney Joon H. Kim",
+   "links": [
+    "https://www.nytimes.com/2026/11/10/business/nvidia-wachtell-lipton-jensen-huang.html"
+   ]
   },
   {
    "title": "Gemini 4 Carbon is rolling out today. It’s built for sustained, long-horizon tasks, reasoning deepl…",
@@ -44,62 +47,8 @@
    "published_at": "2026-11-10T16:04:43Z",
    "text": "Gemini 4 Carbon is rolling out today. It’s built for sustained, long-horizon tasks, reasoning deeply through complex software engineering, cybersecurity, and scientific discovery. Coming globally via the Gemini API in @GoogleAIStudio and Gemini for business, and for Ultra…",
    "author_name": "Sundar Pichai",
-   "likes": 5033,
+   "likes": 5246,
    "story": "Google rolls out Gemini 4 Carbon to paid API and AI Ultra users two weeks after releasing it to cyber defenders, and previews a swarm feature in Antigravity"
-  },
-  {
-   "title": "Filing: Anthropic's IPO could give it an up to $1.405T valuation on a fully diluted basis, up from…",
-   "url": "https://www.cnbc.com/2026/11/10/anthropic-sets-price-range-of-70-to-78-in-upcoming-ipo.html",
-   "source": "CNBC",
-   "published_at": "2026-11-10T12:08:17Z",
-   "text": "Filing: Anthropic's IPO could give it an up to $1.405T valuation on a fully diluted basis, up from the $965B valuation during its $65B Series H announced in May. Anthropic said it will offer 825 million shares in its upcoming IPO at a price range between $70 to $78 per share …",
-   "via": "Techmeme"
-  },
-  {
-   "title": "Claude Fable 5.2 and Mythos 5.2",
-   "url": "https://www.anthropic.com/claude-fable-and-mythos-5-2",
-   "source": "Hacker News",
-   "published_at": "2026-11-09T18:56:29Z",
-   "text": "984 points and 6 comments on Hacker News.",
-   "points": 984,
-   "discussion": "https://news.ycombinator.com/item?id=50429906"
-  },
-  {
-   "title": "When Anthropic release a new model it's always worth taking a look at their updated prompting guide…",
-   "url": "https://x.com/simonw/status/2120029347948220500",
-   "source": "𝕏 @simonw",
-   "published_at": "2026-11-10T05:42:39Z",
-   "text": "When Anthropic release a new model it's always worth taking a look at their updated prompting guide - here's an entertaining tip to make Fable 5.2 less likely to be cautious in how it improves existing code: tell it \"This codebase is yours\"",
-   "author_name": "Simon Willison",
-   "likes": 3601,
-   "story": "Anthropic's Fable 5.2 represents “Jagged AGI”, which matches human experts on most computer tasks like game design but lacks self-directed judgment and taste",
-   "links": [
-    "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/prompting-claude-fable-5-2#say-who-owns-the-code"
-   ]
-  },
-  {
-   "title": "Locating the source of a mysterious beep with Claude",
-   "url": "https://simonwillison.net/2026/Nov/9/mysterious-beeps/",
-   "source": "Simon Willison's weblog",
-   "published_at": "2026-11-09T23:57:21Z",
-   "text": "Our house has a box room, full of boxes that we still haven't unpacked from our last move. A couple of weeks ago something in that room started intermittently beeping . The beeps were far enough apart that standing in the room and trying to determine the source of the noise was frustrating, and I really didn't want to dig through every one of those boxes. So I had Claude Code build Beep Locator , a software system for triangulating the source of a mysterious beep using multiple devices scattered around the room."
-  },
-  {
-   "title": "Trump says the FBI is “looking into” Jensen Huang's affair, and the Nvidia CEO told him that he “ha…",
-   "url": "https://apnews.com/article/china-denies-spy-jensen-huang-nvidia-3345b9f05c54d58909e88f6dcb9c1cd8",
-   "source": "Associated Press",
-   "published_at": "2026-11-09T22:40:46Z",
-   "text": "Trump says the FBI is “looking into” Jensen Huang's affair, and the Nvidia CEO told him that he “had absolutely no idea that the person in question was a spy”",
-   "via": "Techmeme"
-  },
-  {
-   "title": "AI usage generates a fragile codebase",
-   "url": "https://evanxmerz.com/post/ai-usage-generates-a-fragile-codebase/",
-   "source": "Hacker News",
-   "published_at": "2026-11-10T10:25:58Z",
-   "text": "188 points and 244 comments on Hacker News.",
-   "points": 188,
-   "discussion": "https://news.ycombinator.com/item?id=50438318"
   },
   {
    "title": "Sources: Jensen Huang and Alice Huang's relationship dates back to at least 2023, facilitating $7.5…",
@@ -110,27 +59,90 @@
    "via": "Techmeme"
   },
   {
-   "title": "Hide your slop PR descriptions behind <details><summary>",
-   "url": "https://simonwillison.net/2026/Nov/9/details-summary/",
+   "title": "Show HN: Get your coding agent off ~2019 JavaScript, onto modern web primitives",
+   "url": "https://github.com/GoogleChrome/modern-web-guidance",
+   "source": "Hacker News",
+   "published_at": "2026-11-10T18:01:15Z",
+   "text": "70 points and 28 comments on Hacker News.",
+   "points": 70,
+   "discussion": "https://news.ycombinator.com/item?id=50443812"
+  },
+  {
+   "title": "Anthropic has launched the roadshow for its proposed initial public offering: Legal disclaimer: A r…",
+   "url": "https://x.com/AnthropicAI/status/2120117722230968385",
+   "source": "𝕏 @AnthropicAI",
+   "published_at": "2026-11-10T11:33:49Z",
+   "text": "Anthropic has launched the roadshow for its proposed initial public offering: Legal disclaimer: A registration statement relating to these securities has been filed with the SEC but has not yet become effective. These securities may not be sold, nor may…",
+   "author_name": "Anthropic",
+   "likes": 4083,
+   "story": "Anthropic launches its IPO roadshow, saying the company and shareholders plan to sell 825M Class A shares at $70 to $78 each, listing on the Nasdaq under ANT",
+   "links": [
+    "https://www.anthropic.com/news/roadshow-launch"
+   ]
+  },
+  {
+   "title": "The AI Futures Project have updated their timelines. They say we are five months ahead of AI 2027,…",
+   "url": "https://x.com/AndrewCurran_/status/2120201213878972582",
+   "source": "𝕏 @AndrewCurran_",
+   "published_at": "2026-11-10T17:05:35Z",
+   "text": "The AI Futures Project have updated their timelines. They say we are five months ahead of AI 2027, and they now believe a Superhuman AI Researcher will arrive sometime in 2027.",
+   "author_name": "Andrew Curran",
+   "likes": 1268,
+   "story": "The AI Futures Project updates its AI timelines after METR's report on Anthropic R&D, saying it now expects a Superhuman AI Researcher to arrive in 2027"
+  },
+  {
+   "title": "Locating the source of a mysterious beep with Claude",
+   "url": "https://simonwillison.net/2026/Nov/9/mysterious-beeps/",
    "source": "Simon Willison's weblog",
-   "published_at": "2026-11-09T04:25:05Z",
-   "text": "Most of the changes I make to my projects these days come in the form of PRs opened for me by Claude Code or Codex. The PR is my unit of work - I use them to bundle commits together, iterating on them until a feature is complete, document decisions and then merge the finished result. Today's coding agents are great at writing PR descriptions. They're too good at describing the work The problem is that they are too good. An agent-written PR description is accurate and comprehensive. It describes the problem, the detailed solution, and the steps taken to verify it."
+   "published_at": "2026-11-09T23:57:21Z",
+   "text": "Our house has a box room, full of boxes that we still haven't unpacked from our last move. A couple of weeks ago something in that room started intermittently beeping . The beeps were far enough apart that standing in the room and trying to determine the source of the noise was frustrating, and I really didn't want to dig through every one of those boxes. So I had Claude Code build Beep Locator , a software system for triangulating the source of a mysterious beep using multiple devices scattered around the room."
   },
   {
-   "title": "Sources: Goldman Sachs expects Anthropic to hit ~$52B revenue in 2026 and $600B+ by 2030, an operat…",
-   "url": "https://www.ft.com/content/fd209548-d2df-470c-ab9a-caadbec08b58",
-   "source": "Financial Times",
-   "published_at": "2026-11-10T16:03:52Z",
-   "text": "Sources: Goldman Sachs expects Anthropic to hit ~$52B revenue in 2026 and $600B+ by 2030, an operating profit in 2029, and be free cash flow positive from 2030. Wall Street bank projects AI start-up will increase sales by 130 times — and be cash flow positive — by end of the decade",
+   "title": "Filing: Anthropic's IPO could give it an up to $1.405T valuation on a fully diluted basis, up from…",
+   "url": "https://www.cnbc.com/2026/11/10/anthropic-sets-price-range-of-70-to-78-in-upcoming-ipo.html",
+   "source": "CNBC",
+   "published_at": "2026-11-10T12:08:17Z",
+   "text": "Filing: Anthropic's IPO could give it an up to $1.405T valuation on a fully diluted basis, up from the $965B valuation during its $65B Series H announced in May. Anthropic said it will offer 825 million shares in its upcoming IPO at a price range between $70 to $78 per share …",
    "via": "Techmeme"
   },
   {
-   "title": "IPO prospectus: Anthropic and its investors are set to raise up to $64.4B, and it will also raise $…",
-   "url": "https://www.reuters.com/business/anthropic-ipo-raise-much-644-billion-latest-draft-prospectus-shows-2026-11-10/",
-   "source": "Echo Wang / Reuters",
-   "published_at": "2026-11-10T11:21:05Z",
-   "text": "IPO prospectus: Anthropic and its investors are set to raise up to $64.4B, and it will also raise $26B via cornerstone investors like Google, AMD, and Nvidia. Anthropic is targeting a valuation of up to $1.02 trillion in its landmark U.S. IPO, its filing showed on Tuesday …",
+   "title": "When Anthropic release a new model it's always worth taking a look at their updated prompting guide…",
+   "url": "https://x.com/simonw/status/2120029347948220500",
+   "source": "𝕏 @simonw",
+   "published_at": "2026-11-10T05:42:39Z",
+   "text": "When Anthropic release a new model it's always worth taking a look at their updated prompting guide - here's an entertaining tip to make Fable 5.2 less likely to be cautious in how it improves existing code: tell it \"This codebase is yours\"",
+   "author_name": "Simon Willison",
+   "likes": 3645,
+   "story": "Anthropic's Fable 5.2 represents “Jagged AGI”, which matches human experts on most computer tasks like game design but lacks self-directed judgment and taste",
+   "links": [
+    "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/prompting-claude-fable-5-2#say-who-owns-the-code"
+   ]
+  },
+  {
+   "title": "AI usage generates a fragile codebase",
+   "url": "https://evanxmerz.com/post/ai-usage-generates-a-fragile-codebase/",
+   "source": "Hacker News",
+   "published_at": "2026-11-10T10:25:58Z",
+   "text": "219 points and 274 comments on Hacker News.",
+   "points": 219,
+   "discussion": "https://news.ycombinator.com/item?id=50438318"
+  },
+  {
+   "title": "Analysis: Nvidia's 2025 figures to the US government undercounted chips sold to Megaspeed via partn…",
+   "url": "https://www.bloomberg.com/news/articles/2026-11-09/nvidia-intervened-in-us-probe-of-megaspeed-chip-smuggling",
+   "source": "Mackenzie Hawkins / Bloombe…",
+   "published_at": "2026-11-10T04:25:55Z",
+   "text": "Analysis: Nvidia's 2025 figures to the US government undercounted chips sold to Megaspeed via partners by 50,000; Nvidia did not give Bloomberg an exact figure",
    "via": "Techmeme"
+  },
+  {
+   "title": "Claude Fable 5.2 and Mythos 5.2",
+   "url": "https://www.anthropic.com/claude-fable-and-mythos-5-2",
+   "source": "Hacker News",
+   "published_at": "2026-11-09T18:56:29Z",
+   "text": "984 points and 6 comments on Hacker News.",
+   "points": 984,
+   "discussion": "https://news.ycombinator.com/item?id=50429906"
   }
  ],
  "sources": "curated, Techmeme, X (found via Techmeme, Reddit, the Internet Archive), Claude Code releases, Anthropic, Hacker News, Simon Willison"
