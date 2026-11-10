@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-10T11:43:42Z",
+ "generated_at": "2026-11-10T12:15:47Z",
  "items": [
   {
    "title": "Trump says the FBI is “looking into” Jensen Huang's affair, and the Nvidia CEO told him that he “ha…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-09T18:57:59Z",
    "text": "Introducing Claude Fable 5.2 and Claude Mythos 5.2, designed to tackle the most daunting technical challenges. They’re capable collaborators on ambitious projects in many fields, and show improvements in areas like coding, reasoning, and vision.",
    "author_name": "Claude",
-   "likes": 88442,
+   "likes": 88766,
    "story": "Anthropic releases Mythos 5.2 and Fable 5.2, saying they are “best for the most ambitious, open-ended technical work”, with outputs up to 30% faster than 5.1"
   },
   {
@@ -28,31 +28,44 @@
    "text": "Added fast mode on Vertex in the global, us and eu regions, falling back to standard speed if Vertex refuses it"
   },
   {
+   "title": "Anthropic has launched the roadshow for its proposed initial public offering: Legal disclaimer: A r…",
+   "url": "https://x.com/AnthropicAI/status/2120117722230968385",
+   "source": "𝕏 @AnthropicAI",
+   "published_at": "2026-11-10T11:33:49Z",
+   "text": "Anthropic has launched the roadshow for its proposed initial public offering: Legal disclaimer: A registration statement relating to these securities has been filed with the SEC but has not yet become effective. These securities may not be sold, nor may…",
+   "author_name": "Anthropic",
+   "likes": 1526,
+   "story": "Anthropic launches its IPO roadshow, saying the company and shareholders plan to sell 825M Class A shares at $70 to $78 each, listing on the Nasdaq under ANT",
+   "links": [
+    "https://www.anthropic.com/news/roadshow-launch"
+   ]
+  },
+  {
    "title": "1/ announcing our smallest, most efficient little model is here: muse ember 🔥 built for work that a…",
    "url": "https://x.com/alexandr_wang/status/2119853374158032950",
    "source": "𝕏 @alexandr_wang",
    "published_at": "2026-11-09T18:03:24Z",
    "text": "1/ announcing our smallest, most efficient little model is here: muse ember 🔥 built for work that agents repeat all day, it gets you more intelligence per dollar than Haiku, Luna, and all other flash models at any reasoning setting and does it at a third of the cost or less!",
    "author_name": "Alexandr Wang",
-   "likes": 5478,
+   "likes": 5501,
    "story": "Meta releases Muse Ember, its smallest and most cost-efficient AI model yet, saying it delivers more intelligence per dollar than Haiku 5.5 and GPT-6 Luna"
   },
   {
-   "title": "Sources: Nvidia board member and ex-Cooley CEO Stephen C Neal will probably lead the probe; Nvidia'…",
-   "url": "https://www.ft.com/content/0b20d24a-580a-41df-a5f3-7f7dba4f552f",
-   "source": "Financial Times",
-   "published_at": "2026-11-10T10:40:47Z",
-   "text": "Sources: Nvidia board member and ex-Cooley CEO Stephen C Neal will probably lead the probe; Nvidia's corporate docs make no reference to “succession planning”",
+   "title": "Sources: Jensen Huang and Alice Huang's relationship dates back to at least 2023, facilitating $7.5…",
+   "url": "https://www.theinformation.com/articles/jensen-huangs-yearslong-ties-alice-huang-enabled-nvidia-chip-sales-china",
+   "source": "The Information",
+   "published_at": "2026-11-10T11:45:48Z",
+   "text": "Sources: Jensen Huang and Alice Huang's relationship dates back to at least 2023, facilitating $7.5B+ in Nvidia chip shipments via Chinese companies since then",
    "via": "Techmeme"
   },
   {
-   "title": "Google Gemini routes personal Drive files and emails to human annotators",
-   "url": "https://github.com/thisisme6598/gemini_files/",
+   "title": "AI usage generates a fragile codebase",
+   "url": "https://evanxmerz.com/post/ai-usage-generates-a-fragile-codebase/",
    "source": "Hacker News",
-   "published_at": "2026-11-09T18:24:38Z",
-   "text": "626 points and 131 comments on Hacker News.",
-   "points": 626,
-   "discussion": "https://news.ycombinator.com/item?id=50429426"
+   "published_at": "2026-11-10T10:25:58Z",
+   "text": "76 points and 69 comments on Hacker News.",
+   "points": 76,
+   "discussion": "https://news.ycombinator.com/item?id=50438318"
   },
   {
    "title": "We have our answer to who will be replacing Sora and OpenAI as Disney's generative AI partner. Disn…",
@@ -61,7 +74,7 @@
    "published_at": "2026-11-09T21:53:54Z",
    "text": "We have our answer to who will be replacing Sora and OpenAI as Disney's generative AI partner. Disney plans to use it not only in studio, but also at the theme parks. 'Disney will work directly with Adobe on generative AI models tailored to Disney’s properties'",
    "author_name": "Andrew Curran",
-   "likes": 214,
+   "likes": 215,
    "story": "Disney and Adobe sign a multiyear deal to build proprietary “artist-led” generative AI models with Adobe Firefly Foundry to support Disney's production pipeline"
   },
   {
@@ -80,20 +93,20 @@
    "via": "Techmeme"
   },
   {
-   "title": "CoreWeave bond yield tops 16% as AI credit stress rises",
-   "url": "https://www.cnbc.com/2026/11/06/coreweave-bond-yield-tops-16percent-as-ai-credit-stress-rises.html",
+   "title": "Google Gemini routes personal Drive files and emails to human annotators",
+   "url": "https://github.com/thisisme6598/gemini_files/",
    "source": "Hacker News",
-   "published_at": "2026-11-10T03:20:06Z",
-   "text": "166 points and 129 comments on Hacker News.",
-   "points": 166,
-   "discussion": "https://news.ycombinator.com/item?id=50435660"
+   "published_at": "2026-11-09T18:24:38Z",
+   "text": "635 points and 134 comments on Hacker News.",
+   "points": 635,
+   "discussion": "https://news.ycombinator.com/item?id=50429426"
   },
   {
-   "title": "Analysis: Nvidia's 2025 figures to the US government undercounted chips sold to Megaspeed via partn…",
-   "url": "https://www.bloomberg.com/news/articles/2026-11-09/nvidia-intervened-in-us-probe-of-megaspeed-chip-smuggling",
-   "source": "Mackenzie Hawkins / Bloombe…",
-   "published_at": "2026-11-10T04:25:55Z",
-   "text": "Analysis: Nvidia's 2025 figures to the US government undercounted chips sold to Megaspeed via partners by 50K; Nvidia did not give Bloomberg an exact figure. Nvidia Corp.'s general counsel intervened in a US government probe of suspected smuggling of AI chips by Megaspeed International …",
+   "title": "Jensen Huang's affair shines a spotlight on Nvidia's weak board and opaque succession planning at w…",
+   "url": "https://www.semafor.com/article/11/09/2026/with-a-weak-board-and-no-successor-nvidia-confronts-a-governance-crisis",
+   "source": "Semafor",
+   "published_at": "2026-11-09T22:01:20Z",
+   "text": "Jensen Huang's affair shines a spotlight on Nvidia's weak board and opaque succession planning at what has become the world's most important company. Nvidia CEO Jensen Huang's spy scandal shines a spotlight on thin corporate governance and opaque succession planning at what has become the world's most important company.",
    "via": "Techmeme"
   },
   {
@@ -108,23 +121,15 @@
    "url": "https://www.reuters.com/business/anthropic-ipo-raise-much-644-billion-latest-draft-prospectus-shows-2026-11-10/",
    "source": "Echo Wang / Reuters",
    "published_at": "2026-11-10T11:21:05Z",
-   "text": "IPO prospectus: Anthropic's IPO is set to raise up to $64.4B, and the company will also raise $26B via cornerstone investors like Google, AMD, and Nvidia. Anthropic's IPO is set to raise as much as $64.4 billion, according to the latest draft prospectus seen by Reuters on Tuesday …",
+   "text": "IPO prospectus: Anthropic's IPO is set to raise up to $64.4B, and the company will also raise $26B via cornerstone investors like Google, AMD, and Nvidia. Anthropic's IPO is set to raise as much as $64.4 billion, a regulatory filing showed on Tuesday, in a landmark test of whether Wall Street's faith …",
    "via": "Techmeme"
   },
   {
-   "title": "Jensen Huang's affair shines a spotlight on Nvidia's weak board and opaque succession planning at w…",
-   "url": "https://www.semafor.com/article/11/09/2026/with-a-weak-board-and-no-successor-nvidia-confronts-a-governance-crisis",
-   "source": "Semafor",
-   "published_at": "2026-11-09T22:01:20Z",
-   "text": "Jensen Huang's affair shines a spotlight on Nvidia's weak board and opaque succession planning at what has become the world's most important company. Nvidia CEO Jensen Huang's spy scandal shines a spotlight on thin corporate governance and opaque succession planning at what has become the world's most important company.",
-   "via": "Techmeme"
-  },
-  {
-   "title": "Apple begins offering additional AI access via one-time $50 “intelligence usage packs” when users m…",
-   "url": "https://9to5mac.com/2026/11/09/apple-launches-50-intelligence-usage-packs-for-select-ai-features/",
-   "source": "Ryan Christoffel / 9to5Mac",
-   "published_at": "2026-11-09T23:05:56Z",
-   "text": "Apple begins offering additional AI access via one-time $50 “intelligence usage packs” when users meet monthly usage caps, starting in its Creator Studio apps. Apple has said it will eventually charge for expanded usage of select AI features.",
+   "title": "Analysis: Nvidia's 2025 figures to the US government undercounted chips sold to Megaspeed via partn…",
+   "url": "https://www.bloomberg.com/news/articles/2026-11-09/nvidia-intervened-in-us-probe-of-megaspeed-chip-smuggling",
+   "source": "Mackenzie Hawkins / Bloombe…",
+   "published_at": "2026-11-10T04:25:55Z",
+   "text": "Analysis: Nvidia's 2025 figures to the US government undercounted chips sold to Megaspeed via partners by 50K; Nvidia did not give Bloomberg an exact figure. Nvidia Corp.'s general counsel intervened in a US government probe of suspected smuggling of AI chips by Megaspeed International …",
    "via": "Techmeme"
   }
  ],
