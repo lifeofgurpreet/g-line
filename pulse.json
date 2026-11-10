@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-10T00:55:48Z",
+ "generated_at": "2026-11-10T01:28:20Z",
  "items": [
   {
    "title": "Trump says the FBI is “looking into” Jensen Huang's affair, and the Nvidia CEO told him he “had abs…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-09T18:57:59Z",
    "text": "Introducing Claude Fable 5.2 and Claude Mythos 5.2, designed to tackle the most daunting technical challenges. They’re capable collaborators on ambitious projects in many fields, and show improvements in areas like coding, reasoning, and vision.",
    "author_name": "Claude",
-   "likes": 72998,
+   "likes": 74744,
    "story": "Anthropic releases Mythos 5.2 and Fable 5.2, saying they are “best for the most ambitious, open-ended technical work”, with outputs up to 30% faster than 5.1"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-11-09T18:03:24Z",
    "text": "1/ announcing our smallest, most efficient little model is here: muse ember 🔥 built for work that agents repeat all day, it gets you more intelligence per dollar than Haiku, Luna, and all other flash models at any reasoning setting and does it at a third of the cost or less!",
    "author_name": "Alexandr Wang",
-   "likes": 4679,
+   "likes": 4755,
    "story": "Meta releases Muse Ember, its smallest and most cost-efficient AI model yet, saying it delivers more intelligence per dollar than Haiku 5.5 and GPT-6 Luna"
   },
   {
@@ -50,8 +50,8 @@
    "url": "https://artificialanalysis.ai/models/claude-fable-5-2",
    "source": "Hacker News",
    "published_at": "2026-11-09T20:04:55Z",
-   "text": "270 points and 190 comments on Hacker News.",
-   "points": 270,
+   "text": "276 points and 197 comments on Hacker News.",
+   "points": 276,
    "discussion": "https://news.ycombinator.com/item?id=50431144"
   },
   {
@@ -61,7 +61,7 @@
    "published_at": "2026-11-09T18:19:08Z",
    "text": "Four distinct TPU systems in a single generation in one year! Instead of waiting years for a traditional semiconductor cycle, hardware engineers co-designing systems alongside Google Deepmind means we can keep innovating quickly for customers.",
    "author_name": "Sundar Pichai",
-   "likes": 3012,
+   "likes": 3119,
    "story": "Google unveils two specialized TPUs launching in 2027: the 8tx, to be paired with an AMD CPU, and the 8i Max, a dual-chip package for long-context window tasks"
   },
   {
@@ -72,11 +72,11 @@
    "text": "Our house has a box room, full of boxes that we still haven't unpacked from our last move. A couple of weeks ago something in that room started intermittently beeping . The beeps were far enough apart that standing in the room and trying to determine the source of the noise was frustrating, and I really didn't want to dig through every one of those boxes. So I had Claude Code build Beep Locator , a software system for triangulating the source of a mysterious beep using multiple devices scattered around the room."
   },
   {
-   "title": "Nvidia's board launches a probe into whether Jensen Huang was targeted by a foreign spy plot, sayin…",
-   "url": "https://www.bloomberg.com/news/articles/2026-11-08/nvidia-board-to-probe-spying-case-after-ceo-jensen-huang-admits-infidelity?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc5NDE2ODU1OSwiZXhwIjoxNzk0NzczMzU5LCJhcnRpY2xlSWQiOiJUTzU3WTNWVFRDWlkwMCIsImJjb25uZWN0SWQiOiIyQ0FEODkyRDYzODU0QjJFOEI2MEM2QUI2OTg2MzBBNyJ9.AHrN1ygaU7rv8RK6qaS-JAmbJRFuZsKMk5VcnnENzt0&leadSource=article-gifting",
-   "source": "Ian King / Bloomberg",
-   "published_at": "2026-11-08T20:25:34Z",
-   "text": "Nvidia's board launches a probe into whether Jensen Huang was targeted by a foreign spy plot, saying it has “no reason to believe” that secrets were compromised",
+   "title": "Jensen Huang maintains deep control over Nvidia, managing 60+ direct reports and owning a 3.56% sta…",
+   "url": "https://www.nytimes.com/2026/11/09/technology/jensen-huang-affair-nvidia.html?unlocked_article_code=1.PFE.mKVc.NEtql9fbaFYJ&smid=url-share",
+   "source": "New York Times",
+   "published_at": "2026-11-09T11:02:33Z",
+   "text": "Jensen Huang maintains deep control over Nvidia, managing 60+ direct reports and owning a 3.56% stake, presenting a challenge for Nvidia's 10-person board",
    "via": "Techmeme"
   },
   {
@@ -86,7 +86,7 @@
    "published_at": "2026-11-09T06:57:57Z",
    "text": "jensen huang (nvidia ceo) finding out his fling alice huang has been a chinese intelligence asset this whole time",
    "author_name": "ukdicha modak",
-   "likes": 22620,
+   "likes": 22836,
    "story": "A profile of Alice Huang, a suspected Chinese spy who founded Megaspeed in 2023 and spent years in Jensen Huang's orbit; Megaspeed's Nvidia imports top $4.6B"
   },
   {
@@ -94,8 +94,8 @@
    "url": "https://github.com/thisisme6598/gemini_files/",
    "source": "Hacker News",
    "published_at": "2026-11-09T18:24:38Z",
-   "text": "362 points and 92 comments on Hacker News.",
-   "points": 362,
+   "text": "388 points and 100 comments on Hacker News.",
+   "points": 388,
    "discussion": "https://news.ycombinator.com/item?id=50429426"
   },
   {
@@ -105,7 +105,7 @@
    "published_at": "2026-11-09T21:53:54Z",
    "text": "We have our answer to who will be replacing Sora and OpenAI as Disney's generative AI partner. Disney plans to use it not only in studio, but also at the theme parks. 'Disney will work directly with Adobe on generative AI models tailored to Disney’s properties'",
    "author_name": "Andrew Curran",
-   "likes": 170,
+   "likes": 173,
    "story": "Disney and Adobe sign a multiyear deal to build proprietary “artist-led” generative AI models with Adobe Firefly Foundry to support Disney's production pipeline"
   },
   {
@@ -121,8 +121,8 @@
    "url": "https://www.reddit.com/r/ClaudeCode/comments/1xq2n3t/a_year_after_the_100_ai_mandate_nobody/",
    "source": "Hacker News",
    "published_at": "2026-11-09T22:19:12Z",
-   "text": "91 points and 90 comments on Hacker News.",
-   "points": 91,
+   "text": "102 points and 123 comments on Hacker News.",
+   "points": 102,
    "discussion": "https://news.ycombinator.com/item?id=50433079"
   },
   {
