@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-10T15:27:46Z",
+ "generated_at": "2026-11-10T16:00:27Z",
  "items": [
   {
    "title": "Sources: Jensen Huang and Alice Huang's relationship dates back to at least 2023, facilitating $7.5…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-09T18:57:59Z",
    "text": "Introducing Claude Fable 5.2 and Claude Mythos 5.2, designed to tackle the most daunting technical challenges. They’re capable collaborators on ambitious projects in many fields, and show improvements in areas like coding, reasoning, and vision.",
    "author_name": "Claude",
-   "likes": 90606,
+   "likes": 90882,
    "story": "Anthropic releases Mythos 5.2 and Fable 5.2, saying they are “best for the most ambitious, open-ended technical work”, with outputs up to 30% faster than 5.1"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-11-10T11:33:49Z",
    "text": "Anthropic has launched the roadshow for its proposed initial public offering: Legal disclaimer: A registration statement relating to these securities has been filed with the SEC but has not yet become effective. These securities may not be sold, nor may…",
    "author_name": "Anthropic",
-   "likes": 3472,
+   "likes": 3607,
    "story": "Anthropic launches its IPO roadshow, saying the company and shareholders plan to sell 825M Class A shares at $70 to $78 each, listing on the Nasdaq under ANT",
    "links": [
     "https://www.anthropic.com/news/roadshow-launch"
@@ -53,22 +53,19 @@
    "url": "https://www.notion.com/help/security-incident-involving-a-third-party-ai-vendor",
    "source": "Hacker News",
    "published_at": "2026-11-10T07:19:38Z",
-   "text": "112 points and 40 comments on Hacker News.",
-   "points": 112,
+   "text": "123 points and 43 comments on Hacker News.",
+   "points": 123,
    "discussion": "https://news.ycombinator.com/item?id=50437106"
   },
   {
-   "title": "When Anthropic release a new model it's always worth taking a look at their updated prompting guide…",
-   "url": "https://x.com/simonw/status/2120029347948220500",
-   "source": "𝕏 @simonw",
-   "published_at": "2026-11-10T05:42:39Z",
-   "text": "When Anthropic release a new model it's always worth taking a look at their updated prompting guide - here's an entertaining tip to make Fable 5.2 less likely to be cautious in how it improves existing code: tell it \"This codebase is yours\"",
-   "author_name": "Simon Willison",
-   "likes": 3116,
-   "story": "Scale Labs and CAIS' Remote Labor Index: Fable 5.2 completes 41.3% of freelance projects at professional quality, above Opus 5.5's 21.3% and GPT-6 Astra's 20.8%",
-   "links": [
-    "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/prompting-claude-fable-5-2#say-who-owns-the-code"
-   ]
+   "title": "1/ announcing our smallest, most efficient little model is here: muse ember 🔥 built for work that a…",
+   "url": "https://x.com/alexandr_wang/status/2119853374158032950",
+   "source": "𝕏 @alexandr_wang",
+   "published_at": "2026-11-09T18:03:24Z",
+   "text": "1/ announcing our smallest, most efficient little model is here: muse ember 🔥 built for work that agents repeat all day, it gets you more intelligence per dollar than Haiku, Luna, and all other flash models at any reasoning setting and does it at a third of the cost or less!",
+   "author_name": "Alexandr Wang",
+   "likes": 5732,
+   "story": "Meta releases Muse Ember, its smallest and most cost-efficient AI model yet, saying it delivers more intelligence per dollar than Claude Haiku 5.5 or GPT-6 Luna"
   },
   {
    "title": "Locating the source of a mysterious beep with Claude",
@@ -78,31 +75,12 @@
    "text": "Our house has a box room, full of boxes that we still haven't unpacked from our last move. A couple of weeks ago something in that room started intermittently beeping . The beeps were far enough apart that standing in the room and trying to determine the source of the noise was frustrating, and I really didn't want to dig through every one of those boxes. So I had Claude Code build Beep Locator , a software system for triangulating the source of a mysterious beep using multiple devices scattered around the room."
   },
   {
-   "title": "IPO prospectus: Anthropic and its investors are set to raise up to $64.4B, and it will also raise $…",
-   "url": "https://www.reuters.com/business/anthropic-ipo-raise-much-644-billion-latest-draft-prospectus-shows-2026-11-10/",
-   "source": "Echo Wang / Reuters",
-   "published_at": "2026-11-10T11:21:05Z",
-   "text": "IPO prospectus: Anthropic and its investors are set to raise up to $64.4B, and it will also raise $26B via cornerstone investors like Google, AMD, and Nvidia. Anthropic is targeting a valuation of up to $1.02 trillion in its landmark U.S. IPO, its filing showed on Tuesday …",
+   "title": "Filing: Anthropic's IPO could give it an up to $1.405T valuation on a fully diluted basis, up from…",
+   "url": "https://www.cnbc.com/2026/11/10/anthropic-sets-price-range-of-70-to-78-in-upcoming-ipo.html",
+   "source": "CNBC",
+   "published_at": "2026-11-10T12:08:17Z",
+   "text": "Filing: Anthropic's IPO could give it an up to $1.405T valuation on a fully diluted basis, up from the $965B valuation during its $65B Series H announced in May. Anthropic said it will offer 825 million shares in its upcoming IPO at a price range between $70 to $78 per share …",
    "via": "Techmeme"
-  },
-  {
-   "title": "1/ announcing our smallest, most efficient little model is here: muse ember 🔥 built for work that a…",
-   "url": "https://x.com/alexandr_wang/status/2119853374158032950",
-   "source": "𝕏 @alexandr_wang",
-   "published_at": "2026-11-09T18:03:24Z",
-   "text": "1/ announcing our smallest, most efficient little model is here: muse ember 🔥 built for work that agents repeat all day, it gets you more intelligence per dollar than Haiku, Luna, and all other flash models at any reasoning setting and does it at a third of the cost or less!",
-   "author_name": "Alexandr Wang",
-   "likes": 5701,
-   "story": "Meta releases Muse Ember, its smallest and most cost-efficient AI model yet, saying it delivers more intelligence per dollar than Haiku 5.5 and GPT-6 Luna"
-  },
-  {
-   "title": "Claude Fable 5.2 scores 65 on Artificial Analysis, highest so far",
-   "url": "https://artificialanalysis.ai/models/claude-fable-5-2",
-   "source": "Hacker News",
-   "published_at": "2026-11-09T20:04:55Z",
-   "text": "358 points and 261 comments on Hacker News.",
-   "points": 358,
-   "discussion": "https://news.ycombinator.com/item?id=50431144"
   },
   {
    "title": "Fireworks, the most highly-valued out of a growing group of inference providers, told customers inc…",
@@ -111,11 +89,20 @@
    "published_at": "2026-11-09T19:46:39Z",
    "text": "Fireworks, the most highly-valued out of a growing group of inference providers, told customers including Harvey that it had been hit with a hack that exposed customer data. Some customers are now considering moving their business off the platform.",
    "author_name": "Stephanie Palazzolo",
-   "likes": 775,
+   "likes": 778,
    "story": "AI infrastructure provider Fireworks says hackers accessed some customers' datasets, incomplete model weights, and billing information over the past month",
    "links": [
     "https://www.theinformation.com/articles/new-fireworks-hack-threatens-1-billion-business"
    ]
+  },
+  {
+   "title": "Claude Fable 5.2 scores 65 on Artificial Analysis, highest so far",
+   "url": "https://artificialanalysis.ai/models/claude-fable-5-2",
+   "source": "Hacker News",
+   "published_at": "2026-11-09T20:04:55Z",
+   "text": "360 points and 261 comments on Hacker News.",
+   "points": 360,
+   "discussion": "https://news.ycombinator.com/item?id=50431144"
   },
   {
    "title": "Analysis: Nvidia's 2025 figures to the US government undercounted chips sold to Megaspeed via partn…",
@@ -133,11 +120,19 @@
    "text": "Most of the changes I make to my projects these days come in the form of PRs opened for me by Claude Code or Codex. The PR is my unit of work - I use them to bundle commits together, iterating on them until a feature is complete, document decisions and then merge the finished result. Today's coding agents are great at writing PR descriptions. They're too good at describing the work The problem is that they are too good. An agent-written PR description is accurate and comprehensive. It describes the problem, the detailed solution, and the steps taken to verify it."
   },
   {
-   "title": "Jensen Huang's spy affair shines a spotlight on Nvidia's thin corporate governance and opaque succe…",
-   "url": "https://www.semafor.com/article/11/09/2026/with-a-weak-board-and-no-successor-nvidia-confronts-a-governance-crisis",
-   "source": "Semafor",
-   "published_at": "2026-11-09T22:01:20Z",
-   "text": "Jensen Huang's spy affair shines a spotlight on Nvidia's thin corporate governance and opaque succession planning at the world's most important company. Nvidia CEO Jensen Huang's spy scandal shines a spotlight on thin corporate governance and opaque succession planning at what has become the world's most important company.",
+   "title": "Scale Labs and CAIS' Remote Labor Index: Fable 5.2 completes 41.3% of freelance projects at profess…",
+   "url": "https://the-decoder.com/anthropics-fable-5-2-completes-41-percent-of-real-freelance-jobs-up-from-2-5-percent-a-year-ago/",
+   "source": "Maximilian Schreiner / The…",
+   "published_at": "2026-11-10T14:41:02Z",
+   "text": "Scale Labs and CAIS' Remote Labor Index: Fable 5.2 completes 41.3% of freelance projects at professional quality, above Opus 5.5's 21.3% and GPT-6 Astra's 20.8%. - Fable 5.2 breaks through in 3D models, audio, and architecture … The test measures how often AI agents complete real freelance jobs …",
+   "via": "Techmeme"
+  },
+  {
+   "title": "Amazon's Ring unveils the $249 Ring Drone Cam and the $999 Ring Rover Cam, utilizing its AI Pilot n…",
+   "url": "https://www.zdnet.com/home-and-office/ring-drone-cam-rover-cam-security-robots/",
+   "source": "Kyle Kucharski / ZDNET",
+   "published_at": "2026-11-10T13:40:51Z",
+   "text": "Amazon's Ring unveils the $249 Ring Drone Cam and the $999 Ring Rover Cam, utilizing its AI Pilot navigation software, under new subbrand Ring Robotics. Alongside the Ring Drone Cam, Ring introduced the Rover Cam for businesses. It investigates disturbances and streams 4K footage.",
    "via": "Techmeme"
   }
  ],
