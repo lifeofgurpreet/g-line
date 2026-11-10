@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-10T22:25:09Z",
+ "generated_at": "2026-11-10T22:57:10Z",
  "items": [
   {
    "title": "Anthropic launches its IPO roadshow, saying the company and shareholders plan to sell 825M Class A…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-10T17:26:03Z",
    "text": "Starting to roll out today: Claude Whiteboards, Claude Sheets and Claude Data. Think a plan through on a board, build a tracker in a sheet, and tell a story with your data.",
    "author_name": "Claude",
-   "likes": 33266,
+   "likes": 34983,
    "story": "Anthropic unveils office tools, including a video call assistant, a data dashboard, and spreadsheet service Claude Sheets, competing with Microsoft and Google"
   },
   {
@@ -28,26 +28,13 @@
    "text": "Added fast mode on Vertex in the global, us and eu regions, falling back to standard speed if Vertex refuses it"
   },
   {
-   "title": "By announcing it has \"no reason to believe that either national security or Nvidia secrets were com…",
-   "url": "https://x.com/CaseyNewton/status/2120237746786795861",
-   "source": "𝕏 @CaseyNewton",
-   "published_at": "2026-11-10T19:30:45Z",
-   "text": "By announcing it has \"no reason to believe that either national security or Nvidia secrets were compromised,\" Nvidia's \"investigation\" into Huang begins with its conclusion seemingly predetermined",
-   "author_name": "Casey Newton",
-   "likes": 76,
-   "story": "Nvidia hires former acting US attorney Joon H. Kim and his law firm Wachtell Lipton to conduct a probe into Jensen Huang's affair with an alleged Chinese spy",
-   "links": [
-    "https://www.nytimes.com/2026/11/10/business/nvidia-wachtell-lipton-jensen-huang.html"
-   ]
-  },
-  {
    "title": "Now in beta: Businesses in ChatGPT. Claim your business, manage your information, and get insights…",
    "url": "https://x.com/OpenAI/status/2120216592395174382",
    "source": "𝕏 @OpenAI",
    "published_at": "2026-11-10T18:06:42Z",
    "text": "Now in beta: Businesses in ChatGPT. Claim your business, manage your information, and get insights on how people engage with you. Eligible businesses can also build a Business Agent to answer customers’ questions and help them explore what you offer.",
    "author_name": "OpenAI",
-   "likes": 8970,
+   "likes": 9512,
    "story": "OpenAI launches Businesses in ChatGPT in beta, including Business Agents for companies to interact with users and a hub where companies can claim their profiles",
    "links": [
     "https://openai.com/index/introducing-businesses-chatgpt/"
@@ -66,8 +53,8 @@
    "url": "https://github.com/GoogleChrome/modern-web-guidance",
    "source": "Hacker News",
    "published_at": "2026-11-10T18:01:15Z",
-   "text": "198 points and 57 comments on Hacker News.",
-   "points": 198,
+   "text": "208 points and 58 comments on Hacker News.",
+   "points": 208,
    "discussion": "https://news.ycombinator.com/item?id=50443812"
   },
   {
@@ -77,7 +64,7 @@
    "published_at": "2026-11-10T16:04:43Z",
    "text": "Gemini 4 Carbon is rolling out today. It’s built for sustained, long-horizon tasks, reasoning deeply through complex software engineering, cybersecurity, and scientific discovery. Coming globally via the Gemini API in @GoogleAIStudio and Gemini for business, and for Ultra…",
    "author_name": "Sundar Pichai",
-   "likes": 5911,
+   "likes": 6038,
    "story": "Google rolls out Gemini 4 Carbon to paid API and AI Ultra users two weeks after releasing it to cyber defenders, and previews a swarm feature in Antigravity"
   },
   {
@@ -102,7 +89,7 @@
    "published_at": "2026-11-10T05:42:39Z",
    "text": "When Anthropic release a new model it's always worth taking a look at their updated prompting guide - here's an entertaining tip to make Fable 5.2 less likely to be cautious in how it improves existing code: tell it \"This codebase is yours\"",
    "author_name": "Simon Willison",
-   "likes": 3846,
+   "likes": 3889,
    "story": "Anthropic's Fable 5.2 represents “Jagged AGI”, which matches human experts on most computer tasks like game design but lacks self-directed judgment and taste",
    "links": [
     "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/prompting-claude-fable-5-2#say-who-owns-the-code"
@@ -113,8 +100,8 @@
    "url": "https://alexwang.ai/posts/reasoning-as-pathfinding/",
    "source": "Hacker News",
    "published_at": "2026-11-10T19:25:14Z",
-   "text": "68 points and 32 comments on Hacker News.",
-   "points": 68,
+   "text": "70 points and 33 comments on Hacker News.",
+   "points": 70,
    "discussion": "https://news.ycombinator.com/item?id=50445013"
   },
   {
@@ -124,8 +111,31 @@
    "published_at": "2026-11-10T17:05:35Z",
    "text": "The AI Futures Project have updated their timelines. They say we are five months ahead of AI 2027, and they now believe a Superhuman AI Researcher will arrive sometime in 2027.",
    "author_name": "Andrew Curran",
-   "likes": 1576,
+   "likes": 1610,
    "story": "The AI Futures Project updates its timelines after METR's report on Anthropic R&D progress, saying it now expects a Superhuman AI Researcher to arrive in 2027"
+  },
+  {
+   "title": "By announcing it has \"no reason to believe that either national security or Nvidia secrets were com…",
+   "url": "https://x.com/CaseyNewton/status/2120237746786795861",
+   "source": "𝕏 @CaseyNewton",
+   "published_at": "2026-11-10T19:30:45Z",
+   "text": "By announcing it has \"no reason to believe that either national security or Nvidia secrets were compromised,\" Nvidia's \"investigation\" into Huang begins with its conclusion seemingly predetermined",
+   "author_name": "Casey Newton",
+   "likes": 85,
+   "story": "Nvidia hires former acting US attorney Joon H. Kim and his law firm Wachtell Lipton to conduct a probe into Jensen Huang's affair with an alleged Chinese spy",
+   "links": [
+    "https://www.nytimes.com/2026/11/10/business/nvidia-wachtell-lipton-jensen-huang.html"
+   ]
+  },
+  {
+   "title": "It could be vastly underestimated how much human expertise is needed to diffuse the benefits of AI…",
+   "url": "https://x.com/natolambert/status/2120187153950871798",
+   "source": "𝕏 @natolambert",
+   "published_at": "2026-11-10T16:09:43Z",
+   "text": "It could be vastly underestimated how much human expertise is needed to diffuse the benefits of AI to the long-tail of knowledge work. I think more data companies should figure out this branding, where experts help AI companies understand how to improve the tools that make them…",
+   "author_name": "Nathan Lambert",
+   "likes": 196,
+   "story": "AI training startup Mercor raised a $750M Series D from Benchmark, General Catalyst, Nvidia, and others at a $20B valuation, up from $10B in October 2025"
   },
   {
    "title": "IPO prospectus: Anthropic and its investors are set to raise up to $64.4B, and it will also raise $…",
@@ -134,15 +144,6 @@
    "published_at": "2026-11-10T11:21:05Z",
    "text": "IPO prospectus: Anthropic and its investors are set to raise up to $64.4B, and it will also raise $26B via cornerstone investors like Google, AMD, and Nvidia. Anthropic is targeting a valuation of up to $1.02 trillion in its landmark U.S. IPO, its filing showed on Tuesday …",
    "via": "Techmeme"
-  },
-  {
-   "title": "AI usage generates a fragile codebase",
-   "url": "https://evanxmerz.com/post/ai-usage-generates-a-fragile-codebase/",
-   "source": "Hacker News",
-   "published_at": "2026-11-10T10:25:58Z",
-   "text": "301 points and 363 comments on Hacker News.",
-   "points": 301,
-   "discussion": "https://news.ycombinator.com/item?id=50438318"
   }
  ],
  "sources": "curated, Techmeme, X (found via Techmeme, Reddit, the Internet Archive), Claude Code releases, Anthropic, Hacker News, Simon Willison"
