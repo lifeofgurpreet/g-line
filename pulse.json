@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-10T02:34:05Z",
+ "generated_at": "2026-11-10T03:06:48Z",
  "items": [
   {
    "title": "Trump says the FBI is “looking into” Jensen Huang's affair, and the Nvidia CEO told him he “had abs…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-09T18:57:59Z",
    "text": "Introducing Claude Fable 5.2 and Claude Mythos 5.2, designed to tackle the most daunting technical challenges. They’re capable collaborators on ambitious projects in many fields, and show improvements in areas like coding, reasoning, and vision.",
    "author_name": "Claude",
-   "likes": 77698,
+   "likes": 78970,
    "story": "Anthropic releases Mythos 5.2 and Fable 5.2, saying they are “best for the most ambitious, open-ended technical work”, with outputs up to 30% faster than 5.1"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-11-09T18:03:24Z",
    "text": "1/ announcing our smallest, most efficient little model is here: muse ember 🔥 built for work that agents repeat all day, it gets you more intelligence per dollar than Haiku, Luna, and all other flash models at any reasoning setting and does it at a third of the cost or less!",
    "author_name": "Alexandr Wang",
-   "likes": 4925,
+   "likes": 4987,
    "story": "Meta releases Muse Ember, its smallest and most cost-efficient AI model yet, saying it delivers more intelligence per dollar than Haiku 5.5 and GPT-6 Luna"
   },
   {
@@ -50,8 +50,8 @@
    "url": "https://github.com/thisisme6598/gemini_files/",
    "source": "Hacker News",
    "published_at": "2026-11-09T18:24:38Z",
-   "text": "443 points and 102 comments on Hacker News.",
-   "points": 443,
+   "text": "450 points and 104 comments on Hacker News.",
+   "points": 450,
    "discussion": "https://news.ycombinator.com/item?id=50429426"
   },
   {
@@ -61,7 +61,7 @@
    "published_at": "2026-11-09T18:19:08Z",
    "text": "Four distinct TPU systems in a single generation in one year! Instead of waiting years for a traditional semiconductor cycle, hardware engineers co-designing systems alongside Google Deepmind means we can keep innovating quickly for customers.",
    "author_name": "Sundar Pichai",
-   "likes": 3354,
+   "likes": 3465,
    "story": "Google unveils two specialized TPUs launching in 2027: the 8tx, to be paired with an AMD CPU, and the 8i Max, a dual-chip package for long-context window tasks"
   },
   {
@@ -72,11 +72,11 @@
    "text": "Our house has a box room, full of boxes that we still haven't unpacked from our last move. A couple of weeks ago something in that room started intermittently beeping . The beeps were far enough apart that standing in the room and trying to determine the source of the noise was frustrating, and I really didn't want to dig through every one of those boxes. So I had Claude Code build Beep Locator , a software system for triangulating the source of a mysterious beep using multiple devices scattered around the room."
   },
   {
-   "title": "Sources: Alice Huang and her partner pitched a Southeast Asia data center project to China-based in…",
-   "url": "https://www.ft.com/content/5d8c1e1d-6ce0-4eb4-9f5c-722fa5c4841d",
-   "source": "Financial Times",
-   "published_at": "2026-11-09T14:02:34Z",
-   "text": "Sources: Alice Huang and her partner pitched a Southeast Asia data center project to China-based investors in 2025, saying they had “no problem securing GPUs”. Alice Huang boasted of having access to Nvidia GPUs and her connection to Alibaba — The woman at the centre …",
+   "title": "A profile of Alice Huang, a suspected Chinese spy who founded Megaspeed in 2023 and spent years in…",
+   "url": "https://www.bloomberg.com/news/articles/2026-11-09/alice-huang-suspected-china-spy-spent-years-in-nvidia-s-orbit",
+   "source": "Mark Anderson / Bloomberg",
+   "published_at": "2026-11-09T12:06:13Z",
+   "text": "A profile of Alice Huang, a suspected Chinese spy who founded Megaspeed in 2023 and spent years in Jensen Huang's orbit; Megaspeed's Nvidia imports top $4.6B",
    "via": "Techmeme"
   },
   {
@@ -86,7 +86,7 @@
    "published_at": "2026-11-09T21:53:54Z",
    "text": "We have our answer to who will be replacing Sora and OpenAI as Disney's generative AI partner. Disney plans to use it not only in studio, but also at the theme parks. 'Disney will work directly with Adobe on generative AI models tailored to Disney’s properties'",
    "author_name": "Andrew Curran",
-   "likes": 177,
+   "likes": 180,
    "story": "Disney and Adobe sign a multiyear deal to build proprietary “artist-led” generative AI models with Adobe Firefly Foundry to support Disney's production pipeline"
   },
   {
@@ -94,8 +94,8 @@
    "url": "https://artificialanalysis.ai/models/claude-fable-5-2",
    "source": "Hacker News",
    "published_at": "2026-11-09T20:04:55Z",
-   "text": "296 points and 216 comments on Hacker News.",
-   "points": 296,
+   "text": "298 points and 221 comments on Hacker News.",
+   "points": 298,
    "discussion": "https://news.ycombinator.com/item?id=50431144"
   },
   {
@@ -122,11 +122,11 @@
    "via": "Techmeme"
   },
   {
-   "title": "Apple is now offering additional AI access via one-time $50 “intelligence usage packs” when monthly…",
-   "url": "https://9to5mac.com/2026/11/09/apple-launches-50-intelligence-usage-packs-for-select-ai-features/",
-   "source": "Ryan Christoffel / 9to5Mac",
-   "published_at": "2026-11-09T23:05:56Z",
-   "text": "Apple is now offering additional AI access via one-time $50 “intelligence usage packs” when monthly usage caps are met, starting in its Creator Studio apps. Apple has said it will eventually charge for expanded usage of select AI features. Now the first 'intelligence usage packs …",
+   "title": "Sources: Alice Huang and her partner pitched a Southeast Asia data center project to China-based in…",
+   "url": "https://www.ft.com/content/5d8c1e1d-6ce0-4eb4-9f5c-722fa5c4841d",
+   "source": "Financial Times",
+   "published_at": "2026-11-09T14:02:34Z",
+   "text": "Sources: Alice Huang and her partner pitched a Southeast Asia data center project to China-based investors in 2025, saying they had “no problem securing GPUs”. Alice Huang boasted of having access to Nvidia GPUs and her connection to Alibaba — The woman at the centre …",
    "via": "Techmeme"
   }
  ],
