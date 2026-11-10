@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-10T12:15:47Z",
+ "generated_at": "2026-11-10T12:47:59Z",
  "items": [
   {
    "title": "Trump says the FBI is “looking into” Jensen Huang's affair, and the Nvidia CEO told him that he “ha…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-09T18:57:59Z",
    "text": "Introducing Claude Fable 5.2 and Claude Mythos 5.2, designed to tackle the most daunting technical challenges. They’re capable collaborators on ambitious projects in many fields, and show improvements in areas like coding, reasoning, and vision.",
    "author_name": "Claude",
-   "likes": 88766,
+   "likes": 89067,
    "story": "Anthropic releases Mythos 5.2 and Fable 5.2, saying they are “best for the most ambitious, open-ended technical work”, with outputs up to 30% faster than 5.1"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-11-10T11:33:49Z",
    "text": "Anthropic has launched the roadshow for its proposed initial public offering: Legal disclaimer: A registration statement relating to these securities has been filed with the SEC but has not yet become effective. These securities may not be sold, nor may…",
    "author_name": "Anthropic",
-   "likes": 1526,
+   "likes": 2161,
    "story": "Anthropic launches its IPO roadshow, saying the company and shareholders plan to sell 825M Class A shares at $70 to $78 each, listing on the Nasdaq under ANT",
    "links": [
     "https://www.anthropic.com/news/roadshow-launch"
@@ -47,7 +47,7 @@
    "published_at": "2026-11-09T18:03:24Z",
    "text": "1/ announcing our smallest, most efficient little model is here: muse ember 🔥 built for work that agents repeat all day, it gets you more intelligence per dollar than Haiku, Luna, and all other flash models at any reasoning setting and does it at a third of the cost or less!",
    "author_name": "Alexandr Wang",
-   "likes": 5501,
+   "likes": 5523,
    "story": "Meta releases Muse Ember, its smallest and most cost-efficient AI model yet, saying it delivers more intelligence per dollar than Haiku 5.5 and GPT-6 Luna"
   },
   {
@@ -55,17 +55,17 @@
    "url": "https://www.theinformation.com/articles/jensen-huangs-yearslong-ties-alice-huang-enabled-nvidia-chip-sales-china",
    "source": "The Information",
    "published_at": "2026-11-10T11:45:48Z",
-   "text": "Sources: Jensen Huang and Alice Huang's relationship dates back to at least 2023, facilitating $7.5B+ in Nvidia chip shipments via Chinese companies since then",
+   "text": "Sources: Jensen Huang and Alice Huang's relationship dates back to at least 2023, facilitating $7.5B+ in Nvidia chip shipments via Chinese companies since then. The relationship between Nvidia CEO Jensen Huang and Alice Huang, the woman that the U.S. government reportedly identified …",
    "via": "Techmeme"
   },
   {
-   "title": "AI usage generates a fragile codebase",
-   "url": "https://evanxmerz.com/post/ai-usage-generates-a-fragile-codebase/",
+   "title": "Google Gemini routes personal Drive files and emails to human annotators",
+   "url": "https://github.com/thisisme6598/gemini_files/",
    "source": "Hacker News",
-   "published_at": "2026-11-10T10:25:58Z",
-   "text": "76 points and 69 comments on Hacker News.",
-   "points": 76,
-   "discussion": "https://news.ycombinator.com/item?id=50438318"
+   "published_at": "2026-11-09T18:24:38Z",
+   "text": "649 points and 137 comments on Hacker News.",
+   "points": 649,
+   "discussion": "https://news.ycombinator.com/item?id=50429426"
   },
   {
    "title": "We have our answer to who will be replacing Sora and OpenAI as Disney's generative AI partner. Disn…",
@@ -74,7 +74,7 @@
    "published_at": "2026-11-09T21:53:54Z",
    "text": "We have our answer to who will be replacing Sora and OpenAI as Disney's generative AI partner. Disney plans to use it not only in studio, but also at the theme parks. 'Disney will work directly with Adobe on generative AI models tailored to Disney’s properties'",
    "author_name": "Andrew Curran",
-   "likes": 215,
+   "likes": 217,
    "story": "Disney and Adobe sign a multiyear deal to build proprietary “artist-led” generative AI models with Adobe Firefly Foundry to support Disney's production pipeline"
   },
   {
@@ -93,20 +93,20 @@
    "via": "Techmeme"
   },
   {
-   "title": "Google Gemini routes personal Drive files and emails to human annotators",
-   "url": "https://github.com/thisisme6598/gemini_files/",
+   "title": "Fireworks AI security breach impacts Notion and their customers",
+   "url": "https://www.notion.com/help/security-incident-involving-a-third-party-ai-vendor",
    "source": "Hacker News",
-   "published_at": "2026-11-09T18:24:38Z",
-   "text": "635 points and 134 comments on Hacker News.",
-   "points": 635,
-   "discussion": "https://news.ycombinator.com/item?id=50429426"
+   "published_at": "2026-11-10T07:19:38Z",
+   "text": "78 points and 21 comments on Hacker News.",
+   "points": 78,
+   "discussion": "https://news.ycombinator.com/item?id=50437106"
   },
   {
-   "title": "Jensen Huang's affair shines a spotlight on Nvidia's weak board and opaque succession planning at w…",
-   "url": "https://www.semafor.com/article/11/09/2026/with-a-weak-board-and-no-successor-nvidia-confronts-a-governance-crisis",
-   "source": "Semafor",
-   "published_at": "2026-11-09T22:01:20Z",
-   "text": "Jensen Huang's affair shines a spotlight on Nvidia's weak board and opaque succession planning at what has become the world's most important company. Nvidia CEO Jensen Huang's spy scandal shines a spotlight on thin corporate governance and opaque succession planning at what has become the world's most important company.",
+   "title": "IPO prospectus: Anthropic's IPO is set to raise up to $64.4B, and the company will also raise $26B…",
+   "url": "https://www.reuters.com/business/anthropic-ipo-raise-much-644-billion-latest-draft-prospectus-shows-2026-11-10/",
+   "source": "Echo Wang / Reuters",
+   "published_at": "2026-11-10T11:21:05Z",
+   "text": "IPO prospectus: Anthropic's IPO is set to raise up to $64.4B, and the company will also raise $26B via cornerstone investors like Google, AMD, and Nvidia. Anthropic is targeting a valuation of up to $1.02 trillion in its landmark U.S. IPO, its filing showed on Tuesday …",
    "via": "Techmeme"
   },
   {
@@ -117,11 +117,11 @@
    "text": "Most of the changes I make to my projects these days come in the form of PRs opened for me by Claude Code or Codex. The PR is my unit of work - I use them to bundle commits together, iterating on them until a feature is complete, document decisions and then merge the finished result. Today's coding agents are great at writing PR descriptions. They're too good at describing the work The problem is that they are too good. An agent-written PR description is accurate and comprehensive. It describes the problem, the detailed solution, and the steps taken to verify it."
   },
   {
-   "title": "IPO prospectus: Anthropic's IPO is set to raise up to $64.4B, and the company will also raise $26B…",
-   "url": "https://www.reuters.com/business/anthropic-ipo-raise-much-644-billion-latest-draft-prospectus-shows-2026-11-10/",
-   "source": "Echo Wang / Reuters",
-   "published_at": "2026-11-10T11:21:05Z",
-   "text": "IPO prospectus: Anthropic's IPO is set to raise up to $64.4B, and the company will also raise $26B via cornerstone investors like Google, AMD, and Nvidia. Anthropic's IPO is set to raise as much as $64.4 billion, a regulatory filing showed on Tuesday, in a landmark test of whether Wall Street's faith …",
+   "title": "Jensen Huang's affair shines a spotlight on Nvidia's weak board and opaque succession planning at w…",
+   "url": "https://www.semafor.com/article/11/09/2026/with-a-weak-board-and-no-successor-nvidia-confronts-a-governance-crisis",
+   "source": "Semafor",
+   "published_at": "2026-11-09T22:01:20Z",
+   "text": "Jensen Huang's affair shines a spotlight on Nvidia's weak board and opaque succession planning at what has become the world's most important company. Nvidia CEO Jensen Huang's spy scandal shines a spotlight on thin corporate governance and opaque succession planning at what has become the world's most important company.",
    "via": "Techmeme"
   },
   {
