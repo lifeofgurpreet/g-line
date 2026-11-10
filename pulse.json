@@ -1,13 +1,13 @@
 {
  "schema": 1,
- "generated_at": "2026-11-09T23:49:54Z",
+ "generated_at": "2026-11-10T00:22:06Z",
  "items": [
   {
-   "title": "Sources: a Commerce Department investigation into Megaspeed for allegedly smuggling Nvidia chips to…",
-   "url": "https://www.nytimes.com/2026/11/09/business/economy/nvidia-megaspeed-investigation-huang.html?unlocked_article_code=1.PFE.kx0T.Y85ccrbdDRP8&smid=url-share",
-   "source": "New York Times",
-   "published_at": "2026-11-09T16:20:53Z",
-   "text": "Sources: a Commerce Department investigation into Megaspeed for allegedly smuggling Nvidia chips to China was transferred to the DOJ after Nvidia intervened. An investigation into Megaspeed, a Singapore company that was buying advanced Nvidia A.I. chips, was transferred to the Justice Department …",
+   "title": "Trump says the FBI is “looking into” Jensen Huang's affair, and the Nvidia CEO told him he “had abs…",
+   "url": "https://apnews.com/article/china-denies-spy-jensen-huang-nvidia-3345b9f05c54d58909e88f6dcb9c1cd8",
+   "source": "Associated Press",
+   "published_at": "2026-11-09T22:40:46Z",
+   "text": "Trump says the FBI is “looking into” Jensen Huang's affair, and the Nvidia CEO told him he “had absolutely no idea that the person in question was a spy”. President Donald Trump said Monday that Nvidia CEO Jensen Huang should not worry about the FBI looking …",
    "via": "Techmeme"
   },
   {
@@ -17,7 +17,7 @@
    "published_at": "2026-11-09T18:57:59Z",
    "text": "Introducing Claude Fable 5.2 and Claude Mythos 5.2, designed to tackle the most daunting technical challenges. They’re capable collaborators on ambitious projects in many fields, and show improvements in areas like coding, reasoning, and vision.",
    "author_name": "Claude",
-   "likes": 68981,
+   "likes": 71069,
    "story": "Anthropic releases Mythos 5.2 and Fable 5.2, saying they are “best for the most ambitious, open-ended technical work”, with outputs up to 30% faster than 5.1"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-11-09T21:49:49Z",
    "text": "Muse Ember, Muse Spark 1.3, and Muse Wonder are now available on Google Cloud.",
    "author_name": "Mark Zuckerberg",
-   "likes": 2063,
+   "likes": 2366,
    "story": "Meta releases Muse Ember, its smallest and most cost-efficient AI model yet, saying it delivers more intelligence per dollar than Haiku 5.5 and GPT-6 Luna"
   },
   {
@@ -44,15 +44,15 @@
    "published_at": "2026-11-09T18:19:08Z",
    "text": "Four distinct TPU systems in a single generation in one year! Instead of waiting years for a traditional semiconductor cycle, hardware engineers co-designing systems alongside Google Deepmind means we can keep innovating quickly for customers.",
    "author_name": "Sundar Pichai",
-   "likes": 2799,
+   "likes": 2912,
    "story": "Google unveils two specialized TPUs launching in 2027: the 8tx, to be paired with an AMD CPU, and the 8i Max, a dual-chip package for long-context window tasks"
   },
   {
-   "title": "Trump says the FBI is “looking into” Jensen Huang's affair, and the Nvidia CEO told him he “had abs…",
-   "url": "https://apnews.com/article/china-denies-spy-jensen-huang-nvidia-3345b9f05c54d58909e88f6dcb9c1cd8",
-   "source": "Associated Press",
-   "published_at": "2026-11-09T22:40:46Z",
-   "text": "Trump says the FBI is “looking into” Jensen Huang's affair, and the Nvidia CEO told him he “had absolutely no idea that the person in question was a spy”. President Donald Trump said Monday that Nvidia CEO Jensen Huang should not worry about the FBI looking …",
+   "title": "Sources: a Commerce Department investigation into Megaspeed for allegedly smuggling Nvidia chips to…",
+   "url": "https://www.nytimes.com/2026/11/09/business/economy/nvidia-megaspeed-investigation-huang.html?unlocked_article_code=1.PFE.kx0T.Y85ccrbdDRP8&smid=url-share",
+   "source": "New York Times",
+   "published_at": "2026-11-09T16:20:53Z",
+   "text": "Sources: a Commerce Department investigation into Megaspeed for allegedly smuggling Nvidia chips to China was transferred to the DOJ after Nvidia intervened. An investigation into Megaspeed, a Singapore company that was buying advanced Nvidia A.I. chips, was transferred to the Justice Department …",
    "via": "Techmeme"
   },
   {
@@ -60,8 +60,8 @@
    "url": "https://artificialanalysis.ai/models/claude-fable-5-2",
    "source": "Hacker News",
    "published_at": "2026-11-09T20:04:55Z",
-   "text": "239 points and 156 comments on Hacker News.",
-   "points": 239,
+   "text": "260 points and 185 comments on Hacker News.",
+   "points": 260,
    "discussion": "https://news.ycombinator.com/item?id=50431144"
   },
   {
@@ -71,15 +71,15 @@
    "published_at": "2026-11-09T06:57:57Z",
    "text": "jensen huang (nvidia ceo) finding out his fling alice huang has been a chinese intelligence asset this whole time",
    "author_name": "ukdicha modak",
-   "likes": 22301,
+   "likes": 22468,
    "story": "A profile of Alice Huang, a suspected Chinese spy who founded Megaspeed in 2023 and spent years in Jensen Huang's orbit; Megaspeed's Nvidia imports top $4.6B"
   },
   {
-   "title": "Hide your slop PR descriptions behind <details><summary>",
-   "url": "https://simonwillison.net/2026/Nov/9/details-summary/",
+   "title": "Locating the source of a mysterious beep with Claude",
+   "url": "https://simonwillison.net/2026/Nov/9/mysterious-beeps/",
    "source": "Simon Willison's weblog",
-   "published_at": "2026-11-09T04:25:05Z",
-   "text": "Most of the changes I make to my projects these days come in the form of PRs opened for me by Claude Code or Codex. The PR is my unit of work - I use them to bundle commits together, iterating on them until a feature is complete, document decisions and then merge the finished result. Today's coding agents are great at writing PR descriptions. They're too good at describing the work The problem is that they are too good. An agent-written PR description is accurate and comprehensive. It describes the problem, the detailed solution, and the steps taken to verify it."
+   "published_at": "2026-11-09T23:57:21Z",
+   "text": "Our house has a box room, full of boxes that we still haven't unpacked from our last move. A couple of weeks ago something in that room started intermittently beeping . The beeps were far enough apart that standing in the room and trying to determine the source of the noise was frustrating, and I really didn't want to dig through every one of those boxes. So I had Claude Code build Beep Locator , a software system for triangulating the source of a mysterious beep using multiple devices scattered around the room."
   },
   {
    "title": "Nvidia's board launches a probe into whether Jensen Huang was targeted by a foreign spy plot, sayin…",
@@ -94,8 +94,8 @@
    "url": "https://github.com/thisisme6598/gemini_files/",
    "source": "Hacker News",
    "published_at": "2026-11-09T18:24:38Z",
-   "text": "290 points and 58 comments on Hacker News.",
-   "points": 290,
+   "text": "333 points and 85 comments on Hacker News.",
+   "points": 333,
    "discussion": "https://news.ycombinator.com/item?id=50429426"
   },
   {
@@ -107,27 +107,27 @@
    "via": "Techmeme"
   },
   {
-   "title": "Nvidia Senior Director Madison Huang, daughter of Jensen, cancels a high-profile Seoul appearance c…",
-   "url": "https://www.bloomberg.com/news/articles/2026-11-09/nvidia-controversy-throws-high-profile-korea-event-into-disarray",
-   "source": "Yoolim Lee / Bloomberg",
-   "published_at": "2026-11-09T10:50:55Z",
-   "text": "Nvidia Senior Director Madison Huang, daughter of Jensen, cancels a high-profile Seoul appearance citing a “family matter”, throwing the event into disarray",
-   "via": "Techmeme"
+   "title": "A year after the 100% AI mandate nobody understands our code",
+   "url": "https://www.reddit.com/r/ClaudeCode/comments/1xq2n3t/a_year_after_the_100_ai_mandate_nobody/",
+   "source": "Hacker News",
+   "published_at": "2026-11-09T22:19:12Z",
+   "text": "67 points and 67 comments on Hacker News.",
+   "points": 67,
+   "discussion": "https://news.ycombinator.com/item?id=50433079"
   },
   {
-   "title": "Jensen Huang's affair shines a spotlight on Nvidia's weak board and opaque succession planning at w…",
-   "url": "https://www.semafor.com/article/11/09/2026/with-a-weak-board-and-no-successor-nvidia-confronts-a-governance-crisis",
-   "source": "Semafor",
-   "published_at": "2026-11-09T22:01:20Z",
-   "text": "Jensen Huang's affair shines a spotlight on Nvidia's weak board and opaque succession planning at what has become the world's most important company",
-   "via": "Techmeme"
+   "title": "Hide your slop PR descriptions behind <details><summary>",
+   "url": "https://simonwillison.net/2026/Nov/9/details-summary/",
+   "source": "Simon Willison's weblog",
+   "published_at": "2026-11-09T04:25:05Z",
+   "text": "Most of the changes I make to my projects these days come in the form of PRs opened for me by Claude Code or Codex. The PR is my unit of work - I use them to bundle commits together, iterating on them until a feature is complete, document decisions and then merge the finished result. Today's coding agents are great at writing PR descriptions. They're too good at describing the work The problem is that they are too good. An agent-written PR description is accurate and comprehensive. It describes the problem, the detailed solution, and the steps taken to verify it."
   },
   {
-   "title": "Sources: Alice Huang and her partner pitched a Southeast Asia data center project to China-based in…",
-   "url": "https://www.ft.com/content/5d8c1e1d-6ce0-4eb4-9f5c-722fa5c4841d",
-   "source": "Financial Times",
-   "published_at": "2026-11-09T14:02:34Z",
-   "text": "Sources: Alice Huang and her partner pitched a Southeast Asia data center project to China-based investors in 2025, saying they had “no problem securing GPUs”. Alice Huang boasted of having access to Nvidia GPUs and her connection to Alibaba — The woman at the centre …",
+   "title": "Jensen Huang's scandal is a rare crisis in US corporate history, given the national security implic…",
+   "url": "https://www.semafor.com/article/11/08/2026/nvidias-45-trillion-test-of-founder-immunity",
+   "source": "Andrew Edgecliffe-Johnson /…",
+   "published_at": "2026-11-09T04:25:38Z",
+   "text": "Jensen Huang's scandal is a rare crisis in US corporate history, given the national security implications, his centrality to Nvidia, and its role in the AI race",
    "via": "Techmeme"
   }
  ],
