@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-10T10:08:03Z",
+ "generated_at": "2026-11-10T10:39:49Z",
  "items": [
   {
    "title": "Trump says the FBI is “looking into” Jensen Huang's affair, and the Nvidia CEO told him that he “ha…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-09T18:57:59Z",
    "text": "Introducing Claude Fable 5.2 and Claude Mythos 5.2, designed to tackle the most daunting technical challenges. They’re capable collaborators on ambitious projects in many fields, and show improvements in areas like coding, reasoning, and vision.",
    "author_name": "Claude",
-   "likes": 87443,
+   "likes": 87815,
    "story": "Anthropic releases Mythos 5.2 and Fable 5.2, saying they are “best for the most ambitious, open-ended technical work”, with outputs up to 30% faster than 5.1"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-11-09T18:03:24Z",
    "text": "1/ announcing our smallest, most efficient little model is here: muse ember 🔥 built for work that agents repeat all day, it gets you more intelligence per dollar than Haiku, Luna, and all other flash models at any reasoning setting and does it at a third of the cost or less!",
    "author_name": "Alexandr Wang",
-   "likes": 5412,
+   "likes": 5433,
    "story": "Meta releases Muse Ember, its smallest and most cost-efficient AI model yet, saying it delivers more intelligence per dollar than Haiku 5.5 and GPT-6 Luna"
   },
   {
@@ -50,8 +50,8 @@
    "url": "https://github.com/thisisme6598/gemini_files/",
    "source": "Hacker News",
    "published_at": "2026-11-09T18:24:38Z",
-   "text": "600 points and 129 comments on Hacker News.",
-   "points": 600,
+   "text": "612 points and 130 comments on Hacker News.",
+   "points": 612,
    "discussion": "https://news.ycombinator.com/item?id=50429426"
   },
   {
@@ -61,7 +61,7 @@
    "published_at": "2026-11-09T18:19:08Z",
    "text": "Four distinct TPU systems in a single generation in one year! Instead of waiting years for a traditional semiconductor cycle, hardware engineers co-designing systems alongside Google Deepmind means we can keep innovating quickly for customers.",
    "author_name": "Sundar Pichai",
-   "likes": 4531,
+   "likes": 4581,
    "story": "Google unveils two specialized TPUs launching in 2027: the 8tx, to be paired with an AMD CPU, and the 8i Max, a dual-chip package for long-context window tasks"
   },
   {
@@ -86,7 +86,7 @@
    "published_at": "2026-11-09T21:53:54Z",
    "text": "We have our answer to who will be replacing Sora and OpenAI as Disney's generative AI partner. Disney plans to use it not only in studio, but also at the theme parks. 'Disney will work directly with Adobe on generative AI models tailored to Disney’s properties'",
    "author_name": "Andrew Curran",
-   "likes": 207,
+   "likes": 210,
    "story": "Disney and Adobe sign a multiyear deal to build proprietary “artist-led” generative AI models with Adobe Firefly Foundry to support Disney's production pipeline"
   },
   {
@@ -94,8 +94,8 @@
    "url": "https://www.cnbc.com/2026/11/06/coreweave-bond-yield-tops-16percent-as-ai-credit-stress-rises.html",
    "source": "Hacker News",
    "published_at": "2026-11-10T03:20:06Z",
-   "text": "147 points and 107 comments on Hacker News.",
-   "points": 147,
+   "text": "158 points and 113 comments on Hacker News.",
+   "points": 158,
    "discussion": "https://news.ycombinator.com/item?id=50435660"
   },
   {
