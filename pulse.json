@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-10T20:50:29Z",
+ "generated_at": "2026-11-10T21:22:00Z",
  "items": [
   {
    "title": "Sources: Jensen Huang and Alice Huang's relationship dates back to at least 2023, facilitating $7.5…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-10T17:26:03Z",
    "text": "Starting to roll out today: Claude Whiteboards, Claude Sheets and Claude Data. Think a plan through on a board, build a tracker in a sheet, and tell a story with your data.",
    "author_name": "Claude",
-   "likes": 26718,
+   "likes": 29063,
    "story": "Anthropic unveils office tools, including a video call assistant, a data dashboard, and spreadsheet service Claude Sheets, competing with Microsoft and Google"
   },
   {
@@ -34,21 +34,24 @@
    "published_at": "2026-11-10T19:30:45Z",
    "text": "By announcing it has \"no reason to believe that either national security or Nvidia secrets were compromised,\" Nvidia's \"investigation\" into Huang begins with its conclusion seemingly predetermined",
    "author_name": "Casey Newton",
-   "likes": 37,
-   "story": "Nvidia hires law firm Wachtell Lipton to investigate Jensen Huang's affair with an alleged Chinese spy, to be led by former acting US attorney Joon H. Kim",
+   "likes": 48,
+   "story": "Nvidia hires former acting US attorney Joon H. Kim and his law firm Wachtell Lipton to conduct a probe into Jensen Huang's affair with an alleged Chinese spy",
    "links": [
     "https://www.nytimes.com/2026/11/10/business/nvidia-wachtell-lipton-jensen-huang.html"
    ]
   },
   {
-   "title": "Gemini 4 Carbon is rolling out today. It’s built for sustained, long-horizon tasks, reasoning deepl…",
-   "url": "https://x.com/sundarpichai/status/2120185896469496180",
-   "source": "𝕏 @sundarpichai",
-   "published_at": "2026-11-10T16:04:43Z",
-   "text": "Gemini 4 Carbon is rolling out today. It’s built for sustained, long-horizon tasks, reasoning deeply through complex software engineering, cybersecurity, and scientific discovery. Coming globally via the Gemini API in @GoogleAIStudio and Gemini for business, and for Ultra…",
-   "author_name": "Sundar Pichai",
-   "likes": 5530,
-   "story": "Google rolls out Gemini 4 Carbon to paid API and AI Ultra users two weeks after releasing it to cyber defenders, and previews a swarm feature in Antigravity"
+   "title": "Now in beta: Businesses in ChatGPT. Claim your business, manage your information, and get insights…",
+   "url": "https://x.com/OpenAI/status/2120216592395174382",
+   "source": "𝕏 @OpenAI",
+   "published_at": "2026-11-10T18:06:42Z",
+   "text": "Now in beta: Businesses in ChatGPT. Claim your business, manage your information, and get insights on how people engage with you. Eligible businesses can also build a Business Agent to answer customers’ questions and help them explore what you offer.",
+   "author_name": "OpenAI",
+   "likes": 7536,
+   "story": "OpenAI launches Businesses in ChatGPT in beta, including Business Agents for companies to interact with users and a hub where companies can claim their profiles",
+   "links": [
+    "https://openai.com/index/introducing-businesses-chatgpt/"
+   ]
   },
   {
    "title": "Anthropic launches its IPO roadshow, saying the company and shareholders plan to sell 825M Class A…",
@@ -63,22 +66,19 @@
    "url": "https://github.com/GoogleChrome/modern-web-guidance",
    "source": "Hacker News",
    "published_at": "2026-11-10T18:01:15Z",
-   "text": "135 points and 37 comments on Hacker News.",
-   "points": 135,
+   "text": "161 points and 45 comments on Hacker News.",
+   "points": 161,
    "discussion": "https://news.ycombinator.com/item?id=50443812"
   },
   {
-   "title": "When Anthropic release a new model it's always worth taking a look at their updated prompting guide…",
-   "url": "https://x.com/simonw/status/2120029347948220500",
-   "source": "𝕏 @simonw",
-   "published_at": "2026-11-10T05:42:39Z",
-   "text": "When Anthropic release a new model it's always worth taking a look at their updated prompting guide - here's an entertaining tip to make Fable 5.2 less likely to be cautious in how it improves existing code: tell it \"This codebase is yours\"",
-   "author_name": "Simon Willison",
-   "likes": 3743,
-   "story": "Anthropic's Fable 5.2 represents “Jagged AGI”, which matches human experts on most computer tasks like game design but lacks self-directed judgment and taste",
-   "links": [
-    "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/prompting-claude-fable-5-2#say-who-owns-the-code"
-   ]
+   "title": "Gemini 4 Carbon is rolling out today. It’s built for sustained, long-horizon tasks, reasoning deepl…",
+   "url": "https://x.com/sundarpichai/status/2120185896469496180",
+   "source": "𝕏 @sundarpichai",
+   "published_at": "2026-11-10T16:04:43Z",
+   "text": "Gemini 4 Carbon is rolling out today. It’s built for sustained, long-horizon tasks, reasoning deeply through complex software engineering, cybersecurity, and scientific discovery. Coming globally via the Gemini API in @GoogleAIStudio and Gemini for business, and for Ultra…",
+   "author_name": "Sundar Pichai",
+   "likes": 5659,
+   "story": "Google rolls out Gemini 4 Carbon to paid API and AI Ultra users two weeks after releasing it to cyber defenders, and previews a swarm feature in Antigravity"
   },
   {
    "title": "Locating the source of a mysterious beep with Claude",
@@ -96,30 +96,43 @@
    "via": "Techmeme"
   },
   {
-   "title": "The AI Futures Project have updated their timelines. They say we are five months ahead of AI 2027,…",
-   "url": "https://x.com/AndrewCurran_/status/2120201213878972582",
-   "source": "𝕏 @AndrewCurran_",
-   "published_at": "2026-11-10T17:05:35Z",
-   "text": "The AI Futures Project have updated their timelines. They say we are five months ahead of AI 2027, and they now believe a Superhuman AI Researcher will arrive sometime in 2027.",
-   "author_name": "Andrew Curran",
-   "likes": 1410,
-   "story": "The AI Futures Project updates its timelines after METR's report on Anthropic R&D progress, saying it now expects a Superhuman AI Researcher to arrive in 2027"
+   "title": "When Anthropic release a new model it's always worth taking a look at their updated prompting guide…",
+   "url": "https://x.com/simonw/status/2120029347948220500",
+   "source": "𝕏 @simonw",
+   "published_at": "2026-11-10T05:42:39Z",
+   "text": "When Anthropic release a new model it's always worth taking a look at their updated prompting guide - here's an entertaining tip to make Fable 5.2 less likely to be cautious in how it improves existing code: tell it \"This codebase is yours\"",
+   "author_name": "Simon Willison",
+   "likes": 3767,
+   "story": "Anthropic's Fable 5.2 represents “Jagged AGI”, which matches human experts on most computer tasks like game design but lacks self-directed judgment and taste",
+   "links": [
+    "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/prompting-claude-fable-5-2#say-who-owns-the-code"
+   ]
   },
   {
    "title": "AI usage generates a fragile codebase",
    "url": "https://evanxmerz.com/post/ai-usage-generates-a-fragile-codebase/",
    "source": "Hacker News",
    "published_at": "2026-11-10T10:25:58Z",
-   "text": "261 points and 315 comments on Hacker News.",
-   "points": 261,
+   "text": "274 points and 341 comments on Hacker News.",
+   "points": 274,
    "discussion": "https://news.ycombinator.com/item?id=50438318"
   },
   {
-   "title": "Sources: Goldman Sachs expects Anthropic to hit ~$52B revenue in 2026 and $600B+ by 2030, an operat…",
-   "url": "https://www.ft.com/content/fd209548-d2df-470c-ab9a-caadbec08b58",
-   "source": "Financial Times",
-   "published_at": "2026-11-10T16:03:52Z",
-   "text": "Sources: Goldman Sachs expects Anthropic to hit ~$52B revenue in 2026 and $600B+ by 2030, an operating profit in 2029, and be free cash flow positive from 2030",
+   "title": "The AI Futures Project have updated their timelines. They say we are five months ahead of AI 2027,…",
+   "url": "https://x.com/AndrewCurran_/status/2120201213878972582",
+   "source": "𝕏 @AndrewCurran_",
+   "published_at": "2026-11-10T17:05:35Z",
+   "text": "The AI Futures Project have updated their timelines. They say we are five months ahead of AI 2027, and they now believe a Superhuman AI Researcher will arrive sometime in 2027.",
+   "author_name": "Andrew Curran",
+   "likes": 1484,
+   "story": "The AI Futures Project updates its timelines after METR's report on Anthropic R&D progress, saying it now expects a Superhuman AI Researcher to arrive in 2027"
+  },
+  {
+   "title": "S-1: Nvidia plans to invest about $10B in Anthropic after its IPO, or ~10% of the new cash Anthropi…",
+   "url": "https://www.nytimes.com/2026/11/10/business/anthropic-ipo-nvidia.html",
+   "source": "Cory Weinberg / New York Ti…",
+   "published_at": "2026-11-10T20:56:09Z",
+   "text": "S-1: Nvidia plans to invest about $10B in Anthropic after its IPO, or ~10% of the new cash Anthropic is expected to raise this month, including in the IPO",
    "via": "Techmeme"
   },
   {
@@ -127,16 +140,9 @@
    "url": "https://www.anthropic.com/claude-fable-and-mythos-5-2",
    "source": "Hacker News",
    "published_at": "2026-11-09T18:56:29Z",
-   "text": "984 points and 6 comments on Hacker News.",
-   "points": 984,
+   "text": "985 points and 6 comments on Hacker News.",
+   "points": 985,
    "discussion": "https://news.ycombinator.com/item?id=50429906"
-  },
-  {
-   "title": "Hide your slop PR descriptions behind <details><summary>",
-   "url": "https://simonwillison.net/2026/Nov/9/details-summary/",
-   "source": "Simon Willison's weblog",
-   "published_at": "2026-11-09T04:25:05Z",
-   "text": "Most of the changes I make to my projects these days come in the form of PRs opened for me by Claude Code or Codex. The PR is my unit of work - I use them to bundle commits together, iterating on them until a feature is complete, document decisions and then merge the finished result. Today's coding agents are great at writing PR descriptions. They're too good at describing the work The problem is that they are too good. An agent-written PR description is accurate and comprehensive. It describes the problem, the detailed solution, and the steps taken to verify it."
   }
  ],
  "sources": "curated, Techmeme, X (found via Techmeme, Reddit, the Internet Archive), Claude Code releases, Anthropic, Hacker News, Simon Willison"
