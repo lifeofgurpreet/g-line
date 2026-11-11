@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-11T09:13:00Z",
+ "generated_at": "2026-11-11T09:45:05Z",
  "items": [
   {
    "title": "Nvidia hires former acting US attorney Joon H. Kim and his law firm Wachtell Lipton to conduct a pr…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-10T17:26:03Z",
    "text": "Starting to roll out today: Claude Whiteboards, Claude Sheets and Claude Data. Think a plan through on a board, build a tracker in a sheet, and tell a story with your data.",
    "author_name": "Claude",
-   "likes": 52747,
+   "likes": 53222,
    "story": "Anthropic unveils office tools, including a video call assistant, a data dashboard, and spreadsheet service Claude Sheets, competing with Microsoft and Google"
   },
   {
@@ -34,15 +34,15 @@
    "published_at": "2026-11-11T02:01:09Z",
    "text": "Qwen4 is coming. Deeper knowledge. Richer world understanding. Stronger coding and agentic capabilities. Built for real-world tasks — from complex coding and knowledge work to front-end builds and professional software workflows. Qwen4-Max is now in preview on Alibaba’s Token…",
    "author_name": "Qwen",
-   "likes": 8746,
+   "likes": 8994,
    "story": "Qwen4-Max Preview is out on API access. No word on weights release yet"
   },
   {
-   "title": "Sources: Jensen Huang and Alice Huang's relationship dates back to at least 2023, facilitating $7.5…",
-   "url": "https://www.theinformation.com/articles/jensen-huangs-yearslong-ties-alice-huang-enabled-nvidia-chip-sales-china",
-   "source": "The Information",
-   "published_at": "2026-11-10T11:45:48Z",
-   "text": "Sources: Jensen Huang and Alice Huang's relationship dates back to at least 2023, facilitating $7.5B+ in Nvidia chip shipments via Chinese companies since then",
+   "title": "A deep dive into AMD's Zen 6 EPYC Venice: uses TSMC's N2P, the 9686F often beats Nvidia's Vera, a d…",
+   "url": "https://www.tomshardware.com/pc-components/cpus/amd-zen-6-epyc-venice-deep-dive-and-benchmarking-dual-epyc-9996-with-1-024-threads-delivers-up-to-93-percent-performance-gain-gen-on-gen-9686f-outclasses-nvidias-vera",
+   "source": "Jake Roach / Tom's Hardware",
+   "published_at": "2026-11-11T00:25:55Z",
+   "text": "A deep dive into AMD's Zen 6 EPYC Venice: uses TSMC's N2P, the 9686F often beats Nvidia's Vera, a dual 9996 is up to 93% faster than a dual Zen 5 9965, and more. Our first look at Zen 6, both under the hood and in real-world applications. … AMD's EPYC ‘Venice’ CPUs are the first to debut …",
    "via": "Techmeme"
   },
   {
@@ -50,8 +50,8 @@
    "url": "https://www.vulncheck.com/blog/anthropic-glasswing-november-update",
    "source": "Hacker News",
    "published_at": "2026-11-10T22:17:56Z",
-   "text": "396 points and 187 comments on Hacker News.",
-   "points": 396,
+   "text": "398 points and 190 comments on Hacker News.",
+   "points": 398,
    "discussion": "https://news.ycombinator.com/item?id=50447074"
   },
   {
@@ -61,7 +61,7 @@
    "published_at": "2026-11-10T18:06:42Z",
    "text": "Now in beta: Businesses in ChatGPT. Claim your business, manage your information, and get insights on how people engage with you. Eligible businesses can also build a Business Agent to answer customers’ questions and help them explore what you offer.",
    "author_name": "OpenAI",
-   "likes": 14668,
+   "likes": 14779,
    "story": "OpenAI launches Businesses in ChatGPT in beta, including Business Agents for companies to interact with users and a hub where companies can claim their profiles",
    "links": [
     "https://openai.com/index/introducing-businesses-chatgpt/"
@@ -82,12 +82,31 @@
    "text": "Our house has a box room, full of boxes that we still haven't unpacked from our last move. A couple of weeks ago something in that room started intermittently beeping . The beeps were far enough apart that standing in the room and trying to determine the source of the noise was frustrating, and I really didn't want to dig through every one of those boxes. So I had Claude Code build Beep Locator , a software system for triangulating the source of a mysterious beep using multiple devices scattered around the room."
   },
   {
-   "title": "Google rolls out Gemini 4 Carbon to paid API and AI Ultra users two weeks after releasing it to cyb…",
-   "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/",
-   "source": "Koray Kavukcuoglu / Google",
-   "published_at": "2026-11-10T16:26:13Z",
-   "text": "Google rolls out Gemini 4 Carbon to paid API and AI Ultra users two weeks after releasing it to cyber defenders, and previews a swarm feature in Antigravity. Developers, enterprises, scientists, and consumers can now try our latest frontier model. — SVP, Google DeepMind and Chief AI Architect, Google",
+   "title": "Filing: Anthropic's IPO could give it an up to $1.405T valuation on a fully diluted basis, up from…",
+   "url": "https://www.cnbc.com/2026/11/10/anthropic-sets-price-range-of-70-to-78-in-upcoming-ipo.html",
+   "source": "CNBC",
+   "published_at": "2026-11-10T12:08:17Z",
+   "text": "Filing: Anthropic's IPO could give it an up to $1.405T valuation on a fully diluted basis, up from the $965B valuation during its $65B Series H announced in May",
    "via": "Techmeme"
+  },
+  {
+   "title": "Gemini 4 Carbon is rolling out today. It’s built for sustained, long-horizon tasks, reasoning deepl…",
+   "url": "https://x.com/sundarpichai/status/2120185896469496180",
+   "source": "𝕏 @sundarpichai",
+   "published_at": "2026-11-10T16:04:43Z",
+   "text": "Gemini 4 Carbon is rolling out today. It’s built for sustained, long-horizon tasks, reasoning deeply through complex software engineering, cybersecurity, and scientific discovery. Coming globally via the Gemini API in @GoogleAIStudio and Gemini for business, and for Ultra…",
+   "author_name": "Sundar Pichai",
+   "likes": 7558,
+   "story": "Google rolls out Gemini 4 Carbon to paid API and AI Ultra users two weeks after releasing it to cyber defenders, and previews a swarm feature in Antigravity"
+  },
+  {
+   "title": "Show HN: Get your coding agent off ~2019 JavaScript, onto modern web primitives",
+   "url": "https://github.com/GoogleChrome/modern-web-guidance",
+   "source": "Hacker News",
+   "published_at": "2026-11-10T18:01:15Z",
+   "text": "367 points and 108 comments on Hacker News.",
+   "points": 367,
+   "discussion": "https://news.ycombinator.com/item?id=50443812"
   },
   {
    "title": "STATE OF THE TECH JOB MARKET IN 2026 Twice a year, I dig into trends in hiring and job openings. Th…",
@@ -96,17 +115,8 @@
    "published_at": "2026-11-10T17:47:14Z",
    "text": "STATE OF THE TECH JOB MARKET IN 2026 Twice a year, I dig into trends in hiring and job openings. This is the fifth report I've done, and the most surprising yet: 1. PMs are winning in the AI era 2. Engineering demand has stalled 3. Design openings are at a record low 4. Every…",
    "author_name": "Lenny Rachitsky",
-   "likes": 3679,
+   "likes": 3723,
    "story": "An analysis of the tech job market in late 2026: product managers seem to be benefiting most in the AI era, demand for engineers is plateauing, and more"
-  },
-  {
-   "title": "Show HN: Get your coding agent off ~2019 JavaScript, onto modern web primitives",
-   "url": "https://github.com/GoogleChrome/modern-web-guidance",
-   "source": "Hacker News",
-   "published_at": "2026-11-10T18:01:15Z",
-   "text": "363 points and 105 comments on Hacker News.",
-   "points": 363,
-   "discussion": "https://news.ycombinator.com/item?id=50443812"
   },
   {
    "title": "The AI Futures Project have updated their timelines. They say we are five months ahead of AI 2027,…",
@@ -115,7 +125,7 @@
    "published_at": "2026-11-10T17:05:35Z",
    "text": "The AI Futures Project have updated their timelines. They say we are five months ahead of AI 2027, and they now believe a Superhuman AI Researcher will arrive sometime in 2027.",
    "author_name": "Andrew Curran",
-   "likes": 1953,
+   "likes": 1965,
    "story": "The AI Futures Project updates its timelines after METR's report on Anthropic R&D progress, saying it now expects a Superhuman AI Researcher to arrive in 2027"
   },
   {
@@ -127,14 +137,6 @@
    "author_name": "Nathan Lambert",
    "likes": 250,
    "story": "AI training startup Mercor raised a $750M Series D from Benchmark, General Catalyst, Nvidia, and others at a $20B valuation, up from $10B in October 2025"
-  },
-  {
-   "title": "A deep dive into AMD's Zen 6 EPYC Venice: uses TSMC's N2P, the 9686F often beats Nvidia's Vera, a d…",
-   "url": "https://www.tomshardware.com/pc-components/cpus/amd-zen-6-epyc-venice-deep-dive-and-benchmarking-dual-epyc-9996-with-1-024-threads-delivers-up-to-93-percent-performance-gain-gen-on-gen-9686f-outclasses-nvidias-vera",
-   "source": "Jake Roach / Tom's Hardware",
-   "published_at": "2026-11-11T00:25:55Z",
-   "text": "A deep dive into AMD's Zen 6 EPYC Venice: uses TSMC's N2P, the 9686F often beats Nvidia's Vera, a dual 9996 is up to 93% faster than a dual Zen 5 9965, and more. Our first look at Zen 6, both under the hood and in real-world applications. … AMD's EPYC ‘Venice’ CPUs are the first to debut …",
-   "via": "Techmeme"
   }
  ],
  "sources": "curated, Techmeme, X (found via Techmeme, Reddit, the Internet Archive), Claude Code releases, Anthropic, Hacker News, Simon Willison"
