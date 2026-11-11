@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-11T10:16:48Z",
+ "generated_at": "2026-11-11T10:48:54Z",
  "items": [
   {
    "title": "Nvidia hires former acting US attorney Joon H. Kim and his law firm Wachtell Lipton to conduct a pr…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-10T17:26:03Z",
    "text": "Starting to roll out today: Claude Whiteboards, Claude Sheets and Claude Data. Think a plan through on a board, build a tracker in a sheet, and tell a story with your data.",
    "author_name": "Claude",
-   "likes": 53652,
+   "likes": 54131,
    "story": "Anthropic unveils office tools, including a video call assistant, a data dashboard, and spreadsheet service Claude Sheets, competing with Microsoft and Google"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-11-11T02:01:09Z",
    "text": "Qwen4 is coming. Deeper knowledge. Richer world understanding. Stronger coding and agentic capabilities. Built for real-world tasks — from complex coding and knowledge work to front-end builds and professional software workflows. Qwen4-Max is now in preview on Alibaba’s Token…",
    "author_name": "Qwen",
-   "likes": 9234,
+   "likes": 9421,
    "story": "Qwen4-Max Preview is out on API access. No word on weights release yet"
   },
   {
@@ -50,8 +50,8 @@
    "url": "https://www.vulncheck.com/blog/anthropic-glasswing-november-update",
    "source": "Hacker News",
    "published_at": "2026-11-10T22:17:56Z",
-   "text": "400 points and 192 comments on Hacker News.",
-   "points": 400,
+   "text": "402 points and 192 comments on Hacker News.",
+   "points": 402,
    "discussion": "https://news.ycombinator.com/item?id=50447074"
   },
   {
@@ -61,7 +61,7 @@
    "published_at": "2026-11-10T18:06:42Z",
    "text": "Now in beta: Businesses in ChatGPT. Claim your business, manage your information, and get insights on how people engage with you. Eligible businesses can also build a Business Agent to answer customers’ questions and help them explore what you offer.",
    "author_name": "OpenAI",
-   "likes": 14868,
+   "likes": 14991,
    "story": "OpenAI launches Businesses in ChatGPT in beta, including Business Agents for companies to interact with users and a hub where companies can claim their profiles",
    "links": [
     "https://openai.com/index/introducing-businesses-chatgpt/"
@@ -96,17 +96,27 @@
    "published_at": "2026-11-10T17:47:14Z",
    "text": "STATE OF THE TECH JOB MARKET IN 2026 Twice a year, I dig into trends in hiring and job openings. This is the fifth report I've done, and the most surprising yet: 1. PMs are winning in the AI era 2. Engineering demand has stalled 3. Design openings are at a record low 4. Every…",
    "author_name": "Lenny Rachitsky",
-   "likes": 3775,
+   "likes": 3828,
    "story": "An analysis of the tech job market in late 2026: product managers seem to be benefiting most in the AI era, demand for engineers is plateauing, and more"
   },
   {
-   "title": "Show HN: Get your coding agent off ~2019 JavaScript, onto modern web primitives",
-   "url": "https://github.com/GoogleChrome/modern-web-guidance",
+   "title": "Apple has new Mac app coming to make running local AI models easy",
+   "url": "https://9to5mac.com/2026/11/10/apple-has-new-mac-app-coming-to-make-running-local-ai-models-easy/",
    "source": "Hacker News",
-   "published_at": "2026-11-10T18:01:15Z",
-   "text": "368 points and 111 comments on Hacker News.",
-   "points": 368,
-   "discussion": "https://news.ycombinator.com/item?id=50443812"
+   "published_at": "2026-11-10T21:25:03Z",
+   "text": "267 points and 228 comments on Hacker News.",
+   "points": 267,
+   "discussion": "https://news.ycombinator.com/item?id=50446520"
+  },
+  {
+   "title": "ERNIE 5.5 Flash Preview just landed! 🔥 Built on a new architecture designed for efficient inference…",
+   "url": "https://x.com/Baidu_Inc/status/2120391732248637734",
+   "source": "𝕏 @Baidu_Inc",
+   "published_at": "2026-11-11T05:42:38Z",
+   "text": "ERNIE 5.5 Flash Preview just landed! 🔥 Built on a new architecture designed for efficient inference, the latest open-weight foundation model in the ERNIE family delivers stronger performance in coding, 3D modeling, knowledge work and content creation. It keeps decoding fast…",
+   "author_name": "Baidu Inc.",
+   "likes": 806,
+   "story": "Ernie 5.5 Flash will be released in two weeks"
   },
   {
    "title": "The AI Futures Project have updated their timelines. They say we are five months ahead of AI 2027,…",
@@ -115,7 +125,7 @@
    "published_at": "2026-11-10T17:05:35Z",
    "text": "The AI Futures Project have updated their timelines. They say we are five months ahead of AI 2027, and they now believe a Superhuman AI Researcher will arrive sometime in 2027.",
    "author_name": "Andrew Curran",
-   "likes": 1969,
+   "likes": 1974,
    "story": "The AI Futures Project updates its timelines after METR's report on Anthropic R&D progress, saying it now expects a Superhuman AI Researcher to arrive in 2027"
   },
   {
@@ -125,16 +135,8 @@
    "published_at": "2026-11-10T16:09:43Z",
    "text": "It could be vastly underestimated how much human expertise is needed to diffuse the benefits of AI to the long-tail of knowledge work. I think more data companies should figure out this branding, where experts help AI companies understand how to improve the tools that make them…",
    "author_name": "Nathan Lambert",
-   "likes": 250,
+   "likes": 252,
    "story": "AI training startup Mercor raised a $750M Series D from Benchmark, General Catalyst, Nvidia, and others at a $20B valuation, up from $10B in October 2025"
-  },
-  {
-   "title": "Updated S-1: Anthropic's seven co-founders will sell $1.75B of stock in next week's IPO, each offer…",
-   "url": "https://www.bloomberg.com/news/articles/2026-11-10/anthropic-founders-to-cash-out-1-75-billion-in-blockbuster-ipo",
-   "source": "Dylan Sloan / Bloomberg",
-   "published_at": "2026-11-10T17:04:19Z",
-   "text": "Updated S-1: Anthropic's seven co-founders will sell $1.75B of stock in next week's IPO, each offering shares worth ~$250M at the midpoint of its IPO range. Anthropic PBC's seven co-founders will sell $1.75 billion of stock between them in next week's initial public offering, according to an updated prospectus released Tuesday.",
-   "via": "Techmeme"
   }
  ],
  "sources": "curated, Techmeme, X (found via Techmeme, Reddit, the Internet Archive), Claude Code releases, Anthropic, Hacker News, Simon Willison"
