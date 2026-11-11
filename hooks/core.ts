@@ -52,11 +52,12 @@ export type Payload = {
 export type Window = { used_percentage?: number; resets_at?: number }
 
 /**
- * A part of a line: its forms widest first. `spare` counts trailing forms kept
- * back: they're used only before something at least as important would be
- * dropped (the cache keeps its size until then).
+ * A part of a line: its forms widest first. `keep` marks a figure the person
+ * needs at every width: the narrowest form that still says all of it. Line 2
+ * moves such a segment onto another row (`fitRows`) before it narrows past
+ * that form or drops it; a warning counts as one at its last form.
  */
-export type Segment = { key: string; priority: number; forms: string[]; tone?: Tone; spare?: number }
+export type Segment = { key: string; priority: number; forms: string[]; tone?: Tone; keep?: number }
 export type Placed = { key: string; text: string; tone?: Tone }
 export type Preset = 'minimal' | 'default' | 'full'
 
@@ -69,6 +70,12 @@ export type Options = {
   icons?: 'none' | 'nerd'
   /** Minutes east of UTC for clock times; the caller's local offset. */
   utcOffsetMinutes?: number
+  /**
+   * Whose clock the times are on, said where it could be mistaken: `UTC+11`
+   * when the person set a `tz` this machine isn't in. The widest form of an
+   * absolute time carries it.
+   */
+  zone?: string
 }
 
 export type Alert = { id: string; text: string; tone: Tone }
@@ -105,16 +112,20 @@ export function str(value: unknown, limit = 48): string | undefined {
   return clean.slice(0, limit)
 }
 
-/** 4d 10h · 2h 5m · 7m · <1m. Floored: a countdown never overstates. */
-export function duration(seconds: number, compact = false): string {
+/**
+ * 4d 10h · 8h 45m · 7m · <1m: g-line's one spelling of a span, the same in
+ * every form and at every width, so `8h 45m` never shows as `8h45m` in one
+ * place and `45m` in another. Its leading unit is never left out. Floored: a
+ * countdown never overstates.
+ */
+export function duration(seconds: number): string {
   const s = Math.floor(seconds)
   if (s < 60) return '<1m'
   const days = Math.floor(s / 86400)
   const hours = Math.floor((s % 86400) / 3600)
   const minutes = Math.floor((s % 3600) / 60)
-  const gap = compact ? '' : ' '
-  if (days) return hours ? `${days}d${gap}${hours}h` : `${days}d`
-  if (hours) return minutes ? `${hours}h${gap}${minutes}m` : `${hours}h`
+  if (days) return hours ? `${days}d ${hours}h` : `${days}d`
+  if (hours) return minutes ? `${hours}h ${minutes}m` : `${hours}h`
   return `${minutes}m`
 }
 
@@ -153,12 +164,19 @@ export function utcLabel(offsetMinutes: number): string {
   return `UTC${sign}${Math.floor(a / 60)}${a % 60 ? `:${String(a % 60).padStart(2, '0')}` : ''}`
 }
 
-/** 16:40 when within a day of `now`, else Thu 16:40, in the caller's zone. */
-export function clock(at: number, now: number, offsetMinutes = 0): string {
+/**
+ * 16:40 today, else Thu 16:40, in the caller's zone. A time on another day
+ * always names it: `08:45` at 23:50 would read as nine hours ago, or as
+ * minutes away. With `zone`, the clock's owner follows: `Thu 16:40 UTC+11`.
+ */
+export function clock(at: number, now: number, offsetMinutes = 0, zone?: string): string {
   const local = new Date((Math.floor(at) + offsetMinutes * 60) * 1000)
+  const today = new Date((Math.floor(now) + offsetMinutes * 60) * 1000)
   const hh = String(local.getUTCHours()).padStart(2, '0')
   const mm = String(local.getUTCMinutes()).padStart(2, '0')
-  return at - now < 20 * 3600 ? `${hh}:${mm}` : `${DAYS[local.getUTCDay()]} ${hh}:${mm}`
+  const sameDay = local.getUTCFullYear() === today.getUTCFullYear() && local.getUTCMonth() === today.getUTCMonth()
+    && local.getUTCDate() === today.getUTCDate()
+  return `${sameDay ? '' : `${DAYS[local.getUTCDay()]} `}${hh}:${mm}${zone ? ` ${zone}` : ''}`
 }
 
 export function bar(percent: number, cells = 5): string {
@@ -251,21 +269,21 @@ function windowSegment(p: Payload, kind: 'five_hour' | 'seven_day', o: Options, 
   if (state?.kind === 'full') {
     const after = left !== undefined ? ` (resets in ${duration(left)})` : ''
     return { key: kind, priority, tone: 'bad',
-      forms: [`${name} limit reached${after}`, `${short} full` + (left !== undefined ? ` (${duration(left, true)})` : ''), `${short} full`] }
+      forms: [`${name} limit reached${after}`, `${short} full` + (left !== undefined ? ` (${duration(left)})` : ''), `${short} full`] }
   }
   if (state?.kind === 'hot') {
     // `!` and `~` carry the meaning where the line is drawn dim: a warning, and
     // a projection rather than an appointment. The fill is a duration and the
     // reset a clock time, so the two can't be read as the same kind of figure.
     const fills = Math.max(60, roundEta(state.eta, o.now) - o.now)
-    const back = resets !== undefined ? ` (back ${clock(resets, o.now, o.utcOffsetMinutes)})` : ''
+    const back = resets !== undefined ? ` (back ${clock(resets, o.now, o.utcOffsetMinutes, o.zone)})` : ''
     const soon = state.eta - o.now < 30 * 60
     return { key: kind, priority, tone: soon ? 'bad' : 'warn',
-      forms: [`${head} ! full in ~${duration(fills)}${back}`, `${short} ${pct(used)} ! full in ~${duration(fills, true)}`, `${short} ${pct(used)}!`] }
+      forms: [`${head} ! full in ~${duration(fills)}${back}`, `${short} ${pct(used)} ! full in ~${duration(fills)}`, `${short} ${pct(used)}!`] }
   }
   if (left === undefined) return { key: kind, priority, tone: pressure(used), forms: [head, `${short} ${pct(used)}`] }
   return { key: kind, priority, tone: pressure(used),
-    forms: [`${head} (resets in ${duration(left)})`, `${short} ${pct(used)} (${duration(left, true)})`, `${short} ${pct(used)}`] }
+    forms: [`${head} (resets in ${duration(left)})`, `${short} ${pct(used)} (${duration(left)})`, `${short} ${pct(used)}`] }
 }
 
 function spendSegment(p: Payload): Segment | undefined {
@@ -295,7 +313,7 @@ function cacheSegment(p: Payload, now: number): Segment | undefined {
     const left = expires - now
     const soon = left <= (cache.ttl === '1h' ? 300 : 60)
     return { key: 'cache', priority: 80, tone: soon ? 'warn' : 'ok',
-      forms: left < 60 ? ['cache warm (<1m left)', 'cache <1m'] : [`cache warm (~${duration(left)} left)`, `cache ~${duration(left, true)}`] }
+      forms: left < 60 ? ['cache warm (<1m left)', 'cache <1m'] : [`cache warm (~${duration(left)} left)`, `cache ~${duration(left)}`] }
   }
   const recache = num(cache.recache_tokens_if_cold)
   const why = cache.account_changed === true ? ', account changed' : ''
@@ -312,7 +330,7 @@ function costSegment(p: Payload): Segment | undefined {
 function timeSegment(p: Payload): Segment | undefined {
   const ms = num(p.cost?.total_duration_ms)
   if (ms === undefined || ms < 60_000) return undefined
-  return { key: 'time', priority: 45, tone: 'dim', forms: [`${duration(ms / 1000)} session`, duration(ms / 1000, true)] }
+  return { key: 'time', priority: 45, tone: 'dim', forms: [`${duration(ms / 1000)} session`, duration(ms / 1000)] }
 }
 
 function linesSegment(p: Payload): Segment | undefined {
@@ -409,20 +427,10 @@ export function fit(items: Segment[], room?: number): Placed[] {
   const deepest = Math.max(1, ...live.map(item => item.forms.length))
   let calmTier = 0
   let loudTier = 0
-  let spent = false
-  const reach = (item: Segment) => item.forms.length - 1 - (spent ? 0 : Math.max(0, item.spare ?? 0))
-  const forms = () => live.map(item => item.forms[Math.max(0, Math.min(loud(item) ? loudTier : calmTier, reach(item)))] ?? '')
+  const forms = () => live.map(item => item.forms[Math.min(loud(item) ? loudTier : calmTier, item.forms.length - 1)] ?? '')
   const dropLowest = () => {
     let lowest = 0
     live.forEach((item, index) => { if (item.priority < (live[lowest]?.priority ?? 0)) lowest = index })
-    // Spare forms go before a warning, or anything at least as important as their segment, does.
-    const guarded = live.filter(item => (item.spare ?? 0) > 0)
-    const going = live[lowest]
-    if (!spent && going && guarded.length && (loud(going) || guarded.some(item => item.priority <= going.priority))) {
-      spent = true
-      calmTier = Math.max(calmTier, deepest - 1)
-      return
-    }
     live.splice(lowest, 1)
   }
   while (width(forms().join(SEP)) > room) {
@@ -443,6 +451,147 @@ export function fitExtra(forms: string[], room?: number): string {
   const chosen = clean.find(form => room === undefined || width(form) <= room) ?? clean[clean.length - 1] ?? ''
   return room === undefined ? chosen : truncate(chosen, room)
 }
+
+/** The narrowest form of a segment the person needs at every width (`keep`); a warning counts as one at its last form. */
+export function keepOf(item: Segment): number | undefined {
+  if (item.keep !== undefined) return Math.max(0, Math.min(Math.floor(item.keep), item.forms.length - 1))
+  return item.tone === 'warn' || item.tone === 'bad' ? item.forms.length - 1 : undefined
+}
+
+type Choice = { item: Segment; at: number; index: number }
+
+/** First-fit of `order` (indexes into `chosen`) into `rows` rows of `room`: each choice's row, or undefined. */
+function firstFit(chosen: readonly Choice[], order: readonly number[], room: number, rows: number): number[] | undefined {
+  const used = Array<number>(rows).fill(0)
+  const count = Array<number>(rows).fill(0)
+  const rowOf = Array<number>(chosen.length).fill(0)
+  for (const i of order) {
+    const w = width(chosen[i]?.item.forms[chosen[i]?.at ?? 0] ?? '')
+    const row = used.findIndex((u, r) => ((count[r] ?? 0) ? u + SEP.length + w : w) <= room)
+    if (row < 0) return undefined
+    used[row] = (count[row] ?? 0) ? (used[row] ?? 0) + SEP.length + w : w
+    count[row] = (count[row] ?? 0) + 1
+    rowOf[i] = row
+  }
+  return rowOf
+}
+
+/**
+ * The row each choice lands on in `rows` rows of `room`, or undefined when they don't fit:
+ * first-fit in the line's order, else (with `reorder`, the last resort) the widest placed first,
+ * which packs a phone's rows tighter, with the rows then read in the order of their first segment.
+ */
+function pack(chosen: readonly Choice[], room: number, rows: number, reorder = false): number[] | undefined {
+  const inOrder = chosen.map((_, i) => i)
+  const found = firstFit(chosen, inOrder, room, rows)
+  if (found || rows < 2 || !reorder) return found
+  const widest = [...inOrder].sort((a, b) => width(chosen[b]?.item.forms[chosen[b]?.at ?? 0] ?? '') - width(chosen[a]?.item.forms[chosen[a]?.at ?? 0] ?? '') || a - b)
+  const packed = firstFit(chosen, widest, room, rows)
+  if (!packed) return undefined
+  const first = Array<number>(rows).fill(Infinity)
+  packed.forEach((row, i) => { first[row] = Math.min(first[row] ?? Infinity, i) })
+  const rank = [...first.keys()].sort((a, b) => (first[a] ?? 0) - (first[b] ?? 0))
+  return packed.map(row => rank.indexOf(row))
+}
+
+/**
+ * The forms for `rows` rows, or undefined when `strict` and the segments the
+ * person needs don't fit there at their `keep` forms. What isn't needed
+ * narrows, then goes, least important first; then what is needed narrows as
+ * far as its `keep` form, calm segments before warnings. Past that (not
+ * strict) it narrows further and, last, the least important goes.
+ */
+function settle(items: readonly Segment[], room: number, rows: number, strict: boolean, reorder: boolean): Choice[] | undefined {
+  // Each starts at its widest form that fits a row on its own.
+  const live: Choice[] = items.map((item, index) => {
+    const fits = item.forms.findIndex(form => width(form) <= room)
+    return { item, index, at: fits < 0 ? Math.max(0, item.forms.length - 1) : fits }
+  })
+  const dropped: Choice[] = []
+  const loud = (c: Choice) => c.item.tone === 'warn' || c.item.tone === 'bad'
+  const needed = (c: Choice) => keepOf(c.item) !== undefined
+  const last = (c: Choice) => Math.max(0, c.item.forms.length - 1)
+  const narrow = (group: Choice[], floor: (c: Choice) => number) => {
+    let moved = false
+    for (const c of group) if (c.at < floor(c)) { c.at += 1; moved = true }
+    return moved
+  }
+  const drop = (group: Choice[]) => {
+    const going = group.reduce((low, c) => (c.item.priority < low.item.priority ? c : low))
+    live.splice(live.indexOf(going), 1)
+    dropped.push(going)
+  }
+  while (live.length && !pack(live, room, rows, reorder)) {
+    const extra = live.filter(c => !needed(c))
+    const calm = live.filter(c => needed(c) && !loud(c))
+    const louder = live.filter(c => needed(c) && loud(c))
+    const kept = (c: Choice) => Math.max(c.at, keepOf(c.item) ?? last(c))
+    if (narrow(extra, last)) continue
+    if (extra.length) { drop(extra); continue }
+    if (narrow(calm, kept) || narrow(louder, kept)) continue
+    if (strict) return undefined
+    if (narrow(calm, last) || narrow(louder, last)) continue
+    if (live.length > 1) { drop(live); continue }
+    break
+  }
+  // With every needed figure whole, the room left goes back to them first, most important first,
+  // in their wider forms (whose clock it is, a word more); then what went comes back the same way.
+  // Rows that read in the line's order stay that way.
+  const inOrder = (cs: readonly Choice[]) => firstFit(cs, cs.map((_, i) => i), room, rows) !== undefined
+  const ordered = inOrder(live)
+  const fits = (cs: readonly Choice[]) => (ordered ? inOrder(cs) : pack(cs, room, rows, reorder) !== undefined)
+  for (const c of strict ? [...live].sort((a, b) => b.item.priority - a.item.priority) : []) {
+    while (c.at > 0 && width(c.item.forms[c.at - 1] ?? '') <= room) {
+      c.at -= 1
+      if (fits(live)) continue
+      c.at += 1
+      break
+    }
+  }
+  for (const c of strict ? [...dropped].sort((a, b) => b.item.priority - a.item.priority) : []) {
+    for (let at = 0; at < c.item.forms.length; at++) {
+      const trial = [...live, { ...c, at }].sort((a, b) => a.index - b.index)
+      if (width(c.item.forms[at] ?? '') <= room && fits(trial)) {
+        live.splice(0, live.length, ...trial)
+        break
+      }
+    }
+  }
+  return live
+}
+
+/**
+ * Line 2 over as many rows as it needs, up to `rows`, each `room` columns:
+ * one row is tried first, then two, and so on. On each try a segment the
+ * person needs (`keep`) narrows only as far as its keep form, and what isn't
+ * needed narrows and goes first, so a narrow screen gets another row of
+ * figures rather than lose one, or the hours of a time. Only with every row
+ * spent does a needed segment narrow further and, last, go. Each row keeps
+ * the line's order; one segment wider than a row is cut.
+ */
+export function fitRows(items: readonly Segment[], room: number, rows = 1): Placed[][] {
+  const most = Math.max(1, Math.floor(rows))
+  // In the line's order on as few rows as hold it; only with every row spent may rows pack out of order.
+  for (const reorder of [false, true]) {
+    for (let n = reorder ? most : 1; n <= most; n++) {
+      const plan = settle(items, room, n, true, reorder)
+      if (plan) return placeRows(plan, room, n)
+    }
+  }
+  return placeRows(settle(items, room, most, false, true) ?? [], room, most)
+}
+
+/** The rows, each in the line's order with what the person needs ahead of what they don't. */
+function placeRows(plan: Choice[], room: number, rows: number): Placed[][] {
+  const order = [...plan].sort((a, b) => a.index - b.index)
+  const rowOf = pack(order, room, rows, true) ?? order.map(() => 0)
+  const out: Choice[][] = Array.from({ length: rows }, () => [])
+  order.forEach((c, i) => out[rowOf[i] ?? 0]?.push(c))
+  const rank = (c: Choice) => (keepOf(c.item) === undefined ? 1 : 0)
+  return out.filter(row => row.length).map(row => [...row].sort((a, b) => rank(a) - rank(b) || a.index - b.index)
+    .map(c => ({ key: c.item.key, text: truncate(c.item.forms[c.at] ?? '', room), tone: c.item.tone })))
+}
+
 
 /** Every line, fitted. */
 export function render(p: Payload, o: Options & { columns?: number }): Placed[][] {
@@ -478,7 +627,7 @@ export function alerts(p: Payload, o: Options): Alert[] {
     const resets = num(window?.resets_at)
     if (state?.kind === 'hot' && resets !== undefined) {
       found.push({ id: `${kind}:${Math.floor(resets)}`, tone: 'warn',
-        text: `At this pace you'll hit your ${name} limit around ${clock(roundEta(state.eta, o.now), o.now, o.utcOffsetMinutes)}. It resets ${clock(resets, o.now, o.utcOffsetMinutes)}.` })
+        text: `At this pace you'll hit your ${name} limit around ${clock(roundEta(state.eta, o.now), o.now, o.utcOffsetMinutes)}. It resets ${clock(resets, o.now, o.utcOffsetMinutes, o.zone)}.` })
     }
   }
   return found

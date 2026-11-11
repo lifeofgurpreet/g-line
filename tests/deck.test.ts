@@ -1,7 +1,7 @@
 import { expect, test } from 'claude-code/testing'
 
 import { joined } from '../hooks/inline'
-import { deck, nextRoom } from '../hooks/deck'
+import { deck, nextRoom, nextRows } from '../hooks/deck'
 import { alerts } from '../hooks/core'
 import { STATUS_DESCRIPTION, statusJson } from '../hooks/glance'
 import { clean, parseFeed, tickerText, xLead } from '../hooks/pulse'
@@ -20,18 +20,25 @@ const O = { now: NOW, utcOffsetMinutes: 0 }
 test('the deck: gauges on line 1, the model with its effort, the cache and the timing on line 2', async () => {
   const d = deck(P, O, {})
   expect(joined(d.now)).toBe('ctx 4% · 5h 1% · wk 79%!')
-  expect(joined(d.next)).toMatch(/^Opus 5\.5 high · cache warm ~59m \(120k\) · 5h resets in 3h 48m · wk full in ~\d+d \d+h, back \S+ \S+$/)
+  // Each window says how long and, on the person's clock, when.
+  expect(joined(d.next)).toBe('Opus 5.5 high · cache warm ~59m (120k) · 5h resets in 3h 48m (12:41) · wk full in ~1d 8h, back Sat 08:53')
+  expect(d.more).toEqual([])
   expect(d.next.find(part => part.key === 'cache')?.tone).toBe('ok')
   expect(d.next.find(part => part.key === 'seven_day_next')?.tone).toBe('warn')
 })
 
-test('narrow: line 2 keeps the effort and the cache, and the warning keeps its projection', async () => {
-  const d = deck(P, O, { now: 30, next: nextRoom(80) }, [{ key: 'today', priority: 50, forms: ['today $4.63'] }])
+test('narrow: line 2 takes another row before a needed figure loses a part; on one row only, the warning keeps its projection', async () => {
+  const d = deck(P, O, { now: 30, next: nextRoom(80), rows: nextRows(80) }, [{ key: 'today', priority: 50, forms: ['today $4.63'] }])
   expect(joined(d.now)).toBe('ctx 4% · 5h 1% · wk 79%!')
-  // 0.9.1: the cache's size stays; the 5-hour reset goes first.
-  expect(joined(d.next)).toMatch(/^Opus high · cache ~59m 120k · wk full in ~\d+d\d+h · today \$4\.63$/)
+  expect([d.next, ...d.more].map(joined)).toEqual([
+    'Opus 5.5 high · cache warm ~59m (120k) · 5h resets in 3h 48m (12:41)',
+    'wk full in ~1d 8h, back Sat 08:53 · today $4.63',
+  ])
+  const phone = deck(P, O, { next: 42, rows: nextRows(47) })
+  expect([phone.next, ...phone.more].map(joined)).toEqual(['Opus 5.5 high · cache warm ~59m (120k)', '5h resets in 3h 48m (12:41)', 'wk full in ~1d 8h, back Sat 08:53'])
+  // Held to one row, the least important needed figure goes last, after every form has narrowed.
   const tight = deck(P, O, { next: 42 })
-  expect(joined(tight.next)).toMatch(/^Opus high · cache ~59m · wk full in ~/)
+  expect(joined(tight.next)).toBe('Opus high · cache ~59m · wk full ~1d 8h')
 })
 
 test('the cache goes amber in its last minutes and says what a cold one costs', async () => {
@@ -120,6 +127,8 @@ test('Fable 5.2 reads as itself on line 2, and as Fable with its effort where th
 test('a cold cache keeps its size while there is room, in its shortest form too', async () => {
   const cold = { ...P, prompt_cache: { warm: false, caching_observed: true, ttl: '1h' as const, expires_at: NOW - 60, recache_tokens_if_cold: 57_000 } }
   expect(deck(cold, O, {}).next.find(part => part.key === 'cache')?.text).toBe('cache cold, next turn rebuilds 57k')
-  const tight = deck(cold, O, { next: nextRoom(70) }, [{ key: 'others', priority: 40, forms: ['10 others'] }, { key: 'branch', priority: 30, forms: ['main*'] }])
-  expect(tight.next.find(part => part.key === 'cache')?.text).toMatch(/57k/)
+  const tight = deck(cold, O, { next: nextRoom(70), rows: nextRows(70) }, [{ key: 'others', priority: 40, forms: ['10 others'] }, { key: 'branch', priority: 30, forms: ['main*'] }])
+  expect(tight.next.find(part => part.key === 'cache')?.text).toBe('cache cold, next turn rebuilds 57k')
+  // What isn't needed goes first: the branch, not a figure.
+  expect([tight.next, ...tight.more].flat().map(part => part.key)).toEqual(['model', 'cache', 'others', 'five_hour_next', 'seven_day_next'])
 })

@@ -7,11 +7,14 @@ coding agents and for people.
 
 ## The rules the product stands on
 
-1. **Never above the prompt, never more than two lines** (plus Pulse's one row, only while
+1. **Never above the prompt; two lines where they fit** (plus Pulse's one row, only while
    the person has Pulse on). Line 1 is the tail of Claude Code's own hint line. Line 2 is one
-   row the mod draws directly under it (`lines: 2`, the default). With `lines: 1` it's the
-   hint line alone; with `lines: receipts`, no footer at all. Never draw in `AbovePrompt`,
-   and never open a pane the person didn't ask for.
+   row the mod draws directly under it (`lines: 2`, the default). Only where one row can't
+   hold the figures the person needs (`keep`: model, context, cache, each window's percent and
+   timing with its clock time, the account) does line 2 take more rows, up to three (four
+   under 50 columns), and Pulse's row gives way to them first (`nextRows`, `fitRows`). With
+   `lines: 1` it's the hint line alone; with `lines: receipts`, no footer at all. Never draw
+   in `AbovePrompt`, and never open a pane the person didn't ask for.
 2. **Write on the line where the thing happened.** A turn's facts go on that turn's closing
    line (`TurnDuration`). The running turn's facts go on the spinner. Agents and compaction
    go on line 2 (or the footer labels in the one-line layout).
@@ -68,7 +71,7 @@ coding agents and for people.
 | `.claude-plugin/marketplace.json` | Makes this repository its own marketplace: `/plugin install g-line --marketplace lifeofgurpreet/g-line` |
 | `hooks/hooks.json` | `{ "modules": ["./register.tsx"] }`, plus three command hooks that run beneath every hooks module: SessionStart (a resumed conversation's figures), PreCompact (keep-warm's deferral) and PostCompact (a compaction's note) |
 | `hooks/register.tsx` | The only file that touches `$`: config, events, drawing, the pane, commands, Pulse fetching, the `status` tool |
-| `hooks/core.ts` | Pure: segments, widths, fitting (`fit`), pace, alerts, model names |
+| `hooks/core.ts` | Pure: segments, widths, fitting (`fit`, and `fitRows` for line 2's rows), the one spelling of a span (`duration`) and of a clock time (`clock`), pace, alerts, model names |
 | `hooks/deck.ts` | Pure: the two-line layout (`lineNow`, `lineNext`, `deck`) |
 | `hooks/inline.ts` | Pure: the one-line layout, the hint's room, the shortened standing hints |
 | `hooks/extras.ts` | Pure: receipts (adaptive and fixed), agents, compaction forecast, the day ledger, the card, the coach |
@@ -107,10 +110,12 @@ enforces. The public docs are at code.claude.com/docs/en/plugins/mods/overview.
 ## Recipes
 
 **Add a figure to line 2.** Write a function returning a `Segment` (`key`, `priority`,
-`forms` widest first, an optional `tone`) in `hooks/deck.ts`, add it to `lineNext`, and add a
-case to `tests/deck.test.ts`. Tones colour it (`ok` green, `warn` amber, `bad` red, `accent`
-Claude orange); no tone draws it dim. A warning (`warn`/`bad`) gains priority and keeps its
-words longest.
+`forms` widest first, an optional `tone`, and `keep` when the person needs it at every width:
+the narrowest form that still says all of it) in `hooks/deck.ts`, add it to `lineNext`, and add
+a case to `tests/deck.test.ts` and a row to the width matrix in `tests/widths.test.ts`. Spans
+go through `duration` and times through `clock`, never hand-built. Tones colour it (`ok` green,
+`warn` amber, `bad` red, `accent` Claude orange); no tone draws it dim. A warning
+(`warn`/`bad`) gains priority and keeps its words longest.
 
 **Add a receipt event.** Record the fact on the live turn (`turnNow` in `register.tsx`), carry
 it into `Receipt` (`types/index.d.ts`, `receiptOf`), and add a rule to `receiptEvents` in

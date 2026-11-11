@@ -1,6 +1,6 @@
 import { expect, test } from 'claude-code/testing'
 
-import { alerts, duration, modelName, pace, plain, render, toastMs, tokens, utcLabel, zoneOffset } from '../hooks/core'
+import { alerts, clock, duration, modelName, pace, plain, render, toastMs, tokens, utcLabel, zoneOffset } from '../hooks/core'
 import type { Options, Payload } from '../hooks/core'
 import { CASES } from './cases'
 
@@ -25,7 +25,11 @@ test('every golden case renders as recorded (the Python fallback checks the same
 test('countdowns floor, token counts round', async () => {
   expect(duration(59)).toBe('<1m')
   expect(duration(3599)).toBe('59m')
-  expect(duration(90061, true)).toBe('1d1h')
+  expect(duration(90061)).toBe('1d 1h')
+  // One spelling at every width: the hours of a span are never run together or left out.
+  expect(duration(8 * 3600 + 45 * 60)).toBe('8h 45m')
+  expect(duration(3 * 3600)).toBe('3h')
+  expect(duration(4 * 86400 + 59 * 60)).toBe('4d')
   expect(tokens(84213)).toBe('84k')
   expect(tokens(1_000_000)).toBe('1M')
 })
@@ -87,4 +91,15 @@ test('a toast stays about as long as it takes to read: three seconds at least, n
   expect(toastMs('x'.repeat(400), 5000)).toBe(5000)
   // Wide characters count as one character each, not their UTF-16 halves.
   expect(toastMs('𝕏'.repeat(40), 15_000)).toBe(toastMs('x'.repeat(40), 15_000))
+})
+
+test('0.25.0: a clock time on another day names it, and says whose clock when that could be mistaken', async () => {
+  // Wednesday 23:50 at UTC+11.
+  const now = Date.UTC(2026, 10, 11, 12, 50) / 1000
+  expect(clock(now + 5 * 60, now, 660)).toBe('23:55')
+  // Eight hours on is tomorrow morning: never a bare 08:35 that reads as minutes away.
+  expect(clock(now + 8 * 3600 + 45 * 60, now, 660)).toBe('Thu 08:35')
+  expect(clock(now + 5 * 60, now, 660, 'UTC+11')).toBe('23:55 UTC+11')
+  // The same moment on a box in Berlin, in the box's zone: still Wednesday there (13:50 now), so no day, and another hour.
+  expect(clock(now + 8 * 3600 + 45 * 60, now, 60)).toBe('22:35')
 })

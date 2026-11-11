@@ -17,7 +17,7 @@ import { atom, read, update } from 'claude-code'
 import type { EngineInterface, Register } from 'claude-code'
 
 import type { AgentRow, Receipt, Snap, Totals } from '../types'
-import { SEP, alerts, clock, layoutKeys, modelName, pct, segments, str, toastMs, tokens, utcLabel, width, zoneOffset } from './core'
+import { SEP, alerts, clock, duration, layoutKeys, modelName, pct, segments, str, toastMs, tokens, utcLabel, width, zoneOffset } from './core'
 import type { Limit } from './roster'
 import { LIMITS_PREFIX, ROSTER_PREFIX, mergeLimits, parseUsage, othersSegment, rosterOf, rosterRow, staleRosterKeys } from './roster'
 import type { RosterEntry, RosterState } from './roster'
@@ -29,7 +29,7 @@ import {
 } from './extras'
 import type { ReceiptSpec } from './extras'
 import { MOD_KEYS, accountSegment, inline, joined, modesWidth, shownHint, tailRoom, withText } from './inline'
-import { deck, nextRoom } from './deck'
+import { deck, nextRoom, nextRows } from './deck'
 import { dashboardHtml } from './dashboard'
 import { STATUS_DESCRIPTION, STATUS_SCHEMA, STATUS_TOOL, statusJson } from './glance'
 import {
@@ -485,6 +485,16 @@ async function nowSeconds($: EngineInterface): Promise<number> {
 /** Minutes east of UTC at `ms` where the person is: their `tz`, else the machine's zone. */
 const offsetAt = (ms: number) => zoneOffset(config.tz, ms) ?? -new Date(ms).getTimezoneOffset()
 
+/**
+ * Whose clock g-line's times are on, where that could be mistaken: `UTC+11`
+ * when the person's `tz` isn't this machine's zone (a box in Europe read from
+ * the Pacific), so a time can't be taken for the box's own. Nothing otherwise.
+ */
+const zoneAt = (ms: number) => {
+  const mine = config.tz ? zoneOffset(config.tz, ms) : undefined
+  return mine !== undefined && mine !== -new Date(ms).getTimezoneOffset() ? utcLabel(mine) : undefined
+}
+
 /** The last usage readings sessions on this machine shared for an account. */
 let shared: { account: string; limits: unknown } | undefined
 
@@ -851,8 +861,9 @@ async function refreshAccount($: EngineInterface): Promise<void> {
 }
 
 function optionsAt(seconds: number): Options {
+  const zone = zoneAt(seconds * 1000)
   return { now: seconds, preset: config.preset, segments: config.segments, icons: config.icons,
-    utcOffsetMinutes: offsetAt(seconds * 1000) }
+    utcOffsetMinutes: offsetAt(seconds * 1000), ...(zone ? { zone } : {}) }
 }
 
 /** A heads-up that reaches you in another app, or a toast when no channel takes it. */
@@ -1261,11 +1272,10 @@ function footerLabels(extras: Extras): string[] {
 
 type Row = { key: string; text: string; tone?: Tone; bold?: boolean }
 
+/** A span for the pane: seconds under a minute, then the line's own spelling (`8h 45m`, `1d 2h`). */
 function ago(ms: number): string {
   const s = Math.floor(ms / 1000)
-  if (s < 60) return `${s}s`
-  if (s < 3600) return `${Math.floor(s / 60)}m`
-  return `${Math.floor(s / 3600)}h ${Math.floor((s % 3600) / 60)}m`
+  return s < 60 ? `${Math.max(0, s)}s` : duration(s)
 }
 
 const bar = (value: number, cells = 10) => {
@@ -1850,7 +1860,7 @@ async function guardNow($: EngineInterface): Promise<Verdict> {
   const change = changeText(before, verdict)
   if (change && !(await read($, hidden))) {
     const paused = await pausedFor($)
-    const note = offHere ? ' · off in this session' : paused > 0 ? ` · paused ${Math.ceil(paused / 60)}m more` : simulation ? ' · simulated' : ''
+    const note = offHere ? ' · off in this session' : paused > 0 ? ` · paused ${duration(paused)} more` : simulation ? ' · simulated' : ''
     tell($, `${change}${note}`, 12_000)
   }
   return verdict
@@ -1870,7 +1880,8 @@ async function guardSegment($: EngineInterface): Promise<Segment | undefined> {
   if (!words) return undefined
   if (simulation) words.forms = words.forms.map(form => `${form} (sim)`)
   const forms = effortWaits && verdict.effort && !verdict.stop ? words.forms.map(f => f.replace(`effort ${verdict.effort}`, `effort ${verdict.effort} when cache cold`)) : words.forms
-  return { key: 'guard', priority: words.tone === 'bad' ? 92 : 60, forms, tone: words.tone }
+  return { key: 'guard', priority: words.tone === 'bad' ? 92 : 60, forms, tone: words.tone,
+    ...(words.tone === 'bad' && forms.length > 1 ? { keep: 1 } : {}) }
 }
 
 /**
@@ -1923,10 +1934,10 @@ async function guardPrompt($: EngineInterface, e: { origin: { kind: string }; co
   // A loop's or schedule's prompt held again in the same hold: one line, not the whole story.
   if (!person && autoSaid === epoch) {
     const lift = liftsAt(v.stop, at, offsetAt(at))
-    return `g-line: still held${lift !== undefined ? `, lifts about ${clock(Math.ceil(lift / 1000), at / 1000, offsetAt(at))}` : ''}.`
+    return `g-line: still held${lift !== undefined ? `, lifts about ${clock(Math.ceil(lift / 1000), at / 1000, offsetAt(at), zoneAt(at))}` : ''}.`
   }
   if (!person) autoSaid = epoch
-  return stopText(v.stop, at, offsetAt(at), simulation !== undefined, { account, typed: person, queued: plan })
+  return stopText(v.stop, at, offsetAt(at), simulation !== undefined, { account, typed: person, queued: plan, zone: zoneAt(at) })
 }
 
 /** The hold a loop's or schedule's prompt was last told about in full. */
@@ -3009,23 +3020,25 @@ export const register: Register = (on, options) => {
       // mode label in a column of its own, which would squeeze line 2 into
       // the hint's column.
       const d = deck(payload(s, seconds, ttl, idle), optionsAt(seconds),
-        { now: tailRoom(columns, e.props.hint), next: nextRoom(columns) }, extra)
+        { now: tailRoom(columns, e.props.hint), next: nextRoom(columns), rows: nextRows(columns) }, extra)
       const engine = await next({ ...e, props: withText(e.props, joined(d.now), false) })
-      const pulse = await pulseLine($, e, columns)
-      if (!d.next.length && !pulse) return engine
+      // On a narrow screen the figures take Pulse's row first: the news goes before a quota does.
+      const pulse = d.more.length ? null : await pulseLine($, e, columns)
+      const rows = [d.next, ...d.more].filter(row => row.length)
+      if (!rows.length && !pulse) return engine
       const { Box, Text } = $.ui.resolve(e)
       return (
         <Box flexDirection="column">
           {engine}
-          {d.next.length ? (
-            <Box flexDirection="row">
-              {d.next.map((part, index) => [
+          {rows.map((row, at) => (
+            <Box key={`r${at}`} flexDirection="row">
+              {row.map((part, index) => [
                 index ? <Text key={`s${index}`} dimColor>{' · '}</Text> : null,
                 <Text key={`p${index}`} wrap="truncate-end" dimColor={!part.tone || part.tone === 'dim'}
                   bold={part.tone === 'bad'} color={part.tone ? COLORS[part.tone] : undefined}>{part.text}</Text>,
               ])}
             </Box>
-          ) : null}
+          ))}
           {pulse}
         </Box>
       )

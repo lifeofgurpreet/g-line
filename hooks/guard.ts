@@ -14,6 +14,21 @@
 // Pure: the mod hands in the figures, these decide. Missing figures decide
 // nothing: no reading, no account, an unknown time zone, and the rule waits.
 
+/**
+ * A span in g-line's one spelling (`4d 10h`, `8h 45m`, `7m`, `<1m`), floored: core's `duration`,
+ * repeated so this file imports nothing and can be copied whole. A test keeps the two equal.
+ */
+export function span(seconds: number): string {
+  const s = Math.floor(seconds)
+  if (s < 60) return '<1m'
+  const d = Math.floor(s / 86_400)
+  const h = Math.floor((s % 86_400) / 3600)
+  const m = Math.floor((s % 3600) / 60)
+  if (d) return h ? `${d}d ${h}h` : `${d}d`
+  if (h) return m ? `${h}h ${m}m` : `${h}h`
+  return `${m}m`
+}
+
 /** How far above its threshold a window must climb before an active rule lets go: readings are coarse. */
 export const CLEAR_MARGIN = 2
 
@@ -804,18 +819,20 @@ export const AGENT_TYPE_MODELS: Record<string, string> = {
 const pct = (n: number) => `${Math.max(0, Math.round(n))}%`
 const NAMES: Record<WindowName, string> = { '5h': '5-hour', week: 'weekly' }
 
-/** When a window resets, in the caller's zone: `08:20, in 1h 5m`, or `Tue 13:00, in 3d 4h`. */
-function resetWords(resetsAt: number | undefined, nowMs: number, offsetMinutes: number): string {
+/**
+ * When a window resets, in the caller's zone: `08:20, in 1h 5m`, or `Tue 13:00, in 3d 4h`; a
+ * time on another day names it. `zone` says whose clock that is where it could be mistaken
+ * (`08:20 UTC+11, in 1h 5m`). The span is line 2's own spelling.
+ */
+function resetWords(resetsAt: number | undefined, nowMs: number, offsetMinutes: number, zone?: string): string {
   if (resetsAt === undefined) return ''
   const left = Math.max(0, Math.round(resetsAt - nowMs / 1000))
-  const d = Math.floor(left / 86_400)
-  const h = Math.floor((left % 86_400) / 3600)
-  const m = Math.floor((left % 3600) / 60)
   const at = new Date(resetsAt * 1000 + offsetMinutes * 60_000)
+  const today = new Date(nowMs + offsetMinutes * 60_000)
   const hm = `${String(at.getUTCHours()).padStart(2, '0')}:${String(at.getUTCMinutes()).padStart(2, '0')}`
-  const day = left >= 20 * 3600 ? `${(DAYS[at.getUTCDay()] ?? '').replace(/^./, c => c.toUpperCase())} ` : ''
-  const span = d ? `${d}d ${h}h` : h ? `${h}h ${m}m` : `${m}m`
-  return `${day}${hm}, in ${span}`
+  const sameDay = at.getUTCFullYear() === today.getUTCFullYear() && at.getUTCMonth() === today.getUTCMonth() && at.getUTCDate() === today.getUTCDate()
+  const day = sameDay ? '' : `${(DAYS[at.getUTCDay()] ?? '').replace(/^./, c => c.toUpperCase())} `
+  return `${day}${hm}${zone ? ` ${zone}` : ''}, in ${left < 60 ? 'under a minute' : span(left)}`
 }
 
 /** A rule's hours in words: `Mon-Fri 04:00-17:00 Kuala Lumpur time`. */
@@ -824,9 +841,9 @@ export function hoursWords(rule: Rule): string {
   const days = [...rule.hours.days].sort((a, b) => a - b)
   const name = (d: number) => (DAYS[d] ?? '').replace(/^./, c => c.toUpperCase())
   const run = days.length > 2 && days.every((d, i) => i === 0 || d === (days[i - 1] ?? 0) + 1)
-  const span = days.length === 7 ? 'Every day' : run ? `${name(days[0] ?? 0)}-${name(days[days.length - 1] ?? 0)}` : days.map(name).join(', ')
+  const week = days.length === 7 ? 'Every day' : run ? `${name(days[0] ?? 0)}-${name(days[days.length - 1] ?? 0)}` : days.map(name).join(', ')
   const zone = rule.tz ? ` ${(rule.tz.split('/').pop() ?? rule.tz).replace(/_/g, ' ')} time` : ''
-  return `${span} ${hhmm(rule.hours.from)}-${hhmm(rule.hours.to)}${zone}`
+  return `${week} ${hhmm(rule.hours.from)}-${hhmm(rule.hours.to)}${zone}`
 }
 
 /** The reason a stop is in force, in a sentence or two, without the way past. */
@@ -852,14 +869,14 @@ function reasonText(stop: NonNullable<Verdict['stop']>, simulated: boolean, acco
 
 /** Why a prompt was held, when the window resets, and the way past: Enter again for a prompt the person typed. */
 export function stopText(stop: NonNullable<Verdict['stop']>, nowMs: number, offsetMinutes: number, simulated = false,
-  o: { account?: string | null; typed?: boolean; queued?: { at?: string; cache?: 'warm' | 'bridge' | 'cold' } } = {}): string {
+  o: { account?: string | null; typed?: boolean; queued?: { at?: string; cache?: 'warm' | 'bridge' | 'cold' }; zone?: string } = {}): string {
   // When it lets go on its own: a pace step's lift or the end of the rule's hours, else the reset.
   const lift = liftsAt(stop, nowMs, offsetMinutes)
   if (stop.rule.off) {
     const back = lift !== undefined ? ` It comes back on ${dateWords(lift, offsetMinutes)}.` : ' It stays off until the switch is turned back on.'
     return `g-line held this: ${reasonText(stop, simulated, o.account)}${back}${o.typed === false ? '' : ' Enter again sends it anyway.'}`
   }
-  const when = resetWords(lift !== undefined ? Math.ceil(lift / 1000) : stop.resetsAt, nowMs, offsetMinutes)
+  const when = resetWords(lift !== undefined ? Math.ceil(lift / 1000) : stop.resetsAt, nowMs, offsetMinutes, o.zone)
   const cache = o.queued?.cache === 'bridge' ? ', cache kept warm' : o.queued?.cache === 'cold' ? '; the cache will be cold by then' : ''
   const past = o.typed === false
     ? ''
@@ -993,8 +1010,7 @@ export function changeText(before: Verdict | undefined, after: Verdict): string 
 /** Line 2's guard segment words, widest first: what's in force, or that it's paused. */
 export function guardForms(verdict: Verdict, pausedFor?: number, until?: string, queued = false): { forms: string[]; tone: 'bad' | 'warn' | 'dim' } | undefined {
   if (pausedFor !== undefined && pausedFor > 0 && verdict.rules.length) {
-    const m = Math.ceil(pausedFor / 60)
-    return { forms: [`guard paused ${m}m`, 'guard paused'], tone: 'dim' }
+    return { forms: [`guard paused ${span(pausedFor)}`, 'guard paused'], tone: 'dim' }
   }
   if (verdict.stop?.rule.off) {
     const till = until ? ` till ${until}` : ''

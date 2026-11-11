@@ -3,8 +3,9 @@ import { expect, test } from 'claude-code/testing'
 import {
   KEEP_WARM_DEFAULTS, accountIdentity, accountKey, agentModel, cappedEffort, changeText, effortKeepsCache, bridgeDue, endText, evaluate, groupOf, hoursWords, liftsAt, guardForms, inHours, leaseFree,
   fiveHourLeftOf, localTime, parseGuard, parseHours, readBack, ruleText, seconds, simulated, stopText, tokenCount, WARM_MISS, warmDue, warmForms,
-  automaticTtl, cacheTtl, writtenTtl, compactDue, idleCompactionDue, IDLE_COMPACTION_AT, whyLines,
+  automaticTtl, cacheTtl, writtenTtl, compactDue, idleCompactionDue, IDLE_COMPACTION_AT, whyLines, span,
 } from '../hooks/guard'
+import { duration } from '../hooks/core'
 import type { Facts, WarmFacts } from '../hooks/guard'
 
 // Rules like the README's example, with a neutral shared account.
@@ -114,7 +115,7 @@ test('0.8.2: a rule for every account but yours, on the weekly window as well as
   expect(evaluate(g, facts(80, { ...shared, week: 8, now: sat })).stop?.rule.id).toBe('r1')
   expect(evaluate(g, facts(80, { account: 'me@example.com', week: 8, now: sat })).stop).toBeUndefined()
   expect(stopText(evaluate(g, facts(80, { ...shared, week: 8 })).stop!, TUE_10_KL, 480, false, { account: shared.account }))
-    .toBe('g-line held this: team@example.com has 8% of its weekly window left; g-line keeps the last 10% for the team. Lifts at Sat 10:00, in 4d 0h. Enter again sends it anyway.')
+    .toBe('g-line held this: team@example.com has 8% of its weekly window left; g-line keeps the last 10% for the team. Lifts at Sat 10:00, in 4d. Enter again sends it anyway.')
   expect(ruleText(g.rules[1]!)).toBe('at 10% of week left, unless it resets within 1h, on accounts except "me@": stop new prompts')
   expect(parseGuard({ rules: [{ left: 10, stop: true, except_accounts: [] }] }).errors.length).toBe(1)
 })
@@ -130,7 +131,7 @@ test('0.9.0: end_turn goes with a stop, is said in the rule, and marks the verdi
   expect(evaluate(g, facts(9, { account: 'me@example.com' })).end).toBeUndefined()
   // A plain stop never ends a turn.
   expect(evaluate(RULES, facts(4)).end).toBeUndefined()
-  expect(endText(v.end!, TUE_10_KL, 480)).toBe('g-line ended this turn before its next request: this account has 9% of its 5-hour window left; g-line keeps the last 10% for the team. It resets at 13:00, in 3h 0m. To carry on anyway, type "continue" and press Enter twice.')
+  expect(endText(v.end!, TUE_10_KL, 480)).toBe('g-line ended this turn before its next request: this account has 9% of its 5-hour window left; g-line keeps the last 10% for the team. It resets at 13:00, in 3h. To carry on anyway, type "continue" and press Enter twice.')
 })
 
 test('0.9.1: account groups: an account is in the first group that names it, or "other"; rules name groups', () => {
@@ -156,10 +157,10 @@ test('0.9.1: account groups: an account is in the first group that names it, or 
   const sam = evaluate(g, facts(35, { account: 'account sam@example.com (via my-accounts)' }))
   expect([sam.stop?.rule.id, sam.stop?.group?.name]).toEqual(['r1', 'people'])
   expect(stopText(sam.stop!, TUE_10_KL, 480, false, { account: 'account sam@example.com (via my-accounts)' }))
-    .toBe('g-line held this: sam@example.com has 35% of its 5-hour window left; g-line keeps the last 40% for its owner. Lifts at 13:00, in 3h 0m. Enter again sends it anyway.')
+    .toBe('g-line held this: sam@example.com has 35% of its 5-hour window left; g-line keeps the last 40% for its owner. Lifts at 13:00, in 3h. Enter again sends it anyway.')
   const team = evaluate(g, facts(9, { account: 'ops@example.com' }))
   expect(stopText(team.stop!, TUE_10_KL, 480, false, { account: 'ops@example.com', typed: false }))
-    .toBe('g-line held this: ops@example.com has 9% of its 5-hour window left; g-line keeps the last 10% for the team. Lifts at 13:00, in 3h 0m.')
+    .toBe('g-line held this: ops@example.com has 9% of its 5-hour window left; g-line keeps the last 10% for the team. Lifts at 13:00, in 3h.')
   expect(guardForms(team, 0, '13:00')?.forms).toEqual(['guard: team reserve, 9% 5h left till 13:00', 'team reserve till 13:00', 'team reserve'])
   expect(evaluate(g, facts(9, { account: 'me@example.com' })).stop).toBeUndefined()
   expect(evaluate(g, facts(12, { account: 'stranger@example.com' })).stop?.group?.name).toBe('other')
@@ -201,7 +202,7 @@ test('0.11.0: when a stop lets go, and when a queued prompt needs its cache kept
   expect(bridgeDue({ ...base, prefix: 5_000 })).toBe(false)
   expect(bridgeDue({ ...base, expiresAt: undefined })).toBe(false)
   expect(stopText(plainRule, TUE_10_KL, 480, false, { queued: { at: '12:00', cache: 'bridge' } }))
-    .toBe('g-line held this: 9% of the 5-hour window left, at or under your 10% stop. Lifts at 12:00, in 2h 0m. Queued for about 12:00, cache kept warm; Enter again sends it now.')
+    .toBe('g-line held this: 9% of the 5-hour window left, at or under your 10% stop. Lifts at 12:00, in 2h. Queued for about 12:00, cache kept warm; Enter again sends it now.')
   expect(parseGuard({ queue: true }).queue).toBe(true)
   expect(parseGuard({}).queue).toBeUndefined()
 })
@@ -263,7 +264,7 @@ test('a subagent moves only to a cheaper model: never a fork, never up', () => {
 test('what the guard says: the stop, what started and ended, line 2', () => {
   const stop = evaluate(RULES, facts(4))
   const text = stopText(stop.stop!, TUE_10_KL, 8 * 60)
-  expect(text).toBe('g-line held this: 4% of the 5-hour window left, at or under your 5% stop. Lifts at 13:00, in 3h 0m. Enter again sends it anyway.')
+  expect(text).toBe('g-line held this: 4% of the 5-hour window left, at or under your 5% stop. Lifts at 13:00, in 3h. Enter again sends it anyway.')
   expect(changeText(undefined, evaluate(RULES, facts(20)))).toBe('◆ guard · effort medium')
   expect(changeText(evaluate(RULES, facts(20)), stop)).toBe('◆ guard · held: 4% of 5h left · agents on sonnet')
   expect(changeText(stop, evaluate(RULES, facts(90, { resetsIn: 5 * HOUR }), stop.active)))
@@ -273,6 +274,11 @@ test('what the guard says: the stop, what started and ended, line 2', () => {
   expect(guardForms(stop, 0, '13:00')?.forms).toEqual(['guard: held, 4% 5h left till 13:00', 'guard: held till 13:00', 'guard: held'])
   expect(guardForms(evaluate(RULES, facts(9)))).toEqual({ forms: ['guard: effort medium, agents sonnet', 'guard on'], tone: 'warn' })
   expect(guardForms(stop, 1800)).toEqual({ forms: ['guard paused 30m', 'guard paused'], tone: 'dim' })
+  // A long pause keeps its hours, in line 2's spelling.
+  expect(guardForms(stop, 8 * HOUR + 45 * 60)?.forms[0]).toBe('guard paused 8h 45m')
+  // On a machine in another zone the refusal says whose clock the lift is on.
+  expect(stopText(stop.stop!, TUE_10_KL, 8 * 60, false, { zone: 'UTC+8' }))
+    .toBe('g-line held this: 4% of the 5-hour window left, at or under your 5% stop. Lifts at 13:00 UTC+8, in 3h. Enter again sends it anyway.')
   expect(guardForms(evaluate(RULES, facts(50)))).toBeUndefined()
   expect(ruleText(RULES.rules[3]!)).toBe('at 10% of 5h left, on accounts "team@", 09:00-17:00 Mon,Tue,Wed,Thu,Fri (Asia/Kuala_Lumpur): stop new prompts')
   expect(ruleText(RULES.rules[2]!)).toBe('at 5% of 5h left, unless it resets within 1h: stop new prompts')
@@ -498,4 +504,10 @@ test('off: a switched-off account is neither re-read nor compacted', () => {
   expect(off).toEqual({ due: false, why: 'this account is switched off', code: 'switched-off' })
   expect(WARM_MISS['switched-off']).toBe('account switched off')
   expect(compactDue({ ...k!, compact: true }, off.code, 46 * 60, 0, 60)).toBe(false)
+})
+
+test('0.25.0: the guard spells a span exactly as line 2 does (guard.ts imports nothing, so it keeps its own copy)', () => {
+  for (const seconds of [0, 59, 60, 61, 3599, 3600, 3660, 8 * 3600 + 45 * 60, 86_399, 86_400, 90_061, 4 * 86_400 + 10 * 3600 + 5, 9 * 86_400]) {
+    expect(span(seconds)).toBe(duration(seconds))
+  }
 })

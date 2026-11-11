@@ -120,7 +120,7 @@ test('the account folds in last, as just the address, and drops before the limit
   }
   const o = { now: NOW }
   const wide = joined(inline(p, o, 'account space@example.com (via my-accounts)', tailRoom(150, '(shift+tab to cycle)')))
-  expect(wide).toBe('Opus 5.5 high · ctx 5% · 5h 1% (4h52m) · wk 40% (3d13h) · cache ~59m · space@example.com')
+  expect(wide).toBe('Opus 5.5 high · ctx 5% · 5h 1% (4h 52m) · wk 40% (3d 13h) · cache ~59m · space@example.com')
   const tight = joined(inline(p, o, 'account space@example.com (via my-accounts)', 50))
   expect(tight.length).toBeLessThanOrEqual(50)
   expect(tight).not.toMatch(/space@/)

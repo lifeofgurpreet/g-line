@@ -5,6 +5,7 @@
 //
 // Pure: the mod hands in the store's entries, these decide what they say.
 
+import { duration } from './core'
 import type { Segment } from './core'
 
 export type RosterState = 'working' | 'waiting' | 'idle'
@@ -70,10 +71,8 @@ export function othersSegment(others: readonly RosterEntry[]): Segment | undefin
   return { key: 'others', priority: 30, forms: [n] }
 }
 
-const ago = (ms: number) => {
-  const m = Math.floor(ms / 60_000)
-  return m < 1 ? '<1m' : m < 60 ? `${m}m` : `${Math.floor(m / 60)}h ${m % 60}m`
-}
+/** How long, in line 2's spelling: `8h 45m`, `1d 2h`. */
+const ago = (ms: number) => duration(ms / 1000)
 
 /** One pane row per session: what it's doing and for how long, its context, its cache, its model and effort, and account. */
 export function rosterRow(e: RosterEntry, nowMs: number, mine: boolean): string {

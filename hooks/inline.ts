@@ -30,7 +30,8 @@ export function accountSegment(line?: string | null): Segment | undefined {
   const text = line?.trim()
   if (!text) return undefined
   const short = text.replace(/^account\s+/i, '').replace(/\s*\([^()]*\)$/, '').trim()
-  return { key: 'account', priority: 65, tone: 'dim', forms: [short || text] }
+  // Whose figures these are: line 2 keeps it at every width, on another row if need be.
+  return { key: 'account', priority: 76, tone: 'dim', keep: 0, forms: [short || text] }
 }
 
 /**

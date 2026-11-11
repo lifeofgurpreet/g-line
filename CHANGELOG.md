@@ -1,5 +1,27 @@
 # Changelog
 
+## 0.25.0 (2026-11-11): every figure whole at every width, and times that say whose clock
+
+- **A span keeps its hours.** Every span g-line shows is spelled one way at every width:
+  `8h 45m`, `2d 9h`, `45m`. The narrow forms used to run them together (`8h45m`, `2d9h`) and
+  the pane and the guard each had their own spelling (`in 3h 0m`, `26h 5m`, `paused 525m`); now
+  it's `in 3h`, `1d 2h`, `paused 8h 45m` everywhere.
+- **When each window resets, on your clock.** Line 2 now gives the time as well as how long:
+  `5h resets in 8h 45m (21:45)`, `wk resets in 2d 9h (Fri 22:00)`. A time on another day always
+  names the day, so `08:45` at 23:50 can't be read as minutes away.
+- **Whose clock it is.** With `tz` set to a zone the machine isn't in (a box in Europe read from
+  the Pacific), the first time on line 2 says so, `(21:45 UTC+11)`, and so do the guard's
+  refusals (`Lifts at 21:45 UTC+11, in 8h 45m.`). On a machine in your own zone nothing is added.
+- **Phones and narrow panes keep every figure.** The model and effort, the context, the cache,
+  each window's percent and when it resets or fills, and the account stay whole at every width.
+  What isn't needed (agents, other sessions, the branch, today's spend) goes first; then the
+  figures shorten by a word, never losing an hour or a clock time. Where one row can't hold
+  them, line 2 takes another, up to three (four under 50 columns), and Pulse's headline gives
+  way first. A gauge that line 1 has no room for joins its window's timing:
+  `wk 88%! full in ~18h, back Thu 21:00`. Tested at 36, 44, 56, 72, 90, 120, 160 and 220 columns.
+- **The account is a figure, not an extra.** It now stays at every width and leads the extras
+  on its row, so you can tell which account a reading belongs to on a narrow screen.
+
 ## 0.24.0 (2026-11-10): line 2 names the model `/model` just chose
 
 - **No more stale model after `/model`.** Line 2 named the model of the last turn, so right after

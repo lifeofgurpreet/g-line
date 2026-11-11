@@ -81,14 +81,24 @@ Line 2 is g-line's own row, in colour:
 | --- | --- | --- |
 | model | `Opus 5.5 high` | The model and the effort of the last request (`fast` when fast mode is on) |
 | cache | `cache ~59m`, `cache cold` | How long the prompt cache stays warm: green, then amber in its last minutes. `~` because it's an estimate from when the last request ran and the cache's lifetime. After a compaction it shows the summary the next turn will write instead |
-| timing | `wk full in ~1d 4h, back Fri 16:00` | How long until a window on pace to run out fills (a projection, so rounded) and when it comes back; otherwise when it resets |
+| timing | `5h resets in 8h 45m (21:45)`, `wk full in ~1d 4h, back Fri 16:00` | When each window resets: how long, and the time on your clock. A window on pace to run out says how long until it fills (a projection, so rounded) and when it comes back. A span always keeps its hours: `8h 45m`, never `45m` |
+| account | `you@example.com` | Only with an `account_command`: whose figures these are |
 | agents, compaction | `agents 2 running`, `compacts in ~3 turns` | While subagents work; when a compaction is near |
 | others | `2 others · 1 waiting` | Other g-line sessions on this machine, and how many are waiting on you for a permission answer. `roster: false` turns it off |
 | guard | `guard: effort medium`, `kept warm 2× · $0.08` | Only with your [guard](docs/guard.md) rules: what they're doing now |
 
-When the terminal narrows, line 2 shortens first (`Opus 5.5` to `Opus`, the effort kept), and
-what line 1 can't fit moves down rather than disappearing. A healthy window's reset time goes
-first; a warning keeps its projection the longest.
+When the terminal narrows, what line 1 can't fit moves down rather than disappearing, joined to
+its window's timing (`wk 88%! full in ~18h, back Thu 21:00`). The figures you need at every
+width are the model and effort, the context, the cache, each window's percent and when it
+resets or fills (how long and when), and the account. What isn't (agents, other sessions, the
+branch, today's spend) goes first, least important first; then the figures shorten by a word
+(`Opus 5.5` to `Opus`, `resets in` to `resets`), never losing the hours of a span or the clock
+time. Where one row can't hold them, line 2 takes another, up to three (four under 50 columns,
+a phone held upright), and Pulse's headline row gives way first. Only past that does a figure
+lose its clock time.
+
+With `tz` set to a zone the machine isn't in (a box in another country, read over SSH), the
+first clock time on line 2 says whose it is: `(21:45 UTC+11)`.
 
 ![Line 1 and line 2 at 100 columns](docs/line-100.png)
 ![At 80 columns](docs/line-80.png)

@@ -46,7 +46,7 @@ the same setting.
 | `export_state` | `true` writes the figures as JSON under `~/.cache/g-line/state/` for tmux and other bars | `false` |
 | `roster` | `true` keeps a heartbeat of each g-line session on this machine in Claude Code's plugin store: whether it's working, waiting on you or idle, its context, cache and model, and the `account_command` line when you set one. Line 2 counts the others, and the pane and the dashboard list them. `false` writes and shows nothing | `true` |
 | `guard` | Your rules for a low usage window, and keep-warm (see [Guard](guard.md)). With none, g-line changes nothing | none |
-| `tz` | Your time zone (an IANA name such as `Europe/London`) for every time g-line shows: resets, projections, receipts, the guard's words. Useful on a machine in another zone, over SSH. `auto` is the machine's own. The pane says which zone the times are in | `auto` |
+| `tz` | Your time zone (an IANA name such as `Europe/London`) for every time g-line shows: resets, projections, receipts, the guard's words. Useful on a machine in another zone, over SSH: there the first time on line 2, and the guard's refusals, add whose clock it is (`21:45 UTC+11`). `auto` is the machine's own. The pane says which zone the times are in | `auto` |
 | `account_command` | A command of yours, as a list of words, whose first line names the account (see below). Off unless set | none |
 | `usage_command` | A command of yours that prints the account's usage (see below). Only with an `account_command` | none |
 | `reset_threshold`, `long_turn_seconds`, `cache_ttl`, `icons`, `segments`, `preset` | See `hooks/settings.ts` | |

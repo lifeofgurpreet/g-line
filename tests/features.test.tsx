@@ -1141,7 +1141,7 @@ test('0.9.0: a stop with end_turn ends a running turn before its next request on
   expect(ended.toolUses).toEqual([])
   expect(seen.efforts).toEqual(['high'])
   expect(aborted).toEqual(['t1'])
-  expect(w.toasts.some(t => /^g-line ended this turn before its next request: 8% of the 5-hour window left, at or under your 10% stop\. It resets at \d\d:\d\d, in 2h 0m\. To carry on anyway, type "continue" and press Enter twice\.$/.test(t))).toBe(true)
+  expect(w.toasts.some(t => /^g-line ended this turn before its next request: 8% of the 5-hour window left, at or under your 10% stop\. It resets at (?:\w{3} )?\d\d:\d\d, in 2h\. To carry on anyway, type "continue" and press Enter twice\.$/.test(t))).toBe(true)
   await $.turn.complete({ answer: '', durationMs: 64_000, isAborted: true, turnId: 't1', reason: 'aborted',
     usage: { ...USAGE_ARGS, model: 'claude-opus-5-5' } } as never)
   await $.session.append({ message: { type: 'system', name: 'turn_duration', content: [] }, door: 'notice',
@@ -2172,7 +2172,7 @@ test('without guard.resume a limit stop is only said, with the reset on your clo
   await $.command.run({ command: 'g-line', args: '' } as never)
   const pane = await $.ui.mount({ plugin: 'g-line', surface: 'terminal', component: 'Pane', requestId: 'g-line',
     props: { bodyColumns: 140 } as never, viewport: { columns: 160, rows: 80 } })
-  expect(await pane.find({ type: 'Text', text: /^5-hour 30% used, resets \d\d:\d\d \(in (1h 59m|2h 0m)\)$/ })).toBeDefined()
+  expect(await pane.find({ type: 'Text', text: /^5-hour 30% used, resets (?:\w{3} )?\d\d:\d\d \(in (1h 59m|2h)\)$/ })).toBeDefined()
   await pane.unmount()
 })
 
@@ -2663,4 +2663,35 @@ test('0.23.1: a note older than the last request is no compaction of this conver
   expect(w.files[COMPACTED]).toBeUndefined()
   expect(w.toasts.some(t => t.startsWith('◆ context compacted'))).toBe(false)
   expect(await line2Has($, /compacted/)).toBe(false)
+})
+
+test('0.25.0: on a phone the figures take more rows, and Pulse\'s row, before one loses a part; times say whose clock they are on', { timeoutMs: 30_000 }, async ($, on) => {
+  const w = world(on, {}, undefined, { TERM_PROGRAM: 'ghostty' })
+  // A zone this test's machine isn't in, so g-line says whose clock its times are on.
+  w.config = { pulse: true, tz: 'Asia/Kathmandu', account_command: ['acct'] }
+  w.run = argv => (argv[0] === 'acct' ? { value: { exitCode: 0, stdout: 'me@example.com\n', stderr: '' } } : undefined)
+  feedServer(on)
+  await start($)
+  const at = Math.floor(w.clock.now() / 1000)
+  w.usage.limits = [{ kind: 'five_hour', percentUsed: 3, resetsAt: ISO(at + 8 * 3600 + 45 * 60 + 30) },
+    { kind: 'seven_day', percentUsed: 30, resetsAt: ISO(at + 2 * 86400 + 9 * 3600 + 30) }]
+  await $.session.measure({ context: { tokens: 600_000, window: 1_000_000, percent: 60 }, rateLimits: w.usage.limits, cost: { usd: 1 }, changed: ['rateLimits'] })
+  await w.clock.settle()
+  const hint = async (columns: number) => $.ui.mount({ plugin: 'g-line', surface: 'terminal', component: 'PromptHint',
+    props: HINT_PROPS as never, viewport: { columns, rows: 40 } })
+  // 44 columns: line 2 over several rows, every figure whole, and no headline in their way.
+  let ui = await hint(44)
+  expect(await ui.find({ type: 'Text', text: /^5h 3% resets in 8h 45m \((\w{3} )?\d\d:\d\d UTC\+5:45\)$/ })).toBeDefined()
+  expect(await ui.find({ type: 'Text', text: /^wk 30% resets in 2d 9h \(\w{3} \d\d:\d\d\)$/ })).toBeDefined()
+  expect(await ui.find({ type: 'Text', text: 'me@example.com' })).toBeDefined()
+  expect(await ui.find({ type: 'Text', text: 'ctx 60%' })).toBeDefined()
+  expect(await ui.find({ type: 'Text', text: /\b45m\b/ })).toBeDefined()
+  expect(await ui.find({ type: 'Text', text: /(?<!8h )\b45m\b|\d+h\d+m|…/ })).toBeUndefined()
+  expect(await ui.find({ type: 'Link' })).toBeUndefined()
+  await ui.unmount()
+  // A desktop's width: one row for the figures, and the headline is back.
+  ui = await hint(200)
+  expect(await ui.find({ type: 'Text', text: /^5h resets in 8h 45m \(/ })).toBeDefined()
+  expect(await ui.find({ type: 'Link' })).toBeDefined()
+  await ui.unmount()
 })
