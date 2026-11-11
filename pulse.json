@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-11T21:28:12Z",
+ "generated_at": "2026-11-11T22:00:05Z",
  "items": [
   {
    "title": "Sources: Anthropic's IPO draws multiple times the orders for the shares available; a source says Da…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-11T18:16:26Z",
    "text": "Introducing Gemini Decision 1, our new frontier decision model in the Gemini API. It is $0.10 per 1M input tokens with no additional cost. With support for image, audio, video, and PDF natively, 256K context window, & 1K questions. You can try it for free in the API!",
    "author_name": "Logan Kilpatrick",
-   "likes": 6100,
+   "likes": 6510,
    "story": "Google launches Gemini Decisions API, powered by its new Gemini Decision 1 model, to return predefined answers with confidence scores, at $0.10/1M input tokens"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-11-11T17:12:24Z",
    "text": "Super proud to announce AlphaGenome 2 - our new DNA sequence model! 🧬 It predicts the impact of DNA variants in different specific cell types - unlocking crucial information for understanding complex diseases. Available for academic research via our API:",
    "author_name": "Demis Hassabis",
-   "likes": 2105,
+   "likes": 2234,
    "story": "Google DeepMind launches AlphaGenome 2, trained on 100M+ cell profiles across 68 tissues to predict the effects of genetic variants, for non-commercial research",
    "links": [
     "https://www.alphagenomedocs.com/"
@@ -49,12 +49,12 @@
    "via": "Techmeme"
   },
   {
-   "title": "Google SWE points 48 AI agents at NASA Lidar, finds unmapped Maya pyramid in 72h",
-   "url": "https://pietromiotti.com/latest/maya-site/?maya",
+   "title": "My AI agents found an unmapped Maya site",
+   "url": "https://pietromiotti.com/latest/maya-site",
    "source": "Hacker News",
    "published_at": "2026-11-11T12:05:22Z",
-   "text": "871 points and 317 comments on Hacker News.",
-   "points": 871,
+   "text": "883 points and 318 comments on Hacker News.",
+   "points": 883,
    "discussion": "https://news.ycombinator.com/item?id=50452455"
   },
   {
@@ -64,7 +64,7 @@
    "published_at": "2026-11-11T15:23:50Z",
    "text": "we’re like one month away from rainbow ICE agent uniforms if these people aren’t actually held accountable",
    "author_name": "matt bernstein",
-   "likes": 8590,
+   "likes": 8838,
    "story": "After the US midterms, Palantir CEO Alex Karp pivots toward Democrats, describing his philosophy as “progressive” and praising Trump for saying ICE went too far"
   },
   {
@@ -96,7 +96,7 @@
    "published_at": "2026-11-10T17:47:14Z",
    "text": "STATE OF THE TECH JOB MARKET IN 2026 Twice a year, I dig into trends in hiring and job openings. This is the fifth report I've done, and the most surprising yet: 1. PMs are winning in the AI era 2. Engineering demand has stalled 3. Design openings are at a record low 4. Every…",
    "author_name": "Lenny Rachitsky",
-   "likes": 4767,
+   "likes": 4783,
    "story": "An analysis of the tech job market in late 2026: product managers seem to be benefiting the most in the AI era, demand for engineers is plateauing, and more"
   },
   {
@@ -104,8 +104,8 @@
    "url": "https://michael.bacarella.com/2026/11/10/false-smoke-alarm-jane-street-datacenter/",
    "source": "Hacker News",
    "published_at": "2026-11-11T16:38:44Z",
-   "text": "315 points and 161 comments on Hacker News.",
-   "points": 315,
+   "text": "336 points and 166 comments on Hacker News.",
+   "points": 336,
    "discussion": "https://news.ycombinator.com/item?id=50455394"
   },
   {
@@ -115,7 +115,7 @@
    "published_at": "2026-11-11T17:55:36Z",
    "text": "ByteDance is launching its own personal AI agent this month, no name announced yet. What I found even more interesting than the agent news was ByteDance's AI industry timeline: they believe they will catch up to the US frontier by 2029–2030.",
    "author_name": "Andrew Curran",
-   "likes": 189,
+   "likes": 193,
    "story": "Sources: co-founder Zhang Yiming says ByteDance plans to launch a Muse-like AI assistant in the coming weeks and rival Anthropic and OpenAI by 2029 or 2030"
   },
   {
@@ -125,7 +125,7 @@
    "published_at": "2026-11-11T05:42:38Z",
    "text": "ERNIE 5.5 Flash Preview just landed! 🔥 Built on a new architecture designed for efficient inference, the latest open-weight foundation model in the ERNIE family delivers stronger performance in coding, 3D modeling, knowledge work and content creation. It keeps decoding fast…",
    "author_name": "Baidu Inc.",
-   "likes": 1318,
+   "likes": 1329,
    "story": "Ernie 5.5 Flash will be released in two weeks"
   },
   {
