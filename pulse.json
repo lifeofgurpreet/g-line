@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-11T00:33:38Z",
+ "generated_at": "2026-11-11T01:06:32Z",
  "items": [
   {
    "title": "Anthropic launches its IPO roadshow, saying the company and shareholders plan to sell 825M Class A…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-10T17:26:03Z",
    "text": "Starting to roll out today: Claude Whiteboards, Claude Sheets and Claude Data. Think a plan through on a board, build a tracker in a sheet, and tell a story with your data.",
    "author_name": "Claude",
-   "likes": 39431,
+   "likes": 40636,
    "story": "Anthropic unveils office tools, including a video call assistant, a data dashboard, and spreadsheet service Claude Sheets, competing with Microsoft and Google"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-11-10T18:06:42Z",
    "text": "Now in beta: Businesses in ChatGPT. Claim your business, manage your information, and get insights on how people engage with you. Eligible businesses can also build a Business Agent to answer customers’ questions and help them explore what you offer.",
    "author_name": "OpenAI",
-   "likes": 10719,
+   "likes": 11076,
    "story": "OpenAI launches Businesses in ChatGPT in beta, including Business Agents for companies to interact with users and a hub where companies can claim their profiles",
    "links": [
     "https://openai.com/index/introducing-businesses-chatgpt/"
@@ -53,8 +53,8 @@
    "url": "https://github.com/GoogleChrome/modern-web-guidance",
    "source": "Hacker News",
    "published_at": "2026-11-10T18:01:15Z",
-   "text": "242 points and 69 comments on Hacker News.",
-   "points": 242,
+   "text": "252 points and 72 comments on Hacker News.",
+   "points": 252,
    "discussion": "https://news.ycombinator.com/item?id=50443812"
   },
   {
@@ -64,7 +64,7 @@
    "published_at": "2026-11-10T16:04:43Z",
    "text": "Gemini 4 Carbon is rolling out today. It’s built for sustained, long-horizon tasks, reasoning deeply through complex software engineering, cybersecurity, and scientific discovery. Coming globally via the Gemini API in @GoogleAIStudio and Gemini for business, and for Ultra…",
    "author_name": "Sundar Pichai",
-   "likes": 6312,
+   "likes": 6373,
    "story": "Google rolls out Gemini 4 Carbon to paid API and AI Ultra users two weeks after releasing it to cyber defenders, and previews a swarm feature in Antigravity"
   },
   {
@@ -89,20 +89,20 @@
    "published_at": "2026-11-10T05:42:39Z",
    "text": "When Anthropic release a new model it's always worth taking a look at their updated prompting guide - here's an entertaining tip to make Fable 5.2 less likely to be cautious in how it improves existing code: tell it \"This codebase is yours\"",
    "author_name": "Simon Willison",
-   "likes": 3985,
+   "likes": 4018,
    "story": "Anthropic's Fable 5.2 represents “Jagged AGI”, which matches human experts on most computer tasks like game design but lacks self-directed judgment and taste",
    "links": [
     "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/prompting-claude-fable-5-2#say-who-owns-the-code"
    ]
   },
   {
-   "title": "Apple has new Mac app coming to make running local AI models easy",
-   "url": "https://9to5mac.com/2026/11/10/apple-has-new-mac-app-coming-to-make-running-local-ai-models-easy/",
+   "title": "What objective is reasoning solving?",
+   "url": "https://alexwang.ai/posts/reasoning-as-pathfinding/",
    "source": "Hacker News",
-   "published_at": "2026-11-10T21:25:03Z",
-   "text": "94 points and 53 comments on Hacker News.",
-   "points": 94,
-   "discussion": "https://news.ycombinator.com/item?id=50446520"
+   "published_at": "2026-11-10T19:25:14Z",
+   "text": "98 points and 42 comments on Hacker News.",
+   "points": 98,
+   "discussion": "https://news.ycombinator.com/item?id=50445013"
   },
   {
    "title": "The AI Futures Project have updated their timelines. They say we are five months ahead of AI 2027,…",
@@ -111,7 +111,7 @@
    "published_at": "2026-11-10T17:05:35Z",
    "text": "The AI Futures Project have updated their timelines. They say we are five months ahead of AI 2027, and they now believe a Superhuman AI Researcher will arrive sometime in 2027.",
    "author_name": "Andrew Curran",
-   "likes": 1713,
+   "likes": 1738,
    "story": "The AI Futures Project updates its timelines after METR's report on Anthropic R&D progress, saying it now expects a Superhuman AI Researcher to arrive in 2027"
   },
   {
@@ -121,7 +121,7 @@
    "published_at": "2026-11-10T19:30:45Z",
    "text": "By announcing it has \"no reason to believe that either national security or Nvidia secrets were compromised,\" Nvidia's \"investigation\" into Huang begins with its conclusion seemingly predetermined",
    "author_name": "Casey Newton",
-   "likes": 114,
+   "likes": 116,
    "story": "Nvidia hires former acting US attorney Joon H. Kim and his law firm Wachtell Lipton to conduct a probe into Jensen Huang's affair with an alleged Chinese spy",
    "links": [
     "https://www.nytimes.com/2026/11/10/business/nvidia-wachtell-lipton-jensen-huang.html"
@@ -134,15 +134,15 @@
    "published_at": "2026-11-10T16:09:43Z",
    "text": "It could be vastly underestimated how much human expertise is needed to diffuse the benefits of AI to the long-tail of knowledge work. I think more data companies should figure out this branding, where experts help AI companies understand how to improve the tools that make them…",
    "author_name": "Nathan Lambert",
-   "likes": 215,
+   "likes": 220,
    "story": "AI training startup Mercor raised a $750M Series D from Benchmark, General Catalyst, Nvidia, and others at a $20B valuation, up from $10B in October 2025"
   },
   {
-   "title": "S-1: Nvidia plans to invest ~$10B in Anthropic after its IPO, or ~10% of the total new cash Anthrop…",
-   "url": "https://www.nytimes.com/2026/11/10/business/anthropic-ipo-nvidia.html",
-   "source": "Cory Weinberg / New York Ti…",
-   "published_at": "2026-11-10T20:56:09Z",
-   "text": "S-1: Nvidia plans to invest ~$10B in Anthropic after its IPO, or ~10% of the total new cash Anthropic is expected to raise in November, including in its IPO",
+   "title": "A deep dive into AMD's Zen 6 EPYC Venice: it uses TSMC's N2P, the 9686F often beats Nvidia's Vera,…",
+   "url": "https://www.tomshardware.com/pc-components/cpus/amd-zen-6-epyc-venice-deep-dive-and-benchmarking-dual-epyc-9996-with-1-024-threads-delivers-up-to-93-percent-performance-gain-gen-on-gen-9686f-outclasses-nvidias-vera",
+   "source": "Jake Roach / Tom's Hardware",
+   "published_at": "2026-11-11T00:25:55Z",
+   "text": "A deep dive into AMD's Zen 6 EPYC Venice: it uses TSMC's N2P, the 9686F often beats Nvidia's Vera, a dual 9996 is up to 93% faster than a dual Zen 5 9965, more. Our first look at Zen 6, both under the hood and in real-world applications. … AMD's EPYC ‘Venice’ CPUs are the first to debut …",
    "via": "Techmeme"
   }
  ],
