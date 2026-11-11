@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-11T15:36:34Z",
+ "generated_at": "2026-11-11T16:08:59Z",
  "items": [
   {
    "title": "Game developer House House confirms using AI during Big Walk's final development, sparking an inten…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-10T17:26:03Z",
    "text": "Starting to roll out today: Claude Whiteboards, Claude Sheets and Claude Data. Think a plan through on a board, build a tracker in a sheet, and tell a story with your data.",
    "author_name": "Claude",
-   "likes": 58361,
+   "likes": 58764,
    "story": "Anthropic unveils office tools, including a video call assistant, a data dashboard, and spreadsheet service Claude Sheets, competing with Microsoft and Google"
   },
   {
@@ -28,24 +28,24 @@
    "text": "Added fast mode on Vertex in the global, us and eu regions, falling back to standard speed if Vertex refuses it"
   },
   {
+   "title": "Your heart, brain, and immune system share the same DNA sequence. So how can a single-letter change…",
+   "url": "https://x.com/GoogleDeepMind/status/2120532824465805749",
+   "source": "𝕏 @GoogleDeepMind",
+   "published_at": "2026-11-11T15:03:17Z",
+   "text": "Your heart, brain, and immune system share the same DNA sequence. So how can a single-letter change affect disease in some cells, while sparing the rest? AlphaGenome 2 is our new AI model that zooms in on specific cells to help scientists understand what drives disease. 🧵…",
+   "author_name": "Google DeepMind",
+   "likes": 420,
+   "story": "Google DeepMind launches AlphaGenome 2, trained on 100M+ cell profiles across 68 tissues to predict genetic mutation effects, for non-commercial research"
+  },
+  {
    "title": "Anthropic is now looking at raising $90 billion in their IPO, and it is massively oversubscribed. T…",
    "url": "https://x.com/AndrewCurran_/status/2120510448202342849",
    "source": "𝕏 @AndrewCurran_",
    "published_at": "2026-11-11T13:34:22Z",
    "text": "Anthropic is now looking at raising $90 billion in their IPO, and it is massively oversubscribed. There will be a livestreamed event with Dario Amodei on Friday.",
    "author_name": "Andrew Curran",
-   "likes": 392,
+   "likes": 421,
    "story": "Sources: Anthropic's IPO draws multiple times the orders for the shares available; a source says Dario Amodei and Jamie Dimon have a livestream event on Friday"
-  },
-  {
-   "title": "Qwen4 is coming. Deeper knowledge. Richer world understanding. Stronger coding and agentic capabili…",
-   "url": "https://x.com/Alibaba_Qwen/status/2120335993643684315",
-   "source": "𝕏 @Alibaba_Qwen",
-   "published_at": "2026-11-11T02:01:09Z",
-   "text": "Qwen4 is coming. Deeper knowledge. Richer world understanding. Stronger coding and agentic capabilities. Built for real-world tasks — from complex coding and knowledge work to front-end builds and professional software workflows. Qwen4-Max is now in preview on Alibaba’s Token…",
-   "author_name": "Qwen",
-   "likes": 10703,
-   "story": "Qwen 4 Max Preview released"
   },
   {
    "title": "Nvidia's stock closed down 5.47% on Tuesday, following a 4.27% drop on Monday, after Jensen Huang a…",
@@ -60,8 +60,8 @@
    "url": "https://pietromiotti.com/latest/maya-site/?maya",
    "source": "Hacker News",
    "published_at": "2026-11-11T12:05:22Z",
-   "text": "498 points and 195 comments on Hacker News.",
-   "points": 498,
+   "text": "580 points and 228 comments on Hacker News.",
+   "points": 580,
    "discussion": "https://news.ycombinator.com/item?id=50452455"
   },
   {
@@ -71,7 +71,7 @@
    "published_at": "2026-11-10T17:47:14Z",
    "text": "STATE OF THE TECH JOB MARKET IN 2026 Twice a year, I dig into trends in hiring and job openings. This is the fifth report I've done, and the most surprising yet: 1. PMs are winning in the AI era 2. Engineering demand has stalled 3. Design openings are at a record low 4. Every…",
    "author_name": "Lenny Rachitsky",
-   "likes": 4355,
+   "likes": 4420,
    "story": "An analysis of the tech job market in late 2026: product managers seem to be benefiting the most in the AI era, demand for engineers is plateauing, and more"
   },
   {
@@ -93,7 +93,7 @@
    "url": "https://www.nytimes.com/2026/11/10/business/nvidia-wachtell-lipton-jensen-huang.html?unlocked_article_code=1.PlE.sErx.ZWYsX_IkgKLe&smid=url-share",
    "source": "New York Times",
    "published_at": "2026-11-10T19:26:28Z",
-   "text": "Nvidia hires former acting US attorney Joon H. Kim and his law firm Wachtell Lipton to investigate Jensen Huang's affair with alleged Chinese spy Alice Huang. Wachtell partner Joon H. Kim, a former acting U.S. attorney, is leading the inquiry into the chip maker's chief executive.",
+   "text": "Nvidia hires former acting US attorney Joon H. Kim and his law firm Wachtell Lipton to investigate Jensen Huang's affair with alleged Chinese spy Alice Huang",
    "via": "Techmeme"
   },
   {
@@ -103,7 +103,7 @@
    "published_at": "2026-11-11T05:42:38Z",
    "text": "ERNIE 5.5 Flash Preview just landed! 🔥 Built on a new architecture designed for efficient inference, the latest open-weight foundation model in the ERNIE family delivers stronger performance in coding, 3D modeling, knowledge work and content creation. It keeps decoding fast…",
    "author_name": "Baidu Inc.",
-   "likes": 1134,
+   "likes": 1169,
    "story": "Ernie 5.5 Flash will be released in two weeks"
   },
   {
@@ -111,16 +111,16 @@
    "url": "https://9to5mac.com/2026/11/10/apple-has-new-mac-app-coming-to-make-running-local-ai-models-easy/",
    "source": "Hacker News",
    "published_at": "2026-11-10T21:25:03Z",
-   "text": "410 points and 427 comments on Hacker News.",
-   "points": 410,
+   "text": "426 points and 439 comments on Hacker News.",
+   "points": 426,
    "discussion": "https://news.ycombinator.com/item?id=50446520"
   },
   {
-   "title": "A deep dive into AMD's Zen 6 EPYC Venice: uses TSMC's N2P, the 9686F often beats Nvidia's Vera, a d…",
-   "url": "https://www.tomshardware.com/pc-components/cpus/amd-zen-6-epyc-venice-deep-dive-and-benchmarking-dual-epyc-9996-with-1-024-threads-delivers-up-to-93-percent-performance-gain-gen-on-gen-9686f-outclasses-nvidias-vera",
-   "source": "Jake Roach / Tom's Hardware",
-   "published_at": "2026-11-11T00:25:55Z",
-   "text": "A deep dive into AMD's Zen 6 EPYC Venice: uses TSMC's N2P, the 9686F often beats Nvidia's Vera, a dual 9996 is up to 93% faster than a dual Zen 5 9965, and more. Our first look at Zen 6, both under the hood and in real-world applications. … AMD's EPYC ‘Venice’ CPUs are the first to debut …",
+   "title": "Records: China's Northwestern Polytechnical University, which has close PLA ties, has access to Nvi…",
+   "url": "https://www.reuters.com/world/pla-linked-chinese-university-bought-nvidia-h200-chips-despite-us-blacklist-2026-11-11/",
+   "source": "Eduardo Baptista / Reuters",
+   "published_at": "2026-11-11T06:16:17Z",
+   "text": "Records: China's Northwestern Polytechnical University, which has close PLA ties, has access to Nvidia's H200 AI chips despite being on a US export blacklist. A Chinese university with deep ties to the People's Liberation Army bought Nvidia's powerful H200 AI chips last month despite …",
    "via": "Techmeme"
   },
   {
