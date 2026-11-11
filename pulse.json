@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-11T20:24:47Z",
+ "generated_at": "2026-11-11T20:56:24Z",
  "items": [
   {
    "title": "Sources: Anthropic's IPO draws multiple times the orders for the shares available; a source says Da…",
@@ -11,13 +11,13 @@
    "via": "Techmeme"
   },
   {
-   "title": "Today we’re launching the Gemini Decisions API, powered by our new Gemini Decision 1 model in @Goog…",
-   "url": "https://x.com/sundarpichai/status/2120581155078729728",
-   "source": "𝕏 @sundarpichai",
-   "published_at": "2026-11-11T18:15:20Z",
-   "text": "Today we’re launching the Gemini Decisions API, powered by our new Gemini Decision 1 model in @GoogleAIStudio. Instead of generating text token by token, it’s built for closed-set choices scoring up to 1,000 questions across text, images, audio, video + PDFs in a single pass. A…",
-   "author_name": "Sundar Pichai",
-   "likes": 3214,
+   "title": "Introducing Gemini Decision 1, our new frontier decision model in the Gemini API. It is $0.10 per 1…",
+   "url": "https://x.com/OfficialLoganK/status/2120581433639198885",
+   "source": "𝕏 @OfficialLoganK",
+   "published_at": "2026-11-11T18:16:26Z",
+   "text": "Introducing Gemini Decision 1, our new frontier decision model in the Gemini API. It is $0.10 per 1M input tokens with no additional cost. With support for image, audio, video, and PDF natively, 256K context window, & 1K questions. You can try it for free in the API!",
+   "author_name": "Logan Kilpatrick",
+   "likes": 5555,
    "story": "Google launches Gemini Decisions API, powered by its new Gemini Decision 1 model, to return predefined answers with confidence scores, at $0.10/1M input tokens"
   },
   {
@@ -28,34 +28,24 @@
    "text": "Added fast mode on Vertex in the global, us and eu regions, falling back to standard speed if Vertex refuses it"
   },
   {
-   "title": "ByteDance is launching its own personal AI agent this month, no name announced yet. What I found ev…",
-   "url": "https://x.com/AndrewCurran_/status/2120576189912006854",
-   "source": "𝕏 @AndrewCurran_",
-   "published_at": "2026-11-11T17:55:36Z",
-   "text": "ByteDance is launching its own personal AI agent this month, no name announced yet. What I found even more interesting than the agent news was ByteDance's AI industry timeline: they believe they will catch up to the US frontier by 2029–2030.",
-   "author_name": "Andrew Curran",
-   "likes": 173,
-   "story": "Sources: co-founder Zhang Yiming says ByteDance plans to launch a Muse-like AI assistant in the coming weeks and rival Anthropic and OpenAI by 2029 or 2030"
-  },
-  {
    "title": "Super proud to announce AlphaGenome 2 - our new DNA sequence model! 🧬 It predicts the impact of DNA…",
    "url": "https://x.com/demishassabis/status/2120565316619284734",
    "source": "𝕏 @demishassabis",
    "published_at": "2026-11-11T17:12:24Z",
    "text": "Super proud to announce AlphaGenome 2 - our new DNA sequence model! 🧬 It predicts the impact of DNA variants in different specific cell types - unlocking crucial information for understanding complex diseases. Available for academic research via our API:",
    "author_name": "Demis Hassabis",
-   "likes": 1827,
+   "likes": 1973,
    "story": "Google DeepMind launches AlphaGenome 2, trained on 100M+ cell profiles across 68 tissues to predict the effects of genetic variants, for non-commercial research",
    "links": [
     "https://www.alphagenomedocs.com/"
    ]
   },
   {
-   "title": "Game developer House House confirms using AI during Big Walk's final development, sparking an inten…",
-   "url": "https://aftermath.site/big-walk-ai-igf-jurors-controversy/",
-   "source": "Luke Plunkett / Aftermath",
-   "published_at": "2026-11-11T12:41:03Z",
-   "text": "Game developer House House confirms using AI during Big Walk's final development, sparking an intense debate among Independent Games Festival judges and jurors. 'We support the work of those who are trying to limit the harm generative AI is doing to videogames and our world …",
+   "title": "AWS releases AWS Emulator, a free tool that simulates 200+ of its services locally, saying AI agent…",
+   "url": "https://www.geekwire.com/2026/aws-gives-developers-a-free-local-stand-in-for-its-cloud-built-from-scratch-by-ai-agents/",
+   "source": "Todd Bishop / GeekWire",
+   "published_at": "2026-11-11T20:26:31Z",
+   "text": "AWS releases AWS Emulator, a free tool that simulates 200+ of its services locally, saying AI agents wrote it and its team hasn't written or reviewed any code. AWS says its engineers didn't write or review a single line of code in its newest developer tool, and the company is touting that as a selling point.",
    "via": "Techmeme"
   },
   {
@@ -63,8 +53,8 @@
    "url": "https://pietromiotti.com/latest/maya-site/?maya",
    "source": "Hacker News",
    "published_at": "2026-11-11T12:05:22Z",
-   "text": "847 points and 312 comments on Hacker News.",
-   "points": 847,
+   "text": "859 points and 314 comments on Hacker News.",
+   "points": 859,
    "discussion": "https://news.ycombinator.com/item?id=50452455"
   },
   {
@@ -74,7 +64,7 @@
    "published_at": "2026-11-11T15:23:50Z",
    "text": "we’re like one month away from rainbow ICE agent uniforms if these people aren’t actually held accountable",
    "author_name": "matt bernstein",
-   "likes": 8060,
+   "likes": 8327,
    "story": "After the US midterms, Palantir CEO Alex Karp pivots toward Democrats, describing his philosophy as “progressive” and praising Trump for saying ICE went too far"
   },
   {
@@ -92,11 +82,11 @@
    "text": "Our house has a box room, full of boxes that we still haven't unpacked from our last move. A couple of weeks ago something in that room started intermittently beeping . The beeps were far enough apart that standing in the room and trying to determine the source of the noise was frustrating, and I really didn't want to dig through every one of those boxes. So I had Claude Code build Beep Locator , a software system for triangulating the source of a mysterious beep using multiple devices scattered around the room."
   },
   {
-   "title": "Records: China's Northwestern Polytechnical University, which has deep PLA ties, bought access to N…",
-   "url": "https://www.reuters.com/world/pla-linked-chinese-university-bought-nvidia-h200-chips-despite-us-blacklist-2026-11-11/",
-   "source": "Eduardo Baptista / Reuters",
-   "published_at": "2026-11-11T06:16:17Z",
-   "text": "Records: China's Northwestern Polytechnical University, which has deep PLA ties, bought access to Nvidia's H200 AI chips despite being on a US export blacklist. A Chinese university with deep ties to the People's Liberation Army bought Nvidia's powerful H200 AI chips last month despite …",
+   "title": "Game developer House House confirms using AI during Big Walk's final development, sparking an inten…",
+   "url": "https://aftermath.site/big-walk-ai-igf-jurors-controversy/",
+   "source": "Luke Plunkett / Aftermath",
+   "published_at": "2026-11-11T12:41:03Z",
+   "text": "Game developer House House confirms using AI during Big Walk's final development, sparking an intense debate among Independent Games Festival judges and jurors. 'We support the work of those who are trying to limit the harm generative AI is doing to videogames and our world …",
    "via": "Techmeme"
   },
   {
@@ -106,7 +96,7 @@
    "published_at": "2026-11-10T17:47:14Z",
    "text": "STATE OF THE TECH JOB MARKET IN 2026 Twice a year, I dig into trends in hiring and job openings. This is the fifth report I've done, and the most surprising yet: 1. PMs are winning in the AI era 2. Engineering demand has stalled 3. Design openings are at a record low 4. Every…",
    "author_name": "Lenny Rachitsky",
-   "likes": 4729,
+   "likes": 4749,
    "story": "An analysis of the tech job market in late 2026: product managers seem to be benefiting the most in the AI era, demand for engineers is plateauing, and more"
   },
   {
@@ -114,9 +104,19 @@
    "url": "https://michael.bacarella.com/2026/11/10/false-smoke-alarm-jane-street-datacenter/",
    "source": "Hacker News",
    "published_at": "2026-11-11T16:38:44Z",
-   "text": "281 points and 150 comments on Hacker News.",
-   "points": 281,
+   "text": "297 points and 153 comments on Hacker News.",
+   "points": 297,
    "discussion": "https://news.ycombinator.com/item?id=50455394"
+  },
+  {
+   "title": "ByteDance is launching its own personal AI agent this month, no name announced yet. What I found ev…",
+   "url": "https://x.com/AndrewCurran_/status/2120576189912006854",
+   "source": "𝕏 @AndrewCurran_",
+   "published_at": "2026-11-11T17:55:36Z",
+   "text": "ByteDance is launching its own personal AI agent this month, no name announced yet. What I found even more interesting than the agent news was ByteDance's AI industry timeline: they believe they will catch up to the US frontier by 2029–2030.",
+   "author_name": "Andrew Curran",
+   "likes": 182,
+   "story": "Sources: co-founder Zhang Yiming says ByteDance plans to launch a Muse-like AI assistant in the coming weeks and rival Anthropic and OpenAI by 2029 or 2030"
   },
   {
    "title": "ERNIE 5.5 Flash Preview just landed! 🔥 Built on a new architecture designed for efficient inference…",
@@ -125,12 +125,12 @@
    "published_at": "2026-11-11T05:42:38Z",
    "text": "ERNIE 5.5 Flash Preview just landed! 🔥 Built on a new architecture designed for efficient inference, the latest open-weight foundation model in the ERNIE family delivers stronger performance in coding, 3D modeling, knowledge work and content creation. It keeps decoding fast…",
    "author_name": "Baidu Inc.",
-   "likes": 1301,
+   "likes": 1311,
    "story": "Ernie 5.5 Flash will be released in two weeks"
   },
   {
    "title": "United Airlines says it will prevent personal AI assistants from booking tickets, citing data priva…",
-   "url": "https://www.wsj.com/tech/ai/united-airlines-is-banning-ai-bots-from-booking-flights-5b514b38",
+   "url": "https://www.wsj.com/tech/ai/united-airlines-is-banning-ai-bots-from-booking-flights-5b514b38?st=ytrzi1",
    "source": "Alison Sider / Wall Street…",
    "published_at": "2026-11-11T18:41:01Z",
    "text": "United Airlines says it will prevent personal AI assistants from booking tickets, citing data privacy risks and possible FAA and DOT rule violations. The carrier says automated assistants present data-privacy risks; 'I don't want to create another middleman' — United Airlines doesn't want to deal with your AI agent.",
