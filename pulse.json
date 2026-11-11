@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-11T02:43:24Z",
+ "generated_at": "2026-11-11T03:16:03Z",
  "items": [
   {
    "title": "Anthropic launches its IPO roadshow, saying the company and shareholders plan to sell 825M Class A…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-10T17:26:03Z",
    "text": "Starting to roll out today: Claude Whiteboards, Claude Sheets and Claude Data. Think a plan through on a board, build a tracker in a sheet, and tell a story with your data.",
    "author_name": "Claude",
-   "likes": 43973,
+   "likes": 44938,
    "story": "Anthropic unveils office tools, including a video call assistant, a data dashboard, and spreadsheet service Claude Sheets, competing with Microsoft and Google"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-11-11T02:01:09Z",
    "text": "Qwen4 is coming. Deeper knowledge. Richer world understanding. Stronger coding and agentic capabilities. Built for real-world tasks — from complex coding and knowledge work to front-end builds and professional software workflows. Qwen4-Max is now in preview on Alibaba’s Token…",
    "author_name": "Qwen",
-   "likes": 2435,
+   "likes": 3812,
    "story": "Qwen 4 Max Preview released"
   },
   {
@@ -44,7 +44,7 @@
    "published_at": "2026-11-10T18:06:42Z",
    "text": "Now in beta: Businesses in ChatGPT. Claim your business, manage your information, and get insights on how people engage with you. Eligible businesses can also build a Business Agent to answer customers’ questions and help them explore what you offer.",
    "author_name": "OpenAI",
-   "likes": 12192,
+   "likes": 12557,
    "story": "OpenAI launches Businesses in ChatGPT in beta, including Business Agents for companies to interact with users and a hub where companies can claim their profiles",
    "links": [
     "https://openai.com/index/introducing-businesses-chatgpt/"
@@ -63,8 +63,8 @@
    "url": "https://github.com/GoogleChrome/modern-web-guidance",
    "source": "Hacker News",
    "published_at": "2026-11-10T18:01:15Z",
-   "text": "273 points and 80 comments on Hacker News.",
-   "points": 273,
+   "text": "278 points and 86 comments on Hacker News.",
+   "points": 278,
    "discussion": "https://news.ycombinator.com/item?id=50443812"
   },
   {
@@ -74,7 +74,7 @@
    "published_at": "2026-11-10T16:04:43Z",
    "text": "Gemini 4 Carbon is rolling out today. It’s built for sustained, long-horizon tasks, reasoning deeply through complex software engineering, cybersecurity, and scientific discovery. Coming globally via the Gemini API in @GoogleAIStudio and Gemini for business, and for Ultra…",
    "author_name": "Sundar Pichai",
-   "likes": 6596,
+   "likes": 6685,
    "story": "Google rolls out Gemini 4 Carbon to paid API and AI Ultra users two weeks after releasing it to cyber defenders, and previews a swarm feature in Antigravity"
   },
   {
@@ -99,7 +99,7 @@
    "published_at": "2026-11-10T05:42:39Z",
    "text": "When Anthropic release a new model it's always worth taking a look at their updated prompting guide - here's an entertaining tip to make Fable 5.2 less likely to be cautious in how it improves existing code: tell it \"This codebase is yours\"",
    "author_name": "Simon Willison",
-   "likes": 4085,
+   "likes": 4115,
    "story": "Anthropic's Fable 5.2 represents “Jagged AGI”, which matches human experts on most computer tasks like game design but lacks self-directed judgment and taste",
    "links": [
     "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/prompting-claude-fable-5-2#say-who-owns-the-code"
@@ -110,8 +110,8 @@
    "url": "https://evanxmerz.com/post/ai-usage-generates-a-fragile-codebase/",
    "source": "Hacker News",
    "published_at": "2026-11-10T10:25:58Z",
-   "text": "399 points and 418 comments on Hacker News.",
-   "points": 399,
+   "text": "406 points and 422 comments on Hacker News.",
+   "points": 406,
    "discussion": "https://news.ycombinator.com/item?id=50438318"
   },
   {
@@ -121,7 +121,7 @@
    "published_at": "2026-11-10T17:47:14Z",
    "text": "STATE OF THE TECH JOB MARKET IN 2026 Twice a year, I dig into trends in hiring and job openings. This is the fifth report I've done, and the most surprising yet: 1. PMs are winning in the AI era 2. Engineering demand has stalled 3. Design openings are at a record low 4. Every…",
    "author_name": "Lenny Rachitsky",
-   "likes": 2731,
+   "likes": 2844,
    "story": "An analysis of the tech job market in late 2026: product managers seem to be benefiting most in the AI era, demand for engineers is plateauing, and more"
   },
   {
@@ -131,7 +131,7 @@
    "published_at": "2026-11-10T17:05:35Z",
    "text": "The AI Futures Project have updated their timelines. They say we are five months ahead of AI 2027, and they now believe a Superhuman AI Researcher will arrive sometime in 2027.",
    "author_name": "Andrew Curran",
-   "likes": 1806,
+   "likes": 1830,
    "story": "The AI Futures Project updates its timelines after METR's report on Anthropic R&D progress, saying it now expects a Superhuman AI Researcher to arrive in 2027"
   },
   {
@@ -141,7 +141,7 @@
    "published_at": "2026-11-10T19:30:45Z",
    "text": "By announcing it has \"no reason to believe that either national security or Nvidia secrets were compromised,\" Nvidia's \"investigation\" into Huang begins with its conclusion seemingly predetermined",
    "author_name": "Casey Newton",
-   "likes": 127,
+   "likes": 130,
    "story": "Nvidia hires former acting US attorney Joon H. Kim and his law firm Wachtell Lipton to conduct a probe into Jensen Huang's affair with an alleged Chinese spy",
    "links": [
     "https://www.nytimes.com/2026/11/10/business/nvidia-wachtell-lipton-jensen-huang.html"
