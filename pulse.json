@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-11T18:19:05Z",
+ "generated_at": "2026-11-11T18:50:40Z",
  "items": [
   {
    "title": "Sources: Anthropic's IPO draws multiple times the orders for the shares available; a source says Da…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-11T17:12:24Z",
    "text": "Super proud to announce AlphaGenome 2 - our new DNA sequence model! 🧬 It predicts the impact of DNA variants in different specific cell types - unlocking crucial information for understanding complex diseases. Available for academic research via our API:",
    "author_name": "Demis Hassabis",
-   "likes": 994,
+   "likes": 1259,
    "story": "Google DeepMind launches AlphaGenome 2, trained on 100M+ cell profiles across 68 tissues to predict genetic mutation effects, for non-commercial research",
    "links": [
     "https://www.alphagenomedocs.com/"
@@ -37,7 +37,7 @@
    "published_at": "2026-11-11T17:55:36Z",
    "text": "ByteDance is launching its own personal AI agent this month, no name announced yet. What I found even more interesting than the agent news was ByteDance's AI industry timeline: they believe they will catch up to the US frontier by 2029–2030.",
    "author_name": "Andrew Curran",
-   "likes": 89,
+   "likes": 134,
    "story": "Sources: ByteDance co-founder Zhang Yiming says the company plans to launch a Muse-like AI assistant in the coming weeks and reach the AI frontier by 2029-2030"
   },
   {
@@ -47,7 +47,7 @@
    "published_at": "2026-11-11T15:23:50Z",
    "text": "we’re like one month away from rainbow ICE agent uniforms if these people aren’t actually held accountable",
    "author_name": "matt bernstein",
-   "likes": 6437,
+   "likes": 6932,
    "story": "After the US midterms, Palantir CEO Alex Karp pivots toward Democrats, describing his philosophy as “progressive” and praising Trump for saying ICE went too far"
   },
   {
@@ -63,18 +63,18 @@
    "url": "https://pietromiotti.com/latest/maya-site/?maya",
    "source": "Hacker News",
    "published_at": "2026-11-11T12:05:22Z",
-   "text": "773 points and 287 comments on Hacker News.",
-   "points": 773,
+   "text": "802 points and 298 comments on Hacker News.",
+   "points": 802,
    "discussion": "https://news.ycombinator.com/item?id=50452455"
   },
   {
-   "title": "Fresh data confirms what I shared back in April: native mobile and frontend roles are dying. This t…",
-   "url": "https://x.com/GergelyOrosz/status/2120426774576103438",
-   "source": "𝕏 @GergelyOrosz",
-   "published_at": "2026-11-11T08:01:53Z",
-   "text": "Fresh data confirms what I shared back in April: native mobile and frontend roles are dying. This trend sped up. Safe to assume the only devs getting such jobs are very experienced ones. You need to become a more general software engineer with AI, to have career stability.",
-   "author_name": "Gergely Orosz",
-   "likes": 1477,
+   "title": "STATE OF THE TECH JOB MARKET IN 2026 Twice a year, I dig into trends in hiring and job openings. Th…",
+   "url": "https://x.com/lennysan/status/2120211695453028770",
+   "source": "𝕏 @lennysan",
+   "published_at": "2026-11-10T17:47:14Z",
+   "text": "STATE OF THE TECH JOB MARKET IN 2026 Twice a year, I dig into trends in hiring and job openings. This is the fifth report I've done, and the most surprising yet: 1. PMs are winning in the AI era 2. Engineering demand has stalled 3. Design openings are at a record low 4. Every…",
+   "author_name": "Lenny Rachitsky",
+   "likes": 4638,
    "story": "An analysis of the tech job market in late 2026: product managers seem to be benefiting the most in the AI era, demand for engineers is plateauing, and more"
   },
   {
@@ -106,7 +106,7 @@
    "published_at": "2026-11-11T05:42:38Z",
    "text": "ERNIE 5.5 Flash Preview just landed! 🔥 Built on a new architecture designed for efficient inference, the latest open-weight foundation model in the ERNIE family delivers stronger performance in coding, 3D modeling, knowledge work and content creation. It keeps decoding fast…",
    "author_name": "Baidu Inc.",
-   "likes": 1244,
+   "likes": 1253,
    "story": "Ernie 5.5 Flash will be released in two weeks"
   },
   {
@@ -114,8 +114,8 @@
    "url": "https://michael.bacarella.com/2026/11/10/false-smoke-alarm-jane-street-datacenter/",
    "source": "Hacker News",
    "published_at": "2026-11-11T16:38:44Z",
-   "text": "158 points and 76 comments on Hacker News.",
-   "points": 158,
+   "text": "209 points and 104 comments on Hacker News.",
+   "points": 209,
    "discussion": "https://news.ycombinator.com/item?id=50455394"
   },
   {
@@ -131,8 +131,8 @@
    "url": "https://blog.atuin.sh/threads-agent-sessions/",
    "source": "Hacker News",
    "published_at": "2026-11-11T14:10:46Z",
-   "text": "113 points and 41 comments on Hacker News.",
-   "points": 113,
+   "text": "121 points and 52 comments on Hacker News.",
+   "points": 121,
    "discussion": "https://news.ycombinator.com/item?id=50453637"
   }
  ],
