@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-11T14:32:37Z",
+ "generated_at": "2026-11-11T15:04:33Z",
  "items": [
   {
    "title": "Game developer House House confirms using AI during Big Walk's final development, sparking an inten…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-10T17:26:03Z",
    "text": "Starting to roll out today: Claude Whiteboards, Claude Sheets and Claude Data. Think a plan through on a board, build a tracker in a sheet, and tell a story with your data.",
    "author_name": "Claude",
-   "likes": 57544,
+   "likes": 57957,
    "story": "Anthropic unveils office tools, including a video call assistant, a data dashboard, and spreadsheet service Claude Sheets, competing with Microsoft and Google"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-11-11T13:34:22Z",
    "text": "Anthropic is now looking at raising $90 billion in their IPO, and it is massively oversubscribed. There will be a livestreamed event with Dario Amodei on Friday.",
    "author_name": "Andrew Curran",
-   "likes": 270,
+   "likes": 348,
    "story": "Sources: Anthropic's IPO draws multiple times the orders for the shares available; a source says Dario Amodei and Jamie Dimon have a livestream event on Friday"
   },
   {
@@ -44,15 +44,15 @@
    "published_at": "2026-11-11T02:01:09Z",
    "text": "Qwen4 is coming. Deeper knowledge. Richer world understanding. Stronger coding and agentic capabilities. Built for real-world tasks — from complex coding and knowledge work to front-end builds and professional software workflows. Qwen4-Max is now in preview on Alibaba’s Token…",
    "author_name": "Qwen",
-   "likes": 10460,
+   "likes": 10574,
    "story": "Qwen 4 Max Preview released"
   },
   {
-   "title": "Nvidia hires former acting US attorney Joon H. Kim and his law firm Wachtell Lipton to investigate…",
-   "url": "https://www.nytimes.com/2026/11/10/business/nvidia-wachtell-lipton-jensen-huang.html?unlocked_article_code=1.PlE.sErx.ZWYsX_IkgKLe&smid=url-share",
-   "source": "New York Times",
-   "published_at": "2026-11-10T19:26:28Z",
-   "text": "Nvidia hires former acting US attorney Joon H. Kim and his law firm Wachtell Lipton to investigate Jensen Huang's affair with alleged Chinese spy Alice Huang. Wachtell partner Joon H. Kim, a former acting U.S. attorney, is leading the inquiry into the chip maker's chief executive.",
+   "title": "Nvidia's stock closed down 5.47% on Tuesday, following a 4.27% drop on Monday, after Jensen Huang a…",
+   "url": "https://www.cnbc.com/2026/11/10/nvidia-nvda-jensen-huang-affair-chinese-spy.html",
+   "source": "April Roach / CNBC",
+   "published_at": "2026-11-11T04:45:57Z",
+   "text": "Nvidia's stock closed down 5.47% on Tuesday, following a 4.27% drop on Monday, after Jensen Huang admitted to an affair with Alice Huang, an alleged Chinese spy. Nvidia shares sank 5.47% on Tuesday as investors continued to weigh the potential fallout from CEO Jensen Huang's affair with an alleged Chinese spy.",
    "via": "Techmeme"
   },
   {
@@ -60,8 +60,8 @@
    "url": "https://pietromiotti.com/latest/maya-site/?maya",
    "source": "Hacker News",
    "published_at": "2026-11-11T12:05:22Z",
-   "text": "321 points and 128 comments on Hacker News.",
-   "points": 321,
+   "text": "429 points and 155 comments on Hacker News.",
+   "points": 429,
    "discussion": "https://news.ycombinator.com/item?id=50452455"
   },
   {
@@ -71,7 +71,7 @@
    "published_at": "2026-11-10T18:06:42Z",
    "text": "Now in beta: Businesses in ChatGPT. Claim your business, manage your information, and get insights on how people engage with you. Eligible businesses can also build a Business Agent to answer customers’ questions and help them explore what you offer.",
    "author_name": "OpenAI",
-   "likes": 15979,
+   "likes": 16100,
    "story": "OpenAI launches Businesses in ChatGPT in beta, including Business Agents for companies to interact with users and a hub where companies can claim their profiles",
    "links": [
     "https://openai.com/index/introducing-businesses-chatgpt/"
@@ -92,11 +92,11 @@
    "text": "Our house has a box room, full of boxes that we still haven't unpacked from our last move. A couple of weeks ago something in that room started intermittently beeping . The beeps were far enough apart that standing in the room and trying to determine the source of the noise was frustrating, and I really didn't want to dig through every one of those boxes. So I had Claude Code build Beep Locator , a software system for triangulating the source of a mysterious beep using multiple devices scattered around the room."
   },
   {
-   "title": "Nvidia's stock closed down 5.47% on Tuesday, following a 4.27% drop on Monday, after Jensen Huang a…",
-   "url": "https://www.cnbc.com/2026/11/10/nvidia-nvda-jensen-huang-affair-chinese-spy.html",
-   "source": "April Roach / CNBC",
-   "published_at": "2026-11-11T04:45:57Z",
-   "text": "Nvidia's stock closed down 5.47% on Tuesday, following a 4.27% drop on Monday, after Jensen Huang admitted to an affair with Alice Huang, an alleged Chinese spy. Nvidia shares sank 5.47% on Tuesday as investors continued to weigh the potential fallout from CEO Jensen Huang's affair with an alleged Chinese spy.",
+   "title": "Nvidia hires former acting US attorney Joon H. Kim and his law firm Wachtell Lipton to investigate…",
+   "url": "https://www.nytimes.com/2026/11/10/business/nvidia-wachtell-lipton-jensen-huang.html?unlocked_article_code=1.PlE.sErx.ZWYsX_IkgKLe&smid=url-share",
+   "source": "New York Times",
+   "published_at": "2026-11-10T19:26:28Z",
+   "text": "Nvidia hires former acting US attorney Joon H. Kim and his law firm Wachtell Lipton to investigate Jensen Huang's affair with alleged Chinese spy Alice Huang. Wachtell partner Joon H. Kim, a former acting U.S. attorney, is leading the inquiry into the chip maker's chief executive.",
    "via": "Techmeme"
   },
   {
@@ -106,16 +106,16 @@
    "published_at": "2026-11-10T17:47:14Z",
    "text": "STATE OF THE TECH JOB MARKET IN 2026 Twice a year, I dig into trends in hiring and job openings. This is the fifth report I've done, and the most surprising yet: 1. PMs are winning in the AI era 2. Engineering demand has stalled 3. Design openings are at a record low 4. Every…",
    "author_name": "Lenny Rachitsky",
-   "likes": 4220,
-   "story": "An analysis of the tech job market in late 2026: product managers seem to be benefiting most in the AI era, demand for engineers is plateauing, and more"
+   "likes": 4300,
+   "story": "An analysis of the tech job market in late 2026: product managers seem to be benefiting the most in the AI era, demand for engineers is plateauing, and more"
   },
   {
    "title": "Apple has new Mac app coming to make running local AI models easy",
    "url": "https://9to5mac.com/2026/11/10/apple-has-new-mac-app-coming-to-make-running-local-ai-models-easy/",
    "source": "Hacker News",
    "published_at": "2026-11-10T21:25:03Z",
-   "text": "374 points and 380 comments on Hacker News.",
-   "points": 374,
+   "text": "399 points and 402 comments on Hacker News.",
+   "points": 399,
    "discussion": "https://news.ycombinator.com/item?id=50446520"
   },
   {
@@ -125,7 +125,7 @@
    "published_at": "2026-11-11T05:42:38Z",
    "text": "ERNIE 5.5 Flash Preview just landed! 🔥 Built on a new architecture designed for efficient inference, the latest open-weight foundation model in the ERNIE family delivers stronger performance in coding, 3D modeling, knowledge work and content creation. It keeps decoding fast…",
    "author_name": "Baidu Inc.",
-   "likes": 1072,
+   "likes": 1107,
    "story": "Ernie 5.5 Flash will be released in two weeks"
   },
   {
