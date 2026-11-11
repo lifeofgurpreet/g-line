@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-11T16:42:02Z",
+ "generated_at": "2026-11-11T17:14:29Z",
  "items": [
   {
    "title": "Sources: Anthropic's IPO draws multiple times the orders for the shares available; a source says Da…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-11T15:03:17Z",
    "text": "Your heart, brain, and immune system share the same DNA sequence. So how can a single-letter change affect disease in some cells, while sparing the rest? AlphaGenome 2 is our new AI model that zooms in on specific cells to help scientists understand what drives disease. 🧵…",
    "author_name": "Google DeepMind",
-   "likes": 623,
+   "likes": 829,
    "story": "Google DeepMind launches AlphaGenome 2, trained on 100M+ cell profiles across 68 tissues to predict genetic mutation effects, for non-commercial research"
   },
   {
@@ -28,13 +28,23 @@
    "text": "Added fast mode on Vertex in the global, us and eu regions, falling back to standard speed if Vertex refuses it"
   },
   {
+   "title": "we’re like one month away from rainbow ICE agent uniforms if these people aren’t actually held acco…",
+   "url": "https://x.com/mattxiv/status/2120537996097102005",
+   "source": "𝕏 @mattxiv",
+   "published_at": "2026-11-11T15:23:50Z",
+   "text": "we’re like one month away from rainbow ICE agent uniforms if these people aren’t actually held accountable",
+   "author_name": "matt bernstein",
+   "likes": 5232,
+   "story": "After the US midterms, Palantir CEO Alex Karp pivots toward Democrats, describing his philosophy as “progressive” and praising Trump for saying ICE went too far"
+  },
+  {
    "title": "Anyhow, in a little over a week we will see the release of The Last Human Game. There will never be…",
    "url": "https://x.com/emollick/status/2120502534695514279",
    "source": "𝕏 @emollick",
    "published_at": "2026-11-11T13:02:55Z",
    "text": "Anyhow, in a little over a week we will see the release of The Last Human Game. There will never be another AAA game at the scale of GTA 6 with no AI assistance. People will look back at an all-human game with a billion dollar budget and wonder how they did it, like the Pyramids",
    "author_name": "Ethan Mollick",
-   "likes": 1857,
+   "likes": 2052,
    "story": "Game developer House House confirms using AI during Big Walk's final development, sparking an intense debate among Independent Games Festival judges and jurors"
   },
   {
@@ -50,18 +60,18 @@
    "url": "https://pietromiotti.com/latest/maya-site/?maya",
    "source": "Hacker News",
    "published_at": "2026-11-11T12:05:22Z",
-   "text": "641 points and 247 comments on Hacker News.",
-   "points": 641,
+   "text": "703 points and 261 comments on Hacker News.",
+   "points": 703,
    "discussion": "https://news.ycombinator.com/item?id=50452455"
   },
   {
-   "title": "STATE OF THE TECH JOB MARKET IN 2026 Twice a year, I dig into trends in hiring and job openings. Th…",
-   "url": "https://x.com/lennysan/status/2120211695453028770",
-   "source": "𝕏 @lennysan",
-   "published_at": "2026-11-10T17:47:14Z",
-   "text": "STATE OF THE TECH JOB MARKET IN 2026 Twice a year, I dig into trends in hiring and job openings. This is the fifth report I've done, and the most surprising yet: 1. PMs are winning in the AI era 2. Engineering demand has stalled 3. Design openings are at a record low 4. Every…",
-   "author_name": "Lenny Rachitsky",
-   "likes": 4478,
+   "title": "Fresh data confirms what I shared back in April: native mobile and frontend roles are dying. This t…",
+   "url": "https://x.com/GergelyOrosz/status/2120426774576103438",
+   "source": "𝕏 @GergelyOrosz",
+   "published_at": "2026-11-11T08:01:53Z",
+   "text": "Fresh data confirms what I shared back in April: native mobile and frontend roles are dying. This trend sped up. Safe to assume the only devs getting such jobs are very experienced ones. You need to become a more general software engineer with AI, to have career stability.",
+   "author_name": "Gergely Orosz",
+   "likes": 1412,
    "story": "An analysis of the tech job market in late 2026: product managers seem to be benefiting the most in the AI era, demand for engineers is plateauing, and more"
   },
   {
@@ -93,7 +103,7 @@
    "published_at": "2026-11-11T05:42:38Z",
    "text": "ERNIE 5.5 Flash Preview just landed! 🔥 Built on a new architecture designed for efficient inference, the latest open-weight foundation model in the ERNIE family delivers stronger performance in coding, 3D modeling, knowledge work and content creation. It keeps decoding fast…",
    "author_name": "Baidu Inc.",
-   "likes": 1200,
+   "likes": 1216,
    "story": "Ernie 5.5 Flash will be released in two weeks"
   },
   {
@@ -101,8 +111,8 @@
    "url": "https://blog.atuin.sh/threads-agent-sessions/",
    "source": "Hacker News",
    "published_at": "2026-11-11T14:10:46Z",
-   "text": "68 points and 29 comments on Hacker News.",
-   "points": 68,
+   "text": "91 points and 34 comments on Hacker News.",
+   "points": 91,
    "discussion": "https://news.ycombinator.com/item?id=50453637"
   },
   {
@@ -118,16 +128,9 @@
    "url": "https://9to5mac.com/2026/11/10/apple-has-new-mac-app-coming-to-make-running-local-ai-models-easy/",
    "source": "Hacker News",
    "published_at": "2026-11-10T21:25:03Z",
-   "text": "436 points and 454 comments on Hacker News.",
-   "points": 436,
+   "text": "451 points and 467 comments on Hacker News.",
+   "points": 451,
    "discussion": "https://news.ycombinator.com/item?id=50446520"
-  },
-  {
-   "title": "Hide your slop PR descriptions behind <details><summary>",
-   "url": "https://simonwillison.net/2026/Nov/9/details-summary/",
-   "source": "Simon Willison's weblog",
-   "published_at": "2026-11-09T04:25:05Z",
-   "text": "Most of the changes I make to my projects these days come in the form of PRs opened for me by Claude Code or Codex. The PR is my unit of work - I use them to bundle commits together, iterating on them until a feature is complete, document decisions and then merge the finished result. Today's coding agents are great at writing PR descriptions. They're too good at describing the work The problem is that they are too good. An agent-written PR description is accurate and comprehensive. It describes the problem, the detailed solution, and the steps taken to verify it."
   }
  ],
  "sources": "curated, Techmeme, X (found via Techmeme, Reddit, the Internet Archive), Claude Code releases, Anthropic, Hacker News, Simon Willison"
