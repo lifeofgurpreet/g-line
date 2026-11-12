@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-12T09:14:19Z",
+ "generated_at": "2026-11-12T09:47:00Z",
  "items": [
   {
    "title": "Sources: Nvidia's board is preparing to oust Jensen Huang after he had two extramarital affairs; NV…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-11T18:16:26Z",
    "text": "Introducing Gemini Decision 1, our new frontier decision model in the Gemini API. It is $0.10 per 1M input tokens with no additional cost. With support for image, audio, video, and PDF natively, 256K context window, & 1K questions. You can try it for free in the API!",
    "author_name": "Logan Kilpatrick",
-   "likes": 9440,
+   "likes": 9484,
    "story": "Google launches Gemini Decisions API, powered by its new Gemini Decision 1 model, to return predefined answers with confidence scores, at $0.10/1M input tokens"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-11-11T17:12:24Z",
    "text": "Super proud to announce AlphaGenome 2 - our new DNA sequence model! 🧬 It predicts the impact of DNA variants in different specific cell types - unlocking crucial information for understanding complex diseases. Available for academic research via our API:",
    "author_name": "Demis Hassabis",
-   "likes": 3114,
+   "likes": 3130,
    "story": "Google DeepMind launches AlphaGenome 2, trained on 100M+ cell profiles across 68 tissues to predict the effects of genetic variants, for non-commercial research",
    "links": [
     "https://www.alphagenomedocs.com/"
@@ -49,13 +49,13 @@
    "via": "Techmeme"
   },
   {
-   "title": "Humble Bundle just killed most of their security through vibecoding",
-   "url": "https://forums.spacebattles.com/threads/humble-bundle-just-completely-killed-most-of-their-security-through-vibecoding.1346295/",
+   "title": "United Airlines bans AI agents from booking flights on behalf of travelers",
+   "url": "https://www.cbsnews.com/news/united-airlines-bans-ai-agents-booking-flights/",
    "source": "Hacker News",
-   "published_at": "2026-11-12T06:52:48Z",
-   "text": "229 points and 119 comments on Hacker News.",
-   "points": 229,
-   "discussion": "https://news.ycombinator.com/item?id=50463899"
+   "published_at": "2026-11-11T21:24:35Z",
+   "text": "551 points and 546 comments on Hacker News.",
+   "points": 551,
+   "discussion": "https://news.ycombinator.com/item?id=50458900"
   },
   {
    "title": "Anthropic is now looking at raising $90 billion in their IPO, and it is massively oversubscribed. T…",
@@ -64,7 +64,7 @@
    "published_at": "2026-11-11T13:34:22Z",
    "text": "Anthropic is now looking at raising $90 billion in their IPO, and it is massively oversubscribed. There will be a livestreamed event with Dario Amodei on Friday.",
    "author_name": "Andrew Curran",
-   "likes": 620,
+   "likes": 621,
    "story": "Sources: Anthropic's IPO draws multiple times the orders for the shares available; a source says Dario Amodei and Jamie Dimon have a livestream event on Friday"
   },
   {
@@ -90,13 +90,13 @@
    "via": "Techmeme"
   },
   {
-   "title": "United Airlines bans AI agents from booking flights on behalf of travelers",
-   "url": "https://www.cbsnews.com/news/united-airlines-bans-ai-agents-booking-flights/",
+   "title": "My AI agents found an unmapped Maya site?",
+   "url": "https://pietromiotti.com/latest/maya-site",
    "source": "Hacker News",
-   "published_at": "2026-11-11T21:24:35Z",
-   "text": "544 points and 533 comments on Hacker News.",
-   "points": 544,
-   "discussion": "https://news.ycombinator.com/item?id=50458900"
+   "published_at": "2026-11-11T12:05:22Z",
+   "text": "989 points and 359 comments on Hacker News.",
+   "points": 989,
+   "discussion": "https://news.ycombinator.com/item?id=50452455"
   },
   {
    "title": "Sources: Howard Lutnick has stalled curbs on companies suspected of diverting Nvidia chips to China…",
@@ -105,15 +105,6 @@
    "published_at": "2026-11-11T23:21:09Z",
    "text": "Sources: Howard Lutnick has stalled curbs on companies suspected of diverting Nvidia chips to China; Trump approved curbs for a third time in 2026 on November 5. President Trump on Thursday authorized a crack down on companies suspected of diverting Nvidia's advanced AI chips to China …",
    "via": "Techmeme"
-  },
-  {
-   "title": "My AI agents found an unmapped Maya site?",
-   "url": "https://pietromiotti.com/latest/maya-site",
-   "source": "Hacker News",
-   "published_at": "2026-11-11T12:05:22Z",
-   "text": "985 points and 358 comments on Hacker News.",
-   "points": 985,
-   "discussion": "https://news.ycombinator.com/item?id=50452455"
   },
   {
    "title": "Silicon Valley's herd mentality in cozying up to Trump backfired as Democrats may seek retribution,…",
@@ -129,6 +120,14 @@
    "source": "Todd Bishop / GeekWire",
    "published_at": "2026-11-11T20:26:31Z",
    "text": "AWS releases AWS Emulator, a free tool that simulates 200+ services locally, saying AI agents wrote it and its team hasn't written or reviewed any of its code. AWS says its engineers didn't write or review a single line of code in its newest developer tool, and the company is touting that as a selling point.",
+   "via": "Techmeme"
+  },
+  {
+   "title": "United Airlines says it will block third-party AI assistants from booking tickets to protect its cu…",
+   "url": "https://www.wsj.com/tech/ai/united-airlines-is-banning-ai-bots-from-booking-flights-5b514b38?st=ytrzi1",
+   "source": "Alison Sider / Wall Street…",
+   "published_at": "2026-11-11T18:41:01Z",
+   "text": "United Airlines says it will block third-party AI assistants from booking tickets to protect its customers' data, citing potential FAA and DOT rule violations. The carrier says automated assistants present data-privacy risks; 'I don't want to create another middleman'",
    "via": "Techmeme"
   }
  ],
