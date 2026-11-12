@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-12T06:33:43Z",
+ "generated_at": "2026-11-12T07:06:45Z",
  "items": [
   {
    "title": "Sources: Nvidia's board is preparing to oust Jensen Huang after he had two extramarital affairs; NV…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-11T18:16:26Z",
    "text": "Introducing Gemini Decision 1, our new frontier decision model in the Gemini API. It is $0.10 per 1M input tokens with no additional cost. With support for image, audio, video, and PDF natively, 256K context window, & 1K questions. You can try it for free in the API!",
    "author_name": "Logan Kilpatrick",
-   "likes": 9104,
+   "likes": 9177,
    "story": "Google launches Gemini Decisions API, powered by its new Gemini Decision 1 model, to return predefined answers with confidence scores, at $0.10/1M input tokens"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-11-11T17:12:24Z",
    "text": "Super proud to announce AlphaGenome 2 - our new DNA sequence model! 🧬 It predicts the impact of DNA variants in different specific cell types - unlocking crucial information for understanding complex diseases. Available for academic research via our API:",
    "author_name": "Demis Hassabis",
-   "likes": 2994,
+   "likes": 3021,
    "story": "Google DeepMind launches AlphaGenome 2, trained on 100M+ cell profiles across 68 tissues to predict the effects of genetic variants, for non-commercial research",
    "links": [
     "https://www.alphagenomedocs.com/"
@@ -53,8 +53,8 @@
    "url": "https://www.cbsnews.com/news/united-airlines-bans-ai-agents-booking-flights/",
    "source": "Hacker News",
    "published_at": "2026-11-11T21:24:35Z",
-   "text": "505 points and 489 comments on Hacker News.",
-   "points": 505,
+   "text": "510 points and 498 comments on Hacker News.",
+   "points": 510,
    "discussion": "https://news.ycombinator.com/item?id=50458900"
   },
   {
@@ -64,7 +64,7 @@
    "published_at": "2026-11-11T13:02:55Z",
    "text": "Anyhow, in a little over a week we will see the release of The Last Human Game. There will never be another AAA game at the scale of GTA 6 with no AI assistance. People will look back at an all-human game with a billion dollar budget and wonder how they did it, like the Pyramids",
    "author_name": "Ethan Mollick",
-   "likes": 3750,
+   "likes": 3767,
    "story": "Game developer House House confirms using AI during Big Walk's final development, sparking an intense debate among Independent Games Festival judges and jurors"
   },
   {
@@ -96,7 +96,7 @@
    "published_at": "2026-11-11T13:34:22Z",
    "text": "Anthropic is now looking at raising $90 billion in their IPO, and it is massively oversubscribed. There will be a livestreamed event with Dario Amodei on Friday.",
    "author_name": "Andrew Curran",
-   "likes": 618,
+   "likes": 619,
    "story": "Sources: Anthropic's IPO draws multiple times the orders for the shares available; a source says Dario Amodei and Jamie Dimon have a livestream event on Friday"
   },
   {
@@ -104,8 +104,8 @@
    "url": "https://pietromiotti.com/latest/maya-site",
    "source": "Hacker News",
    "published_at": "2026-11-11T12:05:22Z",
-   "text": "966 points and 354 comments on Hacker News.",
-   "points": 966,
+   "text": "969 points and 354 comments on Hacker News.",
+   "points": 969,
    "discussion": "https://news.ycombinator.com/item?id=50452455"
   },
   {
