@@ -1,13 +1,13 @@
 {
  "schema": 1,
- "generated_at": "2026-11-12T10:18:32Z",
+ "generated_at": "2026-11-12T10:51:41Z",
  "items": [
   {
    "title": "Sources: Nvidia's board is preparing to oust Jensen Huang after he had two extramarital affairs, on…",
    "url": "https://www.wsj.com/business/nvidia-is-preparing-to-oust-nvidia-ceo-jensen-huang-30f421ad?st=1PYhvY",
    "source": "Wall Street Journal",
    "published_at": "2026-11-11T22:33:33Z",
-   "text": "Sources: Nvidia's board is preparing to oust Jensen Huang after he had two extramarital affairs, one with a suspected Chinese spy; NVDA drops 9%+ after hours. Move follows company investigation into an affair with a Chinese woman alleged to be a spy — Nvidia's board is preparing …",
+   "text": "Sources: Nvidia's board is preparing to oust Jensen Huang after he had two extramarital affairs, one with a suspected Chinese spy; NVDA drops 5%+ after hours. Move follows company investigation into an affair with a Chinese woman alleged to be a spy — Nvidia's board is preparing …",
    "via": "Techmeme"
   },
   {
@@ -17,7 +17,7 @@
    "published_at": "2026-11-11T18:16:26Z",
    "text": "Introducing Gemini Decision 1, our new frontier decision model in the Gemini API. It is $0.10 per 1M input tokens with no additional cost. With support for image, audio, video, and PDF natively, 256K context window, & 1K questions. You can try it for free in the API!",
    "author_name": "Logan Kilpatrick",
-   "likes": 9532,
+   "likes": 9586,
    "story": "Google launches Gemini Decisions API, powered by its new Gemini Decision 1 model, to return predefined answers with confidence scores, at $0.10/1M input tokens"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-11-11T17:12:24Z",
    "text": "Super proud to announce AlphaGenome 2 - our new DNA sequence model! 🧬 It predicts the impact of DNA variants in different specific cell types - unlocking crucial information for understanding complex diseases. Available for academic research via our API:",
    "author_name": "Demis Hassabis",
-   "likes": 3152,
+   "likes": 3178,
    "story": "Google DeepMind launches AlphaGenome 2, trained on 100M+ cell profiles across 68 tissues to predict the effects of genetic variants, for non-commercial research",
    "links": [
     "https://www.alphagenomedocs.com/"
@@ -42,7 +42,7 @@
   },
   {
    "title": "Source: Nvidia's board is working with an outside firm to identify possible replacements for Jensen…",
-   "url": "https://www.bloomberg.com/news/articles/2026-11-11/nvidia-working-with-outside-firm-to-identify-ceo-candidates",
+   "url": "https://www.bloomberg.com/news/articles/2026-11-11/nvidia-working-with-outside-firm-to-identify-ceo-candidates?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc5NDQ0NTgwMywiZXhwIjoxNzk1MDUwNjAzLCJhcnRpY2xlSWQiOiJUT0QyVVlUOU5KTFowMCIsImJjb25uZWN0SWQiOiI5NzgyREZGRDAzQTM0MDI5QTcyRUY3NTgyM0RGRTY1QSJ9.Iy9tPhPgzh5MRtdy7eV24LhP0uHChwQGjL9TnGHDVxw",
    "source": "Bloomberg",
    "published_at": "2026-11-12T00:16:05Z",
    "text": "Source: Nvidia's board is working with an outside firm to identify possible replacements for Jensen Huang and weighs naming a temporary CEO during the search. Nvidia Corp.'s board has been working with an outside firm to identify potential replacements for Chief Executive Officer Jensen …",
@@ -53,8 +53,8 @@
    "url": "https://www.cbsnews.com/news/united-airlines-bans-ai-agents-booking-flights/",
    "source": "Hacker News",
    "published_at": "2026-11-11T21:24:35Z",
-   "text": "556 points and 550 comments on Hacker News.",
-   "points": 556,
+   "text": "561 points and 557 comments on Hacker News.",
+   "points": 561,
    "discussion": "https://news.ycombinator.com/item?id=50458900"
   },
   {
@@ -64,7 +64,7 @@
    "published_at": "2026-11-11T13:34:22Z",
    "text": "Anthropic is now looking at raising $90 billion in their IPO, and it is massively oversubscribed. There will be a livestreamed event with Dario Amodei on Friday.",
    "author_name": "Andrew Curran",
-   "likes": 623,
+   "likes": 626,
    "story": "Sources: Anthropic's IPO draws multiple times the orders for the shares available; a source says Dario Amodei and Jamie Dimon have a livestream event on Friday"
   },
   {
@@ -94,8 +94,8 @@
    "url": "https://pietromiotti.com/latest/maya-site",
    "source": "Hacker News",
    "published_at": "2026-11-11T12:05:22Z",
-   "text": "990 points and 361 comments on Hacker News.",
-   "points": 990,
+   "text": "993 points and 364 comments on Hacker News.",
+   "points": 993,
    "discussion": "https://news.ycombinator.com/item?id=50452455"
   },
   {
@@ -123,11 +123,11 @@
    "via": "Techmeme"
   },
   {
-   "title": "Sources: the US Commerce Department is finalizing a semiconductor control update that would prevent…",
-   "url": "https://www.theinformation.com/articles/commerce-department-finalizing-long-awaited-ai-remote-access-rule",
-   "source": "Leo Schwartz / The Informat…",
-   "published_at": "2026-11-12T03:25:59Z",
-   "text": "Sources: the US Commerce Department is finalizing a semiconductor control update that would prevent remote access and chip smuggling into China via data centers. The Commerce Department is finalizing a long-awaited rule that will prevent Chinese AI firms from remotely accessing advanced …",
+   "title": "United Airlines says it will block third-party AI assistants from booking tickets to protect its cu…",
+   "url": "https://www.wsj.com/tech/ai/united-airlines-is-banning-ai-bots-from-booking-flights-5b514b38?st=ytrzi1",
+   "source": "Alison Sider / Wall Street…",
+   "published_at": "2026-11-11T18:41:01Z",
+   "text": "United Airlines says it will block third-party AI assistants from booking tickets to protect its customers' data, citing potential FAA and DOT rule violations. The carrier says automated assistants present data-privacy risks; 'I don't want to create another middleman'",
    "via": "Techmeme"
   }
  ],
