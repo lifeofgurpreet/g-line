@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-12T17:20:54Z",
+ "generated_at": "2026-11-12T17:53:06Z",
  "items": [
   {
    "title": "Jensen Huang resigns as Nvidia CEO, president, and board member; CFO Colette Kress will serve as in…",
@@ -18,11 +18,11 @@
    "text": "Added fast mode on Vertex in the global, us and eu regions, falling back to standard speed if Vertex refuses it"
   },
   {
-   "title": "Sources: Jensen Huang had an extramarital relationship with Nvidia VP of Healthcare Kimberly Powell…",
-   "url": "https://www.nytimes.com/2026/11/11/technology/jensen-huang-nvidia-affair.html?unlocked_article_code=1.PlE.QYQK.ExXQ3moeKx-i&smid=nytcore-ios-share",
-   "source": "New York Times",
-   "published_at": "2026-11-11T22:04:49Z",
-   "text": "Sources: Jensen Huang had an extramarital relationship with Nvidia VP of Healthcare Kimberly Powell, who reports to him; the affair was discussed inside Nvidia. Mr. Huang, Nvidia's chief executive, is already facing scrutiny over an affair with a Chinese businesswoman who U.S. intelligence determined was a Chinese spy.",
+   "title": "Trump says Tim Cook is the “only one man” to replace Jensen Huang as Nvidia CEO, adding “A Legend r…",
+   "url": "https://9to5mac.com/2026/11/12/president-trump-calls-on-tim-cook-to-be-next-nvidia-ceo/",
+   "source": "Zac Hall / 9to5Mac",
+   "published_at": "2026-11-12T16:06:04Z",
+   "text": "Trump says Tim Cook is the “only one man” to replace Jensen Huang as Nvidia CEO, adding “A Legend replaces a Legend!” and Huang “has done a fantastic job”. Jensen Huang is out as CEO of NVIDIA after reported love affairs with an alleged Chinese spy and a high-ranking executive at the company.",
    "via": "Techmeme"
   },
   {
@@ -30,8 +30,8 @@
    "url": "https://ipo.anthropic.com/us/",
    "source": "Hacker News",
    "published_at": "2026-11-12T11:46:41Z",
-   "text": "536 points and 562 comments on Hacker News.",
-   "points": 536,
+   "text": "602 points and 615 comments on Hacker News.",
+   "points": 602,
    "discussion": "https://news.ycombinator.com/item?id=50465829"
   },
   {
@@ -49,21 +49,21 @@
    "text": "Our house has a box room, full of boxes that we still haven't unpacked from our last move. A couple of weeks ago something in that room started intermittently beeping . The beeps were far enough apart that standing in the room and trying to determine the source of the noise was frustrating, and I really didn't want to dig through every one of those boxes. So I had Claude Code build Beep Locator , a software system for triangulating the source of a mysterious beep using multiple devices scattered around the room."
   },
   {
-   "title": "President Trump says Tim Cook is the “only one man” to take Jensen Huang's place as Nvidia CEO, add…",
-   "url": "https://9to5mac.com/2026/11/12/president-trump-calls-on-tim-cook-to-be-next-nvidia-ceo/",
-   "source": "Zac Hall / 9to5Mac",
-   "published_at": "2026-11-12T16:06:04Z",
-   "text": "President Trump says Tim Cook is the “only one man” to take Jensen Huang's place as Nvidia CEO, adding “A Legend replaces a Legend!”. Jensen Huang is out as CEO of NVIDIA after reported love affairs with an alleged Chinese spy and a high-ranking executive at the company.",
+   "title": "Sources: Jensen Huang had an extramarital relationship with Nvidia VP of Healthcare Kimberly Powell…",
+   "url": "https://www.nytimes.com/2026/11/11/technology/jensen-huang-nvidia-affair.html?unlocked_article_code=1.PlE.QYQK.ExXQ3moeKx-i&smid=nytcore-ios-share",
+   "source": "New York Times",
+   "published_at": "2026-11-11T22:04:49Z",
+   "text": "Sources: Jensen Huang had an extramarital relationship with Nvidia VP of Healthcare Kimberly Powell, who reports to him; the affair was discussed inside Nvidia. Mr. Huang, Nvidia's chief executive, is already facing scrutiny over an affair with a Chinese businesswoman who U.S. intelligence determined was a Chinese spy.",
    "via": "Techmeme"
   },
   {
-   "title": "Libreagi – Save OSS Models",
-   "url": "https://libreagi.com/",
+   "title": "I'm making LLMs work on small and old devices",
+   "url": "https://github.com/hyperionaidev/smolmaxxing/",
    "source": "Hacker News",
-   "published_at": "2026-11-12T14:11:58Z",
-   "text": "62 points and 16 comments on Hacker News.",
-   "points": 62,
-   "discussion": "https://news.ycombinator.com/item?id=50467439"
+   "published_at": "2026-11-12T15:23:10Z",
+   "text": "87 points and 23 comments on Hacker News.",
+   "points": 87,
+   "discussion": "https://news.ycombinator.com/item?id=50468888"
   },
   {
    "title": "Nvidia appoints ex-Synopsys CEO Harvey C. Jones as its first-ever board chair; the board's Jensen H…",
@@ -74,20 +74,20 @@
    "via": "Techmeme"
   },
   {
-   "title": "Claude Whiteboards, Claude Sheets, and Claude Data",
-   "url": "https://claude.com/resources/articles/sheets-whiteboards-data",
+   "title": "Libreagi – Save OSS Models",
+   "url": "https://libreagi.com/",
    "source": "Hacker News",
-   "published_at": "2026-11-10T17:55:07Z",
-   "text": "288 points and 217 comments on Hacker News.",
-   "points": 288,
-   "discussion": "https://news.ycombinator.com/item?id=50443716"
+   "published_at": "2026-11-12T14:11:58Z",
+   "text": "70 points and 16 comments on Hacker News.",
+   "points": 70,
+   "discussion": "https://news.ycombinator.com/item?id=50467439"
   },
   {
-   "title": "Source: Nvidia's board is considering Apple Chief Hardware Officer Johny Srouji as a CEO candidate",
-   "url": "https://www.semafor.com/article/11/11/2026/nvidia-board-preparing-to-oust-ceo-huang-wsj",
-   "source": "Semafor",
-   "published_at": "2026-11-12T02:46:03Z",
-   "text": "Source: Nvidia's board is considering Apple Chief Hardware Officer Johny Srouji as a CEO candidate. THE SCOOP — Some members of Nvidia's board favor appointing Chief Financial Officer Colette Kress as interim CEO at the beleaguered chipmaker if CEO and founder Jensen Huang is ousted, according to people familiar with the matter.",
+   "title": "Sources: Nvidia employees, known for their fierce loyalty to Jensen Huang, have been left stunned a…",
+   "url": "https://www.ft.com/content/e47f7d4a-88d7-41e4-8c77-8ea8e0769353?accessToken=zwAAAaHPhFm5kdPkf31KiNdB5NOMd46o4HaTUw.MEYCIQDn7haOOhte2euVfaveEEuuu6oyLb6EGB81Ig-N5Kp9owIhAO4Keb4MB0HPnWJkYPv_ytT_h8nV4dAHcFZK6Tbb281i&sharetype=gift&token=ad013966-8ec4-4ec4-ada8-f1ecf13aa7e2&syn-25a6b1a6=1",
+   "source": "Michael Acton / Financial T…",
+   "published_at": "2026-11-12T12:01:32Z",
+   "text": "Sources: Nvidia employees, known for their fierce loyalty to Jensen Huang, have been left stunned and some are angry at the news of his extramarital affairs",
    "via": "Techmeme"
   },
   {
@@ -96,14 +96,6 @@
    "source": "Adam Satariano / New York T…",
    "published_at": "2026-11-12T14:30:52Z",
    "text": "A profile of interim Nvidia CEO Colette Kress, who joined in 2013 after working at Cisco and Microsoft; as CFO, Kress criticized US export controls on China. Ms. Kress, the company's chief financial officer, joined Nvidia in 2013. — Colette Kress, a longtime Nvidia executive …",
-   "via": "Techmeme"
-  },
-  {
-   "title": "Sources: Nvidia employees, known for their fierce loyalty to Jensen Huang, have been left stunned a…",
-   "url": "https://www.ft.com/content/e47f7d4a-88d7-41e4-8c77-8ea8e0769353?accessToken=zwAAAaHPhFm5kdPkf31KiNdB5NOMd46o4HaTUw.MEYCIQDn7haOOhte2euVfaveEEuuu6oyLb6EGB81Ig-N5Kp9owIhAO4Keb4MB0HPnWJkYPv_ytT_h8nV4dAHcFZK6Tbb281i&sharetype=gift&token=ad013966-8ec4-4ec4-ada8-f1ecf13aa7e2&syn-25a6b1a6=1",
-   "source": "Michael Acton / Financial T…",
-   "published_at": "2026-11-12T12:01:32Z",
-   "text": "Sources: Nvidia employees, known for their fierce loyalty to Jensen Huang, have been left stunned and some are angry at the news of his extramarital affairs",
    "via": "Techmeme"
   },
   {
@@ -120,6 +112,14 @@
    "source": "Jennifer Pattison Tuohy / T…",
    "published_at": "2026-11-12T14:05:42Z",
    "text": "Apple HomeView review: fast home controls, helpful Siri AI, gorgeous customizable faces, great sound for its size, but Siri can be slow and pricey wall mount. The HomeView nails everything I want from a smart display. It's superb at controlling my smart home; it's an excellent hands …",
+   "via": "Techmeme"
+  },
+  {
+   "title": "Sources: Howard Lutnick has stalled curbs on companies suspected of diverting Nvidia chips to China…",
+   "url": "https://www.axios.com/2026/11/11/trump-lutnick-nvidia-china-chip-export-controls",
+   "source": "Axios",
+   "published_at": "2026-11-11T23:21:09Z",
+   "text": "Sources: Howard Lutnick has stalled curbs on companies suspected of diverting Nvidia chips to China; Trump approved curbs for a third time in 2026 on November 5",
    "via": "Techmeme"
   }
  ],
