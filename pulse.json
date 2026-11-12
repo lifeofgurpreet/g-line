@@ -1,13 +1,13 @@
 {
  "schema": 1,
- "generated_at": "2026-11-12T14:38:15Z",
+ "generated_at": "2026-11-12T15:11:12Z",
  "items": [
   {
    "title": "Jensen Huang resigns as Nvidia CEO, president, and board member; CFO Colette Kress will be interim…",
    "url": "https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition",
    "source": "Nvidia Newsroom",
    "published_at": "2026-11-12T13:53:56Z",
-   "text": "Jensen Huang resigns as Nvidia CEO, president, and board member; CFO Colette Kress will be interim CEO, as the board considers candidates; NVDA drops 13%+. - Colette Kress, Executive Vice President and Chief Financial Officer, Appointed Interim CEO — Harvey C. Jones Appointed First-Ever Chair of the Board",
+   "text": "Jensen Huang resigns as Nvidia CEO, president, and board member; CFO Colette Kress will be interim CEO, as the board considers candidates; NVDA drops 5%+. - Colette Kress, Executive Vice President and Chief Financial Officer, Appointed Interim CEO — Harvey C. Jones Appointed First-Ever Chair of the Board",
    "via": "Techmeme"
   },
   {
@@ -17,7 +17,7 @@
    "published_at": "2026-11-11T18:16:26Z",
    "text": "Introducing Gemini Decision 1, our new frontier decision model in the Gemini API. It is $0.10 per 1M input tokens with no additional cost. With support for image, audio, video, and PDF natively, 256K context window, & 1K questions. You can try it for free in the API!",
    "author_name": "Logan Kilpatrick",
-   "likes": 9926,
+   "likes": 9970,
    "story": "Google launches Gemini Decisions API, powered by its new Gemini Decision 1 model, to return predefined answers with confidence scores, at $0.10/1M input tokens"
   },
   {
@@ -36,13 +36,13 @@
    "via": "Techmeme"
   },
   {
-   "title": "Anthropic IPO",
-   "url": "https://ipo.anthropic.com/us/",
+   "title": "Nvidia CEO Jensen Huang resigns after reports of second affair deepened scandal",
+   "url": "https://www.bbc.co.uk/news/live/c6zjry11v8w1t",
    "source": "Hacker News",
-   "published_at": "2026-11-12T11:46:41Z",
-   "text": "256 points and 291 comments on Hacker News.",
-   "points": 256,
-   "discussion": "https://news.ycombinator.com/item?id=50465829"
+   "published_at": "2026-11-12T13:56:38Z",
+   "text": "119 points and 52 comments on Hacker News.",
+   "points": 119,
+   "discussion": "https://news.ycombinator.com/item?id=50467139"
   },
   {
    "title": "Anthropic launches roadshow for proposed initial public offering",
@@ -67,13 +67,13 @@
    "via": "Techmeme"
   },
   {
-   "title": "Nvidia CEO Jensen Huang resigns after reports of second affair deepened scandal",
-   "url": "https://www.bbc.co.uk/news/live/c6zjry11v8w1t",
+   "title": "Anthropic IPO",
+   "url": "https://ipo.anthropic.com/us/",
    "source": "Hacker News",
-   "published_at": "2026-11-12T13:56:38Z",
-   "text": "60 points and 26 comments on Hacker News.",
-   "points": 60,
-   "discussion": "https://news.ycombinator.com/item?id=50467139"
+   "published_at": "2026-11-12T11:46:41Z",
+   "text": "290 points and 319 comments on Hacker News.",
+   "points": 290,
+   "discussion": "https://news.ycombinator.com/item?id=50465829"
   },
   {
    "title": "Source: Nvidia's board is considering Apple Chief Hardware Officer Johny Srouji as a CEO candidate",
@@ -84,11 +84,11 @@
    "via": "Techmeme"
   },
   {
-   "title": "A look at potential Nvidia CEO candidates, including CUDA inventor Ian Buck, Arm CEO Rene Haas, and…",
-   "url": "https://www.bloomberg.com/news/articles/2026-11-12/nvidia-drama-triggers-difficult-search-for-huang-s-successor",
-   "source": "Bloomberg",
-   "published_at": "2026-11-12T11:01:26Z",
-   "text": "A look at potential Nvidia CEO candidates, including CUDA inventor Ian Buck, Arm CEO Rene Haas, and Apple Chief Hardware Officer Johny Srouji",
+   "title": "A profile of interim Nvidia CEO Colette Kress, who joined in 2013 after working at Cisco and Micros…",
+   "url": "https://www.nytimes.com/2026/11/12/business/nvidia-colette-kress-jensen-huang.html",
+   "source": "Adam Satariano / New York T…",
+   "published_at": "2026-11-12T14:30:52Z",
+   "text": "A profile of interim Nvidia CEO Colette Kress, who joined in 2013 after working at Cisco and Microsoft; as CFO, Kress criticized US export controls on China. Ms. Kress, the company's chief financial officer, joined Nvidia in 2013. — Colette Kress, a longtime Nvidia executive …",
    "via": "Techmeme"
   },
   {
@@ -100,6 +100,14 @@
    "via": "Techmeme"
   },
   {
+   "title": "Sources: Nvidia employees, known for their fierce loyalty to Jensen Huang, have been left stunned a…",
+   "url": "https://www.ft.com/content/e47f7d4a-88d7-41e4-8c77-8ea8e0769353?accessToken=zwAAAaHPhFm5kdPkf31KiNdB5NOMd46o4HaTUw.MEYCIQDn7haOOhte2euVfaveEEuuu6oyLb6EGB81Ig-N5Kp9owIhAO4Keb4MB0HPnWJkYPv_ytT_h8nV4dAHcFZK6Tbb281i&sharetype=gift&token=ad013966-8ec4-4ec4-ada8-f1ecf13aa7e2&syn-25a6b1a6=1",
+   "source": "Michael Acton / Financial T…",
+   "published_at": "2026-11-12T12:01:32Z",
+   "text": "Sources: Nvidia employees, known for their fierce loyalty to Jensen Huang, have been left stunned and some are angry at the news of his extramarital affairs",
+   "via": "Techmeme"
+  },
+  {
    "title": "Sources: Howard Lutnick has stalled curbs on companies suspected of diverting Nvidia chips to China…",
    "url": "https://www.axios.com/2026/11/11/trump-lutnick-nvidia-china-chip-export-controls",
    "source": "Axios",
@@ -108,19 +116,11 @@
    "via": "Techmeme"
   },
   {
-   "title": "Nvidia stopped reporting Singapore revenue after its Q2 2025 ended on July 27, when it accounted fo…",
-   "url": "https://www.wsj.com/business/earnings/nvidias-disappearing-singapore-sales-deepen-mystery-around-megaspeed-7d483180?st=NS43G5",
-   "source": "Jonathan Weil / Wall Street…",
-   "published_at": "2026-11-12T05:36:05Z",
-   "text": "Nvidia stopped reporting Singapore revenue after its Q2 2025 ended on July 27, when it accounted for 22% of its revenue, after placing Megaspeed on a block list. Last year, just as scrutiny of Megaspeed was rising, Nvidia stopped reporting Singapore revenue",
-   "via": "Techmeme"
-  },
-  {
-   "title": "Russian pranksters tricked three OpenAI natsec and policy executives into a video meeting by posing…",
-   "url": "https://theintercept.com/2026/11/11/openai-ukraine-russia-prank-security/",
-   "source": "Sam Biddle / The Intercept",
-   "published_at": "2026-11-12T11:36:19Z",
-   "text": "Russian pranksters tricked three OpenAI natsec and policy executives into a video meeting by posing as Ukrainian officials; OpenAI says it “acted internally”. A Russian internet comedy duo tricked three of OpenAI's highest ranking military and national security staff into a candid conversation about arming Ukraine.",
+   "title": "A look at potential Nvidia CEO candidates, including CUDA inventor Ian Buck, Arm CEO Rene Haas, and…",
+   "url": "https://www.bloomberg.com/news/articles/2026-11-12/nvidia-drama-triggers-difficult-search-for-huang-s-successor",
+   "source": "Bloomberg",
+   "published_at": "2026-11-12T11:01:26Z",
+   "text": "A look at potential Nvidia CEO candidates, including CUDA inventor Ian Buck, Arm CEO Rene Haas, and Apple Chief Hardware Officer Johny Srouji. Nvidia Corp. is searching for a replacement for larger-than-life Chief Executive Officer Jensen Huang, a daunting challenge at the world's most valuable chipmaker.",
    "via": "Techmeme"
   }
  ],
