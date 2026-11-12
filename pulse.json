@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-12T08:10:14Z",
+ "generated_at": "2026-11-12T08:42:23Z",
  "items": [
   {
    "title": "Sources: Nvidia's board is preparing to oust Jensen Huang after he had two extramarital affairs; NV…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-11T18:16:26Z",
    "text": "Introducing Gemini Decision 1, our new frontier decision model in the Gemini API. It is $0.10 per 1M input tokens with no additional cost. With support for image, audio, video, and PDF natively, 256K context window, & 1K questions. You can try it for free in the API!",
    "author_name": "Logan Kilpatrick",
-   "likes": 9310,
+   "likes": 9372,
    "story": "Google launches Gemini Decisions API, powered by its new Gemini Decision 1 model, to return predefined answers with confidence scores, at $0.10/1M input tokens"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-11-11T17:12:24Z",
    "text": "Super proud to announce AlphaGenome 2 - our new DNA sequence model! 🧬 It predicts the impact of DNA variants in different specific cell types - unlocking crucial information for understanding complex diseases. Available for academic research via our API:",
    "author_name": "Demis Hassabis",
-   "likes": 3073,
+   "likes": 3091,
    "story": "Google DeepMind launches AlphaGenome 2, trained on 100M+ cell profiles across 68 tissues to predict the effects of genetic variants, for non-commercial research",
    "links": [
     "https://www.alphagenomedocs.com/"
@@ -53,8 +53,8 @@
    "url": "https://forums.spacebattles.com/threads/humble-bundle-just-completely-killed-most-of-their-security-through-vibecoding.1346295/",
    "source": "Hacker News",
    "published_at": "2026-11-12T06:52:48Z",
-   "text": "110 points and 27 comments on Hacker News.",
-   "points": 110,
+   "text": "174 points and 66 comments on Hacker News.",
+   "points": 174,
    "discussion": "https://news.ycombinator.com/item?id=50463899"
   },
   {
@@ -94,8 +94,8 @@
    "url": "https://www.cbsnews.com/news/united-airlines-bans-ai-agents-booking-flights/",
    "source": "Hacker News",
    "published_at": "2026-11-11T21:24:35Z",
-   "text": "528 points and 516 comments on Hacker News.",
-   "points": 528,
+   "text": "538 points and 521 comments on Hacker News.",
+   "points": 538,
    "discussion": "https://news.ycombinator.com/item?id=50458900"
   },
   {
@@ -111,8 +111,8 @@
    "url": "https://pietromiotti.com/latest/maya-site",
    "source": "Hacker News",
    "published_at": "2026-11-11T12:05:22Z",
-   "text": "978 points and 356 comments on Hacker News.",
-   "points": 978,
+   "text": "980 points and 357 comments on Hacker News.",
+   "points": 980,
    "discussion": "https://news.ycombinator.com/item?id=50452455"
   },
   {
