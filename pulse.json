@@ -1,13 +1,13 @@
 {
  "schema": 1,
- "generated_at": "2026-11-12T13:34:17Z",
+ "generated_at": "2026-11-12T14:06:09Z",
  "items": [
   {
-   "title": "Sources: Nvidia's board is preparing to oust Jensen Huang after he had two extramarital affairs, on…",
-   "url": "https://www.wsj.com/business/nvidia-is-preparing-to-oust-nvidia-ceo-jensen-huang-30f421ad?st=1PYhvY",
-   "source": "Wall Street Journal",
-   "published_at": "2026-11-11T22:33:33Z",
-   "text": "Sources: Nvidia's board is preparing to oust Jensen Huang after he had two extramarital affairs, one with a suspected Chinese spy; NVDA drops 5%+ pre-market. Move follows company investigation into an affair with a Chinese woman alleged to be a spy — Nvidia's board is preparing …",
+   "title": "Jensen Huang resigns as Nvidia CEO, president, and board member; CFO Colette Kress will be interim…",
+   "url": "https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition",
+   "source": "Nvidia Newsroom",
+   "published_at": "2026-11-12T13:53:56Z",
+   "text": "Jensen Huang resigns as Nvidia CEO, president, and board member; CFO Colette Kress will be interim CEO, as the board considers candidates; NVDA drops 10%+. - Colette Kress, Executive Vice President and Chief Financial Officer, Appointed Interim CEO — Harvey C. Jones Appointed First-Ever Chair of the Board",
    "via": "Techmeme"
   },
   {
@@ -17,7 +17,7 @@
    "published_at": "2026-11-11T18:16:26Z",
    "text": "Introducing Gemini Decision 1, our new frontier decision model in the Gemini API. It is $0.10 per 1M input tokens with no additional cost. With support for image, audio, video, and PDF natively, 256K context window, & 1K questions. You can try it for free in the API!",
    "author_name": "Logan Kilpatrick",
-   "likes": 9816,
+   "likes": 9865,
    "story": "Google launches Gemini Decisions API, powered by its new Gemini Decision 1 model, to return predefined answers with confidence scores, at $0.10/1M input tokens"
   },
   {
@@ -28,21 +28,11 @@
    "text": "Added fast mode on Vertex in the global, us and eu regions, falling back to standard speed if Vertex refuses it"
   },
   {
-   "title": "NVIDIA would be wrong to fire Jensen. His marital indiscretions are between him, his wife, and a re…",
-   "url": "https://x.com/dhh/status/2120801995615604849",
-   "source": "𝕏 @dhh",
-   "published_at": "2026-11-12T08:52:53Z",
-   "text": "NVIDIA would be wrong to fire Jensen. His marital indiscretions are between him, his wife, and a reprimand from the board. Have some proportionality.",
-   "author_name": "DHH",
-   "likes": 6063,
-   "story": "Source: Nvidia's board is working with an outside firm to identify possible replacements for Jensen Huang and weighs naming a temporary CEO during the search"
-  },
-  {
-   "title": "AMD's shares rose 4%+ pre-market, after closing up 7.3%, and Broadcom gained 2.4% pre-market, follo…",
-   "url": "https://www.ft.com/content/a93307a7-e2cd-4abd-bd89-c38832d8c40e",
-   "source": "Financial Times",
-   "published_at": "2026-11-12T05:26:01Z",
-   "text": "AMD's shares rose 4%+ pre-market, after closing up 7.3%, and Broadcom gained 2.4% pre-market, following a 4% gain, as Nvidia's board weighs ousting Jensen Huang",
+   "title": "Sources: Jensen Huang had an extramarital relationship with Nvidia VP of Healthcare Kimberly Powell…",
+   "url": "https://www.nytimes.com/2026/11/11/technology/jensen-huang-nvidia-affair.html?unlocked_article_code=1.PlE.QYQK.ExXQ3moeKx-i&smid=nytcore-ios-share",
+   "source": "New York Times",
+   "published_at": "2026-11-11T22:04:49Z",
+   "text": "Sources: Jensen Huang had an extramarital relationship with Nvidia VP of Healthcare Kimberly Powell, who reports to him; the affair was discussed inside Nvidia. Mr. Huang, Nvidia's chief executive, is already facing scrutiny over an affair with a Chinese businesswoman who U.S. intelligence determined was a Chinese spy.",
    "via": "Techmeme"
   },
   {
@@ -50,22 +40,9 @@
    "url": "https://ipo.anthropic.com/us/",
    "source": "Hacker News",
    "published_at": "2026-11-12T11:46:41Z",
-   "text": "178 points and 201 comments on Hacker News.",
-   "points": 178,
+   "text": "219 points and 252 comments on Hacker News.",
+   "points": 219,
    "discussion": "https://news.ycombinator.com/item?id=50465829"
-  },
-  {
-   "title": "Super proud to announce AlphaGenome 2 - our new DNA sequence model! 🧬 It predicts the impact of DNA…",
-   "url": "https://x.com/demishassabis/status/2120565316619284734",
-   "source": "𝕏 @demishassabis",
-   "published_at": "2026-11-11T17:12:24Z",
-   "text": "Super proud to announce AlphaGenome 2 - our new DNA sequence model! 🧬 It predicts the impact of DNA variants in different specific cell types - unlocking crucial information for understanding complex diseases. Available for academic research via our API:",
-   "author_name": "Demis Hassabis",
-   "likes": 3295,
-   "story": "Google DeepMind launches AlphaGenome 2, trained on 100M+ cell profiles across 68 tissues to predict the effects of genetic variants, for non-commercial research",
-   "links": [
-    "https://www.alphagenomedocs.com/"
-   ]
   },
   {
    "title": "Anthropic launches roadshow for proposed initial public offering",
@@ -94,8 +71,8 @@
    "url": "https://www.cbsnews.com/news/united-airlines-bans-ai-agents-booking-flights/",
    "source": "Hacker News",
    "published_at": "2026-11-11T21:24:35Z",
-   "text": "588 points and 608 comments on Hacker News.",
-   "points": 588,
+   "text": "595 points and 617 comments on Hacker News.",
+   "points": 595,
    "discussion": "https://news.ycombinator.com/item?id=50458900"
   },
   {
@@ -107,20 +84,11 @@
    "via": "Techmeme"
   },
   {
-   "title": "My AI agents found an unmapped Maya site?",
-   "url": "https://pietromiotti.com/latest/maya-site",
-   "source": "Hacker News",
-   "published_at": "2026-11-11T12:05:22Z",
-   "text": "1010 points and 371 comments on Hacker News.",
-   "points": 1010,
-   "discussion": "https://news.ycombinator.com/item?id=50452455"
-  },
-  {
-   "title": "Nvidia stopped reporting Singapore revenue after the quarter ended July 2025, when it accounted for…",
+   "title": "Nvidia stopped reporting Singapore revenue after its Q2 2025 ended on July 27, when it accounted fo…",
    "url": "https://www.wsj.com/business/earnings/nvidias-disappearing-singapore-sales-deepen-mystery-around-megaspeed-7d483180?st=NS43G5",
    "source": "Jonathan Weil / Wall Street…",
    "published_at": "2026-11-12T05:36:05Z",
-   "text": "Nvidia stopped reporting Singapore revenue after the quarter ended July 2025, when it accounted for 22% of its revenue, after placing Megaspeed on a blocklist. Last year, just as scrutiny of Megaspeed was rising, Nvidia stopped reporting Singapore revenue",
+   "text": "Nvidia stopped reporting Singapore revenue after its Q2 2025 ended on July 27, when it accounted for 22% of its revenue, after placing Megaspeed on a block list. Last year, just as scrutiny of Megaspeed was rising, Nvidia stopped reporting Singapore revenue",
    "via": "Techmeme"
   },
   {
@@ -129,6 +97,30 @@
    "source": "Sam Biddle / The Intercept",
    "published_at": "2026-11-12T11:36:19Z",
    "text": "Russian pranksters tricked three OpenAI natsec and policy executives into a video meeting by posing as Ukrainian officials; OpenAI says it “acted internally”. A Russian internet comedy duo tricked three of OpenAI's highest ranking military and national security staff into a candid conversation about arming Ukraine.",
+   "via": "Techmeme"
+  },
+  {
+   "title": "Sources: Chinese AI companies rush to rent Nvidia cloud capacity overseas amid fears of tighter US…",
+   "url": "https://www.reuters.com/world/china/chinese-ai-firms-rush-secure-nvidia-chip-capacity-spy-scandal-stirs-fear-us-2026-11-12/",
+   "source": "Reuters",
+   "published_at": "2026-11-12T06:06:04Z",
+   "text": "Sources: Chinese AI companies rush to rent Nvidia cloud capacity overseas amid fears of tighter US export control enforcement after the Jensen Huang spy scandal. Chinese artificial intelligence companies are trying to rent Nvidia-powered computing capacity at data centres outside China …",
+   "via": "Techmeme"
+  },
+  {
+   "title": "Google launches Tabletop, an experimental AI platform to build customizable, collaborative personal…",
+   "url": "https://www.theverge.com/tech/1031526/google-tabletop-ai-experiment-waitlist-availability",
+   "source": "Jess Weatherbed / The Verge",
+   "published_at": "2026-11-12T12:05:40Z",
+   "text": "Google launches Tabletop, an experimental AI platform to build customizable, collaborative personal planning and coordination hubs, in beta via a waitlist. Tabletop provides customizable, collaborative spaces for all your personal planning needs.﻿",
+   "via": "Techmeme"
+  },
+  {
+   "title": "AWS releases AWS Emulator, a free tool that simulates 200+ services locally, saying AI agents wrote…",
+   "url": "https://www.geekwire.com/2026/aws-gives-developers-a-free-local-stand-in-for-its-cloud-built-from-scratch-by-ai-agents/",
+   "source": "Todd Bishop / GeekWire",
+   "published_at": "2026-11-11T20:26:31Z",
+   "text": "AWS releases AWS Emulator, a free tool that simulates 200+ services locally, saying AI agents wrote it and its team hasn't written or reviewed any of its code. AWS says its engineers didn't write or review a single line of code in its newest developer tool, and the company is touting that as a selling point.",
    "via": "Techmeme"
   }
  ],
