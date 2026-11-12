@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-12T22:09:45Z",
+ "generated_at": "2026-11-12T22:42:09Z",
  "items": [
   {
    "title": "Jensen Huang resigns as Nvidia CEO, president, and board member; CFO Colette Kress will serve as in…",
@@ -17,15 +17,25 @@
    "published_at": "2026-11-12T20:16:20Z",
    "text": "Introducing Claude Meetings: add Claude to your team’s video call and it builds docs, whiteboards, and other artifacts with you while you’re still talking. Starting to roll out in beta on Team and Enterprise plans.",
    "author_name": "Claude",
-   "likes": 27136,
+   "likes": 30806,
    "story": "Introducing Claude Meetings"
   },
   {
-   "title": "Claude Code 2.1.322 released",
-   "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.322",
+   "title": "Claude Code 2.1.323 released",
+   "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.323",
    "source": "Claude Code releases",
-   "published_at": "2026-11-10T02:29:43Z",
-   "text": "Added fast mode on Vertex in the global, us and eu regions, falling back to standard speed if Vertex refuses it"
+   "published_at": "2026-11-12T22:12:13Z",
+   "text": "Added Code Mode, an experimental opt-in in which Claude writes JavaScript to call its tools; see to turn it on, or to turn it off for an organization · Added engines[\"claude-code\"] to plugin.json: plugins outside their stated Claude Code version range are not installed, updated or loaded, and install and update pick the newest version that fits · Added type checking of a plugin's TypeScript hooks module to claude plugin validate; each finding is a warning, and --strict fails on it · Added to claude plugin validate the $ nouns a mod's engine.create hook adds, withholds or replaces"
+  },
+  {
+   "title": "great investigation but pretty silly handwringing we've already estimated that DeepSeek's inference…",
+   "url": "https://x.com/teortaxesTex/status/2120995206342521315",
+   "source": "𝕏 @teortaxesTex",
+   "published_at": "2026-11-12T21:40:38Z",
+   "text": "great investigation but pretty silly handwringing we've already estimated that DeepSeek's inference server for V4.1-Flash is about 2.7K-3K GB200s. V4-Pro was a flop… It seems they didn't grow much. 3K Blackwells is like 6 MW. This is utterly insufficient.",
+   "author_name": "Teortaxes▶️ (DeepSeek 推特🐋铁粉 2023 – ∞)",
+   "likes": 46,
+   "story": "Analysis of open weights: six models from DeepSeek, Moonshot, MiniMax, and Ant Group released since April carry fingerprints of export-controlled Blackwell GPUs"
   },
   {
    "title": "Introducing Gemini 4 Hydrogen, an extremely capable and fast model built to bring Gemini 4 to every…",
@@ -34,8 +44,8 @@
    "published_at": "2026-11-12T18:05:02Z",
    "text": "Introducing Gemini 4 Hydrogen, an extremely capable and fast model built to bring Gemini 4 to everyone! Available to all tiers of Google AI Studio, Gemini API, Gemini for business, the Gemini app, Google Search, and paid Google AI Pro + Ultra subscribers in Google Antigravity.",
    "author_name": "Logan Kilpatrick",
-   "likes": 7515,
-   "story": "Google launches Gemini 4 Hydrogen, calling it a major upgrade over Gemini 3.8 Flash, at $1.50/1M input and $7.50/1M output tokens across its 1M context window"
+   "likes": 7732,
+   "story": "Google says Gemini 4 Hydrogen is available across AI Studio, the Gemini API, Search, paid AI Pro and Ultra tiers in Antigravity, and more"
   },
   {
    "title": "Trump says Tim Cook is the “only one man” to replace Jensen Huang as Nvidia CEO, adding “A Legend r…",
@@ -50,9 +60,19 @@
    "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/",
    "source": "Hacker News",
    "published_at": "2026-11-12T18:01:48Z",
-   "text": "389 points and 256 comments on Hacker News.",
-   "points": 389,
+   "text": "399 points and 268 comments on Hacker News.",
+   "points": 399,
    "discussion": "https://news.ycombinator.com/item?id=50471431"
+  },
+  {
+   "title": "Following Carbon + Argon, Gemini 4 Hydrogen brings cutting-edge intelligence to everyone. Built for…",
+   "url": "https://x.com/sundarpichai/status/2120940236805169182",
+   "source": "𝕏 @sundarpichai",
+   "published_at": "2026-11-12T18:02:12Z",
+   "text": "Following Carbon + Argon, Gemini 4 Hydrogen brings cutting-edge intelligence to everyone. Built for speed and efficiency for everyday tasks, coding and agentic workflows. Compared to 3.8 Flash, it finishes tasks 2.5x faster. Also has 4 thinking levels, so you only wait and pay…",
+   "author_name": "Sundar Pichai",
+   "likes": 5865,
+   "story": "Google launches Gemini 4 Hydrogen, calling it a major upgrade over Gemini 3.8 Flash, at $1.50/1M input and $7.50/1M output tokens across its 1M context window"
   },
   {
    "title": "Introducing Claude 4",
@@ -81,8 +101,8 @@
    "url": "https://news.cornell.edu/stories/2026/11/data-centers-need-power-lower-income-rural-residents-pay-price",
    "source": "Hacker News",
    "published_at": "2026-11-12T19:53:54Z",
-   "text": "124 points and 114 comments on Hacker News.",
-   "points": 124,
+   "text": "141 points and 143 comments on Hacker News.",
+   "points": 141,
    "discussion": "https://news.ycombinator.com/item?id=50473231"
   },
   {
@@ -98,8 +118,8 @@
    "url": "https://ipo.anthropic.com/us/",
    "source": "Hacker News",
    "published_at": "2026-11-12T11:46:41Z",
-   "text": "741 points and 748 comments on Hacker News.",
-   "points": 741,
+   "text": "759 points and 757 comments on Hacker News.",
+   "points": 759,
    "discussion": "https://news.ycombinator.com/item?id=50465829"
   },
   {
@@ -108,22 +128,6 @@
    "source": "Anthropic",
    "published_at": "2026-11-12T16:11:50Z",
    "text": "Anthropic is an AI safety and research company that's working to build reliable, interpretable, and steerable AI systems."
-  },
-  {
-   "title": "A profile of interim Nvidia CEO Colette Kress, who joined in 2013 after working at Cisco and Micros…",
-   "url": "https://www.nytimes.com/2026/11/12/business/nvidia-colette-kress-jensen-huang.html?unlocked_article_code=1.P1E.ZuGN.QJiaheMpJyN-&smid=url-share",
-   "source": "Adam Satariano / New York T…",
-   "published_at": "2026-11-12T14:30:52Z",
-   "text": "A profile of interim Nvidia CEO Colette Kress, who joined in 2013 after working at Cisco and Microsoft; as CFO, Kress criticized US export controls on China. Ms. Kress, the company's chief financial officer, joined Nvidia in 2013. — Colette Kress, a longtime Nvidia executive …",
-   "via": "Techmeme"
-  },
-  {
-   "title": "Apple HomeView review: fast home controls, helpful Siri AI, gorgeous customizable faces, great soun…",
-   "url": "https://www.theverge.com/tech/1031726/apple-homeview-review-smart-display-homekit",
-   "source": "Jennifer Pattison Tuohy / T…",
-   "published_at": "2026-11-12T14:05:42Z",
-   "text": "Apple HomeView review: fast home controls, helpful Siri AI, gorgeous customizable faces, great sound for its size, but Siri can be slow and pricey wall mount. The HomeView nails everything I want from a smart display. It's superb at controlling my smart home; it's an excellent hands …",
-   "via": "Techmeme"
   }
  ],
  "sources": "curated, Techmeme, X (found via Techmeme, Reddit, the Internet Archive), Claude Code releases, Anthropic, Hacker News, Simon Willison"
