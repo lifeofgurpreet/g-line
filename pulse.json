@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-12T03:22:32Z",
+ "generated_at": "2026-11-12T03:54:20Z",
  "items": [
   {
    "title": "Sources: Nvidia's board is preparing to oust Jensen Huang and is meeting on Wednesday to determine…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-11T18:16:26Z",
    "text": "Introducing Gemini Decision 1, our new frontier decision model in the Gemini API. It is $0.10 per 1M input tokens with no additional cost. With support for image, audio, video, and PDF natively, 256K context window, & 1K questions. You can try it for free in the API!",
    "author_name": "Logan Kilpatrick",
-   "likes": 8556,
+   "likes": 8665,
    "story": "Google launches Gemini Decisions API, powered by its new Gemini Decision 1 model, to return predefined answers with confidence scores, at $0.10/1M input tokens"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-11-11T17:12:24Z",
    "text": "Super proud to announce AlphaGenome 2 - our new DNA sequence model! 🧬 It predicts the impact of DNA variants in different specific cell types - unlocking crucial information for understanding complex diseases. Available for academic research via our API:",
    "author_name": "Demis Hassabis",
-   "likes": 2820,
+   "likes": 2863,
    "story": "Google DeepMind launches AlphaGenome 2, trained on 100M+ cell profiles across 68 tissues to predict the effects of genetic variants, for non-commercial research",
    "links": [
     "https://www.alphagenomedocs.com/"
@@ -53,19 +53,19 @@
    "url": "https://www.cbsnews.com/news/united-airlines-bans-ai-agents-booking-flights/",
    "source": "Hacker News",
    "published_at": "2026-11-11T21:24:35Z",
-   "text": "430 points and 412 comments on Hacker News.",
-   "points": 430,
+   "text": "448 points and 429 comments on Hacker News.",
+   "points": 448,
    "discussion": "https://news.ycombinator.com/item?id=50458900"
   },
   {
-   "title": "we’re like one month away from rainbow ICE agent uniforms if these people aren’t actually held acco…",
-   "url": "https://x.com/mattxiv/status/2120537996097102005",
-   "source": "𝕏 @mattxiv",
-   "published_at": "2026-11-11T15:23:50Z",
-   "text": "we’re like one month away from rainbow ICE agent uniforms if these people aren’t actually held accountable",
-   "author_name": "matt bernstein",
-   "likes": 10719,
-   "story": "Silicon Valley's herd mentality in cozying up to Trump backfired as Democrats may seek retribution, China closes the AI gap, and anti-Big Tech sentiment grows"
+   "title": "Anyhow, in a little over a week we will see the release of The Last Human Game. There will never be…",
+   "url": "https://x.com/emollick/status/2120502534695514279",
+   "source": "𝕏 @emollick",
+   "published_at": "2026-11-11T13:02:55Z",
+   "text": "Anyhow, in a little over a week we will see the release of The Last Human Game. There will never be another AAA game at the scale of GTA 6 with no AI assistance. People will look back at an all-human game with a billion dollar budget and wonder how they did it, like the Pyramids",
+   "author_name": "Ethan Mollick",
+   "likes": 3597,
+   "story": "Game developer House House confirms using AI during Big Walk's final development, sparking an intense debate among Independent Games Festival judges and jurors"
   },
   {
    "title": "Anthropic launches roadshow for proposed initial public offering",
@@ -90,40 +90,30 @@
    "via": "Techmeme"
   },
   {
-   "title": "Anyhow, in a little over a week we will see the release of The Last Human Game. There will never be…",
-   "url": "https://x.com/emollick/status/2120502534695514279",
-   "source": "𝕏 @emollick",
-   "published_at": "2026-11-11T13:02:55Z",
-   "text": "Anyhow, in a little over a week we will see the release of The Last Human Game. There will never be another AAA game at the scale of GTA 6 with no AI assistance. People will look back at an all-human game with a billion dollar budget and wonder how they did it, like the Pyramids",
-   "author_name": "Ethan Mollick",
-   "likes": 3539,
-   "story": "Game developer House House confirms using AI during Big Walk's final development, sparking an intense debate among Independent Games Festival judges and jurors"
-  },
-  {
-   "title": "My AI agents found an unmapped Maya site?",
-   "url": "https://pietromiotti.com/latest/maya-site",
-   "source": "Hacker News",
-   "published_at": "2026-11-11T12:05:22Z",
-   "text": "939 points and 339 comments on Hacker News.",
-   "points": 939,
-   "discussion": "https://news.ycombinator.com/item?id=50452455"
-  },
-  {
    "title": "Anthropic is now looking at raising $90 billion in their IPO, and it is massively oversubscribed. T…",
    "url": "https://x.com/AndrewCurran_/status/2120510448202342849",
    "source": "𝕏 @AndrewCurran_",
    "published_at": "2026-11-11T13:34:22Z",
    "text": "Anthropic is now looking at raising $90 billion in their IPO, and it is massively oversubscribed. There will be a livestreamed event with Dario Amodei on Friday.",
    "author_name": "Andrew Curran",
-   "likes": 611,
+   "likes": 613,
    "story": "Sources: Anthropic's IPO draws multiple times the orders for the shares available; a source says Dario Amodei and Jamie Dimon have a livestream event on Friday"
   },
   {
-   "title": "Sources: some Nvidia board members favor naming CFO Colette Kress interim CEO; an administration of…",
-   "url": "https://www.semafor.com/article/11/11/2026/nvidia-board-preparing-to-oust-ceo-huang-wsj",
-   "source": "Semafor",
-   "published_at": "2026-11-12T02:46:03Z",
-   "text": "Sources: some Nvidia board members favor naming CFO Colette Kress interim CEO; an administration official says the board briefed the White House on its meeting. Some members of Nvidia's board favor appointing Chief Financial Officer Colette Kress as interim CEO, according to people familiar with the matter.",
+   "title": "My AI agents found an unmapped Maya site?",
+   "url": "https://pietromiotti.com/latest/maya-site",
+   "source": "Hacker News",
+   "published_at": "2026-11-11T12:05:22Z",
+   "text": "945 points and 342 comments on Hacker News.",
+   "points": 945,
+   "discussion": "https://news.ycombinator.com/item?id=50452455"
+  },
+  {
+   "title": "Source: Nvidia's board is working with an outside firm to identify possible replacements for Jensen…",
+   "url": "https://www.bloomberg.com/news/articles/2026-11-11/nvidia-working-with-outside-firm-to-identify-ceo-candidates",
+   "source": "Bloomberg",
+   "published_at": "2026-11-12T00:16:05Z",
+   "text": "Source: Nvidia's board is working with an outside firm to identify possible replacements for Jensen Huang and weighs naming a temporary CEO during the search. Nvidia Corp.'s board has been working with an outside firm to identify potential replacements for Chief Executive Officer Jensen …",
    "via": "Techmeme"
   },
   {
@@ -131,9 +121,16 @@
    "url": "https://michael.bacarella.com/2026/11/10/false-smoke-alarm-jane-street-datacenter/",
    "source": "Hacker News",
    "published_at": "2026-11-11T16:38:44Z",
-   "text": "430 points and 221 comments on Hacker News.",
-   "points": 430,
+   "text": "436 points and 222 comments on Hacker News.",
+   "points": 436,
    "discussion": "https://news.ycombinator.com/item?id=50455394"
+  },
+  {
+   "title": "Hide your slop PR descriptions behind <details><summary>",
+   "url": "https://simonwillison.net/2026/Nov/9/details-summary/",
+   "source": "Simon Willison's weblog",
+   "published_at": "2026-11-09T04:25:05Z",
+   "text": "Most of the changes I make to my projects these days come in the form of PRs opened for me by Claude Code or Codex. The PR is my unit of work - I use them to bundle commits together, iterating on them until a feature is complete, document decisions and then merge the finished result. Today's coding agents are great at writing PR descriptions. They're too good at describing the work The problem is that they are too good. An agent-written PR description is accurate and comprehensive. It describes the problem, the detailed solution, and the steps taken to verify it."
   }
  ],
  "sources": "curated, Techmeme, X (found via Techmeme, Reddit, the Internet Archive), Claude Code releases, Anthropic, Hacker News, Simon Willison"
