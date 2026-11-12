@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-12T15:11:12Z",
+ "generated_at": "2026-11-12T15:44:13Z",
  "items": [
   {
    "title": "Jensen Huang resigns as Nvidia CEO, president, and board member; CFO Colette Kress will be interim…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-11T18:16:26Z",
    "text": "Introducing Gemini Decision 1, our new frontier decision model in the Gemini API. It is $0.10 per 1M input tokens with no additional cost. With support for image, audio, video, and PDF natively, 256K context window, & 1K questions. You can try it for free in the API!",
    "author_name": "Logan Kilpatrick",
-   "likes": 9970,
+   "likes": 10008,
    "story": "Google launches Gemini Decisions API, powered by its new Gemini Decision 1 model, to return predefined answers with confidence scores, at $0.10/1M input tokens"
   },
   {
@@ -40,8 +40,8 @@
    "url": "https://www.bbc.co.uk/news/live/c6zjry11v8w1t",
    "source": "Hacker News",
    "published_at": "2026-11-12T13:56:38Z",
-   "text": "119 points and 52 comments on Hacker News.",
-   "points": 119,
+   "text": "156 points and 83 comments on Hacker News.",
+   "points": 156,
    "discussion": "https://news.ycombinator.com/item?id=50467139"
   },
   {
@@ -71,17 +71,9 @@
    "url": "https://ipo.anthropic.com/us/",
    "source": "Hacker News",
    "published_at": "2026-11-12T11:46:41Z",
-   "text": "290 points and 319 comments on Hacker News.",
-   "points": 290,
+   "text": "320 points and 351 comments on Hacker News.",
+   "points": 320,
    "discussion": "https://news.ycombinator.com/item?id=50465829"
-  },
-  {
-   "title": "Source: Nvidia's board is considering Apple Chief Hardware Officer Johny Srouji as a CEO candidate",
-   "url": "https://www.semafor.com/article/11/11/2026/nvidia-board-preparing-to-oust-ceo-huang-wsj",
-   "source": "Semafor",
-   "published_at": "2026-11-12T02:46:03Z",
-   "text": "Source: Nvidia's board is considering Apple Chief Hardware Officer Johny Srouji as a CEO candidate. THE SCOOP — Some members of Nvidia's board favor appointing Chief Financial Officer Colette Kress as interim CEO at the beleaguered chipmaker if CEO and founder Jensen Huang is ousted, according to people familiar with the matter.",
-   "via": "Techmeme"
   },
   {
    "title": "A profile of interim Nvidia CEO Colette Kress, who joined in 2013 after working at Cisco and Micros…",
@@ -89,6 +81,14 @@
    "source": "Adam Satariano / New York T…",
    "published_at": "2026-11-12T14:30:52Z",
    "text": "A profile of interim Nvidia CEO Colette Kress, who joined in 2013 after working at Cisco and Microsoft; as CFO, Kress criticized US export controls on China. Ms. Kress, the company's chief financial officer, joined Nvidia in 2013. — Colette Kress, a longtime Nvidia executive …",
+   "via": "Techmeme"
+  },
+  {
+   "title": "Source: Nvidia's board is considering Apple Chief Hardware Officer Johny Srouji as a CEO candidate",
+   "url": "https://www.semafor.com/article/11/11/2026/nvidia-board-preparing-to-oust-ceo-huang-wsj",
+   "source": "Semafor",
+   "published_at": "2026-11-12T02:46:03Z",
+   "text": "Source: Nvidia's board is considering Apple Chief Hardware Officer Johny Srouji as a CEO candidate. THE SCOOP — Some members of Nvidia's board favor appointing Chief Financial Officer Colette Kress as interim CEO at the beleaguered chipmaker if CEO and founder Jensen Huang is ousted, according to people familiar with the matter.",
    "via": "Techmeme"
   },
   {
@@ -116,11 +116,11 @@
    "via": "Techmeme"
   },
   {
-   "title": "A look at potential Nvidia CEO candidates, including CUDA inventor Ian Buck, Arm CEO Rene Haas, and…",
-   "url": "https://www.bloomberg.com/news/articles/2026-11-12/nvidia-drama-triggers-difficult-search-for-huang-s-successor",
-   "source": "Bloomberg",
-   "published_at": "2026-11-12T11:01:26Z",
-   "text": "A look at potential Nvidia CEO candidates, including CUDA inventor Ian Buck, Arm CEO Rene Haas, and Apple Chief Hardware Officer Johny Srouji. Nvidia Corp. is searching for a replacement for larger-than-life Chief Executive Officer Jensen Huang, a daunting challenge at the world's most valuable chipmaker.",
+   "title": "Jensen Huang's Nvidia ploughed its vast profits into bankrolling AI startups, suppliers, and chip c…",
+   "url": "https://www.ft.com/content/dd9072bd-e8a3-4f8e-9985-550aa80a2fd4",
+   "source": "Financial Times",
+   "published_at": "2026-11-12T14:41:17Z",
+   "text": "Jensen Huang's Nvidia ploughed its vast profits into bankrolling AI startups, suppliers, and chip customers, a web of dependencies that could now unravel. Nvidia chief's fall could unravel the web of financial dependencies that helped fuel the AI boom — With Jensen Huang at the helm …",
    "via": "Techmeme"
   }
  ],
