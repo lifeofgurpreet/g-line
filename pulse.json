@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-12T13:00:59Z",
+ "generated_at": "2026-11-12T13:34:17Z",
  "items": [
   {
    "title": "Sources: Nvidia's board is preparing to oust Jensen Huang after he had two extramarital affairs, on…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-11T18:16:26Z",
    "text": "Introducing Gemini Decision 1, our new frontier decision model in the Gemini API. It is $0.10 per 1M input tokens with no additional cost. With support for image, audio, video, and PDF natively, 256K context window, & 1K questions. You can try it for free in the API!",
    "author_name": "Logan Kilpatrick",
-   "likes": 9781,
+   "likes": 9816,
    "story": "Google launches Gemini Decisions API, powered by its new Gemini Decision 1 model, to return predefined answers with confidence scores, at $0.10/1M input tokens"
   },
   {
@@ -34,15 +34,15 @@
    "published_at": "2026-11-12T08:52:53Z",
    "text": "NVIDIA would be wrong to fire Jensen. His marital indiscretions are between him, his wife, and a reprimand from the board. Have some proportionality.",
    "author_name": "DHH",
-   "likes": 5436,
+   "likes": 6063,
    "story": "Source: Nvidia's board is working with an outside firm to identify possible replacements for Jensen Huang and weighs naming a temporary CEO during the search"
   },
   {
-   "title": "A look at potential Nvidia CEO candidates, including CFO Colette Kress, CUDA inventor Ian Buck, Arm…",
-   "url": "https://www.bloomberg.com/news/articles/2026-11-12/nvidia-drama-triggers-difficult-search-for-huang-s-successor",
-   "source": "Bloomberg",
-   "published_at": "2026-11-12T11:01:26Z",
-   "text": "A look at potential Nvidia CEO candidates, including CFO Colette Kress, CUDA inventor Ian Buck, Arm CEO Rene Haas, and Apple Chief Hardware Officer Johny Srouji",
+   "title": "AMD's shares rose 4%+ pre-market, after closing up 7.3%, and Broadcom gained 2.4% pre-market, follo…",
+   "url": "https://www.ft.com/content/a93307a7-e2cd-4abd-bd89-c38832d8c40e",
+   "source": "Financial Times",
+   "published_at": "2026-11-12T05:26:01Z",
+   "text": "AMD's shares rose 4%+ pre-market, after closing up 7.3%, and Broadcom gained 2.4% pre-market, following a 4% gain, as Nvidia's board weighs ousting Jensen Huang",
    "via": "Techmeme"
   },
   {
@@ -50,8 +50,8 @@
    "url": "https://ipo.anthropic.com/us/",
    "source": "Hacker News",
    "published_at": "2026-11-12T11:46:41Z",
-   "text": "129 points and 135 comments on Hacker News.",
-   "points": 129,
+   "text": "178 points and 201 comments on Hacker News.",
+   "points": 178,
    "discussion": "https://news.ycombinator.com/item?id=50465829"
   },
   {
@@ -61,7 +61,7 @@
    "published_at": "2026-11-11T17:12:24Z",
    "text": "Super proud to announce AlphaGenome 2 - our new DNA sequence model! 🧬 It predicts the impact of DNA variants in different specific cell types - unlocking crucial information for understanding complex diseases. Available for academic research via our API:",
    "author_name": "Demis Hassabis",
-   "likes": 3277,
+   "likes": 3295,
    "story": "Google DeepMind launches AlphaGenome 2, trained on 100M+ cell profiles across 68 tissues to predict the effects of genetic variants, for non-commercial research",
    "links": [
     "https://www.alphagenomedocs.com/"
@@ -94,8 +94,8 @@
    "url": "https://www.cbsnews.com/news/united-airlines-bans-ai-agents-booking-flights/",
    "source": "Hacker News",
    "published_at": "2026-11-11T21:24:35Z",
-   "text": "577 points and 603 comments on Hacker News.",
-   "points": 577,
+   "text": "588 points and 608 comments on Hacker News.",
+   "points": 588,
    "discussion": "https://news.ycombinator.com/item?id=50458900"
   },
   {
@@ -111,8 +111,8 @@
    "url": "https://pietromiotti.com/latest/maya-site",
    "source": "Hacker News",
    "published_at": "2026-11-11T12:05:22Z",
-   "text": "1007 points and 369 comments on Hacker News.",
-   "points": 1007,
+   "text": "1010 points and 371 comments on Hacker News.",
+   "points": 1010,
    "discussion": "https://news.ycombinator.com/item?id=50452455"
   },
   {
