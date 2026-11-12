@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-12T18:25:36Z",
+ "generated_at": "2026-11-12T18:57:23Z",
  "items": [
   {
    "title": "Jensen Huang resigns as Nvidia CEO, president, and board member; CFO Colette Kress will serve as in…",
@@ -9,6 +9,16 @@
    "published_at": "2026-11-12T13:53:56Z",
    "text": "Jensen Huang resigns as Nvidia CEO, president, and board member; CFO Colette Kress will serve as interim CEO as the board considers candidates; NVDA drops 5%+. - Colette Kress, Executive Vice President and Chief Financial Officer, Appointed Interim CEO — Harvey C. Jones Appointed First-Ever Chair of the Board",
    "via": "Techmeme"
+  },
+  {
+   "title": "Introducing Gemini 4 Hydrogen, an extremely capable and fast model built to bring Gemini 4 to every…",
+   "url": "https://x.com/OfficialLoganK/status/2120940951292268640",
+   "source": "𝕏 @OfficialLoganK",
+   "published_at": "2026-11-12T18:05:02Z",
+   "text": "Introducing Gemini 4 Hydrogen, an extremely capable and fast model built to bring Gemini 4 to everyone! Available to all tiers of Google AI Studio, Gemini API, Gemini for business, the Gemini app, Google Search, and paid Google AI Pro + Ultra subscribers in Google Antigravity.",
+   "author_name": "Logan Kilpatrick",
+   "likes": 4228,
+   "story": "Google launches Gemini 4 Hydrogen, built for rapid execution across diverse agentic workflows, priced at $1.50/1M input tokens and $7.50/1M output tokens"
   },
   {
    "title": "Claude Code 2.1.322 released",
@@ -30,8 +40,8 @@
    "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/",
    "source": "Hacker News",
    "published_at": "2026-11-12T18:01:48Z",
-   "text": "87 points and 37 comments on Hacker News.",
-   "points": 87,
+   "text": "181 points and 108 comments on Hacker News.",
+   "points": 181,
    "discussion": "https://news.ycombinator.com/item?id=50471431"
   },
   {
@@ -49,23 +59,6 @@
    "text": "Our house has a box room, full of boxes that we still haven't unpacked from our last move. A couple of weeks ago something in that room started intermittently beeping . The beeps were far enough apart that standing in the room and trying to determine the source of the noise was frustrating, and I really didn't want to dig through every one of those boxes. So I had Claude Code build Beep Locator , a software system for triangulating the source of a mysterious beep using multiple devices scattered around the room."
   },
   {
-   "title": "Nvidia appoints ex-Synopsys CEO Harvey C. Jones as its first-ever board chair; the board's Jensen H…",
-   "url": "https://www.theverge.com/ai-artificial-intelligence/1031689/jensen-huang-fired-nvidia",
-   "source": "Hayden Field / The Verge",
-   "published_at": "2026-11-12T14:26:29Z",
-   "text": "Nvidia appoints ex-Synopsys CEO Harvey C. Jones as its first-ever board chair; the board's Jensen Huang exit press release does not include a quote from Huang. After reports of Huang's two extramarital affairs with an alleged spy and an Nvidia executive, he's out, and Nvidia CFO Colette Kress is in.",
-   "via": "Techmeme"
-  },
-  {
-   "title": "Anthropic IPO",
-   "url": "https://ipo.anthropic.com/us/",
-   "source": "Hacker News",
-   "published_at": "2026-11-12T11:46:41Z",
-   "text": "640 points and 649 comments on Hacker News.",
-   "points": 640,
-   "discussion": "https://news.ycombinator.com/item?id=50465829"
-  },
-  {
    "title": "Trump says Tim Cook is the “only one man” to replace Jensen Huang as Nvidia CEO, adding “A Legend r…",
    "url": "https://9to5mac.com/2026/11/12/president-trump-calls-on-tim-cook-to-be-next-nvidia-ceo/",
    "source": "Zac Hall / 9to5Mac",
@@ -74,12 +67,29 @@
    "via": "Techmeme"
   },
   {
+   "title": "Anthropic IPO",
+   "url": "https://ipo.anthropic.com/us/",
+   "source": "Hacker News",
+   "published_at": "2026-11-12T11:46:41Z",
+   "text": "660 points and 670 comments on Hacker News.",
+   "points": 660,
+   "discussion": "https://news.ycombinator.com/item?id=50465829"
+  },
+  {
+   "title": "Nvidia appoints ex-Synopsys CEO Harvey C. Jones as its first-ever board chair; the board's Jensen H…",
+   "url": "https://www.theverge.com/ai-artificial-intelligence/1031689/jensen-huang-fired-nvidia",
+   "source": "Hayden Field / The Verge",
+   "published_at": "2026-11-12T14:26:29Z",
+   "text": "Nvidia appoints ex-Synopsys CEO Harvey C. Jones as its first-ever board chair; the board's Jensen Huang exit press release does not include a quote from Huang. After reports of Huang's two extramarital affairs with an alleged spy and an Nvidia executive, he's out, and Nvidia CFO Colette Kress is in.",
+   "via": "Techmeme"
+  },
+  {
    "title": "I'm making LLMs work on small and old devices",
    "url": "https://github.com/hyperionaidev/smolmaxxing/",
    "source": "Hacker News",
    "published_at": "2026-11-12T15:23:10Z",
-   "text": "116 points and 47 comments on Hacker News.",
-   "points": 116,
+   "text": "136 points and 52 comments on Hacker News.",
+   "points": 136,
    "discussion": "https://news.ycombinator.com/item?id=50468888"
   },
   {
@@ -95,8 +105,8 @@
    "url": "https://libreagi.com/",
    "source": "Hacker News",
    "published_at": "2026-11-12T14:11:58Z",
-   "text": "79 points and 17 comments on Hacker News.",
-   "points": 79,
+   "text": "84 points and 17 comments on Hacker News.",
+   "points": 84,
    "discussion": "https://news.ycombinator.com/item?id=50467439"
   },
   {
@@ -113,14 +123,6 @@
    "source": "The Information",
    "published_at": "2026-11-12T15:35:46Z",
    "text": "Sources: firms tied to Alice Huang recently invested in DeepSeek, to forge closer ties and supply Nvidia's Blackwell chips, which are banned from sale to China. The network of companies tied to Alice Huang, the alleged Chinese spy in a romantic relationship with Nvidia's former CEO Jensen Huang …",
-   "via": "Techmeme"
-  },
-  {
-   "title": "Sources: Nvidia employees, known for their fierce loyalty to Jensen Huang, have been left stunned a…",
-   "url": "https://www.ft.com/content/e47f7d4a-88d7-41e4-8c77-8ea8e0769353?accessToken=zwAAAaHPhFm5kdPkf31KiNdB5NOMd46o4HaTUw.MEYCIQDn7haOOhte2euVfaveEEuuu6oyLb6EGB81Ig-N5Kp9owIhAO4Keb4MB0HPnWJkYPv_ytT_h8nV4dAHcFZK6Tbb281i&sharetype=gift&token=ad013966-8ec4-4ec4-ada8-f1ecf13aa7e2&syn-25a6b1a6=1",
-   "source": "Michael Acton / Financial T…",
-   "published_at": "2026-11-12T12:01:32Z",
-   "text": "Sources: Nvidia employees, known for their fierce loyalty to Jensen Huang, have been left stunned and some are angry at the news of his extramarital affairs",
    "via": "Techmeme"
   }
  ],
