@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-12T18:57:23Z",
+ "generated_at": "2026-11-12T19:29:33Z",
  "items": [
   {
    "title": "Jensen Huang resigns as Nvidia CEO, president, and board member; CFO Colette Kress will serve as in…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-12T18:05:02Z",
    "text": "Introducing Gemini 4 Hydrogen, an extremely capable and fast model built to bring Gemini 4 to everyone! Available to all tiers of Google AI Studio, Gemini API, Gemini for business, the Gemini app, Google Search, and paid Google AI Pro + Ultra subscribers in Google Antigravity.",
    "author_name": "Logan Kilpatrick",
-   "likes": 4228,
+   "likes": 5386,
    "story": "Google launches Gemini 4 Hydrogen, built for rapid execution across diverse agentic workflows, priced at $1.50/1M input tokens and $7.50/1M output tokens"
   },
   {
@@ -28,11 +28,11 @@
    "text": "Added fast mode on Vertex in the global, us and eu regions, falling back to standard speed if Vertex refuses it"
   },
   {
-   "title": "Sources: Jensen Huang had an extramarital relationship with Nvidia VP of Healthcare Kimberly Powell…",
-   "url": "https://www.nytimes.com/2026/11/11/technology/jensen-huang-nvidia-affair.html?unlocked_article_code=1.PlE.QYQK.ExXQ3moeKx-i&smid=nytcore-ios-share",
-   "source": "New York Times",
-   "published_at": "2026-11-11T22:04:49Z",
-   "text": "Sources: Jensen Huang had an extramarital relationship with Nvidia VP of Healthcare Kimberly Powell, who reports to him; the affair was discussed inside Nvidia. Mr. Huang, Nvidia's chief executive, is already facing scrutiny over an affair with a Chinese businesswoman who U.S. intelligence determined was a Chinese spy.",
+   "title": "Nvidia appoints ex-Synopsys CEO Harvey C. Jones as its first-ever board chair; the board's Jensen H…",
+   "url": "https://www.theverge.com/ai-artificial-intelligence/1031689/jensen-huang-fired-nvidia",
+   "source": "Hayden Field / The Verge",
+   "published_at": "2026-11-12T14:26:29Z",
+   "text": "Nvidia appoints ex-Synopsys CEO Harvey C. Jones as its first-ever board chair; the board's Jensen Huang exit press release does not include a quote from Huang. After reports of Huang's two extramarital affairs with an alleged spy and an Nvidia executive, he's out, and Nvidia CFO Colette Kress is in.",
    "via": "Techmeme"
   },
   {
@@ -40,8 +40,8 @@
    "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/",
    "source": "Hacker News",
    "published_at": "2026-11-12T18:01:48Z",
-   "text": "181 points and 108 comments on Hacker News.",
-   "points": 181,
+   "text": "253 points and 156 comments on Hacker News.",
+   "points": 253,
    "discussion": "https://news.ycombinator.com/item?id=50471431"
   },
   {
@@ -59,6 +59,23 @@
    "text": "Our house has a box room, full of boxes that we still haven't unpacked from our last move. A couple of weeks ago something in that room started intermittently beeping . The beeps were far enough apart that standing in the room and trying to determine the source of the noise was frustrating, and I really didn't want to dig through every one of those boxes. So I had Claude Code build Beep Locator , a software system for triangulating the source of a mysterious beep using multiple devices scattered around the room."
   },
   {
+   "title": "Sources: Jensen Huang had an extramarital relationship with Nvidia VP of Healthcare Kimberly Powell…",
+   "url": "https://www.nytimes.com/2026/11/11/technology/jensen-huang-nvidia-affair.html?unlocked_article_code=1.PlE.QYQK.ExXQ3moeKx-i&smid=nytcore-ios-share",
+   "source": "New York Times",
+   "published_at": "2026-11-11T22:04:49Z",
+   "text": "Sources: Jensen Huang had an extramarital relationship with Nvidia VP of Healthcare Kimberly Powell, who reports to him; the affair was discussed inside Nvidia. Mr. Huang, Nvidia's chief executive, is already facing scrutiny over an affair with a Chinese businesswoman who U.S. intelligence determined was a Chinese spy.",
+   "via": "Techmeme"
+  },
+  {
+   "title": "Anthropic IPO",
+   "url": "https://ipo.anthropic.com/us/",
+   "source": "Hacker News",
+   "published_at": "2026-11-12T11:46:41Z",
+   "text": "683 points and 690 comments on Hacker News.",
+   "points": 683,
+   "discussion": "https://news.ycombinator.com/item?id=50465829"
+  },
+  {
    "title": "Trump says Tim Cook is the “only one man” to replace Jensen Huang as Nvidia CEO, adding “A Legend r…",
    "url": "https://9to5mac.com/2026/11/12/president-trump-calls-on-tim-cook-to-be-next-nvidia-ceo/",
    "source": "Zac Hall / 9to5Mac",
@@ -67,37 +84,20 @@
    "via": "Techmeme"
   },
   {
-   "title": "Anthropic IPO",
-   "url": "https://ipo.anthropic.com/us/",
-   "source": "Hacker News",
-   "published_at": "2026-11-12T11:46:41Z",
-   "text": "660 points and 670 comments on Hacker News.",
-   "points": 660,
-   "discussion": "https://news.ycombinator.com/item?id=50465829"
-  },
-  {
-   "title": "Nvidia appoints ex-Synopsys CEO Harvey C. Jones as its first-ever board chair; the board's Jensen H…",
-   "url": "https://www.theverge.com/ai-artificial-intelligence/1031689/jensen-huang-fired-nvidia",
-   "source": "Hayden Field / The Verge",
-   "published_at": "2026-11-12T14:26:29Z",
-   "text": "Nvidia appoints ex-Synopsys CEO Harvey C. Jones as its first-ever board chair; the board's Jensen Huang exit press release does not include a quote from Huang. After reports of Huang's two extramarital affairs with an alleged spy and an Nvidia executive, he's out, and Nvidia CFO Colette Kress is in.",
-   "via": "Techmeme"
-  },
-  {
    "title": "I'm making LLMs work on small and old devices",
    "url": "https://github.com/hyperionaidev/smolmaxxing/",
    "source": "Hacker News",
    "published_at": "2026-11-12T15:23:10Z",
-   "text": "136 points and 52 comments on Hacker News.",
-   "points": 136,
+   "text": "158 points and 62 comments on Hacker News.",
+   "points": 158,
    "discussion": "https://news.ycombinator.com/item?id=50468888"
   },
   {
-   "title": "Nvidia dropped 14% at Thursday's open after Jensen Huang resigned, erasing $600B+ in value and taki…",
-   "url": "https://www.bloomberg.com/news/articles/2026-11-12/nvidia-market-value-sinks-below-4-trillion-after-huang-resigns",
+   "title": "A look at Nvidia's 10-person board, many of whom have known Jensen Huang for decades, including att…",
+   "url": "https://www.bloomberg.com/news/articles/2026-11-12/the-nvidia-board-members-who-will-decide-jensen-huang-s-fate",
    "source": "Bloomberg",
-   "published_at": "2026-11-12T15:01:21Z",
-   "text": "Nvidia dropped 14% at Thursday's open after Jensen Huang resigned, erasing $600B+ in value and taking its market cap below $4T for the first time since 2025",
+   "published_at": "2026-11-12T11:20:46Z",
+   "text": "A look at Nvidia's 10-person board, many of whom have known Jensen Huang for decades, including attorney Stephen Neal, VC Tench Coxe, and academic John Dabiri",
    "via": "Techmeme"
   },
   {
@@ -105,16 +105,16 @@
    "url": "https://libreagi.com/",
    "source": "Hacker News",
    "published_at": "2026-11-12T14:11:58Z",
-   "text": "84 points and 17 comments on Hacker News.",
-   "points": 84,
+   "text": "89 points and 19 comments on Hacker News.",
+   "points": 89,
    "discussion": "https://news.ycombinator.com/item?id=50467439"
   },
   {
-   "title": "A profile of interim Nvidia CEO Colette Kress, who joined in 2013 after working at Cisco and Micros…",
-   "url": "https://www.nytimes.com/2026/11/12/business/nvidia-colette-kress-jensen-huang.html?unlocked_article_code=1.P1E.ZuGN.QJiaheMpJyN-&smid=url-share",
-   "source": "Adam Satariano / New York T…",
-   "published_at": "2026-11-12T14:30:52Z",
-   "text": "A profile of interim Nvidia CEO Colette Kress, who joined in 2013 after working at Cisco and Microsoft; as CFO, Kress criticized US export controls on China. Ms. Kress, the company's chief financial officer, joined Nvidia in 2013. — Colette Kress, a longtime Nvidia executive …",
+   "title": "Source: Nvidia's board is considering Apple Chief Hardware Officer Johny Srouji as a CEO candidate",
+   "url": "https://www.semafor.com/article/11/11/2026/nvidia-board-preparing-to-oust-ceo-huang-wsj",
+   "source": "Semafor",
+   "published_at": "2026-11-12T02:46:03Z",
+   "text": "Source: Nvidia's board is considering Apple Chief Hardware Officer Johny Srouji as a CEO candidate. THE SCOOP — Some members of Nvidia's board favor appointing Chief Financial Officer Colette Kress as interim CEO at the beleaguered chipmaker if CEO and founder Jensen Huang is ousted, according to people familiar with the matter.",
    "via": "Techmeme"
   },
   {
