@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-12T04:25:51Z",
+ "generated_at": "2026-11-12T04:58:04Z",
  "items": [
   {
    "title": "Sources: Nvidia's board is preparing to oust Jensen Huang after he had two extramarital affairs; NV…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-11T18:16:26Z",
    "text": "Introducing Gemini Decision 1, our new frontier decision model in the Gemini API. It is $0.10 per 1M input tokens with no additional cost. With support for image, audio, video, and PDF natively, 256K context window, & 1K questions. You can try it for free in the API!",
    "author_name": "Logan Kilpatrick",
-   "likes": 8761,
+   "likes": 8856,
    "story": "Google launches Gemini Decisions API, powered by its new Gemini Decision 1 model, to return predefined answers with confidence scores, at $0.10/1M input tokens"
   },
   {
@@ -34,18 +34,18 @@
    "published_at": "2026-11-11T17:12:24Z",
    "text": "Super proud to announce AlphaGenome 2 - our new DNA sequence model! 🧬 It predicts the impact of DNA variants in different specific cell types - unlocking crucial information for understanding complex diseases. Available for academic research via our API:",
    "author_name": "Demis Hassabis",
-   "likes": 2897,
+   "likes": 2924,
    "story": "Google DeepMind launches AlphaGenome 2, trained on 100M+ cell profiles across 68 tissues to predict the effects of genetic variants, for non-commercial research",
    "links": [
     "https://www.alphagenomedocs.com/"
    ]
   },
   {
-   "title": "Sources: Howard Lutnick has stalled curbs on companies suspected of diverting Nvidia chips to China…",
-   "url": "https://www.axios.com/2026/11/11/trump-lutnick-nvidia-china-chip-export-controls",
-   "source": "Axios",
-   "published_at": "2026-11-11T23:21:09Z",
-   "text": "Sources: Howard Lutnick has stalled curbs on companies suspected of diverting Nvidia chips to China; Trump approved curbs for a third time in 2026 on November 5. President Trump on Thursday authorized a crack down on companies suspected of diverting Nvidia's advanced AI chips to China …",
+   "title": "Source: Nvidia's board is working with an outside firm to identify possible replacements for Jensen…",
+   "url": "https://www.bloomberg.com/news/articles/2026-11-11/nvidia-working-with-outside-firm-to-identify-ceo-candidates",
+   "source": "Bloomberg",
+   "published_at": "2026-11-12T00:16:05Z",
+   "text": "Source: Nvidia's board is working with an outside firm to identify possible replacements for Jensen Huang and weighs naming a temporary CEO during the search. Nvidia Corp.'s board has been working with an outside firm to identify potential replacements for Chief Executive Officer Jensen …",
    "via": "Techmeme"
   },
   {
@@ -53,8 +53,8 @@
    "url": "https://www.cbsnews.com/news/united-airlines-bans-ai-agents-booking-flights/",
    "source": "Hacker News",
    "published_at": "2026-11-11T21:24:35Z",
-   "text": "459 points and 443 comments on Hacker News.",
-   "points": 459,
+   "text": "471 points and 457 comments on Hacker News.",
+   "points": 471,
    "discussion": "https://news.ycombinator.com/item?id=50458900"
   },
   {
@@ -64,7 +64,7 @@
    "published_at": "2026-11-11T13:02:55Z",
    "text": "Anyhow, in a little over a week we will see the release of The Last Human Game. There will never be another AAA game at the scale of GTA 6 with no AI assistance. People will look back at an all-human game with a billion dollar budget and wonder how they did it, like the Pyramids",
    "author_name": "Ethan Mollick",
-   "likes": 3638,
+   "likes": 3666,
    "story": "Game developer House House confirms using AI during Big Walk's final development, sparking an intense debate among Independent Games Festival judges and jurors"
   },
   {
@@ -104,16 +104,16 @@
    "url": "https://pietromiotti.com/latest/maya-site",
    "source": "Hacker News",
    "published_at": "2026-11-11T12:05:22Z",
-   "text": "948 points and 343 comments on Hacker News.",
-   "points": 948,
+   "text": "951 points and 349 comments on Hacker News.",
+   "points": 951,
    "discussion": "https://news.ycombinator.com/item?id=50452455"
   },
   {
-   "title": "Source: Nvidia's board is working with an outside firm to identify possible replacements for Jensen…",
-   "url": "https://www.bloomberg.com/news/articles/2026-11-11/nvidia-working-with-outside-firm-to-identify-ceo-candidates",
-   "source": "Bloomberg",
-   "published_at": "2026-11-12T00:16:05Z",
-   "text": "Source: Nvidia's board is working with an outside firm to identify possible replacements for Jensen Huang and weighs naming a temporary CEO during the search. Nvidia Corp.'s board has been working with an outside firm to identify potential replacements for Chief Executive Officer Jensen …",
+   "title": "Sources: Howard Lutnick has stalled curbs on companies suspected of diverting Nvidia chips to China…",
+   "url": "https://www.axios.com/2026/11/11/trump-lutnick-nvidia-china-chip-export-controls",
+   "source": "Axios",
+   "published_at": "2026-11-11T23:21:09Z",
+   "text": "Sources: Howard Lutnick has stalled curbs on companies suspected of diverting Nvidia chips to China; Trump approved curbs for a third time in 2026 on November 5. President Trump on Thursday authorized a crack down on companies suspected of diverting Nvidia's advanced AI chips to China …",
    "via": "Techmeme"
   },
   {
@@ -121,8 +121,8 @@
    "url": "https://michael.bacarella.com/2026/11/10/false-smoke-alarm-jane-street-datacenter/",
    "source": "Hacker News",
    "published_at": "2026-11-11T16:38:44Z",
-   "text": "439 points and 225 comments on Hacker News.",
-   "points": 439,
+   "text": "445 points and 225 comments on Hacker News.",
+   "points": 445,
    "discussion": "https://news.ycombinator.com/item?id=50455394"
   },
   {
