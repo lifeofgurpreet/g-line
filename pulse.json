@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-12T00:08:49Z",
+ "generated_at": "2026-11-12T00:42:04Z",
  "items": [
   {
    "title": "Sources: Nvidia's board is preparing to oust Jensen Huang; it plans to meet as soon as Wednesday to…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-11T18:16:26Z",
    "text": "Introducing Gemini Decision 1, our new frontier decision model in the Gemini API. It is $0.10 per 1M input tokens with no additional cost. With support for image, audio, video, and PDF natively, 256K context window, & 1K questions. You can try it for free in the API!",
    "author_name": "Logan Kilpatrick",
-   "likes": 7551,
+   "likes": 7766,
    "story": "Google launches Gemini Decisions API, powered by its new Gemini Decision 1 model, to return predefined answers with confidence scores, at $0.10/1M input tokens"
   },
   {
@@ -34,28 +34,28 @@
    "published_at": "2026-11-11T17:12:24Z",
    "text": "Super proud to announce AlphaGenome 2 - our new DNA sequence model! 🧬 It predicts the impact of DNA variants in different specific cell types - unlocking crucial information for understanding complex diseases. Available for academic research via our API:",
    "author_name": "Demis Hassabis",
-   "likes": 2579,
+   "likes": 2626,
    "story": "Google DeepMind launches AlphaGenome 2, trained on 100M+ cell profiles across 68 tissues to predict the effects of genetic variants, for non-commercial research",
    "links": [
     "https://www.alphagenomedocs.com/"
    ]
   },
   {
-   "title": "Sources: Anthropic's IPO draws multiple times the orders for the shares available; a source says Da…",
-   "url": "https://www.bloomberg.com/news/articles/2026-11-11/anthropic-s-mega-ipo-is-said-to-be-multiple-times-oversubscribed",
-   "source": "Bailey Lipschultz / Bloombe…",
-   "published_at": "2026-11-11T13:41:19Z",
-   "text": "Sources: Anthropic's IPO draws multiple times the orders for the shares available; a source says Dario Amodei and Jamie Dimon have a livestream event on Friday. Anthropic PBC's initial public offering has drawn multiple times the orders for the shares available, according to people familiar …",
+   "title": "Sources: Jensen Huang had an extramarital relationship with Nvidia's VP of healthcare, Kimberly Pow…",
+   "url": "https://www.nytimes.com/2026/11/11/technology/jensen-huang-nvidia-affair.html?unlocked_article_code=1.PlE.QYQK.ExXQ3moeKx-i&smid=nytcore-ios-share",
+   "source": "New York Times",
+   "published_at": "2026-11-11T22:04:49Z",
+   "text": "Sources: Jensen Huang had an extramarital relationship with Nvidia's VP of healthcare, Kimberly Powell, who reports to him; it was discussed inside the company. Mr. Huang, Nvidia's chief executive, is already facing scrutiny over an affair with a Chinese businesswoman who U.S. intelligence determined was a Chinese spy.",
    "via": "Techmeme"
   },
   {
-   "title": "United Airlines bans AI agents from booking flights on behalf of travelers",
-   "url": "https://www.cbsnews.com/news/united-airlines-bans-ai-agents-booking-flights/",
+   "title": "Nvidia prepares to fire CEO Jensen Huang, WSJ reports",
+   "url": "https://twitter.com/watcherguru/status/2120645607866188008",
    "source": "Hacker News",
-   "published_at": "2026-11-11T21:24:35Z",
-   "text": "286 points and 268 comments on Hacker News.",
-   "points": 286,
-   "discussion": "https://news.ycombinator.com/item?id=50458900"
+   "published_at": "2026-11-11T22:36:35Z",
+   "text": "205 points and 129 comments on Hacker News.",
+   "points": 205,
+   "discussion": "https://news.ycombinator.com/item?id=50459776"
   },
   {
    "title": "we’re like one month away from rainbow ICE agent uniforms if these people aren’t actually held acco…",
@@ -64,7 +64,7 @@
    "published_at": "2026-11-11T15:23:50Z",
    "text": "we’re like one month away from rainbow ICE agent uniforms if these people aren’t actually held accountable",
    "author_name": "matt bernstein",
-   "likes": 9859,
+   "likes": 10047,
    "story": "After the US midterms, Palantir CEO Alex Karp pivots toward Democrats, describing his philosophy as “progressive” and praising Trump for saying ICE went too far"
   },
   {
@@ -82,11 +82,11 @@
    "text": "Our house has a box room, full of boxes that we still haven't unpacked from our last move. A couple of weeks ago something in that room started intermittently beeping . The beeps were far enough apart that standing in the room and trying to determine the source of the noise was frustrating, and I really didn't want to dig through every one of those boxes. So I had Claude Code build Beep Locator , a software system for triangulating the source of a mysterious beep using multiple devices scattered around the room."
   },
   {
-   "title": "AWS releases AWS Emulator, a free tool that simulates 200+ of its services locally, saying AI agent…",
-   "url": "https://www.geekwire.com/2026/aws-gives-developers-a-free-local-stand-in-for-its-cloud-built-from-scratch-by-ai-agents/",
-   "source": "Todd Bishop / GeekWire",
-   "published_at": "2026-11-11T20:26:31Z",
-   "text": "AWS releases AWS Emulator, a free tool that simulates 200+ of its services locally, saying AI agents wrote it and its team hasn't written or reviewed any code. AWS says its engineers didn't write or review a single line of code in its newest developer tool, and the company is touting that as a selling point.",
+   "title": "Sources: Anthropic's IPO draws multiple times the orders for the shares available; a source says Da…",
+   "url": "https://www.bloomberg.com/news/articles/2026-11-11/anthropic-s-mega-ipo-is-said-to-be-multiple-times-oversubscribed",
+   "source": "Bailey Lipschultz / Bloombe…",
+   "published_at": "2026-11-11T13:41:19Z",
+   "text": "Sources: Anthropic's IPO draws multiple times the orders for the shares available; a source says Dario Amodei and Jamie Dimon have a livestream event on Friday. Anthropic PBC's initial public offering has drawn multiple times the orders for the shares available, according to people familiar …",
    "via": "Techmeme"
   },
   {
@@ -96,27 +96,17 @@
    "published_at": "2026-11-11T13:02:55Z",
    "text": "Anyhow, in a little over a week we will see the release of The Last Human Game. There will never be another AAA game at the scale of GTA 6 with no AI assistance. People will look back at an all-human game with a billion dollar budget and wonder how they did it, like the Pyramids",
    "author_name": "Ethan Mollick",
-   "likes": 3281,
+   "likes": 3342,
    "story": "Game developer House House confirms using AI during Big Walk's final development, sparking an intense debate among Independent Games Festival judges and jurors"
   },
   {
-   "title": "Nvidia prepares to fire CEO Jensen Huang, WSJ reports",
-   "url": "https://twitter.com/watcherguru/status/2120645607866188008",
+   "title": "United Airlines bans AI agents from booking flights on behalf of travelers",
+   "url": "https://www.cbsnews.com/news/united-airlines-bans-ai-agents-booking-flights/",
    "source": "Hacker News",
-   "published_at": "2026-11-11T22:36:35Z",
-   "text": "139 points and 55 comments on Hacker News.",
-   "points": 139,
-   "discussion": "https://news.ycombinator.com/item?id=50459776"
-  },
-  {
-   "title": "ERNIE 5.5 Flash Preview just landed! 🔥 Built on a new architecture designed for efficient inference…",
-   "url": "https://x.com/Baidu_Inc/status/2120391732248637734",
-   "source": "𝕏 @Baidu_Inc",
-   "published_at": "2026-11-11T05:42:38Z",
-   "text": "ERNIE 5.5 Flash Preview just landed! 🔥 Built on a new architecture designed for efficient inference, the latest open-weight foundation model in the ERNIE family delivers stronger performance in coding, 3D modeling, knowledge work and content creation. It keeps decoding fast…",
-   "author_name": "Baidu Inc.",
-   "likes": 1355,
-   "story": "Ernie 5.5 Flash will be released in two weeks"
+   "published_at": "2026-11-11T21:24:35Z",
+   "text": "314 points and 291 comments on Hacker News.",
+   "points": 314,
+   "discussion": "https://news.ycombinator.com/item?id=50458900"
   },
   {
    "title": "ByteDance is launching its own personal AI agent this month, no name announced yet. What I found ev…",
@@ -125,16 +115,25 @@
    "published_at": "2026-11-11T17:55:36Z",
    "text": "ByteDance is launching its own personal AI agent this month, no name announced yet. What I found even more interesting than the agent news was ByteDance's AI industry timeline: they believe they will catch up to the US frontier by 2029–2030.",
    "author_name": "Andrew Curran",
-   "likes": 220,
+   "likes": 223,
    "story": "Sources: co-founder Zhang Yiming says ByteDance plans to launch a Muse-like AI assistant in the coming weeks and rival Anthropic and OpenAI by 2029 or 2030"
   },
   {
-   "title": "United Airlines says it will prevent personal AI assistants from booking tickets, citing data priva…",
-   "url": "https://www.wsj.com/tech/ai/united-airlines-is-banning-ai-bots-from-booking-flights-5b514b38?st=ytrzi1",
-   "source": "Alison Sider / Wall Street…",
-   "published_at": "2026-11-11T18:41:01Z",
-   "text": "United Airlines says it will prevent personal AI assistants from booking tickets, citing data privacy risks and possible FAA and DOT rule violations. The carrier says automated assistants present data-privacy risks; 'I don't want to create another middleman' — United Airlines doesn't want to deal with your AI agent.",
+   "title": "AWS releases AWS Emulator, a free tool that simulates 200+ of its services locally, saying AI agent…",
+   "url": "https://www.geekwire.com/2026/aws-gives-developers-a-free-local-stand-in-for-its-cloud-built-from-scratch-by-ai-agents/",
+   "source": "Todd Bishop / GeekWire",
+   "published_at": "2026-11-11T20:26:31Z",
+   "text": "AWS releases AWS Emulator, a free tool that simulates 200+ of its services locally, saying AI agents wrote it and its team hasn't written or reviewed any code. AWS says its engineers didn't write or review a single line of code in its newest developer tool, and the company is touting that as a selling point.",
    "via": "Techmeme"
+  },
+  {
+   "title": "My AI agents found an unmapped Maya site",
+   "url": "https://pietromiotti.com/latest/maya-site",
+   "source": "Hacker News",
+   "published_at": "2026-11-11T12:05:22Z",
+   "text": "918 points and 335 comments on Hacker News.",
+   "points": 918,
+   "discussion": "https://news.ycombinator.com/item?id=50452455"
   }
  ],
  "sources": "curated, Techmeme, X (found via Techmeme, Reddit, the Internet Archive), Claude Code releases, Anthropic, Hacker News, Simon Willison"
