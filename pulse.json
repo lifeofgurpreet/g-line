@@ -1,13 +1,13 @@
 {
  "schema": 1,
- "generated_at": "2026-11-12T11:24:00Z",
+ "generated_at": "2026-11-12T11:55:32Z",
  "items": [
   {
    "title": "Sources: Nvidia's board is preparing to oust Jensen Huang after he had two extramarital affairs, on…",
    "url": "https://www.wsj.com/business/nvidia-is-preparing-to-oust-nvidia-ceo-jensen-huang-30f421ad?st=1PYhvY",
    "source": "Wall Street Journal",
    "published_at": "2026-11-11T22:33:33Z",
-   "text": "Sources: Nvidia's board is preparing to oust Jensen Huang after he had two extramarital affairs, one with a suspected Chinese spy; NVDA drops 5%+ after hours. Move follows company investigation into an affair with a Chinese woman alleged to be a spy — Nvidia's board is preparing …",
+   "text": "Sources: Nvidia's board is preparing to oust Jensen Huang after he had two extramarital affairs, one with a suspected Chinese spy; NVDA drops 5%+ pre-market. Move follows company investigation into an affair with a Chinese woman alleged to be a spy — Nvidia's board is preparing …",
    "via": "Techmeme"
   },
   {
@@ -17,7 +17,7 @@
    "published_at": "2026-11-11T18:16:26Z",
    "text": "Introducing Gemini Decision 1, our new frontier decision model in the Gemini API. It is $0.10 per 1M input tokens with no additional cost. With support for image, audio, video, and PDF natively, 256K context window, & 1K questions. You can try it for free in the API!",
    "author_name": "Logan Kilpatrick",
-   "likes": 9647,
+   "likes": 9693,
    "story": "Google launches Gemini Decisions API, powered by its new Gemini Decision 1 model, to return predefined answers with confidence scores, at $0.10/1M input tokens"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-11-11T17:12:24Z",
    "text": "Super proud to announce AlphaGenome 2 - our new DNA sequence model! 🧬 It predicts the impact of DNA variants in different specific cell types - unlocking crucial information for understanding complex diseases. Available for academic research via our API:",
    "author_name": "Demis Hassabis",
-   "likes": 3199,
+   "likes": 3214,
    "story": "Google DeepMind launches AlphaGenome 2, trained on 100M+ cell profiles across 68 tissues to predict the effects of genetic variants, for non-commercial research",
    "links": [
     "https://www.alphagenomedocs.com/"
@@ -53,19 +53,9 @@
    "url": "https://www.cbsnews.com/news/united-airlines-bans-ai-agents-booking-flights/",
    "source": "Hacker News",
    "published_at": "2026-11-11T21:24:35Z",
-   "text": "563 points and 568 comments on Hacker News.",
-   "points": 563,
+   "text": "568 points and 577 comments on Hacker News.",
+   "points": 568,
    "discussion": "https://news.ycombinator.com/item?id=50458900"
-  },
-  {
-   "title": "Anthropic is now looking at raising $90 billion in their IPO, and it is massively oversubscribed. T…",
-   "url": "https://x.com/AndrewCurran_/status/2120510448202342849",
-   "source": "𝕏 @AndrewCurran_",
-   "published_at": "2026-11-11T13:34:22Z",
-   "text": "Anthropic is now looking at raising $90 billion in their IPO, and it is massively oversubscribed. There will be a livestreamed event with Dario Amodei on Friday.",
-   "author_name": "Andrew Curran",
-   "likes": 626,
-   "story": "Sources: Anthropic's IPO draws multiple times the orders for the shares available; a source says Dario Amodei and Jamie Dimon have a livestream event on Friday"
   },
   {
    "title": "Anthropic launches roadshow for proposed initial public offering",
@@ -94,17 +84,9 @@
    "url": "https://pietromiotti.com/latest/maya-site",
    "source": "Hacker News",
    "published_at": "2026-11-11T12:05:22Z",
-   "text": "996 points and 364 comments on Hacker News.",
-   "points": 996,
+   "text": "998 points and 368 comments on Hacker News.",
+   "points": 998,
    "discussion": "https://news.ycombinator.com/item?id=50452455"
-  },
-  {
-   "title": "A look at Nvidia's 10-person board, many of whom have known Jensen Huang for decades, including att…",
-   "url": "https://www.bloomberg.com/news/articles/2026-11-12/the-nvidia-board-members-who-will-decide-jensen-huang-s-fate",
-   "source": "Bloomberg",
-   "published_at": "2026-11-12T11:01:26Z",
-   "text": "A look at Nvidia's 10-person board, many of whom have known Jensen Huang for decades, including attorney Stephen Neal, VC Tench Coxe, and academic John Dabiri",
-   "via": "Techmeme"
   },
   {
    "title": "Sources: some Nvidia board members favor naming CFO Colette Kress interim CEO; an administration of…",
@@ -115,11 +97,27 @@
    "via": "Techmeme"
   },
   {
+   "title": "Silicon Valley's herd mentality in cozying up to Trump backfired as Democrats may seek retribution,…",
+   "url": "https://www.theatlantic.com/ideas/2026/11/silicon-valley-trump-administration/689360/?gift=VELZukBv_TdFyvYot6GkvImUfy5VbhsFdb6Ml7MDXXU",
+   "source": "Nick Clegg / The Atlantic",
+   "published_at": "2026-11-11T18:31:01Z",
+   "text": "Silicon Valley's herd mentality in cozying up to Trump backfired as Democrats may seek retribution, China closes the AI gap, and anti-Big Tech sentiment grows. For Silicon Valley leaders, cozying up to the Trump administration has led to a series of spectacular failures.",
+   "via": "Techmeme"
+  },
+  {
    "title": "AWS releases AWS Emulator, a free tool that simulates 200+ services locally, saying AI agents wrote…",
    "url": "https://www.geekwire.com/2026/aws-gives-developers-a-free-local-stand-in-for-its-cloud-built-from-scratch-by-ai-agents/",
    "source": "Todd Bishop / GeekWire",
    "published_at": "2026-11-11T20:26:31Z",
    "text": "AWS releases AWS Emulator, a free tool that simulates 200+ services locally, saying AI agents wrote it and its team hasn't written or reviewed any of its code. AWS says its engineers didn't write or review a single line of code in its newest developer tool, and the company is touting that as a selling point.",
+   "via": "Techmeme"
+  },
+  {
+   "title": "Russian pranksters tricked three OpenAI natsec and policy executives into a video meeting by posing…",
+   "url": "https://theintercept.com/2026/11/11/openai-ukraine-russia-prank-security/",
+   "source": "Sam Biddle / The Intercept",
+   "published_at": "2026-11-12T11:36:19Z",
+   "text": "Russian pranksters tricked three OpenAI natsec and policy executives into a video meeting by posing as Ukrainian officials; OpenAI says it “acted internally”",
    "via": "Techmeme"
   },
   {
