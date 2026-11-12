@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-12T21:37:27Z",
+ "generated_at": "2026-11-12T22:09:45Z",
  "items": [
   {
    "title": "Jensen Huang resigns as Nvidia CEO, president, and board member; CFO Colette Kress will serve as in…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-12T20:16:20Z",
    "text": "Introducing Claude Meetings: add Claude to your team’s video call and it builds docs, whiteboards, and other artifacts with you while you’re still talking. Starting to roll out in beta on Team and Enterprise plans.",
    "author_name": "Claude",
-   "likes": 21752,
+   "likes": 27136,
    "story": "Introducing Claude Meetings"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-11-12T18:05:02Z",
    "text": "Introducing Gemini 4 Hydrogen, an extremely capable and fast model built to bring Gemini 4 to everyone! Available to all tiers of Google AI Studio, Gemini API, Gemini for business, the Gemini app, Google Search, and paid Google AI Pro + Ultra subscribers in Google Antigravity.",
    "author_name": "Logan Kilpatrick",
-   "likes": 7207,
+   "likes": 7515,
    "story": "Google launches Gemini 4 Hydrogen, calling it a major upgrade over Gemini 3.8 Flash, at $1.50/1M input and $7.50/1M output tokens across its 1M context window"
   },
   {
@@ -50,8 +50,8 @@
    "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/",
    "source": "Hacker News",
    "published_at": "2026-11-12T18:01:48Z",
-   "text": "375 points and 246 comments on Hacker News.",
-   "points": 375,
+   "text": "389 points and 256 comments on Hacker News.",
+   "points": 389,
    "discussion": "https://news.ycombinator.com/item?id=50471431"
   },
   {
@@ -81,8 +81,8 @@
    "url": "https://news.cornell.edu/stories/2026/11/data-centers-need-power-lower-income-rural-residents-pay-price",
    "source": "Hacker News",
    "published_at": "2026-11-12T19:53:54Z",
-   "text": "100 points and 95 comments on Hacker News.",
-   "points": 100,
+   "text": "124 points and 114 comments on Hacker News.",
+   "points": 124,
    "discussion": "https://news.ycombinator.com/item?id=50473231"
   },
   {
@@ -98,8 +98,8 @@
    "url": "https://ipo.anthropic.com/us/",
    "source": "Hacker News",
    "published_at": "2026-11-12T11:46:41Z",
-   "text": "728 points and 737 comments on Hacker News.",
-   "points": 728,
+   "text": "741 points and 748 comments on Hacker News.",
+   "points": 741,
    "discussion": "https://news.ycombinator.com/item?id=50465829"
   },
   {
