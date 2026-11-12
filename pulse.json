@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-12T19:29:33Z",
+ "generated_at": "2026-11-12T20:02:37Z",
  "items": [
   {
    "title": "Jensen Huang resigns as Nvidia CEO, president, and board member; CFO Colette Kress will serve as in…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-12T18:05:02Z",
    "text": "Introducing Gemini 4 Hydrogen, an extremely capable and fast model built to bring Gemini 4 to everyone! Available to all tiers of Google AI Studio, Gemini API, Gemini for business, the Gemini app, Google Search, and paid Google AI Pro + Ultra subscribers in Google Antigravity.",
    "author_name": "Logan Kilpatrick",
-   "likes": 5386,
+   "likes": 6093,
    "story": "Google launches Gemini 4 Hydrogen, built for rapid execution across diverse agentic workflows, priced at $1.50/1M input tokens and $7.50/1M output tokens"
   },
   {
@@ -40,8 +40,8 @@
    "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/",
    "source": "Hacker News",
    "published_at": "2026-11-12T18:01:48Z",
-   "text": "253 points and 156 comments on Hacker News.",
-   "points": 253,
+   "text": "297 points and 193 comments on Hacker News.",
+   "points": 297,
    "discussion": "https://news.ycombinator.com/item?id=50471431"
   },
   {
@@ -71,8 +71,8 @@
    "url": "https://ipo.anthropic.com/us/",
    "source": "Hacker News",
    "published_at": "2026-11-12T11:46:41Z",
-   "text": "683 points and 690 comments on Hacker News.",
-   "points": 683,
+   "text": "699 points and 704 comments on Hacker News.",
+   "points": 699,
    "discussion": "https://news.ycombinator.com/item?id=50465829"
   },
   {
@@ -88,8 +88,8 @@
    "url": "https://github.com/hyperionaidev/smolmaxxing/",
    "source": "Hacker News",
    "published_at": "2026-11-12T15:23:10Z",
-   "text": "158 points and 62 comments on Hacker News.",
-   "points": 158,
+   "text": "171 points and 65 comments on Hacker News.",
+   "points": 171,
    "discussion": "https://news.ycombinator.com/item?id=50468888"
   },
   {
@@ -105,8 +105,8 @@
    "url": "https://libreagi.com/",
    "source": "Hacker News",
    "published_at": "2026-11-12T14:11:58Z",
-   "text": "89 points and 19 comments on Hacker News.",
-   "points": 89,
+   "text": "90 points and 21 comments on Hacker News.",
+   "points": 90,
    "discussion": "https://news.ycombinator.com/item?id=50467439"
   },
   {
@@ -118,11 +118,11 @@
    "via": "Techmeme"
   },
   {
-   "title": "Sources: firms tied to Alice Huang recently invested in DeepSeek, to forge closer ties and supply N…",
-   "url": "https://www.theinformation.com/articles/alice-huangs-companies-invested-deepseek-promising-nvidia-chips",
-   "source": "The Information",
-   "published_at": "2026-11-12T15:35:46Z",
-   "text": "Sources: firms tied to Alice Huang recently invested in DeepSeek, to forge closer ties and supply Nvidia's Blackwell chips, which are banned from sale to China. The network of companies tied to Alice Huang, the alleged Chinese spy in a romantic relationship with Nvidia's former CEO Jensen Huang …",
+   "title": "A profile of interim Nvidia CEO Colette Kress, who joined in 2013 after working at Cisco and Micros…",
+   "url": "https://www.nytimes.com/2026/11/12/business/nvidia-colette-kress-jensen-huang.html?unlocked_article_code=1.P1E.ZuGN.QJiaheMpJyN-&smid=url-share",
+   "source": "Adam Satariano / New York T…",
+   "published_at": "2026-11-12T14:30:52Z",
+   "text": "A profile of interim Nvidia CEO Colette Kress, who joined in 2013 after working at Cisco and Microsoft; as CFO, Kress criticized US export controls on China. Ms. Kress, the company's chief financial officer, joined Nvidia in 2013. — Colette Kress, a longtime Nvidia executive …",
    "via": "Techmeme"
   }
  ],
