@@ -1,13 +1,13 @@
 {
  "schema": 1,
- "generated_at": "2026-11-12T00:42:04Z",
+ "generated_at": "2026-11-12T01:13:36Z",
  "items": [
   {
-   "title": "Sources: Nvidia's board is preparing to oust Jensen Huang; it plans to meet as soon as Wednesday to…",
+   "title": "Sources: Nvidia's board is preparing to oust Jensen Huang and is meeting on Wednesday to determine…",
    "url": "https://www.wsj.com/business/nvidia-is-preparing-to-oust-nvidia-ceo-jensen-huang-30f421ad?st=1PYhvY",
    "source": "Wall Street Journal",
    "published_at": "2026-11-11T22:33:33Z",
-   "text": "Sources: Nvidia's board is preparing to oust Jensen Huang; it plans to meet as soon as Wednesday to determine his future; NVDA drops 7%+ after hours. Move follows company investigation into an affair with a Chinese woman alleged to be a spy — Nvidia's board is preparing to oust CEO Jensen Huang …",
+   "text": "Sources: Nvidia's board is preparing to oust Jensen Huang and is meeting on Wednesday to determine his future; NVDA drops 7%+ after hours. Move follows company investigation into an affair with a Chinese woman alleged to be a spy — Nvidia's board is preparing to oust CEO Jensen Huang …",
    "via": "Techmeme"
   },
   {
@@ -17,7 +17,7 @@
    "published_at": "2026-11-11T18:16:26Z",
    "text": "Introducing Gemini Decision 1, our new frontier decision model in the Gemini API. It is $0.10 per 1M input tokens with no additional cost. With support for image, audio, video, and PDF natively, 256K context window, & 1K questions. You can try it for free in the API!",
    "author_name": "Logan Kilpatrick",
-   "likes": 7766,
+   "likes": 7935,
    "story": "Google launches Gemini Decisions API, powered by its new Gemini Decision 1 model, to return predefined answers with confidence scores, at $0.10/1M input tokens"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-11-11T17:12:24Z",
    "text": "Super proud to announce AlphaGenome 2 - our new DNA sequence model! 🧬 It predicts the impact of DNA variants in different specific cell types - unlocking crucial information for understanding complex diseases. Available for academic research via our API:",
    "author_name": "Demis Hassabis",
-   "likes": 2626,
+   "likes": 2665,
    "story": "Google DeepMind launches AlphaGenome 2, trained on 100M+ cell profiles across 68 tissues to predict the effects of genetic variants, for non-commercial research",
    "links": [
     "https://www.alphagenomedocs.com/"
@@ -49,13 +49,13 @@
    "via": "Techmeme"
   },
   {
-   "title": "Nvidia prepares to fire CEO Jensen Huang, WSJ reports",
-   "url": "https://twitter.com/watcherguru/status/2120645607866188008",
+   "title": "United Airlines bans AI agents from booking flights on behalf of travelers",
+   "url": "https://www.cbsnews.com/news/united-airlines-bans-ai-agents-booking-flights/",
    "source": "Hacker News",
-   "published_at": "2026-11-11T22:36:35Z",
-   "text": "205 points and 129 comments on Hacker News.",
-   "points": 205,
-   "discussion": "https://news.ycombinator.com/item?id=50459776"
+   "published_at": "2026-11-11T21:24:35Z",
+   "text": "332 points and 315 comments on Hacker News.",
+   "points": 332,
+   "discussion": "https://news.ycombinator.com/item?id=50458900"
   },
   {
    "title": "we’re like one month away from rainbow ICE agent uniforms if these people aren’t actually held acco…",
@@ -64,7 +64,7 @@
    "published_at": "2026-11-11T15:23:50Z",
    "text": "we’re like one month away from rainbow ICE agent uniforms if these people aren’t actually held accountable",
    "author_name": "matt bernstein",
-   "likes": 10047,
+   "likes": 10216,
    "story": "After the US midterms, Palantir CEO Alex Karp pivots toward Democrats, describing his philosophy as “progressive” and praising Trump for saying ICE went too far"
   },
   {
@@ -96,17 +96,17 @@
    "published_at": "2026-11-11T13:02:55Z",
    "text": "Anyhow, in a little over a week we will see the release of The Last Human Game. There will never be another AAA game at the scale of GTA 6 with no AI assistance. People will look back at an all-human game with a billion dollar budget and wonder how they did it, like the Pyramids",
    "author_name": "Ethan Mollick",
-   "likes": 3342,
+   "likes": 3388,
    "story": "Game developer House House confirms using AI during Big Walk's final development, sparking an intense debate among Independent Games Festival judges and jurors"
   },
   {
-   "title": "United Airlines bans AI agents from booking flights on behalf of travelers",
-   "url": "https://www.cbsnews.com/news/united-airlines-bans-ai-agents-booking-flights/",
+   "title": "My AI agents found an unmapped Maya site?",
+   "url": "https://pietromiotti.com/latest/maya-site",
    "source": "Hacker News",
-   "published_at": "2026-11-11T21:24:35Z",
-   "text": "314 points and 291 comments on Hacker News.",
-   "points": 314,
-   "discussion": "https://news.ycombinator.com/item?id=50458900"
+   "published_at": "2026-11-11T12:05:22Z",
+   "text": "920 points and 335 comments on Hacker News.",
+   "points": 920,
+   "discussion": "https://news.ycombinator.com/item?id=50452455"
   },
   {
    "title": "ByteDance is launching its own personal AI agent this month, no name announced yet. What I found ev…",
@@ -115,7 +115,7 @@
    "published_at": "2026-11-11T17:55:36Z",
    "text": "ByteDance is launching its own personal AI agent this month, no name announced yet. What I found even more interesting than the agent news was ByteDance's AI industry timeline: they believe they will catch up to the US frontier by 2029–2030.",
    "author_name": "Andrew Curran",
-   "likes": 223,
+   "likes": 225,
    "story": "Sources: co-founder Zhang Yiming says ByteDance plans to launch a Muse-like AI assistant in the coming weeks and rival Anthropic and OpenAI by 2029 or 2030"
   },
   {
@@ -127,13 +127,13 @@
    "via": "Techmeme"
   },
   {
-   "title": "My AI agents found an unmapped Maya site",
-   "url": "https://pietromiotti.com/latest/maya-site",
+   "title": "A false smoke alarm almost drowned Jane Street's only NYC datacenter",
+   "url": "https://michael.bacarella.com/2026/11/10/false-smoke-alarm-jane-street-datacenter/",
    "source": "Hacker News",
-   "published_at": "2026-11-11T12:05:22Z",
-   "text": "918 points and 335 comments on Hacker News.",
-   "points": 918,
-   "discussion": "https://news.ycombinator.com/item?id=50452455"
+   "published_at": "2026-11-11T16:38:44Z",
+   "text": "403 points and 199 comments on Hacker News.",
+   "points": 403,
+   "discussion": "https://news.ycombinator.com/item?id=50455394"
   }
  ],
  "sources": "curated, Techmeme, X (found via Techmeme, Reddit, the Internet Archive), Claude Code releases, Anthropic, Hacker News, Simon Willison"
