@@ -1,13 +1,13 @@
 {
  "schema": 1,
- "generated_at": "2026-11-12T14:06:09Z",
+ "generated_at": "2026-11-12T14:38:15Z",
  "items": [
   {
    "title": "Jensen Huang resigns as Nvidia CEO, president, and board member; CFO Colette Kress will be interim…",
    "url": "https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition",
    "source": "Nvidia Newsroom",
    "published_at": "2026-11-12T13:53:56Z",
-   "text": "Jensen Huang resigns as Nvidia CEO, president, and board member; CFO Colette Kress will be interim CEO, as the board considers candidates; NVDA drops 10%+. - Colette Kress, Executive Vice President and Chief Financial Officer, Appointed Interim CEO — Harvey C. Jones Appointed First-Ever Chair of the Board",
+   "text": "Jensen Huang resigns as Nvidia CEO, president, and board member; CFO Colette Kress will be interim CEO, as the board considers candidates; NVDA drops 13%+. - Colette Kress, Executive Vice President and Chief Financial Officer, Appointed Interim CEO — Harvey C. Jones Appointed First-Ever Chair of the Board",
    "via": "Techmeme"
   },
   {
@@ -17,7 +17,7 @@
    "published_at": "2026-11-11T18:16:26Z",
    "text": "Introducing Gemini Decision 1, our new frontier decision model in the Gemini API. It is $0.10 per 1M input tokens with no additional cost. With support for image, audio, video, and PDF natively, 256K context window, & 1K questions. You can try it for free in the API!",
    "author_name": "Logan Kilpatrick",
-   "likes": 9865,
+   "likes": 9926,
    "story": "Google launches Gemini Decisions API, powered by its new Gemini Decision 1 model, to return predefined answers with confidence scores, at $0.10/1M input tokens"
   },
   {
@@ -40,8 +40,8 @@
    "url": "https://ipo.anthropic.com/us/",
    "source": "Hacker News",
    "published_at": "2026-11-12T11:46:41Z",
-   "text": "219 points and 252 comments on Hacker News.",
-   "points": 219,
+   "text": "256 points and 291 comments on Hacker News.",
+   "points": 256,
    "discussion": "https://news.ycombinator.com/item?id=50465829"
   },
   {
@@ -59,28 +59,52 @@
    "text": "Our house has a box room, full of boxes that we still haven't unpacked from our last move. A couple of weeks ago something in that room started intermittently beeping . The beeps were far enough apart that standing in the room and trying to determine the source of the noise was frustrating, and I really didn't want to dig through every one of those boxes. So I had Claude Code build Beep Locator , a software system for triangulating the source of a mysterious beep using multiple devices scattered around the room."
   },
   {
+   "title": "Nvidia appoints ex-Synopsys CEO Harvey C. Jones as its first-ever board chair; the board's Jensen H…",
+   "url": "https://www.theverge.com/ai-artificial-intelligence/1031689/jensen-huang-fired-nvidia",
+   "source": "Hayden Field / The Verge",
+   "published_at": "2026-11-12T14:26:29Z",
+   "text": "Nvidia appoints ex-Synopsys CEO Harvey C. Jones as its first-ever board chair; the board's Jensen Huang exit press release does not include a quote from Huang. After reports of Huang's two extramarital affairs with an alleged spy and an Nvidia executive, he's out, and Nvidia CFO Colette Kress is in.",
+   "via": "Techmeme"
+  },
+  {
+   "title": "Nvidia CEO Jensen Huang resigns after reports of second affair deepened scandal",
+   "url": "https://www.bbc.co.uk/news/live/c6zjry11v8w1t",
+   "source": "Hacker News",
+   "published_at": "2026-11-12T13:56:38Z",
+   "text": "60 points and 26 comments on Hacker News.",
+   "points": 60,
+   "discussion": "https://news.ycombinator.com/item?id=50467139"
+  },
+  {
+   "title": "Source: Nvidia's board is considering Apple Chief Hardware Officer Johny Srouji as a CEO candidate",
+   "url": "https://www.semafor.com/article/11/11/2026/nvidia-board-preparing-to-oust-ceo-huang-wsj",
+   "source": "Semafor",
+   "published_at": "2026-11-12T02:46:03Z",
+   "text": "Source: Nvidia's board is considering Apple Chief Hardware Officer Johny Srouji as a CEO candidate. THE SCOOP — Some members of Nvidia's board favor appointing Chief Financial Officer Colette Kress as interim CEO at the beleaguered chipmaker if CEO and founder Jensen Huang is ousted, according to people familiar with the matter.",
+   "via": "Techmeme"
+  },
+  {
+   "title": "A look at potential Nvidia CEO candidates, including CUDA inventor Ian Buck, Arm CEO Rene Haas, and…",
+   "url": "https://www.bloomberg.com/news/articles/2026-11-12/nvidia-drama-triggers-difficult-search-for-huang-s-successor",
+   "source": "Bloomberg",
+   "published_at": "2026-11-12T11:01:26Z",
+   "text": "A look at potential Nvidia CEO candidates, including CUDA inventor Ian Buck, Arm CEO Rene Haas, and Apple Chief Hardware Officer Johny Srouji",
+   "via": "Techmeme"
+  },
+  {
+   "title": "Apple HomeView review: fast home controls, helpful Siri AI, gorgeous customizable faces, great soun…",
+   "url": "https://www.theverge.com/tech/1031726/apple-homeview-review-smart-display-homekit",
+   "source": "Jennifer Pattison Tuohy / T…",
+   "published_at": "2026-11-12T14:05:42Z",
+   "text": "Apple HomeView review: fast home controls, helpful Siri AI, gorgeous customizable faces, great sound for its size, but Siri can be slow and pricey wall mount. The HomeView nails everything I want from a smart display. It's superb at controlling my smart home; it's an excellent hands …",
+   "via": "Techmeme"
+  },
+  {
    "title": "Sources: Howard Lutnick has stalled curbs on companies suspected of diverting Nvidia chips to China…",
    "url": "https://www.axios.com/2026/11/11/trump-lutnick-nvidia-china-chip-export-controls",
    "source": "Axios",
    "published_at": "2026-11-11T23:21:09Z",
    "text": "Sources: Howard Lutnick has stalled curbs on companies suspected of diverting Nvidia chips to China; Trump approved curbs for a third time in 2026 on November 5. President Trump on Thursday authorized a crack down on companies suspected of diverting Nvidia's advanced AI chips to China …",
-   "via": "Techmeme"
-  },
-  {
-   "title": "United Airlines bans AI agents from booking flights on behalf of travelers",
-   "url": "https://www.cbsnews.com/news/united-airlines-bans-ai-agents-booking-flights/",
-   "source": "Hacker News",
-   "published_at": "2026-11-11T21:24:35Z",
-   "text": "595 points and 617 comments on Hacker News.",
-   "points": 595,
-   "discussion": "https://news.ycombinator.com/item?id=50458900"
-  },
-  {
-   "title": "Sources: some Nvidia board members favor naming CFO Colette Kress as interim CEO; a source says App…",
-   "url": "https://www.semafor.com/article/11/11/2026/nvidia-board-preparing-to-oust-ceo-huang-wsj",
-   "source": "Semafor",
-   "published_at": "2026-11-12T02:46:03Z",
-   "text": "Sources: some Nvidia board members favor naming CFO Colette Kress as interim CEO; a source says Apple Chief Hardware Officer Johny Srouji is under consideration. THE SCOOP — Some members of Nvidia's board favor appointing Chief Financial Officer Colette Kress as interim CEO …",
    "via": "Techmeme"
   },
   {
@@ -97,30 +121,6 @@
    "source": "Sam Biddle / The Intercept",
    "published_at": "2026-11-12T11:36:19Z",
    "text": "Russian pranksters tricked three OpenAI natsec and policy executives into a video meeting by posing as Ukrainian officials; OpenAI says it “acted internally”. A Russian internet comedy duo tricked three of OpenAI's highest ranking military and national security staff into a candid conversation about arming Ukraine.",
-   "via": "Techmeme"
-  },
-  {
-   "title": "Sources: Chinese AI companies rush to rent Nvidia cloud capacity overseas amid fears of tighter US…",
-   "url": "https://www.reuters.com/world/china/chinese-ai-firms-rush-secure-nvidia-chip-capacity-spy-scandal-stirs-fear-us-2026-11-12/",
-   "source": "Reuters",
-   "published_at": "2026-11-12T06:06:04Z",
-   "text": "Sources: Chinese AI companies rush to rent Nvidia cloud capacity overseas amid fears of tighter US export control enforcement after the Jensen Huang spy scandal. Chinese artificial intelligence companies are trying to rent Nvidia-powered computing capacity at data centres outside China …",
-   "via": "Techmeme"
-  },
-  {
-   "title": "Google launches Tabletop, an experimental AI platform to build customizable, collaborative personal…",
-   "url": "https://www.theverge.com/tech/1031526/google-tabletop-ai-experiment-waitlist-availability",
-   "source": "Jess Weatherbed / The Verge",
-   "published_at": "2026-11-12T12:05:40Z",
-   "text": "Google launches Tabletop, an experimental AI platform to build customizable, collaborative personal planning and coordination hubs, in beta via a waitlist. Tabletop provides customizable, collaborative spaces for all your personal planning needs.﻿",
-   "via": "Techmeme"
-  },
-  {
-   "title": "AWS releases AWS Emulator, a free tool that simulates 200+ services locally, saying AI agents wrote…",
-   "url": "https://www.geekwire.com/2026/aws-gives-developers-a-free-local-stand-in-for-its-cloud-built-from-scratch-by-ai-agents/",
-   "source": "Todd Bishop / GeekWire",
-   "published_at": "2026-11-11T20:26:31Z",
-   "text": "AWS releases AWS Emulator, a free tool that simulates 200+ services locally, saying AI agents wrote it and its team hasn't written or reviewed any of its code. AWS says its engineers didn't write or review a single line of code in its newest developer tool, and the company is touting that as a selling point.",
    "via": "Techmeme"
   }
  ],
