@@ -1,13 +1,13 @@
 {
  "schema": 1,
- "generated_at": "2026-11-13T14:45:58Z",
+ "generated_at": "2026-11-13T15:17:55Z",
  "items": [
   {
-   "title": "Jensen Huang's biographer says there was a culture of omertà and deference towards Huang inside Nvi…",
-   "url": "https://www.nytimes.com/2026/11/12/opinion/jensen-huang-nvidia.html?unlocked_article_code=1.P1E.6bW-.jsvT3PNHnXvZ&smid=nytcore-ios-share",
-   "source": "Stephen Witt / New York Tim…",
-   "published_at": "2026-11-12T19:20:52Z",
-   "text": "Jensen Huang's biographer says there was a culture of omertà and deference towards Huang inside Nvidia that enabled him to “be his worst self”",
+   "title": "Jensen Huang's downfall exposes Nvidia's internal politics; source: Huang ran Nvidia as a “feudal s…",
+   "url": "https://www.ft.com/content/ef8f85a6-e2d7-4d41-b70e-092b2567813a",
+   "source": "Financial Times",
+   "published_at": "2026-11-13T13:11:15Z",
+   "text": "Jensen Huang's downfall exposes Nvidia's internal politics; source: Huang ran Nvidia as a “feudal system” with his daughter and son-in-law in powerful positions",
    "via": "Techmeme"
   },
   {
@@ -17,7 +17,7 @@
    "published_at": "2026-11-12T20:16:20Z",
    "text": "Introducing Claude Meetings: add Claude to your team’s video call and it builds docs, whiteboards, and other artifacts with you while you’re still talking. Starting to roll out in beta on Team and Enterprise plans.",
    "author_name": "Claude",
-   "likes": 66168,
+   "likes": 66692,
    "story": "Introducing Claude Meetings"
   },
   {
@@ -34,42 +34,8 @@
    "published_at": "2026-11-12T21:29:42Z",
    "text": "I have a major result to share. I’ve found conclusive forensic evidence that the top 4 Chinese AI labs—DeepSeek, Moonshot, MiniMax and Ant Group—have built their newest models on NVIDIA’s most advanced Blackwell chips, which are barred from export to China. This sounds insane,…",
    "author_name": "will depue",
-   "likes": 36794,
+   "likes": 37054,
    "story": "Analysis of open weights: six models from DeepSeek, Moonshot, MiniMax, and Ant Group released since April carry fingerprints of export-controlled Blackwell GPUs"
-  },
-  {
-   "title": "Senate Banking Chair Tim Scott asks Jensen Huang and Howard Lutnick to testify at separate hearings…",
-   "url": "https://www.politico.com/live-updates/2026/11/12/congress/tim-scott-summons-jensen-huang-howard-lutnick-to-testify-over-nvidia-saga-01164124",
-   "source": "Jasper Goodman / Politico",
-   "published_at": "2026-11-13T03:03:10Z",
-   "text": "Senate Banking Chair Tim Scott asks Jensen Huang and Howard Lutnick to testify at separate hearings in December over the Nvidia saga; Lutnick agrees to appear. Senate Banking Chair Tim Scott on Thursday called on fallen Nvidia CEO Jensen Huang and Commerce Secretary Howard Lutnick to testify …",
-   "via": "Techmeme"
-  },
-  {
-   "title": "Elevated errors on claude.ai, Claude Code, and platform.claude.com",
-   "url": "https://status.claude.com/incidents/nn11wk485zfn",
-   "source": "Hacker News",
-   "published_at": "2026-11-13T10:18:13Z",
-   "text": "350 points and 306 comments on Hacker News.",
-   "points": 350,
-   "discussion": "https://news.ycombinator.com/item?id=50481187"
-  },
-  {
-   "title": "Introducing Gemini 4 Hydrogen, an extremely capable and fast model built to bring Gemini 4 to every…",
-   "url": "https://x.com/OfficialLoganK/status/2120940951292268640",
-   "source": "𝕏 @OfficialLoganK",
-   "published_at": "2026-11-12T18:05:02Z",
-   "text": "Introducing Gemini 4 Hydrogen, an extremely capable and fast model built to bring Gemini 4 to everyone! Available to all tiers of Google AI Studio, Gemini API, Gemini for business, the Gemini app, Google Search, and paid Google AI Pro + Ultra subscribers in Google Antigravity.",
-   "author_name": "Logan Kilpatrick",
-   "likes": 10785,
-   "story": "Google launches Gemini 4 Hydrogen, calling it a major upgrade over Gemini 3.8 Flash, at $1.50/1M input and $7.50/1M output tokens across its 1M context window"
-  },
-  {
-   "title": "Introducing Claude 4",
-   "url": "https://www.anthropic.com/news/claude-4",
-   "source": "Anthropic",
-   "published_at": "2026-11-12T21:02:17Z",
-   "text": "Discover Claude 4's breakthrough AI capabilities. Experience more reliable, interpretable assistance for complex tasks across work and learning."
   },
   {
    "title": "Sources: President Trump's and Howard Lutnick's close relationship with Jensen Huang made officials…",
@@ -80,23 +46,67 @@
    "via": "Techmeme"
   },
   {
-   "title": "President Trump reveals Jensen Huang called him yesterday 'going through hell,' and says Huang shou…",
-   "url": "https://x.com/firesidealpha/status/2121028257156100396",
-   "source": "𝕏 @firesidealpha",
-   "published_at": "2026-11-12T23:51:57Z",
-   "text": "President Trump reveals Jensen Huang called him yesterday 'going through hell,' and says Huang should only have stepped down if the woman was a spy Stephen A. Smith: “Before I let you get on out of here, shifting, Jensen Huang.” Trump: “Yeah.” Stephen A. Smith: “Nvidia,…",
-   "author_name": "Fireside Alpha",
-   "likes": 9381,
-   "story": "Sources close to Jensen Huang say he has taken a penitent turn, castigated himself as a “piece of shit”, and he has claimed to not care what happens to himself"
+   "title": "Elevated errors on claude.ai, Claude Code, and platform.claude.com",
+   "url": "https://status.claude.com/incidents/nn11wk485zfn",
+   "source": "Hacker News",
+   "published_at": "2026-11-13T10:18:13Z",
+   "text": "371 points and 321 comments on Hacker News.",
+   "points": 371,
+   "discussion": "https://news.ycombinator.com/item?id=50481187"
+  },
+  {
+   "title": "Introducing Gemini 4 Hydrogen, an extremely capable and fast model built to bring Gemini 4 to every…",
+   "url": "https://x.com/OfficialLoganK/status/2120940951292268640",
+   "source": "𝕏 @OfficialLoganK",
+   "published_at": "2026-11-12T18:05:02Z",
+   "text": "Introducing Gemini 4 Hydrogen, an extremely capable and fast model built to bring Gemini 4 to everyone! Available to all tiers of Google AI Studio, Gemini API, Gemini for business, the Gemini app, Google Search, and paid Google AI Pro + Ultra subscribers in Google Antigravity.",
+   "author_name": "Logan Kilpatrick",
+   "likes": 10846,
+   "story": "Google launches Gemini 4 Hydrogen, calling it a major upgrade over Gemini 3.8 Flash, at $1.50/1M input and $7.50/1M output tokens across its 1M context window"
+  },
+  {
+   "title": "Introducing Claude 4",
+   "url": "https://www.anthropic.com/news/claude-4",
+   "source": "Anthropic",
+   "published_at": "2026-11-12T21:02:17Z",
+   "text": "Discover Claude 4's breakthrough AI capabilities. Experience more reliable, interpretable assistance for complex tasks across work and learning."
+  },
+  {
+   "title": "Senate Banking Chair Tim Scott asks Jensen Huang and Howard Lutnick to testify at separate hearings…",
+   "url": "https://www.politico.com/live-updates/2026/11/12/congress/tim-scott-summons-jensen-huang-howard-lutnick-to-testify-over-nvidia-saga-01164124",
+   "source": "Jasper Goodman / Politico",
+   "published_at": "2026-11-13T03:03:10Z",
+   "text": "Senate Banking Chair Tim Scott asks Jensen Huang and Howard Lutnick to testify at separate hearings in December over the Nvidia saga; Lutnick agrees to appear. Senate Banking Chair Tim Scott on Thursday called on fallen Nvidia CEO Jensen Huang and Commerce Secretary Howard Lutnick to testify …",
+   "via": "Techmeme"
+  },
+  {
+   "title": "What?! So journalists with sketchy motives portrayed rumors from god-knows-who (lobbyists?) as fact…",
+   "url": "https://x.com/TimSweeneyEpic/status/2121083415487205652",
+   "source": "𝕏 @TimSweeneyEpic",
+   "published_at": "2026-11-13T03:31:08Z",
+   "text": "What?! So journalists with sketchy motives portrayed rumors from god-knows-who (lobbyists?) as facts sourced from intelligence officials and gaslit the NVIDIA board to push out the founder, CEO, and once-in-generation visionary? This raises serious corporate governance issues.",
+   "author_name": "Tim Sweeney",
+   "likes": 5353,
+   "story": "Sources: US officials disagree on whether China had Alice Huang spy on Jensen Huang; some at the ODNI and the CIA say the intelligence to date doesn't prove it"
   },
   {
    "title": "Claude Is Down",
    "url": "https://status.claude.com/history",
    "source": "Hacker News",
    "published_at": "2026-11-13T10:20:09Z",
-   "text": "171 points and 146 comments on Hacker News.",
-   "points": 171,
+   "text": "174 points and 149 comments on Hacker News.",
+   "points": 174,
    "discussion": "https://news.ycombinator.com/item?id=50481220"
+  },
+  {
+   "title": "Jensen Huang in his last hours as Nvidia CEO, per Bloomberg: > The board met late into the night &…",
+   "url": "https://x.com/wallstengine/status/2121057521544958152",
+   "source": "𝕏 @wallstengine",
+   "published_at": "2026-11-13T01:48:15Z",
+   "text": "Jensen Huang in his last hours as Nvidia CEO, per Bloomberg: > The board met late into the night & left him no choice but to resign > > He looked broken, his take-charge style gone > Started saying things like \"whatever\" & \"I don't care\" > He has since called himself a \"piece of…",
+   "author_name": "Wall St Engine",
+   "likes": 7412,
+   "story": "Sources close to Jensen Huang say he has taken a penitent turn, castigated himself as a “piece of shit”, and he has claimed to not care what happens to himself"
   },
   {
    "title": "🚨MUSE FEATURE ALERT!!!🚨 lots of you have been asking for this one… muse can make phone calls for yo…",
@@ -105,7 +115,7 @@
    "published_at": "2026-11-12T17:23:51Z",
    "text": "🚨MUSE FEATURE ALERT!!!🚨 lots of you have been asking for this one… muse can make phone calls for you! ☎️📞📲 let muse take care of all those calls you don’t want to make. insurance? cable? DMV? dinner res? not your problem anymore. out now to paid subs in the US 🇺🇸 https",
    "author_name": "Alexandr Wang",
-   "likes": 1341,
+   "likes": 1348,
    "story": "Meta launches an outbound calling feature for Muse, such as to businesses, available for paid US subscribers; Gemini and startup Instinct offer a similar option"
   },
   {
@@ -115,25 +125,16 @@
    "published_at": "2026-11-12T20:50:12Z",
    "text": "‼️ UPDATE: Microsoft's outage now reaches far beyond Outlook. Teams, SharePoint, Copilot and even its Defender XDR security platform are hit. Consumers can't reach their OneDrive storage or Office on the web either, TechCrunch reports. Microsoft first blamed elevated load. Now…",
    "author_name": "International Cyber Digest",
-   "likes": 7079,
+   "likes": 7083,
    "story": "Microsoft says it is seeing “continued recovery progress” after confirming users may be unable to access Microsoft 365 services, including Outlook and Teams"
   },
   {
-   "title": "Jensen Huang's downfall exposes Nvidia's internal politics; source: Huang ran Nvidia as a “feudal s…",
-   "url": "https://www.ft.com/content/ef8f85a6-e2d7-4d41-b70e-092b2567813a",
-   "source": "Financial Times",
-   "published_at": "2026-11-13T13:11:15Z",
-   "text": "Jensen Huang's downfall exposes Nvidia's internal politics; source: Huang ran Nvidia as a “feudal system” with his daughter and son-in-law in powerful positions. After 33 years building Nvidia into the world's most valuable company, its founder's career disintegrated in less than two weeks",
+   "title": "Amended S-1: Nscale had $5.5B in debt in September, up from $137.4M in June; Nvidia committed $2B o…",
+   "url": "https://www.bloomberg.com/news/articles/2026-11-13/neocloud-nscale-reveals-5-5-billion-debt-and-closer-nvidia-ties-ahead-of-ipo",
+   "source": "Bloomberg",
+   "published_at": "2026-11-13T14:26:13Z",
+   "text": "Amended S-1: Nscale had $5.5B in debt in September, up from $137.4M in June; Nvidia committed $2B of its $3B+ convertible financing; it previously disclosed $1B. Data center developer Nscale needs more cash, has significantly increased its debt and is more reliant on Nvidia Corp …",
    "via": "Techmeme"
-  },
-  {
-   "title": "Anthropic IPO",
-   "url": "https://ipo.anthropic.com/us/",
-   "source": "Hacker News",
-   "published_at": "2026-11-12T11:46:41Z",
-   "text": "976 points and 883 comments on Hacker News.",
-   "points": 976,
-   "discussion": "https://news.ycombinator.com/item?id=50465829"
   }
  ],
  "sources": "curated, Techmeme, X (found via Techmeme, Reddit, the Internet Archive), Claude Code releases, Anthropic, Hacker News, Simon Willison"
