@@ -1,24 +1,24 @@
 {
  "schema": 1,
- "generated_at": "2026-11-13T21:10:20Z",
+ "generated_at": "2026-11-13T21:43:00Z",
  "items": [
   {
-   "title": "Sources: Nvidia's board has approached Arm CEO Rene Haas in its search for a potential successor to…",
-   "url": "https://www.ft.com/content/2a64f698-46dd-4178-a3f4-4c5f4c0a0926",
-   "source": "Michael Acton / Financial T…",
-   "published_at": "2026-11-13T17:04:48Z",
-   "text": "Sources: Nvidia's board has approached Arm CEO Rene Haas in its search for a potential successor to Jensen Huang; Haas worked at Nvidia more than a decade ago. Head of SoftBank-owned UK semiconductor group sounded out after Jensen Huang resigned over affairs",
+   "title": "Nvidia board says it is “in the process of selecting a search firm” for the CEO role and it has “no…",
+   "url": "https://www.cnbc.com/2026/11/13/nvidia-huang-ceo-replacement-search.html",
+   "source": "CNBC",
+   "published_at": "2026-11-13T20:36:22Z",
+   "text": "Nvidia board says it is “in the process of selecting a search firm” for the CEO role and it has “not formally engaged any potential candidates”. Nvidia hasn't yet selected a search firm to work with in identifying a successor for former CEO Jensen Huang, the company's board told CNBC.",
    "via": "Techmeme"
   },
   {
-   "title": "I have a major result to share. I’ve found conclusive forensic evidence that the top 4 Chinese AI l…",
-   "url": "https://x.com/willdepue/status/2120992457630326841",
-   "source": "𝕏 @willdepue",
-   "published_at": "2026-11-12T21:29:42Z",
-   "text": "I have a major result to share. I’ve found conclusive forensic evidence that the top 4 Chinese AI labs—DeepSeek, Moonshot, MiniMax and Ant Group—have built their newest models on NVIDIA’s most advanced Blackwell chips, which are barred from export to China. This sounds insane,…",
-   "author_name": "will depue",
-   "likes": 38857,
-   "story": "Analysis of open weights: six models from DeepSeek, Moonshot, MiniMax, and Ant Group released since April carry fingerprints of export-controlled Blackwell GPUs"
+   "title": "Introducing Gemini 4 Hydrogen, an extremely capable and fast model built to bring Gemini 4 to every…",
+   "url": "https://x.com/OfficialLoganK/status/2120940951292268640",
+   "source": "𝕏 @OfficialLoganK",
+   "published_at": "2026-11-12T18:05:02Z",
+   "text": "Introducing Gemini 4 Hydrogen, an extremely capable and fast model built to bring Gemini 4 to everyone! Available to all tiers of Google AI Studio, Gemini API, Gemini for business, the Gemini app, Google Search, and paid Google AI Pro + Ultra subscribers in Google Antigravity.",
+   "author_name": "Logan Kilpatrick",
+   "likes": 11128,
+   "story": "Artificial Analysis Intelligence Index: Gemini 4 Hydrogen nearly ties Claude Sonnet 5.5 and GPT-6.1 Sol, at a third of Sonnet's cost but ~2.5x that of Sol"
   },
   {
    "title": "Claude Code 2.1.325 released",
@@ -28,21 +28,21 @@
    "text": "Fixed a security issue in how zstd-compressed responses are decoded · Added a spinner tip in VS Code and similar integrated terminals about re-running a notebook cell, shown once Claude has read or edited a Jupyter notebook · Added a line under the error shown when your organization's policy blocks a request, saying how to continue: run /rewind and change the message, or run /clear · Added a note for Claude when a sandboxed git checkout, git stash or autostash pull cannot update protected files such as those in .claude"
   },
   {
-   "title": "Introducing Gemini 4 Hydrogen, an extremely capable and fast model built to bring Gemini 4 to every…",
-   "url": "https://x.com/OfficialLoganK/status/2120940951292268640",
-   "source": "𝕏 @OfficialLoganK",
-   "published_at": "2026-11-12T18:05:02Z",
-   "text": "Introducing Gemini 4 Hydrogen, an extremely capable and fast model built to bring Gemini 4 to everyone! Available to all tiers of Google AI Studio, Gemini API, Gemini for business, the Gemini app, Google Search, and paid Google AI Pro + Ultra subscribers in Google Antigravity.",
-   "author_name": "Logan Kilpatrick",
-   "likes": 11113,
-   "story": "Artificial Analysis Intelligence Index: Gemini 4 Hydrogen nearly ties Claude Sonnet 5.5 and GPT-6.1 Sol, at a third of Sonnet's cost but ~2.5x that of Sol"
+   "title": "🚨 Another major scandal is coming out of NVIDIA. And this one has nothing to do with Jensen Huang's…",
+   "url": "https://x.com/BullTheoryio/status/2121166572647772461",
+   "source": "𝕏 @BullTheoryio",
+   "published_at": "2026-11-13T09:01:34Z",
+   "text": "🚨 Another major scandal is coming out of NVIDIA. And this one has nothing to do with Jensen Huang's affairs. According to a Wall Street Journal report, Nvidia was offering billions in financial guarantees to AI companies that could not afford its chips, so they could keep…",
+   "author_name": "Bull Theory",
+   "likes": 10752,
+   "story": "CXMT almost tripling RAM production from 2025 to 2028"
   },
   {
-   "title": "Jensen Huang's downfall exposes Nvidia's internal politics; source: Huang ran Nvidia as a “feudal s…",
-   "url": "https://www.ft.com/content/ef8f85a6-e2d7-4d41-b70e-092b2567813a",
-   "source": "Financial Times",
-   "published_at": "2026-11-13T13:11:15Z",
-   "text": "Jensen Huang's downfall exposes Nvidia's internal politics; source: Huang ran Nvidia as a “feudal system” with his daughter and son-in-law in powerful positions",
+   "title": "Sources: Nvidia's board has approached Arm CEO Rene Haas in its search for a potential successor to…",
+   "url": "https://www.ft.com/content/2a64f698-46dd-4178-a3f4-4c5f4c0a0926",
+   "source": "Michael Acton / Financial T…",
+   "published_at": "2026-11-13T17:04:48Z",
+   "text": "Sources: Nvidia's board has approached Arm CEO Rene Haas in its search for a potential successor to Jensen Huang; Haas worked at Nvidia more than a decade ago. Head of SoftBank-owned UK semiconductor group sounded out after Jensen Huang resigned over affairs",
    "via": "Techmeme"
   },
   {
@@ -50,19 +50,19 @@
    "url": "https://www.theguardian.com/science/2026/nov/13/kurt-godel-notebooks-ai-helps-unlock-hidden-discoveries-man-who-transformed-maths",
    "source": "Hacker News",
    "published_at": "2026-11-13T17:30:10Z",
-   "text": "240 points and 64 comments on Hacker News.",
-   "points": 240,
+   "text": "257 points and 72 comments on Hacker News.",
+   "points": 257,
    "discussion": "https://news.ycombinator.com/item?id=50486748"
   },
   {
-   "title": "🚨 Another major scandal is coming out of NVIDIA. And this one has nothing to do with Jensen Huang's…",
-   "url": "https://x.com/BullTheoryio/status/2121166572647772461",
-   "source": "𝕏 @BullTheoryio",
-   "published_at": "2026-11-13T09:01:34Z",
-   "text": "🚨 Another major scandal is coming out of NVIDIA. And this one has nothing to do with Jensen Huang's affairs. According to a Wall Street Journal report, Nvidia was offering billions in financial guarantees to AI companies that could not afford its chips, so they could keep…",
-   "author_name": "Bull Theory",
-   "likes": 10677,
-   "story": "CXMT almost tripling RAM production from 2025 to 2028"
+   "title": "holy crap -- knives are out for Lutnick over Nvidia",
+   "url": "https://x.com/atrupar/status/2121234944273916341",
+   "source": "𝕏 @atrupar",
+   "published_at": "2026-11-13T13:33:16Z",
+   "text": "holy crap -- knives are out for Lutnick over Nvidia",
+   "author_name": "Aaron Rupar",
+   "likes": 7920,
+   "story": "Scott Bessent says the departments of Treasury, Defense, and State were in favor of putting Megaspeed on the entity list for months, but Commerce is in charge"
   },
   {
    "title": "How Claude's text watermarking works",
@@ -80,43 +80,23 @@
    "via": "Techmeme"
   },
   {
-   "title": "holy crap -- knives are out for Lutnick over Nvidia",
-   "url": "https://x.com/atrupar/status/2121234944273916341",
-   "source": "𝕏 @atrupar",
-   "published_at": "2026-11-13T13:33:16Z",
-   "text": "holy crap -- knives are out for Lutnick over Nvidia",
-   "author_name": "Aaron Rupar",
-   "likes": 7764,
-   "story": "Scott Bessent says the departments of Treasury, Defense, and State were in favor of putting Megaspeed on the entity list for months, but Commerce is in charge"
-  },
-  {
-   "title": "After 600 experiments, here's what I discovered about JEPA world models",
-   "url": "https://haddyalchaer.com/jepa",
-   "source": "Hacker News",
-   "published_at": "2026-11-13T17:55:28Z",
-   "text": "154 points and 30 comments on Hacker News.",
-   "points": 154,
-   "discussion": "https://news.ycombinator.com/item?id=50487185"
-  },
-  {
    "title": "Nvidia is nothing without its people. It now appears the national security allegations may be as fa…",
    "url": "https://x.com/balajis/status/2121204119323152443",
    "source": "𝕏 @balajis",
    "published_at": "2026-11-13T11:30:46Z",
    "text": "Nvidia is nothing without its people. It now appears the national security allegations may be as fake as Russiagate. If so, Nvidia employees, shareholders, partners, and customers have immense leverage. Whether publicly or privately, collectively or individually, they can…",
    "author_name": "Balaji",
-   "likes": 6160,
+   "likes": 6261,
    "story": "Sources: US officials disagree on whether China had Alice Huang spy on Jensen Huang; some at the ODNI and the CIA say the intelligence to date doesn't prove it"
   },
   {
-   "title": "President Trump reveals Jensen Huang called him yesterday 'going through hell,' and says Huang shou…",
-   "url": "https://x.com/firesidealpha/status/2121028257156100396",
-   "source": "𝕏 @firesidealpha",
-   "published_at": "2026-11-12T23:51:57Z",
-   "text": "President Trump reveals Jensen Huang called him yesterday 'going through hell,' and says Huang should only have stepped down if the woman was a spy Stephen A. Smith: “Before I let you get on out of here, shifting, Jensen Huang.” Trump: “Yeah.” Stephen A. Smith: “Nvidia,…",
-   "author_name": "Fireside Alpha",
-   "likes": 9735,
-   "story": "Sources close to Jensen Huang say he has taken a penitent turn, castigated himself as a “piece of shit”, and he has claimed to not care what happens to himself"
+   "title": "No AI Slop: A Manifesto",
+   "url": "https://www.slopmanifesto.com/",
+   "source": "Hacker News",
+   "published_at": "2026-11-13T19:51:56Z",
+   "text": "108 points and 64 comments on Hacker News.",
+   "points": 108,
+   "discussion": "https://news.ycombinator.com/item?id=50488769"
   },
   {
    "title": "🚨MUSE FEATURE ALERT!!!🚨 lots of you have been asking for this one… muse can make phone calls for yo…",
@@ -125,7 +105,7 @@
    "published_at": "2026-11-12T17:23:51Z",
    "text": "🚨MUSE FEATURE ALERT!!!🚨 lots of you have been asking for this one… muse can make phone calls for you! ☎️📞📲 let muse take care of all those calls you don’t want to make. insurance? cable? DMV? dinner res? not your problem anymore. out now to paid subs in the US 🇺🇸 https",
    "author_name": "Alexandr Wang",
-   "likes": 1394,
+   "likes": 1397,
    "story": "Meta launches an outbound calling feature for Muse, such as to businesses, available for paid US subscribers; Gemini and startup Instinct offer a similar option"
   },
   {
@@ -135,6 +115,22 @@
    "published_at": "2026-11-13T15:36:57Z",
    "text": "OpenAI announces ChatGPT Wallet, which lets its dots AI agents make purchases on behalf of users, available to ChatGPT Pro subscribers in the US who are over 18. OpenAI on Friday announced ChatGPT Wallet, a new payment feature that enables its “dots” artificial intelligence agents to make purchases on behalf of users.",
    "via": "Techmeme"
+  },
+  {
+   "title": "$11.4M in Nvidia hardware vanishes during shipment from CA to TX",
+   "url": "https://www.freightwaves.com/news/11-4-million-in-nvidia-hardware-vanishes-during-shipment-from-california-to-texas",
+   "source": "Hacker News",
+   "published_at": "2026-11-13T18:40:44Z",
+   "text": "154 points and 92 comments on Hacker News.",
+   "points": 154,
+   "discussion": "https://news.ycombinator.com/item?id=50487864"
+  },
+  {
+   "title": "Introducing the next generation of Claude",
+   "url": "https://www.anthropic.com/news/claude-3-family",
+   "source": "Anthropic",
+   "published_at": "2026-11-13T17:02:43Z",
+   "text": "The Claude 3 model family—Haiku, Sonnet, and Opus—sets new industry benchmarks across a wide range of cognitive tasks."
   }
  ],
  "sources": "curated, Techmeme, X (found via Techmeme, Reddit, the Internet Archive), Claude Code releases, Anthropic, Hacker News, Simon Willison"
