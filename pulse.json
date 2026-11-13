@@ -1,13 +1,13 @@
 {
  "schema": 1,
- "generated_at": "2026-11-13T11:00:45Z",
+ "generated_at": "2026-11-13T11:33:09Z",
  "items": [
   {
-   "title": "Sources: President Trump's and Howard Lutnick's close relationship with Jensen Huang made officials…",
-   "url": "https://www.nytimes.com/2026/11/12/us/politics/lutnick-nvidia-commerce-china-chips.html?unlocked_article_code=1.QFE.Dy6v.TiF0dbAs7FNC&smid=nytcore-ios-share",
-   "source": "New York Times",
-   "published_at": "2026-11-13T01:36:10Z",
-   "text": "Sources: President Trump's and Howard Lutnick's close relationship with Jensen Huang made officials wary of taking aggressive steps to rein in Nvidia chip sales",
+   "title": "Google launches Gemini 4 Hydrogen, calling it a major upgrade over Gemini 3.8 Flash, at $1.50/1M in…",
+   "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/",
+   "source": "Koray Kavukcuoglu / Google",
+   "published_at": "2026-11-12T18:41:32Z",
+   "text": "Google launches Gemini 4 Hydrogen, calling it a major upgrade over Gemini 3.8 Flash, at $1.50/1M input and $7.50/1M output tokens across its 1M context window. Hydrogen brings cutting-edge intelligence to everyone. — SVP, Google DeepMind and Chief AI Architect, Google",
    "via": "Techmeme"
   },
   {
@@ -17,7 +17,7 @@
    "published_at": "2026-11-12T20:16:20Z",
    "text": "Introducing Claude Meetings: add Claude to your team’s video call and it builds docs, whiteboards, and other artifacts with you while you’re still talking. Starting to roll out in beta on Team and Enterprise plans.",
    "author_name": "Claude",
-   "likes": 61592,
+   "likes": 62274,
    "story": "Introducing Claude Meetings"
   },
   {
@@ -28,21 +28,21 @@
    "text": "Added Code Mode, an experimental opt-in in which Claude writes JavaScript to call its tools; see to turn it on, or to turn it off for an organization · Added engines[\"claude-code\"] to plugin.json: plugins outside their stated Claude Code version range are not installed, updated or loaded, and install and update pick the newest version that fits · Added type checking of a plugin's TypeScript hooks module to claude plugin validate; each finding is a warning, and --strict fails on it · Added to claude plugin validate the $ nouns a mod's engine.create hook adds, withholds or replaces"
   },
   {
-   "title": "NVIDIA letting Jensen go is a huge mistake, for America and for humanity. It's Apple firing Steve J…",
-   "url": "https://x.com/lexfridman/status/2120986129671631239",
-   "source": "𝕏 @lexfridman",
-   "published_at": "2026-11-12T21:04:33Z",
-   "text": "NVIDIA letting Jensen go is a huge mistake, for America and for humanity. It's Apple firing Steve Jobs all over again, but much bigger, given the role of AI in defining the future of our world. I've been keeping quiet on this out of respect for Jensen's family and team, who I've…",
-   "author_name": "Lex Fridman",
-   "likes": 69520,
-   "story": "Sources: President Trump urged Jensen Huang to keep fighting for his job in a Tuesday call; aides say Trump saw the company as essentially too big to fail"
+   "title": "I have a major result to share. I’ve found conclusive forensic evidence that the top 4 Chinese AI l…",
+   "url": "https://x.com/willdepue/status/2120992457630326841",
+   "source": "𝕏 @willdepue",
+   "published_at": "2026-11-12T21:29:42Z",
+   "text": "I have a major result to share. I’ve found conclusive forensic evidence that the top 4 Chinese AI labs—DeepSeek, Moonshot, MiniMax and Ant Group—have built their newest models on NVIDIA’s most advanced Blackwell chips, which are barred from export to China. This sounds insane,…",
+   "author_name": "will depue",
+   "likes": 34926,
+   "story": "Analysis of open weights: six models from DeepSeek, Moonshot, MiniMax, and Ant Group released since April carry fingerprints of export-controlled Blackwell GPUs"
   },
   {
-   "title": "Google launches Gemini 4 Hydrogen, calling it a major upgrade over Gemini 3.8 Flash, at $1.50/1M in…",
-   "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/",
-   "source": "Koray Kavukcuoglu / Google",
-   "published_at": "2026-11-12T18:41:32Z",
-   "text": "Google launches Gemini 4 Hydrogen, calling it a major upgrade over Gemini 3.8 Flash, at $1.50/1M input and $7.50/1M output tokens across its 1M context window. Hydrogen brings cutting-edge intelligence to everyone. — SVP, Google DeepMind and Chief AI Architect, Google",
+   "title": "Sources: President Trump's and Howard Lutnick's close relationship with Jensen Huang made officials…",
+   "url": "https://www.nytimes.com/2026/11/12/us/politics/lutnick-nvidia-commerce-china-chips.html?unlocked_article_code=1.QFE.Dy6v.TiF0dbAs7FNC&smid=nytcore-ios-share",
+   "source": "New York Times",
+   "published_at": "2026-11-13T01:36:10Z",
+   "text": "Sources: President Trump's and Howard Lutnick's close relationship with Jensen Huang made officials wary of taking aggressive steps to rein in Nvidia chip sales",
    "via": "Techmeme"
   },
   {
@@ -50,19 +50,19 @@
    "url": "https://status.claude.com/incidents/nn11wk485zfn",
    "source": "Hacker News",
    "published_at": "2026-11-13T10:18:13Z",
-   "text": "131 points and 79 comments on Hacker News.",
-   "points": 131,
+   "text": "195 points and 141 comments on Hacker News.",
+   "points": 195,
    "discussion": "https://news.ycombinator.com/item?id=50481187"
   },
   {
-   "title": "I have a major result to share. I’ve found conclusive forensic evidence that the top 4 Chinese AI l…",
-   "url": "https://x.com/willdepue/status/2120992457630326841",
-   "source": "𝕏 @willdepue",
-   "published_at": "2026-11-12T21:29:42Z",
-   "text": "I have a major result to share. I’ve found conclusive forensic evidence that the top 4 Chinese AI labs—DeepSeek, Moonshot, MiniMax and Ant Group—have built their newest models on NVIDIA’s most advanced Blackwell chips, which are barred from export to China. This sounds insane,…",
-   "author_name": "will depue",
-   "likes": 34553,
-   "story": "Analysis of open weights: six models from DeepSeek, Moonshot, MiniMax, and Ant Group released since April carry fingerprints of export-controlled Blackwell GPUs"
+   "title": "NVIDIA letting Jensen go is a huge mistake, for America and for humanity. It's Apple firing Steve J…",
+   "url": "https://x.com/lexfridman/status/2120986129671631239",
+   "source": "𝕏 @lexfridman",
+   "published_at": "2026-11-12T21:04:33Z",
+   "text": "NVIDIA letting Jensen go is a huge mistake, for America and for humanity. It's Apple firing Steve Jobs all over again, but much bigger, given the role of AI in defining the future of our world. I've been keeping quiet on this out of respect for Jensen's family and team, who I've…",
+   "author_name": "Lex Fridman",
+   "likes": 70252,
+   "story": "Sources close to Jensen Huang say he has taken a penitent turn, castigated himself as a “piece of shit”, and claims to not care what happens to himself"
   },
   {
    "title": "Introducing Claude 4",
@@ -70,53 +70,6 @@
    "source": "Anthropic",
    "published_at": "2026-11-12T21:02:17Z",
    "text": "Discover Claude 4's breakthrough AI capabilities. Experience more reliable, interpretable assistance for complex tasks across work and learning."
-  },
-  {
-   "title": "Google says Gemini 4 Hydrogen is available across AI Studio, the Gemini API, Search, paid AI Pro an…",
-   "url": "https://9to5google.com/2026/11/12/gemini-4-hydrogen-launch/",
-   "source": "Abner Li / 9to5Google",
-   "published_at": "2026-11-12T18:56:31Z",
-   "text": "Google says Gemini 4 Hydrogen is available across AI Studio, the Gemini API, Search, paid AI Pro and Ultra tiers in Antigravity, and more. After this week's Carbon availability, Google today unveiled Gemini 4 Hydrogen instead of keeping the “Flash” branding.",
-   "via": "Techmeme"
-  },
-  {
-   "title": "‼️ UPDATE: Microsoft's outage now reaches far beyond Outlook. Teams, SharePoint, Copilot and even i…",
-   "url": "https://x.com/IntCyberDigest/status/2120982515431473366",
-   "source": "𝕏 @IntCyberDigest",
-   "published_at": "2026-11-12T20:50:12Z",
-   "text": "‼️ UPDATE: Microsoft's outage now reaches far beyond Outlook. Teams, SharePoint, Copilot and even its Defender XDR security platform are hit. Consumers can't reach their OneDrive storage or Office on the web either, TechCrunch reports. Microsoft first blamed elevated load. Now…",
-   "author_name": "International Cyber Digest",
-   "likes": 6955,
-   "story": "Users report being unable to access Outlook, Teams, and other Microsoft 365 services; Microsoft says many of its servers became unexpectedly unavailable"
-  },
-  {
-   "title": "Claude Is Down",
-   "url": "https://status.claude.com/history",
-   "source": "Hacker News",
-   "published_at": "2026-11-13T10:20:09Z",
-   "text": "62 points and 37 comments on Hacker News.",
-   "points": 62,
-   "discussion": "https://news.ycombinator.com/item?id=50481220"
-  },
-  {
-   "title": "🚨MUSE FEATURE ALERT!!!🚨 lots of you have been asking for this one… muse can make phone calls for yo…",
-   "url": "https://x.com/alexandr_wang/status/2120930586827391350",
-   "source": "𝕏 @alexandr_wang",
-   "published_at": "2026-11-12T17:23:51Z",
-   "text": "🚨MUSE FEATURE ALERT!!!🚨 lots of you have been asking for this one… muse can make phone calls for you! ☎️📞📲 let muse take care of all those calls you don’t want to make. insurance? cable? DMV? dinner res? not your problem anymore. out now to paid subs in the US 🇺🇸 https",
-   "author_name": "Alexandr Wang",
-   "likes": 1288,
-   "story": "Meta launches an outbound calling feature for Muse, such as to businesses, available for paid US subscribers; Gemini and startup Instinct offer a similar option"
-  },
-  {
-   "title": "Todd Blanche suggests that perhaps Alice Huang isn't really a spy after all and says he has no conc…",
-   "url": "https://x.com/atrupar/status/2120980151999582647",
-   "source": "𝕏 @atrupar",
-   "published_at": "2026-11-12T20:40:48Z",
-   "text": "Todd Blanche suggests that perhaps Alice Huang isn't really a spy after all and says he has no concerns about Lutnick's alleged involvement in the Nvidia scandal (they are circling the wagons!)",
-   "author_name": "Aaron Rupar",
-   "likes": 5092,
-   "story": "Sources: US officials disagree on whether Alice Huang spied on Jensen Huang for China; some at ODNI and CIA say intelligence collected so far doesn't prove it"
   },
   {
    "title": "Senate Banking Chair Tim Scott asks Jensen Huang and Howard Lutnick to testify at separate hearings…",
@@ -127,13 +80,61 @@
    "via": "Techmeme"
   },
   {
-   "title": "Nvidia employees petition to bring back Jensen Huang",
-   "url": "https://www.wired.com/story/nvidia-employees-petition-for-jensen-huangs-return/",
+   "title": "President Trump reveals Jensen Huang called him yesterday 'going through hell,' and says Huang shou…",
+   "url": "https://x.com/firesidealpha/status/2121028257156100396",
+   "source": "𝕏 @firesidealpha",
+   "published_at": "2026-11-12T23:51:57Z",
+   "text": "President Trump reveals Jensen Huang called him yesterday 'going through hell,' and says Huang should only have stepped down if the woman was a spy Stephen A. Smith: “Before I let you get on out of here, shifting, Jensen Huang.” Trump: “Yeah.” Stephen A. Smith: “Nvidia,…",
+   "author_name": "Fireside Alpha",
+   "likes": 9127,
+   "story": "Sources: President Trump urged Jensen Huang to keep fighting for his job in a Tuesday call; aides say Trump saw the company as essentially too big to fail"
+  },
+  {
+   "title": "Claude Is Down",
+   "url": "https://status.claude.com/history",
    "source": "Hacker News",
-   "published_at": "2026-11-13T02:16:24Z",
-   "text": "614 points and 454 comments on Hacker News.",
-   "points": 614,
-   "discussion": "https://news.ycombinator.com/item?id=50477231"
+   "published_at": "2026-11-13T10:20:09Z",
+   "text": "101 points and 75 comments on Hacker News.",
+   "points": 101,
+   "discussion": "https://news.ycombinator.com/item?id=50481220"
+  },
+  {
+   "title": "Todd Blanche suggests that perhaps Alice Huang isn't really a spy after all and says he has no conc…",
+   "url": "https://x.com/atrupar/status/2120980151999582647",
+   "source": "𝕏 @atrupar",
+   "published_at": "2026-11-12T20:40:48Z",
+   "text": "Todd Blanche suggests that perhaps Alice Huang isn't really a spy after all and says he has no concerns about Lutnick's alleged involvement in the Nvidia scandal (they are circling the wagons!)",
+   "author_name": "Aaron Rupar",
+   "likes": 5139,
+   "story": "Sources: US officials disagree on whether Alice Huang spied on Jensen Huang for China; some at ODNI and CIA say intelligence collected so far doesn't prove it"
+  },
+  {
+   "title": "‼️ UPDATE: Microsoft's outage now reaches far beyond Outlook. Teams, SharePoint, Copilot and even i…",
+   "url": "https://x.com/IntCyberDigest/status/2120982515431473366",
+   "source": "𝕏 @IntCyberDigest",
+   "published_at": "2026-11-12T20:50:12Z",
+   "text": "‼️ UPDATE: Microsoft's outage now reaches far beyond Outlook. Teams, SharePoint, Copilot and even its Defender XDR security platform are hit. Consumers can't reach their OneDrive storage or Office on the web either, TechCrunch reports. Microsoft first blamed elevated load. Now…",
+   "author_name": "International Cyber Digest",
+   "likes": 6978,
+   "story": "Users report being unable to access Outlook, Teams, and other Microsoft 365 services; Microsoft says many of its servers became unexpectedly unavailable"
+  },
+  {
+   "title": "🚨MUSE FEATURE ALERT!!!🚨 lots of you have been asking for this one… muse can make phone calls for yo…",
+   "url": "https://x.com/alexandr_wang/status/2120930586827391350",
+   "source": "𝕏 @alexandr_wang",
+   "published_at": "2026-11-12T17:23:51Z",
+   "text": "🚨MUSE FEATURE ALERT!!!🚨 lots of you have been asking for this one… muse can make phone calls for you! ☎️📞📲 let muse take care of all those calls you don’t want to make. insurance? cable? DMV? dinner res? not your problem anymore. out now to paid subs in the US 🇺🇸 https",
+   "author_name": "Alexandr Wang",
+   "likes": 1293,
+   "story": "Meta launches an outbound calling feature for Muse, such as to businesses, available for paid US subscribers; Gemini and startup Instinct offer a similar option"
+  },
+  {
+   "title": "Staff email: interim Nvidia CEO Colette Kress cites “an extraordinarily difficult period” and promi…",
+   "url": "https://www.theverge.com/ai-artificial-intelligence/1032028/read-nvidias-internal-emails-jensen-huang",
+   "source": "Terrence O'Brien / The Verge",
+   "published_at": "2026-11-12T16:15:48Z",
+   "text": "Staff email: interim Nvidia CEO Colette Kress cites “an extraordinarily difficult period” and promises “more from leadership” and a company November 18 meeting. Nvidia's board and interim CEO Colette Kress told employees they're ready to ‘move forward together.’",
+   "via": "Techmeme"
   }
  ],
  "sources": "curated, Techmeme, X (found via Techmeme, Reddit, the Internet Archive), Claude Code releases, Anthropic, Hacker News, Simon Willison"
