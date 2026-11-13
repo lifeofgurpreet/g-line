@@ -1,13 +1,13 @@
 {
  "schema": 1,
- "generated_at": "2026-11-13T20:38:30Z",
+ "generated_at": "2026-11-13T21:10:20Z",
  "items": [
   {
-   "title": "Jensen Huang's biographer says Nvidia had a culture of omertà and deference toward Huang, who was q…",
-   "url": "https://www.nytimes.com/2026/11/12/opinion/jensen-huang-nvidia.html?unlocked_article_code=1.P1E.6bW-.jsvT3PNHnXvZ&smid=nytcore-ios-share",
-   "source": "Stephen Witt / New York Tim…",
-   "published_at": "2026-11-13T14:42:11Z",
-   "text": "Jensen Huang's biographer says Nvidia had a culture of omertà and deference toward Huang, who was quite arrogant, that enabled him to “be his worst self”. We live in the age of artificial intelligence — an age that Jensen Huang, perhaps more than any other single person, has made possible.",
+   "title": "Sources: Nvidia's board has approached Arm CEO Rene Haas in its search for a potential successor to…",
+   "url": "https://www.ft.com/content/2a64f698-46dd-4178-a3f4-4c5f4c0a0926",
+   "source": "Michael Acton / Financial T…",
+   "published_at": "2026-11-13T17:04:48Z",
+   "text": "Sources: Nvidia's board has approached Arm CEO Rene Haas in its search for a potential successor to Jensen Huang; Haas worked at Nvidia more than a decade ago. Head of SoftBank-owned UK semiconductor group sounded out after Jensen Huang resigned over affairs",
    "via": "Techmeme"
   },
   {
@@ -17,7 +17,7 @@
    "published_at": "2026-11-12T21:29:42Z",
    "text": "I have a major result to share. I’ve found conclusive forensic evidence that the top 4 Chinese AI labs—DeepSeek, Moonshot, MiniMax and Ant Group—have built their newest models on NVIDIA’s most advanced Blackwell chips, which are barred from export to China. This sounds insane,…",
    "author_name": "will depue",
-   "likes": 38769,
+   "likes": 38857,
    "story": "Analysis of open weights: six models from DeepSeek, Moonshot, MiniMax, and Ant Group released since April carry fingerprints of export-controlled Blackwell GPUs"
   },
   {
@@ -34,15 +34,15 @@
    "published_at": "2026-11-12T18:05:02Z",
    "text": "Introducing Gemini 4 Hydrogen, an extremely capable and fast model built to bring Gemini 4 to everyone! Available to all tiers of Google AI Studio, Gemini API, Gemini for business, the Gemini app, Google Search, and paid Google AI Pro + Ultra subscribers in Google Antigravity.",
    "author_name": "Logan Kilpatrick",
-   "likes": 11105,
+   "likes": 11113,
    "story": "Artificial Analysis Intelligence Index: Gemini 4 Hydrogen nearly ties Claude Sonnet 5.5 and GPT-6.1 Sol, at a third of Sonnet's cost but ~2.5x that of Sol"
   },
   {
-   "title": "Senate Banking Chair Tim Scott asks Jensen Huang and Howard Lutnick to testify at separate hearings…",
-   "url": "https://www.politico.com/live-updates/2026/11/12/congress/tim-scott-summons-jensen-huang-howard-lutnick-to-testify-over-nvidia-saga-01164124",
-   "source": "Jasper Goodman / Politico",
-   "published_at": "2026-11-13T03:03:10Z",
-   "text": "Senate Banking Chair Tim Scott asks Jensen Huang and Howard Lutnick to testify at separate hearings in December over the Nvidia saga; Lutnick agrees to appear",
+   "title": "Jensen Huang's downfall exposes Nvidia's internal politics; source: Huang ran Nvidia as a “feudal s…",
+   "url": "https://www.ft.com/content/ef8f85a6-e2d7-4d41-b70e-092b2567813a",
+   "source": "Financial Times",
+   "published_at": "2026-11-13T13:11:15Z",
+   "text": "Jensen Huang's downfall exposes Nvidia's internal politics; source: Huang ran Nvidia as a “feudal system” with his daughter and son-in-law in powerful positions",
    "via": "Techmeme"
   },
   {
@@ -50,8 +50,8 @@
    "url": "https://www.theguardian.com/science/2026/nov/13/kurt-godel-notebooks-ai-helps-unlock-hidden-discoveries-man-who-transformed-maths",
    "source": "Hacker News",
    "published_at": "2026-11-13T17:30:10Z",
-   "text": "224 points and 57 comments on Hacker News.",
-   "points": 224,
+   "text": "240 points and 64 comments on Hacker News.",
+   "points": 240,
    "discussion": "https://news.ycombinator.com/item?id=50486748"
   },
   {
@@ -61,7 +61,7 @@
    "published_at": "2026-11-13T09:01:34Z",
    "text": "🚨 Another major scandal is coming out of NVIDIA. And this one has nothing to do with Jensen Huang's affairs. According to a Wall Street Journal report, Nvidia was offering billions in financial guarantees to AI companies that could not afford its chips, so they could keep…",
    "author_name": "Bull Theory",
-   "likes": 10574,
+   "likes": 10677,
    "story": "CXMT almost tripling RAM production from 2025 to 2028"
   },
   {
@@ -72,11 +72,11 @@
    "text": "Future Claude models will generate text that contains a watermark to comply with the EU AI Act. We answer questions about how it works and whether it affects outputs."
   },
   {
-   "title": "OpenAI announces ChatGPT Wallet, which lets its dots AI agents make purchases on behalf of users, a…",
-   "url": "https://www.cnbc.com/2026/11/13/openai-chatgpt-wallet-dot-purchases.html",
-   "source": "Ashley Capoot / CNBC",
-   "published_at": "2026-11-13T15:36:57Z",
-   "text": "OpenAI announces ChatGPT Wallet, which lets its dots AI agents make purchases on behalf of users, available to ChatGPT Pro subscribers in the US who are over 18. OpenAI on Friday announced ChatGPT Wallet, a new payment feature that enables its “dots” artificial intelligence agents to make purchases on behalf of users.",
+   "title": "Jensen Huang's biographer says Nvidia had a culture of omertà and deference toward Huang, who was q…",
+   "url": "https://www.nytimes.com/2026/11/12/opinion/jensen-huang-nvidia.html?unlocked_article_code=1.P1E.6bW-.jsvT3PNHnXvZ&smid=nytcore-ios-share",
+   "source": "Stephen Witt / New York Tim…",
+   "published_at": "2026-11-13T14:42:11Z",
+   "text": "Jensen Huang's biographer says Nvidia had a culture of omertà and deference toward Huang, who was quite arrogant, that enabled him to “be his worst self”. We live in the age of artificial intelligence — an age that Jensen Huang, perhaps more than any other single person, has made possible.",
    "via": "Techmeme"
   },
   {
@@ -86,7 +86,7 @@
    "published_at": "2026-11-13T13:33:16Z",
    "text": "holy crap -- knives are out for Lutnick over Nvidia",
    "author_name": "Aaron Rupar",
-   "likes": 7589,
+   "likes": 7764,
    "story": "Scott Bessent says the departments of Treasury, Defense, and State were in favor of putting Megaspeed on the entity list for months, but Commerce is in charge"
   },
   {
@@ -94,8 +94,8 @@
    "url": "https://haddyalchaer.com/jepa",
    "source": "Hacker News",
    "published_at": "2026-11-13T17:55:28Z",
-   "text": "145 points and 28 comments on Hacker News.",
-   "points": 145,
+   "text": "154 points and 30 comments on Hacker News.",
+   "points": 154,
    "discussion": "https://news.ycombinator.com/item?id=50487185"
   },
   {
@@ -105,7 +105,7 @@
    "published_at": "2026-11-13T11:30:46Z",
    "text": "Nvidia is nothing without its people. It now appears the national security allegations may be as fake as Russiagate. If so, Nvidia employees, shareholders, partners, and customers have immense leverage. Whether publicly or privately, collectively or individually, they can…",
    "author_name": "Balaji",
-   "likes": 6031,
+   "likes": 6160,
    "story": "Sources: US officials disagree on whether China had Alice Huang spy on Jensen Huang; some at the ODNI and the CIA say the intelligence to date doesn't prove it"
   },
   {
@@ -115,8 +115,8 @@
    "published_at": "2026-11-12T23:51:57Z",
    "text": "President Trump reveals Jensen Huang called him yesterday 'going through hell,' and says Huang should only have stepped down if the woman was a spy Stephen A. Smith: “Before I let you get on out of here, shifting, Jensen Huang.” Trump: “Yeah.” Stephen A. Smith: “Nvidia,…",
    "author_name": "Fireside Alpha",
-   "likes": 9720,
-   "story": "Source: at an August 2026 finance meeting, Jensen Huang interrupted Colette Kress' presentation, calling her “a deer in the headlights” and a “reporting CFO”"
+   "likes": 9735,
+   "story": "Sources close to Jensen Huang say he has taken a penitent turn, castigated himself as a “piece of shit”, and he has claimed to not care what happens to himself"
   },
   {
    "title": "🚨MUSE FEATURE ALERT!!!🚨 lots of you have been asking for this one… muse can make phone calls for yo…",
@@ -125,15 +125,15 @@
    "published_at": "2026-11-12T17:23:51Z",
    "text": "🚨MUSE FEATURE ALERT!!!🚨 lots of you have been asking for this one… muse can make phone calls for you! ☎️📞📲 let muse take care of all those calls you don’t want to make. insurance? cable? DMV? dinner res? not your problem anymore. out now to paid subs in the US 🇺🇸 https",
    "author_name": "Alexandr Wang",
-   "likes": 1393,
+   "likes": 1394,
    "story": "Meta launches an outbound calling feature for Muse, such as to businesses, available for paid US subscribers; Gemini and startup Instinct offer a similar option"
   },
   {
-   "title": "Sources: Nvidia's board has approached Arm CEO Rene Haas in its search for a potential successor to…",
-   "url": "https://www.ft.com/content/2a64f698-46dd-4178-a3f4-4c5f4c0a0926",
-   "source": "Michael Acton / Financial T…",
-   "published_at": "2026-11-13T17:04:48Z",
-   "text": "Sources: Nvidia's board has approached Arm CEO Rene Haas in its search for a potential successor to Jensen Huang; Haas worked at Nvidia more than a decade ago. Head of SoftBank-owned UK semiconductor group sounded out after Jensen Huang resigned over affairs",
+   "title": "OpenAI announces ChatGPT Wallet, which lets its dots AI agents make purchases on behalf of users, a…",
+   "url": "https://www.cnbc.com/2026/11/13/openai-chatgpt-wallet-dot-purchases.html",
+   "source": "Ashley Capoot / CNBC",
+   "published_at": "2026-11-13T15:36:57Z",
+   "text": "OpenAI announces ChatGPT Wallet, which lets its dots AI agents make purchases on behalf of users, available to ChatGPT Pro subscribers in the US who are over 18. OpenAI on Friday announced ChatGPT Wallet, a new payment feature that enables its “dots” artificial intelligence agents to make purchases on behalf of users.",
    "via": "Techmeme"
   }
  ],
