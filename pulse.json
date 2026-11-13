@@ -1,13 +1,13 @@
 {
  "schema": 1,
- "generated_at": "2026-11-13T17:59:43Z",
+ "generated_at": "2026-11-13T18:31:32Z",
  "items": [
   {
-   "title": "Senate Banking Chair Tim Scott asks Jensen Huang and Howard Lutnick to testify at separate hearings…",
-   "url": "https://www.politico.com/live-updates/2026/11/12/congress/tim-scott-summons-jensen-huang-howard-lutnick-to-testify-over-nvidia-saga-01164124",
-   "source": "Jasper Goodman / Politico",
-   "published_at": "2026-11-13T03:03:10Z",
-   "text": "Senate Banking Chair Tim Scott asks Jensen Huang and Howard Lutnick to testify at separate hearings in December over the Nvidia saga; Lutnick agrees to appear. Senate Banking Chair Tim Scott on Thursday called on fallen Nvidia CEO Jensen Huang and Commerce Secretary Howard Lutnick to testify …",
+   "title": "Jensen Huang's biographer says Nvidia had a culture of omertà and deference toward Huang, who was q…",
+   "url": "https://www.nytimes.com/2026/11/12/opinion/jensen-huang-nvidia.html?unlocked_article_code=1.P1E.6bW-.jsvT3PNHnXvZ&smid=nytcore-ios-share",
+   "source": "Stephen Witt / New York Tim…",
+   "published_at": "2026-11-13T14:42:11Z",
+   "text": "Jensen Huang's biographer says Nvidia had a culture of omertà and deference toward Huang, who was quite arrogant, that enabled him to “be his worst self”. We live in the age of artificial intelligence — an age that Jensen Huang, perhaps more than any other single person, has made possible.",
    "via": "Techmeme"
   },
   {
@@ -17,7 +17,7 @@
    "published_at": "2026-11-12T20:16:20Z",
    "text": "Introducing Claude Meetings: add Claude to your team’s video call and it builds docs, whiteboards, and other artifacts with you while you’re still talking. Starting to roll out in beta on Team and Enterprise plans.",
    "author_name": "Claude",
-   "likes": 69056,
+   "likes": 69481,
    "story": "Introducing Claude Meetings"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-11-12T21:29:42Z",
    "text": "I have a major result to share. I’ve found conclusive forensic evidence that the top 4 Chinese AI labs—DeepSeek, Moonshot, MiniMax and Ant Group—have built their newest models on NVIDIA’s most advanced Blackwell chips, which are barred from export to China. This sounds insane,…",
    "author_name": "will depue",
-   "likes": 38050,
+   "likes": 38205,
    "story": "Analysis of open weights: six models from DeepSeek, Moonshot, MiniMax, and Ant Group released since April carry fingerprints of export-controlled Blackwell GPUs"
   },
   {
@@ -42,17 +42,17 @@
    "url": "https://www.nytimes.com/2026/11/12/us/politics/lutnick-nvidia-commerce-china-chips.html?unlocked_article_code=1.QFE.Dy6v.TiF0dbAs7FNC&smid=nytcore-ios-share",
    "source": "New York Times",
    "published_at": "2026-11-13T01:36:10Z",
-   "text": "Sources: President Trump's and Howard Lutnick's close relationship with Jensen Huang made officials wary of taking aggressive steps to rein in Nvidia chip sales. Howard Lutnick has frequently clashed with top officials over how to regulate sales of advanced technology to Asia …",
+   "text": "Sources: President Trump's and Howard Lutnick's close relationship with Jensen Huang made officials wary of taking aggressive steps to rein in Nvidia chip sales",
    "via": "Techmeme"
   },
   {
-   "title": "Elevated errors on claude.ai, Claude Code, and platform.claude.com",
-   "url": "https://status.claude.com/incidents/nn11wk485zfn",
+   "title": "AI unlocks Gödel's notebooks, said to contain hundreds of proved theorems",
+   "url": "https://www.theguardian.com/science/2026/nov/13/kurt-godel-notebooks-ai-helps-unlock-hidden-discoveries-man-who-transformed-maths",
    "source": "Hacker News",
-   "published_at": "2026-11-13T10:18:13Z",
-   "text": "441 points and 356 comments on Hacker News.",
-   "points": 441,
-   "discussion": "https://news.ycombinator.com/item?id=50481187"
+   "published_at": "2026-11-13T17:30:10Z",
+   "text": "91 points and 6 comments on Hacker News.",
+   "points": 91,
+   "discussion": "https://news.ycombinator.com/item?id=50486748"
   },
   {
    "title": "Introducing Gemini 4 Hydrogen, an extremely capable and fast model built to bring Gemini 4 to every…",
@@ -61,7 +61,7 @@
    "published_at": "2026-11-12T18:05:02Z",
    "text": "Introducing Gemini 4 Hydrogen, an extremely capable and fast model built to bring Gemini 4 to everyone! Available to all tiers of Google AI Studio, Gemini API, Gemini for business, the Gemini app, Google Search, and paid Google AI Pro + Ultra subscribers in Google Antigravity.",
    "author_name": "Logan Kilpatrick",
-   "likes": 11035,
+   "likes": 11064,
    "story": "Artificial Analysis Intelligence Index: Gemini 4 Hydrogen nearly ties Claude Sonnet 5.5 and GPT-6.1 Sol, at a third of Sonnet's cost but ~2.5x that of Sol"
   },
   {
@@ -72,11 +72,11 @@
    "text": "Earlier this year, we shared an update on our election safeguards. Here, we outline how we’ve continued to strengthen these safeguards ahead of this year’s US midterms."
   },
   {
-   "title": "OpenAI announces ChatGPT Wallet, which lets its dots AI agents make purchases on behalf of users, a…",
-   "url": "https://www.cnbc.com/2026/11/13/openai-chatgpt-wallet-dot-purchases.html",
-   "source": "Ashley Capoot / CNBC",
-   "published_at": "2026-11-13T15:36:57Z",
-   "text": "OpenAI announces ChatGPT Wallet, which lets its dots AI agents make purchases on behalf of users, available to ChatGPT Pro subscribers in the US who are over 18. OpenAI on Friday announced ChatGPT Wallet, a new payment feature that enables its “dots” artificial intelligence agents to make purchases on behalf of users.",
+   "title": "Sources: Nvidia's board has approached Arm CEO Rene Haas in its search for a potential successor to…",
+   "url": "https://www.ft.com/content/2a64f698-46dd-4178-a3f4-4c5f4c0a0926",
+   "source": "Michael Acton / Financial T…",
+   "published_at": "2026-11-13T17:04:48Z",
+   "text": "Sources: Nvidia's board has approached Arm CEO Rene Haas in its search for a potential successor to Jensen Huang; Haas worked at Nvidia more than a decade ago. Head of SoftBank-owned UK semiconductor group sounded out after Jensen Huang resigned over affairs",
    "via": "Techmeme"
   },
   {
@@ -86,40 +86,17 @@
    "published_at": "2026-11-13T09:01:34Z",
    "text": "🚨 Another major scandal is coming out of NVIDIA. And this one has nothing to do with Jensen Huang's affairs. According to a Wall Street Journal report, Nvidia was offering billions in financial guarantees to AI companies that could not afford its chips, so they could keep…",
    "author_name": "Bull Theory",
-   "likes": 9882,
+   "likes": 10081,
    "story": "CXMT almost tripling RAM production from 2025 to 2028"
   },
   {
-   "title": "Jonathan Blow – If AI Solved Coding, Why Is My Software Still the Same? [video]",
-   "url": "https://www.youtube.com/watch?v=IRK8h67ol7Q",
+   "title": "Elevated errors on claude.ai, Claude Code, and platform.claude.com",
+   "url": "https://status.claude.com/incidents/nn11wk485zfn",
    "source": "Hacker News",
-   "published_at": "2026-11-13T15:08:44Z",
-   "text": "109 points and 62 comments on Hacker News.",
-   "points": 109,
-   "discussion": "https://news.ycombinator.com/item?id=50484658"
-  },
-  {
-   "title": "holy crap -- knives are out for Lutnick over Nvidia",
-   "url": "https://x.com/atrupar/status/2121234944273916341",
-   "source": "𝕏 @atrupar",
-   "published_at": "2026-11-13T13:33:16Z",
-   "text": "holy crap -- knives are out for Lutnick over Nvidia",
-   "author_name": "Aaron Rupar",
-   "likes": 6494,
-   "story": "Scott Bessent says the departments of Treasury, Defense, and State were in favor of putting Megaspeed on the entity list for months, but Commerce is in charge"
-  },
-  {
-   "title": "Former Nvidia CEO Jensen Huang allegedly had a third affair, according to a report from Reuters. Al…",
-   "url": "https://x.com/PopBase/status/2120968347517137075",
-   "source": "𝕏 @PopBase",
-   "published_at": "2026-11-12T19:53:54Z",
-   "text": "Former Nvidia CEO Jensen Huang allegedly had a third affair, according to a report from Reuters. All three of his alleged affairs exposed so far this week have been with a suspected Chinese spy, an executive, and another employee at the company. (",
-   "author_name": "Pop Base",
-   "likes": 43944,
-   "story": "Source: at an August 2026 finance meeting, Jensen Huang interrupted Colette Kress' presentation, calling her “a deer in the headlights” and a “reporting CFO”",
-   "links": [
-    "https://www.reuters.com/technology/former-nvidia-ceo-huang-had-relationship-with-second-employee-sources-say-2026-11-12/"
-   ]
+   "published_at": "2026-11-13T10:18:13Z",
+   "text": "449 points and 362 comments on Hacker News.",
+   "points": 449,
+   "discussion": "https://news.ycombinator.com/item?id=50481187"
   },
   {
    "title": "Nvidia is nothing without its people. It now appears the national security allegations may be as fa…",
@@ -128,7 +105,7 @@
    "published_at": "2026-11-13T11:30:46Z",
    "text": "Nvidia is nothing without its people. It now appears the national security allegations may be as fake as Russiagate. If so, Nvidia employees, shareholders, partners, and customers have immense leverage. Whether publicly or privately, collectively or individually, they can…",
    "author_name": "Balaji",
-   "likes": 5376,
+   "likes": 5538,
    "story": "Sources: US officials disagree on whether China had Alice Huang spy on Jensen Huang; some at the ODNI and the CIA say the intelligence to date doesn't prove it"
   },
   {
@@ -140,6 +117,23 @@
    "author_name": "Alexandr Wang",
    "likes": 1382,
    "story": "Meta launches an outbound calling feature for Muse, such as to businesses, available for paid US subscribers; Gemini and startup Instinct offer a similar option"
+  },
+  {
+   "title": "OpenAI announces ChatGPT Wallet, which lets its dots AI agents make purchases on behalf of users, a…",
+   "url": "https://www.cnbc.com/2026/11/13/openai-chatgpt-wallet-dot-purchases.html",
+   "source": "Ashley Capoot / CNBC",
+   "published_at": "2026-11-13T15:36:57Z",
+   "text": "OpenAI announces ChatGPT Wallet, which lets its dots AI agents make purchases on behalf of users, available to ChatGPT Pro subscribers in the US who are over 18. OpenAI on Friday announced ChatGPT Wallet, a new payment feature that enables its “dots” artificial intelligence agents to make purchases on behalf of users.",
+   "via": "Techmeme"
+  },
+  {
+   "title": "AI Is Destroying the Trust Between Writers and Readers",
+   "url": "https://www.theatlantic.com/books/2026/11/ai-literary-scams-amazon/689391/",
+   "source": "Hacker News",
+   "published_at": "2026-11-13T11:13:46Z",
+   "text": "225 points and 118 comments on Hacker News.",
+   "points": 225,
+   "discussion": "https://news.ycombinator.com/item?id=50481870"
   }
  ],
  "sources": "curated, Techmeme, X (found via Techmeme, Reddit, the Internet Archive), Claude Code releases, Anthropic, Hacker News, Simon Willison"
