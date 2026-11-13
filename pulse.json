@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-13T01:22:34Z",
+ "generated_at": "2026-11-13T01:53:57Z",
  "items": [
   {
    "title": "Jensen Huang resigns as Nvidia CEO, president, and board member; CFO Colette Kress will serve as in…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-12T20:16:20Z",
    "text": "Introducing Claude Meetings: add Claude to your team’s video call and it builds docs, whiteboards, and other artifacts with you while you’re still talking. Starting to roll out in beta on Team and Enterprise plans.",
    "author_name": "Claude",
-   "likes": 42589,
+   "likes": 44455,
    "story": "Introducing Claude Meetings"
   },
   {
@@ -34,25 +34,25 @@
    "published_at": "2026-11-12T21:29:42Z",
    "text": "I have a major result to share. I’ve found conclusive forensic evidence that the top 4 Chinese AI labs—DeepSeek, Moonshot, MiniMax and Ant Group—have built their newest models on NVIDIA’s most advanced Blackwell chips, which are barred from export to China. This sounds insane,…",
    "author_name": "will depue",
-   "likes": 20836,
+   "likes": 22462,
    "story": "Per ex OpenAI researcher, DeepSeek, Kimi, MiniMax, Ling models are all trained on Nvidia chips"
   },
   {
-   "title": "Under Jensen Huang, Nvidia plowed its vast profits into bankrolling AI startups, suppliers, and chi…",
-   "url": "https://www.ft.com/content/dd9072bd-e8a3-4f8e-9985-550aa80a2fd4",
-   "source": "Financial Times",
-   "published_at": "2026-11-12T14:41:17Z",
-   "text": "Under Jensen Huang, Nvidia plowed its vast profits into bankrolling AI startups, suppliers, and chip customers, a web of dependencies that could now unravel. Nvidia chief's fall could unravel the web of financial dependencies that helped fuel the AI boom",
+   "title": "Google launches Gemini 4 Hydrogen, calling it a major upgrade over Gemini 3.8 Flash, at $1.50/1M in…",
+   "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/",
+   "source": "Koray Kavukcuoglu / Google",
+   "published_at": "2026-11-12T18:41:32Z",
+   "text": "Google launches Gemini 4 Hydrogen, calling it a major upgrade over Gemini 3.8 Flash, at $1.50/1M input and $7.50/1M output tokens across its 1M context window. Hydrogen brings cutting-edge intelligence to everyone. — SVP, Google DeepMind and Chief AI Architect, Google",
    "via": "Techmeme"
   },
   {
-   "title": "Gemini 4 Hydrogen",
-   "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/",
+   "title": "Chinese frontier AI models carry the fingerprint of export-controlled GPUs",
+   "url": "https://unemploymentlabs.com/checkpoint-forensics",
    "source": "Hacker News",
-   "published_at": "2026-11-12T18:01:48Z",
-   "text": "457 points and 296 comments on Hacker News.",
-   "points": 457,
-   "discussion": "https://news.ycombinator.com/item?id=50471431"
+   "published_at": "2026-11-12T21:56:11Z",
+   "text": "171 points and 47 comments on Hacker News.",
+   "points": 171,
+   "discussion": "https://news.ycombinator.com/item?id=50474883"
   },
   {
    "title": "Introducing Gemini 4 Hydrogen, an extremely capable and fast model built to bring Gemini 4 to every…",
@@ -61,7 +61,7 @@
    "published_at": "2026-11-12T18:05:02Z",
    "text": "Introducing Gemini 4 Hydrogen, an extremely capable and fast model built to bring Gemini 4 to everyone! Available to all tiers of Google AI Studio, Gemini API, Gemini for business, the Gemini app, Google Search, and paid Google AI Pro + Ultra subscribers in Google Antigravity.",
    "author_name": "Logan Kilpatrick",
-   "likes": 8760,
+   "likes": 8928,
    "story": "Google says Gemini 4 Hydrogen is available across AI Studio, the Gemini API, Search, paid AI Pro and Ultra tiers in Antigravity, and more"
   },
   {
@@ -72,43 +72,6 @@
    "text": "Discover Claude 4's breakthrough AI capabilities. Experience more reliable, interpretable assistance for complex tasks across work and learning."
   },
   {
-   "title": "A profile of interim Nvidia CEO Colette Kress, who joined in 2013 after working at Cisco and Micros…",
-   "url": "https://www.nytimes.com/2026/11/12/business/nvidia-colette-kress-jensen-huang.html?unlocked_article_code=1.P1E.ZuGN.QJiaheMpJyN-&smid=url-share",
-   "source": "Adam Satariano / New York T…",
-   "published_at": "2026-11-12T14:30:52Z",
-   "text": "A profile of interim Nvidia CEO Colette Kress, who joined in 2013 after working at Cisco and Microsoft; as CFO, Kress criticized US export controls on China. Ms. Kress, the company's chief financial officer, joined Nvidia in 2013. — Colette Kress, a longtime Nvidia executive …",
-   "via": "Techmeme"
-  },
-  {
-   "title": "Following Carbon + Argon, Gemini 4 Hydrogen brings cutting-edge intelligence to everyone. Built for…",
-   "url": "https://x.com/sundarpichai/status/2120940236805169182",
-   "source": "𝕏 @sundarpichai",
-   "published_at": "2026-11-12T18:02:12Z",
-   "text": "Following Carbon + Argon, Gemini 4 Hydrogen brings cutting-edge intelligence to everyone. Built for speed and efficiency for everyday tasks, coding and agentic workflows. Compared to 3.8 Flash, it finishes tasks 2.5x faster. Also has 4 thinking levels, so you only wait and pay…",
-   "author_name": "Sundar Pichai",
-   "likes": 6741,
-   "story": "Google launches Gemini 4 Hydrogen, calling it a major upgrade over Gemini 3.8 Flash, at $1.50/1M input and $7.50/1M output tokens across its 1M context window"
-  },
-  {
-   "title": "Chinese frontier AI models carry the fingerprint of export-controlled GPUs",
-   "url": "https://unemploymentlabs.com/checkpoint-forensics",
-   "source": "Hacker News",
-   "published_at": "2026-11-12T21:56:11Z",
-   "text": "151 points and 42 comments on Hacker News.",
-   "points": 151,
-   "discussion": "https://news.ycombinator.com/item?id=50474883"
-  },
-  {
-   "title": "Jensen Huang’s decision to resign from NVIDIA does not absolve him, other executives, or the compan…",
-   "url": "https://x.com/SenWarren/status/2120905584593760479",
-   "source": "𝕏 @SenWarren",
-   "published_at": "2026-11-12T15:44:30Z",
-   "text": "Jensen Huang’s decision to resign from NVIDIA does not absolve him, other executives, or the company as a whole of responsibility for putting our national security at risk or for any potential violations of our laws. They still owe Congress answers.",
-   "author_name": "Elizabeth Warren",
-   "likes": 5506,
-   "story": "US House Foreign Affairs Chairman Brian Mast says Jensen Huang has agreed to testify under oath to Congress before Thanksgiving, likely behind closed doors"
-  },
-  {
    "title": "Sources: firms tied to Alice Huang recently invested in DeepSeek, to forge closer ties and supply N…",
    "url": "https://www.theinformation.com/articles/alice-huangs-companies-invested-deepseek-promising-nvidia-chips",
    "source": "The Information",
@@ -117,13 +80,31 @@
    "via": "Techmeme"
   },
   {
+   "title": "Jensen Huang’s decision to resign from NVIDIA does not absolve him, other executives, or the compan…",
+   "url": "https://x.com/SenWarren/status/2120905584593760479",
+   "source": "𝕏 @SenWarren",
+   "published_at": "2026-11-12T15:44:30Z",
+   "text": "Jensen Huang’s decision to resign from NVIDIA does not absolve him, other executives, or the company as a whole of responsibility for putting our national security at risk or for any potential violations of our laws. They still owe Congress answers.",
+   "author_name": "Elizabeth Warren",
+   "likes": 5617,
+   "story": "US House Foreign Affairs Chairman Brian Mast says Jensen Huang has agreed to testify under oath to Congress before Thanksgiving, likely behind closed doors"
+  },
+  {
    "title": "Anthropic IPO",
    "url": "https://ipo.anthropic.com/us/",
    "source": "Hacker News",
    "published_at": "2026-11-12T11:46:41Z",
-   "text": "812 points and 802 comments on Hacker News.",
-   "points": 812,
+   "text": "823 points and 806 comments on Hacker News.",
+   "points": 823,
    "discussion": "https://news.ycombinator.com/item?id=50465829"
+  },
+  {
+   "title": "Staff email: interim Nvidia CEO Colette Kress cites “an extraordinarily difficult period” and promi…",
+   "url": "https://www.theverge.com/ai-artificial-intelligence/1032028/read-nvidias-internal-emails-jensen-huang",
+   "source": "Terrence O'Brien / The Verge",
+   "published_at": "2026-11-12T16:15:48Z",
+   "text": "Staff email: interim Nvidia CEO Colette Kress cites “an extraordinarily difficult period” and promises “more from leadership” and a company November 18 meeting. Nvidia's board and interim CEO Colette Kress told employees they're ready to ‘move forward together.’",
+   "via": "Techmeme"
   },
   {
    "title": "Anthropic files S-1 with the SEC for proposed initial public offering",
@@ -131,6 +112,22 @@
    "source": "Anthropic",
    "published_at": "2026-11-12T16:11:50Z",
    "text": "Anthropic is an AI safety and research company that's working to build reliable, interpretable, and steerable AI systems."
+  },
+  {
+   "title": "Apple HomeView review: fast home controls, helpful Siri AI, gorgeous customizable faces, great soun…",
+   "url": "https://www.theverge.com/tech/1031726/apple-homeview-review-smart-display-homekit",
+   "source": "Jennifer Pattison Tuohy / T…",
+   "published_at": "2026-11-12T14:05:42Z",
+   "text": "Apple HomeView review: fast home controls, helpful Siri AI, gorgeous customizable faces, great sound for its size, but Siri can be slow and pricey wall mount. The HomeView nails everything I want from a smart display. It's superb at controlling my smart home; it's an excellent hands …",
+   "via": "Techmeme"
+  },
+  {
+   "title": "Nvidia stopped reporting Singapore revenue after its Q2 2025 ended on July 27, when it accounted fo…",
+   "url": "https://www.wsj.com/business/earnings/nvidias-disappearing-singapore-sales-deepen-mystery-around-megaspeed-7d483180?st=NS43G5",
+   "source": "Jonathan Weil / Wall Street…",
+   "published_at": "2026-11-12T05:36:05Z",
+   "text": "Nvidia stopped reporting Singapore revenue after its Q2 2025 ended on July 27, when it accounted for 22% of its revenue, after placing Megaspeed on a block list. Last year, just as scrutiny of Megaspeed was rising, Nvidia stopped reporting Singapore revenue",
+   "via": "Techmeme"
   }
  ],
  "sources": "curated, Techmeme, X (found via Techmeme, Reddit, the Internet Archive), Claude Code releases, Anthropic, Hacker News, Simon Willison"
