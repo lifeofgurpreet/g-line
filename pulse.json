@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-13T07:15:10Z",
+ "generated_at": "2026-11-13T07:47:03Z",
  "items": [
   {
    "title": "Jensen Huang resigns as Nvidia CEO, president, and board member; CFO Colette Kress will serve as in…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-12T20:16:20Z",
    "text": "Introducing Claude Meetings: add Claude to your team’s video call and it builds docs, whiteboards, and other artifacts with you while you’re still talking. Starting to roll out in beta on Team and Enterprise plans.",
    "author_name": "Claude",
-   "likes": 56804,
+   "likes": 57596,
    "story": "Introducing Claude Meetings"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-11-12T21:29:42Z",
    "text": "I have a major result to share. I’ve found conclusive forensic evidence that the top 4 Chinese AI labs—DeepSeek, Moonshot, MiniMax and Ant Group—have built their newest models on NVIDIA’s most advanced Blackwell chips, which are barred from export to China. This sounds insane,…",
    "author_name": "will depue",
-   "likes": 31617,
+   "likes": 32218,
    "story": "Analysis of open weights: six models from DeepSeek, Moonshot, MiniMax, and Ant Group released since April carry fingerprints of export-controlled Blackwell GPUs"
   },
   {
@@ -50,8 +50,8 @@
    "url": "https://www.wired.com/story/nvidia-employees-petition-for-jensen-huangs-return/",
    "source": "Hacker News",
    "published_at": "2026-11-13T02:16:24Z",
-   "text": "431 points and 324 comments on Hacker News.",
-   "points": 431,
+   "text": "472 points and 342 comments on Hacker News.",
+   "points": 472,
    "discussion": "https://news.ycombinator.com/item?id=50477231"
   },
   {
@@ -61,7 +61,7 @@
    "published_at": "2026-11-12T18:05:02Z",
    "text": "Introducing Gemini 4 Hydrogen, an extremely capable and fast model built to bring Gemini 4 to everyone! Available to all tiers of Google AI Studio, Gemini API, Gemini for business, the Gemini app, Google Search, and paid Google AI Pro + Ultra subscribers in Google Antigravity.",
    "author_name": "Logan Kilpatrick",
-   "likes": 10050,
+   "likes": 10117,
    "story": "Google says Gemini 4 Hydrogen is available across AI Studio, the Gemini API, Search, paid AI Pro and Ultra tiers in Antigravity, and more"
   },
   {
@@ -86,7 +86,7 @@
    "published_at": "2026-11-12T20:50:12Z",
    "text": "‼️ UPDATE: Microsoft's outage now reaches far beyond Outlook. Teams, SharePoint, Copilot and even its Defender XDR security platform are hit. Consumers can't reach their OneDrive storage or Office on the web either, TechCrunch reports. Microsoft first blamed elevated load. Now…",
    "author_name": "International Cyber Digest",
-   "likes": 6756,
+   "likes": 6803,
    "story": "Users report being unable to access Outlook, Teams, and other Microsoft 365 services; Microsoft says many of its servers became unexpectedly unavailable"
   },
   {
@@ -94,8 +94,8 @@
    "url": "https://ipo.anthropic.com/us/",
    "source": "Hacker News",
    "published_at": "2026-11-12T11:46:41Z",
-   "text": "899 points and 852 comments on Hacker News.",
-   "points": 899,
+   "text": "904 points and 853 comments on Hacker News.",
+   "points": 904,
    "discussion": "https://news.ycombinator.com/item?id=50465829"
   },
   {
@@ -105,7 +105,7 @@
    "published_at": "2026-11-12T17:23:51Z",
    "text": "🚨MUSE FEATURE ALERT!!!🚨 lots of you have been asking for this one… muse can make phone calls for you! ☎️📞📲 let muse take care of all those calls you don’t want to make. insurance? cable? DMV? dinner res? not your problem anymore. out now to paid subs in the US 🇺🇸 https",
    "author_name": "Alexandr Wang",
-   "likes": 1240,
+   "likes": 1247,
    "story": "Meta launches an outbound calling feature for Muse, such as to businesses, available for paid US subscribers; Gemini and startup Instinct offer a similar option"
   },
   {
