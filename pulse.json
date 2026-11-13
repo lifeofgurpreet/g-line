@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-13T15:50:40Z",
+ "generated_at": "2026-11-13T16:23:00Z",
  "items": [
   {
    "title": "Sources: President Trump's and Howard Lutnick's close relationship with Jensen Huang made officials…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-12T20:16:20Z",
    "text": "Introducing Claude Meetings: add Claude to your team’s video call and it builds docs, whiteboards, and other artifacts with you while you’re still talking. Starting to roll out in beta on Team and Enterprise plans.",
    "author_name": "Claude",
-   "likes": 67205,
+   "likes": 67712,
    "story": "Introducing Claude Meetings"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-11-12T21:29:42Z",
    "text": "I have a major result to share. I’ve found conclusive forensic evidence that the top 4 Chinese AI labs—DeepSeek, Moonshot, MiniMax and Ant Group—have built their newest models on NVIDIA’s most advanced Blackwell chips, which are barred from export to China. This sounds insane,…",
    "author_name": "will depue",
-   "likes": 37296,
+   "likes": 37530,
    "story": "Analysis of open weights: six models from DeepSeek, Moonshot, MiniMax, and Ant Group released since April carry fingerprints of export-controlled Blackwell GPUs"
   },
   {
@@ -50,8 +50,8 @@
    "url": "https://status.claude.com/incidents/nn11wk485zfn",
    "source": "Hacker News",
    "published_at": "2026-11-13T10:18:13Z",
-   "text": "393 points and 328 comments on Hacker News.",
-   "points": 393,
+   "text": "408 points and 338 comments on Hacker News.",
+   "points": 408,
    "discussion": "https://news.ycombinator.com/item?id=50481187"
   },
   {
@@ -61,8 +61,8 @@
    "published_at": "2026-11-12T18:05:02Z",
    "text": "Introducing Gemini 4 Hydrogen, an extremely capable and fast model built to bring Gemini 4 to everyone! Available to all tiers of Google AI Studio, Gemini API, Gemini for business, the Gemini app, Google Search, and paid Google AI Pro + Ultra subscribers in Google Antigravity.",
    "author_name": "Logan Kilpatrick",
-   "likes": 10894,
-   "story": "Google launches Gemini 4 Hydrogen, calling it a major upgrade over Gemini 3.8 Flash, at $1.50/1M input and $7.50/1M output tokens across its 1M context window"
+   "likes": 10934,
+   "story": "Google says Gemini 4 Hydrogen is available across Google AI Studio, the Gemini API, Gemini for business, Search, and paid AI Pro and Ultra tiers in Antigravity"
   },
   {
    "title": "Introducing Claude 4",
@@ -72,11 +72,11 @@
    "text": "Discover Claude 4's breakthrough AI capabilities. Experience more reliable, interpretable assistance for complex tasks across work and learning."
   },
   {
-   "title": "Amended S-1: Nscale had $5.5B in debt in September, up from $137.4M in June; Nvidia committed $2B o…",
-   "url": "https://www.bloomberg.com/news/articles/2026-11-13/neocloud-nscale-reveals-5-5-billion-debt-and-closer-nvidia-ties-ahead-of-ipo",
-   "source": "Bloomberg",
-   "published_at": "2026-11-13T14:26:13Z",
-   "text": "Amended S-1: Nscale had $5.5B in debt in September, up from $137.4M in June; Nvidia committed $2B of its $3B+ convertible financing; it previously disclosed $1B. Data center developer Nscale needs more cash, has significantly increased its debt and is more reliant on Nvidia Corp …",
+   "title": "OpenAI announces ChatGPT Wallet, which lets its dots AI agents make purchases on behalf of users, a…",
+   "url": "https://www.cnbc.com/2026/11/13/openai-chatgpt-wallet-dot-purchases.html",
+   "source": "Ashley Capoot / CNBC",
+   "published_at": "2026-11-13T15:36:57Z",
+   "text": "OpenAI announces ChatGPT Wallet, which lets its dots AI agents make purchases on behalf of users, available to ChatGPT Pro subscribers in the US who are over 18. OpenAI on Friday announced ChatGPT Wallet, a new payment feature that enables its “dots” artificial intelligence agents to make purchases on behalf of users.",
    "via": "Techmeme"
   },
   {
@@ -86,7 +86,7 @@
    "published_at": "2026-11-13T03:31:08Z",
    "text": "What?! So journalists with sketchy motives portrayed rumors from god-knows-who (lobbyists?) as facts sourced from intelligence officials and gaslit the NVIDIA board to push out the founder, CEO, and once-in-generation visionary? This raises serious corporate governance issues.",
    "author_name": "Tim Sweeney",
-   "likes": 6117,
+   "likes": 6691,
    "story": "Sources: US officials disagree on whether China had Alice Huang spy on Jensen Huang; some at the ODNI and the CIA say the intelligence to date doesn't prove it"
   },
   {
@@ -94,8 +94,8 @@
    "url": "https://status.claude.com/history",
    "source": "Hacker News",
    "published_at": "2026-11-13T10:20:09Z",
-   "text": "176 points and 151 comments on Hacker News.",
-   "points": 176,
+   "text": "181 points and 155 comments on Hacker News.",
+   "points": 181,
    "discussion": "https://news.ycombinator.com/item?id=50481220"
   },
   {
@@ -105,7 +105,7 @@
    "published_at": "2026-11-12T23:51:57Z",
    "text": "President Trump reveals Jensen Huang called him yesterday 'going through hell,' and says Huang should only have stepped down if the woman was a spy Stephen A. Smith: “Before I let you get on out of here, shifting, Jensen Huang.” Trump: “Yeah.” Stephen A. Smith: “Nvidia,…",
    "author_name": "Fireside Alpha",
-   "likes": 9451,
+   "likes": 9487,
    "story": "Sources close to Jensen Huang say he has taken a penitent turn, castigated himself as a “piece of shit”, and he has claimed to not care what happens to himself"
   },
   {
@@ -115,7 +115,7 @@
    "published_at": "2026-11-12T17:23:51Z",
    "text": "🚨MUSE FEATURE ALERT!!!🚨 lots of you have been asking for this one… muse can make phone calls for you! ☎️📞📲 let muse take care of all those calls you don’t want to make. insurance? cable? DMV? dinner res? not your problem anymore. out now to paid subs in the US 🇺🇸 https",
    "author_name": "Alexandr Wang",
-   "likes": 1355,
+   "likes": 1363,
    "story": "Meta launches an outbound calling feature for Muse, such as to businesses, available for paid US subscribers; Gemini and startup Instinct offer a similar option"
   },
   {
@@ -125,15 +125,15 @@
    "published_at": "2026-11-12T20:50:12Z",
    "text": "‼️ UPDATE: Microsoft's outage now reaches far beyond Outlook. Teams, SharePoint, Copilot and even its Defender XDR security platform are hit. Consumers can't reach their OneDrive storage or Office on the web either, TechCrunch reports. Microsoft first blamed elevated load. Now…",
    "author_name": "International Cyber Digest",
-   "likes": 7089,
+   "likes": 7095,
    "story": "Microsoft says it is seeing “continued recovery progress” after confirming users may be unable to access Microsoft 365 services, including Outlook and Teams"
   },
   {
-   "title": "Jensen Huang's downfall exposes Nvidia's internal politics; source: Huang ran Nvidia as a “feudal s…",
-   "url": "https://www.ft.com/content/ef8f85a6-e2d7-4d41-b70e-092b2567813a",
-   "source": "Financial Times",
-   "published_at": "2026-11-13T13:11:15Z",
-   "text": "Jensen Huang's downfall exposes Nvidia's internal politics; source: Huang ran Nvidia as a “feudal system” with his daughter and son-in-law in powerful positions. After 33 years building Nvidia into the world's most valuable company, its founder's career disintegrated in less than two weeks",
+   "title": "Amended S-1: Nscale had $5.5B in debt in September, up from $137.4M in June; Nvidia committed $2B o…",
+   "url": "https://www.bloomberg.com/news/articles/2026-11-13/neocloud-nscale-reveals-5-5-billion-debt-and-closer-nvidia-ties-ahead-of-ipo",
+   "source": "Bloomberg",
+   "published_at": "2026-11-13T14:26:13Z",
+   "text": "Amended S-1: Nscale had $5.5B in debt in September, up from $137.4M in June; Nvidia committed $2B of its $3B+ convertible financing; it previously disclosed $1B. Data center developer Nscale needs more cash, has significantly increased its debt and is more reliant on Nvidia Corp …",
    "via": "Techmeme"
   }
  ],
