@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-13T00:18:52Z",
+ "generated_at": "2026-11-13T00:50:29Z",
  "items": [
   {
    "title": "Jensen Huang resigns as Nvidia CEO, president, and board member; CFO Colette Kress will serve as in…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-12T20:16:20Z",
    "text": "Introducing Claude Meetings: add Claude to your team’s video call and it builds docs, whiteboards, and other artifacts with you while you’re still talking. Starting to roll out in beta on Team and Enterprise plans.",
    "author_name": "Claude",
-   "likes": 38902,
+   "likes": 40780,
    "story": "Introducing Claude Meetings"
   },
   {
@@ -28,24 +28,14 @@
    "text": "Added Code Mode, an experimental opt-in in which Claude writes JavaScript to call its tools; see to turn it on, or to turn it off for an organization · Added engines[\"claude-code\"] to plugin.json: plugins outside their stated Claude Code version range are not installed, updated or loaded, and install and update pick the newest version that fits · Added type checking of a plugin's TypeScript hooks module to claude plugin validate; each finding is a warning, and --strict fails on it · Added to claude plugin validate the $ nouns a mod's engine.create hook adds, withholds or replaces"
   },
   {
-   "title": "great investigation but pretty silly handwringing we've already estimated that DeepSeek's inference…",
-   "url": "https://x.com/teortaxesTex/status/2120995206342521315",
-   "source": "𝕏 @teortaxesTex",
-   "published_at": "2026-11-12T21:40:38Z",
-   "text": "great investigation but pretty silly handwringing we've already estimated that DeepSeek's inference server for V4.1-Flash is about 2.7K-3K GB200s. V4-Pro was a flop… It seems they didn't grow much. 3K Blackwells is like 6 MW. This is utterly insufficient.",
-   "author_name": "Teortaxes▶️ (DeepSeek 推特🐋铁粉 2023 – ∞)",
-   "likes": 60,
-   "story": "Analysis of open weights: six models from DeepSeek, Moonshot, MiniMax, and Ant Group released since April carry fingerprints of export-controlled Blackwell GPUs"
-  },
-  {
-   "title": "Introducing Gemini 4 Hydrogen, an extremely capable and fast model built to bring Gemini 4 to every…",
-   "url": "https://x.com/OfficialLoganK/status/2120940951292268640",
-   "source": "𝕏 @OfficialLoganK",
-   "published_at": "2026-11-12T18:05:02Z",
-   "text": "Introducing Gemini 4 Hydrogen, an extremely capable and fast model built to bring Gemini 4 to everyone! Available to all tiers of Google AI Studio, Gemini API, Gemini for business, the Gemini app, Google Search, and paid Google AI Pro + Ultra subscribers in Google Antigravity.",
-   "author_name": "Logan Kilpatrick",
-   "likes": 8394,
-   "story": "Google says Gemini 4 Hydrogen is available across AI Studio, the Gemini API, Search, paid AI Pro and Ultra tiers in Antigravity, and more"
+   "title": "I have a major result to share. I’ve found conclusive forensic evidence that the top 4 Chinese AI l…",
+   "url": "https://x.com/willdepue/status/2120992457630326841",
+   "source": "𝕏 @willdepue",
+   "published_at": "2026-11-12T21:29:42Z",
+   "text": "I have a major result to share. I’ve found conclusive forensic evidence that the top 4 Chinese AI labs—DeepSeek, Moonshot, MiniMax and Ant Group—have built their newest models on NVIDIA’s most advanced Blackwell chips, which are barred from export to China. This sounds insane,…",
+   "author_name": "will depue",
+   "likes": 18890,
+   "story": "Per ex OpenAI researcher, DeepSeek, Kimi, MiniMax, Ling models are all trained on Nvidia chips"
   },
   {
    "title": "Under Jensen Huang, Nvidia plowed its vast profits into bankrolling AI startups, suppliers, and chi…",
@@ -60,19 +50,19 @@
    "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/",
    "source": "Hacker News",
    "published_at": "2026-11-12T18:01:48Z",
-   "text": "442 points and 285 comments on Hacker News.",
-   "points": 442,
+   "text": "451 points and 291 comments on Hacker News.",
+   "points": 451,
    "discussion": "https://news.ycombinator.com/item?id=50471431"
   },
   {
-   "title": "Following Carbon + Argon, Gemini 4 Hydrogen brings cutting-edge intelligence to everyone. Built for…",
-   "url": "https://x.com/sundarpichai/status/2120940236805169182",
-   "source": "𝕏 @sundarpichai",
-   "published_at": "2026-11-12T18:02:12Z",
-   "text": "Following Carbon + Argon, Gemini 4 Hydrogen brings cutting-edge intelligence to everyone. Built for speed and efficiency for everyday tasks, coding and agentic workflows. Compared to 3.8 Flash, it finishes tasks 2.5x faster. Also has 4 thinking levels, so you only wait and pay…",
-   "author_name": "Sundar Pichai",
-   "likes": 6384,
-   "story": "Google launches Gemini 4 Hydrogen, calling it a major upgrade over Gemini 3.8 Flash, at $1.50/1M input and $7.50/1M output tokens across its 1M context window"
+   "title": "Introducing Gemini 4 Hydrogen, an extremely capable and fast model built to bring Gemini 4 to every…",
+   "url": "https://x.com/OfficialLoganK/status/2120940951292268640",
+   "source": "𝕏 @OfficialLoganK",
+   "published_at": "2026-11-12T18:05:02Z",
+   "text": "Introducing Gemini 4 Hydrogen, an extremely capable and fast model built to bring Gemini 4 to everyone! Available to all tiers of Google AI Studio, Gemini API, Gemini for business, the Gemini app, Google Search, and paid Google AI Pro + Ultra subscribers in Google Antigravity.",
+   "author_name": "Logan Kilpatrick",
+   "likes": 8580,
+   "story": "Google says Gemini 4 Hydrogen is available across AI Studio, the Gemini API, Search, paid AI Pro and Ultra tiers in Antigravity, and more"
   },
   {
    "title": "Introducing Claude 4",
@@ -80,33 +70,6 @@
    "source": "Anthropic",
    "published_at": "2026-11-12T21:02:17Z",
    "text": "Discover Claude 4's breakthrough AI capabilities. Experience more reliable, interpretable assistance for complex tasks across work and learning."
-  },
-  {
-   "title": "Trump says Tim Cook is the “only one man” to replace Jensen Huang as Nvidia CEO, adding “A Legend r…",
-   "url": "https://9to5mac.com/2026/11/12/president-trump-calls-on-tim-cook-to-be-next-nvidia-ceo/",
-   "source": "Zac Hall / 9to5Mac",
-   "published_at": "2026-11-12T16:06:04Z",
-   "text": "Trump says Tim Cook is the “only one man” to replace Jensen Huang as Nvidia CEO, adding “A Legend replaces a Legend!” and Huang “has done a fantastic job”. Jensen Huang is out as CEO of NVIDIA after reported love affairs with an alleged Chinese spy and a high-ranking executive at the company.",
-   "via": "Techmeme"
-  },
-  {
-   "title": "Jensen Huang’s decision to resign from NVIDIA does not absolve him, other executives, or the compan…",
-   "url": "https://x.com/SenWarren/status/2120905584593760479",
-   "source": "𝕏 @SenWarren",
-   "published_at": "2026-11-12T15:44:30Z",
-   "text": "Jensen Huang’s decision to resign from NVIDIA does not absolve him, other executives, or the company as a whole of responsibility for putting our national security at risk or for any potential violations of our laws. They still owe Congress answers.",
-   "author_name": "Elizabeth Warren",
-   "likes": 5276,
-   "story": "US House Foreign Affairs Chairman Brian Mast says Jensen Huang has agreed to testify under oath to Congress before Thanksgiving, likely behind closed doors"
-  },
-  {
-   "title": "Anthropic IPO",
-   "url": "https://ipo.anthropic.com/us/",
-   "source": "Hacker News",
-   "published_at": "2026-11-12T11:46:41Z",
-   "text": "797 points and 790 comments on Hacker News.",
-   "points": 797,
-   "discussion": "https://news.ycombinator.com/item?id=50465829"
   },
   {
    "title": "A profile of interim Nvidia CEO Colette Kress, who joined in 2013 after working at Cisco and Micros…",
@@ -117,11 +80,33 @@
    "via": "Techmeme"
   },
   {
-   "title": "Anthropic files S-1 with the SEC for proposed initial public offering",
-   "url": "https://www.anthropic.com/news/s1-sec",
-   "source": "Anthropic",
-   "published_at": "2026-11-12T16:11:50Z",
-   "text": "Anthropic is an AI safety and research company that's working to build reliable, interpretable, and steerable AI systems."
+   "title": "Following Carbon + Argon, Gemini 4 Hydrogen brings cutting-edge intelligence to everyone. Built for…",
+   "url": "https://x.com/sundarpichai/status/2120940236805169182",
+   "source": "𝕏 @sundarpichai",
+   "published_at": "2026-11-12T18:02:12Z",
+   "text": "Following Carbon + Argon, Gemini 4 Hydrogen brings cutting-edge intelligence to everyone. Built for speed and efficiency for everyday tasks, coding and agentic workflows. Compared to 3.8 Flash, it finishes tasks 2.5x faster. Also has 4 thinking levels, so you only wait and pay…",
+   "author_name": "Sundar Pichai",
+   "likes": 6570,
+   "story": "Google launches Gemini 4 Hydrogen, calling it a major upgrade over Gemini 3.8 Flash, at $1.50/1M input and $7.50/1M output tokens across its 1M context window"
+  },
+  {
+   "title": "Chinese frontier AI models carry the fingerprint of export-controlled GPUs",
+   "url": "https://unemploymentlabs.com/checkpoint-forensics",
+   "source": "Hacker News",
+   "published_at": "2026-11-12T21:56:11Z",
+   "text": "129 points and 38 comments on Hacker News.",
+   "points": 129,
+   "discussion": "https://news.ycombinator.com/item?id=50474883"
+  },
+  {
+   "title": "Jensen Huang’s decision to resign from NVIDIA does not absolve him, other executives, or the compan…",
+   "url": "https://x.com/SenWarren/status/2120905584593760479",
+   "source": "𝕏 @SenWarren",
+   "published_at": "2026-11-12T15:44:30Z",
+   "text": "Jensen Huang’s decision to resign from NVIDIA does not absolve him, other executives, or the company as a whole of responsibility for putting our national security at risk or for any potential violations of our laws. They still owe Congress answers.",
+   "author_name": "Elizabeth Warren",
+   "likes": 5392,
+   "story": "US House Foreign Affairs Chairman Brian Mast says Jensen Huang has agreed to testify under oath to Congress before Thanksgiving, likely behind closed doors"
   },
   {
    "title": "Sources: firms tied to Alice Huang recently invested in DeepSeek, to forge closer ties and supply N…",
@@ -130,6 +115,22 @@
    "published_at": "2026-11-12T15:35:46Z",
    "text": "Sources: firms tied to Alice Huang recently invested in DeepSeek, to forge closer ties and supply Nvidia's Blackwell chips, which are banned from sale to China. The network of companies tied to Alice Huang, the alleged Chinese spy in a romantic relationship with Nvidia's former CEO Jensen Huang …",
    "via": "Techmeme"
+  },
+  {
+   "title": "Anthropic IPO",
+   "url": "https://ipo.anthropic.com/us/",
+   "source": "Hacker News",
+   "published_at": "2026-11-12T11:46:41Z",
+   "text": "804 points and 796 comments on Hacker News.",
+   "points": 804,
+   "discussion": "https://news.ycombinator.com/item?id=50465829"
+  },
+  {
+   "title": "Anthropic files S-1 with the SEC for proposed initial public offering",
+   "url": "https://www.anthropic.com/news/s1-sec",
+   "source": "Anthropic",
+   "published_at": "2026-11-12T16:11:50Z",
+   "text": "Anthropic is an AI safety and research company that's working to build reliable, interpretable, and steerable AI systems."
   }
  ],
  "sources": "curated, Techmeme, X (found via Techmeme, Reddit, the Internet Archive), Claude Code releases, Anthropic, Hacker News, Simon Willison"
