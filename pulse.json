@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-13T00:50:29Z",
+ "generated_at": "2026-11-13T01:22:34Z",
  "items": [
   {
    "title": "Jensen Huang resigns as Nvidia CEO, president, and board member; CFO Colette Kress will serve as in…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-12T20:16:20Z",
    "text": "Introducing Claude Meetings: add Claude to your team’s video call and it builds docs, whiteboards, and other artifacts with you while you’re still talking. Starting to roll out in beta on Team and Enterprise plans.",
    "author_name": "Claude",
-   "likes": 40780,
+   "likes": 42589,
    "story": "Introducing Claude Meetings"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-11-12T21:29:42Z",
    "text": "I have a major result to share. I’ve found conclusive forensic evidence that the top 4 Chinese AI labs—DeepSeek, Moonshot, MiniMax and Ant Group—have built their newest models on NVIDIA’s most advanced Blackwell chips, which are barred from export to China. This sounds insane,…",
    "author_name": "will depue",
-   "likes": 18890,
+   "likes": 20836,
    "story": "Per ex OpenAI researcher, DeepSeek, Kimi, MiniMax, Ling models are all trained on Nvidia chips"
   },
   {
@@ -50,8 +50,8 @@
    "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/",
    "source": "Hacker News",
    "published_at": "2026-11-12T18:01:48Z",
-   "text": "451 points and 291 comments on Hacker News.",
-   "points": 451,
+   "text": "457 points and 296 comments on Hacker News.",
+   "points": 457,
    "discussion": "https://news.ycombinator.com/item?id=50471431"
   },
   {
@@ -61,7 +61,7 @@
    "published_at": "2026-11-12T18:05:02Z",
    "text": "Introducing Gemini 4 Hydrogen, an extremely capable and fast model built to bring Gemini 4 to everyone! Available to all tiers of Google AI Studio, Gemini API, Gemini for business, the Gemini app, Google Search, and paid Google AI Pro + Ultra subscribers in Google Antigravity.",
    "author_name": "Logan Kilpatrick",
-   "likes": 8580,
+   "likes": 8760,
    "story": "Google says Gemini 4 Hydrogen is available across AI Studio, the Gemini API, Search, paid AI Pro and Ultra tiers in Antigravity, and more"
   },
   {
@@ -86,7 +86,7 @@
    "published_at": "2026-11-12T18:02:12Z",
    "text": "Following Carbon + Argon, Gemini 4 Hydrogen brings cutting-edge intelligence to everyone. Built for speed and efficiency for everyday tasks, coding and agentic workflows. Compared to 3.8 Flash, it finishes tasks 2.5x faster. Also has 4 thinking levels, so you only wait and pay…",
    "author_name": "Sundar Pichai",
-   "likes": 6570,
+   "likes": 6741,
    "story": "Google launches Gemini 4 Hydrogen, calling it a major upgrade over Gemini 3.8 Flash, at $1.50/1M input and $7.50/1M output tokens across its 1M context window"
   },
   {
@@ -94,8 +94,8 @@
    "url": "https://unemploymentlabs.com/checkpoint-forensics",
    "source": "Hacker News",
    "published_at": "2026-11-12T21:56:11Z",
-   "text": "129 points and 38 comments on Hacker News.",
-   "points": 129,
+   "text": "151 points and 42 comments on Hacker News.",
+   "points": 151,
    "discussion": "https://news.ycombinator.com/item?id=50474883"
   },
   {
@@ -105,7 +105,7 @@
    "published_at": "2026-11-12T15:44:30Z",
    "text": "Jensen Huang’s decision to resign from NVIDIA does not absolve him, other executives, or the company as a whole of responsibility for putting our national security at risk or for any potential violations of our laws. They still owe Congress answers.",
    "author_name": "Elizabeth Warren",
-   "likes": 5392,
+   "likes": 5506,
    "story": "US House Foreign Affairs Chairman Brian Mast says Jensen Huang has agreed to testify under oath to Congress before Thanksgiving, likely behind closed doors"
   },
   {
@@ -121,8 +121,8 @@
    "url": "https://ipo.anthropic.com/us/",
    "source": "Hacker News",
    "published_at": "2026-11-12T11:46:41Z",
-   "text": "804 points and 796 comments on Hacker News.",
-   "points": 804,
+   "text": "812 points and 802 comments on Hacker News.",
+   "points": 812,
    "discussion": "https://news.ycombinator.com/item?id=50465829"
   },
   {
