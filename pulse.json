@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-13T21:43:00Z",
+ "generated_at": "2026-11-13T22:16:00Z",
  "items": [
   {
    "title": "Nvidia board says it is “in the process of selecting a search firm” for the CEO role and it has “no…",
@@ -11,14 +11,14 @@
    "via": "Techmeme"
   },
   {
-   "title": "Introducing Gemini 4 Hydrogen, an extremely capable and fast model built to bring Gemini 4 to every…",
-   "url": "https://x.com/OfficialLoganK/status/2120940951292268640",
-   "source": "𝕏 @OfficialLoganK",
-   "published_at": "2026-11-12T18:05:02Z",
-   "text": "Introducing Gemini 4 Hydrogen, an extremely capable and fast model built to bring Gemini 4 to everyone! Available to all tiers of Google AI Studio, Gemini API, Gemini for business, the Gemini app, Google Search, and paid Google AI Pro + Ultra subscribers in Google Antigravity.",
-   "author_name": "Logan Kilpatrick",
-   "likes": 11128,
-   "story": "Artificial Analysis Intelligence Index: Gemini 4 Hydrogen nearly ties Claude Sonnet 5.5 and GPT-6.1 Sol, at a third of Sonnet's cost but ~2.5x that of Sol"
+   "title": "🚨 Another major scandal is coming out of NVIDIA. And this one has nothing to do with Jensen Huang's…",
+   "url": "https://x.com/BullTheoryio/status/2121166572647772461",
+   "source": "𝕏 @BullTheoryio",
+   "published_at": "2026-11-13T09:01:34Z",
+   "text": "🚨 Another major scandal is coming out of NVIDIA. And this one has nothing to do with Jensen Huang's affairs. According to a Wall Street Journal report, Nvidia was offering billions in financial guarantees to AI companies that could not afford its chips, so they could keep…",
+   "author_name": "Bull Theory",
+   "likes": 10832,
+   "story": "CXMT almost tripling RAM production from 2025 to 2028"
   },
   {
    "title": "Claude Code 2.1.325 released",
@@ -28,14 +28,24 @@
    "text": "Fixed a security issue in how zstd-compressed responses are decoded · Added a spinner tip in VS Code and similar integrated terminals about re-running a notebook cell, shown once Claude has read or edited a Jupyter notebook · Added a line under the error shown when your organization's policy blocks a request, saying how to continue: run /rewind and change the message, or run /clear · Added a note for Claude when a sandboxed git checkout, git stash or autostash pull cannot update protected files such as those in .claude"
   },
   {
-   "title": "🚨 Another major scandal is coming out of NVIDIA. And this one has nothing to do with Jensen Huang's…",
-   "url": "https://x.com/BullTheoryio/status/2121166572647772461",
-   "source": "𝕏 @BullTheoryio",
-   "published_at": "2026-11-13T09:01:34Z",
-   "text": "🚨 Another major scandal is coming out of NVIDIA. And this one has nothing to do with Jensen Huang's affairs. According to a Wall Street Journal report, Nvidia was offering billions in financial guarantees to AI companies that could not afford its chips, so they could keep…",
-   "author_name": "Bull Theory",
-   "likes": 10752,
-   "story": "CXMT almost tripling RAM production from 2025 to 2028"
+   "title": "Anthropic reported a similar sudden and unusual jump in robotics capabilities with Fable 5.2. As th…",
+   "url": "https://x.com/AndrewCurran_/status/2121337915087433772",
+   "source": "𝕏 @AndrewCurran_",
+   "published_at": "2026-11-13T20:22:26Z",
+   "text": "Anthropic reported a similar sudden and unusual jump in robotics capabilities with Fable 5.2. As the general intelligence of frontier models scales up, it is increasingly surpassing specialized training. This will ultimately generalize to every sphere of human ability.",
+   "author_name": "Andrew Curran",
+   "likes": 733,
+   "story": "OpenAI disbands its standalone robotics team, moving its staff to research and Applied units, saying models like GPT-6 Astra can be directly applied to robotics"
+  },
+  {
+   "title": "holy crap -- knives are out for Lutnick over Nvidia",
+   "url": "https://x.com/atrupar/status/2121234944273916341",
+   "source": "𝕏 @atrupar",
+   "published_at": "2026-11-13T13:33:16Z",
+   "text": "holy crap -- knives are out for Lutnick over Nvidia",
+   "author_name": "Aaron Rupar",
+   "likes": 8086,
+   "story": "Scott Bessent says the departments of Treasury, Defense, and State were in favor of putting Megaspeed on the entity list for months, but Commerce is in charge"
   },
   {
    "title": "Sources: Nvidia's board has approached Arm CEO Rene Haas in its search for a potential successor to…",
@@ -46,23 +56,23 @@
    "via": "Techmeme"
   },
   {
-   "title": "AI unlocks Gödel's notebooks, said to contain hundreds of proved theorems",
-   "url": "https://www.theguardian.com/science/2026/nov/13/kurt-godel-notebooks-ai-helps-unlock-hidden-discoveries-man-who-transformed-maths",
+   "title": "$11.4M in Nvidia hardware vanishes during shipment from CA to TX",
+   "url": "https://www.freightwaves.com/news/11-4-million-in-nvidia-hardware-vanishes-during-shipment-from-california-to-texas",
    "source": "Hacker News",
-   "published_at": "2026-11-13T17:30:10Z",
-   "text": "257 points and 72 comments on Hacker News.",
-   "points": 257,
-   "discussion": "https://news.ycombinator.com/item?id=50486748"
+   "published_at": "2026-11-13T18:40:44Z",
+   "text": "197 points and 108 comments on Hacker News.",
+   "points": 197,
+   "discussion": "https://news.ycombinator.com/item?id=50487864"
   },
   {
-   "title": "holy crap -- knives are out for Lutnick over Nvidia",
-   "url": "https://x.com/atrupar/status/2121234944273916341",
-   "source": "𝕏 @atrupar",
-   "published_at": "2026-11-13T13:33:16Z",
-   "text": "holy crap -- knives are out for Lutnick over Nvidia",
-   "author_name": "Aaron Rupar",
-   "likes": 7920,
-   "story": "Scott Bessent says the departments of Treasury, Defense, and State were in favor of putting Megaspeed on the entity list for months, but Commerce is in charge"
+   "title": "Nvidia is nothing without its people. It now appears the national security allegations may be as fa…",
+   "url": "https://x.com/balajis/status/2121204119323152443",
+   "source": "𝕏 @balajis",
+   "published_at": "2026-11-13T11:30:46Z",
+   "text": "Nvidia is nothing without its people. It now appears the national security allegations may be as fake as Russiagate. If so, Nvidia employees, shareholders, partners, and customers have immense leverage. Whether publicly or privately, collectively or individually, they can…",
+   "author_name": "Balaji",
+   "likes": 6351,
+   "story": "Sources: US officials disagree on whether China had Alice Huang spy on Jensen Huang; some at the ODNI and the CIA say the intelligence to date doesn't prove it"
   },
   {
    "title": "How Claude's text watermarking works",
@@ -80,33 +90,23 @@
    "via": "Techmeme"
   },
   {
-   "title": "Nvidia is nothing without its people. It now appears the national security allegations may be as fa…",
-   "url": "https://x.com/balajis/status/2121204119323152443",
-   "source": "𝕏 @balajis",
-   "published_at": "2026-11-13T11:30:46Z",
-   "text": "Nvidia is nothing without its people. It now appears the national security allegations may be as fake as Russiagate. If so, Nvidia employees, shareholders, partners, and customers have immense leverage. Whether publicly or privately, collectively or individually, they can…",
-   "author_name": "Balaji",
-   "likes": 6261,
-   "story": "Sources: US officials disagree on whether China had Alice Huang spy on Jensen Huang; some at the ODNI and the CIA say the intelligence to date doesn't prove it"
-  },
-  {
-   "title": "No AI Slop: A Manifesto",
-   "url": "https://www.slopmanifesto.com/",
-   "source": "Hacker News",
-   "published_at": "2026-11-13T19:51:56Z",
-   "text": "108 points and 64 comments on Hacker News.",
-   "points": 108,
-   "discussion": "https://news.ycombinator.com/item?id=50488769"
-  },
-  {
    "title": "🚨MUSE FEATURE ALERT!!!🚨 lots of you have been asking for this one… muse can make phone calls for yo…",
    "url": "https://x.com/alexandr_wang/status/2120930586827391350",
    "source": "𝕏 @alexandr_wang",
    "published_at": "2026-11-12T17:23:51Z",
    "text": "🚨MUSE FEATURE ALERT!!!🚨 lots of you have been asking for this one… muse can make phone calls for you! ☎️📞📲 let muse take care of all those calls you don’t want to make. insurance? cable? DMV? dinner res? not your problem anymore. out now to paid subs in the US 🇺🇸 https",
    "author_name": "Alexandr Wang",
-   "likes": 1397,
+   "likes": 1399,
    "story": "Meta launches an outbound calling feature for Muse, such as to businesses, available for paid US subscribers; Gemini and startup Instinct offer a similar option"
+  },
+  {
+   "title": "No AI Slop: A Manifesto",
+   "url": "https://www.slopmanifesto.com/",
+   "source": "Hacker News",
+   "published_at": "2026-11-13T19:51:56Z",
+   "text": "128 points and 69 comments on Hacker News.",
+   "points": 128,
+   "discussion": "https://news.ycombinator.com/item?id=50488769"
   },
   {
    "title": "OpenAI announces ChatGPT Wallet, which lets its dots AI agents make purchases on behalf of users, a…",
@@ -117,13 +117,13 @@
    "via": "Techmeme"
   },
   {
-   "title": "$11.4M in Nvidia hardware vanishes during shipment from CA to TX",
-   "url": "https://www.freightwaves.com/news/11-4-million-in-nvidia-hardware-vanishes-during-shipment-from-california-to-texas",
+   "title": "AI unlocks Gödel's notebooks, said to contain hundreds of proved theorems",
+   "url": "https://www.theguardian.com/science/2026/nov/13/kurt-godel-notebooks-ai-helps-unlock-hidden-discoveries-man-who-transformed-maths",
    "source": "Hacker News",
-   "published_at": "2026-11-13T18:40:44Z",
-   "text": "154 points and 92 comments on Hacker News.",
-   "points": 154,
-   "discussion": "https://news.ycombinator.com/item?id=50487864"
+   "published_at": "2026-11-13T17:30:10Z",
+   "text": "267 points and 78 comments on Hacker News.",
+   "points": 267,
+   "discussion": "https://news.ycombinator.com/item?id=50486748"
   },
   {
    "title": "Introducing the next generation of Claude",
