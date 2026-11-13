@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-12T23:46:38Z",
+ "generated_at": "2026-11-13T00:18:52Z",
  "items": [
   {
    "title": "Jensen Huang resigns as Nvidia CEO, president, and board member; CFO Colette Kress will serve as in…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-12T20:16:20Z",
    "text": "Introducing Claude Meetings: add Claude to your team’s video call and it builds docs, whiteboards, and other artifacts with you while you’re still talking. Starting to roll out in beta on Team and Enterprise plans.",
    "author_name": "Claude",
-   "likes": 36727,
+   "likes": 38902,
    "story": "Introducing Claude Meetings"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-11-12T21:40:38Z",
    "text": "great investigation but pretty silly handwringing we've already estimated that DeepSeek's inference server for V4.1-Flash is about 2.7K-3K GB200s. V4-Pro was a flop… It seems they didn't grow much. 3K Blackwells is like 6 MW. This is utterly insufficient.",
    "author_name": "Teortaxes▶️ (DeepSeek 推特🐋铁粉 2023 – ∞)",
-   "likes": 56,
+   "likes": 60,
    "story": "Analysis of open weights: six models from DeepSeek, Moonshot, MiniMax, and Ant Group released since April carry fingerprints of export-controlled Blackwell GPUs"
   },
   {
@@ -44,35 +44,35 @@
    "published_at": "2026-11-12T18:05:02Z",
    "text": "Introducing Gemini 4 Hydrogen, an extremely capable and fast model built to bring Gemini 4 to everyone! Available to all tiers of Google AI Studio, Gemini API, Gemini for business, the Gemini app, Google Search, and paid Google AI Pro + Ultra subscribers in Google Antigravity.",
    "author_name": "Logan Kilpatrick",
-   "likes": 8146,
+   "likes": 8394,
    "story": "Google says Gemini 4 Hydrogen is available across AI Studio, the Gemini API, Search, paid AI Pro and Ultra tiers in Antigravity, and more"
   },
   {
-   "title": "Google launches Gemini 4 Hydrogen, calling it a major upgrade over Gemini 3.8 Flash, at $1.50/1M in…",
-   "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/",
-   "source": "Koray Kavukcuoglu / Google",
-   "published_at": "2026-11-12T18:41:32Z",
-   "text": "Google launches Gemini 4 Hydrogen, calling it a major upgrade over Gemini 3.8 Flash, at $1.50/1M input and $7.50/1M output tokens across its 1M context window. Hydrogen brings cutting-edge intelligence to everyone. — SVP, Google DeepMind and Chief AI Architect, Google",
+   "title": "Under Jensen Huang, Nvidia plowed its vast profits into bankrolling AI startups, suppliers, and chi…",
+   "url": "https://www.ft.com/content/dd9072bd-e8a3-4f8e-9985-550aa80a2fd4",
+   "source": "Financial Times",
+   "published_at": "2026-11-12T14:41:17Z",
+   "text": "Under Jensen Huang, Nvidia plowed its vast profits into bankrolling AI startups, suppliers, and chip customers, a web of dependencies that could now unravel. Nvidia chief's fall could unravel the web of financial dependencies that helped fuel the AI boom",
    "via": "Techmeme"
   },
   {
-   "title": "Anthropic IPO",
-   "url": "https://ipo.anthropic.com/us/",
+   "title": "Gemini 4 Hydrogen",
+   "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/",
    "source": "Hacker News",
-   "published_at": "2026-11-12T11:46:41Z",
-   "text": "788 points and 781 comments on Hacker News.",
-   "points": 788,
-   "discussion": "https://news.ycombinator.com/item?id=50465829"
+   "published_at": "2026-11-12T18:01:48Z",
+   "text": "442 points and 285 comments on Hacker News.",
+   "points": 442,
+   "discussion": "https://news.ycombinator.com/item?id=50471431"
   },
   {
-   "title": "Jensen Huang’s decision to resign from NVIDIA does not absolve him, other executives, or the compan…",
-   "url": "https://x.com/SenWarren/status/2120905584593760479",
-   "source": "𝕏 @SenWarren",
-   "published_at": "2026-11-12T15:44:30Z",
-   "text": "Jensen Huang’s decision to resign from NVIDIA does not absolve him, other executives, or the company as a whole of responsibility for putting our national security at risk or for any potential violations of our laws. They still owe Congress answers.",
-   "author_name": "Elizabeth Warren",
-   "likes": 5155,
-   "story": "US House Foreign Affairs Chairman Brian Mast says Jensen Huang has agreed to testify under oath to Congress before Thanksgiving, likely behind closed doors"
+   "title": "Following Carbon + Argon, Gemini 4 Hydrogen brings cutting-edge intelligence to everyone. Built for…",
+   "url": "https://x.com/sundarpichai/status/2120940236805169182",
+   "source": "𝕏 @sundarpichai",
+   "published_at": "2026-11-12T18:02:12Z",
+   "text": "Following Carbon + Argon, Gemini 4 Hydrogen brings cutting-edge intelligence to everyone. Built for speed and efficiency for everyday tasks, coding and agentic workflows. Compared to 3.8 Flash, it finishes tasks 2.5x faster. Also has 4 thinking levels, so you only wait and pay…",
+   "author_name": "Sundar Pichai",
+   "likes": 6384,
+   "story": "Google launches Gemini 4 Hydrogen, calling it a major upgrade over Gemini 3.8 Flash, at $1.50/1M input and $7.50/1M output tokens across its 1M context window"
   },
   {
    "title": "Introducing Claude 4",
@@ -82,19 +82,31 @@
    "text": "Discover Claude 4's breakthrough AI capabilities. Experience more reliable, interpretable assistance for complex tasks across work and learning."
   },
   {
-   "title": "Locating the source of a mysterious beep with Claude",
-   "url": "https://simonwillison.net/2026/Nov/9/mysterious-beeps/",
-   "source": "Simon Willison's weblog",
-   "published_at": "2026-11-09T23:57:21Z",
-   "text": "Our house has a box room, full of boxes that we still haven't unpacked from our last move. A couple of weeks ago something in that room started intermittently beeping . The beeps were far enough apart that standing in the room and trying to determine the source of the noise was frustrating, and I really didn't want to dig through every one of those boxes. So I had Claude Code build Beep Locator , a software system for triangulating the source of a mysterious beep using multiple devices scattered around the room."
+   "title": "Trump says Tim Cook is the “only one man” to replace Jensen Huang as Nvidia CEO, adding “A Legend r…",
+   "url": "https://9to5mac.com/2026/11/12/president-trump-calls-on-tim-cook-to-be-next-nvidia-ceo/",
+   "source": "Zac Hall / 9to5Mac",
+   "published_at": "2026-11-12T16:06:04Z",
+   "text": "Trump says Tim Cook is the “only one man” to replace Jensen Huang as Nvidia CEO, adding “A Legend replaces a Legend!” and Huang “has done a fantastic job”. Jensen Huang is out as CEO of NVIDIA after reported love affairs with an alleged Chinese spy and a high-ranking executive at the company.",
+   "via": "Techmeme"
   },
   {
-   "title": "Under Jensen Huang, Nvidia plowed its vast profits into bankrolling AI startups, suppliers, and chi…",
-   "url": "https://www.ft.com/content/dd9072bd-e8a3-4f8e-9985-550aa80a2fd4",
-   "source": "Financial Times",
-   "published_at": "2026-11-12T14:41:17Z",
-   "text": "Under Jensen Huang, Nvidia plowed its vast profits into bankrolling AI startups, suppliers, and chip customers, a web of dependencies that could now unravel. Nvidia chief's fall could unravel the web of financial dependencies that helped fuel the AI boom",
-   "via": "Techmeme"
+   "title": "Jensen Huang’s decision to resign from NVIDIA does not absolve him, other executives, or the compan…",
+   "url": "https://x.com/SenWarren/status/2120905584593760479",
+   "source": "𝕏 @SenWarren",
+   "published_at": "2026-11-12T15:44:30Z",
+   "text": "Jensen Huang’s decision to resign from NVIDIA does not absolve him, other executives, or the company as a whole of responsibility for putting our national security at risk or for any potential violations of our laws. They still owe Congress answers.",
+   "author_name": "Elizabeth Warren",
+   "likes": 5276,
+   "story": "US House Foreign Affairs Chairman Brian Mast says Jensen Huang has agreed to testify under oath to Congress before Thanksgiving, likely behind closed doors"
+  },
+  {
+   "title": "Anthropic IPO",
+   "url": "https://ipo.anthropic.com/us/",
+   "source": "Hacker News",
+   "published_at": "2026-11-12T11:46:41Z",
+   "text": "797 points and 790 comments on Hacker News.",
+   "points": 797,
+   "discussion": "https://news.ycombinator.com/item?id=50465829"
   },
   {
    "title": "A profile of interim Nvidia CEO Colette Kress, who joined in 2013 after working at Cisco and Micros…",
@@ -110,14 +122,6 @@
    "source": "Anthropic",
    "published_at": "2026-11-12T16:11:50Z",
    "text": "Anthropic is an AI safety and research company that's working to build reliable, interpretable, and steerable AI systems."
-  },
-  {
-   "title": "Trump says Tim Cook is the “only one man” to replace Jensen Huang as Nvidia CEO, adding “A Legend r…",
-   "url": "https://9to5mac.com/2026/11/12/president-trump-calls-on-tim-cook-to-be-next-nvidia-ceo/",
-   "source": "Zac Hall / 9to5Mac",
-   "published_at": "2026-11-12T16:06:04Z",
-   "text": "Trump says Tim Cook is the “only one man” to replace Jensen Huang as Nvidia CEO, adding “A Legend replaces a Legend!” and Huang “has done a fantastic job”. Jensen Huang is out as CEO of NVIDIA after reported love affairs with an alleged Chinese spy and a high-ranking executive at the company.",
-   "via": "Techmeme"
   },
   {
    "title": "Sources: firms tied to Alice Huang recently invested in DeepSeek, to forge closer ties and supply N…",
