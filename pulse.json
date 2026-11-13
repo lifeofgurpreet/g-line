@@ -1,13 +1,13 @@
 {
  "schema": 1,
- "generated_at": "2026-11-13T15:17:55Z",
+ "generated_at": "2026-11-13T15:50:40Z",
  "items": [
   {
-   "title": "Jensen Huang's downfall exposes Nvidia's internal politics; source: Huang ran Nvidia as a “feudal s…",
-   "url": "https://www.ft.com/content/ef8f85a6-e2d7-4d41-b70e-092b2567813a",
-   "source": "Financial Times",
-   "published_at": "2026-11-13T13:11:15Z",
-   "text": "Jensen Huang's downfall exposes Nvidia's internal politics; source: Huang ran Nvidia as a “feudal system” with his daughter and son-in-law in powerful positions",
+   "title": "Sources: President Trump's and Howard Lutnick's close relationship with Jensen Huang made officials…",
+   "url": "https://www.nytimes.com/2026/11/12/us/politics/lutnick-nvidia-commerce-china-chips.html?unlocked_article_code=1.QFE.Dy6v.TiF0dbAs7FNC&smid=nytcore-ios-share",
+   "source": "New York Times",
+   "published_at": "2026-11-13T01:36:10Z",
+   "text": "Sources: President Trump's and Howard Lutnick's close relationship with Jensen Huang made officials wary of taking aggressive steps to rein in Nvidia chip sales. Howard Lutnick has frequently clashed with top officials over how to regulate sales of advanced technology to Asia …",
    "via": "Techmeme"
   },
   {
@@ -17,7 +17,7 @@
    "published_at": "2026-11-12T20:16:20Z",
    "text": "Introducing Claude Meetings: add Claude to your team’s video call and it builds docs, whiteboards, and other artifacts with you while you’re still talking. Starting to roll out in beta on Team and Enterprise plans.",
    "author_name": "Claude",
-   "likes": 66692,
+   "likes": 67205,
    "story": "Introducing Claude Meetings"
   },
   {
@@ -34,42 +34,8 @@
    "published_at": "2026-11-12T21:29:42Z",
    "text": "I have a major result to share. I’ve found conclusive forensic evidence that the top 4 Chinese AI labs—DeepSeek, Moonshot, MiniMax and Ant Group—have built their newest models on NVIDIA’s most advanced Blackwell chips, which are barred from export to China. This sounds insane,…",
    "author_name": "will depue",
-   "likes": 37054,
+   "likes": 37296,
    "story": "Analysis of open weights: six models from DeepSeek, Moonshot, MiniMax, and Ant Group released since April carry fingerprints of export-controlled Blackwell GPUs"
-  },
-  {
-   "title": "Sources: President Trump's and Howard Lutnick's close relationship with Jensen Huang made officials…",
-   "url": "https://www.nytimes.com/2026/11/12/us/politics/lutnick-nvidia-commerce-china-chips.html?unlocked_article_code=1.QFE.Dy6v.TiF0dbAs7FNC&smid=nytcore-ios-share",
-   "source": "New York Times",
-   "published_at": "2026-11-13T01:36:10Z",
-   "text": "Sources: President Trump's and Howard Lutnick's close relationship with Jensen Huang made officials wary of taking aggressive steps to rein in Nvidia chip sales. Howard Lutnick has frequently clashed with top officials over how to regulate sales of advanced technology to Asia …",
-   "via": "Techmeme"
-  },
-  {
-   "title": "Elevated errors on claude.ai, Claude Code, and platform.claude.com",
-   "url": "https://status.claude.com/incidents/nn11wk485zfn",
-   "source": "Hacker News",
-   "published_at": "2026-11-13T10:18:13Z",
-   "text": "371 points and 321 comments on Hacker News.",
-   "points": 371,
-   "discussion": "https://news.ycombinator.com/item?id=50481187"
-  },
-  {
-   "title": "Introducing Gemini 4 Hydrogen, an extremely capable and fast model built to bring Gemini 4 to every…",
-   "url": "https://x.com/OfficialLoganK/status/2120940951292268640",
-   "source": "𝕏 @OfficialLoganK",
-   "published_at": "2026-11-12T18:05:02Z",
-   "text": "Introducing Gemini 4 Hydrogen, an extremely capable and fast model built to bring Gemini 4 to everyone! Available to all tiers of Google AI Studio, Gemini API, Gemini for business, the Gemini app, Google Search, and paid Google AI Pro + Ultra subscribers in Google Antigravity.",
-   "author_name": "Logan Kilpatrick",
-   "likes": 10846,
-   "story": "Google launches Gemini 4 Hydrogen, calling it a major upgrade over Gemini 3.8 Flash, at $1.50/1M input and $7.50/1M output tokens across its 1M context window"
-  },
-  {
-   "title": "Introducing Claude 4",
-   "url": "https://www.anthropic.com/news/claude-4",
-   "source": "Anthropic",
-   "published_at": "2026-11-12T21:02:17Z",
-   "text": "Discover Claude 4's breakthrough AI capabilities. Experience more reliable, interpretable assistance for complex tasks across work and learning."
   },
   {
    "title": "Senate Banking Chair Tim Scott asks Jensen Huang and Howard Lutnick to testify at separate hearings…",
@@ -80,13 +46,47 @@
    "via": "Techmeme"
   },
   {
+   "title": "Elevated errors on claude.ai, Claude Code, and platform.claude.com",
+   "url": "https://status.claude.com/incidents/nn11wk485zfn",
+   "source": "Hacker News",
+   "published_at": "2026-11-13T10:18:13Z",
+   "text": "393 points and 328 comments on Hacker News.",
+   "points": 393,
+   "discussion": "https://news.ycombinator.com/item?id=50481187"
+  },
+  {
+   "title": "Introducing Gemini 4 Hydrogen, an extremely capable and fast model built to bring Gemini 4 to every…",
+   "url": "https://x.com/OfficialLoganK/status/2120940951292268640",
+   "source": "𝕏 @OfficialLoganK",
+   "published_at": "2026-11-12T18:05:02Z",
+   "text": "Introducing Gemini 4 Hydrogen, an extremely capable and fast model built to bring Gemini 4 to everyone! Available to all tiers of Google AI Studio, Gemini API, Gemini for business, the Gemini app, Google Search, and paid Google AI Pro + Ultra subscribers in Google Antigravity.",
+   "author_name": "Logan Kilpatrick",
+   "likes": 10894,
+   "story": "Google launches Gemini 4 Hydrogen, calling it a major upgrade over Gemini 3.8 Flash, at $1.50/1M input and $7.50/1M output tokens across its 1M context window"
+  },
+  {
+   "title": "Introducing Claude 4",
+   "url": "https://www.anthropic.com/news/claude-4",
+   "source": "Anthropic",
+   "published_at": "2026-11-12T21:02:17Z",
+   "text": "Discover Claude 4's breakthrough AI capabilities. Experience more reliable, interpretable assistance for complex tasks across work and learning."
+  },
+  {
+   "title": "Amended S-1: Nscale had $5.5B in debt in September, up from $137.4M in June; Nvidia committed $2B o…",
+   "url": "https://www.bloomberg.com/news/articles/2026-11-13/neocloud-nscale-reveals-5-5-billion-debt-and-closer-nvidia-ties-ahead-of-ipo",
+   "source": "Bloomberg",
+   "published_at": "2026-11-13T14:26:13Z",
+   "text": "Amended S-1: Nscale had $5.5B in debt in September, up from $137.4M in June; Nvidia committed $2B of its $3B+ convertible financing; it previously disclosed $1B. Data center developer Nscale needs more cash, has significantly increased its debt and is more reliant on Nvidia Corp …",
+   "via": "Techmeme"
+  },
+  {
    "title": "What?! So journalists with sketchy motives portrayed rumors from god-knows-who (lobbyists?) as fact…",
    "url": "https://x.com/TimSweeneyEpic/status/2121083415487205652",
    "source": "𝕏 @TimSweeneyEpic",
    "published_at": "2026-11-13T03:31:08Z",
    "text": "What?! So journalists with sketchy motives portrayed rumors from god-knows-who (lobbyists?) as facts sourced from intelligence officials and gaslit the NVIDIA board to push out the founder, CEO, and once-in-generation visionary? This raises serious corporate governance issues.",
    "author_name": "Tim Sweeney",
-   "likes": 5353,
+   "likes": 6117,
    "story": "Sources: US officials disagree on whether China had Alice Huang spy on Jensen Huang; some at the ODNI and the CIA say the intelligence to date doesn't prove it"
   },
   {
@@ -94,18 +94,18 @@
    "url": "https://status.claude.com/history",
    "source": "Hacker News",
    "published_at": "2026-11-13T10:20:09Z",
-   "text": "174 points and 149 comments on Hacker News.",
-   "points": 174,
+   "text": "176 points and 151 comments on Hacker News.",
+   "points": 176,
    "discussion": "https://news.ycombinator.com/item?id=50481220"
   },
   {
-   "title": "Jensen Huang in his last hours as Nvidia CEO, per Bloomberg: > The board met late into the night &…",
-   "url": "https://x.com/wallstengine/status/2121057521544958152",
-   "source": "𝕏 @wallstengine",
-   "published_at": "2026-11-13T01:48:15Z",
-   "text": "Jensen Huang in his last hours as Nvidia CEO, per Bloomberg: > The board met late into the night & left him no choice but to resign > > He looked broken, his take-charge style gone > Started saying things like \"whatever\" & \"I don't care\" > He has since called himself a \"piece of…",
-   "author_name": "Wall St Engine",
-   "likes": 7412,
+   "title": "President Trump reveals Jensen Huang called him yesterday 'going through hell,' and says Huang shou…",
+   "url": "https://x.com/firesidealpha/status/2121028257156100396",
+   "source": "𝕏 @firesidealpha",
+   "published_at": "2026-11-12T23:51:57Z",
+   "text": "President Trump reveals Jensen Huang called him yesterday 'going through hell,' and says Huang should only have stepped down if the woman was a spy Stephen A. Smith: “Before I let you get on out of here, shifting, Jensen Huang.” Trump: “Yeah.” Stephen A. Smith: “Nvidia,…",
+   "author_name": "Fireside Alpha",
+   "likes": 9451,
    "story": "Sources close to Jensen Huang say he has taken a penitent turn, castigated himself as a “piece of shit”, and he has claimed to not care what happens to himself"
   },
   {
@@ -115,7 +115,7 @@
    "published_at": "2026-11-12T17:23:51Z",
    "text": "🚨MUSE FEATURE ALERT!!!🚨 lots of you have been asking for this one… muse can make phone calls for you! ☎️📞📲 let muse take care of all those calls you don’t want to make. insurance? cable? DMV? dinner res? not your problem anymore. out now to paid subs in the US 🇺🇸 https",
    "author_name": "Alexandr Wang",
-   "likes": 1348,
+   "likes": 1355,
    "story": "Meta launches an outbound calling feature for Muse, such as to businesses, available for paid US subscribers; Gemini and startup Instinct offer a similar option"
   },
   {
@@ -125,15 +125,15 @@
    "published_at": "2026-11-12T20:50:12Z",
    "text": "‼️ UPDATE: Microsoft's outage now reaches far beyond Outlook. Teams, SharePoint, Copilot and even its Defender XDR security platform are hit. Consumers can't reach their OneDrive storage or Office on the web either, TechCrunch reports. Microsoft first blamed elevated load. Now…",
    "author_name": "International Cyber Digest",
-   "likes": 7083,
+   "likes": 7089,
    "story": "Microsoft says it is seeing “continued recovery progress” after confirming users may be unable to access Microsoft 365 services, including Outlook and Teams"
   },
   {
-   "title": "Amended S-1: Nscale had $5.5B in debt in September, up from $137.4M in June; Nvidia committed $2B o…",
-   "url": "https://www.bloomberg.com/news/articles/2026-11-13/neocloud-nscale-reveals-5-5-billion-debt-and-closer-nvidia-ties-ahead-of-ipo",
-   "source": "Bloomberg",
-   "published_at": "2026-11-13T14:26:13Z",
-   "text": "Amended S-1: Nscale had $5.5B in debt in September, up from $137.4M in June; Nvidia committed $2B of its $3B+ convertible financing; it previously disclosed $1B. Data center developer Nscale needs more cash, has significantly increased its debt and is more reliant on Nvidia Corp …",
+   "title": "Jensen Huang's downfall exposes Nvidia's internal politics; source: Huang ran Nvidia as a “feudal s…",
+   "url": "https://www.ft.com/content/ef8f85a6-e2d7-4d41-b70e-092b2567813a",
+   "source": "Financial Times",
+   "published_at": "2026-11-13T13:11:15Z",
+   "text": "Jensen Huang's downfall exposes Nvidia's internal politics; source: Huang ran Nvidia as a “feudal system” with his daughter and son-in-law in powerful positions. After 33 years building Nvidia into the world's most valuable company, its founder's career disintegrated in less than two weeks",
    "via": "Techmeme"
   }
  ],
