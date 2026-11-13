@@ -1,13 +1,13 @@
 {
  "schema": 1,
- "generated_at": "2026-11-13T13:42:41Z",
+ "generated_at": "2026-11-13T14:14:36Z",
  "items": [
   {
-   "title": "Sources: Jensen Huang had an intimate relationship with a second employee; revelations about two ot…",
-   "url": "https://www.reuters.com/technology/former-nvidia-ceo-huang-had-relationship-with-second-employee-sources-say-2026-11-12/",
-   "source": "Reuters",
-   "published_at": "2026-11-12T19:46:58Z",
-   "text": "Sources: Jensen Huang had an intimate relationship with a second employee; revelations about two other extramarital affairs led to his resignation as Nvidia CEO. Ousted Nvidia CEO Jensen Huang had an intimate relationship with a second employee, according to two people familiar with the matter, Reuters has learned.",
+   "title": "Sources: President Trump's and Howard Lutnick's close relationship with Jensen Huang made officials…",
+   "url": "https://www.nytimes.com/2026/11/12/us/politics/lutnick-nvidia-commerce-china-chips.html?unlocked_article_code=1.QFE.Dy6v.TiF0dbAs7FNC&smid=nytcore-ios-share",
+   "source": "New York Times",
+   "published_at": "2026-11-13T01:36:10Z",
+   "text": "Sources: President Trump's and Howard Lutnick's close relationship with Jensen Huang made officials wary of taking aggressive steps to rein in Nvidia chip sales",
    "via": "Techmeme"
   },
   {
@@ -17,7 +17,7 @@
    "published_at": "2026-11-12T20:16:20Z",
    "text": "Introducing Claude Meetings: add Claude to your team’s video call and it builds docs, whiteboards, and other artifacts with you while you’re still talking. Starting to roll out in beta on Team and Enterprise plans.",
    "author_name": "Claude",
-   "likes": 64915,
+   "likes": 65553,
    "story": "Introducing Claude Meetings"
   },
   {
@@ -34,15 +34,15 @@
    "published_at": "2026-11-12T21:29:42Z",
    "text": "I have a major result to share. I’ve found conclusive forensic evidence that the top 4 Chinese AI labs—DeepSeek, Moonshot, MiniMax and Ant Group—have built their newest models on NVIDIA’s most advanced Blackwell chips, which are barred from export to China. This sounds insane,…",
    "author_name": "will depue",
-   "likes": 36188,
+   "likes": 36464,
    "story": "Analysis of open weights: six models from DeepSeek, Moonshot, MiniMax, and Ant Group released since April carry fingerprints of export-controlled Blackwell GPUs"
   },
   {
-   "title": "Senate Banking Chair Tim Scott asks Jensen Huang and Howard Lutnick to testify at separate hearings…",
-   "url": "https://www.politico.com/live-updates/2026/11/12/congress/tim-scott-summons-jensen-huang-howard-lutnick-to-testify-over-nvidia-saga-01164124",
-   "source": "Jasper Goodman / Politico",
-   "published_at": "2026-11-13T03:03:10Z",
-   "text": "Senate Banking Chair Tim Scott asks Jensen Huang and Howard Lutnick to testify at separate hearings in December over the Nvidia saga; Lutnick agrees to appear. Senate Banking Chair Tim Scott on Thursday called on fallen Nvidia CEO Jensen Huang and Commerce Secretary Howard Lutnick to testify …",
+   "title": "Sources: Jensen Huang had an intimate relationship with a second employee; revelations about two ot…",
+   "url": "https://www.reuters.com/technology/former-nvidia-ceo-huang-had-relationship-with-second-employee-sources-say-2026-11-12/",
+   "source": "Reuters",
+   "published_at": "2026-11-12T19:46:58Z",
+   "text": "Sources: Jensen Huang had an intimate relationship with a second employee; revelations about two other extramarital affairs led to his resignation as Nvidia CEO. Ousted Nvidia CEO Jensen Huang had an intimate relationship with a second employee, according to two people familiar with the matter, Reuters has learned.",
    "via": "Techmeme"
   },
   {
@@ -50,8 +50,8 @@
    "url": "https://status.claude.com/incidents/nn11wk485zfn",
    "source": "Hacker News",
    "published_at": "2026-11-13T10:18:13Z",
-   "text": "306 points and 259 comments on Hacker News.",
-   "points": 306,
+   "text": "326 points and 282 comments on Hacker News.",
+   "points": 326,
    "discussion": "https://news.ycombinator.com/item?id=50481187"
   },
   {
@@ -61,7 +61,7 @@
    "published_at": "2026-11-12T18:05:02Z",
    "text": "Introducing Gemini 4 Hydrogen, an extremely capable and fast model built to bring Gemini 4 to everyone! Available to all tiers of Google AI Studio, Gemini API, Gemini for business, the Gemini app, Google Search, and paid Google AI Pro + Ultra subscribers in Google Antigravity.",
    "author_name": "Logan Kilpatrick",
-   "likes": 10669,
+   "likes": 10721,
    "story": "Google launches Gemini 4 Hydrogen, calling it a major upgrade over Gemini 3.8 Flash, at $1.50/1M input and $7.50/1M output tokens across its 1M context window"
   },
   {
@@ -72,31 +72,12 @@
    "text": "Discover Claude 4's breakthrough AI capabilities. Experience more reliable, interpretable assistance for complex tasks across work and learning."
   },
   {
-   "title": "Sources: senior White House officials are discussing whether Commerce Secretary Howard Lutnick shou…",
-   "url": "https://www.reuters.com/world/china/white-house-discussing-howard-lutnicks-future-commerce-secretary-people-familiar-2026-11-12/",
-   "source": "Reuters",
-   "published_at": "2026-11-12T19:20:52Z",
-   "text": "Sources: senior White House officials are discussing whether Commerce Secretary Howard Lutnick should be pushed out amid the spy scandal surrounding Nvidia",
+   "title": "Senate Banking Chair Tim Scott asks Jensen Huang and Howard Lutnick to testify at separate hearings…",
+   "url": "https://www.politico.com/live-updates/2026/11/12/congress/tim-scott-summons-jensen-huang-howard-lutnick-to-testify-over-nvidia-saga-01164124",
+   "source": "Jasper Goodman / Politico",
+   "published_at": "2026-11-13T03:03:10Z",
+   "text": "Senate Banking Chair Tim Scott asks Jensen Huang and Howard Lutnick to testify at separate hearings in December over the Nvidia saga; Lutnick agrees to appear. Senate Banking Chair Tim Scott on Thursday called on fallen Nvidia CEO Jensen Huang and Commerce Secretary Howard Lutnick to testify …",
    "via": "Techmeme"
-  },
-  {
-   "title": "President Trump reveals Jensen Huang called him yesterday 'going through hell,' and says Huang shou…",
-   "url": "https://x.com/firesidealpha/status/2121028257156100396",
-   "source": "𝕏 @firesidealpha",
-   "published_at": "2026-11-12T23:51:57Z",
-   "text": "President Trump reveals Jensen Huang called him yesterday 'going through hell,' and says Huang should only have stepped down if the woman was a spy Stephen A. Smith: “Before I let you get on out of here, shifting, Jensen Huang.” Trump: “Yeah.” Stephen A. Smith: “Nvidia,…",
-   "author_name": "Fireside Alpha",
-   "likes": 9296,
-   "story": "Source: at a meeting in August 2026, Jensen Huang interrupted Colette Kress' presentation, calling her “a deer in the headlights” and just a “reporting CFO”"
-  },
-  {
-   "title": "Claude Is Down",
-   "url": "https://status.claude.com/history",
-   "source": "Hacker News",
-   "published_at": "2026-11-13T10:20:09Z",
-   "text": "155 points and 127 comments on Hacker News.",
-   "points": 155,
-   "discussion": "https://news.ycombinator.com/item?id=50481220"
   },
   {
    "title": "Jensen Huang in his last hours as Nvidia CEO, per Bloomberg: > The board met late into the night &…",
@@ -105,8 +86,27 @@
    "published_at": "2026-11-13T01:48:15Z",
    "text": "Jensen Huang in his last hours as Nvidia CEO, per Bloomberg: > The board met late into the night & left him no choice but to resign > > He looked broken, his take-charge style gone > Started saying things like \"whatever\" & \"I don't care\" > He has since called himself a \"piece of…",
    "author_name": "Wall St Engine",
-   "likes": 7290,
+   "likes": 7333,
    "story": "Sources close to Jensen Huang say he has taken a penitent turn, castigated himself as a “piece of shit”, and he has claimed to not care what happens to himself"
+  },
+  {
+   "title": "Claude Is Down",
+   "url": "https://status.claude.com/history",
+   "source": "Hacker News",
+   "published_at": "2026-11-13T10:20:09Z",
+   "text": "160 points and 132 comments on Hacker News.",
+   "points": 160,
+   "discussion": "https://news.ycombinator.com/item?id=50481220"
+  },
+  {
+   "title": "President Trump reveals Jensen Huang called him yesterday 'going through hell,' and says Huang shou…",
+   "url": "https://x.com/firesidealpha/status/2121028257156100396",
+   "source": "𝕏 @firesidealpha",
+   "published_at": "2026-11-12T23:51:57Z",
+   "text": "President Trump reveals Jensen Huang called him yesterday 'going through hell,' and says Huang should only have stepped down if the woman was a spy Stephen A. Smith: “Before I let you get on out of here, shifting, Jensen Huang.” Trump: “Yeah.” Stephen A. Smith: “Nvidia,…",
+   "author_name": "Fireside Alpha",
+   "likes": 9333,
+   "story": "Source: at a meeting in August 2026, Jensen Huang interrupted Colette Kress' presentation, calling her “a deer in the headlights” and just a “reporting CFO”"
   },
   {
    "title": "🚨MUSE FEATURE ALERT!!!🚨 lots of you have been asking for this one… muse can make phone calls for yo…",
@@ -115,7 +115,7 @@
    "published_at": "2026-11-12T17:23:51Z",
    "text": "🚨MUSE FEATURE ALERT!!!🚨 lots of you have been asking for this one… muse can make phone calls for you! ☎️📞📲 let muse take care of all those calls you don’t want to make. insurance? cable? DMV? dinner res? not your problem anymore. out now to paid subs in the US 🇺🇸 https",
    "author_name": "Alexandr Wang",
-   "likes": 1324,
+   "likes": 1332,
    "story": "Meta launches an outbound calling feature for Muse, such as to businesses, available for paid US subscribers; Gemini and startup Instinct offer a similar option"
   },
   {
@@ -125,15 +125,15 @@
    "published_at": "2026-11-12T20:50:12Z",
    "text": "‼️ UPDATE: Microsoft's outage now reaches far beyond Outlook. Teams, SharePoint, Copilot and even its Defender XDR security platform are hit. Consumers can't reach their OneDrive storage or Office on the web either, TechCrunch reports. Microsoft first blamed elevated load. Now…",
    "author_name": "International Cyber Digest",
-   "likes": 7049,
-   "story": "Users report being unable to access Outlook, Teams, and other Microsoft 365 services; Microsoft says many of its servers became unexpectedly unavailable"
+   "likes": 7066,
+   "story": "Microsoft says it is seeing “continued recovery progress” after confirming users may be unable to access Microsoft 365 services, including Outlook and Teams"
   },
   {
-   "title": "Sources: President Trump's and Howard Lutnick's close relationship with Jensen Huang made officials…",
-   "url": "https://www.nytimes.com/2026/11/12/us/politics/lutnick-nvidia-commerce-china-chips.html?unlocked_article_code=1.QFE.Dy6v.TiF0dbAs7FNC&smid=nytcore-ios-share",
-   "source": "New York Times",
-   "published_at": "2026-11-13T01:36:10Z",
-   "text": "Sources: President Trump's and Howard Lutnick's close relationship with Jensen Huang made officials wary of taking aggressive steps to rein in Nvidia chip sales",
+   "title": "A review of Chinese contracts, disclosures, and other documents identifies $3.2B+ in compute projec…",
+   "url": "https://www.reuters.com/world/china/huang-exit-us-scrutiny-imperil-3-billion-chinese-ai-projects-reliant-nvidia-2026-11-13/",
+   "source": "Eduardo Baptista / Reuters",
+   "published_at": "2026-11-13T10:50:54Z",
+   "text": "A review of Chinese contracts, disclosures, and other documents identifies $3.2B+ in compute projects built or planned around Nvidia GPUs restricted by the US. Nvidia has said US export controls have effectively shut it out of China's AI data-centre market, but a Reuters review has identified …",
    "via": "Techmeme"
   }
  ],
