@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-13T17:27:17Z",
+ "generated_at": "2026-11-13T17:59:43Z",
  "items": [
   {
    "title": "Senate Banking Chair Tim Scott asks Jensen Huang and Howard Lutnick to testify at separate hearings…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-12T20:16:20Z",
    "text": "Introducing Claude Meetings: add Claude to your team’s video call and it builds docs, whiteboards, and other artifacts with you while you’re still talking. Starting to roll out in beta on Team and Enterprise plans.",
    "author_name": "Claude",
-   "likes": 68573,
+   "likes": 69056,
    "story": "Introducing Claude Meetings"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-11-12T21:29:42Z",
    "text": "I have a major result to share. I’ve found conclusive forensic evidence that the top 4 Chinese AI labs—DeepSeek, Moonshot, MiniMax and Ant Group—have built their newest models on NVIDIA’s most advanced Blackwell chips, which are barred from export to China. This sounds insane,…",
    "author_name": "will depue",
-   "likes": 37904,
+   "likes": 38050,
    "story": "Analysis of open weights: six models from DeepSeek, Moonshot, MiniMax, and Ant Group released since April carry fingerprints of export-controlled Blackwell GPUs"
   },
   {
@@ -50,8 +50,8 @@
    "url": "https://status.claude.com/incidents/nn11wk485zfn",
    "source": "Hacker News",
    "published_at": "2026-11-13T10:18:13Z",
-   "text": "432 points and 352 comments on Hacker News.",
-   "points": 432,
+   "text": "441 points and 356 comments on Hacker News.",
+   "points": 441,
    "discussion": "https://news.ycombinator.com/item?id=50481187"
   },
   {
@@ -61,8 +61,8 @@
    "published_at": "2026-11-12T18:05:02Z",
    "text": "Introducing Gemini 4 Hydrogen, an extremely capable and fast model built to bring Gemini 4 to everyone! Available to all tiers of Google AI Studio, Gemini API, Gemini for business, the Gemini app, Google Search, and paid Google AI Pro + Ultra subscribers in Google Antigravity.",
    "author_name": "Logan Kilpatrick",
-   "likes": 11011,
-   "story": "Google launches Gemini 4 Hydrogen, calling it a major upgrade over Gemini 3.8 Flash, at $1.50/1M input and $7.50/1M output tokens across its 1M context window"
+   "likes": 11035,
+   "story": "Artificial Analysis Intelligence Index: Gemini 4 Hydrogen nearly ties Claude Sonnet 5.5 and GPT-6.1 Sol, at a third of Sonnet's cost but ~2.5x that of Sol"
   },
   {
    "title": "Preparing for the 2026 US midterms",
@@ -80,23 +80,46 @@
    "via": "Techmeme"
   },
   {
-   "title": "holy crap -- knives are out for Lutnick over Nvidia",
-   "url": "https://x.com/atrupar/status/2121234944273916341",
-   "source": "𝕏 @atrupar",
-   "published_at": "2026-11-13T13:33:16Z",
-   "text": "holy crap -- knives are out for Lutnick over Nvidia",
-   "author_name": "Aaron Rupar",
-   "likes": 6128,
-   "story": "Scott Bessent says the departments of Treasury, Defense, and State were in favor of putting Megaspeed on the entity list for months, but Commerce is in charge"
+   "title": "🚨 Another major scandal is coming out of NVIDIA. And this one has nothing to do with Jensen Huang's…",
+   "url": "https://x.com/BullTheoryio/status/2121166572647772461",
+   "source": "𝕏 @BullTheoryio",
+   "published_at": "2026-11-13T09:01:34Z",
+   "text": "🚨 Another major scandal is coming out of NVIDIA. And this one has nothing to do with Jensen Huang's affairs. According to a Wall Street Journal report, Nvidia was offering billions in financial guarantees to AI companies that could not afford its chips, so they could keep…",
+   "author_name": "Bull Theory",
+   "likes": 9882,
+   "story": "CXMT almost tripling RAM production from 2025 to 2028"
   },
   {
    "title": "Jonathan Blow – If AI Solved Coding, Why Is My Software Still the Same? [video]",
    "url": "https://www.youtube.com/watch?v=IRK8h67ol7Q",
    "source": "Hacker News",
    "published_at": "2026-11-13T15:08:44Z",
-   "text": "86 points and 39 comments on Hacker News.",
-   "points": 86,
+   "text": "109 points and 62 comments on Hacker News.",
+   "points": 109,
    "discussion": "https://news.ycombinator.com/item?id=50484658"
+  },
+  {
+   "title": "holy crap -- knives are out for Lutnick over Nvidia",
+   "url": "https://x.com/atrupar/status/2121234944273916341",
+   "source": "𝕏 @atrupar",
+   "published_at": "2026-11-13T13:33:16Z",
+   "text": "holy crap -- knives are out for Lutnick over Nvidia",
+   "author_name": "Aaron Rupar",
+   "likes": 6494,
+   "story": "Scott Bessent says the departments of Treasury, Defense, and State were in favor of putting Megaspeed on the entity list for months, but Commerce is in charge"
+  },
+  {
+   "title": "Former Nvidia CEO Jensen Huang allegedly had a third affair, according to a report from Reuters. Al…",
+   "url": "https://x.com/PopBase/status/2120968347517137075",
+   "source": "𝕏 @PopBase",
+   "published_at": "2026-11-12T19:53:54Z",
+   "text": "Former Nvidia CEO Jensen Huang allegedly had a third affair, according to a report from Reuters. All three of his alleged affairs exposed so far this week have been with a suspected Chinese spy, an executive, and another employee at the company. (",
+   "author_name": "Pop Base",
+   "likes": 43944,
+   "story": "Source: at an August 2026 finance meeting, Jensen Huang interrupted Colette Kress' presentation, calling her “a deer in the headlights” and a “reporting CFO”",
+   "links": [
+    "https://www.reuters.com/technology/former-nvidia-ceo-huang-had-relationship-with-second-employee-sources-say-2026-11-12/"
+   ]
   },
   {
    "title": "Nvidia is nothing without its people. It now appears the national security allegations may be as fa…",
@@ -105,18 +128,8 @@
    "published_at": "2026-11-13T11:30:46Z",
    "text": "Nvidia is nothing without its people. It now appears the national security allegations may be as fake as Russiagate. If so, Nvidia employees, shareholders, partners, and customers have immense leverage. Whether publicly or privately, collectively or individually, they can…",
    "author_name": "Balaji",
-   "likes": 5227,
+   "likes": 5376,
    "story": "Sources: US officials disagree on whether China had Alice Huang spy on Jensen Huang; some at the ODNI and the CIA say the intelligence to date doesn't prove it"
-  },
-  {
-   "title": "President Trump reveals Jensen Huang called him yesterday 'going through hell,' and says Huang shou…",
-   "url": "https://x.com/firesidealpha/status/2121028257156100396",
-   "source": "𝕏 @firesidealpha",
-   "published_at": "2026-11-12T23:51:57Z",
-   "text": "President Trump reveals Jensen Huang called him yesterday 'going through hell,' and says Huang should only have stepped down if the woman was a spy Stephen A. Smith: “Before I let you get on out of here, shifting, Jensen Huang.” Trump: “Yeah.” Stephen A. Smith: “Nvidia,…",
-   "author_name": "Fireside Alpha",
-   "likes": 9560,
-   "story": "Source: at an August 2026 finance meeting, Jensen Huang interrupted Colette Kress' presentation, calling her “a deer in the headlights” and a “reporting CFO”"
   },
   {
    "title": "🚨MUSE FEATURE ALERT!!!🚨 lots of you have been asking for this one… muse can make phone calls for yo…",
@@ -125,16 +138,8 @@
    "published_at": "2026-11-12T17:23:51Z",
    "text": "🚨MUSE FEATURE ALERT!!!🚨 lots of you have been asking for this one… muse can make phone calls for you! ☎️📞📲 let muse take care of all those calls you don’t want to make. insurance? cable? DMV? dinner res? not your problem anymore. out now to paid subs in the US 🇺🇸 https",
    "author_name": "Alexandr Wang",
-   "likes": 1377,
+   "likes": 1382,
    "story": "Meta launches an outbound calling feature for Muse, such as to businesses, available for paid US subscribers; Gemini and startup Instinct offer a similar option"
-  },
-  {
-   "title": "Amended S-1: Nscale had $5.5B in debt in September, up from $137.4M in June; Nvidia committed $2B o…",
-   "url": "https://www.bloomberg.com/news/articles/2026-11-13/neocloud-nscale-reveals-5-5-billion-debt-and-closer-nvidia-ties-ahead-of-ipo",
-   "source": "Bloomberg",
-   "published_at": "2026-11-13T14:26:13Z",
-   "text": "Amended S-1: Nscale had $5.5B in debt in September, up from $137.4M in June; Nvidia committed $2B of its $3B+ convertible financing; it previously disclosed $1B. Data center developer Nscale needs more cash, has significantly increased its debt and is more reliant on Nvidia Corp …",
-   "via": "Techmeme"
   }
  ],
  "sources": "curated, Techmeme, X (found via Techmeme, Reddit, the Internet Archive), Claude Code releases, Anthropic, Hacker News, Simon Willison"
