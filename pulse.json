@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-13T03:30:43Z",
+ "generated_at": "2026-11-13T04:02:47Z",
  "items": [
   {
    "title": "Jensen Huang resigns as Nvidia CEO, president, and board member; CFO Colette Kress will serve as in…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-12T20:16:20Z",
    "text": "Introducing Claude Meetings: add Claude to your team’s video call and it builds docs, whiteboards, and other artifacts with you while you’re still talking. Starting to roll out in beta on Team and Enterprise plans.",
    "author_name": "Claude",
-   "likes": 49233,
+   "likes": 50612,
    "story": "Introducing Claude Meetings"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-11-12T21:29:42Z",
    "text": "I have a major result to share. I’ve found conclusive forensic evidence that the top 4 Chinese AI labs—DeepSeek, Moonshot, MiniMax and Ant Group—have built their newest models on NVIDIA’s most advanced Blackwell chips, which are barred from export to China. This sounds insane,…",
    "author_name": "will depue",
-   "likes": 26186,
+   "likes": 27197,
    "story": "Analysis of open weights: six models from DeepSeek, Moonshot, MiniMax, and Ant Group released since April carry fingerprints of export-controlled Blackwell GPUs"
   },
   {
@@ -50,8 +50,8 @@
    "url": "https://www.wired.com/story/nvidia-employees-petition-for-jensen-huangs-return/",
    "source": "Hacker News",
    "published_at": "2026-11-13T02:16:24Z",
-   "text": "113 points and 73 comments on Hacker News.",
-   "points": 113,
+   "text": "192 points and 136 comments on Hacker News.",
+   "points": 192,
    "discussion": "https://news.ycombinator.com/item?id=50477231"
   },
   {
@@ -61,7 +61,7 @@
    "published_at": "2026-11-12T18:05:02Z",
    "text": "Introducing Gemini 4 Hydrogen, an extremely capable and fast model built to bring Gemini 4 to everyone! Available to all tiers of Google AI Studio, Gemini API, Gemini for business, the Gemini app, Google Search, and paid Google AI Pro + Ultra subscribers in Google Antigravity.",
    "author_name": "Logan Kilpatrick",
-   "likes": 9364,
+   "likes": 9479,
    "story": "Google says Gemini 4 Hydrogen is available across AI Studio, the Gemini API, Search, paid AI Pro and Ultra tiers in Antigravity, and more"
   },
   {
@@ -80,23 +80,43 @@
    "via": "Techmeme"
   },
   {
-   "title": "Jensen Huang’s decision to resign from NVIDIA does not absolve him, other executives, or the compan…",
-   "url": "https://x.com/SenWarren/status/2120905584593760479",
-   "source": "𝕏 @SenWarren",
-   "published_at": "2026-11-12T15:44:30Z",
-   "text": "Jensen Huang’s decision to resign from NVIDIA does not absolve him, other executives, or the company as a whole of responsibility for putting our national security at risk or for any potential violations of our laws. They still owe Congress answers.",
-   "author_name": "Elizabeth Warren",
-   "likes": 5996,
-   "story": "US House Foreign Affairs Chairman Brian Mast says Jensen Huang has agreed to testify under oath to Congress before Thanksgiving, likely behind closed doors"
+   "title": "President Trump reveals Jensen Huang called him yesterday 'going through hell,' and says Huang shou…",
+   "url": "https://x.com/firesidealpha/status/2121028257156100396",
+   "source": "𝕏 @firesidealpha",
+   "published_at": "2026-11-12T23:51:57Z",
+   "text": "President Trump reveals Jensen Huang called him yesterday 'going through hell,' and says Huang should only have stepped down if the woman was a spy Stephen A. Smith: “Before I let you get on out of here, shifting, Jensen Huang.” Trump: “Yeah.” Stephen A. Smith: “Nvidia,…",
+   "author_name": "Fireside Alpha",
+   "likes": 5592,
+   "story": "Sources: President Trump urged Jensen Huang to keep fighting for his job in a Tuesday call; aides say Trump saw the company as essentially too big to fail"
   },
   {
    "title": "Anthropic IPO",
    "url": "https://ipo.anthropic.com/us/",
    "source": "Hacker News",
    "published_at": "2026-11-12T11:46:41Z",
-   "text": "844 points and 822 comments on Hacker News.",
-   "points": 844,
+   "text": "850 points and 824 comments on Hacker News.",
+   "points": 850,
    "discussion": "https://news.ycombinator.com/item?id=50465829"
+  },
+  {
+   "title": "‼️ UPDATE: Microsoft's outage now reaches far beyond Outlook. Teams, SharePoint, Copilot and even i…",
+   "url": "https://x.com/IntCyberDigest/status/2120982515431473366",
+   "source": "𝕏 @IntCyberDigest",
+   "published_at": "2026-11-12T20:50:12Z",
+   "text": "‼️ UPDATE: Microsoft's outage now reaches far beyond Outlook. Teams, SharePoint, Copilot and even its Defender XDR security platform are hit. Consumers can't reach their OneDrive storage or Office on the web either, TechCrunch reports. Microsoft first blamed elevated load. Now…",
+   "author_name": "International Cyber Digest",
+   "likes": 6465,
+   "story": "Users report being unable to access Outlook, Teams, and other Microsoft 365 services; Microsoft says many of its servers became unexpectedly unavailable"
+  },
+  {
+   "title": "Jensen Huang’s decision to resign from NVIDIA does not absolve him, other executives, or the compan…",
+   "url": "https://x.com/SenWarren/status/2120905584593760479",
+   "source": "𝕏 @SenWarren",
+   "published_at": "2026-11-12T15:44:30Z",
+   "text": "Jensen Huang’s decision to resign from NVIDIA does not absolve him, other executives, or the company as a whole of responsibility for putting our national security at risk or for any potential violations of our laws. They still owe Congress answers.",
+   "author_name": "Elizabeth Warren",
+   "likes": 6111,
+   "story": "US House Foreign Affairs Chairman Brian Mast says Jensen Huang has agreed to testify under oath to Congress before Thanksgiving, likely behind closed doors"
   },
   {
    "title": "Staff email: interim Nvidia CEO Colette Kress cites “an extraordinarily difficult period” and promi…",
@@ -112,22 +132,6 @@
    "source": "Anthropic",
    "published_at": "2026-11-12T16:11:50Z",
    "text": "Anthropic is an AI safety and research company that's working to build reliable, interpretable, and steerable AI systems."
-  },
-  {
-   "title": "Sources: firms tied to Alice Huang recently invested in DeepSeek, to forge closer ties and supply N…",
-   "url": "https://www.theinformation.com/articles/alice-huangs-companies-invested-deepseek-promising-nvidia-chips",
-   "source": "The Information",
-   "published_at": "2026-11-12T15:35:46Z",
-   "text": "Sources: firms tied to Alice Huang recently invested in DeepSeek, to forge closer ties and supply Nvidia's Blackwell chips, which are banned from sale to China. The network of companies tied to Alice Huang, the alleged Chinese spy in a romantic relationship with Nvidia's former CEO Jensen Huang …",
-   "via": "Techmeme"
-  },
-  {
-   "title": "Trump says Tim Cook is the “only one man” to replace Jensen Huang as Nvidia CEO, adding “A Legend r…",
-   "url": "https://9to5mac.com/2026/11/12/president-trump-calls-on-tim-cook-to-be-next-nvidia-ceo/",
-   "source": "Zac Hall / 9to5Mac",
-   "published_at": "2026-11-12T16:06:04Z",
-   "text": "Trump says Tim Cook is the “only one man” to replace Jensen Huang as Nvidia CEO, adding “A Legend replaces a Legend!” and Huang “has done a fantastic job”. Jensen Huang is out as CEO of NVIDIA after reported love affairs with an alleged Chinese spy and a high-ranking executive at the company.",
-   "via": "Techmeme"
   }
  ],
  "sources": "curated, Techmeme, X (found via Techmeme, Reddit, the Internet Archive), Claude Code releases, Anthropic, Hacker News, Simon Willison"
