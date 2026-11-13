@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-13T05:38:27Z",
+ "generated_at": "2026-11-13T06:10:44Z",
  "items": [
   {
    "title": "Jensen Huang resigns as Nvidia CEO, president, and board member; CFO Colette Kress will serve as in…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-12T20:16:20Z",
    "text": "Introducing Claude Meetings: add Claude to your team’s video call and it builds docs, whiteboards, and other artifacts with you while you’re still talking. Starting to roll out in beta on Team and Enterprise plans.",
    "author_name": "Claude",
-   "likes": 54027,
+   "likes": 55074,
    "story": "Introducing Claude Meetings"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-11-12T21:29:42Z",
    "text": "I have a major result to share. I’ve found conclusive forensic evidence that the top 4 Chinese AI labs—DeepSeek, Moonshot, MiniMax and Ant Group—have built their newest models on NVIDIA’s most advanced Blackwell chips, which are barred from export to China. This sounds insane,…",
    "author_name": "will depue",
-   "likes": 29590,
+   "likes": 30304,
    "story": "Analysis of open weights: six models from DeepSeek, Moonshot, MiniMax, and Ant Group released since April carry fingerprints of export-controlled Blackwell GPUs"
   },
   {
@@ -50,8 +50,8 @@
    "url": "https://www.wired.com/story/nvidia-employees-petition-for-jensen-huangs-return/",
    "source": "Hacker News",
    "published_at": "2026-11-13T02:16:24Z",
-   "text": "302 points and 231 comments on Hacker News.",
-   "points": 302,
+   "text": "345 points and 261 comments on Hacker News.",
+   "points": 345,
    "discussion": "https://news.ycombinator.com/item?id=50477231"
   },
   {
@@ -61,7 +61,7 @@
    "published_at": "2026-11-12T18:05:02Z",
    "text": "Introducing Gemini 4 Hydrogen, an extremely capable and fast model built to bring Gemini 4 to everyone! Available to all tiers of Google AI Studio, Gemini API, Gemini for business, the Gemini app, Google Search, and paid Google AI Pro + Ultra subscribers in Google Antigravity.",
    "author_name": "Logan Kilpatrick",
-   "likes": 9780,
+   "likes": 9883,
    "story": "Google says Gemini 4 Hydrogen is available across AI Studio, the Gemini API, Search, paid AI Pro and Ultra tiers in Antigravity, and more"
   },
   {
@@ -80,33 +80,23 @@
    "via": "Techmeme"
   },
   {
-   "title": "Jensen Huang in his last hours as Nvidia CEO, per Bloomberg: > The board met late into the night &…",
-   "url": "https://x.com/wallstengine/status/2121057521544958152",
-   "source": "𝕏 @wallstengine",
-   "published_at": "2026-11-13T01:48:15Z",
-   "text": "Jensen Huang in his last hours as Nvidia CEO, per Bloomberg: > The board met late into the night & left him no choice but to resign > > He looked broken, his take-charge style gone > Started saying things like \"whatever\" & \"I don't care\" > He has since called himself a \"piece of…",
-   "author_name": "Wall St Engine",
-   "likes": 5153,
-   "story": "Sources close to Jensen Huang say he has taken a penitent turn, castigated himself as a “piece of shit”, and claims to not care what happens to himself"
-  },
-  {
-   "title": "Anthropic IPO",
-   "url": "https://ipo.anthropic.com/us/",
-   "source": "Hacker News",
-   "published_at": "2026-11-12T11:46:41Z",
-   "text": "874 points and 840 comments on Hacker News.",
-   "points": 874,
-   "discussion": "https://news.ycombinator.com/item?id=50465829"
-  },
-  {
    "title": "‼️ UPDATE: Microsoft's outage now reaches far beyond Outlook. Teams, SharePoint, Copilot and even i…",
    "url": "https://x.com/IntCyberDigest/status/2120982515431473366",
    "source": "𝕏 @IntCyberDigest",
    "published_at": "2026-11-12T20:50:12Z",
    "text": "‼️ UPDATE: Microsoft's outage now reaches far beyond Outlook. Teams, SharePoint, Copilot and even its Defender XDR security platform are hit. Consumers can't reach their OneDrive storage or Office on the web either, TechCrunch reports. Microsoft first blamed elevated load. Now…",
    "author_name": "International Cyber Digest",
-   "likes": 6608,
+   "likes": 6660,
    "story": "Users report being unable to access Outlook, Teams, and other Microsoft 365 services; Microsoft says many of its servers became unexpectedly unavailable"
+  },
+  {
+   "title": "Anthropic IPO",
+   "url": "https://ipo.anthropic.com/us/",
+   "source": "Hacker News",
+   "published_at": "2026-11-12T11:46:41Z",
+   "text": "883 points and 844 comments on Hacker News.",
+   "points": 883,
+   "discussion": "https://news.ycombinator.com/item?id=50465829"
   },
   {
    "title": "🚨MUSE FEATURE ALERT!!!🚨 lots of you have been asking for this one… muse can make phone calls for yo…",
@@ -115,7 +105,7 @@
    "published_at": "2026-11-12T17:23:51Z",
    "text": "🚨MUSE FEATURE ALERT!!!🚨 lots of you have been asking for this one… muse can make phone calls for you! ☎️📞📲 let muse take care of all those calls you don’t want to make. insurance? cable? DMV? dinner res? not your problem anymore. out now to paid subs in the US 🇺🇸 https",
    "author_name": "Alexandr Wang",
-   "likes": 1210,
+   "likes": 1217,
    "story": "Meta launches an outbound calling feature for Muse, such as to businesses, available for paid US subscribers; Gemini and startup Instinct offer a similar option"
   },
   {
@@ -132,6 +122,14 @@
    "source": "Anthropic",
    "published_at": "2026-11-12T16:11:50Z",
    "text": "Anthropic is an AI safety and research company that's working to build reliable, interpretable, and steerable AI systems."
+  },
+  {
+   "title": "Filing: Nscale says it needs more funding for its 2027 commitments after ordering Nvidia chips for…",
+   "url": "https://www.ft.com/content/8d5a8642-d0a1-458d-aaa4-c1e7d344fe47",
+   "source": "Financial Times",
+   "published_at": "2026-11-13T06:02:19Z",
+   "text": "Filing: Nscale says it needs more funding for its 2027 commitments after ordering Nvidia chips for a $45B Anthropic deal, casting doubt on its planned $35B IPO. Nvidia-backed ‘neocloud’ tells investors it must obtain additional financing to fulfil Anthropic contracts",
+   "via": "Techmeme"
   }
  ],
  "sources": "curated, Techmeme, X (found via Techmeme, Reddit, the Internet Archive), Claude Code releases, Anthropic, Hacker News, Simon Willison"
