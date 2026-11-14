@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-14T05:52:24Z",
+ "generated_at": "2026-11-14T06:25:04Z",
  "items": [
   {
    "title": "Sources and messages: Jensen Huang misled several Nvidia leaders, including general counsel Tim Tet…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-13T22:10:12Z",
    "text": "Q: Could this be AI related? Mullin: We call it SI around here.",
    "author_name": "Acyn",
-   "likes": 8008,
+   "likes": 8061,
    "story": "Sources: the FAA outage occurred after an update to the private communications network that connects the ATC system caused the system to reboot and crash"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-11-13T09:01:34Z",
    "text": "🚨 Another major scandal is coming out of NVIDIA. And this one has nothing to do with Jensen Huang's affairs. According to a Wall Street Journal report, Nvidia was offering billions in financial guarantees to AI companies that could not afford its chips, so they could keep…",
    "author_name": "Bull Theory",
-   "likes": 11453,
+   "likes": 11483,
    "story": "CXMT almost tripling RAM production from 2025 to 2028"
   },
   {
@@ -50,8 +50,8 @@
    "url": "https://www.techpowerup.com/354814/nvidia-allegedly-engineered-scarcity-by-funding-ai-startups-to-buy-its-gpus",
    "source": "Hacker News",
    "published_at": "2026-11-14T02:52:59Z",
-   "text": "228 points and 121 comments on Hacker News.",
-   "points": 228,
+   "text": "296 points and 150 comments on Hacker News.",
+   "points": 296,
    "discussion": "https://news.ycombinator.com/item?id=50493251"
   },
   {
@@ -61,7 +61,7 @@
    "published_at": "2026-11-13T20:22:26Z",
    "text": "Anthropic reported a similar sudden and unusual jump in robotics capabilities with Fable 5.2. As the general intelligence of frontier models scales up, it is increasingly surpassing specialized training. This will ultimately generalize to every sphere of human ability.",
    "author_name": "Andrew Curran",
-   "likes": 1507,
+   "likes": 1541,
    "story": "OpenAI disbands its standalone robotics team, moving its staff to research and Applied units, saying models like GPT-6 Astra can be directly applied to robotics"
   },
   {
@@ -72,11 +72,11 @@
    "text": "Anthropic is endorsing SB 53, the California bill that governs powerful AI systems built by frontier AI developers like Anthropic."
   },
   {
-   "title": "OpenAI announces ChatGPT Wallet, which lets its dots AI agents make purchases on behalf of users, a…",
-   "url": "https://www.cnbc.com/2026/11/13/openai-chatgpt-wallet-dot-purchases.html",
-   "source": "Ashley Capoot / CNBC",
-   "published_at": "2026-11-13T15:36:57Z",
-   "text": "OpenAI announces ChatGPT Wallet, which lets its dots AI agents make purchases on behalf of users, available to ChatGPT Pro subscribers in the US who are over 18. OpenAI on Friday announced ChatGPT Wallet, a new payment feature that enables its “dots” artificial intelligence agents to make purchases on behalf of users.",
+   "title": "How Nvidia used a “scorched earth, adversarial attitude” targeting proponents of export controls in…",
+   "url": "https://www.semafor.com/article/11/13/2026/how-nvidias-jensen-huang-and-trump-jumped-the-guardrails",
+   "source": "Semafor",
+   "published_at": "2026-11-13T21:03:00Z",
+   "text": "How Nvidia used a “scorched earth, adversarial attitude” targeting proponents of export controls in DC, invoking Trump's name to get license approvals expedited. THE SCOOP — In January, the general counsel for what was then the world's most valuable company delivered …",
    "via": "Techmeme"
   },
   {
@@ -86,7 +86,7 @@
    "published_at": "2026-11-13T13:33:16Z",
    "text": "holy crap -- knives are out for Lutnick over Nvidia",
    "author_name": "Aaron Rupar",
-   "likes": 8745,
+   "likes": 8753,
    "story": "Scott Bessent says the departments of Treasury, Defense, and State were in favor of putting Megaspeed on the entity list for months, but Commerce is in charge"
   },
   {
@@ -94,16 +94,16 @@
    "url": "https://finance.yahoo.com/markets/stocks/articles/nvidia-director-sold-nearly-1b-160000846.html",
    "source": "Hacker News",
    "published_at": "2026-11-14T02:21:36Z",
-   "text": "134 points and 30 comments on Hacker News.",
-   "points": 134,
+   "text": "156 points and 34 comments on Hacker News.",
+   "points": 156,
    "discussion": "https://news.ycombinator.com/item?id=50492993"
   },
   {
-   "title": "Jensen Huang's biographer says Nvidia had a culture of omertà and deference toward Huang, who was q…",
-   "url": "https://www.nytimes.com/2026/11/12/opinion/jensen-huang-nvidia.html?unlocked_article_code=1.P1E.6bW-.jsvT3PNHnXvZ&smid=nytcore-ios-share",
-   "source": "Stephen Witt / New York Tim…",
-   "published_at": "2026-11-13T14:42:11Z",
-   "text": "Jensen Huang's biographer says Nvidia had a culture of omertà and deference toward Huang, who was quite arrogant, that enabled him to “be his worst self”. We live in the age of artificial intelligence — an age that Jensen Huang, perhaps more than any other single person, has made possible.",
+   "title": "OpenAI announces ChatGPT Wallet, which lets its dots AI agents make purchases on behalf of users, a…",
+   "url": "https://www.cnbc.com/2026/11/13/openai-chatgpt-wallet-dot-purchases.html",
+   "source": "Ashley Capoot / CNBC",
+   "published_at": "2026-11-13T15:36:57Z",
+   "text": "OpenAI announces ChatGPT Wallet, which lets its dots AI agents make purchases on behalf of users, available to ChatGPT Pro subscribers in the US who are over 18. OpenAI on Friday announced ChatGPT Wallet, a new payment feature that enables its “dots” artificial intelligence agents to make purchases on behalf of users.",
    "via": "Techmeme"
   },
   {
@@ -111,8 +111,8 @@
    "url": "https://www.freightwaves.com/news/11-4-million-in-nvidia-hardware-vanishes-during-shipment-from-california-to-texas",
    "source": "Hacker News",
    "published_at": "2026-11-13T18:40:44Z",
-   "text": "326 points and 182 comments on Hacker News.",
-   "points": 326,
+   "text": "330 points and 183 comments on Hacker News.",
+   "points": 330,
    "discussion": "https://news.ycombinator.com/item?id=50487864"
   },
   {
@@ -123,11 +123,11 @@
    "text": "Anthropic's framework for identifying, classifying, and mitigating potential harms from AI systems to support responsible development."
   },
   {
-   "title": "How Nvidia used a “scorched earth, adversarial attitude” targeting proponents of export controls in…",
-   "url": "https://www.semafor.com/article/11/13/2026/how-nvidias-jensen-huang-and-trump-jumped-the-guardrails",
-   "source": "Semafor",
-   "published_at": "2026-11-13T21:03:00Z",
-   "text": "How Nvidia used a “scorched earth, adversarial attitude” targeting proponents of export controls in DC, invoking Trump's name to get license approvals expedited. THE SCOOP — In January, the general counsel for what was then the world's most valuable company delivered …",
+   "title": "Dario Amodei says figuring out how much computing is needed in a year or two is Anthropic's “deepes…",
+   "url": "https://www.bloomberg.com/news/articles/2026-11-13/anthropic-ceo-calls-computing-power-deepest-business-dilemma",
+   "source": "Bloomberg",
+   "published_at": "2026-11-13T19:21:13Z",
+   "text": "Dario Amodei says figuring out how much computing is needed in a year or two is Anthropic's “deepest business dilemma” due to the unpredictability of revenue. Anthropic PBC Chief Executive Officer Dario Amodei named sourcing computing power as one of the artificial intelligence …",
    "via": "Techmeme"
   }
  ],
