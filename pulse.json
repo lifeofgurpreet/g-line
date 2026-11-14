@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-14T13:24:26Z",
+ "generated_at": "2026-11-14T13:56:36Z",
  "items": [
   {
    "title": "Sources: Nvidia's board has approached Arm CEO Rene Haas in its search for a potential successor to…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-13T22:10:12Z",
    "text": "Q: Could this be AI related? Mullin: We call it SI around here.",
    "author_name": "Acyn",
-   "likes": 8445,
+   "likes": 8482,
    "story": "Sources: the FAA outage occurred after an update to the private communications network that connects the ATC system caused the system to reboot and crash"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-11-13T20:22:26Z",
    "text": "Anthropic reported a similar sudden and unusual jump in robotics capabilities with Fable 5.2. As the general intelligence of frontier models scales up, it is increasingly surpassing specialized training. This will ultimately generalize to every sphere of human ability.",
    "author_name": "Andrew Curran",
-   "likes": 1803,
+   "likes": 1839,
    "story": "OpenAI disbands its standalone robotics team, moving its staff to research and Applied units, saying models like GPT-6 Astra can be directly applied to robotics"
   },
   {
@@ -50,8 +50,8 @@
    "url": "https://www.techpowerup.com/354814/nvidia-allegedly-engineered-scarcity-by-funding-ai-startups-to-buy-its-gpus",
    "source": "Hacker News",
    "published_at": "2026-11-14T02:52:59Z",
-   "text": "745 points and 433 comments on Hacker News.",
-   "points": 745,
+   "text": "782 points and 464 comments on Hacker News.",
+   "points": 782,
    "discussion": "https://news.ycombinator.com/item?id=50493251"
   },
   {
@@ -60,23 +60,6 @@
    "source": "Anthropic",
    "published_at": "2026-11-13T22:37:05Z",
    "text": "Anthropic is endorsing SB 53, the California bill that governs powerful AI systems built by frontier AI developers like Anthropic."
-  },
-  {
-   "title": "OpenAI announces ChatGPT Wallet, which lets its dots AI agents make purchases on behalf of users, a…",
-   "url": "https://www.cnbc.com/2026/11/13/openai-chatgpt-wallet-dot-purchases.html",
-   "source": "Ashley Capoot / CNBC",
-   "published_at": "2026-11-13T15:36:57Z",
-   "text": "OpenAI announces ChatGPT Wallet, which lets its dots AI agents make purchases on behalf of users, available to ChatGPT Pro subscribers in the US who are over 18. OpenAI on Friday announced ChatGPT Wallet, a new payment feature that enables its “dots” artificial intelligence agents to make purchases on behalf of users.",
-   "via": "Techmeme"
-  },
-  {
-   "title": "Elevated errors on claude.ai, Claude Code, and platform.claude.com",
-   "url": "https://status.claude.com/incidents/nn11wk485zfn",
-   "source": "Hacker News",
-   "published_at": "2026-11-13T10:18:13Z",
-   "text": "489 points and 387 comments on Hacker News.",
-   "points": 489,
-   "discussion": "https://news.ycombinator.com/item?id=50481187"
   },
   {
    "title": "AI's impact on math is a preview of what AI will do to AI research, with AI matching top human rese…",
@@ -91,9 +74,26 @@
    "url": "https://www.youtube.com/watch?v=IRK8h67ol7Q",
    "source": "Hacker News",
    "published_at": "2026-11-13T15:08:44Z",
-   "text": "352 points and 472 comments on Hacker News.",
-   "points": 352,
+   "text": "365 points and 489 comments on Hacker News.",
+   "points": 365,
    "discussion": "https://news.ycombinator.com/item?id=50484658"
+  },
+  {
+   "title": "OpenAI announces ChatGPT Wallet, which lets its dots AI agents make purchases on behalf of users, a…",
+   "url": "https://www.cnbc.com/2026/11/13/openai-chatgpt-wallet-dot-purchases.html",
+   "source": "Ashley Capoot / CNBC",
+   "published_at": "2026-11-13T15:36:57Z",
+   "text": "OpenAI announces ChatGPT Wallet, which lets its dots AI agents make purchases on behalf of users, available to ChatGPT Pro subscribers in the US who are over 18",
+   "via": "Techmeme"
+  },
+  {
+   "title": "Elevated errors on claude.ai, Claude Code, and platform.claude.com",
+   "url": "https://status.claude.com/incidents/nn11wk485zfn",
+   "source": "Hacker News",
+   "published_at": "2026-11-13T10:18:13Z",
+   "text": "489 points and 387 comments on Hacker News.",
+   "points": 489,
+   "discussion": "https://news.ycombinator.com/item?id=50481187"
   },
   {
    "title": "Understanding and addressing AI harms",
