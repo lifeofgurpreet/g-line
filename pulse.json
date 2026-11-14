@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-14T11:14:46Z",
+ "generated_at": "2026-11-14T11:47:11Z",
  "items": [
   {
    "title": "Sources: Nvidia's board has approached Arm CEO Rene Haas in its search for a potential successor to…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-13T22:10:12Z",
    "text": "Q: Could this be AI related? Mullin: We call it SI around here.",
    "author_name": "Acyn",
-   "likes": 8338,
+   "likes": 8369,
    "story": "Sources: the FAA outage occurred after an update to the private communications network that connects the ATC system caused the system to reboot and crash"
   },
   {
@@ -28,14 +28,14 @@
    "text": "Fixed a security issue in how zstd-compressed responses are decoded · Added a spinner tip in VS Code and similar integrated terminals about re-running a notebook cell, shown once Claude has read or edited a Jupyter notebook · Added a line under the error shown when your organization's policy blocks a request, saying how to continue: run /rewind and change the message, or run /clear · Added a note for Claude when a sandboxed git checkout, git stash or autostash pull cannot update protected files such as those in .claude"
   },
   {
-   "title": "Anthropic reported a similar sudden and unusual jump in robotics capabilities with Fable 5.2. As th…",
-   "url": "https://x.com/AndrewCurran_/status/2121337915087433772",
-   "source": "𝕏 @AndrewCurran_",
-   "published_at": "2026-11-13T20:22:26Z",
-   "text": "Anthropic reported a similar sudden and unusual jump in robotics capabilities with Fable 5.2. As the general intelligence of frontier models scales up, it is increasingly surpassing specialized training. This will ultimately generalize to every sphere of human ability.",
-   "author_name": "Andrew Curran",
-   "likes": 1709,
-   "story": "OpenAI disbands its standalone robotics team, moving its staff to research and Applied units, saying models like GPT-6 Astra can be directly applied to robotics"
+   "title": "holy crap -- knives are out for Lutnick over Nvidia",
+   "url": "https://x.com/atrupar/status/2121234944273916341",
+   "source": "𝕏 @atrupar",
+   "published_at": "2026-11-13T13:33:16Z",
+   "text": "holy crap -- knives are out for Lutnick over Nvidia",
+   "author_name": "Aaron Rupar",
+   "likes": 8798,
+   "story": "Scott Bessent says the departments of Treasury, Defense, and State were in favor of putting Megaspeed on the entity list for months, but Commerce is in charge"
   },
   {
    "title": "How Nvidia used a “scorched earth, adversarial attitude” targeting proponents of export controls in…",
@@ -50,9 +50,19 @@
    "url": "https://www.techpowerup.com/354814/nvidia-allegedly-engineered-scarcity-by-funding-ai-startups-to-buy-its-gpus",
    "source": "Hacker News",
    "published_at": "2026-11-14T02:52:59Z",
-   "text": "594 points and 344 comments on Hacker News.",
-   "points": 594,
+   "text": "641 points and 379 comments on Hacker News.",
+   "points": 641,
    "discussion": "https://news.ycombinator.com/item?id=50493251"
+  },
+  {
+   "title": "Anthropic reported a similar sudden and unusual jump in robotics capabilities with Fable 5.2. As th…",
+   "url": "https://x.com/AndrewCurran_/status/2121337915087433772",
+   "source": "𝕏 @AndrewCurran_",
+   "published_at": "2026-11-13T20:22:26Z",
+   "text": "Anthropic reported a similar sudden and unusual jump in robotics capabilities with Fable 5.2. As the general intelligence of frontier models scales up, it is increasingly surpassing specialized training. This will ultimately generalize to every sphere of human ability.",
+   "author_name": "Andrew Curran",
+   "likes": 1736,
+   "story": "OpenAI disbands its standalone robotics team, moving its staff to research and Applied units, saying models like GPT-6 Astra can be directly applied to robotics"
   },
   {
    "title": "Anthropic is endorsing SB 53",
@@ -91,8 +101,8 @@
    "url": "https://haddyalchaer.com/jepa",
    "source": "Hacker News",
    "published_at": "2026-11-13T17:55:28Z",
-   "text": "262 points and 41 comments on Hacker News.",
-   "points": 262,
+   "text": "266 points and 45 comments on Hacker News.",
+   "points": 266,
    "discussion": "https://news.ycombinator.com/item?id=50487185"
   },
   {
@@ -115,17 +125,9 @@
    "url": "https://www.youtube.com/watch?v=IRK8h67ol7Q",
    "source": "Hacker News",
    "published_at": "2026-11-13T15:08:44Z",
-   "text": "302 points and 370 comments on Hacker News.",
-   "points": 302,
+   "text": "316 points and 409 comments on Hacker News.",
+   "points": 316,
    "discussion": "https://news.ycombinator.com/item?id=50484658"
-  },
-  {
-   "title": "Doc: Amazon, wary of AI agents favoring sites with better data, plans to gather data on nearly ever…",
-   "url": "https://www.reuters.com/business/media-telecom/amazons-plan-own-worlds-product-data-fight-ai-shopping-agents-2026-11-13/",
-   "source": "Greg Bensinger / Reuters",
-   "published_at": "2026-11-14T01:16:33Z",
-   "text": "Doc: Amazon, wary of AI agents favoring sites with better data, plans to gather data on nearly every product sold anywhere, including by crawling rivals' sites. Amazon (AMZN.O) has a secret plan to ensure shoppers never need to leave its site: own the world's product information.",
-   "via": "Techmeme"
   }
  ],
  "sources": "curated, Techmeme, X (found via Techmeme, Reddit, the Internet Archive), Claude Code releases, Anthropic, Hacker News, Simon Willison"
