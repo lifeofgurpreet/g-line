@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-14T16:38:24Z",
+ "generated_at": "2026-11-14T17:10:13Z",
  "items": [
   {
    "title": "Sources and messages: Jensen Huang misled several Nvidia leaders, including general counsel Tim Tet…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-13T22:10:12Z",
    "text": "Q: Could this be AI related? Mullin: We call it SI around here.",
    "author_name": "Acyn",
-   "likes": 8639,
+   "likes": 8651,
    "story": "Sources: the FAA outage occurred after an update to the private communications network that connects the ATC system caused the system to reboot and crash"
   },
   {
@@ -36,13 +36,13 @@
    "via": "Techmeme"
   },
   {
-   "title": "The Claude Delusion",
-   "url": "https://www.netmeister.org/blog/claude-delusion.html",
+   "title": "Nvidia allegedly engineered scarcity by funding AI startups to buy its GPUs",
+   "url": "https://www.techpowerup.com/354814/nvidia-allegedly-engineered-scarcity-by-funding-ai-startups-to-buy-its-gpus",
    "source": "Hacker News",
-   "published_at": "2026-11-14T13:36:17Z",
-   "text": "122 points and 149 comments on Hacker News.",
-   "points": 122,
-   "discussion": "https://news.ycombinator.com/item?id=50496921"
+   "published_at": "2026-11-14T02:52:59Z",
+   "text": "928 points and 561 comments on Hacker News.",
+   "points": 928,
+   "discussion": "https://news.ycombinator.com/item?id=50493251"
   },
   {
    "title": "Anthropic is endorsing SB 53",
@@ -60,20 +60,20 @@
    "via": "Techmeme"
   },
   {
-   "title": "Nvidia allegedly engineered scarcity by funding AI startups to buy its GPUs",
-   "url": "https://www.techpowerup.com/354814/nvidia-allegedly-engineered-scarcity-by-funding-ai-startups-to-buy-its-gpus",
+   "title": "The Claude Delusion",
+   "url": "https://www.netmeister.org/blog/claude-delusion.html",
    "source": "Hacker News",
-   "published_at": "2026-11-14T02:52:59Z",
-   "text": "904 points and 541 comments on Hacker News.",
-   "points": 904,
-   "discussion": "https://news.ycombinator.com/item?id=50493251"
+   "published_at": "2026-11-14T13:36:17Z",
+   "text": "124 points and 155 comments on Hacker News.",
+   "points": 124,
+   "discussion": "https://news.ycombinator.com/item?id=50496921"
   },
   {
-   "title": "Operand, which offers AI-powered due diligence tools for PE firms, raised $31M across a seed and a…",
-   "url": "https://www.axios.com/pro/all-deals/2026/11/10/private-equity-due-diligence-ai-operand-31m",
-   "source": "Lucinda Shen / Axios",
-   "published_at": "2026-11-14T07:04:00Z",
-   "text": "Operand, which offers AI-powered due diligence tools for PE firms, raised $31M across a seed and a Series A led by Khosla Ventures at a $220M valuation. Operand, which uses AI to do due diligence for private equity firms, raised $31 million in seed and Series A funding, CEO Ram Gorthi tells Axios Pro exclusively.",
+   "title": "WhiteMatter, which builds “guardian” AI agents to oversee file access, software use, decision makin…",
+   "url": "https://www.businessinsider.com/whitematter-startup-ai-agent-cybersecurity-funding-pitch-deck-2026-11",
+   "source": "Alice Tecotzky / Business I…",
+   "published_at": "2026-11-14T06:56:25Z",
+   "text": "WhiteMatter, which builds “guardian” AI agents to oversee file access, software use, decision making, and actions of existing AI agents, raised a $20M Series A. A startup using AI agents to keep rogue AI in line has raised $20 million. — WhiteMatter, founded in 2024 …",
    "via": "Techmeme"
   },
   {
@@ -81,8 +81,8 @@
    "url": "https://developer.nvidia.com/blog/when-one-gpu-isnt-enough-serving-glm-5-3-across-two-nvidia-dgx-stations-with-vllm/",
    "source": "Hacker News",
    "published_at": "2026-11-14T14:09:25Z",
-   "text": "62 points and 33 comments on Hacker News.",
-   "points": 62,
+   "text": "71 points and 34 comments on Hacker News.",
+   "points": 71,
    "discussion": "https://news.ycombinator.com/item?id=50497155"
   },
   {
@@ -93,11 +93,11 @@
    "text": "Anthropic's framework for identifying, classifying, and mitigating potential harms from AI systems to support responsible development."
   },
   {
-   "title": "WhiteMatter, which builds “guardian” AI agents to oversee file access, software use, decision makin…",
-   "url": "https://www.businessinsider.com/whitematter-startup-ai-agent-cybersecurity-funding-pitch-deck-2026-11",
-   "source": "Alice Tecotzky / Business I…",
-   "published_at": "2026-11-14T06:56:25Z",
-   "text": "WhiteMatter, which builds “guardian” AI agents to oversee file access, software use, decision making, and actions of existing AI agents, raised a $20M Series A",
+   "title": "Operand, which offers AI-powered due diligence tools for PE firms, raised $31M across a seed and a…",
+   "url": "https://www.axios.com/pro/all-deals/2026/11/10/private-equity-due-diligence-ai-operand-31m",
+   "source": "Lucinda Shen / Axios",
+   "published_at": "2026-11-14T07:04:00Z",
+   "text": "Operand, which offers AI-powered due diligence tools for PE firms, raised $31M across a seed and a Series A led by Khosla Ventures at a $220M valuation. Operand, which uses AI to do due diligence for private equity firms, raised $31 million in seed and Series A funding, CEO Ram Gorthi tells Axios Pro exclusively.",
    "via": "Techmeme"
   },
   {
@@ -105,8 +105,8 @@
    "url": "https://www.youtube.com/watch?v=IRK8h67ol7Q",
    "source": "Hacker News",
    "published_at": "2026-11-13T15:08:44Z",
-   "text": "419 points and 584 comments on Hacker News.",
-   "points": 419,
+   "text": "432 points and 607 comments on Hacker News.",
+   "points": 432,
    "discussion": "https://news.ycombinator.com/item?id=50484658"
   },
   {
