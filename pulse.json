@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-14T09:37:52Z",
+ "generated_at": "2026-11-14T10:10:42Z",
  "items": [
   {
    "title": "Sources and messages: Jensen Huang misled several Nvidia leaders, including general counsel Tim Tet…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-13T22:10:12Z",
    "text": "Q: Could this be AI related? Mullin: We call it SI around here.",
    "author_name": "Acyn",
-   "likes": 8267,
+   "likes": 8288,
    "story": "Sources: the FAA outage occurred after an update to the private communications network that connects the ATC system caused the system to reboot and crash"
   },
   {
@@ -28,14 +28,14 @@
    "text": "Fixed a security issue in how zstd-compressed responses are decoded · Added a spinner tip in VS Code and similar integrated terminals about re-running a notebook cell, shown once Claude has read or edited a Jupyter notebook · Added a line under the error shown when your organization's policy blocks a request, saying how to continue: run /rewind and change the message, or run /clear · Added a note for Claude when a sandboxed git checkout, git stash or autostash pull cannot update protected files such as those in .claude"
   },
   {
-   "title": "🚨 Another major scandal is coming out of NVIDIA. And this one has nothing to do with Jensen Huang's…",
-   "url": "https://x.com/BullTheoryio/status/2121166572647772461",
-   "source": "𝕏 @BullTheoryio",
-   "published_at": "2026-11-13T09:01:34Z",
-   "text": "🚨 Another major scandal is coming out of NVIDIA. And this one has nothing to do with Jensen Huang's affairs. According to a Wall Street Journal report, Nvidia was offering billions in financial guarantees to AI companies that could not afford its chips, so they could keep…",
-   "author_name": "Bull Theory",
-   "likes": 11700,
-   "story": "CXMT almost tripling RAM production from 2025 to 2028"
+   "title": "Anthropic reported a similar sudden and unusual jump in robotics capabilities with Fable 5.2. As th…",
+   "url": "https://x.com/AndrewCurran_/status/2121337915087433772",
+   "source": "𝕏 @AndrewCurran_",
+   "published_at": "2026-11-13T20:22:26Z",
+   "text": "Anthropic reported a similar sudden and unusual jump in robotics capabilities with Fable 5.2. As the general intelligence of frontier models scales up, it is increasingly surpassing specialized training. This will ultimately generalize to every sphere of human ability.",
+   "author_name": "Andrew Curran",
+   "likes": 1676,
+   "story": "OpenAI disbands its standalone robotics team, moving its staff to research and Applied units, saying models like GPT-6 Astra can be directly applied to robotics"
   },
   {
    "title": "Sources: Nvidia's board has approached Arm CEO Rene Haas in its search for a potential successor to…",
@@ -50,19 +50,19 @@
    "url": "https://www.techpowerup.com/354814/nvidia-allegedly-engineered-scarcity-by-funding-ai-startups-to-buy-its-gpus",
    "source": "Hacker News",
    "published_at": "2026-11-14T02:52:59Z",
-   "text": "544 points and 325 comments on Hacker News.",
-   "points": 544,
+   "text": "568 points and 330 comments on Hacker News.",
+   "points": 568,
    "discussion": "https://news.ycombinator.com/item?id=50493251"
   },
   {
-   "title": "Anthropic reported a similar sudden and unusual jump in robotics capabilities with Fable 5.2. As th…",
-   "url": "https://x.com/AndrewCurran_/status/2121337915087433772",
-   "source": "𝕏 @AndrewCurran_",
-   "published_at": "2026-11-13T20:22:26Z",
-   "text": "Anthropic reported a similar sudden and unusual jump in robotics capabilities with Fable 5.2. As the general intelligence of frontier models scales up, it is increasingly surpassing specialized training. This will ultimately generalize to every sphere of human ability.",
-   "author_name": "Andrew Curran",
-   "likes": 1661,
-   "story": "OpenAI disbands its standalone robotics team, moving its staff to research and Applied units, saying models like GPT-6 Astra can be directly applied to robotics"
+   "title": "holy crap -- knives are out for Lutnick over Nvidia",
+   "url": "https://x.com/atrupar/status/2121234944273916341",
+   "source": "𝕏 @atrupar",
+   "published_at": "2026-11-13T13:33:16Z",
+   "text": "holy crap -- knives are out for Lutnick over Nvidia",
+   "author_name": "Aaron Rupar",
+   "likes": 8783,
+   "story": "Scott Bessent says the departments of Treasury, Defense, and State were in favor of putting Megaspeed on the entity list for months, but Commerce is in charge"
   },
   {
    "title": "Anthropic is endorsing SB 53",
@@ -80,23 +80,13 @@
    "via": "Techmeme"
   },
   {
-   "title": "holy crap -- knives are out for Lutnick over Nvidia",
-   "url": "https://x.com/atrupar/status/2121234944273916341",
-   "source": "𝕏 @atrupar",
-   "published_at": "2026-11-13T13:33:16Z",
-   "text": "holy crap -- knives are out for Lutnick over Nvidia",
-   "author_name": "Aaron Rupar",
-   "likes": 8778,
-   "story": "Scott Bessent says the departments of Treasury, Defense, and State were in favor of putting Megaspeed on the entity list for months, but Commerce is in charge"
-  },
-  {
-   "title": "$11.4M in Nvidia hardware vanishes during shipment from CA to TX",
-   "url": "https://www.freightwaves.com/news/11-4-million-in-nvidia-hardware-vanishes-during-shipment-from-california-to-texas",
+   "title": "After 600 experiments, here's what I discovered about JEPA world models",
+   "url": "https://haddyalchaer.com/jepa",
    "source": "Hacker News",
-   "published_at": "2026-11-13T18:40:44Z",
-   "text": "352 points and 192 comments on Hacker News.",
-   "points": 352,
-   "discussion": "https://news.ycombinator.com/item?id=50487864"
+   "published_at": "2026-11-13T17:55:28Z",
+   "text": "262 points and 41 comments on Hacker News.",
+   "points": 262,
+   "discussion": "https://news.ycombinator.com/item?id=50487185"
   },
   {
    "title": "OpenAI announces ChatGPT Wallet, which lets its dots AI agents make purchases on behalf of users, a…",
@@ -107,13 +97,13 @@
    "via": "Techmeme"
   },
   {
-   "title": "After 600 experiments, here's what I discovered about JEPA world models",
-   "url": "https://haddyalchaer.com/jepa",
+   "title": "Elevated errors on claude.ai, Claude Code, and platform.claude.com",
+   "url": "https://status.claude.com/incidents/nn11wk485zfn",
    "source": "Hacker News",
-   "published_at": "2026-11-13T17:55:28Z",
-   "text": "259 points and 41 comments on Hacker News.",
-   "points": 259,
-   "discussion": "https://news.ycombinator.com/item?id=50487185"
+   "published_at": "2026-11-13T10:18:13Z",
+   "text": "488 points and 384 comments on Hacker News.",
+   "points": 488,
+   "discussion": "https://news.ycombinator.com/item?id=50481187"
   },
   {
    "title": "Understanding and addressing AI harms",
@@ -129,6 +119,15 @@
    "published_at": "2026-11-13T21:03:00Z",
    "text": "How Nvidia used a “scorched earth, adversarial attitude” targeting proponents of export controls in DC, invoking Trump's name to get license approvals expedited. THE SCOOP — In January, the general counsel for what was then the world's most valuable company delivered …",
    "via": "Techmeme"
+  },
+  {
+   "title": "Jonathan Blow – If AI solved coding, why is my software still the same? [video]",
+   "url": "https://www.youtube.com/watch?v=IRK8h67ol7Q",
+   "source": "Hacker News",
+   "published_at": "2026-11-13T15:08:44Z",
+   "text": "295 points and 340 comments on Hacker News.",
+   "points": 295,
+   "discussion": "https://news.ycombinator.com/item?id=50484658"
   }
  ],
  "sources": "curated, Techmeme, X (found via Techmeme, Reddit, the Internet Archive), Claude Code releases, Anthropic, Hacker News, Simon Willison"
