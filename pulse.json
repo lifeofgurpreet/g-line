@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-14T17:10:13Z",
+ "generated_at": "2026-11-14T17:42:40Z",
  "items": [
   {
    "title": "Sources and messages: Jensen Huang misled several Nvidia leaders, including general counsel Tim Tet…",
@@ -17,8 +17,8 @@
    "published_at": "2026-11-13T22:10:12Z",
    "text": "Q: Could this be AI related? Mullin: We call it SI around here.",
    "author_name": "Acyn",
-   "likes": 8651,
-   "story": "Sources: the FAA outage occurred after an update to the private communications network that connects the ATC system caused the system to reboot and crash"
+   "likes": 8661,
+   "story": "The FAA lifts its over four-hour nationwide ground stop for US airports caused by “communication issues affecting multiple Air Route Traffic Control Centers”"
   },
   {
    "title": "Claude Code 2.1.325 released",
@@ -26,30 +26,6 @@
    "source": "Claude Code releases",
    "published_at": "2026-11-13T20:40:01Z",
    "text": "Fixed a security issue in how zstd-compressed responses are decoded · Added a spinner tip in VS Code and similar integrated terminals about re-running a notebook cell, shown once Claude has read or edited a Jupyter notebook · Added a line under the error shown when your organization's policy blocks a request, saying how to continue: run /rewind and change the message, or run /clear · Added a note for Claude when a sandboxed git checkout, git stash or autostash pull cannot update protected files such as those in .claude"
-  },
-  {
-   "title": "Sources: despite Nvidia's 20+ years of business in China, Jensen Huang struggled to gain access to…",
-   "url": "https://www.ft.com/content/3efa9733-fbb4-47c2-83ba-b01e548ef277",
-   "source": "Eleanor Olcott / Financial…",
-   "published_at": "2026-11-14T07:31:34Z",
-   "text": "Sources: despite Nvidia's 20+ years of business in China, Jensen Huang struggled to gain access to policymakers driving Beijing's chip self-sufficiency campaign. Former Nvidia chief executive facing intense scrutiny over ties to Beijing — In January 2024, Nvidia's chief executive Jensen Huang ended …",
-   "via": "Techmeme"
-  },
-  {
-   "title": "Nvidia allegedly engineered scarcity by funding AI startups to buy its GPUs",
-   "url": "https://www.techpowerup.com/354814/nvidia-allegedly-engineered-scarcity-by-funding-ai-startups-to-buy-its-gpus",
-   "source": "Hacker News",
-   "published_at": "2026-11-14T02:52:59Z",
-   "text": "928 points and 561 comments on Hacker News.",
-   "points": 928,
-   "discussion": "https://news.ycombinator.com/item?id=50493251"
-  },
-  {
-   "title": "Anthropic is endorsing SB 53",
-   "url": "https://www.anthropic.com/news/anthropic-is-endorsing-sb-53",
-   "source": "Anthropic",
-   "published_at": "2026-11-13T22:37:05Z",
-   "text": "Anthropic is endorsing SB 53, the California bill that governs powerful AI systems built by frontier AI developers like Anthropic."
   },
   {
    "title": "Charta Health, which offers AI-powered tools to automate medical chart review, billing, and coding…",
@@ -60,13 +36,20 @@
    "via": "Techmeme"
   },
   {
-   "title": "The Claude Delusion",
-   "url": "https://www.netmeister.org/blog/claude-delusion.html",
+   "title": "Nvidia allegedly engineered scarcity by funding AI startups to buy its GPUs",
+   "url": "https://www.techpowerup.com/354814/nvidia-allegedly-engineered-scarcity-by-funding-ai-startups-to-buy-its-gpus",
    "source": "Hacker News",
-   "published_at": "2026-11-14T13:36:17Z",
-   "text": "124 points and 155 comments on Hacker News.",
-   "points": 124,
-   "discussion": "https://news.ycombinator.com/item?id=50496921"
+   "published_at": "2026-11-14T02:52:59Z",
+   "text": "941 points and 574 comments on Hacker News.",
+   "points": 941,
+   "discussion": "https://news.ycombinator.com/item?id=50493251"
+  },
+  {
+   "title": "Anthropic is endorsing SB 53",
+   "url": "https://www.anthropic.com/news/anthropic-is-endorsing-sb-53",
+   "source": "Anthropic",
+   "published_at": "2026-11-13T22:37:05Z",
+   "text": "Anthropic is endorsing SB 53, the California bill that governs powerful AI systems built by frontier AI developers like Anthropic."
   },
   {
    "title": "WhiteMatter, which builds “guardian” AI agents to oversee file access, software use, decision makin…",
@@ -77,20 +60,13 @@
    "via": "Techmeme"
   },
   {
-   "title": "Serving GLM-5.3 at 607.8 tok/s across two Nvidia DGX stations with vLLM",
-   "url": "https://developer.nvidia.com/blog/when-one-gpu-isnt-enough-serving-glm-5-3-across-two-nvidia-dgx-stations-with-vllm/",
+   "title": "The Claude Delusion",
+   "url": "https://www.netmeister.org/blog/claude-delusion.html",
    "source": "Hacker News",
-   "published_at": "2026-11-14T14:09:25Z",
-   "text": "71 points and 34 comments on Hacker News.",
-   "points": 71,
-   "discussion": "https://news.ycombinator.com/item?id=50497155"
-  },
-  {
-   "title": "Understanding and addressing AI harms",
-   "url": "https://www.anthropic.com/news/our-approach-to-understanding-and-addressing-ai-harms",
-   "source": "Anthropic",
-   "published_at": "2026-11-13T22:37:05Z",
-   "text": "Anthropic's framework for identifying, classifying, and mitigating potential harms from AI systems to support responsible development."
+   "published_at": "2026-11-14T13:36:17Z",
+   "text": "125 points and 158 comments on Hacker News.",
+   "points": 125,
+   "discussion": "https://news.ycombinator.com/item?id=50496921"
   },
   {
    "title": "Operand, which offers AI-powered due diligence tools for PE firms, raised $31M across a seed and a…",
@@ -101,13 +77,20 @@
    "via": "Techmeme"
   },
   {
-   "title": "Jonathan Blow – If AI solved coding, why is my software still the same? [video]",
-   "url": "https://www.youtube.com/watch?v=IRK8h67ol7Q",
+   "title": "Serving GLM-5.3 at 607.8 tok/s across two Nvidia DGX stations with vLLM",
+   "url": "https://developer.nvidia.com/blog/when-one-gpu-isnt-enough-serving-glm-5-3-across-two-nvidia-dgx-stations-with-vllm/",
    "source": "Hacker News",
-   "published_at": "2026-11-13T15:08:44Z",
-   "text": "432 points and 607 comments on Hacker News.",
-   "points": 432,
-   "discussion": "https://news.ycombinator.com/item?id=50484658"
+   "published_at": "2026-11-14T14:09:25Z",
+   "text": "78 points and 38 comments on Hacker News.",
+   "points": 78,
+   "discussion": "https://news.ycombinator.com/item?id=50497155"
+  },
+  {
+   "title": "Understanding and addressing AI harms",
+   "url": "https://www.anthropic.com/news/our-approach-to-understanding-and-addressing-ai-harms",
+   "source": "Anthropic",
+   "published_at": "2026-11-13T22:37:05Z",
+   "text": "Anthropic's framework for identifying, classifying, and mitigating potential harms from AI systems to support responsible development."
   },
   {
    "title": "AI's impact on math is a preview of what AI will do to AI research, with AI matching top human rese…",
@@ -118,11 +101,28 @@
    "via": "Techmeme"
   },
   {
+   "title": "Elevated errors on claude.ai, Claude Code, and platform.claude.com",
+   "url": "https://status.claude.com/incidents/nn11wk485zfn",
+   "source": "Hacker News",
+   "published_at": "2026-11-13T10:18:13Z",
+   "text": "489 points and 390 comments on Hacker News.",
+   "points": 489,
+   "discussion": "https://news.ycombinator.com/item?id=50481187"
+  },
+  {
    "title": "Cambridge, UK-based Tendrils, which is designing a CPU architecture with thousands of cores operati…",
    "url": "https://tech.eu/2026/11/11/tendrils-compute-raises-30m-to-redo-the-cpu/",
    "source": "John Reynolds / Tech.eu",
    "published_at": "2026-11-14T05:56:53Z",
-   "text": "Cambridge, UK-based Tendrils, which is designing a CPU architecture with thousands of cores operating in parallel, raised $30M led by Benchmark",
+   "text": "Cambridge, UK-based Tendrils, which is designing a CPU architecture with thousands of cores operating in parallel, raised $30M led by Benchmark. Tendrils Compute is one of several UK chip startups which investors are backing. — A UK startup developing a radically different type …",
+   "via": "Techmeme"
+  },
+  {
+   "title": "Dario Amodei says figuring out how much computing is needed in a year or two is Anthropic's “deepes…",
+   "url": "https://www.bloomberg.com/news/articles/2026-11-13/anthropic-ceo-calls-computing-power-deepest-business-dilemma",
+   "source": "Bloomberg",
+   "published_at": "2026-11-13T19:21:13Z",
+   "text": "Dario Amodei says figuring out how much computing is needed in a year or two is Anthropic's “deepest business dilemma” due to the unpredictability of revenue",
    "via": "Techmeme"
   }
  ],
