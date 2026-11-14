@@ -1,13 +1,13 @@
 {
  "schema": 1,
- "generated_at": "2026-11-14T03:10:09Z",
+ "generated_at": "2026-11-14T03:42:23Z",
  "items": [
   {
-   "title": "The FAA announced on November 10 that it has expanded the use of SMART, an AI tool for advising air…",
-   "url": "https://arstechnica.com/ai/2026/11/faa-expands-ai-advice-to-manage-air-traffic-congestion-across-entire-us-airspace/",
-   "source": "Jeremy Hsu / Ars Technica",
-   "published_at": "2026-11-13T22:11:19Z",
-   "text": "The FAA announced on November 10 that it has expanded the use of SMART, an AI tool for advising air traffic controllers to manage congestion, across the US. The US government has expanded the use of an AI tool for advising air traffic controllers to assist in managing air traffic across the entire national airspace system.",
+   "title": "Sources: Nvidia's board has approached Arm CEO Rene Haas in its search for a potential successor to…",
+   "url": "https://www.ft.com/content/2a64f698-46dd-4178-a3f4-4c5f4c0a0926",
+   "source": "Michael Acton / Financial T…",
+   "published_at": "2026-11-13T17:04:48Z",
+   "text": "Sources: Nvidia's board has approached Arm CEO Rene Haas in its search for a potential successor to Jensen Huang; Haas worked at Nvidia more than a decade ago. Head of SoftBank-owned UK semiconductor group sounded out after Jensen Huang resigned over affairs",
    "via": "Techmeme"
   },
   {
@@ -17,8 +17,8 @@
    "published_at": "2026-11-13T22:10:12Z",
    "text": "Q: Could this be AI related? Mullin: We call it SI around here.",
    "author_name": "Acyn",
-   "likes": 7658,
-   "story": "The FAA lifts its over four-hour nationwide ground stop for US airports caused by “communication issues affecting multiple Air Route Traffic Control Centers”"
+   "likes": 7731,
+   "story": "Sources: the FAA outage occurred after an update to the private communications network that connects the ATC system caused the system to reboot and crash"
   },
   {
    "title": "Claude Code 2.1.325 released",
@@ -34,42 +34,8 @@
    "published_at": "2026-11-13T09:01:34Z",
    "text": "🚨 Another major scandal is coming out of NVIDIA. And this one has nothing to do with Jensen Huang's affairs. According to a Wall Street Journal report, Nvidia was offering billions in financial guarantees to AI companies that could not afford its chips, so they could keep…",
    "author_name": "Bull Theory",
-   "likes": 11280,
+   "likes": 11319,
    "story": "CXMT almost tripling RAM production from 2025 to 2028"
-  },
-  {
-   "title": "Sources: Nvidia's board has approached Arm CEO Rene Haas in its search for a potential successor to…",
-   "url": "https://www.ft.com/content/2a64f698-46dd-4178-a3f4-4c5f4c0a0926",
-   "source": "Michael Acton / Financial T…",
-   "published_at": "2026-11-13T17:04:48Z",
-   "text": "Sources: Nvidia's board has approached Arm CEO Rene Haas in its search for a potential successor to Jensen Huang; Haas worked at Nvidia more than a decade ago. Head of SoftBank-owned UK semiconductor group sounded out after Jensen Huang resigned over affairs",
-   "via": "Techmeme"
-  },
-  {
-   "title": "$11.4M in Nvidia hardware vanishes during shipment from CA to TX",
-   "url": "https://www.freightwaves.com/news/11-4-million-in-nvidia-hardware-vanishes-during-shipment-from-california-to-texas",
-   "source": "Hacker News",
-   "published_at": "2026-11-13T18:40:44Z",
-   "text": "305 points and 169 comments on Hacker News.",
-   "points": 305,
-   "discussion": "https://news.ycombinator.com/item?id=50487864"
-  },
-  {
-   "title": "Anthropic reported a similar sudden and unusual jump in robotics capabilities with Fable 5.2. As th…",
-   "url": "https://x.com/AndrewCurran_/status/2121337915087433772",
-   "source": "𝕏 @AndrewCurran_",
-   "published_at": "2026-11-13T20:22:26Z",
-   "text": "Anthropic reported a similar sudden and unusual jump in robotics capabilities with Fable 5.2. As the general intelligence of frontier models scales up, it is increasingly surpassing specialized training. This will ultimately generalize to every sphere of human ability.",
-   "author_name": "Andrew Curran",
-   "likes": 1307,
-   "story": "OpenAI disbands its standalone robotics team, moving its staff to research and Applied units, saying models like GPT-6 Astra can be directly applied to robotics"
-  },
-  {
-   "title": "Anthropic is endorsing SB 53",
-   "url": "https://www.anthropic.com/news/anthropic-is-endorsing-sb-53",
-   "source": "Anthropic",
-   "published_at": "2026-11-13T22:37:05Z",
-   "text": "Anthropic is endorsing SB 53, the California bill that governs powerful AI systems built by frontier AI developers like Anthropic."
   },
   {
    "title": "OpenAI announces ChatGPT Wallet, which lets its dots AI agents make purchases on behalf of users, a…",
@@ -80,33 +46,30 @@
    "via": "Techmeme"
   },
   {
-   "title": "holy crap -- knives are out for Lutnick over Nvidia",
-   "url": "https://x.com/atrupar/status/2121234944273916341",
-   "source": "𝕏 @atrupar",
-   "published_at": "2026-11-13T13:33:16Z",
-   "text": "holy crap -- knives are out for Lutnick over Nvidia",
-   "author_name": "Aaron Rupar",
-   "likes": 8671,
-   "story": "Scott Bessent says the departments of Treasury, Defense, and State were in favor of putting Megaspeed on the entity list for months, but Commerce is in charge"
-  },
-  {
-   "title": "After 600 experiments, here's what I discovered about JEPA world models",
-   "url": "https://haddyalchaer.com/jepa",
+   "title": "$11.4M in Nvidia hardware vanishes during shipment from CA to TX",
+   "url": "https://www.freightwaves.com/news/11-4-million-in-nvidia-hardware-vanishes-during-shipment-from-california-to-texas",
    "source": "Hacker News",
-   "published_at": "2026-11-13T17:55:28Z",
-   "text": "219 points and 36 comments on Hacker News.",
-   "points": 219,
-   "discussion": "https://news.ycombinator.com/item?id=50487185"
+   "published_at": "2026-11-13T18:40:44Z",
+   "text": "309 points and 172 comments on Hacker News.",
+   "points": 309,
+   "discussion": "https://news.ycombinator.com/item?id=50487864"
   },
   {
-   "title": "🚨MUSE FEATURE ALERT!!!🚨 lots of you have been asking for this one… muse can make phone calls for yo…",
-   "url": "https://x.com/alexandr_wang/status/2120930586827391350",
-   "source": "𝕏 @alexandr_wang",
-   "published_at": "2026-11-12T17:23:51Z",
-   "text": "🚨MUSE FEATURE ALERT!!!🚨 lots of you have been asking for this one… muse can make phone calls for you! ☎️📞📲 let muse take care of all those calls you don’t want to make. insurance? cable? DMV? dinner res? not your problem anymore. out now to paid subs in the US 🇺🇸 https",
-   "author_name": "Alexandr Wang",
-   "likes": 1418,
-   "story": "Meta launches an outbound calling feature for Muse, such as to businesses, available for paid US subscribers; Gemini and startup Instinct offer a similar option"
+   "title": "Anthropic reported a similar sudden and unusual jump in robotics capabilities with Fable 5.2. As th…",
+   "url": "https://x.com/AndrewCurran_/status/2121337915087433772",
+   "source": "𝕏 @AndrewCurran_",
+   "published_at": "2026-11-13T20:22:26Z",
+   "text": "Anthropic reported a similar sudden and unusual jump in robotics capabilities with Fable 5.2. As the general intelligence of frontier models scales up, it is increasingly surpassing specialized training. This will ultimately generalize to every sphere of human ability.",
+   "author_name": "Andrew Curran",
+   "likes": 1341,
+   "story": "OpenAI disbands its standalone robotics team, moving its staff to research and Applied units, saying models like GPT-6 Astra can be directly applied to robotics"
+  },
+  {
+   "title": "Anthropic is endorsing SB 53",
+   "url": "https://www.anthropic.com/news/anthropic-is-endorsing-sb-53",
+   "source": "Anthropic",
+   "published_at": "2026-11-13T22:37:05Z",
+   "text": "Anthropic is endorsing SB 53, the California bill that governs powerful AI systems built by frontier AI developers like Anthropic."
   },
   {
    "title": "Jensen Huang's biographer says Nvidia had a culture of omertà and deference toward Huang, who was q…",
@@ -117,12 +80,49 @@
    "via": "Techmeme"
   },
   {
+   "title": "holy crap -- knives are out for Lutnick over Nvidia",
+   "url": "https://x.com/atrupar/status/2121234944273916341",
+   "source": "𝕏 @atrupar",
+   "published_at": "2026-11-13T13:33:16Z",
+   "text": "holy crap -- knives are out for Lutnick over Nvidia",
+   "author_name": "Aaron Rupar",
+   "likes": 8691,
+   "story": "Scott Bessent says the departments of Treasury, Defense, and State were in favor of putting Megaspeed on the entity list for months, but Commerce is in charge"
+  },
+  {
+   "title": "After 600 experiments, here's what I discovered about JEPA world models",
+   "url": "https://haddyalchaer.com/jepa",
+   "source": "Hacker News",
+   "published_at": "2026-11-13T17:55:28Z",
+   "text": "220 points and 36 comments on Hacker News.",
+   "points": 220,
+   "discussion": "https://news.ycombinator.com/item?id=50487185"
+  },
+  {
+   "title": "🚨MUSE FEATURE ALERT!!!🚨 lots of you have been asking for this one… muse can make phone calls for yo…",
+   "url": "https://x.com/alexandr_wang/status/2120930586827391350",
+   "source": "𝕏 @alexandr_wang",
+   "published_at": "2026-11-12T17:23:51Z",
+   "text": "🚨MUSE FEATURE ALERT!!!🚨 lots of you have been asking for this one… muse can make phone calls for you! ☎️📞📲 let muse take care of all those calls you don’t want to make. insurance? cable? DMV? dinner res? not your problem anymore. out now to paid subs in the US 🇺🇸 https",
+   "author_name": "Alexandr Wang",
+   "likes": 1420,
+   "story": "Meta launches an outbound calling feature for Muse, such as to businesses, available for paid US subscribers; Gemini and startup Instinct offer a similar option"
+  },
+  {
+   "title": "How Nvidia used a “scorched earth, adversarial attitude” targeting proponents of export controls in…",
+   "url": "https://www.semafor.com/article/11/13/2026/how-nvidias-jensen-huang-and-trump-jumped-the-guardrails",
+   "source": "Semafor",
+   "published_at": "2026-11-13T21:03:00Z",
+   "text": "How Nvidia used a “scorched earth, adversarial attitude” targeting proponents of export controls in DC, invoking Trump's name to get license approvals expedited. THE SCOOP — In January, the general counsel for what was then the world's most valuable company delivered …",
+   "via": "Techmeme"
+  },
+  {
    "title": "Elevated errors on claude.ai, Claude Code, and platform.claude.com",
    "url": "https://status.claude.com/incidents/nn11wk485zfn",
    "source": "Hacker News",
    "published_at": "2026-11-13T10:18:13Z",
-   "text": "484 points and 383 comments on Hacker News.",
-   "points": 484,
+   "text": "486 points and 383 comments on Hacker News.",
+   "points": 486,
    "discussion": "https://news.ycombinator.com/item?id=50481187"
   },
   {
