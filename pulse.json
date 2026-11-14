@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-14T16:06:54Z",
+ "generated_at": "2026-11-14T16:38:24Z",
  "items": [
   {
    "title": "Sources and messages: Jensen Huang misled several Nvidia leaders, including general counsel Tim Tet…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-13T22:10:12Z",
    "text": "Q: Could this be AI related? Mullin: We call it SI around here.",
    "author_name": "Acyn",
-   "likes": 8615,
+   "likes": 8639,
    "story": "Sources: the FAA outage occurred after an update to the private communications network that connects the ATC system caused the system to reboot and crash"
   },
   {
@@ -26,16 +26,6 @@
    "source": "Claude Code releases",
    "published_at": "2026-11-13T20:40:01Z",
    "text": "Fixed a security issue in how zstd-compressed responses are decoded · Added a spinner tip in VS Code and similar integrated terminals about re-running a notebook cell, shown once Claude has read or edited a Jupyter notebook · Added a line under the error shown when your organization's policy blocks a request, saying how to continue: run /rewind and change the message, or run /clear · Added a note for Claude when a sandboxed git checkout, git stash or autostash pull cannot update protected files such as those in .claude"
-  },
-  {
-   "title": "Anthropic reported a similar sudden and unusual jump in robotics capabilities with Fable 5.2. As th…",
-   "url": "https://x.com/AndrewCurran_/status/2121337915087433772",
-   "source": "𝕏 @AndrewCurran_",
-   "published_at": "2026-11-13T20:22:26Z",
-   "text": "Anthropic reported a similar sudden and unusual jump in robotics capabilities with Fable 5.2. As the general intelligence of frontier models scales up, it is increasingly surpassing specialized training. This will ultimately generalize to every sphere of human ability.",
-   "author_name": "Andrew Curran",
-   "likes": 1934,
-   "story": "OpenAI disbands its standalone robotics team, moving its staff to research and Applied units, saying models like GPT-6 Astra can be directly applied to robotics"
   },
   {
    "title": "Sources: despite Nvidia's 20+ years of business in China, Jensen Huang struggled to gain access to…",
@@ -50,8 +40,8 @@
    "url": "https://www.netmeister.org/blog/claude-delusion.html",
    "source": "Hacker News",
    "published_at": "2026-11-14T13:36:17Z",
-   "text": "119 points and 128 comments on Hacker News.",
-   "points": 119,
+   "text": "122 points and 149 comments on Hacker News.",
+   "points": 122,
    "discussion": "https://news.ycombinator.com/item?id=50496921"
   },
   {
@@ -74,9 +64,33 @@
    "url": "https://www.techpowerup.com/354814/nvidia-allegedly-engineered-scarcity-by-funding-ai-startups-to-buy-its-gpus",
    "source": "Hacker News",
    "published_at": "2026-11-14T02:52:59Z",
-   "text": "881 points and 526 comments on Hacker News.",
-   "points": 881,
+   "text": "904 points and 541 comments on Hacker News.",
+   "points": 904,
    "discussion": "https://news.ycombinator.com/item?id=50493251"
+  },
+  {
+   "title": "Operand, which offers AI-powered due diligence tools for PE firms, raised $31M across a seed and a…",
+   "url": "https://www.axios.com/pro/all-deals/2026/11/10/private-equity-due-diligence-ai-operand-31m",
+   "source": "Lucinda Shen / Axios",
+   "published_at": "2026-11-14T07:04:00Z",
+   "text": "Operand, which offers AI-powered due diligence tools for PE firms, raised $31M across a seed and a Series A led by Khosla Ventures at a $220M valuation. Operand, which uses AI to do due diligence for private equity firms, raised $31 million in seed and Series A funding, CEO Ram Gorthi tells Axios Pro exclusively.",
+   "via": "Techmeme"
+  },
+  {
+   "title": "Serving GLM-5.3 at 607.8 tok/s across two Nvidia DGX stations with vLLM",
+   "url": "https://developer.nvidia.com/blog/when-one-gpu-isnt-enough-serving-glm-5-3-across-two-nvidia-dgx-stations-with-vllm/",
+   "source": "Hacker News",
+   "published_at": "2026-11-14T14:09:25Z",
+   "text": "62 points and 33 comments on Hacker News.",
+   "points": 62,
+   "discussion": "https://news.ycombinator.com/item?id=50497155"
+  },
+  {
+   "title": "Understanding and addressing AI harms",
+   "url": "https://www.anthropic.com/news/our-approach-to-understanding-and-addressing-ai-harms",
+   "source": "Anthropic",
+   "published_at": "2026-11-13T22:37:05Z",
+   "text": "Anthropic's framework for identifying, classifying, and mitigating potential harms from AI systems to support responsible development."
   },
   {
    "title": "WhiteMatter, which builds “guardian” AI agents to oversee file access, software use, decision makin…",
@@ -91,16 +105,9 @@
    "url": "https://www.youtube.com/watch?v=IRK8h67ol7Q",
    "source": "Hacker News",
    "published_at": "2026-11-13T15:08:44Z",
-   "text": "408 points and 569 comments on Hacker News.",
-   "points": 408,
+   "text": "419 points and 584 comments on Hacker News.",
+   "points": 419,
    "discussion": "https://news.ycombinator.com/item?id=50484658"
-  },
-  {
-   "title": "Understanding and addressing AI harms",
-   "url": "https://www.anthropic.com/news/our-approach-to-understanding-and-addressing-ai-harms",
-   "source": "Anthropic",
-   "published_at": "2026-11-13T22:37:05Z",
-   "text": "Anthropic's framework for identifying, classifying, and mitigating potential harms from AI systems to support responsible development."
   },
   {
    "title": "AI's impact on math is a preview of what AI will do to AI research, with AI matching top human rese…",
@@ -111,20 +118,11 @@
    "via": "Techmeme"
   },
   {
-   "title": "Elevated errors on claude.ai, Claude Code, and platform.claude.com",
-   "url": "https://status.claude.com/incidents/nn11wk485zfn",
-   "source": "Hacker News",
-   "published_at": "2026-11-13T10:18:13Z",
-   "text": "489 points and 389 comments on Hacker News.",
-   "points": 489,
-   "discussion": "https://news.ycombinator.com/item?id=50481187"
-  },
-  {
-   "title": "Operand, which offers AI-powered due diligence tools for PE firms, raised $31M across a seed and a…",
-   "url": "https://www.axios.com/pro/all-deals/2026/11/10/private-equity-due-diligence-ai-operand-31m",
-   "source": "Lucinda Shen / Axios",
-   "published_at": "2026-11-14T07:04:00Z",
-   "text": "Operand, which offers AI-powered due diligence tools for PE firms, raised $31M across a seed and a Series A led by Khosla Ventures at a $220M valuation. Operand, which uses AI to do due diligence for private equity firms, raised $31 million in seed and Series A funding, CEO Ram Gorthi tells Axios Pro exclusively.",
+   "title": "Cambridge, UK-based Tendrils, which is designing a CPU architecture with thousands of cores operati…",
+   "url": "https://tech.eu/2026/11/11/tendrils-compute-raises-30m-to-redo-the-cpu/",
+   "source": "John Reynolds / Tech.eu",
+   "published_at": "2026-11-14T05:56:53Z",
+   "text": "Cambridge, UK-based Tendrils, which is designing a CPU architecture with thousands of cores operating in parallel, raised $30M led by Benchmark",
    "via": "Techmeme"
   }
  ],
