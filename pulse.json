@@ -1,13 +1,13 @@
 {
  "schema": 1,
- "generated_at": "2026-11-14T14:29:26Z",
+ "generated_at": "2026-11-14T15:01:57Z",
  "items": [
   {
-   "title": "Sources: Nvidia's board has approached Arm CEO Rene Haas in its search for a potential successor to…",
-   "url": "https://www.ft.com/content/2a64f698-46dd-4178-a3f4-4c5f4c0a0926",
-   "source": "Michael Acton / Financial T…",
-   "published_at": "2026-11-13T17:04:48Z",
-   "text": "Sources: Nvidia's board has approached Arm CEO Rene Haas in its search for a potential successor to Jensen Huang; Haas worked at Nvidia more than a decade ago. Head of SoftBank-owned UK semiconductor group sounded out after Jensen Huang resigned over affairs",
+   "title": "Sources and messages: Jensen Huang misled several Nvidia leaders, including general counsel Tim Tet…",
+   "url": "https://www.reuters.com/world/china/ex-nvidia-ceo-misled-top-lawyer-affair-with-chinese-businesswoman-sources-say-2026-11-14/",
+   "source": "Reuters",
+   "published_at": "2026-11-14T01:04:14Z",
+   "text": "Sources and messages: Jensen Huang misled several Nvidia leaders, including general counsel Tim Teter, about the nature of his relationship with Alice Huang. Former Nvidia CEO Jensen Huang misled several of the company's leaders, including general counsel Tim Teter and chief marketing …",
    "via": "Techmeme"
   },
   {
@@ -17,7 +17,7 @@
    "published_at": "2026-11-13T22:10:12Z",
    "text": "Q: Could this be AI related? Mullin: We call it SI around here.",
    "author_name": "Acyn",
-   "likes": 8527,
+   "likes": 8557,
    "story": "Sources: the FAA outage occurred after an update to the private communications network that connects the ATC system caused the system to reboot and crash"
   },
   {
@@ -34,32 +34,8 @@
    "published_at": "2026-11-13T20:22:26Z",
    "text": "Anthropic reported a similar sudden and unusual jump in robotics capabilities with Fable 5.2. As the general intelligence of frontier models scales up, it is increasingly surpassing specialized training. This will ultimately generalize to every sphere of human ability.",
    "author_name": "Andrew Curran",
-   "likes": 1872,
+   "likes": 1896,
    "story": "OpenAI disbands its standalone robotics team, moving its staff to research and Applied units, saying models like GPT-6 Astra can be directly applied to robotics"
-  },
-  {
-   "title": "How Nvidia used a “scorched earth, adversarial attitude” targeting proponents of export controls in…",
-   "url": "https://www.semafor.com/article/11/13/2026/how-nvidias-jensen-huang-and-trump-jumped-the-guardrails",
-   "source": "Semafor",
-   "published_at": "2026-11-13T21:03:00Z",
-   "text": "How Nvidia used a “scorched earth, adversarial attitude” targeting proponents of export controls in DC, invoking Trump's name to get license approvals expedited. THE SCOOP — In January, the general counsel for what was then the world's most valuable company delivered …",
-   "via": "Techmeme"
-  },
-  {
-   "title": "Nvidia allegedly engineered scarcity by funding AI startups to buy its GPUs",
-   "url": "https://www.techpowerup.com/354814/nvidia-allegedly-engineered-scarcity-by-funding-ai-startups-to-buy-its-gpus",
-   "source": "Hacker News",
-   "published_at": "2026-11-14T02:52:59Z",
-   "text": "802 points and 475 comments on Hacker News.",
-   "points": 802,
-   "discussion": "https://news.ycombinator.com/item?id=50493251"
-  },
-  {
-   "title": "Anthropic is endorsing SB 53",
-   "url": "https://www.anthropic.com/news/anthropic-is-endorsing-sb-53",
-   "source": "Anthropic",
-   "published_at": "2026-11-13T22:37:05Z",
-   "text": "Anthropic is endorsing SB 53, the California bill that governs powerful AI systems built by frontier AI developers like Anthropic."
   },
   {
    "title": "AI's impact on math is a preview of what AI will do to AI research, with AI matching top human rese…",
@@ -70,20 +46,68 @@
    "via": "Techmeme"
   },
   {
+   "title": "The Claude Delusion",
+   "url": "https://www.netmeister.org/blog/claude-delusion.html",
+   "source": "Hacker News",
+   "published_at": "2026-11-14T13:36:17Z",
+   "text": "92 points and 67 comments on Hacker News.",
+   "points": 92,
+   "discussion": "https://news.ycombinator.com/item?id=50496921"
+  },
+  {
+   "title": "Anthropic is endorsing SB 53",
+   "url": "https://www.anthropic.com/news/anthropic-is-endorsing-sb-53",
+   "source": "Anthropic",
+   "published_at": "2026-11-13T22:37:05Z",
+   "text": "Anthropic is endorsing SB 53, the California bill that governs powerful AI systems built by frontier AI developers like Anthropic."
+  },
+  {
+   "title": "Charta Health, which offers AI-powered tools to automate medical chart review, billing, and coding…",
+   "url": "https://www.mobihealthnews.com/news/charta-health-raises-55m-launches-new-ai-coding-tools",
+   "source": "Jessica Hagen / MobiHealthN…",
+   "published_at": "2026-11-14T06:36:30Z",
+   "text": "Charta Health, which offers AI-powered tools to automate medical chart review, billing, and coding workflows, raised a $55M Series B led by Insight Partners. The round is the company's third in less than two years and brings its total funding to $85 million. — Global Investing",
+   "via": "Techmeme"
+  },
+  {
+   "title": "Nvidia allegedly engineered scarcity by funding AI startups to buy its GPUs",
+   "url": "https://www.techpowerup.com/354814/nvidia-allegedly-engineered-scarcity-by-funding-ai-startups-to-buy-its-gpus",
+   "source": "Hacker News",
+   "published_at": "2026-11-14T02:52:59Z",
+   "text": "824 points and 496 comments on Hacker News.",
+   "points": 824,
+   "discussion": "https://news.ycombinator.com/item?id=50493251"
+  },
+  {
+   "title": "Operand, which offers AI-powered due diligence tools for PE firms, raised $31M across a seed and a…",
+   "url": "https://www.axios.com/pro/all-deals/2026/11/10/private-equity-due-diligence-ai-operand-31m",
+   "source": "Lucinda Shen / Axios",
+   "published_at": "2026-11-14T07:04:00Z",
+   "text": "Operand, which offers AI-powered due diligence tools for PE firms, raised $31M across a seed and a Series A led by Khosla Ventures at a $220M valuation. Operand, which uses AI to do due diligence for private equity firms, raised $31 million in seed and Series A funding, CEO Ram Gorthi tells Axios Pro exclusively.",
+   "via": "Techmeme"
+  },
+  {
    "title": "Jonathan Blow – If AI solved coding, why is my software still the same? [video]",
    "url": "https://www.youtube.com/watch?v=IRK8h67ol7Q",
    "source": "Hacker News",
    "published_at": "2026-11-13T15:08:44Z",
-   "text": "376 points and 520 comments on Hacker News.",
-   "points": 376,
+   "text": "386 points and 542 comments on Hacker News.",
+   "points": 386,
    "discussion": "https://news.ycombinator.com/item?id=50484658"
   },
   {
-   "title": "OpenAI announces ChatGPT Wallet, which lets its dots AI agents make purchases on behalf of users, a…",
-   "url": "https://www.cnbc.com/2026/11/13/openai-chatgpt-wallet-dot-purchases.html",
-   "source": "Ashley Capoot / CNBC",
-   "published_at": "2026-11-13T15:36:57Z",
-   "text": "OpenAI announces ChatGPT Wallet, which lets its dots AI agents make purchases on behalf of users, available to ChatGPT Pro subscribers in the US who are over 18",
+   "title": "Understanding and addressing AI harms",
+   "url": "https://www.anthropic.com/news/our-approach-to-understanding-and-addressing-ai-harms",
+   "source": "Anthropic",
+   "published_at": "2026-11-13T22:37:05Z",
+   "text": "Anthropic's framework for identifying, classifying, and mitigating potential harms from AI systems to support responsible development."
+  },
+  {
+   "title": "WhiteMatter, which builds “guardian” AI agents to oversee file access, software use, decision makin…",
+   "url": "https://www.businessinsider.com/whitematter-startup-ai-agent-cybersecurity-funding-pitch-deck-2026-11",
+   "source": "Alice Tecotzky / Business I…",
+   "published_at": "2026-11-14T06:56:25Z",
+   "text": "WhiteMatter, which builds “guardian” AI agents to oversee file access, software use, decision making, and actions of existing AI agents, raised a $20M Series A",
    "via": "Techmeme"
   },
   {
@@ -96,35 +120,11 @@
    "discussion": "https://news.ycombinator.com/item?id=50481187"
   },
   {
-   "title": "Understanding and addressing AI harms",
-   "url": "https://www.anthropic.com/news/our-approach-to-understanding-and-addressing-ai-harms",
-   "source": "Anthropic",
-   "published_at": "2026-11-13T22:37:05Z",
-   "text": "Anthropic's framework for identifying, classifying, and mitigating potential harms from AI systems to support responsible development."
-  },
-  {
-   "title": "Charta Health, which offers AI-powered tools to automate medical chart review, billing, and coding…",
-   "url": "https://www.mobihealthnews.com/news/charta-health-raises-55m-launches-new-ai-coding-tools",
-   "source": "Jessica Hagen / MobiHealthN…",
-   "published_at": "2026-11-14T06:36:30Z",
-   "text": "Charta Health, which offers AI-powered tools to automate medical chart review, billing, and coding workflows, raised a $55M Series B led by Insight Partners. The round is the company's third in less than two years and brings its total funding to $85 million. — Global Investing",
-   "via": "Techmeme"
-  },
-  {
-   "title": "After 600 experiments, here's what I discovered about JEPA world models",
-   "url": "https://haddyalchaer.com/jepa",
-   "source": "Hacker News",
-   "published_at": "2026-11-13T17:55:28Z",
-   "text": "273 points and 45 comments on Hacker News.",
-   "points": 273,
-   "discussion": "https://news.ycombinator.com/item?id=50487185"
-  },
-  {
-   "title": "Operand, which offers AI-powered due diligence tools for PE firms, raised $31M across a seed and a…",
-   "url": "https://www.axios.com/pro/all-deals/2026/11/10/private-equity-due-diligence-ai-operand-31m",
-   "source": "Lucinda Shen / Axios",
-   "published_at": "2026-11-14T07:04:00Z",
-   "text": "Operand, which offers AI-powered due diligence tools for PE firms, raised $31M across a seed and a Series A led by Khosla Ventures at a $220M valuation. Operand, which uses AI to do due diligence for private equity firms, raised $31 million in seed and Series A funding, CEO Ram Gorthi tells Axios Pro exclusively.",
+   "title": "Cambridge, UK-based Tendrils, which is designing a CPU architecture with thousands of cores operati…",
+   "url": "https://tech.eu/2026/11/11/tendrils-compute-raises-30m-to-redo-the-cpu/",
+   "source": "John Reynolds / Tech.eu",
+   "published_at": "2026-11-14T05:56:53Z",
+   "text": "Cambridge, UK-based Tendrils, which is designing a CPU architecture with thousands of cores operating in parallel, raised $30M led by Benchmark",
    "via": "Techmeme"
   }
  ],
