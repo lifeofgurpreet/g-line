@@ -1,13 +1,13 @@
 {
  "schema": 1,
- "generated_at": "2026-11-13T23:54:41Z",
+ "generated_at": "2026-11-14T00:27:24Z",
  "items": [
   {
-   "title": "Sources: Nvidia's board has approached Arm CEO Rene Haas in its search for a potential successor to…",
-   "url": "https://www.ft.com/content/2a64f698-46dd-4178-a3f4-4c5f4c0a0926",
-   "source": "Michael Acton / Financial T…",
-   "published_at": "2026-11-13T17:04:48Z",
-   "text": "Sources: Nvidia's board has approached Arm CEO Rene Haas in its search for a potential successor to Jensen Huang; Haas worked at Nvidia more than a decade ago. Head of SoftBank-owned UK semiconductor group sounded out after Jensen Huang resigned over affairs",
+   "title": "The FAA announced on November 10 that it has expanded the use of SMART, an AI tool for advising air…",
+   "url": "https://arstechnica.com/ai/2026/11/faa-expands-ai-advice-to-manage-air-traffic-congestion-across-entire-us-airspace/",
+   "source": "Jeremy Hsu / Ars Technica",
+   "published_at": "2026-11-13T22:11:19Z",
+   "text": "The FAA announced on November 10 that it has expanded the use of SMART, an AI tool for advising air traffic controllers to manage congestion, across the US. The US government has expanded the use of an AI tool for advising air traffic controllers to assist in managing air traffic across the entire national airspace system.",
    "via": "Techmeme"
   },
   {
@@ -17,7 +17,7 @@
    "published_at": "2026-11-13T22:10:12Z",
    "text": "Q: Could this be AI related? Mullin: We call it SI around here.",
    "author_name": "Acyn",
-   "likes": 5787,
+   "likes": 6361,
    "story": "The FAA issues a nationwide ground stop for all US airports following “communication issues impacting multiple Air Route Traffic Control Centers”"
   },
   {
@@ -34,15 +34,15 @@
    "published_at": "2026-11-13T09:01:34Z",
    "text": "🚨 Another major scandal is coming out of NVIDIA. And this one has nothing to do with Jensen Huang's affairs. According to a Wall Street Journal report, Nvidia was offering billions in financial guarantees to AI companies that could not afford its chips, so they could keep…",
    "author_name": "Bull Theory",
-   "likes": 11020,
+   "likes": 11072,
    "story": "CXMT almost tripling RAM production from 2025 to 2028"
   },
   {
-   "title": "The FAA announced on November 10 that it has expanded the use of SMART, an AI tool for advising air…",
-   "url": "https://arstechnica.com/ai/2026/11/faa-expands-ai-advice-to-manage-air-traffic-congestion-across-entire-us-airspace/",
-   "source": "Jeremy Hsu / Ars Technica",
-   "published_at": "2026-11-13T22:11:19Z",
-   "text": "The FAA announced on November 10 that it has expanded the use of SMART, an AI tool for advising air traffic controllers to manage congestion, across the US. The US government has expanded the use of an AI tool for advising air traffic controllers to assist in managing air traffic across the entire national airspace system.",
+   "title": "Sources: Nvidia's board has approached Arm CEO Rene Haas in its search for a potential successor to…",
+   "url": "https://www.ft.com/content/2a64f698-46dd-4178-a3f4-4c5f4c0a0926",
+   "source": "Michael Acton / Financial T…",
+   "published_at": "2026-11-13T17:04:48Z",
+   "text": "Sources: Nvidia's board has approached Arm CEO Rene Haas in its search for a potential successor to Jensen Huang; Haas worked at Nvidia more than a decade ago. Head of SoftBank-owned UK semiconductor group sounded out after Jensen Huang resigned over affairs",
    "via": "Techmeme"
   },
   {
@@ -50,8 +50,8 @@
    "url": "https://www.freightwaves.com/news/11-4-million-in-nvidia-hardware-vanishes-during-shipment-from-california-to-texas",
    "source": "Hacker News",
    "published_at": "2026-11-13T18:40:44Z",
-   "text": "265 points and 144 comments on Hacker News.",
-   "points": 265,
+   "text": "275 points and 152 comments on Hacker News.",
+   "points": 275,
    "discussion": "https://news.ycombinator.com/item?id=50487864"
   },
   {
@@ -61,7 +61,7 @@
    "published_at": "2026-11-13T20:22:26Z",
    "text": "Anthropic reported a similar sudden and unusual jump in robotics capabilities with Fable 5.2. As the general intelligence of frontier models scales up, it is increasingly surpassing specialized training. This will ultimately generalize to every sphere of human ability.",
    "author_name": "Andrew Curran",
-   "likes": 996,
+   "likes": 1051,
    "story": "OpenAI disbands its standalone robotics team, moving its staff to research and Applied units, saying models like GPT-6 Astra can be directly applied to robotics"
   },
   {
@@ -72,11 +72,11 @@
    "text": "Anthropic is endorsing SB 53, the California bill that governs powerful AI systems built by frontier AI developers like Anthropic."
   },
   {
-   "title": "Jensen Huang's biographer says Nvidia had a culture of omertà and deference toward Huang, who was q…",
-   "url": "https://www.nytimes.com/2026/11/12/opinion/jensen-huang-nvidia.html?unlocked_article_code=1.P1E.6bW-.jsvT3PNHnXvZ&smid=nytcore-ios-share",
-   "source": "Stephen Witt / New York Tim…",
-   "published_at": "2026-11-13T14:42:11Z",
-   "text": "Jensen Huang's biographer says Nvidia had a culture of omertà and deference toward Huang, who was quite arrogant, that enabled him to “be his worst self”. We live in the age of artificial intelligence — an age that Jensen Huang, perhaps more than any other single person, has made possible.",
+   "title": "OpenAI announces ChatGPT Wallet, which lets its dots AI agents make purchases on behalf of users, a…",
+   "url": "https://www.cnbc.com/2026/11/13/openai-chatgpt-wallet-dot-purchases.html",
+   "source": "Ashley Capoot / CNBC",
+   "published_at": "2026-11-13T15:36:57Z",
+   "text": "OpenAI announces ChatGPT Wallet, which lets its dots AI agents make purchases on behalf of users, available to ChatGPT Pro subscribers in the US who are over 18. OpenAI on Friday announced ChatGPT Wallet, a new payment feature that enables its “dots” artificial intelligence agents to make purchases on behalf of users.",
    "via": "Techmeme"
   },
   {
@@ -86,17 +86,17 @@
    "published_at": "2026-11-13T13:33:16Z",
    "text": "holy crap -- knives are out for Lutnick over Nvidia",
    "author_name": "Aaron Rupar",
-   "likes": 8368,
+   "likes": 8448,
    "story": "Scott Bessent says the departments of Treasury, Defense, and State were in favor of putting Megaspeed on the entity list for months, but Commerce is in charge"
   },
   {
-   "title": "No AI Slop: A Manifesto",
-   "url": "https://www.slopmanifesto.com/",
+   "title": "AI unlocks Gödel's notebooks, said to contain hundreds of proved theorems",
+   "url": "https://www.theguardian.com/science/2026/nov/13/kurt-godel-notebooks-ai-helps-unlock-hidden-discoveries-man-who-transformed-maths",
    "source": "Hacker News",
-   "published_at": "2026-11-13T19:51:56Z",
-   "text": "170 points and 96 comments on Hacker News.",
-   "points": 170,
-   "discussion": "https://news.ycombinator.com/item?id=50488769"
+   "published_at": "2026-11-13T17:30:10Z",
+   "text": "314 points and 90 comments on Hacker News.",
+   "points": 314,
+   "discussion": "https://news.ycombinator.com/item?id=50486748"
   },
   {
    "title": "Nvidia is nothing without its people. It now appears the national security allegations may be as fa…",
@@ -105,7 +105,7 @@
    "published_at": "2026-11-13T11:30:46Z",
    "text": "Nvidia is nothing without its people. It now appears the national security allegations may be as fake as Russiagate. If so, Nvidia employees, shareholders, partners, and customers have immense leverage. Whether publicly or privately, collectively or individually, they can…",
    "author_name": "Balaji",
-   "likes": 6553,
+   "likes": 6603,
    "story": "Sources: US officials disagree on whether China had Alice Huang spy on Jensen Huang; some at the ODNI and the CIA say the intelligence to date doesn't prove it"
   },
   {
@@ -115,7 +115,7 @@
    "published_at": "2026-11-13T01:48:15Z",
    "text": "Jensen Huang in his last hours as Nvidia CEO, per Bloomberg: > The board met late into the night & left him no choice but to resign > > He looked broken, his take-charge style gone > Started saying things like \"whatever\" & \"I don't care\" > He has since called himself a \"piece of…",
    "author_name": "Wall St Engine",
-   "likes": 7714,
+   "likes": 7718,
    "story": "Source: at an August 2026 finance meeting, Jensen Huang interrupted Colette Kress' presentation, calling her “a deer in the headlights” and a “reporting CFO”"
   },
   {
@@ -125,15 +125,15 @@
    "published_at": "2026-11-12T17:23:51Z",
    "text": "🚨MUSE FEATURE ALERT!!!🚨 lots of you have been asking for this one… muse can make phone calls for you! ☎️📞📲 let muse take care of all those calls you don’t want to make. insurance? cable? DMV? dinner res? not your problem anymore. out now to paid subs in the US 🇺🇸 https",
    "author_name": "Alexandr Wang",
-   "likes": 1410,
+   "likes": 1412,
    "story": "Meta launches an outbound calling feature for Muse, such as to businesses, available for paid US subscribers; Gemini and startup Instinct offer a similar option"
   },
   {
-   "title": "OpenAI announces ChatGPT Wallet, which lets its dots AI agents make purchases on behalf of users, a…",
-   "url": "https://www.cnbc.com/2026/11/13/openai-chatgpt-wallet-dot-purchases.html",
-   "source": "Ashley Capoot / CNBC",
-   "published_at": "2026-11-13T15:36:57Z",
-   "text": "OpenAI announces ChatGPT Wallet, which lets its dots AI agents make purchases on behalf of users, available to ChatGPT Pro subscribers in the US who are over 18. OpenAI on Friday announced ChatGPT Wallet, a new payment feature that enables its “dots” artificial intelligence agents to make purchases on behalf of users.",
+   "title": "Jensen Huang's biographer says Nvidia had a culture of omertà and deference toward Huang, who was q…",
+   "url": "https://www.nytimes.com/2026/11/12/opinion/jensen-huang-nvidia.html?unlocked_article_code=1.P1E.6bW-.jsvT3PNHnXvZ&smid=nytcore-ios-share",
+   "source": "Stephen Witt / New York Tim…",
+   "published_at": "2026-11-13T14:42:11Z",
+   "text": "Jensen Huang's biographer says Nvidia had a culture of omertà and deference toward Huang, who was quite arrogant, that enabled him to “be his worst self”. We live in the age of artificial intelligence — an age that Jensen Huang, perhaps more than any other single person, has made possible.",
    "via": "Techmeme"
   }
  ],
