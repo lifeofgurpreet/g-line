@@ -1,13 +1,13 @@
 {
  "schema": 1,
- "generated_at": "2026-11-14T18:48:18Z",
+ "generated_at": "2026-11-14T19:19:34Z",
  "items": [
   {
-   "title": "Sources and messages: Jensen Huang misled several Nvidia leaders, including general counsel Tim Tet…",
-   "url": "https://www.reuters.com/world/china/ex-nvidia-ceo-misled-top-lawyer-affair-with-chinese-businesswoman-sources-say-2026-11-14/",
-   "source": "Reuters",
-   "published_at": "2026-11-14T01:04:14Z",
-   "text": "Sources and messages: Jensen Huang misled several Nvidia leaders, including general counsel Tim Teter, about the nature of his relationship with Alice Huang. Former Nvidia CEO Jensen Huang misled several of the company's leaders, including general counsel Tim Teter and chief marketing …",
+   "title": "A petition to reinstate Jensen Huang as Nvidia CEO tops 100K signatures, including Elon Musk, Tim S…",
+   "url": "https://www.businessinsider.com/petition-reinstate-jensen-huang-nvidia-elon-musk-2026-11",
+   "source": "Lauren Edmonds / Business I…",
+   "published_at": "2026-11-14T19:02:30Z",
+   "text": "A petition to reinstate Jensen Huang as Nvidia CEO tops 100K signatures, including Elon Musk, Tim Sweeney, and Garry Tan; organizers say 5K+ Nvidia staff signed. Some people aren't ready to let former CEO Jensen Huang go. — A petition to reinstate Huang as Nvidia's CEO has some 97,000 signatures …",
    "via": "Techmeme"
   },
   {
@@ -17,7 +17,7 @@
    "published_at": "2026-11-14T08:34:06Z",
    "text": "THIS IS WHY THEY TOOK DOWN JENSEN HUNAG Four months ago, Jensen Huang revealed he was about to BREAK the closed-model monopoly over AI and completely reshape the AI industry. He made a direct THREAT to America’s biggest AI companies. He revealed Nvidia was working on a…",
    "author_name": "ADAM",
-   "likes": 15620,
+   "likes": 16407,
    "story": "Jensen Huang's resignation is a setback for US open models, as his funding gave open-source developers time to find their footing and will very likely dry up"
   },
   {
@@ -34,15 +34,15 @@
    "published_at": "2026-11-13T22:10:12Z",
    "text": "Q: Could this be AI related? Mullin: We call it SI around here.",
    "author_name": "Acyn",
-   "likes": 8688,
+   "likes": 8706,
    "story": "The FAA lifts its over four-hour nationwide ground stop for US airports caused by “communication issues affecting multiple Air Route Traffic Control Centers”"
   },
   {
-   "title": "Databento, which offers market data APIs and says it has contracts with five of the six largest fro…",
-   "url": "https://fintech.global/2026/11/13/databento-hits-1-1bn-valuation-with-100m-series-c/",
-   "source": "FinTech Global",
-   "published_at": "2026-11-14T18:36:00Z",
-   "text": "Databento, which offers market data APIs and says it has contracts with five of the six largest frontier AI labs, raised a $100M Series C at a $1.1B valuation. Databento, a platform supplying market data to the modern financial industry, has secured $100m in a Series C round that values the business at $1.1bn.",
+   "title": "Sources and messages: Jensen Huang misled several Nvidia leaders, including general counsel Tim Tet…",
+   "url": "https://www.reuters.com/world/china/ex-nvidia-ceo-misled-top-lawyer-affair-with-chinese-businesswoman-sources-say-2026-11-14/",
+   "source": "Reuters",
+   "published_at": "2026-11-14T01:04:14Z",
+   "text": "Sources and messages: Jensen Huang misled several Nvidia leaders, including general counsel Tim Teter, about the nature of his relationship with Alice Huang. Former Nvidia CEO Jensen Huang misled several of the company's leaders, including general counsel Tim Teter and chief marketing …",
    "via": "Techmeme"
   },
   {
@@ -50,8 +50,8 @@
    "url": "https://www.netmeister.org/blog/claude-delusion.html",
    "source": "Hacker News",
    "published_at": "2026-11-14T13:36:17Z",
-   "text": "130 points and 171 comments on Hacker News.",
-   "points": 130,
+   "text": "132 points and 175 comments on Hacker News.",
+   "points": 132,
    "discussion": "https://news.ycombinator.com/item?id=50496921"
   },
   {
@@ -62,6 +62,23 @@
    "text": "Anthropic is endorsing SB 53, the California bill that governs powerful AI systems built by frontier AI developers like Anthropic."
   },
   {
+   "title": "Databento, which offers market data APIs and says it has contracts with five of the six largest fro…",
+   "url": "https://fintech.global/2026/11/13/databento-hits-1-1bn-valuation-with-100m-series-c/",
+   "source": "FinTech Global",
+   "published_at": "2026-11-14T18:36:00Z",
+   "text": "Databento, which offers market data APIs and says it has contracts with five of the six largest frontier AI labs, raised a $100M Series C at a $1.1B valuation. Databento, a platform supplying market data to the modern financial industry, has secured $100m in a Series C round that values the business at $1.1bn.",
+   "via": "Techmeme"
+  },
+  {
+   "title": "Serving GLM-5.3 at 607.8 tok/s across two Nvidia DGX stations with vLLM",
+   "url": "https://developer.nvidia.com/blog/when-one-gpu-isnt-enough-serving-glm-5-3-across-two-nvidia-dgx-stations-with-vllm/",
+   "source": "Hacker News",
+   "published_at": "2026-11-14T14:09:25Z",
+   "text": "92 points and 48 comments on Hacker News.",
+   "points": 92,
+   "discussion": "https://news.ycombinator.com/item?id=50497155"
+  },
+  {
    "title": "Charta Health, which offers AI-powered tools to automate medical chart review, billing, and coding…",
    "url": "https://www.mobihealthnews.com/news/charta-health-raises-55m-launches-new-ai-coding-tools",
    "source": "Jessica Hagen / MobiHealthN…",
@@ -70,29 +87,12 @@
    "via": "Techmeme"
   },
   {
-   "title": "Serving GLM-5.3 at 607.8 tok/s across two Nvidia DGX stations with vLLM",
-   "url": "https://developer.nvidia.com/blog/when-one-gpu-isnt-enough-serving-glm-5-3-across-two-nvidia-dgx-stations-with-vllm/",
-   "source": "Hacker News",
-   "published_at": "2026-11-14T14:09:25Z",
-   "text": "86 points and 46 comments on Hacker News.",
-   "points": 86,
-   "discussion": "https://news.ycombinator.com/item?id=50497155"
-  },
-  {
-   "title": "WhiteMatter, which builds “guardian” AI agents to oversee file access, software use, decision makin…",
-   "url": "https://www.businessinsider.com/whitematter-startup-ai-agent-cybersecurity-funding-pitch-deck-2026-11",
-   "source": "Alice Tecotzky / Business I…",
-   "published_at": "2026-11-14T06:56:25Z",
-   "text": "WhiteMatter, which builds “guardian” AI agents to oversee file access, software use, decision making, and actions of existing AI agents, raised a $20M Series A. A startup using AI agents to keep rogue AI in line has raised $20 million. — WhiteMatter, founded in 2024 …",
-   "via": "Techmeme"
-  },
-  {
    "title": "Elevated errors on claude.ai, Claude Code, and platform.claude.com",
    "url": "https://status.claude.com/incidents/nn11wk485zfn",
    "source": "Hacker News",
    "published_at": "2026-11-13T10:18:13Z",
-   "text": "489 points and 390 comments on Hacker News.",
-   "points": 489,
+   "text": "490 points and 390 comments on Hacker News.",
+   "points": 490,
    "discussion": "https://news.ycombinator.com/item?id=50481187"
   },
   {
@@ -120,11 +120,11 @@
    "discussion": "https://news.ycombinator.com/item?id=50492141"
   },
   {
-   "title": "AI's impact on math is a preview of what AI will do to AI research, with AI matching top human rese…",
-   "url": "https://www.dwarkesh.com/p/rsi",
-   "source": "Dwarkesh Patel / Dwarkesh P…",
-   "published_at": "2026-11-14T01:56:49Z",
-   "text": "AI's impact on math is a preview of what AI will do to AI research, with AI matching top human researchers potentially just a couple of years away",
+   "title": "WhiteMatter, which builds “guardian” AI agents to oversee file access, software use, decision makin…",
+   "url": "https://www.businessinsider.com/whitematter-startup-ai-agent-cybersecurity-funding-pitch-deck-2026-11",
+   "source": "Alice Tecotzky / Business I…",
+   "published_at": "2026-11-14T06:56:25Z",
+   "text": "WhiteMatter, which builds “guardian” AI agents to oversee file access, software use, decision making, and actions of existing AI agents, raised a $20M Series A. A startup using AI agents to keep rogue AI in line has raised $20 million. — WhiteMatter, founded in 2024 …",
    "via": "Techmeme"
   }
  ],
