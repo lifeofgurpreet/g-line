@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-14T00:27:24Z",
+ "generated_at": "2026-11-14T00:59:39Z",
  "items": [
   {
    "title": "The FAA announced on November 10 that it has expanded the use of SMART, an AI tool for advising air…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-13T22:10:12Z",
    "text": "Q: Could this be AI related? Mullin: We call it SI around here.",
    "author_name": "Acyn",
-   "likes": 6361,
+   "likes": 6775,
    "story": "The FAA issues a nationwide ground stop for all US airports following “communication issues impacting multiple Air Route Traffic Control Centers”"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-11-13T09:01:34Z",
    "text": "🚨 Another major scandal is coming out of NVIDIA. And this one has nothing to do with Jensen Huang's affairs. According to a Wall Street Journal report, Nvidia was offering billions in financial guarantees to AI companies that could not afford its chips, so they could keep…",
    "author_name": "Bull Theory",
-   "likes": 11072,
+   "likes": 11129,
    "story": "CXMT almost tripling RAM production from 2025 to 2028"
   },
   {
@@ -50,8 +50,8 @@
    "url": "https://www.freightwaves.com/news/11-4-million-in-nvidia-hardware-vanishes-during-shipment-from-california-to-texas",
    "source": "Hacker News",
    "published_at": "2026-11-13T18:40:44Z",
-   "text": "275 points and 152 comments on Hacker News.",
-   "points": 275,
+   "text": "279 points and 158 comments on Hacker News.",
+   "points": 279,
    "discussion": "https://news.ycombinator.com/item?id=50487864"
   },
   {
@@ -61,7 +61,7 @@
    "published_at": "2026-11-13T20:22:26Z",
    "text": "Anthropic reported a similar sudden and unusual jump in robotics capabilities with Fable 5.2. As the general intelligence of frontier models scales up, it is increasingly surpassing specialized training. This will ultimately generalize to every sphere of human ability.",
    "author_name": "Andrew Curran",
-   "likes": 1051,
+   "likes": 1110,
    "story": "OpenAI disbands its standalone robotics team, moving its staff to research and Applied units, saying models like GPT-6 Astra can be directly applied to robotics"
   },
   {
@@ -86,7 +86,7 @@
    "published_at": "2026-11-13T13:33:16Z",
    "text": "holy crap -- knives are out for Lutnick over Nvidia",
    "author_name": "Aaron Rupar",
-   "likes": 8448,
+   "likes": 8530,
    "story": "Scott Bessent says the departments of Treasury, Defense, and State were in favor of putting Megaspeed on the entity list for months, but Commerce is in charge"
   },
   {
@@ -94,8 +94,8 @@
    "url": "https://www.theguardian.com/science/2026/nov/13/kurt-godel-notebooks-ai-helps-unlock-hidden-discoveries-man-who-transformed-maths",
    "source": "Hacker News",
    "published_at": "2026-11-13T17:30:10Z",
-   "text": "314 points and 90 comments on Hacker News.",
-   "points": 314,
+   "text": "319 points and 90 comments on Hacker News.",
+   "points": 319,
    "discussion": "https://news.ycombinator.com/item?id=50486748"
   },
   {
@@ -105,18 +105,8 @@
    "published_at": "2026-11-13T11:30:46Z",
    "text": "Nvidia is nothing without its people. It now appears the national security allegations may be as fake as Russiagate. If so, Nvidia employees, shareholders, partners, and customers have immense leverage. Whether publicly or privately, collectively or individually, they can…",
    "author_name": "Balaji",
-   "likes": 6603,
+   "likes": 6660,
    "story": "Sources: US officials disagree on whether China had Alice Huang spy on Jensen Huang; some at the ODNI and the CIA say the intelligence to date doesn't prove it"
-  },
-  {
-   "title": "Jensen Huang in his last hours as Nvidia CEO, per Bloomberg: > The board met late into the night &…",
-   "url": "https://x.com/wallstengine/status/2121057521544958152",
-   "source": "𝕏 @wallstengine",
-   "published_at": "2026-11-13T01:48:15Z",
-   "text": "Jensen Huang in his last hours as Nvidia CEO, per Bloomberg: > The board met late into the night & left him no choice but to resign > > He looked broken, his take-charge style gone > Started saying things like \"whatever\" & \"I don't care\" > He has since called himself a \"piece of…",
-   "author_name": "Wall St Engine",
-   "likes": 7718,
-   "story": "Source: at an August 2026 finance meeting, Jensen Huang interrupted Colette Kress' presentation, calling her “a deer in the headlights” and a “reporting CFO”"
   },
   {
    "title": "🚨MUSE FEATURE ALERT!!!🚨 lots of you have been asking for this one… muse can make phone calls for yo…",
@@ -135,6 +125,15 @@
    "published_at": "2026-11-13T14:42:11Z",
    "text": "Jensen Huang's biographer says Nvidia had a culture of omertà and deference toward Huang, who was quite arrogant, that enabled him to “be his worst self”. We live in the age of artificial intelligence — an age that Jensen Huang, perhaps more than any other single person, has made possible.",
    "via": "Techmeme"
+  },
+  {
+   "title": "After 600 experiments, here's what I discovered about JEPA world models",
+   "url": "https://haddyalchaer.com/jepa",
+   "source": "Hacker News",
+   "published_at": "2026-11-13T17:55:28Z",
+   "text": "209 points and 35 comments on Hacker News.",
+   "points": 209,
+   "discussion": "https://news.ycombinator.com/item?id=50487185"
   }
  ],
  "sources": "curated, Techmeme, X (found via Techmeme, Reddit, the Internet Archive), Claude Code releases, Anthropic, Hacker News, Simon Willison"
