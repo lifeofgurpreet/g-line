@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-14T17:42:40Z",
+ "generated_at": "2026-11-14T18:15:01Z",
  "items": [
   {
    "title": "Sources and messages: Jensen Huang misled several Nvidia leaders, including general counsel Tim Tet…",
@@ -11,14 +11,14 @@
    "via": "Techmeme"
   },
   {
-   "title": "Q: Could this be AI related? Mullin: We call it SI around here.",
-   "url": "https://x.com/Acyn/status/2121365035268386914",
-   "source": "𝕏 @Acyn",
-   "published_at": "2026-11-13T22:10:12Z",
-   "text": "Q: Could this be AI related? Mullin: We call it SI around here.",
-   "author_name": "Acyn",
-   "likes": 8661,
-   "story": "The FAA lifts its over four-hour nationwide ground stop for US airports caused by “communication issues affecting multiple Air Route Traffic Control Centers”"
+   "title": "THIS IS WHY THEY TOOK DOWN JENSEN HUNAG Four months ago, Jensen Huang revealed he was about to BREA…",
+   "url": "https://x.com/adamemedia/status/2121522045829726718",
+   "source": "𝕏 @adamemedia",
+   "published_at": "2026-11-14T08:34:06Z",
+   "text": "THIS IS WHY THEY TOOK DOWN JENSEN HUNAG Four months ago, Jensen Huang revealed he was about to BREAK the closed-model monopoly over AI and completely reshape the AI industry. He made a direct THREAT to America’s biggest AI companies. He revealed Nvidia was working on a…",
+   "author_name": "ADAM",
+   "likes": 14753,
+   "story": "Jensen Huang's resignation is a setback for US open models, as his funding gave open-source developers time to find their footing and will very likely dry up"
   },
   {
    "title": "Claude Code 2.1.325 released",
@@ -26,6 +26,16 @@
    "source": "Claude Code releases",
    "published_at": "2026-11-13T20:40:01Z",
    "text": "Fixed a security issue in how zstd-compressed responses are decoded · Added a spinner tip in VS Code and similar integrated terminals about re-running a notebook cell, shown once Claude has read or edited a Jupyter notebook · Added a line under the error shown when your organization's policy blocks a request, saying how to continue: run /rewind and change the message, or run /clear · Added a note for Claude when a sandboxed git checkout, git stash or autostash pull cannot update protected files such as those in .claude"
+  },
+  {
+   "title": "Q: Could this be AI related? Mullin: We call it SI around here.",
+   "url": "https://x.com/Acyn/status/2121365035268386914",
+   "source": "𝕏 @Acyn",
+   "published_at": "2026-11-13T22:10:12Z",
+   "text": "Q: Could this be AI related? Mullin: We call it SI around here.",
+   "author_name": "Acyn",
+   "likes": 8678,
+   "story": "The FAA lifts its over four-hour nationwide ground stop for US airports caused by “communication issues affecting multiple Air Route Traffic Control Centers”"
   },
   {
    "title": "Charta Health, which offers AI-powered tools to automate medical chart review, billing, and coding…",
@@ -40,8 +50,8 @@
    "url": "https://www.techpowerup.com/354814/nvidia-allegedly-engineered-scarcity-by-funding-ai-startups-to-buy-its-gpus",
    "source": "Hacker News",
    "published_at": "2026-11-14T02:52:59Z",
-   "text": "941 points and 574 comments on Hacker News.",
-   "points": 941,
+   "text": "957 points and 578 comments on Hacker News.",
+   "points": 957,
    "discussion": "https://news.ycombinator.com/item?id=50493251"
   },
   {
@@ -64,8 +74,8 @@
    "url": "https://www.netmeister.org/blog/claude-delusion.html",
    "source": "Hacker News",
    "published_at": "2026-11-14T13:36:17Z",
-   "text": "125 points and 158 comments on Hacker News.",
-   "points": 125,
+   "text": "127 points and 163 comments on Hacker News.",
+   "points": 127,
    "discussion": "https://news.ycombinator.com/item?id=50496921"
   },
   {
@@ -81,8 +91,8 @@
    "url": "https://developer.nvidia.com/blog/when-one-gpu-isnt-enough-serving-glm-5-3-across-two-nvidia-dgx-stations-with-vllm/",
    "source": "Hacker News",
    "published_at": "2026-11-14T14:09:25Z",
-   "text": "78 points and 38 comments on Hacker News.",
-   "points": 78,
+   "text": "85 points and 44 comments on Hacker News.",
+   "points": 85,
    "discussion": "https://news.ycombinator.com/item?id=50497155"
   },
   {
@@ -108,14 +118,6 @@
    "text": "489 points and 390 comments on Hacker News.",
    "points": 489,
    "discussion": "https://news.ycombinator.com/item?id=50481187"
-  },
-  {
-   "title": "Cambridge, UK-based Tendrils, which is designing a CPU architecture with thousands of cores operati…",
-   "url": "https://tech.eu/2026/11/11/tendrils-compute-raises-30m-to-redo-the-cpu/",
-   "source": "John Reynolds / Tech.eu",
-   "published_at": "2026-11-14T05:56:53Z",
-   "text": "Cambridge, UK-based Tendrils, which is designing a CPU architecture with thousands of cores operating in parallel, raised $30M led by Benchmark. Tendrils Compute is one of several UK chip startups which investors are backing. — A UK startup developing a radically different type …",
-   "via": "Techmeme"
   },
   {
    "title": "Dario Amodei says figuring out how much computing is needed in a year or two is Anthropic's “deepes…",
