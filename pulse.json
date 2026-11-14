@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-14T12:19:07Z",
+ "generated_at": "2026-11-14T12:51:27Z",
  "items": [
   {
    "title": "Sources: Nvidia's board has approached Arm CEO Rene Haas in its search for a potential successor to…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-13T22:10:12Z",
    "text": "Q: Could this be AI related? Mullin: We call it SI around here.",
    "author_name": "Acyn",
-   "likes": 8387,
+   "likes": 8414,
    "story": "Sources: the FAA outage occurred after an update to the private communications network that connects the ATC system caused the system to reboot and crash"
   },
   {
@@ -28,14 +28,14 @@
    "text": "Fixed a security issue in how zstd-compressed responses are decoded · Added a spinner tip in VS Code and similar integrated terminals about re-running a notebook cell, shown once Claude has read or edited a Jupyter notebook · Added a line under the error shown when your organization's policy blocks a request, saying how to continue: run /rewind and change the message, or run /clear · Added a note for Claude when a sandboxed git checkout, git stash or autostash pull cannot update protected files such as those in .claude"
   },
   {
-   "title": "holy crap -- knives are out for Lutnick over Nvidia",
-   "url": "https://x.com/atrupar/status/2121234944273916341",
-   "source": "𝕏 @atrupar",
-   "published_at": "2026-11-13T13:33:16Z",
-   "text": "holy crap -- knives are out for Lutnick over Nvidia",
-   "author_name": "Aaron Rupar",
-   "likes": 8800,
-   "story": "Scott Bessent says the departments of Treasury, Defense, and State were in favor of putting Megaspeed on the entity list for months, but Commerce is in charge"
+   "title": "Anthropic reported a similar sudden and unusual jump in robotics capabilities with Fable 5.2. As th…",
+   "url": "https://x.com/AndrewCurran_/status/2121337915087433772",
+   "source": "𝕏 @AndrewCurran_",
+   "published_at": "2026-11-13T20:22:26Z",
+   "text": "Anthropic reported a similar sudden and unusual jump in robotics capabilities with Fable 5.2. As the general intelligence of frontier models scales up, it is increasingly surpassing specialized training. This will ultimately generalize to every sphere of human ability.",
+   "author_name": "Andrew Curran",
+   "likes": 1776,
+   "story": "OpenAI disbands its standalone robotics team, moving its staff to research and Applied units, saying models like GPT-6 Astra can be directly applied to robotics"
   },
   {
    "title": "How Nvidia used a “scorched earth, adversarial attitude” targeting proponents of export controls in…",
@@ -50,19 +50,9 @@
    "url": "https://www.techpowerup.com/354814/nvidia-allegedly-engineered-scarcity-by-funding-ai-startups-to-buy-its-gpus",
    "source": "Hacker News",
    "published_at": "2026-11-14T02:52:59Z",
-   "text": "675 points and 390 comments on Hacker News.",
-   "points": 675,
+   "text": "716 points and 413 comments on Hacker News.",
+   "points": 716,
    "discussion": "https://news.ycombinator.com/item?id=50493251"
-  },
-  {
-   "title": "Anthropic reported a similar sudden and unusual jump in robotics capabilities with Fable 5.2. As th…",
-   "url": "https://x.com/AndrewCurran_/status/2121337915087433772",
-   "source": "𝕏 @AndrewCurran_",
-   "published_at": "2026-11-13T20:22:26Z",
-   "text": "Anthropic reported a similar sudden and unusual jump in robotics capabilities with Fable 5.2. As the general intelligence of frontier models scales up, it is increasingly surpassing specialized training. This will ultimately generalize to every sphere of human ability.",
-   "author_name": "Andrew Curran",
-   "likes": 1754,
-   "story": "OpenAI disbands its standalone robotics team, moving its staff to research and Applied units, saying models like GPT-6 Astra can be directly applied to robotics"
   },
   {
    "title": "Anthropic is endorsing SB 53",
@@ -84,8 +74,8 @@
    "url": "https://status.claude.com/incidents/nn11wk485zfn",
    "source": "Hacker News",
    "published_at": "2026-11-13T10:18:13Z",
-   "text": "488 points and 385 comments on Hacker News.",
-   "points": 488,
+   "text": "489 points and 387 comments on Hacker News.",
+   "points": 489,
    "discussion": "https://news.ycombinator.com/item?id=50481187"
   },
   {
@@ -97,13 +87,13 @@
    "via": "Techmeme"
   },
   {
-   "title": "After 600 experiments, here's what I discovered about JEPA world models",
-   "url": "https://haddyalchaer.com/jepa",
+   "title": "Jonathan Blow – If AI solved coding, why is my software still the same? [video]",
+   "url": "https://www.youtube.com/watch?v=IRK8h67ol7Q",
    "source": "Hacker News",
-   "published_at": "2026-11-13T17:55:28Z",
-   "text": "268 points and 45 comments on Hacker News.",
-   "points": 268,
-   "discussion": "https://news.ycombinator.com/item?id=50487185"
+   "published_at": "2026-11-13T15:08:44Z",
+   "text": "341 points and 459 comments on Hacker News.",
+   "points": 341,
+   "discussion": "https://news.ycombinator.com/item?id=50484658"
   },
   {
    "title": "Understanding and addressing AI harms",
@@ -113,21 +103,29 @@
    "text": "Anthropic's framework for identifying, classifying, and mitigating potential harms from AI systems to support responsible development."
   },
   {
-   "title": "WhiteMatter, which builds “guardian” AI agents to oversee file access, software use, decision makin…",
-   "url": "https://www.businessinsider.com/whitematter-startup-ai-agent-cybersecurity-funding-pitch-deck-2026-11",
-   "source": "Alice Tecotzky / Business I…",
-   "published_at": "2026-11-14T06:56:25Z",
-   "text": "WhiteMatter, which builds “guardian” AI agents to oversee file access, software use, decision making, and actions of existing AI agents, raised a $20M Series A. A startup using AI agents to keep rogue AI in line has raised $20 million. — WhiteMatter, founded in 2024 …",
+   "title": "Charta Health, which offers AI-powered tools to automate medical chart review, billing, and coding…",
+   "url": "https://www.mobihealthnews.com/news/charta-health-raises-55m-launches-new-ai-coding-tools",
+   "source": "Jessica Hagen / MobiHealthN…",
+   "published_at": "2026-11-14T06:36:30Z",
+   "text": "Charta Health, which offers AI-powered tools to automate medical chart review, billing, and coding workflows, raised a $55M Series B led by Insight Partners. The round is the company's third in less than two years and brings its total funding to $85 million. — Global Investing",
    "via": "Techmeme"
   },
   {
-   "title": "Jonathan Blow – If AI solved coding, why is my software still the same? [video]",
-   "url": "https://www.youtube.com/watch?v=IRK8h67ol7Q",
+   "title": "After 600 experiments, here's what I discovered about JEPA world models",
+   "url": "https://haddyalchaer.com/jepa",
    "source": "Hacker News",
-   "published_at": "2026-11-13T15:08:44Z",
-   "text": "323 points and 428 comments on Hacker News.",
-   "points": 323,
-   "discussion": "https://news.ycombinator.com/item?id=50484658"
+   "published_at": "2026-11-13T17:55:28Z",
+   "text": "269 points and 45 comments on Hacker News.",
+   "points": 269,
+   "discussion": "https://news.ycombinator.com/item?id=50487185"
+  },
+  {
+   "title": "Dario Amodei says figuring out how much computing is needed in a year or two is Anthropic's “deepes…",
+   "url": "https://www.bloomberg.com/news/articles/2026-11-13/anthropic-ceo-calls-computing-power-deepest-business-dilemma",
+   "source": "Bloomberg",
+   "published_at": "2026-11-13T19:21:13Z",
+   "text": "Dario Amodei says figuring out how much computing is needed in a year or two is Anthropic's “deepest business dilemma” due to the unpredictability of revenue. Anthropic PBC Chief Executive Officer Dario Amodei named sourcing computing power as one of the artificial intelligence …",
+   "via": "Techmeme"
   }
  ],
  "sources": "curated, Techmeme, X (found via Techmeme, Reddit, the Internet Archive), Claude Code releases, Anthropic, Hacker News, Simon Willison"
