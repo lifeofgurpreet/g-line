@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-14T11:47:11Z",
+ "generated_at": "2026-11-14T12:19:07Z",
  "items": [
   {
    "title": "Sources: Nvidia's board has approached Arm CEO Rene Haas in its search for a potential successor to…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-13T22:10:12Z",
    "text": "Q: Could this be AI related? Mullin: We call it SI around here.",
    "author_name": "Acyn",
-   "likes": 8369,
+   "likes": 8387,
    "story": "Sources: the FAA outage occurred after an update to the private communications network that connects the ATC system caused the system to reboot and crash"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-11-13T13:33:16Z",
    "text": "holy crap -- knives are out for Lutnick over Nvidia",
    "author_name": "Aaron Rupar",
-   "likes": 8798,
+   "likes": 8800,
    "story": "Scott Bessent says the departments of Treasury, Defense, and State were in favor of putting Megaspeed on the entity list for months, but Commerce is in charge"
   },
   {
@@ -50,8 +50,8 @@
    "url": "https://www.techpowerup.com/354814/nvidia-allegedly-engineered-scarcity-by-funding-ai-startups-to-buy-its-gpus",
    "source": "Hacker News",
    "published_at": "2026-11-14T02:52:59Z",
-   "text": "641 points and 379 comments on Hacker News.",
-   "points": 641,
+   "text": "675 points and 390 comments on Hacker News.",
+   "points": 675,
    "discussion": "https://news.ycombinator.com/item?id=50493251"
   },
   {
@@ -61,7 +61,7 @@
    "published_at": "2026-11-13T20:22:26Z",
    "text": "Anthropic reported a similar sudden and unusual jump in robotics capabilities with Fable 5.2. As the general intelligence of frontier models scales up, it is increasingly surpassing specialized training. This will ultimately generalize to every sphere of human ability.",
    "author_name": "Andrew Curran",
-   "likes": 1736,
+   "likes": 1754,
    "story": "OpenAI disbands its standalone robotics team, moving its staff to research and Applied units, saying models like GPT-6 Astra can be directly applied to robotics"
   },
   {
@@ -84,16 +84,16 @@
    "url": "https://status.claude.com/incidents/nn11wk485zfn",
    "source": "Hacker News",
    "published_at": "2026-11-13T10:18:13Z",
-   "text": "488 points and 384 comments on Hacker News.",
+   "text": "488 points and 385 comments on Hacker News.",
    "points": 488,
    "discussion": "https://news.ycombinator.com/item?id=50481187"
   },
   {
-   "title": "WhiteMatter, which builds “guardian” AI agents to oversee file access, software use, decision makin…",
-   "url": "https://www.businessinsider.com/whitematter-startup-ai-agent-cybersecurity-funding-pitch-deck-2026-11",
-   "source": "Alice Tecotzky / Business I…",
-   "published_at": "2026-11-14T06:56:25Z",
-   "text": "WhiteMatter, which builds “guardian” AI agents to oversee file access, software use, decision making, and actions of existing AI agents, raised a $20M Series A. A startup using AI agents to keep rogue AI in line has raised $20 million. — WhiteMatter, founded in 2024 …",
+   "title": "AI's impact on math is a preview of what AI will do to AI research, with AI matching top human rese…",
+   "url": "https://www.dwarkesh.com/p/rsi",
+   "source": "Dwarkesh Patel / Dwarkesh P…",
+   "published_at": "2026-11-14T01:56:49Z",
+   "text": "AI's impact on math is a preview of what AI will do to AI research, with AI matching top human researchers potentially just a couple of years away. Many thanks to Max Farrens, Gabe Fried, and Thomas Larsen for pairing with me through significant parts of writing and researching this essay.",
    "via": "Techmeme"
   },
   {
@@ -101,8 +101,8 @@
    "url": "https://haddyalchaer.com/jepa",
    "source": "Hacker News",
    "published_at": "2026-11-13T17:55:28Z",
-   "text": "266 points and 45 comments on Hacker News.",
-   "points": 266,
+   "text": "268 points and 45 comments on Hacker News.",
+   "points": 268,
    "discussion": "https://news.ycombinator.com/item?id=50487185"
   },
   {
@@ -113,11 +113,11 @@
    "text": "Anthropic's framework for identifying, classifying, and mitigating potential harms from AI systems to support responsible development."
   },
   {
-   "title": "Dario Amodei says figuring out how much computing is needed in a year or two is Anthropic's “deepes…",
-   "url": "https://www.bloomberg.com/news/articles/2026-11-13/anthropic-ceo-calls-computing-power-deepest-business-dilemma",
-   "source": "Bloomberg",
-   "published_at": "2026-11-13T19:21:13Z",
-   "text": "Dario Amodei says figuring out how much computing is needed in a year or two is Anthropic's “deepest business dilemma” due to the unpredictability of revenue. Anthropic PBC Chief Executive Officer Dario Amodei named sourcing computing power as one of the artificial intelligence …",
+   "title": "WhiteMatter, which builds “guardian” AI agents to oversee file access, software use, decision makin…",
+   "url": "https://www.businessinsider.com/whitematter-startup-ai-agent-cybersecurity-funding-pitch-deck-2026-11",
+   "source": "Alice Tecotzky / Business I…",
+   "published_at": "2026-11-14T06:56:25Z",
+   "text": "WhiteMatter, which builds “guardian” AI agents to oversee file access, software use, decision making, and actions of existing AI agents, raised a $20M Series A. A startup using AI agents to keep rogue AI in line has raised $20 million. — WhiteMatter, founded in 2024 …",
    "via": "Techmeme"
   },
   {
@@ -125,8 +125,8 @@
    "url": "https://www.youtube.com/watch?v=IRK8h67ol7Q",
    "source": "Hacker News",
    "published_at": "2026-11-13T15:08:44Z",
-   "text": "316 points and 409 comments on Hacker News.",
-   "points": 316,
+   "text": "323 points and 428 comments on Hacker News.",
+   "points": 323,
    "discussion": "https://news.ycombinator.com/item?id=50484658"
   }
  ],
