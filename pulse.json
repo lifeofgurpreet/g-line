@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-14T02:04:39Z",
+ "generated_at": "2026-11-14T02:36:58Z",
  "items": [
   {
    "title": "The FAA announced on November 10 that it has expanded the use of SMART, an AI tool for advising air…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-13T22:10:12Z",
    "text": "Q: Could this be AI related? Mullin: We call it SI around here.",
    "author_name": "Acyn",
-   "likes": 7389,
+   "likes": 7561,
    "story": "The FAA lifts its over four-hour nationwide ground stop for US airports caused by “communication issues affecting multiple Air Route Traffic Control Centers”"
   },
   {
@@ -34,42 +34,8 @@
    "published_at": "2026-11-13T09:01:34Z",
    "text": "🚨 Another major scandal is coming out of NVIDIA. And this one has nothing to do with Jensen Huang's affairs. According to a Wall Street Journal report, Nvidia was offering billions in financial guarantees to AI companies that could not afford its chips, so they could keep…",
    "author_name": "Bull Theory",
-   "likes": 11219,
+   "likes": 11252,
    "story": "CXMT almost tripling RAM production from 2025 to 2028"
-  },
-  {
-   "title": "Sources: Nvidia's board has approached Arm CEO Rene Haas in its search for a potential successor to…",
-   "url": "https://www.ft.com/content/2a64f698-46dd-4178-a3f4-4c5f4c0a0926",
-   "source": "Michael Acton / Financial T…",
-   "published_at": "2026-11-13T17:04:48Z",
-   "text": "Sources: Nvidia's board has approached Arm CEO Rene Haas in its search for a potential successor to Jensen Huang; Haas worked at Nvidia more than a decade ago. Head of SoftBank-owned UK semiconductor group sounded out after Jensen Huang resigned over affairs",
-   "via": "Techmeme"
-  },
-  {
-   "title": "$11.4M in Nvidia hardware vanishes during shipment from CA to TX",
-   "url": "https://www.freightwaves.com/news/11-4-million-in-nvidia-hardware-vanishes-during-shipment-from-california-to-texas",
-   "source": "Hacker News",
-   "published_at": "2026-11-13T18:40:44Z",
-   "text": "293 points and 162 comments on Hacker News.",
-   "points": 293,
-   "discussion": "https://news.ycombinator.com/item?id=50487864"
-  },
-  {
-   "title": "Anthropic reported a similar sudden and unusual jump in robotics capabilities with Fable 5.2. As th…",
-   "url": "https://x.com/AndrewCurran_/status/2121337915087433772",
-   "source": "𝕏 @AndrewCurran_",
-   "published_at": "2026-11-13T20:22:26Z",
-   "text": "Anthropic reported a similar sudden and unusual jump in robotics capabilities with Fable 5.2. As the general intelligence of frontier models scales up, it is increasingly surpassing specialized training. This will ultimately generalize to every sphere of human ability.",
-   "author_name": "Andrew Curran",
-   "likes": 1227,
-   "story": "OpenAI disbands its standalone robotics team, moving its staff to research and Applied units, saying models like GPT-6 Astra can be directly applied to robotics"
-  },
-  {
-   "title": "Anthropic is endorsing SB 53",
-   "url": "https://www.anthropic.com/news/anthropic-is-endorsing-sb-53",
-   "source": "Anthropic",
-   "published_at": "2026-11-13T22:37:05Z",
-   "text": "Anthropic is endorsing SB 53, the California bill that governs powerful AI systems built by frontier AI developers like Anthropic."
   },
   {
    "title": "Some investors and founders say they lost an ally in Jensen Huang; Nvidia held $48B in 229 private…",
@@ -80,13 +46,47 @@
    "via": "Techmeme"
   },
   {
+   "title": "$11.4M in Nvidia hardware vanishes during shipment from CA to TX",
+   "url": "https://www.freightwaves.com/news/11-4-million-in-nvidia-hardware-vanishes-during-shipment-from-california-to-texas",
+   "source": "Hacker News",
+   "published_at": "2026-11-13T18:40:44Z",
+   "text": "299 points and 168 comments on Hacker News.",
+   "points": 299,
+   "discussion": "https://news.ycombinator.com/item?id=50487864"
+  },
+  {
+   "title": "Anthropic reported a similar sudden and unusual jump in robotics capabilities with Fable 5.2. As th…",
+   "url": "https://x.com/AndrewCurran_/status/2121337915087433772",
+   "source": "𝕏 @AndrewCurran_",
+   "published_at": "2026-11-13T20:22:26Z",
+   "text": "Anthropic reported a similar sudden and unusual jump in robotics capabilities with Fable 5.2. As the general intelligence of frontier models scales up, it is increasingly surpassing specialized training. This will ultimately generalize to every sphere of human ability.",
+   "author_name": "Andrew Curran",
+   "likes": 1268,
+   "story": "OpenAI disbands its standalone robotics team, moving its staff to research and Applied units, saying models like GPT-6 Astra can be directly applied to robotics"
+  },
+  {
+   "title": "Anthropic is endorsing SB 53",
+   "url": "https://www.anthropic.com/news/anthropic-is-endorsing-sb-53",
+   "source": "Anthropic",
+   "published_at": "2026-11-13T22:37:05Z",
+   "text": "Anthropic is endorsing SB 53, the California bill that governs powerful AI systems built by frontier AI developers like Anthropic."
+  },
+  {
+   "title": "Sources: Nvidia's board has approached Arm CEO Rene Haas in its search for a potential successor to…",
+   "url": "https://www.ft.com/content/2a64f698-46dd-4178-a3f4-4c5f4c0a0926",
+   "source": "Michael Acton / Financial T…",
+   "published_at": "2026-11-13T17:04:48Z",
+   "text": "Sources: Nvidia's board has approached Arm CEO Rene Haas in its search for a potential successor to Jensen Huang; Haas worked at Nvidia more than a decade ago. Head of SoftBank-owned UK semiconductor group sounded out after Jensen Huang resigned over affairs",
+   "via": "Techmeme"
+  },
+  {
    "title": "holy crap -- knives are out for Lutnick over Nvidia",
    "url": "https://x.com/atrupar/status/2121234944273916341",
    "source": "𝕏 @atrupar",
    "published_at": "2026-11-13T13:33:16Z",
    "text": "holy crap -- knives are out for Lutnick over Nvidia",
    "author_name": "Aaron Rupar",
-   "likes": 8618,
+   "likes": 8653,
    "story": "Scott Bessent says the departments of Treasury, Defense, and State were in favor of putting Megaspeed on the entity list for months, but Commerce is in charge"
   },
   {
@@ -94,8 +94,8 @@
    "url": "https://www.theguardian.com/science/2026/nov/13/kurt-godel-notebooks-ai-helps-unlock-hidden-discoveries-man-who-transformed-maths",
    "source": "Hacker News",
    "published_at": "2026-11-13T17:30:10Z",
-   "text": "334 points and 92 comments on Hacker News.",
-   "points": 334,
+   "text": "337 points and 93 comments on Hacker News.",
+   "points": 337,
    "discussion": "https://news.ycombinator.com/item?id=50486748"
   },
   {
@@ -105,7 +105,7 @@
    "published_at": "2026-11-12T17:23:51Z",
    "text": "🚨MUSE FEATURE ALERT!!!🚨 lots of you have been asking for this one… muse can make phone calls for you! ☎️📞📲 let muse take care of all those calls you don’t want to make. insurance? cable? DMV? dinner res? not your problem anymore. out now to paid subs in the US 🇺🇸 https",
    "author_name": "Alexandr Wang",
-   "likes": 1414,
+   "likes": 1417,
    "story": "Meta launches an outbound calling feature for Muse, such as to businesses, available for paid US subscribers; Gemini and startup Instinct offer a similar option"
   },
   {
@@ -121,8 +121,8 @@
    "url": "https://haddyalchaer.com/jepa",
    "source": "Hacker News",
    "published_at": "2026-11-13T17:55:28Z",
-   "text": "216 points and 36 comments on Hacker News.",
-   "points": 216,
+   "text": "217 points and 36 comments on Hacker News.",
+   "points": 217,
    "discussion": "https://news.ycombinator.com/item?id=50487185"
   },
   {
