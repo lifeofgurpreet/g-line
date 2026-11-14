@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-14T06:25:04Z",
+ "generated_at": "2026-11-14T06:56:44Z",
  "items": [
   {
    "title": "Sources and messages: Jensen Huang misled several Nvidia leaders, including general counsel Tim Tet…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-13T22:10:12Z",
    "text": "Q: Could this be AI related? Mullin: We call it SI around here.",
    "author_name": "Acyn",
-   "likes": 8061,
+   "likes": 8107,
    "story": "Sources: the FAA outage occurred after an update to the private communications network that connects the ATC system caused the system to reboot and crash"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-11-13T09:01:34Z",
    "text": "🚨 Another major scandal is coming out of NVIDIA. And this one has nothing to do with Jensen Huang's affairs. According to a Wall Street Journal report, Nvidia was offering billions in financial guarantees to AI companies that could not afford its chips, so they could keep…",
    "author_name": "Bull Theory",
-   "likes": 11483,
+   "likes": 11517,
    "story": "CXMT almost tripling RAM production from 2025 to 2028"
   },
   {
@@ -50,8 +50,8 @@
    "url": "https://www.techpowerup.com/354814/nvidia-allegedly-engineered-scarcity-by-funding-ai-startups-to-buy-its-gpus",
    "source": "Hacker News",
    "published_at": "2026-11-14T02:52:59Z",
-   "text": "296 points and 150 comments on Hacker News.",
-   "points": 296,
+   "text": "345 points and 175 comments on Hacker News.",
+   "points": 345,
    "discussion": "https://news.ycombinator.com/item?id=50493251"
   },
   {
@@ -61,7 +61,7 @@
    "published_at": "2026-11-13T20:22:26Z",
    "text": "Anthropic reported a similar sudden and unusual jump in robotics capabilities with Fable 5.2. As the general intelligence of frontier models scales up, it is increasingly surpassing specialized training. This will ultimately generalize to every sphere of human ability.",
    "author_name": "Andrew Curran",
-   "likes": 1541,
+   "likes": 1571,
    "story": "OpenAI disbands its standalone robotics team, moving its staff to research and Applied units, saying models like GPT-6 Astra can be directly applied to robotics"
   },
   {
@@ -86,7 +86,7 @@
    "published_at": "2026-11-13T13:33:16Z",
    "text": "holy crap -- knives are out for Lutnick over Nvidia",
    "author_name": "Aaron Rupar",
-   "likes": 8753,
+   "likes": 8765,
    "story": "Scott Bessent says the departments of Treasury, Defense, and State were in favor of putting Megaspeed on the entity list for months, but Commerce is in charge"
   },
   {
@@ -94,8 +94,8 @@
    "url": "https://finance.yahoo.com/markets/stocks/articles/nvidia-director-sold-nearly-1b-160000846.html",
    "source": "Hacker News",
    "published_at": "2026-11-14T02:21:36Z",
-   "text": "156 points and 34 comments on Hacker News.",
-   "points": 156,
+   "text": "173 points and 34 comments on Hacker News.",
+   "points": 173,
    "discussion": "https://news.ycombinator.com/item?id=50492993"
   },
   {
@@ -111,8 +111,8 @@
    "url": "https://www.freightwaves.com/news/11-4-million-in-nvidia-hardware-vanishes-during-shipment-from-california-to-texas",
    "source": "Hacker News",
    "published_at": "2026-11-13T18:40:44Z",
-   "text": "330 points and 183 comments on Hacker News.",
-   "points": 330,
+   "text": "335 points and 185 comments on Hacker News.",
+   "points": 335,
    "discussion": "https://news.ycombinator.com/item?id=50487864"
   },
   {
