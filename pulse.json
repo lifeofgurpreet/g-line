@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-14T12:51:27Z",
+ "generated_at": "2026-11-14T13:24:26Z",
  "items": [
   {
    "title": "Sources: Nvidia's board has approached Arm CEO Rene Haas in its search for a potential successor to…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-13T22:10:12Z",
    "text": "Q: Could this be AI related? Mullin: We call it SI around here.",
    "author_name": "Acyn",
-   "likes": 8414,
+   "likes": 8445,
    "story": "Sources: the FAA outage occurred after an update to the private communications network that connects the ATC system caused the system to reboot and crash"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-11-13T20:22:26Z",
    "text": "Anthropic reported a similar sudden and unusual jump in robotics capabilities with Fable 5.2. As the general intelligence of frontier models scales up, it is increasingly surpassing specialized training. This will ultimately generalize to every sphere of human ability.",
    "author_name": "Andrew Curran",
-   "likes": 1776,
+   "likes": 1803,
    "story": "OpenAI disbands its standalone robotics team, moving its staff to research and Applied units, saying models like GPT-6 Astra can be directly applied to robotics"
   },
   {
@@ -50,8 +50,8 @@
    "url": "https://www.techpowerup.com/354814/nvidia-allegedly-engineered-scarcity-by-funding-ai-startups-to-buy-its-gpus",
    "source": "Hacker News",
    "published_at": "2026-11-14T02:52:59Z",
-   "text": "716 points and 413 comments on Hacker News.",
-   "points": 716,
+   "text": "745 points and 433 comments on Hacker News.",
+   "points": 745,
    "discussion": "https://news.ycombinator.com/item?id=50493251"
   },
   {
@@ -91,8 +91,8 @@
    "url": "https://www.youtube.com/watch?v=IRK8h67ol7Q",
    "source": "Hacker News",
    "published_at": "2026-11-13T15:08:44Z",
-   "text": "341 points and 459 comments on Hacker News.",
-   "points": 341,
+   "text": "352 points and 472 comments on Hacker News.",
+   "points": 352,
    "discussion": "https://news.ycombinator.com/item?id=50484658"
   },
   {
@@ -115,16 +115,16 @@
    "url": "https://haddyalchaer.com/jepa",
    "source": "Hacker News",
    "published_at": "2026-11-13T17:55:28Z",
-   "text": "269 points and 45 comments on Hacker News.",
-   "points": 269,
+   "text": "273 points and 45 comments on Hacker News.",
+   "points": 273,
    "discussion": "https://news.ycombinator.com/item?id=50487185"
   },
   {
-   "title": "Dario Amodei says figuring out how much computing is needed in a year or two is Anthropic's “deepes…",
-   "url": "https://www.bloomberg.com/news/articles/2026-11-13/anthropic-ceo-calls-computing-power-deepest-business-dilemma",
-   "source": "Bloomberg",
-   "published_at": "2026-11-13T19:21:13Z",
-   "text": "Dario Amodei says figuring out how much computing is needed in a year or two is Anthropic's “deepest business dilemma” due to the unpredictability of revenue. Anthropic PBC Chief Executive Officer Dario Amodei named sourcing computing power as one of the artificial intelligence …",
+   "title": "Operand, which offers AI-powered due diligence tools for PE firms, raised $31M across a seed and a…",
+   "url": "https://www.axios.com/pro/all-deals/2026/11/10/private-equity-due-diligence-ai-operand-31m",
+   "source": "Lucinda Shen / Axios",
+   "published_at": "2026-11-14T07:04:00Z",
+   "text": "Operand, which offers AI-powered due diligence tools for PE firms, raised $31M across a seed and a Series A led by Khosla Ventures at a $220M valuation. Operand, which uses AI to do due diligence for private equity firms, raised $31 million in seed and Series A funding, CEO Ram Gorthi tells Axios Pro exclusively.",
    "via": "Techmeme"
   }
  ],
