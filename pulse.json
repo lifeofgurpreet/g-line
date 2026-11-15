@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-15T22:27:46Z",
+ "generated_at": "2026-11-15T22:59:32Z",
  "items": [
   {
    "title": "Sources: Jensen Huang has discussed a comeback as Nvidia CEO with confidants, as allies form a “war…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-15T00:13:00Z",
    "text": "BREAKING: Former Nvidia CEO Jensen Huang reportedly told a top executive \"I hope you die\" during a meeting",
    "author_name": "Kalshi",
-   "likes": 38888,
+   "likes": 39130,
    "story": "Nvidia insiders say Jensen Huang was prone to wild office tantrums, which a source says some employees were surprised hadn't leaked before his public downfall"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-11-14T17:00:46Z",
    "text": "BREAKING: The petition to reinstate Jensen Huang as CEO of Nvidia, $NVDA, has reached over 100,000 signatures. The petition has been signed by more than 53,000 shareholders and 6,200 current and former Nvidia employees. In the first 24 hours of the petition, nearly 15% of…",
    "author_name": "The Kobeissi Letter",
-   "likes": 14989,
+   "likes": 15008,
    "story": "23andMe's Anne Wojcicki, formerly married to Google co-founder Sergey Brin, says Jensen Huang's affair shows what happens when CEOs think they are “untouchable”"
   },
   {
@@ -50,8 +50,8 @@
    "url": "https://jakub.jankiewicz.org/blog/ai-code-open-source/",
    "source": "Hacker News",
    "published_at": "2026-11-15T14:46:58Z",
-   "text": "993 points and 551 comments on Hacker News.",
-   "points": 993,
+   "text": "1019 points and 565 comments on Hacker News.",
+   "points": 1019,
    "discussion": "https://news.ycombinator.com/item?id=50507303"
   },
   {
@@ -61,7 +61,7 @@
    "published_at": "2026-11-15T15:03:07Z",
    "text": "NEW Power On: Apple’s next big product — smart glasses planned next year — will offer Siri AI app integrations as its flagship feature. The idea: Book an Uber, reserve a table or order a coffee from your Apple Glasses — with apps running on paired iPhone.",
    "author_name": "Mark Gurman",
-   "likes": 805,
+   "likes": 816,
    "story": "Sources: Apple plans to unveil smart glasses at WWDC and ship them by the end of 2027, focusing heavily on integration of third-party iPhone apps with Siri AI",
    "links": [
     "https://www.bloomberg.com/news/newsletters/2026-11-15/apple-siri-ai-app-integrations-power-smart-glasses-iphone-duo-2-face-id-plan?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc5NDc1NDk0MiwiZXhwIjoxNzk1MzU5NzQyLCJhcnRpY2xlSWQiOiJUT0pUTzFLSVVQU0IwMCIsImJjb25uZWN0SWQiOiJDNEVEQ0FFMUZBMDU0MEJFQTI0QTlGMjExQzFFOTA4MCJ9.JxizrLMB_4yO_RhcaLRgamHBB02Qjf92voFxp6xtjaI"
@@ -87,8 +87,8 @@
    "url": "https://magazine.sebastianraschka.com/p/understanding-positional-embeddings",
    "source": "Hacker News",
    "published_at": "2026-11-15T12:14:06Z",
-   "text": "180 points and 22 comments on Hacker News.",
-   "points": 180,
+   "text": "185 points and 23 comments on Hacker News.",
+   "points": 185,
    "discussion": "https://news.ycombinator.com/item?id=50506376"
   },
   {
@@ -124,13 +124,13 @@
    "via": "Techmeme"
   },
   {
-   "title": "Claude Meetings",
-   "url": "https://claude.com/resources/articles/claude-meetings",
+   "title": "Anthropic upgrades Claude Code Projects to run parallel AI workers",
+   "url": "https://claude.com/resources/articles/projects-redesigned",
    "source": "Hacker News",
-   "published_at": "2026-11-13T22:39:15Z",
-   "text": "111 points and 88 comments on Hacker News.",
-   "points": 111,
-   "discussion": "https://news.ycombinator.com/item?id=50491097"
+   "published_at": "2026-11-14T00:28:11Z",
+   "text": "100 points and 95 comments on Hacker News.",
+   "points": 100,
+   "discussion": "https://news.ycombinator.com/item?id=50492141"
   }
  ],
  "sources": "curated, Techmeme, X (found via Techmeme, Reddit, the Internet Archive), Claude Code releases, Anthropic, Hacker News, Simon Willison"
