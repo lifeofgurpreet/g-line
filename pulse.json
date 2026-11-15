@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-15T09:16:19Z",
+ "generated_at": "2026-11-15T09:49:23Z",
  "items": [
   {
    "title": "A petition to reinstate Jensen Huang as Nvidia CEO tops 100K signatures, including Elon Musk, Tim S…",
@@ -17,8 +17,8 @@
    "published_at": "2026-11-14T08:34:06Z",
    "text": "THIS IS WHY THEY TOOK DOWN JENSEN HUNAG Four months ago, Jensen Huang revealed he was about to BREAK the closed-model monopoly over AI and completely reshape the AI industry. He made a direct THREAT to America’s biggest AI companies. He revealed Nvidia was working on a…",
    "author_name": "ADAM",
-   "likes": 24963,
-   "story": "How Jensen Huang built a multibillion-dollar business to let Chinese companies access Nvidia AI chips in SE Asian data centers, exploiting a gap in US sanctions"
+   "likes": 25094,
+   "story": "The Nvidia scandal presents a political challenge for the White House by tying together data centers, China, and corruption, all key voter issues in midterms"
   },
   {
    "title": "Claude Code 2.1.325 released",
@@ -34,15 +34,15 @@
    "published_at": "2026-11-14T00:34:41Z",
    "text": "This letter was sent to Nvidia's board today. A first for @atreidesmgmt Absolutely share @altcap belief that this letter outlines minimum acceptable standards.",
    "author_name": "Gavin Baker",
-   "likes": 12795,
+   "likes": 12804,
    "story": "Letter: Altimeter's Brad Gerstner and Atreides's Gavin Baker urge Nvidia's board to consider “the potential return of Jensen Huang”; they own $2.13B in Nvidia"
   },
   {
-   "title": "A post-Jensen Nvidia must reshuffle its leadership, reset its DC ties, and recognize that even the…",
-   "url": "https://www.ft.com/content/0e2720d7-ba0a-4469-a854-30931f907bd3",
-   "source": "Chris Miller / Financial Ti…",
-   "published_at": "2026-11-15T07:02:48Z",
-   "text": "A post-Jensen Nvidia must reshuffle its leadership, reset its DC ties, and recognize that even the US' most valuable company cannot dictate US foreign policy. The chip company has only itself to blame for a long list of adversaries — Jensen Huang's exit from Nvidia, the company he co-founded …",
+   "title": "Nvidia insiders say Jensen Huang was prone to wild office tantrums, which a source says some employ…",
+   "url": "https://nypost.com/2026/11/14/business/how-ex-nvidia-ceo-jensen-huang-threw-tantrums-in-the-office-dressed-down-tech-execs-i-hope-you-die/",
+   "source": "Thomas Barrabi / New York P…",
+   "published_at": "2026-11-15T06:20:59Z",
+   "text": "Nvidia insiders say Jensen Huang was prone to wild office tantrums, which a source says some employees were surprised hadn't leaked before his public downfall. Ousted Nvidia CEO Jensen Huang was prone to wild temper tantrums at the office, according to company insiders …",
    "via": "Techmeme"
   },
   {
@@ -50,8 +50,8 @@
    "url": "https://github.com/Vaibhaav-Tiwari/deepseek-v3-jax",
    "source": "Hacker News",
    "published_at": "2026-11-14T15:04:15Z",
-   "text": "229 points and 21 comments on Hacker News.",
-   "points": 229,
+   "text": "233 points and 21 comments on Hacker News.",
+   "points": 233,
    "discussion": "https://news.ycombinator.com/item?id=50497589"
   },
   {
@@ -72,11 +72,11 @@
    "text": "Anthropic is endorsing SB 53, the California bill that governs powerful AI systems built by frontier AI developers like Anthropic."
   },
   {
-   "title": "The Nvidia scandal presents a political challenge for the White House by tying together data center…",
-   "url": "https://www.washingtonpost.com/politics/2026/11/14/nvidia-scandal-hits-trumps-political-vulnerabilities-after-democratic-sweep/?pwapi_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyZWFzb24iOiJnaWZ0IiwibmJmIjoxNzk0NjMyNDAwLCJpc3MiOiJzdWJzY3JpcHRpb25zIiwiZXhwIjoxNzk2MDE0Nzk5LCJpYXQiOjE3OTQ2MzI0MDAsImp0aSI6ImVjYmZmMGQyLTdiZGEtNDNjOS1iMzViLTVlMzZiMTFhMzlkNyIsInVybCI6Imh0dHBzOi8vd3d3Lndhc2hpbmd0b25wb3N0LmNvbS9wb2xpdGljcy8yMDI2LzExLzE0L252aWRpYS1zY2FuZGFsLWhpdHMtdHJ1bXBzLXBvbGl0aWNhbC12dWxuZXJhYmlsaXRpZXMtYWZ0ZXItZGVtb2NyYXRpYy1zd2VlcC8ifQ.RnLIqxnR82OE4UaovEWu2ATiORrkV7A6UVgwGsg-1xQ&itid=gfta",
-   "source": "Washington Post",
-   "published_at": "2026-11-15T04:16:33Z",
-   "text": "The Nvidia scandal presents a political challenge for the White House by tying together data centers, China, and corruption, all key voter issues in midterms. The scandal connects to voter concerns over AI, data centers, China and corruption. — Sex. Money. Power. Espionage.",
+   "title": "A post-Jensen Nvidia must reshuffle its leadership, reset its DC ties, and recognize that even the…",
+   "url": "https://www.ft.com/content/0e2720d7-ba0a-4469-a854-30931f907bd3",
+   "source": "Chris Miller / Financial Ti…",
+   "published_at": "2026-11-15T07:02:48Z",
+   "text": "A post-Jensen Nvidia must reshuffle its leadership, reset its DC ties, and recognize that even the US' most valuable company cannot dictate US foreign policy. The chip company has only itself to blame for a long list of adversaries — Jensen Huang's exit from Nvidia, the company he co-founded …",
    "via": "Techmeme"
   },
   {
@@ -84,16 +84,16 @@
    "url": "https://www.netmeister.org/blog/claude-delusion.html",
    "source": "Hacker News",
    "published_at": "2026-11-14T13:36:17Z",
-   "text": "147 points and 192 comments on Hacker News.",
-   "points": 147,
+   "text": "148 points and 193 comments on Hacker News.",
+   "points": 148,
    "discussion": "https://news.ycombinator.com/item?id=50496921"
   },
   {
-   "title": "Nebuly, whose tech helps enterprises measure the business value of AI agents by analyzing their imp…",
-   "url": "https://tech.eu/2026/11/12/nebuly-raises-21m-series-a-to-turn-ai-investments-into-measurable-results/",
-   "source": "Tamara Djurickovic / Tech.eu",
-   "published_at": "2026-11-15T06:41:00Z",
-   "text": "Nebuly, whose tech helps enterprises measure the business value of AI agents by analyzing their impact on productivity and revenue, raised a $21M Series A. Nebuly develops a platform that helps enterprises measure the business value of AI agents by analysing their impact on productivity …",
+   "title": "How Jensen Huang built a multibillion-dollar business to let Chinese companies access Nvidia AI chi…",
+   "url": "https://www.wsj.com/tech/jensen-huang-backdoor-ai-data-centers-a5e4499d?st=geQhk5",
+   "source": "Wall Street Journal",
+   "published_at": "2026-11-15T05:56:21Z",
+   "text": "How Jensen Huang built a multibillion-dollar business to let Chinese companies access Nvidia AI chips in SE Asian data centers, exploiting a gap in US sanctions. Massive data centers in Southeast Asia exploited a gap in U.S. sanctions, providing crucial computing power for Chinese companies and a cover for alleged chip smuggling",
    "via": "Techmeme"
   },
   {
@@ -113,11 +113,11 @@
    "text": "Anthropic's framework for identifying, classifying, and mitigating potential harms from AI systems to support responsible development."
   },
   {
-   "title": "Nidus, which is developing AI-powered tech for manufacturing robots used by US defense industrial c…",
-   "url": "https://www.upstartsmedia.com/p/nidus-ai-robotics-raises-30m",
-   "source": "Alex Konrad / Upstarts Media",
-   "published_at": "2026-11-15T06:50:55Z",
-   "text": "Nidus, which is developing AI-powered tech for manufacturing robots used by US defense industrial companies, raised $30M across a pre-seed and a seed. The startup backed by Kleiner Perkins and Costanoa says it's reached “seven figures” in bookings with defense industrial customers in just 4 months.",
+   "title": "Nebuly, whose tech helps enterprises measure the business value of AI agents by analyzing their imp…",
+   "url": "https://tech.eu/2026/11/12/nebuly-raises-21m-series-a-to-turn-ai-investments-into-measurable-results/",
+   "source": "Tamara Djurickovic / Tech.eu",
+   "published_at": "2026-11-15T06:41:00Z",
+   "text": "Nebuly, whose tech helps enterprises measure the business value of AI agents by analyzing their impact on productivity and revenue, raised a $21M Series A. Nebuly develops a platform that helps enterprises measure the business value of AI agents by analysing their impact on productivity …",
    "via": "Techmeme"
   },
   {
