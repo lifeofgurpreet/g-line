@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-15T20:52:35Z",
+ "generated_at": "2026-11-15T21:24:40Z",
  "items": [
   {
    "title": "Sources: Jensen Huang has discussed a comeback as Nvidia CEO with confidants, as allies form a “war…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-15T00:13:00Z",
    "text": "BREAKING: Former Nvidia CEO Jensen Huang reportedly told a top executive \"I hope you die\" during a meeting",
    "author_name": "Kalshi",
-   "likes": 38098,
+   "likes": 38341,
    "story": "Nvidia insiders say Jensen Huang was prone to wild office tantrums, which a source says some employees were surprised hadn't leaked before his public downfall"
   },
   {
@@ -34,8 +34,8 @@
    "published_at": "2026-11-14T17:00:46Z",
    "text": "BREAKING: The petition to reinstate Jensen Huang as CEO of Nvidia, $NVDA, has reached over 100,000 signatures. The petition has been signed by more than 53,000 shareholders and 6,200 current and former Nvidia employees. In the first 24 hours of the petition, nearly 15% of…",
    "author_name": "The Kobeissi Letter",
-   "likes": 14936,
-   "story": "23andMe's Anne Wojcicki, formerly married to Google co-founder Sergey Brin, says Jensen Huang's affair shows what happens when CEOs think they are “untouchable”"
+   "likes": 14952,
+   "story": "A petition to reinstate Jensen Huang as Nvidia CEO tops 100K signatures, including Elon Musk, Tim Sweeney, and Garry Tan; organizers say 5K+ Nvidia staff signed"
   },
   {
    "title": "Scott Bessent urges Nvidia to hire an outside CEO and wants answers within 10 days on whether it pu…",
@@ -50,8 +50,8 @@
    "url": "https://jakub.jankiewicz.org/blog/ai-code-open-source/",
    "source": "Hacker News",
    "published_at": "2026-11-15T14:46:58Z",
-   "text": "923 points and 501 comments on Hacker News.",
-   "points": 923,
+   "text": "948 points and 519 comments on Hacker News.",
+   "points": 948,
    "discussion": "https://news.ycombinator.com/item?id=50507303"
   },
   {
@@ -61,7 +61,7 @@
    "published_at": "2026-11-15T15:03:07Z",
    "text": "NEW Power On: Apple’s next big product — smart glasses planned next year — will offer Siri AI app integrations as its flagship feature. The idea: Book an Uber, reserve a table or order a coffee from your Apple Glasses — with apps running on paired iPhone.",
    "author_name": "Mark Gurman",
-   "likes": 766,
+   "likes": 779,
    "story": "Sources: Apple plans to unveil smart glasses at WWDC and ship them by the end of 2027, focusing heavily on integration of third-party iPhone apps with Siri AI",
    "links": [
     "https://www.bloomberg.com/news/newsletters/2026-11-15/apple-siri-ai-app-integrations-power-smart-glasses-iphone-duo-2-face-id-plan?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc5NDc1NDk0MiwiZXhwIjoxNzk1MzU5NzQyLCJhcnRpY2xlSWQiOiJUT0pUTzFLSVVQU0IwMCIsImJjb25uZWN0SWQiOiJDNEVEQ0FFMUZBMDU0MEJFQTI0QTlGMjExQzFFOTA4MCJ9.JxizrLMB_4yO_RhcaLRgamHBB02Qjf92voFxp6xtjaI"
@@ -87,8 +87,8 @@
    "url": "https://magazine.sebastianraschka.com/p/understanding-positional-embeddings",
    "source": "Hacker News",
    "published_at": "2026-11-15T12:14:06Z",
-   "text": "168 points and 13 comments on Hacker News.",
-   "points": 168,
+   "text": "175 points and 15 comments on Hacker News.",
+   "points": 175,
    "discussion": "https://news.ycombinator.com/item?id=50506376"
   },
   {
@@ -104,8 +104,8 @@
    "url": "https://www.netmeister.org/blog/claude-delusion.html",
    "source": "Hacker News",
    "published_at": "2026-11-14T13:36:17Z",
-   "text": "150 points and 198 comments on Hacker News.",
-   "points": 150,
+   "text": "151 points and 199 comments on Hacker News.",
+   "points": 151,
    "discussion": "https://news.ycombinator.com/item?id=50496921"
   },
   {
