@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-15T10:53:08Z",
+ "generated_at": "2026-11-15T11:24:29Z",
  "items": [
   {
    "title": "A petition to reinstate Jensen Huang as Nvidia CEO tops 100K signatures, including Elon Musk, Tim S…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-14T08:34:06Z",
    "text": "THIS IS WHY THEY TOOK DOWN JENSEN HUNAG Four months ago, Jensen Huang revealed he was about to BREAK the closed-model monopoly over AI and completely reshape the AI industry. He made a direct THREAT to America’s biggest AI companies. He revealed Nvidia was working on a…",
    "author_name": "ADAM",
-   "likes": 25364,
+   "likes": 25511,
    "story": "Unlike other larger-than-life tech founders, Jensen Huang lacked super-voting shares in Nvidia, making it easier for him to lose control of the company"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-11-14T00:34:41Z",
    "text": "This letter was sent to Nvidia's board today. A first for @atreidesmgmt Absolutely share @altcap belief that this letter outlines minimum acceptable standards.",
    "author_name": "Gavin Baker",
-   "likes": 12821,
+   "likes": 12827,
    "story": "Letter: Altimeter's Brad Gerstner and Atreides's Gavin Baker urge Nvidia's board to consider “the potential return of Jensen Huang”; they own $2.13B in Nvidia"
   },
   {
@@ -50,8 +50,8 @@
    "url": "https://github.com/Vaibhaav-Tiwari/deepseek-v3-jax",
    "source": "Hacker News",
    "published_at": "2026-11-14T15:04:15Z",
-   "text": "236 points and 22 comments on Hacker News.",
-   "points": 236,
+   "text": "237 points and 23 comments on Hacker News.",
+   "points": 237,
    "discussion": "https://news.ycombinator.com/item?id=50497589"
   },
   {
@@ -61,7 +61,7 @@
    "published_at": "2026-11-13T22:10:12Z",
    "text": "Q: Could this be AI related? Mullin: We call it SI around here.",
    "author_name": "Acyn",
-   "likes": 8806,
+   "likes": 8807,
    "story": "Sean Duffy blames Friday's FAA outage on copper-to-fiber wiring work at a remote facility, saying contractor L3Harris may have installed a “faulty router”"
   },
   {
@@ -125,7 +125,7 @@
    "url": "https://claude.com/resources/articles/projects-redesigned",
    "source": "Hacker News",
    "published_at": "2026-11-14T00:28:11Z",
-   "text": "98 points and 92 comments on Hacker News.",
+   "text": "98 points and 93 comments on Hacker News.",
    "points": 98,
    "discussion": "https://news.ycombinator.com/item?id=50492141"
   }
