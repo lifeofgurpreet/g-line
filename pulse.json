@@ -1,13 +1,13 @@
 {
  "schema": 1,
- "generated_at": "2026-11-15T17:09:59Z",
+ "generated_at": "2026-11-15T17:41:27Z",
  "items": [
   {
-   "title": "A petition to reinstate Jensen Huang as Nvidia CEO tops 100K signatures, including Elon Musk, Tim S…",
-   "url": "https://www.businessinsider.com/petition-reinstate-jensen-huang-nvidia-elon-musk-2026-11",
-   "source": "Lauren Edmonds / Business I…",
-   "published_at": "2026-11-14T19:02:30Z",
-   "text": "A petition to reinstate Jensen Huang as Nvidia CEO tops 100K signatures, including Elon Musk, Tim Sweeney, and Garry Tan; organizers say 5K+ Nvidia staff signed. Some people aren't ready to let former CEO Jensen Huang go. — A petition to reinstate Huang as Nvidia's CEO has some 97,000 signatures …",
+   "title": "Sources: Apple plans to unveil smart glasses at WWDC and ship them by the end of 2027, focusing hea…",
+   "url": "https://www.bloomberg.com/news/newsletters/2026-11-15/apple-siri-ai-app-integrations-power-smart-glasses-iphone-duo-2-face-id-plan?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc5NDc1NTQ2MSwiZXhwIjoxNzk1MzYwMjYxLCJhcnRpY2xlSWQiOiJUT0pUTzFLSVVQU0IwMCIsImJjb25uZWN0SWQiOiJDNEVEQ0FFMUZBMDU0MEJFQTI0QTlGMjExQzFFOTA4MCJ9.2TeBxZfpuwFLhhyEns0-GWBuy-YbU6nhgWwD5smKMD4",
+   "source": "Mark Gurman / Bloomberg",
+   "published_at": "2026-11-15T16:31:37Z",
+   "text": "Sources: Apple plans to unveil smart glasses at WWDC and ship them by the end of 2027, focusing heavily on integration of third-party iPhone apps with Siri AI. Also: A look at the race to bring Face ID to the iPhone Duo. … Apple's just-announced Siri AI integrations are the centerpiece …",
    "via": "Techmeme"
   },
   {
@@ -17,7 +17,7 @@
    "published_at": "2026-11-15T00:13:00Z",
    "text": "BREAKING: Former Nvidia CEO Jensen Huang reportedly told a top executive \"I hope you die\" during a meeting",
    "author_name": "Kalshi",
-   "likes": 35215,
+   "likes": 35720,
    "story": "Nvidia insiders say Jensen Huang was prone to wild office tantrums, which a source says some employees were surprised hadn't leaked before his public downfall"
   },
   {
@@ -28,17 +28,14 @@
    "text": "Fixed a security issue in how zstd-compressed responses are decoded · Added a spinner tip in VS Code and similar integrated terminals about re-running a notebook cell, shown once Claude has read or edited a Jupyter notebook · Added a line under the error shown when your organization's policy blocks a request, saying how to continue: run /rewind and change the message, or run /clear · Added a note for Claude when a sandboxed git checkout, git stash or autostash pull cannot update protected files such as those in .claude"
   },
   {
-   "title": "Also in Power On: Apple has built iPhone Duo 2 prototypes with Face ID and is working to integrate…",
-   "url": "https://x.com/markgurman/status/2121984093806354817",
-   "source": "𝕏 @markgurman",
-   "published_at": "2026-11-15T15:10:07Z",
-   "text": "Also in Power On: Apple has built iPhone Duo 2 prototypes with Face ID and is working to integrate it into the outer display. Restoring facial recognition is a top priority, but the timeline is tight for next fall’s model and the feature isn’t locked in.",
-   "author_name": "Mark Gurman",
-   "likes": 366,
-   "story": "Sources: Apple plans to unveil smart glasses at WWDC and ship them by the end of 2027, focusing heavily on integration of third-party iPhone apps with Siri AI",
-   "links": [
-    "https://www.bloomberg.com/news/newsletters/2026-11-15/apple-siri-ai-app-integrations-power-smart-glasses-iphone-duo-2-face-id-plan?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc5NDc1NTM5NiwiZXhwIjoxNzk1MzYwMTk2LCJhcnRpY2xlSWQiOiJUT0pUTzFLSVVQU0IwMCIsImJjb25uZWN0SWQiOiJDNEVEQ0FFMUZBMDU0MEJFQTI0QTlGMjExQzFFOTA4MCJ9.sD2MDDH6K87teHUJRPGkh18bra-sYIwriETf_TH-zME"
-   ]
+   "title": "BREAKING: The petition to reinstate Jensen Huang as CEO of Nvidia, $NVDA, has reached over 100,000…",
+   "url": "https://x.com/KobeissiLetter/status/2121649553287864472",
+   "source": "𝕏 @KobeissiLetter",
+   "published_at": "2026-11-14T17:00:46Z",
+   "text": "BREAKING: The petition to reinstate Jensen Huang as CEO of Nvidia, $NVDA, has reached over 100,000 signatures. The petition has been signed by more than 53,000 shareholders and 6,200 current and former Nvidia employees. In the first 24 hours of the petition, nearly 15% of…",
+   "author_name": "The Kobeissi Letter",
+   "likes": 14802,
+   "story": "23andMe's Anne Wojcicki, formerly married to Google co-founder Sergey Brin, says Jensen Huang's affair shows what happens when CEOs think they are “untouchable”"
   },
   {
    "title": "Scott Bessent urges Nvidia to hire an outside CEO and wants answers within 10 days on whether it pu…",
@@ -53,8 +50,8 @@
    "url": "https://jakub.jankiewicz.org/blog/ai-code-open-source/",
    "source": "Hacker News",
    "published_at": "2026-11-15T14:46:58Z",
-   "text": "370 points and 235 comments on Hacker News.",
-   "points": 370,
+   "text": "474 points and 288 comments on Hacker News.",
+   "points": 474,
    "discussion": "https://news.ycombinator.com/item?id=50507303"
   },
   {
@@ -65,11 +62,11 @@
    "text": "Anthropic is endorsing SB 53, the California bill that governs powerful AI systems built by frontier AI developers like Anthropic."
   },
   {
-   "title": "How Jensen Huang built a multibillion-dollar business to let Chinese companies access Nvidia AI chi…",
-   "url": "https://www.wsj.com/tech/jensen-huang-backdoor-ai-data-centers-a5e4499d?st=geQhk5",
-   "source": "Wall Street Journal",
-   "published_at": "2026-11-15T05:56:21Z",
-   "text": "How Jensen Huang built a multibillion-dollar business to let Chinese companies access Nvidia AI chips in SE Asian data centers, exploiting a gap in US sanctions. Massive data centers in Southeast Asia exploited a gap in U.S. sanctions, providing crucial computing power for Chinese companies and a cover for alleged chip smuggling",
+   "title": "Sources: Howard Lutnick is expected to join Trump on Air Force One to China this week, after clashi…",
+   "url": "https://www.semafor.com/article/11/15/2026/under-pressure-lutnick-joins-trump-in-china",
+   "source": "Ashley Gold / Semafor",
+   "published_at": "2026-11-15T17:16:07Z",
+   "text": "Sources: Howard Lutnick is expected to join Trump on Air Force One to China this week, after clashing with Scott Bessent and others over Nvidia chip curbs. Howard Lutnick is expected to travel on Air Force One with the president to China this week as the commerce secretary fights to regain …",
    "via": "Techmeme"
   },
   {
@@ -77,16 +74,16 @@
    "url": "https://magazine.sebastianraschka.com/p/understanding-positional-embeddings",
    "source": "Hacker News",
    "published_at": "2026-11-15T12:14:06Z",
-   "text": "107 points and 2 comments on Hacker News.",
-   "points": 107,
+   "text": "119 points and 3 comments on Hacker News.",
+   "points": 119,
    "discussion": "https://news.ycombinator.com/item?id=50506376"
   },
   {
-   "title": "A post-Jensen Nvidia must reshuffle its leadership, reset its DC ties, and recognize that even the…",
-   "url": "https://www.ft.com/content/0e2720d7-ba0a-4469-a854-30931f907bd3",
-   "source": "Chris Miller / Financial Ti…",
-   "published_at": "2026-11-15T07:02:48Z",
-   "text": "A post-Jensen Nvidia must reshuffle its leadership, reset its DC ties, and recognize that even the US' most valuable company cannot dictate US foreign policy. The chip company has only itself to blame for a long list of adversaries — Jensen Huang's exit from Nvidia, the company he co-founded …",
+   "title": "How Jensen Huang built a multibillion-dollar business to let Chinese companies access Nvidia AI chi…",
+   "url": "https://www.wsj.com/tech/jensen-huang-backdoor-ai-data-centers-a5e4499d?st=geQhk5",
+   "source": "Wall Street Journal",
+   "published_at": "2026-11-15T05:56:21Z",
+   "text": "How Jensen Huang built a multibillion-dollar business to let Chinese companies access Nvidia AI chips in SE Asian data centers, exploiting a gap in US sanctions. Massive data centers in Southeast Asia exploited a gap in U.S. sanctions, providing crucial computing power for Chinese companies and a cover for alleged chip smuggling",
    "via": "Techmeme"
   },
   {
@@ -106,11 +103,11 @@
    "text": "Anthropic's framework for identifying, classifying, and mitigating potential harms from AI systems to support responsible development."
   },
   {
-   "title": "Nebuly, whose tech helps enterprises measure the business value of AI agents by analyzing their imp…",
-   "url": "https://tech.eu/2026/11/12/nebuly-raises-21m-series-a-to-turn-ai-investments-into-measurable-results/",
-   "source": "Tamara Djurickovic / Tech.eu",
-   "published_at": "2026-11-15T06:41:00Z",
-   "text": "Nebuly, whose tech helps enterprises measure the business value of AI agents by analyzing their impact on productivity and revenue, raised a $21M Series A. Nebuly develops a platform that helps enterprises measure the business value of AI agents by analysing their impact on productivity …",
+   "title": "A post-Jensen Nvidia must reshuffle its leadership, reset its DC ties, and recognize that even the…",
+   "url": "https://www.ft.com/content/0e2720d7-ba0a-4469-a854-30931f907bd3",
+   "source": "Chris Miller / Financial Ti…",
+   "published_at": "2026-11-15T07:02:48Z",
+   "text": "A post-Jensen Nvidia must reshuffle its leadership, reset its DC ties, and recognize that even the US' most valuable company cannot dictate US foreign policy. The chip company has only itself to blame for a long list of adversaries — Jensen Huang's exit from Nvidia, the company he co-founded …",
    "via": "Techmeme"
   },
   {
@@ -123,11 +120,11 @@
    "discussion": "https://news.ycombinator.com/item?id=50491097"
   },
   {
-   "title": "Inside the first AI Music Awards in Los Angeles, featuring AI announcers, lip-syncing, and human st…",
-   "url": "https://variety.com/2026/music/features/inside-first-ai-music-awards-sonic-intelligence-academy-1236947847/",
-   "source": "Corbin Bolies / Variety",
-   "published_at": "2026-11-15T12:04:21Z",
-   "text": "Inside the first AI Music Awards in Los Angeles, featuring AI announcers, lip-syncing, and human stand-ins, as the ceremony was mired in technical issues. I knew things were a little off when the first thing I heard on my walk to the AI Music Awards was “the winner...” followed by the sweet voice of Kelly Clarkson.",
+   "title": "Nebuly, whose tech helps enterprises measure the business value of AI agents by analyzing their imp…",
+   "url": "https://tech.eu/2026/11/12/nebuly-raises-21m-series-a-to-turn-ai-investments-into-measurable-results/",
+   "source": "Tamara Djurickovic / Tech.eu",
+   "published_at": "2026-11-15T06:41:00Z",
+   "text": "Nebuly, whose tech helps enterprises measure the business value of AI agents by analyzing their impact on productivity and revenue, raised a $21M Series A. Nebuly develops a platform that helps enterprises measure the business value of AI agents by analysing their impact on productivity …",
    "via": "Techmeme"
   }
  ],
