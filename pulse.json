@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-15T15:36:47Z",
+ "generated_at": "2026-11-15T16:38:27Z",
  "items": [
   {
    "title": "A petition to reinstate Jensen Huang as Nvidia CEO tops 100K signatures, including Elon Musk, Tim S…",
@@ -11,14 +11,17 @@
    "via": "Techmeme"
   },
   {
-   "title": "THIS IS WHY THEY TOOK DOWN JENSEN HUNAG Four months ago, Jensen Huang revealed he was about to BREA…",
-   "url": "https://x.com/adamemedia/status/2121522045829726718",
-   "source": "𝕏 @adamemedia",
-   "published_at": "2026-11-14T08:34:06Z",
-   "text": "THIS IS WHY THEY TOOK DOWN JENSEN HUNAG Four months ago, Jensen Huang revealed he was about to BREAK the closed-model monopoly over AI and completely reshape the AI industry. He made a direct THREAT to America’s biggest AI companies. He revealed Nvidia was working on a…",
-   "author_name": "ADAM",
-   "likes": 26853,
-   "story": "The Nvidia scandal presents a political challenge for the White House by tying together data centers, China, and corruption, all key voter issues in midterms"
+   "title": "NEW Power On: Apple’s next big product — smart glasses planned next year — will offer Siri AI app i…",
+   "url": "https://x.com/markgurman/status/2121982333238612094",
+   "source": "𝕏 @markgurman",
+   "published_at": "2026-11-15T15:03:07Z",
+   "text": "NEW Power On: Apple’s next big product — smart glasses planned next year — will offer Siri AI app integrations as its flagship feature. The idea: Book an Uber, reserve a table or order a coffee from your Apple Glasses — with apps running on paired iPhone.",
+   "author_name": "Mark Gurman",
+   "likes": 456,
+   "story": "Sources: Apple plans to unveil smart glasses at WWDC and ship them by the end of 2027, focusing heavily on integration of third-party iPhone apps with Siri AI",
+   "links": [
+    "https://www.bloomberg.com/news/newsletters/2026-11-15/apple-siri-ai-app-integrations-power-smart-glasses-iphone-duo-2-face-id-plan?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc5NDc1NDk0MiwiZXhwIjoxNzk1MzU5NzQyLCJhcnRpY2xlSWQiOiJUT0pUTzFLSVVQU0IwMCIsImJjb25uZWN0SWQiOiJDNEVEQ0FFMUZBMDU0MEJFQTI0QTlGMjExQzFFOTA4MCJ9.JxizrLMB_4yO_RhcaLRgamHBB02Qjf92voFxp6xtjaI"
+   ]
   },
   {
    "title": "Claude Code 2.1.325 released",
@@ -28,14 +31,48 @@
    "text": "Fixed a security issue in how zstd-compressed responses are decoded · Added a spinner tip in VS Code and similar integrated terminals about re-running a notebook cell, shown once Claude has read or edited a Jupyter notebook · Added a line under the error shown when your organization's policy blocks a request, saying how to continue: run /rewind and change the message, or run /clear · Added a note for Claude when a sandboxed git checkout, git stash or autostash pull cannot update protected files such as those in .claude"
   },
   {
+   "title": "THIS IS WHY THEY TOOK DOWN JENSEN HUNAG Four months ago, Jensen Huang revealed he was about to BREA…",
+   "url": "https://x.com/adamemedia/status/2121522045829726718",
+   "source": "𝕏 @adamemedia",
+   "published_at": "2026-11-14T08:34:06Z",
+   "text": "THIS IS WHY THEY TOOK DOWN JENSEN HUNAG Four months ago, Jensen Huang revealed he was about to BREAK the closed-model monopoly over AI and completely reshape the AI industry. He made a direct THREAT to America’s biggest AI companies. He revealed Nvidia was working on a…",
+   "author_name": "ADAM",
+   "likes": 27125,
+   "story": "Investigation: Howard Lutnick pushed to narrow chip curbs affecting a client of his former firm Cantor Fitzgerald whose Malaysia data center may serve Tencent"
+  },
+  {
+   "title": "Scott Bessent urges Nvidia to hire an outside CEO and wants answers within 10 days on whether it pu…",
+   "url": "https://www.bloomberg.com/news/articles/2026-11-15/bessent-says-nvidia-needs-dramatic-shakeup-after-huang-ouster",
+   "source": "Tony Czuczka / Bloomberg",
+   "published_at": "2026-11-15T15:51:40Z",
+   "text": "Scott Bessent urges Nvidia to hire an outside CEO and wants answers within 10 days on whether it pushed “seemingly illicit” chip sales to China to boost revenue. Treasury Secretary Scott Bessent said that Nvidia Corp. needs a “dramatic shakeup” in leadership after the ouster of Chief Executive Officer Jensen Huang.",
+   "via": "Techmeme"
+  },
+  {
+   "title": "All AI-generated code should be Open Source",
+   "url": "https://jakub.jankiewicz.org/blog/ai-code-open-source/",
+   "source": "Hacker News",
+   "published_at": "2026-11-15T14:46:58Z",
+   "text": "268 points and 169 comments on Hacker News.",
+   "points": 268,
+   "discussion": "https://news.ycombinator.com/item?id=50507303"
+  },
+  {
    "title": "This letter was sent to Nvidia's board today. A first for @atreidesmgmt Absolutely share @altcap be…",
    "url": "https://x.com/GavinSBaker/status/2121401397346521412",
    "source": "𝕏 @GavinSBaker",
    "published_at": "2026-11-14T00:34:41Z",
    "text": "This letter was sent to Nvidia's board today. A first for @atreidesmgmt Absolutely share @altcap belief that this letter outlines minimum acceptable standards.",
    "author_name": "Gavin Baker",
-   "likes": 12918,
+   "likes": 12942,
    "story": "23andMe's Anne Wojcicki, formerly married to Google co-founder Sergey Brin, says Jensen Huang's affair shows what happens when CEOs think they are “untouchable”"
+  },
+  {
+   "title": "Anthropic is endorsing SB 53",
+   "url": "https://www.anthropic.com/news/anthropic-is-endorsing-sb-53",
+   "source": "Anthropic",
+   "published_at": "2026-11-13T22:37:05Z",
+   "text": "Anthropic is endorsing SB 53, the California bill that governs powerful AI systems built by frontier AI developers like Anthropic."
   },
   {
    "title": "Nvidia insiders say Jensen Huang was prone to wild office tantrums, which a source says some employ…",
@@ -50,26 +87,9 @@
    "url": "https://magazine.sebastianraschka.com/p/understanding-positional-embeddings",
    "source": "Hacker News",
    "published_at": "2026-11-15T12:14:06Z",
-   "text": "73 points and 0 comments on Hacker News.",
-   "points": 73,
+   "text": "92 points and 1 comments on Hacker News.",
+   "points": 92,
    "discussion": "https://news.ycombinator.com/item?id=50506376"
-  },
-  {
-   "title": "Q: Could this be AI related? Mullin: We call it SI around here.",
-   "url": "https://x.com/Acyn/status/2121365035268386914",
-   "source": "𝕏 @Acyn",
-   "published_at": "2026-11-13T22:10:12Z",
-   "text": "Q: Could this be AI related? Mullin: We call it SI around here.",
-   "author_name": "Acyn",
-   "likes": 8812,
-   "story": "Sean Duffy blames Friday's FAA outage on copper-to-fiber wiring work at a remote facility, saying contractor L3Harris may have installed a “faulty router”"
-  },
-  {
-   "title": "Anthropic is endorsing SB 53",
-   "url": "https://www.anthropic.com/news/anthropic-is-endorsing-sb-53",
-   "source": "Anthropic",
-   "published_at": "2026-11-13T22:37:05Z",
-   "text": "Anthropic is endorsing SB 53, the California bill that governs powerful AI systems built by frontier AI developers like Anthropic."
   },
   {
    "title": "How Jensen Huang built a multibillion-dollar business to let Chinese companies access Nvidia AI chi…",
@@ -84,9 +104,16 @@
    "url": "https://www.netmeister.org/blog/claude-delusion.html",
    "source": "Hacker News",
    "published_at": "2026-11-14T13:36:17Z",
-   "text": "149 points and 195 comments on Hacker News.",
+   "text": "149 points and 197 comments on Hacker News.",
    "points": 149,
    "discussion": "https://news.ycombinator.com/item?id=50496921"
+  },
+  {
+   "title": "Understanding and addressing AI harms",
+   "url": "https://www.anthropic.com/news/our-approach-to-understanding-and-addressing-ai-harms",
+   "source": "Anthropic",
+   "published_at": "2026-11-13T22:37:05Z",
+   "text": "Anthropic's framework for identifying, classifying, and mitigating potential harms from AI systems to support responsible development."
   },
   {
    "title": "A post-Jensen Nvidia must reshuffle its leadership, reset its DC ties, and recognize that even the…",
@@ -101,33 +128,9 @@
    "url": "https://claude.com/resources/articles/claude-meetings",
    "source": "Hacker News",
    "published_at": "2026-11-13T22:39:15Z",
-   "text": "111 points and 87 comments on Hacker News.",
+   "text": "111 points and 88 comments on Hacker News.",
    "points": 111,
    "discussion": "https://news.ycombinator.com/item?id=50491097"
-  },
-  {
-   "title": "Understanding and addressing AI harms",
-   "url": "https://www.anthropic.com/news/our-approach-to-understanding-and-addressing-ai-harms",
-   "source": "Anthropic",
-   "published_at": "2026-11-13T22:37:05Z",
-   "text": "Anthropic's framework for identifying, classifying, and mitigating potential harms from AI systems to support responsible development."
-  },
-  {
-   "title": "Nebuly, whose tech helps enterprises measure the business value of AI agents by analyzing their imp…",
-   "url": "https://tech.eu/2026/11/12/nebuly-raises-21m-series-a-to-turn-ai-investments-into-measurable-results/",
-   "source": "Tamara Djurickovic / Tech.eu",
-   "published_at": "2026-11-15T06:41:00Z",
-   "text": "Nebuly, whose tech helps enterprises measure the business value of AI agents by analyzing their impact on productivity and revenue, raised a $21M Series A. Nebuly develops a platform that helps enterprises measure the business value of AI agents by analysing their impact on productivity …",
-   "via": "Techmeme"
-  },
-  {
-   "title": "Anthropic upgrades Claude Code Projects to run parallel AI workers",
-   "url": "https://claude.com/resources/articles/projects-redesigned",
-   "source": "Hacker News",
-   "published_at": "2026-11-14T00:28:11Z",
-   "text": "99 points and 95 comments on Hacker News.",
-   "points": 99,
-   "discussion": "https://news.ycombinator.com/item?id=50492141"
   }
  ],
  "sources": "curated, Techmeme, X (found via Techmeme, Reddit, the Internet Archive), Claude Code releases, Anthropic, Hacker News, Simon Willison"
