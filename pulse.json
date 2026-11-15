@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-15T12:27:26Z",
+ "generated_at": "2026-11-15T12:59:02Z",
  "items": [
   {
    "title": "A petition to reinstate Jensen Huang as Nvidia CEO tops 100K signatures, including Elon Musk, Tim S…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-14T08:34:06Z",
    "text": "THIS IS WHY THEY TOOK DOWN JENSEN HUNAG Four months ago, Jensen Huang revealed he was about to BREAK the closed-model monopoly over AI and completely reshape the AI industry. He made a direct THREAT to America’s biggest AI companies. He revealed Nvidia was working on a…",
    "author_name": "ADAM",
-   "likes": 25829,
+   "likes": 25992,
    "story": "Letter: Altimeter's Brad Gerstner and Atreides's Gavin Baker urge Nvidia's board to consider “the potential return of Jensen Huang”; they own $2.13B in Nvidia"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-11-13T22:10:12Z",
    "text": "Q: Could this be AI related? Mullin: We call it SI around here.",
    "author_name": "Acyn",
-   "likes": 8808,
+   "likes": 8807,
    "story": "Sean Duffy blames Friday's FAA outage on copper-to-fiber wiring work at a remote facility, saying contractor L3Harris may have installed a “faulty router”"
   },
   {
@@ -50,8 +50,8 @@
    "url": "https://github.com/Vaibhaav-Tiwari/deepseek-v3-jax",
    "source": "Hacker News",
    "published_at": "2026-11-14T15:04:15Z",
-   "text": "241 points and 23 comments on Hacker News.",
-   "points": 241,
+   "text": "246 points and 23 comments on Hacker News.",
+   "points": 246,
    "discussion": "https://news.ycombinator.com/item?id=50497589"
   },
   {
@@ -103,11 +103,11 @@
    "text": "Anthropic's framework for identifying, classifying, and mitigating potential harms from AI systems to support responsible development."
   },
   {
-   "title": "The Nvidia scandal presents a political challenge for the White House by tying together data center…",
-   "url": "https://www.washingtonpost.com/politics/2026/11/14/nvidia-scandal-hits-trumps-political-vulnerabilities-after-democratic-sweep/?pwapi_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyZWFzb24iOiJnaWZ0IiwibmJmIjoxNzk0NjMyNDAwLCJpc3MiOiJzdWJzY3JpcHRpb25zIiwiZXhwIjoxNzk2MDE0Nzk5LCJpYXQiOjE3OTQ2MzI0MDAsImp0aSI6ImVjYmZmMGQyLTdiZGEtNDNjOS1iMzViLTVlMzZiMTFhMzlkNyIsInVybCI6Imh0dHBzOi8vd3d3Lndhc2hpbmd0b25wb3N0LmNvbS9wb2xpdGljcy8yMDI2LzExLzE0L252aWRpYS1zY2FuZGFsLWhpdHMtdHJ1bXBzLXBvbGl0aWNhbC12dWxuZXJhYmlsaXRpZXMtYWZ0ZXItZGVtb2NyYXRpYy1zd2VlcC8ifQ.RnLIqxnR82OE4UaovEWu2ATiORrkV7A6UVgwGsg-1xQ&itid=gfta",
-   "source": "Washington Post",
-   "published_at": "2026-11-15T04:16:33Z",
-   "text": "The Nvidia scandal presents a political challenge for the White House by tying together data centers, China, and corruption, all key voter issues in midterms. The scandal connects to voter concerns over AI, data centers, China and corruption. — Sex. Money. Power. Espionage.",
+   "title": "Nebuly, whose tech helps enterprises measure the business value of AI agents by analyzing their imp…",
+   "url": "https://tech.eu/2026/11/12/nebuly-raises-21m-series-a-to-turn-ai-investments-into-measurable-results/",
+   "source": "Tamara Djurickovic / Tech.eu",
+   "published_at": "2026-11-15T06:41:00Z",
+   "text": "Nebuly, whose tech helps enterprises measure the business value of AI agents by analyzing their impact on productivity and revenue, raised a $21M Series A. Nebuly develops a platform that helps enterprises measure the business value of AI agents by analysing their impact on productivity …",
    "via": "Techmeme"
   },
   {
@@ -120,11 +120,11 @@
    "discussion": "https://news.ycombinator.com/item?id=50492141"
   },
   {
-   "title": "Nebuly, whose tech helps enterprises measure the business value of AI agents by analyzing their imp…",
-   "url": "https://tech.eu/2026/11/12/nebuly-raises-21m-series-a-to-turn-ai-investments-into-measurable-results/",
-   "source": "Tamara Djurickovic / Tech.eu",
-   "published_at": "2026-11-15T06:41:00Z",
-   "text": "Nebuly, whose tech helps enterprises measure the business value of AI agents by analyzing their impact on productivity and revenue, raised a $21M Series A. Nebuly develops a platform that helps enterprises measure the business value of AI agents by analysing their impact on productivity …",
+   "title": "The Nvidia scandal presents a political challenge for the White House by tying together data center…",
+   "url": "https://www.washingtonpost.com/politics/2026/11/14/nvidia-scandal-hits-trumps-political-vulnerabilities-after-democratic-sweep/?pwapi_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyZWFzb24iOiJnaWZ0IiwibmJmIjoxNzk0NjMyNDAwLCJpc3MiOiJzdWJzY3JpcHRpb25zIiwiZXhwIjoxNzk2MDE0Nzk5LCJpYXQiOjE3OTQ2MzI0MDAsImp0aSI6ImVjYmZmMGQyLTdiZGEtNDNjOS1iMzViLTVlMzZiMTFhMzlkNyIsInVybCI6Imh0dHBzOi8vd3d3Lndhc2hpbmd0b25wb3N0LmNvbS9wb2xpdGljcy8yMDI2LzExLzE0L252aWRpYS1zY2FuZGFsLWhpdHMtdHJ1bXBzLXBvbGl0aWNhbC12dWxuZXJhYmlsaXRpZXMtYWZ0ZXItZGVtb2NyYXRpYy1zd2VlcC8ifQ.RnLIqxnR82OE4UaovEWu2ATiORrkV7A6UVgwGsg-1xQ&itid=gfta",
+   "source": "Washington Post",
+   "published_at": "2026-11-15T04:16:33Z",
+   "text": "The Nvidia scandal presents a political challenge for the White House by tying together data centers, China, and corruption, all key voter issues in midterms. The scandal connects to voter concerns over AI, data centers, China and corruption. — Sex. Money. Power. Espionage.",
    "via": "Techmeme"
   }
  ],
