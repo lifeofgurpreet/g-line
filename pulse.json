@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-15T14:33:20Z",
+ "generated_at": "2026-11-15T15:05:20Z",
  "items": [
   {
    "title": "A petition to reinstate Jensen Huang as Nvidia CEO tops 100K signatures, including Elon Musk, Tim S…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-14T08:34:06Z",
    "text": "THIS IS WHY THEY TOOK DOWN JENSEN HUNAG Four months ago, Jensen Huang revealed he was about to BREAK the closed-model monopoly over AI and completely reshape the AI industry. He made a direct THREAT to America’s biggest AI companies. He revealed Nvidia was working on a…",
    "author_name": "ADAM",
-   "likes": 26515,
+   "likes": 26680,
    "story": "Unlike other larger-than-life tech founders, Jensen Huang lacked super-voting shares in Nvidia, making it easier for him to lose control of the company"
   },
   {
@@ -28,14 +28,14 @@
    "text": "Fixed a security issue in how zstd-compressed responses are decoded · Added a spinner tip in VS Code and similar integrated terminals about re-running a notebook cell, shown once Claude has read or edited a Jupyter notebook · Added a line under the error shown when your organization's policy blocks a request, saying how to continue: run /rewind and change the message, or run /clear · Added a note for Claude when a sandboxed git checkout, git stash or autostash pull cannot update protected files such as those in .claude"
   },
   {
-   "title": "Q: Could this be AI related? Mullin: We call it SI around here.",
-   "url": "https://x.com/Acyn/status/2121365035268386914",
-   "source": "𝕏 @Acyn",
-   "published_at": "2026-11-13T22:10:12Z",
-   "text": "Q: Could this be AI related? Mullin: We call it SI around here.",
-   "author_name": "Acyn",
-   "likes": 8807,
-   "story": "Sean Duffy blames Friday's FAA outage on copper-to-fiber wiring work at a remote facility, saying contractor L3Harris may have installed a “faulty router”"
+   "title": "This letter was sent to Nvidia's board today. A first for @atreidesmgmt Absolutely share @altcap be…",
+   "url": "https://x.com/GavinSBaker/status/2121401397346521412",
+   "source": "𝕏 @GavinSBaker",
+   "published_at": "2026-11-14T00:34:41Z",
+   "text": "This letter was sent to Nvidia's board today. A first for @atreidesmgmt Absolutely share @altcap belief that this letter outlines minimum acceptable standards.",
+   "author_name": "Gavin Baker",
+   "likes": 12910,
+   "story": "Letter: Altimeter's Brad Gerstner and Atreides's Gavin Baker urge Nvidia's board to consider “the potential return of Jensen Huang”; they own $2.13B in Nvidia"
   },
   {
    "title": "How Jensen Huang built a multibillion-dollar business to let Chinese companies access Nvidia AI chi…",
@@ -53,6 +53,16 @@
    "text": "148 points and 195 comments on Hacker News.",
    "points": 148,
    "discussion": "https://news.ycombinator.com/item?id=50496921"
+  },
+  {
+   "title": "Q: Could this be AI related? Mullin: We call it SI around here.",
+   "url": "https://x.com/Acyn/status/2121365035268386914",
+   "source": "𝕏 @Acyn",
+   "published_at": "2026-11-13T22:10:12Z",
+   "text": "Q: Could this be AI related? Mullin: We call it SI around here.",
+   "author_name": "Acyn",
+   "likes": 8810,
+   "story": "Sean Duffy blames Friday's FAA outage on copper-to-fiber wiring work at a remote facility, saying contractor L3Harris may have installed a “faulty router”"
   },
   {
    "title": "Anthropic is endorsing SB 53",
@@ -116,14 +126,6 @@
    "source": "Washington Post",
    "published_at": "2026-11-15T04:16:33Z",
    "text": "The Nvidia scandal presents a political challenge for the White House by tying together data centers, China, and corruption, all key voter issues in midterms. The scandal connects to voter concerns over AI, data centers, China and corruption. — Sex. Money. Power. Espionage.",
-   "via": "Techmeme"
-  },
-  {
-   "title": "Nidus, which is developing AI-powered tech for manufacturing robots used by US defense industrial c…",
-   "url": "https://www.upstartsmedia.com/p/nidus-ai-robotics-raises-30m",
-   "source": "Alex Konrad / Upstarts Media",
-   "published_at": "2026-11-15T06:50:55Z",
-   "text": "Nidus, which is developing AI-powered tech for manufacturing robots used by US defense industrial companies, raised $30M across a pre-seed and a seed. The startup backed by Kleiner Perkins and Costanoa says it's reached “seven figures” in bookings with defense industrial customers in just 4 months.",
    "via": "Techmeme"
   }
  ],
