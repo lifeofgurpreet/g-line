@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-15T15:05:20Z",
+ "generated_at": "2026-11-15T15:36:47Z",
  "items": [
   {
    "title": "A petition to reinstate Jensen Huang as Nvidia CEO tops 100K signatures, including Elon Musk, Tim S…",
@@ -17,8 +17,8 @@
    "published_at": "2026-11-14T08:34:06Z",
    "text": "THIS IS WHY THEY TOOK DOWN JENSEN HUNAG Four months ago, Jensen Huang revealed he was about to BREAK the closed-model monopoly over AI and completely reshape the AI industry. He made a direct THREAT to America’s biggest AI companies. He revealed Nvidia was working on a…",
    "author_name": "ADAM",
-   "likes": 26680,
-   "story": "Unlike other larger-than-life tech founders, Jensen Huang lacked super-voting shares in Nvidia, making it easier for him to lose control of the company"
+   "likes": 26853,
+   "story": "The Nvidia scandal presents a political challenge for the White House by tying together data centers, China, and corruption, all key voter issues in midterms"
   },
   {
    "title": "Claude Code 2.1.325 released",
@@ -34,8 +34,42 @@
    "published_at": "2026-11-14T00:34:41Z",
    "text": "This letter was sent to Nvidia's board today. A first for @atreidesmgmt Absolutely share @altcap belief that this letter outlines minimum acceptable standards.",
    "author_name": "Gavin Baker",
-   "likes": 12910,
-   "story": "Letter: Altimeter's Brad Gerstner and Atreides's Gavin Baker urge Nvidia's board to consider “the potential return of Jensen Huang”; they own $2.13B in Nvidia"
+   "likes": 12918,
+   "story": "23andMe's Anne Wojcicki, formerly married to Google co-founder Sergey Brin, says Jensen Huang's affair shows what happens when CEOs think they are “untouchable”"
+  },
+  {
+   "title": "Nvidia insiders say Jensen Huang was prone to wild office tantrums, which a source says some employ…",
+   "url": "https://nypost.com/2026/11/14/business/how-ex-nvidia-ceo-jensen-huang-threw-tantrums-in-the-office-dressed-down-tech-execs-i-hope-you-die/",
+   "source": "Thomas Barrabi / New York P…",
+   "published_at": "2026-11-15T06:20:59Z",
+   "text": "Nvidia insiders say Jensen Huang was prone to wild office tantrums, which a source says some employees were surprised hadn't leaked before his public downfall. Ousted Nvidia CEO Jensen Huang was prone to wild temper tantrums at the office, according to company insiders …",
+   "via": "Techmeme"
+  },
+  {
+   "title": "Understanding Positional Embeddings in Modern LLMs",
+   "url": "https://magazine.sebastianraschka.com/p/understanding-positional-embeddings",
+   "source": "Hacker News",
+   "published_at": "2026-11-15T12:14:06Z",
+   "text": "73 points and 0 comments on Hacker News.",
+   "points": 73,
+   "discussion": "https://news.ycombinator.com/item?id=50506376"
+  },
+  {
+   "title": "Q: Could this be AI related? Mullin: We call it SI around here.",
+   "url": "https://x.com/Acyn/status/2121365035268386914",
+   "source": "𝕏 @Acyn",
+   "published_at": "2026-11-13T22:10:12Z",
+   "text": "Q: Could this be AI related? Mullin: We call it SI around here.",
+   "author_name": "Acyn",
+   "likes": 8812,
+   "story": "Sean Duffy blames Friday's FAA outage on copper-to-fiber wiring work at a remote facility, saying contractor L3Harris may have installed a “faulty router”"
+  },
+  {
+   "title": "Anthropic is endorsing SB 53",
+   "url": "https://www.anthropic.com/news/anthropic-is-endorsing-sb-53",
+   "source": "Anthropic",
+   "published_at": "2026-11-13T22:37:05Z",
+   "text": "Anthropic is endorsing SB 53, the California bill that governs powerful AI systems built by frontier AI developers like Anthropic."
   },
   {
    "title": "How Jensen Huang built a multibillion-dollar business to let Chinese companies access Nvidia AI chi…",
@@ -50,43 +84,9 @@
    "url": "https://www.netmeister.org/blog/claude-delusion.html",
    "source": "Hacker News",
    "published_at": "2026-11-14T13:36:17Z",
-   "text": "148 points and 195 comments on Hacker News.",
-   "points": 148,
+   "text": "149 points and 195 comments on Hacker News.",
+   "points": 149,
    "discussion": "https://news.ycombinator.com/item?id=50496921"
-  },
-  {
-   "title": "Q: Could this be AI related? Mullin: We call it SI around here.",
-   "url": "https://x.com/Acyn/status/2121365035268386914",
-   "source": "𝕏 @Acyn",
-   "published_at": "2026-11-13T22:10:12Z",
-   "text": "Q: Could this be AI related? Mullin: We call it SI around here.",
-   "author_name": "Acyn",
-   "likes": 8810,
-   "story": "Sean Duffy blames Friday's FAA outage on copper-to-fiber wiring work at a remote facility, saying contractor L3Harris may have installed a “faulty router”"
-  },
-  {
-   "title": "Anthropic is endorsing SB 53",
-   "url": "https://www.anthropic.com/news/anthropic-is-endorsing-sb-53",
-   "source": "Anthropic",
-   "published_at": "2026-11-13T22:37:05Z",
-   "text": "Anthropic is endorsing SB 53, the California bill that governs powerful AI systems built by frontier AI developers like Anthropic."
-  },
-  {
-   "title": "Nvidia insiders say Jensen Huang was prone to wild office tantrums, which a source says some employ…",
-   "url": "https://nypost.com/2026/11/14/business/how-ex-nvidia-ceo-jensen-huang-threw-tantrums-in-the-office-dressed-down-tech-execs-i-hope-you-die/",
-   "source": "Thomas Barrabi / New York P…",
-   "published_at": "2026-11-15T06:20:59Z",
-   "text": "Nvidia insiders say Jensen Huang was prone to wild office tantrums, which a source says some employees were surprised hadn't leaked before his public downfall. Ousted Nvidia CEO Jensen Huang was prone to wild temper tantrums at the office, according to company insiders …",
-   "via": "Techmeme"
-  },
-  {
-   "title": "Claude Meetings",
-   "url": "https://claude.com/resources/articles/claude-meetings",
-   "source": "Hacker News",
-   "published_at": "2026-11-13T22:39:15Z",
-   "text": "111 points and 87 comments on Hacker News.",
-   "points": 111,
-   "discussion": "https://news.ycombinator.com/item?id=50491097"
   },
   {
    "title": "A post-Jensen Nvidia must reshuffle its leadership, reset its DC ties, and recognize that even the…",
@@ -97,13 +97,13 @@
    "via": "Techmeme"
   },
   {
-   "title": "Anthropic upgrades Claude Code Projects to run parallel AI workers",
-   "url": "https://claude.com/resources/articles/projects-redesigned",
+   "title": "Claude Meetings",
+   "url": "https://claude.com/resources/articles/claude-meetings",
    "source": "Hacker News",
-   "published_at": "2026-11-14T00:28:11Z",
-   "text": "99 points and 95 comments on Hacker News.",
-   "points": 99,
-   "discussion": "https://news.ycombinator.com/item?id=50492141"
+   "published_at": "2026-11-13T22:39:15Z",
+   "text": "111 points and 87 comments on Hacker News.",
+   "points": 111,
+   "discussion": "https://news.ycombinator.com/item?id=50491097"
   },
   {
    "title": "Understanding and addressing AI harms",
@@ -121,12 +121,13 @@
    "via": "Techmeme"
   },
   {
-   "title": "The Nvidia scandal presents a political challenge for the White House by tying together data center…",
-   "url": "https://www.washingtonpost.com/politics/2026/11/14/nvidia-scandal-hits-trumps-political-vulnerabilities-after-democratic-sweep/?pwapi_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyZWFzb24iOiJnaWZ0IiwibmJmIjoxNzk0NjMyNDAwLCJpc3MiOiJzdWJzY3JpcHRpb25zIiwiZXhwIjoxNzk2MDE0Nzk5LCJpYXQiOjE3OTQ2MzI0MDAsImp0aSI6ImVjYmZmMGQyLTdiZGEtNDNjOS1iMzViLTVlMzZiMTFhMzlkNyIsInVybCI6Imh0dHBzOi8vd3d3Lndhc2hpbmd0b25wb3N0LmNvbS9wb2xpdGljcy8yMDI2LzExLzE0L252aWRpYS1zY2FuZGFsLWhpdHMtdHJ1bXBzLXBvbGl0aWNhbC12dWxuZXJhYmlsaXRpZXMtYWZ0ZXItZGVtb2NyYXRpYy1zd2VlcC8ifQ.RnLIqxnR82OE4UaovEWu2ATiORrkV7A6UVgwGsg-1xQ&itid=gfta",
-   "source": "Washington Post",
-   "published_at": "2026-11-15T04:16:33Z",
-   "text": "The Nvidia scandal presents a political challenge for the White House by tying together data centers, China, and corruption, all key voter issues in midterms. The scandal connects to voter concerns over AI, data centers, China and corruption. — Sex. Money. Power. Espionage.",
-   "via": "Techmeme"
+   "title": "Anthropic upgrades Claude Code Projects to run parallel AI workers",
+   "url": "https://claude.com/resources/articles/projects-redesigned",
+   "source": "Hacker News",
+   "published_at": "2026-11-14T00:28:11Z",
+   "text": "99 points and 95 comments on Hacker News.",
+   "points": 99,
+   "discussion": "https://news.ycombinator.com/item?id=50492141"
   }
  ],
  "sources": "curated, Techmeme, X (found via Techmeme, Reddit, the Internet Archive), Claude Code releases, Anthropic, Hacker News, Simon Willison"
