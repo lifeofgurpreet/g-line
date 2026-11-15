@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-15T14:02:16Z",
+ "generated_at": "2026-11-15T14:33:20Z",
  "items": [
   {
    "title": "A petition to reinstate Jensen Huang as Nvidia CEO tops 100K signatures, including Elon Musk, Tim S…",
@@ -17,8 +17,8 @@
    "published_at": "2026-11-14T08:34:06Z",
    "text": "THIS IS WHY THEY TOOK DOWN JENSEN HUNAG Four months ago, Jensen Huang revealed he was about to BREAK the closed-model monopoly over AI and completely reshape the AI industry. He made a direct THREAT to America’s biggest AI companies. He revealed Nvidia was working on a…",
    "author_name": "ADAM",
-   "likes": 26339,
-   "story": "Letter: Altimeter's Brad Gerstner and Atreides's Gavin Baker urge Nvidia's board to consider “the potential return of Jensen Huang”; they own $2.13B in Nvidia"
+   "likes": 26515,
+   "story": "Unlike other larger-than-life tech founders, Jensen Huang lacked super-voting shares in Nvidia, making it easier for him to lose control of the company"
   },
   {
    "title": "Claude Code 2.1.325 released",
@@ -46,13 +46,13 @@
    "via": "Techmeme"
   },
   {
-   "title": "Show HN: DeepSeek V3 in ~200 lines of pure Jax",
-   "url": "https://github.com/Vaibhaav-Tiwari/deepseek-v3-jax",
+   "title": "The Claude Delusion",
+   "url": "https://www.netmeister.org/blog/claude-delusion.html",
    "source": "Hacker News",
-   "published_at": "2026-11-14T15:04:15Z",
-   "text": "251 points and 23 comments on Hacker News.",
-   "points": 251,
-   "discussion": "https://news.ycombinator.com/item?id=50497589"
+   "published_at": "2026-11-14T13:36:17Z",
+   "text": "148 points and 195 comments on Hacker News.",
+   "points": 148,
+   "discussion": "https://news.ycombinator.com/item?id=50496921"
   },
   {
    "title": "Anthropic is endorsing SB 53",
@@ -70,13 +70,13 @@
    "via": "Techmeme"
   },
   {
-   "title": "The Claude Delusion",
-   "url": "https://www.netmeister.org/blog/claude-delusion.html",
+   "title": "Claude Meetings",
+   "url": "https://claude.com/resources/articles/claude-meetings",
    "source": "Hacker News",
-   "published_at": "2026-11-14T13:36:17Z",
-   "text": "148 points and 195 comments on Hacker News.",
-   "points": 148,
-   "discussion": "https://news.ycombinator.com/item?id=50496921"
+   "published_at": "2026-11-13T22:39:15Z",
+   "text": "111 points and 87 comments on Hacker News.",
+   "points": 111,
+   "discussion": "https://news.ycombinator.com/item?id=50491097"
   },
   {
    "title": "A post-Jensen Nvidia must reshuffle its leadership, reset its DC ties, and recognize that even the…",
@@ -87,13 +87,13 @@
    "via": "Techmeme"
   },
   {
-   "title": "Claude Meetings",
-   "url": "https://claude.com/resources/articles/claude-meetings",
+   "title": "Anthropic upgrades Claude Code Projects to run parallel AI workers",
+   "url": "https://claude.com/resources/articles/projects-redesigned",
    "source": "Hacker News",
-   "published_at": "2026-11-13T22:39:15Z",
-   "text": "111 points and 87 comments on Hacker News.",
-   "points": 111,
-   "discussion": "https://news.ycombinator.com/item?id=50491097"
+   "published_at": "2026-11-14T00:28:11Z",
+   "text": "99 points and 95 comments on Hacker News.",
+   "points": 99,
+   "discussion": "https://news.ycombinator.com/item?id=50492141"
   },
   {
    "title": "Understanding and addressing AI harms",
@@ -111,20 +111,19 @@
    "via": "Techmeme"
   },
   {
-   "title": "Anthropic upgrades Claude Code Projects to run parallel AI workers",
-   "url": "https://claude.com/resources/articles/projects-redesigned",
-   "source": "Hacker News",
-   "published_at": "2026-11-14T00:28:11Z",
-   "text": "99 points and 95 comments on Hacker News.",
-   "points": 99,
-   "discussion": "https://news.ycombinator.com/item?id=50492141"
-  },
-  {
    "title": "The Nvidia scandal presents a political challenge for the White House by tying together data center…",
    "url": "https://www.washingtonpost.com/politics/2026/11/14/nvidia-scandal-hits-trumps-political-vulnerabilities-after-democratic-sweep/?pwapi_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyZWFzb24iOiJnaWZ0IiwibmJmIjoxNzk0NjMyNDAwLCJpc3MiOiJzdWJzY3JpcHRpb25zIiwiZXhwIjoxNzk2MDE0Nzk5LCJpYXQiOjE3OTQ2MzI0MDAsImp0aSI6ImVjYmZmMGQyLTdiZGEtNDNjOS1iMzViLTVlMzZiMTFhMzlkNyIsInVybCI6Imh0dHBzOi8vd3d3Lndhc2hpbmd0b25wb3N0LmNvbS9wb2xpdGljcy8yMDI2LzExLzE0L252aWRpYS1zY2FuZGFsLWhpdHMtdHJ1bXBzLXBvbGl0aWNhbC12dWxuZXJhYmlsaXRpZXMtYWZ0ZXItZGVtb2NyYXRpYy1zd2VlcC8ifQ.RnLIqxnR82OE4UaovEWu2ATiORrkV7A6UVgwGsg-1xQ&itid=gfta",
    "source": "Washington Post",
    "published_at": "2026-11-15T04:16:33Z",
    "text": "The Nvidia scandal presents a political challenge for the White House by tying together data centers, China, and corruption, all key voter issues in midterms. The scandal connects to voter concerns over AI, data centers, China and corruption. — Sex. Money. Power. Espionage.",
+   "via": "Techmeme"
+  },
+  {
+   "title": "Nidus, which is developing AI-powered tech for manufacturing robots used by US defense industrial c…",
+   "url": "https://www.upstartsmedia.com/p/nidus-ai-robotics-raises-30m",
+   "source": "Alex Konrad / Upstarts Media",
+   "published_at": "2026-11-15T06:50:55Z",
+   "text": "Nidus, which is developing AI-powered tech for manufacturing robots used by US defense industrial companies, raised $30M across a pre-seed and a seed. The startup backed by Kleiner Perkins and Costanoa says it's reached “seven figures” in bookings with defense industrial customers in just 4 months.",
    "via": "Techmeme"
   }
  ],
