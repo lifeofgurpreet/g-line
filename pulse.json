@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-15T17:41:27Z",
+ "generated_at": "2026-11-15T18:13:18Z",
  "items": [
   {
    "title": "Sources: Apple plans to unveil smart glasses at WWDC and ship them by the end of 2027, focusing hea…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-15T00:13:00Z",
    "text": "BREAKING: Former Nvidia CEO Jensen Huang reportedly told a top executive \"I hope you die\" during a meeting",
    "author_name": "Kalshi",
-   "likes": 35720,
+   "likes": 36255,
    "story": "Nvidia insiders say Jensen Huang was prone to wild office tantrums, which a source says some employees were surprised hadn't leaked before his public downfall"
   },
   {
@@ -34,8 +34,8 @@
    "published_at": "2026-11-14T17:00:46Z",
    "text": "BREAKING: The petition to reinstate Jensen Huang as CEO of Nvidia, $NVDA, has reached over 100,000 signatures. The petition has been signed by more than 53,000 shareholders and 6,200 current and former Nvidia employees. In the first 24 hours of the petition, nearly 15% of…",
    "author_name": "The Kobeissi Letter",
-   "likes": 14802,
-   "story": "23andMe's Anne Wojcicki, formerly married to Google co-founder Sergey Brin, says Jensen Huang's affair shows what happens when CEOs think they are “untouchable”"
+   "likes": 14821,
+   "story": "A petition to reinstate Jensen Huang as Nvidia CEO tops 100K signatures, including Elon Musk, Tim Sweeney, and Garry Tan; organizers say 5K+ Nvidia staff signed"
   },
   {
    "title": "Scott Bessent urges Nvidia to hire an outside CEO and wants answers within 10 days on whether it pu…",
@@ -50,9 +50,19 @@
    "url": "https://jakub.jankiewicz.org/blog/ai-code-open-source/",
    "source": "Hacker News",
    "published_at": "2026-11-15T14:46:58Z",
-   "text": "474 points and 288 comments on Hacker News.",
-   "points": 474,
+   "text": "563 points and 329 comments on Hacker News.",
+   "points": 563,
    "discussion": "https://news.ycombinator.com/item?id=50507303"
+  },
+  {
+   "title": "THIS IS WHY THEY TOOK DOWN JENSEN HUNAG Four months ago, Jensen Huang revealed he was about to BREA…",
+   "url": "https://x.com/adamemedia/status/2121522045829726718",
+   "source": "𝕏 @adamemedia",
+   "published_at": "2026-11-14T08:34:06Z",
+   "text": "THIS IS WHY THEY TOOK DOWN JENSEN HUNAG Four months ago, Jensen Huang revealed he was about to BREAK the closed-model monopoly over AI and completely reshape the AI industry. He made a direct THREAT to America’s biggest AI companies. He revealed Nvidia was working on a…",
+   "author_name": "ADAM",
+   "likes": 27479,
+   "story": "How Jensen Huang built a multibillion-dollar business to let Chinese companies access Nvidia AI chips in SE Asian data centers, exploiting a gap in US sanctions"
   },
   {
    "title": "Anthropic is endorsing SB 53",
@@ -70,20 +80,30 @@
    "via": "Techmeme"
   },
   {
+   "title": "This letter was sent to Nvidia's board today. A first for @atreidesmgmt Absolutely share @altcap be…",
+   "url": "https://x.com/GavinSBaker/status/2121401397346521412",
+   "source": "𝕏 @GavinSBaker",
+   "published_at": "2026-11-14T00:34:41Z",
+   "text": "This letter was sent to Nvidia's board today. A first for @atreidesmgmt Absolutely share @altcap belief that this letter outlines minimum acceptable standards.",
+   "author_name": "Gavin Baker",
+   "likes": 12971,
+   "story": "23andMe's Anne Wojcicki, formerly married to Google co-founder Sergey Brin, says Jensen Huang's affair shows what happens when CEOs think they are “untouchable”"
+  },
+  {
    "title": "Understanding Positional Embeddings in Modern LLMs",
    "url": "https://magazine.sebastianraschka.com/p/understanding-positional-embeddings",
    "source": "Hacker News",
    "published_at": "2026-11-15T12:14:06Z",
-   "text": "119 points and 3 comments on Hacker News.",
-   "points": 119,
+   "text": "127 points and 3 comments on Hacker News.",
+   "points": 127,
    "discussion": "https://news.ycombinator.com/item?id=50506376"
   },
   {
-   "title": "How Jensen Huang built a multibillion-dollar business to let Chinese companies access Nvidia AI chi…",
-   "url": "https://www.wsj.com/tech/jensen-huang-backdoor-ai-data-centers-a5e4499d?st=geQhk5",
-   "source": "Wall Street Journal",
-   "published_at": "2026-11-15T05:56:21Z",
-   "text": "How Jensen Huang built a multibillion-dollar business to let Chinese companies access Nvidia AI chips in SE Asian data centers, exploiting a gap in US sanctions. Massive data centers in Southeast Asia exploited a gap in U.S. sanctions, providing crucial computing power for Chinese companies and a cover for alleged chip smuggling",
+   "title": "A post-Jensen Nvidia must reshuffle its leadership, reset its DC ties, and recognize that even the…",
+   "url": "https://www.ft.com/content/0e2720d7-ba0a-4469-a854-30931f907bd3",
+   "source": "Chris Miller / Financial Ti…",
+   "published_at": "2026-11-15T07:02:48Z",
+   "text": "A post-Jensen Nvidia must reshuffle its leadership, reset its DC ties, and recognize that even the US' most valuable company cannot dictate US foreign policy. The chip company has only itself to blame for a long list of adversaries — Jensen Huang's exit from Nvidia, the company he co-founded …",
    "via": "Techmeme"
   },
   {
@@ -101,23 +121,6 @@
    "source": "Anthropic",
    "published_at": "2026-11-13T22:37:05Z",
    "text": "Anthropic's framework for identifying, classifying, and mitigating potential harms from AI systems to support responsible development."
-  },
-  {
-   "title": "A post-Jensen Nvidia must reshuffle its leadership, reset its DC ties, and recognize that even the…",
-   "url": "https://www.ft.com/content/0e2720d7-ba0a-4469-a854-30931f907bd3",
-   "source": "Chris Miller / Financial Ti…",
-   "published_at": "2026-11-15T07:02:48Z",
-   "text": "A post-Jensen Nvidia must reshuffle its leadership, reset its DC ties, and recognize that even the US' most valuable company cannot dictate US foreign policy. The chip company has only itself to blame for a long list of adversaries — Jensen Huang's exit from Nvidia, the company he co-founded …",
-   "via": "Techmeme"
-  },
-  {
-   "title": "Claude Meetings",
-   "url": "https://claude.com/resources/articles/claude-meetings",
-   "source": "Hacker News",
-   "published_at": "2026-11-13T22:39:15Z",
-   "text": "111 points and 88 comments on Hacker News.",
-   "points": 111,
-   "discussion": "https://news.ycombinator.com/item?id=50491097"
   },
   {
    "title": "Nebuly, whose tech helps enterprises measure the business value of AI agents by analyzing their imp…",
