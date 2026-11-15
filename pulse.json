@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-15T22:59:32Z",
+ "generated_at": "2026-11-15T23:31:29Z",
  "items": [
   {
    "title": "Sources: Jensen Huang has discussed a comeback as Nvidia CEO with confidants, as allies form a “war…",
@@ -17,8 +17,8 @@
    "published_at": "2026-11-15T00:13:00Z",
    "text": "BREAKING: Former Nvidia CEO Jensen Huang reportedly told a top executive \"I hope you die\" during a meeting",
    "author_name": "Kalshi",
-   "likes": 39130,
-   "story": "Nvidia insiders say Jensen Huang was prone to wild office tantrums, which a source says some employees were surprised hadn't leaked before his public downfall"
+   "likes": 39339,
+   "story": "A post-Jensen Nvidia must reshuffle its leadership, reset its DC ties, and recognize that even the US' most valuable company cannot dictate US foreign policy"
   },
   {
    "title": "Claude Code 2.1.325 released",
@@ -28,14 +28,17 @@
    "text": "Fixed a security issue in how zstd-compressed responses are decoded · Added a spinner tip in VS Code and similar integrated terminals about re-running a notebook cell, shown once Claude has read or edited a Jupyter notebook · Added a line under the error shown when your organization's policy blocks a request, saying how to continue: run /rewind and change the message, or run /clear · Added a note for Claude when a sandboxed git checkout, git stash or autostash pull cannot update protected files such as those in .claude"
   },
   {
-   "title": "BREAKING: The petition to reinstate Jensen Huang as CEO of Nvidia, $NVDA, has reached over 100,000…",
-   "url": "https://x.com/KobeissiLetter/status/2121649553287864472",
-   "source": "𝕏 @KobeissiLetter",
-   "published_at": "2026-11-14T17:00:46Z",
-   "text": "BREAKING: The petition to reinstate Jensen Huang as CEO of Nvidia, $NVDA, has reached over 100,000 signatures. The petition has been signed by more than 53,000 shareholders and 6,200 current and former Nvidia employees. In the first 24 hours of the petition, nearly 15% of…",
-   "author_name": "The Kobeissi Letter",
-   "likes": 15008,
-   "story": "23andMe's Anne Wojcicki, formerly married to Google co-founder Sergey Brin, says Jensen Huang's affair shows what happens when CEOs think they are “untouchable”"
+   "title": "NEW Power On: Apple’s next big product — smart glasses planned next year — will offer Siri AI app i…",
+   "url": "https://x.com/markgurman/status/2121982333238612094",
+   "source": "𝕏 @markgurman",
+   "published_at": "2026-11-15T15:03:07Z",
+   "text": "NEW Power On: Apple’s next big product — smart glasses planned next year — will offer Siri AI app integrations as its flagship feature. The idea: Book an Uber, reserve a table or order a coffee from your Apple Glasses — with apps running on paired iPhone.",
+   "author_name": "Mark Gurman",
+   "likes": 828,
+   "story": "Sources: Apple plans to unveil smart glasses at WWDC and ship them by the end of 2027, focusing heavily on integration of third-party iPhone apps with Siri AI",
+   "links": [
+    "https://www.bloomberg.com/news/newsletters/2026-11-15/apple-siri-ai-app-integrations-power-smart-glasses-iphone-duo-2-face-id-plan?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc5NDc1NDk0MiwiZXhwIjoxNzk1MzU5NzQyLCJhcnRpY2xlSWQiOiJUT0pUTzFLSVVQU0IwMCIsImJjb25uZWN0SWQiOiJDNEVEQ0FFMUZBMDU0MEJFQTI0QTlGMjExQzFFOTA4MCJ9.JxizrLMB_4yO_RhcaLRgamHBB02Qjf92voFxp6xtjaI"
+   ]
   },
   {
    "title": "Scott Bessent urges Nvidia to hire an outside CEO and wants answers within 10 days on whether it pu…",
@@ -50,22 +53,9 @@
    "url": "https://jakub.jankiewicz.org/blog/ai-code-open-source/",
    "source": "Hacker News",
    "published_at": "2026-11-15T14:46:58Z",
-   "text": "1019 points and 565 comments on Hacker News.",
-   "points": 1019,
+   "text": "1031 points and 569 comments on Hacker News.",
+   "points": 1031,
    "discussion": "https://news.ycombinator.com/item?id=50507303"
-  },
-  {
-   "title": "NEW Power On: Apple’s next big product — smart glasses planned next year — will offer Siri AI app i…",
-   "url": "https://x.com/markgurman/status/2121982333238612094",
-   "source": "𝕏 @markgurman",
-   "published_at": "2026-11-15T15:03:07Z",
-   "text": "NEW Power On: Apple’s next big product — smart glasses planned next year — will offer Siri AI app integrations as its flagship feature. The idea: Book an Uber, reserve a table or order a coffee from your Apple Glasses — with apps running on paired iPhone.",
-   "author_name": "Mark Gurman",
-   "likes": 816,
-   "story": "Sources: Apple plans to unveil smart glasses at WWDC and ship them by the end of 2027, focusing heavily on integration of third-party iPhone apps with Siri AI",
-   "links": [
-    "https://www.bloomberg.com/news/newsletters/2026-11-15/apple-siri-ai-app-integrations-power-smart-glasses-iphone-duo-2-face-id-plan?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc5NDc1NDk0MiwiZXhwIjoxNzk1MzU5NzQyLCJhcnRpY2xlSWQiOiJUT0pUTzFLSVVQU0IwMCIsImJjb25uZWN0SWQiOiJDNEVEQ0FFMUZBMDU0MEJFQTI0QTlGMjExQzFFOTA4MCJ9.JxizrLMB_4yO_RhcaLRgamHBB02Qjf92voFxp6xtjaI"
-   ]
   },
   {
    "title": "Anthropic is endorsing SB 53",
@@ -87,8 +77,8 @@
    "url": "https://magazine.sebastianraschka.com/p/understanding-positional-embeddings",
    "source": "Hacker News",
    "published_at": "2026-11-15T12:14:06Z",
-   "text": "185 points and 23 comments on Hacker News.",
-   "points": 185,
+   "text": "189 points and 24 comments on Hacker News.",
+   "points": 189,
    "discussion": "https://news.ycombinator.com/item?id=50506376"
   },
   {
@@ -116,11 +106,11 @@
    "text": "Anthropic's framework for identifying, classifying, and mitigating potential harms from AI systems to support responsible development."
   },
   {
-   "title": "A post-Jensen Nvidia must reshuffle its leadership, reset its DC ties, and recognize that even the…",
-   "url": "https://www.ft.com/content/0e2720d7-ba0a-4469-a854-30931f907bd3",
-   "source": "Chris Miller / Financial Ti…",
-   "published_at": "2026-11-15T07:02:48Z",
-   "text": "A post-Jensen Nvidia must reshuffle its leadership, reset its DC ties, and recognize that even the US' most valuable company cannot dictate US foreign policy. The chip company has only itself to blame for a long list of adversaries — Jensen Huang's exit from Nvidia, the company he co-founded …",
+   "title": "The US and Pax Silica allies, including Japan, the UK, and India, agree to create a joint list of A…",
+   "url": "https://www.ft.com/content/3c2197fc-9618-4838-91e6-522ce1a96a22",
+   "source": "Financial Times",
+   "published_at": "2026-11-15T18:56:44Z",
+   "text": "The US and Pax Silica allies, including Japan, the UK, and India, agree to create a joint list of AI technologies and supply chains to protect from China. Pact comes ahead of Donald Trump's meeting with Xi Jinping at the Asia-Pacific Economic Cooperation forum in Shenzhen",
    "via": "Techmeme"
   },
   {
@@ -131,6 +121,14 @@
    "text": "100 points and 95 comments on Hacker News.",
    "points": 100,
    "discussion": "https://news.ycombinator.com/item?id=50492141"
+  },
+  {
+   "title": "Sources: Anthropic's IPO is ~7x oversubscribed; Anthropic and some of its backers are seeking to ra…",
+   "url": "https://www.bloomberg.com/news/features/2026-11-15/anthropic-s-ipo-makes-dario-amodei-the-new-face-of-the-ai-boom",
+   "source": "Bloomberg",
+   "published_at": "2026-11-15T23:03:13Z",
+   "text": "Sources: Anthropic's IPO is ~7x oversubscribed; Anthropic and some of its backers are seeking to raise up to $90.4B via the IPO and a separate private placement. The startup is set for the biggest IPO of all time, putting AI investors' hopes and dreams — and fears — onto a frontier model maker.",
+   "via": "Techmeme"
   }
  ],
  "sources": "curated, Techmeme, X (found via Techmeme, Reddit, the Internet Archive), Claude Code releases, Anthropic, Hacker News, Simon Willison"
