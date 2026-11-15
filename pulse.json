@@ -1,13 +1,13 @@
 {
  "schema": 1,
- "generated_at": "2026-11-15T18:44:53Z",
+ "generated_at": "2026-11-15T19:16:25Z",
  "items": [
   {
-   "title": "Sources: Apple plans to unveil smart glasses at WWDC and ship them by the end of 2027, focusing hea…",
-   "url": "https://www.bloomberg.com/news/newsletters/2026-11-15/apple-siri-ai-app-integrations-power-smart-glasses-iphone-duo-2-face-id-plan?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc5NDc1NTQ2MSwiZXhwIjoxNzk1MzYwMjYxLCJhcnRpY2xlSWQiOiJUT0pUTzFLSVVQU0IwMCIsImJjb25uZWN0SWQiOiJDNEVEQ0FFMUZBMDU0MEJFQTI0QTlGMjExQzFFOTA4MCJ9.2TeBxZfpuwFLhhyEns0-GWBuy-YbU6nhgWwD5smKMD4",
-   "source": "Mark Gurman / Bloomberg",
-   "published_at": "2026-11-15T16:31:37Z",
-   "text": "Sources: Apple plans to unveil smart glasses at WWDC and ship them by the end of 2027, focusing heavily on integration of third-party iPhone apps with Siri AI. Also: A look at the race to bring Face ID to the iPhone Duo. … Apple's just-announced Siri AI integrations are the centerpiece …",
+   "title": "Scott Bessent urges Nvidia to hire an outside CEO and wants answers within 10 days on whether it pu…",
+   "url": "https://www.bloomberg.com/news/articles/2026-11-15/bessent-says-nvidia-needs-dramatic-shakeup-after-huang-ouster",
+   "source": "Tony Czuczka / Bloomberg",
+   "published_at": "2026-11-15T15:51:40Z",
+   "text": "Scott Bessent urges Nvidia to hire an outside CEO and wants answers within 10 days on whether it pushed “seemingly illicit” chip sales to China to boost revenue. Treasury Secretary Scott Bessent said that Nvidia Corp. needs a “dramatic shakeup” in leadership after the ouster of Chief Executive Officer Jensen Huang.",
    "via": "Techmeme"
   },
   {
@@ -17,7 +17,7 @@
    "published_at": "2026-11-15T00:13:00Z",
    "text": "BREAKING: Former Nvidia CEO Jensen Huang reportedly told a top executive \"I hope you die\" during a meeting",
    "author_name": "Kalshi",
-   "likes": 36784,
+   "likes": 37202,
    "story": "Nvidia insiders say Jensen Huang was prone to wild office tantrums, which a source says some employees were surprised hadn't leaked before his public downfall"
   },
   {
@@ -34,15 +34,15 @@
    "published_at": "2026-11-14T17:00:46Z",
    "text": "BREAKING: The petition to reinstate Jensen Huang as CEO of Nvidia, $NVDA, has reached over 100,000 signatures. The petition has been signed by more than 53,000 shareholders and 6,200 current and former Nvidia employees. In the first 24 hours of the petition, nearly 15% of…",
    "author_name": "The Kobeissi Letter",
-   "likes": 14849,
+   "likes": 14879,
    "story": "A petition to reinstate Jensen Huang as Nvidia CEO tops 100K signatures, including Elon Musk, Tim Sweeney, and Garry Tan; organizers say 5K+ Nvidia staff signed"
   },
   {
-   "title": "Scott Bessent urges Nvidia to hire an outside CEO and wants answers within 10 days on whether it pu…",
-   "url": "https://www.bloomberg.com/news/articles/2026-11-15/bessent-says-nvidia-needs-dramatic-shakeup-after-huang-ouster",
-   "source": "Tony Czuczka / Bloomberg",
-   "published_at": "2026-11-15T15:51:40Z",
-   "text": "Scott Bessent urges Nvidia to hire an outside CEO and wants answers within 10 days on whether it pushed “seemingly illicit” chip sales to China to boost revenue. Treasury Secretary Scott Bessent said that Nvidia Corp. needs a “dramatic shakeup” in leadership after the ouster of Chief Executive Officer Jensen Huang.",
+   "title": "Sources: Apple plans to unveil smart glasses at WWDC and ship them by the end of 2027, focusing hea…",
+   "url": "https://www.bloomberg.com/news/newsletters/2026-11-15/apple-siri-ai-app-integrations-power-smart-glasses-iphone-duo-2-face-id-plan?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc5NDc1NTQ2MSwiZXhwIjoxNzk1MzYwMjYxLCJhcnRpY2xlSWQiOiJUT0pUTzFLSVVQU0IwMCIsImJjb25uZWN0SWQiOiJDNEVEQ0FFMUZBMDU0MEJFQTI0QTlGMjExQzFFOTA4MCJ9.2TeBxZfpuwFLhhyEns0-GWBuy-YbU6nhgWwD5smKMD4",
+   "source": "Mark Gurman / Bloomberg",
+   "published_at": "2026-11-15T16:31:37Z",
+   "text": "Sources: Apple plans to unveil smart glasses at WWDC and ship them by the end of 2027, focusing heavily on integration of third-party iPhone apps with Siri AI. Also: A look at the race to bring Face ID to the iPhone Duo. … Apple's just-announced Siri AI integrations are the centerpiece …",
    "via": "Techmeme"
   },
   {
@@ -50,19 +50,9 @@
    "url": "https://jakub.jankiewicz.org/blog/ai-code-open-source/",
    "source": "Hacker News",
    "published_at": "2026-11-15T14:46:58Z",
-   "text": "671 points and 359 comments on Hacker News.",
-   "points": 671,
+   "text": "755 points and 404 comments on Hacker News.",
+   "points": 755,
    "discussion": "https://news.ycombinator.com/item?id=50507303"
-  },
-  {
-   "title": "This letter was sent to Nvidia's board today. A first for @atreidesmgmt Absolutely share @altcap be…",
-   "url": "https://x.com/GavinSBaker/status/2121401397346521412",
-   "source": "𝕏 @GavinSBaker",
-   "published_at": "2026-11-14T00:34:41Z",
-   "text": "This letter was sent to Nvidia's board today. A first for @atreidesmgmt Absolutely share @altcap belief that this letter outlines minimum acceptable standards.",
-   "author_name": "Gavin Baker",
-   "likes": 12980,
-   "story": "23andMe's Anne Wojcicki, formerly married to Google co-founder Sergey Brin, says Jensen Huang's affair shows what happens when CEOs think they are “untouchable”"
   },
   {
    "title": "Anthropic is endorsing SB 53",
@@ -84,8 +74,8 @@
    "url": "https://magazine.sebastianraschka.com/p/understanding-positional-embeddings",
    "source": "Hacker News",
    "published_at": "2026-11-15T12:14:06Z",
-   "text": "138 points and 3 comments on Hacker News.",
-   "points": 138,
+   "text": "143 points and 6 comments on Hacker News.",
+   "points": 143,
    "discussion": "https://news.ycombinator.com/item?id=50506376"
   },
   {
@@ -128,6 +118,14 @@
    "text": "111 points and 88 comments on Hacker News.",
    "points": 111,
    "discussion": "https://news.ycombinator.com/item?id=50491097"
+  },
+  {
+   "title": "Inside the first AI Music Awards in Los Angeles, featuring AI announcers, lip-syncing, and human st…",
+   "url": "https://variety.com/2026/music/features/inside-first-ai-music-awards-sonic-intelligence-academy-1236947847/",
+   "source": "Corbin Bolies / Variety",
+   "published_at": "2026-11-15T12:04:21Z",
+   "text": "Inside the first AI Music Awards in Los Angeles, featuring AI announcers, lip-syncing, and human stand-ins, as the ceremony was mired in technical issues. I knew things were a little off when the first thing I heard on my walk to the AI Music Awards was “the winner...” followed by the sweet voice of Kelly Clarkson.",
+   "via": "Techmeme"
   }
  ],
  "sources": "curated, Techmeme, X (found via Techmeme, Reddit, the Internet Archive), Claude Code releases, Anthropic, Hacker News, Simon Willison"
