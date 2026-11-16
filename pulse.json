@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-16T03:45:24Z",
+ "generated_at": "2026-11-16T04:17:00Z",
  "items": [
   {
    "title": "Sources: Jensen Huang has discussed a comeback as Nvidia CEO with confidants, as allies form a “war…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-15T15:03:07Z",
    "text": "NEW Power On: Apple’s next big product — smart glasses planned next year — will offer Siri AI app integrations as its flagship feature. The idea: Book an Uber, reserve a table or order a coffee from your Apple Glasses — with apps running on paired iPhone.",
    "author_name": "Mark Gurman",
-   "likes": 928,
+   "likes": 935,
    "story": "Sources: Apple plans to unveil smart glasses at WWDC and ship them by the end of 2027, focusing heavily on integration of third-party iPhone apps with Siri AI",
    "links": [
     "https://www.bloomberg.com/news/newsletters/2026-11-15/apple-siri-ai-app-integrations-power-smart-glasses-iphone-duo-2-face-id-plan?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc5NDc1NDk0MiwiZXhwIjoxNzk1MzU5NzQyLCJhcnRpY2xlSWQiOiJUT0pUTzFLSVVQU0IwMCIsImJjb25uZWN0SWQiOiJDNEVEQ0FFMUZBMDU0MEJFQTI0QTlGMjExQzFFOTA4MCJ9.JxizrLMB_4yO_RhcaLRgamHBB02Qjf92voFxp6xtjaI"
@@ -31,11 +31,11 @@
    "text": "Fixed a security issue in how zstd-compressed responses are decoded · Added a spinner tip in VS Code and similar integrated terminals about re-running a notebook cell, shown once Claude has read or edited a Jupyter notebook · Added a line under the error shown when your organization's policy blocks a request, saying how to continue: run /rewind and change the message, or run /clear · Added a note for Claude when a sandboxed git checkout, git stash or autostash pull cannot update protected files such as those in .claude"
   },
   {
-   "title": "Sources: Howard Lutnick is expected to join Trump on Air Force One to China this week, after clashi…",
-   "url": "https://www.semafor.com/article/11/15/2026/under-pressure-lutnick-joins-trump-in-china",
-   "source": "Ashley Gold / Semafor",
-   "published_at": "2026-11-15T17:16:07Z",
-   "text": "Sources: Howard Lutnick is expected to join Trump on Air Force One to China this week, after clashing with Scott Bessent and others over Nvidia chip curbs. Howard Lutnick is expected to travel on Air Force One with the president to China this week as the commerce secretary fights to regain …",
+   "title": "Scott Bessent urges Nvidia to hire an outside CEO and wants answers within 10 days on whether it pu…",
+   "url": "https://www.bloomberg.com/news/articles/2026-11-15/bessent-says-nvidia-needs-dramatic-shakeup-after-huang-ouster",
+   "source": "Tony Czuczka / Bloomberg",
+   "published_at": "2026-11-15T15:51:40Z",
+   "text": "Scott Bessent urges Nvidia to hire an outside CEO and wants answers within 10 days on whether it pushed “seemingly illicit” chip sales to China to boost revenue. Nvidia Corp. is facing intense pressure as it embarks on a search for a new chief executive after ousting Jensen Huang …",
    "via": "Techmeme"
   },
   {
@@ -43,8 +43,8 @@
    "url": "https://steveblank.com/2026/11/15/whats-next-for-nvidia/",
    "source": "Hacker News",
    "published_at": "2026-11-15T23:55:55Z",
-   "text": "106 points and 121 comments on Hacker News.",
-   "points": 106,
+   "text": "133 points and 153 comments on Hacker News.",
+   "points": 133,
    "discussion": "https://news.ycombinator.com/item?id=50512235"
   },
   {
@@ -55,11 +55,11 @@
    "text": "Anthropic is endorsing SB 53, the California bill that governs powerful AI systems built by frontier AI developers like Anthropic."
   },
   {
-   "title": "Alibaba releases Qwen4-Max, its new flagship 2.4T-parameter MoE model with a 1M-token context windo…",
-   "url": "https://qwen.ai/blog?id=qwen4-max",
-   "source": "Qwen",
-   "published_at": "2026-11-16T03:41:04Z",
-   "text": "Alibaba releases Qwen4-Max, its new flagship 2.4T-parameter MoE model with a 1M-token context window, saying it beats Qwen3.8-Max with up to ~50% fewer tokens. · QwenTeam丨Translations:.体中文 — Today, we are introducing Qwen4-Max, your new AI teammate for work, creativity, and discovery.",
+   "title": "Sources: Howard Lutnick is expected to join Trump on Air Force One to China this week, after clashi…",
+   "url": "https://www.semafor.com/article/11/15/2026/under-pressure-lutnick-joins-trump-in-china",
+   "source": "Ashley Gold / Semafor",
+   "published_at": "2026-11-15T17:16:07Z",
+   "text": "Sources: Howard Lutnick is expected to join Trump on Air Force One to China this week, after clashing with Scott Bessent and others over Nvidia chip curbs. Howard Lutnick is expected to travel on Air Force One with the president to China this week as the commerce secretary fights to regain …",
    "via": "Techmeme"
   },
   {
@@ -67,16 +67,16 @@
    "url": "https://magazine.sebastianraschka.com/p/understanding-positional-embeddings",
    "source": "Hacker News",
    "published_at": "2026-11-15T12:14:06Z",
-   "text": "217 points and 27 comments on Hacker News.",
-   "points": 217,
+   "text": "218 points and 27 comments on Hacker News.",
+   "points": 218,
    "discussion": "https://news.ycombinator.com/item?id=50506376"
   },
   {
-   "title": "The US and Pax Silica allies, including Japan, the UK, and India, agree to create a joint list of A…",
-   "url": "https://www.ft.com/content/3c2197fc-9618-4838-91e6-522ce1a96a22",
-   "source": "Financial Times",
-   "published_at": "2026-11-15T18:56:44Z",
-   "text": "The US and Pax Silica allies, including Japan, the UK, and India, agree to create a joint list of AI technologies and supply chains to protect from China. Pact comes ahead of Donald Trump's meeting with Xi Jinping at the Asia-Pacific Economic Cooperation forum in Shenzhen",
+   "title": "Apple launches its Health AI Usage Study, with an OpenEvidence-powered app that answers health ques…",
+   "url": "https://techcrunch.com/2026/11/15/apple-launches-new-app-to-study-how-people-use-ai-for-health/",
+   "source": "Ivan Mehta / TechCrunch",
+   "published_at": "2026-11-16T04:11:20Z",
+   "text": "Apple launches its Health AI Usage Study, with an OpenEvidence-powered app that answers health questions and can use HealthKit data, for up to 200,000 US users",
    "via": "Techmeme"
   },
   {
@@ -96,11 +96,11 @@
    "text": "Anthropic's framework for identifying, classifying, and mitigating potential harms from AI systems to support responsible development."
   },
   {
-   "title": "Sources: Jensen Huang had planned to pull back Nvidia's aggressive financing and told neoclouds to…",
-   "url": "https://www.wsj.com/tech/ai/nvidias-days-as-an-open-checkbook-for-the-ai-economy-are-numbered-90c7b388",
-   "source": "Wall Street Journal",
-   "published_at": "2026-11-16T03:31:20Z",
-   "text": "Sources: Jensen Huang had planned to pull back Nvidia's aggressive financing and told neoclouds to get upfront customer payments; Colette Kress may go further. Interim CEO Colette Kress is expected to rein in deals after a stretch in which Nvidia aggressively financed computing deals and startup investments",
+   "title": "Alibaba releases Qwen4-Max, its new flagship 2.4T-parameter MoE model with a 1M-token context windo…",
+   "url": "https://qwen.ai/blog?id=qwen4-max",
+   "source": "Qwen",
+   "published_at": "2026-11-16T03:41:04Z",
+   "text": "Alibaba releases Qwen4-Max, its new flagship 2.4T-parameter MoE model with a 1M-token context window, saying it beats Qwen3.8-Max with up to ~50% fewer tokens. Today, we are introducing Qwen4-Max, your new AI teammate for work, creativity, and discovery.",
    "via": "Techmeme"
   },
   {
@@ -108,8 +108,8 @@
    "url": "https://www.youtube.com/watch?v=WPj3aQ-xxpI",
    "source": "Hacker News",
    "published_at": "2026-11-12T05:29:24Z",
-   "text": "366 points and 185 comments on Hacker News.",
-   "points": 366,
+   "text": "373 points and 191 comments on Hacker News.",
+   "points": 373,
    "discussion": "https://news.ycombinator.com/item?id=50463399"
   },
   {
@@ -121,11 +121,11 @@
    "via": "Techmeme"
   },
   {
-   "title": "Sources: Anthropic's IPO is ~7x oversubscribed; Anthropic and some of its backers are seeking to ra…",
-   "url": "https://www.bloomberg.com/news/features/2026-11-15/anthropic-s-ipo-makes-dario-amodei-the-new-face-of-the-ai-boom",
-   "source": "Bloomberg",
-   "published_at": "2026-11-15T23:03:13Z",
-   "text": "Sources: Anthropic's IPO is ~7x oversubscribed; Anthropic and some of its backers are seeking to raise up to $90.4B via the IPO and a separate private placement. The startup is set for the biggest IPO of all time, putting AI investors' hopes and dreams — and fears — onto a frontier model maker.",
+   "title": "The US and Pax Silica allies, including Japan, the UK, and India, agree to create a joint list of A…",
+   "url": "https://www.ft.com/content/3c2197fc-9618-4838-91e6-522ce1a96a22",
+   "source": "Financial Times",
+   "published_at": "2026-11-15T18:56:44Z",
+   "text": "The US and Pax Silica allies, including Japan, the UK, and India, agree to create a joint list of AI technologies and supply chains to protect from China. Pact comes ahead of Donald Trump's meeting with Xi Jinping at the Asia-Pacific Economic Cooperation forum in Shenzhen",
    "via": "Techmeme"
   }
  ],
