@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-16T01:38:54Z",
+ "generated_at": "2026-11-16T02:10:30Z",
  "items": [
   {
    "title": "Sources: Jensen Huang has discussed a comeback as Nvidia CEO with confidants, as allies form a “war…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-15T00:13:00Z",
    "text": "BREAKING: Former Nvidia CEO Jensen Huang reportedly told a top executive \"I hope you die\" during a meeting",
    "author_name": "Kalshi",
-   "likes": 39989,
+   "likes": 40122,
    "story": "Nvidia insiders say Jensen Huang was prone to wild office tantrums, which a source says some employees were surprised hadn't leaked before his public downfall"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-11-15T15:03:07Z",
    "text": "NEW Power On: Apple’s next big product — smart glasses planned next year — will offer Siri AI app integrations as its flagship feature. The idea: Book an Uber, reserve a table or order a coffee from your Apple Glasses — with apps running on paired iPhone.",
    "author_name": "Mark Gurman",
-   "likes": 881,
+   "likes": 893,
    "story": "Sources: Apple plans to unveil smart glasses at WWDC and ship them by the end of 2027, focusing heavily on integration of third-party iPhone apps with Siri AI",
    "links": [
     "https://www.bloomberg.com/news/newsletters/2026-11-15/apple-siri-ai-app-integrations-power-smart-glasses-iphone-duo-2-face-id-plan?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc5NDc1NDk0MiwiZXhwIjoxNzk1MzU5NzQyLCJhcnRpY2xlSWQiOiJUT0pUTzFLSVVQU0IwMCIsImJjb25uZWN0SWQiOiJDNEVEQ0FFMUZBMDU0MEJFQTI0QTlGMjExQzFFOTA4MCJ9.JxizrLMB_4yO_RhcaLRgamHBB02Qjf92voFxp6xtjaI"
@@ -49,13 +49,13 @@
    "via": "Techmeme"
   },
   {
-   "title": "All AI-generated code should be Open Source",
-   "url": "https://jakub.jankiewicz.org/blog/ai-code-open-source/",
+   "title": "What's Next for Nvidia?",
+   "url": "https://steveblank.com/2026/11/15/whats-next-for-nvidia/",
    "source": "Hacker News",
-   "published_at": "2026-11-15T14:46:58Z",
-   "text": "1082 points and 591 comments on Hacker News.",
-   "points": 1082,
-   "discussion": "https://news.ycombinator.com/item?id=50507303"
+   "published_at": "2026-11-15T23:55:55Z",
+   "text": "67 points and 62 comments on Hacker News.",
+   "points": 67,
+   "discussion": "https://news.ycombinator.com/item?id=50512235"
   },
   {
    "title": "Anthropic is endorsing SB 53",
@@ -77,8 +77,8 @@
    "url": "https://magazine.sebastianraschka.com/p/understanding-positional-embeddings",
    "source": "Hacker News",
    "published_at": "2026-11-15T12:14:06Z",
-   "text": "203 points and 27 comments on Hacker News.",
-   "points": 203,
+   "text": "206 points and 27 comments on Hacker News.",
+   "points": 206,
    "discussion": "https://news.ycombinator.com/item?id=50506376"
   },
   {
@@ -94,8 +94,8 @@
    "url": "https://www.netmeister.org/blog/claude-delusion.html",
    "source": "Hacker News",
    "published_at": "2026-11-14T13:36:17Z",
-   "text": "151 points and 199 comments on Hacker News.",
-   "points": 151,
+   "text": "152 points and 199 comments on Hacker News.",
+   "points": 152,
    "discussion": "https://news.ycombinator.com/item?id=50496921"
   },
   {
@@ -114,19 +114,20 @@
    "via": "Techmeme"
   },
   {
+   "title": "Claude Code and Codex reverse engineered my 1994 Jeep's ECU over a $3 Arduino [video]",
+   "url": "https://www.youtube.com/watch?v=WPj3aQ-xxpI",
+   "source": "Hacker News",
+   "published_at": "2026-11-12T05:29:24Z",
+   "text": "342 points and 173 comments on Hacker News.",
+   "points": 342,
+   "discussion": "https://news.ycombinator.com/item?id=50463399"
+  },
+  {
    "title": "The US and Pax Silica allies, including Japan, the UK, and India, agree to create a joint list of A…",
    "url": "https://www.ft.com/content/3c2197fc-9618-4838-91e6-522ce1a96a22",
    "source": "Financial Times",
    "published_at": "2026-11-15T18:56:44Z",
    "text": "The US and Pax Silica allies, including Japan, the UK, and India, agree to create a joint list of AI technologies and supply chains to protect from China. Pact comes ahead of Donald Trump's meeting with Xi Jinping at the Asia-Pacific Economic Cooperation forum in Shenzhen",
-   "via": "Techmeme"
-  },
-  {
-   "title": "Sources: Anthropic's IPO is ~7x oversubscribed; Anthropic and some of its backers are seeking to ra…",
-   "url": "https://www.bloomberg.com/news/features/2026-11-15/anthropic-s-ipo-makes-dario-amodei-the-new-face-of-the-ai-boom",
-   "source": "Bloomberg",
-   "published_at": "2026-11-15T23:03:13Z",
-   "text": "Sources: Anthropic's IPO is ~7x oversubscribed; Anthropic and some of its backers are seeking to raise up to $90.4B via the IPO and a separate private placement. The startup is set for the biggest IPO of all time, putting AI investors' hopes and dreams — and fears — onto a frontier model maker.",
    "via": "Techmeme"
   }
  ],
