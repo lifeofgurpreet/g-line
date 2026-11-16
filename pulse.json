@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-16T06:25:13Z",
+ "generated_at": "2026-11-16T06:57:23Z",
  "items": [
   {
    "title": "Sources: Jensen Huang has discussed a comeback as Nvidia CEO with confidants, as allies form a “war…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-15T15:03:07Z",
    "text": "NEW Power On: Apple’s next big product — smart glasses planned next year — will offer Siri AI app integrations as its flagship feature. The idea: Book an Uber, reserve a table or order a coffee from your Apple Glasses — with apps running on paired iPhone.",
    "author_name": "Mark Gurman",
-   "likes": 959,
+   "likes": 964,
    "story": "Sources: Apple plans to unveil smart glasses at WWDC and ship them by the end of 2027, focusing heavily on integration of third-party iPhone apps with Siri AI",
    "links": [
     "https://www.bloomberg.com/news/newsletters/2026-11-15/apple-siri-ai-app-integrations-power-smart-glasses-iphone-duo-2-face-id-plan?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc5NDc1NDk0MiwiZXhwIjoxNzk1MzU5NzQyLCJhcnRpY2xlSWQiOiJUT0pUTzFLSVVQU0IwMCIsImJjb25uZWN0SWQiOiJDNEVEQ0FFMUZBMDU0MEJFQTI0QTlGMjExQzFFOTA4MCJ9.JxizrLMB_4yO_RhcaLRgamHBB02Qjf92voFxp6xtjaI"
@@ -43,8 +43,8 @@
    "url": "https://steveblank.com/2026/11/15/whats-next-for-nvidia/",
    "source": "Hacker News",
    "published_at": "2026-11-15T23:55:55Z",
-   "text": "184 points and 240 comments on Hacker News.",
-   "points": 184,
+   "text": "192 points and 250 comments on Hacker News.",
+   "points": 192,
    "discussion": "https://news.ycombinator.com/item?id=50512235"
   },
   {
@@ -55,11 +55,11 @@
    "text": "Anthropic is endorsing SB 53, the California bill that governs powerful AI systems built by frontier AI developers like Anthropic."
   },
   {
-   "title": "Alibaba releases Qwen4-Max, its new flagship 2.4T-parameter MoE model with a 1M-token context windo…",
-   "url": "https://qwen.ai/blog?id=qwen4-max",
-   "source": "Qwen",
-   "published_at": "2026-11-16T03:41:04Z",
-   "text": "Alibaba releases Qwen4-Max, its new flagship 2.4T-parameter MoE model with a 1M-token context window, saying it beats Qwen3.8-Max with up to ~50% fewer tokens. Today, we are introducing Qwen4-Max, your new AI teammate for work, creativity, and discovery.",
+   "title": "Apple launches its Health AI Usage Study, with an OpenEvidence-powered app that answers health ques…",
+   "url": "https://techcrunch.com/2026/11/15/apple-launches-new-app-to-study-how-people-use-ai-for-health/",
+   "source": "Ivan Mehta / TechCrunch",
+   "published_at": "2026-11-16T04:11:20Z",
+   "text": "Apple launches its Health AI Usage Study, with an OpenEvidence-powered app that answers health questions and can use HealthKit data, for up to 200,000 US users. Big AI labs like OpenAI and Anthropic have made their bets on offering chatbots that can answer health-related queries with specialized features.",
    "via": "Techmeme"
   },
   {
@@ -72,11 +72,11 @@
    "discussion": "https://news.ycombinator.com/item?id=50496921"
   },
   {
-   "title": "Apple launches its Health AI Usage Study, with an OpenEvidence-powered app that answers health ques…",
-   "url": "https://techcrunch.com/2026/11/15/apple-launches-new-app-to-study-how-people-use-ai-for-health/",
-   "source": "Ivan Mehta / TechCrunch",
-   "published_at": "2026-11-16T04:11:20Z",
-   "text": "Apple launches its Health AI Usage Study, with an OpenEvidence-powered app that answers health questions and can use HealthKit data, for up to 200,000 US users. Big AI labs like OpenAI and Anthropic have made their bets on offering chatbots that can answer health-related queries with specialized features.",
+   "title": "Alibaba releases Qwen4-Max, its new flagship 2.4T-parameter MoE model with a 1M-token context windo…",
+   "url": "https://qwen.ai/blog?id=qwen4-max",
+   "source": "Qwen",
+   "published_at": "2026-11-16T03:41:04Z",
+   "text": "Alibaba releases Qwen4-Max, its new flagship 2.4T-parameter MoE model with a 1M-token context window, saying it beats Qwen3.8-Max with up to ~50% fewer tokens. Today, we are introducing Qwen4-Max, your new AI teammate for work, creativity, and discovery.",
    "via": "Techmeme"
   },
   {
@@ -84,8 +84,8 @@
    "url": "https://www.youtube.com/watch?v=WPj3aQ-xxpI",
    "source": "Hacker News",
    "published_at": "2026-11-12T05:29:24Z",
-   "text": "399 points and 196 comments on Hacker News.",
-   "points": 399,
+   "text": "408 points and 196 comments on Hacker News.",
+   "points": 408,
    "discussion": "https://news.ycombinator.com/item?id=50463399"
   },
   {
@@ -104,14 +104,6 @@
    "via": "Techmeme"
   },
   {
-   "title": "Sources: the Trump admin plans to name Nvidia, Amazon, Microsoft, OpenAI, and Anthropic among 24+ A…",
-   "url": "https://www.wsj.com/tech/ai/trump-administration-to-name-nvidia-among-ai-national-champions-c9284344",
-   "source": "Wall Street Journal",
-   "published_at": "2026-11-16T04:41:38Z",
-   "text": "Sources: the Trump admin plans to name Nvidia, Amazon, Microsoft, OpenAI, and Anthropic among 24+ AI “national champions” to help them win overseas business. The new program is part of an effort to help U.S. AI companies compete for business overseas",
-   "via": "Techmeme"
-  },
-  {
    "title": "The US and Pax Silica allies, including Japan, the UK, and India, agree to create a joint list of A…",
    "url": "https://www.ft.com/content/3c2197fc-9618-4838-91e6-522ce1a96a22",
    "source": "Financial Times",
@@ -120,11 +112,19 @@
    "via": "Techmeme"
   },
   {
+   "title": "Sources: the Trump admin plans to name Nvidia, Amazon, Microsoft, OpenAI, and Anthropic among 24+ A…",
+   "url": "https://www.wsj.com/tech/ai/trump-administration-to-name-nvidia-among-ai-national-champions-c9284344",
+   "source": "Wall Street Journal",
+   "published_at": "2026-11-16T04:41:38Z",
+   "text": "Sources: the Trump admin plans to name Nvidia, Amazon, Microsoft, OpenAI, and Anthropic among 24+ AI “national champions” to help them win overseas business. The new program is part of an effort to help U.S. AI companies compete for business overseas",
+   "via": "Techmeme"
+  },
+  {
    "title": "Mount Thor, which is building cloud infrastructure for agentic AI on Apple silicon, raised $45M in…",
    "url": "https://9to5mac.com/2026/11/12/mount-thor-raises-45-million-to-build-mac-data-centers-for-ai-agents/",
    "source": "Bradley C / 9to5Mac",
    "published_at": "2026-11-16T03:20:58Z",
-   "text": "Mount Thor, which is building cloud infrastructure for agentic AI on Apple silicon, raised $45M in a seed round and a Series A co-led by CRV and Conviction. Apple @ Work is exclusively brought to you by Mosyle, the only Apple Unified Platform. Mosyle is the only solution that integrates …",
+   "text": "Mount Thor, which is building cloud infrastructure for agentic AI on Apple silicon, raised $45M in a seed round and a Series A co-led by CRV and Conviction",
    "via": "Techmeme"
   }
  ],
