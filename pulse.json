@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-16T09:05:25Z",
+ "generated_at": "2026-11-16T09:37:38Z",
  "items": [
   {
    "title": "Sources: Jensen Huang has discussed a comeback as Nvidia CEO with confidants, as allies form a “war…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-15T15:03:07Z",
    "text": "NEW Power On: Apple’s next big product — smart glasses planned next year — will offer Siri AI app integrations as its flagship feature. The idea: Book an Uber, reserve a table or order a coffee from your Apple Glasses — with apps running on paired iPhone.",
    "author_name": "Mark Gurman",
-   "likes": 976,
+   "likes": 980,
    "story": "Sources: Apple plans to unveil smart glasses at WWDC and ship them by the end of 2027, focusing heavily on integration of third-party iPhone apps with Siri AI",
    "links": [
     "https://www.bloomberg.com/news/newsletters/2026-11-15/apple-siri-ai-app-integrations-power-smart-glasses-iphone-duo-2-face-id-plan?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc5NDc1NDk0MiwiZXhwIjoxNzk1MzU5NzQyLCJhcnRpY2xlSWQiOiJUT0pUTzFLSVVQU0IwMCIsImJjb25uZWN0SWQiOiJDNEVEQ0FFMUZBMDU0MEJFQTI0QTlGMjExQzFFOTA4MCJ9.JxizrLMB_4yO_RhcaLRgamHBB02Qjf92voFxp6xtjaI"
@@ -43,8 +43,8 @@
    "url": "https://steveblank.com/2026/11/15/whats-next-for-nvidia/",
    "source": "Hacker News",
    "published_at": "2026-11-15T23:55:55Z",
-   "text": "243 points and 308 comments on Hacker News.",
-   "points": 243,
+   "text": "254 points and 321 comments on Hacker News.",
+   "points": 254,
    "discussion": "https://news.ycombinator.com/item?id=50512235"
   },
   {
@@ -103,11 +103,11 @@
    "via": "Techmeme"
   },
   {
-   "title": "Sources: the Trump admin plans to name Nvidia, Amazon, Microsoft, OpenAI, and Anthropic among 24+ A…",
+   "title": "Sources: the Trump administration plans to name Nvidia, Amazon, Microsoft, OpenAI, and Anthropic am…",
    "url": "https://www.wsj.com/tech/ai/trump-administration-to-name-nvidia-among-ai-national-champions-c9284344?st=e6my7o&reflink=desktopwebshare_permalink",
    "source": "Wall Street Journal",
    "published_at": "2026-11-16T04:41:38Z",
-   "text": "Sources: the Trump admin plans to name Nvidia, Amazon, Microsoft, OpenAI, and Anthropic among 24+ AI “national champions” to help them win overseas business. The new program is part of an effort to help U.S. AI companies compete for business overseas",
+   "text": "Sources: the Trump administration plans to name Nvidia, Amazon, Microsoft, OpenAI, and Anthropic among 24+ AI “national champions” to help win overseas business. The new program is part of an effort to help U.S. AI companies compete for business overseas",
    "via": "Techmeme"
   },
   {
@@ -119,11 +119,11 @@
    "via": "Techmeme"
   },
   {
-   "title": "Zus Health, which is building an AI-native healthcare data platform, raised a $33M Series B led by…",
-   "url": "https://www.fiercehealthcare.com/health-tech/zus-health-secures-33m-build-infrastructure-ai-powered-clinical-workflows",
-   "source": "Heather Landi / Fierce Heal…",
-   "published_at": "2026-11-16T07:36:31Z",
-   "text": "Zus Health, which is building an AI-native healthcare data platform, raised a $33M Series B led by Drive Capital, bringing its total funding to $100M+. Jonathan Bush Zus Health Clinical Data Interoperability — As healthcare companies race to build AI copilots and agents …",
+   "title": "Analysis: global manufacturing, utility, and mining companies have shed $4.2T in market value since…",
+   "url": "https://www.ft.com/content/d5adde7e-68cc-455b-ba78-b39cc3676b7a",
+   "source": "Clara Murray / Financial Ti…",
+   "published_at": "2026-11-16T09:21:24Z",
+   "text": "Analysis: global manufacturing, utility, and mining companies have shed $4.2T in market value since June as the AI “picks and shovels” trade swings into reverse. Shares in AI ‘picks and shovels’ companies hit hard by tech sell-off — Global manufacturing …",
    "via": "Techmeme"
   }
  ],
