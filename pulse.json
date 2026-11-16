@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-16T03:13:48Z",
+ "generated_at": "2026-11-16T03:45:24Z",
  "items": [
   {
    "title": "Sources: Jensen Huang has discussed a comeback as Nvidia CEO with confidants, as allies form a “war…",
@@ -11,14 +11,17 @@
    "via": "Techmeme"
   },
   {
-   "title": "BREAKING: Former Nvidia CEO Jensen Huang reportedly told a top executive \"I hope you die\" during a…",
-   "url": "https://x.com/Kalshi/status/2121758327222968801",
-   "source": "𝕏 @Kalshi",
-   "published_at": "2026-11-15T00:13:00Z",
-   "text": "BREAKING: Former Nvidia CEO Jensen Huang reportedly told a top executive \"I hope you die\" during a meeting",
-   "author_name": "Kalshi",
-   "likes": 40328,
-   "story": "Nvidia insiders say Jensen Huang was prone to wild office tantrums, which a source says some employees were surprised hadn't leaked before his public downfall"
+   "title": "NEW Power On: Apple’s next big product — smart glasses planned next year — will offer Siri AI app i…",
+   "url": "https://x.com/markgurman/status/2121982333238612094",
+   "source": "𝕏 @markgurman",
+   "published_at": "2026-11-15T15:03:07Z",
+   "text": "NEW Power On: Apple’s next big product — smart glasses planned next year — will offer Siri AI app integrations as its flagship feature. The idea: Book an Uber, reserve a table or order a coffee from your Apple Glasses — with apps running on paired iPhone.",
+   "author_name": "Mark Gurman",
+   "likes": 928,
+   "story": "Sources: Apple plans to unveil smart glasses at WWDC and ship them by the end of 2027, focusing heavily on integration of third-party iPhone apps with Siri AI",
+   "links": [
+    "https://www.bloomberg.com/news/newsletters/2026-11-15/apple-siri-ai-app-integrations-power-smart-glasses-iphone-duo-2-face-id-plan?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc5NDc1NDk0MiwiZXhwIjoxNzk1MzU5NzQyLCJhcnRpY2xlSWQiOiJUT0pUTzFLSVVQU0IwMCIsImJjb25uZWN0SWQiOiJDNEVEQ0FFMUZBMDU0MEJFQTI0QTlGMjExQzFFOTA4MCJ9.JxizrLMB_4yO_RhcaLRgamHBB02Qjf92voFxp6xtjaI"
+   ]
   },
   {
    "title": "Claude Code 2.1.325 released",
@@ -26,60 +29,6 @@
    "source": "Claude Code releases",
    "published_at": "2026-11-13T20:40:01Z",
    "text": "Fixed a security issue in how zstd-compressed responses are decoded · Added a spinner tip in VS Code and similar integrated terminals about re-running a notebook cell, shown once Claude has read or edited a Jupyter notebook · Added a line under the error shown when your organization's policy blocks a request, saying how to continue: run /rewind and change the message, or run /clear · Added a note for Claude when a sandboxed git checkout, git stash or autostash pull cannot update protected files such as those in .claude"
-  },
-  {
-   "title": "NEW Power On: Apple’s next big product — smart glasses planned next year — will offer Siri AI app i…",
-   "url": "https://x.com/markgurman/status/2121982333238612094",
-   "source": "𝕏 @markgurman",
-   "published_at": "2026-11-15T15:03:07Z",
-   "text": "NEW Power On: Apple’s next big product — smart glasses planned next year — will offer Siri AI app integrations as its flagship feature. The idea: Book an Uber, reserve a table or order a coffee from your Apple Glasses — with apps running on paired iPhone.",
-   "author_name": "Mark Gurman",
-   "likes": 919,
-   "story": "Sources: Apple plans to unveil smart glasses at WWDC and ship them by the end of 2027, focusing heavily on integration of third-party iPhone apps with Siri AI",
-   "links": [
-    "https://www.bloomberg.com/news/newsletters/2026-11-15/apple-siri-ai-app-integrations-power-smart-glasses-iphone-duo-2-face-id-plan?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc5NDc1NDk0MiwiZXhwIjoxNzk1MzU5NzQyLCJhcnRpY2xlSWQiOiJUT0pUTzFLSVVQU0IwMCIsImJjb25uZWN0SWQiOiJDNEVEQ0FFMUZBMDU0MEJFQTI0QTlGMjExQzFFOTA4MCJ9.JxizrLMB_4yO_RhcaLRgamHBB02Qjf92voFxp6xtjaI"
-   ]
-  },
-  {
-   "title": "Sources: Nvidia appealed to Taiwanese officials after its manager was charged over chip smuggling,…",
-   "url": "https://www.bloomberg.com/news/articles/2026-11-15/nvidia-sought-taipei-s-help-over-employee-s-chip-smuggling-case",
-   "source": "Mackenzie Hawkins / Bloombe…",
-   "published_at": "2026-11-15T19:11:07Z",
-   "text": "Sources: Nvidia appealed to Taiwanese officials after its manager was charged over chip smuggling, and sought advice from TSMC, which declined to get involved. Nvidia Corp. appealed to Taiwanese officials after prosecutors on the island accused an employee of helping to smuggle AI chips into China …",
-   "via": "Techmeme"
-  },
-  {
-   "title": "\"Who is Hiring?\" postings stuck near 12-year lows as AI reaches half of all jobs",
-   "url": "https://www.hntrends.com/2026/november.html",
-   "source": "Hacker News",
-   "published_at": "2026-11-16T01:31:30Z",
-   "text": "70 points and 39 comments on Hacker News.",
-   "points": 70,
-   "discussion": "https://news.ycombinator.com/item?id=50512950"
-  },
-  {
-   "title": "Anthropic is endorsing SB 53",
-   "url": "https://www.anthropic.com/news/anthropic-is-endorsing-sb-53",
-   "source": "Anthropic",
-   "published_at": "2026-11-13T22:37:05Z",
-   "text": "Anthropic is endorsing SB 53, the California bill that governs powerful AI systems built by frontier AI developers like Anthropic."
-  },
-  {
-   "title": "Scott Bessent urges Nvidia to hire an outside CEO and wants answers within 10 days on whether it pu…",
-   "url": "https://www.bloomberg.com/news/articles/2026-11-15/bessent-says-nvidia-needs-dramatic-shakeup-after-huang-ouster",
-   "source": "Tony Czuczka / Bloomberg",
-   "published_at": "2026-11-15T15:51:40Z",
-   "text": "Scott Bessent urges Nvidia to hire an outside CEO and wants answers within 10 days on whether it pushed “seemingly illicit” chip sales to China to boost revenue. Nvidia Corp. is facing intense pressure as it embarks on a search for a new chief executive after ousting Jensen Huang …",
-   "via": "Techmeme"
-  },
-  {
-   "title": "What's Next for Nvidia?",
-   "url": "https://steveblank.com/2026/11/15/whats-next-for-nvidia/",
-   "source": "Hacker News",
-   "published_at": "2026-11-15T23:55:55Z",
-   "text": "90 points and 97 comments on Hacker News.",
-   "points": 90,
-   "discussion": "https://news.ycombinator.com/item?id=50512235"
   },
   {
    "title": "Sources: Howard Lutnick is expected to join Trump on Air Force One to China this week, after clashi…",
@@ -90,20 +39,37 @@
    "via": "Techmeme"
   },
   {
+   "title": "What's Next for Nvidia?",
+   "url": "https://steveblank.com/2026/11/15/whats-next-for-nvidia/",
+   "source": "Hacker News",
+   "published_at": "2026-11-15T23:55:55Z",
+   "text": "106 points and 121 comments on Hacker News.",
+   "points": 106,
+   "discussion": "https://news.ycombinator.com/item?id=50512235"
+  },
+  {
+   "title": "Anthropic is endorsing SB 53",
+   "url": "https://www.anthropic.com/news/anthropic-is-endorsing-sb-53",
+   "source": "Anthropic",
+   "published_at": "2026-11-13T22:37:05Z",
+   "text": "Anthropic is endorsing SB 53, the California bill that governs powerful AI systems built by frontier AI developers like Anthropic."
+  },
+  {
+   "title": "Alibaba releases Qwen4-Max, its new flagship 2.4T-parameter MoE model with a 1M-token context windo…",
+   "url": "https://qwen.ai/blog?id=qwen4-max",
+   "source": "Qwen",
+   "published_at": "2026-11-16T03:41:04Z",
+   "text": "Alibaba releases Qwen4-Max, its new flagship 2.4T-parameter MoE model with a 1M-token context window, saying it beats Qwen3.8-Max with up to ~50% fewer tokens. · QwenTeam丨Translations:.体中文 — Today, we are introducing Qwen4-Max, your new AI teammate for work, creativity, and discovery.",
+   "via": "Techmeme"
+  },
+  {
    "title": "Understanding Positional Embeddings in Modern LLMs",
    "url": "https://magazine.sebastianraschka.com/p/understanding-positional-embeddings",
    "source": "Hacker News",
    "published_at": "2026-11-15T12:14:06Z",
-   "text": "214 points and 27 comments on Hacker News.",
-   "points": 214,
+   "text": "217 points and 27 comments on Hacker News.",
+   "points": 217,
    "discussion": "https://news.ycombinator.com/item?id=50506376"
-  },
-  {
-   "title": "Understanding and addressing AI harms",
-   "url": "https://www.anthropic.com/news/our-approach-to-understanding-and-addressing-ai-harms",
-   "source": "Anthropic",
-   "published_at": "2026-11-13T22:37:05Z",
-   "text": "Anthropic's framework for identifying, classifying, and mitigating potential harms from AI systems to support responsible development."
   },
   {
    "title": "The US and Pax Silica allies, including Japan, the UK, and India, agree to create a joint list of A…",
@@ -123,11 +89,43 @@
    "discussion": "https://news.ycombinator.com/item?id=50496921"
   },
   {
-   "title": "Analysis: Huawei's Horinger data center, among China's largest for AI, has ~7% of the compute of Sp…",
-   "url": "https://epochai.substack.com/p/what-huaweis-horinger-data-center",
-   "source": "Ben Cottier / Epoch AI",
-   "published_at": "2026-11-15T22:03:26Z",
-   "text": "Analysis: Huawei's Horinger data center, among China's largest for AI, has ~7% of the compute of SpaceX's Colossus 2 and may stay far behind until at least 2028. This is a condensed version of a longer report on our website — Huawei, China's biggest AI chip developer, is drawing on China's abundant energy to build data centers.",
+   "title": "Understanding and addressing AI harms",
+   "url": "https://www.anthropic.com/news/our-approach-to-understanding-and-addressing-ai-harms",
+   "source": "Anthropic",
+   "published_at": "2026-11-13T22:37:05Z",
+   "text": "Anthropic's framework for identifying, classifying, and mitigating potential harms from AI systems to support responsible development."
+  },
+  {
+   "title": "Sources: Jensen Huang had planned to pull back Nvidia's aggressive financing and told neoclouds to…",
+   "url": "https://www.wsj.com/tech/ai/nvidias-days-as-an-open-checkbook-for-the-ai-economy-are-numbered-90c7b388",
+   "source": "Wall Street Journal",
+   "published_at": "2026-11-16T03:31:20Z",
+   "text": "Sources: Jensen Huang had planned to pull back Nvidia's aggressive financing and told neoclouds to get upfront customer payments; Colette Kress may go further. Interim CEO Colette Kress is expected to rein in deals after a stretch in which Nvidia aggressively financed computing deals and startup investments",
+   "via": "Techmeme"
+  },
+  {
+   "title": "Claude Code and Codex reverse engineered my 1994 Jeep's ECU over a $3 Arduino [video]",
+   "url": "https://www.youtube.com/watch?v=WPj3aQ-xxpI",
+   "source": "Hacker News",
+   "published_at": "2026-11-12T05:29:24Z",
+   "text": "366 points and 185 comments on Hacker News.",
+   "points": 366,
+   "discussion": "https://news.ycombinator.com/item?id=50463399"
+  },
+  {
+   "title": "Mount Thor, which is building cloud infrastructure for agentic AI on Apple silicon, raised $45M in…",
+   "url": "https://9to5mac.com/2026/11/12/mount-thor-raises-45-million-to-build-mac-data-centers-for-ai-agents/",
+   "source": "Bradley C / 9to5Mac",
+   "published_at": "2026-11-16T03:20:58Z",
+   "text": "Mount Thor, which is building cloud infrastructure for agentic AI on Apple silicon, raised $45M in a seed round and a Series A co-led by CRV and Conviction. Apple @ Work is exclusively brought to you by Mosyle, the only Apple Unified Platform. Mosyle is the only solution that integrates …",
+   "via": "Techmeme"
+  },
+  {
+   "title": "Sources: Anthropic's IPO is ~7x oversubscribed; Anthropic and some of its backers are seeking to ra…",
+   "url": "https://www.bloomberg.com/news/features/2026-11-15/anthropic-s-ipo-makes-dario-amodei-the-new-face-of-the-ai-boom",
+   "source": "Bloomberg",
+   "published_at": "2026-11-15T23:03:13Z",
+   "text": "Sources: Anthropic's IPO is ~7x oversubscribed; Anthropic and some of its backers are seeking to raise up to $90.4B via the IPO and a separate private placement. The startup is set for the biggest IPO of all time, putting AI investors' hopes and dreams — and fears — onto a frontier model maker.",
    "via": "Techmeme"
   }
  ],
