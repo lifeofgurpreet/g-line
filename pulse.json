@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-16T12:18:17Z",
+ "generated_at": "2026-11-16T12:49:41Z",
  "items": [
   {
    "title": "Sources: Jensen Huang has discussed a comeback as Nvidia CEO with confidants, as allies form a “war…",
@@ -11,17 +11,14 @@
    "via": "Techmeme"
   },
   {
-   "title": "NEW Power On: Apple’s next big product — smart glasses planned next year — will offer Siri AI app i…",
-   "url": "https://x.com/markgurman/status/2121982333238612094",
-   "source": "𝕏 @markgurman",
-   "published_at": "2026-11-15T15:03:07Z",
-   "text": "NEW Power On: Apple’s next big product — smart glasses planned next year — will offer Siri AI app integrations as its flagship feature. The idea: Book an Uber, reserve a table or order a coffee from your Apple Glasses — with apps running on paired iPhone.",
-   "author_name": "Mark Gurman",
-   "likes": 996,
-   "story": "Sources: Apple plans to unveil smart glasses at WWDC and ship them by the end of 2027, focusing heavily on integration of third-party iPhone apps with Siri AI",
-   "links": [
-    "https://www.bloomberg.com/news/newsletters/2026-11-15/apple-siri-ai-app-integrations-power-smart-glasses-iphone-duo-2-face-id-plan?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc5NDc1NDk0MiwiZXhwIjoxNzk1MzU5NzQyLCJhcnRpY2xlSWQiOiJUT0pUTzFLSVVQU0IwMCIsImJjb25uZWN0SWQiOiJDNEVEQ0FFMUZBMDU0MEJFQTI0QTlGMjExQzFFOTA4MCJ9.JxizrLMB_4yO_RhcaLRgamHBB02Qjf92voFxp6xtjaI"
-   ]
+   "title": "I think contrary to many of our expectations, we have not seen a Fable class open model more than 8…",
+   "url": "https://x.com/emollick/status/2122308260325720127",
+   "source": "𝕏 @emollick",
+   "published_at": "2026-11-16T12:38:14Z",
+   "text": "I think contrary to many of our expectations, we have not seen a Fable class open model more than 8 months after Fable/Mythos was first made public.",
+   "author_name": "Ethan Mollick",
+   "likes": 31,
+   "story": "Alibaba releases Qwen4-Max, its new flagship 2.4T-parameter MoE model with a 1M-token context window, saying it beats Qwen3.8-Max with up to ~50% fewer tokens"
   },
   {
    "title": "Claude Code 2.1.325 released",
@@ -31,11 +28,24 @@
    "text": "Fixed a security issue in how zstd-compressed responses are decoded · Added a spinner tip in VS Code and similar integrated terminals about re-running a notebook cell, shown once Claude has read or edited a Jupyter notebook · Added a line under the error shown when your organization's policy blocks a request, saying how to continue: run /rewind and change the message, or run /clear · Added a note for Claude when a sandboxed git checkout, git stash or autostash pull cannot update protected files such as those in .claude"
   },
   {
-   "title": "Alibaba releases Qwen4-Max, its new flagship 2.4T-parameter MoE model with a 1M-token context windo…",
-   "url": "https://qwen.ai/blog?id=qwen4-max",
-   "source": "Qwen",
-   "published_at": "2026-11-16T03:41:04Z",
-   "text": "Alibaba releases Qwen4-Max, its new flagship 2.4T-parameter MoE model with a 1M-token context window, saying it beats Qwen3.8-Max with up to ~50% fewer tokens. Today, we are introducing Qwen4-Max, your new AI teammate for work, creativity, and discovery.",
+   "title": "NEW Power On: Apple’s next big product — smart glasses planned next year — will offer Siri AI app i…",
+   "url": "https://x.com/markgurman/status/2121982333238612094",
+   "source": "𝕏 @markgurman",
+   "published_at": "2026-11-15T15:03:07Z",
+   "text": "NEW Power On: Apple’s next big product — smart glasses planned next year — will offer Siri AI app integrations as its flagship feature. The idea: Book an Uber, reserve a table or order a coffee from your Apple Glasses — with apps running on paired iPhone.",
+   "author_name": "Mark Gurman",
+   "likes": 1000,
+   "story": "Sources: Apple plans to unveil smart glasses at WWDC and ship them by the end of 2027, focusing heavily on integration of third-party iPhone apps with Siri AI",
+   "links": [
+    "https://www.bloomberg.com/news/newsletters/2026-11-15/apple-siri-ai-app-integrations-power-smart-glasses-iphone-duo-2-face-id-plan?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc5NDc1NDk0MiwiZXhwIjoxNzk1MzU5NzQyLCJhcnRpY2xlSWQiOiJUT0pUTzFLSVVQU0IwMCIsImJjb25uZWN0SWQiOiJDNEVEQ0FFMUZBMDU0MEJFQTI0QTlGMjExQzFFOTA4MCJ9.JxizrLMB_4yO_RhcaLRgamHBB02Qjf92voFxp6xtjaI"
+   ]
+  },
+  {
+   "title": "Sources: Jensen Huang had planned to pull back Nvidia's aggressive financing and told neoclouds to…",
+   "url": "https://www.wsj.com/tech/ai/nvidias-days-as-an-open-checkbook-for-the-ai-economy-are-numbered-90c7b388?st=LGBxVv",
+   "source": "Wall Street Journal",
+   "published_at": "2026-11-16T03:31:20Z",
+   "text": "Sources: Jensen Huang had planned to pull back Nvidia's aggressive financing and told neoclouds to get upfront customer payments; Colette Kress may go further. Interim CEO Colette Kress is expected to rein in deals after a stretch in which Nvidia aggressively financed computing deals and startup investments",
    "via": "Techmeme"
   },
   {
@@ -43,8 +53,8 @@
    "url": "https://steveblank.com/2026/11/15/whats-next-for-nvidia/",
    "source": "Hacker News",
    "published_at": "2026-11-15T23:55:55Z",
-   "text": "295 points and 376 comments on Hacker News.",
-   "points": 295,
+   "text": "307 points and 385 comments on Hacker News.",
+   "points": 307,
    "discussion": "https://news.ycombinator.com/item?id=50512235"
   },
   {
@@ -72,11 +82,11 @@
    "discussion": "https://news.ycombinator.com/item?id=50496921"
   },
   {
-   "title": "Tighter AI chip export rules are gaining bipartisan support in Congress, including a bill to block…",
-   "url": "https://www.ft.com/content/3062790a-553d-41b8-9c7d-bae17b9d2e29",
-   "source": "Financial Times",
-   "published_at": "2026-11-16T06:06:34Z",
-   "text": "Tighter AI chip export rules are gaining bipartisan support in Congress, including a bill to block Chinese companies from accessing chips overseas. Jensen Huang's alleged affair with Chinese spy ‘increases momentum’ to crack down on US hardware reaching China",
+   "title": "Sources: the Trump administration plans to name Nvidia, Amazon, Microsoft, OpenAI, and Anthropic am…",
+   "url": "https://www.wsj.com/tech/ai/trump-administration-to-name-nvidia-among-ai-national-champions-c9284344?st=e6my7o&reflink=desktopwebshare_permalink",
+   "source": "Wall Street Journal",
+   "published_at": "2026-11-16T04:41:38Z",
+   "text": "Sources: the Trump administration plans to name Nvidia, Amazon, Microsoft, OpenAI, and Anthropic among 24+ AI “national champions” to help win overseas business. The new program is part of an effort to help U.S. AI companies compete for business overseas",
    "via": "Techmeme"
   },
   {
@@ -87,11 +97,11 @@
    "text": "Anthropic's framework for identifying, classifying, and mitigating potential harms from AI systems to support responsible development."
   },
   {
-   "title": "Sources: the Trump administration plans to name Nvidia, Amazon, Microsoft, OpenAI, and Anthropic am…",
-   "url": "https://www.wsj.com/tech/ai/trump-administration-to-name-nvidia-among-ai-national-champions-c9284344?st=e6my7o&reflink=desktopwebshare_permalink",
-   "source": "Wall Street Journal",
-   "published_at": "2026-11-16T04:41:38Z",
-   "text": "Sources: the Trump administration plans to name Nvidia, Amazon, Microsoft, OpenAI, and Anthropic among 24+ AI “national champions” to help win overseas business. The new program is part of an effort to help U.S. AI companies compete for business overseas",
+   "title": "Tighter AI chip export rules are gaining bipartisan support in Congress, including a bill to block…",
+   "url": "https://www.ft.com/content/3062790a-553d-41b8-9c7d-bae17b9d2e29",
+   "source": "Financial Times",
+   "published_at": "2026-11-16T06:06:34Z",
+   "text": "Tighter AI chip export rules are gaining bipartisan support in Congress, including a bill to block Chinese companies from accessing chips overseas. Jensen Huang's alleged affair with Chinese spy ‘increases momentum’ to crack down on US hardware reaching China",
    "via": "Techmeme"
   },
   {
@@ -99,7 +109,15 @@
    "url": "https://www.bloomberg.com/news/articles/2026-11-16/baidu-posts-sixth-straight-sales-drop-after-ai-drag-persists",
    "source": "Bloomberg",
    "published_at": "2026-11-16T10:41:00Z",
-   "text": "Baidu reports Q3 revenue down 1% YOY to ~$4.6B, its sixth straight quarterly sales decline, and net income of ~$210M; AI businesses are now 50%+ of its revenue",
+   "text": "Baidu reports Q3 revenue down 1% YOY to ~$4.6B, its sixth straight quarterly sales decline, and net income of ~$210M; AI businesses are now 50%+ of its revenue. Baidu Inc. posted its sixth straight quarterly revenue drop, underscoring the urgency of its efforts to commercialize AI to offset a faltering legacy search business.",
+   "via": "Techmeme"
+  },
+  {
+   "title": "Wall Street's 10 biggest IPOs of 2026, including SpaceX, SK, and Cerebras, have fallen by an averag…",
+   "url": "https://www.ft.com/content/7974acec-e378-4298-a1a7-2b16b00d8b32",
+   "source": "Emily Herbert / Financial T…",
+   "published_at": "2026-11-16T12:20:52Z",
+   "text": "Wall Street's 10 biggest IPOs of 2026, including SpaceX, SK, and Cerebras, have fallen by an average of 20.5% from their offer prices, as the AI frenzy fades. Ten biggest flotations have fallen more than 20% on average in 2026 after four years of gains — Wall Street's 10 biggest initial …",
    "via": "Techmeme"
   },
   {
@@ -108,22 +126,6 @@
    "source": "Jagmeet Singh / TechCrunch",
    "published_at": "2026-11-16T08:05:53Z",
    "text": "Delhi-based Bharat Semi, which is developing programmable image sensors combining capture, processing, and AI capabilities on a single chip, raised a $24M seed",
-   "via": "Techmeme"
-  },
-  {
-   "title": "Analysis: global manufacturing, utility, and mining companies have shed $4.2T in market value since…",
-   "url": "https://www.ft.com/content/d5adde7e-68cc-455b-ba78-b39cc3676b7a",
-   "source": "Clara Murray / Financial Ti…",
-   "published_at": "2026-11-16T09:21:24Z",
-   "text": "Analysis: global manufacturing, utility, and mining companies have shed $4.2T in market value since June as the AI “picks and shovels” trade swings into reverse",
-   "via": "Techmeme"
-  },
-  {
-   "title": "Tech startups and VC firms are hiring for “ecosystem” roles, like “startup ecosystem lead”, to prio…",
-   "url": "https://www.nytimes.com/2026/11/15/business/tech-jobs-ai-ecosystem.html?unlocked_article_code=1.Q1E.Rex6.3x1x0jaexrm1&smid=url-share",
-   "source": "Lora Kelley / New York Times",
-   "published_at": "2026-11-16T11:51:02Z",
-   "text": "Tech startups and VC firms are hiring for “ecosystem” roles, like “startup ecosystem lead”, to prioritize in-person networking and cut through AI marketing slop. The people ushering in the artificial intelligence revolution are also doubling down on in-person relationships in their own industry.",
    "via": "Techmeme"
   }
  ],
