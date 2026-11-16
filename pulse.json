@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-16T14:57:04Z",
+ "generated_at": "2026-11-16T15:29:50Z",
  "items": [
   {
    "title": "Sources: Jensen Huang has discussed a comeback as Nvidia's CEO with confidants, as allies form a “w…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-16T12:38:14Z",
    "text": "I think contrary to many of our expectations, we have not seen a Fable class open model more than 8 months after Fable/Mythos was first made public.",
    "author_name": "Ethan Mollick",
-   "likes": 408,
+   "likes": 515,
    "story": "Alibaba releases Qwen4-Max, its new flagship 2.4T-parameter MoE model with a 1M-token context window, saying it beats Qwen3.8-Max with up to 49% fewer tokens"
   },
   {
@@ -28,11 +28,11 @@
    "text": "Fixed a security issue in how zstd-compressed responses are decoded · Added a spinner tip in VS Code and similar integrated terminals about re-running a notebook cell, shown once Claude has read or edited a Jupyter notebook · Added a line under the error shown when your organization's policy blocks a request, saying how to continue: run /rewind and change the message, or run /clear · Added a note for Claude when a sandboxed git checkout, git stash or autostash pull cannot update protected files such as those in .claude"
   },
   {
-   "title": "A look at the Jensen Huang fallout: a threat to Nvidia's organizational moat and its financing of n…",
-   "url": "https://stratechery.com/2026/obituaries/",
-   "source": "Ben Thompson / Stratechery",
-   "published_at": "2026-11-16T12:47:36Z",
-   "text": "A look at the Jensen Huang fallout: a threat to Nvidia's organizational moat and its financing of neocloud customers, a win for AI doomers and hawks, and more",
+   "title": "President Trump says he “would not mind” the reinstatement of Jensen Huang as Nvidia CEO and “I don…",
+   "url": "https://nypost.com/2026/11/16/us-news/trump-would-not-mind-jensen-huang-returning-as-nvidia-ceo/",
+   "source": "Emily Goodin / New York Post",
+   "published_at": "2026-11-16T14:55:46Z",
+   "text": "President Trump says he “would not mind” the reinstatement of Jensen Huang as Nvidia CEO and “I don't know that she was a spy at all”, referencing Alice Huang. WASHINGTON — President Donald Trump said Monday he “would not mind” if Jensen Huang was reinstated as Nvidia CEO …",
    "via": "Techmeme"
   },
   {
@@ -40,8 +40,8 @@
    "url": "https://steveblank.com/2026/11/15/whats-next-for-nvidia/",
    "source": "Hacker News",
    "published_at": "2026-11-15T23:55:55Z",
-   "text": "358 points and 448 comments on Hacker News.",
-   "points": 358,
+   "text": "369 points and 468 comments on Hacker News.",
+   "points": 369,
    "discussion": "https://news.ycombinator.com/item?id=50512235"
   },
   {
@@ -54,17 +54,17 @@
   {
    "title": "The US Commerce Department issues an interim rule to limit remote access to advanced AI chips and s…",
    "url": "https://www.bloomberg.com/news/articles/2026-11-16/us-moves-to-limit-remote-access-to-advanced-ai-chips",
-   "source": "Magan Crane / Bloomberg",
+   "source": "Bloomberg",
    "published_at": "2026-11-16T13:56:11Z",
-   "text": "The US Commerce Department issues an interim rule to limit remote access to advanced AI chips and servers from select countries, such as Singapore and Malaysia. The US Commerce Department issued an interim rule to limit remote access to advanced AI chips and servers from certain countries …",
+   "text": "The US Commerce Department issues an interim rule to limit remote access to advanced AI chips and servers from select countries, such as Singapore and Malaysia. The US Commerce Department moved to limit several countries from providing Chinese companies remote access to advanced artificial …",
    "via": "Techmeme"
   },
   {
-   "title": "Apple partners with OpenEvidence to launch Health AI Usage Study, an app that answers health questi…",
-   "url": "https://techcrunch.com/2026/11/15/apple-launches-new-app-to-study-how-people-use-ai-for-health/",
-   "source": "Ivan Mehta / TechCrunch",
-   "published_at": "2026-11-16T04:11:20Z",
-   "text": "Apple partners with OpenEvidence to launch Health AI Usage Study, an app that answers health questions and can use HealthKit data, for up to 200,000 US users. Big AI labs like OpenAI and Anthropic have made their bets on offering chatbots that can answer health-related queries with specialized features.",
+   "title": "A look at the Jensen Huang fallout: a threat to Nvidia's organizational moat and its financing of n…",
+   "url": "https://stratechery.com/2026/obituaries/",
+   "source": "Ben Thompson / Stratechery",
+   "published_at": "2026-11-16T12:47:36Z",
+   "text": "A look at the Jensen Huang fallout: a threat to Nvidia's organizational moat and its financing of neocloud customers, a win for AI doomers and hawks, and more. Dearly beloved, we are gathered here today to get through this thing called life. — ― Prince",
    "via": "Techmeme"
   },
   {
@@ -75,27 +75,19 @@
    "text": "Anthropic's framework for identifying, classifying, and mitigating potential harms from AI systems to support responsible development."
   },
   {
+   "title": "Apple partners with OpenEvidence to launch Health AI Usage Study, an app that answers health questi…",
+   "url": "https://techcrunch.com/2026/11/15/apple-launches-new-app-to-study-how-people-use-ai-for-health/",
+   "source": "Ivan Mehta / TechCrunch",
+   "published_at": "2026-11-16T04:11:20Z",
+   "text": "Apple partners with OpenEvidence to launch Health AI Usage Study, an app that answers health questions and can use HealthKit data, for up to 200,000 US users. Big AI labs like OpenAI and Anthropic have made their bets on offering chatbots that can answer health-related queries with specialized features.",
+   "via": "Techmeme"
+  },
+  {
    "title": "Sources: Jensen Huang had planned to pull back Nvidia's aggressive financing and told neoclouds to…",
    "url": "https://www.wsj.com/tech/ai/nvidias-days-as-an-open-checkbook-for-the-ai-economy-are-numbered-90c7b388?st=LGBxVv",
    "source": "Wall Street Journal",
    "published_at": "2026-11-16T03:31:20Z",
    "text": "Sources: Jensen Huang had planned to pull back Nvidia's aggressive financing and told neoclouds to get upfront customer payments; Colette Kress may go further. Interim CEO Colette Kress is expected to rein in deals after a stretch in which Nvidia aggressively financed computing deals and startup investments",
-   "via": "Techmeme"
-  },
-  {
-   "title": "Wall Street's 10 biggest IPOs of 2026, including SpaceX, SK, and Cerebras, have fallen by an averag…",
-   "url": "https://www.ft.com/content/7974acec-e378-4298-a1a7-2b16b00d8b32",
-   "source": "Emily Herbert / Financial T…",
-   "published_at": "2026-11-16T12:20:52Z",
-   "text": "Wall Street's 10 biggest IPOs of 2026, including SpaceX, SK, and Cerebras, have fallen by an average of 20.5% from their offer prices, as the AI frenzy fades. Ten biggest flotations have fallen more than 20% on average in 2026 after four years of gains — Wall Street's 10 biggest initial …",
-   "via": "Techmeme"
-  },
-  {
-   "title": "Sources: the Trump administration plans to name Nvidia, Amazon, Microsoft, OpenAI, and Anthropic am…",
-   "url": "https://www.wsj.com/tech/ai/trump-administration-to-name-nvidia-among-ai-national-champions-c9284344?st=e6my7o&reflink=desktopwebshare_permalink",
-   "source": "Wall Street Journal",
-   "published_at": "2026-11-16T04:41:38Z",
-   "text": "Sources: the Trump administration plans to name Nvidia, Amazon, Microsoft, OpenAI, and Anthropic among 24+ AI “national champions” to help win business overseas. The new program is part of an effort to help U.S. AI companies compete for business overseas",
    "via": "Techmeme"
   },
   {
@@ -107,11 +99,19 @@
    "via": "Techmeme"
   },
   {
-   "title": "Dreamteam, which uses AI agents for CRM tasks like data capture and research, raised $53M across se…",
-   "url": "https://techcrunch.com/2026/11/16/freshworks-alums-raise-53m-to-take-on-salesforce-hubspot-with-ai-native-crm/",
-   "source": "Jagmeet Singh / TechCrunch",
-   "published_at": "2026-11-16T13:06:02Z",
-   "text": "Dreamteam, which uses AI agents for CRM tasks like data capture and research, raised $53M across seed and Series A led by Together Fund and Accel, respectively. Dreamteam, a startup founded by former Freshworks executives, has raised $53 million to challenge Salesforce and HubSpot with its AI-native CRM …",
+   "title": "Sources: the Trump administration plans to name Nvidia, Amazon, Microsoft, OpenAI, and Anthropic am…",
+   "url": "https://www.wsj.com/tech/ai/trump-administration-to-name-nvidia-among-ai-national-champions-c9284344?st=e6my7o&reflink=desktopwebshare_permalink",
+   "source": "Wall Street Journal",
+   "published_at": "2026-11-16T04:41:38Z",
+   "text": "Sources: the Trump administration plans to name Nvidia, Amazon, Microsoft, OpenAI, and Anthropic among 24+ AI “national champions” to help win business overseas. The new program is part of an effort to help U.S. AI companies compete for business overseas",
+   "via": "Techmeme"
+  },
+  {
+   "title": "Wall Street's 10 biggest IPOs of 2026, including SpaceX, SK, and Cerebras, have fallen by an averag…",
+   "url": "https://www.ft.com/content/7974acec-e378-4298-a1a7-2b16b00d8b32",
+   "source": "Emily Herbert / Financial T…",
+   "published_at": "2026-11-16T12:20:52Z",
+   "text": "Wall Street's 10 biggest IPOs of 2026, including SpaceX, SK, and Cerebras, have fallen by an average of 20.5% from their offer prices, as the AI frenzy fades. Ten biggest flotations have fallen more than 20% on average in 2026 after four years of gains — Wall Street's 10 biggest initial …",
    "via": "Techmeme"
   },
   {
@@ -119,7 +119,7 @@
    "url": "https://www.wsj.com/pro/cybersecurity/cyber-startup-corma-raises-125-million-for-defensive-ai-agents-f30a4387",
    "source": "Angus Loten / Wall Street J…",
    "published_at": "2026-11-16T14:31:21Z",
-   "text": "Tel Aviv- and SF-based Corma, which builds AI agents custom-trained for cyber defense, raised a $125M Series A led by NEA, after raising a $60M seed in August",
+   "text": "Tel Aviv- and SF-based Corma, which builds AI agents custom-trained for cyber defense, raised a $125M Series A led by NEA, after raising a $60M seed in August. The year-old startup's agents are custom-trained for defensive cybersecurity — Cybersecurity startup Corma raised $125 million …",
    "via": "Techmeme"
   }
  ],
