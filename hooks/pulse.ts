@@ -32,9 +32,10 @@ export const TEXT_MAX = 600
 /** How many items the reader shows at once. */
 export const READER_PAGE = 5
 
-// CSI and OSC escape sequences, then any C0/C1 control, then bidi and zero-width controls.
+// CSI and OSC escape sequences, then any C0/C1 control, then every Unicode format character (zero-width, bidi, soft hyphen, tags).
 const ESCAPES = /\u001b\[[0-?]*[ -/]*[@-~]|\u001b\][^\u0007\u001b]*(?:\u0007|\u001b\\)|\u001b[@-_]/g
-const CONTROLS = /[\u0000-\u001f\u007f-\u009f\u200b-\u200f\u202a-\u202e\u2060-\u2069\ufeff]/g
+const CONTROLS = /[\u0000-\u001f\u007f-\u009f]/g
+const FORMATS = /\p{Cf}/gu
 // Variation selectors are dropped, so a symbol draws in its one-column text form.
 const SELECTORS = /[\ufe00-\ufe0f]/g
 // Feed text, unlike the mod's own, can hold emoji and East Asian wide characters (two columns) and combining marks (none).
@@ -53,7 +54,7 @@ export function cells(text: string): number {
 /** Text safe to draw: no escapes or control characters, one line, at most `max` columns. */
 export function clean(value: unknown, max: number): string {
   if (typeof value !== 'string') return ''
-  const text = value.replace(ESCAPES, '').replace(CONTROLS, ' ').replace(SELECTORS, '').replace(/\s+/g, ' ').trim()
+  const text = value.replace(ESCAPES, '').replace(CONTROLS, ' ').replace(FORMATS, '').replace(SELECTORS, '').replace(/\s+/g, ' ').trim()
   if (cells(text) <= max) return text
   let kept = ''
   let used = 0

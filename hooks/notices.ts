@@ -44,15 +44,51 @@ const LEVELS: readonly NoticeLevel[] = ['info', 'warn', 'urgent']
  * passed are left out. Text is cleaned; the same id twice keeps the first.
  */
 export function parseNotices(raw: string, nowSeconds: number): Notice[] {
-  if (typeof raw !== 'string' || !raw.trim() || raw.length > NOTICES_OUTPUT_MAX) return []
+  return readNotices(raw, nowSeconds).notices ?? []
+}
+
+/** Why a run gave no list: said in the pane's header. */
+export type NoticesFailure = 'not found' | 'timed out' | 'not JSON' | `exit code ${number}` | 'did not run'
+
+/** The notices a run printed, or the reason it gave none. Empty `notices` is a good, empty list. */
+export function readNotices(raw: string, nowSeconds: number): { notices?: Notice[]; failure?: NoticesFailure } {
+  if (typeof raw !== 'string' || !raw.trim() || raw.length > NOTICES_OUTPUT_MAX) return { failure: 'not JSON' }
   let data: unknown
   try {
     data = JSON.parse(raw)
   } catch {
-    return []
+    return { failure: 'not JSON' }
   }
   const list = data && typeof data === 'object' ? (data as { notices?: unknown }).notices : undefined
-  if (!Array.isArray(list)) return []
+  if (!Array.isArray(list)) return { failure: 'not JSON' }
+  return { notices: listOf(list, nowSeconds) }
+}
+
+/** What a finished or failed run says about itself: the failure, or undefined for a clean exit. */
+export function runFailure(run: unknown): NoticesFailure | undefined {
+  if (run instanceof Error || (run && typeof run === 'object' && !('exitCode' in run) && 'message' in run)) {
+    const text = String((run as { message?: unknown }).message ?? '') + String((run as { code?: unknown }).code ?? '')
+    if (/ENOENT|not found|no such file/i.test(text)) return 'not found'
+    if (/time|ETIMEDOUT|abort/i.test(text)) return 'timed out'
+    return 'did not run'
+  }
+  const r = (run ?? {}) as { exitCode?: unknown; timedOut?: unknown; signal?: unknown }
+  if (r.timedOut) return 'timed out'
+  if (r.exitCode === 0) return undefined
+  if (r.exitCode === 127) return 'not found'
+  if (typeof r.exitCode === 'number') return `exit code ${r.exitCode}`
+  return r.signal ? 'timed out' : 'did not run'
+}
+
+/** A failed run keeps the last good list for this many intervals. */
+export const NOTICES_KEEP_INTERVALS = 2
+
+/** Whether the last good list, read at `goodAt` (ms), still stands at `nowMs` after a failed run. */
+export function keepsLast(goodAt: number, nowMs: number, intervalMinutes: number): boolean {
+  return goodAt > 0 && nowMs - goodAt <= NOTICES_KEEP_INTERVALS * intervalMinutes * 60_000
+}
+
+function listOf(list: unknown[], nowSeconds: number): Notice[] {
   const out: Notice[] = []
   const seen = new Set<string>()
   for (const entry of list) {
@@ -64,10 +100,12 @@ export function parseNotices(raw: string, nowSeconds: number): Notice[] {
     if (!id || !text || seen.has(id)) continue
     const level = LEVELS.find(l => l === e.level)
     if (!level) continue
+    // An ISO string or a finite number of Unix seconds; any other `until` makes the notice unusable.
     let until: number | undefined
-    if (typeof e.until === 'string') {
-      const ms = Date.parse(e.until)
-      if (Number.isFinite(ms)) until = Math.floor(ms / 1000)
+    if (e.until !== undefined && e.until !== null) {
+      if (typeof e.until === 'number' && Number.isFinite(e.until)) until = Math.floor(e.until)
+      else if (typeof e.until === 'string' && Number.isFinite(Date.parse(e.until))) until = Math.floor(Date.parse(e.until) / 1000)
+      else continue
     }
     if (until !== undefined && until <= nowSeconds) continue
     const detail = clean(e.detail, NOTICE_DETAIL_MAX)
@@ -102,6 +140,16 @@ export function toastsDue(list: readonly Notice[], seen: NoticeSeen, nowMs: numb
   })
 }
 
+/**
+ * One toast per run: the most severe due notice (urgent before warn, then the
+ * command's order) and, when others are due, `+N more · /g-line notices`.
+ */
+export function toastFor(due: readonly Notice[]): string | undefined {
+  const top = [...due].sort((a, b) => Number(b.level === 'urgent') - Number(a.level === 'urgent'))[0]
+  if (!top) return undefined
+  return due.length > 1 ? `${toastText(top)} +${due.length - 1} more · /g-line notices` : toastText(top)
+}
+
 /** The toast's words: the notice's one line. */
 export function toastText(n: Notice): string {
   return `${n.level === 'urgent' ? '⚠ ' : ''}${n.text}`
@@ -110,13 +158,13 @@ export function toastText(n: Notice): string {
 /**
  * Line 2's marker while a warn or urgent notice is in force: `⚠ 2 · /g-line
  * notices`. Kept at every width: where the row is too short for the command's
- * name it shrinks to `⚠ 2 notices` rather than go, so a phone still shows it. Red when any is urgent, amber otherwise.
+ * name it shrinks to `⚠ 2 notices`, then `⚠ 2`, rather than go, so a phone still shows it. Its priority sits below the windows' timings and clock times, which it never pushes off. Red when any is urgent, amber otherwise.
  */
 export function noticeSegment(list: readonly Notice[]): Segment | undefined {
   const active = loud(list)
   if (!active.length) return undefined
   const tone = active.some(n => n.level === 'urgent') ? 'bad' : 'warn'
-  return { key: 'notices', priority: 92, tone, keep: 1, forms: [`⚠ ${active.length} · /g-line notices`, `⚠ ${active.length} notices`] }
+  return { key: 'notices', priority: 60, tone, keep: 2, forms: [`⚠ ${active.length} · /g-line notices`, `⚠ ${active.length} notices`, `⚠ ${active.length}`] }
 }
 
 /** The pane's and the command's rows, urgent first, then warn, then info; each notice's detail follows its line. */

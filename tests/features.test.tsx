@@ -2733,12 +2733,17 @@ test('a notices_command: one toast per notice, a marker on line 2 while warn/urg
   // Urgent repeats after two hours.
   await w.clock.advance(2 * 3600_000)
   expect(w.toasts.filter(t => t.includes('A thing broke')).length).toBeGreaterThanOrEqual(2)
-  // A failing command means no notices and no marker.
+  // A failing command keeps the last good list for two intervals, then means no notices and no marker.
   w.run = argv => (argv[0] === 'my-alerts-tool' ? { value: { exitCode: 1, stdout: printed, stderr: '' } } : undefined)
   await w.clock.advance(6 * 60_000)
+  const kept = await $.ui.mount({ plugin: 'g-line', surface: 'terminal', component: 'PromptHint',
+    props: { isDraft: false, isWorking: false, hint: '(shift+tab to cycle)' }, viewport: { columns: 44, rows: 40 } })
+  expect(await kept.find({ type: 'Text', text: /notices|⚠ 1/ })).toBeDefined()
+  await kept.unmount()
+  await w.clock.advance(12 * 60_000)
   const quiet = await $.ui.mount({ plugin: 'g-line', surface: 'terminal', component: 'PromptHint',
     props: { isDraft: false, isWorking: false, hint: '(shift+tab to cycle)' }, viewport: { columns: 44, rows: 40 } })
-  expect(await quiet.find({ type: 'Text', text: /notices/ }).catch(() => undefined)).toBeUndefined()
+  expect(await quiet.find({ type: 'Text', text: /notices|⚠ 1/ }).catch(() => undefined)).toBeUndefined()
   await quiet.unmount()
 })
 

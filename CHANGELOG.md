@@ -1,5 +1,15 @@
 # Changelog
 
+## 0.26.1 (2026-11-17): notices stay out of the way of the figures
+
+- **The notice marker no longer pushes figures off line 2.** On a narrow screen with a long account name it could cost the windows their reset timings or clock times. It now narrows one step further, to `⚠ 2`, and gives way to the timings and clock times before anything else.
+- **One toast per check.** If several notices are due you get the most severe one with `+N more · /g-line notices`, not a stack. An urgent notice repeats every `notices_repeat_hours` or 2 hours, whichever is shorter.
+- **A failed check no longer clears the marker at once.** The last good list stays for two intervals, and `/g-line notices` says why the check failed: command not found, an exit code, not JSON, or timed out.
+- **The one-line layout uses the short marker**, `⚠ 2 notices`, so it takes less of the hint's room.
+- **Calmer in the background.** The notices command no longer holds up the 15-second update, and `/g-line notices`, the pane's Refresh and the timer share one run, so a notice can't toast twice. Refresh redraws the pane at once, and long notice text wraps in the pane.
+- **`until` takes a number of Unix seconds** as well as an ISO time; a notice whose `until` can't be read is dropped.
+- **Hidden characters are stripped for good.** All Unicode format characters (tags, soft hyphen, Arabic letter mark, Mongolian vowel separator, zero-width and direction marks) are removed from notices and from Pulse text.
+
 ## 0.26.0 (2026-11-16): heads-ups from your own tool, on line 2
 
 - **Notices.** Set `notices_command` to a command of yours that prints a short JSON list of

@@ -19,8 +19,8 @@ import type { EngineInterface, Register } from 'claude-code'
 import type { AgentRow, Receipt, Snap, Totals } from '../types'
 import { SEP, alerts, clock, duration, layoutKeys, modelName, pct, segments, str, toastMs, tokens, utcLabel, width, zoneOffset } from './core'
 import type { Limit } from './roster'
-import { NOTICES_OUTPUT_MAX, inForce, noticeRows, noticeSegment, parseNotices, toastText, toastsDue } from './notices'
-import type { Notice, NoticeSeen } from './notices'
+import { inForce, keepsLast, noticeRows, noticeSegment, readNotices, runFailure, toastFor, toastsDue } from './notices'
+import type { Notice, NoticeSeen, NoticesFailure } from './notices'
 import { LIMITS_PREFIX, ROSTER_PREFIX, mergeLimits, parseUsage, othersSegment, rosterOf, rosterRow, staleRosterKeys } from './roster'
 import type { RosterEntry, RosterState } from './roster'
 import type { Options, Payload, Preset, Segment, Tone } from './core'
@@ -505,6 +505,10 @@ let fed: { account: string; limits: Limit[] } | undefined
 /** What `notices_command` last printed, and when it last ran (ms). */
 let notices: Notice[] = []
 let noticesAt = 0
+/** When the last good list was read (ms), why the last run failed, and the run in flight. */
+let noticesGoodAt = 0
+let noticesFailure: NoticesFailure | undefined
+let noticesRun: Promise<void> | undefined
 /** When `usage_command` last ran (ms); it runs about every two minutes. */
 let usageAt = 0
 /**
@@ -569,20 +573,52 @@ const NOTICES_SEEN = 'notices-seen'
  * machine don't repeat each other.
  */
 async function refreshNotices($: EngineInterface): Promise<void> {
+  // One run at a time: the timer, `/g-line notices` and the pane's Refresh share it, so a notice toasts once.
+  if (noticesRun) return noticesRun
+  noticesRun = runNotices($).finally(() => { noticesRun = undefined })
+  return noticesRun
+}
+
+async function runNotices($: EngineInterface): Promise<void> {
   const command = config.noticesCommand
   if (!command) {
     notices = []
+    noticesFailure = undefined
     return
   }
   const now = await nowMs($)
   if (noticesAt && now - noticesAt < config.noticesIntervalMinutes * 60_000) return
   noticesAt = now
   try {
-    const run = await $.process.run(command, { timeoutMs: 5000 })
-    notices = run.exitCode === 0 && run.stdout.length <= NOTICES_OUTPUT_MAX ? parseNotices(run.stdout, Math.floor(now / 1000)) : []
-  } catch {
-    notices = []
+    let failure: NoticesFailure | undefined
+    let got: Notice[] | undefined
+    try {
+      const run = await $.process.run(command, { timeoutMs: 5000 })
+      failure = runFailure(run)
+      if (!failure) {
+        const read = readNotices(run.stdout, Math.floor(now / 1000))
+        failure = read.failure
+        got = read.notices
+      }
+    } catch (error) {
+      failure = runFailure(error)
+    }
+    noticesFailure = failure
+    if (got) {
+      notices = got
+      noticesGoodAt = now
+    } else if (!keepsLast(noticesGoodAt, now, config.noticesIntervalMinutes)) {
+      // The last good list is kept for two intervals; past that, no notices.
+      notices = []
+    }
+    if (got) await toastNotices($, got, now)
+  } finally {
+    await update($, tick, n => n + 1).catch(() => undefined)
   }
+}
+
+/** One toast for the run's due notices: the most severe, and how many more. */
+async function toastNotices($: EngineInterface, list: Notice[], now: number): Promise<void> {
   try {
     let seen: NoticeSeen = {}
     try {
@@ -591,14 +627,13 @@ async function refreshNotices($: EngineInterface): Promise<void> {
     } catch {
       // nothing shown yet
     }
-    const due = toastsDue(notices, seen, now, config.noticesRepeatHours)
+    const due = toastsDue(list, seen, now, config.noticesRepeatHours)
     if (!due.length || !config.toasts || (await read($, hidden))) return
     const next: NoticeSeen = {}
-    for (const n of notices) if (seen[n.id] !== undefined) next[n.id] = seen[n.id] as number
-    for (const n of due) {
-      next[n.id] = now
-      $.ui.toast(toastText(n), { timeoutMs: toastMs(toastText(n), 8000) })
-    }
+    for (const n of list) if (seen[n.id] !== undefined) next[n.id] = seen[n.id] as number
+    for (const n of due) next[n.id] = now
+    const text = toastFor(due)
+    if (text) $.ui.toast(text, { timeoutMs: toastMs(text, 8000) })
     await $.store.set(NOTICES_SEEN, next)
   } catch {
     // the marker still shows
@@ -1282,7 +1317,7 @@ async function heartbeat($: EngineInterface): Promise<void> {
   // An account rule needs a fresh reading: an account manager may have switched accounts.
   else if (beats % 8 === 0 && config.guard.rules.some(namesAccounts)) await refreshAccount($)
   await refreshUsage($)
-  await refreshNotices($)
+  void refreshNotices($).catch(() => undefined)
   await shareLimits($)
   await guardNow($).catch(() => undefined)
   await drainNudge($).catch(() => undefined)
@@ -1320,7 +1355,7 @@ function footerLabels(extras: Extras): string[] {
   // What the guard is doing always shows: it acts on your behalf.
   const guard = [extras.guard?.forms[1], extras.resume?.forms[0]].filter((label): label is string => Boolean(label))
   // A warn or urgent notice always shows, like the guard: it asks for a look.
-  const notice = extras.notices?.forms[0]
+  const notice = extras.notices?.forms[1]
   if (notice) guard.push(notice)
   if (!config.footerLabels) return guard
   return [...(['agents', 'compact', 'others'] as const)
@@ -3241,15 +3276,16 @@ export const register: Register = (on, options) => {
       const tone = { urgent: 'red', warn: 'yellow', info: undefined } as const
       return (
         <Box flexDirection="column">
-          <Text dimColor>{rows.length ? `${rows.length} ${rows.length === 1 ? 'notice' : 'notices'}, urgent first` : 'No notices right now'}</Text>
+          <Text dimColor wrap="wrap">{rows.length ? `${rows.length} ${rows.length === 1 ? 'notice' : 'notices'}, urgent first` : 'No notices right now'}</Text>
+          {noticesFailure ? <Text color="yellow" wrap="wrap">{`The last run failed: ${noticesFailure}.${rows.length ? ' Showing the last good list.' : ''}`}</Text> : null}
           {rows.map((row, index) => (
             <Box key={`n${index}`} flexDirection="column" marginTop={1}>
-              <Text bold={row.level === 'urgent'} color={tone[row.level]}>{clean(`${row.level === 'info' ? '·' : '⚠'} ${row.text}`, columns)}</Text>
+              <Text wrap="wrap" bold={row.level === 'urgent'} color={tone[row.level]}>{`${row.level === 'info' ? '·' : '⚠'} ${row.text}`}</Text>
               {row.detail ? <Text dimColor>{clean(row.detail, columns * 4)}</Text> : null}
             </Box>
           ))}
           <Box flexDirection="row" gap={2} marginTop={1}>
-            <Button key="refresh" plain label="Refresh" hotkey="r" onPress={() => { noticesAt = 0; void refreshNotices($) }} />
+            <Button key="refresh" plain label="Refresh" hotkey="r" onPress={() => { noticesAt = 0; void refreshNotices($).catch(() => undefined) }} />
             <Button key="details" plain label="Back" hotkey="d" onPress={show('details')} />
             <Button key="close" plain label="Close" hotkey="q" onPress={() => void $.ui.close({ id: PANE })} />
           </Box>

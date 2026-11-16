@@ -4,7 +4,8 @@ import { deck, nextRoom, nextRows } from '../hooks/deck'
 import { width } from '../hooks/core'
 import type { Payload } from '../hooks/core'
 import { accountSegment, joined, tailRoom } from '../hooks/inline'
-import { inForce, noticeRows, noticeSegment, parseNotices, toastsDue, toastText } from '../hooks/notices'
+import { inForce, keepsLast, noticeRows, noticeSegment, parseNotices, readNotices, runFailure, toastFor, toastsDue, toastText } from '../hooks/notices'
+import { clean } from '../hooks/pulse'
 import { merge, DEFAULTS, parseCommand } from '../hooks/settings'
 
 const ESC = String.fromCharCode(27)
@@ -70,10 +71,10 @@ test('cadence: a warn toast once, again after the repeat hours; an urgent one at
 
 test('the marker counts warn and urgent notices only, red for urgent and amber for warn', () => {
   const list = parseNotices(out({ id: 'w', level: 'warn', text: 'w' }, { id: 'i', level: 'info', text: 'i' }), NOW)
-  expect(noticeSegment(list)).toMatchObject({ tone: 'warn', forms: ['⚠ 1 · /g-line notices', '⚠ 1 notices'] })
+  expect(noticeSegment(list)).toMatchObject({ tone: 'warn', forms: ['⚠ 1 · /g-line notices', '⚠ 1 notices', '⚠ 1'], keep: 2, priority: 60 })
   expect(noticeSegment(parseNotices(out({ id: 'i', level: 'info', text: 'i' }), NOW))).toBeUndefined()
   const both = parseNotices(out({ id: 'w', level: 'warn', text: 'w' }, { id: 'u', level: 'urgent', text: 'u' }), NOW)
-  expect(noticeSegment(both)).toMatchObject({ tone: 'bad', forms: ['⚠ 2 · /g-line notices', '⚠ 2 notices'] })
+  expect(noticeSegment(both)).toMatchObject({ tone: 'bad', forms: ['⚠ 2 · /g-line notices', '⚠ 2 notices', '⚠ 2'] })
   expect(noticeRows(both).map(r => r.level)).toEqual(['urgent', 'warn'])
 })
 
@@ -97,8 +98,8 @@ test('at every width the marker stays whole beside the figures the person needs'
       { now: tailRoom(columns, '(shift+tab to cycle)'), next: nextRoom(columns), rows: nextRows(columns) }, extras)
     const rows = [d.next, ...d.more].map(joined)
     const all = [joined(d.now), ...rows].join(' · ')
-    expect(`${columns}: ${all}`).toMatch(/⚠ 2 (· \/g-line )?notices/)
-    if (columns >= 120) expect(all).toContain('⚠ 2 · /g-line notices')
+    expect(`${columns}: ${all}`).toContain('⚠ 2')
+    if (columns >= 160) expect(all).toContain('⚠ 2 · /g-line notices')
     for (const figure of ['Opus', 'cache', 'me@example.com', '5h 3%', 'wk 30%', '8h 45m', '2d 9h']) expect(`${columns}: ${all}`).toContain(figure)
     expect(rows.length).toBeLessThanOrEqual(nextRows(columns))
     for (const row of rows) expect(width(row)).toBeLessThanOrEqual(nextRoom(columns) ?? 0)
@@ -116,4 +117,54 @@ test('config: notices_command is a list of words; interval and repeat have defau
   expect(merge(DEFAULTS, { notices_command: 'my-alerts-tool', notices_interval_minutes: 0 }).noticesCommand).toBeUndefined()
   expect(merge(DEFAULTS, { notices_interval_minutes: 0 }).noticesIntervalMinutes).toBe(5)
   expect(parseCommand('notices')).toEqual({ kind: 'notices' })
+})
+
+test('a long account label never pushes the timings and clock times off line 2 for the marker', () => {
+  const marker = noticeSegment(parseNotices(out({ id: 'u', level: 'urgent', text: 'u' }, { id: 'w', level: 'warn', text: 'w' }), NOW))!
+  for (const columns of [36, 40, 50]) {
+    const d = deck(calm, { now: NOW, utcOffsetMinutes: 660, zone: 'UTC+11' },
+      { now: tailRoom(columns, '(shift+tab to cycle)'), next: nextRoom(columns), rows: nextRows(columns) }, [marker, accountSegment('a-long-account-label-24c')!])
+    const all = [joined(d.now), ...[d.next, ...d.more].map(joined)].join(' · ')
+    // At 36 columns the clock times don't fit even without the marker; the timings must.
+    for (const figure of columns === 36 ? [/resets (in )?8h 45m/, /resets (in )?2d 9h/, /⚠ 2/] : [/\(21:45/, /\(Fri 22:00/, /resets (in )?8h 45m/, /resets (in )?2d 9h/, /⚠ 2/])
+      expect(`${columns}: ${all}`).toMatch(figure)
+  }
+})
+
+test('one toast per run: the most severe, and how many more', () => {
+  const list = parseNotices(out({ id: 'w', level: 'warn', text: 'warned' }, { id: 'u', level: 'urgent', text: 'urgent one' }, { id: 'w2', level: 'warn', text: 'x' }), NOW)
+  expect(toastFor(list)).toBe('⚠ urgent one +2 more · /g-line notices')
+  expect(toastFor([list[0]!])).toBe('warned')
+  expect(toastFor([])).toBeUndefined()
+})
+
+test('failures are named, and a failed run keeps the last good list for two intervals', () => {
+  expect(runFailure({ exitCode: 0 })).toBeUndefined()
+  expect(runFailure({ exitCode: 3 })).toBe('exit code 3')
+  expect(runFailure({ exitCode: 127 })).toBe('not found')
+  expect(runFailure(new Error('spawn x ENOENT'))).toBe('not found')
+  expect(runFailure(new Error('Timed out after 5000ms'))).toBe('timed out')
+  expect(readNotices('oops', NOW).failure).toBe('not JSON')
+  expect(readNotices('{"notices":[]}', NOW)).toEqual({ notices: [] })
+  expect(keepsLast(1000, 1000 + 9 * 60_000, 5)).toBe(true)
+  expect(keepsLast(1000, 1000 + 11 * 60_000, 5)).toBe(false)
+  expect(keepsLast(0, 5, 5)).toBe(false)
+})
+
+test('until: a finite number is Unix seconds; an unusable until drops the notice', () => {
+  const got = parseNotices(out(
+    { id: 'n', level: 'warn', text: 'num', until: NOW + H },
+    { id: 'past', level: 'warn', text: 'past', until: NOW - 5 },
+    { id: 'bad', level: 'warn', text: 'bad', until: 'next tuesday-ish' },
+    { id: 'nan', level: 'warn', text: 'nan', until: {} },
+    { id: 'none', level: 'warn', text: 'none' },
+  ), NOW)
+  expect(got.map(n => n.id)).toEqual(['n', 'none'])
+  expect(got[0]?.until).toBe(NOW + H)
+})
+
+test('invisible format characters are removed: tags, soft hyphen, Arabic letter mark, Mongolian vowel separator', () => {
+  const [n] = parseNotices(out({ id: 'i', level: 'warn', text: `a\u{E0001}b\u00adc\u061cd\u180ee\u200bf` }), NOW)
+  expect(n?.text).toBe('abcdef')
+  expect(clean(`x\u{E0041}y\u00adz`, 20)).toBe('xyz')
 })
