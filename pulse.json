@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-16T19:48:03Z",
+ "generated_at": "2026-11-16T20:21:08Z",
  "items": [
   {
    "title": "Source: Nvidia's board is not considering bringing Jensen Huang back as CEO and it is focused on a…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-16T16:03:33Z",
    "text": "We’re working with @ApolloResearch, @METR_Evals, @TransluceAI, and @GoodfireAI on embedded assessments: giving outside experts deep access to our internal models and systems to investigate alignment and test our safeguards. These assessments build on our ongoing alignment and…",
    "author_name": "OpenAI",
-   "likes": 2372,
+   "likes": 2442,
    "story": "OpenAI says it signed agreements with independent assessors Apollo Research, METR, Transluce, and Goodfire for its first phase of AI model embedded assessments"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-11-16T12:38:14Z",
    "text": "I think contrary to many of our expectations, we have not seen a Fable class open model more than 8 months after Fable/Mythos was first made public.",
    "author_name": "Ethan Mollick",
-   "likes": 897,
+   "likes": 919,
    "story": "Alibaba releases Qwen4-Max, its new flagship 2.4T-parameter MoE model with a 1M-token context window, saying it beats Qwen3.8-Max with up to 49% fewer tokens"
   },
   {
@@ -50,8 +50,8 @@
    "url": "https://www.wired.com/story/nvidia-was-already-in-trouble-before-the-jensen-huang-mess/",
    "source": "Hacker News",
    "published_at": "2026-11-16T15:24:09Z",
-   "text": "169 points and 160 comments on Hacker News.",
-   "points": 169,
+   "text": "176 points and 164 comments on Hacker News.",
+   "points": 176,
    "discussion": "https://news.ycombinator.com/item?id=50518567"
   },
   {
@@ -70,27 +70,13 @@
    "via": "Techmeme"
   },
   {
-   "title": "Sources: Jensen Huang had planned to pull back Nvidia's aggressive financing and told neoclouds to…",
-   "url": "https://www.wsj.com/tech/ai/nvidias-days-as-an-open-checkbook-for-the-ai-economy-are-numbered-90c7b388?st=LGBxVv",
-   "source": "Wall Street Journal",
-   "published_at": "2026-11-16T03:31:20Z",
-   "text": "Sources: Jensen Huang had planned to pull back Nvidia's aggressive financing and told neoclouds to get upfront customer payments; Colette Kress may go further. Interim CEO Colette Kress is expected to rein in deals after a stretch in which Nvidia aggressively financed computing deals and startup investments",
-   "via": "Techmeme"
-  },
-  {
-   "title": "Understanding and addressing AI harms",
-   "url": "https://www.anthropic.com/news/our-approach-to-understanding-and-addressing-ai-harms",
-   "source": "Anthropic",
-   "published_at": "2026-11-13T22:37:05Z",
-   "text": "Anthropic's framework for identifying, classifying, and mitigating potential harms from AI systems to support responsible development."
-  },
-  {
-   "title": "A look at the Jensen Huang fallout: a threat to Nvidia's organizational moat and its financing of n…",
-   "url": "https://stratechery.com/2026/obituaries/",
-   "source": "Ben Thompson / Stratechery",
-   "published_at": "2026-11-16T12:47:36Z",
-   "text": "A look at the Jensen Huang fallout: a threat to Nvidia's organizational moat and its financing of neocloud customers, a win for AI doomers and hawks, and more. Dearly beloved, we are gathered here today to get through this thing called life. — ― Prince",
-   "via": "Techmeme"
+   "title": "Just 400 US Data Centers Use More Electricity Than Michigan",
+   "url": "https://www.wired.com/story/data-centers-use-more-electricity-than-michigan/",
+   "source": "Hacker News",
+   "published_at": "2026-11-16T18:04:55Z",
+   "text": "62 points and 49 comments on Hacker News.",
+   "points": 62,
+   "discussion": "https://news.ycombinator.com/item?id=50520697"
   },
   {
    "title": "California AG Rob Bonta sues OpenAI over the Hugging Face incident, alleging OpenAI endangered the…",
@@ -101,19 +87,34 @@
    "via": "Techmeme"
   },
   {
+   "title": "Understanding and addressing AI harms",
+   "url": "https://www.anthropic.com/news/our-approach-to-understanding-and-addressing-ai-harms",
+   "source": "Anthropic",
+   "published_at": "2026-11-13T22:37:05Z",
+   "text": "Anthropic's framework for identifying, classifying, and mitigating potential harms from AI systems to support responsible development."
+  },
+  {
+   "title": "Sources: Jensen Huang had planned to pull back Nvidia's aggressive financing and told neoclouds to…",
+   "url": "https://www.wsj.com/tech/ai/nvidias-days-as-an-open-checkbook-for-the-ai-economy-are-numbered-90c7b388?st=LGBxVv",
+   "source": "Wall Street Journal",
+   "published_at": "2026-11-16T03:31:20Z",
+   "text": "Sources: Jensen Huang had planned to pull back Nvidia's aggressive financing and told neoclouds to get upfront customer payments; Colette Kress may go further. Interim CEO Colette Kress is expected to rein in deals after a stretch in which Nvidia aggressively financed computing deals and startup investments",
+   "via": "Techmeme"
+  },
+  {
+   "title": "A look at the Jensen Huang fallout: a threat to Nvidia's organizational moat and its financing of n…",
+   "url": "https://stratechery.com/2026/obituaries/",
+   "source": "Ben Thompson / Stratechery",
+   "published_at": "2026-11-16T12:47:36Z",
+   "text": "A look at the Jensen Huang fallout: a threat to Nvidia's organizational moat and its financing of neocloud customers, a win for AI doomers and hawks, and more. Dearly beloved, we are gathered here today to get through this thing called life. — ― Prince",
+   "via": "Techmeme"
+  },
+  {
    "title": "Apple partners with OpenEvidence to launch Health AI Usage Study, an app that answers health questi…",
    "url": "https://techcrunch.com/2026/11/15/apple-launches-new-app-to-study-how-people-use-ai-for-health/",
    "source": "Ivan Mehta / TechCrunch",
    "published_at": "2026-11-16T04:11:20Z",
    "text": "Apple partners with OpenEvidence to launch Health AI Usage Study, an app that answers health questions and can use HealthKit data, for up to 200,000 US users. Big AI labs like OpenAI and Anthropic have made their bets on offering chatbots that can answer health-related queries with specialized features.",
-   "via": "Techmeme"
-  },
-  {
-   "title": "Harvard study: just 403 US data centers operational between May 2024 and April 2025 consumed as muc…",
-   "url": "https://www.wired.com/story/data-centers-use-more-electricity-than-michigan/",
-   "source": "Molly Taft / Wired",
-   "published_at": "2026-11-16T16:45:47Z",
-   "text": "Harvard study: just 403 US data centers operational between May 2024 and April 2025 consumed as much electricity annually as the state of Michigan. New Harvard research shows that data-center power demand is outstripping states—and that doesn't even include facilities with off-grid gas plants.",
    "via": "Techmeme"
   },
   {
