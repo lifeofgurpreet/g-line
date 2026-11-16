@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-16T05:52:50Z",
+ "generated_at": "2026-11-16T06:25:13Z",
  "items": [
   {
    "title": "Sources: Jensen Huang has discussed a comeback as Nvidia CEO with confidants, as allies form a “war…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-15T15:03:07Z",
    "text": "NEW Power On: Apple’s next big product — smart glasses planned next year — will offer Siri AI app integrations as its flagship feature. The idea: Book an Uber, reserve a table or order a coffee from your Apple Glasses — with apps running on paired iPhone.",
    "author_name": "Mark Gurman",
-   "likes": 956,
+   "likes": 959,
    "story": "Sources: Apple plans to unveil smart glasses at WWDC and ship them by the end of 2027, focusing heavily on integration of third-party iPhone apps with Siri AI",
    "links": [
     "https://www.bloomberg.com/news/newsletters/2026-11-15/apple-siri-ai-app-integrations-power-smart-glasses-iphone-duo-2-face-id-plan?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc5NDc1NDk0MiwiZXhwIjoxNzk1MzU5NzQyLCJhcnRpY2xlSWQiOiJUT0pUTzFLSVVQU0IwMCIsImJjb25uZWN0SWQiOiJDNEVEQ0FFMUZBMDU0MEJFQTI0QTlGMjExQzFFOTA4MCJ9.JxizrLMB_4yO_RhcaLRgamHBB02Qjf92voFxp6xtjaI"
@@ -35,7 +35,7 @@
    "url": "https://www.bloomberg.com/news/articles/2026-11-15/bessent-says-nvidia-needs-dramatic-shakeup-after-huang-ouster",
    "source": "Tony Czuczka / Bloomberg",
    "published_at": "2026-11-15T15:51:40Z",
-   "text": "Scott Bessent urges Nvidia to hire an outside CEO and wants answers within 10 days on whether it pushed “seemingly illicit” chip sales to China to boost revenue. Nvidia Corp. is facing intense pressure as it embarks on a search for a new chief executive after ousting Jensen Huang …",
+   "text": "Scott Bessent urges Nvidia to hire an outside CEO and wants answers within 10 days on whether it pushed “seemingly illicit” chip sales to China to boost revenue",
    "via": "Techmeme"
   },
   {
@@ -43,8 +43,8 @@
    "url": "https://steveblank.com/2026/11/15/whats-next-for-nvidia/",
    "source": "Hacker News",
    "published_at": "2026-11-15T23:55:55Z",
-   "text": "167 points and 217 comments on Hacker News.",
-   "points": 167,
+   "text": "184 points and 240 comments on Hacker News.",
+   "points": 184,
    "discussion": "https://news.ycombinator.com/item?id=50512235"
   },
   {
@@ -84,8 +84,8 @@
    "url": "https://www.youtube.com/watch?v=WPj3aQ-xxpI",
    "source": "Hacker News",
    "published_at": "2026-11-12T05:29:24Z",
-   "text": "389 points and 195 comments on Hacker News.",
-   "points": 389,
+   "text": "399 points and 196 comments on Hacker News.",
+   "points": 399,
    "discussion": "https://news.ycombinator.com/item?id=50463399"
   },
   {
@@ -94,6 +94,14 @@
    "source": "Anthropic",
    "published_at": "2026-11-13T22:37:05Z",
    "text": "Anthropic's framework for identifying, classifying, and mitigating potential harms from AI systems to support responsible development."
+  },
+  {
+   "title": "Tighter AI chip export rules are gaining bipartisan support in Congress, including a bill to block…",
+   "url": "https://www.ft.com/content/3062790a-553d-41b8-9c7d-bae17b9d2e29",
+   "source": "Financial Times",
+   "published_at": "2026-11-16T06:06:34Z",
+   "text": "Tighter AI chip export rules are gaining bipartisan support in Congress, including a bill to block Chinese companies from accessing chips overseas. Jensen Huang's alleged affair with Chinese spy ‘increases momentum’ to crack down on US hardware reaching China",
+   "via": "Techmeme"
   },
   {
    "title": "Sources: the Trump admin plans to name Nvidia, Amazon, Microsoft, OpenAI, and Anthropic among 24+ A…",
@@ -116,15 +124,7 @@
    "url": "https://9to5mac.com/2026/11/12/mount-thor-raises-45-million-to-build-mac-data-centers-for-ai-agents/",
    "source": "Bradley C / 9to5Mac",
    "published_at": "2026-11-16T03:20:58Z",
-   "text": "Mount Thor, which is building cloud infrastructure for agentic AI on Apple silicon, raised $45M in a seed round and a Series A co-led by CRV and Conviction",
-   "via": "Techmeme"
-  },
-  {
-   "title": "Samsung aims to be a one-stop shop that builds, runs, and powers AI data centers; sources: its IT a…",
-   "url": "https://www.ft.com/content/ee5b23b3-89b3-41f7-9158-56c1586759c2",
-   "source": "Financial Times",
-   "published_at": "2026-11-16T01:16:10Z",
-   "text": "Samsung aims to be a one-stop shop that builds, runs, and powers AI data centers; sources: its IT arm is in early talks to sign Anthropic and OpenAI as tenants. South Korean conglomerate hopes to replicate success with semiconductors across its sprawling portfolio of businesses",
+   "text": "Mount Thor, which is building cloud infrastructure for agentic AI on Apple silicon, raised $45M in a seed round and a Series A co-led by CRV and Conviction. Apple @ Work is exclusively brought to you by Mosyle, the only Apple Unified Platform. Mosyle is the only solution that integrates …",
    "via": "Techmeme"
   }
  ],
