@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-16T07:29:34Z",
+ "generated_at": "2026-11-16T08:01:14Z",
  "items": [
   {
    "title": "Sources: Jensen Huang has discussed a comeback as Nvidia CEO with confidants, as allies form a “war…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-15T15:03:07Z",
    "text": "NEW Power On: Apple’s next big product — smart glasses planned next year — will offer Siri AI app integrations as its flagship feature. The idea: Book an Uber, reserve a table or order a coffee from your Apple Glasses — with apps running on paired iPhone.",
    "author_name": "Mark Gurman",
-   "likes": 969,
+   "likes": 972,
    "story": "Sources: Apple plans to unveil smart glasses at WWDC and ship them by the end of 2027, focusing heavily on integration of third-party iPhone apps with Siri AI",
    "links": [
     "https://www.bloomberg.com/news/newsletters/2026-11-15/apple-siri-ai-app-integrations-power-smart-glasses-iphone-duo-2-face-id-plan?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc5NDc1NDk0MiwiZXhwIjoxNzk1MzU5NzQyLCJhcnRpY2xlSWQiOiJUT0pUTzFLSVVQU0IwMCIsImJjb25uZWN0SWQiOiJDNEVEQ0FFMUZBMDU0MEJFQTI0QTlGMjExQzFFOTA4MCJ9.JxizrLMB_4yO_RhcaLRgamHBB02Qjf92voFxp6xtjaI"
@@ -43,8 +43,8 @@
    "url": "https://steveblank.com/2026/11/15/whats-next-for-nvidia/",
    "source": "Hacker News",
    "published_at": "2026-11-15T23:55:55Z",
-   "text": "201 points and 268 comments on Hacker News.",
-   "points": 201,
+   "text": "213 points and 280 comments on Hacker News.",
+   "points": 213,
    "discussion": "https://news.ycombinator.com/item?id=50512235"
   },
   {
@@ -84,8 +84,8 @@
    "url": "https://www.youtube.com/watch?v=WPj3aQ-xxpI",
    "source": "Hacker News",
    "published_at": "2026-11-12T05:29:24Z",
-   "text": "413 points and 196 comments on Hacker News.",
-   "points": 413,
+   "text": "419 points and 197 comments on Hacker News.",
+   "points": 419,
    "discussion": "https://news.ycombinator.com/item?id=50463399"
   },
   {
@@ -104,6 +104,14 @@
    "via": "Techmeme"
   },
   {
+   "title": "The US and Pax Silica allies, including Japan, the UK, and India, agree to create a joint list of A…",
+   "url": "https://www.ft.com/content/3c2197fc-9618-4838-91e6-522ce1a96a22",
+   "source": "Financial Times",
+   "published_at": "2026-11-15T18:56:44Z",
+   "text": "The US and Pax Silica allies, including Japan, the UK, and India, agree to create a joint list of AI technologies and supply chains to protect from China. Pact comes ahead of Donald Trump's meeting with Xi Jinping at the Asia-Pacific Economic Cooperation forum in Shenzhen",
+   "via": "Techmeme"
+  },
+  {
    "title": "Sources: the Trump admin plans to name Nvidia, Amazon, Microsoft, OpenAI, and Anthropic among 24+ A…",
    "url": "https://www.wsj.com/tech/ai/trump-administration-to-name-nvidia-among-ai-national-champions-c9284344",
    "source": "Wall Street Journal",
@@ -112,19 +120,11 @@
    "via": "Techmeme"
   },
   {
-   "title": "Mount Thor, which is building cloud infrastructure for agentic AI on Apple silicon, raised $45M in…",
-   "url": "https://9to5mac.com/2026/11/12/mount-thor-raises-45-million-to-build-mac-data-centers-for-ai-agents/",
-   "source": "Bradley C / 9to5Mac",
-   "published_at": "2026-11-16T03:20:58Z",
-   "text": "Mount Thor, which is building cloud infrastructure for agentic AI on Apple silicon, raised $45M in a seed round and a Series A co-led by CRV and Conviction. Apple @ Work is exclusively brought to you by Mosyle, the only Apple Unified Platform. Mosyle is the only solution that integrates …",
-   "via": "Techmeme"
-  },
-  {
-   "title": "Analysis: Huawei's Horinger data center, among China's largest for AI, has ~7% of the compute of Sp…",
-   "url": "https://epochai.substack.com/p/what-huaweis-horinger-data-center",
-   "source": "Ben Cottier / Epoch AI",
-   "published_at": "2026-11-15T22:03:26Z",
-   "text": "Analysis: Huawei's Horinger data center, among China's largest for AI, has ~7% of the compute of SpaceX's Colossus 2 and may stay far behind until at least 2028. This is a condensed version of a longer report on our website — Huawei, China's biggest AI chip developer, is drawing on China's abundant energy to build data centers.",
+   "title": "Zus Health, which is building an AI-native healthcare data platform, raised a $33M Series B led by…",
+   "url": "https://www.fiercehealthcare.com/health-tech/zus-health-secures-33m-build-infrastructure-ai-powered-clinical-workflows",
+   "source": "Heather Landi / Fierce Heal…",
+   "published_at": "2026-11-16T07:36:31Z",
+   "text": "Zus Health, which is building an AI-native healthcare data platform, raised a $33M Series B led by Drive Capital, bringing its total funding to $100M+. Jonathan Bush Zus Health Clinical Data Interoperability — As healthcare companies race to build AI copilots and agents …",
    "via": "Techmeme"
   }
  ],
