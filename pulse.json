@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-16T04:17:00Z",
+ "generated_at": "2026-11-16T04:49:14Z",
  "items": [
   {
    "title": "Sources: Jensen Huang has discussed a comeback as Nvidia CEO with confidants, as allies form a “war…",
@@ -11,17 +11,14 @@
    "via": "Techmeme"
   },
   {
-   "title": "NEW Power On: Apple’s next big product — smart glasses planned next year — will offer Siri AI app i…",
-   "url": "https://x.com/markgurman/status/2121982333238612094",
-   "source": "𝕏 @markgurman",
-   "published_at": "2026-11-15T15:03:07Z",
-   "text": "NEW Power On: Apple’s next big product — smart glasses planned next year — will offer Siri AI app integrations as its flagship feature. The idea: Book an Uber, reserve a table or order a coffee from your Apple Glasses — with apps running on paired iPhone.",
-   "author_name": "Mark Gurman",
-   "likes": 935,
-   "story": "Sources: Apple plans to unveil smart glasses at WWDC and ship them by the end of 2027, focusing heavily on integration of third-party iPhone apps with Siri AI",
-   "links": [
-    "https://www.bloomberg.com/news/newsletters/2026-11-15/apple-siri-ai-app-integrations-power-smart-glasses-iphone-duo-2-face-id-plan?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc5NDc1NDk0MiwiZXhwIjoxNzk1MzU5NzQyLCJhcnRpY2xlSWQiOiJUT0pUTzFLSVVQU0IwMCIsImJjb25uZWN0SWQiOiJDNEVEQ0FFMUZBMDU0MEJFQTI0QTlGMjExQzFFOTA4MCJ9.JxizrLMB_4yO_RhcaLRgamHBB02Qjf92voFxp6xtjaI"
-   ]
+   "title": "Alibaba has launched Qwen4 Max, gaining 9 points over Qwen3.8 Max on the Artificial Analysis Intell…",
+   "url": "https://x.com/ArtificialAnlys/status/2122161629592953032",
+   "source": "𝕏 @ArtificialAnlys",
+   "published_at": "2026-11-16T02:55:35Z",
+   "text": "Alibaba has launched Qwen4 Max, gaining 9 points over Qwen3.8 Max on the Artificial Analysis Intelligence Index and landing 3 points behind Kimi K3.1 Pro at ~11% lower Cost per Task Qwen4 Max, using xhigh reasoning effort, scores 43 on the Intelligence Index, 9 points ahead of…",
+   "author_name": "Artificial Analysis",
+   "likes": 507,
+   "story": "Alibaba releases Qwen4-Max, its new flagship 2.4T-parameter MoE model with a 1M-token context window, saying it beats Qwen3.8-Max with up to ~50% fewer tokens"
   },
   {
    "title": "Claude Code 2.1.325 released",
@@ -31,11 +28,24 @@
    "text": "Fixed a security issue in how zstd-compressed responses are decoded · Added a spinner tip in VS Code and similar integrated terminals about re-running a notebook cell, shown once Claude has read or edited a Jupyter notebook · Added a line under the error shown when your organization's policy blocks a request, saying how to continue: run /rewind and change the message, or run /clear · Added a note for Claude when a sandboxed git checkout, git stash or autostash pull cannot update protected files such as those in .claude"
   },
   {
+   "title": "NEW Power On: Apple’s next big product — smart glasses planned next year — will offer Siri AI app i…",
+   "url": "https://x.com/markgurman/status/2121982333238612094",
+   "source": "𝕏 @markgurman",
+   "published_at": "2026-11-15T15:03:07Z",
+   "text": "NEW Power On: Apple’s next big product — smart glasses planned next year — will offer Siri AI app integrations as its flagship feature. The idea: Book an Uber, reserve a table or order a coffee from your Apple Glasses — with apps running on paired iPhone.",
+   "author_name": "Mark Gurman",
+   "likes": 943,
+   "story": "Sources: Apple plans to unveil smart glasses at WWDC and ship them by the end of 2027, focusing heavily on integration of third-party iPhone apps with Siri AI",
+   "links": [
+    "https://www.bloomberg.com/news/newsletters/2026-11-15/apple-siri-ai-app-integrations-power-smart-glasses-iphone-duo-2-face-id-plan?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc5NDc1NDk0MiwiZXhwIjoxNzk1MzU5NzQyLCJhcnRpY2xlSWQiOiJUT0pUTzFLSVVQU0IwMCIsImJjb25uZWN0SWQiOiJDNEVEQ0FFMUZBMDU0MEJFQTI0QTlGMjExQzFFOTA4MCJ9.JxizrLMB_4yO_RhcaLRgamHBB02Qjf92voFxp6xtjaI"
+   ]
+  },
+  {
    "title": "Scott Bessent urges Nvidia to hire an outside CEO and wants answers within 10 days on whether it pu…",
    "url": "https://www.bloomberg.com/news/articles/2026-11-15/bessent-says-nvidia-needs-dramatic-shakeup-after-huang-ouster",
    "source": "Tony Czuczka / Bloomberg",
    "published_at": "2026-11-15T15:51:40Z",
-   "text": "Scott Bessent urges Nvidia to hire an outside CEO and wants answers within 10 days on whether it pushed “seemingly illicit” chip sales to China to boost revenue. Nvidia Corp. is facing intense pressure as it embarks on a search for a new chief executive after ousting Jensen Huang …",
+   "text": "Scott Bessent urges Nvidia to hire an outside CEO and wants answers within 10 days on whether it pushed “seemingly illicit” chip sales to China to boost revenue",
    "via": "Techmeme"
   },
   {
@@ -43,8 +53,8 @@
    "url": "https://steveblank.com/2026/11/15/whats-next-for-nvidia/",
    "source": "Hacker News",
    "published_at": "2026-11-15T23:55:55Z",
-   "text": "133 points and 153 comments on Hacker News.",
-   "points": 133,
+   "text": "142 points and 180 comments on Hacker News.",
+   "points": 142,
    "discussion": "https://news.ycombinator.com/item?id=50512235"
   },
   {
@@ -67,8 +77,8 @@
    "url": "https://magazine.sebastianraschka.com/p/understanding-positional-embeddings",
    "source": "Hacker News",
    "published_at": "2026-11-15T12:14:06Z",
-   "text": "218 points and 27 comments on Hacker News.",
-   "points": 218,
+   "text": "220 points and 27 comments on Hacker News.",
+   "points": 220,
    "discussion": "https://news.ycombinator.com/item?id=50506376"
   },
   {
@@ -96,11 +106,11 @@
    "text": "Anthropic's framework for identifying, classifying, and mitigating potential harms from AI systems to support responsible development."
   },
   {
-   "title": "Alibaba releases Qwen4-Max, its new flagship 2.4T-parameter MoE model with a 1M-token context windo…",
-   "url": "https://qwen.ai/blog?id=qwen4-max",
-   "source": "Qwen",
-   "published_at": "2026-11-16T03:41:04Z",
-   "text": "Alibaba releases Qwen4-Max, its new flagship 2.4T-parameter MoE model with a 1M-token context window, saying it beats Qwen3.8-Max with up to ~50% fewer tokens. Today, we are introducing Qwen4-Max, your new AI teammate for work, creativity, and discovery.",
+   "title": "Sources: the Trump admin plans to name Nvidia, Amazon, Microsoft, OpenAI, and Anthropic among 24+ A…",
+   "url": "https://www.wsj.com/tech/ai/trump-administration-to-name-nvidia-among-ai-national-champions-c9284344",
+   "source": "Wall Street Journal",
+   "published_at": "2026-11-16T04:41:38Z",
+   "text": "Sources: the Trump admin plans to name Nvidia, Amazon, Microsoft, OpenAI, and Anthropic among 24+ AI “national champions” to help them win overseas business. The new program is part of an effort to help U.S. AI companies compete for business overseas",
    "via": "Techmeme"
   },
   {
@@ -108,17 +118,9 @@
    "url": "https://www.youtube.com/watch?v=WPj3aQ-xxpI",
    "source": "Hacker News",
    "published_at": "2026-11-12T05:29:24Z",
-   "text": "373 points and 191 comments on Hacker News.",
-   "points": 373,
+   "text": "377 points and 192 comments on Hacker News.",
+   "points": 377,
    "discussion": "https://news.ycombinator.com/item?id=50463399"
-  },
-  {
-   "title": "Mount Thor, which is building cloud infrastructure for agentic AI on Apple silicon, raised $45M in…",
-   "url": "https://9to5mac.com/2026/11/12/mount-thor-raises-45-million-to-build-mac-data-centers-for-ai-agents/",
-   "source": "Bradley C / 9to5Mac",
-   "published_at": "2026-11-16T03:20:58Z",
-   "text": "Mount Thor, which is building cloud infrastructure for agentic AI on Apple silicon, raised $45M in a seed round and a Series A co-led by CRV and Conviction. Apple @ Work is exclusively brought to you by Mosyle, the only Apple Unified Platform. Mosyle is the only solution that integrates …",
-   "via": "Techmeme"
   },
   {
    "title": "The US and Pax Silica allies, including Japan, the UK, and India, agree to create a joint list of A…",
