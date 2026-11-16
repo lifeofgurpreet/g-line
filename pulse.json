@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-15T23:31:29Z",
+ "generated_at": "2026-11-16T00:03:11Z",
  "items": [
   {
    "title": "Sources: Jensen Huang has discussed a comeback as Nvidia CEO with confidants, as allies form a “war…",
@@ -17,8 +17,8 @@
    "published_at": "2026-11-15T00:13:00Z",
    "text": "BREAKING: Former Nvidia CEO Jensen Huang reportedly told a top executive \"I hope you die\" during a meeting",
    "author_name": "Kalshi",
-   "likes": 39339,
-   "story": "A post-Jensen Nvidia must reshuffle its leadership, reset its DC ties, and recognize that even the US' most valuable company cannot dictate US foreign policy"
+   "likes": 39515,
+   "story": "Nvidia insiders say Jensen Huang was prone to wild office tantrums, which a source says some employees were surprised hadn't leaked before his public downfall"
   },
   {
    "title": "Claude Code 2.1.325 released",
@@ -34,7 +34,7 @@
    "published_at": "2026-11-15T15:03:07Z",
    "text": "NEW Power On: Apple’s next big product — smart glasses planned next year — will offer Siri AI app integrations as its flagship feature. The idea: Book an Uber, reserve a table or order a coffee from your Apple Glasses — with apps running on paired iPhone.",
    "author_name": "Mark Gurman",
-   "likes": 828,
+   "likes": 841,
    "story": "Sources: Apple plans to unveil smart glasses at WWDC and ship them by the end of 2027, focusing heavily on integration of third-party iPhone apps with Siri AI",
    "links": [
     "https://www.bloomberg.com/news/newsletters/2026-11-15/apple-siri-ai-app-integrations-power-smart-glasses-iphone-duo-2-face-id-plan?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc5NDc1NDk0MiwiZXhwIjoxNzk1MzU5NzQyLCJhcnRpY2xlSWQiOiJUT0pUTzFLSVVQU0IwMCIsImJjb25uZWN0SWQiOiJDNEVEQ0FFMUZBMDU0MEJFQTI0QTlGMjExQzFFOTA4MCJ9.JxizrLMB_4yO_RhcaLRgamHBB02Qjf92voFxp6xtjaI"
@@ -53,8 +53,8 @@
    "url": "https://jakub.jankiewicz.org/blog/ai-code-open-source/",
    "source": "Hacker News",
    "published_at": "2026-11-15T14:46:58Z",
-   "text": "1031 points and 569 comments on Hacker News.",
-   "points": 1031,
+   "text": "1050 points and 573 comments on Hacker News.",
+   "points": 1050,
    "discussion": "https://news.ycombinator.com/item?id=50507303"
   },
   {
@@ -63,6 +63,23 @@
    "source": "Anthropic",
    "published_at": "2026-11-13T22:37:05Z",
    "text": "Anthropic is endorsing SB 53, the California bill that governs powerful AI systems built by frontier AI developers like Anthropic."
+  },
+  {
+   "title": "Investigation: Howard Lutnick pushed to narrow chip curbs affecting a client of his former firm Can…",
+   "url": "https://www.nytimes.com/2026/11/15/us/politics/lutnick-pushed-to-weaken-chip-rules-that-overlap-with-his-family-business.html?unlocked_article_code=1.QlE.S83S.v9pNUp3b3vi_&smid=url-share",
+   "source": "New York Times",
+   "published_at": "2026-11-15T16:11:28Z",
+   "text": "Investigation: Howard Lutnick pushed to narrow chip curbs affecting a client of his former firm Cantor Fitzgerald whose Malaysia data center may serve Tencent. The commerce secretary has been writing new rules that would affect Southeast Asian data centers, some of which are clients of his former firm.",
+   "via": "Techmeme"
+  },
+  {
+   "title": "Your Agent Will Pick the Hackable One",
+   "url": "https://geoffstearns.com/blog/your-agent-will-pick-the-hackable-one/",
+   "source": "Hacker News",
+   "published_at": "2026-11-15T21:10:39Z",
+   "text": "70 points and 39 comments on Hacker News.",
+   "points": 70,
+   "discussion": "https://news.ycombinator.com/item?id=50510799"
   },
   {
    "title": "Sources: Howard Lutnick is expected to join Trump on Air Force One to China this week, after clashi…",
@@ -77,9 +94,16 @@
    "url": "https://magazine.sebastianraschka.com/p/understanding-positional-embeddings",
    "source": "Hacker News",
    "published_at": "2026-11-15T12:14:06Z",
-   "text": "189 points and 24 comments on Hacker News.",
-   "points": 189,
+   "text": "190 points and 26 comments on Hacker News.",
+   "points": 190,
    "discussion": "https://news.ycombinator.com/item?id=50506376"
+  },
+  {
+   "title": "Understanding and addressing AI harms",
+   "url": "https://www.anthropic.com/news/our-approach-to-understanding-and-addressing-ai-harms",
+   "source": "Anthropic",
+   "published_at": "2026-11-13T22:37:05Z",
+   "text": "Anthropic's framework for identifying, classifying, and mitigating potential harms from AI systems to support responsible development."
   },
   {
    "title": "How Jensen Huang built a multibillion-dollar business to let Chinese companies access Nvidia AI chi…",
@@ -99,35 +123,11 @@
    "discussion": "https://news.ycombinator.com/item?id=50496921"
   },
   {
-   "title": "Understanding and addressing AI harms",
-   "url": "https://www.anthropic.com/news/our-approach-to-understanding-and-addressing-ai-harms",
-   "source": "Anthropic",
-   "published_at": "2026-11-13T22:37:05Z",
-   "text": "Anthropic's framework for identifying, classifying, and mitigating potential harms from AI systems to support responsible development."
-  },
-  {
-   "title": "The US and Pax Silica allies, including Japan, the UK, and India, agree to create a joint list of A…",
-   "url": "https://www.ft.com/content/3c2197fc-9618-4838-91e6-522ce1a96a22",
-   "source": "Financial Times",
-   "published_at": "2026-11-15T18:56:44Z",
-   "text": "The US and Pax Silica allies, including Japan, the UK, and India, agree to create a joint list of AI technologies and supply chains to protect from China. Pact comes ahead of Donald Trump's meeting with Xi Jinping at the Asia-Pacific Economic Cooperation forum in Shenzhen",
-   "via": "Techmeme"
-  },
-  {
-   "title": "Anthropic upgrades Claude Code Projects to run parallel AI workers",
-   "url": "https://claude.com/resources/articles/projects-redesigned",
-   "source": "Hacker News",
-   "published_at": "2026-11-14T00:28:11Z",
-   "text": "100 points and 95 comments on Hacker News.",
-   "points": 100,
-   "discussion": "https://news.ycombinator.com/item?id=50492141"
-  },
-  {
-   "title": "Sources: Anthropic's IPO is ~7x oversubscribed; Anthropic and some of its backers are seeking to ra…",
-   "url": "https://www.bloomberg.com/news/features/2026-11-15/anthropic-s-ipo-makes-dario-amodei-the-new-face-of-the-ai-boom",
-   "source": "Bloomberg",
-   "published_at": "2026-11-15T23:03:13Z",
-   "text": "Sources: Anthropic's IPO is ~7x oversubscribed; Anthropic and some of its backers are seeking to raise up to $90.4B via the IPO and a separate private placement. The startup is set for the biggest IPO of all time, putting AI investors' hopes and dreams — and fears — onto a frontier model maker.",
+   "title": "A post-Jensen Nvidia must reshuffle its leadership, reset its DC ties, and recognize that even the…",
+   "url": "https://www.ft.com/content/0e2720d7-ba0a-4469-a854-30931f907bd3",
+   "source": "Chris Miller / Financial Ti…",
+   "published_at": "2026-11-15T07:02:48Z",
+   "text": "A post-Jensen Nvidia must reshuffle its leadership, reset its DC ties, and recognize that even the US' most valuable company cannot dictate US foreign policy. The chip company has only itself to blame for a long list of adversaries — Jensen Huang's exit from Nvidia, the company he co-founded …",
    "via": "Techmeme"
   }
  ],
