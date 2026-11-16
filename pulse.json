@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-16T10:09:54Z",
+ "generated_at": "2026-11-16T10:42:35Z",
  "items": [
   {
    "title": "Sources: Jensen Huang has discussed a comeback as Nvidia CEO with confidants, as allies form a “war…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-15T15:03:07Z",
    "text": "NEW Power On: Apple’s next big product — smart glasses planned next year — will offer Siri AI app integrations as its flagship feature. The idea: Book an Uber, reserve a table or order a coffee from your Apple Glasses — with apps running on paired iPhone.",
    "author_name": "Mark Gurman",
-   "likes": 985,
+   "likes": 986,
    "story": "Sources: Apple plans to unveil smart glasses at WWDC and ship them by the end of 2027, focusing heavily on integration of third-party iPhone apps with Siri AI",
    "links": [
     "https://www.bloomberg.com/news/newsletters/2026-11-15/apple-siri-ai-app-integrations-power-smart-glasses-iphone-duo-2-face-id-plan?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc5NDc1NDk0MiwiZXhwIjoxNzk1MzU5NzQyLCJhcnRpY2xlSWQiOiJUT0pUTzFLSVVQU0IwMCIsImJjb25uZWN0SWQiOiJDNEVEQ0FFMUZBMDU0MEJFQTI0QTlGMjExQzFFOTA4MCJ9.JxizrLMB_4yO_RhcaLRgamHBB02Qjf92voFxp6xtjaI"
@@ -95,14 +95,6 @@
    "via": "Techmeme"
   },
   {
-   "title": "The US and Pax Silica allies, including Japan, the UK, and India, agree to create a joint list of A…",
-   "url": "https://www.ft.com/content/3c2197fc-9618-4838-91e6-522ce1a96a22",
-   "source": "Financial Times",
-   "published_at": "2026-11-15T18:56:44Z",
-   "text": "The US and Pax Silica allies, including Japan, the UK, and India, agree to create a joint list of AI technologies and supply chains to protect from China. Pact comes ahead of Donald Trump's meeting with Xi Jinping at the Asia-Pacific Economic Cooperation forum in Shenzhen",
-   "via": "Techmeme"
-  },
-  {
    "title": "Sources: the Trump administration plans to name Nvidia, Amazon, Microsoft, OpenAI, and Anthropic am…",
    "url": "https://www.wsj.com/tech/ai/trump-administration-to-name-nvidia-among-ai-national-champions-c9284344?st=e6my7o&reflink=desktopwebshare_permalink",
    "source": "Wall Street Journal",
@@ -111,11 +103,19 @@
    "via": "Techmeme"
   },
   {
+   "title": "Baidu reports Q3 revenue down 1% YOY to ~$4.6B, its sixth straight quarterly sales decline, and net…",
+   "url": "https://www.bloomberg.com/news/articles/2026-11-16/baidu-posts-sixth-straight-sales-drop-after-ai-drag-persists",
+   "source": "Bloomberg",
+   "published_at": "2026-11-16T10:41:00Z",
+   "text": "Baidu reports Q3 revenue down 1% YOY to ~$4.6B, its sixth straight quarterly sales decline, and net income of ~$210M; AI businesses are now 50%+ of its revenue. Baidu Inc. posted its sixth straight quarterly revenue drop, underscoring the urgency of its efforts to commercialize AI to offset a faltering legacy search business.",
+   "via": "Techmeme"
+  },
+  {
    "title": "Delhi-based Bharat Semi, which is developing programmable image sensors combining capture, processi…",
    "url": "https://techcrunch.com/2026/11/15/indian-chip-startup-bharat-semi-lands-24m-seed-round-as-it-eyes-global-ai-sensor-market/",
    "source": "Jagmeet Singh / TechCrunch",
    "published_at": "2026-11-16T08:05:53Z",
-   "text": "Delhi-based Bharat Semi, which is developing programmable image sensors combining capture, processing, and AI capabilities on a single chip, raised a $24M seed. Bharat Semi, an Indian semiconductor startup, has raised $24 million in seed funding to develop AI-enabled image sensors …",
+   "text": "Delhi-based Bharat Semi, which is developing programmable image sensors combining capture, processing, and AI capabilities on a single chip, raised a $24M seed",
    "via": "Techmeme"
   },
   {
