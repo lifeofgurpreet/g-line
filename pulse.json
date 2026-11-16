@@ -1,13 +1,13 @@
 {
  "schema": 1,
- "generated_at": "2026-11-16T17:38:27Z",
+ "generated_at": "2026-11-16T18:10:42Z",
  "items": [
   {
-   "title": "A look at the Jensen Huang fallout: a threat to Nvidia's organizational moat and its financing of n…",
-   "url": "https://stratechery.com/2026/obituaries/",
-   "source": "Ben Thompson / Stratechery",
-   "published_at": "2026-11-16T12:47:36Z",
-   "text": "A look at the Jensen Huang fallout: a threat to Nvidia's organizational moat and its financing of neocloud customers, a win for AI doomers and hawks, and more. Dearly beloved, we are gathered here today to get through this thing called life. — ― Prince",
+   "title": "Source: Nvidia's board is not considering bringing Jensen Huang back as CEO and it is focused on a…",
+   "url": "https://www.cnbc.com/2026/11/16/nvidia-ceo-jensen-huang.html",
+   "source": "CNBC",
+   "published_at": "2026-11-16T17:43:50Z",
+   "text": "Source: Nvidia's board is not considering bringing Jensen Huang back as CEO and it is focused on a national security investigation into Huang. Nvidia's board of directors is not considering bringing back Jensen Huang as CEO, a person familiar with the matter told CNBC.",
    "via": "Techmeme"
   },
   {
@@ -17,7 +17,7 @@
    "published_at": "2026-11-16T16:03:33Z",
    "text": "We’re working with @ApolloResearch, @METR_Evals, @TransluceAI, and @GoodfireAI on embedded assessments: giving outside experts deep access to our internal models and systems to investigate alignment and test our safeguards. These assessments build on our ongoing alignment and…",
    "author_name": "OpenAI",
-   "likes": 1942,
+   "likes": 2103,
    "story": "OpenAI says it signed agreements with independent assessors Apollo Research, METR, Transluce, and Goodfire for its first phase of AI model embedded assessments"
   },
   {
@@ -34,32 +34,8 @@
    "published_at": "2026-11-16T12:38:14Z",
    "text": "I think contrary to many of our expectations, we have not seen a Fable class open model more than 8 months after Fable/Mythos was first made public.",
    "author_name": "Ethan Mollick",
-   "likes": 803,
+   "likes": 830,
    "story": "Alibaba releases Qwen4-Max, its new flagship 2.4T-parameter MoE model with a 1M-token context window, saying it beats Qwen3.8-Max with up to 49% fewer tokens"
-  },
-  {
-   "title": "President Trump says he “would not mind” if Jensen Huang was reinstated as Nvidia's CEO and “I don'…",
-   "url": "https://nypost.com/2026/11/16/us-news/trump-would-not-mind-jensen-huang-returning-as-nvidia-ceo/",
-   "source": "Emily Goodin / New York Post",
-   "published_at": "2026-11-16T14:55:46Z",
-   "text": "President Trump says he “would not mind” if Jensen Huang was reinstated as Nvidia's CEO and “I don't know that she was a spy at all” in reference to Alice Huang. WASHINGTON — President Donald Trump said Monday he “would not mind” if Jensen Huang was reinstated as Nvidia CEO …",
-   "via": "Techmeme"
-  },
-  {
-   "title": "Nvidia Was in Trouble Before the Jensen Huang Mess",
-   "url": "https://www.wired.com/story/nvidia-was-already-in-trouble-before-the-jensen-huang-mess/",
-   "source": "Hacker News",
-   "published_at": "2026-11-16T15:24:09Z",
-   "text": "110 points and 79 comments on Hacker News.",
-   "points": 110,
-   "discussion": "https://news.ycombinator.com/item?id=50518567"
-  },
-  {
-   "title": "Anthropic is endorsing SB 53",
-   "url": "https://www.anthropic.com/news/anthropic-is-endorsing-sb-53",
-   "source": "Anthropic",
-   "published_at": "2026-11-13T22:37:05Z",
-   "text": "Anthropic is endorsing SB 53, the California bill that governs powerful AI systems built by frontier AI developers like Anthropic."
   },
   {
    "title": "The US Commerce Department issues an interim rule to limit remote access to some AI chips and serve…",
@@ -70,12 +46,36 @@
    "via": "Techmeme"
   },
   {
+   "title": "Nvidia was in trouble before the Jensen Huang mess",
+   "url": "https://www.wired.com/story/nvidia-was-already-in-trouble-before-the-jensen-huang-mess/",
+   "source": "Hacker News",
+   "published_at": "2026-11-16T15:24:09Z",
+   "text": "141 points and 124 comments on Hacker News.",
+   "points": 141,
+   "discussion": "https://news.ycombinator.com/item?id=50518567"
+  },
+  {
+   "title": "Anthropic is endorsing SB 53",
+   "url": "https://www.anthropic.com/news/anthropic-is-endorsing-sb-53",
+   "source": "Anthropic",
+   "published_at": "2026-11-13T22:37:05Z",
+   "text": "Anthropic is endorsing SB 53, the California bill that governs powerful AI systems built by frontier AI developers like Anthropic."
+  },
+  {
+   "title": "A look at the Jensen Huang fallout: a threat to Nvidia's organizational moat and its financing of n…",
+   "url": "https://stratechery.com/2026/obituaries/",
+   "source": "Ben Thompson / Stratechery",
+   "published_at": "2026-11-16T12:47:36Z",
+   "text": "A look at the Jensen Huang fallout: a threat to Nvidia's organizational moat and its financing of neocloud customers, a win for AI doomers and hawks, and more. Dearly beloved, we are gathered here today to get through this thing called life. — ― Prince",
+   "via": "Techmeme"
+  },
+  {
    "title": "What's Next for Nvidia?",
    "url": "https://steveblank.com/2026/11/15/whats-next-for-nvidia/",
    "source": "Hacker News",
    "published_at": "2026-11-15T23:55:55Z",
-   "text": "410 points and 522 comments on Hacker News.",
-   "points": 410,
+   "text": "420 points and 533 comments on Hacker News.",
+   "points": 420,
    "discussion": "https://news.ycombinator.com/item?id=50512235"
   },
   {
@@ -102,19 +102,19 @@
    "via": "Techmeme"
   },
   {
-   "title": "Google's TIG reports the first observed instance of attackers using an autonomous AI framework with…",
-   "url": "https://siliconangle.com/2026/11/16/google-says-an-ai-framework-turned-security-patches-into-exploits-with-no-human-in-the-loop/",
-   "source": "Duncan Riley / SiliconANGLE",
-   "published_at": "2026-11-16T14:40:45Z",
-   "text": "Google's TIG reports the first observed instance of attackers using an autonomous AI framework with no human in the loop to turn security patches into exploits. A new report out today from Google LLC's Google Threat Intelligence Group finds that for the first time, attackers have used …",
-   "via": "Techmeme"
-  },
-  {
    "title": "Sources: the Trump administration plans to name Nvidia, Amazon, Microsoft, OpenAI, and Anthropic am…",
    "url": "https://www.wsj.com/tech/ai/trump-administration-to-name-nvidia-among-ai-national-champions-c9284344?st=e6my7o&reflink=desktopwebshare_permalink",
    "source": "Wall Street Journal",
    "published_at": "2026-11-16T04:41:38Z",
    "text": "Sources: the Trump administration plans to name Nvidia, Amazon, Microsoft, OpenAI, and Anthropic among 24+ AI “national champions” to help win business overseas. The new program is part of an effort to help U.S. AI companies compete for business overseas",
+   "via": "Techmeme"
+  },
+  {
+   "title": "Google's TIG reports the first observed instance of attackers using an autonomous AI framework with…",
+   "url": "https://siliconangle.com/2026/11/16/google-says-an-ai-framework-turned-security-patches-into-exploits-with-no-human-in-the-loop/",
+   "source": "Duncan Riley / SiliconANGLE",
+   "published_at": "2026-11-16T14:40:45Z",
+   "text": "Google's TIG reports the first observed instance of attackers using an autonomous AI framework with no human in the loop to turn security patches into exploits. A new report out today from Google LLC's Google Threat Intelligence Group finds that for the first time, attackers have used …",
    "via": "Techmeme"
   },
   {
