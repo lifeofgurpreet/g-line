@@ -1,13 +1,13 @@
 {
  "schema": 1,
- "generated_at": "2026-11-16T13:21:56Z",
+ "generated_at": "2026-11-16T13:53:27Z",
  "items": [
   {
-   "title": "Sources: Jensen Huang has discussed a comeback as Nvidia CEO with confidants, as allies form a “war…",
+   "title": "Sources: Jensen Huang has discussed a comeback as Nvidia's CEO with confidants, as allies form a “w…",
    "url": "https://www.ft.com/content/45383d86-33c4-4d99-86e5-5e058d3567c1?accessToken=zwAAAaHhCqBRkc9FOD2GM8RNmdOG5V4FjTVnwQ.MEYCIQCZEg_GADuUi3HMzfVy4L3GgdXzwW5GpeLTdxDHbMhYXQIhAKQz7pVUZgb0WKGUJq30p1B5vEF2gPlUop1e8Yzyol24&sharetype=gift&token=35d995ef-ed14-4cc4-8323-31a3da06ba1b&syn-25a6b1a6=1",
    "source": "Financial Times",
    "published_at": "2026-11-15T19:21:36Z",
-   "text": "Sources: Jensen Huang has discussed a comeback as Nvidia CEO with confidants, as allies form a “war room” to lobby for his return and seek White House support. Tech supporters lobby chipmaker's board to reinstate former CEO after he resigned following affair with alleged Chinese spy",
+   "text": "Sources: Jensen Huang has discussed a comeback as Nvidia's CEO with confidants, as allies form a “war room” to lobby for his return and seek White House support. Tech supporters lobby chipmaker's board to reinstate former CEO after he resigned following affair with alleged Chinese spy",
    "via": "Techmeme"
   },
   {
@@ -17,7 +17,7 @@
    "published_at": "2026-11-16T12:38:14Z",
    "text": "I think contrary to many of our expectations, we have not seen a Fable class open model more than 8 months after Fable/Mythos was first made public.",
    "author_name": "Ethan Mollick",
-   "likes": 100,
+   "likes": 196,
    "story": "Alibaba releases Qwen4-Max, its new flagship 2.4T-parameter MoE model with a 1M-token context window, saying it beats Qwen3.8-Max with up to ~50% fewer tokens"
   },
   {
@@ -34,18 +34,18 @@
    "published_at": "2026-11-15T15:03:07Z",
    "text": "NEW Power On: Apple’s next big product — smart glasses planned next year — will offer Siri AI app integrations as its flagship feature. The idea: Book an Uber, reserve a table or order a coffee from your Apple Glasses — with apps running on paired iPhone.",
    "author_name": "Mark Gurman",
-   "likes": 1009,
+   "likes": 1016,
    "story": "Sources: Apple plans to unveil smart glasses at WWDC and ship them by the end of 2027, focusing heavily on integration of third-party iPhone apps with Siri AI",
    "links": [
     "https://www.bloomberg.com/news/newsletters/2026-11-15/apple-siri-ai-app-integrations-power-smart-glasses-iphone-duo-2-face-id-plan?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc5NDc1NDk0MiwiZXhwIjoxNzk1MzU5NzQyLCJhcnRpY2xlSWQiOiJUT0pUTzFLSVVQU0IwMCIsImJjb25uZWN0SWQiOiJDNEVEQ0FFMUZBMDU0MEJFQTI0QTlGMjExQzFFOTA4MCJ9.JxizrLMB_4yO_RhcaLRgamHBB02Qjf92voFxp6xtjaI"
    ]
   },
   {
-   "title": "Sources: Jensen Huang had planned to pull back Nvidia's aggressive financing and told neoclouds to…",
-   "url": "https://www.wsj.com/tech/ai/nvidias-days-as-an-open-checkbook-for-the-ai-economy-are-numbered-90c7b388?st=LGBxVv",
-   "source": "Wall Street Journal",
-   "published_at": "2026-11-16T03:31:20Z",
-   "text": "Sources: Jensen Huang had planned to pull back Nvidia's aggressive financing and told neoclouds to get upfront customer payments; Colette Kress may go further. Interim CEO Colette Kress is expected to rein in deals after a stretch in which Nvidia aggressively financed computing deals and startup investments",
+   "title": "The Jensen Huang saga is driven by elite factional conflicts: China hawks vs. doves, open vs. close…",
+   "url": "https://www.patreon.com/MaxRead/posts/mapping-jensen-175257766",
+   "source": "Max Read / Patreon",
+   "published_at": "2026-11-16T13:40:55Z",
+   "text": "The Jensen Huang saga is driven by elite factional conflicts: China hawks vs. doves, open vs. closed AI models, and the founder class vs. managerial class. Greetings from Read Max HQ! In this edition, some quick thoughts about Jensen Huang, Nvidia, and the fallout in both Silicon Valley and Washington …",
    "via": "Techmeme"
   },
   {
@@ -53,8 +53,8 @@
    "url": "https://steveblank.com/2026/11/15/whats-next-for-nvidia/",
    "source": "Hacker News",
    "published_at": "2026-11-15T23:55:55Z",
-   "text": "321 points and 402 comments on Hacker News.",
-   "points": 321,
+   "text": "335 points and 413 comments on Hacker News.",
+   "points": 335,
    "discussion": "https://news.ycombinator.com/item?id=50512235"
   },
   {
@@ -73,20 +73,11 @@
    "via": "Techmeme"
   },
   {
-   "title": "The Claude Delusion",
-   "url": "https://www.netmeister.org/blog/claude-delusion.html",
-   "source": "Hacker News",
-   "published_at": "2026-11-14T13:36:17Z",
-   "text": "152 points and 201 comments on Hacker News.",
-   "points": 152,
-   "discussion": "https://news.ycombinator.com/item?id=50496921"
-  },
-  {
-   "title": "Tighter AI chip export rules are gaining bipartisan support in Congress, including a bill to block…",
-   "url": "https://www.ft.com/content/3062790a-553d-41b8-9c7d-bae17b9d2e29",
-   "source": "Financial Times",
-   "published_at": "2026-11-16T06:06:34Z",
-   "text": "Tighter AI chip export rules are gaining bipartisan support in Congress, including a bill to block Chinese companies from accessing chips overseas. Jensen Huang's alleged affair with Chinese spy ‘increases momentum’ to crack down on US hardware reaching China",
+   "title": "Sources: Jensen Huang had planned to pull back Nvidia's aggressive financing and told neoclouds to…",
+   "url": "https://www.wsj.com/tech/ai/nvidias-days-as-an-open-checkbook-for-the-ai-economy-are-numbered-90c7b388?st=LGBxVv",
+   "source": "Wall Street Journal",
+   "published_at": "2026-11-16T03:31:20Z",
+   "text": "Sources: Jensen Huang had planned to pull back Nvidia's aggressive financing and told neoclouds to get upfront customer payments; Colette Kress may go further. Interim CEO Colette Kress is expected to rein in deals after a stretch in which Nvidia aggressively financed computing deals and startup investments",
    "via": "Techmeme"
   },
   {
@@ -97,19 +88,19 @@
    "text": "Anthropic's framework for identifying, classifying, and mitigating potential harms from AI systems to support responsible development."
   },
   {
-   "title": "Wall Street's 10 biggest IPOs of 2026, including SpaceX, SK, and Cerebras, have fallen by an averag…",
-   "url": "https://www.ft.com/content/7974acec-e378-4298-a1a7-2b16b00d8b32",
-   "source": "Emily Herbert / Financial T…",
-   "published_at": "2026-11-16T12:20:52Z",
-   "text": "Wall Street's 10 biggest IPOs of 2026, including SpaceX, SK, and Cerebras, have fallen by an average of 20.5% from their offer prices, as the AI frenzy fades. Ten biggest flotations have fallen more than 20% on average in 2026 after four years of gains — Wall Street's 10 biggest initial …",
-   "via": "Techmeme"
-  },
-  {
    "title": "Sources: the Trump administration plans to name Nvidia, Amazon, Microsoft, OpenAI, and Anthropic am…",
    "url": "https://www.wsj.com/tech/ai/trump-administration-to-name-nvidia-among-ai-national-champions-c9284344?st=e6my7o&reflink=desktopwebshare_permalink",
    "source": "Wall Street Journal",
    "published_at": "2026-11-16T04:41:38Z",
    "text": "Sources: the Trump administration plans to name Nvidia, Amazon, Microsoft, OpenAI, and Anthropic among 24+ AI “national champions” to help win overseas business. The new program is part of an effort to help U.S. AI companies compete for business overseas",
+   "via": "Techmeme"
+  },
+  {
+   "title": "Wall Street's 10 biggest IPOs of 2026, including SpaceX, SK, and Cerebras, have fallen by an averag…",
+   "url": "https://www.ft.com/content/7974acec-e378-4298-a1a7-2b16b00d8b32",
+   "source": "Emily Herbert / Financial T…",
+   "published_at": "2026-11-16T12:20:52Z",
+   "text": "Wall Street's 10 biggest IPOs of 2026, including SpaceX, SK, and Cerebras, have fallen by an average of 20.5% from their offer prices, as the AI frenzy fades. Ten biggest flotations have fallen more than 20% on average in 2026 after four years of gains — Wall Street's 10 biggest initial …",
    "via": "Techmeme"
   },
   {
@@ -121,11 +112,19 @@
    "via": "Techmeme"
   },
   {
-   "title": "Delhi-based Bharat Semi, which is developing programmable image sensors combining capture, processi…",
-   "url": "https://techcrunch.com/2026/11/15/indian-chip-startup-bharat-semi-lands-24m-seed-round-as-it-eyes-global-ai-sensor-market/",
+   "title": "Tighter AI chip export rules are gaining bipartisan support in Congress, including a bill to block…",
+   "url": "https://www.ft.com/content/3062790a-553d-41b8-9c7d-bae17b9d2e29",
+   "source": "Financial Times",
+   "published_at": "2026-11-16T06:06:34Z",
+   "text": "Tighter AI chip export rules are gaining bipartisan support in Congress, including a bill to block Chinese companies from accessing chips overseas. Jensen Huang's alleged affair with Chinese spy ‘increases momentum’ to crack down on US hardware reaching China",
+   "via": "Techmeme"
+  },
+  {
+   "title": "Dreamteam, which uses AI agents for CRM tasks like data capture and research, raised $53M across se…",
+   "url": "https://techcrunch.com/2026/11/16/freshworks-alums-raise-53m-to-take-on-salesforce-hubspot-with-ai-native-crm/",
    "source": "Jagmeet Singh / TechCrunch",
-   "published_at": "2026-11-16T08:05:53Z",
-   "text": "Delhi-based Bharat Semi, which is developing programmable image sensors combining capture, processing, and AI capabilities on a single chip, raised a $24M seed",
+   "published_at": "2026-11-16T13:06:02Z",
+   "text": "Dreamteam, which uses AI agents for CRM tasks like data capture and research, raised $53M across seed and Series A led by Together Fund and Accel, respectively. Dreamteam, a startup founded by former Freshworks executives, has raised $53 million to challenge Salesforce and HubSpot with its AI-native CRM …",
    "via": "Techmeme"
   }
  ],
