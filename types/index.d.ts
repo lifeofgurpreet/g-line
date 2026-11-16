@@ -229,7 +229,7 @@ declare module 'claude-code' {
       forecast: Forecast | null
       context: ContextView | null
       ledger: Ledger | null
-      view: 'details' | 'card' | 'settings' | 'news'
+      view: 'details' | 'card' | 'settings' | 'news' | 'notices'
       pulse: PulseFeed | null
       /** The link of the headline Pulse shows now: the cycle's rules move it on. */
       pulseNow: string | null

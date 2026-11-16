@@ -1,5 +1,17 @@
 # Changelog
 
+## 0.26.0 (2026-11-16): heads-ups from your own tool, on line 2
+
+- **Notices.** Set `notices_command` to a command of yours that prints a short JSON list of
+  heads-ups (a credit about to expire, a login that needs renewing) and g-line shows them where
+  you already look. A warn or urgent notice shows once as a toast, and while one stands line 2
+  carries `⚠ 2 · /g-line notices` (red when any is urgent). The marker is kept at every width,
+  phone and narrow panes included. `/g-line notices` lists them with their detail. The same
+  notice isn't toasted again for `notices_repeat_hours` (6 by default; an urgent one every 2
+  hours at most), and the command runs every `notices_interval_minutes` (5 by default). Its text
+  is cleaned of escape and control characters, and g-line makes no network call of its own.
+  See docs/notices.md.
+
 ## 0.25.0 (2026-11-11): every figure whole at every width, and times that say whose clock
 
 - **A span keeps its hours.** Every span g-line shows is spelled one way at every width:

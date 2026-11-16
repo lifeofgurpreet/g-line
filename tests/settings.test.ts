@@ -57,7 +57,7 @@ test('merge reads every config.json key, and ignores malformed values', () => {
   expect(c).toEqual({
     lines: 1, pulse: true, git: true, shortHints: false, preset: 'full', icons: 'nerd', toasts: false, cacheTtl: '5m',
     accountCommand: ['echo', 'x'], notify: { cache: false, reset: false, longTurn: true, agents: true },
-    longTurnSeconds: 90, resetThreshold: 50, receipt: ['cost', 'cache', 'tools'], spinner: false, footerLabels: false,
+    longTurnSeconds: 90, resetThreshold: 50, receipt: ['cost', 'cache', 'tools'], spinner: false, footerLabels: false, noticesIntervalMinutes: 5, noticesRepeatHours: 6,
     coach: true, claudeReads: true, toolStreak: 5, budget: 20, exportState: true, pulseSpeed: 'paused', pulseMute: ['𝕏'], guard: { on: true, rules: [], errors: [] }, roster: true,
   })
   expect(merge(DEFAULTS, { pulse: 'yes', lines: 7, notify: 'loud', reset_threshold: 400, icons: 'emoji' })).toEqual(DEFAULTS)

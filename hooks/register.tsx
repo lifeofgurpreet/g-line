@@ -19,6 +19,8 @@ import type { EngineInterface, Register } from 'claude-code'
 import type { AgentRow, Receipt, Snap, Totals } from '../types'
 import { SEP, alerts, clock, duration, layoutKeys, modelName, pct, segments, str, toastMs, tokens, utcLabel, width, zoneOffset } from './core'
 import type { Limit } from './roster'
+import { NOTICES_OUTPUT_MAX, inForce, noticeRows, noticeSegment, parseNotices, toastText, toastsDue } from './notices'
+import type { Notice, NoticeSeen } from './notices'
 import { LIMITS_PREFIX, ROSTER_PREFIX, mergeLimits, parseUsage, othersSegment, rosterOf, rosterRow, staleRosterKeys } from './roster'
 import type { RosterEntry, RosterState } from './roster'
 import type { Options, Payload, Preset, Segment, Tone } from './core'
@@ -500,6 +502,9 @@ let shared: { account: string; limits: unknown } | undefined
 
 /** What the person's `usage_command` last printed, for the account it was read under. */
 let fed: { account: string; limits: Limit[] } | undefined
+/** What `notices_command` last printed, and when it last ran (ms). */
+let notices: Notice[] = []
+let noticesAt = 0
 /** When `usage_command` last ran (ms); it runs about every two minutes. */
 let usageAt = 0
 /**
@@ -552,6 +557,57 @@ async function refreshUsage($: EngineInterface): Promise<void> {
   } catch {
     // the command failed or ran out of time: the readings stand
   }
+}
+
+const NOTICES_SEEN = 'notices-seen'
+
+/**
+ * Runs the person's `notices_command` every `notices_interval_minutes`, off the
+ * drawing path, with a 5-second limit. Output that isn't the JSON, or a
+ * failure, means no notices. Each warn or urgent notice then shows once as a
+ * toast; when each last showed is kept in the plugin store, so sessions on one
+ * machine don't repeat each other.
+ */
+async function refreshNotices($: EngineInterface): Promise<void> {
+  const command = config.noticesCommand
+  if (!command) {
+    notices = []
+    return
+  }
+  const now = await nowMs($)
+  if (noticesAt && now - noticesAt < config.noticesIntervalMinutes * 60_000) return
+  noticesAt = now
+  try {
+    const run = await $.process.run(command, { timeoutMs: 5000 })
+    notices = run.exitCode === 0 && run.stdout.length <= NOTICES_OUTPUT_MAX ? parseNotices(run.stdout, Math.floor(now / 1000)) : []
+  } catch {
+    notices = []
+  }
+  try {
+    let seen: NoticeSeen = {}
+    try {
+      const held = await $.store.get(NOTICES_SEEN)
+      if (held && typeof held === 'object') seen = held as NoticeSeen
+    } catch {
+      // nothing shown yet
+    }
+    const due = toastsDue(notices, seen, now, config.noticesRepeatHours)
+    if (!due.length || !config.toasts || (await read($, hidden))) return
+    const next: NoticeSeen = {}
+    for (const n of notices) if (seen[n.id] !== undefined) next[n.id] = seen[n.id] as number
+    for (const n of due) {
+      next[n.id] = now
+      $.ui.toast(toastText(n), { timeoutMs: toastMs(toastText(n), 8000) })
+    }
+    await $.store.set(NOTICES_SEEN, next)
+  } catch {
+    // the marker still shows
+  }
+}
+
+/** The notices in force now. */
+async function noticesNow($: EngineInterface): Promise<Notice[]> {
+  return inForce(notices, await nowSeconds($))
 }
 
 /**
@@ -1226,6 +1282,7 @@ async function heartbeat($: EngineInterface): Promise<void> {
   // An account rule needs a fresh reading: an account manager may have switched accounts.
   else if (beats % 8 === 0 && config.guard.rules.some(namesAccounts)) await refreshAccount($)
   await refreshUsage($)
+  await refreshNotices($)
   await shareLimits($)
   await guardNow($).catch(() => undefined)
   await drainNudge($).catch(() => undefined)
@@ -1253,6 +1310,7 @@ async function extrasNow($: EngineInterface): Promise<Extras> {
     guard: await guardSegment($),
     resume: await resumeSegment($),
     others: config.roster ? othersSegment(others) : undefined,
+    notices: noticeSegment(await noticesNow($)),
   }
 }
 
@@ -1261,6 +1319,9 @@ function footerLabels(extras: Extras): string[] {
   if (config.lines === 2) return []
   // What the guard is doing always shows: it acts on your behalf.
   const guard = [extras.guard?.forms[1], extras.resume?.forms[0]].filter((label): label is string => Boolean(label))
+  // A warn or urgent notice always shows, like the guard: it asks for a look.
+  const notice = extras.notices?.forms[0]
+  if (notice) guard.push(notice)
   if (!config.footerLabels) return guard
   return [...(['agents', 'compact', 'others'] as const)
     .filter(key => !layoutHas(key))
@@ -1407,7 +1468,7 @@ async function cardText($: EngineInterface, seconds: number): Promise<string[]> 
   })
 }
 
-async function openPane($: EngineInterface, mode: 'details' | 'card' | 'settings' | 'news'): Promise<Record<string, never>> {
+async function openPane($: EngineInterface, mode: 'details' | 'card' | 'settings' | 'news' | 'notices'): Promise<Record<string, never>> {
   await update($, view, () => mode)
   await Promise.all([pruneLedger($), refreshGit($, true)])
   try {
@@ -1421,9 +1482,9 @@ async function openPane($: EngineInterface, mode: 'details' | 'card' | 'settings
     // the pane shows the rest
   }
   void refreshPulse($)
-  const title = mode === 'card' ? 'g-line card' : mode === 'settings' ? 'g-line settings' : mode === 'news' ? 'Pulse' : 'g-line'
+  const title = mode === 'card' ? 'g-line card' : mode === 'settings' ? 'g-line settings' : mode === 'news' ? 'Pulse' : mode === 'notices' ? 'g-line notices' : 'g-line'
   // The reader and the settings answer keys: they take the keyboard, asked for by the command.
-  const opened = await $.ui.open({ id: PANE, title, ...(mode === 'news' || mode === 'settings' ? { focus: true as const, rows: 40 } : {}) })
+  const opened = await $.ui.open({ id: PANE, title, ...(mode === 'news' || mode === 'settings' || mode === 'notices' ? { focus: true as const, rows: 40 } : {}) })
   if (!opened.isPlaced) tell($, 'g-line: widen the terminal to see the pane.', 5000)
   // Nothing goes back into the conversation: a command's text is read by Claude.
   return {}
@@ -2589,7 +2650,7 @@ async function openDashboard($: EngineInterface): Promise<void> {
 
 // ---------------------------------------------------------------- command
 
-const HELP = 'Open the g-line pane; `dashboard` writes a local page with usage, sessions, history and guard; `news` reads Pulse, `open` opens the headline shown, `settings` lists every setting, `set <name> on|off`, `reset [name]`, `card`, `off`/`on`'
+const HELP = 'Open the g-line pane; `dashboard` writes a local page with usage, sessions, history and guard; `news` reads Pulse, `notices` lists the heads-ups your notices_command printed, `open` opens the headline shown, `settings` lists every setting, `set <name> on|off`, `reset [name]`, `card`, `off`/`on`'
 
 /** `/g-line [settings|set|reset|card|off|on]`, and the 0.4 name for one release. Nothing goes back into the conversation. */
 async function runCommand($: EngineInterface, e: { command: string; args: string }): Promise<Record<string, never>> {
@@ -2639,6 +2700,14 @@ async function runCommand($: EngineInterface, e: { command: string; args: string
       return openPane($, 'settings')
     case 'news':
       return openNews($)
+    case 'notices':
+      if (!config.noticesCommand) {
+        tell($, 'No notices_command is set, so there are no notices. docs/notices.md says how to add one.', 8000)
+        return {}
+      }
+      noticesAt = 0
+      await refreshNotices($)
+      return openPane($, 'notices')
     case 'open': {
       const item = await shownItem($)
       if (item) await openLink($, item.url)
@@ -2673,7 +2742,7 @@ export const register: Register = (on, options) => {
       [OLD_COMMAND, 'Renamed to /g-line; this name works until the next release'],
     ] as const) {
       try {
-        await $.command.register({ name, description, argumentHint: '[dashboard|news|open|settings|set <name> on|off|reset|card|off|on]' })
+        await $.command.register({ name, description, argumentHint: '[dashboard|news|notices|open|settings|set <name> on|off|reset|card|off|on]' })
       } catch {
         // the line and toasts work without the command
       }
@@ -3014,7 +3083,7 @@ export const register: Register = (on, options) => {
       // label the engine draws before the hint is the engine's: a mod can
       // shorten the hint's words but not that label.
       const columns = e.viewport?.columns
-      const extra = [extras.guard, extras.resume, warmSegment(), extras.agents, extras.others, extras.compact, config.budget ? extras.today : undefined, config.git ? gitSegmentOf(s.git) : undefined, accountSegment(s.account)]
+      const extra = [extras.notices, extras.guard, extras.resume, warmSegment(), extras.agents, extras.others, extras.compact, config.budget ? extras.today : undefined, config.git ? gitSegmentOf(s.git) : undefined, accountSegment(s.account)]
         .filter((one): one is Segment => one !== undefined)
       // The hint stays whole here: a rewritten hint has the engine draw its
       // mode label in a column of its own, which would squeeze line 2 into
@@ -3144,7 +3213,7 @@ export const register: Register = (on, options) => {
     await read($, tick)
     const seconds = await nowSeconds($)
     const { Box, Text, Button } = $.ui.resolve(e)
-    const show = (mode: 'details' | 'card' | 'settings' | 'news') => () => void update($, view, () => mode)
+    const show = (mode: 'details' | 'card' | 'settings' | 'news' | 'notices') => () => void update($, view, () => mode)
     if ((await read($, view)) === 'card') {
       const lines = await cardText($, seconds)
       const copy = async () => {
@@ -3162,6 +3231,27 @@ export const register: Register = (on, options) => {
           <Box flexDirection="row" gap={1}>
             <Button key="copy" label="Copy as text" hotkey="c" variant="primary" onPress={copy} />
             <Button key="details" label="Details" hotkey="d" onPress={show('details')} />
+          </Box>
+        </Box>
+      )
+    }
+    if ((await read($, view)) === 'notices') {
+      const rows = noticeRows(await noticesNow($))
+      const columns = Math.max(20, (e.props.bodyColumns ?? 80) - 2)
+      const tone = { urgent: 'red', warn: 'yellow', info: undefined } as const
+      return (
+        <Box flexDirection="column">
+          <Text dimColor>{rows.length ? `${rows.length} ${rows.length === 1 ? 'notice' : 'notices'}, urgent first` : 'No notices right now'}</Text>
+          {rows.map((row, index) => (
+            <Box key={`n${index}`} flexDirection="column" marginTop={1}>
+              <Text bold={row.level === 'urgent'} color={tone[row.level]}>{clean(`${row.level === 'info' ? '·' : '⚠'} ${row.text}`, columns)}</Text>
+              {row.detail ? <Text dimColor>{clean(row.detail, columns * 4)}</Text> : null}
+            </Box>
+          ))}
+          <Box flexDirection="row" gap={2} marginTop={1}>
+            <Button key="refresh" plain label="Refresh" hotkey="r" onPress={() => { noticesAt = 0; void refreshNotices($) }} />
+            <Button key="details" plain label="Back" hotkey="d" onPress={show('details')} />
+            <Button key="close" plain label="Close" hotkey="q" onPress={() => void $.ui.close({ id: PANE })} />
           </Box>
         </Box>
       )

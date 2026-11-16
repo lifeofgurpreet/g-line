@@ -2695,3 +2695,66 @@ test('0.25.0: on a phone the figures take more rows, and Pulse\'s row, before on
   expect(await ui.find({ type: 'Link' })).toBeDefined()
   await ui.unmount()
 })
+
+// ---------------------------------------------------------------- notices
+
+test('a notices_command: one toast per notice, a marker on line 2 while warn/urgent notices stand, none without a command', { timeoutMs: 30_000 }, async ($, on) => {
+  const store: Record<string, unknown> = {}
+  const w = world(on, {}, store)
+  w.config = { notices_command: ['my-alerts-tool'], notices_interval_minutes: 5, notices_repeat_hours: 6 }
+  let printed = JSON.stringify({ notices: [
+    { id: 'u', level: 'urgent', text: 'A thing broke', detail: 'Details here' },
+    { id: 'i', level: 'info', text: 'Only FYI' },
+  ] })
+  let calls = 0
+  w.run = argv => {
+    if (argv[0] !== 'my-alerts-tool') return undefined
+    calls += 1
+    return { value: { exitCode: 0, stdout: printed, stderr: '' } }
+  }
+  hintBelow(on)
+  await start($)
+  await w.clock.advance(20_000)
+  expect(w.toasts.filter(t => t.includes('A thing broke'))).toHaveLength(1)
+  expect(w.toasts.some(t => t.includes('Only FYI'))).toBe(false)
+  const first = calls
+  expect(first).toBe(1)
+  // Within the interval the command isn't run again; past it, the same id isn't toasted again.
+  await w.clock.advance(4 * 60_000)
+  expect(calls).toBe(1)
+  await w.clock.advance(2 * 60_000)
+  expect(calls).toBeGreaterThan(1)
+  expect(w.toasts.filter(t => t.includes('A thing broke'))).toHaveLength(1)
+  // Line 2 carries the marker.
+  const hint = await $.ui.mount({ plugin: 'g-line', surface: 'terminal', component: 'PromptHint',
+    props: { isDraft: false, isWorking: false, hint: '(shift+tab to cycle)' }, viewport: { columns: 44, rows: 40 } })
+  expect(await hint.find({ type: 'Text', text: /⚠ 1 (· \/g-line )?notices/ })).toBeDefined()
+  await hint.unmount()
+  // Urgent repeats after two hours.
+  await w.clock.advance(2 * 3600_000)
+  expect(w.toasts.filter(t => t.includes('A thing broke')).length).toBeGreaterThanOrEqual(2)
+  // A failing command means no notices and no marker.
+  w.run = argv => (argv[0] === 'my-alerts-tool' ? { value: { exitCode: 1, stdout: printed, stderr: '' } } : undefined)
+  await w.clock.advance(6 * 60_000)
+  const quiet = await $.ui.mount({ plugin: 'g-line', surface: 'terminal', component: 'PromptHint',
+    props: { isDraft: false, isWorking: false, hint: '(shift+tab to cycle)' }, viewport: { columns: 44, rows: 40 } })
+  expect(await quiet.find({ type: 'Text', text: /notices/ }).catch(() => undefined)).toBeUndefined()
+  await quiet.unmount()
+})
+
+test('without a notices_command g-line runs nothing and shows no marker', { timeoutMs: 30_000 }, async ($, on) => {
+  const w = world(on, {}, {})
+  let calls = 0
+  w.run = argv => {
+    if (argv[0] === 'my-alerts-tool') calls += 1
+    return undefined
+  }
+  hintBelow(on)
+  await start($)
+  await w.clock.advance(60_000)
+  expect(calls).toBe(0)
+  const hint = await $.ui.mount({ plugin: 'g-line', surface: 'terminal', component: 'PromptHint',
+    props: { isDraft: false, isWorking: false, hint: '(shift+tab to cycle)' }, viewport: { columns: 44, rows: 40 } })
+  expect(await hint.find({ type: 'Text', text: /notices/ }).catch(() => undefined)).toBeUndefined()
+  await hint.unmount()
+})

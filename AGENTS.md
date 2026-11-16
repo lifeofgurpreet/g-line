@@ -37,7 +37,7 @@ coding agents and for people.
    turns Pulse on. The person's own `usage_command` (opt-in, like `account_command`, and only with
    one) is a command they chose, run through `$.process.run` about every two minutes; it may reach
    a network, but that is their command's doing, never the mod's. Its readings merge with
-   `mergeLimits`, stamped with the command's `observed_at` or the time it ran. Keep-warm's re-read (rule 5's guard) is Claude Code's own request through
+   `mergeLimits`, stamped with the command's `observed_at` or the time it ran. The person's own `notices_command` (opt-in) is run the same way, every few minutes, and only its cleaned text is shown; g-line never acts on a notice. Keep-warm's re-read (rule 5's guard) is Claude Code's own request through
    `$.model.fork`, made only when the person configured it.
 4. **Private by default.** No account, email, branch, path or repository name shows unless
    configured (`account_command`, `git: true`). The share card leaves all of them out.
@@ -79,10 +79,11 @@ coding agents and for people.
 | `hooks/glance.ts` | Pure: the `status` tool's JSON snapshot |
 | `hooks/settings.ts` | Pure: the settings table (`SETTINGS`), defaults, `merge`, origins, and `/g-line`'s argument parser. Add a setting here and it gets a toggle, a command name and an origin |
 | `hooks/guard.ts` | Pure: the guard's rules (`parseGuard`, `evaluate` with thresholds, paced weeks (`pace`, `paceRead`, `paceCalendar`), hysteresis, accounts, hours, `whyLines`, `epochOf`), what it may change (`cappedEffort`, `agentModel`), what it says, `simulated` readings, and keep-warm's limits (`warmDue`, `readBack`, the per-account lease) |
+| `hooks/notices.ts` | Pure: `notices_command`'s output (`parseNotices`, cleaned like Pulse's feed), the toast cadence (`toastsDue`) and line 2's marker (`noticeSegment`, kept at every width) |
 | `hooks/roster.ts` | Pure: the other sessions on this machine from their heartbeats in the store (`rosterOf`), line 2's `2 others · 1 waiting`, the pane's rows |
 | `hooks/pulse.ts` | Pure: Pulse feed parsing, cleaning (escapes, controls, https only), the spinner ticker, the row under the prompt, the reader's paging, the cycle's rules (`pickNext`), and Claude Code's own rule for drawing links (`linksDrawn`) |
 | `tools/pulse/build_pulse.py` | Maintainer tooling, not the mod: builds the Pulse feed and pushes it to the `pulse` branch |
-| `docs/*.md` | The user guide beyond the README: `guard.md`, `pulse.md`, `configuration.md`, `dashboard.md` |
+| `docs/*.md` | The user guide beyond the README: `guard.md`, `pulse.md`, `notices.md`, `configuration.md`, `dashboard.md` |
 | `types/index.d.ts` | The `$.state` contract (`PluginState['g-line']`); self-contained, no imports |
 | `tests/*.test.ts(x)` | `claude plugin test .` runs them; `tests/cases.ts` is the golden file for `core.ts` |
 | `scripts/golden.ts` | Regenerates `tests/cases.ts` (`bun scripts/golden.ts`) |

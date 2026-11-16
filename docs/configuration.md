@@ -49,6 +49,9 @@ the same setting.
 | `tz` | Your time zone (an IANA name such as `Europe/London`) for every time g-line shows: resets, projections, receipts, the guard's words. Useful on a machine in another zone, over SSH: there the first time on line 2, and the guard's refusals, add whose clock it is (`21:45 UTC+11`). `auto` is the machine's own. The pane says which zone the times are in | `auto` |
 | `account_command` | A command of yours, as a list of words, whose first line names the account (see below). Off unless set | none |
 | `usage_command` | A command of yours that prints the account's usage (see below). Only with an `account_command` | none |
+| `notices_command` | A command of yours that prints heads-ups as JSON (see [Notices](notices.md)): a toast the first time, a marker on line 2 while they stand, `/g-line notices` for the list. Off unless set | none |
+| `notices_interval_minutes` | How often g-line runs `notices_command` | `5` |
+| `notices_repeat_hours` | Hours before the same notice's toast repeats (an urgent one repeats every 2 at most) | `6` |
 | `reset_threshold`, `long_turn_seconds`, `cache_ttl`, `icons`, `segments`, `preset` | See `hooks/settings.ts` | |
 
 `~/.config/glanceline/config.json` from 0.4 is still read; `g-line/config.json` wins.

@@ -40,6 +40,12 @@ export type Config = {
   accountCommand?: string[]
   /** A command that prints the account's usage as JSON (another machine's spending); only with `accountCommand`. */
   usageCommand?: string[]
+  /** A command that prints notices as JSON (see docs/notices.md); none by default. */
+  noticesCommand?: string[]
+  /** Minutes between runs of `noticesCommand`. */
+  noticesIntervalMinutes: number
+  /** Hours before the same notice's toast repeats (an urgent one at most every 2). */
+  noticesRepeatHours: number
   notify: Notify
   longTurnSeconds: number
   resetThreshold: number
@@ -64,6 +70,7 @@ export const DEFAULTS: Config = {
   lines: 2, pulse: false, pulseSpeed: 'normal', pulseMute: [], shortHints: true, git: false, preset: 'default', icons: 'none', toasts: true, cacheTtl: 'auto',
   notify: { cache: true, reset: true, longTurn: false, agents: false },
   longTurnSeconds: 60, resetThreshold: 80, receipt: 'adaptive', spinner: true, footerLabels: true,
+  noticesIntervalMinutes: 5, noticesRepeatHours: 6,
   coach: false, claudeReads: false, toolStreak: 3, exportState: false, guard: NO_GUARD, roster: true,
 }
 
@@ -99,6 +106,14 @@ export function merge(base: Config, raw: unknown): Config {
   if (Array.isArray(usage) && usage.length && usage.every(word => typeof word === 'string')) {
     next.usageCommand = usage as string[]
   }
+  const notices = r.notices_command
+  if (Array.isArray(notices) && notices.length && notices.every(word => typeof word === 'string')) {
+    next.noticesCommand = notices as string[]
+  }
+  const every = num(r.notices_interval_minutes)
+  if (every !== undefined && every >= 1) next.noticesIntervalMinutes = Math.min(every, 1440)
+  const again = num(r.notices_repeat_hours)
+  if (again !== undefined && again > 0) next.noticesRepeatHours = Math.min(again, 720)
   if (typeof r.notify === 'boolean') next.notify = { cache: r.notify, reset: r.notify, longTurn: r.notify && base.notify.longTurn, agents: r.notify && base.notify.agents }
   else if (r.notify && typeof r.notify === 'object') {
     const n = r.notify as Record<string, unknown>
@@ -296,6 +311,7 @@ export type Command =
   | { kind: 'card' }
   | { kind: 'settings' }
   | { kind: 'news' }
+  | { kind: 'notices' }
   | { kind: 'open' }
   | { kind: 'show' }
   | { kind: 'hide' }
@@ -324,6 +340,7 @@ export function parseCommand(args: string): Command {
   if (verb === 'card') return { kind: 'card' }
   if (verb === 'settings' || verb === 'config' || verb === 'list') return { kind: 'settings' }
   if ((verb === 'news' || verb === 'read' || verb === 'reader') && !rest.length) return { kind: 'news' }
+  if ((verb === 'notices' || verb === 'notice' || verb === 'alerts') && !rest.length) return { kind: 'notices' }
   if (verb === 'open' && !rest.length) return { kind: 'open' }
   if (verb === 'on' && !rest.length) return { kind: 'show' }
   if (verb === 'guard') return guardCommand(rest)
