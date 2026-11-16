@@ -1,32 +1,7 @@
 {
  "schema": 1,
- "generated_at": "2026-11-16T16:02:26Z",
+ "generated_at": "2026-11-16T16:34:42Z",
  "items": [
-  {
-   "title": "Sources: Jensen Huang has discussed a comeback as Nvidia's CEO with confidants, as allies form a “w…",
-   "url": "https://www.ft.com/content/45383d86-33c4-4d99-86e5-5e058d3567c1?accessToken=zwAAAaHhCqBRkc9FOD2GM8RNmdOG5V4FjTVnwQ.MEYCIQCZEg_GADuUi3HMzfVy4L3GgdXzwW5GpeLTdxDHbMhYXQIhAKQz7pVUZgb0WKGUJq30p1B5vEF2gPlUop1e8Yzyol24&sharetype=gift&token=35d995ef-ed14-4cc4-8323-31a3da06ba1b&syn-25a6b1a6=1",
-   "source": "Financial Times",
-   "published_at": "2026-11-15T19:21:36Z",
-   "text": "Sources: Jensen Huang has discussed a comeback as Nvidia's CEO with confidants, as allies form a “war room” to lobby for his return and seek White House support. Tech supporters lobby chipmaker's board to reinstate former CEO after he resigned following affair with alleged Chinese spy",
-   "via": "Techmeme"
-  },
-  {
-   "title": "I think contrary to many of our expectations, we have not seen a Fable class open model more than 8…",
-   "url": "https://x.com/emollick/status/2122308260325720127",
-   "source": "𝕏 @emollick",
-   "published_at": "2026-11-16T12:38:14Z",
-   "text": "I think contrary to many of our expectations, we have not seen a Fable class open model more than 8 months after Fable/Mythos was first made public.",
-   "author_name": "Ethan Mollick",
-   "likes": 594,
-   "story": "Alibaba releases Qwen4-Max, its new flagship 2.4T-parameter MoE model with a 1M-token context window, saying it beats Qwen3.8-Max with up to 49% fewer tokens"
-  },
-  {
-   "title": "Claude Code 2.1.325 released",
-   "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.325",
-   "source": "Claude Code releases",
-   "published_at": "2026-11-13T20:40:01Z",
-   "text": "Fixed a security issue in how zstd-compressed responses are decoded · Added a spinner tip in VS Code and similar integrated terminals about re-running a notebook cell, shown once Claude has read or edited a Jupyter notebook · Added a line under the error shown when your organization's policy blocks a request, saying how to continue: run /rewind and change the message, or run /clear · Added a note for Claude when a sandboxed git checkout, git stash or autostash pull cannot update protected files such as those in .claude"
-  },
   {
    "title": "President Trump says he “would not mind” the reinstatement of Jensen Huang as Nvidia CEO and “I don…",
    "url": "https://nypost.com/2026/11/16/us-news/trump-would-not-mind-jensen-huang-returning-as-nvidia-ceo/",
@@ -36,12 +11,47 @@
    "via": "Techmeme"
   },
   {
+   "title": "We’re working with @ApolloResearch, @METR_Evals, @TransluceAI, and @GoodfireAI on embedded assessme…",
+   "url": "https://x.com/OpenAI/status/2122359930628063248",
+   "source": "𝕏 @OpenAI",
+   "published_at": "2026-11-16T16:03:33Z",
+   "text": "We’re working with @ApolloResearch, @METR_Evals, @TransluceAI, and @GoodfireAI on embedded assessments: giving outside experts deep access to our internal models and systems to investigate alignment and test our safeguards. These assessments build on our ongoing alignment and…",
+   "author_name": "OpenAI",
+   "likes": 1122,
+   "story": "OpenAI says it has signed agreements with independent assessors Apollo Research, METR, Transluce, and Goodfire for its first phase of embedded assessments"
+  },
+  {
+   "title": "Claude Code 2.1.325 released",
+   "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.325",
+   "source": "Claude Code releases",
+   "published_at": "2026-11-13T20:40:01Z",
+   "text": "Fixed a security issue in how zstd-compressed responses are decoded · Added a spinner tip in VS Code and similar integrated terminals about re-running a notebook cell, shown once Claude has read or edited a Jupyter notebook · Added a line under the error shown when your organization's policy blocks a request, saying how to continue: run /rewind and change the message, or run /clear · Added a note for Claude when a sandboxed git checkout, git stash or autostash pull cannot update protected files such as those in .claude"
+  },
+  {
+   "title": "JUST IN: Nvidia Insiders claim that Jensen Huang was prone to anger, recalling one time an executiv…",
+   "url": "https://x.com/AutismCapital/status/2122117749698912556",
+   "source": "𝕏 @AutismCapital",
+   "published_at": "2026-11-16T00:01:13Z",
+   "text": "JUST IN: Nvidia Insiders claim that Jensen Huang was prone to anger, recalling one time an executive contradicted him and he closed his eyes and took a loud and deep breath inwards with an audible exhalation.",
+   "author_name": "Autism Capital 🧩",
+   "likes": 29876,
+   "story": "Sources: Jensen Huang has discussed a comeback as Nvidia's CEO with confidants, as allies form a “war room” to lobby for his return and seek White House support"
+  },
+  {
+   "title": "Alibaba releases Qwen4-Max, its new flagship 2.4T-parameter MoE model with a 1M-token context windo…",
+   "url": "https://qwen.ai/blog?id=qwen4-max",
+   "source": "Qwen",
+   "published_at": "2026-11-16T03:41:04Z",
+   "text": "Alibaba releases Qwen4-Max, its new flagship 2.4T-parameter MoE model with a 1M-token context window, saying it beats Qwen3.8-Max with up to 49% fewer tokens. Today, we are introducing Qwen4-Max, your new AI teammate for work, creativity, and discovery. Qwen4-Max is built …",
+   "via": "Techmeme"
+  },
+  {
    "title": "What's Next for Nvidia?",
    "url": "https://steveblank.com/2026/11/15/whats-next-for-nvidia/",
    "source": "Hacker News",
    "published_at": "2026-11-15T23:55:55Z",
-   "text": "379 points and 487 comments on Hacker News.",
-   "points": 379,
+   "text": "394 points and 502 comments on Hacker News.",
+   "points": 394,
    "discussion": "https://news.ycombinator.com/item?id=50512235"
   },
   {
@@ -52,19 +62,19 @@
    "text": "Anthropic is endorsing SB 53, the California bill that governs powerful AI systems built by frontier AI developers like Anthropic."
   },
   {
-   "title": "The US Commerce Department issues an interim rule to limit remote access to advanced AI chips and s…",
-   "url": "https://www.bloomberg.com/news/articles/2026-11-16/us-moves-to-limit-remote-access-to-advanced-ai-chips",
-   "source": "Bloomberg",
-   "published_at": "2026-11-16T13:56:11Z",
-   "text": "The US Commerce Department issues an interim rule to limit remote access to advanced AI chips and servers from select countries, such as Singapore and Malaysia. The US Commerce Department moved to limit several countries from providing Chinese companies remote access to advanced artificial …",
-   "via": "Techmeme"
-  },
-  {
    "title": "A look at the Jensen Huang fallout: a threat to Nvidia's organizational moat and its financing of n…",
    "url": "https://stratechery.com/2026/obituaries/",
    "source": "Ben Thompson / Stratechery",
    "published_at": "2026-11-16T12:47:36Z",
    "text": "A look at the Jensen Huang fallout: a threat to Nvidia's organizational moat and its financing of neocloud customers, a win for AI doomers and hawks, and more. Dearly beloved, we are gathered here today to get through this thing called life. — ― Prince",
+   "via": "Techmeme"
+  },
+  {
+   "title": "The US Commerce Department issues an interim rule to limit remote access to advanced AI chips and s…",
+   "url": "https://www.bloomberg.com/news/articles/2026-11-16/us-moves-to-limit-remote-access-to-advanced-ai-chips",
+   "source": "Bloomberg",
+   "published_at": "2026-11-16T13:56:11Z",
+   "text": "The US Commerce Department issues an interim rule to limit remote access to advanced AI chips and servers from select countries, such as Singapore and Malaysia. The US Commerce Department moved to limit several countries from providing Chinese companies remote access to advanced artificial …",
    "via": "Techmeme"
   },
   {
@@ -112,14 +122,6 @@
    "source": "Emily Herbert / Financial T…",
    "published_at": "2026-11-16T12:20:52Z",
    "text": "Wall Street's 10 biggest IPOs of 2026, including SpaceX, SK, and Cerebras, have fallen by an average of 20.5% from their offer prices, as the AI frenzy fades. Ten biggest flotations have fallen more than 20% on average in 2026 after four years of gains — Wall Street's 10 biggest initial …",
-   "via": "Techmeme"
-  },
-  {
-   "title": "Tel Aviv- and SF-based Corma, which builds AI agents custom-trained for cyber defense, raised a $12…",
-   "url": "https://www.wsj.com/pro/cybersecurity/cyber-startup-corma-raises-125-million-for-defensive-ai-agents-f30a4387",
-   "source": "Angus Loten / Wall Street J…",
-   "published_at": "2026-11-16T14:31:21Z",
-   "text": "Tel Aviv- and SF-based Corma, which builds AI agents custom-trained for cyber defense, raised a $125M Series A led by NEA, after raising a $60M seed in August. The year-old startup's agents are custom-trained for defensive cybersecurity — Cybersecurity startup Corma raised $125 million …",
    "via": "Techmeme"
   }
  ],
