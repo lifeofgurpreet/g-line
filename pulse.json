@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-16T02:42:13Z",
+ "generated_at": "2026-11-16T03:13:48Z",
  "items": [
   {
    "title": "Sources: Jensen Huang has discussed a comeback as Nvidia CEO with confidants, as allies form a “war…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-15T00:13:00Z",
    "text": "BREAKING: Former Nvidia CEO Jensen Huang reportedly told a top executive \"I hope you die\" during a meeting",
    "author_name": "Kalshi",
-   "likes": 40221,
+   "likes": 40328,
    "story": "Nvidia insiders say Jensen Huang was prone to wild office tantrums, which a source says some employees were surprised hadn't leaked before his public downfall"
   },
   {
@@ -34,11 +34,35 @@
    "published_at": "2026-11-15T15:03:07Z",
    "text": "NEW Power On: Apple’s next big product — smart glasses planned next year — will offer Siri AI app integrations as its flagship feature. The idea: Book an Uber, reserve a table or order a coffee from your Apple Glasses — with apps running on paired iPhone.",
    "author_name": "Mark Gurman",
-   "likes": 909,
+   "likes": 919,
    "story": "Sources: Apple plans to unveil smart glasses at WWDC and ship them by the end of 2027, focusing heavily on integration of third-party iPhone apps with Siri AI",
    "links": [
     "https://www.bloomberg.com/news/newsletters/2026-11-15/apple-siri-ai-app-integrations-power-smart-glasses-iphone-duo-2-face-id-plan?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc5NDc1NDk0MiwiZXhwIjoxNzk1MzU5NzQyLCJhcnRpY2xlSWQiOiJUT0pUTzFLSVVQU0IwMCIsImJjb25uZWN0SWQiOiJDNEVEQ0FFMUZBMDU0MEJFQTI0QTlGMjExQzFFOTA4MCJ9.JxizrLMB_4yO_RhcaLRgamHBB02Qjf92voFxp6xtjaI"
    ]
+  },
+  {
+   "title": "Sources: Nvidia appealed to Taiwanese officials after its manager was charged over chip smuggling,…",
+   "url": "https://www.bloomberg.com/news/articles/2026-11-15/nvidia-sought-taipei-s-help-over-employee-s-chip-smuggling-case",
+   "source": "Mackenzie Hawkins / Bloombe…",
+   "published_at": "2026-11-15T19:11:07Z",
+   "text": "Sources: Nvidia appealed to Taiwanese officials after its manager was charged over chip smuggling, and sought advice from TSMC, which declined to get involved. Nvidia Corp. appealed to Taiwanese officials after prosecutors on the island accused an employee of helping to smuggle AI chips into China …",
+   "via": "Techmeme"
+  },
+  {
+   "title": "\"Who is Hiring?\" postings stuck near 12-year lows as AI reaches half of all jobs",
+   "url": "https://www.hntrends.com/2026/november.html",
+   "source": "Hacker News",
+   "published_at": "2026-11-16T01:31:30Z",
+   "text": "70 points and 39 comments on Hacker News.",
+   "points": 70,
+   "discussion": "https://news.ycombinator.com/item?id=50512950"
+  },
+  {
+   "title": "Anthropic is endorsing SB 53",
+   "url": "https://www.anthropic.com/news/anthropic-is-endorsing-sb-53",
+   "source": "Anthropic",
+   "published_at": "2026-11-13T22:37:05Z",
+   "text": "Anthropic is endorsing SB 53, the California bill that governs powerful AI systems built by frontier AI developers like Anthropic."
   },
   {
    "title": "Scott Bessent urges Nvidia to hire an outside CEO and wants answers within 10 days on whether it pu…",
@@ -53,16 +77,9 @@
    "url": "https://steveblank.com/2026/11/15/whats-next-for-nvidia/",
    "source": "Hacker News",
    "published_at": "2026-11-15T23:55:55Z",
-   "text": "80 points and 81 comments on Hacker News.",
-   "points": 80,
+   "text": "90 points and 97 comments on Hacker News.",
+   "points": 90,
    "discussion": "https://news.ycombinator.com/item?id=50512235"
-  },
-  {
-   "title": "Anthropic is endorsing SB 53",
-   "url": "https://www.anthropic.com/news/anthropic-is-endorsing-sb-53",
-   "source": "Anthropic",
-   "published_at": "2026-11-13T22:37:05Z",
-   "text": "Anthropic is endorsing SB 53, the California bill that governs powerful AI systems built by frontier AI developers like Anthropic."
   },
   {
    "title": "Sources: Howard Lutnick is expected to join Trump on Air Force One to China this week, after clashi…",
@@ -77,16 +94,23 @@
    "url": "https://magazine.sebastianraschka.com/p/understanding-positional-embeddings",
    "source": "Hacker News",
    "published_at": "2026-11-15T12:14:06Z",
-   "text": "211 points and 27 comments on Hacker News.",
-   "points": 211,
+   "text": "214 points and 27 comments on Hacker News.",
+   "points": 214,
    "discussion": "https://news.ycombinator.com/item?id=50506376"
   },
   {
-   "title": "How Jensen Huang built a multibillion-dollar business to let Chinese companies access Nvidia AI chi…",
-   "url": "https://www.wsj.com/tech/jensen-huang-backdoor-ai-data-centers-a5e4499d?st=geQhk5",
-   "source": "Wall Street Journal",
-   "published_at": "2026-11-15T05:56:21Z",
-   "text": "How Jensen Huang built a multibillion-dollar business to let Chinese companies access Nvidia AI chips in SE Asian data centers, exploiting a gap in US sanctions. Massive data centers in Southeast Asia exploited a gap in U.S. sanctions, providing crucial computing power for Chinese companies and a cover for alleged chip smuggling",
+   "title": "Understanding and addressing AI harms",
+   "url": "https://www.anthropic.com/news/our-approach-to-understanding-and-addressing-ai-harms",
+   "source": "Anthropic",
+   "published_at": "2026-11-13T22:37:05Z",
+   "text": "Anthropic's framework for identifying, classifying, and mitigating potential harms from AI systems to support responsible development."
+  },
+  {
+   "title": "The US and Pax Silica allies, including Japan, the UK, and India, agree to create a joint list of A…",
+   "url": "https://www.ft.com/content/3c2197fc-9618-4838-91e6-522ce1a96a22",
+   "source": "Financial Times",
+   "published_at": "2026-11-15T18:56:44Z",
+   "text": "The US and Pax Silica allies, including Japan, the UK, and India, agree to create a joint list of AI technologies and supply chains to protect from China. Pact comes ahead of Donald Trump's meeting with Xi Jinping at the Asia-Pacific Economic Cooperation forum in Shenzhen",
    "via": "Techmeme"
   },
   {
@@ -99,35 +123,11 @@
    "discussion": "https://news.ycombinator.com/item?id=50496921"
   },
   {
-   "title": "Understanding and addressing AI harms",
-   "url": "https://www.anthropic.com/news/our-approach-to-understanding-and-addressing-ai-harms",
-   "source": "Anthropic",
-   "published_at": "2026-11-13T22:37:05Z",
-   "text": "Anthropic's framework for identifying, classifying, and mitigating potential harms from AI systems to support responsible development."
-  },
-  {
-   "title": "Sources: Nvidia appealed to Taiwanese officials after its manager was charged over chip smuggling,…",
-   "url": "https://www.bloomberg.com/news/articles/2026-11-15/nvidia-sought-taipei-s-help-over-employee-s-chip-smuggling-case",
-   "source": "Mackenzie Hawkins / Bloombe…",
-   "published_at": "2026-11-15T19:11:07Z",
-   "text": "Sources: Nvidia appealed to Taiwanese officials after its manager was charged over chip smuggling, and sought advice from TSMC, which declined to get involved. Nvidia Corp. appealed to Taiwanese officials after prosecutors on the island accused an employee of helping to smuggle AI chips into China …",
-   "via": "Techmeme"
-  },
-  {
-   "title": "Claude Code and Codex reverse engineered my 1994 Jeep's ECU over a $3 Arduino [video]",
-   "url": "https://www.youtube.com/watch?v=WPj3aQ-xxpI",
-   "source": "Hacker News",
-   "published_at": "2026-11-12T05:29:24Z",
-   "text": "351 points and 176 comments on Hacker News.",
-   "points": 351,
-   "discussion": "https://news.ycombinator.com/item?id=50463399"
-  },
-  {
-   "title": "The US and Pax Silica allies, including Japan, the UK, and India, agree to create a joint list of A…",
-   "url": "https://www.ft.com/content/3c2197fc-9618-4838-91e6-522ce1a96a22",
-   "source": "Financial Times",
-   "published_at": "2026-11-15T18:56:44Z",
-   "text": "The US and Pax Silica allies, including Japan, the UK, and India, agree to create a joint list of AI technologies and supply chains to protect from China. Pact comes ahead of Donald Trump's meeting with Xi Jinping at the Asia-Pacific Economic Cooperation forum in Shenzhen",
+   "title": "Analysis: Huawei's Horinger data center, among China's largest for AI, has ~7% of the compute of Sp…",
+   "url": "https://epochai.substack.com/p/what-huaweis-horinger-data-center",
+   "source": "Ben Cottier / Epoch AI",
+   "published_at": "2026-11-15T22:03:26Z",
+   "text": "Analysis: Huawei's Horinger data center, among China's largest for AI, has ~7% of the compute of SpaceX's Colossus 2 and may stay far behind until at least 2028. This is a condensed version of a longer report on our website — Huawei, China's biggest AI chip developer, is drawing on China's abundant energy to build data centers.",
    "via": "Techmeme"
   }
  ],
