@@ -1,13 +1,13 @@
 {
  "schema": 1,
- "generated_at": "2026-11-16T17:06:21Z",
+ "generated_at": "2026-11-16T17:38:27Z",
  "items": [
   {
-   "title": "Sources: Jensen Huang has discussed a comeback as Nvidia's CEO with confidants, as allies form a “w…",
-   "url": "https://www.ft.com/content/45383d86-33c4-4d99-86e5-5e058d3567c1?accessToken=zwAAAaHhCqBRkc9FOD2GM8RNmdOG5V4FjTVnwQ.MEYCIQCZEg_GADuUi3HMzfVy4L3GgdXzwW5GpeLTdxDHbMhYXQIhAKQz7pVUZgb0WKGUJq30p1B5vEF2gPlUop1e8Yzyol24&sharetype=gift&token=35d995ef-ed14-4cc4-8323-31a3da06ba1b&syn-25a6b1a6=1",
-   "source": "Financial Times",
-   "published_at": "2026-11-15T19:21:36Z",
-   "text": "Sources: Jensen Huang has discussed a comeback as Nvidia's CEO with confidants, as allies form a “war room” to lobby for his return and seek White House support. Tech supporters lobby chipmaker's board to reinstate former CEO after he resigned following affair with alleged Chinese spy",
+   "title": "A look at the Jensen Huang fallout: a threat to Nvidia's organizational moat and its financing of n…",
+   "url": "https://stratechery.com/2026/obituaries/",
+   "source": "Ben Thompson / Stratechery",
+   "published_at": "2026-11-16T12:47:36Z",
+   "text": "A look at the Jensen Huang fallout: a threat to Nvidia's organizational moat and its financing of neocloud customers, a win for AI doomers and hawks, and more. Dearly beloved, we are gathered here today to get through this thing called life. — ― Prince",
    "via": "Techmeme"
   },
   {
@@ -17,8 +17,8 @@
    "published_at": "2026-11-16T16:03:33Z",
    "text": "We’re working with @ApolloResearch, @METR_Evals, @TransluceAI, and @GoodfireAI on embedded assessments: giving outside experts deep access to our internal models and systems to investigate alignment and test our safeguards. These assessments build on our ongoing alignment and…",
    "author_name": "OpenAI",
-   "likes": 1646,
-   "story": "OpenAI says it has signed agreements with independent assessors Apollo Research, METR, Transluce, and Goodfire for its first phase of embedded assessments"
+   "likes": 1942,
+   "story": "OpenAI says it signed agreements with independent assessors Apollo Research, METR, Transluce, and Goodfire for its first phase of AI model embedded assessments"
   },
   {
    "title": "Claude Code 2.1.325 released",
@@ -34,7 +34,7 @@
    "published_at": "2026-11-16T12:38:14Z",
    "text": "I think contrary to many of our expectations, we have not seen a Fable class open model more than 8 months after Fable/Mythos was first made public.",
    "author_name": "Ethan Mollick",
-   "likes": 741,
+   "likes": 803,
    "story": "Alibaba releases Qwen4-Max, its new flagship 2.4T-parameter MoE model with a 1M-token context window, saying it beats Qwen3.8-Max with up to 49% fewer tokens"
   },
   {
@@ -50,8 +50,8 @@
    "url": "https://www.wired.com/story/nvidia-was-already-in-trouble-before-the-jensen-huang-mess/",
    "source": "Hacker News",
    "published_at": "2026-11-16T15:24:09Z",
-   "text": "76 points and 48 comments on Hacker News.",
-   "points": 76,
+   "text": "110 points and 79 comments on Hacker News.",
+   "points": 110,
    "discussion": "https://news.ycombinator.com/item?id=50518567"
   },
   {
@@ -62,11 +62,11 @@
    "text": "Anthropic is endorsing SB 53, the California bill that governs powerful AI systems built by frontier AI developers like Anthropic."
   },
   {
-   "title": "The US Commerce Department issues an interim rule to limit remote access to advanced AI chips and s…",
+   "title": "The US Commerce Department issues an interim rule to limit remote access to some AI chips and serve…",
    "url": "https://www.bloomberg.com/news/articles/2026-11-16/us-moves-to-limit-remote-access-to-advanced-ai-chips",
    "source": "Bloomberg",
    "published_at": "2026-11-16T13:56:11Z",
-   "text": "The US Commerce Department issues an interim rule to limit remote access to advanced AI chips and servers from select countries, such as Singapore and Malaysia. The US Commerce Department moved to limit several countries from providing Chinese companies remote access to advanced artificial …",
+   "text": "The US Commerce Department issues an interim rule to limit remote access to some AI chips and servers from Singapore, Malaysia, Thailand, Indonesia, and Brazil. The US Commerce Department moved to limit several countries from providing Chinese companies remote access to advanced artificial …",
    "via": "Techmeme"
   },
   {
@@ -74,16 +74,16 @@
    "url": "https://steveblank.com/2026/11/15/whats-next-for-nvidia/",
    "source": "Hacker News",
    "published_at": "2026-11-15T23:55:55Z",
-   "text": "405 points and 510 comments on Hacker News.",
-   "points": 405,
+   "text": "410 points and 522 comments on Hacker News.",
+   "points": 410,
    "discussion": "https://news.ycombinator.com/item?id=50512235"
   },
   {
-   "title": "A look at the Jensen Huang fallout: a threat to Nvidia's organizational moat and its financing of n…",
-   "url": "https://stratechery.com/2026/obituaries/",
-   "source": "Ben Thompson / Stratechery",
-   "published_at": "2026-11-16T12:47:36Z",
-   "text": "A look at the Jensen Huang fallout: a threat to Nvidia's organizational moat and its financing of neocloud customers, a win for AI doomers and hawks, and more. Dearly beloved, we are gathered here today to get through this thing called life. — ― Prince",
+   "title": "Sources: Jensen Huang had planned to pull back Nvidia's aggressive financing and told neoclouds to…",
+   "url": "https://www.wsj.com/tech/ai/nvidias-days-as-an-open-checkbook-for-the-ai-economy-are-numbered-90c7b388?st=LGBxVv",
+   "source": "Wall Street Journal",
+   "published_at": "2026-11-16T03:31:20Z",
+   "text": "Sources: Jensen Huang had planned to pull back Nvidia's aggressive financing and told neoclouds to get upfront customer payments; Colette Kress may go further. Interim CEO Colette Kress is expected to rein in deals after a stretch in which Nvidia aggressively financed computing deals and startup investments",
    "via": "Techmeme"
   },
   {
@@ -102,11 +102,11 @@
    "via": "Techmeme"
   },
   {
-   "title": "Sources: Jensen Huang had planned to pull back Nvidia's aggressive financing and told neoclouds to…",
-   "url": "https://www.wsj.com/tech/ai/nvidias-days-as-an-open-checkbook-for-the-ai-economy-are-numbered-90c7b388?st=LGBxVv",
-   "source": "Wall Street Journal",
-   "published_at": "2026-11-16T03:31:20Z",
-   "text": "Sources: Jensen Huang had planned to pull back Nvidia's aggressive financing and told neoclouds to get upfront customer payments; Colette Kress may go further. Interim CEO Colette Kress is expected to rein in deals after a stretch in which Nvidia aggressively financed computing deals and startup investments",
+   "title": "Google's TIG reports the first observed instance of attackers using an autonomous AI framework with…",
+   "url": "https://siliconangle.com/2026/11/16/google-says-an-ai-framework-turned-security-patches-into-exploits-with-no-human-in-the-loop/",
+   "source": "Duncan Riley / SiliconANGLE",
+   "published_at": "2026-11-16T14:40:45Z",
+   "text": "Google's TIG reports the first observed instance of attackers using an autonomous AI framework with no human in the loop to turn security patches into exploits. A new report out today from Google LLC's Google Threat Intelligence Group finds that for the first time, attackers have used …",
    "via": "Techmeme"
   },
   {
@@ -118,11 +118,11 @@
    "via": "Techmeme"
   },
   {
-   "title": "Google's TIG reports the first observed instance of attackers using an autonomous AI framework with…",
-   "url": "https://siliconangle.com/2026/11/16/google-says-an-ai-framework-turned-security-patches-into-exploits-with-no-human-in-the-loop/",
-   "source": "Duncan Riley / SiliconANGLE",
-   "published_at": "2026-11-16T14:40:45Z",
-   "text": "Google's TIG reports the first observed instance of attackers using an autonomous AI framework with no human in the loop to turn security patches into exploits. A new report out today from Google LLC's Google Threat Intelligence Group finds that for the first time, attackers have used …",
+   "title": "Harvard study: just 403 US data centers operational between May 2024 and April 2025 consumed as muc…",
+   "url": "https://www.wired.com/story/data-centers-use-more-electricity-than-michigan/",
+   "source": "Molly Taft / Wired",
+   "published_at": "2026-11-16T16:45:47Z",
+   "text": "Harvard study: just 403 US data centers operational between May 2024 and April 2025 consumed as much electricity annually as the state of Michigan. New Harvard research shows that data-center power demand is outstripping states—and that doesn't even include facilities with off-grid gas plants.",
    "via": "Techmeme"
   }
  ],
