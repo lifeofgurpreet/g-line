@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-16T20:53:36Z",
+ "generated_at": "2026-11-16T21:26:36Z",
  "items": [
   {
    "title": "Source: Nvidia's board is not considering bringing Jensen Huang back as CEO and it is focused on a…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-16T18:31:00Z",
    "text": "“AI is here, just get used to it” and what you have to get used to is that everything works worse now than it did five years ago",
    "author_name": "Mike Drucker",
-   "likes": 13837,
+   "likes": 16633,
    "story": "Customers of BofA, Chase, Wells Fargo, and other US banks report online service issues; Chase says a technical issue, not a cyber issue, is causing delays"
   },
   {
@@ -28,14 +28,31 @@
    "text": "Fixed a security issue in how zstd-compressed responses are decoded · Added a spinner tip in VS Code and similar integrated terminals about re-running a notebook cell, shown once Claude has read or edited a Jupyter notebook · Added a line under the error shown when your organization's policy blocks a request, saying how to continue: run /rewind and change the message, or run /clear · Added a note for Claude when a sandboxed git checkout, git stash or autostash pull cannot update protected files such as those in .claude"
   },
   {
-   "title": "It's great that OpenAI is doing these assessments but they fall short of Sam's commitment to employ…",
-   "url": "https://x.com/NeelNanda5/status/2122394159197950006",
-   "source": "𝕏 @NeelNanda5",
-   "published_at": "2026-11-16T18:19:34Z",
-   "text": "It's great that OpenAI is doing these assessments but they fall short of Sam's commitment to employee-like access Good access is key for trust because assessors can find things even if a company tries hiding them. Here OpenAI controls information flow so we must rely on good…",
-   "author_name": "Neel Nanda",
-   "likes": 254,
+   "title": "We’re working with @ApolloResearch, @METR_Evals, @TransluceAI, and @GoodfireAI on embedded assessme…",
+   "url": "https://x.com/OpenAI/status/2122359930628063248",
+   "source": "𝕏 @OpenAI",
+   "published_at": "2026-11-16T16:03:33Z",
+   "text": "We’re working with @ApolloResearch, @METR_Evals, @TransluceAI, and @GoodfireAI on embedded assessments: giving outside experts deep access to our internal models and systems to investigate alignment and test our safeguards. These assessments build on our ongoing alignment and…",
+   "author_name": "OpenAI",
+   "likes": 2542,
    "story": "OpenAI says it signed agreements with independent assessors Apollo Research, METR, Transluce, and Goodfire for its first phase of AI model embedded assessments"
+  },
+  {
+   "title": "California AG sues OpenAI over the Hugging Face attack, alleging it was one of 80+ incidents result…",
+   "url": "https://www.politico.com/news/2026/11/16/bonta-sues-openai-over-rogue-ai-hack-of-hugging-face-01166953",
+   "source": "Politico",
+   "published_at": "2026-11-16T18:55:46Z",
+   "text": "California AG sues OpenAI over the Hugging Face attack, alleging it was one of 80+ incidents resulting from OpenAI testing AI models without adequate safeguards. California Attorney General Rob Bonta is suing OpenAI over the cyberattack its rogue AI agents launched this summer against the tech platform Hugging Face.",
+   "via": "Techmeme"
+  },
+  {
+   "title": "Nvidia was in trouble before the Jensen Huang mess",
+   "url": "https://www.wired.com/story/nvidia-was-already-in-trouble-before-the-jensen-huang-mess/",
+   "source": "Hacker News",
+   "published_at": "2026-11-16T15:24:09Z",
+   "text": "200 points and 200 comments on Hacker News.",
+   "points": 200,
+   "discussion": "https://news.ycombinator.com/item?id=50518567"
   },
   {
    "title": "Alibaba has launched Qwen4 Max, gaining 9 points over Qwen3.8 Max on the Artificial Analysis Intell…",
@@ -44,25 +61,8 @@
    "published_at": "2026-11-16T02:55:35Z",
    "text": "Alibaba has launched Qwen4 Max, gaining 9 points over Qwen3.8 Max on the Artificial Analysis Intelligence Index and landing 3 points behind Kimi K3.1 Pro at ~11% lower Cost per Task Qwen4 Max, using xhigh reasoning effort, scores 43 on the Intelligence Index, 9 points ahead of…",
    "author_name": "Artificial Analysis",
-   "likes": 1508,
+   "likes": 1512,
    "story": "Alibaba releases Qwen4-Max, its new flagship 2.4T-parameter MoE model with a 1M-token context window, saying it beats Qwen3.8-Max with up to 49% fewer tokens"
-  },
-  {
-   "title": "California AG Rob Bonta sues OpenAI over the Hugging Face incident, alleging OpenAI endangered the…",
-   "url": "https://www.politico.com/news/2026/11/16/bonta-sues-openai-over-rogue-ai-hack-of-hugging-face-01166953",
-   "source": "Politico",
-   "published_at": "2026-11-16T18:55:46Z",
-   "text": "California AG Rob Bonta sues OpenAI over the Hugging Face incident, alleging OpenAI endangered the public by testing its models without adequate safeguards. California Attorney General Rob Bonta is suing OpenAI over the cyberattack its rogue AI agents launched this summer against the tech platform Hugging Face.",
-   "via": "Techmeme"
-  },
-  {
-   "title": "Nvidia was in trouble before the Jensen Huang mess",
-   "url": "https://www.wired.com/story/nvidia-was-already-in-trouble-before-the-jensen-huang-mess/",
-   "source": "Hacker News",
-   "published_at": "2026-11-16T15:24:09Z",
-   "text": "189 points and 188 comments on Hacker News.",
-   "points": 189,
-   "discussion": "https://news.ycombinator.com/item?id=50518567"
   },
   {
    "title": "Anthropic commits $10 million to Canadian AI research",
@@ -80,13 +80,13 @@
    "via": "Techmeme"
   },
   {
-   "title": "Just 400 US Data Centers Use More Electricity Than Michigan",
-   "url": "https://www.wired.com/story/data-centers-use-more-electricity-than-michigan/",
+   "title": "OpenAI: Strengthening the fight against online child sexual abuse",
+   "url": "https://openai.com/index/strengthening-online-child-safety/",
    "source": "Hacker News",
-   "published_at": "2026-11-16T18:04:55Z",
-   "text": "74 points and 61 comments on Hacker News.",
-   "points": 74,
-   "discussion": "https://news.ycombinator.com/item?id=50520697"
+   "published_at": "2026-11-16T18:12:48Z",
+   "text": "62 points and 111 comments on Hacker News.",
+   "points": 62,
+   "discussion": "https://news.ycombinator.com/item?id=50520804"
   },
   {
    "title": "A look at the Jensen Huang fallout: a threat to Nvidia's organizational moat and its financing of n…",
@@ -104,14 +104,6 @@
    "text": "Anthropic opens its fifth Asia-Pacific office in Singapore and signs an MOU with the government on AI safety, evaluation, and responsible adoption."
   },
   {
-   "title": "Sam Altman says he has “personal strong empathy” for Jensen Huang and “heroes have flaws,” but the…",
-   "url": "https://www.bloomberg.com/news/articles/2026-11-16/altman-says-ai-industry-will-be-fine-after-huang-s-ouster?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc5NDg1MTkyNSwiZXhwIjoxNzk1NDU2NzI1LCJhcnRpY2xlSWQiOiJUT0xTTEdUOTZPU0kwMCIsImJjb25uZWN0SWQiOiI4OUM4OTNDMDhGOTQ0NThDQkQwQTQyREY1RDFCOTY0QyJ9.r6LmtmU7Op0YupcW7NseYlZEPI3zLR_cnigfe6HXPcY",
-   "source": "Shirin Ghaffary / Bloomberg",
-   "published_at": "2026-11-16T18:05:52Z",
-   "text": "Sam Altman says he has “personal strong empathy” for Jensen Huang and “heroes have flaws,” but the AI industry “will be fine” due to strong revenues and demand. OpenAI's Sam Altman said he believes the artificial intelligence industry will weather …",
-   "via": "Techmeme"
-  },
-  {
    "title": "Sources: Jensen Huang had planned to pull back Nvidia's aggressive financing and told neoclouds to…",
    "url": "https://www.wsj.com/tech/ai/nvidias-days-as-an-open-checkbook-for-the-ai-economy-are-numbered-90c7b388?st=LGBxVv",
    "source": "Wall Street Journal",
@@ -125,6 +117,14 @@
    "source": "Ivan Mehta / TechCrunch",
    "published_at": "2026-11-16T04:11:20Z",
    "text": "Apple partners with OpenEvidence to launch Health AI Usage Study, an app that answers health questions and can use HealthKit data, for up to 200,000 US users. Big AI labs like OpenAI and Anthropic have made their bets on offering chatbots that can answer health-related queries with specialized features.",
+   "via": "Techmeme"
+  },
+  {
+   "title": "Harvard study: just 403 US data centers operational between May 2024 and April 2025 consumed as muc…",
+   "url": "https://www.wired.com/story/data-centers-use-more-electricity-than-michigan/",
+   "source": "Molly Taft / Wired",
+   "published_at": "2026-11-16T16:45:47Z",
+   "text": "Harvard study: just 403 US data centers operational between May 2024 and April 2025 consumed as much electricity annually as the state of Michigan. New Harvard research shows that data-center power demand is outstripping states—and that doesn't even include facilities with off-grid gas plants.",
    "via": "Techmeme"
   }
  ],
