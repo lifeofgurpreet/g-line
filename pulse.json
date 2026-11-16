@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-16T11:46:32Z",
+ "generated_at": "2026-11-16T12:18:17Z",
  "items": [
   {
    "title": "Sources: Jensen Huang has discussed a comeback as Nvidia CEO with confidants, as allies form a “war…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-15T15:03:07Z",
    "text": "NEW Power On: Apple’s next big product — smart glasses planned next year — will offer Siri AI app integrations as its flagship feature. The idea: Book an Uber, reserve a table or order a coffee from your Apple Glasses — with apps running on paired iPhone.",
    "author_name": "Mark Gurman",
-   "likes": 993,
+   "likes": 996,
    "story": "Sources: Apple plans to unveil smart glasses at WWDC and ship them by the end of 2027, focusing heavily on integration of third-party iPhone apps with Siri AI",
    "links": [
     "https://www.bloomberg.com/news/newsletters/2026-11-15/apple-siri-ai-app-integrations-power-smart-glasses-iphone-duo-2-face-id-plan?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc5NDc1NDk0MiwiZXhwIjoxNzk1MzU5NzQyLCJhcnRpY2xlSWQiOiJUT0pUTzFLSVVQU0IwMCIsImJjb25uZWN0SWQiOiJDNEVEQ0FFMUZBMDU0MEJFQTI0QTlGMjExQzFFOTA4MCJ9.JxizrLMB_4yO_RhcaLRgamHBB02Qjf92voFxp6xtjaI"
@@ -43,8 +43,8 @@
    "url": "https://steveblank.com/2026/11/15/whats-next-for-nvidia/",
    "source": "Hacker News",
    "published_at": "2026-11-15T23:55:55Z",
-   "text": "286 points and 369 comments on Hacker News.",
-   "points": 286,
+   "text": "295 points and 376 comments on Hacker News.",
+   "points": 295,
    "discussion": "https://news.ycombinator.com/item?id=50512235"
   },
   {
@@ -55,11 +55,11 @@
    "text": "Anthropic is endorsing SB 53, the California bill that governs powerful AI systems built by frontier AI developers like Anthropic."
   },
   {
-   "title": "Sources: Howard Lutnick is expected to join Trump on Air Force One to China this week, after clashi…",
-   "url": "https://www.semafor.com/article/11/15/2026/under-pressure-lutnick-joins-trump-in-china",
-   "source": "Ashley Gold / Semafor",
-   "published_at": "2026-11-15T17:16:07Z",
-   "text": "Sources: Howard Lutnick is expected to join Trump on Air Force One to China this week, after clashing with Scott Bessent and others over Nvidia chip curbs",
+   "title": "Apple launches its Health AI Usage Study, with an OpenEvidence-powered app that answers health ques…",
+   "url": "https://techcrunch.com/2026/11/15/apple-launches-new-app-to-study-how-people-use-ai-for-health/",
+   "source": "Ivan Mehta / TechCrunch",
+   "published_at": "2026-11-16T04:11:20Z",
+   "text": "Apple launches its Health AI Usage Study, with an OpenEvidence-powered app that answers health questions and can use HealthKit data, for up to 200,000 US users. Big AI labs like OpenAI and Anthropic have made their bets on offering chatbots that can answer health-related queries with specialized features.",
    "via": "Techmeme"
   },
   {
@@ -72,11 +72,11 @@
    "discussion": "https://news.ycombinator.com/item?id=50496921"
   },
   {
-   "title": "Apple launches its Health AI Usage Study, with an OpenEvidence-powered app that answers health ques…",
-   "url": "https://techcrunch.com/2026/11/15/apple-launches-new-app-to-study-how-people-use-ai-for-health/",
-   "source": "Ivan Mehta / TechCrunch",
-   "published_at": "2026-11-16T04:11:20Z",
-   "text": "Apple launches its Health AI Usage Study, with an OpenEvidence-powered app that answers health questions and can use HealthKit data, for up to 200,000 US users. Big AI labs like OpenAI and Anthropic have made their bets on offering chatbots that can answer health-related queries with specialized features.",
+   "title": "Tighter AI chip export rules are gaining bipartisan support in Congress, including a bill to block…",
+   "url": "https://www.ft.com/content/3062790a-553d-41b8-9c7d-bae17b9d2e29",
+   "source": "Financial Times",
+   "published_at": "2026-11-16T06:06:34Z",
+   "text": "Tighter AI chip export rules are gaining bipartisan support in Congress, including a bill to block Chinese companies from accessing chips overseas. Jensen Huang's alleged affair with Chinese spy ‘increases momentum’ to crack down on US hardware reaching China",
    "via": "Techmeme"
   },
   {
@@ -92,14 +92,6 @@
    "source": "Wall Street Journal",
    "published_at": "2026-11-16T04:41:38Z",
    "text": "Sources: the Trump administration plans to name Nvidia, Amazon, Microsoft, OpenAI, and Anthropic among 24+ AI “national champions” to help win overseas business. The new program is part of an effort to help U.S. AI companies compete for business overseas",
-   "via": "Techmeme"
-  },
-  {
-   "title": "Tighter AI chip export rules are gaining bipartisan support in Congress, including a bill to block…",
-   "url": "https://www.ft.com/content/3062790a-553d-41b8-9c7d-bae17b9d2e29",
-   "source": "Financial Times",
-   "published_at": "2026-11-16T06:06:34Z",
-   "text": "Tighter AI chip export rules are gaining bipartisan support in Congress, including a bill to block Chinese companies from accessing chips overseas. Jensen Huang's alleged affair with Chinese spy ‘increases momentum’ to crack down on US hardware reaching China",
    "via": "Techmeme"
   },
   {
@@ -124,6 +116,14 @@
    "source": "Clara Murray / Financial Ti…",
    "published_at": "2026-11-16T09:21:24Z",
    "text": "Analysis: global manufacturing, utility, and mining companies have shed $4.2T in market value since June as the AI “picks and shovels” trade swings into reverse",
+   "via": "Techmeme"
+  },
+  {
+   "title": "Tech startups and VC firms are hiring for “ecosystem” roles, like “startup ecosystem lead”, to prio…",
+   "url": "https://www.nytimes.com/2026/11/15/business/tech-jobs-ai-ecosystem.html?unlocked_article_code=1.Q1E.Rex6.3x1x0jaexrm1&smid=url-share",
+   "source": "Lora Kelley / New York Times",
+   "published_at": "2026-11-16T11:51:02Z",
+   "text": "Tech startups and VC firms are hiring for “ecosystem” roles, like “startup ecosystem lead”, to prioritize in-person networking and cut through AI marketing slop. The people ushering in the artificial intelligence revolution are also doubling down on in-person relationships in their own industry.",
    "via": "Techmeme"
   }
  ],
