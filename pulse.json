@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-16T13:53:27Z",
+ "generated_at": "2026-11-16T14:25:16Z",
  "items": [
   {
    "title": "Sources: Jensen Huang has discussed a comeback as Nvidia's CEO with confidants, as allies form a “w…",
@@ -17,8 +17,8 @@
    "published_at": "2026-11-16T12:38:14Z",
    "text": "I think contrary to many of our expectations, we have not seen a Fable class open model more than 8 months after Fable/Mythos was first made public.",
    "author_name": "Ethan Mollick",
-   "likes": 196,
-   "story": "Alibaba releases Qwen4-Max, its new flagship 2.4T-parameter MoE model with a 1M-token context window, saying it beats Qwen3.8-Max with up to ~50% fewer tokens"
+   "likes": 300,
+   "story": "Alibaba says it filtered Qwen4-Max's training data to remove offensive cyber capabilities and mitigate chemical, biological, radiological, and nuclear risks"
   },
   {
    "title": "Claude Code 2.1.325 released",
@@ -34,18 +34,18 @@
    "published_at": "2026-11-15T15:03:07Z",
    "text": "NEW Power On: Apple’s next big product — smart glasses planned next year — will offer Siri AI app integrations as its flagship feature. The idea: Book an Uber, reserve a table or order a coffee from your Apple Glasses — with apps running on paired iPhone.",
    "author_name": "Mark Gurman",
-   "likes": 1016,
-   "story": "Sources: Apple plans to unveil smart glasses at WWDC and ship them by the end of 2027, focusing heavily on integration of third-party iPhone apps with Siri AI",
+   "likes": 1018,
+   "story": "Sources: Apple plans to unveil smart glasses at WWDC and ship them by the end of 2027, depending heavily on Siri working reliably and third-party iPhone apps",
    "links": [
     "https://www.bloomberg.com/news/newsletters/2026-11-15/apple-siri-ai-app-integrations-power-smart-glasses-iphone-duo-2-face-id-plan?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc5NDc1NDk0MiwiZXhwIjoxNzk1MzU5NzQyLCJhcnRpY2xlSWQiOiJUT0pUTzFLSVVQU0IwMCIsImJjb25uZWN0SWQiOiJDNEVEQ0FFMUZBMDU0MEJFQTI0QTlGMjExQzFFOTA4MCJ9.JxizrLMB_4yO_RhcaLRgamHBB02Qjf92voFxp6xtjaI"
    ]
   },
   {
-   "title": "The Jensen Huang saga is driven by elite factional conflicts: China hawks vs. doves, open vs. close…",
-   "url": "https://www.patreon.com/MaxRead/posts/mapping-jensen-175257766",
-   "source": "Max Read / Patreon",
-   "published_at": "2026-11-16T13:40:55Z",
-   "text": "The Jensen Huang saga is driven by elite factional conflicts: China hawks vs. doves, open vs. closed AI models, and the founder class vs. managerial class. Greetings from Read Max HQ! In this edition, some quick thoughts about Jensen Huang, Nvidia, and the fallout in both Silicon Valley and Washington …",
+   "title": "A look at the Jensen Huang fallout: a threat to Nvidia's organizational moat and its financing of n…",
+   "url": "https://stratechery.com/2026/obituaries/",
+   "source": "Ben Thompson / Stratechery",
+   "published_at": "2026-11-16T12:47:36Z",
+   "text": "A look at the Jensen Huang fallout: a threat to Nvidia's organizational moat and its financing of neocloud customers, a win for AI doomers and hawks, and more. Dearly beloved, we are gathered here today to get through this thing called life. — ― Prince",
    "via": "Techmeme"
   },
   {
@@ -53,8 +53,8 @@
    "url": "https://steveblank.com/2026/11/15/whats-next-for-nvidia/",
    "source": "Hacker News",
    "published_at": "2026-11-15T23:55:55Z",
-   "text": "335 points and 413 comments on Hacker News.",
-   "points": 335,
+   "text": "348 points and 430 comments on Hacker News.",
+   "points": 348,
    "discussion": "https://news.ycombinator.com/item?id=50512235"
   },
   {
@@ -65,12 +65,27 @@
    "text": "Anthropic is endorsing SB 53, the California bill that governs powerful AI systems built by frontier AI developers like Anthropic."
   },
   {
-   "title": "Apple launches its Health AI Usage Study, with an OpenEvidence-powered app that answers health ques…",
-   "url": "https://techcrunch.com/2026/11/15/apple-launches-new-app-to-study-how-people-use-ai-for-health/",
-   "source": "Ivan Mehta / TechCrunch",
-   "published_at": "2026-11-16T04:11:20Z",
-   "text": "Apple launches its Health AI Usage Study, with an OpenEvidence-powered app that answers health questions and can use HealthKit data, for up to 200,000 US users. Big AI labs like OpenAI and Anthropic have made their bets on offering chatbots that can answer health-related queries with specialized features.",
+   "title": "Alibaba releases Qwen4-Max, its new flagship 2.4T-parameter MoE model with a 1M-token context windo…",
+   "url": "https://qwen.ai/blog?id=qwen4-max",
+   "source": "Qwen",
+   "published_at": "2026-11-16T03:41:04Z",
+   "text": "Alibaba releases Qwen4-Max, its new flagship 2.4T-parameter MoE model with a 1M-token context window, saying it beats Qwen3.8-Max with up to 49% fewer tokens. Today, we are introducing Qwen4-Max, your new AI teammate for work, creativity, and discovery. Qwen4-Max is built …",
    "via": "Techmeme"
+  },
+  {
+   "title": "The US Commerce Department issues an interim rule to limit remote access to advanced AI chips and s…",
+   "url": "https://www.bloomberg.com/news/articles/2026-11-16/us-moves-to-limit-remote-access-to-advanced-ai-chips",
+   "source": "Magan Crane / Bloomberg",
+   "published_at": "2026-11-16T13:56:11Z",
+   "text": "The US Commerce Department issues an interim rule to limit remote access to advanced AI chips and servers from select countries, such as Singapore and Malaysia. The US Commerce Department issued an interim rule to limit remote access to advanced AI chips and servers from certain countries …",
+   "via": "Techmeme"
+  },
+  {
+   "title": "Understanding and addressing AI harms",
+   "url": "https://www.anthropic.com/news/our-approach-to-understanding-and-addressing-ai-harms",
+   "source": "Anthropic",
+   "published_at": "2026-11-13T22:37:05Z",
+   "text": "Anthropic's framework for identifying, classifying, and mitigating potential harms from AI systems to support responsible development."
   },
   {
    "title": "Sources: Jensen Huang had planned to pull back Nvidia's aggressive financing and told neoclouds to…",
@@ -81,11 +96,12 @@
    "via": "Techmeme"
   },
   {
-   "title": "Understanding and addressing AI harms",
-   "url": "https://www.anthropic.com/news/our-approach-to-understanding-and-addressing-ai-harms",
-   "source": "Anthropic",
-   "published_at": "2026-11-13T22:37:05Z",
-   "text": "Anthropic's framework for identifying, classifying, and mitigating potential harms from AI systems to support responsible development."
+   "title": "Apple partners with OpenEvidence to launch Health AI Usage Study, an app that answers health questi…",
+   "url": "https://techcrunch.com/2026/11/15/apple-launches-new-app-to-study-how-people-use-ai-for-health/",
+   "source": "Ivan Mehta / TechCrunch",
+   "published_at": "2026-11-16T04:11:20Z",
+   "text": "Apple partners with OpenEvidence to launch Health AI Usage Study, an app that answers health questions and can use HealthKit data, for up to 200,000 US users. Big AI labs like OpenAI and Anthropic have made their bets on offering chatbots that can answer health-related queries with specialized features.",
+   "via": "Techmeme"
   },
   {
    "title": "Sources: the Trump administration plans to name Nvidia, Amazon, Microsoft, OpenAI, and Anthropic am…",
@@ -109,22 +125,6 @@
    "source": "New York Times",
    "published_at": "2026-11-16T12:35:51Z",
    "text": "The US-led Pax Silica faces local backlash in the Philippines over a planned AI hub, with concerns about displacement, resources, and threats to sovereignty. A planned American-led artificial intelligence hub in the Philippines has sparked fierce opposition over concerns about displacement …",
-   "via": "Techmeme"
-  },
-  {
-   "title": "Tighter AI chip export rules are gaining bipartisan support in Congress, including a bill to block…",
-   "url": "https://www.ft.com/content/3062790a-553d-41b8-9c7d-bae17b9d2e29",
-   "source": "Financial Times",
-   "published_at": "2026-11-16T06:06:34Z",
-   "text": "Tighter AI chip export rules are gaining bipartisan support in Congress, including a bill to block Chinese companies from accessing chips overseas. Jensen Huang's alleged affair with Chinese spy ‘increases momentum’ to crack down on US hardware reaching China",
-   "via": "Techmeme"
-  },
-  {
-   "title": "Dreamteam, which uses AI agents for CRM tasks like data capture and research, raised $53M across se…",
-   "url": "https://techcrunch.com/2026/11/16/freshworks-alums-raise-53m-to-take-on-salesforce-hubspot-with-ai-native-crm/",
-   "source": "Jagmeet Singh / TechCrunch",
-   "published_at": "2026-11-16T13:06:02Z",
-   "text": "Dreamteam, which uses AI agents for CRM tasks like data capture and research, raised $53M across seed and Series A led by Together Fund and Accel, respectively. Dreamteam, a startup founded by former Freshworks executives, has raised $53 million to challenge Salesforce and HubSpot with its AI-native CRM …",
    "via": "Techmeme"
   }
  ],
