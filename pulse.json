@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-16T02:10:30Z",
+ "generated_at": "2026-11-16T02:42:13Z",
  "items": [
   {
    "title": "Sources: Jensen Huang has discussed a comeback as Nvidia CEO with confidants, as allies form a “war…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-15T00:13:00Z",
    "text": "BREAKING: Former Nvidia CEO Jensen Huang reportedly told a top executive \"I hope you die\" during a meeting",
    "author_name": "Kalshi",
-   "likes": 40122,
+   "likes": 40221,
    "story": "Nvidia insiders say Jensen Huang was prone to wild office tantrums, which a source says some employees were surprised hadn't leaked before his public downfall"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-11-15T15:03:07Z",
    "text": "NEW Power On: Apple’s next big product — smart glasses planned next year — will offer Siri AI app integrations as its flagship feature. The idea: Book an Uber, reserve a table or order a coffee from your Apple Glasses — with apps running on paired iPhone.",
    "author_name": "Mark Gurman",
-   "likes": 893,
+   "likes": 909,
    "story": "Sources: Apple plans to unveil smart glasses at WWDC and ship them by the end of 2027, focusing heavily on integration of third-party iPhone apps with Siri AI",
    "links": [
     "https://www.bloomberg.com/news/newsletters/2026-11-15/apple-siri-ai-app-integrations-power-smart-glasses-iphone-duo-2-face-id-plan?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc5NDc1NDk0MiwiZXhwIjoxNzk1MzU5NzQyLCJhcnRpY2xlSWQiOiJUT0pUTzFLSVVQU0IwMCIsImJjb25uZWN0SWQiOiJDNEVEQ0FFMUZBMDU0MEJFQTI0QTlGMjExQzFFOTA4MCJ9.JxizrLMB_4yO_RhcaLRgamHBB02Qjf92voFxp6xtjaI"
@@ -53,8 +53,8 @@
    "url": "https://steveblank.com/2026/11/15/whats-next-for-nvidia/",
    "source": "Hacker News",
    "published_at": "2026-11-15T23:55:55Z",
-   "text": "67 points and 62 comments on Hacker News.",
-   "points": 67,
+   "text": "80 points and 81 comments on Hacker News.",
+   "points": 80,
    "discussion": "https://news.ycombinator.com/item?id=50512235"
   },
   {
@@ -65,11 +65,11 @@
    "text": "Anthropic is endorsing SB 53, the California bill that governs powerful AI systems built by frontier AI developers like Anthropic."
   },
   {
-   "title": "Investigation: Howard Lutnick pushed to narrow chip curbs affecting a client of his former firm Can…",
-   "url": "https://www.nytimes.com/2026/11/15/us/politics/lutnick-pushed-to-weaken-chip-rules-that-overlap-with-his-family-business.html?unlocked_article_code=1.QlE.S83S.v9pNUp3b3vi_&smid=url-share",
-   "source": "New York Times",
-   "published_at": "2026-11-15T16:11:28Z",
-   "text": "Investigation: Howard Lutnick pushed to narrow chip curbs affecting a client of his former firm Cantor Fitzgerald whose Malaysia data center may serve Tencent. The commerce secretary has been writing new rules that would affect Southeast Asian data centers, some of which are clients of his former firm.",
+   "title": "Sources: Howard Lutnick is expected to join Trump on Air Force One to China this week, after clashi…",
+   "url": "https://www.semafor.com/article/11/15/2026/under-pressure-lutnick-joins-trump-in-china",
+   "source": "Ashley Gold / Semafor",
+   "published_at": "2026-11-15T17:16:07Z",
+   "text": "Sources: Howard Lutnick is expected to join Trump on Air Force One to China this week, after clashing with Scott Bessent and others over Nvidia chip curbs. Howard Lutnick is expected to travel on Air Force One with the president to China this week as the commerce secretary fights to regain …",
    "via": "Techmeme"
   },
   {
@@ -77,8 +77,8 @@
    "url": "https://magazine.sebastianraschka.com/p/understanding-positional-embeddings",
    "source": "Hacker News",
    "published_at": "2026-11-15T12:14:06Z",
-   "text": "206 points and 27 comments on Hacker News.",
-   "points": 206,
+   "text": "211 points and 27 comments on Hacker News.",
+   "points": 211,
    "discussion": "https://news.ycombinator.com/item?id=50506376"
   },
   {
@@ -106,11 +106,11 @@
    "text": "Anthropic's framework for identifying, classifying, and mitigating potential harms from AI systems to support responsible development."
   },
   {
-   "title": "Sources: Howard Lutnick is expected to join Trump on Air Force One to China this week, after clashi…",
-   "url": "https://www.semafor.com/article/11/15/2026/under-pressure-lutnick-joins-trump-in-china",
-   "source": "Ashley Gold / Semafor",
-   "published_at": "2026-11-15T17:16:07Z",
-   "text": "Sources: Howard Lutnick is expected to join Trump on Air Force One to China this week, after clashing with Scott Bessent and others over Nvidia chip curbs. Howard Lutnick is expected to travel on Air Force One with the president to China this week as the commerce secretary fights to regain …",
+   "title": "Sources: Nvidia appealed to Taiwanese officials after its manager was charged over chip smuggling,…",
+   "url": "https://www.bloomberg.com/news/articles/2026-11-15/nvidia-sought-taipei-s-help-over-employee-s-chip-smuggling-case",
+   "source": "Mackenzie Hawkins / Bloombe…",
+   "published_at": "2026-11-15T19:11:07Z",
+   "text": "Sources: Nvidia appealed to Taiwanese officials after its manager was charged over chip smuggling, and sought advice from TSMC, which declined to get involved. Nvidia Corp. appealed to Taiwanese officials after prosecutors on the island accused an employee of helping to smuggle AI chips into China …",
    "via": "Techmeme"
   },
   {
@@ -118,8 +118,8 @@
    "url": "https://www.youtube.com/watch?v=WPj3aQ-xxpI",
    "source": "Hacker News",
    "published_at": "2026-11-12T05:29:24Z",
-   "text": "342 points and 173 comments on Hacker News.",
-   "points": 342,
+   "text": "351 points and 176 comments on Hacker News.",
+   "points": 351,
    "discussion": "https://news.ycombinator.com/item?id=50463399"
   },
   {
