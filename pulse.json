@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-16T00:35:13Z",
+ "generated_at": "2026-11-16T01:07:22Z",
  "items": [
   {
    "title": "Sources: Jensen Huang has discussed a comeback as Nvidia CEO with confidants, as allies form a “war…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-15T00:13:00Z",
    "text": "BREAKING: Former Nvidia CEO Jensen Huang reportedly told a top executive \"I hope you die\" during a meeting",
    "author_name": "Kalshi",
-   "likes": 39695,
+   "likes": 39851,
    "story": "Nvidia insiders say Jensen Huang was prone to wild office tantrums, which a source says some employees were surprised hadn't leaked before his public downfall"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-11-15T15:03:07Z",
    "text": "NEW Power On: Apple’s next big product — smart glasses planned next year — will offer Siri AI app integrations as its flagship feature. The idea: Book an Uber, reserve a table or order a coffee from your Apple Glasses — with apps running on paired iPhone.",
    "author_name": "Mark Gurman",
-   "likes": 853,
+   "likes": 870,
    "story": "Sources: Apple plans to unveil smart glasses at WWDC and ship them by the end of 2027, focusing heavily on integration of third-party iPhone apps with Siri AI",
    "links": [
     "https://www.bloomberg.com/news/newsletters/2026-11-15/apple-siri-ai-app-integrations-power-smart-glasses-iphone-duo-2-face-id-plan?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc5NDc1NDk0MiwiZXhwIjoxNzk1MzU5NzQyLCJhcnRpY2xlSWQiOiJUT0pUTzFLSVVQU0IwMCIsImJjb25uZWN0SWQiOiJDNEVEQ0FFMUZBMDU0MEJFQTI0QTlGMjExQzFFOTA4MCJ9.JxizrLMB_4yO_RhcaLRgamHBB02Qjf92voFxp6xtjaI"
@@ -49,13 +49,13 @@
    "via": "Techmeme"
   },
   {
-   "title": "All AI-generated code should be Open Source",
-   "url": "https://jakub.jankiewicz.org/blog/ai-code-open-source/",
+   "title": "Understanding Positional Embeddings in Modern LLMs",
+   "url": "https://magazine.sebastianraschka.com/p/understanding-positional-embeddings",
    "source": "Hacker News",
-   "published_at": "2026-11-15T14:46:58Z",
-   "text": "1062 points and 579 comments on Hacker News.",
-   "points": 1062,
-   "discussion": "https://news.ycombinator.com/item?id=50507303"
+   "published_at": "2026-11-15T12:14:06Z",
+   "text": "198 points and 26 comments on Hacker News.",
+   "points": 198,
+   "discussion": "https://news.ycombinator.com/item?id=50506376"
   },
   {
    "title": "Anthropic is endorsing SB 53",
@@ -73,13 +73,13 @@
    "via": "Techmeme"
   },
   {
-   "title": "Understanding Positional Embeddings in Modern LLMs",
-   "url": "https://magazine.sebastianraschka.com/p/understanding-positional-embeddings",
+   "title": "The Claude Delusion",
+   "url": "https://www.netmeister.org/blog/claude-delusion.html",
    "source": "Hacker News",
-   "published_at": "2026-11-15T12:14:06Z",
-   "text": "195 points and 26 comments on Hacker News.",
-   "points": 195,
-   "discussion": "https://news.ycombinator.com/item?id=50506376"
+   "published_at": "2026-11-14T13:36:17Z",
+   "text": "151 points and 199 comments on Hacker News.",
+   "points": 151,
+   "discussion": "https://news.ycombinator.com/item?id=50496921"
   },
   {
    "title": "Sources: Howard Lutnick is expected to join Trump on Air Force One to China this week, after clashi…",
@@ -90,13 +90,13 @@
    "via": "Techmeme"
   },
   {
-   "title": "The Claude Delusion",
-   "url": "https://www.netmeister.org/blog/claude-delusion.html",
+   "title": "Claude Code and Codex reverse engineered my 1994 Jeep's ECU over a $3 Arduino [video]",
+   "url": "https://www.youtube.com/watch?v=WPj3aQ-xxpI",
    "source": "Hacker News",
-   "published_at": "2026-11-14T13:36:17Z",
-   "text": "151 points and 199 comments on Hacker News.",
-   "points": 151,
-   "discussion": "https://news.ycombinator.com/item?id=50496921"
+   "published_at": "2026-11-12T05:29:24Z",
+   "text": "330 points and 161 comments on Hacker News.",
+   "points": 330,
+   "discussion": "https://news.ycombinator.com/item?id=50463399"
   },
   {
    "title": "Understanding and addressing AI harms",
@@ -122,11 +122,11 @@
    "via": "Techmeme"
   },
   {
-   "title": "Nebuly, whose tech helps enterprises measure the business value of AI agents by analyzing their imp…",
-   "url": "https://tech.eu/2026/11/12/nebuly-raises-21m-series-a-to-turn-ai-investments-into-measurable-results/",
-   "source": "Tamara Djurickovic / Tech.eu",
-   "published_at": "2026-11-15T06:41:00Z",
-   "text": "Nebuly, whose tech helps enterprises measure the business value of AI agents by analyzing their impact on productivity and revenue, raised a $21M Series A",
+   "title": "Inside the first AI Music Awards in Los Angeles, featuring AI announcers, lip-syncing, and human st…",
+   "url": "https://variety.com/2026/music/features/inside-first-ai-music-awards-sonic-intelligence-academy-1236947847/",
+   "source": "Corbin Bolies / Variety",
+   "published_at": "2026-11-15T12:04:21Z",
+   "text": "Inside the first AI Music Awards in Los Angeles, featuring AI announcers, lip-syncing, and human stand-ins, as the ceremony was mired in technical issues. I knew things were a little off when the first thing I heard on my walk to the AI Music Awards was “the winner...” followed by the sweet voice of Kelly Clarkson.",
    "via": "Techmeme"
   }
  ],
