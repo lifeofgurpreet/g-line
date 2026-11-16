@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-16T15:29:50Z",
+ "generated_at": "2026-11-16T16:02:26Z",
  "items": [
   {
    "title": "Sources: Jensen Huang has discussed a comeback as Nvidia's CEO with confidants, as allies form a “w…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-16T12:38:14Z",
    "text": "I think contrary to many of our expectations, we have not seen a Fable class open model more than 8 months after Fable/Mythos was first made public.",
    "author_name": "Ethan Mollick",
-   "likes": 515,
+   "likes": 594,
    "story": "Alibaba releases Qwen4-Max, its new flagship 2.4T-parameter MoE model with a 1M-token context window, saying it beats Qwen3.8-Max with up to 49% fewer tokens"
   },
   {
@@ -40,8 +40,8 @@
    "url": "https://steveblank.com/2026/11/15/whats-next-for-nvidia/",
    "source": "Hacker News",
    "published_at": "2026-11-15T23:55:55Z",
-   "text": "369 points and 468 comments on Hacker News.",
-   "points": 369,
+   "text": "379 points and 487 comments on Hacker News.",
+   "points": 379,
    "discussion": "https://news.ycombinator.com/item?id=50512235"
   },
   {
@@ -91,19 +91,19 @@
    "via": "Techmeme"
   },
   {
-   "title": "Google's TIG reports the first observed instance of attackers using an autonomous AI framework with…",
-   "url": "https://siliconangle.com/2026/11/16/google-says-an-ai-framework-turned-security-patches-into-exploits-with-no-human-in-the-loop/",
-   "source": "Duncan Riley / SiliconANGLE",
-   "published_at": "2026-11-16T14:40:45Z",
-   "text": "Google's TIG reports the first observed instance of attackers using an autonomous AI framework with no human in the loop to turn security patches into exploits. A new report out today from Google LLC's Google Threat Intelligence Group finds that for the first time, attackers have used …",
-   "via": "Techmeme"
-  },
-  {
    "title": "Sources: the Trump administration plans to name Nvidia, Amazon, Microsoft, OpenAI, and Anthropic am…",
    "url": "https://www.wsj.com/tech/ai/trump-administration-to-name-nvidia-among-ai-national-champions-c9284344?st=e6my7o&reflink=desktopwebshare_permalink",
    "source": "Wall Street Journal",
    "published_at": "2026-11-16T04:41:38Z",
    "text": "Sources: the Trump administration plans to name Nvidia, Amazon, Microsoft, OpenAI, and Anthropic among 24+ AI “national champions” to help win business overseas. The new program is part of an effort to help U.S. AI companies compete for business overseas",
+   "via": "Techmeme"
+  },
+  {
+   "title": "Google's TIG reports the first observed instance of attackers using an autonomous AI framework with…",
+   "url": "https://siliconangle.com/2026/11/16/google-says-an-ai-framework-turned-security-patches-into-exploits-with-no-human-in-the-loop/",
+   "source": "Duncan Riley / SiliconANGLE",
+   "published_at": "2026-11-16T14:40:45Z",
+   "text": "Google's TIG reports the first observed instance of attackers using an autonomous AI framework with no human in the loop to turn security patches into exploits. A new report out today from Google LLC's Google Threat Intelligence Group finds that for the first time, attackers have used …",
    "via": "Techmeme"
   },
   {
