@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-16T08:01:14Z",
+ "generated_at": "2026-11-16T08:33:17Z",
  "items": [
   {
    "title": "Sources: Jensen Huang has discussed a comeback as Nvidia CEO with confidants, as allies form a “war…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-15T15:03:07Z",
    "text": "NEW Power On: Apple’s next big product — smart glasses planned next year — will offer Siri AI app integrations as its flagship feature. The idea: Book an Uber, reserve a table or order a coffee from your Apple Glasses — with apps running on paired iPhone.",
    "author_name": "Mark Gurman",
-   "likes": 972,
+   "likes": 975,
    "story": "Sources: Apple plans to unveil smart glasses at WWDC and ship them by the end of 2027, focusing heavily on integration of third-party iPhone apps with Siri AI",
    "links": [
     "https://www.bloomberg.com/news/newsletters/2026-11-15/apple-siri-ai-app-integrations-power-smart-glasses-iphone-duo-2-face-id-plan?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc5NDc1NDk0MiwiZXhwIjoxNzk1MzU5NzQyLCJhcnRpY2xlSWQiOiJUT0pUTzFLSVVQU0IwMCIsImJjb25uZWN0SWQiOiJDNEVEQ0FFMUZBMDU0MEJFQTI0QTlGMjExQzFFOTA4MCJ9.JxizrLMB_4yO_RhcaLRgamHBB02Qjf92voFxp6xtjaI"
@@ -43,8 +43,8 @@
    "url": "https://steveblank.com/2026/11/15/whats-next-for-nvidia/",
    "source": "Hacker News",
    "published_at": "2026-11-15T23:55:55Z",
-   "text": "213 points and 280 comments on Hacker News.",
-   "points": 213,
+   "text": "226 points and 293 comments on Hacker News.",
+   "points": 226,
    "discussion": "https://news.ycombinator.com/item?id=50512235"
   },
   {
@@ -80,15 +80,6 @@
    "via": "Techmeme"
   },
   {
-   "title": "Claude Code and Codex reverse engineered my 1994 Jeep's ECU over a $3 Arduino [video]",
-   "url": "https://www.youtube.com/watch?v=WPj3aQ-xxpI",
-   "source": "Hacker News",
-   "published_at": "2026-11-12T05:29:24Z",
-   "text": "419 points and 197 comments on Hacker News.",
-   "points": 419,
-   "discussion": "https://news.ycombinator.com/item?id=50463399"
-  },
-  {
    "title": "Understanding and addressing AI harms",
    "url": "https://www.anthropic.com/news/our-approach-to-understanding-and-addressing-ai-harms",
    "source": "Anthropic",
@@ -117,6 +108,14 @@
    "source": "Wall Street Journal",
    "published_at": "2026-11-16T04:41:38Z",
    "text": "Sources: the Trump admin plans to name Nvidia, Amazon, Microsoft, OpenAI, and Anthropic among 24+ AI “national champions” to help them win overseas business. The new program is part of an effort to help U.S. AI companies compete for business overseas",
+   "via": "Techmeme"
+  },
+  {
+   "title": "Delhi-based Bharat Semi, which is developing programmable image sensors combining capture, processi…",
+   "url": "https://techcrunch.com/2026/11/15/indian-chip-startup-bharat-semi-lands-24m-seed-round-as-it-eyes-global-ai-sensor-market/",
+   "source": "Jagmeet Singh / TechCrunch",
+   "published_at": "2026-11-16T08:05:53Z",
+   "text": "Delhi-based Bharat Semi, which is developing programmable image sensors combining capture, processing, and AI capabilities on a single chip, raised a $24M seed. Bharat Semi, an Indian semiconductor startup, has raised $24 million in seed funding to develop AI-enabled image sensors …",
    "via": "Techmeme"
   },
   {
