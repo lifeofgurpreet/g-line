@@ -1,13 +1,13 @@
 {
  "schema": 1,
- "generated_at": "2026-11-17T19:13:18Z",
+ "generated_at": "2026-11-17T19:45:38Z",
  "items": [
   {
-   "title": "Docs: Nvidia stopped reporting Singapore unit revenue in 2025 as it accounted for nearly 50% of glo…",
-   "url": "https://www.ft.com/content/dbde7a30-548c-4f9d-a4be-7898a0c24dcf",
-   "source": "Financial Times",
-   "published_at": "2026-11-17T17:31:03Z",
-   "text": "Docs: Nvidia stopped reporting Singapore unit revenue in 2025 as it accounted for nearly 50% of global revenue; the unit's revenue rose 72% YoY to $104B in 2025. US chipmaker changed its reporting methods as revenues booked through the city-state surged 70 per cent",
+   "title": "Sources: Nvidia warned customers that the proposed Remote Access Security Act could expose them to…",
+   "url": "https://www.cnbc.com/2026/11/17/nvidia-china-cloud-ai-chip-access.html",
+   "source": "Kai Nicol-Schwarz / CNBC",
+   "published_at": "2026-11-17T10:32:48Z",
+   "text": "Sources: Nvidia warned customers that the proposed Remote Access Security Act could expose them to US legal action if Chinese companies remotely access AI chips. Nvidia warned its customers that new legislation on Chinese companies remotely accessing its artificial-intelligence chips …",
    "via": "Techmeme"
   },
   {
@@ -17,7 +17,7 @@
    "published_at": "2026-11-17T17:54:03Z",
    "text": "Some of you have been asking very politely. Some of you have just been asking. GPT-6.2 Astra and Sol are now available. Super efficient and built to perform where it counts—the real world.",
    "author_name": "OpenAI",
-   "likes": 18090,
+   "likes": 20484,
    "story": "OpenAI debuts GPT-6.2 Astra and Sol in ChatGPT Work, Codex, and API, saying Astra sets records on work and science evals at under a third of GPT-6 Astra's cost",
    "links": [
     "https://openai.com/index/introducing-gpt-6-2-astra-sol"
@@ -37,7 +37,7 @@
    "published_at": "2026-11-17T18:26:21Z",
    "text": "IDEA: Instead of coming back to Nvidia directly, Jensen should try to route himself through a holding company in Malaysia or Singapore",
    "author_name": "Casey Newton",
-   "likes": 316,
+   "likes": 496,
    "story": "Jensen Huang breaks his silence, saying he “would be honored” to return if the board decides it is in the “best interest” of shareholders, staff, and the US"
   },
   {
@@ -47,7 +47,7 @@
    "published_at": "2026-11-17T12:06:19Z",
    "text": "Thrilled to announce $5B in funding for @IsomorphicLabs to accelerate our mission to Solve All Disease. We continue to make rapid progress reimagining drug design from first principles with AI to radically cut the time & cost to find new medicines. Gradually, then all at once...",
    "author_name": "Demis Hassabis",
-   "likes": 9583,
+   "likes": 9805,
    "story": "Alphabet's Isomorphic Labs raised a $5B Series C led by Sequoia and Greenoaks, after raising $2.1B in May and $600M in March 2025, to accelerate clinical trials"
   },
   {
@@ -63,8 +63,8 @@
    "url": "https://runta.com/blog/introducing-frontierharness-eval-v1-1/",
    "source": "Hacker News",
    "published_at": "2026-11-17T14:53:43Z",
-   "text": "241 points and 91 comments on Hacker News.",
-   "points": 241,
+   "text": "261 points and 93 comments on Hacker News.",
+   "points": 261,
    "discussion": "https://news.ycombinator.com/item?id=50532191"
   },
   {
@@ -74,7 +74,7 @@
    "published_at": "2026-11-17T16:11:02Z",
    "text": "false flag to promote a war w/ iran for israel? regular incompetence? ai integration failures? legitimate cyber attacks? everything is so broken i don't even know what it is anymore. we also have no confidence in the ppl who are supposed to investigate this stuff",
    "author_name": "hasanabi",
-   "likes": 11008,
+   "likes": 11919,
    "story": "Sources: NSA Net, the highly classified network that the NSA uses for its internal communications, is down; at this point, there is no evidence of a cyberattack"
   },
   {
@@ -92,11 +92,11 @@
    "text": "Datasette Lite is my port of the Datasette Python application to run directly in the browser using WebAssembly and Pyodide . I've released a complete rewrite of Datasette Lite using service workers, and it's now almost indistinguishable from the real server-side application. You can now do all of the following, using a carefully crafted URL to lite.datasette.io : Load client-side Datasette to browse any SQLite database, JSON file, CSV file or SQL script Select a released version of Datasette to load from PyPI Load a specific commit, tag, or branch name from the Datasette GitHub repository Pic…"
   },
   {
-   "title": "Sources: Nvidia warned customers that the proposed Remote Access Security Act could expose them to…",
-   "url": "https://www.cnbc.com/2026/11/17/nvidia-china-cloud-ai-chip-access.html",
-   "source": "Kai Nicol-Schwarz / CNBC",
-   "published_at": "2026-11-17T10:32:48Z",
-   "text": "Sources: Nvidia warned customers that the proposed Remote Access Security Act could expose them to US legal action if Chinese companies remotely access AI chips. Nvidia warned its customers that new legislation on Chinese companies remotely accessing its artificial-intelligence chips …",
+   "title": "Vals: in simulated scenarios, AI models from Anthropic, Google, xAI, DeepSeek, and OpenAI identifie…",
+   "url": "https://www.bloomberg.com/news/articles/2026-11-17/top-ai-models-regularly-identify-civilians-as-military-targets-in-tests",
+   "source": "Katrina Manson / Bloomberg",
+   "published_at": "2026-11-17T17:11:21Z",
+   "text": "Vals: in simulated scenarios, AI models from Anthropic, Google, xAI, DeepSeek, and OpenAI identified civilians, ambulances, and a school as military targets. Advanced artificial intelligence models in simulated scenarios regularly misidentified civilians, ambulances …",
    "via": "Techmeme"
   },
   {
@@ -106,32 +106,34 @@
    "published_at": "2026-11-16T22:58:03Z",
    "text": "In other words: Apple starts marketing their own AI agent two years in advance.",
    "author_name": "Mark Gurman",
-   "likes": 4217,
+   "likes": 4258,
    "story": "macOS 27.3 beta warns users against giving AI apps full access, nudging users to “Choose Apps” for an AI app to control instead, brought on by AI's popularity"
+  },
+  {
+   "title": "Nvidia stopped disclosing Singapore sales as revenues hit $104B",
+   "url": "https://www.ft.com/content/dbde7a30-548c-4f9d-a4be-7898a0c24dcf",
+   "source": "Hacker News",
+   "published_at": "2026-11-17T17:12:06Z",
+   "text": "105 points and 54 comments on Hacker News.",
+   "points": 105,
+   "discussion": "https://news.ycombinator.com/item?id=50534631"
+  },
+  {
+   "title": "Sources: Anthropic is guiding prospective IPO investors that it expects to price its shares at or a…",
+   "url": "https://www.bloomberg.com/news/articles/2026-11-17/anthropic-is-said-to-guide-ipo-price-to-top-of-range-or-above",
+   "source": "Bloomberg",
+   "published_at": "2026-11-17T14:41:27Z",
+   "text": "Sources: Anthropic is guiding prospective IPO investors that it expects to price its shares at or above the high end of its $70 to $78 marketed range. Anthropic PBC is guiding prospective investors in its initial public offering it expects to price the shares at the high end of the price range or above …",
+   "via": "Techmeme"
   },
   {
    "title": "How the Claude Code team thinks about verification",
    "url": "https://claude.dev/blog/how-the-claude-code-team-thinks-about-verification/",
    "source": "Hacker News",
    "published_at": "2026-11-17T10:20:40Z",
-   "text": "193 points and 158 comments on Hacker News.",
-   "points": 193,
+   "text": "201 points and 158 comments on Hacker News.",
+   "points": 201,
    "discussion": "https://news.ycombinator.com/item?id=50529612"
-  },
-  {
-   "title": "Vals: in simulated scenarios, AI models from Anthropic, Google, xAI, DeepSeek, and OpenAI identifie…",
-   "url": "https://www.bloomberg.com/news/articles/2026-11-17/top-ai-models-regularly-identify-civilians-as-military-targets-in-tests",
-   "source": "Katrina Manson / Bloomberg",
-   "published_at": "2026-11-17T17:11:21Z",
-   "text": "Vals: in simulated scenarios, AI models from Anthropic, Google, xAI, DeepSeek, and OpenAI identified civilians, ambulances, and a school as military targets. Advanced artificial intelligence models in simulated scenarios regularly misidentified civilians, ambulances …",
-   "via": "Techmeme"
-  },
-  {
-   "title": "Anthropic commits $10 million to Canadian AI research",
-   "url": "https://www.anthropic.com/news/canadian-ai-research",
-   "source": "Anthropic",
-   "published_at": "2026-11-16T20:50:34Z",
-   "text": "Anthropic is committing $10M to Canadian research institutions to fund the next generation of AI research."
   }
  ],
  "sources": "curated, Techmeme, X (found via Techmeme, Reddit, the Internet Archive), Claude Code releases, Anthropic, Hacker News, Simon Willison"
