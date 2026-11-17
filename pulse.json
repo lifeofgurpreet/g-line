@@ -1,27 +1,24 @@
 {
  "schema": 1,
- "generated_at": "2026-11-17T19:45:38Z",
+ "generated_at": "2026-11-17T20:18:12Z",
  "items": [
   {
-   "title": "Sources: Nvidia warned customers that the proposed Remote Access Security Act could expose them to…",
-   "url": "https://www.cnbc.com/2026/11/17/nvidia-china-cloud-ai-chip-access.html",
-   "source": "Kai Nicol-Schwarz / CNBC",
-   "published_at": "2026-11-17T10:32:48Z",
-   "text": "Sources: Nvidia warned customers that the proposed Remote Access Security Act could expose them to US legal action if Chinese companies remotely access AI chips. Nvidia warned its customers that new legislation on Chinese companies remotely accessing its artificial-intelligence chips …",
+   "title": "OpenAI debuts GPT-6.2 Astra and Sol in ChatGPT Work, Codex, and API, saying Astra sets records on w…",
+   "url": "https://openai.com/index/introducing-gpt-6-2-astra-sol/",
+   "source": "OpenAI",
+   "published_at": "2026-11-17T18:01:58Z",
+   "text": "OpenAI debuts GPT-6.2 Astra and Sol in ChatGPT Work, Codex, and API, saying Astra sets records on work and science evals at under a third of GPT-6 Astra's cost. , our new frontier model for your hardest projects, and — , our efficient, versatile model for everyday work.",
    "via": "Techmeme"
   },
   {
-   "title": "Some of you have been asking very politely. Some of you have just been asking. GPT-6.2 Astra and So…",
-   "url": "https://x.com/OpenAI/status/2122750124543926515",
-   "source": "𝕏 @OpenAI",
-   "published_at": "2026-11-17T17:54:03Z",
-   "text": "Some of you have been asking very politely. Some of you have just been asking. GPT-6.2 Astra and Sol are now available. Super efficient and built to perform where it counts—the real world.",
-   "author_name": "OpenAI",
-   "likes": 20484,
-   "story": "OpenAI debuts GPT-6.2 Astra and Sol in ChatGPT Work, Codex, and API, saying Astra sets records on work and science evals at under a third of GPT-6 Astra's cost",
-   "links": [
-    "https://openai.com/index/introducing-gpt-6-2-astra-sol"
-   ]
+   "title": "Imagine being a board member at Nvidia considering potential candidates for CEO, and trying to clai…",
+   "url": "https://x.com/paulg/status/2122745936279462274",
+   "source": "𝕏 @paulg",
+   "published_at": "2026-11-17T17:37:24Z",
+   "text": "Imagine being a board member at Nvidia considering potential candidates for CEO, and trying to claim with a straight face that one of the others would do a better job.",
+   "author_name": "Paul Graham",
+   "likes": 6322,
+   "story": "Jensen Huang breaks his silence, saying he “would be honored” to return if the board decides it is in the “best interest” of shareholders, staff, and the US"
   },
   {
    "title": "Claude Code 2.1.326 released",
@@ -31,31 +28,21 @@
    "text": "Added support for turning on Code Mode while agent teams are enabled; if you already turned it on, sessions with teams on now start in Code Mode · Added a startup warning when an --allowedTools, --disallowedTools or --tools value has an entry that doesn't look like a complete rule · Added a message explaining why MCP servers stop loading when an administrator adds managed-mcp.json during a session · Added a row to /status that says when your provider or an environment variable such as DISABLE_TELEMETRY turns features off"
   },
   {
-   "title": "IDEA: Instead of coming back to Nvidia directly, Jensen should try to route himself through a holdi…",
-   "url": "https://x.com/CaseyNewton/status/2122758254464016511",
-   "source": "𝕏 @CaseyNewton",
-   "published_at": "2026-11-17T18:26:21Z",
-   "text": "IDEA: Instead of coming back to Nvidia directly, Jensen should try to route himself through a holding company in Malaysia or Singapore",
-   "author_name": "Casey Newton",
-   "likes": 496,
-   "story": "Jensen Huang breaks his silence, saying he “would be honored” to return if the board decides it is in the “best interest” of shareholders, staff, and the US"
-  },
-  {
    "title": "Thrilled to announce $5B in funding for @IsomorphicLabs to accelerate our mission to Solve All Dise…",
    "url": "https://x.com/demishassabis/status/2122662616367853670",
    "source": "𝕏 @demishassabis",
    "published_at": "2026-11-17T12:06:19Z",
    "text": "Thrilled to announce $5B in funding for @IsomorphicLabs to accelerate our mission to Solve All Disease. We continue to make rapid progress reimagining drug design from first principles with AI to radically cut the time & cost to find new medicines. Gradually, then all at once...",
    "author_name": "Demis Hassabis",
-   "likes": 9805,
+   "likes": 10000,
    "story": "Alphabet's Isomorphic Labs raised a $5B Series C led by Sequoia and Greenoaks, after raising $2.1B in May and $600M in March 2025, to accelerate clinical trials"
   },
   {
-   "title": "Nvidia's board establishes a National Security and Export Control Oversight Committee to oversee na…",
-   "url": "https://nvidianews.nvidia.com/news/nvidia-board-of-directors-establishes-national-security-and-export-control-oversight-committee",
-   "source": "Nvidia Newsroom",
-   "published_at": "2026-11-17T10:14:36Z",
-   "text": "Nvidia's board establishes a National Security and Export Control Oversight Committee to oversee national security policies, export control compliance, and more. - Committee to provide oversight over NVIDIA's national security and global trade compliance programs",
+   "title": "Sources: Nvidia warned customers that the proposed Remote Access Security Act could expose them to…",
+   "url": "https://www.cnbc.com/2026/11/17/nvidia-china-cloud-ai-chip-access.html",
+   "source": "Kai Nicol-Schwarz / CNBC",
+   "published_at": "2026-11-17T10:32:48Z",
+   "text": "Sources: Nvidia warned customers that the proposed Remote Access Security Act could expose them to US legal action if Chinese companies remotely access AI chips. Nvidia warned its customers that new legislation on Chinese companies remotely accessing its artificial-intelligence chips …",
    "via": "Techmeme"
   },
   {
@@ -63,8 +50,8 @@
    "url": "https://runta.com/blog/introducing-frontierharness-eval-v1-1/",
    "source": "Hacker News",
    "published_at": "2026-11-17T14:53:43Z",
-   "text": "261 points and 93 comments on Hacker News.",
-   "points": 261,
+   "text": "270 points and 97 comments on Hacker News.",
+   "points": 270,
    "discussion": "https://news.ycombinator.com/item?id=50532191"
   },
   {
@@ -74,7 +61,7 @@
    "published_at": "2026-11-17T16:11:02Z",
    "text": "false flag to promote a war w/ iran for israel? regular incompetence? ai integration failures? legitimate cyber attacks? everything is so broken i don't even know what it is anymore. we also have no confidence in the ppl who are supposed to investigate this stuff",
    "author_name": "hasanabi",
-   "likes": 11919,
+   "likes": 12620,
    "story": "Sources: NSA Net, the highly classified network that the NSA uses for its internal communications, is down; at this point, there is no evidence of a cyberattack"
   },
   {
@@ -92,11 +79,11 @@
    "text": "Datasette Lite is my port of the Datasette Python application to run directly in the browser using WebAssembly and Pyodide . I've released a complete rewrite of Datasette Lite using service workers, and it's now almost indistinguishable from the real server-side application. You can now do all of the following, using a carefully crafted URL to lite.datasette.io : Load client-side Datasette to browse any SQLite database, JSON file, CSV file or SQL script Select a released version of Datasette to load from PyPI Load a specific commit, tag, or branch name from the Datasette GitHub repository Pic…"
   },
   {
-   "title": "Vals: in simulated scenarios, AI models from Anthropic, Google, xAI, DeepSeek, and OpenAI identifie…",
-   "url": "https://www.bloomberg.com/news/articles/2026-11-17/top-ai-models-regularly-identify-civilians-as-military-targets-in-tests",
-   "source": "Katrina Manson / Bloomberg",
-   "published_at": "2026-11-17T17:11:21Z",
-   "text": "Vals: in simulated scenarios, AI models from Anthropic, Google, xAI, DeepSeek, and OpenAI identified civilians, ambulances, and a school as military targets. Advanced artificial intelligence models in simulated scenarios regularly misidentified civilians, ambulances …",
+   "title": "Nvidia's board establishes a National Security and Export Control Oversight Committee to oversee na…",
+   "url": "https://nvidianews.nvidia.com/news/nvidia-board-of-directors-establishes-national-security-and-export-control-oversight-committee",
+   "source": "Nvidia Newsroom",
+   "published_at": "2026-11-17T10:14:36Z",
+   "text": "Nvidia's board establishes a National Security and Export Control Oversight Committee to oversee national security policies, export control compliance, and more. - Committee to provide oversight over NVIDIA's national security and global trade compliance programs",
    "via": "Techmeme"
   },
   {
@@ -106,7 +93,7 @@
    "published_at": "2026-11-16T22:58:03Z",
    "text": "In other words: Apple starts marketing their own AI agent two years in advance.",
    "author_name": "Mark Gurman",
-   "likes": 4258,
+   "likes": 4300,
    "story": "macOS 27.3 beta warns users against giving AI apps full access, nudging users to “Choose Apps” for an AI app to control instead, brought on by AI's popularity"
   },
   {
@@ -114,16 +101,16 @@
    "url": "https://www.ft.com/content/dbde7a30-548c-4f9d-a4be-7898a0c24dcf",
    "source": "Hacker News",
    "published_at": "2026-11-17T17:12:06Z",
-   "text": "105 points and 54 comments on Hacker News.",
-   "points": 105,
+   "text": "131 points and 69 comments on Hacker News.",
+   "points": 131,
    "discussion": "https://news.ycombinator.com/item?id=50534631"
   },
   {
-   "title": "Sources: Anthropic is guiding prospective IPO investors that it expects to price its shares at or a…",
-   "url": "https://www.bloomberg.com/news/articles/2026-11-17/anthropic-is-said-to-guide-ipo-price-to-top-of-range-or-above",
-   "source": "Bloomberg",
-   "published_at": "2026-11-17T14:41:27Z",
-   "text": "Sources: Anthropic is guiding prospective IPO investors that it expects to price its shares at or above the high end of its $70 to $78 marketed range. Anthropic PBC is guiding prospective investors in its initial public offering it expects to price the shares at the high end of the price range or above …",
+   "title": "Microsoft unveils six AI models spanning coding, cybersecurity, images, and voice, saying MAI Code…",
+   "url": "https://www.axios.com/2026/11/17/microsoft-ai-models-openai-anthropic-ignite",
+   "source": "Ina Fried / Axios",
+   "published_at": "2026-11-17T18:26:01Z",
+   "text": "Microsoft unveils six AI models spanning coding, cybersecurity, images, and voice, saying MAI Code 2 has 98% of GPT-6.1 Sol's performance at 40% of the price. Microsoft AI CEO Mustafa Suleyman tells Axios the software giant is making significant progress toward building …",
    "via": "Techmeme"
   },
   {
@@ -131,9 +118,16 @@
    "url": "https://claude.dev/blog/how-the-claude-code-team-thinks-about-verification/",
    "source": "Hacker News",
    "published_at": "2026-11-17T10:20:40Z",
-   "text": "201 points and 158 comments on Hacker News.",
-   "points": 201,
+   "text": "210 points and 163 comments on Hacker News.",
+   "points": 210,
    "discussion": "https://news.ycombinator.com/item?id=50529612"
+  },
+  {
+   "title": "Anthropic commits $10 million to Canadian AI research",
+   "url": "https://www.anthropic.com/news/canadian-ai-research",
+   "source": "Anthropic",
+   "published_at": "2026-11-16T20:50:34Z",
+   "text": "Anthropic is committing $10M to Canadian research institutions to fund the next generation of AI research."
   }
  ],
  "sources": "curated, Techmeme, X (found via Techmeme, Reddit, the Internet Archive), Claude Code releases, Anthropic, Hacker News, Simon Willison"
