@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-17T11:41:39Z",
+ "generated_at": "2026-11-17T12:13:33Z",
  "items": [
   {
    "title": "The US Commerce Department says it began probing Megaspeed in 2024 over possible export rule violat…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-16T18:31:00Z",
    "text": "“AI is here, just get used to it” and what you have to get used to is that everything works worse now than it did five years ago",
    "author_name": "Mike Drucker",
-   "likes": 31506,
+   "likes": 31700,
    "story": "Bank of America, Chase, Wells Fargo, and other US bank customers report online service issues; Chase blames a technical issue, not a cyber issue, for the delays"
   },
   {
@@ -34,42 +34,8 @@
    "published_at": "2026-11-16T21:16:20Z",
    "text": "California is suing OpenAI for endangering the public by knowingly building artificial intelligence models without safeguards. Good. We can’t allow a handful of Big Tech oligarchs to play God and endanger the future of humanity. Pause advanced AI development NOW.",
    "author_name": "Bernie Sanders",
-   "likes": 13245,
+   "likes": 13408,
    "story": "California's AG sues OpenAI over the Hugging Face attack, alleging it was one of 80+ incidents due to OpenAI testing its AI models without adequate safeguards"
-  },
-  {
-   "title": "Sources: Nvidia Developer Tech Director Nader Khalil wrote to board arguing that failing to reinsta…",
-   "url": "https://www.wsj.com/business/nvidia-board-warned-of-irreplaceable-talent-loss-in-employee-letter-b9783b1e?st=CMxakK&reflink=desktopwebshare_permalink",
-   "source": "Wall Street Journal",
-   "published_at": "2026-11-17T10:40:54Z",
-   "text": "Sources: Nvidia Developer Tech Director Nader Khalil wrote to board arguing that failing to reinstate Jensen Huang could cost Nvidia “irreplaceable talent”. The letter, also sent to Jensen Huang's roughly 60 direct reports, escalates an internal push to get him reinstated as CEO",
-   "via": "Techmeme"
-  },
-  {
-   "title": "Windows 11 is collecting data on which coding agents and developer tools you use",
-   "url": "https://xusheng.dev/posts/windows-coding-agent-telemetry/",
-   "source": "Hacker News",
-   "published_at": "2026-11-16T22:58:20Z",
-   "text": "629 points and 484 comments on Hacker News.",
-   "points": 629,
-   "discussion": "https://news.ycombinator.com/item?id=50524736"
-  },
-  {
-   "title": "We’re working with @ApolloResearch, @METR_Evals, @TransluceAI, and @GoodfireAI on embedded assessme…",
-   "url": "https://x.com/OpenAI/status/2122359930628063248",
-   "source": "𝕏 @OpenAI",
-   "published_at": "2026-11-16T16:03:33Z",
-   "text": "We’re working with @ApolloResearch, @METR_Evals, @TransluceAI, and @GoodfireAI on embedded assessments: giving outside experts deep access to our internal models and systems to investigate alignment and test our safeguards. These assessments build on our ongoing alignment and…",
-   "author_name": "OpenAI",
-   "likes": 3055,
-   "story": "OpenAI says it signed agreements with independent assessors Apollo Research, METR, Transluce, and Goodfire for its first phase of AI model embedded assessments"
-  },
-  {
-   "title": "Anthropic commits $10 million to Canadian AI research",
-   "url": "https://www.anthropic.com/news/canadian-ai-research",
-   "source": "Anthropic",
-   "published_at": "2026-11-16T20:50:34Z",
-   "text": "Anthropic is committing $10M to Canadian research institutions to fund the next generation of AI research."
   },
   {
    "title": "Nvidia's board establishes a National Security and Export Control Oversight Committee to oversee na…",
@@ -80,24 +46,48 @@
    "via": "Techmeme"
   },
   {
+   "title": "Windows 11 is collecting data on which coding agents and developer tools you use",
+   "url": "https://xusheng.dev/posts/windows-coding-agent-telemetry/",
+   "source": "Hacker News",
+   "published_at": "2026-11-16T22:58:20Z",
+   "text": "635 points and 494 comments on Hacker News.",
+   "points": 635,
+   "discussion": "https://news.ycombinator.com/item?id=50524736"
+  },
+  {
+   "title": "We’re working with @ApolloResearch, @METR_Evals, @TransluceAI, and @GoodfireAI on embedded assessme…",
+   "url": "https://x.com/OpenAI/status/2122359930628063248",
+   "source": "𝕏 @OpenAI",
+   "published_at": "2026-11-16T16:03:33Z",
+   "text": "We’re working with @ApolloResearch, @METR_Evals, @TransluceAI, and @GoodfireAI on embedded assessments: giving outside experts deep access to our internal models and systems to investigate alignment and test our safeguards. These assessments build on our ongoing alignment and…",
+   "author_name": "OpenAI",
+   "likes": 3063,
+   "story": "OpenAI says it signed agreements with independent assessors Apollo Research, METR, Transluce, and Goodfire for its first phase of AI model embedded assessments"
+  },
+  {
+   "title": "Anthropic commits $10 million to Canadian AI research",
+   "url": "https://www.anthropic.com/news/canadian-ai-research",
+   "source": "Anthropic",
+   "published_at": "2026-11-16T20:50:34Z",
+   "text": "Anthropic is committing $10M to Canadian research institutions to fund the next generation of AI research."
+  },
+  {
+   "title": "Sources: Jensen Huang's daughter Madison remains in a senior Nvidia role; before Jensen's exit, she…",
+   "url": "https://www.nytimes.com/2026/11/16/technology/nvidia-jensen-madison-huang.html?unlocked_article_code=1.RFE.d0Ui.v_uJvV3zdxPR&smid=nytcore-ios-share",
+   "source": "New York Times",
+   "published_at": "2026-11-17T03:20:49Z",
+   "text": "Sources: Jensen Huang's daughter Madison remains in a senior Nvidia role; before Jensen's exit, she was his de facto chief of staff with considerable authority. Installed as her father's de facto chief of staff, Jensen Huang's daughter alienated top executives.",
+   "via": "Techmeme"
+  },
+  {
    "title": "In other words: Apple starts marketing their own AI agent two years in advance.",
    "url": "https://x.com/markgurman/status/2122464242754552100",
    "source": "𝕏 @markgurman",
    "published_at": "2026-11-16T22:58:03Z",
    "text": "In other words: Apple starts marketing their own AI agent two years in advance.",
    "author_name": "Mark Gurman",
-   "likes": 3572,
+   "likes": 3640,
    "story": "macOS 27.3 beta warns users against giving AI apps full control, nudging users to “Choose Apps” for the app to control instead, brought on by AI's popularity"
-  },
-  {
-   "title": "Got off a call with the an MS team lead who was on the bridge for this incident on what exactly hap…",
-   "url": "https://x.com/GergelyOrosz/status/2122428797647769970",
-   "source": "𝕏 @GergelyOrosz",
-   "published_at": "2026-11-16T20:37:12Z",
-   "text": "Got off a call with the an MS team lead who was on the bridge for this incident on what exactly happened in the outage: 1. This was a \"latent bug\" - a commit going in ~4 months ago to a Windows build, that only activated much later. Super hard to spot 2. Zero AI, this code was…",
-   "author_name": "Gergely Orosz",
-   "likes": 2944,
-   "story": "Preliminary report: Microsoft blames a major Microsoft 365 and Exchange outage on a software defect introduced in a July 2026 update for network gateway servers"
   },
   {
    "title": "Source: Nvidia's board is not considering bringing Jensen Huang back as CEO, and it is focused on a…",
@@ -115,19 +105,27 @@
    "text": "Anthropic opens its fifth Asia-Pacific office in Singapore and signs an MOU with the government on AI safety, evaluation, and responsible adoption."
   },
   {
-   "title": "Sources: Jensen Huang's daughter Madison remains in a senior Nvidia role; before Jensen's exit, she…",
-   "url": "https://www.nytimes.com/2026/11/16/technology/nvidia-jensen-madison-huang.html?unlocked_article_code=1.RFE.d0Ui.v_uJvV3zdxPR&smid=nytcore-ios-share",
-   "source": "New York Times",
-   "published_at": "2026-11-17T03:20:49Z",
-   "text": "Sources: Jensen Huang's daughter Madison remains in a senior Nvidia role; before Jensen's exit, she was his de facto chief of staff with considerable authority. Installed as her father's de facto chief of staff, Jensen Huang's daughter alienated top executives.",
-   "via": "Techmeme"
-  },
-  {
    "title": "Nvidia unveils its Rubin HPC GPU with “more than 50,000” CUDA cores, up from 28,672 in the current…",
    "url": "https://www.tomshardware.com/pc-components/gpus/nvidia-announces-rubin-hpc-gpu-with-record-number-of-cuda-cores-at-supercomputing-2026-new-chip-accelerates-agentic-hpc-workloads-arrives-in-2028",
    "source": "Jeffrey Kampman / Tom's Har…",
    "published_at": "2026-11-17T06:21:21Z",
    "text": "Nvidia unveils its Rubin HPC GPU with “more than 50,000” CUDA cores, up from 28,672 in the current Rubin GPU, for agentic workflows and scientific simulations. Rubin HPC puts “over 50,000” CUDA cores on a chip, implies four-die layout — The Supercomputing 2026 conference is under way …",
+   "via": "Techmeme"
+  },
+  {
+   "title": "Oakland-based Numa, which builds an AI platform to manage car dealership customer service, raised a…",
+   "url": "https://fortune.com/2026/11/16/ai-startup-numa-45-million-car-dealerships-paperwork/",
+   "source": "Camila Grigera Naón / Fortu…",
+   "published_at": "2026-11-17T09:20:51Z",
+   "text": "Oakland-based Numa, which builds an AI platform to manage car dealership customer service, raised a $45M Series C, a source says at a $500M post-money valuation. Artificial intelligence promises to untangle the messy workflows that have long plagued legacy industries.",
+   "via": "Techmeme"
+  },
+  {
+   "title": "OpenAI partners with NATO's NCIA to detect bugs, probe suspicious activity, and deploy fixes under…",
+   "url": "https://www.wsj.com/tech/cybersecurity/openai-partners-with-nato-on-cyber-defenses-ea4df258?st=Konk45&reflink=desktopwebshare_permalink",
+   "source": "Mauro Orru / Wall Street Jo…",
+   "published_at": "2026-11-17T11:55:50Z",
+   "text": "OpenAI partners with NATO's NCIA to detect bugs, probe suspicious activity, and deploy fixes under its Daybreak program; NATO uses up to 300B tokens per month. Under the company's Daybreak program government agencies and enterprise customers can access advanced models for cybersecurity work",
    "via": "Techmeme"
   }
  ],
