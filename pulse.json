@@ -1,13 +1,13 @@
 {
  "schema": 1,
- "generated_at": "2026-11-17T16:33:11Z",
+ "generated_at": "2026-11-17T17:05:09Z",
  "items": [
   {
-   "title": "Jensen Huang breaks silence, saying he is willing to return as Nvidia CEO if the board decides it i…",
-   "url": "https://www.wsj.com/tech/jensen-huang-statement-nvidia-ceo-9dedca36?st=1Tm7UU&reflink=article_copyURL_share",
-   "source": "Robbie Whelan / Wall Street…",
-   "published_at": "2026-11-17T16:05:56Z",
-   "text": "Jensen Huang breaks silence, saying he is willing to return as Nvidia CEO if the board decides it is in the best interest of shareholders, employees, and the US. Outpouring of support from friends and colleagues has been overwhelming, Huang says — Jensen Huang is willing to return …",
+   "title": "Nvidia's board establishes a National Security and Export Control Oversight Committee to oversee na…",
+   "url": "https://nvidianews.nvidia.com/news/nvidia-board-of-directors-establishes-national-security-and-export-control-oversight-committee",
+   "source": "Nvidia Newsroom",
+   "published_at": "2026-11-17T10:14:36Z",
+   "text": "Nvidia's board establishes a National Security and Export Control Oversight Committee to oversee national security policies, export control compliance, and more. - Committee to provide oversight over NVIDIA's national security and global trade compliance programs",
    "via": "Techmeme"
   },
   {
@@ -17,7 +17,7 @@
    "published_at": "2026-11-17T12:06:19Z",
    "text": "Thrilled to announce $5B in funding for @IsomorphicLabs to accelerate our mission to Solve All Disease. We continue to make rapid progress reimagining drug design from first principles with AI to radically cut the time & cost to find new medicines. Gradually, then all at once...",
    "author_name": "Demis Hassabis",
-   "likes": 7909,
+   "likes": 8299,
    "story": "Alphabet's Isomorphic Labs raised a $5B Series C led by Sequoia and Greenoaks, after raising $2.1B in May and $600M in March 2025, to accelerate clinical trials"
   },
   {
@@ -34,42 +34,8 @@
    "published_at": "2026-11-16T21:16:20Z",
    "text": "California is suing OpenAI for endangering the public by knowingly building artificial intelligence models without safeguards. Good. We can’t allow a handful of Big Tech oligarchs to play God and endanger the future of humanity. Pause advanced AI development NOW.",
    "author_name": "Bernie Sanders",
-   "likes": 14438,
+   "likes": 14579,
    "story": "California's AG sues OpenAI over the Hugging Face attack, alleging it was one of 80+ incidents due to OpenAI testing its AI models without adequate safeguards"
-  },
-  {
-   "title": "Nvidia's board establishes a National Security and Export Control Oversight Committee to oversee na…",
-   "url": "https://nvidianews.nvidia.com/news/nvidia-board-of-directors-establishes-national-security-and-export-control-oversight-committee",
-   "source": "Nvidia Newsroom",
-   "published_at": "2026-11-17T10:14:36Z",
-   "text": "Nvidia's board establishes a National Security and Export Control Oversight Committee to oversee national security policies, export control compliance, and more. - Committee to provide oversight over NVIDIA's national security and global trade compliance programs",
-   "via": "Techmeme"
-  },
-  {
-   "title": "Baidu, Xiaomi CEOs warn of growing gap between AI hype and returns",
-   "url": "https://www.scmp.com/tech/big-tech/article/3374774/baidu-xiaomi-ceos-warn-growing-gap-between-ai-hype-and-returns",
-   "source": "Hacker News",
-   "published_at": "2026-11-17T14:19:59Z",
-   "text": "134 points and 155 comments on Hacker News.",
-   "points": 134,
-   "discussion": "https://news.ycombinator.com/item?id=50531751"
-  },
-  {
-   "title": "In other words: Apple starts marketing their own AI agent two years in advance.",
-   "url": "https://x.com/markgurman/status/2122464242754552100",
-   "source": "𝕏 @markgurman",
-   "published_at": "2026-11-16T22:58:03Z",
-   "text": "In other words: Apple starts marketing their own AI agent two years in advance.",
-   "author_name": "Mark Gurman",
-   "likes": 4052,
-   "story": "macOS 27.3 beta warns users against giving AI apps full access, nudging users to “Choose Apps” for an AI app to control instead, brought on by AI's popularity"
-  },
-  {
-   "title": "Anthropic commits $10 million to Canadian AI research",
-   "url": "https://www.anthropic.com/news/canadian-ai-research",
-   "source": "Anthropic",
-   "published_at": "2026-11-16T20:50:34Z",
-   "text": "Anthropic is committing $10M to Canadian research institutions to fund the next generation of AI research."
   },
   {
    "title": "The US Commerce Department says it began probing Megaspeed in 2024 over possible export rule violat…",
@@ -80,43 +46,37 @@
    "via": "Techmeme"
   },
   {
-   "title": "A senior NVIDIA employee has written a letter to the board of directors warning that 'irreplaceable…",
-   "url": "https://x.com/AndrewCurran_/status/2122546684144263678",
-   "source": "𝕏 @AndrewCurran_",
-   "published_at": "2026-11-17T04:25:39Z",
-   "text": "A senior NVIDIA employee has written a letter to the board of directors warning that 'irreplaceable talent at NVIDIA is now contemplating departing' if Jensen is not reinstated as CEO. Employees are also discussing holding a demonstration in support of Jensen sometime this week.",
-   "author_name": "Andrew Curran",
-   "likes": 888,
-   "story": "Sources: Jensen Huang's daughter Madison remains in a senior Nvidia role; before Jensen's exit, she was his de facto chief of staff with considerable authority"
-  },
-  {
-   "title": "How the Claude Code team thinks about verification",
-   "url": "https://claude.dev/blog/how-the-claude-code-team-thinks-about-verification/",
+   "title": "Baidu, Xiaomi CEOs warn of growing gap between AI hype and returns",
+   "url": "https://www.scmp.com/tech/big-tech/article/3374774/baidu-xiaomi-ceos-warn-growing-gap-between-ai-hype-and-returns",
    "source": "Hacker News",
-   "published_at": "2026-11-17T10:20:40Z",
-   "text": "133 points and 134 comments on Hacker News.",
-   "points": 133,
-   "discussion": "https://news.ycombinator.com/item?id=50529612"
+   "published_at": "2026-11-17T14:19:59Z",
+   "text": "149 points and 181 comments on Hacker News.",
+   "points": 149,
+   "discussion": "https://news.ycombinator.com/item?id=50531751"
   },
   {
-   "title": "With Carbon's help, I ran Gemma directly in an office printer 😅🖨️ 🤏Carbon compiled a small transfor…",
-   "url": "https://x.com/osanseviero/status/2122646098418491739",
-   "source": "𝕏 @osanseviero",
-   "published_at": "2026-11-17T11:00:41Z",
-   "text": "With Carbon's help, I ran Gemma directly in an office printer 😅🖨️ 🤏Carbon compiled a small transformer engine + quantized Gemma 3 270m into a single PostScript job ⚡️ 100% in the printer: 14MB peak RAM and blazing 60s per token 🧠Smart layers juggling to avoid OOMing htt",
-   "author_name": "Omar Sanseviero",
-   "likes": 577,
-   "story": "Gemma on a printer"
+   "title": "In other words: Apple starts marketing their own AI agent two years in advance.",
+   "url": "https://x.com/markgurman/status/2122464242754552100",
+   "source": "𝕏 @markgurman",
+   "published_at": "2026-11-16T22:58:03Z",
+   "text": "In other words: Apple starts marketing their own AI agent two years in advance.",
+   "author_name": "Mark Gurman",
+   "likes": 4092,
+   "story": "macOS 27.3 beta warns users against giving AI apps full access, nudging users to “Choose Apps” for an AI app to control instead, brought on by AI's popularity"
   },
   {
-   "title": "Dario Amodei on open source models: “If the path continues, I think we could get to a very dangerou…",
-   "url": "https://x.com/vikktorrrre/status/2122353364306374986",
-   "source": "𝕏 @vikktorrrre",
-   "published_at": "2026-11-16T15:37:28Z",
-   "text": "Dario Amodei on open source models: “If the path continues, I think we could get to a very dangerous place.” “When you control a model and you're deploying it, you have the ability to monitor its usage.” “You can revoke a user's access. You can change what the model is willing…",
-   "author_name": "Veee",
-   "likes": 3678,
-   "story": "Are those that advocate against open weight models public enemy #1 ?"
+   "title": "Anthropic commits $10 million to Canadian AI research",
+   "url": "https://www.anthropic.com/news/canadian-ai-research",
+   "source": "Anthropic",
+   "published_at": "2026-11-16T20:50:34Z",
+   "text": "Anthropic is committing $10M to Canadian research institutions to fund the next generation of AI research."
+  },
+  {
+   "title": "Running the full server-side Datasette Python app in the browser with service workers and Pyodide",
+   "url": "https://simonwillison.net/2026/Nov/17/datasette-lite/",
+   "source": "Simon Willison's weblog",
+   "published_at": "2026-11-17T16:48:33Z",
+   "text": "Datasette Lite is my port of the Datasette Python application to run directly in the browser using WebAssembly and Pyodide . I've released a complete rewrite of Datasette Lite using service workers, and it's now almost indistinguishable from the real server-side application. You can now do all of the following, using a carefully crafted URL to lite.datasette.io : Load client-side Datasette to browse any SQLite database, JSON file, CSV file or SQL script Select a released version of Datasette to load from PyPI Load a specific commit, tag, or branch name from the Datasette GitHub repository Pic…"
   },
   {
    "title": "Sources: Nvidia warned customers that the proposed Remote Access Security Act could expose them to…",
@@ -127,11 +87,50 @@
    "via": "Techmeme"
   },
   {
-   "title": "Singapore office and government MOU | Anthropic",
-   "url": "https://www.anthropic.com/news/singapore-office-opening",
-   "source": "Anthropic",
-   "published_at": "2026-11-16T20:50:09Z",
-   "text": "Anthropic opens its fifth Asia-Pacific office in Singapore and signs an MOU with the government on AI safety, evaluation, and responsible adoption."
+   "title": "A senior NVIDIA employee has written a letter to the board of directors warning that 'irreplaceable…",
+   "url": "https://x.com/AndrewCurran_/status/2122546684144263678",
+   "source": "𝕏 @AndrewCurran_",
+   "published_at": "2026-11-17T04:25:39Z",
+   "text": "A senior NVIDIA employee has written a letter to the board of directors warning that 'irreplaceable talent at NVIDIA is now contemplating departing' if Jensen is not reinstated as CEO. Employees are also discussing holding a demonstration in support of Jensen sometime this week.",
+   "author_name": "Andrew Curran",
+   "likes": 900,
+   "story": "Jensen Huang breaks his silence, saying he “would be honored” to return if the board decides it is in the “best interest” of shareholders, staff, and the US"
+  },
+  {
+   "title": "What is the best harness for each model?",
+   "url": "https://runta.com/blog/introducing-frontierharness-eval-v1-1/",
+   "source": "Hacker News",
+   "published_at": "2026-11-17T14:53:43Z",
+   "text": "111 points and 47 comments on Hacker News.",
+   "points": 111,
+   "discussion": "https://news.ycombinator.com/item?id=50532191"
+  },
+  {
+   "title": "With Carbon's help, I ran Gemma directly in an office printer 😅🖨️ 🤏Carbon compiled a small transfor…",
+   "url": "https://x.com/osanseviero/status/2122646098418491739",
+   "source": "𝕏 @osanseviero",
+   "published_at": "2026-11-17T11:00:41Z",
+   "text": "With Carbon's help, I ran Gemma directly in an office printer 😅🖨️ 🤏Carbon compiled a small transformer engine + quantized Gemma 3 270m into a single PostScript job ⚡️ 100% in the printer: 14MB peak RAM and blazing 60s per token 🧠Smart layers juggling to avoid OOMing htt",
+   "author_name": "Omar Sanseviero",
+   "likes": 600,
+   "story": "Gemma on a printer"
+  },
+  {
+   "title": "Chinese records: Alice Huang's husband Kang Wei built a state-backed data center network in China,…",
+   "url": "https://www.wsj.com/world/china/alice-huangs-husband-built-a-data-center-empire-backed-by-the-chinese-state-78389c9a?st=6ghwix",
+   "source": "Lingling Wei / Wall Street…",
+   "published_at": "2026-11-17T11:01:32Z",
+   "text": "Chinese records: Alice Huang's husband Kang Wei built a state-backed data center network in China, with proposed investments exceeding $9B between 2021 and 2024. Kang Wei developed the business while his wife was involved with Nvidia's then-CEO — Alice Huang and her husband, Kang Wei …",
+   "via": "Techmeme"
+  },
+  {
+   "title": "How the Claude Code team thinks about verification",
+   "url": "https://claude.dev/blog/how-the-claude-code-team-thinks-about-verification/",
+   "source": "Hacker News",
+   "published_at": "2026-11-17T10:20:40Z",
+   "text": "145 points and 136 comments on Hacker News.",
+   "points": 145,
+   "discussion": "https://news.ycombinator.com/item?id=50529612"
   }
  ],
  "sources": "curated, Techmeme, X (found via Techmeme, Reddit, the Internet Archive), Claude Code releases, Anthropic, Hacker News, Simon Willison"
