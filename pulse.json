@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-17T15:28:38Z",
+ "generated_at": "2026-11-17T16:00:51Z",
  "items": [
   {
    "title": "Nvidia's board establishes a National Security and Export Control Oversight Committee to oversee na…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-17T12:06:19Z",
    "text": "Thrilled to announce $5B in funding for @IsomorphicLabs to accelerate our mission to Solve All Disease. We continue to make rapid progress reimagining drug design from first principles with AI to radically cut the time & cost to find new medicines. Gradually, then all at once...",
    "author_name": "Demis Hassabis",
-   "likes": 6888,
+   "likes": 7408,
    "story": "Alphabet's Isomorphic Labs raised a $5B Series C led by Sequoia and Greenoaks, after raising $2.1B in May and $600M in March 2025, to accelerate clinical trials"
   },
   {
@@ -34,15 +34,15 @@
    "published_at": "2026-11-16T18:31:00Z",
    "text": "“AI is here, just get used to it” and what you have to get used to is that everything works worse now than it did five years ago",
    "author_name": "Mike Drucker",
-   "likes": 32737,
+   "likes": 32868,
    "story": "Bank of America, Chase, Wells Fargo, and other US bank customers report online service issues; Chase blames a technical issue, not a cyber issue, for the delays"
   },
   {
-   "title": "Sources: Jensen Huang's daughter Madison remains in a senior Nvidia role; before Jensen's exit, she…",
-   "url": "https://www.nytimes.com/2026/11/16/technology/nvidia-jensen-madison-huang.html?unlocked_article_code=1.RFE.d0Ui.v_uJvV3zdxPR&smid=nytcore-ios-share",
-   "source": "New York Times",
-   "published_at": "2026-11-17T03:20:49Z",
-   "text": "Sources: Jensen Huang's daughter Madison remains in a senior Nvidia role; before Jensen's exit, she was his de facto chief of staff with considerable authority. Installed as her father's de facto chief of staff, Jensen Huang's daughter alienated top executives.",
+   "title": "The US Commerce Department says it began probing Megaspeed in 2024 over possible export rule violat…",
+   "url": "https://www.reuters.com/world/asia-pacific/us-releases-details-of-megaspeed-probe-says-investigation-began-2024-2026-11-17/",
+   "source": "Kanishka Singh / Reuters",
+   "published_at": "2026-11-17T05:56:02Z",
+   "text": "The US Commerce Department says it began probing Megaspeed in 2024 over possible export rule violations; Nvidia put Megaspeed on its “no sell” list in June 2025. The US Commerce Department and Justice Department released information on Monday about Washington's investigation …",
    "via": "Techmeme"
   },
   {
@@ -50,8 +50,8 @@
    "url": "https://www.scmp.com/tech/big-tech/article/3374774/baidu-xiaomi-ceos-warn-growing-gap-between-ai-hype-and-returns",
    "source": "Hacker News",
    "published_at": "2026-11-17T14:19:59Z",
-   "text": "73 points and 51 comments on Hacker News.",
-   "points": 73,
+   "text": "109 points and 107 comments on Hacker News.",
+   "points": 109,
    "discussion": "https://news.ycombinator.com/item?id=50531751"
   },
   {
@@ -61,7 +61,7 @@
    "published_at": "2026-11-16T21:16:20Z",
    "text": "California is suing OpenAI for endangering the public by knowingly building artificial intelligence models without safeguards. Good. We can’t allow a handful of Big Tech oligarchs to play God and endanger the future of humanity. Pause advanced AI development NOW.",
    "author_name": "Bernie Sanders",
-   "likes": 14173,
+   "likes": 14298,
    "story": "California's AG sues OpenAI over the Hugging Face attack, alleging it was one of 80+ incidents due to OpenAI testing its AI models without adequate safeguards"
   },
   {
@@ -72,11 +72,11 @@
    "text": "Anthropic is committing $10M to Canadian research institutions to fund the next generation of AI research."
   },
   {
-   "title": "Sources: Nvidia warned customers that the proposed Remote Access Security Act could expose them to…",
-   "url": "https://www.cnbc.com/2026/11/17/nvidia-china-cloud-ai-chip-access.html",
-   "source": "Kai Nicol-Schwarz / CNBC",
-   "published_at": "2026-11-17T10:32:48Z",
-   "text": "Sources: Nvidia warned customers that the proposed Remote Access Security Act could expose them to US legal action if Chinese companies remotely access AI chips. Nvidia warned its customers that new legislation on Chinese companies remotely accessing its artificial-intelligence chips …",
+   "title": "Sources: Jensen Huang's daughter Madison remains in a senior Nvidia role; before Jensen's exit, she…",
+   "url": "https://www.nytimes.com/2026/11/16/technology/nvidia-jensen-madison-huang.html?unlocked_article_code=1.RFE.d0Ui.v_uJvV3zdxPR&smid=nytcore-ios-share",
+   "source": "New York Times",
+   "published_at": "2026-11-17T03:20:49Z",
+   "text": "Sources: Jensen Huang's daughter Madison remains in a senior Nvidia role; before Jensen's exit, she was his de facto chief of staff with considerable authority. Installed as her father's de facto chief of staff, Jensen Huang's daughter alienated top executives.",
    "via": "Techmeme"
   },
   {
@@ -86,7 +86,7 @@
    "published_at": "2026-11-16T22:58:03Z",
    "text": "In other words: Apple starts marketing their own AI agent two years in advance.",
    "author_name": "Mark Gurman",
-   "likes": 3946,
+   "likes": 3986,
    "story": "macOS 27.3 beta warns users against giving AI apps full access, nudging users to “Choose Apps” for an AI app to control instead, brought on by AI's popularity"
   },
   {
@@ -94,8 +94,8 @@
    "url": "https://claude.dev/blog/how-the-claude-code-team-thinks-about-verification/",
    "source": "Hacker News",
    "published_at": "2026-11-17T10:20:40Z",
-   "text": "111 points and 115 comments on Hacker News.",
-   "points": 111,
+   "text": "123 points and 125 comments on Hacker News.",
+   "points": 123,
    "discussion": "https://news.ycombinator.com/item?id=50529612"
   },
   {
@@ -105,15 +105,25 @@
    "published_at": "2026-11-17T11:00:41Z",
    "text": "With Carbon's help, I ran Gemma directly in an office printer 😅🖨️ 🤏Carbon compiled a small transformer engine + quantized Gemma 3 270m into a single PostScript job ⚡️ 100% in the printer: 14MB peak RAM and blazing 60s per token 🧠Smart layers juggling to avoid OOMing htt",
    "author_name": "Omar Sanseviero",
-   "likes": 499,
+   "likes": 543,
    "story": "Gemma on a printer"
   },
   {
-   "title": "Sources: Anthropic is guiding prospective IPO investors that it expects to price its shares at or a…",
-   "url": "https://www.bloomberg.com/news/articles/2026-11-17/anthropic-is-said-to-guide-ipo-price-to-top-of-range-or-above",
-   "source": "Bloomberg",
-   "published_at": "2026-11-17T14:41:27Z",
-   "text": "Sources: Anthropic is guiding prospective IPO investors that it expects to price its shares at or above the high end of its $70 to $78 marketed range. Anthropic PBC is guiding prospective investors in its initial public offering it expects to price the shares at the high end of the price range or above …",
+   "title": "Dario Amodei on open source models: “If the path continues, I think we could get to a very dangerou…",
+   "url": "https://x.com/vikktorrrre/status/2122353364306374986",
+   "source": "𝕏 @vikktorrrre",
+   "published_at": "2026-11-16T15:37:28Z",
+   "text": "Dario Amodei on open source models: “If the path continues, I think we could get to a very dangerous place.” “When you control a model and you're deploying it, you have the ability to monitor its usage.” “You can revoke a user's access. You can change what the model is willing…",
+   "author_name": "Veee",
+   "likes": 3619,
+   "story": "Are those that advocate against open weight models public enemy #1 ?"
+  },
+  {
+   "title": "Sources: Nvidia warned customers that the proposed Remote Access Security Act could expose them to…",
+   "url": "https://www.cnbc.com/2026/11/17/nvidia-china-cloud-ai-chip-access.html",
+   "source": "Kai Nicol-Schwarz / CNBC",
+   "published_at": "2026-11-17T10:32:48Z",
+   "text": "Sources: Nvidia warned customers that the proposed Remote Access Security Act could expose them to US legal action if Chinese companies remotely access AI chips. Nvidia warned its customers that new legislation on Chinese companies remotely accessing its artificial-intelligence chips …",
    "via": "Techmeme"
   },
   {
@@ -122,14 +132,6 @@
    "source": "Anthropic",
    "published_at": "2026-11-16T20:50:09Z",
    "text": "Anthropic opens its fifth Asia-Pacific office in Singapore and signs an MOU with the government on AI safety, evaluation, and responsible adoption."
-  },
-  {
-   "title": "Nvidia unveils its Rubin HPC GPU with “more than 50,000” CUDA cores, up from 28,672 in the current…",
-   "url": "https://www.tomshardware.com/pc-components/gpus/nvidia-announces-rubin-hpc-gpu-with-record-number-of-cuda-cores-at-supercomputing-2026-new-chip-accelerates-agentic-hpc-workloads-arrives-in-2028",
-   "source": "Jeffrey Kampman / Tom's Har…",
-   "published_at": "2026-11-17T06:21:21Z",
-   "text": "Nvidia unveils its Rubin HPC GPU with “more than 50,000” CUDA cores, up from 28,672 in the current Rubin GPU, for agentic workflows and scientific simulations. Rubin HPC puts “over 50,000” CUDA cores on a chip, implies four-die layout — The Supercomputing 2026 conference is under way …",
-   "via": "Techmeme"
   }
  ],
  "sources": "curated, Techmeme, X (found via Techmeme, Reddit, the Internet Archive), Claude Code releases, Anthropic, Hacker News, Simon Willison"
