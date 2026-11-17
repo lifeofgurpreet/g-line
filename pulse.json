@@ -1,13 +1,13 @@
 {
  "schema": 1,
- "generated_at": "2026-11-17T14:55:53Z",
+ "generated_at": "2026-11-17T15:28:38Z",
  "items": [
   {
-   "title": "Sources: Nvidia warned customers that the proposed Remote Access Security Act could expose them to…",
-   "url": "https://www.cnbc.com/2026/11/17/nvidia-china-cloud-ai-chip-access.html",
-   "source": "Kai Nicol-Schwarz / CNBC",
-   "published_at": "2026-11-17T10:32:48Z",
-   "text": "Sources: Nvidia warned customers that the proposed Remote Access Security Act could expose them to US legal action if Chinese companies remotely access AI chips. Nvidia warned its customers that new legislation on Chinese companies remotely accessing its artificial-intelligence chips …",
+   "title": "Nvidia's board establishes a National Security and Export Control Oversight Committee to oversee na…",
+   "url": "https://nvidianews.nvidia.com/news/nvidia-board-of-directors-establishes-national-security-and-export-control-oversight-committee",
+   "source": "Nvidia Newsroom",
+   "published_at": "2026-11-17T10:14:36Z",
+   "text": "Nvidia's board establishes a National Security and Export Control Oversight Committee to oversee national security policies, export control compliance, and more. - Committee to provide oversight over NVIDIA's national security and global trade compliance programs",
    "via": "Techmeme"
   },
   {
@@ -17,7 +17,7 @@
    "published_at": "2026-11-17T12:06:19Z",
    "text": "Thrilled to announce $5B in funding for @IsomorphicLabs to accelerate our mission to Solve All Disease. We continue to make rapid progress reimagining drug design from first principles with AI to radically cut the time & cost to find new medicines. Gradually, then all at once...",
    "author_name": "Demis Hassabis",
-   "likes": 6265,
+   "likes": 6888,
    "story": "Alphabet's Isomorphic Labs raised a $5B Series C led by Sequoia and Greenoaks, after raising $2.1B in May and $600M in March 2025, to accelerate clinical trials"
   },
   {
@@ -34,42 +34,8 @@
    "published_at": "2026-11-16T18:31:00Z",
    "text": "“AI is here, just get used to it” and what you have to get used to is that everything works worse now than it did five years ago",
    "author_name": "Mike Drucker",
-   "likes": 32601,
+   "likes": 32737,
    "story": "Bank of America, Chase, Wells Fargo, and other US bank customers report online service issues; Chase blames a technical issue, not a cyber issue, for the delays"
-  },
-  {
-   "title": "Nvidia's board establishes a National Security and Export Control Oversight Committee to oversee na…",
-   "url": "https://nvidianews.nvidia.com/news/nvidia-board-of-directors-establishes-national-security-and-export-control-oversight-committee",
-   "source": "Nvidia Newsroom",
-   "published_at": "2026-11-17T10:14:36Z",
-   "text": "Nvidia's board establishes a National Security and Export Control Oversight Committee to oversee national security policies, export control compliance, and more. - Committee to provide oversight over NVIDIA's national security and global trade compliance programs",
-   "via": "Techmeme"
-  },
-  {
-   "title": "How the Claude Code team thinks about verification",
-   "url": "https://claude.dev/blog/how-the-claude-code-team-thinks-about-verification/",
-   "source": "Hacker News",
-   "published_at": "2026-11-17T10:20:40Z",
-   "text": "96 points and 107 comments on Hacker News.",
-   "points": 96,
-   "discussion": "https://news.ycombinator.com/item?id=50529612"
-  },
-  {
-   "title": "California is suing OpenAI for endangering the public by knowingly building artificial intelligence…",
-   "url": "https://x.com/BernieSanders/status/2122438646485962942",
-   "source": "𝕏 @BernieSanders",
-   "published_at": "2026-11-16T21:16:20Z",
-   "text": "California is suing OpenAI for endangering the public by knowingly building artificial intelligence models without safeguards. Good. We can’t allow a handful of Big Tech oligarchs to play God and endanger the future of humanity. Pause advanced AI development NOW.",
-   "author_name": "Bernie Sanders",
-   "likes": 14046,
-   "story": "California's AG sues OpenAI over the Hugging Face attack, alleging it was one of 80+ incidents due to OpenAI testing its AI models without adequate safeguards"
-  },
-  {
-   "title": "Anthropic commits $10 million to Canadian AI research",
-   "url": "https://www.anthropic.com/news/canadian-ai-research",
-   "source": "Anthropic",
-   "published_at": "2026-11-16T20:50:34Z",
-   "text": "Anthropic is committing $10M to Canadian research institutions to fund the next generation of AI research."
   },
   {
    "title": "Sources: Jensen Huang's daughter Madison remains in a senior Nvidia role; before Jensen's exit, she…",
@@ -80,14 +46,57 @@
    "via": "Techmeme"
   },
   {
+   "title": "Baidu, Xiaomi CEOs warn of growing gap between AI hype and returns",
+   "url": "https://www.scmp.com/tech/big-tech/article/3374774/baidu-xiaomi-ceos-warn-growing-gap-between-ai-hype-and-returns",
+   "source": "Hacker News",
+   "published_at": "2026-11-17T14:19:59Z",
+   "text": "73 points and 51 comments on Hacker News.",
+   "points": 73,
+   "discussion": "https://news.ycombinator.com/item?id=50531751"
+  },
+  {
+   "title": "California is suing OpenAI for endangering the public by knowingly building artificial intelligence…",
+   "url": "https://x.com/BernieSanders/status/2122438646485962942",
+   "source": "𝕏 @BernieSanders",
+   "published_at": "2026-11-16T21:16:20Z",
+   "text": "California is suing OpenAI for endangering the public by knowingly building artificial intelligence models without safeguards. Good. We can’t allow a handful of Big Tech oligarchs to play God and endanger the future of humanity. Pause advanced AI development NOW.",
+   "author_name": "Bernie Sanders",
+   "likes": 14173,
+   "story": "California's AG sues OpenAI over the Hugging Face attack, alleging it was one of 80+ incidents due to OpenAI testing its AI models without adequate safeguards"
+  },
+  {
+   "title": "Anthropic commits $10 million to Canadian AI research",
+   "url": "https://www.anthropic.com/news/canadian-ai-research",
+   "source": "Anthropic",
+   "published_at": "2026-11-16T20:50:34Z",
+   "text": "Anthropic is committing $10M to Canadian research institutions to fund the next generation of AI research."
+  },
+  {
+   "title": "Sources: Nvidia warned customers that the proposed Remote Access Security Act could expose them to…",
+   "url": "https://www.cnbc.com/2026/11/17/nvidia-china-cloud-ai-chip-access.html",
+   "source": "Kai Nicol-Schwarz / CNBC",
+   "published_at": "2026-11-17T10:32:48Z",
+   "text": "Sources: Nvidia warned customers that the proposed Remote Access Security Act could expose them to US legal action if Chinese companies remotely access AI chips. Nvidia warned its customers that new legislation on Chinese companies remotely accessing its artificial-intelligence chips …",
+   "via": "Techmeme"
+  },
+  {
    "title": "In other words: Apple starts marketing their own AI agent two years in advance.",
    "url": "https://x.com/markgurman/status/2122464242754552100",
    "source": "𝕏 @markgurman",
    "published_at": "2026-11-16T22:58:03Z",
    "text": "In other words: Apple starts marketing their own AI agent two years in advance.",
    "author_name": "Mark Gurman",
-   "likes": 3902,
+   "likes": 3946,
    "story": "macOS 27.3 beta warns users against giving AI apps full access, nudging users to “Choose Apps” for an AI app to control instead, brought on by AI's popularity"
+  },
+  {
+   "title": "How the Claude Code team thinks about verification",
+   "url": "https://claude.dev/blog/how-the-claude-code-team-thinks-about-verification/",
+   "source": "Hacker News",
+   "published_at": "2026-11-17T10:20:40Z",
+   "text": "111 points and 115 comments on Hacker News.",
+   "points": 111,
+   "discussion": "https://news.ycombinator.com/item?id=50529612"
   },
   {
    "title": "With Carbon's help, I ran Gemma directly in an office printer 😅🖨️ 🤏Carbon compiled a small transfor…",
@@ -96,15 +105,15 @@
    "published_at": "2026-11-17T11:00:41Z",
    "text": "With Carbon's help, I ran Gemma directly in an office printer 😅🖨️ 🤏Carbon compiled a small transformer engine + quantized Gemma 3 270m into a single PostScript job ⚡️ 100% in the printer: 14MB peak RAM and blazing 60s per token 🧠Smart layers juggling to avoid OOMing htt",
    "author_name": "Omar Sanseviero",
-   "likes": 467,
+   "likes": 499,
    "story": "Gemma on a printer"
   },
   {
-   "title": "Chinese records: Alice Huang's husband Kang Wei built a state-backed data center network in China,…",
-   "url": "https://www.wsj.com/world/china/alice-huangs-husband-built-a-data-center-empire-backed-by-the-chinese-state-78389c9a?st=6ghwix",
-   "source": "Lingling Wei / Wall Street…",
-   "published_at": "2026-11-17T11:01:32Z",
-   "text": "Chinese records: Alice Huang's husband Kang Wei built a state-backed data center network in China, with proposed investments exceeding $9B between 2021 and 2024. Kang Wei developed the business while his wife was involved with Nvidia's then-CEO — Alice Huang and her husband, Kang Wei …",
+   "title": "Sources: Anthropic is guiding prospective IPO investors that it expects to price its shares at or a…",
+   "url": "https://www.bloomberg.com/news/articles/2026-11-17/anthropic-is-said-to-guide-ipo-price-to-top-of-range-or-above",
+   "source": "Bloomberg",
+   "published_at": "2026-11-17T14:41:27Z",
+   "text": "Sources: Anthropic is guiding prospective IPO investors that it expects to price its shares at or above the high end of its $70 to $78 marketed range. Anthropic PBC is guiding prospective investors in its initial public offering it expects to price the shares at the high end of the price range or above …",
    "via": "Techmeme"
   },
   {
@@ -113,14 +122,6 @@
    "source": "Anthropic",
    "published_at": "2026-11-16T20:50:09Z",
    "text": "Anthropic opens its fifth Asia-Pacific office in Singapore and signs an MOU with the government on AI safety, evaluation, and responsible adoption."
-  },
-  {
-   "title": "A look at Anthropic's data center network plans, dubbed Anthropic Direct, committing $900B+ through…",
-   "url": "https://www.ft.com/content/559c13f1-0888-47e5-b6ce-523309a37193",
-   "source": "Financial Times",
-   "published_at": "2026-11-17T10:50:53Z",
-   "text": "A look at Anthropic's data center network plans, dubbed Anthropic Direct, committing $900B+ through 2045; docs show it will lease ~875K TPUs for ~$7.2B per year. Just inland from the Mississippi River, about 1,300 workers are racing to finish a 600,000 sq ft data centre rising from the Louisiana woods.",
-   "via": "Techmeme"
   },
   {
    "title": "Nvidia unveils its Rubin HPC GPU with “more than 50,000” CUDA cores, up from 28,672 in the current…",
