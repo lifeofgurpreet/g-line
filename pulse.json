@@ -1,55 +1,7 @@
 {
  "schema": 1,
- "generated_at": "2026-11-17T23:00:03Z",
+ "generated_at": "2026-11-17T23:32:54Z",
  "items": [
-  {
-   "title": "OpenAI debuts GPT-6.2 Astra and Sol in ChatGPT Work, Codex, and API, saying Astra sets records on w…",
-   "url": "https://openai.com/index/introducing-gpt-6-2-astra-sol/",
-   "source": "OpenAI",
-   "published_at": "2026-11-17T18:01:58Z",
-   "text": "OpenAI debuts GPT-6.2 Astra and Sol in ChatGPT Work, Codex, and API, saying Astra sets records on work and science evals at under a third of GPT-6 Astra's cost. , our new frontier model for your hardest projects, and — , our efficient, versatile model for everyday work.",
-   "via": "Techmeme"
-  },
-  {
-   "title": "Imagine being a board member at Nvidia considering potential candidates for CEO, and trying to clai…",
-   "url": "https://x.com/paulg/status/2122745936279462274",
-   "source": "𝕏 @paulg",
-   "published_at": "2026-11-17T17:37:24Z",
-   "text": "Imagine being a board member at Nvidia considering potential candidates for CEO, and trying to claim with a straight face that one of the others would do a better job.",
-   "author_name": "Paul Graham",
-   "likes": 8932,
-   "story": "Jensen Huang breaks his silence, saying he “would be honored” to return if the board decides it is in the “best interest” of shareholders, staff, and the US"
-  },
-  {
-   "title": "Claude Code 2.1.326 released",
-   "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.326",
-   "source": "Claude Code releases",
-   "published_at": "2026-11-16T22:11:05Z",
-   "text": "Added support for turning on Code Mode while agent teams are enabled; if you already turned it on, sessions with teams on now start in Code Mode · Added a startup warning when an --allowedTools, --disallowedTools or --tools value has an entry that doesn't look like a complete rule · Added a message explaining why MCP servers stop loading when an administrator adds managed-mcp.json during a session · Added a row to /status that says when your provider or an environment variable such as DISABLE_TELEMETRY turns features off"
-  },
-  {
-   "title": "GPT-6 Cyber for helping further secure the internet, with a major security flaw in Java found by Ca…",
-   "url": "https://x.com/gdb/status/2122819528858161322",
-   "source": "𝕏 @gdb",
-   "published_at": "2026-11-17T22:29:50Z",
-   "text": "GPT-6 Cyber for helping further secure the internet, with a major security flaw in Java found by Calif, as part of our Patch the Planet initiative:",
-   "author_name": "Greg Brockman",
-   "likes": 179,
-   "story": "Cybersecurity startup Calif says it used GPT-6 Cyber to uncover an RCE flaw in Java dubbed “Java4Shell”; Oracle has released a patch",
-   "links": [
-    "https://www.nytimes.com/2026/11/17/us/politics/ai-security-bug-java.html"
-   ]
-  },
-  {
-   "title": "Thrilled to announce $5B in funding for @IsomorphicLabs to accelerate our mission to Solve All Dise…",
-   "url": "https://x.com/demishassabis/status/2122662616367853670",
-   "source": "𝕏 @demishassabis",
-   "published_at": "2026-11-17T12:06:19Z",
-   "text": "Thrilled to announce $5B in funding for @IsomorphicLabs to accelerate our mission to Solve All Disease. We continue to make rapid progress reimagining drug design from first principles with AI to radically cut the time & cost to find new medicines. Gradually, then all at once...",
-   "author_name": "Demis Hassabis",
-   "likes": 10858,
-   "story": "Alphabet's Isomorphic Labs raised a $5B Series C led by Sequoia and Greenoaks, after raising $2.1B in May and $600M in March 2025, to accelerate clinical trials"
-  },
   {
    "title": "Nvidia reports Q3 revenue up 103% YoY to $115.8B, above $109.1B est., Data Center revenue up 110% t…",
    "url": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-third-quarter-fiscal-2027",
@@ -59,23 +11,74 @@
    "via": "Techmeme"
   },
   {
+   "title": "Some of you have been asking very politely. Some of you have just been asking. GPT-6.2 Astra and So…",
+   "url": "https://x.com/OpenAI/status/2122750124543926515",
+   "source": "𝕏 @OpenAI",
+   "published_at": "2026-11-17T17:54:03Z",
+   "text": "Some of you have been asking very politely. Some of you have just been asking. GPT-6.2 Astra and Sol are now available. Super efficient and built to perform where it counts—the real world.",
+   "author_name": "OpenAI",
+   "likes": 28022,
+   "story": "OpenAI debuts GPT-6.2 Astra and Sol in ChatGPT Work, Codex, and API, saying Astra sets records on work and science evals at under a third of GPT-6 Astra's cost",
+   "links": [
+    "https://openai.com/index/introducing-gpt-6-2-astra-sol"
+   ]
+  },
+  {
+   "title": "Claude Code 2.1.327 released",
+   "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.327",
+   "source": "Claude Code releases",
+   "published_at": "2026-11-17T23:17:45Z",
+   "text": "Added a confirmation before /install-github-app changes a repository · Added claude mcp add-json - to read the server's JSON from stdin, so tokens can stay off the command line; not available inside a Claude Code session · Added a line when a resumed session's earlier messages can't be loaded · Added a list in /status of broken agent, skill, command and output style files, keybinding errors, an unavailable sandbox, ignored permission settings and hook matchers that never match"
+  },
+  {
+   "title": "GPT-6 Cyber for helping further secure the internet, with a major security flaw in Java found by Ca…",
+   "url": "https://x.com/gdb/status/2122819528858161322",
+   "source": "𝕏 @gdb",
+   "published_at": "2026-11-17T22:29:50Z",
+   "text": "GPT-6 Cyber for helping further secure the internet, with a major security flaw in Java found by Calif, as part of our Patch the Planet initiative:",
+   "author_name": "Greg Brockman",
+   "likes": 223,
+   "story": "Cybersecurity startup Calif says it used GPT-6 Cyber to uncover an RCE flaw in Java dubbed “Java4Shell”; Oracle has released a patch",
+   "links": [
+    "https://www.nytimes.com/2026/11/17/us/politics/ai-security-bug-java.html"
+   ]
+  },
+  {
+   "title": "Imagine being a board member at Nvidia considering potential candidates for CEO, and trying to clai…",
+   "url": "https://x.com/paulg/status/2122745936279462274",
+   "source": "𝕏 @paulg",
+   "published_at": "2026-11-17T17:37:24Z",
+   "text": "Imagine being a board member at Nvidia considering potential candidates for CEO, and trying to claim with a straight face that one of the others would do a better job.",
+   "author_name": "Paul Graham",
+   "likes": 9297,
+   "story": "Jensen Huang breaks his silence, saying he “would be honored” to return if the board decides it is in the “best interest” of shareholders, staff, and the US"
+  },
+  {
+   "title": "Microsoft unveils six AI models spanning coding, cybersecurity, images, and voice, saying MAI Code…",
+   "url": "https://www.axios.com/2026/11/17/microsoft-ai-models-openai-anthropic-ignite",
+   "source": "Ina Fried / Axios",
+   "published_at": "2026-11-17T18:26:01Z",
+   "text": "Microsoft unveils six AI models spanning coding, cybersecurity, images, and voice, saying MAI Code 2 has 98% of GPT-6.1 Sol's performance at 40% of the price. Microsoft AI CEO Mustafa Suleyman tells Axios the software giant is making significant progress toward building …",
+   "via": "Techmeme"
+  },
+  {
    "title": "Nvidia stopped disclosing Singapore sales as revenues hit $104B",
    "url": "https://www.ft.com/content/dbde7a30-548c-4f9d-a4be-7898a0c24dcf",
    "source": "Hacker News",
    "published_at": "2026-11-17T17:12:06Z",
-   "text": "282 points and 153 comments on Hacker News.",
-   "points": 282,
+   "text": "316 points and 165 comments on Hacker News.",
+   "points": 316,
    "discussion": "https://news.ycombinator.com/item?id=50534631"
   },
   {
-   "title": "false flag to promote a war w/ iran for israel? regular incompetence? ai integration failures? legi…",
-   "url": "https://x.com/hasanthehun/status/2122724202235281897",
-   "source": "𝕏 @hasanthehun",
-   "published_at": "2026-11-17T16:11:02Z",
-   "text": "false flag to promote a war w/ iran for israel? regular incompetence? ai integration failures? legitimate cyber attacks? everything is so broken i don't even know what it is anymore. we also have no confidence in the ppl who are supposed to investigate this stuff",
-   "author_name": "hasanabi",
-   "likes": 14293,
-   "story": "Sources: NSA Net, the highly classified network that the NSA uses for its internal communications, is down; at this point, there is no evidence of a cyberattack"
+   "title": "Thrilled to announce $5B in funding for @IsomorphicLabs to accelerate our mission to Solve All Dise…",
+   "url": "https://x.com/demishassabis/status/2122662616367853670",
+   "source": "𝕏 @demishassabis",
+   "published_at": "2026-11-17T12:06:19Z",
+   "text": "Thrilled to announce $5B in funding for @IsomorphicLabs to accelerate our mission to Solve All Disease. We continue to make rapid progress reimagining drug design from first principles with AI to radically cut the time & cost to find new medicines. Gradually, then all at once...",
+   "author_name": "Demis Hassabis",
+   "likes": 11023,
+   "story": "Alphabet's Isomorphic Labs raised a $5B Series C led by Sequoia and Greenoaks, after raising $2.1B in May and $600M in March 2025, to accelerate clinical trials"
   },
   {
    "title": "Advancing Claude for Financial Services",
@@ -100,20 +103,30 @@
    "via": "Techmeme"
   },
   {
+   "title": "false flag to promote a war w/ iran for israel? regular incompetence? ai integration failures? legi…",
+   "url": "https://x.com/hasanthehun/status/2122724202235281897",
+   "source": "𝕏 @hasanthehun",
+   "published_at": "2026-11-17T16:11:02Z",
+   "text": "false flag to promote a war w/ iran for israel? regular incompetence? ai integration failures? legitimate cyber attacks? everything is so broken i don't even know what it is anymore. we also have no confidence in the ppl who are supposed to investigate this stuff",
+   "author_name": "hasanabi",
+   "likes": 14441,
+   "story": "Sources: NSA Net, the highly classified network that the NSA uses for its internal communications, is down; at this point, there is no evidence of a cyberattack"
+  },
+  {
    "title": "What is the best harness for each model?",
    "url": "https://runta.com/blog/introducing-frontierharness-eval-v1-1/",
    "source": "Hacker News",
    "published_at": "2026-11-17T14:53:43Z",
-   "text": "311 points and 110 comments on Hacker News.",
-   "points": 311,
+   "text": "318 points and 111 comments on Hacker News.",
+   "points": 318,
    "discussion": "https://news.ycombinator.com/item?id=50532191"
   },
   {
-   "title": "Microsoft unveils six AI models spanning coding, cybersecurity, images, and voice, saying MAI Code…",
-   "url": "https://www.axios.com/2026/11/17/microsoft-ai-models-openai-anthropic-ignite",
-   "source": "Ina Fried / Axios",
-   "published_at": "2026-11-17T18:26:01Z",
-   "text": "Microsoft unveils six AI models spanning coding, cybersecurity, images, and voice, saying MAI Code 2 has 98% of GPT-6.1 Sol's performance at 40% of the price. Microsoft AI CEO Mustafa Suleyman tells Axios the software giant is making significant progress toward building …",
+   "title": "Chinese records: Alice Huang's husband Kang Wei built a state-backed data center network in China,…",
+   "url": "https://www.wsj.com/world/china/alice-huangs-husband-built-a-data-center-empire-backed-by-the-chinese-state-78389c9a?st=6ghwix",
+   "source": "Lingling Wei / Wall Street…",
+   "published_at": "2026-11-17T11:01:32Z",
+   "text": "Chinese records: Alice Huang's husband Kang Wei built a state-backed data center network in China, with proposed investments exceeding $9B between 2021 and 2024",
    "via": "Techmeme"
   },
   {
@@ -121,16 +134,9 @@
    "url": "https://claude.dev/blog/how-the-claude-code-team-thinks-about-verification/",
    "source": "Hacker News",
    "published_at": "2026-11-17T10:20:40Z",
-   "text": "246 points and 192 comments on Hacker News.",
-   "points": 246,
+   "text": "248 points and 194 comments on Hacker News.",
+   "points": 248,
    "discussion": "https://news.ycombinator.com/item?id=50529612"
-  },
-  {
-   "title": "Anthropic commits $10 million to Canadian AI research",
-   "url": "https://www.anthropic.com/news/canadian-ai-research",
-   "source": "Anthropic",
-   "published_at": "2026-11-16T20:50:34Z",
-   "text": "Anthropic is committing $10M to Canadian research institutions to fund the next generation of AI research."
   }
  ],
  "sources": "curated, Techmeme, X (found via Techmeme, Reddit, the Internet Archive), Claude Code releases, Anthropic, Hacker News, Simon Willison"
