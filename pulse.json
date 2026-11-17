@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-17T08:27:46Z",
+ "generated_at": "2026-11-17T09:00:45Z",
  "items": [
   {
    "title": "Source: Nvidia's board is not considering bringing Jensen Huang back as CEO and it is focused on a…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-16T21:16:20Z",
    "text": "California is suing OpenAI for endangering the public by knowingly building artificial intelligence models without safeguards. Good. We can’t allow a handful of Big Tech oligarchs to play God and endanger the future of humanity. Pause advanced AI development NOW.",
    "author_name": "Bernie Sanders",
-   "likes": 11951,
+   "likes": 12281,
    "story": "California's AG sues OpenAI over the Hugging Face attack, alleging it was one of 80+ incidents due to OpenAI testing its AI models without adequate safeguards"
   },
   {
@@ -34,42 +34,8 @@
    "published_at": "2026-11-16T18:31:00Z",
    "text": "“AI is here, just get used to it” and what you have to get used to is that everything works worse now than it did five years ago",
    "author_name": "Mike Drucker",
-   "likes": 30638,
+   "likes": 30795,
    "story": "Bank of America, Chase, Wells Fargo, and other US bank customers report online service issues; Chase blames a technical issue, not a cyber issue, for the delays"
-  },
-  {
-   "title": "macOS 27.3 beta warns if an app would get full device control, nudging users to “Choose Apps” for t…",
-   "url": "https://www.macrumors.com/2026/11/16/macos-27-3-full-desk-access/",
-   "source": "Juli Clover / MacRumors",
-   "published_at": "2026-11-17T02:31:50Z",
-   "text": "macOS 27.3 beta warns if an app would get full device control, nudging users to “Choose Apps” for the app to control instead, brought on by AI apps' popularity. With the latest macOS 27.3 beta, Apple is giving Mac users more control over the data they share and the access they give to apps …",
-   "via": "Techmeme"
-  },
-  {
-   "title": "Windows 11 Is Collecting Data on Which Coding Agents and Developer Tools You Use",
-   "url": "https://xusheng.dev/posts/windows-coding-agent-telemetry/",
-   "source": "Hacker News",
-   "published_at": "2026-11-16T22:58:20Z",
-   "text": "559 points and 391 comments on Hacker News.",
-   "points": 559,
-   "discussion": "https://news.ycombinator.com/item?id=50524736"
-  },
-  {
-   "title": "We’re working with @ApolloResearch, @METR_Evals, @TransluceAI, and @GoodfireAI on embedded assessme…",
-   "url": "https://x.com/OpenAI/status/2122359930628063248",
-   "source": "𝕏 @OpenAI",
-   "published_at": "2026-11-16T16:03:33Z",
-   "text": "We’re working with @ApolloResearch, @METR_Evals, @TransluceAI, and @GoodfireAI on embedded assessments: giving outside experts deep access to our internal models and systems to investigate alignment and test our safeguards. These assessments build on our ongoing alignment and…",
-   "author_name": "OpenAI",
-   "likes": 2991,
-   "story": "OpenAI says it signed agreements with independent assessors Apollo Research, METR, Transluce, and Goodfire for its first phase of AI model embedded assessments"
-  },
-  {
-   "title": "Anthropic commits $10 million to Canadian AI research",
-   "url": "https://www.anthropic.com/news/canadian-ai-research",
-   "source": "Anthropic",
-   "published_at": "2026-11-16T20:50:34Z",
-   "text": "Anthropic is committing $10M to Canadian research institutions to fund the next generation of AI research."
   },
   {
    "title": "The US Commerce Department says it began probing Megaspeed in 2024 over possible export rule violat…",
@@ -80,13 +46,47 @@
    "via": "Techmeme"
   },
   {
+   "title": "Windows 11 is collecting data on which coding agents and developer tools you use",
+   "url": "https://xusheng.dev/posts/windows-coding-agent-telemetry/",
+   "source": "Hacker News",
+   "published_at": "2026-11-16T22:58:20Z",
+   "text": "578 points and 413 comments on Hacker News.",
+   "points": 578,
+   "discussion": "https://news.ycombinator.com/item?id=50524736"
+  },
+  {
+   "title": "We’re working with @ApolloResearch, @METR_Evals, @TransluceAI, and @GoodfireAI on embedded assessme…",
+   "url": "https://x.com/OpenAI/status/2122359930628063248",
+   "source": "𝕏 @OpenAI",
+   "published_at": "2026-11-16T16:03:33Z",
+   "text": "We’re working with @ApolloResearch, @METR_Evals, @TransluceAI, and @GoodfireAI on embedded assessments: giving outside experts deep access to our internal models and systems to investigate alignment and test our safeguards. These assessments build on our ongoing alignment and…",
+   "author_name": "OpenAI",
+   "likes": 2999,
+   "story": "OpenAI says it signed agreements with independent assessors Apollo Research, METR, Transluce, and Goodfire for its first phase of AI model embedded assessments"
+  },
+  {
+   "title": "Anthropic commits $10 million to Canadian AI research",
+   "url": "https://www.anthropic.com/news/canadian-ai-research",
+   "source": "Anthropic",
+   "published_at": "2026-11-16T20:50:34Z",
+   "text": "Anthropic is committing $10M to Canadian research institutions to fund the next generation of AI research."
+  },
+  {
+   "title": "macOS 27.3 beta warns if an app would get full device control, nudging users to “Choose Apps” for t…",
+   "url": "https://www.macrumors.com/2026/11/16/macos-27-3-full-desk-access/",
+   "source": "Juli Clover / MacRumors",
+   "published_at": "2026-11-17T02:31:50Z",
+   "text": "macOS 27.3 beta warns if an app would get full device control, nudging users to “Choose Apps” for the app to control instead, brought on by AI apps' popularity. With the latest macOS 27.3 beta, Apple is giving Mac users more control over the data they share and the access they give to apps …",
+   "via": "Techmeme"
+  },
+  {
    "title": "Got off a call with the an MS team lead who was on the bridge for this incident on what exactly hap…",
    "url": "https://x.com/GergelyOrosz/status/2122428797647769970",
    "source": "𝕏 @GergelyOrosz",
    "published_at": "2026-11-16T20:37:12Z",
    "text": "Got off a call with the an MS team lead who was on the bridge for this incident on what exactly happened in the outage: 1. This was a \"latent bug\" - a commit going in ~4 months ago to a Windows build, that only activated much later. Super hard to spot 2. Zero AI, this code was…",
    "author_name": "Gergely Orosz",
-   "likes": 2793,
+   "likes": 2826,
    "story": "Preliminary report: Microsoft blames a major Microsoft 365 and Exchange outage on a software defect introduced in a July 2026 update for network gateway servers"
   },
   {
@@ -94,19 +94,9 @@
    "url": "https://blog.antonio.cx/running-agents-with-lend",
    "source": "Hacker News",
    "published_at": "2026-11-17T01:18:56Z",
-   "text": "105 points and 66 comments on Hacker News.",
-   "points": 105,
+   "text": "110 points and 68 comments on Hacker News.",
+   "points": 110,
    "discussion": "https://news.ycombinator.com/item?id=50526152"
-  },
-  {
-   "title": "The NY Times has the receipts today. Here's how the Nvidia Blackwell chip laundering worked. 1. Nvi…",
-   "url": "https://x.com/uTobian/status/2122434318031323373",
-   "source": "𝕏 @uTobian",
-   "published_at": "2026-11-16T20:59:08Z",
-   "text": "The NY Times has the receipts today. Here's how the Nvidia Blackwell chip laundering worked. 1. Nvidia was blocked from selling Blackwell chips to China. So Jensen Huang sold them to Alice Huang at Megaspeed which installed them in data centers in Singapore, Malaysia, and…",
-   "author_name": "Toby Rogers",
-   "likes": 7091,
-   "story": "The US issues a rule to limit China and other countries from remotely accessing US AI chips and servers in Singapore, Malaysia, Thailand, Indonesia, and Brazil"
   },
   {
    "title": "Nvidia unveils its Rubin HPC GPU with “more than 50,000” CUDA cores, up from 28,672 in the current…",
@@ -124,11 +114,19 @@
    "text": "Anthropic opens its fifth Asia-Pacific office in Singapore and signs an MOU with the government on AI safety, evaluation, and responsible adoption."
   },
   {
-   "title": "Sources: Jensen Huang's daughter remains in a senior Nvidia role; before Jensen Huang resigned, she…",
-   "url": "https://www.nytimes.com/2026/11/16/technology/nvidia-jensen-madison-huang.html?unlocked_article_code=1.RFE.d0Ui.v_uJvV3zdxPR&smid=nytcore-ios-share",
-   "source": "New York Times",
-   "published_at": "2026-11-17T03:20:49Z",
-   "text": "Sources: Jensen Huang's daughter remains in a senior Nvidia role; before Jensen Huang resigned, she was his de facto chief of staff with considerable authority. Installed as her father's de facto chief of staff, Jensen Huang's daughter alienated top executives.",
+   "title": "A look at ~1,400 Urban Legend campaigns where right-wing influencers got paid to push crypto policy…",
+   "url": "https://www.modelrepublic.org/articles/nvidia-urban-legend-influencer-campaigns",
+   "source": "ModelRepublic",
+   "published_at": "2026-11-17T08:55:46Z",
+   "text": "A look at ~1,400 Urban Legend campaigns where right-wing influencers got paid to push crypto policy and Nvidia sales to China after the US approved H200 sales. Table of Contents The Network Bought Influencers, Bought Articles Who is behind the campaigns? Explore the data behind this investigation here.",
+   "via": "Techmeme"
+  },
+  {
+   "title": "OpenAI announces new tools to combat CSAM, including an image classifier and warning screens to pre…",
+   "url": "https://techcrunch.com/2026/11/16/openai-releases-a-new-image-classifier-and-chatgpt-warnings-to-combat-csam/",
+   "source": "Ivan Mehta / TechCrunch",
+   "published_at": "2026-11-16T18:10:52Z",
+   "text": "OpenAI announces new tools to combat CSAM, including an image classifier and warning screens to prevent users from accessing material that sexualizes children. OpenAI today announced new tools to combat child sexual abuse material (CSAM) amid growing safety concerns around the use of AI tools.",
    "via": "Techmeme"
   }
  ],
