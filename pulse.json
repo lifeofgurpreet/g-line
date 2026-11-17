@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-17T17:37:00Z",
+ "generated_at": "2026-11-17T18:09:17Z",
  "items": [
   {
    "title": "Nvidia's board establishes a National Security and Export Control Oversight Committee to oversee na…",
@@ -11,14 +11,17 @@
    "via": "Techmeme"
   },
   {
-   "title": "Thrilled to announce $5B in funding for @IsomorphicLabs to accelerate our mission to Solve All Dise…",
-   "url": "https://x.com/demishassabis/status/2122662616367853670",
-   "source": "𝕏 @demishassabis",
-   "published_at": "2026-11-17T12:06:19Z",
-   "text": "Thrilled to announce $5B in funding for @IsomorphicLabs to accelerate our mission to Solve All Disease. We continue to make rapid progress reimagining drug design from first principles with AI to radically cut the time & cost to find new medicines. Gradually, then all at once...",
-   "author_name": "Demis Hassabis",
-   "likes": 8663,
-   "story": "Alphabet's Isomorphic Labs raised a $5B Series C led by Sequoia and Greenoaks, after raising $2.1B in May and $600M in March 2025, to accelerate clinical trials"
+   "title": "Some of you have been asking very politely. Some of you have just been asking. GPT-6.2 Astra and So…",
+   "url": "https://x.com/OpenAI/status/2122750124543926515",
+   "source": "𝕏 @OpenAI",
+   "published_at": "2026-11-17T17:54:03Z",
+   "text": "Some of you have been asking very politely. Some of you have just been asking. GPT-6.2 Astra and Sol are now available. Super efficient and built to perform where it counts—the real world.",
+   "author_name": "OpenAI",
+   "likes": 5388,
+   "story": "OpenAI launches GPT-6.2 Astra, its new frontier model for “complex professional work”, and GPT-6.2 Sol, its new “go-to model for everyday work”",
+   "links": [
+    "https://openai.com/index/introducing-gpt-6-2-astra-sol"
+   ]
   },
   {
    "title": "Claude Code 2.1.326 released",
@@ -28,14 +31,41 @@
    "text": "Added support for turning on Code Mode while agent teams are enabled; if you already turned it on, sessions with teams on now start in Code Mode · Added a startup warning when an --allowedTools, --disallowedTools or --tools value has an entry that doesn't look like a complete rule · Added a message explaining why MCP servers stop loading when an administrator adds managed-mcp.json during a session · Added a row to /status that says when your provider or an environment variable such as DISABLE_TELEMETRY turns features off"
   },
   {
-   "title": "Literally impossible to find someone more capable of running NVIDIA, especially in the period we’re…",
-   "url": "https://x.com/levie/status/2122738620343984575",
-   "source": "𝕏 @levie",
-   "published_at": "2026-11-17T17:08:20Z",
-   "text": "Literally impossible to find someone more capable of running NVIDIA, especially in the period we’re in, than Jensen.",
-   "author_name": "Aaron Levie",
-   "likes": 112,
+   "title": "Imagine being a board member at Nvidia considering potential candidates for CEO, and trying to clai…",
+   "url": "https://x.com/paulg/status/2122745936279462274",
+   "source": "𝕏 @paulg",
+   "published_at": "2026-11-17T17:37:24Z",
+   "text": "Imagine being a board member at Nvidia considering potential candidates for CEO, and trying to claim with a straight face that one of the others would do a better job.",
+   "author_name": "Paul Graham",
+   "likes": 1515,
    "story": "Jensen Huang breaks his silence, saying he “would be honored” to return if the board decides it is in the “best interest” of shareholders, staff, and the US"
+  },
+  {
+   "title": "Thrilled to announce $5B in funding for @IsomorphicLabs to accelerate our mission to Solve All Dise…",
+   "url": "https://x.com/demishassabis/status/2122662616367853670",
+   "source": "𝕏 @demishassabis",
+   "published_at": "2026-11-17T12:06:19Z",
+   "text": "Thrilled to announce $5B in funding for @IsomorphicLabs to accelerate our mission to Solve All Disease. We continue to make rapid progress reimagining drug design from first principles with AI to radically cut the time & cost to find new medicines. Gradually, then all at once...",
+   "author_name": "Demis Hassabis",
+   "likes": 9015,
+   "story": "Alphabet's Isomorphic Labs raised a $5B Series C led by Sequoia and Greenoaks, after raising $2.1B in May and $600M in March 2025, to accelerate clinical trials"
+  },
+  {
+   "title": "The US Commerce Department says it began probing Megaspeed in 2024 over possible export rule violat…",
+   "url": "https://www.reuters.com/world/asia-pacific/us-releases-details-of-megaspeed-probe-says-investigation-began-2024-2026-11-17/",
+   "source": "Kanishka Singh / Reuters",
+   "published_at": "2026-11-17T05:56:02Z",
+   "text": "The US Commerce Department says it began probing Megaspeed in 2024 over possible export rule violations; Nvidia put Megaspeed on its “no sell” list in June 2025",
+   "via": "Techmeme"
+  },
+  {
+   "title": "What is the best harness for each model?",
+   "url": "https://runta.com/blog/introducing-frontierharness-eval-v1-1/",
+   "source": "Hacker News",
+   "published_at": "2026-11-17T14:53:43Z",
+   "text": "193 points and 78 comments on Hacker News.",
+   "points": 193,
+   "discussion": "https://news.ycombinator.com/item?id=50532191"
   },
   {
    "title": "false flag to promote a war w/ iran for israel? regular incompetence? ai integration failures? legi…",
@@ -44,35 +74,8 @@
    "published_at": "2026-11-17T16:11:02Z",
    "text": "false flag to promote a war w/ iran for israel? regular incompetence? ai integration failures? legitimate cyber attacks? everything is so broken i don't even know what it is anymore. we also have no confidence in the ppl who are supposed to investigate this stuff",
    "author_name": "hasanabi",
-   "likes": 6894,
+   "likes": 8707,
    "story": "Sources: NSA Net, the highly classified network that the NSA uses for its internal communications, is down; at this point, there is no evidence of a cyberattack"
-  },
-  {
-   "title": "The US Commerce Department says it began probing Megaspeed in 2024 over possible export rule violat…",
-   "url": "https://www.reuters.com/world/asia-pacific/us-releases-details-of-megaspeed-probe-says-investigation-began-2024-2026-11-17/",
-   "source": "Kanishka Singh / Reuters",
-   "published_at": "2026-11-17T05:56:02Z",
-   "text": "The US Commerce Department says it began probing Megaspeed in 2024 over possible export rule violations; Nvidia put Megaspeed on its “no sell” list in June 2025. The US Commerce Department and Justice Department released information on Monday about Washington's investigation …",
-   "via": "Techmeme"
-  },
-  {
-   "title": "What is the best harness for each model?",
-   "url": "https://runta.com/blog/introducing-frontierharness-eval-v1-1/",
-   "source": "Hacker News",
-   "published_at": "2026-11-17T14:53:43Z",
-   "text": "151 points and 67 comments on Hacker News.",
-   "points": 151,
-   "discussion": "https://news.ycombinator.com/item?id=50532191"
-  },
-  {
-   "title": "In other words: Apple starts marketing their own AI agent two years in advance.",
-   "url": "https://x.com/markgurman/status/2122464242754552100",
-   "source": "𝕏 @markgurman",
-   "published_at": "2026-11-16T22:58:03Z",
-   "text": "In other words: Apple starts marketing their own AI agent two years in advance.",
-   "author_name": "Mark Gurman",
-   "likes": 4115,
-   "story": "macOS 27.3 beta warns users against giving AI apps full access, nudging users to “Choose Apps” for an AI app to control instead, brought on by AI's popularity"
   },
   {
    "title": "Advancing Claude for Financial Services",
@@ -97,22 +100,22 @@
    "via": "Techmeme"
   },
   {
-   "title": "With Carbon's help, I ran Gemma directly in an office printer 😅🖨️ 🤏Carbon compiled a small transfor…",
-   "url": "https://x.com/osanseviero/status/2122646098418491739",
-   "source": "𝕏 @osanseviero",
-   "published_at": "2026-11-17T11:00:41Z",
-   "text": "With Carbon's help, I ran Gemma directly in an office printer 😅🖨️ 🤏Carbon compiled a small transformer engine + quantized Gemma 3 270m into a single PostScript job ⚡️ 100% in the printer: 14MB peak RAM and blazing 60s per token 🧠Smart layers juggling to avoid OOMing htt",
-   "author_name": "Omar Sanseviero",
-   "likes": 626,
-   "story": "Gemma on a printer"
+   "title": "In other words: Apple starts marketing their own AI agent two years in advance.",
+   "url": "https://x.com/markgurman/status/2122464242754552100",
+   "source": "𝕏 @markgurman",
+   "published_at": "2026-11-16T22:58:03Z",
+   "text": "In other words: Apple starts marketing their own AI agent two years in advance.",
+   "author_name": "Mark Gurman",
+   "likes": 4141,
+   "story": "macOS 27.3 beta warns users against giving AI apps full access, nudging users to “Choose Apps” for an AI app to control instead, brought on by AI's popularity"
   },
   {
    "title": "How the Claude Code team thinks about verification",
    "url": "https://claude.dev/blog/how-the-claude-code-team-thinks-about-verification/",
    "source": "Hacker News",
    "published_at": "2026-11-17T10:20:40Z",
-   "text": "161 points and 148 comments on Hacker News.",
-   "points": 161,
+   "text": "173 points and 152 comments on Hacker News.",
+   "points": 173,
    "discussion": "https://news.ycombinator.com/item?id=50529612"
   },
   {
