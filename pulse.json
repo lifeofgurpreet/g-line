@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-17T06:18:42Z",
+ "generated_at": "2026-11-17T06:51:37Z",
  "items": [
   {
    "title": "Source: Nvidia's board is not considering bringing Jensen Huang back as CEO and it is focused on a…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-16T21:16:20Z",
    "text": "California is suing OpenAI for endangering the public by knowingly building artificial intelligence models without safeguards. Good. We can’t allow a handful of Big Tech oligarchs to play God and endanger the future of humanity. Pause advanced AI development NOW.",
    "author_name": "Bernie Sanders",
-   "likes": 10445,
+   "likes": 10847,
    "story": "California's AG sues OpenAI over the Hugging Face attack, alleging it was one of 80+ incidents due to OpenAI testing its AI models without adequate safeguards"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-11-16T18:31:00Z",
    "text": "“AI is here, just get used to it” and what you have to get used to is that everything works worse now than it did five years ago",
    "author_name": "Mike Drucker",
-   "likes": 29791,
+   "likes": 30060,
    "story": "Bank of America, Chase, Wells Fargo, and other US bank customers report online service issues; Chase blames a technical issue, not a cyber issue, for the delays"
   },
   {
@@ -50,8 +50,8 @@
    "url": "https://xusheng.dev/posts/windows-coding-agent-telemetry/",
    "source": "Hacker News",
    "published_at": "2026-11-16T22:58:20Z",
-   "text": "444 points and 282 comments on Hacker News.",
-   "points": 444,
+   "text": "468 points and 303 comments on Hacker News.",
+   "points": 468,
    "discussion": "https://news.ycombinator.com/item?id=50524736"
   },
   {
@@ -61,7 +61,7 @@
    "published_at": "2026-11-16T16:03:33Z",
    "text": "We’re working with @ApolloResearch, @METR_Evals, @TransluceAI, and @GoodfireAI on embedded assessments: giving outside experts deep access to our internal models and systems to investigate alignment and test our safeguards. These assessments build on our ongoing alignment and…",
    "author_name": "OpenAI",
-   "likes": 2955,
+   "likes": 2964,
    "story": "OpenAI says it signed agreements with independent assessors Apollo Research, METR, Transluce, and Goodfire for its first phase of AI model embedded assessments"
   },
   {
@@ -86,7 +86,7 @@
    "published_at": "2026-11-16T20:37:12Z",
    "text": "Got off a call with the an MS team lead who was on the bridge for this incident on what exactly happened in the outage: 1. This was a \"latent bug\" - a commit going in ~4 months ago to a Windows build, that only activated much later. Super hard to spot 2. Zero AI, this code was…",
    "author_name": "Gergely Orosz",
-   "likes": 2582,
+   "likes": 2650,
    "story": "Preliminary report: Microsoft blames a major Microsoft 365 and Exchange outage on a software defect introduced in a July 2026 update for network gateway servers"
   },
   {
@@ -94,8 +94,8 @@
    "url": "https://blog.antonio.cx/running-agents-with-lend",
    "source": "Hacker News",
    "published_at": "2026-11-17T01:18:56Z",
-   "text": "84 points and 39 comments on Hacker News.",
-   "points": 84,
+   "text": "91 points and 46 comments on Hacker News.",
+   "points": 91,
    "discussion": "https://news.ycombinator.com/item?id=50526152"
   },
   {
@@ -105,15 +105,15 @@
    "published_at": "2026-11-16T20:59:08Z",
    "text": "The NY Times has the receipts today. Here's how the Nvidia Blackwell chip laundering worked. 1. Nvidia was blocked from selling Blackwell chips to China. So Jensen Huang sold them to Alice Huang at Megaspeed which installed them in data centers in Singapore, Malaysia, and…",
    "author_name": "Toby Rogers",
-   "likes": 5967,
+   "likes": 6274,
    "story": "The US issues a rule to limit China and other countries from remotely accessing US AI chips and servers in Singapore, Malaysia, Thailand, Indonesia, and Brazil"
   },
   {
-   "title": "Sam Altman says he has “personal strong empathy” for Jensen Huang and “heroes have flaws,” but the…",
-   "url": "https://www.bloomberg.com/news/articles/2026-11-16/altman-says-ai-industry-will-be-fine-after-huang-s-ouster?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc5NDg1MTkyNSwiZXhwIjoxNzk1NDU2NzI1LCJhcnRpY2xlSWQiOiJUT0xTTEdUOTZPU0kwMCIsImJjb25uZWN0SWQiOiI4OUM4OTNDMDhGOTQ0NThDQkQwQTQyREY1RDFCOTY0QyJ9.r6LmtmU7Op0YupcW7NseYlZEPI3zLR_cnigfe6HXPcY",
-   "source": "Shirin Ghaffary / Bloomberg",
-   "published_at": "2026-11-16T18:05:52Z",
-   "text": "Sam Altman says he has “personal strong empathy” for Jensen Huang and “heroes have flaws,” but the AI industry “will be fine” due to strong revenues and demand. OpenAI's Sam Altman said he believes the artificial intelligence industry will weather …",
+   "title": "Nvidia unveils its Rubin HPC GPU with “more than 50,000” CUDA cores, up from 28,672 in the current…",
+   "url": "https://www.tomshardware.com/pc-components/gpus/nvidia-announces-rubin-hpc-gpu-with-record-number-of-cuda-cores-at-supercomputing-2026-new-chip-accelerates-agentic-hpc-workloads-arrives-in-2028",
+   "source": "Jeffrey Kampman / Tom's Har…",
+   "published_at": "2026-11-17T06:21:21Z",
+   "text": "Nvidia unveils its Rubin HPC GPU with “more than 50,000” CUDA cores, up from 28,672 in the current Rubin GPU, for agentic workflows and scientific simulations. Rubin HPC puts “over 50,000” CUDA cores on a chip, implies four-die layout — The Supercomputing 2026 conference is under way …",
    "via": "Techmeme"
   },
   {
@@ -124,11 +124,11 @@
    "text": "Anthropic opens its fifth Asia-Pacific office in Singapore and signs an MOU with the government on AI safety, evaluation, and responsible adoption."
   },
   {
-   "title": "Google's TIG reports the first observed instance of attackers using an autonomous AI framework with…",
-   "url": "https://siliconangle.com/2026/11/16/google-says-an-ai-framework-turned-security-patches-into-exploits-with-no-human-in-the-loop/",
-   "source": "Duncan Riley / SiliconANGLE",
-   "published_at": "2026-11-16T14:40:45Z",
-   "text": "Google's TIG reports the first observed instance of attackers using an autonomous AI framework with no human in the loop to turn security patches into exploits. A new report out today from Google LLC's Google Threat Intelligence Group finds that for the first time, attackers have used …",
+   "title": "Sources: Jensen Huang's daughter remains in a senior Nvidia role; before Jensen Huang resigned, she…",
+   "url": "https://www.nytimes.com/2026/11/16/technology/nvidia-jensen-madison-huang.html?unlocked_article_code=1.RFE.d0Ui.v_uJvV3zdxPR&smid=nytcore-ios-share",
+   "source": "New York Times",
+   "published_at": "2026-11-17T03:20:49Z",
+   "text": "Sources: Jensen Huang's daughter remains in a senior Nvidia role; before Jensen Huang resigned, she was his de facto chief of staff with considerable authority. Installed as her father's de facto chief of staff, Jensen Huang's daughter alienated top executives.",
    "via": "Techmeme"
   }
  ],
