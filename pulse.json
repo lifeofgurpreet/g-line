@@ -1,42 +1,7 @@
 {
  "schema": 1,
- "generated_at": "2026-11-17T12:13:33Z",
+ "generated_at": "2026-11-17T12:46:17Z",
  "items": [
-  {
-   "title": "The US Commerce Department says it began probing Megaspeed in 2024 over possible export rule violat…",
-   "url": "https://www.reuters.com/world/asia-pacific/us-releases-details-of-megaspeed-probe-says-investigation-began-2024-2026-11-17/",
-   "source": "Kanishka Singh / Reuters",
-   "published_at": "2026-11-17T05:56:02Z",
-   "text": "The US Commerce Department says it began probing Megaspeed in 2024 over possible export rule violations; Nvidia put Megaspeed on its “no sell” list in June 2025. The US Commerce Department and Justice Department released information on Monday about Washington's investigation …",
-   "via": "Techmeme"
-  },
-  {
-   "title": "“AI is here, just get used to it” and what you have to get used to is that everything works worse n…",
-   "url": "https://x.com/MikeDrucker/status/2122397036699873692",
-   "source": "𝕏 @MikeDrucker",
-   "published_at": "2026-11-16T18:31:00Z",
-   "text": "“AI is here, just get used to it” and what you have to get used to is that everything works worse now than it did five years ago",
-   "author_name": "Mike Drucker",
-   "likes": 31700,
-   "story": "Bank of America, Chase, Wells Fargo, and other US bank customers report online service issues; Chase blames a technical issue, not a cyber issue, for the delays"
-  },
-  {
-   "title": "Claude Code 2.1.326 released",
-   "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.326",
-   "source": "Claude Code releases",
-   "published_at": "2026-11-16T22:11:05Z",
-   "text": "Added support for turning on Code Mode while agent teams are enabled; if you already turned it on, sessions with teams on now start in Code Mode · Added a startup warning when an --allowedTools, --disallowedTools or --tools value has an entry that doesn't look like a complete rule · Added a message explaining why MCP servers stop loading when an administrator adds managed-mcp.json during a session · Added a row to /status that says when your provider or an environment variable such as DISABLE_TELEMETRY turns features off"
-  },
-  {
-   "title": "California is suing OpenAI for endangering the public by knowingly building artificial intelligence…",
-   "url": "https://x.com/BernieSanders/status/2122438646485962942",
-   "source": "𝕏 @BernieSanders",
-   "published_at": "2026-11-16T21:16:20Z",
-   "text": "California is suing OpenAI for endangering the public by knowingly building artificial intelligence models without safeguards. Good. We can’t allow a handful of Big Tech oligarchs to play God and endanger the future of humanity. Pause advanced AI development NOW.",
-   "author_name": "Bernie Sanders",
-   "likes": 13408,
-   "story": "California's AG sues OpenAI over the Hugging Face attack, alleging it was one of 80+ incidents due to OpenAI testing its AI models without adequate safeguards"
-  },
   {
    "title": "Nvidia's board establishes a National Security and Export Control Oversight Committee to oversee na…",
    "url": "https://nvidianews.nvidia.com/news/nvidia-board-of-directors-establishes-national-security-and-export-control-oversight-committee",
@@ -46,23 +11,58 @@
    "via": "Techmeme"
   },
   {
+   "title": "Thrilled to announce $5B in funding for @IsomorphicLabs to accelerate our mission to Solve All Dise…",
+   "url": "https://x.com/demishassabis/status/2122662616367853670",
+   "source": "𝕏 @demishassabis",
+   "published_at": "2026-11-17T12:06:19Z",
+   "text": "Thrilled to announce $5B in funding for @IsomorphicLabs to accelerate our mission to Solve All Disease. We continue to make rapid progress reimagining drug design from first principles with AI to radically cut the time & cost to find new medicines. Gradually, then all at once...",
+   "author_name": "Demis Hassabis",
+   "likes": 2089,
+   "story": "Alphabet's Isomorphic Labs raised a $5B Series C led by Sequoia and Greenoaks, after raising $2.1B in May and $600M in March 2025, to accelerate clinical trials"
+  },
+  {
+   "title": "Claude Code 2.1.326 released",
+   "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.326",
+   "source": "Claude Code releases",
+   "published_at": "2026-11-16T22:11:05Z",
+   "text": "Added support for turning on Code Mode while agent teams are enabled; if you already turned it on, sessions with teams on now start in Code Mode · Added a startup warning when an --allowedTools, --disallowedTools or --tools value has an entry that doesn't look like a complete rule · Added a message explaining why MCP servers stop loading when an administrator adds managed-mcp.json during a session · Added a row to /status that says when your provider or an environment variable such as DISABLE_TELEMETRY turns features off"
+  },
+  {
+   "title": "“AI is here, just get used to it” and what you have to get used to is that everything works worse n…",
+   "url": "https://x.com/MikeDrucker/status/2122397036699873692",
+   "source": "𝕏 @MikeDrucker",
+   "published_at": "2026-11-16T18:31:00Z",
+   "text": "“AI is here, just get used to it” and what you have to get used to is that everything works worse now than it did five years ago",
+   "author_name": "Mike Drucker",
+   "likes": 31909,
+   "story": "Bank of America, Chase, Wells Fargo, and other US bank customers report online service issues; Chase blames a technical issue, not a cyber issue, for the delays"
+  },
+  {
+   "title": "The US Commerce Department says it began probing Megaspeed in 2024 over possible export rule violat…",
+   "url": "https://www.reuters.com/world/asia-pacific/us-releases-details-of-megaspeed-probe-says-investigation-began-2024-2026-11-17/",
+   "source": "Kanishka Singh / Reuters",
+   "published_at": "2026-11-17T05:56:02Z",
+   "text": "The US Commerce Department says it began probing Megaspeed in 2024 over possible export rule violations; Nvidia put Megaspeed on its “no sell” list in June 2025. The US Commerce Department and Justice Department released information on Monday about Washington's investigation …",
+   "via": "Techmeme"
+  },
+  {
    "title": "Windows 11 is collecting data on which coding agents and developer tools you use",
    "url": "https://xusheng.dev/posts/windows-coding-agent-telemetry/",
    "source": "Hacker News",
    "published_at": "2026-11-16T22:58:20Z",
-   "text": "635 points and 494 comments on Hacker News.",
-   "points": 635,
+   "text": "645 points and 504 comments on Hacker News.",
+   "points": 645,
    "discussion": "https://news.ycombinator.com/item?id=50524736"
   },
   {
-   "title": "We’re working with @ApolloResearch, @METR_Evals, @TransluceAI, and @GoodfireAI on embedded assessme…",
-   "url": "https://x.com/OpenAI/status/2122359930628063248",
-   "source": "𝕏 @OpenAI",
-   "published_at": "2026-11-16T16:03:33Z",
-   "text": "We’re working with @ApolloResearch, @METR_Evals, @TransluceAI, and @GoodfireAI on embedded assessments: giving outside experts deep access to our internal models and systems to investigate alignment and test our safeguards. These assessments build on our ongoing alignment and…",
-   "author_name": "OpenAI",
-   "likes": 3063,
-   "story": "OpenAI says it signed agreements with independent assessors Apollo Research, METR, Transluce, and Goodfire for its first phase of AI model embedded assessments"
+   "title": "California is suing OpenAI for endangering the public by knowingly building artificial intelligence…",
+   "url": "https://x.com/BernieSanders/status/2122438646485962942",
+   "source": "𝕏 @BernieSanders",
+   "published_at": "2026-11-16T21:16:20Z",
+   "text": "California is suing OpenAI for endangering the public by knowingly building artificial intelligence models without safeguards. Good. We can’t allow a handful of Big Tech oligarchs to play God and endanger the future of humanity. Pause advanced AI development NOW.",
+   "author_name": "Bernie Sanders",
+   "likes": 13539,
+   "story": "California's AG sues OpenAI over the Hugging Face attack, alleging it was one of 80+ incidents due to OpenAI testing its AI models without adequate safeguards"
   },
   {
    "title": "Anthropic commits $10 million to Canadian AI research",
@@ -72,12 +72,22 @@
    "text": "Anthropic is committing $10M to Canadian research institutions to fund the next generation of AI research."
   },
   {
-   "title": "Sources: Jensen Huang's daughter Madison remains in a senior Nvidia role; before Jensen's exit, she…",
-   "url": "https://www.nytimes.com/2026/11/16/technology/nvidia-jensen-madison-huang.html?unlocked_article_code=1.RFE.d0Ui.v_uJvV3zdxPR&smid=nytcore-ios-share",
-   "source": "New York Times",
-   "published_at": "2026-11-17T03:20:49Z",
-   "text": "Sources: Jensen Huang's daughter Madison remains in a senior Nvidia role; before Jensen's exit, she was his de facto chief of staff with considerable authority. Installed as her father's de facto chief of staff, Jensen Huang's daughter alienated top executives.",
+   "title": "Source: Nvidia's board is not considering bringing Jensen Huang back as CEO, and it is focused on a…",
+   "url": "https://www.cnbc.com/2026/11/16/nvidia-ceo-jensen-huang.html",
+   "source": "CNBC",
+   "published_at": "2026-11-16T17:43:50Z",
+   "text": "Source: Nvidia's board is not considering bringing Jensen Huang back as CEO, and it is focused on a national security probe into Huang, led by Wachtell Lipton. Nvidia's board of directors is not considering bringing back Jensen Huang as CEO, a person familiar with the matter told CNBC.",
    "via": "Techmeme"
+  },
+  {
+   "title": "We’re working with @ApolloResearch, @METR_Evals, @TransluceAI, and @GoodfireAI on embedded assessme…",
+   "url": "https://x.com/OpenAI/status/2122359930628063248",
+   "source": "𝕏 @OpenAI",
+   "published_at": "2026-11-16T16:03:33Z",
+   "text": "We’re working with @ApolloResearch, @METR_Evals, @TransluceAI, and @GoodfireAI on embedded assessments: giving outside experts deep access to our internal models and systems to investigate alignment and test our safeguards. These assessments build on our ongoing alignment and…",
+   "author_name": "OpenAI",
+   "likes": 3079,
+   "story": "OpenAI says it signed agreements with independent assessors Apollo Research, METR, Transluce, and Goodfire for its first phase of AI model embedded assessments"
   },
   {
    "title": "In other words: Apple starts marketing their own AI agent two years in advance.",
@@ -86,15 +96,25 @@
    "published_at": "2026-11-16T22:58:03Z",
    "text": "In other words: Apple starts marketing their own AI agent two years in advance.",
    "author_name": "Mark Gurman",
-   "likes": 3640,
+   "likes": 3690,
    "story": "macOS 27.3 beta warns users against giving AI apps full control, nudging users to “Choose Apps” for the app to control instead, brought on by AI's popularity"
   },
   {
-   "title": "Source: Nvidia's board is not considering bringing Jensen Huang back as CEO, and it is focused on a…",
-   "url": "https://www.cnbc.com/2026/11/16/nvidia-ceo-jensen-huang.html",
-   "source": "CNBC",
-   "published_at": "2026-11-16T17:43:50Z",
-   "text": "Source: Nvidia's board is not considering bringing Jensen Huang back as CEO, and it is focused on a national security probe into Huang, led by Wachtell Lipton. Nvidia's board of directors is not considering bringing back Jensen Huang as CEO, a person familiar with the matter told CNBC.",
+   "title": "A senior NVIDIA employee has written a letter to the board of directors warning that 'irreplaceable…",
+   "url": "https://x.com/AndrewCurran_/status/2122546684144263678",
+   "source": "𝕏 @AndrewCurran_",
+   "published_at": "2026-11-17T04:25:39Z",
+   "text": "A senior NVIDIA employee has written a letter to the board of directors warning that 'irreplaceable talent at NVIDIA is now contemplating departing' if Jensen is not reinstated as CEO. Employees are also discussing holding a demonstration in support of Jensen sometime this week.",
+   "author_name": "Andrew Curran",
+   "likes": 758,
+   "story": "Sources: Jensen Huang's daughter Madison remains in a senior Nvidia role; before Jensen's exit, she was his de facto chief of staff with considerable authority"
+  },
+  {
+   "title": "Sources: Nvidia warned customers that the proposed Remote Access Security Act could expose them to…",
+   "url": "https://www.cnbc.com/2026/11/17/nvidia-china-cloud-ai-chip-access.html",
+   "source": "Kai Nicol-Schwarz / CNBC",
+   "published_at": "2026-11-17T10:32:48Z",
+   "text": "Sources: Nvidia warned customers that the proposed Remote Access Security Act could expose them to US legal action if Chinese companies remotely access AI chips. Nvidia warned its customers that new legislation on Chinese companies remotely accessing its artificial-intelligence chips …",
    "via": "Techmeme"
   },
   {
@@ -110,22 +130,6 @@
    "source": "Jeffrey Kampman / Tom's Har…",
    "published_at": "2026-11-17T06:21:21Z",
    "text": "Nvidia unveils its Rubin HPC GPU with “more than 50,000” CUDA cores, up from 28,672 in the current Rubin GPU, for agentic workflows and scientific simulations. Rubin HPC puts “over 50,000” CUDA cores on a chip, implies four-die layout — The Supercomputing 2026 conference is under way …",
-   "via": "Techmeme"
-  },
-  {
-   "title": "Oakland-based Numa, which builds an AI platform to manage car dealership customer service, raised a…",
-   "url": "https://fortune.com/2026/11/16/ai-startup-numa-45-million-car-dealerships-paperwork/",
-   "source": "Camila Grigera Naón / Fortu…",
-   "published_at": "2026-11-17T09:20:51Z",
-   "text": "Oakland-based Numa, which builds an AI platform to manage car dealership customer service, raised a $45M Series C, a source says at a $500M post-money valuation. Artificial intelligence promises to untangle the messy workflows that have long plagued legacy industries.",
-   "via": "Techmeme"
-  },
-  {
-   "title": "OpenAI partners with NATO's NCIA to detect bugs, probe suspicious activity, and deploy fixes under…",
-   "url": "https://www.wsj.com/tech/cybersecurity/openai-partners-with-nato-on-cyber-defenses-ea4df258?st=Konk45&reflink=desktopwebshare_permalink",
-   "source": "Mauro Orru / Wall Street Jo…",
-   "published_at": "2026-11-17T11:55:50Z",
-   "text": "OpenAI partners with NATO's NCIA to detect bugs, probe suspicious activity, and deploy fixes under its Daybreak program; NATO uses up to 300B tokens per month. Under the company's Daybreak program government agencies and enterprise customers can access advanced models for cybersecurity work",
    "via": "Techmeme"
   }
  ],
