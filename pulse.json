@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-17T22:28:17Z",
+ "generated_at": "2026-11-17T23:00:03Z",
  "items": [
   {
    "title": "OpenAI debuts GPT-6.2 Astra and Sol in ChatGPT Work, Codex, and API, saying Astra sets records on w…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-17T17:37:24Z",
    "text": "Imagine being a board member at Nvidia considering potential candidates for CEO, and trying to claim with a straight face that one of the others would do a better job.",
    "author_name": "Paul Graham",
-   "likes": 8515,
+   "likes": 8932,
    "story": "Jensen Huang breaks his silence, saying he “would be honored” to return if the board decides it is in the “best interest” of shareholders, staff, and the US"
   },
   {
@@ -28,13 +28,26 @@
    "text": "Added support for turning on Code Mode while agent teams are enabled; if you already turned it on, sessions with teams on now start in Code Mode · Added a startup warning when an --allowedTools, --disallowedTools or --tools value has an entry that doesn't look like a complete rule · Added a message explaining why MCP servers stop loading when an administrator adds managed-mcp.json during a session · Added a row to /status that says when your provider or an environment variable such as DISABLE_TELEMETRY turns features off"
   },
   {
+   "title": "GPT-6 Cyber for helping further secure the internet, with a major security flaw in Java found by Ca…",
+   "url": "https://x.com/gdb/status/2122819528858161322",
+   "source": "𝕏 @gdb",
+   "published_at": "2026-11-17T22:29:50Z",
+   "text": "GPT-6 Cyber for helping further secure the internet, with a major security flaw in Java found by Calif, as part of our Patch the Planet initiative:",
+   "author_name": "Greg Brockman",
+   "likes": 179,
+   "story": "Cybersecurity startup Calif says it used GPT-6 Cyber to uncover an RCE flaw in Java dubbed “Java4Shell”; Oracle has released a patch",
+   "links": [
+    "https://www.nytimes.com/2026/11/17/us/politics/ai-security-bug-java.html"
+   ]
+  },
+  {
    "title": "Thrilled to announce $5B in funding for @IsomorphicLabs to accelerate our mission to Solve All Dise…",
    "url": "https://x.com/demishassabis/status/2122662616367853670",
    "source": "𝕏 @demishassabis",
    "published_at": "2026-11-17T12:06:19Z",
    "text": "Thrilled to announce $5B in funding for @IsomorphicLabs to accelerate our mission to Solve All Disease. We continue to make rapid progress reimagining drug design from first principles with AI to radically cut the time & cost to find new medicines. Gradually, then all at once...",
    "author_name": "Demis Hassabis",
-   "likes": 10700,
+   "likes": 10858,
    "story": "Alphabet's Isomorphic Labs raised a $5B Series C led by Sequoia and Greenoaks, after raising $2.1B in May and $600M in March 2025, to accelerate clinical trials"
   },
   {
@@ -50,8 +63,8 @@
    "url": "https://www.ft.com/content/dbde7a30-548c-4f9d-a4be-7898a0c24dcf",
    "source": "Hacker News",
    "published_at": "2026-11-17T17:12:06Z",
-   "text": "259 points and 141 comments on Hacker News.",
-   "points": 259,
+   "text": "282 points and 153 comments on Hacker News.",
+   "points": 282,
    "discussion": "https://news.ycombinator.com/item?id=50534631"
   },
   {
@@ -61,7 +74,7 @@
    "published_at": "2026-11-17T16:11:02Z",
    "text": "false flag to promote a war w/ iran for israel? regular incompetence? ai integration failures? legitimate cyber attacks? everything is so broken i don't even know what it is anymore. we also have no confidence in the ppl who are supposed to investigate this stuff",
    "author_name": "hasanabi",
-   "likes": 14108,
+   "likes": 14293,
    "story": "Sources: NSA Net, the highly classified network that the NSA uses for its internal communications, is down; at this point, there is no evidence of a cyberattack"
   },
   {
@@ -87,30 +100,20 @@
    "via": "Techmeme"
   },
   {
-   "title": "In other words: Apple starts marketing their own AI agent two years in advance.",
-   "url": "https://x.com/markgurman/status/2122464242754552100",
-   "source": "𝕏 @markgurman",
-   "published_at": "2026-11-16T22:58:03Z",
-   "text": "In other words: Apple starts marketing their own AI agent two years in advance.",
-   "author_name": "Mark Gurman",
-   "likes": 4442,
-   "story": "macOS 27.3 beta warns users against giving AI apps full access, nudging users to “Choose Apps” for an AI app to control instead, brought on by AI's popularity"
-  },
-  {
    "title": "What is the best harness for each model?",
    "url": "https://runta.com/blog/introducing-frontierharness-eval-v1-1/",
    "source": "Hacker News",
    "published_at": "2026-11-17T14:53:43Z",
-   "text": "303 points and 108 comments on Hacker News.",
-   "points": 303,
+   "text": "311 points and 110 comments on Hacker News.",
+   "points": 311,
    "discussion": "https://news.ycombinator.com/item?id=50532191"
   },
   {
-   "title": "Chinese records: Alice Huang's husband Kang Wei built a state-backed data center network in China,…",
-   "url": "https://www.wsj.com/world/china/alice-huangs-husband-built-a-data-center-empire-backed-by-the-chinese-state-78389c9a?st=6ghwix",
-   "source": "Lingling Wei / Wall Street…",
-   "published_at": "2026-11-17T11:01:32Z",
-   "text": "Chinese records: Alice Huang's husband Kang Wei built a state-backed data center network in China, with proposed investments exceeding $9B between 2021 and 2024",
+   "title": "Microsoft unveils six AI models spanning coding, cybersecurity, images, and voice, saying MAI Code…",
+   "url": "https://www.axios.com/2026/11/17/microsoft-ai-models-openai-anthropic-ignite",
+   "source": "Ina Fried / Axios",
+   "published_at": "2026-11-17T18:26:01Z",
+   "text": "Microsoft unveils six AI models spanning coding, cybersecurity, images, and voice, saying MAI Code 2 has 98% of GPT-6.1 Sol's performance at 40% of the price. Microsoft AI CEO Mustafa Suleyman tells Axios the software giant is making significant progress toward building …",
    "via": "Techmeme"
   },
   {
@@ -118,8 +121,8 @@
    "url": "https://claude.dev/blog/how-the-claude-code-team-thinks-about-verification/",
    "source": "Hacker News",
    "published_at": "2026-11-17T10:20:40Z",
-   "text": "238 points and 186 comments on Hacker News.",
-   "points": 238,
+   "text": "246 points and 192 comments on Hacker News.",
+   "points": 246,
    "discussion": "https://news.ycombinator.com/item?id=50529612"
   },
   {
