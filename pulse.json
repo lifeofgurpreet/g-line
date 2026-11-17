@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-17T17:05:09Z",
+ "generated_at": "2026-11-17T17:37:00Z",
  "items": [
   {
    "title": "Nvidia's board establishes a National Security and Export Control Oversight Committee to oversee na…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-17T12:06:19Z",
    "text": "Thrilled to announce $5B in funding for @IsomorphicLabs to accelerate our mission to Solve All Disease. We continue to make rapid progress reimagining drug design from first principles with AI to radically cut the time & cost to find new medicines. Gradually, then all at once...",
    "author_name": "Demis Hassabis",
-   "likes": 8299,
+   "likes": 8663,
    "story": "Alphabet's Isomorphic Labs raised a $5B Series C led by Sequoia and Greenoaks, after raising $2.1B in May and $600M in March 2025, to accelerate clinical trials"
   },
   {
@@ -28,14 +28,24 @@
    "text": "Added support for turning on Code Mode while agent teams are enabled; if you already turned it on, sessions with teams on now start in Code Mode · Added a startup warning when an --allowedTools, --disallowedTools or --tools value has an entry that doesn't look like a complete rule · Added a message explaining why MCP servers stop loading when an administrator adds managed-mcp.json during a session · Added a row to /status that says when your provider or an environment variable such as DISABLE_TELEMETRY turns features off"
   },
   {
-   "title": "California is suing OpenAI for endangering the public by knowingly building artificial intelligence…",
-   "url": "https://x.com/BernieSanders/status/2122438646485962942",
-   "source": "𝕏 @BernieSanders",
-   "published_at": "2026-11-16T21:16:20Z",
-   "text": "California is suing OpenAI for endangering the public by knowingly building artificial intelligence models without safeguards. Good. We can’t allow a handful of Big Tech oligarchs to play God and endanger the future of humanity. Pause advanced AI development NOW.",
-   "author_name": "Bernie Sanders",
-   "likes": 14579,
-   "story": "California's AG sues OpenAI over the Hugging Face attack, alleging it was one of 80+ incidents due to OpenAI testing its AI models without adequate safeguards"
+   "title": "Literally impossible to find someone more capable of running NVIDIA, especially in the period we’re…",
+   "url": "https://x.com/levie/status/2122738620343984575",
+   "source": "𝕏 @levie",
+   "published_at": "2026-11-17T17:08:20Z",
+   "text": "Literally impossible to find someone more capable of running NVIDIA, especially in the period we’re in, than Jensen.",
+   "author_name": "Aaron Levie",
+   "likes": 112,
+   "story": "Jensen Huang breaks his silence, saying he “would be honored” to return if the board decides it is in the “best interest” of shareholders, staff, and the US"
+  },
+  {
+   "title": "false flag to promote a war w/ iran for israel? regular incompetence? ai integration failures? legi…",
+   "url": "https://x.com/hasanthehun/status/2122724202235281897",
+   "source": "𝕏 @hasanthehun",
+   "published_at": "2026-11-17T16:11:02Z",
+   "text": "false flag to promote a war w/ iran for israel? regular incompetence? ai integration failures? legitimate cyber attacks? everything is so broken i don't even know what it is anymore. we also have no confidence in the ppl who are supposed to investigate this stuff",
+   "author_name": "hasanabi",
+   "likes": 6894,
+   "story": "Sources: NSA Net, the highly classified network that the NSA uses for its internal communications, is down; at this point, there is no evidence of a cyberattack"
   },
   {
    "title": "The US Commerce Department says it began probing Megaspeed in 2024 over possible export rule violat…",
@@ -46,13 +56,13 @@
    "via": "Techmeme"
   },
   {
-   "title": "Baidu, Xiaomi CEOs warn of growing gap between AI hype and returns",
-   "url": "https://www.scmp.com/tech/big-tech/article/3374774/baidu-xiaomi-ceos-warn-growing-gap-between-ai-hype-and-returns",
+   "title": "What is the best harness for each model?",
+   "url": "https://runta.com/blog/introducing-frontierharness-eval-v1-1/",
    "source": "Hacker News",
-   "published_at": "2026-11-17T14:19:59Z",
-   "text": "149 points and 181 comments on Hacker News.",
-   "points": 149,
-   "discussion": "https://news.ycombinator.com/item?id=50531751"
+   "published_at": "2026-11-17T14:53:43Z",
+   "text": "151 points and 67 comments on Hacker News.",
+   "points": 151,
+   "discussion": "https://news.ycombinator.com/item?id=50532191"
   },
   {
    "title": "In other words: Apple starts marketing their own AI agent two years in advance.",
@@ -61,15 +71,15 @@
    "published_at": "2026-11-16T22:58:03Z",
    "text": "In other words: Apple starts marketing their own AI agent two years in advance.",
    "author_name": "Mark Gurman",
-   "likes": 4092,
+   "likes": 4115,
    "story": "macOS 27.3 beta warns users against giving AI apps full access, nudging users to “Choose Apps” for an AI app to control instead, brought on by AI's popularity"
   },
   {
-   "title": "Anthropic commits $10 million to Canadian AI research",
-   "url": "https://www.anthropic.com/news/canadian-ai-research",
+   "title": "Advancing Claude for Financial Services",
+   "url": "https://www.anthropic.com/news/advancing-claude-for-financial-services",
    "source": "Anthropic",
-   "published_at": "2026-11-16T20:50:34Z",
-   "text": "Anthropic is committing $10M to Canadian research institutions to fund the next generation of AI research."
+   "published_at": "2026-11-17T17:10:23Z",
+   "text": "Claude for Financial Services adds a native Excel plugin, real-time market connectors, and skills for modeling, comp analysis, and earnings reports."
   },
   {
    "title": "Running the full server-side Datasette Python app in the browser with service workers and Pyodide",
@@ -87,33 +97,23 @@
    "via": "Techmeme"
   },
   {
-   "title": "A senior NVIDIA employee has written a letter to the board of directors warning that 'irreplaceable…",
-   "url": "https://x.com/AndrewCurran_/status/2122546684144263678",
-   "source": "𝕏 @AndrewCurran_",
-   "published_at": "2026-11-17T04:25:39Z",
-   "text": "A senior NVIDIA employee has written a letter to the board of directors warning that 'irreplaceable talent at NVIDIA is now contemplating departing' if Jensen is not reinstated as CEO. Employees are also discussing holding a demonstration in support of Jensen sometime this week.",
-   "author_name": "Andrew Curran",
-   "likes": 900,
-   "story": "Jensen Huang breaks his silence, saying he “would be honored” to return if the board decides it is in the “best interest” of shareholders, staff, and the US"
-  },
-  {
-   "title": "What is the best harness for each model?",
-   "url": "https://runta.com/blog/introducing-frontierharness-eval-v1-1/",
-   "source": "Hacker News",
-   "published_at": "2026-11-17T14:53:43Z",
-   "text": "111 points and 47 comments on Hacker News.",
-   "points": 111,
-   "discussion": "https://news.ycombinator.com/item?id=50532191"
-  },
-  {
    "title": "With Carbon's help, I ran Gemma directly in an office printer 😅🖨️ 🤏Carbon compiled a small transfor…",
    "url": "https://x.com/osanseviero/status/2122646098418491739",
    "source": "𝕏 @osanseviero",
    "published_at": "2026-11-17T11:00:41Z",
    "text": "With Carbon's help, I ran Gemma directly in an office printer 😅🖨️ 🤏Carbon compiled a small transformer engine + quantized Gemma 3 270m into a single PostScript job ⚡️ 100% in the printer: 14MB peak RAM and blazing 60s per token 🧠Smart layers juggling to avoid OOMing htt",
    "author_name": "Omar Sanseviero",
-   "likes": 600,
+   "likes": 626,
    "story": "Gemma on a printer"
+  },
+  {
+   "title": "How the Claude Code team thinks about verification",
+   "url": "https://claude.dev/blog/how-the-claude-code-team-thinks-about-verification/",
+   "source": "Hacker News",
+   "published_at": "2026-11-17T10:20:40Z",
+   "text": "161 points and 148 comments on Hacker News.",
+   "points": 161,
+   "discussion": "https://news.ycombinator.com/item?id=50529612"
   },
   {
    "title": "Chinese records: Alice Huang's husband Kang Wei built a state-backed data center network in China,…",
@@ -124,13 +124,11 @@
    "via": "Techmeme"
   },
   {
-   "title": "How the Claude Code team thinks about verification",
-   "url": "https://claude.dev/blog/how-the-claude-code-team-thinks-about-verification/",
-   "source": "Hacker News",
-   "published_at": "2026-11-17T10:20:40Z",
-   "text": "145 points and 136 comments on Hacker News.",
-   "points": 145,
-   "discussion": "https://news.ycombinator.com/item?id=50529612"
+   "title": "Anthropic commits $10 million to Canadian AI research",
+   "url": "https://www.anthropic.com/news/canadian-ai-research",
+   "source": "Anthropic",
+   "published_at": "2026-11-16T20:50:34Z",
+   "text": "Anthropic is committing $10M to Canadian research institutions to fund the next generation of AI research."
   }
  ],
  "sources": "curated, Techmeme, X (found via Techmeme, Reddit, the Internet Archive), Claude Code releases, Anthropic, Hacker News, Simon Willison"
