@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-17T20:51:03Z",
+ "generated_at": "2026-11-17T21:23:34Z",
  "items": [
   {
    "title": "OpenAI debuts GPT-6.2 Astra and Sol in ChatGPT Work, Codex, and API, saying Astra sets records on w…",
@@ -17,8 +17,8 @@
    "published_at": "2026-11-17T17:37:24Z",
    "text": "Imagine being a board member at Nvidia considering potential candidates for CEO, and trying to claim with a straight face that one of the others would do a better job.",
    "author_name": "Paul Graham",
-   "likes": 6972,
-   "story": "Jensen Huang breaks his silence, saying he “would be honored” to return if the board decides it is in the “best interest” of shareholders, staff, and the US"
+   "likes": 7519,
+   "story": "Sources: Nvidia Director of Developer Tech Nader Khalil wrote to the board arguing that not reinstating Jensen Huang could cost Nvidia “irreplaceable talent”"
   },
   {
    "title": "Claude Code 2.1.326 released",
@@ -28,13 +28,23 @@
    "text": "Added support for turning on Code Mode while agent teams are enabled; if you already turned it on, sessions with teams on now start in Code Mode · Added a startup warning when an --allowedTools, --disallowedTools or --tools value has an entry that doesn't look like a complete rule · Added a message explaining why MCP servers stop loading when an administrator adds managed-mcp.json during a session · Added a row to /status that says when your provider or an environment variable such as DISABLE_TELEMETRY turns features off"
   },
   {
+   "title": "IDEA: Instead of coming back to Nvidia directly, Jensen should try to route himself through a holdi…",
+   "url": "https://x.com/CaseyNewton/status/2122758254464016511",
+   "source": "𝕏 @CaseyNewton",
+   "published_at": "2026-11-17T18:26:21Z",
+   "text": "IDEA: Instead of coming back to Nvidia directly, Jensen should try to route himself through a holding company in Malaysia or Singapore",
+   "author_name": "Casey Newton",
+   "likes": 798,
+   "story": "Jensen Huang breaks his silence, saying he “would be honored” to return if the board decides it is in the “best interest” of shareholders, staff, and the US"
+  },
+  {
    "title": "Thrilled to announce $5B in funding for @IsomorphicLabs to accelerate our mission to Solve All Dise…",
    "url": "https://x.com/demishassabis/status/2122662616367853670",
    "source": "𝕏 @demishassabis",
    "published_at": "2026-11-17T12:06:19Z",
    "text": "Thrilled to announce $5B in funding for @IsomorphicLabs to accelerate our mission to Solve All Disease. We continue to make rapid progress reimagining drug design from first principles with AI to radically cut the time & cost to find new medicines. Gradually, then all at once...",
    "author_name": "Demis Hassabis",
-   "likes": 10188,
+   "likes": 10353,
    "story": "Alphabet's Isomorphic Labs raised a $5B Series C led by Sequoia and Greenoaks, after raising $2.1B in May and $600M in March 2025, to accelerate clinical trials"
   },
   {
@@ -50,8 +60,8 @@
    "url": "https://www.ft.com/content/dbde7a30-548c-4f9d-a4be-7898a0c24dcf",
    "source": "Hacker News",
    "published_at": "2026-11-17T17:12:06Z",
-   "text": "156 points and 92 comments on Hacker News.",
-   "points": 156,
+   "text": "194 points and 104 comments on Hacker News.",
+   "points": 194,
    "discussion": "https://news.ycombinator.com/item?id=50534631"
   },
   {
@@ -61,7 +71,7 @@
    "published_at": "2026-11-17T16:11:02Z",
    "text": "false flag to promote a war w/ iran for israel? regular incompetence? ai integration failures? legitimate cyber attacks? everything is so broken i don't even know what it is anymore. we also have no confidence in the ppl who are supposed to investigate this stuff",
    "author_name": "hasanabi",
-   "likes": 13150,
+   "likes": 13560,
    "story": "Sources: NSA Net, the highly classified network that the NSA uses for its internal communications, is down; at this point, there is no evidence of a cyberattack"
   },
   {
@@ -93,7 +103,7 @@
    "published_at": "2026-11-16T22:58:03Z",
    "text": "In other words: Apple starts marketing their own AI agent two years in advance.",
    "author_name": "Mark Gurman",
-   "likes": 4334,
+   "likes": 4364,
    "story": "macOS 27.3 beta warns users against giving AI apps full access, nudging users to “Choose Apps” for an AI app to control instead, brought on by AI's popularity"
   },
   {
@@ -101,8 +111,8 @@
    "url": "https://runta.com/blog/introducing-frontierharness-eval-v1-1/",
    "source": "Hacker News",
    "published_at": "2026-11-17T14:53:43Z",
-   "text": "281 points and 101 comments on Hacker News.",
-   "points": 281,
+   "text": "291 points and 103 comments on Hacker News.",
+   "points": 291,
    "discussion": "https://news.ycombinator.com/item?id=50532191"
   },
   {
@@ -118,16 +128,9 @@
    "url": "https://claude.dev/blog/how-the-claude-code-team-thinks-about-verification/",
    "source": "Hacker News",
    "published_at": "2026-11-17T10:20:40Z",
-   "text": "217 points and 169 comments on Hacker News.",
-   "points": 217,
+   "text": "222 points and 173 comments on Hacker News.",
+   "points": 222,
    "discussion": "https://news.ycombinator.com/item?id=50529612"
-  },
-  {
-   "title": "Anthropic commits $10 million to Canadian AI research",
-   "url": "https://www.anthropic.com/news/canadian-ai-research",
-   "source": "Anthropic",
-   "published_at": "2026-11-16T20:50:34Z",
-   "text": "Anthropic is committing $10M to Canadian research institutions to fund the next generation of AI research."
   }
  ],
  "sources": "curated, Techmeme, X (found via Techmeme, Reddit, the Internet Archive), Claude Code releases, Anthropic, Hacker News, Simon Willison"
