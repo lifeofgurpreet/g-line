@@ -1,13 +1,13 @@
 {
  "schema": 1,
- "generated_at": "2026-11-17T14:23:16Z",
+ "generated_at": "2026-11-17T14:55:53Z",
  "items": [
   {
-   "title": "Nvidia's board establishes a National Security and Export Control Oversight Committee to oversee na…",
-   "url": "https://nvidianews.nvidia.com/news/nvidia-board-of-directors-establishes-national-security-and-export-control-oversight-committee",
-   "source": "Nvidia Newsroom",
-   "published_at": "2026-11-17T10:14:36Z",
-   "text": "Nvidia's board establishes a National Security and Export Control Oversight Committee to oversee national security policies, export control compliance, and more. - Committee to provide oversight over NVIDIA's national security and global trade compliance programs",
+   "title": "Sources: Nvidia warned customers that the proposed Remote Access Security Act could expose them to…",
+   "url": "https://www.cnbc.com/2026/11/17/nvidia-china-cloud-ai-chip-access.html",
+   "source": "Kai Nicol-Schwarz / CNBC",
+   "published_at": "2026-11-17T10:32:48Z",
+   "text": "Sources: Nvidia warned customers that the proposed Remote Access Security Act could expose them to US legal action if Chinese companies remotely access AI chips. Nvidia warned its customers that new legislation on Chinese companies remotely accessing its artificial-intelligence chips …",
    "via": "Techmeme"
   },
   {
@@ -17,7 +17,7 @@
    "published_at": "2026-11-17T12:06:19Z",
    "text": "Thrilled to announce $5B in funding for @IsomorphicLabs to accelerate our mission to Solve All Disease. We continue to make rapid progress reimagining drug design from first principles with AI to radically cut the time & cost to find new medicines. Gradually, then all at once...",
    "author_name": "Demis Hassabis",
-   "likes": 5505,
+   "likes": 6265,
    "story": "Alphabet's Isomorphic Labs raised a $5B Series C led by Sequoia and Greenoaks, after raising $2.1B in May and $600M in March 2025, to accelerate clinical trials"
   },
   {
@@ -34,15 +34,15 @@
    "published_at": "2026-11-16T18:31:00Z",
    "text": "“AI is here, just get used to it” and what you have to get used to is that everything works worse now than it did five years ago",
    "author_name": "Mike Drucker",
-   "likes": 32441,
+   "likes": 32601,
    "story": "Bank of America, Chase, Wells Fargo, and other US bank customers report online service issues; Chase blames a technical issue, not a cyber issue, for the delays"
   },
   {
-   "title": "Sources: Nvidia warned customers that the proposed Remote Access Security Act could expose them to…",
-   "url": "https://www.cnbc.com/2026/11/17/nvidia-china-cloud-ai-chip-access.html",
-   "source": "Kai Nicol-Schwarz / CNBC",
-   "published_at": "2026-11-17T10:32:48Z",
-   "text": "Sources: Nvidia warned customers that the proposed Remote Access Security Act could expose them to US legal action if Chinese companies remotely access AI chips. Nvidia warned its customers that new legislation on Chinese companies remotely accessing its artificial-intelligence chips …",
+   "title": "Nvidia's board establishes a National Security and Export Control Oversight Committee to oversee na…",
+   "url": "https://nvidianews.nvidia.com/news/nvidia-board-of-directors-establishes-national-security-and-export-control-oversight-committee",
+   "source": "Nvidia Newsroom",
+   "published_at": "2026-11-17T10:14:36Z",
+   "text": "Nvidia's board establishes a National Security and Export Control Oversight Committee to oversee national security policies, export control compliance, and more. - Committee to provide oversight over NVIDIA's national security and global trade compliance programs",
    "via": "Techmeme"
   },
   {
@@ -50,8 +50,8 @@
    "url": "https://claude.dev/blog/how-the-claude-code-team-thinks-about-verification/",
    "source": "Hacker News",
    "published_at": "2026-11-17T10:20:40Z",
-   "text": "82 points and 103 comments on Hacker News.",
-   "points": 82,
+   "text": "96 points and 107 comments on Hacker News.",
+   "points": 96,
    "discussion": "https://news.ycombinator.com/item?id=50529612"
   },
   {
@@ -61,7 +61,7 @@
    "published_at": "2026-11-16T21:16:20Z",
    "text": "California is suing OpenAI for endangering the public by knowingly building artificial intelligence models without safeguards. Good. We can’t allow a handful of Big Tech oligarchs to play God and endanger the future of humanity. Pause advanced AI development NOW.",
    "author_name": "Bernie Sanders",
-   "likes": 13902,
+   "likes": 14046,
    "story": "California's AG sues OpenAI over the Hugging Face attack, alleging it was one of 80+ incidents due to OpenAI testing its AI models without adequate safeguards"
   },
   {
@@ -86,7 +86,7 @@
    "published_at": "2026-11-16T22:58:03Z",
    "text": "In other words: Apple starts marketing their own AI agent two years in advance.",
    "author_name": "Mark Gurman",
-   "likes": 3833,
+   "likes": 3902,
    "story": "macOS 27.3 beta warns users against giving AI apps full access, nudging users to “Choose Apps” for an AI app to control instead, brought on by AI's popularity"
   },
   {
@@ -96,25 +96,15 @@
    "published_at": "2026-11-17T11:00:41Z",
    "text": "With Carbon's help, I ran Gemma directly in an office printer 😅🖨️ 🤏Carbon compiled a small transformer engine + quantized Gemma 3 270m into a single PostScript job ⚡️ 100% in the printer: 14MB peak RAM and blazing 60s per token 🧠Smart layers juggling to avoid OOMing htt",
    "author_name": "Omar Sanseviero",
-   "likes": 425,
+   "likes": 467,
    "story": "Gemma on a printer"
   },
   {
-   "title": "Dario Amodei on open source models: “If the path continues, I think we could get to a very dangerou…",
-   "url": "https://x.com/vikktorrrre/status/2122353364306374986",
-   "source": "𝕏 @vikktorrrre",
-   "published_at": "2026-11-16T15:37:28Z",
-   "text": "Dario Amodei on open source models: “If the path continues, I think we could get to a very dangerous place.” “When you control a model and you're deploying it, you have the ability to monitor its usage.” “You can revoke a user's access. You can change what the model is willing…",
-   "author_name": "Veee",
-   "likes": 3460,
-   "story": "Are those that advocate against open weight models public enemy #1 ?"
-  },
-  {
-   "title": "Nvidia unveils its Rubin HPC GPU with “more than 50,000” CUDA cores, up from 28,672 in the current…",
-   "url": "https://www.tomshardware.com/pc-components/gpus/nvidia-announces-rubin-hpc-gpu-with-record-number-of-cuda-cores-at-supercomputing-2026-new-chip-accelerates-agentic-hpc-workloads-arrives-in-2028",
-   "source": "Jeffrey Kampman / Tom's Har…",
-   "published_at": "2026-11-17T06:21:21Z",
-   "text": "Nvidia unveils its Rubin HPC GPU with “more than 50,000” CUDA cores, up from 28,672 in the current Rubin GPU, for agentic workflows and scientific simulations. Rubin HPC puts “over 50,000” CUDA cores on a chip, implies four-die layout — The Supercomputing 2026 conference is under way …",
+   "title": "Chinese records: Alice Huang's husband Kang Wei built a state-backed data center network in China,…",
+   "url": "https://www.wsj.com/world/china/alice-huangs-husband-built-a-data-center-empire-backed-by-the-chinese-state-78389c9a?st=6ghwix",
+   "source": "Lingling Wei / Wall Street…",
+   "published_at": "2026-11-17T11:01:32Z",
+   "text": "Chinese records: Alice Huang's husband Kang Wei built a state-backed data center network in China, with proposed investments exceeding $9B between 2021 and 2024. Kang Wei developed the business while his wife was involved with Nvidia's then-CEO — Alice Huang and her husband, Kang Wei …",
    "via": "Techmeme"
   },
   {
@@ -130,6 +120,14 @@
    "source": "Financial Times",
    "published_at": "2026-11-17T10:50:53Z",
    "text": "A look at Anthropic's data center network plans, dubbed Anthropic Direct, committing $900B+ through 2045; docs show it will lease ~875K TPUs for ~$7.2B per year. Just inland from the Mississippi River, about 1,300 workers are racing to finish a 600,000 sq ft data centre rising from the Louisiana woods.",
+   "via": "Techmeme"
+  },
+  {
+   "title": "Nvidia unveils its Rubin HPC GPU with “more than 50,000” CUDA cores, up from 28,672 in the current…",
+   "url": "https://www.tomshardware.com/pc-components/gpus/nvidia-announces-rubin-hpc-gpu-with-record-number-of-cuda-cores-at-supercomputing-2026-new-chip-accelerates-agentic-hpc-workloads-arrives-in-2028",
+   "source": "Jeffrey Kampman / Tom's Har…",
+   "published_at": "2026-11-17T06:21:21Z",
+   "text": "Nvidia unveils its Rubin HPC GPU with “more than 50,000” CUDA cores, up from 28,672 in the current Rubin GPU, for agentic workflows and scientific simulations. Rubin HPC puts “over 50,000” CUDA cores on a chip, implies four-die layout — The Supercomputing 2026 conference is under way …",
    "via": "Techmeme"
   }
  ],
