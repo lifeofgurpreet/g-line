@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-17T20:18:12Z",
+ "generated_at": "2026-11-17T20:51:03Z",
  "items": [
   {
    "title": "OpenAI debuts GPT-6.2 Astra and Sol in ChatGPT Work, Codex, and API, saying Astra sets records on w…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-17T17:37:24Z",
    "text": "Imagine being a board member at Nvidia considering potential candidates for CEO, and trying to claim with a straight face that one of the others would do a better job.",
    "author_name": "Paul Graham",
-   "likes": 6322,
+   "likes": 6972,
    "story": "Jensen Huang breaks his silence, saying he “would be honored” to return if the board decides it is in the “best interest” of shareholders, staff, and the US"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-11-17T12:06:19Z",
    "text": "Thrilled to announce $5B in funding for @IsomorphicLabs to accelerate our mission to Solve All Disease. We continue to make rapid progress reimagining drug design from first principles with AI to radically cut the time & cost to find new medicines. Gradually, then all at once...",
    "author_name": "Demis Hassabis",
-   "likes": 10000,
+   "likes": 10188,
    "story": "Alphabet's Isomorphic Labs raised a $5B Series C led by Sequoia and Greenoaks, after raising $2.1B in May and $600M in March 2025, to accelerate clinical trials"
   },
   {
@@ -46,13 +46,13 @@
    "via": "Techmeme"
   },
   {
-   "title": "What is the best harness for each model?",
-   "url": "https://runta.com/blog/introducing-frontierharness-eval-v1-1/",
+   "title": "Nvidia stopped disclosing Singapore sales as revenues hit $104B",
+   "url": "https://www.ft.com/content/dbde7a30-548c-4f9d-a4be-7898a0c24dcf",
    "source": "Hacker News",
-   "published_at": "2026-11-17T14:53:43Z",
-   "text": "270 points and 97 comments on Hacker News.",
-   "points": 270,
-   "discussion": "https://news.ycombinator.com/item?id=50532191"
+   "published_at": "2026-11-17T17:12:06Z",
+   "text": "156 points and 92 comments on Hacker News.",
+   "points": 156,
+   "discussion": "https://news.ycombinator.com/item?id=50534631"
   },
   {
    "title": "false flag to promote a war w/ iran for israel? regular incompetence? ai integration failures? legi…",
@@ -61,7 +61,7 @@
    "published_at": "2026-11-17T16:11:02Z",
    "text": "false flag to promote a war w/ iran for israel? regular incompetence? ai integration failures? legitimate cyber attacks? everything is so broken i don't even know what it is anymore. we also have no confidence in the ppl who are supposed to investigate this stuff",
    "author_name": "hasanabi",
-   "likes": 12620,
+   "likes": 13150,
    "story": "Sources: NSA Net, the highly classified network that the NSA uses for its internal communications, is down; at this point, there is no evidence of a cyberattack"
   },
   {
@@ -93,17 +93,17 @@
    "published_at": "2026-11-16T22:58:03Z",
    "text": "In other words: Apple starts marketing their own AI agent two years in advance.",
    "author_name": "Mark Gurman",
-   "likes": 4300,
+   "likes": 4334,
    "story": "macOS 27.3 beta warns users against giving AI apps full access, nudging users to “Choose Apps” for an AI app to control instead, brought on by AI's popularity"
   },
   {
-   "title": "Nvidia stopped disclosing Singapore sales as revenues hit $104B",
-   "url": "https://www.ft.com/content/dbde7a30-548c-4f9d-a4be-7898a0c24dcf",
+   "title": "What is the best harness for each model?",
+   "url": "https://runta.com/blog/introducing-frontierharness-eval-v1-1/",
    "source": "Hacker News",
-   "published_at": "2026-11-17T17:12:06Z",
-   "text": "131 points and 69 comments on Hacker News.",
-   "points": 131,
-   "discussion": "https://news.ycombinator.com/item?id=50534631"
+   "published_at": "2026-11-17T14:53:43Z",
+   "text": "281 points and 101 comments on Hacker News.",
+   "points": 281,
+   "discussion": "https://news.ycombinator.com/item?id=50532191"
   },
   {
    "title": "Microsoft unveils six AI models spanning coding, cybersecurity, images, and voice, saying MAI Code…",
@@ -118,8 +118,8 @@
    "url": "https://claude.dev/blog/how-the-claude-code-team-thinks-about-verification/",
    "source": "Hacker News",
    "published_at": "2026-11-17T10:20:40Z",
-   "text": "210 points and 163 comments on Hacker News.",
-   "points": 210,
+   "text": "217 points and 169 comments on Hacker News.",
+   "points": 217,
    "discussion": "https://news.ycombinator.com/item?id=50529612"
   },
   {
