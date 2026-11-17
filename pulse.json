@@ -1,13 +1,13 @@
 {
  "schema": 1,
- "generated_at": "2026-11-17T16:00:51Z",
+ "generated_at": "2026-11-17T16:33:11Z",
  "items": [
   {
-   "title": "Nvidia's board establishes a National Security and Export Control Oversight Committee to oversee na…",
-   "url": "https://nvidianews.nvidia.com/news/nvidia-board-of-directors-establishes-national-security-and-export-control-oversight-committee",
-   "source": "Nvidia Newsroom",
-   "published_at": "2026-11-17T10:14:36Z",
-   "text": "Nvidia's board establishes a National Security and Export Control Oversight Committee to oversee national security policies, export control compliance, and more. - Committee to provide oversight over NVIDIA's national security and global trade compliance programs",
+   "title": "Jensen Huang breaks silence, saying he is willing to return as Nvidia CEO if the board decides it i…",
+   "url": "https://www.wsj.com/tech/jensen-huang-statement-nvidia-ceo-9dedca36?st=1Tm7UU&reflink=article_copyURL_share",
+   "source": "Robbie Whelan / Wall Street…",
+   "published_at": "2026-11-17T16:05:56Z",
+   "text": "Jensen Huang breaks silence, saying he is willing to return as Nvidia CEO if the board decides it is in the best interest of shareholders, employees, and the US. Outpouring of support from friends and colleagues has been overwhelming, Huang says — Jensen Huang is willing to return …",
    "via": "Techmeme"
   },
   {
@@ -17,7 +17,7 @@
    "published_at": "2026-11-17T12:06:19Z",
    "text": "Thrilled to announce $5B in funding for @IsomorphicLabs to accelerate our mission to Solve All Disease. We continue to make rapid progress reimagining drug design from first principles with AI to radically cut the time & cost to find new medicines. Gradually, then all at once...",
    "author_name": "Demis Hassabis",
-   "likes": 7408,
+   "likes": 7909,
    "story": "Alphabet's Isomorphic Labs raised a $5B Series C led by Sequoia and Greenoaks, after raising $2.1B in May and $600M in March 2025, to accelerate clinical trials"
   },
   {
@@ -28,14 +28,48 @@
    "text": "Added support for turning on Code Mode while agent teams are enabled; if you already turned it on, sessions with teams on now start in Code Mode · Added a startup warning when an --allowedTools, --disallowedTools or --tools value has an entry that doesn't look like a complete rule · Added a message explaining why MCP servers stop loading when an administrator adds managed-mcp.json during a session · Added a row to /status that says when your provider or an environment variable such as DISABLE_TELEMETRY turns features off"
   },
   {
-   "title": "“AI is here, just get used to it” and what you have to get used to is that everything works worse n…",
-   "url": "https://x.com/MikeDrucker/status/2122397036699873692",
-   "source": "𝕏 @MikeDrucker",
-   "published_at": "2026-11-16T18:31:00Z",
-   "text": "“AI is here, just get used to it” and what you have to get used to is that everything works worse now than it did five years ago",
-   "author_name": "Mike Drucker",
-   "likes": 32868,
-   "story": "Bank of America, Chase, Wells Fargo, and other US bank customers report online service issues; Chase blames a technical issue, not a cyber issue, for the delays"
+   "title": "California is suing OpenAI for endangering the public by knowingly building artificial intelligence…",
+   "url": "https://x.com/BernieSanders/status/2122438646485962942",
+   "source": "𝕏 @BernieSanders",
+   "published_at": "2026-11-16T21:16:20Z",
+   "text": "California is suing OpenAI for endangering the public by knowingly building artificial intelligence models without safeguards. Good. We can’t allow a handful of Big Tech oligarchs to play God and endanger the future of humanity. Pause advanced AI development NOW.",
+   "author_name": "Bernie Sanders",
+   "likes": 14438,
+   "story": "California's AG sues OpenAI over the Hugging Face attack, alleging it was one of 80+ incidents due to OpenAI testing its AI models without adequate safeguards"
+  },
+  {
+   "title": "Nvidia's board establishes a National Security and Export Control Oversight Committee to oversee na…",
+   "url": "https://nvidianews.nvidia.com/news/nvidia-board-of-directors-establishes-national-security-and-export-control-oversight-committee",
+   "source": "Nvidia Newsroom",
+   "published_at": "2026-11-17T10:14:36Z",
+   "text": "Nvidia's board establishes a National Security and Export Control Oversight Committee to oversee national security policies, export control compliance, and more. - Committee to provide oversight over NVIDIA's national security and global trade compliance programs",
+   "via": "Techmeme"
+  },
+  {
+   "title": "Baidu, Xiaomi CEOs warn of growing gap between AI hype and returns",
+   "url": "https://www.scmp.com/tech/big-tech/article/3374774/baidu-xiaomi-ceos-warn-growing-gap-between-ai-hype-and-returns",
+   "source": "Hacker News",
+   "published_at": "2026-11-17T14:19:59Z",
+   "text": "134 points and 155 comments on Hacker News.",
+   "points": 134,
+   "discussion": "https://news.ycombinator.com/item?id=50531751"
+  },
+  {
+   "title": "In other words: Apple starts marketing their own AI agent two years in advance.",
+   "url": "https://x.com/markgurman/status/2122464242754552100",
+   "source": "𝕏 @markgurman",
+   "published_at": "2026-11-16T22:58:03Z",
+   "text": "In other words: Apple starts marketing their own AI agent two years in advance.",
+   "author_name": "Mark Gurman",
+   "likes": 4052,
+   "story": "macOS 27.3 beta warns users against giving AI apps full access, nudging users to “Choose Apps” for an AI app to control instead, brought on by AI's popularity"
+  },
+  {
+   "title": "Anthropic commits $10 million to Canadian AI research",
+   "url": "https://www.anthropic.com/news/canadian-ai-research",
+   "source": "Anthropic",
+   "published_at": "2026-11-16T20:50:34Z",
+   "text": "Anthropic is committing $10M to Canadian research institutions to fund the next generation of AI research."
   },
   {
    "title": "The US Commerce Department says it began probing Megaspeed in 2024 over possible export rule violat…",
@@ -46,56 +80,22 @@
    "via": "Techmeme"
   },
   {
-   "title": "Baidu, Xiaomi CEOs warn of growing gap between AI hype and returns",
-   "url": "https://www.scmp.com/tech/big-tech/article/3374774/baidu-xiaomi-ceos-warn-growing-gap-between-ai-hype-and-returns",
-   "source": "Hacker News",
-   "published_at": "2026-11-17T14:19:59Z",
-   "text": "109 points and 107 comments on Hacker News.",
-   "points": 109,
-   "discussion": "https://news.ycombinator.com/item?id=50531751"
-  },
-  {
-   "title": "California is suing OpenAI for endangering the public by knowingly building artificial intelligence…",
-   "url": "https://x.com/BernieSanders/status/2122438646485962942",
-   "source": "𝕏 @BernieSanders",
-   "published_at": "2026-11-16T21:16:20Z",
-   "text": "California is suing OpenAI for endangering the public by knowingly building artificial intelligence models without safeguards. Good. We can’t allow a handful of Big Tech oligarchs to play God and endanger the future of humanity. Pause advanced AI development NOW.",
-   "author_name": "Bernie Sanders",
-   "likes": 14298,
-   "story": "California's AG sues OpenAI over the Hugging Face attack, alleging it was one of 80+ incidents due to OpenAI testing its AI models without adequate safeguards"
-  },
-  {
-   "title": "Anthropic commits $10 million to Canadian AI research",
-   "url": "https://www.anthropic.com/news/canadian-ai-research",
-   "source": "Anthropic",
-   "published_at": "2026-11-16T20:50:34Z",
-   "text": "Anthropic is committing $10M to Canadian research institutions to fund the next generation of AI research."
-  },
-  {
-   "title": "Sources: Jensen Huang's daughter Madison remains in a senior Nvidia role; before Jensen's exit, she…",
-   "url": "https://www.nytimes.com/2026/11/16/technology/nvidia-jensen-madison-huang.html?unlocked_article_code=1.RFE.d0Ui.v_uJvV3zdxPR&smid=nytcore-ios-share",
-   "source": "New York Times",
-   "published_at": "2026-11-17T03:20:49Z",
-   "text": "Sources: Jensen Huang's daughter Madison remains in a senior Nvidia role; before Jensen's exit, she was his de facto chief of staff with considerable authority. Installed as her father's de facto chief of staff, Jensen Huang's daughter alienated top executives.",
-   "via": "Techmeme"
-  },
-  {
-   "title": "In other words: Apple starts marketing their own AI agent two years in advance.",
-   "url": "https://x.com/markgurman/status/2122464242754552100",
-   "source": "𝕏 @markgurman",
-   "published_at": "2026-11-16T22:58:03Z",
-   "text": "In other words: Apple starts marketing their own AI agent two years in advance.",
-   "author_name": "Mark Gurman",
-   "likes": 3986,
-   "story": "macOS 27.3 beta warns users against giving AI apps full access, nudging users to “Choose Apps” for an AI app to control instead, brought on by AI's popularity"
+   "title": "A senior NVIDIA employee has written a letter to the board of directors warning that 'irreplaceable…",
+   "url": "https://x.com/AndrewCurran_/status/2122546684144263678",
+   "source": "𝕏 @AndrewCurran_",
+   "published_at": "2026-11-17T04:25:39Z",
+   "text": "A senior NVIDIA employee has written a letter to the board of directors warning that 'irreplaceable talent at NVIDIA is now contemplating departing' if Jensen is not reinstated as CEO. Employees are also discussing holding a demonstration in support of Jensen sometime this week.",
+   "author_name": "Andrew Curran",
+   "likes": 888,
+   "story": "Sources: Jensen Huang's daughter Madison remains in a senior Nvidia role; before Jensen's exit, she was his de facto chief of staff with considerable authority"
   },
   {
    "title": "How the Claude Code team thinks about verification",
    "url": "https://claude.dev/blog/how-the-claude-code-team-thinks-about-verification/",
    "source": "Hacker News",
    "published_at": "2026-11-17T10:20:40Z",
-   "text": "123 points and 125 comments on Hacker News.",
-   "points": 123,
+   "text": "133 points and 134 comments on Hacker News.",
+   "points": 133,
    "discussion": "https://news.ycombinator.com/item?id=50529612"
   },
   {
@@ -105,7 +105,7 @@
    "published_at": "2026-11-17T11:00:41Z",
    "text": "With Carbon's help, I ran Gemma directly in an office printer 😅🖨️ 🤏Carbon compiled a small transformer engine + quantized Gemma 3 270m into a single PostScript job ⚡️ 100% in the printer: 14MB peak RAM and blazing 60s per token 🧠Smart layers juggling to avoid OOMing htt",
    "author_name": "Omar Sanseviero",
-   "likes": 543,
+   "likes": 577,
    "story": "Gemma on a printer"
   },
   {
@@ -115,7 +115,7 @@
    "published_at": "2026-11-16T15:37:28Z",
    "text": "Dario Amodei on open source models: “If the path continues, I think we could get to a very dangerous place.” “When you control a model and you're deploying it, you have the ability to monitor its usage.” “You can revoke a user's access. You can change what the model is willing…",
    "author_name": "Veee",
-   "likes": 3619,
+   "likes": 3678,
    "story": "Are those that advocate against open weight models public enemy #1 ?"
   },
   {
