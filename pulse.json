@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-17T11:09:35Z",
+ "generated_at": "2026-11-17T11:41:39Z",
  "items": [
   {
    "title": "The US Commerce Department says it began probing Megaspeed in 2024 over possible export rule violat…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-16T18:31:00Z",
    "text": "“AI is here, just get used to it” and what you have to get used to is that everything works worse now than it did five years ago",
    "author_name": "Mike Drucker",
-   "likes": 31320,
+   "likes": 31506,
    "story": "Bank of America, Chase, Wells Fargo, and other US bank customers report online service issues; Chase blames a technical issue, not a cyber issue, for the delays"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-11-16T21:16:20Z",
    "text": "California is suing OpenAI for endangering the public by knowingly building artificial intelligence models without safeguards. Good. We can’t allow a handful of Big Tech oligarchs to play God and endanger the future of humanity. Pause advanced AI development NOW.",
    "author_name": "Bernie Sanders",
-   "likes": 13114,
+   "likes": 13245,
    "story": "California's AG sues OpenAI over the Hugging Face attack, alleging it was one of 80+ incidents due to OpenAI testing its AI models without adequate safeguards"
   },
   {
@@ -50,8 +50,8 @@
    "url": "https://xusheng.dev/posts/windows-coding-agent-telemetry/",
    "source": "Hacker News",
    "published_at": "2026-11-16T22:58:20Z",
-   "text": "620 points and 474 comments on Hacker News.",
-   "points": 620,
+   "text": "629 points and 484 comments on Hacker News.",
+   "points": 629,
    "discussion": "https://news.ycombinator.com/item?id=50524736"
   },
   {
@@ -61,7 +61,7 @@
    "published_at": "2026-11-16T16:03:33Z",
    "text": "We’re working with @ApolloResearch, @METR_Evals, @TransluceAI, and @GoodfireAI on embedded assessments: giving outside experts deep access to our internal models and systems to investigate alignment and test our safeguards. These assessments build on our ongoing alignment and…",
    "author_name": "OpenAI",
-   "likes": 3046,
+   "likes": 3055,
    "story": "OpenAI says it signed agreements with independent assessors Apollo Research, METR, Transluce, and Goodfire for its first phase of AI model embedded assessments"
   },
   {
@@ -72,11 +72,11 @@
    "text": "Anthropic is committing $10M to Canadian research institutions to fund the next generation of AI research."
   },
   {
-   "title": "Source: Nvidia's board is not considering bringing Jensen Huang back as CEO, and it is focused on a…",
-   "url": "https://www.cnbc.com/2026/11/16/nvidia-ceo-jensen-huang.html",
-   "source": "CNBC",
-   "published_at": "2026-11-16T17:43:50Z",
-   "text": "Source: Nvidia's board is not considering bringing Jensen Huang back as CEO, and it is focused on a national security probe into Huang, led by Wachtell Lipton. Nvidia's board of directors is not considering bringing back Jensen Huang as CEO, a person familiar with the matter told CNBC.",
+   "title": "Nvidia's board establishes a National Security and Export Control Oversight Committee to oversee na…",
+   "url": "https://nvidianews.nvidia.com/news/nvidia-board-of-directors-establishes-national-security-and-export-control-oversight-committee",
+   "source": "Nvidia Newsroom",
+   "published_at": "2026-11-17T10:14:36Z",
+   "text": "Nvidia's board establishes a National Security and Export Control Oversight Committee to oversee national security policies, export control compliance, and more. - Committee to provide oversight over NVIDIA's national security and global trade compliance programs",
    "via": "Techmeme"
   },
   {
@@ -86,7 +86,7 @@
    "published_at": "2026-11-16T22:58:03Z",
    "text": "In other words: Apple starts marketing their own AI agent two years in advance.",
    "author_name": "Mark Gurman",
-   "likes": 3508,
+   "likes": 3572,
    "story": "macOS 27.3 beta warns users against giving AI apps full control, nudging users to “Choose Apps” for the app to control instead, brought on by AI's popularity"
   },
   {
@@ -96,15 +96,15 @@
    "published_at": "2026-11-16T20:37:12Z",
    "text": "Got off a call with the an MS team lead who was on the bridge for this incident on what exactly happened in the outage: 1. This was a \"latent bug\" - a commit going in ~4 months ago to a Windows build, that only activated much later. Super hard to spot 2. Zero AI, this code was…",
    "author_name": "Gergely Orosz",
-   "likes": 2920,
+   "likes": 2944,
    "story": "Preliminary report: Microsoft blames a major Microsoft 365 and Exchange outage on a software defect introduced in a July 2026 update for network gateway servers"
   },
   {
-   "title": "Nvidia's board establishes a National Security and Export Control Oversight Committee to oversee na…",
-   "url": "https://nvidianews.nvidia.com/news/nvidia-board-of-directors-establishes-national-security-and-export-control-oversight-committee",
-   "source": "Nvidia Newsroom",
-   "published_at": "2026-11-17T10:14:36Z",
-   "text": "Nvidia's board establishes a National Security and Export Control Oversight Committee to oversee national security policies, export control compliance, and more. - Committee to provide oversight over NVIDIA's national security and global trade compliance programs",
+   "title": "Source: Nvidia's board is not considering bringing Jensen Huang back as CEO, and it is focused on a…",
+   "url": "https://www.cnbc.com/2026/11/16/nvidia-ceo-jensen-huang.html",
+   "source": "CNBC",
+   "published_at": "2026-11-16T17:43:50Z",
+   "text": "Source: Nvidia's board is not considering bringing Jensen Huang back as CEO, and it is focused on a national security probe into Huang, led by Wachtell Lipton. Nvidia's board of directors is not considering bringing back Jensen Huang as CEO, a person familiar with the matter told CNBC.",
    "via": "Techmeme"
   },
   {
