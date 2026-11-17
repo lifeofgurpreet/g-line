@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-17T21:23:34Z",
+ "generated_at": "2026-11-17T21:55:55Z",
  "items": [
   {
    "title": "OpenAI debuts GPT-6.2 Astra and Sol in ChatGPT Work, Codex, and API, saying Astra sets records on w…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-17T17:37:24Z",
    "text": "Imagine being a board member at Nvidia considering potential candidates for CEO, and trying to claim with a straight face that one of the others would do a better job.",
    "author_name": "Paul Graham",
-   "likes": 7519,
+   "likes": 8026,
    "story": "Sources: Nvidia Director of Developer Tech Nader Khalil wrote to the board arguing that not reinstating Jensen Huang could cost Nvidia “irreplaceable talent”"
   },
   {
@@ -28,31 +28,21 @@
    "text": "Added support for turning on Code Mode while agent teams are enabled; if you already turned it on, sessions with teams on now start in Code Mode · Added a startup warning when an --allowedTools, --disallowedTools or --tools value has an entry that doesn't look like a complete rule · Added a message explaining why MCP servers stop loading when an administrator adds managed-mcp.json during a session · Added a row to /status that says when your provider or an environment variable such as DISABLE_TELEMETRY turns features off"
   },
   {
-   "title": "IDEA: Instead of coming back to Nvidia directly, Jensen should try to route himself through a holdi…",
-   "url": "https://x.com/CaseyNewton/status/2122758254464016511",
-   "source": "𝕏 @CaseyNewton",
-   "published_at": "2026-11-17T18:26:21Z",
-   "text": "IDEA: Instead of coming back to Nvidia directly, Jensen should try to route himself through a holding company in Malaysia or Singapore",
-   "author_name": "Casey Newton",
-   "likes": 798,
-   "story": "Jensen Huang breaks his silence, saying he “would be honored” to return if the board decides it is in the “best interest” of shareholders, staff, and the US"
-  },
-  {
    "title": "Thrilled to announce $5B in funding for @IsomorphicLabs to accelerate our mission to Solve All Dise…",
    "url": "https://x.com/demishassabis/status/2122662616367853670",
    "source": "𝕏 @demishassabis",
    "published_at": "2026-11-17T12:06:19Z",
    "text": "Thrilled to announce $5B in funding for @IsomorphicLabs to accelerate our mission to Solve All Disease. We continue to make rapid progress reimagining drug design from first principles with AI to radically cut the time & cost to find new medicines. Gradually, then all at once...",
    "author_name": "Demis Hassabis",
-   "likes": 10353,
+   "likes": 10534,
    "story": "Alphabet's Isomorphic Labs raised a $5B Series C led by Sequoia and Greenoaks, after raising $2.1B in May and $600M in March 2025, to accelerate clinical trials"
   },
   {
-   "title": "Sources: Nvidia warned customers that the proposed Remote Access Security Act could expose them to…",
-   "url": "https://www.cnbc.com/2026/11/17/nvidia-china-cloud-ai-chip-access.html",
-   "source": "Kai Nicol-Schwarz / CNBC",
-   "published_at": "2026-11-17T10:32:48Z",
-   "text": "Sources: Nvidia warned customers that the proposed Remote Access Security Act could expose them to US legal action if Chinese companies remotely access AI chips. Nvidia warned its customers that new legislation on Chinese companies remotely accessing its artificial-intelligence chips …",
+   "title": "Nvidia's board establishes a National Security and Export Control Oversight Committee to oversee na…",
+   "url": "https://nvidianews.nvidia.com/news/nvidia-board-of-directors-establishes-national-security-and-export-control-oversight-committee",
+   "source": "Nvidia Newsroom",
+   "published_at": "2026-11-17T10:14:36Z",
+   "text": "Nvidia's board establishes a National Security and Export Control Oversight Committee to oversee national security policies, export control compliance, and more. - Committee to provide oversight over NVIDIA's national security and global trade compliance programs",
    "via": "Techmeme"
   },
   {
@@ -60,8 +50,8 @@
    "url": "https://www.ft.com/content/dbde7a30-548c-4f9d-a4be-7898a0c24dcf",
    "source": "Hacker News",
    "published_at": "2026-11-17T17:12:06Z",
-   "text": "194 points and 104 comments on Hacker News.",
-   "points": 194,
+   "text": "227 points and 120 comments on Hacker News.",
+   "points": 227,
    "discussion": "https://news.ycombinator.com/item?id=50534631"
   },
   {
@@ -71,7 +61,7 @@
    "published_at": "2026-11-17T16:11:02Z",
    "text": "false flag to promote a war w/ iran for israel? regular incompetence? ai integration failures? legitimate cyber attacks? everything is so broken i don't even know what it is anymore. we also have no confidence in the ppl who are supposed to investigate this stuff",
    "author_name": "hasanabi",
-   "likes": 13560,
+   "likes": 13853,
    "story": "Sources: NSA Net, the highly classified network that the NSA uses for its internal communications, is down; at this point, there is no evidence of a cyberattack"
   },
   {
@@ -89,11 +79,11 @@
    "text": "Datasette Lite is my port of the Datasette Python application to run directly in the browser using WebAssembly and Pyodide . I've released a complete rewrite of Datasette Lite using service workers, and it's now almost indistinguishable from the real server-side application. You can now do all of the following, using a carefully crafted URL to lite.datasette.io : Load client-side Datasette to browse any SQLite database, JSON file, CSV file or SQL script Select a released version of Datasette to load from PyPI Load a specific commit, tag, or branch name from the Datasette GitHub repository Pic…"
   },
   {
-   "title": "Nvidia's board establishes a National Security and Export Control Oversight Committee to oversee na…",
-   "url": "https://nvidianews.nvidia.com/news/nvidia-board-of-directors-establishes-national-security-and-export-control-oversight-committee",
-   "source": "Nvidia Newsroom",
-   "published_at": "2026-11-17T10:14:36Z",
-   "text": "Nvidia's board establishes a National Security and Export Control Oversight Committee to oversee national security policies, export control compliance, and more. - Committee to provide oversight over NVIDIA's national security and global trade compliance programs",
+   "title": "The US Commerce Department says it began probing Megaspeed in 2024 over possible export rule violat…",
+   "url": "https://www.reuters.com/world/asia-pacific/us-releases-details-of-megaspeed-probe-says-investigation-began-2024-2026-11-17/",
+   "source": "Kanishka Singh / Reuters",
+   "published_at": "2026-11-17T05:56:02Z",
+   "text": "The US Commerce Department says it began probing Megaspeed in 2024 over possible export rule violations; Nvidia put Megaspeed on its “no sell” list in June 2025",
    "via": "Techmeme"
   },
   {
@@ -103,7 +93,7 @@
    "published_at": "2026-11-16T22:58:03Z",
    "text": "In other words: Apple starts marketing their own AI agent two years in advance.",
    "author_name": "Mark Gurman",
-   "likes": 4364,
+   "likes": 4409,
    "story": "macOS 27.3 beta warns users against giving AI apps full access, nudging users to “Choose Apps” for an AI app to control instead, brought on by AI's popularity"
   },
   {
@@ -111,16 +101,16 @@
    "url": "https://runta.com/blog/introducing-frontierharness-eval-v1-1/",
    "source": "Hacker News",
    "published_at": "2026-11-17T14:53:43Z",
-   "text": "291 points and 103 comments on Hacker News.",
-   "points": 291,
+   "text": "296 points and 104 comments on Hacker News.",
+   "points": 296,
    "discussion": "https://news.ycombinator.com/item?id=50532191"
   },
   {
-   "title": "Microsoft unveils six AI models spanning coding, cybersecurity, images, and voice, saying MAI Code…",
-   "url": "https://www.axios.com/2026/11/17/microsoft-ai-models-openai-anthropic-ignite",
-   "source": "Ina Fried / Axios",
-   "published_at": "2026-11-17T18:26:01Z",
-   "text": "Microsoft unveils six AI models spanning coding, cybersecurity, images, and voice, saying MAI Code 2 has 98% of GPT-6.1 Sol's performance at 40% of the price. Microsoft AI CEO Mustafa Suleyman tells Axios the software giant is making significant progress toward building …",
+   "title": "Nvidia reports Q3 revenue up 103% YoY to $115.8B, above $109.1B est., Data Center revenue up 110% t…",
+   "url": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-third-quarter-fiscal-2027",
+   "source": "Nvidia Newsroom",
+   "published_at": "2026-11-17T21:27:52Z",
+   "text": "Nvidia reports Q3 revenue up 103% YoY to $115.8B, above $109.1B est., Data Center revenue up 110% to $107.6B, and forecasts Q4 revenue above estimates. - Revenue of $115.8 billion, up 103% from a year ago — Data Center revenue of $107.6 billion, up 110% from a year ago",
    "via": "Techmeme"
   },
   {
@@ -128,9 +118,16 @@
    "url": "https://claude.dev/blog/how-the-claude-code-team-thinks-about-verification/",
    "source": "Hacker News",
    "published_at": "2026-11-17T10:20:40Z",
-   "text": "222 points and 173 comments on Hacker News.",
-   "points": 222,
+   "text": "232 points and 179 comments on Hacker News.",
+   "points": 232,
    "discussion": "https://news.ycombinator.com/item?id=50529612"
+  },
+  {
+   "title": "Anthropic commits $10 million to Canadian AI research",
+   "url": "https://www.anthropic.com/news/canadian-ai-research",
+   "source": "Anthropic",
+   "published_at": "2026-11-16T20:50:34Z",
+   "text": "Anthropic is committing $10M to Canadian research institutions to fund the next generation of AI research."
   }
  ],
  "sources": "curated, Techmeme, X (found via Techmeme, Reddit, the Internet Archive), Claude Code releases, Anthropic, Hacker News, Simon Willison"
