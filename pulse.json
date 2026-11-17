@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-17T03:38:04Z",
+ "generated_at": "2026-11-17T04:09:51Z",
  "items": [
   {
    "title": "Source: Nvidia's board is not considering bringing Jensen Huang back as CEO and it is focused on a…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-16T18:31:00Z",
    "text": "“AI is here, just get used to it” and what you have to get used to is that everything works worse now than it did five years ago",
    "author_name": "Mike Drucker",
-   "likes": 27912,
+   "likes": 28359,
    "story": "Bank of America, Chase, Wells Fargo, and other US bank customers report online service issues; Chase blames a technical issue, not a cyber issue, for the delays"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-11-16T21:16:20Z",
    "text": "California is suing OpenAI for endangering the public by knowingly building artificial intelligence models without safeguards. Good. We can’t allow a handful of Big Tech oligarchs to play God and endanger the future of humanity. Pause advanced AI development NOW.",
    "author_name": "Bernie Sanders",
-   "likes": 7970,
+   "likes": 8491,
    "story": "California's AG sues OpenAI over the Hugging Face attack, alleging it was one of 80+ incidents due to OpenAI testing its AI models without adequate safeguards"
   },
   {
@@ -50,8 +50,8 @@
    "url": "https://xusheng.dev/posts/windows-coding-agent-telemetry/",
    "source": "Hacker News",
    "published_at": "2026-11-16T22:58:20Z",
-   "text": "319 points and 184 comments on Hacker News.",
-   "points": 319,
+   "text": "341 points and 207 comments on Hacker News.",
+   "points": 341,
    "discussion": "https://news.ycombinator.com/item?id=50524736"
   },
   {
@@ -61,7 +61,7 @@
    "published_at": "2026-11-16T16:03:33Z",
    "text": "We’re working with @ApolloResearch, @METR_Evals, @TransluceAI, and @GoodfireAI on embedded assessments: giving outside experts deep access to our internal models and systems to investigate alignment and test our safeguards. These assessments build on our ongoing alignment and…",
    "author_name": "OpenAI",
-   "likes": 2883,
+   "likes": 2905,
    "story": "OpenAI says it signed agreements with independent assessors Apollo Research, METR, Transluce, and Goodfire for its first phase of AI model embedded assessments"
   },
   {
@@ -86,7 +86,7 @@
    "published_at": "2026-11-16T20:37:12Z",
    "text": "Got off a call with the an MS team lead who was on the bridge for this incident on what exactly happened in the outage: 1. This was a \"latent bug\" - a commit going in ~4 months ago to a Windows build, that only activated much later. Super hard to spot 2. Zero AI, this code was…",
    "author_name": "Gergely Orosz",
-   "likes": 2187,
+   "likes": 2273,
    "story": "Preliminary report: Microsoft blames a major Microsoft 365 and Exchange outage on a software defect introduced in a July 2026 update for network gateway servers"
   },
   {
@@ -121,11 +121,11 @@
    "via": "Techmeme"
   },
   {
-   "title": "Q&A with Satya Nadella on code verification becoming more important as code generation gets cheap,…",
-   "url": "https://newsletter.pragmaticengineer.com/p/software-engineering-after-code-becomes",
-   "source": "Gergely Orosz / The Pragmat…",
-   "published_at": "2026-11-16T19:15:58Z",
-   "text": "Q&A with Satya Nadella on code verification becoming more important as code generation gets cheap, Microsoft's voluntary exit offers, decision models, and more. Listen and watch now on YouTube, Apple, and Spotify. See the episode transcript at the top of this page, and timestamps for the episode at the bottom.",
+   "title": "Harvard study: 403 US data centers, operational between May 2024 and April 2025, consumed more elec…",
+   "url": "https://www.wired.com/story/data-centers-use-more-electricity-than-michigan/",
+   "source": "Molly Taft / Wired",
+   "published_at": "2026-11-16T16:45:47Z",
+   "text": "Harvard study: 403 US data centers, operational between May 2024 and April 2025, consumed more electricity in total than the state of Michigan in a single year. New Harvard research shows that data-center power demand is outstripping states—and that doesn't even include facilities with off-grid gas plants.",
    "via": "Techmeme"
   }
  ],
