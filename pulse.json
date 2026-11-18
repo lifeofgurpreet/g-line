@@ -1,27 +1,24 @@
 {
  "schema": 1,
- "generated_at": "2026-11-18T05:24:29Z",
+ "generated_at": "2026-11-18T22:16:40Z",
  "items": [
   {
-   "title": "Nvidia reports Q3 revenue up 103% YoY to $115.8B, above $109.1B est., Data Center revenue up 110% t…",
-   "url": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-third-quarter-fiscal-2027",
-   "source": "Nvidia Newsroom",
-   "published_at": "2026-11-17T21:27:52Z",
-   "text": "Nvidia reports Q3 revenue up 103% YoY to $115.8B, above $109.1B est., Data Center revenue up 110% to $107.6B, and forecasts Q4 revenue above estimates. - Revenue of $115.8 billion, up 103% from a year ago — Data Center revenue of $107.6 billion, up 110% from a year ago",
+   "title": "Google rolls out Gemini 4 Neon, with “fast end-to-end task completion” across coding, knowledge wor…",
+   "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/",
+   "source": "Koray Kavukcuoglu / Google",
+   "published_at": "2026-11-18T21:49:14Z",
+   "text": "Google rolls out Gemini 4 Neon, with “fast end-to-end task completion” across coding, knowledge work, and science, in the API, Antigravity, and the Gemini app. Bringing frontier-level intelligence with fast end-to-end task completion across complex software engineering, knowledge work, and science workflows.",
    "via": "Techmeme"
   },
   {
-   "title": "Some of you have been asking very politely. Some of you have just been asking. GPT-6.2 Astra and So…",
-   "url": "https://x.com/OpenAI/status/2122750124543926515",
+   "title": "Working with @AMD, our models identified up to 14% PPA improvement on flagship GPU IP in less than…",
+   "url": "https://x.com/OpenAI/status/2123100386638877054",
    "source": "𝕏 @OpenAI",
-   "published_at": "2026-11-17T17:54:03Z",
-   "text": "Some of you have been asking very politely. Some of you have just been asking. GPT-6.2 Astra and Sol are now available. Super efficient and built to perform where it counts—the real world.",
+   "published_at": "2026-11-18T17:05:52Z",
+   "text": "Working with @AMD, our models identified up to 14% PPA improvement on flagship GPU IP in less than five months—building on designs AMD’s engineers had already spent years optimizing. The same approach helped improve Jalapeño, our first custom inference chip, with gains verified…",
    "author_name": "OpenAI",
-   "likes": 32655,
-   "story": "OpenAI debuts GPT-6.2 Astra and Sol in ChatGPT Work, Codex, and API, saying Astra sets records on work and science evals at under a third of GPT-6 Astra's cost",
-   "links": [
-    "https://openai.com/index/introducing-gpt-6-2-astra-sol"
-   ]
+   "likes": 3437,
+   "story": "OpenAI says its models improved power, performance, and area by up to 14% on AMD's flagship GPU IP; some changes are in a design AMD sent for manufacturing"
   },
   {
    "title": "Claude Code 2.1.327 released",
@@ -31,48 +28,61 @@
    "text": "Added a confirmation before /install-github-app changes a repository · Added claude mcp add-json - to read the server's JSON from stdin, so tokens can stay off the command line; not available inside a Claude Code session · Added a line when a resumed session's earlier messages can't be loaded · Added a list in /status of broken agent, skill, command and output style files, keybinding errors, an unavailable sandbox, ignored permission settings and hook matchers that never match"
   },
   {
-   "title": "Imagine being a board member at Nvidia considering potential candidates for CEO, and trying to clai…",
-   "url": "https://x.com/paulg/status/2122745936279462274",
-   "source": "𝕏 @paulg",
-   "published_at": "2026-11-17T17:37:24Z",
-   "text": "Imagine being a board member at Nvidia considering potential candidates for CEO, and trying to claim with a straight face that one of the others would do a better job.",
-   "author_name": "Paul Graham",
-   "likes": 11862,
-   "story": "Jensen Huang breaks his silence, saying he “would be honored” to return if the board decides it is in the “best interest” of shareholders, staff, and the US"
+   "title": "There are AI startups out there other than Anthropic! Bret Taylor's Sierra is in talks to raise at…",
+   "url": "https://x.com/steph_palazzolo/status/2123142066586722686",
+   "source": "𝕏 @steph_palazzolo",
+   "published_at": "2026-11-18T19:51:29Z",
+   "text": "There are AI startups out there other than Anthropic! Bret Taylor's Sierra is in talks to raise at a $30B valuation, nearly doubling its price from its May fundraise. Lightspeed, Greenoaks and Benchmark are in talks to invest. More here w/ @validapau:",
+   "author_name": "Stephanie Palazzolo",
+   "likes": 37,
+   "story": "Sources: Bret Taylor's Sierra is in talks to raise ~$1.5B at a ~$30B valuation, up from $15.8B in May; it said in October it hit $400M+ in annualized revenue",
+   "links": [
+    "https://www.theinformation.com/articles/bret-taylors-sierra-talks-raise-30-billion-valuation"
+   ]
   },
   {
-   "title": "On Q3 earnings call, Nvidia Chair Harvey Jones says the board does not intend to reinstate Jensen H…",
-   "url": "https://www.theverge.com/report/1035465/nvidia-says-it-will-not-reinstate-jensen-huang-as-ceo?view_token=eyJhbGciOiJIUzI1NiJ9.eyJpZCI6IjA3cFNpbDJCT1MiLCJwIjoiL3JlcG9ydC8xMDM1NDY1L252aWRpYS1zYXlzLWl0LXdpbGwtbm90LXJlaW5zdGF0ZS1qZW5zZW4taHVhbmctYXMtY2VvIiwiZXhwIjoxNzk1Mzg1NDc1LCJpYXQiOjE3OTQ5NTM0NzV9.PWMNbp8LvjiIh6EH1gdv9OqWZ7SGbuRwywWf6K983Vg&utm_medium=gift-link",
-   "source": "Hayden Field / The Verge",
-   "published_at": "2026-11-17T22:16:00Z",
-   "text": "On Q3 earnings call, Nvidia Chair Harvey Jones says the board does not intend to reinstate Jensen Huang as CEO. The board said it would not take additional questions on the call about Huang's departure. … Starting Nvidia's quarterly earnings call on Tuesday, new board chair Harvey Jones …",
+   "title": "Jokes aside, Nvidia’s board should bring Jensen back.",
+   "url": "https://x.com/durov/status/2123111423450685942",
+   "source": "𝕏 @durov",
+   "published_at": "2026-11-18T17:49:43Z",
+   "text": "Jokes aside, Nvidia’s board should bring Jensen back.",
+   "author_name": "Pavel Durov",
+   "likes": 12139,
+   "story": "Sources: a faction of Nvidia's board members is pushing for Jensen Huang's return despite Chair Harvey Jones stating the board doesn't intend to reinstate Huang"
+  },
+  {
+   "title": "Source: Anthropic priced its IPO at $83 per share, above the $70-$78 marketed range, which would pu…",
+   "url": "https://www.cnbc.com/2026/11/18/anthropic-ipo-ai-offering-price.html",
+   "source": "CNBC",
+   "published_at": "2026-11-18T22:03:01Z",
+   "text": "Source: Anthropic priced its IPO at $83 per share, above the $70-$78 marketed range, which would put its valuation above the $1.4T it was previously targeting. Anthropic priced its IPO at $83 per share on Wednesday, a person familiar told CNBC, above the expected range …",
    "via": "Techmeme"
   },
   {
-   "title": "Google's AI answers reducing search traffic by 40%",
-   "url": "https://revscope.co/blog/search-seo-geo-2026/",
+   "title": "Seven new models at scalable price-performance",
+   "url": "https://microsoft.ai/news/microsoft-ignite-2026/",
    "source": "Hacker News",
-   "published_at": "2026-11-18T00:17:58Z",
-   "text": "228 points and 157 comments on Hacker News.",
-   "points": 228,
-   "discussion": "https://news.ycombinator.com/item?id=50540178"
+   "published_at": "2026-11-18T16:08:24Z",
+   "text": "371 points and 251 comments on Hacker News.",
+   "points": 371,
+   "discussion": "https://news.ycombinator.com/item?id=50548021"
   },
   {
-   "title": "Thrilled to announce $5B in funding for @IsomorphicLabs to accelerate our mission to Solve All Dise…",
-   "url": "https://x.com/demishassabis/status/2122662616367853670",
-   "source": "𝕏 @demishassabis",
-   "published_at": "2026-11-17T12:06:19Z",
-   "text": "Thrilled to announce $5B in funding for @IsomorphicLabs to accelerate our mission to Solve All Disease. We continue to make rapid progress reimagining drug design from first principles with AI to radically cut the time & cost to find new medicines. Gradually, then all at once...",
-   "author_name": "Demis Hassabis",
-   "likes": 12238,
-   "story": "Alphabet's Isomorphic Labs raised a $5B Series C led by Sequoia and Greenoaks, after raising $2.1B in May and $600M in March 2025, to accelerate clinical trials"
+   "title": "This is stupid. What counts as a chinese model? What about Thinky's model distilled from Kimi? What…",
+   "url": "https://x.com/natolambert/status/2123064242341630334",
+   "source": "𝕏 @natolambert",
+   "published_at": "2026-11-18T14:42:14Z",
+   "text": "This is stupid. What counts as a chinese model? What about Thinky's model distilled from Kimi? What about composer, continued pretraining? What about Nemotron, using tons of DeepSeek synthetic data? What about that silly nous finetune for \"american\" values?",
+   "author_name": "Nathan Lambert",
+   "likes": 1244,
+   "story": "Sources: the Trump administration is considering requiring US companies to disclose on their websites if they use Chinese AI models, seeking to discourage usage"
   },
   {
-   "title": "Advancing Claude for Financial Services",
-   "url": "https://www.anthropic.com/news/advancing-claude-for-financial-services",
+   "title": "Expanding the Cyber Verification Program",
+   "url": "https://www.anthropic.com/news/cyber-verification-program",
    "source": "Anthropic",
-   "published_at": "2026-11-17T17:10:23Z",
-   "text": "Claude for Financial Services adds a native Excel plugin, real-time market connectors, and skills for modeling, comp analysis, and earnings reports."
+   "published_at": "2026-11-18T21:55:37Z",
+   "text": "We’re launching a new, expanded version of our Cyber Verification Program (CVP), which makes advanced cyber capabilities and reduced blocking classifiers available to qualifying security professionals."
   },
   {
    "title": "Running the full server-side Datasette Python app in the browser with service workers and Pyodide",
@@ -82,62 +92,46 @@
    "text": "Datasette Lite is my port of the Datasette Python application to run directly in the browser using WebAssembly and Pyodide . I've released a complete rewrite of Datasette Lite using service workers, and it's now almost indistinguishable from the real server-side application. You can now do all of the following, using a carefully crafted URL to lite.datasette.io : Load client-side Datasette to browse any SQLite database, JSON file, CSV file or SQL script Select a released version of Datasette to load from PyPI Load a specific commit, tag, or branch name from the Datasette GitHub repository Pic…"
   },
   {
-   "title": "Sources: Wall Street execs and the NSA told Congress this week's outages stemmed from systems overw…",
-   "url": "https://www.washingtonsun.com/technology/bank-ceos-nsa-tell-congress-ai-driven-patches-behind-outages",
-   "source": "Jeff Stein / The Washington…",
-   "published_at": "2026-11-18T01:16:26Z",
-   "text": "Sources: Wall Street execs and the NSA told Congress this week's outages stemmed from systems overwhelmed by a rush to patch vulnerabilities found by AI models. Wall Street executives and the National Security Agency have told members of Congress that this week's widespread tech outages …",
+   "title": "Ahead of Anthropic's IPO, CAIS and others sign the MisAnthropic Statement, challenging the company'…",
+   "url": "https://safe.ai/news/anthropic-is-not-a-safe-ai-company",
+   "source": "Center for AI Safety",
+   "published_at": "2026-11-18T16:03:19Z",
+   "text": "Ahead of Anthropic's IPO, CAIS and others sign the MisAnthropic Statement, challenging the company's “safety” branding and its “reckless attempt” to build RSI. Ahead of Anthropic's upcoming initial public offering, the Center for AI Safety (CAIS) …",
    "via": "Techmeme"
   },
   {
-   "title": "🚨 MUSE FEATURE ALERT 🚨 voice is now available on apple watch and android wearOS. talk to muse, all…",
-   "url": "https://x.com/alexandr_wang/status/2122795379263750477",
-   "source": "𝕏 @alexandr_wang",
-   "published_at": "2026-11-17T20:53:52Z",
-   "text": "🚨 MUSE FEATURE ALERT 🚨 voice is now available on apple watch and android wearOS. talk to muse, all the time. h",
-   "author_name": "Alexandr Wang",
-   "likes": 1638,
-   "story": "A week with Apple Watch's Siri Recap and Live Rewind in beta: inaccurate summaries lag Amazon Bee, Granola, and Otter, and rarely justify the privacy trade-offs"
+   "title": "I think the parsimonious explanation of all evidence to date is this: - Alice Huang is not a spy -…",
+   "url": "https://x.com/teortaxesTex/status/2122929047713792428",
+   "source": "𝕏 @teortaxesTex",
+   "published_at": "2026-11-18T05:45:01Z",
+   "text": "I think the parsimonious explanation of all evidence to date is this: - Alice Huang is not a spy - the MSS was NOT involved in MegaSpeed or in smuggling compute - major Chinese companies generally prefer to legally rent compute or build overseas datacenters, and need external…",
+   "author_name": "Teortaxes▶️ (DeepSeek 推特🐋铁粉 2023 – ∞)",
+   "likes": 727,
+   "story": "Sources: Nvidia made two separate introductions in 2022 connecting Alibaba with alleged Chinese spy Alice Huang, helping Megaspeed land Alibaba as a customer"
   },
   {
-   "title": "Nvidia stopped disclosing Singapore sales as revenues hit $104B",
-   "url": "https://www.ft.com/content/dbde7a30-548c-4f9d-a4be-7898a0c24dcf",
+   "title": "AI agents ask better questions than KPMG accountants in audit trial",
+   "url": "https://europeanbusinessmagazine.com/ai-agents-better-questions-kpmg/",
    "source": "Hacker News",
-   "published_at": "2026-11-17T17:12:06Z",
-   "text": "460 points and 218 comments on Hacker News.",
-   "points": 460,
-   "discussion": "https://news.ycombinator.com/item?id=50534631"
+   "published_at": "2026-11-18T15:49:34Z",
+   "text": "259 points and 125 comments on Hacker News.",
+   "points": 259,
+   "discussion": "https://news.ycombinator.com/item?id=50547777"
   },
   {
-   "title": "Muse Wonder, Muse Spark 1.3, and Muse Ember are coming soon to Microsoft Foundry on @Azure.",
-   "url": "https://x.com/finkd/status/2122757701591855362",
-   "source": "𝕏 @finkd",
-   "published_at": "2026-11-17T18:24:09Z",
-   "text": "Muse Wonder, Muse Spark 1.3, and Muse Ember are coming soon to Microsoft Foundry on @Azure.",
-   "author_name": "Mark Zuckerberg",
-   "likes": 3361,
-   "story": "Microsoft unveils six AI models spanning coding, cybersecurity, images, and voice, saying MAI Code 2 has 98% of GPT-6.1 Sol's performance at 40% of the price"
-  },
-  {
-   "title": "GPT-6 Cyber for helping further secure the internet, with a major security flaw in Java found by Ca…",
-   "url": "https://x.com/gdb/status/2122819528858161322",
-   "source": "𝕏 @gdb",
-   "published_at": "2026-11-17T22:29:50Z",
-   "text": "GPT-6 Cyber for helping further secure the internet, with a major security flaw in Java found by Calif, as part of our Patch the Planet initiative:",
-   "author_name": "Greg Brockman",
-   "likes": 395,
-   "story": "Cybersecurity startup Calif says it used GPT-6 Cyber to uncover an RCE flaw in Java dubbed “Java4Shell”; Oracle has released a patch",
-   "links": [
-    "https://www.nytimes.com/2026/11/17/us/politics/ai-security-bug-java.html"
-   ]
-  },
-  {
-   "title": "Vals: in simulated scenarios, AI models from Anthropic, Google, xAI, DeepSeek, and OpenAI identifie…",
-   "url": "https://www.bloomberg.com/news/articles/2026-11-17/top-ai-models-regularly-identify-civilians-as-military-targets-in-tests?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc5NDkyODM2NCwiZXhwIjoxNzk1NTMzMTY0LCJhcnRpY2xlSWQiOiJUT001QUpLSkg2VjYwMCIsImJjb25uZWN0SWQiOiI3RUQyQkMyREM0OEQ0RTMyQjgzNzQ5MTVDRjJDMUZEMCJ9.G-4wyFRaj2RnMFMsZBJeJEkOmP-4C7igrwtj1jWr2ME&leadSource=article-gifting",
-   "source": "Katrina Manson / Bloomberg",
-   "published_at": "2026-11-17T17:11:21Z",
-   "text": "Vals: in simulated scenarios, AI models from Anthropic, Google, xAI, DeepSeek, and OpenAI identified civilians, ambulances, and a school as military targets. Advanced artificial intelligence models in simulated scenarios regularly misidentified civilians, ambulances …",
+   "title": "At Nvidia's first all-hands since Huang's ouster, Colette Kress told staff that they can expect pay…",
+   "url": "https://www.wired.com/story/inside-nvidias-first-all-hands-without-jensen-huang-as-ceo/",
+   "source": "Wired",
+   "published_at": "2026-11-18T19:26:50Z",
+   "text": "At Nvidia's first all-hands since Huang's ouster, Colette Kress told staff that they can expect pay raises and more equity in December, months ahead of schedule. Interim CEO Collette Kress sought to ease employee concerns following Jensen Huang's ouster, in part by promising to increase compensation across the board.",
    "via": "Techmeme"
+  },
+  {
+   "title": "Focus areas for The Anthropic Institute",
+   "url": "https://www.anthropic.com/news/anthropic-institute-agenda",
+   "source": "Anthropic",
+   "published_at": "2026-11-18T17:12:33Z",
+   "text": "The Anthropic Institute investigates AI's impact on the world from within a frontier lab. Here are the questions driving its agenda."
   }
  ],
  "sources": "curated, Techmeme, X (found via Techmeme, Reddit, the Internet Archive), Claude Code releases, Anthropic, Hacker News, Simon Willison"
