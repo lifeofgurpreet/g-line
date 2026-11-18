@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-18T04:43:26Z",
+ "generated_at": "2026-11-18T05:24:29Z",
  "items": [
   {
    "title": "Nvidia reports Q3 revenue up 103% YoY to $115.8B, above $109.1B est., Data Center revenue up 110% t…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-17T17:54:03Z",
    "text": "Some of you have been asking very politely. Some of you have just been asking. GPT-6.2 Astra and Sol are now available. Super efficient and built to perform where it counts—the real world.",
    "author_name": "OpenAI",
-   "likes": 32396,
+   "likes": 32655,
    "story": "OpenAI debuts GPT-6.2 Astra and Sol in ChatGPT Work, Codex, and API, saying Astra sets records on work and science evals at under a third of GPT-6 Astra's cost",
    "links": [
     "https://openai.com/index/introducing-gpt-6-2-astra-sol"
@@ -37,7 +37,7 @@
    "published_at": "2026-11-17T17:37:24Z",
    "text": "Imagine being a board member at Nvidia considering potential candidates for CEO, and trying to claim with a straight face that one of the others would do a better job.",
    "author_name": "Paul Graham",
-   "likes": 11707,
+   "likes": 11862,
    "story": "Jensen Huang breaks his silence, saying he “would be honored” to return if the board decides it is in the “best interest” of shareholders, staff, and the US"
   },
   {
@@ -53,8 +53,8 @@
    "url": "https://revscope.co/blog/search-seo-geo-2026/",
    "source": "Hacker News",
    "published_at": "2026-11-18T00:17:58Z",
-   "text": "197 points and 133 comments on Hacker News.",
-   "points": 197,
+   "text": "228 points and 157 comments on Hacker News.",
+   "points": 228,
    "discussion": "https://news.ycombinator.com/item?id=50540178"
   },
   {
@@ -64,7 +64,7 @@
    "published_at": "2026-11-17T12:06:19Z",
    "text": "Thrilled to announce $5B in funding for @IsomorphicLabs to accelerate our mission to Solve All Disease. We continue to make rapid progress reimagining drug design from first principles with AI to radically cut the time & cost to find new medicines. Gradually, then all at once...",
    "author_name": "Demis Hassabis",
-   "likes": 12099,
+   "likes": 12238,
    "story": "Alphabet's Isomorphic Labs raised a $5B Series C led by Sequoia and Greenoaks, after raising $2.1B in May and $600M in March 2025, to accelerate clinical trials"
   },
   {
@@ -96,7 +96,7 @@
    "published_at": "2026-11-17T20:53:52Z",
    "text": "🚨 MUSE FEATURE ALERT 🚨 voice is now available on apple watch and android wearOS. talk to muse, all the time. h",
    "author_name": "Alexandr Wang",
-   "likes": 1587,
+   "likes": 1638,
    "story": "A week with Apple Watch's Siri Recap and Live Rewind in beta: inaccurate summaries lag Amazon Bee, Granola, and Otter, and rarely justify the privacy trade-offs"
   },
   {
@@ -104,8 +104,8 @@
    "url": "https://www.ft.com/content/dbde7a30-548c-4f9d-a4be-7898a0c24dcf",
    "source": "Hacker News",
    "published_at": "2026-11-17T17:12:06Z",
-   "text": "443 points and 217 comments on Hacker News.",
-   "points": 443,
+   "text": "460 points and 218 comments on Hacker News.",
+   "points": 460,
    "discussion": "https://news.ycombinator.com/item?id=50534631"
   },
   {
@@ -115,7 +115,7 @@
    "published_at": "2026-11-17T18:24:09Z",
    "text": "Muse Wonder, Muse Spark 1.3, and Muse Ember are coming soon to Microsoft Foundry on @Azure.",
    "author_name": "Mark Zuckerberg",
-   "likes": 3280,
+   "likes": 3361,
    "story": "Microsoft unveils six AI models spanning coding, cybersecurity, images, and voice, saying MAI Code 2 has 98% of GPT-6.1 Sol's performance at 40% of the price"
   },
   {
@@ -125,18 +125,18 @@
    "published_at": "2026-11-17T22:29:50Z",
    "text": "GPT-6 Cyber for helping further secure the internet, with a major security flaw in Java found by Calif, as part of our Patch the Planet initiative:",
    "author_name": "Greg Brockman",
-   "likes": 385,
+   "likes": 395,
    "story": "Cybersecurity startup Calif says it used GPT-6 Cyber to uncover an RCE flaw in Java dubbed “Java4Shell”; Oracle has released a patch",
    "links": [
     "https://www.nytimes.com/2026/11/17/us/politics/ai-security-bug-java.html"
    ]
   },
   {
-   "title": "Nvidia's board establishes a National Security and Export Control Oversight Committee to oversee na…",
-   "url": "https://nvidianews.nvidia.com/news/nvidia-board-of-directors-establishes-national-security-and-export-control-oversight-committee",
-   "source": "Nvidia Newsroom",
-   "published_at": "2026-11-17T10:14:36Z",
-   "text": "Nvidia's board establishes a National Security and Export Control Oversight Committee to oversee national security policies, export control compliance, and more. - Committee to provide oversight over NVIDIA's national security and global trade compliance programs",
+   "title": "Vals: in simulated scenarios, AI models from Anthropic, Google, xAI, DeepSeek, and OpenAI identifie…",
+   "url": "https://www.bloomberg.com/news/articles/2026-11-17/top-ai-models-regularly-identify-civilians-as-military-targets-in-tests?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc5NDkyODM2NCwiZXhwIjoxNzk1NTMzMTY0LCJhcnRpY2xlSWQiOiJUT001QUpLSkg2VjYwMCIsImJjb25uZWN0SWQiOiI3RUQyQkMyREM0OEQ0RTMyQjgzNzQ5MTVDRjJDMUZEMCJ9.G-4wyFRaj2RnMFMsZBJeJEkOmP-4C7igrwtj1jWr2ME&leadSource=article-gifting",
+   "source": "Katrina Manson / Bloomberg",
+   "published_at": "2026-11-17T17:11:21Z",
+   "text": "Vals: in simulated scenarios, AI models from Anthropic, Google, xAI, DeepSeek, and OpenAI identified civilians, ambulances, and a school as military targets. Advanced artificial intelligence models in simulated scenarios regularly misidentified civilians, ambulances …",
    "via": "Techmeme"
   }
  ],
