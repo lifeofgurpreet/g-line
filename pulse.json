@@ -1,7 +1,72 @@
 {
  "schema": 1,
- "generated_at": "2026-11-18T03:32:28Z",
+ "generated_at": "2026-11-18T04:07:01Z",
  "items": [
+  {
+   "title": "Nvidia reports Q3 revenue up 103% YoY to $115.8B, above $109.1B est., Data Center revenue up 110% t…",
+   "url": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-third-quarter-fiscal-2027",
+   "source": "Nvidia Newsroom",
+   "published_at": "2026-11-17T21:27:52Z",
+   "text": "Nvidia reports Q3 revenue up 103% YoY to $115.8B, above $109.1B est., Data Center revenue up 110% to $107.6B, and forecasts Q4 revenue above estimates. - Revenue of $115.8 billion, up 103% from a year ago — Data Center revenue of $107.6 billion, up 110% from a year ago",
+   "via": "Techmeme"
+  },
+  {
+   "title": "Some of you have been asking very politely. Some of you have just been asking. GPT-6.2 Astra and So…",
+   "url": "https://x.com/OpenAI/status/2122750124543926515",
+   "source": "𝕏 @OpenAI",
+   "published_at": "2026-11-17T17:54:03Z",
+   "text": "Some of you have been asking very politely. Some of you have just been asking. GPT-6.2 Astra and Sol are now available. Super efficient and built to perform where it counts—the real world.",
+   "author_name": "OpenAI",
+   "likes": 32164,
+   "story": "OpenAI debuts GPT-6.2 Astra and Sol in ChatGPT Work, Codex, and API, saying Astra sets records on work and science evals at under a third of GPT-6 Astra's cost",
+   "links": [
+    "https://openai.com/index/introducing-gpt-6-2-astra-sol"
+   ]
+  },
+  {
+   "title": "Claude Code 2.1.327 released",
+   "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.327",
+   "source": "Claude Code releases",
+   "published_at": "2026-11-17T23:17:45Z",
+   "text": "Added a confirmation before /install-github-app changes a repository · Added claude mcp add-json - to read the server's JSON from stdin, so tokens can stay off the command line; not available inside a Claude Code session · Added a line when a resumed session's earlier messages can't be loaded · Added a list in /status of broken agent, skill, command and output style files, keybinding errors, an unavailable sandbox, ignored permission settings and hook matchers that never match"
+  },
+  {
+   "title": "Imagine being a board member at Nvidia considering potential candidates for CEO, and trying to clai…",
+   "url": "https://x.com/paulg/status/2122745936279462274",
+   "source": "𝕏 @paulg",
+   "published_at": "2026-11-17T17:37:24Z",
+   "text": "Imagine being a board member at Nvidia considering potential candidates for CEO, and trying to claim with a straight face that one of the others would do a better job.",
+   "author_name": "Paul Graham",
+   "likes": 11498,
+   "story": "Jensen Huang breaks his silence, saying he “would be honored” to return if the board decides it is in the “best interest” of shareholders, staff, and the US"
+  },
+  {
+   "title": "On Q3 earnings call, Nvidia Chair Harvey Jones says the board does not intend to reinstate Jensen H…",
+   "url": "https://www.theverge.com/report/1035465/nvidia-says-it-will-not-reinstate-jensen-huang-as-ceo?view_token=eyJhbGciOiJIUzI1NiJ9.eyJpZCI6IjA3cFNpbDJCT1MiLCJwIjoiL3JlcG9ydC8xMDM1NDY1L252aWRpYS1zYXlzLWl0LXdpbGwtbm90LXJlaW5zdGF0ZS1qZW5zZW4taHVhbmctYXMtY2VvIiwiZXhwIjoxNzk1Mzg1NDc1LCJpYXQiOjE3OTQ5NTM0NzV9.PWMNbp8LvjiIh6EH1gdv9OqWZ7SGbuRwywWf6K983Vg&utm_medium=gift-link",
+   "source": "Hayden Field / The Verge",
+   "published_at": "2026-11-17T22:16:00Z",
+   "text": "On Q3 earnings call, Nvidia Chair Harvey Jones says the board does not intend to reinstate Jensen Huang as CEO. The board said it would not take additional questions on the call about Huang's departure. … Starting Nvidia's quarterly earnings call on Tuesday, new board chair Harvey Jones …",
+   "via": "Techmeme"
+  },
+  {
+   "title": "Google's AI answers reducing search traffic by 40%",
+   "url": "https://revscope.co/blog/search-seo-geo-2026/",
+   "source": "Hacker News",
+   "published_at": "2026-11-18T00:17:58Z",
+   "text": "173 points and 118 comments on Hacker News.",
+   "points": 173,
+   "discussion": "https://news.ycombinator.com/item?id=50540178"
+  },
+  {
+   "title": "🚨 MUSE FEATURE ALERT 🚨 voice is now available on apple watch and android wearOS. talk to muse, all…",
+   "url": "https://x.com/alexandr_wang/status/2122795379263750477",
+   "source": "𝕏 @alexandr_wang",
+   "published_at": "2026-11-17T20:53:52Z",
+   "text": "🚨 MUSE FEATURE ALERT 🚨 voice is now available on apple watch and android wearOS. talk to muse, all the time. h",
+   "author_name": "Alexandr Wang",
+   "likes": 1532,
+   "story": "A week with Apple Watch's Siri Recap and Live Rewind in beta: inaccurate summaries lag Amazon Bee, Granola, and Otter, and rarely justify the privacy trade-offs"
+  },
   {
    "title": "Advancing Claude for Financial Services",
    "url": "https://www.anthropic.com/news/advancing-claude-for-financial-services",
@@ -10,13 +75,55 @@
    "text": "Claude for Financial Services adds a native Excel plugin, real-time market connectors, and skills for modeling, comp analysis, and earnings reports."
   },
   {
-   "title": "GPT‑6.2 Astra and Sol",
-   "url": "https://openai.com/index/introducing-gpt-6-2-astra-sol/",
+   "title": "Running the full server-side Datasette Python app in the browser with service workers and Pyodide",
+   "url": "https://simonwillison.net/2026/Nov/17/datasette-lite/",
+   "source": "Simon Willison's weblog",
+   "published_at": "2026-11-17T16:48:33Z",
+   "text": "Datasette Lite is my port of the Datasette Python application to run directly in the browser using WebAssembly and Pyodide . I've released a complete rewrite of Datasette Lite using service workers, and it's now almost indistinguishable from the real server-side application. You can now do all of the following, using a carefully crafted URL to lite.datasette.io : Load client-side Datasette to browse any SQLite database, JSON file, CSV file or SQL script Select a released version of Datasette to load from PyPI Load a specific commit, tag, or branch name from the Datasette GitHub repository Pic…"
+  },
+  {
+   "title": "Sources: Wall Street execs and the NSA told Congress this week's outages stemmed from systems overw…",
+   "url": "https://www.washingtonsun.com/technology/bank-ceos-nsa-tell-congress-ai-driven-patches-behind-outages",
+   "source": "Jeff Stein / The Washington…",
+   "published_at": "2026-11-18T01:16:26Z",
+   "text": "Sources: Wall Street execs and the NSA told Congress this week's outages stemmed from systems overwhelmed by a rush to patch vulnerabilities found by AI models. Wall Street executives and the National Security Agency have told members of Congress that this week's widespread tech outages …",
+   "via": "Techmeme"
+  },
+  {
+   "title": "Muse Wonder, Muse Spark 1.3, and Muse Ember are coming soon to Microsoft Foundry on @Azure.",
+   "url": "https://x.com/finkd/status/2122757701591855362",
+   "source": "𝕏 @finkd",
+   "published_at": "2026-11-17T18:24:09Z",
+   "text": "Muse Wonder, Muse Spark 1.3, and Muse Ember are coming soon to Microsoft Foundry on @Azure.",
+   "author_name": "Mark Zuckerberg",
+   "likes": 3204,
+   "story": "Microsoft unveils six AI models spanning coding, cybersecurity, images, and voice, saying MAI Code 2 has 98% of GPT-6.1 Sol's performance at 40% of the price"
+  },
+  {
+   "title": "Nvidia stopped disclosing Singapore sales as revenues hit $104B",
+   "url": "https://www.ft.com/content/dbde7a30-548c-4f9d-a4be-7898a0c24dcf",
    "source": "Hacker News",
-   "published_at": "2026-11-17T17:46:43Z",
-   "text": "1133 points and 714 comments on Hacker News.",
-   "points": 1133,
-   "discussion": "https://news.ycombinator.com/item?id=50535230"
+   "published_at": "2026-11-17T17:12:06Z",
+   "text": "430 points and 212 comments on Hacker News.",
+   "points": 430,
+   "discussion": "https://news.ycombinator.com/item?id=50534631"
+  },
+  {
+   "title": "Cybersecurity startup Calif says it used GPT-6 Cyber to uncover an RCE flaw in Java dubbed “Java4Sh…",
+   "url": "https://www.nytimes.com/2026/11/17/us/politics/ai-security-bug-java.html?unlocked_article_code=1.RFE.J4uR.JL0Qv-280ALN",
+   "source": "New York Times",
+   "published_at": "2026-11-17T21:21:05Z",
+   "text": "Cybersecurity startup Calif says it used GPT-6 Cyber to uncover an RCE flaw in Java dubbed “Java4Shell”; Oracle has released a patch. The discovery by security company Calif shows A.I.'s ability to find gaping security holes in popular software.",
+   "via": "Techmeme"
+  },
+  {
+   "title": "What is the best harness for each model?",
+   "url": "https://runta.com/blog/introducing-frontierharness-eval-v1-1/",
+   "source": "Hacker News",
+   "published_at": "2026-11-17T14:53:43Z",
+   "text": "345 points and 120 comments on Hacker News.",
+   "points": 345,
+   "discussion": "https://news.ycombinator.com/item?id=50532191"
   },
   {
    "title": "Anthropic commits $10 million to Canadian AI research",
@@ -24,33 +131,6 @@
    "source": "Anthropic",
    "published_at": "2026-11-16T20:50:34Z",
    "text": "Anthropic is committing $10M to Canadian research institutions to fund the next generation of AI research."
-  },
-  {
-   "title": "Google's AI answers reducing search traffic by 40%",
-   "url": "https://revscope.co/blog/search-seo-geo-2026/",
-   "source": "Hacker News",
-   "published_at": "2026-11-18T00:17:58Z",
-   "text": "145 points and 96 comments on Hacker News.",
-   "points": 145,
-   "discussion": "https://news.ycombinator.com/item?id=50540178"
-  },
-  {
-   "title": "Nvidia stopped disclosing Singapore sales as revenues hit $104B",
-   "url": "https://www.ft.com/content/dbde7a30-548c-4f9d-a4be-7898a0c24dcf",
-   "source": "Hacker News",
-   "published_at": "2026-11-17T17:12:06Z",
-   "text": "422 points and 206 comments on Hacker News.",
-   "points": 422,
-   "discussion": "https://news.ycombinator.com/item?id=50534631"
-  },
-  {
-   "title": "What is the best harness for each model?",
-   "url": "https://runta.com/blog/introducing-frontierharness-eval-v1-1/",
-   "source": "Hacker News",
-   "published_at": "2026-11-17T14:53:43Z",
-   "text": "343 points and 119 comments on Hacker News.",
-   "points": 343,
-   "discussion": "https://news.ycombinator.com/item?id=50532191"
   }
  ],
  "sources": "curated, Techmeme, X (found via Techmeme, Reddit, the Internet Archive), Claude Code releases, Anthropic, Hacker News, Simon Willison"
