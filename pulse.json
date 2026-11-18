@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-18T04:07:01Z",
+ "generated_at": "2026-11-18T04:43:26Z",
  "items": [
   {
    "title": "Nvidia reports Q3 revenue up 103% YoY to $115.8B, above $109.1B est., Data Center revenue up 110% t…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-17T17:54:03Z",
    "text": "Some of you have been asking very politely. Some of you have just been asking. GPT-6.2 Astra and Sol are now available. Super efficient and built to perform where it counts—the real world.",
    "author_name": "OpenAI",
-   "likes": 32164,
+   "likes": 32396,
    "story": "OpenAI debuts GPT-6.2 Astra and Sol in ChatGPT Work, Codex, and API, saying Astra sets records on work and science evals at under a third of GPT-6 Astra's cost",
    "links": [
     "https://openai.com/index/introducing-gpt-6-2-astra-sol"
@@ -37,7 +37,7 @@
    "published_at": "2026-11-17T17:37:24Z",
    "text": "Imagine being a board member at Nvidia considering potential candidates for CEO, and trying to claim with a straight face that one of the others would do a better job.",
    "author_name": "Paul Graham",
-   "likes": 11498,
+   "likes": 11707,
    "story": "Jensen Huang breaks his silence, saying he “would be honored” to return if the board decides it is in the “best interest” of shareholders, staff, and the US"
   },
   {
@@ -53,19 +53,19 @@
    "url": "https://revscope.co/blog/search-seo-geo-2026/",
    "source": "Hacker News",
    "published_at": "2026-11-18T00:17:58Z",
-   "text": "173 points and 118 comments on Hacker News.",
-   "points": 173,
+   "text": "197 points and 133 comments on Hacker News.",
+   "points": 197,
    "discussion": "https://news.ycombinator.com/item?id=50540178"
   },
   {
-   "title": "🚨 MUSE FEATURE ALERT 🚨 voice is now available on apple watch and android wearOS. talk to muse, all…",
-   "url": "https://x.com/alexandr_wang/status/2122795379263750477",
-   "source": "𝕏 @alexandr_wang",
-   "published_at": "2026-11-17T20:53:52Z",
-   "text": "🚨 MUSE FEATURE ALERT 🚨 voice is now available on apple watch and android wearOS. talk to muse, all the time. h",
-   "author_name": "Alexandr Wang",
-   "likes": 1532,
-   "story": "A week with Apple Watch's Siri Recap and Live Rewind in beta: inaccurate summaries lag Amazon Bee, Granola, and Otter, and rarely justify the privacy trade-offs"
+   "title": "Thrilled to announce $5B in funding for @IsomorphicLabs to accelerate our mission to Solve All Dise…",
+   "url": "https://x.com/demishassabis/status/2122662616367853670",
+   "source": "𝕏 @demishassabis",
+   "published_at": "2026-11-17T12:06:19Z",
+   "text": "Thrilled to announce $5B in funding for @IsomorphicLabs to accelerate our mission to Solve All Disease. We continue to make rapid progress reimagining drug design from first principles with AI to radically cut the time & cost to find new medicines. Gradually, then all at once...",
+   "author_name": "Demis Hassabis",
+   "likes": 12099,
+   "story": "Alphabet's Isomorphic Labs raised a $5B Series C led by Sequoia and Greenoaks, after raising $2.1B in May and $600M in March 2025, to accelerate clinical trials"
   },
   {
    "title": "Advancing Claude for Financial Services",
@@ -90,47 +90,54 @@
    "via": "Techmeme"
   },
   {
-   "title": "Muse Wonder, Muse Spark 1.3, and Muse Ember are coming soon to Microsoft Foundry on @Azure.",
-   "url": "https://x.com/finkd/status/2122757701591855362",
-   "source": "𝕏 @finkd",
-   "published_at": "2026-11-17T18:24:09Z",
-   "text": "Muse Wonder, Muse Spark 1.3, and Muse Ember are coming soon to Microsoft Foundry on @Azure.",
-   "author_name": "Mark Zuckerberg",
-   "likes": 3204,
-   "story": "Microsoft unveils six AI models spanning coding, cybersecurity, images, and voice, saying MAI Code 2 has 98% of GPT-6.1 Sol's performance at 40% of the price"
+   "title": "🚨 MUSE FEATURE ALERT 🚨 voice is now available on apple watch and android wearOS. talk to muse, all…",
+   "url": "https://x.com/alexandr_wang/status/2122795379263750477",
+   "source": "𝕏 @alexandr_wang",
+   "published_at": "2026-11-17T20:53:52Z",
+   "text": "🚨 MUSE FEATURE ALERT 🚨 voice is now available on apple watch and android wearOS. talk to muse, all the time. h",
+   "author_name": "Alexandr Wang",
+   "likes": 1587,
+   "story": "A week with Apple Watch's Siri Recap and Live Rewind in beta: inaccurate summaries lag Amazon Bee, Granola, and Otter, and rarely justify the privacy trade-offs"
   },
   {
    "title": "Nvidia stopped disclosing Singapore sales as revenues hit $104B",
    "url": "https://www.ft.com/content/dbde7a30-548c-4f9d-a4be-7898a0c24dcf",
    "source": "Hacker News",
    "published_at": "2026-11-17T17:12:06Z",
-   "text": "430 points and 212 comments on Hacker News.",
-   "points": 430,
+   "text": "443 points and 217 comments on Hacker News.",
+   "points": 443,
    "discussion": "https://news.ycombinator.com/item?id=50534631"
   },
   {
-   "title": "Cybersecurity startup Calif says it used GPT-6 Cyber to uncover an RCE flaw in Java dubbed “Java4Sh…",
-   "url": "https://www.nytimes.com/2026/11/17/us/politics/ai-security-bug-java.html?unlocked_article_code=1.RFE.J4uR.JL0Qv-280ALN",
-   "source": "New York Times",
-   "published_at": "2026-11-17T21:21:05Z",
-   "text": "Cybersecurity startup Calif says it used GPT-6 Cyber to uncover an RCE flaw in Java dubbed “Java4Shell”; Oracle has released a patch. The discovery by security company Calif shows A.I.'s ability to find gaping security holes in popular software.",
+   "title": "Muse Wonder, Muse Spark 1.3, and Muse Ember are coming soon to Microsoft Foundry on @Azure.",
+   "url": "https://x.com/finkd/status/2122757701591855362",
+   "source": "𝕏 @finkd",
+   "published_at": "2026-11-17T18:24:09Z",
+   "text": "Muse Wonder, Muse Spark 1.3, and Muse Ember are coming soon to Microsoft Foundry on @Azure.",
+   "author_name": "Mark Zuckerberg",
+   "likes": 3280,
+   "story": "Microsoft unveils six AI models spanning coding, cybersecurity, images, and voice, saying MAI Code 2 has 98% of GPT-6.1 Sol's performance at 40% of the price"
+  },
+  {
+   "title": "GPT-6 Cyber for helping further secure the internet, with a major security flaw in Java found by Ca…",
+   "url": "https://x.com/gdb/status/2122819528858161322",
+   "source": "𝕏 @gdb",
+   "published_at": "2026-11-17T22:29:50Z",
+   "text": "GPT-6 Cyber for helping further secure the internet, with a major security flaw in Java found by Calif, as part of our Patch the Planet initiative:",
+   "author_name": "Greg Brockman",
+   "likes": 385,
+   "story": "Cybersecurity startup Calif says it used GPT-6 Cyber to uncover an RCE flaw in Java dubbed “Java4Shell”; Oracle has released a patch",
+   "links": [
+    "https://www.nytimes.com/2026/11/17/us/politics/ai-security-bug-java.html"
+   ]
+  },
+  {
+   "title": "Nvidia's board establishes a National Security and Export Control Oversight Committee to oversee na…",
+   "url": "https://nvidianews.nvidia.com/news/nvidia-board-of-directors-establishes-national-security-and-export-control-oversight-committee",
+   "source": "Nvidia Newsroom",
+   "published_at": "2026-11-17T10:14:36Z",
+   "text": "Nvidia's board establishes a National Security and Export Control Oversight Committee to oversee national security policies, export control compliance, and more. - Committee to provide oversight over NVIDIA's national security and global trade compliance programs",
    "via": "Techmeme"
-  },
-  {
-   "title": "What is the best harness for each model?",
-   "url": "https://runta.com/blog/introducing-frontierharness-eval-v1-1/",
-   "source": "Hacker News",
-   "published_at": "2026-11-17T14:53:43Z",
-   "text": "345 points and 120 comments on Hacker News.",
-   "points": 345,
-   "discussion": "https://news.ycombinator.com/item?id=50532191"
-  },
-  {
-   "title": "Anthropic commits $10 million to Canadian AI research",
-   "url": "https://www.anthropic.com/news/canadian-ai-research",
-   "source": "Anthropic",
-   "published_at": "2026-11-16T20:50:34Z",
-   "text": "Anthropic is committing $10M to Canadian research institutions to fund the next generation of AI research."
   }
  ],
  "sources": "curated, Techmeme, X (found via Techmeme, Reddit, the Internet Archive), Claude Code releases, Anthropic, Hacker News, Simon Willison"
