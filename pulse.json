@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-18T22:16:40Z",
+ "generated_at": "2026-11-18T22:48:31Z",
  "items": [
   {
    "title": "Google rolls out Gemini 4 Neon, with “fast end-to-end task completion” across coding, knowledge wor…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-18T17:05:52Z",
    "text": "Working with @AMD, our models identified up to 14% PPA improvement on flagship GPU IP in less than five months—building on designs AMD’s engineers had already spent years optimizing. The same approach helped improve Jalapeño, our first custom inference chip, with gains verified…",
    "author_name": "OpenAI",
-   "likes": 3437,
+   "likes": 3550,
    "story": "OpenAI says its models improved power, performance, and area by up to 14% on AMD's flagship GPU IP; some changes are in a design AMD sent for manufacturing"
   },
   {
@@ -34,21 +34,21 @@
    "published_at": "2026-11-18T19:51:29Z",
    "text": "There are AI startups out there other than Anthropic! Bret Taylor's Sierra is in talks to raise at a $30B valuation, nearly doubling its price from its May fundraise. Lightspeed, Greenoaks and Benchmark are in talks to invest. More here w/ @validapau:",
    "author_name": "Stephanie Palazzolo",
-   "likes": 37,
+   "likes": 43,
    "story": "Sources: Bret Taylor's Sierra is in talks to raise ~$1.5B at a ~$30B valuation, up from $15.8B in May; it said in October it hit $400M+ in annualized revenue",
    "links": [
     "https://www.theinformation.com/articles/bret-taylors-sierra-talks-raise-30-billion-valuation"
    ]
   },
   {
-   "title": "Jokes aside, Nvidia’s board should bring Jensen back.",
-   "url": "https://x.com/durov/status/2123111423450685942",
-   "source": "𝕏 @durov",
-   "published_at": "2026-11-18T17:49:43Z",
-   "text": "Jokes aside, Nvidia’s board should bring Jensen back.",
-   "author_name": "Pavel Durov",
-   "likes": 12139,
-   "story": "Sources: a faction of Nvidia's board members is pushing for Jensen Huang's return despite Chair Harvey Jones stating the board doesn't intend to reinstate Huang"
+   "title": "This is stupid. What counts as a chinese model? What about Thinky's model distilled from Kimi? What…",
+   "url": "https://x.com/natolambert/status/2123064242341630334",
+   "source": "𝕏 @natolambert",
+   "published_at": "2026-11-18T14:42:14Z",
+   "text": "This is stupid. What counts as a chinese model? What about Thinky's model distilled from Kimi? What about composer, continued pretraining? What about Nemotron, using tons of DeepSeek synthetic data? What about that silly nous finetune for \"american\" values?",
+   "author_name": "Nathan Lambert",
+   "likes": 1266,
+   "story": "Sources: the Trump administration is considering requiring US companies to disclose on their websites if they use Chinese AI models, seeking to discourage usage"
   },
   {
    "title": "Source: Anthropic priced its IPO at $83 per share, above the $70-$78 marketed range, which would pu…",
@@ -63,19 +63,19 @@
    "url": "https://microsoft.ai/news/microsoft-ignite-2026/",
    "source": "Hacker News",
    "published_at": "2026-11-18T16:08:24Z",
-   "text": "371 points and 251 comments on Hacker News.",
-   "points": 371,
+   "text": "380 points and 262 comments on Hacker News.",
+   "points": 380,
    "discussion": "https://news.ycombinator.com/item?id=50548021"
   },
   {
-   "title": "This is stupid. What counts as a chinese model? What about Thinky's model distilled from Kimi? What…",
-   "url": "https://x.com/natolambert/status/2123064242341630334",
-   "source": "𝕏 @natolambert",
-   "published_at": "2026-11-18T14:42:14Z",
-   "text": "This is stupid. What counts as a chinese model? What about Thinky's model distilled from Kimi? What about composer, continued pretraining? What about Nemotron, using tons of DeepSeek synthetic data? What about that silly nous finetune for \"american\" values?",
-   "author_name": "Nathan Lambert",
-   "likes": 1244,
-   "story": "Sources: the Trump administration is considering requiring US companies to disclose on their websites if they use Chinese AI models, seeking to discourage usage"
+   "title": "I think the parsimonious explanation of all evidence to date is this: - Alice Huang is not a spy -…",
+   "url": "https://x.com/teortaxesTex/status/2122929047713792428",
+   "source": "𝕏 @teortaxesTex",
+   "published_at": "2026-11-18T05:45:01Z",
+   "text": "I think the parsimonious explanation of all evidence to date is this: - Alice Huang is not a spy - the MSS was NOT involved in MegaSpeed or in smuggling compute - major Chinese companies generally prefer to legally rent compute or build overseas datacenters, and need external…",
+   "author_name": "Teortaxes▶️ (DeepSeek 推特🐋铁粉 2023 – ∞)",
+   "likes": 733,
+   "story": "Sources: Nvidia made two separate introductions in 2022 connecting Alibaba with alleged Chinese spy Alice Huang, helping Megaspeed land Alibaba as a customer"
   },
   {
    "title": "Expanding the Cyber Verification Program",
@@ -100,22 +100,12 @@
    "via": "Techmeme"
   },
   {
-   "title": "I think the parsimonious explanation of all evidence to date is this: - Alice Huang is not a spy -…",
-   "url": "https://x.com/teortaxesTex/status/2122929047713792428",
-   "source": "𝕏 @teortaxesTex",
-   "published_at": "2026-11-18T05:45:01Z",
-   "text": "I think the parsimonious explanation of all evidence to date is this: - Alice Huang is not a spy - the MSS was NOT involved in MegaSpeed or in smuggling compute - major Chinese companies generally prefer to legally rent compute or build overseas datacenters, and need external…",
-   "author_name": "Teortaxes▶️ (DeepSeek 推特🐋铁粉 2023 – ∞)",
-   "likes": 727,
-   "story": "Sources: Nvidia made two separate introductions in 2022 connecting Alibaba with alleged Chinese spy Alice Huang, helping Megaspeed land Alibaba as a customer"
-  },
-  {
    "title": "AI agents ask better questions than KPMG accountants in audit trial",
    "url": "https://europeanbusinessmagazine.com/ai-agents-better-questions-kpmg/",
    "source": "Hacker News",
    "published_at": "2026-11-18T15:49:34Z",
-   "text": "259 points and 125 comments on Hacker News.",
-   "points": 259,
+   "text": "276 points and 132 comments on Hacker News.",
+   "points": 276,
    "discussion": "https://news.ycombinator.com/item?id=50547777"
   },
   {
@@ -132,6 +122,14 @@
    "source": "Anthropic",
    "published_at": "2026-11-18T17:12:33Z",
    "text": "The Anthropic Institute investigates AI's impact on the world from within a frontier lab. Here are the questions driving its agenda."
+  },
+  {
+   "title": "Cybersecurity company Xint says it found RCE vulnerabilities in Nginx using GPT 6.1 Sol and GPT-6 L…",
+   "url": "https://www.forbes.com/sites/thomasbrewster/2026/11/18/ai-finds-major-web-security-flaws/",
+   "source": "Thomas Brewster / Forbes",
+   "published_at": "2026-11-18T16:26:12Z",
+   "text": "Cybersecurity company Xint says it found RCE vulnerabilities in Nginx using GPT 6.1 Sol and GPT-6 Luna; Wiz says it had separately found the same flaws. Darpa-backed cyber company tells Forbes its AI is finding all kinds of vulnerabilities, including one in NGINX, a massively popular web server tool.",
+   "via": "Techmeme"
   }
  ],
  "sources": "curated, Techmeme, X (found via Techmeme, Reddit, the Internet Archive), Claude Code releases, Anthropic, Hacker News, Simon Willison"
