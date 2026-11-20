@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-20T09:39:13Z",
+ "generated_at": "2026-11-20T10:11:11Z",
  "items": [
   {
    "title": "Anthropic closes up 17% at $97.17 in its Nasdaq debut, giving it a market cap of $1.3T, after openi…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-19T21:49:05Z",
    "text": "NEW: Apple is developing an autonomous AI agent with computer-use capabilities, including device control, app interactions, web browsing and coding. The effort goes well beyond Siri and aims to compete with Meta’s Muse, ChatGPT’s Dots and Claude Code.",
    "author_name": "Mark Gurman",
-   "likes": 2251,
+   "likes": 2271,
    "story": "A job listing shows Apple is developing an AI agent that can write code, browse the web, control apps, navigate devices, and coordinate subagents for users",
    "links": [
     "https://www.bloomberg.com/news/articles/2026-11-19/apple-is-working-on-ai-agent-for-device-control-apps-browsing-and-coding?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc5NTEyNDc2NSwiZXhwIjoxNzk1NzI5NTY1LCJhcnRpY2xlSWQiOiJUT1I5MEtLSkg2VjUwMCIsImJjb25uZWN0SWQiOiJDNEVEQ0FFMUZBMDU0MEJFQTI0QTlGMjExQzFFOTA4MCJ9.76_dY8UuzU3uFF5ExyvuszXnM3mdj2w3dulsez1QvhY"
@@ -53,8 +53,8 @@
    "url": "https://www.anthropic.com/research/claude-black-hole-physics",
    "source": "Hacker News",
    "published_at": "2026-11-19T17:30:44Z",
-   "text": "495 points and 229 comments on Hacker News.",
-   "points": 495,
+   "text": "501 points and 231 comments on Hacker News.",
+   "points": 501,
    "discussion": "https://news.ycombinator.com/item?id=50563148"
   },
   {
@@ -84,8 +84,8 @@
    "url": "https://thedataexchange.media/pete-warden-moonshine/",
    "source": "Hacker News",
    "published_at": "2026-11-19T15:38:12Z",
-   "text": "240 points and 217 comments on Hacker News.",
-   "points": 240,
+   "text": "245 points and 219 comments on Hacker News.",
+   "points": 245,
    "discussion": "https://news.ycombinator.com/item?id=50561508"
   },
   {
@@ -101,8 +101,8 @@
    "url": "https://www.bxfoundry.com/chatgpt_snes/",
    "source": "Hacker News",
    "published_at": "2026-11-20T00:25:59Z",
-   "text": "83 points and 22 comments on Hacker News.",
-   "points": 83,
+   "text": "86 points and 22 comments on Hacker News.",
+   "points": 86,
    "discussion": "https://news.ycombinator.com/item?id=50568548"
   },
   {
