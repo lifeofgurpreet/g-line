@@ -1,13 +1,13 @@
 {
  "schema": 1,
- "generated_at": "2026-11-20T18:40:18Z",
+ "generated_at": "2026-11-20T19:12:21Z",
  "items": [
   {
-   "title": "Anthropic stock fell as low as $87.26 in the opening hours of its second day of trading, trimming g…",
-   "url": "https://www.bloomberg.com/news/articles/2026-11-20/anthropic-share-slump-nearly-erases-ipo-pop-as-ai-trade-unravels",
-   "source": "Bloomberg",
-   "published_at": "2026-11-20T15:10:53Z",
-   "text": "Anthropic stock fell as low as $87.26 in the opening hours of its second day of trading, trimming gains from the $83 IPO price to as little as 5.1%",
+   "title": "Current and ex-staffers describe abusive behavior by Jensen Huang that goes back decades; Nvidia se…",
+   "url": "https://www.nytimes.com/2026/11/20/technology/jensen-huang-nvidia-culture.html?unlocked_article_code=1.R1E.IEmx.Gn88RJ0uVjFO&smid=url-share",
+   "source": "New York Times",
+   "published_at": "2026-11-20T12:41:06Z",
+   "text": "Current and ex-staffers describe abusive behavior by Jensen Huang that goes back decades; Nvidia settled with two senior leaders who alleged abusive conduct. The Nvidia co-founder's belittling behavior toward employees goes back decades. It once led to a confidential settlement agreement …",
    "via": "Techmeme"
   },
   {
@@ -17,7 +17,7 @@
    "published_at": "2026-11-20T15:29:19Z",
    "text": "Terence Tao on Numberphile said he believes with the help of AI, we could solve the reimann hypothesis before 2050. It took 35 days",
    "author_name": "Basil🧡",
-   "likes": 9265,
+   "likes": 10023,
    "story": "Anthropic mathematician Levent Alpöge claims he used Claude to prove the 167-year-old Riemann hypothesis and posts the proof in the Lean programming language"
   },
   {
@@ -34,35 +34,11 @@
    "published_at": "2026-11-19T21:49:05Z",
    "text": "NEW: Apple is developing an autonomous AI agent with computer-use capabilities, including device control, app interactions, web browsing and coding. The effort goes well beyond Siri and aims to compete with Meta’s Muse, ChatGPT’s Dots and Claude Code.",
    "author_name": "Mark Gurman",
-   "likes": 2694,
+   "likes": 2711,
    "story": "A job listing shows Apple is developing an AI agent that can write code, browse the web, control apps, navigate devices, and coordinate subagents for users",
    "links": [
     "https://www.bloomberg.com/news/articles/2026-11-19/apple-is-working-on-ai-agent-for-device-control-apps-browsing-and-coding?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc5NTEyNDc2NSwiZXhwIjoxNzk1NzI5NTY1LCJhcnRpY2xlSWQiOiJUT1I5MEtLSkg2VjUwMCIsImJjb25uZWN0SWQiOiJDNEVEQ0FFMUZBMDU0MEJFQTI0QTlGMjExQzFFOTA4MCJ9.76_dY8UuzU3uFF5ExyvuszXnM3mdj2w3dulsez1QvhY"
    ]
-  },
-  {
-   "title": "Current and ex-staffers describe abusive behavior by Jensen Huang that goes back decades; Nvidia se…",
-   "url": "https://www.nytimes.com/2026/11/20/technology/jensen-huang-nvidia-culture.html?unlocked_article_code=1.R1E.IEmx.Gn88RJ0uVjFO&smid=url-share",
-   "source": "New York Times",
-   "published_at": "2026-11-20T12:41:06Z",
-   "text": "Current and ex-staffers describe abusive behavior by Jensen Huang that goes back decades; Nvidia settled with two senior leaders who alleged abusive conduct. The Nvidia co-founder's belittling behavior toward employees goes back decades. It once led to a confidential settlement agreement …",
-   "via": "Techmeme"
-  },
-  {
-   "title": "Language Models Can Rewrite Their Own Weights",
-   "url": "https://arxiv.org/abs/2611.21885",
-   "source": "Hacker News",
-   "published_at": "2026-11-20T16:29:06Z",
-   "text": "178 points and 79 comments on Hacker News.",
-   "points": 178,
-   "discussion": "https://news.ycombinator.com/item?id=50577265"
-  },
-  {
-   "title": "Anthropic announces closing of initial public offering, including full exercise of underwriters’ op…",
-   "url": "https://www.anthropic.com/news/ipo-close",
-   "source": "Anthropic",
-   "published_at": "2026-11-20T12:41:01Z",
-   "text": "Today Anthropic, PBC announced the closing of its initial public offering of an aggregate of 1,127,000,000 shares of its Class A common stock at a public offering price of $83.00 per share, including the full exercise by the underwriters of their option to purchase an additional 147,000,000 shares of Class A common stock from Anthropic at the initial public offering price."
   },
   {
    "title": "Anthropic raises an additional $12.2B as underwriters exercise their “greenshoe” overallotment of s…",
@@ -73,13 +49,20 @@
    "via": "Techmeme"
   },
   {
-   "title": "Frostbite: A new CPU architecture discovered, designed and verified by AI",
-   "url": "https://architectlabs.com/blog/frostbite",
+   "title": "Language Models Can Rewrite Their Own Weights",
+   "url": "https://arxiv.org/abs/2611.21885",
    "source": "Hacker News",
-   "published_at": "2026-11-20T10:01:41Z",
-   "text": "499 points and 276 comments on Hacker News.",
-   "points": 499,
-   "discussion": "https://news.ycombinator.com/item?id=50572503"
+   "published_at": "2026-11-20T16:29:06Z",
+   "text": "202 points and 86 comments on Hacker News.",
+   "points": 202,
+   "discussion": "https://news.ycombinator.com/item?id=50577265"
+  },
+  {
+   "title": "Anthropic announces closing of initial public offering, including full exercise of underwriters’ op…",
+   "url": "https://www.anthropic.com/news/ipo-close",
+   "source": "Anthropic",
+   "published_at": "2026-11-20T12:41:01Z",
+   "text": "Today Anthropic, PBC announced the closing of its initial public offering of an aggregate of 1,127,000,000 shares of its Class A common stock at a public offering price of $83.00 per share, including the full exercise by the underwriters of their option to purchase an additional 147,000,000 shares of Class A common stock from Anthropic at the initial public offering price."
   },
   {
    "title": "Signal says it will restrict screenshots by default to stop AI agents from reading private chats on…",
@@ -90,13 +73,30 @@
    "via": "Techmeme"
   },
   {
-   "title": "Google Workers Tell Their Employer Not to Punish Schools That Don't Want AI",
-   "url": "https://www.motherjones.com/politics/2026/11/google-alphabet-union-school-ai-protest-gemini-workers-petition/",
+   "title": "Anthropic shares tank after IPO as the Nasdaq erases 2026 gains",
+   "url": "https://www.nbcnews.com/business/markets/anthropic-shares-markets-selloff-nasdaq-rcna610394",
    "source": "Hacker News",
-   "published_at": "2026-11-20T16:59:27Z",
-   "text": "63 points and 13 comments on Hacker News.",
-   "points": 63,
-   "discussion": "https://news.ycombinator.com/item?id=50577901"
+   "published_at": "2026-11-20T17:44:01Z",
+   "text": "76 points and 55 comments on Hacker News.",
+   "points": 76,
+   "discussion": "https://news.ycombinator.com/item?id=50578794"
+  },
+  {
+   "title": "Docs: as of May 2026, the Commerce Dept. had approved sales of 879K+ Nvidia H200 and AMD MI325X chi…",
+   "url": "https://www.cnbc.com/2026/11/19/nvidia-amd-china-chip-sales-congress.html",
+   "source": "CNBC",
+   "published_at": "2026-11-20T02:55:49Z",
+   "text": "Docs: as of May 2026, the Commerce Dept. had approved sales of 879K+ Nvidia H200 and AMD MI325X chips to Chinese companies, including some with military links. The subagency of the Commerce Department that regulates and enforces exports approved the sale of more than 879,000 AI chips …",
+   "via": "Techmeme"
+  },
+  {
+   "title": "Frostbite: A new CPU architecture discovered, designed and verified by AI",
+   "url": "https://architectlabs.com/blog/frostbite",
+   "source": "Hacker News",
+   "published_at": "2026-11-20T10:01:41Z",
+   "text": "521 points and 282 comments on Hacker News.",
+   "points": 521,
+   "discussion": "https://news.ycombinator.com/item?id=50572503"
   },
   {
    "title": "Asian tech stocks plunge as Anthropic's record IPO fails to stem an AI sell-off; SoftBank falls ~15…",
@@ -107,12 +107,13 @@
    "via": "Techmeme"
   },
   {
-   "title": "Docs: as of May 2026, the Commerce Dept. had approved sales of 879K+ Nvidia H200 and AMD MI325X chi…",
-   "url": "https://www.cnbc.com/2026/11/19/nvidia-amd-china-chip-sales-congress.html",
-   "source": "CNBC",
-   "published_at": "2026-11-20T02:55:49Z",
-   "text": "Docs: as of May 2026, the Commerce Dept. had approved sales of 879K+ Nvidia H200 and AMD MI325X chips to Chinese companies, including some with military links. The subagency of the Commerce Department that regulates and enforces exports approved the sale of more than 879,000 AI chips …",
-   "via": "Techmeme"
+   "title": "Google Workers Tell Their Employer Not to Punish Schools That Don't Want AI",
+   "url": "https://www.motherjones.com/politics/2026/11/google-alphabet-union-school-ai-protest-gemini-workers-petition/",
+   "source": "Hacker News",
+   "published_at": "2026-11-20T16:59:27Z",
+   "text": "90 points and 29 comments on Hacker News.",
+   "points": 90,
+   "discussion": "https://news.ycombinator.com/item?id=50577901"
   },
   {
    "title": "Google is rolling out a collapsible sidebar on its desktop Search homepage, letting users easily fi…",
