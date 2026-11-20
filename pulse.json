@@ -1,75 +1,68 @@
 {
  "schema": 1,
- "generated_at": "2026-11-18T23:20:19Z",
+ "generated_at": "2026-11-20T09:39:13Z",
  "items": [
   {
-   "title": "Google rolls out Gemini 4 Neon, with “fast end-to-end task completion” across coding, knowledge wor…",
-   "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/",
-   "source": "Koray Kavukcuoglu / Google",
-   "published_at": "2026-11-18T21:49:14Z",
-   "text": "Google rolls out Gemini 4 Neon, with “fast end-to-end task completion” across coding, knowledge work, and science, in the API, Antigravity, and the Gemini app. Bringing frontier-level intelligence with fast end-to-end task completion across complex software engineering, knowledge work, and science workflows.",
+   "title": "Anthropic closes up 17% at $97.17 in its Nasdaq debut, giving it a market cap of $1.3T, after openi…",
+   "url": "https://www.reuters.com/business/finance/anthropics-historic-debut-put-ais-promise-peril-wall-st-test-2026-11-19/",
+   "source": "Reuters",
+   "published_at": "2026-11-19T21:08:38Z",
+   "text": "Anthropic closes up 17% at $97.17 in its Nasdaq debut, giving it a market cap of $1.3T, after opening at $111.50, up 34% from its IPO price. Anthropic (ANT.O) notched a valuation of about $2 trillion in its Nasdaq debut on Thursday, edging past SpaceX's SPCX.O June listing and capping …",
    "via": "Techmeme"
   },
   {
-   "title": "Working with @AMD, our models identified up to 14% PPA improvement on flagship GPU IP in less than…",
-   "url": "https://x.com/OpenAI/status/2123100386638877054",
-   "source": "𝕏 @OpenAI",
-   "published_at": "2026-11-18T17:05:52Z",
-   "text": "Working with @AMD, our models identified up to 14% PPA improvement on flagship GPU IP in less than five months—building on designs AMD’s engineers had already spent years optimizing. The same approach helped improve Jalapeño, our first custom inference chip, with gains verified…",
-   "author_name": "OpenAI",
-   "likes": 3646,
-   "story": "OpenAI says its models improved power, performance, and area by up to 14% on AMD's flagship GPU IP; some changes are in a design AMD sent for manufacturing"
+   "title": "NEW: Apple is developing an autonomous AI agent with computer-use capabilities, including device co…",
+   "url": "https://x.com/markgurman/status/2123534050585460964",
+   "source": "𝕏 @markgurman",
+   "published_at": "2026-11-19T21:49:05Z",
+   "text": "NEW: Apple is developing an autonomous AI agent with computer-use capabilities, including device control, app interactions, web browsing and coding. The effort goes well beyond Siri and aims to compete with Meta’s Muse, ChatGPT’s Dots and Claude Code.",
+   "author_name": "Mark Gurman",
+   "likes": 2251,
+   "story": "A job listing shows Apple is developing an AI agent that can write code, browse the web, control apps, navigate devices, and coordinate subagents for users",
+   "links": [
+    "https://www.bloomberg.com/news/articles/2026-11-19/apple-is-working-on-ai-agent-for-device-control-apps-browsing-and-coding?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc5NTEyNDc2NSwiZXhwIjoxNzk1NzI5NTY1LCJhcnRpY2xlSWQiOiJUT1I5MEtLSkg2VjUwMCIsImJjb25uZWN0SWQiOiJDNEVEQ0FFMUZBMDU0MEJFQTI0QTlGMjExQzFFOTA4MCJ9.76_dY8UuzU3uFF5ExyvuszXnM3mdj2w3dulsez1QvhY"
+   ]
   },
   {
-   "title": "Claude Code 2.1.327 released",
-   "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.327",
+   "title": "Claude Code 2.1.329 released",
+   "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.329",
    "source": "Claude Code releases",
-   "published_at": "2026-11-17T23:17:45Z",
-   "text": "Added a confirmation before /install-github-app changes a repository · Added claude mcp add-json - to read the server's JSON from stdin, so tokens can stay off the command line; not available inside a Claude Code session · Added a line when a resumed session's earlier messages can't be loaded · Added a list in /status of broken agent, skill, command and output style files, keybinding errors, an unavailable sandbox, ignored permission settings and hook matchers that never match"
+   "published_at": "2026-11-19T22:14:41Z",
+   "text": "Added a trust dialog warning that says where a folder's hooks are declared · Added a warning in the conversation, in Claude Desktop and other non-interactive hosts, when hooks in managed settings fail to load · Added this session's scheduled tasks, /loop wakeups, the goal and this conversation's forks to /tasks; x stops one after asking · Added a \"Server message\" row to a server's page in /mcp that shows the JSON-RPC error message of a remote HTTP MCP server that refuses the connection"
   },
   {
-   "title": "Jokes aside, Nvidia’s board should bring Jensen back.",
-   "url": "https://x.com/durov/status/2123111423450685942",
-   "source": "𝕏 @durov",
-   "published_at": "2026-11-18T17:49:43Z",
-   "text": "Jokes aside, Nvidia’s board should bring Jensen back.",
-   "author_name": "Pavel Durov",
-   "likes": 13145,
-   "story": "Sources: a faction of Nvidia's board members is pushing for Jensen Huang's return despite Chair Harvey Jones stating the board doesn't intend to reinstate Huang"
+   "title": "New from the DeepMind Institute:",
+   "url": "https://x.com/AndrewCurran_/status/2123438927906550226",
+   "source": "𝕏 @AndrewCurran_",
+   "published_at": "2026-11-19T15:31:06Z",
+   "text": "New from the DeepMind Institute:",
+   "author_name": "Andrew Curran",
+   "likes": 366,
+   "story": "Google DeepMind researchers argue AI development is on pace to move beyond human-level AGI to ASI, which consistently outperforms groups of human experts"
   },
   {
-   "title": "Source: Anthropic priced its IPO at $83 per share, above the $70-$78 marketed range, which would pu…",
-   "url": "https://www.cnbc.com/2026/11/18/anthropic-ipo-ai-offering-price.html",
-   "source": "CNBC",
-   "published_at": "2026-11-18T22:03:01Z",
-   "text": "Source: Anthropic priced its IPO at $83 per share, above the $70-$78 marketed range, which would put its valuation above the $1.4T it was previously targeting. Anthropic priced its IPO at $83 per share on Wednesday, a person familiar told CNBC, above the expected range …",
+   "title": "Asian tech stocks plunge as Anthropic's record IPO fails to stem an AI sell-off; SoftBank falls ~15…",
+   "url": "https://www.ft.com/content/c7ad2e0c-efd1-40c2-a5a8-819ced8acf5b",
+   "source": "William Sandlund / Financia…",
+   "published_at": "2026-11-20T05:45:51Z",
+   "text": "Asian tech stocks plunge as Anthropic's record IPO fails to stem an AI sell-off; SoftBank falls ~15%, TSMC falls 5%+, and Samsung and SK Hynix fall 6%+. Asia's markets follow Wall Street lower despite Claude AI maker's record listing — Technology stocks in Asia fell on Friday …",
    "via": "Techmeme"
   },
   {
-   "title": "Seven new models at scalable price-performance",
-   "url": "https://microsoft.ai/news/microsoft-ignite-2026/",
+   "title": "Claude solves two open problems in the physics of black holes",
+   "url": "https://www.anthropic.com/research/claude-black-hole-physics",
    "source": "Hacker News",
-   "published_at": "2026-11-18T16:08:24Z",
-   "text": "394 points and 272 comments on Hacker News.",
-   "points": 394,
-   "discussion": "https://news.ycombinator.com/item?id=50548021"
+   "published_at": "2026-11-19T17:30:44Z",
+   "text": "495 points and 229 comments on Hacker News.",
+   "points": 495,
+   "discussion": "https://news.ycombinator.com/item?id=50563148"
   },
   {
-   "title": "This is stupid. What counts as a chinese model? What about Thinky's model distilled from Kimi? What…",
-   "url": "https://x.com/natolambert/status/2123064242341630334",
-   "source": "𝕏 @natolambert",
-   "published_at": "2026-11-18T14:42:14Z",
-   "text": "This is stupid. What counts as a chinese model? What about Thinky's model distilled from Kimi? What about composer, continued pretraining? What about Nemotron, using tons of DeepSeek synthetic data? What about that silly nous finetune for \"american\" values?",
-   "author_name": "Nathan Lambert",
-   "likes": 1280,
-   "story": "Sources: the Trump administration is considering requiring US companies to disclose on their websites if they use Chinese AI models, seeking to discourage usage"
-  },
-  {
-   "title": "Expanding the Cyber Verification Program",
-   "url": "https://www.anthropic.com/news/cyber-verification-program",
+   "title": "Anthropic prices initial public offering",
+   "url": "https://www.anthropic.com/news/anthropic-prices-initial-public-offering",
    "source": "Anthropic",
-   "published_at": "2026-11-18T21:55:37Z",
-   "text": "We’re launching a new, expanded version of our Cyber Verification Program (CVP), which makes advanced cyber capabilities and reduced blocking classifiers available to qualifying security professionals."
+   "published_at": "2026-11-18T23:26:25Z",
+   "text": "Today Anthropic, PBC priced its initial public offering of its Class A common stock."
   },
   {
    "title": "Running the full server-side Datasette Python app in the browser with service workers and Pyodide",
@@ -79,59 +72,61 @@
    "text": "Datasette Lite is my port of the Datasette Python application to run directly in the browser using WebAssembly and Pyodide . I've released a complete rewrite of Datasette Lite using service workers, and it's now almost indistinguishable from the real server-side application. You can now do all of the following, using a carefully crafted URL to lite.datasette.io : Load client-side Datasette to browse any SQLite database, JSON file, CSV file or SQL script Select a released version of Datasette to load from PyPI Load a specific commit, tag, or branch name from the Datasette GitHub repository Pic…"
   },
   {
-   "title": "Ahead of Anthropic's IPO, CAIS and others sign the MisAnthropic Statement, challenging the company'…",
-   "url": "https://safe.ai/news/anthropic-is-not-a-safe-ai-company",
-   "source": "Center for AI Safety",
-   "published_at": "2026-11-18T16:03:19Z",
-   "text": "Ahead of Anthropic's IPO, CAIS and others sign the MisAnthropic Statement, challenging the company's “safety” branding and its “reckless attempt” to build RSI. Ahead of Anthropic's upcoming initial public offering, the Center for AI Safety (CAIS) …",
+   "title": "Google is rolling out a collapsible sidebar on its desktop Search homepage, letting users easily fi…",
+   "url": "https://www.seroundtable.com/google-search-rolls-out-ai-mode-sidebar-42580.html",
+   "source": "Barry Schwartz / Search Eng…",
+   "published_at": "2026-11-20T07:25:47Z",
+   "text": "Google is rolling out a collapsible sidebar on its desktop Search homepage, letting users easily find and resume recent AI searches. Google is now officially rolling out what it calls the “collapsible sidebar” within Google Search. … Robby Stein from Google said “New on the Google …",
    "via": "Techmeme"
   },
   {
-   "title": "I think the parsimonious explanation of all evidence to date is this: - Alice Huang is not a spy -…",
-   "url": "https://x.com/teortaxesTex/status/2122929047713792428",
-   "source": "𝕏 @teortaxesTex",
-   "published_at": "2026-11-18T05:45:01Z",
-   "text": "I think the parsimonious explanation of all evidence to date is this: - Alice Huang is not a spy - the MSS was NOT involved in MegaSpeed or in smuggling compute - major Chinese companies generally prefer to legally rent compute or build overseas datacenters, and need external…",
-   "author_name": "Teortaxes▶️ (DeepSeek 推特🐋铁粉 2023 – ∞)",
-   "likes": 738,
-   "story": "Sources: Nvidia made two separate introductions in 2022 connecting Alibaba with alleged Chinese spy Alice Huang, helping Megaspeed land Alibaba as a customer"
-  },
-  {
-   "title": "AI agents ask better questions than KPMG accountants in audit trial",
-   "url": "https://europeanbusinessmagazine.com/ai-agents-better-questions-kpmg/",
+   "title": "Pete Warden on local AI, open models, voice interfaces, the future of hardware",
+   "url": "https://thedataexchange.media/pete-warden-moonshine/",
    "source": "Hacker News",
-   "published_at": "2026-11-18T15:49:34Z",
-   "text": "302 points and 138 comments on Hacker News.",
-   "points": 302,
-   "discussion": "https://news.ycombinator.com/item?id=50547777"
+   "published_at": "2026-11-19T15:38:12Z",
+   "text": "240 points and 217 comments on Hacker News.",
+   "points": 240,
+   "discussion": "https://news.ycombinator.com/item?id=50561508"
   },
   {
-   "title": "There are AI startups out there other than Anthropic! Bret Taylor's Sierra is in talks to raise at…",
-   "url": "https://x.com/steph_palazzolo/status/2123142066586722686",
-   "source": "𝕏 @steph_palazzolo",
-   "published_at": "2026-11-18T19:51:29Z",
-   "text": "There are AI startups out there other than Anthropic! Bret Taylor's Sierra is in talks to raise at a $30B valuation, nearly doubling its price from its May fundraise. Lightspeed, Greenoaks and Benchmark are in talks to invest. More here w/ @validapau:",
-   "author_name": "Stephanie Palazzolo",
-   "likes": 53,
-   "story": "Sources: Bret Taylor's Sierra is in talks to raise ~$1.5B at a ~$30B valuation, up from $15.8B in May; it said in October it hit $400M+ in annualized revenue",
-   "links": [
-    "https://www.theinformation.com/articles/bret-taylors-sierra-talks-raise-30-billion-valuation"
-   ]
-  },
-  {
-   "title": "At Nvidia's first all-hands since Huang's ouster, Colette Kress told staff that they can expect pay…",
-   "url": "https://www.wired.com/story/inside-nvidias-first-all-hands-without-jensen-huang-as-ceo/",
-   "source": "Wired",
-   "published_at": "2026-11-18T19:26:50Z",
-   "text": "At Nvidia's first all-hands since Huang's ouster, Colette Kress told staff that they can expect pay raises and more equity in December, months ahead of schedule. Interim CEO Collette Kress sought to ease employee concerns following Jensen Huang's ouster, in part by promising to increase compensation across the board.",
+   "title": "California's AG subpoenas Nvidia to investigate whether Jensen Huang's actions resulted in China ge…",
+   "url": "https://www.cbsnews.com/sanfrancisco/news/california-nvidia-subpoena-jensen-huang-affair-alleged-chinese-spy/",
+   "source": "Katie Nicora / CBS News",
+   "published_at": "2026-11-20T03:30:49Z",
+   "text": "California's AG subpoenas Nvidia to investigate whether Jensen Huang's actions resulted in China getting advanced chips, and whether Nvidia misled investors. California Attorney General Rob Bonta announced an investigative subpoena on chipmaker Nvidia on Thursday following allegations …",
    "via": "Techmeme"
   },
   {
-   "title": "Focus areas for The Anthropic Institute",
-   "url": "https://www.anthropic.com/news/anthropic-institute-agenda",
+   "title": "ChatGPT for SNES",
+   "url": "https://www.bxfoundry.com/chatgpt_snes/",
+   "source": "Hacker News",
+   "published_at": "2026-11-20T00:25:59Z",
+   "text": "83 points and 22 comments on Hacker News.",
+   "points": 83,
+   "discussion": "https://news.ycombinator.com/item?id=50568548"
+  },
+  {
+   "title": "Expanding the Cyber Verification Program",
+   "url": "https://www.anthropic.com/news/cyber-verification-program",
    "source": "Anthropic",
-   "published_at": "2026-11-18T17:12:33Z",
-   "text": "The Anthropic Institute investigates AI's impact on the world from within a frontier lab. Here are the questions driving its agenda."
+   "published_at": "2026-11-18T21:55:37Z",
+   "text": "We’re launching a new, expanded version of our Cyber Verification Program (CVP), which makes advanced cyber capabilities and reduced blocking classifiers available to qualifying security professionals."
+  },
+  {
+   "title": "Docs: as of May 2026, the US Commerce Dept. approved sales of 879K+ AI chips to Chinese companies,…",
+   "url": "https://www.cnbc.com/2026/11/19/nvidia-amd-china-chip-sales-congress.html",
+   "source": "CNBC",
+   "published_at": "2026-11-20T02:55:49Z",
+   "text": "Docs: as of May 2026, the US Commerce Dept. approved sales of 879K+ AI chips to Chinese companies, including entities on the DOD's Chinese military-linked list. The subagency of the Commerce Department that regulates and enforces exports approved the sale of more than 879,000 AI chips …",
+   "via": "Techmeme"
+  },
+  {
+   "title": "Google adds computer use to Gemini for macOS, letting it work across apps, files, and the web in th…",
+   "url": "https://techcrunch.com/2026/11/19/google-gives-gemini-the-ability-to-use-your-mac-for-you/",
+   "source": "Sarah Perez / TechCrunch",
+   "published_at": "2026-11-19T18:51:08Z",
+   "text": "Google adds computer use to Gemini for macOS, letting it work across apps, files, and the web in the background, available to US AI Plus, Pro, and Ultra users. Google on Thursday announced that it is bringing computer use to its Gemini desktop application on macOS, allowing its AI …",
+   "via": "Techmeme"
   }
  ],
  "sources": "curated, Techmeme, X (found via Techmeme, Reddit, the Internet Archive), Claude Code releases, Anthropic, Hacker News, Simon Willison"
