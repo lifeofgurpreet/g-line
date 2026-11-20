@@ -1,24 +1,24 @@
 {
  "schema": 1,
- "generated_at": "2026-11-20T19:12:21Z",
+ "generated_at": "2026-11-20T21:59:53Z",
  "items": [
   {
-   "title": "Current and ex-staffers describe abusive behavior by Jensen Huang that goes back decades; Nvidia se…",
-   "url": "https://www.nytimes.com/2026/11/20/technology/jensen-huang-nvidia-culture.html?unlocked_article_code=1.R1E.IEmx.Gn88RJ0uVjFO&smid=url-share",
-   "source": "New York Times",
-   "published_at": "2026-11-20T12:41:06Z",
-   "text": "Current and ex-staffers describe abusive behavior by Jensen Huang that goes back decades; Nvidia settled with two senior leaders who alleged abusive conduct. The Nvidia co-founder's belittling behavior toward employees goes back decades. It once led to a confidential settlement agreement …",
+   "title": "Anthropic mathematician Levent Alpöge claims he used Claude to prove the 167-year-old Riemann hypot…",
+   "url": "https://www.scientificamerican.com/article/anthropic-mathematician-claims-to-prove-riemann-hypothesis-most-famous-problem-in-all-of-math/",
+   "source": "Joseph Howlett / Scientific…",
+   "published_at": "2026-11-20T15:21:14Z",
+   "text": "Anthropic mathematician Levent Alpöge claims he used Claude to prove the 167-year-old Riemann hypothesis and posts the proof in the Lean programming language. An AI-generated solution of the 167-year-old problem, long considered far out of reach to human mathematicians …",
    "via": "Techmeme"
   },
   {
-   "title": "Terence Tao on Numberphile said he believes with the help of AI, we could solve the reimann hypothe…",
-   "url": "https://x.com/LinkofSunshine/status/2123800866738024731",
-   "source": "𝕏 @LinkofSunshine",
-   "published_at": "2026-11-20T15:29:19Z",
-   "text": "Terence Tao on Numberphile said he believes with the help of AI, we could solve the reimann hypothesis before 2050. It took 35 days",
-   "author_name": "Basil🧡",
-   "likes": 10023,
-   "story": "Anthropic mathematician Levent Alpöge claims he used Claude to prove the 167-year-old Riemann hypothesis and posts the proof in the Lean programming language"
+   "title": "We've been working on understanding model capabilities beyond what our prior time horizon tasks cou…",
+   "url": "https://x.com/METR_Evals/status/2123864981506798012",
+   "source": "𝕏 @METR_Evals",
+   "published_at": "2026-11-20T19:44:05Z",
+   "text": "We've been working on understanding model capabilities beyond what our prior time horizon tasks could capture. Today we’re sharing a research update. We find that AI R&D-relevant capabilities are improving rapidly and are getting harder to measure.",
+   "author_name": "METR",
+   "likes": 749,
+   "story": "METR updates its time horizon plot to add judgment-heavy tasks, finding some AI capabilities still grow exponentially but models lag at designing AI evaluations"
   },
   {
    "title": "Claude Code 2.1.329 released",
@@ -28,34 +28,41 @@
    "text": "Added a trust dialog warning that says where a folder's hooks are declared · Added a warning in the conversation, in Claude Desktop and other non-interactive hosts, when hooks in managed settings fail to load · Added this session's scheduled tasks, /loop wakeups, the goal and this conversation's forks to /tasks; x stops one after asking · Added a \"Server message\" row to a server's page in /mcp that shows the JSON-RPC error message of a remote HTTP MCP server that refuses the connection"
   },
   {
-   "title": "NEW: Apple is developing an autonomous AI agent with computer-use capabilities, including device co…",
-   "url": "https://x.com/markgurman/status/2123534050585460964",
-   "source": "𝕏 @markgurman",
-   "published_at": "2026-11-19T21:49:05Z",
-   "text": "NEW: Apple is developing an autonomous AI agent with computer-use capabilities, including device control, app interactions, web browsing and coding. The effort goes well beyond Siri and aims to compete with Meta’s Muse, ChatGPT’s Dots and Claude Code.",
-   "author_name": "Mark Gurman",
-   "likes": 2711,
-   "story": "A job listing shows Apple is developing an AI agent that can write code, browse the web, control apps, navigate devices, and coordinate subagents for users",
-   "links": [
-    "https://www.bloomberg.com/news/articles/2026-11-19/apple-is-working-on-ai-agent-for-device-control-apps-browsing-and-coding?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc5NTEyNDc2NSwiZXhwIjoxNzk1NzI5NTY1LCJhcnRpY2xlSWQiOiJUT1I5MEtLSkg2VjUwMCIsImJjb25uZWN0SWQiOiJDNEVEQ0FFMUZBMDU0MEJFQTI0QTlGMjExQzFFOTA4MCJ9.76_dY8UuzU3uFF5ExyvuszXnM3mdj2w3dulsez1QvhY"
-   ]
+   "title": "$AAPL at $5 trillion, +27% YTD and barely off all time high, watching the AI carnage, while Siri AI…",
+   "url": "https://x.com/ecommerceshares/status/2123842735719535089",
+   "source": "𝕏 @ecommerceshares",
+   "published_at": "2026-11-20T18:15:41Z",
+   "text": "$AAPL at $5 trillion, +27% YTD and barely off all time high, watching the AI carnage, while Siri AI takes 12 seconds of thinking to set a timer.",
+   "author_name": "Wasteland Capital",
+   "likes": 6905,
+   "story": "Anthropic raises an additional $12.2B as underwriters exercise their “greenshoe” overallotment of shares, bringing the total raised in its IPO to $93.5B"
   },
   {
-   "title": "Anthropic raises an additional $12.2B as underwriters exercise their “greenshoe” overallotment of s…",
-   "url": "https://www.cnbc.com/2026/11/20/anthropic-ipo-greenshoe.html",
-   "source": "Ashley Capoot / CNBC",
-   "published_at": "2026-11-20T13:51:02Z",
-   "text": "Anthropic raises an additional $12.2B as underwriters exercise their “greenshoe” overallotment of shares, bringing the total raised in its IPO to $93.5B. Anthropic underwriters have officially exercised their overallotment of shares in the historic initial public offering …",
+   "title": "Current and ex-staffers describe abusive behavior by Jensen Huang that goes back decades; Nvidia se…",
+   "url": "https://www.nytimes.com/2026/11/20/technology/jensen-huang-nvidia-culture.html?unlocked_article_code=1.R1E.IEmx.Gn88RJ0uVjFO&smid=url-share",
+   "source": "New York Times",
+   "published_at": "2026-11-20T12:41:06Z",
+   "text": "Current and ex-staffers describe abusive behavior by Jensen Huang that goes back decades; Nvidia settled with two senior leaders who alleged abusive conduct. The Nvidia co-founder's belittling behavior toward employees goes back decades. It once led to a confidential settlement agreement …",
    "via": "Techmeme"
   },
   {
-   "title": "Language Models Can Rewrite Their Own Weights",
-   "url": "https://arxiv.org/abs/2611.21885",
+   "title": "Nvidia accounting under SEC investigation, sources say",
+   "url": "https://finance.yahoo.com/markets/article/nvidia-stock-extends-25-trillion-rout-as-sec-probe-reportedly-investigates-its-accounting-194945274.html",
    "source": "Hacker News",
-   "published_at": "2026-11-20T16:29:06Z",
-   "text": "202 points and 86 comments on Hacker News.",
-   "points": 202,
-   "discussion": "https://news.ycombinator.com/item?id=50577265"
+   "published_at": "2026-11-20T20:22:41Z",
+   "text": "115 points and 38 comments on Hacker News.",
+   "points": 115,
+   "discussion": "https://news.ycombinator.com/item?id=50581438"
+  },
+  {
+   "title": "I believe the @nvidia board is not acting in the best interest of shareholders nor in a manner cons…",
+   "url": "https://x.com/BillAckman/status/2123101979375235386",
+   "source": "𝕏 @BillAckman",
+   "published_at": "2026-11-18T17:12:11Z",
+   "text": "I believe the @nvidia board is not acting in the best interest of shareholders nor in a manner consistent with their fiduciary duties. What we know is that the board fired Jensen or forced his resignation for violating company policy and/or in response to the accusation of an…",
+   "author_name": "Bill Ackman",
+   "likes": 73636,
+   "story": "Sources: Nvidia board's main reason for ousting Jensen Huang was his “lying” and “lack of candor” from October 2025 until this fall over the Alice Huang affair"
   },
   {
    "title": "Anthropic announces closing of initial public offering, including full exercise of underwriters’ op…",
@@ -73,37 +80,20 @@
    "via": "Techmeme"
   },
   {
-   "title": "Anthropic shares tank after IPO as the Nasdaq erases 2026 gains",
-   "url": "https://www.nbcnews.com/business/markets/anthropic-shares-markets-selloff-nasdaq-rcna610394",
+   "title": "Language Models Can Rewrite Their Own Weights",
+   "url": "https://arxiv.org/abs/2611.21885",
    "source": "Hacker News",
-   "published_at": "2026-11-20T17:44:01Z",
-   "text": "76 points and 55 comments on Hacker News.",
-   "points": 76,
-   "discussion": "https://news.ycombinator.com/item?id=50578794"
+   "published_at": "2026-11-20T16:29:06Z",
+   "text": "293 points and 97 comments on Hacker News.",
+   "points": 293,
+   "discussion": "https://news.ycombinator.com/item?id=50577265"
   },
   {
-   "title": "Docs: as of May 2026, the Commerce Dept. had approved sales of 879K+ Nvidia H200 and AMD MI325X chi…",
-   "url": "https://www.cnbc.com/2026/11/19/nvidia-amd-china-chip-sales-congress.html",
-   "source": "CNBC",
-   "published_at": "2026-11-20T02:55:49Z",
-   "text": "Docs: as of May 2026, the Commerce Dept. had approved sales of 879K+ Nvidia H200 and AMD MI325X chips to Chinese companies, including some with military links. The subagency of the Commerce Department that regulates and enforces exports approved the sale of more than 879,000 AI chips …",
-   "via": "Techmeme"
-  },
-  {
-   "title": "Frostbite: A new CPU architecture discovered, designed and verified by AI",
-   "url": "https://architectlabs.com/blog/frostbite",
-   "source": "Hacker News",
-   "published_at": "2026-11-20T10:01:41Z",
-   "text": "521 points and 282 comments on Hacker News.",
-   "points": 521,
-   "discussion": "https://news.ycombinator.com/item?id=50572503"
-  },
-  {
-   "title": "Asian tech stocks plunge as Anthropic's record IPO fails to stem an AI sell-off; SoftBank falls ~15…",
-   "url": "https://www.ft.com/content/c7ad2e0c-efd1-40c2-a5a8-819ced8acf5b",
-   "source": "William Sandlund / Financia…",
-   "published_at": "2026-11-20T05:45:51Z",
-   "text": "Asian tech stocks plunge as Anthropic's record IPO fails to stem an AI sell-off; SoftBank falls ~15%, TSMC falls 5%+, and Samsung and SK Hynix fall 6%+. Global technology stocks fell on Friday after Anthropic's blockbuster initial public offering failed to reignite the faltering AI trade …",
+   "title": "Trump says he would block US companies from building data centers overseas or impose a “tremendous…",
+   "url": "https://www.axios.com/2026/11/20/us-ai-trump-data-centers-overseas",
+   "source": "Julianna Bragg / Axios",
+   "published_at": "2026-11-20T18:35:56Z",
+   "text": "Trump says he would block US companies from building data centers overseas or impose a “tremendous tax” on them if they do. President Trump on Friday said he would block U.S. companies from building data centers overseas or impose a “tremendous tax” on them if they do.",
    "via": "Techmeme"
   },
   {
@@ -111,9 +101,26 @@
    "url": "https://www.motherjones.com/politics/2026/11/google-alphabet-union-school-ai-protest-gemini-workers-petition/",
    "source": "Hacker News",
    "published_at": "2026-11-20T16:59:27Z",
-   "text": "90 points and 29 comments on Hacker News.",
-   "points": 90,
+   "text": "210 points and 145 comments on Hacker News.",
+   "points": 210,
    "discussion": "https://news.ycombinator.com/item?id=50577901"
+  },
+  {
+   "title": "TML releases Inkling 2 Mini, an open-weights 26.4B-parameter transformer that loops middle layers t…",
+   "url": "https://thinkingmachines.ai/news/inkling-2-mini/",
+   "source": "Thinking Machines Lab",
+   "published_at": "2026-11-20T21:15:59Z",
+   "text": "TML releases Inkling 2 Mini, an open-weights 26.4B-parameter transformer that loops middle layers three times per token for better reasoning with fewer tokens. Today we are releasing Inkling 2 Mini, a fast, powerful model that's small enough to run on your laptop.",
+   "via": "Techmeme"
+  },
+  {
+   "title": "Frostbite: A new CPU architecture discovered, designed and verified by AI",
+   "url": "https://architectlabs.com/blog/frostbite",
+   "source": "Hacker News",
+   "published_at": "2026-11-20T10:01:41Z",
+   "text": "578 points and 307 comments on Hacker News.",
+   "points": 578,
+   "discussion": "https://news.ycombinator.com/item?id=50572503"
   },
   {
    "title": "Google is rolling out a collapsible sidebar on its desktop Search homepage, letting users easily fi…",
@@ -121,14 +128,6 @@
    "source": "Barry Schwartz / Search Eng…",
    "published_at": "2026-11-20T07:25:47Z",
    "text": "Google is rolling out a collapsible sidebar on its desktop Search homepage, letting users easily find and resume recent AI searches. Google is now officially rolling out what it calls the “collapsible sidebar” within Google Search. … Robby Stein from Google said “New on the Google …",
-   "via": "Techmeme"
-  },
-  {
-   "title": "California's AG subpoenas Nvidia to investigate whether Jensen Huang's actions resulted in China ge…",
-   "url": "https://www.cbsnews.com/sanfrancisco/news/california-nvidia-subpoena-jensen-huang-affair-alleged-chinese-spy/",
-   "source": "Katie Nicora / CBS News",
-   "published_at": "2026-11-20T03:30:49Z",
-   "text": "California's AG subpoenas Nvidia to investigate whether Jensen Huang's actions resulted in China getting advanced chips, and whether Nvidia misled investors. California Attorney General Rob Bonta announced an investigative subpoena on chipmaker Nvidia on Thursday following allegations …",
    "via": "Techmeme"
   }
  ],
