@@ -1,13 +1,13 @@
 {
  "schema": 1,
- "generated_at": "2026-11-21T01:06:10Z",
+ "generated_at": "2026-11-21T02:27:47Z",
  "items": [
   {
-   "title": "Anthropic mathematician Levent Alpöge claims he used Claude to prove the 167-year-old Riemann hypot…",
-   "url": "https://www.scientificamerican.com/article/anthropic-mathematician-claims-to-prove-riemann-hypothesis-most-famous-problem-in-all-of-math/",
-   "source": "Joseph Howlett / Scientific…",
-   "published_at": "2026-11-20T15:21:14Z",
-   "text": "Anthropic mathematician Levent Alpöge claims he used Claude to prove the 167-year-old Riemann hypothesis and posts the proof in the Lean programming language. An AI-generated solution of the 167-year-old problem, long considered far out of reach to human mathematicians …",
+   "title": "Current and ex-staffers describe abusive behavior by Jensen Huang that goes back decades; Nvidia se…",
+   "url": "https://www.nytimes.com/2026/11/20/technology/jensen-huang-nvidia-culture.html?unlocked_article_code=1.R1E.IEmx.Gn88RJ0uVjFO&smid=url-share",
+   "source": "New York Times",
+   "published_at": "2026-11-20T12:41:06Z",
+   "text": "Current and ex-staffers describe abusive behavior by Jensen Huang that goes back decades; Nvidia settled with two senior leaders who alleged abusive conduct. The Nvidia co-founder's belittling behavior toward employees goes back decades. It once led to a confidential settlement agreement …",
    "via": "Techmeme"
   },
   {
@@ -17,7 +17,7 @@
    "published_at": "2026-11-20T20:14:06Z",
    "text": "Inkling 2 Mini is a looped transformer that runs on a laptop. Looping lets a model think more and write less. At this scale, its thought process remains monitorable; this may not stay the case. We’re also sharing a variable-loop research model to enable further study.",
    "author_name": "Mira Murati",
-   "likes": 3971,
+   "likes": 4629,
    "story": "TML releases Inkling 2 Mini, an open-weights 26.4B-parameter transformer that loops middle layers three times per token for better reasoning with fewer tokens"
   },
   {
@@ -34,15 +34,15 @@
    "published_at": "2026-11-20T19:12:52Z",
    "text": "BREAKING: The US Securities and Exchange Commission (SEC) is launching an investigation into \"potential accounting issues\" at Nvidia. Nvidia stock, $NVDA, extends losses to over -8% on the day and -45% since October 6th.",
    "author_name": "The Kobeissi Letter",
-   "likes": 10486,
+   "likes": 10907,
    "story": "Sources: the US SEC is probing Nvidia's accounting practices; last year, Nvidia changed how it reports revenue, removing Singapore from geographical breakdowns"
   },
   {
-   "title": "Current and ex-staffers describe abusive behavior by Jensen Huang that goes back decades; Nvidia se…",
-   "url": "https://www.nytimes.com/2026/11/20/technology/jensen-huang-nvidia-culture.html?unlocked_article_code=1.R1E.IEmx.Gn88RJ0uVjFO&smid=url-share",
-   "source": "New York Times",
-   "published_at": "2026-11-20T12:41:06Z",
-   "text": "Current and ex-staffers describe abusive behavior by Jensen Huang that goes back decades; Nvidia settled with two senior leaders who alleged abusive conduct. The Nvidia co-founder's belittling behavior toward employees goes back decades. It once led to a confidential settlement agreement …",
+   "title": "Anthropic mathematician Levent Alpöge claims he used Claude to prove the 167-year-old Riemann hypot…",
+   "url": "https://www.scientificamerican.com/article/anthropic-mathematician-claims-to-prove-riemann-hypothesis-most-famous-problem-in-all-of-math/",
+   "source": "Joseph Howlett / Scientific…",
+   "published_at": "2026-11-20T15:21:14Z",
+   "text": "Anthropic mathematician Levent Alpöge claims he used Claude to prove the 167-year-old Riemann hypothesis and posts the proof in the Lean programming language. An AI-generated solution of the 167-year-old problem, long considered far out of reach to human mathematicians …",
    "via": "Techmeme"
   },
   {
@@ -50,18 +50,18 @@
    "url": "https://www.marketscreener.com/news/us-sec-s-nvidia-probe-is-examining-potential-accounting-issues-sources-say-ce785ed3dd8ff627",
    "source": "Hacker News",
    "published_at": "2026-11-20T20:22:41Z",
-   "text": "217 points and 105 comments on Hacker News.",
-   "points": 217,
+   "text": "232 points and 122 comments on Hacker News.",
+   "points": 232,
    "discussion": "https://news.ycombinator.com/item?id=50581438"
   },
   {
-   "title": "$AAPL at $5 trillion, +27% YTD and barely off all time high, watching the AI carnage, while Siri AI…",
-   "url": "https://x.com/ecommerceshares/status/2123842735719535089",
-   "source": "𝕏 @ecommerceshares",
-   "published_at": "2026-11-20T18:15:41Z",
-   "text": "$AAPL at $5 trillion, +27% YTD and barely off all time high, watching the AI carnage, while Siri AI takes 12 seconds of thinking to set a timer.",
-   "author_name": "Wasteland Capital",
-   "likes": 10860,
+   "title": "Flashback to June 14, 2024. At the time, frontier AI models have zero fluid intelligence. They scor…",
+   "url": "https://x.com/fchollet/status/2123898321647571442",
+   "source": "𝕏 @fchollet",
+   "published_at": "2026-11-20T21:56:34Z",
+   "text": "Flashback to June 14, 2024. At the time, frontier AI models have zero fluid intelligence. They score around 5% on ARC 1. They can't reliably add two numbers. They make laughable logic errors every other prompt. Reasoning models don't exist. Coding agents don't exist. Claude Code…",
+   "author_name": "François Chollet",
+   "likes": 2729,
    "story": "Nasdaq 100 fell 5.6% on Friday, taking its loss for the week to 10.4%, its worst run in more than six years, amid fears of a slowdown in the AI investment boom"
   },
   {
@@ -86,7 +86,7 @@
    "published_at": "2026-11-20T19:44:05Z",
    "text": "We've been working on understanding model capabilities beyond what our prior time horizon tasks could capture. Today we’re sharing a research update. We find that AI R&D-relevant capabilities are improving rapidly and are getting harder to measure.",
    "author_name": "METR",
-   "likes": 1067,
+   "likes": 1124,
    "story": "METR updates its time horizon plot to add judgment-heavy tasks, finding some AI capabilities still grow exponentially but models lag at designing AI evaluations"
   },
   {
@@ -94,8 +94,8 @@
    "url": "https://arxiv.org/abs/2611.21885",
    "source": "Hacker News",
    "published_at": "2026-11-20T16:29:06Z",
-   "text": "331 points and 108 comments on Hacker News.",
-   "points": 331,
+   "text": "344 points and 112 comments on Hacker News.",
+   "points": 344,
    "discussion": "https://news.ycombinator.com/item?id=50577265"
   },
   {
@@ -105,7 +105,7 @@
    "published_at": "2026-11-20T18:10:48Z",
    "text": "Cursor has told Homeland Security they are considering phasing out *all* China developed open-weight models because of the 'geopolitical risk.' The report will be published by multiple House committees later today. This is a huge indicator of future regulatory direction!",
    "author_name": "Andrew Curran",
-   "likes": 838,
+   "likes": 867,
    "story": "Cursor tells lawmakers it is considering phasing out Chinese open-weight AI models due to “geopolitical risk”; Cursor's Composer 2 was built on Kimi K2.5"
   },
   {
@@ -117,20 +117,20 @@
    "via": "Techmeme"
   },
   {
-   "title": "Google Workers Tell Their Employer Not to Punish Schools That Don't Want AI",
-   "url": "https://www.motherjones.com/politics/2026/11/google-alphabet-union-school-ai-protest-gemini-workers-petition/",
+   "title": "Restricting AI agents in mobile operating systems platforms from capturing data",
+   "url": "https://signal.org/blog/protecting-your-privacy/",
    "source": "Hacker News",
-   "published_at": "2026-11-20T16:59:27Z",
-   "text": "260 points and 193 comments on Hacker News.",
-   "points": 260,
-   "discussion": "https://news.ycombinator.com/item?id=50577901"
+   "published_at": "2026-11-20T09:42:16Z",
+   "text": "512 points and 306 comments on Hacker News.",
+   "points": 512,
+   "discussion": "https://news.ycombinator.com/item?id=50572348"
   },
   {
-   "title": "Anthropic raises an additional $12.2B as underwriters exercise their “greenshoe” overallotment of s…",
-   "url": "https://www.cnbc.com/2026/11/20/anthropic-ipo-greenshoe.html",
-   "source": "Ashley Capoot / CNBC",
-   "published_at": "2026-11-20T13:51:02Z",
-   "text": "Anthropic raises an additional $12.2B as underwriters exercise their “greenshoe” overallotment of shares, bringing the total raised in its IPO to $93.5B. Anthropic underwriters have officially exercised their overallotment of shares in the historic initial public offering …",
+   "title": "Oracle says it has secured funding for its infrastructure contract with OpenAI and “any further pri…",
+   "url": "https://x.com/oracle/status/2123884437045760420",
+   "source": "@oracle",
+   "published_at": "2026-11-21T00:26:13Z",
+   "text": "Oracle says it has secured funding for its infrastructure contract with OpenAI and “any further private discussions with vendors are just additional options”. Oracle has secured all the funding we need to fulfill our contract with OpenAI. With our final capital raise earlier this month, we became the first hyperscaler fully funded for this investment cycle. The financing we outlined at Oracle Investor Day, including vendor financing, is in...",
    "via": "Techmeme"
   }
  ],
