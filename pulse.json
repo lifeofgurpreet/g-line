@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-20T22:32:40Z",
+ "generated_at": "2026-11-21T01:06:10Z",
  "items": [
   {
    "title": "Anthropic mathematician Levent Alpöge claims he used Claude to prove the 167-year-old Riemann hypot…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-20T20:14:06Z",
    "text": "Inkling 2 Mini is a looped transformer that runs on a laptop. Looping lets a model think more and write less. At this scale, its thought process remains monitorable; this may not stay the case. We’re also sharing a variable-loop research model to enable further study.",
    "author_name": "Mira Murati",
-   "likes": 2216,
+   "likes": 3971,
    "story": "TML releases Inkling 2 Mini, an open-weights 26.4B-parameter transformer that loops middle layers three times per token for better reasoning with fewer tokens"
   },
   {
@@ -28,24 +28,14 @@
    "text": "Added sign-in to organizations managed in Anthropic's Enterprise Admin Console: after claude auth login, Claude Code applies the organization's settings and uses its cloud provider or gateway · Added easel, a built-in mod that draws charts when asked and under MCP metrics results, on Pro, Max and, where available, Team and Enterprise on macOS and Linux; turn automatic charts off in /config · Added CLAUDE_CODE_FULL_SIGN_IN_LINK=1 to print the full sign-in link, if the short one shows an error or a script reads values from it · Self-hosted runner: Added --start-dir / SELF_HOSTED_RUNNER_START_DI…"
   },
   {
-   "title": "We've been working on understanding model capabilities beyond what our prior time horizon tasks cou…",
-   "url": "https://x.com/METR_Evals/status/2123864981506798012",
-   "source": "𝕏 @METR_Evals",
-   "published_at": "2026-11-20T19:44:05Z",
-   "text": "We've been working on understanding model capabilities beyond what our prior time horizon tasks could capture. Today we’re sharing a research update. We find that AI R&D-relevant capabilities are improving rapidly and are getting harder to measure.",
-   "author_name": "METR",
-   "likes": 854,
-   "story": "METR updates its time horizon plot to add judgment-heavy tasks, finding some AI capabilities still grow exponentially but models lag at designing AI evaluations"
-  },
-  {
-   "title": "$AAPL at $5 trillion, +27% YTD and barely off all time high, watching the AI carnage, while Siri AI…",
-   "url": "https://x.com/ecommerceshares/status/2123842735719535089",
-   "source": "𝕏 @ecommerceshares",
-   "published_at": "2026-11-20T18:15:41Z",
-   "text": "$AAPL at $5 trillion, +27% YTD and barely off all time high, watching the AI carnage, while Siri AI takes 12 seconds of thinking to set a timer.",
-   "author_name": "Wasteland Capital",
-   "likes": 7923,
-   "story": "Anthropic raises an additional $12.2B as underwriters exercise their “greenshoe” overallotment of shares, bringing the total raised in its IPO to $93.5B"
+   "title": "BREAKING: The US Securities and Exchange Commission (SEC) is launching an investigation into \"poten…",
+   "url": "https://x.com/KobeissiLetter/status/2123857123398549909",
+   "source": "𝕏 @KobeissiLetter",
+   "published_at": "2026-11-20T19:12:52Z",
+   "text": "BREAKING: The US Securities and Exchange Commission (SEC) is launching an investigation into \"potential accounting issues\" at Nvidia. Nvidia stock, $NVDA, extends losses to over -8% on the day and -45% since October 6th.",
+   "author_name": "The Kobeissi Letter",
+   "likes": 10486,
+   "story": "Sources: the US SEC is probing Nvidia's accounting practices; last year, Nvidia changed how it reports revenue, removing Singapore from geographical breakdowns"
   },
   {
    "title": "Current and ex-staffers describe abusive behavior by Jensen Huang that goes back decades; Nvidia se…",
@@ -56,13 +46,23 @@
    "via": "Techmeme"
   },
   {
-   "title": "Nvidia accounting under SEC investigation, sources say",
-   "url": "https://finance.yahoo.com/markets/article/nvidia-stock-extends-25-trillion-rout-as-sec-probe-reportedly-investigates-its-accounting-194945274.html",
+   "title": "US SEC's Nvidia probe is examining potential accounting issues – sources",
+   "url": "https://www.marketscreener.com/news/us-sec-s-nvidia-probe-is-examining-potential-accounting-issues-sources-say-ce785ed3dd8ff627",
    "source": "Hacker News",
    "published_at": "2026-11-20T20:22:41Z",
-   "text": "137 points and 48 comments on Hacker News.",
-   "points": 137,
+   "text": "217 points and 105 comments on Hacker News.",
+   "points": 217,
    "discussion": "https://news.ycombinator.com/item?id=50581438"
+  },
+  {
+   "title": "$AAPL at $5 trillion, +27% YTD and barely off all time high, watching the AI carnage, while Siri AI…",
+   "url": "https://x.com/ecommerceshares/status/2123842735719535089",
+   "source": "𝕏 @ecommerceshares",
+   "published_at": "2026-11-20T18:15:41Z",
+   "text": "$AAPL at $5 trillion, +27% YTD and barely off all time high, watching the AI carnage, while Siri AI takes 12 seconds of thinking to set a timer.",
+   "author_name": "Wasteland Capital",
+   "likes": 10860,
+   "story": "Nasdaq 100 fell 5.6% on Friday, taking its loss for the week to 10.4%, its worst run in more than six years, amid fears of a slowdown in the AI investment boom"
   },
   {
    "title": "Anthropic announces closing of initial public offering, including full exercise of underwriters’ op…",
@@ -72,21 +72,41 @@
    "text": "Today Anthropic, PBC announced the closing of its initial public offering of an aggregate of 1,127,000,000 shares of its Class A common stock at a public offering price of $83.00 per share, including the full exercise by the underwriters of their option to purchase an additional 147,000,000 shares of Class A common stock from Anthropic at the initial public offering price."
   },
   {
-   "title": "Sources: Nvidia board's main reason for ousting Jensen Huang was his “lying” and “lack of candor” f…",
-   "url": "https://www.wired.com/story/jensen-huangs-lying-alarmed-nvidia-board-ahead-of-his-resignation/",
-   "source": "Wired",
-   "published_at": "2026-11-20T20:20:58Z",
-   "text": "Sources: Nvidia board's main reason for ousting Jensen Huang was his “lying” and “lack of candor” from October 2025 until this fall over the Alice Huang affair. Amid allegations of multiple affairs, including with a direct report and an alleged Chinese intelligence asset …",
+   "title": "Trump says he would block US companies from building data centers overseas or impose a “tremendous…",
+   "url": "https://www.axios.com/2026/11/20/us-ai-trump-data-centers-overseas",
+   "source": "Julianna Bragg / Axios",
+   "published_at": "2026-11-20T18:35:56Z",
+   "text": "Trump says he would block US companies from building data centers overseas or impose a “tremendous tax” on them if they do. President Trump on Friday said he would block U.S. companies from building data centers overseas or impose a “tremendous tax” on them if they do.",
    "via": "Techmeme"
+  },
+  {
+   "title": "We've been working on understanding model capabilities beyond what our prior time horizon tasks cou…",
+   "url": "https://x.com/METR_Evals/status/2123864981506798012",
+   "source": "𝕏 @METR_Evals",
+   "published_at": "2026-11-20T19:44:05Z",
+   "text": "We've been working on understanding model capabilities beyond what our prior time horizon tasks could capture. Today we’re sharing a research update. We find that AI R&D-relevant capabilities are improving rapidly and are getting harder to measure.",
+   "author_name": "METR",
+   "likes": 1067,
+   "story": "METR updates its time horizon plot to add judgment-heavy tasks, finding some AI capabilities still grow exponentially but models lag at designing AI evaluations"
   },
   {
    "title": "Language Models Can Rewrite Their Own Weights",
    "url": "https://arxiv.org/abs/2611.21885",
    "source": "Hacker News",
    "published_at": "2026-11-20T16:29:06Z",
-   "text": "301 points and 99 comments on Hacker News.",
-   "points": 301,
+   "text": "331 points and 108 comments on Hacker News.",
+   "points": 331,
    "discussion": "https://news.ycombinator.com/item?id=50577265"
+  },
+  {
+   "title": "Cursor has told Homeland Security they are considering phasing out *all* China developed open-weigh…",
+   "url": "https://x.com/AndrewCurran_/status/2123841504242446572",
+   "source": "𝕏 @AndrewCurran_",
+   "published_at": "2026-11-20T18:10:48Z",
+   "text": "Cursor has told Homeland Security they are considering phasing out *all* China developed open-weight models because of the 'geopolitical risk.' The report will be published by multiple House committees later today. This is a huge indicator of future regulatory direction!",
+   "author_name": "Andrew Curran",
+   "likes": 838,
+   "story": "Cursor tells lawmakers it is considering phasing out Chinese open-weight AI models due to “geopolitical risk”; Cursor's Composer 2 was built on Kimi K2.5"
   },
   {
    "title": "Signal says it will restrict screenshots by default to stop AI agents from reading private chats on…",
@@ -101,33 +121,16 @@
    "url": "https://www.motherjones.com/politics/2026/11/google-alphabet-union-school-ai-protest-gemini-workers-petition/",
    "source": "Hacker News",
    "published_at": "2026-11-20T16:59:27Z",
-   "text": "216 points and 157 comments on Hacker News.",
-   "points": 216,
+   "text": "260 points and 193 comments on Hacker News.",
+   "points": 260,
    "discussion": "https://news.ycombinator.com/item?id=50577901"
   },
   {
-   "title": "Trump says he would block US companies from building data centers overseas or impose a “tremendous…",
-   "url": "https://www.axios.com/2026/11/20/us-ai-trump-data-centers-overseas",
-   "source": "Julianna Bragg / Axios",
-   "published_at": "2026-11-20T18:35:56Z",
-   "text": "Trump says he would block US companies from building data centers overseas or impose a “tremendous tax” on them if they do. President Trump on Friday said he would block U.S. companies from building data centers overseas or impose a “tremendous tax” on them if they do.",
-   "via": "Techmeme"
-  },
-  {
-   "title": "Frostbite: A new CPU architecture discovered, designed and verified by AI",
-   "url": "https://architectlabs.com/blog/frostbite",
-   "source": "Hacker News",
-   "published_at": "2026-11-20T10:01:41Z",
-   "text": "589 points and 313 comments on Hacker News.",
-   "points": 589,
-   "discussion": "https://news.ycombinator.com/item?id=50572503"
-  },
-  {
-   "title": "Google is rolling out a collapsible sidebar on its desktop Search homepage, letting users easily fi…",
-   "url": "https://www.seroundtable.com/google-search-rolls-out-ai-mode-sidebar-42580.html",
-   "source": "Barry Schwartz / Search Eng…",
-   "published_at": "2026-11-20T07:25:47Z",
-   "text": "Google is rolling out a collapsible sidebar on its desktop Search homepage, letting users easily find and resume recent AI searches. Google is now officially rolling out what it calls the “collapsible sidebar” within Google Search. … Robby Stein from Google said “New on the Google …",
+   "title": "Anthropic raises an additional $12.2B as underwriters exercise their “greenshoe” overallotment of s…",
+   "url": "https://www.cnbc.com/2026/11/20/anthropic-ipo-greenshoe.html",
+   "source": "Ashley Capoot / CNBC",
+   "published_at": "2026-11-20T13:51:02Z",
+   "text": "Anthropic raises an additional $12.2B as underwriters exercise their “greenshoe” overallotment of shares, bringing the total raised in its IPO to $93.5B. Anthropic underwriters have officially exercised their overallotment of shares in the historic initial public offering …",
    "via": "Techmeme"
   }
  ],
