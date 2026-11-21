@@ -1,42 +1,7 @@
 {
  "schema": 1,
- "generated_at": "2026-11-21T02:27:47Z",
+ "generated_at": "2026-11-21T02:59:51Z",
  "items": [
-  {
-   "title": "Current and ex-staffers describe abusive behavior by Jensen Huang that goes back decades; Nvidia se…",
-   "url": "https://www.nytimes.com/2026/11/20/technology/jensen-huang-nvidia-culture.html?unlocked_article_code=1.R1E.IEmx.Gn88RJ0uVjFO&smid=url-share",
-   "source": "New York Times",
-   "published_at": "2026-11-20T12:41:06Z",
-   "text": "Current and ex-staffers describe abusive behavior by Jensen Huang that goes back decades; Nvidia settled with two senior leaders who alleged abusive conduct. The Nvidia co-founder's belittling behavior toward employees goes back decades. It once led to a confidential settlement agreement …",
-   "via": "Techmeme"
-  },
-  {
-   "title": "Inkling 2 Mini is a looped transformer that runs on a laptop. Looping lets a model think more and w…",
-   "url": "https://x.com/miramurati/status/2123872534970208421",
-   "source": "𝕏 @miramurati",
-   "published_at": "2026-11-20T20:14:06Z",
-   "text": "Inkling 2 Mini is a looped transformer that runs on a laptop. Looping lets a model think more and write less. At this scale, its thought process remains monitorable; this may not stay the case. We’re also sharing a variable-loop research model to enable further study.",
-   "author_name": "Mira Murati",
-   "likes": 4629,
-   "story": "TML releases Inkling 2 Mini, an open-weights 26.4B-parameter transformer that loops middle layers three times per token for better reasoning with fewer tokens"
-  },
-  {
-   "title": "Claude Code 2.1.330 released",
-   "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.330",
-   "source": "Claude Code releases",
-   "published_at": "2026-11-20T22:32:56Z",
-   "text": "Added sign-in to organizations managed in Anthropic's Enterprise Admin Console: after claude auth login, Claude Code applies the organization's settings and uses its cloud provider or gateway · Added easel, a built-in mod that draws charts when asked and under MCP metrics results, on Pro, Max and, where available, Team and Enterprise on macOS and Linux; turn automatic charts off in /config · Added CLAUDE_CODE_FULL_SIGN_IN_LINK=1 to print the full sign-in link, if the short one shows an error or a script reads values from it · Self-hosted runner: Added --start-dir / SELF_HOSTED_RUNNER_START_DI…"
-  },
-  {
-   "title": "BREAKING: The US Securities and Exchange Commission (SEC) is launching an investigation into \"poten…",
-   "url": "https://x.com/KobeissiLetter/status/2123857123398549909",
-   "source": "𝕏 @KobeissiLetter",
-   "published_at": "2026-11-20T19:12:52Z",
-   "text": "BREAKING: The US Securities and Exchange Commission (SEC) is launching an investigation into \"potential accounting issues\" at Nvidia. Nvidia stock, $NVDA, extends losses to over -8% on the day and -45% since October 6th.",
-   "author_name": "The Kobeissi Letter",
-   "likes": 10907,
-   "story": "Sources: the US SEC is probing Nvidia's accounting practices; last year, Nvidia changed how it reports revenue, removing Singapore from geographical breakdowns"
-  },
   {
    "title": "Anthropic mathematician Levent Alpöge claims he used Claude to prove the 167-year-old Riemann hypot…",
    "url": "https://www.scientificamerican.com/article/anthropic-mathematician-claims-to-prove-riemann-hypothesis-most-famous-problem-in-all-of-math/",
@@ -46,12 +11,47 @@
    "via": "Techmeme"
   },
   {
+   "title": "BREAKING: The US Securities and Exchange Commission (SEC) is launching an investigation into \"poten…",
+   "url": "https://x.com/KobeissiLetter/status/2123857123398549909",
+   "source": "𝕏 @KobeissiLetter",
+   "published_at": "2026-11-20T19:12:52Z",
+   "text": "BREAKING: The US Securities and Exchange Commission (SEC) is launching an investigation into \"potential accounting issues\" at Nvidia. Nvidia stock, $NVDA, extends losses to over -8% on the day and -45% since October 6th.",
+   "author_name": "The Kobeissi Letter",
+   "likes": 11049,
+   "story": "Sources: the US SEC is probing Nvidia's accounting practices; last year, Nvidia changed how it reports revenue, removing Singapore from geographical breakdowns"
+  },
+  {
+   "title": "Claude Code 2.1.330 released",
+   "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.330",
+   "source": "Claude Code releases",
+   "published_at": "2026-11-20T22:32:56Z",
+   "text": "Added sign-in to organizations managed in Anthropic's Enterprise Admin Console: after claude auth login, Claude Code applies the organization's settings and uses its cloud provider or gateway · Added easel, a built-in mod that draws charts when asked and under MCP metrics results, on Pro, Max and, where available, Team and Enterprise on macOS and Linux; turn automatic charts off in /config · Added CLAUDE_CODE_FULL_SIGN_IN_LINK=1 to print the full sign-in link, if the short one shows an error or a script reads values from it · Self-hosted runner: Added --start-dir / SELF_HOSTED_RUNNER_START_DI…"
+  },
+  {
+   "title": "Inkling 2 Mini is a looped transformer that runs on a laptop. Looping lets a model think more and w…",
+   "url": "https://x.com/miramurati/status/2123872534970208421",
+   "source": "𝕏 @miramurati",
+   "published_at": "2026-11-20T20:14:06Z",
+   "text": "Inkling 2 Mini is a looped transformer that runs on a laptop. Looping lets a model think more and write less. At this scale, its thought process remains monitorable; this may not stay the case. We’re also sharing a variable-loop research model to enable further study.",
+   "author_name": "Mira Murati",
+   "likes": 4838,
+   "story": "TML releases Inkling 2 Mini, an open-weights 26.4B-parameter transformer that loops middle layers three times per token for better reasoning with fewer tokens"
+  },
+  {
+   "title": "Current and ex-staffers describe abusive behavior by Jensen Huang that goes back decades; Nvidia se…",
+   "url": "https://www.nytimes.com/2026/11/20/technology/jensen-huang-nvidia-culture.html?unlocked_article_code=1.R1E.IEmx.Gn88RJ0uVjFO&smid=url-share",
+   "source": "New York Times",
+   "published_at": "2026-11-20T12:41:06Z",
+   "text": "Current and ex-staffers describe abusive behavior by Jensen Huang that goes back decades; Nvidia settled with two senior leaders who alleged abusive conduct. The Nvidia co-founder's belittling behavior toward employees goes back decades. It once led to a confidential settlement agreement …",
+   "via": "Techmeme"
+  },
+  {
    "title": "US SEC's Nvidia probe is examining potential accounting issues – sources",
    "url": "https://www.marketscreener.com/news/us-sec-s-nvidia-probe-is-examining-potential-accounting-issues-sources-say-ce785ed3dd8ff627",
    "source": "Hacker News",
    "published_at": "2026-11-20T20:22:41Z",
-   "text": "232 points and 122 comments on Hacker News.",
-   "points": 232,
+   "text": "241 points and 127 comments on Hacker News.",
+   "points": 241,
    "discussion": "https://news.ycombinator.com/item?id=50581438"
   },
   {
@@ -61,7 +61,7 @@
    "published_at": "2026-11-20T21:56:34Z",
    "text": "Flashback to June 14, 2024. At the time, frontier AI models have zero fluid intelligence. They score around 5% on ARC 1. They can't reliably add two numbers. They make laughable logic errors every other prompt. Reasoning models don't exist. Coding agents don't exist. Claude Code…",
    "author_name": "François Chollet",
-   "likes": 2729,
+   "likes": 2905,
    "story": "Nasdaq 100 fell 5.6% on Friday, taking its loss for the week to 10.4%, its worst run in more than six years, amid fears of a slowdown in the AI investment boom"
   },
   {
@@ -86,7 +86,7 @@
    "published_at": "2026-11-20T19:44:05Z",
    "text": "We've been working on understanding model capabilities beyond what our prior time horizon tasks could capture. Today we’re sharing a research update. We find that AI R&D-relevant capabilities are improving rapidly and are getting harder to measure.",
    "author_name": "METR",
-   "likes": 1124,
+   "likes": 1144,
    "story": "METR updates its time horizon plot to add judgment-heavy tasks, finding some AI capabilities still grow exponentially but models lag at designing AI evaluations"
   },
   {
@@ -94,8 +94,8 @@
    "url": "https://arxiv.org/abs/2611.21885",
    "source": "Hacker News",
    "published_at": "2026-11-20T16:29:06Z",
-   "text": "344 points and 112 comments on Hacker News.",
-   "points": 344,
+   "text": "348 points and 113 comments on Hacker News.",
+   "points": 348,
    "discussion": "https://news.ycombinator.com/item?id=50577265"
   },
   {
@@ -105,7 +105,7 @@
    "published_at": "2026-11-20T18:10:48Z",
    "text": "Cursor has told Homeland Security they are considering phasing out *all* China developed open-weight models because of the 'geopolitical risk.' The report will be published by multiple House committees later today. This is a huge indicator of future regulatory direction!",
    "author_name": "Andrew Curran",
-   "likes": 867,
+   "likes": 881,
    "story": "Cursor tells lawmakers it is considering phasing out Chinese open-weight AI models due to “geopolitical risk”; Cursor's Composer 2 was built on Kimi K2.5"
   },
   {
@@ -121,8 +121,8 @@
    "url": "https://signal.org/blog/protecting-your-privacy/",
    "source": "Hacker News",
    "published_at": "2026-11-20T09:42:16Z",
-   "text": "512 points and 306 comments on Hacker News.",
-   "points": 512,
+   "text": "520 points and 308 comments on Hacker News.",
+   "points": 520,
    "discussion": "https://news.ycombinator.com/item?id=50572348"
   },
   {
