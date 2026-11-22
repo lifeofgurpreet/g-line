@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-22T12:10:41Z",
+ "generated_at": "2026-11-22T12:42:30Z",
  "items": [
   {
    "title": "Researchers used canary credentials in requests to AI routers like OpenRouter and Vercel, even unde…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-21T20:26:59Z",
    "text": "In FSD V15, the Tesla AI computer re-renders reality with chevrons in the sky for turns like a video game. You can tap any point on the reality revisualizer to make your car go there.",
    "author_name": "Elon Musk",
-   "likes": 33395,
+   "likes": 33877,
    "story": "Tesla rolls out FSD v15, featuring a photorealistic rendering of car surroundings; Elon Musk says it is real-time AI video generation without using game engines"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-11-20T15:29:19Z",
    "text": "Terence Tao on Numberphile said he believes with the help of AI, we could solve the reimann hypothesis before 2050. It took 35 days",
    "author_name": "Basil🧡",
-   "likes": 16168,
+   "likes": 16169,
    "story": "A joint statement by the Lean and Mathlib communities says “we have full confidence that Alpöge's proof of the Riemann Hypothesis is correct”"
   },
   {
@@ -50,8 +50,8 @@
    "url": "https://betterdatacenterproject.com/2026/11/16/how-ai-is-powered-a-breakdown-of-byop-and-grid-power/",
    "source": "Hacker News",
    "published_at": "2026-11-22T08:57:34Z",
-   "text": "184 points and 258 comments on Hacker News.",
-   "points": 184,
+   "text": "206 points and 304 comments on Hacker News.",
+   "points": 206,
    "discussion": "https://news.ycombinator.com/item?id=50597612"
   },
   {
@@ -74,9 +74,26 @@
    "url": "https://openrouter.ai/blog/announcements/data-processing-incidents-on-inference-providers/",
    "source": "Hacker News",
    "published_at": "2026-11-22T02:14:14Z",
-   "text": "174 points and 66 comments on Hacker News.",
-   "points": 174,
+   "text": "177 points and 67 comments on Hacker News.",
+   "points": 177,
    "discussion": "https://news.ycombinator.com/item?id=50595554"
+  },
+  {
+   "title": "NYU's Tristan Buckmaster and Anthropic's Levent Alpöge publish an AI-aided proof of Navier-Stokes b…",
+   "url": "https://www.scientificamerican.com/article/ai-just-solved-the-real-navier-stokes-problem/",
+   "source": "Peter Hall / Scientific Ame…",
+   "published_at": "2026-11-21T06:30:55Z",
+   "text": "NYU's Tristan Buckmaster and Anthropic's Levent Alpöge publish an AI-aided proof of Navier-Stokes blowup, saying it closes a loophole in OpenAI's solution. Two months after getting scooped by OpenAI, N.Y.U. professor Tristan Buckmaster and Anthropic employee Levent Alpöge …",
+   "via": "Techmeme"
+  },
+  {
+   "title": "The Mythology of Conscious AI",
+   "url": "https://www.noemamag.com/the-mythology-of-conscious-ai/",
+   "source": "Hacker News",
+   "published_at": "2026-11-22T02:10:02Z",
+   "text": "82 points and 178 comments on Hacker News.",
+   "points": 82,
+   "discussion": "https://news.ycombinator.com/item?id=50595537"
   },
   {
    "title": "Sources: AI server suppliers like Dell, HPE, Lenovo, and Supermicro are demanding substantially hig…",
@@ -87,29 +104,12 @@
    "via": "Techmeme"
   },
   {
-   "title": "The Mythology of Conscious AI",
-   "url": "https://www.noemamag.com/the-mythology-of-conscious-ai/",
-   "source": "Hacker News",
-   "published_at": "2026-11-22T02:10:02Z",
-   "text": "80 points and 169 comments on Hacker News.",
-   "points": 80,
-   "discussion": "https://news.ycombinator.com/item?id=50595537"
-  },
-  {
-   "title": "NYU's Tristan Buckmaster and Anthropic's Levent Alpöge publish an AI-aided proof of Navier-Stokes b…",
-   "url": "https://www.scientificamerican.com/article/ai-just-solved-the-real-navier-stokes-problem/",
-   "source": "Peter Hall / Scientific Ame…",
-   "published_at": "2026-11-21T06:30:55Z",
-   "text": "NYU's Tristan Buckmaster and Anthropic's Levent Alpöge publish an AI-aided proof of Navier-Stokes blowup, saying it closes a loophole in OpenAI's solution",
-   "via": "Techmeme"
-  },
-  {
    "title": "Pandex – Official European Law for AI Agents, over MCP",
    "url": "https://www.pandex.io",
    "source": "Hacker News",
    "published_at": "2026-11-21T20:47:41Z",
-   "text": "102 points and 26 comments on Hacker News.",
-   "points": 102,
+   "text": "105 points and 27 comments on Hacker News.",
+   "points": 105,
    "discussion": "https://news.ycombinator.com/item?id=50593481"
   },
   {
