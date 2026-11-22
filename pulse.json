@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-22T10:02:21Z",
+ "generated_at": "2026-11-22T10:33:47Z",
  "items": [
   {
    "title": "Researchers used canary credentials in requests to AI routers like OpenRouter and Vercel, even unde…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-21T20:26:59Z",
    "text": "In FSD V15, the Tesla AI computer re-renders reality with chevrons in the sky for turns like a video game. You can tap any point on the reality revisualizer to make your car go there.",
    "author_name": "Elon Musk",
-   "likes": 31898,
+   "likes": 32305,
    "story": "Tesla rolls out FSD v15, featuring a photorealistic rendering of car surroundings; Elon Musk says it is real-time AI video generation without using game engines"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-11-20T18:15:41Z",
    "text": "$AAPL at $5 trillion, +27% YTD and barely off all time high, watching the AI carnage, while Siri AI takes 12 seconds of thinking to set a timer.",
    "author_name": "Wasteland Capital",
-   "likes": 22697,
+   "likes": 22707,
    "story": "Anthropic stock closed down 8.5% at $88.91 on its second day of trading, trimming gains from its $83 IPO price"
   },
   {
@@ -50,8 +50,8 @@
    "url": "https://betterdatacenterproject.com/2026/11/16/how-ai-is-powered-a-breakdown-of-byop-and-grid-power/",
    "source": "Hacker News",
    "published_at": "2026-11-22T08:57:34Z",
-   "text": "62 points and 37 comments on Hacker News.",
-   "points": 62,
+   "text": "104 points and 111 comments on Hacker News.",
+   "points": 104,
    "discussion": "https://news.ycombinator.com/item?id=50597612"
   },
   {
@@ -61,7 +61,7 @@
    "published_at": "2026-11-20T15:29:19Z",
    "text": "Terence Tao on Numberphile said he believes with the help of AI, we could solve the reimann hypothesis before 2050. It took 35 days",
    "author_name": "Basil🧡",
-   "likes": 16155,
+   "likes": 16153,
    "story": "A joint statement by the Lean and Mathlib communities says “we have full confidence that Alpöge's proof of the Riemann Hypothesis is correct”"
   },
   {
@@ -84,8 +84,8 @@
    "url": "https://openrouter.ai/blog/announcements/data-processing-incidents-on-inference-providers/",
    "source": "Hacker News",
    "published_at": "2026-11-22T02:14:14Z",
-   "text": "144 points and 57 comments on Hacker News.",
-   "points": 144,
+   "text": "151 points and 58 comments on Hacker News.",
+   "points": 151,
    "discussion": "https://news.ycombinator.com/item?id=50595554"
   },
   {
@@ -101,8 +101,8 @@
    "url": "https://www.noemamag.com/the-mythology-of-conscious-ai/",
    "source": "Hacker News",
    "published_at": "2026-11-22T02:10:02Z",
-   "text": "63 points and 120 comments on Hacker News.",
-   "points": 63,
+   "text": "70 points and 137 comments on Hacker News.",
+   "points": 70,
    "discussion": "https://news.ycombinator.com/item?id=50595537"
   },
   {
@@ -118,8 +118,8 @@
    "url": "https://www.pandex.io",
    "source": "Hacker News",
    "published_at": "2026-11-21T20:47:41Z",
-   "text": "92 points and 21 comments on Hacker News.",
-   "points": 92,
+   "text": "94 points and 21 comments on Hacker News.",
+   "points": 94,
    "discussion": "https://news.ycombinator.com/item?id=50593481"
   },
   {
