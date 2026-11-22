@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-22T11:06:46Z",
+ "generated_at": "2026-11-22T11:38:47Z",
  "items": [
   {
    "title": "Researchers used canary credentials in requests to AI routers like OpenRouter and Vercel, even unde…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-21T20:26:59Z",
    "text": "In FSD V15, the Tesla AI computer re-renders reality with chevrons in the sky for turns like a video game. You can tap any point on the reality revisualizer to make your car go there.",
    "author_name": "Elon Musk",
-   "likes": 32644,
+   "likes": 33026,
    "story": "Tesla rolls out FSD v15, featuring a photorealistic rendering of car surroundings; Elon Musk says it is real-time AI video generation without using game engines"
   },
   {
@@ -28,48 +28,14 @@
    "text": "Added sign-in to organizations managed in Anthropic's Enterprise Admin Console: after claude auth login, Claude Code applies the organization's settings and uses its cloud provider or gateway · Added easel, a built-in mod that draws charts when asked and under MCP metrics results, on Pro, Max and, where available, Team and Enterprise on macOS and Linux; turn automatic charts off in /config · Added CLAUDE_CODE_FULL_SIGN_IN_LINK=1 to print the full sign-in link, if the short one shows an error or a script reads values from it · Self-hosted runner: Added --start-dir / SELF_HOSTED_RUNNER_START_DI…"
   },
   {
-   "title": "$AAPL at $5 trillion, +27% YTD and barely off all time high, watching the AI carnage, while Siri AI…",
-   "url": "https://x.com/ecommerceshares/status/2123842735719535089",
-   "source": "𝕏 @ecommerceshares",
-   "published_at": "2026-11-20T18:15:41Z",
-   "text": "$AAPL at $5 trillion, +27% YTD and barely off all time high, watching the AI carnage, while Siri AI takes 12 seconds of thinking to set a timer.",
-   "author_name": "Wasteland Capital",
-   "likes": 22719,
-   "story": "Anthropic stock closed down 8.5% at $88.91 on its second day of trading, trimming gains from its $83 IPO price"
-  },
-  {
-   "title": "Sources: Alice Huang associate Li Ming, whom Singapore charged with fraud in 2025, was central to s…",
-   "url": "https://www.wsj.com/tech/li-ming-megaspeed-nvidia-chips-china-6260d836?st=HzXMZU",
-   "source": "Stu Woo / Wall Street Journ…",
-   "published_at": "2026-11-22T05:45:56Z",
-   "text": "Sources: Alice Huang associate Li Ming, whom Singapore charged with fraud in 2025, was central to smuggling restricted AI chips from Southeast Asia to China. Defendant in case involving chip smuggling worked with Jensen Huang's romantic partner — SINGAPORE—Jensen Huang's romantic partner …",
-   "via": "Techmeme"
-  },
-  {
-   "title": "87% of the Anthropic power will come from gas and 11% from coal in 2028",
-   "url": "https://betterdatacenterproject.com/2026/11/16/how-ai-is-powered-a-breakdown-of-byop-and-grid-power/",
-   "source": "Hacker News",
-   "published_at": "2026-11-22T08:57:34Z",
-   "text": "147 points and 174 comments on Hacker News.",
-   "points": 147,
-   "discussion": "https://news.ycombinator.com/item?id=50597612"
-  },
-  {
    "title": "Terence Tao on Numberphile said he believes with the help of AI, we could solve the reimann hypothe…",
    "url": "https://x.com/LinkofSunshine/status/2123800866738024731",
    "source": "𝕏 @LinkofSunshine",
    "published_at": "2026-11-20T15:29:19Z",
    "text": "Terence Tao on Numberphile said he believes with the help of AI, we could solve the reimann hypothesis before 2050. It took 35 days",
    "author_name": "Basil🧡",
-   "likes": 16157,
+   "likes": 16162,
    "story": "A joint statement by the Lean and Mathlib communities says “we have full confidence that Alpöge's proof of the Riemann Hypothesis is correct”"
-  },
-  {
-   "title": "Anthropic announces closing of initial public offering, including full exercise of underwriters’ op…",
-   "url": "https://www.anthropic.com/news/ipo-close",
-   "source": "Anthropic",
-   "published_at": "2026-11-20T12:41:01Z",
-   "text": "Today Anthropic, PBC announced the closing of its initial public offering of an aggregate of 1,127,000,000 shares of its Class A common stock at a public offering price of $83.00 per share, including the full exercise by the underwriters of their option to purchase an additional 147,000,000 shares of Class A common stock from Anthropic at the initial public offering price."
   },
   {
    "title": "Investigation: Alice Huang had ties to gaming firms, alleged Prince Group figures and hundreds of s…",
@@ -80,13 +46,20 @@
    "via": "Techmeme"
   },
   {
-   "title": "Data Processing Incidents on Inference Providers",
-   "url": "https://openrouter.ai/blog/announcements/data-processing-incidents-on-inference-providers/",
+   "title": "87% of the Anthropic power will come from gas and 11% from coal in 2028",
+   "url": "https://betterdatacenterproject.com/2026/11/16/how-ai-is-powered-a-breakdown-of-byop-and-grid-power/",
    "source": "Hacker News",
-   "published_at": "2026-11-22T02:14:14Z",
-   "text": "159 points and 63 comments on Hacker News.",
-   "points": 159,
-   "discussion": "https://news.ycombinator.com/item?id=50595554"
+   "published_at": "2026-11-22T08:57:34Z",
+   "text": "168 points and 225 comments on Hacker News.",
+   "points": 168,
+   "discussion": "https://news.ycombinator.com/item?id=50597612"
+  },
+  {
+   "title": "Anthropic announces closing of initial public offering, including full exercise of underwriters’ op…",
+   "url": "https://www.anthropic.com/news/ipo-close",
+   "source": "Anthropic",
+   "published_at": "2026-11-20T12:41:01Z",
+   "text": "Today Anthropic, PBC announced the closing of its initial public offering of an aggregate of 1,127,000,000 shares of its Class A common stock at a public offering price of $83.00 per share, including the full exercise by the underwriters of their option to purchase an additional 147,000,000 shares of Class A common stock from Anthropic at the initial public offering price."
   },
   {
    "title": "Experts say AI has made planning cyberattacks on industrial equipment faster by helping attackers r…",
@@ -97,12 +70,29 @@
    "via": "Techmeme"
   },
   {
+   "title": "Data Processing Incidents on Inference Providers",
+   "url": "https://openrouter.ai/blog/announcements/data-processing-incidents-on-inference-providers/",
+   "source": "Hacker News",
+   "published_at": "2026-11-22T02:14:14Z",
+   "text": "170 points and 66 comments on Hacker News.",
+   "points": 170,
+   "discussion": "https://news.ycombinator.com/item?id=50595554"
+  },
+  {
+   "title": "NYU's Tristan Buckmaster and Anthropic's Levent Alpöge publish an AI-aided proof of Navier-Stokes b…",
+   "url": "https://www.scientificamerican.com/article/ai-just-solved-the-real-navier-stokes-problem/",
+   "source": "Peter Hall / Scientific Ame…",
+   "published_at": "2026-11-21T06:30:55Z",
+   "text": "NYU's Tristan Buckmaster and Anthropic's Levent Alpöge publish an AI-aided proof of Navier-Stokes blowup, saying it closes a loophole in OpenAI's solution. Two months after getting scooped by OpenAI, N.Y.U. professor Tristan Buckmaster and Anthropic employee Levent Alpöge …",
+   "via": "Techmeme"
+  },
+  {
    "title": "The Mythology of Conscious AI",
    "url": "https://www.noemamag.com/the-mythology-of-conscious-ai/",
    "source": "Hacker News",
    "published_at": "2026-11-22T02:10:02Z",
-   "text": "73 points and 152 comments on Hacker News.",
-   "points": 73,
+   "text": "78 points and 159 comments on Hacker News.",
+   "points": 78,
    "discussion": "https://news.ycombinator.com/item?id=50595537"
   },
   {
@@ -118,16 +108,24 @@
    "url": "https://www.pandex.io",
    "source": "Hacker News",
    "published_at": "2026-11-21T20:47:41Z",
-   "text": "97 points and 22 comments on Hacker News.",
-   "points": 97,
+   "text": "100 points and 23 comments on Hacker News.",
+   "points": 100,
    "discussion": "https://news.ycombinator.com/item?id=50593481"
   },
   {
-   "title": "NYU's Tristan Buckmaster and Anthropic's Levent Alpöge publish an AI-aided proof of Navier-Stokes b…",
-   "url": "https://www.scientificamerican.com/article/ai-just-solved-the-real-navier-stokes-problem/",
-   "source": "Peter Hall / Scientific Ame…",
-   "published_at": "2026-11-21T06:30:55Z",
-   "text": "NYU's Tristan Buckmaster and Anthropic's Levent Alpöge publish an AI-aided proof of Navier-Stokes blowup, saying it closes a loophole in OpenAI's solution. Two months after getting scooped by OpenAI, N.Y.U. professor Tristan Buckmaster and Anthropic employee Levent Alpöge …",
+   "title": "Sources: Amazon is nearing a $7.5B deal to buy AI startup Decart; talks are at an advanced stage an…",
+   "url": "https://www.ft.com/content/dc7749dc-0f40-44a6-80bc-7f747d383616",
+   "source": "Financial Times",
+   "published_at": "2026-11-21T17:56:18Z",
+   "text": "Sources: Amazon is nearing a $7.5B deal to buy AI startup Decart; talks are at an advanced stage and a deal could come together as soon as next week. Acquisition would help AWS compete with Nvidia in race for computing power — Amazon is nearing a $7.5bn deal to buy start-up Decart …",
+   "via": "Techmeme"
+  },
+  {
+   "title": "Matchmakers say more tech workers fear romantic espionage after the Jensen Huang scandal; an AI com…",
+   "url": "https://www.wired.com/story/regular-tech-bros-are-worried-about-honeypots/",
+   "source": "Wired",
+   "published_at": "2026-11-22T00:11:20Z",
+   "text": "Matchmakers say more tech workers fear romantic espionage after the Jensen Huang scandal; an AI companion app pitches “zero espionage” executive girlfriends. The Jensen Huang scandal is the latest fuel for dating anxieties among newly rich and powerful tech workers.",
    "via": "Techmeme"
   }
  ],
