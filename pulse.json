@@ -1,7 +1,25 @@
 {
  "schema": 1,
- "generated_at": "2026-11-21T18:46:42Z",
+ "generated_at": "2026-11-22T02:11:45Z",
  "items": [
+  {
+   "title": "Researchers used canary credentials in requests to AI routers like OpenRouter and Vercel, even unde…",
+   "url": "https://arstechnica.com/security/2026/11/a-leaky-ai-supply-chain-is-exposing-secret-user-data-at-an-alarming-rate/",
+   "source": "Dan Goodin / Ars Technica",
+   "published_at": "2026-11-21T20:11:12Z",
+   "text": "Researchers used canary credentials in requests to AI routers like OpenRouter and Vercel, even under “ZDR” policies, and saw “privacy” often broken, keys stolen. Researchers planted 2 million digital tripwires in requests sent through a sprawling network of AI services …",
+   "via": "Techmeme"
+  },
+  {
+   "title": "$AAPL at $5 trillion, +27% YTD and barely off all time high, watching the AI carnage, while Siri AI…",
+   "url": "https://x.com/ecommerceshares/status/2123842735719535089",
+   "source": "𝕏 @ecommerceshares",
+   "published_at": "2026-11-20T18:15:41Z",
+   "text": "$AAPL at $5 trillion, +27% YTD and barely off all time high, watching the AI carnage, while Siri AI takes 12 seconds of thinking to set a timer.",
+   "author_name": "Wasteland Capital",
+   "likes": 22219,
+   "story": "Anthropic stock closed down 8.5% at $88.91 on its second day of trading, trimming gains from its $83 IPO price"
+  },
   {
    "title": "Claude Code 2.1.330 released",
    "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.330",
@@ -10,13 +28,31 @@
    "text": "Added sign-in to organizations managed in Anthropic's Enterprise Admin Console: after claude auth login, Claude Code applies the organization's settings and uses its cloud provider or gateway · Added easel, a built-in mod that draws charts when asked and under MCP metrics results, on Pro, Max and, where available, Team and Enterprise on macOS and Linux; turn automatic charts off in /config · Added CLAUDE_CODE_FULL_SIGN_IN_LINK=1 to print the full sign-in link, if the short one shows an error or a script reads values from it · Self-hosted runner: Added --start-dir / SELF_HOSTED_RUNNER_START_DI…"
   },
   {
-   "title": "Slopstrap – Make your site look hastily vibecoded",
-   "url": "https://slopstrap.mikelacher.com/",
+   "title": "Terence Tao on Numberphile said he believes with the help of AI, we could solve the reimann hypothe…",
+   "url": "https://x.com/LinkofSunshine/status/2123800866738024731",
+   "source": "𝕏 @LinkofSunshine",
+   "published_at": "2026-11-20T15:29:19Z",
+   "text": "Terence Tao on Numberphile said he believes with the help of AI, we could solve the reimann hypothesis before 2050. It took 35 days",
+   "author_name": "Basil🧡",
+   "likes": 16078,
+   "story": "Anthropic mathematician Levent Alpöge claims he used Claude to prove the 167-year-old Riemann hypothesis and posts the proof in the Lean programming language"
+  },
+  {
+   "title": "Investigation: Alice Huang had ties to gaming firms, alleged Prince Group figures and hundreds of s…",
+   "url": "https://www.ft.com/content/f3ad8a81-3890-4a8a-8853-ff0a94b08ba9",
+   "source": "Financial Times",
+   "published_at": "2026-11-21T18:56:31Z",
+   "text": "Investigation: Alice Huang had ties to gaming firms, alleged Prince Group figures and hundreds of shell companies in a network moving Nvidia chips to China. Chinese executive in romantic relationship with former Nvidia CEO Jensen Huang had connections to the lucrative trade moving chips to China",
+   "via": "Techmeme"
+  },
+  {
+   "title": "LLMs can read and write executables byte by byte from a hex dump",
+   "url": "https://sgiannopoulos.github.io/blog/machine-code-programming/",
    "source": "Hacker News",
-   "published_at": "2026-11-20T15:24:11Z",
-   "text": "599 points and 115 comments on Hacker News.",
-   "points": 599,
-   "discussion": "https://news.ycombinator.com/item?id=50576012"
+   "published_at": "2026-11-18T14:15:58Z",
+   "text": "193 points and 127 comments on Hacker News.",
+   "points": 193,
+   "discussion": "https://news.ycombinator.com/item?id=50546587"
   },
   {
    "title": "Anthropic announces closing of initial public offering, including full exercise of underwriters’ op…",
@@ -26,13 +62,60 @@
    "text": "Today Anthropic, PBC announced the closing of its initial public offering of an aggregate of 1,127,000,000 shares of its Class A common stock at a public offering price of $83.00 per share, including the full exercise by the underwriters of their option to purchase an additional 147,000,000 shares of Class A common stock from Anthropic at the initial public offering price."
   },
   {
-   "title": "LLMs can read and write executables byte by byte from a hex dump",
-   "url": "https://sgiannopoulos.github.io/blog/machine-code-programming/",
-   "source": "Hacker News",
-   "published_at": "2026-11-18T14:15:58Z",
-   "text": "132 points and 95 comments on Hacker News.",
-   "points": 132,
-   "discussion": "https://news.ycombinator.com/item?id=50546587"
+   "title": "Sources: Amazon is nearing a $7.5B deal to buy AI startup Decart; talks are at an advanced stage an…",
+   "url": "https://www.ft.com/content/dc7749dc-0f40-44a6-80bc-7f747d383616",
+   "source": "Financial Times",
+   "published_at": "2026-11-21T17:56:18Z",
+   "text": "Sources: Amazon is nearing a $7.5B deal to buy AI startup Decart; talks are at an advanced stage and a deal could come together as soon as next week. Acquisition would help AWS compete with Nvidia in race for computing power — Amazon is nearing a $7.5bn deal to buy start-up Decart …",
+   "via": "Techmeme"
+  },
+  {
+   "title": "Signal says it will restrict screenshots by default to stop AI agents from reading private chats on…",
+   "url": "https://www.reuters.com/legal/litigation/signal-restricts-screenshots-block-ai-agents-reading-messages-2026-11-20/",
+   "source": "Katie Paul / Reuters",
+   "published_at": "2026-11-20T11:01:31Z",
+   "text": "Signal says it will restrict screenshots by default to stop AI agents from reading private chats on phones but warns its new protections are “incomplete”. Encrypted messaging service Signal said on Friday it would restrict screenshots to stop AI agents from reading private chats on phones …",
+   "via": "Techmeme"
+  },
+  {
+   "title": "NYU's Tristan Buckmaster and Anthropic's Levent Alpöge publish an AI-aided proof of Navier-Stokes b…",
+   "url": "https://www.scientificamerican.com/article/ai-just-solved-the-real-navier-stokes-problem/",
+   "source": "Peter Hall / Scientific Ame…",
+   "published_at": "2026-11-21T06:30:55Z",
+   "text": "NYU's Tristan Buckmaster and Anthropic's Levent Alpöge publish an AI-aided proof of Navier-Stokes blowup, saying it closes a loophole in OpenAI's solution. Two months after getting scooped by OpenAI, N.Y.U. professor Tristan Buckmaster and Anthropic employee Levent Alpöge …",
+   "via": "Techmeme"
+  },
+  {
+   "title": "Matchmakers say more tech workers fear romantic espionage after the Jensen Huang scandal; an AI com…",
+   "url": "https://www.wired.com/story/regular-tech-bros-are-worried-about-honeypots/",
+   "source": "Wired",
+   "published_at": "2026-11-22T00:11:20Z",
+   "text": "Matchmakers say more tech workers fear romantic espionage after the Jensen Huang scandal; an AI companion app pitches “zero espionage” executive girlfriends. The Jensen Huang scandal is the latest fuel for dating anxieties among newly rich and powerful tech workers.",
+   "via": "Techmeme"
+  },
+  {
+   "title": "Rhodium: China's biggest tech companies are set to double capex to $139B in 2026 with AI lab revenu…",
+   "url": "https://www.nytimes.com/2026/11/20/business/china-ai-investment-spending.html?unlocked_article_code=1.SFE.jZ7m.KdwX3UsrRw18&smid=url-share",
+   "source": "New York Times",
+   "published_at": "2026-11-21T15:11:15Z",
+   "text": "Rhodium: China's biggest tech companies are set to double capex to $139B in 2026 with AI lab revenue under 8% of it, a gap that may matter more than chip curbs. While Anthropic and other Silicon Valley A.I. giants are raising tens of billions in capital, Chinese rivals are struggling to keep pace financially.",
+   "via": "Techmeme"
+  },
+  {
+   "title": "An interview with Google DeepMind in-house philosopher Henry Shevlin on being hired to work on mach…",
+   "url": "https://www.ft.com/content/6f807d57-f0ea-4251-9f4d-75a6edc8d49a?accessToken=zwAAAaH8y_kikc9vgH1X8OpCUdOfTXWm7cjUmg.MEQCIACh-UVIJLvZdJk2Ho7Q-qsVRoQLNyCmy5zPK9w3Y1lTAiB-BgoDqcF7LPJ1R7yF4te0TrGCjIV8E56IAgl4GYcrnA&sharetype=gift&token=956073db-4440-473e-97bd-a0af2932464c",
+   "source": "Cristina Criddle / Financia…",
+   "published_at": "2026-11-21T11:31:26Z",
+   "text": "An interview with Google DeepMind in-house philosopher Henry Shevlin on being hired to work on machine consciousness, human-AI relationships, and AGI readiness. The in-house philosopher on the problem of consciousness and what it might feel like to be an AI agent",
+   "via": "Techmeme"
+  },
+  {
+   "title": "Industry insiders say new US export rules affect a broader range of chips, including SoCs used in c…",
+   "url": "https://asia.nikkei.com/business/tech/semiconductors/chip-supply-chain-warns-of-broader-disruption-from-new-us-export-controls",
+   "source": "Cheng Ting-Fang / Nikkei As…",
+   "published_at": "2026-11-21T06:01:48Z",
+   "text": "Industry insiders say new US export rules affect a broader range of chips, including SoCs used in consumer electronics, extending beyond advanced AI chips. TAIPEI — Tighter U.S. export controls introduced Thursday are having a far broader impact on the global semiconductor supply chain …",
+   "via": "Techmeme"
   }
  ],
  "sources": "curated, Techmeme, X (found via Techmeme, Reddit, the Internet Archive), Claude Code releases, Anthropic, Hacker News, Simon Willison"
