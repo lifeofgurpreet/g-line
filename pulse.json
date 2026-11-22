@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-22T02:44:00Z",
+ "generated_at": "2026-11-22T03:17:02Z",
  "items": [
   {
    "title": "Researchers used canary credentials in requests to AI routers like OpenRouter and Vercel, even unde…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-20T18:15:41Z",
    "text": "$AAPL at $5 trillion, +27% YTD and barely off all time high, watching the AI carnage, while Siri AI takes 12 seconds of thinking to set a timer.",
    "author_name": "Wasteland Capital",
-   "likes": 22304,
+   "likes": 22378,
    "story": "Anthropic stock closed down 8.5% at $88.91 on its second day of trading, trimming gains from its $83 IPO price"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-11-20T15:29:19Z",
    "text": "Terence Tao on Numberphile said he believes with the help of AI, we could solve the reimann hypothesis before 2050. It took 35 days",
    "author_name": "Basil🧡",
-   "likes": 16088,
+   "likes": 16096,
    "story": "Anthropic mathematician Levent Alpöge claims he used Claude to prove the 167-year-old Riemann hypothesis and posts the proof in the Lean programming language"
   },
   {
@@ -50,8 +50,8 @@
    "url": "https://sgiannopoulos.github.io/blog/machine-code-programming/",
    "source": "Hacker News",
    "published_at": "2026-11-18T14:15:58Z",
-   "text": "196 points and 129 comments on Hacker News.",
-   "points": 196,
+   "text": "200 points and 129 comments on Hacker News.",
+   "points": 200,
    "discussion": "https://news.ycombinator.com/item?id=50546587"
   },
   {
@@ -102,11 +102,11 @@
    "via": "Techmeme"
   },
   {
-   "title": "Industry insiders say new US export rules affect a broader range of chips, including SoCs used in c…",
-   "url": "https://asia.nikkei.com/business/tech/semiconductors/chip-supply-chain-warns-of-broader-disruption-from-new-us-export-controls",
-   "source": "Cheng Ting-Fang / Nikkei As…",
-   "published_at": "2026-11-21T06:01:48Z",
-   "text": "Industry insiders say new US export rules affect a broader range of chips, including SoCs used in consumer electronics, extending beyond advanced AI chips. TAIPEI — Tighter U.S. export controls introduced Thursday are having a far broader impact on the global semiconductor supply chain …",
+   "title": "Ubisoft launches Motherbrain, a subsidiary focused on developing “smart NPCs with memory and AI gam…",
+   "url": "https://www.gamesindustry.biz/ubisoft-launches-motherbrain-a-new-subsidiary-focused-on-ai-driven-gameplay-innovation",
+   "source": "Sophie McEvoy / GamesIndust…",
+   "published_at": "2026-11-21T05:15:57Z",
+   "text": "Ubisoft launches Motherbrain, a subsidiary focused on developing “smart NPCs with memory and AI game masters that manage large-scale systemic worlds”. Studio is currently developing “smart NPCs with memory and AI game masters that manage large-scale systemic worlds”",
    "via": "Techmeme"
   }
  ],
