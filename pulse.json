@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-22T02:11:45Z",
+ "generated_at": "2026-11-22T02:44:00Z",
  "items": [
   {
    "title": "Researchers used canary credentials in requests to AI routers like OpenRouter and Vercel, even unde…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-20T18:15:41Z",
    "text": "$AAPL at $5 trillion, +27% YTD and barely off all time high, watching the AI carnage, while Siri AI takes 12 seconds of thinking to set a timer.",
    "author_name": "Wasteland Capital",
-   "likes": 22219,
+   "likes": 22304,
    "story": "Anthropic stock closed down 8.5% at $88.91 on its second day of trading, trimming gains from its $83 IPO price"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-11-20T15:29:19Z",
    "text": "Terence Tao on Numberphile said he believes with the help of AI, we could solve the reimann hypothesis before 2050. It took 35 days",
    "author_name": "Basil🧡",
-   "likes": 16078,
+   "likes": 16088,
    "story": "Anthropic mathematician Levent Alpöge claims he used Claude to prove the 167-year-old Riemann hypothesis and posts the proof in the Lean programming language"
   },
   {
@@ -50,8 +50,8 @@
    "url": "https://sgiannopoulos.github.io/blog/machine-code-programming/",
    "source": "Hacker News",
    "published_at": "2026-11-18T14:15:58Z",
-   "text": "193 points and 127 comments on Hacker News.",
-   "points": 193,
+   "text": "196 points and 129 comments on Hacker News.",
+   "points": 196,
    "discussion": "https://news.ycombinator.com/item?id=50546587"
   },
   {
@@ -67,14 +67,6 @@
    "source": "Financial Times",
    "published_at": "2026-11-21T17:56:18Z",
    "text": "Sources: Amazon is nearing a $7.5B deal to buy AI startup Decart; talks are at an advanced stage and a deal could come together as soon as next week. Acquisition would help AWS compete with Nvidia in race for computing power — Amazon is nearing a $7.5bn deal to buy start-up Decart …",
-   "via": "Techmeme"
-  },
-  {
-   "title": "Signal says it will restrict screenshots by default to stop AI agents from reading private chats on…",
-   "url": "https://www.reuters.com/legal/litigation/signal-restricts-screenshots-block-ai-agents-reading-messages-2026-11-20/",
-   "source": "Katie Paul / Reuters",
-   "published_at": "2026-11-20T11:01:31Z",
-   "text": "Signal says it will restrict screenshots by default to stop AI agents from reading private chats on phones but warns its new protections are “incomplete”. Encrypted messaging service Signal said on Friday it would restrict screenshots to stop AI agents from reading private chats on phones …",
    "via": "Techmeme"
   },
   {
