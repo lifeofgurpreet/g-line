@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-22T09:30:10Z",
+ "generated_at": "2026-11-22T10:02:21Z",
  "items": [
   {
    "title": "Researchers used canary credentials in requests to AI routers like OpenRouter and Vercel, even unde…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-21T20:26:59Z",
    "text": "In FSD V15, the Tesla AI computer re-renders reality with chevrons in the sky for turns like a video game. You can tap any point on the reality revisualizer to make your car go there.",
    "author_name": "Elon Musk",
-   "likes": 31462,
+   "likes": 31898,
    "story": "Tesla rolls out FSD v15, featuring a photorealistic rendering of car surroundings; Elon Musk says it is real-time AI video generation without using game engines"
   },
   {
@@ -34,25 +34,25 @@
    "published_at": "2026-11-20T18:15:41Z",
    "text": "$AAPL at $5 trillion, +27% YTD and barely off all time high, watching the AI carnage, while Siri AI takes 12 seconds of thinking to set a timer.",
    "author_name": "Wasteland Capital",
-   "likes": 22682,
-   "story": "Nasdaq 100 fell 5.6% on Friday, taking its loss for the week to 10.4%, its worst run in more than six years, amid fears of a slowdown in the AI investment boom"
+   "likes": 22697,
+   "story": "Anthropic stock closed down 8.5% at $88.91 on its second day of trading, trimming gains from its $83 IPO price"
   },
   {
-   "title": "Current and former officials from the US and other countries describe the Chinese spy agency MSS' c…",
-   "url": "https://www.nytimes.com/2026/11/21/world/asia/china-nvidia-spy-chips-state-security.html?unlocked_article_code=1.SVE.6AIw.4HHCTzFjtDId&smid=url-share",
-   "source": "New York Times",
-   "published_at": "2026-11-22T07:01:39Z",
-   "text": "Current and former officials from the US and other countries describe the Chinese spy agency MSS' campaign to help Chinese companies acquire advanced AI chips. China's espionage agency has been running a secret campaign to help the country's companies acquire advanced A.I. chips …",
+   "title": "Sources: Alice Huang associate Li Ming, whom Singapore charged with fraud in 2025, was central to s…",
+   "url": "https://www.wsj.com/tech/li-ming-megaspeed-nvidia-chips-china-6260d836?st=HzXMZU",
+   "source": "Stu Woo / Wall Street Journ…",
+   "published_at": "2026-11-22T05:45:56Z",
+   "text": "Sources: Alice Huang associate Li Ming, whom Singapore charged with fraud in 2025, was central to smuggling restricted AI chips from Southeast Asia to China. Defendant in case involving chip smuggling worked with Jensen Huang's romantic partner — SINGAPORE—Jensen Huang's romantic partner …",
    "via": "Techmeme"
   },
   {
-   "title": "Data Processing Incidents on Inference Providers",
-   "url": "https://openrouter.ai/blog/announcements/data-processing-incidents-on-inference-providers/",
+   "title": "87% of the Anthropic power will come from gas and 11% from coal in 2028",
+   "url": "https://betterdatacenterproject.com/2026/11/16/how-ai-is-powered-a-breakdown-of-byop-and-grid-power/",
    "source": "Hacker News",
-   "published_at": "2026-11-22T02:14:14Z",
-   "text": "139 points and 53 comments on Hacker News.",
-   "points": 139,
-   "discussion": "https://news.ycombinator.com/item?id=50595554"
+   "published_at": "2026-11-22T08:57:34Z",
+   "text": "62 points and 37 comments on Hacker News.",
+   "points": 62,
+   "discussion": "https://news.ycombinator.com/item?id=50597612"
   },
   {
    "title": "Terence Tao on Numberphile said he believes with the help of AI, we could solve the reimann hypothe…",
@@ -61,7 +61,7 @@
    "published_at": "2026-11-20T15:29:19Z",
    "text": "Terence Tao on Numberphile said he believes with the help of AI, we could solve the reimann hypothesis before 2050. It took 35 days",
    "author_name": "Basil🧡",
-   "likes": 16152,
+   "likes": 16155,
    "story": "A joint statement by the Lean and Mathlib communities says “we have full confidence that Alpöge's proof of the Riemann Hypothesis is correct”"
   },
   {
@@ -80,33 +80,13 @@
    "via": "Techmeme"
   },
   {
-   "title": "Oracle has secured all the funding we need to fulfill our contract with OpenAI. With our final capi…",
-   "url": "https://x.com/Oracle/status/2123884437045760420",
-   "source": "𝕏 @Oracle",
-   "published_at": "2026-11-20T21:01:24Z",
-   "text": "Oracle has secured all the funding we need to fulfill our contract with OpenAI. With our final capital raise earlier this month, we became the first hyperscaler fully funded for this investment cycle. The financing we outlined at Oracle Investor Day, including vendor financing,…",
-   "author_name": "Oracle",
-   "likes": 5534,
-   "story": "Oracle says it has secured funding for its infrastructure contract with OpenAI and “any further private discussions with vendors are just additional options”"
-  },
-  {
-   "title": "Pandex – Official European Law for AI Agents, over MCP",
-   "url": "https://www.pandex.io",
+   "title": "Data Processing Incidents on Inference Providers",
+   "url": "https://openrouter.ai/blog/announcements/data-processing-incidents-on-inference-providers/",
    "source": "Hacker News",
-   "published_at": "2026-11-21T20:47:41Z",
-   "text": "89 points and 21 comments on Hacker News.",
-   "points": 89,
-   "discussion": "https://news.ycombinator.com/item?id=50593481"
-  },
-  {
-   "title": "Cursor has told Homeland Security they are considering phasing out *all* China developed open-weigh…",
-   "url": "https://x.com/AndrewCurran_/status/2123841504242446572",
-   "source": "𝕏 @AndrewCurran_",
-   "published_at": "2026-11-20T18:10:48Z",
-   "text": "Cursor has told Homeland Security they are considering phasing out *all* China developed open-weight models because of the 'geopolitical risk.' The report will be published by multiple House committees later today. This is a huge indicator of future regulatory direction!",
-   "author_name": "Andrew Curran",
-   "likes": 1114,
-   "story": "Cursor tells lawmakers it is considering phasing out Chinese open-weight AI models due to “geopolitical risk”; Cursor's Composer 2 was built on Kimi K2.5"
+   "published_at": "2026-11-22T02:14:14Z",
+   "text": "144 points and 57 comments on Hacker News.",
+   "points": 144,
+   "discussion": "https://news.ycombinator.com/item?id=50595554"
   },
   {
    "title": "NYU's Tristan Buckmaster and Anthropic's Levent Alpöge publish an AI-aided proof of Navier-Stokes b…",
@@ -117,13 +97,13 @@
    "via": "Techmeme"
   },
   {
-   "title": "LLMs can read and write executables byte by byte from a hex dump",
-   "url": "https://sgiannopoulos.github.io/blog/machine-code-programming/",
+   "title": "The Mythology of Conscious AI",
+   "url": "https://www.noemamag.com/the-mythology-of-conscious-ai/",
    "source": "Hacker News",
-   "published_at": "2026-11-18T14:15:58Z",
-   "text": "240 points and 154 comments on Hacker News.",
-   "points": 240,
-   "discussion": "https://news.ycombinator.com/item?id=50546587"
+   "published_at": "2026-11-22T02:10:02Z",
+   "text": "63 points and 120 comments on Hacker News.",
+   "points": 63,
+   "discussion": "https://news.ycombinator.com/item?id=50595537"
   },
   {
    "title": "Sources: AI server suppliers like Dell, HPE, Lenovo, and Supermicro are demanding substantially hig…",
@@ -131,6 +111,23 @@
    "source": "Financial Times",
    "published_at": "2026-11-22T05:50:56Z",
    "text": "Sources: AI server suppliers like Dell, HPE, Lenovo, and Supermicro are demanding substantially higher prices from buyers, months after contracts were signed. Dell, HPE, Lenovo and Supermicro demand more for equipment, with the increased costs hitting trading firms",
+   "via": "Techmeme"
+  },
+  {
+   "title": "Pandex – Official European Law for AI Agents, over MCP",
+   "url": "https://www.pandex.io",
+   "source": "Hacker News",
+   "published_at": "2026-11-21T20:47:41Z",
+   "text": "92 points and 21 comments on Hacker News.",
+   "points": 92,
+   "discussion": "https://news.ycombinator.com/item?id=50593481"
+  },
+  {
+   "title": "Sources: Amazon is nearing a $7.5B deal to buy AI startup Decart; talks are at an advanced stage an…",
+   "url": "https://www.ft.com/content/dc7749dc-0f40-44a6-80bc-7f747d383616",
+   "source": "Financial Times",
+   "published_at": "2026-11-21T17:56:18Z",
+   "text": "Sources: Amazon is nearing a $7.5B deal to buy AI startup Decart; talks are at an advanced stage and a deal could come together as soon as next week. Acquisition would help AWS compete with Nvidia in race for computing power — Amazon is nearing a $7.5bn deal to buy start-up Decart …",
    "via": "Techmeme"
   }
  ],
