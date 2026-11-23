@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-23T08:37:37Z",
+ "generated_at": "2026-11-23T09:09:27Z",
  "items": [
   {
    "title": "OpenAI shares its models' perplexity, or how well they predict data, and urges pacing limits based…",
@@ -9,6 +9,16 @@
    "published_at": "2026-11-22T18:25:38Z",
    "text": "OpenAI shares its models' perplexity, or how well they predict data, and urges pacing limits based on such metrics, citing a possible 2027 avalanche of AI gains. - Difficulty of comparison across labs. … - Detachment from actionable evaluations. … - Not accounting for advances outside of pretraining.",
    "via": "Techmeme"
+  },
+  {
+   "title": "In FSD V15, the Tesla AI computer re-renders reality with chevrons in the sky for turns like a vide…",
+   "url": "https://x.com/elonmusk/status/2124238164512714925",
+   "source": "𝕏 @elonmusk",
+   "published_at": "2026-11-21T20:26:59Z",
+   "text": "In FSD V15, the Tesla AI computer re-renders reality with chevrons in the sky for turns like a video game. You can tap any point on the reality revisualizer to make your car go there.",
+   "author_name": "Elon Musk",
+   "likes": 42850,
+   "story": "Tesla rolls out FSD v15, featuring a photorealistic rendering of car surroundings; Elon Musk says it is real-time AI video generation without using game engines"
   },
   {
    "title": "Claude Code 2.1.330 released",
@@ -30,8 +40,8 @@
    "url": "https://www.gpupartner.com/blog/beginners-guide-local-ai-inkling-qwen-unsloth",
    "source": "Hacker News",
    "published_at": "2026-11-22T21:01:16Z",
-   "text": "462 points and 193 comments on Hacker News.",
-   "points": 462,
+   "text": "483 points and 201 comments on Hacker News.",
+   "points": 483,
    "discussion": "https://news.ycombinator.com/item?id=50603845"
   },
   {
@@ -67,19 +77,19 @@
    "via": "Techmeme"
   },
   {
+   "title": "Boston-based Aevius, whose foundation models analyze patient health using medical records, imaging,…",
+   "url": "https://www.axios.com/pro/biotech-deals/2026/11/17/aevius-22m-clinical-intelligence-platform",
+   "source": "Katherine Davis / Axios",
+   "published_at": "2026-11-23T08:46:11Z",
+   "text": "Boston-based Aevius, whose foundation models analyze patient health using medical records, imaging, and other data, raised a $22M seed led by Insight Partners. Clinical intelligence startup Aevius raised $22 million in seed funding from Insight Partners, CEO Rowland Pettit exclusively tells Axios Pro.",
+   "via": "Techmeme"
+  },
+  {
    "title": "Chinese physical AI startup Simplexity Robotics raised a $100M pre-Series A led by Ant Group, with…",
    "url": "https://www.bloomberg.com/news/articles/2026-11-22/ant-group-bets-on-simplexity-to-thrive-in-china-s-humanoid-race",
    "source": "Saritha Rai / Bloomberg",
    "published_at": "2026-11-23T07:02:24Z",
    "text": "Chinese physical AI startup Simplexity Robotics raised a $100M pre-Series A led by Ant Group, with Alibaba, Tencent, and others joining, at a $1.6B valuation. Chinese physical AI startup Simplexity Robotics received $100 million in a funding round led by Jack Ma-backed Ant Group Co. …",
-   "via": "Techmeme"
-  },
-  {
-   "title": "New US chip export rules threaten SEA's data center boom, risking incomplete and abandoned projects…",
-   "url": "https://www.bloomberg.com/news/features/2026-11-22/trump-s-ai-chip-crackdown-on-china-after-nvidia-crisis-squeezes-southeast-asia?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc5NTQwNzgwMCwiZXhwIjoxNzk2MDEyNjAwLCJhcnRpY2xlSWQiOiJUT1hCU0RLR0lGUTMwMCIsImJjb25uZWN0SWQiOiJDNTc5RDIwMDZBQjQ0RjRDODkwMTU0M0U0ODMxNkJCNiJ9.3vmQa_rIIOmutX3CrjU1ib8_jJyygL3HHaYJC4NpNfo",
-   "source": "Bloomberg",
-   "published_at": "2026-11-23T06:03:48Z",
-   "text": "New US chip export rules threaten SEA's data center boom, risking incomplete and abandoned projects and forcing neoclouds to replace their Chinese customers. Washington's new rulebook spells trouble for a multibillion dollar cloud business helping to power the region's data center boom.",
    "via": "Techmeme"
   },
   {
@@ -91,35 +101,27 @@
    "via": "Techmeme"
   },
   {
+   "title": "New US chip export rules threaten SEA's data center boom, risking incomplete and abandoned projects…",
+   "url": "https://www.bloomberg.com/news/features/2026-11-22/trump-s-ai-chip-crackdown-on-china-after-nvidia-crisis-squeezes-southeast-asia?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc5NTQwNzgwMCwiZXhwIjoxNzk2MDEyNjAwLCJhcnRpY2xlSWQiOiJUT1hCU0RLR0lGUTMwMCIsImJjb25uZWN0SWQiOiJDNTc5RDIwMDZBQjQ0RjRDODkwMTU0M0U0ODMxNkJCNiJ9.3vmQa_rIIOmutX3CrjU1ib8_jJyygL3HHaYJC4NpNfo",
+   "source": "Bloomberg",
+   "published_at": "2026-11-23T06:03:48Z",
+   "text": "New US chip export rules threaten SEA's data center boom, risking incomplete and abandoned projects and forcing neoclouds to replace their Chinese customers. Washington's new rulebook spells trouble for a multibillion dollar cloud business helping to power the region's data center boom.",
+   "via": "Techmeme"
+  },
+  {
+   "title": "A look at AECJ, an Amazon employee group with over 1,000 members that is stepping up efforts to slo…",
+   "url": "https://www.ft.com/content/d194e93b-8d3c-42eb-85dd-46d58c4f2a80",
+   "source": "Rafe Rosner-Uddin / Financi…",
+   "published_at": "2026-11-23T09:05:54Z",
+   "text": "A look at AECJ, an Amazon employee group with over 1,000 members that is stepping up efforts to slow Amazon's data center expansion and spark debate over AI use. Tech company's plans for rapid expansion face opposition from the public and its own employees",
+   "via": "Techmeme"
+  },
+  {
    "title": "London-based Alecto, which uses AI and legal experts to help consumers understand UK property law,…",
    "url": "https://siliconangle.com/2026/11/16/alecto-raises-20m-seed-funding-to-make-uk-property-law-more-accessible-to-consumers-with-ai/",
    "source": "Kyt Dotson / SiliconANGLE",
    "published_at": "2026-11-23T05:31:38Z",
    "text": "London-based Alecto, which uses AI and legal experts to help consumers understand UK property law, raised $20M in seed funding led by Insight Partners. Alecto Conveyancing Ltd., a London-based artificial intelligence-native law firm, today announced it raised $20 million in seed funding led …",
-   "via": "Techmeme"
-  },
-  {
-   "title": "GPT-6.2 Astra vs. Claude Fable 5.2 hands-on: nearly tied on three custom accounting, coding, and da…",
-   "url": "https://thenewstack.io/gpt-6-2-astra-vs-claude-fable-5-2/",
-   "source": "Jessica Wachtel / The New S…",
-   "published_at": "2026-11-23T01:45:52Z",
-   "text": "GPT-6.2 Astra vs. Claude Fable 5.2 hands-on: nearly tied on three custom accounting, coding, and data tasks, but Fable used far more tokens and cost 5x+ as much. When I compared Anthropic's Fable 5.2 vs. OpenAI's GPT-6 Astra last week, Fable 5.2 was slightly more accurate (149 points vs. 145).",
-   "via": "Techmeme"
-  },
-  {
-   "title": "Sources: amid leak fears, Anthropic limited some IPO banks to four-person teams, used a view-loggin…",
-   "url": "https://www.reuters.com/world/like-spacex-anthropic-ran-an-unusual-ipo-process-chafing-some-bankers-2026-11-22/",
-   "source": "Reuters",
-   "published_at": "2026-11-22T17:15:38Z",
-   "text": "Sources: amid leak fears, Anthropic limited some IPO banks to four-person teams, used a view-logging file platform, and sought six-month bans on advising rivals",
-   "via": "Techmeme"
-  },
-  {
-   "title": "Jony Ive, ex-OpenAI product designer Joey Flynn, and others on Silicon Valley's obsession with “tas…",
-   "url": "https://www.nytimes.com/2026/11/20/magazine/ai-slop-taste-aesthetic-silicon-valley.html?unlocked_article_code=1.SFE.1a6T.-kpbFF_tJYZx&smid=url-share",
-   "source": "Jonah Weiner / New York Tim…",
-   "published_at": "2026-11-22T15:01:07Z",
-   "text": "Jony Ive, ex-OpenAI product designer Joey Flynn, and others on Silicon Valley's obsession with “taste” as a moat against AI slop and whether AI can learn it",
    "via": "Techmeme"
   }
  ],
