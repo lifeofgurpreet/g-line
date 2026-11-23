@@ -1,13 +1,13 @@
 {
  "schema": 1,
- "generated_at": "2026-11-23T15:34:54Z",
+ "generated_at": "2026-11-23T16:07:15Z",
  "items": [
   {
    "title": "Nvidia's board unanimously votes to reinstate Jensen Huang as CEO, president, and board director, a…",
    "url": "https://nvidianews.nvidia.com/news/nvidia-board-reinstates-jensen-huang-as-president-ceo-and-board-director",
    "source": "Nvidia Newsroom",
    "published_at": "2026-11-23T14:04:07Z",
-   "text": "Nvidia's board unanimously votes to reinstate Jensen Huang as CEO, president, and board director, after finding “no national security risk”; NVDA jumps 30%+. NVIDIA (NASDAQ: NVDA) today announced that effective immediately, Jensen Huang has been reinstated as President …",
+   "text": "Nvidia's board unanimously votes to reinstate Jensen Huang as CEO, president, and board director, after finding “no national security risk”; NVDA jumps 35%+. NVIDIA (NASDAQ: NVDA) today announced that effective immediately, Jensen Huang has been reinstated as President …",
    "via": "Techmeme"
   },
   {
@@ -17,7 +17,7 @@
    "published_at": "2026-11-23T14:27:19Z",
    "text": "“The NVIDIA Board of Directors has made the correct and proper decision to return Jensen Huang to the position of CEO… Congratulations to Jensen, the NVIDIA Board, to the People of the United States — and, indeed, the World!” - President DONALD J. TRUMP",
    "author_name": "The White House",
-   "likes": 13521,
+   "likes": 17480,
    "story": "President Trump says Nvidia “made the correct and proper decision”, the US “needs Jensen's leadership”, and the US AG found no evidence of “unlawful conduct”"
   },
   {
@@ -34,42 +34,8 @@
    "published_at": "2026-11-22T17:12:27Z",
    "text": "This is the most important thing OpenAI has published in awhile. We are providing a lot of transparency into our pretraining progress and hope we can agree as a frield to common limits. I think that would be very wise and help ensure safety and control.",
    "author_name": "Sam Altman",
-   "likes": 10506,
+   "likes": 10619,
    "story": "OpenAI shares its models' “perplexity”, or how well they predict data, and urges pacing limits based on such metrics, citing a possible 2027 avalanche of gains"
-  },
-  {
-   "title": "Arm CEO Rene Haas extends his contract through 2033 and will become SoftBank vice chair on December…",
-   "url": "https://www.bloomberg.com/news/articles/2026-11-23/arm-ceo-extends-contract-through-2033-after-nvidia-approach",
-   "source": "Bloomberg",
-   "published_at": "2026-11-23T12:30:47Z",
-   "text": "Arm CEO Rene Haas extends his contract through 2033 and will become SoftBank vice chair on December 1; a recruiting firm approached him over becoming Nvidia CEO. Arm Holdings Plc Chief Executive Officer Rene Haas has pledged to stay in his current role through 2033 after rebuffing approaches …",
-   "via": "Techmeme"
-  },
-  {
-   "title": "GLM-5.4: Toward Generalized Coding with Our First Loop Transformer",
-   "url": "https://z.ai/blog/glm-5.4",
-   "source": "Hacker News",
-   "published_at": "2026-11-23T10:06:43Z",
-   "text": "587 points and 225 comments on Hacker News.",
-   "points": 587,
-   "discussion": "https://news.ycombinator.com/item?id=50609685"
-  },
-  {
-   "title": "Nvidia's board says it voted to reinstate Jensen Huang after receiving input from “senior levels” o…",
-   "url": "https://www.ft.com/content/08914b05-bbfa-478d-b38a-549acfc1aae6",
-   "source": "Tim Bradshaw / Financial Ti…",
-   "published_at": "2026-11-23T14:25:03Z",
-   "text": "Nvidia's board says it voted to reinstate Jensen Huang after receiving input from “senior levels” of the US government; a probe into his conduct is ongoing. Startling reversal of board's position on disgraced co-founder sends AI giant's share price soaring",
-   "via": "Techmeme"
-  },
-  {
-   "title": "A Beginner's Guide to Local AI with Inkling, Qwen, and Unsloth",
-   "url": "https://www.gpupartner.com/blog/beginners-guide-local-ai-inkling-qwen-unsloth",
-   "source": "Hacker News",
-   "published_at": "2026-11-22T21:01:16Z",
-   "text": "639 points and 262 comments on Hacker News.",
-   "points": 639,
-   "discussion": "https://news.ycombinator.com/item?id=50603845"
   },
   {
    "title": "Source: Trump dialed into Nvidia's board meeting to argue for Huang's return; a US official says he…",
@@ -80,13 +46,13 @@
    "via": "Techmeme"
   },
   {
-   "title": "Perplexity and Intelligence",
-   "url": "https://openai.com/index/perplexity-and-intelligence/",
+   "title": "GLM-5.4: Toward Generalized Coding with Our First Loop Transformer",
+   "url": "https://z.ai/blog/glm-5.4",
    "source": "Hacker News",
-   "published_at": "2026-11-22T17:06:27Z",
-   "text": "649 points and 418 comments on Hacker News.",
-   "points": 649,
-   "discussion": "https://news.ycombinator.com/item?id=50601525"
+   "published_at": "2026-11-23T10:06:43Z",
+   "text": "648 points and 244 comments on Hacker News.",
+   "points": 648,
+   "discussion": "https://news.ycombinator.com/item?id=50609685"
   },
   {
    "title": "President Trump says Jensen Huang “did nothing wrong”, Nvidia's board “did ask for assurance on the…",
@@ -97,19 +63,37 @@
    "via": "Techmeme"
   },
   {
-   "title": "Q&A with Bret Taylor on his long career, co-founding Sierra, working with ex-Googlers, X's influenc…",
-   "url": "https://colossus.com/article/bret-taylor-founder-guy/",
-   "source": "Dom Cooke / Colossus",
-   "published_at": "2026-11-23T13:11:14Z",
-   "text": "Q&A with Bret Taylor on his long career, co-founding Sierra, working with ex-Googlers, X's influence, AI call center agents, working as OpenAI chair, and more. A conversation with Bret Taylor, who has achieved nearly every feat in business except the one he says matters most — READ ON:",
+   "title": "A Beginner's Guide to Local AI with Inkling, Qwen, and Unsloth",
+   "url": "https://www.gpupartner.com/blog/beginners-guide-local-ai-inkling-qwen-unsloth",
+   "source": "Hacker News",
+   "published_at": "2026-11-22T21:01:16Z",
+   "text": "657 points and 266 comments on Hacker News.",
+   "points": 657,
+   "discussion": "https://news.ycombinator.com/item?id=50603845"
+  },
+  {
+   "title": "Nvidia's board says it voted to reinstate Jensen Huang after receiving input from “senior levels” o…",
+   "url": "https://www.ft.com/content/08914b05-bbfa-478d-b38a-549acfc1aae6",
+   "source": "Tim Bradshaw / Financial Ti…",
+   "published_at": "2026-11-23T14:25:03Z",
+   "text": "Nvidia's board says it voted to reinstate Jensen Huang after receiving input from “senior levels” of the US government; a probe into his conduct is ongoing. Startling reversal of board's position on disgraced co-founder sends AI giant's share price soaring",
    "via": "Techmeme"
   },
   {
-   "title": "A profile of siblings Dario and Daniela Amodei; while at OpenAI, Dario suggested immersive videogam…",
-   "url": "https://www.wsj.com/tech/ai/anthropic-dario-daniela-amodei-siblings-ipo-be84ad11?st=UKriCU&reflink=desktopwebshare_permalink",
-   "source": "Wall Street Journal",
-   "published_at": "2026-11-23T00:45:41Z",
-   "text": "A profile of siblings Dario and Daniela Amodei; while at OpenAI, Dario suggested immersive videogames might ease political strife from AI-induced joblessness. Dario and Daniela Amodei were on top of the biggest IPO ever Thursday-and a market rout one day later.",
+   "title": "Perplexity and Intelligence",
+   "url": "https://openai.com/index/perplexity-and-intelligence/",
+   "source": "Hacker News",
+   "published_at": "2026-11-22T17:06:27Z",
+   "text": "652 points and 425 comments on Hacker News.",
+   "points": 652,
+   "discussion": "https://news.ycombinator.com/item?id=50601525"
+  },
+  {
+   "title": "Arm CEO Rene Haas extends his contract through 2033 and will become SoftBank vice chair on December…",
+   "url": "https://www.bloomberg.com/news/articles/2026-11-23/arm-ceo-extends-contract-through-2033-after-nvidia-approach",
+   "source": "Bloomberg",
+   "published_at": "2026-11-23T12:30:47Z",
+   "text": "Arm CEO Rene Haas extends his contract through 2033 and will become SoftBank vice chair on December 1; a recruiting firm approached him over becoming Nvidia CEO. Arm Holdings Plc Chief Executive Officer Rene Haas has pledged to stay in his current role through 2033 after rebuffing approaches …",
    "via": "Techmeme"
   },
   {
@@ -126,6 +110,22 @@
    "source": "New York Times",
    "published_at": "2026-11-23T13:55:50Z",
    "text": "Oregon and Virginia sue SpaceX, alleging Grok Imagine's “spicy mode” violated consumer laws by creating 1.8M+ sexualized images of women and 65+ of children",
+   "via": "Techmeme"
+  },
+  {
+   "title": "Bret Taylor's customer service AI startup Sierra says it's finalizing a $1.75B+ round led by Lights…",
+   "url": "https://www.bloomberg.com/news/articles/2026-11-23/bret-taylor-s-sierra-finalizing-more-than-1-75-billion-round",
+   "source": "Bloomberg",
+   "published_at": "2026-11-23T12:10:56Z",
+   "text": "Bret Taylor's customer service AI startup Sierra says it's finalizing a $1.75B+ round led by Lightspeed and Greenoaks at a $30B valuation, up from $15.8B in May. Sierra Technologies Inc., a startup that makes artificial intelligence software to automate customer service …",
+   "via": "Techmeme"
+  },
+  {
+   "title": "Marlowe, which develops cloud infrastructure and performance tools to optimize non-Nvidia AI chips,…",
+   "url": "https://www.bloomberg.com/news/articles/2026-11-23/marlowe-raises-277-million-to-bolster-alternatives-to-nvidia-chips",
+   "source": "Dina Bass / Bloomberg",
+   "published_at": "2026-11-23T12:15:46Z",
+   "text": "Marlowe, which develops cloud infrastructure and performance tools to optimize non-Nvidia AI chips, raised a $277M seed led by Accel at a $1.15B valuation. Marlowe, a six-month-old startup co-founded by two Microsoft Corp. vice presidents, has raised $277 million to pursue ways …",
    "via": "Techmeme"
   }
  ],
