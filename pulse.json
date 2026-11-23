@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-23T16:39:14Z",
+ "generated_at": "2026-11-23T17:12:09Z",
  "items": [
   {
    "title": "Nvidia's board unanimously votes to reinstate Jensen Huang as CEO, president, and board director, a…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-23T14:27:19Z",
    "text": "“The NVIDIA Board of Directors has made the correct and proper decision to return Jensen Huang to the position of CEO… Congratulations to Jensen, the NVIDIA Board, to the People of the United States — and, indeed, the World!” - President DONALD J. TRUMP",
    "author_name": "The White House",
-   "likes": 20788,
+   "likes": 23153,
    "story": "President Trump says Nvidia “made the correct and proper decision”, the US “needs Jensen's leadership”, and the US AG found no evidence of “unlawful conduct”"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-11-22T17:12:27Z",
    "text": "This is the most important thing OpenAI has published in awhile. We are providing a lot of transparency into our pretraining progress and hope we can agree as a frield to common limits. I think that would be very wise and help ensure safety and control.",
    "author_name": "Sam Altman",
-   "likes": 10712,
+   "likes": 10806,
    "story": "OpenAI shares its models' “perplexity”, or how well they predict data, and urges pacing limits based on such metrics, citing a possible 2027 avalanche of gains"
   },
   {
@@ -50,8 +50,8 @@
    "url": "https://z.ai/blog/glm-5.4",
    "source": "Hacker News",
    "published_at": "2026-11-23T10:06:43Z",
-   "text": "686 points and 252 comments on Hacker News.",
-   "points": 686,
+   "text": "742 points and 264 comments on Hacker News.",
+   "points": 742,
    "discussion": "https://news.ycombinator.com/item?id=50609685"
   },
   {
@@ -67,8 +67,8 @@
    "url": "https://www.gpupartner.com/blog/beginners-guide-local-ai-inkling-qwen-unsloth",
    "source": "Hacker News",
    "published_at": "2026-11-22T21:01:16Z",
-   "text": "663 points and 270 comments on Hacker News.",
-   "points": 663,
+   "text": "674 points and 272 comments on Hacker News.",
+   "points": 674,
    "discussion": "https://news.ycombinator.com/item?id=50603845"
   },
   {
@@ -84,9 +84,25 @@
    "url": "https://openai.com/index/perplexity-and-intelligence/",
    "source": "Hacker News",
    "published_at": "2026-11-22T17:06:27Z",
-   "text": "655 points and 427 comments on Hacker News.",
-   "points": 655,
+   "text": "661 points and 430 comments on Hacker News.",
+   "points": 661,
    "discussion": "https://news.ycombinator.com/item?id=50601525"
+  },
+  {
+   "title": "Sources: Trump directed an effort, led by JD Vance, to push for Jensen Huang's reinstatement, assur…",
+   "url": "https://www.nytimes.com/2026/11/23/technology/trump-nvidia-huang.html?unlocked_article_code=1.SlE.plCA.zs7Mh9MXa5RG&smid=url-share",
+   "source": "New York Times",
+   "published_at": "2026-11-23T17:11:19Z",
+   "text": "Sources: Trump directed an effort, led by JD Vance, to push for Jensen Huang's reinstatement, assuring Nvidia's board Huang posed no national security risk",
+   "via": "Techmeme"
+  },
+  {
+   "title": "Oregon and Virginia sue SpaceX, alleging Grok Imagine's “spicy mode” violated consumer laws by crea…",
+   "url": "https://www.nytimes.com/2026/11/23/technology/spacex-lawsuit-ai-sexualized-images.html",
+   "source": "New York Times",
+   "published_at": "2026-11-23T13:55:50Z",
+   "text": "Oregon and Virginia sue SpaceX, alleging Grok Imagine's “spicy mode” violated consumer laws by creating 1.8M+ sexualized images of women and 65+ of children. The states accused Elon Musk's company of violating consumer protection laws with its Grok Imagine artificial intelligence tool, which created the images.",
+   "via": "Techmeme"
   },
   {
    "title": "Amazon agrees to acquire much of startup Decart, including the Decart Optimization Stack and its fo…",
@@ -105,27 +121,11 @@
    "via": "Techmeme"
   },
   {
-   "title": "Oregon and Virginia sue SpaceX, alleging Grok Imagine's “spicy mode” violated consumer laws by crea…",
-   "url": "https://www.nytimes.com/2026/11/23/technology/spacex-lawsuit-ai-sexualized-images.html",
-   "source": "New York Times",
-   "published_at": "2026-11-23T13:55:50Z",
-   "text": "Oregon and Virginia sue SpaceX, alleging Grok Imagine's “spicy mode” violated consumer laws by creating 1.8M+ sexualized images of women and 65+ of children. The states accused Elon Musk's company of violating consumer protection laws with its Grok Imagine artificial intelligence tool, which created the images.",
-   "via": "Techmeme"
-  },
-  {
    "title": "Bret Taylor's customer service AI startup Sierra says it's finalizing a $1.75B+ round led by Lights…",
    "url": "https://www.bloomberg.com/news/articles/2026-11-23/bret-taylor-s-sierra-finalizing-more-than-1-75-billion-round",
    "source": "Bloomberg",
    "published_at": "2026-11-23T12:10:56Z",
    "text": "Bret Taylor's customer service AI startup Sierra says it's finalizing a $1.75B+ round led by Lightspeed and Greenoaks at a $30B valuation, up from $15.8B in May. Sierra Technologies Inc., a startup that makes artificial intelligence software to automate customer service …",
-   "via": "Techmeme"
-  },
-  {
-   "title": "Marlowe, which develops cloud infrastructure and performance tools to optimize non-Nvidia AI chips,…",
-   "url": "https://www.bloomberg.com/news/articles/2026-11-23/marlowe-raises-277-million-to-bolster-alternatives-to-nvidia-chips",
-   "source": "Dina Bass / Bloomberg",
-   "published_at": "2026-11-23T12:15:46Z",
-   "text": "Marlowe, which develops cloud infrastructure and performance tools to optimize non-Nvidia AI chips, raised a $277M seed led by Accel at a $1.15B valuation. Marlowe, a six-month-old startup co-founded by two Microsoft Corp. vice presidents, has raised $277 million to pursue ways …",
    "via": "Techmeme"
   }
  ],
