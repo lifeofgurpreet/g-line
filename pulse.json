@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-23T06:28:38Z",
+ "generated_at": "2026-11-23T07:01:00Z",
  "items": [
   {
    "title": "A week after urging an Nvidia shake-up, Scott Bessent says Jensen Huang's return should depend on p…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-22T17:12:27Z",
    "text": "This is the most important thing OpenAI has published in awhile. We are providing a lot of transparency into our pretraining progress and hope we can agree as a frield to common limits. I think that would be very wise and help ensure safety and control.",
    "author_name": "Sam Altman",
-   "likes": 8997,
+   "likes": 9111,
    "story": "OpenAI shares its models' perplexity, or how well they predict data, and urges pacing limits based on such metrics, citing a possible 2027 avalanche of AI gains"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-11-21T20:26:59Z",
    "text": "In FSD V15, the Tesla AI computer re-renders reality with chevrons in the sky for turns like a video game. You can tap any point on the reality revisualizer to make your car go there.",
    "author_name": "Elon Musk",
-   "likes": 42417,
+   "likes": 42516,
    "story": "Tesla rolls out FSD v15, featuring a photorealistic rendering of car surroundings; Elon Musk says it is real-time AI video generation without using game engines"
   },
   {
@@ -50,8 +50,8 @@
    "url": "https://www.gpupartner.com/blog/beginners-guide-local-ai-inkling-qwen-unsloth",
    "source": "Hacker News",
    "published_at": "2026-11-22T21:01:16Z",
-   "text": "392 points and 157 comments on Hacker News.",
-   "points": 392,
+   "text": "410 points and 165 comments on Hacker News.",
+   "points": 410,
    "discussion": "https://news.ycombinator.com/item?id=50603845"
   },
   {
@@ -74,8 +74,8 @@
    "url": "https://openai.com/index/perplexity-and-intelligence/",
    "source": "Hacker News",
    "published_at": "2026-11-22T17:06:27Z",
-   "text": "548 points and 369 comments on Hacker News.",
-   "points": 548,
+   "text": "550 points and 376 comments on Hacker News.",
+   "points": 550,
    "discussion": "https://news.ycombinator.com/item?id=50601525"
   },
   {
@@ -91,8 +91,8 @@
    "url": "https://github.com/gulivan/worker755",
    "source": "Hacker News",
    "published_at": "2026-11-22T13:56:58Z",
-   "text": "302 points and 74 comments on Hacker News.",
-   "points": 302,
+   "text": "306 points and 74 comments on Hacker News.",
+   "points": 306,
    "discussion": "https://news.ycombinator.com/item?id=50599762"
   },
   {
