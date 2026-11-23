@@ -1,13 +1,13 @@
 {
  "schema": 1,
- "generated_at": "2026-11-22T13:15:28Z",
+ "generated_at": "2026-11-23T05:13:51Z",
  "items": [
   {
-   "title": "Researchers used canary credentials in requests to AI routers like OpenRouter and Vercel, even unde…",
-   "url": "https://arstechnica.com/security/2026/11/a-leaky-ai-supply-chain-is-exposing-secret-user-data-at-an-alarming-rate/",
-   "source": "Dan Goodin / Ars Technica",
-   "published_at": "2026-11-21T20:11:12Z",
-   "text": "Researchers used canary credentials in requests to AI routers like OpenRouter and Vercel, even under “ZDR” policies, and saw “privacy” often broken, keys stolen. Researchers planted 2 million digital tripwires in requests sent through a sprawling network of AI services …",
+   "title": "OpenAI shares its models' perplexity, or how well they predict data, and urges pacing limits based…",
+   "url": "https://openai.com/index/perplexity-and-intelligence",
+   "source": "Jakub Pachocki / OpenAI",
+   "published_at": "2026-11-22T18:25:38Z",
+   "text": "OpenAI shares its models' perplexity, or how well they predict data, and urges pacing limits based on such metrics, citing a possible 2027 avalanche of AI gains. - Difficulty of comparison across labs. … - Detachment from actionable evaluations. … - Not accounting for advances outside of pretraining.",
    "via": "Techmeme"
   },
   {
@@ -17,7 +17,7 @@
    "published_at": "2026-11-21T20:26:59Z",
    "text": "In FSD V15, the Tesla AI computer re-renders reality with chevrons in the sky for turns like a video game. You can tap any point on the reality revisualizer to make your car go there.",
    "author_name": "Elon Musk",
-   "likes": 34316,
+   "likes": 42229,
    "story": "Tesla rolls out FSD v15, featuring a photorealistic rendering of car surroundings; Elon Musk says it is real-time AI video generation without using game engines"
   },
   {
@@ -28,31 +28,21 @@
    "text": "Added sign-in to organizations managed in Anthropic's Enterprise Admin Console: after claude auth login, Claude Code applies the organization's settings and uses its cloud provider or gateway · Added easel, a built-in mod that draws charts when asked and under MCP metrics results, on Pro, Max and, where available, Team and Enterprise on macOS and Linux; turn automatic charts off in /config · Added CLAUDE_CODE_FULL_SIGN_IN_LINK=1 to print the full sign-in link, if the short one shows an error or a script reads values from it · Self-hosted runner: Added --start-dir / SELF_HOSTED_RUNNER_START_DI…"
   },
   {
-   "title": "Terence Tao on Numberphile said he believes with the help of AI, we could solve the reimann hypothe…",
-   "url": "https://x.com/LinkofSunshine/status/2123800866738024731",
-   "source": "𝕏 @LinkofSunshine",
-   "published_at": "2026-11-20T15:29:19Z",
-   "text": "Terence Tao on Numberphile said he believes with the help of AI, we could solve the reimann hypothesis before 2050. It took 35 days",
-   "author_name": "Basil🧡",
-   "likes": 16171,
-   "story": "A joint statement by the Lean and Mathlib communities says “we have full confidence that Alpöge's proof of the Riemann Hypothesis is correct”"
-  },
-  {
-   "title": "Investigation: Alice Huang had ties to gaming firms, alleged Prince Group figures and hundreds of s…",
-   "url": "https://www.ft.com/content/f3ad8a81-3890-4a8a-8853-ff0a94b08ba9",
-   "source": "Financial Times",
-   "published_at": "2026-11-21T18:56:31Z",
-   "text": "Investigation: Alice Huang had ties to gaming firms, alleged Prince Group figures and hundreds of shell companies in a network moving Nvidia chips to China. Chinese executive in romantic relationship with former Nvidia CEO Jensen Huang had connections to the lucrative trade moving chips to China",
+   "title": "A week after urging an Nvidia shake-up, Scott Bessent says Jensen Huang's return should depend on p…",
+   "url": "https://www.nytimes.com/2026/11/22/business/scott-bessent-jensen-huang-nvidia.html",
+   "source": "Alan Rappeport / New York T…",
+   "published_at": "2026-11-22T19:50:38Z",
+   "text": "A week after urging an Nvidia shake-up, Scott Bessent says Jensen Huang's return should depend on probes of its China chip sales and presses Nvidia for answers. The treasury secretary said on CBS that it was too soon to say if Jensen Huang should return as the company's chief executive.",
    "via": "Techmeme"
   },
   {
-   "title": "87% of the Anthropic power will come from gas and 11% from coal in 2028",
-   "url": "https://betterdatacenterproject.com/2026/11/16/how-ai-is-powered-a-breakdown-of-byop-and-grid-power/",
+   "title": "A Beginner's Guide to Local AI with Inkling, Qwen, and Unsloth",
+   "url": "https://www.gpupartner.com/blog/beginners-guide-local-ai-inkling-qwen-unsloth",
    "source": "Hacker News",
-   "published_at": "2026-11-22T08:57:34Z",
-   "text": "235 points and 333 comments on Hacker News.",
-   "points": 235,
-   "discussion": "https://news.ycombinator.com/item?id=50597612"
+   "published_at": "2026-11-22T21:01:16Z",
+   "text": "360 points and 145 comments on Hacker News.",
+   "points": 360,
+   "discussion": "https://news.ycombinator.com/item?id=50603845"
   },
   {
    "title": "Anthropic announces closing of initial public offering, including full exercise of underwriters’ op…",
@@ -62,70 +52,76 @@
    "text": "Today Anthropic, PBC announced the closing of its initial public offering of an aggregate of 1,127,000,000 shares of its Class A common stock at a public offering price of $83.00 per share, including the full exercise by the underwriters of their option to purchase an additional 147,000,000 shares of Class A common stock from Anthropic at the initial public offering price."
   },
   {
-   "title": "Experts say AI has made planning cyberattacks on industrial equipment faster by helping attackers r…",
-   "url": "https://www.ft.com/content/3cf882c6-0be6-43f5-b01e-b6f765686c8b?accessToken=zwAAAaH84u1pkc88-ILGC-ZD9dOwHrb3ZWhsiw.MEQCIEewq-yMEhWLLFytskbl4UfRofl-P5tnaU_ItSGndPYsAiB5E9iR8KtH8A9y5DsKiZxw46YWH_09vwzWKRqKB451VA&sharetype=gift&token=78da349b-c4b7-48c6-8dfa-5cf8d65ca0f1",
-   "source": "Tom Wilson / Financial Times",
-   "published_at": "2026-11-22T11:01:45Z",
-   "text": "Experts say AI has made planning cyberattacks on industrial equipment faster by helping attackers read manuals and research past accidents more quickly. The freezer war is just a start. The year is 2027. You wake up one morning to find you cannot use email or send instant messages.",
+   "title": "A profile of siblings Dario and Daniela Amodei; while at OpenAI, Dario suggested immersive videogam…",
+   "url": "https://www.wsj.com/tech/ai/anthropic-dario-daniela-amodei-siblings-ipo-be84ad11?st=UKriCU&reflink=desktopwebshare_permalink",
+   "source": "Wall Street Journal",
+   "published_at": "2026-11-23T00:45:41Z",
+   "text": "A profile of siblings Dario and Daniela Amodei; while at OpenAI, Dario suggested immersive videogames might ease political strife from AI-induced joblessness. Dario and Daniela Amodei were on top of the biggest IPO ever Thursday-and a market rout one day later.",
    "via": "Techmeme"
   },
   {
-   "title": "Data Processing Incidents on Inference Providers",
-   "url": "https://openrouter.ai/blog/announcements/data-processing-incidents-on-inference-providers/",
+   "title": "Show HN: I built a game where you are an LLM's subagent",
+   "url": "https://github.com/gulivan/worker755",
    "source": "Hacker News",
-   "published_at": "2026-11-22T02:14:14Z",
-   "text": "186 points and 68 comments on Hacker News.",
-   "points": 186,
-   "discussion": "https://news.ycombinator.com/item?id=50595554"
+   "published_at": "2026-11-22T13:56:58Z",
+   "text": "296 points and 69 comments on Hacker News.",
+   "points": 296,
+   "discussion": "https://news.ycombinator.com/item?id=50599762"
   },
   {
-   "title": "Sources: AI server suppliers like Dell, HPE, Lenovo, and Supermicro are demanding substantially hig…",
-   "url": "https://www.ft.com/content/dd2a6594-6146-4ff1-ac8e-54749c1fc99f",
-   "source": "Financial Times",
-   "published_at": "2026-11-22T05:50:56Z",
-   "text": "Sources: AI server suppliers like Dell, HPE, Lenovo, and Supermicro are demanding substantially higher prices from buyers, months after contracts were signed. Dell, HPE, Lenovo and Supermicro demand more for equipment, with the increased costs hitting trading firms",
+   "title": "After FAA, Microsoft, and bank outages, DNI Jay Clayton says Americans should prepare for “bumps in…",
+   "url": "https://www.cnbc.com/2026/11/22/jay-clayton-tech-outages-faa-microsoft-thanksgiving.html",
+   "source": "Garrett Downs / CNBC",
+   "published_at": "2026-11-22T20:35:37Z",
+   "text": "After FAA, Microsoft, and bank outages, DNI Jay Clayton says Americans should prepare for “bumps in the road” as systems are upgraded to adapt to the AI age. Director of National Intelligence Jay Clayton warned Americans to prepare for “bumps in the road” …",
    "via": "Techmeme"
   },
   {
-   "title": "The Mythology of Conscious AI",
-   "url": "https://www.noemamag.com/the-mythology-of-conscious-ai/",
-   "source": "Hacker News",
-   "published_at": "2026-11-22T02:10:02Z",
-   "text": "87 points and 189 comments on Hacker News.",
-   "points": 87,
-   "discussion": "https://news.ycombinator.com/item?id=50595537"
-  },
-  {
-   "title": "Sources: Amazon is nearing a $7.5B deal to buy AI startup Decart; talks are at an advanced stage an…",
-   "url": "https://www.ft.com/content/dc7749dc-0f40-44a6-80bc-7f747d383616",
-   "source": "Financial Times",
-   "published_at": "2026-11-21T17:56:18Z",
-   "text": "Sources: Amazon is nearing a $7.5B deal to buy AI startup Decart; talks are at an advanced stage and a deal could come together as soon as next week. Acquisition would help AWS compete with Nvidia in race for computing power — Amazon is nearing a $7.5bn deal to buy start-up Decart …",
+   "title": "Alexandr Wang says the Riemann Hypothesis proof shows AI will surpass humans in every field, includ…",
+   "url": "https://x.com/alexandr_wang/status/2124636606959345776",
+   "source": "Alexandr Wang / @alexandr_w…",
+   "published_at": "2026-11-23T04:03:05Z",
+   "text": "Alexandr Wang says the Riemann Hypothesis proof shows AI will surpass humans in every field, including AI research, and calls for AI safety and alignment. Superintelligence is Arriving",
    "via": "Techmeme"
   },
   {
-   "title": "Pandex – Official European Law for AI Agents, over MCP",
-   "url": "https://www.pandex.io",
-   "source": "Hacker News",
-   "published_at": "2026-11-21T20:47:41Z",
-   "text": "109 points and 29 comments on Hacker News.",
-   "points": 109,
-   "discussion": "https://news.ycombinator.com/item?id=50593481"
-  },
-  {
-   "title": "Matchmakers say more tech workers fear romantic espionage after the Jensen Huang scandal; an AI com…",
-   "url": "https://www.wired.com/story/regular-tech-bros-are-worried-about-honeypots/",
-   "source": "Wired",
-   "published_at": "2026-11-22T00:11:20Z",
-   "text": "Matchmakers say more tech workers fear romantic espionage after the Jensen Huang scandal; an AI companion app pitches “zero espionage” executive girlfriends. The Jensen Huang scandal is the latest fuel for dating anxieties among newly rich and powerful tech workers.",
+   "title": "Researchers used canary credentials in requests to AI routers like OpenRouter and Vercel, even unde…",
+   "url": "https://arstechnica.com/security/2026/11/a-leaky-ai-supply-chain-is-exposing-secret-user-data-at-an-alarming-rate/",
+   "source": "Dan Goodin / Ars Technica",
+   "published_at": "2026-11-21T20:11:12Z",
+   "text": "Researchers used canary credentials in requests to AI routers like OpenRouter and Vercel, even under “ZDR” policies, and saw “privacy” often broken, keys stolen",
    "via": "Techmeme"
   },
   {
-   "title": "An interview with Google DeepMind in-house philosopher Henry Shevlin on being hired to work on mach…",
-   "url": "https://www.ft.com/content/6f807d57-f0ea-4251-9f4d-75a6edc8d49a?accessToken=zwAAAaH8y_kikc9vgH1X8OpCUdOfTXWm7cjUmg.MEQCIACh-UVIJLvZdJk2Ho7Q-qsVRoQLNyCmy5zPK9w3Y1lTAiB-BgoDqcF7LPJ1R7yF4te0TrGCjIV8E56IAgl4GYcrnA&sharetype=gift&token=956073db-4440-473e-97bd-a0af2932464c",
-   "source": "Cristina Criddle / Financia…",
-   "published_at": "2026-11-21T11:31:26Z",
-   "text": "An interview with Google DeepMind in-house philosopher Henry Shevlin on being hired to work on machine consciousness, human-AI relationships, and AGI readiness. The in-house philosopher on the problem of consciousness and what it might feel like to be an AI agent",
+   "title": "Arva AI, which builds AI agents for banks' financial-crime compliance teams and counts Wise as a cu…",
+   "url": "https://www.axios.com/pro/fintech-deals/2026/11/17/arva-ai-20-million-series-a-bank-compliance",
+   "source": "Ryan Lawler / Axios",
+   "published_at": "2026-11-23T03:26:28Z",
+   "text": "Arva AI, which builds AI agents for banks' financial-crime compliance teams and counts Wise as a customer, raised a $20M Series A led by Arthur Ventures",
+   "via": "Techmeme"
+  },
+  {
+   "title": "Jony Ive, ex-OpenAI product designer Joey Flynn, and others on Silicon Valley's obsession with “tas…",
+   "url": "https://www.nytimes.com/2026/11/20/magazine/ai-slop-taste-aesthetic-silicon-valley.html?unlocked_article_code=1.SFE.1a6T.-kpbFF_tJYZx&smid=url-share",
+   "source": "Jonah Weiner / New York Tim…",
+   "published_at": "2026-11-22T15:01:07Z",
+   "text": "Jony Ive, ex-OpenAI product designer Joey Flynn, and others on Silicon Valley's obsession with “taste” as a moat against AI slop and whether AI can learn it. To move through A.I.-era San Francisco as a relatively normal person is to confront the sheer volume of bewildering concepts that tech has lately thrust upon us.",
+   "via": "Techmeme"
+  },
+  {
+   "title": "GPT-6.2 Astra vs. Claude Fable 5.2 hands-on: nearly tied on three custom accounting, coding, and da…",
+   "url": "https://thenewstack.io/gpt-6-2-astra-vs-claude-fable-5-2/",
+   "source": "Jessica Wachtel / The New S…",
+   "published_at": "2026-11-23T01:45:52Z",
+   "text": "GPT-6.2 Astra vs. Claude Fable 5.2 hands-on: nearly tied on three custom accounting, coding, and data tasks, but Fable used far more tokens and cost 5x+ as much. When I compared Anthropic's Fable 5.2 vs. OpenAI's GPT-6 Astra last week, Fable 5.2 was slightly more accurate (149 points vs. 145).",
+   "via": "Techmeme"
+  },
+  {
+   "title": "Sources: amid leak fears, Anthropic limited some IPO banks to four-person teams, used a view-loggin…",
+   "url": "https://www.reuters.com/world/like-spacex-anthropic-ran-an-unusual-ipo-process-chafing-some-bankers-2026-11-22/",
+   "source": "Reuters",
+   "published_at": "2026-11-22T17:15:38Z",
+   "text": "Sources: amid leak fears, Anthropic limited some IPO banks to four-person teams, used a view-logging file platform, and sought six-month bans on advising rivals. For the second time this year, Wall Street bankers and lawyers took home a massive paycheck from a record-setting initial public offering.",
    "via": "Techmeme"
   }
  ],
