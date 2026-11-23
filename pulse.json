@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-23T10:44:35Z",
+ "generated_at": "2026-11-23T11:17:02Z",
  "items": [
   {
    "title": "OpenAI shares its models' “perplexity”, or how well they predict data, and urges pacing limits base…",
@@ -30,8 +30,8 @@
    "url": "https://www.gpupartner.com/blog/beginners-guide-local-ai-inkling-qwen-unsloth",
    "source": "Hacker News",
    "published_at": "2026-11-22T21:01:16Z",
-   "text": "525 points and 222 comments on Hacker News.",
-   "points": 525,
+   "text": "539 points and 227 comments on Hacker News.",
+   "points": 539,
    "discussion": "https://news.ycombinator.com/item?id=50603845"
   },
   {
@@ -42,11 +42,11 @@
    "text": "Today Anthropic, PBC announced the closing of its initial public offering of an aggregate of 1,127,000,000 shares of its Class A common stock at a public offering price of $83.00 per share, including the full exercise by the underwriters of their option to purchase an additional 147,000,000 shares of Class A common stock from Anthropic at the initial public offering price."
   },
   {
-   "title": "After the FAA, Microsoft, and bank outages, DNI Jay Clayton says Americans should prepare for “bump…",
-   "url": "https://www.cnbc.com/2026/11/22/jay-clayton-tech-outages-faa-microsoft-thanksgiving.html",
-   "source": "Garrett Downs / CNBC",
-   "published_at": "2026-11-22T20:35:37Z",
-   "text": "After the FAA, Microsoft, and bank outages, DNI Jay Clayton says Americans should prepare for “bumps in the road” as systems are upgraded to adapt to the AI age. Director of National Intelligence Jay Clayton warned Americans to prepare for “bumps in the road” …",
+   "title": "Z.ai launches GLM-5.4, a 750B-parameter flagship model built on its Loop Transformer architecture,…",
+   "url": "https://z.ai/blog/glm-5.4",
+   "source": "Z.ai",
+   "published_at": "2026-11-23T10:51:36Z",
+   "text": "Z.ai launches GLM-5.4, a 750B-parameter flagship model built on its Loop Transformer architecture, reaching intelligence levels comparable to 2T-3T models. Over the past three months, we have aggressively scaled both loop depth and model size in parallel. The first surprise came from the Loop Transformer architecture itself.",
    "via": "Techmeme"
   },
   {
@@ -54,9 +54,17 @@
    "url": "https://github.com/gulivan/worker755",
    "source": "Hacker News",
    "published_at": "2026-11-22T13:56:58Z",
-   "text": "320 points and 78 comments on Hacker News.",
-   "points": 320,
+   "text": "323 points and 78 comments on Hacker News.",
+   "points": 323,
    "discussion": "https://news.ycombinator.com/item?id=50599762"
+  },
+  {
+   "title": "After the FAA, Microsoft, and bank outages, DNI Jay Clayton says Americans should prepare for “bump…",
+   "url": "https://www.cnbc.com/2026/11/22/jay-clayton-tech-outages-faa-microsoft-thanksgiving.html",
+   "source": "Garrett Downs / CNBC",
+   "published_at": "2026-11-22T20:35:37Z",
+   "text": "After the FAA, Microsoft, and bank outages, DNI Jay Clayton says Americans should prepare for “bumps in the road” as systems are upgraded to adapt to the AI age. Director of National Intelligence Jay Clayton warned Americans to prepare for “bumps in the road” …",
+   "via": "Techmeme"
   },
   {
    "title": "Boston-based Aevius, whose foundation models analyze patient health using medical records, imaging,…",
@@ -91,11 +99,19 @@
    "via": "Techmeme"
   },
   {
+   "title": "The National Governors Association proposes a split of AI regulation roles, asking the US governmen…",
+   "url": "https://www.bloomberg.com/news/articles/2026-11-22/governors-call-for-federal-ai-rules-without-sidelining-states",
+   "source": "Bloomberg",
+   "published_at": "2026-11-23T09:16:01Z",
+   "text": "The National Governors Association proposes a split of AI regulation roles, asking the US government to review AI models while letting states protect consumers. A bipartisan group of US governors is urging Washington to set rules for the most powerful artificial intelligence systems …",
+   "via": "Techmeme"
+  },
+  {
    "title": "Chinese physical AI startup Simplexity Robotics raised a $100M pre-Series A led by Ant Group, with…",
    "url": "https://www.bloomberg.com/news/articles/2026-11-22/ant-group-bets-on-simplexity-to-thrive-in-china-s-humanoid-race",
    "source": "Saritha Rai / Bloomberg",
    "published_at": "2026-11-23T07:02:24Z",
-   "text": "Chinese physical AI startup Simplexity Robotics raised a $100M pre-Series A led by Ant Group, with Alibaba, Tencent, and others joining, at a $1.6B valuation. Chinese physical AI startup Simplexity Robotics received $100 million in a funding round led by Jack Ma-backed Ant Group Co. …",
+   "text": "Chinese physical AI startup Simplexity Robotics raised a $100M pre-Series A led by Ant Group, with Alibaba, Tencent, and others joining, at a $1.6B valuation",
    "via": "Techmeme"
   },
   {
@@ -103,23 +119,7 @@
    "url": "https://www.bloomberg.com/news/features/2026-11-22/trump-s-ai-chip-crackdown-on-china-after-nvidia-crisis-squeezes-southeast-asia?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc5NTQwNzgwMCwiZXhwIjoxNzk2MDEyNjAwLCJhcnRpY2xlSWQiOiJUT1hCU0RLR0lGUTMwMCIsImJjb25uZWN0SWQiOiJDNTc5RDIwMDZBQjQ0RjRDODkwMTU0M0U0ODMxNkJCNiJ9.3vmQa_rIIOmutX3CrjU1ib8_jJyygL3HHaYJC4NpNfo",
    "source": "Bloomberg",
    "published_at": "2026-11-23T06:03:48Z",
-   "text": "New US chip export rules threaten SEA's data center boom, risking incomplete and abandoned projects and forcing neoclouds to replace their Chinese customers. Washington's new rulebook spells trouble for a multibillion dollar cloud business helping to power the region's data center boom.",
-   "via": "Techmeme"
-  },
-  {
-   "title": "London-based Alecto, which uses AI and legal experts to help consumers understand UK property law,…",
-   "url": "https://siliconangle.com/2026/11/16/alecto-raises-20m-seed-funding-to-make-uk-property-law-more-accessible-to-consumers-with-ai/",
-   "source": "Kyt Dotson / SiliconANGLE",
-   "published_at": "2026-11-23T05:31:38Z",
-   "text": "London-based Alecto, which uses AI and legal experts to help consumers understand UK property law, raised a $20M seed led by Insight Partners",
-   "via": "Techmeme"
-  },
-  {
-   "title": "The National Governors Association proposes a split of AI regulation roles, asking the US governmen…",
-   "url": "https://www.bloomberg.com/news/articles/2026-11-22/governors-call-for-federal-ai-rules-without-sidelining-states",
-   "source": "Bloomberg",
-   "published_at": "2026-11-23T09:16:01Z",
-   "text": "The National Governors Association proposes a split of AI regulation roles, asking the US government to review AI models while letting states protect consumers. A bipartisan group of US governors is urging Washington to set rules for the most powerful artificial intelligence systems …",
+   "text": "New US chip export rules threaten SEA's data center boom, risking incomplete and abandoned projects and forcing neoclouds to replace their Chinese customers",
    "via": "Techmeme"
   }
  ],
