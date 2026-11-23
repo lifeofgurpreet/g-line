@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-23T16:07:15Z",
+ "generated_at": "2026-11-23T16:39:14Z",
  "items": [
   {
    "title": "Nvidia's board unanimously votes to reinstate Jensen Huang as CEO, president, and board director, a…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-23T14:27:19Z",
    "text": "“The NVIDIA Board of Directors has made the correct and proper decision to return Jensen Huang to the position of CEO… Congratulations to Jensen, the NVIDIA Board, to the People of the United States — and, indeed, the World!” - President DONALD J. TRUMP",
    "author_name": "The White House",
-   "likes": 17480,
+   "likes": 20788,
    "story": "President Trump says Nvidia “made the correct and proper decision”, the US “needs Jensen's leadership”, and the US AG found no evidence of “unlawful conduct”"
   },
   {
@@ -34,25 +34,8 @@
    "published_at": "2026-11-22T17:12:27Z",
    "text": "This is the most important thing OpenAI has published in awhile. We are providing a lot of transparency into our pretraining progress and hope we can agree as a frield to common limits. I think that would be very wise and help ensure safety and control.",
    "author_name": "Sam Altman",
-   "likes": 10619,
+   "likes": 10712,
    "story": "OpenAI shares its models' “perplexity”, or how well they predict data, and urges pacing limits based on such metrics, citing a possible 2027 avalanche of gains"
-  },
-  {
-   "title": "Source: Trump dialed into Nvidia's board meeting to argue for Huang's return; a US official says he…",
-   "url": "https://www.semafor.com/article/11/23/2026/jensen-huang-reinstated-as-nvidia-ceo",
-   "source": "Semafor",
-   "published_at": "2026-11-23T15:15:49Z",
-   "text": "Source: Trump dialed into Nvidia's board meeting to argue for Huang's return; a US official says he “was totally involved” and “we have to protect our geniuses”. US President Donald Trump had dialed into Nvidia's board meeting to argue for Jensen Huang's return …",
-   "via": "Techmeme"
-  },
-  {
-   "title": "GLM-5.4: Toward Generalized Coding with Our First Loop Transformer",
-   "url": "https://z.ai/blog/glm-5.4",
-   "source": "Hacker News",
-   "published_at": "2026-11-23T10:06:43Z",
-   "text": "648 points and 244 comments on Hacker News.",
-   "points": 648,
-   "discussion": "https://news.ycombinator.com/item?id=50609685"
   },
   {
    "title": "President Trump says Jensen Huang “did nothing wrong”, Nvidia's board “did ask for assurance on the…",
@@ -63,12 +46,29 @@
    "via": "Techmeme"
   },
   {
+   "title": "GLM-5.4: Toward Generalized Coding with Our First Loop Transformer",
+   "url": "https://z.ai/blog/glm-5.4",
+   "source": "Hacker News",
+   "published_at": "2026-11-23T10:06:43Z",
+   "text": "686 points and 252 comments on Hacker News.",
+   "points": 686,
+   "discussion": "https://news.ycombinator.com/item?id=50609685"
+  },
+  {
+   "title": "Source: Trump dialed into Nvidia's board meeting to argue for Huang's return; a US official says he…",
+   "url": "https://www.semafor.com/article/11/23/2026/jensen-huang-reinstated-as-nvidia-ceo",
+   "source": "Semafor",
+   "published_at": "2026-11-23T15:15:49Z",
+   "text": "Source: Trump dialed into Nvidia's board meeting to argue for Huang's return; a US official says he “was totally involved” and “we have to protect our geniuses”. US President Donald Trump had dialed into Nvidia's board meeting to argue for Jensen Huang's return …",
+   "via": "Techmeme"
+  },
+  {
    "title": "A Beginner's Guide to Local AI with Inkling, Qwen, and Unsloth",
    "url": "https://www.gpupartner.com/blog/beginners-guide-local-ai-inkling-qwen-unsloth",
    "source": "Hacker News",
    "published_at": "2026-11-22T21:01:16Z",
-   "text": "657 points and 266 comments on Hacker News.",
-   "points": 657,
+   "text": "663 points and 270 comments on Hacker News.",
+   "points": 663,
    "discussion": "https://news.ycombinator.com/item?id=50603845"
   },
   {
@@ -84,17 +84,9 @@
    "url": "https://openai.com/index/perplexity-and-intelligence/",
    "source": "Hacker News",
    "published_at": "2026-11-22T17:06:27Z",
-   "text": "652 points and 425 comments on Hacker News.",
-   "points": 652,
+   "text": "655 points and 427 comments on Hacker News.",
+   "points": 655,
    "discussion": "https://news.ycombinator.com/item?id=50601525"
-  },
-  {
-   "title": "Arm CEO Rene Haas extends his contract through 2033 and will become SoftBank vice chair on December…",
-   "url": "https://www.bloomberg.com/news/articles/2026-11-23/arm-ceo-extends-contract-through-2033-after-nvidia-approach",
-   "source": "Bloomberg",
-   "published_at": "2026-11-23T12:30:47Z",
-   "text": "Arm CEO Rene Haas extends his contract through 2033 and will become SoftBank vice chair on December 1; a recruiting firm approached him over becoming Nvidia CEO. Arm Holdings Plc Chief Executive Officer Rene Haas has pledged to stay in his current role through 2033 after rebuffing approaches …",
-   "via": "Techmeme"
   },
   {
    "title": "Amazon agrees to acquire much of startup Decart, including the Decart Optimization Stack and its fo…",
@@ -105,11 +97,19 @@
    "via": "Techmeme"
   },
   {
+   "title": "Arm CEO Rene Haas extends his contract through 2033 and will become SoftBank vice chair on December…",
+   "url": "https://www.bloomberg.com/news/articles/2026-11-23/arm-ceo-extends-contract-through-2033-after-nvidia-approach",
+   "source": "Bloomberg",
+   "published_at": "2026-11-23T12:30:47Z",
+   "text": "Arm CEO Rene Haas extends his contract through 2033 and will become SoftBank vice chair on December 1; a recruiting firm approached him over becoming Nvidia CEO. Arm Holdings Plc Chief Executive Officer Rene Haas has pledged to stay in his current role through 2033 after rebuffing approaches …",
+   "via": "Techmeme"
+  },
+  {
    "title": "Oregon and Virginia sue SpaceX, alleging Grok Imagine's “spicy mode” violated consumer laws by crea…",
    "url": "https://www.nytimes.com/2026/11/23/technology/spacex-lawsuit-ai-sexualized-images.html",
    "source": "New York Times",
    "published_at": "2026-11-23T13:55:50Z",
-   "text": "Oregon and Virginia sue SpaceX, alleging Grok Imagine's “spicy mode” violated consumer laws by creating 1.8M+ sexualized images of women and 65+ of children",
+   "text": "Oregon and Virginia sue SpaceX, alleging Grok Imagine's “spicy mode” violated consumer laws by creating 1.8M+ sexualized images of women and 65+ of children. The states accused Elon Musk's company of violating consumer protection laws with its Grok Imagine artificial intelligence tool, which created the images.",
    "via": "Techmeme"
   },
   {
