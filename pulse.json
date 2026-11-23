@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-23T17:44:53Z",
+ "generated_at": "2026-11-23T18:18:24Z",
  "items": [
   {
    "title": "Nvidia's board unanimously votes to reinstate Jensen Huang as CEO, president, and board director, a…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-23T14:27:19Z",
    "text": "“The NVIDIA Board of Directors has made the correct and proper decision to return Jensen Huang to the position of CEO… Congratulations to Jensen, the NVIDIA Board, to the People of the United States — and, indeed, the World!” - President DONALD J. TRUMP",
    "author_name": "The White House",
-   "likes": 25204,
+   "likes": 26704,
    "story": "President Trump says Nvidia “made the correct and proper decision”, the US “needs Jensen's leadership”, and the US AG found no evidence of “unlawful conduct”"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-11-22T17:12:27Z",
    "text": "This is the most important thing OpenAI has published in awhile. We are providing a lot of transparency into our pretraining progress and hope we can agree as a frield to common limits. I think that would be very wise and help ensure safety and control.",
    "author_name": "Sam Altman",
-   "likes": 10875,
+   "likes": 10950,
    "story": "OpenAI shares its models' “perplexity”, or how well they predict data, and urges pacing limits based on such metrics, citing a possible 2027 avalanche of gains"
   },
   {
@@ -50,8 +50,8 @@
    "url": "https://z.ai/blog/glm-5.4",
    "source": "Hacker News",
    "published_at": "2026-11-23T10:06:43Z",
-   "text": "780 points and 272 comments on Hacker News.",
-   "points": 780,
+   "text": "817 points and 296 comments on Hacker News.",
+   "points": 817,
    "discussion": "https://news.ycombinator.com/item?id=50609685"
   },
   {
@@ -67,16 +67,16 @@
    "url": "https://www.gpupartner.com/blog/beginners-guide-local-ai-inkling-qwen-unsloth",
    "source": "Hacker News",
    "published_at": "2026-11-22T21:01:16Z",
-   "text": "679 points and 278 comments on Hacker News.",
-   "points": 679,
+   "text": "687 points and 278 comments on Hacker News.",
+   "points": 687,
    "discussion": "https://news.ycombinator.com/item?id=50603845"
   },
   {
-   "title": "Sources: Trump directed an effort, led by JD Vance, to push for Jensen Huang's reinstatement, assur…",
-   "url": "https://www.nytimes.com/2026/11/23/technology/trump-nvidia-huang.html?unlocked_article_code=1.SlE.plCA.zs7Mh9MXa5RG&smid=url-share",
-   "source": "New York Times",
-   "published_at": "2026-11-23T17:11:19Z",
-   "text": "Sources: Trump directed an effort, led by JD Vance, to push for Jensen Huang's reinstatement, assuring Nvidia's board Huang posed no national security risk",
+   "title": "Sources: Nvidia board's decision to reinstate Jensen Huang was done without consulting Nvidia's sen…",
+   "url": "https://www.bloomberg.com/news/articles/2026-11-23/nvidia-s-about-face-on-huang-made-without-consulting-leadership",
+   "source": "Bloomberg",
+   "published_at": "2026-11-23T18:02:24Z",
+   "text": "Sources: Nvidia board's decision to reinstate Jensen Huang was done without consulting Nvidia's senior leadership, who were only informed at the last minute",
    "via": "Techmeme"
   },
   {
@@ -84,8 +84,8 @@
    "url": "https://openai.com/index/perplexity-and-intelligence/",
    "source": "Hacker News",
    "published_at": "2026-11-22T17:06:27Z",
-   "text": "664 points and 432 comments on Hacker News.",
-   "points": 664,
+   "text": "670 points and 434 comments on Hacker News.",
+   "points": 670,
    "discussion": "https://news.ycombinator.com/item?id=50601525"
   },
   {
@@ -97,11 +97,11 @@
    "via": "Techmeme"
   },
   {
-   "title": "Amazon agrees to acquire much of startup Decart, including the Decart Optimization Stack and its fo…",
-   "url": "https://www.bloomberg.com/news/articles/2026-11-23/amazon-is-said-to-pay-7-5-billion-for-ai-startup-decart-s-tech",
-   "source": "Matt Day / Bloomberg",
-   "published_at": "2026-11-23T14:51:19Z",
-   "text": "Amazon agrees to acquire much of startup Decart, including the Decart Optimization Stack and its founding team and AI researchers, a source says for ~$7.5B. Amazon.com Inc. has agreed to acquire much of startup Decart AI, buying tools to bolster the cloud-computing company's artificial intelligence infrastructure.",
+   "title": "Nvidia's board says it is starting a search to fill a new position, Chief Compliance Officer, repor…",
+   "url": "https://www.reuters.com/technology/nvidia-reinstates-jensen-huang-ceo-2026-11-23/",
+   "source": "Anhata Rooprai / Reuters",
+   "published_at": "2026-11-23T16:41:09Z",
+   "text": "Nvidia's board says it is starting a search to fill a new position, Chief Compliance Officer, reporting to the Nominating and Corporate Governance Committee. Nvidia said on Monday it was reinstating Jensen Huang as CEO, effective immediately, an extraordinary reversal that followed calls …",
    "via": "Techmeme"
   },
   {
@@ -113,19 +113,19 @@
    "via": "Techmeme"
   },
   {
-   "title": "Bret Taylor's customer service AI startup Sierra says it's finalizing a $1.75B+ round led by Lights…",
-   "url": "https://www.bloomberg.com/news/articles/2026-11-23/bret-taylor-s-sierra-finalizing-more-than-1-75-billion-round",
-   "source": "Bloomberg",
-   "published_at": "2026-11-23T12:10:56Z",
-   "text": "Bret Taylor's customer service AI startup Sierra says it's finalizing a $1.75B+ round led by Lightspeed and Greenoaks at a $30B valuation, up from $15.8B in May. Sierra Technologies Inc., a startup that makes artificial intelligence software to automate customer service …",
+   "title": "Sources: Trump directed an effort, led by JD Vance, to push for Jensen Huang's reinstatement, assur…",
+   "url": "https://www.nytimes.com/2026/11/23/technology/trump-nvidia-huang.html?unlocked_article_code=1.SlE.plCA.zs7Mh9MXa5RG&smid=url-share",
+   "source": "New York Times",
+   "published_at": "2026-11-23T17:11:19Z",
+   "text": "Sources: Trump directed an effort, led by JD Vance, to push for Jensen Huang's reinstatement, assuring Nvidia's board Huang posed no national security risk. President Trump decided he wanted to do whatever he could to help Mr. Huang get his old job back, two people familiar with the matter said.",
    "via": "Techmeme"
   },
   {
-   "title": "Arm CEO Rene Haas extends his contract through 2033 and will become SoftBank vice chair on December…",
-   "url": "https://www.bloomberg.com/news/articles/2026-11-23/arm-ceo-extends-contract-through-2033-after-nvidia-approach",
-   "source": "Bloomberg",
-   "published_at": "2026-11-23T12:30:47Z",
-   "text": "Arm CEO Rene Haas extends his contract through 2033 and will become SoftBank vice chair on December 1; a recruiting firm approached him over becoming Nvidia CEO. Arm Holdings Plc Chief Executive Officer Rene Haas has pledged to stay in his current role through 2033 after rebuffing approaches …",
+   "title": "Amazon agrees to acquire much of startup Decart, including the Decart Optimization Stack and its fo…",
+   "url": "https://www.bloomberg.com/news/articles/2026-11-23/amazon-is-said-to-pay-7-5-billion-for-ai-startup-decart-s-tech",
+   "source": "Matt Day / Bloomberg",
+   "published_at": "2026-11-23T14:51:19Z",
+   "text": "Amazon agrees to acquire much of startup Decart, including the Decart Optimization Stack and its founding team and AI researchers, a source says for ~$7.5B. Amazon.com Inc. has agreed to acquire much of startup Decart AI, buying tools to bolster the cloud-computing company's artificial intelligence infrastructure.",
    "via": "Techmeme"
   }
  ],
