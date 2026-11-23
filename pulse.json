@@ -1,32 +1,7 @@
 {
  "schema": 1,
- "generated_at": "2026-11-23T05:55:54Z",
+ "generated_at": "2026-11-23T06:28:38Z",
  "items": [
-  {
-   "title": "OpenAI shares its models' perplexity, or how well they predict data, and urges pacing limits based…",
-   "url": "https://openai.com/index/perplexity-and-intelligence",
-   "source": "Jakub Pachocki / OpenAI",
-   "published_at": "2026-11-22T18:25:38Z",
-   "text": "OpenAI shares its models' perplexity, or how well they predict data, and urges pacing limits based on such metrics, citing a possible 2027 avalanche of AI gains. - Difficulty of comparison across labs. … - Detachment from actionable evaluations. … - Not accounting for advances outside of pretraining.",
-   "via": "Techmeme"
-  },
-  {
-   "title": "In FSD V15, the Tesla AI computer re-renders reality with chevrons in the sky for turns like a vide…",
-   "url": "https://x.com/elonmusk/status/2124238164512714925",
-   "source": "𝕏 @elonmusk",
-   "published_at": "2026-11-21T20:26:59Z",
-   "text": "In FSD V15, the Tesla AI computer re-renders reality with chevrons in the sky for turns like a video game. You can tap any point on the reality revisualizer to make your car go there.",
-   "author_name": "Elon Musk",
-   "likes": 42318,
-   "story": "Tesla rolls out FSD v15, featuring a photorealistic rendering of car surroundings; Elon Musk says it is real-time AI video generation without using game engines"
-  },
-  {
-   "title": "Claude Code 2.1.330 released",
-   "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.330",
-   "source": "Claude Code releases",
-   "published_at": "2026-11-20T22:32:56Z",
-   "text": "Added sign-in to organizations managed in Anthropic's Enterprise Admin Console: after claude auth login, Claude Code applies the organization's settings and uses its cloud provider or gateway · Added easel, a built-in mod that draws charts when asked and under MCP metrics results, on Pro, Max and, where available, Team and Enterprise on macOS and Linux; turn automatic charts off in /config · Added CLAUDE_CODE_FULL_SIGN_IN_LINK=1 to print the full sign-in link, if the short one shows an error or a script reads values from it · Self-hosted runner: Added --start-dir / SELF_HOSTED_RUNNER_START_DI…"
-  },
   {
    "title": "A week after urging an Nvidia shake-up, Scott Bessent says Jensen Huang's return should depend on p…",
    "url": "https://www.nytimes.com/2026/11/22/business/scott-bessent-jensen-huang-nvidia.html",
@@ -36,20 +11,31 @@
    "via": "Techmeme"
   },
   {
-   "title": "A Beginner's Guide to Local AI with Inkling, Qwen, and Unsloth",
-   "url": "https://www.gpupartner.com/blog/beginners-guide-local-ai-inkling-qwen-unsloth",
-   "source": "Hacker News",
-   "published_at": "2026-11-22T21:01:16Z",
-   "text": "372 points and 154 comments on Hacker News.",
-   "points": 372,
-   "discussion": "https://news.ycombinator.com/item?id=50603845"
+   "title": "This is the most important thing OpenAI has published in awhile. We are providing a lot of transpar…",
+   "url": "https://x.com/sama/status/2124551594691932405",
+   "source": "𝕏 @sama",
+   "published_at": "2026-11-22T17:12:27Z",
+   "text": "This is the most important thing OpenAI has published in awhile. We are providing a lot of transparency into our pretraining progress and hope we can agree as a frield to common limits. I think that would be very wise and help ensure safety and control.",
+   "author_name": "Sam Altman",
+   "likes": 8997,
+   "story": "OpenAI shares its models' perplexity, or how well they predict data, and urges pacing limits based on such metrics, citing a possible 2027 avalanche of AI gains"
   },
   {
-   "title": "Anthropic announces closing of initial public offering, including full exercise of underwriters’ op…",
-   "url": "https://www.anthropic.com/news/ipo-close",
-   "source": "Anthropic",
-   "published_at": "2026-11-20T12:41:01Z",
-   "text": "Today Anthropic, PBC announced the closing of its initial public offering of an aggregate of 1,127,000,000 shares of its Class A common stock at a public offering price of $83.00 per share, including the full exercise by the underwriters of their option to purchase an additional 147,000,000 shares of Class A common stock from Anthropic at the initial public offering price."
+   "title": "Claude Code 2.1.330 released",
+   "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.330",
+   "source": "Claude Code releases",
+   "published_at": "2026-11-20T22:32:56Z",
+   "text": "Added sign-in to organizations managed in Anthropic's Enterprise Admin Console: after claude auth login, Claude Code applies the organization's settings and uses its cloud provider or gateway · Added easel, a built-in mod that draws charts when asked and under MCP metrics results, on Pro, Max and, where available, Team and Enterprise on macOS and Linux; turn automatic charts off in /config · Added CLAUDE_CODE_FULL_SIGN_IN_LINK=1 to print the full sign-in link, if the short one shows an error or a script reads values from it · Self-hosted runner: Added --start-dir / SELF_HOSTED_RUNNER_START_DI…"
+  },
+  {
+   "title": "In FSD V15, the Tesla AI computer re-renders reality with chevrons in the sky for turns like a vide…",
+   "url": "https://x.com/elonmusk/status/2124238164512714925",
+   "source": "𝕏 @elonmusk",
+   "published_at": "2026-11-21T20:26:59Z",
+   "text": "In FSD V15, the Tesla AI computer re-renders reality with chevrons in the sky for turns like a video game. You can tap any point on the reality revisualizer to make your car go there.",
+   "author_name": "Elon Musk",
+   "likes": 42417,
+   "story": "Tesla rolls out FSD v15, featuring a photorealistic rendering of car surroundings; Elon Musk says it is real-time AI video generation without using game engines"
   },
   {
    "title": "A profile of siblings Dario and Daniela Amodei; while at OpenAI, Dario suggested immersive videogam…",
@@ -60,13 +46,20 @@
    "via": "Techmeme"
   },
   {
-   "title": "Show HN: I built a game where you are an LLM's subagent",
-   "url": "https://github.com/gulivan/worker755",
+   "title": "A Beginner's Guide to Local AI with Inkling, Qwen, and Unsloth",
+   "url": "https://www.gpupartner.com/blog/beginners-guide-local-ai-inkling-qwen-unsloth",
    "source": "Hacker News",
-   "published_at": "2026-11-22T13:56:58Z",
-   "text": "297 points and 72 comments on Hacker News.",
-   "points": 297,
-   "discussion": "https://news.ycombinator.com/item?id=50599762"
+   "published_at": "2026-11-22T21:01:16Z",
+   "text": "392 points and 157 comments on Hacker News.",
+   "points": 392,
+   "discussion": "https://news.ycombinator.com/item?id=50603845"
+  },
+  {
+   "title": "Anthropic announces closing of initial public offering, including full exercise of underwriters’ op…",
+   "url": "https://www.anthropic.com/news/ipo-close",
+   "source": "Anthropic",
+   "published_at": "2026-11-20T12:41:01Z",
+   "text": "Today Anthropic, PBC announced the closing of its initial public offering of an aggregate of 1,127,000,000 shares of its Class A common stock at a public offering price of $83.00 per share, including the full exercise by the underwriters of their option to purchase an additional 147,000,000 shares of Class A common stock from Anthropic at the initial public offering price."
   },
   {
    "title": "Alexandr Wang says the Riemann Hypothesis proof shows AI will surpass humans in every field, includ…",
@@ -77,6 +70,15 @@
    "via": "Techmeme"
   },
   {
+   "title": "Perplexity and Intelligence",
+   "url": "https://openai.com/index/perplexity-and-intelligence/",
+   "source": "Hacker News",
+   "published_at": "2026-11-22T17:06:27Z",
+   "text": "548 points and 369 comments on Hacker News.",
+   "points": 548,
+   "discussion": "https://news.ycombinator.com/item?id=50601525"
+  },
+  {
    "title": "After FAA, Microsoft, and bank outages, DNI Jay Clayton says Americans should prepare for “bumps in…",
    "url": "https://www.cnbc.com/2026/11/22/jay-clayton-tech-outages-faa-microsoft-thanksgiving.html",
    "source": "Garrett Downs / CNBC",
@@ -85,11 +87,28 @@
    "via": "Techmeme"
   },
   {
+   "title": "Show HN: I built a game where you are an LLM's subagent",
+   "url": "https://github.com/gulivan/worker755",
+   "source": "Hacker News",
+   "published_at": "2026-11-22T13:56:58Z",
+   "text": "302 points and 74 comments on Hacker News.",
+   "points": 302,
+   "discussion": "https://news.ycombinator.com/item?id=50599762"
+  },
+  {
    "title": "Arva AI, which builds AI agents for banks' financial-crime compliance teams and counts Wise as a cu…",
    "url": "https://www.axios.com/pro/fintech-deals/2026/11/17/arva-ai-20-million-series-a-bank-compliance",
    "source": "Ryan Lawler / Axios",
    "published_at": "2026-11-23T03:26:28Z",
-   "text": "Arva AI, which builds AI agents for banks' financial-crime compliance teams and counts Wise as a customer, raised a $20M Series A led by Arthur Ventures",
+   "text": "Arva AI, which builds AI agents for banks' financial-crime compliance teams and counts Wise as a customer, raised a $20M Series A led by Arthur Ventures. Arva AI, which builds AI agents for banks' financial-crime compliance teams, has raised $20 million in Series A funding, CEO Rhim Shah tells Axios Pro exclusively.",
+   "via": "Techmeme"
+  },
+  {
+   "title": "New US chip export rules threaten SEA's data center boom, risking incomplete and abandoned projects…",
+   "url": "https://www.bloomberg.com/news/features/2026-11-22/trump-s-ai-chip-crackdown-on-china-after-nvidia-crisis-squeezes-southeast-asia?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc5NTQwNzgwMCwiZXhwIjoxNzk2MDEyNjAwLCJhcnRpY2xlSWQiOiJUT1hCU0RLR0lGUTMwMCIsImJjb25uZWN0SWQiOiJDNTc5RDIwMDZBQjQ0RjRDODkwMTU0M0U0ODMxNkJCNiJ9.3vmQa_rIIOmutX3CrjU1ib8_jJyygL3HHaYJC4NpNfo",
+   "source": "Bloomberg",
+   "published_at": "2026-11-23T06:03:48Z",
+   "text": "New US chip export rules threaten SEA's data center boom, risking incomplete and abandoned projects and forcing neoclouds to replace their Chinese customers. Washington's new rulebook spells trouble for a multibillion dollar cloud business helping to power the region's data center boom.",
    "via": "Techmeme"
   },
   {
@@ -106,22 +125,6 @@
    "source": "Jonah Weiner / New York Tim…",
    "published_at": "2026-11-22T15:01:07Z",
    "text": "Jony Ive, ex-OpenAI product designer Joey Flynn, and others on Silicon Valley's obsession with “taste” as a moat against AI slop and whether AI can learn it. To move through A.I.-era San Francisco as a relatively normal person is to confront the sheer volume of bewildering concepts that tech has lately thrust upon us.",
-   "via": "Techmeme"
-  },
-  {
-   "title": "GPT-6.2 Astra vs. Claude Fable 5.2 hands-on: nearly tied on three custom accounting, coding, and da…",
-   "url": "https://thenewstack.io/gpt-6-2-astra-vs-claude-fable-5-2/",
-   "source": "Jessica Wachtel / The New S…",
-   "published_at": "2026-11-23T01:45:52Z",
-   "text": "GPT-6.2 Astra vs. Claude Fable 5.2 hands-on: nearly tied on three custom accounting, coding, and data tasks, but Fable used far more tokens and cost 5x+ as much. When I compared Anthropic's Fable 5.2 vs. OpenAI's GPT-6 Astra last week, Fable 5.2 was slightly more accurate (149 points vs. 145).",
-   "via": "Techmeme"
-  },
-  {
-   "title": "Sources: amid leak fears, Anthropic limited some IPO banks to four-person teams, used a view-loggin…",
-   "url": "https://www.reuters.com/world/like-spacex-anthropic-ran-an-unusual-ipo-process-chafing-some-bankers-2026-11-22/",
-   "source": "Reuters",
-   "published_at": "2026-11-22T17:15:38Z",
-   "text": "Sources: amid leak fears, Anthropic limited some IPO banks to four-person teams, used a view-logging file platform, and sought six-month bans on advising rivals",
    "via": "Techmeme"
   }
  ],
