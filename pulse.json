@@ -1,14 +1,31 @@
 {
  "schema": 1,
- "generated_at": "2026-11-23T15:03:37Z",
+ "generated_at": "2026-11-23T15:34:54Z",
  "items": [
   {
    "title": "Nvidia's board unanimously votes to reinstate Jensen Huang as CEO, president, and board director, a…",
    "url": "https://nvidianews.nvidia.com/news/nvidia-board-reinstates-jensen-huang-as-president-ceo-and-board-director",
    "source": "Nvidia Newsroom",
    "published_at": "2026-11-23T14:04:07Z",
-   "text": "Nvidia's board unanimously votes to reinstate Jensen Huang as CEO, president, and board director, after finding “no national security risk”; NVDA jumps 25%+. NVIDIA (NASDAQ: NVDA) today announced that effective immediately, Jensen Huang has been reinstated as President …",
+   "text": "Nvidia's board unanimously votes to reinstate Jensen Huang as CEO, president, and board director, after finding “no national security risk”; NVDA jumps 30%+. NVIDIA (NASDAQ: NVDA) today announced that effective immediately, Jensen Huang has been reinstated as President …",
    "via": "Techmeme"
+  },
+  {
+   "title": "“The NVIDIA Board of Directors has made the correct and proper decision to return Jensen Huang to t…",
+   "url": "https://x.com/WhiteHouse/status/2124872428723552741",
+   "source": "𝕏 @WhiteHouse",
+   "published_at": "2026-11-23T14:27:19Z",
+   "text": "“The NVIDIA Board of Directors has made the correct and proper decision to return Jensen Huang to the position of CEO… Congratulations to Jensen, the NVIDIA Board, to the People of the United States — and, indeed, the World!” - President DONALD J. TRUMP",
+   "author_name": "The White House",
+   "likes": 13521,
+   "story": "President Trump says Nvidia “made the correct and proper decision”, the US “needs Jensen's leadership”, and the US AG found no evidence of “unlawful conduct”"
+  },
+  {
+   "title": "Claude Code 2.1.330 released",
+   "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.330",
+   "source": "Claude Code releases",
+   "published_at": "2026-11-20T22:32:56Z",
+   "text": "Added sign-in to organizations managed in Anthropic's Enterprise Admin Console: after claude auth login, Claude Code applies the organization's settings and uses its cloud provider or gateway · Added easel, a built-in mod that draws charts when asked and under MCP metrics results, on Pro, Max and, where available, Team and Enterprise on macOS and Linux; turn automatic charts off in /config · Added CLAUDE_CODE_FULL_SIGN_IN_LINK=1 to print the full sign-in link, if the short one shows an error or a script reads values from it · Self-hosted runner: Added --start-dir / SELF_HOSTED_RUNNER_START_DI…"
   },
   {
    "title": "This is the most important thing OpenAI has published in awhile. We are providing a lot of transpar…",
@@ -17,15 +34,8 @@
    "published_at": "2026-11-22T17:12:27Z",
    "text": "This is the most important thing OpenAI has published in awhile. We are providing a lot of transparency into our pretraining progress and hope we can agree as a frield to common limits. I think that would be very wise and help ensure safety and control.",
    "author_name": "Sam Altman",
-   "likes": 10411,
+   "likes": 10506,
    "story": "OpenAI shares its models' “perplexity”, or how well they predict data, and urges pacing limits based on such metrics, citing a possible 2027 avalanche of gains"
-  },
-  {
-   "title": "Claude Code 2.1.330 released",
-   "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.330",
-   "source": "Claude Code releases",
-   "published_at": "2026-11-20T22:32:56Z",
-   "text": "Added sign-in to organizations managed in Anthropic's Enterprise Admin Console: after claude auth login, Claude Code applies the organization's settings and uses its cloud provider or gateway · Added easel, a built-in mod that draws charts when asked and under MCP metrics results, on Pro, Max and, where available, Team and Enterprise on macOS and Linux; turn automatic charts off in /config · Added CLAUDE_CODE_FULL_SIGN_IN_LINK=1 to print the full sign-in link, if the short one shows an error or a script reads values from it · Self-hosted runner: Added --start-dir / SELF_HOSTED_RUNNER_START_DI…"
   },
   {
    "title": "Arm CEO Rene Haas extends his contract through 2033 and will become SoftBank vice chair on December…",
@@ -40,26 +50,9 @@
    "url": "https://z.ai/blog/glm-5.4",
    "source": "Hacker News",
    "published_at": "2026-11-23T10:06:43Z",
-   "text": "530 points and 206 comments on Hacker News.",
-   "points": 530,
+   "text": "587 points and 225 comments on Hacker News.",
+   "points": 587,
    "discussion": "https://news.ycombinator.com/item?id=50609685"
-  },
-  {
-   "title": "President Trump says Nvidia “made the correct and proper decision”, the US “needs Jensen's leadersh…",
-   "url": "https://truthsocial.com/@realDonaldTrump/117666141823845971",
-   "source": "Donald J. Trump / @realDona…",
-   "published_at": "2026-11-23T14:12:48Z",
-   "text": "President Trump says Nvidia “made the correct and proper decision”, the US “needs Jensen's leadership”, and the US AG found no evidence of “unlawful conduct”. The NVIDIA Board of Directors has made the correct and proper decision to return Jensen Huang to the position of CEO.",
-   "via": "Techmeme"
-  },
-  {
-   "title": "A Beginner's Guide to Local AI with Inkling, Qwen, and Unsloth",
-   "url": "https://www.gpupartner.com/blog/beginners-guide-local-ai-inkling-qwen-unsloth",
-   "source": "Hacker News",
-   "published_at": "2026-11-22T21:01:16Z",
-   "text": "630 points and 261 comments on Hacker News.",
-   "points": 630,
-   "discussion": "https://news.ycombinator.com/item?id=50603845"
   },
   {
    "title": "Nvidia's board says it voted to reinstate Jensen Huang after receiving input from “senior levels” o…",
@@ -70,13 +63,46 @@
    "via": "Techmeme"
   },
   {
+   "title": "A Beginner's Guide to Local AI with Inkling, Qwen, and Unsloth",
+   "url": "https://www.gpupartner.com/blog/beginners-guide-local-ai-inkling-qwen-unsloth",
+   "source": "Hacker News",
+   "published_at": "2026-11-22T21:01:16Z",
+   "text": "639 points and 262 comments on Hacker News.",
+   "points": 639,
+   "discussion": "https://news.ycombinator.com/item?id=50603845"
+  },
+  {
+   "title": "Source: Trump dialed into Nvidia's board meeting to argue for Huang's return; a US official says he…",
+   "url": "https://www.semafor.com/article/11/23/2026/jensen-huang-reinstated-as-nvidia-ceo",
+   "source": "Semafor",
+   "published_at": "2026-11-23T15:15:49Z",
+   "text": "Source: Trump dialed into Nvidia's board meeting to argue for Huang's return; a US official says he “was totally involved” and “we have to protect our geniuses”. US President Donald Trump had dialed into Nvidia's board meeting to argue for Jensen Huang's return …",
+   "via": "Techmeme"
+  },
+  {
    "title": "Perplexity and Intelligence",
    "url": "https://openai.com/index/perplexity-and-intelligence/",
    "source": "Hacker News",
    "published_at": "2026-11-22T17:06:27Z",
-   "text": "640 points and 417 comments on Hacker News.",
-   "points": 640,
+   "text": "649 points and 418 comments on Hacker News.",
+   "points": 649,
    "discussion": "https://news.ycombinator.com/item?id=50601525"
+  },
+  {
+   "title": "President Trump says Jensen Huang “did nothing wrong”, Nvidia's board “did ask for assurance on the…",
+   "url": "https://www.cnbc.com/2026/11/23/trump-nvidia-jensen-huang.html",
+   "source": "Dan Mangan / CNBC",
+   "published_at": "2026-11-23T15:21:04Z",
+   "text": "President Trump says Jensen Huang “did nothing wrong”, Nvidia's board “did ask for assurance on the national security threat”, and he spoke to Xi about Huang. Choose CNBC as your preferred source on Google and never miss a moment from the most trusted name in business news.",
+   "via": "Techmeme"
+  },
+  {
+   "title": "Q&A with Bret Taylor on his long career, co-founding Sierra, working with ex-Googlers, X's influenc…",
+   "url": "https://colossus.com/article/bret-taylor-founder-guy/",
+   "source": "Dom Cooke / Colossus",
+   "published_at": "2026-11-23T13:11:14Z",
+   "text": "Q&A with Bret Taylor on his long career, co-founding Sierra, working with ex-Googlers, X's influence, AI call center agents, working as OpenAI chair, and more. A conversation with Bret Taylor, who has achieved nearly every feat in business except the one he says matters most — READ ON:",
+   "via": "Techmeme"
   },
   {
    "title": "A profile of siblings Dario and Daniela Amodei; while at OpenAI, Dario suggested immersive videogam…",
@@ -84,22 +110,6 @@
    "source": "Wall Street Journal",
    "published_at": "2026-11-23T00:45:41Z",
    "text": "A profile of siblings Dario and Daniela Amodei; while at OpenAI, Dario suggested immersive videogames might ease political strife from AI-induced joblessness. Dario and Daniela Amodei were on top of the biggest IPO ever Thursday-and a market rout one day later.",
-   "via": "Techmeme"
-  },
-  {
-   "title": "Oregon and Virginia sue SpaceX, alleging Grok Imagine's “spicy mode” violated consumer laws by crea…",
-   "url": "https://www.nytimes.com/2026/11/23/technology/spacex-lawsuit-ai-sexualized-images.html",
-   "source": "New York Times",
-   "published_at": "2026-11-23T13:55:50Z",
-   "text": "Oregon and Virginia sue SpaceX, alleging Grok Imagine's “spicy mode” violated consumer laws by creating 1.8M+ sexualized images of women and 65+ of children. The states accused Elon Musk's company of violating consumer protection laws with its Grok Imagine artificial intelligence tool, which created the images.",
-   "via": "Techmeme"
-  },
-  {
-   "title": "Bret Taylor's customer service AI startup Sierra says it's finalizing a $1.75B+ round led by Lights…",
-   "url": "https://www.bloomberg.com/news/articles/2026-11-23/bret-taylor-s-sierra-finalizing-more-than-1-75-billion-round",
-   "source": "Bloomberg",
-   "published_at": "2026-11-23T12:10:56Z",
-   "text": "Bret Taylor's customer service AI startup Sierra says it's finalizing a $1.75B+ round led by Lightspeed and Greenoaks at a $30B valuation, up from $15.8B in May. Sierra Technologies Inc., a startup that makes artificial intelligence software to automate customer service …",
    "via": "Techmeme"
   },
   {
@@ -111,19 +121,11 @@
    "via": "Techmeme"
   },
   {
-   "title": "After the FAA, Microsoft, and bank outages, DNI Jay Clayton says Americans should prepare for “bump…",
-   "url": "https://www.cnbc.com/2026/11/22/jay-clayton-tech-outages-faa-microsoft-thanksgiving.html",
-   "source": "Garrett Downs / CNBC",
-   "published_at": "2026-11-22T20:35:37Z",
-   "text": "After the FAA, Microsoft, and bank outages, DNI Jay Clayton says Americans should prepare for “bumps in the road” as systems are upgraded to adapt to the AI age. Director of National Intelligence Jay Clayton warned Americans to prepare for “bumps in the road” …",
-   "via": "Techmeme"
-  },
-  {
-   "title": "Marlowe, which develops cloud infrastructure and performance tools to optimize non-Nvidia AI chips,…",
-   "url": "https://www.bloomberg.com/news/articles/2026-11-23/marlowe-raises-277-million-to-bolster-alternatives-to-nvidia-chips",
-   "source": "Dina Bass / Bloomberg",
-   "published_at": "2026-11-23T12:15:46Z",
-   "text": "Marlowe, which develops cloud infrastructure and performance tools to optimize non-Nvidia AI chips, raised a $277M seed led by Accel at a $1.15B valuation. Marlowe, a six-month-old startup co-founded by two Microsoft Corp. vice presidents, has raised $277 million to pursue ways …",
+   "title": "Oregon and Virginia sue SpaceX, alleging Grok Imagine's “spicy mode” violated consumer laws by crea…",
+   "url": "https://www.nytimes.com/2026/11/23/technology/spacex-lawsuit-ai-sexualized-images.html",
+   "source": "New York Times",
+   "published_at": "2026-11-23T13:55:50Z",
+   "text": "Oregon and Virginia sue SpaceX, alleging Grok Imagine's “spicy mode” violated consumer laws by creating 1.8M+ sexualized images of women and 65+ of children",
    "via": "Techmeme"
   }
  ],
