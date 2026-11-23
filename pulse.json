@@ -1,31 +1,14 @@
 {
  "schema": 1,
- "generated_at": "2026-11-23T07:01:00Z",
+ "generated_at": "2026-11-23T07:32:27Z",
  "items": [
   {
-   "title": "A week after urging an Nvidia shake-up, Scott Bessent says Jensen Huang's return should depend on p…",
-   "url": "https://www.nytimes.com/2026/11/22/business/scott-bessent-jensen-huang-nvidia.html",
-   "source": "Alan Rappeport / New York T…",
-   "published_at": "2026-11-22T19:50:38Z",
-   "text": "A week after urging an Nvidia shake-up, Scott Bessent says Jensen Huang's return should depend on probes of its China chip sales and presses Nvidia for answers. The treasury secretary said on CBS that it was too soon to say if Jensen Huang should return as the company's chief executive.",
+   "title": "OpenAI shares its models' perplexity, or how well they predict data, and urges pacing limits based…",
+   "url": "https://openai.com/index/perplexity-and-intelligence",
+   "source": "Jakub Pachocki / OpenAI",
+   "published_at": "2026-11-22T18:25:38Z",
+   "text": "OpenAI shares its models' perplexity, or how well they predict data, and urges pacing limits based on such metrics, citing a possible 2027 avalanche of AI gains. - Difficulty of comparison across labs. … - Detachment from actionable evaluations. … - Not accounting for advances outside of pretraining.",
    "via": "Techmeme"
-  },
-  {
-   "title": "This is the most important thing OpenAI has published in awhile. We are providing a lot of transpar…",
-   "url": "https://x.com/sama/status/2124551594691932405",
-   "source": "𝕏 @sama",
-   "published_at": "2026-11-22T17:12:27Z",
-   "text": "This is the most important thing OpenAI has published in awhile. We are providing a lot of transparency into our pretraining progress and hope we can agree as a frield to common limits. I think that would be very wise and help ensure safety and control.",
-   "author_name": "Sam Altman",
-   "likes": 9111,
-   "story": "OpenAI shares its models' perplexity, or how well they predict data, and urges pacing limits based on such metrics, citing a possible 2027 avalanche of AI gains"
-  },
-  {
-   "title": "Claude Code 2.1.330 released",
-   "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.330",
-   "source": "Claude Code releases",
-   "published_at": "2026-11-20T22:32:56Z",
-   "text": "Added sign-in to organizations managed in Anthropic's Enterprise Admin Console: after claude auth login, Claude Code applies the organization's settings and uses its cloud provider or gateway · Added easel, a built-in mod that draws charts when asked and under MCP metrics results, on Pro, Max and, where available, Team and Enterprise on macOS and Linux; turn automatic charts off in /config · Added CLAUDE_CODE_FULL_SIGN_IN_LINK=1 to print the full sign-in link, if the short one shows an error or a script reads values from it · Self-hosted runner: Added --start-dir / SELF_HOSTED_RUNNER_START_DI…"
   },
   {
    "title": "In FSD V15, the Tesla AI computer re-renders reality with chevrons in the sky for turns like a vide…",
@@ -34,8 +17,15 @@
    "published_at": "2026-11-21T20:26:59Z",
    "text": "In FSD V15, the Tesla AI computer re-renders reality with chevrons in the sky for turns like a video game. You can tap any point on the reality revisualizer to make your car go there.",
    "author_name": "Elon Musk",
-   "likes": 42516,
+   "likes": 42608,
    "story": "Tesla rolls out FSD v15, featuring a photorealistic rendering of car surroundings; Elon Musk says it is real-time AI video generation without using game engines"
+  },
+  {
+   "title": "Claude Code 2.1.330 released",
+   "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.330",
+   "source": "Claude Code releases",
+   "published_at": "2026-11-20T22:32:56Z",
+   "text": "Added sign-in to organizations managed in Anthropic's Enterprise Admin Console: after claude auth login, Claude Code applies the organization's settings and uses its cloud provider or gateway · Added easel, a built-in mod that draws charts when asked and under MCP metrics results, on Pro, Max and, where available, Team and Enterprise on macOS and Linux; turn automatic charts off in /config · Added CLAUDE_CODE_FULL_SIGN_IN_LINK=1 to print the full sign-in link, if the short one shows an error or a script reads values from it · Self-hosted runner: Added --start-dir / SELF_HOSTED_RUNNER_START_DI…"
   },
   {
    "title": "A profile of siblings Dario and Daniela Amodei; while at OpenAI, Dario suggested immersive videogam…",
@@ -50,8 +40,8 @@
    "url": "https://www.gpupartner.com/blog/beginners-guide-local-ai-inkling-qwen-unsloth",
    "source": "Hacker News",
    "published_at": "2026-11-22T21:01:16Z",
-   "text": "410 points and 165 comments on Hacker News.",
-   "points": 410,
+   "text": "428 points and 174 comments on Hacker News.",
+   "points": 428,
    "discussion": "https://news.ycombinator.com/item?id=50603845"
   },
   {
@@ -70,13 +60,13 @@
    "via": "Techmeme"
   },
   {
-   "title": "Perplexity and Intelligence",
-   "url": "https://openai.com/index/perplexity-and-intelligence/",
+   "title": "Show HN: I built a game where you are an LLM's subagent",
+   "url": "https://github.com/gulivan/worker755",
    "source": "Hacker News",
-   "published_at": "2026-11-22T17:06:27Z",
-   "text": "550 points and 376 comments on Hacker News.",
-   "points": 550,
-   "discussion": "https://news.ycombinator.com/item?id=50601525"
+   "published_at": "2026-11-22T13:56:58Z",
+   "text": "309 points and 74 comments on Hacker News.",
+   "points": 309,
+   "discussion": "https://news.ycombinator.com/item?id=50599762"
   },
   {
    "title": "After FAA, Microsoft, and bank outages, DNI Jay Clayton says Americans should prepare for “bumps in…",
@@ -85,15 +75,6 @@
    "published_at": "2026-11-22T20:35:37Z",
    "text": "After FAA, Microsoft, and bank outages, DNI Jay Clayton says Americans should prepare for “bumps in the road” as systems are upgraded to adapt to the AI age. Director of National Intelligence Jay Clayton warned Americans to prepare for “bumps in the road” …",
    "via": "Techmeme"
-  },
-  {
-   "title": "Show HN: I built a game where you are an LLM's subagent",
-   "url": "https://github.com/gulivan/worker755",
-   "source": "Hacker News",
-   "published_at": "2026-11-22T13:56:58Z",
-   "text": "306 points and 74 comments on Hacker News.",
-   "points": 306,
-   "discussion": "https://news.ycombinator.com/item?id=50599762"
   },
   {
    "title": "Arva AI, which builds AI agents for banks' financial-crime compliance teams and counts Wise as a cu…",
@@ -112,11 +93,27 @@
    "via": "Techmeme"
   },
   {
+   "title": "Chinese physical AI startup Simplexity Robotics raised a $100M pre-Series A led by Ant Group, with…",
+   "url": "https://www.bloomberg.com/news/articles/2026-11-22/ant-group-bets-on-simplexity-to-thrive-in-china-s-humanoid-race",
+   "source": "Saritha Rai / Bloomberg",
+   "published_at": "2026-11-23T07:02:24Z",
+   "text": "Chinese physical AI startup Simplexity Robotics raised a $100M pre-Series A led by Ant Group, with Alibaba, Tencent, and others joining, at a $1.6B valuation. Chinese physical AI startup Simplexity Robotics received $100 million in a funding round led by Jack Ma-backed Ant Group Co. …",
+   "via": "Techmeme"
+  },
+  {
    "title": "London-based Alecto, which uses AI and legal experts to help consumers understand UK property law,…",
    "url": "https://siliconangle.com/2026/11/16/alecto-raises-20m-seed-funding-to-make-uk-property-law-more-accessible-to-consumers-with-ai/",
    "source": "Kyt Dotson / SiliconANGLE",
    "published_at": "2026-11-23T05:31:38Z",
    "text": "London-based Alecto, which uses AI and legal experts to help consumers understand UK property law, raised $20M in seed funding led by Insight Partners. Alecto Conveyancing Ltd., a London-based artificial intelligence-native law firm, today announced it raised $20 million in seed funding led …",
+   "via": "Techmeme"
+  },
+  {
+   "title": "GPT-6.2 Astra vs. Claude Fable 5.2 hands-on: nearly tied on three custom accounting, coding, and da…",
+   "url": "https://thenewstack.io/gpt-6-2-astra-vs-claude-fable-5-2/",
+   "source": "Jessica Wachtel / The New S…",
+   "published_at": "2026-11-23T01:45:52Z",
+   "text": "GPT-6.2 Astra vs. Claude Fable 5.2 hands-on: nearly tied on three custom accounting, coding, and data tasks, but Fable used far more tokens and cost 5x+ as much. When I compared Anthropic's Fable 5.2 vs. OpenAI's GPT-6 Astra last week, Fable 5.2 was slightly more accurate (149 points vs. 145).",
    "via": "Techmeme"
   },
   {
