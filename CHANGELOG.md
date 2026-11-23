@@ -1,5 +1,15 @@
 # Changelog
 
+## 0.27.0 (2026-11-23): banked resets on line 2
+
+- **How many resets you have banked, and when the next one expires.** If your `usage_command`
+  adds `"banked_resets":{"available":3,"next_expires_at":"..."}` to the line it prints, line 2
+  shows `3 resets banked · next expires in 16d 3h`. It is highlighted when the next one expires
+  within three days, so a reset is used rather than lost. On a narrow screen it shortens to
+  `3 resets banked`, then `3 resets`, and it goes before a window loses its timing or clock
+  time. The `/g-line` pane lists it under the usage windows. Nothing shows with none banked or
+  without the key, and g-line never redeems a reset. See docs/configuration.md.
+
 ## 0.26.1 (2026-11-17): notices stay out of the way of the figures
 
 - **The notice marker no longer pushes figures off line 2.** On a narrow screen with a long account name it could cost the windows their reset timings or clock times. It now narrows one step further, to `⚠ 2`, and gives way to the timings and clock times before anything else.

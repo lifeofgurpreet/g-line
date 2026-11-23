@@ -91,6 +91,19 @@ spent in a session on another machine shows here and the guard acts on it. Failu
 output change nothing. g-line makes no network call itself; whatever the command fetches is its
 own doing.
 
+The same line may also say how many rate-limit resets the account has banked, if your provider
+gives them and your command can read them:
+
+```json
+{"seven_day":{"used_percentage":70,"resets_at":"2026-10-27T00:00:00Z"},"banked_resets":{"available":3,"next_expires_at":"2026-12-10T22:00:00Z"}}
+```
+
+Line 2 then shows `3 resets banked · next expires in 16d 3h` where there is room (it shortens to
+`3 resets banked`, then `3 resets`, and goes before a window loses its timing), highlighted when the
+next one expires within three days, and the `/g-line` pane lists it under the usage windows.
+`available` is a whole number; `next_expires_at` is optional. With none banked, or without the
+key, nothing is shown. g-line only shows the count: it never redeems a reset.
+
 Within one window, the newest reading wins: this session's own (as of its last response),
 another session's on the same account, or the command's. If your command's source lags, add
 when each figure was read, `"observed_at":"2026-10-23T11:42:00Z"`, inside the window's object;

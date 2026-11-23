@@ -21,7 +21,8 @@ import { SEP, alerts, clock, duration, layoutKeys, modelName, pct, segments, str
 import type { Limit } from './roster'
 import { inForce, keepsLast, noticeRows, noticeSegment, readNotices, runFailure, toastFor, toastsDue } from './notices'
 import type { Notice, NoticeSeen, NoticesFailure } from './notices'
-import { LIMITS_PREFIX, ROSTER_PREFIX, mergeLimits, parseUsage, othersSegment, rosterOf, rosterRow, staleRosterKeys } from './roster'
+import { LIMITS_PREFIX, ROSTER_PREFIX, bankedSegment, bankedWords, mergeLimits, parseBanked, parseUsage, othersSegment, rosterOf, rosterRow, staleRosterKeys } from './roster'
+import type { Banked } from './roster'
 import type { RosterEntry, RosterState } from './roster'
 import type { Options, Payload, Preset, Segment, Tone } from './core'
 import {
@@ -502,6 +503,8 @@ let shared: { account: string; limits: unknown } | undefined
 
 /** What the person's `usage_command` last printed, for the account it was read under. */
 let fed: { account: string; limits: Limit[] } | undefined
+/** The banked resets `usage_command` last printed, for the account it was read under. */
+let fedBanked: { account: string; banked: Banked } | undefined
 /** What `notices_command` last printed, and when it last ran (ms). */
 let notices: Notice[] = []
 let noticesAt = 0
@@ -548,9 +551,12 @@ async function refreshUsage($: EngineInterface): Promise<void> {
     }
     const run = await $.process.run(command, { timeoutMs: 5000 })
     if (run.exitCode !== 0) return
+    const key = accountKey(account)
+    // A good run that names no banked resets clears the last count: it may have been used.
+    const banked = parseBanked(run.stdout)
+    fedBanked = banked ? { account: key, banked } : undefined
     const limits = parseUsage(run.stdout, Math.floor(now / 1000))
     if (!limits) return
-    const key = accountKey(account)
     const at = (await nowMs($)) / 1000
     fed = { account: key, limits: mergeLimits(fed?.account === key ? fed.limits : [], limits, at) }
     const s = await read($, snap)
@@ -1336,6 +1342,12 @@ function layoutHas(key: string): boolean {
 
 type Extras = Partial<Record<string, Segment | undefined>>
 
+/** The banked resets `usage_command` reported for the account this session is on. */
+function bankedFor(account: string | null | undefined): Banked | undefined {
+  if (!config.usageCommand || !config.accountCommand || !account || !fedBanked) return undefined
+  return fedBanked.account === accountKey(account) ? fedBanked.banked : undefined
+}
+
 async function extrasNow($: EngineInterface): Promise<Extras> {
   const l = await read($, ledgerAtom)
   return {
@@ -1345,6 +1357,7 @@ async function extrasNow($: EngineInterface): Promise<Extras> {
     guard: await guardSegment($),
     resume: await resumeSegment($),
     others: config.roster ? othersSegment(others) : undefined,
+    banked: bankedSegment(bankedFor((await read($, snap)).account), await nowSeconds($)),
     notices: noticeSegment(await noticesNow($)),
   }
 }
@@ -1452,6 +1465,12 @@ async function detailRows($: EngineInterface, seconds: number, columns?: number)
       const at = l.resetsAt ?? 0
       rows.push({ key: `w-${l.kind}`, text: `${l.kind === 'five_hour' ? '5-hour' : 'weekly'} ${pct(l.percentUsed)} used, resets ${clock(at, seconds, offsetAt(seconds * 1000))} (in ${ago((at - seconds) * 1000)})` })
     }
+  }
+  const banked = bankedFor(s.account)
+  if (banked && banked.count > 0) {
+    const words = bankedWords(banked, seconds)
+    const when = words.expires ? `, ${words.expires}` : ''
+    rows.push({ key: 'w-banked', ...(words.soon ? { tone: 'warn' as const } : {}), text: `${words.count}${when}` })
   }
   if (resumePlan) {
     rows.push({ key: 'w-resume', tone: 'accent', text: `"${config.guard.resume?.text ?? 'continue'}" goes at ${clock(Math.floor(resumePlan.at / 1000), seconds, offsetAt(seconds * 1000))}, after the reset (/g-line guard cancel)` })
@@ -3118,7 +3137,7 @@ export const register: Register = (on, options) => {
       // label the engine draws before the hint is the engine's: a mod can
       // shorten the hint's words but not that label.
       const columns = e.viewport?.columns
-      const extra = [extras.notices, extras.guard, extras.resume, warmSegment(), extras.agents, extras.others, extras.compact, config.budget ? extras.today : undefined, config.git ? gitSegmentOf(s.git) : undefined, accountSegment(s.account)]
+      const extra = [extras.notices, extras.guard, extras.resume, warmSegment(), extras.agents, extras.others, extras.banked, extras.compact, config.budget ? extras.today : undefined, config.git ? gitSegmentOf(s.git) : undefined, accountSegment(s.account)]
         .filter((one): one is Segment => one !== undefined)
       // The hint stays whole here: a rewritten hint has the engine draw its
       // mode label in a column of its own, which would squeeze line 2 into

@@ -1,6 +1,6 @@
 import { expect, test } from 'claude-code/testing'
 
-import { mergeLimits, parseUsage, othersSegment, rosterOf, rosterRow, staleRosterKeys } from '../hooks/roster'
+import { bankedSegment, mergeLimits, parseBanked, parseUsage, othersSegment, rosterOf, rosterRow, staleRosterKeys } from '../hooks/roster'
 import { parseGuard, resumeAt } from '../hooks/guard'
 
 const NOW = Date.parse('2026-10-21T06:00:00Z')
@@ -104,4 +104,32 @@ test('parseUsage reads the first line as JSON and nothing else', () => {
   expect(parseUsage('')).toBeUndefined()
   expect(parseUsage('{"five_hour":{"used_percentage":"9","resets_at":"2026-10-23T12:00:00Z"}}')).toBeUndefined()
   expect(parseUsage('{"five_hour":{"used_percentage":9,"resets_at":"soon"}}')).toBeUndefined()
+})
+
+test('parseBanked reads the banked resets beside the windows, or nothing', () => {
+  const windows = '"seven_day":{"used_percentage":21,"resets_at":"2026-10-28T00:00:00Z"}'
+  expect(parseBanked(`{${windows},"banked_resets":{"available":3,"next_expires_at":"2026-11-06T22:00:00Z"}}`))
+    .toEqual({ count: 3, expiresAt: Date.parse('2026-11-06T22:00:00Z') / 1000 })
+  expect(parseBanked('{"banked_resets":{"available":0}}')).toEqual({ count: 0 })
+  expect(parseBanked('{"banked_resets":{"available":2,"next_expires_at":"soon"}}')).toEqual({ count: 2 })
+  // The windows still parse with the extra key beside them.
+  expect(parseUsage(`{${windows},"banked_resets":{"available":3}}`, 1)?.length).toBe(1)
+  for (const bad of [`{${windows}}`, '{"banked_resets":3}', '{"banked_resets":{"available":"3"}}', '{"banked_resets":{"available":-1}}',
+    '{"banked_resets":{"available":1.5}}', 'not json', '']) {
+    expect(parseBanked(bad)).toBeUndefined()
+  }
+})
+
+test('line 2 says how many resets are banked and when the next one expires; highlighted inside three days', () => {
+  const now = NOW / 1000
+  expect(bankedSegment({ count: 3, expiresAt: now + 16 * 86400 + 3 * 3600 + 120 }, now)).toEqual(
+    { key: 'banked', priority: 28, forms: ['3 resets banked · next expires in 16d 3h', '3 resets banked', '3 resets'] })
+  expect(bankedSegment({ count: 1, expiresAt: now + 2 * 86400 }, now)).toEqual(
+    { key: 'banked', priority: 45, tone: 'accent', forms: ['1 reset banked · expires in 2d', '1 reset banked', '1 reset'] })
+  // No expiry, or one already past: the count alone.
+  expect(bankedSegment({ count: 2 }, now)?.forms).toEqual(['2 resets banked', '2 resets'])
+  expect(bankedSegment({ count: 2, expiresAt: now - 60 }, now)?.forms).toEqual(['2 resets banked', '2 resets'])
+  // None banked, or none reported: nothing on the line.
+  expect(bankedSegment({ count: 0 }, now)).toBeUndefined()
+  expect(bankedSegment(undefined, now)).toBeUndefined()
 })

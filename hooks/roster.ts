@@ -71,6 +71,56 @@ export function othersSegment(others: readonly RosterEntry[]): Segment | undefin
   return { key: 'others', priority: 30, forms: [n] }
 }
 
+/** Banked rate-limit resets a `usage_command` reported: how many are available, and when the next one expires (seconds). */
+export type Banked = { count: number; expiresAt?: number }
+
+/**
+ * The banked resets a `usage_command` printed beside its windows, on the same
+ * first line: `"banked_resets":{"available":3,"next_expires_at":"ISO"}`. The
+ * count is the provider's, as the command read it; the expiry is optional.
+ * Anything else is no reading (undefined).
+ */
+export function parseBanked(stdout: string): Banked | undefined {
+  try {
+    const parsed: unknown = JSON.parse(stdout.split('\n')[0] ?? '')
+    if (!parsed || typeof parsed !== 'object') return undefined
+    const b = (parsed as Record<string, unknown>).banked_resets
+    if (!b || typeof b !== 'object') return undefined
+    const { available, next_expires_at: at } = b as { available?: unknown; next_expires_at?: unknown }
+    if (typeof available !== 'number' || !Number.isInteger(available) || available < 0 || available > 999) return undefined
+    const expiresAt = typeof at === 'string' ? Date.parse(at) / 1000 : NaN
+    return { count: available, ...(Number.isFinite(expiresAt) ? { expiresAt: Math.floor(expiresAt) } : {}) }
+  } catch {
+    return undefined
+  }
+}
+
+/** A banked reset expiring inside this many seconds is worth using first: three days. */
+export const BANKED_SOON = 3 * 86_400
+
+/** `3 resets banked`, and when the next one expires while that is still ahead. */
+export function bankedWords(b: Banked, nowSeconds: number): { count: string; expires?: string; soon: boolean } {
+  const count = `${b.count} ${b.count === 1 ? 'reset' : 'resets'} banked`
+  const left = b.expiresAt !== undefined ? b.expiresAt - nowSeconds : undefined
+  if (left === undefined || left <= 0) return { count, soon: false }
+  return { count, expires: `${b.count === 1 ? 'expires' : 'next expires'} in ${duration(left)}`, soon: left <= BANKED_SOON }
+}
+
+/**
+ * Line 2's `3 resets banked · next expires in 16d 3h`: only when the command
+ * reported at least one. Highlighted (`accent`, not a warning) when the next
+ * one expires within three days, so it is used rather than lost. A warning
+ * would be kept at every width, and this must never cost a window its timing
+ * or clock time: it goes first.
+ */
+export function bankedSegment(b: Banked | undefined, nowSeconds: number): Segment | undefined {
+  if (!b || b.count <= 0) return undefined
+  const words = bankedWords(b, nowSeconds)
+  const short = `${b.count} ${b.count === 1 ? 'reset' : 'resets'}`
+  const forms = words.expires ? [`${words.count} · ${words.expires}`, words.count, short] : [words.count, short]
+  return words.soon ? { key: 'banked', priority: 45, tone: 'accent', forms } : { key: 'banked', priority: 28, forms }
+}
+
 /** How long, in line 2's spelling: `8h 45m`, `1d 2h`. */
 const ago = (ms: number) => duration(ms / 1000)
 

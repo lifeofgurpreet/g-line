@@ -2,6 +2,7 @@ import { expect, test } from 'claude-code/testing'
 
 import { accountSegment, joined, tailRoom } from '../hooks/inline'
 import { deck, nextRoom, nextRows } from '../hooks/deck'
+import { bankedSegment } from '../hooks/roster'
 import { width } from '../hooks/core'
 import type { Payload, Segment } from '../hooks/core'
 
@@ -128,4 +129,29 @@ test('the matrix, as the person sees it on a phone, a herdr pane and a desktop',
   expect(lines(calm, 120)).toEqual(expect.objectContaining({ now: 'ctx 17% · 5h 3% · wk 30%', rows: [
     'Opus 5.5 xhigh · cache ~59m (191k) · 5h resets in 8h 45m (21:45) · wk resets in 2d 9h (Fri 22:00) · me@example.com',
   ] }))
+})
+
+test('banked resets show where there is room and never cost a window its timing or clock time', async () => {
+  const banked = bankedSegment({ count: 3, expiresAt: NOW + 16 * 24 * H + 3 * H }, NOW)!
+  const soon = bankedSegment({ count: 1, expiresAt: NOW + 2 * 24 * H }, NOW)!
+  for (const extra of [banked, soon]) {
+    for (const columns of WIDTHS) {
+      const d = deck(calm, MINE, { now: tailRoom(columns, HINT), next: nextRoom(columns), rows: nextRows(columns) }, [...extras(), extra])
+      const rows = [d.next, ...d.more].map(joined)
+      const all = [joined(d.now), ...rows].join(' · ')
+      expect(rows.length).toBeLessThanOrEqual(nextRows(columns))
+      for (const row of rows) expect(width(row)).toBeLessThanOrEqual(nextRoom(columns) ?? 0)
+      // Whatever the line showed without it, it still shows with it.
+      const without = lines(calm, columns)
+      const before = [without.now, ...without.rows].join(' · ')
+      for (const figure of ['Opus', 'cache', 'me@example.com', 'ctx 17%', '5h 3%', 'wk 30%', '8h 45m', '2d 9h', '21:45', 'Fri 22:00']) {
+        if (before.includes(figure)) expect(`${columns}: ${all}`).toContain(figure)
+      }
+    }
+  }
+  // A full desktop line has room for the count; with fewer extras, for the expiry too.
+  const full = deck(calm, MINE, { now: tailRoom(220, HINT), next: nextRoom(220), rows: nextRows(220) }, [...extras(), banked])
+  expect(joined(full.next)).toContain('3 resets banked')
+  const wide = deck(calm, MINE, { now: tailRoom(220, HINT), next: nextRoom(220), rows: nextRows(220) }, [banked])
+  expect(joined(wide.next)).toContain('3 resets banked · next expires in 16d 3h')
 })
