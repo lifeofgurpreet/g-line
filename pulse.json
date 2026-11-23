@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-23T05:13:51Z",
+ "generated_at": "2026-11-23T05:55:54Z",
  "items": [
   {
    "title": "OpenAI shares its models' perplexity, or how well they predict data, and urges pacing limits based…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-21T20:26:59Z",
    "text": "In FSD V15, the Tesla AI computer re-renders reality with chevrons in the sky for turns like a video game. You can tap any point on the reality revisualizer to make your car go there.",
    "author_name": "Elon Musk",
-   "likes": 42229,
+   "likes": 42318,
    "story": "Tesla rolls out FSD v15, featuring a photorealistic rendering of car surroundings; Elon Musk says it is real-time AI video generation without using game engines"
   },
   {
@@ -40,8 +40,8 @@
    "url": "https://www.gpupartner.com/blog/beginners-guide-local-ai-inkling-qwen-unsloth",
    "source": "Hacker News",
    "published_at": "2026-11-22T21:01:16Z",
-   "text": "360 points and 145 comments on Hacker News.",
-   "points": 360,
+   "text": "372 points and 154 comments on Hacker News.",
+   "points": 372,
    "discussion": "https://news.ycombinator.com/item?id=50603845"
   },
   {
@@ -64,17 +64,9 @@
    "url": "https://github.com/gulivan/worker755",
    "source": "Hacker News",
    "published_at": "2026-11-22T13:56:58Z",
-   "text": "296 points and 69 comments on Hacker News.",
-   "points": 296,
+   "text": "297 points and 72 comments on Hacker News.",
+   "points": 297,
    "discussion": "https://news.ycombinator.com/item?id=50599762"
-  },
-  {
-   "title": "After FAA, Microsoft, and bank outages, DNI Jay Clayton says Americans should prepare for “bumps in…",
-   "url": "https://www.cnbc.com/2026/11/22/jay-clayton-tech-outages-faa-microsoft-thanksgiving.html",
-   "source": "Garrett Downs / CNBC",
-   "published_at": "2026-11-22T20:35:37Z",
-   "text": "After FAA, Microsoft, and bank outages, DNI Jay Clayton says Americans should prepare for “bumps in the road” as systems are upgraded to adapt to the AI age. Director of National Intelligence Jay Clayton warned Americans to prepare for “bumps in the road” …",
-   "via": "Techmeme"
   },
   {
    "title": "Alexandr Wang says the Riemann Hypothesis proof shows AI will surpass humans in every field, includ…",
@@ -85,11 +77,11 @@
    "via": "Techmeme"
   },
   {
-   "title": "Researchers used canary credentials in requests to AI routers like OpenRouter and Vercel, even unde…",
-   "url": "https://arstechnica.com/security/2026/11/a-leaky-ai-supply-chain-is-exposing-secret-user-data-at-an-alarming-rate/",
-   "source": "Dan Goodin / Ars Technica",
-   "published_at": "2026-11-21T20:11:12Z",
-   "text": "Researchers used canary credentials in requests to AI routers like OpenRouter and Vercel, even under “ZDR” policies, and saw “privacy” often broken, keys stolen",
+   "title": "After FAA, Microsoft, and bank outages, DNI Jay Clayton says Americans should prepare for “bumps in…",
+   "url": "https://www.cnbc.com/2026/11/22/jay-clayton-tech-outages-faa-microsoft-thanksgiving.html",
+   "source": "Garrett Downs / CNBC",
+   "published_at": "2026-11-22T20:35:37Z",
+   "text": "After FAA, Microsoft, and bank outages, DNI Jay Clayton says Americans should prepare for “bumps in the road” as systems are upgraded to adapt to the AI age. Director of National Intelligence Jay Clayton warned Americans to prepare for “bumps in the road” …",
    "via": "Techmeme"
   },
   {
@@ -98,6 +90,14 @@
    "source": "Ryan Lawler / Axios",
    "published_at": "2026-11-23T03:26:28Z",
    "text": "Arva AI, which builds AI agents for banks' financial-crime compliance teams and counts Wise as a customer, raised a $20M Series A led by Arthur Ventures",
+   "via": "Techmeme"
+  },
+  {
+   "title": "London-based Alecto, which uses AI and legal experts to help consumers understand UK property law,…",
+   "url": "https://siliconangle.com/2026/11/16/alecto-raises-20m-seed-funding-to-make-uk-property-law-more-accessible-to-consumers-with-ai/",
+   "source": "Kyt Dotson / SiliconANGLE",
+   "published_at": "2026-11-23T05:31:38Z",
+   "text": "London-based Alecto, which uses AI and legal experts to help consumers understand UK property law, raised $20M in seed funding led by Insight Partners. Alecto Conveyancing Ltd., a London-based artificial intelligence-native law firm, today announced it raised $20 million in seed funding led …",
    "via": "Techmeme"
   },
   {
@@ -121,7 +121,7 @@
    "url": "https://www.reuters.com/world/like-spacex-anthropic-ran-an-unusual-ipo-process-chafing-some-bankers-2026-11-22/",
    "source": "Reuters",
    "published_at": "2026-11-22T17:15:38Z",
-   "text": "Sources: amid leak fears, Anthropic limited some IPO banks to four-person teams, used a view-logging file platform, and sought six-month bans on advising rivals. For the second time this year, Wall Street bankers and lawyers took home a massive paycheck from a record-setting initial public offering.",
+   "text": "Sources: amid leak fears, Anthropic limited some IPO banks to four-person teams, used a view-logging file platform, and sought six-month bans on advising rivals",
    "via": "Techmeme"
   }
  ],
