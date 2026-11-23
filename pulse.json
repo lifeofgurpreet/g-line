@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-23T07:32:27Z",
+ "generated_at": "2026-11-23T08:05:31Z",
  "items": [
   {
    "title": "OpenAI shares its models' perplexity, or how well they predict data, and urges pacing limits based…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-21T20:26:59Z",
    "text": "In FSD V15, the Tesla AI computer re-renders reality with chevrons in the sky for turns like a video game. You can tap any point on the reality revisualizer to make your car go there.",
    "author_name": "Elon Musk",
-   "likes": 42608,
+   "likes": 42703,
    "story": "Tesla rolls out FSD v15, featuring a photorealistic rendering of car surroundings; Elon Musk says it is real-time AI video generation without using game engines"
   },
   {
@@ -40,8 +40,8 @@
    "url": "https://www.gpupartner.com/blog/beginners-guide-local-ai-inkling-qwen-unsloth",
    "source": "Hacker News",
    "published_at": "2026-11-22T21:01:16Z",
-   "text": "428 points and 174 comments on Hacker News.",
-   "points": 428,
+   "text": "452 points and 183 comments on Hacker News.",
+   "points": 452,
    "discussion": "https://news.ycombinator.com/item?id=50603845"
   },
   {
@@ -77,11 +77,11 @@
    "via": "Techmeme"
   },
   {
-   "title": "Arva AI, which builds AI agents for banks' financial-crime compliance teams and counts Wise as a cu…",
-   "url": "https://www.axios.com/pro/fintech-deals/2026/11/17/arva-ai-20-million-series-a-bank-compliance",
-   "source": "Ryan Lawler / Axios",
-   "published_at": "2026-11-23T03:26:28Z",
-   "text": "Arva AI, which builds AI agents for banks' financial-crime compliance teams and counts Wise as a customer, raised a $20M Series A led by Arthur Ventures. Arva AI, which builds AI agents for banks' financial-crime compliance teams, has raised $20 million in Series A funding, CEO Rhim Shah tells Axios Pro exclusively.",
+   "title": "Chinese physical AI startup Simplexity Robotics raised a $100M pre-Series A led by Ant Group, with…",
+   "url": "https://www.bloomberg.com/news/articles/2026-11-22/ant-group-bets-on-simplexity-to-thrive-in-china-s-humanoid-race",
+   "source": "Saritha Rai / Bloomberg",
+   "published_at": "2026-11-23T07:02:24Z",
+   "text": "Chinese physical AI startup Simplexity Robotics raised a $100M pre-Series A led by Ant Group, with Alibaba, Tencent, and others joining, at a $1.6B valuation. Chinese physical AI startup Simplexity Robotics received $100 million in a funding round led by Jack Ma-backed Ant Group Co. …",
    "via": "Techmeme"
   },
   {
@@ -93,11 +93,11 @@
    "via": "Techmeme"
   },
   {
-   "title": "Chinese physical AI startup Simplexity Robotics raised a $100M pre-Series A led by Ant Group, with…",
-   "url": "https://www.bloomberg.com/news/articles/2026-11-22/ant-group-bets-on-simplexity-to-thrive-in-china-s-humanoid-race",
-   "source": "Saritha Rai / Bloomberg",
-   "published_at": "2026-11-23T07:02:24Z",
-   "text": "Chinese physical AI startup Simplexity Robotics raised a $100M pre-Series A led by Ant Group, with Alibaba, Tencent, and others joining, at a $1.6B valuation. Chinese physical AI startup Simplexity Robotics received $100 million in a funding round led by Jack Ma-backed Ant Group Co. …",
+   "title": "Arva AI, which builds AI agents for banks' financial-crime compliance teams and counts Wise as a cu…",
+   "url": "https://www.axios.com/pro/fintech-deals/2026/11/17/arva-ai-20-million-series-a-bank-compliance",
+   "source": "Ryan Lawler / Axios",
+   "published_at": "2026-11-23T03:26:28Z",
+   "text": "Arva AI, which builds AI agents for banks' financial-crime compliance teams and counts Wise as a customer, raised a $20M Series A led by Arthur Ventures",
    "via": "Techmeme"
   },
   {
@@ -117,11 +117,11 @@
    "via": "Techmeme"
   },
   {
-   "title": "Jony Ive, ex-OpenAI product designer Joey Flynn, and others on Silicon Valley's obsession with “tas…",
-   "url": "https://www.nytimes.com/2026/11/20/magazine/ai-slop-taste-aesthetic-silicon-valley.html?unlocked_article_code=1.SFE.1a6T.-kpbFF_tJYZx&smid=url-share",
-   "source": "Jonah Weiner / New York Tim…",
-   "published_at": "2026-11-22T15:01:07Z",
-   "text": "Jony Ive, ex-OpenAI product designer Joey Flynn, and others on Silicon Valley's obsession with “taste” as a moat against AI slop and whether AI can learn it. To move through A.I.-era San Francisco as a relatively normal person is to confront the sheer volume of bewildering concepts that tech has lately thrust upon us.",
+   "title": "Sources: amid leak fears, Anthropic limited some IPO banks to four-person teams, used a view-loggin…",
+   "url": "https://www.reuters.com/world/like-spacex-anthropic-ran-an-unusual-ipo-process-chafing-some-bankers-2026-11-22/",
+   "source": "Reuters",
+   "published_at": "2026-11-22T17:15:38Z",
+   "text": "Sources: amid leak fears, Anthropic limited some IPO banks to four-person teams, used a view-logging file platform, and sought six-month bans on advising rivals",
    "via": "Techmeme"
   }
  ],
