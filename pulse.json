@@ -1,14 +1,24 @@
 {
  "schema": 1,
- "generated_at": "2026-11-23T13:58:15Z",
+ "generated_at": "2026-11-23T14:31:22Z",
  "items": [
   {
-   "title": "OpenAI shares its models' “perplexity”, or how well they predict data, and urges pacing limits base…",
-   "url": "https://openai.com/index/perplexity-and-intelligence",
-   "source": "Jakub Pachocki / OpenAI",
-   "published_at": "2026-11-22T18:25:38Z",
-   "text": "OpenAI shares its models' “perplexity”, or how well they predict data, and urges pacing limits based on such metrics, citing a possible 2027 avalanche of gains. - Difficulty of comparison across labs. … - Detachment from actionable evaluations. … - Not accounting for advances outside of pretraining.",
+   "title": "Nvidia's board unanimously votes to reinstate Jensen Huang as CEO, president, and board director, a…",
+   "url": "https://nvidianews.nvidia.com/news/nvidia-board-reinstates-jensen-huang-as-president-ceo-and-board-director",
+   "source": "Nvidia Newsroom",
+   "published_at": "2026-11-23T14:04:07Z",
+   "text": "Nvidia's board unanimously votes to reinstate Jensen Huang as CEO, president, and board director, after finding “no national security risk”; NVDA jumps 30%+. SANTA CLARA, Calif., Nov. 23, 2026 NVIDIA (NASDAQ: NVDA) today announced that effective immediately …",
    "via": "Techmeme"
+  },
+  {
+   "title": "This is the most important thing OpenAI has published in awhile. We are providing a lot of transpar…",
+   "url": "https://x.com/sama/status/2124551594691932405",
+   "source": "𝕏 @sama",
+   "published_at": "2026-11-22T17:12:27Z",
+   "text": "This is the most important thing OpenAI has published in awhile. We are providing a lot of transparency into our pretraining progress and hope we can agree as a frield to common limits. I think that would be very wise and help ensure safety and control.",
+   "author_name": "Sam Altman",
+   "likes": 10326,
+   "story": "OpenAI shares its models' “perplexity”, or how well they predict data, and urges pacing limits based on such metrics, citing a possible 2027 avalanche of gains"
   },
   {
    "title": "Claude Code 2.1.330 released",
@@ -18,21 +28,21 @@
    "text": "Added sign-in to organizations managed in Anthropic's Enterprise Admin Console: after claude auth login, Claude Code applies the organization's settings and uses its cloud provider or gateway · Added easel, a built-in mod that draws charts when asked and under MCP metrics results, on Pro, Max and, where available, Team and Enterprise on macOS and Linux; turn automatic charts off in /config · Added CLAUDE_CODE_FULL_SIGN_IN_LINK=1 to print the full sign-in link, if the short one shows an error or a script reads values from it · Self-hosted runner: Added --start-dir / SELF_HOSTED_RUNNER_START_DI…"
   },
   {
-   "title": "Z.ai launches GLM-5.4, a 750B-parameter flagship model built on its Loop Transformer architecture,…",
-   "url": "https://z.ai/blog/glm-5.4",
-   "source": "Z.ai",
-   "published_at": "2026-11-23T10:51:36Z",
-   "text": "Z.ai launches GLM-5.4, a 750B-parameter flagship model built on its Loop Transformer architecture, reaching intelligence levels comparable to 2T-3T models. Over the past three months, we have aggressively scaled both loop depth and model size in parallel. The first surprise came from the Loop Transformer architecture itself.",
+   "title": "President Trump says Nvidia “made the correct and proper decision”, the US “needs Jensen's leadersh…",
+   "url": "https://truthsocial.com/@realDonaldTrump/117666141823845971",
+   "source": "Donald J. Trump / @realDona…",
+   "published_at": "2026-11-23T14:12:48Z",
+   "text": "President Trump says Nvidia “made the correct and proper decision”, the US “needs Jensen's leadership”, and the US AG found no evidence of “unlawful conduct”. The NVIDIA Board of Directors has made the correct and proper decision to return Jensen Huang to the position of CEO.",
    "via": "Techmeme"
   },
   {
-   "title": "A Beginner's Guide to Local AI with Inkling, Qwen, and Unsloth",
-   "url": "https://www.gpupartner.com/blog/beginners-guide-local-ai-inkling-qwen-unsloth",
+   "title": "GLM-5.4: Toward Generalized Coding with Our First Loop Transformer",
+   "url": "https://z.ai/blog/glm-5.4",
    "source": "Hacker News",
-   "published_at": "2026-11-22T21:01:16Z",
-   "text": "601 points and 249 comments on Hacker News.",
-   "points": 601,
-   "discussion": "https://news.ycombinator.com/item?id=50603845"
+   "published_at": "2026-11-23T10:06:43Z",
+   "text": "459 points and 186 comments on Hacker News.",
+   "points": 459,
+   "discussion": "https://news.ycombinator.com/item?id=50609685"
   },
   {
    "title": "A profile of siblings Dario and Daniela Amodei; while at OpenAI, Dario suggested immersive videogam…",
@@ -43,21 +53,30 @@
    "via": "Techmeme"
   },
   {
-   "title": "Show HN: I built a game where you are an LLM's subagent",
-   "url": "https://github.com/gulivan/worker755",
+   "title": "A Beginner's Guide to Local AI with Inkling, Qwen, and Unsloth",
+   "url": "https://www.gpupartner.com/blog/beginners-guide-local-ai-inkling-qwen-unsloth",
    "source": "Hacker News",
-   "published_at": "2026-11-22T13:56:58Z",
-   "text": "340 points and 80 comments on Hacker News.",
-   "points": 340,
-   "discussion": "https://news.ycombinator.com/item?id=50599762"
+   "published_at": "2026-11-22T21:01:16Z",
+   "text": "618 points and 254 comments on Hacker News.",
+   "points": 618,
+   "discussion": "https://news.ycombinator.com/item?id=50603845"
   },
   {
-   "title": "Arm CEO Rene Haas extends his contract through 2033 and will become SoftBank vice chair on December…",
-   "url": "https://www.bloomberg.com/news/articles/2026-11-23/arm-ceo-extends-contract-through-2033-after-nvidia-approach",
-   "source": "Bloomberg",
-   "published_at": "2026-11-23T12:30:47Z",
-   "text": "Arm CEO Rene Haas extends his contract through 2033 and will become SoftBank vice chair on December 1; a recruiting firm approached him over becoming Nvidia CEO. Arm Holdings Plc Chief Executive Officer Rene Haas has pledged to stay in his current role through 2033, rebuffing approaches …",
+   "title": "Oregon and Virginia sue SpaceX, alleging Grok Imagine's “spicy mode” violated consumer laws by crea…",
+   "url": "https://www.nytimes.com/2026/11/23/technology/spacex-lawsuit-ai-sexualized-images.html",
+   "source": "New York Times",
+   "published_at": "2026-11-23T13:55:50Z",
+   "text": "Oregon and Virginia sue SpaceX, alleging Grok Imagine's “spicy mode” violated consumer laws by creating 1.8M+ sexualized images of women and 65+ of children. The states accused Elon Musk's company of violating consumer protection laws with its Grok Imagine artificial intelligence tool, which created the images.",
    "via": "Techmeme"
+  },
+  {
+   "title": "Perplexity and Intelligence",
+   "url": "https://openai.com/index/perplexity-and-intelligence/",
+   "source": "Hacker News",
+   "published_at": "2026-11-22T17:06:27Z",
+   "text": "636 points and 415 comments on Hacker News.",
+   "points": 636,
+   "discussion": "https://news.ycombinator.com/item?id=50601525"
   },
   {
    "title": "After the FAA, Microsoft, and bank outages, DNI Jay Clayton says Americans should prepare for “bump…",
@@ -76,35 +95,11 @@
    "via": "Techmeme"
   },
   {
-   "title": "Oregon and Virginia sue SpaceX, alleging Grok Imagine's “spicy mode” violated consumer laws by crea…",
-   "url": "https://www.nytimes.com/2026/11/23/technology/spacex-lawsuit-ai-sexualized-images.html",
-   "source": "New York Times",
-   "published_at": "2026-11-23T13:55:50Z",
-   "text": "Oregon and Virginia sue SpaceX, alleging Grok Imagine's “spicy mode” violated consumer laws by creating 1.8M+ sexualized images of women and 65+ of children",
-   "via": "Techmeme"
-  },
-  {
    "title": "Marlowe, which develops cloud infrastructure and performance tools to optimize non-Nvidia AI chips,…",
    "url": "https://www.bloomberg.com/news/articles/2026-11-23/marlowe-raises-277-million-to-bolster-alternatives-to-nvidia-chips",
    "source": "Dina Bass / Bloomberg",
    "published_at": "2026-11-23T12:15:46Z",
    "text": "Marlowe, which develops cloud infrastructure and performance tools to optimize non-Nvidia AI chips, raised a $277M seed led by Accel at a $1.15B valuation. Marlowe, a six-month-old startup co-founded by two Microsoft Corp. vice presidents, has raised $277 million to pursue ways …",
-   "via": "Techmeme"
-  },
-  {
-   "title": "Boston-based Aevius, whose foundation models analyze patient health using medical records, imaging,…",
-   "url": "https://www.axios.com/pro/biotech-deals/2026/11/17/aevius-22m-clinical-intelligence-platform",
-   "source": "Katherine Davis / Axios",
-   "published_at": "2026-11-23T08:46:11Z",
-   "text": "Boston-based Aevius, whose foundation models analyze patient health using medical records, imaging, and other data, raised a $22M seed led by Insight Partners. Clinical intelligence startup Aevius raised $22 million in seed funding from Insight Partners, CEO Rowland Pettit exclusively tells Axios Pro.",
-   "via": "Techmeme"
-  },
-  {
-   "title": "Chinese civilian and military studies show a growing concern that US AI advances may cut nuclear de…",
-   "url": "https://www.nytimes.com/2026/11/23/world/asia/china-us-nuclear-ai.html?unlocked_article_code=1.SlE.7MPS.E8d7eCsFiexw&smid=url-share",
-   "source": "Chris Buckley / New York Ti…",
-   "published_at": "2026-11-23T09:30:58Z",
-   "text": "Chinese civilian and military studies show a growing concern that US AI advances may cut nuclear decision-making to 90 seconds, undermining Beijing's deterrent. Chinese military researchers are studying how to harness A.I., but they worry the technology makes their country's nuclear forces more vulnerable to attack.",
    "via": "Techmeme"
   },
   {
@@ -116,11 +111,19 @@
    "via": "Techmeme"
   },
   {
-   "title": "A look at AECJ, an Amazon employee group with over 1,000 members that is stepping up efforts to slo…",
-   "url": "https://www.ft.com/content/d194e93b-8d3c-42eb-85dd-46d58c4f2a80",
-   "source": "Rafe Rosner-Uddin / Financi…",
-   "published_at": "2026-11-23T09:05:54Z",
-   "text": "A look at AECJ, an Amazon employee group with over 1,000 members that is stepping up efforts to slow Amazon's data center expansion and spark debate over AI use",
+   "title": "Boston-based Aevius, whose foundation models analyze patient health using medical records, imaging,…",
+   "url": "https://www.axios.com/pro/biotech-deals/2026/11/17/aevius-22m-clinical-intelligence-platform",
+   "source": "Katherine Davis / Axios",
+   "published_at": "2026-11-23T08:46:11Z",
+   "text": "Boston-based Aevius, whose foundation models analyze patient health using medical records, imaging, and other data, raised a $22M seed led by Insight Partners",
+   "via": "Techmeme"
+  },
+  {
+   "title": "Chinese civilian and military studies show a growing concern that US AI advances may cut nuclear de…",
+   "url": "https://www.nytimes.com/2026/11/23/world/asia/china-us-nuclear-ai.html?unlocked_article_code=1.SlE.7MPS.E8d7eCsFiexw&smid=url-share",
+   "source": "Chris Buckley / New York Ti…",
+   "published_at": "2026-11-23T09:30:58Z",
+   "text": "Chinese civilian and military studies show a growing concern that US AI advances may cut nuclear decision-making to 90 seconds, undermining Beijing's deterrent. Chinese military researchers are studying how to harness A.I., but they worry the technology makes their country's nuclear forces more vulnerable to attack.",
    "via": "Techmeme"
   }
  ],
