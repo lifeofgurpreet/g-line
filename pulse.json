@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-23T08:05:31Z",
+ "generated_at": "2026-11-23T08:37:37Z",
  "items": [
   {
    "title": "OpenAI shares its models' perplexity, or how well they predict data, and urges pacing limits based…",
@@ -9,16 +9,6 @@
    "published_at": "2026-11-22T18:25:38Z",
    "text": "OpenAI shares its models' perplexity, or how well they predict data, and urges pacing limits based on such metrics, citing a possible 2027 avalanche of AI gains. - Difficulty of comparison across labs. … - Detachment from actionable evaluations. … - Not accounting for advances outside of pretraining.",
    "via": "Techmeme"
-  },
-  {
-   "title": "In FSD V15, the Tesla AI computer re-renders reality with chevrons in the sky for turns like a vide…",
-   "url": "https://x.com/elonmusk/status/2124238164512714925",
-   "source": "𝕏 @elonmusk",
-   "published_at": "2026-11-21T20:26:59Z",
-   "text": "In FSD V15, the Tesla AI computer re-renders reality with chevrons in the sky for turns like a video game. You can tap any point on the reality revisualizer to make your car go there.",
-   "author_name": "Elon Musk",
-   "likes": 42703,
-   "story": "Tesla rolls out FSD v15, featuring a photorealistic rendering of car surroundings; Elon Musk says it is real-time AI video generation without using game engines"
   },
   {
    "title": "Claude Code 2.1.330 released",
@@ -40,8 +30,8 @@
    "url": "https://www.gpupartner.com/blog/beginners-guide-local-ai-inkling-qwen-unsloth",
    "source": "Hacker News",
    "published_at": "2026-11-22T21:01:16Z",
-   "text": "452 points and 183 comments on Hacker News.",
-   "points": 452,
+   "text": "462 points and 193 comments on Hacker News.",
+   "points": 462,
    "discussion": "https://news.ycombinator.com/item?id=50603845"
   },
   {
@@ -64,8 +54,8 @@
    "url": "https://github.com/gulivan/worker755",
    "source": "Hacker News",
    "published_at": "2026-11-22T13:56:58Z",
-   "text": "309 points and 74 comments on Hacker News.",
-   "points": 309,
+   "text": "313 points and 76 comments on Hacker News.",
+   "points": 313,
    "discussion": "https://news.ycombinator.com/item?id=50599762"
   },
   {
@@ -122,6 +112,14 @@
    "source": "Reuters",
    "published_at": "2026-11-22T17:15:38Z",
    "text": "Sources: amid leak fears, Anthropic limited some IPO banks to four-person teams, used a view-logging file platform, and sought six-month bans on advising rivals",
+   "via": "Techmeme"
+  },
+  {
+   "title": "Jony Ive, ex-OpenAI product designer Joey Flynn, and others on Silicon Valley's obsession with “tas…",
+   "url": "https://www.nytimes.com/2026/11/20/magazine/ai-slop-taste-aesthetic-silicon-valley.html?unlocked_article_code=1.SFE.1a6T.-kpbFF_tJYZx&smid=url-share",
+   "source": "Jonah Weiner / New York Tim…",
+   "published_at": "2026-11-22T15:01:07Z",
+   "text": "Jony Ive, ex-OpenAI product designer Joey Flynn, and others on Silicon Valley's obsession with “taste” as a moat against AI slop and whether AI can learn it",
    "via": "Techmeme"
   }
  ],
