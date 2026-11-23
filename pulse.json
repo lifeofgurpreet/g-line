@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-23T12:21:02Z",
+ "generated_at": "2026-11-23T12:52:30Z",
  "items": [
   {
    "title": "OpenAI shares its models' “perplexity”, or how well they predict data, and urges pacing limits base…",
@@ -30,16 +30,9 @@
    "url": "https://www.gpupartner.com/blog/beginners-guide-local-ai-inkling-qwen-unsloth",
    "source": "Hacker News",
    "published_at": "2026-11-22T21:01:16Z",
-   "text": "564 points and 235 comments on Hacker News.",
-   "points": 564,
+   "text": "575 points and 239 comments on Hacker News.",
+   "points": 575,
    "discussion": "https://news.ycombinator.com/item?id=50603845"
-  },
-  {
-   "title": "Anthropic announces closing of initial public offering, including full exercise of underwriters’ op…",
-   "url": "https://www.anthropic.com/news/ipo-close",
-   "source": "Anthropic",
-   "published_at": "2026-11-20T12:41:01Z",
-   "text": "Today Anthropic, PBC announced the closing of its initial public offering of an aggregate of 1,127,000,000 shares of its Class A common stock at a public offering price of $83.00 per share, including the full exercise by the underwriters of their option to purchase an additional 147,000,000 shares of Class A common stock from Anthropic at the initial public offering price."
   },
   {
    "title": "A profile of siblings Dario and Daniela Amodei; while at OpenAI, Dario suggested immersive videogam…",
@@ -54,8 +47,8 @@
    "url": "https://github.com/gulivan/worker755",
    "source": "Hacker News",
    "published_at": "2026-11-22T13:56:58Z",
-   "text": "330 points and 79 comments on Hacker News.",
-   "points": 330,
+   "text": "332 points and 79 comments on Hacker News.",
+   "points": 332,
    "discussion": "https://news.ycombinator.com/item?id=50599762"
   },
   {
@@ -67,11 +60,11 @@
    "via": "Techmeme"
   },
   {
-   "title": "Boston-based Aevius, whose foundation models analyze patient health using medical records, imaging,…",
-   "url": "https://www.axios.com/pro/biotech-deals/2026/11/17/aevius-22m-clinical-intelligence-platform",
-   "source": "Katherine Davis / Axios",
-   "published_at": "2026-11-23T08:46:11Z",
-   "text": "Boston-based Aevius, whose foundation models analyze patient health using medical records, imaging, and other data, raised a $22M seed led by Insight Partners. Clinical intelligence startup Aevius raised $22 million in seed funding from Insight Partners, CEO Rowland Pettit exclusively tells Axios Pro.",
+   "title": "Arm CEO Rene Haas extends his contract through 2033 and will become SoftBank vice chair on December…",
+   "url": "https://www.bloomberg.com/news/articles/2026-11-23/arm-ceo-extends-contract-through-2033-after-nvidia-approach",
+   "source": "Bloomberg",
+   "published_at": "2026-11-23T12:30:47Z",
+   "text": "Arm CEO Rene Haas extends his contract through 2033 and will become SoftBank vice chair on December 1; a recruiting firm approached him over becoming Nvidia CEO. Arm Holdings Plc Chief Executive Officer Rene Haas, approached as a potential successor to Nvidia Corp.'s Jensen Huang …",
    "via": "Techmeme"
   },
   {
@@ -80,6 +73,22 @@
    "source": "Chris Buckley / New York Ti…",
    "published_at": "2026-11-23T09:30:58Z",
    "text": "Chinese civilian and military studies show a growing concern that US AI advances may cut nuclear decision-making to 90 seconds, undermining Beijing's deterrent. Chinese military researchers are studying how to harness A.I., but they worry the technology makes their country's nuclear forces more vulnerable to attack.",
+   "via": "Techmeme"
+  },
+  {
+   "title": "Boston-based Aevius, whose foundation models analyze patient health using medical records, imaging,…",
+   "url": "https://www.axios.com/pro/biotech-deals/2026/11/17/aevius-22m-clinical-intelligence-platform",
+   "source": "Katherine Davis / Axios",
+   "published_at": "2026-11-23T08:46:11Z",
+   "text": "Boston-based Aevius, whose foundation models analyze patient health using medical records, imaging, and other data, raised a $22M seed led by Insight Partners. Clinical intelligence startup Aevius raised $22 million in seed funding from Insight Partners, CEO Rowland Pettit exclusively tells Axios Pro.",
+   "via": "Techmeme"
+  },
+  {
+   "title": "Marlowe, which develops cloud infrastructure and performance tools to optimize non-Nvidia AI chips,…",
+   "url": "https://www.bloomberg.com/news/articles/2026-11-23/marlowe-raises-277-million-to-bolster-alternatives-to-nvidia-chips",
+   "source": "Dina Bass / Bloomberg",
+   "published_at": "2026-11-23T12:15:46Z",
+   "text": "Marlowe, which develops cloud infrastructure and performance tools to optimize non-Nvidia AI chips, raised a $277M seed led by Accel at a $1.15B valuation. Marlowe, a six-month-old startup co-founded by two Microsoft Corp. vice presidents, has raised $277 million to pursue ways …",
    "via": "Techmeme"
   },
   {
@@ -99,19 +108,11 @@
    "via": "Techmeme"
   },
   {
-   "title": "Marlowe, which develops cloud infrastructure and performance tools to optimize non-Nvidia AI chips,…",
-   "url": "https://www.bloomberg.com/news/articles/2026-11-23/marlowe-raises-277-million-to-bolster-alternatives-to-nvidia-chips",
-   "source": "Dina Bass / Bloomberg",
-   "published_at": "2026-11-23T12:15:46Z",
-   "text": "Marlowe, which develops cloud infrastructure and performance tools to optimize non-Nvidia AI chips, raised a $277M seed led by Accel at a $1.15B valuation. Marlowe, a six-month-old startup co-founded by two Microsoft Corp. vice presidents, has raised $277 million to pursue ways …",
-   "via": "Techmeme"
-  },
-  {
    "title": "Bret Taylor's customer service AI startup Sierra says it's finalizing a $1.75B+ round led by Lights…",
    "url": "https://www.bloomberg.com/news/articles/2026-11-23/bret-taylor-s-sierra-finalizing-more-than-1-75-billion-round",
    "source": "Bloomberg",
    "published_at": "2026-11-23T12:10:56Z",
-   "text": "Bret Taylor's customer service AI startup Sierra says it's finalizing a $1.75B+ round led by Lightspeed and Greenoaks at a $30B valuation, up from $15.8B in May. Sierra Technologies Inc., a startup that makes artificial intelligence software to automate customer service …",
+   "text": "Bret Taylor's customer service AI startup Sierra says it's finalizing a $1.75B+ round led by Lightspeed and Greenoaks at a $30B valuation, up from $15.8B in May",
    "via": "Techmeme"
   },
   {
