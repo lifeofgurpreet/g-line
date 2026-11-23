@@ -1,13 +1,13 @@
 {
  "schema": 1,
- "generated_at": "2026-11-23T17:12:09Z",
+ "generated_at": "2026-11-23T17:44:53Z",
  "items": [
   {
    "title": "Nvidia's board unanimously votes to reinstate Jensen Huang as CEO, president, and board director, a…",
    "url": "https://nvidianews.nvidia.com/news/nvidia-board-reinstates-jensen-huang-as-president-ceo-and-board-director",
    "source": "Nvidia Newsroom",
    "published_at": "2026-11-23T14:04:07Z",
-   "text": "Nvidia's board unanimously votes to reinstate Jensen Huang as CEO, president, and board director, after finding “no national security risk”; NVDA jumps 35%+. NVIDIA (NASDAQ: NVDA) today announced that effective immediately, Jensen Huang has been reinstated as President …",
+   "text": "Nvidia's board unanimously votes to reinstate Jensen Huang as CEO, president, and board director, after finding “no national security risk”; NVDA jumps 30%+. NVIDIA (NASDAQ: NVDA) today announced that effective immediately, Jensen Huang has been reinstated as President …",
    "via": "Techmeme"
   },
   {
@@ -17,7 +17,7 @@
    "published_at": "2026-11-23T14:27:19Z",
    "text": "“The NVIDIA Board of Directors has made the correct and proper decision to return Jensen Huang to the position of CEO… Congratulations to Jensen, the NVIDIA Board, to the People of the United States — and, indeed, the World!” - President DONALD J. TRUMP",
    "author_name": "The White House",
-   "likes": 23153,
+   "likes": 25204,
    "story": "President Trump says Nvidia “made the correct and proper decision”, the US “needs Jensen's leadership”, and the US AG found no evidence of “unlawful conduct”"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-11-22T17:12:27Z",
    "text": "This is the most important thing OpenAI has published in awhile. We are providing a lot of transparency into our pretraining progress and hope we can agree as a frield to common limits. I think that would be very wise and help ensure safety and control.",
    "author_name": "Sam Altman",
-   "likes": 10806,
+   "likes": 10875,
    "story": "OpenAI shares its models' “perplexity”, or how well they predict data, and urges pacing limits based on such metrics, citing a possible 2027 avalanche of gains"
   },
   {
@@ -42,7 +42,7 @@
    "url": "https://www.cnbc.com/2026/11/23/trump-nvidia-jensen-huang.html",
    "source": "Dan Mangan / CNBC",
    "published_at": "2026-11-23T15:21:04Z",
-   "text": "President Trump says Jensen Huang “did nothing wrong”, Nvidia's board “did ask for assurance on the national security threat”, and he spoke to Xi about Huang. Choose CNBC as your preferred source on Google and never miss a moment from the most trusted name in business news.",
+   "text": "President Trump says Jensen Huang “did nothing wrong”, Nvidia's board “did ask for assurance on the national security threat”, and he spoke to Xi about Huang. President Donald Trump told CNBC on Monday morning that he spoke directly to Nvidia's board and urged them to reinstate CEO Jensen Huang.",
    "via": "Techmeme"
   },
   {
@@ -50,8 +50,8 @@
    "url": "https://z.ai/blog/glm-5.4",
    "source": "Hacker News",
    "published_at": "2026-11-23T10:06:43Z",
-   "text": "742 points and 264 comments on Hacker News.",
-   "points": 742,
+   "text": "780 points and 272 comments on Hacker News.",
+   "points": 780,
    "discussion": "https://news.ycombinator.com/item?id=50609685"
   },
   {
@@ -67,26 +67,9 @@
    "url": "https://www.gpupartner.com/blog/beginners-guide-local-ai-inkling-qwen-unsloth",
    "source": "Hacker News",
    "published_at": "2026-11-22T21:01:16Z",
-   "text": "674 points and 272 comments on Hacker News.",
-   "points": 674,
+   "text": "679 points and 278 comments on Hacker News.",
+   "points": 679,
    "discussion": "https://news.ycombinator.com/item?id=50603845"
-  },
-  {
-   "title": "Nvidia's board says it voted to reinstate Jensen Huang after receiving input from “senior levels” o…",
-   "url": "https://www.ft.com/content/08914b05-bbfa-478d-b38a-549acfc1aae6",
-   "source": "Tim Bradshaw / Financial Ti…",
-   "published_at": "2026-11-23T14:25:03Z",
-   "text": "Nvidia's board says it voted to reinstate Jensen Huang after receiving input from “senior levels” of the US government; a probe into his conduct is ongoing. Startling reversal of board's position on disgraced co-founder sends AI giant's share price soaring",
-   "via": "Techmeme"
-  },
-  {
-   "title": "Perplexity and Intelligence",
-   "url": "https://openai.com/index/perplexity-and-intelligence/",
-   "source": "Hacker News",
-   "published_at": "2026-11-22T17:06:27Z",
-   "text": "661 points and 430 comments on Hacker News.",
-   "points": 661,
-   "discussion": "https://news.ycombinator.com/item?id=50601525"
   },
   {
    "title": "Sources: Trump directed an effort, led by JD Vance, to push for Jensen Huang's reinstatement, assur…",
@@ -97,11 +80,20 @@
    "via": "Techmeme"
   },
   {
-   "title": "Oregon and Virginia sue SpaceX, alleging Grok Imagine's “spicy mode” violated consumer laws by crea…",
-   "url": "https://www.nytimes.com/2026/11/23/technology/spacex-lawsuit-ai-sexualized-images.html",
-   "source": "New York Times",
-   "published_at": "2026-11-23T13:55:50Z",
-   "text": "Oregon and Virginia sue SpaceX, alleging Grok Imagine's “spicy mode” violated consumer laws by creating 1.8M+ sexualized images of women and 65+ of children. The states accused Elon Musk's company of violating consumer protection laws with its Grok Imagine artificial intelligence tool, which created the images.",
+   "title": "Perplexity and Intelligence",
+   "url": "https://openai.com/index/perplexity-and-intelligence/",
+   "source": "Hacker News",
+   "published_at": "2026-11-22T17:06:27Z",
+   "text": "664 points and 432 comments on Hacker News.",
+   "points": 664,
+   "discussion": "https://news.ycombinator.com/item?id=50601525"
+  },
+  {
+   "title": "Nvidia's board says it voted to reinstate Jensen Huang after receiving input from “senior levels” o…",
+   "url": "https://www.ft.com/content/08914b05-bbfa-478d-b38a-549acfc1aae6",
+   "source": "Tim Bradshaw / Financial Ti…",
+   "published_at": "2026-11-23T14:25:03Z",
+   "text": "Nvidia's board says it voted to reinstate Jensen Huang after receiving input from “senior levels” of the US government; a probe into his conduct is ongoing. Startling reversal of board's position on disgraced co-founder sends AI giant's share price soaring",
    "via": "Techmeme"
   },
   {
@@ -113,11 +105,11 @@
    "via": "Techmeme"
   },
   {
-   "title": "Arm CEO Rene Haas extends his contract through 2033 and will become SoftBank vice chair on December…",
-   "url": "https://www.bloomberg.com/news/articles/2026-11-23/arm-ceo-extends-contract-through-2033-after-nvidia-approach",
-   "source": "Bloomberg",
-   "published_at": "2026-11-23T12:30:47Z",
-   "text": "Arm CEO Rene Haas extends his contract through 2033 and will become SoftBank vice chair on December 1; a recruiting firm approached him over becoming Nvidia CEO. Arm Holdings Plc Chief Executive Officer Rene Haas has pledged to stay in his current role through 2033 after rebuffing approaches …",
+   "title": "Oregon and Virginia sue SpaceX, alleging Grok Imagine's “spicy mode” violated consumer laws by crea…",
+   "url": "https://www.nytimes.com/2026/11/23/technology/spacex-lawsuit-ai-sexualized-images.html",
+   "source": "New York Times",
+   "published_at": "2026-11-23T13:55:50Z",
+   "text": "Oregon and Virginia sue SpaceX, alleging Grok Imagine's “spicy mode” violated consumer laws by creating 1.8M+ sexualized images of women and 65+ of children. The states accused Elon Musk's company of violating consumer protection laws with its Grok Imagine artificial intelligence tool, which created the images.",
    "via": "Techmeme"
   },
   {
@@ -126,6 +118,14 @@
    "source": "Bloomberg",
    "published_at": "2026-11-23T12:10:56Z",
    "text": "Bret Taylor's customer service AI startup Sierra says it's finalizing a $1.75B+ round led by Lightspeed and Greenoaks at a $30B valuation, up from $15.8B in May. Sierra Technologies Inc., a startup that makes artificial intelligence software to automate customer service …",
+   "via": "Techmeme"
+  },
+  {
+   "title": "Arm CEO Rene Haas extends his contract through 2033 and will become SoftBank vice chair on December…",
+   "url": "https://www.bloomberg.com/news/articles/2026-11-23/arm-ceo-extends-contract-through-2033-after-nvidia-approach",
+   "source": "Bloomberg",
+   "published_at": "2026-11-23T12:30:47Z",
+   "text": "Arm CEO Rene Haas extends his contract through 2033 and will become SoftBank vice chair on December 1; a recruiting firm approached him over becoming Nvidia CEO. Arm Holdings Plc Chief Executive Officer Rene Haas has pledged to stay in his current role through 2033 after rebuffing approaches …",
    "via": "Techmeme"
   }
  ],
