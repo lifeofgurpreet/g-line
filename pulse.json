@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-23T10:12:14Z",
+ "generated_at": "2026-11-23T10:44:35Z",
  "items": [
   {
    "title": "OpenAI shares its models' “perplexity”, or how well they predict data, and urges pacing limits base…",
@@ -30,8 +30,8 @@
    "url": "https://www.gpupartner.com/blog/beginners-guide-local-ai-inkling-qwen-unsloth",
    "source": "Hacker News",
    "published_at": "2026-11-22T21:01:16Z",
-   "text": "508 points and 213 comments on Hacker News.",
-   "points": 508,
+   "text": "525 points and 222 comments on Hacker News.",
+   "points": 525,
    "discussion": "https://news.ycombinator.com/item?id=50603845"
   },
   {
@@ -54,8 +54,8 @@
    "url": "https://github.com/gulivan/worker755",
    "source": "Hacker News",
    "published_at": "2026-11-22T13:56:58Z",
-   "text": "318 points and 78 comments on Hacker News.",
-   "points": 318,
+   "text": "320 points and 78 comments on Hacker News.",
+   "points": 320,
    "discussion": "https://news.ycombinator.com/item?id=50599762"
   },
   {
@@ -67,11 +67,11 @@
    "via": "Techmeme"
   },
   {
-   "title": "Chinese physical AI startup Simplexity Robotics raised a $100M pre-Series A led by Ant Group, with…",
-   "url": "https://www.bloomberg.com/news/articles/2026-11-22/ant-group-bets-on-simplexity-to-thrive-in-china-s-humanoid-race",
-   "source": "Saritha Rai / Bloomberg",
-   "published_at": "2026-11-23T07:02:24Z",
-   "text": "Chinese physical AI startup Simplexity Robotics raised a $100M pre-Series A led by Ant Group, with Alibaba, Tencent, and others joining, at a $1.6B valuation. Chinese physical AI startup Simplexity Robotics received $100 million in a funding round led by Jack Ma-backed Ant Group Co. …",
+   "title": "A look at AECJ, an Amazon employee group with over 1,000 members that is stepping up efforts to slo…",
+   "url": "https://www.ft.com/content/d194e93b-8d3c-42eb-85dd-46d58c4f2a80",
+   "source": "Rafe Rosner-Uddin / Financi…",
+   "published_at": "2026-11-23T09:05:54Z",
+   "text": "A look at AECJ, an Amazon employee group with over 1,000 members that is stepping up efforts to slow Amazon's data center expansion and spark debate over AI use. Tech company's plans for rapid expansion face opposition from the public and its own employees",
    "via": "Techmeme"
   },
   {
@@ -83,19 +83,19 @@
    "via": "Techmeme"
   },
   {
-   "title": "The National Governors Association proposes a split of AI regulation roles, asking the US governmen…",
-   "url": "https://www.bloomberg.com/news/articles/2026-11-22/governors-call-for-federal-ai-rules-without-sidelining-states",
-   "source": "Bloomberg",
-   "published_at": "2026-11-23T09:16:01Z",
-   "text": "The National Governors Association proposes a split of AI regulation roles, asking the US government to review AI models while letting states protect consumers. A bipartisan group of US governors is urging Washington to set rules for the most powerful artificial intelligence systems …",
-   "via": "Techmeme"
-  },
-  {
    "title": "Arva AI, which builds AI agents for banks' financial-crime compliance teams and counts Wise as a cu…",
    "url": "https://www.axios.com/pro/fintech-deals/2026/11/17/arva-ai-20-million-series-a-bank-compliance",
    "source": "Ryan Lawler / Axios",
    "published_at": "2026-11-23T03:26:28Z",
    "text": "Arva AI, which builds AI agents for banks' financial-crime compliance teams and counts Wise as a customer, raised a $20M Series A led by Arthur Ventures",
+   "via": "Techmeme"
+  },
+  {
+   "title": "Chinese physical AI startup Simplexity Robotics raised a $100M pre-Series A led by Ant Group, with…",
+   "url": "https://www.bloomberg.com/news/articles/2026-11-22/ant-group-bets-on-simplexity-to-thrive-in-china-s-humanoid-race",
+   "source": "Saritha Rai / Bloomberg",
+   "published_at": "2026-11-23T07:02:24Z",
+   "text": "Chinese physical AI startup Simplexity Robotics raised a $100M pre-Series A led by Ant Group, with Alibaba, Tencent, and others joining, at a $1.6B valuation. Chinese physical AI startup Simplexity Robotics received $100 million in a funding round led by Jack Ma-backed Ant Group Co. …",
    "via": "Techmeme"
   },
   {
@@ -107,19 +107,19 @@
    "via": "Techmeme"
   },
   {
-   "title": "A look at AECJ, an Amazon employee group with over 1,000 members that is stepping up efforts to slo…",
-   "url": "https://www.ft.com/content/d194e93b-8d3c-42eb-85dd-46d58c4f2a80",
-   "source": "Rafe Rosner-Uddin / Financi…",
-   "published_at": "2026-11-23T09:05:54Z",
-   "text": "A look at AECJ, an Amazon employee group with over 1,000 members that is stepping up efforts to slow Amazon's data center expansion and spark debate over AI use. Tech company's plans for rapid expansion face opposition from the public and its own employees",
-   "via": "Techmeme"
-  },
-  {
    "title": "London-based Alecto, which uses AI and legal experts to help consumers understand UK property law,…",
    "url": "https://siliconangle.com/2026/11/16/alecto-raises-20m-seed-funding-to-make-uk-property-law-more-accessible-to-consumers-with-ai/",
    "source": "Kyt Dotson / SiliconANGLE",
    "published_at": "2026-11-23T05:31:38Z",
    "text": "London-based Alecto, which uses AI and legal experts to help consumers understand UK property law, raised a $20M seed led by Insight Partners",
+   "via": "Techmeme"
+  },
+  {
+   "title": "The National Governors Association proposes a split of AI regulation roles, asking the US governmen…",
+   "url": "https://www.bloomberg.com/news/articles/2026-11-22/governors-call-for-federal-ai-rules-without-sidelining-states",
+   "source": "Bloomberg",
+   "published_at": "2026-11-23T09:16:01Z",
+   "text": "The National Governors Association proposes a split of AI regulation roles, asking the US government to review AI models while letting states protect consumers. A bipartisan group of US governors is urging Washington to set rules for the most powerful artificial intelligence systems …",
    "via": "Techmeme"
   }
  ],
