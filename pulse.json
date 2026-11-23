@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-23T12:52:30Z",
+ "generated_at": "2026-11-23T13:24:56Z",
  "items": [
   {
    "title": "OpenAI shares its models' “perplexity”, or how well they predict data, and urges pacing limits base…",
@@ -30,8 +30,8 @@
    "url": "https://www.gpupartner.com/blog/beginners-guide-local-ai-inkling-qwen-unsloth",
    "source": "Hacker News",
    "published_at": "2026-11-22T21:01:16Z",
-   "text": "575 points and 239 comments on Hacker News.",
-   "points": 575,
+   "text": "589 points and 245 comments on Hacker News.",
+   "points": 589,
    "discussion": "https://news.ycombinator.com/item?id=50603845"
   },
   {
@@ -47,8 +47,8 @@
    "url": "https://github.com/gulivan/worker755",
    "source": "Hacker News",
    "published_at": "2026-11-22T13:56:58Z",
-   "text": "332 points and 79 comments on Hacker News.",
-   "points": 332,
+   "text": "338 points and 79 comments on Hacker News.",
+   "points": 338,
    "discussion": "https://news.ycombinator.com/item?id=50599762"
   },
   {
@@ -64,23 +64,23 @@
    "url": "https://www.bloomberg.com/news/articles/2026-11-23/arm-ceo-extends-contract-through-2033-after-nvidia-approach",
    "source": "Bloomberg",
    "published_at": "2026-11-23T12:30:47Z",
-   "text": "Arm CEO Rene Haas extends his contract through 2033 and will become SoftBank vice chair on December 1; a recruiting firm approached him over becoming Nvidia CEO. Arm Holdings Plc Chief Executive Officer Rene Haas, approached as a potential successor to Nvidia Corp.'s Jensen Huang …",
+   "text": "Arm CEO Rene Haas extends his contract through 2033 and will become SoftBank vice chair on December 1; a recruiting firm approached him over becoming Nvidia CEO. Arm Holdings Plc Chief Executive Officer Rene Haas has pledged to stay in his current role through 2033, rebuffing approaches …",
    "via": "Techmeme"
   },
   {
-   "title": "Chinese civilian and military studies show a growing concern that US AI advances may cut nuclear de…",
-   "url": "https://www.nytimes.com/2026/11/23/world/asia/china-us-nuclear-ai.html?unlocked_article_code=1.SlE.7MPS.E8d7eCsFiexw&smid=url-share",
-   "source": "Chris Buckley / New York Ti…",
-   "published_at": "2026-11-23T09:30:58Z",
-   "text": "Chinese civilian and military studies show a growing concern that US AI advances may cut nuclear decision-making to 90 seconds, undermining Beijing's deterrent. Chinese military researchers are studying how to harness A.I., but they worry the technology makes their country's nuclear forces more vulnerable to attack.",
+   "title": "Bret Taylor's customer service AI startup Sierra says it's finalizing a $1.75B+ round led by Lights…",
+   "url": "https://www.bloomberg.com/news/articles/2026-11-23/bret-taylor-s-sierra-finalizing-more-than-1-75-billion-round",
+   "source": "Bloomberg",
+   "published_at": "2026-11-23T12:10:56Z",
+   "text": "Bret Taylor's customer service AI startup Sierra says it's finalizing a $1.75B+ round led by Lightspeed and Greenoaks at a $30B valuation, up from $15.8B in May. Sierra Technologies Inc., a startup that makes artificial intelligence software to automate customer service …",
    "via": "Techmeme"
   },
   {
-   "title": "Boston-based Aevius, whose foundation models analyze patient health using medical records, imaging,…",
-   "url": "https://www.axios.com/pro/biotech-deals/2026/11/17/aevius-22m-clinical-intelligence-platform",
-   "source": "Katherine Davis / Axios",
-   "published_at": "2026-11-23T08:46:11Z",
-   "text": "Boston-based Aevius, whose foundation models analyze patient health using medical records, imaging, and other data, raised a $22M seed led by Insight Partners. Clinical intelligence startup Aevius raised $22 million in seed funding from Insight Partners, CEO Rowland Pettit exclusively tells Axios Pro.",
+   "title": "New US chip export rules threaten SEA's data center boom, risking incomplete and abandoned projects…",
+   "url": "https://www.bloomberg.com/news/features/2026-11-22/trump-s-ai-chip-crackdown-on-china-after-nvidia-crisis-squeezes-southeast-asia?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc5NTQwNzgwMCwiZXhwIjoxNzk2MDEyNjAwLCJhcnRpY2xlSWQiOiJUT1hCU0RLR0lGUTMwMCIsImJjb25uZWN0SWQiOiJDNTc5RDIwMDZBQjQ0RjRDODkwMTU0M0U0ODMxNkJCNiJ9.3vmQa_rIIOmutX3CrjU1ib8_jJyygL3HHaYJC4NpNfo",
+   "source": "Bloomberg",
+   "published_at": "2026-11-23T06:03:48Z",
+   "text": "New US chip export rules threaten SEA's data center boom, risking incomplete and abandoned projects and forcing neoclouds to replace their Chinese customers. Washington's new rulebook spells trouble for a multibillion dollar cloud business helping to power the region's data center boom.",
    "via": "Techmeme"
   },
   {
@@ -92,11 +92,19 @@
    "via": "Techmeme"
   },
   {
-   "title": "A look at AECJ, an Amazon employee group with over 1,000 members that is stepping up efforts to slo…",
-   "url": "https://www.ft.com/content/d194e93b-8d3c-42eb-85dd-46d58c4f2a80",
-   "source": "Rafe Rosner-Uddin / Financi…",
-   "published_at": "2026-11-23T09:05:54Z",
-   "text": "A look at AECJ, an Amazon employee group with over 1,000 members that is stepping up efforts to slow Amazon's data center expansion and spark debate over AI use. Tech company's plans for rapid expansion face opposition from the public and its own employees",
+   "title": "Boston-based Aevius, whose foundation models analyze patient health using medical records, imaging,…",
+   "url": "https://www.axios.com/pro/biotech-deals/2026/11/17/aevius-22m-clinical-intelligence-platform",
+   "source": "Katherine Davis / Axios",
+   "published_at": "2026-11-23T08:46:11Z",
+   "text": "Boston-based Aevius, whose foundation models analyze patient health using medical records, imaging, and other data, raised a $22M seed led by Insight Partners. Clinical intelligence startup Aevius raised $22 million in seed funding from Insight Partners, CEO Rowland Pettit exclusively tells Axios Pro.",
+   "via": "Techmeme"
+  },
+  {
+   "title": "Chinese civilian and military studies show a growing concern that US AI advances may cut nuclear de…",
+   "url": "https://www.nytimes.com/2026/11/23/world/asia/china-us-nuclear-ai.html?unlocked_article_code=1.SlE.7MPS.E8d7eCsFiexw&smid=url-share",
+   "source": "Chris Buckley / New York Ti…",
+   "published_at": "2026-11-23T09:30:58Z",
+   "text": "Chinese civilian and military studies show a growing concern that US AI advances may cut nuclear decision-making to 90 seconds, undermining Beijing's deterrent. Chinese military researchers are studying how to harness A.I., but they worry the technology makes their country's nuclear forces more vulnerable to attack.",
    "via": "Techmeme"
   },
   {
@@ -108,19 +116,11 @@
    "via": "Techmeme"
   },
   {
-   "title": "Bret Taylor's customer service AI startup Sierra says it's finalizing a $1.75B+ round led by Lights…",
-   "url": "https://www.bloomberg.com/news/articles/2026-11-23/bret-taylor-s-sierra-finalizing-more-than-1-75-billion-round",
-   "source": "Bloomberg",
-   "published_at": "2026-11-23T12:10:56Z",
-   "text": "Bret Taylor's customer service AI startup Sierra says it's finalizing a $1.75B+ round led by Lightspeed and Greenoaks at a $30B valuation, up from $15.8B in May",
-   "via": "Techmeme"
-  },
-  {
-   "title": "The National Governors Association proposes a split of AI regulation roles, asking the US governmen…",
-   "url": "https://www.bloomberg.com/news/articles/2026-11-22/governors-call-for-federal-ai-rules-without-sidelining-states",
-   "source": "Bloomberg",
-   "published_at": "2026-11-23T09:16:01Z",
-   "text": "The National Governors Association proposes a split of AI regulation roles, asking the US government to review AI models while letting states protect consumers",
+   "title": "A look at AECJ, an Amazon employee group with over 1,000 members that is stepping up efforts to slo…",
+   "url": "https://www.ft.com/content/d194e93b-8d3c-42eb-85dd-46d58c4f2a80",
+   "source": "Rafe Rosner-Uddin / Financi…",
+   "published_at": "2026-11-23T09:05:54Z",
+   "text": "A look at AECJ, an Amazon employee group with over 1,000 members that is stepping up efforts to slow Amazon's data center expansion and spark debate over AI use",
    "via": "Techmeme"
   }
  ],
