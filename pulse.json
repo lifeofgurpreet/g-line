@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-24T14:01:47Z",
+ "generated_at": "2026-11-24T14:34:59Z",
  "items": [
   {
    "title": "Sources: Jensen Huang disclosed additional affairs beyond the two already reported during his Sunda…",
@@ -11,14 +11,14 @@
    "via": "Techmeme"
   },
   {
-   "title": "Everyone I know at Nvidia wanted Jensen back and it shows",
-   "url": "https://x.com/elonmusk/status/2124942828274925651",
-   "source": "𝕏 @elonmusk",
-   "published_at": "2026-11-23T19:07:04Z",
-   "text": "Everyone I know at Nvidia wanted Jensen back and it shows",
-   "author_name": "Elon Musk",
-   "likes": 175361,
-   "story": "Sources: Trump pushed Nvidia to reinstate Jensen Huang after allies argued he was “too big to fail” for the US economy and a victim of “deep state” maneuvering"
+   "title": "We’re introducing Shirudo, an open-source Linux runtime allowing agents to defend systems without d…",
+   "url": "https://x.com/OpenAI/status/2124980590717911527",
+   "source": "𝕏 @OpenAI",
+   "published_at": "2026-11-23T21:37:07Z",
+   "text": "We’re introducing Shirudo, an open-source Linux runtime allowing agents to defend systems without downtime. It lets agents write dynamic eBPF controls to shield systems from exploits, giving defenders more time to test and roll out patches. Built by @cisco together with OpenAI.…",
+   "author_name": "OpenAI",
+   "likes": 18527,
+   "story": "OpenAI and Cisco launch Shirudo, an open-source runtime that helps teams protect running Linux systems without a reboot while they roll out patches"
   },
   {
    "title": "Claude Code 2.1.331 released",
@@ -28,21 +28,21 @@
    "text": "Added Code Mode support in terminal sessions on Amazon Bedrock, Google Cloud's Agent Platform, Microsoft Foundry and Claude Platform on AWS · Added oidc.groups_jsonpath to the Claude apps gateway, to read groups from the matching entries of a list of objects with a small subset of JSONPath (RFC 9535) · Added an API connectivity section to claude doctor that reports whether the API can be reached, with the HTTP status or the error, or says why it wasn't tested · Added a notice when tap-mode voice dictation stops by itself, after 15 seconds without recognized speech or at its 2-minute limit"
   },
   {
-   "title": "We’re introducing Shirudo, an open-source Linux runtime allowing agents to defend systems without d…",
-   "url": "https://x.com/OpenAI/status/2124980590717911527",
-   "source": "𝕏 @OpenAI",
-   "published_at": "2026-11-23T21:37:07Z",
-   "text": "We’re introducing Shirudo, an open-source Linux runtime allowing agents to defend systems without downtime. It lets agents write dynamic eBPF controls to shield systems from exploits, giving defenders more time to test and roll out patches. Built by @cisco together with OpenAI.…",
-   "author_name": "OpenAI",
-   "likes": 18333,
-   "story": "OpenAI and Cisco launch Shirudo, an open-source runtime that helps teams protect running Linux systems without a reboot while they roll out patches"
+   "title": "Releasing Muse in the UK starting today -- now spells colour with a \"u\".",
+   "url": "https://x.com/finkd/status/2125107155338711179",
+   "source": "𝕏 @finkd",
+   "published_at": "2026-11-24T06:00:03Z",
+   "text": "Releasing Muse in the UK starting today -- now spells colour with a \"u\".",
+   "author_name": "Mark Zuckerberg",
+   "likes": 5721,
+   "story": "Meta rolls out Muse to UK adults to help with everyday tasks, the first Big Tech company to launch an AI agent in the UK; UK watchdogs have warned about agents"
   },
   {
    "title": "Sources: Trump had JD Vance lead the push to reinstate Jensen Huang, including working to assure Nv…",
    "url": "https://www.nytimes.com/2026/11/23/technology/trump-nvidia-huang.html?unlocked_article_code=1.SlE.plCA.zs7Mh9MXa5RG&smid=url-share",
    "source": "New York Times",
    "published_at": "2026-11-23T17:11:19Z",
-   "text": "Sources: Trump had JD Vance lead the push to reinstate Jensen Huang, including working to assure Nvidia's board that Huang was not facing criminal charges. President Trump decided he wanted to do whatever he could to help Mr. Huang get his old job back, two people familiar with the matter said.",
+   "text": "Sources: Trump had JD Vance lead the push to reinstate Jensen Huang, including working to assure Nvidia's board that Huang was not facing criminal charges",
    "via": "Techmeme"
   },
   {
@@ -50,34 +50,9 @@
    "url": "https://michaelharley.net/posts/2026/11/01/llm-agents-work-for-their-parent-companies-not-for-you/",
    "source": "Hacker News",
    "published_at": "2026-11-24T12:40:15Z",
-   "text": "149 points and 44 comments on Hacker News.",
-   "points": 149,
+   "text": "275 points and 92 comments on Hacker News.",
+   "points": 275,
    "discussion": "https://news.ycombinator.com/item?id=50627340"
-  },
-  {
-   "title": "Releasing Muse in the UK starting today -- now spells colour with a \"u\".",
-   "url": "https://x.com/finkd/status/2125107155338711179",
-   "source": "𝕏 @finkd",
-   "published_at": "2026-11-24T06:00:03Z",
-   "text": "Releasing Muse in the UK starting today -- now spells colour with a \"u\".",
-   "author_name": "Mark Zuckerberg",
-   "likes": 5563,
-   "story": "Meta rolls out Muse to UK adults to help with everyday tasks, the first Big Tech company to launch an AI agent in the UK; UK watchdogs have warned about agents"
-  },
-  {
-   "title": "Ladybird's first alpha release",
-   "url": "https://simonwillison.net/2026/Nov/23/ladybird/",
-   "source": "Simon Willison's weblog",
-   "published_at": "2026-11-23T21:46:35Z",
-   "text": "Ladybird is an astonishingly ambitious project: a new browser, in 2026, with its own implementation of most of the key components - HTML parsing, CSS engine, layout, JavaScript, even WebAssembly. It still uses a few external components - things like HarfBuzz for text shaping, Skia for 2D graphics, ffmpeg for video, and SQLite for the things you do with SQLite. Everything else is part of Ladybird, or code brought in from Ladybird's even more ambitious predecessor project SerenityOS ."
-  },
-  {
-   "title": "Sources: Anthropic and OpenAI employees warn that internal, unreleased models have achieved rapid a…",
-   "url": "https://www.axios.com/2026/11/24/anthropic-openai-unreleased-ai-safety-risks",
-   "source": "Madison Mills / Axios",
-   "published_at": "2026-11-24T11:21:15Z",
-   "text": "Sources: Anthropic and OpenAI employees warn that internal, unreleased models have achieved rapid advances in reasoning, making them unsafe to release publicly. Anthropic and OpenAI are facing an increasingly urgent problem: Internal, unreleased models are becoming so powerful that many employees …",
-   "via": "Techmeme"
   },
   {
    "title": "Introducing Claude Ship (beta): Claude can review your pull requests, work on fixes, and approve th…",
@@ -86,40 +61,15 @@
    "published_at": "2026-11-23T20:13:04Z",
    "text": "Introducing Claude Ship (beta): Claude can review your pull requests, work on fixes, and approve the ones your team's policy allows. The goal is to help you ship code as fast as you can write it.",
    "author_name": "ClaudeDevs",
-   "likes": 23079,
+   "likes": 23331,
    "story": "Anthropic unveils Claude Ship, letting Claude review, fix, and approve GitHub pull requests based on team policies, in beta for Claude Team and Enterprise tiers"
   },
   {
-   "title": "Anthropic Breaks Below $83 IPO Price in Premarket Trading",
-   "url": "https://www.bloomberg.com/news/articles/2026-11-24/anthropic-breaks-below-83-ipo-price-in-premarket-trading",
-   "source": "Hacker News",
-   "published_at": "2026-11-24T13:23:47Z",
-   "text": "65 points and 18 comments on Hacker News.",
-   "points": 65,
-   "discussion": "https://news.ycombinator.com/item?id=50627836"
-  },
-  {
-   "title": "Two big points from this new Anthropic paper: 1) The most AI value comes from changing the organiza…",
-   "url": "https://x.com/emollick/status/2125098309928812898",
-   "source": "𝕏 @emollick",
-   "published_at": "2026-11-24T05:24:54Z",
-   "text": "Two big points from this new Anthropic paper: 1) The most AI value comes from changing the organization 2) There is wide worker resistance to AI adoption (partially due to point 1) Changes that expand what workers do & share AI gains with them could help",
-   "author_name": "Ethan Mollick",
-   "likes": 1323,
-   "story": "Study: most AI deployments derive value by expanding and accelerating output rather than reducing costs, with 80% of 100 AI-built apps automating manual tasks",
-   "links": [
-    "https://www.anthropic.com/research/working-with-ai"
-   ]
-  },
-  {
-   "title": ".@elonmusk you can take back the lead by going full-on open-source and open-sourcing @grok!",
-   "url": "https://x.com/ClementDelangue/status/2124935927583641899",
-   "source": "𝕏 @ClementDelangue",
-   "published_at": "2026-11-23T18:39:39Z",
-   "text": ".@elonmusk you can take back the lead by going full-on open-source and open-sourcing @grok!",
-   "author_name": "clem 🤗",
-   "likes": 1104,
-   "story": "Sources: SpaceX and Tesla are negotiating an all-stock, $3.5T merger led by two special committees of five “disinterested” directors, all with ties to Elon Musk"
+   "title": "Ladybird's first alpha release",
+   "url": "https://simonwillison.net/2026/Nov/23/ladybird/",
+   "source": "Simon Willison's weblog",
+   "published_at": "2026-11-23T21:46:35Z",
+   "text": "Ladybird is an astonishingly ambitious project: a new browser, in 2026, with its own implementation of most of the key components - HTML parsing, CSS engine, layout, JavaScript, even WebAssembly. It still uses a few external components - things like HarfBuzz for text shaping, Skia for 2D graphics, ffmpeg for video, and SQLite for the things you do with SQLite. Everything else is part of Ladybird, or code brought in from Ladybird's even more ambitious predecessor project SerenityOS ."
   },
   {
    "title": "A profile of Levent Alpöge, the Anthropic mathematician who found a Riemann hypothesis proof with C…",
@@ -130,13 +80,61 @@
    "via": "Techmeme"
   },
   {
+   "title": "Two big points from this new Anthropic paper: 1) The most AI value comes from changing the organiza…",
+   "url": "https://x.com/emollick/status/2125098309928812898",
+   "source": "𝕏 @emollick",
+   "published_at": "2026-11-24T05:24:54Z",
+   "text": "Two big points from this new Anthropic paper: 1) The most AI value comes from changing the organization 2) There is wide worker resistance to AI adoption (partially due to point 1) Changes that expand what workers do & share AI gains with them could help",
+   "author_name": "Ethan Mollick",
+   "likes": 1405,
+   "story": "Study: most AI deployments derive value by expanding and accelerating output rather than reducing costs, with 80% of 100 AI-built apps automating manual tasks",
+   "links": [
+    "https://www.anthropic.com/research/working-with-ai"
+   ]
+  },
+  {
    "title": "Who in Washington owns and trades Nvidia stock",
    "url": "https://www.kadoa.com/congress/insights/trump-nvidia",
    "source": "Hacker News",
    "published_at": "2026-11-24T11:51:05Z",
-   "text": "97 points and 32 comments on Hacker News.",
-   "points": 97,
+   "text": "139 points and 54 comments on Hacker News.",
+   "points": 139,
    "discussion": "https://news.ycombinator.com/item?id=50626861"
+  },
+  {
+   "title": ".@elonmusk you can take back the lead by going full-on open-source and open-sourcing @grok!",
+   "url": "https://x.com/ClementDelangue/status/2124935927583641899",
+   "source": "𝕏 @ClementDelangue",
+   "published_at": "2026-11-23T18:39:39Z",
+   "text": ".@elonmusk you can take back the lead by going full-on open-source and open-sourcing @grok!",
+   "author_name": "clem 🤗",
+   "likes": 1111,
+   "story": "Sources: SpaceX and Tesla are negotiating an all-stock, $3.5T merger led by two special committees of five “disinterested” directors, all with ties to Elon Musk"
+  },
+  {
+   "title": "Sources: Anthropic and OpenAI employees warn that internal, unreleased models have achieved rapid a…",
+   "url": "https://www.axios.com/2026/11/24/anthropic-openai-unreleased-ai-safety-risks",
+   "source": "Madison Mills / Axios",
+   "published_at": "2026-11-24T11:21:15Z",
+   "text": "Sources: Anthropic and OpenAI employees warn that internal, unreleased models have achieved rapid advances in reasoning, making them unsafe to release publicly. Anthropic and OpenAI are facing an increasingly urgent problem: Internal, unreleased models are becoming so powerful that many employees …",
+   "via": "Techmeme"
+  },
+  {
+   "title": "Nvidia Reinstates Jensen Huang as CEO",
+   "url": "https://www.cnbc.com/2026/11/23/nvidia-jensen-huang-ceo.html",
+   "source": "Hacker News",
+   "published_at": "2026-11-23T14:00:18Z",
+   "text": "2693 points and 3546 comments on Hacker News.",
+   "points": 2693,
+   "discussion": "https://news.ycombinator.com/item?id=50611576"
+  },
+  {
+   "title": "Sources: Trump and JD Vance were convinced Jensen Huang alone protected US-made open-weight AI mode…",
+   "url": "https://www.reuters.com/world/us/trump-saw-nvidias-huang-protector-open-weight-ai-models-sources-say-2026-11-23/",
+   "source": "Reuters",
+   "published_at": "2026-11-23T19:31:06Z",
+   "text": "Sources: Trump and JD Vance were convinced Jensen Huang alone protected US-made open-weight AI models; Nvidia bought Hugging Face and invested in Reflection AI",
+   "via": "Techmeme"
   }
  ],
  "sources": "curated, Techmeme, X (found via Techmeme, Reddit, the Internet Archive), Claude Code releases, Anthropic, Hacker News, Simon Willison"
