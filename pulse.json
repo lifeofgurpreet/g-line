@@ -1,132 +1,142 @@
 {
  "schema": 1,
- "generated_at": "2026-11-23T18:18:24Z",
+ "generated_at": "2026-11-24T14:01:47Z",
  "items": [
   {
-   "title": "Nvidia's board unanimously votes to reinstate Jensen Huang as CEO, president, and board director, a…",
-   "url": "https://nvidianews.nvidia.com/news/nvidia-board-reinstates-jensen-huang-as-president-ceo-and-board-director",
-   "source": "Nvidia Newsroom",
-   "published_at": "2026-11-23T14:04:07Z",
-   "text": "Nvidia's board unanimously votes to reinstate Jensen Huang as CEO, president, and board director, after finding “no national security risk”; NVDA jumps 30%+. NVIDIA (NASDAQ: NVDA) today announced that effective immediately, Jensen Huang has been reinstated as President …",
+   "title": "Sources: Jensen Huang disclosed additional affairs beyond the two already reported during his Sunda…",
+   "url": "https://www.wsj.com/business/nvidia-jensen-huang-white-house-9ad03961?st=HzeUyV",
+   "source": "Wall Street Journal",
+   "published_at": "2026-11-24T03:15:49Z",
+   "text": "Sources: Jensen Huang disclosed additional affairs beyond the two already reported during his Sunday meeting with Nvidia's board, but was remorseful about them. Trump made clear he wanted the Nvidia CEO reinstated; on Monday he touted the decision, saying the market proved it was right",
    "via": "Techmeme"
   },
   {
-   "title": "“The NVIDIA Board of Directors has made the correct and proper decision to return Jensen Huang to t…",
-   "url": "https://x.com/WhiteHouse/status/2124872428723552741",
-   "source": "𝕏 @WhiteHouse",
-   "published_at": "2026-11-23T14:27:19Z",
-   "text": "“The NVIDIA Board of Directors has made the correct and proper decision to return Jensen Huang to the position of CEO… Congratulations to Jensen, the NVIDIA Board, to the People of the United States — and, indeed, the World!” - President DONALD J. TRUMP",
-   "author_name": "The White House",
-   "likes": 26704,
-   "story": "President Trump says Nvidia “made the correct and proper decision”, the US “needs Jensen's leadership”, and the US AG found no evidence of “unlawful conduct”"
+   "title": "Everyone I know at Nvidia wanted Jensen back and it shows",
+   "url": "https://x.com/elonmusk/status/2124942828274925651",
+   "source": "𝕏 @elonmusk",
+   "published_at": "2026-11-23T19:07:04Z",
+   "text": "Everyone I know at Nvidia wanted Jensen back and it shows",
+   "author_name": "Elon Musk",
+   "likes": 175361,
+   "story": "Sources: Trump pushed Nvidia to reinstate Jensen Huang after allies argued he was “too big to fail” for the US economy and a victim of “deep state” maneuvering"
   },
   {
-   "title": "Claude Code 2.1.330 released",
-   "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.330",
+   "title": "Claude Code 2.1.331 released",
+   "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.331",
    "source": "Claude Code releases",
-   "published_at": "2026-11-20T22:32:56Z",
-   "text": "Added sign-in to organizations managed in Anthropic's Enterprise Admin Console: after claude auth login, Claude Code applies the organization's settings and uses its cloud provider or gateway · Added easel, a built-in mod that draws charts when asked and under MCP metrics results, on Pro, Max and, where available, Team and Enterprise on macOS and Linux; turn automatic charts off in /config · Added CLAUDE_CODE_FULL_SIGN_IN_LINK=1 to print the full sign-in link, if the short one shows an error or a script reads values from it · Self-hosted runner: Added --start-dir / SELF_HOSTED_RUNNER_START_DI…"
+   "published_at": "2026-11-23T21:34:41Z",
+   "text": "Added Code Mode support in terminal sessions on Amazon Bedrock, Google Cloud's Agent Platform, Microsoft Foundry and Claude Platform on AWS · Added oidc.groups_jsonpath to the Claude apps gateway, to read groups from the matching entries of a list of objects with a small subset of JSONPath (RFC 9535) · Added an API connectivity section to claude doctor that reports whether the API can be reached, with the HTTP status or the error, or says why it wasn't tested · Added a notice when tap-mode voice dictation stops by itself, after 15 seconds without recognized speech or at its 2-minute limit"
   },
   {
-   "title": "This is the most important thing OpenAI has published in awhile. We are providing a lot of transpar…",
-   "url": "https://x.com/sama/status/2124551594691932405",
-   "source": "𝕏 @sama",
-   "published_at": "2026-11-22T17:12:27Z",
-   "text": "This is the most important thing OpenAI has published in awhile. We are providing a lot of transparency into our pretraining progress and hope we can agree as a frield to common limits. I think that would be very wise and help ensure safety and control.",
-   "author_name": "Sam Altman",
-   "likes": 10950,
-   "story": "OpenAI shares its models' “perplexity”, or how well they predict data, and urges pacing limits based on such metrics, citing a possible 2027 avalanche of gains"
+   "title": "We’re introducing Shirudo, an open-source Linux runtime allowing agents to defend systems without d…",
+   "url": "https://x.com/OpenAI/status/2124980590717911527",
+   "source": "𝕏 @OpenAI",
+   "published_at": "2026-11-23T21:37:07Z",
+   "text": "We’re introducing Shirudo, an open-source Linux runtime allowing agents to defend systems without downtime. It lets agents write dynamic eBPF controls to shield systems from exploits, giving defenders more time to test and roll out patches. Built by @cisco together with OpenAI.…",
+   "author_name": "OpenAI",
+   "likes": 18333,
+   "story": "OpenAI and Cisco launch Shirudo, an open-source runtime that helps teams protect running Linux systems without a reboot while they roll out patches"
   },
   {
-   "title": "President Trump says Jensen Huang “did nothing wrong”, Nvidia's board “did ask for assurance on the…",
-   "url": "https://www.cnbc.com/2026/11/23/trump-nvidia-jensen-huang.html",
-   "source": "Dan Mangan / CNBC",
-   "published_at": "2026-11-23T15:21:04Z",
-   "text": "President Trump says Jensen Huang “did nothing wrong”, Nvidia's board “did ask for assurance on the national security threat”, and he spoke to Xi about Huang. President Donald Trump told CNBC on Monday morning that he spoke directly to Nvidia's board and urged them to reinstate CEO Jensen Huang.",
-   "via": "Techmeme"
-  },
-  {
-   "title": "GLM-5.4: Toward Generalized Coding with Our First Loop Transformer",
-   "url": "https://z.ai/blog/glm-5.4",
-   "source": "Hacker News",
-   "published_at": "2026-11-23T10:06:43Z",
-   "text": "817 points and 296 comments on Hacker News.",
-   "points": 817,
-   "discussion": "https://news.ycombinator.com/item?id=50609685"
-  },
-  {
-   "title": "Source: Trump dialed into Nvidia's board meeting to argue for Huang's return; a US official says he…",
-   "url": "https://www.semafor.com/article/11/23/2026/jensen-huang-reinstated-as-nvidia-ceo",
-   "source": "Semafor",
-   "published_at": "2026-11-23T15:15:49Z",
-   "text": "Source: Trump dialed into Nvidia's board meeting to argue for Huang's return; a US official says he “was totally involved” and “we have to protect our geniuses”. US President Donald Trump had dialed into Nvidia's board meeting to argue for Jensen Huang's return …",
-   "via": "Techmeme"
-  },
-  {
-   "title": "A Beginner's Guide to Local AI with Inkling, Qwen, and Unsloth",
-   "url": "https://www.gpupartner.com/blog/beginners-guide-local-ai-inkling-qwen-unsloth",
-   "source": "Hacker News",
-   "published_at": "2026-11-22T21:01:16Z",
-   "text": "687 points and 278 comments on Hacker News.",
-   "points": 687,
-   "discussion": "https://news.ycombinator.com/item?id=50603845"
-  },
-  {
-   "title": "Sources: Nvidia board's decision to reinstate Jensen Huang was done without consulting Nvidia's sen…",
-   "url": "https://www.bloomberg.com/news/articles/2026-11-23/nvidia-s-about-face-on-huang-made-without-consulting-leadership",
-   "source": "Bloomberg",
-   "published_at": "2026-11-23T18:02:24Z",
-   "text": "Sources: Nvidia board's decision to reinstate Jensen Huang was done without consulting Nvidia's senior leadership, who were only informed at the last minute",
-   "via": "Techmeme"
-  },
-  {
-   "title": "Perplexity and Intelligence",
-   "url": "https://openai.com/index/perplexity-and-intelligence/",
-   "source": "Hacker News",
-   "published_at": "2026-11-22T17:06:27Z",
-   "text": "670 points and 434 comments on Hacker News.",
-   "points": 670,
-   "discussion": "https://news.ycombinator.com/item?id=50601525"
-  },
-  {
-   "title": "Nvidia's board says it voted to reinstate Jensen Huang after receiving input from “senior levels” o…",
-   "url": "https://www.ft.com/content/08914b05-bbfa-478d-b38a-549acfc1aae6",
-   "source": "Tim Bradshaw / Financial Ti…",
-   "published_at": "2026-11-23T14:25:03Z",
-   "text": "Nvidia's board says it voted to reinstate Jensen Huang after receiving input from “senior levels” of the US government; a probe into his conduct is ongoing. Startling reversal of board's position on disgraced co-founder sends AI giant's share price soaring",
-   "via": "Techmeme"
-  },
-  {
-   "title": "Nvidia's board says it is starting a search to fill a new position, Chief Compliance Officer, repor…",
-   "url": "https://www.reuters.com/technology/nvidia-reinstates-jensen-huang-ceo-2026-11-23/",
-   "source": "Anhata Rooprai / Reuters",
-   "published_at": "2026-11-23T16:41:09Z",
-   "text": "Nvidia's board says it is starting a search to fill a new position, Chief Compliance Officer, reporting to the Nominating and Corporate Governance Committee. Nvidia said on Monday it was reinstating Jensen Huang as CEO, effective immediately, an extraordinary reversal that followed calls …",
-   "via": "Techmeme"
-  },
-  {
-   "title": "Oregon and Virginia sue SpaceX, alleging Grok Imagine's “spicy mode” violated consumer laws by crea…",
-   "url": "https://www.nytimes.com/2026/11/23/technology/spacex-lawsuit-ai-sexualized-images.html",
-   "source": "New York Times",
-   "published_at": "2026-11-23T13:55:50Z",
-   "text": "Oregon and Virginia sue SpaceX, alleging Grok Imagine's “spicy mode” violated consumer laws by creating 1.8M+ sexualized images of women and 65+ of children. The states accused Elon Musk's company of violating consumer protection laws with its Grok Imagine artificial intelligence tool, which created the images.",
-   "via": "Techmeme"
-  },
-  {
-   "title": "Sources: Trump directed an effort, led by JD Vance, to push for Jensen Huang's reinstatement, assur…",
+   "title": "Sources: Trump had JD Vance lead the push to reinstate Jensen Huang, including working to assure Nv…",
    "url": "https://www.nytimes.com/2026/11/23/technology/trump-nvidia-huang.html?unlocked_article_code=1.SlE.plCA.zs7Mh9MXa5RG&smid=url-share",
    "source": "New York Times",
    "published_at": "2026-11-23T17:11:19Z",
-   "text": "Sources: Trump directed an effort, led by JD Vance, to push for Jensen Huang's reinstatement, assuring Nvidia's board Huang posed no national security risk. President Trump decided he wanted to do whatever he could to help Mr. Huang get his old job back, two people familiar with the matter said.",
+   "text": "Sources: Trump had JD Vance lead the push to reinstate Jensen Huang, including working to assure Nvidia's board that Huang was not facing criminal charges. President Trump decided he wanted to do whatever he could to help Mr. Huang get his old job back, two people familiar with the matter said.",
    "via": "Techmeme"
   },
   {
-   "title": "Amazon agrees to acquire much of startup Decart, including the Decart Optimization Stack and its fo…",
-   "url": "https://www.bloomberg.com/news/articles/2026-11-23/amazon-is-said-to-pay-7-5-billion-for-ai-startup-decart-s-tech",
-   "source": "Matt Day / Bloomberg",
-   "published_at": "2026-11-23T14:51:19Z",
-   "text": "Amazon agrees to acquire much of startup Decart, including the Decart Optimization Stack and its founding team and AI researchers, a source says for ~$7.5B. Amazon.com Inc. has agreed to acquire much of startup Decart AI, buying tools to bolster the cloud-computing company's artificial intelligence infrastructure.",
+   "title": "LLM agents work for their parent companies, not for you",
+   "url": "https://michaelharley.net/posts/2026/11/01/llm-agents-work-for-their-parent-companies-not-for-you/",
+   "source": "Hacker News",
+   "published_at": "2026-11-24T12:40:15Z",
+   "text": "149 points and 44 comments on Hacker News.",
+   "points": 149,
+   "discussion": "https://news.ycombinator.com/item?id=50627340"
+  },
+  {
+   "title": "Releasing Muse in the UK starting today -- now spells colour with a \"u\".",
+   "url": "https://x.com/finkd/status/2125107155338711179",
+   "source": "𝕏 @finkd",
+   "published_at": "2026-11-24T06:00:03Z",
+   "text": "Releasing Muse in the UK starting today -- now spells colour with a \"u\".",
+   "author_name": "Mark Zuckerberg",
+   "likes": 5563,
+   "story": "Meta rolls out Muse to UK adults to help with everyday tasks, the first Big Tech company to launch an AI agent in the UK; UK watchdogs have warned about agents"
+  },
+  {
+   "title": "Ladybird's first alpha release",
+   "url": "https://simonwillison.net/2026/Nov/23/ladybird/",
+   "source": "Simon Willison's weblog",
+   "published_at": "2026-11-23T21:46:35Z",
+   "text": "Ladybird is an astonishingly ambitious project: a new browser, in 2026, with its own implementation of most of the key components - HTML parsing, CSS engine, layout, JavaScript, even WebAssembly. It still uses a few external components - things like HarfBuzz for text shaping, Skia for 2D graphics, ffmpeg for video, and SQLite for the things you do with SQLite. Everything else is part of Ladybird, or code brought in from Ladybird's even more ambitious predecessor project SerenityOS ."
+  },
+  {
+   "title": "Sources: Anthropic and OpenAI employees warn that internal, unreleased models have achieved rapid a…",
+   "url": "https://www.axios.com/2026/11/24/anthropic-openai-unreleased-ai-safety-risks",
+   "source": "Madison Mills / Axios",
+   "published_at": "2026-11-24T11:21:15Z",
+   "text": "Sources: Anthropic and OpenAI employees warn that internal, unreleased models have achieved rapid advances in reasoning, making them unsafe to release publicly. Anthropic and OpenAI are facing an increasingly urgent problem: Internal, unreleased models are becoming so powerful that many employees …",
    "via": "Techmeme"
+  },
+  {
+   "title": "Introducing Claude Ship (beta): Claude can review your pull requests, work on fixes, and approve th…",
+   "url": "https://x.com/ClaudeDevs/status/2124959436640858475",
+   "source": "𝕏 @ClaudeDevs",
+   "published_at": "2026-11-23T20:13:04Z",
+   "text": "Introducing Claude Ship (beta): Claude can review your pull requests, work on fixes, and approve the ones your team's policy allows. The goal is to help you ship code as fast as you can write it.",
+   "author_name": "ClaudeDevs",
+   "likes": 23079,
+   "story": "Anthropic unveils Claude Ship, letting Claude review, fix, and approve GitHub pull requests based on team policies, in beta for Claude Team and Enterprise tiers"
+  },
+  {
+   "title": "Anthropic Breaks Below $83 IPO Price in Premarket Trading",
+   "url": "https://www.bloomberg.com/news/articles/2026-11-24/anthropic-breaks-below-83-ipo-price-in-premarket-trading",
+   "source": "Hacker News",
+   "published_at": "2026-11-24T13:23:47Z",
+   "text": "65 points and 18 comments on Hacker News.",
+   "points": 65,
+   "discussion": "https://news.ycombinator.com/item?id=50627836"
+  },
+  {
+   "title": "Two big points from this new Anthropic paper: 1) The most AI value comes from changing the organiza…",
+   "url": "https://x.com/emollick/status/2125098309928812898",
+   "source": "𝕏 @emollick",
+   "published_at": "2026-11-24T05:24:54Z",
+   "text": "Two big points from this new Anthropic paper: 1) The most AI value comes from changing the organization 2) There is wide worker resistance to AI adoption (partially due to point 1) Changes that expand what workers do & share AI gains with them could help",
+   "author_name": "Ethan Mollick",
+   "likes": 1323,
+   "story": "Study: most AI deployments derive value by expanding and accelerating output rather than reducing costs, with 80% of 100 AI-built apps automating manual tasks",
+   "links": [
+    "https://www.anthropic.com/research/working-with-ai"
+   ]
+  },
+  {
+   "title": ".@elonmusk you can take back the lead by going full-on open-source and open-sourcing @grok!",
+   "url": "https://x.com/ClementDelangue/status/2124935927583641899",
+   "source": "𝕏 @ClementDelangue",
+   "published_at": "2026-11-23T18:39:39Z",
+   "text": ".@elonmusk you can take back the lead by going full-on open-source and open-sourcing @grok!",
+   "author_name": "clem 🤗",
+   "likes": 1104,
+   "story": "Sources: SpaceX and Tesla are negotiating an all-stock, $3.5T merger led by two special committees of five “disinterested” directors, all with ties to Elon Musk"
+  },
+  {
+   "title": "A profile of Levent Alpöge, the Anthropic mathematician who found a Riemann hypothesis proof with C…",
+   "url": "https://www.wsj.com/tech/ai/riemann-hypothesis-anthropic-math-levent-alpoge-75351bcb?st=waZnXv&reflink=desktopwebshare_permalink",
+   "source": "Wall Street Journal",
+   "published_at": "2026-11-24T12:50:57Z",
+   "text": "A profile of Levent Alpöge, the Anthropic mathematician who found a Riemann hypothesis proof with Claude and held off releasing it until after Anthropic's IPO. Mathematicians tried and failed to crack the Riemann Hypothesis for 167 years. Anthropic's Levent Alpöge says he's found a proof with Claude.",
+   "via": "Techmeme"
+  },
+  {
+   "title": "Who in Washington owns and trades Nvidia stock",
+   "url": "https://www.kadoa.com/congress/insights/trump-nvidia",
+   "source": "Hacker News",
+   "published_at": "2026-11-24T11:51:05Z",
+   "text": "97 points and 32 comments on Hacker News.",
+   "points": 97,
+   "discussion": "https://news.ycombinator.com/item?id=50626861"
   }
  ],
  "sources": "curated, Techmeme, X (found via Techmeme, Reddit, the Internet Archive), Claude Code releases, Anthropic, Hacker News, Simon Willison"
