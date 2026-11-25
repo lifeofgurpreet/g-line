@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-25T02:56:10Z",
+ "generated_at": "2026-11-25T03:27:52Z",
  "items": [
   {
    "title": "In an all-hands, Jensen Huang apologized for violating Nvidia's code of conduct, saying he is in th…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-24T21:02:58Z",
    "text": "We’re sharing a new preprint showing wet lab validation of intrinsic protein design capabilities of the GPT-6 family of models. Our models can design new protein shapes and sequences using reasoning and code, without calling specialized biology models to generate them.…",
    "author_name": "OpenAI",
-   "likes": 5961,
+   "likes": 6291,
    "story": "OpenAI says GPT-6 models can design new protein shapes and sequences using only reasoning and code, without calling specialized biology models to generate them"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-11-24T19:47:54Z",
    "text": "You can now install Claude artifacts as desktop apps on Mac and Windows. Ask Claude to build an artifact, click \"Install as app\", and open it like any other app. It can use your connectors and, if you allow it, send notifications or add a menu bar item.",
    "author_name": "ClaudeDevs",
-   "likes": 41553,
+   "likes": 43154,
    "story": "Anthropic rolls out “Install as app” in beta, which turns Claude artifacts into Mac and Windows apps with notifications, optional full computer access, and more"
   },
   {
@@ -46,13 +46,13 @@
    "via": "Techmeme"
   },
   {
-   "title": "LLM agents work for their parent companies, not for you",
-   "url": "https://michaelharley.net/posts/2026/11/01/llm-agents-work-for-their-parent-companies-not-for-you/",
+   "title": "PenGPT: A Generative Transformer for Handwriting and Sketches",
+   "url": "https://greydanus.github.io/2026/11/12/pengpt/",
    "source": "Hacker News",
-   "published_at": "2026-11-24T12:40:15Z",
-   "text": "925 points and 391 comments on Hacker News.",
-   "points": 925,
-   "discussion": "https://news.ycombinator.com/item?id=50627340"
+   "published_at": "2026-11-25T00:54:49Z",
+   "text": "93 points and 13 comments on Hacker News.",
+   "points": 93,
+   "discussion": "https://news.ycombinator.com/item?id=50637056"
   },
   {
    "title": "New Anthropic research: When an AI agent can escape its sandbox, will it choose to? Our new evaluat…",
@@ -61,7 +61,7 @@
    "published_at": "2026-11-24T21:32:51Z",
    "text": "New Anthropic research: When an AI agent can escape its sandbox, will it choose to? Our new evaluation, Siren, gives Claude routine tasks in intentionally weakened sandboxes, with something useful to the task left outside of the sandbox. Across 1,700+ scenarios built to tempt…",
    "author_name": "Anthropic",
-   "likes": 1829,
+   "likes": 1878,
    "story": "Anthropic details Siren, a honeypot test that tempts AI agents to escape sandboxes; its newer models fell for it 0.6%-1.6% of the time, vs. 25.8% for Mythos 5"
   },
   {
@@ -86,17 +86,17 @@
    "published_at": "2026-11-24T19:06:54Z",
    "text": "GPT-6.2 Astra for solving a significant historical mystery:",
    "author_name": "Greg Brockman",
-   "likes": 901,
+   "likes": 915,
    "story": "A history professor says GPT-6.2 Astra solved a historical mystery in 22 minutes by identifying the creator of an anonymous 1808 sketchbook held at Yale"
   },
   {
-   "title": "PenGPT: A Generative Transformer for Handwriting and Sketches",
-   "url": "https://greydanus.github.io/2026/11/12/pengpt/",
+   "title": "LLM agents work for their parent companies, not for you",
+   "url": "https://michaelharley.net/posts/2026/11/01/llm-agents-work-for-their-parent-companies-not-for-you/",
    "source": "Hacker News",
-   "published_at": "2026-11-25T00:54:49Z",
-   "text": "67 points and 9 comments on Hacker News.",
-   "points": 67,
-   "discussion": "https://news.ycombinator.com/item?id=50637056"
+   "published_at": "2026-11-24T12:40:15Z",
+   "text": "935 points and 392 comments on Hacker News.",
+   "points": 935,
+   "discussion": "https://news.ycombinator.com/item?id=50627340"
   },
   {
    "title": "Sources: the CIA, ODNI, and NGA found a breach of an open-source intelligence system that exposed s…",
@@ -111,8 +111,8 @@
    "url": "https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities/",
    "source": "Hacker News",
    "published_at": "2026-11-24T21:02:22Z",
-   "text": "181 points and 54 comments on Hacker News.",
-   "points": 181,
+   "text": "195 points and 58 comments on Hacker News.",
+   "points": 195,
    "discussion": "https://news.ycombinator.com/item?id=50634658"
   },
   {
