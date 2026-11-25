@@ -1,13 +1,13 @@
 {
  "schema": 1,
- "generated_at": "2026-11-25T01:51:57Z",
+ "generated_at": "2026-11-25T02:24:14Z",
  "items": [
   {
-   "title": "President Trump finds himself isolated in DC over his moves to reinstate Jensen Huang as even some…",
-   "url": "https://www.cnbc.com/2026/11/24/trump-jensen-huang-nvidia.html",
-   "source": "CNBC",
-   "published_at": "2026-11-24T19:35:58Z",
-   "text": "President Trump finds himself isolated in DC over his moves to reinstate Jensen Huang as even some of his staunchest allies vow to probe Huang and Nvidia",
+   "title": "In an all-hands, Jensen Huang apologized for violating Nvidia's code of conduct, saying he is in th…",
+   "url": "https://www.wired.com/story/jensen-huang-apologizes-to-nvidia-employees-in-first-all-hands-since-his-return/",
+   "source": "Paresh Dave / Wired",
+   "published_at": "2026-11-24T18:02:24Z",
+   "text": "In an all-hands, Jensen Huang apologized for violating Nvidia's code of conduct, saying he is in therapy after making “very serious personal mistakes”. Nvidia CEO Jensen Huang told employees on Tuesday that the company's code of conduct allows room for a “second chance,” …",
    "via": "Techmeme"
   },
   {
@@ -17,7 +17,7 @@
    "published_at": "2026-11-24T21:02:58Z",
    "text": "We’re sharing a new preprint showing wet lab validation of intrinsic protein design capabilities of the GPT-6 family of models. Our models can design new protein shapes and sequences using reasoning and code, without calling specialized biology models to generate them.…",
    "author_name": "OpenAI",
-   "likes": 5377,
+   "likes": 5661,
    "story": "OpenAI says GPT-6 models can design new protein shapes and sequences using only reasoning and code, without calling specialized biology models to generate them"
   },
   {
@@ -34,42 +34,8 @@
    "published_at": "2026-11-24T19:47:54Z",
    "text": "You can now install Claude artifacts as desktop apps on Mac and Windows. Ask Claude to build an artifact, click \"Install as app\", and open it like any other app. It can use your connectors and, if you allow it, send notifications or add a menu bar item.",
    "author_name": "ClaudeDevs",
-   "likes": 38178,
+   "likes": 39851,
    "story": "Anthropic rolls out “Install as app” in beta, which turns Claude artifacts into Mac and Windows apps with notifications, optional full computer access, and more"
-  },
-  {
-   "title": "Jensen Huang says he is back not as a “tech bro” or due to Trump's pressure, but because Nvidia's b…",
-   "url": "https://www.nytimes.com/2026/11/24/technology/jensen-huang-apology-nvidia-ceo.html?unlocked_article_code=1.S1E.xNC-.8GeedDSv6d1J&smid=url-share",
-   "source": "New York Times",
-   "published_at": "2026-11-24T19:26:00Z",
-   "text": "Jensen Huang says he is back not as a “tech bro” or due to Trump's pressure, but because Nvidia's board “evaluated the entire situation” and “gathered facts”. A day after returning to his company, Mr. Huang acknowledged that he violated Nvidia's code …",
-   "via": "Techmeme"
-  },
-  {
-   "title": "LLM agents work for their parent companies, not for you",
-   "url": "https://michaelharley.net/posts/2026/11/01/llm-agents-work-for-their-parent-companies-not-for-you/",
-   "source": "Hacker News",
-   "published_at": "2026-11-24T12:40:15Z",
-   "text": "910 points and 386 comments on Hacker News.",
-   "points": 910,
-   "discussion": "https://news.ycombinator.com/item?id=50627340"
-  },
-  {
-   "title": "New Anthropic research: When an AI agent can escape its sandbox, will it choose to? Our new evaluat…",
-   "url": "https://x.com/AnthropicAI/status/2125341904644763678",
-   "source": "𝕏 @AnthropicAI",
-   "published_at": "2026-11-24T21:32:51Z",
-   "text": "New Anthropic research: When an AI agent can escape its sandbox, will it choose to? Our new evaluation, Siren, gives Claude routine tasks in intentionally weakened sandboxes, with something useful to the task left outside of the sandbox. Across 1,700+ scenarios built to tempt…",
-   "author_name": "Anthropic",
-   "likes": 1725,
-   "story": "Anthropic details Siren, a honeypot test that tempts AI agents to escape sandboxes; its newer models fell for it 0.6%-1.6% of the time, vs. 25.8% for Mythos 5"
-  },
-  {
-   "title": "Three LLM inflection points in twelve months",
-   "url": "https://simonwillison.net/2026/Nov/24/llm-inflection-points/",
-   "source": "Simon Willison's weblog",
-   "published_at": "2026-11-24T23:02:07Z",
-   "text": "I gave a keynote at the AI Engineer Code Summit a couple of weeks ago, constructed around the idea that there have been three significant inflection points in the abilities of LLMs and coding agents in the past twelve months. Here's the video of the talk. In this post I'm going to pull out the major inflection point theme and interrogate it more deeply. Coding agents in November 2025 Today, November 24th 2026, is the one year anniversary of the release of Claude Opus 4.5 . With hindsight, this was a consequential model."
   },
   {
    "title": "Sources: Jensen Huang said Nvidia doesn't need a succession plan because it operates a unique busin…",
@@ -80,47 +46,77 @@
    "via": "Techmeme"
   },
   {
-   "title": "Releasing Muse in the UK starting today -- now spells colour with a \"u\".",
-   "url": "https://x.com/finkd/status/2125107155338711179",
-   "source": "𝕏 @finkd",
-   "published_at": "2026-11-24T06:00:03Z",
-   "text": "Releasing Muse in the UK starting today -- now spells colour with a \"u\".",
-   "author_name": "Mark Zuckerberg",
-   "likes": 7194,
-   "story": "Meta rolls out Muse to UK adults to help with everyday tasks, the first Big Tech company to launch an AI agent in the UK; UK watchdogs have warned about agents"
+   "title": "LLM agents work for their parent companies, not for you",
+   "url": "https://michaelharley.net/posts/2026/11/01/llm-agents-work-for-their-parent-companies-not-for-you/",
+   "source": "Hacker News",
+   "published_at": "2026-11-24T12:40:15Z",
+   "text": "917 points and 387 comments on Hacker News.",
+   "points": 917,
+   "discussion": "https://news.ycombinator.com/item?id=50627340"
+  },
+  {
+   "title": "BREAKING: President Trump says he is willing to pardon Nvidia, $NVDA, CEO Jensen Huang “if necessar…",
+   "url": "https://x.com/KobeissiLetter/status/2125364172397666355",
+   "source": "𝕏 @KobeissiLetter",
+   "published_at": "2026-11-24T23:01:20Z",
+   "text": "BREAKING: President Trump says he is willing to pardon Nvidia, $NVDA, CEO Jensen Huang “if necessary,” per NY Post. Trump also tells Jensen Huang not to plead the 5th at his congressional testimony next week. President Trump is fully backing Jensen Huang.",
+   "author_name": "The Kobeissi Letter",
+   "likes": 8270,
+   "story": "Trump says a pardon for Jensen Huang is “always an option” but likely unnecessary, and it's “probably not too late” for the US to take an equity stake in Nvidia"
+  },
+  {
+   "title": "Three LLM inflection points in twelve months",
+   "url": "https://simonwillison.net/2026/Nov/24/llm-inflection-points/",
+   "source": "Simon Willison's weblog",
+   "published_at": "2026-11-24T23:02:07Z",
+   "text": "I gave a keynote at the AI Engineer Code Summit a couple of weeks ago, constructed around the idea that there have been three significant inflection points in the abilities of LLMs and coding agents in the past twelve months. Here's the video of the talk. In this post I'm going to pull out the major inflection point theme and interrogate it more deeply. Coding agents in November 2025 Today, November 24th 2026, is the one year anniversary of the release of Claude Opus 4.5 . With hindsight, this was a consequential model."
+  },
+  {
+   "title": "Sources: the CIA, ODNI, and NGA found a breach of an open-source intelligence system that exposed s…",
+   "url": "https://www.nytimes.com/2026/11/24/us/politics/spy-agencies-computer-network-breaches.html?unlocked_article_code=1.S1E.8Ak8.1m2taItvN8OT&smid=url-share",
+   "source": "New York Times",
+   "published_at": "2026-11-24T20:06:00Z",
+   "text": "Sources: the CIA, ODNI, and NGA found a breach of an open-source intelligence system that exposed some unclassified info; hackers likely used the AI tool Artex. The intrusion affecting the C.I.A. and the Office of the Director of National Intelligence comes amid heightened concerns about cybersecurity.",
+   "via": "Techmeme"
+  },
+  {
+   "title": "New Anthropic research: When an AI agent can escape its sandbox, will it choose to? Our new evaluat…",
+   "url": "https://x.com/AnthropicAI/status/2125341904644763678",
+   "source": "𝕏 @AnthropicAI",
+   "published_at": "2026-11-24T21:32:51Z",
+   "text": "New Anthropic research: When an AI agent can escape its sandbox, will it choose to? Our new evaluation, Siren, gives Claude routine tasks in intentionally weakened sandboxes, with something useful to the task left outside of the sandbox. Across 1,700+ scenarios built to tempt…",
+   "author_name": "Anthropic",
+   "likes": 1778,
+   "story": "Anthropic details Siren, a honeypot test that tempts AI agents to escape sandboxes; its newer models fell for it 0.6%-1.6% of the time, vs. 25.8% for Mythos 5"
   },
   {
    "title": "GPT-6 models demonstrate intrinsic protein-design capabilities",
    "url": "https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities/",
    "source": "Hacker News",
    "published_at": "2026-11-24T21:02:22Z",
-   "text": "167 points and 37 comments on Hacker News.",
-   "points": 167,
+   "text": "179 points and 49 comments on Hacker News.",
+   "points": 179,
    "discussion": "https://news.ycombinator.com/item?id=50634658"
   },
   {
-   "title": "In an all-hands, Jensen Huang apologized for violating Nvidia's code of conduct, saying he is in th…",
-   "url": "https://www.wired.com/story/jensen-huang-apologizes-to-nvidia-employees-in-first-all-hands-since-his-return/",
-   "source": "Paresh Dave / Wired",
-   "published_at": "2026-11-24T18:02:24Z",
-   "text": "In an all-hands, Jensen Huang apologized for violating Nvidia's code of conduct, saying he is in therapy after making “very serious personal mistakes”. Nvidia CEO Jensen Huang told employees on Tuesday that the company's code of conduct allows room for a “second chance,” …",
-   "via": "Techmeme"
+   "title": "GPT-6.2 Astra for solving a significant historical mystery:",
+   "url": "https://x.com/gdb/status/2125305172721320165",
+   "source": "𝕏 @gdb",
+   "published_at": "2026-11-24T19:06:54Z",
+   "text": "GPT-6.2 Astra for solving a significant historical mystery:",
+   "author_name": "Greg Brockman",
+   "likes": 884,
+   "story": "A history professor says GPT-6.2 Astra solved a historical mystery in 22 minutes by identifying the creator of an anonymous 1808 sketchbook held at Yale"
   },
   {
-   "title": "Anthropic breaks below $83 IPO price",
-   "url": "https://www.bloomberg.com/news/articles/2026-11-24/anthropic-breaks-below-83-ipo-price-in-premarket-trading",
-   "source": "Hacker News",
-   "published_at": "2026-11-24T13:23:47Z",
-   "text": "348 points and 691 comments on Hacker News.",
-   "points": 348,
-   "discussion": "https://news.ycombinator.com/item?id=50627836"
-  },
-  {
-   "title": "Ladybird's first alpha release",
-   "url": "https://simonwillison.net/2026/Nov/23/ladybird/",
-   "source": "Simon Willison's weblog",
-   "published_at": "2026-11-23T21:46:35Z",
-   "text": "Ladybird is an astonishingly ambitious project: a new browser, in 2026, with its own implementation of most of the key components - HTML parsing, CSS engine, layout, JavaScript, even WebAssembly. It still uses a few external components - things like HarfBuzz for text shaping, Skia for 2D graphics, ffmpeg for video, and SQLite for the things you do with SQLite. Everything else is part of Ladybird, or code brought in from Ladybird's even more ambitious predecessor project SerenityOS ."
+   "title": "Releasing Muse in the UK starting today -- now spells colour with a \"u\".",
+   "url": "https://x.com/finkd/status/2125107155338711179",
+   "source": "𝕏 @finkd",
+   "published_at": "2026-11-24T06:00:03Z",
+   "text": "Releasing Muse in the UK starting today -- now spells colour with a \"u\".",
+   "author_name": "Mark Zuckerberg",
+   "likes": 7208,
+   "story": "Meta rolls out Muse to UK adults to help with everyday tasks, the first Big Tech company to launch an AI agent in the UK; UK watchdogs have warned about agents"
   },
   {
    "title": "Sources: Anthropic and OpenAI employees warn that internal, unreleased models have achieved rapid a…",
@@ -129,6 +125,15 @@
    "published_at": "2026-11-24T11:21:15Z",
    "text": "Sources: Anthropic and OpenAI employees warn that internal, unreleased models have achieved rapid advances in reasoning, making them unsafe to release publicly. Anthropic and OpenAI are facing an increasingly urgent problem: Internal, unreleased models are becoming so powerful that many employees …",
    "via": "Techmeme"
+  },
+  {
+   "title": "Launch HN: Versine (YC F26) – MCP to send and receive money",
+   "url": "https://news.ycombinator.com/item?id=50634426",
+   "source": "Hacker News",
+   "published_at": "2026-11-24T20:44:15Z",
+   "text": "70 points and 51 comments on Hacker News.",
+   "points": 70,
+   "discussion": "https://news.ycombinator.com/item?id=50634426"
   }
  ],
  "sources": "curated, Techmeme, X (found via Techmeme, Reddit, the Internet Archive), Claude Code releases, Anthropic, Hacker News, Simon Willison"
