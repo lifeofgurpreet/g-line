@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-26T20:40:53Z",
+ "generated_at": "2026-11-26T21:12:48Z",
  "items": [
   {
    "title": "Sources: Nvidia tells its manufacturing partners to halt AI server shipments to Malaysia, Singapore…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-25T18:22:33Z",
    "text": "No, I do not believe that we should “surrender human free will” to AI systems, and it’s absurd to suggest that I do. I have written hundreds of pages of essays and a constant theme in them is the need for AI to be governed by legitimate democratic processes. For millennia (going…",
    "author_name": "Dario Amodei",
-   "likes": 20205,
+   "likes": 20249,
    "story": "Dario Amodei rejects the idea of surrendering free will to AI and accuses rival AI execs of “vibes-based” positioning, rebutting a report on AI leaders' views"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-11-25T19:38:35Z",
    "text": "I've joined OpenAI! I'm very proud of my time at Anthropic, and I'll continue to root for my former colleagues. Both companies have important roles to play in the future. There is a tremendous amount of work ahead of us to bring AI to the world, and it will demand the very best…",
    "author_name": "Thariq",
-   "likes": 30168,
+   "likes": 30257,
    "story": "Thariq Shihipar joins OpenAI after leaving Anthropic in October, saying he felt he could “personally contribute the most” to bringing AI to the world at OpenAI"
   },
   {
@@ -50,8 +50,8 @@
    "url": "https://devnull.land/amd-specific-llama-cpp",
    "source": "Hacker News",
    "published_at": "2026-11-26T17:11:29Z",
-   "text": "174 points and 46 comments on Hacker News.",
-   "points": 174,
+   "text": "190 points and 50 comments on Hacker News.",
+   "points": 190,
    "discussion": "https://news.ycombinator.com/item?id=50657265"
   },
   {
@@ -61,7 +61,7 @@
    "published_at": "2026-11-26T02:50:10Z",
    "text": "We made a billing mistake at launch of GPT-6.2 that incorrectly discounted GPT-6.2 Astra and Sol usage for most users. We’ve fixed this now, so the same work will use more of your plan’s usage allowance. Comparing to last week, you will reach your limits 40% faster on GPT-6.2…",
    "author_name": "Tibo",
-   "likes": 17426,
+   "likes": 17510,
    "story": "OpenAI says it corrected a GPT-6.2 Astra and Sol launch billing mistake that had incorrectly discounted usage; Astra users will now hit their limits 40% faster"
   },
   {
@@ -86,17 +86,17 @@
    "published_at": "2026-11-25T23:55:14Z",
    "text": "Wow, they were considering using the Defense Production Act (aka the WarClaude act) to force NVIDIA to reinstate Jensen as CEO.",
    "author_name": "Andrew Curran",
-   "likes": 1063,
+   "likes": 1068,
    "story": "Sources: Pete Hegseth and other Pentagon officials discussed using the Defense Production Act as leverage to pressure Nvidia's board to reinstate Jensen Huang"
   },
   {
-   "title": "The New York Times warns photographers not to update Photoshop over AI features",
-   "url": "https://www.theverge.com/ai-artificial-intelligence/1041227/the-new-york-times-warns-photographers-not-to-update-photoshop-over-ai-features",
+   "title": "Much shorter version of GRH Lean verification from Anthropic",
+   "url": "https://github.com/lsernau/grh-lean",
    "source": "Hacker News",
-   "published_at": "2026-11-25T21:18:02Z",
-   "text": "628 points and 496 comments on Hacker News.",
-   "points": 628,
-   "discussion": "https://news.ycombinator.com/item?id=50647673"
+   "published_at": "2026-11-25T21:48:10Z",
+   "text": "539 points and 340 comments on Hacker News.",
+   "points": 539,
+   "discussion": "https://news.ycombinator.com/item?id=50648050"
   },
   {
    "title": "Sources: SAP is preparing a plan to eliminate at least 10,000 positions, or 9% of its staff globall…",
@@ -107,13 +107,13 @@
    "via": "Techmeme"
   },
   {
-   "title": "Much shorter version of GRH Lean verification from Anthropic",
-   "url": "https://github.com/lsernau/grh-lean",
+   "title": "Google Will Make AI Agents Use Its MCP Servers. The Gmail One Can't Send Email",
+   "url": "https://techstackups.com/articles/google-workspace-ai-agents-mcp/",
    "source": "Hacker News",
-   "published_at": "2026-11-25T21:48:10Z",
-   "text": "534 points and 338 comments on Hacker News.",
-   "points": 534,
-   "discussion": "https://news.ycombinator.com/item?id=50648050"
+   "published_at": "2026-11-26T09:44:23Z",
+   "text": "144 points and 159 comments on Hacker News.",
+   "points": 144,
+   "discussion": "https://news.ycombinator.com/item?id=50653477"
   },
   {
    "title": "Ladybird's first alpha release",
