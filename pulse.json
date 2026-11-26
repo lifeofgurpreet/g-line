@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-26T12:14:29Z",
+ "generated_at": "2026-11-26T12:49:02Z",
  "items": [
   {
    "title": "Sources: Pete Hegseth and other Pentagon officials discussed using the Defense Production Act as le…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-25T18:22:33Z",
    "text": "No, I do not believe that we should “surrender human free will” to AI systems, and it’s absurd to suggest that I do. I have written hundreds of pages of essays and a constant theme in them is the need for AI to be governed by legitimate democratic processes. For millennia (going…",
    "author_name": "Dario Amodei",
-   "likes": 18594,
+   "likes": 18750,
    "story": "Dario Amodei rejects the idea of surrendering free will to AI and accuses rival AI execs of “vibes-based” positioning, rebutting a report on AI leaders' views"
   },
   {
@@ -28,31 +28,21 @@
    "text": "Added skills from MCP servers (beta). They show as server:skill in the / menu; other skills keep their names · Added a PreSkillShellCommand hook event that can refuse a skill or command's inline shell commands as it loads; on 2.1.331 and older, a settings file naming it opens a dialog at start · Added \"Always deliver\" to the prompt for held messages from other sessions · Added a footer line that stays while a flagged message has your session on a different model, until you pick one with /model"
   },
   {
-   "title": "What I do not understand is why Chinese timelines for a big model X would slip due to anti-distilla…",
-   "url": "https://x.com/teortaxesTex/status/2125888718049603776",
-   "source": "𝕏 @teortaxesTex",
-   "published_at": "2026-11-26T09:45:42Z",
-   "text": "What I do not understand is why Chinese timelines for a big model X would slip due to anti-distillation in particular. You can just release an undercooked Preview. Are they literally *pretraining* on Claude logs? is this why everything's so fucked now? Can't you uh do it smarter?",
-   "author_name": "Teortaxes▶️ (DeepSeek 推特🐋铁粉 2023 – ∞)",
-   "likes": 85,
-   "story": "Sources: Z.ai's 3T-parameter flagship GLM-5.5 missed its November release and could be delayed to Q1 2027 or later due to US rules and labs' distillation curbs"
-  },
-  {
    "title": "I've joined OpenAI! I'm very proud of my time at Anthropic, and I'll continue to root for my former…",
    "url": "https://x.com/trq212/status/2125675533761671405",
    "source": "𝕏 @trq212",
    "published_at": "2026-11-25T19:38:35Z",
    "text": "I've joined OpenAI! I'm very proud of my time at Anthropic, and I'll continue to root for my former colleagues. Both companies have important roles to play in the future. There is a tremendous amount of work ahead of us to bring AI to the world, and it will demand the very best…",
    "author_name": "Thariq",
-   "likes": 27764,
+   "likes": 27969,
    "story": "Thariq Shihipar joins OpenAI after leaving Anthropic in October, saying he felt he could “personally contribute the most” to bringing AI to the world at OpenAI"
   },
   {
-   "title": "Investigation: Nvidia sells its most advanced chips to at least two Chinese-owned California compan…",
-   "url": "https://www.cbsnews.com/news/nvidia-china-ai-chips-computing-sales/",
-   "source": "Josh Boswell / CBS News",
-   "published_at": "2026-11-26T01:56:48Z",
-   "text": "Investigation: Nvidia sells its most advanced chips to at least two Chinese-owned California companies, which have leased or sold some of them to firms in Asia. Nvidia is selling its most cutting-edge chips to at least two companies that are U.S.-based, but are actually controlled by Chinese-owned firms …",
+   "title": "Sources: Nvidia tells its manufacturing partners to halt AI server shipments to Malaysia, Singapore…",
+   "url": "https://www.ft.com/content/7838a715-07d4-4605-aa60-21f5af2b2370?accessToken=zwAAAaKuNQQ-lc82jEUmoM5JUdOoR_A5rypRr894OKcVB9RGBdOqYCH1rysjcM8_V3g53u1A9NOvn7-PtUiQ488yW5PWvC5N09OZQc9GiKyhHdO5lhOroTBLn9OMFcQdt82IlAE.MEUCIAPJOFlcs0Bojv5ln7BmjmdLTj5dPHWXAdsn-FuOch_SAiEA5Eu4HIM2_h5rJDnldWxSlTi5axDZdg9vO7b_UplS1Nk&segmentId=7d4bcc2e-e664-92ba-62e3-5590579f1902",
+   "source": "Financial Times",
+   "published_at": "2026-11-26T05:46:04Z",
+   "text": "Sources: Nvidia tells its manufacturing partners to halt AI server shipments to Malaysia, Singapore, Thailand, and Indonesia, as the US steps up export controls. Move comes as US steps up export controls to prevent Chinese access to AI computing power — Nvidia has told its manufacturing partners …",
    "via": "Techmeme"
   },
   {
@@ -60,8 +50,8 @@
    "url": "https://twitter.com/thsottiaux/status/2125784147889393806",
    "source": "Hacker News",
    "published_at": "2026-11-26T03:36:58Z",
-   "text": "303 points and 174 comments on Hacker News.",
-   "points": 303,
+   "text": "316 points and 177 comments on Hacker News.",
+   "points": 316,
    "discussion": "https://news.ycombinator.com/item?id=50651117"
   },
   {
@@ -71,7 +61,7 @@
    "published_at": "2026-11-25T16:26:59Z",
    "text": "We recently migrated our Messages API from Python to Rust. On our engineering blog, we share how we used the existing service to verify the new one, with teams of Claude agents tracking down and fixing differences between the two versions.",
    "author_name": "Anthropic",
-   "likes": 12149,
+   "likes": 12304,
    "story": "Anthropic details migrating its Messages API, the primary way customers access Claude, from Python to Rust, and using the Python service to verify the migration",
    "links": [
     "https://www.anthropic.com/research/migrating-api-to-rust"
@@ -85,21 +75,41 @@
    "text": "I gave a keynote at the AI Engineer Code Summit a couple of weeks ago, constructed around the idea that there have been three significant inflection points in the abilities of LLMs and coding agents in the past twelve months. Here's the video of the talk. In this post I'm going to pull out the major inflection point theme and interrogate it more deeply. Coding agents in November 2025 Today, November 24th 2026, is the one year anniversary of the release of Claude Opus 4.5 . With hindsight, this was a consequential model."
   },
   {
-   "title": "Sources: leading AI labs are sitting on major, unreleased algorithmic breakthroughs that could brea…",
-   "url": "https://scottaaronson.blog/?p=10379",
-   "source": "Scott Aaronson / Shtetl-Opt…",
-   "published_at": "2026-11-26T09:51:41Z",
-   "text": "Sources: leading AI labs are sitting on major, unreleased algorithmic breakthroughs that could break deployed cryptosystems, but their exact nature is unknown. I feel like my previous posts (and post titles), and podcasts, and talks, have failed to do full justice to the magnitude of what's now happening, so I'm trying again.",
+   "title": "Investigation: Nvidia sells its most advanced chips to at least two Chinese-owned California compan…",
+   "url": "https://www.cbsnews.com/news/nvidia-china-ai-chips-computing-sales/",
+   "source": "Josh Boswell / CBS News",
+   "published_at": "2026-11-26T01:56:48Z",
+   "text": "Investigation: Nvidia sells its most advanced chips to at least two Chinese-owned California companies, which have leased or sold some of them to firms in Asia. Nvidia is selling its most cutting-edge chips to at least two companies that are U.S.-based, but are actually controlled by Chinese-owned firms …",
    "via": "Techmeme"
+  },
+  {
+   "title": "Scott Aaronson on his blog. I have also heard this. In fact, this rumor has persisted for about ten…",
+   "url": "https://x.com/AndrewCurran_/status/2125589468786909510",
+   "source": "𝕏 @AndrewCurran_",
+   "published_at": "2026-11-25T13:56:35Z",
+   "text": "Scott Aaronson on his blog. I have also heard this. In fact, this rumor has persisted for about ten days, about both Anthropic and OpenAI. Considering how closely their recent math results have mirrored each other, if one has it, they probably both do. This would crack RSA.",
+   "author_name": "Andrew Curran",
+   "likes": 3572,
+   "story": "Sources: leading AI labs are sitting on major, unreleased algorithmic breakthroughs that could break deployed cryptosystems, but their exact nature is unknown"
   },
   {
    "title": "Google Will Make AI Agents Use Its MCP Servers. The Gmail One Can't Send Email",
    "url": "https://techstackups.com/articles/google-workspace-ai-agents-mcp/",
    "source": "Hacker News",
    "published_at": "2026-11-26T09:44:23Z",
-   "text": "64 points and 52 comments on Hacker News.",
-   "points": 64,
+   "text": "73 points and 62 comments on Hacker News.",
+   "points": 73,
    "discussion": "https://news.ycombinator.com/item?id=50653477"
+  },
+  {
+   "title": "What I do not understand is why Chinese timelines for a big model X would slip due to anti-distilla…",
+   "url": "https://x.com/teortaxesTex/status/2125888718049603776",
+   "source": "𝕏 @teortaxesTex",
+   "published_at": "2026-11-26T09:45:42Z",
+   "text": "What I do not understand is why Chinese timelines for a big model X would slip due to anti-distillation in particular. You can just release an undercooked Preview. Are they literally *pretraining* on Claude logs? is this why everything's so fucked now? Can't you uh do it smarter?",
+   "author_name": "Teortaxes▶️ (DeepSeek 推特🐋铁粉 2023 – ∞)",
+   "likes": 94,
+   "story": "Sources: Z.ai's 3T-parameter flagship GLM-5.5 missed its November release and could be delayed to Q1 2027 or later due to US rules and labs' distillation curbs"
   },
   {
    "title": "The US FCC authorizes SpaceX to deploy its “Starmind” constellation of up to 1M satellites for spac…",
@@ -114,8 +124,8 @@
    "url": "https://github.com/lsernau/grh-lean",
    "source": "Hacker News",
    "published_at": "2026-11-25T21:48:10Z",
-   "text": "474 points and 256 comments on Hacker News.",
-   "points": 474,
+   "text": "480 points and 263 comments on Hacker News.",
+   "points": 480,
    "discussion": "https://news.ycombinator.com/item?id=50648050"
   },
   {
@@ -124,14 +134,6 @@
    "source": "Simon Willison's weblog",
    "published_at": "2026-11-23T21:46:35Z",
    "text": "Ladybird is an astonishingly ambitious project: a new browser, in 2026, with its own implementation of most of the key components - HTML parsing, CSS engine, layout, JavaScript, even WebAssembly. It still uses a few external components - things like HarfBuzz for text shaping, Skia for 2D graphics, ffmpeg for video, and SQLite for the things you do with SQLite. Everything else is part of Ladybird, or code brought in from Ladybird's even more ambitious predecessor project SerenityOS ."
-  },
-  {
-   "title": "Apple removes MiniMax's chatbot Talkie from the App Store worldwide over sexual content, after outl…",
-   "url": "https://www.thebureauinvestigates.com/stories/2026-11-24/talkie-china-chatbot-children",
-   "source": "TBIJ",
-   "published_at": "2026-11-26T01:31:32Z",
-   "text": "Apple removes MiniMax's chatbot Talkie from the App Store worldwide over sexual content, after outlets showed it evidence of AI characters sexualizing children. Talkie's characters belittle and sexualise their young users - and its owners won't explain how it uses the data",
-   "via": "Techmeme"
   }
  ],
  "sources": "curated, Techmeme, X (found via Techmeme, Reddit, the Internet Archive), Claude Code releases, Anthropic, Hacker News, Simon Willison"
