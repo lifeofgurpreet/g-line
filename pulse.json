@@ -1,13 +1,13 @@
 {
  "schema": 1,
- "generated_at": "2026-11-26T01:24:30Z",
+ "generated_at": "2026-11-26T05:24:39Z",
  "items": [
   {
-   "title": "The US FCC authorizes SpaceX to deploy its “Starmind” constellation of 1M satellites for data cente…",
-   "url": "https://www.reuters.com/business/media-telecom/us-authorizes-spacex-deploy-1-million-satellites-data-centers-space-2026-11-25/",
-   "source": "David Shepardson / Reuters",
-   "published_at": "2026-11-25T17:26:17Z",
-   "text": "The US FCC authorizes SpaceX to deploy its “Starmind” constellation of 1M satellites for data centers in space. The Federal Communications Commission on Wednesday said it was authorizing Elon Musk's SpaceX (SPCX.O) to deploy 1 million satellites for data centers in space.",
+   "title": "Sources: Pete Hegseth and other Pentagon officials discussed using the Defense Production Act as le…",
+   "url": "https://www.washingtonpost.com/technology/2026/11/25/hegseth-pentagon-officials-floated-using-wartime-law-reappoint-nvidia-ceo/?pwapi_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyZWFzb24iOiJnaWZ0IiwibmJmIjoxNzk1NTgyODAwLCJpc3MiOiJzdWJzY3JpcHRpb25zIiwiZXhwIjoxNzk2OTY1MTk5LCJpYXQiOjE3OTU1ODI4MDAsImp0aSI6IjZiNDI1NjE3LTkzZDQtNDY5MS1hZjMxLTJmNjdhMWU2MGIwYyIsInVybCI6Imh0dHBzOi8vd3d3Lndhc2hpbmd0b25wb3N0LmNvbS90ZWNobm9sb2d5LzIwMjYvMTEvMjUvaGVnc2V0aC1wZW50YWdvbi1vZmZpY2lhbHMtZmxvYXRlZC11c2luZy13YXJ0aW1lLWxhdy1yZWFwcG9pbnQtbnZpZGlhLWNlby8ifQ.IC587f-ZsvMSTdejz3SE90kzYZs7rK7qFb57vH6USNU&itid=gfta",
+   "source": "Washington Post",
+   "published_at": "2026-11-25T22:56:08Z",
+   "text": "Sources: Pete Hegseth and other Pentagon officials discussed using the Defense Production Act as leverage to pressure Nvidia's board to reinstate Jensen Huang. The Cold War-era Defense Production Act gives presidents extraordinary power to intervene in the economy.",
    "via": "Techmeme"
   },
   {
@@ -17,7 +17,7 @@
    "published_at": "2026-11-25T18:22:33Z",
    "text": "No, I do not believe that we should “surrender human free will” to AI systems, and it’s absurd to suggest that I do. I have written hundreds of pages of essays and a constant theme in them is the need for AI to be governed by legitimate democratic processes. For millennia (going…",
    "author_name": "Dario Amodei",
-   "likes": 13884,
+   "likes": 16257,
    "story": "Dario Amodei rejects the idea of surrendering free will to AI and accuses rival AI execs of “vibes-based” positioning, rebutting a report on AI leaders' views"
   },
   {
@@ -34,18 +34,18 @@
    "published_at": "2026-11-25T16:26:59Z",
    "text": "We recently migrated our Messages API from Python to Rust. On our engineering blog, we share how we used the existing service to verify the new one, with teams of Claude agents tracking down and fixing differences between the two versions.",
    "author_name": "Anthropic",
-   "likes": 8563,
+   "likes": 10063,
    "story": "Anthropic details migrating its Messages API, the primary way customers access Claude, from Python to Rust, and using the Python service to verify the migration",
    "links": [
     "https://www.anthropic.com/research/migrating-api-to-rust"
    ]
   },
   {
-   "title": "US stocks clawed back steep losses on Wednesday; the Nasdaq 100 closed down 0.6%, recovering from a…",
-   "url": "https://www.ft.com/content/705eb84c-801d-4a96-b908-e366511e886a",
-   "source": "Financial Times",
-   "published_at": "2026-11-25T15:11:11Z",
-   "text": "US stocks clawed back steep losses on Wednesday; the Nasdaq 100 closed down 0.6%, recovering from an early drop of as much as 4.7%, and Nvidia dropped 3.9%. Chip group Nvidia among losers but AI start-up Anthropic a bright spot as shares finish higher — George Steer in New York …",
+   "title": "The US FCC authorizes SpaceX to deploy its “Starmind” constellation of 1M satellites for data cente…",
+   "url": "https://www.reuters.com/business/media-telecom/us-authorizes-spacex-deploy-1-million-satellites-data-centers-space-2026-11-25/",
+   "source": "David Shepardson / Reuters",
+   "published_at": "2026-11-25T17:26:17Z",
+   "text": "The US FCC authorizes SpaceX to deploy its “Starmind” constellation of 1M satellites for data centers in space. The Federal Communications Commission on Wednesday said it was authorizing Elon Musk's SpaceX (SPCX.O) to deploy 1 million satellites for data centers in space.",
    "via": "Techmeme"
   },
   {
@@ -53,19 +53,19 @@
    "url": "https://github.com/lsernau/grh-lean",
    "source": "Hacker News",
    "published_at": "2026-11-25T21:48:10Z",
-   "text": "256 points and 116 comments on Hacker News.",
-   "points": 256,
+   "text": "364 points and 182 comments on Hacker News.",
+   "points": 364,
    "discussion": "https://news.ycombinator.com/item?id=50648050"
   },
   {
-   "title": "EU is about to have the biggest comeback. €50B holy shit, that's like 2.5 whole datacenters somewhe…",
-   "url": "https://x.com/SimonHoiberg/status/2125555288044642410",
-   "source": "𝕏 @SimonHoiberg",
-   "published_at": "2026-11-25T11:40:46Z",
-   "text": "EU is about to have the biggest comeback. €50B holy shit, that's like 2.5 whole datacenters somewhere in Bulgaria.",
-   "author_name": "Simon Høiberg",
-   "likes": 15391,
-   "story": "The EU plans to mobilize €50B for its Sovereign Tech Equity Fund to make long-term, high-risk bets on European AI and quantum computing companies"
+   "title": "As part of the October 6 release we had a particularly clean advance on the matrix multiplication e…",
+   "url": "https://x.com/SebastienBubeck/status/2125402576145572334",
+   "source": "𝕏 @SebastienBubeck",
+   "published_at": "2026-11-25T01:33:56Z",
+   "text": "As part of the October 6 release we had a particularly clean advance on the matrix multiplication exponent, with a new upper bound of 9/4. Since then, the model has been working on a LOWER BOUND for this exponent. This is already pretty crazy since NOTHING was known for lower…",
+   "author_name": "Sebastien Bubeck",
+   "likes": 4399,
+   "story": "OpenAI publishes a preprint that claims to prove that the matrix multiplication exponent (ω) is exactly 9/4, addressing a major open problem in mathematics"
   },
   {
    "title": "Three LLM inflection points in twelve months",
@@ -75,31 +75,12 @@
    "text": "I gave a keynote at the AI Engineer Code Summit a couple of weeks ago, constructed around the idea that there have been three significant inflection points in the abilities of LLMs and coding agents in the past twelve months. Here's the video of the talk. In this post I'm going to pull out the major inflection point theme and interrogate it more deeply. Coding agents in November 2025 Today, November 24th 2026, is the one year anniversary of the release of Claude Opus 4.5 . With hindsight, this was a consequential model."
   },
   {
-   "title": "Sources: Pete Hegseth and other Pentagon officials discussed using the Defense Production Act as le…",
-   "url": "https://www.washingtonpost.com/technology/2026/11/25/hegseth-pentagon-officials-floated-using-wartime-law-reappoint-nvidia-ceo/",
-   "source": "Washington Post",
-   "published_at": "2026-11-25T22:56:08Z",
-   "text": "Sources: Pete Hegseth and other Pentagon officials discussed using the Defense Production Act as leverage to pressure Nvidia's board to reinstate Jensen Huang. The Cold War-era Defense Production Act gives presidents extraordinary power to intervene in the economy.",
+   "title": "Investigation: Nvidia sells its most advanced chips to at least two Chinese-owned California compan…",
+   "url": "https://www.cbsnews.com/news/nvidia-china-ai-chips-computing-sales/",
+   "source": "Josh Boswell / CBS News",
+   "published_at": "2026-11-26T01:56:48Z",
+   "text": "Investigation: Nvidia sells its most advanced chips to at least two Chinese-owned California companies, which have leased or sold some of them to firms in Asia. Nvidia is selling its most cutting-edge chips to at least two companies that are U.S.-based, but are actually controlled by Chinese-owned firms …",
    "via": "Techmeme"
-  },
-  {
-   "title": "As part of the October 6 release we had a particularly clean advance on the matrix multiplication e…",
-   "url": "https://x.com/SebastienBubeck/status/2125402576145572334",
-   "source": "𝕏 @SebastienBubeck",
-   "published_at": "2026-11-25T01:33:56Z",
-   "text": "As part of the October 6 release we had a particularly clean advance on the matrix multiplication exponent, with a new upper bound of 9/4. Since then, the model has been working on a LOWER BOUND for this exponent. This is already pretty crazy since NOTHING was known for lower…",
-   "author_name": "Sebastien Bubeck",
-   "likes": 4328,
-   "story": "OpenAI publishes a preprint that claims to prove that the matrix multiplication exponent (ω) is exactly 9/4, addressing a major open problem in mathematics"
-  },
-  {
-   "title": "The New York Times warns photographers not to update Photoshop over AI features",
-   "url": "https://www.theverge.com/ai-artificial-intelligence/1041227/the-new-york-times-warns-photographers-not-to-update-photoshop-over-ai-features",
-   "source": "Hacker News",
-   "published_at": "2026-11-25T21:18:02Z",
-   "text": "191 points and 126 comments on Hacker News.",
-   "points": 191,
-   "discussion": "https://news.ycombinator.com/item?id=50647673"
   },
   {
    "title": "Think the strong-arming on NVIDIA's board was crazy? Check this out:",
@@ -108,25 +89,34 @@
    "published_at": "2026-11-25T14:05:12Z",
    "text": "Think the strong-arming on NVIDIA's board was crazy? Check this out:",
    "author_name": "Noah Shachtman",
-   "likes": 5100,
+   "likes": 5554,
    "story": "US court documents detail a Commerce Department pressure campaign on Intel to acquire a 10% equity stake in 2025, warning rejection would carry “consequences”"
   },
   {
-   "title": "Chinese vendors in Shenzhen's Huaqiangbei market still sell US-restricted Nvidia hardware, quoting…",
-   "url": "https://www.washingtonpost.com/world/2026/11/25/top-nvidia-chips-are-still-offer-china-despite-us-ban/?pwapi_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyZWFzb24iOiJnaWZ0IiwibmJmIjoxNzk1NTgyODAwLCJpc3MiOiJzdWJzY3JpcHRpb25zIiwiZXhwIjoxNzk2OTY1MTk5LCJpYXQiOjE3OTU1ODI4MDAsImp0aSI6ImRjN2IwMDllLWFkMzEtNDViZC1hNDBlLTdiZTZkY2QyYjgyOSIsInVybCI6Imh0dHBzOi8vd3d3Lndhc2hpbmd0b25wb3N0LmNvbS93b3JsZC8yMDI2LzExLzI1L3RvcC1udmlkaWEtY2hpcHMtYXJlLXN0aWxsLW9mZmVyLWNoaW5hLWRlc3BpdGUtdXMtYmFuLyJ9.jF3hc_e28ZcCrJ5Y8OmlgXSYteCO7jDAMSZ9yQp6kJg&itid=gfta",
-   "source": "Joshua Yang / Washington Po…",
-   "published_at": "2026-11-25T13:01:57Z",
-   "text": "Chinese vendors in Shenzhen's Huaqiangbei market still sell US-restricted Nvidia hardware, quoting $3M+ for Blackwell B300 servers, up from $2M two months ago. Though black-market prices have surged amid the turmoil around Nvidia CEO Jensen Huang, traders in Shenzhen persist in hawking the company's best chips.",
+   "title": "OpenAI cuts GPT-6.2 usage: Astra hits limits 40% faster, Sol 25% faster",
+   "url": "https://twitter.com/thsottiaux/status/2125784147889393806",
+   "source": "Hacker News",
+   "published_at": "2026-11-26T03:36:58Z",
+   "text": "68 points and 36 comments on Hacker News.",
+   "points": 68,
+   "discussion": "https://news.ycombinator.com/item?id=50651117"
+  },
+  {
+   "title": "NY Gov. Kathy Hochul signs a bill banning AI chatbot toys for five years, starting in February; Cal…",
+   "url": "https://www.nbcnews.com/tech/tech-news/new-york-governor-kathy-hochul-sign-ai-toy-ban-law-rcna610962",
+   "source": "NBC News",
+   "published_at": "2026-11-25T21:31:06Z",
+   "text": "NY Gov. Kathy Hochul signs a bill banning AI chatbot toys for five years, starting in February; California Gov. Gavin Newsom signed a four-year ban in September. Gov. Kathy Hochul signed a bill today preventing the manufacture, exchange, distribution and sale of toys powered by AI chatbots in New York State.",
    "via": "Techmeme"
   },
   {
-   "title": "Porting Rockbox to an undocumented $9 AliExpress 'YP3' MP3 player with LLMs",
-   "url": "https://jayd.ml/2026/11/14/rockbox-on-yp3.html",
+   "title": "The New York Times warns photographers not to update Photoshop over AI features",
+   "url": "https://www.theverge.com/ai-artificial-intelligence/1041227/the-new-york-times-warns-photographers-not-to-update-photoshop-over-ai-features",
    "source": "Hacker News",
-   "published_at": "2026-11-24T06:22:36Z",
-   "text": "222 points and 89 comments on Hacker News.",
-   "points": 222,
-   "discussion": "https://news.ycombinator.com/item?id=50624446"
+   "published_at": "2026-11-25T21:18:02Z",
+   "text": "276 points and 249 comments on Hacker News.",
+   "points": 276,
+   "discussion": "https://news.ycombinator.com/item?id=50647673"
   },
   {
    "title": "Ladybird's first alpha release",
@@ -134,6 +124,14 @@
    "source": "Simon Willison's weblog",
    "published_at": "2026-11-23T21:46:35Z",
    "text": "Ladybird is an astonishingly ambitious project: a new browser, in 2026, with its own implementation of most of the key components - HTML parsing, CSS engine, layout, JavaScript, even WebAssembly. It still uses a few external components - things like HarfBuzz for text shaping, Skia for 2D graphics, ffmpeg for video, and SQLite for the things you do with SQLite. Everything else is part of Ladybird, or code brought in from Ladybird's even more ambitious predecessor project SerenityOS ."
+  },
+  {
+   "title": "A coalition of 42 AGs opposes Character.AI's plan to auction off data from 21M+ US accounts, 2.1M+…",
+   "url": "https://techcrunch.com/2026/11/25/state-ags-fight-character-ais-plan-to-auction-off-users-private-chats/",
+   "source": "Sarah Perez / TechCrunch",
+   "published_at": "2026-11-25T23:51:07Z",
+   "text": "A coalition of 42 AGs opposes Character.AI's plan to auction off data from 21M+ US accounts, 2.1M+ registered to minors, saying the sale lacks user protections. What happens to your private conversations when an AI company goes bankrupt? If it's Character.ai, apparently, the plan is to auction them off to the highest bidder.",
+   "via": "Techmeme"
   }
  ],
  "sources": "curated, Techmeme, X (found via Techmeme, Reddit, the Internet Archive), Claude Code releases, Anthropic, Hacker News, Simon Willison"
