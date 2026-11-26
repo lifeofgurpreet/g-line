@@ -1,5 +1,22 @@
 # Changelog
 
+## 0.28.0 (2026-11-26): an account off for some hours of some days
+
+- **A switch can start later and hold only in certain hours.** `guard.windows` takes the same
+  entries as `guard.off`, with `from` (when it starts), `hours` (`"14:00-18:00 mon-fri"`) and
+  `tz` (the zone those hours are in): an account kept for a colleague on weekday afternoons this
+  week, written once. g-line reads the clock on each machine in the entry's own zone, clock
+  changes included, so the window opens and closes on time with no network and whatever zone the
+  machine is in. See docs/guard.md.
+- **It says when it lets go.** The refusal and line 2 give the end of today's hours
+  (`guard: account off till 18:00`), and `/g-line guard why` says for each window whether it is
+  in force, not started yet, outside its hours or past.
+- `guard.off` reads `from`, `hours` and `tz` too. Entries with them belong in `windows` when a
+  config is shared with machines on an older g-line: a version before 0.28 ignores the three
+  keys, so in `off` it would hold the account at once and all day. In `windows` it holds nothing.
+- The cases are a file (`tests/fixtures/off-windows.json`) that other readers of the same policy
+  can run.
+
 ## 0.27.0 (2026-11-23): banked resets on line 2
 
 - **How many resets you have banked, and when the next one expires.** If your `usage_command`

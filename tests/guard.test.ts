@@ -511,3 +511,83 @@ test('0.25.0: the guard spells a span exactly as line 2 does (guard.ts imports n
     expect(span(seconds)).toBe(duration(seconds))
   }
 })
+
+// Windows (0.28): an off switch with a start, an end and hours of the week in a zone. The cases are
+// a file any other reader of the same policy can run too, so two readers can't drift.
+import corpus from './fixtures/off-windows'
+
+type WindowCase = { name: string; policy: string; account: string; now: string; held: boolean; lift: string | null; why?: string }
+
+test('windows: every case in the shared corpus is held, or not, with the lift it names', () => {
+  const policies = corpus.policies as Record<string, unknown>
+  for (const c of corpus.cases as WindowCase[]) {
+    const guard = parseGuard(policies[c.policy])
+    expect(guard.errors, c.name).toEqual([])
+    const nowMs = Date.parse(c.now)
+    // A box in Berlin: the entry's own zone decides, never the machine's.
+    const v = evaluate(guard, { nowMs, account: c.account, windows: {}, offsetMinutes: 60 })
+    expect(Boolean(v.stop?.rule.off), c.name).toBe(c.held)
+    const lift = v.stop ? liftsAt(v.stop, nowMs, 60) : undefined
+    expect(lift === undefined ? null : new Date(lift).toISOString().replace('.000Z', 'Z'), c.name).toBe(c.lift)
+    if (c.why !== undefined) expect(v.stop?.rule.off?.why, c.name).toBe(c.why)
+  }
+  expect((corpus.cases as WindowCase[]).length).toBeGreaterThanOrEqual(30)
+})
+
+const WINDOW = {
+  windows: [{
+    accounts: ['programmes@example.com'], from: '2026-11-30T00:00:00+08:00', until: '2026-12-05T00:00:00+08:00',
+    hours: '14:00-18:00 mon-fri', tz: 'Asia/Kuala_Lumpur', why: 'kept for the programme team', end_turn: false,
+  }],
+}
+// Monday 30 Nov 2026, 15:00 in Kuala Lumpur.
+const MON_15_KL = Date.parse('2026-11-30T07:00:00Z')
+
+test('windows: parsed with the off parser, after the plain switches, and a running turn finishes when the entry says so', () => {
+  const g = parseGuard({ ...WINDOW, off: [{ accounts: ['web@'] }], rules: [{ left: 10, stop: true }] })
+  expect(g.errors).toEqual([])
+  expect(g.rules.map(r => r.id)).toEqual(['off0', 'win0', 'r0'])
+  expect(g.rules[1]).toMatchObject({
+    stop: true, accounts: ['programmes@example.com'], tz: 'Asia/Kuala_Lumpur', hours: { from: 840, to: 1080, days: [1, 2, 3, 4, 5] },
+    off: { from: Date.parse('2026-11-29T16:00:00Z'), until: Date.parse('2026-12-04T16:00:00Z'), why: 'kept for the programme team' },
+  })
+  expect(g.rules[1]?.endTurn).toBeUndefined()
+  const v = evaluate(g, { nowMs: MON_15_KL, account: 'programmes@example.com', windows: {} })
+  expect(v.stop?.rule.id).toBe('win0')
+  expect(v.end).toBeUndefined()
+  // The same fields in `off` read the same way.
+  expect(parseGuard({ off: WINDOW.windows }).rules[0]).toMatchObject({ id: 'off0', hours: { from: 840, to: 1080 }, off: { from: Date.parse('2026-11-29T16:00:00Z') } })
+  // A malformed window is left out whole and said: a half-read one would hold the seat all day.
+  const bad = parseGuard({ windows: [
+    { accounts: ['a@'], hours: 'afternoons' }, { accounts: ['a@'], tz: 'Mars/Olympus' }, { accounts: ['a@'], from: 'monday' },
+    { accounts: ['a@'], from: '2026-12-05T00:00:00Z', until: '2026-12-01T00:00:00Z' }, { hours: '14:00-18:00' },
+  ] })
+  expect(bad.rules).toEqual([])
+  expect(bad.errors).toEqual([
+    'window 1: "hours" is like "14:00-18:00 mon-fri"',
+    'window 2: unknown time zone "Mars/Olympus"',
+    'window 3: "from" is a time such as "2026-11-16T09:00:00+08:00"',
+    'window 4: "from" comes before "until"',
+    'window 5: name "accounts" or "groups": an off switch never covers every account',
+  ])
+})
+
+test('windows: said with the end of today\'s hours, and in the rule list with its start, end and hours', () => {
+  const g = parseGuard(WINDOW)
+  const f: Facts = { nowMs: MON_15_KL, account: 'programmes@example.com', windows: {}, offsetMinutes: 60 }
+  const v = evaluate(g, f)
+  // Read in Berlin (UTC+1): 18:00 in Kuala Lumpur is 11:00 there.
+  expect(stopText(v.stop!, MON_15_KL, 60, false, { account: 'programmes@example.com' }))
+    .toBe('g-line held this: programmes@example.com is switched off: kept for the programme team. It comes back on 30 Nov 11:00. Enter again sends it anyway.')
+  const text = 'accounts "programmes@example.com": switched off from 2026-11-29 16:00 UTC until 2026-12-04 16:00 UTC, Mon-Fri 14:00-18:00 Kuala Lumpur time (kept for the programme team)'
+  expect(ruleText(g.rules[0]!)).toBe(text)
+  const why = whyLines(g, f, v)
+  expect(why).toContain(`${text}: in force.`)
+  expect(why.at(-1)).toBe('Held: this account is switched off (kept for the programme team). It comes back on 30 Nov 11:00.')
+  const before = { ...f, nowMs: Date.parse('2026-11-27T07:00:00Z') }
+  expect(whyLines(g, before, evaluate(g, before))).toContain(`${text}: not started yet.`)
+  const evening = { ...f, nowMs: Date.parse('2026-11-30T12:00:00Z') }
+  expect(whyLines(g, evening, evaluate(g, evening))).toContain(`${text}: not this account or outside its hours.`)
+  const after = { ...f, nowMs: Date.parse('2026-12-07T07:00:00Z') }
+  expect(whyLines(g, after, evaluate(g, after))).toContain(`${text}: its time has passed.`)
+})

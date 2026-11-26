@@ -63,10 +63,11 @@ export type Rule = {
   /** A paced weekly allowance in place of a cliff: the rule's steps come with how far ahead of pace the week is. */
   pace?: Pace
   /**
-   * An off switch (`guard.off`), not a threshold: the accounts it names are held whatever their
-   * readings say, from now until `until` (ms; none: until the entry is removed). `why` is said with it.
+   * An off switch (`guard.off`, `guard.windows`), not a threshold: the accounts it names are held
+   * whatever their readings say, from `from` (ms; none: from now) until `until` (ms; none: until the
+   * entry is removed), and only in the rule's `hours` when it has them. `why` is said with it.
    */
-  off?: { until?: number; why?: string }
+  off?: { until?: number; from?: number; why?: string }
   /** The rule as written, for toasts. */
   text: string
 }
@@ -307,48 +308,71 @@ export function parseGuard(raw: unknown): GuardConfig {
     rules.push(rule)
   })
   // Off switches: an account held outright, whatever its readings, until a time or until removed.
-  const offs = r.off === undefined ? [] : Array.isArray(r.off) ? r.off : [r.off]
+  // `windows` holds the entries with a start or hours ("this week, 14:00-18:00"). They are read by
+  // the same parser, in a list of their own: an engine before 0.28 ignores `from` and `hours` in an
+  // entry, so in `off` it would hold such a seat at once and all day. In `windows` it holds nothing.
   const switched: Rule[] = []
-  offs.forEach((entry, index) => {
-    const n = index + 1
-    if (!entry || typeof entry !== 'object' || Array.isArray(entry)) {
-      errors.push(`off ${n}: an object such as {"accounts": ["team@"], "until": "2026-11-16T09:00:00+08:00"}`)
-      return
-    }
-    const e = entry as Record<string, unknown>
-    const bad = (why: string) => {
-      errors.push(`off ${n}: ${why}`)
-    }
-    const rule: Rule = { id: `off${index}`, left: 100, window: '5h', stop: true, text: JSON.stringify(entry), off: {} }
-    if (e.accounts !== undefined) {
-      const accounts = (Array.isArray(e.accounts) ? e.accounts : [e.accounts]).map(word).filter(Boolean)
-      if (!accounts.length) return bad('"accounts" lists parts of the account line, such as "team@"')
-      rule.accounts = accounts
-    }
-    if (e.groups !== undefined || e.group !== undefined) {
-      const named = (Array.isArray(e.groups) ? e.groups : [e.groups ?? e.group]).map(word).filter(Boolean)
-      const unknown = named.filter(g => g !== OTHER_GROUP && !groups.some(x => x.name === g))
-      if (!named.length) return bad('"groups" names groups from "guard.groups", such as "team"')
-      if (unknown.length) return bad(`no group named ${unknown.map(g => `"${g}"`).join(', ')} in "guard.groups"`)
-      rule.groups = named
-    }
-    if (!rule.accounts && !rule.groups) return bad('name "accounts" or "groups": an off switch never covers every account')
-    if (e.until !== undefined) {
-      const until = typeof e.until === 'string' ? Date.parse(e.until) : Number.NaN
-      if (!Number.isFinite(until)) return bad('"until" is a time such as "2026-11-16T09:00:00+08:00"')
-      rule.off = { until }
-    }
-    if (e.why !== undefined) {
-      // eslint-disable-next-line no-control-regex
-      const why = typeof e.why === 'string' ? e.why.replace(/[\u0000-\u001f\u007f]/g, ' ').trim().slice(0, 120) : ''
-      if (!why) return bad('"why" is a few words, such as "reserved for the team"')
-      rule.off = { ...rule.off, why }
-    }
-    if (e.end_turn !== undefined && typeof e.end_turn !== 'boolean') return bad('"end_turn" is true or false')
-    // A switched-off account's running turn ends at its next step unless the entry says otherwise.
-    if (e.end_turn !== false) rule.endTurn = true
-    switched.push(rule)
-  })
+  const readSwitches = (value: unknown, label: string, id: string) => {
+    const offs = value === undefined ? [] : Array.isArray(value) ? value : [value]
+    offs.forEach((entry, index) => {
+      const n = index + 1
+      if (!entry || typeof entry !== 'object' || Array.isArray(entry)) {
+        errors.push(`${label} ${n}: an object such as {"accounts": ["team@"], "until": "2026-11-16T09:00:00+08:00"}`)
+        return
+      }
+      const e = entry as Record<string, unknown>
+      const bad = (why: string) => {
+        errors.push(`${label} ${n}: ${why}`)
+      }
+      const rule: Rule = { id: `${id}${index}`, left: 100, window: '5h', stop: true, text: JSON.stringify(entry), off: {} }
+      if (e.accounts !== undefined) {
+        const accounts = (Array.isArray(e.accounts) ? e.accounts : [e.accounts]).map(word).filter(Boolean)
+        if (!accounts.length) return bad('"accounts" lists parts of the account line, such as "team@"')
+        rule.accounts = accounts
+      }
+      if (e.groups !== undefined || e.group !== undefined) {
+        const named = (Array.isArray(e.groups) ? e.groups : [e.groups ?? e.group]).map(word).filter(Boolean)
+        const unknown = named.filter(g => g !== OTHER_GROUP && !groups.some(x => x.name === g))
+        if (!named.length) return bad('"groups" names groups from "guard.groups", such as "team"')
+        if (unknown.length) return bad(`no group named ${unknown.map(g => `"${g}"`).join(', ')} in "guard.groups"`)
+        rule.groups = named
+      }
+      if (!rule.accounts && !rule.groups) return bad('name "accounts" or "groups": an off switch never covers every account')
+      if (e.until !== undefined) {
+        const until = typeof e.until === 'string' ? Date.parse(e.until) : Number.NaN
+        if (!Number.isFinite(until)) return bad('"until" is a time such as "2026-11-16T09:00:00+08:00"')
+        rule.off = { until }
+      }
+      if (e.from !== undefined) {
+        const from = typeof e.from === 'string' ? Date.parse(e.from) : Number.NaN
+        if (!Number.isFinite(from)) return bad('"from" is a time such as "2026-11-16T09:00:00+08:00"')
+        if (rule.off?.until !== undefined && from >= rule.off.until) return bad('"from" comes before "until"')
+        rule.off = { ...rule.off, from }
+      }
+      // Hours of the week the switch is on, in its own zone: a half-read entry would hold the seat all day, so a bad one is left out whole.
+      if (e.hours !== undefined) {
+        const hours = parseHours(e.hours)
+        if (!hours) return bad('"hours" is like "14:00-18:00 mon-fri"')
+        rule.hours = hours
+      }
+      if (e.tz !== undefined) {
+        if (typeof e.tz !== 'string' || !e.tz.trim() || !localTime(0, e.tz.trim())) return bad(`unknown time zone "${String(e.tz)}"`)
+        rule.tz = e.tz.trim()
+      }
+      if (e.why !== undefined) {
+        // eslint-disable-next-line no-control-regex
+        const why = typeof e.why === 'string' ? e.why.replace(/[\u0000-\u001f\u007f]/g, ' ').trim().slice(0, 120) : ''
+        if (!why) return bad('"why" is a few words, such as "reserved for the team"')
+        rule.off = { ...rule.off, why }
+      }
+      if (e.end_turn !== undefined && typeof e.end_turn !== 'boolean') return bad('"end_turn" is true or false')
+      // A switched-off account's running turn ends at its next step unless the entry says otherwise.
+      if (e.end_turn !== false) rule.endTurn = true
+      switched.push(rule)
+    })
+  }
+  readSwitches(r.off, 'off', 'off')
+  readSwitches(r.windows, 'window', 'win')
   rules.unshift(...switched)
   let keepWarm: KeepWarm | undefined
   if (r.keep_warm === true) keepWarm = KEEP_WARM_DEFAULTS
@@ -750,8 +774,12 @@ function binds(rule: Rule, left: number, chosen: Verdict['stop']): boolean {
   return rule.left > chosen.rule.left
 }
 
-/** Whether an off switch is on at this moment: no time, or a time still ahead. */
-export const switchedOff = (rule: Rule, nowMs: number) => Boolean(rule.off) && (rule.off?.until === undefined || rule.off.until > nowMs)
+/**
+ * Whether an off switch is on at this moment: started (no `from`, or one that has come) and not
+ * ended (no `until`, or one still ahead). Its hours of the week are a condition like any rule's (`inScope`).
+ */
+export const switchedOff = (rule: Rule, nowMs: number) =>
+  Boolean(rule.off) && (rule.off?.from === undefined || rule.off.from <= nowMs) && (rule.off?.until === undefined || rule.off.until > nowMs)
 
 /** A day and month in the caller's zone, with the time unless it's midnight: `16 Nov`, `16 Nov 09:00`. */
 export function dateWords(ms: number, offsetMinutes = 0): string {
@@ -891,7 +919,20 @@ export function stopText(stop: NonNullable<Verdict['stop']>, nowMs: number, offs
  * end of the rule's hours. Undefined when neither is known.
  */
 export function liftsAt(held: Held, nowMs: number, offsetMinutes?: number): number | undefined {
-  if (held.rule.off) return held.rule.off.until
+  if (held.rule.off) {
+    // An off switch lets go at its time, or sooner at the end of today's hours.
+    const until = held.rule.off.until
+    const at = held.rule.hours ? localTime(nowMs, held.rule.tz, offsetMinutes) : undefined
+    if (!held.rule.hours || !at) return until
+    let end = (Math.floor(nowMs / 60_000) + (((held.rule.hours.to - at.minute) % 1440 + 1440) % 1440 || 1440)) * 60_000
+    // A clock change between now and then moves the wall: land on the hour the entry names.
+    const there = localTime(end, held.rule.tz, offsetMinutes)
+    if (there) {
+      const drift = (((held.rule.hours.to % 1440) - there.minute + 720) % 1440 + 1440) % 1440 - 720
+      end += drift * 60_000
+    }
+    return until === undefined ? end : Math.min(until, end)
+  }
   const reset = held.pace?.liftsAt ?? (held.resetsAt !== undefined ? held.resetsAt * 1000 : undefined)
   const hours = held.rule.hours
   if (!hours) return reset
@@ -929,8 +970,11 @@ export function ruleText(rule: Rule): string {
   if (rule.off) {
     const who = [rule.accounts ? `accounts ${rule.accounts.map(a => `"${a}"`).join(', ')}` : '',
       rule.groups ? `${rule.groups.length === 1 ? 'group' : 'groups'} ${rule.groups.join(', ')}` : ''].filter(Boolean).join(', ')
-    const until = rule.off.until !== undefined ? ` until ${new Date(rule.off.until).toISOString().slice(0, 16).replace('T', ' ')} UTC` : ''
-    return `${who}: switched off${until}${rule.off.why ? ` (${rule.off.why})` : ''}${rule.endTurn ? ', running turns end' : ''}`
+    const utc = (ms: number) => `${new Date(ms).toISOString().slice(0, 16).replace('T', ' ')} UTC`
+    const from = rule.off.from !== undefined ? ` from ${utc(rule.off.from)}` : ''
+    const until = rule.off.until !== undefined ? ` until ${utc(rule.off.until)}` : ''
+    const hours = rule.hours ? `, ${hoursWords(rule)}` : ''
+    return `${who}: switched off${from}${until}${hours}${rule.off.why ? ` (${rule.off.why})` : ''}${rule.endTurn ? ', running turns end' : ''}`
   }
   const when = [rule.pace ? (rule.pace.window === '5h' ? 'paced 5h window' : 'paced week') : `at ${rule.left}% of ${rule.window} left`]
   if (rule.unlessResetWithin !== undefined) {
@@ -1318,7 +1362,8 @@ export function whyLines(guard: GuardConfig, facts: Facts, verdict: Verdict, o: 
     const label = ruleText(rule)
     if (rule.off) {
       const on = verdict.active[rule.id] !== undefined
-      out.push(`${label}: ${on ? 'in force' : !switchedOff(rule, facts.nowMs) ? 'its time has passed' : 'not this account'}.`)
+      const waits = rule.off.from !== undefined && rule.off.from > facts.nowMs ? 'not started yet' : !switchedOff(rule, facts.nowMs) ? 'its time has passed' : rule.hours ? 'not this account or outside its hours' : 'not this account'
+      out.push(`${label}: ${on ? 'in force' : waits}.`)
       continue
     }
     if (!w || !Number.isFinite(w.left)) {
@@ -1341,7 +1386,7 @@ export function whyLines(guard: GuardConfig, facts: Facts, verdict: Verdict, o: 
     }
   }
   if (verdict.stop?.rule.off) {
-    const until = verdict.stop.rule.off.until
+    const until = liftsAt(verdict.stop, facts.nowMs, facts.offsetMinutes)
     out.push(`Held: this account is switched off${verdict.stop.rule.off.why ? ` (${verdict.stop.rule.off.why})` : ''}. ${until !== undefined ? `It comes back on ${dateWords(until, offset)}.` : 'It stays off until the switch is turned back on.'}`)
   } else if (verdict.stop) {
     const lift = liftsAt(verdict.stop, facts.nowMs, facts.offsetMinutes)

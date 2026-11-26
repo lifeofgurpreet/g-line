@@ -227,6 +227,41 @@ colleague needs this fortnight, say. `off` switches them off until a time:
 An entry names `accounts` or `groups` (never every account). Over any threshold rule, the switch
 is the reason given.
 
+### Off for some hours of some days
+
+A switch can also start later, and hold only in certain hours: an account kept for a colleague
+on weekday afternoons this week. Those entries go in `windows`:
+
+```json
+"guard": {
+  "windows": [
+    { "accounts": ["team@example.com"],
+      "from": "2026-11-30T00:00:00+08:00", "until": "2026-12-05T00:00:00+08:00",
+      "hours": "14:00-18:00 mon-fri", "tz": "Asia/Kuala_Lumpur",
+      "why": "kept for the programme team", "end_turn": false }
+  ]
+}
+```
+
+- **`from`** is when it starts (without one: now). **`until`** is when it ends for good.
+- **`hours`** are the hours of the week it holds in, written like a rule's hours
+  (`"22:00-06:00 mon-thu"` runs past midnight and belongs to the day it starts on), in the zone
+  **`tz`** names. The start of the hours is in; the end is out.
+- **The zone is the entry's, not the machine's.** A window written for Kuala Lumpur afternoons
+  holds at the same moment on a box in Berlin, and follows that zone's clock changes.
+- **It works offline.** The window is in your config, and g-line reads the clock: once a box
+  has the entry it needs nothing else to start and stop on time.
+- **It says when it lets go:** the refusal reads `It comes back on 30 Nov 18:00` (in your own
+  time), line 2 reads `guard: account off till 18:00`, and `/g-line guard why` says for each
+  window whether it is in force, not started yet, outside its hours, or past.
+- **`"end_turn": false`** lets a turn that is running when the window opens finish; the next
+  prompt is held. Without it the turn ends at its next step, as with any switch.
+
+`off` reads `from`, `hours` and `tz` the same way. Use `windows` for them when a config is shared
+with machines on an older g-line: a version before 0.28 ignores those three keys, so the same
+entry in `off` would hold the account at once and all day there. In `windows` an older version
+holds nothing.
+
 ## Queue a held prompt
 
 With `"queue": true` in `guard`, g-line keeps a refused prompt and sends it itself as soon as the
