@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-26T22:49:13Z",
+ "generated_at": "2026-11-26T23:20:39Z",
  "items": [
   {
    "title": "Sources: Nvidia has told partners like Dell and Supermicro to halt server shipments to Malaysia, Si…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-25T18:22:33Z",
    "text": "No, I do not believe that we should “surrender human free will” to AI systems, and it’s absurd to suggest that I do. I have written hundreds of pages of essays and a constant theme in them is the need for AI to be governed by legitimate democratic processes. For millennia (going…",
    "author_name": "Dario Amodei",
-   "likes": 20391,
+   "likes": 20436,
    "story": "Dario Amodei rejects the idea of surrendering free will to AI and accuses rival AI execs of “vibes-based” positioning, rebutting a report on AI leaders' views"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-11-25T19:38:35Z",
    "text": "I've joined OpenAI! I'm very proud of my time at Anthropic, and I'll continue to root for my former colleagues. Both companies have important roles to play in the future. There is a tremendous amount of work ahead of us to bring AI to the world, and it will demand the very best…",
    "author_name": "Thariq",
-   "likes": 30477,
+   "likes": 30552,
    "story": "Thariq Shihipar joins OpenAI after leaving Anthropic in October, saying he felt he could “personally contribute the most” to bringing AI to the world at OpenAI"
   },
   {
@@ -50,8 +50,8 @@
    "url": "https://janlukas.blog/posts/ai-self-hosting",
    "source": "Hacker News",
    "published_at": "2026-11-26T21:47:45Z",
-   "text": "65 points and 44 comments on Hacker News.",
-   "points": 65,
+   "text": "118 points and 69 comments on Hacker News.",
+   "points": 118,
    "discussion": "https://news.ycombinator.com/item?id=50660180"
   },
   {
@@ -61,7 +61,7 @@
    "published_at": "2026-11-26T02:50:10Z",
    "text": "We made a billing mistake at launch of GPT-6.2 that incorrectly discounted GPT-6.2 Astra and Sol usage for most users. We’ve fixed this now, so the same work will use more of your plan’s usage allowance. Comparing to last week, you will reach your limits 40% faster on GPT-6.2…",
    "author_name": "Tibo",
-   "likes": 17762,
+   "likes": 17831,
    "story": "OpenAI says it corrected a GPT-6.2 Astra and Sol launch billing mistake that had incorrectly discounted usage; Astra users will now hit their limits 40% faster"
   },
   {
@@ -84,8 +84,8 @@
    "url": "https://devnull.land/amd-specific-llama-cpp",
    "source": "Hacker News",
    "published_at": "2026-11-26T17:11:29Z",
-   "text": "245 points and 56 comments on Hacker News.",
-   "points": 245,
+   "text": "257 points and 62 comments on Hacker News.",
+   "points": 257,
    "discussion": "https://news.ycombinator.com/item?id=50657265"
   },
   {
@@ -101,8 +101,8 @@
    "url": "https://techstackups.com/articles/google-workspace-ai-agents-mcp/",
    "source": "Hacker News",
    "published_at": "2026-11-26T09:44:23Z",
-   "text": "180 points and 179 comments on Hacker News.",
-   "points": 180,
+   "text": "190 points and 183 comments on Hacker News.",
+   "points": 190,
    "discussion": "https://news.ycombinator.com/item?id=50653477"
   },
   {
@@ -118,8 +118,8 @@
    "url": "https://micjm.com/blog/openai-is-in-cost-control-mode/",
    "source": "Hacker News",
    "published_at": "2026-11-26T07:33:12Z",
-   "text": "198 points and 180 comments on Hacker News.",
-   "points": 198,
+   "text": "215 points and 206 comments on Hacker News.",
+   "points": 215,
    "discussion": "https://news.ycombinator.com/item?id=50652527"
   },
   {
