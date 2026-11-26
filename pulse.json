@@ -1,13 +1,13 @@
 {
  "schema": 1,
- "generated_at": "2026-11-26T06:28:54Z",
+ "generated_at": "2026-11-26T07:00:56Z",
  "items": [
   {
-   "title": "Sources: Nvidia tells its manufacturing partners to halt AI server shipments to Malaysia, Singapore…",
-   "url": "https://www.ft.com/content/7838a715-07d4-4605-aa60-21f5af2b2370?accessToken=zwAAAaKuNQQ-lc82jEUmoM5JUdOoR_A5rypRr894OKcVB9RGBdOqYCH1rysjcM8_V3g53u1A9NOvn7-PtUiQ488yW5PWvC5N09OZQc9GiKyhHdO5lhOroTBLn9OMFcQdt82IlAE.MEUCIAPJOFlcs0Bojv5ln7BmjmdLTj5dPHWXAdsn-FuOch_SAiEA5Eu4HIM2_h5rJDnldWxSlTi5axDZdg9vO7b_UplS1Nk&segmentId=7d4bcc2e-e664-92ba-62e3-5590579f1902",
-   "source": "Financial Times",
-   "published_at": "2026-11-26T05:46:04Z",
-   "text": "Sources: Nvidia tells its manufacturing partners to halt AI server shipments to Malaysia, Singapore, Thailand, and Indonesia as the US steps up export controls",
+   "title": "Sources: Pete Hegseth and other Pentagon officials discussed using the Defense Production Act as le…",
+   "url": "https://www.washingtonpost.com/technology/2026/11/25/hegseth-pentagon-officials-floated-using-wartime-law-reappoint-nvidia-ceo/?pwapi_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyZWFzb24iOiJnaWZ0IiwibmJmIjoxNzk1NTgyODAwLCJpc3MiOiJzdWJzY3JpcHRpb25zIiwiZXhwIjoxNzk2OTY1MTk5LCJpYXQiOjE3OTU1ODI4MDAsImp0aSI6IjZiNDI1NjE3LTkzZDQtNDY5MS1hZjMxLTJmNjdhMWU2MGIwYyIsInVybCI6Imh0dHBzOi8vd3d3Lndhc2hpbmd0b25wb3N0LmNvbS90ZWNobm9sb2d5LzIwMjYvMTEvMjUvaGVnc2V0aC1wZW50YWdvbi1vZmZpY2lhbHMtZmxvYXRlZC11c2luZy13YXJ0aW1lLWxhdy1yZWFwcG9pbnQtbnZpZGlhLWNlby8ifQ.IC587f-ZsvMSTdejz3SE90kzYZs7rK7qFb57vH6USNU&itid=gfta",
+   "source": "Washington Post",
+   "published_at": "2026-11-25T22:56:08Z",
+   "text": "Sources: Pete Hegseth and other Pentagon officials discussed using the Defense Production Act as leverage to pressure Nvidia's board to reinstate Jensen Huang. The Cold War-era Defense Production Act gives presidents extraordinary power to intervene in the economy.",
    "via": "Techmeme"
   },
   {
@@ -17,7 +17,7 @@
    "published_at": "2026-11-25T18:22:33Z",
    "text": "No, I do not believe that we should “surrender human free will” to AI systems, and it’s absurd to suggest that I do. I have written hundreds of pages of essays and a constant theme in them is the need for AI to be governed by legitimate democratic processes. For millennia (going…",
    "author_name": "Dario Amodei",
-   "likes": 16769,
+   "likes": 16995,
    "story": "Dario Amodei rejects the idea of surrendering free will to AI and accuses rival AI execs of “vibes-based” positioning, rebutting a report on AI leaders' views"
   },
   {
@@ -34,18 +34,18 @@
    "published_at": "2026-11-25T16:26:59Z",
    "text": "We recently migrated our Messages API from Python to Rust. On our engineering blog, we share how we used the existing service to verify the new one, with teams of Claude agents tracking down and fixing differences between the two versions.",
    "author_name": "Anthropic",
-   "likes": 10463,
+   "likes": 10630,
    "story": "Anthropic details migrating its Messages API, the primary way customers access Claude, from Python to Rust, and using the Python service to verify the migration",
    "links": [
     "https://www.anthropic.com/research/migrating-api-to-rust"
    ]
   },
   {
-   "title": "Sources: Pete Hegseth and other Pentagon officials discussed using the Defense Production Act as le…",
-   "url": "https://www.washingtonpost.com/technology/2026/11/25/hegseth-pentagon-officials-floated-using-wartime-law-reappoint-nvidia-ceo/?pwapi_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyZWFzb24iOiJnaWZ0IiwibmJmIjoxNzk1NTgyODAwLCJpc3MiOiJzdWJzY3JpcHRpb25zIiwiZXhwIjoxNzk2OTY1MTk5LCJpYXQiOjE3OTU1ODI4MDAsImp0aSI6IjZiNDI1NjE3LTkzZDQtNDY5MS1hZjMxLTJmNjdhMWU2MGIwYyIsInVybCI6Imh0dHBzOi8vd3d3Lndhc2hpbmd0b25wb3N0LmNvbS90ZWNobm9sb2d5LzIwMjYvMTEvMjUvaGVnc2V0aC1wZW50YWdvbi1vZmZpY2lhbHMtZmxvYXRlZC11c2luZy13YXJ0aW1lLWxhdy1yZWFwcG9pbnQtbnZpZGlhLWNlby8ifQ.IC587f-ZsvMSTdejz3SE90kzYZs7rK7qFb57vH6USNU&itid=gfta",
-   "source": "Washington Post",
-   "published_at": "2026-11-25T22:56:08Z",
-   "text": "Sources: Pete Hegseth and other Pentagon officials discussed using the Defense Production Act as leverage to pressure Nvidia's board to reinstate Jensen Huang. The Cold War-era Defense Production Act gives presidents extraordinary power to intervene in the economy.",
+   "title": "The US FCC authorizes SpaceX to deploy its “Starmind” constellation of 1M satellites for data cente…",
+   "url": "https://www.reuters.com/business/media-telecom/us-authorizes-spacex-deploy-1-million-satellites-data-centers-space-2026-11-25/",
+   "source": "David Shepardson / Reuters",
+   "published_at": "2026-11-25T17:26:17Z",
+   "text": "The US FCC authorizes SpaceX to deploy its “Starmind” constellation of 1M satellites for data centers in space. The Federal Communications Commission on Wednesday said it was authorizing Elon Musk's SpaceX (SPCX.O) to deploy 1 million satellites for data centers in space.",
    "via": "Techmeme"
   },
   {
@@ -53,19 +53,19 @@
    "url": "https://twitter.com/thsottiaux/status/2125784147889393806",
    "source": "Hacker News",
    "published_at": "2026-11-26T03:36:58Z",
-   "text": "119 points and 60 comments on Hacker News.",
-   "points": 119,
+   "text": "143 points and 76 comments on Hacker News.",
+   "points": 143,
    "discussion": "https://news.ycombinator.com/item?id=50651117"
   },
   {
-   "title": "DATA CENTERS IN SPACE🇺🇸 Today, in a historic first, the FCC approved SpaceX’s request for 1 million…",
-   "url": "https://x.com/BrendanCarrFCC/status/2125623026918002860",
-   "source": "𝕏 @BrendanCarrFCC",
-   "published_at": "2026-11-25T16:09:56Z",
-   "text": "DATA CENTERS IN SPACE🇺🇸 Today, in a historic first, the FCC approved SpaceX’s request for 1 million satellites (orbital compute modules) to create data centers in space The Starmind & competitor constellations will use solar power to extend America’s lead in Super Intelligence h",
-   "author_name": "Brendan Carr",
-   "likes": 14748,
-   "story": "The US FCC authorizes SpaceX to deploy its “Starmind” constellation of 1M satellites for data centers in space"
+   "title": "As part of the October 6 release we had a particularly clean advance on the matrix multiplication e…",
+   "url": "https://x.com/SebastienBubeck/status/2125402576145572334",
+   "source": "𝕏 @SebastienBubeck",
+   "published_at": "2026-11-25T01:33:56Z",
+   "text": "As part of the October 6 release we had a particularly clean advance on the matrix multiplication exponent, with a new upper bound of 9/4. Since then, the model has been working on a LOWER BOUND for this exponent. This is already pretty crazy since NOTHING was known for lower…",
+   "author_name": "Sebastien Bubeck",
+   "likes": 4426,
+   "story": "OpenAI publishes a preprint that claims to prove that the matrix multiplication exponent (ω) is exactly 9/4, addressing a major open problem in mathematics"
   },
   {
    "title": "Three LLM inflection points in twelve months",
@@ -83,33 +83,23 @@
    "via": "Techmeme"
   },
   {
-   "title": "As part of the October 6 release we had a particularly clean advance on the matrix multiplication e…",
-   "url": "https://x.com/SebastienBubeck/status/2125402576145572334",
-   "source": "𝕏 @SebastienBubeck",
-   "published_at": "2026-11-25T01:33:56Z",
-   "text": "As part of the October 6 release we had a particularly clean advance on the matrix multiplication exponent, with a new upper bound of 9/4. Since then, the model has been working on a LOWER BOUND for this exponent. This is already pretty crazy since NOTHING was known for lower…",
-   "author_name": "Sebastien Bubeck",
-   "likes": 4416,
-   "story": "OpenAI publishes a preprint that claims to prove that the matrix multiplication exponent (ω) is exactly 9/4, addressing a major open problem in mathematics"
-  },
-  {
-   "title": "Much shorter version of GRH Lean verification from Anthropic",
-   "url": "https://github.com/lsernau/grh-lean",
-   "source": "Hacker News",
-   "published_at": "2026-11-25T21:48:10Z",
-   "text": "394 points and 199 comments on Hacker News.",
-   "points": 394,
-   "discussion": "https://news.ycombinator.com/item?id=50648050"
-  },
-  {
    "title": "Think the strong-arming on NVIDIA's board was crazy? Check this out:",
    "url": "https://x.com/NoahShachtman/status/2125591635132072188",
    "source": "𝕏 @NoahShachtman",
    "published_at": "2026-11-25T14:05:12Z",
    "text": "Think the strong-arming on NVIDIA's board was crazy? Check this out:",
    "author_name": "Noah Shachtman",
-   "likes": 5640,
+   "likes": 5692,
    "story": "US court documents detail a Commerce Department pressure campaign on Intel to acquire a 10% equity stake in 2025, warning rejection would carry “consequences”"
+  },
+  {
+   "title": "Much shorter version of GRH Lean verification from Anthropic",
+   "url": "https://github.com/lsernau/grh-lean",
+   "source": "Hacker News",
+   "published_at": "2026-11-25T21:48:10Z",
+   "text": "407 points and 204 comments on Hacker News.",
+   "points": 407,
+   "discussion": "https://news.ycombinator.com/item?id=50648050"
   },
   {
    "title": "NY Gov. Kathy Hochul signs a bill banning AI chatbot toys for five years, starting in February; Cal…",
@@ -124,8 +114,8 @@
    "url": "https://www.theverge.com/ai-artificial-intelligence/1041227/the-new-york-times-warns-photographers-not-to-update-photoshop-over-ai-features",
    "source": "Hacker News",
    "published_at": "2026-11-25T21:18:02Z",
-   "text": "299 points and 263 comments on Hacker News.",
-   "points": 299,
+   "text": "312 points and 269 comments on Hacker News.",
+   "points": 312,
    "discussion": "https://news.ycombinator.com/item?id=50647673"
   },
   {
@@ -134,6 +124,14 @@
    "source": "Simon Willison's weblog",
    "published_at": "2026-11-23T21:46:35Z",
    "text": "Ladybird is an astonishingly ambitious project: a new browser, in 2026, with its own implementation of most of the key components - HTML parsing, CSS engine, layout, JavaScript, even WebAssembly. It still uses a few external components - things like HarfBuzz for text shaping, Skia for 2D graphics, ffmpeg for video, and SQLite for the things you do with SQLite. Everything else is part of Ladybird, or code brought in from Ladybird's even more ambitious predecessor project SerenityOS ."
+  },
+  {
+   "title": "A coalition of 42 AGs opposes Character.AI's plan to auction off data from 21M+ US accounts, 2.1M+…",
+   "url": "https://techcrunch.com/2026/11/25/state-ags-fight-character-ais-plan-to-auction-off-users-private-chats/",
+   "source": "Sarah Perez / TechCrunch",
+   "published_at": "2026-11-25T23:51:07Z",
+   "text": "A coalition of 42 AGs opposes Character.AI's plan to auction off data from 21M+ US accounts, 2.1M+ registered to minors, saying the sale lacks user protections. What happens to your private conversations when an AI company goes bankrupt? If it's Character.ai, apparently, the plan is to auction them off to the highest bidder.",
+   "via": "Techmeme"
   }
  ],
  "sources": "curated, Techmeme, X (found via Techmeme, Reddit, the Internet Archive), Claude Code releases, Anthropic, Hacker News, Simon Willison"
