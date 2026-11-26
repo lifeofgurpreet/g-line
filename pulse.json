@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-26T11:42:32Z",
+ "generated_at": "2026-11-26T12:14:29Z",
  "items": [
   {
    "title": "Sources: Pete Hegseth and other Pentagon officials discussed using the Defense Production Act as le…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-25T18:22:33Z",
    "text": "No, I do not believe that we should “surrender human free will” to AI systems, and it’s absurd to suggest that I do. I have written hundreds of pages of essays and a constant theme in them is the need for AI to be governed by legitimate democratic processes. For millennia (going…",
    "author_name": "Dario Amodei",
-   "likes": 18484,
+   "likes": 18594,
    "story": "Dario Amodei rejects the idea of surrendering free will to AI and accuses rival AI execs of “vibes-based” positioning, rebutting a report on AI leaders' views"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-11-26T09:45:42Z",
    "text": "What I do not understand is why Chinese timelines for a big model X would slip due to anti-distillation in particular. You can just release an undercooked Preview. Are they literally *pretraining* on Claude logs? is this why everything's so fucked now? Can't you uh do it smarter?",
    "author_name": "Teortaxes▶️ (DeepSeek 推特🐋铁粉 2023 – ∞)",
-   "likes": 77,
+   "likes": 85,
    "story": "Sources: Z.ai's 3T-parameter flagship GLM-5.5 missed its November release and could be delayed to Q1 2027 or later due to US rules and labs' distillation curbs"
   },
   {
@@ -44,15 +44,15 @@
    "published_at": "2026-11-25T19:38:35Z",
    "text": "I've joined OpenAI! I'm very proud of my time at Anthropic, and I'll continue to root for my former colleagues. Both companies have important roles to play in the future. There is a tremendous amount of work ahead of us to bring AI to the world, and it will demand the very best…",
    "author_name": "Thariq",
-   "likes": 27587,
+   "likes": 27764,
    "story": "Thariq Shihipar joins OpenAI after leaving Anthropic in October, saying he felt he could “personally contribute the most” to bringing AI to the world at OpenAI"
   },
   {
-   "title": "Sources: leading AI labs are sitting on major, unreleased algorithmic breakthroughs that could brea…",
-   "url": "https://scottaaronson.blog/?p=10379",
-   "source": "Scott Aaronson / Shtetl-Opt…",
-   "published_at": "2026-11-26T09:51:41Z",
-   "text": "Sources: leading AI labs are sitting on major, unreleased algorithmic breakthroughs that could break deployed cryptosystems, but their exact nature is unknown. I feel like my previous posts (and post titles), and podcasts, and talks, have failed to do full justice to the magnitude of what's now happening, so I'm trying again.",
+   "title": "Investigation: Nvidia sells its most advanced chips to at least two Chinese-owned California compan…",
+   "url": "https://www.cbsnews.com/news/nvidia-china-ai-chips-computing-sales/",
+   "source": "Josh Boswell / CBS News",
+   "published_at": "2026-11-26T01:56:48Z",
+   "text": "Investigation: Nvidia sells its most advanced chips to at least two Chinese-owned California companies, which have leased or sold some of them to firms in Asia. Nvidia is selling its most cutting-edge chips to at least two companies that are U.S.-based, but are actually controlled by Chinese-owned firms …",
    "via": "Techmeme"
   },
   {
@@ -60,8 +60,8 @@
    "url": "https://twitter.com/thsottiaux/status/2125784147889393806",
    "source": "Hacker News",
    "published_at": "2026-11-26T03:36:58Z",
-   "text": "289 points and 158 comments on Hacker News.",
-   "points": 289,
+   "text": "303 points and 174 comments on Hacker News.",
+   "points": 303,
    "discussion": "https://news.ycombinator.com/item?id=50651117"
   },
   {
@@ -71,7 +71,7 @@
    "published_at": "2026-11-25T16:26:59Z",
    "text": "We recently migrated our Messages API from Python to Rust. On our engineering blog, we share how we used the existing service to verify the new one, with teams of Claude agents tracking down and fixing differences between the two versions.",
    "author_name": "Anthropic",
-   "likes": 12007,
+   "likes": 12149,
    "story": "Anthropic details migrating its Messages API, the primary way customers access Claude, from Python to Rust, and using the Python service to verify the migration",
    "links": [
     "https://www.anthropic.com/research/migrating-api-to-rust"
@@ -85,21 +85,21 @@
    "text": "I gave a keynote at the AI Engineer Code Summit a couple of weeks ago, constructed around the idea that there have been three significant inflection points in the abilities of LLMs and coding agents in the past twelve months. Here's the video of the talk. In this post I'm going to pull out the major inflection point theme and interrogate it more deeply. Coding agents in November 2025 Today, November 24th 2026, is the one year anniversary of the release of Claude Opus 4.5 . With hindsight, this was a consequential model."
   },
   {
-   "title": "Investigation: Nvidia sells its most advanced chips to at least two Chinese-owned California compan…",
-   "url": "https://www.cbsnews.com/news/nvidia-china-ai-chips-computing-sales/",
-   "source": "Josh Boswell / CBS News",
-   "published_at": "2026-11-26T01:56:48Z",
-   "text": "Investigation: Nvidia sells its most advanced chips to at least two Chinese-owned California companies, which have leased or sold some of them to firms in Asia. Nvidia is selling its most cutting-edge chips to at least two companies that are U.S.-based, but are actually controlled by Chinese-owned firms …",
+   "title": "Sources: leading AI labs are sitting on major, unreleased algorithmic breakthroughs that could brea…",
+   "url": "https://scottaaronson.blog/?p=10379",
+   "source": "Scott Aaronson / Shtetl-Opt…",
+   "published_at": "2026-11-26T09:51:41Z",
+   "text": "Sources: leading AI labs are sitting on major, unreleased algorithmic breakthroughs that could break deployed cryptosystems, but their exact nature is unknown. I feel like my previous posts (and post titles), and podcasts, and talks, have failed to do full justice to the magnitude of what's now happening, so I'm trying again.",
    "via": "Techmeme"
   },
   {
-   "title": "Much shorter version of GRH Lean verification from Anthropic",
-   "url": "https://github.com/lsernau/grh-lean",
+   "title": "Google Will Make AI Agents Use Its MCP Servers. The Gmail One Can't Send Email",
+   "url": "https://techstackups.com/articles/google-workspace-ai-agents-mcp/",
    "source": "Hacker News",
-   "published_at": "2026-11-25T21:48:10Z",
-   "text": "469 points and 254 comments on Hacker News.",
-   "points": 469,
-   "discussion": "https://news.ycombinator.com/item?id=50648050"
+   "published_at": "2026-11-26T09:44:23Z",
+   "text": "64 points and 52 comments on Hacker News.",
+   "points": 64,
+   "discussion": "https://news.ycombinator.com/item?id=50653477"
   },
   {
    "title": "The US FCC authorizes SpaceX to deploy its “Starmind” constellation of up to 1M satellites for spac…",
@@ -110,13 +110,13 @@
    "via": "Techmeme"
   },
   {
-   "title": "The New York Times warns photographers not to update Photoshop over AI features",
-   "url": "https://www.theverge.com/ai-artificial-intelligence/1041227/the-new-york-times-warns-photographers-not-to-update-photoshop-over-ai-features",
+   "title": "Much shorter version of GRH Lean verification from Anthropic",
+   "url": "https://github.com/lsernau/grh-lean",
    "source": "Hacker News",
-   "published_at": "2026-11-25T21:18:02Z",
-   "text": "416 points and 349 comments on Hacker News.",
-   "points": 416,
-   "discussion": "https://news.ycombinator.com/item?id=50647673"
+   "published_at": "2026-11-25T21:48:10Z",
+   "text": "474 points and 256 comments on Hacker News.",
+   "points": 474,
+   "discussion": "https://news.ycombinator.com/item?id=50648050"
   },
   {
    "title": "Ladybird's first alpha release",
