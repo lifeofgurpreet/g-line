@@ -1,13 +1,13 @@
 {
  "schema": 1,
- "generated_at": "2026-11-26T13:21:10Z",
+ "generated_at": "2026-11-26T16:44:09Z",
  "items": [
   {
-   "title": "Sources: Pete Hegseth and other Pentagon officials discussed using the Defense Production Act as le…",
-   "url": "https://www.washingtonpost.com/technology/2026/11/25/hegseth-pentagon-officials-floated-using-wartime-law-reappoint-nvidia-ceo/?pwapi_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyZWFzb24iOiJnaWZ0IiwibmJmIjoxNzk1NTgyODAwLCJpc3MiOiJzdWJzY3JpcHRpb25zIiwiZXhwIjoxNzk2OTY1MTk5LCJpYXQiOjE3OTU1ODI4MDAsImp0aSI6IjZiNDI1NjE3LTkzZDQtNDY5MS1hZjMxLTJmNjdhMWU2MGIwYyIsInVybCI6Imh0dHBzOi8vd3d3Lndhc2hpbmd0b25wb3N0LmNvbS90ZWNobm9sb2d5LzIwMjYvMTEvMjUvaGVnc2V0aC1wZW50YWdvbi1vZmZpY2lhbHMtZmxvYXRlZC11c2luZy13YXJ0aW1lLWxhdy1yZWFwcG9pbnQtbnZpZGlhLWNlby8ifQ.IC587f-ZsvMSTdejz3SE90kzYZs7rK7qFb57vH6USNU&itid=gfta",
-   "source": "Washington Post",
-   "published_at": "2026-11-25T22:56:08Z",
-   "text": "Sources: Pete Hegseth and other Pentagon officials discussed using the Defense Production Act as leverage to pressure Nvidia's board to reinstate Jensen Huang. The Cold War-era Defense Production Act gives presidents extraordinary power to intervene in the economy.",
+   "title": "Sources: Nvidia tells its manufacturing partners to halt AI server shipments to Malaysia, Singapore…",
+   "url": "https://www.ft.com/content/7838a715-07d4-4605-aa60-21f5af2b2370?accessToken=zwAAAaKuNQQ-lc82jEUmoM5JUdOoR_A5rypRr894OKcVB9RGBdOqYCH1rysjcM8_V3g53u1A9NOvn7-PtUiQ488yW5PWvC5N09OZQc9GiKyhHdO5lhOroTBLn9OMFcQdt82IlAE.MEUCIAPJOFlcs0Bojv5ln7BmjmdLTj5dPHWXAdsn-FuOch_SAiEA5Eu4HIM2_h5rJDnldWxSlTi5axDZdg9vO7b_UplS1Nk&segmentId=7d4bcc2e-e664-92ba-62e3-5590579f1902",
+   "source": "Financial Times",
+   "published_at": "2026-11-26T05:46:04Z",
+   "text": "Sources: Nvidia tells its manufacturing partners to halt AI server shipments to Malaysia, Singapore, Thailand, and Indonesia, as the US steps up export controls. Move comes as US steps up export controls to prevent Chinese access to AI computing power — Nvidia has told its manufacturing partners …",
    "via": "Techmeme"
   },
   {
@@ -17,7 +17,7 @@
    "published_at": "2026-11-25T18:22:33Z",
    "text": "No, I do not believe that we should “surrender human free will” to AI systems, and it’s absurd to suggest that I do. I have written hundreds of pages of essays and a constant theme in them is the need for AI to be governed by legitimate democratic processes. For millennia (going…",
    "author_name": "Dario Amodei",
-   "likes": 18889,
+   "likes": 19681,
    "story": "Dario Amodei rejects the idea of surrendering free will to AI and accuses rival AI execs of “vibes-based” positioning, rebutting a report on AI leaders' views"
   },
   {
@@ -34,15 +34,15 @@
    "published_at": "2026-11-25T19:38:35Z",
    "text": "I've joined OpenAI! I'm very proud of my time at Anthropic, and I'll continue to root for my former colleagues. Both companies have important roles to play in the future. There is a tremendous amount of work ahead of us to bring AI to the world, and it will demand the very best…",
    "author_name": "Thariq",
-   "likes": 28152,
+   "likes": 29317,
    "story": "Thariq Shihipar joins OpenAI after leaving Anthropic in October, saying he felt he could “personally contribute the most” to bringing AI to the world at OpenAI"
   },
   {
-   "title": "Sources: Nvidia tells its manufacturing partners to halt AI server shipments to Malaysia, Singapore…",
-   "url": "https://www.ft.com/content/7838a715-07d4-4605-aa60-21f5af2b2370?accessToken=zwAAAaKuNQQ-lc82jEUmoM5JUdOoR_A5rypRr894OKcVB9RGBdOqYCH1rysjcM8_V3g53u1A9NOvn7-PtUiQ488yW5PWvC5N09OZQc9GiKyhHdO5lhOroTBLn9OMFcQdt82IlAE.MEUCIAPJOFlcs0Bojv5ln7BmjmdLTj5dPHWXAdsn-FuOch_SAiEA5Eu4HIM2_h5rJDnldWxSlTi5axDZdg9vO7b_UplS1Nk&segmentId=7d4bcc2e-e664-92ba-62e3-5590579f1902",
-   "source": "Financial Times",
-   "published_at": "2026-11-26T05:46:04Z",
-   "text": "Sources: Nvidia tells its manufacturing partners to halt AI server shipments to Malaysia, Singapore, Thailand, and Indonesia, as the US steps up export controls. Move comes as US steps up export controls to prevent Chinese access to AI computing power — Nvidia has told its manufacturing partners …",
+   "title": "Sources: leading AI labs are sitting on major, unreleased algorithmic breakthroughs that could brea…",
+   "url": "https://scottaaronson.blog/?p=10379",
+   "source": "Scott Aaronson / Shtetl-Opt…",
+   "published_at": "2026-11-26T09:51:41Z",
+   "text": "Sources: leading AI labs are sitting on major, unreleased algorithmic breakthroughs that could break deployed cryptosystems, but their exact nature is unknown. I feel like my previous posts (and post titles), and podcasts, and talks, have failed to do full justice to the magnitude of what's now happening, so I'm trying again.",
    "via": "Techmeme"
   },
   {
@@ -50,22 +50,19 @@
    "url": "https://twitter.com/thsottiaux/status/2125784147889393806",
    "source": "Hacker News",
    "published_at": "2026-11-26T03:36:58Z",
-   "text": "339 points and 187 comments on Hacker News.",
-   "points": 339,
+   "text": "419 points and 231 comments on Hacker News.",
+   "points": 419,
    "discussion": "https://news.ycombinator.com/item?id=50651117"
   },
   {
-   "title": "We recently migrated our Messages API from Python to Rust. On our engineering blog, we share how we…",
-   "url": "https://x.com/AnthropicAI/status/2125627317263466739",
-   "source": "𝕏 @AnthropicAI",
-   "published_at": "2026-11-25T16:26:59Z",
-   "text": "We recently migrated our Messages API from Python to Rust. On our engineering blog, we share how we used the existing service to verify the new one, with teams of Claude agents tracking down and fixing differences between the two versions.",
-   "author_name": "Anthropic",
-   "likes": 12445,
-   "story": "Anthropic details migrating its Messages API, the primary way customers access Claude, from Python to Rust, and using the Python service to verify the migration",
-   "links": [
-    "https://www.anthropic.com/research/migrating-api-to-rust"
-   ]
+   "title": "Wow, they were considering using the Defense Production Act (aka the WarClaude act) to force NVIDIA…",
+   "url": "https://x.com/AndrewCurran_/status/2125740125229555787",
+   "source": "𝕏 @AndrewCurran_",
+   "published_at": "2026-11-25T23:55:14Z",
+   "text": "Wow, they were considering using the Defense Production Act (aka the WarClaude act) to force NVIDIA to reinstate Jensen as CEO.",
+   "author_name": "Andrew Curran",
+   "likes": 1027,
+   "story": "Sources: Trump's national security adviser, Secretary Marco Rubio, was not involved in efforts to reinstate Jensen Huang and expressed anger at his return"
   },
   {
    "title": "Three LLM inflection points in twelve months",
@@ -83,33 +80,23 @@
    "via": "Techmeme"
   },
   {
-   "title": "Scott Aaronson on his blog. I have also heard this. In fact, this rumor has persisted for about ten…",
-   "url": "https://x.com/AndrewCurran_/status/2125589468786909510",
-   "source": "𝕏 @AndrewCurran_",
-   "published_at": "2026-11-25T13:56:35Z",
-   "text": "Scott Aaronson on his blog. I have also heard this. In fact, this rumor has persisted for about ten days, about both Anthropic and OpenAI. Considering how closely their recent math results have mirrored each other, if one has it, they probably both do. This would crack RSA.",
-   "author_name": "Andrew Curran",
-   "likes": 3589,
-   "story": "Sources: leading AI labs are sitting on major, unreleased algorithmic breakthroughs that could break deployed cryptosystems, but their exact nature is unknown"
-  },
-  {
-   "title": "Much shorter version of GRH Lean verification from Anthropic",
-   "url": "https://github.com/lsernau/grh-lean",
-   "source": "Hacker News",
-   "published_at": "2026-11-25T21:48:10Z",
-   "text": "487 points and 277 comments on Hacker News.",
-   "points": 487,
-   "discussion": "https://news.ycombinator.com/item?id=50648050"
-  },
-  {
    "title": "What I do not understand is why Chinese timelines for a big model X would slip due to anti-distilla…",
    "url": "https://x.com/teortaxesTex/status/2125888718049603776",
    "source": "𝕏 @teortaxesTex",
    "published_at": "2026-11-26T09:45:42Z",
    "text": "What I do not understand is why Chinese timelines for a big model X would slip due to anti-distillation in particular. You can just release an undercooked Preview. Are they literally *pretraining* on Claude logs? is this why everything's so fucked now? Can't you uh do it smarter?",
    "author_name": "Teortaxes▶️ (DeepSeek 推特🐋铁粉 2023 – ∞)",
-   "likes": 104,
+   "likes": 133,
    "story": "Sources: Z.ai's 3T-parameter flagship GLM-5.5 missed its November release and could be delayed to Q1 2027 or later due to US rules and labs' distillation curbs"
+  },
+  {
+   "title": "The New York Times warns photographers not to update Photoshop over AI features",
+   "url": "https://www.theverge.com/ai-artificial-intelligence/1041227/the-new-york-times-warns-photographers-not-to-update-photoshop-over-ai-features",
+   "source": "Hacker News",
+   "published_at": "2026-11-25T21:18:02Z",
+   "text": "535 points and 449 comments on Hacker News.",
+   "points": 535,
+   "discussion": "https://news.ycombinator.com/item?id=50647673"
   },
   {
    "title": "OpenAI says it corrected a GPT-6.2 Astra and Sol launch billing mistake that had incorrectly discou…",
@@ -120,13 +107,13 @@
    "via": "Techmeme"
   },
   {
-   "title": "The New York Times warns photographers not to update Photoshop over AI features",
-   "url": "https://www.theverge.com/ai-artificial-intelligence/1041227/the-new-york-times-warns-photographers-not-to-update-photoshop-over-ai-features",
+   "title": "Much shorter version of GRH Lean verification from Anthropic",
+   "url": "https://github.com/lsernau/grh-lean",
    "source": "Hacker News",
-   "published_at": "2026-11-25T21:18:02Z",
-   "text": "456 points and 382 comments on Hacker News.",
-   "points": 456,
-   "discussion": "https://news.ycombinator.com/item?id=50647673"
+   "published_at": "2026-11-25T21:48:10Z",
+   "text": "511 points and 325 comments on Hacker News.",
+   "points": 511,
+   "discussion": "https://news.ycombinator.com/item?id=50648050"
   },
   {
    "title": "Ladybird's first alpha release",
@@ -134,6 +121,14 @@
    "source": "Simon Willison's weblog",
    "published_at": "2026-11-23T21:46:35Z",
    "text": "Ladybird is an astonishingly ambitious project: a new browser, in 2026, with its own implementation of most of the key components - HTML parsing, CSS engine, layout, JavaScript, even WebAssembly. It still uses a few external components - things like HarfBuzz for text shaping, Skia for 2D graphics, ffmpeg for video, and SQLite for the things you do with SQLite. Everything else is part of Ladybird, or code brought in from Ladybird's even more ambitious predecessor project SerenityOS ."
+  },
+  {
+   "title": "Microsoft says state-backed hacking groups in China and North Korea, including Salt Typhoon, have a…",
+   "url": "https://therecord.media/microsoft-china-salt-typhoon-using-artex-ai-tool",
+   "source": "Jonathan Greig / The Record",
+   "published_at": "2026-11-26T06:01:52Z",
+   "text": "Microsoft says state-backed hacking groups in China and North Korea, including Salt Typhoon, have added AI penetration testing tool ARTEX to their arsenals. State-backed hacking groups in China and North Korea are using a powerful AI hacking tool in attacks, according to a new report from Microsoft.",
+   "via": "Techmeme"
   }
  ],
  "sources": "curated, Techmeme, X (found via Techmeme, Reddit, the Internet Archive), Claude Code releases, Anthropic, Hacker News, Simon Willison"
