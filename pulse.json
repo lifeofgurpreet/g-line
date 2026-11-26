@@ -1,24 +1,24 @@
 {
  "schema": 1,
- "generated_at": "2026-11-25T03:27:52Z",
+ "generated_at": "2026-11-26T00:52:00Z",
  "items": [
   {
-   "title": "In an all-hands, Jensen Huang apologized for violating Nvidia's code of conduct, saying he is in th…",
-   "url": "https://www.wired.com/story/jensen-huang-apologizes-to-nvidia-employees-in-first-all-hands-since-his-return/",
-   "source": "Paresh Dave / Wired",
-   "published_at": "2026-11-24T18:02:24Z",
-   "text": "In an all-hands, Jensen Huang apologized for violating Nvidia's code of conduct, saying he is in therapy after making “very serious personal mistakes”. Nvidia CEO Jensen Huang told employees on Tuesday that the company's code of conduct allows room for a “second chance,” …",
+   "title": "The US FCC authorizes SpaceX to deploy its “Starmind” constellation of 1M satellites for data cente…",
+   "url": "https://www.reuters.com/business/media-telecom/us-authorizes-spacex-deploy-1-million-satellites-data-centers-space-2026-11-25/",
+   "source": "David Shepardson / Reuters",
+   "published_at": "2026-11-25T17:26:17Z",
+   "text": "The US FCC authorizes SpaceX to deploy its “Starmind” constellation of 1M satellites for data centers in space. The Federal Communications Commission on Wednesday said it was authorizing Elon Musk's SpaceX (SPCX.O) to deploy 1 million satellites for data centers in space.",
    "via": "Techmeme"
   },
   {
-   "title": "We’re sharing a new preprint showing wet lab validation of intrinsic protein design capabilities of…",
-   "url": "https://x.com/OpenAI/status/2125334383490105601",
-   "source": "𝕏 @OpenAI",
-   "published_at": "2026-11-24T21:02:58Z",
-   "text": "We’re sharing a new preprint showing wet lab validation of intrinsic protein design capabilities of the GPT-6 family of models. Our models can design new protein shapes and sequences using reasoning and code, without calling specialized biology models to generate them.…",
-   "author_name": "OpenAI",
-   "likes": 6291,
-   "story": "OpenAI says GPT-6 models can design new protein shapes and sequences using only reasoning and code, without calling specialized biology models to generate them"
+   "title": "No, I do not believe that we should “surrender human free will” to AI systems, and it’s absurd to s…",
+   "url": "https://x.com/DarioAmodei/status/2125656399392690605",
+   "source": "𝕏 @DarioAmodei",
+   "published_at": "2026-11-25T18:22:33Z",
+   "text": "No, I do not believe that we should “surrender human free will” to AI systems, and it’s absurd to suggest that I do. I have written hundreds of pages of essays and a constant theme in them is the need for AI to be governed by legitimate democratic processes. For millennia (going…",
+   "author_name": "Dario Amodei",
+   "likes": 13509,
+   "story": "Dario Amodei rejects the idea of surrendering free will to AI and accuses rival AI execs of “vibes-based” positioning, rebutting a report on AI leaders' views"
   },
   {
    "title": "Claude Code 2.1.332 released",
@@ -28,41 +28,44 @@
    "text": "Added skills from MCP servers (beta). They show as server:skill in the / menu; other skills keep their names · Added a PreSkillShellCommand hook event that can refuse a skill or command's inline shell commands as it loads; on 2.1.331 and older, a settings file naming it opens a dialog at start · Added \"Always deliver\" to the prompt for held messages from other sessions · Added a footer line that stays while a flagged message has your session on a different model, until you pick one with /model"
   },
   {
-   "title": "You can now install Claude artifacts as desktop apps on Mac and Windows. Ask Claude to build an art…",
-   "url": "https://x.com/ClaudeDevs/status/2125315491522650299",
-   "source": "𝕏 @ClaudeDevs",
-   "published_at": "2026-11-24T19:47:54Z",
-   "text": "You can now install Claude artifacts as desktop apps on Mac and Windows. Ask Claude to build an artifact, click \"Install as app\", and open it like any other app. It can use your connectors and, if you allow it, send notifications or add a menu bar item.",
-   "author_name": "ClaudeDevs",
-   "likes": 43154,
-   "story": "Anthropic rolls out “Install as app” in beta, which turns Claude artifacts into Mac and Windows apps with notifications, optional full computer access, and more"
+   "title": "We recently migrated our Messages API from Python to Rust. On our engineering blog, we share how we…",
+   "url": "https://x.com/AnthropicAI/status/2125627317263466739",
+   "source": "𝕏 @AnthropicAI",
+   "published_at": "2026-11-25T16:26:59Z",
+   "text": "We recently migrated our Messages API from Python to Rust. On our engineering blog, we share how we used the existing service to verify the new one, with teams of Claude agents tracking down and fixing differences between the two versions.",
+   "author_name": "Anthropic",
+   "likes": 8319,
+   "story": "Anthropic details migrating its Messages API, the primary way customers access Claude, from Python to Rust, and using the Python service to verify the migration",
+   "links": [
+    "https://www.anthropic.com/research/migrating-api-to-rust"
+   ]
   },
   {
-   "title": "Trump says a pardon for Jensen Huang is “always an option” but likely unnecessary, and it's “probab…",
-   "url": "https://nypost.com/2026/11/24/us-news/trump-leaves-door-open-to-jensen-huang-pardon-and-urges-him-not-to-plead-5th-to-congress-next-week/",
-   "source": "New York Post",
-   "published_at": "2026-11-24T23:10:59Z",
-   "text": "Trump says a pardon for Jensen Huang is “always an option” but likely unnecessary, and it's “probably not too late” for the US to take an equity stake in Nvidia. WASHINGTON — President Trump told The Post in an exclusive interview that he's willing to pardon Jensen Huang …",
+   "title": "US stocks clawed back steep losses on Wednesday; the Nasdaq 100 closed down 0.6%, recovering from a…",
+   "url": "https://www.ft.com/content/705eb84c-801d-4a96-b908-e366511e886a",
+   "source": "Financial Times",
+   "published_at": "2026-11-25T15:11:11Z",
+   "text": "US stocks clawed back steep losses on Wednesday; the Nasdaq 100 closed down 0.6%, recovering from an early drop of as much as 4.7%, and Nvidia dropped 3.9%. Chip group Nvidia among losers but AI start-up Anthropic a bright spot as shares finish higher — George Steer in New York …",
    "via": "Techmeme"
   },
   {
-   "title": "PenGPT: A Generative Transformer for Handwriting and Sketches",
-   "url": "https://greydanus.github.io/2026/11/12/pengpt/",
+   "title": "Much shorter version of GRH Lean verification from Anthropic",
+   "url": "https://github.com/lsernau/grh-lean",
    "source": "Hacker News",
-   "published_at": "2026-11-25T00:54:49Z",
-   "text": "93 points and 13 comments on Hacker News.",
-   "points": 93,
-   "discussion": "https://news.ycombinator.com/item?id=50637056"
+   "published_at": "2026-11-25T21:48:10Z",
+   "text": "229 points and 105 comments on Hacker News.",
+   "points": 229,
+   "discussion": "https://news.ycombinator.com/item?id=50648050"
   },
   {
-   "title": "New Anthropic research: When an AI agent can escape its sandbox, will it choose to? Our new evaluat…",
-   "url": "https://x.com/AnthropicAI/status/2125341904644763678",
-   "source": "𝕏 @AnthropicAI",
-   "published_at": "2026-11-24T21:32:51Z",
-   "text": "New Anthropic research: When an AI agent can escape its sandbox, will it choose to? Our new evaluation, Siren, gives Claude routine tasks in intentionally weakened sandboxes, with something useful to the task left outside of the sandbox. Across 1,700+ scenarios built to tempt…",
-   "author_name": "Anthropic",
-   "likes": 1878,
-   "story": "Anthropic details Siren, a honeypot test that tempts AI agents to escape sandboxes; its newer models fell for it 0.6%-1.6% of the time, vs. 25.8% for Mythos 5"
+   "title": "EU is about to have the biggest comeback. €50B holy shit, that's like 2.5 whole datacenters somewhe…",
+   "url": "https://x.com/SimonHoiberg/status/2125555288044642410",
+   "source": "𝕏 @SimonHoiberg",
+   "published_at": "2026-11-25T11:40:46Z",
+   "text": "EU is about to have the biggest comeback. €50B holy shit, that's like 2.5 whole datacenters somewhere in Bulgaria.",
+   "author_name": "Simon Høiberg",
+   "likes": 15192,
+   "story": "The EU plans to mobilize €50B for its Sovereign Tech Equity Fund to make long-term, high-risk bets on European AI and quantum computing companies"
   },
   {
    "title": "Three LLM inflection points in twelve months",
@@ -72,48 +75,58 @@
    "text": "I gave a keynote at the AI Engineer Code Summit a couple of weeks ago, constructed around the idea that there have been three significant inflection points in the abilities of LLMs and coding agents in the past twelve months. Here's the video of the talk. In this post I'm going to pull out the major inflection point theme and interrogate it more deeply. Coding agents in November 2025 Today, November 24th 2026, is the one year anniversary of the release of Claude Opus 4.5 . With hindsight, this was a consequential model."
   },
   {
-   "title": "Sources: Jensen Huang said Nvidia doesn't need a succession plan because it operates a unique busin…",
-   "url": "https://www.cnbc.com/2026/11/24/jensen-huang-nvidia-employee-meeting.html",
-   "source": "CNBC",
-   "published_at": "2026-11-24T20:11:01Z",
-   "text": "Sources: Jensen Huang said Nvidia doesn't need a succession plan because it operates a unique business model and such a plan would create unnecessary hierarchy. Nvidia CEO Jensen Huang on Tuesday struck a conciliatory and remorseful tone while leading his first employee meeting since being reinstated …",
+   "title": "Sources: Pete Hegseth and other Pentagon officials discussed using the Defense Production Act as le…",
+   "url": "https://www.washingtonpost.com/technology/2026/11/25/hegseth-pentagon-officials-floated-using-wartime-law-reappoint-nvidia-ceo/",
+   "source": "Washington Post",
+   "published_at": "2026-11-25T22:56:08Z",
+   "text": "Sources: Pete Hegseth and other Pentagon officials discussed using the Defense Production Act as leverage to pressure Nvidia's board to reinstate Jensen Huang. The Cold War-era Defense Production Act gives presidents extraordinary power to intervene in the economy.",
    "via": "Techmeme"
   },
   {
-   "title": "GPT-6.2 Astra for solving a significant historical mystery:",
-   "url": "https://x.com/gdb/status/2125305172721320165",
-   "source": "𝕏 @gdb",
-   "published_at": "2026-11-24T19:06:54Z",
-   "text": "GPT-6.2 Astra for solving a significant historical mystery:",
-   "author_name": "Greg Brockman",
-   "likes": 915,
-   "story": "A history professor says GPT-6.2 Astra solved a historical mystery in 22 minutes by identifying the creator of an anonymous 1808 sketchbook held at Yale"
+   "title": "Think the strong-arming on NVIDIA's board was crazy? Check this out:",
+   "url": "https://x.com/NoahShachtman/status/2125591635132072188",
+   "source": "𝕏 @NoahShachtman",
+   "published_at": "2026-11-25T14:05:12Z",
+   "text": "Think the strong-arming on NVIDIA's board was crazy? Check this out:",
+   "author_name": "Noah Shachtman",
+   "likes": 5054,
+   "story": "US court documents detail a Commerce Department pressure campaign on Intel to acquire a 10% equity stake in 2025, warning rejection would carry “consequences”"
   },
   {
-   "title": "LLM agents work for their parent companies, not for you",
-   "url": "https://michaelharley.net/posts/2026/11/01/llm-agents-work-for-their-parent-companies-not-for-you/",
+   "title": "The New York Times warns photographers not to update Photoshop over AI features",
+   "url": "https://www.theverge.com/ai-artificial-intelligence/1041227/the-new-york-times-warns-photographers-not-to-update-photoshop-over-ai-features",
    "source": "Hacker News",
-   "published_at": "2026-11-24T12:40:15Z",
-   "text": "935 points and 392 comments on Hacker News.",
-   "points": 935,
-   "discussion": "https://news.ycombinator.com/item?id=50627340"
+   "published_at": "2026-11-25T21:18:02Z",
+   "text": "171 points and 104 comments on Hacker News.",
+   "points": 171,
+   "discussion": "https://news.ycombinator.com/item?id=50647673"
   },
   {
-   "title": "Sources: the CIA, ODNI, and NGA found a breach of an open-source intelligence system that exposed s…",
-   "url": "https://www.nytimes.com/2026/11/24/us/politics/spy-agencies-computer-network-breaches.html?unlocked_article_code=1.S1E.8Ak8.1m2taItvN8OT&smid=url-share",
-   "source": "New York Times",
-   "published_at": "2026-11-24T20:06:00Z",
-   "text": "Sources: the CIA, ODNI, and NGA found a breach of an open-source intelligence system that exposed some unclassified info; hackers likely used the AI tool Artex. The intrusion affecting the C.I.A. and the Office of the Director of National Intelligence comes amid heightened concerns about cybersecurity.",
+   "title": "As part of the October 6 release we had a particularly clean advance on the matrix multiplication e…",
+   "url": "https://x.com/SebastienBubeck/status/2125402576145572334",
+   "source": "𝕏 @SebastienBubeck",
+   "published_at": "2026-11-25T01:33:56Z",
+   "text": "As part of the October 6 release we had a particularly clean advance on the matrix multiplication exponent, with a new upper bound of 9/4. Since then, the model has been working on a LOWER BOUND for this exponent. This is already pretty crazy since NOTHING was known for lower…",
+   "author_name": "Sebastien Bubeck",
+   "likes": 4318,
+   "story": "OpenAI publishes a preprint that claims to prove that the matrix multiplication exponent (ω) is exactly 9/4, addressing a major open problem in mathematics"
+  },
+  {
+   "title": "Chinese vendors in Shenzhen's Huaqiangbei market still sell US-restricted Nvidia hardware, quoting…",
+   "url": "https://www.washingtonpost.com/world/2026/11/25/top-nvidia-chips-are-still-offer-china-despite-us-ban/?pwapi_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyZWFzb24iOiJnaWZ0IiwibmJmIjoxNzk1NTgyODAwLCJpc3MiOiJzdWJzY3JpcHRpb25zIiwiZXhwIjoxNzk2OTY1MTk5LCJpYXQiOjE3OTU1ODI4MDAsImp0aSI6ImRjN2IwMDllLWFkMzEtNDViZC1hNDBlLTdiZTZkY2QyYjgyOSIsInVybCI6Imh0dHBzOi8vd3d3Lndhc2hpbmd0b25wb3N0LmNvbS93b3JsZC8yMDI2LzExLzI1L3RvcC1udmlkaWEtY2hpcHMtYXJlLXN0aWxsLW9mZmVyLWNoaW5hLWRlc3BpdGUtdXMtYmFuLyJ9.jF3hc_e28ZcCrJ5Y8OmlgXSYteCO7jDAMSZ9yQp6kJg&itid=gfta",
+   "source": "Joshua Yang / Washington Po…",
+   "published_at": "2026-11-25T13:01:57Z",
+   "text": "Chinese vendors in Shenzhen's Huaqiangbei market still sell US-restricted Nvidia hardware, quoting $3M+ for Blackwell B300 servers, up from $2M two months ago. Though black-market prices have surged amid the turmoil around Nvidia CEO Jensen Huang, traders in Shenzhen persist in hawking the company's best chips.",
    "via": "Techmeme"
   },
   {
-   "title": "GPT-6 models demonstrate intrinsic protein-design capabilities",
-   "url": "https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities/",
+   "title": "Porting Rockbox to an undocumented $9 AliExpress 'YP3' MP3 player with LLMs",
+   "url": "https://jayd.ml/2026/11/14/rockbox-on-yp3.html",
    "source": "Hacker News",
-   "published_at": "2026-11-24T21:02:22Z",
-   "text": "195 points and 58 comments on Hacker News.",
-   "points": 195,
-   "discussion": "https://news.ycombinator.com/item?id=50634658"
+   "published_at": "2026-11-24T06:22:36Z",
+   "text": "219 points and 87 comments on Hacker News.",
+   "points": 219,
+   "discussion": "https://news.ycombinator.com/item?id=50624446"
   },
   {
    "title": "Ladybird's first alpha release",
@@ -121,14 +134,6 @@
    "source": "Simon Willison's weblog",
    "published_at": "2026-11-23T21:46:35Z",
    "text": "Ladybird is an astonishingly ambitious project: a new browser, in 2026, with its own implementation of most of the key components - HTML parsing, CSS engine, layout, JavaScript, even WebAssembly. It still uses a few external components - things like HarfBuzz for text shaping, Skia for 2D graphics, ffmpeg for video, and SQLite for the things you do with SQLite. Everything else is part of Ladybird, or code brought in from Ladybird's even more ambitious predecessor project SerenityOS ."
-  },
-  {
-   "title": "Sources: Anthropic and OpenAI employees warn that internal, unreleased models have achieved rapid a…",
-   "url": "https://www.axios.com/2026/11/24/anthropic-openai-unreleased-ai-safety-risks",
-   "source": "Madison Mills / Axios",
-   "published_at": "2026-11-24T11:21:15Z",
-   "text": "Sources: Anthropic and OpenAI employees warn that internal, unreleased models have achieved rapid advances in reasoning, making them unsafe to release publicly. Anthropic and OpenAI are facing an increasingly urgent problem: Internal, unreleased models are becoming so powerful that many employees …",
-   "via": "Techmeme"
   }
  ],
  "sources": "curated, Techmeme, X (found via Techmeme, Reddit, the Internet Archive), Claude Code releases, Anthropic, Hacker News, Simon Willison"
