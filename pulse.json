@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-26T12:49:02Z",
+ "generated_at": "2026-11-26T13:21:10Z",
  "items": [
   {
    "title": "Sources: Pete Hegseth and other Pentagon officials discussed using the Defense Production Act as le…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-25T18:22:33Z",
    "text": "No, I do not believe that we should “surrender human free will” to AI systems, and it’s absurd to suggest that I do. I have written hundreds of pages of essays and a constant theme in them is the need for AI to be governed by legitimate democratic processes. For millennia (going…",
    "author_name": "Dario Amodei",
-   "likes": 18750,
+   "likes": 18889,
    "story": "Dario Amodei rejects the idea of surrendering free will to AI and accuses rival AI execs of “vibes-based” positioning, rebutting a report on AI leaders' views"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-11-25T19:38:35Z",
    "text": "I've joined OpenAI! I'm very proud of my time at Anthropic, and I'll continue to root for my former colleagues. Both companies have important roles to play in the future. There is a tremendous amount of work ahead of us to bring AI to the world, and it will demand the very best…",
    "author_name": "Thariq",
-   "likes": 27969,
+   "likes": 28152,
    "story": "Thariq Shihipar joins OpenAI after leaving Anthropic in October, saying he felt he could “personally contribute the most” to bringing AI to the world at OpenAI"
   },
   {
@@ -50,8 +50,8 @@
    "url": "https://twitter.com/thsottiaux/status/2125784147889393806",
    "source": "Hacker News",
    "published_at": "2026-11-26T03:36:58Z",
-   "text": "316 points and 177 comments on Hacker News.",
-   "points": 316,
+   "text": "339 points and 187 comments on Hacker News.",
+   "points": 339,
    "discussion": "https://news.ycombinator.com/item?id=50651117"
   },
   {
@@ -61,7 +61,7 @@
    "published_at": "2026-11-25T16:26:59Z",
    "text": "We recently migrated our Messages API from Python to Rust. On our engineering blog, we share how we used the existing service to verify the new one, with teams of Claude agents tracking down and fixing differences between the two versions.",
    "author_name": "Anthropic",
-   "likes": 12304,
+   "likes": 12445,
    "story": "Anthropic details migrating its Messages API, the primary way customers access Claude, from Python to Rust, and using the Python service to verify the migration",
    "links": [
     "https://www.anthropic.com/research/migrating-api-to-rust"
@@ -89,17 +89,17 @@
    "published_at": "2026-11-25T13:56:35Z",
    "text": "Scott Aaronson on his blog. I have also heard this. In fact, this rumor has persisted for about ten days, about both Anthropic and OpenAI. Considering how closely their recent math results have mirrored each other, if one has it, they probably both do. This would crack RSA.",
    "author_name": "Andrew Curran",
-   "likes": 3572,
+   "likes": 3589,
    "story": "Sources: leading AI labs are sitting on major, unreleased algorithmic breakthroughs that could break deployed cryptosystems, but their exact nature is unknown"
   },
   {
-   "title": "Google Will Make AI Agents Use Its MCP Servers. The Gmail One Can't Send Email",
-   "url": "https://techstackups.com/articles/google-workspace-ai-agents-mcp/",
+   "title": "Much shorter version of GRH Lean verification from Anthropic",
+   "url": "https://github.com/lsernau/grh-lean",
    "source": "Hacker News",
-   "published_at": "2026-11-26T09:44:23Z",
-   "text": "73 points and 62 comments on Hacker News.",
-   "points": 73,
-   "discussion": "https://news.ycombinator.com/item?id=50653477"
+   "published_at": "2026-11-25T21:48:10Z",
+   "text": "487 points and 277 comments on Hacker News.",
+   "points": 487,
+   "discussion": "https://news.ycombinator.com/item?id=50648050"
   },
   {
    "title": "What I do not understand is why Chinese timelines for a big model X would slip due to anti-distilla…",
@@ -108,25 +108,25 @@
    "published_at": "2026-11-26T09:45:42Z",
    "text": "What I do not understand is why Chinese timelines for a big model X would slip due to anti-distillation in particular. You can just release an undercooked Preview. Are they literally *pretraining* on Claude logs? is this why everything's so fucked now? Can't you uh do it smarter?",
    "author_name": "Teortaxes▶️ (DeepSeek 推特🐋铁粉 2023 – ∞)",
-   "likes": 94,
+   "likes": 104,
    "story": "Sources: Z.ai's 3T-parameter flagship GLM-5.5 missed its November release and could be delayed to Q1 2027 or later due to US rules and labs' distillation curbs"
   },
   {
-   "title": "The US FCC authorizes SpaceX to deploy its “Starmind” constellation of up to 1M satellites for spac…",
-   "url": "https://www.reuters.com/business/media-telecom/us-authorizes-spacex-deploy-1-million-satellites-data-centers-space-2026-11-25/",
-   "source": "David Shepardson / Reuters",
-   "published_at": "2026-11-25T17:26:17Z",
-   "text": "The US FCC authorizes SpaceX to deploy its “Starmind” constellation of up to 1M satellites for space data centers; SpaceX must begin deployment by November 2033. The Federal Communications Commission is authorizing Elon Musk's SpaceX (SPCX.O) to deploy a constellation …",
+   "title": "OpenAI says it corrected a GPT-6.2 Astra and Sol launch billing mistake that had incorrectly discou…",
+   "url": "https://www.techradar.com/ai-platforms-assistants/chatgpt/weve-fixed-this-now-so-the-same-work-will-use-more-of-your-plans-usage-allowance-openai-admits-it-made-a-mistake-when-launching-gpt-6-2-and-now-paying-chatgpt-users-could-hit-their-usage-limits-up-to-40-percent-faster",
+   "source": "Graham Barlow / TechRadar",
+   "published_at": "2026-11-26T13:02:19Z",
+   "text": "OpenAI says it corrected a GPT-6.2 Astra and Sol launch billing mistake that had incorrectly discounted usage; Astra users will now hit their limits 40% faster. Too little, too late? … - OpenAI has admitted to a billing mistake with its new GPT-6.2 models — You'll now hit your usage limits up to 40% faster",
    "via": "Techmeme"
   },
   {
-   "title": "Much shorter version of GRH Lean verification from Anthropic",
-   "url": "https://github.com/lsernau/grh-lean",
+   "title": "The New York Times warns photographers not to update Photoshop over AI features",
+   "url": "https://www.theverge.com/ai-artificial-intelligence/1041227/the-new-york-times-warns-photographers-not-to-update-photoshop-over-ai-features",
    "source": "Hacker News",
-   "published_at": "2026-11-25T21:48:10Z",
-   "text": "480 points and 263 comments on Hacker News.",
-   "points": 480,
-   "discussion": "https://news.ycombinator.com/item?id=50648050"
+   "published_at": "2026-11-25T21:18:02Z",
+   "text": "456 points and 382 comments on Hacker News.",
+   "points": 456,
+   "discussion": "https://news.ycombinator.com/item?id=50647673"
   },
   {
    "title": "Ladybird's first alpha release",
