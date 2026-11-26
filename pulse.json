@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-26T20:08:13Z",
+ "generated_at": "2026-11-26T20:40:53Z",
  "items": [
   {
    "title": "Sources: Nvidia tells its manufacturing partners to halt AI server shipments to Malaysia, Singapore…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-25T18:22:33Z",
    "text": "No, I do not believe that we should “surrender human free will” to AI systems, and it’s absurd to suggest that I do. I have written hundreds of pages of essays and a constant theme in them is the need for AI to be governed by legitimate democratic processes. For millennia (going…",
    "author_name": "Dario Amodei",
-   "likes": 20127,
+   "likes": 20205,
    "story": "Dario Amodei rejects the idea of surrendering free will to AI and accuses rival AI execs of “vibes-based” positioning, rebutting a report on AI leaders' views"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-11-25T19:38:35Z",
    "text": "I've joined OpenAI! I'm very proud of my time at Anthropic, and I'll continue to root for my former colleagues. Both companies have important roles to play in the future. There is a tremendous amount of work ahead of us to bring AI to the world, and it will demand the very best…",
    "author_name": "Thariq",
-   "likes": 30062,
+   "likes": 30168,
    "story": "Thariq Shihipar joins OpenAI after leaving Anthropic in October, saying he felt he could “personally contribute the most” to bringing AI to the world at OpenAI"
   },
   {
@@ -50,8 +50,8 @@
    "url": "https://devnull.land/amd-specific-llama-cpp",
    "source": "Hacker News",
    "published_at": "2026-11-26T17:11:29Z",
-   "text": "151 points and 45 comments on Hacker News.",
-   "points": 151,
+   "text": "174 points and 46 comments on Hacker News.",
+   "points": 174,
    "discussion": "https://news.ycombinator.com/item?id=50657265"
   },
   {
@@ -61,7 +61,7 @@
    "published_at": "2026-11-26T02:50:10Z",
    "text": "We made a billing mistake at launch of GPT-6.2 that incorrectly discounted GPT-6.2 Astra and Sol usage for most users. We’ve fixed this now, so the same work will use more of your plan’s usage allowance. Comparing to last week, you will reach your limits 40% faster on GPT-6.2…",
    "author_name": "Tibo",
-   "likes": 17315,
+   "likes": 17426,
    "story": "OpenAI says it corrected a GPT-6.2 Astra and Sol launch billing mistake that had incorrectly discounted usage; Astra users will now hit their limits 40% faster"
   },
   {
@@ -86,7 +86,7 @@
    "published_at": "2026-11-25T23:55:14Z",
    "text": "Wow, they were considering using the Defense Production Act (aka the WarClaude act) to force NVIDIA to reinstate Jensen as CEO.",
    "author_name": "Andrew Curran",
-   "likes": 1058,
+   "likes": 1063,
    "story": "Sources: Pete Hegseth and other Pentagon officials discussed using the Defense Production Act as leverage to pressure Nvidia's board to reinstate Jensen Huang"
   },
   {
@@ -94,8 +94,8 @@
    "url": "https://www.theverge.com/ai-artificial-intelligence/1041227/the-new-york-times-warns-photographers-not-to-update-photoshop-over-ai-features",
    "source": "Hacker News",
    "published_at": "2026-11-25T21:18:02Z",
-   "text": "622 points and 493 comments on Hacker News.",
-   "points": 622,
+   "text": "628 points and 496 comments on Hacker News.",
+   "points": 628,
    "discussion": "https://news.ycombinator.com/item?id=50647673"
   },
   {
@@ -111,8 +111,8 @@
    "url": "https://github.com/lsernau/grh-lean",
    "source": "Hacker News",
    "published_at": "2026-11-25T21:48:10Z",
-   "text": "529 points and 336 comments on Hacker News.",
-   "points": 529,
+   "text": "534 points and 338 comments on Hacker News.",
+   "points": 534,
    "discussion": "https://news.ycombinator.com/item?id=50648050"
   },
   {
