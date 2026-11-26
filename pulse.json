@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-26T00:52:00Z",
+ "generated_at": "2026-11-26T01:24:30Z",
  "items": [
   {
    "title": "The US FCC authorizes SpaceX to deploy its “Starmind” constellation of 1M satellites for data cente…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-25T18:22:33Z",
    "text": "No, I do not believe that we should “surrender human free will” to AI systems, and it’s absurd to suggest that I do. I have written hundreds of pages of essays and a constant theme in them is the need for AI to be governed by legitimate democratic processes. For millennia (going…",
    "author_name": "Dario Amodei",
-   "likes": 13509,
+   "likes": 13884,
    "story": "Dario Amodei rejects the idea of surrendering free will to AI and accuses rival AI execs of “vibes-based” positioning, rebutting a report on AI leaders' views"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-11-25T16:26:59Z",
    "text": "We recently migrated our Messages API from Python to Rust. On our engineering blog, we share how we used the existing service to verify the new one, with teams of Claude agents tracking down and fixing differences between the two versions.",
    "author_name": "Anthropic",
-   "likes": 8319,
+   "likes": 8563,
    "story": "Anthropic details migrating its Messages API, the primary way customers access Claude, from Python to Rust, and using the Python service to verify the migration",
    "links": [
     "https://www.anthropic.com/research/migrating-api-to-rust"
@@ -53,8 +53,8 @@
    "url": "https://github.com/lsernau/grh-lean",
    "source": "Hacker News",
    "published_at": "2026-11-25T21:48:10Z",
-   "text": "229 points and 105 comments on Hacker News.",
-   "points": 229,
+   "text": "256 points and 116 comments on Hacker News.",
+   "points": 256,
    "discussion": "https://news.ycombinator.com/item?id=50648050"
   },
   {
@@ -64,7 +64,7 @@
    "published_at": "2026-11-25T11:40:46Z",
    "text": "EU is about to have the biggest comeback. €50B holy shit, that's like 2.5 whole datacenters somewhere in Bulgaria.",
    "author_name": "Simon Høiberg",
-   "likes": 15192,
+   "likes": 15391,
    "story": "The EU plans to mobilize €50B for its Sovereign Tech Equity Fund to make long-term, high-risk bets on European AI and quantum computing companies"
   },
   {
@@ -83,33 +83,33 @@
    "via": "Techmeme"
   },
   {
-   "title": "Think the strong-arming on NVIDIA's board was crazy? Check this out:",
-   "url": "https://x.com/NoahShachtman/status/2125591635132072188",
-   "source": "𝕏 @NoahShachtman",
-   "published_at": "2026-11-25T14:05:12Z",
-   "text": "Think the strong-arming on NVIDIA's board was crazy? Check this out:",
-   "author_name": "Noah Shachtman",
-   "likes": 5054,
-   "story": "US court documents detail a Commerce Department pressure campaign on Intel to acquire a 10% equity stake in 2025, warning rejection would carry “consequences”"
-  },
-  {
-   "title": "The New York Times warns photographers not to update Photoshop over AI features",
-   "url": "https://www.theverge.com/ai-artificial-intelligence/1041227/the-new-york-times-warns-photographers-not-to-update-photoshop-over-ai-features",
-   "source": "Hacker News",
-   "published_at": "2026-11-25T21:18:02Z",
-   "text": "171 points and 104 comments on Hacker News.",
-   "points": 171,
-   "discussion": "https://news.ycombinator.com/item?id=50647673"
-  },
-  {
    "title": "As part of the October 6 release we had a particularly clean advance on the matrix multiplication e…",
    "url": "https://x.com/SebastienBubeck/status/2125402576145572334",
    "source": "𝕏 @SebastienBubeck",
    "published_at": "2026-11-25T01:33:56Z",
    "text": "As part of the October 6 release we had a particularly clean advance on the matrix multiplication exponent, with a new upper bound of 9/4. Since then, the model has been working on a LOWER BOUND for this exponent. This is already pretty crazy since NOTHING was known for lower…",
    "author_name": "Sebastien Bubeck",
-   "likes": 4318,
+   "likes": 4328,
    "story": "OpenAI publishes a preprint that claims to prove that the matrix multiplication exponent (ω) is exactly 9/4, addressing a major open problem in mathematics"
+  },
+  {
+   "title": "The New York Times warns photographers not to update Photoshop over AI features",
+   "url": "https://www.theverge.com/ai-artificial-intelligence/1041227/the-new-york-times-warns-photographers-not-to-update-photoshop-over-ai-features",
+   "source": "Hacker News",
+   "published_at": "2026-11-25T21:18:02Z",
+   "text": "191 points and 126 comments on Hacker News.",
+   "points": 191,
+   "discussion": "https://news.ycombinator.com/item?id=50647673"
+  },
+  {
+   "title": "Think the strong-arming on NVIDIA's board was crazy? Check this out:",
+   "url": "https://x.com/NoahShachtman/status/2125591635132072188",
+   "source": "𝕏 @NoahShachtman",
+   "published_at": "2026-11-25T14:05:12Z",
+   "text": "Think the strong-arming on NVIDIA's board was crazy? Check this out:",
+   "author_name": "Noah Shachtman",
+   "likes": 5100,
+   "story": "US court documents detail a Commerce Department pressure campaign on Intel to acquire a 10% equity stake in 2025, warning rejection would carry “consequences”"
   },
   {
    "title": "Chinese vendors in Shenzhen's Huaqiangbei market still sell US-restricted Nvidia hardware, quoting…",
@@ -124,8 +124,8 @@
    "url": "https://jayd.ml/2026/11/14/rockbox-on-yp3.html",
    "source": "Hacker News",
    "published_at": "2026-11-24T06:22:36Z",
-   "text": "219 points and 87 comments on Hacker News.",
-   "points": 219,
+   "text": "222 points and 89 comments on Hacker News.",
+   "points": 222,
    "discussion": "https://news.ycombinator.com/item?id=50624446"
   },
   {
