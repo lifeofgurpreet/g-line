@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-26T22:16:39Z",
+ "generated_at": "2026-11-26T22:49:13Z",
  "items": [
   {
    "title": "Sources: Nvidia has told partners like Dell and Supermicro to halt server shipments to Malaysia, Si…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-25T18:22:33Z",
    "text": "No, I do not believe that we should “surrender human free will” to AI systems, and it’s absurd to suggest that I do. I have written hundreds of pages of essays and a constant theme in them is the need for AI to be governed by legitimate democratic processes. For millennia (going…",
    "author_name": "Dario Amodei",
-   "likes": 20350,
+   "likes": 20391,
    "story": "Dario Amodei rejects the idea of surrendering free will to AI and accuses rival AI execs of “vibes-based” positioning, rebutting a report on AI leaders' views"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-11-25T19:38:35Z",
    "text": "I've joined OpenAI! I'm very proud of my time at Anthropic, and I'll continue to root for my former colleagues. Both companies have important roles to play in the future. There is a tremendous amount of work ahead of us to bring AI to the world, and it will demand the very best…",
    "author_name": "Thariq",
-   "likes": 30410,
+   "likes": 30477,
    "story": "Thariq Shihipar joins OpenAI after leaving Anthropic in October, saying he felt he could “personally contribute the most” to bringing AI to the world at OpenAI"
   },
   {
@@ -46,13 +46,13 @@
    "via": "Techmeme"
   },
   {
-   "title": "AMD-specific fork of llama.cpp",
-   "url": "https://devnull.land/amd-specific-llama-cpp",
+   "title": "AI made self-hosting fun again",
+   "url": "https://janlukas.blog/posts/ai-self-hosting",
    "source": "Hacker News",
-   "published_at": "2026-11-26T17:11:29Z",
-   "text": "228 points and 54 comments on Hacker News.",
-   "points": 228,
-   "discussion": "https://news.ycombinator.com/item?id=50657265"
+   "published_at": "2026-11-26T21:47:45Z",
+   "text": "65 points and 44 comments on Hacker News.",
+   "points": 65,
+   "discussion": "https://news.ycombinator.com/item?id=50660180"
   },
   {
    "title": "We made a billing mistake at launch of GPT-6.2 that incorrectly discounted GPT-6.2 Astra and Sol us…",
@@ -61,7 +61,7 @@
    "published_at": "2026-11-26T02:50:10Z",
    "text": "We made a billing mistake at launch of GPT-6.2 that incorrectly discounted GPT-6.2 Astra and Sol usage for most users. We’ve fixed this now, so the same work will use more of your plan’s usage allowance. Comparing to last week, you will reach your limits 40% faster on GPT-6.2…",
    "author_name": "Tibo",
-   "likes": 17678,
+   "likes": 17762,
    "story": "OpenAI says it corrected a GPT-6.2 Astra and Sol launch billing mistake that had incorrectly discounted usage; Astra users will now hit their limits 40% faster"
   },
   {
@@ -80,13 +80,13 @@
    "via": "Techmeme"
   },
   {
-   "title": "Google Will Make AI Agents Use Its MCP Servers. The Gmail One Can't Send Email",
-   "url": "https://techstackups.com/articles/google-workspace-ai-agents-mcp/",
+   "title": "AMD-specific fork of llama.cpp",
+   "url": "https://devnull.land/amd-specific-llama-cpp",
    "source": "Hacker News",
-   "published_at": "2026-11-26T09:44:23Z",
-   "text": "168 points and 171 comments on Hacker News.",
-   "points": 168,
-   "discussion": "https://news.ycombinator.com/item?id=50653477"
+   "published_at": "2026-11-26T17:11:29Z",
+   "text": "245 points and 56 comments on Hacker News.",
+   "points": 245,
+   "discussion": "https://news.ycombinator.com/item?id=50657265"
   },
   {
    "title": "Sources: SAP is preparing a plan to eliminate at least 10,000 positions, or 9% of its staff globall…",
@@ -97,13 +97,13 @@
    "via": "Techmeme"
   },
   {
-   "title": "OpenAI may be in cost control mode",
-   "url": "https://micjm.com/blog/openai-is-in-cost-control-mode/",
+   "title": "Google Will Make AI Agents Use Its MCP Servers. The Gmail One Can't Send Email",
+   "url": "https://techstackups.com/articles/google-workspace-ai-agents-mcp/",
    "source": "Hacker News",
-   "published_at": "2026-11-26T07:33:12Z",
-   "text": "170 points and 143 comments on Hacker News.",
-   "points": 170,
-   "discussion": "https://news.ycombinator.com/item?id=50652527"
+   "published_at": "2026-11-26T09:44:23Z",
+   "text": "180 points and 179 comments on Hacker News.",
+   "points": 180,
+   "discussion": "https://news.ycombinator.com/item?id=50653477"
   },
   {
    "title": "Microsoft says state-backed hacking groups in China and North Korea, including Salt Typhoon, have a…",
@@ -114,19 +114,20 @@
    "via": "Techmeme"
   },
   {
+   "title": "OpenAI may be in cost control mode",
+   "url": "https://micjm.com/blog/openai-is-in-cost-control-mode/",
+   "source": "Hacker News",
+   "published_at": "2026-11-26T07:33:12Z",
+   "text": "198 points and 180 comments on Hacker News.",
+   "points": 198,
+   "discussion": "https://news.ycombinator.com/item?id=50652527"
+  },
+  {
    "title": "A US judge sentences a Florida man to 47 months in prison for using AI to impersonate Kick streamer…",
    "url": "https://aftermath.site/n3on-impersonator-ai-prison-260000-dollars-kick-stream/",
    "source": "Nathan Grayson / Aftermath",
    "published_at": "2026-11-26T22:11:12Z",
    "text": "A US judge sentences a Florida man to 47 months in prison for using AI to impersonate Kick streamer N3on, defrauding a memecoin's organizers out of ~$260K. What goes around comes around, I suppose. Earlier this year, Kick streamer N3on, a weasly little twig person who spends …",
-   "via": "Techmeme"
-  },
-  {
-   "title": "Apple removes MiniMax's chatbot Talkie from the App Store worldwide over sexual content, after outl…",
-   "url": "https://www.thebureauinvestigates.com/stories/2026-11-24/talkie-china-chatbot-children",
-   "source": "TBIJ",
-   "published_at": "2026-11-26T01:31:32Z",
-   "text": "Apple removes MiniMax's chatbot Talkie from the App Store worldwide over sexual content, after outlets showed it evidence of AI characters sexualizing children",
    "via": "Techmeme"
   }
  ],
