@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-26T19:34:42Z",
+ "generated_at": "2026-11-26T20:08:13Z",
  "items": [
   {
    "title": "Sources: Nvidia tells its manufacturing partners to halt AI server shipments to Malaysia, Singapore…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-25T18:22:33Z",
    "text": "No, I do not believe that we should “surrender human free will” to AI systems, and it’s absurd to suggest that I do. I have written hundreds of pages of essays and a constant theme in them is the need for AI to be governed by legitimate democratic processes. For millennia (going…",
    "author_name": "Dario Amodei",
-   "likes": 20055,
+   "likes": 20127,
    "story": "Dario Amodei rejects the idea of surrendering free will to AI and accuses rival AI execs of “vibes-based” positioning, rebutting a report on AI leaders' views"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-11-25T19:38:35Z",
    "text": "I've joined OpenAI! I'm very proud of my time at Anthropic, and I'll continue to root for my former colleagues. Both companies have important roles to play in the future. There is a tremendous amount of work ahead of us to bring AI to the world, and it will demand the very best…",
    "author_name": "Thariq",
-   "likes": 29948,
+   "likes": 30062,
    "story": "Thariq Shihipar joins OpenAI after leaving Anthropic in October, saying he felt he could “personally contribute the most” to bringing AI to the world at OpenAI"
   },
   {
@@ -46,13 +46,13 @@
    "via": "Techmeme"
   },
   {
-   "title": "Tracking Diseases Cured by AI",
-   "url": "https://diseasescuredbyai.com/",
+   "title": "AMD Specific Patches for Llama.cpp",
+   "url": "https://devnull.land/amd-specific-llama-cpp",
    "source": "Hacker News",
-   "published_at": "2026-11-26T17:16:41Z",
-   "text": "275 points and 153 comments on Hacker News.",
-   "points": 275,
-   "discussion": "https://news.ycombinator.com/item?id=50657307"
+   "published_at": "2026-11-26T17:11:29Z",
+   "text": "151 points and 45 comments on Hacker News.",
+   "points": 151,
+   "discussion": "https://news.ycombinator.com/item?id=50657265"
   },
   {
    "title": "We made a billing mistake at launch of GPT-6.2 that incorrectly discounted GPT-6.2 Astra and Sol us…",
@@ -61,7 +61,7 @@
    "published_at": "2026-11-26T02:50:10Z",
    "text": "We made a billing mistake at launch of GPT-6.2 that incorrectly discounted GPT-6.2 Astra and Sol usage for most users. We’ve fixed this now, so the same work will use more of your plan’s usage allowance. Comparing to last week, you will reach your limits 40% faster on GPT-6.2…",
    "author_name": "Tibo",
-   "likes": 17207,
+   "likes": 17315,
    "story": "OpenAI says it corrected a GPT-6.2 Astra and Sol launch billing mistake that had incorrectly discounted usage; Astra users will now hit their limits 40% faster"
   },
   {
@@ -72,11 +72,11 @@
    "text": "I gave a keynote at the AI Engineer Code Summit a couple of weeks ago, constructed around the idea that there have been three significant inflection points in the abilities of LLMs and coding agents in the past twelve months. Here's the video of the talk. In this post I'm going to pull out the major inflection point theme and interrogate it more deeply. Coding agents in November 2025 Today, November 24th 2026, is the one year anniversary of the release of Claude Opus 4.5 . With hindsight, this was a consequential model."
   },
   {
-   "title": "Investigation: Nvidia sells its most advanced chips to at least two Chinese-owned California compan…",
-   "url": "https://www.cbsnews.com/news/nvidia-china-ai-chips-computing-sales/",
-   "source": "Josh Boswell / CBS News",
-   "published_at": "2026-11-26T01:56:48Z",
-   "text": "Investigation: Nvidia sells its most advanced chips to at least two Chinese-owned California companies, which have leased or sold some of them to firms in Asia. Nvidia is selling its most cutting-edge chips to at least two companies that are U.S.-based, but are actually controlled by Chinese-owned firms …",
+   "title": "Sources: Z.ai's 3T-parameter flagship GLM-5.5 missed its November release and could be delayed to Q…",
+   "url": "https://www.reuters.com/world/china/us-chip-curbs-distillation-crackdown-threaten-chinese-ai-model-development-2026-11-26/",
+   "source": "Reuters",
+   "published_at": "2026-11-26T11:21:27Z",
+   "text": "Sources: Z.ai's 3T-parameter flagship GLM-5.5 missed its November release and could be delayed to Q1 2027 or later due to US rules and labs' distillation curbs. China's Z.AI has fallen behind schedule on its next flagship AI model, while rival Moonshot AI expects the interval between major releases …",
    "via": "Techmeme"
   },
   {
@@ -86,27 +86,17 @@
    "published_at": "2026-11-25T23:55:14Z",
    "text": "Wow, they were considering using the Defense Production Act (aka the WarClaude act) to force NVIDIA to reinstate Jensen as CEO.",
    "author_name": "Andrew Curran",
-   "likes": 1054,
-   "story": "Sources: the US DOJ did not formally investigate Jensen Huang before his reinstatement; AG Todd Blanche cleared him based on the Supermicro and Megaspeed probes"
+   "likes": 1058,
+   "story": "Sources: Pete Hegseth and other Pentagon officials discussed using the Defense Production Act as leverage to pressure Nvidia's board to reinstate Jensen Huang"
   },
   {
-   "title": "AMD Specific Patches for Llama.cpp",
-   "url": "https://devnull.land/amd-specific-llama-cpp",
+   "title": "The New York Times warns photographers not to update Photoshop over AI features",
+   "url": "https://www.theverge.com/ai-artificial-intelligence/1041227/the-new-york-times-warns-photographers-not-to-update-photoshop-over-ai-features",
    "source": "Hacker News",
-   "published_at": "2026-11-26T17:11:29Z",
-   "text": "120 points and 36 comments on Hacker News.",
-   "points": 120,
-   "discussion": "https://news.ycombinator.com/item?id=50657265"
-  },
-  {
-   "title": "What I do not understand is why Chinese timelines for a big model X would slip due to anti-distilla…",
-   "url": "https://x.com/teortaxesTex/status/2125888718049603776",
-   "source": "𝕏 @teortaxesTex",
-   "published_at": "2026-11-26T09:45:42Z",
-   "text": "What I do not understand is why Chinese timelines for a big model X would slip due to anti-distillation in particular. You can just release an undercooked Preview. Are they literally *pretraining* on Claude logs? is this why everything's so fucked now? Can't you uh do it smarter?",
-   "author_name": "Teortaxes▶️ (DeepSeek 推特🐋铁粉 2023 – ∞)",
-   "likes": 149,
-   "story": "Sources: Z.ai's 3T-parameter flagship GLM-5.5 missed its November release and could be delayed to Q1 2027 or later due to US rules and labs' distillation curbs"
+   "published_at": "2026-11-25T21:18:02Z",
+   "text": "622 points and 493 comments on Hacker News.",
+   "points": 622,
+   "discussion": "https://news.ycombinator.com/item?id=50647673"
   },
   {
    "title": "Sources: SAP is preparing a plan to eliminate at least 10,000 positions, or 9% of its staff globall…",
@@ -117,13 +107,13 @@
    "via": "Techmeme"
   },
   {
-   "title": "The New York Times warns photographers not to update Photoshop over AI features",
-   "url": "https://www.theverge.com/ai-artificial-intelligence/1041227/the-new-york-times-warns-photographers-not-to-update-photoshop-over-ai-features",
+   "title": "Much shorter version of GRH Lean verification from Anthropic",
+   "url": "https://github.com/lsernau/grh-lean",
    "source": "Hacker News",
-   "published_at": "2026-11-25T21:18:02Z",
-   "text": "604 points and 486 comments on Hacker News.",
-   "points": 604,
-   "discussion": "https://news.ycombinator.com/item?id=50647673"
+   "published_at": "2026-11-25T21:48:10Z",
+   "text": "529 points and 336 comments on Hacker News.",
+   "points": 529,
+   "discussion": "https://news.ycombinator.com/item?id=50648050"
   },
   {
    "title": "Ladybird's first alpha release",
@@ -131,6 +121,14 @@
    "source": "Simon Willison's weblog",
    "published_at": "2026-11-23T21:46:35Z",
    "text": "Ladybird is an astonishingly ambitious project: a new browser, in 2026, with its own implementation of most of the key components - HTML parsing, CSS engine, layout, JavaScript, even WebAssembly. It still uses a few external components - things like HarfBuzz for text shaping, Skia for 2D graphics, ffmpeg for video, and SQLite for the things you do with SQLite. Everything else is part of Ladybird, or code brought in from Ladybird's even more ambitious predecessor project SerenityOS ."
+  },
+  {
+   "title": "Microsoft says state-backed hacking groups in China and North Korea, including Salt Typhoon, have a…",
+   "url": "https://therecord.media/microsoft-china-salt-typhoon-using-artex-ai-tool",
+   "source": "Jonathan Greig / The Record",
+   "published_at": "2026-11-26T06:01:52Z",
+   "text": "Microsoft says state-backed hacking groups in China and North Korea, including Salt Typhoon, have added AI penetration testing tool ARTEX to their arsenals. State-backed hacking groups in China and North Korea are using a powerful AI hacking tool in attacks, according to a new report from Microsoft.",
+   "via": "Techmeme"
   }
  ],
  "sources": "curated, Techmeme, X (found via Techmeme, Reddit, the Internet Archive), Claude Code releases, Anthropic, Hacker News, Simon Willison"
