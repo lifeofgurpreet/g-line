@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-26T16:44:09Z",
+ "generated_at": "2026-11-26T17:15:41Z",
  "items": [
   {
    "title": "Sources: Nvidia tells its manufacturing partners to halt AI server shipments to Malaysia, Singapore…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-25T18:22:33Z",
    "text": "No, I do not believe that we should “surrender human free will” to AI systems, and it’s absurd to suggest that I do. I have written hundreds of pages of essays and a constant theme in them is the need for AI to be governed by legitimate democratic processes. For millennia (going…",
    "author_name": "Dario Amodei",
-   "likes": 19681,
+   "likes": 19765,
    "story": "Dario Amodei rejects the idea of surrendering free will to AI and accuses rival AI execs of “vibes-based” positioning, rebutting a report on AI leaders' views"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-11-25T19:38:35Z",
    "text": "I've joined OpenAI! I'm very proud of my time at Anthropic, and I'll continue to root for my former colleagues. Both companies have important roles to play in the future. There is a tremendous amount of work ahead of us to bring AI to the world, and it will demand the very best…",
    "author_name": "Thariq",
-   "likes": 29317,
+   "likes": 29445,
    "story": "Thariq Shihipar joins OpenAI after leaving Anthropic in October, saying he felt he could “personally contribute the most” to bringing AI to the world at OpenAI"
   },
   {
@@ -46,23 +46,23 @@
    "via": "Techmeme"
   },
   {
-   "title": "OpenAI cuts GPT-6.2 usage: Astra hits limits 40% faster, Sol 25% faster",
-   "url": "https://twitter.com/thsottiaux/status/2125784147889393806",
+   "title": "The New York Times warns photographers not to update Photoshop over AI features",
+   "url": "https://www.theverge.com/ai-artificial-intelligence/1041227/the-new-york-times-warns-photographers-not-to-update-photoshop-over-ai-features",
    "source": "Hacker News",
-   "published_at": "2026-11-26T03:36:58Z",
-   "text": "419 points and 231 comments on Hacker News.",
-   "points": 419,
-   "discussion": "https://news.ycombinator.com/item?id=50651117"
+   "published_at": "2026-11-25T21:18:02Z",
+   "text": "547 points and 462 comments on Hacker News.",
+   "points": 547,
+   "discussion": "https://news.ycombinator.com/item?id=50647673"
   },
   {
-   "title": "Wow, they were considering using the Defense Production Act (aka the WarClaude act) to force NVIDIA…",
-   "url": "https://x.com/AndrewCurran_/status/2125740125229555787",
-   "source": "𝕏 @AndrewCurran_",
-   "published_at": "2026-11-25T23:55:14Z",
-   "text": "Wow, they were considering using the Defense Production Act (aka the WarClaude act) to force NVIDIA to reinstate Jensen as CEO.",
-   "author_name": "Andrew Curran",
-   "likes": 1027,
-   "story": "Sources: Trump's national security adviser, Secretary Marco Rubio, was not involved in efforts to reinstate Jensen Huang and expressed anger at his return"
+   "title": "We made a billing mistake at launch of GPT-6.2 that incorrectly discounted GPT-6.2 Astra and Sol us…",
+   "url": "https://x.com/thsottiaux/status/2125784147889393806",
+   "source": "𝕏 @thsottiaux",
+   "published_at": "2026-11-26T02:50:10Z",
+   "text": "We made a billing mistake at launch of GPT-6.2 that incorrectly discounted GPT-6.2 Astra and Sol usage for most users. We’ve fixed this now, so the same work will use more of your plan’s usage allowance. Comparing to last week, you will reach your limits 40% faster on GPT-6.2…",
+   "author_name": "Tibo",
+   "likes": 16609,
+   "story": "OpenAI says it corrected a GPT-6.2 Astra and Sol launch billing mistake that had incorrectly discounted usage; Astra users will now hit their limits 40% faster"
   },
   {
    "title": "Three LLM inflection points in twelve months",
@@ -80,47 +80,33 @@
    "via": "Techmeme"
   },
   {
-   "title": "What I do not understand is why Chinese timelines for a big model X would slip due to anti-distilla…",
-   "url": "https://x.com/teortaxesTex/status/2125888718049603776",
-   "source": "𝕏 @teortaxesTex",
-   "published_at": "2026-11-26T09:45:42Z",
-   "text": "What I do not understand is why Chinese timelines for a big model X would slip due to anti-distillation in particular. You can just release an undercooked Preview. Are they literally *pretraining* on Claude logs? is this why everything's so fucked now? Can't you uh do it smarter?",
-   "author_name": "Teortaxes▶️ (DeepSeek 推特🐋铁粉 2023 – ∞)",
-   "likes": 133,
-   "story": "Sources: Z.ai's 3T-parameter flagship GLM-5.5 missed its November release and could be delayed to Q1 2027 or later due to US rules and labs' distillation curbs"
-  },
-  {
-   "title": "The New York Times warns photographers not to update Photoshop over AI features",
-   "url": "https://www.theverge.com/ai-artificial-intelligence/1041227/the-new-york-times-warns-photographers-not-to-update-photoshop-over-ai-features",
-   "source": "Hacker News",
-   "published_at": "2026-11-25T21:18:02Z",
-   "text": "535 points and 449 comments on Hacker News.",
-   "points": 535,
-   "discussion": "https://news.ycombinator.com/item?id=50647673"
-  },
-  {
-   "title": "OpenAI says it corrected a GPT-6.2 Astra and Sol launch billing mistake that had incorrectly discou…",
-   "url": "https://www.techradar.com/ai-platforms-assistants/chatgpt/weve-fixed-this-now-so-the-same-work-will-use-more-of-your-plans-usage-allowance-openai-admits-it-made-a-mistake-when-launching-gpt-6-2-and-now-paying-chatgpt-users-could-hit-their-usage-limits-up-to-40-percent-faster",
-   "source": "Graham Barlow / TechRadar",
-   "published_at": "2026-11-26T13:02:19Z",
-   "text": "OpenAI says it corrected a GPT-6.2 Astra and Sol launch billing mistake that had incorrectly discounted usage; Astra users will now hit their limits 40% faster. Too little, too late? … - OpenAI has admitted to a billing mistake with its new GPT-6.2 models — You'll now hit your usage limits up to 40% faster",
-   "via": "Techmeme"
+   "title": "Wow, they were considering using the Defense Production Act (aka the WarClaude act) to force NVIDIA…",
+   "url": "https://x.com/AndrewCurran_/status/2125740125229555787",
+   "source": "𝕏 @AndrewCurran_",
+   "published_at": "2026-11-25T23:55:14Z",
+   "text": "Wow, they were considering using the Defense Production Act (aka the WarClaude act) to force NVIDIA to reinstate Jensen as CEO.",
+   "author_name": "Andrew Curran",
+   "likes": 1036,
+   "story": "Sources: Trump's national security adviser, Secretary Marco Rubio, was not involved in efforts to reinstate Jensen Huang and expressed anger at his return"
   },
   {
    "title": "Much shorter version of GRH Lean verification from Anthropic",
    "url": "https://github.com/lsernau/grh-lean",
    "source": "Hacker News",
    "published_at": "2026-11-25T21:48:10Z",
-   "text": "511 points and 325 comments on Hacker News.",
-   "points": 511,
+   "text": "517 points and 329 comments on Hacker News.",
+   "points": 517,
    "discussion": "https://news.ycombinator.com/item?id=50648050"
   },
   {
-   "title": "Ladybird's first alpha release",
-   "url": "https://simonwillison.net/2026/Nov/23/ladybird/",
-   "source": "Simon Willison's weblog",
-   "published_at": "2026-11-23T21:46:35Z",
-   "text": "Ladybird is an astonishingly ambitious project: a new browser, in 2026, with its own implementation of most of the key components - HTML parsing, CSS engine, layout, JavaScript, even WebAssembly. It still uses a few external components - things like HarfBuzz for text shaping, Skia for 2D graphics, ffmpeg for video, and SQLite for the things you do with SQLite. Everything else is part of Ladybird, or code brought in from Ladybird's even more ambitious predecessor project SerenityOS ."
+   "title": "What I do not understand is why Chinese timelines for a big model X would slip due to anti-distilla…",
+   "url": "https://x.com/teortaxesTex/status/2125888718049603776",
+   "source": "𝕏 @teortaxesTex",
+   "published_at": "2026-11-26T09:45:42Z",
+   "text": "What I do not understand is why Chinese timelines for a big model X would slip due to anti-distillation in particular. You can just release an undercooked Preview. Are they literally *pretraining* on Claude logs? is this why everything's so fucked now? Can't you uh do it smarter?",
+   "author_name": "Teortaxes▶️ (DeepSeek 推特🐋铁粉 2023 – ∞)",
+   "likes": 137,
+   "story": "Sources: Z.ai's 3T-parameter flagship GLM-5.5 missed its November release and could be delayed to Q1 2027 or later due to US rules and labs' distillation curbs"
   },
   {
    "title": "Microsoft says state-backed hacking groups in China and North Korea, including Salt Typhoon, have a…",
@@ -129,6 +115,22 @@
    "published_at": "2026-11-26T06:01:52Z",
    "text": "Microsoft says state-backed hacking groups in China and North Korea, including Salt Typhoon, have added AI penetration testing tool ARTEX to their arsenals. State-backed hacking groups in China and North Korea are using a powerful AI hacking tool in attacks, according to a new report from Microsoft.",
    "via": "Techmeme"
+  },
+  {
+   "title": "Bare Metal Qwen",
+   "url": "https://github.com/alesha-pro/llm.asm/tree/main/02-baremetal-os",
+   "source": "Hacker News",
+   "published_at": "2026-11-25T22:15:34Z",
+   "text": "216 points and 52 comments on Hacker News.",
+   "points": 216,
+   "discussion": "https://news.ycombinator.com/item?id=50648365"
+  },
+  {
+   "title": "Ladybird's first alpha release",
+   "url": "https://simonwillison.net/2026/Nov/23/ladybird/",
+   "source": "Simon Willison's weblog",
+   "published_at": "2026-11-23T21:46:35Z",
+   "text": "Ladybird is an astonishingly ambitious project: a new browser, in 2026, with its own implementation of most of the key components - HTML parsing, CSS engine, layout, JavaScript, even WebAssembly. It still uses a few external components - things like HarfBuzz for text shaping, Skia for 2D graphics, ffmpeg for video, and SQLite for the things you do with SQLite. Everything else is part of Ladybird, or code brought in from Ladybird's even more ambitious predecessor project SerenityOS ."
   }
  ],
  "sources": "curated, Techmeme, X (found via Techmeme, Reddit, the Internet Archive), Claude Code releases, Anthropic, Hacker News, Simon Willison"
