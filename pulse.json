@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-27T17:44:19Z",
+ "generated_at": "2026-11-27T18:16:35Z",
  "items": [
   {
    "title": "Serial numbers in Chinese filings reveal that Nvidia's restricted Blackwell chips were installed at…",
@@ -26,13 +26,13 @@
    "via": "Techmeme"
   },
   {
-   "title": "GPT 6.2 Astra Solves a Historical Mystery",
-   "url": "https://generativehistory.substack.com/p/gpt-62-astra-solves-a-historical",
+   "title": "I'm Scared of AI",
+   "url": "https://thesoapbox.email/archive/3",
    "source": "Hacker News",
-   "published_at": "2026-11-27T15:03:17Z",
-   "text": "99 points and 43 comments on Hacker News.",
-   "points": 99,
-   "discussion": "https://news.ycombinator.com/item?id=50667744"
+   "published_at": "2026-11-27T17:45:31Z",
+   "text": "60 points and 42 comments on Hacker News.",
+   "points": 60,
+   "discussion": "https://news.ycombinator.com/item?id=50669561"
   },
   {
    "title": "Three LLM inflection points in twelve months",
@@ -40,6 +40,23 @@
    "source": "Simon Willison's weblog",
    "published_at": "2026-11-24T23:02:07Z",
    "text": "I gave a keynote at the AI Engineer Code Summit a couple of weeks ago, constructed around the idea that there have been three significant inflection points in the abilities of LLMs and coding agents in the past twelve months. Here's the video of the talk. In this post I'm going to pull out the major inflection point theme and interrogate it more deeply. Coding agents in November 2025 Today, November 24th 2026, is the one year anniversary of the release of Claude Opus 4.5 . With hindsight, this was a consequential model."
+  },
+  {
+   "title": "Interviews with Huawei CEO Ren Zhengfei and others on how Trump's restrictions pushed Huawei toward…",
+   "url": "https://www.nytimes.com/2026/11/26/business/huawei-trump-china-ai.html?unlocked_article_code=1.TlE.eHV_.2f70GvuLgZxe&smid=nytcore-ios-share",
+   "source": "New York Times",
+   "published_at": "2026-11-27T14:20:49Z",
+   "text": "Interviews with Huawei CEO Ren Zhengfei and others on how Trump's restrictions pushed Huawei toward self-reliance, making it central to China's AI ambitions. As China's access to Nvidia's advanced chips shrinks, Huawei is becoming increasingly indispensable to Beijing despite a wide technological gap with its American rival.",
+   "via": "Techmeme"
+  },
+  {
+   "title": "GPT 6.2 Astra Solves a Historical Mystery",
+   "url": "https://generativehistory.substack.com/p/gpt-62-astra-solves-a-historical",
+   "source": "Hacker News",
+   "published_at": "2026-11-27T15:03:17Z",
+   "text": "122 points and 48 comments on Hacker News.",
+   "points": 122,
+   "discussion": "https://news.ycombinator.com/item?id=50667744"
   },
   {
    "title": "SAP confirms a cybersecurity incident; report: hackers obtained its staffers' authentication tokens…",
@@ -54,16 +71,16 @@
    "url": "https://construct22.com/",
    "source": "Hacker News",
    "published_at": "2026-11-27T06:44:34Z",
-   "text": "567 points and 247 comments on Hacker News.",
-   "points": 567,
+   "text": "588 points and 251 comments on Hacker News.",
+   "points": 588,
    "discussion": "https://news.ycombinator.com/item?id=50663595"
   },
   {
-   "title": "Interviews with Huawei CEO Ren Zhengfei and others on how Trump's restrictions pushed Huawei toward…",
-   "url": "https://www.nytimes.com/2026/11/26/business/huawei-trump-china-ai.html?unlocked_article_code=1.TlE.eHV_.2f70GvuLgZxe&smid=nytcore-ios-share",
-   "source": "New York Times",
-   "published_at": "2026-11-27T14:20:49Z",
-   "text": "Interviews with Huawei CEO Ren Zhengfei and others on how Trump's restrictions pushed Huawei toward self-reliance, making it central to China's AI ambitions. As China's access to Nvidia's advanced chips shrinks, Huawei is becoming increasingly indispensable to Beijing despite a wide technological gap with its American rival.",
+   "title": "European Central Bank survey: 44% of employed EU consumers reported using AI weekly at work in Augu…",
+   "url": "https://www.bloomberg.com/news/articles/2026-11-27/european-workers-ai-use-on-par-with-that-of-us-peers-ecb-says",
+   "source": "Alexander Weber / Bloomberg",
+   "published_at": "2026-11-27T18:16:02Z",
+   "text": "European Central Bank survey: 44% of employed EU consumers reported using AI weekly at work in August, on par with US peers; 18% used it daily, above US levels. Euro-area workers are turning to artificial intelligence at a similar rate as their peers in the US, though obstacles remain …",
    "via": "Techmeme"
   },
   {
@@ -71,34 +88,9 @@
    "url": "https://twitter.com/RealAstropulse/status/2126119408997466389",
    "source": "Hacker News",
    "published_at": "2026-11-27T08:28:08Z",
-   "text": "316 points and 172 comments on Hacker News.",
-   "points": 316,
+   "text": "350 points and 184 comments on Hacker News.",
+   "points": 350,
    "discussion": "https://news.ycombinator.com/item?id=50664325"
-  },
-  {
-   "title": "The CMA says Meta made changes to Muse's ToS in the UK to reflect the country's consumer law; the t…",
-   "url": "https://www.politico.eu/article/metas-uk-rollout-for-muse-ai-agent-exposes-it-to-more-liability/",
-   "source": "Joseph Bambridge / Politico",
-   "published_at": "2026-11-27T15:26:09Z",
-   "text": "The CMA says Meta made changes to Muse's ToS in the UK to reflect the country's consumer law; the terms give users far more protections than in the US. The U.K. terms of service for Muse give consumers far more protection than in the U.S. — LONDON — Meta will be on the hook …",
-   "via": "Techmeme"
-  },
-  {
-   "title": "AI made self-hosting fun again",
-   "url": "https://janlukas.blog/posts/ai-self-hosting",
-   "source": "Hacker News",
-   "published_at": "2026-11-26T21:47:45Z",
-   "text": "978 points and 463 comments on Hacker News.",
-   "points": 978,
-   "discussion": "https://news.ycombinator.com/item?id=50660180"
-  },
-  {
-   "title": "Sources: Z.ai's 3T-parameter flagship GLM-5.5 missed its November release and could be delayed to Q…",
-   "url": "https://www.reuters.com/world/china/us-chip-curbs-distillation-crackdown-threaten-chinese-ai-model-development-2026-11-26/",
-   "source": "Reuters",
-   "published_at": "2026-11-26T11:21:27Z",
-   "text": "Sources: Z.ai's 3T-parameter flagship GLM-5.5 missed its November release and could be delayed to Q1 2027 or later due to US rules and labs' distillation curbs",
-   "via": "Techmeme"
   },
   {
    "title": "A look at proposals for vertical data centers, often the only option where land is limited in place…",
@@ -109,19 +101,27 @@
    "via": "Techmeme"
   },
   {
+   "title": "The CMA says Meta made changes to Muse's ToS in the UK to reflect the country's consumer law; the t…",
+   "url": "https://www.politico.eu/article/metas-uk-rollout-for-muse-ai-agent-exposes-it-to-more-liability/",
+   "source": "Joseph Bambridge / Politico",
+   "published_at": "2026-11-27T15:26:09Z",
+   "text": "The CMA says Meta made changes to Muse's ToS in the UK to reflect the country's consumer law; the terms give users far more protections than in the US. The U.K. terms of service for Muse give consumers far more protection than in the U.S. — LONDON — Meta will be on the hook …",
+   "via": "Techmeme"
+  },
+  {
+   "title": "Foreign investors sold a record net $33.1B of Taiwanese stocks in November, topping October's recor…",
+   "url": "https://www.bloomberg.com/news/articles/2026-11-27/foreign-funds-on-pace-for-record-taiwan-stock-exodus-in-ai-rout",
+   "source": "Eunice Xu / Bloomberg",
+   "published_at": "2026-11-27T07:31:40Z",
+   "text": "Foreign investors sold a record net $33.1B of Taiwanese stocks in November, topping October's record outflow amid AI valuation fears and a broader tech sell-off. Foreign investors dumped a record amount of Taiwanese stocks so far in November, underscoring how heavily the global AI bellwether …",
+   "via": "Techmeme"
+  },
+  {
    "title": "Dante Security, which has developed a platform for monitoring the activity of AI agents within orga…",
    "url": "https://www.calcalistech.com/ctechnews/article/h18nob7kml",
    "source": "Meir Orbach / CTech",
    "published_at": "2026-11-27T03:16:07Z",
    "text": "Dante Security, which has developed a platform for monitoring the activity of AI agents within organizations, raised a $10M seed led by NFX. Dante Security is developing a platform that gives organizations visibility into the actions of autonomous AI agents and connects their activity to the employees responsible for them.",
-   "via": "Techmeme"
-  },
-  {
-   "title": "A US judge sentences a Florida man to 47 months in prison for using AI to impersonate Kick streamer…",
-   "url": "https://aftermath.site/n3on-impersonator-ai-prison-260000-dollars-kick-stream/",
-   "source": "Nathan Grayson / Aftermath",
-   "published_at": "2026-11-26T22:11:12Z",
-   "text": "A US judge sentences a Florida man to 47 months in prison for using AI to impersonate Kick streamer N3on, defrauding a memecoin's organizers out of ~$260K. What goes around comes around, I suppose. Earlier this year, Kick streamer N3on, a weasly little twig person who spends …",
    "via": "Techmeme"
   }
  ],
