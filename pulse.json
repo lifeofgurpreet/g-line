@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-27T22:34:09Z",
+ "generated_at": "2026-11-27T23:06:18Z",
  "items": [
   {
    "title": "Serial numbers in Chinese filings reveal that Nvidia's restricted Blackwell chips were installed at…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-27T11:46:52Z",
    "text": "I just had Neon audit our codebase for subtle sabotage by Anthropic models. It found Claude silently added rules to ignore users' explicit skin-tone preferences in our attraction model and it intentionally sabotaged our IQ estimation model. Silently imposing your ideology on…",
    "author_name": "Jake Kozloski",
-   "likes": 21857,
+   "likes": 22425,
    "story": "Some users claim Claude is silently sabotaging projects, but the behavior may stem from a clash between its proactive nature and strict instruction following"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-11-27T17:14:11Z",
    "text": "This makes me think what happened was they were using the project Daybreak/Glasswing versions of Mythos or Astra to harden things up in preparation, and while doing so the model said 'oh wow, by the way, you guys have been hacked.'",
    "author_name": "Andrew Curran",
-   "likes": 1276,
+   "likes": 1323,
    "story": "Sources: the US Air Force recently discovered a breach of Cloud One, which combines Microsoft, Amazon, Oracle, and Google clouds to power Air Force applications"
   },
   {
@@ -47,36 +47,12 @@
   },
   {
    "title": "Michael Nielsen took down his book on neural nets",
-   "url": "https://twitter.com/michael_nielsen/status/2126359767362748777",
+   "url": "https://neuralnetworksanddeeplearning.com/",
    "source": "Hacker News",
    "published_at": "2026-11-27T19:31:01Z",
-   "text": "261 points and 160 comments on Hacker News.",
-   "points": 261,
+   "text": "291 points and 183 comments on Hacker News.",
+   "points": 291,
    "discussion": "https://news.ycombinator.com/item?id=50670757"
-  },
-  {
-   "title": "Three LLM inflection points in twelve months",
-   "url": "https://simonwillison.net/2026/Nov/24/llm-inflection-points/",
-   "source": "Simon Willison's weblog",
-   "published_at": "2026-11-24T23:02:07Z",
-   "text": "I gave a keynote at the AI Engineer Code Summit a couple of weeks ago, constructed around the idea that there have been three significant inflection points in the abilities of LLMs and coding agents in the past twelve months. Here's the video of the talk. In this post I'm going to pull out the major inflection point theme and interrogate it more deeply. Coding agents in November 2025 Today, November 24th 2026, is the one year anniversary of the release of Claude Opus 4.5 . With hindsight, this was a consequential model."
-  },
-  {
-   "title": "Interviews with Huawei CEO Ren Zhengfei and others on how Trump's restrictions pushed Huawei toward…",
-   "url": "https://www.nytimes.com/2026/11/26/business/huawei-trump-china-ai.html?unlocked_article_code=1.TlE.eHV_.2f70GvuLgZxe&smid=nytcore-ios-share",
-   "source": "New York Times",
-   "published_at": "2026-11-27T14:20:49Z",
-   "text": "Interviews with Huawei CEO Ren Zhengfei and others on how Trump's restrictions pushed Huawei toward self-reliance, making it central to China's AI ambitions. As China's access to Nvidia's advanced chips shrinks, Huawei is becoming increasingly indispensable to Beijing despite a wide technological gap with its American rival.",
-   "via": "Techmeme"
-  },
-  {
-   "title": "States sue SpaceX to stop Grok from generating child sex images, revenge porn",
-   "url": "https://www.oag.state.va.us/media-center/news-releases/jay-jones/3162-attorneys-general-jones-and-rayfield-file-suit-against-spacex-parent-company-of-x-xai-and-grok-over-creation-and-promotion-of-child-exploitation-and-non-consensual-images-on-platform",
-   "source": "Hacker News",
-   "published_at": "2026-11-27T19:42:25Z",
-   "text": "148 points and 83 comments on Hacker News.",
-   "points": 148,
-   "discussion": "https://news.ycombinator.com/item?id=50670855"
   },
   {
    "title": "Sources: SAP is preparing a plan to eliminate at least 10,000 positions, or 9% of its staff globall…",
@@ -87,30 +63,13 @@
    "via": "Techmeme"
   },
   {
-   "title": "Group chat where your AI talks behind your back",
-   "url": "https://construct22.com/",
+   "title": "States sue SpaceX to stop Grok from generating child sex images, revenge porn",
+   "url": "https://www.oag.state.va.us/media-center/news-releases/jay-jones/3162-attorneys-general-jones-and-rayfield-file-suit-against-spacex-parent-company-of-x-xai-and-grok-over-creation-and-promotion-of-child-exploitation-and-non-consensual-images-on-platform",
    "source": "Hacker News",
-   "published_at": "2026-11-27T06:44:34Z",
-   "text": "662 points and 278 comments on Hacker News.",
-   "points": 662,
-   "discussion": "https://news.ycombinator.com/item?id=50663595"
-  },
-  {
-   "title": "Q&A with AI researchers Ege Erdil and Daniel Kokotajlo on the odds of an intelligence explosion bef…",
-   "url": "https://www.dwarkesh.com/p/daniel-kokotajlo-ege-erdil",
-   "source": "Dwarkesh Patel / Dwarkesh P…",
-   "published_at": "2026-11-27T20:15:42Z",
-   "text": "Q&A with AI researchers Ege Erdil and Daniel Kokotajlo on the odds of an intelligence explosion before 2029, pausing AI, the US antagonizing China, and more. “If we pause now, people still won't understand what's at stake.” — New podcast episode between Ege Erdil and Daniel Kokotajlo.",
-   "via": "Techmeme"
-  },
-  {
-   "title": "Claude sabotaging ML research tasks?",
-   "url": "https://twitter.com/RealAstropulse/status/2126119408997466389",
-   "source": "Hacker News",
-   "published_at": "2026-11-27T08:28:08Z",
-   "text": "511 points and 257 comments on Hacker News.",
-   "points": 511,
-   "discussion": "https://news.ycombinator.com/item?id=50664325"
+   "published_at": "2026-11-27T19:42:25Z",
+   "text": "169 points and 94 comments on Hacker News.",
+   "points": 169,
+   "discussion": "https://news.ycombinator.com/item?id=50670855"
   },
   {
    "title": "SAP confirms a cybersecurity incident; report: hackers obtained its staffers' authentication tokens…",
@@ -121,11 +80,53 @@
    "via": "Techmeme"
   },
   {
+   "title": "Group chat where your AI talks behind your back",
+   "url": "https://construct22.com/",
+   "source": "Hacker News",
+   "published_at": "2026-11-27T06:44:34Z",
+   "text": "666 points and 278 comments on Hacker News.",
+   "points": 666,
+   "discussion": "https://news.ycombinator.com/item?id=50663595"
+  },
+  {
+   "title": "Interviews with Huawei CEO Ren Zhengfei and others on how Trump's restrictions pushed Huawei toward…",
+   "url": "https://www.nytimes.com/2026/11/26/business/huawei-trump-china-ai.html?unlocked_article_code=1.TlE.eHV_.2f70GvuLgZxe&smid=nytcore-ios-share",
+   "source": "New York Times",
+   "published_at": "2026-11-27T14:20:49Z",
+   "text": "Interviews with Huawei CEO Ren Zhengfei and others on how Trump's restrictions pushed Huawei toward self-reliance, making it central to China's AI ambitions. As China's access to Nvidia's advanced chips shrinks, Huawei is becoming increasingly indispensable to Beijing despite a wide technological gap with its American rival.",
+   "via": "Techmeme"
+  },
+  {
+   "title": "Claude sabotaging ML research tasks?",
+   "url": "https://twitter.com/RealAstropulse/status/2126119408997466389",
+   "source": "Hacker News",
+   "published_at": "2026-11-27T08:28:08Z",
+   "text": "523 points and 267 comments on Hacker News.",
+   "points": 523,
+   "discussion": "https://news.ycombinator.com/item?id=50664325"
+  },
+  {
+   "title": "Q&A with AI researchers Ege Erdil and Daniel Kokotajlo on the odds of an intelligence explosion bef…",
+   "url": "https://www.dwarkesh.com/p/daniel-kokotajlo-ege-erdil",
+   "source": "Dwarkesh Patel / Dwarkesh P…",
+   "published_at": "2026-11-27T20:15:42Z",
+   "text": "Q&A with AI researchers Ege Erdil and Daniel Kokotajlo on the odds of an intelligence explosion before 2029, pausing AI, the US antagonizing China, and more. “If we pause now, people still won't understand what's at stake.” — New podcast episode between Ege Erdil and Daniel Kokotajlo.",
+   "via": "Techmeme"
+  },
+  {
    "title": "The CMA says Meta made changes to Muse's ToS in the UK to reflect the country's consumer law; the t…",
    "url": "https://www.politico.eu/article/metas-uk-rollout-for-muse-ai-agent-exposes-it-to-more-liability/",
    "source": "Joseph Bambridge / Politico",
    "published_at": "2026-11-27T15:26:09Z",
    "text": "The CMA says Meta made changes to Muse's ToS in the UK to reflect the country's consumer law; the terms give users far more protections than in the US. The U.K. terms of service for Muse give consumers far more protection than in the U.S. — LONDON — Meta will be on the hook …",
+   "via": "Techmeme"
+  },
+  {
+   "title": "European Central Bank survey: 44% of employed EU consumers reported using AI weekly at work in Augu…",
+   "url": "https://www.bloomberg.com/news/articles/2026-11-27/european-workers-ai-use-on-par-with-that-of-us-peers-ecb-says",
+   "source": "Alexander Weber / Bloomberg",
+   "published_at": "2026-11-27T18:16:02Z",
+   "text": "European Central Bank survey: 44% of employed EU consumers reported using AI weekly at work in August, on par with US peers; 18% used it daily, above US levels. Euro-area workers are turning to artificial intelligence at a similar rate as their peers in the US, though obstacles remain …",
    "via": "Techmeme"
   }
  ],
