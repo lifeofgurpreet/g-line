@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-27T18:48:25Z",
+ "generated_at": "2026-11-27T19:21:42Z",
  "items": [
   {
    "title": "Serial numbers in Chinese filings reveal that Nvidia's restricted Blackwell chips were installed at…",
@@ -18,11 +18,11 @@
    "text": "Added skills from MCP servers (beta). They show as server:skill in the / menu; other skills keep their names · Added a PreSkillShellCommand hook event that can refuse a skill or command's inline shell commands as it loads; on 2.1.331 and older, a settings file naming it opens a dialog at start · Added \"Always deliver\" to the prompt for held messages from other sessions · Added a footer line that stays while a flagged message has your session on a different model, until you pick one with /model"
   },
   {
-   "title": "Sources: SAP is preparing a plan to eliminate at least 10,000 positions, or 9% of its staff globall…",
-   "url": "https://www.bloomberg.com/news/articles/2026-11-26/sap-weighs-cutting-at-least-10-000-positions-in-ai-restructuring?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc5NTc2NzIxOCwiZXhwIjoxNzk2MzcyMDE4LCJhcnRpY2xlSWQiOiJUUDNNNTNUOTZPU0kwMCIsImJjb25uZWN0SWQiOiIyQjM1RjE2RDc1RTU0RTUxQjJFOEEyQkYyQjZDRDhCRiJ9.hYzC51tOUhg7VeYouYj5-6c97qgB7NNSSimalKOpqHI",
-   "source": "Christina Kyriasoglou / Blo…",
-   "published_at": "2026-11-26T16:51:40Z",
-   "text": "Sources: SAP is preparing a plan to eliminate at least 10,000 positions, or 9% of its staff globally, to transform its software business for the AI era. SAP SE is preparing a plan to eliminate at least 10,000 positions to transform its software business for the artificial intelligence era …",
+   "title": "OpenAI countersues Apple for allegedly stealing trade secrets via a staffer who returned to Apple a…",
+   "url": "https://www.ft.com/content/af599e07-d44c-4068-ab84-6ee3c85551d4",
+   "source": "Financial Times",
+   "published_at": "2026-11-27T18:58:28Z",
+   "text": "OpenAI countersues Apple for allegedly stealing trade secrets via a staffer who returned to Apple and “coercing and threatening” suppliers that work with both. The ChatGPT maker also accuses the tech giant of ‘coercing and threatening’ suppliers who work with both companies, as legal battle escalates",
    "via": "Techmeme"
   },
   {
@@ -30,8 +30,8 @@
    "url": "https://thesoapbox.email/archive/3",
    "source": "Hacker News",
    "published_at": "2026-11-27T17:45:31Z",
-   "text": "116 points and 114 comments on Hacker News.",
-   "points": 116,
+   "text": "155 points and 157 comments on Hacker News.",
+   "points": 155,
    "discussion": "https://news.ycombinator.com/item?id=50669561"
   },
   {
@@ -42,11 +42,11 @@
    "text": "I gave a keynote at the AI Engineer Code Summit a couple of weeks ago, constructed around the idea that there have been three significant inflection points in the abilities of LLMs and coding agents in the past twelve months. Here's the video of the talk. In this post I'm going to pull out the major inflection point theme and interrogate it more deeply. Coding agents in November 2025 Today, November 24th 2026, is the one year anniversary of the release of Claude Opus 4.5 . With hindsight, this was a consequential model."
   },
   {
-   "title": "SAP confirms a cybersecurity incident; report: hackers obtained its staffers' authentication tokens…",
-   "url": "https://www.securityweek.com/sap-confirms-cyberattack-source-code-reportedly-compromised/",
-   "source": "Eduard Kovacs / SecurityWeek",
-   "published_at": "2026-11-27T16:36:15Z",
-   "text": "SAP confirms a cybersecurity incident; report: hackers obtained its staffers' authentication tokens, letting them copy and alter source code stored on GitHub. SAP has detected suspicious activity on GitHub, where hackers reportedly used stolen employee tokens to copy and alter source code.",
+   "title": "Sources: SAP is preparing a plan to eliminate at least 10,000 positions, or 9% of its staff globall…",
+   "url": "https://www.bloomberg.com/news/articles/2026-11-26/sap-weighs-cutting-at-least-10-000-positions-in-ai-restructuring?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc5NTc2NzIxOCwiZXhwIjoxNzk2MzcyMDE4LCJhcnRpY2xlSWQiOiJUUDNNNTNUOTZPU0kwMCIsImJjb25uZWN0SWQiOiIyQjM1RjE2RDc1RTU0RTUxQjJFOEEyQkYyQjZDRDhCRiJ9.hYzC51tOUhg7VeYouYj5-6c97qgB7NNSSimalKOpqHI",
+   "source": "Christina Kyriasoglou / Blo…",
+   "published_at": "2026-11-26T16:51:40Z",
+   "text": "Sources: SAP is preparing a plan to eliminate at least 10,000 positions, or 9% of its staff globally, to transform its software business for the AI era. SAP SE is preparing a plan to eliminate at least 10,000 positions to transform its software business for the artificial intelligence era …",
    "via": "Techmeme"
   },
   {
@@ -54,8 +54,8 @@
    "url": "https://generativehistory.substack.com/p/gpt-62-astra-solves-a-historical",
    "source": "Hacker News",
    "published_at": "2026-11-27T15:03:17Z",
-   "text": "130 points and 53 comments on Hacker News.",
-   "points": 130,
+   "text": "146 points and 61 comments on Hacker News.",
+   "points": 146,
    "discussion": "https://news.ycombinator.com/item?id=50667744"
   },
   {
@@ -71,9 +71,34 @@
    "url": "https://construct22.com/",
    "source": "Hacker News",
    "published_at": "2026-11-27T06:44:34Z",
-   "text": "602 points and 253 comments on Hacker News.",
-   "points": 602,
+   "text": "608 points and 257 comments on Hacker News.",
+   "points": 608,
    "discussion": "https://news.ycombinator.com/item?id=50663595"
+  },
+  {
+   "title": "SAP confirms a cybersecurity incident; report: hackers obtained its staffers' authentication tokens…",
+   "url": "https://www.securityweek.com/sap-confirms-cyberattack-source-code-reportedly-compromised/",
+   "source": "Eduard Kovacs / SecurityWeek",
+   "published_at": "2026-11-27T16:36:15Z",
+   "text": "SAP confirms a cybersecurity incident; report: hackers obtained its staffers' authentication tokens, letting them copy and alter source code stored on GitHub. SAP has detected suspicious activity on GitHub, where hackers reportedly used stolen employee tokens to copy and alter source code.",
+   "via": "Techmeme"
+  },
+  {
+   "title": "Claude sabotaging ML research tasks?",
+   "url": "https://twitter.com/RealAstropulse/status/2126119408997466389",
+   "source": "Hacker News",
+   "published_at": "2026-11-27T08:28:08Z",
+   "text": "408 points and 205 comments on Hacker News.",
+   "points": 408,
+   "discussion": "https://news.ycombinator.com/item?id=50664325"
+  },
+  {
+   "title": "A look at proposals for vertical data centers, often the only option where land is limited in place…",
+   "url": "https://www.nytimes.com/2026/11/26/business/energy-environment/vertical-data-center-kansas-city.html",
+   "source": "Tiffany Hsu / New York Times",
+   "published_at": "2026-11-27T10:26:46Z",
+   "text": "A look at proposals for vertical data centers, often the only option where land is limited in places like Taiwan; Kansas City recently rejected a 20-story tower. The facilities that power A.I. and other big data needs are in high demand but widely despised. Some developers are trying to build them up instead of out.",
+   "via": "Techmeme"
   },
   {
    "title": "European Central Bank survey: 44% of employed EU consumers reported using AI weekly at work in Augu…",
@@ -84,36 +109,11 @@
    "via": "Techmeme"
   },
   {
-   "title": "Claude sabotaging ML research tasks?",
-   "url": "https://twitter.com/RealAstropulse/status/2126119408997466389",
-   "source": "Hacker News",
-   "published_at": "2026-11-27T08:28:08Z",
-   "text": "377 points and 190 comments on Hacker News.",
-   "points": 377,
-   "discussion": "https://news.ycombinator.com/item?id=50664325"
-  },
-  {
-   "title": "Sources: Z.ai's 3T-parameter flagship GLM-5.5 missed its November release and could be delayed to Q…",
-   "url": "https://www.reuters.com/world/china/us-chip-curbs-distillation-crackdown-threaten-chinese-ai-model-development-2026-11-26/",
-   "source": "Reuters",
-   "published_at": "2026-11-26T11:21:27Z",
-   "text": "Sources: Z.ai's 3T-parameter flagship GLM-5.5 missed its November release and could be delayed to Q1 2027 or later due to US rules and labs' distillation curbs",
-   "via": "Techmeme"
-  },
-  {
    "title": "The CMA says Meta made changes to Muse's ToS in the UK to reflect the country's consumer law; the t…",
    "url": "https://www.politico.eu/article/metas-uk-rollout-for-muse-ai-agent-exposes-it-to-more-liability/",
    "source": "Joseph Bambridge / Politico",
    "published_at": "2026-11-27T15:26:09Z",
    "text": "The CMA says Meta made changes to Muse's ToS in the UK to reflect the country's consumer law; the terms give users far more protections than in the US. The U.K. terms of service for Muse give consumers far more protection than in the U.S. — LONDON — Meta will be on the hook …",
-   "via": "Techmeme"
-  },
-  {
-   "title": "A look at proposals for vertical data centers, often the only option where land is limited in place…",
-   "url": "https://www.nytimes.com/2026/11/26/business/energy-environment/vertical-data-center-kansas-city.html",
-   "source": "Tiffany Hsu / New York Times",
-   "published_at": "2026-11-27T10:26:46Z",
-   "text": "A look at proposals for vertical data centers, often the only option where land is limited in places like Taiwan; Kansas City recently rejected a 20-story tower. The facilities that power A.I. and other big data needs are in high demand but widely despised. Some developers are trying to build them up instead of out.",
    "via": "Techmeme"
   },
   {
