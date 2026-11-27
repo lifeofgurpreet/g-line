@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-27T19:21:42Z",
+ "generated_at": "2026-11-27T19:53:57Z",
  "items": [
   {
    "title": "Serial numbers in Chinese filings reveal that Nvidia's restricted Blackwell chips were installed at…",
@@ -30,8 +30,8 @@
    "url": "https://thesoapbox.email/archive/3",
    "source": "Hacker News",
    "published_at": "2026-11-27T17:45:31Z",
-   "text": "155 points and 157 comments on Hacker News.",
-   "points": 155,
+   "text": "180 points and 192 comments on Hacker News.",
+   "points": 180,
    "discussion": "https://news.ycombinator.com/item?id=50669561"
   },
   {
@@ -54,26 +54,9 @@
    "url": "https://generativehistory.substack.com/p/gpt-62-astra-solves-a-historical",
    "source": "Hacker News",
    "published_at": "2026-11-27T15:03:17Z",
-   "text": "146 points and 61 comments on Hacker News.",
-   "points": 146,
+   "text": "160 points and 64 comments on Hacker News.",
+   "points": 160,
    "discussion": "https://news.ycombinator.com/item?id=50667744"
-  },
-  {
-   "title": "Interviews with Huawei CEO Ren Zhengfei and others on how Trump's restrictions pushed Huawei toward…",
-   "url": "https://www.nytimes.com/2026/11/26/business/huawei-trump-china-ai.html?unlocked_article_code=1.TlE.eHV_.2f70GvuLgZxe&smid=nytcore-ios-share",
-   "source": "New York Times",
-   "published_at": "2026-11-27T14:20:49Z",
-   "text": "Interviews with Huawei CEO Ren Zhengfei and others on how Trump's restrictions pushed Huawei toward self-reliance, making it central to China's AI ambitions. As China's access to Nvidia's advanced chips shrinks, Huawei is becoming increasingly indispensable to Beijing despite a wide technological gap with its American rival.",
-   "via": "Techmeme"
-  },
-  {
-   "title": "Group chat where your AI talks behind your back",
-   "url": "https://construct22.com/",
-   "source": "Hacker News",
-   "published_at": "2026-11-27T06:44:34Z",
-   "text": "608 points and 257 comments on Hacker News.",
-   "points": 608,
-   "discussion": "https://news.ycombinator.com/item?id=50663595"
   },
   {
    "title": "SAP confirms a cybersecurity incident; report: hackers obtained its staffers' authentication tokens…",
@@ -84,20 +67,37 @@
    "via": "Techmeme"
   },
   {
+   "title": "Group chat where your AI talks behind your back",
+   "url": "https://construct22.com/",
+   "source": "Hacker News",
+   "published_at": "2026-11-27T06:44:34Z",
+   "text": "619 points and 262 comments on Hacker News.",
+   "points": 619,
+   "discussion": "https://news.ycombinator.com/item?id=50663595"
+  },
+  {
+   "title": "Interviews with Huawei CEO Ren Zhengfei and others on how Trump's restrictions pushed Huawei toward…",
+   "url": "https://www.nytimes.com/2026/11/26/business/huawei-trump-china-ai.html?unlocked_article_code=1.TlE.eHV_.2f70GvuLgZxe&smid=nytcore-ios-share",
+   "source": "New York Times",
+   "published_at": "2026-11-27T14:20:49Z",
+   "text": "Interviews with Huawei CEO Ren Zhengfei and others on how Trump's restrictions pushed Huawei toward self-reliance, making it central to China's AI ambitions. As China's access to Nvidia's advanced chips shrinks, Huawei is becoming increasingly indispensable to Beijing despite a wide technological gap with its American rival.",
+   "via": "Techmeme"
+  },
+  {
    "title": "Claude sabotaging ML research tasks?",
    "url": "https://twitter.com/RealAstropulse/status/2126119408997466389",
    "source": "Hacker News",
    "published_at": "2026-11-27T08:28:08Z",
-   "text": "408 points and 205 comments on Hacker News.",
-   "points": 408,
+   "text": "424 points and 216 comments on Hacker News.",
+   "points": 424,
    "discussion": "https://news.ycombinator.com/item?id=50664325"
   },
   {
-   "title": "A look at proposals for vertical data centers, often the only option where land is limited in place…",
-   "url": "https://www.nytimes.com/2026/11/26/business/energy-environment/vertical-data-center-kansas-city.html",
-   "source": "Tiffany Hsu / New York Times",
-   "published_at": "2026-11-27T10:26:46Z",
-   "text": "A look at proposals for vertical data centers, often the only option where land is limited in places like Taiwan; Kansas City recently rejected a 20-story tower. The facilities that power A.I. and other big data needs are in high demand but widely despised. Some developers are trying to build them up instead of out.",
+   "title": "The CMA says Meta made changes to Muse's ToS in the UK to reflect the country's consumer law; the t…",
+   "url": "https://www.politico.eu/article/metas-uk-rollout-for-muse-ai-agent-exposes-it-to-more-liability/",
+   "source": "Joseph Bambridge / Politico",
+   "published_at": "2026-11-27T15:26:09Z",
+   "text": "The CMA says Meta made changes to Muse's ToS in the UK to reflect the country's consumer law; the terms give users far more protections than in the US. The U.K. terms of service for Muse give consumers far more protection than in the U.S. — LONDON — Meta will be on the hook …",
    "via": "Techmeme"
   },
   {
@@ -109,19 +109,19 @@
    "via": "Techmeme"
   },
   {
-   "title": "The CMA says Meta made changes to Muse's ToS in the UK to reflect the country's consumer law; the t…",
-   "url": "https://www.politico.eu/article/metas-uk-rollout-for-muse-ai-agent-exposes-it-to-more-liability/",
-   "source": "Joseph Bambridge / Politico",
-   "published_at": "2026-11-27T15:26:09Z",
-   "text": "The CMA says Meta made changes to Muse's ToS in the UK to reflect the country's consumer law; the terms give users far more protections than in the US. The U.K. terms of service for Muse give consumers far more protection than in the U.S. — LONDON — Meta will be on the hook …",
+   "title": "A look at proposals for vertical data centers, often the only option where land is limited in place…",
+   "url": "https://www.nytimes.com/2026/11/26/business/energy-environment/vertical-data-center-kansas-city.html",
+   "source": "Tiffany Hsu / New York Times",
+   "published_at": "2026-11-27T10:26:46Z",
+   "text": "A look at proposals for vertical data centers, often the only option where land is limited in places like Taiwan; Kansas City recently rejected a 20-story tower. The facilities that power A.I. and other big data needs are in high demand but widely despised. Some developers are trying to build them up instead of out.",
    "via": "Techmeme"
   },
   {
-   "title": "Texas resumes data center permitting, approving permits for SpaceX's $24B gas power plant, ahead of…",
-   "url": "https://www.ft.com/content/e0a1bf7a-7c28-4a20-8ca8-86dc7d5097b3",
-   "source": "Stephanie Findlay / Financi…",
-   "published_at": "2026-11-26T13:46:14Z",
-   "text": "Texas resumes data center permitting, approving permits for SpaceX's $24B gas power plant, ahead of Democratic Governor Gina Hinojosa taking office in January",
+   "title": "Dante Security, which has developed a platform for monitoring the activity of AI agents within orga…",
+   "url": "https://www.calcalistech.com/ctechnews/article/h18nob7kml",
+   "source": "Meir Orbach / CTech",
+   "published_at": "2026-11-27T03:16:07Z",
+   "text": "Dante Security, which has developed a platform for monitoring the activity of AI agents within organizations, raised a $10M seed led by NFX",
    "via": "Techmeme"
   }
  ],
