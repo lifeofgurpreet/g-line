@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-27T17:11:46Z",
+ "generated_at": "2026-11-27T17:44:19Z",
  "items": [
   {
    "title": "Serial numbers in Chinese filings reveal that Nvidia's restricted Blackwell chips were installed at…",
@@ -30,8 +30,8 @@
    "url": "https://generativehistory.substack.com/p/gpt-62-astra-solves-a-historical",
    "source": "Hacker News",
    "published_at": "2026-11-27T15:03:17Z",
-   "text": "84 points and 36 comments on Hacker News.",
-   "points": 84,
+   "text": "99 points and 43 comments on Hacker News.",
+   "points": 99,
    "discussion": "https://news.ycombinator.com/item?id=50667744"
   },
   {
@@ -50,12 +50,12 @@
    "via": "Techmeme"
   },
   {
-   "title": "The group chat where your AI talks behind your back",
+   "title": "Group chat where your AI talks behind your back",
    "url": "https://construct22.com/",
    "source": "Hacker News",
    "published_at": "2026-11-27T06:44:34Z",
-   "text": "545 points and 241 comments on Hacker News.",
-   "points": 545,
+   "text": "567 points and 247 comments on Hacker News.",
+   "points": 567,
    "discussion": "https://news.ycombinator.com/item?id=50663595"
   },
   {
@@ -67,13 +67,13 @@
    "via": "Techmeme"
   },
   {
-   "title": "AI made self-hosting fun again",
-   "url": "https://janlukas.blog/posts/ai-self-hosting",
+   "title": "Claude sabotaging ML research tasks?",
+   "url": "https://twitter.com/RealAstropulse/status/2126119408997466389",
    "source": "Hacker News",
-   "published_at": "2026-11-26T21:47:45Z",
-   "text": "959 points and 458 comments on Hacker News.",
-   "points": 959,
-   "discussion": "https://news.ycombinator.com/item?id=50660180"
+   "published_at": "2026-11-27T08:28:08Z",
+   "text": "316 points and 172 comments on Hacker News.",
+   "points": 316,
+   "discussion": "https://news.ycombinator.com/item?id=50664325"
   },
   {
    "title": "The CMA says Meta made changes to Muse's ToS in the UK to reflect the country's consumer law; the t…",
@@ -84,13 +84,21 @@
    "via": "Techmeme"
   },
   {
-   "title": "Claude sabotaging ML research tasks?",
-   "url": "https://twitter.com/RealAstropulse/status/2126119408997466389",
+   "title": "AI made self-hosting fun again",
+   "url": "https://janlukas.blog/posts/ai-self-hosting",
    "source": "Hacker News",
-   "published_at": "2026-11-27T08:28:08Z",
-   "text": "272 points and 153 comments on Hacker News.",
-   "points": 272,
-   "discussion": "https://news.ycombinator.com/item?id=50664325"
+   "published_at": "2026-11-26T21:47:45Z",
+   "text": "978 points and 463 comments on Hacker News.",
+   "points": 978,
+   "discussion": "https://news.ycombinator.com/item?id=50660180"
+  },
+  {
+   "title": "Sources: Z.ai's 3T-parameter flagship GLM-5.5 missed its November release and could be delayed to Q…",
+   "url": "https://www.reuters.com/world/china/us-chip-curbs-distillation-crackdown-threaten-chinese-ai-model-development-2026-11-26/",
+   "source": "Reuters",
+   "published_at": "2026-11-26T11:21:27Z",
+   "text": "Sources: Z.ai's 3T-parameter flagship GLM-5.5 missed its November release and could be delayed to Q1 2027 or later due to US rules and labs' distillation curbs",
+   "via": "Techmeme"
   },
   {
    "title": "A look at proposals for vertical data centers, often the only option where land is limited in place…",
@@ -114,14 +122,6 @@
    "source": "Nathan Grayson / Aftermath",
    "published_at": "2026-11-26T22:11:12Z",
    "text": "A US judge sentences a Florida man to 47 months in prison for using AI to impersonate Kick streamer N3on, defrauding a memecoin's organizers out of ~$260K. What goes around comes around, I suppose. Earlier this year, Kick streamer N3on, a weasly little twig person who spends …",
-   "via": "Techmeme"
-  },
-  {
-   "title": "Texas resumes data center permitting, approving permits for SpaceX's $24B gas power plant, ahead of…",
-   "url": "https://www.ft.com/content/e0a1bf7a-7c28-4a20-8ca8-86dc7d5097b3",
-   "source": "Stephanie Findlay / Financi…",
-   "published_at": "2026-11-26T13:46:14Z",
-   "text": "Texas resumes data center permitting, approving permits for SpaceX's $24B gas power plant, ahead of Democratic Governor Gina Hinojosa taking office in January",
    "via": "Techmeme"
   }
  ],
