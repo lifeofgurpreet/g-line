@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-27T20:59:12Z",
+ "generated_at": "2026-11-27T21:30:57Z",
  "items": [
   {
    "title": "Serial numbers in Chinese filings reveal that Nvidia's restricted Blackwell chips were installed at…",
@@ -9,6 +9,16 @@
    "published_at": "2026-11-27T13:06:06Z",
    "text": "Serial numbers in Chinese filings reveal that Nvidia's restricted Blackwell chips were installed at a Shanghai data center linked to Alice Huang and Megaspeed. A pair of Chinese firms installed Nvidia Corp.'s powerful Blackwell semiconductors in a Shanghai data center linked to Alice Huang …",
    "via": "Techmeme"
+  },
+  {
+   "title": "This makes me think what happened was they were using the project Daybreak/Glasswing versions of My…",
+   "url": "https://x.com/AndrewCurran_/status/2126363973109100830",
+   "source": "𝕏 @AndrewCurran_",
+   "published_at": "2026-11-27T17:14:11Z",
+   "text": "This makes me think what happened was they were using the project Daybreak/Glasswing versions of Mythos or Astra to harden things up in preparation, and while doing so the model said 'oh wow, by the way, you guys have been hacked.'",
+   "author_name": "Andrew Curran",
+   "likes": 1163,
+   "story": "Sources: the US Air Force recently discovered a breach of Cloud One, which combines Microsoft, Amazon, Oracle, and Google clouds to power Air Force applications"
   },
   {
    "title": "Claude Code 2.1.332 released",
@@ -30,8 +40,8 @@
    "url": "https://twitter.com/michael_nielsen/status/2126359767362748777",
    "source": "Hacker News",
    "published_at": "2026-11-27T19:31:01Z",
-   "text": "133 points and 85 comments on Hacker News.",
-   "points": 133,
+   "text": "185 points and 114 comments on Hacker News.",
+   "points": 185,
    "discussion": "https://news.ycombinator.com/item?id=50670757"
   },
   {
@@ -50,13 +60,13 @@
    "via": "Techmeme"
   },
   {
-   "title": "Group chat where your AI talks behind your back",
-   "url": "https://construct22.com/",
+   "title": "States sue SpaceX to stop Grok from generating child sex images, revenge porn",
+   "url": "https://www.oag.state.va.us/media-center/news-releases/jay-jones/3162-attorneys-general-jones-and-rayfield-file-suit-against-spacex-parent-company-of-x-xai-and-grok-over-creation-and-promotion-of-child-exploitation-and-non-consensual-images-on-platform",
    "source": "Hacker News",
-   "published_at": "2026-11-27T06:44:34Z",
-   "text": "632 points and 271 comments on Hacker News.",
-   "points": 632,
-   "discussion": "https://news.ycombinator.com/item?id=50663595"
+   "published_at": "2026-11-27T19:42:25Z",
+   "text": "87 points and 44 comments on Hacker News.",
+   "points": 87,
+   "discussion": "https://news.ycombinator.com/item?id=50670855"
   },
   {
    "title": "Interviews with Huawei CEO Ren Zhengfei and others on how Trump's restrictions pushed Huawei toward…",
@@ -67,13 +77,13 @@
    "via": "Techmeme"
   },
   {
-   "title": "Claude sabotaging ML research tasks?",
-   "url": "https://twitter.com/RealAstropulse/status/2126119408997466389",
+   "title": "Group chat where your AI talks behind your back",
+   "url": "https://construct22.com/",
    "source": "Hacker News",
-   "published_at": "2026-11-27T08:28:08Z",
-   "text": "463 points and 237 comments on Hacker News.",
-   "points": 463,
-   "discussion": "https://news.ycombinator.com/item?id=50664325"
+   "published_at": "2026-11-27T06:44:34Z",
+   "text": "640 points and 274 comments on Hacker News.",
+   "points": 640,
+   "discussion": "https://news.ycombinator.com/item?id=50663595"
   },
   {
    "title": "SAP confirms a cybersecurity incident; report: hackers obtained its staffers' authentication tokens…",
@@ -84,13 +94,13 @@
    "via": "Techmeme"
   },
   {
-   "title": "AI made self-hosting fun again",
-   "url": "https://janlukas.blog/posts/ai-self-hosting",
+   "title": "Claude sabotaging ML research tasks?",
+   "url": "https://twitter.com/RealAstropulse/status/2126119408997466389",
    "source": "Hacker News",
-   "published_at": "2026-11-26T21:47:45Z",
-   "text": "1039 points and 491 comments on Hacker News.",
-   "points": 1039,
-   "discussion": "https://news.ycombinator.com/item?id=50660180"
+   "published_at": "2026-11-27T08:28:08Z",
+   "text": "476 points and 242 comments on Hacker News.",
+   "points": 476,
+   "discussion": "https://news.ycombinator.com/item?id=50664325"
   },
   {
    "title": "Q&A with AI researchers Ege Erdil and Daniel Kokotajlo on the odds of an intelligence explosion bef…",
@@ -98,14 +108,6 @@
    "source": "Dwarkesh Patel / Dwarkesh P…",
    "published_at": "2026-11-27T20:15:42Z",
    "text": "Q&A with AI researchers Ege Erdil and Daniel Kokotajlo on the odds of an intelligence explosion before 2029, pausing AI, the US antagonizing China, and more. “If we pause now, people still won't understand what's at stake.” — New podcast episode between Ege Erdil and Daniel Kokotajlo.",
-   "via": "Techmeme"
-  },
-  {
-   "title": "The CMA says Meta made changes to Muse's ToS in the UK to reflect the country's consumer law; the t…",
-   "url": "https://www.politico.eu/article/metas-uk-rollout-for-muse-ai-agent-exposes-it-to-more-liability/",
-   "source": "Joseph Bambridge / Politico",
-   "published_at": "2026-11-27T15:26:09Z",
-   "text": "The CMA says Meta made changes to Muse's ToS in the UK to reflect the country's consumer law; the terms give users far more protections than in the US. The U.K. terms of service for Muse give consumers far more protection than in the U.S. — LONDON — Meta will be on the hook …",
    "via": "Techmeme"
   },
   {
@@ -117,11 +119,11 @@
    "via": "Techmeme"
   },
   {
-   "title": "A look at proposals for vertical data centers, often the only option where land is limited in place…",
-   "url": "https://www.nytimes.com/2026/11/26/business/energy-environment/vertical-data-center-kansas-city.html",
-   "source": "Tiffany Hsu / New York Times",
-   "published_at": "2026-11-27T10:26:46Z",
-   "text": "A look at proposals for vertical data centers, often the only option where land is limited in places like Taiwan; Kansas City recently rejected a 20-story tower. The facilities that power A.I. and other big data needs are in high demand but widely despised. Some developers are trying to build them up instead of out.",
+   "title": "The CMA says Meta made changes to Muse's ToS in the UK to reflect the country's consumer law; the t…",
+   "url": "https://www.politico.eu/article/metas-uk-rollout-for-muse-ai-agent-exposes-it-to-more-liability/",
+   "source": "Joseph Bambridge / Politico",
+   "published_at": "2026-11-27T15:26:09Z",
+   "text": "The CMA says Meta made changes to Muse's ToS in the UK to reflect the country's consumer law; the terms give users far more protections than in the US. The U.K. terms of service for Muse give consumers far more protection than in the U.S. — LONDON — Meta will be on the hook …",
    "via": "Techmeme"
   }
  ],
