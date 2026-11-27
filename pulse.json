@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-27T11:59:03Z",
+ "generated_at": "2026-11-27T12:31:19Z",
  "items": [
   {
    "title": "Sources: SAP is preparing a plan to eliminate at least 10,000 positions, or 9% of its staff globall…",
@@ -11,14 +11,14 @@
    "via": "Techmeme"
   },
   {
-   "title": "No, I do not believe that we should “surrender human free will” to AI systems, and it’s absurd to s…",
-   "url": "https://x.com/DarioAmodei/status/2125656399392690605",
-   "source": "𝕏 @DarioAmodei",
-   "published_at": "2026-11-25T18:22:33Z",
-   "text": "No, I do not believe that we should “surrender human free will” to AI systems, and it’s absurd to suggest that I do. I have written hundreds of pages of essays and a constant theme in them is the need for AI to be governed by legitimate democratic processes. For millennia (going…",
-   "author_name": "Dario Amodei",
-   "likes": 21121,
-   "story": "Dario Amodei rejects the idea of surrendering free will to AI and accuses rival AI execs of “vibes-based” positioning, rebutting a report on AI leaders' views"
+   "title": "I've joined OpenAI! I'm very proud of my time at Anthropic, and I'll continue to root for my former…",
+   "url": "https://x.com/trq212/status/2125675533761671405",
+   "source": "𝕏 @trq212",
+   "published_at": "2026-11-25T19:38:35Z",
+   "text": "I've joined OpenAI! I'm very proud of my time at Anthropic, and I'll continue to root for my former colleagues. Both companies have important roles to play in the future. There is a tremendous amount of work ahead of us to bring AI to the world, and it will demand the very best…",
+   "author_name": "Thariq",
+   "likes": 31593,
+   "story": "Thariq Shihipar joins OpenAI after leaving Anthropic in October, saying he felt he could “personally contribute the most” to bringing AI to the world at OpenAI"
   },
   {
    "title": "Claude Code 2.1.332 released",
@@ -28,11 +28,11 @@
    "text": "Added skills from MCP servers (beta). They show as server:skill in the / menu; other skills keep their names · Added a PreSkillShellCommand hook event that can refuse a skill or command's inline shell commands as it loads; on 2.1.331 and older, a settings file naming it opens a dialog at start · Added \"Always deliver\" to the prompt for held messages from other sessions · Added a footer line that stays while a flagged message has your session on a different model, until you pick one with /model"
   },
   {
-   "title": "A look at proposals for vertical data centers, often the only option where land is limited in place…",
-   "url": "https://www.nytimes.com/2026/11/26/business/energy-environment/vertical-data-center-kansas-city.html",
-   "source": "Tiffany Hsu / New York Times",
-   "published_at": "2026-11-27T10:26:46Z",
-   "text": "A look at proposals for vertical data centers, often the only option where land is limited in places like Taiwan; Kansas City recently rejected a 20-story tower. The facilities that power A.I. and other big data needs are in high demand but widely despised. Some developers are trying to build them up instead of out.",
+   "title": "Sources: Z.ai's 3T-parameter flagship GLM-5.5 missed its November release and could be delayed to Q…",
+   "url": "https://www.reuters.com/world/china/us-chip-curbs-distillation-crackdown-threaten-chinese-ai-model-development-2026-11-26/",
+   "source": "Reuters",
+   "published_at": "2026-11-26T11:21:27Z",
+   "text": "Sources: Z.ai's 3T-parameter flagship GLM-5.5 missed its November release and could be delayed to Q1 2027 or later due to US rules and labs' distillation curbs. China's Z.AI has fallen behind schedule on its next flagship AI model, while rival Moonshot AI expects the interval between major releases …",
    "via": "Techmeme"
   },
   {
@@ -40,8 +40,8 @@
    "url": "https://construct22.com/",
    "source": "Hacker News",
    "published_at": "2026-11-27T06:44:34Z",
-   "text": "326 points and 143 comments on Hacker News.",
-   "points": 326,
+   "text": "357 points and 162 comments on Hacker News.",
+   "points": 357,
    "discussion": "https://news.ycombinator.com/item?id=50663595"
   },
   {
@@ -64,16 +64,16 @@
    "url": "https://twitter.com/RealAstropulse/status/2126119408997466389",
    "source": "Hacker News",
    "published_at": "2026-11-27T08:28:08Z",
-   "text": "130 points and 86 comments on Hacker News.",
-   "points": 130,
+   "text": "136 points and 87 comments on Hacker News.",
+   "points": 136,
    "discussion": "https://news.ycombinator.com/item?id=50664325"
   },
   {
-   "title": "Microsoft says state-backed hacking groups in China and North Korea, including Salt Typhoon, have a…",
-   "url": "https://therecord.media/microsoft-china-salt-typhoon-using-artex-ai-tool",
-   "source": "Jonathan Greig / The Record",
-   "published_at": "2026-11-26T06:01:52Z",
-   "text": "Microsoft says state-backed hacking groups in China and North Korea, including Salt Typhoon, have added AI penetration testing tool ARTEX to their arsenals. State-backed hacking groups in China and North Korea are using a powerful AI hacking tool in attacks, according to a new report from Microsoft.",
+   "title": "A look at proposals for vertical data centers, often the only option where land is limited in place…",
+   "url": "https://www.nytimes.com/2026/11/26/business/energy-environment/vertical-data-center-kansas-city.html",
+   "source": "Tiffany Hsu / New York Times",
+   "published_at": "2026-11-27T10:26:46Z",
+   "text": "A look at proposals for vertical data centers, often the only option where land is limited in places like Taiwan; Kansas City recently rejected a 20-story tower. The facilities that power A.I. and other big data needs are in high demand but widely despised. Some developers are trying to build them up instead of out.",
    "via": "Techmeme"
   },
   {
@@ -81,9 +81,26 @@
    "url": "https://janlukas.blog/posts/ai-self-hosting",
    "source": "Hacker News",
    "published_at": "2026-11-26T21:47:45Z",
-   "text": "767 points and 387 comments on Hacker News.",
-   "points": 767,
+   "text": "786 points and 397 comments on Hacker News.",
+   "points": 786,
    "discussion": "https://news.ycombinator.com/item?id=50660180"
+  },
+  {
+   "title": "Microsoft says state-backed hacking groups in China and North Korea, including Salt Typhoon, have a…",
+   "url": "https://therecord.media/microsoft-china-salt-typhoon-using-artex-ai-tool",
+   "source": "Jonathan Greig / The Record",
+   "published_at": "2026-11-26T06:01:52Z",
+   "text": "Microsoft says state-backed hacking groups in China and North Korea, including Salt Typhoon, have added AI penetration testing tool ARTEX to their arsenals",
+   "via": "Techmeme"
+  },
+  {
+   "title": "\"What's Claude's Fursona?\" and Other Questions",
+   "url": "https://herecomesthemoon.net/2026/11/whats-claudes-fursona/",
+   "source": "Hacker News",
+   "published_at": "2026-11-27T04:56:18Z",
+   "text": "97 points and 76 comments on Hacker News.",
+   "points": 97,
+   "discussion": "https://news.ycombinator.com/item?id=50662933"
   },
   {
    "title": "Dante Security, which has developed a platform for monitoring the activity of AI agents within orga…",
@@ -92,15 +109,6 @@
    "published_at": "2026-11-27T03:16:07Z",
    "text": "Dante Security, which has developed a platform for monitoring the activity of AI agents within organizations, raised a $10M seed led by NFX. Dante Security is developing a platform that gives organizations visibility into the actions of autonomous AI agents and connects their activity to the employees responsible for them.",
    "via": "Techmeme"
-  },
-  {
-   "title": "\"What's Claude's Fursona?\" and Other Questions",
-   "url": "https://herecomesthemoon.net/2026/11/whats-claudes-fursona/",
-   "source": "Hacker News",
-   "published_at": "2026-11-27T04:56:18Z",
-   "text": "95 points and 76 comments on Hacker News.",
-   "points": 95,
-   "discussion": "https://news.ycombinator.com/item?id=50662933"
   },
   {
    "title": "Bipartisan efforts in Congress to regulate AI are gaining momentum, but they face an uphill climb d…",
@@ -116,14 +124,6 @@
    "source": "Nathan Grayson / Aftermath",
    "published_at": "2026-11-26T22:11:12Z",
    "text": "A US judge sentences a Florida man to 47 months in prison for using AI to impersonate Kick streamer N3on, defrauding a memecoin's organizers out of ~$260K. What goes around comes around, I suppose. Earlier this year, Kick streamer N3on, a weasly little twig person who spends …",
-   "via": "Techmeme"
-  },
-  {
-   "title": "Avicena, which links AI chips with microLEDs instead of lasers, raised a $100M+ Series C led by Int…",
-   "url": "https://thenextweb.com/news/avicena-100m-series-c-microled-optical-interconnects-ai",
-   "source": "Cristian Dina / The Next Web",
-   "published_at": "2026-11-26T15:51:35Z",
-   "text": "Avicena, which links AI chips with microLEDs instead of lasers, raised a $100M+ Series C led by Intervest, with participation from SK Hynix, Samsung, and AMD. SK hynix, Samsung and AMD's venture arms joined the Series C. New chief executive Kevin Pope plans to bring the first LightBundle product to market next year.",
    "via": "Techmeme"
   }
  ],
