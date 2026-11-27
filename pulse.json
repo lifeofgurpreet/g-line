@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-27T20:26:35Z",
+ "generated_at": "2026-11-27T20:59:12Z",
  "items": [
   {
    "title": "Serial numbers in Chinese filings reveal that Nvidia's restricted Blackwell chips were installed at…",
@@ -30,8 +30,8 @@
    "url": "https://twitter.com/michael_nielsen/status/2126359767362748777",
    "source": "Hacker News",
    "published_at": "2026-11-27T19:31:01Z",
-   "text": "96 points and 67 comments on Hacker News.",
-   "points": 96,
+   "text": "133 points and 85 comments on Hacker News.",
+   "points": 133,
    "discussion": "https://news.ycombinator.com/item?id=50670757"
   },
   {
@@ -54,9 +54,26 @@
    "url": "https://construct22.com/",
    "source": "Hacker News",
    "published_at": "2026-11-27T06:44:34Z",
-   "text": "628 points and 266 comments on Hacker News.",
-   "points": 628,
+   "text": "632 points and 271 comments on Hacker News.",
+   "points": 632,
    "discussion": "https://news.ycombinator.com/item?id=50663595"
+  },
+  {
+   "title": "Interviews with Huawei CEO Ren Zhengfei and others on how Trump's restrictions pushed Huawei toward…",
+   "url": "https://www.nytimes.com/2026/11/26/business/huawei-trump-china-ai.html?unlocked_article_code=1.TlE.eHV_.2f70GvuLgZxe&smid=nytcore-ios-share",
+   "source": "New York Times",
+   "published_at": "2026-11-27T14:20:49Z",
+   "text": "Interviews with Huawei CEO Ren Zhengfei and others on how Trump's restrictions pushed Huawei toward self-reliance, making it central to China's AI ambitions. As China's access to Nvidia's advanced chips shrinks, Huawei is becoming increasingly indispensable to Beijing despite a wide technological gap with its American rival.",
+   "via": "Techmeme"
+  },
+  {
+   "title": "Claude sabotaging ML research tasks?",
+   "url": "https://twitter.com/RealAstropulse/status/2126119408997466389",
+   "source": "Hacker News",
+   "published_at": "2026-11-27T08:28:08Z",
+   "text": "463 points and 237 comments on Hacker News.",
+   "points": 463,
+   "discussion": "https://news.ycombinator.com/item?id=50664325"
   },
   {
    "title": "SAP confirms a cybersecurity incident; report: hackers obtained its staffers' authentication tokens…",
@@ -67,13 +84,13 @@
    "via": "Techmeme"
   },
   {
-   "title": "Claude sabotaging ML research tasks?",
-   "url": "https://twitter.com/RealAstropulse/status/2126119408997466389",
+   "title": "AI made self-hosting fun again",
+   "url": "https://janlukas.blog/posts/ai-self-hosting",
    "source": "Hacker News",
-   "published_at": "2026-11-27T08:28:08Z",
-   "text": "446 points and 229 comments on Hacker News.",
-   "points": 446,
-   "discussion": "https://news.ycombinator.com/item?id=50664325"
+   "published_at": "2026-11-26T21:47:45Z",
+   "text": "1039 points and 491 comments on Hacker News.",
+   "points": 1039,
+   "discussion": "https://news.ycombinator.com/item?id=50660180"
   },
   {
    "title": "Q&A with AI researchers Ege Erdil and Daniel Kokotajlo on the odds of an intelligence explosion bef…",
@@ -81,23 +98,6 @@
    "source": "Dwarkesh Patel / Dwarkesh P…",
    "published_at": "2026-11-27T20:15:42Z",
    "text": "Q&A with AI researchers Ege Erdil and Daniel Kokotajlo on the odds of an intelligence explosion before 2029, pausing AI, the US antagonizing China, and more. “If we pause now, people still won't understand what's at stake.” — New podcast episode between Ege Erdil and Daniel Kokotajlo.",
-   "via": "Techmeme"
-  },
-  {
-   "title": "AI made self-hosting fun again",
-   "url": "https://janlukas.blog/posts/ai-self-hosting",
-   "source": "Hacker News",
-   "published_at": "2026-11-26T21:47:45Z",
-   "text": "1034 points and 489 comments on Hacker News.",
-   "points": 1034,
-   "discussion": "https://news.ycombinator.com/item?id=50660180"
-  },
-  {
-   "title": "Interviews with Huawei CEO Ren Zhengfei and others on how Trump's restrictions pushed Huawei toward…",
-   "url": "https://www.nytimes.com/2026/11/26/business/huawei-trump-china-ai.html?unlocked_article_code=1.TlE.eHV_.2f70GvuLgZxe&smid=nytcore-ios-share",
-   "source": "New York Times",
-   "published_at": "2026-11-27T14:20:49Z",
-   "text": "Interviews with Huawei CEO Ren Zhengfei and others on how Trump's restrictions pushed Huawei toward self-reliance, making it central to China's AI ambitions. As China's access to Nvidia's advanced chips shrinks, Huawei is becoming increasingly indispensable to Beijing despite a wide technological gap with its American rival.",
    "via": "Techmeme"
   },
   {
