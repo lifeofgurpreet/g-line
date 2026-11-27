@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-27T22:02:33Z",
+ "generated_at": "2026-11-27T22:34:09Z",
  "items": [
   {
    "title": "Serial numbers in Chinese filings reveal that Nvidia's restricted Blackwell chips were installed at…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-27T11:46:52Z",
    "text": "I just had Neon audit our codebase for subtle sabotage by Anthropic models. It found Claude silently added rules to ignore users' explicit skin-tone preferences in our attraction model and it intentionally sabotaged our IQ estimation model. Silently imposing your ideology on…",
    "author_name": "Jake Kozloski",
-   "likes": 21279,
+   "likes": 21857,
    "story": "Some users claim Claude is silently sabotaging projects, but the behavior may stem from a clash between its proactive nature and strict instruction following"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-11-27T17:14:11Z",
    "text": "This makes me think what happened was they were using the project Daybreak/Glasswing versions of Mythos or Astra to harden things up in preparation, and while doing so the model said 'oh wow, by the way, you guys have been hacked.'",
    "author_name": "Andrew Curran",
-   "likes": 1224,
+   "likes": 1276,
    "story": "Sources: the US Air Force recently discovered a breach of Cloud One, which combines Microsoft, Amazon, Oracle, and Google clouds to power Air Force applications"
   },
   {
@@ -50,8 +50,8 @@
    "url": "https://twitter.com/michael_nielsen/status/2126359767362748777",
    "source": "Hacker News",
    "published_at": "2026-11-27T19:31:01Z",
-   "text": "228 points and 138 comments on Hacker News.",
-   "points": 228,
+   "text": "261 points and 160 comments on Hacker News.",
+   "points": 261,
    "discussion": "https://news.ycombinator.com/item?id=50670757"
   },
   {
@@ -74,8 +74,8 @@
    "url": "https://www.oag.state.va.us/media-center/news-releases/jay-jones/3162-attorneys-general-jones-and-rayfield-file-suit-against-spacex-parent-company-of-x-xai-and-grok-over-creation-and-promotion-of-child-exploitation-and-non-consensual-images-on-platform",
    "source": "Hacker News",
    "published_at": "2026-11-27T19:42:25Z",
-   "text": "117 points and 66 comments on Hacker News.",
-   "points": 117,
+   "text": "148 points and 83 comments on Hacker News.",
+   "points": 148,
    "discussion": "https://news.ycombinator.com/item?id=50670855"
   },
   {
@@ -91,26 +91,9 @@
    "url": "https://construct22.com/",
    "source": "Hacker News",
    "published_at": "2026-11-27T06:44:34Z",
-   "text": "650 points and 277 comments on Hacker News.",
-   "points": 650,
+   "text": "662 points and 278 comments on Hacker News.",
+   "points": 662,
    "discussion": "https://news.ycombinator.com/item?id=50663595"
-  },
-  {
-   "title": "SAP confirms a cybersecurity incident; report: hackers obtained its staffers' authentication tokens…",
-   "url": "https://www.securityweek.com/sap-confirms-cyberattack-source-code-reportedly-compromised/",
-   "source": "Eduard Kovacs / SecurityWeek",
-   "published_at": "2026-11-27T16:36:15Z",
-   "text": "SAP confirms a cybersecurity incident; report: hackers obtained its staffers' authentication tokens, letting them copy and alter source code stored on GitHub. SAP has detected suspicious activity on GitHub, where hackers reportedly used stolen employee tokens to copy and alter source code.",
-   "via": "Techmeme"
-  },
-  {
-   "title": "Claude sabotaging ML research tasks?",
-   "url": "https://twitter.com/RealAstropulse/status/2126119408997466389",
-   "source": "Hacker News",
-   "published_at": "2026-11-27T08:28:08Z",
-   "text": "493 points and 251 comments on Hacker News.",
-   "points": 493,
-   "discussion": "https://news.ycombinator.com/item?id=50664325"
   },
   {
    "title": "Q&A with AI researchers Ege Erdil and Daniel Kokotajlo on the odds of an intelligence explosion bef…",
@@ -118,6 +101,23 @@
    "source": "Dwarkesh Patel / Dwarkesh P…",
    "published_at": "2026-11-27T20:15:42Z",
    "text": "Q&A with AI researchers Ege Erdil and Daniel Kokotajlo on the odds of an intelligence explosion before 2029, pausing AI, the US antagonizing China, and more. “If we pause now, people still won't understand what's at stake.” — New podcast episode between Ege Erdil and Daniel Kokotajlo.",
+   "via": "Techmeme"
+  },
+  {
+   "title": "Claude sabotaging ML research tasks?",
+   "url": "https://twitter.com/RealAstropulse/status/2126119408997466389",
+   "source": "Hacker News",
+   "published_at": "2026-11-27T08:28:08Z",
+   "text": "511 points and 257 comments on Hacker News.",
+   "points": 511,
+   "discussion": "https://news.ycombinator.com/item?id=50664325"
+  },
+  {
+   "title": "SAP confirms a cybersecurity incident; report: hackers obtained its staffers' authentication tokens…",
+   "url": "https://www.securityweek.com/sap-confirms-cyberattack-source-code-reportedly-compromised/",
+   "source": "Eduard Kovacs / SecurityWeek",
+   "published_at": "2026-11-27T16:36:15Z",
+   "text": "SAP confirms a cybersecurity incident; report: hackers obtained its staffers' authentication tokens, letting them copy and alter source code stored on GitHub. SAP has detected suspicious activity on GitHub, where hackers reportedly used stolen employee tokens to copy and alter source code.",
    "via": "Techmeme"
   },
   {
