@@ -1,13 +1,13 @@
 {
  "schema": 1,
- "generated_at": "2026-11-27T00:56:51Z",
+ "generated_at": "2026-11-27T03:37:02Z",
  "items": [
   {
-   "title": "Sources: Nvidia has told partners like Dell and Supermicro to halt server shipments to Malaysia, Si…",
-   "url": "https://www.ft.com/content/7838a715-07d4-4605-aa60-21f5af2b2370?accessToken=zwAAAaKuNQQ-lc82jEUmoM5JUdOoR_A5rypRr894OKcVB9RGBdOqYCH1rysjcM8_V3g53u1A9NOvn7-PtUiQ488yW5PWvC5N09OZQc9GiKyhHdO5lhOroTBLn9OMFcQdt82IlAE.MEUCIAPJOFlcs0Bojv5ln7BmjmdLTj5dPHWXAdsn-FuOch_SAiEA5Eu4HIM2_h5rJDnldWxSlTi5axDZdg9vO7b_UplS1Nk&segmentId=7d4bcc2e-e664-92ba-62e3-5590579f1902",
-   "source": "Financial Times",
-   "published_at": "2026-11-26T05:46:04Z",
-   "text": "Sources: Nvidia has told partners like Dell and Supermicro to halt server shipments to Malaysia, Singapore, Thailand, and Indonesia amid new US export controls. Move comes as US steps up export controls to prevent Chinese access to AI computing power — Nvidia has told its manufacturing partners …",
+   "title": "Sources: SAP is preparing a plan to eliminate at least 10,000 positions, or 9% of its staff globall…",
+   "url": "https://www.bloomberg.com/news/articles/2026-11-26/sap-weighs-cutting-at-least-10-000-positions-in-ai-restructuring",
+   "source": "Christina Kyriasoglou / Blo…",
+   "published_at": "2026-11-26T16:51:40Z",
+   "text": "Sources: SAP is preparing a plan to eliminate at least 10,000 positions, or 9% of its staff globally, to transform its software business for the AI era. SAP SE is preparing a plan to eliminate at least 10,000 positions to transform its software business for the artificial intelligence era …",
    "via": "Techmeme"
   },
   {
@@ -17,7 +17,7 @@
    "published_at": "2026-11-25T18:22:33Z",
    "text": "No, I do not believe that we should “surrender human free will” to AI systems, and it’s absurd to suggest that I do. I have written hundreds of pages of essays and a constant theme in them is the need for AI to be governed by legitimate democratic processes. For millennia (going…",
    "author_name": "Dario Amodei",
-   "likes": 20551,
+   "likes": 20726,
    "story": "Dario Amodei rejects the idea of surrendering free will to AI and accuses rival AI execs of “vibes-based” positioning, rebutting a report on AI leaders' views"
   },
   {
@@ -34,59 +34,8 @@
    "published_at": "2026-11-25T19:38:35Z",
    "text": "I've joined OpenAI! I'm very proud of my time at Anthropic, and I'll continue to root for my former colleagues. Both companies have important roles to play in the future. There is a tremendous amount of work ahead of us to bring AI to the world, and it will demand the very best…",
    "author_name": "Thariq",
-   "likes": 30761,
+   "likes": 30983,
    "story": "Thariq Shihipar joins OpenAI after leaving Anthropic in October, saying he felt he could “personally contribute the most” to bringing AI to the world at OpenAI"
-  },
-  {
-   "title": "Sources: leading AI labs are sitting on major, unreleased algorithmic breakthroughs that could brea…",
-   "url": "https://scottaaronson.blog/?p=10379",
-   "source": "Scott Aaronson / Shtetl-Opt…",
-   "published_at": "2026-11-26T09:51:41Z",
-   "text": "Sources: leading AI labs are sitting on major, unreleased algorithmic breakthroughs that could break deployed cryptosystems, but their exact nature is unknown. I feel like my previous posts (and post titles), and podcasts, and talks, have failed to do full justice to the magnitude of what's now happening, so I'm trying again.",
-   "via": "Techmeme"
-  },
-  {
-   "title": "AI made self-hosting fun again",
-   "url": "https://janlukas.blog/posts/ai-self-hosting",
-   "source": "Hacker News",
-   "published_at": "2026-11-26T21:47:45Z",
-   "text": "249 points and 142 comments on Hacker News.",
-   "points": 249,
-   "discussion": "https://news.ycombinator.com/item?id=50660180"
-  },
-  {
-   "title": "We made a billing mistake at launch of GPT-6.2 that incorrectly discounted GPT-6.2 Astra and Sol us…",
-   "url": "https://x.com/thsottiaux/status/2125784147889393806",
-   "source": "𝕏 @thsottiaux",
-   "published_at": "2026-11-26T02:50:10Z",
-   "text": "We made a billing mistake at launch of GPT-6.2 that incorrectly discounted GPT-6.2 Astra and Sol usage for most users. We’ve fixed this now, so the same work will use more of your plan’s usage allowance. Comparing to last week, you will reach your limits 40% faster on GPT-6.2…",
-   "author_name": "Tibo",
-   "likes": 18063,
-   "story": "OpenAI rolls out its merged ChatGPT Chat and Work tabs, with a shared usage meter, to a small group of Pro users, saying heavy users may hit their limits sooner"
-  },
-  {
-   "title": "Three LLM inflection points in twelve months",
-   "url": "https://simonwillison.net/2026/Nov/24/llm-inflection-points/",
-   "source": "Simon Willison's weblog",
-   "published_at": "2026-11-24T23:02:07Z",
-   "text": "I gave a keynote at the AI Engineer Code Summit a couple of weeks ago, constructed around the idea that there have been three significant inflection points in the abilities of LLMs and coding agents in the past twelve months. Here's the video of the talk. In this post I'm going to pull out the major inflection point theme and interrogate it more deeply. Coding agents in November 2025 Today, November 24th 2026, is the one year anniversary of the release of Claude Opus 4.5 . With hindsight, this was a consequential model."
-  },
-  {
-   "title": "Sources: SAP is preparing a plan to eliminate at least 10,000 positions, or 9% of its staff globall…",
-   "url": "https://www.bloomberg.com/news/articles/2026-11-26/sap-weighs-cutting-at-least-10-000-positions-in-ai-restructuring",
-   "source": "Christina Kyriasoglou / Blo…",
-   "published_at": "2026-11-26T16:51:40Z",
-   "text": "Sources: SAP is preparing a plan to eliminate at least 10,000 positions, or 9% of its staff globally, to transform its software business for the AI era. SAP SE is preparing a plan to eliminate at least 10,000 positions to transform its software business for the artificial intelligence era …",
-   "via": "Techmeme"
-  },
-  {
-   "title": "AMD-specific fork of llama.cpp",
-   "url": "https://devnull.land/amd-specific-llama-cpp",
-   "source": "Hacker News",
-   "published_at": "2026-11-26T17:11:29Z",
-   "text": "275 points and 64 comments on Hacker News.",
-   "points": 275,
-   "discussion": "https://news.ycombinator.com/item?id=50657265"
   },
   {
    "title": "Sources: Z.ai's 3T-parameter flagship GLM-5.5 missed its November release and could be delayed to Q…",
@@ -97,13 +46,47 @@
    "via": "Techmeme"
   },
   {
-   "title": "Google Will Make AI Agents Use Its MCP Servers. The Gmail One Can't Send Email",
-   "url": "https://techstackups.com/articles/google-workspace-ai-agents-mcp/",
+   "title": "AI made self-hosting fun again",
+   "url": "https://janlukas.blog/posts/ai-self-hosting",
    "source": "Hacker News",
-   "published_at": "2026-11-26T09:44:23Z",
-   "text": "222 points and 199 comments on Hacker News.",
-   "points": 222,
-   "discussion": "https://news.ycombinator.com/item?id=50653477"
+   "published_at": "2026-11-26T21:47:45Z",
+   "text": "392 points and 212 comments on Hacker News.",
+   "points": 392,
+   "discussion": "https://news.ycombinator.com/item?id=50660180"
+  },
+  {
+   "title": "Scott Aaronson on his blog. I have also heard this. In fact, this rumor has persisted for about ten…",
+   "url": "https://x.com/AndrewCurran_/status/2125589468786909510",
+   "source": "𝕏 @AndrewCurran_",
+   "published_at": "2026-11-25T13:56:35Z",
+   "text": "Scott Aaronson on his blog. I have also heard this. In fact, this rumor has persisted for about ten days, about both Anthropic and OpenAI. Considering how closely their recent math results have mirrored each other, if one has it, they probably both do. This would crack RSA.",
+   "author_name": "Andrew Curran",
+   "likes": 3832,
+   "story": "Sources: leading AI labs are sitting on major, unreleased algorithmic breakthroughs that could break deployed cryptosystems, but their exact nature is unknown"
+  },
+  {
+   "title": "Three LLM inflection points in twelve months",
+   "url": "https://simonwillison.net/2026/Nov/24/llm-inflection-points/",
+   "source": "Simon Willison's weblog",
+   "published_at": "2026-11-24T23:02:07Z",
+   "text": "I gave a keynote at the AI Engineer Code Summit a couple of weeks ago, constructed around the idea that there have been three significant inflection points in the abilities of LLMs and coding agents in the past twelve months. Here's the video of the talk. In this post I'm going to pull out the major inflection point theme and interrogate it more deeply. Coding agents in November 2025 Today, November 24th 2026, is the one year anniversary of the release of Claude Opus 4.5 . With hindsight, this was a consequential model."
+  },
+  {
+   "title": "Sources: Nvidia has told partners like Dell and Supermicro to halt server shipments to Malaysia, Si…",
+   "url": "https://www.ft.com/content/7838a715-07d4-4605-aa60-21f5af2b2370?accessToken=zwAAAaKuNQQ-lc82jEUmoM5JUdOoR_A5rypRr894OKcVB9RGBdOqYCH1rysjcM8_V3g53u1A9NOvn7-PtUiQ488yW5PWvC5N09OZQc9GiKyhHdO5lhOroTBLn9OMFcQdt82IlAE.MEUCIAPJOFlcs0Bojv5ln7BmjmdLTj5dPHWXAdsn-FuOch_SAiEA5Eu4HIM2_h5rJDnldWxSlTi5axDZdg9vO7b_UplS1Nk&segmentId=7d4bcc2e-e664-92ba-62e3-5590579f1902",
+   "source": "Financial Times",
+   "published_at": "2026-11-26T05:46:04Z",
+   "text": "Sources: Nvidia has told partners like Dell and Supermicro to halt server shipments to Malaysia, Singapore, Thailand, and Indonesia amid new US export controls. Move comes as US steps up export controls to prevent Chinese access to AI computing power — Nvidia has told its manufacturing partners …",
+   "via": "Techmeme"
+  },
+  {
+   "title": "AMD-specific fork of llama.cpp",
+   "url": "https://devnull.land/amd-specific-llama-cpp",
+   "source": "Hacker News",
+   "published_at": "2026-11-26T17:11:29Z",
+   "text": "300 points and 73 comments on Hacker News.",
+   "points": 300,
+   "discussion": "https://news.ycombinator.com/item?id=50657265"
   },
   {
    "title": "Microsoft says state-backed hacking groups in China and North Korea, including Salt Typhoon, have a…",
@@ -114,20 +97,37 @@
    "via": "Techmeme"
   },
   {
+   "title": "Google Will Make AI Agents Use Its MCP Servers. The Gmail One Can't Send Email",
+   "url": "https://techstackups.com/articles/google-workspace-ai-agents-mcp/",
+   "source": "Hacker News",
+   "published_at": "2026-11-26T09:44:23Z",
+   "text": "266 points and 224 comments on Hacker News.",
+   "points": 266,
+   "discussion": "https://news.ycombinator.com/item?id=50653477"
+  },
+  {
+   "title": "Bipartisan efforts in Congress to regulate AI are gaining momentum, but they face an uphill climb d…",
+   "url": "https://www.nytimes.com/2026/11/26/us/politics/ai-regulation-congress-nvidia.html",
+   "source": "New York Times",
+   "published_at": "2026-11-27T00:31:09Z",
+   "text": "Bipartisan efforts in Congress to regulate AI are gaining momentum, but they face an uphill climb due to the slow pace of legislative work and turf battles. Members of both parties say they want to tackle artificial intelligence policy, but the slow pace of legislating and turf battles could stand in the way.",
+   "via": "Techmeme"
+  },
+  {
    "title": "OpenAI may be in cost control mode",
    "url": "https://micjm.com/blog/openai-is-in-cost-control-mode/",
    "source": "Hacker News",
    "published_at": "2026-11-26T07:33:12Z",
-   "text": "259 points and 252 comments on Hacker News.",
-   "points": 259,
+   "text": "295 points and 297 comments on Hacker News.",
+   "points": 295,
    "discussion": "https://news.ycombinator.com/item?id=50652527"
   },
   {
-   "title": "A US judge sentences a Florida man to 47 months in prison for using AI to impersonate Kick streamer…",
-   "url": "https://aftermath.site/n3on-impersonator-ai-prison-260000-dollars-kick-stream/",
-   "source": "Nathan Grayson / Aftermath",
-   "published_at": "2026-11-26T22:11:12Z",
-   "text": "A US judge sentences a Florida man to 47 months in prison for using AI to impersonate Kick streamer N3on, defrauding a memecoin's organizers out of ~$260K. What goes around comes around, I suppose. Earlier this year, Kick streamer N3on, a weasly little twig person who spends …",
+   "title": "Dante Security, which has developed a platform for monitoring the activity of AI agents within orga…",
+   "url": "https://www.calcalistech.com/ctechnews/article/h18nob7kml",
+   "source": "Meir Orbach / CTech",
+   "published_at": "2026-11-27T03:16:07Z",
+   "text": "Dante Security, which has developed a platform for monitoring the activity of AI agents within organizations, raised a $10M seed led by NFX. Dante Security is developing a platform that gives organizations visibility into the actions of autonomous AI agents and connects their activity to the employees responsible for them.",
    "via": "Techmeme"
   }
  ],
