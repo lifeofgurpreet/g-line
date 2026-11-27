@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-27T13:36:02Z",
+ "generated_at": "2026-11-27T14:09:16Z",
  "items": [
   {
    "title": "Serial numbers in Chinese filings reveal that Nvidia's restricted Blackwell chips were installed at…",
@@ -30,8 +30,8 @@
    "url": "https://construct22.com/",
    "source": "Hacker News",
    "published_at": "2026-11-27T06:44:34Z",
-   "text": "406 points and 180 comments on Hacker News.",
-   "points": 406,
+   "text": "436 points and 188 comments on Hacker News.",
+   "points": 436,
    "discussion": "https://news.ycombinator.com/item?id=50663595"
   },
   {
@@ -42,6 +42,23 @@
    "text": "I gave a keynote at the AI Engineer Code Summit a couple of weeks ago, constructed around the idea that there have been three significant inflection points in the abilities of LLMs and coding agents in the past twelve months. Here's the video of the talk. In this post I'm going to pull out the major inflection point theme and interrogate it more deeply. Coding agents in November 2025 Today, November 24th 2026, is the one year anniversary of the release of Claude Opus 4.5 . With hindsight, this was a consequential model."
   },
   {
+   "title": "Sources: Z.ai's 3T-parameter flagship GLM-5.5 missed its November release and could be delayed to Q…",
+   "url": "https://www.reuters.com/world/china/us-chip-curbs-distillation-crackdown-threaten-chinese-ai-model-development-2026-11-26/",
+   "source": "Reuters",
+   "published_at": "2026-11-26T11:21:27Z",
+   "text": "Sources: Z.ai's 3T-parameter flagship GLM-5.5 missed its November release and could be delayed to Q1 2027 or later due to US rules and labs' distillation curbs. China's Z.AI has fallen behind schedule on its next flagship AI model, while rival Moonshot AI expects the interval between major releases …",
+   "via": "Techmeme"
+  },
+  {
+   "title": "AI made self-hosting fun again",
+   "url": "https://janlukas.blog/posts/ai-self-hosting",
+   "source": "Hacker News",
+   "published_at": "2026-11-26T21:47:45Z",
+   "text": "863 points and 420 comments on Hacker News.",
+   "points": 863,
+   "discussion": "https://news.ycombinator.com/item?id=50660180"
+  },
+  {
    "title": "A look at proposals for vertical data centers, often the only option where land is limited in place…",
    "url": "https://www.nytimes.com/2026/11/26/business/energy-environment/vertical-data-center-kansas-city.html",
    "source": "Tiffany Hsu / New York Times",
@@ -50,29 +67,12 @@
    "via": "Techmeme"
   },
   {
-   "title": "AI made self-hosting fun again",
-   "url": "https://janlukas.blog/posts/ai-self-hosting",
-   "source": "Hacker News",
-   "published_at": "2026-11-26T21:47:45Z",
-   "text": "834 points and 409 comments on Hacker News.",
-   "points": 834,
-   "discussion": "https://news.ycombinator.com/item?id=50660180"
-  },
-  {
-   "title": "Microsoft says state-backed hacking groups in China and North Korea, including Salt Typhoon, have a…",
-   "url": "https://therecord.media/microsoft-china-salt-typhoon-using-artex-ai-tool",
-   "source": "Jonathan Greig / The Record",
-   "published_at": "2026-11-26T06:01:52Z",
-   "text": "Microsoft says state-backed hacking groups in China and North Korea, including Salt Typhoon, have added AI penetration testing tool ARTEX to their arsenals",
-   "via": "Techmeme"
-  },
-  {
    "title": "Claude sabotaging SOTA ML research tasks",
    "url": "https://twitter.com/RealAstropulse/status/2126119408997466389",
    "source": "Hacker News",
    "published_at": "2026-11-27T08:28:08Z",
-   "text": "158 points and 101 comments on Hacker News.",
-   "points": 158,
+   "text": "163 points and 103 comments on Hacker News.",
+   "points": 163,
    "discussion": "https://news.ycombinator.com/item?id=50664325"
   },
   {
@@ -88,8 +88,8 @@
    "url": "https://devnull.land/amd-specific-llama-cpp",
    "source": "Hacker News",
    "published_at": "2026-11-26T17:11:29Z",
-   "text": "392 points and 96 comments on Hacker News.",
-   "points": 392,
+   "text": "400 points and 97 comments on Hacker News.",
+   "points": 400,
    "discussion": "https://news.ycombinator.com/item?id=50657265"
   },
   {
@@ -101,14 +101,6 @@
    "via": "Techmeme"
   },
   {
-   "title": "A US judge sentences a Florida man to 47 months in prison for using AI to impersonate Kick streamer…",
-   "url": "https://aftermath.site/n3on-impersonator-ai-prison-260000-dollars-kick-stream/",
-   "source": "Nathan Grayson / Aftermath",
-   "published_at": "2026-11-26T22:11:12Z",
-   "text": "A US judge sentences a Florida man to 47 months in prison for using AI to impersonate Kick streamer N3on, defrauding a memecoin's organizers out of ~$260K. What goes around comes around, I suppose. Earlier this year, Kick streamer N3on, a weasly little twig person who spends …",
-   "via": "Techmeme"
-  },
-  {
    "title": "Bipartisan efforts in Congress to regulate AI are gaining momentum, but they face an uphill climb d…",
    "url": "https://www.nytimes.com/2026/11/26/us/politics/ai-regulation-congress-nvidia.html",
    "source": "New York Times",
@@ -117,11 +109,19 @@
    "via": "Techmeme"
   },
   {
-   "title": "Avicena, which links AI chips with microLEDs instead of lasers, raised a $100M+ Series C led by Int…",
-   "url": "https://thenextweb.com/news/avicena-100m-series-c-microled-optical-interconnects-ai",
-   "source": "Cristian Dina / The Next Web",
-   "published_at": "2026-11-26T15:51:35Z",
-   "text": "Avicena, which links AI chips with microLEDs instead of lasers, raised a $100M+ Series C led by Intervest, with participation from SK Hynix, Samsung, and AMD. SK hynix, Samsung and AMD's venture arms joined the Series C. New chief executive Kevin Pope plans to bring the first LightBundle product to market next year.",
+   "title": "A US judge sentences a Florida man to 47 months in prison for using AI to impersonate Kick streamer…",
+   "url": "https://aftermath.site/n3on-impersonator-ai-prison-260000-dollars-kick-stream/",
+   "source": "Nathan Grayson / Aftermath",
+   "published_at": "2026-11-26T22:11:12Z",
+   "text": "A US judge sentences a Florida man to 47 months in prison for using AI to impersonate Kick streamer N3on, defrauding a memecoin's organizers out of ~$260K. What goes around comes around, I suppose. Earlier this year, Kick streamer N3on, a weasly little twig person who spends …",
+   "via": "Techmeme"
+  },
+  {
+   "title": "Texas resumes data center permitting, approving permits for SpaceX's $24B gas power plant, ahead of…",
+   "url": "https://www.ft.com/content/e0a1bf7a-7c28-4a20-8ca8-86dc7d5097b3",
+   "source": "Stephanie Findlay / Financi…",
+   "published_at": "2026-11-26T13:46:14Z",
+   "text": "Texas resumes data center permitting, approving permits for SpaceX's $24B gas power plant, ahead of Democratic Governor Gina Hinojosa taking office in January",
    "via": "Techmeme"
   }
  ],
