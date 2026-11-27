@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-27T19:53:57Z",
+ "generated_at": "2026-11-27T20:26:35Z",
  "items": [
   {
    "title": "Serial numbers in Chinese filings reveal that Nvidia's restricted Blackwell chips were installed at…",
@@ -26,13 +26,13 @@
    "via": "Techmeme"
   },
   {
-   "title": "I'm Scared of AI",
-   "url": "https://thesoapbox.email/archive/3",
+   "title": "Michael Nielsen took down his book on neural nets",
+   "url": "https://twitter.com/michael_nielsen/status/2126359767362748777",
    "source": "Hacker News",
-   "published_at": "2026-11-27T17:45:31Z",
-   "text": "180 points and 192 comments on Hacker News.",
-   "points": 180,
-   "discussion": "https://news.ycombinator.com/item?id=50669561"
+   "published_at": "2026-11-27T19:31:01Z",
+   "text": "96 points and 67 comments on Hacker News.",
+   "points": 96,
+   "discussion": "https://news.ycombinator.com/item?id=50670757"
   },
   {
    "title": "Three LLM inflection points in twelve months",
@@ -50,13 +50,13 @@
    "via": "Techmeme"
   },
   {
-   "title": "GPT 6.2 Astra Solves a Historical Mystery",
-   "url": "https://generativehistory.substack.com/p/gpt-62-astra-solves-a-historical",
+   "title": "Group chat where your AI talks behind your back",
+   "url": "https://construct22.com/",
    "source": "Hacker News",
-   "published_at": "2026-11-27T15:03:17Z",
-   "text": "160 points and 64 comments on Hacker News.",
-   "points": 160,
-   "discussion": "https://news.ycombinator.com/item?id=50667744"
+   "published_at": "2026-11-27T06:44:34Z",
+   "text": "628 points and 266 comments on Hacker News.",
+   "points": 628,
+   "discussion": "https://news.ycombinator.com/item?id=50663595"
   },
   {
    "title": "SAP confirms a cybersecurity incident; report: hackers obtained its staffers' authentication tokens…",
@@ -67,13 +67,30 @@
    "via": "Techmeme"
   },
   {
-   "title": "Group chat where your AI talks behind your back",
-   "url": "https://construct22.com/",
+   "title": "Claude sabotaging ML research tasks?",
+   "url": "https://twitter.com/RealAstropulse/status/2126119408997466389",
    "source": "Hacker News",
-   "published_at": "2026-11-27T06:44:34Z",
-   "text": "619 points and 262 comments on Hacker News.",
-   "points": 619,
-   "discussion": "https://news.ycombinator.com/item?id=50663595"
+   "published_at": "2026-11-27T08:28:08Z",
+   "text": "446 points and 229 comments on Hacker News.",
+   "points": 446,
+   "discussion": "https://news.ycombinator.com/item?id=50664325"
+  },
+  {
+   "title": "Q&A with AI researchers Ege Erdil and Daniel Kokotajlo on the odds of an intelligence explosion bef…",
+   "url": "https://www.dwarkesh.com/p/daniel-kokotajlo-ege-erdil",
+   "source": "Dwarkesh Patel / Dwarkesh P…",
+   "published_at": "2026-11-27T20:15:42Z",
+   "text": "Q&A with AI researchers Ege Erdil and Daniel Kokotajlo on the odds of an intelligence explosion before 2029, pausing AI, the US antagonizing China, and more. “If we pause now, people still won't understand what's at stake.” — New podcast episode between Ege Erdil and Daniel Kokotajlo.",
+   "via": "Techmeme"
+  },
+  {
+   "title": "AI made self-hosting fun again",
+   "url": "https://janlukas.blog/posts/ai-self-hosting",
+   "source": "Hacker News",
+   "published_at": "2026-11-26T21:47:45Z",
+   "text": "1034 points and 489 comments on Hacker News.",
+   "points": 1034,
+   "discussion": "https://news.ycombinator.com/item?id=50660180"
   },
   {
    "title": "Interviews with Huawei CEO Ren Zhengfei and others on how Trump's restrictions pushed Huawei toward…",
@@ -82,15 +99,6 @@
    "published_at": "2026-11-27T14:20:49Z",
    "text": "Interviews with Huawei CEO Ren Zhengfei and others on how Trump's restrictions pushed Huawei toward self-reliance, making it central to China's AI ambitions. As China's access to Nvidia's advanced chips shrinks, Huawei is becoming increasingly indispensable to Beijing despite a wide technological gap with its American rival.",
    "via": "Techmeme"
-  },
-  {
-   "title": "Claude sabotaging ML research tasks?",
-   "url": "https://twitter.com/RealAstropulse/status/2126119408997466389",
-   "source": "Hacker News",
-   "published_at": "2026-11-27T08:28:08Z",
-   "text": "424 points and 216 comments on Hacker News.",
-   "points": 424,
-   "discussion": "https://news.ycombinator.com/item?id=50664325"
   },
   {
    "title": "The CMA says Meta made changes to Muse's ToS in the UK to reflect the country's consumer law; the t…",
@@ -114,14 +122,6 @@
    "source": "Tiffany Hsu / New York Times",
    "published_at": "2026-11-27T10:26:46Z",
    "text": "A look at proposals for vertical data centers, often the only option where land is limited in places like Taiwan; Kansas City recently rejected a 20-story tower. The facilities that power A.I. and other big data needs are in high demand but widely despised. Some developers are trying to build them up instead of out.",
-   "via": "Techmeme"
-  },
-  {
-   "title": "Dante Security, which has developed a platform for monitoring the activity of AI agents within orga…",
-   "url": "https://www.calcalistech.com/ctechnews/article/h18nob7kml",
-   "source": "Meir Orbach / CTech",
-   "published_at": "2026-11-27T03:16:07Z",
-   "text": "Dante Security, which has developed a platform for monitoring the activity of AI agents within organizations, raised a $10M seed led by NFX",
    "via": "Techmeme"
   }
  ],
