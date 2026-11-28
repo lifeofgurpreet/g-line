@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-28T04:29:10Z",
+ "generated_at": "2026-11-28T05:01:09Z",
  "items": [
   {
    "title": "Serial numbers in Chinese filings reveal that Nvidia's restricted Blackwell chips were installed at…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-27T11:46:52Z",
    "text": "I just had Neon audit our codebase for subtle sabotage by Anthropic models. It found Claude silently added rules to ignore users' explicit skin-tone preferences in our attraction model and it intentionally sabotaged our IQ estimation model. Silently imposing your ideology on…",
    "author_name": "Jake Kozloski",
-   "likes": 26514,
+   "likes": 26813,
    "story": "Some users claim Claude is silently sabotaging projects, especially those involving ML work, but it's hard to prove because models are built to be proactive"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-11-27T17:14:11Z",
    "text": "This makes me think what happened was they were using the project Daybreak/Glasswing versions of Mythos or Astra to harden things up in preparation, and while doing so the model said 'oh wow, by the way, you guys have been hacked.'",
    "author_name": "Andrew Curran",
-   "likes": 1569,
+   "likes": 1588,
    "story": "Sources: the US Air Force recently discovered a breach of Cloud One, which combines Microsoft, Amazon, Oracle, and Google clouds to power Air Force applications"
   },
   {
@@ -46,13 +46,13 @@
    "via": "Techmeme"
   },
   {
-   "title": "Michael Nielsen took down his book on neural nets",
-   "url": "https://neuralnetworksanddeeplearning.com/",
+   "title": "Google's DeepCrossAttention achieves comparable model quality up to 3x faster",
+   "url": "https://research.google/blog/supercharging-transformer-residual-connections/",
    "source": "Hacker News",
-   "published_at": "2026-11-27T19:31:01Z",
-   "text": "442 points and 277 comments on Hacker News.",
-   "points": 442,
-   "discussion": "https://news.ycombinator.com/item?id=50670757"
+   "published_at": "2026-11-27T23:06:29Z",
+   "text": "230 points and 80 comments on Hacker News.",
+   "points": 230,
+   "discussion": "https://news.ycombinator.com/item?id=50672565"
   },
   {
    "title": "Q&A with AI researchers Ege Erdil and Daniel Kokotajlo on the odds of an intelligence explosion bef…",
@@ -63,13 +63,13 @@
    "via": "Techmeme"
   },
   {
-   "title": "Woman evicted after landlord's AI assistant told her she could delay rent",
-   "url": "https://drmahfouz.substack.com/p/woman-evicted-after-landlords-ai",
+   "title": "Michael Nielsen took down his book on neural nets",
+   "url": "https://neuralnetworksanddeeplearning.com/",
    "source": "Hacker News",
-   "published_at": "2026-11-28T01:32:56Z",
-   "text": "104 points and 81 comments on Hacker News.",
-   "points": 104,
-   "discussion": "https://news.ycombinator.com/item?id=50673521"
+   "published_at": "2026-11-27T19:31:01Z",
+   "text": "450 points and 284 comments on Hacker News.",
+   "points": 450,
+   "discussion": "https://news.ycombinator.com/item?id=50670757"
   },
   {
    "title": "SAP confirms a cybersecurity incident; report: hackers obtained its staffers' authentication tokens…",
@@ -80,30 +80,13 @@
    "via": "Techmeme"
   },
   {
-   "title": "Google's DeepCrossAttention achieves comparable model quality up to 3x faster",
-   "url": "https://research.google/blog/supercharging-transformer-residual-connections/",
+   "title": "Woman evicted after landlord's AI assistant told her she could delay rent",
+   "url": "https://drmahfouz.substack.com/p/woman-evicted-after-landlords-ai",
    "source": "Hacker News",
-   "published_at": "2026-11-27T23:06:29Z",
-   "text": "208 points and 72 comments on Hacker News.",
-   "points": 208,
-   "discussion": "https://news.ycombinator.com/item?id=50672565"
-  },
-  {
-   "title": "Sources: SAP is preparing a plan to eliminate at least 10,000 positions, or 9% of its staff globall…",
-   "url": "https://www.bloomberg.com/news/articles/2026-11-26/sap-weighs-cutting-at-least-10-000-positions-in-ai-restructuring?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc5NTc2NzIxOCwiZXhwIjoxNzk2MzcyMDE4LCJhcnRpY2xlSWQiOiJUUDNNNTNUOTZPU0kwMCIsImJjb25uZWN0SWQiOiIyQjM1RjE2RDc1RTU0RTUxQjJFOEEyQkYyQjZDRDhCRiJ9.hYzC51tOUhg7VeYouYj5-6c97qgB7NNSSimalKOpqHI",
-   "source": "Christina Kyriasoglou / Blo…",
-   "published_at": "2026-11-26T16:51:40Z",
-   "text": "Sources: SAP is preparing a plan to eliminate at least 10,000 positions, or 9% of its staff globally, to transform its software business for the AI era",
-   "via": "Techmeme"
-  },
-  {
-   "title": "States sue SpaceX to stop Grok from generating child sex images, revenge porn",
-   "url": "https://www.oag.state.va.us/media-center/news-releases/jay-jones/3162-attorneys-general-jones-and-rayfield-file-suit-against-spacex-parent-company-of-x-xai-and-grok-over-creation-and-promotion-of-child-exploitation-and-non-consensual-images-on-platform",
-   "source": "Hacker News",
-   "published_at": "2026-11-27T19:42:25Z",
-   "text": "314 points and 174 comments on Hacker News.",
-   "points": 314,
-   "discussion": "https://news.ycombinator.com/item?id=50670855"
+   "published_at": "2026-11-28T01:32:56Z",
+   "text": "117 points and 88 comments on Hacker News.",
+   "points": 117,
+   "discussion": "https://news.ycombinator.com/item?id=50673521"
   },
   {
    "title": "Interviews with Huawei CEO Ren Zhengfei and others on how Trump's restrictions pushed Huawei toward…",
@@ -112,6 +95,15 @@
    "published_at": "2026-11-27T14:20:49Z",
    "text": "Interviews with Huawei CEO Ren Zhengfei and others on how Trump's restrictions pushed Huawei toward self-reliance, making it central to China's AI ambitions. As China's access to Nvidia's advanced chips shrinks, Huawei is becoming increasingly indispensable to Beijing despite a wide technological gap with its American rival.",
    "via": "Techmeme"
+  },
+  {
+   "title": "States sue SpaceX to stop Grok from generating child sex images, revenge porn",
+   "url": "https://www.oag.state.va.us/media-center/news-releases/jay-jones/3162-attorneys-general-jones-and-rayfield-file-suit-against-spacex-parent-company-of-x-xai-and-grok-over-creation-and-promotion-of-child-exploitation-and-non-consensual-images-on-platform",
+   "source": "Hacker News",
+   "published_at": "2026-11-27T19:42:25Z",
+   "text": "321 points and 178 comments on Hacker News.",
+   "points": 321,
+   "discussion": "https://news.ycombinator.com/item?id=50670855"
   },
   {
    "title": "The CMA says Meta made changes to Muse's ToS in the UK to reflect the country's consumer law; the t…",
@@ -127,6 +119,14 @@
    "source": "Alexander Weber / Bloomberg",
    "published_at": "2026-11-27T18:16:02Z",
    "text": "European Central Bank survey: 44% of employed EU consumers reported using AI weekly at work in August, on par with US peers; 18% used it daily, above US levels. Euro-area workers are turning to artificial intelligence at a similar rate as their peers in the US, though obstacles remain …",
+   "via": "Techmeme"
+  },
+  {
+   "title": "A US judge sentences a Florida man to 47 months in prison for using AI to impersonate Kick streamer…",
+   "url": "https://aftermath.site/n3on-impersonator-ai-prison-260000-dollars-kick-stream/",
+   "source": "Nathan Grayson / Aftermath",
+   "published_at": "2026-11-26T22:11:12Z",
+   "text": "A US judge sentences a Florida man to 47 months in prison for using AI to impersonate Kick streamer N3on, defrauding a memecoin's organizers out of ~$260K",
    "via": "Techmeme"
   }
  ],
