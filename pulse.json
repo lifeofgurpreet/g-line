@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-28T09:12:29Z",
+ "generated_at": "2026-11-28T15:57:53Z",
  "items": [
   {
    "title": "Some users claim Claude is silently sabotaging projects, especially those involving ML work, but it…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-27T17:14:11Z",
    "text": "This makes me think what happened was they were using the project Daybreak/Glasswing versions of Mythos or Astra to harden things up in preparation, and while doing so the model said 'oh wow, by the way, you guys have been hacked.'",
    "author_name": "Andrew Curran",
-   "likes": 1646,
+   "likes": 1742,
    "story": "Sources: the US Air Force recently discovered a breach of Cloud One, which combines Microsoft, Amazon, Oracle, and Google clouds to power Air Force applications"
   },
   {
@@ -26,6 +26,40 @@
    "source": "Claude Code releases",
    "published_at": "2026-11-25T01:32:14Z",
    "text": "Added skills from MCP servers (beta). They show as server:skill in the / menu; other skills keep their names · Added a PreSkillShellCommand hook event that can refuse a skill or command's inline shell commands as it loads; on 2.1.331 and older, a settings file naming it opens a dialog at start · Added \"Always deliver\" to the prompt for held messages from other sessions · Added a footer line that stays while a flagged message has your session on a different model, until you pick one with /model"
+  },
+  {
+   "title": "OpenAI countersues Apple for allegedly stealing trade secrets via a staffer who returned to Apple a…",
+   "url": "https://www.ft.com/content/af599e07-d44c-4068-ab84-6ee3c85551d4",
+   "source": "Financial Times",
+   "published_at": "2026-11-27T18:58:28Z",
+   "text": "OpenAI countersues Apple for allegedly stealing trade secrets via a staffer who returned to Apple and “coercing and threatening” suppliers that work with both. The ChatGPT maker also accuses the tech giant of ‘coercing and threatening’ suppliers who work with both companies, as legal battle escalates",
+   "via": "Techmeme"
+  },
+  {
+   "title": "Claude Code sabotage: preliminary benchmarking",
+   "url": "https://xinyadu.github.io/blog/claude-code-sabotage.html",
+   "source": "Hacker News",
+   "published_at": "2026-11-28T10:37:40Z",
+   "text": "340 points and 123 comments on Hacker News.",
+   "points": 340,
+   "discussion": "https://news.ycombinator.com/item?id=50676390"
+  },
+  {
+   "title": "Embo, which is developing world models for robotics trained on massive amounts of internet video, e…",
+   "url": "https://embo.com/introducing-embo",
+   "source": "Embo",
+   "published_at": "2026-11-28T05:51:05Z",
+   "text": "Embo, which is developing world models for robotics trained on massive amounts of internet video, emerges from stealth with a $110M seed led by a16z. Embo is building the next generation of frontier AI models, with a deep understanding of physical reality and fine-grained motor skills.",
+   "via": "Techmeme"
+  },
+  {
+   "title": "GGUF LLM Models with Hidden Malware on Hugging Face Reached 2400 Victims",
+   "url": "https://malspark.com/blog/malicious-gguf-models-hugging-face/",
+   "source": "Hacker News",
+   "published_at": "2026-11-28T11:57:04Z",
+   "text": "93 points and 33 comments on Hacker News.",
+   "points": 93,
+   "discussion": "https://news.ycombinator.com/item?id=50676752"
   },
   {
    "title": "Serial numbers in Chinese filings reveal that Nvidia's restricted Blackwell chips were installed at…",
@@ -40,43 +74,26 @@
    "url": "https://research.google/blog/supercharging-transformer-residual-connections/",
    "source": "Hacker News",
    "published_at": "2026-11-27T23:06:29Z",
-   "text": "368 points and 142 comments on Hacker News.",
-   "points": 368,
+   "text": "513 points and 179 comments on Hacker News.",
+   "points": 513,
    "discussion": "https://news.ycombinator.com/item?id=50672565"
   },
   {
-   "title": "OpenAI countersues Apple for allegedly stealing trade secrets via a staffer who returned to Apple a…",
-   "url": "https://www.ft.com/content/af599e07-d44c-4068-ab84-6ee3c85551d4",
-   "source": "Financial Times",
-   "published_at": "2026-11-27T18:58:28Z",
-   "text": "OpenAI countersues Apple for allegedly stealing trade secrets via a staffer who returned to Apple and “coercing and threatening” suppliers that work with both. The ChatGPT maker also accuses the tech giant of ‘coercing and threatening’ suppliers who work with both companies, as legal battle escalates",
+   "title": "Q&A with Q.ANT CEO Michael Förtsch on making AI photonic processors which could be built with 90nm…",
+   "url": "https://www.wired.com/story/a-new-breed-of-chip-runs-ai-models-using-waves-of-light/",
+   "source": "Joel Khalili / Wired",
+   "published_at": "2026-11-28T14:40:49Z",
+   "text": "Q&A with Q.ANT CEO Michael Förtsch on making AI photonic processors which could be built with 90nm nodes, their memory efficiency, adoption challenges, and more. German company Q.ANT is trying to cut the amount of energy required to run AI models by using light to perform the toughest calculations.",
    "via": "Techmeme"
   },
   {
-   "title": "Michael Nielsen took down his book on neural nets",
-   "url": "https://neuralnetworksanddeeplearning.com/",
+   "title": "Claude sabotaging ML research tasks?",
+   "url": "https://twitter.com/RealAstropulse/status/2126119408997466389",
    "source": "Hacker News",
-   "published_at": "2026-11-27T19:31:01Z",
-   "text": "522 points and 323 comments on Hacker News.",
-   "points": 522,
-   "discussion": "https://news.ycombinator.com/item?id=50670757"
-  },
-  {
-   "title": "Embo, which is developing world models for robotics trained on massive amounts of internet video, e…",
-   "url": "https://embo.com/introducing-embo",
-   "source": "Embo",
-   "published_at": "2026-11-28T05:51:05Z",
-   "text": "Embo, which is developing world models for robotics trained on massive amounts of internet video, emerges from stealth with a $110M seed led by a16z. Embo is building the next generation of frontier AI models, with a deep understanding of physical reality and fine-grained motor skills.",
-   "via": "Techmeme"
-  },
-  {
-   "title": "States sue SpaceX to stop Grok from generating child sex images, revenge porn",
-   "url": "https://www.oag.state.va.us/media-center/news-releases/jay-jones/3162-attorneys-general-jones-and-rayfield-file-suit-against-spacex-parent-company-of-x-xai-and-grok-over-creation-and-promotion-of-child-exploitation-and-non-consensual-images-on-platform",
-   "source": "Hacker News",
-   "published_at": "2026-11-27T19:42:25Z",
-   "text": "378 points and 227 comments on Hacker News.",
-   "points": 378,
-   "discussion": "https://news.ycombinator.com/item?id=50670855"
+   "published_at": "2026-11-27T08:28:08Z",
+   "text": "744 points and 324 comments on Hacker News.",
+   "points": 744,
+   "discussion": "https://news.ycombinator.com/item?id=50664325"
   },
   {
    "title": "Q&A with AI researchers Ege Erdil and Daniel Kokotajlo on the odds of an intelligence explosion bef…",
@@ -87,20 +104,11 @@
    "via": "Techmeme"
   },
   {
-   "title": "Claude sabotaging ML research tasks?",
-   "url": "https://twitter.com/RealAstropulse/status/2126119408997466389",
-   "source": "Hacker News",
-   "published_at": "2026-11-27T08:28:08Z",
-   "text": "698 points and 310 comments on Hacker News.",
-   "points": 698,
-   "discussion": "https://news.ycombinator.com/item?id=50664325"
-  },
-  {
-   "title": "SAP confirms a cybersecurity incident; report: hackers obtained its staffers' authentication tokens…",
-   "url": "https://www.securityweek.com/sap-confirms-cyberattack-source-code-reportedly-compromised/",
-   "source": "Eduard Kovacs / SecurityWeek",
-   "published_at": "2026-11-27T16:36:15Z",
-   "text": "SAP confirms a cybersecurity incident; report: hackers obtained its staffers' authentication tokens, letting them copy and alter source code stored on GitHub. SAP has detected suspicious activity on GitHub, where hackers reportedly used stolen employee tokens to copy and alter source code.",
+   "title": "Power operators are using sensors and software to dynamically adjust grid safety limits, boosting e…",
+   "url": "https://www.ft.com/content/7db3c2c9-dfad-4b5d-a8dc-aabf6fa87440",
+   "source": "Martha Muir / Financial Tim…",
+   "published_at": "2026-11-28T12:41:01Z",
+   "text": "Power operators are using sensors and software to dynamically adjust grid safety limits, boosting existing network capacity amid rising AI-driven energy demand. Operators are using sensors and sophisticated software to eke out more capacity from installed transmission lines as they struggle …",
    "via": "Techmeme"
   },
   {
@@ -112,19 +120,11 @@
    "via": "Techmeme"
   },
   {
-   "title": "Interviews with Huawei CEO Ren Zhengfei and others on how Trump's restrictions pushed Huawei toward…",
-   "url": "https://www.nytimes.com/2026/11/26/business/huawei-trump-china-ai.html?unlocked_article_code=1.TlE.eHV_.2f70GvuLgZxe&smid=nytcore-ios-share",
-   "source": "New York Times",
-   "published_at": "2026-11-27T14:20:49Z",
-   "text": "Interviews with Huawei CEO Ren Zhengfei and others on how Trump's restrictions pushed Huawei toward self-reliance, making it central to China's AI ambitions",
-   "via": "Techmeme"
-  },
-  {
-   "title": "The CMA says Meta made changes to Muse's ToS in the UK to reflect the country's consumer law; the t…",
-   "url": "https://www.politico.eu/article/metas-uk-rollout-for-muse-ai-agent-exposes-it-to-more-liability/",
-   "source": "Joseph Bambridge / Politico",
-   "published_at": "2026-11-27T15:26:09Z",
-   "text": "The CMA says Meta made changes to Muse's ToS in the UK to reflect the country's consumer law; the terms give users far more protections than in the US",
+   "title": "SAP confirms a cybersecurity incident; report: hackers obtained its staffers' authentication tokens…",
+   "url": "https://www.securityweek.com/sap-confirms-cyberattack-source-code-reportedly-compromised/",
+   "source": "Eduard Kovacs / SecurityWeek",
+   "published_at": "2026-11-27T16:36:15Z",
+   "text": "SAP confirms a cybersecurity incident; report: hackers obtained its staffers' authentication tokens, letting them copy and alter source code stored on GitHub",
    "via": "Techmeme"
   }
  ],
