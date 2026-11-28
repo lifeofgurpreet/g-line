@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-28T03:56:36Z",
+ "generated_at": "2026-11-28T04:29:10Z",
  "items": [
   {
    "title": "Serial numbers in Chinese filings reveal that Nvidia's restricted Blackwell chips were installed at…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-27T11:46:52Z",
    "text": "I just had Neon audit our codebase for subtle sabotage by Anthropic models. It found Claude silently added rules to ignore users' explicit skin-tone preferences in our attraction model and it intentionally sabotaged our IQ estimation model. Silently imposing your ideology on…",
    "author_name": "Jake Kozloski",
-   "likes": 26200,
+   "likes": 26514,
    "story": "Some users claim Claude is silently sabotaging projects, especially those involving ML work, but it's hard to prove because models are built to be proactive"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-11-27T17:14:11Z",
    "text": "This makes me think what happened was they were using the project Daybreak/Glasswing versions of Mythos or Astra to harden things up in preparation, and while doing so the model said 'oh wow, by the way, you guys have been hacked.'",
    "author_name": "Andrew Curran",
-   "likes": 1560,
+   "likes": 1569,
    "story": "Sources: the US Air Force recently discovered a breach of Cloud One, which combines Microsoft, Amazon, Oracle, and Google clouds to power Air Force applications"
   },
   {
@@ -50,9 +50,26 @@
    "url": "https://neuralnetworksanddeeplearning.com/",
    "source": "Hacker News",
    "published_at": "2026-11-27T19:31:01Z",
-   "text": "431 points and 269 comments on Hacker News.",
-   "points": 431,
+   "text": "442 points and 277 comments on Hacker News.",
+   "points": 442,
    "discussion": "https://news.ycombinator.com/item?id=50670757"
+  },
+  {
+   "title": "Q&A with AI researchers Ege Erdil and Daniel Kokotajlo on the odds of an intelligence explosion bef…",
+   "url": "https://www.dwarkesh.com/p/daniel-kokotajlo-ege-erdil",
+   "source": "Dwarkesh Patel / Dwarkesh P…",
+   "published_at": "2026-11-27T20:15:42Z",
+   "text": "Q&A with AI researchers Ege Erdil and Daniel Kokotajlo on the odds of an intelligence explosion before 2029, pausing AI, the US antagonizing China, and more. “If we pause now, people still won't understand what's at stake.” — New podcast episode between Ege Erdil and Daniel Kokotajlo.",
+   "via": "Techmeme"
+  },
+  {
+   "title": "Woman evicted after landlord's AI assistant told her she could delay rent",
+   "url": "https://drmahfouz.substack.com/p/woman-evicted-after-landlords-ai",
+   "source": "Hacker News",
+   "published_at": "2026-11-28T01:32:56Z",
+   "text": "104 points and 81 comments on Hacker News.",
+   "points": 104,
+   "discussion": "https://news.ycombinator.com/item?id=50673521"
   },
   {
    "title": "SAP confirms a cybersecurity incident; report: hackers obtained its staffers' authentication tokens…",
@@ -67,8 +84,8 @@
    "url": "https://research.google/blog/supercharging-transformer-residual-connections/",
    "source": "Hacker News",
    "published_at": "2026-11-27T23:06:29Z",
-   "text": "191 points and 64 comments on Hacker News.",
-   "points": 191,
+   "text": "208 points and 72 comments on Hacker News.",
+   "points": 208,
    "discussion": "https://news.ycombinator.com/item?id=50672565"
   },
   {
@@ -80,29 +97,12 @@
    "via": "Techmeme"
   },
   {
-   "title": "Woman evicted after landlord's AI assistant told her she could delay rent",
-   "url": "https://drmahfouz.substack.com/p/woman-evicted-after-landlords-ai",
-   "source": "Hacker News",
-   "published_at": "2026-11-28T01:32:56Z",
-   "text": "85 points and 64 comments on Hacker News.",
-   "points": 85,
-   "discussion": "https://news.ycombinator.com/item?id=50673521"
-  },
-  {
-   "title": "Q&A with AI researchers Ege Erdil and Daniel Kokotajlo on the odds of an intelligence explosion bef…",
-   "url": "https://www.dwarkesh.com/p/daniel-kokotajlo-ege-erdil",
-   "source": "Dwarkesh Patel / Dwarkesh P…",
-   "published_at": "2026-11-27T20:15:42Z",
-   "text": "Q&A with AI researchers Ege Erdil and Daniel Kokotajlo on the odds of an intelligence explosion before 2029, pausing AI, the US antagonizing China, and more. “If we pause now, people still won't understand what's at stake.” — New podcast episode between Ege Erdil and Daniel Kokotajlo.",
-   "via": "Techmeme"
-  },
-  {
    "title": "States sue SpaceX to stop Grok from generating child sex images, revenge porn",
    "url": "https://www.oag.state.va.us/media-center/news-releases/jay-jones/3162-attorneys-general-jones-and-rayfield-file-suit-against-spacex-parent-company-of-x-xai-and-grok-over-creation-and-promotion-of-child-exploitation-and-non-consensual-images-on-platform",
    "source": "Hacker News",
    "published_at": "2026-11-27T19:42:25Z",
-   "text": "305 points and 165 comments on Hacker News.",
-   "points": 305,
+   "text": "314 points and 174 comments on Hacker News.",
+   "points": 314,
    "discussion": "https://news.ycombinator.com/item?id=50670855"
   },
   {
