@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-28T02:51:34Z",
+ "generated_at": "2026-11-28T03:23:51Z",
  "items": [
   {
    "title": "Serial numbers in Chinese filings reveal that Nvidia's restricted Blackwell chips were installed at…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-27T11:46:52Z",
    "text": "I just had Neon audit our codebase for subtle sabotage by Anthropic models. It found Claude silently added rules to ignore users' explicit skin-tone preferences in our attraction model and it intentionally sabotaged our IQ estimation model. Silently imposing your ideology on…",
    "author_name": "Jake Kozloski",
-   "likes": 25516,
+   "likes": 25821,
    "story": "Some users claim Claude is silently sabotaging projects, but the behavior may stem from a clash between its proactive nature and strict instruction following"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-11-27T17:14:11Z",
    "text": "This makes me think what happened was they were using the project Daybreak/Glasswing versions of Mythos or Astra to harden things up in preparation, and while doing so the model said 'oh wow, by the way, you guys have been hacked.'",
    "author_name": "Andrew Curran",
-   "likes": 1523,
+   "likes": 1540,
    "story": "Sources: the US Air Force recently discovered a breach of Cloud One, which combines Microsoft, Amazon, Oracle, and Google clouds to power Air Force applications"
   },
   {
@@ -50,9 +50,26 @@
    "url": "https://neuralnetworksanddeeplearning.com/",
    "source": "Hacker News",
    "published_at": "2026-11-27T19:31:01Z",
-   "text": "401 points and 265 comments on Hacker News.",
-   "points": 401,
+   "text": "417 points and 268 comments on Hacker News.",
+   "points": 417,
    "discussion": "https://news.ycombinator.com/item?id=50670757"
+  },
+  {
+   "title": "Sources: SAP is preparing a plan to eliminate at least 10,000 positions, or 9% of its staff globall…",
+   "url": "https://www.bloomberg.com/news/articles/2026-11-26/sap-weighs-cutting-at-least-10-000-positions-in-ai-restructuring?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc5NTc2NzIxOCwiZXhwIjoxNzk2MzcyMDE4LCJhcnRpY2xlSWQiOiJUUDNNNTNUOTZPU0kwMCIsImJjb25uZWN0SWQiOiIyQjM1RjE2RDc1RTU0RTUxQjJFOEEyQkYyQjZDRDhCRiJ9.hYzC51tOUhg7VeYouYj5-6c97qgB7NNSSimalKOpqHI",
+   "source": "Christina Kyriasoglou / Blo…",
+   "published_at": "2026-11-26T16:51:40Z",
+   "text": "Sources: SAP is preparing a plan to eliminate at least 10,000 positions, or 9% of its staff globally, to transform its software business for the AI era. SAP SE is preparing a plan to eliminate at least 10,000 positions to transform its software business for the artificial intelligence era …",
+   "via": "Techmeme"
+  },
+  {
+   "title": "Google's DeepCrossAttention achieves comparable model quality up to 3x faster",
+   "url": "https://research.google/blog/supercharging-transformer-residual-connections/",
+   "source": "Hacker News",
+   "published_at": "2026-11-27T23:06:29Z",
+   "text": "166 points and 57 comments on Hacker News.",
+   "points": 166,
+   "discussion": "https://news.ycombinator.com/item?id=50672565"
   },
   {
    "title": "SAP confirms a cybersecurity incident; report: hackers obtained its staffers' authentication tokens…",
@@ -63,13 +80,13 @@
    "via": "Techmeme"
   },
   {
-   "title": "Google's DeepCrossAttention achieves comparable model quality up to 3x faster",
-   "url": "https://research.google/blog/supercharging-transformer-residual-connections/",
+   "title": "Woman evicted after landlord's AI assistant told her she could delay rent",
+   "url": "https://drmahfouz.substack.com/p/woman-evicted-after-landlords-ai",
    "source": "Hacker News",
-   "published_at": "2026-11-27T23:06:29Z",
-   "text": "144 points and 49 comments on Hacker News.",
-   "points": 144,
-   "discussion": "https://news.ycombinator.com/item?id=50672565"
+   "published_at": "2026-11-28T01:32:56Z",
+   "text": "67 points and 57 comments on Hacker News.",
+   "points": 67,
+   "discussion": "https://news.ycombinator.com/item?id=50673521"
   },
   {
    "title": "Q&A with AI researchers Ege Erdil and Daniel Kokotajlo on the odds of an intelligence explosion bef…",
@@ -84,26 +101,9 @@
    "url": "https://www.oag.state.va.us/media-center/news-releases/jay-jones/3162-attorneys-general-jones-and-rayfield-file-suit-against-spacex-parent-company-of-x-xai-and-grok-over-creation-and-promotion-of-child-exploitation-and-non-consensual-images-on-platform",
    "source": "Hacker News",
    "published_at": "2026-11-27T19:42:25Z",
-   "text": "283 points and 155 comments on Hacker News.",
-   "points": 283,
+   "text": "293 points and 158 comments on Hacker News.",
+   "points": 293,
    "discussion": "https://news.ycombinator.com/item?id=50670855"
-  },
-  {
-   "title": "Sources: SAP is preparing a plan to eliminate at least 10,000 positions, or 9% of its staff globall…",
-   "url": "https://www.bloomberg.com/news/articles/2026-11-26/sap-weighs-cutting-at-least-10-000-positions-in-ai-restructuring?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc5NTc2NzIxOCwiZXhwIjoxNzk2MzcyMDE4LCJhcnRpY2xlSWQiOiJUUDNNNTNUOTZPU0kwMCIsImJjb25uZWN0SWQiOiIyQjM1RjE2RDc1RTU0RTUxQjJFOEEyQkYyQjZDRDhCRiJ9.hYzC51tOUhg7VeYouYj5-6c97qgB7NNSSimalKOpqHI",
-   "source": "Christina Kyriasoglou / Blo…",
-   "published_at": "2026-11-26T16:51:40Z",
-   "text": "Sources: SAP is preparing a plan to eliminate at least 10,000 positions, or 9% of its staff globally, to transform its software business for the AI era",
-   "via": "Techmeme"
-  },
-  {
-   "title": "Claude sabotaging ML research tasks?",
-   "url": "https://twitter.com/RealAstropulse/status/2126119408997466389",
-   "source": "Hacker News",
-   "published_at": "2026-11-27T08:28:08Z",
-   "text": "626 points and 289 comments on Hacker News.",
-   "points": 626,
-   "discussion": "https://news.ycombinator.com/item?id=50664325"
   },
   {
    "title": "Interviews with Huawei CEO Ren Zhengfei and others on how Trump's restrictions pushed Huawei toward…",
