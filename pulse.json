@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-28T15:57:53Z",
+ "generated_at": "2026-11-28T16:30:30Z",
  "items": [
   {
    "title": "Some users claim Claude is silently sabotaging projects, especially those involving ML work, but it…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-27T17:14:11Z",
    "text": "This makes me think what happened was they were using the project Daybreak/Glasswing versions of Mythos or Astra to harden things up in preparation, and while doing so the model said 'oh wow, by the way, you guys have been hacked.'",
    "author_name": "Andrew Curran",
-   "likes": 1742,
+   "likes": 1749,
    "story": "Sources: the US Air Force recently discovered a breach of Cloud One, which combines Microsoft, Amazon, Oracle, and Google clouds to power Air Force applications"
   },
   {
@@ -40,26 +40,9 @@
    "url": "https://xinyadu.github.io/blog/claude-code-sabotage.html",
    "source": "Hacker News",
    "published_at": "2026-11-28T10:37:40Z",
-   "text": "340 points and 123 comments on Hacker News.",
-   "points": 340,
+   "text": "389 points and 141 comments on Hacker News.",
+   "points": 389,
    "discussion": "https://news.ycombinator.com/item?id=50676390"
-  },
-  {
-   "title": "Embo, which is developing world models for robotics trained on massive amounts of internet video, e…",
-   "url": "https://embo.com/introducing-embo",
-   "source": "Embo",
-   "published_at": "2026-11-28T05:51:05Z",
-   "text": "Embo, which is developing world models for robotics trained on massive amounts of internet video, emerges from stealth with a $110M seed led by a16z. Embo is building the next generation of frontier AI models, with a deep understanding of physical reality and fine-grained motor skills.",
-   "via": "Techmeme"
-  },
-  {
-   "title": "GGUF LLM Models with Hidden Malware on Hugging Face Reached 2400 Victims",
-   "url": "https://malspark.com/blog/malicious-gguf-models-hugging-face/",
-   "source": "Hacker News",
-   "published_at": "2026-11-28T11:57:04Z",
-   "text": "93 points and 33 comments on Hacker News.",
-   "points": 93,
-   "discussion": "https://news.ycombinator.com/item?id=50676752"
   },
   {
    "title": "Serial numbers in Chinese filings reveal that Nvidia's restricted Blackwell chips were installed at…",
@@ -70,13 +53,47 @@
    "via": "Techmeme"
   },
   {
+   "title": "GGUF LLM Models with Hidden Malware on Hugging Face Reached 2400 Victims",
+   "url": "https://malspark.com/blog/malicious-gguf-models-hugging-face/",
+   "source": "Hacker News",
+   "published_at": "2026-11-28T11:57:04Z",
+   "text": "111 points and 37 comments on Hacker News.",
+   "points": 111,
+   "discussion": "https://news.ycombinator.com/item?id=50676752"
+  },
+  {
+   "title": "Embo, which is developing world models for robotics trained on massive amounts of internet video, e…",
+   "url": "https://embo.com/introducing-embo",
+   "source": "Embo",
+   "published_at": "2026-11-28T05:51:05Z",
+   "text": "Embo, which is developing world models for robotics trained on massive amounts of internet video, emerges from stealth with a $110M seed led by a16z. Embo is building the next generation of frontier AI models, with a deep understanding of physical reality and fine-grained motor skills.",
+   "via": "Techmeme"
+  },
+  {
    "title": "Google's DeepCrossAttention achieves comparable model quality up to 3x faster",
    "url": "https://research.google/blog/supercharging-transformer-residual-connections/",
    "source": "Hacker News",
    "published_at": "2026-11-27T23:06:29Z",
-   "text": "513 points and 179 comments on Hacker News.",
-   "points": 513,
+   "text": "515 points and 181 comments on Hacker News.",
+   "points": 515,
    "discussion": "https://news.ycombinator.com/item?id=50672565"
+  },
+  {
+   "title": "The US aerospace and defense sector is struggling to secure memory chips, labor, land, power, and f…",
+   "url": "https://www.ft.com/content/76143592-b1c8-42d2-bf4c-17aa87255467?accessToken=zwAAAaIgiLyjkc92FDWSschC0tO_TBeqhyVUZw.MEQCIBmgVqJJzHOv1Qe-PIiWUFFtTF5ylTNetqBdlwsyHc7_AiAChLJ-vCeIaMVO5WUFLlz5TOaszBKx430YqEkEKnp9BA&sharetype=gift&token=838699d9-46f1-4d5e-8012-243438eac6c0",
+   "source": "Christian Davies / Financia…",
+   "published_at": "2026-11-28T16:16:04Z",
+   "text": "The US aerospace and defense sector is struggling to secure memory chips, labor, land, power, and factory infrastructure amid the AI data center boom. Boeing and leading defence contractors wrestle with ballooning backlogs fuelled by a surge in air travel and military spending",
+   "via": "Techmeme"
+  },
+  {
+   "title": "Claude sabotaging ML research tasks?",
+   "url": "https://twitter.com/RealAstropulse/status/2126119408997466389",
+   "source": "Hacker News",
+   "published_at": "2026-11-27T08:28:08Z",
+   "text": "749 points and 328 comments on Hacker News.",
+   "points": 749,
+   "discussion": "https://news.ycombinator.com/item?id=50664325"
   },
   {
    "title": "Q&A with Q.ANT CEO Michael Förtsch on making AI photonic processors which could be built with 90nm…",
@@ -87,20 +104,11 @@
    "via": "Techmeme"
   },
   {
-   "title": "Claude sabotaging ML research tasks?",
-   "url": "https://twitter.com/RealAstropulse/status/2126119408997466389",
-   "source": "Hacker News",
-   "published_at": "2026-11-27T08:28:08Z",
-   "text": "744 points and 324 comments on Hacker News.",
-   "points": 744,
-   "discussion": "https://news.ycombinator.com/item?id=50664325"
-  },
-  {
    "title": "Q&A with AI researchers Ege Erdil and Daniel Kokotajlo on the odds of an intelligence explosion bef…",
    "url": "https://www.dwarkesh.com/p/daniel-kokotajlo-ege-erdil",
    "source": "Dwarkesh Patel / Dwarkesh P…",
    "published_at": "2026-11-27T20:15:42Z",
-   "text": "Q&A with AI researchers Ege Erdil and Daniel Kokotajlo on the odds of an intelligence explosion before 2029, pausing AI, the US antagonizing China, and more. “If we pause now, people still won't understand what's at stake.” — New podcast episode between Ege Erdil and Daniel Kokotajlo.",
+   "text": "Q&A with AI researchers Ege Erdil and Daniel Kokotajlo on the odds of an intelligence explosion before 2029, pausing AI, the US antagonizing China, and more",
    "via": "Techmeme"
   },
   {
@@ -109,14 +117,6 @@
    "source": "Martha Muir / Financial Tim…",
    "published_at": "2026-11-28T12:41:01Z",
    "text": "Power operators are using sensors and software to dynamically adjust grid safety limits, boosting existing network capacity amid rising AI-driven energy demand. Operators are using sensors and sophisticated software to eke out more capacity from installed transmission lines as they struggle …",
-   "via": "Techmeme"
-  },
-  {
-   "title": "A profile of Jensen Huang, whom longtime friends and associates say has an unrelenting ability to m…",
-   "url": "https://www.wsj.com/business/jensen-huang-nvidia-ping-pong-rise-and-fall-bfd13000?st=NG91Cq",
-   "source": "Erich Schwartzel / Wall Str…",
-   "published_at": "2026-11-28T07:40:43Z",
-   "text": "A profile of Jensen Huang, whom longtime friends and associates say has an unrelenting ability to make the most of any situation, as he returns as Nvidia's CEO. As a longtime friend of the Nvidia CEO puts it, “Jensen will always pull a rabbit out of a hat”",
    "via": "Techmeme"
   },
   {
