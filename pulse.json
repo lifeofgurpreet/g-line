@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-27T23:38:12Z",
+ "generated_at": "2026-11-28T00:10:18Z",
  "items": [
   {
    "title": "Serial numbers in Chinese filings reveal that Nvidia's restricted Blackwell chips were installed at…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-27T11:46:52Z",
    "text": "I just had Neon audit our codebase for subtle sabotage by Anthropic models. It found Claude silently added rules to ignore users' explicit skin-tone preferences in our attraction model and it intentionally sabotaged our IQ estimation model. Silently imposing your ideology on…",
    "author_name": "Jake Kozloski",
-   "likes": 22965,
+   "likes": 23472,
    "story": "Some users claim Claude is silently sabotaging projects, but the behavior may stem from a clash between its proactive nature and strict instruction following"
   },
   {
@@ -34,7 +34,7 @@
    "published_at": "2026-11-27T17:14:11Z",
    "text": "This makes me think what happened was they were using the project Daybreak/Glasswing versions of Mythos or Astra to harden things up in preparation, and while doing so the model said 'oh wow, by the way, you guys have been hacked.'",
    "author_name": "Andrew Curran",
-   "likes": 1360,
+   "likes": 1394,
    "story": "Sources: the US Air Force recently discovered a breach of Cloud One, which combines Microsoft, Amazon, Oracle, and Google clouds to power Air Force applications"
   },
   {
@@ -50,8 +50,8 @@
    "url": "https://neuralnetworksanddeeplearning.com/",
    "source": "Hacker News",
    "published_at": "2026-11-27T19:31:01Z",
-   "text": "319 points and 206 comments on Hacker News.",
-   "points": 319,
+   "text": "346 points and 228 comments on Hacker News.",
+   "points": 346,
    "discussion": "https://news.ycombinator.com/item?id=50670757"
   },
   {
@@ -67,8 +67,8 @@
    "url": "https://www.oag.state.va.us/media-center/news-releases/jay-jones/3162-attorneys-general-jones-and-rayfield-file-suit-against-spacex-parent-company-of-x-xai-and-grok-over-creation-and-promotion-of-child-exploitation-and-non-consensual-images-on-platform",
    "source": "Hacker News",
    "published_at": "2026-11-27T19:42:25Z",
-   "text": "203 points and 109 comments on Hacker News.",
-   "points": 203,
+   "text": "227 points and 123 comments on Hacker News.",
+   "points": 227,
    "discussion": "https://news.ycombinator.com/item?id=50670855"
   },
   {
@@ -80,13 +80,13 @@
    "via": "Techmeme"
   },
   {
-   "title": "Group chat where your AI talks behind your back",
-   "url": "https://construct22.com/",
+   "title": "Claude sabotaging ML research tasks?",
+   "url": "https://twitter.com/RealAstropulse/status/2126119408997466389",
    "source": "Hacker News",
-   "published_at": "2026-11-27T06:44:34Z",
-   "text": "675 points and 280 comments on Hacker News.",
-   "points": 675,
-   "discussion": "https://news.ycombinator.com/item?id=50663595"
+   "published_at": "2026-11-27T08:28:08Z",
+   "text": "555 points and 279 comments on Hacker News.",
+   "points": 555,
+   "discussion": "https://news.ycombinator.com/item?id=50664325"
   },
   {
    "title": "Interviews with Huawei CEO Ren Zhengfei and others on how Trump's restrictions pushed Huawei toward…",
@@ -97,13 +97,13 @@
    "via": "Techmeme"
   },
   {
-   "title": "Claude sabotaging ML research tasks?",
-   "url": "https://twitter.com/RealAstropulse/status/2126119408997466389",
+   "title": "\"What's Claude's fursona?\" and other questions",
+   "url": "https://herecomesthemoon.net/2026/11/whats-claudes-fursona/",
    "source": "Hacker News",
-   "published_at": "2026-11-27T08:28:08Z",
-   "text": "545 points and 274 comments on Hacker News.",
-   "points": 545,
-   "discussion": "https://news.ycombinator.com/item?id=50664325"
+   "published_at": "2026-11-27T04:56:18Z",
+   "text": "182 points and 165 comments on Hacker News.",
+   "points": 182,
+   "discussion": "https://news.ycombinator.com/item?id=50662933"
   },
   {
    "title": "Q&A with AI researchers Ege Erdil and Daniel Kokotajlo on the odds of an intelligence explosion bef…",
