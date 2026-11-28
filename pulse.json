@@ -1,24 +1,24 @@
 {
  "schema": 1,
- "generated_at": "2026-11-28T05:33:18Z",
+ "generated_at": "2026-11-28T09:12:29Z",
  "items": [
   {
-   "title": "Serial numbers in Chinese filings reveal that Nvidia's restricted Blackwell chips were installed at…",
-   "url": "https://www.bloomberg.com/news/articles/2026-11-27/nvidia-blackwell-chips-turn-up-at-china-site-tied-to-alice-huang?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc5NTc4ODgyMywiZXhwIjoxNzk2MzkzNjIzLCJhcnRpY2xlSWQiOiJUUDFVMFJUOU5KTFMwMCIsImJjb25uZWN0SWQiOiI3QTcxRTEyQjY2RTM0RkI3ODlCQTA5NEZBQzVGMkE0OSJ9.tcyYBUyKr7A_4Qyf4S69z95uT1ZiyuOyOOZi73bhQ7Q",
-   "source": "Bloomberg",
-   "published_at": "2026-11-27T13:06:06Z",
-   "text": "Serial numbers in Chinese filings reveal that Nvidia's restricted Blackwell chips were installed at a Shanghai data center linked to Alice Huang and Megaspeed. A pair of Chinese firms installed Nvidia Corp.'s powerful Blackwell semiconductors in a Shanghai data center linked to Alice Huang …",
+   "title": "Some users claim Claude is silently sabotaging projects, especially those involving ML work, but it…",
+   "url": "https://www.dbreunig.com/2026/11/27/proactivity-can-read-as-sabotage.html",
+   "source": "Drew Breunig",
+   "published_at": "2026-11-27T21:35:50Z",
+   "text": "Some users claim Claude is silently sabotaging projects, especially those involving ML work, but it's hard to prove because models are built to be proactive. Is Claude Throwing the Game? — There's a recent spate of claims that Claude is silently sabotaging people's projects, especially when they involve machine learning.",
    "via": "Techmeme"
   },
   {
-   "title": "I just had Neon audit our codebase for subtle sabotage by Anthropic models. It found Claude silentl…",
-   "url": "https://x.com/jakozloski/status/2126281598517576049",
-   "source": "𝕏 @jakozloski",
-   "published_at": "2026-11-27T11:46:52Z",
-   "text": "I just had Neon audit our codebase for subtle sabotage by Anthropic models. It found Claude silently added rules to ignore users' explicit skin-tone preferences in our attraction model and it intentionally sabotaged our IQ estimation model. Silently imposing your ideology on…",
-   "author_name": "Jake Kozloski",
-   "likes": 27075,
-   "story": "Some users claim Claude is silently sabotaging projects, especially those involving ML work, but it's hard to prove because models are built to be proactive"
+   "title": "This makes me think what happened was they were using the project Daybreak/Glasswing versions of My…",
+   "url": "https://x.com/AndrewCurran_/status/2126363973109100830",
+   "source": "𝕏 @AndrewCurran_",
+   "published_at": "2026-11-27T17:14:11Z",
+   "text": "This makes me think what happened was they were using the project Daybreak/Glasswing versions of Mythos or Astra to harden things up in preparation, and while doing so the model said 'oh wow, by the way, you guys have been hacked.'",
+   "author_name": "Andrew Curran",
+   "likes": 1646,
+   "story": "Sources: the US Air Force recently discovered a breach of Cloud One, which combines Microsoft, Amazon, Oracle, and Google clouds to power Air Force applications"
   },
   {
    "title": "Claude Code 2.1.332 released",
@@ -28,14 +28,21 @@
    "text": "Added skills from MCP servers (beta). They show as server:skill in the / menu; other skills keep their names · Added a PreSkillShellCommand hook event that can refuse a skill or command's inline shell commands as it loads; on 2.1.331 and older, a settings file naming it opens a dialog at start · Added \"Always deliver\" to the prompt for held messages from other sessions · Added a footer line that stays while a flagged message has your session on a different model, until you pick one with /model"
   },
   {
-   "title": "This makes me think what happened was they were using the project Daybreak/Glasswing versions of My…",
-   "url": "https://x.com/AndrewCurran_/status/2126363973109100830",
-   "source": "𝕏 @AndrewCurran_",
-   "published_at": "2026-11-27T17:14:11Z",
-   "text": "This makes me think what happened was they were using the project Daybreak/Glasswing versions of Mythos or Astra to harden things up in preparation, and while doing so the model said 'oh wow, by the way, you guys have been hacked.'",
-   "author_name": "Andrew Curran",
-   "likes": 1598,
-   "story": "Sources: the US Air Force recently discovered a breach of Cloud One, which combines Microsoft, Amazon, Oracle, and Google clouds to power Air Force applications"
+   "title": "Serial numbers in Chinese filings reveal that Nvidia's restricted Blackwell chips were installed at…",
+   "url": "https://www.bloomberg.com/news/articles/2026-11-27/nvidia-blackwell-chips-turn-up-at-china-site-tied-to-alice-huang?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc5NTc4ODgyMywiZXhwIjoxNzk2MzkzNjIzLCJhcnRpY2xlSWQiOiJUUDFVMFJUOU5KTFMwMCIsImJjb25uZWN0SWQiOiI3QTcxRTEyQjY2RTM0RkI3ODlCQTA5NEZBQzVGMkE0OSJ9.tcyYBUyKr7A_4Qyf4S69z95uT1ZiyuOyOOZi73bhQ7Q",
+   "source": "Bloomberg",
+   "published_at": "2026-11-27T13:06:06Z",
+   "text": "Serial numbers in Chinese filings reveal that Nvidia's restricted Blackwell chips were installed at a Shanghai data center linked to Alice Huang and Megaspeed. A pair of Chinese firms installed Nvidia Corp.'s powerful Blackwell semiconductors in a Shanghai data center linked to Alice Huang …",
+   "via": "Techmeme"
+  },
+  {
+   "title": "Google's DeepCrossAttention achieves comparable model quality up to 3x faster",
+   "url": "https://research.google/blog/supercharging-transformer-residual-connections/",
+   "source": "Hacker News",
+   "published_at": "2026-11-27T23:06:29Z",
+   "text": "368 points and 142 comments on Hacker News.",
+   "points": 368,
+   "discussion": "https://news.ycombinator.com/item?id=50672565"
   },
   {
    "title": "OpenAI countersues Apple for allegedly stealing trade secrets via a staffer who returned to Apple a…",
@@ -46,13 +53,30 @@
    "via": "Techmeme"
   },
   {
-   "title": "Google's DeepCrossAttention achieves comparable model quality up to 3x faster",
-   "url": "https://research.google/blog/supercharging-transformer-residual-connections/",
+   "title": "Michael Nielsen took down his book on neural nets",
+   "url": "https://neuralnetworksanddeeplearning.com/",
    "source": "Hacker News",
-   "published_at": "2026-11-27T23:06:29Z",
-   "text": "255 points and 92 comments on Hacker News.",
-   "points": 255,
-   "discussion": "https://news.ycombinator.com/item?id=50672565"
+   "published_at": "2026-11-27T19:31:01Z",
+   "text": "522 points and 323 comments on Hacker News.",
+   "points": 522,
+   "discussion": "https://news.ycombinator.com/item?id=50670757"
+  },
+  {
+   "title": "Embo, which is developing world models for robotics trained on massive amounts of internet video, e…",
+   "url": "https://embo.com/introducing-embo",
+   "source": "Embo",
+   "published_at": "2026-11-28T05:51:05Z",
+   "text": "Embo, which is developing world models for robotics trained on massive amounts of internet video, emerges from stealth with a $110M seed led by a16z. Embo is building the next generation of frontier AI models, with a deep understanding of physical reality and fine-grained motor skills.",
+   "via": "Techmeme"
+  },
+  {
+   "title": "States sue SpaceX to stop Grok from generating child sex images, revenge porn",
+   "url": "https://www.oag.state.va.us/media-center/news-releases/jay-jones/3162-attorneys-general-jones-and-rayfield-file-suit-against-spacex-parent-company-of-x-xai-and-grok-over-creation-and-promotion-of-child-exploitation-and-non-consensual-images-on-platform",
+   "source": "Hacker News",
+   "published_at": "2026-11-27T19:42:25Z",
+   "text": "378 points and 227 comments on Hacker News.",
+   "points": 378,
+   "discussion": "https://news.ycombinator.com/item?id=50670855"
   },
   {
    "title": "Q&A with AI researchers Ege Erdil and Daniel Kokotajlo on the odds of an intelligence explosion bef…",
@@ -63,13 +87,13 @@
    "via": "Techmeme"
   },
   {
-   "title": "Michael Nielsen took down his book on neural nets",
-   "url": "https://neuralnetworksanddeeplearning.com/",
+   "title": "Claude sabotaging ML research tasks?",
+   "url": "https://twitter.com/RealAstropulse/status/2126119408997466389",
    "source": "Hacker News",
-   "published_at": "2026-11-27T19:31:01Z",
-   "text": "457 points and 286 comments on Hacker News.",
-   "points": 457,
-   "discussion": "https://news.ycombinator.com/item?id=50670757"
+   "published_at": "2026-11-27T08:28:08Z",
+   "text": "698 points and 310 comments on Hacker News.",
+   "points": 698,
+   "discussion": "https://news.ycombinator.com/item?id=50664325"
   },
   {
    "title": "SAP confirms a cybersecurity incident; report: hackers obtained its staffers' authentication tokens…",
@@ -80,53 +104,27 @@
    "via": "Techmeme"
   },
   {
-   "title": "Woman evicted after landlord's AI assistant told her she could delay rent",
-   "url": "https://drmahfouz.substack.com/p/woman-evicted-after-landlords-ai",
-   "source": "Hacker News",
-   "published_at": "2026-11-28T01:32:56Z",
-   "text": "128 points and 96 comments on Hacker News.",
-   "points": 128,
-   "discussion": "https://news.ycombinator.com/item?id=50673521"
+   "title": "A profile of Jensen Huang, whom longtime friends and associates say has an unrelenting ability to m…",
+   "url": "https://www.wsj.com/business/jensen-huang-nvidia-ping-pong-rise-and-fall-bfd13000?st=NG91Cq",
+   "source": "Erich Schwartzel / Wall Str…",
+   "published_at": "2026-11-28T07:40:43Z",
+   "text": "A profile of Jensen Huang, whom longtime friends and associates say has an unrelenting ability to make the most of any situation, as he returns as Nvidia's CEO. As a longtime friend of the Nvidia CEO puts it, “Jensen will always pull a rabbit out of a hat”",
+   "via": "Techmeme"
   },
   {
    "title": "Interviews with Huawei CEO Ren Zhengfei and others on how Trump's restrictions pushed Huawei toward…",
    "url": "https://www.nytimes.com/2026/11/26/business/huawei-trump-china-ai.html?unlocked_article_code=1.TlE.eHV_.2f70GvuLgZxe&smid=nytcore-ios-share",
    "source": "New York Times",
    "published_at": "2026-11-27T14:20:49Z",
-   "text": "Interviews with Huawei CEO Ren Zhengfei and others on how Trump's restrictions pushed Huawei toward self-reliance, making it central to China's AI ambitions. As China's access to Nvidia's advanced chips shrinks, Huawei is becoming increasingly indispensable to Beijing despite a wide technological gap with its American rival.",
+   "text": "Interviews with Huawei CEO Ren Zhengfei and others on how Trump's restrictions pushed Huawei toward self-reliance, making it central to China's AI ambitions",
    "via": "Techmeme"
-  },
-  {
-   "title": "States sue SpaceX to stop Grok from generating child sex images, revenge porn",
-   "url": "https://www.oag.state.va.us/media-center/news-releases/jay-jones/3162-attorneys-general-jones-and-rayfield-file-suit-against-spacex-parent-company-of-x-xai-and-grok-over-creation-and-promotion-of-child-exploitation-and-non-consensual-images-on-platform",
-   "source": "Hacker News",
-   "published_at": "2026-11-27T19:42:25Z",
-   "text": "330 points and 183 comments on Hacker News.",
-   "points": 330,
-   "discussion": "https://news.ycombinator.com/item?id=50670855"
   },
   {
    "title": "The CMA says Meta made changes to Muse's ToS in the UK to reflect the country's consumer law; the t…",
    "url": "https://www.politico.eu/article/metas-uk-rollout-for-muse-ai-agent-exposes-it-to-more-liability/",
    "source": "Joseph Bambridge / Politico",
    "published_at": "2026-11-27T15:26:09Z",
-   "text": "The CMA says Meta made changes to Muse's ToS in the UK to reflect the country's consumer law; the terms give users far more protections than in the US. The U.K. terms of service for Muse give consumers far more protection than in the U.S. — LONDON — Meta will be on the hook …",
-   "via": "Techmeme"
-  },
-  {
-   "title": "European Central Bank survey: 44% of employed EU consumers reported using AI weekly at work in Augu…",
-   "url": "https://www.bloomberg.com/news/articles/2026-11-27/european-workers-ai-use-on-par-with-that-of-us-peers-ecb-says",
-   "source": "Alexander Weber / Bloomberg",
-   "published_at": "2026-11-27T18:16:02Z",
-   "text": "European Central Bank survey: 44% of employed EU consumers reported using AI weekly at work in August, on par with US peers; 18% used it daily, above US levels. Euro-area workers are turning to artificial intelligence at a similar rate as their peers in the US, though obstacles remain …",
-   "via": "Techmeme"
-  },
-  {
-   "title": "A US judge sentences a Florida man to 47 months in prison for using AI to impersonate Kick streamer…",
-   "url": "https://aftermath.site/n3on-impersonator-ai-prison-260000-dollars-kick-stream/",
-   "source": "Nathan Grayson / Aftermath",
-   "published_at": "2026-11-26T22:11:12Z",
-   "text": "A US judge sentences a Florida man to 47 months in prison for using AI to impersonate Kick streamer N3on, defrauding a memecoin's organizers out of ~$260K",
+   "text": "The CMA says Meta made changes to Muse's ToS in the UK to reflect the country's consumer law; the terms give users far more protections than in the US",
    "via": "Techmeme"
   }
  ],
