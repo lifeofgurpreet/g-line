@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-28T16:30:30Z",
+ "generated_at": "2026-11-28T17:01:18Z",
  "items": [
   {
    "title": "Some users claim Claude is silently sabotaging projects, especially those involving ML work, but it…",
@@ -17,7 +17,7 @@
    "published_at": "2026-11-27T17:14:11Z",
    "text": "This makes me think what happened was they were using the project Daybreak/Glasswing versions of Mythos or Astra to harden things up in preparation, and while doing so the model said 'oh wow, by the way, you guys have been hacked.'",
    "author_name": "Andrew Curran",
-   "likes": 1749,
+   "likes": 1756,
    "story": "Sources: the US Air Force recently discovered a breach of Cloud One, which combines Microsoft, Amazon, Oracle, and Google clouds to power Air Force applications"
   },
   {
@@ -40,26 +40,9 @@
    "url": "https://xinyadu.github.io/blog/claude-code-sabotage.html",
    "source": "Hacker News",
    "published_at": "2026-11-28T10:37:40Z",
-   "text": "389 points and 141 comments on Hacker News.",
-   "points": 389,
+   "text": "456 points and 149 comments on Hacker News.",
+   "points": 456,
    "discussion": "https://news.ycombinator.com/item?id=50676390"
-  },
-  {
-   "title": "Serial numbers in Chinese filings reveal that Nvidia's restricted Blackwell chips were installed at…",
-   "url": "https://www.bloomberg.com/news/articles/2026-11-27/nvidia-blackwell-chips-turn-up-at-china-site-tied-to-alice-huang?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc5NTc4ODgyMywiZXhwIjoxNzk2MzkzNjIzLCJhcnRpY2xlSWQiOiJUUDFVMFJUOU5KTFMwMCIsImJjb25uZWN0SWQiOiI3QTcxRTEyQjY2RTM0RkI3ODlCQTA5NEZBQzVGMkE0OSJ9.tcyYBUyKr7A_4Qyf4S69z95uT1ZiyuOyOOZi73bhQ7Q",
-   "source": "Bloomberg",
-   "published_at": "2026-11-27T13:06:06Z",
-   "text": "Serial numbers in Chinese filings reveal that Nvidia's restricted Blackwell chips were installed at a Shanghai data center linked to Alice Huang and Megaspeed. A pair of Chinese firms installed Nvidia Corp.'s powerful Blackwell semiconductors in a Shanghai data center linked to Alice Huang …",
-   "via": "Techmeme"
-  },
-  {
-   "title": "GGUF LLM Models with Hidden Malware on Hugging Face Reached 2400 Victims",
-   "url": "https://malspark.com/blog/malicious-gguf-models-hugging-face/",
-   "source": "Hacker News",
-   "published_at": "2026-11-28T11:57:04Z",
-   "text": "111 points and 37 comments on Hacker News.",
-   "points": 111,
-   "discussion": "https://news.ycombinator.com/item?id=50676752"
   },
   {
    "title": "Embo, which is developing world models for robotics trained on massive amounts of internet video, e…",
@@ -70,30 +53,30 @@
    "via": "Techmeme"
   },
   {
+   "title": "GGUF LLM Models with Hidden Malware on Hugging Face Reached 2400 Victims",
+   "url": "https://malspark.com/blog/malicious-gguf-models-hugging-face/",
+   "source": "Hacker News",
+   "published_at": "2026-11-28T11:57:04Z",
+   "text": "130 points and 40 comments on Hacker News.",
+   "points": 130,
+   "discussion": "https://news.ycombinator.com/item?id=50676752"
+  },
+  {
+   "title": "Serial numbers in Chinese filings reveal that Nvidia's restricted Blackwell chips were installed at…",
+   "url": "https://www.bloomberg.com/news/articles/2026-11-27/nvidia-blackwell-chips-turn-up-at-china-site-tied-to-alice-huang?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc5NTc4ODgyMywiZXhwIjoxNzk2MzkzNjIzLCJhcnRpY2xlSWQiOiJUUDFVMFJUOU5KTFMwMCIsImJjb25uZWN0SWQiOiI3QTcxRTEyQjY2RTM0RkI3ODlCQTA5NEZBQzVGMkE0OSJ9.tcyYBUyKr7A_4Qyf4S69z95uT1ZiyuOyOOZi73bhQ7Q",
+   "source": "Bloomberg",
+   "published_at": "2026-11-27T13:06:06Z",
+   "text": "Serial numbers in Chinese filings reveal that Nvidia's restricted Blackwell chips were installed at a Shanghai data center linked to Alice Huang and Megaspeed. A pair of Chinese firms installed Nvidia Corp.'s powerful Blackwell semiconductors in a Shanghai data center linked to Alice Huang …",
+   "via": "Techmeme"
+  },
+  {
    "title": "Google's DeepCrossAttention achieves comparable model quality up to 3x faster",
    "url": "https://research.google/blog/supercharging-transformer-residual-connections/",
    "source": "Hacker News",
    "published_at": "2026-11-27T23:06:29Z",
-   "text": "515 points and 181 comments on Hacker News.",
-   "points": 515,
+   "text": "525 points and 183 comments on Hacker News.",
+   "points": 525,
    "discussion": "https://news.ycombinator.com/item?id=50672565"
-  },
-  {
-   "title": "The US aerospace and defense sector is struggling to secure memory chips, labor, land, power, and f…",
-   "url": "https://www.ft.com/content/76143592-b1c8-42d2-bf4c-17aa87255467?accessToken=zwAAAaIgiLyjkc92FDWSschC0tO_TBeqhyVUZw.MEQCIBmgVqJJzHOv1Qe-PIiWUFFtTF5ylTNetqBdlwsyHc7_AiAChLJ-vCeIaMVO5WUFLlz5TOaszBKx430YqEkEKnp9BA&sharetype=gift&token=838699d9-46f1-4d5e-8012-243438eac6c0",
-   "source": "Christian Davies / Financia…",
-   "published_at": "2026-11-28T16:16:04Z",
-   "text": "The US aerospace and defense sector is struggling to secure memory chips, labor, land, power, and factory infrastructure amid the AI data center boom. Boeing and leading defence contractors wrestle with ballooning backlogs fuelled by a surge in air travel and military spending",
-   "via": "Techmeme"
-  },
-  {
-   "title": "Claude sabotaging ML research tasks?",
-   "url": "https://twitter.com/RealAstropulse/status/2126119408997466389",
-   "source": "Hacker News",
-   "published_at": "2026-11-27T08:28:08Z",
-   "text": "749 points and 328 comments on Hacker News.",
-   "points": 749,
-   "discussion": "https://news.ycombinator.com/item?id=50664325"
   },
   {
    "title": "Q&A with Q.ANT CEO Michael Förtsch on making AI photonic processors which could be built with 90nm…",
@@ -104,12 +87,13 @@
    "via": "Techmeme"
   },
   {
-   "title": "Q&A with AI researchers Ege Erdil and Daniel Kokotajlo on the odds of an intelligence explosion bef…",
-   "url": "https://www.dwarkesh.com/p/daniel-kokotajlo-ege-erdil",
-   "source": "Dwarkesh Patel / Dwarkesh P…",
-   "published_at": "2026-11-27T20:15:42Z",
-   "text": "Q&A with AI researchers Ege Erdil and Daniel Kokotajlo on the odds of an intelligence explosion before 2029, pausing AI, the US antagonizing China, and more",
-   "via": "Techmeme"
+   "title": "Claude sabotaging ML research tasks?",
+   "url": "https://twitter.com/RealAstropulse/status/2126119408997466389",
+   "source": "Hacker News",
+   "published_at": "2026-11-27T08:28:08Z",
+   "text": "756 points and 328 comments on Hacker News.",
+   "points": 756,
+   "discussion": "https://news.ycombinator.com/item?id=50664325"
   },
   {
    "title": "Power operators are using sensors and software to dynamically adjust grid safety limits, boosting e…",
@@ -117,6 +101,22 @@
    "source": "Martha Muir / Financial Tim…",
    "published_at": "2026-11-28T12:41:01Z",
    "text": "Power operators are using sensors and software to dynamically adjust grid safety limits, boosting existing network capacity amid rising AI-driven energy demand. Operators are using sensors and sophisticated software to eke out more capacity from installed transmission lines as they struggle …",
+   "via": "Techmeme"
+  },
+  {
+   "title": "The US aerospace and defense sector is struggling to secure memory chips, labor, land, power, and f…",
+   "url": "https://www.ft.com/content/76143592-b1c8-42d2-bf4c-17aa87255467?accessToken=zwAAAaIgiLyjkc92FDWSschC0tO_TBeqhyVUZw.MEQCIBmgVqJJzHOv1Qe-PIiWUFFtTF5ylTNetqBdlwsyHc7_AiAChLJ-vCeIaMVO5WUFLlz5TOaszBKx430YqEkEKnp9BA&sharetype=gift&token=838699d9-46f1-4d5e-8012-243438eac6c0",
+   "source": "Christian Davies / Financia…",
+   "published_at": "2026-11-28T16:16:04Z",
+   "text": "The US aerospace and defense sector is struggling to secure memory chips, labor, land, power, and factory infrastructure amid the AI data center boom. Boeing and leading defence contractors wrestle with ballooning backlogs fuelled by a surge in air travel and military spending",
+   "via": "Techmeme"
+  },
+  {
+   "title": "Q&A with AI researchers Ege Erdil and Daniel Kokotajlo on the odds of an intelligence explosion bef…",
+   "url": "https://www.dwarkesh.com/p/daniel-kokotajlo-ege-erdil",
+   "source": "Dwarkesh Patel / Dwarkesh P…",
+   "published_at": "2026-11-27T20:15:42Z",
+   "text": "Q&A with AI researchers Ege Erdil and Daniel Kokotajlo on the odds of an intelligence explosion before 2029, pausing AI, the US antagonizing China, and more",
    "via": "Techmeme"
   },
   {
